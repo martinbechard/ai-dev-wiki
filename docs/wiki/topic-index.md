@@ -1,0 +1,94 @@
+# Topic Index
+
+## Primary Topics
+
+- [digests/index.md](digests/index.md) is the hub for monthly AI-assisted development digests.
+- [digests/2026-06.md](digests/2026-06.md) is the active June 2026 digest for processed local source updates.
+- [context-architecture/index.md](context-architecture/index.md) is the hub for routers, rules layers, knowledge layers, context selection, and compaction.
+- [context-architecture/context-router-and-knowledge-layers.md](context-architecture/context-router-and-knowledge-layers.md) is the overview for the local context-aware guidance structure.
+- [context-architecture/thin-context-router.md](context-architecture/thin-context-router.md) records the root router pattern that routes agents to task-specific guidance.
+- [context-architecture/rules-and-knowledge-layers.md](context-architecture/rules-and-knowledge-layers.md) records durable conventions and stable project facts.
+- [context-architecture/lifespan-organized-documentation.md](context-architecture/lifespan-organized-documentation.md) records active, decision, reference, and archive documentation authority signals.
+- [context-architecture/context-selection-and-compaction.md](context-architecture/context-selection-and-compaction.md) records source selection, token discipline, summaries, and context trimming.
+- [context-architecture/compiled-wiki-and-structured-memory.md](context-architecture/compiled-wiki-and-structured-memory.md) records source-of-truth boundaries for prose wikis, structured stores, and generated wiki views.
+- [context-architecture/self-service-analytics-context-governance.md](context-architecture/self-service-analytics-context-governance.md) records analytics-specific context governance for canonical metrics, metadata, skills, and evals.
+- [source-workflows/index.md](source-workflows/index.md) is the hub for raw source handling, clippings, ingest, reconciliation, digests, and update feeds.
+- [source-workflows/automated-update-feeds.md](source-workflows/automated-update-feeds.md) records the overall source-first automation model and approved feed topics.
+- [source-workflows/public-topic-news-collector.md](source-workflows/public-topic-news-collector.md) records the raw-only public topic collector for AI-assisted development practice updates.
+- [source-workflows/leaf-update-watch.md](source-workflows/leaf-update-watch.md) records the raw-only public update check for existing durable local leaves.
+- [source-workflows/raw-project-wiki-monitor.md](source-workflows/raw-project-wiki-monitor.md) records the raw ingest, durable leaf update, digest update, lint, and processed-source move workflow.
+- [source-workflows/clipping-and-raw-intake.md](source-workflows/clipping-and-raw-intake.md) records where human-saved notes, raw artifacts, and processed artifacts belong.
+- [source-workflows/source-reconciliation-and-routing.md](source-workflows/source-reconciliation-and-routing.md) records authority order, conflict handling, synonym normalization, and federation routing.
+- [prompt-and-instructions/index.md](prompt-and-instructions/index.md) is the hub for request packaging, prompts, durable instructions, and file boundaries.
+- [prompt-and-instructions/request-packages-and-file-boundaries.md](prompt-and-instructions/request-packages-and-file-boundaries.md) records the request package, file boundary, source-label, and done-signal pattern.
+- [prompt-and-instructions/context-engineering-for-request-packages.md](prompt-and-instructions/context-engineering-for-request-packages.md) records how project data, conventions, and evidence are selected for a request.
+- [prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md](prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md) records how durable instructions, agents, prompts, and skills stay separated.
+- [agent-workflows/index.md](agent-workflows/index.md) is the hub for planning loops, subagents, handoffs, and controlled change workflows.
+- [agent-workflows/orient-inspect-patch-verify-loop.md](agent-workflows/orient-inspect-patch-verify-loop.md) records the local controlled-change loop for AI-assisted coding work.
+- [agent-workflows/research-plan-implement-review-lifecycle.md](agent-workflows/research-plan-implement-review-lifecycle.md) records the RPI lifecycle for professional agent work.
+- [agent-workflows/use-compose-build-workflow-selection.md](agent-workflows/use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
+- [agent-workflows/subagent-coordination.md](agent-workflows/subagent-coordination.md) records how independent agent investigations are delegated and integrated.
+- [agent-workflows/delegated-coding-handoffs.md](agent-workflows/delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
+- [agent-workflows/deep-research-and-writing-workflows.md](agent-workflows/deep-research-and-writing-workflows.md) records the split between exploratory research agents and constrained writing workflows.
+- [agent-workflows/persistent-agent-workspaces.md](agent-workflows/persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
+- [coding-practices/index.md](coding-practices/index.md) is the hub for TDD, review, regression repair, and refactoring generated code.
+- [coding-practices/ai-assisted-tdd.md](coding-practices/ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
+- [coding-practices/intelligent-code-review.md](coding-practices/intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
+- [coding-practices/generated-code-refactoring.md](coding-practices/generated-code-refactoring.md) records the practice of refactoring generated output into maintainable, verified code.
+- [coding-practices/fix-branch-and-pr-packaging.md](coding-practices/fix-branch-and-pr-packaging.md) records reproduction, scoped change packaging, regression coverage, and review-ready evidence for fixes.
+- [retrieval-and-tools/index.md](retrieval-and-tools/index.md) is the hub for code retrieval, RAG, tool calls, and MCP as a governed practice.
+- [retrieval-and-tools/code-retrieval-evidence-patterns.md](retrieval-and-tools/code-retrieval-evidence-patterns.md) records exact-symbol, semantic, and runtime evidence patterns for repository work.
+- [retrieval-and-tools/rag-provenance-ranking-and-chunking.md](retrieval-and-tools/rag-provenance-ranking-and-chunking.md) records RAG source provenance, chunking, hybrid retrieval, and reranking practice.
+- [retrieval-and-tools/tool-call-and-mcp-governance.md](retrieval-and-tools/tool-call-and-mcp-governance.md) records client action tools, dynamic context tools, and MCP governance boundaries.
+- [retrieval-and-tools/rag-tools-and-mcp-practice.md](retrieval-and-tools/rag-tools-and-mcp-practice.md) connects the retrieval and tool leaves as the local practice overview.
+- [verification-and-evals/index.md](verification-and-evals/index.md) is the hub for build, test, lint, runtime checks, evals, graders, and done signals.
+- [verification-and-evals/verification-loops-and-evals.md](verification-and-evals/verification-loops-and-evals.md) records the build, test, lint, runtime, grounding, and eval overview.
+- [verification-and-evals/verification-tax-and-acceptance-gates.md](verification-and-evals/verification-tax-and-acceptance-gates.md) records the validation bottleneck and acceptance-gate practice for agentic delivery.
+- [verification-and-evals/code-review-evals-and-rubrics.md](verification-and-evals/code-review-evals-and-rubrics.md) records AI-assisted code review evals, reviewer rubrics, and source-backed review evidence.
+- [verification-and-evals/judge-grader-boundaries.md](verification-and-evals/judge-grader-boundaries.md) records deterministic grader, human review, and LLM-as-judge boundaries.
+- [verification-and-evals/representative-workflow-calibration.md](verification-and-evals/representative-workflow-calibration.md) records representative prompts, tool-call calibration, and local model drift checks.
+- [verification-and-evals/product-judgment-quality-gates.md](verification-and-evals/product-judgment-quality-gates.md) records product judgment gates, periodic health review, and pre-merge acceptance checks.
+- [application-patterns/index.md](application-patterns/index.md) is the hub for harness architecture, structured outputs, streaming, workflow state, and product controls.
+- [application-patterns/application-harness-patterns.md](application-patterns/application-harness-patterns.md) is the overview for harness design boundaries.
+- [application-patterns/agent-harness-components.md](application-patterns/agent-harness-components.md) records the fixed loop, registry, context, persistence, hooks, and permission components of an agent harness.
+- [application-patterns/structured-output-and-drafter-patterns.md](application-patterns/structured-output-and-drafter-patterns.md) records schema, DSL, validation, execution, and audit boundaries for model-drafted artifacts.
+- [application-patterns/ai-process-layer-and-workflow-state.md](application-patterns/ai-process-layer-and-workflow-state.md) records the process layer between user interface and backend systems.
+- [application-patterns/user-visible-progress-and-runtime-telemetry.md](application-patterns/user-visible-progress-and-runtime-telemetry.md) records progress events, streaming signals, operational metrics, and visible runtime health.
+- [application-patterns/local-model-runtime-harness.md](application-patterns/local-model-runtime-harness.md) records local model operation as a harness concern.
+- [governance-and-risk/index.md](governance-and-risk/index.md) is the hub for permissions, approvals, secrets, audit logs, privacy, licensing, and prompt injection.
+- [governance-and-risk/governance-controls-for-agents.md](governance-and-risk/governance-controls-for-agents.md) records the overall local agent-control model.
+- [governance-and-risk/prompt-injection-and-untrusted-content.md](governance-and-risk/prompt-injection-and-untrusted-content.md) records how untrusted input stays separated from live instructions.
+- [governance-and-risk/agent-governance-infrastructure.md](governance-and-risk/agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and accountability as infrastructure concerns.
+- [governance-and-risk/sensitive-data-and-supply-chain-controls.md](governance-and-risk/sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.
+- [governance-and-risk/ai-assisted-security-repair-gates.md](governance-and-risk/ai-assisted-security-repair-gates.md) records validation, maintainer consultation, patching, tests, CI, and disclosure gates for agent-assisted security work.
+- [governance-and-risk/prototype-to-cloud-promotion-gates.md](governance-and-risk/prototype-to-cloud-promotion-gates.md) records the promotion boundary for local prototypes that become hosted, shared, or data-bearing software.
+- [adoption-and-operating-model/index.md](adoption-and-operating-model/index.md) is the hub for team rollout, operating agreements, workflow selection, and human acceptance.
+- [adoption-and-operating-model/adoption-operating-agreements.md](adoption-and-operating-model/adoption-operating-agreements.md) maps the local operating agreements and links the detailed leaves.
+- [adoption-and-operating-model/workflow-before-model-selection.md](adoption-and-operating-model/workflow-before-model-selection.md) records the rule that workflow shape and verification expectations come before model or tool choice.
+- [adoption-and-operating-model/human-agent-approval-boundaries.md](adoption-and-operating-model/human-agent-approval-boundaries.md) records how humans keep authority over goals, review, and consequential action.
+- [adoption-and-operating-model/agent-ownership-rosters.md](adoption-and-operating-model/agent-ownership-rosters.md) records agent owner cards, agent rosters, care loops, and decommissioning rules.
+- [adoption-and-operating-model/durable-instructions-and-skill-files.md](adoption-and-operating-model/durable-instructions-and-skill-files.md) records how stable procedures move into durable instruction surfaces.
+- [adoption-and-operating-model/portable-agent-skills-and-runbooks.md](adoption-and-operating-model/portable-agent-skills-and-runbooks.md) records portable procedure skills, runbook composition, and proof standards as a local operating practice.
+- [adoption-and-operating-model/agent-cost-telemetry.md](adoption-and-operating-model/agent-cost-telemetry.md) records workflow-step cost tracing, subagent fan-out limits, and outcome-linked cost controls.
+- [adoption-and-operating-model/tier-specific-assistant-conventions.md](adoption-and-operating-model/tier-specific-assistant-conventions.md) records how assistant behavior is specialized by work tier when evidence supports it.
+- [adoption-and-operating-model/outcome-alignment-and-process-autonomy.md](adoption-and-operating-model/outcome-alignment-and-process-autonomy.md) records the operating-model boundary between shared outcomes and team-owned process.
+- [adoption-and-operating-model/senior-led-agentic-execution-pods.md](adoption-and-operating-model/senior-led-agentic-execution-pods.md) records the small senior pod model for high-leverage agentic execution.
+- [adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md](adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md) records the talent-pipeline rule for preserving supervised junior practice.
+- [schema.md](schema.md) records authority order, topic-page sections, and maintenance rules.
+- [known-defects.md](known-defects.md) summarizes defect backlog interpretation.
+- [glossary.md](glossary.md) defines recurring project terms.
+- [open-decisions.md](open-decisions.md) collects unresolved decisions.
+- [maintenance-log.md](maintenance-log.md) records notable wiki maintenance events.
+- [federation.md](federation.md) records the one-way upstream relationship to the broader AI ecosystem wiki.
+
+## Source Neighborhoods
+
+- [AI wiki topic index](../../upstream-ai-wiki/topic-index.md) owns broad AI ecosystem entity coverage used by this downstream wiki.
+- [Folder organization source note](../../raw/processed/Folder organization by @AICodethatWorks.md) captures the initial context-aware guidance structure source.
+- [AI-assisted coding deck](../../raw/processed/gen-ai-developer-coding.md) captures local topic source material for agent workflows, coding practices, verification, governance, adoption, and prompt packaging.
+- [Gen AI application deck](../../raw/processed/gen-ai-app-complete.md) captures local topic source material for application patterns, retrieval and tools, runtime behavior, grounding, and product readiness.
+- [raw](../../raw) holds unprocessed local source artifacts.
+- [raw/processed](../../raw/processed) holds fully processed source artifacts.
+- [Clippings](../../Clippings) holds human-saved source notes before review or ingest.
+- [Open Skills source](../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) captures local source material for portable procedures, skill primitives, runbook composition, and verification contracts.
+- [scripts](../../scripts) holds local helper scripts for source collection, validation, and inspection.

@@ -1,0 +1,412 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-23T20:31:11-04:00",
+  "cutoff_window": {
+    "start": "2026-06-21T20:31:11-04:00",
+    "end": "2026-06-23T20:31:11-04:00",
+    "basis": "Local repository run time from date command in America/Toronto"
+  },
+  "federation_boundary": {
+    "local_wiki": "docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule": "Keep broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques upstream-owned. Record only AI-assisted development practice implications locally."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "search_queries": [
+    "AI coding agents code review evals practice updated June 22 2026",
+    "context engineering coding agents durable instructions June 22 2026",
+    "MCP governance tool calls permissions audit logs June 22 2026",
+    "AI-assisted TDD coding agent regression repair June 22 2026",
+    "site:github.blog AI coding agent June 22 2026 code review",
+    "site:sourcegraph.com/blog code agents June 22 2026 context engineering",
+    "site:anthropic.com/engineering Claude Code June 22 2026 agents coding",
+    "site:openai.com/index coding agents June 22 2026",
+    "\"June 23, 2026\" \"coding agent\" \"AI\"",
+    "\"June 23, 2026\" \"MCP\" \"agent\" governance",
+    "\"June 23, 2026\" \"context engineering\" \"agent\"",
+    "\"June 23, 2026\" \"AI code review\""
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Codex-maxxing for long-running work",
+      "source_url": "https://openai.com/index/codex-maxxing-long-running-work/",
+      "publisher": "OpenAI",
+      "visible_date": "June 22, 2026",
+      "date_basis": "Visible page date",
+      "summary": "OpenAI published a guide by Jason Liu on using Codex as a persistent workspace for work that extends beyond a single prompt. The public landing page frames the guide around preserving context, managing complex workflows, splitting goals into verifiable steps, maintaining continuity across workstreams, and deciding when Codex execution versus human oversight is most valuable.",
+      "why_it_matters": "The local practice implication is that long-running coding-agent work should be organized as continuity-preserving workspaces with explicit verification steps and human handoff boundaries, not as isolated prompt sessions.",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Jason Liu"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "reason": "Company and product ecosystem coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Codex",
+          "reason": "Product coverage belongs upstream; local note should focus on persistent-workspace practice."
+        }
+      ],
+      "local_practice_implication": "Consider a durable leaf or ingest note about persistent workspaces, verifiable step decomposition, and oversight checkpoints for long-running agent work.",
+      "follow_up_notes": [
+        "If ingested, avoid duplicating Codex product analysis and cite upstream product coverage instead.",
+        "Check the downloadable guide during ingest only for public, non-sensitive practice detail."
+      ]
+    },
+    {
+      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+      "source_url": "https://openai.com/index/patch-the-planet/",
+      "publisher": "OpenAI",
+      "visible_date": "June 22, 2026",
+      "date_basis": "Visible page date",
+      "summary": "OpenAI announced Patch the Planet, a Daybreak initiative with Trail of Bits that pairs AI-assisted security research with expert review. The article emphasizes maintainer consultation, vulnerability validation, patch development, tests, CI/CD improvements, disclosure coordination, and reusable workflows rather than raw automated vulnerability discovery alone.",
+      "why_it_matters": "For AI-assisted development practice, the update reinforces that security agent output needs human validation, maintainer-aligned scope, patch-and-test workflows, and disclosure discipline before reaching project owners.",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Daybreak",
+        "Trail of Bits",
+        "HackerOne",
+        "Calif"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Daybreak",
+          "reason": "Program/product coverage belongs upstream; local note should focus on validation and maintainer workflow."
+        },
+        {
+          "entity": "Trail of Bits",
+          "reason": "Company coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "AI security-repair loops should include explicit maintainer consultation, expert validation, tests, CI impact, and coordinated disclosure gates.",
+      "follow_up_notes": [
+        "Potential ingest target: governance and risk or verification leaf about AI-assisted security repair workflow gates."
+      ]
+    },
+    {
+      "title": "Snyk adds Agentic Development Security to its AI Security Platform",
+      "source_url": "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+      "publisher": "Snyk",
+      "visible_date": "June 23, 2026",
+      "date_basis": "Visible page date and dateline",
+      "summary": "Snyk announced Evo Agentic Development Security, positioning it as a real-time enforcement layer for autonomous coding-agent workflows. The release argues that agents now invoke external tools, take actions, generate software, and connect to internal systems through MCP servers, plugins, and integrations, so security controls need to govern what agents use, what they do, and what they generate.",
+      "why_it_matters": "The practice signal is that agentic development governance is moving from artifact scanning toward runtime inventory, policy enforcement, MCP/tool visibility, and validation of generated output inside the coding workflow.",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Snyk",
+        "Evo Agentic Development Security",
+        "MCP",
+        "Manoj Nair"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Snyk",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Evo Agentic Development Security",
+          "reason": "Product coverage belongs upstream; local note should focus on runtime governance practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Broad protocol coverage belongs upstream; local note can cover governed tool-call practice."
+        }
+      ],
+      "local_practice_implication": "Local governance pages may need to distinguish code scanning from runtime agent governance: inventory installed agents and MCP servers, enforce policy before actions, and validate generated code outputs.",
+      "follow_up_notes": [
+        "Treat telemetry claims as vendor-provided until corroborated by independent public sources."
+      ]
+    },
+    {
+      "title": "Context engineering for AI agents: a comprehensive guide",
+      "source_url": "https://www.n-ix.com/context-engineering-ai-agents/",
+      "publisher": "N-iX",
+      "visible_date": "June 23, 2026",
+      "date_basis": "Visible page date",
+      "summary": "N-iX published a guide framing context engineering as the foundation for reliable production agents. The article connects the shift from generative models to multi-step autonomous workflows with the need for accurate, precise context design, and cites adoption pressure as organizations move from chat interfaces toward agents that operate infrastructure workflows.",
+      "why_it_matters": "The practice implication is that context architecture should be treated as production infrastructure: scoped inputs, durable knowledge layers, and retrieval rules need to be designed before agents are allowed to run multi-step development or operations workflows.",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "N-iX",
+        "Yaroslav Mota",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "N-iX",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Gartner",
+          "reason": "Analyst/company coverage belongs upstream if needed."
+        }
+      ],
+      "local_practice_implication": "If ingested, use it to reinforce context architecture and retrieval boundaries rather than broad context-engineering taxonomy already owned upstream.",
+      "follow_up_notes": [
+        "Verify any cited survey statistic directly from Gartner before using it as an authoritative claim."
+      ]
+    },
+    {
+      "title": "Read this before you vibe-code another app",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+      "publisher": "The Verge",
+      "visible_date": "Mon Jun 22 07:00:00 2026 UTC-04:00",
+      "date_basis": "Search result date and article page content",
+      "summary": "The Verge reported on security risks in vibe-coded apps, especially when personal prototypes become hosted software that handles shared or sensitive data. The article highlights the need to think through threat models, invoke security reviews deliberately, pay close attention before moving apps to the cloud, and guard against overconfidence in AI-generated security assurances.",
+      "why_it_matters": "The local practice implication is that AI-assisted app workflows need a promotion gate from local prototype to public or data-bearing app, including threat modeling, authentication review, dependency or skill review, and repeated security checks after agent-written patches.",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "The Verge",
+        "SentinelOne",
+        "Gabriel Bernadett-Shapiro",
+        "Corridor",
+        "Jack Cable",
+        "Claude Code",
+        "Codex Security",
+        "Trail of Bits",
+        "OWASP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Claude Code",
+          "reason": "Product coverage belongs upstream; local note should focus on security-review workflow."
+        },
+        {
+          "entity": "Codex Security",
+          "reason": "Product capability coverage belongs upstream; local note should focus on explicit security gates."
+        },
+        {
+          "entity": "OWASP",
+          "reason": "Organization and broad standard coverage belongs upstream unless used for local governance practice."
+        }
+      ],
+      "local_practice_implication": "Add or update governance guidance around prototype-to-cloud promotion, sensitive-data thresholds, explicit security review prompts, and review of agent skills or dependencies.",
+      "follow_up_notes": [
+        "If ingested, avoid repeating incident details except where they justify local promotion gates."
+      ]
+    },
+    {
+      "title": "The Tokenomics Problem With Coding Agents",
+      "source_url": "https://www.honeyhive.ai/post/the-tokenomics-problem-with-coding-agents",
+      "publisher": "HoneyHive AI",
+      "visible_date": "June 23, 2026",
+      "date_basis": "Search result visible date; opened page did not expose a matching visible date in extracted text",
+      "summary": "HoneyHive argues that coding-agent spend should be traced by session, step, model, and outcome instead of managed only through caps. The article identifies session length, tool loops, model choice, and subagent fan-out as cost drivers, and argues that higher token usage does not automatically translate into higher accuracy.",
+      "why_it_matters": "AI-assisted development operating models need cost telemetry at the workflow-step level so teams can identify wasteful loops, choose models deliberately, and bound subagent fan-out without equating high spend with better engineering results.",
+      "owning_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "HoneyHive AI",
+        "Claude Code",
+        "Devin",
+        "Cursor",
+        "Uber",
+        "RBC",
+        "JPMorgan",
+        "CommBank",
+        "Stanford Digital Economy Lab"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "HoneyHive AI",
+          "reason": "Company and product coverage belongs upstream."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Devin",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Cursor",
+          "reason": "Product coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Consider an operating-model note about agent-cost instrumentation by run, step, model, tool loop, and outcome, with controls for context growth and subagent fan-out.",
+      "follow_up_notes": [
+        "Because the opened page extraction did not show the date, confirm the date during ingest before using it as authoritative."
+      ]
+    },
+    {
+      "title": "OPAQUE extends the Agent Governance Toolkit with verifiable identity and governed MCP",
+      "source_url": "https://www.prnewswire.com/news-releases/opaque-extends-the-agent-governance-toolkit-with-verifiable-identity-and-first-ever-verifiably-governed-and-secure-mcp-302806751.html",
+      "publisher": "PR Newswire",
+      "visible_date": "Jun 23, 2026, 12:45 ET",
+      "date_basis": "Visible press-release timestamp",
+      "summary": "OPAQUE announced OPAQUE 3.0, Agent Manifest, and Confidential MCP, framing governed agents around open standards, cryptographic identity, confidential execution, policy versioning, and tool-call transcripts. The announcement is vendor-authored but directly addresses verifiable trust and governed MCP execution.",
+      "why_it_matters": "The local practice implication is that agent governance may need run-level evidence artifacts that bind identity, policy version, execution environment, and tool transcripts, not just permission prompts or static allowlists.",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "OPAQUE",
+        "OPAQUE 3.0",
+        "Agent Manifest",
+        "Agent Governance Toolkit",
+        "Confidential MCP",
+        "Linux Foundation",
+        "TII",
+        "AMD",
+        "NVIDIA"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OPAQUE",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Agent Governance Toolkit",
+          "reason": "Tool/framework coverage belongs upstream unless the local page focuses on governance evidence practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol coverage belongs upstream; local note should focus on governed execution evidence."
+        }
+      ],
+      "local_practice_implication": "Potential local lens: audit artifacts for AI development agents should capture identity, policy, environment, and tool-call transcript evidence for review and compliance.",
+      "follow_up_notes": [
+        "Treat as a vendor announcement until independent technical docs or repository artifacts are reviewed."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Google DeepMind prepares for rogue AI agents",
+      "source_url": "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
+      "visible_date": "Thu Jun 18 13:00:04 2026 UTC",
+      "reason": "Outside the strict two-day cutoff window."
+    },
+    {
+      "title": "Forget prompt engineering: loop engineering is all the rage now",
+      "source_url": "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Search result date is outside or ambiguous relative to the two-day cutoff; not saved as qualifying."
+    },
+    {
+      "title": "GitHub Changelog June 2026 monthly page",
+      "source_url": "https://github.blog/changelog/month/06-2026/",
+      "visible_date": "Search result said today; relevant Copilot code review item shown as June 18, 2026",
+      "reason": "Monthly index was recently crawled, but the relevant item date is outside the cutoff window."
+    },
+    {
+      "title": "Moonshot AI releases Kimi Code CLI and other MarkTechPost listings",
+      "source_url": "https://www.marktechpost.com/2026/06/10/ai-coding-agents-development-platforms-2026/",
+      "visible_date": "June 10, 2026 article page with June 23 sidebar/listing snippets",
+      "reason": "Broad product and tool coverage belongs upstream; no distinct local practice implication was collected from a dated source page."
+    },
+    {
+      "title": "Coding Agent Second Half: From Individual Efficiency to Organization-Level R&D System",
+      "source_url": "https://www.alibabacloud.com/blog/coding-agent-second-half-from-individual-efficiency-to-organization-level-r%26d-system_603287",
+      "visible_date": "Search result showed June 23, 2026",
+      "reason": "Opened URL returned a not-found page, so the source content and date could not be verified."
+    },
+    {
+      "title": "Agentrust awesome-ai-governance repository",
+      "source_url": "https://github.com/agentrust-io/awesome-ai-governance",
+      "visible_date": "Search result referenced June 23, 2026",
+      "reason": "Repository/list entry date was not enough to establish a published or visibly updated source in the cutoff window."
+    },
+    {
+      "title": "OpenAI community scope-control forum post",
+      "source_url": "https://community.openai.com/t/codex-and-coding-agents-need-stronger-scope-control-not-only-better-code-generation/1384420",
+      "visible_date": "Search result said today",
+      "reason": "Useful practitioner signal, but lower authority and not needed once stronger dated sources covered scope, governance, and oversight practice."
+    }
+  ],
+  "follow_up_notes": [
+    "This collector artifact is raw-only and intentionally does not update docs/wiki pages.",
+    "During ingest, prioritize durable local practice leaves: persistent agent workspaces, AI-assisted security repair gates, runtime agent governance, prototype-to-cloud security promotion, agent-cost telemetry, and governed MCP evidence artifacts.",
+    "Before ingesting vendor claims, corroborate statistics and benchmark-like claims with primary technical docs, public repositories, or independent analysis.",
+    "Route company, product, model, MCP server, and broad technique coverage to the upstream AI wiki."
+  ],
+  "blockers": [],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  }
+}

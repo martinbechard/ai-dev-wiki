@@ -1,0 +1,63 @@
+# Adoption Operating Agreements
+
+## Current Understanding
+
+Adoption operating agreements define how humans and agents work together as AI-assisted development scales. The agreement is a map of local practice boundaries rather than a substitute for the detailed leaves.
+
+The local agreement starts with [workflow before model selection](workflow-before-model-selection.md), keeps [human approval boundaries](human-agent-approval-boundaries.md) explicit, stores stable procedure in [durable instructions and skill files](durable-instructions-and-skill-files.md), and uses [tier-specific assistant conventions](tier-specific-assistant-conventions.md) when work areas need different context or checks.
+
+The organization-level agreement aligns on outcomes, accountability, source handling, verification, and shared platform guardrails while leaving teams room for process autonomy. Detailed coverage lives in [outcome alignment and process autonomy](outcome-alignment-and-process-autonomy.md), [senior-led agentic execution pods](senior-led-agentic-execution-pods.md), and [junior learning paths in agentic teams](junior-learning-paths-in-agentic-teams.md).
+
+Broad vendor and product comparisons belong to the upstream AI wiki. This page owns the downstream operating model for applying those tools.
+
+## Operating Agreement Leaves
+
+- [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
+- [human-agent-approval-boundaries.md](human-agent-approval-boundaries.md) owns delegation, review, and final acceptance boundaries.
+- [durable-instructions-and-skill-files.md](durable-instructions-and-skill-files.md) owns reusable instructions, skill files, and agent definition surfaces.
+- [tier-specific-assistant-conventions.md](tier-specific-assistant-conventions.md) owns tier-specific assistant behavior when local tiers are defined.
+- [outcome-alignment-and-process-autonomy.md](outcome-alignment-and-process-autonomy.md) owns the process-autonomy operating rule.
+- [senior-led-agentic-execution-pods.md](senior-led-agentic-execution-pods.md) owns the senior execution pod pattern.
+- [junior-learning-paths-in-agentic-teams.md](junior-learning-paths-in-agentic-teams.md) owns the junior practice and talent-pipeline pattern.
+
+## Practice Boundaries
+
+- Keep this page as the operating-agreement map for the folder.
+- Put reusable practice detail in the durable leaves.
+- Keep ecosystem product comparisons upstream unless they directly change the local operating rule.
+- Record missing local rollout stages as Not yet identified instead of inventing a maturity model.
+
+## Authoritative Sources
+
+- [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
+- [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
+- [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
+- [Process autonomy source](../../../raw/processed/Allen Holub - On process.md)
+- [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+
+## Related Code
+
+- Not yet identified.
+
+## Related Tests
+
+- Not yet identified.
+
+## Related Backlog Items
+
+- Not yet identified.
+
+## Related Wiki Pages
+
+- [agent-workflows](../agent-workflows/index.md)
+- [coding-practices](../coding-practices/index.md)
+- [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md)
+
+## Open Questions
+
+- No open wiki questions are recorded for this topic.
+
+## Maintenance Notes
+
+- Created on 2026-06-23 from local source guidance on scaling practice, skill files, workflow choice, tiers, and human acceptance.
+- Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.

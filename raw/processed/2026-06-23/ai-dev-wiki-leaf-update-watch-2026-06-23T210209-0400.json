@@ -1,0 +1,244 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-06-23T21:02:09-04:00",
+  "run_timestamp_utc": "2026-06-24T01:02:09Z",
+  "cutoff_window": {
+    "start": "2026-06-16T21:02:09-04:00",
+    "end": "2026-06-23T21:02:09-04:00",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 56,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md"
+  ],
+  "selection_rule": "New or previously unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "source_urls_checked": [
+    "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+    "https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules",
+    "https://axify.io/blog/best-ai-coding-agents",
+    "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
+    "https://www.businessinsider.com/convey-raises-38-million-a16z-to-automate-repetitive-office-work-2026-6",
+    "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
+    "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+    "https://www.barrons.com/articles/salesforce-stock-losing-streak-ai-software-5f8c6ee9",
+    "https://www.morphllm.com/best-ai-coding-agents-2026",
+    "https://codepick.dev/en/guides/ai-coding-agents-2026-roadmap/",
+    "https://www.firecrawl.dev/blog/best-ai-coding-agents",
+    "https://www.techradar.com/pro/ai-agent-skills-are-becoming-the-next-enterprise-supply-chain-risk-heres-how-to-govern-them"
+  ],
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "visible_date": "2026-06-18",
+      "title": "Securing internal systems against increasingly capable and imperfectly aligned AI",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "Google DeepMind published an AI Control Roadmap for internal agent deployments. It frames increasingly capable agents as needing defense-in-depth controls beyond model alignment, including sandboxing, prompt-injection resistance, threat modeling, incremental permissions based on verified behavior, monitoring, and containment.",
+      "why_it_matters_for_leaf": "The local approval-boundary and coordination leaves should treat autonomous agent permissions as progressive and evidence-based rather than binary. The source supports local practices that pair autonomy with sandboxing, inspection, delegated supervision, and containment gates.",
+      "named_entities": [
+        "Google DeepMind",
+        "AI Control Roadmap",
+        "AI agents",
+        "Rohin Shah",
+        "Four Flynn"
+      ],
+      "upstream_owned_entities": [
+        "Google DeepMind",
+        "AI agents"
+      ],
+      "follow_up_note": "Route broad AI Control Roadmap entity coverage to the upstream AI wiki; local ingest should focus on approval gates, permission escalation, and supervisor-agent operating practice."
+    },
+    {
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-design-ai-agent-loops-schedules",
+      "visible_date": "2026-06-17",
+      "title": "How to design AI agent loops: schedules, goals, and subagents in Claude Code and Codex",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "The episode describes heartbeat, cron, hook, and goal loops for Claude Code and Codex, and says effective loops need worktrees, skills, plugins or connectors, subagents, and state tracking. Examples include a daily PR-review loop and a weekly skill-identification loop that uses validating subagents.",
+      "why_it_matters_for_leaf": "The local leaves already separate durable instructions, skills, handoffs, and subagent coordination. This source gives a current public vocabulary for loop types and reinforces that reusable skills, state tracking, and validation agents are operating primitives, not optional embellishments.",
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Lenny Rachitsky",
+        "Claire Vo"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "follow_up_note": "Local ingest should capture loop-type vocabulary and the practice implication that automated agent loops need state, skills, and independent validation."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
+      "visible_date": "2026-06-20T09:01:01Z",
+      "title": "Forget prompt engineering: 'Loop engineering' is all the rage now",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "Business Insider reports growing interest in loop engineering for coding agents. The article describes loops as recurring systems that prompt agents, cites automations, worktrees, skills, connectors, and subagents as loop components, and notes patterns where one agent writes while another checks the result. It also flags token cost as a practical constraint.",
+      "why_it_matters_for_leaf": "The local practice implication is that loop design belongs in workflow selection before model choice: teams need budget limits, repeatable state, and independent review before adopting always-on agent loops.",
+      "named_entities": [
+        "Boris Cherny",
+        "Peter Steinberger",
+        "Claire Vo",
+        "Addy Osmani",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "follow_up_note": "During ingest, avoid turning this into a broad trend page; use it to update local loop-selection and subagent-review guidance."
+    },
+    {
+      "source_url": "https://axify.io/blog/best-ai-coding-agents",
+      "visible_date": "2026-06-19",
+      "title": "12 Best AI Coding Agents for Dev Teams to Use in 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "Axify compares coding agents by workflow fit, autonomy, review risk, governance, cost, delivery impact, repo context, multi-step execution, reviewable changes, and architecture-decision support. It explicitly warns that there is no single best agent and that teams should match tools to governance requirements and task delegation needs.",
+      "why_it_matters_for_leaf": "The local wiki should keep tool selection grounded in workflow, review burden, governance, and verification loops rather than leaderboards or model rankings. This also supports treating delegated coding handoffs as a measurable delivery workflow.",
+      "named_entities": [
+        "Axify",
+        "Claude Code",
+        "GitHub Copilot Agent Mode",
+        "OpenAI Codex",
+        "Devin",
+        "Google Jules",
+        "OpenCode",
+        "Aider",
+        "Cline",
+        "Kiro",
+        "Factory Droid",
+        "RooCode",
+        "Gemini CLI"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "Devin",
+        "Google Jules",
+        "OpenCode",
+        "Aider",
+        "Cline",
+        "Kiro",
+        "Factory Droid",
+        "RooCode",
+        "Gemini CLI"
+      ],
+      "follow_up_note": "Route product-by-product coverage upstream; local ingest should extract the selection criteria and review-risk framing only."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/convey-raises-38-million-a16z-to-automate-repetitive-office-work-2026-6",
+      "visible_date": "2026-06-17T13:00:02Z",
+      "title": "Meet your new AI coworkers: Convey raises $38 million led by a16z to take repetitive work off employees' plates",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "factual_summary": "Business Insider reports that Convey positions its AI teammates around responsibility for outcomes rather than isolated tasks, with repetitive operational work as the initial target and strategic or customer-relationship work remaining human-led.",
+      "why_it_matters_for_leaf": "The local adoption model can use this as a current public example of outcome-oriented framing: autonomy is easiest to govern when the work has objective answers and clear human-owned judgment boundaries.",
+      "named_entities": [
+        "Convey",
+        "Andreessen Horowitz",
+        "Khosla Ventures",
+        "Pear VC",
+        "Rohan Chopra",
+        "DoorDash"
+      ],
+      "upstream_owned_entities": [
+        "Convey",
+        "Andreessen Horowitz",
+        "Khosla Ventures",
+        "Pear VC",
+        "DoorDash"
+      ],
+      "follow_up_note": "Route company/funding details upstream; local ingest should retain only the operating-model implication about outcome ownership and objective-answer workflows."
+    }
+  ],
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
+      "visible_date": "2026-06-18",
+      "reason": "Secondary coverage of the same DeepMind AI Control Roadmap; official DeepMind source was preferred for the raw qualifying item."
+    },
+    {
+      "source_url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+      "visible_date": "2026-06-23",
+      "reason": "Broad AI-lab talent update with no clear durable local practice leaf implication; upstream AI ecosystem wiki owns company and lab tracking."
+    },
+    {
+      "source_url": "https://www.barrons.com/articles/salesforce-stock-losing-streak-ai-software-5f8c6ee9",
+      "visible_date": "2026-06-22",
+      "reason": "Market and Salesforce-specific entity update; no direct local practice leaf implication in the selected batch."
+    },
+    {
+      "source_url": "https://www.morphllm.com/best-ai-coding-agents-2026",
+      "visible_date": "2026-06-18",
+      "reason": "Primarily a product/model benchmark leaderboard; federation routes broad product and model coverage to the upstream AI wiki."
+    },
+    {
+      "source_url": "https://codepick.dev/en/guides/ai-coding-agents-2026-roadmap/",
+      "visible_date": "2026-06-01",
+      "reason": "Outside the 7-day cutoff window for this run."
+    },
+    {
+      "source_url": "https://www.firecrawl.dev/blog/best-ai-coding-agents",
+      "visible_date": "2026-06-10",
+      "reason": "Outside the 7-day cutoff window for this run."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/ai-agent-skills-are-becoming-the-next-enterprise-supply-chain-risk-heres-how-to-govern-them",
+      "visible_date": "2026-05",
+      "reason": "Search result date was older than the 7-day cutoff window."
+    }
+  ],
+  "federation_note": "Broad product, company, model, framework, MCP server, and AI ecosystem updates are upstream-owned by the linked AI wiki. This local artifact keeps only AI-assisted development practice implications for selected leaves.",
+  "follow_up_notes": [
+    "Normal raw ingest can update local practice leaves from this artifact; do not update docs/wiki directly from the watcher.",
+    "Prioritize approval-boundary, loop-design, subagent-validation, and workflow-before-model-selection implications.",
+    "When ingesting product or company names, link upstream rather than duplicating entity analysis locally."
+  ]
+}
