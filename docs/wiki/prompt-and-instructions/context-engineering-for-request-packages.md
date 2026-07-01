@@ -1,3 +1,10 @@
+---
+type: "Prompt And Instructions"
+title: "Context Engineering For Request Packages"
+description: "Context engineering is the local practice of selecting project data, coding conventions, documentation, source labels, and verification expectations for a specific request."
+tags: ["prompt-and-instructions"]
+---
+
 # Context Engineering For Request Packages
 
 ## Current Understanding
@@ -8,6 +15,8 @@ The request package should carry enough context for the model to act with less a
 
 The local boundary is practical: context engineering decides what to include, [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) decide where stable guidance lives, and [request packages and file boundaries](request-packages-and-file-boundaries.md) decide how the selected material is labeled inside the request.
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add a scaling rule: when coding agents become default, context packages need stronger written artifacts such as issues, RFCs, concise instructions, reference implementations, current API evidence, and verification expectations. Compaction and handoffs should preserve the current decision state instead of only preserving chat history.
+
 ## Practice Boundaries
 
 - Start from the task, then select the smallest source set that can support the decision.
@@ -16,6 +25,7 @@ The local boundary is practical: context engineering decides what to include, [c
 - Trim stale conversation history and long logs so current evidence remains visible.
 - Attach verification evidence to the next request when it changes the next action.
 - Treat context selection as part of workflow design, not as a late prompt-writing detail.
+- For long-running or multi-agent workflows, make the request package machine-readable enough that another agent or reviewer can continue from the same source authorities and current decision state.
 
 ## Authoritative Sources
 
@@ -23,6 +33,8 @@ The local boundary is practical: context engineering decides what to include, [c
 - [Hypervelocity engineer source](../../../raw/processed/Hypervelocity engineer @edandersen.md)
 - [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 
 ## Related Code
 
@@ -49,3 +61,4 @@ The local boundary is practical: context engineering decides what to include, [c
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold the request-package side of context engineering.
+- Maintained on 2026-06-25 with issue, RFC, instruction, reference, API, verification, and handoff evidence for default coding-agent use.

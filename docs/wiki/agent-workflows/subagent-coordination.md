@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Subagent Coordination"
+description: "Subagent coordination delegates independent investigations to separate agent contexts while the main agent keeps ownership of the plan, decisions, integration, and final..."
+tags: ["agent-workflows"]
+---
+
 # Subagent Coordination
 
 ## Current Understanding
@@ -10,6 +17,8 @@ The local rule is that delegation does not transfer accountability. The main age
 
 The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json) captures public loop-design practice where heartbeat, cron, hook, and goal loops can coordinate subagents. The local implication is that recurring subagent loops need explicit state, stop conditions, evidence contracts, cost boundaries, and an independent validation role when one agent writes while another checks.
 
+The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) treats coding subagent configuration as an explicit engineering activity. The local pattern is a typed delegation agreement: role boundary, context budget, allowed sources, handoff contract, completion criteria, and validation owner are set before the subagent starts work.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -18,13 +27,15 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 - Avoid overlapping file edits unless a coordinator explicitly assigns ownership and integration.
 - Give recurring subagent loops a durable state record, retry or stop rule, budget boundary, and validation expectation.
 - Use a separate verifier when a subagent performs broad generation, security-sensitive analysis, or recurring unattended work.
+- Define subagent role boundaries, context budgets, source access, handoff fields, and completion criteria as a delegation contract.
 
 ## Authoritative Sources
 
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
-- [Leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
+- [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
+- [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 
 ## Related Code
 
@@ -54,3 +65,4 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 
 - Created on 2026-06-23 from source-backed subagent, specialist-agent, and integration guidance.
 - Maintained on 2026-06-23 with public loop-design guidance on recurring subagent loops, independent validation, and stop conditions.
+- Maintained on 2026-06-28 with typed delegation contracts for subagent configuration.

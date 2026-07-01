@@ -1,3 +1,10 @@
+---
+type: "Verification And Eval"
+title: "Representative Workflow Calibration"
+description: "Model and harness changes need calibration against representative work, not only generic benchmark scores."
+tags: ["verification-and-evals"]
+---
+
 # Representative Workflow Calibration
 
 ## Current Understanding
@@ -8,6 +15,12 @@ The Dwarf Star source is useful local-harness evidence because it describes cali
 
 Runtime telemetry supports calibration because it makes model and tool behavior inspectable. Useful signals include prompt size, prefill behavior, time to first token, decode speed, cache behavior, memory pressure, tool-call validity, and source attribution. Application harness ownership remains in [application harness patterns](../application-patterns/application-harness-patterns.md); this page owns the eval and calibration lens.
 
+The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) adds human-review behavior and trace-linked eval signals. Calibration sets for AI-generated code should include prompt provenance and reviewer behavior when those artifacts change review time or scrutiny, and production-agent calibration should connect quality scores to traces, retrieval evidence, tool calls, cost, and latency.
+
+The [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md) adds a calibration requirement for context optimization layers. Compression, cache alignment, reversible retrieval, memory sharing, and provenance tracking should be tested against the same representative workflow prompts as the unoptimized baseline so token savings do not mask accuracy, latency, drift, or governance regressions.
+
+The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds a model-refresh trigger. New coding, terminal, browser, or agentic-performance claims should refresh the representative local suite before autonomy, default model routing, or cost-performance assumptions change. Public model benchmarks stay upstream; locally, the question is whether the model improves the actual brownfield debugging, review, repair, and verification tasks that this workflow needs.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -16,6 +29,9 @@ Runtime telemetry supports calibration because it makes model and tool behavior 
 - Track runtime and tool-call telemetry alongside quality results.
 - Recalibrate after model, prompt, retrieval, tool schema, quantization, or harness changes.
 - Keep broad model-score catalogs upstream unless the score changes a local workflow decision.
+- Include prompt provenance, review behavior, trace evidence, retrieval evidence, tool calls, cost, and latency when those signals are part of the target workflow.
+- Compare optimized and unoptimized context paths on the same representative workflows when a compression layer changes model input.
+- Rerun local representative tasks before changing autonomy, model-routing, or cost-performance defaults after a model refresh.
 
 ## Authoritative Sources
 
@@ -23,6 +39,9 @@ Runtime telemetry supports calibration because it makes model and tool behavior 
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
+- [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 
 ## Related Code
 
@@ -49,3 +68,6 @@ Runtime telemetry supports calibration because it makes model and tool behavior 
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold representative workflow calibration and local-model drift-check practice.
+- Maintained on 2026-06-26 with prompt-provenance, human-review behavior, trace-linked quality, retrieval, tool-call, cost, and latency calibration signals.
+- Maintained on 2026-06-30 with optimized-versus-baseline context calibration for compression, cache alignment, retrieval, memory, and provenance layers.
+- Maintained on 2026-07-01 with model-refresh calibration triggers for coding, terminal, browser, repair, review, and verification tasks.

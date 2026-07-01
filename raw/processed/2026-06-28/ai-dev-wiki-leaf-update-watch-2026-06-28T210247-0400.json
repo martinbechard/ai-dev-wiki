@@ -1,0 +1,454 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "days": 7,
+    "end": "2026-06-28T21:02:47-04:00",
+    "start": "2026-06-21T21:02:47-04:00",
+    "timezone": "America/Toronto"
+  },
+  "excluded_candidates": [
+    {
+      "notes": "Useful context-engineering background, but outside the seven-day window.",
+      "reason": "older_than_cutoff",
+      "source_url": "https://redis.io/blog/ai-agent-context/",
+      "visible_date": "2026-06-09"
+    },
+    {
+      "notes": "Search result shows an update within the window, but the visible snippet does not identify what changed; recorded as checked but excluded from qualified updates.",
+      "reason": "ambiguous_update_scope",
+      "source_url": "https://moclaw.ai/blog/persistent-ai-cloud-computer-2026-guide",
+      "visible_date": "2026-06-23 updated"
+    },
+    {
+      "notes": "Subagent delegation guidance is relevant but search result says two weeks old.",
+      "reason": "older_than_cutoff",
+      "source_url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+      "visible_date": "2026-06-14 approximate"
+    },
+    {
+      "notes": "Multi-agent team pattern result is relevant but outside the cutoff.",
+      "reason": "older_than_cutoff",
+      "source_url": "https://www.taskade.com/blog/build-ai-agent-team",
+      "visible_date": "2026-06-14 approximate"
+    },
+    {
+      "notes": "Changelog entries were checked for coding-agent telemetry and review practice, but the visible entries are product-specific Copilot plan or review updates rather than a durable local-practice source for the selected leaves.",
+      "reason": "boundary_topic_not_selected",
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "visible_date": "2026-06-25 and 2026-06-26"
+    },
+    {
+      "notes": "The article supports adoption context around review decline, but the local practice implication overlaps better-covered verification sources.",
+      "reason": "broad_market_update",
+      "source_url": "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "visible_date": "2026-06-28"
+    },
+    {
+      "notes": "Private MCP connectivity matters to retrieval/tool governance, but no retrieval-and-tools leaf was selected in this batch.",
+      "reason": "approved_leaf_scope_mismatch",
+      "source_url": "https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products",
+      "visible_date": "2026-06-26"
+    }
+  ],
+  "factual_summaries": [
+    "OpenAI described Codex Remote as a way to start, steer, review, and organize engineering work from a mobile control surface while tasks continue on development machines.",
+    "Axios reported growing Codex use and emphasized that agents are moving from chat toward delegated work, with sampled Codex users submitting tasks estimated to represent substantial human work.",
+    "TechRadar framed AI coding systems as strategic infrastructure and argued the bottleneck is shifting from code generation speed to independent verification, governance, auditability, and continuity.",
+    "Augment Code published guidance that production AI agents can fail semantically behind healthy infrastructure signals and need trace-level telemetry, evaluation, and orchestration instrumentation.",
+    "The public awesome-harness-engineering list surfaced a June 2026 definition of an agent harness around an agent loop, tool interface, context management, and control mechanisms.",
+    "A June 2026 arXiv paper argues that coding-agent rules files, agent definitions, and IDE-specific markdown form an unmanaged control layer and proposes deterministic validation for configuration provenance, permissions, constraints, and tool scopes.",
+    "A June 2026 paper models coding-agent orchestration as cost-sensitive sequential testing, deciding when to gather evidence, refine, verify, or stop based on uncertainty and verifier cost.",
+    "TechRadar argued that secure enterprise agents should preserve existing human approval, permission, and audit workflows by operating through established interfaces rather than bypassing controls through backend access."
+  ],
+  "federation_routing": "Broad product, company, and framework background belongs upstream in ai-wiki. This artifact records only downstream local-practice implications for selected ai-dev-wiki leaves.",
+  "follow_up_notes": [
+    "Consider ingesting into delegated handoffs, persistent workspaces, and user-visible progress leaves.",
+    "Route product background upstream if needed; keep local implication in workflow selection and handoff leaves.",
+    "Review for local verification and governance phrasing during the next ingest pass.",
+    "Potential ingest target: runtime telemetry and agent cost telemetry leaves.",
+    "Check whether this should update the agent harness components leaf.",
+    "Potential ingest target: application harness patterns and structured output leaves.",
+    "Review alongside existing verification-tax leaf during ingest.",
+    "Potentially useful for process-layer and harness pattern leaves."
+  ],
+  "leaf_universe_count": 65,
+  "named_entities": [
+    "Aider",
+    "Augment Code",
+    "Axios",
+    "Claude Code",
+    "Cline",
+    "Codex",
+    "Codex CLI",
+    "Codex Remote",
+    "Cursor",
+    "Gartner",
+    "LLM coding agents",
+    "MBZUAI",
+    "OpenAI",
+    "OpenClaw",
+    "OpenHands",
+    "PolyShape",
+    "Qodo",
+    "SWE-agent",
+    "SpaceX",
+    "Sutherland Global",
+    "TechRadar",
+    "ai-boost",
+    "arXiv"
+  ],
+  "qualifying_updates": [
+    {
+      "date_basis": "OpenAI Developers page date",
+      "factual_summary": "OpenAI described Codex Remote as a way to start, steer, review, and organize engineering work from a mobile control surface while tasks continue on development machines.",
+      "follow_up_note": "Consider ingesting into delegated handoffs, persistent workspaces, and user-visible progress leaves.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "local_practice_implication": "Keep local pages focused on handoff mechanics, review checkpoints, and workspace-control practice rather than duplicating a Codex product page.",
+      "named_entities": [
+        "OpenAI",
+        "Codex Remote",
+        "Codex"
+      ],
+      "source_url": "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "visible_date": "2026-06-23",
+      "why_it_matters_for_leaf": "Delegated coding handoffs and persistent workspaces need explicit steering, review, and organization checkpoints when work runs away from the primary terminal."
+    },
+    {
+      "date_basis": "Axios publication date surfaced by public search and article metadata",
+      "factual_summary": "Axios reported growing Codex use and emphasized that agents are moving from chat toward delegated work, with sampled Codex users submitting tasks estimated to represent substantial human work.",
+      "follow_up_note": "Route product background upstream if needed; keep local implication in workflow selection and handoff leaves.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "local_practice_implication": "Treat adoption signals as justification for stronger delegation boundaries, not as upstream product coverage.",
+      "named_entities": [
+        "Axios",
+        "OpenAI",
+        "Codex",
+        "Claude Code",
+        "OpenClaw"
+      ],
+      "source_url": "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Claude Code",
+        "OpenClaw"
+      ],
+      "visible_date": "2026-06-25",
+      "why_it_matters_for_leaf": "Workflow selection and delegated handoff pages should distinguish casual chat from tasks large enough to require ownership, acceptance criteria, and review gates."
+    },
+    {
+      "date_basis": "TechRadar publication date surfaced by public search",
+      "factual_summary": "TechRadar framed AI coding systems as strategic infrastructure and argued the bottleneck is shifting from code generation speed to independent verification, governance, auditability, and continuity.",
+      "follow_up_note": "Review for local verification and governance phrasing during the next ingest pass.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "local_practice_implication": "Use this as practice evidence for keeping reviewer/verifier roles separate from builder roles in agentic coding loops.",
+      "named_entities": [
+        "TechRadar",
+        "Qodo",
+        "Cursor",
+        "SpaceX"
+      ],
+      "source_url": "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "upstream_owned_entities": [
+        "Cursor",
+        "SpaceX",
+        "Qodo"
+      ],
+      "visible_date": "2026-06-26",
+      "why_it_matters_for_leaf": "AI-assisted TDD, orient-inspect-patch-verify loops, and agent-cost telemetry pages should emphasize independent verification and auditability over generation throughput."
+    },
+    {
+      "date_basis": "Public search result marked five days before the run",
+      "factual_summary": "Augment Code published guidance that production AI agents can fail semantically behind healthy infrastructure signals and need trace-level telemetry, evaluation, and orchestration instrumentation.",
+      "follow_up_note": "Potential ingest target: runtime telemetry and agent cost telemetry leaves.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "local_practice_implication": "Keep local guidance on what telemetry a project harness should expose, not on vendor positioning.",
+      "named_entities": [
+        "Augment Code"
+      ],
+      "source_url": "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "upstream_owned_entities": [
+        "Augment Code"
+      ],
+      "visible_date": "2026-06-23",
+      "why_it_matters_for_leaf": "User-visible progress, runtime telemetry, agent cost telemetry, and process-layer pages need traces that expose reasoning path, tool loops, and semantic failures."
+    },
+    {
+      "date_basis": "Public search result marked two days before the run and page lists June 2026 harness definition material",
+      "factual_summary": "The public awesome-harness-engineering list surfaced a June 2026 definition of an agent harness around an agent loop, tool interface, context management, and control mechanisms.",
+      "follow_up_note": "Check whether this should update the agent harness components leaf.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "local_practice_implication": "Local pages should capture the harness boundary test and route individual tool profiles upstream.",
+      "named_entities": [
+        "ai-boost",
+        "Claude Code",
+        "Codex CLI",
+        "Aider",
+        "Cline",
+        "OpenHands",
+        "SWE-agent"
+      ],
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "Aider",
+        "Cline",
+        "OpenHands",
+        "SWE-agent"
+      ],
+      "visible_date": "2026-06-26",
+      "why_it_matters_for_leaf": "Agent harness component and application harness pattern pages can use the four-part definition as a useful comparison point for local harness boundaries."
+    },
+    {
+      "date_basis": "Public search result marked three days before the run; arXiv identifier 2606.26924",
+      "factual_summary": "A June 2026 arXiv paper argues that coding-agent rules files, agent definitions, and IDE-specific markdown form an unmanaged control layer and proposes deterministic validation for configuration provenance, permissions, constraints, and tool scopes.",
+      "follow_up_note": "Potential ingest target: application harness patterns and structured output leaves.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "local_practice_implication": "Use as evidence for manifest-style instruction governance, configuration linting, and deterministic control surfaces.",
+      "named_entities": [
+        "arXiv",
+        "LLM coding agents"
+      ],
+      "source_url": "https://arxiv.org/html/2606.26924v1",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-06-25",
+      "why_it_matters_for_leaf": "Application harnesses, structured drafter patterns, and context rehydration should treat instructions and agent definitions as managed control-plane artifacts, not loose prompt text."
+    },
+    {
+      "date_basis": "Public search result marked five days before the run; arXiv identifier 2606.24453",
+      "factual_summary": "A June 2026 paper models coding-agent orchestration as cost-sensitive sequential testing, deciding when to gather evidence, refine, verify, or stop based on uncertainty and verifier cost.",
+      "follow_up_note": "Review alongside existing verification-tax leaf during ingest.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "local_practice_implication": "Local practice can add explicit criteria for when to escalate from cheap diagnostics to expensive verification.",
+      "named_entities": [
+        "arXiv",
+        "MBZUAI",
+        "PolyShape"
+      ],
+      "source_url": "https://arxiv.org/html/2606.24453v1",
+      "upstream_owned_entities": [
+        "MBZUAI",
+        "PolyShape"
+      ],
+      "visible_date": "2026-06-23",
+      "why_it_matters_for_leaf": "Orient-inspect-patch-verify, AI-assisted TDD, and agent harness component pages can frame verification as a costed control decision instead of a fixed checklist."
+    },
+    {
+      "date_basis": "TechRadar article date surfaced by public news search",
+      "factual_summary": "TechRadar argued that secure enterprise agents should preserve existing human approval, permission, and audit workflows by operating through established interfaces rather than bypassing controls through backend access.",
+      "follow_up_note": "Potentially useful for process-layer and harness pattern leaves.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ],
+      "local_practice_implication": "Keep downstream guidance centered on accountable interface use and audit preservation rather than broad enterprise AI trend coverage.",
+      "named_entities": [
+        "TechRadar",
+        "Sutherland Global",
+        "Gartner"
+      ],
+      "source_url": "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+      "upstream_owned_entities": [
+        "Sutherland Global",
+        "Gartner"
+      ],
+      "visible_date": "2026-06-23",
+      "why_it_matters_for_leaf": "Application and local-model harness pages should keep interface-level accountability and audit artifacts in the operating model, especially for legacy or sensitive workflows."
+    }
+  ],
+  "run_timestamp": "2026-06-28T21:02:47-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/html/2606.24453v1",
+    "https://arxiv.org/html/2606.26924v1",
+    "https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products",
+    "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+    "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+    "https://github.blog/changelog/label/copilot/",
+    "https://github.com/ai-boost/awesome-harness-engineering",
+    "https://moclaw.ai/blog/persistent-ai-cloud-computer-2026-guide",
+    "https://redis.io/blog/ai-agent-context/",
+    "https://www.augmentcode.com/guides/ai-agent-monitoring",
+    "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+    "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+    "https://www.taskade.com/blog/build-ai-agent-team",
+    "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+    "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "https://github.blog/changelog/label/copilot/",
+      "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation"
+    ],
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": [
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation"
+    ],
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": [
+      "https://arxiv.org/html/2606.24453v1",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "https://github.blog/changelog/label/copilot/",
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering"
+    ],
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": [
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://moclaw.ai/blog/persistent-ai-cloud-computer-2026-guide",
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "https://arxiv.org/html/2606.26924v1"
+    ],
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://arxiv.org/html/2606.24453v1",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai"
+    ],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+      "https://www.taskade.com/blog/build-ai-agent-team",
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering"
+    ],
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": [
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "https://github.blog/changelog/label/copilot/"
+    ],
+    "docs/wiki/application-patterns/agent-harness-components.md": [
+      "https://github.com/ai-boost/awesome-harness-engineering",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://arxiv.org/html/2606.24453v1",
+      "https://www.augmentcode.com/guides/ai-agent-monitoring"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+      "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.axios.com/2026/06/25/codex-agents-growth-openai"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://github.com/ai-boost/awesome-harness-engineering",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+      "https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products"
+    ],
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": [
+      "https://moclaw.ai/blog/persistent-ai-cloud-computer-2026-guide",
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+      "https://redis.io/blog/ai-agent-context/"
+    ],
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": [
+      "https://arxiv.org/html/2606.26924v1",
+      "https://github.com/ai-boost/awesome-harness-engineering",
+      "https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products",
+      "https://www.augmentcode.com/guides/ai-agent-monitoring"
+    ],
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": [
+      "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "https://github.blog/changelog/label/copilot/",
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://arxiv.org/html/2606.24453v1",
+      "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "https://github.blog/changelog/label/copilot/"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://redis.io/blog/ai-agent-context/",
+      "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "https://arxiv.org/html/2606.26924v1"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Aider",
+    "Augment Code",
+    "Claude Code",
+    "Cline",
+    "Codex",
+    "Codex CLI",
+    "Cursor",
+    "Gartner",
+    "MBZUAI",
+    "OpenAI",
+    "OpenClaw",
+    "OpenHands",
+    "PolyShape",
+    "Qodo",
+    "SWE-agent",
+    "SpaceX",
+    "Sutherland Global"
+  ]
+}

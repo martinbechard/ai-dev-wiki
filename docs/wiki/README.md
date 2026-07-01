@@ -1,3 +1,9 @@
+---
+type: "Project Wiki"
+title: "Project Wiki"
+description: "This folder contains the maintained synthesis layer for this repository."
+---
+
 # Project Wiki
 
 This folder contains the maintained synthesis layer for this repository.
@@ -52,7 +58,7 @@ Use each topic folder as a hub plus granular leaf pages. Create local leaves for
 
 ## Automations
 
-- [automated-update-feeds.md](source-workflows/automated-update-feeds.md) records the public topic collector, leaf update watch, and raw project-wiki monitor model.
+- [automated-update-feeds.md](source-workflows/automated-update-feeds.md) records the public topic collector, [leaf update watch](source-workflows/leaf-update-watch.md), and [raw project-wiki monitor](source-workflows/raw-project-wiki-monitor.md) model.
 - AI Dev Wiki Topic News Collector saves raw public topic updates.
 - AI Dev Wiki Leaf Update Watch saves raw public updates for existing durable local leaves.
 - AI Dev Wiki Raw Project-Wiki Monitor ingests raw artifacts into wiki leaves and digests after lint.

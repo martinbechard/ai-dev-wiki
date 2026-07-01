@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Junior Learning Paths In Agentic Teams"
+description: "Junior learning paths in agentic teams preserve the supervised execution that produces future senior judgment."
+tags: ["adoption-and-operating-model"]
+---
+
 # Junior Learning Paths In Agentic Teams
 
 ## Current Understanding

@@ -1,3 +1,10 @@
+---
+type: "Application Pattern"
+title: "Structured Output And Drafter Patterns"
+description: "Structured output makes model intent executable by giving deterministic code a schema, DSL, or typed artifact to validate."
+tags: ["application-patterns"]
+---
+
 # Structured Output And Drafter Patterns
 
 ## Current Understanding

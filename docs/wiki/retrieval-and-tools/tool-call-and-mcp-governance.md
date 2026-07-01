@@ -1,3 +1,10 @@
+---
+type: "Retrieval And Tools"
+title: "Tool Call And MCP Governance"
+description: "Tool calls turn model intent into software-mediated action."
+tags: ["retrieval-and-tools"]
+---
+
 # Tool Call And MCP Governance
 
 ## Current Understanding
@@ -10,6 +17,16 @@ MCP is the local practice boundary for standardized tool access. It exposes type
 
 The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) adds a governed-execution lens for MCP and agent tools: tool governance should account for the acting identity, policy version, execution environment, runtime inventory, tool-call transcript, and generated-output validation. Vendor-specific governed MCP products remain upstream-owned; the local rule is that tool access should produce reviewable evidence when it can change code, data, infrastructure, or external systems.
 
+The [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) adds three tool-governance requirements. MCP gateway practice should include per-tool policy, per-user or per-group scope, hosted tool catalog change detection, centralized audit logs, and data protection before tool responses reach the model. Tool output from externally controlled systems should be treated as untrusted content that cannot authorize shell commands, dependency changes, credential use, or cloud actions by itself. Model or provider routing should be recorded when available because hidden routing can affect reproducibility and evaluation evidence.
+
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add two operating controls. First, tool installation sources and marketplaces should be governed before a tool appears in an agent environment. Second, MCP-connected external data must be treated as untrusted evidence even when the MCP server itself is approved, because the content flowing through the server can still steer a coding agent toward unsafe actions.
+
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add consent, denial, and deterministic-control-plane signals. Tool catalogs, plugins, compiled agent artifacts, content hashes, MCP exposure, permission-denial reasons, authentication notices, and tamper-evident logs should be inspectable control-plane evidence rather than invisible agent behavior.
+
+The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) adds another MCP security-practice signal: least privilege, allowlists, audit trails, data boundaries, and explicit approval gates should be present before MCP tools can affect code, repositories, infrastructure, or external systems.
+
+The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) and [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) add tool-metadata and catalog-governance signals. Tool descriptions, Team MCP catalogs, organization groups, agent pickers, CLI surfaces, and approved integration marketplaces are instruction-bearing supply-chain inputs. A critical agent should not consume changed tool metadata, new server entries, or newly available command surfaces without provenance review, group scope, and re-approval when the action surface changes.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -21,6 +38,15 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - Treat MCP servers as governed connectors, not as permission to bypass local approval rules.
 - Record identity, policy, environment, approval, tool-call, and result evidence for high-impact agent tool use.
 - Validate generated code or configuration outputs before they are accepted as tool results or committed artifacts.
+- Default-deny high-impact MCP tools until policy, user scope, catalog change review, and audit logging are in place.
+- Treat tool output and retrieved operational data as evidence, not as instructions that can expand agent authority.
+- Record model routing or tool-provider routing metadata when it affects reproducibility, cost, or review evidence.
+- Govern MCP server, plugin, and marketplace onboarding before they become available to agents.
+- Apply untrusted-content handling to MCP-returned issue text, error reports, dependency metadata, and operational records, not only to open-web retrieval.
+- Record plugin consent, permission denials, authentication notices, artifact hashes, and tool-log provenance when they affect trust or reproducibility.
+- Require least privilege, explicit allowlists, data-boundary checks, audit trails, and approval gates for MCP tools that can change code, dependencies, infrastructure, or external records.
+- Treat tool descriptions and MCP catalog metadata as live instructions that need review, provenance, and change detection before they reach acting agents.
+- Govern IDE, CLI, cloud-agent, and marketplace tool availability with the same policy when they expose the same approved integration.
 
 ## Authoritative Sources
 
@@ -29,6 +55,14 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [RAG provenance ranking and chunking](rag-provenance-ranking-and-chunking.md)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
+- [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
+- [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
+- [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 
 ## Related Code
 
@@ -48,6 +82,8 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
+- [agent identity and delegated authority](../governance-and-risk/agent-identity-and-delegated-authority.md)
+- [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
 
 ## Open Questions
 
@@ -57,3 +93,8 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.
 - Maintained on 2026-06-23 with public governed-MCP and runtime agent governance signals.
+- Maintained on 2026-06-24 with MCP gateway policy, untrusted tool-output, and routing-aware evidence requirements.
+- Maintained on 2026-06-25 with marketplace onboarding and MCP-returned content as explicit tool-governance boundaries.
+- Maintained on 2026-06-26 with plugin consent, permission-denial evidence, deterministic control-plane artifacts, and tamper-evident tool logs.
+- Maintained on 2026-06-27 with MCP least-privilege, allowlist, audit, data-boundary, and approval-gate practice.
+- Maintained on 2026-07-01 with tool-description poisoning, Team MCP catalog, organization-scope, and native agent command-surface governance.

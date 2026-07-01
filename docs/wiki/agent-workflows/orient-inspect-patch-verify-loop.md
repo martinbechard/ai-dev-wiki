@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Orient Inspect Patch Verify Loop"
+description: "AI-assisted coding is a controlled loop, not a single answer. The local loop is orient, inspect, plan, patch, verify, and carry evidence forward."
+tags: ["agent-workflows"]
+---
+
 # Orient Inspect Patch Verify Loop
 
 ## Current Understanding
@@ -10,6 +17,8 @@ Named coding agents, agentic frameworks, and autonomous engineering platforms ar
 
 The broader [research plan implement review lifecycle](research-plan-implement-review-lifecycle.md), [use compose build workflow selection](use-compose-build-workflow-selection.md), [subagent coordination](subagent-coordination.md), and [delegated coding handoffs](delegated-coding-handoffs.md) have their own leaves. This page owns the controlled-change loop that keeps each pass grounded in fresh evidence.
 
+The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) frames coding-agent orchestration as a cost-sensitive sequence of evidence gathering, refinement, verification, and stopping decisions. The local loop should not run checks mechanically or skip them for speed; each pass should choose the next evidence step based on uncertainty, risk, and verifier cost.
+
 ## Practice Boundaries
 
 - Orient from repository state, procedures, and existing wiki pages before proposing changes.
@@ -20,12 +29,14 @@ The broader [research plan implement review lifecycle](research-plan-implement-r
 - Carry unresolved evidence gaps into Open Questions instead of presenting guesses as settled.
 - Link multi-phase lifecycle guidance to [research-plan-implement-review-lifecycle.md](research-plan-implement-review-lifecycle.md).
 - Link workflow strategy decisions to [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md).
+- Choose the next inspect, refine, verify, or stop step according to uncertainty, change risk, and verification cost.
 
 ## Authoritative Sources
 
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
+- [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 
 ## Related Code
 
@@ -54,3 +65,4 @@ The broader [research plan implement review lifecycle](research-plan-implement-r
 
 - Created on 2026-06-23 from the local source decks covering agent loops, tool calls, visible planning, and subagent use.
 - Split on 2026-06-23 so RPI lifecycle, use-compose-build selection, subagent coordination, and handoffs live in durable leaf pages.
+- Maintained on 2026-06-28 with cost-sensitive evidence gathering, refinement, verification, and stop decisions.

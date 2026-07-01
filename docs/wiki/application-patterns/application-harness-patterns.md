@@ -1,3 +1,10 @@
+---
+type: "Application Pattern"
+title: "Application Harness Patterns"
+description: "The harness around the model is where an AI application becomes reliable product software."
+tags: ["application-patterns"]
+---
+
 # Application Harness Patterns
 
 ## Current Understanding
@@ -9,6 +16,8 @@ The detailed harness patterns live in sibling leaves. [Agent harness components]
 Named frameworks, SDKs, models, and products are upstream-owned entities. This page owns the local architecture pattern and points to local leaves for workflow-specific practice.
 
 Use-compose-build selection is represented in [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md) because the choice is made per workflow. This page keeps the application architecture boundary: the harness must expose enough control, validation, and telemetry for the selected workflow to be safe to run.
+
+The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) adds implementation evidence for keeping harness concerns explicit: a product harness may need separate treatment for working state, execution substrate, protocols, evaluation, observability, guardrails, visible progress, and PR review evidence. Those concerns route to the leaves below instead of turning this overview into a framework catalog.
 
 ## Pattern Leaves
 
@@ -33,6 +42,7 @@ Use-compose-build selection is represented in [use compose build workflow select
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
+- [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -63,3 +73,4 @@ Use-compose-build selection is represented in [use compose build workflow select
 - Created on 2026-06-23 from local source guidance on structured output, drafter patterns, harness software, workflow state, progress, and AI process layers.
 - Updated on 2026-06-23 with local-model harness telemetry, calibration, and workflow-level use-compose-build tradeoffs.
 - Maintained on 2026-06-23 as the overview page for split application harness leaves.
+- Maintained on 2026-06-24 with harness category and progress-telemetry signals from the [leaf update watch](../source-workflows/leaf-update-watch.md).

@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Delegated Coding Handoffs"
+description: "Delegated coding handoffs define how an agent returns work to the human or coordinator for review."
+tags: ["agent-workflows"]
+---
+
 # Delegated Coding Handoffs
 
 ## Current Understanding
@@ -8,18 +15,37 @@ The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 
 This page owns the handoff pattern. [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns the operating rule for what the human must approve.
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) frames delegated agent work as increasingly longer-horizon and cross-functional. The handoff therefore needs to include progress state and remaining oversight, not only a final diff summary. Product-specific Codex and platform history belongs upstream; this page keeps the local acceptance and transition contract for delegated work.
+
+The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md) and [context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md) make the handoff a context-management artifact as well as a human review artifact. A handoff should let a fresh session rehydrate without chat history: current state, changed files, progress cursor, source artifacts, decisions, verification evidence, unresolved discrepancies, and the next acceptance criterion.
+
+The [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json) adds a remote-agent supervision signal: delegated work should name execution context, intervention mode, review loop, and narrow permissions when the work runs in a remote or long-running environment. Broad Codex product details stay upstream.
+
+The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) adds a mobile and remote-control signal for delegated engineering work. A handoff should say how work was started, steered, reviewed, and organized when the execution surface is outside the primary terminal, and it should leave enough state for the next reviewer to intervene without reconstructing the run from chat history.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
 - Distinguish verified completion from blocked or unverified claims.
 - Carry human-owned decisions into the handoff instead of silently resolving them.
 - Keep handoff summaries tied to source evidence, tests, lint, build output, runtime checks, or review findings.
+- Include progress state, tool or environment assumptions, and remaining supervision needs when the delegated task took multiple steps or ran across a longer horizon.
+- Include enough state for a fresh session to resume from disk without relying on prior chat memory.
+- Record the progress cursor, last completed artifact, source-of-truth files, unresolved discrepancies, and next acceptance criterion when the handoff is part of a multi-step workflow.
+- Name execution context, intervention mode, review loop, and narrow permissions for remote or long-running delegated work.
+- Include start, steering, review, organization, and intervention evidence when delegated work runs through a remote or mobile control surface.
 
 ## Authoritative Sources
 
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [Context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md)
+- [Context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md)
+- [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
+- [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
+- [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 
 ## Related Code
 
@@ -39,6 +65,7 @@ This page owns the handoff pattern. [human agent approval boundaries](../adoptio
 - [subagent coordination](subagent-coordination.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
+- [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 
 ## Open Questions
 
@@ -47,3 +74,6 @@ This page owns the handoff pattern. [human agent approval boundaries](../adoptio
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source-backed delegated coding, visible progress, and evidence-handoff guidance.
+- Maintained on 2026-06-25 with longer-horizon delegated-work handoff requirements.
+- Maintained on 2026-06-27 with handoffs as rehydration artifacts and remote-agent supervision evidence.
+- Maintained on 2026-06-28 with remote-control steering, review, organization, and intervention evidence.

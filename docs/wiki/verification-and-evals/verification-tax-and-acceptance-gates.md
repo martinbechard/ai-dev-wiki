@@ -1,3 +1,10 @@
+---
+type: "Verification And Eval"
+title: "Verification Tax And Acceptance Gates"
+description: "Agentic delivery shifts bottlenecks from generation to validation."
+tags: ["verification-and-evals"]
+---
+
 # Verification Tax And Acceptance Gates
 
 ## Current Understanding

@@ -1,0 +1,291 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-29T20:32:33-04:00",
+  "cutoff_window": {
+    "start": "2026-06-27T20:32:33-04:00",
+    "end": "2026-06-29T20:32:33-04:00",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practices, workflows, verification, governance, local adoption patterns, and downstream implementation implications.",
+    "upstream_owned_scope": "Companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques are owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "collector_action": "Entity updates are recorded as upstream-owned where applicable. Local notes capture only practice implications or routing decisions."
+  },
+  "findings": [
+    {
+      "title": "Copilot Fast Mode preview changes model routing and review expectations",
+      "source_url": "https://github.blog/changelog/2026-06-29-claude-opus-4-8-fast-mode-is-now-in-preview-for-github-copilot/",
+      "visible_date": "2026-06-29",
+      "source_type": "official changelog",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "GitHub announced a preview Fast Mode for Claude Opus 4. The changelog says it is aimed at lower latency and cost while trading off some quality, and that organizations can use policy controls to enable or restrict it.",
+      "why_it_matters": "Coding-agent teams should treat faster model modes as an explicit operating choice with acceptance criteria, review depth, and cost policy rather than as a transparent default.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Claude Opus 4",
+        "Fast Mode"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Claude Opus 4"
+      ],
+      "local_practice_implication": "Add model-mode selection to workflow-before-model-selection, verification-tax, and agent-cost-telemetry practices when the raw source is ingested."
+    },
+    {
+      "title": "Copilot coding agent issue-creation restriction adds entry-point governance",
+      "source_url": "https://github.blog/changelog/2026-06-29-restrict-github-copilot-coding-agent-issue-creation-in-repositories/",
+      "visible_date": "2026-06-29",
+      "source_type": "official changelog",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "summary": "GitHub announced a repository setting that can restrict Copilot coding agent from being started by issue assignment or mentioning Copilot in an issue, while still allowing starts from pull requests or Copilot Chat.",
+      "why_it_matters": "Agent delegation can be governed at the trigger surface. Teams need different approval boundaries for issue-based work intake, PR-based review, and chat-started tasks.",
+      "named_entities": [
+        "GitHub Copilot coding agent",
+        "repository settings",
+        "issue assignment",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Use this as raw evidence for human-agent-approval-boundaries and agent-identity-and-delegated-authority rather than creating a local GitHub product page."
+    },
+    {
+      "title": "AI code review concern highlights review-gate erosion risk",
+      "source_url": "https://www.businessinsider.com/software-engineers-ai-code-reviews-coding-job-cursor-2026-6",
+      "visible_date": "2026-06-28",
+      "source_type": "news article",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "Business Insider reported practitioner concern that AI-assisted coding can make traditional human code review less visible or less central in some teams.",
+      "why_it_matters": "The downstream practice question is not whether a specific editor is important, but how teams preserve review accountability, reviewer incentives, and regression ownership when agent-generated changes move faster than human review loops.",
+      "named_entities": [
+        "Cursor",
+        "AI code review",
+        "software engineering teams"
+      ],
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "local_practice_implication": "Route to intelligent-code-review, code-review-evals-and-rubrics, and lifecycle-ai-review-gates as evidence for explicit human review checkpoints."
+    },
+    {
+      "title": "Baz frames remediation agents around plan, patch, and validation loops",
+      "source_url": "https://www.prnewswire.com/news-releases/baz-launches-worlds-first-application-security-remediation-engine-to-end-appsec-backlogs-302493391.html",
+      "visible_date": "2026-06-29",
+      "source_type": "public product announcement",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "summary": "Baz announced an application-security remediation engine and described a workflow that plans fixes, updates code, and validates changes to reduce security backlogs.",
+      "why_it_matters": "Security repair agents should be modeled as constrained remediation workflows with traceable validation and backlog handoff boundaries, not just autonomous patch writers.",
+      "named_entities": [
+        "Baz",
+        "application security remediation engine",
+        "security backlog"
+      ],
+      "upstream_owned_entities": [
+        "Baz",
+        "application security remediation products"
+      ],
+      "local_practice_implication": "Keep the entity upstream-owned and capture the local pattern under ai-assisted-security-repair-gates and research-plan-implement-review-lifecycle."
+    },
+    {
+      "title": "Mozilla prompt-injection warning reinforces untrusted-context controls",
+      "source_url": "https://www.helpnetsecurity.com/2026/06/29/mozilla-warns-of-indirect-prompt-injection-risk-in-ai-coding-agents/",
+      "visible_date": "2026-06-29",
+      "source_type": "security news article",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "summary": "Help Net Security summarized Mozilla 0DIN research on indirect prompt injection risk in AI coding agents, with emphasis on malicious instructions embedded in code or repository artifacts that the agent reads.",
+      "why_it_matters": "Source ingest, code retrieval, and tool execution must classify untrusted repository content separately from durable instructions and should require explicit controls before agents act on retrieved text.",
+      "named_entities": [
+        "Mozilla 0DIN",
+        "indirect prompt injection",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "Mozilla",
+        "0DIN",
+        "prompt injection"
+      ],
+      "local_practice_implication": "Use as evidence for prompt-injection-and-untrusted-content, rules-and-knowledge-layers, and tool-call-and-mcp-governance. Do not duplicate the broad prompt-injection technique page locally."
+    },
+    {
+      "title": "CodeRabbit changelog adds review-flow actions and repository analysis surfaces",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "visible_date": "2026-06-29",
+      "source_type": "official changelog",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "summary": "CodeRabbit's June 29 changelog listed review-flow improvements including interactive review actions and richer repository analysis surfaces.",
+      "why_it_matters": "AI code review tools are adding workflow-level affordances, so local review guidance should track what evidence is inspected, how comments become actions, and which review actions remain human-owned.",
+      "named_entities": [
+        "CodeRabbit",
+        "AI code review",
+        "repository analysis"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "Route product details upstream; keep downstream notes for intelligent-code-review and code-retrieval-evidence-patterns."
+    },
+    {
+      "title": "Azure DevOps deployment incident is framed as an AI-coding governance lesson",
+      "source_url": "https://devclass.com/2026/06/29/ai-coding-tools-blamed-for-dev-ops-disasters-that-are-getting-worse-not-better/",
+      "visible_date": "2026-06-29",
+      "source_type": "news article",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "DevClass reported on an Azure DevOps deployment incident and broader claims that AI coding tools can amplify delivery problems when process controls and verification are weak.",
+      "why_it_matters": "The practice implication is to tie AI-assisted changes to release gates, incident learning, and verification evidence rather than measuring agent productivity only by code volume or task completion speed.",
+      "named_entities": [
+        "Azure DevOps",
+        "AI coding tools",
+        "deployment incident"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Azure DevOps",
+        "AI coding tools"
+      ],
+      "local_practice_implication": "Use for prototype-to-cloud-promotion-gates, lifecycle-ai-review-gates, and product-judgment-quality-gates."
+    },
+    {
+      "title": "Local-first coding-agent memory discussion points to MCP-mediated context control",
+      "source_url": "https://forum.cursor.com/t/solved-local-first-persistent-ai-memory-via-mcp-with-knowledge-graphs-no-cloud-no-login-just-local/102414",
+      "visible_date": "2026-06-28",
+      "source_type": "public community forum",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "A public Cursor forum post described a local-first persistent AI memory setup using MCP and knowledge graphs, with emphasis on avoiding cloud storage or login-based memory.",
+      "why_it_matters": "Even when the implementation is community-supplied, it captures a recurring practice pattern: teams want durable agent memory with local storage, explicit context boundaries, and governed tool mediation.",
+      "named_entities": [
+        "Cursor",
+        "MCP",
+        "knowledge graphs",
+        "local-first memory"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "MCP",
+        "knowledge graphs"
+      ],
+      "local_practice_implication": "Keep product and protocol details upstream; consider local practice coverage under compiled-wiki-and-structured-memory and tool-call-and-mcp-governance."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "OpenAI Codex changelog entry",
+      "source_url": "https://developers.openai.com/codex/changelog/",
+      "visible_date": "2026-06-25",
+      "reason": "Visible date was outside the strict two-day window for this run."
+    },
+    {
+      "title": "GitHub Copilot coding agent available in Visual Studio Code",
+      "source_url": "https://github.blog/changelog/2026-06-25-copilot-coding-agent-is-now-available-in-visual-studio-code/",
+      "visible_date": "2026-06-25",
+      "reason": "Visible date was outside the strict two-day window for this run."
+    },
+    {
+      "title": "GitHub Copilot code review generally available",
+      "source_url": "https://github.blog/changelog/2026-06-25-copilot-code-review-is-now-generally-available/",
+      "visible_date": "2026-06-25",
+      "reason": "Visible date was outside the strict two-day window for this run."
+    },
+    {
+      "title": "Cursor auto-review changelog entry",
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "2026-05-29",
+      "reason": "Visible date was outside the strict two-day window for this run."
+    },
+    {
+      "title": "AWS Prescriptive Guidance prompt engineering for coding agents",
+      "source_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/using-ai-assisted-coding-tools/best-practices-prompt-engineering.html",
+      "visible_date": null,
+      "reason": "Search results showed recent crawl activity, but the page did not expose a visible publication or update date suitable for the strict window."
+    },
+    {
+      "title": "GitHub Copilot documentation pages for coding agent configuration",
+      "source_url": "https://docs.github.com/en/copilot",
+      "visible_date": null,
+      "reason": "Relevant public docs were useful background but did not expose a visible publication or update date within the window."
+    },
+    {
+      "title": "Mozilla 0DIN original indirect prompt injection write-up",
+      "source_url": "https://0din.ai/blog/prompt-injection-in-ai-code-assistants",
+      "visible_date": "2026-06-25",
+      "reason": "Original source date was outside the strict two-day window, although a June 29 public article about it was included."
+    },
+    {
+      "title": "JetBrains AI Assistant and coding-agent material",
+      "source_url": "https://blog.jetbrains.com/",
+      "visible_date": null,
+      "reason": "Search did not find a qualifying visible date within the strict window for the relevant coding-agent practice topics."
+    }
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-06-29-claude-opus-4-8-fast-mode-is-now-in-preview-for-github-copilot/",
+    "https://github.blog/changelog/2026-06-29-restrict-github-copilot-coding-agent-issue-creation-in-repositories/",
+    "https://www.businessinsider.com/software-engineers-ai-code-reviews-coding-job-cursor-2026-6",
+    "https://www.prnewswire.com/news-releases/baz-launches-worlds-first-application-security-remediation-engine-to-end-appsec-backlogs-302493391.html",
+    "https://www.helpnetsecurity.com/2026/06/29/mozilla-warns-of-indirect-prompt-injection-risk-in-ai-coding-agents/",
+    "https://docs.coderabbit.ai/changelog",
+    "https://devclass.com/2026/06/29/ai-coding-tools-blamed-for-dev-ops-disasters-that-are-getting-worse-not-better/",
+    "https://forum.cursor.com/t/solved-local-first-persistent-ai-memory-via-mcp-with-knowledge-graphs-no-cloud-no-login-just-local/102414",
+    "https://developers.openai.com/codex/changelog/",
+    "https://github.blog/changelog/2026-06-25-copilot-coding-agent-is-now-available-in-visual-studio-code/",
+    "https://github.blog/changelog/2026-06-25-copilot-code-review-is-now-generally-available/",
+    "https://cursor.com/changelog",
+    "https://docs.aws.amazon.com/prescriptive-guidance/latest/using-ai-assisted-coding-tools/best-practices-prompt-engineering.html",
+    "https://docs.github.com/en/copilot",
+    "https://0din.ai/blog/prompt-injection-in-ai-code-assistants",
+    "https://blog.jetbrains.com/"
+  ],
+  "follow_up_notes": [
+    "Normal raw ingest should decide whether the June 29 GitHub governance setting updates human-agent-approval-boundaries or agent-identity-and-delegated-authority.",
+    "Review-gate erosion, security remediation agents, and deployment-incident coverage should be synthesized as practice-level evidence, not local product encyclopedia coverage.",
+    "The community local-first memory item should be treated cautiously because it is not vendor documentation, but it is useful as a signal for a recurring context architecture pattern."
+  ],
+  "blockers": []
+}

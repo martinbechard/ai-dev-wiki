@@ -1,0 +1,446 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-06-26T21:04:18-04:00",
+  "cutoff_window": {
+    "start": "2026-06-19T21:04:18-04:00",
+    "end": "2026-06-26T21:04:18-04:00",
+    "timezone": "America/Toronto",
+    "rule": "Only public sources visibly published or updated within the last seven days relative to run time qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 63,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2606.26721",
+    "https://arxiv.org/html/2409.10102v2",
+    "https://arxiv.org/html/2606.13233v1",
+    "https://arxiv.org/html/2606.16824v1",
+    "https://arxiv.org/html/2606.17099v1",
+    "https://arxiv.org/html/2606.26505v1",
+    "https://arxiv.org/html/2606.26721v1",
+    "https://arxiv.org/html/2606.26924v1",
+    "https://blog.cloudflare.com/agents-framework/",
+    "https://coderabbit.ai/guides/agentic-context-engineering",
+    "https://docs.devin.ai/release-notes",
+    "https://sourcegraph.com/blog/automated-code-review-tools",
+    "https://www.cio.com/video/4186883/how-coderabbit-tackles-the-ai-code-review-bottleneck.html",
+    "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+    "https://www.confident-ai.com/knowledge-base/compare/top-6-tools-for-evaluating-ai-agents-in-production-2026",
+    "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+    "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+  ],
+  "source_urls_by_leaf": {
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://arxiv.org/abs/2606.26505",
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.16824v1",
+      "https://arxiv.org/html/2606.26505v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://coderabbit.ai/guides/agentic-context-engineering"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://arxiv.org/abs/2606.26505",
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26505v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://coderabbit.ai/guides/agentic-context-engineering",
+      "https://sourcegraph.com/blog/automated-code-review-tools",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://arxiv.org/html/2409.10102v2",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://arxiv.org/html/2606.26924v1",
+      "https://blog.cloudflare.com/agents-framework/",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://docs.devin.ai/release-notes"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26721v1"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.13233v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://arxiv.org/html/2606.26924v1",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering"
+    ],
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": [
+      "https://arxiv.org/abs/2606.26505",
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.17099v1",
+      "https://arxiv.org/html/2606.26505v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://www.cio.com/video/4186883/how-coderabbit-tackles-the-ai-code-review-bottleneck.html",
+      "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md": [
+      "https://www.confident-ai.com/knowledge-base/compare/top-6-tools-for-evaluating-ai-agents-in-production-2026",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": [
+      "https://arxiv.org/abs/2606.26505",
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26505v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ],
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md": [
+      "https://arxiv.org/abs/2606.26505",
+      "https://arxiv.org/abs/2606.26721",
+      "https://arxiv.org/html/2606.26505v1",
+      "https://arxiv.org/html/2606.26721v1",
+      "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+    ]
+  },
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "source_url": "https://arxiv.org/abs/2606.26721",
+      "alternate_source_urls": [
+        "https://arxiv.org/html/2606.26721v1"
+      ],
+      "visible_published_or_updated_at": "2026-06-25T07:57:33Z",
+      "source_type": "public arXiv paper",
+      "title": "Knowledge-Based Pull Requests: A Trusted Workflow for Agent-Mediated Knowledge Collaboration",
+      "factual_summary": "The paper proposes treating external collaborator code, tests, and cleaned agent traces as knowledge sources, packaging them into reviewer-facing artifacts, and regenerating candidate code inside the receiving project under local context, tests, and policy.",
+      "why_it_matters_for_leaf": "It gives source-workflow and review leaves a concrete public pattern for separating knowledge intake from merge decisions, preserving provenance, and routing external agent work through project-owned verification.",
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "named_entities": [
+        "Knowledge-Based Pull Requests",
+        "KPR",
+        "agent-mediated knowledge collaboration",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "arXiv"
+      ],
+      "local_practice_implication": "Future ingest should consider whether KPR-style knowledge packages belong as a durable source-workflow lens and whether code review rubrics should distinguish knowledge acceptance from implementation acceptance.",
+      "follow_up_note": "Review alongside existing raw-project-wiki-monitor and source-reconciliation pages before any docs/wiki synthesis."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.26924v1",
+      "alternate_source_urls": [],
+      "visible_published_or_updated_at": "2026-06-25",
+      "source_type": "public arXiv paper",
+      "title": "A Deterministic Control Plane for LLM Coding Agents",
+      "factual_summary": "The paper describes an agent-harness control plane with canonical registries, compilation into IDE-native files, content hashes, MCP exposure, tamper-evident logging, provenance, policy checks, and reproducible configuration artifacts.",
+      "why_it_matters_for_leaf": "It reinforces treating request packages, tools, skills, and workflow configuration as governed artifacts with stable provenance rather than ad hoc prompt text.",
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Rel(AI)Build",
+        "Model Context Protocol",
+        "MCP",
+        "LLM coding agents"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "local_practice_implication": "Keep broad MCP and product details upstream, but consider local governance language for hash-addressed instructions, compiled agent artifacts, and tamper-evident tool logs.",
+      "follow_up_note": "Route product or framework background upstream; keep only local control-plane practice here."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.26505v1",
+      "alternate_source_urls": [
+        "https://arxiv.org/abs/2606.26505"
+      ],
+      "visible_published_or_updated_at": "2026-06-25",
+      "source_type": "public arXiv paper",
+      "title": "Same Scrutiny, More Time: Eye Tracking Insights into Reviewing LLM-Labelled Code",
+      "factual_summary": "A 32-participant eye-tracking study found reviewers spent more fixation time on code labeled as LLM-generated while maintaining similar review thoroughness, and many used the prompt as a requirement or contextual artifact during review.",
+      "why_it_matters_for_leaf": "It gives review-eval and request-package leaves evidence that prompts and provenance labels can materially shape human review behavior and should be available to reviewers.",
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "named_entities": [
+        "LLM-labelled code",
+        "code review",
+        "eye tracking",
+        "Wizard-of-Oz experiment"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Review rubrics may need to require prompt/provenance availability when evaluating AI-generated code and reviewer behavior.",
+      "follow_up_note": "Consider adding prompt-as-review-artifact language during the next ingest pass."
+    },
+    {
+      "source_url": "https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/",
+      "alternate_source_urls": [
+        "https://www.dynatrace.com/news/blog/llm-evaluations-as-a-foundation-for-trustworthy-agentic-ai-systems/"
+      ],
+      "visible_published_or_updated_at": "2026-06-25",
+      "source_type": "public vendor technical blog",
+      "title": "Evaluate LLM and agent quality in Dynatrace AI Observability with dt-evals",
+      "factual_summary": "Dynatrace describes dt-evals as an open-source CLI for scoring real GenAI traces with bring-your-own LLM judge providers, writing structured evaluation results back to observability, and supporting offline, online, and CI quality gates.",
+      "why_it_matters_for_leaf": "It provides a concrete public operating pattern for connecting judge outputs, trace provenance, retrieval context, tool calls, latency, cost, and alerting.",
+      "affected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "named_entities": [
+        "Dynatrace AI Observability",
+        "dt-evals",
+        "LLM-as-judge",
+        "GenAI traces"
+      ],
+      "upstream_owned_entities": [
+        "Dynatrace",
+        "dt-evals"
+      ],
+      "local_practice_implication": "Keep vendor/product specifics upstream, but capture the local practice of tying eval scores to trace, retrieval, tool-call, cost, and latency evidence.",
+      "follow_up_note": "Check whether judge-grader-boundaries should mention BYO judge provider governance and trace-linked eval results."
+    },
+    {
+      "source_url": "https://www.coderabbit.ai/guides/ai-second-brain-for-engineering",
+      "alternate_source_urls": [],
+      "visible_published_or_updated_at": "2026-06-23",
+      "source_type": "public vendor technical guide",
+      "title": "Build an AI second brain for engineering teams",
+      "factual_summary": "The guide frames engineering memory as codebase decisions, review history, team standards, linked tickets, and cross-file dependencies surfaced at review time, and warns that commit-history-only memory misses senior-reviewer knowledge held in discussions.",
+      "why_it_matters_for_leaf": "It reinforces local leaves about code retrieval, RAG provenance, source reconciliation, and code-review rubrics with a current public argument for graph-based, workflow-surfaced engineering context.",
+      "affected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "AI second brain",
+        "codebase decisions",
+        "review history"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "Treat vendor-specific claims as upstream-owned, but consider local synthesis around durable review memory, discussion provenance, and graph-based retrieval as practice implications.",
+      "follow_up_note": "Pair with existing context-architecture pages if synthesized later."
+    }
+  ],
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "source_url": "https://coderabbit.ai/guides/agentic-context-engineering",
+      "title": "The practical guide to agentic context engineering",
+      "visible_date": null,
+      "exclusion_reason": "No visible publication or update date was found in the opened source; date-gated watcher excludes missing-date candidates.",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://www.cio.com/video/4186883/how-coderabbit-tackles-the-ai-code-review-bottleneck.html",
+      "title": "How CodeRabbit Tackles the AI Code Review Bottleneck",
+      "visible_date": "last week",
+      "exclusion_reason": "Search result exposed only an ambiguous relative date; no exact visible date was confirmed for the strict seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.17099v1",
+      "title": "Reviewability of AI Coding Agents",
+      "visible_date": "2026-06-14",
+      "exclusion_reason": "Visible publication date is before the cutoff window starting 2026-06-19T21:04:18-04:00.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.devin.ai/release-notes",
+      "title": "Devin release notes",
+      "visible_date": "2026-06-17",
+      "exclusion_reason": "Relevant coding-agent release material, but visible date is outside the seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ]
+    },
+    {
+      "source_url": "https://blog.cloudflare.com/agents-framework/",
+      "title": "Cloudflare Agents framework update",
+      "visible_date": "2026-06-17",
+      "exclusion_reason": "Visible date is outside the seven-day window and the broad framework entity is upstream-owned.",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/html/2409.10102v2",
+      "title": "Trustworthiness in Retrieval-Augmented Generation Systems",
+      "visible_date": "last month",
+      "exclusion_reason": "Relative date is outside or ambiguous for the strict seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.16824v1",
+      "title": "CacheWise: A Systematic Analysis of Prompt Caching in LLM APIs",
+      "visible_date": "2026-06-15",
+      "exclusion_reason": "Visible publication date is outside the seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.13233v1",
+      "title": "Software Delegation and AI Coding Agents",
+      "visible_date": "2026-06-14",
+      "exclusion_reason": "Visible publication date is outside the seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ]
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/automated-code-review-tools",
+      "title": "Automated code review tools",
+      "visible_date": "last month",
+      "exclusion_reason": "Relevant code-review context discussion but visible date is outside or ambiguous for the seven-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ]
+    },
+    {
+      "source_url": "https://www.confident-ai.com/knowledge-base/compare/top-6-tools-for-evaluating-ai-agents-in-production-2026",
+      "title": "Best 6 Tools for Evaluating AI Agents in Production",
+      "visible_date": "last week",
+      "exclusion_reason": "Search result exposed only an ambiguous relative date; exact in-window date was not confirmed.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ]
+    }
+  ],
+  "run_constraints": {
+    "public_web_only": true,
+    "local_page_text_sent_to_external_services": false,
+    "docs_wiki_updated": false,
+    "raw_processed_updated": false,
+    "federation_boundary": "Broad ecosystem entities are upstream-owned; this artifact keeps only local practice implications for selected leaves."
+  },
+  "named_entities": [
+    "AI second brain",
+    "CodeRabbit",
+    "Dynatrace AI Observability",
+    "GenAI traces",
+    "KPR",
+    "Knowledge-Based Pull Requests",
+    "LLM coding agents",
+    "LLM-as-judge",
+    "LLM-labelled code",
+    "MCP",
+    "Model Context Protocol",
+    "Rel(AI)Build",
+    "Wizard-of-Oz experiment",
+    "agent-mediated knowledge collaboration",
+    "arXiv",
+    "code review",
+    "codebase decisions",
+    "dt-evals",
+    "eye tracking",
+    "review history"
+  ],
+  "upstream_owned_entities": [
+    "CodeRabbit",
+    "Dynatrace",
+    "MCP",
+    "Model Context Protocol",
+    "arXiv",
+    "dt-evals"
+  ],
+  "follow_up_notes": [
+    "Ingest KPR as a source-workflow and review-gate practice candidate if the raw monitor processes this artifact.",
+    "Route product, vendor, MCP, and framework background to the upstream AI wiki; keep downstream governance and workflow implications locally.",
+    "Consider whether code-review eval pages should require prompt/provenance artifacts when reviewing LLM-generated code."
+  ],
+  "blockers": []
+}

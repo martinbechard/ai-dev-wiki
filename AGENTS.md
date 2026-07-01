@@ -9,3 +9,4 @@
 - Raw wiki fragments should name the source file, record the extracted facts, and note the wiki page or topic that should receive the synthesis.
 - Respect federation boundaries. Keep local practice, workflow, governance, adoption, and implementation knowledge in this wiki, and route broad ecosystem entity background to the upstream AI wiki when it owns that scope.
 - Keep fragments out of raw/processed until the knowledge has been synthesized into docs/wiki and wiki lint has passed.
+- After wiki edits, raw research, raw ingest, or workflow guidance updates are verified, commit the coherent wiki work before finishing unless the user explicitly says not to commit.

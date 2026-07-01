@@ -1,3 +1,10 @@
+---
+type: "Verification And Eval"
+title: "Code Review Evals And Rubrics"
+description: "AI-assisted code review evals measure whether a model or harness can inspect changes against the repository's standards, source evidence, and risk profile."
+tags: ["verification-and-evals"]
+---
+
 # Code Review Evals And Rubrics
 
 ## Current Understanding
@@ -8,6 +15,14 @@ Useful review rubrics include correctness, source grounding, missing tests, secu
 
 This page owns review-specific eval practice. General grader selection lives in [judge grader boundaries](judge-grader-boundaries.md), and delivery acceptance gates live in [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md).
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) adds a cost-quality dimension for AI code review. Review evals should capture whether deeper file exploration, explicit review-depth settings, or repository search tools improve finding quality enough to justify added cost and latency. Broad product feature tracking stays upstream; locally, the rubric should make review depth and evidence path measurable.
+
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add prompt-provenance and knowledge-acceptance signals. Review rubrics should distinguish accepting an external knowledge package from accepting implementation, and should include prompt, provenance label, review-depth setting, and retrieval path when those artifacts shaped the review.
+
+The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) adds scoped retrieval and cross-run agreement to review evaluation. Rubrics should measure whether targeted context gathering finds the same material issues as broader retrieval and whether independent reviewers converge on the same source-backed findings.
+
+The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds independent verification and repeatability signals. The generator should not be the sole formal reviewer of its own output, and agentic security review should be evaluated across repeated runs. Rubrics should separate reference-matched findings from exploratory findings so unstable extra issues do not look like dependable coverage.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -16,6 +31,13 @@ This page owns review-specific eval practice. General grader selection lives in 
 - Penalize invented code paths, test results, security claims, or backlog status.
 - Include cases where the correct review outcome is no finding plus residual risk.
 - Keep broad benchmark catalogs upstream unless a benchmark changes local review practice.
+- Measure review-depth settings, repository exploration path, false positives, missed findings, cost, and latency when comparing AI review configurations.
+- Grade whether the review had enough prompt, provenance, trace, and retrieval-path context to assess AI-generated or externally packaged work.
+- Separate knowledge-package acceptance from implementation acceptance when external agent artifacts are involved.
+- Include comparison cases for targeted versus broad retrieval so review-efficiency changes do not hide missed findings.
+- Track independent-reviewer agreement and disagreement when calibrating review rubrics or model routing.
+- Separate generation, review, test, and approval roles when the eval represents a formal review gate.
+- Measure repeatability across repeated agentic security-review runs, distinguishing reference-matched findings from variable exploratory findings.
 
 ## Authoritative Sources
 
@@ -23,6 +45,11 @@ This page owns review-specific eval practice. General grader selection lives in 
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [generated code refactoring](../coding-practices/generated-code-refactoring.md)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
+- [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 
 ## Related Code
 
@@ -49,3 +76,7 @@ This page owns review-specific eval practice. General grader selection lives in 
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold AI-assisted code review eval and rubric practice.
+- Maintained on 2026-06-25 with cost-quality and retrieval-depth measurements for AI code review.
+- Maintained on 2026-06-26 with prompt provenance, review-depth settings, retrieval path, and knowledge-package acceptance boundaries.
+- Maintained on 2026-06-27 with targeted-retrieval comparison cases and independent-reviewer agreement signals.
+- Maintained on 2026-07-01 with independent verification-layer boundaries and repeatability scoring for AI security review.

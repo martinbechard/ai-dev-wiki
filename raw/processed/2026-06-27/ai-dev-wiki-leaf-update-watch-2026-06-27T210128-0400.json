@@ -1,0 +1,236 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-06-27T21:01:28-04:00",
+    "policy": "only sources published or visibly updated within the last 7 days; missing, ambiguous, future-dated, and boundary-only dates excluded",
+    "start": "2026-06-20T21:01:28-04:00"
+  },
+  "excluded_candidate_count": 11,
+  "excluded_candidates": [
+    {
+      "reason": "Published Jun 15, 2026, before the cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "source_url": "https://www.linkedin.com/pulse/when-ai-agents-have-boundaries-sign-13-your-organization-ayclc"
+    },
+    {
+      "reason": "Published Jun 19, 2026, before the cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "source_url": "https://www.linkedin.com/pulse/human-in-the-loop-ai-agents-why-enterprise-oversight-g154c"
+    },
+    {
+      "reason": "Search result did not expose an exact visible publication or update date; treated as date-ambiguous for this strict-window run.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "source_url": "https://www.zenml.io/llmops-database/building-reliable-background-coding-agents-with-verification-loops"
+    },
+    {
+      "reason": "Search result showed a relative date of 6 days ago, but page open failed and no exact visible date could be verified.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=kJO2cT_S9uQ"
+    },
+    {
+      "reason": "GitHub page content was relevant but no exact visible update date was captured in the opened page.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_url": "https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md"
+    },
+    {
+      "reason": "Relevant registry page did not expose an exact visible publication or update date.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_url": "https://www.awesomeskills.dev/en/skill/medzin-sre-runbook-agent-skills"
+    },
+    {
+      "reason": "LinkedIn result showed only a relative last-week date, which is ambiguous at the seven-day boundary.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "source_url": "https://www.linkedin.com/posts/partharanganathan_kaggle-googleai-aiagents-activity-7472855638621020160-AVVs"
+    },
+    {
+      "reason": "LinkedIn page showed 1w rather than an exact visible date; excluded as boundary-ambiguous.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "source_url": "https://www.linkedin.com/posts/vishnu-ram-sachin-d-_day3google-x-kaggle-insights-by-sachin-activity-7474423385054203904-zMmk"
+    },
+    {
+      "reason": "Relevant guidance page did not expose a visible publication or update date in the opened page.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "source_url": "https://agent-layer.dev/cli-skill-design/"
+    },
+    {
+      "reason": "GitHub discussion was dated May 30, 2026, before the cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "source_url": "https://github.com/orgs/community/discussions/197384"
+    },
+    {
+      "reason": "GitHub Docs page was relevant but no exact visible publication or update date was captured.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "source_url": "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/rubber-duck"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity background is upstream-owned; this artifact records only local practice implications.",
+    "upstream_wiki": "upstream-ai-wiki"
+  },
+  "follow_up_notes": [
+    "Normal raw ingest should decide whether to update hybrid infrastructure economics, adoption operating agreements, agent ownership rosters, human approval boundaries, workflow-before-model-selection, and deep research/writing workflow leaves.",
+    "No docs/wiki pages were updated by this raw-only watch run."
+  ],
+  "leaf_universe_count": 64,
+  "qualifying_update_count": 4,
+  "qualifying_updates": [
+    {
+      "factual_summary": "The article frames AI agent cost monitoring as real-time tracking, attribution, thresholds, showback or chargeback, and cost-to-performance review for autonomous agents whose token, API, compute, and tool usage vary by behavior.",
+      "follow_up_note": "During ingest, decide whether this becomes a local cost-governance note or only reinforces existing hybrid infrastructure economics guidance.",
+      "id": "ysquare-ai-agent-cost-monitoring-2026-06-22",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "Ysquare Technology",
+        "Gartner",
+        "Deloitte"
+      ],
+      "published_or_updated_at": "2026-06-22",
+      "source_url": "https://www.linkedin.com/pulse/ai-agent-cost-monitoring-why-untracked-spending-shows-m4kjc",
+      "upstream_owned_entities": [
+        "Gartner",
+        "Deloitte"
+      ],
+      "visible_date_basis": "LinkedIn article line shows Published Jun 22, 2026.",
+      "why_it_matters_for_leaf": "Hybrid local agent infrastructure should treat cost telemetry and ownership tags as operating requirements, not finance afterthoughts, because multi-agent workloads can silently expand spend through loops, tool calls, and infrastructure use."
+    },
+    {
+      "factual_summary": "MindStudio defines agent ownership as ongoing accountability by a named person, organized around job definition, dependencies, boundaries, and review cadence; it warns that shared ownership creates monitoring and handoff gaps.",
+      "follow_up_note": "Ingest should keep MindStudio as a cited practice source while avoiding a local product encyclopedia entry.",
+      "id": "mindstudio-agent-ownership-2026-06-22",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "named_entities": [
+        "MindStudio"
+      ],
+      "published_or_updated_at": "2026-06-22",
+      "source_url": "https://www.mindstudio.ai/blog/ai-agent-ownership-single-responsible-owner",
+      "upstream_owned_entities": [
+        "MindStudio"
+      ],
+      "visible_date_basis": "MindStudio blog byline shows June 22, 2026.",
+      "why_it_matters_for_leaf": "Local adoption guidance can sharpen operating agreements by requiring a named owner, documented boundaries, dependency diet, and review loop for every production or recurring agent."
+    },
+    {
+      "factual_summary": "The article proposes an agent roster and ownership card containing agent name, named owner, job description, data sources, permissions, and known failure modes, then ties roster upkeep to deployment and review processes.",
+      "follow_up_note": "Consider adding an agent ownership card pattern to the local roster leaf during normal raw ingest.",
+      "id": "mindstudio-agent-roster-2026-06-22",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "MindStudio",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-06-22",
+      "source_url": "https://www.mindstudio.ai/blog/ai-agent-roster-team-ownership-card",
+      "upstream_owned_entities": [
+        "MindStudio",
+        "Gartner"
+      ],
+      "visible_date_basis": "MindStudio blog byline shows June 22, 2026.",
+      "why_it_matters_for_leaf": "Agent ownership rosters should record the operational facts needed for audits, permission reviews, handoffs, and failure response rather than only listing agent names."
+    },
+    {
+      "factual_summary": "The post presents remote engineering control-plane practices: choose host, workspace, branch, worktree, setup, attachments, skills, queue versus steer behavior, side chats, plans, goals, review diffs, inline comments, and narrow approval scopes.",
+      "follow_up_note": "Route broad Codex product details upstream; keep only the local operating-practice implications around scope, approvals, and review loops.",
+      "id": "openai-codex-remote-engineering-2026-06-23",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex Remote",
+        "Codex"
+      ],
+      "published_or_updated_at": "2026-06-23",
+      "source_url": "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex Remote"
+      ],
+      "visible_date_basis": "OpenAI Developers blog page shows Jun 23, 2026.",
+      "why_it_matters_for_leaf": "Local practice leaves can use this as evidence that agent workflows need explicit execution context, intervention modes, review loops, and narrow permissions when humans supervise long-running or remote agent work."
+    }
+  ],
+  "run_timestamp": "2026-06-27T21:01:28-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+  ],
+  "source_urls_checked": [
+    "https://www.linkedin.com/pulse/ai-agent-cost-monitoring-why-untracked-spending-shows-m4kjc",
+    "https://www.mindstudio.ai/blog/ai-agent-ownership-single-responsible-owner",
+    "https://www.mindstudio.ai/blog/ai-agent-roster-team-ownership-card",
+    "https://developers.openai.com/blog/mastering-codex-remote-for-engineering",
+    "https://www.linkedin.com/pulse/when-ai-agents-have-boundaries-sign-13-your-organization-ayclc",
+    "https://www.linkedin.com/pulse/human-in-the-loop-ai-agents-why-enterprise-oversight-g154c",
+    "https://www.zenml.io/llmops-database/building-reliable-background-coding-agents-with-verification-loops",
+    "https://www.youtube.com/watch?v=kJO2cT_S9uQ",
+    "https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md",
+    "https://www.awesomeskills.dev/en/skill/medzin-sre-runbook-agent-skills",
+    "https://www.linkedin.com/posts/partharanganathan_kaggle-googleai-aiagents-activity-7472855638621020160-AVVs",
+    "https://www.linkedin.com/posts/vishnu-ram-sachin-d-_day3google-x-kaggle-insights-by-sachin-activity-7474423385054203904-zMmk",
+    "https://agent-layer.dev/cli-skill-design/",
+    "https://github.com/orgs/community/discussions/197384",
+    "https://docs.github.com/en/copilot/concepts/agents/copilot-cli/rubber-duck"
+  ]
+}

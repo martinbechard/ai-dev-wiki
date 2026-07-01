@@ -1,3 +1,10 @@
+---
+type: "Coding Practice"
+title: "Fix Branch And PR Packaging"
+description: "Fix assistants are easier to trust when reproduction, scope, patch, tests, and verification evidence are explicit."
+tags: ["coding-practices"]
+---
+
 # Fix Branch And PR Packaging
 
 ## Current Understanding
@@ -5,6 +12,8 @@
 Fix assistants are easier to trust when reproduction, scope, patch, tests, and verification evidence are explicit. The local practice is to prove the problem before editing, keep the change scoped to one concern, add or repair regression coverage, and package the result with enough evidence for review.
 
 This page records the coding practice. Repository-specific branch naming, hosting workflows, and pull request automation are project-specific source-workflow concerns when they exist.
+
+The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds a review-packaging warning from public coding-agent adoption signals: when agent-produced code reaches production with less separate manual review, the fix package itself must carry more explicit acceptance evidence. PR descriptions, branch notes, and closeout reports should state the review path, tests, residual risk, and human decision point instead of assuming a reviewer will rediscover them.
 
 ## Practice Boundaries
 
@@ -14,6 +23,7 @@ This page records the coding practice. Repository-specific branch naming, hostin
 - Add or repair regression coverage when behavior changed or drifted.
 - Report build, test, lint, runtime, and review evidence with the fix.
 - Package review notes around reproduction, scope, patch, verification, and remaining risk.
+- Include the review path and human acceptance point when a generated or agent-assisted change is proposed for merge.
 
 ## Authoritative Sources
 
@@ -21,6 +31,7 @@ This page records the coding practice. Repository-specific branch naming, hostin
 - [Orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Generated code refactoring](generated-code-refactoring.md)
+- [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 
 ## Related Code
 
@@ -47,3 +58,4 @@ This page records the coding practice. Repository-specific branch naming, hostin
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source guidance on fix assistants, branch scope, regression coverage, and review-ready evidence.
+- Maintained on 2026-06-29 with review-path packaging for agent-assisted production changes.

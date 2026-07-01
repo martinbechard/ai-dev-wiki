@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Tier Specific Assistant Conventions"
+description: "Tier-specific assistant conventions specialize agent behavior for different work areas when those areas need distinct context, tools, verification, or approval."
+tags: ["adoption-and-operating-model"]
+---
+
 # Tier Specific Assistant Conventions
 
 ## Current Understanding

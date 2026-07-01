@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Research Plan Implement Review Lifecycle"
+description: "Research, plan, implement, and review is the recurring lifecycle shape for professional agent work."
+tags: ["agent-workflows"]
+---
+
 # Research Plan Implement Review Lifecycle
 
 ## Current Understanding

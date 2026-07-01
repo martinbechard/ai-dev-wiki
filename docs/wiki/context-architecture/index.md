@@ -13,6 +13,7 @@ This topic owns local guidance for routing, context selection, token discipline,
 - [rules-and-knowledge-layers.md](rules-and-knowledge-layers.md) records durable conventions and stable project facts.
 - [lifespan-organized-documentation.md](lifespan-organized-documentation.md) records active, decision, reference, and archive documentation authority signals.
 - [context-selection-and-compaction.md](context-selection-and-compaction.md) records source selection, token discipline, summaries, and context trimming.
+- [context-state-externalization-and-rehydration.md](context-state-externalization-and-rehydration.md) records durable task state, progress files, handoffs, cursor checks, and recovery after context loss.
 - [compiled-wiki-and-structured-memory.md](compiled-wiki-and-structured-memory.md) records when prose wikis, structured stores, and generated views should own context.
 - [self-service-analytics-context-governance.md](self-service-analytics-context-governance.md) records analytics-specific context governance for canonical metrics, metadata, skills, and evals.
 
@@ -23,6 +24,10 @@ This topic owns local guidance for routing, context selection, token discipline,
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md)
 - [Anthropic analytics source](../../../raw/processed/How Anthropic enables self-service data analytics with Claude.md)
+- [Context management source](../../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md)
+- [Context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md)
+- [Context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md)
+- [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -51,3 +56,4 @@ This topic owns local guidance for routing, context selection, token discipline,
 
 - Created on 2026-06-23 as a local practice topic for AI context design.
 - Maintained on 2026-06-23 by splitting context architecture concepts into durable leaf pages.
+- Maintained on 2026-06-27 with a dedicated state externalization and rehydration leaf for context-loss recovery practice.

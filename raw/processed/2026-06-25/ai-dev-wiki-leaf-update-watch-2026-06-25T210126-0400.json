@@ -1,0 +1,692 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_inclusive": "2026-06-25T21:01:26-04:00",
+    "rule": "Only sources visibly published or updated within the last seven days relative to run timestamp qualify; boundary-only, missing, ambiguous, and future dates are excluded.",
+    "start_inclusive": "2026-06-18T21:01:26-04:00"
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "notes": "Relevant to governed self-service analytics, but the visible date precedes the cutoff.",
+      "reason": "Outside the strict seven-day window relative to 2026-06-25T21:01:26-04:00.",
+      "source_url": "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+      "visible_published_or_updated_at": "2026-06-17"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "notes": "Relevant to governed analytics and runtime context governance but not date-qualifying.",
+      "reason": "Missing visible publication or update date in the opened page; excluded under date-ambiguity rule.",
+      "source_url": "https://www.k2view.com/blog/ai-data-governance-tools/",
+      "visible_published_or_updated_at": "Ambiguous in opened page; search result said last week."
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "notes": "Useful background for agent identity visibility and delegated authority, but stale for this watch run.",
+      "reason": "Outside the strict seven-day window.",
+      "source_url": "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+      "visible_published_or_updated_at": "2026-06-02"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "notes": "Relevant CI/CD prompt-injection supply-chain source, but stale for this watch run.",
+      "reason": "Outside the strict seven-day window.",
+      "source_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+      "visible_published_or_updated_at": "Search result: 3 weeks ago."
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "notes": "Relevant background on prompt injection and infrastructure controls, but not a qualifying update.",
+      "reason": "Article publication date is outside the strict seven-day window; related-post links dated June 19-23 were not this article.",
+      "source_url": "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+      "visible_published_or_updated_at": "2026-06-14"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+      ],
+      "notes": "Checked because it may relate to steady engineering practice; excluded rather than inferring from title only.",
+      "reason": "Visible page provided episode date but not enough opened-page factual detail for a leaf-specific update.",
+      "source_url": "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+      "visible_published_or_updated_at": "2026-06-25"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "notes": "Use as follow-up discovery seed, not as a qualifying sourced update.",
+      "reason": "Archive index lists many candidate pages but was not itself a stable article-level source for synthesis; item pages were not opened in this run.",
+      "source_url": "https://aurascape.ai/answers/",
+      "visible_published_or_updated_at": "2026-06-18 to 2026-06-23 listed index items."
+    }
+  ],
+  "federation_notes": {
+    "local_scope": "Downstream AI-assisted development practices, workflows, governance, verification, context architecture, and operating model.",
+    "routing_summary": "Qualifying items were kept as local-practice implications only; named products, tools, protocols, vendors, and broad ecosystem facts should be routed upstream during ingest when they require durable entity coverage.",
+    "upstream_owned_entity_scope": "Broad AI ecosystem entity background, product catalogs, model families, companies, frameworks, MCP servers, developer tools, and techniques."
+  },
+  "leaf_universe_count": 63,
+  "per_leaf_results": [
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "qualifying_update_ids": [
+        "update-01",
+        "update-02"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "qualifying_update_ids": [
+        "update-02"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "qualifying_update_ids": [
+        "update-01"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "qualifying_update_ids": [
+        "update-03",
+        "update-07",
+        "update-08"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualifying_update_ids": [
+        "update-04"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualifying_update_ids": [
+        "update-05",
+        "update-06"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+      "qualifying_update_ids": [
+        "update-03",
+        "update-04",
+        "update-06",
+        "update-07",
+        "update-08"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+      "qualifying_update_ids": [
+        "update-02",
+        "update-03"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "qualifying_update_ids": [
+        "update-05",
+        "update-06",
+        "update-07"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "qualifying_update_ids": [
+        "update-03",
+        "update-05",
+        "update-06",
+        "update-07"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "qualifying_update_ids": [
+        "update-01",
+        "update-02"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    },
+    {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "qualifying_update_ids": [
+        "update-02"
+      ],
+      "source_urls_checked": [
+        "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+        "https://kestra.io/blogs/context-engineering-plugins-squad",
+        "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+        "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+        "https://www.k2view.com/blog/ai-data-governance-tools/",
+        "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+        "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+        "https://www.securends.com/blog/ai-agents-identity-risks/",
+        "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+        "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+        "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+        "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+        "https://aurascape.ai/answers/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+      ]
+    }
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "factual_summary": "LeadDev reported Linear standardized on AI coding agents and tied practical scaling to context engineering, RFC discipline, guardrails, cost visibility, and keeping humans in the loop until supporting infrastructure is mature.",
+      "local_practice_implication": "Keep the downstream wiki focused on context routing, compaction, and human approval boundaries; route broad product/tool analysis upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "named_entities": [
+        "LeadDev",
+        "Linear",
+        "Tom Moor"
+      ],
+      "source_url": "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+      "update_id": "update-01",
+      "upstream_owned_entities": [
+        "AI coding agents"
+      ],
+      "visible_published_or_updated_at": "2026-06-25",
+      "why_it_matters_for_leaf": "The item reinforces that local context-selection pages should treat context architecture, guardrails, and concise request packages as operating infrastructure rather than optional prompting advice."
+    },
+    {
+      "factual_summary": "Kestra described a production plugin SDLC where GitHub issues become machine-readable specs, Skills encode procedural instructions, specialized agents execute isolated roles, compaction is used at strategic handoff points, and human approval gates remain explicit.",
+      "local_practice_implication": "Potential ingest should cite the workflow as a practice example without duplicating tool encyclopedia details that belong upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": [
+        "Kestra",
+        "Claude Code",
+        "OpenCode",
+        "DevLille 2026"
+      ],
+      "source_url": "https://kestra.io/blogs/context-engineering-plugins-squad",
+      "update_id": "update-02",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenCode"
+      ],
+      "visible_published_or_updated_at": "2026-06-25",
+      "why_it_matters_for_leaf": "This is a current public example of durable instruction layers, request-package contracts, context compaction, and lifecycle review gates working together in a concrete AI-assisted development workflow."
+    },
+    {
+      "factual_summary": "TechRadar argued that enterprise agent adoption is outpacing governance, with guardrail gaps around shadow AI, sensitive-data exposure, audit trails, anomaly monitoring, scoped autonomy, and human approval for higher-risk decisions.",
+      "local_practice_implication": "Use as a governance-practice source; broad market-stat interpretation should stay upstream if expanded.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Redwood Software",
+        "Gartner",
+        "Deloitte"
+      ],
+      "source_url": "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+      "update_id": "update-03",
+      "upstream_owned_entities": [
+        "Gartner",
+        "Deloitte"
+      ],
+      "visible_published_or_updated_at": "2026-06-23",
+      "why_it_matters_for_leaf": "The item supports local governance leaves that frame guardrails as execution architecture with monitoring, auditability, escalation rules, and deliberate scaling."
+    },
+    {
+      "factual_summary": "SecurEnds framed AI agents as non-human identities that need accountable owners, least privilege, credential management, recurring access reviews, activity monitoring, and audit evidence as they interact with finance, HR, IT, cloud, and customer systems.",
+      "local_practice_implication": "Potential ingest should map identity controls to local delegated-authority and approval-boundary practices.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "SecurEnds"
+      ],
+      "source_url": "https://www.securends.com/blog/ai-agents-identity-risks/",
+      "update_id": "update-04",
+      "upstream_owned_entities": [],
+      "visible_published_or_updated_at": "2026-06-23",
+      "why_it_matters_for_leaf": "The item directly updates the agent identity and delegated-authority leaf with concrete control categories for autonomous systems."
+    },
+    {
+      "factual_summary": "TRM Labs described a credential-broker pattern where agents receive placeholders instead of real secrets and a broker swaps credentials only at the outbound request boundary, reducing prompt-injection and confused-tool-call blast radius.",
+      "local_practice_implication": "Potential ingest should treat credential brokering as a downstream control pattern, not as a vendor comparison.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "named_entities": [
+        "TRM Labs"
+      ],
+      "source_url": "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+      "update_id": "update-05",
+      "upstream_owned_entities": [],
+      "visible_published_or_updated_at": "2026-06-23",
+      "why_it_matters_for_leaf": "The item gives a concrete local-practice control for keeping secrets out of agent context and treating agent credentials as supply-chain and prompt-injection exposure points."
+    },
+    {
+      "factual_summary": "Snyk announced agentic development security controls aimed at governing what coding agents use, what they do, and what code they generate in real time, citing MCP servers, plugins, third-party integrations, malicious MCP servers, and prompt injection in consumed dependencies as active concerns.",
+      "local_practice_implication": "Potential ingest should capture the runtime-gate pattern while routing broad product details upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "named_entities": [
+        "Snyk",
+        "Evo Agentic Development Security",
+        "MCP"
+      ],
+      "source_url": "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+      "update_id": "update-06",
+      "upstream_owned_entities": [
+        "Snyk",
+        "MCP"
+      ],
+      "visible_published_or_updated_at": "2026-06-23",
+      "why_it_matters_for_leaf": "The item reinforces that AI-assisted security repair gates now need runtime enforcement across agent tools and dependencies, not just post-generation code scanning."
+    },
+    {
+      "factual_summary": "NeuralTrust published a survey of more than 160 CISOs reporting rapid agent adoption, incomplete controls, data leakage and prompt injection as leading concerns, low adoption of red teaming and supply-chain integrity protection, and a need for agent-level identity, tool access control, real-time filtering, audit trails, and continuous adversarial testing.",
+      "local_practice_implication": "Potential ingest should use the control categories and cite statistics carefully as vendor-survey data.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "named_entities": [
+        "NeuralTrust",
+        "CISOs",
+        "MCP",
+        "A2A"
+      ],
+      "source_url": "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+      "update_id": "update-07",
+      "upstream_owned_entities": [
+        "NeuralTrust",
+        "MCP",
+        "A2A"
+      ],
+      "visible_published_or_updated_at": "2026-06-25",
+      "why_it_matters_for_leaf": "The item gives current quantitative support for governance infrastructure, prompt-injection controls, sensitive-data controls, and supply-chain integrity as first-class local practice topics."
+    },
+    {
+      "factual_summary": "AI Governance Institute reported an open-source MCP server for governance controls that exposes safety screening, risk classification, and automated red-teaming controls inside MCP-compatible AI clients, while also summarizing agent inventory and tool-supply-chain governance themes.",
+      "local_practice_implication": "Potential ingest should keep the local lens on how governance checks are embedded in developer workflows.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "AI Governance Institute",
+        "MCP",
+        "Claude Code"
+      ],
+      "source_url": "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+      "update_id": "update-08",
+      "upstream_owned_entities": [
+        "MCP",
+        "Claude Code"
+      ],
+      "visible_published_or_updated_at": "2026-06-19",
+      "why_it_matters_for_leaf": "The item is a recent example of governance controls moving into the developer tool surface rather than living only in policy documents."
+    }
+  ],
+  "run_timestamp": "2026-06-25T21:01:26-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://leaddev.com/ai/ai-coding-agents-are-now-the-default-what-comes-next",
+    "https://kestra.io/blogs/context-engineering-plugins-squad",
+    "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/what-code-mean-2026",
+    "https://www.dremio.com/blog/benefits-of-agentic-analytics/",
+    "https://www.k2view.com/blog/ai-data-governance-tools/",
+    "https://aigovernance.com/news/ai-governance-weekly-june-19-2026",
+    "https://datatracker.ietf.org/doc/draft-yu-ai-agent-ipv6-networking-considerations/01/",
+    "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+    "https://www.securends.com/blog/ai-agents-identity-risks/",
+    "https://www.trmlabs.com/trm-tech-blog/never-give-an-ai-agent-a-credential-a-broker-and-the-process-we-trusted-to-build-one",
+    "https://snyk.io/news/snyk-launches-evo-agentic-development-security/",
+    "https://www.truefoundry.com/blog/claude-code-prompt-injection",
+    "https://neuraltrust.ai/blog/the-state-of-ai-agent-security-2026",
+    "https://aurascape.ai/answers/",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/"
+  ]
+}

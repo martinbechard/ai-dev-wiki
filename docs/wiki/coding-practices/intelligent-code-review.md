@@ -1,3 +1,10 @@
+---
+type: "Coding Practice"
+title: "Intelligent Code Review"
+description: "Intelligent code review uses an AI reviewer to compare a change against project rules, source references, risk tiers, contracts, tests, security expectations, and runtime behavior."
+tags: ["coding-practices"]
+---
+
 # Intelligent Code Review
 
 ## Current Understanding
@@ -5,6 +12,14 @@
 Intelligent code review uses an AI reviewer to compare a change against project rules, source references, risk tiers, contracts, tests, security expectations, and runtime behavior. The reviewer reduces human review load only when it is given the evidence needed to produce actionable findings.
 
 The local practice is source-backed review. Review requests should embed repository instructions, architecture standards, important files, design docs, schema references, known risky modules, and tier-specific checklists. Coherence checks matter because generated changes can make front-end assumptions drift from backend contracts, generated clients, database fields, feature flags, or authorization rules.
+
+The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) adds a boundary for diff-focused AI review agents: they can critique pull request changes, compare surrounding code, and suggest fixes before merge, but they are not full QA, SAST policy ownership, or end-to-end acceptance. The [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) adds that AI review can move earlier into PRD and design governance; that broader lifecycle pattern lives in [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md).
+
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) adds a review-configuration lens: AI review depth, repository exploration tools, and cost-quality measurements should be visible configuration surfaces instead of hidden model behavior. Broad Copilot product coverage stays upstream; locally, review prompts and rubrics should record how deeply the reviewer is expected to inspect files and what retrieval path supports findings.
+
+The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) adds a review-efficiency signal: context gathering should be targeted to the changed files, neighboring code, tests, and relevant policies. Faster review is only acceptable when findings remain source-backed and the retrieval path is visible enough for a human to audit.
+
+The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) reinforces review as a control point rather than optional ceremony. Public sources describe AI-generated changes reaching production with less separate human review, governance struggling to keep up with generation speed, and AI review moving earlier into PRD and design checks. The local rule is that review requests should keep acceptance evidence, retrieval depth, reviewer scope, and final human decision boundaries explicit even when AI review reduces manual effort.
 
 ## Practice Boundaries
 
@@ -14,6 +29,13 @@ The local practice is source-backed review. Review requests should embed reposit
 - Include security checks for secret exposure, authorization gaps, unsafe tool use, prompt injection surfaces, and risky dependencies.
 - Keep review output finding-focused so humans can decide whether to accept, reject, or request a fix.
 - Treat review as evidence, not as final acceptance.
+- Distinguish diff-focused review findings from test results, security policy enforcement, and product acceptance.
+- Route pre-code artifact review to lifecycle review gates so code-review pages stay focused on implementation evidence.
+- Record the expected review depth and retrieval path when using AI review, especially when cost, latency, or review confidence is part of the tradeoff.
+- Prefer targeted retrieval over broad repository scans when it preserves source grounding and reduces review latency or cost.
+- Report which context was skipped or considered unnecessary when that omission affects residual risk.
+- Keep review gates explicit when generated-code throughput increases or separate manual review becomes less common.
+- Tie AI review findings to the artifact under review, whether that artifact is a PRD, design input, code diff, test result, or operational signal.
 
 ## Authoritative Sources
 
@@ -21,6 +43,11 @@ The local practice is source-backed review. Review requests should embed reposit
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [Generated code refactoring](generated-code-refactoring.md)
+- [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
+- [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
+- [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 
 ## Related Code
 
@@ -39,6 +66,7 @@ The local practice is source-backed review. Review requests should embed reposit
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [fix branch and PR packaging](fix-branch-and-pr-packaging.md)
+- [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md)
 
 ## Open Questions
 
@@ -47,3 +75,7 @@ The local practice is source-backed review. Review requests should embed reposit
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source guidance on intelligent self-code-review, source references, tier-specific review, coherence checks, and security checks.
+- Maintained on 2026-06-24 with diff-focused review boundaries and routing to lifecycle review gates for PRD or design review.
+- Maintained on 2026-06-25 with review depth, retrieval path, and cost-quality measurement as explicit AI review configuration surfaces.
+- Maintained on 2026-06-27 with targeted context gathering and skipped-context residual-risk reporting.
+- Maintained on 2026-06-29 with review-gate evidence for higher generated-code throughput and earlier lifecycle review.

@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Adoption Operating Agreements"
+description: "Adoption operating agreements define how humans and agents work together as AI-assisted development scales."
+tags: ["adoption-and-operating-model"]
+---
+
 # Adoption Operating Agreements
 
 ## Current Understanding

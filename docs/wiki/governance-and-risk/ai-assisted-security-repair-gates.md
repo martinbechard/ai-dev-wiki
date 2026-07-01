@@ -1,3 +1,10 @@
+---
+type: "Governance And Risk"
+title: "AI Assisted Security Repair Gates"
+description: "AI-assisted security repair needs stricter gates than ordinary feature work because the output can affect vulnerability disclosure, maintainer trust, CI behavior, and downstream..."
+tags: ["governance-and-risk"]
+---
+
 # AI Assisted Security Repair Gates
 
 ## Current Understanding

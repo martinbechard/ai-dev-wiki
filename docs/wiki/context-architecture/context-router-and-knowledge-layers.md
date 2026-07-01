@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Context Router And Knowledge Layers"
+description: "Context router and knowledge layers are the local pattern for keeping agent guidance small enough to load and stable enough to prevent repeated rediscovery."
+tags: ["context-architecture"]
+---
+
 # Context Router And Knowledge Layers
 
 ## Current Understanding

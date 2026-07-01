@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Persistent Agent Workspaces"
+description: "Persistent agent workspaces preserve enough state for coding-agent work that spans multiple prompts, sessions, or branches."
+tags: ["agent-workflows"]
+---
+
 # Persistent Agent Workspaces
 
 ## Current Understanding
@@ -8,6 +15,8 @@ The [Codex-maxxing source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-n
 
 Persistent workspaces do not remove the need for fresh orientation. Each resumed pass should re-check the repository state, current instructions, active goals, and verification evidence before editing. The workspace is useful because it makes continuity inspectable, not because it lets an agent assume earlier context is still correct.
 
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) adds worktree practice evidence. Desktop-level worktree support and assisted conflict handling make isolated parallel workspaces easier to create, but the local rule remains that each workspace needs clear branch intent, changed-file accounting, and merge evidence before handoff.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -16,6 +25,7 @@ Persistent workspaces do not remove the need for fresh orientation. Each resumed
 - Keep human-owned tradeoffs, approvals, and external side effects visible in the workspace state.
 - Use handoff notes when a persistent workspace pauses, branches, or transfers to another agent.
 - Archive or reset stale workspace state when it no longer reflects the live repository or accepted plan.
+- Use worktrees for parallel human and agent work only when branch purpose, ownership, and merge evidence are visible.
 
 ## Authoritative Sources
 
@@ -23,6 +33,7 @@ Persistent workspaces do not remove the need for fresh orientation. Each resumed
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [AI process layer and workflow state](../application-patterns/ai-process-layer-and-workflow-state.md)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 
 ## Related Code
 
@@ -49,3 +60,4 @@ Persistent workspaces do not remove the need for fresh orientation. Each resumed
 ## Maintenance Notes
 
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.
+- Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.

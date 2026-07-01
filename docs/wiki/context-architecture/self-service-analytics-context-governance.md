@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Self-Service Analytics Context Governance"
+description: "Self-service analytics agents are primarily a context-governance problem."
+tags: ["context-architecture"]
+---
+
 # Self-Service Analytics Context Governance
 
 ## Current Understanding

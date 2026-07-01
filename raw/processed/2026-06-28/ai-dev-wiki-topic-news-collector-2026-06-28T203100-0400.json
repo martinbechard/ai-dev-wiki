@@ -1,0 +1,326 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-28T20:31:00-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-06-26T20:31:00-04:00",
+    "end": "2026-06-28T20:31:00-04:00",
+    "rule": "Only public web sources with visible publication or update dates inside this window qualify. Missing dates, ambiguous boundary-only dates, future dates, and broad upstream-only entity updates are excluded."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general AI techniques"
+    ],
+    "downstream_scope": "AI-assisted development practice, workflow, governance, verification, context architecture, and operating-model implications."
+  },
+  "search_queries": [
+    "AI coding agent prompt instructions context engineering June 27 2026",
+    "AI code review evals software engineering agents June 27 2026",
+    "MCP governance permissions approvals audit logs tool calls June 27 2026",
+    "AI-assisted software development TDD regression repair coding agents June 27 2026",
+    "June 28 2026 AI code review coding agents",
+    "June 28 2026 context engineering AI agents",
+    "June 27 2026 coding agents software engineering",
+    "June 27 2026 MCP AI agents governance"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.oscargallegoruiz.com/en/blog/harness-engineering-why-your-agent-fails/",
+      "visible_date": "2026-06-28",
+      "visible_date_basis": "Page title and search result expose June 28, 2026 publication date.",
+      "local_topic": "Verification and evals",
+      "local_topic_root": "docs/wiki/verification-and-evals",
+      "short_factual_summary": "The post argues that agent failures should be analyzed at the harness level, emphasizing task setup, context construction, tool constraints, scoring, and observability rather than only model choice.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local evaluation pages should treat harness design as an operating surface: task fixtures, permissions, telemetry, scoring rubrics, and failure attribution need to be documented as part of coding-agent verification.",
+      "named_entities": [
+        "AI agents",
+        "harness engineering"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "AI agents",
+          "reason": "Broad technique/entity coverage belongs upstream; this artifact keeps only the downstream harness practice implication."
+        }
+      ],
+      "follow_up_notes": [
+        "Consider a durable local leaf for harness-level failure attribution if future ingest confirms the pattern across sources."
+      ]
+    },
+    {
+      "source_url": "https://ssojet.com/blog/coding-subagent-configs",
+      "visible_date": "2026-06-27",
+      "visible_date_basis": "Search result exposes June 27, 2026 publication date.",
+      "local_topic": "Agent workflows",
+      "local_topic_root": "docs/wiki/agent-workflows",
+      "short_factual_summary": "The post frames coding subagent configuration as an explicit engineering activity covering role boundaries, context budgets, delegation contracts, and task handoff rules.",
+      "why_it_matters_for_ai_assisted_development_practice": "Subagent workflows should be represented as typed delegation agreements with scoped responsibilities, bounded context, and completion criteria instead of ad hoc parallel prompts.",
+      "named_entities": [
+        "coding subagents",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "AI agents",
+          "reason": "General agent background belongs upstream; local relevance is the delegation practice."
+        }
+      ],
+      "follow_up_notes": [
+        "Check existing subagent and handoff leaves before ingest to avoid creating a duplicate workflow page."
+      ]
+    },
+    {
+      "source_url": "https://ssojet.com/blog/claude-code-hooks",
+      "visible_date": "2026-06-27",
+      "visible_date_basis": "Search result exposes June 27, 2026 publication date.",
+      "local_topic": "Prompt and instructions",
+      "local_topic_root": "docs/wiki/prompt-and-instructions",
+      "short_factual_summary": "The post describes hooks around coding-agent operation, with attention to durable instructions, automated checks, lifecycle triggers, and repeatable local workflow control.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable instructions should be paired with lifecycle hooks that run checks, enforce local rules, and make agent behavior auditable without relying on every prompt to restate the same controls.",
+      "named_entities": [
+        "Claude Code",
+        "hooks",
+        "coding agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Claude Code",
+          "reason": "Coding assistant product coverage belongs upstream; local relevance is hook-based workflow governance."
+        }
+      ],
+      "follow_up_notes": [
+        "Route product details upstream and keep only local hook and instruction-layer implications during ingest."
+      ]
+    },
+    {
+      "source_url": "https://containment.ai/blog/deterministic-governance-forward-deployed-ai",
+      "visible_date": "2026-06-27",
+      "visible_date_basis": "Search result exposes June 27, 2026 publication date.",
+      "local_topic": "Governance and risk",
+      "local_topic_root": "docs/wiki/governance-and-risk",
+      "short_factual_summary": "The post positions deterministic governance as a requirement for forward-deployed AI, emphasizing controlled environments, explicit policies, reviewability, and predictable execution boundaries.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent permissions, approvals, package-install rules, and audit logs should be specified as deterministic controls rather than informal operator judgment.",
+      "named_entities": [
+        "deterministic governance",
+        "forward-deployed AI"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "forward-deployed AI",
+          "reason": "Broad deployment technique coverage belongs upstream; local relevance is deterministic governance for agentic development workflows."
+        }
+      ],
+      "follow_up_notes": [
+        "Compare with existing local pages about permissions, approvals, and package-install risk."
+      ]
+    },
+    {
+      "source_url": "https://siliconangle.com/2026/06/28/dont-surrender-data-control-pursuit-intelligence/",
+      "visible_date": "2026-06-28",
+      "visible_date_basis": "Article URL and search result expose June 28, 2026 publication date.",
+      "local_topic": "Governance and risk",
+      "local_topic_root": "docs/wiki/governance-and-risk",
+      "short_factual_summary": "The article warns that organizations should not trade data control for AI capability and discusses the importance of keeping control over data access, governance, and operational boundaries.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted development workflows need explicit data classification and privacy gates before sending source, logs, code review material, or internal context to external model or tooling services.",
+      "named_entities": [
+        "enterprise AI",
+        "data control"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "enterprise AI",
+          "reason": "Broad enterprise AI coverage belongs upstream; local relevance is source and context governance for development workflows."
+        }
+      ],
+      "follow_up_notes": [
+        "Use this only as a governance-practice source; do not duplicate any vendor or platform analysis locally."
+      ]
+    },
+    {
+      "source_url": "https://explainx.ai/blog/context-engineering-vs-prompt-engineering-2026",
+      "visible_date": "2026-06-28",
+      "visible_date_basis": "Search result exposes June 28, 2026 publication date.",
+      "local_topic": "Context architecture",
+      "local_topic_root": "docs/wiki/context-architecture",
+      "short_factual_summary": "The post contrasts context engineering with prompt engineering and treats context as a designed system of instructions, memory, tool outputs, retrieval, and state rather than a single prompt artifact.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local context architecture root should continue separating durable instructions, retrieved code evidence, session state, tool results, and compaction rules as distinct maintainable context layers.",
+      "named_entities": [
+        "context engineering",
+        "prompt engineering",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "context engineering",
+          "reason": "Broad technique coverage belongs upstream; local relevance is development-context architecture."
+        },
+        {
+          "entity": "prompt engineering",
+          "reason": "Broad technique coverage belongs upstream; local relevance is the local boundary between prompts and context systems."
+        }
+      ],
+      "follow_up_notes": [
+        "During ingest, route any general technique history upstream and keep the development-context layering implication locally."
+      ]
+    },
+    {
+      "source_url": "https://explainx.ai/blog/conversation-history-management-ai-agents-2026",
+      "visible_date": "2026-06-28",
+      "visible_date_basis": "Search result exposes June 28, 2026 publication date.",
+      "local_topic": "Context architecture",
+      "local_topic_root": "docs/wiki/context-architecture",
+      "short_factual_summary": "The post discusses conversation-history management for agents, including how retaining, pruning, summarizing, and externalizing history affects reliability.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent runs need explicit history-retention, summarization, and rehydration rules so long-running development tasks preserve decisions and evidence without exceeding context limits.",
+      "named_entities": [
+        "conversation history management",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "AI agents",
+          "reason": "General agent coverage belongs upstream; local relevance is conversation-state handling in development workflows."
+        }
+      ],
+      "follow_up_notes": [
+        "Check whether this reinforces existing context-state externalization and rehydration leaves."
+      ]
+    },
+    {
+      "source_url": "https://www.developersdigest.tech/blog/ai-coding-tools-pricing-june-2026",
+      "visible_date": "2026-06-28",
+      "visible_date_basis": "Search result exposes June 28, 2026 publication date.",
+      "local_topic": "Adoption and operating model",
+      "local_topic_root": "docs/wiki/adoption-and-operating-model",
+      "short_factual_summary": "The post compares AI coding tool pricing and usage packaging as of June 2026, treating cost models as part of tool selection and team adoption planning.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption guidance should account for seat, usage, context-window, and feature-gating costs as operating-model constraints rather than only comparing coding quality.",
+      "named_entities": [
+        "AI coding tools",
+        "Cursor",
+        "Windsurf",
+        "GitHub Copilot",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Cursor",
+          "reason": "Coding assistant product coverage belongs upstream; local relevance is cost governance and team adoption practice."
+        },
+        {
+          "entity": "Windsurf",
+          "reason": "Coding assistant product coverage belongs upstream; local relevance is cost governance and team adoption practice."
+        },
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Coding assistant product coverage belongs upstream; local relevance is cost governance and team adoption practice."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Coding assistant product coverage belongs upstream; local relevance is cost governance and team adoption practice."
+        }
+      ],
+      "follow_up_notes": [
+        "If ingested, cite only adoption and cost-control implications locally and route product pricing details upstream."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "2026-06-26",
+      "reason": "Boundary-only date without visible time; because the cutoff begins at 2026-06-26T20:31:00-04:00, a date-only June 26 item is ambiguous and excluded."
+    },
+    {
+      "source_url": "https://techradar.com/pro/ai-powered-code-generation-choosing-the-right-model-to-boost-productivity-for-developers",
+      "visible_date": "2026-06-25",
+      "reason": "Older than the two-day cutoff window."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/agentic-code",
+      "visible_date": "last week",
+      "reason": "Relative date is ambiguous and cannot be verified inside the cutoff window."
+    },
+    {
+      "source_url": "https://blog.prommer.com/how-to-improve-large-context-reasoning-in-llms/",
+      "visible_date": "2026-06-29",
+      "reason": "Future-dated relative to the 2026-06-28T20:31:00-04:00 run timestamp."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/ai-executives-reject-vibe-coding-term-andreessen-horowitz-2026-6",
+      "visible_date": "2026-06-29",
+      "reason": "Future-dated relative to the 2026-06-28T20:31:00-04:00 run timestamp."
+    },
+    {
+      "source_url": "https://sdtimes.com/software-development/how-ai-is-enhancing-the-development-process/",
+      "visible_date": null,
+      "reason": "No visible publication or update date in search results."
+    },
+    {
+      "source_url": "https://www.helicone.ai/blog/claude-code",
+      "visible_date": "2026-06-24",
+      "reason": "Older than the two-day cutoff window."
+    },
+    {
+      "source_url": "https://www.wisp.blog/blog/best-ai-coding-agents-the-ultimate-guide-for-developers-in-2026",
+      "visible_date": null,
+      "reason": "Useful practice topic but no reliable visible date inside the cutoff window."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 8
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

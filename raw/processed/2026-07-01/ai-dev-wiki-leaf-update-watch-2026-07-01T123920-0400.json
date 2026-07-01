@@ -1,0 +1,363 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-01T12:39:20-04:00",
+    "policy": "published or visibly updated within the last 7 days; missing, ambiguous, future-dated, and boundary-only dates excluded",
+    "start": "2026-06-24T12:39:20-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "reason": "outside 7-day cutoff window; used only as corroborating older primary context for the June 26 TechRadar update",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "source_url": "https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/",
+      "visible_date": "2026-06-23"
+    },
+    {
+      "reason": "outside 7-day cutoff window",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/vibe-coding-guide-how-to-transition-from-ai-generation-to-live-deployment",
+      "visible_date": "2026-06-22"
+    },
+    {
+      "reason": "outside 7-day cutoff window",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+      "visible_date": "2026-06-22"
+    },
+    {
+      "reason": "outside 7-day cutoff window",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "visible_date": "2026-06-18"
+    },
+    {
+      "reason": "month-only/date-ambiguous relative to strict cutoff; excluded from qualifying updates",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://datatracker.ietf.org/doc/draft-mohiuddin-mcp-security-considerations/",
+      "visible_date": "June 2026"
+    },
+    {
+      "reason": "opened article did not expose a qualifying exact publication date for the target article; only sidebar entries showed in-window dates",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "source_url": "https://lighton.ai/lighton-blogs/lateon-code-colgrep-lighton",
+      "visible_date": null
+    },
+    {
+      "reason": "public documentation page had no visible publication or update date in the opened content",
+      "related_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "source_url": "https://developers.openai.com/codex/llms-full.txt",
+      "visible_date": null
+    },
+    {
+      "reason": "search result suggested recency, but opened content did not expose a reliable visible exact date; excluded for strict-window purposes",
+      "related_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "source_url": "https://medium.com/ai-security-hub/ai-security-newsletter-june-2026-645f4cc6620d",
+      "visible_date": null
+    }
+  ],
+  "factual_summaries": [
+    "Microsoft Incident Response described an MCP tool-description poisoning pattern where changed tool metadata can steer an acting agent to retrieve sensitive records and send them through an approved tool call. The guidance recommends publisher allowlists, tool-metadata review, prompt/content inspection, DLP on tool parameters, human approval for high-impact actions, agent identities, telemetry correlation, and least-agency controls.",
+    "TechRadar reported SentinelOne analysis of macOS.Gaslight, malware that embeds fake Markdown-like system messages intended to mislead LLM-assisted malware triage. The report says the malware also includes backdoor and infostealer behavior, making untrusted binary contents both an instruction-injection risk and a sensitive-data/security-analysis risk.",
+    "LightOn compared agent runs over document corpora with direct file reading versus search-backed retrieval. It reported that dedicated search reduced token use while preserving or improving judged answer quality, especially as the corpus grew and raw reading hit context limits.",
+    "LightOn described faceted search for AI retrieval, arguing that typed document metadata and pre-filtering can scope the corpus before semantic or hybrid search runs, reducing noise before content reaches the model context."
+  ],
+  "federation_routing_notes": [
+    "Broad ecosystem background for companies, products, protocols, techniques, and named malware remains upstream-owned by the AI wiki. This artifact records downstream local-practice implications only."
+  ],
+  "follow_up_notes": [
+    "Route broad Microsoft, MCP, and OWASP entity background upstream; keep the downstream synthesis focused on local tool governance and agent approval boundaries.",
+    "Use the June 26 public article as the qualifying in-window update; SentinelOne primary analysis was checked but has a June 23 date outside this run window.",
+    "Route product background upstream; keep local synthesis on retrieval evidence patterns and agent working-set control.",
+    "Keep downstream implications focused on retrieval practice; route product-specific feature background upstream if needed.",
+    "No qualifying public updates were found for the five source-workflow automation leaves in this run."
+  ],
+  "named_entities": [
+    "Claude",
+    "DPRK-aligned activity",
+    "Invariant Labs",
+    "Kimi",
+    "LightOn",
+    "LightOn Facets",
+    "MCP",
+    "Microsoft Defender",
+    "Microsoft Entra Agent ID",
+    "Microsoft Incident Response",
+    "Microsoft Purview DLP",
+    "Microsoft Sentinel",
+    "Model Context Protocol",
+    "OWASP Top 10 for Agentic Applications",
+    "RAG",
+    "SentinelLABS",
+    "SentinelOne",
+    "TechRadar",
+    "Telegram Bot API",
+    "faceted search",
+    "hybrid search",
+    "macOS.Gaslight",
+    "multi-vector retrieval"
+  ],
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Microsoft Incident Response described an MCP tool-description poisoning pattern where changed tool metadata can steer an acting agent to retrieve sensitive records and send them through an approved tool call. The guidance recommends publisher allowlists, tool-metadata review, prompt/content inspection, DLP on tool parameters, human approval for high-impact actions, agent identities, telemetry correlation, and least-agency controls.",
+      "follow_up_note": "Route broad Microsoft, MCP, and OWASP entity background upstream; keep the downstream synthesis focused on local tool governance and agent approval boundaries.",
+      "local_practice_implication": "When ingesting, consider updating local MCP governance and sensitive-data controls to treat tool metadata changes like production prompt changes and to require review or re-approval before critical agents consume them.",
+      "named_entities": [
+        "Microsoft Incident Response",
+        "Microsoft Defender",
+        "Microsoft Entra Agent ID",
+        "Microsoft Purview DLP",
+        "Microsoft Sentinel",
+        "Model Context Protocol",
+        "MCP",
+        "OWASP Top 10 for Agentic Applications",
+        "Invariant Labs"
+      ],
+      "source_type": "primary vendor security research",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Model Context Protocol",
+        "OWASP",
+        "Invariant Labs"
+      ],
+      "visible_date": "2026-06-30",
+      "why_it_matters_for_leaf": "The update strengthens the local rule that tool descriptions are instruction-bearing supply-chain inputs, not harmless documentation, and that acting agents need governance at the tool, data, identity, and action-approval layers."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "TechRadar reported SentinelOne analysis of macOS.Gaslight, malware that embeds fake Markdown-like system messages intended to mislead LLM-assisted malware triage. The report says the malware also includes backdoor and infostealer behavior, making untrusted binary contents both an instruction-injection risk and a sensitive-data/security-analysis risk.",
+      "follow_up_note": "Use the June 26 public article as the qualifying in-window update; SentinelOne primary analysis was checked but has a June 23 date outside this run window.",
+      "local_practice_implication": "When ingesting, consider adding malware samples and reverse-engineering traces to the list of hostile inputs that should be kept out of trusted model instructions or passed through strongly separated analysis channels.",
+      "named_entities": [
+        "TechRadar",
+        "SentinelOne",
+        "SentinelLABS",
+        "macOS.Gaslight",
+        "Telegram Bot API",
+        "DPRK-aligned activity"
+      ],
+      "source_type": "public security news citing SentinelOne research",
+      "source_url": "https://www.techradar.com/pro/security/this-macos-malware-can-avoid-ai-analysis-with-gaslighting-prompts-hidden-inside-its-architecture",
+      "upstream_owned_entities": [
+        "SentinelOne",
+        "macOS.Gaslight",
+        "Telegram"
+      ],
+      "visible_date": "2026-06-26",
+      "why_it_matters_for_leaf": "The update expands prompt-injection practice beyond web pages, emails, and documents into malware-analysis inputs, reinforcing that any untrusted artifact supplied to an LLM pipeline must be isolated as data rather than executed as instructions."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ],
+      "factual_summary": "LightOn compared agent runs over document corpora with direct file reading versus search-backed retrieval. It reported that dedicated search reduced token use while preserving or improving judged answer quality, especially as the corpus grew and raw reading hit context limits.",
+      "follow_up_note": "Route product background upstream; keep local synthesis on retrieval evidence patterns and agent working-set control.",
+      "local_practice_implication": "When ingesting, consider strengthening retrieval leaves around evidence-first agent workflow: search narrows the corpus, targeted reads verify claims, and raw file loading should be treated as a scalability and provenance risk.",
+      "named_entities": [
+        "LightOn",
+        "Claude",
+        "Kimi",
+        "RAG",
+        "multi-vector retrieval",
+        "hybrid search"
+      ],
+      "source_type": "vendor technical blog with experiment summary",
+      "source_url": "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "upstream_owned_entities": [
+        "LightOn",
+        "Claude",
+        "Kimi",
+        "RAG"
+      ],
+      "visible_date": "2026-06-24",
+      "why_it_matters_for_leaf": "The update supports the local retrieval practice that agents should locate evidence through a retrieval layer and then read targeted evidence, rather than using the context window as an undifferentiated document store."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ],
+      "factual_summary": "LightOn described faceted search for AI retrieval, arguing that typed document metadata and pre-filtering can scope the corpus before semantic or hybrid search runs, reducing noise before content reaches the model context.",
+      "follow_up_note": "Keep downstream implications focused on retrieval practice; route product-specific feature background upstream if needed.",
+      "local_practice_implication": "When ingesting, consider adding typed metadata and pre-query scoping as retrieval controls for local agent workflows that must avoid noisy or overbroad context.",
+      "named_entities": [
+        "LightOn",
+        "LightOn Facets",
+        "hybrid search",
+        "faceted search"
+      ],
+      "source_type": "vendor technical blog",
+      "source_url": "https://lighton.ai/lighton-blogs/faceted-search-has-entered-the-agentic-era",
+      "upstream_owned_entities": [
+        "LightOn"
+      ],
+      "visible_date": "2026-06-26",
+      "why_it_matters_for_leaf": "The update reinforces local RAG provenance and ranking practice: metadata, scope filters, and corpus boundaries are part of retrieval quality, not just post-retrieval citation decoration."
+    }
+  ],
+  "run_timestamp": "2026-07-01T12:39:20-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md"
+  ],
+  "source_urls_checked": [
+    "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+    "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+    "https://www.techradar.com/pro/security/this-macos-malware-can-avoid-ai-analysis-with-gaslighting-prompts-hidden-inside-its-architecture",
+    "https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/",
+    "https://www.techradar.com/pro/vibe-coding-guide-how-to-transition-from-ai-generation-to-live-deployment",
+    "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+    "https://developers.openai.com/codex/llms-full.txt",
+    "https://medium.com/ai-security-hub/ai-security-newsletter-june-2026-645f4cc6620d",
+    "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+    "https://lighton.ai/lighton-blogs/faceted-search-has-entered-the-agentic-era",
+    "https://lighton.ai/lighton-blogs/lateon-code-colgrep-lighton",
+    "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+    "https://datatracker.ietf.org/doc/draft-mohiuddin-mcp-security-considerations/"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": [
+      "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+      "https://www.techradar.com/pro/security/this-macos-malware-can-avoid-ai-analysis-with-gaslighting-prompts-hidden-inside-its-architecture",
+      "https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/"
+    ],
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": [
+      "https://www.techradar.com/pro/vibe-coding-guide-how-to-transition-from-ai-generation-to-live-deployment",
+      "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+      "https://www.techradar.com/pro/security/this-macos-malware-can-avoid-ai-analysis-with-gaslighting-prompts-hidden-inside-its-architecture",
+      "https://www.sentinelone.com/labs/macos-gaslight-rust-backdoor-turns-prompt-injection-on-the-analyst-not-the-sandbox/"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://developers.openai.com/codex/llms-full.txt",
+      "https://medium.com/ai-security-hub/ai-security-newsletter-june-2026-645f4cc6620d"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [
+      "https://developers.openai.com/codex/llms-full.txt",
+      "https://medium.com/ai-security-hub/ai-security-newsletter-june-2026-645f4cc6620d"
+    ],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://developers.openai.com/codex/llms-full.txt",
+      "https://medium.com/ai-security-hub/ai-security-newsletter-june-2026-645f4cc6620d"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://lighton.ai/lighton-blogs/faceted-search-has-entered-the-agentic-era",
+      "https://lighton.ai/lighton-blogs/lateon-code-colgrep-lighton"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://lighton.ai/lighton-blogs/faceted-search-has-entered-the-agentic-era",
+      "https://lighton.ai/lighton-blogs/lateon-code-colgrep-lighton"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [
+      "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://lighton.ai/lighton-blogs/faceted-search-has-entered-the-agentic-era",
+      "https://lighton.ai/lighton-blogs/lateon-code-colgrep-lighton"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+      "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "https://datatracker.ietf.org/doc/draft-mohiuddin-mcp-security-considerations/"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://developers.openai.com/codex/llms-full.txt"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://developers.openai.com/codex/llms-full.txt"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://developers.openai.com/codex/llms-full.txt"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://developers.openai.com/codex/llms-full.txt"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "https://lighton.ai/lighton-blogs/fewer-tokens-better-answers",
+      "https://developers.openai.com/codex/llms-full.txt"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Claude",
+    "Invariant Labs",
+    "Kimi",
+    "LightOn",
+    "Microsoft",
+    "Model Context Protocol",
+    "OWASP",
+    "RAG",
+    "SentinelOne",
+    "Telegram",
+    "macOS.Gaslight"
+  ]
+}

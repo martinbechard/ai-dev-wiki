@@ -15,6 +15,7 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [portable-agent-skills-and-runbooks.md](portable-agent-skills-and-runbooks.md) records how portable procedure skills and composed runbooks reduce procedural debt across agent tools.
 - [tier-specific-assistant-conventions.md](tier-specific-assistant-conventions.md) records how assistant behavior is specialized by work tier when evidence supports it.
 - [outcome-alignment-and-process-autonomy.md](outcome-alignment-and-process-autonomy.md) records the operating-model boundary between shared outcomes and team-owned process.
+- [hybrid-agent-infrastructure-economics.md](hybrid-agent-infrastructure-economics.md) records managed, subscription, self-hosted, and local execution economics as workflow-routing decisions.
 - [senior-led-agentic-execution-pods.md](senior-led-agentic-execution-pods.md) records the small senior pod model for high-leverage agentic execution.
 - [junior-learning-paths-in-agentic-teams.md](junior-learning-paths-in-agentic-teams.md) records the talent-pipeline rule for preserving supervised junior practice.
 - [agent-ownership-rosters.md](agent-ownership-rosters.md) records agent owner cards, agent rosters, care loops, and decommissioning rules.
@@ -30,8 +31,9 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
 - [Workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team A Free Employee. Here's The Catch..md)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
-- [Leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
+- [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
+- [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 - [source-workflows](../source-workflows/index.md)
 
 ## Related Code
@@ -62,3 +64,4 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - Split on 2026-06-23 so reusable operating-model concepts live in durable leaf pages.
 - Maintained on 2026-06-23 to add portable skills and runbook composition as a durable operating practice.
 - Maintained on 2026-06-23 to add loop-design, outcome-oriented automation, and agent-cost telemetry practices from public sources.
+- Maintained on 2026-06-27 to add hybrid agent infrastructure economics as a workflow-routing operating practice.

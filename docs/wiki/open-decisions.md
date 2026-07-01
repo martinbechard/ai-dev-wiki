@@ -1,3 +1,9 @@
+---
+type: "Decision Log"
+title: "Open Decisions"
+description: "No project wiki source conflicts are recorded yet."
+---
+
 # Open Decisions
 
 ## Current Decisions Needed

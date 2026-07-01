@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Deep Research And Writing Workflows"
+description: "Deep research workflows need more autonomy than finished writing workflows."
+tags: ["agent-workflows"]
+---
+
 # Deep Research And Writing Workflows
 
 ## Current Understanding

@@ -1,3 +1,10 @@
+---
+type: "Source Workflow"
+title: "Public Topic News Collector"
+description: "The public topic news collector is a raw-only automation for AI-assisted development practice updates."
+tags: ["source-workflows"]
+---
+
 # Public Topic News Collector
 
 ## Current Understanding

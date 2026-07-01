@@ -1,3 +1,10 @@
+---
+type: "Governance And Risk"
+title: "Agent Governance Infrastructure"
+description: "Agent governance works best as infrastructure around the model loop."
+tags: ["governance-and-risk"]
+---
+
 # Agent Governance Infrastructure
 
 ## Current Understanding
@@ -12,6 +19,18 @@ The [workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team
 
 The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) adds public signals that agentic development governance is moving toward runtime inventory, policy enforcement, MCP and tool visibility, generated-output validation, verifiable identity, policy versioning, execution-environment evidence, and tool-call transcripts. Vendor-specific product coverage belongs upstream; locally, these signals support treating agent governance as run-level evidence infrastructure.
 
+The [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) reinforces governance as operational infrastructure: agent actions need trace-level monitoring, delegated identity, credential revocation paths, MCP policy controls, tool-output trust boundaries, and model-routing evidence. The local pattern is to make these controls inspectable at run time rather than relying on prompt instructions after a tool chain is already connected.
+
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add governance signals for marketplace allowlists, shadow-agent inventory, agent-level identity, tool access control, real-time filtering, audit trails, continuous adversarial testing, and governance controls embedded inside developer tool surfaces. Vendor surveys and product catalogs remain upstream-owned; locally, these signals make agent inventory, plugin source control, and runtime policy evidence first-class infrastructure requirements.
+
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add infrastructure controls for model-policy settings, plugin install consent, strict marketplace sources, runner groups, parallel workflow steps, permission-denial logging, and deterministic configuration artifacts. These are infrastructure boundaries because they decide what an agent can run, where it can run, and how the resulting evidence can be audited.
+
+The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) adds deterministic governance and data-control signals. Coding-agent permissions, approvals, package-install rules, source access, and audit logs should be policy-owned infrastructure with predictable execution boundaries. Forward-deployed or externally hosted AI capability does not remove the need for explicit data classification, reviewability, and operational control over what source, logs, review material, and internal context can leave the environment.
+
+The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds identity-governance and guardrail evidence for autonomous agents. Local governance infrastructure should support continuous inventory, inherited-permission checks, behavioral baselines, runtime policy enforcement, stale-credential detection, deterministic guardrails, observability, audit trails, escalation rules, and human oversight. A UI-first operating pattern can preserve existing approval paths and audit artifacts when backend integration would bypass controls.
+
+The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds a production-adjacent approved-action pattern. Read-only default access, separate agent identity, requester-bounded permissions, scoped remediation plans, sandbox validation, and attribution to agent, requester, and approver should be inspectable control-plane evidence before an agent changes deployment, runtime, cost, or infrastructure state.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -25,6 +44,16 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - Audit published agents regularly for audience, connector scope, approval requirements, and run history.
 - Inventory installed agents, tool servers, MCP servers, plugins, and connectors that can affect development workflows.
 - Capture run-level evidence for identity, policy version, execution environment, approvals, tool calls, and generated outputs when auditability matters.
+- Preserve enough trace, identity, credential, and routing evidence to investigate an agent run after a failure or security concern.
+- Keep revocation paths ready for credentials and connectors that an agent can use through a developer environment.
+- Govern plugin marketplaces, MCP catalogs, extension sources, and installed agent tooling before tools are available to a developer or agent workflow.
+- Pair agent inventory with continuous monitoring, adversarial testing, and audit evidence when agents can touch sensitive systems or software delivery paths.
+- Bind runner access, model enablement, parallel execution, plugin installation, and permission-denial records to policy-owned infrastructure rather than per-prompt convention.
+- Specify deterministic policy boundaries for permissions, approvals, package installation, data access, and audit logs before agent workflows run.
+- Treat data-control and classification gates as infrastructure requirements when development context can reach external models or tools.
+- Maintain continuous inventory and behavioral monitoring for agent identities, credentials, connectors, and tool surfaces.
+- Prefer execution paths that preserve established approval, escalation, and audit artifacts when agents operate in enterprise workflows.
+- Default production-adjacent agents to read-only investigation until a scoped plan, sandbox validation result, requester authority, and approver attribution are recorded.
 
 ## Authoritative Sources
 
@@ -35,6 +64,14 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - [retrieval and tools practice](../retrieval-and-tools/rag-tools-and-mcp-practice.md)
 - [Workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team A Free Employee. Here's The Catch..md)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
+- [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
+- [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 
 ## Related Code
 
@@ -57,6 +94,8 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 - [adoption-and-operating-model](../adoption-and-operating-model/index.md)
 - [agent ownership rosters](../adoption-and-operating-model/agent-ownership-rosters.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
+- [agent identity and delegated authority](agent-identity-and-delegated-authority.md)
+- [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
 
 ## Open Questions
 
@@ -66,3 +105,9 @@ The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 
 - Created on 2026-06-23 to separate infrastructure enforcement, identity, authorization, audit, and accountability from the broader governance-controls page.
 - Maintained on 2026-06-23 with public runtime governance signals for agent inventory, policy enforcement, governed MCP, and run-level evidence.
+- Maintained on 2026-06-24 with trace monitoring, delegated identity, credential revocation, and MCP policy controls.
+- Maintained on 2026-06-25 with marketplace allowlists, shadow-agent inventory, real-time filtering, adversarial testing, and tool-surface governance.
+- Maintained on 2026-06-26 with policy-owned model settings, runner controls, plugin consent, permission-denial evidence, and deterministic configuration artifacts.
+- Maintained on 2026-06-28 with deterministic governance boundaries and data-control gates for external AI capability.
+- Maintained on 2026-06-29 with guardian-agent identity controls, deterministic guardrails, observability, escalation, and UI-first audit preservation.
+- Maintained on 2026-07-01 with read-only default investigation, scoped approved actions, sandbox validation, and agent-requester-approver attribution.

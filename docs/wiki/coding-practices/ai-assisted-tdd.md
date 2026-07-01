@@ -1,3 +1,10 @@
+---
+type: "Coding Practice"
+title: "AI-Assisted TDD"
+description: "TDD gives the agent a concrete design target."
+tags: ["coding-practices"]
+---
+
 # AI-Assisted TDD
 
 ## Current Understanding

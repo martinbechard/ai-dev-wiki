@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Portable Agent Skills And Runbooks"
+description: "Portable agent skills are reusable procedures that can travel across agent tools without becoming one overloaded prompt."
+tags: ["adoption-and-operating-model"]
+---
+
 # Portable Agent Skills And Runbooks
 
 ## Current Understanding

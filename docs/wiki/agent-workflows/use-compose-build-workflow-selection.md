@@ -1,3 +1,10 @@
+---
+type: "Topic"
+title: "Use Compose Build Workflow Selection"
+description: "Use, compose, or build is a per-workflow selection rule for agentic AI work."
+tags: ["agent-workflows"]
+---
+
 # Use Compose Build Workflow Selection
 
 ## Current Understanding
@@ -7,6 +14,8 @@ Use, compose, or build is a per-workflow selection rule for agentic AI work. A m
 The [agentic team-structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md) frames the decision around economics, differentiation, leverage, control, and speed. It warns against declaring a universal AI strategy before understanding the workflow. The [gen AI application deck](../../../raw/processed/gen-ai-app-complete.md) expresses the same product lens: harnesses coordinate workflow, state, tools, approvals, validation, and observability around the model.
 
 The [Pi coding agent source](../../../raw/processed/Why I Quit Claude Code for Pi.md) adds a harness-control version of the same selection rule. Teams may use a managed coding agent when the default workflow is sufficient, compose around an extensible harness when they need custom planning, telemetry, subagents, MCP adapters, or model routing, and build deeper infrastructure only when those controls differentiate the work enough to justify maintenance. The source also reinforces that model choice and token economics are workflow decisions, not brand decisions.
+
+The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md) adds an infrastructure-cost version of the same rule. Managed APIs, enterprise subscriptions, self-hosted clusters, and local execution should be selected per workflow, not as a universal platform stance. Building or hosting deeper infrastructure needs predictable utilization, staffing, routing, observability, and governance evidence; otherwise the fixed baseline can erase apparent token savings.
 
 This page owns the workflow-selection rule. [workflow before model selection](../adoption-and-operating-model/workflow-before-model-selection.md) owns the adoption rule that the workflow shape comes before model or tool choice.
 
@@ -18,6 +27,7 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 - Build custom model or agent infrastructure only when the workflow is truly differentiating and the organization can staff and govern it.
 - Consider extensible harnesses when the team needs direct control over planning, session telemetry, model routing, or agent plugins.
 - Keep token cost, context visibility, and subsidized vendor pricing in the workflow economics review.
+- Treat self-hosted and local execution as build choices that need utilization, staffing, latency, telemetry, and governance justification.
 
 ## Authoritative Sources
 
@@ -25,6 +35,7 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Pi coding agent source](../../../raw/processed/Why I Quit Claude Code for Pi.md)
+- [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 
 ## Related Code
 
@@ -44,6 +55,7 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 - [workflow before model selection](../adoption-and-operating-model/workflow-before-model-selection.md)
 - [senior led agentic execution pods](../adoption-and-operating-model/senior-led-agentic-execution-pods.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
+- [hybrid agent infrastructure economics](../adoption-and-operating-model/hybrid-agent-infrastructure-economics.md)
 
 ## Open Questions
 
@@ -52,3 +64,4 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source-backed use, compose, and build workflow-selection guidance.
+- Maintained on 2026-06-27 with hosting and local-execution choices as per-workflow build decisions.

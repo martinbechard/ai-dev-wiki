@@ -1,0 +1,349 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_local": "2026-06-29T21:03:16-04:00",
+    "end_utc": "2026-06-30T01:03:16Z",
+    "rule": "Only include sources published or visibly updated within the last 7 days relative to run time; exclude missing, ambiguous, future-dated, and boundary-only dates.",
+    "start_local": "2026-06-22T21:03:16-04:00",
+    "start_utc": "2026-06-23T01:03:16Z"
+  },
+  "excluded_candidates": [
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "reason": "Search result showed published 3 weeks ago, outside the strict 7-day window for this run.",
+      "source_url": "https://drata.com/learn/agent-gov/overview",
+      "title": "The Complete Guide to Agentic AI Governance"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "reason": "Checked as an official source, but no clearly dated qualifying Copilot coding-agent or code-review update was found in the strict window.",
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "title": "GitHub Copilot changelog label"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "reason": "The visible date is June 1, 2026, outside the strict 7-day window, even though the content is relevant to review-cost governance.",
+      "source_url": "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+      "title": "Requests in GitHub Copilot legacy billing"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "reason": "Search result showed a recent update, but the source is a broad ecosystem catalog rather than a durable local practice update; route entity/catalog coverage upstream.",
+      "source_url": "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026",
+      "title": "awesome-ai-agents-2026"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "reason": "Search result showed 3 weeks ago, outside the strict 7-day window.",
+      "source_url": "https://redis.io/blog/ai-agent-context/",
+      "title": "AI Agent Context: What Goes Into the Window"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "reason": "Search result showed 3 weeks ago, outside the strict 7-day window.",
+      "source_url": "https://www.cognee.ai/blog/guides/memory-tooling-ai-coding-agents",
+      "title": "Memory Tooling for AI Coding Agents 2026"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "reason": "Search result showed last month, outside the strict 7-day window.",
+      "source_url": "https://www.digitalapplied.com/blog/context-engineering-agent-reliability-playbook-2026",
+      "title": "Context Engineering: Agent Reliability Playbook 2026"
+    },
+    {
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "reason": "Visible date is June 22, 2026 without a time. The strict run window starts 2026-06-22T21:03:16-04:00, so this is a boundary-only date and is excluded rather than guessed in-window.",
+      "source_url": "https://www.encryptionconsulting.com/ai-agent-governance/",
+      "title": "AI Agent Governance Starts With Machine Identity"
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should preserve local practice implications and avoid creating local encyclopedia leaves for upstream-owned products, companies, frameworks, or standards.",
+    "Verify exact revision date for the GitHub Gist item before treating it as strong evidence in synthesized wiki text.",
+    "The Encryption Consulting machine-identity item was excluded because its date-only June 22 timestamp falls on the strict cutoff boundary without a visible time."
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_updates": [
+    {
+      "date_evidence": "Page timestamp visible as 2026-06-28T14:00:01.646Z.",
+      "factual_summary": "Cursor data reported a jump in AI-generated code changes reaching production without a separate manual review step, from early-2026 levels to 36.3 percent by mid-May.",
+      "follow_up_note": "Keep broad Cursor product coverage upstream; local follow-up should focus on review evidence and PR acceptance boundaries.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Business Insider"
+      ],
+      "published_or_updated_at": "2026-06-28T14:00:01.646Z",
+      "publisher": "Business Insider",
+      "source_url": "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "title": "AI writes a lot of software. Now, human code review is starting to disappear.",
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "why_it_matters_for_leaf": "The local practice implication is that review gates, PR packaging, and acceptance evidence must stay explicit as teams become more comfortable shipping agent-produced changes with less manual review."
+    },
+    {
+      "date_evidence": "Page shows published 24 June 2026.",
+      "factual_summary": "ITPro summarized GitLab research reporting that organizations are adopting AI coding faster than governance policies, with review and validation becoming the bottleneck and traceability/provenance becoming central concerns.",
+      "follow_up_note": "Keep vendor report details upstream; local ingest should retain review-bottleneck and traceability implications.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "GitLab",
+        "ITPro"
+      ],
+      "published_or_updated_at": "2026-06-24",
+      "publisher": "ITPro",
+      "source_url": "https://www.itpro.com/software/development/enterprises-are-shipping-so-much-ai-generated-code-they-cant-control-or-secure-it",
+      "title": "Enterprises are shipping so much AI-generated code they can't control or secure it",
+      "upstream_owned_entities": [
+        "GitLab"
+      ],
+      "why_it_matters_for_leaf": "This reinforces local guidance that generated-code refactoring and AI review must include provenance, maintainability checks, review capacity, and governance controls after code is generated."
+    },
+    {
+      "date_evidence": "Page shows June 25, 2026.",
+      "factual_summary": "Tana describes durable company context as a current, retrievable, access-controlled layer that agents can use instead of starting from scratch on each task.",
+      "follow_up_note": "Route product details upstream; local implication is the durable context-layer operating pattern.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "named_entities": [
+        "Tana"
+      ],
+      "published_or_updated_at": "2026-06-25",
+      "publisher": "Tana",
+      "source_url": "https://tana.inc/blog/how-to-give-ai-agents-company-context-2026",
+      "title": "How to give AI agents company context in 2026",
+      "upstream_owned_entities": [
+        "Tana"
+      ],
+      "why_it_matters_for_leaf": "This supports local context architecture leaves that distinguish compiled knowledge, current retrievable context, access control, and context freshness from ad hoc prompt stuffing."
+    },
+    {
+      "date_evidence": "Search result showed published 2 days ago during the 2026-06-29 run; page content identifies the LLM Wiki pattern.",
+      "factual_summary": "The gist describes a pattern for personal knowledge bases maintained with LLM agents, where a structured wiki becomes reusable memory for Codex, Claude Code, OpenCode, and similar coding agents.",
+      "follow_up_note": "Verify the exact gist revision date during ingest if preserving this item; local use should stay on the wiki-as-memory practice pattern.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Andrej Karpathy",
+        "OpenAI Codex",
+        "Claude Code",
+        "OpenCode",
+        "GitHub Gist"
+      ],
+      "published_or_updated_at": "2026-06-27",
+      "publisher": "GitHub Gist",
+      "source_url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "title": "LLM Wiki",
+      "upstream_owned_entities": [
+        "Andrej Karpathy",
+        "OpenAI Codex",
+        "Claude Code",
+        "OpenCode"
+      ],
+      "why_it_matters_for_leaf": "This is a direct public signal for compiled wiki memory: agents can maintain structured Markdown knowledge, then reload it as durable context across future work."
+    },
+    {
+      "date_evidence": "Page shows Jun 24, 2026.",
+      "factual_summary": "InfoQ reports AI review moving earlier in the lifecycle, including PRD validation, design inputs, context-aware code review, and scoped multi-agent review responsibilities.",
+      "follow_up_note": "Keep company implementation details upstream; local synthesis should focus on lifecycle checkpoints and scoped reviewer responsibilities.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "InfoQ",
+        "Uber",
+        "DoorDash",
+        "Cloudflare"
+      ],
+      "published_or_updated_at": "2026-06-24",
+      "publisher": "InfoQ",
+      "source_url": "https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/",
+      "title": "AI Is Moving up the Software Lifecycle: from Code Review to PRD Governance",
+      "upstream_owned_entities": [
+        "Uber",
+        "DoorDash",
+        "Cloudflare"
+      ],
+      "why_it_matters_for_leaf": "This supports lifecycle review gates and intelligent code review as a continuous validation pattern across requirements, design, implementation, and review."
+    },
+    {
+      "date_evidence": "Search result showed published 4 days ago during the 2026-06-29 run; page URL and related links place it in June 2026.",
+      "factual_summary": "The article frames guardian agents as an execution-layer control for autonomous identities, covering inherited permissions, continuous inventory, behavioral baselines, runtime policy enforcement, stale credentials, and prompt injection as privilege escalation.",
+      "follow_up_note": "Local synthesis should keep the control-pattern implication and route framework/entity background upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "The Hacker News",
+        "LangGraph",
+        "AutoGen",
+        "Model Context Protocol"
+      ],
+      "published_or_updated_at": "2026-06-25",
+      "publisher": "The Hacker News",
+      "source_url": "https://thehackernews.com/2026/06/guardian-agents-next-layer-of-identity.html",
+      "title": "Guardian Agents: The Next Layer of Identity Governance",
+      "upstream_owned_entities": [
+        "LangGraph",
+        "AutoGen",
+        "Model Context Protocol"
+      ],
+      "why_it_matters_for_leaf": "This directly informs local agent identity and governance infrastructure leaves: identity controls need runtime evidence and least-privilege enforcement during agent action, not just static provisioning."
+    },
+    {
+      "date_evidence": "Page shows published 23 June 2026.",
+      "factual_summary": "TechRadar argues that agentic AI adoption is outpacing governance, creating an execution gap that requires deterministic guardrails, observability, audit trails, escalation rules, and human oversight.",
+      "follow_up_note": "Local use should focus on guardrails and escalation; keep market statistics upstream unless needed as evidence.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Gartner",
+        "Deloitte",
+        "Redwood Software"
+      ],
+      "published_or_updated_at": "2026-06-23",
+      "publisher": "TechRadar Pro",
+      "source_url": "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+      "title": "Agentic AI's crossroads: guardrails or massive fails",
+      "upstream_owned_entities": [
+        "Gartner",
+        "Deloitte",
+        "Redwood Software"
+      ],
+      "why_it_matters_for_leaf": "This reinforces local governance controls and lifecycle gates: autonomous agents should execute within observable, deterministic boundaries with clear escalation points."
+    },
+    {
+      "date_evidence": "Page shows published 23 June 2026.",
+      "factual_summary": "TechRadar describes a UI-first approach where agents operate through existing human workflows, credentials, approval paths, and audit artifacts instead of bypassing controls through backend integrations.",
+      "follow_up_note": "Local ingest should frame this as an operating-pattern option, not a universal architecture rule.",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Sutherland Global",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-06-23",
+      "publisher": "TechRadar Pro",
+      "source_url": "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+      "title": "Secure AI will be defined by emulated human behavior",
+      "upstream_owned_entities": [
+        "Sutherland Global",
+        "Gartner"
+      ],
+      "why_it_matters_for_leaf": "This gives a local practice implication for agent identity and delegated authority: agents should preserve established controls and accountable audit trails when operating in enterprise workflows."
+    }
+  ],
+  "run_at_local": "2026-06-29T21:03:16-04:00",
+  "run_at_utc": "2026-06-30T01:03:16Z",
+  "selected_leaf_ids": [
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+  ],
+  "selection_policy": "Unchecked leaves first, then oldest last_checked_at, stable relative path sort as tie-breaker.",
+  "source_urls_checked": [
+    "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+    "https://www.itpro.com/software/development/enterprises-are-shipping-so-much-ai-generated-code-they-cant-control-or-secure-it",
+    "https://tana.inc/blog/how-to-give-ai-agents-company-context-2026",
+    "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+    "https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/",
+    "https://www.encryptionconsulting.com/ai-agent-governance/",
+    "https://thehackernews.com/2026/06/guardian-agents-next-layer-of-identity.html",
+    "https://www.techradar.com/pro/agentic-ais-crossroads-guardrails-or-massive-fails",
+    "https://www.techradar.com/pro/secure-ai-will-be-defined-by-emulated-human-behavior",
+    "https://drata.com/learn/agent-gov/overview",
+    "https://github.blog/changelog/label/copilot/",
+    "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+    "https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026",
+    "https://redis.io/blog/ai-agent-context/",
+    "https://www.cognee.ai/blog/guides/memory-tooling-ai-coding-agents",
+    "https://www.digitalapplied.com/blog/context-engineering-agent-reliability-playbook-2026"
+  ],
+  "summary": {
+    "docs_wiki_updated": false,
+    "excluded_candidate_count": 8,
+    "qualifying_update_count": 8,
+    "selected_leaf_count": 15,
+    "source_url_count": 16,
+    "upstream_routing_note": "Broad ecosystem entities remain upstream-owned under docs/wiki/federation.md; this artifact records local practice implications only."
+  }
+}

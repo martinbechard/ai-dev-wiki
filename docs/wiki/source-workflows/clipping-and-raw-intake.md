@@ -1,3 +1,10 @@
+---
+type: "Source Workflow"
+title: "Clipping And Raw Intake"
+description: "Clipping and raw intake keeps source material in explicit lifecycle folders. Clippings holds human-saved source notes before review or ingest."
+tags: ["source-workflows"]
+---
+
 # Clipping And Raw Intake
 
 ## Current Understanding

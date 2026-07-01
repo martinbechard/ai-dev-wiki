@@ -22,6 +22,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
+- [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -50,3 +51,4 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 
 - Created on 2026-06-23 as the local owner for AI application and harness patterns.
 - Maintained on 2026-06-23 by splitting reusable harness concepts into durable leaf pages.
+- Maintained on 2026-06-24 with harness taxonomy, TTFT, and visible progress signals from the leaf update watch.

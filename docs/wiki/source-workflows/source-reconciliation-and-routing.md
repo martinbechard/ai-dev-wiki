@@ -1,3 +1,10 @@
+---
+type: "Source Workflow"
+title: "Source Reconciliation And Routing"
+description: "Source reconciliation keeps the wiki aligned with authoritative evidence."
+tags: ["source-workflows"]
+---
+
 # Source Reconciliation And Routing
 
 ## Current Understanding
@@ -8,6 +15,8 @@ During source ingest, recurring concepts and aliases should be normalized into t
 
 Federation is part of routing. The upstream AI wiki owns broad ecosystem entities such as companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques. This downstream wiki owns local AI-assisted development practice, workflow, governance, evaluation, implementation, and adoption lenses.
 
+The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) adds a knowledge-package routing pattern. Knowledge-based pull requests treat external collaborator code, tests, and cleaned agent traces as evidence packages that the receiving project reviews, regenerates, and verifies under local policy. The local implication is to separate knowledge intake from implementation acceptance instead of merging foreign agent output directly.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -16,6 +25,7 @@ Federation is part of routing. The upstream AI wiki owns broad ecosystem entitie
 - Normalize aliases into existing durable leaves when they refer to the same local practice concept.
 - Link or route upstream-owned ecosystem entities through [federation.md](../federation.md) instead of creating duplicate local encyclopedia leaves.
 - Keep local leaves focused on downstream practice, workflow, governance, evaluation, implementation, and adoption implications.
+- Treat external agent artifacts as source evidence that must be routed, regenerated, and verified before becoming local implementation.
 
 ## Authoritative Sources
 
@@ -25,6 +35,7 @@ Federation is part of routing. The upstream AI wiki owns broad ecosystem entitie
 - [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
 - [project-wiki source priority reference](/Users/martinbechard/.codex/skills/project-wiki/references/source-priority.md)
 - [upstream AI wiki topic index](../../../upstream-ai-wiki/topic-index.md)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 
 ## Related Code
 
@@ -53,3 +64,4 @@ Federation is part of routing. The upstream AI wiki owns broad ecosystem entitie
 ## Maintenance Notes
 
 - Created on 2026-06-23 to separate authority order, source conflict handling, synonym normalization, and federation routing from the broader source-workflows hub.
+- Maintained on 2026-06-26 with knowledge-package routing that separates external agent evidence from local implementation acceptance.

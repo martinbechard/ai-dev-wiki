@@ -1,0 +1,360 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-27T20:30:47-04:00",
+  "cutoff_window": {
+    "start": "2026-06-25T20:30:47-04:00",
+    "end": "2026-06-27T20:30:47-04:00",
+    "rule": "Only public sources with visible publication or update dates inside this window are included. Date-only June 25 candidates are excluded as ambiguous boundary-day items unless a visible timestamp proves they are after the cutoff."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "Practice-level implications for AI-assisted development, including operating rules, workflows, verification, governance, and adoption.",
+    "upstream_scope": "Broad ecosystem coverage for companies, products, models, developer tools, agentic frameworks, MCP servers, and broad techniques is owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "handling": "Findings name upstream-owned entities for routing but keep summaries focused on the local practice implication."
+  },
+  "findings": [
+    {
+      "id": "2026-06-27-openai-agents-work-transformation",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work/",
+      "visible_date": "June 27, 2026",
+      "source_type": "vendor research report",
+      "summary": "OpenAI published findings from its agent work analysis, emphasizing a shift from chat-style assistance toward delegated task execution, monitoring, and human oversight patterns.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports local guidance that agent workflows should define delegation boundaries, review checkpoints, and escalation paths instead of treating coding assistants as single-turn completion tools.",
+      "named_entities": [
+        "OpenAI",
+        "agents"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI"
+      ],
+      "routing_note": "Route broad OpenAI company and product coverage upstream; local wiki may capture delegation and oversight operating practices."
+    },
+    {
+      "id": "2026-06-26-openai-gpt-5-6-sol",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://openai.com/index/introducing-gpt-5-6/",
+      "visible_date": "June 26, 2026",
+      "source_type": "vendor model announcement",
+      "summary": "OpenAI described GPT-5.6 Sol as improving on coding and terminal-oriented benchmarks and discussed more capable agent execution behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model-capability announcements should feed local practice only through harness and evaluation changes: terminal task suites, regression repair checks, permissions, and reviewer gates must be updated before expanding autonomy.",
+      "named_entities": [
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "SWE-bench",
+        "Terminal-Bench",
+        "Humanity's Last Exam"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "SWE-bench",
+        "Terminal-Bench",
+        "Humanity's Last Exam"
+      ],
+      "routing_note": "Route model and benchmark background upstream; local wiki may record benchmark-to-acceptance-gate practice implications."
+    },
+    {
+      "id": "2026-06-26-github-code-review-efficiency",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://github.blog/changelog/2026-06-26-improved-code-review-efficiency-for-repositories-with-many-open-pull-requests",
+      "visible_date": "June 26, 2026",
+      "source_type": "developer platform changelog",
+      "summary": "GitHub reported improved Copilot code review efficiency for repositories with many open pull requests by reducing unnecessary context gathering.",
+      "why_it_matters_for_ai_assisted_development_practice": "Code review agents should prefer scoped retrieval, avoid wasteful repository-wide context expansion, and make context-gathering costs observable in review harnesses.",
+      "named_entities": [
+        "GitHub",
+        "Copilot",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "routing_note": "Route GitHub and Copilot product coverage upstream; local wiki may capture scoped retrieval and review-efficiency practice."
+    },
+    {
+      "id": "2026-06-26-github-marketplace-policy",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_url": "https://github.blog/changelog/2026-06-26-strictknownmarketplaces-policy-adds-enforcement-for-blocking-workflow-actions-from-unverified-sources",
+      "visible_date": "June 26, 2026",
+      "source_type": "developer platform changelog",
+      "summary": "GitHub announced strict known marketplace enforcement that blocks workflow actions from unverified sources.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-generated CI and automation changes need package, action, and tool provenance checks before execution, especially when agents can edit workflows or install dependencies.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "strictKnownMarketplaces"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "routing_note": "Route platform details upstream; local wiki may capture the governed dependency and workflow-action approval practice."
+    },
+    {
+      "id": "2026-06-26-github-npm-account-security",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://github.blog/changelog/2026-06-26-preventive-account-security-npm-account-takedowns",
+      "visible_date": "June 26, 2026",
+      "source_type": "developer platform changelog",
+      "summary": "GitHub described preventive npm account takedowns as an account-security control for package ecosystem risk.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent workflows that add packages should include dependency-source checks, lockfile review, and package-risk notes rather than accepting generated install commands unexamined.",
+      "named_entities": [
+        "GitHub",
+        "npm"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "npm"
+      ],
+      "routing_note": "Route ecosystem and npm service details upstream; local wiki may capture package-install risk gates."
+    },
+    {
+      "id": "2026-06-26-github-adoption-phase-merges",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://github.blog/changelog/2026-06-26-track-total-merges-by-adoption-phase-in-enterprise-and-organization-reports",
+      "visible_date": "June 26, 2026",
+      "source_type": "developer platform changelog",
+      "summary": "GitHub added reporting for total merges by adoption phase in enterprise and organization reports.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption should be measured with workflow-stage metrics such as suggested, accepted, reviewed, and merged changes, not only assistant usage counts.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "routing_note": "Route product-reporting feature details upstream; local wiki may capture adoption telemetry patterns."
+    },
+    {
+      "id": "2026-06-26-github-mai-code-flash",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://github.blog/changelog/2026-06-26-mai-code-1-flash-is-now-generally-available-in-github-copilot-for-business-and-enterprise",
+      "visible_date": "June 26, 2026",
+      "source_type": "developer platform changelog",
+      "summary": "GitHub made MAI-Code-1 Flash generally available in Copilot for Business and Enterprise.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multi-model coding environments need model-routing policies, task-fit evaluation, and organization-level defaults rather than one-size-fits-all assistant configuration.",
+      "named_entities": [
+        "GitHub",
+        "Copilot",
+        "MAI-Code-1 Flash"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot",
+        "MAI-Code-1 Flash"
+      ],
+      "routing_note": "Route model and product availability upstream; local wiki may capture model-routing governance and evaluation practice."
+    },
+    {
+      "id": "2026-06-26-itpro-context-engineering-costs",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.itpro.com/software/development/gartner-ai-development-costs",
+      "visible_date": "June 26, 2026",
+      "source_type": "news analysis",
+      "summary": "ITPro covered Gartner warnings that AI development efforts can incur higher costs when teams do not control tooling, context, review, and operational overhead.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context architecture should include cost observability, context budgets, and workflow-level ROI review, especially when agents expand retrieval, planning, and verification work.",
+      "named_entities": [
+        "ITPro",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "routing_note": "Route company background upstream; local wiki may capture cost-control and context-budget operating practices."
+    },
+    {
+      "id": "2026-06-27-explainx-mcp-security-guide",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://explainx.ai/blog/mcp-security-guide-2026",
+      "visible_date": "June 27, 2026",
+      "source_type": "security practice guide",
+      "summary": "ExplainX published an MCP security guide discussing authentication, authorization, data exposure, tool governance, and operational controls.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP usage in coding workflows should be treated as governed tool access: least privilege, tool allowlists, audit trails, data boundaries, and explicit approval gates should be part of local practice.",
+      "named_entities": [
+        "ExplainX",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "MCP"
+      ],
+      "routing_note": "Route broad MCP protocol coverage upstream; local wiki may capture governed MCP practice for coding agents."
+    },
+    {
+      "id": "2026-06-26-ai-eval-digest-agent-eval-consensus",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://leehanchung.github.io/blogs/2026/06/26/ai-eval-digest-9/",
+      "visible_date": "June 26, 2026",
+      "source_type": "evaluation research digest",
+      "summary": "AI Eval Digest discussed agent evaluation environments, agreement among independent agents, and reliability patterns for evaluating AI systems.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent evaluation should track trajectory behavior and cross-run agreement, not just final answer correctness, when calibrating review, repair, and planning loops.",
+      "named_entities": [
+        "AI Eval Digest",
+        "agents"
+      ],
+      "upstream_owned_entities": [],
+      "routing_note": "Local wiki can capture the evaluation-design implication; broad research paper background may be routed upstream if durable entity pages are needed."
+    },
+    {
+      "id": "2026-06-26-agent-harnesses-with-claude",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://iaee.substack.com/p/agent-harnesses-with-claude-intuitively",
+      "visible_date": "June 26, 2026",
+      "source_type": "practice essay",
+      "summary": "A practice essay described agent harnesses as the environment around an LLM, including information access, tools, context design, task constraints, and iterative feedback.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces local application-pattern coverage for harness architecture: context feeds, tool boundaries, feedback loops, and user-visible progress should be treated as first-class design surfaces.",
+      "named_entities": [
+        "Claude",
+        "agent harnesses"
+      ],
+      "upstream_owned_entities": [
+        "Claude"
+      ],
+      "routing_note": "Route Claude product/model background upstream; local wiki may capture harness architecture practice."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/claude-code-for-enterprise",
+      "visible_date": "June 25, 2026",
+      "reason": "Date-only June 25 is ambiguous relative to the 2026-06-25T20:30:47-04:00 cutoff; product and company details are also upstream-owned."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news/anthropic-economic-index-ai-in-the-wild",
+      "visible_date": "June 25, 2026",
+      "reason": "Date-only June 25 is ambiguous relative to the cutoff and the broad economic report is upstream-owned except for possible local adoption implications."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-06-25-codeql-2-22-6-and-codeql-cli-2-22-6-are-now-available",
+      "visible_date": "June 25, 2026",
+      "reason": "Date-only June 25 boundary-day candidate; excluded without a visible timestamp proving it is inside the window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-06-25-copilot-code-review-reviewing-prompts-and-copilot-instructions",
+      "visible_date": "June 25, 2026",
+      "reason": "Highly relevant to durable instructions and AI code review, but date-only June 25 is ambiguous relative to the cutoff."
+    },
+    {
+      "source_url": "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "visible_date": "June 25, 2026",
+      "reason": "Boundary-day date-only article and largely duplicate of OpenAI source material; excluded in favor of the June 27 primary source."
+    },
+    {
+      "source_url": "https://www.practical-devsecops.com/mcp-security-statistics-2026-report/",
+      "visible_date": "No visible publication date found in accessible result",
+      "reason": "Missing visible date; excluded even though MCP security statistics may be relevant to governed tool practice."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "visible_date": "Search result exposed June 27, 2026 but source page visibility was not stable in the collector view",
+      "reason": "Could not verify a stable visible publication date from the accessible page content; excluded."
+    },
+    {
+      "source_url": "https://buildfastwithai.com/blogs/news/how-ai-developer-tools-are-changing-code-quality-and-delivery-in-2026",
+      "visible_date": "June 25, 2026",
+      "reason": "Boundary-day date-only candidate and broad developer-tool coverage belongs upstream unless a specific local practice implication is isolated."
+    },
+    {
+      "source_url": "https://vercel.com/blog/claude-4-best-practices-for-ai-assisted-development",
+      "visible_date": "Last week",
+      "reason": "Relative date is too ambiguous for the strict two-day window."
+    }
+  ],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated by this collector run.",
+    "A later ingest pass should decide whether qualifying findings become durable local practice leaves or digest entries.",
+    "Before local synthesis, check the upstream AI wiki topic index for entity pages for OpenAI, GitHub, Copilot, Claude, MCP, model names, benchmarks, and developer-platform features.",
+    "June 25 date-only items may become eligible only if a future source check exposes timestamps after 2026-06-25T20:30:47-04:00."
+  ],
+  "counts": {
+    "qualifying_update_count": 11,
+    "exclusion_count": 9
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

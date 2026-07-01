@@ -1,0 +1,443 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-26T20:33:31-0400",
+  "cutoff_window": {
+    "start": "2026-06-24T20:33:31-0400",
+    "end": "2026-06-26T20:33:31-0400",
+    "rule": "Include only public sources published or visibly updated within the last 2 days relative to run_timestamp; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, adoption, and implementation lenses only."
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-06-26-github-copilot-adoption-phase-merge-reporting",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-26-track-total-merges-by-adoption-phase-in-enterprise-and-organization-reports",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-26",
+          "date_time": "2026-06-26T20:55:03Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub added total pull-request merge counts by AI adoption phase to enterprise and organization Copilot usage reports, complementing existing per-user averages.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption measurement can move beyond usage counts into outcome instrumentation by cohort, which supports operating-model reviews and evaluation of whether AI-assisted development changes merge throughput.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot usage metrics API",
+        "AI adoption phase cohorts"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "routing_note": "Record only the adoption-metrics practice implication locally; broad Copilot product coverage belongs upstream."
+    },
+    {
+      "id": "2026-06-26-github-copilot-mai-code-flash-admin-policy",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-26-mai-code-1-flash-for-copilot-business-and-copilot-enterprise",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-26",
+          "date_time": "2026-06-26T16:35:06Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "GitHub made MAI-Code-1-Flash generally available for Copilot Business and Enterprise, with administrator enablement through Copilot policy settings and usage-based billing.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent model selection is becoming an administrative control surface; local practice should treat low-latency model enablement as a governed policy and cost decision rather than an individual developer preference.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1-Flash",
+        "Microsoft AI"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1-Flash",
+        "Microsoft AI"
+      ],
+      "routing_note": "Keep product and model details upstream; local implication is model-policy governance for iterative agentic coding workflows."
+    },
+    {
+      "id": "2026-06-26-github-desktop-worktrees-copilot-integration",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-26-github-desktop-3-6-worktrees-and-deeper-copilot-integration",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-26",
+          "date_time": "2026-06-26T10:32:58Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "GitHub Desktop 3.6 added worktree support and expanded Copilot-backed commit authoring and merge-conflict assistance, including model selection and bring-your-own-key support.",
+      "why_it_matters_for_ai_assisted_development_practice": "Worktrees and assisted conflict resolution are becoming standard UI-level source-workflow primitives for parallel agent and human work; local guidance should emphasize clean workspace isolation and repository-standard commit authorship.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Desktop",
+        "GitHub Copilot",
+        "Copilot SDK",
+        "Git worktrees"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Desktop",
+        "GitHub Copilot",
+        "Copilot SDK"
+      ],
+      "routing_note": "Keep product release details upstream; local implication is source-workflow design for multi-branch and agent-assisted development."
+    },
+    {
+      "id": "2026-06-25-copilot-code-review-depth-tools",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-25-copilot-code-review-analysis-depth-and-efficiency-updates",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T21:41:18Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Copilot code review added organization-level default review depth and now uses built-in CLI and SDK file-exploration tools such as grep, rg, glob, and view in its review path.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI review quality depends on explicit retrieval depth, source-exploration tools, and visibility into review effort; local review rubrics should capture review-depth defaults and repository overrides.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "Copilot CLI",
+        "Copilot SDK",
+        "grep",
+        "rg",
+        "glob",
+        "view"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot SDK"
+      ],
+      "routing_note": "Keep product mechanics upstream; local implication is review-depth governance and retrieval-tool evidence practice."
+    },
+    {
+      "id": "2026-06-25-copilot-strict-known-marketplaces",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-25-enterprise-managed-settings-now-support-strictknownmarketplaces-in-vs-code-and-the-cli",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T21:30:42Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Enterprise-managed settings for GitHub Copilot CLI and VS Code added a strictKnownMarketplaces control that limits plugin installation to explicitly defined marketplaces.",
+      "why_it_matters_for_ai_assisted_development_practice": "Plugin and tool extension governance is shifting earlier in the agent lifecycle, before tool execution; local governance should cover approved marketplaces, install consent, and untrusted-plugin risk.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot CLI",
+        "VS Code",
+        "strictKnownMarketplaces"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot CLI",
+        "VS Code"
+      ],
+      "routing_note": "Keep tool/product coverage upstream; local implication is governed plugin marketplace policy for coding-agent clients."
+    },
+    {
+      "id": "2026-06-25-github-hosted-runner-controls",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-25-more-control-over-your-github-hosted-runners",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T18:16:46Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub Actions administrators can disable standard hosted-runner labels and add macOS runners to runner groups.",
+      "why_it_matters_for_ai_assisted_development_practice": "Evaluation and repair harnesses that run AI-generated code need stricter control over which compute environments agents and tests can consume; runner groups can encode policy boundaries for privileged or costly environments.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "GitHub-hosted runners",
+        "macOS runners"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "routing_note": "Keep CI platform release details upstream; local implication is harness and permission architecture for agent-run verification."
+    },
+    {
+      "id": "2026-06-25-github-actions-parallel-steps",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-25-actions-steps-can-now-be-run-in-parallel",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T16:46:09Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "GitHub Actions added workflow syntax for running steps concurrently while retaining separate logs and execution.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent repair loops and evaluation harnesses often need concurrent services, test watchers, or instrumentation; native parallel steps reduce ad hoc shell backgrounding and make logs easier to audit.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "routing_note": "Keep platform syntax details upstream; local implication is harness design with auditable concurrent setup."
+    },
+    {
+      "id": "2026-06-25-npm-high-impact-account-protection",
+      "source_urls": [
+        "https://github.blog/changelog/2026-06-25-npm-adds-preventive-account-protection-for-high-impact-accounts",
+        "https://github.blog/changelog/feed/"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T16:02:09Z",
+          "basis": "GitHub Changelog page date and changelog feed pubDate"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "npm added a temporary read-only safeguard for high-impact accounts after sensitive account changes such as email changes or 2FA recovery-code use.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agentic coding workflows that install, update, or publish packages should treat package-install and publishing paths as supply-chain risk surfaces, with approval gates for dependency changes and registry-affecting actions.",
+      "named_entities": [
+        "GitHub",
+        "npm",
+        "high-impact accounts",
+        "2FA recovery code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "npm"
+      ],
+      "routing_note": "Keep registry and product details upstream; local implication is supply-chain governance for agent package operations."
+    },
+    {
+      "id": "2026-06-26-claude-code-plugin-consent-and-remote-startup-checklist",
+      "source_urls": [
+        "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
+        "https://registry.npmjs.org/@anthropic-ai/claude-code"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-26",
+          "date_time": "2026-06-26T18:16:23.150Z",
+          "basis": "npm registry public time field for version 2.1.195"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Claude Code 2.1.195 fixed project-settings plugin enablement paths that did not require explicit install consent, fixed background agent visibility and restart issues, and improved remote session startup with a provisioning checklist.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable agent instructions and project settings can implicitly activate plugins, so local practice should require explicit install consent and expose remote-startup progress when agent environments are provisioned.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude Code Remote",
+        "background agents",
+        "plugins"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "routing_note": "Keep release and product details upstream; local implication is consent and progress instrumentation around project-level agent extensions."
+    },
+    {
+      "id": "2026-06-25-claude-code-auto-mode-denials-and-telemetry",
+      "source_urls": [
+        "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
+        "https://registry.npmjs.org/@anthropic-ai/claude-code"
+      ],
+      "visible_dates": [
+        {
+          "date": "2026-06-25",
+          "date_time": "2026-06-25T19:05:08.367Z",
+          "basis": "npm registry public time field for version 2.1.193"
+        }
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "Claude Code 2.1.193 added all-shell auto-mode classification, denial reasons in transcripts and permissions UI, assistant-response telemetry controls, MCP authentication notices, and background shell memory-pressure reaping.",
+      "why_it_matters_for_ai_assisted_development_practice": "Permission systems are becoming auditable artifacts: denial reasons, transcript entries, telemetry redaction, MCP authentication notices, and background-process cleanup all affect governance of tool calls and long-running agents.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "autoMode.classifyAllShell",
+        "OpenTelemetry",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "MCP"
+      ],
+      "routing_note": "Keep product and protocol coverage upstream; local implication is auditability of tool-call permissions, telemetry, and long-running shell management."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-06-25-saved-views-for-repository-issues-and-adjustable-row-heights-in-projects",
+      "visible_date": "2026-06-25T18:29:01Z",
+      "reason": "Within window but primarily issue and project-table UI; no specific AI-assisted development practice implication identified."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-06-25-red-hat-enterprise-linux-runner-images-are-now-in-public-preview",
+      "visible_date": "2026-06-25T15:40:04Z",
+      "reason": "Within window but broad runner-image availability; no distinct AI-assisted development practice implication beyond general CI platform coverage."
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md#2.1.191",
+      "visible_date": "2026-06-24T18:54:40.112Z",
+      "reason": "Public npm timestamp is before the cutoff window start of 2026-06-24T20:33:31-0400."
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md#2.1.187",
+      "visible_date": "2026-06-23T17:55:41.991Z",
+      "reason": "Public npm timestamp is before the cutoff window."
+    },
+    {
+      "source_url": "https://www.infoq.com/",
+      "visible_date": "2026-06-24",
+      "reason": "Date-only candidate on the cutoff boundary; exact publication time was not visible, so it was excluded rather than guessed."
+    },
+    {
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-code",
+      "visible_date": "not visible in fetched page output",
+      "reason": "Documentation page did not expose a usable date in the collected output; the npm registry timestamp and public changelog were used instead for Claude Code findings."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector output is intentionally left under raw and not raw/processed.",
+    "Do not update docs/wiki pages from this collector; a later ingest run should decide whether to synthesize these practice implications into durable leaves.",
+    "Potential synthesis targets include governance controls for plugin marketplaces, review-depth defaults, runner and harness controls, package-install risk, and permission-audit telemetry.",
+    "The next ingest pass should decide whether the GitHub adoption metrics, review depth, marketplace governance, runner controls, and Claude Code permission telemetry findings warrant durable leaf updates."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

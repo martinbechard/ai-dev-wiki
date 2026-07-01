@@ -1,3 +1,9 @@
+---
+type: "Defect Summary"
+title: "Known Defects"
+description: "Defect files are tracked defect records. File presence alone does not prove that a defect is open."
+---
+
 # Known Defects
 
 ## Current Understanding

@@ -1,3 +1,10 @@
+---
+type: "Verification And Eval"
+title: "Product Judgment Quality Gates"
+description: "Product judgment gates check whether the right thing is being built and whether the delivered experience works for the intended user."
+tags: ["verification-and-evals"]
+---
+
 # Product Judgment Quality Gates
 
 ## Current Understanding

@@ -1,3 +1,9 @@
+---
+type: "Topic"
+title: "Wiki Federation"
+description: "This wiki is a downstream, one-way extension of the upstream AI ecosystem wiki."
+---
+
 # Wiki Federation
 
 ## Current Understanding

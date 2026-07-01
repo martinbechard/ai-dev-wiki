@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Compiled Wiki And Structured Memory"
+description: "Context systems need a clear source of truth and a clear compiled view."
+tags: ["context-architecture"]
+---
+
 # Compiled Wiki And Structured Memory
 
 ## Current Understanding
@@ -6,6 +13,8 @@ Context systems need a clear source of truth and a clear compiled view. The [Kar
 
 The local rule is that a wiki should compile understanding from authoritative sources rather than become the authoritative store for every fast-changing fact. For raw-source ingest, source artifacts remain provenance, durable leaves hold synthesized practice, and digests point readers to the leaves. For high-volume operational memory, a structured store can be the source of truth while generated wiki pages act as a hot reference layer.
 
+The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds two compatible public signals. Company context should be durable, current, retrievable, and access-controlled instead of stuffed into every prompt, and structured Markdown wikis can act as reusable memory across coding agents. Locally, that supports a compiled wiki as a governed context layer that agents can reload, while keeping source authority and freshness checks outside the prose itself.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -13,12 +22,15 @@ The local rule is that a wiki should compile understanding from authoritative so
 - Treat generated or compiled wiki pages as views unless the project explicitly designates them as source authority.
 - Preserve provenance so stale prose can be traced back to raw facts or corrected by regenerating from the authoritative store.
 - Record contradictions and unresolved ownership in Open Questions instead of smoothing them into confident prose.
+- Keep access control and freshness visible when compiled wiki pages or structured memory are used as company context for agents.
+- Treat reusable agent memory as a maintained source-backed layer, not as unreviewed prompt accumulation.
 
 ## Authoritative Sources
 
 - [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md)
 - [context router and knowledge layers](context-router-and-knowledge-layers.md)
 - [source workflows](../source-workflows/index.md)
+- [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 
 ## Related Code
 
@@ -45,3 +57,4 @@ The local rule is that a wiki should compile understanding from authoritative so
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold source-of-truth and compiled-view boundaries.
+- Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.

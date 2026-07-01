@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Durable Instructions And Skill Files"
+description: "Durable instructions and skill files keep reusable procedure outside the live prompt until an agent needs it."
+tags: ["adoption-and-operating-model"]
+---
+
 # Durable Instructions And Skill Files
 
 ## Current Understanding

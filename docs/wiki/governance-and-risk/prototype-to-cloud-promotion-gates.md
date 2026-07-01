@@ -1,3 +1,10 @@
+---
+type: "Governance And Risk"
+title: "Prototype To Cloud Promotion Gates"
+description: "Prototype-to-cloud promotion gates control when AI-assisted or vibe-coded local software becomes hosted, shared, or data-bearing software."
+tags: ["governance-and-risk"]
+---
+
 # Prototype To Cloud Promotion Gates
 
 ## Current Understanding

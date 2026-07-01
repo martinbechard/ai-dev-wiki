@@ -1,0 +1,587 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "days": 7,
+    "end_utc": "2026-06-25T01:03:37Z",
+    "start_utc": "2026-06-18T01:03:37Z"
+  },
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "date_basis": "Published June 13, 2026; included because the search result exposed related June 24 updates, but the article date itself is outside the cutoff.",
+      "exclusion_reason": "Published date 2026-06-13 is older than the 7-day cutoff even though related site links showed June 24 items.",
+      "factual_summary": "The page describes specialist agent teams using research, draft, and review roles with structured handoffs and review steps.",
+      "follow_up_note": "Treat as excluded for cutoff accounting; do not ingest as a qualifying update.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "named_entities": [
+        "Taskade",
+        "Taskade Genesis"
+      ],
+      "source_url": "https://www.taskade.com/blog/build-ai-agent-team",
+      "upstream_owned_entities": [
+        "Taskade",
+        "Taskade Genesis"
+      ],
+      "visible_date": "2026-06-13",
+      "why_it_matters_for_leaf": "No qualifying update for this run because the article date is outside the cutoff, but it is a useful future source for structured-output and drafter workflow leaves if refreshed with a qualifying date."
+    },
+    {
+      "exclusion_reason": "Search result date qualified, but the video page content was not accessible enough in this run to extract a durable factual summary beyond title and snippet.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=aLv79ADfooo",
+      "visible_date": "published 3 days ago in search result"
+    },
+    {
+      "exclusion_reason": "Relevant public documentation for token usage, compaction, context attachment, review changes, and tool permissions, but no visible publication or update date was found.",
+      "related_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "source_url": "https://zed.dev/docs/ai/agent-panel",
+      "visible_date": null
+    },
+    {
+      "exclusion_reason": "Relevant to agent harness reliability, but older than the 7-day cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "source_url": "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+      "visible_date": "2026-06-14"
+    },
+    {
+      "exclusion_reason": "Relevant harness-design survey, but older than the 7-day cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://arxiv.org/html/2606.20683v1",
+      "visible_date": "2026-06-14"
+    },
+    {
+      "exclusion_reason": "Relevant to persistent workspaces, but older than the 7-day cutoff and broad OpenAI/Ona entity context is upstream-owned.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+      "visible_date": "2026-06-12"
+    },
+    {
+      "exclusion_reason": "Relevant to per-agent cost telemetry, but outside the cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "source_url": "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+      "visible_date": "published 2 weeks ago in search result"
+    },
+    {
+      "exclusion_reason": "Relevant to persistent workspaces, but outside the cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+      "visible_date": "published 2 weeks ago in search result"
+    },
+    {
+      "exclusion_reason": "Relevant to AI code governance and review, but outside the cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "source_url": "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide",
+      "visible_date": "published 2 weeks ago in search result"
+    }
+  ],
+  "federation_routing": {
+    "local_scope": "Downstream AI-assisted development practice, workflows, governance, verification, and operating implications.",
+    "upstream_scope": "Broad ecosystem entities such as vendors, products, frameworks, models, and public product comparisons."
+  },
+  "follow_up_notes": [
+    "Run normal raw ingest before changing docs/wiki leaves.",
+    "Keep broad product and framework facts in the upstream AI wiki; preserve only local practice implications here.",
+    "No docs/wiki pages were updated by this watch run."
+  ],
+  "leaf_universe_count": 60,
+  "per_leaf_results": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/agent-harness-components.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-23",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-23",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/application-harness-patterns.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-21",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-23",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": {
+      "follow_up_note": "No qualifying public update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-22",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/coding-practices/generated-code-refactoring.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-18",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/coding-practices/intelligent-code-review.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-22",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-21",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    },
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": {
+      "follow_up_note": "Review raw artifact for local practice implication and upstream routing.",
+      "last_qualified_update_at": "2026-06-21",
+      "last_result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://github.com/Picrew/awesome-agent-harness",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+        "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+        "https://www.augmentcode.com/guides/eu-ai-act-2026",
+        "https://www.taskade.com/blog/build-ai-agent-team",
+        "https://www.youtube.com/watch?v=aLv79ADfooo",
+        "https://zed.dev/docs/ai/agent-panel",
+        "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+        "https://arxiv.org/html/2606.20683v1",
+        "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+        "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+        "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+        "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+      ]
+    }
+  },
+  "qualifying_update_count": 4,
+  "qualifying_updates": [
+    {
+      "date_basis": "Repository README states Last verified: 2026-06-21.",
+      "factual_summary": "The curated harness list now frames agent harness engineering as implementation-first resources, with categories for harness architecture, context and working state, execution substrates, protocols, evaluation, observability, guardrails, and reference implementations.",
+      "follow_up_note": "Ingest locally only as harness-practice taxonomy; route broad tool and framework entries upstream.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "named_entities": [
+        "Awesome Agent Harness",
+        "Picrew",
+        "OpenAI Agents SDK",
+        "LangGraph",
+        "Microsoft Agent Framework",
+        "Mem0",
+        "CodeGraph"
+      ],
+      "source_url": "https://github.com/Picrew/awesome-agent-harness",
+      "upstream_owned_entities": [
+        "OpenAI Agents SDK",
+        "LangGraph",
+        "Microsoft Agent Framework",
+        "Mem0"
+      ],
+      "visible_date": "2026-06-21",
+      "why_it_matters_for_leaf": "This reinforces the local harness-component model as a runtime discipline rather than a framework-only taxonomy, and gives concrete category names for future ingest into harness, application-pattern, context, evaluation, observability, and governance leaves."
+    },
+    {
+      "date_basis": "Search result and AWS page context show the Agentic AI Lens page in the June 23, 2026 update set.",
+      "factual_summary": "AWS frames time-to-first-token as a separate KPI for user-facing agents, distinguishes pipeline TTFT from model TTFT, and recommends explicit progress indicators when tool calls interrupt streaming.",
+      "follow_up_note": "Consider a local practice note on TTFT, tool-call pause states, and progress telemetry after normal raw ingest.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "AWS Well-Architected Agentic AI Lens",
+        "Amazon Bedrock",
+        "Amazon Bedrock AgentCore Runtime",
+        "Strands Agents",
+        "LangGraph"
+      ],
+      "source_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+      "upstream_owned_entities": [
+        "Amazon Bedrock",
+        "Amazon Bedrock AgentCore Runtime",
+        "Strands Agents",
+        "LangGraph"
+      ],
+      "visible_date": "2026-06-23",
+      "why_it_matters_for_leaf": "The local telemetry leaf should treat perceived progress, silent tool gaps, pre-inference latency, and pipeline versus model timing as first-class runtime telemetry rather than generic latency concerns."
+    },
+    {
+      "date_basis": "Article byline is June 22, 2026 and the page says facts were checked on 2026-06-21.",
+      "factual_summary": "Security Boulevard describes AI code review agents as diff-focused tools that read pull request changes, compare them with surrounding code, and post inline comments or suggested fixes before merge.",
+      "follow_up_note": "Keep product comparison upstream; local implication is the review boundary and evidence role in PR packaging.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "Cursor Bugbot",
+        "Greptile",
+        "Qodo Merge",
+        "GitHub Copilot review",
+        "Graphite Agent",
+        "Sourcery",
+        "Codacy AI Reviewer"
+      ],
+      "source_url": "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "Cursor",
+        "Greptile",
+        "Qodo",
+        "GitHub Copilot",
+        "Graphite",
+        "Sourcery",
+        "Codacy"
+      ],
+      "visible_date": "2026-06-22",
+      "why_it_matters_for_leaf": "The intelligent code review leaf can use this to distinguish diff review agents from full QA, SAST policy, or end-to-end test ownership, and to record pricing/adoption as upstream-owned product context rather than local practice guidance."
+    },
+    {
+      "date_basis": "Page states Apr 20, 2026 with Last updated: Jun 18, 2026.",
+      "factual_summary": "Augment Code argues ordinary AI coding assistance usually does not itself trigger EU AI Act high-risk classification, while AI used for worker evaluation, task allocation, documentation, logging, transparency, and human oversight can create compliance obligations.",
+      "follow_up_note": "Route legal background upstream or to governance; local coding leaf should only keep steady-state traceability implications.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "Augment Code",
+        "EU AI Act",
+        "AI Office"
+      ],
+      "source_url": "https://www.augmentcode.com/guides/eu-ai-act-2026",
+      "upstream_owned_entities": [
+        "Augment Code",
+        "EU AI Act"
+      ],
+      "visible_date": "2026-06-18",
+      "why_it_matters_for_leaf": "Generated-code refactoring and fix-branch practice should preserve documentation, traceability, review, and human oversight records, especially when AI-generated code is connected to regulated or worker-management workflows."
+    }
+  ],
+  "run_timestamp": "2026-06-24T21:03:37-04:00",
+  "run_timestamp_utc": "2026-06-25T01:03:37Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+  ],
+  "selection_policy": "Unchecked leaves first, then oldest last_checked_at, tie-broken by stable relative path sort.",
+  "source_urls_checked": [
+    "https://github.com/Picrew/awesome-agent-harness",
+    "https://github.com/ai-boost/awesome-harness-engineering",
+    "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentperf02-bp04.html",
+    "https://securityboulevard.com/2026/06/8-ai-code-review-agents-that-critique-diffs-before-commit/",
+    "https://www.augmentcode.com/guides/eu-ai-act-2026",
+    "https://www.taskade.com/blog/build-ai-agent-team",
+    "https://www.youtube.com/watch?v=aLv79ADfooo",
+    "https://zed.dev/docs/ai/agent-panel",
+    "https://dev.to/sreeni5018/saga-made-microservices-reliable-agent-harness-makes-ai-agents-reliable-3d1k",
+    "https://arxiv.org/html/2606.20683v1",
+    "https://pulse2.com/openai-to-acquire-ona-to-expand-codex-with-secure-persistent-agent-workspaces/",
+    "https://www.mirantis.com/blog/agentic-ai-infrastructure/",
+    "https://feedme.today/guides/what-are-persistent-agent-workspaces",
+    "https://www.re-entry.ai/blog/ai-code-governance-platform-evaluation-guide"
+  ]
+}

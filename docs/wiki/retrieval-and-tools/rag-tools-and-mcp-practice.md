@@ -1,3 +1,10 @@
+---
+type: "Retrieval And Tools"
+title: "RAG Tools And MCP Practice"
+description: "Retrieval and tool use turn an AI system from a text generator into a governed application component."
+tags: ["retrieval-and-tools"]
+---
+
 # RAG Tools And MCP Practice
 
 ## Current Understanding
@@ -8,12 +15,15 @@ RAG for code and documents needs exact paths, symbols, chunks, reranking, and ru
 
 The detailed practice leaves split the domain by maintenance path. [Code retrieval evidence patterns](code-retrieval-evidence-patterns.md) owns repository evidence selection, [RAG provenance ranking and chunking](rag-provenance-ranking-and-chunking.md) owns document retrieval quality and source boundaries, and [tool call and MCP governance](tool-call-and-mcp-governance.md) owns typed action execution.
 
+The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) reinforces the split. Search, facets, and targeted reads reduce context noise before answer generation, while MCP tool metadata and action tools need separate governance because they can influence what the agent does.
+
 ## Practice Boundaries
 
 - Use retrieval to assemble evidence before asking the model for a factual or code-aware answer.
 - Route repository evidence, RAG quality, and action execution to separate leaves when a page needs operational detail.
 - Keep retrieved evidence from becoming hidden instruction.
 - Keep action tools typed, logged, validated, and executed outside the model.
+- Use retrieval controls to narrow evidence and tool controls to govern action; do not let either surface become hidden authority.
 
 ## Authoritative Sources
 
@@ -21,6 +31,7 @@ The detailed practice leaves split the domain by maintenance path. [Code retriev
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [federation.md](../federation.md)
+- [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 
 ## Related Code
 
@@ -51,3 +62,4 @@ The detailed practice leaves split the domain by maintenance path. [Code retriev
 
 - Created on 2026-06-23 from local source guidance on RAG, embeddings, vector databases, chunking, reranking, tool calls, and MCP.
 - Maintained on 2026-06-23 as the retrieval and tool overview after splitting detailed practice leaves.
+- Maintained on 2026-07-01 with search-first retrieval, faceted scoping, and MCP metadata governance boundaries.

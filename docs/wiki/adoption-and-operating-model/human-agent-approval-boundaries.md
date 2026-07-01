@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Human Agent Approval Boundaries"
+description: "Human-agent approval boundaries define which work an agent can perform, which work requires review, and which decisions remain human-owned."
+tags: ["adoption-and-operating-model"]
+---
+
 # Human Agent Approval Boundaries
 
 ## Current Understanding
@@ -30,7 +37,7 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [Workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team A Free Employee. Here's The Catch..md)
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
-- [Leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
+- [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 
 ## Related Code
 

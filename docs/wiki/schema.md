@@ -1,3 +1,9 @@
+---
+type: "Wiki Schema"
+title: "Wiki Schema"
+description: "The wiki is a maintained synthesis layer. It summarizes and links project knowledge but does not replace authoritative sources."
+---
+
 # Wiki Schema
 
 The wiki is a maintained synthesis layer. It summarizes and links project knowledge but does not replace authoritative sources.
@@ -54,7 +60,7 @@ Topic pages should include:
 - Review unresolved questions with python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py questions. Ask one question at a time, update the wiki from the answer, rerun questions to confirm the item is gone, then run lint.
 - Never invent source paths, test coverage, backlog status, or fallback behavior.
 - For one-way wiki federation, search the upstream topic index before creating local entity leaves. Link upstream entity pages and keep local pages focused on the downstream practice, workflow, governance, or adoption lens.
-- Public update feeds run source-first. Topic collectors and leaf update watches save raw artifacts only; the raw project-wiki monitor owns wiki page refresh, digest updates, lint, and processed-source moves.
+- Public update feeds run source-first. Topic collectors and leaf update watches save raw artifacts only; the [raw project-wiki monitor](source-workflows/raw-project-wiki-monitor.md) owns wiki page refresh, digest updates, lint, and processed-source moves.
 - Do not schedule duplicate feeds for upstream-owned companies, models, products, agentic frameworks, MCP servers, general developer tools, or broad techniques. Local feeds should watch practice, workflow, evaluation, governance, adoption, and implementation patterns.
 - Keep local source artifacts in [raw](../../raw), fully processed source artifacts in [raw/processed](../../raw/processed), human-saved source notes in [Clippings](../../Clippings), and repository-local wiki helper scripts in [scripts](../../scripts).
 - During ingest, normalize synonyms and aliases into the best durable page, factor common ideas into the page that owns the shared concept, keep source-specific ideas attributed to their source, and preserve unresolved conflicting ideas as Open Questions.

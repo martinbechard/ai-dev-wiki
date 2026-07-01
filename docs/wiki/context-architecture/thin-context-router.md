@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Thin Context Router"
+description: "The thin context router is the short root guidance file that sends an agent to the right task-specific documentation."
+tags: ["context-architecture"]
+---
+
 # Thin Context Router
 
 ## Current Understanding

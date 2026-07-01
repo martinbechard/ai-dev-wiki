@@ -1,3 +1,10 @@
+---
+type: "Source Workflow"
+title: "Automated Update Feeds"
+description: "Automated update feeds use source-first boundaries."
+tags: ["source-workflows"]
+---
+
 # Automated Update Feeds
 
 ## Current Understanding
@@ -20,7 +27,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Source workflows: raw source ingest, AI knowledge management for software teams, clipping and citation workflows, and source reconciliation.
 - Prompt and instructions: coding-agent prompts, instruction files, prompt packaging, and file boundary practices.
 - Agent workflows: planning loops, subagents, handoffs, delegated coding, and visible work tracking.
-- Coding practices: AI-assisted TDD, code review, regression repair, refactoring generated code, and tier-specific conventions.
+- Coding practices: [AI-assisted TDD](../coding-practices/ai-assisted-tdd.md), code review, regression repair, refactoring generated code, and tier-specific conventions.
 - Retrieval and tools: code retrieval, RAG for codebases, tool-call patterns, and MCP as a governed practice.
 - Verification and evals: software engineering evals, AI code review checks, benchmarks, deterministic graders, and runtime verification.
 - Application patterns: harness architecture, structured outputs, workflow state, streaming progress, and AI process layers.

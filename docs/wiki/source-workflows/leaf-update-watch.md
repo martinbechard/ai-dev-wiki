@@ -1,3 +1,10 @@
+---
+type: "Source Workflow"
+title: "Leaf Update Watch"
+description: "The leaf update watch is a raw-only automation for public updates about existing durable local wiki leaves."
+tags: ["source-workflows"]
+---
+
 # Leaf Update Watch
 
 ## Current Understanding

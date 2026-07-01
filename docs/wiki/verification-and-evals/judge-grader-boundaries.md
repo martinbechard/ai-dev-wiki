@@ -1,3 +1,10 @@
+---
+type: "Verification And Eval"
+title: "Judge Grader Boundaries"
+description: "Eval graders can be deterministic tools, human review, or model judges."
+tags: ["verification-and-evals"]
+---
+
 # Judge Grader Boundaries
 
 ## Current Understanding
@@ -10,6 +17,10 @@ Mature eval suites mix both signals. Hard checks measure correctness and policy,
 
 The [evals source](../../../raw/processed/You’ll Finally Understand AI Evals After Watching This.md) adds the online versus offline scorer distinction. Offline scorers behave like regression tests over datasets or saved traces. Online scorers run against production traces or sampled live runs and behave more like monitoring. The local rule is to decide where a scorer runs based on cost, latency, risk, and whether the failure should block release or trigger operational review.
 
+The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) adds trace-linked judge practice. Judge scores are more useful when they are tied to the trace, retrieval context, tool calls, latency, cost, and failure reasons that produced the output. Bring-your-own judge providers are a governance choice because the judge can see sensitive traces and can influence release or monitoring decisions.
+
+The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md) reinforces the step-versus-content scoring split. Deterministic graders should check exact tool calls, arguments, structures, and measurable output properties. LLM judges should score subjective process or content criteria only when the rubric, examples, and trace slice make the judgment auditable.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -21,6 +32,9 @@ The [evals source](../../../raw/processed/You’ll Finally Understand AI Evals A
 - Treat offline scorer suites as regression evidence and online scorers as monitoring evidence.
 - Sample expensive LLM judges when online coverage is useful but per-run scoring is too costly.
 - Store failure reasons with scored traces so failures can become dataset items for future regression checks.
+- Tie judge results to trace, retrieval, tool-call, latency, cost, and failure-reason evidence when the score affects release or monitoring decisions.
+- Review judge-provider access to traces before using an external or bring-your-own judge in sensitive workflows.
+- Decide whether the grader is scoring an agent step, an output artifact, a trace, or a thread before choosing deterministic assertions, human review, or an LLM judge.
 
 ## Authoritative Sources
 
@@ -29,6 +43,8 @@ The [evals source](../../../raw/processed/You’ll Finally Understand AI Evals A
 - [verification loops and evals](verification-loops-and-evals.md)
 - [code review evals and rubrics](code-review-evals-and-rubrics.md)
 - [Evals source](../../../raw/processed/You’ll Finally Understand AI Evals After Watching This.md)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
 
 ## Related Code
 
@@ -55,3 +71,5 @@ The [evals source](../../../raw/processed/You’ll Finally Understand AI Evals A
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold deterministic grader, human review, and LLM-as-judge boundaries.
+- Maintained on 2026-06-26 with trace-linked judge results and judge-provider governance.
+- Maintained on 2026-06-30 with step, content, trace, and thread scoring boundaries for agent evals.

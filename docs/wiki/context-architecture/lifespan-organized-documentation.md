@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Lifespan Organized Documentation"
+description: "Lifespan organized documentation separates working material by how it should influence current tasks."
+tags: ["context-architecture"]
+---
+
 # Lifespan Organized Documentation
 
 ## Current Understanding

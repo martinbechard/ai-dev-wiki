@@ -1,0 +1,396 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-01T12:39:23-04:00",
+  "last_run_timestamp": "2026-06-30T00:32:11.820Z",
+  "cutoff_window": {
+    "relative_window": "last 2 days relative to run timestamp",
+    "start_exclusive": "2026-06-29T12:39:23-04:00",
+    "end_inclusive": "2026-07-01T12:39:23-04:00",
+    "date_policy": "Included only sources with a visible publication or update date inside the window. Excluded missing, ambiguous, future-dated, and boundary-only dates."
+  },
+  "privacy_and_source_policy": {
+    "public_web_only": true,
+    "private_or_sensitive_local_content_sent_external": false,
+    "docs_wiki_updated": false,
+    "raw_processed_updated": false
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_wiki_owns": "AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_wiki_owns": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "routing_rule_applied": "Entity and product updates are recorded as upstream-owned. Findings keep only the local practice implication for AI-assisted development."
+  },
+  "search_queries": [
+    "AI coding agent governance permissions approvals audit logs updated June 30 2026",
+    "AI-assisted development context engineering coding agents June 30 2026",
+    "MCP security coding agent tool permissions June 30 2026",
+    "software engineering evals AI code review agents June 30 2026",
+    "site:github.blog/changelog Copilot coding agent June 30 2026",
+    "site:cursor.com/changelog June 30 2026 agent permissions",
+    "site:vercel.com/changelog AI June 30 2026 agent coding",
+    "site:qodo.ai/blog AI code review June 30 2026 coding agents",
+    "site:snyk.io/blog AI coding agent June 30 2026 security review",
+    "site:socket.dev/blog AI coding agent package install risk June 30 2026"
+  ],
+  "findings": [
+    {
+      "id": "2026-07-01-github-copilot-jetbrains-agent",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices"
+      ],
+      "source_title": "Copilot Agent is now available in JetBrains AI Assistant",
+      "source_url": "https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant/",
+      "source_type": "official changelog",
+      "visible_date": "June 30, 2026",
+      "short_factual_summary": "GitHub announced Copilot Agent as a native option in JetBrains AI Assistant. The changelog says users can select Copilot from the agent picker, choose supported models, tune reasoning depth, hand off multistep work, and have the agent propose changes, run commands, and iterate.",
+      "why_it_matters_for_ai_assisted_development_practice": "IDE-native agent selection is becoming a workflow surface, not just a model surface. Local practice should treat agent picker defaults, model choice, reasoning depth, command execution, and iteration authority as explicit operating settings that affect review burden, cost, and verification depth.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Agent",
+        "JetBrains",
+        "JetBrains AI Assistant",
+        "Agent Client Protocol"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Agent",
+        "JetBrains",
+        "JetBrains AI Assistant",
+        "Agent Client Protocol"
+      ],
+      "local_practice_implication": "Agent workflow pages should capture how teams govern IDE agent selection, reasoning depth, and command-running authority without duplicating Copilot or JetBrains product coverage."
+    },
+    {
+      "id": "2026-07-01-cursor-team-mcp-marketplaces",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "source_title": "MCPs and Organizations in Team Marketplaces",
+      "source_url": "https://cursor.com/changelog",
+      "source_type": "official changelog",
+      "visible_date": "Jun 30, 2026",
+      "short_factual_summary": "Cursor expanded team marketplaces to support Team MCPs and organization groups. Admins can configure Team MCP servers once for cloud agents, the agents window, IDE, and CLI, then make approved integrations installable locally through the dashboard.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP governance is shifting toward centralized approval and distribution across local and cloud agent surfaces. Local practice should track MCP server provenance, organization-group access, approved-install catalogs, and consistent configuration across IDE, CLI, and cloud execution.",
+      "named_entities": [
+        "Cursor",
+        "Model Context Protocol",
+        "MCP",
+        "Team MCPs",
+        "team marketplaces",
+        "organization groups"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "local_practice_implication": "Tool governance pages should frame MCP catalogs as controlled supply-chain inputs with admin ownership, local installation boundaries, and group-scoped access."
+    },
+    {
+      "id": "2026-07-01-vercel-agent-approved-actions",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_title": "An expanded Vercel Agent: chat, investigations, and approved actions, now in public beta",
+      "source_url": "https://vercel.com/changelog/an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+      "source_type": "official changelog",
+      "visible_date": "30 Jun 2026",
+      "short_factual_summary": "Vercel announced dashboard chat, production investigations, and approved remediation actions for Vercel Agent. The agent can investigate deployment failures, runtime errors, and cost spikes; it is read-only by default, runs under its own identity, is bounded by the requesting user's permissions, requests scoped approval for elevated work, and attributes elevated actions to the agent, requester, and approver.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete run-control pattern for production-adjacent agents: read-only default, scoped plans before changes, separate agent identity, requester and approver attribution, sandbox validation, and action-specific approval. Local harness and governance pages should treat these as inspectable control-plane requirements.",
+      "named_entities": [
+        "Vercel",
+        "Vercel Agent",
+        "Vercel Sandbox"
+      ],
+      "upstream_owned_entities": [
+        "Vercel",
+        "Vercel Agent",
+        "Vercel Sandbox"
+      ],
+      "local_practice_implication": "Agent governance infrastructure should capture identity, permission bounding, approval plans, sandbox validation, and audit attribution as a reusable pattern for agent actions."
+    },
+    {
+      "id": "2026-07-01-vercel-agent-token-pricing",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_title": "Vercel Agent has updated pricing",
+      "source_url": "https://vercel.com/changelog/vercel-agent-has-updated-pricing",
+      "source_type": "official changelog",
+      "visible_date": "30 Jun 2026",
+      "short_factual_summary": "Vercel changed Agent pricing from pre-loaded credits and a flat per-request fee to a token-rate model plus provider inference costs. The changelog says cost now scales with task intensity, including context joining over logs, deployments, configuration, runtime data, model routing, and execution.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent cost telemetry should account for the intensity of context retrieval, investigation depth, sandboxing, and multi-project execution rather than just counting agent requests. Verification and adoption pages should tie workflow routing to total task cost and evidence collected.",
+      "named_entities": [
+        "Vercel",
+        "Vercel Agent",
+        "provider inference costs"
+      ],
+      "upstream_owned_entities": [
+        "Vercel",
+        "Vercel Agent"
+      ],
+      "local_practice_implication": "Operating-model pages should record that agent pricing models are increasingly tied to context and execution depth, so teams need per-run cost and outcome attribution."
+    },
+    {
+      "id": "2026-07-01-anthropic-claude-sonnet-5-agentic",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_title": "Introducing Claude Sonnet 5",
+      "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source_type": "official announcement",
+      "visible_date": "Jun 30, 2026",
+      "short_factual_summary": "Anthropic introduced Claude Sonnet 5, describing improved planning, browser and terminal tool use, coding, agentic performance, cost-performance options, and availability in Claude Code and the Claude Platform. The announcement includes safety and evaluation claims, including lower undesirable behavior than Sonnet 4.6 and lower cybersecurity capability than current Opus models.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model improvements are upstream-owned, but local practice should refresh representative coding, terminal, browser, and verification tasks before expanding autonomy. Cost-performance claims should be tested against local workflows, especially brownfield debugging, reproducing tests, and verified fixes.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Sonnet 5",
+        "Claude Code",
+        "Claude Platform",
+        "Claude Opus 4.8",
+        "BrowseComp",
+        "OSWorld-Verified"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Sonnet 5",
+        "Claude Code",
+        "Claude Platform",
+        "Claude Opus 4.8",
+        "BrowseComp",
+        "OSWorld-Verified"
+      ],
+      "local_practice_implication": "Verification pages should treat new model availability as a trigger to rerun local agent tasks and compare autonomy, safety, cost, and tested-fix quality before changing defaults."
+    },
+    {
+      "id": "2026-07-01-jetbrains-copilot-native-agent",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "source_title": "GitHub Copilot now an Integrated Agent in JetBrains IDEs",
+      "source_url": "https://blog.jetbrains.com/ai/2026/06/github-copilot-now-an-integrated-agent/",
+      "source_type": "official vendor blog",
+      "visible_date": "June 30, 2026",
+      "short_factual_summary": "JetBrains announced that GitHub Copilot is now native in the JetBrains AI Assistant agent picker, replacing the prior ACP Registry path for this integration. The post says the native path is more stable, tested, available by default, uses OAuth through GitHub, and exposes Copilot CLI slash commands in AI chat.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent integration boundaries are moving from ad hoc protocol configuration toward default IDE surfaces. Local instruction and workflow guidance should distinguish stable built-in agent surfaces from pluggable protocol-based agents, because authentication, command availability, and default availability affect governance.",
+      "named_entities": [
+        "JetBrains",
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains AI Assistant",
+        "ACP Registry",
+        "Agent Client Protocol",
+        "OAuth"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains AI Assistant",
+        "ACP Registry",
+        "Agent Client Protocol"
+      ],
+      "local_practice_implication": "Application pattern pages should record native agent surfaces as harness boundaries with explicit authentication, command routing, and configuration implications."
+    },
+    {
+      "id": "2026-07-01-qodo-independent-verification-layer",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_title": "Why Your AI Coding Agent Shouldn't Review Its Own Code: The Case for an Independent Verification Layer",
+      "source_url": "https://www.qodo.ai/blog/why-your-ai-coding-agent-shouldnt-review-its-own-code-the-case-for-an-independent-verification-layer/",
+      "source_type": "vendor analysis",
+      "visible_date": "Jun 30, 2026",
+      "short_factual_summary": "Qodo argues that code generation and code review are different tasks and that the same system should not both write and approve a change. The post cites a June 2026 Gartner report framing code review agents as a separate software-engineering-agent category and emphasizes independent verification layers for AI-generated code.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces a local review rule: generation, review, test, and approval should be separate lifecycle gates with independent evidence. Prompting the original coding agent to self-review should not satisfy formal code-review or release-readiness checks.",
+      "named_entities": [
+        "Qodo",
+        "Gartner",
+        "AI coding agents",
+        "code review agents"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "Gartner"
+      ],
+      "local_practice_implication": "Code-review eval and lifecycle gate pages should capture reviewer independence, generator-reviewer separation, and evidence-backed sign-off as acceptance criteria."
+    },
+    {
+      "id": "2026-07-01-snyk-vulnbench-repeatability",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_title": "Snyk VulnBench JS 1.0: Can LLMs Find the Same Bugs Twice?",
+      "source_url": "https://snyk.io/blog/snyk-vulnbench-js-1-0-llm-security-review-repeatability/",
+      "source_type": "vendor research",
+      "visible_date": "June 29, 2026",
+      "short_factual_summary": "Snyk published results from 300 vulnerability-finding scans measuring repeatability of an agentic LLM security review on the same code, prompt, and harness. The post reports that reference-matched findings were stable, while extra-model findings varied widely across repeated runs.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agentic security review evals need repeatability metrics, not just single-run issue counts. Local evaluation pages should track reference-matched findings separately from exploratory findings and use repeated runs or agreement scoring before trusting AI security review coverage.",
+      "named_entities": [
+        "Snyk",
+        "Snyk VulnBench JS 1.0",
+        "LLM security review",
+        "SAST"
+      ],
+      "upstream_owned_entities": [
+        "Snyk",
+        "Snyk VulnBench JS 1.0"
+      ],
+      "local_practice_implication": "Verification pages should add repeatability, reference matching, and LLM-plus-SAST comparison as evaluation dimensions for AI security review workflows."
+    },
+    {
+      "id": "2026-07-01-socket-agent-supply-chain-risk",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "source_title": "Risky Biz Podcast: AI Agents Are Raising the Stakes for Software Supply Chain Security",
+      "source_url": "https://socket.dev/blog/risky-biz-podcast-ai-agents-raising-the-stakes",
+      "source_type": "security vendor blog",
+      "visible_date": "June 30, 2026",
+      "short_factual_summary": "Socket describes open source attacks accelerating while AI coding agents pull in dependencies faster and with less human review. The post highlights package compromise, trusted developer workflow abuse, credential theft, package registries, IDE extensions, and source repositories as distribution paths for malicious code.",
+      "why_it_matters_for_ai_assisted_development_practice": "Dependency and tool-install actions by agents need provenance checks, lockfile review, package-risk gates, and human review for trust decisions. Local governance should treat package registries, IDE extensions, and agent toolchains as part of the same development supply chain.",
+      "named_entities": [
+        "Socket",
+        "Risky Biz",
+        "AI coding agents",
+        "open source packages",
+        "IDE extensions"
+      ],
+      "upstream_owned_entities": [
+        "Socket",
+        "Risky Biz"
+      ],
+      "local_practice_implication": "Sensitive-data and supply-chain pages should reinforce package-install and extension-install gates for agent-authored dependency changes."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "AI writes a lot of software. Now, human code review is starting to disappear.",
+      "source_url": "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Outside the strict two-day window relative to the run timestamp."
+    },
+    {
+      "source_title": "AI agents are here for real this time",
+      "source_url": "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "visible_date": "Published 6 days ago in search result",
+      "reason": "Outside the strict two-day window and mostly upstream-owned broad agent adoption coverage."
+    },
+    {
+      "source_title": "Never let the builder be its own reviewer: The next challenge is trust, not speed of code generation",
+      "source_url": "https://www.techradar.com/pro/never-let-the-builder-be-its-own-reviewer-the-next-challenge-is-trust-not-speed-of-code-generation",
+      "visible_date": "Published 5 days ago in search result",
+      "reason": "Outside the strict two-day window; similar local implication is covered by an in-window Qodo source."
+    },
+    {
+      "source_title": "How to Apply AI Governance to Coding Agents in Your Org",
+      "source_url": "https://www.coderabbit.ai/guides/ai-governance-coding-agents",
+      "visible_date": "Published last week in search result",
+      "reason": "Ambiguous date and likely outside strict window; excluded rather than guessing."
+    },
+    {
+      "source_title": "What nearly 10,000 developer environments reveal about agentic development security and AI coding risk",
+      "source_url": "https://snyk.io/blog/agentic-development-security-ai-coding-risk/",
+      "visible_date": "Published last week in search result",
+      "reason": "Ambiguous date and likely outside strict window."
+    },
+    {
+      "source_title": "Agentic MCP Security Best Practices Guide",
+      "source_url": "https://labs.cloudsecurityalliance.org/agentic/agentic-mcp-security-best-practices-v1/",
+      "visible_date": "Published 2 months ago in search result",
+      "reason": "Outside strict window."
+    },
+    {
+      "source_title": "Beyond SWE-Bench: How to Actually Evaluate AI Coding Agents in 2026",
+      "source_url": "https://medium.com/@allahverdiyev.tural/beyond-swe-bench-how-to-actually-evaluate-ai-coding-agents-in-2026-8233940530f1",
+      "visible_date": "Jun 12, 2026",
+      "reason": "Outside strict window."
+    },
+    {
+      "source_title": "GitHub Copilot app support for BYOK",
+      "source_url": "https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok/",
+      "visible_date": "June 23, 2026",
+      "reason": "Outside strict window."
+    },
+    {
+      "source_title": "Copilot CLI: New terminal interface is generally available",
+      "source_url": "https://github.blog/changelog/2026-06-23-copilot-cli-new-terminal-interface-is-generally-available/",
+      "visible_date": "June 23, 2026",
+      "reason": "Outside strict window."
+    },
+    {
+      "source_title": "Introducing Claude Tag",
+      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "visible_date": "Published last week in search result",
+      "reason": "Outside strict window; also mainly upstream-owned product capability coverage."
+    },
+    {
+      "source_title": "OpenAI: How agents are transforming work",
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work/",
+      "visible_date": "Published 6 days ago in search result",
+      "reason": "Outside strict window and mostly upstream-owned broad adoption research."
+    }
+  ],
+  "source_urls": [
+    "https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant/",
+    "https://cursor.com/changelog",
+    "https://vercel.com/changelog/an-expanded-vercel-agent-chat-investigations-and-approved-actions-now-in-public-beta",
+    "https://vercel.com/changelog/vercel-agent-has-updated-pricing",
+    "https://www.anthropic.com/news/claude-sonnet-5",
+    "https://blog.jetbrains.com/ai/2026/06/github-copilot-now-an-integrated-agent/",
+    "https://www.qodo.ai/blog/why-your-ai-coding-agent-shouldnt-review-its-own-code-the-case-for-an-independent-verification-layer/",
+    "https://snyk.io/blog/snyk-vulnbench-js-1-0-llm-security-review-repeatability/",
+    "https://socket.dev/blog/risky-biz-podcast-ai-agents-raising-the-stakes"
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector. Leave the artifact in raw until a normal ingest pass synthesizes it.",
+    "Candidate ingest destinations include agent-governance-infrastructure, governance-controls-for-agents, sensitive-data-and-supply-chain-controls, tool-call-and-mcp-governance, workflow-before-model-selection, agent-cost-telemetry, code-review-evals-and-rubrics, verification-loops-and-evals, and agent-harness-components.",
+    "When ingesting, keep product, company, model, MCP, and developer-tool background in the upstream AI wiki and synthesize only local AI-assisted development practice implications here.",
+    "Several in-window sources were vendor announcements. Treat claims as signals requiring local validation before changing default agent autonomy, model routing, or approval policy."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  }
+}

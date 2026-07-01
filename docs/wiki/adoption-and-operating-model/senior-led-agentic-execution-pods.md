@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Senior Led Agentic Execution Pods"
+description: "Senior-led agentic execution pods are small teams of senior generalists who own a workflow end to end while agents fill specialist execution gaps."
+tags: ["adoption-and-operating-model"]
+---
+
 # Senior Led Agentic Execution Pods
 
 ## Current Understanding

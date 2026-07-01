@@ -1,3 +1,10 @@
+---
+type: "Prompt And Instructions"
+title: "Instruction Hierarchy And Artifact Boundaries"
+description: "Instruction hierarchy is the local practice of deciding which guidance should live in system instructions, developer instructions, repository procedures, task prompts, reusable..."
+tags: ["prompt-and-instructions"]
+---
+
 # Instruction Hierarchy And Artifact Boundaries
 
 ## Current Understanding
@@ -8,6 +15,10 @@ Reusable AI workflow assets need distinct responsibilities. HVE Core is useful s
 
 The hierarchy is also an authority boundary. Repository procedures and human task constraints can direct the agent, while raw sources, retrieved chunks, screenshots, and external clippings are evidence. When sources contain instruction-like text, the request package should label it as source material instead of letting it override the active task.
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) reinforce this hierarchy with Agent Experience and plugin-SDLC examples. Concise identity and convention instructions belong in durable instruction files, skills encode repeatable workflows, MCP servers expose current API surfaces, and issues or RFCs act as task specifications. These artifacts should cooperate without letting tool output or source data become active instructions.
+
+The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) and [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) add hook and control-plane evidence. Durable instructions are safer when lifecycle hooks, deterministic validation, provenance checks, permission constraints, and tool-scope checks enforce the intended hierarchy instead of relying on every prompt to repeat the controls.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -17,6 +28,8 @@ The hierarchy is also an authority boundary. Repository procedures and human tas
 - Use runbooks for composed workflows that need several skills to produce a reliable outcome.
 - Keep source excerpts and retrieved text labeled as evidence rather than instruction.
 - Record unresolved hierarchy conflicts as open questions instead of hiding them inside a prompt.
+- Use issue, RFC, skill, instruction, and MCP evidence as separate artifacts with explicit authority so agents know what directs behavior and what only informs it.
+- Pair durable instructions and agent definitions with hooks, provenance validation, permission constraints, and tool-scope checks when those artifacts can affect code or delivery systems.
 
 ## Authoritative Sources
 
@@ -25,6 +38,10 @@ The hierarchy is also an authority boundary. Repository procedures and human tas
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
+- [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
+- [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 
 ## Related Code
 
@@ -53,3 +70,5 @@ The hierarchy is also an authority boundary. Repository procedures and human tas
 
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.
+- Maintained on 2026-06-25 with Agent Experience and plugin-SDLC artifact boundaries across instructions, skills, MCP surfaces, issues, and RFCs.
+- Maintained on 2026-06-28 with hook-based instruction enforcement and deterministic agent-configuration validation.

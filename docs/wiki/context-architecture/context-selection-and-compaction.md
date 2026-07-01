@@ -1,3 +1,10 @@
+---
+type: "Context Architecture"
+title: "Context Selection And Compaction"
+description: "Context selection decides what evidence the model sees for a request."
+tags: ["context-architecture"]
+---
+
 # Context Selection And Compaction
 
 ## Current Understanding
@@ -10,6 +17,12 @@ The [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI
 
 The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) reinforces the local production-infrastructure lens: scoped inputs, durable knowledge layers, retrieval rules, and context governance need to be designed before agents are allowed to run multi-step development or operations workflows. Broad context-engineering taxonomy stays upstream; this page keeps the local selection and compaction rule.
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add a bootstrapping case: when agents work against proprietary code, internal SDKs, custom frameworks, or technologies absent from model training, context selection starts with baseline evals, concise durable instructions, reference implementations, current API surfaces, and diagnostic errors. Public vendor identity stays upstream; locally, this is a rule for teaching unknown project reality without flooding the request.
+
+The [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) adds a placement rule for long-context work. Larger context windows reduce some retrieval failures, but load-bearing instructions and source facts can still be ignored when buried in the middle of a long request. Important constraints should be externalized, curated into a short request package, placed near the beginning or near the point of use, and verified against disk state when the agent claims to know them.
+
+The [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md) adds a compression-layer pattern for agentic workloads. Tool outputs, verbose JSON, web pages, code files, and repeated message history should not enter the model unchanged when a local or governed context layer can route, compress, cache-align, and preserve retrievable originals. The local rule is to make compression reversible or auditable when the removed detail may matter later.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -21,6 +34,12 @@ The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-t
 - Treat context rot as an operating risk, not only a token-limit problem.
 - Keep context ownership visible so stale examples, stale policies, and obsolete source files can be removed from the agent diet.
 - Define context sources, retrieval rules, and compaction ownership before enabling recurring or multi-step agent workflows.
+- For proprietary or unfamiliar technology, use baseline evals to find the model's wrong closest match, then add the smallest durable instructions, current API evidence, reference examples, and diagnostic feedback that correct that gap.
+- Keep the working set small for critical actions; do not rely on a large middle section of accumulated context to carry the rule that matters now.
+- Put load-bearing instructions, current progress, and source facts at the beginning of a session brief or directly beside the action that needs them.
+- Use deterministic disk checks when an agent's claim about context, progress, or source content must be trusted.
+- Treat context compression as a harness policy decision with routing, reversibility, cache behavior, provenance, and sensitive-field handling, not only as token trimming.
+- Preserve a way to recover compressed originals when an agent may need exact JSON, source code, logs, identity fields, or access-control evidence.
 
 ## Authoritative Sources
 
@@ -32,6 +51,11 @@ The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-t
 - [Deep research workshop source](../../../raw/processed/Full Workshop Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
+- [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
+- [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
+- [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
 
 ## Related Code
 
@@ -50,6 +74,7 @@ The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-t
 - [thin context router](thin-context-router.md)
 - [rules and knowledge layers](rules-and-knowledge-layers.md)
 - [ai process layer and workflow state](../application-patterns/ai-process-layer-and-workflow-state.md)
+- [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
 
 ## Open Questions
 
@@ -59,3 +84,6 @@ The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-t
 
 - Created on 2026-06-23 from source guidance on request context, token discipline, context windows, compaction, and evidence selection.
 - Maintained on 2026-06-23 with public context-engineering guidance framed as production infrastructure for multi-step agents.
+- Maintained on 2026-06-25 with proprietary-code bootstrapping guidance for baseline evals, concise instructions, reference examples, and current API evidence.
+- Maintained on 2026-06-27 with lost-in-the-middle placement and disk-verification rules for long-context work.
+- Maintained on 2026-06-30 with reversible context compression, cache-alignment, provenance, and sensitive-field handling guidance.

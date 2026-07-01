@@ -1,3 +1,10 @@
+---
+type: "Application Pattern"
+title: "AI Process Layer And Workflow State"
+description: "The AI process layer is the application tier between user intent and backend systems."
+tags: ["application-patterns"]
+---
+
 # AI Process Layer And Workflow State
 
 ## Current Understanding

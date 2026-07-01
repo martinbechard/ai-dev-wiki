@@ -1,3 +1,10 @@
+---
+type: "Application Pattern"
+title: "Agent Harness Components"
+description: "An agent harness is the fixed runtime architecture that lets a model act, observe the result, and continue toward a goal."
+tags: ["application-patterns"]
+---
+
 # Agent Harness Components
 
 ## Current Understanding
@@ -5,6 +12,18 @@
 An agent harness is the fixed runtime architecture that lets a model act, observe the result, and continue toward a goal. The [agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md) distinguishes a harness from a framework: a framework gives a human abstractions to assemble, while a harness ships an operating loop, tool registry, context control, persistence, hooks, and permission layer that an agent can use directly.
 
 The local harness component model includes an iteration loop, context management and compaction, a tool and skill registry, subagent management, built-in primitives, session persistence, dynamic instruction assembly, lifecycle hooks, and dispatch-time permissions. These components support the broader [application harness patterns](application-harness-patterns.md) page by naming the runtime pieces that must be present before a model-backed application can safely do work.
+
+The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) reinforces harness engineering as an implementation discipline with categories for architecture, context and working state, execution substrates, protocols, evaluation, observability, guardrails, and reference implementations. The local page keeps those as component categories, while named SDKs, frameworks, memory systems, and protocols remain upstream-owned.
+
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add execution-substrate and control-plane signals. Runner groups, parallel workflow steps, remote startup checklists, compiled agent artifacts, content hashes, provenance, and tamper-evident logs are harness components when they determine how an agent environment is provisioned, observed, or reproduced.
+
+The [context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md) and [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) add a recovery component to the harness. Multi-step agents need progress files, append-only artifacts, startup continuity checks, and rehydration summaries so a session can resume from disk after compaction, crash, or long-context attention loss.
+
+The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) reinforces harness design as environment design: information access, tool boundaries, context feeds, task constraints, progress visibility, and feedback loops are first-class components rather than prompt-only concerns.
+
+The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) and [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) add failure-attribution and managed-control components. A harness should expose task setup, context construction, tool constraints, scoring, traces, lifecycle hooks, deterministic configuration validation, and permission scopes as inspectable surfaces. That keeps agent quality from being treated as a model-only property.
+
+The [harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md) adds a primitive-by-primitive operating model. Instructions, context delivery, context management, tool interfaces, execution environments, durable state, orchestration, subagents, skill layers, verification, and observability should be treated as separable harness responsibilities. When an agent fails, the local diagnostic should ask which primitive failed before treating the model as the only cause.
 
 ## Practice Boundaries
 
@@ -14,10 +33,28 @@ The local harness component model includes an iteration loop, context management
 - Assemble durable instructions from stable project files without letting dynamic context break source authority.
 - Use lifecycle hooks for policy, logging, and observability without putting every control in model instructions.
 - Enforce permissions before tool execution, especially for file writes, shell commands, network access, and external systems.
+- Keep harness categories explicit enough that context, execution, evaluation, observability, and guardrail responsibilities do not collapse into a single framework choice.
+- Route named framework or SDK comparisons upstream unless the local decision is about which harness component the workflow needs.
+- Treat environment provisioning, runner selection, parallel setup, compiled configuration, provenance, and tamper-evident logs as harness responsibilities for long-running or high-impact agent work.
+- Add progress and artifact stores when a workflow can span sessions, hit context pressure, or require audit after interruption.
+- Run startup continuity checks that compare progress records with the last material output before resuming work.
+- Treat context feeds, task constraints, progress visibility, and feedback loops as harness design surfaces, not as incidental prompt text.
+- Include task setup, context construction, tool constraints, scoring, lifecycle hooks, configuration validation, and permission scopes in the harness boundary.
+- Preserve traces and failure-attribution fields so semantic failures can be debugged without guessing from the final answer.
+- Diagnose failures against the harness primitive that owns the missing support: instruction, context, tool schema, environment, durable state, orchestration, delegation, skill procedure, verification, or traceability.
 
 ## Authoritative Sources
 
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
+- [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [Context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md)
+- [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
+- [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
+- [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
+- [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
+- [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -48,3 +85,8 @@ The local harness component model includes an iteration loop, context management
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.
+- Maintained on 2026-06-24 with public harness taxonomy signals for context, execution, evaluation, observability, and guardrails.
+- Maintained on 2026-06-26 with runner, parallel-step, remote-startup, compiled-configuration, provenance, and tamper-evident logging signals.
+- Maintained on 2026-06-27 with progress stores, startup continuity checks, rehydration summaries, and context-feed design signals.
+- Maintained on 2026-06-28 with harness-level failure attribution, lifecycle hooks, deterministic configuration validation, and trace evidence.
+- Maintained on 2026-06-30 with the harness primitive taxonomy and primitive-level failure diagnostics.

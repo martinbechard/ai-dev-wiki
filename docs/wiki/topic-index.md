@@ -1,8 +1,15 @@
+---
+type: "Topic Index"
+title: "Topic Index"
+description: "digests/index.md is the hub for monthly AI-assisted development digests."
+---
+
 # Topic Index
 
 ## Primary Topics
 
 - [digests/index.md](digests/index.md) is the hub for monthly AI-assisted development digests.
+- [digests/2026-07.md](digests/2026-07.md) is the active July 2026 digest for processed local source updates.
 - [digests/2026-06.md](digests/2026-06.md) is the active June 2026 digest for processed local source updates.
 - [context-architecture/index.md](context-architecture/index.md) is the hub for routers, rules layers, knowledge layers, context selection, and compaction.
 - [context-architecture/context-router-and-knowledge-layers.md](context-architecture/context-router-and-knowledge-layers.md) is the overview for the local context-aware guidance structure.
@@ -10,6 +17,7 @@
 - [context-architecture/rules-and-knowledge-layers.md](context-architecture/rules-and-knowledge-layers.md) records durable conventions and stable project facts.
 - [context-architecture/lifespan-organized-documentation.md](context-architecture/lifespan-organized-documentation.md) records active, decision, reference, and archive documentation authority signals.
 - [context-architecture/context-selection-and-compaction.md](context-architecture/context-selection-and-compaction.md) records source selection, token discipline, summaries, and context trimming.
+- [context-architecture/context-state-externalization-and-rehydration.md](context-architecture/context-state-externalization-and-rehydration.md) records durable task state, handoffs, progress cursors, disk checks, and recovery after context loss.
 - [context-architecture/compiled-wiki-and-structured-memory.md](context-architecture/compiled-wiki-and-structured-memory.md) records source-of-truth boundaries for prose wikis, structured stores, and generated wiki views.
 - [context-architecture/self-service-analytics-context-governance.md](context-architecture/self-service-analytics-context-governance.md) records analytics-specific context governance for canonical metrics, metadata, skills, and evals.
 - [source-workflows/index.md](source-workflows/index.md) is the hub for raw source handling, clippings, ingest, reconciliation, digests, and update feeds.
@@ -47,6 +55,7 @@
 - [verification-and-evals/code-review-evals-and-rubrics.md](verification-and-evals/code-review-evals-and-rubrics.md) records AI-assisted code review evals, reviewer rubrics, and source-backed review evidence.
 - [verification-and-evals/judge-grader-boundaries.md](verification-and-evals/judge-grader-boundaries.md) records deterministic grader, human review, and LLM-as-judge boundaries.
 - [verification-and-evals/representative-workflow-calibration.md](verification-and-evals/representative-workflow-calibration.md) records representative prompts, tool-call calibration, and local model drift checks.
+- [verification-and-evals/trajectory-level-agent-evaluation.md](verification-and-evals/trajectory-level-agent-evaluation.md) records trace, transcript, tool-call, state-transition, and intermediate-decision evidence for agent workflow evaluation.
 - [verification-and-evals/product-judgment-quality-gates.md](verification-and-evals/product-judgment-quality-gates.md) records product judgment gates, periodic health review, and pre-merge acceptance checks.
 - [application-patterns/index.md](application-patterns/index.md) is the hub for harness architecture, structured outputs, streaming, workflow state, and product controls.
 - [application-patterns/application-harness-patterns.md](application-patterns/application-harness-patterns.md) is the overview for harness design boundaries.
@@ -59,6 +68,8 @@
 - [governance-and-risk/governance-controls-for-agents.md](governance-and-risk/governance-controls-for-agents.md) records the overall local agent-control model.
 - [governance-and-risk/prompt-injection-and-untrusted-content.md](governance-and-risk/prompt-injection-and-untrusted-content.md) records how untrusted input stays separated from live instructions.
 - [governance-and-risk/agent-governance-infrastructure.md](governance-and-risk/agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and accountability as infrastructure concerns.
+- [governance-and-risk/agent-identity-and-delegated-authority.md](governance-and-risk/agent-identity-and-delegated-authority.md) records human requester, agent instance, connector identity, delegated scope, shared-channel context, and credential revocation practice.
+- [governance-and-risk/lifecycle-ai-review-gates.md](governance-and-risk/lifecycle-ai-review-gates.md) records AI review gates for requirements, PRDs, design inputs, acceptance criteria, and other pre-implementation artifacts.
 - [governance-and-risk/sensitive-data-and-supply-chain-controls.md](governance-and-risk/sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.
 - [governance-and-risk/ai-assisted-security-repair-gates.md](governance-and-risk/ai-assisted-security-repair-gates.md) records validation, maintainer consultation, patching, tests, CI, and disclosure gates for agent-assisted security work.
 - [governance-and-risk/prototype-to-cloud-promotion-gates.md](governance-and-risk/prototype-to-cloud-promotion-gates.md) records the promotion boundary for local prototypes that become hosted, shared, or data-bearing software.
@@ -70,6 +81,7 @@
 - [adoption-and-operating-model/durable-instructions-and-skill-files.md](adoption-and-operating-model/durable-instructions-and-skill-files.md) records how stable procedures move into durable instruction surfaces.
 - [adoption-and-operating-model/portable-agent-skills-and-runbooks.md](adoption-and-operating-model/portable-agent-skills-and-runbooks.md) records portable procedure skills, runbook composition, and proof standards as a local operating practice.
 - [adoption-and-operating-model/agent-cost-telemetry.md](adoption-and-operating-model/agent-cost-telemetry.md) records workflow-step cost tracing, subagent fan-out limits, and outcome-linked cost controls.
+- [adoption-and-operating-model/hybrid-agent-infrastructure-economics.md](adoption-and-operating-model/hybrid-agent-infrastructure-economics.md) records managed, subscription, self-hosted, and local execution economics as workflow-routing decisions.
 - [adoption-and-operating-model/tier-specific-assistant-conventions.md](adoption-and-operating-model/tier-specific-assistant-conventions.md) records how assistant behavior is specialized by work tier when evidence supports it.
 - [adoption-and-operating-model/outcome-alignment-and-process-autonomy.md](adoption-and-operating-model/outcome-alignment-and-process-autonomy.md) records the operating-model boundary between shared outcomes and team-owned process.
 - [adoption-and-operating-model/senior-led-agentic-execution-pods.md](adoption-and-operating-model/senior-led-agentic-execution-pods.md) records the small senior pod model for high-leverage agentic execution.
@@ -91,4 +103,18 @@
 - [raw/processed](../../raw/processed) holds fully processed source artifacts.
 - [Clippings](../../Clippings) holds human-saved source notes before review or ingest.
 - [Open Skills source](../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) captures local source material for portable procedures, skill primitives, runbook composition, and verification contracts.
+- [June 24 topic news collector source](../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) captures public downstream-practice signals for lifecycle review gates, agent observability, delegated authority, model-routing audit, MCP controls, tool-output trust, and trajectory evals.
+- [June 24 leaf update watch source](../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) captures public update signals for harness taxonomy, visible progress telemetry, diff-focused code review, and generated-code traceability.
+- [June 25 topic news collector source](../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) captures public downstream-practice signals for delegated work, AI review depth, marketplace governance, proprietary-code context bootstrapping, lifecycle review gates, agentjacking, and platform operating models.
+- [June 25 leaf update watch source](../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) captures public update signals for context engineering, durable instruction layers, governance infrastructure, non-human agent identity, credential brokers, prompt-injection controls, and runtime agent-security gates.
+- [June 26 topic news collector source](../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) captures public downstream-practice signals for model-policy governance, adoption metrics, worktree isolation, review depth, marketplace controls, runner controls, package-account protection, plugin consent, permission telemetry, and remote startup progress.
+- [June 26 leaf update watch source](../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) captures public update signals for KPR-style knowledge intake, deterministic control planes, prompt provenance, trace-linked evals, engineering-memory retrieval, BYO judge governance, and source routing.
+- [Affordable AI Agents source](../../raw/processed/The Affordable AI Agents.md) captures local operating-model signals for managed API, subscription, self-hosted, and local agent execution economics.
+- [Context management source](../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md), [context loss source](../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md), [context collapse source](../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md), and [lost-in-the-middle source](../../raw/processed/So Long and Thanks for All the Context.md) capture local context-state, handoff, acceptance-criterion, rehydration, and long-context placement practices.
+- [June 27 topic news collector source](../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) captures public downstream-practice signals for delegated agent work, model-routing evals, scoped code review retrieval, supply-chain gates, adoption telemetry, MCP security, agent eval agreement, and harness environment design.
+- [June 27 leaf update watch source](../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json) captures public update signals for cost monitoring, agent ownership cards, remote-agent supervision, and operating agreements.
+- [June 28 topic news collector source](../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) captures public downstream-practice signals for harness failure attribution, subagent configuration, instruction hooks, deterministic governance, data control, context history, and pricing-aware workflow routing.
+- [June 28 leaf update watch source](../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) captures public update signals for remote delegated work, semantic telemetry, harness boundaries, deterministic agent configuration, cost-sensitive verification, and accountable interface use.
+- [Harness engineering masterclass source](../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md), [Headroom context optimization source](../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md), and [agent evals source](../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md) capture clipping signals for harness primitive diagnostics, reversible context compression, context-optimization telemetry, cost controls, and agent-eval shape selection.
+- [July 1 topic news collector source](../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) and [July 1 leaf update watch source](../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) capture public downstream-practice signals for MCP metadata poisoning, team MCP catalogs, approved actions, task-intensity pricing, IDE-native agents, model refreshes, independent review, repeatability scoring, package and extension gates, malware-analysis prompt injection, and faceted retrieval.
 - [scripts](../../scripts) holds local helper scripts for source collection, validation, and inspection.

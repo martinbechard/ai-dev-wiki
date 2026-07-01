@@ -1,3 +1,10 @@
+---
+type: "Retrieval And Tools"
+title: "Code Retrieval Evidence Patterns"
+description: "Code retrieval for AI-assisted development needs semantic search, exact repository evidence, and runtime truth."
+tags: ["retrieval-and-tools"]
+---
+
 # Code Retrieval Evidence Patterns
 
 ## Current Understanding
@@ -8,6 +15,14 @@ Repository work should combine exact paths, symbols, tests, diffs, logs, and nea
 
 This page owns repository retrieval practice. General context packaging is tracked in [context engineering for request packages](../prompt-and-instructions/context-engineering-for-request-packages.md), and document RAG quality is tracked in [RAG provenance ranking and chunking](rag-provenance-ranking-and-chunking.md).
 
+The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) reinforces exact repository exploration as part of AI review quality. File exploration tools such as exact text search, path globs, and file viewing are not incidental implementation details; they are evidence-producing steps that should be visible when a review or coding agent claims it inspected the relevant code.
+
+The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add retrieval-depth and engineering-memory signals. AI review should expose depth settings and repository exploration paths, while team memory should include decisions, review discussions, linked tickets, and cross-file dependencies instead of relying on commit history alone.
+
+The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) adds a scoped-retrieval efficiency signal. Review and coding agents should avoid repository-wide context expansion when a targeted diff, symbol, test, and neighboring-call-site path can support the claim. Reduced context gathering is a quality control only when the resulting retrieval path remains inspectable.
+
+The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) reinforces the same pattern for larger corpora. Search-backed retrieval should identify candidate files or passages, then the agent should read targeted evidence before making code, review, or documentation claims. Reading every available file is a scalability and provenance risk when search, facets, and exact paths can narrow the working set.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -16,6 +31,12 @@ This page owns repository retrieval practice. General context packaging is track
 - Prefer current runtime evidence over plausible documentation when the two disagree.
 - Carry unresolved evidence gaps into Open Questions instead of turning guesses into wiki claims.
 - Keep broad product or model retrieval features upstream unless they change local repository practice.
+- Make the retrieval path inspectable for review claims: which files, symbols, globs, searches, diffs, and neighboring call sites supported the finding.
+- Capture decision history, review discussion, ticket context, and cross-file dependency evidence when they change review or implementation judgment.
+- Prefer scoped retrieval paths for code review and repair, then record enough evidence for reviewers to see why broader repository expansion was unnecessary.
+- Treat unnecessary context gathering as a cost and distraction risk when it does not add source evidence.
+- Use search and metadata filters to narrow large repositories or document corpora before reading exact source files.
+- Record the targeted reads that verified retrieved candidates so reduced context remains reviewable.
 
 ## Authoritative Sources
 
@@ -23,6 +44,11 @@ This page owns repository retrieval practice. General context packaging is track
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [context engineering for request packages](../prompt-and-instructions/context-engineering-for-request-packages.md)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
+- [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
+- [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
+- [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 
 ## Related Code
 
@@ -49,3 +75,7 @@ This page owns repository retrieval practice. General context packaging is track
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold code retrieval evidence practice apart from document RAG and tool execution.
+- Maintained on 2026-06-25 with explicit retrieval-path evidence for AI review and coding-agent claims.
+- Maintained on 2026-06-26 with review-depth settings, repository exploration paths, and engineering-memory retrieval signals.
+- Maintained on 2026-06-27 with scoped retrieval and context-gathering efficiency as review evidence controls.
+- Maintained on 2026-07-01 with search-backed corpus narrowing, metadata filters, targeted reads, and reviewable reduced-context evidence.

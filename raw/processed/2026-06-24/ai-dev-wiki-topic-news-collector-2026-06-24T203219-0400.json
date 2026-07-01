@@ -1,0 +1,511 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-06-24T20:32:19-04:00",
+  "cutoff_window": {
+    "start": "2026-06-22T20:32:19-04:00",
+    "end": "2026-06-24T20:32:19-04:00",
+    "rule": "Only sources with a visible publication or update date inside this window qualify. Missing, ambiguous, future-dated, or boundary-only dates are excluded."
+  },
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "local_scope": "AI-assisted development practice, including context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_scope": "Broad AI ecosystem entities, including companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques.",
+    "handling": "Entity updates are recorded as upstream-owned. This artifact keeps only the downstream practice implication or routing note."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "findings": [
+    {
+      "id": "2026-06-24-infoq-prd-code-review-governance",
+      "source_url": "https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/",
+      "source_title": "AI Is Moving up the Software Lifecycle: From Code Review to PRD Governance",
+      "visible_date": "Jun 24, 2026",
+      "summary": "InfoQ reports that AI review is moving earlier in the development lifecycle, from code review into PRD validation, design inputs, and structured engineering artifact review.",
+      "why_it_matters": "The local wiki should treat AI-assisted development as a full lifecycle governance pattern, not only a code generation or code review practice.",
+      "candidate_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "InfoQ",
+        "Uber",
+        "DoorDash",
+        "Cloudflare",
+        "PRD",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "Uber",
+        "DoorDash",
+        "Cloudflare"
+      ],
+      "federation_note": "Do not create local company pages. A future ingest pass can capture the local pattern of AI reviewing requirements and design artifacts before implementation.",
+      "follow_up_notes": [
+        "Consider a downstream lens on lifecycle-level AI review gates if multiple raw sources converge."
+      ]
+    },
+    {
+      "id": "2026-06-24-augment-agent-monitoring",
+      "source_url": "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "source_title": "AI Agent Monitoring: 2026 Observability Guide",
+      "visible_date": "Jun 24, 2026",
+      "summary": "Augment Code describes agent monitoring as trace-level telemetry over reasoning paths, tool calls, memory reads and writes, sub-agent handoffs, and state transitions because standard APM can miss semantic failures.",
+      "why_it_matters": "AI-assisted development practices need observability requirements for agent traces, not only build status, HTTP errors, or final outputs.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Augment Code",
+        "AI agent monitoring",
+        "agent observability",
+        "tool calls",
+        "sub-agent handoffs"
+      ],
+      "upstream_owned_entities": [
+        "Augment Code"
+      ],
+      "federation_note": "Keep Augment Code as upstream-owned product context. Local coverage should focus on trace and telemetry obligations for agent workflows.",
+      "follow_up_notes": [
+        "Useful evidence for a practice page on agent observability and audit trails."
+      ]
+    },
+    {
+      "id": "2026-06-23-anthropic-claude-tag",
+      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "source_title": "Introducing Claude Tag",
+      "visible_date": "Jun 23, 2026",
+      "summary": "Anthropic launched Claude Tag in Slack beta for Enterprise and Team customers, emphasizing shared channel context, delegated tasks, permissioned channel access, and collaborative continuity.",
+      "why_it_matters": "Team-facing coding agents are moving into shared work channels, so local practice guidance needs boundaries for channel memory, permissions, task handoff, and visible progress threads.",
+      "candidate_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Tag",
+        "Claude Code",
+        "Claude Enterprise",
+        "Claude Team",
+        "Slack"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Tag",
+        "Claude Code",
+        "Slack"
+      ],
+      "federation_note": "The product launch belongs upstream. Local synthesis should cover practice implications for multiplayer agent context and permissioned workspace memory.",
+      "follow_up_notes": [
+        "Watch for adoption examples showing how teams govern agents in shared communication channels."
+      ]
+    },
+    {
+      "id": "2026-06-24-github-copilot-auto-model-selection",
+      "source_url": "https://github.blog/changelog/2026-06-24-changes-to-model-selection-for-free-and-student-plans/",
+      "source_title": "Changes to model selection for Free and Student plans",
+      "visible_date": "June 24, 2026",
+      "summary": "GitHub changed Copilot Free and Student plans so auto model selection is the default and only model selection experience, dynamically routing tasks across model families within plan restrictions.",
+      "why_it_matters": "Model routing is becoming a tool policy decision rather than a per-user choice, which affects reproducibility, auditability, and how coding-agent results are interpreted.",
+      "candidate_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot auto model selection",
+        "Microsoft"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Microsoft",
+        "model families"
+      ],
+      "federation_note": "Keep Copilot product coverage upstream. Local practice implication is that model identity may be indirect and should be captured in evaluation and audit records when possible.",
+      "follow_up_notes": [
+        "Potential ingest target for a local page on routing-aware evaluation records."
+      ]
+    },
+    {
+      "id": "2026-06-24-github-credential-revocation",
+      "source_url": "https://github.blog/changelog/2026-06-24-self-service-credential-revocation-for-incident-response/",
+      "source_title": "Self-service credential revocation for incident response",
+      "visible_date": "June 24, 2026",
+      "summary": "GitHub added enterprise and self-service credential revocation flows for SSO authorizations, personal access tokens, SSH keys, and OAuth tokens, with audit logs and email notifications.",
+      "why_it_matters": "Agentic development increases the importance of rapid credential containment because coding agents can operate through developer tokens, SSH keys, OAuth grants, and connected tools.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Enterprise",
+        "SSO authorizations",
+        "personal access tokens",
+        "SSH keys",
+        "OAuth tokens",
+        "audit logs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Enterprise"
+      ],
+      "federation_note": "Do not duplicate GitHub feature coverage. Local synthesis can use this as evidence for incident-response requirements around agent-accessible credentials.",
+      "follow_up_notes": [
+        "Useful for a future governance page on break-glass credential response for coding-agent environments."
+      ]
+    },
+    {
+      "id": "2026-06-24-openai-codex-pricing-update",
+      "source_url": "https://openai.com/index/codex-flexible-pricing-for-teams/",
+      "source_title": "Codex now offers pay-as-you-go pricing for teams",
+      "visible_date": "Update on June 24, 2026",
+      "summary": "OpenAI updated an April Codex pricing announcement to say new Codex pay-as-you-go seats are no longer available for Business plans, while existing seats are unaffected.",
+      "why_it_matters": "Team adoption runbooks should avoid assuming that a previously available Codex seat or cost model remains available for new Business-plan users.",
+      "candidate_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Business",
+        "ChatGPT Enterprise",
+        "Codex-only seats"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Business",
+        "ChatGPT Enterprise"
+      ],
+      "federation_note": "Pricing and product availability are upstream-owned. Local implication is adoption planning risk when automation budgets or team pilots depend on seat mechanics.",
+      "follow_up_notes": [
+        "If ingested, keep this as a brief operating-model caveat rather than a product page."
+      ]
+    },
+    {
+      "id": "2026-06-23-snyk-agentic-development-risk",
+      "source_url": "https://snyk.io/blog/agentic-development-security-ai-coding-risk/",
+      "source_title": "What nearly 10,000 developer environments reveal about agentic development risk",
+      "visible_date": "June 23, 2026",
+      "summary": "Snyk reports that AI coding tool sprawl, MCP servers, and agent skills are already measurable supply-chain layers in developer environments, with findings around MCP risk, prompt injection in tool descriptions, and malicious patterns in skills.",
+      "why_it_matters": "The local wiki should treat coding-agent configuration, skills, tool manifests, and MCP connections as governed development supply-chain inputs rather than incidental editor settings.",
+      "candidate_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Snyk",
+        "Agentic Development Security",
+        "MCP",
+        "agent skills",
+        "prompt injection",
+        "AI coding environments"
+      ],
+      "upstream_owned_entities": [
+        "Snyk",
+        "MCP",
+        "agent skills as ecosystem artifact"
+      ],
+      "federation_note": "Keep Snyk and MCP broad coverage upstream. Local synthesis should focus on governance controls for agent configuration and instruction supply chains.",
+      "follow_up_notes": [
+        "Strong candidate for a future ingest pass into governance and prompt-instruction supply-chain leaves."
+      ]
+    },
+    {
+      "id": "2026-06-24-algolia-agent-evaluation",
+      "source_url": "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+      "source_title": "AI agent evaluation: frameworks and metrics that go beyond the benchmarks",
+      "visible_date": "Published: June 24, 2026",
+      "summary": "Algolia frames agent evaluation as assessment of full execution trajectories, including tool calls, reasoning steps, execution order, performance, reliability, safety, governance, and human review loops.",
+      "why_it_matters": "AI-assisted development evals should assess trajectories and intermediate decisions, not only final code, final answers, or benchmark scores.",
+      "candidate_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Algolia",
+        "AI agent evaluation",
+        "tool calls",
+        "human review",
+        "trace-based analysis"
+      ],
+      "upstream_owned_entities": [
+        "Algolia"
+      ],
+      "federation_note": "Do not create a local Algolia page. Use this only for local practice guidance on trajectory-level evals.",
+      "follow_up_notes": [
+        "Pairs with agent observability sources for a durable eval-loop page."
+      ]
+    },
+    {
+      "id": "2026-06-24-crowdstrike-agent-identity",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/the-identity-problem-hiding-in-ai-agent-deployments/",
+      "source_title": "The Identity Problem Hiding in AI Agent Deployments",
+      "visible_date": "June 24, 2026",
+      "summary": "CrowdStrike argues that OAuth access tokens lack standard identity context for agent instance identity and the relationship between an agent and the user it represents.",
+      "why_it_matters": "Agent governance needs identity and audit records that distinguish the human requester, the agent instance, delegated authority, and downstream tool actions.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "CrowdStrike",
+        "OAuth",
+        "JWT",
+        "RFC 9068",
+        "MCP",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        "CrowdStrike",
+        "OAuth",
+        "JWT",
+        "RFC 9068",
+        "MCP"
+      ],
+      "federation_note": "Standards and vendor background belong upstream. Local synthesis should capture agent identity as an audit and authorization practice requirement.",
+      "follow_up_notes": [
+        "Potential evidence for a local governance leaf on agent identity and delegated authority."
+      ]
+    },
+    {
+      "id": "2026-06-24-barndoor-mcp-gateway-controls",
+      "source_url": "https://barndoor.ai/blog-mcp-gateway-security-requirements/",
+      "source_title": "What Security Teams Should Require From an MCP Gateway",
+      "visible_date": "June 24, 2026",
+      "summary": "Barndoor describes MCP gateway controls for per-tool policy, per-user and per-group scoping, hosted tool catalog change detection, centralized audit logging, and data protection before tool responses reach a model.",
+      "why_it_matters": "MCP governance practice should be expressed as policy lifecycle, default-deny tool scoping, change review, and audit evidence rather than just whether a server is connected.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Barndoor AI",
+        "MCP gateway",
+        "IdP",
+        "SIEM",
+        "PII",
+        "PHI",
+        "PCI"
+      ],
+      "upstream_owned_entities": [
+        "Barndoor AI",
+        "MCP",
+        "MCP gateways",
+        "IdP",
+        "SIEM"
+      ],
+      "federation_note": "Keep vendor and protocol coverage upstream. Local synthesis should focus on control requirements for governed tool calls.",
+      "follow_up_notes": [
+        "Could feed a downstream practice page on MCP policy and audit controls."
+      ]
+    },
+    {
+      "id": "2026-06-24-digital-applied-agentjacking",
+      "source_url": "https://www.digitalapplied.com/blog/agentjacking-ai-coding-agent-mcp-attack-defense-guide",
+      "source_title": "Agentjacking: Your AI Coding Agent Can Be Hijacked",
+      "visible_date": "Published June 24, 2026",
+      "summary": "Digital Applied summarizes agentjacking as an attack pattern where malicious instructions hidden in externally controlled error data are retrieved through MCP and executed by a coding agent using legitimate credentials.",
+      "why_it_matters": "Coding-agent runbooks should treat tool output as untrusted data, gate shell execution, sandbox agents, and audit integrations that surface externally controlled content.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Digital Applied",
+        "Tenet Threat Labs",
+        "Agentjacking",
+        "Sentry",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "Codex",
+        "npm",
+        "AWS",
+        "SSH"
+      ],
+      "upstream_owned_entities": [
+        "Digital Applied",
+        "Tenet Threat Labs",
+        "Sentry",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "Codex",
+        "npm",
+        "AWS",
+        "SSH"
+      ],
+      "federation_note": "The attack class and affected products are upstream-owned. Local implication is runtime approval and trust-boundary practice for coding-agent tool output.",
+      "follow_up_notes": [
+        "Primary Tenet disclosure is older than the cutoff, so use the June 24 synthesis only as a current practice-routing source."
+      ]
+    },
+    {
+      "id": "2026-06-24-arize-long-horizon-benchmarks",
+      "source_url": "https://arize.com/blog/long-horizon-agent-benchmarks-field-guide/",
+      "source_title": "Long-horizon agent benchmarks are fragmenting: a field guide to what each one actually measures",
+      "visible_date": "Published June 24, 2026",
+      "summary": "Arize discusses fragmentation in long-horizon agent benchmarks and highlights that multi-step, tool-using agents require evaluation of the whole behavior trajectory, including incentives that can distort benchmark behavior.",
+      "why_it_matters": "Software engineering evals for coding agents should document what a benchmark measures, what incentives it creates, and whether it reflects local workflows, not just record leaderboard scores.",
+      "candidate_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Arize AI",
+        "OpenAI",
+        "Apollo Research",
+        "Agents' Last Exam",
+        "SWE-Marathon",
+        "Meta-Agent Challenge",
+        "Arena Agent Mode",
+        "Princeton"
+      ],
+      "upstream_owned_entities": [
+        "Arize AI",
+        "OpenAI",
+        "Apollo Research",
+        "Agents' Last Exam",
+        "SWE-Marathon",
+        "Meta-Agent Challenge",
+        "Arena Agent Mode",
+        "Princeton"
+      ],
+      "federation_note": "Benchmark entities belong upstream. Local synthesis should capture benchmark selection and interpretation practice for software engineering agents.",
+      "follow_up_notes": [
+        "Good candidate for verification-and-evals ingest alongside Algolia and Augment monitoring sources."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.datadoghq.com/state-of-ai-engineering/",
+      "source_title": "State of AI Engineering",
+      "visible_date": "No qualifying visible publication date found on opened page",
+      "reason": "Date was missing or ambiguous despite relevant content about production AI engineering, model routing, agent tracing, and evaluation loops."
+    },
+    {
+      "source_url": "https://www.langchain.com/state-of-agent-engineering",
+      "source_title": "State of AI Agents",
+      "visible_date": "No qualifying visible publication date found on opened page",
+      "reason": "Relevant survey content, but the opened page did not provide a clear publication or update date inside the cutoff window."
+    },
+    {
+      "source_url": "https://www.ardanlabs.com/workshops/practical-go-development-with-ai-agents/",
+      "source_title": "Practical Go Development with AI Agents",
+      "visible_date": "June 24th and 25th, 2026 event dates",
+      "reason": "The dates appear to be workshop schedule dates rather than a publication or visible update date."
+    },
+    {
+      "source_url": "https://www.workos.com/blog/mcp-2026-spec-agent-authentication",
+      "source_title": "The biggest MCP spec update ships July 28: What changes for AI agent authentication",
+      "visible_date": "June 18, 2026",
+      "reason": "Published before the 2-day cutoff window."
+    },
+    {
+      "source_url": "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
+      "source_title": "Google DeepMind prepares for rogue AI agents",
+      "visible_date": "June 18, 2026",
+      "reason": "Published before the 2-day cutoff window and primarily broad ecosystem governance owned upstream."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/enterprise-mcp-governance-control-audit-secure-mcp-server-access",
+      "source_title": "How to Control, Audit, and Secure MCP Server Access at Scale",
+      "visible_date": "Search result indicated last month",
+      "reason": "Outside the cutoff window; retained only as a possible older background source for an ingest run."
+    },
+    {
+      "source_url": "https://newsletter.pragmaticengineer.com/p/slow-down-to-speed-up",
+      "source_title": "Slow down to speed up: so much has changed in 6 months' time",
+      "visible_date": "Jun 23, 2026",
+      "reason": "Public preview is visible, but the main article is subscriber-gated. Excluded from this raw collector to keep evidence fully inspectable from public web content."
+    },
+    {
+      "source_url": "https://tenetsecurity.ai/blog/agentjacking-coding-agents-with-fake-sentry-errors/",
+      "source_title": "One Fake Bug Report Hijacked a 250 Billion Company's AI Agent - Then 100+ More",
+      "visible_date": "June 17, 2026",
+      "reason": "Primary source for agentjacking, but outside the cutoff window. A June 24 synthesis was recorded separately with a routing note."
+    },
+    {
+      "source_url": "https://www.augmentcode.com/tools/kiro-vs-warp",
+      "source_title": "Kiro vs Warp (2026): Spec-Driven IDE or Terminal ADE",
+      "visible_date": "Search result indicated yesterday",
+      "reason": "Opened page did not expose a clear publication or update date in the visible page content."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only. Do not move this artifact under raw/processed until a later ingest pass synthesizes it into docs/wiki and wiki lint passes.",
+    "Priority ingest cluster: agent observability, trajectory-level evals, agent identity, MCP policy controls, and instruction or tool supply-chain governance.",
+    "OpenAI, Anthropic, GitHub, Snyk, Augment Code, Algolia, CrowdStrike, Barndoor AI, Digital Applied, Arize AI, MCP, products, benchmarks, and standards named here remain upstream-owned entities unless the local wiki creates a downstream practice lens."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

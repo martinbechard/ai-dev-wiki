@@ -1,3 +1,10 @@
+---
+type: "Adoption And Operating Model"
+title: "Outcome Alignment And Process Autonomy"
+description: "Outcome alignment and process autonomy define how teams avoid both centralized process uniformity and unmanaged local variation."
+tags: ["adoption-and-operating-model"]
+---
+
 # Outcome Alignment And Process Autonomy
 
 ## Current Understanding
