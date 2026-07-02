@@ -1,0 +1,221 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-01T21:00:55-04:00",
+    "rule": "only sources published or visibly updated within the last 7 days; exclude missing, ambiguous, future-dated, or boundary-only dates",
+    "start": "2026-06-24T21:00:55-04:00",
+    "timezone": "America/Toronto"
+  },
+  "docs_wiki_updated": false,
+  "excluded_candidates": [
+    {
+      "reason": "Submitted before the 2026-06-24T21:00:55-04:00 cutoff, despite being search-visible as last week.",
+      "source_url": "https://arxiv.org/abs/2606.26185",
+      "visible_date": "2026-06-24T13:24:40Z"
+    },
+    {
+      "reason": "Exact published and modified dates are outside the 7-day window.",
+      "source_url": "https://deepeval.com/blog/llm-as-a-judge",
+      "visible_date": "published 2026-06-15, modified 2026-06-21T11:03:12Z"
+    },
+    {
+      "reason": "Outside the 7-day window.",
+      "source_url": "https://www.mindstudio.ai/blog/ai-agent-roster-team-ownership-card",
+      "visible_date": "2026-06-22 in search snippet"
+    },
+    {
+      "reason": "Outside the 7-day window.",
+      "source_url": "https://www.langchain.com/resources/ai-agent-frameworks",
+      "visible_date": "2026-06-06"
+    },
+    {
+      "reason": "In-window but broad legislative roundup did not produce a direct durable implication for the selected local leaves; broad governance/regulatory entity coverage is upstream-owned.",
+      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-june26-2026",
+      "visible_date": "2026-06-25"
+    },
+    {
+      "reason": "Aggregator entries were useful for discovery, but product-specific updates were broad ecosystem entity news or duplicated stronger primary/local-practice sources.",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/2026-june",
+      "visible_date": "2026-06-24 entries and 2026-06-25 entries"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity updates route to upstream AI wiki; this artifact records only downstream local practice implications.",
+    "upstream_owned_entities": [
+      "Ability.ai",
+      "EU AI Act",
+      "EUDAIMONIA",
+      "OpenEval",
+      "Openlayer",
+      "ResearchClawBench",
+      "TRACE",
+      "Taskade",
+      "Zendesk"
+    ]
+  },
+  "follow_up_notes": [
+    "Ingest qualifying updates through the normal raw-source workflow before editing docs/wiki.",
+    "Keep this watcher raw-only; do not move this artifact to raw/processed until synthesis is complete.",
+    "Use selected leaf ids as the durable local page targets if a later ingest pass accepts the updates."
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_updates": [
+    {
+      "date_evidence": "Page header shows June 25, 2026 and updated June 2026.",
+      "factual_summary": "Taskade describes agent evaluation as repeatable testing of both task outcome and trajectory, with regression suites, LLM-as-judge, and human review used to keep demos from being mistaken for working agents.",
+      "follow_up_note": "Ingest should keep Taskade as an upstream product reference and synthesize only the local eval-loop implication.",
+      "named_entities": [
+        "Taskade",
+        "Taskade Genesis",
+        "LLM-as-judge"
+      ],
+      "published_or_updated_at": "2026-06-25",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "source_url": "https://www.taskade.com/blog/agent-evals-explained",
+      "upstream_owned_entities": [
+        "Taskade"
+      ],
+      "why_it_matters_for_leaf": "Supports local eval leaves that distinguish outcome scores from trajectory review, and reinforces product-quality gates that rerun agent evals after changes."
+    },
+    {
+      "date_evidence": "Structured BlogPosting metadata reports datePublished and dateModified 2026-06-26T17:07:36.956Z.",
+      "factual_summary": "Openlayer frames agent governance around step-level evaluation, runtime guardrails, tool-call authorization, session-level monitoring, audit trails, and explicit block thresholds before risky actions execute.",
+      "follow_up_note": "Route broad vendor and regulation background upstream; local page should capture guardrail and approval-practice implications.",
+      "named_entities": [
+        "Openlayer",
+        "EU AI Act",
+        "LLM agents"
+      ],
+      "published_or_updated_at": "2026-06-26T17:07:36.956Z",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://www.openlayer.com/blog/post/ai-agent-governance-guide",
+      "upstream_owned_entities": [
+        "Openlayer",
+        "EU AI Act"
+      ],
+      "why_it_matters_for_leaf": "Strengthens local approval-boundary and operating-agreement leaves by treating authorization and audit records as runtime controls, not retrospective notes."
+    },
+    {
+      "date_evidence": "Article metadata reports article:published_time 2026-06-27 and JSON-LD datePublished/dateModified 2026-06-27T09:00:00Z.",
+      "factual_summary": "Ability.ai defines procedural debt as unmanaged, non-portable instructions and argues for portable agent skills and runbooks with trigger rules, boundaries, required tools, and verification standards.",
+      "follow_up_note": "Ingest should avoid duplicating vendor positioning and instead update the local practice around portable procedure ownership.",
+      "named_entities": [
+        "Ability.ai",
+        "AI agent skills",
+        "AI agent runbooks"
+      ],
+      "published_or_updated_at": "2026-06-27T09:00:00Z",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_url": "https://www.ability.ai/blog/procedural-debt-ai-agent-governance",
+      "upstream_owned_entities": [
+        "Ability.ai"
+      ],
+      "why_it_matters_for_leaf": "Directly supports durable instruction and portable runbook leaves, especially the need to preserve reusable procedures as project-owned artifacts instead of vendor-local prompts."
+    },
+    {
+      "date_evidence": "NewsArticle JSON-LD reports datePublished and dateModified 2026-06-26T13:54:57+00:00.",
+      "factual_summary": "The AI Evaluation June digest emphasizes item-level evaluation data, reusable agentic evaluation environments, simulation cost, observability attributes, and benchmark designs that expose evaluator dependence or hidden target tasks.",
+      "follow_up_note": "Route benchmark/entity background upstream; local synthesis should focus on reusable calibration and grader-boundary practice.",
+      "named_entities": [
+        "The AI Evaluation Substack",
+        "OpenEval",
+        "ResearchClawBench",
+        "EUDAIMONIA",
+        "TRACE"
+      ],
+      "published_or_updated_at": "2026-06-26T13:54:57+00:00",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "source_url": "https://aievaluation.substack.com/p/2026-june-ai-evaluation-digest",
+      "upstream_owned_entities": [
+        "OpenEval",
+        "ResearchClawBench",
+        "EUDAIMONIA",
+        "TRACE"
+      ],
+      "why_it_matters_for_leaf": "Gives the eval leaves current evidence for treating item-level data, environment reuse, and evaluator-dependence caveats as first-class calibration concerns."
+    },
+    {
+      "date_evidence": "Page header shows Announced on June 25, 2026 with rollout starting July 1, 2026.",
+      "factual_summary": "Zendesk announces a migration for AI agent knowledge sources and search rules, including locale-scope changes, automatic connector handling for hidden content, and CSV-import limitations during the migration.",
+      "follow_up_note": "Keep Zendesk as an upstream product entity; local implication belongs in source reconciliation and routing practice.",
+      "named_entities": [
+        "Zendesk",
+        "AI agents Advanced add-on",
+        "Zendesk connector"
+      ],
+      "published_or_updated_at": "2026-06-25",
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "source_url": "https://support.zendesk.com/hc/en-us/articles/10887725757210-Announcing-updates-to-knowledge-sources-and-search-rules-in-AI-agents",
+      "upstream_owned_entities": [
+        "Zendesk"
+      ],
+      "why_it_matters_for_leaf": "Concrete public example of why source routing must preserve access scope, connector semantics, and migration state when agents retrieve from knowledge sources."
+    }
+  ],
+  "run_timestamp": "2026-07-01T21:00:55-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "source_urls_checked": [
+    "https://www.taskade.com/blog/agent-evals-explained",
+    "https://www.openlayer.com/blog/post/ai-agent-governance-guide",
+    "https://www.ability.ai/blog/procedural-debt-ai-agent-governance",
+    "https://aievaluation.substack.com/p/2026-june-ai-evaluation-digest",
+    "https://support.zendesk.com/hc/en-us/articles/10887725757210-Announcing-updates-to-knowledge-sources-and-search-rules-in-AI-agents",
+    "https://www.transparencycoalition.ai/news/ai-legislative-update-june26-2026",
+    "https://arxiv.org/abs/2606.26185",
+    "https://deepeval.com/blog/llm-as-a-judge",
+    "https://www.mindstudio.ai/blog/ai-agent-roster-team-ownership-card",
+    "https://www.langchain.com/resources/ai-agent-frameworks",
+    "https://aiagentstore.ai/ai-agent-news/2026-june"
+  ]
+}
