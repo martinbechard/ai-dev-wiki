@@ -27,6 +27,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) and [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) add dependency, extension, and sample-analysis signals. Agent-authored package installs, IDE extension use, MCP server metadata, malware samples, reverse-engineering artifacts, and tool-supplied sensitive records are all supply-chain or sensitive-data surfaces. The local acceptance rule is to review provenance, necessity, lockfiles, account security, data classification, and tool parameter leakage before an agent can install, publish, analyze, or exfiltrate through a connected tool.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds managed-setting, visual-context, and model-enablement signals. Enterprise plugin controls, bypass-permission modes, browser tools, model enablement policies, image and PDF attachments, and remote admin MCP servers are supply-chain or sensitive-data controls when they affect what an agent can see or do. The local rule is to review tool provenance, attachment sensitivity, retention terms, model approval, and action scope before enabling those surfaces for team workflows.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -46,6 +48,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Reject tool paths that obscure data retention, ownership, or auditability for development context unless the human explicitly accepts the risk.
 - Review IDE extensions, MCP tool metadata, package registries, malware-analysis artifacts, and tool parameters as supply-chain or sensitive-data surfaces when agents can read or act through them.
 - Apply DLP, source classification, and human approval to tool arguments that could carry sensitive records out through otherwise approved actions.
+- Review managed plugin settings, bypass modes, browser tooling, visual attachments, model enablement, and remote MCP administration as supply-chain or data-control changes.
+- Record retention and sensitivity decisions for screenshots, PDFs, architecture images, logs, and other multimodal context before they are sent to a hosted assistant.
 
 ## Authoritative Sources
 
@@ -61,6 +65,7 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -98,3 +103,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-27 with unverified workflow-action and package-account review gates for agent-generated changes.
 - Maintained on 2026-06-28 with data-control gates for source, logs, reviews, and private development context.
 - Maintained on 2026-07-01 with package, IDE extension, MCP metadata, malware-analysis, and tool-parameter controls for agent workflows.
+- Maintained on 2026-07-01 with managed plugin settings, bypass modes, browser tools, visual attachments, model enablement, and remote admin MCP controls.

@@ -23,6 +23,8 @@ The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-d
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds independent verification and repeatability signals. The generator should not be the sole formal reviewer of its own output, and agentic security review should be evaluated across repeated runs. Rubrics should separate reference-matched findings from exploratory findings so unstable extra issues do not look like dependable coverage.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) and [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) reinforce review independence and trajectory evaluation. Code review evals should score whether the reviewer inspects the path to the change, not only the final diff, and whether repeated reviews converge on source-backed risks. Outcome scores, step-level traces, human review, and LLM-as-judge outputs should be kept distinct so a fluent positive review does not erase missing evidence.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -38,6 +40,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Track independent-reviewer agreement and disagreement when calibrating review rubrics or model routing.
 - Separate generation, review, test, and approval roles when the eval represents a formal review gate.
 - Measure repeatability across repeated agentic security-review runs, distinguishing reference-matched findings from variable exploratory findings.
+- Grade review traces for evidence collection, tool-use discipline, and risk escalation before accepting the final review summary.
+- Keep human review, deterministic checks, and LLM-as-judge scores separate when calibrating code review quality.
 
 ## Authoritative Sources
 
@@ -50,6 +54,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 
 ## Related Code
 
@@ -80,3 +86,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-26 with prompt provenance, review-depth settings, retrieval path, and knowledge-package acceptance boundaries.
 - Maintained on 2026-06-27 with targeted-retrieval comparison cases and independent-reviewer agreement signals.
 - Maintained on 2026-07-01 with independent verification-layer boundaries and repeatability scoring for AI security review.
+- Maintained on 2026-07-01 with trajectory-level review traces, repeated-review convergence, and separated human, deterministic, and judge signals.

@@ -19,6 +19,8 @@ The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-d
 
 The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) and [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) add hook and control-plane evidence. Durable instructions are safer when lifecycle hooks, deterministic validation, provenance checks, permission constraints, and tool-scope checks enforce the intended hierarchy instead of relying on every prompt to repeat the controls.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds enterprise-managed settings as another instruction boundary. Organization-level assistant configuration, plugin controls, model defaults, and bypass-permission settings are durable policy artifacts. They should be treated as higher-authority operating controls than user preferences, while still remaining separate from source evidence, retrieved content, and one-off task prompts.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -30,6 +32,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - Record unresolved hierarchy conflicts as open questions instead of hiding them inside a prompt.
 - Use issue, RFC, skill, instruction, and MCP evidence as separate artifacts with explicit authority so agents know what directs behavior and what only informs it.
 - Pair durable instructions and agent definitions with hooks, provenance validation, permission constraints, and tool-scope checks when those artifacts can affect code or delivery systems.
+- Treat enterprise-managed assistant settings and model defaults as durable policy artifacts, not as ordinary task-prompt content.
+- Keep managed policy files, repository procedures, reusable skills, and source evidence distinct when they all appear in the same request package.
 
 ## Authoritative Sources
 
@@ -42,6 +46,7 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 
 ## Related Code
 
@@ -72,3 +77,4 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.
 - Maintained on 2026-06-25 with Agent Experience and plugin-SDLC artifact boundaries across instructions, skills, MCP surfaces, issues, and RFCs.
 - Maintained on 2026-06-28 with hook-based instruction enforcement and deterministic agent-configuration validation.
+- Maintained on 2026-07-01 with enterprise-managed settings, model defaults, plugin controls, and bypass-permission settings as durable policy artifacts.

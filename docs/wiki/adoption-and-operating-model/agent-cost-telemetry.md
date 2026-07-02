@@ -27,6 +27,8 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds context-depth pricing evidence. Token-rate and provider-inference pricing make task intensity visible: logs, deployments, configuration, runtime data, model routing, sandboxing, and execution depth can all change cost. Cost reports should therefore attach spend to the investigation depth and evidence collected, not only to the count of agent requests.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds session and cost-center budget controls. Session credit limits, per-user cost-center budgets, auto model selection, and model-specific billing turn cost telemetry into an active workflow guardrail. The local practice is to set expected spend envelopes before a run, record when a routed model or browser/tool loop changed cost, and review budget stops as workflow signals rather than treating them only as finance controls.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -45,6 +47,9 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Compare tool pricing against accepted outcomes, risk reduction, and reviewer effort rather than nominal subscription or token price alone.
 - Track compression savings, cache-hit behavior, fallback retrievals, and latency alongside quality so cost reduction does not hide degraded task performance.
 - Attribute token-rate agent spend to context retrieval, log joining, sandboxing, execution depth, model routing, and accepted outcome.
+- Set session-level and owner-level spend envelopes for long-running or delegated agent work.
+- Record model-routing, browser-tool, and tool-orchestration choices when they explain cost variance.
+- Treat budget exhaustion as evidence that the task scope, model route, or verification loop needs review.
 
 ## Authoritative Sources
 
@@ -60,6 +65,7 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 
 ## Related Code
 
@@ -92,3 +98,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-28 with tool-pricing, feature-gate, verifier-cost, and review-burden signals.
 - Maintained on 2026-06-30 with context-compression cost telemetry, cache behavior, latency, and quality guardrails.
 - Maintained on 2026-07-01 with token-rate task-intensity pricing, context-depth attribution, and execution-depth cost evidence.
+- Maintained on 2026-07-01 with session credit limits, cost-center budgets, auto routing, and budget stops as workflow telemetry.

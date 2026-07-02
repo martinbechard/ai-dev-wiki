@@ -19,6 +19,8 @@ The [workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team
 
 The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json) adds a public security-control lens: autonomy should increase through verified behavior, sandboxing, monitoring, containment, and incremental permissions rather than one-time trust. Approval boundaries should distinguish low-risk drafting or inspection from actions that expand tool access, touch sensitive systems, or create external effects.
 
+The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) adds runtime authorization and audit signals. Approval boundaries should include step-level guardrails, tool-call authorization, session monitoring, explicit block thresholds, and audit trails before risky actions execute. A team should treat those controls as part of the approval boundary itself, not as documentation after an agent has already acted.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -28,6 +30,8 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 - Start recurring team agents on known-path work with a visible reviewer and a clear output standard.
 - Reject or redesign agents whose workflow is too ambiguous for the owner to describe in one paragraph.
 - Escalate permissions progressively from observed behavior, verification evidence, and sandbox results.
+- Define block thresholds, approval checkpoints, audit trails, and session monitoring before agents can cross from inspection into mutation.
+- Treat tool-call authorization as a runtime approval boundary when an action can affect code, data, costs, or external systems.
 
 ## Authoritative Sources
 
@@ -38,6 +42,7 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 - [Workspace agents source](../../../raw/processed/OpenAI Just Gave Every Team A Free Employee. Here's The Catch..md)
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
+- [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 
 ## Related Code
 
@@ -68,3 +73,4 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 
 - Created on 2026-06-23 from source-backed approval, delegation, and human-accountability guidance.
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
+- Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.

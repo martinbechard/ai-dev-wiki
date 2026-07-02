@@ -29,6 +29,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds IDE-native agent and model-update signals. Agent picker defaults, native versus protocol-based integration, authentication path, command availability, reasoning depth, and model availability are workflow settings. They should trigger local task-fit evals and operating-policy review before a team expands delegation or changes defaults.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds task-routed model selection and multimodal context signals. Auto model selection, prompt-cache behavior, reasoning depth, CLI task features, browser-tool verification, image or PDF attachments, and IDE-native agent availability should be evaluated against the workflow before becoming defaults. A team should know when to rely on auto routing, when to pin a model for repeatability, and when visual or browser context is allowed by data and evidence rules.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -45,6 +47,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Map pricing model, feature gates, context limits, hook support, data-control boundaries, and verification cost before choosing an assistant surface.
 - Treat IDE-native agents, protocol-based agents, authentication paths, command surfaces, reasoning-depth controls, and model upgrades as workflow-policy inputs.
 - Rerun representative local coding, terminal, browser, and verification tasks before changing autonomy defaults for a new model or assistant surface.
+- Decide when auto model selection is acceptable and when repeatability, cost, data policy, or review depth requires a pinned route.
+- Include browser-driven verification and multimodal input handling in workflow selection when the task depends on rendered UI, PDFs, screenshots, or live applications.
 
 ## Authoritative Sources
 
@@ -60,6 +64,7 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 
 ## Related Code
 
@@ -96,3 +101,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-27 with delegation, intervention-mode, and multi-model routing checks.
 - Maintained on 2026-06-28 with pricing, context-window, hook, data-control, and verification-cost inputs to workflow selection.
 - Maintained on 2026-07-01 with IDE-native agent surfaces, command routing, authentication path, reasoning-depth, and model-upgrade eval triggers.
+- Maintained on 2026-07-01 with auto model routing, prompt-cache, browser-tool, and multimodal context inputs to workflow selection.

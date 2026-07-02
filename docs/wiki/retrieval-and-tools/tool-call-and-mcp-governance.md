@@ -27,6 +27,8 @@ The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-d
 
 The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) and [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) add tool-metadata and catalog-governance signals. Tool descriptions, Team MCP catalogs, organization groups, agent pickers, CLI surfaces, and approved integration marketplaces are instruction-bearing supply-chain inputs. A critical agent should not consume changed tool metadata, new server entries, or newly available command surfaces without provenance review, group scope, and re-approval when the action surface changes.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) and [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md) add two governed-MCP boundaries. Browser-driving tools and remote MCP servers that can administer accounts, audit-log streams, or production-adjacent systems should be classified as privileged action surfaces with explicit scope, approval, and evidence requirements. FastMCP-style OpenAPI or FastAPI conversion is useful implementation context, but the local practice is to review the resulting tool surface as a designed least-privilege interface rather than exposing every route because a framework can generate it.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -47,6 +49,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Require least privilege, explicit allowlists, data-boundary checks, audit trails, and approval gates for MCP tools that can change code, dependencies, infrastructure, or external records.
 - Treat tool descriptions and MCP catalog metadata as live instructions that need review, provenance, and change detection before they reach acting agents.
 - Govern IDE, CLI, cloud-agent, and marketplace tool availability with the same policy when they expose the same approved integration.
+- Treat browser control, admin-capable remote MCP tools, and generated API-to-MCP surfaces as privileged tool categories that need allowlists, explicit approval, and auditable outcomes.
+- Curate generated MCP tools for task fit, least privilege, schema clarity, and data exposure before allowing agents to use them.
 
 ## Authoritative Sources
 
@@ -63,6 +67,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md)
 
 ## Related Code
 
@@ -98,3 +104,4 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Maintained on 2026-06-26 with plugin consent, permission-denial evidence, deterministic control-plane artifacts, and tamper-evident tool logs.
 - Maintained on 2026-06-27 with MCP least-privilege, allowlist, audit, data-boundary, and approval-gate practice.
 - Maintained on 2026-07-01 with tool-description poisoning, Team MCP catalog, organization-scope, and native agent command-surface governance.
+- Maintained on 2026-07-01 with browser-tool, admin-capable remote MCP, and generated API-to-MCP curation boundaries.

@@ -31,6 +31,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) adds a production-adjacent approved-action pattern. Read-only default access, separate agent identity, requester-bounded permissions, scoped remediation plans, sandbox validation, and attribution to agent, requester, and approver should be inspectable control-plane evidence before an agent changes deployment, runtime, cost, or infrastructure state.
 
+The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds enterprise configuration and budget-policy signals. Managed assistant settings, model defaults, plugin marketplace controls, bypass-permission modes, browser-tool availability, session credit limits, cost-center budgets, and model enablement should be treated as governed control-plane artifacts. They need ownership, review cadence, override visibility, and audit evidence because they determine which agent surfaces can act, which model runs, and how much work a session can consume.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -54,6 +56,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintain continuous inventory and behavioral monitoring for agent identities, credentials, connectors, and tool surfaces.
 - Prefer execution paths that preserve established approval, escalation, and audit artifacts when agents operate in enterprise workflows.
 - Default production-adjacent agents to read-only investigation until a scoped plan, sandbox validation result, requester authority, and approver attribution are recorded.
+- Treat managed settings, model policies, plugin marketplace controls, browser-tool enablement, and budget caps as policy-owned infrastructure rather than personal editor preferences.
+- Record override, bypass, and model-default decisions when they affect authority, cost, repeatability, or review evidence.
 
 ## Authoritative Sources
 
@@ -72,6 +76,7 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 
 ## Related Code
 
@@ -111,3 +116,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-28 with deterministic governance boundaries and data-control gates for external AI capability.
 - Maintained on 2026-06-29 with guardian-agent identity controls, deterministic guardrails, observability, escalation, and UI-first audit preservation.
 - Maintained on 2026-07-01 with read-only default investigation, scoped approved actions, sandbox validation, and agent-requester-approver attribution.
+- Maintained on 2026-07-01 with enterprise managed settings, model defaults, plugin controls, browser-tool enablement, and budget caps as control-plane evidence.

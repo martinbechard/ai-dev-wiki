@@ -15,6 +15,8 @@ A local skill should be narrower than a broad operating manual. It should name t
 
 Runbooks compose skills into reliable workflows. A skill answers what one reusable capability does, while a runbook defines the sequence that produces a larger outcome. The downstream practice is to keep skill primitives small, keep runbooks explicit, and route both through the correct scope: personal procedures stay personal, project procedures stay with the repository, and shared team procedures belong in a controlled team source of truth.
 
+The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) reinforces procedural debt as an operating risk. Portable skills and runbooks should record trigger rules, boundaries, required tools, ownership, and verification standards in a reusable artifact rather than leaving procedure inside a single vendor workspace, chat history, or personal prompt collection.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -23,6 +25,8 @@ Runbooks compose skills into reliable workflows. A skill answers what one reusab
 - Use runbooks when multiple skills must be composed into an outcome that needs handoff, publishing, release, research, or review.
 - Treat verification as part of the skill contract, not as optional completion prose.
 - Keep Open Skills as source evidence for the local practice lens; broad ecosystem tracking for agent tools and product catalogs remains upstream.
+- Store recurring procedures where the team can review ownership, trigger rules, tool requirements, and verification expectations.
+- Avoid vendor-local procedure drift by keeping portable runbooks aligned with project or team source-of-truth rules.
 
 ## Authoritative Sources
 
@@ -30,6 +34,7 @@ Runbooks compose skills into reliable workflows. A skill answers what one reusab
 - [durable instructions and skill files](durable-instructions-and-skill-files.md)
 - [instruction hierarchy and artifact boundaries](../prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md)
 - [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md)
+- [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 
 ## Related Code
 
@@ -57,3 +62,4 @@ Runbooks compose skills into reliable workflows. A skill answers what one reusab
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source-backed guidance on portable procedures, runbook composition, scope boundaries, procedural debt, and proof standards for agent work.
+- Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.

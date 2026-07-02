@@ -17,6 +17,10 @@ Federation is part of routing. The upstream AI wiki owns broad ecosystem entitie
 
 The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) adds a knowledge-package routing pattern. Knowledge-based pull requests treat external collaborator code, tests, and cleaned agent traces as evidence packages that the receiving project reviews, regenerates, and verifies under local policy. The local implication is to separate knowledge intake from implementation acceptance instead of merging foreign agent output directly.
 
+The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) adds knowledge-source migration evidence. Search-rule, connector, locale, hidden-content, and CSV-import changes can alter what an agent can retrieve even when the visible workflow name stays the same. Source reconciliation should therefore preserve migration state, connector semantics, access scope, and excluded-source limitations when routing agent knowledge sources.
+
+The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md) is routed as broad framework coverage for the upstream AI wiki and as a local governed-MCP practice signal. If the upstream wiki later creates a FastMCP entity leaf, local pages should link to that owner and keep only the downstream tool-surface curation guidance.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -26,6 +30,8 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 - Link or route upstream-owned ecosystem entities through [federation.md](../federation.md) instead of creating duplicate local encyclopedia leaves.
 - Keep local leaves focused on downstream practice, workflow, governance, evaluation, implementation, and adoption implications.
 - Treat external agent artifacts as source evidence that must be routed, regenerated, and verified before becoming local implementation.
+- Preserve connector semantics, locale scope, hidden-content handling, migration state, and source exclusions when ingesting knowledge-source changes.
+- Route broad framework entities upstream while keeping only local practice implications in this wiki.
 
 ## Authoritative Sources
 
@@ -36,6 +42,8 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 - [project-wiki source priority reference](/Users/martinbechard/.codex/skills/project-wiki/references/source-priority.md)
 - [upstream AI wiki topic index](../../../upstream-ai-wiki/topic-index.md)
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
+- [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md)
 
 ## Related Code
 
@@ -65,3 +73,4 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 
 - Created on 2026-06-23 to separate authority order, source conflict handling, synonym normalization, and federation routing from the broader source-workflows hub.
 - Maintained on 2026-06-26 with knowledge-package routing that separates external agent evidence from local implementation acceptance.
+- Maintained on 2026-07-01 with knowledge-source migration semantics and FastMCP upstream routing.
