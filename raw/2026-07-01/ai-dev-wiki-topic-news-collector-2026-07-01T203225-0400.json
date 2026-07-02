@@ -1,0 +1,465 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-01T20:32:25-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "window_start": "2026-06-29T20:32:25-04:00",
+    "window_end": "2026-07-01T20:32:25-04:00",
+    "policy": "Include only public sources with visible publication or update dates inside the last two days. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "source": "docs/wiki/federation.md",
+    "local_scope": "AI-assisted development practice, context architecture, guidance structure, agent workflows, verification, governance, and adoption patterns.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "handling_rule": "Record upstream-owned entities by name, then keep the local note to practice implications or routing."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "search_queries": [
+    "AI coding agent evaluation code review July 1 2026",
+    "AI assisted development context engineering July 1 2026",
+    "MCP governance permissions audit logs coding agents July 1 2026",
+    "AI code review TDD agent workflows June 30 2026",
+    "site:github.blog/changelog GitHub Copilot coding agent July 1 2026",
+    "site:cursor.com/changelog July 1 2026 agent review",
+    "site:github.blog/changelog/2026-07-01 Enterprise managed-settings.json",
+    "site:github.blog/changelog/2026-07-01 Copilot CLI auto model selection routes based on task",
+    "site:github.blog/changelog/2026-06-30 Copilot Agent is now available in JetBrains AI Assistant",
+    "site:github.blog/changelog/2026-06-30 Claude Sonnet 5 is generally available for GitHub Copilot"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Enterprise managed-settings.json becomes generally available for Copilot clients",
+      "source_url": "https://github.blog/changelog/2026-07-01-enterprise-managed-settings-json-is-generally-available/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "GitHub Enterprise Cloud customers can maintain a managed-settings.json file in a .github-private repository to enforce supported Copilot configuration keys across VS Code and Copilot CLI, including plugin marketplace controls, plugin enablement, bypass-permissions mode, and model selection.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable agent instructions and tool permissions are moving from local preference files toward centrally governed configuration. Local guidance should treat enterprise instruction and plugin policy files as part of the AI development control plane, not just editor setup.",
+      "named_entities": [
+        "GitHub Copilot",
+        "GitHub Enterprise Cloud",
+        "VS Code",
+        "Copilot CLI",
+        "managed-settings.json",
+        ".github-private"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code"
+      ],
+      "local_practice_implication": "Add to governed instructions and permissions coverage: enterprise configuration precedence can override user file-based settings and should be visible during agent workflow review."
+    },
+    {
+      "title": "Enterprises can default Copilot to auto model selection",
+      "source_url": "https://github.blog/changelog/2026-07-01-enterprises-can-default-to-auto-model-selection",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "Enterprise administrators can set the model key to auto in managed-settings.json so new Copilot conversations start with auto model selection by default, while users can still switch models per conversation.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model choice is becoming a governed default rather than a purely individual prompt-time decision. Practice guidance should separate enterprise defaults, user overrides, and task-specific model escalation criteria.",
+      "named_entities": [
+        "GitHub Copilot",
+        "managed-settings.json",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Route to adoption and governance notes about model-policy ownership, override logging, and how teams decide when to pin a model instead of relying on auto."
+    },
+    {
+      "title": "Copilot CLI auto model selection routes by task",
+      "source_url": "https://github.blog/changelog/2026-07-01-copilot-cli-auto-model-selection-routes-based-on-task/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Copilot CLI auto model selection uses model availability, reliability, task dimensions such as reasoning and code-generation complexity, bug diagnosis difficulty, and tool orchestration needs to select a model. It respects admin policies and bills based on the selected model.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model routing is being framed around task features, cache boundaries, reliability, and cost. Local model-selection guidance should account for workflow classification and cost telemetry, not only model capability rankings.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "auto model selection",
+        "AI credits"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Capture task-based routing criteria as a practice pattern for agent orchestration and cost-aware context design."
+    },
+    {
+      "title": "AI credit session limits land in Copilot CLI and SDK public preview",
+      "source_url": "https://github.blog/changelog/2026-07-01-set-ai-credit-session-limits-in-copilot-cli-and-sdk/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub made session limits available in public preview for Copilot CLI 1.0.66 and later and Copilot SDK 1.0.5 and later, giving users a way to cap AI credit use during a CLI or SDK session.",
+      "why_it_matters_for_ai_assisted_development_practice": "Long-running coding agents need explicit spend and effort guardrails at the session boundary. This supports local patterns for budgeted agent runs, stop conditions, and escalation when a task exceeds its expected cost envelope.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot SDK",
+        "AI credits"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Use as evidence for session-level run budgets in agent workflow governance and operating model pages."
+    },
+    {
+      "title": "Browser tools for GitHub Copilot in VS Code reach general availability",
+      "source_url": "https://github.blog/changelog/2026-07-01-browser-tools-for-github-copilot-in-vs-code-are-generally-available/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub Copilot browser tools in VS Code are generally available. Agents can drive a real browser, navigate live web apps, and feed findings back into chat, with user and enterprise control sections called out by the announcement.",
+      "why_it_matters_for_ai_assisted_development_practice": "Browser-driving agents expand verification beyond static code edits into live application inspection. Local practice notes should connect browser permissions, network-domain controls, screenshot evidence, and UI regression checks.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "browser tools",
+        "Agents window"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code"
+      ],
+      "local_practice_implication": "Route to tool-call practice and verification leaves: browser access should be treated as a privileged tool surface with evidence requirements."
+    },
+    {
+      "title": "Copilot vision becomes generally available",
+      "source_url": "https://github.blog/changelog/2026-07-01-copilot-vision-is-generally-available/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub Copilot vision is generally available across VS Code chat, github.com Copilot Chat, and Copilot CLI. GitHub states that Business and Enterprise image and PDF attachments are retained for approximately 24 hours to provide the service.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multimodal context ingestion adds a data-retention and evidence-handling dimension to AI-assisted development. Teams need rules for when screenshots, PDFs, architecture images, and issue attachments are appropriate inputs.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot vision",
+        "VS Code",
+        "Copilot CLI"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code"
+      ],
+      "local_practice_implication": "Governance pages should treat visual attachments as context artifacts with retention, sensitivity, and review boundaries."
+    },
+    {
+      "title": "Kimi K2.7 Code becomes generally available in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "Kimi K2.7 Code is now a selectable open-weight model in GitHub Copilot. It rolls out first to individual plans, with Business and Enterprise access off by default until administrators enable the policy.",
+      "why_it_matters_for_ai_assisted_development_practice": "Open-weight model availability inside managed coding tools raises model approval, compliance review, and task fit questions. The local wiki should route model background upstream but capture the enterprise enablement and risk-review practice.",
+      "named_entities": [
+        "Kimi K2.7 Code",
+        "GitHub Copilot",
+        "Microsoft Azure",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ],
+      "upstream_owned_entities": [
+        "Kimi K2.7 Code",
+        "GitHub Copilot",
+        "Microsoft Azure",
+        "GitHub"
+      ],
+      "local_practice_implication": "Keep model facts upstream; locally capture the policy pattern: off-by-default model enablement plus security, compliance, and data-governance review before team rollout."
+    },
+    {
+      "title": "Claude Sonnet 5 becomes generally available for GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot/",
+      "visible_date": "June 30, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub added Claude Sonnet 5 to Copilot across IDE, CLI, cloud agent, mobile, and other surfaces, citing coding, CLI-style tasks, prompt-cache utilization, and lower-effort latency. Business and Enterprise administrators can enable access through model policy settings.",
+      "why_it_matters_for_ai_assisted_development_practice": "The announcement ties model selection to task surface, prompt-cache behavior, effort level, and enterprise policy. Local guidance should treat model choice as part of workflow design and not as a one-time product preference.",
+      "named_entities": [
+        "Claude Sonnet 5",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent",
+        "Zero Data Retention"
+      ],
+      "upstream_owned_entities": [
+        "Claude Sonnet 5",
+        "Anthropic",
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "local_practice_implication": "Route broad model details upstream; locally capture the model-policy, task-surface, and prompt-cache implications for cost and reliability."
+    },
+    {
+      "title": "Copilot Agent becomes available in JetBrains AI Assistant",
+      "source_url": "https://github.blog/changelog/2026-06-30-copilot-agent-is-now-available-in-jetbrains-ai-assistant/",
+      "visible_date": "June 30, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub and JetBrains made Copilot Agent a first-class option in JetBrains AI Assistant, including model selection and reasoning-depth controls inside AI chat. The roadmap mentions Next Edit Suggestions, Skills, and deeper orchestration across tools.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding agents are becoming IDE-native orchestration surfaces rather than standalone chat or CLI tools. Local practice should track how teams standardize handoffs, model depth, reusable skills, and review across IDEs.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot Agent",
+        "JetBrains AI Assistant",
+        "Next Edit Suggestions",
+        "Skills"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains",
+        "JetBrains AI Assistant"
+      ],
+      "local_practice_implication": "Use as practice evidence for IDE-native agent workflows, cross-tool orchestration, and team training around agent entry points."
+    },
+    {
+      "title": "Per-user AI credit budgets become available for GitHub cost centers",
+      "source_url": "https://github.blog/changelog/2026-06-30-per-user-ai-credit-budgets-available-for-cost-centers/",
+      "visible_date": "June 30, 2026",
+      "source_type": "vendor changelog",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub Enterprise admins can create a per-user AI credit budget scoped to a cost center through the REST API. The budget follows cost center membership and can stop usage before the included usage pool is exhausted.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption of coding agents increasingly depends on budget shape, membership synchronization, and spend limits. Operating-model guidance should define how teams fund heavy agent users without hiding cost overruns.",
+      "named_entities": [
+        "GitHub Copilot",
+        "AI credits",
+        "cost centers",
+        "REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Route to adoption economics and governance: cost-center budgets are a concrete mechanism for team-level AI usage policy."
+    },
+    {
+      "title": "Futurum argues coding agents need an independent review layer",
+      "source_url": "https://futurumgroup.com/insights/why-ai-coding-agents-need-an-independent-review-layer-trust-not-output-is-the-bottleneck/",
+      "visible_date": "July 1, 2026",
+      "source_type": "industry analysis",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Futurum describes verification, not code generation, as the emerging bottleneck for AI coding tools and argues for independent review infrastructure rather than relying on agent self-review.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports local guidance that separates generation agents from review/evaluation loops and treats independent verification as a workflow requirement for higher-risk code paths.",
+      "named_entities": [
+        "Futurum Group",
+        "Qodo",
+        "AI coding agents",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "Qodo"
+      ],
+      "local_practice_implication": "Candidate for verification leaves covering independent review layers, review-depth rubrics, and self-review blind spots."
+    },
+    {
+      "title": "WorkOS launches a remote MCP server with audit-log operations",
+      "source_url": "https://workos.com/blog/management-mcp-server",
+      "visible_date": "July 1, 2026",
+      "source_type": "vendor blog",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "WorkOS announced a remote MCP server that can manage WorkOS account operations from AI agents, including auditing configuration, managing users, and configuring audit log streams for production environments.",
+      "why_it_matters_for_ai_assisted_development_practice": "Remote MCP servers are expanding from read-only context access into account administration and production-adjacent actions. Local practice should emphasize connector classification, approval requirements, audit logs, and least-privilege scopes.",
+      "named_entities": [
+        "WorkOS",
+        "Model Context Protocol",
+        "MCP",
+        "Datadog",
+        "Splunk",
+        "SSO"
+      ],
+      "upstream_owned_entities": [
+        "WorkOS",
+        "Model Context Protocol",
+        "Datadog",
+        "Splunk"
+      ],
+      "local_practice_implication": "Record as a governed-MCP practice signal, not as a local WorkOS product page: classify admin-capable MCP tools differently from codebase retrieval tools."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Business Insider reports on AI-generated code reaching production without manual review",
+      "source_url": "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "visible_date": "June 28, 2026",
+      "reason": "Older than the strict two-day window for this run."
+    },
+    {
+      "title": "DataRobot discusses MCP governance at scale",
+      "source_url": "https://www.datarobot.com/blog/how-can-enterprises-govern-mcp-connections-at-scale/",
+      "visible_date": "Published 5 days ago",
+      "reason": "Relevant practice source, but outside the strict two-day window."
+    },
+    {
+      "title": "MintMCP guide to audit trails for AI coding agents",
+      "source_url": "https://www.mintmcp.com/blog/build-audit-trails-ai-coding-agents",
+      "visible_date": "Published 2 months ago",
+      "reason": "Relevant practice source, but outside the strict two-day window."
+    },
+    {
+      "title": "GitHub Copilot code review analysis depth and efficiency updates",
+      "source_url": "https://github.blog/changelog/2026-06-25-copilot-code-review-analysis-depth-and-efficiency-updates/",
+      "visible_date": "June 25, 2026",
+      "reason": "Relevant to code review and retrieval tools, but outside the strict two-day window."
+    },
+    {
+      "title": "Cursor changelog entry for Live Activities and push notifications",
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "June 22, 2026",
+      "reason": "Search result said published two days ago, but the page-visible entry date is June 22, 2026, outside the window."
+    },
+    {
+      "title": "Anthropic Claude Sonnet 5 launch",
+      "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "visible_date": "June 30, 2026",
+      "reason": "Within window, but broad model/product coverage is upstream-owned and the GitHub Copilot Sonnet 5 source provided the local coding-practice implication more directly."
+    },
+    {
+      "title": "Anthropic Fable 5 redeployment",
+      "source_url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "visible_date": "July 1, 2026",
+      "reason": "Within window, but primarily broad model/product availability without a distinct local AI-assisted development practice implication."
+    },
+    {
+      "title": "JetBrains Air lands on Windows",
+      "source_url": "https://blog.jetbrains.com/ai/",
+      "visible_date": "June 30, 2026",
+      "reason": "Within window, but product availability did not add a distinct local practice implication beyond upstream-owned developer-tool coverage."
+    },
+    {
+      "title": "State of AI Coding Tools 2026",
+      "source_url": "https://kingy.ai/blog/state-of-ai-coding-tools-2026/",
+      "visible_date": "Published yesterday",
+      "reason": "Date appeared recent in search, but the source is broad product/category coverage and would duplicate upstream-owned developer-tool analysis."
+    },
+    {
+      "title": "Claude Code research collection",
+      "source_url": "https://www.claudeworkshop.com/research",
+      "visible_date": "June 30, 2026 and July 1, 2026 snippets",
+      "reason": "Search result surfaced dated entries, but the collection page mixed multiple post dates and individual source dates were not verified in this run."
+    }
+  ],
+  "follow_up_notes": [
+    "During ingest, route GitHub product and model facts to the upstream AI wiki if durable entity updates are needed; keep local synthesis to governed settings, model routing, spend control, verification, and browser-tool practice.",
+    "The July 1 GitHub Copilot cluster likely supports local leaves for managed agent settings, session budgets, browser verification tools, multimodal input governance, and auto model selection.",
+    "The WorkOS MCP item should be handled as a governed remote-tool/admin connector practice signal rather than a local WorkOS entity page.",
+    "No docs/wiki pages were updated by this collector run."
+  ],
+  "counts": {
+    "qualifying_update_count": 12,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}
