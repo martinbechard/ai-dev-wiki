@@ -29,6 +29,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds session and cost-center budget controls. Session credit limits, per-user cost-center budgets, auto model selection, and model-specific billing turn cost telemetry into an active workflow guardrail. The local practice is to set expected spend envelopes before a run, record when a routed model or browser/tool loop changed cost, and review budget stops as workflow signals rather than treating them only as finance controls.
 
+The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) and [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) add organization-pool and feature-level attribution signals. Shared AI credit pools, workflow session caps, and multi-tool coding-agent bills should be tied to the feature, team, run, subagent fan-out, and accepted outcome. The local operating question is whether the workflow spent a bounded amount on useful work, not whether the charge landed in the right vendor account.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -50,6 +52,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Set session-level and owner-level spend envelopes for long-running or delegated agent work.
 - Record model-routing, browser-tool, and tool-orchestration choices when they explain cost variance.
 - Treat budget exhaustion as evidence that the task scope, model route, or verification loop needs review.
+- Attribute shared AI-credit pool consumption to team, feature, run, tool surface, subagent fan-out, and accepted outcome.
+- Compare cross-tool coding-agent bills at the workflow level so cost governance does not fragment by product console.
 
 ## Authoritative Sources
 
@@ -66,6 +70,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
+- [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 
 ## Related Code
 
@@ -99,3 +105,4 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Maintained on 2026-06-30 with context-compression cost telemetry, cache behavior, latency, and quality guardrails.
 - Maintained on 2026-07-01 with token-rate task-intensity pricing, context-depth attribution, and execution-depth cost evidence.
 - Maintained on 2026-07-01 with session credit limits, cost-center budgets, auto routing, and budget stops as workflow telemetry.
+- Maintained on 2026-07-02 with shared credit-pool caps, feature-level coding-agent cost attribution, and cross-tool spend review.

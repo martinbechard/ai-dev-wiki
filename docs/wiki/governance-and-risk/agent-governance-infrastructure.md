@@ -33,6 +33,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds enterprise configuration and budget-policy signals. Managed assistant settings, model defaults, plugin marketplace controls, bypass-permission modes, browser-tool availability, session credit limits, cost-center budgets, and model enablement should be treated as governed control-plane artifacts. They need ownership, review cadence, override visibility, and audit evidence because they determine which agent surfaces can act, which model runs, and how much work a session can consume.
 
+The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) adds workflow identity, session-audit, and trace-log hygiene signals. Coding-agent CI runs should prefer scoped workflow identity and explicit permissions over long-lived personal tokens. Agent-session records, tool calls, prompts, responses, and trace logs are audit evidence, but raw payload retention can expose sensitive development context, so governance infrastructure needs retention, redaction, SIEM routing, and investigation access rules.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -58,6 +60,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Default production-adjacent agents to read-only investigation until a scoped plan, sandbox validation result, requester authority, and approver attribution are recorded.
 - Treat managed settings, model policies, plugin marketplace controls, browser-tool enablement, and budget caps as policy-owned infrastructure rather than personal editor preferences.
 - Record override, bypass, and model-default decisions when they affect authority, cost, repeatability, or review evidence.
+- Prefer scoped workflow identity and explicit automation permissions over stored personal tokens for unattended coding-agent jobs.
+- Define retention, redaction, and access rules for agent-session streams, tool-call transcripts, prompts, responses, and trace logs before routing them to audit systems.
 
 ## Authoritative Sources
 
@@ -77,6 +81,7 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 
 ## Related Code
 
@@ -117,3 +122,4 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Maintained on 2026-06-29 with guardian-agent identity controls, deterministic guardrails, observability, escalation, and UI-first audit preservation.
 - Maintained on 2026-07-01 with read-only default investigation, scoped approved actions, sandbox validation, and agent-requester-approver attribution.
 - Maintained on 2026-07-01 with enterprise managed settings, model defaults, plugin controls, browser-tool enablement, and budget caps as control-plane evidence.
+- Maintained on 2026-07-02 with scoped workflow identity, agent-session audit streams, and trace-log hygiene requirements.

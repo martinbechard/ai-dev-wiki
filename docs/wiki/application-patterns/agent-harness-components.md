@@ -25,6 +25,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md) adds a primitive-by-primitive operating model. Instructions, context delivery, context management, tool interfaces, execution environments, durable state, orchestration, subagents, skill layers, verification, and observability should be treated as separable harness responsibilities. When an agent fails, the local diagnostic should ask which primitive failed before treating the model as the only cause.
 
+The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) reinforces the harness as the execution boundary around model reasoning. Execution environment, memory, filesystem access, tool access, subagent orchestration, capability bridges, durable pause and resume, and deterministic evaluation scripts are harness responsibilities. A harness should distinguish orchestration-by-code from broad shell access and make isolated environments inspectable for long-running agent work.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -42,6 +44,8 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - Include task setup, context construction, tool constraints, scoring, lifecycle hooks, configuration validation, and permission scopes in the harness boundary.
 - Preserve traces and failure-attribution fields so semantic failures can be debugged without guessing from the final answer.
 - Diagnose failures against the harness primitive that owns the missing support: instruction, context, tool schema, environment, durable state, orchestration, delegation, skill procedure, verification, or traceability.
+- Treat execution environment, memory, filesystem access, tool bridges, subagent orchestration, durable pauses, and deterministic evaluators as explicit harness components.
+- Prefer narrow capability bridges and inspectable isolated environments when agents execute generated code or delegate dynamic subwork.
 
 ## Authoritative Sources
 
@@ -55,6 +59,7 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
+- [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -90,3 +95,4 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - Maintained on 2026-06-27 with progress stores, startup continuity checks, rehydration summaries, and context-feed design signals.
 - Maintained on 2026-06-28 with harness-level failure attribution, lifecycle hooks, deterministic configuration validation, and trace evidence.
 - Maintained on 2026-06-30 with the harness primitive taxonomy and primitive-level failure diagnostics.
+- Maintained on 2026-07-02 with execution-boundary, isolated-environment, durable-pause, and deterministic-evaluator signals.

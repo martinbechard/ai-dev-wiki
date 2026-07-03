@@ -15,6 +15,8 @@ The local rule is that a wiki should compile understanding from authoritative so
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds two compatible public signals. Company context should be durable, current, retrievable, and access-controlled instead of stuffed into every prompt, and structured Markdown wikis can act as reusable memory across coding agents. Locally, that supports a compiled wiki as a governed context layer that agents can reload, while keeping source authority and freshness checks outside the prose itself.
 
+The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds a wiki-memory signal. File-based wiki memory works best when raw sources are synthesized into compact, persistent, inspectable knowledge that agents can reload over time. The local boundary is that wiki memory is maintained compiled context: it improves reuse and reviewability, but it still depends on source provenance, freshness checks, and periodic correction.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -24,6 +26,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Record contradictions and unresolved ownership in Open Questions instead of smoothing them into confident prose.
 - Keep access control and freshness visible when compiled wiki pages or structured memory are used as company context for agents.
 - Treat reusable agent memory as a maintained source-backed layer, not as unreviewed prompt accumulation.
+- Prefer compact, source-backed, inspectable wiki memory for reusable agent knowledge rather than repeated raw chunk stuffing.
+- Refresh or correct wiki memory from provenance when source facts drift or a later run exposes a contradiction.
 
 ## Authoritative Sources
 
@@ -31,6 +35,7 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - [context router and knowledge layers](context-router-and-knowledge-layers.md)
 - [source workflows](../source-workflows/index.md)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 
 ## Related Code
 
@@ -58,3 +63,4 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 - Created on 2026-06-23 to hold source-of-truth and compiled-view boundaries.
 - Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.
+- Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.

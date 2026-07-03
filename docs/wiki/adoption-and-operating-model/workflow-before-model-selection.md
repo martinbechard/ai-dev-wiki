@@ -31,6 +31,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds task-routed model selection and multimodal context signals. Auto model selection, prompt-cache behavior, reasoning depth, CLI task features, browser-tool verification, image or PDF attachments, and IDE-native agent availability should be evaluated against the workflow before becoming defaults. A team should know when to rely on auto routing, when to pin a model for repeatability, and when visual or browser context is allowed by data and evidence rules.
 
+The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds workflow-readiness and tool-selection signals. Agent workflows need trusted data, permissions, connected systems, citations, logging, approval checkpoints, state memory, and handoff shape before model or product choice. Coding-agent selection should account for editor fit, runtime constraints, model routing, multi-agent workspace support, and cost transparency as workflow surfaces rather than product rankings.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -49,6 +51,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Rerun representative local coding, terminal, browser, and verification tasks before changing autonomy defaults for a new model or assistant surface.
 - Decide when auto model selection is acceptable and when repeatability, cost, data policy, or review depth requires a pinned route.
 - Include browser-driven verification and multimodal input handling in workflow selection when the task depends on rendered UI, PDFs, screenshots, or live applications.
+- Require workflow-readiness checks for data access, permissions, citations, logging, approval checkpoints, state memory, and handoffs before selecting an agent surface.
+- Compare coding-agent tools by editor fit, runtime shape, model-routing controls, multi-agent workspace support, and cost transparency against the intended workflow.
 
 ## Authoritative Sources
 
@@ -65,6 +69,7 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 
 ## Related Code
 
@@ -102,3 +107,4 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Maintained on 2026-06-28 with pricing, context-window, hook, data-control, and verification-cost inputs to workflow selection.
 - Maintained on 2026-07-01 with IDE-native agent surfaces, command routing, authentication path, reasoning-depth, and model-upgrade eval triggers.
 - Maintained on 2026-07-01 with auto model routing, prompt-cache, browser-tool, and multimodal context inputs to workflow selection.
+- Maintained on 2026-07-02 with workflow-readiness checks, editor/runtime fit, model-routing controls, multi-agent workspace support, and cost transparency.

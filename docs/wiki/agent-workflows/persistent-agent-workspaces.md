@@ -17,6 +17,8 @@ Persistent workspaces do not remove the need for fresh orientation. Each resumed
 
 The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) adds worktree practice evidence. Desktop-level worktree support and assisted conflict handling make isolated parallel workspaces easier to create, but the local rule remains that each workspace needs clear branch intent, changed-file accounting, and merge evidence before handoff.
 
+The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) adds background-agent handoff signals. Persistent workspaces need completion, input-needed, draft-PR, inherited-configuration, and subagent-state cues so background coding sessions can be recovered and reviewed without guessing from a chat transcript.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -26,6 +28,7 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 - Use handoff notes when a persistent workspace pauses, branches, or transfers to another agent.
 - Archive or reset stale workspace state when it no longer reflects the live repository or accepted plan.
 - Use worktrees for parallel human and agent work only when branch purpose, ownership, and merge evidence are visible.
+- Record background-agent completion state, input-needed state, draft PR links, inherited reasoning or configuration settings, and subagent state when a workspace continues without direct supervision.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [AI process layer and workflow state](../application-patterns/ai-process-layer-and-workflow-state.md)
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
+- [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 
 ## Related Code
 
@@ -61,3 +65,4 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.
 - Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.
+- Maintained on 2026-07-02 with background-agent notification, draft-PR handoff, inherited-configuration, and subagent-state signals.
