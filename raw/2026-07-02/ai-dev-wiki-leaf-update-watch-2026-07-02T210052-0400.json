@@ -1,0 +1,778 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-02T21:00:52-04:00",
+    "start": "2026-06-25T21:00:52-04:00",
+    "timezone": "America/Toronto"
+  },
+  "docs_wiki_updated": false,
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "reason": "Date-only candidate falls on cutoff date, and the prompt excludes boundary-only dates rather than guessing in-window time.",
+      "source_url": "https://www.taskade.com/blog/agent-evals-explained",
+      "visible_date": "2026-06-25"
+    },
+    {
+      "reason": "Published before the strict seven-day cutoff.",
+      "source_url": "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+      "visible_date": "2026-06-24"
+    },
+    {
+      "reason": "Published before the strict seven-day cutoff.",
+      "source_url": "https://www.dataiku.com/blog/agent-orchestration-explained",
+      "visible_date": "2026-05-21"
+    },
+    {
+      "reason": "No visible publication or update date found on the opened documentation page.",
+      "source_url": "https://docs.datadoghq.com/ai_agents_console/",
+      "visible_date": null
+    },
+    {
+      "reason": "Last updated before the strict seven-day cutoff.",
+      "source_url": "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+      "visible_date": "2026-06-18"
+    },
+    {
+      "reason": "Published before the strict seven-day cutoff; related-content links were used only to discover newer LangChain posts.",
+      "source_url": "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+      "visible_date": "2026-03-27"
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entities, products, frameworks, and companies are upstream-owned by the AI wiki. This artifact keeps only local practice implications for ai-dev-wiki ingest.",
+  "follow_up_notes": [
+    "Ingest should update durable local practice leaves only where the source changes workflow, harness, telemetry, eval, or operating-model guidance.",
+    "Route broad product, framework, model, and company facts to upstream AI wiki coverage."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+      "qualifying_update_ids": [
+        "langchain-coding-agent-bill-2026-07-02",
+        "highspot-gtm-agent-workflows-2026-07-02",
+        "techradar-invisible-ai-ops-2026-06-29",
+        "kilo-vscode-coding-agents-2026-06-26"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "qualifying_update_ids": [
+        "langchain-wiki-memory-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+      "qualifying_update_ids": [
+        "langchain-harbor-eval-stack-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+      "qualifying_update_ids": [
+        "langchain-harbor-eval-stack-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+      "qualifying_update_ids": [
+        "langchain-harbor-eval-stack-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "qualifying_update_ids": [
+        "langchain-coding-agent-bill-2026-07-02",
+        "kilo-vscode-coding-agents-2026-06-26"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "qualifying_update_ids": [
+        "highspot-gtm-agent-workflows-2026-07-02"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "qualifying_update_ids": [
+        "kilo-vscode-coding-agents-2026-06-26"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "qualifying_update_ids": [
+        "langchain-agent-harness-2026-06-29",
+        "kilo-vscode-coding-agents-2026-06-26"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "qualifying_update_ids": [
+        "langchain-agent-harness-2026-06-29",
+        "langchain-coding-agent-bill-2026-07-02",
+        "langchain-wiki-memory-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "qualifying_update_ids": [
+        "langchain-untrusted-code-without-sandbox-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "qualifying_update_ids": [
+        "langchain-untrusted-code-without-sandbox-2026-06-30",
+        "highspot-gtm-agent-workflows-2026-07-02",
+        "kilo-vscode-coding-agents-2026-06-26"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "qualifying_update_ids": [
+        "langchain-agent-harness-2026-06-29",
+        "langchain-untrusted-code-without-sandbox-2026-06-30",
+        "langchain-harbor-eval-stack-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "qualifying_update_ids": [
+        "langchain-agent-harness-2026-06-29",
+        "langchain-untrusted-code-without-sandbox-2026-06-30",
+        "highspot-gtm-agent-workflows-2026-07-02",
+        "techradar-invisible-ai-ops-2026-06-29",
+        "langchain-wiki-memory-2026-06-30"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and upstream routing.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "qualifying_update_ids": [
+        "langchain-agent-harness-2026-06-29",
+        "langchain-untrusted-code-without-sandbox-2026-06-30",
+        "highspot-gtm-agent-workflows-2026-07-02",
+        "techradar-invisible-ai-ops-2026-06-29"
+      ],
+      "source_urls_checked": [
+        "https://docs.datadoghq.com/ai_agents_console/",
+        "https://kilo.ai/articles/coding-agents-for-vscode",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+        "https://www.dataiku.com/blog/agent-orchestration-explained",
+        "https://www.highspot.com/blog/ai-agent-workflows/",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.langchain.com/blog/wiki-memory",
+        "https://www.taskade.com/blog/agent-evals-explained",
+        "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai"
+      ]
+    }
+  ],
+  "named_entities": [
+    "Amazon Q Developer",
+    "AutoWiki",
+    "Avantra",
+    "Claude Code",
+    "Cline",
+    "Continue",
+    "Cursor",
+    "Deep Agents",
+    "DeepWiki",
+    "GTM Agent",
+    "Gemini Code Assist",
+    "GitHub Copilot Agent HQ",
+    "GitHub Copilot Chat",
+    "Harbor",
+    "Highspot",
+    "Joule",
+    "Kilo Code",
+    "LangChain",
+    "LangGraph",
+    "LangMem",
+    "LangSmith",
+    "LangSmith Observability",
+    "LangSmith Sandboxes",
+    "Letta",
+    "MCP",
+    "MCP Server",
+    "Mem0",
+    "QuickJS",
+    "SAP Sapphire",
+    "SAPinsider",
+    "WebAssembly",
+    "Windsurf",
+    "Zep"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "factual_summary": "LangChain frames an agent as model plus harness and describes harness engineering as the layer that turns model reasoning into useful work. The article identifies harness concerns such as execution environment, memory, filesystem, tool access, and control surfaces around autonomous work.",
+      "federation_routing": "Broad product and framework background belongs upstream; local follow-up should capture only the harness-practice implication.",
+      "id": "langchain-agent-harness-2026-06-29",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents",
+        "LangSmith"
+      ],
+      "published_or_updated_at": "2026-06-29",
+      "source_url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Deep Agents",
+        "LangSmith"
+      ],
+      "visible_date_basis": "Page byline shows June 29, 2026.",
+      "why_it_matters_for_leaf": "The local harness and application-pattern leaves should treat the harness as the durable execution boundary around models, not as incidental glue code. It also reinforces that workflow state and tool access belong in inspectable harness components."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "factual_summary": "LangChain describes Deep Agents code interpreters for dynamic subagent orchestration, using WASM and QuickJS for execution isolation, narrow bridged capabilities, and serialized durable pauses for human approval and resume.",
+      "federation_routing": "Route product/runtime background upstream; keep local safety and orchestration-pattern implications.",
+      "id": "langchain-untrusted-code-without-sandbox-2026-06-30",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents",
+        "QuickJS",
+        "WebAssembly",
+        "LangGraph",
+        "LangSmith Sandboxes"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "source_url": "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Deep Agents",
+        "QuickJS",
+        "WebAssembly",
+        "LangGraph",
+        "LangSmith Sandboxes"
+      ],
+      "visible_date_basis": "Page byline shows June 30, 2026.",
+      "why_it_matters_for_leaf": "The selected workflow and harness leaves should distinguish orchestration-by-code from broad shell access, and should describe capability isolation plus durable pauses as first-class design criteria for agent harnesses."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "factual_summary": "LangChain and Harbor describe evaluating long-running stateful agents in reproducible isolated environments, with datasets that include an environment, an instruction, and a deterministic evaluation script. The integration connects Harbor with Deep Agents, LangSmith Sandboxes, and LangSmith Observability.",
+      "federation_routing": "Keep product/entity details upstream; local page can ingest the environment-plus-deterministic-check pattern.",
+      "id": "langchain-harbor-eval-stack-2026-06-30",
+      "named_entities": [
+        "LangChain",
+        "Harbor",
+        "Deep Agents",
+        "LangSmith Sandboxes",
+        "LangSmith Observability"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "source_url": "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Harbor",
+        "Deep Agents",
+        "LangSmith"
+      ],
+      "visible_date_basis": "LangChain blog index and related-content listing show June 30, 2026.",
+      "why_it_matters_for_leaf": "This strengthens the local rule that trajectory-level evaluation and acceptance gates must inspect created artifacts and environment state, not just final text responses."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "factual_summary": "LangChain argues that coding-agent spend is becoming difficult to manage because a single feature can involve multiple agents and each tool logs activity separately. The article emphasizes attributing cost to actual work instead of treating raw token spend as proof of progress.",
+      "federation_routing": "Route vendor-specific pricing/product coverage upstream; local follow-up is the spend-attribution operating practice.",
+      "id": "langchain-coding-agent-bill-2026-07-02",
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot Chat"
+      ],
+      "published_or_updated_at": "2026-07-02",
+      "source_url": "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "visible_date_basis": "LangChain blog index shows July 2, 2026.",
+      "why_it_matters_for_leaf": "The cost-telemetry leaf should continue to focus on feature-level and workflow-level attribution across tools, not seat price alone."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "factual_summary": "Highspot describes AI agent workflows as structured sequences that combine trusted data, permission controls, dependable system connections, flexible rules, citations, logging, approval checkpoints, state memory, and handoffs.",
+      "federation_routing": "Company and product background belong upstream; local implication is workflow-readiness criteria.",
+      "id": "highspot-gtm-agent-workflows-2026-07-02",
+      "named_entities": [
+        "Highspot",
+        "GTM Agent",
+        "MCP Server"
+      ],
+      "published_or_updated_at": "2026-07-02",
+      "source_url": "https://www.highspot.com/blog/ai-agent-workflows/",
+      "upstream_owned_entities": [
+        "Highspot",
+        "MCP"
+      ],
+      "visible_date_basis": "Page byline shows Published on July 2, 2026.",
+      "why_it_matters_for_leaf": "Even though the example domain is GTM, the local workflow leaves can use it as evidence that workflow selection starts with data access, rules, ownership, escalation, validation, and handoff shape before model choice."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "factual_summary": "The article argues that agents need healthy, observable, consistent operational systems, process telemetry, automated remediation, and governance across hybrid landscapes; otherwise agentic AI can increase operational risk.",
+      "federation_routing": "Broad enterprise-product facts belong upstream; local follow-up should capture operational-readiness practice.",
+      "id": "techradar-invisible-ai-ops-2026-06-29",
+      "named_entities": [
+        "SAP Sapphire",
+        "Joule",
+        "Avantra",
+        "SAPinsider"
+      ],
+      "published_or_updated_at": "2026-06-29",
+      "source_url": "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai",
+      "upstream_owned_entities": [
+        "SAP",
+        "Joule",
+        "Avantra"
+      ],
+      "visible_date_basis": "Page byline shows published 29 June 2026.",
+      "why_it_matters_for_leaf": "The process-layer and application-harness leaves should keep operational substrate, telemetry, and hybrid governance as prerequisites for agent execution rather than post-deployment concerns."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "Kilo categorizes VS Code coding agents by true agentic extensions, autocomplete-first tools, and cloud-platform assistants; it evaluates agentic capability, VS Code nativeness, model flexibility, pricing transparency, and cost governance. It also highlights model routing and multi-agent worktree orchestration as tool-selection factors.",
+      "federation_routing": "Tool catalog coverage belongs upstream; local implication is tool-selection criteria for coding workflows.",
+      "id": "kilo-vscode-coding-agents-2026-06-26",
+      "named_entities": [
+        "Kilo Code",
+        "GitHub Copilot Agent HQ",
+        "Cline",
+        "Continue",
+        "Amazon Q Developer",
+        "Gemini Code Assist",
+        "Cursor",
+        "Windsurf",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-06-26",
+      "source_url": "https://kilo.ai/articles/coding-agents-for-vscode",
+      "upstream_owned_entities": [
+        "Kilo Code",
+        "GitHub Copilot",
+        "Cline",
+        "Continue",
+        "Amazon Q Developer",
+        "Gemini Code Assist",
+        "Cursor",
+        "Windsurf",
+        "MCP"
+      ],
+      "visible_date_basis": "Page shows Last Updated June 26, 2026.",
+      "why_it_matters_for_leaf": "The workflow-selection and cost-telemetry leaves should keep tool selection anchored in workflow surface, editor/runtime constraints, governance, and model-routing economics instead of model benchmark comparisons alone."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "factual_summary": "LangChain describes wiki memory as compact, persistent, inspectable, file-based knowledge synthesized from raw sources. It contrasts precomputed wiki synthesis with raw RAG chunks and names maintenance over time as a core property.",
+      "federation_routing": "Tool and memory-system background belongs upstream; local follow-up is durable wiki-memory practice.",
+      "id": "langchain-wiki-memory-2026-06-30",
+      "named_entities": [
+        "LangChain",
+        "DeepWiki",
+        "AutoWiki",
+        "LangMem",
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "source_url": "https://www.langchain.com/blog/wiki-memory",
+      "upstream_owned_entities": [
+        "LangChain",
+        "DeepWiki",
+        "AutoWiki",
+        "LangMem",
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "visible_date_basis": "Page byline shows June 30, 2026.",
+      "why_it_matters_for_leaf": "The deep-research and writing workflow leaf can use this as public support for source-to-wiki synthesis and durable agent-readable knowledge layers."
+    }
+  ],
+  "run_timestamp": "2026-07-02T21:00:52-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md"
+  ],
+  "source_url_count": 14,
+  "source_urls_checked": [
+    "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+    "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+    "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+    "https://www.langchain.com/blog/wiki-memory",
+    "https://www.highspot.com/blog/ai-agent-workflows/",
+    "https://www.techradar.com/pro/how-to-future-proof-enterprise-operations-in-the-age-of-invisible-ai",
+    "https://kilo.ai/articles/coding-agents-for-vscode",
+    "https://www.taskade.com/blog/agent-evals-explained",
+    "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+    "https://www.dataiku.com/blog/agent-orchestration-explained",
+    "https://docs.datadoghq.com/ai_agents_console/",
+    "https://www.augmentcode.com/guides/how-to-run-a-multi-agent-coding-workspace",
+    "https://www.langchain.com/blog/agent-evaluation-readiness-checklist"
+  ],
+  "upstream_owned_entities": [
+    "Amazon Q Developer",
+    "AutoWiki",
+    "Avantra",
+    "Claude Code",
+    "Cline",
+    "Continue",
+    "Cursor",
+    "Deep Agents",
+    "DeepWiki",
+    "Gemini Code Assist",
+    "GitHub Copilot",
+    "Harbor",
+    "Highspot",
+    "Joule",
+    "Kilo Code",
+    "LangChain",
+    "LangGraph",
+    "LangMem",
+    "LangSmith",
+    "LangSmith Sandboxes",
+    "Letta",
+    "MCP",
+    "Mem0",
+    "QuickJS",
+    "SAP",
+    "WebAssembly",
+    "Windsurf",
+    "Zep"
+  ]
+}
