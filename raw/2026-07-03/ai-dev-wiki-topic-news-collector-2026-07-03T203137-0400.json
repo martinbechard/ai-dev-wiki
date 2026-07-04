@@ -1,0 +1,319 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-03T20:31:37-04:00",
+  "cutoff_window": {
+    "basis": "Strict two-day public-source window relative to run timestamp",
+    "start": "2026-07-01T20:31:37-04:00",
+    "end": "2026-07-03T20:31:37-04:00",
+    "date_policy": "Included sources with visible publication or update dates inside the window. Excluded missing, ambiguous, future-dated, stale, duplicate prior-run, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_policy": {
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "Practice-level AI-assisted development implications, operating patterns, governance, verification, workflow, and adoption notes.",
+    "handling": "Named ecosystem entities are recorded as upstream-owned. Findings include only the downstream practice implication or routing note."
+  },
+  "findings": [
+    {
+      "id": "2026-07-03-qodo-ai-code-quality-gap",
+      "title": "AI-generated code volume is outpacing review capacity",
+      "source_urls": [
+        "https://www.qodo.ai/blog/the-ai-code-quality-gap-what-100-engineering-leaders-told-us/",
+        "https://futurumgroup.com/insights/ai-code-review-hits-a-wall-why-speed-without-trust-risks-engineering-chaos/"
+      ],
+      "visible_date": "July 3, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "Qodo published survey findings from 100 engineering directors and VPs, reporting broad AI coding tool adoption, limited confidence in AI-generated code quality before production, and review bottlenecks among standardized AI-tool teams. Futurum covered the same research as a trust gap between AI code generation speed and production-grade engineering controls.",
+      "why_it_matters": "AI-assisted development practice needs review capacity, architectural checks, standards enforcement, and quality evidence scaled to AI-generated code volume. Adoption guidance should not treat tool rollout as complete until review infrastructure catches up.",
+      "named_entities": [
+        "Qodo",
+        "Gatepoint Research",
+        "Futurum Group",
+        "AI coding tools",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "Futurum Group",
+        "AI coding tools"
+      ],
+      "local_practice_implication": "Coding-practice and verification pages can later frame AI code review as a capacity and trust system, with manual review, static analysis, and dedicated AI review roles separated explicitly.",
+      "routing_note": "Route vendor and market-position coverage upstream; keep only review operating-model implications locally."
+    },
+    {
+      "id": "2026-07-02-qodo-retrieval-as-review-memory",
+      "title": "Code-review retrieval shifts from source search to review memory",
+      "source_urls": [
+        "https://www.qodo.ai/blog/we-built-a-state-of-the-art-rag-system-for-code-review-in-qodo-2-4-we-took-most-of-it-out/"
+      ],
+      "visible_date": "July 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices",
+        "docs/wiki/context-architecture"
+      ],
+      "summary": "Qodo described reducing a broad codebase RAG index for code review after measuring low incremental lift against maintenance cost, while keeping retrieval for PR-history memory, repeated feedback, and team-specific decisions that are not recoverable from the working tree.",
+      "why_it_matters": "Codebase retrieval guidance should distinguish context an agent can rediscover with tools from durable team memory that must be stored. RAG for code review is becoming an economic and measurement decision, not a default architecture.",
+      "named_entities": [
+        "Qodo",
+        "Qodo 2.4",
+        "RAG",
+        "AI code review",
+        "PR history"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "RAG"
+      ],
+      "local_practice_implication": "Retrieval pages can later describe a split between on-demand agent navigation over source code and curated memory over review decisions, including cost and quality measurement gates.",
+      "routing_note": "Keep Qodo product details and broad RAG technique background upstream; local wiki owns the code-review retrieval practice pattern."
+    },
+    {
+      "id": "2026-07-03-mem0-code-review-agent-memory",
+      "title": "Persistent memory pattern for code review agents",
+      "source_urls": [
+        "https://mem0.ai/blog/how-to-build-a-code-review-agent-using-mem0"
+      ],
+      "visible_date": "July 3, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices"
+      ],
+      "summary": "Mem0 published a practical code review agent architecture using persistent memories for repository history, prior comments, project rules, file metadata, and developer-specific feedback, with the memory layer used during context assembly and result persistence.",
+      "why_it_matters": "Review agents need explicit memory contracts: what is remembered, how it is tagged, how it is retrieved, and how it stays within token and latency budgets. This supports consistent reviews across pull requests rather than single-diff prompting.",
+      "named_entities": [
+        "Mem0",
+        "code review agent",
+        "persistent memory",
+        "OpenAI",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "Mem0",
+        "OpenAI"
+      ],
+      "local_practice_implication": "Context architecture pages can later define repository, file, team, and reviewer memory dimensions for AI-assisted code review, with retrieval precision and governance caveats.",
+      "routing_note": "Route Mem0 product details upstream; local wiki owns the memory-for-review workflow pattern."
+    },
+    {
+      "id": "2026-07-03-mintmcp-agent-governance-eu-ai-act",
+      "title": "Agent governance guidance emphasizes shadow MCP usage and audit evidence",
+      "source_urls": [
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline"
+      ],
+      "visible_date": "July 3, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "MintMCP published an agent-governance roadmap for EU AI Act readiness, focusing on AI system inventory, risk classification, shadow AI detection, MCP gateway controls, audit logs, human oversight, credential management, and behavioral drift monitoring.",
+      "why_it_matters": "Governance guidance for AI-assisted development should account for local developer tools and MCP connections that bypass central visibility. Audit evidence needs to capture who invoked which tool, what data was touched, and what policy was enforced.",
+      "named_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "MCP",
+        "Cursor",
+        "Claude Code",
+        "SIEM"
+      ],
+      "upstream_owned_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "MCP",
+        "Cursor",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Governance pages can later add shadow-agent discovery and MCP audit evidence as first-class operating practices, without restating legal or product background.",
+      "routing_note": "Route EU AI Act background, MintMCP product coverage, and MCP protocol background upstream; keep the downstream governance implication."
+    },
+    {
+      "id": "2026-07-03-scandit-agent-skills-domain-instructions",
+      "title": "Vendor-published agent skills package domain integration instructions",
+      "source_urls": [
+        "https://www.scandit.com/blog/how-to-use-scandit-agent-skills/"
+      ],
+      "visible_date": "July 3, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/application-patterns",
+        "docs/wiki/source-workflows"
+      ],
+      "summary": "Scandit published Agent Skills that teach coding agents to integrate barcode, ID, and label scanning, framing the skills as reusable instructions for AI coding agents rather than only human-facing SDK documentation.",
+      "why_it_matters": "Durable agent instructions are becoming a distribution format for domain integration knowledge. Practice guidance should distinguish vendor-owned instruction packs from local project rules, and should require review before importing third-party coding-agent behavior.",
+      "named_entities": [
+        "Scandit",
+        "Agent Skills",
+        "AI coding agents",
+        "barcode scanning",
+        "ID scanning"
+      ],
+      "upstream_owned_entities": [
+        "Scandit",
+        "Agent Skills"
+      ],
+      "local_practice_implication": "Prompt and instruction pages can later cover third-party skill intake, trust review, version pinning, and local adaptation for domain-specific SDK work.",
+      "routing_note": "Route Scandit product and SDK details upstream; keep the local practice implication around governed instruction ingestion."
+    },
+    {
+      "id": "2026-07-03-cursor-forum-destructive-shell-incident",
+      "title": "Public incident report highlights destructive shell-command risk",
+      "source_urls": [
+        "https://forum.cursor.com/t/an-ai-coding-agent-composer-2-5-cursor-accidentally-wiped-most-of-my-desktop-and-nearly-my-project-by-running-a-misquoted-rmdir-s-q-command-one-quoting-mistake-turned-a-gradle-build-cleanup-into-a-recursive-delete-from-c-full-incident-report/164773"
+      ],
+      "visible_date": "July 3, 2026, 5:52pm",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "summary": "A public Cursor community incident report described an AI coding agent running a misquoted Windows recursive deletion command during a Gradle cleanup attempt, causing broad local file deletion risk outside the intended project scope.",
+      "why_it_matters": "Agent workflow guidance should treat destructive shell commands as a separate risk class with working-directory constraints, command previews, path normalization, backups, and approval gates before execution.",
+      "named_entities": [
+        "Cursor",
+        "Composer",
+        "Windows",
+        "Gradle",
+        "recursive deletion"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Composer",
+        "Windows",
+        "Gradle"
+      ],
+      "local_practice_implication": "Governance and workflow pages can later add concrete guardrails for cleanup commands, quoting-sensitive shell operations, and cross-drive path containment.",
+      "routing_note": "Route Cursor product details upstream; keep only the destructive-command approval and containment lesson locally."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Codex CLI 0.142.5 trace-log WebSocket payload fix",
+      "url": "https://developers.openai.com/codex/changelog",
+      "visible_date": "2026-07-01",
+      "reason": "Excluded as boundary-only for this run because the visible date lacks a time and the cutoff starts at 2026-07-01T20:31:37-04:00."
+    },
+    {
+      "title": "Claude app release notes for model entitlements on Enterprise plans",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "visible_date": "July 1, 2026",
+      "reason": "Excluded as boundary-only for this run because the visible date lacks a time and the cutoff starts at 2026-07-01T20:31:37-04:00."
+    },
+    {
+      "title": "CodeRabbit changelog entry for AI code reviews in the terminal",
+      "url": "https://docs.coderabbit.ai/changelog",
+      "visible_date": "No visible dated entry found for the specific item",
+      "reason": "Excluded because the page exposes the feature text but not a qualifying visible publication or update date for the item."
+    },
+    {
+      "title": "Claude Code changelog versions 2.1.201 through 2.1.198",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
+      "visible_date": "No visible release dates in raw changelog excerpt",
+      "reason": "Excluded because version entries did not expose visible publication dates that satisfy the strict two-day window."
+    },
+    {
+      "title": "GitHub Copilot CLI can use GITHUB_TOKEN in GitHub Actions",
+      "url": "https://github.blog/changelog/2026-07-02-copilot-cli-no-longer-needs-a-personal-access-token-in-github-actions/",
+      "visible_date": "July 2, 2026",
+      "reason": "Excluded as a duplicate prior-run finding already captured in raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json."
+    },
+    {
+      "title": "GitHub Copilot agent session streaming public preview",
+      "url": "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+      "visible_date": "July 2, 2026",
+      "reason": "Excluded as a duplicate prior-run finding already captured in raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json."
+    },
+    {
+      "title": "GitHub cost centers support included usage caps",
+      "url": "https://github.blog/changelog/2026-07-02-cost-centers-now-support-included-usage-caps/",
+      "visible_date": "July 2, 2026",
+      "reason": "Excluded as a duplicate prior-run finding already captured in raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json."
+    },
+    {
+      "title": "Best MCP Servers for AI Coding Agents 2026",
+      "url": "https://www.agensi.io/learn/best-mcp-servers-2026",
+      "visible_date": "May 12, 2026",
+      "reason": "Excluded as stale outside the strict two-day window."
+    },
+    {
+      "title": "MCP server governance best practices",
+      "url": "https://tyk.io/learning-center/mcp-server-governance-best-practices/",
+      "visible_date": "April 23, 2026",
+      "reason": "Excluded as stale outside the strict two-day window."
+    },
+    {
+      "title": "Stack Overflow for Agents announcement",
+      "url": "https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/",
+      "visible_date": "June 10, 2026",
+      "reason": "Excluded as stale outside the strict two-day window."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only. No docs/wiki pages were updated.",
+    "Future ingest should decide whether Qodo July 2 and Mem0 July 3 should update the same durable review-memory leaf or separate leaves for retrieval economics and persistent code-review memory.",
+    "Future ingest should route product, company, broad RAG, broad MCP, and legal-regulatory background to the upstream AI wiki when durable entity coverage is needed.",
+    "The Cursor forum incident should be handled carefully during ingest because it is a public user-generated incident report; avoid copying personal details and focus on destructive-command controls."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false
+}
