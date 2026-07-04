@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; the ingest workflow updates digest pages after durable topic leaves are refreshed.
 
-The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, and background-agent handoffs.
+The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, background-agent handoffs, review-capacity controls, review memory, shadow-agent audit evidence, third-party skill intake, runtime telemetry, local execution gates, and governed context layers.
 
 The active June 2026 digest also records raw-source synthesis for operating models, governance controls, workflow packaging, RAG security boundaries, local model harness practices, and portable skill procedures.
 
@@ -29,6 +29,8 @@ June 30 clipping artifacts added local practice coverage for harness primitive d
 July 1 evening public artifacts and FastMCP research added local practice coverage for enterprise-managed settings, session budgets, auto model routing, browser and multimodal context controls, admin-capable MCP governance, trajectory review, runtime approval boundaries, portable procedure ownership, source-routing semantics, and generated API-to-MCP curation.
 
 July 2 public artifacts added local practice coverage for [agent governance](../governance-and-risk/agent-governance-infrastructure.md), shared credit-pool cost telemetry, workflow-readiness checks, isolated harness execution, environment-backed evals, build-aware context generation, source-backed wiki memory, and persistent workspace handoff state.
+
+July 3 public artifacts added local practice coverage for [intelligent code review](../coding-practices/intelligent-code-review.md), code-review memory, shadow-agent governance, destructive-command containment, third-party skill intake, behavior telemetry, local repository-trust gates, and governed context-layer routing.
 
 ## Authoritative Sources
 
@@ -59,6 +61,8 @@ July 2 public artifacts added local practice coverage for [agent governance](../
 - [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md)
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
@@ -101,3 +105,4 @@ July 2 public artifacts added local practice coverage for [agent governance](../
 - Updated on 2026-07-01 after public raw artifacts were synthesized into durable governance, retrieval, workflow, cost, and eval leaves.
 - Updated on 2026-07-01 after evening public artifacts and FastMCP research were synthesized into durable policy, governance, workflow, cost, eval, source-routing, and runbook leaves.
 - Updated on 2026-07-02 after public raw artifacts were synthesized into durable governance, cost, workflow, harness, eval, tool, memory, and workspace leaves.
+- Updated on 2026-07-03 after public raw artifacts were synthesized into durable review, retrieval, memory, governance, skills, telemetry, harness, and context-layer leaves.

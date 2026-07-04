@@ -17,6 +17,8 @@ The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-d
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds company-context evidence: agents need a current and permission-aware knowledge layer for org facts, not only a static rules layer. Rules define how the agent should act; retrievable knowledge supplies the facts and examples that may change independently.
 
+The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds context-layer evidence for agent systems. Retrieval, semantic definitions, entity identity, lineage, policy enforcement, and decision memory should remain separate from rules so agents can use governed meaning without converting every retrieved fact into an instruction.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -26,6 +28,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Link from the router to the relevant layer instead of duplicating the same guidance in multiple files.
 - Keep procedural skills, current API references, and diagnostic examples in their own layers so a task can load the missing evidence without turning source material into global instructions.
 - Keep company context permission-aware and refreshable when it feeds agent retrieval or reusable memory.
+- Separate governed meaning, lineage, and decision memory from executable rules; the knowledge layer informs decisions while the rules layer governs allowed behavior.
+- Preserve policy and provenance metadata with retrieved business or project context so agents can explain why the context was valid for the task.
 
 ## Authoritative Sources
 
@@ -35,6 +39,7 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 
 ## Related Code
 
@@ -63,3 +68,4 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Created on 2026-06-23 from source guidance on durable rules, project facts, reusable procedures, and context-aware guidance.
 - Maintained on 2026-06-25 with layered teaching guidance for proprietary or unfamiliar project APIs.
 - Maintained on 2026-06-29 with permission-aware company context as a refreshable knowledge layer.
+- Maintained on 2026-07-03 with governed meaning, lineage, decision memory, policy metadata, and provenance as knowledge-layer concerns.

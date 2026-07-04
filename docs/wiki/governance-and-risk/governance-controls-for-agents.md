@@ -21,6 +21,8 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) reinforces that agent governance needs deterministic guardrails, runtime policy enforcement, inherited-permission review, observability, audit trails, escalation rules, and human oversight. The control boundary should cover both coding-agent workflows and enterprise agents that act through existing user interfaces or connected tools.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds shadow-agent and destructive-command controls. Local governance should inventory developer-side agents and MCP connections, capture audit evidence for tool invocation and data access, and treat recursive deletion, cleanup, quoting-sensitive shell operations, and path-crossing commands as a higher-risk action class. User-generated incident reports should be used only for the control lesson, without copying personal details.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -42,6 +44,9 @@ The detailed control leaves are:
 - Use runtime security checks, red-team cases, and audit trails to validate whether prompt-level rules are enforced by the surrounding system.
 - Require evidence for model enablement, plugin installation consent, marketplace allowlists, runner access, and package-affecting actions when those surfaces can change software delivery risk.
 - Check inherited permissions, stale credentials, escalation paths, and audit evidence before allowing autonomous or semi-autonomous agents to act.
+- Inventory shadow agents, local MCP servers, connector grants, and developer-side tool paths that can bypass centrally managed visibility.
+- Require command previews, normalized working directories, path-containment checks, backups or restore points, and explicit approval before destructive file operations.
+- Capture who invoked which agent tool, what data or repository scope it touched, and which policy allowed or blocked the action.
 
 ## Authoritative Sources
 
@@ -56,6 +61,7 @@ The detailed control leaves are:
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 
 ## Related Code
 
@@ -90,3 +96,4 @@ The detailed control leaves are:
 - Maintained on 2026-06-25 with full-surface agent controls for installation, MCP onboarding, connector authorization, runtime checks, red teaming, and audit evidence.
 - Maintained on 2026-06-26 with model-policy, plugin-consent, marketplace, runner, package-account, and deterministic configuration controls.
 - Maintained on 2026-06-29 with inherited-permission checks, runtime enforcement, escalation, and audit-control evidence.
+- Maintained on 2026-07-03 with shadow-agent inventory, MCP audit evidence, and destructive shell-command containment controls.

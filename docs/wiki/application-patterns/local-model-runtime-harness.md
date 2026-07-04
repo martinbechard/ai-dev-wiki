@@ -15,6 +15,8 @@ The Dwarf Star source illustrates local runtime concerns that matter for applica
 
 The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md) adds a workstation-execution caution for developer agents. Local inference can avoid cloud API charges, but the harness still has to account for prefill latency, memory ceilings, endpoint maintenance, crash recovery, lost developer flow, and weaker centralized telemetry. Local execution is not a default cost-control answer unless the workflow can tolerate those constraints and still produce verifiable value.
 
+The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds a repository-trust gate for local agent harnesses. Local execution must not treat cloned repositories, setup scripts, DNS indirection, dependency install steps, or agent-proposed remediation commands as safe merely because they run on a developer workstation. The harness should inspect and gate setup commands before execution.
+
 ## Practice Boundaries
 
 - Treat local inference as a product harness choice with operational costs, validation needs, and user-visible behavior.
@@ -25,6 +27,8 @@ The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agent
 - Re-check tool-call reliability and long-context behavior whenever runtime, model, or quantization choices change.
 - Treat local cost savings as incomplete unless endpoint support, developer wait time, crash risk, and auditability are included.
 - Prefer centralized telemetry or explicit local telemetry export when local execution affects enterprise FinOps, security, or compliance review.
+- Require repository trust checks, setup-command inspection, and explicit execution gates before a local agent runs project bootstrap, dependency, network, or remediation commands.
+- Treat agent helpfulness loops as a runtime risk when the agent can install packages, execute scripts, or follow indirect setup instructions.
 
 ## Authoritative Sources
 
@@ -34,6 +38,7 @@ The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agent
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Application harness patterns](application-harness-patterns.md)
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 
 ## Related Code
 
@@ -64,3 +69,4 @@ The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agent
 - Created on 2026-06-23 from the local model operations source and local verification guidance for representative calibration.
 - Upstream durable leaves for Dwarf Star, DeepSeek V4, selective quantization, SSD expert caching, and distributed prefill are Not yet identified; this page treats them as source-specific runtime examples, not local entity or technique coverage.
 - Maintained on 2026-06-27 with local workstation inference as a latency, support, crash, telemetry, and auditability tradeoff.
+- Maintained on 2026-07-03 with repository trust, setup-command inspection, and local execution gates for agent harnesses.

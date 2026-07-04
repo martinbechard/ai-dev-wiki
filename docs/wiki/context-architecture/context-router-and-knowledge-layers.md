@@ -15,6 +15,8 @@ The specific patterns live in sibling leaves. [Thin context router](thin-context
 
 This page owns the downstream practice. Broad coverage of Claude Code and other coding-agent products belongs to the upstream [AI wiki developer tools index](../../../upstream-ai-wiki/developer-tools/index.md).
 
+The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) reinforces the router boundary for enterprise context layers. The router should direct agents toward the smallest relevant layer for governed meaning, policy, lineage, retrieval, memory, and task rules instead of sending every task through a broad context bundle.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -28,6 +30,7 @@ This page owns the downstream practice. Broad coverage of Claude Code and other 
 - Route detailed maintenance questions to the smallest leaf that owns the concept.
 - Keep upstream product and agent-tool background in the federated AI wiki unless the local page is describing a downstream practice lens.
 - Preserve authority signals so agents know which documents should guide current work.
+- Route governed meaning, policy metadata, and decision memory to knowledge-layer leaves rather than repeating them in the thin router.
 
 ## Authoritative Sources
 
@@ -35,6 +38,7 @@ This page owns the downstream practice. Broad coverage of Claude Code and other 
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 
 ## Related Code
 
@@ -62,3 +66,4 @@ This page owns the downstream practice. Broad coverage of Claude Code and other 
 
 - Created on 2026-06-23 from the folder organization source note and the two local AI development decks.
 - Maintained on 2026-06-23 as the overview page for split context architecture leaves.
+- Maintained on 2026-07-03 with governed meaning, policy metadata, lineage, retrieval, memory, and task-rule routing boundaries.

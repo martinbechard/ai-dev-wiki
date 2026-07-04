@@ -21,6 +21,8 @@ The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-d
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) reinforces review as a control point rather than optional ceremony. Public sources describe AI-generated changes reaching production with less separate human review, governance struggling to keep up with generation speed, and AI review moving earlier into PRD and design checks. The local rule is that review requests should keep acceptance evidence, retrieval depth, reviewer scope, and final human decision boundaries explicit even when AI review reduces manual effort.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) and [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) add review-capacity and reviewer-attention evidence. AI code generation can increase throughput faster than review, validation, provenance, and maintainability controls can absorb it. Review assistants therefore need signal controls, configurable noise levels, source-backed findings, and clear human repair responsibility rather than broader automatic coverage alone.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -36,6 +38,9 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Report which context was skipped or considered unnecessary when that omission affects residual risk.
 - Keep review gates explicit when generated-code throughput increases or separate manual review becomes less common.
 - Tie AI review findings to the artifact under review, whether that artifact is a PRD, design input, code diff, test result, or operational signal.
+- Treat review capacity as an operating constraint: generated-code volume must be matched with standards, tests, provenance, maintainability checks, and reviewer-attention controls.
+- Keep AI review comments actionable and adjustable so low-signal noise does not consume the human attention the workflow was meant to protect.
+- Require the submitting workflow to remain able to repair reviewed code; generated changes that cannot be explained, tested, or fixed are not review-ready.
 
 ## Authoritative Sources
 
@@ -48,6 +53,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 
 ## Related Code
 
@@ -79,3 +86,4 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Maintained on 2026-06-25 with review depth, retrieval path, and cost-quality measurement as explicit AI review configuration surfaces.
 - Maintained on 2026-06-27 with targeted context gathering and skipped-context residual-risk reporting.
 - Maintained on 2026-06-29 with review-gate evidence for higher generated-code throughput and earlier lifecycle review.
+- Maintained on 2026-07-03 with review-capacity, reviewer-attention, generated-code repairability, and configurable review-signal controls.

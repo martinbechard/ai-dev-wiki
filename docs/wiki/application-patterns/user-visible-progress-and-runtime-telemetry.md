@@ -21,6 +21,8 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 
 The [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md) adds context-layer telemetry. When a harness compresses or routes context, users and operators need visible signals for token savings, cache hits, retrieval fallbacks, compressor choice, provenance, latency, and drift checks so optimization remains inspectable.
 
+The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds security and behavior telemetry. Agent observability should include tool calls, reasoning-loop state, state transitions, quality checks, verification results, and security posture signals so operators can distinguish healthy execution from unsafe, looping, or task-wrong behavior.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -33,6 +35,8 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - Surface remote provisioning, background-agent state, denial reasons, authentication notices, telemetry settings, and resource cleanup when they affect user trust.
 - Record semantic failure signals, trace summaries, retry reasons, tool-loop patterns, and evaluation outcomes when agent behavior can appear operationally healthy but task-wrong.
 - Expose context-optimization telemetry when compression, cache alignment, or retrieval fallback can change latency, cost, or task accuracy.
+- Include behavior, verification, and security signals in operator telemetry when agents can call tools, cross trust boundaries, or continue across sessions.
+- Track tool-call traces, state transitions, and quality metrics together so semantic failures are not hidden behind infrastructure health.
 
 ## Authoritative Sources
 
@@ -42,6 +46,7 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
+- [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [Application harness patterns](application-harness-patterns.md)
 
 ## Related Code
@@ -74,3 +79,4 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - Maintained on 2026-06-26 with remote provisioning, background-agent visibility, permission-denial, authentication, telemetry, and cleanup states.
 - Maintained on 2026-06-28 with semantic-failure telemetry, trace summaries, and evaluation outcomes.
 - Maintained on 2026-06-30 with context-optimization telemetry for compression, cache hits, retrieval fallbacks, provenance, latency, and drift checks.
+- Maintained on 2026-07-03 with behavior, verification, state-transition, and security-posture telemetry for agentic workflows.

@@ -17,6 +17,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds a wiki-memory signal. File-based wiki memory works best when raw sources are synthesized into compact, persistent, inspectable knowledge that agents can reload over time. The local boundary is that wiki memory is maintained compiled context: it improves reuse and reviewability, but it still depends on source provenance, freshness checks, and periodic correction.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a code-review memory pattern. Persistent review memory should have explicit fields for repository history, prior comments, project rules, file metadata, and developer or team feedback, then feed context assembly and result persistence. That memory is useful only when tagging, retrieval precision, retention, and governance are part of the design.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -28,6 +30,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Treat reusable agent memory as a maintained source-backed layer, not as unreviewed prompt accumulation.
 - Prefer compact, source-backed, inspectable wiki memory for reusable agent knowledge rather than repeated raw chunk stuffing.
 - Refresh or correct wiki memory from provenance when source facts drift or a later run exposes a contradiction.
+- Define memory dimensions before storing review facts, including repository, file, team, reviewer, decision, and feedback scope.
+- Keep memory retrieval precise enough that prior comments and team decisions inform the current review without turning unrelated history into hidden instructions.
 
 ## Authoritative Sources
 
@@ -36,6 +40,7 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - [source workflows](../source-workflows/index.md)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 
 ## Related Code
 
@@ -64,3 +69,4 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Created on 2026-06-23 to hold source-of-truth and compiled-view boundaries.
 - Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.
 - Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.
+- Maintained on 2026-07-03 with persistent code-review memory dimensions, tagging, retrieval precision, retention, and governance.

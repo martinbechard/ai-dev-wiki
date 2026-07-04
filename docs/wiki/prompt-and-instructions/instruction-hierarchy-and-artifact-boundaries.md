@@ -21,6 +21,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds enterprise-managed settings as another instruction boundary. Organization-level assistant configuration, plugin controls, model defaults, and bypass-permission settings are durable policy artifacts. They should be treated as higher-authority operating controls than user preferences, while still remaining separate from source evidence, retrieved content, and one-off task prompts.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds vendor skill packages as an intake case. Domain-specific agent skills are not automatically local instructions; they are external procedural source material until a maintainer reviews scope, trust, version, allowed tools, and local adaptation. Once accepted, the local copy should state its authority and verification standard.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -34,6 +36,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Pair durable instructions and agent definitions with hooks, provenance validation, permission constraints, and tool-scope checks when those artifacts can affect code or delivery systems.
 - Treat enterprise-managed assistant settings and model defaults as durable policy artifacts, not as ordinary task-prompt content.
 - Keep managed policy files, repository procedures, reusable skills, and source evidence distinct when they all appear in the same request package.
+- Label vendor-authored skill content as external source evidence until it is reviewed and promoted into a local project, team, or personal instruction surface.
+- Pin accepted third-party instructions to a version or source snapshot, and record which local maintainer owns updates.
 
 ## Authoritative Sources
 
@@ -47,6 +51,7 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 
 ## Related Code
 
@@ -78,3 +83,4 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Maintained on 2026-06-25 with Agent Experience and plugin-SDLC artifact boundaries across instructions, skills, MCP surfaces, issues, and RFCs.
 - Maintained on 2026-06-28 with hook-based instruction enforcement and deterministic agent-configuration validation.
 - Maintained on 2026-07-01 with enterprise-managed settings, model defaults, plugin controls, and bypass-permission settings as durable policy artifacts.
+- Maintained on 2026-07-03 with third-party vendor skill intake, version pinning, authority labeling, and maintainer ownership.

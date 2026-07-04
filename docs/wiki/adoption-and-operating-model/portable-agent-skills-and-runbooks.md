@@ -17,6 +17,8 @@ Runbooks compose skills into reliable workflows. A skill answers what one reusab
 
 The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) reinforces procedural debt as an operating risk. Portable skills and runbooks should record trigger rules, boundaries, required tools, ownership, and verification standards in a reusable artifact rather than leaving procedure inside a single vendor workspace, chat history, or personal prompt collection.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a third-party skill intake boundary. Vendor-published agent skills can package domain integration instructions for coding agents, but local adoption should review trust, versioning, scope, and project fit before importing those instructions into a repository or team workflow.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -27,6 +29,8 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 - Keep Open Skills as source evidence for the local practice lens; broad ecosystem tracking for agent tools and product catalogs remains upstream.
 - Store recurring procedures where the team can review ownership, trigger rules, tool requirements, and verification expectations.
 - Avoid vendor-local procedure drift by keeping portable runbooks aligned with project or team source-of-truth rules.
+- Treat third-party skill packs as source material until reviewed, pinned, adapted, and assigned an owner in the local instruction hierarchy.
+- Record whether a skill is vendor-owned, project-owned, team-owned, or personal so future agents know where updates and accountability belong.
 
 ## Authoritative Sources
 
@@ -35,6 +39,7 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 - [instruction hierarchy and artifact boundaries](../prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md)
 - [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 
 ## Related Code
 
@@ -63,3 +68,4 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 
 - Created on 2026-06-23 from source-backed guidance on portable procedures, runbook composition, scope boundaries, procedural debt, and proof standards for agent work.
 - Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.
+- Maintained on 2026-07-03 with third-party skill intake, ownership, trust review, version pinning, and local adaptation boundaries.

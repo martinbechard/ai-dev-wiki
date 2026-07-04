@@ -23,6 +23,8 @@ The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-d
 
 The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) reinforces the same pattern for larger corpora. Search-backed retrieval should identify candidate files or passages, then the agent should read targeted evidence before making code, review, or documentation claims. Reading every available file is a scalability and provenance risk when search, facets, and exact paths can narrow the working set.
 
+The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a review-memory boundary. Broad codebase RAG is not always worth its maintenance cost for code review when agents can inspect the working tree directly. Retrieval earns its place when it supplies evidence that is hard to rediscover from current files, such as prior PR comments, repeated feedback, team decisions, and project-specific review memory.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -37,6 +39,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Treat unnecessary context gathering as a cost and distraction risk when it does not add source evidence.
 - Use search and metadata filters to narrow large repositories or document corpora before reading exact source files.
 - Record the targeted reads that verified retrieved candidates so reduced context remains reviewable.
+- Separate source-code retrieval from review-memory retrieval: current files should usually be inspected directly, while durable review history and team decisions need explicit memory capture.
+- Measure retrieval value against review quality, latency, cost, maintenance load, and whether the evidence could have been recovered from ordinary repository tools.
 
 ## Authoritative Sources
 
@@ -49,6 +53,7 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
+- [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 
 ## Related Code
 
@@ -79,3 +84,4 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Maintained on 2026-06-26 with review-depth settings, repository exploration paths, and engineering-memory retrieval signals.
 - Maintained on 2026-06-27 with scoped retrieval and context-gathering efficiency as review evidence controls.
 - Maintained on 2026-07-01 with search-backed corpus narrowing, metadata filters, targeted reads, and reviewable reduced-context evidence.
+- Maintained on 2026-07-03 with code-review memory boundaries and retrieval economics for prior review decisions.
