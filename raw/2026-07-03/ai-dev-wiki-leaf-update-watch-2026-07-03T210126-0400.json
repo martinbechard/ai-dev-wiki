@@ -1,0 +1,427 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-03T21:01:26-04:00",
+  "cutoff_window": {
+    "start": "2026-06-26T21:01:26-04:00",
+    "end": "2026-07-03T21:01:26-04:00",
+    "rule": "Only sources published or visibly updated within the last 7 days relative to run_timestamp qualify; ambiguous, missing, future, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md"
+  ],
+  "source_urls_checked": [
+    "https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/",
+    "https://agentic-patterns.com/patterns/structured-output-specification/",
+    "https://atlan.com/know/context-layer-for-ai-agents/",
+    "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/",
+    "https://docs.coderabbit.ai/changelog",
+    "https://mlflow.org/articles/monitoring-agentic-ai-in-production-2026-guide/",
+    "https://www.augmentcode.com/guides/ai-agent-monitoring",
+    "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+    "https://www.creativebloq.com/ai/godots-ai-ban-is-a-reality-check-for-vibe-coders",
+    "https://www.digitalapplied.com/blog/context-engineering-agent-reliability-playbook-2026",
+    "https://www.exabeam.com/blog/company-news/whats-new-in-new-scale-july-2026-ai-agents-need-more-than-guardrails/",
+    "https://www.oreilly.com/radar/the-ai-agents-stack-2026-edition/",
+    "https://www.taskade.com/blog/context-engineering",
+    "https://www.techradar.com/pro/speed-without-control-is-a-liability-not-an-advantage-gitlab-study-reveals-ai-code-generation-is-outpacing-controls",
+    "https://www.tomshardware.com/tech-industry/cyber-security/ai-coding-agents-can-be-tricked-into-installing-malware-via-clean-github-repositories-mozillas-0din-team-shows-how-claude-code-can-be-exploited-by-its-own-helpfulness",
+    "https://www.truefoundry.com/blog/jit-context-just-in-time-context-agents"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.exabeam.com/blog/company-news/whats-new-in-new-scale-july-2026-ai-agents-need-more-than-guardrails/",
+      "source_title": "What’s New in New-Scale July 2026: AI Agents Need More Than Guardrails",
+      "published_or_updated_at": "2026-07-01",
+      "visible_date_evidence": "Article header shows Jul 01, 2026.",
+      "factual_summary": "Exabeam announced July 2026 agent-security capabilities including open-source agent verification and telemetry projects, expanded AI observability with Claude support, additional Agent Behavior Analytics detections, and OWASP Agentic Top 10 coverage scoring.",
+      "why_it_matters_for_leaf": "Supports local guidance that user-visible and operator-visible telemetry should cover agent behavior, verification, and security posture rather than only application health.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Exabeam",
+        "Anthropic Claude",
+        "Agent Behavior Analytics",
+        "OWASP Agentic Top 10",
+        "Exabeam Nova",
+        "Outcomes Navigator"
+      ],
+      "upstream_owned_entities": [
+        "Exabeam",
+        "Anthropic Claude",
+        "OWASP Agentic Top 10"
+      ],
+      "local_practice_implication": "Telemetry leaves should distinguish security and behavior signals from generic progress reporting when ingestion updates the wiki.",
+      "follow_up_note": "Route product and standard background upstream; keep only the local telemetry/governance implication in this wiki."
+    },
+    {
+      "source_url": "https://mlflow.org/articles/monitoring-agentic-ai-in-production-2026-guide/",
+      "source_title": "Monitoring Agentic AI in Production: 2026 Guide",
+      "published_or_updated_at": "2026-06-27",
+      "visible_date_evidence": "Article header shows June 27, 2026.",
+      "factual_summary": "MLflow describes agentic monitoring as tracking reasoning loops, tool calls, and state transitions across sessions, with both performance and quality metrics needed to detect semantic failures before users experience them.",
+      "why_it_matters_for_leaf": "Reinforces that local runtime telemetry should expose multi-step agent state and quality signals, not just infrastructure metrics.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "MLflow"
+      ],
+      "upstream_owned_entities": [
+        "MLflow"
+      ],
+      "local_practice_implication": "Progress and telemetry pages should frame agent observability around traces, tool calls, state transitions, and quality checks.",
+      "follow_up_note": "Keep MLflow product details upstream-owned; ingest the local telemetry criteria only if updating the leaf."
+    },
+    {
+      "source_url": "https://www.creativebloq.com/ai/godots-ai-ban-is-a-reality-check-for-vibe-coders",
+      "source_title": "Godot’s AI ban is a reality check for vibe coders",
+      "published_or_updated_at": "2026-07-02",
+      "visible_date_evidence": "Article header shows Published 2 July 2026.",
+      "factual_summary": "Creative Bloq reports that Godot plans to ban AI-authored code, AI-submitted pull requests, and most AI-written human-to-human contribution text, citing low-quality PRs, reviewer burden, and inability of AI-heavy submitters to repair reviewed code.",
+      "why_it_matters_for_leaf": "Provides a concrete public example that generated-code review, PR packaging, and AI-assisted TDD guidance must account for maintainer burden and contributor responsibility.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "Godot Foundation",
+        "Godot",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Godot",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Local practice should keep AI-generated changes small, reviewable, attributable, tested, and repairable by the submitting human or agent workflow.",
+      "follow_up_note": "Route Godot ecosystem policy background upstream; keep the local maintainer-burden lesson here."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/speed-without-control-is-a-liability-not-an-advantage-gitlab-study-reveals-ai-code-generation-is-outpacing-controls",
+      "source_title": "Speed without control is a liability, not an advantage: GitLab study reveals AI code generation is outpacing controls",
+      "published_or_updated_at": "2026-06-30",
+      "visible_date_evidence": "Article header shows published 30 June 2026.",
+      "factual_summary": "TechRadar summarizes GitLab study findings that AI code generation increases speed, but review, validation, governance, provenance, and maintainability are becoming downstream constraints; 85 percent cited code review and validation as the bigger bottleneck.",
+      "why_it_matters_for_leaf": "Supports local coding-practice leaves that treat verification, provenance, and maintainability as first-class outputs of AI-assisted coding work.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "named_entities": [
+        "GitLab",
+        "TechRadar"
+      ],
+      "upstream_owned_entities": [
+        "GitLab"
+      ],
+      "local_practice_implication": "Refactoring and PR packaging guidance should continue to emphasize traceable review evidence and maintainable diffs over raw generation speed.",
+      "follow_up_note": "Do not duplicate GitLab report background locally; ingest the local review/governance implication if needed."
+    },
+    {
+      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/ai-coding-agents-can-be-tricked-into-installing-malware-via-clean-github-repositories-mozillas-0din-team-shows-how-claude-code-can-be-exploited-by-its-own-helpfulness",
+      "source_title": "AI coding agents can be tricked into installing malware via clean GitHub repositories",
+      "published_or_updated_at": "2026-06-28",
+      "visible_date_evidence": "Article header shows Published 28 June 2026.",
+      "factual_summary": "Tom’s Hardware reports Mozilla 0din research showing a coding agent can be induced to run malware from a seemingly clean repository through indirect setup instructions, DNS TXT indirection, and helpful remediation behavior.",
+      "why_it_matters_for_leaf": "Local runtime harness guidance should treat cloned repositories, setup scripts, network access, and agent-helpfulness loops as execution risks in local model and coding-agent environments.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Mozilla 0din",
+        "Claude Code",
+        "GitHub",
+        "Axiom"
+      ],
+      "upstream_owned_entities": [
+        "Mozilla 0din",
+        "Claude Code",
+        "GitHub",
+        "Axiom"
+      ],
+      "local_practice_implication": "Local harness pages should prefer explicit execution gates, repository trust checks, and inspection of setup commands before agent-run commands execute.",
+      "follow_up_note": "Route vulnerability/ecosystem background upstream; retain local harness control implications."
+    },
+    {
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "source_title": "CodeRabbit changelog: Quiet review profile",
+      "published_or_updated_at": "2026-07-02",
+      "visible_date_evidence": "Changelog entry shows PR Reviews, July 2, 2026.",
+      "factual_summary": "CodeRabbit published a PR review changelog entry for a quiet review profile, indicating continued product movement toward configurable AI review behavior.",
+      "why_it_matters_for_leaf": "Configurable review noise is relevant to intelligent-code-review guidance because AI review tools must balance useful findings with reviewer attention limits.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "CodeRabbit"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "Review guidance should preserve the idea that review assistants need signal controls, not just broader coverage.",
+      "follow_up_note": "Use as product-specific evidence only if the leaf needs an example; upstream owns CodeRabbit product tracking."
+    },
+    {
+      "source_url": "https://atlan.com/know/context-layer-for-ai-agents/",
+      "source_title": "Context Layer for AI Agents: Enterprise Guide 2026",
+      "published_or_updated_at": "2026-06-30",
+      "visible_date_evidence": "Article metadata shows Updated: 06/30/2026.",
+      "factual_summary": "Atlan describes an agent context layer as governed business meaning between data systems and agents, covering semantic definitions, entity identity, policy enforcement, lineage, active metadata, and decision memory; it distinguishes context layers from RAG and semantic layers alone.",
+      "why_it_matters_for_leaf": "Supports context-router, knowledge-layer, rules-layer, thin-router, and analytics-context leaves by framing context as governed meaning and provenance rather than raw retrieval.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "named_entities": [
+        "Atlan",
+        "MCP",
+        "Open Semantic Interchange",
+        "Apache Iceberg",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        "Atlan",
+        "MCP",
+        "Open Semantic Interchange",
+        "Apache Iceberg",
+        "OpenAI"
+      ],
+      "local_practice_implication": "Context architecture guidance should keep retrieval separate from governed meaning, provenance, and decision memory.",
+      "follow_up_note": "Route vendor and standard background upstream; keep downstream lens on context-layer operating practice."
+    },
+    {
+      "source_url": "https://www.taskade.com/blog/context-engineering",
+      "source_title": "Context Engineering: The Complete 2026 Field Guide for AI Developers",
+      "published_or_updated_at": "2026-06-27",
+      "visible_date_evidence": "Article metadata shows Updated June 27, 2026.",
+      "factual_summary": "Taskade frames context engineering as managing system prompts, tools, memory, retrieval, and state, with patterns including persistent context restoration, tool gating, context compression, retrieval budgeting, and multi-agent context sharing.",
+      "why_it_matters_for_leaf": "Supports multiple context-architecture leaves by reinforcing durable distinctions between memory, retrieval, state, compaction, and routing.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "named_entities": [
+        "Taskade"
+      ],
+      "upstream_owned_entities": [
+        "Taskade"
+      ],
+      "local_practice_implication": "Context leaves should continue to separate persisted state, curated memory, retrieval budget, and compaction responsibilities.",
+      "follow_up_note": "Keep Taskade product detail upstream-owned; ingest the context-architecture pattern implications only."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.augmentcode.com/guides/ai-agent-monitoring",
+      "candidate_title": "AI Agent Monitoring: 2026 Observability Guide",
+      "reason": "Search result said last week, but the opened page did not expose a precise visible publication or update date in retrieved content.",
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ]
+    },
+    {
+      "source_url": "https://www.businessinsider.com/ai-coding-agents-cursor-human-review-2026-6",
+      "candidate_title": "AI coding agents gain trust as developers skip reviews",
+      "reason": "Search result said 5 days ago, but the opened page did not expose a precise visible publication date in retrieved content.",
+      "candidate_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ]
+    },
+    {
+      "source_url": "https://aaif.io/blog/karpathys-llm-wiki-as-agent-memory/",
+      "candidate_title": "Karpathy’s LLM Wiki as Agent Memory",
+      "reason": "Search result indicated about 3 weeks ago, outside the 7-day window, and opened content did not expose a precise visible date.",
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ]
+    },
+    {
+      "source_url": "https://www.digitalapplied.com/blog/context-engineering-agent-reliability-playbook-2026",
+      "candidate_title": "Context Engineering: Agent Reliability Playbook 2026",
+      "reason": "Visible publication date was May 26, 2026, outside the 7-day window.",
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ]
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/jit-context-just-in-time-context-agents",
+      "candidate_title": "Just-in-Time Context for AI Agents: A Runtime Discipline",
+      "reason": "Opened page did not expose a precise visible publication or update date for the article; recent-blog dates on the page are not evidence for this candidate.",
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ]
+    },
+    {
+      "source_url": "https://www.oreilly.com/radar/the-ai-agents-stack-2026-edition/",
+      "candidate_title": "The AI Agents Stack (2026 Edition)",
+      "reason": "Search result said 3 weeks ago and opened page did not expose a precise visible publication or update date in retrieved content.",
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ]
+    },
+    {
+      "source_url": "https://developer.nvidia.com/blog/run-local-ai-agents-with-faster-models-and-multi-node-clustering-on-nvidia-dgx-spark/",
+      "candidate_title": "Run Local AI Agents with Faster Models and Multi-Node Clustering on NVIDIA DGX Spark",
+      "reason": "Search result indicated last month; outside or ambiguous for the strict 7-day window and broad hardware/product facts are upstream-owned.",
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ]
+    },
+    {
+      "source_url": "https://agentic-patterns.com/patterns/structured-output-specification/",
+      "candidate_title": "Structured Output Specification",
+      "reason": "No precise visible publication or update date was available in search/opened evidence.",
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ]
+    }
+  ],
+  "counts": {
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 16,
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 8
+  },
+  "federation_routing": {
+    "rule": "Broad ecosystem entity updates are upstream-owned; this artifact records only local practice implications for the downstream AI development wiki.",
+    "upstream_owned_entities": [
+      "Anthropic Claude",
+      "Apache Iceberg",
+      "Atlan",
+      "Axiom",
+      "Claude Code",
+      "CodeRabbit",
+      "Cursor",
+      "Exabeam",
+      "GitHub",
+      "GitHub Copilot",
+      "GitLab",
+      "Godot",
+      "MCP",
+      "MLflow",
+      "Mozilla 0din",
+      "OWASP Agentic Top 10",
+      "Open Semantic Interchange",
+      "OpenAI",
+      "Taskade"
+    ]
+  },
+  "leaf_follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/application-patterns/local-model-runtime-harness.md",
+      "last_qualified_update_at": "2026-06-28",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "last_qualified_update_at": null,
+      "follow_up_note": "No qualifying public update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+      "last_qualified_update_at": "2026-07-01",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/ai-assisted-tdd.md",
+      "last_qualified_update_at": "2026-07-02",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "last_qualified_update_at": "2026-06-27",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "last_qualified_update_at": "2026-07-02",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "last_qualified_update_at": "2026-07-02",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "last_qualified_update_at": "2026-07-02",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "last_qualified_update_at": "2026-06-27",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "last_qualified_update_at": "2026-06-30",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "last_qualified_update_at": "2026-06-27",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "last_qualified_update_at": "2026-06-27",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "last_qualified_update_at": "2026-07-01",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "last_qualified_update_at": "2026-06-30",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "last_qualified_update_at": "2026-06-30",
+      "follow_up_note": "Review qualifying updates for local practice implications and upstream routing."
+    }
+  ]
+}
