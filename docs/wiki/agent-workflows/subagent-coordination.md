@@ -19,6 +19,8 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 
 The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) treats coding subagent configuration as an explicit engineering activity. The local pattern is a typed delegation agreement: role boundary, context budget, allowed sources, handoff contract, completion criteria, and validation owner are set before the subagent starts work.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds role-and-skill separation for subagent systems. Specialized workers should have role definitions, objectives, tool budgets, return shapes, and moderation or validation loops, while reusable skills provide procedure. A coordinator may serve both, but local workflow design should keep the artifacts and accountability separate.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -28,6 +30,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - Give recurring subagent loops a durable state record, retry or stop rule, budget boundary, and validation expectation.
 - Use a separate verifier when a subagent performs broad generation, security-sensitive analysis, or recurring unattended work.
 - Define subagent role boundaries, context budgets, source access, handoff fields, and completion criteria as a delegation contract.
+- Keep worker roles, objectives, tool budgets, return shapes, and validation loops explicit when delegating through a coordinator.
+- Do not let reusable skill content substitute for a role boundary or validation owner.
 
 ## Authoritative Sources
 
@@ -36,6 +40,7 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 
 ## Related Code
 
@@ -66,3 +71,4 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 - Created on 2026-06-23 from source-backed subagent, specialist-agent, and integration guidance.
 - Maintained on 2026-06-23 with public loop-design guidance on recurring subagent loops, independent validation, and stop conditions.
 - Maintained on 2026-06-28 with typed delegation contracts for subagent configuration.
+- Maintained on 2026-07-04 with coordinator-served roles, tool budgets, return shapes, and role-versus-skill boundaries.

@@ -31,6 +31,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) adds browser-observation and build-aware context signals. Browser tools can turn live UI state into agent evidence, but permission, domain, and reproducibility controls still decide whether the observation is sufficient or needs logs and tests. Language-server setup skills and compile-command generation are retrieval preparation steps: they should be reviewed as context-building tools, not as permission to edit without build or import verification.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) add trusted-catalog, tool-description, and semantic-MCP signals. Tool descriptions, schema text, catalog entries, routing decisions, and returned business context are part of the trusted execution surface. They need provenance review, re-approval when action surfaces change, invocation evidence, deterministic verification checks, and governed semantic definitions when agents retrieve enterprise metrics.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -55,6 +57,9 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Curate generated MCP tools for task fit, least privilege, schema clarity, and data exposure before allowing agents to use them.
 - Treat browser observations as evidence that still needs permission bounds, allowed domains, and reproducible verification when decisions depend on live UI behavior.
 - Govern build-aware context generation, language-server setup, and compile-command refreshes as retrieval tools whose outputs affect coding-agent confidence.
+- Treat MCP server approval, tool descriptions, schema text, catalog entries, and routing records as auditable supply-chain inputs.
+- Re-approve MCP tools when metadata, action scope, authentication, or returned-data authority changes.
+- Pair governed data-access MCP tools with semantic definitions, source truth, and execution monitoring.
 
 ## Authoritative Sources
 
@@ -74,6 +79,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md)
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -111,3 +118,4 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Maintained on 2026-07-01 with tool-description poisoning, Team MCP catalog, organization-scope, and native agent command-surface governance.
 - Maintained on 2026-07-01 with browser-tool, admin-capable remote MCP, and generated API-to-MCP curation boundaries.
 - Maintained on 2026-07-02 with browser-observation evidence controls and build-aware context-generation governance.
+- Maintained on 2026-07-04 with trusted MCP catalogs, tool-description change control, routing evidence, and governed semantic data access.

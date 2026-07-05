@@ -23,6 +23,8 @@ The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Ha
 
 The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds reproducible environment evaluation signals. Long-running stateful-agent evals should include the environment, instruction, created artifacts, tool trace, and deterministic check script. The evaluation target is whether the agent changed the environment correctly under the intended constraints, not whether the final message describes a plausible outcome.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds platform and agentic-testing trajectory signals. Agent-platform runs should preserve control-plane decisions, model routing, tool calls, memory and retrieval events, sandbox boundaries, and runtime observations. Fully agentic tests need trajectory evidence because the path is selected during execution, not pre-authored in a script.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -36,6 +38,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Whether model or harness changes were tested against representative local terminal, coding, review, and repair tasks before autonomy changed.
 - Whether a behavior needs a single-step regression check, a full-run outcome check, live trace monitoring, or a capability benchmark.
 - Whether the eval includes the environment, instruction, created artifacts, tool trace, and deterministic checker needed to reproduce the outcome.
+- Whether platform-layer decisions, model routing, memory access, retrieval, tool calls, and sandbox boundaries are visible in the trace.
+- Whether an agentic test loop records planned path, observations, adaptations, and stopping criteria.
 
 ## Practice Boundaries
 
@@ -48,6 +52,7 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Treat public benchmark gains as candidate eval inputs, not as local authorization to increase tool or write access.
 - Use behavioral unit evals for expected next actions, integration evals for final artifacts, online evals for deployed trend monitoring, and benchmarks for capability-level comparison.
 - Prefer environment-backed eval datasets for long-running agents when correctness depends on filesystem, tool, browser, or service state.
+- Evaluate platform agent runs at the trajectory level when control-plane, runtime, memory, retrieval, or tool decisions affect trust.
 
 ## Authoritative Sources
 
@@ -59,6 +64,7 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 
 ## Related Code
 
@@ -89,3 +95,4 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Maintained on 2026-06-27 with cross-run agreement, environment-design, and benchmark-to-local-suite routing rules.
 - Maintained on 2026-06-30 with behavioral unit, integration, online, and benchmark eval shape guidance.
 - Maintained on 2026-07-02 with environment-backed stateful-agent eval datasets and deterministic checker requirements.
+- Maintained on 2026-07-04 with platform-layer traces and agentic-testing trajectory evidence.

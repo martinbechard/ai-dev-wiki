@@ -19,6 +19,8 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 
 The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) adds background-agent handoff signals. Persistent workspaces need completion, input-needed, draft-PR, inherited-configuration, and subagent-state cues so background coding sessions can be recovered and reviewed without guessing from a chat transcript.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a coordinator-worker signal. Recurring or parallel coding-agent work benefits from stable coordinator state, queues, callbacks, locks, session history, and handoff messages, while worker sessions should still start fresh with scoped instructions and current repository evidence.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -29,6 +31,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Archive or reset stale workspace state when it no longer reflects the live repository or accepted plan.
 - Use worktrees for parallel human and agent work only when branch purpose, ownership, and merge evidence are visible.
 - Record background-agent completion state, input-needed state, draft PR links, inherited reasoning or configuration settings, and subagent state when a workspace continues without direct supervision.
+- Use coordinator state for queues, callbacks, locks, session history, and cross-project handoffs when many coding-agent sessions run in parallel.
+- Keep worker sessions scoped and freshly oriented even when a coordinator preserves long-lived operational state.
 
 ## Authoritative Sources
 
@@ -38,6 +42,7 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - [AI process layer and workflow state](../application-patterns/ai-process-layer-and-workflow-state.md)
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 
 ## Related Code
 
@@ -66,3 +71,4 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.
 - Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.
 - Maintained on 2026-07-02 with background-agent notification, draft-PR handoff, inherited-configuration, and subagent-state signals.
+- Maintained on 2026-07-04 with coordinator-worker queues, callbacks, locks, session history, and handoff state.

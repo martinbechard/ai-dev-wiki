@@ -23,6 +23,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds shadow-agent and destructive-command controls. Local governance should inventory developer-side agents and MCP connections, capture audit evidence for tool invocation and data access, and treat recursive deletion, cleanup, quoting-sensitive shell operations, and path-crossing commands as a higher-risk action class. User-generated incident reports should be used only for the control lesson, without copying personal details.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) add executable-compliance and governed-semantics signals. Agent governance should turn recurring compliance rules into automated pull-request checks where possible, and data-agent workflows should rely on governed semantic definitions, source truth, and execution monitoring rather than policy prose alone.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -47,6 +49,8 @@ The detailed control leaves are:
 - Inventory shadow agents, local MCP servers, connector grants, and developer-side tool paths that can bypass centrally managed visibility.
 - Require command previews, normalized working directories, path-containment checks, backups or restore points, and explicit approval before destructive file operations.
 - Capture who invoked which agent tool, what data or repository scope it touched, and which policy allowed or blocked the action.
+- Encode recurring compliance requirements as automated checks when they can be tested at pull-request time.
+- Require governed semantic definitions, source-truth labels, and execution monitoring before agents retrieve or act on business metrics.
 
 ## Authoritative Sources
 
@@ -62,6 +66,8 @@ The detailed control leaves are:
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -97,3 +103,4 @@ The detailed control leaves are:
 - Maintained on 2026-06-26 with model-policy, plugin-consent, marketplace, runner, package-account, and deterministic configuration controls.
 - Maintained on 2026-06-29 with inherited-permission checks, runtime enforcement, escalation, and audit-control evidence.
 - Maintained on 2026-07-03 with shadow-agent inventory, MCP audit evidence, and destructive shell-command containment controls.
+- Maintained on 2026-07-04 with executable compliance checks, governed semantics, source truth, and execution monitoring.

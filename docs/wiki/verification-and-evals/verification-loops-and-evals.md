@@ -21,6 +21,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md) reinforces verification and observability as separate reliability primitives. A harness should ask for receipts such as tests, builds, screenshots, source tables, traces, tool timelines, cost, latency, prompt versions, and approval events. The local loop should turn repeated misses into stricter schemas, permission gates, memories, skills, or eval cases.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a testing taxonomy for agentic workflows. Verification should distinguish AI-authored test artifacts, self-healing scripted tests, and fully agentic test loops where an agent plans, acts, observes runtime signals, and adapts without a hand-authored path underneath. Those modes need different evidence, ownership, and acceptance criteria.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -35,6 +37,8 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - Attribute failed agent runs to harness inputs, permissions, tools, scoring, and observability before changing models.
 - Escalate from cheap diagnostics to expensive verification when uncertainty, risk, or reviewer cost justifies the extra evidence.
 - Convert repeated verification failures into harness changes such as stronger schemas, permission gates, stored memories, reusable skills, or regression eval cases.
+- Distinguish generated tests, self-healing scripted tests, and agentic runtime test loops before accepting test evidence.
+- Require trace, observation, and path-choice evidence when a test agent owns the execution path rather than only authoring a script.
 
 ## Authoritative Sources
 
@@ -47,6 +51,7 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 
 ## Related Code
 
@@ -82,3 +87,4 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 - Maintained on 2026-06-27 with artifact-level acceptance criteria and progress-output continuity checks.
 - Maintained on 2026-06-28 with harness-level failure attribution and cost-sensitive verification depth.
 - Maintained on 2026-06-30 with receipts, traceability, and post-failure harness hardening guidance.
+- Maintained on 2026-07-04 with generated-test, self-healing-script, and agentic-test-loop boundaries.

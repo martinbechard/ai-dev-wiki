@@ -35,6 +35,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json) adds workflow identity, session-audit, and trace-log hygiene signals. Coding-agent CI runs should prefer scoped workflow identity and explicit permissions over long-lived personal tokens. Agent-session records, tool calls, prompts, responses, and trace logs are audit evidence, but raw payload retention can expose sensitive development context, so governance infrastructure needs retention, redaction, SIEM routing, and investigation access rules.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) reinforce governance as platform infrastructure. Control-plane responsibilities include identity, tool policy, model routing, sandbox boundaries, trace evidence, compliance checks, and human escalation paths, while data-plane tools and retrieved business context need semantic governance and source-truth enforcement.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -62,6 +64,9 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Record override, bypass, and model-default decisions when they affect authority, cost, repeatability, or review evidence.
 - Prefer scoped workflow identity and explicit automation permissions over stored personal tokens for unattended coding-agent jobs.
 - Define retention, redaction, and access rules for agent-session streams, tool-call transcripts, prompts, responses, and trace logs before routing them to audit systems.
+- Separate control-plane policy, identity, routing, and audit responsibilities from data-plane tool execution and retrieval.
+- Keep human escalation paths and validation capacity visible when regulated or audit-heavy work adopts agentic workflows.
+- Treat semantic layers and compliance checks as governance infrastructure when agents can act on enterprise data or pull requests.
 
 ## Authoritative Sources
 
@@ -82,6 +87,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -123,3 +130,4 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 - Maintained on 2026-07-01 with read-only default investigation, scoped approved actions, sandbox validation, and agent-requester-approver attribution.
 - Maintained on 2026-07-01 with enterprise managed settings, model defaults, plugin controls, browser-tool enablement, and budget caps as control-plane evidence.
 - Maintained on 2026-07-02 with scoped workflow identity, agent-session audit streams, and trace-log hygiene requirements.
+- Maintained on 2026-07-04 with platform control-plane boundaries, governed semantics, compliance checks, and human escalation capacity.

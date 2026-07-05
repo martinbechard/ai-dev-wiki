@@ -21,6 +21,8 @@ The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-d
 
 The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) adds two hostile-input cases. MCP tool descriptions can be poisoned so an acting agent treats changed metadata as task instruction, and malware samples can embed fake system-message text to mislead LLM-assisted reverse engineering. Tool metadata, binary strings, analyst notes, and extracted artifacts must stay in the evidence channel unless a governed control explicitly promotes them.
 
+The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) adds a role-confusion signal. Role tags, labels, and reasoning-style formatting are not sufficient defenses when untrusted text can imitate trusted reasoning, hidden webpage commands, or user intent. The harness still needs source-origin labels, tool-output isolation, and deterministic permission checks before untrusted content can influence actions.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -34,6 +36,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Treat agentjacking as an indirect prompt-injection path: the dangerous instruction may be hidden inside data from an approved tool, not only inside a webpage or prompt.
 - Prefer credential brokering or scoped connectors over placing reusable secrets directly in agent context or tool arguments.
 - Treat tool descriptions, tool metadata changes, malware strings, and reverse-engineering traces as untrusted source evidence until policy review says otherwise.
+- Do not rely on role labels or reasoning-style formatting as the only boundary against untrusted content.
+- Treat hidden webpage commands and reasoning-like content as source evidence until a trusted instruction channel authorizes action.
 
 ## Authoritative Sources
 
@@ -45,6 +49,7 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -77,3 +82,4 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Maintained on 2026-06-24 with MCP and tool-output trust-boundary guidance for coding-agent workflows.
 - Maintained on 2026-06-25 with agentjacking and credential-broker controls for MCP-connected coding-agent workflows.
 - Maintained on 2026-07-01 with MCP tool-description poisoning and malware-analysis prompt-injection cases.
+- Maintained on 2026-07-04 with role-confusion, hidden-command, and reasoning-style injection boundaries.

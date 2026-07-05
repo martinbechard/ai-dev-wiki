@@ -27,6 +27,8 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 
 The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) reinforces the harness as the execution boundary around model reasoning. Execution environment, memory, filesystem access, tool access, subagent orchestration, capability bridges, durable pause and resume, and deterministic evaluation scripts are harness responsibilities. A harness should distinguish orchestration-by-code from broad shell access and make isolated environments inspectable for long-running agent work.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds an agent-platform layering signal. Orchestration, model inference, tools, memory, retrieval, control plane, and runtime should be treated as separable platform responsibilities so local architecture decisions can assign ownership, telemetry, policy enforcement, and runtime isolation without collapsing the whole system into prompt design.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -46,6 +48,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Diagnose failures against the harness primitive that owns the missing support: instruction, context, tool schema, environment, durable state, orchestration, delegation, skill procedure, verification, or traceability.
 - Treat execution environment, memory, filesystem access, tool bridges, subagent orchestration, durable pauses, and deterministic evaluators as explicit harness components.
 - Prefer narrow capability bridges and inspectable isolated environments when agents execute generated code or delegate dynamic subwork.
+- Separate orchestration, model routing, memory, retrieval, tools, control plane, and runtime ownership when designing production agent platforms.
+- Preserve trace evidence across platform layers so long-running agent behavior can be debugged by component responsibility.
 
 ## Authoritative Sources
 
@@ -60,6 +64,7 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -96,3 +101,4 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Maintained on 2026-06-28 with harness-level failure attribution, lifecycle hooks, deterministic configuration validation, and trace evidence.
 - Maintained on 2026-06-30 with the harness primitive taxonomy and primitive-level failure diagnostics.
 - Maintained on 2026-07-02 with execution-boundary, isolated-environment, durable-pause, and deterministic-evaluator signals.
+- Maintained on 2026-07-04 with agent-platform layering, control-plane ownership, and cross-layer trace evidence.

@@ -23,6 +23,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) and [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) add review-capacity and reviewer-attention evidence. AI code generation can increase throughput faster than review, validation, provenance, and maintainability controls can absorb it. Review assistants therefore need signal controls, configurable noise levels, source-backed findings, and clear human repair responsibility rather than broader automatic coverage alone.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) reinforce recall-first review as an operating choice. Broad detection at the merge boundary can be useful when a filtering layer protects reviewer attention, but the workflow still needs repository and dependency evidence, configurable noise tolerance, and a human-owned repair path for correctness, design, release, and risk tradeoffs.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -41,6 +43,9 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Treat review capacity as an operating constraint: generated-code volume must be matched with standards, tests, provenance, maintainability checks, and reviewer-attention controls.
 - Keep AI review comments actionable and adjustable so low-signal noise does not consume the human attention the workflow was meant to protect.
 - Require the submitting workflow to remain able to repair reviewed code; generated changes that cannot be explained, tested, or fixed are not review-ready.
+- Treat recall, precision, filtering, and reviewer attention as separate review-configuration choices.
+- Require repository and dependency evidence before a recall-first reviewer claims cross-file or merge-boundary risk.
+- Keep human repair and release judgment explicit even when AI review broadens defect detection.
 
 ## Authoritative Sources
 
@@ -55,6 +60,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -87,3 +94,4 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Maintained on 2026-06-27 with targeted context gathering and skipped-context residual-risk reporting.
 - Maintained on 2026-06-29 with review-gate evidence for higher generated-code throughput and earlier lifecycle review.
 - Maintained on 2026-07-03 with review-capacity, reviewer-attention, generated-code repairability, and configurable review-signal controls.
+- Maintained on 2026-07-04 with recall-first review, filtering, repository evidence, and human repair boundaries.

@@ -25,6 +25,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a review-memory boundary. Broad codebase RAG is not always worth its maintenance cost for code review when agents can inspect the working tree directly. Retrieval earns its place when it supplies evidence that is hard to rediscover from current files, such as prior PR comments, repeated feedback, team decisions, and project-specific review memory.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) reinforce dependency-aware review evidence. Recall-first review and security remediation workflows need enough repository, dependency graph, scanner, test, and runtime evidence to support cross-file findings without turning every review into an unauditable repository dump.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -41,6 +43,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Record the targeted reads that verified retrieved candidates so reduced context remains reviewable.
 - Separate source-code retrieval from review-memory retrieval: current files should usually be inspected directly, while durable review history and team decisions need explicit memory capture.
 - Measure retrieval value against review quality, latency, cost, maintenance load, and whether the evidence could have been recovered from ordinary repository tools.
+- Include dependency graph, scanner output, test, and runtime evidence when review findings depend on cross-file or security-remediation risk.
+- Keep recall-first and scan-to-merge retrieval paths auditable so broad detection does not hide unsupported source assumptions.
 
 ## Authoritative Sources
 
@@ -54,6 +58,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 
 ## Related Code
 
@@ -85,3 +91,4 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Maintained on 2026-06-27 with scoped retrieval and context-gathering efficiency as review evidence controls.
 - Maintained on 2026-07-01 with search-backed corpus narrowing, metadata filters, targeted reads, and reviewable reduced-context evidence.
 - Maintained on 2026-07-03 with code-review memory boundaries and retrieval economics for prior review decisions.
+- Maintained on 2026-07-04 with dependency-aware review retrieval and scan-to-merge evidence paths.

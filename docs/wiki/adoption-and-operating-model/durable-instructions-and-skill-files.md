@@ -15,6 +15,8 @@ The folder-organization source describes a thin router that points agents toward
 
 The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) adds the portability boundary: reusable procedure should not be trapped in one agent product or copied into drifting tool-specific rule files. This page owns the adoption practice for durable instruction surfaces, while [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md) owns the skill primitive, runbook composition, and procedural-debt lens. [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) owns the context architecture, and [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md) owns how live requests label source material.
 
+The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a freshness and provenance lens for durable instruction files. Rules should carry enough creation reason, affected files or incidents, related code changes, and human confirmation dates for maintainers to detect stale operational memory before an agent keeps following outdated guidance.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -22,6 +24,8 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 - Store active work, decisions, references, and archive material by lifespan so agents do not confuse historical plans with current instructions.
 - Keep safety and permission configuration distinct from prose instructions when enforcement belongs in the harness.
 - Keep portable skills narrow enough that they can move across tools without carrying unrelated project context or personal preferences.
+- Record why durable instruction rules exist, which files or incidents they relate to, and when a human last confirmed them.
+- Review stale instructions when libraries, incident decisions, architecture, or recurring patterns change.
 
 ## Authoritative Sources
 
@@ -29,6 +33,7 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
+- [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 
 ## Related Code
 
@@ -58,3 +63,4 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.
 - Maintained on 2026-06-23 to separate durable instruction placement from portable skill and runbook composition.
+- Maintained on 2026-07-04 with instruction provenance, confirmation dates, and stale-rule review triggers.
