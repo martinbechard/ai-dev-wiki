@@ -1,0 +1,234 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-04T21:02:05-04:00",
+    "rule": "Only sources visibly published or updated within the last 7 days were eligible; missing, ambiguous, future-dated, and boundary-only dates were excluded.",
+    "start": "2026-06-27T21:02:05-04:00"
+  },
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "candidate_summary": "Anthropic newsroom listed Claude Sonnet 5, Claude Science, Fable 5 cyber safeguards, and jailbreak framework items.",
+      "reason": "Excluded because the in-window items are broad product, model, or policy announcements; any durable entity updates belong upstream unless a later ingest identifies a concrete local practice implication.",
+      "source_url": "https://www.anthropic.com/news",
+      "visible_date": "2026-06-30 and 2026-07-02 entries visible on newsroom"
+    },
+    {
+      "candidate_summary": "Agent governance through machine identity, lifecycle, least privilege, and auditability.",
+      "reason": "Excluded because the visible publication date is outside the strict 7-day window ending 2026-07-04T21:02:05-04:00.",
+      "source_url": "https://www.encryptionconsulting.com/ai-agent-governance/",
+      "visible_date": "2026-06-22"
+    },
+    {
+      "candidate_summary": "Agent governance controls including audit logs, approvals, data source restrictions, and cost dashboards.",
+      "reason": "Excluded because no exact visible publication or update date was found on the opened page; search freshness alone was treated as insufficient.",
+      "source_url": "https://vdf.ai/resources/ai-agent-governance/",
+      "visible_date": null
+    },
+    {
+      "candidate_summary": "Code context as evidence behind trustworthy AI code review.",
+      "reason": "Excluded because the opened page did not expose an exact visible publication or update date, despite search freshness indicating last week.",
+      "source_url": "https://www.coderabbit.ai/guides/code-context",
+      "visible_date": null
+    },
+    {
+      "candidate_summary": "Cybersecurity skills for AI agents as reusable instruction files and runtime infrastructure.",
+      "reason": "Excluded because the opened page did not expose an exact visible publication or update date.",
+      "source_url": "https://www.developersdigest.tech/blog/cybersecurity-skills-ai-agents-runtime",
+      "visible_date": null
+    },
+    {
+      "candidate_summary": "Agent skills, plugins, MCP servers, and hierarchical instruction files in Claude Code and Codex.",
+      "reason": "Excluded because the opened page did not expose an exact visible publication or update date, despite search freshness indicating last week.",
+      "source_url": "https://www.mindstudio.ai/blog/how-to-use-ai-agent-skills-plugins-claude-code-codex",
+      "visible_date": null
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entities, products, companies, model families, and reusable background belong to the upstream AI wiki; this raw artifact records only local AI-assisted development practice implications for later ingest.",
+  "follow_up_notes": [
+    "Ingest should route Google Cloud, Looker, Augment, Anthropic, and OpenAI ecosystem background to the upstream AI wiki when entity detail is needed.",
+    "Local synthesis candidates are governance infrastructure, agent identity handoffs, security review gates, prompt-injection authority labels, context packaging, retrieval evidence, RAG provenance, and MCP governance.",
+    "No docs/wiki pages were updated by this watch run."
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "factual_summary": "TechRadar reports that regulated audit and finance teams are adopting agentic AI for testing, documentation, risk assessment, and reporting faster than their operating models, validation skills, escalation paths, and audit trails are adapting.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Highspring",
+        "agentic AI"
+      ],
+      "source_type": "public news analysis",
+      "source_url": "https://www.techradar.com/pro/agentic-ai-adoption-outpaces-governance-in-regulated-industries",
+      "upstream_owned_entities": [
+        "agentic AI"
+      ],
+      "visible_date": "2026-07-02",
+      "why_it_matters": "The item reinforces local governance leaves that treat agent governance as operational infrastructure, not policy prose, and connects lifecycle review gates to human validation capacity and handoff evidence."
+    },
+    {
+      "factual_summary": "Google Cloud describes an agent-based secure SDLC pipeline that cross-references designs against a control catalog, flags high-risk indicators for human engineering intervention, and uses Mantis, a multi-agent framework for context-aware repository analysis with hierarchical summaries that reduce token overhead while preserving structural context.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Mantis",
+        "Cloud CISO Perspectives",
+        "SDLC"
+      ],
+      "source_type": "public vendor security blog",
+      "source_url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-cloud-security-uses-ai-internally",
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Mantis"
+      ],
+      "visible_date": "2026-06-29",
+      "why_it_matters": "The item has direct local-practice implications for AI-assisted security repair gates, lifecycle review gates, promotion gates, retrieval evidence, and context packaging because it frames agentic security as gated, evidence-producing SDLC infrastructure."
+    },
+    {
+      "factual_summary": "Augment Code describes recall-first AI code review as broad merge-boundary detection followed by filtering before developer-facing comments, with codebase-aware analysis and dependency graph understanding used to manage PR risk from AI-assisted multi-file changes.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "named_entities": [
+        "Augment Code",
+        "Augment Code Review",
+        "Augment Cosmos",
+        "Code Review Bench"
+      ],
+      "source_type": "public vendor guide",
+      "source_url": "https://www.augmentcode.com/guides/why-use-recall-first-ai-code-review",
+      "upstream_owned_entities": [
+        "Augment Code",
+        "Augment Cosmos",
+        "Code Review Bench"
+      ],
+      "visible_date": "2026-07-03",
+      "why_it_matters": "The item supports local code-retrieval and lifecycle-gate practice: review agents need enough repository and dependency evidence to catch cross-file defects, while humans still own correctness, design, and release tradeoffs."
+    },
+    {
+      "factual_summary": "Tom's Hardware reports on the Prompt Injection as Role Confusion research and CoT Forgery attack, describing how models can treat text that sounds like trusted reasoning as higher-authority content despite role tags, and how hidden webpage commands can exploit role confusion in agents.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Prompt Injection as Role Confusion",
+        "CoT Forgery",
+        "Charles Ye",
+        "Jasmine Cui",
+        "Dylan Hadfield-Menell",
+        "MIT",
+        "ICML 2026",
+        "OpenAI GPT-OSS-20B red-teaming contest"
+      ],
+      "source_type": "public news report about research",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-models-handed-over-a-cocaine-recipe-after-being-told-the-user-was-wearing-a-green-shirt",
+      "upstream_owned_entities": [
+        "Prompt Injection as Role Confusion",
+        "CoT Forgery",
+        "OpenAI GPT-OSS-20B"
+      ],
+      "visible_date": "2026-07-01",
+      "why_it_matters": "The item strengthens local prompt-injection, instruction-boundary, and request-package leaves: authority labels and role tags are not sufficient defenses when untrusted content can be styled as trusted reasoning or user intent."
+    },
+    {
+      "factual_summary": "Google Cloud describes Looker's semantic layer, Managed MCP, conversational analytics APIs, and LookML agent as ways to ground autonomous AI workflows and data agents in verified enterprise metrics rather than hallucinated guesses.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Looker",
+        "LookML",
+        "Managed MCP",
+        "Gemini Enterprise",
+        "Conversational Analytics API"
+      ],
+      "source_type": "public vendor blog",
+      "source_url": "https://cloud.google.com/blog/products/business-intelligence/looker-in-2026-gartner-analytics-and-bi-platforms-mq",
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Looker",
+        "LookML",
+        "Gemini Enterprise",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-07-01",
+      "why_it_matters": "The item is upstream-owned as a product update, but the local practice implication is relevant to RAG provenance and MCP governance: agents that retrieve or act on business data need governed semantics, source truth, and execution monitoring."
+    }
+  ],
+  "run_timestamp": "2026-07-04T21:02:05-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+  ],
+  "selection_policy": "Build durable leaf universe from Markdown under approved roots; exclude index, digest, broad maintenance, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages unless they are durable local practice leaves; order unchecked leaves first, then oldest last_checked_at, tie-broken by stable relative path.",
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/agentic-ai-adoption-outpaces-governance-in-regulated-industries",
+    "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-cloud-security-uses-ai-internally",
+    "https://www.augmentcode.com/guides/why-use-recall-first-ai-code-review",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-models-handed-over-a-cocaine-recipe-after-being-told-the-user-was-wearing-a-green-shirt",
+    "https://cloud.google.com/blog/products/business-intelligence/looker-in-2026-gartner-analytics-and-bi-platforms-mq",
+    "https://www.anthropic.com/news",
+    "https://www.encryptionconsulting.com/ai-agent-governance/",
+    "https://vdf.ai/resources/ai-agent-governance/",
+    "https://www.coderabbit.ai/guides/code-context",
+    "https://www.developersdigest.tech/blog/cybersecurity-skills-ai-agents-runtime",
+    "https://www.mindstudio.ai/blog/how-to-use-ai-agent-skills-plugins-claude-code-codex"
+  ]
+}
