@@ -1,0 +1,541 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-04T20:32:43-04:00",
+  "cutoff_window": {
+    "start": "2026-07-02T20:32:43-04:00",
+    "end": "2026-07-04T20:32:43-04:00",
+    "date_policy": "Include only sources with visible publication or update dates inside the window. Exclude date-only July 2 boundary items because no time is visible to prove they were after the cutoff."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practices, guidance structure, context architecture, workflows, verification, governance, and adoption operating model.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem context for companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_policy": "Record upstream-owned entities by name but keep finding summaries focused on downstream practice implications."
+  },
+  "findings": [
+    {
+      "id": "2026-07-04-augment-agent-platform-engineering",
+      "title": "Agent platform engineering reference architecture",
+      "source_url": "https://www.augmentcode.com/guides/agent-platform-engineering-reference-architecture",
+      "source_name": "Augment Code",
+      "visible_date": "Jul 4, 2026",
+      "qualifying_date_basis": "Article page shows Jul 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "The guide frames production agent platforms as seven layers: orchestration, model inference, tools, memory, retrieval, control plane, and runtime. It also emphasizes delegated identity, tool caution, sandbox boundaries, trace-level observability, trajectory evaluation, model routing, and explicit governance controls.",
+      "why_it_matters": "Local practice pages may need to treat agent runtime design as a platform architecture concern rather than a prompt-only workflow. The useful downstream lens is how teams separate memory, retrieval, tools, policy, telemetry, and runtime ownership for coding agents.",
+      "named_entities": [
+        "Augment Code",
+        "Augment Cosmos",
+        "AgentOps",
+        "LangGraph",
+        "OpenAI Agents SDK",
+        "Model Context Protocol",
+        "OpenTelemetry",
+        "OWASP Top 10 for Agentic Applications",
+        "NIST IR 8596",
+        "LiteLLM"
+      ],
+      "upstream_owned_entities": [
+        "Augment Code",
+        "Augment Cosmos",
+        "LangGraph",
+        "OpenAI Agents SDK",
+        "Model Context Protocol",
+        "OpenTelemetry",
+        "OWASP Top 10 for Agentic Applications",
+        "LiteLLM"
+      ],
+      "local_practice_implication": "Consider downstream synthesis on agent platform boundaries, control-plane versus data-plane responsibilities, and trace evidence required for long-running AI-assisted development work.",
+      "routing_note": "Do not create local encyclopedia pages for the named platforms or protocols; route broad entity updates upstream."
+    },
+    {
+      "id": "2026-07-04-augment-bmad-method",
+      "title": "BMAD method guide for agent-driven development",
+      "source_url": "https://www.augmentcode.com/guides/bmad-method-ai-development",
+      "source_name": "Augment Code",
+      "visible_date": "Jul 4, 2026",
+      "qualifying_date_basis": "Article page shows Jul 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/context-architecture"
+      ],
+      "factual_summary": "The guide describes BMAD as a spec-driven framework that converts planning, architecture, and implementation into documented agent workflows. It highlights cross-session drift, specialized roles, workflow phases, and context-engineered story files as the control mechanism.",
+      "why_it_matters": "The local wiki can use this as evidence for durable planning artifacts, role-specific agent instructions, and story-file handoffs as practice patterns for reducing cross-session context loss.",
+      "named_entities": [
+        "BMAD Method",
+        "Brian Madison",
+        "Claude Code",
+        "Cursor",
+        "Codex CLI",
+        "Augment Cosmos"
+      ],
+      "upstream_owned_entities": [
+        "BMAD Method",
+        "Claude Code",
+        "Cursor",
+        "Codex CLI",
+        "Augment Cosmos"
+      ],
+      "local_practice_implication": "Track whether local prompt-and-instruction pages distinguish durable repository memory, workflow templates, role prompts, and story-level context packages.",
+      "routing_note": "Keep BMAD background and product comparisons upstream; local use is the workflow pattern."
+    },
+    {
+      "id": "2026-07-03-posit-agents-skills-mcp",
+      "title": "Decision tree for prompts, AGENTS.md, skills, and MCP servers",
+      "source_url": "https://opensource.posit.co/blog/2026-07-03_ai-newsletter/",
+      "source_name": "Posit Open Source",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "The post distinguishes one-off prompts, project or user AGENTS.md or CLAUDE.md files, reusable skills, and MCP servers. Its decision tree uses reuse and reach: permanent guidance belongs in instruction files or skills, while new capabilities or hard-to-reach context belong behind MCP servers.",
+      "why_it_matters": "This directly supports local guidance on where durable agent instructions should live and when to escalate from prompt text to reusable skill or governed tool integration.",
+      "named_entities": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "Model Context Protocol",
+        "Posit Assistant",
+        "Claude Code",
+        "ellmer"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Posit Assistant",
+        "Claude Code",
+        "ellmer"
+      ],
+      "local_practice_implication": "A downstream leaf could encode the reuse-versus-reach rule for deciding among prompt, instruction file, skill, and MCP server.",
+      "routing_note": "MCP and product details remain upstream-owned; the local contribution is the customization decision rule."
+    },
+    {
+      "id": "2026-07-03-augment-recall-first-ai-code-review",
+      "title": "Recall-first AI code review guide",
+      "source_url": "https://www.augmentcode.com/guides/why-use-recall-first-ai-code-review",
+      "source_name": "Augment Code",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The guide argues that AI-assisted code volume shifts the pull-request bottleneck to review capacity. It contrasts precision-first review with recall-first detection plus a filtering layer before developers see comments, and it frames missed production bugs as more costly than filtered false positives.",
+      "why_it_matters": "Local code-review practice pages may need to capture review-threshold tradeoffs, reviewer attention budgets, and benchmark-driven tuning rather than treating AI review as a single pass of comments.",
+      "named_entities": [
+        "Augment Code Review",
+        "Augment Cosmos",
+        "Code Review Bench",
+        "Claude Code",
+        "Codex",
+        "Gemini Code Assist",
+        "CodeRabbit",
+        "Cursor",
+        "Devin"
+      ],
+      "upstream_owned_entities": [
+        "Augment Code Review",
+        "Augment Cosmos",
+        "Code Review Bench",
+        "Claude Code",
+        "Codex",
+        "Gemini Code Assist",
+        "CodeRabbit",
+        "Cursor",
+        "Devin"
+      ],
+      "local_practice_implication": "Record recall, precision, filtering, and human-review handoff as separate operating choices for AI code review workflows.",
+      "routing_note": "Product and benchmark entity coverage belongs upstream; local synthesis should focus on review practice."
+    },
+    {
+      "id": "2026-07-03-augment-vulnerability-remediation",
+      "title": "Scan-to-merge vulnerability remediation in AI pipelines",
+      "source_url": "https://www.augmentcode.com/guides/vulnerability-remediation-scan-to-merge",
+      "source_name": "Augment Code",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "The guide maps vulnerability remediation from scan through triage, prioritization, fix, and merge. It notes that dashboard-only findings create a developer handoff gap, AI-generated patches still need human verification, and reviewers must confirm regression tests and absence of new security issues.",
+      "why_it_matters": "This reinforces local practice for AI-assisted regression repair and security remediation: generated patches should enter normal PR evidence, severity gating, rescans, and human merge review rather than bypassing the development workflow.",
+      "named_entities": [
+        "SAST",
+        "SCA",
+        "Dependabot",
+        "Copilot Autofix",
+        "CodeQL",
+        "NIST SP 800-218",
+        "EPSS",
+        "CVSS",
+        "KEV",
+        "Augment Cosmos"
+      ],
+      "upstream_owned_entities": [
+        "Dependabot",
+        "Copilot Autofix",
+        "CodeQL",
+        "NIST SP 800-218",
+        "EPSS",
+        "CVSS",
+        "KEV",
+        "Augment Cosmos"
+      ],
+      "local_practice_implication": "Potential downstream synthesis for scan-to-merge evidence requirements and remediation-agent gates.",
+      "routing_note": "Keep tool and standards background upstream; local scope is secure remediation workflow design."
+    },
+    {
+      "id": "2026-07-03-1devtool-instruction-freshness",
+      "title": "Freshness checks for CLAUDE.md and AGENTS.md",
+      "source_url": "https://1devtool.com/blog/freshness-checks-for-claude-md-agents-md",
+      "source_name": "1DevTool",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The post frames instruction files as operational memory that can become stale as libraries, incident decisions, and patterns change. It recommends provenance for rules, including creation reason, related files or incidents, affected code changes, and human confirmation dates.",
+      "why_it_matters": "The local wiki already treats durable instructions as project infrastructure; this source adds a freshness and provenance lens for avoiding stale agent policy.",
+      "named_entities": [
+        "CLAUDE.md",
+        "AGENTS.md",
+        "1DevTool",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "1DevTool",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Consider a durable instruction-freshness checklist covering rule provenance, related files, last review, and stale-policy risk.",
+      "routing_note": "Do not duplicate product background; preserve the local rule-maintenance practice."
+    },
+    {
+      "id": "2026-07-03-1devtool-remote-agent-proof-gates",
+      "title": "Proof gates and release sign-off trails for remote agents",
+      "source_url": "https://1devtool.com/blog/remote-agents-proof-gates-release-signoff",
+      "source_name": "1DevTool",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The post argues that remote AI coding requires reproducible environments, test evidence, and human-readable release sign-off trails. It recommends templates defining environment, branch, permissions, commands, and expected evidence before a remote run starts.",
+      "why_it_matters": "This is directly relevant to local background-agent and automation practices: done criteria should include commands, diffs, screenshots, logs, test output, approvals, risks, and handoff state.",
+      "named_entities": [
+        "1DevTool",
+        "Claude",
+        "Codex",
+        "DoneCheck"
+      ],
+      "upstream_owned_entities": [
+        "1DevTool",
+        "Claude",
+        "Codex",
+        "DoneCheck"
+      ],
+      "local_practice_implication": "Possible local synthesis for proof-gated remote-agent templates and release sign-off evidence.",
+      "routing_note": "Product names are upstream-owned; retain only workflow controls."
+    },
+    {
+      "id": "2026-07-03-1devtool-trusted-mcp-catalogs",
+      "title": "Trusted MCP catalogs and verification checks",
+      "source_url": "https://1devtool.com/blog/trusted-mcp-catalogs-and-agent-verification",
+      "source_name": "1DevTool",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "The post treats MCP tool access as a supply-chain concern and calls for trusted tool catalogs, deterministic verification checks, visible routing decisions, and records of which server was invoked and what evidence it returned.",
+      "why_it_matters": "Local MCP practice pages may need explicit catalog trust, invocation evidence, and routing records as first-class workflow artifacts.",
+      "named_entities": [
+        "Model Context Protocol",
+        "1DevTool",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "1DevTool",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Record MCP server approval, evidence capture, deterministic checks, and model-routing records as governed tool-call practice.",
+      "routing_note": "MCP broad coverage remains upstream-owned; local page should own governed MCP operation."
+    },
+    {
+      "id": "2026-07-03-waxell-mcp-tool-description-poisoning",
+      "title": "MCP tool description poisoning governance warning",
+      "source_url": "https://www.waxell.ai/blog/mcp-tool-description-poisoning-agent-data-leakage-2026",
+      "source_name": "Waxell",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "The post summarizes a Microsoft warning about poisoned MCP tool descriptions, where hidden instructions in natural-language tool metadata can redirect an agent into data exfiltration. It describes re-approval triggers, description review, and tool metadata change control as governance needs.",
+      "why_it_matters": "This provides a concrete MCP governance failure mode for local tool-call practice: tool descriptions are part of the trusted execution surface and need review when they change.",
+      "named_entities": [
+        "Waxell",
+        "Microsoft Incident Response",
+        "Microsoft Defender",
+        "Model Context Protocol",
+        "MCPTox",
+        "postmark-mcp",
+        "Koi Security",
+        "OWASP Top 10 for Agentic Applications"
+      ],
+      "upstream_owned_entities": [
+        "Waxell",
+        "Microsoft",
+        "Model Context Protocol",
+        "MCPTox",
+        "postmark-mcp",
+        "Koi Security",
+        "OWASP Top 10 for Agentic Applications"
+      ],
+      "local_practice_implication": "Potential downstream update for MCP server review checklists: treat tool descriptions, schema text, and prompt-like metadata as auditable supply-chain inputs.",
+      "routing_note": "Security incident and product background belongs upstream; local practice is governed MCP review."
+    },
+    {
+      "id": "2026-07-04-momentic-agentic-testing-set-theory",
+      "title": "Agentic testing boundary taxonomy",
+      "source_url": "https://momentic.ai/blog/set-theory-of-agentic-testing",
+      "source_name": "Momentic",
+      "visible_date": "Jul 4, 2026",
+      "qualifying_date_basis": "Article page shows Jul 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "factual_summary": "The post defines agentic testing as testing where an AI agent receives a natural-language goal, plans the test path, runs it against the application, observes runtime signals, and adapts without a hand-authored script underneath. It distinguishes agentic testing from AI-assisted test authoring and self-healing scripted tests.",
+      "why_it_matters": "Local verification pages can use this taxonomy to avoid conflating generated tests, maintained scripts, self-healing selectors, and fully agentic runtime test loops.",
+      "named_entities": [
+        "Momentic",
+        "Agentic testing",
+        "DOM",
+        "accessibility tree",
+        "Playwright"
+      ],
+      "upstream_owned_entities": [
+        "Momentic",
+        "Playwright"
+      ],
+      "local_practice_implication": "Create or refresh a verification lens that classifies test ownership by who owns the path: human-authored script, AI-authored artifact, self-healing script, or agentic loop.",
+      "routing_note": "Product and tool pages belong upstream; local scope is test-loop taxonomy."
+    },
+    {
+      "id": "2026-07-03-developers-digest-agent-studio",
+      "title": "Agent Studio roles served beside skills",
+      "source_url": "https://www.developersdigest.tech/blog/agent-studio-one-endpoint",
+      "source_name": "Developers Digest",
+      "visible_date": "July 3, 2026",
+      "qualifying_date_basis": "Article page shows July 3, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "factual_summary": "The post argues that skills and subagent definitions are complementary artifacts: skills describe reusable knowledge, while agents define roles, objectives, tool budgets, and return shape. It proposes serving both over the same endpoint with progressive disclosure and a moderation loop.",
+      "why_it_matters": "This supports local differentiation between reusable instructions and specialized worker roles in subagent-driven development.",
+      "named_entities": [
+        "Developers Digest",
+        "Agent Studio",
+        "Model Context Protocol",
+        "SKILL.md",
+        "subagents"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest",
+        "Agent Studio",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Potential downstream practice note: keep role definitions, tool budgets, and output contracts separate from procedural skill knowledge, even when served through the same discovery surface.",
+      "routing_note": "MCP endpoint design details are upstream technique territory; local use is the role-versus-skill operating boundary."
+    },
+    {
+      "id": "2026-07-04-hboon-agent-control",
+      "title": "Coordinator pattern for many coding-agent sessions",
+      "source_url": "https://hboon.com/why-i-built-an-orchestration-tool-for-my-coding-agents/",
+      "source_name": "Hwee-Boon Yar",
+      "visible_date": "Jul 4, 2026",
+      "qualifying_date_basis": "Article page shows Jul 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "factual_summary": "The post describes an in-house coordination layer for coding-agent sessions with queues, callbacks, loops, handoffs, locks, session history, and cross-project messages. It separates coordinator sessions from fresh worker sessions and keeps AGENTS.md for repository-specific work rules while skills package repeatable workflows.",
+      "why_it_matters": "This is a practical solo-operator example of agent-session orchestration: recurring work benefits from stable coordinator state, callback contracts, and shared-resource locks rather than stuffing all context into one worker.",
+      "named_entities": [
+        "Agent Control",
+        "AGENTS.md",
+        "Claude Code",
+        "Codex",
+        "Droid",
+        "tmux"
+      ],
+      "upstream_owned_entities": [
+        "Agent Control",
+        "Claude Code",
+        "Codex",
+        "Droid",
+        "tmux"
+      ],
+      "local_practice_implication": "Consider downstream synthesis for coordinator-worker loops, callback payloads, shared-resource locks, and separation of repo instructions from workflow skills.",
+      "routing_note": "Tool/product background is upstream-owned; local relevance is the orchestration practice."
+    },
+    {
+      "id": "2026-07-04-futurum-compliance-as-code",
+      "title": "Compliance as code for AI-assisted development pull requests",
+      "source_url": "https://futurumgroup.com/insights/compliance-as-code-is-no-longer-optional-why-manual-reviews-cant-keep-up/",
+      "source_name": "The Futurum Group",
+      "visible_date": "Publication Date: July 4, 2026",
+      "qualifying_date_basis": "Article page shows Publication Date: July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "The article argues that compliance rules drift when they live only in documentation and should be encoded as automated pull-request checks such as hardcoded-secret, RBAC, and idempotency checks. It links AI-assisted development velocity to a larger compliance review surface.",
+      "why_it_matters": "Local governance pages may need to connect AI-generated code velocity with executable compliance checks and audit-ready PR gates rather than policy documents alone.",
+      "named_entities": [
+        "Futurum Group",
+        "Qodo",
+        "Compliance as Code",
+        "RBAC"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "Qodo"
+      ],
+      "local_practice_implication": "Track policy-as-code checks as part of AI-assisted development governance, especially when generated-code volume outpaces manual review.",
+      "routing_note": "Vendor background belongs upstream; local practice is PR-level compliance enforcement."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Issue fields are now generally available",
+      "source_url": "https://github.blog/changelog/2026-07-02-issue-fields-are-now-generally-available",
+      "visible_date": "July 2, 2026",
+      "reason": "Date-only July 2 boundary item with no visible publication time; cannot prove it was after the cutoff of 2026-07-02T20:32:43-04:00."
+    },
+    {
+      "title": "Upcoming deprecation of Gemini 2.5 Pro and Gemini 3 Flash",
+      "source_url": "https://github.blog/changelog/2026-07-02-upcoming-deprecation-of-gemini-2-5-pro-and-gemini-3-flash/",
+      "visible_date": "July 2, 2026",
+      "reason": "Date-only July 2 boundary item with no visible publication time; model availability is upstream-owned and the timing is ambiguous for this collector window."
+    },
+    {
+      "title": "Browser tools for GitHub Copilot in VS Code are generally available",
+      "source_url": "https://github.blog/changelog/2026-07-01-browser-tools-for-github-copilot-in-vs-code-are-generally-available/",
+      "visible_date": "July 1, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Claude Apps release notes",
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-apps",
+      "visible_date": "July 1, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Agentic Batch Changes is now in public beta",
+      "source_url": "https://sourcegraph.com/blog/agentic-batch-changes-public-beta",
+      "visible_date": "June 30, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Claude Sonnet 5 review: Should you switch?",
+      "source_url": "https://coderabbit.ai/blog/claude-sonnet-5-review",
+      "visible_date": "June 30, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "The Hidden Costs of GenerativeAI and How to Control Them",
+      "source_url": "https://www.truefoundry.com/ja/blog/cost-of-generative-ai",
+      "visible_date": "Search result said today; opened page did not expose an unambiguous article publication date near the article title.",
+      "reason": "Excluded because the visible page content did not establish a reliable publication or update date for the opened article."
+    },
+    {
+      "title": "AGENTS.md: The Standard for AI-Assisted Development",
+      "source_url": "https://ai.plainenglish.io/agents-md-the-missing-standard-for-ai-assisted-development-c8a768c8de27",
+      "visible_date": "Published 10 months ago; last published Jul 4, 2026 in search snippet.",
+      "reason": "Excluded because the in-window signal appears to be a publication/channel last-published marker rather than the article publication date."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only. Do not update docs/wiki pages from this artifact until an ingest workflow processes it.",
+    "The strongest candidate synthesis themes are instruction freshness, governed MCP catalog review, remote-agent proof gates, platform-layer separation, and agentic testing taxonomy.",
+    "When ingesting, check upstream AI wiki ownership before creating local leaves for products, companies, protocols, benchmarks, and tooling."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for the artifact"
+  },
+  "blockers": []
+}
