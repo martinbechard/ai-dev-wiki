@@ -1,0 +1,426 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-05T21:02:25-04:00",
+    "rule": "Only public sources visibly published or updated within the last 7 days are qualifying.",
+    "start": "2026-06-28T21:02:25-04:00"
+  },
+  "docs_wiki_updated": false,
+  "excluded_candidate_count": 5,
+  "excluded_candidates": [
+    {
+      "reason": "Outside the seven-day window.",
+      "source_url": "https://offshoreproz.com/learn/ai-agent-operating-agreement",
+      "title": "AI Agent Operating Agreement",
+      "visible_date_evidence": "Search result showed Published: 2 weeks ago."
+    },
+    {
+      "reason": "Article publication date is outside the seven-day window.",
+      "source_url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+      "title": "The Anatomy of an Agent Harness",
+      "visible_date_evidence": "Article page shows March 10, 2026; search result only surfaced related July content."
+    },
+    {
+      "reason": "Outside the seven-day window.",
+      "source_url": "https://www.augmentcode.com/guides/agentic-engineering-operating-model",
+      "title": "Agentic Engineering Operating Model: Teams + Agents",
+      "visible_date_evidence": "Search result showed Published: last month."
+    },
+    {
+      "reason": "Missing visible date, so excluded by boundary rule.",
+      "source_url": "https://docs.devin.ai/work-with-devin/deepwiki",
+      "title": "DeepWiki - Devin Docs",
+      "visible_date_evidence": "No visible publication or update date in fetched page."
+    },
+    {
+      "reason": "Ambiguous usable source evidence after fetch; excluded rather than relying on snippet alone.",
+      "source_url": "https://xccelera.ai/blogs/why-the-best-engineering-teams-in-h1-2026-replaced-sprint-boilerplate-with-ai-agents/",
+      "title": "Why the Best Engineering Teams in H1 2026 Replaced Sprint Boilerplate With AI Agents",
+      "visible_date_evidence": "Search result showed Published: 6 days ago, but fetched page exposed navigation/footer content without article body or stable visible date."
+    }
+  ],
+  "follow_up_notes": [
+    "Review qualifying updates for downstream practice implications before any docs/wiki edit.",
+    "Route product, vendor, model, framework, MCP, and regulation background to the upstream AI wiki when ingesting.",
+    "Do not move this raw scanner output into raw/processed until normal raw ingest completes."
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "factual_summary": "LangChain released OpenWiki, an open-source agent and CLI that generates and maintains codebase documentation, adds references to agent instruction files, and can run scheduled GitHub Action updates using git diffs.",
+      "id": "2026-07-01-langchain-openwiki",
+      "local_practice_implication": "Treat broad product background as upstream-owned, but ingest the downstream implication that repo wikis can be maintained as compact, versionable context referenced by durable instruction files.",
+      "named_entities": [
+        "LangChain",
+        "OpenWiki",
+        "DeepAgents",
+        "LangSmith",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "GitHub Actions"
+      ],
+      "published_or_updated_at": "2026-07-01",
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_title": "Introducing OpenWiki, an open source agent for repo documentation",
+      "source_url": "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+      "upstream_owned_entities": [
+        "LangChain",
+        "OpenWiki",
+        "DeepAgents",
+        "LangSmith"
+      ],
+      "visible_date_evidence": "Article page shows July 1, 2026.",
+      "why_it_matters_for_leaf": "Validates a local practice pattern where durable wiki context stays in structured files while short instruction files point agents to that context and scheduled feeds keep source-derived knowledge current."
+    },
+    {
+      "factual_summary": "LangChain describes wiki memory as a persistent, structured, inspectable, updated file-based layer that compresses raw source material for future agents instead of retrieving only raw chunks at query time.",
+      "id": "2026-06-30-langchain-wiki-memory",
+      "local_practice_implication": "Use it as evidence for the wiki-memory workflow, not as a local encyclopedia entry about the listed products.",
+      "named_entities": [
+        "LangChain",
+        "DeepWiki",
+        "AutoWiki",
+        "LangMem",
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_title": "Wiki Memory",
+      "source_url": "https://www.langchain.com/blog/wiki-memory",
+      "upstream_owned_entities": [
+        "LangChain",
+        "DeepWiki",
+        "AutoWiki",
+        "LangMem",
+        "Letta",
+        "Mem0",
+        "Zep"
+      ],
+      "visible_date_evidence": "Article page shows June 30, 2026.",
+      "why_it_matters_for_leaf": "Supports the local source-workflow distinction between raw inputs, compact wiki synthesis, and repeatable refresh loops for durable project knowledge."
+    },
+    {
+      "factual_summary": "LangChain introduced dynamic subagents where an agent writes orchestration scripts that dispatch subagents through a code interpreter, giving large fan-out work deterministic coverage and reducing context pressure.",
+      "id": "2026-06-29-langchain-dynamic-subagents",
+      "local_practice_implication": "Keep product details upstream; locally capture the practice of proving coverage with dispatch structure and typed intermediate results.",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents",
+        "dcode",
+        "Dynamic Subagents",
+        "Recursive Language Models"
+      ],
+      "published_or_updated_at": "2026-06-29",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "source_title": "Introducing Dynamic Subagents in Deep Agents",
+      "source_url": "https://www.langchain.com/blog/introducing-dynamic-subagents-in-deep-agents",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Deep Agents",
+        "dcode",
+        "Recursive Language Models"
+      ],
+      "visible_date_evidence": "Article page shows June 29, 2026.",
+      "why_it_matters_for_leaf": "Strengthens local guidance for senior-led execution pods and outcome autonomy: broad delegated work needs code-shaped coverage guarantees, phase grouping, and reviewable orchestration rather than prompt-only promises."
+    },
+    {
+      "factual_summary": "LangChain explains using recursive language model ideas in Deep Agents so code-driven subagent dispatch can partition large inputs, recurse over pieces, and guarantee coverage where turn-by-turn context handling degrades.",
+      "id": "2026-07-01-langchain-rlms-deep-agents",
+      "local_practice_implication": "Route the RLM technique background upstream; keep the local implication that large reviews and scans need structural coverage guarantees.",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents",
+        "Recursive Language Models",
+        "MIT CSAIL"
+      ],
+      "published_or_updated_at": "2026-07-01",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "source_title": "How to Use RLMs in Deep Agents",
+      "source_url": "https://www.langchain.com/blog/how-to-use-rlms-in-deep-agents",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Deep Agents",
+        "Recursive Language Models",
+        "MIT CSAIL"
+      ],
+      "visible_date_evidence": "Article page shows July 1, 2026.",
+      "why_it_matters_for_leaf": "Adds a current source for local conventions around splitting long agent work into deterministic, inspectable loops with intermediate results outside the main context window."
+    },
+    {
+      "factual_summary": "LangChain describes three requirements for running agent-written code: execution isolation, capability isolation, and durable pauses, implemented through a smaller code-interpreter surface with explicit host-provided capabilities.",
+      "id": "2026-06-30-langchain-untrusted-agent-code",
+      "local_practice_implication": "Do not duplicate implementation details locally; update downstream practice later around explicit capabilities and durable human pauses.",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents",
+        "LangSmith Sandboxes",
+        "Code Interpreters",
+        "WebAssembly",
+        "QuickJS"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_title": "Running Untrusted Agent Code Without a Sandbox",
+      "source_url": "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+      "upstream_owned_entities": [
+        "LangChain",
+        "Deep Agents",
+        "LangSmith Sandboxes",
+        "WebAssembly",
+        "QuickJS"
+      ],
+      "visible_date_evidence": "Article page shows June 30, 2026.",
+      "why_it_matters_for_leaf": "Reinforces local approval-boundary and runbook guidance: autonomous execution should pair isolated execution with explicit capability grants and resumable human checkpoints."
+    },
+    {
+      "factual_summary": "LangChain argues that coding-agent cost control is blocked by fragmented telemetry across tools, and recommends unified traces that include model costs, tool calls, shell commands, MCP activity, subagent invocations, errors, and timing.",
+      "id": "2026-07-02-langchain-coding-agent-bill",
+      "local_practice_implication": "Keep vendor/tool facts upstream; locally track the operational rule that cost telemetry must normalize sessions and tool use across mixed agent stacks.",
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "GitHub Copilot Chat",
+        "Pi",
+        "OpenCode"
+      ],
+      "published_or_updated_at": "2026-07-02",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_title": "Your coding agent bill doubled. Here is how to fix it.",
+      "source_url": "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "GitHub Copilot Chat",
+        "Pi",
+        "OpenCode"
+      ],
+      "visible_date_evidence": "Article page shows July 2, 2026.",
+      "why_it_matters_for_leaf": "Provides a recent public source for hybrid agent infrastructure economics: cost governance depends on normalized telemetry across heterogeneous local and cloud coding agents."
+    },
+    {
+      "factual_summary": "MintMCP frames AI agent governance around risk classification, deployer obligations, living risk registers, accountability across policy, technical, and operational domains, logging, monitoring, and human oversight evidence.",
+      "id": "2026-07-03-mintmcp-ai-agent-governance",
+      "local_practice_implication": "Route broad regulation and vendor details upstream; locally capture role accountability, oversight evidence, and logging requirements for agent adoption.",
+      "named_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "GDPR",
+        "DORA",
+        "NIS2",
+        "CRA",
+        "MCP Gateway"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "source_title": "AI Agent Governance Before the EU AI Act Deadline",
+      "source_url": "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "GDPR",
+        "DORA",
+        "NIS2",
+        "CRA",
+        "MCP Gateway"
+      ],
+      "visible_date_evidence": "Article page shows July 3, 2026.",
+      "why_it_matters_for_leaf": "Supports local operating agreements, ownership rosters, and approval boundaries by tying them to explicit accountability, continuous evidence, and deployer-side oversight duties."
+    },
+    {
+      "factual_summary": "MintMCP describes agent control planes as the governance layer deciding which agents can run, what tools and data they can access, and what audit trail their actions generate, with runtime enforcement, per-agent identity, and shadow-AI detection.",
+      "id": "2026-07-03-mintmcp-agent-control-plane",
+      "local_practice_implication": "The local practice implication is runtime enforcement and per-agent identity, not the vendor comparison itself.",
+      "named_entities": [
+        "MintMCP",
+        "Forrester",
+        "Gartner",
+        "MCP Gateway",
+        "Claude Code",
+        "Cursor"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "source_title": "Agent Control Plane: Why It Matters More Than Your AI Model",
+      "source_url": "https://www.mintmcp.com/blog/agent-control-plane",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "Forrester",
+        "Gartner",
+        "MCP Gateway",
+        "Claude Code",
+        "Cursor"
+      ],
+      "visible_date_evidence": "Article page shows July 3, 2026.",
+      "why_it_matters_for_leaf": "Connects ownership rosters and human approval boundaries to technical enforcement: approvals should map to scoped identities, data permissions, guardrails, and auditable tool access."
+    },
+    {
+      "factual_summary": "MintMCP argues that persistent, channel-scoped agent memory can become organizational infrastructure and a lock-in risk unless teams maintain portable records of decisions, workflows, permissions, memory, and audit trails.",
+      "id": "2026-07-02-mintmcp-claude-tag-context-lock-in",
+      "local_practice_implication": "Broad Claude Tag and MCP background belongs upstream; local adoption pages can use the portability requirement for steady-state team memory guidance.",
+      "named_entities": [
+        "MintMCP",
+        "Claude Tag",
+        "Anthropic",
+        "Model Context Protocol"
+      ],
+      "published_or_updated_at": "2026-07-02",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "source_title": "Claude Tag: The Context Lock-In Problem Nobody is Talking About",
+      "source_url": "https://www.mintmcp.com/blog/claude-tag",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "Claude Tag",
+        "Anthropic",
+        "Model Context Protocol"
+      ],
+      "visible_date_evidence": "Article page shows July 2, 2026.",
+      "why_it_matters_for_leaf": "Directly supports durable instruction and portable runbook leaves by distinguishing temporary model context from company-owned, portable operating records."
+    },
+    {
+      "factual_summary": "MintMCP lists enterprise agent gateway evaluation criteria including SSO and SCIM-driven RBAC, tool-level policy, virtual bundles, agent bundles, hosted connectors, audit logs, real-time monitoring, and granular access control.",
+      "id": "2026-07-03-mintmcp-agent-gateways",
+      "local_practice_implication": "Do not make local product-comparison pages; use the source later to refine governance capability checklists for agent operating models.",
+      "named_entities": [
+        "MintMCP",
+        "Bifrost",
+        "Maxim AI",
+        "TrueFoundry",
+        "Cloudflare AI Gateway",
+        "Kong AI Gateway",
+        "LiteLLM",
+        "Lasso Security",
+        "Portkey",
+        "Zuplo",
+        "Composio",
+        "Solo.io",
+        "Operant"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "source_title": "Top Agent Gateways for Enterprise Teams to Evaluate in 2026",
+      "source_url": "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "Bifrost",
+        "Maxim AI",
+        "TrueFoundry",
+        "Cloudflare AI Gateway",
+        "Kong AI Gateway",
+        "LiteLLM",
+        "Lasso Security",
+        "Portkey",
+        "Zuplo",
+        "Composio",
+        "Solo.io",
+        "Operant"
+      ],
+      "visible_date_evidence": "Article page shows July 3, 2026.",
+      "why_it_matters_for_leaf": "Gives current evidence for hybrid infrastructure economics and operating agreements: scaling agents shifts effort from point-to-point integrations toward shared governance and access infrastructure."
+    }
+  ],
+  "run_timestamp": "2026-07-05T21:02:25-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "source_urls_checked": [
+    "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+    "https://www.langchain.com/blog/wiki-memory",
+    "https://www.langchain.com/blog/introducing-dynamic-subagents-in-deep-agents",
+    "https://www.langchain.com/blog/how-to-use-rlms-in-deep-agents",
+    "https://www.langchain.com/blog/running-untrusted-agent-code-without-a-sandbox",
+    "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+    "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+    "https://www.mintmcp.com/blog/agent-control-plane",
+    "https://www.mintmcp.com/blog/claude-tag",
+    "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+    "https://xccelera.ai/blogs/why-the-best-engineering-teams-in-h1-2026-replaced-sprint-boilerplate-with-ai-agents/",
+    "https://offshoreproz.com/learn/ai-agent-operating-agreement",
+    "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "https://www.augmentcode.com/guides/agentic-engineering-operating-model",
+    "https://docs.devin.ai/work-with-devin/deepwiki"
+  ],
+  "upstream_routing_note": "Broad ecosystem entities, products, vendors, frameworks, standards, and regulations are upstream-owned by federation. This artifact records only local practice implications for later ingest."
+}
