@@ -1,0 +1,438 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-05T20:33:04-04:00",
+  "cutoff_window": {
+    "start": "2026-07-03T20:33:04-04:00",
+    "end": "2026-07-05T20:33:04-04:00",
+    "date_policy": "Include only public sources with visible publication or update dates inside the window. Exclude missing, ambiguous, future-dated, stale, and date-only boundary candidates when the visible date cannot prove inclusion."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practices, guidance structure, context architecture, workflows, verification, governance, and adoption operating model.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem context for companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_policy": "Record upstream-owned entities by name but keep finding summaries focused on downstream practice implications."
+  },
+  "findings": [
+    {
+      "id": "2026-07-04-ivern-ai-coding-agent-workflows",
+      "title": "Practical AI coding agent setup and workflow guide",
+      "source_url": "https://ivern.ai/blog/how-to-use-ai-coding-agents-practical-guide-2026",
+      "source_name": "Ivern AI",
+      "visible_date": "July 4, 2026",
+      "qualifying_date_basis": "Article page shows Guides By Ivern AI Team July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The guide walks through API-key setup, terminal agent installation, bug-fix, feature, refactoring, and multi-agent workflows. It emphasizes reviewing AI changes, supplying clear context, keeping context windows clean, using version control, and routing different task types to different agents or models.",
+      "why_it_matters": "The local wiki can use this as a practice-level signal that AI coding adoption guidance is converging on explicit setup gates, bounded workflow types, context hygiene, review discipline, and version-control boundaries rather than open-ended prompting.",
+      "named_entities": [
+        "Ivern AI",
+        "OpenCode",
+        "Aider",
+        "Claude Code",
+        "Cursor",
+        "Gemini Flash",
+        "OpenAI",
+        "Anthropic",
+        "Google AI"
+      ],
+      "upstream_owned_entities": [
+        "Ivern AI",
+        "OpenCode",
+        "Aider",
+        "Claude Code",
+        "Cursor",
+        "Gemini Flash",
+        "OpenAI",
+        "Anthropic",
+        "Google AI"
+      ],
+      "local_practice_implication": "Treat setup, context packaging, review, and version-control expectations as first-class adoption instructions for AI-assisted development workflows.",
+      "routing_note": "Do not duplicate product comparisons or benchmark claims locally; route product and model coverage upstream."
+    },
+    {
+      "id": "2026-07-04-augment-agent-platform-engineering",
+      "title": "Agent platform engineering reference architecture",
+      "source_url": "https://www.augmentcode.com/guides/agent-platform-engineering-reference-architecture",
+      "source_name": "Augment Code",
+      "visible_date": "Jul 4, 2026",
+      "qualifying_date_basis": "Article page shows Jul 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "The guide describes production agent platforms as layered systems that separate orchestration, model inference, tools, memory, retrieval, control plane, and runtime responsibilities. It frames persistent state, discoverable tools, delegated identity, observability, auditability, and rollback as platform concerns for non-deterministic agent workloads.",
+      "why_it_matters": "The local wiki already tracks agent platform boundaries; this source reinforces that coding-agent infrastructure should be documented as operating architecture with explicit ownership for memory, tools, identity, telemetry, and policy.",
+      "named_entities": [
+        "Augment Code",
+        "Augment Cosmos",
+        "AgentOps",
+        "Model Context Protocol",
+        "AWS",
+        "CNCF"
+      ],
+      "upstream_owned_entities": [
+        "Augment Code",
+        "Augment Cosmos",
+        "AgentOps",
+        "Model Context Protocol",
+        "AWS",
+        "CNCF"
+      ],
+      "local_practice_implication": "Future ingest can strengthen pages on agent-platform boundaries, trace evidence, delegated identity, and control-plane versus runtime responsibilities.",
+      "routing_note": "Keep platform and protocol encyclopedia coverage upstream; retain only the local operating architecture implication."
+    },
+    {
+      "id": "2026-07-04-dextralabs-on-prem-ai-code-review",
+      "title": "On-premise AI code review compliance guide",
+      "source_url": "https://dextralabs.com/blog/on-premise-ai-code-review-for-enterprise/",
+      "source_name": "Dextralabs",
+      "visible_date": "Published on July 4, 2026; Last Updated on July 4, 2026",
+      "qualifying_date_basis": "Article page shows both published and last-updated dates on July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The guide frames on-premise AI code review as a deployment choice for organizations whose compliance, security, data residency, sovereignty, or intellectual-property requirements rule out SaaS processing. It compares self-hosted, private-cloud, and air-gapped deployment variants and discusses when custom code-review agents are warranted.",
+      "why_it_matters": "This is a practice-level signal for AI code review adoption: review quality is not the only selection criterion; source-code location, audit controls, deployment model, and compliance mapping can decide whether AI review is usable at all.",
+      "named_entities": [
+        "Dextralabs",
+        "FedRAMP",
+        "HIPAA",
+        "CMMC",
+        "ITAR",
+        "SOC 2",
+        "ISO 27001",
+        "Tabnine",
+        "SonarQube Enterprise",
+        "Qodo Enterprise",
+        "Panto AI",
+        "Codacy Enterprise",
+        "Sourcegraph Amp",
+        "Refact.ai",
+        "TabbyML"
+      ],
+      "upstream_owned_entities": [
+        "Dextralabs",
+        "FedRAMP",
+        "HIPAA",
+        "CMMC",
+        "ITAR",
+        "SOC 2",
+        "ISO 27001",
+        "Tabnine",
+        "SonarQube Enterprise",
+        "Qodo Enterprise",
+        "Panto AI",
+        "Codacy Enterprise",
+        "Sourcegraph Amp",
+        "Refact.ai",
+        "TabbyML"
+      ],
+      "local_practice_implication": "Code-review governance pages should treat data residency, source-code exposure, auditability, and air-gapped operation as review-tool acceptance gates.",
+      "routing_note": "Do not create local vendor comparison pages; upstream owns product and standards background."
+    },
+    {
+      "id": "2026-07-04-futurum-compliance-as-code",
+      "title": "Compliance-as-code pull request checks",
+      "source_url": "https://futurumgroup.com/insights/compliance-as-code-is-no-longer-optional-why-manual-reviews-cant-keep-up/",
+      "source_name": "The Futurum Group",
+      "visible_date": "Publication Date: July 4, 2026",
+      "qualifying_date_basis": "Article page shows Publication Date: July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "The article reports on Qodo's compliance-as-code framing: encode regulatory and security policies such as hardcoded-secret bans, protected-route RBAC, and idempotent payment retries as automated pull-request checks instead of relying on manual documentation and delayed audits.",
+      "why_it_matters": "This supports local practice around lifecycle review gates and regression repair: compliance requirements should become executable or reviewable PR evidence so AI-generated changes face the same policy checks as human-authored changes.",
+      "named_entities": [
+        "The Futurum Group",
+        "Qodo",
+        "RBAC",
+        "GDPR"
+      ],
+      "upstream_owned_entities": [
+        "The Futurum Group",
+        "Qodo",
+        "RBAC",
+        "GDPR"
+      ],
+      "local_practice_implication": "Future synthesis can connect AI-assisted coding to policy-as-test and PR-level compliance evidence, especially for generated patches that must not bypass normal governance.",
+      "routing_note": "Qodo and regulatory background remain upstream-owned; keep the local lens on PR checks and compliance evidence."
+    },
+    {
+      "id": "2026-07-04-mesrai-context-aware-code-review-tools",
+      "title": "Context-aware AI code review selection criteria",
+      "source_url": "https://mesrai.com/blog/best-ai-code-review-tools",
+      "source_name": "Mesrai",
+      "visible_date": "Mesrai Team July 4, 2026",
+      "qualifying_date_basis": "Article page shows Mesrai Team July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "factual_summary": "The guide argues that AI code review should understand repository-wide architecture rather than only isolated diffs. Its evaluation criteria include architectural context, Git-provider workflow integration, actionable feedback, customization to team standards, and review latency.",
+      "why_it_matters": "The local wiki can use this as evidence for code-review eval rubrics that measure retrieval depth, architectural context, actionability, and latency separately from generic product availability.",
+      "named_entities": [
+        "Mesrai",
+        "SAST",
+        "NLP",
+        "LLM",
+        "GitHub",
+        "GitLab",
+        "Bitbucket"
+      ],
+      "upstream_owned_entities": [
+        "Mesrai",
+        "SAST",
+        "NLP",
+        "LLM",
+        "GitHub",
+        "GitLab",
+        "Bitbucket"
+      ],
+      "local_practice_implication": "Code-review eval pages can distinguish whole-repository context, isolated-diff analysis, committable suggestions, team-standard customization, and latency budget.",
+      "routing_note": "Vendor rankings and product details belong upstream; local use is the review-practice criteria."
+    },
+    {
+      "id": "2026-07-04-techcrunch-alibaba-claude-code-risk",
+      "title": "Enterprise ban of Claude Code over security classification",
+      "source_url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "source_name": "TechCrunch",
+      "visible_date": "9:32 AM PDT - July 4, 2026",
+      "qualifying_date_basis": "Article page shows Posted: 9:32 AM PDT - July 4, 2026, which is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "TechCrunch reports that Alibaba will ban employees from using Claude Code starting July 10 and classify it as high-risk software, while Anthropic already prohibits Chinese companies and their foreign-owned entities from using its models. The report ties the action to concerns about unauthorized access, distillation, and hidden user-identification behavior in a version of Claude Code.",
+      "why_it_matters": "The downstream lesson is not an entity update about Alibaba or Anthropic; it is that AI coding tools can become enterprise-restricted software when telemetry, jurisdiction, data-transfer, or model-access controls are unclear.",
+      "named_entities": [
+        "TechCrunch",
+        "Alibaba",
+        "Anthropic",
+        "Claude Code",
+        "Qoder",
+        "Thariq Shihipar",
+        "Reddit",
+        "Financial Times"
+      ],
+      "upstream_owned_entities": [
+        "TechCrunch",
+        "Alibaba",
+        "Anthropic",
+        "Claude Code",
+        "Qoder",
+        "Reddit",
+        "Financial Times"
+      ],
+      "local_practice_implication": "Governance pages should preserve a tool-risk review path that covers vendor terms, telemetry, hidden enforcement mechanisms, jurisdictional policy, and approved internal alternatives before broad team rollout.",
+      "routing_note": "The companies, products, and regional-policy background are upstream-owned; local synthesis should focus on enterprise AI coding tool approval practice."
+    },
+    {
+      "id": "2026-07-03-aiprimetech-desktop-file-agent-permissions",
+      "title": "Desktop file-agent permission and audit model",
+      "source_url": "https://aiprimetech.io/blog/anthropic-cowork-claude-desktop-agent/",
+      "source_name": "AI Prime Tech",
+      "visible_date": "Jul 3, 2026",
+      "qualifying_date_basis": "Article page shows Jul 3, 2026. Search result and blog index place the item inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "The article treats desktop file agents as permissioned local-file workflows rather than autonomous coworkers. It emphasizes selected-folder access, operation-specific approval, reviewable trails, derived-output folders, explicit uncertainty questions, and audit records showing what the agent read, changed, and the user approved.",
+      "why_it_matters": "This is a useful bridge between coding-agent controls and broader team adoption: non-code file agents still need workspace scoping, review UX, reversible outputs, and durable audit evidence.",
+      "named_entities": [
+        "AI Prime Tech",
+        "Anthropic Cowork",
+        "Claude Desktop",
+        "Claude Code",
+        "Claude API",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "AI Prime Tech",
+        "Anthropic Cowork",
+        "Claude Desktop",
+        "Claude Code",
+        "Claude API",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Application-pattern and governance pages can generalize coding-agent permission patterns to desktop/file agents: read-only inputs, work and output folders, edit previews, and operation-specific approvals.",
+      "routing_note": "Product strategy and model lineup details are upstream-owned; retain only the file-agent control pattern."
+    },
+    {
+      "id": "2026-07-04-buttondown-ai-builders-agent-workflow-redesign",
+      "title": "Agent adoption requires workflow redesign",
+      "source_url": "https://buttondown.com/soumyo/archive/ai-builders-digest-saturday-july-4-2026/",
+      "source_name": "AI Builders Digest",
+      "visible_date": "Saturday, July 4, 2026",
+      "qualifying_date_basis": "Newsletter archive title and search result show Saturday, July 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "The digest summarizes an argument that enterprise workflows often are not designed for agents because data is fragmented, legacy systems are inaccessible, and institutional knowledge is not documented. It also flags the compliance conversation triggered by rapid AI coding tool deployment.",
+      "why_it_matters": "This supports the local operating-model rule that agent adoption is workflow redesign plus governance, not tool insertion. AI-assisted development practices should identify missing context, inaccessible systems, and undocumented institutional knowledge before scaling agents.",
+      "named_entities": [
+        "AI Builders Digest",
+        "Box",
+        "Aaron Levie"
+      ],
+      "upstream_owned_entities": [
+        "AI Builders Digest",
+        "Box",
+        "Aaron Levie"
+      ],
+      "local_practice_implication": "Adoption pages can treat fragmented knowledge and inaccessible systems as blockers that must be turned into context sources, tools, or documented workflows before agent rollout.",
+      "routing_note": "Company and executive coverage is upstream-owned; local use is the adoption and operating-model implication."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Alibaba Bans Claude Code Over Security Fears",
+      "source_url": "https://www.techbuzz.ai/articles/alibaba-bans-claude-code-over-security-fears",
+      "visible_date": "Published Sat, Jul 4, 2026; updated Sun, Jul 5, 2026",
+      "reason": "Duplicate derivative coverage of the TechCrunch item already included from the primary source."
+    },
+    {
+      "title": "Alibaba bans staff from using Claude Code over Anthropic spyware concerns",
+      "source_url": "https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns",
+      "visible_date": "Published 10:15pm, 3 Jul 2026; Updated 10:25pm, 3 Jul 2026 Hong Kong time",
+      "reason": "Time-zone conversion places publication before the cutoff window, and the included TechCrunch source covers the downstream practice implication."
+    },
+    {
+      "title": "Alibaba bans Claude Code after Anthropic is caught tracking Chinese users",
+      "source_url": "https://thenextweb.com/news/alibaba-bans-claude-code-anthropic-tracking-chinese-users",
+      "visible_date": "July 3, 2026 - 7:25 pm",
+      "reason": "Boundary-only or before-window candidate depending on source timezone; excluded in favor of the later TechCrunch source with a clear in-window timestamp."
+    },
+    {
+      "title": "Model Context Protocol: Why Every AI Developer Needs MCP in 2026",
+      "source_url": "https://pub.towardsai.net/model-context-protocol-mcp-why-every-ai-developer-needs-mcp-in-2026-e68d39a49417",
+      "visible_date": "Last published Jul 4, 2026",
+      "reason": "The visible search result indicates an older article with a publication history, and broad MCP background is upstream-owned rather than a local practice update."
+    },
+    {
+      "title": "The Agentic AI Toolkit: MCP vs. Agent Skills vs. AGENTS.md",
+      "source_url": "https://ai.gopubby.com/the-agentic-ai-toolkit-mcp-vs-agent-skills-vs-agents-md-2b558f225b75",
+      "visible_date": "Last published Jul 4, 2026",
+      "reason": "Search result indicates the article is months old with a recent publication-container update; visible date is not reliable enough for the strict window."
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models",
+      "source_url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "visible_date": "Updated July 5, 2026",
+      "reason": "Broad model leaderboard coverage is upstream-owned and lacks a specific downstream practice update beyond model ranking."
+    },
+    {
+      "title": "AI Agents News Brief: July 5, 2026 - Key Developments and Trends",
+      "source_url": "https://aiagentsdirectory.com/news/ai-agents-directory-daily-brief-july-5-2026",
+      "visible_date": "July 5, 2026",
+      "reason": "Aggregator round-up with multiple secondhand items; no unique local practice signal strong enough to include."
+    },
+    {
+      "title": "OpenAI Developer Community homepage snippets",
+      "source_url": "https://community.openai.com/",
+      "visible_date": "July 4-5, 2026 snippets",
+      "reason": "Forum index snippets have visible dates but are thread listings rather than source articles, documentation, or stable practice writeups."
+    },
+    {
+      "title": "GB10 coding agent swarms - which coding agent?",
+      "source_url": "https://forums.developer.nvidia.com/t/gb10-coding-agent-swarms-which-coding-agent/375638",
+      "visible_date": "July 5, 2026, 11:46am",
+      "reason": "Forum question is public and in-window but is not a practice-level update with enough factual substance for local ingest."
+    },
+    {
+      "title": "Top Agent Harnesses: Claude Code vs Codex",
+      "source_url": "https://aimultiple.com/agent-harness",
+      "visible_date": "Retrieved July 4, 2026",
+      "reason": "Visible date is a retrieval date rather than publication or update date, so it fails the strict visible-date rule."
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should consider whether the July 4 Augment agent-platform source adds anything new beyond the already processed July 4 item before creating duplicate wiki prose.",
+    "If ingested, keep TechCrunch Alibaba-Claude Code coverage as a governance and approval-practice signal only; broad company, product, and geopolitical context belongs upstream.",
+    "AI Prime Tech is an independent vendor/blog source. Use it as a practice-pattern signal for file-agent controls, not as authoritative Anthropic product documentation.",
+    "Several included sources are vendor or vendor-adjacent guides. Treat benchmark and ranking claims as source-attributed evidence, not neutral facts."
+  ],
+  "source_urls": [
+    "https://ivern.ai/blog/how-to-use-ai-coding-agents-practical-guide-2026",
+    "https://www.augmentcode.com/guides/agent-platform-engineering-reference-architecture",
+    "https://dextralabs.com/blog/on-premise-ai-code-review-for-enterprise/",
+    "https://futurumgroup.com/insights/compliance-as-code-is-no-longer-optional-why-manual-reviews-cant-keep-up/",
+    "https://mesrai.com/blog/best-ai-code-review-tools",
+    "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+    "https://aiprimetech.io/blog/anthropic-cowork-claude-desktop-agent/",
+    "https://buttondown.com/soumyo/archive/ai-builders-digest-saturday-july-4-2026/"
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Used only public web sources.",
+    "Did not send private, proprietary, sensitive, PII, or company-internal local content to external services.",
+    "Did not update docs/wiki pages; this collector is raw-only."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
