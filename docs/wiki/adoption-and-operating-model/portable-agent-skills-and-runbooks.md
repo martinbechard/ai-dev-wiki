@@ -19,6 +19,8 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a third-party skill intake boundary. Vendor-published agent skills can package domain integration instructions for coding agents, but local adoption should review trust, versioning, scope, and project fit before importing those instructions into a repository or team workflow.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds portability pressure from codebase wiki memory and shared context tags. Team procedures should keep reusable knowledge in source-backed, versionable wiki or skill artifacts so a single vendor workspace does not become the only place where project memory or agent context can be reused.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -31,6 +33,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Avoid vendor-local procedure drift by keeping portable runbooks aligned with project or team source-of-truth rules.
 - Treat third-party skill packs as source material until reviewed, pinned, adapted, and assigned an owner in the local instruction hierarchy.
 - Record whether a skill is vendor-owned, project-owned, team-owned, or personal so future agents know where updates and accountability belong.
+- Keep reusable project memory in source-backed, versionable artifacts when multiple agent tools or teams need the same context.
+- Treat vendor-local context tags or workspace memory as convenience surfaces, not the sole source of team procedure or project knowledge.
 
 ## Authoritative Sources
 
@@ -40,6 +44,7 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -69,3 +74,4 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Created on 2026-06-23 from source-backed guidance on portable procedures, runbook composition, scope boundaries, procedural debt, and proof standards for agent work.
 - Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.
 - Maintained on 2026-07-03 with third-party skill intake, ownership, trust review, version pinning, and local adaptation boundaries.
+- Maintained on 2026-07-05 with versionable wiki memory, reusable context portability, and vendor-local memory boundaries.

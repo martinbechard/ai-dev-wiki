@@ -21,6 +21,8 @@ The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-lea
 
 The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) adds runtime authorization and audit signals. Approval boundaries should include step-level guardrails, tool-call authorization, session monitoring, explicit block thresholds, and audit trails before risky actions execute. A team should treat those controls as part of the approval boundary itself, not as documentation after an agent has already acted.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds generated-code and gateway-control signals. Approval boundaries should separate execution isolation from capability isolation, grant host capabilities explicitly, preserve durable human pauses, and use per-agent gateway policy when recurring agents can cross from inspection into action.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -32,6 +34,8 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 - Escalate permissions progressively from observed behavior, verification evidence, and sandbox results.
 - Define block thresholds, approval checkpoints, audit trails, and session monitoring before agents can cross from inspection into mutation.
 - Treat tool-call authorization as a runtime approval boundary when an action can affect code, data, costs, or external systems.
+- Separate execution isolation from capability isolation when agents run generated code or delegated tools.
+- Preserve durable human pauses and explicit host capability grants before unattended agents mutate code, data, or external systems.
 
 ## Authoritative Sources
 
@@ -43,6 +47,7 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -74,3 +79,4 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 - Created on 2026-06-23 from source-backed approval, delegation, and human-accountability guidance.
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.
+- Maintained on 2026-07-05 with execution isolation, capability isolation, durable human pauses, explicit host capabilities, and gateway policy signals.

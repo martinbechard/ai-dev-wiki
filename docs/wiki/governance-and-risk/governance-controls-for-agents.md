@@ -25,6 +25,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) add executable-compliance and governed-semantics signals. Agent governance should turn recurring compliance rules into automated pull-request checks where possible, and data-agent workflows should rely on governed semantic definitions, source truth, and execution monitoring rather than policy prose alone.
 
+The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) reinforces compliance and data-boundary controls for AI review. Source-code location, data residency, intellectual-property exposure, audit controls, air-gapped operation, and private-cloud deployment can decide whether a review agent is usable before quality is evaluated. Compliance-as-code belongs in pull-request checks when rules are stable enough to test.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -51,6 +53,8 @@ The detailed control leaves are:
 - Capture who invoked which agent tool, what data or repository scope it touched, and which policy allowed or blocked the action.
 - Encode recurring compliance requirements as automated checks when they can be tested at pull-request time.
 - Require governed semantic definitions, source-truth labels, and execution monitoring before agents retrieve or act on business metrics.
+- Treat source-code location, data residency, auditability, and air-gapped operation as acceptance gates for AI code review in regulated environments.
+- Prefer executable pull-request policy checks for stable compliance requirements instead of relying on manual audit notes after merge.
 
 ## Authoritative Sources
 
@@ -68,6 +72,7 @@ The detailed control leaves are:
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 
 ## Related Code
 
@@ -104,3 +109,4 @@ The detailed control leaves are:
 - Maintained on 2026-06-29 with inherited-permission checks, runtime enforcement, escalation, and audit-control evidence.
 - Maintained on 2026-07-03 with shadow-agent inventory, MCP audit evidence, and destructive shell-command containment controls.
 - Maintained on 2026-07-04 with executable compliance checks, governed semantics, source truth, and execution monitoring.
+- Maintained on 2026-07-05 with data-residency, source-code exposure, auditability, air-gapped review, and compliance-as-code pull-request gates.

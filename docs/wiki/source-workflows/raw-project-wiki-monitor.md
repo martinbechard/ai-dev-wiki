@@ -17,6 +17,8 @@ The monitor is the automation layer allowed to refresh docs/wiki pages after raw
 
 The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) reinforces that raw ingest should preserve knowledge packages as evidence before synthesis. External code, tests, traces, vendor claims, and public research should be read as source material, mapped into durable local leaves, and verified against the wiki contract before the source is moved to processed storage.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) reinforces wiki memory as an ingest output. Raw artifacts should become compact, source-backed durable leaves and item-level digest entries rather than repeated raw chunks, while source files stay available as provenance after processing.
+
 ## Practice Boundaries
 
 - Ignore hidden filesystem metadata and keep clipping moves collision-safe.
@@ -28,6 +30,8 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 - Run project-wiki lint before considering ingest complete.
 - Report moved clippings, raw files found, changed leaves, digest updates, processed-source moves, lint result, and blockers.
 - Keep knowledge-package provenance visible when source material contains external agent work, traces, or claims about local practice.
+- Keep raw-source ingest focused on compact synthesized wiki memory instead of copying raw collector summaries into topic pages.
+- Preserve processed artifacts as provenance after item-level leaves and digests hold the reusable understanding.
 
 ## Authoritative Sources
 
@@ -38,6 +42,7 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 - [source reconciliation and routing](source-reconciliation-and-routing.md)
 - [digests](../digests/index.md)
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -67,3 +72,4 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 
 - Created on 2026-06-23 to separate clipping moves, raw ingest, durable leaf updates, digest updates, lint, and processed-source moves from the broader automated-update-feeds page.
 - Maintained on 2026-06-26 with knowledge-package provenance as an ingest concern.
+- Maintained on 2026-07-05 with compact wiki-memory synthesis and processed-artifact provenance signals.

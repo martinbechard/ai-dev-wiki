@@ -29,6 +29,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds an agent-platform layering signal. Orchestration, model inference, tools, memory, retrieval, control plane, and runtime should be treated as separable platform responsibilities so local architecture decisions can assign ownership, telemetry, policy enforcement, and runtime isolation without collapsing the whole system into prompt design.
 
+The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) extends that platform boundary to non-code desktop and file agents. File-system readers, work folders, output folders, edit previews, operation-specific approvals, and audit trails are harness components when an agent can inspect or change local documents outside a repository.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -50,6 +52,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Prefer narrow capability bridges and inspectable isolated environments when agents execute generated code or delegate dynamic subwork.
 - Separate orchestration, model routing, memory, retrieval, tools, control plane, and runtime ownership when designing production agent platforms.
 - Preserve trace evidence across platform layers so long-running agent behavior can be debugged by component responsibility.
+- Treat desktop file access, work folders, edit previews, operation-specific approvals, and audit trails as harness responsibilities when agents operate on local documents.
 
 ## Authoritative Sources
 
@@ -65,6 +68,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -102,3 +106,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-06-30 with the harness primitive taxonomy and primitive-level failure diagnostics.
 - Maintained on 2026-07-02 with execution-boundary, isolated-environment, durable-pause, and deterministic-evaluator signals.
 - Maintained on 2026-07-04 with agent-platform layering, control-plane ownership, and cross-layer trace evidence.
+- Maintained on 2026-07-05 with desktop file-agent permission, folder, edit-preview, and audit-boundary signals.

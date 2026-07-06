@@ -34,6 +34,8 @@ July 3 public artifacts added local practice coverage for [intelligent code revi
 
 July 4 public artifacts added local practice coverage for [agent harness components](../application-patterns/agent-harness-components.md), recurrence-versus-reach instruction placement, recall-first review, scan-to-merge remediation, governed semantic data access, role-confusion prompt injection, agentic test loops, and coordinator-worker session state.
 
+July 5 public artifacts added local practice coverage for AI review deployment gates, file-backed codebase wiki memory, dynamic subagent coverage, normalized multi-[agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), roster oversight evidence, capability isolation, desktop file-agent approvals, and workflow-redesign prerequisites.
+
 ## Authoritative Sources
 
 - [July 2026 development digest](2026-07.md)
@@ -67,6 +69,8 @@ July 4 public artifacts added local practice coverage for [agent harness compone
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
@@ -111,3 +115,4 @@ July 4 public artifacts added local practice coverage for [agent harness compone
 - Updated on 2026-07-02 after public raw artifacts were synthesized into durable governance, cost, workflow, harness, eval, tool, memory, and workspace leaves.
 - Updated on 2026-07-03 after public raw artifacts were synthesized into durable review, retrieval, memory, governance, skills, telemetry, harness, and context-layer leaves.
 - Updated on 2026-07-04 after public raw artifacts were synthesized into durable platform, instruction, review, governance, retrieval, eval, and coordinator leaves.
+- Updated on 2026-07-05 after public raw artifacts were synthesized into durable review, governance, wiki-memory, subagent, cost, ownership, approval, and harness leaves.

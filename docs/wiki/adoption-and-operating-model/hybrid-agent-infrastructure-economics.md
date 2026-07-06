@@ -17,6 +17,8 @@ The source also argues against treating hosting as a binary managed-versus-local
 
 Broad coverage of GitHub Copilot, Gemini, Claude, Gemma, Qwen, GLM, GCP, Apple Silicon, and pricing changes stays upstream-owned in the federated AI wiki. This page owns the downstream decision lens: how an engineering organization decides whether a workflow should use a managed provider, compose around a governed harness, self-host capacity, or reject local execution because the hidden operating cost exceeds the apparent token savings.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds a multi-agent telemetry signal. Cost governance needs normalized traces across model calls, shell commands, MCP activity, tool calls, errors, timing, and subagent invocations so mixed local and cloud coding-agent stacks can be compared by workflow outcome instead of by vendor bill alone.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -25,6 +27,8 @@ Broad coverage of GitHub Copilot, Gemini, Claude, Gemma, Qwen, GLM, GCP, Apple S
 - Consider self-hosted open-weights models only for predictable, high-frequency workflows where utilization, staffing, routing, monitoring, and model quality can be governed.
 - Treat local workstation inference as a specialized runtime option when privacy or offline constraints justify the latency, memory, maintenance, and auditability burden.
 - Route premium models to work that benefits from deeper reasoning or review, and route routine completions, minor edits, and repetitive automation to cheaper paths when quality evidence supports the split.
+- Normalize cost telemetry across model calls, shell commands, MCP activity, tool calls, subagents, errors, and timing before comparing mixed agent stacks.
+- Compare cost to workflow outcome and review burden, not only to provider invoices or seat counts.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -35,6 +39,7 @@ Broad coverage of GitHub Copilot, Gemini, Claude, Gemma, Qwen, GLM, GCP, Apple S
 - [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md)
 - [local model runtime harness](../application-patterns/local-model-runtime-harness.md)
 - [federation.md](../federation.md)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -61,3 +66,4 @@ Broad coverage of GitHub Copilot, Gemini, Claude, Gemma, Qwen, GLM, GCP, Apple S
 ## Maintenance Notes
 
 - Created on 2026-06-27 from the Affordable AI Agents source as the local operating-model lens for managed, subscription, self-hosted, and local execution economics.
+- Maintained on 2026-07-05 with normalized multi-agent cost traces across models, tools, shell commands, MCP, subagents, errors, and timing.

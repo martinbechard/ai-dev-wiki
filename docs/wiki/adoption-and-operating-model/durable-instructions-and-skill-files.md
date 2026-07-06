@@ -17,6 +17,8 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a freshness and provenance lens for durable instruction files. Rules should carry enough creation reason, affected files or incidents, related code changes, and human confirmation dates for maintainers to detect stale operational memory before an agent keeps following outdated guidance.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds a codebase-wiki memory signal. Durable instruction files should point agents toward compact, versionable wiki context instead of embedding full documentation in the live prompt, and scheduled refreshes should preserve provenance so stale project memory can be corrected.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -26,6 +28,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Keep portable skills narrow enough that they can move across tools without carrying unrelated project context or personal preferences.
 - Record why durable instruction rules exist, which files or incidents they relate to, and when a human last confirmed them.
 - Review stale instructions when libraries, incident decisions, architecture, or recurring patterns change.
+- Point agents from durable instructions to maintained wiki context when the reusable knowledge is larger than a rule file should carry.
+- Keep scheduled documentation refreshes provenance-backed so durable instructions can route to current compiled context without becoming source dumps.
 
 ## Authoritative Sources
 
@@ -34,6 +38,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -64,3 +69,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.
 - Maintained on 2026-06-23 to separate durable instruction placement from portable skill and runbook composition.
 - Maintained on 2026-07-04 with instruction provenance, confirmation dates, and stale-rule review triggers.
+- Maintained on 2026-07-05 with versionable codebase-wiki context and provenance-backed documentation refresh signals.

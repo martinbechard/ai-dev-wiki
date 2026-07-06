@@ -37,6 +37,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) reinforce governance as platform infrastructure. Control-plane responsibilities include identity, tool policy, model routing, sandbox boundaries, trace evidence, compliance checks, and human escalation paths, while data-plane tools and retrieved business context need semantic governance and source-truth enforcement.
 
+The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) and [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) add enterprise acceptance gates for agent deployment. Agent governance should cover tool-risk classification, vendor terms, telemetry behavior, jurisdictional policy, on-premise or air-gapped review requirements, per-agent identity, gateway enforcement, role accountability, risk registers, oversight evidence, logging, and monitoring before broad team rollout.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -67,6 +69,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Separate control-plane policy, identity, routing, and audit responsibilities from data-plane tool execution and retrieval.
 - Keep human escalation paths and validation capacity visible when regulated or audit-heavy work adopts agentic workflows.
 - Treat semantic layers and compliance checks as governance infrastructure when agents can act on enterprise data or pull requests.
+- Review vendor terms, telemetry behavior, jurisdictional rules, deployment location, and approved alternatives before classifying a coding or review agent for enterprise use.
+- Require per-agent identity, gateway enforcement, risk registers, oversight evidence, logging, and monitoring when agents become recurring team infrastructure.
 
 ## Authoritative Sources
 
@@ -89,6 +93,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -131,3 +137,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-07-01 with enterprise managed settings, model defaults, plugin controls, browser-tool enablement, and budget caps as control-plane evidence.
 - Maintained on 2026-07-02 with scoped workflow identity, agent-session audit streams, and trace-log hygiene requirements.
 - Maintained on 2026-07-04 with platform control-plane boundaries, governed semantics, compliance checks, and human escalation capacity.
+- Maintained on 2026-07-05 with tool-risk classification, deployment-location gates, per-agent identity, gateway enforcement, and oversight evidence.

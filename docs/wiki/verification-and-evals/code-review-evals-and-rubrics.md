@@ -27,6 +27,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds recall-first tuning evidence. Review evals should measure missed defects, filtered false positives, reviewer attention cost, and the repository or dependency evidence behind cross-file findings instead of scoring only whether the final comment sounds plausible.
 
+The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) adds architecture-context and compliance-fit dimensions. Code-review evals should score whole-repository context, architectural fit, Git workflow integration, actionability, team-standard customization, latency, and whether the deployment model can satisfy source-location and audit requirements.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -46,6 +48,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Keep human review, deterministic checks, and LLM-as-judge scores separate when calibrating code review quality.
 - Measure recall, precision, filtering quality, and reviewer attention cost as separate code-review eval dimensions.
 - Include cross-file and dependency-risk cases where the expected finding requires repository evidence beyond the changed hunk.
+- Score whole-repository architecture context, workflow integration, actionability, team-standard customization, and latency as separate dimensions.
+- Include compliance-fit checks for source location, audit evidence, and deployment model when the review tool is meant for regulated or proprietary code.
 
 ## Authoritative Sources
 
@@ -61,6 +65,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 
 ## Related Code
 
@@ -93,3 +98,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-07-01 with independent verification-layer boundaries and repeatability scoring for AI security review.
 - Maintained on 2026-07-01 with trajectory-level review traces, repeated-review convergence, and separated human, deterministic, and judge signals.
 - Maintained on 2026-07-04 with recall-first tuning, filtered false-positive costs, and dependency-aware review cases.
+- Maintained on 2026-07-05 with architecture-context, workflow-integration, actionability, customization, latency, and compliance-fit dimensions.

@@ -19,6 +19,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) adds a code-review memory pattern. Persistent review memory should have explicit fields for repository history, prior comments, project rules, file metadata, and developer or team feedback, then feed context assembly and result persistence. That memory is useful only when tagging, retrieval precision, retention, and governance are part of the design.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) reinforces wiki memory as a file-backed context layer. Repo documentation agents can maintain compact wiki files, reference them from durable instruction files, and refresh them through scheduled diffs, but the wiki remains a compiled view over source evidence rather than a replacement for the repository or raw artifacts.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -32,6 +34,9 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Refresh or correct wiki memory from provenance when source facts drift or a later run exposes a contradiction.
 - Define memory dimensions before storing review facts, including repository, file, team, reviewer, decision, and feedback scope.
 - Keep memory retrieval precise enough that prior comments and team decisions inform the current review without turning unrelated history into hidden instructions.
+- Use file-backed wiki memory when agents need compact, inspectable, reusable context that can be reviewed in version control.
+- Reference maintained wiki memory from durable instruction files instead of embedding long project summaries in agent prompts.
+- Preserve scheduled documentation diffs as maintenance evidence, not as automatic proof that the compiled wiki is current.
 
 ## Authoritative Sources
 
@@ -41,6 +46,7 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -70,3 +76,4 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 - Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.
 - Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.
 - Maintained on 2026-07-03 with persistent code-review memory dimensions, tagging, retrieval precision, retention, and governance.
+- Maintained on 2026-07-05 with file-backed repo wiki memory, durable instruction references, and scheduled-diff maintenance boundaries.

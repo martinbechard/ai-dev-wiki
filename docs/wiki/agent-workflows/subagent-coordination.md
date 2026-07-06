@@ -21,6 +21,8 @@ The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-d
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds role-and-skill separation for subagent systems. Specialized workers should have role definitions, objectives, tool budgets, return shapes, and moderation or validation loops, while reusable skills provide procedure. A coordinator may serve both, but local workflow design should keep the artifacts and accountability separate.
 
+The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds dynamic-dispatch coverage signals. Subagent fan-out should be generated from explicit partitions, tracked through typed intermediate results, and reviewed by the main coordinator so broad delegated work can prove coverage instead of relying on conversational assurances.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -32,6 +34,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Define subagent role boundaries, context budgets, source access, handoff fields, and completion criteria as a delegation contract.
 - Keep worker roles, objectives, tool budgets, return shapes, and validation loops explicit when delegating through a coordinator.
 - Do not let reusable skill content substitute for a role boundary or validation owner.
+- Partition broad delegated work explicitly and preserve typed intermediate results for each partition.
+- Require the coordinator to reconcile coverage, conflicts, failures, and skipped partitions before accepting subagent fan-out.
 
 ## Authoritative Sources
 
@@ -41,6 +45,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 
 ## Related Code
 
@@ -72,3 +77,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-06-23 with public loop-design guidance on recurring subagent loops, independent validation, and stop conditions.
 - Maintained on 2026-06-28 with typed delegation contracts for subagent configuration.
 - Maintained on 2026-07-04 with coordinator-served roles, tool budgets, return shapes, and role-versus-skill boundaries.
+- Maintained on 2026-07-05 with dynamic-dispatch partitioning, typed intermediate results, and coordinator coverage reconciliation.
