@@ -1,0 +1,648 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-06T21:03:12-04:00",
+    "rule": "include only public sources visibly published or updated within the last 7 days relative to the run time",
+    "start": "2026-06-29T21:03:12-04:00"
+  },
+  "excluded_candidate_count": 4,
+  "excluded_candidates": [
+    {
+      "reason": "Published before the seven-day cutoff for this run, despite strong topical relevance to agent evaluation leaves.",
+      "source_url": "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+      "visible_date": "2026-06-24"
+    },
+    {
+      "reason": "Published before the seven-day cutoff for this run.",
+      "source_url": "https://www.taskade.com/blog/agent-evals-explained",
+      "visible_date": "2026-06-25"
+    },
+    {
+      "reason": "No visible publication or update date was found in the opened page; excluded under the missing or ambiguous date rule.",
+      "source_url": "https://cognition.com/blog/frontier-code",
+      "visible_date": null
+    },
+    {
+      "reason": "Search result suggested recent availability, but the opened page did not provide a visible in-window publication or update date in the inspected lines.",
+      "source_url": "https://arxiv.org/html/2602.14690v5",
+      "visible_date": null
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entities, vendor comparisons, model/product background, and regulation background are upstream-owned. This watch records only local practice implications for approved ai-dev-wiki leaves.",
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "qualified_update_ids": [
+        "2026-06-30-samuelfaj-context-engineering-with-verification",
+        "2026-07-03-mintmcp-agent-control-plane",
+        "2026-07-03-mintmcp-agent-gateways-enterprise",
+        "2026-07-03-mintmcp-ai-agent-governance-deadline"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-01",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "qualified_update_ids": [
+        "2026-07-01-samuelfaj-pr-evals-ci"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-06-30",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "qualified_update_ids": [
+        "2026-06-30-langchain-harbor-agent-eval-stack"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "qualified_update_ids": [
+        "2026-06-30-langchain-harbor-agent-eval-stack",
+        "2026-07-01-samuelfaj-pr-evals-ci",
+        "2026-07-03-mintmcp-ai-agent-governance-deadline"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-06-30",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "qualified_update_ids": [
+        "2026-06-30-langchain-harbor-agent-eval-stack"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-02",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "qualified_update_ids": [
+        "2026-07-02-langchain-coding-agent-cost-control"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+      "qualified_update_ids": [
+        "2026-07-02-langchain-coding-agent-cost-control",
+        "2026-06-30-samuelfaj-context-engineering-with-verification",
+        "2026-07-03-mintmcp-agent-control-plane"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-06-30",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "qualified_update_ids": [
+        "2026-06-30-samuelfaj-context-engineering-with-verification"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "qualified_update_ids": [
+        "2026-07-02-langchain-coding-agent-cost-control",
+        "2026-07-03-samuelfaj-subagent-fanout-migrations"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-01",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "qualified_update_ids": [
+        "2026-07-01-samuelfaj-pr-evals-ci"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "qualified_update_ids": [
+        "2026-07-03-samuelfaj-subagent-fanout-migrations"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "qualified_update_ids": [
+        "2026-07-01-samuelfaj-pr-evals-ci",
+        "2026-07-03-samuelfaj-subagent-fanout-migrations"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "qualified_update_ids": [
+        "2026-06-30-samuelfaj-context-engineering-with-verification",
+        "2026-07-03-samuelfaj-subagent-fanout-migrations"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "qualified_update_ids": [
+        "2026-07-03-samuelfaj-subagent-fanout-migrations"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-03",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "qualified_update_ids": [
+        "2026-07-02-langchain-coding-agent-cost-control",
+        "2026-06-30-langchain-harbor-agent-eval-stack",
+        "2026-07-03-mintmcp-agent-control-plane",
+        "2026-07-03-mintmcp-agent-gateways-enterprise"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2602.14690v5",
+        "https://cognition.com/blog/frontier-code",
+        "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+        "https://www.mintmcp.com/blog/agent-control-plane",
+        "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+        "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+        "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+        "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+        "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+        "https://www.taskade.com/blog/agent-evals-explained"
+      ]
+    }
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "factual_summary": "LangChain describes coding-agent spend growth as a scaling bottleneck and frames cost control as an observability and workflow-governance problem, not only a model-pricing problem.",
+      "id": "2026-07-02-langchain-coding-agent-cost-control",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "coding agents"
+      ],
+      "published_or_updated_at": "2026-07-02",
+      "source_url": "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith"
+      ],
+      "visible_date_evidence": "Page shows Amy Ru and July 2, 2026; search result also marked the post as published four days ago.",
+      "why_it_matters": "Supports local leaves that treat workflow design, cost telemetry, delegation boundaries, and harness instrumentation as operating controls for agentic development."
+    },
+    {
+      "factual_summary": "LangChain and Harbor present an agent-evaluation stack built around isolated sandbox trials, scripted verifiers, repeated attempts, traces, datasets, and experiment records.",
+      "id": "2026-06-30-langchain-harbor-agent-eval-stack",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "Harbor",
+        "Deep Agents",
+        "LangGraph"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "source_url": "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith",
+        "Harbor",
+        "Deep Agents",
+        "LangGraph"
+      ],
+      "visible_date_evidence": "Page shows June 30, 2026 under the title.",
+      "why_it_matters": "Reinforces local evaluation leaves that require representative workflow calibration, trace-linked eval records, grader boundaries, and harnesses that inspect artifacts rather than final prose only."
+    },
+    {
+      "factual_summary": "The post argues that agent-generated PRs should arrive with deterministic tests, rubrics, diff analysis, execution evidence, risk gates, and blocking conditions before human review.",
+      "id": "2026-07-01-samuelfaj-pr-evals-ci",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot code review",
+        "GitLab AI Accountability Report",
+        "AGENTS.md",
+        "OpenAI Codex subagents"
+      ],
+      "published_or_updated_at": "2026-07-01",
+      "source_url": "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitLab",
+        "OpenAI Codex"
+      ],
+      "visible_date_evidence": "Page shows Samuel Fajreldines, 01 Jul 2026.",
+      "why_it_matters": "Maps directly to local code-review eval and lifecycle leaves because it treats review readiness as evidence-based triage with deterministic checks before semantic AI judging."
+    },
+    {
+      "factual_summary": "The post frames context engineering as controlling evidence, tools, memory, and verification, with smaller context budgets, subagent syntheses, scoped MCP tools, and post-loop learning captured in stable instructions.",
+      "id": "2026-06-30-samuelfaj-context-engineering-with-verification",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "named_entities": [
+        "Codex",
+        "Claude Code",
+        "Model Context Protocol",
+        "AGENTS.md"
+      ],
+      "published_or_updated_at": "2026-06-30",
+      "source_url": "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude Code",
+        "Model Context Protocol"
+      ],
+      "visible_date_evidence": "Search result shows Samuel Fajreldines, 30 Jun 2026.",
+      "why_it_matters": "Supports local leaves about workflow-before-model selection, deep research/writing workflow discipline, subagent coordination, and source routing that separates stable rules from retrieved evidence."
+    },
+    {
+      "factual_summary": "The post treats subagent fan-out as a bounded migration workflow: inventory, tests, review, explicit package boundaries, short syntheses, main-session consolidation, and CI as deterministic judge.",
+      "id": "2026-07-03-samuelfaj-subagent-fanout-migrations",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "MCP",
+        "GitHub Copilot code review",
+        "GitLab AI Accountability Report"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "source_url": "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol",
+        "GitHub Copilot",
+        "GitLab"
+      ],
+      "visible_date_evidence": "Search result marks the post as published four days ago and source text says retrieved 2026-07-03 for cited materials.",
+      "why_it_matters": "Strengthens local handoff, persistent workspace, subagent coordination, lifecycle, and workflow-selection leaves by emphasizing boundaries, proof, and consolidation before accepting parallel edits."
+    },
+    {
+      "factual_summary": "MintMCP describes an agent control plane as centralized policy enforcement, per-agent identity, audit logging, runtime guardrails, cost controls, and shadow-AI detection for production agent deployments.",
+      "id": "2026-07-03-mintmcp-agent-control-plane",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "MintMCP",
+        "MCP Gateway",
+        "Cursor",
+        "Claude Code",
+        "Gartner",
+        "Forrester"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "source_url": "https://www.mintmcp.com/blog/agent-control-plane",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "MCP Gateway",
+        "Cursor",
+        "Claude Code",
+        "Gartner",
+        "Forrester"
+      ],
+      "visible_date_evidence": "Page shows July 3, 2026 under the MintMCP blog header.",
+      "why_it_matters": "Locally relevant as a routing and operating-model signal: source reconciliation should route broad vendor facts upstream while retaining practice implications about evidence, ownership, and control-plane requirements."
+    },
+    {
+      "factual_summary": "MintMCP frames agent gateways as enterprise infrastructure for centralized authentication, monitoring, audit trails, policy controls, and hub-and-spoke governance across agent-to-tool connections.",
+      "id": "2026-07-03-mintmcp-agent-gateways-enterprise",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "MintMCP Gateway",
+        "Bifrost",
+        "TrueFoundry",
+        "MCP Gateway"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "source_url": "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+      "upstream_owned_entities": [
+        "MintMCP Gateway",
+        "Bifrost",
+        "TrueFoundry",
+        "MCP Gateway"
+      ],
+      "visible_date_evidence": "MintMCP blog listing and search result show Jul 3, 2026 for the post.",
+      "why_it_matters": "Useful for local source routing and harness leaves as practice evidence that gateway selection affects production readiness, but vendor comparison details belong upstream."
+    },
+    {
+      "factual_summary": "MintMCP connects AI agent governance to risk classification, compliance evidence, technical controls, audit logs, human oversight, and continuous risk management ahead of EU AI Act timelines.",
+      "id": "2026-07-03-mintmcp-ai-agent-governance-deadline",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "named_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "GDPR"
+      ],
+      "published_or_updated_at": "2026-07-03",
+      "source_url": "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+      "upstream_owned_entities": [
+        "MintMCP",
+        "EU AI Act",
+        "GDPR"
+      ],
+      "visible_date_evidence": "Search result and MintMCP blog listing show the post as published four days ago / Jul 3, 2026.",
+      "why_it_matters": "For selected leaves, this mainly affects source reconciliation and product judgment quality gates by reinforcing that local practice artifacts should capture audit evidence and route broad regulation/vendor context upstream."
+    }
+  ],
+  "run_timestamp": "2026-07-06T21:03:12-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/html/2602.14690v5",
+    "https://cognition.com/blog/frontier-code",
+    "https://www.algolia.com/blog/ai/ai-agent-evaluation-frameworks-metrics-testing-strategies",
+    "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+    "https://www.langchain.com/blog/unified-stack-for-evaluating-agents",
+    "https://www.mintmcp.com/blog/agent-control-plane",
+    "https://www.mintmcp.com/blog/ai-agent-governance-act-deadline",
+    "https://www.mintmcp.com/blog/top-agent-gateways-enterprise-teams",
+    "https://www.samuelfaj.com/en/blog/context-engineering-for-coding-agents-without-waste/",
+    "https://www.samuelfaj.com/en/blog/pr-evals-that-keep-code-agents-honest-in-ci/",
+    "https://www.samuelfaj.com/en/blog/subagent-fan-out-for-large-code-migrations/",
+    "https://www.taskade.com/blog/agent-evals-explained"
+  ]
+}
