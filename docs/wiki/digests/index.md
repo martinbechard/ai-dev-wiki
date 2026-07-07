@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; the ingest workflow updates digest pages after durable topic leaves are refreshed.
 
-The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, background-agent handoffs, review-capacity controls, review memory, shadow-agent audit evidence, third-party skill intake, runtime telemetry, local execution gates, governed context layers, agent-platform boundaries, recall-first review, scan-to-merge security remediation, trusted MCP catalogs, agentic testing, and coordinator-worker state.
+The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, background-agent handoffs, review-capacity controls, review memory, shadow-agent audit evidence, third-party skill intake, runtime telemetry, local execution gates, governed context layers, agent-platform boundaries, recall-first review, scan-to-merge security remediation, trusted MCP catalogs, agentic testing, coordinator-worker state, instruction economy, persistent memory, runtime lifecycle verification, chat-agent state, security harness intake, simulated shell boundaries, procurement governance, and trace-linked cost controls.
 
 The active June 2026 digest also records raw-source synthesis for operating models, governance controls, workflow packaging, RAG security boundaries, local model harness practices, and portable skill procedures.
 
@@ -35,6 +35,8 @@ July 3 public artifacts added local practice coverage for [intelligent code revi
 July 4 public artifacts added local practice coverage for [agent harness components](../application-patterns/agent-harness-components.md), recurrence-versus-reach instruction placement, recall-first review, scan-to-merge remediation, governed semantic data access, role-confusion prompt injection, agentic test loops, and coordinator-worker session state.
 
 July 5 public artifacts added local practice coverage for AI review deployment gates, file-backed codebase wiki memory, dynamic subagent coverage, normalized multi-[agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), roster oversight evidence, capability isolation, desktop file-agent approvals, and workflow-redesign prerequisites.
+
+July 6 public artifacts and clippings added local practice coverage for concise instruction files, persistent agent memory, runtime verification layers, software-quality gates, tool telemetry, chat-agent process state, security-scanner intake, virtual shell evidence boundaries, configuration-as-code governance, procurement readiness, worktree orchestration, and trace-linked cost caps.
 
 ## Authoritative Sources
 
@@ -71,6 +73,11 @@ July 5 public artifacts added local practice coverage for AI review deployment g
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
+- [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
@@ -116,3 +123,4 @@ July 5 public artifacts added local practice coverage for AI review deployment g
 - Updated on 2026-07-03 after public raw artifacts were synthesized into durable review, retrieval, memory, governance, skills, telemetry, harness, and context-layer leaves.
 - Updated on 2026-07-04 after public raw artifacts were synthesized into durable platform, instruction, review, governance, retrieval, eval, and coordinator leaves.
 - Updated on 2026-07-05 after public raw artifacts were synthesized into durable review, governance, wiki-memory, subagent, cost, ownership, approval, and harness leaves.
+- Updated on 2026-07-06 after public raw artifacts and clippings were synthesized into durable instruction, memory, verification, governance, tool, harness, process-state, workspace, workflow-selection, and cost leaves.

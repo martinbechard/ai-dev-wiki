@@ -13,6 +13,8 @@ Product judgment gates check whether the right thing is being built and whether 
 
 The local practice is to pair implementation workflow with judgment workflow. Coding agents can make building cheaper, but product review, design review, audit, and acceptance checks keep the team from shipping the wrong work or a weak experience. These gates complement [code review evals and rubrics](code-review-evals-and-rubrics.md) by reviewing product fit and user-facing delivery, not only code risk.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add quality and compliance gates. Product judgment should include runtime environment checks, compliance evidence, audit logs, human oversight, and established software-quality dimensions when AI-generated work changes customer-facing or regulated workflows. Those gates should stay separate from vendor or standards background, which belongs upstream unless it changes local acceptance practice.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -21,12 +23,15 @@ The local practice is to pair implementation workflow with judgment workflow. Co
 - Use acceptance gates to verify that the implementation delivers the intended user-facing experience.
 - Keep product, design, and technical context documents maintained because stale judgment context weakens every gate.
 - Let small fixes use narrower gates when product or design risk is low.
+- Include runtime, compliance, audit, oversight, maintainability, reliability, and security evidence when AI-generated work carries product or regulatory risk.
 
 ## Authoritative Sources
 
 - [Studious source](../../../raw/processed/jacquardlabsstudious Studious — a product-judgment workflow for Claude Code quality gates, periodic health reviews, and pre-merge audits that examine each piece of work..md)
 - [code review evals and rubrics](code-review-evals-and-rubrics.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 
 ## Related Code
 
@@ -53,3 +58,4 @@ The local practice is to pair implementation workflow with judgment workflow. Co
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.
+- Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.

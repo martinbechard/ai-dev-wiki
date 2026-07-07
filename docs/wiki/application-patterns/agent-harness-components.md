@@ -31,6 +31,10 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) extends that platform boundary to non-code desktop and file agents. File-system readers, work folders, output folders, edit previews, operation-specific approvals, and audit trails are harness components when an agent can inspect or change local documents outside a repository.
 
+The [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md), [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md), and [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md) add three harness-component examples without making local product leaves. Chat-agent surfaces need event subscriptions, thread state, adapter boundaries, rich response rendering, and durable workflow handoff when agents live inside collaboration channels. Security scanning harnesses need scan discovery, AI investigation, resumable processing, revalidation, exportable findings, and isolated worker execution. Virtual shell packages are useful as execution substrates for tests and examples when the harness labels simulation boundaries and preserves real verification separately.
+
+The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) also reinforces harness instrumentation as an operating control. Cost, sandbox trials, scripted verifiers, traces, datasets, ownership metadata, gateway policies, and hub-and-spoke tool access are component responsibilities when agents run recurring workflows rather than one-off prompts.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -53,6 +57,10 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Separate orchestration, model routing, memory, retrieval, tools, control plane, and runtime ownership when designing production agent platforms.
 - Preserve trace evidence across platform layers so long-running agent behavior can be debugged by component responsibility.
 - Treat desktop file access, work folders, edit previews, operation-specific approvals, and audit trails as harness responsibilities when agents operate on local documents.
+- Treat chat adapters, thread subscriptions, response rendering, and durable workflow handoff as harness responsibilities for collaboration-channel agents.
+- Treat scan discovery, AI investigation, resumable processing, revalidation, finding export, and isolated workers as harness responsibilities for agent-powered security review.
+- Keep simulated shell substrates separate from host execution evidence when they are used for agent tests, examples, or comparison runs.
+- Make sandbox trials, scripted verifiers, trace records, datasets, cost telemetry, and gateway policy evidence part of the harness boundary for recurring agent workflows.
 
 ## Authoritative Sources
 
@@ -69,6 +77,10 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
+- [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -107,3 +119,4 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Maintained on 2026-07-02 with execution-boundary, isolated-environment, durable-pause, and deterministic-evaluator signals.
 - Maintained on 2026-07-04 with agent-platform layering, control-plane ownership, and cross-layer trace evidence.
 - Maintained on 2026-07-05 with desktop file-agent permission, folder, edit-preview, and audit-boundary signals.
+- Maintained on 2026-07-06 with chat-agent adapter, security-scanning harness, virtual shell, and recurring workflow instrumentation components.

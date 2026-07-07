@@ -23,6 +23,8 @@ The [harness engineering masterclass source](../../../raw/processed/Harness Engi
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a testing taxonomy for agentic workflows. Verification should distinguish AI-authored test artifacts, self-healing scripted tests, and fully agentic test loops where an agent plans, acts, observes runtime signals, and adapts without a hand-authored path underneath. Those modes need different evidence, ownership, and acceptance criteria.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds runtime-lifecycle and quality-model signals. AI-assisted delivery should distinguish static review, CI, sandboxed execution, preview-environment checks, staging, production observation, and operations telemetry as separate evidence layers. Established product-quality dimensions such as maintainability, reliability, security, and quality gates can anchor AI-generated code acceptance so teams do not rely only on task-completion benchmarks or passing unit tests.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -39,6 +41,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Convert repeated verification failures into harness changes such as stronger schemas, permission gates, stored memories, reusable skills, or regression eval cases.
 - Distinguish generated tests, self-healing scripted tests, and agentic runtime test loops before accepting test evidence.
 - Require trace, observation, and path-choice evidence when a test agent owns the execution path rather than only authoring a script.
+- Separate static review, CI, preview, staging, production, and operations evidence when an AI-generated change affects a deployed workflow.
+- Include maintainability, reliability, security, and other software-quality dimensions in acceptance gates when the risk exceeds simple functional correctness.
 
 ## Authoritative Sources
 
@@ -52,6 +56,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [Harness engineering masterclass source](../../../raw/processed/Harness Engineering Masterclass Technical Deep Dive on how to build Agentic Systems.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 
 ## Related Code
 
@@ -88,3 +93,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-06-28 with harness-level failure attribution and cost-sensitive verification depth.
 - Maintained on 2026-06-30 with receipts, traceability, and post-failure harness hardening guidance.
 - Maintained on 2026-07-04 with generated-test, self-healing-script, and agentic-test-loop boundaries.
+- Maintained on 2026-07-06 with runtime-lifecycle verification layers and software-quality model gates for AI-generated code.

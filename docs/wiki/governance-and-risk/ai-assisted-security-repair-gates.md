@@ -17,6 +17,8 @@ Security repair work should not stop at a plausible patch. The workflow needs a 
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) add a scan-to-merge lens. Dashboard findings and generated patches are not sufficient handoffs by themselves; the local gate needs severity context, triage rationale, affected scope, regression evidence, rescan evidence when available, and human merge review that checks for new security issues.
 
+The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md) adds security-harness operating detail. Agent-powered vulnerability scanning should be treated as an expensive, high-privilege workflow with short project-specific bootstrap context, resumable batch processing, optional revalidation, finding exports, and sandboxed worker execution for large repositories. The local gate is to review setup context for sensitive data, scope the scan, preserve resumability evidence, and require human triage before exported findings become repair work.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -28,6 +30,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Treat agent-generated security assurances as untrusted until reviewed against source evidence and tests.
 - Carry scan findings through triage, prioritization, fix evidence, rescan evidence, and merge review instead of treating the scanner dashboard as the workflow.
 - Require human review of AI-generated security patches for regression coverage and absence of new security issues.
+- Keep security-scan bootstrap context short, project-specific, and free of unnecessary sensitive detail.
+- Require triage, optional revalidation, export review, and sandbox boundary evidence before agent-generated security findings drive fixes.
 
 ## Authoritative Sources
 
@@ -37,6 +41,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 
 ## Related Code
 
@@ -64,3 +69,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.
 - Maintained on 2026-07-04 with scan-to-merge severity, triage, rescan, regression, and human merge-review gates.
+- Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.

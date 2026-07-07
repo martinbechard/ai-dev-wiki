@@ -39,6 +39,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) and [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) add enterprise acceptance gates for agent deployment. Agent governance should cover tool-risk classification, vendor terms, telemetry behavior, jurisdictional policy, on-premise or air-gapped review requirements, per-agent identity, gateway enforcement, role accountability, risk registers, oversight evidence, logging, and monitoring before broad team rollout.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add declarative and procurement controls. Agent configuration-as-code, permission allow lists, spend caps, traces, audit logs, compliance-as-code, SSO, SCIM, data residency, retention policy, and support commitments are governance infrastructure when agents become team tools. Broad vendor comparison and product ranking remain upstream-owned; locally, these signals define the evidence needed before procurement or rollout.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -71,6 +73,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Treat semantic layers and compliance checks as governance infrastructure when agents can act on enterprise data or pull requests.
 - Review vendor terms, telemetry behavior, jurisdictional rules, deployment location, and approved alternatives before classifying a coding or review agent for enterprise use.
 - Require per-agent identity, gateway enforcement, risk registers, oversight evidence, logging, and monitoring when agents become recurring team infrastructure.
+- Version agent definitions, prompts, model routes, triggers, tools, permissions, and spend caps when those settings determine recurring team behavior.
+- Require identity, audit-log, retention, residency, support, and compliance evidence before enterprise coding-agent pilots expand.
 
 ## Authoritative Sources
 
@@ -95,6 +99,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 
 ## Related Code
 
@@ -138,3 +144,4 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Maintained on 2026-07-02 with scoped workflow identity, agent-session audit streams, and trace-log hygiene requirements.
 - Maintained on 2026-07-04 with platform control-plane boundaries, governed semantics, compliance checks, and human escalation capacity.
 - Maintained on 2026-07-05 with tool-risk classification, deployment-location gates, per-agent identity, gateway enforcement, and oversight evidence.
+- Maintained on 2026-07-06 with configuration-as-code, compliance-as-code, procurement, identity, retention, and spend-control evidence.

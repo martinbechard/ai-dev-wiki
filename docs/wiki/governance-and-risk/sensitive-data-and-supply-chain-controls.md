@@ -29,6 +29,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json) adds managed-setting, visual-context, and model-enablement signals. Enterprise plugin controls, bypass-permission modes, browser tools, model enablement policies, image and PDF attachments, and remote admin MCP servers are supply-chain or sensitive-data controls when they affect what an agent can see or do. The local rule is to review tool provenance, attachment sensitivity, retention terms, model approval, and action scope before enabling those surfaces for team workflows.
 
+The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md), [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md), and [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md) add supply-chain intake examples. Agent security scanners, virtual shell packages, chat adapters, state stores, and channel integrations should be reviewed for package provenance, sandbox claims, credential handling, network behavior, adapter permissions, and whether collaboration messages or repository content could leave the intended trust boundary.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -50,6 +52,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Apply DLP, source classification, and human approval to tool arguments that could carry sensitive records out through otherwise approved actions.
 - Review managed plugin settings, bypass modes, browser tooling, visual attachments, model enablement, and remote MCP administration as supply-chain or data-control changes.
 - Record retention and sensitivity decisions for screenshots, PDFs, architecture images, logs, and other multimodal context before they are sent to a hosted assistant.
+- Review agent security scanners, virtual shell tools, chat adapters, state stores, and channel integrations before they enter a team agent workflow.
+- Check whether security scans, chat-agent threads, and simulated shell examples expose repository content, credentials, collaboration messages, or sensitive findings outside the intended environment.
 
 ## Authoritative Sources
 
@@ -66,6 +70,9 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
+- [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
+- [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
+- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -104,3 +111,4 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 - Maintained on 2026-06-28 with data-control gates for source, logs, reviews, and private development context.
 - Maintained on 2026-07-01 with package, IDE extension, MCP metadata, malware-analysis, and tool-parameter controls for agent workflows.
 - Maintained on 2026-07-01 with managed plugin settings, bypass modes, browser tools, visual attachments, model enablement, and remote admin MCP controls.
+- Maintained on 2026-07-06 with scanner, virtual shell, chat adapter, state store, and collaboration-channel supply-chain checks.

@@ -21,6 +21,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) reinforces wiki memory as a file-backed context layer. Repo documentation agents can maintain compact wiki files, reference them from durable instruction files, and refresh them through scheduled diffs, but the wiki remains a compiled view over source evidence rather than a replacement for the repository or raw artifacts.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds persistent agent-memory evidence. Shared coding-agent memory is useful when it captures prompts, tool calls, decisions, compaction checkpoints, session boundaries, and handoff context in a queryable, auditable form. The local boundary is that such memory should support source-backed rehydration and attribution, not silently become higher-authority instructions than repository procedures or verified wiki leaves.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -37,6 +39,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Use file-backed wiki memory when agents need compact, inspectable, reusable context that can be reviewed in version control.
 - Reference maintained wiki memory from durable instruction files instead of embedding long project summaries in agent prompts.
 - Preserve scheduled documentation diffs as maintenance evidence, not as automatic proof that the compiled wiki is current.
+- Capture prompts, tool calls, decisions, compaction points, session boundaries, and handoff summaries when persistent agent memory needs auditability.
+- Rehydrate from persistent memory only after checking source provenance and current repository state.
 
 ## Authoritative Sources
 
@@ -47,6 +51,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 
 ## Related Code
 
@@ -77,3 +82,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.
 - Maintained on 2026-07-03 with persistent code-review memory dimensions, tagging, retrieval precision, retention, and governance.
 - Maintained on 2026-07-05 with file-backed repo wiki memory, durable instruction references, and scheduled-diff maintenance boundaries.
+- Maintained on 2026-07-06 with persistent agent-memory capture, attribution, session-boundary, and source-backed rehydration boundaries.

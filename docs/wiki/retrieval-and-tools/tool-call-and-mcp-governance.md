@@ -33,6 +33,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) add trusted-catalog, tool-description, and semantic-MCP signals. Tool descriptions, schema text, catalog entries, routing decisions, and returned business context are part of the trusted execution surface. They need provenance review, re-approval when action surfaces change, invocation evidence, deterministic verification checks, and governed semantic definitions when agents retrieve enterprise metrics.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds operating telemetry for tools and skills. Tool-call inventory, MCP server usage, Bash command families, skill adoption, and error counts are governance evidence because they reveal which integrations are actually used, which fail often, and which surfaces deserve retirement or stricter policy. The [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md) also adds a virtual-shell lens: simulated shell environments can support agent experimentation, comparison tests, and safer examples, but they still need clear boundaries so a simulated command transcript is not mistaken for proof from the real repository or host.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -60,6 +62,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Treat MCP server approval, tool descriptions, schema text, catalog entries, and routing records as auditable supply-chain inputs.
 - Re-approve MCP tools when metadata, action scope, authentication, or returned-data authority changes.
 - Pair governed data-access MCP tools with semantic definitions, source truth, and execution monitoring.
+- Review tool-call, MCP, Bash-family, skill-adoption, and error-rate telemetry when maintaining the approved tool surface.
+- Label simulated shell environments clearly and require real host verification before treating shell-like evidence as repository proof.
 
 ## Authoritative Sources
 
@@ -81,6 +85,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 
 ## Related Code
 
@@ -119,3 +125,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-07-01 with browser-tool, admin-capable remote MCP, and generated API-to-MCP curation boundaries.
 - Maintained on 2026-07-02 with browser-observation evidence controls and build-aware context-generation governance.
 - Maintained on 2026-07-04 with trusted MCP catalogs, tool-description change control, routing evidence, and governed semantic data access.
+- Maintained on 2026-07-06 with tool and skill telemetry plus simulated shell evidence boundaries.

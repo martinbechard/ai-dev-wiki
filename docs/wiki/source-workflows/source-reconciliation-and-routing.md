@@ -21,6 +21,8 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 
 The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md) is routed as broad framework coverage for the upstream AI wiki and as a local governed-MCP practice signal. If the upstream wiki later creates a FastMCP entity leaf, local pages should link to that owner and keep only the downstream tool-surface curation guidance.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json), [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json), and July 6 clippings reinforce the federation split. Vercel, LangChain, MintMCP, Agent Orchestrator, ai-memory, Deepsec, Just Bash, Chat SDK, standards, and model names are broad ecosystem entities unless the local page is about downstream workflow, governance, evaluation, harness, or adoption practice. Date evidence that comes only from search-result snippets should remain source-attributed and should not be promoted into a durable current fact without stronger source-page evidence.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -32,6 +34,8 @@ The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-
 - Treat external agent artifacts as source evidence that must be routed, regenerated, and verified before becoming local implementation.
 - Preserve connector semantics, locale scope, hidden-content handling, migration state, and source exclusions when ingesting knowledge-source changes.
 - Route broad framework entities upstream while keeping only local practice implications in this wiki.
+- Keep product, company, framework, standard, and model details upstream-owned when local sources only need their practice implications.
+- Attribute weak or snippet-only date evidence and avoid converting it into source-page certainty.
 
 ## Authoritative Sources
 
@@ -44,6 +48,11 @@ The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [FastMCP research source](../../../raw/processed/project-wiki-research-2026-07-01-fastmcp.md)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
+- [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 
 ## Related Code
 
@@ -74,3 +83,4 @@ The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-
 - Created on 2026-06-23 to separate authority order, source conflict handling, synonym normalization, and federation routing from the broader source-workflows hub.
 - Maintained on 2026-06-26 with knowledge-package routing that separates external agent evidence from local implementation acceptance.
 - Maintained on 2026-07-01 with knowledge-source migration semantics and FastMCP upstream routing.
+- Maintained on 2026-07-06 with broad-entity routing for July 6 products, tools, standards, and snippet-date evidence.

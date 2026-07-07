@@ -21,6 +21,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a coordinator-worker signal. Recurring or parallel coding-agent work benefits from stable coordinator state, queues, callbacks, locks, session history, and handoff messages, while worker sessions should still start fresh with scoped instructions and current repository evidence.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add worktree-orchestration and resumable-run evidence. Parallel coding-agent platforms should keep branch, worktree, terminal, PR, CI, review, and preview state separated, while long-running scanners and evaluators should preserve analyzed-file state and skip completed work after interruption. The local rule is to make persistence observable enough that a human can recover the workspace without trusting a transcript summary.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -33,6 +35,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Record background-agent completion state, input-needed state, draft PR links, inherited reasoning or configuration settings, and subagent state when a workspace continues without direct supervision.
 - Use coordinator state for queues, callbacks, locks, session history, and cross-project handoffs when many coding-agent sessions run in parallel.
 - Keep worker sessions scoped and freshly oriented even when a coordinator preserves long-lived operational state.
+- Separate branch, worktree, terminal, PR, CI, review, and preview state when multiple agents operate on the same project.
+- Preserve resumable-run state for expensive scans and evals so recovery can skip completed work without losing audit evidence.
 
 ## Authoritative Sources
 
@@ -43,6 +47,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 
 ## Related Code
 
@@ -72,3 +78,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.
 - Maintained on 2026-07-02 with background-agent notification, draft-PR handoff, inherited-configuration, and subagent-state signals.
 - Maintained on 2026-07-04 with coordinator-worker queues, callbacks, locks, session history, and handoff state.
+- Maintained on 2026-07-06 with worktree-orchestration and resumable scan or eval workspace evidence.

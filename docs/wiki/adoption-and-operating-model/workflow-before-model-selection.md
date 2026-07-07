@@ -33,6 +33,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds workflow-readiness and tool-selection signals. Agent workflows need trusted data, permissions, connected systems, citations, logging, approval checkpoints, state memory, and handoff shape before model or product choice. Coding-agent selection should account for editor fit, runtime constraints, model routing, multi-agent workspace support, and cost transparency as workflow surfaces rather than product rankings.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md) add procurement and channel-workflow inputs. Enterprise coding-agent rollout should first answer identity, audit, retention, residency, deployment, support, and evidence requirements. Chat-agent workflows should also decide which channel events matter, when the bot subscribes to a thread, what state store is required, and which responses can be streamed or posted back before choosing a platform or model route.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -53,6 +55,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Include browser-driven verification and multimodal input handling in workflow selection when the task depends on rendered UI, PDFs, screenshots, or live applications.
 - Require workflow-readiness checks for data access, permissions, citations, logging, approval checkpoints, state memory, and handoffs before selecting an agent surface.
 - Compare coding-agent tools by editor fit, runtime shape, model-routing controls, multi-agent workspace support, and cost transparency against the intended workflow.
+- Add enterprise identity, audit, retention, residency, deployment, support, and evidence needs to workflow selection before coding-agent procurement expands.
+- Define collaboration-channel triggers, subscriptions, state, tool scope, and response posting rules before selecting a chat-agent toolkit.
 
 ## Authoritative Sources
 
@@ -70,6 +74,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 
 ## Related Code
 
@@ -108,3 +114,4 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 - Maintained on 2026-07-01 with IDE-native agent surfaces, command routing, authentication path, reasoning-depth, and model-upgrade eval triggers.
 - Maintained on 2026-07-01 with auto model routing, prompt-cache, browser-tool, and multimodal context inputs to workflow selection.
 - Maintained on 2026-07-02 with workflow-readiness checks, editor/runtime fit, model-routing controls, multi-agent workspace support, and cost transparency.
+- Maintained on 2026-07-06 with enterprise procurement readiness and collaboration-channel workflow selection inputs.

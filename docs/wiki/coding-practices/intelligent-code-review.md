@@ -27,6 +27,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) adds deployment and context-aware selection criteria. Review tooling should be selected against source exposure, deployment location, audit evidence, whole-repository context, workflow integration, actionability, team-standard customization, and latency rather than vendor ranking alone.
 
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds review capacity and compliance pressure. As AI-generated code volume grows, review gates should use automated compliance checks, quality gates, runtime evidence, and software-quality taxonomies to protect reviewer attention. Manual review remains necessary for tradeoffs and final judgment, but it should receive evidence packages instead of raw generated-code volume.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -50,6 +52,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Keep human repair and release judgment explicit even when AI review broadens defect detection.
 - Treat deployment model, source exposure, audit evidence, and data residency as review-tool selection criteria before measuring review quality.
 - Evaluate whether the reviewer understands repository-wide architecture and team standards, not only the changed hunk.
+- Use automated compliance checks, quality gates, and runtime evidence to reduce reviewer load without hiding final human judgment.
+- Include established software-quality dimensions when reviewing AI-generated changes that are larger than a local fix.
 
 ## Authoritative Sources
 
@@ -67,6 +71,7 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
+- [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 
 ## Related Code
 
@@ -101,3 +106,4 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Maintained on 2026-07-03 with review-capacity, reviewer-attention, generated-code repairability, and configurable review-signal controls.
 - Maintained on 2026-07-04 with recall-first review, filtering, repository evidence, and human repair boundaries.
 - Maintained on 2026-07-05 with deployment-model, source-exposure, audit, repository-context, actionability, customization, and latency selection criteria.
+- Maintained on 2026-07-06 with compliance checks, runtime evidence, software-quality dimensions, and reviewer-load controls.
