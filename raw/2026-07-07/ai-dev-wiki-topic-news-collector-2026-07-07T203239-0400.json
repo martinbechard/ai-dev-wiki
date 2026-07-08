@@ -1,0 +1,374 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-07T20:32:39-04:00",
+  "cutoff_window": {
+    "start": "2026-07-05T20:32:39-04:00",
+    "end": "2026-07-07T20:32:39-04:00",
+    "basis": "Local repository automation run time; only public web sources with visible publication, submission, or update evidence inside this window were included."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general developer tools",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted development practice implications, including context architecture, source workflows, guidance structure, agent operating practices, coding practices, retrieval and tool governance, verification, risk controls, and adoption patterns."
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-07-07-001",
+      "title": "Desktop coding agents move into broad individual access",
+      "owning_topic_root": "docs/wiki/adoption-and-operating-model",
+      "source_url": "https://github.blog/changelog/2026-07-07-github-copilot-app-available-to-all/",
+      "visible_date": "July 7, 2026",
+      "date_evidence": "GitHub changelog page shows July 7, 2026 at the article header.",
+      "summary": "GitHub made the Copilot app available on every Copilot plan across macOS, Windows, and Linux, with BYOK support and an organization or enterprise policy dependency for Business and Enterprise access.",
+      "why_it_matters": "Agent-driven development is shifting from enterprise-only or preview workflows into default desktop access, so local adoption guidance should treat onboarding, plan boundaries, BYOK policy, and admin enablement as first-class operating model concerns.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot Free",
+        "GitHub Education",
+        "BYOK",
+        "Copilot CLI"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot CLI"
+      ],
+      "local_practice_implication": "Keep local notes focused on desktop-agent rollout gates, BYOK governance, and plan-aware team onboarding rather than duplicating Copilot product coverage.",
+      "follow_up_notes": [
+        "During ingest, compare with adoption and operating model pages that describe coding-agent onboarding and admin enablement.",
+        "Route product availability details to the upstream AI wiki if durable product coverage is needed."
+      ]
+    },
+    {
+      "id": "2026-07-07-002",
+      "title": "Per-user AI credit budgets become admin-facing controls",
+      "owning_topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+      "visible_date": "July 7, 2026",
+      "date_evidence": "GitHub changelog page shows July 7, 2026 at the article header.",
+      "summary": "GitHub Enterprise Cloud administrators can create cost-center user-level budgets directly in the billing UI, assign teams or users to cost centers, and keep coverage synchronized as membership changes.",
+      "why_it_matters": "AI-assisted development governance increasingly includes per-user spend controls that follow team membership, which turns cost management into an operational guardrail rather than a separate finance report.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Enterprise Cloud",
+        "Copilot",
+        "AI credits",
+        "cost centers"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Enterprise Cloud",
+        "Copilot"
+      ],
+      "local_practice_implication": "Governance pages should distinguish access control, spend control, usage reporting, and budget drift as separate adoption controls for coding-agent programs.",
+      "follow_up_notes": [
+        "During ingest, check whether existing spend-control notes mention per-user budgets as a governed team boundary.",
+        "Do not duplicate GitHub billing-product documentation locally."
+      ]
+    },
+    {
+      "id": "2026-07-07-003",
+      "title": "Copilot spend visibility consolidates into built-in billing surfaces",
+      "owning_topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://github.blog/changelog/2026-07-07-copilot-billing-preview-app-will-be-retired-on-august-3/",
+      "visible_date": "July 7, 2026",
+      "date_evidence": "GitHub changelog page shows July 7, 2026 at the article header.",
+      "summary": "GitHub announced that the Copilot Billing Preview app will retire on August 3, 2026, and directed teams to built-in billing settings, budgets, user-level budgets, usage reports, and the billing API for spend visibility.",
+      "why_it_matters": "AI coding spend governance is moving toward integrated billing APIs and native admin settings, which should reduce reliance on temporary sidecar reporting tools and support repeatable audit workflows.",
+      "named_entities": [
+        "GitHub",
+        "Copilot Billing Preview app",
+        "Copilot",
+        "GitHub billing API",
+        "AI usage page"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot Billing Preview app",
+        "Copilot"
+      ],
+      "local_practice_implication": "Local governance guidance should prefer durable billing and usage APIs for evidence collection, while noting that preview reporting surfaces may disappear.",
+      "follow_up_notes": [
+        "During ingest, align with audit-log and spend-control pages if they mention preview billing surfaces.",
+        "Route product retirement facts upstream if product lifecycle coverage is needed."
+      ]
+    },
+    {
+      "id": "2026-07-07-004",
+      "title": "Sandbox observability exposes per-session agent workload cost",
+      "owning_topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://vercel.com/changelog/more-granular-observability-for-vercel-sandbox",
+      "visible_date": "7 Jul 2026",
+      "date_evidence": "Vercel changelog page shows 7 Jul 2026 at the article header.",
+      "summary": "Vercel Sandbox observability now reports resource metrics such as active CPU, provisioned memory, data transfer, running sandboxes, and sessions, grouped by Sandbox Name and Sandbox Session ID and available through dashboard and CLI queries.",
+      "why_it_matters": "Agent workloads that create sandboxes at scale need cost and resource telemetry tied to each sandbox session, so verification environments can be right-sized and anomalous package downloads or network usage can be investigated.",
+      "named_entities": [
+        "Vercel",
+        "Vercel Sandbox",
+        "Vercel Observability",
+        "Vercel CLI",
+        "Sandbox Session ID"
+      ],
+      "upstream_owned_entities": [
+        "Vercel",
+        "Vercel Sandbox",
+        "Vercel Observability",
+        "Vercel CLI"
+      ],
+      "local_practice_implication": "Harness and preview-environment pages should treat sandbox resource metrics, session IDs, and CLI-accessible usage data as evidence for agent evaluation and cost control.",
+      "follow_up_notes": [
+        "During ingest, compare against existing harness architecture and remote-agent proof-gate notes.",
+        "Keep Vercel product capability detail upstream-owned; retain the local implication about sandbox telemetry as verification evidence."
+      ]
+    },
+    {
+      "id": "2026-07-07-005",
+      "title": "Tool-use evaluation separates skipped, ignored, fabricated, and unnecessary calls",
+      "owning_topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://arxiv.org/abs/2607.04686",
+      "visible_date": "Submitted on 6 Jul 2026",
+      "date_evidence": "arXiv abstract page shows Submitted on 6 Jul 2026 and submission history v1 Mon, 6 Jul 2026 05:25:21 UTC.",
+      "summary": "ToolFailBench proposes a diagnostic benchmark for tool-use failures across 1,000 tasks and labels traces with categories such as Tool-Skip, Result-Ignore, Output-Fabrication, and Unnecessary-Tool-Use, showing that similar aggregate scores can hide distinct tool-use failure modes.",
+      "why_it_matters": "AI-assisted development evals should not stop at final-answer or patch success; they should classify whether a coding agent called the needed tool, used the result, fabricated output, or called tools unnecessarily.",
+      "named_entities": [
+        "ToolFailBench",
+        "AIWILD",
+        "FAGEN",
+        "ICML 2026",
+        "Llama-3.1",
+        "Qwen2.5"
+      ],
+      "upstream_owned_entities": [
+        "ToolFailBench",
+        "AIWILD",
+        "FAGEN",
+        "ICML 2026",
+        "Llama-3.1",
+        "Qwen2.5"
+      ],
+      "local_practice_implication": "Local verification pages should consider trace-level tool-use taxonomies for coding-agent checks, especially when MCP or CLI calls are required for correctness.",
+      "follow_up_notes": [
+        "During ingest, route benchmark and model background upstream; keep local synthesis about diagnostic categories for tool-call practice.",
+        "Compare with tool-call practice and MCP governance leaves."
+      ]
+    },
+    {
+      "id": "2026-07-07-006",
+      "title": "Repository process logs can derive project-specific agent roles",
+      "owning_topic_root": "docs/wiki/agent-workflows",
+      "source_url": "https://arxiv.org/abs/2607.04948",
+      "visible_date": "Submitted on 6 Jul 2026",
+      "date_evidence": "arXiv abstract page shows Submitted on 6 Jul 2026 and submission history v1 Mon, 6 Jul 2026 11:22:25 UTC.",
+      "summary": "A BPM 2026 paper proposes using object-centric, imperative, and declarative process mining on software repository event logs to discover project-specific AI agent roles and generate matching agent specifications and implementations.",
+      "why_it_matters": "Subagent and workflow design can be grounded in observed repository processes instead of only generic role templates, but the approach also raises questions about granularity, coordination overhead, and validation against human expectations.",
+      "named_entities": [
+        "Business Process Management 2026",
+        "BPM 2026",
+        "process mining",
+        "software engineering process records"
+      ],
+      "upstream_owned_entities": [
+        "Business Process Management 2026",
+        "process mining"
+      ],
+      "local_practice_implication": "Agent-workflow guidance should distinguish generic subagent role packs from repo-derived agent specifications that reflect actual source workflow evidence.",
+      "follow_up_notes": [
+        "During ingest, compare with local subagent planning and coordinator-worker workflow pages.",
+        "Record caveats about using repository logs without exposing private or sensitive process data."
+      ]
+    },
+    {
+      "id": "2026-07-07-007",
+      "title": "Concurrent agent-authored PRs create measurable merge-conflict risk",
+      "owning_topic_root": "docs/wiki/source-workflows",
+      "source_url": "https://arxiv.org/abs/2607.04697",
+      "visible_date": "Submitted on 6 Jul 2026; last revised 7 Jul 2026",
+      "date_evidence": "arXiv abstract page shows Submitted on 6 Jul 2026, last revised 7 Jul 2026, with v2 Tue, 7 Jul 2026 02:40:06 UTC.",
+      "summary": "The paper analyzes AI agent pull requests and reports that exact temporal overlap appears in 40.2 percent of repositories, co-active pairs account for 79.4 percent of agent PRs, and cross-agent pairs have higher textual conflict rates than intra-agent pairs in sampled replayed merges.",
+      "why_it_matters": "Parallel coding agents need source-workflow controls for worktree isolation, branch coordination, PR scheduling, merge ownership, and conflict review because ordinary git conflict detection may miss intent-level collisions.",
+      "named_entities": [
+        "AIDev-pop",
+        "GitHub",
+        "AI agent pull requests",
+        "merge conflicts"
+      ],
+      "upstream_owned_entities": [
+        "AIDev-pop",
+        "GitHub"
+      ],
+      "local_practice_implication": "Source workflow pages should treat multi-agent concurrency as a managed queue and coordination problem, not only as independent PR generation.",
+      "follow_up_notes": [
+        "During ingest, compare with worktree-isolated parallel agent and source-branching practice leaves.",
+        "Route dataset background upstream if the AI wiki owns durable AIDev coverage."
+      ]
+    },
+    {
+      "id": "2026-07-07-008",
+      "title": "Coding-agent hidden states encode current and future program outcomes",
+      "owning_topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://arxiv.org/abs/2607.05188",
+      "visible_date": "Submitted on 6 Jul 2026",
+      "date_evidence": "arXiv abstract page shows Submitted on 6 Jul 2026 and submission history v1 Mon, 6 Jul 2026 15:08:26 UTC.",
+      "summary": "The Latent Programming Horizons paper reports that probes over model residual streams can decode whether evolving code parses, passes tests, reduces failing tests, or introduces regressions, and can predict future edit outcomes above chance roughly 25 steps ahead.",
+      "why_it_matters": "Verification research may eventually inspect internal agent-state signals for parse, test, and regression risk, but current local practice should treat this as research evidence rather than deployable assurance.",
+      "named_entities": [
+        "Latent Programming Horizons",
+        "mini-swe-agent",
+        "SWE-Bench-Verified",
+        "SWE-Bench-Pro"
+      ],
+      "upstream_owned_entities": [
+        "mini-swe-agent",
+        "SWE-Bench-Verified",
+        "SWE-Bench-Pro"
+      ],
+      "local_practice_implication": "Verification pages can mention internal-state probing as an emerging evaluation direction while keeping steady-state practice anchored in observable tests, builds, traces, and review gates.",
+      "follow_up_notes": [
+        "During ingest, preserve uncertainty and avoid presenting latent-horizon probes as a production control.",
+        "Compare with regression detection and evaluation architecture leaves."
+      ]
+    },
+    {
+      "id": "2026-07-07-009",
+      "title": "Compilable vulnerability benchmarks expose weak localization by agentic setups",
+      "owning_topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://arxiv.org/abs/2607.04729",
+      "visible_date": "Submitted on 6 Jul 2026",
+      "date_evidence": "arXiv abstract page shows Submitted on 6 Jul 2026 and submission history v1 Mon, 6 Jul 2026 07:02:56 UTC.",
+      "summary": "RustMizan introduces a compilable, contamination-aware Rust vulnerability benchmark with crate, file, and function-level variants; in an agentic command-line setup, binary classification scores remain moderate while line localization F1 stays near 20 percent and drops under adversarial cues.",
+      "why_it_matters": "Security-oriented AI code review and vulnerability checks need compilable fixtures, contamination controls, and localization metrics, because broad vulnerability labels can hide weak line-level evidence.",
+      "named_entities": [
+        "RustMizan",
+        "Rust",
+        "CWE",
+        "LLM agents"
+      ],
+      "upstream_owned_entities": [
+        "RustMizan",
+        "Rust",
+        "CWE"
+      ],
+      "local_practice_implication": "AI code review checklists should separate vulnerability classification from localization, proof quality, compilation context, and contamination-aware evaluation.",
+      "follow_up_notes": [
+        "During ingest, compare with AI code review and security-evaluation pages.",
+        "Route Rust and benchmark background upstream if durable entity coverage is needed."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Benchmarking the Benchmarks: A Validity Audit of Tool-Calling Evaluation",
+      "source_url": "https://arxiv.org/abs/2607.02577",
+      "visible_date": "Submitted on 30 Jun 2026",
+      "reason": "Outside the two-day cutoff window despite appearing in the July 7 cs.SE new listing."
+    },
+    {
+      "title": "When Not to Write Memory: Governing False Promotion from Correlated Agent Traces",
+      "source_url": "https://arxiv.org/abs/2607.02579",
+      "visible_date": "Submitted on 30 Jun 2026",
+      "reason": "Outside the two-day cutoff window despite relevance to durable agent memory governance."
+    },
+    {
+      "title": "AgentLTL: A Trace-Verification Framework for Measuring, Enforcing, and Training Procedural Compliance in Tool-Using LLM Agents",
+      "source_url": "https://arxiv.org/abs/2607.02599",
+      "visible_date": "Submitted on 1 Jul 2026",
+      "reason": "Outside the two-day cutoff window despite relevance to tool-call procedural compliance."
+    },
+    {
+      "title": "ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance",
+      "source_url": "https://arxiv.org/abs/2607.02606",
+      "visible_date": "Submitted on 1 Jul 2026",
+      "reason": "Outside the two-day cutoff window despite relevance to regression repair and long-running maintenance benchmarks."
+    },
+    {
+      "title": "Can Coding Agents Implement Missed Compiler Optimizations? Evaluating LLM Agents on LLVM Peephole Optimizations",
+      "source_url": "https://arxiv.org/abs/2607.02684",
+      "visible_date": "Submitted on 2 Jul 2026",
+      "reason": "Outside the two-day cutoff window despite relevance to specialized coding-agent evals."
+    },
+    {
+      "title": "Claude Code changelog 2.1.203",
+      "source_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
+      "visible_date": "No visible publication or update date in raw changelog content",
+      "reason": "Excluded because the artifact did not provide a visible date inside the collection window."
+    },
+    {
+      "title": "MCP Observability: How to Monitor AI Agent Activity in the Enterprise",
+      "source_url": "https://obot.ai/blog/mcp-observability-how-to-monitor-ai-agent-activity-in-the-enterprise/",
+      "visible_date": "Published: June 26, 2026; Last Updated: June 26, 2026",
+      "reason": "Outside the two-day cutoff window; relevant to MCP governance but already too old for this run."
+    },
+    {
+      "title": "Copilot agent session streaming is now in public preview",
+      "source_url": "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+      "visible_date": "July 2, 2026",
+      "reason": "Outside the two-day cutoff window and already covered by prior collector windows."
+    }
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "collector_notes": [
+    "Collector stayed raw-only and did not update docs/wiki pages.",
+    "All qualifying sources are public web sources.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Federation boundary applied by recording product, model, company, framework, benchmark, and tool entities as upstream-owned while keeping only local AI-assisted development practice implications."
+  ]
+}
