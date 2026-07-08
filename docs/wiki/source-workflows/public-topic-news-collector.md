@@ -26,7 +26,7 @@ The collector should include source URLs, visible dates, short factual summaries
 
 ## Authoritative Sources
 
-- [AI Dev Wiki Topic News Collector automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-topic-news-collector/automation.toml)
+- Target environment automation record for AI Dev Wiki Topic News Collector.
 - [automated update feeds](automated-update-feeds.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)

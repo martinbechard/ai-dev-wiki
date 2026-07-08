@@ -17,10 +17,10 @@ Agents use the project-wiki skill before changing or explaining specs, architect
 Run:
 
 ```bash
-python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py status
-python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py suggest --changed
-python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py lint
-python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py questions
+python3 project-wiki-skill-root/scripts/wiki_ops.py status
+python3 project-wiki-skill-root/scripts/wiki_ops.py suggest --changed
+python3 project-wiki-skill-root/scripts/wiki_ops.py lint
+python3 project-wiki-skill-root/scripts/wiki_ops.py questions
 ```
 
 ## Pages

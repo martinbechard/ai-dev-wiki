@@ -31,8 +31,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 ## Authoritative Sources
 
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
-- [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
-- [AI Dev Wiki Raw Project-Wiki Monitor memory](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/memory.md)
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
+- Target environment automation memory for AI Dev Wiki Raw Project-Wiki Monitor.
 - [schema.md](../schema.md)
 - [README.md](../README.md)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)

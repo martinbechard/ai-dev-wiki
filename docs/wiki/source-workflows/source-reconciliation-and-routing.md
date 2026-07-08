@@ -45,8 +45,8 @@ The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honey
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
 - [topic-index.md](../topic-index.md)
-- [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
-- [project-wiki source priority reference](/Users/martinbechard/.codex/skills/project-wiki/references/source-priority.md)
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
+- project-wiki source priority reference from the installed skill package.
 - [upstream AI wiki topic index](../../../upstream-ai-wiki/topic-index.md)
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)

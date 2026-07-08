@@ -26,7 +26,7 @@ The automation maintains a deterministic local batch ledger when it runs. The le
 
 ## Authoritative Sources
 
-- [AI Dev Wiki Leaf Update Watch automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-leaf-update-watch/automation.toml)
+- Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - [automated update feeds](automated-update-feeds.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)

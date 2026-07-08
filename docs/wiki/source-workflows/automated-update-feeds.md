@@ -46,9 +46,9 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [topic-index.md](../topic-index.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
-- [AI Dev Wiki Topic News Collector automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-topic-news-collector/automation.toml)
-- [AI Dev Wiki Leaf Update Watch automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-leaf-update-watch/automation.toml)
-- [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
+- Target environment automation record for AI Dev Wiki Topic News Collector.
+- Target environment automation record for AI Dev Wiki Leaf Update Watch.
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
 
 ## Related Code
 
@@ -81,5 +81,5 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 ## Maintenance Notes
 
 - Created on 2026-06-23 to document the accepted update-feed setup.
-- Recorded the configured Codex automations on 2026-06-23 after setup.
+- Recorded the configured update-feed automations on 2026-06-23 after setup.
 - Split on 2026-06-23 so each automation layer has a durable local practice leaf.

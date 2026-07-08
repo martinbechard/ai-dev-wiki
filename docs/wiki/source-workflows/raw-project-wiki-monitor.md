@@ -35,8 +35,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 ## Authoritative Sources
 
-- [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
-- [AI Dev Wiki Raw Project-Wiki Monitor memory](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/memory.md)
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
+- Target environment automation memory for AI Dev Wiki Raw Project-Wiki Monitor.
 - [automated update feeds](automated-update-feeds.md)
 - [clipping and raw intake](clipping-and-raw-intake.md)
 - [source reconciliation and routing](source-reconciliation-and-routing.md)

@@ -57,7 +57,7 @@ Topic pages should include:
 - Prefer contextual links in the relevant explanation. Use Related Wiki Pages only when a short linked cross-reference adds navigation value.
 - Keep steady-state explanations free of historical comparison unless the page is documenting a migration or maintenance note.
 - Preserve unresolved contradictions in Open Questions.
-- Review unresolved questions with python3 ~/.codex/skills/project-wiki/scripts/wiki_ops.py questions. Ask one question at a time, update the wiki from the answer, rerun questions to confirm the item is gone, then run lint.
+- Review unresolved questions with python3 project-wiki-skill-root/scripts/wiki_ops.py questions. Ask one question at a time, update the wiki from the answer, rerun questions to confirm the item is gone, then run lint.
 - Never invent source paths, test coverage, backlog status, or fallback behavior.
 - For one-way wiki federation, search the upstream topic index before creating local entity leaves. Link upstream entity pages and keep local pages focused on the downstream practice, workflow, governance, or adoption lens.
 - Public update feeds run source-first. Topic collectors and leaf update watches save raw artifacts only; the [raw project-wiki monitor](source-workflows/raw-project-wiki-monitor.md) owns wiki page refresh, digest updates, lint, and processed-source moves.

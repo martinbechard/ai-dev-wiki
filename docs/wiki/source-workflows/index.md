@@ -21,9 +21,9 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 - [topic-index.md](../topic-index.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
-- [AI Dev Wiki Topic News Collector automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-topic-news-collector/automation.toml)
-- [AI Dev Wiki Leaf Update Watch automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-leaf-update-watch/automation.toml)
-- [AI Dev Wiki Raw Project-Wiki Monitor automation](/Users/martinbechard/.codex/automations/ai-dev-wiki-raw-project-wiki-monitor/automation.toml)
+- Target environment automation record for AI Dev Wiki Topic News Collector.
+- Target environment automation record for AI Dev Wiki Leaf Update Watch.
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
 
 ## Related Code
 
