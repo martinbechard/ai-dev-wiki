@@ -1,0 +1,316 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-07T21:03:26-04:00",
+  "cutoff_window": {
+    "start": "2026-06-30T21:03:26-04:00",
+    "end": "2026-07-07T21:03:26-04:00",
+    "rule": "Only sources visibly published or updated within the last 7 days were included; missing, ambiguous, future-dated, and boundary-only dates were excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 65,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2607.04419",
+    "https://www.domo.com/glossary/ai-agent-evaluation",
+    "https://www.mindstudio.ai/blog/speculative-decoding-explained-ai-agents",
+    "https://datatracker.ietf.org/doc/draft-wang-agent-runtime-telemetry-system/",
+    "https://cycode.com/blog/ai-agent-commit-visibility/",
+    "https://blogs.oracle.com/developers/whats-new-in-oracle-ai-agent-memory-custom-extraction-hybrid-search-and-more-control",
+    "https://www.zenml.io/blog/inngest-vs-temporal",
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AgentCore-GettingStarted.html",
+    "https://www.honeycomb.io/blog/prototype-production-aws-agentcore",
+    "https://www.creativebloq.com/ai/godots-ai-ban-is-a-reality-check-for-vibe-coders",
+    "https://godotengine.org/"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "id": "2026-07-05-arxiv-agent-step-value",
+      "source_url": "https://arxiv.org/abs/2607.04419",
+      "visible_published_or_updated_at": "2026-07-05",
+      "source_type": "public research preprint",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "Agent Step Value proposes scoring individual agent actions by comparing before and after state projections instead of collapsing the run into only final-answer or trajectory-level scores. The paper reports an ASV Eval toolkit and positions step-local belief pivots as the diagnostic unit.",
+      "why_it_matters_for_leaf": "Local evaluation leaves should treat trajectory scores as necessary but not sufficient when an agent workflow needs actionable debugging. The local implication is to preserve state snapshots and per-step evidence when building verification loops, code review evals, or acceptance gates.",
+      "named_entities": [
+        "Agent Step Value",
+        "ASV Eval",
+        "arXiv",
+        "DeepSeek"
+      ],
+      "upstream_owned_entities": [
+        "DeepSeek"
+      ],
+      "follow_up_note": "Ingest should route broad model/tool background upstream and keep the local practice implication around step-level state diagnostics."
+    },
+    {
+      "id": "2026-06-30-mindstudio-speculative-decoding-structured-agent-output",
+      "source_url": "https://www.mindstudio.ai/blog/speculative-decoding-explained-ai-agents",
+      "visible_published_or_updated_at": "2026-06-30",
+      "source_type": "public vendor engineering explainer",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "factual_summary": "MindStudio describes speculative decoding for agent workloads and notes that structured outputs such as function-call arguments, JSON payloads, and reasoning traces are predictable enough to benefit from draft-model verification, with latency compounding across multi-step workflows.",
+      "why_it_matters_for_leaf": "Structured-output and drafter patterns should account for latency and verification cost as properties of the whole agent loop, not just schema validity. Model routing and compact structured outputs can reduce verification tax when workflows have repeated tool-call shapes.",
+      "named_entities": [
+        "MindStudio",
+        "Speculative decoding",
+        "DeepSpark",
+        "MiniCPM-5"
+      ],
+      "upstream_owned_entities": [
+        "MindStudio",
+        "DeepSpark",
+        "MiniCPM-5"
+      ],
+      "follow_up_note": "Keep implementation-neutral local guidance; route product/model specifics to upstream AI wiki if they become durable entities."
+    },
+    {
+      "id": "2026-07-06-ietf-agent-runtime-telemetry-system-draft",
+      "source_url": "https://datatracker.ietf.org/doc/draft-wang-agent-runtime-telemetry-system/",
+      "visible_published_or_updated_at": "2026-07-06",
+      "source_type": "public standards draft",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "factual_summary": "The IETF Internet-Draft defines an Agent Runtime Telemetry System with network-side and agent-side collection planes, structured telemetry models, trace correlation, runtime metrics, anomaly detection, and remediation workflows for LLM-driven agents.",
+      "why_it_matters_for_leaf": "The local telemetry leaf can use this as evidence that agent observability is moving toward explicit runtime semantics: tool calls, context changes, memory lifecycle events, trace identifiers, and anomaly workflows. Harness and verification leaves should capture telemetry as a first-class acceptance artifact.",
+      "named_entities": [
+        "IETF Datatracker",
+        "Agent Runtime Telemetry System",
+        "CAICT",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "IETF",
+        "OpenTelemetry"
+      ],
+      "follow_up_note": "Ingest should avoid treating the draft as a final standard; record it as emerging public evidence."
+    },
+    {
+      "id": "2026-07-07-cycode-ai-agent-commit-visibility",
+      "source_url": "https://cycode.com/blog/ai-agent-commit-visibility/",
+      "visible_published_or_updated_at": "2026-07-07",
+      "source_type": "public product announcement",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "Cycode announced early-access AI Agent Commit Visibility that identifies commits from GitHub Copilot, Claude Code, and Cursor, links agent commits to secrets, SAST, SCA, and IaC violations, and adds dashboards and filters for agent-introduced risk.",
+      "why_it_matters_for_leaf": "Local coding-practice leaves should treat agent authorship and violation attribution as review inputs. Fix branches and PR packaging need enough metadata to separate agent-introduced risk from ordinary human change review and to preserve accountability.",
+      "named_entities": [
+        "Cycode",
+        "GitHub Copilot",
+        "Claude Code",
+        "Cursor",
+        "SAST",
+        "SCA",
+        "IaC"
+      ],
+      "upstream_owned_entities": [
+        "Cycode",
+        "GitHub Copilot",
+        "Claude Code",
+        "Cursor"
+      ],
+      "follow_up_note": "Route vendor/product details upstream; local wiki should capture authorship visibility as a review and governance practice."
+    },
+    {
+      "id": "2026-07-07-oracle-ai-agent-memory-control",
+      "source_url": "https://blogs.oracle.com/developers/whats-new-in-oracle-ai-agent-memory-custom-extraction-hybrid-search-and-more-control",
+      "visible_published_or_updated_at": "2026-07-07",
+      "source_type": "public vendor engineering announcement",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "factual_summary": "Oracle described AI Agent Memory 26.6 capabilities including custom extraction instructions, hybrid vector and text search, context cards, metadata filtering, update APIs, TTL behavior, and benchmarks for long-running memory workflows.",
+      "why_it_matters_for_leaf": "The local memory and context leaves should frame memory as governed application architecture: what becomes durable, what remains temporary, how context gets compacted, and how retrieval scope is controlled. Workflow-state guidance should include retention and update semantics, not only recall.",
+      "named_entities": [
+        "Oracle AI Agent Memory",
+        "Oracle AI Database",
+        "LongMemEval",
+        "BEAM"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "LongMemEval",
+        "BEAM"
+      ],
+      "follow_up_note": "Preserve the downstream practice lens around memory boundaries, retention, and compaction; avoid duplicating product documentation."
+    },
+    {
+      "id": "2026-07-07-zenml-long-running-agent-runtime-comparison",
+      "source_url": "https://www.zenml.io/blog/inngest-vs-temporal",
+      "visible_published_or_updated_at": "2026-07-07",
+      "source_type": "public vendor engineering comparison",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "factual_summary": "ZenML compared Inngest, Temporal, and Kitaru for long-running AI agents and emphasized crash recovery, retries, human-in-the-loop waits, self-hosting, and workflow event history as runtime concerns.",
+      "why_it_matters_for_leaf": "Workflow-state leaves should distinguish model context from durable execution history. The local implication is to design long-running agent workflows around resumable state, event logs, and explicit human waits instead of relying on one continuous LLM session.",
+      "named_entities": [
+        "ZenML",
+        "Kitaru",
+        "Inngest",
+        "Temporal"
+      ],
+      "upstream_owned_entities": [
+        "ZenML",
+        "Kitaru",
+        "Inngest",
+        "Temporal"
+      ],
+      "follow_up_note": "This is a downstream application-pattern signal; route tool background upstream if entities need durable coverage."
+    },
+    {
+      "id": "2026-07-06-honeycomb-aws-agentcore-production-lessons",
+      "source_url": "https://www.honeycomb.io/blog/prototype-production-aws-agentcore",
+      "visible_published_or_updated_at": "2026-07-06",
+      "source_type": "public vendor engineering case study",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "factual_summary": "Honeycomb described production lessons from running Canvas on AWS Bedrock AgentCore, including a runtime invocation contract, isolated per-session compute, state split across multiple buckets, and telemetry surfaced in Honeycomb Agent Timeline through OpenTelemetry.",
+      "why_it_matters_for_leaf": "Application harness guidance should model agent runtime as a deployed service with invocation contracts, session isolation, and explicit state buckets. Runtime telemetry and context-selection leaves should connect user-visible continuity to observable traces and authoritative state reads.",
+      "named_entities": [
+        "Honeycomb Canvas",
+        "AWS Bedrock AgentCore",
+        "OpenTelemetry",
+        "Agent Timeline"
+      ],
+      "upstream_owned_entities": [
+        "Honeycomb",
+        "AWS Bedrock AgentCore",
+        "OpenTelemetry"
+      ],
+      "follow_up_note": "Ingest should keep the local pattern around state bucket design and observability; product specifics belong upstream."
+    },
+    {
+      "id": "2026-06-30-godot-ai-contribution-policy",
+      "source_url": "https://www.creativebloq.com/ai/godots-ai-ban-is-a-reality-check-for-vibe-coders",
+      "visible_published_or_updated_at": "2026-06-30",
+      "source_type": "public news report with linked project statement",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "Creative Bloq reported Godot Foundation policy changes responding to a surge of AI-generated pull requests, including a ban on AI-authored code and AI-submitted PRs while allowing disclosed menial AI assistance.",
+      "why_it_matters_for_leaf": "The local code-review and PR-packaging leaves should treat contributor accountability, ability to repair generated code, and review burden as explicit acceptance criteria. Generated-code refactoring guidance should emphasize human ownership rather than passing review feedback back to an agent without understanding.",
+      "named_entities": [
+        "Godot Foundation",
+        "Godot Engine",
+        "Cursor",
+        "Copilot",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Godot",
+        "Cursor",
+        "Copilot",
+        "Claude Code"
+      ],
+      "follow_up_note": "Prefer the official Godot project page during ingest if direct article details are needed; keep this as public update evidence for maintainer pressure."
+    }
+  ],
+  "excluded_candidate_count": 4,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.domo.com/glossary/ai-agent-evaluation",
+      "reason": "Search result indicated a recent publication date, but the opened page did not expose a visible publication or update date in the accessible content.",
+      "candidate_summary": "Useful agent evaluation guidance on trajectory scoring, offline and online evaluation, datasets, judges, and cost metrics.",
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AgentCore-GettingStarted.html",
+      "reason": "Search result showed a recent date, but the accessible AWS documentation page did not show a visible publication or update date.",
+      "candidate_summary": "AgentCore observability documentation describes metrics, logs, traces, ADOT instrumentation, hosted and non-AgentCore observability, and AgentCore Evaluations.",
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ]
+    },
+    {
+      "source_url": "https://godotengine.org/",
+      "reason": "The homepage exposed a dated news teaser but not the full contribution-policy details in the accessible search result; the detailed secondary source was kept instead.",
+      "candidate_summary": "Godot homepage listed Changes to our Contribution Policies dated 30 June 2026.",
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ]
+    },
+    {
+      "source_url": "https://www.mindstudio.ai/blog/ollama-run-ai-models-locally-claude-code-workflows",
+      "reason": "Visible date was outside the 7-day cutoff window for this run.",
+      "candidate_summary": "Local model runtime setup with Ollama and Claude Code workflows.",
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ]
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity background belongs to the upstream AI wiki. This artifact records only local downstream-practice implications for ai-dev-wiki leaves.",
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false,
+  "follow_up_notes": [
+    "Ingest should synthesize local practice implications only after normal raw ingest review.",
+    "Local model runtime harness had no strong qualifying source in the strict window; revisit with public source URLs already cited in that leaf if added later.",
+    "Route product, vendor, model, and framework background to the upstream AI wiki where it owns broad entity coverage."
+  ]
+}
