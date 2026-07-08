@@ -15,6 +15,8 @@ This page records the coding practice. Repository-specific branch naming, hostin
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds a review-packaging warning from public coding-agent adoption signals: when agent-produced code reaches production with less separate manual review, the fix package itself must carry more explicit acceptance evidence. PR descriptions, branch notes, and closeout reports should state the review path, tests, residual risk, and human decision point instead of assuming a reviewer will rediscover them.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds agent-authorship accountability. Fix packages should identify when a coding agent authored or materially shaped commits, attach the security or quality violations found against those commits, and state the human repair owner. Generated-code policy pressure is a packaging concern because maintainers may reject work when authorship, understanding, or repair responsibility is unclear.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -24,6 +26,7 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Report build, test, lint, runtime, and review evidence with the fix.
 - Package review notes around reproduction, scope, patch, verification, and remaining risk.
 - Include the review path and human acceptance point when a generated or agent-assisted change is proposed for merge.
+- Preserve agent-authorship, violation attribution, and human repair ownership in PR notes when agent-generated commits are part of the fix.
 
 ## Authoritative Sources
 
@@ -32,6 +35,7 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Generated code refactoring](generated-code-refactoring.md)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -59,3 +63,4 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 - Created on 2026-06-23 from source guidance on fix assistants, branch scope, regression coverage, and review-ready evidence.
 - Maintained on 2026-06-29 with review-path packaging for agent-assisted production changes.
+- Maintained on 2026-07-07 with agent-authorship, violation-attribution, and human repair ownership packaging.

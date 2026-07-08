@@ -25,6 +25,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds runtime-lifecycle and quality-model signals. AI-assisted delivery should distinguish static review, CI, sandboxed execution, preview-environment checks, staging, production observation, and operations telemetry as separate evidence layers. Established product-quality dimensions such as maintainability, reliability, security, and quality gates can anchor AI-generated code acceptance so teams do not rely only on task-completion benchmarks or passing unit tests.
 
+The July 7 raw sources add diagnostic evidence for tool-use and runtime verification. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) records tool-use failure categories such as skipped calls, ignored results, fabricated outputs, and unnecessary calls, along with security-benchmark localization and contamination-control concerns. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds step-level action scoring, runtime telemetry, sandbox resource metrics, and production agent-service traces as verification evidence.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -43,6 +45,9 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Require trace, observation, and path-choice evidence when a test agent owns the execution path rather than only authoring a script.
 - Separate static review, CI, preview, staging, production, and operations evidence when an AI-generated change affects a deployed workflow.
 - Include maintainability, reliability, security, and other software-quality dimensions in acceptance gates when the risk exceeds simple functional correctness.
+- Classify tool-use failures separately from final-output failure so skipped calls, ignored evidence, fabricated outputs, and unnecessary calls become actionable diagnostics.
+- Preserve per-step state, runtime telemetry, sandbox session metrics, and trace identifiers when they explain verification cost, failure localization, or anomalous agent behavior.
+- Separate vulnerability classification from line-level localization, proof quality, compilation context, and contamination controls in security-oriented evals.
 
 ## Authoritative Sources
 
@@ -57,6 +62,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -94,3 +101,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-06-30 with receipts, traceability, and post-failure harness hardening guidance.
 - Maintained on 2026-07-04 with generated-test, self-healing-script, and agentic-test-loop boundaries.
 - Maintained on 2026-07-06 with runtime-lifecycle verification layers and software-quality model gates for AI-generated code.
+- Maintained on 2026-07-07 with tool-use failure categories, step-level action scoring, sandbox telemetry, and security-eval localization controls.

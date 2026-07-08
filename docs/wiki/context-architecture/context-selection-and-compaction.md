@@ -23,6 +23,8 @@ The [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for Al
 
 The [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md) adds a compression-layer pattern for agentic workloads. Tool outputs, verbose JSON, web pages, code files, and repeated message history should not enter the model unchanged when a local or governed context layer can route, compress, cache-align, and preserve retrievable originals. The local rule is to make compression reversible or auditable when the removed detail may matter later.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds structured-output and memory-control signals. Context selection should account for repeated tool-call shapes, JSON payloads, reasoning traces, metadata filters, hybrid search, TTL behavior, and update paths. The local practice is to select compact structured context when it preserves the task contract, while keeping exact originals recoverable for audit, repair, or access-control review.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -40,6 +42,7 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - Use deterministic disk checks when an agent's claim about context, progress, or source content must be trusted.
 - Treat context compression as a harness policy decision with routing, reversibility, cache behavior, provenance, and sensitive-field handling, not only as token trimming.
 - Preserve a way to recover compressed originals when an agent may need exact JSON, source code, logs, identity fields, or access-control evidence.
+- Select compact structured context for repeated tool-call or JSON shapes only when exact originals, metadata filters, retention rules, and update paths remain recoverable.
 
 ## Authoritative Sources
 
@@ -56,6 +59,7 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -87,3 +91,4 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 - Maintained on 2026-06-25 with proprietary-code bootstrapping guidance for baseline evals, concise instructions, reference examples, and current API evidence.
 - Maintained on 2026-06-27 with lost-in-the-middle placement and disk-verification rules for long-context work.
 - Maintained on 2026-06-30 with reversible context compression, cache-alignment, provenance, and sensitive-field handling guidance.
+- Maintained on 2026-07-07 with structured-output selection, memory metadata filters, TTL behavior, update paths, and recoverable originals.

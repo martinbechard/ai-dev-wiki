@@ -29,6 +29,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds review capacity and compliance pressure. As AI-generated code volume grows, review gates should use automated compliance checks, quality gates, runtime evidence, and software-quality taxonomies to protect reviewer attention. Manual review remains necessary for tradeoffs and final judgment, but it should receive evidence packages instead of raw generated-code volume.
 
+The July 7 raw sources add authorship, policy, and localization signals. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) records agent-authored commit visibility and contribution-policy pressure; locally, reviews should preserve agent authorship, violation attribution, and human repair accountability. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds security-eval evidence that vulnerability classification is weaker without compilable context, contamination controls, and line-level localization checks.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -54,6 +56,9 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Evaluate whether the reviewer understands repository-wide architecture and team standards, not only the changed hunk.
 - Use automated compliance checks, quality gates, and runtime evidence to reduce reviewer load without hiding final human judgment.
 - Include established software-quality dimensions when reviewing AI-generated changes that are larger than a local fix.
+- Preserve agent-authorship and violation-attribution metadata so reviewers can distinguish agent-introduced risk from ordinary human edits.
+- Require the submitter to understand, repair, and explain generated code before treating it as review-ready.
+- Separate security classification from localization, proof quality, compilation context, and contamination-aware evaluation.
 
 ## Authoritative Sources
 
@@ -72,6 +77,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -107,3 +114,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-07-04 with recall-first review, filtering, repository evidence, and human repair boundaries.
 - Maintained on 2026-07-05 with deployment-model, source-exposure, audit, repository-context, actionability, customization, and latency selection criteria.
 - Maintained on 2026-07-06 with compliance checks, runtime evidence, software-quality dimensions, and reviewer-load controls.
+- Maintained on 2026-07-07 with agent-authorship metadata, violation attribution, contribution-policy accountability, and security-localization eval controls.

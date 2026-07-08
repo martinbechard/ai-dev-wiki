@@ -17,6 +17,8 @@ This page owns the downstream practice. Broad coverage of Claude Code and other 
 
 The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) reinforces the router boundary for enterprise context layers. The router should direct agents toward the smallest relevant layer for governed meaning, policy, lineage, retrieval, memory, and task rules instead of sending every task through a broad context bundle.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds runtime-memory and workflow-runtime evidence. Context routers should route separately to model context, durable execution history, memory stores, event logs, and human-wait state. Tool and runtime names stay upstream-owned; locally, the router must prevent those layers from collapsing into one opaque prompt bundle.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -31,6 +33,7 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Keep upstream product and agent-tool background in the federated AI wiki unless the local page is describing a downstream practice lens.
 - Preserve authority signals so agents know which documents should guide current work.
 - Route governed meaning, policy metadata, and decision memory to knowledge-layer leaves rather than repeating them in the thin router.
+- Route model context, durable execution history, memory stores, event logs, and human-wait state as separate layers.
 
 ## Authoritative Sources
 
@@ -39,6 +42,7 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -67,3 +71,4 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Created on 2026-06-23 from the folder organization source note and the two local AI development decks.
 - Maintained on 2026-06-23 as the overview page for split context architecture leaves.
 - Maintained on 2026-07-03 with governed meaning, policy metadata, lineage, retrieval, memory, and task-rule routing boundaries.
+- Maintained on 2026-07-07 with separate routing for model context, execution history, memory stores, event logs, and human-wait state.

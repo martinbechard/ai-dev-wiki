@@ -23,6 +23,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds persistent agent-memory evidence. Shared coding-agent memory is useful when it captures prompts, tool calls, decisions, compaction checkpoints, session boundaries, and handoff context in a queryable, auditable form. The local boundary is that such memory should support source-backed rehydration and attribution, not silently become higher-authority instructions than repository procedures or verified wiki leaves.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds memory-control evidence from agent-memory systems. Custom extraction, hybrid vector and text search, context cards, metadata filtering, update APIs, TTL behavior, and long-running memory benchmarks all reinforce the local rule that memory is governed architecture. Durable memory needs explicit extraction rules, retention semantics, update paths, retrieval scope, and source provenance before it can be trusted for rehydration.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -41,6 +43,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Preserve scheduled documentation diffs as maintenance evidence, not as automatic proof that the compiled wiki is current.
 - Capture prompts, tool calls, decisions, compaction points, session boundaries, and handoff summaries when persistent agent memory needs auditability.
 - Rehydrate from persistent memory only after checking source provenance and current repository state.
+- Define extraction instructions, metadata filters, retrieval modes, update paths, TTL behavior, and retention boundaries for agent memory before using it as task context.
 
 ## Authoritative Sources
 
@@ -52,6 +55,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -83,3 +87,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-07-03 with persistent code-review memory dimensions, tagging, retrieval precision, retention, and governance.
 - Maintained on 2026-07-05 with file-backed repo wiki memory, durable instruction references, and scheduled-diff maintenance boundaries.
 - Maintained on 2026-07-06 with persistent agent-memory capture, attribution, session-boundary, and source-backed rehydration boundaries.
+- Maintained on 2026-07-07 with governed memory extraction, hybrid retrieval, metadata filtering, update APIs, TTL, and retention boundaries.

@@ -23,6 +23,8 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 
 The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds security and behavior telemetry. Agent observability should include tool calls, reasoning-loop state, state transitions, quality checks, verification results, and security posture signals so operators can distinguish healthy execution from unsafe, looping, or task-wrong behavior.
 
+The July 7 raw sources add session-level telemetry and emerging runtime semantics. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) records sandbox resource metrics grouped by sandbox name and session ID. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) records a draft agent runtime telemetry model with tool calls, context changes, memory lifecycle events, trace identifiers, anomaly detection, and remediation workflows. Locally, session and trace IDs should join cost, runtime, and semantic-failure evidence.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -37,6 +39,7 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Expose context-optimization telemetry when compression, cache alignment, or retrieval fallback can change latency, cost, or task accuracy.
 - Include behavior, verification, and security signals in operator telemetry when agents can call tools, cross trust boundaries, or continue across sessions.
 - Track tool-call traces, state transitions, and quality metrics together so semantic failures are not hidden behind infrastructure health.
+- Attach sandbox session IDs, trace identifiers, resource metrics, tool calls, context changes, memory lifecycle events, anomaly signals, and remediation steps when they affect verification or cost control.
 
 ## Authoritative Sources
 
@@ -48,6 +51,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [Application harness patterns](application-harness-patterns.md)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -80,3 +85,4 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Maintained on 2026-06-28 with semantic-failure telemetry, trace summaries, and evaluation outcomes.
 - Maintained on 2026-06-30 with context-optimization telemetry for compression, cache hits, retrieval fallbacks, provenance, latency, and drift checks.
 - Maintained on 2026-07-03 with behavior, verification, state-transition, and security-posture telemetry for agentic workflows.
+- Maintained on 2026-07-07 with sandbox session metrics, trace identifiers, context and memory lifecycle telemetry, anomaly signals, and remediation workflows.

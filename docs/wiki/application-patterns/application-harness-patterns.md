@@ -19,6 +19,8 @@ Use-compose-build selection is represented in [use compose build workflow select
 
 The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) adds implementation evidence for keeping harness concerns explicit: a product harness may need separate treatment for working state, execution substrate, protocols, evaluation, observability, guardrails, visible progress, and PR review evidence. Those concerns route to the leaves below instead of turning this overview into a framework catalog.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds production runtime evidence. Harness design should model an agent runtime as a service with invocation contracts, session isolation, explicit state buckets, telemetry traces, retries, and human waits. Product and framework details remain upstream-owned; locally, these are harness obligations that make agent workflows operable after prototype stage.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -34,6 +36,7 @@ The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-
 - Keep ecosystem facts in the upstream AI wiki unless the local page is describing a downstream practice lens.
 - Treat harness design as a workflow tradeoff between control, latency, flexibility, validation cost, and operating burden.
 - Keep custom runtime and model choices tied to workflow differentiation, validation evidence, and operating cost.
+- Treat agent runtimes as deployed services with invocation contracts, session isolation, explicit state buckets, telemetry traces, retries, and human waits.
 
 ## Authoritative Sources
 
@@ -43,6 +46,7 @@ The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
 - [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -74,3 +78,4 @@ The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-
 - Updated on 2026-06-23 with local-model harness telemetry, calibration, and workflow-level use-compose-build tradeoffs.
 - Maintained on 2026-06-23 as the overview page for split application harness leaves.
 - Maintained on 2026-06-24 with harness category and progress-telemetry signals from the [leaf update watch](../source-workflows/leaf-update-watch.md).
+- Maintained on 2026-07-07 with production runtime, invocation-contract, session-isolation, state-bucket, and telemetry-trace obligations.

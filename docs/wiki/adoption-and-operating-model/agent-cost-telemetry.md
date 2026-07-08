@@ -33,6 +33,8 @@ The [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-de
 
 The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) adds cost-control evidence for coding-agent scale. Spend growth should be traced to observability, workflow governance, subagent delegation, sandbox trials, model routes, and tool loops. Cost caps are most useful when paired with traces and accepted outcomes so a team can identify whether expensive work was valuable, mis-scoped, or blocked by missing verification.
 
+The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds per-user and built-in billing-control evidence. Desktop coding-agent rollout now intersects with plan eligibility, BYOK policy, cost centers, per-user budgets, usage reports, and billing APIs. Locally, spend governance should distinguish access enablement, budget assignment, usage evidence, and budget drift so finance controls become workflow guardrails rather than after-the-fact reports.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -57,6 +59,8 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - Attribute shared AI-credit pool consumption to team, feature, run, tool surface, subagent fan-out, and accepted outcome.
 - Compare cross-tool coding-agent bills at the workflow level so cost governance does not fragment by product console.
 - Tie cost caps and alerts to trace evidence, sandbox trials, model routing, tool loops, subagent delegation, and accepted outcomes.
+- Separate agent access, per-user budget assignment, usage reporting, and budget drift reviews when onboarding desktop coding agents.
+- Prefer durable billing and usage APIs for recurring cost evidence instead of relying on preview reporting surfaces.
 
 ## Authoritative Sources
 
@@ -76,6 +80,7 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - [July 2 topic news collector source](../../../raw/processed/2026-07-02/ai-dev-wiki-topic-news-collector-2026-07-02T203134-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 
 ## Related Code
 
@@ -111,3 +116,4 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - Maintained on 2026-07-01 with session credit limits, cost-center budgets, auto routing, and budget stops as workflow telemetry.
 - Maintained on 2026-07-02 with shared credit-pool caps, feature-level coding-agent cost attribution, and cross-tool spend review.
 - Maintained on 2026-07-06 with trace-linked cost caps, sandbox-trial costs, model-routing costs, and subagent delegation cost evidence.
+- Maintained on 2026-07-07 with desktop-agent onboarding budgets, per-user cost centers, usage-reporting APIs, and budget drift as workflow guardrails.

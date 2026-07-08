@@ -13,6 +13,8 @@ Structured output makes model intent executable by giving deterministic code a s
 
 This pattern fits filters, transformations, workflow steps, UI changes, business actions, and tool arguments where plain prose would be too ambiguous for downstream execution. The model drafts the artifact; the harness owns schema validation, permission checks, execution behavior, and failure handling.
 
+The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds latency and verification-cost evidence for structured agent outputs. Function-call arguments, JSON payloads, and repeated reasoning trace shapes can be predictable enough for drafter-style acceleration, but the local rule is still that validators, permissions, and audit decide acceptance. Speed improvements only matter when schema validity, latency, and failure evidence are measured across the whole agent loop.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -20,6 +22,8 @@ This pattern fits filters, transformations, workflow steps, UI changes, business
 - Treat a DSL as a narrow contract for the workflow, not as a general replacement for application logic.
 - Prefer deterministic validators for syntax, allowed fields, executable actions, and policy gates.
 - Feed validator failures back into the harness loop when the workflow can safely retry.
+- Track latency and verification cost for repeated structured-output shapes across the whole agent loop, not only at one model call.
+- Do not trade away schema validation, permission checks, or auditability for faster drafted tool arguments or JSON payloads.
 
 ## Authoritative Sources
 
@@ -27,6 +31,7 @@ This pattern fits filters, transformations, workflow steps, UI changes, business
 - [Application harness patterns](application-harness-patterns.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -53,3 +58,4 @@ This pattern fits filters, transformations, workflow steps, UI changes, business
 ## Maintenance Notes
 
 - Created on 2026-06-23 from the application harness source guidance on structured output, DSLs, and model-drafted executable artifacts.
+- Maintained on 2026-07-07 with structured-output latency, drafter verification cost, and whole-loop validation guidance.

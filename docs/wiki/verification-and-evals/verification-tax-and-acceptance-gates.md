@@ -15,6 +15,8 @@ The local operating model should budget a verification tax for AI-assisted work.
 
 The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) adds a reusable-procedure boundary: a skill should define the evidence that must exist before an agent can call the work complete. This page owns the delivery-level acceptance practice. The mechanics of eval graders live in [judge grader boundaries](judge-grader-boundaries.md), and the general workflow loop lives in [verification loops and evals](verification-loops-and-evals.md).
 
+The July 7 raw sources add a verification-cost refinement. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) separates tool-use failures and vulnerability localization from final success labels, while the [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds step-level state scoring and runtime telemetry. Acceptance gates should therefore check the evidence path when tool use, security, or runtime state matters, not only the final answer.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -24,6 +26,7 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 - Budget review time when agentic workflows increase output volume.
 - Keep human acceptance explicit for consequential changes, external actions, or uncertain evidence.
 - Encode recurring proof standards in skills and runbooks so completion checks travel with the procedure.
+- Add trace, step-state, tool-result-use, localization, and runtime telemetry gates when final output can hide the failure mode.
 
 ## Authoritative Sources
 
@@ -32,6 +35,8 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -60,3 +65,4 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 
 - Created on 2026-06-23 to hold verification-tax and acceptance-gate practice for agentic delivery.
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.
+- Maintained on 2026-07-07 with evidence-path gates for tool-use, localization, step-state, and runtime telemetry failures.

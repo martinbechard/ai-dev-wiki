@@ -27,6 +27,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) reinforces compliance and data-boundary controls for AI review. Source-code location, data residency, intellectual-property exposure, audit controls, air-gapped operation, and private-cloud deployment can decide whether a review agent is usable before quality is evaluated. Compliance-as-code belongs in pull-request checks when rules are stable enough to test.
 
+The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds desktop-agent enablement and spend-surface controls. Broad product details remain upstream-owned, but locally a rollout must capture who can use the desktop agent, which BYOK or organization policy applies, which budgets follow team membership, and which billing or usage API produces audit evidence after preview surfaces retire.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -55,6 +57,7 @@ The detailed control leaves are:
 - Require governed semantic definitions, source-truth labels, and execution monitoring before agents retrieve or act on business metrics.
 - Treat source-code location, data residency, auditability, and air-gapped operation as acceptance gates for AI code review in regulated environments.
 - Prefer executable pull-request policy checks for stable compliance requirements instead of relying on manual audit notes after merge.
+- Treat desktop-agent plan access, BYOK policy, cost-center membership, and usage-reporting API coverage as governed rollout controls.
 
 ## Authoritative Sources
 
@@ -73,6 +76,7 @@ The detailed control leaves are:
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 
 ## Related Code
 
@@ -110,3 +114,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-03 with shadow-agent inventory, MCP audit evidence, and destructive shell-command containment controls.
 - Maintained on 2026-07-04 with executable compliance checks, governed semantics, source truth, and execution monitoring.
 - Maintained on 2026-07-05 with data-residency, source-code exposure, auditability, air-gapped review, and compliance-as-code pull-request gates.
+- Maintained on 2026-07-07 with desktop-agent access, BYOK policy, cost-center membership, and durable usage-reporting controls.

@@ -23,6 +23,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds dynamic-dispatch coverage signals. Subagent fan-out should be generated from explicit partitions, tracked through typed intermediate results, and reviewed by the main coordinator so broad delegated work can prove coverage instead of relying on conversational assurances.
 
+The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds a repo-derived role-design signal. Process mining over repository event logs can suggest project-specific agent roles, but local workflow design should treat those roles as hypotheses that need scope review, privacy checks, coordination-cost analysis, and validation against human expectations before they become standing subagents.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -36,6 +38,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Do not let reusable skill content substitute for a role boundary or validation owner.
 - Partition broad delegated work explicitly and preserve typed intermediate results for each partition.
 - Require the coordinator to reconcile coverage, conflicts, failures, and skipped partitions before accepting subagent fan-out.
+- Treat repository-derived agent roles as candidate delegation contracts, not automatic authority to mine or expose private process data.
+- Validate proposed roles against observed workflow evidence, human expectations, coordination overhead, and privacy boundaries.
 
 ## Authoritative Sources
 
@@ -46,6 +50,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 
 ## Related Code
 
@@ -78,3 +83,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Maintained on 2026-06-28 with typed delegation contracts for subagent configuration.
 - Maintained on 2026-07-04 with coordinator-served roles, tool budgets, return shapes, and role-versus-skill boundaries.
 - Maintained on 2026-07-05 with dynamic-dispatch partitioning, typed intermediate results, and coordinator coverage reconciliation.
+- Maintained on 2026-07-07 with repo-derived role hypotheses, process-log privacy boundaries, and validation-before-delegation guidance.

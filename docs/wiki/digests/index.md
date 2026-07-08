@@ -38,6 +38,8 @@ July 5 public artifacts added local practice coverage for AI review deployment g
 
 July 6 public artifacts and clippings added local practice coverage for concise instruction files, persistent agent memory, runtime verification layers, software-quality gates, tool telemetry, chat-agent process state, security-scanner intake, virtual shell evidence boundaries, configuration-as-code governance, procurement readiness, worktree orchestration, and trace-linked cost caps.
 
+July 7 public artifacts added local practice coverage for desktop-agent access and spend governance, tool-use failure diagnostics, step-level evals, sandbox and runtime telemetry, repo-derived subagent roles, concurrent agent PR coordination, generated-code accountability, governed memory controls, and structured-output latency checks.
+
 ## Authoritative Sources
 
 - [July 2026 development digest](2026-07.md)
@@ -75,6 +77,8 @@ July 6 public artifacts and clippings added local practice coverage for concise 
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
@@ -124,3 +128,4 @@ July 6 public artifacts and clippings added local practice coverage for concise 
 - Updated on 2026-07-04 after public raw artifacts were synthesized into durable platform, instruction, review, governance, retrieval, eval, and coordinator leaves.
 - Updated on 2026-07-05 after public raw artifacts were synthesized into durable review, governance, wiki-memory, subagent, cost, ownership, approval, and harness leaves.
 - Updated on 2026-07-06 after public raw artifacts and clippings were synthesized into durable instruction, memory, verification, governance, tool, harness, process-state, workspace, workflow-selection, and cost leaves.
+- Updated on 2026-07-07 after public raw artifacts were synthesized into durable governance, evaluation, telemetry, workflow, coding-practice, context-memory, structured-output, and source-routing leaves.

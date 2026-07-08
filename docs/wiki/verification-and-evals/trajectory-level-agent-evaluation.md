@@ -25,6 +25,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds platform and agentic-testing trajectory signals. Agent-platform runs should preserve control-plane decisions, model routing, tool calls, memory and retrieval events, sandbox boundaries, and runtime observations. Fully agentic tests need trajectory evidence because the path is selected during execution, not pre-authored in a script.
 
+The July 7 raw sources add step-local and hidden-state research signals. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) routes Agent Step Value into local practice as evidence for scoring individual actions against before-and-after state projections. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) also records latent-programming research that probes model state for parse, test, and regression signals; locally this remains an emerging research direction, while steady-state assurance still depends on observable tests, traces, builds, and review gates.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -40,6 +42,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Whether the eval includes the environment, instruction, created artifacts, tool trace, and deterministic checker needed to reproduce the outcome.
 - Whether platform-layer decisions, model routing, memory access, retrieval, tool calls, and sandbox boundaries are visible in the trace.
 - Whether an agentic test loop records planned path, observations, adaptations, and stopping criteria.
+- Whether step-level scoring can explain which action improved, degraded, or failed to change the task state.
+- Whether emerging internal-state signals are clearly separated from deployable assurance evidence such as tests, builds, traces, and review outcomes.
 
 ## Practice Boundaries
 
@@ -53,6 +57,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Use behavioral unit evals for expected next actions, integration evals for final artifacts, online evals for deployed trend monitoring, and benchmarks for capability-level comparison.
 - Prefer environment-backed eval datasets for long-running agents when correctness depends on filesystem, tool, browser, or service state.
 - Evaluate platform agent runs at the trajectory level when control-plane, runtime, memory, retrieval, or tool decisions affect trust.
+- Use step-local diagnostics when final-run scores hide which agent action caused success, drift, or failure.
+- Treat model-internal probing as research context unless it is backed by observable verification evidence in the local workflow.
 
 ## Authoritative Sources
 
@@ -65,6 +71,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -96,3 +104,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-06-30 with behavioral unit, integration, online, and benchmark eval shape guidance.
 - Maintained on 2026-07-02 with environment-backed stateful-agent eval datasets and deterministic checker requirements.
 - Maintained on 2026-07-04 with platform-layer traces and agentic-testing trajectory evidence.
+- Maintained on 2026-07-07 with step-level action scoring and internal-state probing as research-only assurance context.

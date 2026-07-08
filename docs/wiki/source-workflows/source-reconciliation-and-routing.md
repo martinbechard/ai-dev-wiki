@@ -23,6 +23,8 @@ The [FastMCP research source](../../../raw/processed/project-wiki-research-2026-
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json), [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json), and July 6 clippings reinforce the federation split. Vercel, LangChain, MintMCP, Agent Orchestrator, ai-memory, Deepsec, Just Bash, Chat SDK, standards, and model names are broad ecosystem entities unless the local page is about downstream workflow, governance, evaluation, harness, or adoption practice. Date evidence that comes only from search-result snippets should remain source-attributed and should not be promoted into a durable current fact without stronger source-page evidence.
 
+The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honeycomb, Cycode, Godot, model families, benchmarks, standards bodies, and workflow runtimes are upstream-owned broad entities when the wiki needs company, product, model, or framework background. Local pages keep the downstream practices: desktop-agent onboarding controls, spend governance, sandbox and runtime telemetry, repo-derived role design, merge-conflict coordination, step-level evals, generated-code accountability, and governed memory boundaries.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -36,6 +38,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Route broad framework entities upstream while keeping only local practice implications in this wiki.
 - Keep product, company, framework, standard, and model details upstream-owned when local sources only need their practice implications.
 - Attribute weak or snippet-only date evidence and avoid converting it into source-page certainty.
+- Route July 7 broad ecosystem updates upstream while keeping local practice updates anchored in workflow, governance, evaluation, telemetry, memory, and adoption leaves.
 
 ## Authoritative Sources
 
@@ -53,6 +56,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
+- [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 
 ## Related Code
 
@@ -84,3 +89,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-06-26 with knowledge-package routing that separates external agent evidence from local implementation acceptance.
 - Maintained on 2026-07-01 with knowledge-source migration semantics and FastMCP upstream routing.
 - Maintained on 2026-07-06 with broad-entity routing for July 6 products, tools, standards, and snippet-date evidence.
+- Maintained on 2026-07-07 with broad-entity routing for July 7 desktop-agent, telemetry, runtime, benchmark, memory, and contribution-policy sources.
