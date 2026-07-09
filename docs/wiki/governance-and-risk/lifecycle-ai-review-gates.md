@@ -21,6 +21,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json) reinforces generator-reviewer separation. A coding agent can draft or modify implementation, but a formal gate should use independent evidence, tests, review rubrics, or a separate reviewer path before approval. Self-review by the original generator can be useful triage, but it should not satisfy release readiness on its own.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds execution-security evidence for lifecycle gates. Review should happen before cloned project setup, automated troubleshooting, sandbox promotion, or production-adjacent execution, because repository metadata and generated commands can become the attack path before a diff exists.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -32,6 +34,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Use issue, RFC, spec, and workflow artifacts as source authorities for agent work so planning, implementation, review, security, and operations can be checked against the same intent.
 - Define which lifecycle gate owns review when generated code, PRD quality, design risk, security posture, and production acceptance are all affected by the same agent workflow.
 - Keep generator, reviewer, test, and approver responsibilities separate when the review gate affects release, security, or production acceptance.
+- Add pre-execution gates for untrusted repository setup, generated command execution, sandbox promotion, and sensitive-code workflows.
+- Treat execution-boundary evidence as part of lifecycle review before accepting an agent-produced implementation or repair.
 
 ## Authoritative Sources
 
@@ -43,6 +47,7 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -73,3 +78,4 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 - Maintained on 2026-06-25 with platform-lifecycle signals for specs, issues, review prompts, security checks, and operational feedback as reviewable artifacts.
 - Maintained on 2026-06-29 with continuous lifecycle review gates across requirements, design, code, security, and acceptance.
 - Maintained on 2026-07-01 with generator-reviewer separation for formal lifecycle gates.
+- Maintained on 2026-07-08 with pre-execution lifecycle gates for untrusted setup, generated commands, and sensitive-code promotion.

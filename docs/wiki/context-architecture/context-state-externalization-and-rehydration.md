@@ -19,6 +19,8 @@ This page owns context-state durability and recovery. [Context selection and com
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds long-running runtime evidence. Rehydration should distinguish model context from event history, retry records, human-in-the-loop waits, state buckets, and memory retention. A resumed workflow should rebuild the working context from those durable layers rather than assuming a continuous LLM session still holds the authoritative state.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds trust-label and authorization-provenance signals. Rehydrated state should preserve the origin and authority of tool results, repository metadata, retrieved data, and persisted context, and it should carry the principal or policy evidence behind delegated actions instead of relying on conversational continuity.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -31,6 +33,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Retain, prune, summarize, or externalize conversation history according to source authority, recovery value, and the risk of stale state.
 - Keep instructions, memory, retrieval evidence, tool outputs, and progress files as separate context layers during rehydration.
 - Rehydrate long-running workflows from event history, retry records, human waits, state buckets, and memory-retention rules instead of assuming continuous model context.
+- Preserve origin, authority, principal, and authorization evidence when externalized state may later drive tool calls or repository actions.
+- Recheck persisted tool results and metadata before treating rehydrated context as trusted instruction or permission state.
 
 ## Authoritative Sources
 
@@ -42,6 +46,7 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [context selection and compaction](context-selection-and-compaction.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -73,3 +78,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Created on 2026-06-27 from O'Reilly context-management sources covering durable context files, handoffs, cursor checks, rehydration, and lost-in-the-middle mitigation.
 - Maintained on 2026-06-28 with conversation-history management as layered retention, pruning, summarization, and rehydration.
 - Maintained on 2026-07-07 with event-history, retry-record, human-wait, state-bucket, and memory-retention rehydration guidance.
+- Maintained on 2026-07-08 with trust labels, authorization provenance, and rehydrated metadata checks.

@@ -31,6 +31,8 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md), [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md), and [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md) add supply-chain intake examples. Agent security scanners, virtual shell packages, chat adapters, state stores, and channel integrations should be reviewed for package provenance, sandbox claims, credential handling, network behavior, adapter permissions, and whether collaboration messages or repository content could leave the intended trust boundary.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) and [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) add sensitive-code and telemetry-capture controls. Before exporting agent traces or running a governed coding agent on sensitive repositories, teams should decide whether prompts, responses, tool content, session logs, screenshots, and debug logs can be retained, and should separate credentials from the sandbox that executes generated or delegated code.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -54,6 +56,9 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - Record retention and sensitivity decisions for screenshots, PDFs, architecture images, logs, and other multimodal context before they are sent to a hosted assistant.
 - Review agent security scanners, virtual shell tools, chat adapters, state stores, and channel integrations before they enter a team agent workflow.
 - Check whether security scans, chat-agent threads, and simulated shell examples expose repository content, credentials, collaboration messages, or sensitive findings outside the intended environment.
+- Classify prompt, response, tool, screenshot, debug-log, and session-log content before exporting centralized agent telemetry.
+- Keep credentials outside coding-agent sandboxes and use approval gates before generated code or delegated tools can touch sensitive files, networks, or dependencies.
+- Prefer deny-by-default network access for sensitive-code agents until the needed endpoints and evidence requirements are explicit.
 
 ## Authoritative Sources
 
@@ -73,6 +78,8 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -112,3 +119,4 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - Maintained on 2026-07-01 with package, IDE extension, MCP metadata, malware-analysis, and tool-parameter controls for agent workflows.
 - Maintained on 2026-07-01 with managed plugin settings, bypass modes, browser tools, visual attachments, model enablement, and remote admin MCP controls.
 - Maintained on 2026-07-06 with scanner, virtual shell, chat adapter, state store, and collaboration-channel supply-chain checks.
+- Maintained on 2026-07-08 with telemetry-content classification, credential-separated sensitive-code sandboxes, and deny-by-default network controls.

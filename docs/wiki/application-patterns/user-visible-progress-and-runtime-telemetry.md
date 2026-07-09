@@ -25,6 +25,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 
 The July 7 raw sources add session-level telemetry and emerging runtime semantics. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) records sandbox resource metrics grouped by sandbox name and session ID. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) records a draft agent runtime telemetry model with tool calls, context changes, memory lifecycle events, trace identifiers, anomaly detection, and remediation workflows. Locally, session and trace IDs should join cost, runtime, and semantic-failure evidence.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds centrally managed telemetry and remote-session notification signals. Local telemetry design should separate OTLP-style trace routing from product analytics, decide whether prompt, response, and tool content are retained, and expose remote session states such as active work, waiting for user input, idle, finished, and linkable logs when a human may need to resume or intervene.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -40,6 +42,8 @@ The July 7 raw sources add session-level telemetry and emerging runtime semantic
 - Include behavior, verification, and security signals in operator telemetry when agents can call tools, cross trust boundaries, or continue across sessions.
 - Track tool-call traces, state transitions, and quality metrics together so semantic failures are not hidden behind infrastructure health.
 - Attach sandbox session IDs, trace identifiers, resource metrics, tool calls, context changes, memory lifecycle events, anomaly signals, and remediation steps when they affect verification or cost control.
+- Separate trace transport settings, service metadata, secrets, and content-capture policy before exporting agent telemetry.
+- Show remote-session states and log handoff links when long-running agents can continue outside the user's active editor session.
 
 ## Authoritative Sources
 
@@ -53,6 +57,7 @@ The July 7 raw sources add session-level telemetry and emerging runtime semantic
 - [Application harness patterns](application-harness-patterns.md)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -86,3 +91,4 @@ The July 7 raw sources add session-level telemetry and emerging runtime semantic
 - Maintained on 2026-06-30 with context-optimization telemetry for compression, cache hits, retrieval fallbacks, provenance, latency, and drift checks.
 - Maintained on 2026-07-03 with behavior, verification, state-transition, and security-posture telemetry for agentic workflows.
 - Maintained on 2026-07-07 with sandbox session metrics, trace identifiers, context and memory lifecycle telemetry, anomaly signals, and remediation workflows.
+- Maintained on 2026-07-08 with managed telemetry export boundaries and remote coding-agent session states.

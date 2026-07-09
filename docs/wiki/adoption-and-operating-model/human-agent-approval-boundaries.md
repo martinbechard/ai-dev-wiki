@@ -23,6 +23,8 @@ The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds generated-code and gateway-control signals. Approval boundaries should separate execution isolation from capability isolation, grant host capabilities explicitly, preserve durable human pauses, and use per-agent gateway policy when recurring agents can cross from inspection into action.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds managed approval-mode, mobile delegation, and review-dismissal signals. Teams should distinguish the ability to request an agent fix from authority to merge or dismiss reviews, and should make permission modes, bypass controls, and sensitive-operation approvals centrally visible when the same agent can run from editor, CLI, or mobile surfaces.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -36,6 +38,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Treat tool-call authorization as a runtime approval boundary when an action can affect code, data, costs, or external systems.
 - Separate execution isolation from capability isolation when agents run generated code or delegated tools.
 - Preserve durable human pauses and explicit host capability grants before unattended agents mutate code, data, or external systems.
+- Keep permission modes and bypass controls centrally visible for recurring team agents.
+- Separate request, repair, review, dismissal, merge, and release authority even when all actions are reachable from one agent-enabled surface.
 
 ## Authoritative Sources
 
@@ -48,6 +52,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -80,3 +85,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.
 - Maintained on 2026-07-05 with execution isolation, capability isolation, durable human pauses, explicit host capabilities, and gateway policy signals.
+- Maintained on 2026-07-08 with managed permission modes, bypass controls, mobile repair delegation, and review-dismissal authority separation.

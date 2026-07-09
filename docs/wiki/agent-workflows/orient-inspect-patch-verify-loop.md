@@ -19,6 +19,8 @@ The broader [research plan implement review lifecycle](research-plan-implement-r
 
 The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) frames coding-agent orchestration as a cost-sensitive sequence of evidence gathering, refinement, verification, and stopping decisions. The local loop should not run checks mechanically or skip them for speed; each pass should choose the next evidence step based on uncertainty, risk, and verifier cost.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds PR-repair delegation signals from mobile and cloud-agent flows. The local loop can accept an agent handoff for merge conflicts, failing workflows, review comments, tests, or follow-up changes only when the returned diff is reviewable and the verification evidence is carried back into the same inspect, patch, and verify cycle.
+
 ## Practice Boundaries
 
 - Orient from repository state, procedures, and existing wiki pages before proposing changes.
@@ -30,6 +32,7 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - Link multi-phase lifecycle guidance to [research-plan-implement-review-lifecycle.md](research-plan-implement-review-lifecycle.md).
 - Link workflow strategy decisions to [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md).
 - Choose the next inspect, refine, verify, or stop step according to uncertainty, change risk, and verification cost.
+- Treat delegated PR repair as another pass through the loop: inspect the conflict or failure, patch narrowly, run the relevant checks, and report reviewable evidence before merge.
 
 ## Authoritative Sources
 
@@ -37,6 +40,7 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -66,3 +70,4 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - Created on 2026-06-23 from the local source decks covering agent loops, tool calls, visible planning, and subagent use.
 - Split on 2026-06-23 so RPI lifecycle, use-compose-build selection, subagent coordination, and handoffs live in durable leaf pages.
 - Maintained on 2026-06-28 with cost-sensitive evidence gathering, refinement, verification, and stop decisions.
+- Maintained on 2026-07-08 with delegated PR repair loops for conflicts, failing workflows, review comments, tests, and follow-up changes.

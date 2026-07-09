@@ -19,6 +19,8 @@ The [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-
 
 The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json) adds a guardian-agent and UI-first operating lens. Agent identity should include inherited-permission analysis, behavioral baselines, stale-credential checks, and runtime policy enforcement. When an agent acts through existing user workflows, the local goal is to preserve the same approval paths and audit artifacts that would apply to the human action.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds an identity-bound authorization lens. The model and local agent host should be treated as untrusted emitters for consequential tool calls; an off-host authorization path should bind the human or system principal, policy, arguments, rate limits, credential broker, and audit chain before side effects occur.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -31,6 +33,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Monitor agent activity against expected scope so delegated authority drift becomes visible before incident review.
 - Check inherited permissions and stale credentials before letting an agent act through a connector, tool server, or user-interface workflow.
 - Preserve existing approval and audit artifacts when agent execution emulates a human workflow.
+- Bind consequential tool calls to a verified principal and policy decision outside the model context.
+- Record message-level or request-level authorization evidence when delegated actions can affect code, data, credentials, costs, or external systems.
 
 ## Authoritative Sources
 
@@ -40,6 +44,7 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -69,3 +74,4 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 - Created on 2026-06-24 to separate agent instance identity, delegated authority, shared-channel agents, and credential revocation from broader governance infrastructure.
 - Maintained on 2026-06-25 with non-human identity controls for owner assignment, least privilege, recurring access review, monitoring, and audit evidence.
 - Maintained on 2026-06-29 with inherited-permission analysis, stale-credential checks, runtime enforcement, and UI-first audit preservation.
+- Maintained on 2026-07-08 with identity-bound off-host authorization, argument constraints, credential brokering, and audit-chain evidence.

@@ -19,6 +19,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md) adds security-harness operating detail. Agent-powered vulnerability scanning should be treated as an expensive, high-privilege workflow with short project-specific bootstrap context, resumable batch processing, optional revalidation, finding exports, and sandboxed worker execution for large repositories. The local gate is to review setup context for sensitive data, scope the scan, preserve resumability evidence, and require human triage before exported findings become repair work.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds coding-agent execution-security and untrusted setup evidence. Security repair gates should include filesystem, network, credential, plugin, generated-code, provenance, and time-of-check/time-of-use controls before an agent runs setup commands, applies a fix, or claims a vulnerability is repaired.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -32,6 +34,8 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - Require human review of AI-generated security patches for regression coverage and absence of new security issues.
 - Keep security-scan bootstrap context short, project-specific, and free of unnecessary sensitive detail.
 - Require triage, optional revalidation, export review, and sandbox boundary evidence before agent-generated security findings drive fixes.
+- Review setup commands, dependency actions, network egress, and generated-code execution as privileged security steps, not routine repair mechanics.
+- Require provenance and TOCTOU checks when an agent reads repository state and then executes a derived repair or setup path.
 
 ## Authoritative Sources
 
@@ -42,6 +46,7 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -70,3 +75,4 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.
 - Maintained on 2026-07-04 with scan-to-merge severity, triage, rescan, regression, and human merge-review gates.
 - Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.
+- Maintained on 2026-07-08 with execution-security gates for setup commands, filesystem and network access, provenance, generated code, and TOCTOU risk.

@@ -29,6 +29,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds desktop-agent enablement and spend-surface controls. Broad product details remain upstream-owned, but locally a rollout must capture who can use the desktop agent, which BYOK or organization policy applies, which budgets follow team membership, and which billing or usage API produces audit evidence after preview surfaces retire.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds managed policy, telemetry, review-dismissal, and sensitive-code harness signals. Locally, coding-agent controls should distinguish prompt or tool-content capture from metadata telemetry, push editor and CLI policy through managed device or server settings where available, and treat review-dismissal authority as separate from the ability to request an agent repair.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -58,6 +60,10 @@ The detailed control leaves are:
 - Treat source-code location, data residency, auditability, and air-gapped operation as acceptance gates for AI code review in regulated environments.
 - Prefer executable pull-request policy checks for stable compliance requirements instead of relying on manual audit notes after merge.
 - Treat desktop-agent plan access, BYOK policy, cost-center membership, and usage-reporting API coverage as governed rollout controls.
+- Manage editor, CLI, plugin, marketplace, permission-mode, telemetry, and model settings centrally when the agent can affect shared code or policy evidence.
+- Separate who may delegate a repair to an agent from who may dismiss human or automated review gates.
+- Decide whether prompt, response, and tool content can enter telemetry streams before enabling centralized traces.
+- Treat governed sensitive-code execution as a control bundle: deny-by-default networking, credential separation, sandboxing, human approvals, and per-session audit logs.
 
 ## Authoritative Sources
 
@@ -77,6 +83,7 @@ The detailed control leaves are:
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -115,3 +122,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-04 with executable compliance checks, governed semantics, source truth, and execution monitoring.
 - Maintained on 2026-07-05 with data-residency, source-code exposure, auditability, air-gapped review, and compliance-as-code pull-request gates.
 - Maintained on 2026-07-07 with desktop-agent access, BYOK policy, cost-center membership, and durable usage-reporting controls.
+- Maintained on 2026-07-08 with managed editor and CLI policy, centralized telemetry capture boundaries, review-dismissal authority separation, and sensitive-code execution controls.

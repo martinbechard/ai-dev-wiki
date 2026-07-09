@@ -23,6 +23,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 
 The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) adds a role-confusion signal. Role tags, labels, and reasoning-style formatting are not sufficient defenses when untrusted text can imitate trusted reasoning, hidden webpage commands, or user intent. The harness still needs source-origin labels, tool-output isolation, and deterministic permission checks before untrusted content can influence actions.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds agent data injection and untrusted setup-command signals. Metadata, tool context, repository setup paths, DNS records, and apparently benign project files can steer a coding agent toward privileged execution; local controls should treat those fields as data until external authorization and runtime checks allow action.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -38,6 +40,8 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - Treat tool descriptions, tool metadata changes, malware strings, and reverse-engineering traces as untrusted source evidence until policy review says otherwise.
 - Do not rely on role labels or reasoning-style formatting as the only boundary against untrusted content.
 - Treat hidden webpage commands and reasoning-like content as source evidence until a trusted instruction channel authorizes action.
+- Treat repository metadata, setup commands, DNS-derived values, tool context, and generated configuration paths as untrusted evidence until policy checks authorize their use.
+- Bound prompt-injection blast radius with off-host authorization, argument constraints, rate limits, and credential brokering where side effects are possible.
 
 ## Authoritative Sources
 
@@ -50,6 +54,7 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -83,3 +88,4 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - Maintained on 2026-06-25 with agentjacking and credential-broker controls for MCP-connected coding-agent workflows.
 - Maintained on 2026-07-01 with MCP tool-description poisoning and malware-analysis prompt-injection cases.
 - Maintained on 2026-07-04 with role-confusion, hidden-command, and reasoning-style injection boundaries.
+- Maintained on 2026-07-08 with agent data injection, repository setup-command, and off-host authorization boundaries.

@@ -15,6 +15,8 @@ The [vibe coding security source](../../../raw/processed/2026-06-23/ai-dev-wiki-
 
 Promotion is a boundary change, not a cosmetic deployment step. An agent can help inspect code, generate tests, and draft fixes, but a human must approve the exposure level, data handling, and residual risk before the app reaches users or cloud infrastructure.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) and [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) add sensitive-code and execution-security signals. Promotion should require sandbox, network, credential, audit, approval, and provenance checks before coding agents work on production-like repositories, sensitive code, or hosted systems.
+
 ## Practice Boundaries
 
 - Identify whether the app remains local, becomes shared internally, becomes public, or handles sensitive data.
@@ -23,6 +25,8 @@ Promotion is a boundary change, not a cosmetic deployment step. An agent can hel
 - Inspect agent skills, plugins, MCP servers, generated dependencies, and copied code before trusting the promoted workflow.
 - Rerun security-focused review after agent-written patches, not only before the first deployment.
 - Keep promotion evidence in the handoff so the owner can see what was checked and what remains unresolved.
+- Require sandbox boundaries, deny-by-default network posture, credential separation, session audit evidence, and human approval before promoting sensitive-code agent workflows.
+- Include execution-boundary hardening in promotion criteria when an agent can run setup commands, generated code, or delegated tools.
 
 ## Authoritative Sources
 
@@ -30,6 +34,8 @@ Promotion is a boundary change, not a cosmetic deployment step. An agent can hel
 - [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md)
 - [prompt injection and untrusted content](prompt-injection-and-untrusted-content.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -56,3 +62,4 @@ Promotion is a boundary change, not a cosmetic deployment step. An agent can hel
 ## Maintenance Notes
 
 - Created on 2026-06-23 from public source guidance on security risks when AI-assisted prototypes become hosted, shared, or data-bearing applications.
+- Maintained on 2026-07-08 with sensitive-code sandbox, network, credential, audit, approval, and execution-boundary promotion checks.

@@ -19,6 +19,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds a codebase-wiki memory signal. Durable instruction files should point agents toward compact, versionable wiki context instead of embedding full documentation in the live prompt, and scheduled refreshes should preserve provenance so stale project memory can be corrected.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds IDE customization, hook, generated-file, and provider-selection signals. Durable instruction surfaces should separate product-managed settings from repository-owned rules, and generated customizations should be reviewed for provenance, scope, approval mode, and tool access before they become standing guidance.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -30,6 +32,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Review stale instructions when libraries, incident decisions, architecture, or recurring patterns change.
 - Point agents from durable instructions to maintained wiki context when the reusable knowledge is larger than a rule file should carry.
 - Keep scheduled documentation refreshes provenance-backed so durable instructions can route to current compiled context without becoming source dumps.
+- Separate repository-owned instructions, personal IDE preferences, centrally managed settings, hooks, and generated customization files.
+- Review generated agent customization files before treating them as durable project policy.
 
 ## Authoritative Sources
 
@@ -39,6 +43,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 
 ## Related Code
 
@@ -70,3 +75,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Maintained on 2026-06-23 to separate durable instruction placement from portable skill and runbook composition.
 - Maintained on 2026-07-04 with instruction provenance, confirmation dates, and stale-rule review triggers.
 - Maintained on 2026-07-05 with versionable codebase-wiki context and provenance-backed documentation refresh signals.
+- Maintained on 2026-07-08 with generated customization review, hook boundaries, managed-setting separation, and provider-selection scope.

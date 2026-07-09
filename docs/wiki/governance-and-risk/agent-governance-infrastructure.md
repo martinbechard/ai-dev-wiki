@@ -41,6 +41,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add declarative and procurement controls. Agent configuration-as-code, permission allow lists, spend caps, traces, audit logs, compliance-as-code, SSO, SCIM, data residency, retention policy, and support commitments are governance infrastructure when agents become team tools. Broad vendor comparison and product ranking remain upstream-owned; locally, these signals define the evidence needed before procurement or rollout.
 
+The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) and [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) add managed endpoint policy, OTLP export, identity-bound authorization, data-injection, multi-tool policy, and governed sensitive-code harness signals. Governance infrastructure should keep policy distribution, trace export, authorization, sandboxing, egress limits, credential separation, and session audit evidence outside ordinary prompt wording.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -75,6 +77,9 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Require per-agent identity, gateway enforcement, risk registers, oversight evidence, logging, and monitoring when agents become recurring team infrastructure.
 - Version agent definitions, prompts, model routes, triggers, tools, permissions, and spend caps when those settings determine recurring team behavior.
 - Require identity, audit-log, retention, residency, support, and compliance evidence before enterprise coding-agent pilots expand.
+- Distribute editor and CLI agent policy through managed endpoint or server settings when personal configuration would make control evidence inconsistent.
+- Treat trace export, prompt-content retention, and tool-content retention as policy decisions with security review and audit ownership.
+- Pair governed sensitive-code harnesses with sandbox evidence, deny-by-default networking, credential separation, and human approval records.
 
 ## Authoritative Sources
 
@@ -101,6 +106,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -145,3 +152,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-07-04 with platform control-plane boundaries, governed semantics, compliance checks, and human escalation capacity.
 - Maintained on 2026-07-05 with tool-risk classification, deployment-location gates, per-agent identity, gateway enforcement, and oversight evidence.
 - Maintained on 2026-07-06 with configuration-as-code, compliance-as-code, procurement, identity, retention, and spend-control evidence.
+- Maintained on 2026-07-08 with managed endpoint policy, trace export controls, identity-bound authorization, and governed sensitive-code harness evidence.

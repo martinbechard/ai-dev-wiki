@@ -27,6 +27,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) adds an instruction-economy caution. Repository instruction files should not become generated overviews or broad context dumps; they are strongest when they hold concise, non-standard, durable rules and route broader project knowledge to wiki, source, and retrieval surfaces. Benchmark-specific model and paper details remain upstream-owned, while the local practice is to treat instruction files as measured operating artifacts with cost and task-success consequences.
 
+The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds agent data injection and compositional policy evidence. Artifact boundaries should prevent retrieved data, repository metadata, tool descriptions, and generated setup paths from impersonating instructions or authorization metadata; runtime policy composition should enforce the boundary when multiple individually allowed tools combine into a risky chain.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -46,6 +48,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Use reach and action capability to decide when a governed MCP server or tool surface is needed instead of more prompt text.
 - Keep role definitions, tool budgets, and output contracts separate from procedural skill knowledge.
 - Keep repository instruction files concise and exception-oriented; put broad explanations, entity background, and large context inventories into wiki, source, or retrieval workflows.
+- Label repository metadata, tool-returned context, generated configuration, and setup instructions as evidence unless a trusted instruction surface promotes them.
+- Back instruction and artifact boundaries with runtime policy composition when data can flow across multiple tools.
 
 ## Authoritative Sources
 
@@ -62,6 +66,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
+- [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 
 ## Related Code
 
@@ -96,3 +101,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-07-03 with third-party vendor skill intake, version pinning, authority labeling, and maintainer ownership.
 - Maintained on 2026-07-04 with recurrence-versus-reach placement rules and role versus skill artifact boundaries.
 - Maintained on 2026-07-06 with instruction-economy guidance for concise, non-standard repository instruction files.
+- Maintained on 2026-07-08 with data-injection boundaries and compositional policy enforcement for multi-tool chains.
