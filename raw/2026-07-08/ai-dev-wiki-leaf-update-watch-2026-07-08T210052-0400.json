@@ -1,0 +1,743 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-07-09T01:00:52Z",
+    "policy": "Only sources visibly published or updated within this window qualify; date-only boundary-day candidates are excluded as ambiguous.",
+    "start_utc": "2026-07-02T01:00:52Z"
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "candidate_summary": "AgentFlow static analysis for agent dependency graphs and agent BOM generation.",
+      "reason": "Date-only publication on cutoff day is ambiguous relative to cutoff 2026-07-02T01:00:52Z.",
+      "source_url": "https://arxiv.org/html/2607.01640v1",
+      "visible_date": "2026-07-02"
+    },
+    {
+      "candidate_summary": "Coding-agent spend tracing and cross-tool cost governance.",
+      "reason": "Date-only publication on cutoff day is ambiguous relative to cutoff 2026-07-02T01:00:52Z.",
+      "source_url": "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+      "visible_date": "2026-07-02"
+    },
+    {
+      "candidate_summary": "Loop specifications for autonomous coding-agent work.",
+      "reason": "Visible date is outside the seven-day cutoff window.",
+      "source_url": "https://arxiv.org/html/2607.00038v1",
+      "visible_date": "2026-06-28"
+    },
+    {
+      "candidate_summary": "Clean-repository reverse-shell proof of concept for Claude Code.",
+      "reason": "Original 0DIN source is outside the seven-day cutoff window; a July 4 secondary report was included instead.",
+      "source_url": "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+      "visible_date": "2026-06-25"
+    },
+    {
+      "candidate_summary": "OpenWiki repository documentation for coding agents.",
+      "reason": "Visible date is outside the seven-day cutoff window.",
+      "source_url": "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+      "visible_date": "2026-07-01"
+    },
+    {
+      "candidate_summary": "Context engineering field guide.",
+      "reason": "Updated date is outside the seven-day cutoff window.",
+      "source_url": "https://www.taskade.com/blog/context-engineering",
+      "visible_date": "2026-06-27"
+    },
+    {
+      "candidate_summary": "Devin Fusion hybrid-model harness and cost reduction.",
+      "reason": "Visible date is outside the seven-day cutoff window.",
+      "source_url": "https://cognition.com/blog/devin-fusion",
+      "visible_date": "2026-06-29"
+    }
+  ],
+  "federation_boundary": "docs/wiki/federation.md keeps broad AI ecosystem entities upstream; this artifact records local AI-assisted development practice implications only.",
+  "follow_up_notes": [
+    "Do not update docs/wiki directly from this watch artifact.",
+    "During ingest, update only local practice leaves and route product, framework, model, MCP, and company background to the upstream AI wiki.",
+    "Review excluded July 2 date-only sources only if a future run obtains precise timestamps proving they fall within its window."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-agent-data-injection-attacks, 2026-07-06-aiauthz-identity-bound-agent-authorization.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "qualifying_update_ids": [
+        "2026-07-06-agent-data-injection-attacks",
+        "2026-07-06-aiauthz-identity-bound-agent-authorization"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found for this selected leaf in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-agent-data-injection-attacks.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "qualifying_update_ids": [
+        "2026-07-06-agent-data-injection-attacks"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found for this selected leaf in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying public update found for this selected leaf in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-03-dscc-multi-tool-agent-chain-policies, 2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "qualifying_update_ids": [
+        "2026-07-03-dscc-multi-tool-agent-chain-policies",
+        "2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-aiauthz-identity-bound-agent-authorization.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualifying_update_ids": [
+        "2026-07-06-aiauthz-identity-bound-agent-authorization"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-07-coding-agent-execution-security-sok, 2026-07-04-techradar-claude-code-clean-repo-reverse-shell.",
+      "last_qualified_update_at": "2026-07-07",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualifying_update_ids": [
+        "2026-07-07-coding-agent-execution-security-sok",
+        "2026-07-04-techradar-claude-code-clean-repo-reverse-shell"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-03-dscc-multi-tool-agent-chain-policies, 2026-07-06-aiauthz-identity-bound-agent-authorization.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+      "qualifying_update_ids": [
+        "2026-07-03-dscc-multi-tool-agent-chain-policies",
+        "2026-07-06-aiauthz-identity-bound-agent-authorization"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-07-coding-agent-execution-security-sok, 2026-07-04-techradar-claude-code-clean-repo-reverse-shell.",
+      "last_qualified_update_at": "2026-07-07",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+      "qualifying_update_ids": [
+        "2026-07-07-coding-agent-execution-security-sok",
+        "2026-07-04-techradar-claude-code-clean-repo-reverse-shell"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-agent-data-injection-attacks, 2026-07-06-aiauthz-identity-bound-agent-authorization, 2026-07-04-techradar-claude-code-clean-repo-reverse-shell.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "qualifying_update_ids": [
+        "2026-07-06-agent-data-injection-attacks",
+        "2026-07-06-aiauthz-identity-bound-agent-authorization",
+        "2026-07-04-techradar-claude-code-clean-repo-reverse-shell"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-07-coding-agent-execution-security-sok, 2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "qualifying_update_ids": [
+        "2026-07-07-coding-agent-execution-security-sok",
+        "2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-agent-data-injection-attacks, 2026-07-03-dscc-multi-tool-agent-chain-policies, 2026-07-07-coding-agent-execution-security-sok, 2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint, 2026-07-04-techradar-claude-code-clean-repo-reverse-shell.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "qualifying_update_ids": [
+        "2026-07-06-agent-data-injection-attacks",
+        "2026-07-03-dscc-multi-tool-agent-chain-policies",
+        "2026-07-07-coding-agent-execution-security-sok",
+        "2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint",
+        "2026-07-04-techradar-claude-code-clean-repo-reverse-shell"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "qualifying_update_ids": [
+        "2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications and route upstream-owned entity details to the upstream AI wiki: 2026-07-06-agent-data-injection-attacks, 2026-07-03-dscc-multi-tool-agent-chain-policies.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "qualifying_update_ids": [
+        "2026-07-06-agent-data-injection-attacks",
+        "2026-07-03-dscc-multi-tool-agent-chain-policies"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.05120v1",
+        "https://arxiv.org/html/2607.03423v1",
+        "https://arxiv.org/html/2607.05743v1",
+        "https://arxiv.org/html/2607.05518v1",
+        "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+        "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+        "https://arxiv.org/html/2607.01640v1",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://arxiv.org/html/2607.00038v1",
+        "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+        "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+        "https://www.taskade.com/blog/context-engineering",
+        "https://cognition.com/blog/devin-fusion"
+      ]
+    }
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "factual_summary": "The paper defines agent data injection as an indirect-prompt-injection variant where attacker-controlled data is interpreted as trusted metadata or tool context. It reports attacks against web agents and coding agents, including remote-code-execution and supply-chain scenarios for Claude Code, Codex, and Gemini CLI.",
+      "follow_up_note": "Ingest should update local practice leaves for trust labeling and route product-specific background to the upstream AI wiki.",
+      "id": "2026-07-06-agent-data-injection-attacks",
+      "named_entities": [
+        "Agent Data Injection",
+        "Indirect Prompt Injection",
+        "Claude Code",
+        "OpenAI Codex",
+        "Gemini CLI",
+        "Antigravity",
+        "Nanobrowser"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://arxiv.org/html/2607.05120v1",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Gemini CLI",
+        "Antigravity",
+        "Nanobrowser"
+      ],
+      "visible_publication_or_update_date": "2026-07-06",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+          "note": "Rehydrated state needs trust labeling so persisted context and tool results are not silently treated as authority."
+        },
+        {
+          "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+          "note": "The rule layer should distinguish instructions, facts, metadata, and tool-originated data instead of flattening them into one prompt surface."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+          "note": "Prompt-injection guidance should cover data and metadata injection, not only malicious natural-language instructions."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+          "note": "Supply-chain controls need to treat tool responses, repository metadata, and generated setup paths as untrusted until checked."
+        },
+        {
+          "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+          "note": "Artifact boundaries should prevent local or retrieved data from impersonating higher-priority instructions or authorization metadata."
+        }
+      ]
+    },
+    {
+      "factual_summary": "Microsoft researchers propose Dynamic Security Control Compositor for multi-tool agent chains. The paper argues that individually permitted tools can violate policy when composed and reports policy-pair and policy-triple blocking behavior under clearance and taint modes.",
+      "follow_up_note": "Preserve local DSCC implications under governance controls; route broad MCP background upstream.",
+      "id": "2026-07-03-dscc-multi-tool-agent-chain-policies",
+      "named_entities": [
+        "Dynamic Security Control Compositor",
+        "Model Context Protocol",
+        "Microsoft AI",
+        "Microsoft"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://arxiv.org/html/2607.03423v1",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Microsoft"
+      ],
+      "visible_publication_or_update_date": "2026-07-03",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+          "note": "Local controls should evaluate tool combinations and data-flow composition, not only single-tool allowlists."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+          "note": "Governance infrastructure needs runtime policy composition around the model loop."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+          "note": "Data classification and taint state belong in the harness when tools can combine into exfiltration paths."
+        },
+        {
+          "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+          "note": "Instruction and artifact boundaries should be backed by compositional runtime policy rather than prose alone."
+        }
+      ]
+    },
+    {
+      "factual_summary": "The systematization paper organizes AI coding-agent execution-security work into 17 mechanism categories and verifies four disclosed production-tool CVEs, including two Claude Code issues. It distinguishes execution security from prompt-level safety and frames coding agents as systems that require isolation, access control, provenance, and network controls.",
+      "follow_up_note": "Use as local evidence for execution-security gates; upstream should own product and event background.",
+      "id": "2026-07-07-coding-agent-execution-security-sok",
+      "named_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Cursor",
+        "Model Context Protocol",
+        "NIST National Vulnerability Database",
+        "Pwn2Own Berlin 2026"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://arxiv.org/html/2607.05743v1",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Cursor",
+        "Model Context Protocol"
+      ],
+      "visible_publication_or_update_date": "2026-07-07",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+          "note": "Security repair gates should include execution-layer isolation, access-control, provenance, and TOCTOU checks."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+          "note": "Lifecycle gates need pre-implementation and pre-execution checks, not just post-diff review."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+          "note": "Promotion criteria should include execution-boundary hardening before hosted or data-bearing deployment."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+          "note": "Controls should address filesystem, network, credentials, plugin packaging, and agent-generated-code analysis."
+        }
+      ]
+    },
+    {
+      "factual_summary": "The paper proposes an off-host authorization gateway where per-message signatures, role policy, argument constraints, rate limits, credential brokering, and audit chains decide tool calls before side effects occur. The model and agent host are treated as untrusted emitters.",
+      "follow_up_note": "Ingest local practice implications for delegated authority and off-host enforcement; route standards and protocol background upstream.",
+      "id": "2026-07-06-aiauthz-identity-bound-agent-authorization",
+      "named_entities": [
+        "aiAuthZ",
+        "AgentDojo",
+        "Open Agent Passport",
+        "Agent Identity Protocol",
+        "Model Context Protocol",
+        "OWASP Top 10 for LLM Applications",
+        "MITRE ATLAS"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://arxiv.org/html/2607.05518v1",
+      "upstream_owned_entities": [
+        "AgentDojo",
+        "Open Agent Passport",
+        "Agent Identity Protocol",
+        "Model Context Protocol",
+        "OWASP",
+        "MITRE ATLAS"
+      ],
+      "visible_publication_or_update_date": "2026-07-06",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+          "note": "Agent identity should bind actions to the verified user or system principal rather than trusting text inside the context window."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+          "note": "Policy enforcement can be moved off-host so a manipulated agent cannot rewrite its own controls."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+          "note": "Prompt injection remains possible, but the blast radius is bounded by external authorization checks."
+        },
+        {
+          "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+          "note": "Rehydrated state should carry principal and authorization provenance instead of relying on conversational continuity."
+        }
+      ]
+    },
+    {
+      "factual_summary": "LangChain describes running Deep Agents Code through NVIDIA NemoClaw and OpenShell with deny-by-default networking, human approval for sensitive operations, controlled infrastructure, and audit logs for work on sensitive code.",
+      "follow_up_note": "Keep local practice implications around governed runtime setup; route product details upstream.",
+      "id": "2026-07-08-langchain-nemoclaw-governed-coding-agent-blueprint",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents Code",
+        "NVIDIA NemoClaw",
+        "NVIDIA Nemotron 3 Ultra",
+        "OpenShell"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+      "upstream_owned_entities": [
+        "LangChain",
+        "NVIDIA NemoClaw",
+        "NVIDIA Nemotron 3 Ultra",
+        "OpenShell"
+      ],
+      "visible_publication_or_update_date": "2026-07-08",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+          "note": "Promotion gates can require sandbox, approval, network, and audit controls before agents work on production or sensitive systems."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+          "note": "Sensitive-code handling should include data residency, credential separation, and deny-by-default network egress."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+          "note": "Governance can be packaged as infrastructure around a coding-agent harness."
+        },
+        {
+          "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+          "note": "Request packages for sensitive-code work should include approved runtime, network, credential, and audit constraints."
+        }
+      ]
+    },
+    {
+      "factual_summary": "TechRadar reports on Mozilla 0DIN research showing a clean-looking repository path that led Claude Code to execute a hidden reverse shell through routine setup instructions and a DNS TXT record. Standard static and network tools saw ordinary-looking steps.",
+      "follow_up_note": "Use as local evidence for runtime safeguards and untrusted-repository handling; upstream owns the broad Claude Code incident page if retained.",
+      "id": "2026-07-04-techradar-claude-code-clean-repo-reverse-shell",
+      "named_entities": [
+        "Claude Code",
+        "Mozilla 0DIN",
+        "DNS TXT records",
+        "Axiom"
+      ],
+      "qualifies_for_window": true,
+      "source_url": "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Mozilla 0DIN",
+        "Axiom"
+      ],
+      "visible_publication_or_update_date": "2026-07-04",
+      "why_it_matters_for_leaves": [
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+          "note": "Untrusted repositories can carry active risk even when committed files look benign."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+          "note": "Supply-chain review needs runtime command inspection and egress control, not only repository scanning."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+          "note": "Security workflows should treat setup commands and agent-selected fixes as privileged execution requiring approval."
+        },
+        {
+          "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+          "note": "Review gates should happen before cloned project setup or automated troubleshooting crosses a machine boundary."
+        }
+      ]
+    }
+  ],
+  "run_timestamp": "2026-07-08T21:00:52-04:00",
+  "run_timestamp_utc": "2026-07-09T01:00:52Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/html/2607.05120v1",
+    "https://arxiv.org/html/2607.03423v1",
+    "https://arxiv.org/html/2607.05743v1",
+    "https://arxiv.org/html/2607.05518v1",
+    "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+    "https://www.techradar.com/pro/security/agentic-coding-tools-have-access-to-everything-they-need-for-this-security-experts-warn-claude-code-can-be-exploited-simply-by-trying-to-be-helpful",
+    "https://arxiv.org/html/2607.01640v1",
+    "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+    "https://arxiv.org/html/2607.00038v1",
+    "https://0din.ai/blog/clone-this-repo-and-i-own-your-machine",
+    "https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation",
+    "https://www.taskade.com/blog/context-engineering",
+    "https://cognition.com/blog/devin-fusion"
+  ],
+  "upstream_owned_entities": [
+    "Agent Identity Protocol",
+    "AgentDojo",
+    "Antigravity",
+    "Axiom",
+    "Claude Code",
+    "Cursor",
+    "Gemini CLI",
+    "LangChain",
+    "MITRE ATLAS",
+    "Microsoft",
+    "Model Context Protocol",
+    "Mozilla 0DIN",
+    "NVIDIA NemoClaw",
+    "NVIDIA Nemotron 3 Ultra",
+    "Nanobrowser",
+    "OWASP",
+    "Open Agent Passport",
+    "OpenAI Codex",
+    "OpenShell"
+  ]
+}
