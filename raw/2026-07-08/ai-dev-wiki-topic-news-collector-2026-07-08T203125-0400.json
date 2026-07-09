@@ -1,0 +1,493 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-08T20:31:25-0400",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start_inclusive": "2026-07-06T20:31:25-0400",
+    "end_inclusive": "2026-07-08T20:31:25-0400",
+    "date_policy": "Included only public sources with visible publication or update dates inside the two-day run window. Excluded missing, ambiguous, future-dated, older, and boundary-only candidates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, source handling, implementation, and adoption lens.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ]
+  },
+  "qualifying_updates": [
+    {
+      "id": "2026-07-08-github-copilot-otel-managed-export",
+      "source_url": "https://github.blog/changelog/2026-07-08-enterprise-managed-opentelemetry-export-for-vs-code-and-cli/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub announced enterprise-managed OpenTelemetry export for Copilot Chat in VS Code and the agent host process used by Copilot CLI. Administrators can set OTLP endpoint, transport, service metadata, headers, and whether prompt, response, and tool content are captured.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent rollouts increasingly need centrally managed observability. This update is relevant to audit-log design, tool-call trace retention, prompt-content capture policy, and separating telemetry secrets from subprocess environments.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "OpenTelemetry",
+        "OTLP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Broad product coverage belongs in the upstream AI wiki; local use is the telemetry-governance practice implication."
+        },
+        {
+          "entity": "OpenTelemetry",
+          "reason": "Broad technology background belongs upstream or external docs; local use is agent observability and audit practice."
+        }
+      ],
+      "follow_up_notes": [
+        "Consider routing to governance controls for agents and user-visible runtime telemetry during ingest.",
+        "Check whether existing audit-log pages distinguish prompt-content capture from metadata-only telemetry."
+      ]
+    },
+    {
+      "id": "2026-07-08-github-managed-copilot-settings-mdm",
+      "source_url": "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "GitHub announced generally available device-level managed settings for Copilot in VS Code and Copilot CLI through native MDM, file-based configuration, and server-managed settings. Supported settings include bypass-permission disabling, model, enabled plugins, known marketplaces, strict marketplace controls, and telemetry settings.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice-level signal that coding-agent governance is moving from per-user editor preferences to endpoint-managed policy. It affects permission mode baselines, allowed plugin catalogs, MCP or marketplace governance, and spend or telemetry consistency.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "Microsoft Intune",
+        "Jamf",
+        "Group Policy",
+        "Chef",
+        "Puppet",
+        "Ansible"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Upstream-owned product; downstream note should focus on managed policy deployment."
+        },
+        {
+          "entity": "Ansible",
+          "reason": "General developer or operations tool; keep only as delivery-channel evidence if needed."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: human-agent approval boundaries or governance controls for agents.",
+        "Capture precedence order for policy channels only if it becomes a local operating rule."
+      ]
+    },
+    {
+      "id": "2026-07-08-github-copilot-vscode-june-agent-workflow",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "GitHub summarized VS Code Copilot releases covering v1.123 through v1.127, including agentic browser tools, web page screenshot context, remote browsing, parallel sessions and chats, clearer cost visibility, Marketplace model discovery, and Autopilot behavior changes.",
+      "why_it_matters_for_ai_assisted_development_practice": "The release reinforces that agent workflows need explicit context channels, browser validation permissions, parallel-session coordination, and cost visibility instead of treating chat as a single linear editor interaction.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot Chat",
+        "Autopilot"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Upstream-owned product; local note should cover workflow patterns and context/validation practice."
+        },
+        {
+          "entity": "VS Code",
+          "reason": "General developer tool; local note should avoid product encyclopedia coverage."
+        }
+      ],
+      "follow_up_notes": [
+        "During ingest, compare with existing pages on agent harness components and user-visible progress telemetry.",
+        "Separate browser validation practice from broad VS Code product coverage."
+      ]
+    },
+    {
+      "id": "2026-07-08-github-mobile-cli-live-notifications",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-mobile-live-notifications-for-copilot-cli-sessions/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub Mobile live notifications now cover remote Copilot CLI sessions. Notifications can expose states including in progress, waiting for user input, idle, and finished, and can link to session logs.",
+      "why_it_matters_for_ai_assisted_development_practice": "Long-running coding-agent sessions need user-visible state, interruption points, and handoff paths. The states named here map cleanly to progress telemetry and human-in-the-loop workflow design.",
+      "named_entities": [
+        "GitHub Mobile",
+        "Copilot CLI",
+        "iOS",
+        "Android"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Mobile",
+          "reason": "Product surface belongs upstream; local practice is remote-session progress and approval handoff."
+        },
+        {
+          "entity": "Copilot CLI",
+          "reason": "Product surface belongs upstream; local practice is session state design."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: user-visible progress and runtime telemetry.",
+        "Use states as examples only, not as a local product feature catalog."
+      ]
+    },
+    {
+      "id": "2026-07-08-github-mobile-merge-conflict-agent",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-mobile-fix-merge-conflicts-with-copilot-cloud-agent/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub Mobile can start Copilot cloud agent from a pull request merge-conflict prompt. The same mobile flow can also ask the agent to fix failing GitHub Actions workflows, address review comments, add tests, or make follow-up code changes.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete example of agent delegation being embedded into PR repair loops. Local practice should emphasize reviewable diffs, CI verification, regression tests, and clear success or failure feedback before merge.",
+      "named_entities": [
+        "GitHub Mobile",
+        "Copilot cloud agent",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Copilot cloud agent",
+          "reason": "Product entity belongs upstream; local use is PR repair and verification-loop practice."
+        },
+        {
+          "entity": "GitHub Actions",
+          "reason": "General developer platform; local note should focus on failure-repair workflow."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: AI-assisted TDD, orient-inspect-patch-verify loop, or verification loops and evals.",
+        "Avoid treating mobile access itself as durable local knowledge unless it changes approval boundaries."
+      ]
+    },
+    {
+      "id": "2026-07-07-github-copilot-usage-review-cycle-metrics",
+      "source_url": "https://github.blog/changelog/2026-07-07-add-review-cycles-and-time-to-adoption-phases-in-the-usage-api/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "GitHub added code-review velocity metrics to Copilot usage reports by AI adoption phase. The metrics include median minutes from pull request creation to first review and median review submissions before merge, scoped to merged pull requests.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption measurement is shifting toward downstream engineering-process outcomes, not just token or suggestion usage. Local practice can use review latency and cycle counts as operational indicators for AI-assisted code review and team enablement.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot usage metrics API",
+        "AI adoption phase cohorts"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Upstream-owned product; local implication is metrics design for adoption and review throughput."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: agent cost telemetry or intelligent code review.",
+        "Note that unmerged reviewed PRs are excluded from these metrics if turning this into local guidance."
+      ]
+    },
+    {
+      "id": "2026-07-07-github-jetbrains-agent-customizations-approvals",
+      "source_url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "GitHub announced JetBrains IDE agent enhancements including Codex as an agent provider preview, hooks in agent customizations, MCP server management for Copilot CLI sessions, workspace-level MCP servers through .github/mcp.json, generated customization files, approval settings for Copilot CLI sessions, permission modes, and debug logs for Claude agent sessions.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update concentrates several durable practice themes: separating instructions, prompts, skills, agents, and hooks; treating MCP server configuration as governed workspace state; making approval modes explicit; and preserving debug logs for agent runs.",
+      "named_entities": [
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "Codex",
+        "Copilot CLI",
+        "Claude agent",
+        "MCP",
+        ".github/mcp.json"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Upstream-owned product; downstream should keep only customizations, approvals, MCP governance, and debug-log practice."
+        },
+        {
+          "entity": "Codex",
+          "reason": "Upstream-owned product or agent entity; local use is provider-selection and approval-mode practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol background belongs upstream; local use is governed workspace configuration."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destinations: durable instructions and skill files, tool-call and MCP governance, human-agent approval boundaries.",
+        "If ingested, avoid broad coverage of JetBrains, Codex, Claude, or MCP."
+      ]
+    },
+    {
+      "id": "2026-07-07-github-review-dismissal-rulesets",
+      "source_url": "https://github.blog/changelog/2026-07-07-restrict-who-can-dismiss-reviews-in-rulesets/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub repository rulesets can now restrict which users, teams, and apps can dismiss pull request reviews. The control is available in the Require a pull request before merging rule and can be configured through UI, REST API, or GraphQL.",
+      "why_it_matters_for_ai_assisted_development_practice": "As AI agents create or repair pull requests, review dismissal becomes part of delegated authority. Local guidance should distinguish who can request agent changes from who can clear human or automated review gates.",
+      "named_entities": [
+        "GitHub rulesets",
+        "REST API",
+        "GraphQL"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub rulesets",
+          "reason": "Developer platform feature belongs upstream or platform docs; local note is delegated review authority."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: lifecycle AI review gates or intelligent code review.",
+        "Tie to approval-boundary practice instead of generic branch-protection documentation."
+      ]
+    },
+    {
+      "id": "2026-07-07-github-cost-center-user-budgets",
+      "source_url": "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub Enterprise Cloud admins can create cost-center user-level budgets in the billing UI. Budgets can apply to enterprise teams or individual users and stay synchronized as membership changes.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted development adoption increasingly needs per-user and per-team spend boundaries that map to organizational ownership, not just a global token budget. This supports cost telemetry and rollout governance patterns.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "GitHub Copilot",
+        "cost centers"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Upstream-owned product; local use is cost-center budget practice."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: agent cost telemetry.",
+        "Avoid duplicating billing product coverage; capture the operating model implication."
+      ]
+    },
+    {
+      "id": "2026-07-08-langchain-governed-sensitive-code-agent",
+      "source_url": "https://www.langchain.com/blog/deep-agents-code-on-nemoclaw-a-governed-blueprint-for-your-most-sensitive-code",
+      "source_name": "LangChain Blog",
+      "visible_date": "July 8, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "LangChain described running Deep Agents Code as a governed blueprint on NVIDIA NemoClaw with an open model and open harness, deny-by-default networking, human approval for sensitive operations, sandboxed execution, credential separation, and per-session audit logs.",
+      "why_it_matters_for_ai_assisted_development_practice": "The post is relevant as a public practice pattern for sensitive-code agent deployment: isolate execution, minimize network egress, keep credentials outside the agent sandbox, require approvals for sensitive actions, and preserve per-session audit evidence.",
+      "named_entities": [
+        "LangChain",
+        "Deep Agents Code",
+        "NVIDIA NemoClaw",
+        "Nemotron 3 Ultra",
+        "OpenShell"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "LangChain",
+          "reason": "Framework/company ecosystem coverage belongs upstream; downstream note should focus on governed sensitive-code harness practice."
+        },
+        {
+          "entity": "NVIDIA NemoClaw",
+          "reason": "Product or platform entity belongs upstream; downstream note should focus on sandboxing and approvals."
+        },
+        {
+          "entity": "Nemotron 3 Ultra",
+          "reason": "Model entity belongs upstream; downstream note should not duplicate model coverage."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: sensitive data and supply chain controls or agent harness components.",
+        "Preserve as a pattern example, not as broad coverage of LangChain, NVIDIA, or the model."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work/",
+      "source_name": "OpenAI",
+      "visible_date": "Two weeks ago in search result",
+      "reason": "Outside the two-day window and mostly broad adoption/product coverage owned upstream."
+    },
+    {
+      "source_url": "https://www.infoq.com/news/2026/06/ai-prd-code-review-governance/",
+      "source_name": "InfoQ",
+      "visible_date": "Two weeks ago in search result",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "source_url": "https://www.mintmcp.com/blog/build-audit-trails-ai-coding-agents",
+      "source_name": "MintMCP",
+      "visible_date": "Two months ago in search result",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "source_url": "https://form.io/mcp-server-list-regulated-enterprise-developers/",
+      "source_name": "Form.io",
+      "visible_date": "June 8, 2026 in search result",
+      "reason": "Outside the two-day cutoff window; MCP server catalog background is upstream-owned."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-07-kimi-k2-7-now-available-for-copilot-business-and-enterprise/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "reason": "Within date window but primarily a model/product availability update. Routed as upstream-owned model and product coverage; local practice implication overlaps with existing admin enablement and model governance notes."
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_name": "OpenAI Help Center",
+      "visible_date": "July 8, 2026 in page section/search result",
+      "reason": "Within date window but primarily model/product release coverage for GPT-5-Codex. Upstream AI wiki owns model/product coverage; no separate local practice detail beyond existing coding-agent model selection."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-07-github-copilot-app-available-to-all/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "reason": "Within date window but mostly product distribution availability. Local adoption implication is already covered better by governed settings, budgets, and telemetry sources."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-07-copilot-billing-preview-app-will-be-retired-on-august-3/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "reason": "Within date window but covered as a billing product transition. The stronger local practice signal is the separate per-user cost-center budgets source."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-07-secret-scanning-extended-metadata-and-multipart-validation/",
+      "source_name": "GitHub Changelog",
+      "visible_date": "July 7, 2026",
+      "reason": "Within date window but mostly general application-security platform coverage. Keep as possible upstream or security-wiki candidate unless tied to AI-generated-code remediation gates."
+    },
+    {
+      "source_url": "https://futurumgroup.com/insights/does-qodos-codebase-wide-enforcement-redefine-what-ai-code-review-means/",
+      "source_name": "Futurum Group",
+      "visible_date": "Publication Date: July 7, 2026",
+      "reason": "Within date window and practice-adjacent, but it is analyst commentary around product positioning. Excluded in favor of primary vendor/platform sources for this collector run."
+    },
+    {
+      "source_url": "https://dextralabs.com/blog/build-vs-buy-ai-code-review/",
+      "source_name": "Dextra Labs",
+      "visible_date": "Published July 7, 2026; last updated July 8, 2026",
+      "reason": "Within date window and practice-adjacent, but commercial advisory content with broad build-versus-buy framing. Excluded to keep the collector focused on primary public updates."
+    },
+    {
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "source_name": "CodeRabbit",
+      "visible_date": "July 7, 2026 in social/search snippet",
+      "reason": "Search result indicated a dated change, but the accessible candidate was a social post snippet rather than the authoritative changelog content. Excluded as insufficiently verified."
+    }
+  ],
+  "source_search_notes": [
+    "Public web sources only.",
+    "No private repository content, PII, proprietary content, or company-internal local content was sent to external services.",
+    "Search emphasized official changelogs and primary vendor blogs, then filtered broad upstream-owned entity updates out of local findings."
+  ],
+  "follow_up_notes": [
+    "Ingest should preserve the raw-only boundary by processing this artifact into durable local practice pages only in a separate ingest run.",
+    "Likely local destinations include governance controls for agents, human-agent approval boundaries, tool-call and MCP governance, user-visible progress and runtime telemetry, agent cost telemetry, AI-assisted TDD, and verification loops and evals.",
+    "When ingesting, link upstream-owned entity background to /Users/martinbechard/dev/ai-wiki/docs/wiki instead of creating local company, product, framework, model, MCP server, or developer-tool encyclopedia leaves."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for the artifact"
+  },
+  "blockers": []
+}
