@@ -17,6 +17,8 @@ The organization-level agreement aligns on outcomes, accountability, source hand
 
 Broad vendor and product comparisons belong to the upstream AI wiki. This page owns the downstream operating model for applying those tools.
 
+The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds outcome-based agent adoption and skills progression signals. Operating agreements should distinguish seat-based rollout from outcome-owned agent workflows, and should name the training sequence, guardrails, and review evidence required before teams expand autonomy.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -33,6 +35,7 @@ Broad vendor and product comparisons belong to the upstream AI wiki. This page o
 - Put reusable practice detail in the durable leaves.
 - Keep ecosystem product comparisons upstream unless they directly change the local operating rule.
 - Record missing local rollout stages as Not yet identified instead of inventing a maturity model.
+- Tie autonomy expansion to outcome ownership, developer training sequence, guardrails, and review evidence rather than license availability.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ Broad vendor and product comparisons belong to the upstream AI wiki. This page o
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [Process autonomy source](../../../raw/processed/Allen Holub - On process.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -68,3 +72,4 @@ Broad vendor and product comparisons belong to the upstream AI wiki. This page o
 
 - Created on 2026-06-23 from local source guidance on scaling practice, skill files, workflow choice, tiers, and human acceptance.
 - Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.
+- Maintained on 2026-07-09 with outcome-owned agent workflows, staged developer training, guardrails, and autonomy-expansion evidence.

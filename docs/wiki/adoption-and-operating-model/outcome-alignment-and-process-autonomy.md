@@ -17,6 +17,8 @@ This page owns the operating-model rule. Platform, permissions, and audit enforc
 
 The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json) and [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) add an agent-adoption boundary: local workflow redesign, accessible knowledge sources, tool connectivity, deterministic coverage, and typed intermediate results are process responsibilities. Shared outcomes should define the proof and review evidence, while teams can choose whether to achieve them through direct work, scripted dispatch, or subagent fan-out.
 
+The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds an outcome-economics signal. Agentic workflows should be justified by accepted outcomes and cross-domain value rather than seat utilization, while process autonomy still depends on shared guardrails, policy enforcement, and evidence for the result.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -25,6 +27,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - Treat platform guardrails as enabling infrastructure, not a mandate to make every team follow the same process steps.
 - Redesign fragmented knowledge and inaccessible systems into context sources, tools, or documented workflows before expecting agents to improve outcomes.
 - Require deterministic coverage evidence and typed intermediate results when teams use subagent fan-out for broad delegated work.
+- Fund and prune agent workflows by accepted outcomes, cross-system value, and review evidence rather than license utilization alone.
+- Let teams vary process only when guardrails, policy enforcement, and outcome evidence remain comparable.
 
 ## Authoritative Sources
 
@@ -33,6 +37,7 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -61,3 +66,4 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 - Created on 2026-06-23 from source-backed process autonomy, outcome alignment, and platform guardrail guidance.
 - Maintained on 2026-07-05 with workflow-redesign, accessible-context, deterministic subagent coverage, and typed-intermediate-result signals.
+- Maintained on 2026-07-09 with outcome-based agent workflow funding, pruning, and guardrail-comparable process autonomy.

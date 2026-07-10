@@ -37,6 +37,8 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds review-cycle and policy-managed usage signals. Adoption measurement should pair spend and usage with engineering-process outcomes such as time to first review and review submissions before merge, while cost-center budgets should follow teams or users closely enough that budget drift remains visible during rollout.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds provider-priced model access and multi-agent platform analytics. Cost telemetry should record which admin-enabled model route ran, whether the task used a cloud agent, CLI, IDE, or modernization workflow package, and how built-in cost and usage analytics map to accepted outcomes.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -65,6 +67,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Prefer durable billing and usage APIs for recurring cost evidence instead of relying on preview reporting surfaces.
 - Pair coding-agent spend with review-cycle, merge, and accepted-outcome evidence before treating usage growth as adoption success.
 - Keep cost-center and per-user budget membership synchronized with the teams or owners responsible for the agent workflow.
+- Record admin-enabled model routes and provider-priced usage when task-to-model routing changes cost or review evidence.
+- Map multi-agent platform cost and use analytics to workflow packages, roles, and accepted modernization or repair outcomes.
 
 ## Authoritative Sources
 
@@ -86,6 +90,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -123,3 +128,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Maintained on 2026-07-06 with trace-linked cost caps, sandbox-trial costs, model-routing costs, and subagent delegation cost evidence.
 - Maintained on 2026-07-07 with desktop-agent onboarding budgets, per-user cost centers, usage-reporting APIs, and budget drift as workflow guardrails.
 - Maintained on 2026-07-08 with review-cycle outcome metrics and synchronized cost-center budget membership.
+- Maintained on 2026-07-09 with admin-enabled model-route cost attribution and multi-agent platform cost analytics.

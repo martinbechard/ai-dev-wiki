@@ -35,6 +35,8 @@ The [Chat SDK clipping](../../../raw/processed/Universal chat layer for building
 
 The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) also reinforces harness instrumentation as an operating control. Cost, sandbox trials, scripted verifiers, traces, datasets, ownership metadata, gateway policies, and hub-and-spoke tool access are component responsibilities when agents run recurring workflows rather than one-off prompts.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds shared operation-path and managed-runtime signals. A harness that exposes the same operation through desktop UI and MCP should keep one tested backend command path, and a managed code-execution platform needs runtime isolation, blast-radius controls, audit logs, egress policy, and permission granularity as explicit components.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -61,6 +63,8 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - Treat scan discovery, AI investigation, resumable processing, revalidation, finding export, and isolated workers as harness responsibilities for agent-powered security review.
 - Keep simulated shell substrates separate from host execution evidence when they are used for agent tests, examples, or comparison runs.
 - Make sandbox trials, scripted verifiers, trace records, datasets, cost telemetry, and gateway policy evidence part of the harness boundary for recurring agent workflows.
+- Use one tested backend operation path when human UI controls and MCP tools perform the same action.
+- Treat runtime isolation, egress policy, blast-radius controls, audit logs, and permission granularity as harness components for code-enabled managed agent platforms.
 
 ## Authoritative Sources
 
@@ -84,6 +88,7 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - [application harness patterns](application-harness-patterns.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -120,3 +125,4 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 - Maintained on 2026-07-04 with agent-platform layering, control-plane ownership, and cross-layer trace evidence.
 - Maintained on 2026-07-05 with desktop file-agent permission, folder, edit-preview, and audit-boundary signals.
 - Maintained on 2026-07-06 with chat-agent adapter, security-scanning harness, virtual shell, and recurring workflow instrumentation components.
+- Maintained on 2026-07-09 with shared UI-and-MCP operation paths and code-enabled managed-runtime isolation controls.

@@ -31,6 +31,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The July 7 raw sources add authorship, policy, and localization signals. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) records agent-authored commit visibility and contribution-policy pressure; locally, reviews should preserve agent authorship, violation attribution, and human repair accountability. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds security-eval evidence that vulnerability classification is weaker without compilable context, contamination controls, and line-level localization checks.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds organization-level review targeting and hostile-repository review risk. Review controls should be scoped by repository risk and owner policy, and autonomous review of untrusted third-party code should run in disposable workspaces with constrained commands, deterministic scanners, and explicit human approval before shell execution or dependency setup.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -59,6 +61,8 @@ The July 7 raw sources add authorship, policy, and localization signals. The [le
 - Preserve agent-authorship and violation-attribution metadata so reviewers can distinguish agent-introduced risk from ordinary human edits.
 - Require the submitter to understand, repair, and explain generated code before treating it as review-ready.
 - Separate security classification from localization, proof quality, compilation context, and contamination-aware evaluation.
+- Scope automated review enablement by repository risk, owner policy, and exception management rather than enabling every repository uniformly.
+- Run autonomous review of untrusted third-party repositories inside disposable workspaces with constrained execution and human-approved setup steps.
 
 ## Authoritative Sources
 
@@ -79,6 +83,7 @@ The July 7 raw sources add authorship, policy, and localization signals. The [le
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -115,3 +120,4 @@ The July 7 raw sources add authorship, policy, and localization signals. The [le
 - Maintained on 2026-07-05 with deployment-model, source-exposure, audit, repository-context, actionability, customization, and latency selection criteria.
 - Maintained on 2026-07-06 with compliance checks, runtime evidence, software-quality dimensions, and reviewer-load controls.
 - Maintained on 2026-07-07 with agent-authorship metadata, violation attribution, contribution-policy accountability, and security-localization eval controls.
+- Maintained on 2026-07-09 with organization-scoped review targeting and untrusted-repository autonomous review boundaries.

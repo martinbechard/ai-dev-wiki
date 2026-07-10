@@ -27,6 +27,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) and [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) reinforce dependency-aware review evidence. Recall-first review and security remediation workflows need enough repository, dependency graph, scanner, test, and runtime evidence to support cross-file findings without turning every review into an unauditable repository dump.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds repository-overview generation as an onboarding retrieval pattern. A generated overview can accelerate orientation, but it should be verified against README files, repository instructions, tests, dependency manifests, and recent source paths before it becomes project knowledge or a generated README.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -45,6 +47,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Measure retrieval value against review quality, latency, cost, maintenance load, and whether the evidence could have been recovered from ordinary repository tools.
 - Include dependency graph, scanner output, test, and runtime evidence when review findings depend on cross-file or security-remediation risk.
 - Keep recall-first and scan-to-merge retrieval paths auditable so broad detection does not hide unsupported source assumptions.
+- Verify generated repository overviews against authoritative repository files before using them for onboarding, documentation, or review scope.
+- Treat generated README proposals as drafts that need source-path, test, dependency, and contribution-guidance checks.
 
 ## Authoritative Sources
 
@@ -60,6 +64,7 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -92,3 +97,4 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 - Maintained on 2026-07-01 with search-backed corpus narrowing, metadata filters, targeted reads, and reviewable reduced-context evidence.
 - Maintained on 2026-07-03 with code-review memory boundaries and retrieval economics for prior review decisions.
 - Maintained on 2026-07-04 with dependency-aware review retrieval and scan-to-merge evidence paths.
+- Maintained on 2026-07-09 with repository-overview verification and generated README source checks.

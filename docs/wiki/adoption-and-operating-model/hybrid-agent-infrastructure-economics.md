@@ -19,6 +19,8 @@ Broad coverage of GitHub Copilot, Gemini, Claude, Gemma, Qwen, GLM, GCP, Apple S
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds a multi-agent telemetry signal. Cost governance needs normalized traces across model calls, shell commands, MCP activity, tool calls, errors, timing, and subagent invocations so mixed local and cloud coding-agent stacks can be compared by workflow outcome instead of by vendor bill alone.
 
+The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds outcome-based SaaS and guardrail-infrastructure signals. Agent workflows that bypass interface-heavy products should be funded and pruned by outcome, cross-system value, and governance burden, while guardrails and policy enforcement become part of the infrastructure cost rather than optional overhead.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -29,6 +31,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Route premium models to work that benefits from deeper reasoning or review, and route routine completions, minor edits, and repetitive automation to cheaper paths when quality evidence supports the split.
 - Normalize cost telemetry across model calls, shell commands, MCP activity, tool calls, subagents, errors, and timing before comparing mixed agent stacks.
 - Compare cost to workflow outcome and review burden, not only to provider invoices or seat counts.
+- Compare seat-based tools against outcome-owned agent workflows by cross-system value, governance burden, and retirement criteria.
+- Include guardrails, policy enforcement, session forensics, and owner review time in the infrastructure cost of autonomous agent workflows.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -40,6 +44,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [local model runtime harness](../application-patterns/local-model-runtime-harness.md)
 - [federation.md](../federation.md)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -67,3 +72,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 - Created on 2026-06-27 from the Affordable AI Agents source as the local operating-model lens for managed, subscription, self-hosted, and local execution economics.
 - Maintained on 2026-07-05 with normalized multi-agent cost traces across models, tools, shell commands, MCP, subagents, errors, and timing.
+- Maintained on 2026-07-09 with outcome-owned SaaS economics, guardrail infrastructure, policy-enforcement cost, and pruning criteria.

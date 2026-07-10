@@ -17,6 +17,8 @@ The [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds governance-role evidence. Recurring agents should also record risk classification, deployer or owner obligations, gateway policy, logging and monitoring expectations, and human oversight evidence so the roster can support accountability rather than only inventory.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add session grouping, guardrail, and runtime-enforcement signals. Owner cards should capture session or work-package naming conventions, guardrail ownership, runtime policy owner, and forensic evidence location when an agent runs as a recurring IDE, CLI, or modernization workflow.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -29,12 +31,15 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Treat shared ownership as a risk until one person is accountable for review, boundary updates, and decommissioning decisions.
 - Add risk classification, gateway policy, logging, monitoring, and oversight evidence when an agent becomes part of a recurring team workflow.
 - Record deployer or owner obligations clearly enough that compliance and operational reviews know who maintains the agent boundary.
+- Record session or work-package naming, guardrail owner, runtime policy owner, and forensic evidence location for recurring IDE, CLI, or modernization agents.
 
 ## Authoritative Sources
 
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
 - [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -65,3 +70,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Created on 2026-06-23 to hold agent roster and owner-card practice.
 - Maintained on 2026-06-27 with single-responsible-owner and ownership-card fields from public practice updates.
 - Maintained on 2026-07-05 with risk classification, gateway policy, logging, monitoring, oversight evidence, and deployer-obligation fields.
+- Maintained on 2026-07-09 with session grouping, guardrail ownership, runtime policy ownership, and forensic evidence location fields.

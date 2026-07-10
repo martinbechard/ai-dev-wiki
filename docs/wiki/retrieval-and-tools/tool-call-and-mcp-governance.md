@@ -37,6 +37,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds governed workspace configuration signals for agent tools. Managed editor and CLI settings, workspace-level MCP server configuration, strict marketplace controls, permission modes, hooks, generated customization files, and debug logs should be reviewed as one tool-control surface rather than scattered personal preferences.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add shared-operation and session-forensics signals. Tools exposed through GUI commands and MCP should share the same tested operation path where possible, and coding-agent governance should record prompts, commands, MCP server activity, tool usage, skills, rules, and approval settings when those surfaces can affect code or external systems.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -68,6 +70,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Label simulated shell environments clearly and require real host verification before treating shell-like evidence as repository proof.
 - Govern workspace MCP configuration, approved marketplaces, hooks, permission modes, generated customization files, and debug logs as auditable tool-surface changes.
 - Require re-approval when an IDE or CLI exposes the same integration through a new managed setting, workspace file, or marketplace channel.
+- Prefer one tested operation path for human UI commands and agent tool calls when both control the same system.
+- Record prompts, commands, MCP activity, tool usage, skills, rules, and approval-setting changes as tool-surface evidence for high-impact coding-agent sessions.
 
 ## Authoritative Sources
 
@@ -92,6 +96,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -132,3 +138,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Maintained on 2026-07-04 with trusted MCP catalogs, tool-description change control, routing evidence, and governed semantic data access.
 - Maintained on 2026-07-06 with tool and skill telemetry plus simulated shell evidence boundaries.
 - Maintained on 2026-07-08 with managed workspace MCP configuration, marketplace, hook, permission-mode, and debug-log governance.
+- Maintained on 2026-07-09 with shared GUI-and-agent operation paths, session forensics, and generated customization evidence.

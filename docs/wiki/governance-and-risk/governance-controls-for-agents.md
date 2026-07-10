@@ -31,6 +31,8 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds managed policy, telemetry, review-dismissal, and sensitive-code harness signals. Locally, coding-agent controls should distinguish prompt or tool-content capture from metadata telemetry, push editor and CLI policy through managed device or server settings where available, and treat review-dismissal authority as separate from the ability to request an agent repair.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add runtime-enforcement, shared-agent-runtime, and untrusted-repository signals. Locally, coding-agent governance should treat admin-enabled model access, code-enabled managed runtimes, IDE session forensics, shadow-AI inventory, and untrusted dependency review as control-plane decisions with disposable execution boundaries and auditable policy evidence.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -64,6 +66,8 @@ The detailed control leaves are:
 - Separate who may delegate a repair to an agent from who may dismiss human or automated review gates.
 - Decide whether prompt, response, and tool content can enter telemetry streams before enabling centralized traces.
 - Treat governed sensitive-code execution as a control bundle: deny-by-default networking, credential separation, sandboxing, human approvals, and per-session audit logs.
+- Treat model enablement, session forensics, code-enabled managed runtimes, and shadow-AI discovery as governed rollout controls when agents can change code or execute code.
+- Require disposable workspaces, constrained commands, and deterministic scanner evidence before autonomous agents inspect untrusted repositories or third-party dependencies.
 
 ## Authoritative Sources
 
@@ -84,6 +88,8 @@ The detailed control leaves are:
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -123,3 +129,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-05 with data-residency, source-code exposure, auditability, air-gapped review, and compliance-as-code pull-request gates.
 - Maintained on 2026-07-07 with desktop-agent access, BYOK policy, cost-center membership, and durable usage-reporting controls.
 - Maintained on 2026-07-08 with managed editor and CLI policy, centralized telemetry capture boundaries, review-dismissal authority separation, and sensitive-code execution controls.
+- Maintained on 2026-07-09 with admin-enabled model access, runtime enforcement, shadow-AI inventory, shared managed runtime, and untrusted repository review controls.

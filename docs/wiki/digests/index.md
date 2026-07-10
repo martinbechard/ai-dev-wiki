@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; the ingest workflow updates digest pages after durable topic leaves are refreshed.
 
-The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, background-agent handoffs, review-capacity controls, review memory, shadow-agent audit evidence, third-party skill intake, runtime telemetry, local execution gates, governed context layers, agent-platform boundaries, recall-first review, scan-to-merge security remediation, trusted MCP catalogs, agentic testing, coordinator-worker state, instruction economy, persistent memory, runtime lifecycle verification, chat-agent state, security harness intake, simulated shell boundaries, procurement governance, and trace-linked cost controls.
+The active July 2026 digest records raw-source synthesis for MCP metadata poisoning, approved-action governance, agent cost attribution, IDE-native agent settings, independent code review, supply-chain gates, faceted retrieval controls, enterprise assistant policy, model routing, browser and multimodal tool governance, runtime approval, portable runbooks, source routing, generated MCP tool curation, scoped workflow identity, session audit, harness isolation, deterministic evals, build-aware context, wiki memory, background-agent handoffs, review-capacity controls, review memory, shadow-agent audit evidence, third-party skill intake, runtime telemetry, local execution gates, governed context layers, agent-platform boundaries, recall-first review, scan-to-merge security remediation, trusted MCP catalogs, agentic testing, coordinator-worker state, instruction economy, persistent memory, runtime lifecycle verification, chat-agent state, security harness intake, simulated shell boundaries, procurement governance, trace-linked cost controls, runtime session forensics, untrusted repository review, source-verified repository overviews, staged developer responsibility, and outcome-owned agent workflows.
 
 The active June 2026 digest also records raw-source synthesis for operating models, governance controls, workflow packaging, RAG security boundaries, local model harness practices, and portable skill procedures.
 
@@ -41,6 +41,8 @@ July 6 public artifacts and clippings added local practice coverage for concise 
 July 7 public artifacts added local practice coverage for desktop-agent access and spend governance, tool-use failure diagnostics, step-level evals, sandbox and runtime telemetry, repo-derived subagent roles, concurrent agent PR coordination, generated-code accountability, governed memory controls, and structured-output latency checks.
 
 July 8 public artifacts added local practice coverage for managed coding-agent policy, centralized telemetry export, prompt and tool-content retention decisions, workspace MCP configuration, permission modes, mobile repair handoffs, review-dismissal authority, review-cycle adoption metrics, and governed sensitive-code sandboxes.
+
+July 9 public artifacts added local practice coverage for admin-enabled model routing, runtime session forensics, shadow-AI inventory, untrusted repository prompt-injection controls, source-verified repository overviews, shared GUI-and-agent operation paths, disposable defensive review, staged developer responsibility, and outcome-owned multi-agent workflows.
 
 ## Authoritative Sources
 
@@ -83,6 +85,8 @@ July 8 public artifacts added local practice coverage for managed coding-agent p
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
@@ -134,3 +138,4 @@ July 8 public artifacts added local practice coverage for managed coding-agent p
 - Updated on 2026-07-06 after public raw artifacts and clippings were synthesized into durable instruction, memory, verification, governance, tool, harness, process-state, workspace, workflow-selection, and cost leaves.
 - Updated on 2026-07-07 after public raw artifacts were synthesized into durable governance, evaluation, telemetry, workflow, coding-practice, context-memory, structured-output, and source-routing leaves.
 - Updated on 2026-07-08 after public artifacts were synthesized into durable governance, telemetry, tool, approval, cost, instruction, and PR-repair leaves.
+- Updated on 2026-07-09 after public artifacts were synthesized into durable governance, retrieval, tool, telemetry, review, security-repair, instruction, adoption, economics, and subagent leaves.

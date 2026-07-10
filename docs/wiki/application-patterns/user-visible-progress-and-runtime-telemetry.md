@@ -27,6 +27,8 @@ The July 7 raw sources add session-level telemetry and emerging runtime semantic
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds centrally managed telemetry and remote-session notification signals. Local telemetry design should separate OTLP-style trace routing from product analytics, decide whether prompt, response, and tool content are retained, and expose remote session states such as active work, waiting for user input, idle, finished, and linkable logs when a human may need to resume or intervene.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds session-forensics and multi-agent analytics signals. Agent telemetry should make cost, usage, command execution, tool and MCP activity, session state, modernization workflow package, and runtime policy decisions joinable by run or session so operators can investigate both cost and behavior without reading raw chat history first.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -44,6 +46,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Attach sandbox session IDs, trace identifiers, resource metrics, tool calls, context changes, memory lifecycle events, anomaly signals, and remediation steps when they affect verification or cost control.
 - Separate trace transport settings, service metadata, secrets, and content-capture policy before exporting agent telemetry.
 - Show remote-session states and log handoff links when long-running agents can continue outside the user's active editor session.
+- Join cost, usage, command execution, MCP activity, tool usage, policy decisions, and workflow-package state by run or session when agents operate across IDEs or enterprise modernization workflows.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -92,3 +96,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Maintained on 2026-07-03 with behavior, verification, state-transition, and security-posture telemetry for agentic workflows.
 - Maintained on 2026-07-07 with sandbox session metrics, trace identifiers, context and memory lifecycle telemetry, anomaly signals, and remediation workflows.
 - Maintained on 2026-07-08 with managed telemetry export boundaries and remote coding-agent session states.
+- Maintained on 2026-07-09 with session-forensics, cost-and-use analytics, and run-level policy-decision telemetry.

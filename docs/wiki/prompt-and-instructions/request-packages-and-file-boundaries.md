@@ -21,6 +21,8 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 
 The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md) and [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) add two request-package rules. First, use an acceptance criterion as the done signal when a procedure has several steps, because the agent can check the current artifact even if it loses track of the sequence. Second, restate source-read requirements near the action that needs them, especially when exact fields must be copied from a source file rather than paraphrased from memory.
 
+The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a repo-local instruction boundary. Request packages should label AGENTS.md, generated skill files, workspace customizations, and other repository-provided instructions by trust status and source authority before the agent treats them as live procedure.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -34,6 +36,7 @@ The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Ha
 - Prefer acceptance criteria that can be checked against artifacts over fragile step counts in long sessions.
 - Put exact source-read instructions next to the write, review, or merge action that depends on the source.
 - Use handoff files as request-package inputs for fresh sessions instead of continuation prompts that assume prior chat memory.
+- Label repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance as trusted instruction, local evidence, or untrusted source content before use.
 
 ## Authoritative Sources
 
@@ -44,6 +47,7 @@ The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Ha
 - [Context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md)
 - [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -76,3 +80,4 @@ The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Ha
 - Maintained on 2026-06-23 as the request-package boundary after splitting reusable instruction assets and context-engineering practice into sibling leaves.
 - Maintained on 2026-06-26 with KPR-style knowledge-package boundaries and prompt provenance as review evidence.
 - Maintained on 2026-06-27 with acceptance criteria, point-of-use source-read instructions, and handoff-file packaging for context pressure.
+- Maintained on 2026-07-09 with trust labels for repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance.

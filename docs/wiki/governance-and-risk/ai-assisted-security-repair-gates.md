@@ -21,6 +21,8 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds coding-agent execution-security and untrusted setup evidence. Security repair gates should include filesystem, network, credential, plugin, generated-code, provenance, and time-of-check/time-of-use controls before an agent runs setup commands, applies a fix, or claims a vulnerability is repaired.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds two security-repair pressures: defensive agents can be hijacked by untrusted repository contents, and AI-assisted vulnerability management needs human review, broad validation, deployment monitoring, and rollback. Security repair gates should treat code review of untrusted dependencies and fix deployment safety as one loop from evidence to rollback readiness.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -36,6 +38,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Require triage, optional revalidation, export review, and sandbox boundary evidence before agent-generated security findings drive fixes.
 - Review setup commands, dependency actions, network egress, and generated-code execution as privileged security steps, not routine repair mechanics.
 - Require provenance and TOCTOU checks when an agent reads repository state and then executes a derived repair or setup path.
+- Use disposable, constrained environments for defensive review of untrusted repositories and dependency candidates.
+- Pair AI-generated security fixes with representative validation, human code review, deployment monitoring, and rollback evidence before acceptance.
 
 ## Authoritative Sources
 
@@ -47,6 +51,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -76,3 +81,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-07-04 with scan-to-merge severity, triage, rescan, regression, and human merge-review gates.
 - Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.
 - Maintained on 2026-07-08 with execution-security gates for setup commands, filesystem and network access, provenance, generated code, and TOCTOU risk.
+- Maintained on 2026-07-09 with untrusted-repository defensive review and fix-to-deployment rollback gates.

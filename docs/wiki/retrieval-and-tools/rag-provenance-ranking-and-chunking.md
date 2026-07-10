@@ -23,6 +23,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 
 The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json) adds a governed semantic-layer signal for enterprise data retrieval. When RAG backs analytics or operational agents, provenance must include verified metric definitions, semantic layer ownership, source truth, access boundaries, and execution monitoring so retrieved numbers stay tied to governed business meaning.
 
+The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a training-sequence signal for RAG responsibility. Teams should teach developers to preserve citation paths, ranking rationale, chunk authority, and access boundaries before assigning them autonomous RAG or MCP-enabled agent work.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -39,6 +41,7 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - Pair search-backed token savings with targeted source reads and quality checks so retrieval efficiency does not become unsupported omission.
 - Preserve metric definitions, semantic-layer provenance, source truth, and access boundaries when agents retrieve enterprise data.
 - Monitor data-agent executions so retrieved context can be traced back to governed source semantics.
+- Require developers to explain citation paths, ranking rationale, chunk authority, and access boundaries before they own autonomous RAG-backed agent workflows.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -79,3 +83,4 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 - Maintained on 2026-06-26 with trace-linked retrieval provenance and engineering-memory context.
 - Maintained on 2026-07-01 with search-first retrieval, typed facets, metadata filtering, targeted reads, and quality-preserving token reduction.
 - Maintained on 2026-07-04 with semantic-layer provenance, source truth, and monitored enterprise data retrieval.
+- Maintained on 2026-07-09 with RAG responsibility training for citation paths, ranking rationale, chunk authority, and access boundaries.

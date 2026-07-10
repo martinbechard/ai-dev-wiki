@@ -25,6 +25,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds a repo-derived role-design signal. Process mining over repository event logs can suggest project-specific agent roles, but local workflow design should treat those roles as hypotheses that need scope review, privacy checks, coordination-cost analysis, and validation against human expectations before they become standing subagents.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds enterprise multi-agent and modernization workflow signals. Multi-agent development platforms should define role separation, modernization workflow gates, cost telemetry, and administration boundaries before subagent fan-out becomes a standing operating surface.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -40,6 +42,7 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - Require the coordinator to reconcile coverage, conflicts, failures, and skipped partitions before accepting subagent fan-out.
 - Treat repository-derived agent roles as candidate delegation contracts, not automatic authority to mine or expose private process data.
 - Validate proposed roles against observed workflow evidence, human expectations, coordination overhead, and privacy boundaries.
+- Define modernization-workflow roles, gates, ownership, and cost telemetry before turning multi-agent platform packages into recurring team practice.
 
 ## Authoritative Sources
 
@@ -51,6 +54,7 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -84,3 +88,4 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - Maintained on 2026-07-04 with coordinator-served roles, tool budgets, return shapes, and role-versus-skill boundaries.
 - Maintained on 2026-07-05 with dynamic-dispatch partitioning, typed intermediate results, and coordinator coverage reconciliation.
 - Maintained on 2026-07-07 with repo-derived role hypotheses, process-log privacy boundaries, and validation-before-delegation guidance.
+- Maintained on 2026-07-09 with multi-agent modernization role, gate, cost, and administration boundaries.

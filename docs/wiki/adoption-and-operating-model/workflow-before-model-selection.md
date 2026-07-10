@@ -35,6 +35,8 @@ The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-w
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md) add procurement and channel-workflow inputs. Enterprise coding-agent rollout should first answer identity, audit, retention, residency, deployment, support, and evidence requirements. Chat-agent workflows should also decide which channel events matter, when the bot subscribes to a thread, what state store is required, and which responses can be streamed or posted back before choosing a platform or model route.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds admin-enabled model routing, repository overview generation, and modernization workflow packages. Workflow selection should decide when a source-backed repository orientation is sufficient, when a stronger model route is justified by task risk or context size, and when a specialized multi-agent modernization workflow needs its own gates, roles, and cost evidence.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -57,6 +59,9 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Compare coding-agent tools by editor fit, runtime shape, model-routing controls, multi-agent workspace support, and cost transparency against the intended workflow.
 - Add enterprise identity, audit, retention, residency, deployment, support, and evidence needs to workflow selection before coding-agent procurement expands.
 - Define collaboration-channel triggers, subscriptions, state, tool scope, and response posting rules before selecting a chat-agent toolkit.
+- Verify repository-overview outputs against authoritative files before treating them as project knowledge or onboarding evidence.
+- Route admin-enabled models by task risk, context size, autonomy level, cost envelope, and verification burden rather than developer preference alone.
+- Treat specialized multi-agent modernization packages as workflow definitions with explicit roles, gates, evidence, and cost telemetry.
 
 ## Authoritative Sources
 
@@ -76,6 +81,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 
 ## Related Code
 
@@ -115,3 +121,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Maintained on 2026-07-01 with auto model routing, prompt-cache, browser-tool, and multimodal context inputs to workflow selection.
 - Maintained on 2026-07-02 with workflow-readiness checks, editor/runtime fit, model-routing controls, multi-agent workspace support, and cost transparency.
 - Maintained on 2026-07-06 with enterprise procurement readiness and collaboration-channel workflow selection inputs.
+- Maintained on 2026-07-09 with repository-overview verification, admin-enabled model routing, and specialized modernization workflow package criteria.

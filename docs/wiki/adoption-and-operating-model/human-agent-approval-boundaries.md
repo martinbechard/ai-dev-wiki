@@ -25,6 +25,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds managed approval-mode, mobile delegation, and review-dismissal signals. Teams should distinguish the ability to request an agent fix from authority to merge or dismiss reviews, and should make permission modes, bypass controls, and sensitive-operation approvals centrally visible when the same agent can run from editor, CLI, or mobile surfaces.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add explicit command-approval pressure for untrusted repositories and workspace customizations. Approval boundaries should block shell execution, dependency setup, credential access, and external-system actions until the repository, instruction files, and generated customization surfaces have passed trust review.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -40,6 +42,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Preserve durable human pauses and explicit host capability grants before unattended agents mutate code, data, or external systems.
 - Keep permission modes and bypass controls centrally visible for recurring team agents.
 - Separate request, repair, review, dismissal, merge, and release authority even when all actions are reachable from one agent-enabled surface.
+- Require trust review before repo-local instructions, generated customization files, or untrusted source content can authorize shell commands, dependency setup, credential use, or external-system actions.
 
 ## Authoritative Sources
 
@@ -53,6 +56,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -86,3 +91,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.
 - Maintained on 2026-07-05 with execution isolation, capability isolation, durable human pauses, explicit host capabilities, and gateway policy signals.
 - Maintained on 2026-07-08 with managed permission modes, bypass controls, mobile repair delegation, and review-dismissal authority separation.
+- Maintained on 2026-07-09 with untrusted-repository, AGENTS.md, and generated customization command-approval boundaries.

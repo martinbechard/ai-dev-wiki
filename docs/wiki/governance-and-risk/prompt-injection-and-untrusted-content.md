@@ -25,6 +25,8 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds agent data injection and untrusted setup-command signals. Metadata, tool context, repository setup paths, DNS records, and apparently benign project files can steer a coding agent toward privileged execution; local controls should treat those fields as data until external authorization and runtime checks allow action.
 
+The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add two repository-trust cases. Untrusted third-party repositories can carry prompt injections across ordinary source files even without explicit hooks or tool configuration, and repo-local instruction files such as AGENTS.md can become attacker-controlled instructions when they are accepted before the user's task. Local practice should load those files as evidence until repository trust, instruction provenance, and command authority are established.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -42,6 +44,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Treat hidden webpage commands and reasoning-like content as source evidence until a trusted instruction channel authorizes action.
 - Treat repository metadata, setup commands, DNS-derived values, tool context, and generated configuration paths as untrusted evidence until policy checks authorize their use.
 - Bound prompt-injection blast radius with off-host authorization, argument constraints, rate limits, and credential brokering where side effects are possible.
+- Treat third-party source files and repo-local instruction files as untrusted evidence until repository trust and instruction provenance are established.
+- Do not let a repository file expand command authority, credential access, or task scope before the user's explicit request and the harness policy agree.
 
 ## Authoritative Sources
 
@@ -55,6 +59,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 
 ## Related Code
 
@@ -89,3 +95,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-07-01 with MCP tool-description poisoning and malware-analysis prompt-injection cases.
 - Maintained on 2026-07-04 with role-confusion, hidden-command, and reasoning-style injection boundaries.
 - Maintained on 2026-07-08 with agent data injection, repository setup-command, and off-host authorization boundaries.
+- Maintained on 2026-07-09 with untrusted third-party repository files and repo-local instruction provenance boundaries.
