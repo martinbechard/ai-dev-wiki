@@ -1,0 +1,377 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-09T21:01:57-04:00",
+  "cutoff_window": {
+    "start": "2026-07-02T21:01:57-04:00",
+    "end": "2026-07-09T21:01:57-04:00",
+    "rule": "Only public sources visibly published or updated inside this seven-day window are qualifying."
+  },
+  "docs_wiki_updated": false,
+  "selected_leaf_ids": [
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "source_urls_checked": [
+    "https://www.backslash.security/blog/openai-codex-injection-in-agents-md-exfiltrating-credentials",
+    "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+    "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+    "https://explainx.ai/blog/ai-skills-developers-need-2026-roadmap",
+    "https://www.itpro.com/software/agentic-ai-breaks-the-traditional-saas-seat-licensing-model-now-its-up-to-vendors-to-ditch-legacy-dashboards-and-build-with-agents-in-mind",
+    "https://www.techradar.com/pro/why-nvidias-nemoclaw-signals-the-true-enterprise-agent-era",
+    "https://www.businessinsider.com/jensen-huang-my-engineers-prefer-building-agents-to-writing-code-2026-7",
+    "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+    "https://www.anthropic.com/research/claude-code-expertise",
+    "https://github.blog/changelog/2026-06-17-agent-finder-for-github-copilot-now-available/",
+    "https://openai.com/index/introducing-chatgpt-agent/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "2026-07-06-backslash-codex-agents-md-injection",
+      "source_url": "https://www.backslash.security/blog/openai-codex-injection-in-agents-md-exfiltrating-credentials",
+      "visible_date": "2026-07-06",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Backslash reported a Codex CLI exec-mode prompt-injection path where attacker-controlled instructions in repository AGENTS.md could run before the user's explicit task and could be used for credential exfiltration.",
+      "why_it_matters_for_leaf": "Local request packages and durable instruction files need explicit trust boundaries, provenance checks, and approval rules for repo-local instructions before agents execute commands or access secrets.",
+      "named_entities": [
+        "Backslash Security",
+        "OpenAI Codex CLI",
+        "AGENTS.md"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Codex CLI"
+      ],
+      "follow_up_note": "Ingest should keep broad Codex vulnerability details upstream and update local practice only for trusted instruction boundaries, request package hygiene, and approval gates."
+    },
+    {
+      "id": "2026-07-07-github-copilot-jetbrains-agent-customizations",
+      "source_url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+      "visible_date": "2026-07-07",
+      "matched_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "factual_summary": "GitHub added Codex as an agent provider in JetBrains IDEs and exposed agent customization surfaces for hooks, MCP server management, workspace-level MCP configuration, generated instruction and skill files, and approval settings for Copilot CLI sessions.",
+      "why_it_matters_for_leaf": "MCP governance and portable skill/runbook practice now need to assume agent customization files, workspace-level MCP manifests, and approval policy controls can be managed directly in developer tooling.",
+      "named_entities": [
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "JetBrains IDEs",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Route product-release details upstream; keep local implications for MCP manifest review, generated customization file review, and approval-setting conventions."
+    },
+    {
+      "id": "2026-07-08-github-copilot-vscode-agent-sessions",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "visible_date": "2026-07-08",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "factual_summary": "GitHub's June 2026 VS Code Copilot release notes include agent session organization so users can group related agent sessions and rearrange them in the Agents window.",
+      "why_it_matters_for_leaf": "Local request packages and ownership rosters should treat agent sessions as durable work containers that may need naming, grouping, ownership, and handoff conventions.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "follow_up_note": "Ingest as a local operating-model note only if agent-session organization changes how teams name, hand off, or audit work packages."
+    },
+    {
+      "id": "2026-07-09-explainx-ai-skills-roadmap",
+      "source_url": "https://explainx.ai/blog/ai-skills-developers-need-2026-roadmap",
+      "visible_date": "2026-07-09",
+      "matched_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "factual_summary": "Explainx published a developer skills roadmap that sequences structured prompting, agentic coding tools, MCP, agents, RAG, and fine-tuning, arguing that teams often plateau when training stops at autocomplete.",
+      "why_it_matters_for_leaf": "The selected learning-path and tier-convention leaves can use this as a current public signal for sequencing skills before giving developers broader tool, MCP, RAG, or autonomous-agent responsibility.",
+      "named_entities": [
+        "Explainx",
+        "Model Context Protocol",
+        "RAG"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "RAG"
+      ],
+      "follow_up_note": "Prefer local practice synthesis around training progression; route broad MCP or RAG background upstream."
+    },
+    {
+      "id": "2026-07-03-itpro-agentic-ai-saas-economics",
+      "source_url": "https://www.itpro.com/software/agentic-ai-breaks-the-traditional-saas-seat-licensing-model-now-its-up-to-vendors-to-ditch-legacy-dashboards-and-build-with-agents-in-mind",
+      "visible_date": "2026-07-03",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "factual_summary": "ITPro reported Gartner analysis that agentic systems can bypass traditional interface-heavy SaaS workflows, expose up to 234 billion dollars in application spending to agentic arbitrage by 2030, and push vendors toward outcome-based value and cross-domain workflows.",
+      "why_it_matters_for_leaf": "Local adoption agreements and economics guidance should distinguish seat-based tool rollout from outcome-based agent workflows that capture customer context and automate across systems.",
+      "named_entities": [
+        "ITPro",
+        "Gartner",
+        "George Brocklehurst"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "follow_up_note": "Keep broad SaaS-market analysis upstream; local ingest should focus on economics criteria for adopting, funding, and pruning agent workflows."
+    },
+    {
+      "id": "2026-07-07-techradar-nemoclaw-enterprise-agent-era",
+      "source_url": "https://www.techradar.com/pro/why-nvidias-nemoclaw-signals-the-true-enterprise-agent-era",
+      "visible_date": "2026-07-07",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "TechRadar argued that enterprise agent adoption is moving toward agent frameworks wrapped by infrastructure, guardrails, and policy enforcement because unconstrained autonomous agents create unacceptable operational risk.",
+      "why_it_matters_for_leaf": "Ownership rosters, approval boundaries, and operating agreements should make guardrails and policy enforcement part of the agent operating model rather than optional tooling around a model.",
+      "named_entities": [
+        "TechRadar",
+        "Nvidia",
+        "NemoClaw",
+        "OpenClaw",
+        "Nemotron Coalition"
+      ],
+      "upstream_owned_entities": [
+        "Nvidia",
+        "NemoClaw",
+        "OpenClaw",
+        "Nemotron Coalition"
+      ],
+      "follow_up_note": "Route named product and ecosystem claims upstream; keep only local guardrail, policy, and accountability implications."
+    },
+    {
+      "id": "2026-07-09-businessinsider-nvidia-engineers-building-agents",
+      "source_url": "https://www.businessinsider.com/jensen-huang-my-engineers-prefer-building-agents-to-writing-code-2026-7",
+      "visible_date": "2026-07-09T05:24:57Z",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "factual_summary": "Business Insider reported Jensen Huang's statement that Nvidia software engineers increasingly prefer building agents over writing Python code and now work on agents, benchmarks, and guardrails.",
+      "why_it_matters_for_leaf": "Local team-design leaves should treat agent building, benchmark design, and guardrail work as core engineering responsibilities, especially for senior-led teams and junior learning paths.",
+      "named_entities": [
+        "Business Insider",
+        "Jensen Huang",
+        "Nvidia"
+      ],
+      "upstream_owned_entities": [
+        "Jensen Huang",
+        "Nvidia"
+      ],
+      "follow_up_note": "Route Nvidia background upstream; local ingest can update workforce-practice framing around agents, benchmarks, and guardrails as engineering work."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+      "visible_date": "2026-06-30",
+      "reason": "Published before the 2026-07-02T21:01:57-04:00 cutoff.",
+      "potential_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://www.anthropic.com/research/claude-code-expertise",
+      "visible_date": "2026-06",
+      "reason": "Search result and page indicate roughly three weeks old, outside the seven-day cutoff.",
+      "potential_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-06-17-agent-finder-for-github-copilot-now-available/",
+      "visible_date": "2026-06-17",
+      "reason": "Published before the seven-day cutoff.",
+      "potential_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ]
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "visible_date": null,
+      "reason": "Accessible page content did not expose a primary publication date; excluded as ambiguous even though the content is relevant to prompt-injection and human-control practices.",
+      "potential_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    }
+  ],
+  "leaf_results": {
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-06-backslash-codex-agents-md-injection",
+        "2026-07-08-github-copilot-vscode-agent-sessions"
+      ],
+      "follow_up_note": "Review trusted-instruction boundaries and agent-session work-package naming before ingest."
+    },
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": {
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "follow_up_note": "No in-window source directly changed code-retrieval evidence practice."
+    },
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-09-explainx-ai-skills-roadmap"
+      ],
+      "follow_up_note": "If ingested, limit to learning sequence and local RAG responsibility boundaries."
+    },
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-07-github-copilot-jetbrains-agent-customizations",
+        "2026-07-09-explainx-ai-skills-roadmap"
+      ],
+      "follow_up_note": "Review workspace-level MCP configuration and training sequence implications."
+    },
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-06-backslash-codex-agents-md-injection",
+        "2026-07-07-github-copilot-jetbrains-agent-customizations",
+        "2026-07-07-techradar-nemoclaw-enterprise-agent-era"
+      ],
+      "follow_up_note": "Prioritize trusted instruction execution, MCP manifest review, approval settings, and policy-enforced tool governance."
+    },
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-03-itpro-agentic-ai-saas-economics",
+        "2026-07-07-techradar-nemoclaw-enterprise-agent-era"
+      ],
+      "follow_up_note": "Consider operating agreement language for outcome-based workflows, guardrails, and policy enforcement."
+    },
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-08-github-copilot-vscode-agent-sessions",
+        "2026-07-07-techradar-nemoclaw-enterprise-agent-era"
+      ],
+      "follow_up_note": "Review whether agent session groupings and enterprise guardrails require explicit roster fields."
+    },
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-06-backslash-codex-agents-md-injection",
+        "2026-07-09-explainx-ai-skills-roadmap"
+      ],
+      "follow_up_note": "Distinguish reusable skills from untrusted repo-local instruction surfaces."
+    },
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-06-backslash-codex-agents-md-injection",
+        "2026-07-07-github-copilot-jetbrains-agent-customizations",
+        "2026-07-07-techradar-nemoclaw-enterprise-agent-era"
+      ],
+      "follow_up_note": "Ingest should focus on approval settings, command execution boundaries, and policy-enforced guardrails."
+    },
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-03-itpro-agentic-ai-saas-economics"
+      ],
+      "follow_up_note": "Review economics guidance for agentic workflows that bypass interface-heavy SaaS."
+    },
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-09-explainx-ai-skills-roadmap",
+        "2026-07-09-businessinsider-nvidia-engineers-building-agents"
+      ],
+      "follow_up_note": "Review sequencing from prompting to MCP, RAG, agents, benchmarks, and guardrails."
+    },
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-03-itpro-agentic-ai-saas-economics",
+        "2026-07-09-businessinsider-nvidia-engineers-building-agents"
+      ],
+      "follow_up_note": "Review outcome-based value and autonomy framing for agent-built workflows."
+    },
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-07-github-copilot-jetbrains-agent-customizations"
+      ],
+      "follow_up_note": "Review generated instruction, prompt, skill, agent, and hook files as portable runbook surfaces."
+    },
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-08-github-copilot-vscode-agent-sessions",
+        "2026-07-09-businessinsider-nvidia-engineers-building-agents"
+      ],
+      "follow_up_note": "Review senior pod responsibilities for organizing agent sessions and owning benchmarks or guardrails."
+    },
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": {
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "2026-07-09-explainx-ai-skills-roadmap",
+        "2026-07-09-businessinsider-nvidia-engineers-building-agents"
+      ],
+      "follow_up_note": "Review tiered permissions for progressing from prompting to MCP, RAG, agents, benchmarks, and guardrails."
+    }
+  },
+  "upstream_owned_entities": [
+    "OpenAI Codex CLI",
+    "GitHub Copilot",
+    "Visual Studio Code",
+    "Model Context Protocol",
+    "RAG",
+    "Gartner",
+    "Nvidia",
+    "NemoClaw",
+    "OpenClaw",
+    "Nemotron Coalition",
+    "Jensen Huang"
+  ],
+  "federation_boundary": "docs/wiki/federation.md routes broad ecosystem entities to the upstream AI wiki; this artifact keeps only local practice implications for downstream ai-dev-wiki leaves.",
+  "blockers": []
+}
