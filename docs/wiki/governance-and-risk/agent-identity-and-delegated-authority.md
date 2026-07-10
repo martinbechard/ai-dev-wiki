@@ -21,6 +21,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds an identity-bound authorization lens. The model and local agent host should be treated as untrusted emitters for consequential tool calls; an off-host authorization path should bind the human or system principal, policy, arguments, rate limits, credential broker, and audit chain before side effects occur.
 
+The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds a delegated-authority failure shape for repository automations. Assignment to an issue or an issue-triggered event should not imply authority to traverse private repositories or publish their contents. Delegation should identify the requester or trigger, the repository scope, the response channel, and the policy that allows or blocks any public output.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -35,6 +37,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Preserve existing approval and audit artifacts when agent execution emulates a human workflow.
 - Bind consequential tool calls to a verified principal and policy decision outside the model context.
 - Record message-level or request-level authorization evidence when delegated actions can affect code, data, credentials, costs, or external systems.
+- Treat event-triggered automation as a distinct delegating principal; do not inherit broad organization access merely because the trigger came from an issue assignment.
+- Bind public comments, issue replies, and pull-request messages to an output policy when the agent has access to private or cross-repository context.
 
 ## Authoritative Sources
 
@@ -45,6 +49,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 
 ## Related Code
 
@@ -75,3 +80,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-06-25 with non-human identity controls for owner assignment, least privilege, recurring access review, monitoring, and audit evidence.
 - Maintained on 2026-06-29 with inherited-permission analysis, stale-credential checks, runtime enforcement, and UI-first audit preservation.
 - Maintained on 2026-07-08 with identity-bound off-host authorization, argument constraints, credential brokering, and audit-chain evidence.
+- Maintained on 2026-07-10 with event-triggered delegation boundaries for issue agents, repository scope, and public output authority.

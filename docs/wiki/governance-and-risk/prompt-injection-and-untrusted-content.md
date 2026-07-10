@@ -27,6 +27,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add two repository-trust cases. Untrusted third-party repositories can carry prompt injections across ordinary source files even without explicit hooks or tool configuration, and repo-local instruction files such as AGENTS.md can become attacker-controlled instructions when they are accepted before the user's task. Local practice should load those files as evidence until repository trust, instruction provenance, and command authority are established.
 
+The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds an issue-triggered agent case. Public issue titles and bodies are attacker-writable source text, not trusted task instructions, even when an automation intentionally reads them. If an agent can read private repositories and post public comments in the same workflow, the trust-boundary failure is already present before the jailbreak phrase succeeds; output posting, repository reads, and cross-repository lookup need separate policy gates.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -46,6 +48,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Bound prompt-injection blast radius with off-host authorization, argument constraints, rate limits, and credential brokering where side effects are possible.
 - Treat third-party source files and repo-local instruction files as untrusted evidence until repository trust and instruction provenance are established.
 - Do not let a repository file expand command authority, credential access, or task scope before the user's explicit request and the harness policy agree.
+- Treat issue bodies, issue titles, pull-request text, and public comments as attacker-writable evidence when they trigger an agent workflow.
+- Do not let public issue content authorize private-repository reads or public disclosure; separate the read permission, retrieval decision, and posting decision into enforceable gates.
 
 ## Authoritative Sources
 
@@ -61,6 +65,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 
 ## Related Code
 
@@ -96,3 +101,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-04 with role-confusion, hidden-command, and reasoning-style injection boundaries.
 - Maintained on 2026-07-08 with agent data injection, repository setup-command, and off-host authorization boundaries.
 - Maintained on 2026-07-09 with untrusted third-party repository files and repo-local instruction provenance boundaries.
+- Maintained on 2026-07-10 with issue-triggered agent boundaries for attacker-writable issue text, private-repository access, and public output posting.

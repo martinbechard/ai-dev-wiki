@@ -33,6 +33,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add runtime-enforcement, shared-agent-runtime, and untrusted-repository signals. Locally, coding-agent governance should treat admin-enabled model access, code-enabled managed runtimes, IDE session forensics, shadow-AI inventory, and untrusted dependency review as control-plane decisions with disposable execution boundaries and auditable policy evidence.
 
+The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds a source-to-output control lesson for GitHub-style agentic workflows. A workflow that reads attacker-writable issue content, holds private repository access, and can post public comments needs minimum viable permissions, public-output restrictions, and disclosure checks before model behavior is considered. Guardrails that ask the model not to reveal private data are not enough when the tool graph permits retrieval and publication in one run.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -68,6 +70,7 @@ The detailed control leaves are:
 - Treat governed sensitive-code execution as a control bundle: deny-by-default networking, credential separation, sandboxing, human approvals, and per-session audit logs.
 - Treat model enablement, session forensics, code-enabled managed runtimes, and shadow-AI discovery as governed rollout controls when agents can change code or execute code.
 - Require disposable workspaces, constrained commands, and deterministic scanner evidence before autonomous agents inspect untrusted repositories or third-party dependencies.
+- For issue-triggered agents, minimize repository scope, separate private-data reads from public posting, and require policy evidence before any agent-authored response can disclose retrieved content.
 
 ## Authoritative Sources
 
@@ -90,6 +93,7 @@ The detailed control leaves are:
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 
 ## Related Code
 
@@ -130,3 +134,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-07 with desktop-agent access, BYOK policy, cost-center membership, and durable usage-reporting controls.
 - Maintained on 2026-07-08 with managed editor and CLI policy, centralized telemetry capture boundaries, review-dismissal authority separation, and sensitive-code execution controls.
 - Maintained on 2026-07-09 with admin-enabled model access, runtime enforcement, shadow-AI inventory, shared managed runtime, and untrusted repository review controls.
+- Maintained on 2026-07-10 with issue-triggered workflow controls for minimum repository scope, private-read separation, and public-output disclosure gates.

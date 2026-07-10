@@ -23,6 +23,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds execution-security evidence for lifecycle gates. Review should happen before cloned project setup, automated troubleshooting, sandbox promotion, or production-adjacent execution, because repository metadata and generated commands can become the attack path before a diff exists.
 
+The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds an adoption-readiness gate for agentic workflows that consume user-controlled text. Before a workflow ships, review should ask whether the same agent both reads attacker-writable content and holds private-data access, whether public replies are allowed, and what audit or policy evidence proves that private data cannot move from retrieval to publication.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -36,6 +38,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Keep generator, reviewer, test, and approver responsibilities separate when the review gate affects release, security, or production acceptance.
 - Add pre-execution gates for untrusted repository setup, generated command execution, sandbox promotion, and sensitive-code workflows.
 - Treat execution-boundary evidence as part of lifecycle review before accepting an agent-produced implementation or repair.
+- Add readiness gates for event-triggered agents that read public text, use private context, or post into public channels.
+- Review least-privilege repository scope, trusted-instruction separation, output disclosure policy, and incident audit evidence before enabling recurring agentic workflows.
 
 ## Authoritative Sources
 
@@ -48,6 +52,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 
 ## Related Code
 
@@ -79,3 +84,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-06-29 with continuous lifecycle review gates across requirements, design, code, security, and acceptance.
 - Maintained on 2026-07-01 with generator-reviewer separation for formal lifecycle gates.
 - Maintained on 2026-07-08 with pre-execution lifecycle gates for untrusted setup, generated commands, and sensitive-code promotion.
+- Maintained on 2026-07-10 with adoption-readiness gates for issue-triggered agents, public output, and private-data access.
