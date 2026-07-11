@@ -13,6 +13,8 @@ TDD gives the agent a concrete design target. A failing test turns an intended b
 
 The local loop is to add or repair one meaningful failing test, implement the smallest code change that satisfies the test while keeping existing behavior intact, refactor the design, and rerun the relevant suite. The test output then becomes evidence for the next agent step.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds an agentic requirement-compilation lens. When requirements are large, multi-modal, or DSL-backed, tests should preserve traceability from source requirement to generated architecture, acceptance check, implementation, and verification result. Broad framework background belongs upstream; locally, TDD keeps requirement interpretation executable and reviewable.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -21,6 +23,8 @@ The local loop is to add or repair one meaningful failing test, implement the sm
 - Refactor names, types, modules, and duplication only after behavior is protected by tests.
 - Rerun the relevant suite after implementation and after refactoring.
 - Carry failure output into the next request package instead of asking the model to guess.
+- Link generated tests to the source requirement or decision they protect when an agent turns requirements into code.
+- Use failing tests to expose requirement interpretation errors before accepting generated architecture or implementation.
 
 ## Authoritative Sources
 
@@ -28,6 +32,7 @@ The local loop is to add or repair one meaningful failing test, implement the sm
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [Generated code refactoring](generated-code-refactoring.md)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -54,3 +59,4 @@ The local loop is to add or repair one meaningful failing test, implement the sm
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
+- Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.

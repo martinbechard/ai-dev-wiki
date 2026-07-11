@@ -27,6 +27,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The July 7 raw sources add step-local and hidden-state research signals. The [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) routes Agent Step Value into local practice as evidence for scoring individual actions against before-and-after state projections. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) also records latent-programming research that probes model state for parse, test, and regression signals; locally this remains an emerging research direction, while steady-state assurance still depends on observable tests, traces, builds, and review gates.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds benchmark-design and failure-diagnosis evidence for coding-agent trajectories. Performance optimization, long-horizon software tasks, and repository-level failure diagnosis all need traces that show profiling choices, context folding, test-failure pivots, earliest-error localization, and verification decisions. Broad PERFOPT-Bench, DeepSWE, TrajAudit, and paper cataloging belongs upstream; locally, the evaluation rule is to keep trajectories rich enough to explain why the agent path worked or failed.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -44,6 +46,9 @@ The July 7 raw sources add step-local and hidden-state research signals. The [le
 - Whether an agentic test loop records planned path, observations, adaptations, and stopping criteria.
 - Whether step-level scoring can explain which action improved, degraded, or failed to change the task state.
 - Whether emerging internal-state signals are clearly separated from deployable assurance evidence such as tests, builds, traces, and review outcomes.
+- Whether performance optimization trajectories preserve profiling evidence, correctness checks, speedup measurement, and benchmark-shortcut controls.
+- Whether long-horizon task trajectories show planning, multi-file state management, verification pacing, and sustained recovery from intermediate failures.
+- Whether failure-diagnosis traces identify the earliest consequential error instead of only summarizing the final failed state.
 
 ## Practice Boundaries
 
@@ -59,6 +64,8 @@ The July 7 raw sources add step-local and hidden-state research signals. The [le
 - Evaluate platform agent runs at the trajectory level when control-plane, runtime, memory, retrieval, or tool decisions affect trust.
 - Use step-local diagnostics when final-run scores hide which agent action caused success, drift, or failure.
 - Treat model-internal probing as research context unless it is backed by observable verification evidence in the local workflow.
+- Fold low-signal trace detail into saliency summaries only when the raw trace, tests, and source evidence remain available for audit.
+- Use test-failure reports as investigation priors, not as substitutes for source inspection and reproducible verification.
 
 ## Authoritative Sources
 
@@ -73,6 +80,7 @@ The July 7 raw sources add step-local and hidden-state research signals. The [le
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -105,3 +113,4 @@ The July 7 raw sources add step-local and hidden-state research signals. The [le
 - Maintained on 2026-07-02 with environment-backed stateful-agent eval datasets and deterministic checker requirements.
 - Maintained on 2026-07-04 with platform-layer traces and agentic-testing trajectory evidence.
 - Maintained on 2026-07-07 with step-level action scoring and internal-state probing as research-only assurance context.
+- Maintained on 2026-07-10 with performance, long-horizon, and failure-diagnosis trajectory evidence.

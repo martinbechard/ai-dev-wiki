@@ -37,6 +37,8 @@ The [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-w
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds shared operation-path and managed-runtime signals. A harness that exposes the same operation through desktop UI and MCP should keep one tested backend command path, and a managed code-execution platform needs runtime isolation, blast-radius controls, audit logs, egress policy, and permission granularity as explicit components.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) and [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) add bounded-loop, harness-taxonomy, and managed-session signals. Long-running loops need budget envelopes, step ceilings, stall detection, output-path verification, approval gates, and per-step traces. Maintained harness taxonomies are useful locally when they sharpen component ownership for planning artifacts, context delivery, permissions, memory, orchestration, verification, observability, sandboxing, and session governance rather than becoming product catalogs.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -65,6 +67,9 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Make sandbox trials, scripted verifiers, trace records, datasets, cost telemetry, and gateway policy evidence part of the harness boundary for recurring agent workflows.
 - Use one tested backend operation path when human UI controls and MCP tools perform the same action.
 - Treat runtime isolation, egress policy, blast-radius controls, audit logs, and permission granularity as harness components for code-enabled managed agent platforms.
+- Bound autonomous loops with step ceilings, cost budgets, stall safeguards, and explicit approval gates before increasing unattended work volume.
+- Verify declared output paths and preserve per-step traces so long-running loops can be inspected, resumed, or stopped without relying on a final summary.
+- Use harness taxonomies to assign ownership for planning, context, permissions, memory, orchestration, verification, observability, and sandboxing components.
 
 ## Authoritative Sources
 
@@ -89,6 +94,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 
 ## Related Code
 
@@ -126,3 +133,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-05 with desktop file-agent permission, folder, edit-preview, and audit-boundary signals.
 - Maintained on 2026-07-06 with chat-agent adapter, security-scanning harness, virtual shell, and recurring workflow instrumentation components.
 - Maintained on 2026-07-09 with shared UI-and-MCP operation paths and code-enabled managed-runtime isolation controls.
+- Maintained on 2026-07-10 with bounded loop controls, output-path verification, per-step traces, and harness taxonomy ownership.

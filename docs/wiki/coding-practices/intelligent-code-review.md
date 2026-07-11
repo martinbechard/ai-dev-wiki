@@ -33,6 +33,8 @@ The July 7 raw sources add authorship, policy, and localization signals. The [le
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds organization-level review targeting and hostile-repository review risk. Review controls should be scoped by repository risk and owner policy, and autonomous review of untrusted third-party code should run in disposable workspaces with constrained commands, deterministic scanners, and explicit human approval before shell execution or dependency setup.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds an operating-model signal for AI-authored pull requests. Code review should protect understanding retention, reviewer capacity, explicit responsibility, and machine-assisted evidence together. When agents author complete PRs, the review workflow needs clear ownership for what the human reviewer must understand, what automated checks can cover, and what evidence the submitting agent must provide.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -63,6 +65,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Separate security classification from localization, proof quality, compilation context, and contamination-aware evaluation.
 - Scope automated review enablement by repository risk, owner policy, and exception management rather than enabling every repository uniformly.
 - Run autonomous review of untrusted third-party repositories inside disposable workspaces with constrained execution and human-approved setup steps.
+- Treat AI-authored PR review as a capacity and understanding-retention problem, not only as a defect-detection problem.
+- Require submitters to provide source, test, trace, and design evidence that lets reviewers retain system understanding while relying on machine-assisted checks.
 
 ## Authoritative Sources
 
@@ -84,6 +88,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -121,3 +126,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-06 with compliance checks, runtime evidence, software-quality dimensions, and reviewer-load controls.
 - Maintained on 2026-07-07 with agent-authorship metadata, violation attribution, contribution-policy accountability, and security-localization eval controls.
 - Maintained on 2026-07-09 with organization-scoped review targeting and untrusted-repository autonomous review boundaries.
+- Maintained on 2026-07-10 with AI-authored PR review capacity, understanding-retention, and evidence-package requirements.

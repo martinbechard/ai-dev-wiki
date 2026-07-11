@@ -39,6 +39,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add shared-operation and session-forensics signals. Tools exposed through GUI commands and MCP should share the same tested operation path where possible, and coding-agent governance should record prompts, commands, MCP server activity, tool usage, skills, rules, and approval settings when those surfaces can affect code or external systems.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds MCP identity-interoperability and task-based access-control signals. MCP gateways should treat identity and authorization as runtime architecture: a tool call should carry user or trigger identity, agent identity, task scope, short-lived credential scope, quota or budget limit, and approval state. Broad standards and product background stays upstream; locally, MCP governance should reject broad standing credentials when the action should be scoped to one task.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -72,6 +74,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Require re-approval when an IDE or CLI exposes the same integration through a new managed setting, workspace file, or marketplace channel.
 - Prefer one tested operation path for human UI commands and agent tool calls when both control the same system.
 - Record prompts, commands, MCP activity, tool usage, skills, rules, and approval-setting changes as tool-surface evidence for high-impact coding-agent sessions.
+- Require MCP gateways to preserve task, principal, agent, credential, quota, approval, and policy-decision evidence for delegated tool calls.
+- Use task-scoped authorization for agent tool access when stable user, team, or service-account entitlements would grant more authority than the current task needs.
 
 ## Authoritative Sources
 
@@ -98,6 +102,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -139,3 +144,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-06 with tool and skill telemetry plus simulated shell evidence boundaries.
 - Maintained on 2026-07-08 with managed workspace MCP configuration, marketplace, hook, permission-mode, and debug-log governance.
 - Maintained on 2026-07-09 with shared GUI-and-agent operation paths, session forensics, and generated customization evidence.
+- Maintained on 2026-07-10 with MCP identity interoperability and task-scoped access-control evidence.

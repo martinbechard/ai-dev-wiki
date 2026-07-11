@@ -23,6 +23,8 @@ The [context loss source](../../../raw/processed/Your AI Agent Already Forgot Ha
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a repo-local instruction boundary. Request packages should label AGENTS.md, generated skill files, workspace customizations, and other repository-provided instructions by trust status and source authority before the agent treats them as live procedure.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds a requirement-compilation signal. Large requirement packages should carry traceable boundaries from requirement source to architecture choice, generated tests, implementation artifacts, and verification evidence. Broad ARC, AppForge, and paper background belongs upstream; locally, the request package must keep requirement evidence separate from implementation instructions so generated systems remain reviewable.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -37,6 +39,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Put exact source-read instructions next to the write, review, or merge action that depends on the source.
 - Use handoff files as request-package inputs for fresh sessions instead of continuation prompts that assume prior chat memory.
 - Label repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance as trusted instruction, local evidence, or untrusted source content before use.
+- Preserve requirement-source identifiers, design decisions, generated tests, implementation outputs, and verification results as separate package sections when requirements are compiled into code.
+- Do not let generated architecture or tests erase the distinction between source requirements and the agent's proposed interpretation.
 
 ## Authoritative Sources
 
@@ -48,6 +52,7 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -81,3 +86,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Maintained on 2026-06-26 with KPR-style knowledge-package boundaries and prompt provenance as review evidence.
 - Maintained on 2026-06-27 with acceptance criteria, point-of-use source-read instructions, and handoff-file packaging for context pressure.
 - Maintained on 2026-07-09 with trust labels for repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance.
+- Maintained on 2026-07-10 with requirement-to-architecture-to-test traceability for agentic requirement packages.

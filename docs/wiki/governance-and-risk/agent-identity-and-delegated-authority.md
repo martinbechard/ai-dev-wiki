@@ -23,6 +23,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds a delegated-authority failure shape for repository automations. Assignment to an issue or an issue-triggered event should not imply authority to traverse private repositories or publish their contents. Delegation should identify the requester or trigger, the repository scope, the response channel, and the policy that allows or blocks any public output.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds cross-enterprise agent identity and task-scoped authorization signals. MCP clients, gateways, servers, and connected systems should carry the originating user or trigger, agent identity, task purpose, credential scope, and authorization decision as runtime evidence. Broad OpenID, MCP, Gartner, and vendor background stays upstream; locally, the practice is to make delegation auditable when an agent crosses organizational or tool-server boundaries.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -39,6 +41,8 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Record message-level or request-level authorization evidence when delegated actions can affect code, data, credentials, costs, or external systems.
 - Treat event-triggered automation as a distinct delegating principal; do not inherit broad organization access merely because the trigger came from an issue assignment.
 - Bind public comments, issue replies, and pull-request messages to an output policy when the agent has access to private or cross-repository context.
+- Bind MCP-mediated actions to a human or system principal, agent instance, task purpose, credential scope, approval checkpoint, and authorization decision before external side effects occur.
+- Prefer short-lived, task-scoped credentials for delegated agent work when broad standing access would hide which task authorized the action.
 
 ## Authoritative Sources
 
@@ -50,6 +54,7 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -81,3 +86,4 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Maintained on 2026-06-29 with inherited-permission analysis, stale-credential checks, runtime enforcement, and UI-first audit preservation.
 - Maintained on 2026-07-08 with identity-bound off-host authorization, argument constraints, credential brokering, and audit-chain evidence.
 - Maintained on 2026-07-10 with event-triggered delegation boundaries for issue agents, repository scope, and public output authority.
+- Maintained on 2026-07-10 with cross-enterprise MCP identity, task-scoped credentials, and runtime authorization evidence.

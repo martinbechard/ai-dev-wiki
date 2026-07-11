@@ -39,6 +39,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds provider-priced model access and multi-agent platform analytics. Cost telemetry should record which admin-enabled model route ran, whether the task used a cloud agent, CLI, IDE, or modernization workflow package, and how built-in cost and usage analytics map to accepted outcomes.
 
+The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds budget, observability, and coding-cost taxonomy signals. Per-user budgets, coding-agent cost concepts, and public cost analyses are useful locally when they split token usage, context growth, tool execution, cache behavior, verification work, and accepted outcomes. Broad vendor billing details stay upstream; this page owns the workflow decision about whether a cost spike reflects useful evidence gathering, runaway context, repeated retries, or missing scope controls.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -69,6 +71,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Keep cost-center and per-user budget membership synchronized with the teams or owners responsible for the agent workflow.
 - Record admin-enabled model routes and provider-priced usage when task-to-model routing changes cost or review evidence.
 - Map multi-agent platform cost and use analytics to workflow packages, roles, and accepted modernization or repair outcomes.
+- Separate token, context, cache, tool, sandbox, verification, retry, and reviewer-effort costs before deciding whether to cap, redesign, or expand a workflow.
+- Treat per-user or cost-center budgets as guardrails that should trigger workflow review when they stop useful work or permit wasteful loops.
 
 ## Authoritative Sources
 
@@ -91,6 +95,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 
 ## Related Code
 
@@ -129,3 +134,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-07 with desktop-agent onboarding budgets, per-user cost centers, usage-reporting APIs, and budget drift as workflow guardrails.
 - Maintained on 2026-07-08 with review-cycle outcome metrics and synchronized cost-center budget membership.
 - Maintained on 2026-07-09 with admin-enabled model-route cost attribution and multi-agent platform cost analytics.
+- Maintained on 2026-07-10 with token, context, cache, tool, verification, retry, and budget-stop cost taxonomy signals.

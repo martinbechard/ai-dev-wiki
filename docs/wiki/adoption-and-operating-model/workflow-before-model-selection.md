@@ -37,6 +37,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds admin-enabled model routing, repository overview generation, and modernization workflow packages. Workflow selection should decide when a source-backed repository orientation is sufficient, when a stronger model route is justified by task risk or context size, and when a specialized multi-agent modernization workflow needs its own gates, roles, and cost evidence.
 
+The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds agent-provider, managed-settings, and cost-shape signals. Workflow selection should decide whether a task needs IDE-native execution, cloud agent execution, managed settings, persistent workspace state, or a lighter human-led assist pattern before adopting a provider route. Cost analyses should influence the workflow shape only when they are tied to context depth, tool use, retries, verification work, and accepted outcomes.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -62,6 +64,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Verify repository-overview outputs against authoritative files before treating them as project knowledge or onboarding evidence.
 - Route admin-enabled models by task risk, context size, autonomy level, cost envelope, and verification burden rather than developer preference alone.
 - Treat specialized multi-agent modernization packages as workflow definitions with explicit roles, gates, evidence, and cost telemetry.
+- Choose IDE-native, CLI, cloud-agent, or human-led assist surfaces from the required state, settings, permissions, latency, and handoff evidence.
+- Use cost-shape evidence to redesign context depth, tool loops, retry strategy, or verification scope before treating model choice as the primary lever.
 
 ## Authoritative Sources
 
@@ -82,6 +86,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 
 ## Related Code
 
@@ -122,3 +127,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-02 with workflow-readiness checks, editor/runtime fit, model-routing controls, multi-agent workspace support, and cost transparency.
 - Maintained on 2026-07-06 with enterprise procurement readiness and collaboration-channel workflow selection inputs.
 - Maintained on 2026-07-09 with repository-overview verification, admin-enabled model routing, and specialized modernization workflow package criteria.
+- Maintained on 2026-07-10 with agent-provider routing, managed settings, persistent-state, and cost-shape workflow inputs.

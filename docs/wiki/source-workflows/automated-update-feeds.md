@@ -19,6 +19,8 @@ This wiki uses three automation layers:
 
 Collectors only use public sources and must avoid private, proprietary, sensitive, PII, or company-internal local content. They include source URLs, visible dates, factual summaries, relevance notes, named entities, exclusions with reasons, and follow-up notes. When a source is about an upstream-owned entity such as a model, provider, product, framework, MCP server, or broad developer tool, the source workflow routes that entity through [federation.md](../federation.md) and keeps only the local practice implication here.
 
+The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) reinforces the feed boundary: leaf watches may find useful public evidence about managed settings, cost telemetry, harnesses, and source workflows, but the raw artifact remains the handoff to ingest. Feed output should identify qualifying URLs, excluded candidates, and follow-up notes without turning watcher output into wiki edits before the monitor processes it.
+
 ## Feed Topics
 
 The feed-topic list is configuration for local practice monitoring, not a separate entity inventory.
@@ -46,6 +48,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [topic-index.md](../topic-index.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
+- [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - Target environment automation record for AI Dev Wiki Topic News Collector.
 - Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
@@ -83,3 +86,4 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Created on 2026-06-23 to document the accepted update-feed setup.
 - Recorded the configured update-feed automations on 2026-06-23 after setup.
 - Split on 2026-06-23 so each automation layer has a durable local practice leaf.
+- Maintained on 2026-07-10 with leaf-watch handoff boundaries for qualifying URLs, exclusions, and follow-up notes.

@@ -29,6 +29,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds session-forensics and multi-agent analytics signals. Agent telemetry should make cost, usage, command execution, tool and MCP activity, session state, modernization workflow package, and runtime policy decisions joinable by run or session so operators can investigate both cost and behavior without reading raw chat history first.
 
+The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds trajectory-diagnosis and bounded-loop telemetry signals. Progress events should expose budgets, step ceilings, stall safeguards, approval gates, output-path checks, per-step traces, test-failure pivots, and earliest-error localization when an agent loop can run long enough that final output alone is insufficient.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -47,6 +49,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Separate trace transport settings, service metadata, secrets, and content-capture policy before exporting agent telemetry.
 - Show remote-session states and log handoff links when long-running agents can continue outside the user's active editor session.
 - Join cost, usage, command execution, MCP activity, tool usage, policy decisions, and workflow-package state by run or session when agents operate across IDEs or enterprise modernization workflows.
+- Show loop budget, step limit, stall, approval, and output-path status when autonomous work is bounded by harness policy.
+- Preserve test-failure pivots, trace saliency summaries, and earliest-error markers for operator diagnosis of failed agent runs.
 
 ## Authoritative Sources
 
@@ -62,6 +66,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 
 ## Related Code
 
@@ -97,3 +102,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-07 with sandbox session metrics, trace identifiers, context and memory lifecycle telemetry, anomaly signals, and remediation workflows.
 - Maintained on 2026-07-08 with managed telemetry export boundaries and remote coding-agent session states.
 - Maintained on 2026-07-09 with session-forensics, cost-and-use analytics, and run-level policy-decision telemetry.
+- Maintained on 2026-07-10 with bounded-loop progress, output-path checks, trace saliency, and earliest-error diagnostics.

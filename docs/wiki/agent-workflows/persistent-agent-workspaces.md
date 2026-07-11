@@ -25,6 +25,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) adds merge-concurrency evidence from agent-authored pull requests. Persistent workspaces need coordination rules for temporal overlap, cross-agent branch ownership, PR scheduling, merge ownership, and intent-level conflict review because exact textual conflict checks do not capture all ways concurrent agents can collide.
 
+The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds managed-settings, session-observability, and knowledge-workspace signals. Persistent coding workspaces should record inherited IDE or CLI settings, managed agent configuration, session IDs, sandbox or runtime identifiers, trace links, and durable knowledge artifacts so a resumed agent can distinguish current project state from stale memory or external notes.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -40,6 +42,8 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - Separate branch, worktree, terminal, PR, CI, review, and preview state when multiple agents operate on the same project.
 - Preserve resumable-run state for expensive scans and evals so recovery can skip completed work without losing audit evidence.
 - Treat concurrent agent PRs as a managed queue with branch ownership, overlap visibility, merge sequencing, and intent-level conflict review.
+- Record inherited workspace settings, managed agent configuration, session identifiers, sandbox or runtime identifiers, and trace links when they affect reproducibility.
+- Keep durable knowledge artifacts separate from transient chat memory so resumed agents can verify what is current before acting.
 
 ## Authoritative Sources
 
@@ -53,6 +57,7 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
+- [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 
 ## Related Code
 
@@ -84,3 +89,4 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 - Maintained on 2026-07-04 with coordinator-worker queues, callbacks, locks, session history, and handoff state.
 - Maintained on 2026-07-06 with worktree-orchestration and resumable scan or eval workspace evidence.
 - Maintained on 2026-07-07 with concurrent agent PR overlap, merge sequencing, and intent-level conflict review guidance.
+- Maintained on 2026-07-10 with managed workspace settings, session identifiers, trace links, and durable knowledge artifact boundaries.
