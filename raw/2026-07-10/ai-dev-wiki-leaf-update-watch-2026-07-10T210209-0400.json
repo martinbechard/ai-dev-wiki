@@ -1,0 +1,787 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-07-11T01:02:09Z",
+    "rule": "Only sources visibly published or updated within the last 7 days relative to run time qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start_utc": "2026-07-04T01:02:09Z"
+  },
+  "excluded_candidates": [
+    {
+      "details": "The visible publication date is before the 2026-07-04T01:02:09Z cutoff.",
+      "published_or_updated_at": "2026-07-02",
+      "reason": "outside_7_day_window",
+      "source_title": "Copilot agent session streaming is now in public preview",
+      "source_url": "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/"
+    },
+    {
+      "details": "Search result and Vercel listing show June 25, outside the strict window, even though the content is relevant to durable execution and harness abstractions.",
+      "published_or_updated_at": "2026-06-25",
+      "reason": "outside_7_day_window",
+      "source_title": "AI SDK 7 is now available",
+      "source_url": "https://vercel.com/blog/ai-sdk-7"
+    },
+    {
+      "details": "The opened page did not expose a visible publish or updated date in fetched content, so it was excluded despite relevance to plugins, workflows, and Codex roles.",
+      "published_or_updated_at": null,
+      "reason": "missing_visible_date",
+      "source_title": "Codex for every role, tool, and workflow",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+    },
+    {
+      "details": "Search result referenced recent subagent behavior, but the fetched page did not expose a verifiable dated changelog entry in this run.",
+      "published_or_updated_at": null,
+      "reason": "missing_visible_date_in_fetched_content",
+      "source_title": "Claude Code release notes / changelog",
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-code"
+    },
+    {
+      "details": "Search result described the repository as updated yesterday, but the fetched GitHub page did not expose a specific dated commit for the relevant content.",
+      "published_or_updated_at": null,
+      "reason": "ambiguous_update_date",
+      "source_title": "awesome-harness-engineering",
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering"
+    },
+    {
+      "details": "Search result said last week, but the fetched article content did not expose an exact visible date, so it was not counted as a qualified source.",
+      "published_or_updated_at": null,
+      "reason": "missing_visible_exact_date",
+      "source_title": "Your coding agent bill doubled. Here\u2019s how to fix it.",
+      "source_url": "https://www.langchain.com/blog/fix-your-coding-agent-bill"
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entity details are upstream-owned by the AI wiki; this artifact records only downstream local practice implications for source workflows, agent workflows, cost telemetry, and harness patterns.",
+  "follow_up_notes": [
+    "Ingest should keep source-workflow updates anchored to raw-only collection, queue state, and processed-marker practices.",
+    "Cost telemetry updates should separate token usage, budget enforcement, cache/context effects, and workflow outcome accounting.",
+    "Harness and agent workflow updates should emphasize identity, scoped permissions, sandbox evidence, session observability, and explicit handoff artifacts.",
+    "Community anecdotes should be treated as weak evidence unless supported by product documentation or repeated operational reports."
+  ],
+  "leaf_results": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-10",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 3,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-10",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 2,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://www.morphllm.com/ai-coding-costs"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md": {
+      "follow_up_note": "No qualifying public update found in the strict seven-day window.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_count": 0,
+      "qualifying_update_urls": [],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 3,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 2,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://vercel.com/blog/vercel-agent"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 5,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://vercel.com/blog/vercel-agent"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 2,
+      "qualifying_update_urls": [
+        "https://vercel.com/blog/vercel-agent",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/subagent-coordination.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 2,
+      "qualifying_update_urls": [
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-07",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 1,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/application-patterns/agent-harness-components.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 4,
+      "qualifying_update_urls": [
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://vercel.com/blog/vercel-agent"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/source-workflows/automated-update-feeds.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-08",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 2,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/source-workflows/leaf-update-watch.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/source-workflows/public-topic-news-collector.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    },
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad product/entity details to the upstream AI wiki.",
+      "last_qualified_update_at": "2026-07-06",
+      "last_result": "qualified_update_found",
+      "qualifying_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code"
+      ],
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+        "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+        "https://github.blog/changelog/label/copilot/",
+        "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+        "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+        "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+        "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+        "https://vercel.com/blog/vercel-agent",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+        "https://www.morphllm.com/ai-coding-costs",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/",
+        "https://docs.anthropic.com/en/release-notes/claude-code",
+        "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+        "https://github.com/ai-boost/awesome-harness-engineering"
+      ]
+    }
+  },
+  "leaf_universe_count": 65,
+  "named_entities": [
+    "AI Coding Insights",
+    "AI credits",
+    "Claude Code",
+    "Claude agent",
+    "Codex",
+    "Copilot CLI",
+    "Cursor",
+    "Darkplane",
+    "Dash0",
+    "DeepSeek",
+    "Gemini",
+    "GitHub",
+    "GitHub Copilot",
+    "GitHub Enterprise Cloud",
+    "Intune",
+    "Jamf",
+    "JetBrains IDEs",
+    "Kimi",
+    "MCP",
+    "MindStudio",
+    "MiniMax",
+    "Notion",
+    "Obsidian",
+    "OpenTelemetry",
+    "Qwen",
+    "VS Code",
+    "Vercel Agent",
+    "Vercel Dashboard",
+    "Vercel Sandbox",
+    "codex exec"
+  ],
+  "qualifying_updates": [
+    {
+      "date_evidence": "Page byline shows MindStudio Team, July 6, 2026.",
+      "factual_summary": "The article describes a Claude Code plus Obsidian pipeline for ingesting YouTube transcripts, PDFs, and URLs into structured Markdown notes, then notes scheduled or triggered automation can monitor external sources, fetch content, summarize it, write Markdown output, and mark source rows processed.",
+      "implicated_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "local_practice_implication": "Keep the local watch as raw-only and ledger-backed, and route any future source pipeline notes into clipping/raw intake rather than direct wiki edits.",
+      "named_entities": [
+        "MindStudio",
+        "Claude Code",
+        "Obsidian",
+        "Notion"
+      ],
+      "published_or_updated_at": "2026-07-06",
+      "source_title": "How to Build an LLM Wiki Knowledge Base with Obsidian and Claude Code",
+      "source_url": "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "MindStudio"
+      ],
+      "why_it_matters_for_leaf": "It reinforces the local source-first feed pattern: collection should preserve raw source provenance, automation state, processed markers, and wiki-facing Markdown as separate lifecycle concerns."
+    },
+    {
+      "date_evidence": "GitHub changelog page shows July 7, 2026.",
+      "factual_summary": "GitHub added Codex as a public-preview agent provider in JetBrains IDEs, expanded agent customization management for hooks and MCP servers, added approval settings for Copilot CLI sessions, and added debug-log support for Claude sessions.",
+      "implicated_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "local_practice_implication": "Local guidance should keep model/provider choice subordinate to workflow shape, approval posture, customizations, and observable session evidence.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Codex",
+        "JetBrains IDEs",
+        "Copilot CLI",
+        "Claude agent",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-07-07",
+      "source_title": "Codex as agent provider and agentic enhancements in JetBrains IDEs",
+      "source_url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Codex",
+        "Claude",
+        "MCP"
+      ],
+      "why_it_matters_for_leaf": "Agent selection is becoming a runtime/provider choice inside an IDE workflow, while hooks, MCP servers, approval modes, and debug logs are treated as first-class workflow controls."
+    },
+    {
+      "date_evidence": "GitHub changelog page shows July 8, 2026.",
+      "factual_summary": "GitHub made device-level managed Copilot settings generally available for VS Code and Copilot CLI through MDM and file-based configuration, with support for settings including bypass-permission controls, model choice, enabled plugins, marketplace restrictions, and OpenTelemetry export.",
+      "implicated_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "local_practice_implication": "When ingesting, separate repo instructions from managed endpoint policy and capture policy/telemetry settings as harness context.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "OpenTelemetry",
+        "Intune",
+        "Jamf"
+      ],
+      "published_or_updated_at": "2026-07-08",
+      "source_title": "Deploy managed Copilot settings via MDM in VS Code and CLI",
+      "source_url": "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "OpenTelemetry"
+      ],
+      "why_it_matters_for_leaf": "Persistent agent workspaces and harnesses increasingly rely on externally enforced configuration, not only repo-local instructions, to control permissions, plugins, model defaults, and telemetry."
+    },
+    {
+      "date_evidence": "GitHub changelog page shows July 7, 2026.",
+      "factual_summary": "GitHub Enterprise Cloud admins can now configure cost-center per-user AI credit budgets in the billing UI, and budgets remain synced as users or teams move in and out of a cost center.",
+      "implicated_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "local_practice_implication": "Agent cost guidance should distinguish measurement, budget assignment, and enforcement surfaces.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "GitHub Copilot",
+        "AI credits"
+      ],
+      "published_or_updated_at": "2026-07-07",
+      "source_title": "Per-user budgets for cost centers in the billing UI",
+      "source_url": "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "why_it_matters_for_leaf": "Cost telemetry is moving from after-the-fact reporting toward enforceable budget envelopes tied to users and teams."
+    },
+    {
+      "date_evidence": "Dash0 page shows Last updated: July 9, 2026.",
+      "factual_summary": "Dash0 documents an OpenTelemetry-based model for AI coding sessions: Claude Code emits token usage and model calls, a plugin enriches sessions with tool calls, skills, and conversation replay, and sessions can be joined with branch and pull-request events for productivity analysis.",
+      "implicated_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "local_practice_implication": "Future local telemetry leaves should preserve session, tool-call, skill, model, token, branch, and PR dimensions separately.",
+      "named_entities": [
+        "Dash0",
+        "Darkplane",
+        "AI Coding Insights",
+        "Claude Code",
+        "Cursor",
+        "OpenTelemetry",
+        "GitHub"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "Key Concepts for AI Coding Insights",
+      "source_url": "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+      "upstream_owned_entities": [
+        "Dash0",
+        "Claude Code",
+        "Cursor",
+        "OpenTelemetry",
+        "GitHub"
+      ],
+      "why_it_matters_for_leaf": "It provides a concrete public example of agent cost/adoption telemetry being modeled as session spans plus code-host events rather than as isolated token counters."
+    },
+    {
+      "date_evidence": "Page shows July 10, 2026.",
+      "factual_summary": "The cost analysis models coding-agent costs by cumulative input/output tokens, cache hit assumptions, task profiles, and monthly developer usage, and explicitly warns that context growth and failed attempts compound spend.",
+      "implicated_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "local_practice_implication": "Model selection should account for workflow length, cacheability, and failure loops, not only nominal model price.",
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Gemini",
+        "DeepSeek",
+        "Kimi",
+        "MiniMax",
+        "Qwen"
+      ],
+      "published_or_updated_at": "2026-07-10",
+      "source_title": "AI Coding Costs (2026): Claude vs Codex vs Gemini, Real Monthly Spend From Token Math",
+      "source_url": "https://www.morphllm.com/ai-coding-costs",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Gemini",
+        "DeepSeek",
+        "Kimi",
+        "MiniMax",
+        "Qwen"
+      ],
+      "why_it_matters_for_leaf": "It reinforces that useful agent-cost telemetry needs per-task and per-workflow accounting, cache state, context growth, and retry/failure attribution."
+    },
+    {
+      "date_evidence": "Vercel blog page shows 8 Jul 2026.",
+      "factual_summary": "Vercel Agent runs as its own principal, starts read-only, proposes action plans for approval, receives short-lived capabilities scoped to an approved plan, runs generated code in an ephemeral sandbox, and surfaces tested fixes or PRs rather than directly changing production without approval.",
+      "implicated_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "local_practice_implication": "Agent handoff guidance should track who approved a plan, what capability was granted, which sandbox evidence passed, and what artifact was returned for review.",
+      "named_entities": [
+        "Vercel Agent",
+        "Vercel Sandbox",
+        "GitHub",
+        "Vercel Dashboard"
+      ],
+      "published_or_updated_at": "2026-07-08",
+      "source_title": "Vercel Agent: An agent you can let near production",
+      "source_url": "https://vercel.com/blog/vercel-agent",
+      "upstream_owned_entities": [
+        "Vercel Agent",
+        "Vercel Sandbox",
+        "GitHub"
+      ],
+      "why_it_matters_for_leaf": "This is a concrete production-agent harness pattern: identity, plan-scoped permissions, sandboxed verification, observable handoff, and human approval are infrastructure concerns, not prompt-only conventions."
+    },
+    {
+      "date_evidence": "OpenAI community thread shows July 4, 2026 timestamps.",
+      "factual_summary": "A public user report describes friction in a multi-agent coding workflow where a main agent had role files for domain owners but repeatedly interpreted activation and monitoring as delegation/supervision, prompting discussion of contradictory role instructions and tool-mediated spawning.",
+      "implicated_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "local_practice_implication": "Treat community anecdotes as weak evidence for practice risks, and route broad product claims upstream or exclude them unless corroborated.",
+      "named_entities": [
+        "Codex",
+        "Claude Code",
+        "codex exec"
+      ],
+      "published_or_updated_at": "2026-07-04",
+      "source_title": "How to Curb GPT's Ambition to Become a Leader",
+      "source_url": "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude Code"
+      ],
+      "why_it_matters_for_leaf": "The thread is anecdotal, but it usefully illustrates why subagent coordination needs scoped role loading, explicit spawn boundaries, and non-contradictory handoff contracts."
+    }
+  ],
+  "run_timestamp": "2026-07-10T21:02:09-04:00",
+  "run_timestamp_utc": "2026-07-11T01:02:09Z",
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md"
+  ],
+  "source_urls_checked": [
+    "https://www.mindstudio.ai/blog/build-llm-wiki-knowledge-base-obsidian-claude-code",
+    "https://www.langchain.com/blog/fix-your-coding-agent-bill",
+    "https://github.blog/changelog/label/copilot/",
+    "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+    "https://github.blog/changelog/2026-07-08-deploy-managed-copilot-settings-via-mdm-in-vs-code-and-cli/",
+    "https://github.blog/changelog/2026-07-07-per-user-budgets-for-cost-centers-in-the-billing-ui/",
+    "https://github.blog/changelog/2026-07-02-copilot-agent-session-streaming-is-now-in-public-preview/",
+    "https://vercel.com/blog/vercel-agent",
+    "https://vercel.com/blog/ai-sdk-7",
+    "https://www.dash0.com/docs/dash0/darkplane/ai-coding/key-concepts",
+    "https://www.morphllm.com/ai-coding-costs",
+    "https://openai.com/index/codex-for-every-role-tool-workflow/",
+    "https://docs.anthropic.com/en/release-notes/claude-code",
+    "https://community.openai.com/t/how-to-curb-gpts-ambition-to-become-a-leader/1385720",
+    "https://github.com/ai-boost/awesome-harness-engineering"
+  ],
+  "upstream_owned_entities": [
+    "Claude",
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Dash0",
+    "DeepSeek",
+    "Gemini",
+    "GitHub",
+    "GitHub Copilot",
+    "Kimi",
+    "MCP",
+    "MindStudio",
+    "MiniMax",
+    "OpenTelemetry",
+    "Qwen",
+    "VS Code",
+    "Vercel Agent",
+    "Vercel Sandbox"
+  ]
+}
