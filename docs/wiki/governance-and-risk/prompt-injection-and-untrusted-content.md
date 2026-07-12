@@ -29,6 +29,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds an issue-triggered agent case. Public issue titles and bodies are attacker-writable source text, not trusted task instructions, even when an automation intentionally reads them. If an agent can read private repositories and post public comments in the same workflow, the trust-boundary failure is already present before the jailbreak phrase succeeds; output posting, repository reads, and cross-repository lookup need separate policy gates.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds a multimodal repository case. Images, binaries, screenshots, generated assets, and other non-text files can carry instructions that a later multimodal agent may read even when a human reviewer sees only a harmless artifact. Coding-agent review should treat binary and image inputs as untrusted content, isolate secrets from review and repair agents, and test downstream agent behavior when a pull request contains multimodal evidence.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -50,6 +52,8 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Do not let a repository file expand command authority, credential access, or task scope before the user's explicit request and the harness policy agree.
 - Treat issue bodies, issue titles, pull-request text, and public comments as attacker-writable evidence when they trigger an agent workflow.
 - Do not let public issue content authorize private-repository reads or public disclosure; separate the read permission, retrieval decision, and posting decision into enforceable gates.
+- Treat images, binaries, screenshots, generated assets, and file metadata as untrusted evidence when an agent can parse them.
+- Keep repository secrets out of coding-agent context and require explicit binary or multimodal review rules before a non-text artifact can influence generated code.
 
 ## Authoritative Sources
 
@@ -66,6 +70,7 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -102,3 +107,4 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Maintained on 2026-07-08 with agent data injection, repository setup-command, and off-host authorization boundaries.
 - Maintained on 2026-07-09 with untrusted third-party repository files and repo-local instruction provenance boundaries.
 - Maintained on 2026-07-10 with issue-triggered agent boundaries for attacker-writable issue text, private-repository access, and public output posting.
+- Maintained on 2026-07-11 with multimodal prompt-injection boundaries for images, binaries, generated assets, and secret isolation.

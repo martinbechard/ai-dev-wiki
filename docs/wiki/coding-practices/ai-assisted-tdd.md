@@ -15,6 +15,8 @@ The local loop is to add or repair one meaningful failing test, implement the sm
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds an agentic requirement-compilation lens. When requirements are large, multi-modal, or DSL-backed, tests should preserve traceability from source requirement to generated architecture, acceptance check, implementation, and verification result. Broad framework background belongs upstream; locally, TDD keeps requirement interpretation executable and reviewable.
 
+The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) reinforces TDD as an AI coding stabilizer. Tests force design intent into executable constraints before the agent drafts implementation, and regression checks protect behavior when generated code is refactored or trimmed.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -25,6 +27,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Carry failure output into the next request package instead of asking the model to guess.
 - Link generated tests to the source requirement or decision they protect when an agent turns requirements into code.
 - Use failing tests to expose requirement interpretation errors before accepting generated architecture or implementation.
+- Use tests and behavior inventories to constrain AI-generated refactors before large cleanup or bloat-removal passes.
 
 ## Authoritative Sources
 
@@ -33,6 +36,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [Orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [Generated code refactoring](generated-code-refactoring.md)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 
 ## Related Code
 
@@ -60,3 +64,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.
+- Maintained on 2026-07-11 with TDD as an executable constraint for AI-generated code cleanup and refactoring.

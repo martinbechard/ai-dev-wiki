@@ -45,6 +45,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add enterprise session-forensics and shared-runtime signals. Governance infrastructure should preserve prompts, tool usage, MCP activity, command execution, agent actions, skills, rules, model enablement, runtime policy decisions, and shadow-AI inventory as reviewable evidence, while separating product-specific catalogs into the upstream wiki.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds upfront fleet-governance and shadow-AI signals. Agent governance should start before pilots spread: maintain an inventory of sanctioned and unsanctioned agent surfaces, assign owners, enforce policy through gateways or managed settings, monitor usage and cost, and define risk-based response paths for developer use of unapproved AI coding or review tools.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -84,6 +86,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Pair governed sensitive-code harnesses with sandbox evidence, deny-by-default networking, credential separation, and human approval records.
 - Capture session forensics across prompts, tools, MCP activity, commands, generated rules, skills, and agent actions when those records support runtime enforcement or incident review.
 - Inventory unmanaged coding-agent surfaces and code-enabled managed runtimes before treating IDE or platform policy as complete.
+- Start agent-fleet governance with ownership, inventory, policy enforcement, monitoring, and cost controls instead of treating those controls as post-pilot cleanup.
+- Track unauthorized AI development tools through sanctioned-tool inventories, acceptable-use policy, training, monitoring, and risk-based response paths.
 
 ## Authoritative Sources
 
@@ -114,6 +118,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -160,3 +165,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-06 with configuration-as-code, compliance-as-code, procurement, identity, retention, and spend-control evidence.
 - Maintained on 2026-07-08 with managed endpoint policy, trace export controls, identity-bound authorization, and governed sensitive-code harness evidence.
 - Maintained on 2026-07-09 with runtime session forensics, shadow-AI inventory, model-enable policy, and shared managed-runtime governance evidence.
+- Maintained on 2026-07-11 with upfront fleet governance, sanctioned-tool inventory, shadow-AI monitoring, and cost-control requirements.

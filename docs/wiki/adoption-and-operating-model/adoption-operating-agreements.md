@@ -19,6 +19,8 @@ Broad vendor and product comparisons belong to the upstream AI wiki. This page o
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds outcome-based agent adoption and skills progression signals. Operating agreements should distinguish seat-based rollout from outcome-owned agent workflows, and should name the training sequence, guardrails, and review evidence required before teams expand autonomy.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds governance-first and developer-role signals. As agents draft more code and artifacts, operating agreements should make review depth, specification quality, evaluation habits, security judgment, orchestration accountability, sanctioned-tool use, and shadow-AI response part of adoption practice rather than treating prompt syntax as the core skill.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -36,6 +38,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Keep ecosystem product comparisons upstream unless they directly change the local operating rule.
 - Record missing local rollout stages as Not yet identified instead of inventing a maturity model.
 - Tie autonomy expansion to outcome ownership, developer training sequence, guardrails, and review evidence rather than license availability.
+- Train teams for review, specification, evaluation, security, orchestration, and debugging of agent-written work before expanding autonomy.
+- Include sanctioned-tool inventories, acceptable-use policy, and shadow-AI response paths in operating agreements for development teams.
 
 ## Authoritative Sources
 
@@ -45,6 +49,7 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [Process autonomy source](../../../raw/processed/Allen Holub - On process.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -73,3 +78,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Created on 2026-06-23 from local source guidance on scaling practice, skill files, workflow choice, tiers, and human acceptance.
 - Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.
 - Maintained on 2026-07-09 with outcome-owned agent workflows, staged developer training, guardrails, and autonomy-expansion evidence.
+- Maintained on 2026-07-11 with governance-first rollout, shadow-AI response, and developer skill shifts toward review, specification, eval, security, and orchestration.

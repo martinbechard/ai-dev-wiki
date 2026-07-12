@@ -35,6 +35,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds an operating-model signal for AI-authored pull requests. Code review should protect understanding retention, reviewer capacity, explicit responsibility, and machine-assisted evidence together. When agents author complete PRs, the review workflow needs clear ownership for what the human reviewer must understand, what automated checks can cover, and what evidence the submitting agent must provide.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add four review-quality signals: multimodal pull-request artifacts can hide agent-readable instructions, model choice is only one part of governed review, full-repository context is needed for security and design findings, and AI-discovered security issues still need patch verification. Review should therefore include binary or image handling rules, repository-context requirements, signal-to-noise controls, and source-to-patch evidence rather than accepting fluent comments as coverage.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -67,6 +69,9 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Run autonomous review of untrusted third-party repositories inside disposable workspaces with constrained execution and human-approved setup steps.
 - Treat AI-authored PR review as a capacity and understanding-retention problem, not only as a defect-detection problem.
 - Require submitters to provide source, test, trace, and design evidence that lets reviewers retain system understanding while relying on machine-assisted checks.
+- Include image, binary, and generated-asset handling rules when a review or follow-on coding agent can inspect multimodal pull-request content.
+- Evaluate AI review systems by repository context, actionable findings, false-positive control, fix validation, and human judgment support rather than model branding alone.
+- Require patch-verification evidence for AI-assisted security findings before treating a vulnerability report as resolved.
 
 ## Authoritative Sources
 
@@ -89,6 +94,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 
 ## Related Code
 
@@ -127,3 +134,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-07 with agent-authorship metadata, violation attribution, contribution-policy accountability, and security-localization eval controls.
 - Maintained on 2026-07-09 with organization-scoped review targeting and untrusted-repository autonomous review boundaries.
 - Maintained on 2026-07-10 with AI-authored PR review capacity, understanding-retention, and evidence-package requirements.
+- Maintained on 2026-07-11 with multimodal PR review, repository-context, signal-to-noise, and patch-verification requirements.

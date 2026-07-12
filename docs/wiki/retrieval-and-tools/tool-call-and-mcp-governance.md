@@ -41,6 +41,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds MCP identity-interoperability and task-based access-control signals. MCP gateways should treat identity and authorization as runtime architecture: a tool call should carry user or trigger identity, agent identity, task scope, short-lived credential scope, quota or budget limit, and approval state. Broad standards and product background stays upstream; locally, MCP governance should reject broad standing credentials when the action should be scoped to one task.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) reinforces gateway-mediated MCP and agent-authentication practice. Centralized MCP registration, user-agent-task authorization, SSO or directory integration, audit logs, token custody, and per-tool deployment control are local governance criteria when teams expose developer tools through agents. Product comparisons stay upstream; locally, the rule is that a convenient local MCP configuration is not enough when tool calls need enforceable policy and reviewable identity evidence.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -76,6 +78,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Record prompts, commands, MCP activity, tool usage, skills, rules, and approval-setting changes as tool-surface evidence for high-impact coding-agent sessions.
 - Require MCP gateways to preserve task, principal, agent, credential, quota, approval, and policy-decision evidence for delegated tool calls.
 - Use task-scoped authorization for agent tool access when stable user, team, or service-account entitlements would grant more authority than the current task needs.
+- Distinguish local MCP setup convenience from gateway-enforced access policy, identity, token custody, audit logs, and deployment control.
+- Specify where user-agent-task authorization is enforced before a tool call reaches an external system.
 
 ## Authoritative Sources
 
@@ -103,6 +107,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -145,3 +150,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-08 with managed workspace MCP configuration, marketplace, hook, permission-mode, and debug-log governance.
 - Maintained on 2026-07-09 with shared GUI-and-agent operation paths, session forensics, and generated customization evidence.
 - Maintained on 2026-07-10 with MCP identity interoperability and task-scoped access-control evidence.
+- Maintained on 2026-07-11 with gateway-mediated MCP access, agent-authentication enforcement, token custody, and audit-log criteria.

@@ -23,6 +23,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds two security-repair pressures: defensive agents can be hijacked by untrusted repository contents, and AI-assisted vulnerability management needs human review, broad validation, deployment monitoring, and rollback. Security repair gates should treat code review of untrusted dependencies and fix deployment safety as one loop from evidence to rollback readiness.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add systematic agentic-security testing and AI-discovered vulnerability signals. Security teams should translate prompt injection, excessive agency, improper output handling, and AI-generated vulnerability findings into repeatable tests, coverage tracking, patch provenance, fixed-package checks, and human operational judgment.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -40,6 +42,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Require provenance and TOCTOU checks when an agent reads repository state and then executes a derived repair or setup path.
 - Use disposable, constrained environments for defensive review of untrusted repositories and dependency candidates.
 - Pair AI-generated security fixes with representative validation, human code review, deployment monitoring, and rollback evidence before acceptance.
+- Map agentic-security risk categories to repeatable tests, coverage tracking, ownership, and remediation evidence.
+- Confirm patch availability, fixed-package status, and source provenance before accepting an AI-discovered vulnerability as resolved.
 
 ## Authoritative Sources
 
@@ -52,6 +56,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents.md)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 
 ## Related Code
 
@@ -82,3 +88,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.
 - Maintained on 2026-07-08 with execution-security gates for setup commands, filesystem and network access, provenance, generated code, and TOCTOU risk.
 - Maintained on 2026-07-09 with untrusted-repository defensive review and fix-to-deployment rollback gates.
+- Maintained on 2026-07-11 with repeatable agentic-security tests, AI-discovered vulnerability provenance, and fixed-package verification gates.

@@ -21,6 +21,8 @@ The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds production runtime evidence. Harness design should model an agent runtime as a service with invocation contracts, session isolation, explicit state buckets, telemetry traces, retries, and human waits. Product and framework details remain upstream-owned; locally, these are harness obligations that make agent workflows operable after prototype stage.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add production-monitoring and harness-taxonomy signals. A product harness should separate model-output observability from application-runtime observability, preserve traces that distinguish retrieval, prompt, model, tool, and application failures, and treat reusable harness primitives as design surfaces for context delivery, tool interfaces, planning artifacts, verification loops, memory systems, permissions, sandboxes, and telemetry.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -37,6 +39,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Treat harness design as a workflow tradeoff between control, latency, flexibility, validation cost, and operating burden.
 - Keep custom runtime and model choices tied to workflow differentiation, validation evidence, and operating cost.
 - Treat agent runtimes as deployed services with invocation contracts, session isolation, explicit state buckets, telemetry traces, retries, and human waits.
+- Separate model-output quality monitoring from application-runtime monitoring so repair loops can distinguish retrieval, prompt, model, tool, and code-path defects.
+- Treat harness primitives such as context delivery, permissions, memory, tool interfaces, planning artifacts, verification loops, sandboxes, and telemetry as explicit design surfaces.
 
 ## Authoritative Sources
 
@@ -47,6 +51,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
 - [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -79,3 +85,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Maintained on 2026-06-23 as the overview page for split application harness leaves.
 - Maintained on 2026-06-24 with harness category and progress-telemetry signals from the [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-07-07 with production runtime, invocation-contract, session-isolation, state-bucket, and telemetry-trace obligations.
+- Maintained on 2026-07-11 with model-output versus runtime observability and reusable harness primitive taxonomy.

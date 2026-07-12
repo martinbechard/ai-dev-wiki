@@ -17,6 +17,8 @@ The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Ever
 
 The July 7 raw sources add a verification-cost refinement. The [topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json) separates tool-use failures and vulnerability localization from final success labels, while the [leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds step-level state scoring and runtime telemetry. Acceptance gates should therefore check the evidence path when tool use, security, or runtime state matters, not only the final answer.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds a verification-gap warning. AI coding assistants can reduce generation cost faster than teams increase validation capacity, so acceptance gates should explicitly budget test authoring, maintainability review, architecture judgment, regression ownership, and human acceptance. Throughput is not a success measure until generated changes survive the required verification path.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -27,6 +29,7 @@ The July 7 raw sources add a verification-cost refinement. The [topic news colle
 - Keep human acceptance explicit for consequential changes, external actions, or uncertain evidence.
 - Encode recurring proof standards in skills and runbooks so completion checks travel with the procedure.
 - Add trace, step-state, tool-result-use, localization, and runtime telemetry gates when final output can hide the failure mode.
+- Treat validation capacity as the bottleneck for AI-assisted delivery and plan review, tests, maintainability checks, and regression ownership before increasing generation throughput.
 
 ## Authoritative Sources
 
@@ -37,6 +40,7 @@ The July 7 raw sources add a verification-cost refinement. The [topic news colle
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -66,3 +70,4 @@ The July 7 raw sources add a verification-cost refinement. The [topic news colle
 - Created on 2026-06-23 to hold verification-tax and acceptance-gate practice for agentic delivery.
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.
 - Maintained on 2026-07-07 with evidence-path gates for tool-use, localization, step-state, and runtime telemetry failures.
+- Maintained on 2026-07-11 with verification-gap guidance for validation capacity, maintainability review, and regression ownership.

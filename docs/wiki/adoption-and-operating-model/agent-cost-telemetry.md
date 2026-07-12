@@ -41,6 +41,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds budget, observability, and coding-cost taxonomy signals. Per-user budgets, coding-agent cost concepts, and public cost analyses are useful locally when they split token usage, context growth, tool execution, cache behavior, verification work, and accepted outcomes. Broad vendor billing details stay upstream; this page owns the workflow decision about whether a cost spike reflects useful evidence gathering, runaway context, repeated retries, or missing scope controls.
 
+The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds price-claim and benchmark-provenance signals. Coding-agent pricing claims should be interpreted through cost per verified outcome, not list price alone, and benchmark claims should carry provenance and contamination checks before they influence model-routing or adoption decisions.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -73,6 +75,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - Map multi-agent platform cost and use analytics to workflow packages, roles, and accepted modernization or repair outcomes.
 - Separate token, context, cache, tool, sandbox, verification, retry, and reviewer-effort costs before deciding whether to cap, redesign, or expand a workflow.
 - Treat per-user or cost-center budgets as guardrails that should trigger workflow review when they stop useful work or permit wasteful loops.
+- Compare coding-agent prices by verified outcome, review effort, verification cost, and accepted result rather than list price alone.
+- Record benchmark provenance and contamination risk when benchmark claims influence cost-performance or model-routing decisions.
 
 ## Authoritative Sources
 
@@ -96,6 +100,7 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
+- [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 
 ## Related Code
 
@@ -135,3 +140,4 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - Maintained on 2026-07-08 with review-cycle outcome metrics and synchronized cost-center budget membership.
 - Maintained on 2026-07-09 with admin-enabled model-route cost attribution and multi-agent platform cost analytics.
 - Maintained on 2026-07-10 with token, context, cache, tool, verification, retry, and budget-stop cost taxonomy signals.
+- Maintained on 2026-07-11 with cost-per-verified-outcome and benchmark-provenance controls for coding-agent price claims.
