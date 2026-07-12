@@ -1,0 +1,349 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-11T21:02:42-04:00",
+    "rule": "Only public sources published or visibly updated within the last 7 days relative to run time qualify.",
+    "start": "2026-07-04T21:02:42-04:00"
+  },
+  "excluded_candidate_count": 5,
+  "excluded_candidates": [
+    {
+      "candidate_topic": "AI agent workflows, routing, memory, tool schemas, and orchestration",
+      "reason": "Fetched page visibly says Jun 22, 2026, which is outside the cutoff despite the search result saying 6 days ago.",
+      "source_url": "https://mastra.ai/articles/ai-agent-workflows",
+      "visible_date": "2026-06-22"
+    },
+    {
+      "candidate_topic": "Harness engineering constraints, feedback loops, and quality gates",
+      "reason": "Fetched page visibly says last updated Jun 29, 2026, which is outside the seven-day window for this run.",
+      "source_url": "https://www.augmentcode.com/guides/harness-engineering-ai-coding-agents",
+      "visible_date": "2026-06-29"
+    },
+    {
+      "candidate_topic": "Structured output specification",
+      "reason": "No visible publication or update date in fetched search evidence; excluded even though the topic is relevant.",
+      "source_url": "https://agentic-patterns.com/patterns/structured-output-specification/",
+      "visible_date": null
+    },
+    {
+      "candidate_topic": "Pydantic AI structured output validation",
+      "reason": "Documentation page had relevant structured-output content but no visible recent publication or update date in fetched evidence.",
+      "source_url": "https://pydantic.dev/docs/ai/core-concepts/output/",
+      "visible_date": null
+    },
+    {
+      "candidate_topic": "Spec plus TDD for AI-generated code",
+      "reason": "Search result indicated the source is about three months old, outside the cutoff.",
+      "source_url": "https://www.augmentcode.com/guides/spec-tdd-shippable-ai-generated-code",
+      "visible_date": "2026-04"
+    }
+  ],
+  "federation_routing": {
+    "local_ai_dev_wiki_owned_lens": "AI-assisted development practice: context architecture, guidance structure, operating practices, workflows, verification, governance, and adoption patterns.",
+    "note": "Broad entity details should be routed upstream; this artifact preserves only local practice implications for later ingest.",
+    "upstream_ai_wiki_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques",
+      "broad ecosystem vulnerability background"
+    ]
+  },
+  "follow_up_notes": [
+    "Ingest should decide whether to update verification leaves with Databricks and JetBrains benchmark methodology as examples of representative, codebase-specific calibration.",
+    "Consider updating judge/grader boundaries with Arize trace/span/session scoring levels and evaluator type distinctions.",
+    "Consider updating compiled wiki/source-routing leaves with LangChain wiki memory and Atlan context freshness/trust metadata framing.",
+    "Review generated-code refactoring and AI-assisted TDD leaves for behavior inventory, regression checklist, and CI guardrail language from Slopfix and Exadel.",
+    "Keep broad product, framework, vulnerability, and vendor facts in the upstream AI wiki."
+  ],
+  "privacy_and_sensitivity_notes": "No private local page bodies or company-internal content were sent in search queries; searches used public topic names and public source URLs only.",
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "date_basis": "Search result showed 3 days ago relative to the 2026-07-11 run; page content describes current benchmark methodology.",
+      "factual_summary": "Databricks described an internal benchmark for coding agents using actual tasks performed by engineers on a multi-million-line codebase, with tasks and solutions reviewed for accuracy and performance analyzed against price.",
+      "id": "databricks-real-codebase-coding-agent-benchmark-2026-07-08",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "Databricks",
+        "coding agents",
+        "multi-million-line codebase benchmark"
+      ],
+      "source_url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+      "upstream_owned_entities": [
+        "Databricks",
+        "coding agent products and models"
+      ],
+      "visible_date": "2026-07-08",
+      "why_it_matters": "Supports local practice leaves that prefer representative workflow calibration and repository-specific evals over generic benchmark claims."
+    },
+    {
+      "date_basis": "Search result showed 4 days ago relative to the 2026-07-11 run; URL and article path are dated July 2026.",
+      "factual_summary": "JetBrains released an official Kotlin Benchmark for AI coding agents, with assets on GitHub and a leaderboard. The post emphasizes end-to-end Kotlin tasks and warns that benchmark scores are signals, not guarantees for every codebase.",
+      "id": "jetbrains-kotlin-benchmark-for-ai-coding-agents-2026-07-07",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "JetBrains",
+        "Kotlin Benchmark",
+        "AI coding agents"
+      ],
+      "source_url": "https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/",
+      "upstream_owned_entities": [
+        "JetBrains",
+        "Kotlin",
+        "coding agent products"
+      ],
+      "visible_date": "2026-07-07",
+      "why_it_matters": "Reinforces that agent evaluation should use language/ecosystem-specific tasks plus local architecture, API, standards, tooling, and validation checks."
+    },
+    {
+      "date_basis": "Page visibly says Published July 10, 2026.",
+      "factual_summary": "Arize framed production agents as customer-facing agents, internal enterprise agents, and developer platform agents. It maps each pattern to harness, memory, evals, observability, rollout risks, trace-level scoring, deterministic/code evaluators, binary evaluators, LLM judges, and human labeling.",
+      "id": "arize-production-agent-patterns-and-eval-loop-2026-07-10",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "Arize",
+        "Mastra",
+        "production agents",
+        "LLM-as-a-judge",
+        "Harness-as-a-Judge",
+        "OpenTelemetry"
+      ],
+      "source_url": "https://arize.com/blog/3-production-patterns-ai-agents-how-to-evaluate-each-one/",
+      "upstream_owned_entities": [
+        "Arize",
+        "Mastra",
+        "OpenTelemetry"
+      ],
+      "visible_date": "2026-07-10",
+      "why_it_matters": "Gives direct practice implications for product judgment gates, judge/grader boundaries, runtime telemetry, and harness loops that change prompts, tools, context, or rubrics based on trace evidence."
+    },
+    {
+      "date_basis": "Search result showed published last week relative to the 2026-07-11 run; page itself did not expose a precise date in fetched text.",
+      "factual_summary": "LangChain described wiki memory as an agent-maintained, persistent, structured, inspectable data structure for source knowledge that future agents can use to understand a domain faster.",
+      "id": "langchain-wiki-memory-agent-maintained-knowledge-2026-07-week",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "LangChain",
+        "wiki memory",
+        "agent-maintained data structure"
+      ],
+      "source_url": "https://www.langchain.com/blog/wiki-memory",
+      "upstream_owned_entities": [
+        "LangChain"
+      ],
+      "visible_date": "2026-07 week",
+      "why_it_matters": "Matches the local compiled-wiki and source-routing practice, especially the separation between raw source material and maintained agent-friendly knowledge."
+    },
+    {
+      "date_basis": "Search result showed 3 days ago relative to the 2026-07-11 run; page title is a 2026 guide.",
+      "factual_summary": "Sonar argued that AI code review tools should use full repository context, detect security, logic, and design issues, control false positives, validate fixes, fit native workflows, and augment rather than replace human judgment.",
+      "id": "sonar-ai-code-review-enterprise-guide-2026-07-08",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "named_entities": [
+        "Sonar",
+        "SonarQube",
+        "Gitar",
+        "AI code review tools"
+      ],
+      "source_url": "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/",
+      "upstream_owned_entities": [
+        "Sonar",
+        "Gitar"
+      ],
+      "visible_date": "2026-07-08",
+      "why_it_matters": "Directly supports intelligent code review and PR packaging leaves: diff-only comments are insufficient, and review quality depends on context, risk, contracts, and signal-to-noise."
+    },
+    {
+      "date_basis": "Page visibly says Published 8 July 2026.",
+      "factual_summary": "Tom's Hardware reported on Slopfix, a service that trims AI-generated code bloat using supervised coding agents. The process starts with a written inventory of application behavior that doubles as a regression checklist, then leaves guardrails such as instruction files, lint rules, and CI checks.",
+      "id": "tomshardware-slopfix-ai-generated-code-bloat-2026-07-08",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "named_entities": [
+        "Slopfix",
+        "GitClear",
+        "AI-generated code bloat",
+        "CLAUDE.md"
+      ],
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-team-of-engineers-called-slopfix-charges-10000-a-week-to-delete-ai-generated-code-using-ai-agents",
+      "upstream_owned_entities": [
+        "Slopfix",
+        "GitClear",
+        "Claude Code"
+      ],
+      "visible_date": "2026-07-08",
+      "why_it_matters": "Provides a concrete practice signal that generated-code refactoring needs behavior inventory, regression checks, guardrails, and human control rather than raw line deletion."
+    },
+    {
+      "date_basis": "Search result showed published last week relative to the 2026-07-11 run; fetched page did not expose a precise date in text.",
+      "factual_summary": "Exadel argued that TDD is becoming more valuable with AI coding because tests force explicit design intent before implementation and counter the instability and debt that can follow loosely directed AI-generated code.",
+      "id": "exadel-tdd-ai-coding-quality-2026-07-week",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "named_entities": [
+        "Exadel",
+        "Test-Driven Development",
+        "DORA",
+        "Kent Beck"
+      ],
+      "source_url": "https://exadel.com/news/test-driven-development-ai-coding",
+      "upstream_owned_entities": [
+        "Exadel",
+        "DORA",
+        "Kent Beck"
+      ],
+      "visible_date": "2026-07 week",
+      "why_it_matters": "Supports keeping failing tests and acceptance checks as the agent's concrete target, especially for enterprise systems where AI speed without design constraints can compound debt."
+    },
+    {
+      "date_basis": "Search result showed today relative to the 2026-07-11 run; GitHub page exposes repository activity and content.",
+      "factual_summary": "The public awesome-harness-engineering repository curates harness engineering tools, patterns, evals, memory, MCP, permissions, observability, orchestration, templates, and reference implementations, framing harness work around context delivery, tool interfaces, planning artifacts, verification loops, memory systems, and sandboxes.",
+      "id": "ai-boost-awesome-harness-engineering-repo-2026-07-11",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "named_entities": [
+        "ai-boost",
+        "awesome-harness-engineering",
+        "MCP",
+        "agent harness"
+      ],
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "upstream_owned_entities": [
+        "MCP",
+        "specific agent tools and frameworks"
+      ],
+      "visible_date": "2026-07-11",
+      "why_it_matters": "Signals that harness primitives are consolidating into reusable practice categories that map to local application harness, structured output, telemetry, and context-memory leaves."
+    },
+    {
+      "date_basis": "Page visibly says Updated:07/06/2026 and Published:07/06/2026.",
+      "factual_summary": "Atlan described agent context as four structured inputs: system instructions, retrieved knowledge, memory, and tool I/O. It recommends persistence boundaries, trust metadata on retrieved records, per-field refresh cadence, and multi-step validation.",
+      "id": "atlan-agent-context-layers-schema-memory-2026-07-06",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "named_entities": [
+        "Atlan",
+        "context layer",
+        "agent context schema",
+        "MCP"
+      ],
+      "source_url": "https://atlan.com/know/ai-agent/how-to-structure-context-for-ai-agents/",
+      "upstream_owned_entities": [
+        "Atlan",
+        "MCP"
+      ],
+      "visible_date": "2026-07-06",
+      "why_it_matters": "Directly supports local guidance for compiled wiki memory, source reconciliation, and AI process-layer state by making freshness, trust metadata, and multi-step validation explicit context-schema requirements."
+    },
+    {
+      "date_basis": "Search result showed today relative to the 2026-07-11 run; page is a current weekly security roundup.",
+      "factual_summary": "WIRED reported that Nebula Security used an AI-driven bug-hunting tool, VEGA, to find GhostLock, a long-lived Linux kernel privilege-escalation flaw. The roundup notes uneven patch availability and the need for defenders to confirm fixed packages.",
+      "id": "wired-ai-found-linux-root-bug-2026-07-11",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "named_entities": [
+        "WIRED",
+        "Nebula Security",
+        "VEGA",
+        "GhostLock",
+        "CVE-2026-43499",
+        "Linux kernel"
+      ],
+      "source_url": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+      "upstream_owned_entities": [
+        "Nebula Security",
+        "VEGA",
+        "GhostLock",
+        "Linux kernel vulnerabilities"
+      ],
+      "visible_date": "2026-07-11",
+      "why_it_matters": "Broad vulnerability details belong upstream, but the local code-review implication is that AI-assisted security findings still need patch-verification gates, source provenance, and human operational judgment."
+    }
+  ],
+  "run_timestamp": "2026-07-11T21:02:42-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+  ],
+  "source_urls_checked": [
+    "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+    "https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/",
+    "https://arize.com/blog/3-production-patterns-ai-agents-how-to-evaluate-each-one/",
+    "https://www.langchain.com/blog/wiki-memory",
+    "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-team-of-engineers-called-slopfix-charges-10000-a-week-to-delete-ai-generated-code-using-ai-agents",
+    "https://exadel.com/news/test-driven-development-ai-coding",
+    "https://github.com/ai-boost/awesome-harness-engineering",
+    "https://atlan.com/know/ai-agent/how-to-structure-context-for-ai-agents/",
+    "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+    "https://mastra.ai/articles/ai-agent-workflows",
+    "https://www.augmentcode.com/guides/harness-engineering-ai-coding-agents"
+  ]
+}
