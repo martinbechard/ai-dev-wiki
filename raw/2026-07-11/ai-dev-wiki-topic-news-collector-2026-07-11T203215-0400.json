@@ -1,0 +1,456 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-11T20:32:15-04:00",
+  "run_timestamp_utc": "2026-07-12T00:32:15Z",
+  "cutoff_window": {
+    "start": "2026-07-09T20:32:15-04:00",
+    "start_utc": "2026-07-10T00:32:15Z",
+    "end": "2026-07-11T20:32:15-04:00",
+    "end_utc": "2026-07-12T00:32:15Z",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, boundary-only, stale, or previously captured items."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_policy": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_scope": "AI-assisted development practice lens: context architecture, source workflows, durable instructions, agent operating practices, coding practices, retrieval and tool governance, verification, application harness patterns, governance, risk, and team adoption.",
+    "collector_boundary": "Items name upstream-owned entities when useful, but only the local practice implication is retained for downstream ingest."
+  },
+  "search_summary": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "queries": [
+      "AI coding agents context engineering July 11 2026",
+      "AI code review agents July 11 2026 software engineering",
+      "MCP governance AI agents July 11 2026",
+      "software engineering evals coding agents July 11 2026",
+      "site:github.blog/changelog July 11 2026 Copilot coding agent",
+      "site:openai.com/index July 10 2026 codex",
+      "\"July 11, 2026\" \"AI code review\"",
+      "\"July 10, 2026\" \"MCP\" \"agent\" \"governance\"",
+      "\"July 11, 2026\" \"MCP\" \"Claude Code\" \"gateway\"",
+      "site:arcade.dev/blog \"7 Best AI Agent Authentication Platforms\" \"July\"",
+      "site:scoutapm.com/blog \"Monitoring AI Applications in 2026\" \"July 11, 2026\"",
+      "site:adaptivesecurity.com/blog \"Shadow AI Detection\" \"JULY 10, 2026\""
+    ]
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-07-11-ghostcommit-image-prompt-injection",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+      "source_title": "'Ghostcommit' hides prompt injection in images to fool AI agents, steal secrets",
+      "visible_date": "July 11, 2026 05:03 AM",
+      "summary": "BleepingComputer reported on a proof of concept pull request that hides malicious instructions in a PNG so a code reviewer misses them, while a later coding agent reads the image and writes repository secrets into source.",
+      "practice_relevance": "AI code review and coding-agent workflows need multimodal prompt-injection checks, explicit image and binary review rules, secret access isolation, and tests that cover downstream agent behavior after human review.",
+      "named_entities": [
+        "Ghostcommit",
+        "AI code review",
+        "coding agent",
+        "PNG",
+        ".env"
+      ],
+      "upstream_owned_entities": [
+        "Ghostcommit"
+      ],
+      "routing_note": "Keep exploit/entity background upstream if covered; retain the downstream practice implication for prompt-injection review gates and secret isolation."
+    },
+    {
+      "id": "2026-07-10-tabnine-verification-gap",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.tabnine.com/blog/ai-verification-gap-code-quality/",
+      "source_title": "The Verification Gap: Why Faster Code Generation Is Making Software Quality Worse",
+      "visible_date": "July 10, 2026",
+      "summary": "Tabnine argued that AI coding assistants have reduced the cost of code generation while leaving validation, testing, maintainability, and architectural judgment as the constrained parts of delivery.",
+      "practice_relevance": "Local verification guidance should frame AI-assisted development around verification capacity, regression ownership, and maintainability review instead of measuring only generated-code throughput.",
+      "named_entities": [
+        "Tabnine",
+        "AI coding assistants",
+        "verification gap"
+      ],
+      "upstream_owned_entities": [
+        "Tabnine"
+      ],
+      "routing_note": "Route vendor/product background upstream; keep the local practice lens on verification tax and quality gates."
+    },
+    {
+      "id": "2026-07-10-workato-agent-governance",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.workato.com/the-connector/ai-agent-governance/",
+      "source_title": "Why AI Agent Governance Can't Be an Afterthought",
+      "visible_date": "July 10, 2026",
+      "summary": "Workato described agent governance as the combined organizational and technical controls needed to deploy, monitor, manage, secure, and cost-control agent fleets before sprawl becomes unmanageable.",
+      "practice_relevance": "Adoption guidance should make governance an upfront rollout requirement with ownership, fleet inventory, policy enforcement, monitoring, and cost controls, not a cleanup phase after pilots spread.",
+      "named_entities": [
+        "Workato",
+        "AI agent governance",
+        "agent sprawl"
+      ],
+      "upstream_owned_entities": [
+        "Workato"
+      ],
+      "routing_note": "Keep broad vendor background upstream; retain the downstream practice implication for early governance and operating agreements."
+    },
+    {
+      "id": "2026-07-11-truefoundry-mcp-gateway-claude-code",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.truefoundry.com/blog/best-mcp-gateway-for-claude-code",
+      "source_title": "Best MCP Gateway for Claude Code Enterprise Teams 2026",
+      "visible_date": "Published: July 11, 2026",
+      "summary": "TrueFoundry compared MCP gateway approaches for Claude Code rollouts and emphasized centralized MCP server registration, enforceable access policies, audit logs, enterprise identity, and deployment control as enterprise criteria.",
+      "practice_relevance": "MCP governance pages should distinguish local configuration convenience from enforceable gateway policy and should track tool-call logs by user, server, action, and timestamp.",
+      "named_entities": [
+        "TrueFoundry",
+        "Claude Code",
+        "Model Context Protocol",
+        "MCP gateway",
+        "SSO",
+        "SCIM",
+        "RBAC"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Claude Code",
+        "Model Context Protocol"
+      ],
+      "routing_note": "Entity and product comparison belongs upstream; keep the local practice criteria for governed MCP access."
+    },
+    {
+      "id": "2026-07-10-futurum-qodo-code-review-governance",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://futurumgroup.com/insights/gpt-56-raises-the-bar-for-code-review-but-trust-and-governance-remain-the-real-test/",
+      "source_title": "GPT-5.6 Raises the Bar for Code Review, but Trust and Governance Remain the Real Test",
+      "visible_date": "Publication Date: July 10, 2026",
+      "summary": "Futurum covered Qodo's GPT-5.6 integration for code review and governance workflows, framing model improvements as useful only when embedded in structured quality and productivity workflows.",
+      "practice_relevance": "AI code review guidance should treat model selection as one component of a review system with trust, governance, measurable productivity, and reliability controls.",
+      "named_entities": [
+        "Futurum Group",
+        "Qodo",
+        "GPT-5.6",
+        "OpenAI",
+        "AI-powered code review"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "Qodo",
+        "GPT-5.6",
+        "OpenAI"
+      ],
+      "routing_note": "Keep vendor and model coverage upstream; retain downstream practice implications for review governance."
+    },
+    {
+      "id": "2026-07-10-airia-owasp-agentic-ai-testing",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://airia.com/owasp-top-10-for-agentic-ai-what-enterprise-security-teams-need-to-test/",
+      "source_title": "OWASP Top 10 for Agentic AI: What Enterprise Security Teams Need to Test",
+      "visible_date": "July 10, 2026",
+      "summary": "Airia argued that enterprise security teams should operationalize OWASP agentic AI risks as systematic testing campaigns, especially prompt injection, excessive agency, and improper output handling.",
+      "practice_relevance": "Security evaluation guidance should map agentic risks to repeatable tests, coverage tracking, and accountability across each deployed agent rather than relying on awareness-only policies.",
+      "named_entities": [
+        "Airia",
+        "OWASP",
+        "OWASP GenAI Security Project",
+        "MITRE",
+        "agentic AI"
+      ],
+      "upstream_owned_entities": [
+        "Airia",
+        "OWASP",
+        "MITRE"
+      ],
+      "routing_note": "Route framework and vendor background upstream; retain testing-baseline practice for local verification and governance pages."
+    },
+    {
+      "id": "2026-07-10-arcade-agent-auth-platforms",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.arcade.dev/blog/best-ai-agent-authentication-platforms/",
+      "source_title": "Best AI Agent Authentication and Authorization Platforms for Enterprise in 2026",
+      "visible_date": "JULY 10, 2026",
+      "summary": "Arcade framed enterprise agent authentication around where authorization is enforced, emphasizing agent identities, OAuth/OIDC foundations, token management, and task/resource-aware checks.",
+      "practice_relevance": "Tool-call and MCP guidance should model agent identity separately from user identity and specify where user-agent-task authorization is enforced before tool execution.",
+      "named_entities": [
+        "Arcade.dev",
+        "OAuth",
+        "OIDC",
+        "Token Vault",
+        "Cross-App Access",
+        "XAA"
+      ],
+      "upstream_owned_entities": [
+        "Arcade.dev",
+        "OAuth",
+        "OIDC"
+      ],
+      "routing_note": "Keep platform comparison upstream; retain the local practice criteria for authorization enforcement boundaries."
+    },
+    {
+      "id": "2026-07-11-scout-ai-application-monitoring",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_url": "https://www.scoutapm.com/blog/monitoring-ai-applications-2026",
+      "source_title": "Monitoring AI Applications in 2026: What You Actually Need",
+      "visible_date": "July 11, 2026",
+      "summary": "Scout Monitoring described production AI application monitoring as requiring both LLM observability for output quality and token cost and traditional APM for the code path, latency, logs, traces, and errors.",
+      "practice_relevance": "Application-harness guidance should separate model-output observability from application-runtime observability and connect agent-assisted repair to traces that distinguish retrieval, prompt, model, and application defects.",
+      "named_entities": [
+        "Scout Monitoring",
+        "LLM observability",
+        "APM",
+        "RAG",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        "Scout Monitoring",
+        "OpenAI",
+        "RAG"
+      ],
+      "routing_note": "Keep product background upstream; retain local practice implication for runtime evidence collection and repair loops."
+    },
+    {
+      "id": "2026-07-10-devops-grok-coding-agent-cost",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/context-architecture"
+      ],
+      "source_url": "https://devops.com/spacexais-grok-4-5-undercuts-anthropic-and-openai-on-coding-agent-pricing/",
+      "source_title": "SpaceXAI's Grok 4.5 Undercuts Anthropic and OpenAI on Coding Agent Pricing",
+      "visible_date": "By Tom Smith on July 10, 2026",
+      "summary": "DevOps.com reported on coding-agent model pricing and token-efficiency claims, while noting a benchmark transparency caveat involving CursorBench training data exposure.",
+      "practice_relevance": "Agent-cost telemetry should track cost per verified outcome, not list price alone, and model benchmark claims need provenance and contamination checks before adoption decisions.",
+      "named_entities": [
+        "DevOps.com",
+        "SpaceXAI",
+        "Grok 4.5",
+        "Cursor",
+        "SWE-Bench Pro",
+        "CursorBench",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        "SpaceXAI",
+        "Grok 4.5",
+        "Cursor",
+        "SWE-Bench Pro",
+        "CursorBench",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "routing_note": "Model/product coverage belongs upstream; keep downstream implications for cost telemetry and benchmark hygiene."
+    },
+    {
+      "id": "2026-07-10-futurum-chatgpt-work-artifact-agent",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://futurumgroup.com/insights/openai-chatgpt-work-ships-files-not-just-chat-the-enterprise-race-is-on/",
+      "source_title": "OpenAI ChatGPT Work Ships Files, Not Just Chat. The Enterprise Race Is On",
+      "visible_date": "Publication Date: July 10, 2026",
+      "summary": "Futurum analyzed ChatGPT Work as an artifact-producing agent that combines Codex, connector access, local files, browser context, and approval pauses to create spreadsheets, slides, documents, and web apps.",
+      "practice_relevance": "Application-pattern and governance pages should address finished-artifact review, connector scoping, local-file access, auditability, and approval boundaries when agents move from chat answers to delivered files.",
+      "named_entities": [
+        "Futurum Group",
+        "OpenAI",
+        "ChatGPT Work",
+        "GPT-5.6",
+        "Codex",
+        "Sites",
+        "Claude Cowork",
+        "Microsoft 365 Copilot",
+        "Google Workspace"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "OpenAI",
+        "ChatGPT Work",
+        "GPT-5.6",
+        "Codex",
+        "Claude Cowork",
+        "Microsoft 365 Copilot",
+        "Google Workspace"
+      ],
+      "routing_note": "Keep product and model launch details upstream; retain downstream practice implications for artifact review and connector governance."
+    },
+    {
+      "id": "2026-07-10-lushbinary-developer-tasks-agentic-era",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://lushbinary.com/blog/most-important-developer-tasks-agentic-ai-era/",
+      "source_title": "The Most Important Developer Tasks in the Agentic AI Era",
+      "visible_date": "Software Development July 10, 2026",
+      "summary": "Lushbinary argued that as agents draft more code, developer leverage moves toward code review, system design, precise specification, evaluation, security, orchestration, and debugging work the developer did not personally write.",
+      "practice_relevance": "Adoption guidance should train teams for review depth, specification quality, evaluation habits, and orchestration accountability rather than only prompt syntax or tool familiarity.",
+      "named_entities": [
+        "Lushbinary",
+        "AI coding agents",
+        "code review",
+        "eval-driven development",
+        "context engineering"
+      ],
+      "upstream_owned_entities": [
+        "AI coding agents",
+        "context engineering"
+      ],
+      "routing_note": "Treat broad technique background as upstream-owned; keep the local operating-model implications for developer skill shifts."
+    },
+    {
+      "id": "2026-07-10-adaptive-shadow-ai-detection",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows"
+      ],
+      "source_url": "https://adaptivesecurity.com/blog/shadow-ai-detection-how-to-identify-unauthorized-ai-assess-risk",
+      "source_title": "Shadow AI Detection: How to Identify Unauthorized AI, Assess Risk, and Build Governance That Protects the Organization",
+      "visible_date": "JULY 10, 2026",
+      "summary": "Adaptive Security described shadow AI detection as a continuous governance problem requiring visibility into unauthorized AI usage and risk, not a one-time inventory or blanket ban.",
+      "practice_relevance": "Governance pages should include sanctioned-tool inventories, acceptable-use policy, monitoring, training, and risk-based response paths for developers using unapproved AI coding or review tools.",
+      "named_entities": [
+        "Adaptive Security",
+        "shadow AI",
+        "AI governance",
+        "unauthorized AI tools"
+      ],
+      "upstream_owned_entities": [
+        "Adaptive Security",
+        "shadow AI"
+      ],
+      "routing_note": "Keep vendor/background coverage upstream; retain downstream implications for team AI-tool governance and privacy controls."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://openid.net/call-for-participation-demonstrate-mcp-based-ai-agent-security-with-open-identity-standards/",
+      "source_title": "Call for participation: Demonstrate MCP-based AI agent security with open identity standards",
+      "visible_date": "Published July 10, 2026",
+      "exclusion_reason": "Already captured in the prior collector artifact raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering",
+      "source_title": "Loops, Harnesses, and 6,000 Engineers: What the World's Fair Confirmed - and What Ships Today",
+      "visible_date": "Published: July 10, 2026",
+      "exclusion_reason": "Already captured in the prior collector artifact."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents",
+      "source_title": "TBAC: Task-Based Access Control for the Agent Age",
+      "visible_date": "July 10, 2026",
+      "exclusion_reason": "Already captured in the prior collector artifact."
+    },
+    {
+      "source_url": "https://code.claude.com/docs/en/changelog",
+      "source_title": "Claude Code changelog",
+      "visible_date": "Latest visible dated entry found in page: June 25, 2026",
+      "exclusion_reason": "Search result suggested recency, but the opened page showed no qualifying July 10-11 visible entry."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "source_title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "visible_date": "Published July 8, 2026",
+      "exclusion_reason": "Outside the two-day cutoff window for the July 11 20:32 EDT run."
+    },
+    {
+      "source_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "source_title": "ChatGPT is now a partner for your most ambitious work",
+      "visible_date": "July 9, 2026",
+      "exclusion_reason": "Date-only July 9 item straddles the cutoff boundary and has no visible time confirming it was after 2026-07-09T20:32:15-04:00."
+    },
+    {
+      "source_url": "https://openai.com/index/gpt-5-6/",
+      "source_title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "visible_date": "July 9, 2026",
+      "exclusion_reason": "Date-only July 9 item straddles the cutoff boundary and is primarily upstream-owned model/product coverage."
+    },
+    {
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-team-of-engineers-called-slopfix-charges-10000-a-week-to-delete-ai-generated-code-using-ai-agents",
+      "source_title": "Slopfix software team charges $10,000 a week to delete AI-generated code bloat",
+      "visible_date": "Published 3 days ago",
+      "exclusion_reason": "Outside the two-day window."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/jensen-huang-my-engineers-prefer-building-agents-to-writing-code-2026-7",
+      "source_title": "Jensen Huang says his software engineers prefer building agents to writing code",
+      "visible_date": "Published 2 days ago",
+      "exclusion_reason": "Relative date only, no visible publication time; also broad company/executive coverage best routed upstream."
+    },
+    {
+      "source_url": "https://www.developersdigest.tech/blog/ai-coding-tools-pricing-2026",
+      "source_title": "AI Coding Tools Pricing Comparison 2026",
+      "visible_date": "July 11, 2026 snippets in pricing table",
+      "exclusion_reason": "Visible date appears in comparison rows rather than as a clear publication or update date for the source."
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should connect Ghostcommit to prompt-injection review gates, multimodal PR review, and secret isolation.",
+    "Ingest should connect Tabnine and Lushbinary items to verification tax, review depth, and developer skill-shift pages.",
+    "Ingest should connect TrueFoundry, Arcade, Workato, and Adaptive Security items to MCP/tool governance, agent identity, and shadow-AI controls without duplicating product comparison coverage.",
+    "Ingest should connect Futurum and DevOps.com items to artifact review, connector approval boundaries, benchmark contamination, and cost-per-verified-outcome telemetry.",
+    "OpenID and TrueFoundry July 10 items were intentionally excluded as duplicates of the prior collector run despite still falling inside the rolling two-day window."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed",
+    "notes": "Validated with jq empty, python3 -m json.tool, and git diff --check."
+  },
+  "blockers": []
+}
