@@ -1,0 +1,499 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-12T21:04:03-04:00",
+  "cutoff_window": {
+    "start": "2026-07-05T21:04:03-04:00",
+    "end": "2026-07-12T21:04:03-04:00",
+    "policy": "Only public sources visibly published or updated within the last 7 days qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 65,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://alinajafzadeh.at/blog/ai-agent-identity-authority-business-systems-2026.html",
+    "https://atlan.com/know/context-layer-for-ai-agents/",
+    "https://medium.com/%40ichigoSan/i-spent-months-building-an-ai-agent-the-model-was-never-the-problem-507e4c4bd846",
+    "https://techjacksolutions.com/scc-intel/ai-coding-roundup-july-4-2026-claude-code-goes-manual-first-on-permissions-github-copilot-ships-enterprise-governance-tools/",
+    "https://www.aibuilderclub.com/blog/loop-engineering-guide-2026",
+    "https://www.mindstudio.ai/blog/gate-pattern-ai-agents-prepare-not-submit",
+    "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+    "https://www.puppyone.ai/en/blog/what-is-agent-context",
+    "https://www.techradar.com/pro/the-ai-security-paradox-why-are-organizations-trusting-what-they-cant-fully-see",
+    "https://www.techtimes.com/articles/319457/20260701/ai-coding-agents-skip-package-verification-attackers-are-exploiting-it.htm",
+    "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering",
+    "https://www.truefoundry.com/blog/cross-platform-ai-agent-governance",
+    "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents"
+  ],
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+      "published_or_updated_at": "2026-07-11",
+      "date_evidence": "Page footer says Last updated on Jul 11, 2026 by mldangelo-oai.",
+      "source_type": "public documentation",
+      "factual_summary": "Promptfoo added or refreshed guidance for evaluating coding agents as systems rather than one-shot model calls, with provider tiers for plain LLMs, coding-agent SDKs, app-server protocols, side-effect safety, trace assertions, token/cost signals, and sandboxed verification.",
+      "why_it_matters_for_leaf": "It directly supports local leaves that treat trajectory evidence, trace assertions, approval checks, and acceptance gates as the unit of evaluation for AI-assisted development work.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "Promptfoo",
+        "OpenAI Codex SDK",
+        "OpenAI Codex app-server",
+        "Claude Agent SDK",
+        "OpenCode SDK"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Codex SDK",
+        "Claude Agent SDK",
+        "OpenCode SDK"
+      ],
+      "local_practice_implication": "Keep local guidance focused on eval harness design, trace assertions, and approval/sandbox gates; route broad product/provider coverage upstream."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/the-ai-security-paradox-why-are-organizations-trusting-what-they-cant-fully-see",
+      "published_or_updated_at": "2026-07-09",
+      "date_evidence": "Article byline says Published 9 July 2026.",
+      "source_type": "public article",
+      "factual_summary": "The article reports that enterprise AI adoption is outpacing visibility and identity governance: AI agents inherit permissions, standing access is recognized as risky, many organizations cannot explain privileged agent actions, and shadow AI detection remains limited.",
+      "why_it_matters_for_leaf": "It reinforces local governance leaves that require inventory, explainable privileged actions, temporary permissions, continuous monitoring, and validation as infrastructure rather than prompt-only controls.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Delinea",
+        "AI agents",
+        "shadow AI"
+      ],
+      "upstream_owned_entities": [
+        "Delinea"
+      ],
+      "local_practice_implication": "Treat identity visibility, inherited-permission review, and revocation paths as governance controls around agent runs, not as broad ecosystem background."
+    },
+    {
+      "source_url": "https://alinajafzadeh.at/blog/ai-agent-identity-authority-business-systems-2026.html",
+      "published_or_updated_at": "2026-07-10",
+      "date_evidence": "Article header says July 10, 2026.",
+      "source_type": "public article",
+      "factual_summary": "The article frames production agents as needing unique workload identity, scoped job authority, human approval boundaries, audit trails, exception routes, and fast revocation; it warns that shared service accounts and prompt-only job scopes produce ambient access rather than delegated authority.",
+      "why_it_matters_for_leaf": "It sharpens the local identity/delegated authority pattern with concrete control fields future local practice pages can reference during ingest.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "Ali Najafzadeh",
+        "NIST",
+        "OpenAI Frontier",
+        "Agent Authority Card",
+        "Delegation Control Loop"
+      ],
+      "upstream_owned_entities": [
+        "NIST",
+        "OpenAI"
+      ],
+      "local_practice_implication": "Capture the downstream practice lens as required authority-card fields and approval/revocation evidence; leave standards and vendor background upstream."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/cross-platform-ai-agent-governance",
+      "published_or_updated_at": "2026-07-07",
+      "date_evidence": "Article header says Published: July 7, 2026.",
+      "source_type": "public vendor article",
+      "factual_summary": "TrueFoundry describes multi-platform agent governance problems around discovery, siloed policy, inconsistent identity, lifecycle containment, and token sprawl, then lists central registry/control-plane capabilities, rich metadata, policy enforcement, and emergency pause/revoke controls.",
+      "why_it_matters_for_leaf": "It maps closely to local governance-infrastructure and controls leaves because the local pattern is a cross-harness control layer around agent traffic, logs, budgets, and lifecycle state.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "Microsoft Copilot",
+        "ServiceNow Now Assist",
+        "Salesforce Agentforce",
+        "LangGraph",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Microsoft Copilot",
+        "ServiceNow Now Assist",
+        "Salesforce Agentforce",
+        "LangGraph",
+        "OpenTelemetry"
+      ],
+      "local_practice_implication": "Route vendor and platform descriptions upstream; keep local implications around fleet inventory, shared policy points, and containment evidence."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents",
+      "published_or_updated_at": "2026-07-10",
+      "date_evidence": "Article header says Published: July 10, 2026.",
+      "source_type": "public vendor article",
+      "factual_summary": "TrueFoundry argues that agents strain standing identity-centric access models because each task needs a different permission slice; it describes task-based access control as layered with RBAC, attributes, curated tool bundles, short-lived credentials, approval gates, quotas, and per-tool audit.",
+      "why_it_matters_for_leaf": "It provides a recent public articulation of task-scoped permissions that can update local leaves on delegated authority, governance controls, and lifecycle review gates.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "TBAC",
+        "RBAC",
+        "ABAC",
+        "ReBAC",
+        "NIST SP 800-162",
+        "Virtual MCP Servers"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "NIST"
+      ],
+      "local_practice_implication": "Treat task scope, duration, tool bundle, and approval state as reviewable local governance fields rather than standing access facts."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering",
+      "published_or_updated_at": "2026-07-10",
+      "date_evidence": "Recent-blog listing on the page identifies the article as July 10, 2026.",
+      "source_type": "public recap article",
+      "factual_summary": "The recap emphasizes adding verification gates, output-path evals, and traces on governed runs before adding more agent loops or harness complexity.",
+      "why_it_matters_for_leaf": "It supports the local verification leaves that frame validation as the bottleneck and as a gate in the agent loop rather than a final-result-only check.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "AI Engineer World's Fair",
+        "Greptile",
+        "Sonar"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Greptile",
+        "Sonar"
+      ],
+      "local_practice_implication": "Keep the local update about loop ordering and verification gates; leave event/vendor details upstream."
+    },
+    {
+      "source_url": "https://www.puppyone.ai/en/blog/what-is-agent-context",
+      "published_or_updated_at": "2026-07-08",
+      "date_evidence": "Article header says July 8, 2026.",
+      "source_type": "public article",
+      "factual_summary": "The article defines agent context as both active turn context and durable state across turns/sessions; it distinguishes context window, memory, working set assembly, durable decisions, artifacts, and auditable storage.",
+      "why_it_matters_for_leaf": "It matches local context-architecture leaves that distinguish active context selection from externalized durable state and knowledge layers.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "named_entities": [
+        "puppyone",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "puppyone",
+        "Anthropic"
+      ],
+      "local_practice_implication": "Use it as source evidence for active-versus-durable context boundaries, not as a product profile."
+    }
+  ],
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.mindstudio.ai/blog/gate-pattern-ai-agents-prepare-not-submit",
+      "visible_date": "2026-07-04",
+      "reason": "Outside the 7-day cutoff window for this run; date-only July 4 is before the July 5 21:04 local cutoff.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://medium.com/%40ichigoSan/i-spent-months-building-an-ai-agent-the-model-was-never-the-problem-507e4c4bd846",
+      "visible_date": null,
+      "reason": "Search snippet reported 6 days ago, but the opened page did not expose a reliable visible publication or update date; excluded as ambiguous date evidence.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://www.aibuilderclub.com/blog/loop-engineering-guide-2026",
+      "visible_date": "Updated 2026-07-02",
+      "reason": "Updated date is outside the 7-day cutoff window.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ]
+    },
+    {
+      "source_url": "https://www.techtimes.com/articles/319457/20260701/ai-coding-agents-skip-package-verification-attackers-are-exploiting-it.htm",
+      "visible_date": "2026-07-01",
+      "reason": "Outside the 7-day cutoff window, despite relevance to security repair and dependency gates.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://techjacksolutions.com/scc-intel/ai-coding-roundup-july-4-2026-claude-code-goes-manual-first-on-permissions-github-copilot-ships-enterprise-governance-tools/",
+      "visible_date": "2026-07-04",
+      "reason": "Title/date indicates July 4, outside the 7-day cutoff window; opened page did not provide a newer visible update date.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ]
+    },
+    {
+      "source_url": "https://atlan.com/know/context-layer-for-ai-agents/",
+      "visible_date": "Search result: published 2 months ago",
+      "reason": "Useful context-layer source but not visibly updated within the last 7 days.",
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ]
+    }
+  ],
+  "leaf_results": [
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://atlan.com/know/context-layer-for-ai-agents/",
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 1,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "source_urls_checked": [
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+      "source_urls_checked": [
+        "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-11",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+      "source_urls_checked": [
+        "https://medium.com/%40ichigoSan/i-spent-months-building-an-ai-agent-the-model-was-never-the-problem-507e4c4bd846",
+        "https://www.aibuilderclub.com/blog/loop-engineering-guide-2026",
+        "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+        "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering"
+      ],
+      "qualified_update_count": 2,
+      "excluded_candidate_count": 2,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-11",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+      "source_urls_checked": [
+        "https://medium.com/%40ichigoSan/i-spent-months-building-an-ai-agent-the-model-was-never-the-problem-507e4c4bd846",
+        "https://www.mindstudio.ai/blog/gate-pattern-ai-agents-prepare-not-submit",
+        "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+        "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering"
+      ],
+      "qualified_update_count": 2,
+      "excluded_candidate_count": 2,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-11",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "source_urls_checked": [
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "source_urls_checked": [
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "source_urls_checked": [
+        "https://atlan.com/know/context-layer-for-ai-agents/"
+      ],
+      "qualified_update_count": 0,
+      "excluded_candidate_count": 1,
+      "last_result": "no_qualified_update_found",
+      "last_qualified_update_at": null,
+      "follow_up_note": "No qualifying recent public update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "source_urls_checked": [
+        "https://www.puppyone.ai/en/blog/what-is-agent-context"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-08",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "source_urls_checked": [
+        "https://alinajafzadeh.at/blog/ai-agent-identity-authority-business-systems-2026.html",
+        "https://www.techradar.com/pro/the-ai-security-paradox-why-are-organizations-trusting-what-they-cant-fully-see",
+        "https://www.truefoundry.com/blog/cross-platform-ai-agent-governance",
+        "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents"
+      ],
+      "qualified_update_count": 4,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-10",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "source_urls_checked": [
+        "https://alinajafzadeh.at/blog/ai-agent-identity-authority-business-systems-2026.html",
+        "https://www.techradar.com/pro/the-ai-security-paradox-why-are-organizations-trusting-what-they-cant-fully-see",
+        "https://www.truefoundry.com/blog/cross-platform-ai-agent-governance",
+        "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents"
+      ],
+      "qualified_update_count": 4,
+      "excluded_candidate_count": 0,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-10",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "source_urls_checked": [
+        "https://techjacksolutions.com/scc-intel/ai-coding-roundup-july-4-2026-claude-code-goes-manual-first-on-permissions-github-copilot-ships-enterprise-governance-tools/",
+        "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+        "https://www.techtimes.com/articles/319457/20260701/ai-coding-agents-skip-package-verification-attackers-are-exploiting-it.htm"
+      ],
+      "qualified_update_count": 1,
+      "excluded_candidate_count": 2,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-11",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+      "source_urls_checked": [
+        "https://alinajafzadeh.at/blog/ai-agent-identity-authority-business-systems-2026.html",
+        "https://techjacksolutions.com/scc-intel/ai-coding-roundup-july-4-2026-claude-code-goes-manual-first-on-permissions-github-copilot-ships-enterprise-governance-tools/",
+        "https://www.techradar.com/pro/the-ai-security-paradox-why-are-organizations-trusting-what-they-cant-fully-see",
+        "https://www.truefoundry.com/blog/cross-platform-ai-agent-governance",
+        "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents"
+      ],
+      "qualified_update_count": 4,
+      "excluded_candidate_count": 1,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-10",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+      "source_urls_checked": [
+        "https://www.mindstudio.ai/blog/gate-pattern-ai-agents-prepare-not-submit",
+        "https://www.promptfoo.dev/docs/guides/evaluate-coding-agents/",
+        "https://www.truefoundry.com/blog/aiewf-2026-loops-harness-engineering",
+        "https://www.truefoundry.com/blog/tbac-task-based-access-control-ai-agents"
+      ],
+      "qualified_update_count": 3,
+      "excluded_candidate_count": 1,
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-11",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem entity details to upstream AI wiki."
+    }
+  ],
+  "federation_routing": {
+    "local_scope": "AI-assisted development practices: context architecture, guidance structure, agent workflows, verification, governance, and adoption patterns.",
+    "upstream_scope": "Broad AI ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "routing_note": "This artifact records local practice implications only; broad product, framework, vendor, model, and standards background should be routed to the upstream AI wiki during ingest."
+  },
+  "follow_up_notes": [
+    "During ingest, evaluate Promptfoo for coding-agent eval trace assertions and approval/sandbox checks.",
+    "Evaluate TrueFoundry/TBAC and TechRadar sources for agent identity, temporary authority, inventory, and containment practice language.",
+    "Use puppyone only for active-versus-durable context boundaries; avoid creating a local product profile."
+  ],
+  "privacy_and_sensitivity_notes": "Searches used public topic names, public aliases, and public source URLs only; no private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+}
