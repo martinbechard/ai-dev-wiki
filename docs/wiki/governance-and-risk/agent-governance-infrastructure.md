@@ -47,6 +47,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds upfront fleet-governance and shadow-AI signals. Agent governance should start before pilots spread: maintain an inventory of sanctioned and unsanctioned agent surfaces, assign owners, enforce policy through gateways or managed settings, monitor usage and cost, and define risk-based response paths for developer use of unapproved AI coding or review tools.
 
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces identity, visibility, and control-plane requirements for production agents. Governance infrastructure should detect inherited permissions, explain privileged actions, issue short-lived task scopes, monitor shadow AI, and maintain emergency pause or revocation paths across agent platforms.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -88,6 +90,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Inventory unmanaged coding-agent surfaces and code-enabled managed runtimes before treating IDE or platform policy as complete.
 - Start agent-fleet governance with ownership, inventory, policy enforcement, monitoring, and cost controls instead of treating those controls as post-pilot cleanup.
 - Track unauthorized AI development tools through sanctioned-tool inventories, acceptable-use policy, training, monitoring, and risk-based response paths.
+- Detect inherited permissions, standing access, shadow agents, and unexplained privileged actions before expanding agent autonomy.
+- Maintain short-lived task scopes, emergency pause, and revocation paths as control-plane features, not after-the-fact incident notes.
 
 ## Authoritative Sources
 
@@ -119,6 +123,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -166,3 +171,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-08 with managed endpoint policy, trace export controls, identity-bound authorization, and governed sensitive-code harness evidence.
 - Maintained on 2026-07-09 with runtime session forensics, shadow-AI inventory, model-enable policy, and shared managed-runtime governance evidence.
 - Maintained on 2026-07-11 with upfront fleet governance, sanctioned-tool inventory, shadow-AI monitoring, and cost-control requirements.
+- Maintained on 2026-07-12 with inherited-permission detection, privileged-action visibility, task-scoped authority, shadow-AI monitoring, and emergency revocation controls.

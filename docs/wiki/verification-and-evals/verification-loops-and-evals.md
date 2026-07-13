@@ -29,6 +29,8 @@ The July 7 raw sources add diagnostic evidence for tool-use and runtime verifica
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds performance-optimization, long-horizon, requirement-compilation, and trajectory-diagnosis signals. Agent evals should cover correctness-preserving optimization, original multi-file tasks, requirement-to-architecture-to-test traceability, and failure localization from traces. Broad benchmark and paper pages stay upstream; locally, these sources sharpen acceptance gates for profiling, hidden correctness checks, reproducible speedup, long-horizon planning, and trace-backed debugging.
 
+The July 12 raw sources add system-evaluation and pre-CI triage signals. The [topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) routes Dockerless-style environment-free patch checking into local practice as a cheap evidence layer before CI, sandbox, or reviewer time is spent. The [leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces coding-agent evals as whole-system traces with side-effect safety, provider-specific harness adapters, trace assertions, token and cost signals, and sandboxed verification.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -54,6 +56,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Include original long-horizon tasks in acceptance suites when the workflow claims planning, multi-file change management, or sustained verification capability.
 - Preserve requirement, architecture, test, implementation, and trace links when an agent compiles requirements into runnable software.
 - Use test failures and trace saliency reduction to localize earliest agent errors instead of treating a final failure as an opaque outcome.
+- Treat environment-free or static verifier scores as triage evidence that can prioritize CI, sandbox, or reviewer attention, not as final acceptance.
+- Evaluate coding agents as systems with trace assertions, side-effect checks, provider adapters, sandbox evidence, and cost signals rather than as one-shot model calls.
 
 ## Authoritative Sources
 
@@ -71,6 +75,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -110,3 +116,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-06 with runtime-lifecycle verification layers and software-quality model gates for AI-generated code.
 - Maintained on 2026-07-07 with tool-use failure categories, step-level action scoring, sandbox telemetry, and security-eval localization controls.
 - Maintained on 2026-07-10 with performance-optimization eval, long-horizon task, requirement-traceability, and trajectory-diagnosis gates.
+- Maintained on 2026-07-12 with pre-CI verifier triage, whole-system coding-agent evals, trace assertions, side-effect checks, and cost signals.

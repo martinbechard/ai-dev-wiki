@@ -33,6 +33,8 @@ The [Deepsec clipping](../../../raw/processed/vercel-labsdeepsec Deepsec is a se
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) and [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) add sensitive-code and telemetry-capture controls. Before exporting agent traces or running a governed coding agent on sensitive repositories, teams should decide whether prompts, responses, tool content, session logs, screenshots, and debug logs can be retained, and should separate credentials from the sandbox that executes generated or delegated code.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds a slopsquatting dependency-control signal. Agent-generated package names, scaffolded install commands, and dependency updates should be treated as untrusted until the package exists in the intended registry, has expected provenance, matches project need, fits lockfile policy, and survives human or policy review.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -59,6 +61,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Classify prompt, response, tool, screenshot, debug-log, and session-log content before exporting centralized agent telemetry.
 - Keep credentials outside coding-agent sandboxes and use approval gates before generated code or delegated tools can touch sensitive files, networks, or dependencies.
 - Prefer deny-by-default network access for sensitive-code agents until the needed endpoints and evidence requirements are explicit.
+- Verify AI-proposed packages against registries, provenance, allowlists, lockfiles, and project need before accepting install commands or dependency edits.
+- Escalate hallucinated or unknown package names as supply-chain risk rather than letting the agent search, install, or rename around the failure unaudited.
 
 ## Authoritative Sources
 
@@ -80,6 +84,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -120,3 +125,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Maintained on 2026-07-01 with managed plugin settings, bypass modes, browser tools, visual attachments, model enablement, and remote admin MCP controls.
 - Maintained on 2026-07-06 with scanner, virtual shell, chat adapter, state store, and collaboration-channel supply-chain checks.
 - Maintained on 2026-07-08 with telemetry-content classification, credential-separated sensitive-code sandboxes, and deny-by-default network controls.
+- Maintained on 2026-07-12 with slopsquatting dependency controls for AI-proposed package names, install commands, provenance, allowlists, and lockfiles.

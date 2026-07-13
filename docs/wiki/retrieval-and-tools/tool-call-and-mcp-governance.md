@@ -43,6 +43,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) reinforces gateway-mediated MCP and agent-authentication practice. Centralized MCP registration, user-agent-task authorization, SSO or directory integration, audit logs, token custody, and per-tool deployment control are local governance criteria when teams expose developer tools through agents. Product comparisons stay upstream; locally, the rule is that a convenient local MCP configuration is not enough when tool calls need enforceable policy and reviewable identity evidence.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds an LLM gateway operating-control signal. Gateways are not only provider abstraction; in local practice they are policy and observability control planes for authentication, routing, rate limits, cost tracking, failover, and governance evidence across model and tool traffic.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -80,6 +82,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Use task-scoped authorization for agent tool access when stable user, team, or service-account entitlements would grant more authority than the current task needs.
 - Distinguish local MCP setup convenience from gateway-enforced access policy, identity, token custody, audit logs, and deployment control.
 - Specify where user-agent-task authorization is enforced before a tool call reaches an external system.
+- Treat LLM or AI gateways as governance control planes when they enforce authentication, routing policy, rate limits, cost telemetry, failover, and audit evidence.
+- Avoid using provider abstraction as a substitute for explicit tool authority, data-boundary, and policy-decision records.
 
 ## Authoritative Sources
 
@@ -108,6 +112,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 
 ## Related Code
 
@@ -151,3 +156,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-09 with shared GUI-and-agent operation paths, session forensics, and generated customization evidence.
 - Maintained on 2026-07-10 with MCP identity interoperability and task-scoped access-control evidence.
 - Maintained on 2026-07-11 with gateway-mediated MCP access, agent-authentication enforcement, token custody, and audit-log criteria.
+- Maintained on 2026-07-12 with LLM gateway governance controls for authentication, routing, rate limits, cost, failover, and audit evidence.

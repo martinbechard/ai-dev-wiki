@@ -25,6 +25,8 @@ The [Headroom context optimization source](../../../raw/processed/Headroom A Con
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds structured-output and memory-control signals. Context selection should account for repeated tool-call shapes, JSON payloads, reasoning traces, metadata filters, hybrid search, TTL behavior, and update paths. The local practice is to select compact structured context when it preserves the task contract, while keeping exact originals recoverable for audit, repair, or access-control review.
 
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces active-versus-durable context selection. A request package should assemble the smallest active working set from durable decisions, artifacts, memory records, and auditable storage while preserving enough origin and freshness evidence to avoid treating stale memory as current instruction.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -43,6 +45,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Treat context compression as a harness policy decision with routing, reversibility, cache behavior, provenance, and sensitive-field handling, not only as token trimming.
 - Preserve a way to recover compressed originals when an agent may need exact JSON, source code, logs, identity fields, or access-control evidence.
 - Select compact structured context for repeated tool-call or JSON shapes only when exact originals, metadata filters, retention rules, and update paths remain recoverable.
+- Assemble active context from durable decisions, artifacts, memory records, and auditable storage with freshness and origin labels.
+- Keep stale durable memory out of the active working set unless a current disk or source check confirms it still applies.
 
 ## Authoritative Sources
 
@@ -60,6 +64,7 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -92,3 +97,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Maintained on 2026-06-27 with lost-in-the-middle placement and disk-verification rules for long-context work.
 - Maintained on 2026-06-30 with reversible context compression, cache-alignment, provenance, and sensitive-field handling guidance.
 - Maintained on 2026-07-07 with structured-output selection, memory metadata filters, TTL behavior, update paths, and recoverable originals.
+- Maintained on 2026-07-12 with active-versus-durable context selection, freshness labels, origin labels, and stale-memory checks.

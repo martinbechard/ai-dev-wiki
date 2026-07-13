@@ -25,6 +25,8 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds cross-enterprise agent identity and task-scoped authorization signals. MCP clients, gateways, servers, and connected systems should carry the originating user or trigger, agent identity, task purpose, credential scope, and authorization decision as runtime evidence. Broad OpenID, MCP, Gartner, and vendor background stays upstream; locally, the practice is to make delegation auditable when an agent crosses organizational or tool-server boundaries.
 
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds authority-card and task-based access-control signals. Production agents should have unique workload identity, scoped job authority, short-lived credentials, approval boundaries, quotas, per-tool audit, exception handling, and fast revocation instead of shared service accounts or prompt-only job descriptions.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -43,6 +45,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Bind public comments, issue replies, and pull-request messages to an output policy when the agent has access to private or cross-repository context.
 - Bind MCP-mediated actions to a human or system principal, agent instance, task purpose, credential scope, approval checkpoint, and authorization decision before external side effects occur.
 - Prefer short-lived, task-scoped credentials for delegated agent work when broad standing access would hide which task authorized the action.
+- Require unique workload identity, scoped job authority, approval boundaries, quota limits, exception paths, and fast revocation for production agent actions.
+- Treat shared service accounts and prompt-only job scopes as ambient access until an external policy layer binds the task and credential scope.
 
 ## Authoritative Sources
 
@@ -55,6 +59,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -87,3 +92,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-08 with identity-bound off-host authorization, argument constraints, credential brokering, and audit-chain evidence.
 - Maintained on 2026-07-10 with event-triggered delegation boundaries for issue agents, repository scope, and public output authority.
 - Maintained on 2026-07-10 with cross-enterprise MCP identity, task-scoped credentials, and runtime authorization evidence.
+- Maintained on 2026-07-12 with workload identity, authority cards, task-based access control, short-lived credentials, quotas, and fast revocation.

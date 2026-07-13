@@ -1,0 +1,267 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-12T20:32:07-04:00",
+  "run_timestamp_utc": "2026-07-13T00:32:07Z",
+  "cutoff_window": {
+    "start": "2026-07-10T20:32:07-04:00",
+    "start_utc": "2026-07-11T00:32:07Z",
+    "end": "2026-07-12T20:32:07-04:00",
+    "end_utc": "2026-07-13T00:32:07Z",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, boundary-only, stale, upstream-only, or inaccessible candidates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_policy": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_scope": "AI-assisted development practice lens: context architecture, source workflows, durable instructions, agent operating practices, coding practices, retrieval and tool governance, verification, application harness patterns, governance, risk, and team adoption.",
+    "collector_boundary": "Items name upstream-owned entities when useful, but only the local practice implication is retained for downstream ingest."
+  },
+  "search_summary": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "queries": [
+      "AI coding agents evaluation software engineering July 12 2026",
+      "AI code review agent governance MCP permissions audit logs July 12 2026",
+      "context engineering durable agent instructions coding agents July 12 2026",
+      "RAG codebases tool calling MCP governed practice AI-assisted development July 12 2026",
+      "\"July 12, 2026\" \"AI\" \"code review\"",
+      "\"July 12, 2026\" \"coding agent\"",
+      "\"July 11, 2026\" \"coding agents\" \"software engineering\"",
+      "\"July 11, 2026\" \"AI-assisted development\"",
+      "\"slopsquatting\" \"July 11, 2026\" AI coding tools",
+      "\"July 12, 2026\" \"MCP Gateway\" \"Claude Code\"",
+      "\"New Relic Report Reveals AI-Generated Code\" \"July 12, 2026\""
+    ]
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-07-12-dockerless-verification",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://www.developersdigest.tech/blog/dockerless-coding-agent-verification",
+      "source_title": "Dockerless Verification Is The Next Coding Agent Bottleneck",
+      "visible_date": "July 12, 2026",
+      "last_updated": "July 12, 2026",
+      "summary": "Developers Digest analyzed ByteDance's Dockerless verifier paper and framed environment-free patch checking as a cheaper evidence layer before spending CI, reviewer, or sandbox time on coding-agent patches.",
+      "practice_relevance": "Verification guidance should distinguish pre-CI evidence gathering from authoritative CI and should capture when repository exploration, static checks, and verifier scores are triage signals rather than final acceptance.",
+      "named_entities": [
+        "Developers Digest",
+        "Dockerless",
+        "ByteDance",
+        "SWE-bench Verified",
+        "coding agents"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest",
+        "Dockerless",
+        "ByteDance",
+        "SWE-bench Verified"
+      ],
+      "routing_note": "Route paper and benchmark background upstream if needed; keep local practice implications for verification-loop design and acceptance-gate economics."
+    },
+    {
+      "id": "2026-07-12-ai-dev-news-agent-review-and-prompt-injection",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://www.developersdigest.tech/blog/ai-dev-news-week-2026-07-12",
+      "source_title": "AI Dev News: Week of July 12, 2026",
+      "visible_date": "July 12, 2026",
+      "summary": "Developers Digest highlighted a coordinated agent rewrite of a JavaScript runtime with adversarial code review and also flagged a prompt-injection incident involving GitHub agents in the same weekly AI development roundup.",
+      "practice_relevance": "Multi-agent implementation claims should be captured as workflow evidence only when paired with review topology, regression proof, and adversarial review details; prompt-injection mentions reinforce the need for untrusted-issue and repository-content boundaries.",
+      "named_entities": [
+        "Developers Digest",
+        "Bun",
+        "Claude agents",
+        "GitHub agents",
+        "prompt injection"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest",
+        "Bun",
+        "Claude",
+        "GitHub"
+      ],
+      "routing_note": "Broad product, model, and runtime news belongs upstream; retain local notes about adversarial review topology and prompt-injection gates."
+    },
+    {
+      "id": "2026-07-11-futurum-engineering-leader-ai-literacy",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://futurumgroup.com/insights/are-podcasts-the-new-playbook-for-engineering-leaders-work-through-ai-in-the-sdlc/",
+      "source_title": "Are Podcasts the New Playbook for Engineering Leaders Work through AI in the SDLC?",
+      "visible_date": "July 11, 2026",
+      "summary": "Futurum framed Qodo's engineering podcast guide as a signal that engineering leaders need practical AI literacy for evaluating, deploying, and governing AI-assisted development tools as agentic deployments move toward production.",
+      "practice_relevance": "Adoption guidance should include leader-facing literacy, evaluation, and governance decision support, not only developer tool onboarding; the source also reinforces reliability and hallucination management as production-rollout concerns.",
+      "named_entities": [
+        "Futurum Group",
+        "Qodo",
+        "The Agentic Review",
+        "software engineering leaders",
+        "AI-assisted development"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "Qodo"
+      ],
+      "routing_note": "Keep company and media-property background upstream; retain downstream operating-model implications for leader enablement and governance literacy."
+    },
+    {
+      "id": "2026-07-12-llm-gateway-governance",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://www.truefoundry.com/blog/llm-gateway",
+      "source_title": "What Is an LLM Gateway? A Complete Guide",
+      "visible_date": "Published: July 12, 2026",
+      "summary": "TrueFoundry described an LLM gateway as a middleware/control layer that routes requests across providers, enforces authentication and rate limits, tracks cost, applies governance, and handles failover through one API.",
+      "practice_relevance": "Local tool-governance and harness pages should treat gateways as operational control planes for policy, observability, cost, and failover rather than only provider abstraction or model routing.",
+      "named_entities": [
+        "TrueFoundry",
+        "LLM gateway",
+        "AI gateway",
+        "OpenAI",
+        "Anthropic",
+        "Cohere",
+        "Mistral"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenAI",
+        "Anthropic",
+        "Cohere",
+        "Mistral"
+      ],
+      "routing_note": "Product/vendor comparison belongs upstream; keep local practice implications for centralized governance, observability, cost tracking, and failover."
+    },
+    {
+      "id": "2026-07-11-slopsquatting-ai-coding-tools",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows"
+      ],
+      "source_url": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
+      "source_title": "Forget typosquatting; slopsquatting is the software supply chain threat created by AI coding tools",
+      "visible_date": "9:00 am, PT, July 11, 2026",
+      "summary": "VentureBeat reported on slopsquatting as a supply-chain threat in which attackers exploit AI coding assistants' hallucinated package names by registering plausible malicious dependencies.",
+      "practice_relevance": "AI-assisted coding controls should validate newly introduced dependencies against registries, provenance, allowlists, lockfiles, and human review instead of trusting generated package names or scaffolded install commands.",
+      "named_entities": [
+        "VentureBeat",
+        "slopsquatting",
+        "AI coding tools",
+        "software supply chain"
+      ],
+      "upstream_owned_entities": [
+        "VentureBeat",
+        "slopsquatting"
+      ],
+      "routing_note": "Keep broad security technique background upstream; retain local practice implications for package-install risk, dependency gates, and generated-code review."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection/",
+      "source_title": "CodeQL 2.26.0 adds Kotlin 2.4.0 support and AI prompt injection detection",
+      "visible_date": "July 10, 2026",
+      "reason": "Date-only July 10 item is outside or boundary-ambiguous for the strict cutoff that started at 2026-07-10T20:32:07-04:00."
+    },
+    {
+      "source_url": "https://www.qodo.ai/blog/best-software-engineering-podcasts/",
+      "source_title": "13 Best Software Engineering Podcasts for Engineering Leaders in 2026",
+      "visible_date": "Jul 10, 2026",
+      "reason": "Primary source is date-only July 10 and therefore boundary-ambiguous or outside the strict cutoff; related July 11 Futurum analysis was kept instead."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/best-ai-gateway-for-claude-code",
+      "source_title": "Best AI Gateway for Claude Code in 2026",
+      "visible_date": "July 13, 2026",
+      "reason": "Future-dated relative to the local run date of 2026-07-12 in America/Toronto."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/best-mcp-gateway-for-claude-code",
+      "source_title": "Best MCP Gateway for Claude Code Enterprise Teams 2026",
+      "visible_date": "July 13, 2026 in later page chrome; search result also showed July 11, 2026",
+      "reason": "Conflicting visible dates across search result and page chrome; excluded because the collector must reject ambiguous or future-dated candidates."
+    },
+    {
+      "source_url": "https://prommer.net/en/tech/guides/always-on-ai-coding-agents/",
+      "source_title": "Autonomous AI Coding Agents 2026: What OpenClaw, Hermes, Devin, and Codex Mean for Your Team",
+      "visible_date": "Published: May 25, 2026; Updated: July 13, 2026",
+      "reason": "Future-dated relative to the local run date and mainly broad product comparison owned upstream."
+    },
+    {
+      "source_url": "https://dl.acm.org/doi/full/10.1145/3786583.3786883",
+      "source_title": "Developer Needs and Feasible Features for AI Assistants in IDEs",
+      "visible_date": "Version created on July 11, 2026",
+      "reason": "Search result showed a fresh version date, but the page could not be safely opened in this environment for source verification."
+    },
+    {
+      "source_url": "https://www.aol.com/articles/relic-report-reveals-ai-generated-130000000.html",
+      "source_title": "New Relic Report Reveals AI-Generated Code Grades Higher in Review, Yet Triggers Rise in Production Incidents",
+      "visible_date": "Updated Sun, July 12, 2026 at 12:25 AM PDT in search result",
+      "reason": "Public article returned HTTP 429 during verification; original New Relic release visible in search was older than the cutoff."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/jensen-huang-my-engineers-prefer-building-agents-to-writing-code-2026-7",
+      "source_title": "Jensen Huang says his software engineers prefer building agents to writing code",
+      "visible_date": "Published: 3 days ago",
+      "reason": "Relative date places it outside the last-2-days window and the item is mostly broad company/workforce commentary owned upstream."
+    },
+    {
+      "source_url": "https://openai.com/index/gpt-5-6/",
+      "source_title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "visible_date": "Published: 3 days ago",
+      "reason": "Outside the cutoff and primarily model/product coverage owned by the upstream AI wiki; only downstream eval implications would be local."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-07-codex-as-agent-provider-and-agentic-enhancements-in-jetbrains-ides/",
+      "source_title": "Codex as agent provider and agentic enhancements in JetBrains IDEs",
+      "visible_date": "July 7, 2026",
+      "reason": "Stale for this run; similar governed-settings and MCP-management implications were captured in prior collector windows."
+    }
+  ],
+  "follow_up_notes": [
+    "Downstream ingest should consider whether Dockerless belongs under verification-and-evals/verification-loops-and-evals.md or trajectory-level-agent-evaluation.md as a pre-CI evidence pattern rather than as final validation.",
+    "The slopsquatting item should be routed through governance-and-risk/sensitive-data-and-supply-chain-controls.md only as dependency-intake practice; broad technique background should stay upstream.",
+    "Future-dated July 13 TrueFoundry gateway items should be reconsidered in the next collector run if still relevant and no longer future-dated.",
+    "No docs/wiki pages were updated by this collector."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}

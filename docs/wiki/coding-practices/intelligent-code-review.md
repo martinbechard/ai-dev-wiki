@@ -37,6 +37,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add four review-quality signals: multimodal pull-request artifacts can hide agent-readable instructions, model choice is only one part of governed review, full-repository context is needed for security and design findings, and AI-discovered security issues still need patch verification. Review should therefore include binary or image handling rules, repository-context requirements, signal-to-noise controls, and source-to-patch evidence rather than accepting fluent comments as coverage.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds adversarial multi-agent review as a workflow signal, not a blanket acceptance rule. Coordinated implementation and adversarial review can be useful when the topology, reviewer independence, regression proof, and repair ownership are visible; broad runtime or product news stays upstream.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -72,6 +74,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Include image, binary, and generated-asset handling rules when a review or follow-on coding agent can inspect multimodal pull-request content.
 - Evaluate AI review systems by repository context, actionable findings, false-positive control, fix validation, and human judgment support rather than model branding alone.
 - Require patch-verification evidence for AI-assisted security findings before treating a vulnerability report as resolved.
+- Treat adversarial multi-agent review claims as useful only when reviewer independence, regression proof, implementation ownership, and repair accountability are inspectable.
+- Keep prompt-injection and untrusted-content gates active during review when the reviewer can inspect issue text, PR assets, generated artifacts, or runtime files.
 
 ## Authoritative Sources
 
@@ -96,6 +100,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 
 ## Related Code
 
@@ -135,3 +140,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-09 with organization-scoped review targeting and untrusted-repository autonomous review boundaries.
 - Maintained on 2026-07-10 with AI-authored PR review capacity, understanding-retention, and evidence-package requirements.
 - Maintained on 2026-07-11 with multimodal PR review, repository-context, signal-to-noise, and patch-verification requirements.
+- Maintained on 2026-07-12 with adversarial multi-agent review topology, reviewer independence, regression proof, and repair-accountability requirements.

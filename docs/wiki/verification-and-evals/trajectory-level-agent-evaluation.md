@@ -29,6 +29,8 @@ The July 7 raw sources add step-local and hidden-state research signals. The [le
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds benchmark-design and failure-diagnosis evidence for coding-agent trajectories. Performance optimization, long-horizon software tasks, and repository-level failure diagnosis all need traces that show profiling choices, context folding, test-failure pivots, earliest-error localization, and verification decisions. Broad PERFOPT-Bench, DeepSWE, TrajAudit, and paper cataloging belongs upstream; locally, the evaluation rule is to keep trajectories rich enough to explain why the agent path worked or failed.
 
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds provider-adapter and trace-assertion evidence. Coding-agent evaluation should record which harness path ran the task, which side effects were allowed, how traces were asserted, how token or cost pressure shaped the run, and which sandbox or deterministic checks made the result reproducible.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -66,6 +68,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Treat model-internal probing as research context unless it is backed by observable verification evidence in the local workflow.
 - Fold low-signal trace detail into saliency summaries only when the raw trace, tests, and source evidence remain available for audit.
 - Use test-failure reports as investigation priors, not as substitutes for source inspection and reproducible verification.
+- Record provider adapter, side-effect permissions, trace assertions, cost signals, and sandbox checks when the evaluated agent surface changes.
 
 ## Authoritative Sources
 
@@ -81,6 +84,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -114,3 +118,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-04 with platform-layer traces and agentic-testing trajectory evidence.
 - Maintained on 2026-07-07 with step-level action scoring and internal-state probing as research-only assurance context.
 - Maintained on 2026-07-10 with performance, long-horizon, and failure-diagnosis trajectory evidence.
+- Maintained on 2026-07-12 with provider-adapter, side-effect, trace-assertion, cost, and sandbox signals for coding-agent trajectories.

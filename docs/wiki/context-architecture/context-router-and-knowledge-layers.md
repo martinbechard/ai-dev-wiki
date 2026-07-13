@@ -19,6 +19,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds runtime-memory and workflow-runtime evidence. Context routers should route separately to model context, durable execution history, memory stores, event logs, and human-wait state. Tool and runtime names stay upstream-owned; locally, the router must prevent those layers from collapsing into one opaque prompt bundle.
 
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds active-versus-durable context evidence. Context routers should distinguish active turn context, working-set assembly, durable decisions, memory stores, artifacts, and auditable storage so agents know which layer is instruction, evidence, history, or recoverable state.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -34,6 +36,7 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Preserve authority signals so agents know which documents should guide current work.
 - Route governed meaning, policy metadata, and decision memory to knowledge-layer leaves rather than repeating them in the thin router.
 - Route model context, durable execution history, memory stores, event logs, and human-wait state as separate layers.
+- Route active turn context, working-set assembly, durable decisions, artifacts, and auditable storage as separate context layers.
 
 ## Authoritative Sources
 
@@ -43,6 +46,7 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [federation.md](../federation.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -72,3 +76,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Maintained on 2026-06-23 as the overview page for split context architecture leaves.
 - Maintained on 2026-07-03 with governed meaning, policy metadata, lineage, retrieval, memory, and task-rule routing boundaries.
 - Maintained on 2026-07-07 with separate routing for model context, execution history, memory stores, event logs, and human-wait state.
+- Maintained on 2026-07-12 with active context, working-set assembly, durable decisions, artifacts, and auditable storage as separate routing layers.

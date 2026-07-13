@@ -19,6 +19,10 @@ The July 7 raw sources add a verification-cost refinement. The [topic news colle
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds a verification-gap warning. AI coding assistants can reduce generation cost faster than teams increase validation capacity, so acceptance gates should explicitly budget test authoring, maintainability review, architecture judgment, regression ownership, and human acceptance. Throughput is not a success measure until generated changes survive the required verification path.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds a staged-verification refinement. Environment-free patch checking can reduce verification tax when it filters obviously weak candidates before CI, reviewer, or sandbox cost, but it does not replace repository tests, runtime checks, or human acceptance for consequential changes.
+
+The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces acceptance gates as trace and side-effect checks around whole coding-agent systems. Approval checks, sandbox evidence, token or cost signals, and trace assertions should appear before a workflow claims a generated change is review-ready.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -30,6 +34,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Encode recurring proof standards in skills and runbooks so completion checks travel with the procedure.
 - Add trace, step-state, tool-result-use, localization, and runtime telemetry gates when final output can hide the failure mode.
 - Treat validation capacity as the bottleneck for AI-assisted delivery and plan review, tests, maintainability checks, and regression ownership before increasing generation throughput.
+- Use cheap verifier triage to allocate scarce CI, sandbox, or reviewer attention, while keeping authoritative gates tied to the repository and risk surface.
+- Require trace assertions, side-effect safety, approval checks, and sandbox evidence when a coding-agent harness claims a change is ready for review.
 
 ## Authoritative Sources
 
@@ -41,6 +47,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 
 ## Related Code
 
@@ -71,3 +79,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.
 - Maintained on 2026-07-07 with evidence-path gates for tool-use, localization, step-state, and runtime telemetry failures.
 - Maintained on 2026-07-11 with verification-gap guidance for validation capacity, maintainability review, and regression ownership.
+- Maintained on 2026-07-12 with staged verifier triage, trace assertions, side-effect safety, and sandbox evidence for coding-agent acceptance.

@@ -39,6 +39,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds agent-provider, managed-settings, and cost-shape signals. Workflow selection should decide whether a task needs IDE-native execution, cloud agent execution, managed settings, persistent workspace state, or a lighter human-led assist pattern before adopting a provider route. Cost analyses should influence the workflow shape only when they are tied to context depth, tool use, retries, verification work, and accepted outcomes.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds engineering-leader literacy as a workflow-selection input. Leaders need enough practical AI-assisted development literacy to judge reliability, hallucination management, governance evidence, evaluation results, and rollout risk before procurement or autonomy defaults are treated as team policy.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -66,6 +68,7 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - Treat specialized multi-agent modernization packages as workflow definitions with explicit roles, gates, evidence, and cost telemetry.
 - Choose IDE-native, CLI, cloud-agent, or human-led assist surfaces from the required state, settings, permissions, latency, and handoff evidence.
 - Use cost-shape evidence to redesign context depth, tool loops, retry strategy, or verification scope before treating model choice as the primary lever.
+- Treat leader enablement, reliability vocabulary, hallucination controls, governance evidence, and evaluation literacy as prerequisites for scaling agentic SDLC workflows.
 
 ## Authoritative Sources
 
@@ -87,6 +90,7 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 
 ## Related Code
 
@@ -128,3 +132,4 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 - Maintained on 2026-07-06 with enterprise procurement readiness and collaboration-channel workflow selection inputs.
 - Maintained on 2026-07-09 with repository-overview verification, admin-enabled model routing, and specialized modernization workflow package criteria.
 - Maintained on 2026-07-10 with agent-provider routing, managed settings, persistent-state, and cost-shape workflow inputs.
+- Maintained on 2026-07-12 with engineering-leader AI literacy, reliability, governance evidence, and rollout-risk inputs to workflow selection.

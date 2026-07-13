@@ -25,6 +25,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds an adoption-readiness gate for agentic workflows that consume user-controlled text. Before a workflow ships, review should ask whether the same agent both reads attacker-writable content and holds private-data access, whether public replies are allowed, and what audit or policy evidence proves that private data cannot move from retrieval to publication.
 
+The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds lifecycle gates for adversarial multi-agent review, prompt-injection exposure, dependency intake, gateway governance, and leader readiness. A workflow should not move from experiment to team default until its review topology, regression proof, untrusted-content boundary, dependency policy, control-plane evidence, and owner literacy are explicit.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -40,6 +42,7 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Treat execution-boundary evidence as part of lifecycle review before accepting an agent-produced implementation or repair.
 - Add readiness gates for event-triggered agents that read public text, use private context, or post into public channels.
 - Review least-privilege repository scope, trusted-instruction separation, output disclosure policy, and incident audit evidence before enabling recurring agentic workflows.
+- Require lifecycle review of review topology, regression evidence, untrusted-content exposure, dependency policy, gateway controls, and owner readiness before agentic workflows become team defaults.
 
 ## Authoritative Sources
 
@@ -53,6 +56,7 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
+- [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 
 ## Related Code
 
@@ -85,3 +89,4 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 - Maintained on 2026-07-01 with generator-reviewer separation for formal lifecycle gates.
 - Maintained on 2026-07-08 with pre-execution lifecycle gates for untrusted setup, generated commands, and sensitive-code promotion.
 - Maintained on 2026-07-10 with adoption-readiness gates for issue-triggered agents, public output, and private-data access.
+- Maintained on 2026-07-12 with lifecycle gates for adversarial review topology, regression proof, untrusted content, dependency policy, gateway controls, and owner readiness.
