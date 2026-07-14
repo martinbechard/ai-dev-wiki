@@ -15,6 +15,8 @@ The local practice is to pair implementation workflow with judgment workflow. Co
 
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add quality and compliance gates. Product judgment should include runtime environment checks, compliance evidence, audit logs, human oversight, and established software-quality dimensions when AI-generated work changes customer-facing or regulated workflows. Those gates should stay separate from vendor or standards background, which belongs upstream unless it changes local acceptance practice.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds frontend verification as a product-judgment gate. AI-generated UI should be accepted against realistic user conditions: task completion, accessibility, keyboard interaction, focus behavior, state changes, loading, and error paths. Screenshots and successful renders are supporting evidence, not product acceptance.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -24,6 +26,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - Keep product, design, and technical context documents maintained because stale judgment context weakens every gate.
 - Let small fixes use narrower gates when product or design risk is low.
 - Include runtime, compliance, audit, oversight, maintainability, reliability, and security evidence when AI-generated work carries product or regulatory risk.
+- Include realistic frontend task checks for accessibility, keyboard use, focus management, state transitions, loading behavior, and error recovery before accepting AI-generated UI.
+- Treat screenshots and rendered previews as partial evidence; they do not replace user-flow acceptance for interactive work.
 
 ## Authoritative Sources
 
@@ -32,6 +36,7 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -59,3 +64,4 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.
 - Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.
+- Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.

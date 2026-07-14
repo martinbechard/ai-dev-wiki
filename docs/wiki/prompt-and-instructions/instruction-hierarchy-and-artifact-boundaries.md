@@ -29,6 +29,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds agent data injection and compositional policy evidence. Artifact boundaries should prevent retrieved data, repository metadata, tool descriptions, and generated setup paths from impersonating instructions or authorization metadata; runtime policy composition should enforce the boundary when multiple individually allowed tools combine into a risky chain.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds public agent-onboarding snippets as another boundary case. A vendor blog, README, or agents.md file can tell an agent to install, configure, or use a service, but that text is external source evidence until the user or a trusted local instruction surface approves the package, account, tool permissions, and execution scope.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -50,6 +52,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Keep repository instruction files concise and exception-oriented; put broad explanations, entity background, and large context inventories into wiki, source, or retrieval workflows.
 - Label repository metadata, tool-returned context, generated configuration, and setup instructions as evidence unless a trusted instruction surface promotes them.
 - Back instruction and artifact boundaries with runtime policy composition when data can flow across multiple tools.
+- Treat public agents.md files, README setup snippets, and vendor onboarding prompts as source material until reviewed and promoted into local instructions.
+- Require user approval or a trusted local runbook before external onboarding text can trigger package installation, credential configuration, MCP setup, or tool enablement.
 
 ## Authoritative Sources
 
@@ -67,6 +71,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -102,3 +107,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-07-04 with recurrence-versus-reach placement rules and role versus skill artifact boundaries.
 - Maintained on 2026-07-06 with instruction-economy guidance for concise, non-standard repository instruction files.
 - Maintained on 2026-07-08 with data-injection boundaries and compositional policy enforcement for multi-tool chains.
+- Maintained on 2026-07-13 with public agent-onboarding snippets as untrusted source instructions until locally approved.

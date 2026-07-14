@@ -25,6 +25,8 @@ The [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-w
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a training-sequence signal for RAG responsibility. Teams should teach developers to preserve citation paths, ranking rationale, chunk authority, and access boundaries before assigning them autonomous RAG or MCP-enabled agent work.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds an operational-security lens for RAG-backed agents. Production RAG systems should be reviewed for source inventory, permissions, runtime separation, credential hygiene, logging, and blast radius before they are allowed to retrieve codebase, ticket, or enterprise data for an acting agent.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -42,6 +44,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Preserve metric definitions, semantic-layer provenance, source truth, and access boundaries when agents retrieve enterprise data.
 - Monitor data-agent executions so retrieved context can be traced back to governed source semantics.
 - Require developers to explain citation paths, ranking rationale, chunk authority, and access boundaries before they own autonomous RAG-backed agent workflows.
+- Review RAG pipelines and vector stores as governed runtime infrastructure, not only retrieval quality components.
+- Require source inventory, access boundaries, credential hygiene, logging, runtime separation, and blast-radius review before RAG-backed agents act on retrieved development or enterprise data.
 
 ## Authoritative Sources
 
@@ -54,6 +58,7 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -84,3 +89,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Maintained on 2026-07-01 with search-first retrieval, typed facets, metadata filtering, targeted reads, and quality-preserving token reduction.
 - Maintained on 2026-07-04 with semantic-layer provenance, source truth, and monitored enterprise data retrieval.
 - Maintained on 2026-07-09 with RAG responsibility training for citation paths, ranking rationale, chunk authority, and access boundaries.
+- Maintained on 2026-07-13 with RAG infrastructure inventory, runtime separation, credential hygiene, logging, and blast-radius controls.

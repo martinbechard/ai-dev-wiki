@@ -37,6 +37,8 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 
 The July 12 raw sources add three control refinements. The [topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) reinforces prompt-injection, slopsquatting, LLM gateway, and leader-governance controls. The [leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces task-scoped access, privileged-action visibility, centralized policy, emergency pause, and per-tool audit controls.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add AI-authored-code traceability, regulated lifecycle controls, and cross-boundary visibility. Local governance should record where AI-generated code enters, which policies and tests applied, what issues were found, how remediation was verified, and who owns agents that cross vendor, contractor, or internal-system boundaries.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -75,6 +77,9 @@ The detailed control leaves are:
 - For issue-triggered agents, minimize repository scope, separate private-data reads from public posting, and require policy evidence before any agent-authored response can disclose retrieved content.
 - Gate package installs, dependency edits, public replies, gateway routing, and privileged tool calls through deterministic policy evidence rather than model assurances.
 - Review leader-facing governance literacy, evaluation evidence, and reliability assumptions before expanding agentic SDLC workflows beyond pilots.
+- Treat AI-authored code as an auditable source class with generation, review, test, remediation, and policy-decision records.
+- Require lifecycle controls for regulated teams: standards guide the agent before work begins, and independent verification gates run before code enters the main codebase.
+- Map agent visibility across vendors, contractors, SaaS tools, repositories, and internal systems before expanding what an agent can see, do, or escalate.
 
 ## Authoritative Sources
 
@@ -100,6 +105,8 @@ The detailed control leaves are:
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 
 ## Related Code
 
@@ -142,3 +149,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-09 with admin-enabled model access, runtime enforcement, shadow-AI inventory, shared managed runtime, and untrusted repository review controls.
 - Maintained on 2026-07-10 with issue-triggered workflow controls for minimum repository scope, private-read separation, and public-output disclosure gates.
 - Maintained on 2026-07-12 with slopsquatting, prompt-injection, LLM gateway, task-scoped access, privileged-action visibility, and leader-governance controls.
+- Maintained on 2026-07-13 with AI-authored-code traceability, regulated lifecycle controls, and cross-boundary agent visibility requirements.

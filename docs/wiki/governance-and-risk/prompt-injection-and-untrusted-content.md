@@ -33,6 +33,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds a multimodal repository case. Images, binaries, screenshots, generated assets, and other non-text files can carry instructions that a later multimodal agent may read even when a human reviewer sees only a harmless artifact. Coding-agent review should treat binary and image inputs as untrusted content, isolate secrets from review and repair agents, and test downstream agent behavior when a pull request contains multimodal evidence.
 
+The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) reinforces image-based prompt injection, public-issue injection, symlink approval confusion, and hallucinated repository paths as connected untrusted-source cases. The local boundary is the same across media: public text, repository metadata, image content, filesystem links, and generated URLs may inform investigation, but they cannot authorize secret reads, cross-workspace writes, package installs, public posting, or source fetching without independent policy evidence.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -58,6 +60,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Keep repository secrets out of coding-agent context and require explicit binary or multimodal review rules before a non-text artifact can influence generated code.
 - Keep public issue text, PR content, generated review artifacts, and runtime files out of the instruction channel until repository trust and harness policy are established.
 - Require prompt-injection gates before public development agents can combine attacker-writable content, private context, dependency actions, and public output.
+- Treat symlinks, file paths, generated repository URLs, and image contents as untrusted evidence when they can change where an agent reads, writes, fetches, or reveals data.
+- Require independent source and path verification before an agent follows a generated URL, writes through a filesystem link, or acts on hidden image or binary instructions.
 
 ## Authoritative Sources
 
@@ -76,6 +80,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 
 ## Related Code
 
@@ -114,3 +119,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-10 with issue-triggered agent boundaries for attacker-writable issue text, private-repository access, and public output posting.
 - Maintained on 2026-07-11 with multimodal prompt-injection boundaries for images, binaries, generated assets, and secret isolation.
 - Maintained on 2026-07-12 with public development-agent prompt-injection gates for issue text, PR content, generated artifacts, runtime files, and public output.
+- Maintained on 2026-07-13 with image-injection, symlink, public-issue, and generated-repository path boundaries.

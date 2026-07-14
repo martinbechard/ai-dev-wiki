@@ -41,6 +41,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds engineering-leader literacy as a workflow-selection input. Leaders need enough practical AI-assisted development literacy to judge reliability, hallucination management, governance evidence, evaluation results, and rollout risk before procurement or autonomy defaults are treated as team policy.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds adoption-pressure, regulated lifecycle, and modernization-package signals. Workflow selection should decide whether a team is running an experiment, a mandated rollout, a regulated delivery cycle, or a specialized modernization package before choosing tools; each shape needs different review capacity, standards, verification gates, cost telemetry, and human escalation.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -69,6 +71,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Choose IDE-native, CLI, cloud-agent, or human-led assist surfaces from the required state, settings, permissions, latency, and handoff evidence.
 - Use cost-shape evidence to redesign context depth, tool loops, retry strategy, or verification scope before treating model choice as the primary lever.
 - Treat leader enablement, reliability vocabulary, hallucination controls, governance evidence, and evaluation literacy as prerequisites for scaling agentic SDLC workflows.
+- Distinguish experiments, peer-driven adoption, mandated rollout, regulated delivery, and legacy modernization packages before selecting tools or model routes.
+- Match each workflow shape to review capacity, lifecycle standards, verification gates, cost telemetry, and escalation paths.
 
 ## Authoritative Sources
 
@@ -91,6 +95,7 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -133,3 +138,4 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Maintained on 2026-07-09 with repository-overview verification, admin-enabled model routing, and specialized modernization workflow package criteria.
 - Maintained on 2026-07-10 with agent-provider routing, managed settings, persistent-state, and cost-shape workflow inputs.
 - Maintained on 2026-07-12 with engineering-leader AI literacy, reliability, governance evidence, and rollout-risk inputs to workflow selection.
+- Maintained on 2026-07-13 with experiment, mandate, regulated lifecycle, and modernization-package workflow distinctions.

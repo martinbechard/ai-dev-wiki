@@ -27,6 +27,8 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds enterprise multi-agent and modernization workflow signals. Multi-agent development platforms should define role separation, modernization workflow gates, cost telemetry, and administration boundaries before subagent fan-out becomes a standing operating surface.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) reinforces multi-agent modernization as a coordinated operating model. Subagent packages for COBOL, IBM i, Java, or other legacy modernization work should name role responsibilities, source-system constraints, verification gates, cost attribution, and human escalation paths before they are treated as reusable workflows.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -43,6 +45,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Treat repository-derived agent roles as candidate delegation contracts, not automatic authority to mine or expose private process data.
 - Validate proposed roles against observed workflow evidence, human expectations, coordination overhead, and privacy boundaries.
 - Define modernization-workflow roles, gates, ownership, and cost telemetry before turning multi-agent platform packages into recurring team practice.
+- Require source-system constraints, role responsibilities, verification gates, cost attribution, and escalation paths for legacy modernization subagent packages.
 
 ## Authoritative Sources
 
@@ -55,6 +58,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -89,3 +93,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-05 with dynamic-dispatch partitioning, typed intermediate results, and coordinator coverage reconciliation.
 - Maintained on 2026-07-07 with repo-derived role hypotheses, process-log privacy boundaries, and validation-before-delegation guidance.
 - Maintained on 2026-07-09 with multi-agent modernization role, gate, cost, and administration boundaries.
+- Maintained on 2026-07-13 with legacy-modernization subagent roles, source-system constraints, verification gates, cost attribution, and escalation paths.

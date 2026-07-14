@@ -19,6 +19,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add session grouping, guardrail, and runtime-enforcement signals. Owner cards should capture session or work-package naming conventions, guardrail ownership, runtime policy owner, and forensic evidence location when an agent runs as a recurring IDE, CLI, or modernization workflow.
 
+The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) adds cross-boundary visibility and shadow-AI ownership signals. Owner cards should show which vendor, contractor, SaaS, repository, internal system, or public channel an agent can touch, who approves escalation, and which sanctioned alternative replaces unmanaged tool use.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -32,6 +34,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Add risk classification, gateway policy, logging, monitoring, and oversight evidence when an agent becomes part of a recurring team workflow.
 - Record deployer or owner obligations clearly enough that compliance and operational reviews know who maintains the agent boundary.
 - Record session or work-package naming, guardrail owner, runtime policy owner, and forensic evidence location for recurring IDE, CLI, or modernization agents.
+- Record external and internal boundaries: vendors, contractors, SaaS tools, repositories, public channels, data classes, and systems the agent can see or affect.
+- Name the escalation approver and sanctioned fallback path when an owner discovers unmanaged or shadow agent use.
 
 ## Authoritative Sources
 
@@ -40,6 +44,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -71,3 +76,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-06-27 with single-responsible-owner and ownership-card fields from public practice updates.
 - Maintained on 2026-07-05 with risk classification, gateway policy, logging, monitoring, oversight evidence, and deployer-obligation fields.
 - Maintained on 2026-07-09 with session grouping, guardrail ownership, runtime policy ownership, and forensic evidence location fields.
+- Maintained on 2026-07-13 with cross-boundary visibility, escalation approver, and sanctioned fallback fields for unmanaged agent use.

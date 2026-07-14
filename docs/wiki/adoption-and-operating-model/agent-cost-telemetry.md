@@ -43,6 +43,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds price-claim and benchmark-provenance signals. Coding-agent pricing claims should be interpreted through cost per verified outcome, not list price alone, and benchmark claims should carry provenance and contamination checks before they influence model-routing or adoption decisions.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds multi-agent modernization and spend-dashboard evidence. Enterprise modernization workflows should track cost by role, work package, legacy platform, verification gate, and accepted outcome so multi-agent coordination is measured as an operating model rather than generic agent usage.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -77,6 +79,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Treat per-user or cost-center budgets as guardrails that should trigger workflow review when they stop useful work or permit wasteful loops.
 - Compare coding-agent prices by verified outcome, review effort, verification cost, and accepted result rather than list price alone.
 - Record benchmark provenance and contamination risk when benchmark claims influence cost-performance or model-routing decisions.
+- Attribute multi-agent modernization spend to roles, legacy platform, work package, verification gate, and accepted outcome.
+- Treat built-in cost dashboards as workflow telemetry inputs that still need local mapping to review effort, risk reduction, and completed modernization work.
 
 ## Authoritative Sources
 
@@ -101,6 +105,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -141,3 +146,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-09 with admin-enabled model-route cost attribution and multi-agent platform cost analytics.
 - Maintained on 2026-07-10 with token, context, cache, tool, verification, retry, and budget-stop cost taxonomy signals.
 - Maintained on 2026-07-11 with cost-per-verified-outcome and benchmark-provenance controls for coding-agent price claims.
+- Maintained on 2026-07-13 with multi-agent modernization cost attribution and spend-dashboard mapping to accepted outcomes.

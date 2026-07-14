@@ -31,6 +31,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The July 12 raw sources add system-evaluation and pre-CI triage signals. The [topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) routes Dockerless-style environment-free patch checking into local practice as a cheap evidence layer before CI, sandbox, or reviewer time is spent. The [leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces coding-agent evals as whole-system traces with side-effect safety, provider-specific harness adapters, trace assertions, token and cost signals, and sandboxed verification.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds frontend verification and risk-based review evidence. AI-generated user interfaces can compile and render while still failing keyboard paths, focus movement, accessibility, state changes, loading, error handling, or end-to-end task completion. Verification plans should also document when automated evidence is enough for lower-risk code and when a reviewer must inspect the generated implementation directly.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -58,6 +60,8 @@ The July 12 raw sources add system-evaluation and pre-CI triage signals. The [to
 - Use test failures and trace saliency reduction to localize earliest agent errors instead of treating a final failure as an opaque outcome.
 - Treat environment-free or static verifier scores as triage evidence that can prioritize CI, sandbox, or reviewer attention, not as final acceptance.
 - Evaluate coding agents as systems with trace assertions, side-effect checks, provider adapters, sandbox evidence, and cost signals rather than as one-shot model calls.
+- Verify AI-generated frontend work with task completion, accessibility, keyboard, focus, state-change, loading, and error-path checks, not only build output or screenshots.
+- Record the review risk tier beside verification evidence so automated checks do not silently replace human inspection for high-impact generated code.
 
 ## Authoritative Sources
 
@@ -77,6 +81,7 @@ The July 12 raw sources add system-evaluation and pre-CI triage signals. The [to
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 
 ## Related Code
 
@@ -117,3 +122,4 @@ The July 12 raw sources add system-evaluation and pre-CI triage signals. The [to
 - Maintained on 2026-07-07 with tool-use failure categories, step-level action scoring, sandbox telemetry, and security-eval localization controls.
 - Maintained on 2026-07-10 with performance-optimization eval, long-horizon task, requirement-traceability, and trajectory-diagnosis gates.
 - Maintained on 2026-07-12 with pre-CI verifier triage, whole-system coding-agent evals, trace assertions, side-effect checks, and cost signals.
+- Maintained on 2026-07-13 with frontend task-completion checks and risk-tiered review evidence for AI-generated code.

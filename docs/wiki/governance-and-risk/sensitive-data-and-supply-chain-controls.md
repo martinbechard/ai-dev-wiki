@@ -35,6 +35,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds a slopsquatting dependency-control signal. Agent-generated package names, scaffolded install commands, and dependency updates should be treated as untrusted until the package exists in the intended registry, has expected provenance, matches project need, fits lockfile policy, and survives human or policy review.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add repository-source and runtime-separation signals. Public agent-onboarding snippets, unknown repository URLs, image or binary PR artifacts, and default-permission agent infrastructure should be treated as supply-chain inputs until source verification, install review, credential separation, logging, and blast-radius checks pass.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -63,6 +65,9 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Prefer deny-by-default network access for sensitive-code agents until the needed endpoints and evidence requirements are explicit.
 - Verify AI-proposed packages against registries, provenance, allowlists, lockfiles, and project need before accepting install commands or dependency edits.
 - Escalate hallucinated or unknown package names as supply-chain risk rather than letting the agent search, install, or rename around the failure unaudited.
+- Verify repository URLs, public setup snippets, and agent install instructions before allowing a coding agent to clone, install, configure, or execute them.
+- Treat image and binary artifacts as possible instruction carriers when a downstream multimodal agent can read them; keep secrets and credentials outside that review path.
+- Inventory agent frameworks, RAG stores, default permissions, logging, keys, runtime separation, and network reach before connecting them to codebases or enterprise data.
 
 ## Authoritative Sources
 
@@ -85,6 +90,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -126,3 +133,4 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Maintained on 2026-07-06 with scanner, virtual shell, chat adapter, state store, and collaboration-channel supply-chain checks.
 - Maintained on 2026-07-08 with telemetry-content classification, credential-separated sensitive-code sandboxes, and deny-by-default network controls.
 - Maintained on 2026-07-12 with slopsquatting dependency controls for AI-proposed package names, install commands, provenance, allowlists, and lockfiles.
+- Maintained on 2026-07-13 with source verification, public setup-snippet review, binary artifact handling, and runtime-separation checks for agent infrastructure.

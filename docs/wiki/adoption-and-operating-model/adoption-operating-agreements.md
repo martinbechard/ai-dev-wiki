@@ -21,6 +21,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds governance-first and developer-role signals. As agents draft more code and artifacts, operating agreements should make review depth, specification quality, evaluation habits, security judgment, orchestration accountability, sanctioned-tool use, and shadow-AI response part of adoption practice rather than treating prompt syntax as the core skill.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add rollout-pressure and shadow-AI signals. Operating agreements should separate experimentation norms from usage mandates, define sanctioned alternatives for common workflows, state prohibited data inputs, and pair adoption pressure with review capacity, governance evidence, and literacy work.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -40,6 +42,9 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Tie autonomy expansion to outcome ownership, developer training sequence, guardrails, and review evidence rather than license availability.
 - Train teams for review, specification, evaluation, security, orchestration, and debugging of agent-written work before expanding autonomy.
 - Include sanctioned-tool inventories, acceptable-use policy, and shadow-AI response paths in operating agreements for development teams.
+- Use peer visibility and experimentation norms carefully; do not turn adoption pressure into shallow review or unmanaged AI-authored code.
+- Provide sanctioned tools and clear prohibited-data categories so shadow AI is handled as an operating-model gap, not only a policy violation.
+- Pair rollout targets with review-capacity planning, governance evidence, and practical literacy for agent-generated work.
 
 ## Authoritative Sources
 
@@ -50,6 +55,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 
 ## Related Code
 
@@ -79,3 +86,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.
 - Maintained on 2026-07-09 with outcome-owned agent workflows, staged developer training, guardrails, and autonomy-expansion evidence.
 - Maintained on 2026-07-11 with governance-first rollout, shadow-AI response, and developer skill shifts toward review, specification, eval, security, and orchestration.
+- Maintained on 2026-07-13 with experimentation-versus-mandate boundaries, sanctioned alternatives, prohibited-data categories, and review-capacity controls.

@@ -27,6 +27,8 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add explicit command-approval pressure for untrusted repositories and workspace customizations. Approval boundaries should block shell execution, dependency setup, credential access, and external-system actions until the repository, instruction files, and generated customization surfaces have passed trust review.
 
+The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) adds misleading-approval and generated-source signals. Approval prompts should describe the actual write path, target workspace, data access, and side effect before action, and undo-after-write or post-hoc confirmation is not the same control as pre-action approval for symlink writes, package installs, repository fetches, or public output.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -43,6 +45,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Keep permission modes and bypass controls centrally visible for recurring team agents.
 - Separate request, repair, review, dismissal, merge, and release authority even when all actions are reachable from one agent-enabled surface.
 - Require trust review before repo-local instructions, generated customization files, or untrusted source content can authorize shell commands, dependency setup, credential use, or external-system actions.
+- Make approval prompts expose actual target paths, external systems, data classes, and side effects before action.
+- Treat undo-after-write prompts and post-hoc confirmations as insufficient for symlink writes, public output, package installs, source fetching, or credential-adjacent access.
 
 ## Authoritative Sources
 
@@ -58,6 +62,7 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 
 ## Related Code
 
@@ -92,3 +97,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-05 with execution isolation, capability isolation, durable human pauses, explicit host capabilities, and gateway policy signals.
 - Maintained on 2026-07-08 with managed permission modes, bypass controls, mobile repair delegation, and review-dismissal authority separation.
 - Maintained on 2026-07-09 with untrusted-repository, AGENTS.md, and generated customization command-approval boundaries.
+- Maintained on 2026-07-13 with pre-action approval clarity for symlink writes, package installs, repository fetches, public output, and credential-adjacent access.

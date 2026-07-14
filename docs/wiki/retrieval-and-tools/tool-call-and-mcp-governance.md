@@ -45,6 +45,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds an LLM gateway operating-control signal. Gateways are not only provider abstraction; in local practice they are policy and observability control planes for authentication, routing, rate limits, cost tracking, failover, and governance evidence across model and tool traffic.
 
+The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add runtime-infrastructure and public-onboarding controls. Agent frameworks, RAG pipelines, vector stores, CLI installers, MCP entrypoints, and public setup instructions should be inventoried as tool surfaces with permissions, credential handling, logging, runtime separation, source provenance, and approval state before an agent uses them against code or enterprise data.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -84,6 +86,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Specify where user-agent-task authorization is enforced before a tool call reaches an external system.
 - Treat LLM or AI gateways as governance control planes when they enforce authentication, routing policy, rate limits, cost telemetry, failover, and audit evidence.
 - Avoid using provider abstraction as a substitute for explicit tool authority, data-boundary, and policy-decision records.
+- Inventory agent frameworks, RAG stores, vector databases, CLI tools, and MCP entrypoints as active tool surfaces when they can affect code, credentials, or enterprise data.
+- Require source provenance, install review, credential handling, logging, runtime separation, and approval state before public onboarding text can configure a tool for agent use.
 
 ## Authoritative Sources
 
@@ -113,6 +117,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 
 ## Related Code
 
@@ -157,3 +163,4 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Maintained on 2026-07-10 with MCP identity interoperability and task-scoped access-control evidence.
 - Maintained on 2026-07-11 with gateway-mediated MCP access, agent-authentication enforcement, token custody, and audit-log criteria.
 - Maintained on 2026-07-12 with LLM gateway governance controls for authentication, routing, rate limits, cost, failover, and audit evidence.
+- Maintained on 2026-07-13 with RAG infrastructure, CLI/MCP onboarding, runtime separation, credential handling, and public setup approval controls.
