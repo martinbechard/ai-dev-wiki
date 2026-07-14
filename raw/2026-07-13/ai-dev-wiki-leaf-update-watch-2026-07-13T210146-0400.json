@@ -1,0 +1,700 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-13T21:01:46-04:00",
+    "policy": "visible published or updated date must fall within last 7 days relative to run time; missing, ambiguous, future-dated, and boundary-only dates excluded",
+    "start": "2026-07-06T21:01:46-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_title": "Agentic AI governance and Human-Agent Organisation posts",
+      "reason": "Outside the seven-day cutoff window for this run or boundary-only relative to the July 6 21:01 cutoff.",
+      "source_url": "https://agenticrisks.com/stay-updated/",
+      "visible_date": "2026-07-03 and 2026-06-29"
+    },
+    {
+      "candidate_title": "Indirect prompt injection in web content targets AI agents",
+      "reason": "Search result date was ambiguous and the page returned 403, so no visible publication date could be verified.",
+      "source_url": "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+      "visible_date": "last week"
+    },
+    {
+      "candidate_title": "AI Agent Prompt Injection: The New CI/CD Supply Chain Threat",
+      "reason": "Crawl date is not a publication/update date, and visible substantive date is outside the window.",
+      "source_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+      "visible_date": "crawled today; references June 1, 2026 disclosure"
+    },
+    {
+      "candidate_title": "Copilot code review AGENTS.md support and UI improvements",
+      "reason": "Useful for instruction-boundary history but outside this run's seven-day window.",
+      "source_url": "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+      "visible_date": "2026-06-18"
+    },
+    {
+      "candidate_title": "Copilot organization custom instructions are generally available",
+      "reason": "Useful historical instruction-governance source but outside the cutoff window.",
+      "source_url": "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+      "visible_date": "2026-04-02"
+    },
+    {
+      "candidate_title": "Codex for every role, tool, and workflow",
+      "reason": "Crawl date is not a visible update date and the visible publication timing is outside the last seven days.",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "visible_date": "last month / crawled today"
+    }
+  ],
+  "factual_summaries": [
+    "Researchers demonstrated a pull-request path where malicious instructions hidden in a PNG evade text-oriented review and later cause a coding agent to read secrets from a .env file and encode them into source.",
+    "Noma Labs reported GitLost, where crafted public GitHub issues can inject instructions into agentic workflows that also have private-repository read access, causing private data to be posted publicly.",
+    "Wiz disclosed GhostApproval, a class of symlink-related flaws affecting AI coding tools where agents could write outside workspace boundaries or present misleading approval prompts; some vendors patched or changed behavior.",
+    "Researchers reported HalluSquatting, where agents hallucinate plausible repository names or URLs and may fetch attacker-created repositories; the article reports high hallucination rates for recent repositories and notes mitigations such as web search and narrower permissions.",
+    "The article frames shadow AI as unsanctioned use of AI tools and embedded SaaS features, arguing governance should map real usage, provide sanctioned alternatives, state prohibited data inputs, and invest in literacy rather than relying on bans.",
+    "The article argues enterprise AI deployments often span vendor and contractor networks without consistent visibility into what agents can see, do, and escalate, using an alleged Mythos Preview leak as the framing example."
+  ],
+  "federation_note": "Broad product, company, model, and ecosystem entity background remains upstream-owned; this artifact keeps local practice implications for durable ai-dev-wiki leaves.",
+  "follow_up_notes": [
+    "Consider adding image/binary artifact handling to local untrusted-content and approval-boundary checklists during ingest.",
+    "During ingest, keep broad GitHub product details upstream and capture the local rule: public issue text cannot be treated as workflow instruction.",
+    "Consider a local practice note distinguishing true authorization gates from undo-after-write prompts.",
+    "Ingest should capture repository/source verification as a runbook precondition, not as broad ecosystem coverage of each named tool.",
+    "Consider ingesting a local operating-model implication around sanctioned alternatives and prohibited data-input categories.",
+    "Route entity/background claims upstream if needed; local ingest should focus on visibility and cross-boundary ownership practices."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-11",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "qualified_source_urls": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/"
+      ],
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "qualified_source_urls": [
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-11",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "qualified_source_urls": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome"
+      ],
+      "qualified_update_count": 5,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "qualified_source_urls": [
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-11",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "qualified_source_urls": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+      "qualified_source_urls": [
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning"
+      ],
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+      "qualified_source_urls": [
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning"
+      ],
+      "qualified_update_count": 3,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "qualified_source_urls": [],
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-11",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+      "qualified_source_urls": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model"
+      ],
+      "qualified_update_count": 4,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+      "qualified_source_urls": [
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-07",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+      "qualified_source_urls": [
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-07",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+      "qualified_source_urls": [
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+      "qualified_source_urls": [
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model"
+      ],
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+      "qualified_source_urls": [],
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-09",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+      "qualified_source_urls": [
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning"
+      ],
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+        "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+        "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+        "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+        "https://agenticrisks.com/stay-updated/",
+        "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+        "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+        "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+        "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      ]
+    }
+  ],
+  "leaf_universe_count": 65,
+  "named_entities": [
+    "ASSET Research Group",
+    "Amazon Q Developer",
+    "Anthropic Mythos Preview",
+    "Bugbot",
+    "CVE-2026-12958",
+    "CVE-2026-50549",
+    "Claude Code",
+    "CodeRabbit",
+    "Copilot",
+    "Cursor",
+    "DPO Centre",
+    "EU AI Act",
+    "Gemini CLI",
+    "GhostApproval",
+    "Ghostcommit",
+    "GitHub Agentic Workflows",
+    "GitHub Issues",
+    "GitLost",
+    "Google Antigravity",
+    "HalluSquatting",
+    "IBM Cost of a Data Breach Report",
+    "Intuit",
+    "Noma Labs",
+    "OpenClaw",
+    "SS&C Blue Prism",
+    "Shadow AI",
+    "TechRadar",
+    "Technion",
+    "Tel Aviv University",
+    "Windsurf",
+    "Wiz"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "Researchers demonstrated a pull-request path where malicious instructions hidden in a PNG evade text-oriented review and later cause a coding agent to read secrets from a .env file and encode them into source.",
+      "follow_up_note": "Consider adding image/binary artifact handling to local untrusted-content and approval-boundary checklists during ingest.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": [
+        "Ghostcommit",
+        "ASSET Research Group",
+        "CodeRabbit",
+        "Bugbot"
+      ],
+      "published_or_updated_at": "2026-07-11",
+      "source_title": "Ghostcommit hides prompt injection in images to fool AI agents, steal secrets",
+      "source_url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "Bugbot"
+      ],
+      "visible_date_evidence": "BleepingComputer article date line shows July 11, 2026.",
+      "why_it_matters_for_leaf": "The local prompt-injection and sensitive-data leaves should treat non-text artifacts in repositories as agent-readable untrusted content, not merely review attachments."
+    },
+    {
+      "factual_summary": "Noma Labs reported GitLost, where crafted public GitHub issues can inject instructions into agentic workflows that also have private-repository read access, causing private data to be posted publicly.",
+      "follow_up_note": "During ingest, keep broad GitHub product details upstream and capture the local rule: public issue text cannot be treated as workflow instruction.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "named_entities": [
+        "GitLost",
+        "Noma Labs",
+        "GitHub Agentic Workflows",
+        "GitHub Issues"
+      ],
+      "published_or_updated_at": "2026-07-08",
+      "source_title": "Critical Vulnerability Exposes GitHub Agentic Workflows to Prompt Injection",
+      "source_url": "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "visible_date_evidence": "SecurityWeek byline shows July 8, 2026.",
+      "why_it_matters_for_leaf": "This reinforces that an agent context window is an attack surface and that user-controlled issue, PR, comment, and file content needs explicit trust-boundary treatment before entering workflows."
+    },
+    {
+      "factual_summary": "Wiz disclosed GhostApproval, a class of symlink-related flaws affecting AI coding tools where agents could write outside workspace boundaries or present misleading approval prompts; some vendors patched or changed behavior.",
+      "follow_up_note": "Consider a local practice note distinguishing true authorization gates from undo-after-write prompts.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "named_entities": [
+        "GhostApproval",
+        "Wiz",
+        "Amazon Q Developer",
+        "Claude Code",
+        "Cursor",
+        "Windsurf",
+        "Google Antigravity",
+        "CVE-2026-12958",
+        "CVE-2026-50549"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "Flaws in some of the most popular AI coding tools left developers wide open to attack",
+      "source_url": "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+      "upstream_owned_entities": [
+        "Amazon Q Developer",
+        "Claude Code",
+        "Cursor",
+        "Windsurf",
+        "Google Antigravity"
+      ],
+      "visible_date_evidence": "ITPro article date line shows Published 9 July 2026.",
+      "why_it_matters_for_leaf": "Local promotion gates and approval boundaries should require canonical-path display, pre-write authorization semantics, and sandbox escape checks before agent-generated changes are accepted or promoted."
+    },
+    {
+      "factual_summary": "Researchers reported HalluSquatting, where agents hallucinate plausible repository names or URLs and may fetch attacker-created repositories; the article reports high hallucination rates for recent repositories and notes mitigations such as web search and narrower permissions.",
+      "follow_up_note": "Ingest should capture repository/source verification as a runbook precondition, not as broad ecosystem coverage of each named tool.",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "HalluSquatting",
+        "Tel Aviv University",
+        "Technion",
+        "Intuit",
+        "Cursor",
+        "Windsurf",
+        "OpenClaw",
+        "Gemini CLI",
+        "Copilot"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "HalluSquatting attack exploits hallucinated repository URLs in AI agents",
+      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Windsurf",
+        "OpenClaw",
+        "Gemini CLI",
+        "Copilot"
+      ],
+      "visible_date_evidence": "Tom's Hardware article date line shows Published 9 July 2026.",
+      "why_it_matters_for_leaf": "Request packages and reusable runbooks should include source verification for newly named tools, repositories, and agentic skills before installation or execution."
+    },
+    {
+      "factual_summary": "The article frames shadow AI as unsanctioned use of AI tools and embedded SaaS features, arguing governance should map real usage, provide sanctioned alternatives, state prohibited data inputs, and invest in literacy rather than relying on bans.",
+      "follow_up_note": "Consider ingesting a local operating-model implication around sanctioned alternatives and prohibited data-input categories.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "named_entities": [
+        "Shadow AI",
+        "TechRadar",
+        "DPO Centre",
+        "IBM Cost of a Data Breach Report",
+        "EU AI Act"
+      ],
+      "published_or_updated_at": "2026-07-07",
+      "source_title": "Shadow AI is a business design problem, but it can be overcome",
+      "source_url": "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+      "upstream_owned_entities": [
+        "IBM",
+        "EU AI Act"
+      ],
+      "visible_date_evidence": "TechRadar article date line shows Published 7 July 2026.",
+      "why_it_matters_for_leaf": "Local adoption agreements, ownership rosters, and operating-model leaves should treat unsanctioned AI usage as workflow-design evidence while still preserving sensitive-data boundaries."
+    },
+    {
+      "factual_summary": "The article argues enterprise AI deployments often span vendor and contractor networks without consistent visibility into what agents can see, do, and escalate, using an alleged Mythos Preview leak as the framing example.",
+      "follow_up_note": "Route entity/background claims upstream if needed; local ingest should focus on visibility and cross-boundary ownership practices.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Anthropic Mythos Preview",
+        "SS&C Blue Prism",
+        "TechRadar"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "Anthropic's Mythos leak hands enterprises a timely warning",
+      "source_url": "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Mythos Preview",
+        "SS&C Blue Prism"
+      ],
+      "visible_date_evidence": "TechRadar article date line shows Published 9 July 2026.",
+      "why_it_matters_for_leaf": "Agent ownership and tier-specific conventions need fields for vendor/contractor boundaries, access maps, escalation paths, and visibility into deployed agents."
+    }
+  ],
+  "run_timestamp": "2026-07-13T21:01:46-04:00",
+  "scanner_output_policy": "Raw artifact only; no scanner output saved under raw/processed and docs/wiki was not updated.",
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "source_urls_checked": [
+    "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+    "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
+    "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+    "https://www.tomshardware.com/tech-industry/cyber-security/hallusquatting-is-the-latest-agentic-ai-exploit-where-models-dream-up-potentially-malicious-urls-in-tool-calls-attack-exploits-a-fundamental-weakness-in-every-available-model",
+    "https://www.techradar.com/pro/shadow-ai-is-a-business-design-problem-but-it-can-be-overcome",
+    "https://www.techradar.com/pro/anthropics-mythos-leak-hands-enterprises-a-timely-warning",
+    "https://agenticrisks.com/stay-updated/",
+    "https://www.infosecurity-magazine.com/news/indirect-prompt-injection-web/",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-code-github-action-prompt-injection/",
+    "https://github.blog/changelog/2026-06-18-copilot-code-review-agents-md-support-and-ui-improvements/",
+    "https://github.blog/changelog/2026-04-02-copilot-organization-custom-instructions-are-generally-available/",
+    "https://openai.com/index/codex-for-every-role-tool-workflow/"
+  ],
+  "upstream_owned_entities": [
+    "Amazon Q Developer",
+    "Anthropic",
+    "Bugbot",
+    "Claude Code",
+    "CodeRabbit",
+    "Copilot",
+    "Cursor",
+    "EU AI Act",
+    "Gemini CLI",
+    "GitHub",
+    "Google Antigravity",
+    "IBM",
+    "Mythos Preview",
+    "OpenClaw",
+    "SS&C Blue Prism",
+    "Windsurf"
+  ]
+}
