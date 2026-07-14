@@ -1,0 +1,324 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-13T20:33:20-04:00",
+  "run_timestamp_utc": "2026-07-14T00:33:20Z",
+  "cutoff_window": {
+    "start": "2026-07-11T20:33:20-04:00",
+    "start_utc": "2026-07-12T00:33:20Z",
+    "end": "2026-07-13T20:33:20-04:00",
+    "end_utc": "2026-07-14T00:33:20Z",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, boundary-only, stale, upstream-only, or inaccessible candidates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_policy": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_scope": "AI-assisted development practice lens: context architecture, source workflows, durable instructions, agent operating practices, coding practices, retrieval and tool governance, verification, application harness patterns, governance, risk, and team adoption.",
+    "collector_boundary": "Items name upstream-owned entities when useful, but only the local practice implication is retained for downstream ingest."
+  },
+  "search_summary": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "queries": [
+      "\"July 13, 2026\" \"coding agents\" \"software engineering\"",
+      "\"July 13, 2026\" \"AI code review\" \"software\"",
+      "\"July 13, 2026\" \"MCP\" \"coding agents\"",
+      "\"July 13, 2026\" \"context engineering\" \"coding agents\"",
+      "site:github.blog/changelog \"July 13, 2026\" AI prompt injection code review",
+      "site:github.blog/changelog \"July 13, 2026\" Copilot MCP agent",
+      "site:anthropic.com \"July 13, 2026\" \"Claude Code\"",
+      "site:openai.com \"July 13, 2026\" Codex coding agents",
+      "\"July 13, 2026\" \"agent harness\" \"software development\"",
+      "\"July 13, 2026\" \"RAG\" \"codebase\" \"AI\"",
+      "\"July 13, 2026\" \"tool calling\" \"MCP\" \"AI agents\"",
+      "\"July 13, 2026\" \"AI-assisted development\" \"governance\""
+    ]
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-07-13-leaddev-peer-pressure-and-review-surrender",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://leaddev.com/ai/ai-coding-agents-spread-through-peer-pressure-not-mandates",
+      "source_title": "AI-coding agents spread through peer pressure, not mandates",
+      "visible_date": "July 13, 2026",
+      "summary": "LeadDev reported that manager and peer visibility can increase trial of AI coding agents, but retention depends on workflow fit. The article also warned that AI-generated pull requests can create review pressure that encourages cursory approval.",
+      "practice_relevance": "Adoption guidance should separate experimentation norms from usage mandates and pair rollout pressure with review-capacity controls, outcome measures, and explicit safeguards against shallow review of AI-generated changes.",
+      "named_entities": [
+        "LeadDev",
+        "Chris Stokel-Walker",
+        "Daniel Russo",
+        "Aalborg University",
+        "Michaela Greiler",
+        "Copilot CLI",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "LeadDev",
+        "Aalborg University",
+        "Copilot CLI"
+      ],
+      "routing_note": "Keep organization and product background upstream; retain local notes about adoption pressure, workflow fit, and code-review capacity."
+    },
+    {
+      "id": "2026-07-13-explainx-risk-based-ai-code-review",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://explainx.ai/blog/should-developers-stop-reviewing-ai-generated-code-2026",
+      "source_title": "Should Developers Stop Reading AI-Generated Code? The Review Debate",
+      "visible_date": "Jul 13, 2026",
+      "summary": "ExplainX framed the debate over reading every line of AI-generated code as a shift toward risk-based, evidence-driven review instead of all-or-nothing manual review.",
+      "practice_relevance": "Code-review guidance should define when line-by-line reading is mandatory, when tests/static analysis/runtime evidence can carry more weight, and how reviewers document risk-based acceptance for AI-authored changes.",
+      "named_entities": [
+        "ExplainX",
+        "Yash Thakker",
+        "AI code review",
+        "coding agents"
+      ],
+      "upstream_owned_entities": [
+        "ExplainX"
+      ],
+      "routing_note": "Keep vendor background upstream; retain local practice implications for risk-tiered review policies and evidence requirements."
+    },
+    {
+      "id": "2026-07-13-devops-ibm-bob-multi-agent-cost-dashboard",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://devops.com/ibm-bob-gets-multi-agent-muscle-and-a-cost-dashboard-for-enterprise-coding/",
+      "source_title": "IBM Bob Gets Multi-Agent Muscle and a Cost Dashboard for Enterprise Coding",
+      "visible_date": "July 13, 2026",
+      "summary": "DevOps.com reported that IBM Bob added multi-agent coordination, built-in spend tracking, and prebuilt workflows for mainframe COBOL, IBM i, and large Java modernization.",
+      "practice_relevance": "Enterprise agent workflow guidance should track multi-agent work as a coordinated operating model with cost telemetry and modernization-specific acceptance gates, not just as generic coding assistance.",
+      "named_entities": [
+        "DevOps.com",
+        "IBM",
+        "Bob",
+        "COBOL",
+        "IBM i",
+        "Java"
+      ],
+      "upstream_owned_entities": [
+        "DevOps.com",
+        "IBM",
+        "Bob"
+      ],
+      "routing_note": "Route product and vendor details upstream; keep local notes about multi-agent coordination, spend visibility, and modernization workflow controls."
+    },
+    {
+      "id": "2026-07-13-cyberscoop-ai-code-security-governance",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://cyberscoop.com/governing-ai-code-security-risks-op-ed/",
+      "source_title": "AI-generated code has made security debt a governance problem",
+      "visible_date": "July 13, 2026",
+      "summary": "CyberScoop argued that approving AI coding tools is insufficient governance; organizations need records of where AI-generated code enters, which policies and tests applied, what issues were found, and what fixes were made.",
+      "practice_relevance": "Governance pages should treat AI-authored code as an auditable source class with traceability from generation through review, test evidence, remediation, and policy decision records.",
+      "named_entities": [
+        "CyberScoop",
+        "Chris Wysopal",
+        "CISOs",
+        "AI coding tools",
+        "AI-generated code"
+      ],
+      "upstream_owned_entities": [
+        "CyberScoop"
+      ],
+      "routing_note": "Keep publisher and broad security commentary upstream; retain local practice implications for audit logs, source tracking, policy evidence, and remediation records."
+    },
+    {
+      "id": "2026-07-13-sonar-regulated-ai-assisted-development-cycle",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.sonarsource.com/blog/ai-regulated-industries-innovation/",
+      "source_title": "How SonarQube enables companies in regulated industries to accelerate innovation with AI",
+      "visible_date": "July 13, 2026",
+      "summary": "SonarSource described AI-assisted development in regulated industries as an agent-centric cycle of guiding, verifying, and solving across generation, CI/CD verification, and maintenance loops.",
+      "practice_relevance": "Regulated-team guidance should frame AI-assisted development as a lifecycle control system where organizational standards guide agents before work begins and independent verification gates run before code reaches the main codebase.",
+      "named_entities": [
+        "SonarSource",
+        "SonarQube",
+        "Agent Centric Development Cycle",
+        "AC/DC",
+        "AI-assisted development"
+      ],
+      "upstream_owned_entities": [
+        "SonarSource",
+        "SonarQube"
+      ],
+      "routing_note": "Route product and vendor positioning upstream; retain local notes about lifecycle controls, independent verification, and regulated-industry rollout."
+    },
+    {
+      "id": "2026-07-13-oreilly-frontend-verification-gap",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://www.oreilly.com/radar/the-frontend-verification-gap-in-ai-assisted-development/",
+      "source_title": "The Frontend Verification Gap in AI-Assisted Development",
+      "visible_date": "July 13, 2026",
+      "summary": "O'Reilly described a frontend verification gap where AI-generated UI can compile and render while still failing realistic user conditions such as accessibility, keyboard behavior, focus management, state changes, loading and error handling, and end-to-end task completion.",
+      "practice_relevance": "Verification-loop guidance should require UI acceptance checks beyond compilation and screenshots, including task completion, accessibility, focus, state, error, and loading behavior for AI-generated frontend work.",
+      "named_entities": [
+        "O'Reilly",
+        "Niharika P. Pujari",
+        "AI-assisted development",
+        "frontend verification"
+      ],
+      "upstream_owned_entities": [
+        "O'Reilly"
+      ],
+      "routing_note": "Keep publisher background upstream; retain local implications for frontend acceptance gates and user-flow verification."
+    },
+    {
+      "id": "2026-07-13-helpnet-ai-agent-rag-security-risk",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.helpnetsecurity.com/2026/07/13/ai-infrastructure-security-risks-report/",
+      "source_title": "99.9% of fixable AI vulnerabilities remain unpatched",
+      "visible_date": "July 13, 2026",
+      "summary": "Help Net Security summarized Orca Security findings that production agent frameworks, RAG pipelines, default permissions, weak logging, exposed keys, and missing runtime separation are creating an operational AI security layer with new blast-radius concerns.",
+      "practice_relevance": "Tool and RAG governance should include inventory, permissions, runtime separation, credential hygiene, logging, and blast-radius review for agents and retrieval systems that touch codebases or enterprise data.",
+      "named_entities": [
+        "Help Net Security",
+        "Orca Security",
+        "AI agents",
+        "RAG",
+        "vector databases",
+        "API keys"
+      ],
+      "upstream_owned_entities": [
+        "Help Net Security",
+        "Orca Security",
+        "RAG",
+        "vector databases"
+      ],
+      "routing_note": "Keep report and infrastructure background upstream; retain local notes about permission defaults, logging, separation, and credential controls for AI-assisted development systems."
+    },
+    {
+      "id": "2026-07-13-parallel-agent-onboarding-instructions",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://parallel.ai/blog/parallel-search-turbo",
+      "source_title": "Introducing Parallel Search Turbo",
+      "visible_date": "July 13, 2026",
+      "summary": "Parallel's product post included an agent-facing setup instruction that tells agents to read a public agents.md file and install or configure the service, alongside CLI and MCP entrypoints.",
+      "practice_relevance": "Durable-instruction guidance should treat public agent-onboarding snippets as untrusted source instructions that require user approval, package-install review, and tool-permission checks before execution.",
+      "named_entities": [
+        "Parallel",
+        "Parallel Search Turbo",
+        "Parallel CLI",
+        "Parallel MCP",
+        "agents.md"
+      ],
+      "upstream_owned_entities": [
+        "Parallel",
+        "Parallel Search Turbo",
+        "Parallel MCP"
+      ],
+      "routing_note": "Route product coverage upstream; retain local practice implications for external AGENTS-style instructions, installation prompts, and MCP/tool permission review."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-07-10-codeql-2-26-0-adds-kotlin-2-4-0-support-and-ai-prompt-injection-detection/",
+      "source_title": "CodeQL 2.26.0 adds Kotlin 2.4.0 support and AI prompt injection detection",
+      "visible_date": "July 10, 2026",
+      "reason": "Date-only July 10 item is outside the strict collector window that started at 2026-07-11T20:33:20-04:00."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "source_title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "visible_date": "July 8, 2026",
+      "reason": "Stale relative to the strict two-day window, despite direct relevance to agent sessions, integrated browser testing, cost visibility, and model discovery."
+    },
+    {
+      "source_url": "https://machinelearningmastery.com/the-complete-guide-to-tool-selection-in-ai-agents/",
+      "source_title": "The Complete Guide to Tool Selection in AI Agents",
+      "visible_date": "Published last week in search result; comments include July 13, 2026",
+      "reason": "The article body did not expose a qualifying publication or update date within the cutoff; comment dates are not accepted as source update evidence."
+    },
+    {
+      "source_url": "https://snowmanlabs.com/insights/how-to-measure-ai-engineering-roi",
+      "source_title": "How to Measure ROI from AI in Software Engineering",
+      "visible_date": "Search result said published 2 days ago; page body did not expose a visible publication date",
+      "reason": "Missing visible page date after opening the source, so it cannot satisfy the collector's visible-date requirement."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/best-ai-gateway-for-claude-code",
+      "source_title": "Best AI Gateway for Claude Code in 2026",
+      "visible_date": "July 13, 2026 in search result",
+      "reason": "Product-comparison item was upstream-product heavy and duplicated the prior run's local LLM-gateway governance implication without adding a distinct practice-level update."
+    },
+    {
+      "source_url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+      "source_title": "2026 Agentic Coding Trends Report",
+      "visible_date": "Crawled today; no qualifying visible publication or update date in search result",
+      "reason": "Crawled date is not accepted as publication or update evidence."
+    },
+    {
+      "source_url": "https://www.instagram.com/p/DaufUuTFDNN/",
+      "source_title": "Prompt engineering is dead The new skill is loop engineering",
+      "visible_date": "Published today in search result",
+      "reason": "Social post had insufficient accessible source text for a stable factual summary and was not needed because stronger dated public sources covered the local practice implication."
+    },
+    {
+      "source_url": "https://community.openai.com/t/ralph-loop-sounds-great-in-theory-but-what-happens-when-the-model-cannot-reliably-complete-one-step/1386733",
+      "source_title": "Ralph Loop Sounds Great in Theory - But What Happens When the Model Cannot Reliably Complete One Step?",
+      "visible_date": "July 13, 2026",
+      "reason": "Relevant as public user feedback, but excluded to avoid over-weighting anecdotal community reports when the O'Reilly and LeadDev items already covered verification-loop and review-capacity practice implications."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector output; do not synthesize into docs/wiki until a separate ingest run reads this artifact.",
+    "Potential local ingest themes: review capacity and risk-tiered AI code review, frontend acceptance gates, auditable AI-generated-code provenance, agent/RAG permissions and runtime separation, lifecycle verification in regulated environments, external agent-onboarding instruction risk, multi-agent cost telemetry.",
+    "Upstream routing candidates if needed: IBM Bob, SonarQube, Parallel Search Turbo, Copilot CLI, Orca Security report, publisher and vendor background."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}
