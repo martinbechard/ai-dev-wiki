@@ -1,0 +1,411 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-14T20:32:59-04:00",
+  "cutoff_window": {
+    "start": "2026-07-12T20:32:59-04:00",
+    "end": "2026-07-14T20:32:59-04:00",
+    "rule": "Include only public web sources with a visible publication or update date inside the last 2 days relative to run time. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "routing_rule": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques. This collector keeps only AI-assisted development practice implications for the local wiki."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_queries": [
+    "AI code review July 14 2026 agent workflow software engineering practice",
+    "coding agents evaluation benchmark July 14 2026 software engineering agents",
+    "MCP governance permissions audit logs July 14 2026 AI agents",
+    "context engineering coding agents July 14 2026 durable instructions",
+    "site:github.blog/changelog/2026-07-14 GitHub Copilot",
+    "AI-assisted development July 13 2026 code review agent governance",
+    "AI coding agent July 13 2026 permissions approvals audit logs",
+    "RAG codebase retrieval July 13 2026 coding agents"
+  ],
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "title": "GitHub Copilot app adds on-demand security review command",
+      "source_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 14, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub made the Copilot app `/security-review` slash command available in public preview. It reviews in-flight code changes, returns severity and confidence-scored findings, gives actionable suggestions, and supports re-verification before code lands.",
+      "why_it_matters_for_ai_assisted_development_practice": "Security review is moving into the active coding loop instead of only post-PR or CI gates. Local practice pages should treat AI security checks as an on-demand pre-merge guardrail that still needs human triage and re-verification.",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot CLI",
+        "Dependabot",
+        "secret scanning",
+        "code scanning"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot CLI"
+      ],
+      "follow_up_notes": "Potential ingest destination: coding-practices/intelligent-code-review.md or governance-and-risk/ai-assisted-security-repair-gates.md."
+    },
+    {
+      "title": "GitHub code scanning surfaces AI security detections on pull requests",
+      "source_url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 14, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub code scanning now surfaces AI-powered security detections directly on pull requests in public preview. Findings extend coverage beyond CodeQL-supported languages and frameworks, are labeled as AI, require enterprise policy allowance and organization enablement, and consume AI credits when detections run.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI security findings are being blended into ordinary PR review surfaces with explicit labeling, policy enablement, and cost consumption. Local guidance should keep AI detections distinguishable from deterministic CodeQL results and include spend-aware review policy.",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "CodeQL",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "CodeQL",
+        "GitHub Copilot"
+      ],
+      "follow_up_notes": "Potential ingest destination: verification-and-evals/code-review-evals-and-rubrics.md and governance-and-risk/lifecycle-ai-review-gates.md."
+    },
+    {
+      "title": "GitHub Copilot in Visual Studio adds usage alerts and MCP trust validation",
+      "source_url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 14, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "The Visual Studio Copilot June update added real-time Copilot usage tracking and alerts, MCP server trust validation against configuration and asset fingerprints, general availability for C++ modernization-agent MSVC upgrade scenarios, PR context ingestion into Copilot Chat, and in-IDE PR review and approval.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update combines cost telemetry, MCP trust prompts, guided modernization workflows, and PR context routing in one IDE surface. Local practice should connect MCP trust validation to tool governance and treat PR context import as a source-boundary decision.",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio",
+        "Model Context Protocol",
+        "MCP servers",
+        "MSVC",
+        "Azure DevOps"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio",
+        "Model Context Protocol",
+        "MCP servers",
+        "Azure DevOps"
+      ],
+      "follow_up_notes": "Potential ingest destination: retrieval-and-tools/tool-call-and-mcp-governance.md and adoption-and-operating-model/agent-cost-telemetry.md."
+    },
+    {
+      "title": "Dependabot adds default package cooldown for version updates",
+      "source_url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 14, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "Dependabot now waits at least three days after a new package release appears on its registry before opening version update pull requests. Security updates still open immediately, and teams can configure or opt out of the cooldown.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted dependency maintenance should distinguish routine version churn from urgent security updates. A default cooldown is a supply-chain risk control that gives compromised or broken releases time to be detected before automated PRs reach review.",
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "GitHub",
+        "Dependabot",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Dependabot",
+        "GitHub Enterprise Server"
+      ],
+      "follow_up_notes": "Potential ingest destination: governance-and-risk/sensitive-data-and-supply-chain-controls.md."
+    },
+    {
+      "title": "GitHub Code Quality adds license estimate before paid availability",
+      "source_url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 13, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub added a license estimate for Code Quality showing active committers and estimated monthly payment before the product becomes generally available on July 20, 2026. The estimate excludes GitHub Actions minutes and usage-based AI charges such as Copilot Autofix.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted quality gates now carry separate seat, CI, and AI-usage cost surfaces. Local operating-model guidance should require cost estimates and budget ownership before enabling AI quality features broadly.",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "GitHub Actions",
+        "CodeQL",
+        "GitHub Copilot Autofix"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "GitHub Actions",
+        "CodeQL",
+        "GitHub Copilot Autofix"
+      ],
+      "follow_up_notes": "Potential ingest destination: adoption-and-operating-model/agent-cost-telemetry.md."
+    },
+    {
+      "title": "OpenAI frames agentic-era AI investment around visibility, governance, and shared capabilities",
+      "source_url": "https://openai.com/index/managing-ai-investments-in-agentic-era/",
+      "publisher": "OpenAI",
+      "visible_date": "July 14, 2026",
+      "source_type": "primary vendor guidance",
+      "factual_summary": "OpenAI published five practical investment steps covering usage and spend visibility, outcome ROI, governance before advanced workflows scale, centrally funded shared capabilities, and matching capacity to proven demand. It names identity, trusted connectors, curated knowledge, evaluations, observability, model routing, and reusable agent patterns as shared capabilities.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is directly relevant to adoption operating models: coding agents should not be budgeted as isolated tools when they rely on shared governance, observability, context, routing, and evaluation infrastructure.",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "Admin Console",
+        "GPT-5.6",
+        "Artificial Analysis Coding Agent Index"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "GPT-5.6",
+        "Artificial Analysis Coding Agent Index"
+      ],
+      "follow_up_notes": "Potential ingest destination: adoption-and-operating-model/workflow-before-model-selection.md and application-patterns/agent-harness-components.md."
+    },
+    {
+      "title": "TechRadar Pro opinion argues production coding agents need isolate-scope-approve controls",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "publisher": "TechRadar Pro",
+      "visible_date": "13 July 2026",
+      "source_type": "dated practice article",
+      "factual_summary": "Rob Whiteley argues that production adoption of AI coding agents is limited by governance gaps rather than agent capability. The article recommends isolated ephemeral workspaces, scoped identities and permissions, real-time monitoring, human approval gates, model routing by policy, and full audit trails.",
+      "why_it_matters_for_ai_assisted_development_practice": "The control set matches local governance roots and gives a concise production-readiness checklist for agent harnesses: isolate execution, scope tools and credentials, approve consequential actions, monitor anomalous behavior, and export auditable traces.",
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Coder",
+        "Rob Whiteley",
+        "Salesforce"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar Pro",
+        "Coder",
+        "Salesforce"
+      ],
+      "follow_up_notes": "Potential ingest destination: governance-and-risk/governance-controls-for-agents.md and application-patterns/agent-harness-components.md."
+    },
+    {
+      "title": "Verdent guide separates project coordination from accountable ownership",
+      "source_url": "https://www.verdent.ai/guides/answers/ai-agent-manage-full-software-project",
+      "publisher": "Verdent AI",
+      "visible_date": "July 14, 2026",
+      "source_type": "dated vendor guide",
+      "factual_summary": "Verdent says an AI agent can coordinate much of a software project, including planning milestones, implementing features, writing tests, updating documentation, tracking tasks, and reviewing code, but should not be the sole accountable owner. It recommends persistent context, explicit governance, testable increments, ordered integration for shared schema/platform changes, and human approval for scope, production, security, migration, and customer-impacting decisions.",
+      "why_it_matters_for_ai_assisted_development_practice": "The source reinforces the local distinction between execution delegation and accountable ownership. It is relevant to project-level agent workflows, context persistence, integration ordering, and human approval boundaries.",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Verdent AI",
+        "Verdent Manager",
+        "Plan Mode"
+      ],
+      "upstream_owned_entities": [
+        "Verdent AI",
+        "Verdent Manager"
+      ],
+      "follow_up_notes": "Potential ingest destination: agent-workflows/delegated-coding-handoffs.md and adoption-and-operating-model/human-agent-approval-boundaries.md."
+    },
+    {
+      "title": "Caddi describes operations agents as a managed-agent operating model parallel to coding agents",
+      "source_url": "https://www.trycaddi.com/blog/operations-ai-agents",
+      "publisher": "Caddi",
+      "visible_date": "July 14, 2026",
+      "source_type": "dated vendor guide",
+      "factual_summary": "Caddi compares operations AI agents with coding agents, saying coding agents scale engineering teams while operations agents scale back-office workflows. It frames agent management as delegating work, raising edge cases, supervising outcomes, reviewing audit trails, and expanding scope over time.",
+      "why_it_matters_for_ai_assisted_development_practice": "Although the product category is upstream-owned, the operating model is locally useful: teams adopting coding agents should define what it means to manage agents, supervise outcomes, use audit trails, and expand delegated scope as trust grows.",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Caddi",
+        "Claude Code",
+        "GitHub Copilot",
+        "Cursor",
+        "Salesforce",
+        "Microsoft 365"
+      ],
+      "upstream_owned_entities": [
+        "Caddi",
+        "Claude Code",
+        "GitHub Copilot",
+        "Cursor",
+        "Salesforce",
+        "Microsoft 365"
+      ],
+      "follow_up_notes": "Potential ingest destination: adoption-and-operating-model/agent-ownership-rosters.md and adoption-and-operating-model/outcome-alignment-and-process-autonomy.md."
+    },
+    {
+      "title": "BenchLM lists coding-agent and software-delivery benchmark updates",
+      "source_url": "https://benchlm.ai/benchmarks",
+      "publisher": "BenchLM.ai",
+      "visible_date": "updated July 14, 2026",
+      "source_type": "public benchmark index",
+      "factual_summary": "BenchLM's benchmark index listed July 14 updates for software-engineering evaluation entries including Vibe Code Bench 2026, ProgramBench 2026, and Kimi Code Bench v2 2026. The listed scopes include end-to-end web application builds, cleanroom program reconstruction, and realistic coding-agent production software-engineering tasks.",
+      "why_it_matters_for_ai_assisted_development_practice": "The index is broad upstream-owned benchmark coverage, but the local practice implication is that coding-agent evaluation is moving beyond isolated issue patches toward end-to-end delivery, architecture reconstruction, and production-task realism.",
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "BenchLM.ai",
+        "Vibe Code Bench 2026",
+        "ProgramBench 2026",
+        "Kimi Code Bench v2 2026",
+        "Moonshot AI"
+      ],
+      "upstream_owned_entities": [
+        "BenchLM.ai",
+        "Vibe Code Bench 2026",
+        "ProgramBench 2026",
+        "Kimi Code Bench v2 2026",
+        "Moonshot AI"
+      ],
+      "follow_up_notes": "Potential ingest destination: verification-and-evals/trajectory-level-agent-evaluation.md and verification-and-evals/representative-workflow-calibration.md."
+    }
+  ],
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "title": "MCP Governance: Who Controls What an AI Agent Can Ask?",
+      "source_url": "https://colrows.com/blogs/mcp-governance/",
+      "observed_date_signal": "Search result said published today, but no visible publication or update date was found on the opened page.",
+      "exclusion_reason": "Missing visible on-page date under the collector rule.",
+      "routing_note": "If later date-verified, route only the local MCP governance implication; keep MCP and vendor background upstream-owned."
+    },
+    {
+      "title": "Introducing the new Vercel Agent",
+      "source_url": "https://vercel.com/blog/vercel-agent",
+      "observed_date_signal": "8 Jul 2026",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to identity, scoped plan approval, sandbox validation, and production-agent governance, but already too old for this collector."
+    },
+    {
+      "title": "Vercel Agent documentation",
+      "source_url": "https://vercel.com/docs/agent",
+      "observed_date_signal": "Last updated June 30, 2026",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to approved actions, sandboxed validation, and attribution, but not recent enough."
+    },
+    {
+      "title": "Introducing Claude Opus 4.8",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "observed_date_signal": "Search result said published last month.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Dynamic workflows and subagent verification are local-practice relevant, but the broad model/product update is upstream-owned and stale for this run."
+    },
+    {
+      "title": "When Does Restricting a Coding Agent to execute_code Help?",
+      "source_url": "https://arxiv.org/abs/2607.10569",
+      "observed_date_signal": "Sun Jul 12 04:52:08 2026",
+      "exclusion_reason": "Published before the cutoff start of 2026-07-12T20:32:59-04:00.",
+      "routing_note": "Relevant to tool-surface evaluation and MCP execute_code cost, but excluded by strict timestamp."
+    },
+    {
+      "title": "Introducing the Kotlin Benchmark for AI Coding Agents",
+      "source_url": "https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/",
+      "observed_date_signal": "Search result said published last week.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to language-specific coding-agent evals; keep product/entity background upstream-owned."
+    },
+    {
+      "title": "Better tools made Copilot code review worse. Here's how we actually improved it.",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+      "observed_date_signal": "July 10, 2026",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to code-review tool workflow design and review-cost telemetry, but stale for this collector."
+    },
+    {
+      "title": "Rogue Agent: How a Single Code Block Could Hijack Your AI Conversations in Google DialogFlow",
+      "source_url": "https://www.varonis.com/blog/rogue-agent-dialogflow-attack",
+      "observed_date_signal": "Search result said published last week.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to shared agent runtime isolation and permission modeling, but excluded by date."
+    },
+    {
+      "title": "AI SDK 7 is now available",
+      "source_url": "https://vercel.com/blog/ai-sdk-7",
+      "observed_date_signal": "Search result said published two weeks ago.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to lifecycle events, observability, tool-call tracing, and structured outputs, but stale for this run."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector. Leave this file under raw until a raw ingest workflow processes it.",
+    "During ingest, preserve upstream-owned entity routing and synthesize only the local AI-assisted development practice implications.",
+    "Likely local synthesis themes: AI security review inside active coding loops; PR-level AI detection labeling and cost; MCP trust validation; dependency cooldown as supply-chain control; agent cost and usage telemetry; isolate-scope-approve production controls; project-agent ownership boundaries; outcome supervision and audit trails; software-engineering benchmark realism."
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were used.",
+    "No private, proprietary, sensitive, PII, company-internal, or local non-public content was sent to external services."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for artifact"
+  },
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false
+}
