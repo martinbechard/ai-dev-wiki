@@ -29,6 +29,8 @@ The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds repository-overview generation as an onboarding retrieval pattern. A generated overview can accelerate orientation, but it should be verified against README files, repository instructions, tests, dependency manifests, and recent source paths before it becomes project knowledge or a generated README.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add incident-evidence and searchable-workspace signals. Incident investigations should centralize metrics, traces, logs, deployments, ownership metadata, and linked evidence bundles before asking an agent for a narrative. Search across chats, projects, images, and documents is useful local retrieval context only when matched artifacts can be opened, attributed, filtered, and verified against source files or runtime evidence.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -49,6 +51,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Keep recall-first and scan-to-merge retrieval paths auditable so broad detection does not hide unsupported source assumptions.
 - Verify generated repository overviews against authoritative repository files before using them for onboarding, documentation, or review scope.
 - Treat generated README proposals as drafts that need source-path, test, dependency, and contribution-guidance checks.
+- Build incident investigation bundles from linked metrics, traces, logs, deployment history, ownership metadata, and source files before accepting a generated diagnosis.
+- Treat searchable workspace artifacts as retrieval candidates that still need opening, attribution, filtering, and source or runtime verification.
 
 ## Authoritative Sources
 
@@ -65,6 +69,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 4 leaf update watch source](../../../raw/processed/2026-07-04/ai-dev-wiki-leaf-update-watch-2026-07-04T210205-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -98,3 +104,4 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 - Maintained on 2026-07-03 with code-review memory boundaries and retrieval economics for prior review decisions.
 - Maintained on 2026-07-04 with dependency-aware review retrieval and scan-to-merge evidence paths.
 - Maintained on 2026-07-09 with repository-overview verification and generated README source checks.
+- Maintained on 2026-07-14 with incident evidence bundles and searchable workspace artifact verification.

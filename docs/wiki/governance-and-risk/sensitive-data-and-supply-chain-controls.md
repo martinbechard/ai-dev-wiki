@@ -37,6 +37,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add repository-source and runtime-separation signals. Public agent-onboarding snippets, unknown repository URLs, image or binary PR artifacts, and default-permission agent infrastructure should be treated as supply-chain inputs until source verification, install review, credential separation, logging, and blast-radius checks pass.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds dependency-cooldown, MCP trust, and PR-context signals. Routine AI-assisted dependency maintenance should preserve a waiting period or equivalent risk review for new package releases while still allowing urgent security updates through a faster path. MCP server trust prompts, configuration fingerprints, and PR context ingestion are supply-chain and data-boundary surfaces because they decide which code, metadata, and external services an agent can treat as trusted context.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -68,6 +70,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Verify repository URLs, public setup snippets, and agent install instructions before allowing a coding agent to clone, install, configure, or execute them.
 - Treat image and binary artifacts as possible instruction carriers when a downstream multimodal agent can read them; keep secrets and credentials outside that review path.
 - Inventory agent frameworks, RAG stores, default permissions, logging, keys, runtime separation, and network reach before connecting them to codebases or enterprise data.
+- Keep routine dependency-update automation subject to cooldown, provenance, lockfile, and release-health review while routing security fixes through explicit urgent-update gates.
+- Treat MCP trust prompts, configuration fingerprints, PR context ingestion, and IDE extension updates as supply-chain or data-boundary decisions for agent workflows.
 
 ## Authoritative Sources
 
@@ -92,6 +96,7 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -134,3 +139,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-08 with telemetry-content classification, credential-separated sensitive-code sandboxes, and deny-by-default network controls.
 - Maintained on 2026-07-12 with slopsquatting dependency controls for AI-proposed package names, install commands, provenance, allowlists, and lockfiles.
 - Maintained on 2026-07-13 with source verification, public setup-snippet review, binary artifact handling, and runtime-separation checks for agent infrastructure.
+- Maintained on 2026-07-14 with dependency cooldown, MCP trust-validation, PR-context, and IDE extension update controls.

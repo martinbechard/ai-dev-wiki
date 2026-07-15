@@ -23,6 +23,8 @@ The [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-
 
 The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) adds a mobile and remote-control signal for delegated engineering work. A handoff should say how work was started, steered, reviewed, and organized when the execution surface is outside the primary terminal, and it should leave enough state for the next reviewer to intervene without reconstructing the run from chat history.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add accountable-ownership and proof-loop signals. An agent may coordinate planning, implementation, tests, docs, and review, but the handoff should preserve the accountable human owner, approval boundaries, integration ordering for shared schema or platform work, and proof artifacts that let an independent verifier confirm the completion claim.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -34,6 +36,8 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - Record the progress cursor, last completed artifact, source-of-truth files, unresolved discrepancies, and next acceptance criterion when the handoff is part of a multi-step workflow.
 - Name execution context, intervention mode, review loop, and narrow permissions for remote or long-running delegated work.
 - Include start, steering, review, organization, and intervention evidence when delegated work runs through a remote or mobile control surface.
+- Name the accountable owner separately from the coordinating or implementing agent when a task spans planning, tests, docs, or review.
+- Include specifications, evidence artifacts, independent verification results, and integration-order notes when the handoff claims delegated work is complete.
 
 ## Authoritative Sources
 
@@ -46,6 +50,8 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -77,3 +83,4 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 - Maintained on 2026-06-25 with longer-horizon delegated-work handoff requirements.
 - Maintained on 2026-06-27 with handoffs as rehydration artifacts and remote-agent supervision evidence.
 - Maintained on 2026-06-28 with remote-control steering, review, organization, and intervention evidence.
+- Maintained on 2026-07-14 with accountable-owner boundaries, proof artifacts, independent verification, and integration-order handoff requirements.

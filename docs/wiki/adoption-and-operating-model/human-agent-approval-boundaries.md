@@ -29,6 +29,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) adds misleading-approval and generated-source signals. Approval prompts should describe the actual write path, target workspace, data access, and side effect before action, and undo-after-write or post-hoc confirmation is not the same control as pre-action approval for symlink writes, package installs, repository fetches, or public output.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds accountable-ownership and production-control signals. Agents can coordinate milestones, implementation, tests, docs, and review, but humans retain approval for scope, production, security, migration, and customer-impacting decisions. Production coding-agent controls should make isolation, scoped permissions, monitoring, and audit trails enforce the approval boundary rather than relying on the agent to remember it.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -47,6 +49,8 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - Require trust review before repo-local instructions, generated customization files, or untrusted source content can authorize shell commands, dependency setup, credential use, or external-system actions.
 - Make approval prompts expose actual target paths, external systems, data classes, and side effects before action.
 - Treat undo-after-write prompts and post-hoc confirmations as insufficient for symlink writes, public output, package installs, source fetching, or credential-adjacent access.
+- Keep scope, production, security, migration, and customer-impacting decisions human-owned even when an agent coordinates the project workflow.
+- Enforce approval boundaries through isolation, scoped permissions, monitoring, and audit trails for production coding agents.
 
 ## Authoritative Sources
 
@@ -63,6 +67,7 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 
 ## Related Code
 
@@ -98,3 +103,4 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - Maintained on 2026-07-08 with managed permission modes, bypass controls, mobile repair delegation, and review-dismissal authority separation.
 - Maintained on 2026-07-09 with untrusted-repository, AGENTS.md, and generated customization command-approval boundaries.
 - Maintained on 2026-07-13 with pre-action approval clarity for symlink writes, package installs, repository fetches, public output, and credential-adjacent access.
+- Maintained on 2026-07-14 with accountable-ownership decisions and production-agent approval enforcement controls.

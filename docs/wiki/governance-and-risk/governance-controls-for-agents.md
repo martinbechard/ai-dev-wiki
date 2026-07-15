@@ -39,6 +39,8 @@ The July 12 raw sources add three control refinements. The [topic news collector
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add AI-authored-code traceability, regulated lifecycle controls, and cross-boundary visibility. Local governance should record where AI-generated code enters, which policies and tests applied, what issues were found, how remediation was verified, and who owns agents that cross vendor, contractor, or internal-system boundaries.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add production-agent and investment-governance signals. Production coding agents should use isolated workspaces, scoped identities, monitored behavior, human approval for consequential actions, model routing by policy, and full audit trails. AI investment governance should require usage and spend visibility, outcome ROI, governance before advanced workflows scale, centrally funded shared capabilities, and capacity matched to proven demand.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -80,6 +82,8 @@ The detailed control leaves are:
 - Treat AI-authored code as an auditable source class with generation, review, test, remediation, and policy-decision records.
 - Require lifecycle controls for regulated teams: standards guide the agent before work begins, and independent verification gates run before code enters the main codebase.
 - Map agent visibility across vendors, contractors, SaaS tools, repositories, and internal systems before expanding what an agent can see, do, or escalate.
+- Require isolate-scope-approve controls, runtime monitoring, policy-routed models, and audit trails before production coding agents can operate beyond pilot tasks.
+- Tie adoption expansion to visible usage, spend, outcome ROI, shared-capability readiness, and governance evidence rather than raw assistant availability.
 
 ## Authoritative Sources
 
@@ -107,6 +111,8 @@ The detailed control leaves are:
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -150,3 +156,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-10 with issue-triggered workflow controls for minimum repository scope, private-read separation, and public-output disclosure gates.
 - Maintained on 2026-07-12 with slopsquatting, prompt-injection, LLM gateway, task-scoped access, privileged-action visibility, and leader-governance controls.
 - Maintained on 2026-07-13 with AI-authored-code traceability, regulated lifecycle controls, and cross-boundary agent visibility requirements.
+- Maintained on 2026-07-14 with isolate-scope-approve production controls and investment-governance evidence for scaled agent adoption.

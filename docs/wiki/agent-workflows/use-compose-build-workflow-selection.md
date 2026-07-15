@@ -19,6 +19,8 @@ The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agent
 
 This page owns the workflow-selection rule. [workflow before model selection](../adoption-and-operating-model/workflow-before-model-selection.md) owns the adoption rule that the workflow shape comes before model or tool choice.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) reinforce that shared governance, observability, model routing, reusable agent patterns, programmatic tool orchestration, and domain-owned MCP servers are compose-or-build considerations. The decision is not whether a model can call a tool; it is whether the workflow needs local control over identity, context, verification, audit, cost, and service boundaries.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -28,6 +30,7 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 - Consider extensible harnesses when the team needs direct control over planning, session telemetry, model routing, or agent plugins.
 - Keep token cost, context visibility, and subsidized vendor pricing in the workflow economics review.
 - Treat self-hosted and local execution as build choices that need utilization, staffing, latency, telemetry, and governance justification.
+- Choose compose or build when the workflow needs local control over identity, context routing, verification, audit, cost attribution, programmatic tool execution, or domain-owned service boundaries.
 
 ## Authoritative Sources
 
@@ -36,6 +39,8 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Pi coding agent source](../../../raw/processed/Why I Quit Claude Code for Pi.md)
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -65,3 +70,4 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 
 - Created on 2026-06-23 from source-backed use, compose, and build workflow-selection guidance.
 - Maintained on 2026-06-27 with hosting and local-execution choices as per-workflow build decisions.
+- Maintained on 2026-07-14 with shared governance, observability, model routing, reusable agent patterns, programmatic tools, and domain-owned MCP service boundaries as compose-or-build inputs.

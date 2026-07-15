@@ -25,6 +25,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds a requirement-compilation signal. Large requirement packages should carry traceable boundaries from requirement source to architecture choice, generated tests, implementation artifacts, and verification evidence. Broad ARC, AppForge, and paper background belongs upstream; locally, the request package must keep requirement evidence separate from implementation instructions so generated systems remain reviewable.
 
+The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds multi-repository, inline-review, and project-artifact signals. Request packages should label repository boundaries, project search results, inline diff edits, PR side-panel review findings, and generated visualizations as separate evidence surfaces so the agent does not treat one repository's files, one chat artifact, or one review annotation as global authority.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -41,6 +43,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Label repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance as trusted instruction, local evidence, or untrusted source content before use.
 - Preserve requirement-source identifiers, design decisions, generated tests, implementation outputs, and verification results as separate package sections when requirements are compiled into code.
 - Do not let generated architecture or tests erase the distinction between source requirements and the agent's proposed interpretation.
+- Label multi-repository boundaries, project-search matches, inline edits, PR annotations, and visualization artifacts as separate evidence surfaces inside the request package.
+- Require repository-specific source reads before carrying a claim or edit from one repository in a project workspace into another.
 
 ## Authoritative Sources
 
@@ -53,6 +57,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -87,3 +92,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-06-27 with acceptance criteria, point-of-use source-read instructions, and handoff-file packaging for context pressure.
 - Maintained on 2026-07-09 with trust labels for repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance.
 - Maintained on 2026-07-10 with requirement-to-architecture-to-test traceability for agentic requirement packages.
+- Maintained on 2026-07-14 with multi-repository boundaries, project artifact search, inline diff edits, PR annotations, and visualization evidence labels.

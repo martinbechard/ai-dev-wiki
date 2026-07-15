@@ -21,6 +21,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds active-versus-durable context evidence. Context routers should distinguish active turn context, working-set assembly, durable decisions, memory stores, artifacts, and auditable storage so agents know which layer is instruction, evidence, history, or recoverable state.
 
+The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds searchable project artifact evidence. Search over chats, projects, images, and documents should enter the context router as a retrieval layer with source labels, artifact filters, and direct-open verification, not as a replacement for durable instructions, current files, or authoritative wiki pages.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -37,6 +39,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Route governed meaning, policy metadata, and decision memory to knowledge-layer leaves rather than repeating them in the thin router.
 - Route model context, durable execution history, memory stores, event logs, and human-wait state as separate layers.
 - Route active turn context, working-set assembly, durable decisions, artifacts, and auditable storage as separate context layers.
+- Route searchable chats, project files, images, and documents as attributed retrieval candidates that must be opened and verified before they become durable context.
 
 ## Authoritative Sources
 
@@ -47,6 +50,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -77,3 +81,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-07-03 with governed meaning, policy metadata, lineage, retrieval, memory, and task-rule routing boundaries.
 - Maintained on 2026-07-07 with separate routing for model context, execution history, memory stores, event logs, and human-wait state.
 - Maintained on 2026-07-12 with active context, working-set assembly, durable decisions, artifacts, and auditable storage as separate routing layers.
+- Maintained on 2026-07-14 with searchable project artifact routing, source labels, and direct-open verification boundaries.

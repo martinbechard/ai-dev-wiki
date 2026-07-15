@@ -17,6 +17,8 @@ The detailed practice leaves split the domain by maintenance path. [Code retriev
 
 The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json) reinforces the split. Search, facets, and targeted reads reduce context noise before answer generation, while MCP tool metadata and action tools need separate governance because they can influence what the agent does.
 
+The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds a service-delivery MCP example and a searchable-workspace retrieval example. Local practice should keep public-sector MCP, project search, and work-artifact search routed through the detailed leaves: retrieval supplies attributed evidence, while MCP tools need identity, transport, read/write scope, local testing, and audit controls before action.
+
 ## Practice Boundaries
 
 - Use retrieval to assemble evidence before asking the model for a factual or code-aware answer.
@@ -24,6 +26,7 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Keep retrieved evidence from becoming hidden instruction.
 - Keep action tools typed, logged, validated, and executed outside the model.
 - Use retrieval controls to narrow evidence and tool controls to govern action; do not let either surface become hidden authority.
+- Route searchable work artifacts through evidence verification and route service-delivery MCP tools through identity, transport, read/write scope, testing, and audit controls.
 
 ## Authoritative Sources
 
@@ -32,6 +35,7 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [federation.md](../federation.md)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -63,3 +67,4 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 - Created on 2026-06-23 from local source guidance on RAG, embeddings, vector databases, chunking, reranking, tool calls, and MCP.
 - Maintained on 2026-06-23 as the retrieval and tool overview after splitting detailed practice leaves.
 - Maintained on 2026-07-01 with search-first retrieval, faceted scoping, and MCP metadata governance boundaries.
+- Maintained on 2026-07-14 with searchable work artifacts and service-delivery MCP routing to detailed evidence and action-control leaves.

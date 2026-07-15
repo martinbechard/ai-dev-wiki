@@ -39,6 +39,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) and [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) add bounded-loop, harness-taxonomy, and managed-session signals. Long-running loops need budget envelopes, step ceilings, stall detection, output-path verification, approval gates, and per-step traces. Maintained harness taxonomies are useful locally when they sharpen component ownership for planning artifacts, context delivery, permissions, memory, orchestration, verification, observability, sandboxing, and session governance rather than becoming product catalogs.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add production-control, proof-loop, and programmatic-tool signals. A production coding-agent harness should make isolation, scoped identity, human approvals, monitoring, audit trails, model routing, and proof artifacts explicit runtime components. Programmatic tool calling and repo-task proof loops reinforce that completion claims should be converted into inspectable specifications, evidence bundles, independent verification, and traceable tool execution before the harness treats work as done.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -70,6 +72,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Bound autonomous loops with step ceilings, cost budgets, stall safeguards, and explicit approval gates before increasing unattended work volume.
 - Verify declared output paths and preserve per-step traces so long-running loops can be inspected, resumed, or stopped without relying on a final summary.
 - Use harness taxonomies to assign ownership for planning, context, permissions, memory, orchestration, verification, observability, and sandboxing components.
+- Include isolation, scoped identity, approval gates, monitoring, audit trails, and model-routing policy as harness components for production coding agents.
+- Convert done claims into specifications, evidence bundles, independent verification results, and traceable tool execution before a harness marks a delegated task complete.
 
 ## Authoritative Sources
 
@@ -96,6 +100,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -134,3 +140,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-06 with chat-agent adapter, security-scanning harness, virtual shell, and recurring workflow instrumentation components.
 - Maintained on 2026-07-09 with shared UI-and-MCP operation paths and code-enabled managed-runtime isolation controls.
 - Maintained on 2026-07-10 with bounded loop controls, output-path verification, per-step traces, and harness taxonomy ownership.
+- Maintained on 2026-07-14 with production control components, programmatic tool execution, and proof-loop evidence for delegated completion claims.

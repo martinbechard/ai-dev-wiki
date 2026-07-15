@@ -45,6 +45,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds multi-agent modernization and spend-dashboard evidence. Enterprise modernization workflows should track cost by role, work package, legacy platform, verification gate, and accepted outcome so multi-agent coordination is measured as an operating model rather than generic agent usage.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add model-size, cache, usage-alert, and shared-capability cost signals. Cost telemetry should record when a model route, cache breakpoint, multi-agent run, MCP server, PR review surface, or quality/security feature consumes separate credits or seats. Shared capabilities such as identity, trusted connectors, curated knowledge, evaluations, observability, model routing, and reusable agent patterns should be budgeted as platform infrastructure, not hidden inside one team's assistant spend.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -81,6 +83,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Record benchmark provenance and contamination risk when benchmark claims influence cost-performance or model-routing decisions.
 - Attribute multi-agent modernization spend to roles, legacy platform, work package, verification gate, and accepted outcome.
 - Treat built-in cost dashboards as workflow telemetry inputs that still need local mapping to review effort, risk reduction, and completed modernization work.
+- Attribute model-size choices, cache policy, multi-agent concurrency, PR review features, MCP usage, and quality/security scans to the workflow outcome they support.
+- Budget shared identity, connector, knowledge, evaluation, observability, routing, and reusable-pattern capabilities as platform costs before expanding agent adoption.
 
 ## Authoritative Sources
 
@@ -106,6 +110,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -147,3 +153,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-10 with token, context, cache, tool, verification, retry, and budget-stop cost taxonomy signals.
 - Maintained on 2026-07-11 with cost-per-verified-outcome and benchmark-provenance controls for coding-agent price claims.
 - Maintained on 2026-07-13 with multi-agent modernization cost attribution and spend-dashboard mapping to accepted outcomes.
+- Maintained on 2026-07-14 with model-size, cache, multi-agent, MCP, PR-review, quality-feature, and shared-capability cost attribution.

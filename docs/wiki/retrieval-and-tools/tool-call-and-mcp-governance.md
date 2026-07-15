@@ -47,6 +47,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) and [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) add runtime-infrastructure and public-onboarding controls. Agent frameworks, RAG pipelines, vector stores, CLI installers, MCP entrypoints, and public setup instructions should be inventoried as tool surfaces with permissions, credential handling, logging, runtime separation, source provenance, and approval state before an agent uses them against code or enterprise data.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add program-controlled tool, MCP trust, and public-sector service-tool signals. Programmatic tool calling should be treated as harness-mediated processing with its own schema, logging, policy, and intermediate-data controls rather than as ordinary model-only tool choice. MCP trust validation, interactive MCP authentication, app-server authentication, and public-sector read/write API examples reinforce that tool access needs configuration fingerprints, identity prompts, local testing, transport expectations, and domain-owner approval before an agent can use a server as a source of action.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -88,6 +90,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Avoid using provider abstraction as a substitute for explicit tool authority, data-boundary, and policy-decision records.
 - Inventory agent frameworks, RAG stores, vector databases, CLI tools, and MCP entrypoints as active tool surfaces when they can affect code, credentials, or enterprise data.
 - Require source provenance, install review, credential handling, logging, runtime separation, and approval state before public onboarding text can configure a tool for agent use.
+- Treat programmatic tool orchestration as a governed harness path with schema, cache, intermediate-result, and logging controls separate from final model output.
+- Validate MCP server trust through configuration fingerprints, authentication prompts, transport expectations, local test evidence, and domain-owner approval before enabling read/write service tools.
 
 ## Authoritative Sources
 
@@ -119,6 +123,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -164,3 +170,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-11 with gateway-mediated MCP access, agent-authentication enforcement, token custody, and audit-log criteria.
 - Maintained on 2026-07-12 with LLM gateway governance controls for authentication, routing, rate limits, cost, failover, and audit evidence.
 - Maintained on 2026-07-13 with RAG infrastructure, CLI/MCP onboarding, runtime separation, credential handling, and public setup approval controls.
+- Maintained on 2026-07-14 with programmatic tool orchestration, MCP trust validation, authentication, and governed service-tool controls.

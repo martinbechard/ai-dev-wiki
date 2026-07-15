@@ -43,6 +43,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds adoption-pressure, regulated lifecycle, and modernization-package signals. Workflow selection should decide whether a team is running an experiment, a mandated rollout, a regulated delivery cycle, or a specialized modernization package before choosing tools; each shape needs different review capacity, standards, verification gates, cost telemetry, and human escalation.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add shared-capability, service-delivery, and multi-repository workflow signals. Teams should decide whether the workflow needs centrally funded identity, trusted connectors, curated knowledge, evaluations, observability, model routing, reusable agent patterns, domain-expert-owned MCP servers, or multi-repository workspaces before standardizing the model or desktop surface.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -73,6 +75,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Treat leader enablement, reliability vocabulary, hallucination controls, governance evidence, and evaluation literacy as prerequisites for scaling agentic SDLC workflows.
 - Distinguish experiments, peer-driven adoption, mandated rollout, regulated delivery, and legacy modernization packages before selecting tools or model routes.
 - Match each workflow shape to review capacity, lifecycle standards, verification gates, cost telemetry, and escalation paths.
+- Identify shared platform capabilities, domain-owned service tools, and multi-repository workspace needs before selecting a model, assistant surface, or agent desktop.
+- Treat public-sector or service-delivery MCP examples as workflow-grounding evidence, not as permission to expose broad read/write APIs without domain-owner approval.
 
 ## Authoritative Sources
 
@@ -96,6 +100,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -139,3 +145,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-10 with agent-provider routing, managed settings, persistent-state, and cost-shape workflow inputs.
 - Maintained on 2026-07-12 with engineering-leader AI literacy, reliability, governance evidence, and rollout-risk inputs to workflow selection.
 - Maintained on 2026-07-13 with experiment, mandate, regulated lifecycle, and modernization-package workflow distinctions.
+- Maintained on 2026-07-14 with shared-capability, domain-owned MCP service-tool, and multi-repository workspace inputs to workflow selection.

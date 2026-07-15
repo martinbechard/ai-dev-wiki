@@ -31,6 +31,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) adds trajectory-diagnosis and bounded-loop telemetry signals. Progress events should expose budgets, step ceilings, stall safeguards, approval gates, output-path checks, per-step traces, test-failure pivots, and earliest-error localization when an agent loop can run long enough that final output alone is insufficient.
 
+The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds clearer task-progress and inline-visualization signals. Progress surfaces should distinguish task links, current run state, review annotations, generated visualizations, computer-use activity, and no-user-facing-change patch notes so users can tell whether a task is blocked, waiting, visually reporting, or merely updated at the runtime layer.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -51,6 +53,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Join cost, usage, command execution, MCP activity, tool usage, policy decisions, and workflow-package state by run or session when agents operate across IDEs or enterprise modernization workflows.
 - Show loop budget, step limit, stall, approval, and output-path status when autonomous work is bounded by harness policy.
 - Preserve test-failure pivots, trace saliency summaries, and earliest-error markers for operator diagnosis of failed agent runs.
+- Distinguish task links, current run state, review annotations, generated visualizations, computer-use activity, and runtime-only patch updates in progress surfaces.
+- Avoid presenting version-only or no-user-facing-change runtime updates as workflow progress for the user's task.
 
 ## Authoritative Sources
 
@@ -67,6 +71,7 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -103,3 +108,4 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 - Maintained on 2026-07-08 with managed telemetry export boundaries and remote coding-agent session states.
 - Maintained on 2026-07-09 with session-forensics, cost-and-use analytics, and run-level policy-decision telemetry.
 - Maintained on 2026-07-10 with bounded-loop progress, output-path checks, trace saliency, and earliest-error diagnostics.
+- Maintained on 2026-07-14 with task-link, review-annotation, visualization, computer-use, and runtime-only update progress boundaries.

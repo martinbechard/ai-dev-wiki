@@ -31,6 +31,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds provider-adapter and trace-assertion evidence. Coding-agent evaluation should record which harness path ran the task, which side effects were allowed, how traces were asserted, how token or cost pressure shaped the run, and which sandbox or deterministic checks made the result reproducible.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add proof-loop and benchmark-shape signals. Completion proof should preserve the specification, agent actions, artifacts, evidence, and independent verifier result so a trajectory can be audited after the final answer. Benchmark indexes that emphasize end-to-end application builds, cleanroom reconstruction, and production-like coding-agent tasks should refresh local trajectory evaluation with tasks that exercise full delivery paths, not only isolated issue patches.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -51,6 +53,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Whether performance optimization trajectories preserve profiling evidence, correctness checks, speedup measurement, and benchmark-shortcut controls.
 - Whether long-horizon task trajectories show planning, multi-file state management, verification pacing, and sustained recovery from intermediate failures.
 - Whether failure-diagnosis traces identify the earliest consequential error instead of only summarizing the final failed state.
+- Whether completion proof ties specification, artifacts, evidence, independent verification, and final handoff together.
+- Whether calibration tasks cover end-to-end builds, reconstruction, and production-like delivery paths when public benchmark scope moves beyond issue patches.
 
 ## Practice Boundaries
 
@@ -69,6 +73,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Fold low-signal trace detail into saliency summaries only when the raw trace, tests, and source evidence remain available for audit.
 - Use test-failure reports as investigation priors, not as substitutes for source inspection and reproducible verification.
 - Record provider adapter, side-effect permissions, trace assertions, cost signals, and sandbox checks when the evaluated agent surface changes.
+- Preserve proof artifacts and independent verifier outputs as first-class trajectory evidence for delegated coding claims.
+- Expand local trajectory suites when benchmark scope shifts toward realistic end-to-end delivery, architecture reconstruction, or production task realism.
 
 ## Authoritative Sources
 
@@ -85,6 +91,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -119,3 +127,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-07-07 with step-level action scoring and internal-state probing as research-only assurance context.
 - Maintained on 2026-07-10 with performance, long-horizon, and failure-diagnosis trajectory evidence.
 - Maintained on 2026-07-12 with provider-adapter, side-effect, trace-assertion, cost, and sandbox signals for coding-agent trajectories.
+- Maintained on 2026-07-14 with proof-loop artifacts and end-to-end delivery benchmark signals for trajectory evaluation.

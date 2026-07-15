@@ -19,6 +19,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds an outcome-economics signal. Agentic workflows should be justified by accepted outcomes and cross-domain value rather than seat utilization, while process autonomy still depends on shared guardrails, policy enforcement, and evidence for the result.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds an agent-management comparison from operations workflows. Teams can vary how they delegate, supervise, and expand agent scope, but shared outcomes still require audit trails, edge-case escalation, accountable ownership, and review evidence. The lesson for coding agents is that autonomous coordination is acceptable only when the team can still supervise results and explain why scope expanded.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -29,6 +31,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Require deterministic coverage evidence and typed intermediate results when teams use subagent fan-out for broad delegated work.
 - Fund and prune agent workflows by accepted outcomes, cross-system value, and review evidence rather than license utilization alone.
 - Let teams vary process only when guardrails, policy enforcement, and outcome evidence remain comparable.
+- Let teams vary delegation mechanics only when audit trails, escalation paths, accountable owners, and review evidence remain comparable.
+- Expand agent scope from supervised outcomes and edge-case handling evidence, not from confidence in generic agent capability.
 
 ## Authoritative Sources
 
@@ -38,6 +42,7 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 
 ## Related Code
 
@@ -67,3 +72,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Created on 2026-06-23 from source-backed process autonomy, outcome alignment, and platform guardrail guidance.
 - Maintained on 2026-07-05 with workflow-redesign, accessible-context, deterministic subagent coverage, and typed-intermediate-result signals.
 - Maintained on 2026-07-09 with outcome-based agent workflow funding, pruning, and guardrail-comparable process autonomy.
+- Maintained on 2026-07-14 with delegation mechanics, audit trails, edge-case escalation, and scope-expansion evidence as comparable outcome controls.

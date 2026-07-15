@@ -23,6 +23,8 @@ The [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-de
 
 The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) adds two benchmark-methodology examples. Real codebase tasks with reviewed solutions and language-specific end-to-end tasks are stronger calibration signals than generic leaderboards, but they still need local mapping to architecture, APIs, standards, tooling, and verification checks. Benchmark scores should therefore trigger local workflow calibration, not replace it.
 
+The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add full-delivery and dockerless-verification signals. Local calibration should include end-to-end web application builds, cleanroom program reconstruction, production-like coding-agent tasks, and constrained verification environments when those are representative of the target workflow. Commentary about dockerless verification should be treated as a prompt to verify primary sources and local constraints before changing the suite.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -36,6 +38,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Rerun local representative tasks before changing autonomy, model-routing, or cost-performance defaults after a model refresh.
 - Use public or vendor benchmarks as prompts to refresh local calibration, especially when their tasks differ from the repository's language, architecture, or verification surface.
 - Include price, latency, reviewed-solution quality, and local fit when comparing coding-agent benchmark results.
+- Include full-delivery, reconstruction, production-like, and constrained-verification tasks when those better match the workflow than isolated issue patches.
+- Verify primary benchmark or paper sources before using commentary to change calibration tasks or acceptance gates.
 
 ## Authoritative Sources
 
@@ -47,6 +51,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [July 1 topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T123923-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 
 ## Related Code
 
@@ -77,3 +83,4 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Maintained on 2026-06-30 with optimized-versus-baseline context calibration for compression, cache alignment, retrieval, memory, and provenance layers.
 - Maintained on 2026-07-01 with model-refresh calibration triggers for coding, terminal, browser, repair, review, and verification tasks.
 - Maintained on 2026-07-11 with real-codebase and language-specific benchmark methodology as local calibration inputs.
+- Maintained on 2026-07-14 with end-to-end delivery, cleanroom reconstruction, production-like task, and constrained-verification calibration inputs.
