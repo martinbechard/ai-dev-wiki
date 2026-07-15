@@ -1,0 +1,382 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-14T21:02:38-04:00",
+    "rule": "Only public sources visibly published or updated within the last 7 days relative to run time qualified.",
+    "start": "2026-07-07T21:02:38-04:00"
+  },
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "candidate_topic": "workflow before model selection",
+      "reason": "Search result showed a recent publication date, but the opened page did not expose a visible publication or update date; date is ambiguous for this watch.",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://sysgenpro.com/ai-workflow-orchestration-in-construction-for-approvals-procurement-and-scheduling"
+    },
+    {
+      "candidate_topic": "AI agent tool security and MCP tool poisoning",
+      "reason": "Published 2026-06-30, outside the 7-day cutoff window for the 2026-07-14T21:02:38-04:00 run.",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/"
+    },
+    {
+      "candidate_topic": "persistent agent workspaces",
+      "reason": "Published 2026-06-16, outside the cutoff window.",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://tangle.tools/blog/tangle-sandbox-vs-e2b/"
+    },
+    {
+      "candidate_topic": "software delegation contracts",
+      "reason": "Published 2026-06-14, outside the cutoff window, despite strong conceptual fit.",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.17099"
+    },
+    {
+      "candidate_topic": "zero-trust multi-agent orchestration harness",
+      "reason": "Only month-level July 2026 dating was visible in search output; missing a concrete visible day within the 7-day window.",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://www.researchgate.net/publication/408468761_SDD-First_Multi-Agent_Orchestration_Harness_for_Enterprise_Development_A_Zero-Trust_Reference_Architecture_for_Governing_Agentic_Software_Engineering_at_Scale"
+    },
+    {
+      "candidate_topic": "Codex versus Claude Code subagent comparison",
+      "reason": "Search result said last week, but opened snippet exposed conflicting May 15, 2026 page metadata and vendor/benchmark claims that are broad ecosystem coverage.",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "source_url": "https://www.morphllm.com/comparisons/codex-vs-claude-code"
+    },
+    {
+      "candidate_topic": "RAG chunking strategies",
+      "reason": "Published four months ago, outside the cutoff window.",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "source_url": "https://www.firecrawl.dev/blog/best-chunking-strategies-rag"
+    },
+    {
+      "candidate_topic": "RAG chunking strategies",
+      "reason": "Published last month, outside the cutoff window.",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "source_url": "https://www.digitalapplied.com/blog/rag-chunking-strategies-2026-retrieval-quality-playbook"
+    }
+  ],
+  "federation_boundary_note": "Broad ecosystem entity and product background remains upstream-owned. This artifact preserves local practice implications for later ai-dev-wiki ingest without updating docs/wiki pages.",
+  "follow_up_notes": [
+    "Review page-visible dates for search-dated commentary before ingesting Augment or Developers Digest items.",
+    "Prefer primary sources for Dockerless verification and any benchmark/model claims.",
+    "Keep Codex/OpenAI product background upstream; ingest only request-boundary, tool-governance, handoff, telemetry, and harness-practice implications."
+  ],
+  "leaf_universe_count": 65,
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "factual_summary": "OpenAI launched GPT-5.6 generally available. The release describes stronger coding-agent performance, Programmatic Tool Calling for in-memory programs that coordinate tools and filter intermediate data, multi-agent support in beta, explicit cache breakpoints, and published model-size pricing.",
+      "follow_up_note": "Ingest only the local practice implications for tool-call governance, harness design, and cost telemetry; route model-family background upstream.",
+      "id": "openai-gpt-5-6-programmatic-tool-calling",
+      "named_entities": [
+        "OpenAI",
+        "GPT-5.6",
+        "Responses API",
+        "Programmatic Tool Calling",
+        "Artificial Analysis Coding Agent Index",
+        "Terminal-Bench",
+        "DeepSWE"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://openai.com/index/gpt-5-6/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-5.6",
+        "Responses API"
+      ],
+      "visible_date": "2026-07-09",
+      "why_it_matters": "Local tool-governance and harness guidance should distinguish model-driven tool calls from program-controlled intermediate processing, and cost telemetry guidance may need to capture model-size, cache, and multi-agent concurrency tradeoffs."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "factual_summary": "OpenAI announced ChatGPT Work and said the Codex app is merging into the ChatGPT desktop app with inline editing in diffs, pull-request review in the side panel, faster computer use powered by GPT-5.6, and support for multiple repositories in one project.",
+      "follow_up_note": "Keep product facts upstream; locally review whether multi-repo workspaces alter file-boundary and handoff guidance.",
+      "id": "openai-chatgpt-work-codex-desktop-merge",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "ChatGPT desktop app",
+        "GPT-5.6"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "source_url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "GPT-5.6"
+      ],
+      "visible_date": "2026-07-09",
+      "why_it_matters": "Request packages, handoffs, and persistent workspace practices may need to account for multi-repository task scope, side-panel PR review, and inline diff editing as first-class review surfaces."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "The Codex changelog records a July 9 desktop integration with direct Markdown/code editing, inline annotations, PR sidebar review, multi-repository projects, faster computer use, and clearer task progress. July 9 CLI 0.144.0 added writes app-approval mode, interactive MCP authentication, hosted app-server authentication, and an Ultra concurrency warning. July 13 iOS notes added inline visualizations in Codex tasks plus task-link and progress improvements. July 14 CLI 0.144.4 was a no-user-facing-change patch.",
+      "follow_up_note": "Do not ingest version-only patch entries except as exclusions; review the July 9/13 items for local workflow implications.",
+      "id": "codex-changelog-july-2026-workflow-controls",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI",
+        "MCP",
+        "ChatGPT desktop app"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "MCP"
+      ],
+      "visible_date": "2026-07-09 to 2026-07-14",
+      "why_it_matters": "Approval modes, MCP authentication, concurrency warnings, inline review, and task-progress surfaces are local operating concerns for request boundaries, tool governance, coordination limits, and progress telemetry."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "factual_summary": "GSA updated its 2026 Model Context Protocol Server and AI Agent Hackathon page. The page frames MCP as a standard for connecting autonomous agents to real-world data and services, with a federal hackathon focused on open data assets, service-delivery use cases, compatible clients, local testing, JSON-RPC/HTTP/SSE transport, and read/write API integration.",
+      "follow_up_note": "Route ecosystem/entity background upstream; keep only the local practice implication around governed service-bound tool design.",
+      "id": "gsa-mcp-hackathon-public-sector-governed-tools",
+      "named_entities": [
+        "GSA",
+        "Model Context Protocol",
+        "AI Community of Practice",
+        "Databricks",
+        "OpenAI",
+        "IBM",
+        "Claude Desktop",
+        "VS Code",
+        "MCP Inspector"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/2026-ai-hackathon",
+      "upstream_owned_entities": [
+        "GSA",
+        "Model Context Protocol",
+        "Databricks",
+        "OpenAI",
+        "IBM"
+      ],
+      "visible_date": "2026-07-14 last updated",
+      "why_it_matters": "The local MCP practice lens can treat public-sector MCP work as an example of domain-expert-owned tool servers, governed read/write APIs, and workflow/service-delivery grounding before model selection."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "factual_summary": "Augment Code described AI incident-management workflows in which agents centralize metrics, traces, logs, deployment history, and ownership metadata, using parallel investigation against observability APIs and producing a linked evidence bundle for responders.",
+      "follow_up_note": "Confirm page-visible dates during ingest; if accepted, synthesize as an evidence-bundle practice rather than product coverage.",
+      "id": "augment-incident-evidence-bundles",
+      "named_entities": [
+        "Augment Code",
+        "Meta"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "source_url": "https://www.augmentcode.com/guides/ai-incident-management",
+      "upstream_owned_entities": [
+        "Augment Code",
+        "Meta"
+      ],
+      "visible_date": "2026-07-13 search-visible publication date",
+      "why_it_matters": "The source reinforces that evidence bundles should be structured around linked artifacts and ownership metadata, not just a generated narrative, when agents investigate code or operational incidents."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "factual_summary": "Open Agent Skills published a deep review of Repo Task Proof Loop, a compact Apache-2.0 project that turns an agent completion claim into repository evidence through specifications, evidence, and independent verification; it recorded 720 stars and 45 forks as of July 13, 2026.",
+      "follow_up_note": "If ingested, keep the local lens on proof-loop practices and route project background upstream if the upstream AI wiki owns tool entities.",
+      "id": "open-agent-skills-repo-task-proof-loop",
+      "named_entities": [
+        "Open Agent Skills",
+        "Repo Task Proof Loop",
+        "Codex",
+        "Claude Code",
+        "Apache-2.0"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://openagentskills.dev/skills/repo-task-proof-loop",
+      "upstream_owned_entities": [
+        "Open Agent Skills",
+        "Repo Task Proof Loop",
+        "Codex",
+        "Claude Code"
+      ],
+      "visible_date": "2026-07-13",
+      "why_it_matters": "Delegated coding and verification-loop guidance can use this as a public example of converting done claims into auditable repo state and independent review artifacts."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "factual_summary": "Developers Digest argued that dockerless verification is becoming a coding-agent bottleneck and cited checks against a Dockerless arXiv paper, Hugging Face paper page, the Hugging Face July 2026 monthly papers page, SWE-bench, and Google Trends query clusters on July 12, 2026.",
+      "follow_up_note": "During ingest, prefer primary paper or project sources before relying on this commentary for durable guidance.",
+      "id": "developers-digest-dockerless-verification",
+      "named_entities": [
+        "Developers Digest",
+        "Dockerless",
+        "Hugging Face",
+        "SWE-bench",
+        "Google Trends"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "source_url": "https://www.developersdigest.tech/blog/dockerless-coding-agent-verification",
+      "upstream_owned_entities": [
+        "Dockerless",
+        "Hugging Face",
+        "SWE-bench"
+      ],
+      "visible_date": "2026-07-12 search-visible publication/check date",
+      "why_it_matters": "The update is relevant to local guidance about when to use compose/build verification versus lighter execution paths, and about making verification constraints explicit in agent harnesses."
+    },
+    {
+      "applies_to_selected_batch": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "factual_summary": "OpenAI release notes say ChatGPT search across chats, projects, images, and documents is available globally, with filters and direct opening of matched artifacts.",
+      "follow_up_note": "This selected batch did not include the context-architecture leaves, so use it only as adjacent evidence if those leaves are later selected.",
+      "id": "chatgpt-release-notes-search-across-work-artifacts",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT"
+      ],
+      "visible_date": "2026-07-14",
+      "why_it_matters": "Although broad product coverage is upstream-owned, the local practice implication is that durable workspaces increasingly expose searchable project and file artifacts as retrieval surfaces for agent workflows."
+    }
+  ],
+  "run_timestamp": "2026-07-14T21:02:38-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2606.17099",
+    "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "https://learn.chatgpt.com/docs/changelog",
+    "https://openagentskills.dev/skills/repo-task-proof-loop",
+    "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+    "https://openai.com/index/gpt-5-6/",
+    "https://sysgenpro.com/ai-workflow-orchestration-in-construction-for-approvals-procurement-and-scheduling",
+    "https://tangle.tools/blog/tangle-sandbox-vs-e2b/",
+    "https://www.augmentcode.com/guides/ai-incident-management",
+    "https://www.developersdigest.tech/blog/dockerless-coding-agent-verification",
+    "https://www.digitalapplied.com/blog/rag-chunking-strategies-2026-retrieval-quality-playbook",
+    "https://www.firecrawl.dev/blog/best-chunking-strategies-rag",
+    "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/2026-ai-hackathon",
+    "https://www.microsoft.com/en-us/security/blog/2026/06/30/securing-ai-agents-ai-tools-move-from-reading-acting/",
+    "https://www.morphllm.com/comparisons/codex-vs-claude-code",
+    "https://www.researchgate.net/publication/408468761_SDD-First_Multi-Agent_Orchestration_Harness_for_Enterprise_Development_A_Zero-Trust_Reference_Architecture_for_Governing_Agentic_Software_Engineering_at_Scale"
+  ]
+}
