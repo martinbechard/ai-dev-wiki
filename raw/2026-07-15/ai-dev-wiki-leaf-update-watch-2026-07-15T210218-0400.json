@@ -1,0 +1,599 @@
+{
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-15T21:02:18-04:00",
+    "start": "2026-07-08T21:02:18-04:00",
+    "timezone": "America/Toronto"
+  },
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "reason": "Excluded as boundary-only date: the run cutoff is 2026-07-08T21:02:18-04:00 and the page exposes only a date, not a time after the cutoff.",
+      "source_title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "visible_date": "2026-07-08"
+    },
+    {
+      "reason": "Excluded because the documentation page did not expose a visible publish or update date within the cutoff window.",
+      "source_title": "Using GitHub Copilot code review",
+      "source_url": "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+      "visible_date": null
+    },
+    {
+      "reason": "Excluded because the visible date is outside the 7-day window and the page did not expose a current update date.",
+      "source_title": "Requests in GitHub Copilot legacy billing docs",
+      "source_url": "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+      "visible_date": "2026-06-01 referenced effective date"
+    },
+    {
+      "reason": "Excluded from this local leaf batch because the qualifying entries are broad platform administration, transparency, and model-support updates; routing belongs upstream or to non-selected governance leaves.",
+      "source_title": "Claude Platform release notes",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "visible_date": "2026-07-14 and 2026-07-10 entries"
+    },
+    {
+      "reason": "Excluded because the visible publication date is outside the 7-day cutoff, despite relevant telemetry content.",
+      "source_title": "AI SDK 7 is now available",
+      "source_url": "https://vercel.com/blog/ai-sdk-7",
+      "visible_date": "Published three weeks ago"
+    },
+    {
+      "reason": "Excluded because the fetched page showed an error/loading shell and did not expose a specific qualifying update with a visible date.",
+      "source_title": "Claude Code changelog",
+      "source_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "visible_date": null
+    }
+  ],
+  "federation_routing_note": "Broad ecosystem entity details for vendors, model families, and products remain upstream-owned; this artifact records only local practice implications for selected downstream leaves.",
+  "follow_up_notes": [
+    "Ingest should decide whether the security-review command changes intelligent-code-review guidance for severity/confidence/reverification evidence.",
+    "Ingest should decide whether GhostApproval and Friendly Fire strengthen generated-code/refactoring gates around path resolution, sandbox boundaries, and autonomous command approval.",
+    "Source-workflow leaves had no qualifying local-practice update in this run."
+  ],
+  "leaf_results": {
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "techradar-agent-governance-controls-2026-07-13",
+        "openai-gpt-5-6-codex-workflow-2026-07-09",
+        "github-copilot-visual-studio-trust-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/application-patterns/application-harness-patterns.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "techradar-agent-governance-controls-2026-07-13",
+        "itpro-ghostapproval-coding-tools-2026-07-09",
+        "github-copilot-visual-studio-trust-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "techradar-agent-governance-controls-2026-07-13",
+        "github-copilot-visual-studio-trust-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "itpro-friendly-fire-agent-rce-2026-07-10",
+        "openai-gpt-5-6-codex-workflow-2026-07-09",
+        "github-copilot-security-review-command-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "techradar-agent-governance-controls-2026-07-13",
+        "itpro-ghostapproval-coding-tools-2026-07-09",
+        "itpro-friendly-fire-agent-rce-2026-07-10",
+        "openai-gpt-5-6-codex-workflow-2026-07-09",
+        "github-copilot-security-review-command-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/coding-practices/generated-code-refactoring.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "itpro-ghostapproval-coding-tools-2026-07-09",
+        "itpro-friendly-fire-agent-rce-2026-07-10",
+        "openai-gpt-5-6-codex-workflow-2026-07-09",
+        "github-copilot-visual-studio-trust-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/coding-practices/intelligent-code-review.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "techradar-agent-governance-controls-2026-07-13",
+        "itpro-ghostapproval-coding-tools-2026-07-09",
+        "itpro-friendly-fire-agent-rce-2026-07-10",
+        "openai-gpt-5-6-codex-workflow-2026-07-09",
+        "github-copilot-security-review-command-2026-07-14"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_qualified_update_at": "2026-07-10",
+      "last_result": "qualified_update_found",
+      "qualified_update_ids": [
+        "itpro-friendly-fire-agent-rce-2026-07-10",
+        "openai-gpt-5-6-codex-workflow-2026-07-09"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/source-workflows/automated-update-feeds.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/source-workflows/leaf-update-watch.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/source-workflows/public-topic-news-collector.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    },
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": {
+      "follow_up_note": "No qualifying local-practice update found in this run.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "qualified_update_ids": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+        "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+        "https://openai.com/index/gpt-5-6/",
+        "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://vercel.com/blog/ai-sdk-7",
+        "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      ]
+    }
+  },
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "date_evidence": "Search result showed published 2 days ago during the 2026-07-15 run.",
+      "factual_summary": "The article frames production use of coding agents as a governance problem requiring isolated environments, scoped permissions, real-time monitoring, human approval gates, policy-based model routing, authenticated identity mapping, and exportable audit trails.",
+      "id": "techradar-agent-governance-controls-2026-07-13",
+      "named_entities": [
+        "TechRadar",
+        "AI coding agents"
+      ],
+      "published_or_updated_at": "2026-07-13",
+      "source_title": "Why AI coding agents keep stalling before production and the governance controls that fix it",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "upstream_owned_entities": [
+        "AI coding agents"
+      ],
+      "why_it_matters_for_leaf": "It reinforces local practice leaves that treat agent harnesses as governed systems with visible task state, approval boundaries, and traceable tool/model interactions rather than only prompt or model choices."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "date_evidence": "Search result showed published 6 days ago during the 2026-07-15 run.",
+      "factual_summary": "The report summarizes Wiz GhostApproval findings where symlink handling in coding assistants could let malicious repositories escape workspace boundaries. It names Amazon Q Developer, Claude Code, Cursor, Windsurf, and Google Antigravity, and notes several vendor fixes.",
+      "id": "itpro-ghostapproval-coding-tools-2026-07-09",
+      "named_entities": [
+        "ITPro",
+        "Wiz",
+        "GhostApproval",
+        "Amazon Q Developer",
+        "Claude Code",
+        "Cursor",
+        "Windsurf",
+        "Google Antigravity",
+        "CVE-2026-12958",
+        "CVE-2026-50549"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "Flaws in some of the most popular AI coding tools left developers wide open to attack",
+      "source_url": "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+      "upstream_owned_entities": [
+        "Amazon Q Developer",
+        "Claude Code",
+        "Cursor",
+        "Windsurf",
+        "Google Antigravity"
+      ],
+      "why_it_matters_for_leaf": "Local code-review and generated-code refactoring practices should treat path resolution, sandbox boundaries, and write-before-approval behavior as verification evidence before accepting agent-generated diffs."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "date_evidence": "Search result showed published 5 days ago during the 2026-07-15 run.",
+      "factual_summary": "The report describes an AI Now Institute proof of concept in which prompt injections embedded in routine repository documentation can trigger remote code execution when Claude Code or Codex operate in autonomous approval modes.",
+      "id": "itpro-friendly-fire-agent-rce-2026-07-10",
+      "named_entities": [
+        "ITPro",
+        "AI Now Institute",
+        "Friendly Fire",
+        "Claude Code",
+        "Codex",
+        "Claude Sonnet 4.6",
+        "Claude Sonnet 5",
+        "Claude Opus 4.8",
+        "GPT-5.5"
+      ],
+      "published_or_updated_at": "2026-07-10",
+      "source_title": "Friendly Fire attacks can manipulate OpenAI and Anthropic models into running malicious code",
+      "source_url": "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Claude Sonnet 5",
+        "GPT-5.5"
+      ],
+      "why_it_matters_for_leaf": "The local inspect-patch-verify and review leaves should keep untrusted repository text separate from operational authority and require command approval and evidence collection before agent-run security or refactoring workflows execute code."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "date_evidence": "OpenAI page shows July 9, 2026.",
+      "factual_summary": "OpenAI describes GPT-5.6 improvements for ambitious work and includes Codex workflow examples involving research, planning, staged implementation, and accurate line-linked GitHub references.",
+      "id": "openai-gpt-5-6-codex-workflow-2026-07-09",
+      "named_entities": [
+        "OpenAI",
+        "GPT-5.6",
+        "Codex",
+        "Shopify"
+      ],
+      "published_or_updated_at": "2026-07-09",
+      "source_title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "source_url": "https://openai.com/index/gpt-5-6/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-5.6",
+        "Codex"
+      ],
+      "why_it_matters_for_leaf": "The local coding practice implication is to keep multi-stage request packages and review evidence explicit so better model capability turns into traceable staged work rather than opaque one-shot generation."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "date_evidence": "GitHub changelog URL and page date show 2026-07-14.",
+      "factual_summary": "GitHub says the Visual Studio Copilot June update emphasizes visibility and trust, including clearer Copilot usage visibility, an MCP server trust layer, and general availability for initial C++ modernization-agent scenarios.",
+      "id": "github-copilot-visual-studio-trust-2026-07-14",
+      "named_entities": [
+        "GitHub Copilot",
+        "Visual Studio",
+        "MCP",
+        "C++ modernization agent"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_title": "GitHub Copilot in Visual Studio - June update",
+      "source_url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio",
+        "MCP"
+      ],
+      "why_it_matters_for_leaf": "This supports local harness and telemetry leaves that treat usage visibility, trust decisions for tool servers, and modernization-agent scope as first-class product workflow state."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "date_evidence": "GitHub changelog URL and page date show 2026-07-14.",
+      "factual_summary": "GitHub introduced a public-preview /security-review command in the Copilot app that analyzes in-flight local changes, returns high-confidence security findings, gives actionable suggestions, and supports re-verification before code lands.",
+      "id": "github-copilot-security-review-command-2026-07-14",
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "Dependabot",
+        "GitHub code scanning",
+        "secret scanning"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_title": "Security reviews now available in the GitHub Copilot app",
+      "source_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot app",
+        "Dependabot",
+        "GitHub code scanning"
+      ],
+      "why_it_matters_for_leaf": "This is a direct local-practice signal for intelligent code review and fix packaging: security review can move earlier into the working loop, but still needs severity, confidence, remediation, and re-verification evidence."
+    }
+  ],
+  "run_timestamp": "2026-07-15T21:02:18-04:00",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+  ],
+  "selection_policy": "Unchecked leaves first, then oldest last_checked_at, stable relative path tie-break; excluded hubs, index pages, digests, schema, glossary, known defects, open decisions, maintenance log, topic index, federation pages, and non-durable dated synthesis pages.",
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+    "https://www.itpro.com/security/flaws-in-some-of-the-most-popular-ai-coding-tools-left-developers-wide-open-to-attack",
+    "https://www.itpro.com/security/the-agents-you-use-to-beef-up-cybersecurity-could-be-turned-against-you-friendly-fire-attacks-can-manipulate-openai-and-anthropic-models-into-running-malicious-code",
+    "https://openai.com/index/gpt-5-6/",
+    "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+    "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+    "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review",
+    "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/copilot-requests",
+    "https://platform.claude.com/docs/en/release-notes/overview",
+    "https://vercel.com/blog/ai-sdk-7",
+    "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+  ]
+}
