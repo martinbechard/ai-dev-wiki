@@ -31,6 +31,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds public agent-onboarding snippets as another boundary case. A vendor blog, README, or agents.md file can tell an agent to install, configure, or use a service, but that text is external source evidence until the user or a trusted local instruction surface approves the package, account, tool permissions, and execution scope.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds two durable-instruction signals. First, reusable skills should be maintained with decision history, exit criteria, and verification evidence instead of only preserving the latest procedure text. Second, repository-loaded instruction files are an attack surface when untrusted projects can plant instruction-like content, so durable instruction intake needs provenance review before an autonomous agent treats those files as authority.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -54,6 +56,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Back instruction and artifact boundaries with runtime policy composition when data can flow across multiple tools.
 - Treat public agents.md files, README setup snippets, and vendor onboarding prompts as source material until reviewed and promoted into local instructions.
 - Require user approval or a trusted local runbook before external onboarding text can trigger package installation, credential configuration, MCP setup, or tool enablement.
+- Preserve rationale, change history, exit criteria, and verification evidence for maintained skills or durable instruction files.
+- Treat repository-loaded instruction files from untrusted or newly cloned projects as source evidence until provenance and authority are reviewed.
 
 ## Authoritative Sources
 
@@ -72,6 +76,7 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 
 ## Related Code
 
@@ -108,3 +113,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-06 with instruction-economy guidance for concise, non-standard repository instruction files.
 - Maintained on 2026-07-08 with data-injection boundaries and compositional policy enforcement for multi-tool chains.
 - Maintained on 2026-07-13 with public agent-onboarding snippets as untrusted source instructions until locally approved.
+- Maintained on 2026-07-15 with skill decision-history maintenance and repository-loaded instruction-file trust review.

@@ -33,6 +33,8 @@ The July 12 raw sources add system-evaluation and pre-CI triage signals. The [to
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds frontend verification and risk-based review evidence. AI-generated user interfaces can compile and render while still failing keyboard paths, focus movement, accessibility, state changes, loading, error handling, or end-to-end task completion. Verification plans should also document when automated evidence is enough for lower-risk code and when a reviewer must inspect the generated implementation directly.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) and [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json) add loop-engineering and active-security-review signals. Reliable multi-step AI work needs explicit act, observe, decide, retry, and stop conditions tied to tests, runtime feedback, tool results, and human approval gates. Security review findings should include severity, confidence, remediation, and re-verification evidence before they count as accepted risk reduction.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -62,6 +64,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Evaluate coding agents as systems with trace assertions, side-effect checks, provider adapters, sandbox evidence, and cost signals rather than as one-shot model calls.
 - Verify AI-generated frontend work with task completion, accessibility, keyboard, focus, state-change, loading, and error-path checks, not only build output or screenshots.
 - Record the review risk tier beside verification evidence so automated checks do not silently replace human inspection for high-impact generated code.
+- Define act, observe, decide, retry, and stop conditions for recurring agent loops before treating multi-step behavior as reliable.
+- Require severity, confidence, remediation, and re-verification evidence before AI-assisted security review counts as resolved risk.
 
 ## Authoritative Sources
 
@@ -82,6 +86,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 
 ## Related Code
 
@@ -123,3 +129,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Maintained on 2026-07-10 with performance-optimization eval, long-horizon task, requirement-traceability, and trajectory-diagnosis gates.
 - Maintained on 2026-07-12 with pre-CI verifier triage, whole-system coding-agent evals, trace assertions, side-effect checks, and cost signals.
 - Maintained on 2026-07-13 with frontend task-completion checks and risk-tiered review evidence for AI-generated code.
+- Maintained on 2026-07-15 with act-observe-decide-retry-stop loop conditions and AI security review re-verification evidence.

@@ -41,6 +41,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add production-control, proof-loop, and programmatic-tool signals. A production coding-agent harness should make isolation, scoped identity, human approvals, monitoring, audit trails, model routing, and proof artifacts explicit runtime components. Programmatic tool calling and repo-task proof loops reinforce that completion claims should be converted into inspectable specifications, evidence bundles, independent verification, and traceable tool execution before the harness treats work as done.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) and [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json) add execution-environment, trust-layer, and loop-termination signals. Coding-agent harnesses need isolated disposable workspaces with filesystem, shell, package, network, and step-persistent state when they must execute and retry code. They also need MCP trust decisions, path-boundary checks, spend caps, runaway-loop termination, and data-residency controls as runtime components rather than optional product settings.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -74,6 +76,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Use harness taxonomies to assign ownership for planning, context, permissions, memory, orchestration, verification, observability, and sandboxing components.
 - Include isolation, scoped identity, approval gates, monitoring, audit trails, and model-routing policy as harness components for production coding agents.
 - Convert done claims into specifications, evidence bundles, independent verification results, and traceable tool execution before a harness marks a delegated task complete.
+- Provide isolated disposable workspaces for code execution, dependency setup, retry loops, and runtime feedback when generated code may run before human review.
+- Treat MCP trust decisions, canonical path checks, spend caps, loop termination, and data-residency placement as harness components for autonomous coding workflows.
 
 ## Authoritative Sources
 
@@ -102,6 +106,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 
 ## Related Code
 
@@ -141,3 +147,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-09 with shared UI-and-MCP operation paths and code-enabled managed-runtime isolation controls.
 - Maintained on 2026-07-10 with bounded loop controls, output-path verification, per-step traces, and harness taxonomy ownership.
 - Maintained on 2026-07-14 with production control components, programmatic tool execution, and proof-loop evidence for delegated completion claims.
+- Maintained on 2026-07-15 with isolated disposable workspaces, MCP trust decisions, path-boundary checks, spend caps, loop termination, and data-residency controls.

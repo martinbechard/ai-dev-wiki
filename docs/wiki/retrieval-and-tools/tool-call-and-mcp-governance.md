@@ -49,6 +49,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add program-controlled tool, MCP trust, and public-sector service-tool signals. Programmatic tool calling should be treated as harness-mediated processing with its own schema, logging, policy, and intermediate-data controls rather than as ordinary model-only tool choice. MCP trust validation, interactive MCP authentication, app-server authentication, and public-sector read/write API examples reinforce that tool access needs configuration fingerprints, identity prompts, local testing, transport expectations, and domain-owner approval before an agent can use a server as a source of action.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds MCP least-privilege and interceptor signals. Tool governance should include capability scoping, argument validation, sandboxing, approval gates, runtime monitoring, and a common policy interception layer when several MCP servers or agent tools expose heterogeneous action surfaces. Broad MCP protocol and vendor background remains upstream-owned; locally, interception is useful only when it produces enforceable policy decisions and audit evidence before a tool call reaches code, data, or external systems.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -92,6 +94,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Require source provenance, install review, credential handling, logging, runtime separation, and approval state before public onboarding text can configure a tool for agent use.
 - Treat programmatic tool orchestration as a governed harness path with schema, cache, intermediate-result, and logging controls separate from final model output.
 - Validate MCP server trust through configuration fingerprints, authentication prompts, transport expectations, local test evidence, and domain-owner approval before enabling read/write service tools.
+- Use capability scoping, argument validation, sandboxing, approval gates, runtime monitoring, and interception points for MCP or tool surfaces that can act across multiple systems.
+- Keep common MCP policy enforcement close enough to execution that prompt injection, over-privileged tools, and untrusted tool output cannot bypass server-by-server review.
 
 ## Authoritative Sources
 
@@ -125,6 +129,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 
 ## Related Code
 
@@ -171,3 +176,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-12 with LLM gateway governance controls for authentication, routing, rate limits, cost, failover, and audit evidence.
 - Maintained on 2026-07-13 with RAG infrastructure, CLI/MCP onboarding, runtime separation, credential handling, and public setup approval controls.
 - Maintained on 2026-07-14 with programmatic tool orchestration, MCP trust validation, authentication, and governed service-tool controls.
+- Maintained on 2026-07-15 with MCP least privilege, argument validation, runtime monitoring, approval gates, and common policy interception controls.

@@ -27,6 +27,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces active-versus-durable context selection. A request package should assemble the smallest active working set from durable decisions, artifacts, memory records, and auditable storage while preserving enough origin and freshness evidence to avoid treating stale memory as current instruction.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds coding-agent context-loop and graph signals. Context selection should decide which instructions, repository knowledge, tool results, tests, runtime feedback, work items, decisions, dependencies, and customer or operational signals enter each generation step. The local rule is to retrieve current relevant context for the loop stage rather than throwing every available artifact into the model and hoping the agent finds the live constraint.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -47,6 +49,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Select compact structured context for repeated tool-call or JSON shapes only when exact originals, metadata filters, retention rules, and update paths remain recoverable.
 - Assemble active context from durable decisions, artifacts, memory records, and auditable storage with freshness and origin labels.
 - Keep stale durable memory out of the active working set unless a current disk or source check confirms it still applies.
+- Select context per loop step from instructions, repository knowledge, tool results, tests, runtime feedback, decisions, dependencies, and operational signals.
+- Prefer current relevant context graphs and freshness checks over bulk loading when agent work depends on work-management, code, documentation, or customer signals.
 
 ## Authoritative Sources
 
@@ -65,6 +69,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 
 ## Related Code
 
@@ -98,3 +103,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-06-30 with reversible context compression, cache-alignment, provenance, and sensitive-field handling guidance.
 - Maintained on 2026-07-07 with structured-output selection, memory metadata filters, TTL behavior, update paths, and recoverable originals.
 - Maintained on 2026-07-12 with active-versus-durable context selection, freshness labels, origin labels, and stale-memory checks.
+- Maintained on 2026-07-15 with per-loop-step context selection, current-context graph signals, and freshness controls.

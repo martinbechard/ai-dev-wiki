@@ -43,6 +43,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds on-demand and pull-request security review signals. AI security review can run inside the active coding loop and ordinary PR surfaces, but findings need labels, severity, confidence, actionable repair suggestions, re-verification, policy enablement, and spend awareness. The local review rule is to keep AI detections distinguishable from deterministic scanners and to require human triage before a generated security finding becomes acceptance evidence.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) and [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json) add review-capacity, history-secret, path-boundary, and active-security-review signals. Large PR review should be treated as a budgeted workflow with explicit file limits, continuation cost, and reviewer attention controls. Security review should separate current-code findings from repository-history secret risk, and autonomous review should include canonical path checks, command approval, severity, confidence, remediation, and re-verification evidence before generated findings affect merge decisions.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -85,6 +87,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Watch for review-surrender pressure when AI adoption is driven by peer or manager visibility; a pull request is not ready just because an agent produced it quickly.
 - Treat on-demand AI security review as a pre-merge guardrail whose findings need labels, severity, confidence, suggested repair, and re-verification evidence.
 - Keep AI security detections separate from deterministic scanner results in PR review summaries, policy decisions, and residual-risk notes.
+- Treat large PR AI review as a budgeted workflow with file limits, continuation cost, reviewer-attention controls, and explicit residual risk.
+- Separate current-code review findings from repository-history secret findings, and require canonical path, command-approval, remediation, and re-verification evidence for security review.
 
 ## Authoritative Sources
 
@@ -112,6 +116,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 
 ## Related Code
 
@@ -154,3 +160,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-12 with adversarial multi-agent review topology, reviewer independence, regression proof, and repair-accountability requirements.
 - Maintained on 2026-07-13 with risk-based review, review-surrender controls, and evidence-led acceptance boundaries for AI-authored changes.
 - Maintained on 2026-07-14 with on-demand security review, AI-labeled PR detections, confidence, re-verification, and human-triage requirements.
+- Maintained on 2026-07-15 with large-PR review budgets, repository-history secret review, canonical path checks, command approval, and active security-review evidence.

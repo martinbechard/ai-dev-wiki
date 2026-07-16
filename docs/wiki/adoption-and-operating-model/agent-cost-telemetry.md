@@ -47,6 +47,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add model-size, cache, usage-alert, and shared-capability cost signals. Cost telemetry should record when a model route, cache breakpoint, multi-agent run, MCP server, PR review surface, or quality/security feature consumes separate credits or seats. Shared capabilities such as identity, trusted connectors, curated knowledge, evaluations, observability, model routing, and reusable agent patterns should be budgeted as platform infrastructure, not hidden inside one team's assistant spend.
 
+The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds coding-agent cost and loop-control signals. Multi-model routing, hard spend caps, organization-level budgets, FinOps dashboards, review file limits, on-demand review continuation, and runaway-loop termination should be attached to the workflow outcome they support. Cost telemetry should distinguish useful escalation to a stronger model from repeated retries, excessive review continuation, or an autonomous loop that should have stopped.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -85,6 +87,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Treat built-in cost dashboards as workflow telemetry inputs that still need local mapping to review effort, risk reduction, and completed modernization work.
 - Attribute model-size choices, cache policy, multi-agent concurrency, PR review features, MCP usage, and quality/security scans to the workflow outcome they support.
 - Budget shared identity, connector, knowledge, evaluation, observability, routing, and reusable-pattern capabilities as platform costs before expanding agent adoption.
+- Record model-routing complexity, hard spend caps, organization budgets, PR review file limits, on-demand continuation, and loop-termination events as workflow-level cost evidence.
+- Review runaway-loop stops and review-continuation spend as scope or verification signals, not only as billing events.
 
 ## Authoritative Sources
 
@@ -112,6 +116,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 
 ## Related Code
 
@@ -154,3 +159,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-11 with cost-per-verified-outcome and benchmark-provenance controls for coding-agent price claims.
 - Maintained on 2026-07-13 with multi-agent modernization cost attribution and spend-dashboard mapping to accepted outcomes.
 - Maintained on 2026-07-14 with model-size, cache, multi-agent, MCP, PR-review, quality-feature, and shared-capability cost attribution.
+- Maintained on 2026-07-15 with multi-model routing, spend caps, organization budgets, PR file limits, review continuation, and runaway-loop cost signals.
