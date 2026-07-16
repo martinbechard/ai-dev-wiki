@@ -1,0 +1,431 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-15T20:32:38-04:00",
+  "cutoff_window": {
+    "start": "2026-07-13T20:32:38-04:00",
+    "end": "2026-07-15T20:32:38-04:00",
+    "rule": "Include only public web sources with a visible publication or update date inside the last 2 days relative to run time. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "routing_rule": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques. This collector keeps only AI-assisted development practice implications for the local wiki."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_queries": [
+    "AI coding agent governance audit logs permissions approvals July 15 2026",
+    "context engineering coding agents durable instructions July 15 2026",
+    "AI code review software engineering agents July 15 2026",
+    "MCP governance AI agents permissions July 15 2026",
+    "site:github.blog/changelog/2026-07-15 GitHub Copilot AI code review",
+    "site:openai.com/index July 15 2026 Codex coding agents software development",
+    "\"July 15, 2026\" \"coding agents\"",
+    "\"July 15, 2026\" \"AI code review\"",
+    "\"July 15, 2026\" \"Model Context Protocol\" \"agents\"",
+    "\"July 15, 2026\" \"context engineering\"",
+    "\"July 15, 2026\" \"AI-assisted development\"",
+    "\"July 15, 2026\" \"coding agent\" \"security\"",
+    "\"July 15, 2026\" \"AI coding\" \"governance\"",
+    "\"July 15, 2026\" \"software engineering\" \"agents\" \"evaluation\""
+  ],
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "title": "SkillHone discussion frames agent skills as maintained decision history, not static prompt files",
+      "source_url": "https://www.developersdigest.tech/blog/skillhone-agent-skill-decision-history",
+      "publisher": "Developers Digest",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated practice analysis",
+      "factual_summary": "The article discusses the July 2026 SkillHone paper and argues that teams should preserve the decisions behind agent skill changes, not only the latest SKILL.md. It connects skill maintenance to changing APIs, repository conventions, sharper evals, security rules, and recurring workflow failures.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable agent instructions need provenance and change rationale. Local prompt-and-instructions and context-architecture guidance should treat skills as maintained runbooks with decision history, exit criteria, and verification evidence.",
+      "local_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Developers Digest",
+        "SkillHone",
+        "Tencent",
+        "Hugging Face Papers",
+        "SKILL.md"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest",
+        "SkillHone",
+        "Tencent",
+        "Hugging Face Papers"
+      ],
+      "follow_up_notes": "Potential ingest destination: prompt-and-instructions/rules-and-knowledge-layers.md or context-architecture/context-state-externalization-and-rehydration.md. Keep SkillHone background upstream-owned."
+    },
+    {
+      "title": "Kodem lists MCP security controls around least privilege, argument validation, sandboxing, approvals, and runtime monitoring",
+      "source_url": "https://www.kodemsecurity.com/resources/what-is-mcp-security",
+      "publisher": "Kodem",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated vendor security guide",
+      "factual_summary": "Kodem describes MCP security as constraining what each MCP connection can do and watching it at runtime. The page names indirect prompt injection through tool content, over-privileged tools, unvalidated tool arguments, untrusted servers, token exposure, least privilege, sandboxing, confirmation gates, and runtime observation of tool calls and side effects.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP is upstream-owned as a protocol, but the local practice implication is concrete: tool-call governance should include capability scoping, policy validation before execution, untrusted-tool-output handling, approval gates, and runtime audit evidence.",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Kodem",
+        "Model Context Protocol",
+        "MCP",
+        "Runtime intelligence"
+      ],
+      "upstream_owned_entities": [
+        "Kodem",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "follow_up_notes": "Potential ingest destination: retrieval-and-tools/tool-call-and-mcp-governance.md and governance-and-risk/agent-governance-infrastructure.md."
+    },
+    {
+      "title": "CodeRabbit changelog adds git-history secret scanning, PR file limits, and in-app review conversation handling",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "publisher": "CodeRabbit",
+      "visible_date": "July 15, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "CodeRabbit listed July 15 updates for opt-in repository-history secret scanning, plan-specific automatic PR review file limits, usage-priced on-demand review continuation within the 300-file ceiling, and in-app handling of grouped review threads with resolved or outdated state.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI code review is gaining explicit capacity limits, cost gates, and security-history coverage. Local code-review practice should treat large PRs as a budgeted review workflow and separate current-code findings from repository-history secret risk.",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "Security Agent",
+        "GitHub",
+        "GitLab",
+        "Azure DevOps",
+        "Bitbucket"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "GitHub",
+        "GitLab",
+        "Azure DevOps",
+        "Bitbucket"
+      ],
+      "follow_up_notes": "Potential ingest destination: coding-practices/intelligent-code-review.md, governance-and-risk/sensitive-data-and-supply-chain-controls.md, and adoption-and-operating-model/agent-cost-telemetry.md."
+    },
+    {
+      "title": "WorkOS highlights MCP interceptors as a draft policy-and-evidence layer for agent tool permissions",
+      "source_url": "https://workos.com/blog/mcp-interceptors",
+      "publisher": "WorkOS",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated vendor practice analysis",
+      "factual_summary": "WorkOS describes the still-draft SEP-1763 Interceptor Framework for MCP as a pattern for deciding what agents are allowed to do and what evidence exists afterward. The article frames interceptors as a cross-server control point for PII redaction, audit logging, rate limiting, and validation against prompt injection.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that MCP governance should avoid server-by-server policy drift. Teams need a common interception layer for policy enforcement, audit evidence, and pre-tool-call validation across heterogeneous agent tools.",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "WorkOS",
+        "Model Context Protocol",
+        "SEP-1763",
+        "Interceptor Framework for Model Context Protocol",
+        "MCP Working Group"
+      ],
+      "upstream_owned_entities": [
+        "WorkOS",
+        "Model Context Protocol",
+        "SEP-1763",
+        "MCP Working Group"
+      ],
+      "follow_up_notes": "Potential ingest destination: retrieval-and-tools/tool-call-and-mcp-governance.md and application-patterns/agent-harness-components.md. Treat SEP background as upstream-owned."
+    },
+    {
+      "title": "Shiplight updates a coding-agent context-engineering guide around instructions, repo knowledge, tool results, tests, and runtime feedback",
+      "source_url": "https://www.shiplight.ai/blog/context-engineering-for-coding-agents",
+      "publisher": "Shiplight AI",
+      "visible_date": "Updated on July 15, 2026",
+      "source_type": "dated vendor practice guide",
+      "factual_summary": "Shiplight defines context engineering for coding agents as deciding which tokens an agent sees at each change-generation step, including instructions, repository knowledge, tool results, tests, and feedback from running code. The guide distinguishes coding-agent context loops from one-shot prompt engineering.",
+      "why_it_matters_for_ai_assisted_development_practice": "The guide reinforces local context-architecture coverage: the context contract should be curated per loop step and should privilege executable feedback, tests, and source evidence over bulk context loading.",
+      "local_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Shiplight AI",
+        "Anthropic",
+        "coding agents",
+        "context engineering"
+      ],
+      "upstream_owned_entities": [
+        "Shiplight AI",
+        "Anthropic",
+        "context engineering"
+      ],
+      "follow_up_notes": "Potential ingest destination: context-architecture/context-selection-and-compaction.md and verification-and-evals/verification-loops-and-evals.md."
+    },
+    {
+      "title": "LangChain argues agents need isolated, disposable computers for safe execution loops",
+      "source_url": "https://www.langchain.com/blog/agents-need-their-own-computer",
+      "publisher": "LangChain",
+      "visible_date": "July 15, 2026",
+      "source_type": "primary vendor practice guide",
+      "factual_summary": "LangChain says agents need real execution environments with a filesystem, shell, package manager, network access, and step-persistent state to run code, inspect results, and retry. It argues production systems need isolated, disposable environments because agent-executed code may be generated mid-loop, influenced by user input, cloned repositories, packages, or web documents, and may not have been reviewed before execution.",
+      "why_it_matters_for_ai_assisted_development_practice": "This maps directly to agent harness architecture: coding agents need execution access to verify work, but that access should live in isolated workspaces separated from user laptops, production systems, and other agents.",
+      "local_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "agent sandbox",
+        "coding agent"
+      ],
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith"
+      ],
+      "follow_up_notes": "Potential ingest destination: application-patterns/agent-harness-components.md, agent-workflows/persistent-agent-workspaces.md, and governance-and-risk/sensitive-data-and-supply-chain-controls.md."
+    },
+    {
+      "title": "Atlassian analysis places context and governance ahead of agents for AI-native software delivery",
+      "source_url": "https://diginomica.com/atlassian-puts-context-and-governance-ahead-agents-its-plan-ai-native-software-delivery",
+      "publisher": "diginomica",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated industry analysis",
+      "factual_summary": "The article reports Atlassian's emphasis on a Teamwork Graph context layer that maps work, code, people, decisions, dependencies, tasks, requirements, conversations, code context, and customer insight. The quoted framing says the context layer requires retrieving only relevant, current information and that agents fail when everything is thrown together.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local implication is not Atlassian product coverage but practice design: agentic software delivery needs context graphs, freshness controls, and governance before assigning work to agents.",
+      "local_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Teamwork Graph",
+        "Jira",
+        "Confluence",
+        "Slack",
+        "GitHub",
+        "Jira Product Discovery",
+        "diginomica"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Teamwork Graph",
+        "Jira",
+        "Confluence",
+        "Slack",
+        "GitHub",
+        "Jira Product Discovery"
+      ],
+      "follow_up_notes": "Potential ingest destination: context-architecture/compiled-wiki-and-structured-memory.md and adoption-and-operating-model/workflow-before-model-selection.md."
+    },
+    {
+      "title": "Caddi frames loop engineering as act-observe-decide-stop design for reliable multi-step AI work",
+      "source_url": "https://www.trycaddi.com/blog/loop-engineering",
+      "publisher": "Caddi",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated vendor guide",
+      "factual_summary": "Caddi distinguishes prompt engineering, context engineering, and loop engineering. It defines the loop as acting, observing results, deciding the next move or retry, and stopping when work is complete, arguing that production AI must handle messy inputs repeatedly without constant human watching.",
+      "why_it_matters_for_ai_assisted_development_practice": "The loop framing is useful for coding-agent planning and verification: local guidance should require explicit observe/retry/stop conditions, not just prompts and context bundles.",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Caddi",
+        "loop engineering",
+        "context engineering",
+        "prompt engineering"
+      ],
+      "upstream_owned_entities": [
+        "Caddi",
+        "loop engineering",
+        "context engineering",
+        "prompt engineering"
+      ],
+      "follow_up_notes": "Potential ingest destination: agent-workflows/verification-loops-and-evals.md or agent-workflows/delegated-coding-handoffs.md."
+    },
+    {
+      "title": "Check Point AI security coverage highlights malicious durable instruction files and AI-accelerated patch bottlenecks",
+      "source_url": "https://www.helpnetsecurity.com/2026/07/15/check-point-ai-security-report-2026/",
+      "publisher": "Help Net Security",
+      "visible_date": "July 15, 2026",
+      "source_type": "dated security news based on vendor report",
+      "factual_summary": "Help Net Security summarizes Check Point's AI Security Report 2026. It says attackers can target coding agents by planting malicious instructions in files such as CLAUDE.md that load automatically at session start, and notes that AI can accelerate vulnerability discovery and exploit development until patch testing and deployment become the bottleneck.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local practice should treat durable agent instruction files as an attack surface and require review gates for repository-loaded instructions. Regression repair and patch workflows also need speed without skipping validation, because exploit timelines are compressing.",
+      "local_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Help Net Security",
+        "Check Point",
+        "AI Security Report 2026",
+        "CLAUDE.md"
+      ],
+      "upstream_owned_entities": [
+        "Help Net Security",
+        "Check Point",
+        "AI Security Report 2026"
+      ],
+      "follow_up_notes": "Potential ingest destination: prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md and governance-and-risk/prompt-injection-architecture-risk.md."
+    },
+    {
+      "title": "Cast AI launches Kimchi Coding GA with multi-model routing, spend caps, loop termination, and data-sovereignty claims",
+      "source_url": "https://cast.ai/press-release/kimchi-coding-hits-general-availability/",
+      "publisher": "Cast AI",
+      "visible_date": "July 15, 2026",
+      "source_type": "primary vendor press release",
+      "factual_summary": "Cast AI announced general availability for Kimchi Coding, describing it as an autonomous multi-model coding agent with task routing by complexity and cost, feedback loops that score generated code, hard spend caps from API keys to organizations, automatic termination for runaway loops, a FinOps dashboard, and deployment options including customer VPC, dedicated GPUs, and air-gapped environments.",
+      "why_it_matters_for_ai_assisted_development_practice": "The product and vendor are upstream-owned, but the local practice signal is that cost governance, model routing, loop termination, and data-residency controls are becoming first-class coding-agent harness requirements.",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Cast AI",
+        "Kimchi Coding",
+        "Kimchi",
+        "Kubernetes",
+        "Akamai",
+        "Nvidia B300",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "upstream_owned_entities": [
+        "Cast AI",
+        "Kimchi Coding",
+        "Kimchi",
+        "Kubernetes",
+        "Akamai",
+        "Nvidia B300",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "follow_up_notes": "Potential ingest destination: adoption-and-operating-model/agent-cost-telemetry.md and application-patterns/agent-harness-components.md."
+    }
+  ],
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "title": "Why AI coding agents keep stalling before production and the governance controls that fix it",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "observed_date_signal": "Published 13 July 2026 and already captured in the previous 2026-07-14 collector artifact.",
+      "exclusion_reason": "Duplicate of prior run coverage; avoid repeating recent collector work.",
+      "routing_note": "If revisited during ingest, route only isolate-scope-approve practice implications."
+    },
+    {
+      "title": "Who cleans up after the vibe-coding party?",
+      "source_url": "https://www.ft.com/content/cec8df9e-b43b-4cd1-8feb-c07e804e8d33",
+      "observed_date_signal": "Search result reported published 4 days ago.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Potentially relevant to open-source maintainer review burden, but stale for this collector."
+    },
+    {
+      "title": "IBM targets AI cost optimization with updates to Bob developer tool",
+      "source_url": "https://www.itpro.com/software/development/ibm-targets-ai-cost-optimization-with-updates-to-bob-developer-tool",
+      "observed_date_signal": "Search result reported published 5 days ago.",
+      "exclusion_reason": "Outside the strict two-day cutoff window.",
+      "routing_note": "Relevant to subagent cost telemetry and isolated contexts, but stale for this collector."
+    },
+    {
+      "title": "Context Engineering for Coding Agents",
+      "source_url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "observed_date_signal": "Search result did not expose a qualifying publication or update date in the two-day window.",
+      "exclusion_reason": "Missing visible qualifying date under the collector rule.",
+      "routing_note": "High-quality durable context-engineering source; handle through normal project-wiki research or ingest when date constraints do not apply."
+    },
+    {
+      "title": "AgenticDev 2026 workshop call",
+      "source_url": "https://conf.researchr.org/home/ase-2026/agenticdev-2026",
+      "observed_date_signal": "Important date: paper submission July 15, 2026.",
+      "exclusion_reason": "Boundary-only event/deadline date, not a visible publication or update date.",
+      "routing_note": "Relevant to software-AI engineering research scope, but not a qualifying recent source update."
+    },
+    {
+      "title": "MCP is Quietly Becoming Critical AI Infrastructure",
+      "source_url": "https://interexy.com/mcp-as-critical-ai-infrastructure",
+      "observed_date_signal": "Updated July 15, 2026; published July 8, 2026.",
+      "exclusion_reason": "Broad MCP ecosystem explainer duplicates upstream-owned technique and protocol background; local practice implication was better covered by Kodem and WorkOS sources.",
+      "routing_note": "If later used, keep broad MCP background upstream and only extract governed infrastructure implications."
+    },
+    {
+      "title": "Is your coding agent uploading all your code?",
+      "source_url": "https://www.linkedin.com/pulse/your-coding-agent-uploading-all-code-laurie-voss-z2dgc",
+      "observed_date_signal": "Search result reported July 15, 2026.",
+      "exclusion_reason": "LinkedIn page was not opened for stable public verification in this run, and the item centers product/privacy plan comparisons already upstream-owned.",
+      "routing_note": "Potential local implication is coding-agent privacy-default review, but it needs directly verifiable public source text before ingest."
+    },
+    {
+      "title": "TrueFoundry Claude Code governance and enterprise AI agent security articles",
+      "source_url": "https://www.truefoundry.com/blog/claude-code-governance-with-ai-gateway",
+      "observed_date_signal": "Opened page lists several July 15, 2026 recent-blog links; target article itself showed older main content with recent related links.",
+      "exclusion_reason": "Ambiguous page dating for the target article; opened article content did not show a clear July 15 publication/update date for the article itself.",
+      "routing_note": "Governance gateway ideas are relevant, but use a page with unambiguous date metadata in a future run."
+    },
+    {
+      "title": "AI Learning Lab ADK Master Class events",
+      "source_url": "https://ailearninglab.live/en/",
+      "observed_date_signal": "Event listing included July 15, July 16, and July 17, 2026 sessions.",
+      "exclusion_reason": "Event schedule date, not a qualifying publication or update date; also broad ADK training rather than a practice update.",
+      "routing_note": "ADK entity and training background is upstream-owned unless a local practice artifact is identified."
+    },
+    {
+      "title": "Software Improvement Group event listing: Why AI still needs strong architecture",
+      "source_url": "https://www.softwareimprovementgroup.com/events/",
+      "observed_date_signal": "Event listing date: July 15, 2026.",
+      "exclusion_reason": "Event listing date is boundary-only and lacks enough factual practice detail to synthesize.",
+      "routing_note": "Architecture governance theme is relevant, but this source does not provide enough dated content for a collector finding."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector. Leave this file under raw until a raw ingest workflow processes it.",
+    "During ingest, preserve upstream-owned entity routing and synthesize only the local AI-assisted development practice implications.",
+    "Likely local synthesis themes: agent skill decision history; MCP capability scoping and interceptors; AI code-review capacity and cost limits; context selection around tests and runtime feedback; isolated execution environments; context graph governance; explicit act-observe-decide-stop loops; durable instruction files as an attack surface; coding-agent spend caps, loop termination, and data-residency controls."
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were used.",
+    "No private, proprietary, sensitive, PII, company-internal, or local non-public content was sent to external services.",
+    "Local repository files were read only for wiki workflow, federation, prior artifact schema, claim state, and validation context."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for artifact"
+  },
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false
+}
