@@ -1,0 +1,448 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-17T00:31:57Z",
+  "run_timestamp_local": "2026-07-16T20:31:57-0400",
+  "cutoff_window": {
+    "start": "2026-07-15T00:31:57Z",
+    "end": "2026-07-17T00:31:57Z",
+    "rule": "Include only public sources with visible publication or update dates inside the two-day window. Exclude missing, ambiguous, future-dated, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_policy": {
+    "local_scope": "AI-assisted development practices, workflow design, verification, governance, source handling, adoption, and operating-model implications.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem coverage for companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "routing_note": "Items below keep broad entity updates as upstream-owned and capture only local practice implications."
+  },
+  "search_queries": [
+    "AI coding agent governance approvals audit logs July 15 2026",
+    "AI-assisted software development evals code review July 15 2026",
+    "MCP security governance least privilege coding agents July 16 2026",
+    "context engineering coding agents durable instructions July 16 2026",
+    "site:github.blog/changelog copilot July 16 2026 AI code review",
+    "site:docs.github.com/en/copilot July 16 2026 MCP coding agent",
+    "site:github.blog/changelog July 15 2026 Copilot coding agent",
+    "site:github.blog/changelog July 15 2026 MCP",
+    "site:docs.anthropic.com/en/release-notes July 16 2026 Claude Code",
+    "site:openai.com/index July 16 2026 codex coding agent",
+    "\"July 16, 2026\" \"AI code review\"",
+    "\"July 16, 2026\" \"coding agents\"",
+    "\"July 15, 2026\" \"AI coding agents\" governance",
+    "\"July 15, 2026\" \"software engineering\" \"AI agents\" evals"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "openai-gpt-red-prompt-injection-red-teaming",
+      "source_url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "source_title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "publisher": "OpenAI",
+      "visible_date": "July 15, 2026",
+      "date_basis": "Visible publication date on source page.",
+      "summary": "OpenAI described GPT-Red, an internal automated red-teaming model trained through self-play to generate prompt-injection attacks and improve robustness of production models. The post highlights third-party data surfaces such as browsers, connected apps, local files, tool outputs, and code repositories as realistic injection locations.",
+      "why_it_matters": "Local agent workflows should treat prompt-injection testing as a repeatable harness capability, not only a manual security exercise. Coding-agent evals should include tool-output, repository, browser, email, and local-file injection scenarios, with human review retained for attack classes automated red-teamers may miss.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "GPT-Red",
+        "GPT-5.6",
+        "GPT-5.6 Sol",
+        "Codex CLI",
+        "prompt injection"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-Red",
+        "GPT-5.6",
+        "GPT-5.6 Sol",
+        "Codex CLI"
+      ],
+      "local_practice_implication": "Add or update downstream guidance around adversarial prompt-injection harnesses, indirect-injection test cases, and prompt-injection evidence required before trusting agent tool use."
+    },
+    {
+      "id": "github-secret-scanning-public-monitoring",
+      "source_url": "https://github.blog/changelog/2026-07-15-improvements-to-secret-scanning-and-public-monitoring/",
+      "source_title": "Improvements to secret scanning and public monitoring",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 15, 2026",
+      "date_basis": "Visible publication date on changelog page.",
+      "summary": "GitHub announced secret scanning improvements, including new detector support, push protection defaults for VolcEngine secrets, a `secret_category` webhook field, and public monitoring insight cards that break down leaks by attribution, member counts, and verified domains.",
+      "why_it_matters": "AI-assisted development workflows need secret-leak triage that can distinguish provider-specific and generic or AI-detected secrets, route webhook payloads correctly, and connect public exposure back to enterprise membership or domain attribution.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "Resend",
+        "APIclub",
+        "VolcEngine",
+        "secret scanning",
+        "push protection"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Resend",
+        "APIclub",
+        "VolcEngine"
+      ],
+      "local_practice_implication": "Keep local guidance focused on secret-handling workflow: alert categorization, webhook routing, public-monitoring exposure evidence, and package or agent outputs that may introduce credentials."
+    },
+    {
+      "id": "github-projects-advanced-search-pr-review-state",
+      "source_url": "https://github.blog/changelog/2026-07-16-advanced-search-for-projects-is-generally-available/",
+      "source_title": "Advanced search for Projects is generally available",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 16, 2026",
+      "date_basis": "URL slug and visible changelog placement show July 16, 2026; page content is a GitHub changelog post.",
+      "summary": "GitHub Projects views added advanced `AND` and `OR` search and a `reviews:` filter for pull request items backed by reviewer-state fields.",
+      "why_it_matters": "Agentic engineering boards can encode review state, queue hygiene, and agent-human handoff status in project filters rather than maintaining separate manual views. This is useful for source workflows that track AI-authored pull requests, review gates, and unresolved review ownership.",
+      "candidate_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Projects",
+        "pull requests",
+        "review state"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Projects"
+      ],
+      "local_practice_implication": "Consider adding source-workflow guidance for project filters that separate AI-generated PRs by review state, human owner, and deployment or merge readiness."
+    },
+    {
+      "id": "stepsecurity-harden-runner-third-party-runners",
+      "source_url": "https://www.stepsecurity.io/blog/runtime-security-for-third-party-github-actions-runners",
+      "source_title": "Runtime Security for Third-Party GitHub Actions Runners: Bitrise, Blacksmith, Depot, Namespace, and Warp",
+      "publisher": "StepSecurity",
+      "visible_date": "July 16, 2026",
+      "date_basis": "Visible publication date on source page.",
+      "summary": "StepSecurity described Harden-Runner support for third-party GitHub Actions runner providers and emphasized that runner changes do not change the supply-chain threat model for jobs that install dependencies and hold deployment or signing secrets.",
+      "why_it_matters": "Coding-agent and CI harness guidance should treat third-party runners as equivalent-risk execution surfaces. Runtime monitoring, step attribution, egress policy, and dashboard evidence should follow the workload across hosted and third-party runner providers.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "GitHub Actions",
+        "Bitrise",
+        "Blacksmith",
+        "Depot",
+        "Namespace",
+        "Warp Build"
+      ],
+      "upstream_owned_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "GitHub Actions",
+        "Bitrise",
+        "Blacksmith",
+        "Depot",
+        "Namespace",
+        "Warp Build"
+      ],
+      "local_practice_implication": "Update local practice only if needed around runner-neutral evidence: every agent-run CI job should have event attribution, outbound-network visibility, and policy controls regardless of runner provider."
+    },
+    {
+      "id": "stepsecurity-harden-runner-block-mode-macos-windows",
+      "source_url": "https://www.stepsecurity.io/blog/harden-runner-block-mode-now-available-for-macos-and-windows-github-hosted-runners",
+      "source_title": "Harden-Runner Block Mode Now Available for macOS and Windows GitHub-Hosted Runners",
+      "publisher": "StepSecurity",
+      "visible_date": "July 15, 2026",
+      "date_basis": "Visible publication date on source page.",
+      "summary": "StepSecurity announced Harden-Runner v2.20.0 block-mode support for macOS and Windows GitHub-hosted runners, moving those environments from outbound-traffic visibility to egress enforcement.",
+      "why_it_matters": "AI-assisted package installation and generated build scripts can run on macOS and Windows jobs that hold signing certificates, provisioning profiles, and API keys. Agent-governed CI needs OS-neutral egress policy, not Linux-only enforcement.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "GitHub Actions",
+        "macOS",
+        "Windows"
+      ],
+      "upstream_owned_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Agent workflows that let tools install dependencies or run generated scripts should include egress-baseline review and block-mode promotion steps for every runner OS used in the delivery path."
+    },
+    {
+      "id": "gradient-coding-agents-stack-verification",
+      "source_url": "https://www.gradient.com/blog/posts/coding-agents-2/",
+      "source_title": "Coding Agents 2.0: Interface, Inference, and Verification",
+      "publisher": "Gradient Ventures",
+      "visible_date": "July 16, 2026",
+      "date_basis": "Visible publication date on source page.",
+      "summary": "Gradient published a coding-agent stack map that separates interface, inference, orchestration, fleets, open coding agents, and verification layers. The post frames coding fleets as parallel agent execution where human attention becomes the scarce resource.",
+      "why_it_matters": "The local wiki can use this as a practice signal for separating agent orchestration from verification capacity. Multi-agent fan-out should be paired with review budgets, verification queues, and explicit acceptance gates rather than only more agent parallelism.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Gradient Ventures",
+        "coding agents",
+        "coding fleets",
+        "verification"
+      ],
+      "upstream_owned_entities": [
+        "Gradient Ventures"
+      ],
+      "local_practice_implication": "Potential ingest target is multi-agent coordination and verification-tax guidance: every fleet pattern needs owner assignment, merge conflict control, review capacity, and stop conditions."
+    },
+    {
+      "id": "atlassian-jira-agentic-engineering-workflows",
+      "source_url": "https://devops.com/atlassian-extends-ai-reach-of-jira-into-agentic-engineering-workflows/",
+      "source_title": "Atlassian Extends AI Reach of Jira Into Agentic Engineering Workflows",
+      "publisher": "DevOps.com",
+      "visible_date": "July 15, 2026",
+      "date_basis": "Visible publication date on article page.",
+      "summary": "DevOps.com reported that Atlassian is positioning Jira as a control surface for assigning, tracking, reviewing, and governing AI coding-agent work, including connections to Claude Code, Cursor, GitHub Copilot, and Codex.",
+      "why_it_matters": "This is upstream-owned product news, but the local practice implication is workflow-state governance: issue trackers can become agent-control planes only if tickets carry acceptance criteria, review ownership, audit evidence, and human approval boundaries.",
+      "candidate_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex"
+      ],
+      "local_practice_implication": "Route broad product coverage upstream; retain local notes around issue-to-agent handoff contracts, PR review state, governance fields, and auditability of agent-generated work."
+    },
+    {
+      "id": "pervaziv-cortex-private-secure-ai-assisted-development",
+      "source_url": "https://pervaziv.com/news-pervaziv-ai-unveils-ai-model-ensemble-in-cortex-5-2-for-secure-private-ai-assisted-software-development/",
+      "source_title": "Pervaziv AI Unveils AI Model Ensemble in Cortex 5.2 for Secure, Private AI-Assisted Software Development",
+      "publisher": "Pervaziv AI",
+      "visible_date": "July 16, 2026",
+      "date_basis": "Visible publication date on press release page.",
+      "summary": "Pervaziv AI announced Cortex 5.2 and a model ensemble for private AI-assisted software development, describing layered on-device privacy, prompt-injection defense, security analysis, safety-aware decisions, and coding assistance.",
+      "why_it_matters": "The product and vendor are upstream-owned, but the local practice signal is that private coding-agent deployments increasingly bundle privacy locality, security review, prompt-injection defense, and model specialization as one operating boundary.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Pervaziv AI",
+        "Cortex 5.2",
+        "Cortex AI Model Ensemble",
+        "AI code review",
+        "DevSecOps"
+      ],
+      "upstream_owned_entities": [
+        "Pervaziv AI",
+        "Cortex 5.2",
+        "Cortex AI Model Ensemble"
+      ],
+      "local_practice_implication": "Keep the local note at the pattern level: private agent harnesses should document data locality, specialized model routing, prompt-injection controls, and security-review evidence."
+    },
+    {
+      "id": "presidio-iso-42001-ai-governance-certification",
+      "source_url": "https://futurumgroup.com/insights/how-presidios-isoiec-42001-certification-sets-a-new-standard-in-ai-governance/",
+      "source_title": "How Presidio's ISO/IEC 42001 Certification Sets a New Standard in AI Governance",
+      "publisher": "Futurum Group",
+      "visible_date": "July 16, 2026",
+      "date_basis": "Visible publication date on analysis page; source says Presidio announced certification on July 15, 2026.",
+      "summary": "Futurum reported Presidio's ISO/IEC 42001 certification and framed AI management-system certification as a procurement trust signal for enterprise AI services.",
+      "why_it_matters": "For AI-assisted development adoption, partner or platform selection may need evidence beyond feature lists: documented AI management systems, governance controls, compliance proof, and auditable operating practices can become vendor-selection criteria.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Presidio",
+        "ISO/IEC 42001",
+        "Futurum Group",
+        "AI management system"
+      ],
+      "upstream_owned_entities": [
+        "Presidio",
+        "ISO/IEC 42001",
+        "Futurum Group"
+      ],
+      "local_practice_implication": "Potential ingest belongs under adoption and governance: procurement checklists for AI-assisted development vendors should ask for verifiable AI governance credentials and operating evidence."
+    },
+    {
+      "id": "ai-daily-lean-agent-scope-estimation",
+      "source_url": "https://www.jinhyoungkim.com/ai-daily-july-15-2026/",
+      "source_title": "AI Daily - July 15, 2026",
+      "publisher": "Notes by Jin",
+      "visible_date": "15 Jul 2026",
+      "date_basis": "Visible publication date on source page.",
+      "summary": "The daily digest summarized a new preprint about agents estimating whether a task is simple before acting, arguing that over-reading context on trivial tasks can waste tokens and compute. The page explicitly warns that its summaries are AI-generated and should be verified against originals.",
+      "why_it_matters": "This is a weak secondary pointer, but it matches local context-selection practice: agents should classify task scope before broad repository reading and should report when evidence comes from a simulator or secondary summary.",
+      "candidate_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Notes by Jin",
+        "arXiv",
+        "task scope estimation",
+        "context selection"
+      ],
+      "upstream_owned_entities": [
+        "Notes by Jin",
+        "arXiv"
+      ],
+      "local_practice_implication": "Follow-up should verify the linked preprint before synthesis; if it qualifies, map it to context-selection and agent-loop cost controls rather than broad model coverage."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-07-14-code-scanning-shows-ai-security-detections-on-pull-requests/",
+      "source_title": "Code scanning shows AI security detections on pull requests",
+      "visible_date": "July 14, 2026",
+      "reason": "Boundary-only visible date without publication time. The run cutoff starts on July 15, 2026 UTC; the date-only source may be outside the two-day window and is therefore excluded."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+      "source_title": "Security reviews now available in the GitHub Copilot app",
+      "visible_date": "July 14, 2026",
+      "reason": "Boundary-only visible date without publication time. Excluded under the strict date rule even though it has strong local practice relevance."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+      "source_title": "GitHub Copilot in Visual Studio - June update",
+      "visible_date": "July 14, 2026",
+      "reason": "Boundary-only visible date before the strict UTC cutoff and not opened as a qualifying source."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
+      "source_title": "Dependabot version updates introduce default package cooldown",
+      "visible_date": "July 14, 2026",
+      "reason": "Boundary-only visible date before the strict UTC cutoff; package cooldown relevance recorded as an exclusion rather than a finding."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "source_title": "Why AI coding agents keep stalling before production and the governance controls that fix it",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Outside the two-day window based on visible relative date."
+    },
+    {
+      "source_url": "https://www.stepsecurity.io/blog/securing-vibe-coding-and-ai-coding-agents-an-end-to-end-approach-with-stepsecurity",
+      "source_title": "Securing Vibe Coding and AI Coding Agents: An End-to-End Approach with StepSecurity",
+      "visible_date": "February 23, 2026",
+      "reason": "Main article publication date is outside the two-day window. Two linked StepSecurity posts dated July 15 and July 16 were captured separately."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "source_title": "Context Engineering: A Practical Guide for AI Agents (2026)",
+      "visible_date": "Published last month in search result",
+      "reason": "Outside the two-day window."
+    },
+    {
+      "source_url": "https://packmind.com/context-engineering-ai-coding/context-engineering-best-practices/",
+      "source_title": "Context Engineering Best Practices for AI-Powered Dev Teams (2026)",
+      "visible_date": "No qualifying visible publication date in search result",
+      "reason": "Missing or ambiguous visible date; excluded despite topical relevance."
+    },
+    {
+      "source_url": "https://openai.com/index/cars24/",
+      "source_title": "How Cars24 scales conversations and builds faster with OpenAI",
+      "visible_date": "July 16, 2026",
+      "reason": "Qualifies by date but is primarily an enterprise customer story and broad product/adoption coverage; local practice implication was too indirect for this collector."
+    },
+    {
+      "source_url": "https://buttondown.com/soumyo/archive/ai-builders-digest-thursday-july-16-2026/",
+      "source_title": "AI Builders Digest - Thursday, July 16, 2026",
+      "visible_date": "Thursday, July 16, 2026",
+      "reason": "Secondary digest without enough source-detail specificity for a durable local practice finding; useful only as a pointer."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 10,
+    "excluded_candidate_count": 10,
+    "source_url_count": 20
+  },
+  "follow_up_notes": [
+    "Verify the arXiv paper linked from Notes by Jin before using the lean agent scope-estimation item in docs/wiki synthesis.",
+    "If later source times become available for July 14 GitHub changelog posts, reconsider the AI security detection and Copilot app security review items because they are highly relevant to code-review and security-gate practice.",
+    "Keep entity/product background in the upstream AI wiki; downstream ingest should focus on practice-level implications such as review-state workflow, egress enforcement, prompt-injection testing, and vendor governance evidence."
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Collector used public web sources only.",
+    "No private repository content, proprietary company information, PII, or sensitive local data was sent to external services.",
+    "Local wiki files were inspected only for public routing and federation context."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for the artifact"
+  },
+  "blockers": []
+}
