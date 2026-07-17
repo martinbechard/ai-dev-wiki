@@ -1,0 +1,664 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-07-17T01:02:20Z",
+    "policy": "Only sources published or visibly updated within the last seven days qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start_utc": "2026-07-10T01:02:20Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_title": "Code Review Agent Benchmark",
+      "reason": "last revised 2026-04-07, outside seven-day window",
+      "source_url": "https://arxiv.org/abs/2603.23448"
+    },
+    {
+      "candidate_title": "LLM as a Judge prompts: templates, rubrics, and best practices",
+      "reason": "search result appeared recent but page did not expose a stable visible publication date",
+      "source_url": "https://galtea.ai/blog/llm-as-a-judge-prompts-templates-rubrics-and-best-practices"
+    },
+    {
+      "candidate_title": "Mastering AI Agent Governance: Your 2026 Roadmap",
+      "reason": "date-only 2026-07-10 falls on the cutoff date without visible time; treated as boundary-only",
+      "source_url": "https://withstoa.com/blog/ai-agent-governance"
+    },
+    {
+      "candidate_title": "LLM-as-Judge Evaluation: Rubrics, Bias, and Calibration",
+      "reason": "date-only 2026-07-10 falls on the cutoff date without visible time; treated as boundary-only",
+      "source_url": "https://sincllm.com/blog/llm-as-judge-evaluation"
+    },
+    {
+      "candidate_title": "LLM Evaluation Rubric: A Production Scoring Template",
+      "reason": "no visible publication date found on opened page",
+      "source_url": "https://prodinit.com/blog/llm-evaluation-rubric"
+    },
+    {
+      "candidate_title": "Automated Agent-to-Agent Ontology Reconciliation for Cognitive Network Management Systems",
+      "reason": "last updated 2026-07-06, outside seven-day window",
+      "source_url": "https://datatracker.ietf.org/doc/draft-janz-nmrg-ontology-reconciliation/"
+    },
+    {
+      "candidate_title": "Governed Self-Service Analytics Is Becoming the Real Standard for Modern BI",
+      "reason": "published 2026-07-07, outside seven-day window",
+      "source_url": "https://datahubanalytics.com/governed-self-service-analytics-is-becoming-the-real-standard-for-modern-bi/"
+    },
+    {
+      "candidate_title": "aiAuthZ: Off-Host, Identity-Bound Authorization for AI Agents",
+      "reason": "dated 2026-07-06 18:00:49 UTC, outside seven-day window despite topic relevance",
+      "source_url": "https://arxiv.org/abs/2607.05518"
+    }
+  ],
+  "federation_note": "Broad ecosystem entity background belongs upstream in the AI wiki. This artifact preserves only downstream local-practice implications for selected ai-dev-wiki leaves.",
+  "follow_up_notes": [
+    "Ingest should route broad vendor, benchmark, model, framework, and product background upstream; local synthesis should focus on practice implications for eval gates, context routing, delegated authority, governance infrastructure, and AI-assisted security repair gates.",
+    "No docs/wiki pages were updated by this watch run."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "qualifying_update_ids": [
+        "faros-model-routing-code-eval-2026-07-14",
+        "martian-code-review-benchmark-repo-2026-07-15"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.faros.ai/blog/ai-model-routing-evaluation-framework",
+        "https://github.com/withmartian/code-review-benchmark"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "qualifying_update_ids": [
+        "bug0-llm-judge-2026-07-14",
+        "qaskills-grader-comparison-2026-07-14",
+        "martian-code-review-benchmark-repo-2026-07-15"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://bug0.com/knowledge-base/llm-as-a-judge",
+        "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+        "https://github.com/withmartian/code-review-benchmark"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "qualifying_update_ids": [
+        "arize-ai-productivity-outcomes-2026-07-14",
+        "bug0-llm-judge-2026-07-14",
+        "qaskills-grader-comparison-2026-07-14",
+        "appsilon-agent-eval-pipeline-2026-07-14",
+        "faros-model-routing-code-eval-2026-07-14"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+        "https://bug0.com/knowledge-base/llm-as-a-judge",
+        "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+        "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent",
+        "https://www.faros.ai/blog/ai-model-routing-evaluation-framework"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "qualifying_update_ids": [
+        "arize-ai-productivity-outcomes-2026-07-14",
+        "qaskills-grader-comparison-2026-07-14",
+        "appsilon-agent-eval-pipeline-2026-07-14"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+        "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+        "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window qualifying public update found in this batch.",
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "qualifying_update_ids": [],
+      "result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+        "https://arxiv.org/abs/2603.23448",
+        "https://arxiv.org/abs/2607.05518",
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+        "https://bug0.com/knowledge-base/llm-as-a-judge",
+        "https://datahubanalytics.com/governed-self-service-analytics-is-becoming-the-real-standard-for-modern-bi/",
+        "https://datatracker.ietf.org/doc/draft-janz-nmrg-ontology-reconciliation/",
+        "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/",
+        "https://galtea.ai/blog/llm-as-a-judge-prompts-templates-rubrics-and-best-practices",
+        "https://github.com/withmartian/code-review-benchmark",
+        "https://prodinit.com/blog/llm-evaluation-rubric",
+        "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+        "https://sincllm.com/blog/llm-as-judge-evaluation",
+        "https://withstoa.com/blog/ai-agent-governance",
+        "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent",
+        "https://www.datarobot.com/blog/ai-agent-governance-at-scale-agent-workforce/",
+        "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+        "https://www.datarobot.com/blog/what-a-first-class-agent-identity-actually-is-and-whether-it-is-just-workload-identity/",
+        "https://www.faros.ai/blog/ai-model-routing-evaluation-framework",
+        "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window qualifying public update found in this batch.",
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "qualifying_update_ids": [],
+      "result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+        "https://arxiv.org/abs/2603.23448",
+        "https://arxiv.org/abs/2607.05518",
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+        "https://bug0.com/knowledge-base/llm-as-a-judge",
+        "https://datahubanalytics.com/governed-self-service-analytics-is-becoming-the-real-standard-for-modern-bi/",
+        "https://datatracker.ietf.org/doc/draft-janz-nmrg-ontology-reconciliation/",
+        "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/",
+        "https://galtea.ai/blog/llm-as-a-judge-prompts-templates-rubrics-and-best-practices",
+        "https://github.com/withmartian/code-review-benchmark",
+        "https://prodinit.com/blog/llm-evaluation-rubric",
+        "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+        "https://sincllm.com/blog/llm-as-judge-evaluation",
+        "https://withstoa.com/blog/ai-agent-governance",
+        "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent",
+        "https://www.datarobot.com/blog/ai-agent-governance-at-scale-agent-workforce/",
+        "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+        "https://www.datarobot.com/blog/what-a-first-class-agent-identity-actually-is-and-whether-it-is-just-workload-identity/",
+        "https://www.faros.ai/blog/ai-model-routing-evaluation-framework",
+        "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "qualifying_update_ids": [
+        "atlan-context-engineering-techniques-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "qualifying_update_ids": [
+        "datarobot-delegation-chains-2026-07-16",
+        "datarobot-agent-governance-scale-2026-07-15",
+        "futran-agent-identity-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+        "https://www.datarobot.com/blog/ai-agent-governance-at-scale-agent-workforce/",
+        "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualifying_update_ids": [
+        "datarobot-delegation-chains-2026-07-16",
+        "datarobot-first-class-agent-identity-2026-07-14",
+        "futran-agent-identity-2026-07-13"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+        "https://www.datarobot.com/blog/what-a-first-class-agent-identity-actually-is-and-whether-it-is-just-workload-identity/",
+        "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad entity background upstream.",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualifying_update_ids": [
+        "wired-ai-bug-hunting-linux-root-2026-07-11"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/"
+      ]
+    }
+  ],
+  "named_entities": [
+    "Appsilon",
+    "Arize",
+    "Atlan",
+    "Augment",
+    "Bug0",
+    "CVE-2026-43499",
+    "Claude",
+    "CodeRabbit",
+    "Codex",
+    "Cursor",
+    "DataRobot",
+    "Faros AI",
+    "Futran Solutions",
+    "Gemini",
+    "GhostLock",
+    "GitHub",
+    "GitHub Copilot",
+    "Graphite",
+    "Greptile",
+    "Linux",
+    "Martian",
+    "Model Context Protocol",
+    "Nebula Security",
+    "Propel",
+    "QASkills.sh",
+    "Qodo",
+    "SWE-bench",
+    "Ubuntu",
+    "VEGA",
+    "WIRED",
+    "kernelCTF"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "DataRobot frames multi-hop agent work as a delegation-chain problem: systems must preserve both the original requester and the actor making each specific downstream call to authorize and explain actions.",
+      "id": "datarobot-delegation-chains-2026-07-16",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "DataRobot"
+      ],
+      "published_or_updated_at": "2026-07-16",
+      "source_url": "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+      "upstream_owned_entities": [
+        "DataRobot"
+      ],
+      "visible_date_evidence": "Page byline shows July 16, 2026.",
+      "why_it_matters_for_leaf": "Supports local guidance that delegated agent workflows need identity propagation, authority reduction, and auditability rather than copied credentials or prompt-only policy."
+    },
+    {
+      "factual_summary": "DataRobot argues that governing hundreds of agents becomes an infrastructure problem requiring centralized identity, reusable policy, cross-environment enforcement, and visibility into prompts, tools, MCP servers, data sources, permissions, and runtime behavior.",
+      "id": "datarobot-agent-governance-scale-2026-07-15",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "DataRobot",
+        "Model Context Protocol"
+      ],
+      "published_or_updated_at": "2026-07-15",
+      "source_url": "https://www.datarobot.com/blog/ai-agent-governance-at-scale-agent-workforce/",
+      "upstream_owned_entities": [
+        "DataRobot",
+        "Model Context Protocol"
+      ],
+      "visible_date_evidence": "Page byline shows July 15, 2026.",
+      "why_it_matters_for_leaf": "Reinforces local governance-infrastructure patterns that scale beyond manual approvals and should watch agent sprawl as an operating risk."
+    },
+    {
+      "factual_summary": "DataRobot defines first-class agent identity around a distinct principal, scoped permissions, a clear owner, and an independent kill switch; it distinguishes this from borrowed human credentials and shared service accounts.",
+      "id": "datarobot-first-class-agent-identity-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "named_entities": [
+        "DataRobot"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://www.datarobot.com/blog/what-a-first-class-agent-identity-actually-is-and-whether-it-is-just-workload-identity/",
+      "upstream_owned_entities": [
+        "DataRobot"
+      ],
+      "visible_date_evidence": "Page byline shows July 14, 2026.",
+      "why_it_matters_for_leaf": "Adds current public support for treating production agents as separately attributable actors with revocation paths and owners."
+    },
+    {
+      "factual_summary": "Futran describes enterprise AI agent identity as the layer that records which digital actor is making a request, who approved it, and what business purpose it serves; it separates model behavior from policy enforcement.",
+      "id": "futran-agent-identity-2026-07-13",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "Futran Solutions"
+      ],
+      "published_or_updated_at": "2026-07-13",
+      "source_url": "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/",
+      "upstream_owned_entities": [
+        "Futran Solutions"
+      ],
+      "visible_date_evidence": "Page byline shows July 13, 2026.",
+      "why_it_matters_for_leaf": "Supports keeping identity, authorization, and policy enforcement outside the model when local agents can act on business data or tools."
+    },
+    {
+      "factual_summary": "Atlan groups agent context techniques into write, select, compress, and isolate, and emphasizes diagnosing the symptom before choosing the technique; it also argues that context techniques do not fix incorrect source context.",
+      "id": "atlan-context-engineering-techniques-2026-07-13",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Atlan"
+      ],
+      "published_or_updated_at": "2026-07-13",
+      "source_url": "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+      "upstream_owned_entities": [
+        "Atlan"
+      ],
+      "visible_date_evidence": "Page shows Updated:07/13/2026 and Published:07/13/2026.",
+      "why_it_matters_for_leaf": "Maps directly to local context selection, compaction, router, knowledge-layer, and source-of-truth boundaries for agent workflows."
+    },
+    {
+      "factual_summary": "Arize recommends measuring AI productivity by connecting traces and quality signals to downstream outcomes such as merged pull requests, resolved tickets, customer conversions, or avoided support effort, rather than stopping at token or prompt activity metrics.",
+      "id": "arize-ai-productivity-outcomes-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "named_entities": [
+        "Arize"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+      "upstream_owned_entities": [
+        "Arize"
+      ],
+      "visible_date_evidence": "Page heading shows Published July 14, 2026.",
+      "why_it_matters_for_leaf": "Useful for representative workflow calibration and product judgment gates because local evals should connect agent activity to external outcomes and durable system records."
+    },
+    {
+      "factual_summary": "Bug0 explains LLM-as-judge usage for AI testing and notes that judge verdicts should be calibrated against human labels and designed around position, verbosity, and self-preference biases.",
+      "id": "bug0-llm-judge-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "named_entities": [
+        "Bug0",
+        "Claude",
+        "Gemini"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://bug0.com/knowledge-base/llm-as-a-judge",
+      "upstream_owned_entities": [
+        "Bug0",
+        "Anthropic Claude",
+        "Google Gemini"
+      ],
+      "visible_date_evidence": "Page shows Created July 14, 2026.",
+      "why_it_matters_for_leaf": "Supports local judge/grader boundary guidance that LLM judges are useful but need calibration, multi-model or human review, and bias controls before gating releases."
+    },
+    {
+      "factual_summary": "QASkills separates deterministic graders, LLM judges, and human review by evidence type: code and exact state for deterministic checks, bounded semantic criteria for calibrated judges, and consequential ambiguity or high-risk decisions for humans.",
+      "id": "qaskills-grader-comparison-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "named_entities": [
+        "QASkills.sh"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+      "upstream_owned_entities": [
+        "QASkills.sh"
+      ],
+      "visible_date_evidence": "Page version scope says current to July 14, 2026.",
+      "why_it_matters_for_leaf": "Aligns with local grader-boundary guidance that automated evals should route checks to the cheapest evidence source that can actually support the decision."
+    },
+    {
+      "factual_summary": "Appsilon distinguishes tracing from evaluation and recommends starting with a small first evaluation workflow that can compare versions before broad parameter sweeps.",
+      "id": "appsilon-agent-eval-pipeline-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "named_entities": [
+        "Appsilon"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent",
+      "upstream_owned_entities": [
+        "Appsilon"
+      ],
+      "visible_date_evidence": "Page byline shows July 14, 2026.",
+      "why_it_matters_for_leaf": "Reinforces local workflow calibration: build a repeatable eval loop first, then expand coverage and variants once the runner and evidence path exist."
+    },
+    {
+      "factual_summary": "Faros describes evaluating coding model routes with rubric-based scoring, blinded LLM judging, and validation against real SWE-bench data when test execution is unavailable or too coarse.",
+      "id": "faros-model-routing-code-eval-2026-07-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "named_entities": [
+        "Faros AI",
+        "SWE-bench"
+      ],
+      "published_or_updated_at": "2026-07-14",
+      "source_url": "https://www.faros.ai/blog/ai-model-routing-evaluation-framework",
+      "upstream_owned_entities": [
+        "Faros AI",
+        "SWE-bench"
+      ],
+      "visible_date_evidence": "Page byline area shows July 14, 2026.",
+      "why_it_matters_for_leaf": "Relevant to code-review eval rubrics and product judgment gates because it treats partial progress, unavailable test environments, and rubric specificity as first-class evaluation concerns."
+    },
+    {
+      "factual_summary": "The public repository describes an open code-review benchmark with offline human-verified golden comments and an online benchmark sampling fresh PRs to reduce training-data leakage; judge results are stored per model.",
+      "id": "martian-code-review-benchmark-repo-2026-07-15",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "named_entities": [
+        "Martian",
+        "GitHub",
+        "CodeRabbit",
+        "GitHub Copilot",
+        "Claude",
+        "Cursor",
+        "Augment",
+        "Codex",
+        "Gemini",
+        "Greptile",
+        "Graphite",
+        "Qodo",
+        "Propel"
+      ],
+      "published_or_updated_at": "2026-07-15T23:55:45Z",
+      "source_url": "https://github.com/withmartian/code-review-benchmark",
+      "upstream_owned_entities": [
+        "Martian",
+        "GitHub",
+        "CodeRabbit",
+        "GitHub Copilot",
+        "Anthropic Claude",
+        "Cursor",
+        "Augment",
+        "OpenAI Codex",
+        "Google Gemini",
+        "Greptile",
+        "Graphite",
+        "Qodo",
+        "Propel"
+      ],
+      "visible_date_evidence": "GitHub repository API showed updated_at 2026-07-15T23:55:45Z and pushed_at 2026-07-13T00:49:00Z.",
+      "why_it_matters_for_leaf": "Gives a concrete public benchmark pattern for code-review evals: combine fixed reproducible sets with fresh online samples and record judge-model variance."
+    },
+    {
+      "factual_summary": "WIRED reports that Nebula Security used its VEGA AI-driven bug-hunting tool to find GhostLock, a long-lived Linux kernel privilege-escalation issue, and notes uneven patch availability across distributions.",
+      "id": "wired-ai-bug-hunting-linux-root-2026-07-11",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "named_entities": [
+        "WIRED",
+        "Nebula Security",
+        "VEGA",
+        "GhostLock",
+        "CVE-2026-43499",
+        "Linux",
+        "kernelCTF",
+        "Ubuntu"
+      ],
+      "published_or_updated_at": "2026-07-11T06:30:00-04:00",
+      "source_url": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+      "upstream_owned_entities": [
+        "WIRED",
+        "Nebula Security",
+        "VEGA",
+        "GhostLock",
+        "Linux",
+        "Ubuntu"
+      ],
+      "visible_date_evidence": "Page byline shows Jul 11, 2026 6:30 AM.",
+      "why_it_matters_for_leaf": "Supports local AI-assisted security repair gates: AI-discovered vulnerabilities still require patch-status confirmation, exploit triage, and distro-specific verification rather than assuming a fix is available."
+    }
+  ],
+  "run_timestamp": "2026-07-16T21:02:20-04:00",
+  "run_timestamp_utc": "2026-07-17T01:02:20Z",
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://arize.com/blog/how-to-measure-ai-productivity-llm-cost-business-value/",
+    "https://arxiv.org/abs/2603.23448",
+    "https://arxiv.org/abs/2607.05518",
+    "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+    "https://bug0.com/knowledge-base/llm-as-a-judge",
+    "https://datahubanalytics.com/governed-self-service-analytics-is-becoming-the-real-standard-for-modern-bi/",
+    "https://datatracker.ietf.org/doc/draft-janz-nmrg-ontology-reconciliation/",
+    "https://futransolutions.com/blog/ai-agent-identity-in-2026-who-is-allowed-to-act-inside-your-enterprise/",
+    "https://galtea.ai/blog/llm-as-a-judge-prompts-templates-rubrics-and-best-practices",
+    "https://github.com/withmartian/code-review-benchmark",
+    "https://prodinit.com/blog/llm-evaluation-rubric",
+    "https://qaskills.sh/blog/deterministic-graders-vs-llm-judge-human-review-2026",
+    "https://sincllm.com/blog/llm-as-judge-evaluation",
+    "https://withstoa.com/blog/ai-agent-governance",
+    "https://www.appsilon.com/post/stop-vibe-checking-your-ai-agent",
+    "https://www.datarobot.com/blog/ai-agent-governance-at-scale-agent-workforce/",
+    "https://www.datarobot.com/blog/delegation-chains-the-confused-deputy-and-the-protocols-you-actually-deploy/",
+    "https://www.datarobot.com/blog/what-a-first-class-agent-identity-actually-is-and-whether-it-is-just-workload-identity/",
+    "https://www.faros.ai/blog/ai-model-routing-evaluation-framework",
+    "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/"
+  ],
+  "upstream_owned_entities": [
+    "Anthropic Claude",
+    "Appsilon",
+    "Arize",
+    "Atlan",
+    "Augment",
+    "Bug0",
+    "CodeRabbit",
+    "Cursor",
+    "DataRobot",
+    "Faros AI",
+    "Futran Solutions",
+    "GhostLock",
+    "GitHub",
+    "GitHub Copilot",
+    "Google Gemini",
+    "Graphite",
+    "Greptile",
+    "Linux",
+    "Martian",
+    "Model Context Protocol",
+    "Nebula Security",
+    "OpenAI Codex",
+    "Propel",
+    "QASkills.sh",
+    "Qodo",
+    "SWE-bench",
+    "Ubuntu",
+    "VEGA",
+    "WIRED"
+  ]
+}
