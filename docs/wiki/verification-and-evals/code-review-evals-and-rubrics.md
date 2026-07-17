@@ -31,6 +31,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add representative benchmark and enterprise-review signals. Review rubrics should include real codebase tasks, language-specific tasks, benchmark-contamination checks, repository-context requirements, false-positive controls, and whether a finding leads to a validated fix. Model or vendor claims are useful only when mapped to the local review job and calibrated against source-backed outcomes.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds model-routing and benchmark-repository signals for review evals. Rubrics should record whether routing decisions were based on language, repository risk, review depth, finding type, and validated-fix outcome, and should keep benchmark repository provenance separate from local acceptance evidence. Broad review-tool and benchmark entity coverage remains upstream-owned.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -54,6 +56,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Include compliance-fit checks for source location, audit evidence, and deployment model when the review tool is meant for regulated or proprietary code.
 - Prefer real-codebase and language-specific eval tasks over generic score claims when calibrating AI code review.
 - Track benchmark provenance, contamination risk, repository-context use, false positives, and validated-fix outcomes separately.
+- Record model-routing criteria, review depth, finding category, benchmark provenance, and validated-fix outcome as separate review-eval fields.
 
 ## Authoritative Sources
 
@@ -72,6 +75,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -106,3 +110,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-04 with recall-first tuning, filtered false-positive costs, and dependency-aware review cases.
 - Maintained on 2026-07-05 with architecture-context, workflow-integration, actionability, customization, latency, and compliance-fit dimensions.
 - Maintained on 2026-07-11 with real-codebase, language-specific, contamination-aware, and validated-fix review eval dimensions.
+- Maintained on 2026-07-16 with model-routing, review-depth, finding-category, benchmark-provenance, and validated-fix eval fields.

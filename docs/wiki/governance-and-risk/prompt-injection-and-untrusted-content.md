@@ -35,6 +35,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json) reinforces image-based prompt injection, public-issue injection, symlink approval confusion, and hallucinated repository paths as connected untrusted-source cases. The local boundary is the same across media: public text, repository metadata, image content, filesystem links, and generated URLs may inform investigation, but they cannot authorize secret reads, cross-workspace writes, package installs, public posting, or source fetching without independent policy evidence.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds automated prompt-injection red-team evidence. Automated adversarial generation is useful only when the harness tests realistic third-party surfaces such as browser pages, connected apps, local files, tool outputs, code repositories, tickets, and email-like content, and when human review remains responsible for attack classes the automated generator misses. Broad OpenAI and GPT-Red background stays upstream; locally, prompt-injection acceptance should require repeatable indirect-injection cases before trusting tool-using agents.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -62,6 +64,8 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - Require prompt-injection gates before public development agents can combine attacker-writable content, private context, dependency actions, and public output.
 - Treat symlinks, file paths, generated repository URLs, and image contents as untrusted evidence when they can change where an agent reads, writes, fetches, or reveals data.
 - Require independent source and path verification before an agent follows a generated URL, writes through a filesystem link, or acts on hidden image or binary instructions.
+- Test indirect prompt injection across repository, browser, file, tool-output, ticket, and connected-app surfaces before expanding agent tool authority.
+- Keep automated red-team findings tied to human triage, missed-attack review, and harness policy changes instead of treating generated attacks as complete coverage.
 
 ## Authoritative Sources
 
@@ -81,6 +85,7 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 
 ## Related Code
 
@@ -120,3 +125,4 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 - Maintained on 2026-07-11 with multimodal prompt-injection boundaries for images, binaries, generated assets, and secret isolation.
 - Maintained on 2026-07-12 with public development-agent prompt-injection gates for issue text, PR content, generated artifacts, runtime files, and public output.
 - Maintained on 2026-07-13 with image-injection, symlink, public-issue, and generated-repository path boundaries.
+- Maintained on 2026-07-16 with automated indirect prompt-injection red-team coverage for browser, tool-output, repository, file, and connected-app surfaces.

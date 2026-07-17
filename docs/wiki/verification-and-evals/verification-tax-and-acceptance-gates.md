@@ -23,6 +23,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces acceptance gates as trace and side-effect checks around whole coding-agent systems. Approval checks, sandbox evidence, token or cost signals, and trace assertions should appear before a workflow claims a generated change is review-ready.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) and [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) add fleet and grader-capacity signals. Coding-agent fleets, model-routed review, deterministic graders, LLM judges, and human review should be scheduled as one verification system; adding more agents should wait when review queues, benchmark calibration, or human attention are already the limiting resource.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -36,6 +38,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Treat validation capacity as the bottleneck for AI-assisted delivery and plan review, tests, maintainability checks, and regression ownership before increasing generation throughput.
 - Use cheap verifier triage to allocate scarce CI, sandbox, or reviewer attention, while keeping authoritative gates tied to the repository and risk surface.
 - Require trace assertions, side-effect safety, approval checks, and sandbox evidence when a coding-agent harness claims a change is ready for review.
+- Treat coding-agent fleet size, model-routed review, deterministic grading, LLM judging, and human attention as one verification-capacity budget.
 
 ## Authoritative Sources
 
@@ -49,6 +52,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -80,3 +85,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-07-07 with evidence-path gates for tool-use, localization, step-state, and runtime telemetry failures.
 - Maintained on 2026-07-11 with verification-gap guidance for validation capacity, maintainability review, and regression ownership.
 - Maintained on 2026-07-12 with staged verifier triage, trace assertions, side-effect safety, and sandbox evidence for coding-agent acceptance.
+- Maintained on 2026-07-16 with fleet, model-routed review, grader, judge, and human-attention capacity budgeting.

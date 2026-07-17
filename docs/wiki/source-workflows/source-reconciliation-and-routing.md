@@ -25,6 +25,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honeycomb, Cycode, Godot, model families, benchmarks, standards bodies, and workflow runtimes are upstream-owned broad entities when the wiki needs company, product, model, or framework background. Local pages keep the downstream practices: desktop-agent onboarding controls, spend governance, sandbox and runtime telemetry, repo-derived role design, merge-conflict coordination, step-level evals, generated-code accountability, and governed memory boundaries.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) reinforces product-versus-practice routing. OpenAI, GitHub, StepSecurity, Atlassian, Pervaziv, Presidio, Gradient, individual coding agents, runner providers, certification programs, and product releases remain upstream-owned as ecosystem entities. Local ingest keeps the practice implications: prompt-injection harnesses, secret alert routing, PR review-state filters, runner egress evidence, fleet verification capacity, issue-to-agent handoff contracts, private-agent data boundaries, and vendor-selection governance evidence.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -39,6 +41,7 @@ The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honey
 - Keep product, company, framework, standard, and model details upstream-owned when local sources only need their practice implications.
 - Attribute weak or snippet-only date evidence and avoid converting it into source-page certainty.
 - Route July 7 broad ecosystem updates upstream while keeping local practice updates anchored in workflow, governance, evaluation, telemetry, memory, and adoption leaves.
+- Route July 16 product, vendor, certification, and runner-provider updates upstream while retaining only local workflow, governance, verification, and adoption controls.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honey
 - [Just Bash clipping](../../../raw/processed/vercel-labsjust-bash Bash for Agents.md)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 
 ## Related Code
 
@@ -90,3 +94,4 @@ The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honey
 - Maintained on 2026-07-01 with knowledge-source migration semantics and FastMCP upstream routing.
 - Maintained on 2026-07-06 with broad-entity routing for July 6 products, tools, standards, and snippet-date evidence.
 - Maintained on 2026-07-07 with broad-entity routing for July 7 desktop-agent, telemetry, runtime, benchmark, memory, and contribution-policy sources.
+- Maintained on 2026-07-16 with broad-entity routing for product, vendor, runner-provider, certification, and coding-agent ecosystem updates.

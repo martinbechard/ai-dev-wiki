@@ -21,6 +21,8 @@ The [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-
 
 The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md) reinforces the step-versus-content scoring split. Deterministic graders should check exact tool calls, arguments, structures, and measurable output properties. LLM judges should score subjective process or content criteria only when the rubric, examples, and trace slice make the judgment auditable.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds current grader-comparison signals. Deterministic graders should own exact rules, schemas, and measurable properties, while LLM judges should be reserved for semantic quality or tradeoff judgments with calibrated rubrics and sampled human review. Human review remains the fallback when grader disagreement changes release, product, or security risk.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -35,6 +37,8 @@ The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Ha
 - Tie judge results to trace, retrieval, tool-call, latency, cost, and failure-reason evidence when the score affects release or monitoring decisions.
 - Review judge-provider access to traces before using an external or bring-your-own judge in sensitive workflows.
 - Decide whether the grader is scoring an agent step, an output artifact, a trace, or a thread before choosing deterministic assertions, human review, or an LLM judge.
+- Use deterministic graders for exactness, LLM judges for calibrated semantic judgment, and human review for consequential grader disagreement.
+- Keep grader disagreement, calibration examples, and human override reasons with the scored trace when the result affects release or security posture.
 
 ## Authoritative Sources
 
@@ -45,6 +49,7 @@ The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Ha
 - [Evals source](../../../raw/processed/You’ll Finally Understand AI Evals After Watching This.md)
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -73,3 +78,4 @@ The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Ha
 - Created on 2026-06-23 to hold deterministic grader, human review, and LLM-as-judge boundaries.
 - Maintained on 2026-06-26 with trace-linked judge results and judge-provider governance.
 - Maintained on 2026-06-30 with step, content, trace, and thread scoring boundaries for agent evals.
+- Maintained on 2026-07-16 with deterministic-grader, LLM-judge, and human-review disagreement boundaries.

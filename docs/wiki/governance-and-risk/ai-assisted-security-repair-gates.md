@@ -27,6 +27,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds active-loop security review signals. Slash-command and PR-surfaced AI detections can shorten the path from coding to security triage, but the repair gate still needs severity and confidence review, source localization, suggested-fix inspection, re-verification, and policy evidence that distinguishes AI detections from deterministic scanner findings.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds AI bug-hunting evidence. AI-assisted vulnerability discovery can surface old defects, but local repair gates should still require affected-version analysis, exploitability review, maintainer or owner confirmation, regression tests, fixed-version evidence, and disclosure handling before a generated patch or report is accepted.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -48,6 +50,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Confirm patch availability, fixed-package status, and source provenance before accepting an AI-discovered vulnerability as resolved.
 - Require human triage, source localization, suggested-fix review, and re-verification before accepting AI security detections as repaired.
 - Keep policy and cost evidence for AI-powered security detections separate from deterministic scanner enforcement.
+- Require affected-version, exploitability, maintainer-confirmation, regression, fixed-version, and disclosure evidence when AI-assisted bug hunting reports a vulnerability.
 
 ## Authoritative Sources
 
@@ -63,6 +66,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -95,3 +99,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-09 with untrusted-repository defensive review and fix-to-deployment rollback gates.
 - Maintained on 2026-07-11 with repeatable agentic-security tests, AI-discovered vulnerability provenance, and fixed-package verification gates.
 - Maintained on 2026-07-14 with active-loop AI security review, confidence, source localization, re-verification, and AI-detection policy evidence.
+- Maintained on 2026-07-16 with AI bug-hunting gates for affected versions, exploitability, owner confirmation, regression evidence, fixed versions, and disclosure handling.

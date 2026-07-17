@@ -25,6 +25,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds investment-governance and agent-management signals. Operating agreements should describe who funds shared agent capabilities, how usage and spend are made visible, how ROI is tied to outcomes, how agents escalate edge cases, and when delegated scope may expand. This keeps adoption from becoming either unmanaged individual tool use or centrally mandated usage without outcome evidence.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds vendor-governance and private-agent signals. Operating agreements should decide which AI management-system evidence, data-locality proof, prompt-injection controls, security-review evidence, and specialized model-routing boundaries a vendor or internal platform must show before teams route regulated or proprietary development work through it.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -49,6 +51,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Pair rollout targets with review-capacity planning, governance evidence, and practical literacy for agent-generated work.
 - Name shared-capability funding, usage visibility, spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules in the operating agreement.
 - Treat unmanaged individual tool use and centrally mandated usage as opposite failure modes when neither is tied to outcome evidence.
+- Define vendor or platform evidence requirements for AI management systems, data locality, prompt-injection defenses, security review, and model-routing boundaries before regulated workflows adopt private agents.
 
 ## Authoritative Sources
 
@@ -62,6 +65,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 
 ## Related Code
 
@@ -93,3 +97,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-11 with governance-first rollout, shadow-AI response, and developer skill shifts toward review, specification, eval, security, and orchestration.
 - Maintained on 2026-07-13 with experimentation-versus-mandate boundaries, sanctioned alternatives, prohibited-data categories, and review-capacity controls.
 - Maintained on 2026-07-14 with shared-capability funding, usage and spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules.
+- Maintained on 2026-07-16 with vendor-governance evidence, private-agent data locality, prompt-injection controls, security-review proof, and model-routing boundaries.

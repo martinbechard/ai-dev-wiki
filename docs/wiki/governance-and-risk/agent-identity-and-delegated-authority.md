@@ -27,6 +27,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds authority-card and task-based access-control signals. Production agents should have unique workload identity, scoped job authority, short-lived credentials, approval boundaries, quotas, per-tool audit, exception handling, and fast revocation instead of shared service accounts or prompt-only job descriptions.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds delegation-chain and first-class agent identity signals. Delegated authority should record who requested the task, which agent or workload identity acted, which downstream system trusted it, which authorization decision allowed the action, and which confused-deputy controls prevented one principal from spending another principal's authority.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -47,6 +49,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Prefer short-lived, task-scoped credentials for delegated agent work when broad standing access would hide which task authorized the action.
 - Require unique workload identity, scoped job authority, approval boundaries, quota limits, exception paths, and fast revocation for production agent actions.
 - Treat shared service accounts and prompt-only job scopes as ambient access until an external policy layer binds the task and credential scope.
+- Preserve delegation-chain evidence across requester, agent identity, tool server, downstream system, authorization decision, and confused-deputy controls.
 
 ## Authoritative Sources
 
@@ -60,6 +63,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -93,3 +97,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-07-10 with event-triggered delegation boundaries for issue agents, repository scope, and public output authority.
 - Maintained on 2026-07-10 with cross-enterprise MCP identity, task-scoped credentials, and runtime authorization evidence.
 - Maintained on 2026-07-12 with workload identity, authority cards, task-based access control, short-lived credentials, quotas, and fast revocation.
+- Maintained on 2026-07-16 with delegation-chain, first-class agent identity, authorization-decision, and confused-deputy evidence.

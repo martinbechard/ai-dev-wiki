@@ -25,6 +25,8 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add accountable-ownership and proof-loop signals. An agent may coordinate planning, implementation, tests, docs, and review, but the handoff should preserve the accountable human owner, approval boundaries, integration ordering for shared schema or platform work, and proof artifacts that let an independent verifier confirm the completion claim.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds issue-tracker and project-filter signals. When tickets, project boards, or issue trackers become the control plane for agentic engineering work, the handoff should carry acceptance criteria, assigned human owner, review-state filter, governance fields, audit evidence, and whether the agent-authored pull request is blocked, review-ready, or merge-ready. Broad Jira, GitHub Projects, and coding-agent product coverage remains upstream-owned.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -38,6 +40,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Include start, steering, review, organization, and intervention evidence when delegated work runs through a remote or mobile control surface.
 - Name the accountable owner separately from the coordinating or implementing agent when a task spans planning, tests, docs, or review.
 - Include specifications, evidence artifacts, independent verification results, and integration-order notes when the handoff claims delegated work is complete.
+- Preserve ticket, board, pull-request review state, human owner, audit fields, and approval status when project-management tools coordinate agentic engineering work.
 
 ## Authoritative Sources
 
@@ -52,6 +55,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 
 ## Related Code
 
@@ -84,3 +88,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-06-27 with handoffs as rehydration artifacts and remote-agent supervision evidence.
 - Maintained on 2026-06-28 with remote-control steering, review, organization, and intervention evidence.
 - Maintained on 2026-07-14 with accountable-owner boundaries, proof artifacts, independent verification, and integration-order handoff requirements.
+- Maintained on 2026-07-16 with issue-tracker control-plane, PR review-state, governance-field, and audit-evidence handoff requirements.

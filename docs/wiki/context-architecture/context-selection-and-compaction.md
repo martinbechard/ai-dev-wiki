@@ -29,6 +29,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds coding-agent context-loop and graph signals. Context selection should decide which instructions, repository knowledge, tool results, tests, runtime feedback, work items, decisions, dependencies, and customer or operational signals enter each generation step. The local rule is to retrieve current relevant context for the loop stage rather than throwing every available artifact into the model and hoping the agent finds the live constraint.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds context-engineering technique signals for compression, hierarchy, scoping, and state externalization. Context selection should classify task scope before broad retrieval, especially for simple tasks where repository-wide reading wastes tokens and can distract the model. Secondary summaries should be treated as pointers until the original source is verified.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -51,6 +53,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Keep stale durable memory out of the active working set unless a current disk or source check confirms it still applies.
 - Select context per loop step from instructions, repository knowledge, tool results, tests, runtime feedback, decisions, dependencies, and operational signals.
 - Prefer current relevant context graphs and freshness checks over bulk loading when agent work depends on work-management, code, documentation, or customer signals.
+- Classify task scope before repository-wide retrieval, and prefer narrow source checks when the task can be answered or edited from a small evidence set.
+- Treat secondary summaries of context-selection research as pointers until original papers or source artifacts are verified.
 
 ## Authoritative Sources
 
@@ -70,6 +74,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -104,3 +109,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-07 with structured-output selection, memory metadata filters, TTL behavior, update paths, and recoverable originals.
 - Maintained on 2026-07-12 with active-versus-durable context selection, freshness labels, origin labels, and stale-memory checks.
 - Maintained on 2026-07-15 with per-loop-step context selection, current-context graph signals, and freshness controls.
+- Maintained on 2026-07-16 with task-scope classification, narrow-retrieval controls, and secondary-summary verification boundaries.

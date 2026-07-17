@@ -31,6 +31,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds model-native multi-agent and programmatic-tool signals. When a model or desktop surface supports multiple agents, the coordinator still needs role boundaries, shared-state rules, cache and tool-budget accounting, and evidence reconciliation. Programmatic tool calling can reduce intermediate context volume, but it also creates software-owned filtering decisions that the coordinator must log or verify before accepting subagent results.
 
+The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds coding-fleet and verification-capacity signals. Parallel agent execution can increase candidate output faster than human or automated verification capacity, so the coordinator should assign owners, define merge-conflict controls, queue verification work, and stop fan-out when review capacity rather than generation is the bottleneck.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -50,6 +52,7 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Require source-system constraints, role responsibilities, verification gates, cost attribution, and escalation paths for legacy modernization subagent packages.
 - Preserve coordinator ownership for role boundaries, shared state, cache use, tool budgets, and evidence reconciliation even when multi-agent support is built into the model or desktop surface.
 - Log or verify programmatic filtering and intermediate-result decisions before accepting subagent outputs as complete evidence.
+- Pair multi-agent fan-out with owner assignment, merge-conflict control, verification queues, review-capacity limits, and explicit stop conditions.
 
 ## Authoritative Sources
 
@@ -64,6 +67,7 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 
 ## Related Code
 
@@ -100,3 +104,4 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Maintained on 2026-07-09 with multi-agent modernization role, gate, cost, and administration boundaries.
 - Maintained on 2026-07-13 with legacy-modernization subagent roles, source-system constraints, verification gates, cost attribution, and escalation paths.
 - Maintained on 2026-07-14 with built-in multi-agent role boundaries, shared-state rules, cache/tool budget accounting, and programmatic filtering verification.
+- Maintained on 2026-07-16 with coding-fleet verification capacity, owner assignment, merge-conflict control, and fan-out stop conditions.

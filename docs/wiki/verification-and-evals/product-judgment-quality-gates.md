@@ -17,6 +17,8 @@ The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-de
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds frontend verification as a product-judgment gate. AI-generated UI should be accepted against realistic user conditions: task completion, accessibility, keyboard interaction, focus behavior, state changes, loading, and error paths. Screenshots and successful renders are supporting evidence, not product acceptance.
 
+The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds productivity-outcome and agent-eval-pipeline signals. Product judgment should measure business or user outcomes, task completion, quality regressions, cost, latency, and reviewer burden together; agentic eval pipelines should connect those outcome measures to deterministic checks, LLM judges, human review, and trace evidence instead of accepting a single model score as product quality.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -28,6 +30,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Include runtime, compliance, audit, oversight, maintainability, reliability, and security evidence when AI-generated work carries product or regulatory risk.
 - Include realistic frontend task checks for accessibility, keyboard use, focus management, state transitions, loading behavior, and error recovery before accepting AI-generated UI.
 - Treat screenshots and rendered previews as partial evidence; they do not replace user-flow acceptance for interactive work.
+- Tie product acceptance to outcome, quality, cost, latency, and reviewer-burden evidence rather than only model score or generated artifact presence.
+- Connect agentic eval pipelines to traces, deterministic checks, LLM judges, and human product review before using them as release gates.
 
 ## Authoritative Sources
 
@@ -37,6 +41,7 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
+- [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 
 ## Related Code
 
@@ -65,3 +70,4 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.
 - Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.
 - Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.
+- Maintained on 2026-07-16 with productivity-outcome, reviewer-burden, trace-linked eval-pipeline, and multi-signal product quality gates.
