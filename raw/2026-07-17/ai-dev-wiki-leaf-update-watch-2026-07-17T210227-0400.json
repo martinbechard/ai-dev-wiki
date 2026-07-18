@@ -1,0 +1,818 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-17T21:02:27-04:00",
+  "cutoff_window": {
+    "start": "2026-07-10T21:02:27-04:00",
+    "end": "2026-07-17T21:02:27-04:00",
+    "rule": "Only include public sources with visible publication or update dates within the last 7 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "selected_leaf_count": 15,
+  "leaf_universe_count": 65,
+  "selection_method": "New or previously unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort. Excluded hubs, indexes, digests, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages.",
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, implementation, and adoption implications"
+  },
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+    "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+    "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+    "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+    "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+    "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+    "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+    "https://www.langchain.com/blog/agents-need-their-own-computer",
+    "https://arxiv.org/html/2607.13705v1",
+    "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+    "https://iternal.ai/ai-agent-evaluation",
+    "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+    "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+    "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+    "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+    "https://arxiv.org/abs/2607.06624"
+  ],
+  "source_url_checked_count": 16,
+  "qualifying_update_count": 10,
+  "excluded_candidate_count": 6,
+  "qualifying_updates": [
+    {
+      "title": "Infrastructure-level governance controls for production coding agents",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "source_type": "industry_perspective",
+      "visible_date": "2026-07-13",
+      "factual_summary": "TechRadar Pro published a Coder-authored perspective arguing that production coding-agent adoption is blocked less by model capability than by governance gaps. It recommends isolate, scope, and approve: ephemeral workspaces, narrow network and tool allowlists, scoped identities, real-time monitoring, human approval gates, and audit trails mapped to authenticated users.",
+      "why_it_matters_for_leaf": "Selected leaves already separate approval, ownership, governance, and verification responsibilities. This source gives fresh public support for treating isolation, scoped permissions, and approval as infrastructure controls rather than per-application prompt rules.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Coder",
+        "Rob Whiteley",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Coder",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Ingest should consider reinforcing production-agent gates as enforceable harness and infrastructure policy: isolated execution, explicit network/tool scope, authenticated identity, anomaly monitoring, and human approval for ship-impacting actions.",
+      "follow_up_notes": "Keep product and MCP background upstream; use this locally only as practice evidence for governance and approval leaves."
+    },
+    {
+      "title": "Agent governance must become a current permissions inventory",
+      "source_url": "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+      "source_type": "industry_perspective",
+      "visible_date": "2026-07-16",
+      "factual_summary": "TechRadar Pro published a Zapier-authored governance perspective that frames older AI policies as insufficient for autonomous agents. It asks whether employees can see what AI tools can access, whether access can be revoked quickly, whether policies define permitted actions, and whether system-level agent access is governed.",
+      "why_it_matters_for_leaf": "The selected adoption and governance leaves describe ownership rosters, operating agreements, and approval boundaries. This source adds a current public framing for permissions inventories, revocation paths, permitted-use definitions, and scoped agent identities.",
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Zapier",
+        "Brandon Sammut",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Zapier",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Ingest should consider adding that ownership rosters should be discoverable permission inventories with revocation paths and affirmative allowed-use definitions, not only responsibility lists.",
+      "follow_up_notes": "Route general MCP product context upstream; keep the local implication on operating controls."
+    },
+    {
+      "title": "Centralized governance layer positioned as response to agent sprawl",
+      "source_url": "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+      "source_type": "industry_perspective",
+      "visible_date": "2026-07-16",
+      "factual_summary": "TechRadar Pro published an OutSystems-authored perspective arguing that rapid enterprise agent growth creates AI sprawl when teams apply fragmented human-in-the-loop rules and siloed standards. It recommends a centralized, neutral governance layer with visibility into running agents, connections, dependencies, standards, and shared knowledge.",
+      "why_it_matters_for_leaf": "Selected leaves cover operating agreements, governance controls, and process autonomy. This source supports the local balance between team autonomy and central governance: teams can choose workflows, but shared rules, visibility, and dependency knowledge need a common control plane.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "OutSystems",
+        "Tiago Azevedo",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "OutSystems",
+        "Gartner"
+      ],
+      "local_practice_implication": "Ingest should consider clarifying that decentralized agentic pods still need centralized discovery, standards, and governance telemetry to avoid local-rule drift.",
+      "follow_up_notes": "Use as operating-model evidence; avoid duplicating broad vendor or analyst background."
+    },
+    {
+      "title": "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps",
+      "source_url": "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+      "source_type": "governance_news_summary",
+      "visible_date": "2026-07-15",
+      "factual_summary": "AI Governance Institute summarized a Cloud Security Alliance incident report as evidence of governance gaps in agent deployments, highlighting prompt injection, poisoned agent registries, unauthorized resource use, inter-agent cascade risk, weak identity binding, incomplete audit trails, and missing shadow-traffic detection.",
+      "why_it_matters_for_leaf": "Selected governance, approval, ownership, and durable-skill leaves all depend on the claim that agent autonomy needs enforceable identity, audit, and supply-chain controls. This source gives a current summary that ties those controls to concrete incident classes.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "AI Governance Institute",
+        "Cloud Security Alliance",
+        "IMDA Model AI Governance Framework for Agentic AI",
+        "OWASP Top 10 for Large Language Model Applications"
+      ],
+      "upstream_owned_entities": [
+        "Cloud Security Alliance",
+        "IMDA Model AI Governance Framework for Agentic AI",
+        "OWASP Top 10 for Large Language Model Applications"
+      ],
+      "local_practice_implication": "Ingest should consider extending skill/runbook and approval guidance with registry provenance, skill approval, tamper-evident logs, and agent-to-agent traffic monitoring.",
+      "follow_up_notes": "The linked CSA primary report is older than the scan window; cite the July 15 summary for this watch and route framework background upstream."
+    },
+    {
+      "title": "Mandiant frames AI-assisted security workflows around guardrails and structural integrity",
+      "source_url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16",
+      "factual_summary": "Google Cloud Mandiant published guidance for AI-assisted vulnerability management, saying security teams can accelerate work with AI while preserving structural integrity through operational guardrails and scenario-based workflows.",
+      "why_it_matters_for_leaf": "Lifecycle review gates and verification-tax leaves need examples where AI acceleration does not remove security process obligations. This source supports a security-specific local pattern: AI can assist vulnerability workflows only when guardrails and scenario boundaries are part of the workflow design.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Mandiant",
+        "Jules Czarniak"
+      ],
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Mandiant"
+      ],
+      "local_practice_implication": "Ingest should consider connecting AI-assisted security repair gates to scenario-level guardrails and structural integrity checks rather than generic acceleration claims.",
+      "follow_up_notes": "Keep vendor/service background upstream; local page should capture the security-workflow gate implication."
+    },
+    {
+      "title": "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-17",
+      "factual_summary": "Google Cloud published Gemini Enterprise Agent Platform demos and described an Agents CLI that can be installed into coding agents such as Antigravity, Claude Code, and Codex, giving them skills for ADK and Agent Platform so they can scaffold, evaluate, deploy, and monitor agents from an editor. One demo covers an event-driven approval agent with human-in-the-loop handling.",
+      "why_it_matters_for_leaf": "Selected leaves on durable instructions, portable skills, tier conventions, approval boundaries, and verification loops all track how reusable agent capabilities become operational practice. This source shows a current vendor packaging pattern: skills/runbooks are becoming the delivery mechanism for build-evaluate-deploy-monitor workflows.",
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Gemini Enterprise Agent Platform",
+        "Agents CLI",
+        "ADK",
+        "Antigravity",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Gemini Enterprise Agent Platform",
+        "Agents CLI",
+        "ADK",
+        "Antigravity",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Ingest should consider describing portable skills as operational packages that include evaluation, deployment, monitoring, and approval workflow knowledge, not just prompt snippets.",
+      "follow_up_notes": "Route product details upstream; keep only downstream practice consequences for skills and approval leaves."
+    },
+    {
+      "title": "LangChain publishes microVM sandbox guidance for agent execution",
+      "source_url": "https://www.langchain.com/blog/agents-need-their-own-computer",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-15",
+      "factual_summary": "LangChain published guidance arguing that agents executing code need isolated, disposable work environments with their own filesystem, shell, package manager, network boundary, credentials proxy, resource limits, lifecycle controls, observability, and sandbox output treated as untrusted data.",
+      "why_it_matters_for_leaf": "Selected governance, verification, approval, and adoption leaves already emphasize controlled autonomy. This source gives a concrete current architecture for agent workspaces and the non-agentic-read pattern at sandbox boundaries.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith Sandboxes",
+        "Deep Agents",
+        "Open SWE",
+        "OWASP Top 10 for LLM Applications"
+      ],
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith Sandboxes",
+        "Deep Agents",
+        "Open SWE",
+        "OWASP Top 10 for LLM Applications"
+      ],
+      "local_practice_implication": "Ingest should consider strengthening sandbox guidance around hardware virtualization, credential injection outside the runtime, per-task resource ceilings, execution observability, and treating sandbox outputs as untrusted inputs.",
+      "follow_up_notes": "Product specifics belong upstream; local implication belongs in governance and verification practice leaves."
+    },
+    {
+      "title": "AgentCompass proposes unified, trajectory-aware agent evaluation infrastructure",
+      "source_url": "https://arxiv.org/html/2607.13705v1",
+      "source_type": "research_paper",
+      "visible_date": "2026-07-15",
+      "factual_summary": "The arXiv preprint AgentCompass introduces an open-source evaluation infrastructure that separates benchmark, harness, and environment components, supports fault-tolerant asynchronous execution, and records trajectory-level analysis across tool use, web research, scientific reasoning, agentic coding, and productivity benchmarks.",
+      "why_it_matters_for_leaf": "Selected evaluation leaves emphasize trajectory-level assessment and repeatable verification loops. AgentCompass supports the local practice of evaluating heterogeneous agent harnesses with comparable logging and provenance rather than relying on final-answer scores.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "AgentCompass",
+        "Shanghai AI Laboratory",
+        "SWE-bench-Pro",
+        "Terminal-bench",
+        "OpenHands",
+        "Mini-SWE-agent",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "AgentCompass",
+        "Shanghai AI Laboratory",
+        "SWE-bench-Pro",
+        "Terminal-bench",
+        "OpenHands",
+        "Mini-SWE-agent",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Ingest should consider adding benchmark-harness-environment separation and trajectory provenance as evaluation design criteria for local agent workflows.",
+      "follow_up_notes": "Route broad benchmark/entity profiles upstream; keep the local implication on evaluation infrastructure shape."
+    },
+    {
+      "title": "Current agent evaluation guides converge on outcomes, traces, tools, cost, and safety",
+      "source_url": "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+      "source_type": "practice_guide",
+      "visible_date": "2026-07-13",
+      "factual_summary": "Aasher Kamal published a guide stating that production agent evaluation should test environment outcomes, tool-call trajectories, permissions, recovery, and cost rather than only final prose. It recommends observable job definitions and evaluating whether state actually changed correctly.",
+      "why_it_matters_for_leaf": "This directly reinforces selected trajectory evaluation, verification loop, and acceptance-gate pages: an agent is done only when the environment outcome and path evidence support the completion claim.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "named_entities": [
+        "Aasher Kamal",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic"
+      ],
+      "local_practice_implication": "Ingest should consider making outcome-state validation explicit in acceptance gates, especially for agents that mutate files, records, tickets, calendars, or deployment state.",
+      "follow_up_notes": "Use as current practice evidence; verify against stronger primary eval sources during ingest where possible."
+    },
+    {
+      "title": "Production agent-eval guidance emphasizes online traces and security gates",
+      "source_url": "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+      "source_type": "practice_guide",
+      "visible_date": "2026-07-14",
+      "factual_summary": "TECHSY published a production agent-evaluation guide describing a three-layer system for live traces: score the whole trajectory, validate right-tool/right-argument/right-step behavior, run offline and online metrics continuously, and gate on security vulnerabilities such as jailbreak, PII, and tool misuse.",
+      "why_it_matters_for_leaf": "Selected verification and governance leaves need the connection between evaluation telemetry and release gates. This source supports treating security and tool-use checks as release criteria, not optional observability.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "TECHSY",
+        "DeepEval",
+        "Confident AI"
+      ],
+      "upstream_owned_entities": [
+        "TECHSY",
+        "DeepEval",
+        "Confident AI"
+      ],
+      "local_practice_implication": "Ingest should consider linking online trace evaluation, tool-call correctness, and security gates into the acceptance-gate model for production agents.",
+      "follow_up_notes": "Keep vendor/platform selection upstream; local page should capture continuous evaluation and security-gate practice."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "How Anthropic teams use Claude Code",
+      "source_url": "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+      "visible_date": "2025-07-24",
+      "reason": "Search result surfaced a stale or misleading date; opened page shows July 24, 2025, outside the 7-day window."
+    },
+    {
+      "title": "The Cost of Unchecked Autonomy: 10 Incidents Proving AI Agent Governance Cannot Wait",
+      "source_url": "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+      "visible_date": "2026-03-18",
+      "reason": "Primary CSA report is useful background but was published outside the 7-day window; the July 15 AI Governance Institute summary is tracked separately as a qualifying secondary source."
+    },
+    {
+      "title": "Agent Evaluation Readiness Checklist",
+      "source_url": "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+      "visible_date": "2026-03-27",
+      "reason": "Page is relevant but visibly published March 27, 2026, outside the 7-day window; related-content dates were not treated as updates to this page."
+    },
+    {
+      "title": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
+      "source_url": "https://arxiv.org/abs/2607.06624",
+      "visible_date": "2026-07-07",
+      "reason": "Relevant research, but older than the July 10 21:02 cutoff for this run."
+    },
+    {
+      "title": "AI Agent Evaluation: Metrics, Frameworks & Methods 2026",
+      "source_url": "https://iternal.ai/ai-agent-evaluation",
+      "visible_date": "Updated July 2026",
+      "reason": "Visible date lacks a day, so it is ambiguous for strict 7-day qualification."
+    },
+    {
+      "title": "Google Cloud CISO Perspectives: How AI leverages deep context as the defender advantage",
+      "source_url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+      "visible_date": "2026-07-16",
+      "reason": "Date qualifies, but the article is broad cybersecurity/threat-intelligence context with only indirect local AI-development practice implications for this selected leaf batch."
+    }
+  ],
+  "leaf_results": {
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Infrastructure-level governance controls for production coding agents",
+        "Agent governance must become a current permissions inventory",
+        "Centralized governance layer positioned as response to agent sprawl",
+        "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps",
+        "Mandiant frames AI-assisted security workflows around guardrails and structural integrity",
+        "LangChain publishes microVM sandbox guidance for agent execution"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Infrastructure-level governance controls for production coding agents",
+        "Mandiant frames AI-assisted security workflows around guardrails and structural integrity",
+        "Production agent-eval guidance emphasizes online traces and security gates"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "AgentCompass proposes unified, trajectory-aware agent evaluation infrastructure",
+        "Current agent evaluation guides converge on outcomes, traces, tools, cost, and safety",
+        "Production agent-eval guidance emphasizes online traces and security gates"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents",
+        "LangChain publishes microVM sandbox guidance for agent execution",
+        "AgentCompass proposes unified, trajectory-aware agent evaluation infrastructure",
+        "Current agent evaluation guides converge on outcomes, traces, tools, cost, and safety",
+        "Production agent-eval guidance emphasizes online traces and security gates"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Infrastructure-level governance controls for production coding agents",
+        "Mandiant frames AI-assisted security workflows around guardrails and structural integrity",
+        "LangChain publishes microVM sandbox guidance for agent execution",
+        "AgentCompass proposes unified, trajectory-aware agent evaluation infrastructure",
+        "Current agent evaluation guides converge on outcomes, traces, tools, cost, and safety",
+        "Production agent-eval guidance emphasizes online traces and security gates"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Agent governance must become a current permissions inventory",
+        "Centralized governance layer positioned as response to agent sprawl"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Infrastructure-level governance controls for production coding agents",
+        "Agent governance must become a current permissions inventory",
+        "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps",
+        "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Infrastructure-level governance controls for production coding agents",
+        "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps",
+        "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents",
+        "LangChain publishes microVM sandbox guidance for agent execution"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "LangChain publishes microVM sandbox guidance for agent execution"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_titles": [],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Centralized governance layer positioned as response to agent sprawl",
+        "Current agent evaluation guides converge on outcomes, traces, tools, cost, and safety"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Recent governance incident summary highlights agent identity, log integrity, and supply-chain gaps",
+        "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Centralized governance layer positioned as response to agent sprawl"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": {
+      "last_checked_at": "2026-07-17T21:02:27-04:00",
+      "last_result": "qualified_update_found",
+      "qualifying_update_titles": [
+        "Agent governance must become a current permissions inventory",
+        "Gemini Enterprise demos package build, evaluate, deploy, and monitor skills for coding agents"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://aigovernance.com/news/ten-real-incidents-in-seven-weeks-expose-critical-gaps-in-ai-agent-governance-controls",
+        "https://cloud.google.com/blog/topics/threat-intelligence/ai-assisted-vulnerability-management",
+        "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+        "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-ai-leverages-deep-context-defenders-advantage",
+        "https://www.langchain.com/blog/agents-need-their-own-computer",
+        "https://arxiv.org/html/2607.13705v1",
+        "https://aasherkamal.com/resources/evaluating-ai-agents-2026",
+        "https://iternal.ai/ai-agent-evaluation",
+        "https://techsy.io/en/blog/evaluate-ai-agents-in-production",
+        "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+        "https://claude.com/blog/how-anthropic-teams-use-claude-code",
+        "https://labs.cloudsecurityalliance.org/research/autonomy-risks-top-10-incidents-v1-csa-styled/",
+        "https://arxiv.org/abs/2607.06624"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  },
+  "follow_up_notes": "Ingest should route broad vendor, benchmark, framework, and product background to the upstream AI wiki and keep only local practice implications in this wiki. Prioritize governance controls, ownership rosters, approval boundaries, sandboxed execution, portable skills as operational runbooks, and trajectory/evidence-based evaluation gates."
+}
