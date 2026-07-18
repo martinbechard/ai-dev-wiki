@@ -33,6 +33,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add proof-loop and benchmark-shape signals. Completion proof should preserve the specification, agent actions, artifacts, evidence, and independent verifier result so a trajectory can be audited after the final answer. Benchmark indexes that emphasize end-to-end application builds, cleanroom reconstruction, and production-like coding-agent tasks should refresh local trajectory evaluation with tasks that exercise full delivery paths, not only isolated issue patches.
 
+The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds AgentCompass and production-eval evidence. Trajectory evaluation should separate benchmark, harness, and environment components, preserve asynchronous execution state, and score whether tool calls, arguments, state changes, recovery behavior, cost, and safety controls followed the intended path. Final prose or a generated diff is not enough when the agent mutates files, records, tickets, calendars, deployments, or other stateful systems.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -55,6 +57,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Whether failure-diagnosis traces identify the earliest consequential error instead of only summarizing the final failed state.
 - Whether completion proof ties specification, artifacts, evidence, independent verification, and final handoff together.
 - Whether calibration tasks cover end-to-end builds, reconstruction, and production-like delivery paths when public benchmark scope moves beyond issue patches.
+- Whether benchmark, harness, and environment components are separated enough to compare agent systems without hiding setup or runtime differences.
+- Whether tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls match the intended path.
 
 ## Practice Boundaries
 
@@ -75,6 +79,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Record provider adapter, side-effect permissions, trace assertions, cost signals, and sandbox checks when the evaluated agent surface changes.
 - Preserve proof artifacts and independent verifier outputs as first-class trajectory evidence for delegated coding claims.
 - Expand local trajectory suites when benchmark scope shifts toward realistic end-to-end delivery, architecture reconstruction, or production task realism.
+- Separate benchmark, harness, and environment evidence when comparing agent systems across coding, research, productivity, or tool-use tasks.
+- Score tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls alongside final-task outcome.
 
 ## Authoritative Sources
 
@@ -93,6 +99,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -128,3 +135,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-10 with performance, long-horizon, and failure-diagnosis trajectory evidence.
 - Maintained on 2026-07-12 with provider-adapter, side-effect, trace-assertion, cost, and sandbox signals for coding-agent trajectories.
 - Maintained on 2026-07-14 with proof-loop artifacts and end-to-end delivery benchmark signals for trajectory evaluation.
+- Maintained on 2026-07-17 with benchmark-harness-environment separation, asynchronous execution state, tool-call scoring, state-change checks, recovery behavior, cost, and safety controls.

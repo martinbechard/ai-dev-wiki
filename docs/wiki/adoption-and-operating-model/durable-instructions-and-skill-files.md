@@ -11,7 +11,7 @@ tags: ["adoption-and-operating-model"]
 
 Durable instructions and skill files keep reusable procedure outside the live prompt until an agent needs it. They give the assistant stable role, scope, project rules, references, tool expectations, safety boundaries, and examples without forcing every request to carry every rule.
 
-The folder-organization source describes a thin router that points agents toward task-relevant rules, knowledge, decisions, references, active plans, and archives. The AI-assisted coding deck describes agent definition files as the place for role, scope, project rules, important references, tool expectations, safety configuration, and examples. HVE Core shows the same pattern as a packaged workflow system with agents, prompts, instructions, and skills.
+The [folder-organization source](../../../raw/processed/Folder organization by @AICodethatWorks.md) describes a thin router that points agents toward task-relevant rules, knowledge, decisions, references, active plans, and archives. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) describes agent definition files as the place for role, scope, project rules, important references, tool expectations, safety configuration, and examples. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) shows the same pattern as a packaged workflow system with agents, prompts, instructions, and skills.
 
 The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) adds the portability boundary: reusable procedure should not be trapped in one agent product or copied into drifting tool-specific rule files. This page owns the adoption practice for durable instruction surfaces, while [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md) owns the skill primitive, runbook composition, and procedural-debt lens. [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) owns the context architecture, and [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md) owns how live requests label source material.
 
@@ -22,6 +22,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds IDE customization, hook, generated-file, and provider-selection signals. Durable instruction surfaces should separate product-managed settings from repository-owned rules, and generated customizations should be reviewed for provenance, scope, approval mode, and tool access before they become standing guidance.
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a trust-boundary signal for repo-local instructions and generated customization files. Durable instructions should distinguish maintainer-owned guidance from untrusted repository content, and teams should teach developers when generated skills, prompts, hooks, rules, or AGENTS.md files are reusable procedure versus unreviewed instruction input.
+
+The July 17 raw sources add skill-provenance and registry-control evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records IDE-managed skills, public registry connections, and cross-agent imports as durability pressure. Durable instruction surfaces should include owner, version, compatibility target, and change history, while public registry provenance, poisoned registry risk, and allowed tool scope route to [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md).
 
 ## Practice Boundaries
 
@@ -38,6 +40,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Review generated agent customization files before treating them as durable project policy.
 - Label repo-local instruction files by owner and trust status before agents execute commands or access credentials because of them.
 - Train developers to review generated skills, prompts, hooks, and rules before moving them into reusable durable guidance.
+- Track owner, version, compatibility target, source location, and change history for skills or instruction files that become durable procedure.
+- Route public skill registries, imported instruction bundles, allowed tool scope, and poisoned registry controls through supply-chain review before treating them as trusted instructions.
 
 ## Authoritative Sources
 
@@ -49,6 +53,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -69,6 +75,7 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
+- [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md)
 
 ## Open Questions
 
@@ -82,3 +89,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Maintained on 2026-07-05 with versionable codebase-wiki context and provenance-backed documentation refresh signals.
 - Maintained on 2026-07-08 with generated customization review, hook boundaries, managed-setting separation, and provider-selection scope.
 - Maintained on 2026-07-09 with repo-local instruction trust boundaries and generated customization review as developer skill practice.
+- Maintained on 2026-07-17 with IDE-managed skills, source ownership, compatibility metadata, change history, and routing to supply-chain controls for registry and tool-scope risk.

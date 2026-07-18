@@ -29,6 +29,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds AI bug-hunting evidence. AI-assisted vulnerability discovery can surface old defects, but local repair gates should still require affected-version analysis, exploitability review, maintainer or owner confirmation, regression tests, fixed-version evidence, and disclosure handling before a generated patch or report is accepted.
 
+The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) adds auto-remediation and agentic autofix evidence. Security repair packets should explain the vulnerability, proposed target version or code change, build-preserving rationale, validation command, and remaining human decision. Draft pull requests are the right handoff shape when an agent explores files, proposes a fix, reruns a scanner, and iterates; they should not be treated as merged repairs until owner review and regression evidence pass.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -51,6 +53,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Require human triage, source localization, suggested-fix review, and re-verification before accepting AI security detections as repaired.
 - Keep policy and cost evidence for AI-powered security detections separate from deterministic scanner enforcement.
 - Require affected-version, exploitability, maintainer-confirmation, regression, fixed-version, and disclosure evidence when AI-assisted bug hunting reports a vulnerability.
+- Keep dependency auto-remediation non-automerge by default, with vulnerability context, target-version rationale, build-preserving notes, and validation evidence in the review packet.
+- Treat agentic autofix loops as draft-PR workflows that must preserve scanner rerun results and owner review before a repair is accepted.
 
 ## Authoritative Sources
 
@@ -67,6 +71,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 
 ## Related Code
 
@@ -100,3 +105,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-11 with repeatable agentic-security tests, AI-discovered vulnerability provenance, and fixed-package verification gates.
 - Maintained on 2026-07-14 with active-loop AI security review, confidence, source localization, re-verification, and AI-detection policy evidence.
 - Maintained on 2026-07-16 with AI bug-hunting gates for affected versions, exploitability, owner confirmation, regression evidence, fixed versions, and disclosure handling.
+- Maintained on 2026-07-17 with non-automerge dependency remediation packets and draft-PR agentic autofix validation evidence.

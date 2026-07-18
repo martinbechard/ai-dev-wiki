@@ -27,6 +27,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds vendor-governance and private-agent signals. Operating agreements should decide which AI management-system evidence, data-locality proof, prompt-injection controls, security-review evidence, and specialized model-routing boundaries a vendor or internal platform must show before teams route regulated or proprietary development work through it.
 
+The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds agent-sprawl and permissions-inventory evidence. Operating agreements should define how teams use [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) and [agent ownership rosters](agent-ownership-rosters.md) to keep discovery, revocation, policy, audit, and local autonomy boundaries current.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -52,6 +54,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Name shared-capability funding, usage visibility, spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules in the operating agreement.
 - Treat unmanaged individual tool use and centrally mandated usage as opposite failure modes when neither is tied to outcome evidence.
 - Define vendor or platform evidence requirements for AI management systems, data locality, prompt-injection defenses, security review, and model-routing boundaries before regulated workflows adopt private agents.
+- Define how teams use governance infrastructure and ownership rosters to keep running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence current while retaining local workflow autonomy.
 
 ## Authoritative Sources
 
@@ -66,6 +69,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -84,6 +88,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [agent-workflows](../agent-workflows/index.md)
 - [coding-practices](../coding-practices/index.md)
 - [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md)
+- [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
+- [agent ownership rosters](agent-ownership-rosters.md)
 
 ## Open Questions
 
@@ -98,3 +104,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-13 with experimentation-versus-mandate boundaries, sanctioned alternatives, prohibited-data categories, and review-capacity controls.
 - Maintained on 2026-07-14 with shared-capability funding, usage and spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules.
 - Maintained on 2026-07-16 with vendor-governance evidence, private-agent data locality, prompt-injection controls, security-review proof, and model-routing boundaries.
+- Maintained on 2026-07-17 with running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence.

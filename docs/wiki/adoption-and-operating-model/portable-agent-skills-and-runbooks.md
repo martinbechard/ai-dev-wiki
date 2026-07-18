@@ -21,6 +21,8 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) adds portability pressure from codebase wiki memory and shared context tags. Team procedures should keep reusable knowledge in source-backed, versionable wiki or skill artifacts so a single vendor workspace does not become the only place where project memory or agent context can be reused.
 
+The July 17 raw sources add IDE and platform packaging evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records IDE-managed agent skills and imports from other coding agents as a portability signal; broad WebStorm, GoLand, [GitHub Copilot CLI](../../../upstream-ai-wiki/developer-tools/github-copilot-cli.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), and [OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md) product coverage remains upstream-owned. The [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds build-evaluate-deploy-monitor skills as operational packages. Locally, a portable skill should carry source registry, import path, compatibility, evaluation, deployment, monitoring, and approval-workflow metadata when those facts affect reuse.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -35,6 +37,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Record whether a skill is vendor-owned, project-owned, team-owned, or personal so future agents know where updates and accountability belong.
 - Keep reusable project memory in source-backed, versionable artifacts when multiple agent tools or teams need the same context.
 - Treat vendor-local context tags or workspace memory as convenience surfaces, not the sole source of team procedure or project knowledge.
+- Record source registry, import path, owner, compatibility target, verification standard, and approval workflow before importing portable skills across agent tools.
+- Treat platform skills that scaffold, evaluate, deploy, or monitor systems as operational runbooks, not just prompt snippets.
 
 ## Authoritative Sources
 
@@ -45,6 +49,11 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
+- [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
+- [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
 
 ## Related Code
 
@@ -67,7 +76,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 ## Open Questions
 
-- No open wiki questions are recorded for this topic.
+- The upstream AI wiki does not yet have JetBrains, WebStorm, or GoLand entity leaves to link for IDE-managed skill product signals.
 
 ## Maintenance Notes
 
@@ -75,3 +84,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.
 - Maintained on 2026-07-03 with third-party skill intake, ownership, trust review, version pinning, and local adaptation boundaries.
 - Maintained on 2026-07-05 with versionable wiki memory, reusable context portability, and vendor-local memory boundaries.
+- Maintained on 2026-07-17 with IDE-managed skill imports, source registry metadata, cross-agent compatibility, and build-evaluate-deploy-monitor runbook boundaries.

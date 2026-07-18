@@ -11,7 +11,7 @@ tags: ["adoption-and-operating-model"]
 
 Outcome alignment and process autonomy define how teams avoid both centralized process uniformity and unmanaged local variation. The local operating model aligns teams on outcomes, accountability, source handling, verification, security boundaries, and shared platform guardrails while letting the people closest to the work shape the workflow mechanics.
 
-The process-autonomy source argues that teams should customize process to their needs, coordinate constantly, and receive guidance and support when alignment is missing. The agentic team-structures source applies a similar boundary to agentic work: become strict about outcome variance, tolerant of execution variance, and use guardrails around the outcomes that matter.
+The [process-autonomy source](../../../raw/processed/Allen Holub - On process.md) argues that teams should customize process to their needs, coordinate constantly, and receive guidance and support when alignment is missing. The [agentic team-structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md) applies a similar boundary to agentic work: become strict about outcome variance, tolerant of execution variance, and use guardrails around the outcomes that matter.
 
 This page owns the operating-model rule. Platform, permissions, and audit enforcement belong to [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
 
@@ -20,6 +20,8 @@ The [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-de
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds an outcome-economics signal. Agentic workflows should be justified by accepted outcomes and cross-domain value rather than seat utilization, while process autonomy still depends on shared guardrails, policy enforcement, and evidence for the result.
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds an agent-management comparison from operations workflows. Teams can vary how they delegate, supervise, and expand agent scope, but shared outcomes still require audit trails, edge-case escalation, accountable ownership, and review evidence. The lesson for coding agents is that autonomous coordination is acceptable only when the team can still supervise results and explain why scope expanded.
+
+The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds agent-sprawl and eval-outcome evidence. Team autonomy is sustainable only when [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) can inspect running agents, connections, dependencies, standards, and audit evidence. Outcome alignment should route state-change correctness, tool trajectories, costs, and safety gates through [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md) rather than treating process compliance or assistant usage as the outcome.
 
 ## Practice Boundaries
 
@@ -33,6 +35,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Let teams vary process only when guardrails, policy enforcement, and outcome evidence remain comparable.
 - Let teams vary delegation mechanics only when audit trails, escalation paths, accountable owners, and review evidence remain comparable.
 - Expand agent scope from supervised outcomes and edge-case handling evidence, not from confidence in generic agent capability.
+- Let teams vary agent workflows only when governance infrastructure still exposes running agents, dependencies, connected services, standards, and comparable outcome evidence.
+- Use trajectory-level state-change correctness, tool paths, costs, and safety evidence as outcome measures instead of assistant usage or process conformance alone.
 
 ## Authoritative Sources
 
@@ -43,6 +47,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -62,6 +67,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [senior led agentic execution pods](senior-led-agentic-execution-pods.md)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+- [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
 
 ## Open Questions
 
@@ -73,3 +79,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-05 with workflow-redesign, accessible-context, deterministic subagent coverage, and typed-intermediate-result signals.
 - Maintained on 2026-07-09 with outcome-based agent workflow funding, pruning, and guardrail-comparable process autonomy.
 - Maintained on 2026-07-14 with delegation mechanics, audit trails, edge-case escalation, and scope-expansion evidence as comparable outcome controls.
+- Maintained on 2026-07-17 with links to governance infrastructure for agent-sprawl visibility and trajectory evaluation for state-change, tool-path, cost, and safety outcome evidence.

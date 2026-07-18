@@ -41,11 +41,14 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add production-agent and investment-governance signals. Production coding agents should use isolated workspaces, scoped identities, monitored behavior, human approval for consequential actions, model routing by policy, and full audit trails. AI investment governance should require usage and spend visibility, outcome ROI, governance before advanced workflows scale, centrally funded shared capabilities, and capacity matched to proven demand.
 
+The July 17 raw sources add governed-agent infrastructure evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records event-triggered automation, terminal-agent hardening, and remediation flows as product evidence for local controls. The durable owners are [event-triggered agent workflows](../agent-workflows/event-triggered-agent-workflows.md), [terminal agent workflows](../agent-workflows/terminal-agent-workflows.md), [destructive command controls](destructive-command-controls.md), [ai-assisted security repair gates](ai-assisted-security-repair-gates.md), [agent governance infrastructure](agent-governance-infrastructure.md), and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md).
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
 - [agent-governance-infrastructure.md](agent-governance-infrastructure.md) owns identity, authorization, allowed actions, monitoring, audit, policy enforcement, and human accountability chains.
 - [sensitive-data-and-supply-chain-controls.md](sensitive-data-and-supply-chain-controls.md) owns secrets, PII, package installs, dependencies, model or source artifacts, licensing, and third-party notices.
+- [destructive-command-controls.md](destructive-command-controls.md) owns destructive shell command detection, denial reasons, path containment, explicit approval, and recovery evidence.
 
 ## Practice Boundaries
 
@@ -84,6 +87,10 @@ The detailed control leaves are:
 - Map agent visibility across vendors, contractors, SaaS tools, repositories, and internal systems before expanding what an agent can see, do, or escalate.
 - Require isolate-scope-approve controls, runtime monitoring, policy-routed models, and audit trails before production coding agents can operate beyond pilot tasks.
 - Tie adoption expansion to visible usage, spend, outcome ROI, shared-capability readiness, and governance evidence rather than raw assistant availability.
+- Route event-triggered and terminal agents through the governed workflow contract before they inspect, patch, execute commands, or create public output.
+- Route destructive shell commands through command-risk detection, path containment, denial evidence, and explicit approval before execution.
+- Route permission inventories, revocation paths, centralized discovery, audit integrity, and agent-traffic monitoring through governance infrastructure leaves instead of relying on local prompt rules.
+- Use scenario-level security guardrails and structural-integrity checks before treating AI acceleration in vulnerability or dependency workflows as reduced risk.
 
 ## Authoritative Sources
 
@@ -113,6 +120,8 @@ The detailed control leaves are:
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -134,6 +143,9 @@ The detailed control leaves are:
 - [retrieval and tools practice](../retrieval-and-tools/rag-tools-and-mcp-practice.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
 - [adoption operating agreements](../adoption-and-operating-model/adoption-operating-agreements.md)
+- [destructive command controls](destructive-command-controls.md)
+- [event-triggered agent workflows](../agent-workflows/event-triggered-agent-workflows.md)
+- [terminal agent workflows](../agent-workflows/terminal-agent-workflows.md)
 
 ## Open Questions
 
@@ -157,3 +169,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-12 with slopsquatting, prompt-injection, LLM gateway, task-scoped access, privileged-action visibility, and leader-governance controls.
 - Maintained on 2026-07-13 with AI-authored-code traceability, regulated lifecycle controls, and cross-boundary agent visibility requirements.
 - Maintained on 2026-07-14 with isolate-scope-approve production controls and investment-governance evidence for scaled agent adoption.
+- Maintained on 2026-07-17 with routing to focused leaves for event-triggered workflow governance, destructive-command controls, governance infrastructure, approval boundaries, and security repair gates.

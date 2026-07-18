@@ -27,6 +27,8 @@ The July 7 raw sources continue that split. GitHub, Vercel, Oracle, ZenML, Honey
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) reinforces product-versus-practice routing. OpenAI, GitHub, StepSecurity, Atlassian, Pervaziv, Presidio, Gradient, individual coding agents, runner providers, certification programs, and product releases remain upstream-owned as ecosystem entities. Local ingest keeps the practice implications: prompt-injection harnesses, secret alert routing, PR review-state filters, runner egress evidence, fleet verification capacity, issue-to-agent handoff contracts, private-agent data boundaries, and vendor-selection governance evidence.
 
+The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) reinforces date-evidence routing. GitLab, GitHub, [OpenAI](../../../upstream-ai-wiki/companies/openai.md), Cursor, JetBrains, [Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md), [Google Cloud](../../../upstream-ai-wiki/developer-tools/google-cloud-workbench-notebooks.md), [LangChain](../../../upstream-ai-wiki/agentic-frameworks/langchain-stack.md), and benchmark or framework names remain upstream-owned broad entities. Local pages keep only practice implications for governed flows, security-review gates, remediation packets, destructive-command controls, portable skills, performance verification, sandboxing, and eval design. The Cursor mobile-agent item was not promoted into a July 17 durable update because the [official Cursor changelog](https://cursor.com/changelog) identifies the mobile release as June 29, 2026; the source artifact's weak date evidence remains a routing note rather than a current local fact.
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -42,6 +44,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Attribute weak or snippet-only date evidence and avoid converting it into source-page certainty.
 - Route July 7 broad ecosystem updates upstream while keeping local practice updates anchored in workflow, governance, evaluation, telemetry, memory, and adoption leaves.
 - Route July 16 product, vendor, certification, and runner-provider updates upstream while retaining only local workflow, governance, verification, and adoption controls.
+- Route July 17 product, vendor, framework, and benchmark entities upstream while retaining local practice evidence for governance, approval, remediation, skills, sandboxing, and evals.
+- Recheck weak date evidence before durable synthesis; keep misdated or snippet-only items as routing notes unless official source-page evidence supports the ingest window.
 
 ## Authoritative Sources
 
@@ -62,6 +66,12 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [Official Cursor changelog](https://cursor.com/changelog)
+- [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
+- [upstream OpenAI](../../../upstream-ai-wiki/companies/openai.md)
+- [upstream Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md)
+- [upstream LangChain stack](../../../upstream-ai-wiki/agentic-frameworks/langchain-stack.md)
 
 ## Related Code
 
@@ -85,7 +95,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 ## Open Questions
 
-- No open wiki questions are recorded for this topic.
+- The upstream AI wiki does not yet have GitLab, JetBrains, WebStorm, GoLand, or Cursor product entity leaves to link for the July 17 routing note.
 
 ## Maintenance Notes
 
@@ -95,3 +105,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-06 with broad-entity routing for July 6 products, tools, standards, and snippet-date evidence.
 - Maintained on 2026-07-07 with broad-entity routing for July 7 desktop-agent, telemetry, runtime, benchmark, memory, and contribution-policy sources.
 - Maintained on 2026-07-16 with broad-entity routing for product, vendor, runner-provider, certification, and coding-agent ecosystem updates.
+- Maintained on 2026-07-17 with broad-entity routing for product, vendor, framework, benchmark, and weak-date evidence, including non-promotion of the Cursor mobile item.

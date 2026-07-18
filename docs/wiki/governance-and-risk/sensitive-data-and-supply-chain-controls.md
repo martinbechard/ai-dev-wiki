@@ -43,6 +43,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds secret-scanning and runner-egress signals. Secret alerts should preserve provider category, generic-versus-specific detector evidence, public exposure attribution, and webhook routing fields so agent-generated packages, generated scripts, and repository-history scans can be triaged without leaking the secret itself. CI jobs that run generated build scripts or dependency installs need runner-neutral egress review: hosted Linux, macOS, Windows, and third-party runners should all produce outbound-network evidence before jobs handle signing material, deployment credentials, or production-adjacent tokens.
 
+The July 17 raw sources add portable-skill supply-chain evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) and [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) treat public skill registries, imported instruction bundles, generated skill files, tool-scope metadata, and poisoned registry paths as supply-chain inputs. Local adoption should pin source registries, record owner and version, review allowed tool scope, and preserve tamper-evident approval history before skills can alter agent authority.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -81,6 +83,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Keep validation, deployment, and disclosure gates explicit when AI-assisted security work accelerates vulnerability discovery or patch generation.
 - Route secret-scanning alerts with detector category, attribution, verified-domain, and webhook evidence while keeping credential values out of prompts and raw artifacts.
 - Require OS-neutral and provider-neutral runner egress evidence before generated scripts, dependency installs, or signing workflows can use sensitive credentials.
+- Treat public skill registries, imported instruction bundles, generated skill files, and tool-scope metadata as supply-chain inputs until provenance, owner, version, trust status, approval history, and allowed authority are reviewed.
 
 ## Authoritative Sources
 
@@ -109,6 +112,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -154,3 +159,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-14 with dependency cooldown, MCP trust-validation, PR-context, and IDE extension update controls.
 - Maintained on 2026-07-15 with instruction-file trust review, repository-history secret coverage, symlink/path checks, sandbox execution controls, patch validation, and data-residency review.
 - Maintained on 2026-07-16 with secret-scanning routing fields and runner-neutral egress controls for generated build and deployment workflows.
+- Maintained on 2026-07-17 with public skill registry, imported instruction bundle, generated skill, tool-scope, and poisoned registry supply-chain controls.

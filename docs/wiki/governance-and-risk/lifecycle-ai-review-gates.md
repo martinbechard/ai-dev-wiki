@@ -27,6 +27,8 @@ The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for a
 
 The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) adds lifecycle gates for adversarial multi-agent review, prompt-injection exposure, dependency intake, gateway governance, and leader readiness. A workflow should not move from experiment to team default until its review topology, regression proof, untrusted-content boundary, dependency policy, control-plane evidence, and owner literacy are explicit.
 
+The July 17 raw sources add security and production-agent gate examples. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records GitLab security review, dependency auto-remediation, and GitHub agentic autofix as review-stage flows that should preserve logic-flaw reasoning, vulnerability context, validation commands, and draft-PR handoff boundaries. The [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) reinforces that production lifecycle gates must include infrastructure scope, scenario guardrails, online trace checks, and security gates before a workflow graduates beyond assisted drafting.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -43,6 +45,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Add readiness gates for event-triggered agents that read public text, use private context, or post into public channels.
 - Review least-privilege repository scope, trusted-instruction separation, output disclosure policy, and incident audit evidence before enabling recurring agentic workflows.
 - Require lifecycle review of review topology, regression evidence, untrusted-content exposure, dependency policy, gateway controls, and owner readiness before agentic workflows become team defaults.
+- Require security-review and auto-remediation gates to preserve logic-flaw reasoning, vulnerability context, validation commands, and draft-PR or human-approval handoff points.
+- Add online trace, tool-correctness, security, and infrastructure-scope evidence before production agent loops become standing lifecycle gates.
 
 ## Authoritative Sources
 
@@ -57,6 +61,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -90,3 +96,4 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 - Maintained on 2026-07-08 with pre-execution lifecycle gates for untrusted setup, generated commands, and sensitive-code promotion.
 - Maintained on 2026-07-10 with adoption-readiness gates for issue-triggered agents, public output, and private-data access.
 - Maintained on 2026-07-12 with lifecycle gates for adversarial review topology, regression proof, untrusted content, dependency policy, gateway controls, and owner readiness.
+- Maintained on 2026-07-17 with review-stage logic-flaw reasoning, remediation packet evidence, draft-PR handoff boundaries, online traces, and production-loop security gates.

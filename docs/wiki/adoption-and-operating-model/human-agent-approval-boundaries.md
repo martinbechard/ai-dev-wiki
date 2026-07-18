@@ -31,6 +31,8 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds accountable-ownership and production-control signals. Agents can coordinate milestones, implementation, tests, docs, and review, but humans retain approval for scope, production, security, migration, and customer-impacting decisions. Production coding-agent controls should make isolation, scoped permissions, monitoring, and audit trails enforce the approval boundary rather than relying on the agent to remember it.
 
+The July 17 raw sources add approval-surface refinements. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records dependency remediation, autofix, terminal denial reasons, and build optimization as cases where the agent may prepare changes or experiments while the human retains merge, command, baseline, experiment, and application decisions. Destructive command approvals route to [destructive command controls](../governance-and-risk/destructive-command-controls.md), and optimization approvals route to [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md).
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -51,6 +53,9 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Treat undo-after-write prompts and post-hoc confirmations as insufficient for symlink writes, public output, package installs, source fetching, or credential-adjacent access.
 - Keep scope, production, security, migration, and customer-impacting decisions human-owned even when an agent coordinates the project workflow.
 - Enforce approval boundaries through isolation, scoped permissions, monitoring, and audit trails for production coding agents.
+- Keep agent-generated remediation, optimization, and security findings in reviewable packets until a human accepts the merge, command execution, experiment, or production action.
+- Attach approval prompts to measurable baselines, sandbox boundaries, permission scopes, and generated workflow packages instead of asking for one broad autonomy grant.
+- Route destructive-command and performance-optimization approvals through their focused control pages when command risk or measurement evidence changes the decision.
 
 ## Authoritative Sources
 
@@ -68,6 +73,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -89,6 +96,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [agent ownership rosters](agent-ownership-rosters.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
+- [destructive command controls](../governance-and-risk/destructive-command-controls.md)
+- [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md)
 
 ## Open Questions
 
@@ -104,3 +113,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-09 with untrusted-repository, AGENTS.md, and generated customization command-approval boundaries.
 - Maintained on 2026-07-13 with pre-action approval clarity for symlink writes, package installs, repository fetches, public output, and credential-adjacent access.
 - Maintained on 2026-07-14 with accountable-ownership decisions and production-agent approval enforcement controls.
+- Maintained on 2026-07-17 with remediation, command, sandbox, permission-scope, and performance-optimization approval routing.

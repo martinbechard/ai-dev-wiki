@@ -23,6 +23,8 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) adds an agent-manager operating signal. Owner cards should describe how the human or team delegates work, supervises outcomes, reviews audit trails, receives edge-case escalations, and expands or reduces scope over time. The same pattern applies whether the agent works on coding tasks or operations workflows; the local concern is accountable management of delegated scope.
 
+The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds permission-inventory evidence. Ownership rosters should show what each agent, skill, tool, MCP server, and connected service can access; who can revoke that access; which actions are allowed; and where audit trails bind the action back to an authenticated requester, operator, or approver.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -40,6 +42,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Name the escalation approver and sanctioned fallback path when an owner discovers unmanaged or shadow agent use.
 - Record delegation pattern, outcome supervision cadence, audit-trail review, edge-case escalation path, and scope-expansion criteria for each recurring managed agent.
 - Treat agent management as an accountable operating role rather than a passive inventory entry.
+- Treat ownership rosters as current permission inventories with revocation owners, allowed-use definitions, and audit bindings for agents, tools, skills, MCP servers, and connected services.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -83,3 +87,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-09 with session grouping, guardrail ownership, runtime policy ownership, and forensic evidence location fields.
 - Maintained on 2026-07-13 with cross-boundary visibility, escalation approver, and sanctioned fallback fields for unmanaged agent use.
 - Maintained on 2026-07-14 with delegation, outcome supervision, audit-trail review, edge-case escalation, and scope-expansion owner-card fields.
+- Maintained on 2026-07-17 with permission inventories, revocation ownership, allowed-use definitions, and authenticated audit bindings.

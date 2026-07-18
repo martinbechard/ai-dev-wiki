@@ -15,6 +15,8 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [delegated-coding-handoffs.md](delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
 - [deep-research-and-writing-workflows.md](deep-research-and-writing-workflows.md) records the split between exploratory research agents and constrained writing workflows.
 - [persistent-agent-workspaces.md](persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
+- [event-triggered-agent-workflows.md](event-triggered-agent-workflows.md) records governed triggers, allowed actions, approval handoffs, and run evidence.
+- [terminal-agent-workflows.md](terminal-agent-workflows.md) records terminal-session scope, command-risk controls, denial reasons, approval handoffs, and session evidence.
 
 ## Authoritative Sources
 
@@ -55,3 +57,4 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - Created on 2026-06-23 as the local owner for AI-assisted work execution patterns.
 - Split on 2026-06-23 so reusable workflow concepts live in durable leaf pages.
 - Maintained on 2026-06-23 to add persistent workspaces and public loop-design signals for long-running agent work.
+- Maintained on 2026-07-17 to add separate event-triggered and terminal agent workflow controls.

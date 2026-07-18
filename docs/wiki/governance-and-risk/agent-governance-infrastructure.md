@@ -53,6 +53,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) and [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) add delegated-identity, governance-certification, and private-agent deployment signals. Agent control planes should record delegation chains, off-host authorization decisions, agent identity, compliance evidence, procurement trust signals, and data-locality boundaries before enterprise agent surfaces become recurring development infrastructure. Broad vendor, product, and certification background remains upstream-owned.
 
+The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds production governance infrastructure signals. Control planes should maintain current permission inventories, revocation paths, centralized discovery for running agents and connected services, tamper-evident audit logs, policy standards, dependency visibility, and agent-to-agent traffic monitoring so governance remains enforceable as teams add skills, MCP servers, tools, and connected services.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -99,6 +101,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Require isolated execution, scoped permissions, live monitoring, approval gates, model-route policy, identity mapping, and exportable audit evidence before production coding-agent rollout.
 - Centralize MCP or tool policy enforcement when server-by-server configuration would create inconsistent permissions, redaction, rate-limit, or audit behavior.
 - Record delegation-chain evidence, agent identity, authorization decisions, procurement governance proof, and data-locality commitments before recurring private-agent deployment.
+- Maintain current permission inventories, revocation paths, connected-service discovery, dependency visibility, tamper-evident audit logs, policy standards, and agent-traffic monitoring as control-plane infrastructure.
 
 ## Authoritative Sources
 
@@ -135,6 +138,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -159,6 +163,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
 - [agent identity and delegated authority](agent-identity-and-delegated-authority.md)
 - [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
+- [destructive command controls](destructive-command-controls.md)
 
 ## Open Questions
 
@@ -185,3 +190,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-12 with inherited-permission detection, privileged-action visibility, task-scoped authority, shadow-AI monitoring, and emergency revocation controls.
 - Maintained on 2026-07-15 with isolated coding-agent environments, scoped permissions, live monitoring, policy-based routing, audit trails, and cross-server MCP policy enforcement.
 - Maintained on 2026-07-16 with delegation-chain evidence, off-host authorization, agent identity, governance proof, and private-agent data-locality boundaries.
+- Maintained on 2026-07-17 with current permission inventories, revocation paths, centralized discovery, audit integrity, dependency visibility, and agent-traffic monitoring.

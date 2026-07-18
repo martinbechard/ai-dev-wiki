@@ -25,6 +25,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) and [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) add fleet and grader-capacity signals. Coding-agent fleets, model-routed review, deterministic graders, LLM judges, and human review should be scheduled as one verification system; adding more agents should wait when review queues, benchmark calibration, or human attention are already the limiting resource.
 
+The July 17 raw sources add acceptance-gate refinements for production agents, security remediation, and performance work. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records dependency remediation and agentic autofix flows that require scanner reruns and draft-PR boundaries, while performance baselines, incremental-build measurements, rollback rules, and user approvals live in [agent-assisted performance optimization gates](agent-assisted-performance-optimization-gates.md). The [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds online trace, tool-correctness, security, sandbox, and outcome-state gates for production agent workflows.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -39,6 +41,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Use cheap verifier triage to allocate scarce CI, sandbox, or reviewer attention, while keeping authoritative gates tied to the repository and risk surface.
 - Require trace assertions, side-effect safety, approval checks, and sandbox evidence when a coding-agent harness claims a change is ready for review.
 - Treat coding-agent fleet size, model-routed review, deterministic grading, LLM judging, and human attention as one verification-capacity budget.
+- Require scanner reruns and draft-PR boundaries when agents propose security remediation, and route baseline measurements, representative workload evidence, rollback rules, and user approvals for optimization work through the performance optimization gates.
+- Gate production agents on online traces, right-tool and right-argument evidence, outcome-state checks, security checks, and sandbox evidence before treating results as accepted.
 
 ## Authoritative Sources
 
@@ -54,6 +58,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 
 ## Related Code
 
@@ -73,6 +79,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [generated code refactoring](../coding-practices/generated-code-refactoring.md)
 - [portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
+- [agent-assisted performance optimization gates](agent-assisted-performance-optimization-gates.md)
 
 ## Open Questions
 
@@ -86,3 +93,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-11 with verification-gap guidance for validation capacity, maintainability review, and regression ownership.
 - Maintained on 2026-07-12 with staged verifier triage, trace assertions, side-effect safety, and sandbox evidence for coding-agent acceptance.
 - Maintained on 2026-07-16 with fleet, model-routed review, grader, judge, and human-attention capacity budgeting.
+- Maintained on 2026-07-17 with separate security remediation, production-agent trace, tool-correctness, sandbox, outcome-state, and performance-optimization gate routing.
