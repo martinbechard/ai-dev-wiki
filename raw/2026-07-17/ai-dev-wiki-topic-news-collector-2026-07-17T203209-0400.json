@@ -1,0 +1,392 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-17T20:32:09-04:00",
+  "cutoff_window": {
+    "start": "2026-07-15T20:32:09-04:00",
+    "end": "2026-07-17T20:32:09-04:00",
+    "rule": "Only include public sources with visible publication or update dates within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, implementation, and adoption implications"
+  },
+  "qualifying_update_count": 10,
+  "excluded_candidate_count": 10,
+  "qualifying_updates": [
+    {
+      "title": "GitLab 19.2 release frames governed agentic automation as backlog control",
+      "source_url": "https://about.gitlab.com/press/releases/2026-07-16-gitlab-19-2-brings-governed-agentic-automation/",
+      "source_type": "official_press_release",
+      "visible_date": "2026-07-16",
+      "summary": "GitLab announced 19.2 with Duo CLI generally available, Custom Flows generally available, dependency auto-remediation, security review, and organization controls around agentic automation.",
+      "why_it_matters": "This reinforces the local practice pattern that coding-agent rollout is not only individual assistant adoption; teams need governed flows, terminal surfaces, event triggers, and policy controls around generated changes.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitLab",
+        "GitLab 19.2",
+        "GitLab Duo Agent Platform",
+        "GitLab Duo CLI",
+        "Custom Flows",
+        "Forrester Consulting"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "GitLab Duo Agent Platform",
+        "GitLab Duo CLI"
+      ],
+      "local_practice_implication": "Treat event-triggered agentic flows as governed team workflow infrastructure with rollout controls, not just prompt recipes.",
+      "follow_up_notes": "During ingest, route product facts upstream if needed and keep only GitLab 19.2 as evidence for governed agentic automation patterns."
+    },
+    {
+      "title": "GitLab Duo Security Review public beta targets logic flaws during review",
+      "source_url": "https://about.gitlab.com/blog/gitlab-duo-security-review-flow/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16",
+      "summary": "GitLab described Duo Security Review Flow as a public beta that uses AI-driven security reasoning to find authorization gaps, business-logic errors, race conditions, and other issues static scanners often miss during code review.",
+      "why_it_matters": "The item supports a practice distinction between pattern-matching security scanners and AI review gates that reason about intent, domain rules, and cross-file behavior before production.",
+      "candidate_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitLab",
+        "GitLab Duo Security Review",
+        "Security Review Flow"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "GitLab Duo Security Review"
+      ],
+      "local_practice_implication": "AI security-review gates should be documented separately from static scanner gates, with explicit attention to logic flaws and review-stage evidence.",
+      "follow_up_notes": "Consider linking to existing intelligent code review and lifecycle AI review gate pages during ingest."
+    },
+    {
+      "title": "GitLab Duo CLI GA puts project-aware agents in terminal workflows",
+      "source_url": "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16",
+      "summary": "GitLab announced Duo CLI general availability with GitLab 19.2, emphasizing terminal-based use for code, pipeline, vulnerability, and multi-step work with project, pipeline, and agent setup context.",
+      "why_it_matters": "Terminal agents need source-workflow guidance for project context, headless execution, CI usage, and handoff boundaries between interactive and scripted use.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "GitLab",
+        "GitLab Duo CLI",
+        "GitLab Duo Agentic Chat",
+        "GitLab 19.2"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "GitLab Duo CLI"
+      ],
+      "local_practice_implication": "Document terminal-agent use as a controlled workflow surface that can run interactively or headlessly, with project context and CI implications.",
+      "follow_up_notes": "Check whether persistent-agent-workspaces or delegated-coding-handoffs should receive the eventual synthesis."
+    },
+    {
+      "title": "GitLab dependency auto-remediation keeps human approval in the fix loop",
+      "source_url": "https://about.gitlab.com/blog/dependency-scanning-auto-remediation/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16",
+      "summary": "GitLab described dependency auto-remediation for vulnerable version bumps, stating that generated merge requests explain the vulnerability, target version, and suggested build-preserving code changes, and do not merge automatically.",
+      "why_it_matters": "This gives concrete evidence for AI-assisted remediation practice: agents can generate vulnerability fixes, but review packets must preserve traceability and explicit approver control.",
+      "candidate_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitLab",
+        "GitLab Duo Agent Platform",
+        "dependency scanning",
+        "auto-remediation"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "GitLab Duo Agent Platform"
+      ],
+      "local_practice_implication": "Capture generated remediation as reviewable, non-automerge change packets with vulnerability context, target versions, and build-preserving rationale.",
+      "follow_up_notes": "Could extend sensitive-data-and-supply-chain-controls or AI-assisted-security-repair-gates."
+    },
+    {
+      "title": "GitHub clarified agentic autofix coverage for code scanning alerts",
+      "source_url": "https://github.blog/changelog/2026-07-10-agentic-autofix-for-code-scanning-alerts-in-public-preview/",
+      "source_type": "official_changelog",
+      "visible_date": "2026-07-16 editor note",
+      "summary": "GitHub's editor note clarified that agentic autofix works for first-party and third-party code scanning alerts. The workflow assigns an alert to Copilot, explores relevant files, generates a fix, reruns CodeQL, iterates if needed, and opens a draft pull request.",
+      "why_it_matters": "The update is relevant to regression repair and security fix loops because it names the agent loop, validation step, draft PR boundary, and admin disable policy.",
+      "candidate_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "Copilot",
+        "CodeQL",
+        "agentic autofix"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "CodeQL"
+      ],
+      "local_practice_implication": "Agentic autofix patterns should record validation commands and draft-PR handoff points rather than treating generated fixes as complete repairs.",
+      "follow_up_notes": "Use as evidence for fix-branch-and-pr-packaging, lifecycle review gates, and security repair gates."
+    },
+    {
+      "title": "OpenAI Codex CLI expanded dangerous-command detection",
+      "source_url": "https://developers.openai.com/codex/changelog",
+      "source_type": "official_changelog",
+      "visible_date": "2026-07-16",
+      "summary": "Codex CLI 0.144.5 improved dangerous-command detection, including more forced rm forms, and clearer rejection reasons when commands are denied.",
+      "why_it_matters": "This is a concrete implementation signal for permission and approval practice: coding-agent CLIs are hardening destructive command classification and user-facing denial explanations.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI",
+        "Codex CLI 0.144.5"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI"
+      ],
+      "local_practice_implication": "Destructive-command controls should include both detection breadth and intelligible denial reasons so operators can audit why actions were blocked.",
+      "follow_up_notes": "Potentially update sensitive-data-and-supply-chain-controls or human-agent-approval-boundaries during ingest."
+    },
+    {
+      "title": "Cursor changelog added mobile cloud-agent control with artifacts and SCM review",
+      "source_url": "https://cursor.com/changelog",
+      "source_type": "official_changelog",
+      "visible_date": "2026-07-16 search result; page shows current top changelog entry",
+      "summary": "Cursor's current changelog entry describes launching cloud agents from mobile, remote-controlling agents running on a computer, receiving status notifications, and reviewing demos, screenshots, logs, diffs, and pull requests from a phone.",
+      "why_it_matters": "Mobile and remote agent supervision changes the operating model: approval, review, and merge flows can happen away from the development workstation but still need artifacts, logs, and admin controls.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Cursor mobile app",
+        "Cloud agents",
+        "Remote Control",
+        "SCM"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Cursor cloud agents"
+      ],
+      "local_practice_implication": "Remote agent control should be represented as an approval and evidence workflow, especially where agents expose logs, diffs, screenshots, and merge actions from mobile surfaces.",
+      "follow_up_notes": "Visible page date was not exposed in the opened HTML; keep the inclusion tied to the search-result date and recheck before durable synthesis."
+    },
+    {
+      "title": "JetBrains WebStorm 2026.2 added IDE-managed agent skills and native Copilot access",
+      "source_url": "https://blog.jetbrains.com/webstorm/2026/07/webstorm-2026-2/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16 search result and URL path",
+      "summary": "WebStorm 2026.2 includes native GitHub Copilot access through the AI chat agent picker and an agent skills manager for reusable stack knowledge, public GitHub skill registries, and imports from Claude Code or Codex.",
+      "why_it_matters": "IDE-level skill management is practice-level evidence for durable instructions, reusable agent knowledge, skill provenance, and cross-agent instruction portability.",
+      "candidate_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "JetBrains",
+        "WebStorm 2026.2",
+        "GitHub Copilot",
+        "Claude Code",
+        "Codex",
+        "agent skills manager"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "WebStorm",
+        "GitHub Copilot",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Reusable instructions should be governed as portable skill artifacts with source registry, import path, and agent compatibility metadata.",
+      "follow_up_notes": "Could support durable-instructions-and-skill-files and portable-agent-skills-and-runbooks."
+    },
+    {
+      "title": "JetBrains GoLand 2026.2 combines profiling workflows with agent skills and model controls",
+      "source_url": "https://blog.jetbrains.com/go/2026/07/16/goland-2026-2-is-now-available/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-16 URL path",
+      "summary": "GoLand 2026.2 adds a Go Optimization tool window for profiling and memory analysis, official go fix integration for migrations, agent skills management, configurable AI completion models, and GitHub Copilot access from a unified interface.",
+      "why_it_matters": "This links AI-assisted coding practice to local runtime evidence: profiling, compiler analysis, migration tools, and model/provider selection should be part of agent work verification rather than separate manual chores.",
+      "candidate_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "JetBrains",
+        "GoLand 2026.2",
+        "GitHub Copilot",
+        "go fix",
+        "agent skills manager"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "GoLand",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Agentic coding workflows should capture performance and migration evidence from the same IDE/tool surface used to propose changes.",
+      "follow_up_notes": "Ingest may connect this to AI-assisted TDD, verification loops, and durable instruction artifacts."
+    },
+    {
+      "title": "Microsoft C++ Copilot build agent added iterative-build measurement and approvals",
+      "source_url": "https://devblogs.microsoft.com/cppblog/faster-c-iterative-builds-with-github-copilot/",
+      "source_type": "official_blog",
+      "visible_date": "2026-07-17 search result; page read-next context shows 2026-07-16 nearby posts",
+      "summary": "Microsoft described a GitHub Copilot build performance workflow for Windows that measures both clean and iterative C++ builds, rolls back ineffective changes, and asks for user permission before establishing baselines, running experiments, and applying optimizations.",
+      "why_it_matters": "This is useful evidence for agentic TDD and performance repair loops: an agent should test the workflow the developer actually uses, preserve rollback behavior, and collect approvals around measurement and mutation steps.",
+      "candidate_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Microsoft",
+        "Visual Studio",
+        "GitHub Copilot",
+        "C++ Build Performance agent",
+        "Iterative Build Tool"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Visual Studio",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Performance-agent loops should record baseline choice, representative workload, rollback rules, and approval points around experiments.",
+      "follow_up_notes": "Recheck visible date from the page metadata before durable ingest because the opened text exposed article content but not the main date line."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "TechRadar governance controls for AI coding agents",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "visible_date": "published 4 days ago",
+      "reason": "Outside the strict two-day cutoff window."
+    },
+    {
+      "title": "TrueFoundry enterprise MCP governance guide",
+      "source_url": "https://www.truefoundry.com/blog/enterprise-mcp-governance-control-audit-secure-mcp-server-access",
+      "visible_date": "published 2 months ago",
+      "reason": "Outside the cutoff and broad MCP governance coverage is upstream-entity-adjacent."
+    },
+    {
+      "title": "WorkOS MCP 2026-07-28 spec authentication article",
+      "source_url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+      "visible_date": "2026-06-18",
+      "reason": "Outside the cutoff; broad protocol background belongs upstream unless a local practice implication is later needed."
+    },
+    {
+      "title": "Sourcegraph AI code review guide",
+      "source_url": "https://sourcegraph.com/blog/ai-code-review",
+      "visible_date": "published last month",
+      "reason": "Outside the cutoff and broad product/tool coverage belongs upstream."
+    },
+    {
+      "title": "GitHub community discussion on AI developer tools",
+      "source_url": "https://github.com/orgs/community/discussions/187143",
+      "visible_date": "published today",
+      "reason": "Low-authority discussion thread with broad tool recommendations rather than a specific practice-level update."
+    },
+    {
+      "title": "Linear July 2 changelog entry on enterprise-managed MCP authorization",
+      "source_url": "https://linear.app/changelog",
+      "visible_date": "2026-07-02",
+      "reason": "Relevant to governed MCP practice but outside the strict two-day cutoff."
+    },
+    {
+      "title": "Cloudflare Agent Memory",
+      "source_url": "https://blog.cloudflare.com/introducing-agent-memory/",
+      "visible_date": "published 3 months ago; related July 13 item visible in search result",
+      "reason": "Outside cutoff; broad product/entity coverage belongs upstream with only local memory practice implications downstream."
+    },
+    {
+      "title": "Microsoft TypeScript 7.0 announcement",
+      "source_url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+      "visible_date": "published last week",
+      "reason": "Potentially relevant to agent feedback loops, but outside cutoff and no exact visible date in opened page text."
+    },
+    {
+      "title": "Microsoft Visual Studio built-in agent skills",
+      "source_url": "https://devblogs.microsoft.com/visualstudio/built-in-agent-skills-in-visual-studio/",
+      "visible_date": "published 3 days ago",
+      "reason": "Just outside the cutoff window; keep as possible follow-up evidence for durable skill practice."
+    },
+    {
+      "title": "Anthropic Claude platform release notes for agent-memory beta headers",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api",
+      "visible_date": "future-dated 2026-07-22 references",
+      "reason": "Future-dated relative to run timestamp and API/platform-entity details are upstream-owned unless a local migration practice note is later requested."
+    }
+  ],
+  "source_urls": [
+    "https://about.gitlab.com/press/releases/2026-07-16-gitlab-19-2-brings-governed-agentic-automation/",
+    "https://about.gitlab.com/blog/gitlab-duo-security-review-flow/",
+    "https://about.gitlab.com/blog/gitlab-duo-cli-generally-available/",
+    "https://about.gitlab.com/blog/dependency-scanning-auto-remediation/",
+    "https://github.blog/changelog/2026-07-10-agentic-autofix-for-code-scanning-alerts-in-public-preview/",
+    "https://developers.openai.com/codex/changelog",
+    "https://cursor.com/changelog",
+    "https://blog.jetbrains.com/webstorm/2026/07/webstorm-2026-2/",
+    "https://blog.jetbrains.com/go/2026/07/16/goland-2026-2-is-now-available/",
+    "https://devblogs.microsoft.com/cppblog/faster-c-iterative-builds-with-github-copilot/"
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Used only public web sources.",
+    "Did not send private, proprietary, sensitive, PII, or company-internal local content to external services.",
+    "Local repository content was used only to determine approved topic roots and federation boundaries."
+  ],
+  "follow_up_notes": [
+    "Ingest should preserve upstream-owned companies, products, developer tools, and protocols as routing notes rather than local encyclopedia leaves.",
+    "Candidate durable local themes include governed agentic flows, AI security review gates, non-automerge remediation packets, destructive-command denials, remote/mobile agent supervision, IDE-managed skills, and performance-agent approval loops.",
+    "Before ingesting Cursor, WebStorm, and Microsoft C++ items, recheck exact visible dates from page metadata or official page rendering because some opened HTML omitted the date line even though search results or URL paths provided dates."
+  ],
+  "docs_wiki_updated": false
+}
