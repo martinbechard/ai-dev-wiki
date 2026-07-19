@@ -1,0 +1,395 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_local": "2026-07-18T20:34:53-0400",
+  "run_timestamp_utc": "2026-07-19T00:34:53Z",
+  "cutoff_window": {
+    "start_utc": "2026-07-17T00:34:53Z",
+    "end_utc": "2026-07-19T00:34:53Z",
+    "policy": "Include only public sources visibly published or updated within the last 2 days relative to run time. Exclude date-only boundary items where the visible date cannot prove the item falls inside the exact window."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, evaluation, and adoption implications.",
+    "upstream_scope": "Broad ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques are upstream-owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "handling": "Each qualifying item records upstream-owned entities separately and keeps only the downstream practice implication for local ingest."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Copilot code review adds branch-tested instructions, custom setup, firewall, and separate runners",
+      "source_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+      "source_domain": "github.blog",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "GitHub says Copilot code review now reads review instructions from the pull request head branch, supports additional instruction files, can use a dedicated copilot-code-review.yml setup file, runs behind a default firewall, and has runner settings split from Copilot cloud agent.",
+      "why_it_matters": "AI-assisted code review practice can now validate instruction changes before merge, isolate review-agent runtime setup from coding-agent setup, and treat network access as a review-specific governance control.",
+      "candidate_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub Copilot code review",
+        "copilot-code-review.yml",
+        "copilot-instructions.md",
+        "AGENTS.md",
+        "REVIEW.md",
+        "GEMINI.md",
+        "CLAUDE.md"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent"
+      ],
+      "local_practice_implication": "Maintain review-agent instruction files as branch-testable artifacts and document review runtime/firewall configuration separately from background coding-agent setup."
+    },
+    {
+      "title": "Repository-level Copilot metrics expose coding-agent and review PR activity",
+      "source_url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available",
+      "source_domain": "github.blog",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "GitHub added enterprise and organization REST endpoints that return daily per-repository pull request counts for Copilot coding agent and Copilot code review, including review suggestion counts by comment type.",
+      "why_it_matters": "Team adoption dashboards can move from user-level activity to repository-level AI-readiness, making it possible to compare where agents create, review, and merge pull requests.",
+      "candidate_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Copilot usage metrics REST API",
+        "View Copilot Metrics permission"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot coding agent",
+        "Copilot code review"
+      ],
+      "local_practice_implication": "Track AI-assisted pull request activity at repository granularity, with separate measures for agent-authored PRs and AI review comments."
+    },
+    {
+      "title": "Copilot app usage joins enterprise and organization metrics API",
+      "source_url": "https://github.blog/changelog/2026-07-17-github-copilot-app-now-available-in-the-usage-metrics-api/",
+      "source_domain": "github.blog",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "GitHub added Copilot app fields to enterprise and organization usage reports, including distinct active app users, session counts, request counts, prompt counts, and token usage.",
+      "why_it_matters": "Operating-model reporting can distinguish IDE, app, chat, code review, and coding-agent usage instead of treating all assistant activity as one undifferentiated channel.",
+      "candidate_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "daily_active_copilot_app_users",
+        "totals_by_copilot_app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app"
+      ],
+      "local_practice_implication": "Separate desktop/app-agent adoption and token consumption from code-review, IDE, and coding-agent activity when measuring rollout health."
+    },
+    {
+      "title": "GitHub Mobile adds one-tap Copilot fixes from PR review comments",
+      "source_url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent/",
+      "source_domain": "github.blog",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "GitHub Mobile can now start Copilot cloud agent directly from Copilot code review pull request comments, either from the PR main view or from individual review comments.",
+      "why_it_matters": "Source workflows are moving toward review-comment-to-agent repair loops that start outside the desktop IDE, raising supervision, context-carrying, and final-verification requirements.",
+      "candidate_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Fix with Copilot",
+        "GitHub Mobile",
+        "Copilot code review comments"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Mobile",
+        "Copilot cloud agent"
+      ],
+      "local_practice_implication": "Document mobile-initiated agent repair as a handoff that still needs clear PR context, review-comment traceability, and post-agent validation before merge."
+    },
+    {
+      "title": "Cursor in Slack adds planning, progress, multi-repo environments, and cross-channel context",
+      "source_url": "https://cursor.com/changelog/slack-improvements",
+      "source_domain": "cursor.com",
+      "visible_date": "Jul 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "Cursor says its Slack integration now shares a plan before starting, posts progress status, can run in named multi-repo environments, prompts when a repository switch is needed, and can read or post across channels and threads.",
+      "why_it_matters": "Chat-native agent work needs explicit planning checkpoints, multi-repository environment selection, and governance around cross-channel context access.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Cursor in Slack",
+        "multi-repo environments",
+        "Switch repository"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Slack"
+      ],
+      "local_practice_implication": "Treat chat-triggered coding-agent tasks as governed cross-context workflows, with early plan review and explicit repository or channel boundary changes."
+    },
+    {
+      "title": "Google Cloud publishes token-efficient software engineering principles for coding assistants",
+      "source_url": "https://cloud.google.com/blog/topics/developers-practitioners/guide-to-ai-tokenomics-eleven-principles-for-token-efficient-software-engineering",
+      "source_domain": "cloud.google.com",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "Google Cloud frames token consumption as a software engineering concern for AI coding assistants, warning that context bloat increases latency, cost, forgotten instructions, and hallucination risk. It recommends reusable skills, scripts, CLI tools, read-only codebase research before edits, and task-appropriate model selection.",
+      "why_it_matters": "Context architecture and coding-agent prompts should optimize for durable reusable instructions, local tooling, and bounded context rather than repeatedly restating workflow rules in every prompt.",
+      "candidate_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "AI Tokenomics",
+        "SKILL.md",
+        "Antigravity",
+        "Gemini 3.5 Flash"
+      ],
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Google Antigravity",
+        "Gemini"
+      ],
+      "local_practice_implication": "Add token budget and context-bloat controls to agent prompt practice, especially skill packaging, read-only discovery, and CLI-based verification loops."
+    },
+    {
+      "title": "Google Cloud demos package agent scaffolding, evaluation, deployment, monitoring, approvals, and MCP tools",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/13-demos-on-gemini-enterprise-agent-platform",
+      "source_domain": "cloud.google.com",
+      "visible_date": "July 17, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "Google Cloud published 13 demos for Gemini Enterprise Agent Platform and says installing Agents CLI into coding agents gives them skills for ADK and Agent Platform. The examples include an approval agent with PII redaction, prompt-injection defense, compliance analysis, human review, Pub/Sub events, and LLM-as-judge evaluation, plus MCP tool codelabs.",
+      "why_it_matters": "Application-pattern guidance can treat agent scaffolding, pre-LLM security screens, human-in-the-loop checkpoints, and evals as one connected delivery pattern rather than separate afterthoughts.",
+      "candidate_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Gemini Enterprise Agent Platform",
+        "Agents CLI",
+        "Agent Development Kit",
+        "Model Context Protocol",
+        "LLM-as-judge"
+      ],
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Gemini",
+        "ADK",
+        "MCP"
+      ],
+      "local_practice_implication": "Capture approval-agent architecture as a practice pattern: pre-LLM screening, explicit human review, event triggers, MCP tools, deployment, monitoring, and eval hooks."
+    },
+    {
+      "title": "Microsoft shows API-safe evaluation for agent skills",
+      "source_url": "https://developer.microsoft.com/blog/how-to-test-agent-skills-without-hitting-real-apis/",
+      "source_domain": "developer.microsoft.com",
+      "visible_date": "July 17th, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "Microsoft argues that agent skills calling APIs need scenario-based evaluation that avoids live costs, mutations, and nondeterministic state. It describes proxy-based API emulation that keeps production URLs in the skill while intercepting requests and resetting data for each run.",
+      "why_it_matters": "AI-assisted development evals should not mutate production APIs or rewrite skill URLs just to test; stable emulation can preserve shipped prompt/context shape while making tests repeatable.",
+      "candidate_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Agent skills",
+        "Dev Proxy",
+        "Copilot CLI",
+        "Claude Code CLI",
+        "Codex CLI"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "GitHub Copilot",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Document proxy-backed skill eval harnesses as a way to preserve production-like tool context without incurring costs or changing live state."
+    },
+    {
+      "title": "TrueFoundry frames model deprecation as gateway and configuration-inventory practice",
+      "source_url": "https://www.truefoundry.com/blog/model-deprecations-virtual-models-staged-cutovers",
+      "source_domain": "truefoundry.com",
+      "visible_date": "Published: July 18, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "TrueFoundry uses active provider deprecations to argue for model indirection, observational inventories, and staged cutovers. It notes that model IDs can hide in service configs, notebooks, CI, framework defaults, coding-agent configuration files, and third-party tools.",
+      "why_it_matters": "Coding-agent governance should inventory model identifiers outside application source code and route agent configurations through stable aliases with traffic, cost, owner, and fallback visibility.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "virtual models",
+        "model deprecations",
+        "staged cutovers",
+        "AI gateway"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "DeepSeek"
+      ],
+      "local_practice_implication": "Treat coding-agent model configuration as managed infrastructure with owner-aware inventory, deprecation drills, central aliases, and eval-gated rollback paths."
+    },
+    {
+      "title": "Security Boulevard syndicates MCP security roadmap emphasizing schema manipulation and connection inventory",
+      "source_url": "https://securityboulevard.com/2026/07/securing-model-context-protocol-a-roadmap-for-post-quantum-ai-infrastructure/",
+      "source_domain": "securityboulevard.com",
+      "visible_date": "July 18, 2026",
+      "accessed_at_utc": "2026-07-19T00:34:53Z",
+      "summary": "A syndicated Gopher Security post argues that MCP's dynamic schema discovery creates interception and schema-manipulation risks. It recommends mapping MCP connections, categorizing sensitivity, and transitioning sensitive endpoints with hybrid post-quantum controls.",
+      "why_it_matters": "MCP governance should include connection inventory, sensitivity classification, schema-trust review, and cryptographic roadmap planning for long-lived sensitive agent traffic.",
+      "candidate_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Model Context Protocol",
+        "Schema Manipulation",
+        "Store Now Decrypt Later",
+        "FIPS 203",
+        "FIPS 204"
+      ],
+      "upstream_owned_entities": [
+        "Security Boulevard",
+        "Gopher Security",
+        "MCP"
+      ],
+      "local_practice_implication": "Add MCP connection inventory and schema-manipulation risk checks to tool-governance guidance, while routing broad MCP ecosystem background upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Why AI coding agents keep stalling before production and the governance controls that fix it",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "visible_date": "Published: 5 days ago",
+      "reason": "Outside the 2-day cutoff window despite strong governance relevance."
+    },
+    {
+      "title": "2026 Model Context Protocol Server and AI Agent Hackathon",
+      "source_url": "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/2026-ai-hackathon",
+      "visible_date": "Published: 5 days ago",
+      "reason": "Outside the cutoff and event/training oriented rather than a new practice-level update for local ingest."
+    },
+    {
+      "title": "Building scalable AI agents with modular prompt transpilation",
+      "source_url": "https://developers.googleblog.com/building-scalable-ai-agents-with-modular-prompt-transpilation/",
+      "visible_date": "JULY 16, 2026",
+      "reason": "Visible date is a boundary-only date relative to the exact run window; no visible time proves it was published after 2026-07-17T00:34:53Z."
+    },
+    {
+      "title": "Agent Framework: Scaling the harness capabilities",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/agent-harness-scaling-the-claw-or-harness-capabilities/",
+      "visible_date": "July 9th, 2026",
+      "reason": "Outside the cutoff window, though useful for harness architecture and subagent patterns."
+    },
+    {
+      "title": "Don't rewrite your CLI for agents",
+      "source_url": "https://developer.microsoft.com/blog/dont-rewrite-your-cli-for-agents/",
+      "visible_date": "July 7th, 2026",
+      "reason": "Outside the cutoff window, despite direct relevance to tool-call and CLI design practice."
+    },
+    {
+      "title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "visible_date": "July 8, 2026",
+      "reason": "Outside the cutoff window; likely already eligible for earlier collector or ingest runs."
+    },
+    {
+      "title": "Agentic autofix for code scanning alerts in public preview",
+      "source_url": "https://github.blog/changelog/2026-07-10-agentic-autofix-for-code-scanning-alerts-in-public-preview/",
+      "visible_date": "July 10, 2026",
+      "reason": "Outside the cutoff window."
+    },
+    {
+      "title": "Prompt Injection Is Stealing API Keys From Claude Code, Gemini CLI and GitHub Copilot",
+      "source_url": "https://www.datawiza.com/blog/industry/prompt-injection-is-stealing-api-keys-from-claude-code-gemini-cli-and-github-copilot",
+      "visible_date": "Updated July 18, 2026",
+      "reason": "Visible update date qualifies, but the article appears to revisit a three-month-old incident; excluded to avoid duplicating broad security incident coverage likely owned upstream unless a future ingest confirms materially new local practice content."
+    },
+    {
+      "title": "Best AI for Coding in 2026",
+      "source_url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "visible_date": "Updated July 18, 2026",
+      "reason": "Broad model benchmark/entity coverage is upstream-owned and the local practice implication was too thin for this collector."
+    },
+    {
+      "title": "List of Top MCP Servers for July 18, 2026",
+      "source_url": "https://mcpmarket.com/daily/top-mcp-server-list-july-18-2026",
+      "visible_date": "July 18, 2026",
+      "reason": "MCP server catalog/ranking coverage is upstream-owned; no distinct downstream practice implication was identified."
+    }
+  ],
+  "follow_up_notes": [
+    "Potential ingest destinations: branch-tested review instructions under prompt-and-instructions, review-agent runtime controls under verification-and-evals/governance-and-risk, repository-level adoption metrics under adoption-and-operating-model, and MCP connection inventory under retrieval-and-tools/governance-and-risk.",
+    "If July 16 boundary-only sources are needed, rerun with source pages that expose exact publication times or accept calendar-day rather than exact 48-hour cutoff semantics.",
+    "Avoid creating local durable pages for GitHub, Cursor, Google Cloud, Microsoft, TrueFoundry, MCP, Codex, Claude Code, or Gemini; link or route broad entity background upstream."
+  ],
+  "search_notes": {
+    "public_web_only": true,
+    "private_or_internal_content_sent_to_external_services": false,
+    "wiki_pages_updated": false,
+    "raw_processed_written": false
+  }
+}
