@@ -1,0 +1,647 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-18T21:01:24-04:00",
+  "run_timestamp_utc": "2026-07-19T01:01:24Z",
+  "cutoff_window": {
+    "start_utc": "2026-07-12T01:01:24Z",
+    "end_utc": "2026-07-19T01:01:24Z",
+    "policy": "visible publication or update date within last 7 days; date-missing, ambiguous, future-dated, and boundary-only candidates excluded"
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 69,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+  ],
+  "selected_leaf_count": 15,
+  "source_urls_checked": [
+    "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+    "https://coder.com/blog/ephemeral-environments",
+    "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+    "https://docs.cloud.google.com/release-notes",
+    "https://github.com/hookdeck/webhook-skills",
+    "https://github.com/webpro255/awesome-ai-agent-attacks",
+    "https://levelup.gitconnected.com/evals-what-every-ai-engineer-needs-to-know-in-2026-f20d985963d9",
+    "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+    "https://vishsubramanian.me/my-agentic-development-workflow-as-of-july-2026/",
+    "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
+    "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+    "https://www.esecurityplanet.com/weekly-roundup/ai-driven-attacks-critical-exploits-and-global-breaches-define-this-week-in-july-2026-in-cybersecurity/",
+    "https://www.firecrawl.dev/blog/claude-code-vs-codex",
+    "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+    "https://www.morphllm.com/best-ai-cli-tools-2026",
+    "https://www.pointfive.co/blog/ai-coding-agent-cost-tools-2026",
+    "https://www.reply.com/valorem-reply/en/resources/insights/blog/7-types-of-ai-agents-to-automate-your-workflows",
+    "https://www.supernodes.ai/blogs/deepsearch-inside-agents",
+    "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+    "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation",
+    "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+    "https://www.tinyfish.ai/blog"
+  ],
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "published_or_updated_at": "2026-07-13",
+      "factual_summary": "TechRadar Pro opinion by Coder CEO Rob Whiteley reports that 61% of 100 engineering organizations already run AI agents but almost none trust them in production; it recommends isolate, scope, and approve controls, including ephemeral workspaces, zero outbound access by default, scoped identities, real-time monitoring for anomalous API calls/token burn, policy-based model routing, and auditable human approval gates.",
+      "why_it_matters_for_leaf": "Reinforces local practice leaves that treat agent production promotion, destructive actions, model selection, budget burn, and workspace isolation as governance surfaces rather than prompt-only concerns.",
+      "named_entities": [
+        "TechRadar Pro",
+        "Coder",
+        "Rob Whiteley",
+        "MCP",
+        "GitHub",
+        "Salesforce"
+      ],
+      "upstream_owned_entities": [
+        "Coder",
+        "MCP",
+        "GitHub",
+        "Salesforce"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "follow_up_note": "Ingest should keep the local implication as isolate/scope/approve gates and route product/entity background upstream."
+    },
+    {
+      "source_url": "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+      "published_or_updated_at": "2026-07-14",
+      "factual_summary": "Credo AI launched Agent Governor in research preview and frames the agent harness as the control layer where tools, data, and actions are governed at runtime before the agent acts.",
+      "why_it_matters_for_leaf": "Supports local guidance that destructive commands and instruction boundaries need harness-level authorization and action-time policy checks instead of after-the-fact review.",
+      "named_entities": [
+        "Credo AI",
+        "Credo AI Agent Governor",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "Credo AI",
+        "Gartner"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "follow_up_note": "If ingested, emphasize harness-level controls and avoid local product catalog coverage."
+    },
+    {
+      "source_url": "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+      "published_or_updated_at": "2026-07-17",
+      "factual_summary": "ITPro reports CrowdStrike Field CTO Zeki Turedi warning that compromised or manipulated AI agents could escalate living-off-the-land attacks because agents often receive the full privilege of human users and can reach broadly across enterprise systems.",
+      "why_it_matters_for_leaf": "Strengthens local governance guidance for least privilege, identity visibility, sensitive-data containment, and destructive-command review for tool-capable agents.",
+      "named_entities": [
+        "ITPro",
+        "CrowdStrike",
+        "Zeki Turedi",
+        "PowerShell",
+        "Salt Typhoon"
+      ],
+      "upstream_owned_entities": [
+        "CrowdStrike",
+        "PowerShell",
+        "Salt Typhoon"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "follow_up_note": "Treat as local practice evidence for privileged-agent identity and monitoring controls."
+    },
+    {
+      "source_url": "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+      "published_or_updated_at": "2026-07-13",
+      "factual_summary": "Check Point Research says AI has shifted from attack assistant to operator, citing one incident where Claude Code and GPT-4.1 were used in parallel to run more than 5,000 executed commands and expose roughly 400 million records. It also reports roughly fivefold growth in large malicious prompt-injection detections from March to May 2026 and doubling of high-risk GenAI prompts from 2% to 4%.",
+      "why_it_matters_for_leaf": "Adds current evidence for prompt-injection handling, sensitive-data controls, and execution ceilings around coding agents with tool access.",
+      "named_entities": [
+        "Check Point Research",
+        "Claude Code",
+        "GPT-4.1",
+        "CISA",
+        "CERT-In",
+        "Ollama",
+        "GreyNoise"
+      ],
+      "upstream_owned_entities": [
+        "Check Point Research",
+        "Claude Code",
+        "GPT-4.1",
+        "CISA",
+        "CERT-In",
+        "Ollama",
+        "GreyNoise"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md"
+      ],
+      "follow_up_note": "Route broad security-report and entity details upstream; local leaf impact is execution-boundary governance."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+      "published_or_updated_at": "2026-07-16",
+      "factual_summary": "TechRadar Pro opinion by OutSystems CIO Tiago Azevedo argues that fragmented human-in-the-loop controls do not scale as agent counts rise, and recommends a centralized governance layer with shared rules, visibility into running agents, dependencies, and real-time architecture context.",
+      "why_it_matters_for_leaf": "Supports local adoption guidance that workflow architecture and shared governance should precede model/tool selection and decentralized agent rollout.",
+      "named_entities": [
+        "TechRadar Pro",
+        "OutSystems",
+        "Tiago Azevedo",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "OutSystems",
+        "Gartner"
+      ],
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "follow_up_note": "Preserve as local operating-model implication, not a broad enterprise-AI governance page."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation",
+      "published_or_updated_at": "2026-07-14",
+      "factual_summary": "TechRadar Pro opinion by ISC2 CISO Jon France frames modern software supply chain risk around visibility, vigilance, and validation, explicitly including embedded AI tools, external models, highly connected agents, data poisoning, prompt injection, model inversion, supplier scrutiny, and skills/framework validation.",
+      "why_it_matters_for_leaf": "Directly reinforces sensitive-data and supply-chain controls for AI-assisted development, especially when vendor tools and embedded agents become part of the development attack surface.",
+      "named_entities": [
+        "TechRadar Pro",
+        "ISC2",
+        "Jon France",
+        "UK Software Security Code of Practice"
+      ],
+      "upstream_owned_entities": [
+        "ISC2",
+        "UK Software Security Code of Practice"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "follow_up_note": "Use local lens for supplier/tool approval checks and route broad standards background upstream if needed."
+    },
+    {
+      "source_url": "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+      "published_or_updated_at": "2026-07-13T17:52:00",
+      "factual_summary": "A Julia Discourse user describes a terminal/pane-based coding-agent workflow where one agent evaluates a model through a harness, hands off to another agent to improve the model, and a watcher waits for a completion signal before retesting.",
+      "why_it_matters_for_leaf": "Provides public practice evidence for delegated coding handoffs, terminal-native coordination, watcher-triggered handoff protocols, and evaluation-driven improvement loops.",
+      "named_entities": [
+        "Julia Discourse",
+        "KaimonSlate",
+        "Kaimon",
+        "herdr"
+      ],
+      "upstream_owned_entities": [
+        "Julia",
+        "KaimonSlate",
+        "Kaimon",
+        "herdr"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "follow_up_note": "Potential ingest should focus on the handoff/eval pattern, not Julia package background."
+    },
+    {
+      "source_url": "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+      "published_or_updated_at": "2026-07-14",
+      "factual_summary": "Perplexity published WANDR, a benchmark for wide-and-deep research agents with 500 tasks and 170,495 required source-backed records; the best reported system remains low on hard F1, indicating evidence-heavy research agents still need explicit verification gates.",
+      "why_it_matters_for_leaf": "Relevant to deep-research writing workflows and performance gates because it converts research-agent quality into measurable evidence-record coverage rather than polished prose alone.",
+      "named_entities": [
+        "Perplexity",
+        "WANDR",
+        "Perplexity Computer",
+        "Search as Code"
+      ],
+      "upstream_owned_entities": [
+        "Perplexity",
+        "WANDR",
+        "Perplexity Computer",
+        "Search as Code"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "follow_up_note": "Route benchmark/product background upstream; keep local implication as evidence-backed research gates."
+    },
+    {
+      "source_url": "https://www.tinyfish.ai/blog",
+      "published_or_updated_at": "2026-07-18",
+      "factual_summary": "TinyFish blog index lists a July 18 field note on building a deep research system, emphasizing a shared planning/execution reasoning loop, deterministic code for mechanical tasks, context-loss reduction, latency reduction, and stronger citations at lower compute cost.",
+      "why_it_matters_for_leaf": "Supports local guidance that research/writing workflows should keep planning, execution, and evidence checks in one loop while using deterministic tools where possible.",
+      "named_entities": [
+        "TinyFish"
+      ],
+      "upstream_owned_entities": [
+        "TinyFish"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "follow_up_note": "If a direct article URL becomes available during ingest, prefer it over the blog index."
+    },
+    {
+      "source_url": "https://www.supernodes.ai/blogs/deepsearch-inside-agents",
+      "published_or_updated_at": "2026-07-15",
+      "factual_summary": "Supernodes updated a deep-research agent guide describing research as a loop of search, read, evaluate, refine, and search again; it recommends decomposing questions into subquestions and using multiple sources for corroboration.",
+      "why_it_matters_for_leaf": "Maps directly to local orient-inspect-patch-verify and deep-research workflow leaves by treating research as iterative evidence collection rather than a single search prompt.",
+      "named_entities": [
+        "Supernodes",
+        "OpenAI Deep Research",
+        "Google",
+        "Perplexity Pro Search",
+        "Hermes",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Supernodes",
+        "OpenAI Deep Research",
+        "Google",
+        "Perplexity Pro Search",
+        "Hermes",
+        "Claude Code"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "follow_up_note": "Use as local workflow pattern evidence; avoid duplicating product background."
+    }
+  ],
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "url": "https://www.pointfive.co/blog/ai-coding-agent-cost-tools-2026",
+      "visible_date": "2026-07-07",
+      "reason": "outside the 2026-07-12T01:01:24Z to 2026-07-19T01:01:24Z cutoff window"
+    },
+    {
+      "url": "https://www.reply.com/valorem-reply/en/resources/insights/blog/7-types-of-ai-agents-to-automate-your-workflows",
+      "visible_date": null,
+      "reason": "search result suggested recency, but opened page did not expose a visible publication or update date"
+    },
+    {
+      "url": "https://vishsubramanian.me/my-agentic-development-workflow-as-of-july-2026/",
+      "visible_date": null,
+      "reason": "opened page did not expose a visible publication date for the article itself; related-post dates are not acceptable"
+    },
+    {
+      "url": "https://github.com/webpro255/awesome-ai-agent-attacks",
+      "visible_date": null,
+      "reason": "useful security timeline, but opened GitHub page did not expose a clearly visible last-updated date for the page content"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
+      "visible_date": "2026-07-04",
+      "reason": "outside cutoff window"
+    },
+    {
+      "url": "https://docs.cloud.google.com/release-notes",
+      "visible_date": "2026-07-12",
+      "reason": "boundary date-only entry for Publisher Agent 2.7.0; excluded as ambiguous relative to cutoff time"
+    },
+    {
+      "url": "https://docs.cloud.google.com/release-notes",
+      "visible_date": "2026-05-24",
+      "reason": "Gemini Deep Research Agent preview entry was older than the cutoff despite a recent release-note page crawl"
+    },
+    {
+      "url": "https://www.esecurityplanet.com/weekly-roundup/ai-driven-attacks-critical-exploits-and-global-breaches-define-this-week-in-july-2026-in-cybersecurity/",
+      "visible_date": "2026-07-10",
+      "reason": "outside cutoff window"
+    },
+    {
+      "url": "https://www.morphllm.com/best-ai-cli-tools-2026",
+      "visible_date": "2026-06-09",
+      "reason": "outside cutoff window"
+    },
+    {
+      "url": "https://coder.com/blog/ephemeral-environments",
+      "visible_date": null,
+      "reason": "search crawl was recent, but publication was months old and no qualifying update was visible"
+    }
+  ],
+  "leaf_results": [
+    {
+      "leaf_id": "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.reply.com/valorem-reply/en/resources/insights/blog/7-types-of-ai-agents-to-automate-your-workflows",
+        "https://github.com/hookdeck/webhook-skills",
+        "https://docs.cloud.google.com/release-notes"
+      ],
+      "qualified_update_count": 0,
+      "qualifying_update_urls": [],
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying public update found in this run; keep on normal rotation."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "source_urls_checked": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+        "https://www.morphllm.com/best-ai-cli-tools-2026",
+        "https://www.firecrawl.dev/blog/claude-code-vs-codex"
+      ],
+      "qualified_update_count": 1,
+      "qualifying_update_urls": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31"
+      ],
+      "last_qualified_update_at": "2026-07-13",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/"
+      ],
+      "qualified_update_count": 4,
+      "qualifying_update_urls": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/"
+      ],
+      "last_qualified_update_at": "2026-07-17",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "source_urls_checked": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+        "https://levelup.gitconnected.com/evals-what-every-ai-engineer-needs-to-know-in-2026-f20d985963d9"
+      ],
+      "qualified_update_count": 2,
+      "qualifying_update_urls": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep"
+      ],
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "source_urls_checked": [
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+        "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation"
+      ],
+      "qualified_update_count": 3,
+      "qualifying_update_urls": [
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+        "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation"
+      ],
+      "last_qualified_update_at": "2026-07-17",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible"
+      ],
+      "qualified_update_count": 3,
+      "qualifying_update_urls": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible"
+      ],
+      "last_qualified_update_at": "2026-07-16",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "source_urls_checked": [
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+        "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation"
+      ],
+      "qualified_update_count": 3,
+      "qualifying_update_urls": [
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://blog.checkpoint.com/ai-security/ai-security-threats-in-2026-insights-from-check-point-research/",
+        "https://www.techradar.com/pro/the-new-rules-of-software-supply-chain-security-visibility-vigilance-validation"
+      ],
+      "last_qualified_update_at": "2026-07-17",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "source_urls_checked": [
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "qualified_update_count": 2,
+      "qualifying_update_urls": [
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "last_qualified_update_at": "2026-07-18",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "source_urls_checked": [
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor"
+      ],
+      "qualified_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.credo.ai/blog/introducing-credo-ai-agent-governor"
+      ],
+      "last_qualified_update_at": "2026-07-14",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible",
+        "https://www.pointfive.co/blog/ai-coding-agent-cost-tools-2026"
+      ],
+      "qualified_update_count": 2,
+      "qualifying_update_urls": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible"
+      ],
+      "last_qualified_update_at": "2026-07-16",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible"
+      ],
+      "qualified_update_count": 2,
+      "qualifying_update_urls": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://www.techradar.com/pro/as-ai-scales-is-meaningful-governance-possible"
+      ],
+      "last_qualified_update_at": "2026-07-16",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "source_urls_checked": [
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "qualified_update_count": 3,
+      "qualifying_update_urls": [
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "last_qualified_update_at": "2026-07-18",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "source_urls_checked": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31",
+        "https://vishsubramanian.me/my-agentic-development-workflow-as-of-july-2026/"
+      ],
+      "qualified_update_count": 1,
+      "qualifying_update_urls": [
+        "https://discourse.julialang.org/t/best-practices-for-using-coding-agents-with-julia/136829/31"
+      ],
+      "last_qualified_update_at": "2026-07-13",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "source_urls_checked": [
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "qualified_update_count": 3,
+      "qualifying_update_urls": [
+        "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+        "https://www.tinyfish.ai/blog",
+        "https://www.supernodes.ai/blogs/deepsearch-inside-agents"
+      ],
+      "last_qualified_update_at": "2026-07-18",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+        "https://coder.com/blog/ephemeral-environments",
+        "https://docs.cloud.google.com/release-notes"
+      ],
+      "qualified_update_count": 1,
+      "qualifying_update_urls": [
+        "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it"
+      ],
+      "last_qualified_update_at": "2026-07-13",
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity updates belong upstream; this artifact records only local practice implications for ai-dev-wiki leaves.",
+    "upstream_owned_entities": [
+      "CERT-In",
+      "CISA",
+      "Check Point Research",
+      "Claude Code",
+      "Coder",
+      "Credo AI",
+      "CrowdStrike",
+      "GPT-4.1",
+      "Gartner",
+      "GitHub",
+      "Google",
+      "GreyNoise",
+      "Hermes",
+      "ISC2",
+      "Julia",
+      "Kaimon",
+      "KaimonSlate",
+      "MCP",
+      "Ollama",
+      "OpenAI Deep Research",
+      "OutSystems",
+      "Perplexity",
+      "Perplexity Computer",
+      "Perplexity Pro Search",
+      "PowerShell",
+      "Salesforce",
+      "Salt Typhoon",
+      "Search as Code",
+      "Supernodes",
+      "TinyFish",
+      "UK Software Security Code of Practice",
+      "WANDR",
+      "herdr"
+    ]
+  },
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false,
+  "follow_up_notes": [
+    "Normal raw ingest should decide which qualifying updates merit synthesis into durable leaves and monthly digest entries.",
+    "Do not synthesize broad product/company/model/framework background locally; route it to the upstream AI wiki if needed.",
+    "Review date-ambiguous excluded candidates only if a later pass finds a visible updated date."
+  ],
+  "blockers": []
+}
