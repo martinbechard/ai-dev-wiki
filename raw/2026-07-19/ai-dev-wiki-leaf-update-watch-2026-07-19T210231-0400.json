@@ -1,0 +1,223 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-19T21:02:31-04:00",
+  "cutoff_window": {
+    "start": "2026-07-12T21:02:31-04:00",
+    "end": "2026-07-19T21:02:31-04:00",
+    "timezone": "America/Toronto",
+    "rule": "Only include sources published or visibly updated within the last seven days relative to run time."
+  },
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md"
+  ],
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+    "https://github.com/microsoft/agent-governance-toolkit",
+    "https://api.github.com/repos/microsoft/agent-governance-toolkit",
+    "https://daverupert.com/2026/07/ship-shape/",
+    "https://www.lexogrine.com/blog/ai-agent-adoption-statistics-in-2026",
+    "https://developersdigest.tech/p/beware-of-agentic-botnets-when-llms",
+    "https://arxiv.org/abs/2607.09114",
+    "https://arxiv.org/abs/2607.09213",
+    "https://arxiv.org/abs/2607.06358",
+    "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+    "https://dev.to/lovestaco/how-to-build-rag-chunking-indexing-and-conversational-retrieval-the-architecture-that-scales-49ei",
+    "https://dev.to/vini_ai/how-ai-agent-frameworks-support-complex-app-development-workflows-49oh",
+    "https://www.linkedin.com/pulse/tool-augmented-generation-ai-agents-design-patterns-real-gautam-4t1xc"
+  ],
+  "source_url_count": 13,
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "visible_date": "2026-07-13",
+      "date_basis": "Article page/search result visible publication date within the cutoff window.",
+      "matched_leaf_ids": [
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "factual_summary": "The article argues that coding agents stall before production when organizations lack policy-as-code enforcement, identity boundaries, sandboxing, human approval gates, and monitoring for autonomous execution.",
+      "why_it_matters_for_leaf": "The selected lifecycle, harness, MCP/tool governance, and telemetry leaves can use this source as raw evidence that production agent workflows need explicit execution boundaries and observable control points, not only better prompts.",
+      "named_entities": [
+        "AI coding agents",
+        "policy-as-code",
+        "sandboxing",
+        "human approval gates"
+      ],
+      "upstream_owned_entities": [
+        "AI coding agents"
+      ],
+      "local_practice_implication": "Keep future downstream synthesis focused on local gate placement, harness responsibilities, and telemetry requirements; broad product/entity background belongs upstream.",
+      "follow_up_note": "Consider ingesting into governance and harness leaves together rather than duplicating the same controls in each page."
+    },
+    {
+      "source_url": "https://api.github.com/repos/microsoft/agent-governance-toolkit",
+      "visible_date": "2026-07-19",
+      "date_basis": "GitHub repository API reports updated_at 2026-07-19T20:18:26Z and pushed_at 2026-07-19T20:48:05Z.",
+      "matched_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "factual_summary": "The public Microsoft repository describes an AI Agent Governance Toolkit for policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents.",
+      "why_it_matters_for_leaf": "The repository is current public evidence that governance is being packaged as reusable harness infrastructure, which maps directly to local subagent coordination, agent harness, and tool-call governance practices.",
+      "named_entities": [
+        "Microsoft",
+        "Agent Governance Toolkit",
+        "OWASP Agentic Top 10",
+        "zero-trust identity"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "OWASP Agentic Top 10"
+      ],
+      "local_practice_implication": "Route broad toolkit/entity coverage upstream; locally, preserve the practice implication that agent harnesses should make identity, policy, sandbox, and reliability controls explicit components.",
+      "follow_up_note": "During ingest, prefer the repository and API timestamps as provenance and avoid treating popularity metrics as adoption evidence."
+    },
+    {
+      "source_url": "https://daverupert.com/2026/07/ship-shape/",
+      "visible_date": "2026-07-15",
+      "date_basis": "Post URL and page metadata indicate July 2026 publication, with search result showing July 15 inside the window.",
+      "matched_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "factual_summary": "The post reflects on coding-agent work as a ship-shape practice: stronger models make faster progress, but durable results still depend on prompts, decomposition, review, and testable delivery habits.",
+      "why_it_matters_for_leaf": "This is practitioner evidence for keeping use/compose/build workflow selection and TDD guidance centered on controllable work shape rather than model choice alone.",
+      "named_entities": [
+        "coding agents",
+        "Claude Code",
+        "local development workflows"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code"
+      ],
+      "local_practice_implication": "Synthesize as a local workflow-shaping example, not as broad Claude Code product coverage.",
+      "follow_up_note": "Check whether the local AI-assisted TDD page needs a short note on tests as the stabilizer for agent-generated implementation bursts."
+    },
+    {
+      "source_url": "https://www.lexogrine.com/blog/ai-agent-adoption-statistics-in-2026",
+      "visible_date": "2026-07-14",
+      "date_basis": "Search result shows July 14, 2026 publication inside the window.",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "The article summarizes 2026 AI agent adoption patterns, including agentic systems that plan, execute, use tools, maintain memory, and coordinate multiple specialized agents.",
+      "why_it_matters_for_leaf": "The local application-pattern leaves can use it as dated adoption context for why workflow state, runtime telemetry, and multi-agent coordination need first-class application surfaces.",
+      "named_entities": [
+        "AI agents",
+        "multi-agent systems",
+        "tool use",
+        "memory"
+      ],
+      "upstream_owned_entities": [
+        "AI agents",
+        "multi-agent systems"
+      ],
+      "local_practice_implication": "Keep any ingest grounded in local operating model and UI/runtime surfaces; broad market statistics should be routed upstream or summarized only as context.",
+      "follow_up_note": "Verify statistics against primary sources before using numbers in durable wiki prose."
+    },
+    {
+      "source_url": "https://developersdigest.tech/p/beware-of-agentic-botnets-when-llms",
+      "visible_date": "2026-07-18",
+      "date_basis": "Search result and newsletter page indicate July 18, 2026 publication inside the window.",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "The newsletter reports on HalluSquatting, where LLMs can invent package names that attackers may later register, turning generated dependency suggestions into a supply-chain risk.",
+      "why_it_matters_for_leaf": "This supports local guidance that request packages, retrieval evidence, RAG provenance, and tool-call governance must distinguish generated suggestions from verified repository or package-index facts.",
+      "named_entities": [
+        "HalluSquatting",
+        "LLMs",
+        "package registries",
+        "supply-chain risk"
+      ],
+      "upstream_owned_entities": [
+        "HalluSquatting",
+        "LLMs"
+      ],
+      "local_practice_implication": "Ingest as a concrete boundary for dependency/tool suggestions: require citation-backed package identity before install or code generation changes.",
+      "follow_up_note": "Use the newsletter only as a dated public pointer; verify technical details against the original paper or package-index evidence during synthesis."
+    }
+  ],
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "source_url": "https://arxiv.org/abs/2607.09114",
+      "reason": "Visible submission date is older than the seven-day cutoff; not qualified for this run even though relevant to agent governance."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.09213",
+      "reason": "Visible submission date is older than the seven-day cutoff or not clearly inside the window; excluded by boundary-date rule."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.06358",
+      "reason": "Visible submission date precedes the cutoff window; excluded despite relevance to AI code or agent reliability."
+    },
+    {
+      "source_url": "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+      "reason": "Public source is useful for eval practice but publication/update date is outside the last seven days."
+    },
+    {
+      "source_url": "https://dev.to/lovestaco/how-to-build-rag-chunking-indexing-and-conversational-retrieval-the-architecture-that-scales-49ei",
+      "reason": "Search result showed about two weeks old, outside the cutoff window."
+    },
+    {
+      "source_url": "https://dev.to/vini_ai/how-ai-agent-frameworks-support-complex-app-development-workflows-49oh",
+      "reason": "Search result showed about two weeks old, outside the cutoff window."
+    },
+    {
+      "source_url": "https://www.linkedin.com/pulse/tool-augmented-generation-ai-agents-design-patterns-real-gautam-4t1xc",
+      "reason": "Search result showed about one month old, outside the cutoff window."
+    }
+  ],
+  "federation_routing": {
+    "upstream_owned_entity_rule": "Broad ecosystem entities, product background, model families, companies, and reusable entity analysis route to the upstream AI wiki; this raw artifact preserves only local practice implications for the downstream AI Dev Wiki leaves.",
+    "upstream_owned_entities": [
+      "AI agents",
+      "AI coding agents",
+      "Claude Code",
+      "HalluSquatting",
+      "LLMs",
+      "Microsoft",
+      "OWASP Agentic Top 10",
+      "multi-agent systems"
+    ]
+  },
+  "follow_up_notes": [
+    "Raw-only watcher output. Do not update docs/wiki pages from this artifact until the normal raw ingest workflow runs.",
+    "During ingest, deduplicate overlapping governance/harness/control implications across leaves and route broad entity background upstream."
+  ],
+  "docs_wiki_updated": false,
+  "blockers": []
+}
