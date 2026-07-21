@@ -1,0 +1,684 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-20T20:32:00-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-07-18T20:32:00-04:00",
+    "end": "2026-07-20T20:32:00-04:00",
+    "rule": "Include only public sources with visible publication or update dates inside the two-day window. Exclude future-dated, missing-date, ambiguous-date, or boundary-only candidates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owned_scope": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "collector_action": "Record upstream-owned entities by name, but keep only local practice implications or routing notes in this raw artifact."
+  },
+  "qualifying_updates": [
+    {
+      "id": "2026-07-20-001",
+      "title": "Governed-agent framework treats gateways as a runtime control plane",
+      "source_url": "https://www.langchain.com/blog/building-governed-agents-a-framework-for-cost-control-and-compliance",
+      "source_type": "public vendor engineering blog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "LangChain describes governed agents as systems whose model calls, tool calls, MCP calls, and agent-to-agent hops need cost, permission, data-boundary, and trace controls at runtime.",
+      "why_it_matters": "The local governance pages should keep treating agent governance as cross-cutting runtime control rather than only prompt policy or post-hoc observability.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith",
+        "MCP",
+        "A2A",
+        "LLM gateway"
+      ],
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith",
+        "MCP",
+        "A2A"
+      ],
+      "local_practice_implication": "Model routing, spend limits, PII redaction, tool permissions, MCP boundary checks, and per-hop tracing should be designed together as governed-agent runtime requirements.",
+      "follow_up_notes": "Ingest as a governance-control pattern, not as a LangChain product leaf."
+    },
+    {
+      "id": "2026-07-20-002",
+      "title": "IssueBench evaluates trace issue detection, grouping, and repair",
+      "source_url": "https://www.langchain.com/blog/issuebench-how-we-evaluate-engine",
+      "source_type": "public vendor engineering blog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "LangChain describes an internal IssueBench benchmark for evaluating whether an agent-monitoring system can identify known issues in traces, assign failure categories, attach them to existing issues, and group new failures.",
+      "why_it_matters": "It is a concrete eval pattern for agent operations: evaluate the issue-detection and clustering workflow itself, not just final answer quality.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "LangChain",
+        "LangSmith Engine",
+        "IssueBench",
+        "agent traces"
+      ],
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangSmith Engine",
+        "IssueBench"
+      ],
+      "local_practice_implication": "Agent observability evals should include ground-truth trace defects, failure-category assignment, duplicate attachment, and issue clustering quality.",
+      "follow_up_notes": "Possible ingest target: code-review evals, trajectory-level evals, or user-visible runtime telemetry."
+    },
+    {
+      "id": "2026-07-20-003",
+      "title": "GitHub Code Quality GA combines deterministic analysis with AI-assisted detection",
+      "source_url": "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/",
+      "source_type": "public changelog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "GitHub Code Quality became generally available with CodeQL-based maintainability and reliability analysis, AI-assisted detection, Copilot Autofix suggestions, organization dashboards, pull-request coverage metrics, ruleset gates, APIs, and paid usage.",
+      "why_it_matters": "AI-assisted review is moving into enforceable pull-request gates and budgeted quality programs rather than only advisory review comments.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "CodeQL",
+        "Copilot Autofix",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "CodeQL",
+        "Copilot Autofix",
+        "Copilot code review"
+      ],
+      "local_practice_implication": "Teams adopting AI review should separate deterministic checks, AI-generated findings, AI-generated fixes, ruleset enforcement, and metered cost in their operating model.",
+      "follow_up_notes": "Route broad GitHub product coverage upstream; keep local note to lifecycle review gates and cost governance."
+    },
+    {
+      "id": "2026-07-20-004",
+      "title": "AWS highlights one-click setup prompts that install serverless agent skills and MCP",
+      "source_url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/",
+      "source_type": "public vendor news blog",
+      "visible_dates": [
+        "20 JUL 2026"
+      ],
+      "summary": "AWS describes a Lambda setup prompt for coding agents that configures serverless skills and the Serverless MCP server, with setup paths for several coding agents and a separate Agent Toolkit setup for current AWS knowledge and safe resource access.",
+      "why_it_matters": "Setup prompts are becoming operational artifacts that bootstrap agent skills, tool access, and service-specific best practices in one repeatable package.",
+      "suggested_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "AWS",
+        "AWS Lambda",
+        "Serverless MCP",
+        "Agent Toolkit for AWS",
+        "Claude Code",
+        "Kiro",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex",
+        "Devin Desktop",
+        "OpenCode"
+      ],
+      "upstream_owned_entities": [
+        "AWS",
+        "AWS Lambda",
+        "Serverless MCP",
+        "Agent Toolkit for AWS",
+        "Claude Code",
+        "Kiro",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex",
+        "Devin Desktop",
+        "OpenCode"
+      ],
+      "local_practice_implication": "Agent setup artifacts should be source-controlled, reviewable, dated, scoped to a service boundary, and paired with permission guidance for the tools they install.",
+      "follow_up_notes": "Keep local treatment to setup-prompt governance and skill/tool bootstrap practice."
+    },
+    {
+      "id": "2026-07-20-005",
+      "title": "Community thread asks for AGENTS.md-style guidance around containerized operations",
+      "source_url": "https://community.nethserver.org/t/adding-ai-agent-development-guidelines-to-stephdl-ns8-kickstart-modules/28114",
+      "source_type": "public community forum",
+      "visible_dates": [
+        "July 20, 2026, 9:09am"
+      ],
+      "summary": "A NethServer community thread argues that AI agents working inside NS8 modules need structured guidance similar to AGENTS.md, especially where container boundaries, host commands, log analysis, service restarts, and framework-specific commands differ from standard Docker assumptions.",
+      "why_it_matters": "It is a practice-level example of durable instructions reducing repeated rediscovery and wrong-environment assumptions for coding and ops agents.",
+      "suggested_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "NethServer",
+        "NS8",
+        "AGENTS.md",
+        "AgentZero",
+        "Hermes Agent",
+        "runagent",
+        "podman"
+      ],
+      "upstream_owned_entities": [
+        "NethServer",
+        "NS8",
+        "AgentZero",
+        "Hermes Agent"
+      ],
+      "local_practice_implication": "Durable agent instructions should encode runtime boundaries, approved operational commands, and environment-specific exceptions instead of relying on agents to infer them from generic documentation.",
+      "follow_up_notes": "Possible ingest target: durable-instructions, instruction hierarchy, or request package boundaries."
+    },
+    {
+      "id": "2026-07-20-006",
+      "title": "OpenAI community discussion frames Codex context continuity as architecture plus retrieval",
+      "source_url": "https://community.openai.com/t/how-do-you-preserve-project-context-across-codex-sessions-in-a-large-codebase/1387550",
+      "source_type": "public community forum",
+      "visible_dates": [
+        "July 20, 2026, 5:47am",
+        "July 20, 2026, 7:41am",
+        "July 20, 2026, 7:50am"
+      ],
+      "summary": "A Codex forum thread asks how to preserve project context across sessions with AGENTS.md, skills, MCP, RAG, code graphs, and session summaries; replies distinguish architecture-driven context reduction from AST or graph-based retrieval for cross-service changes.",
+      "why_it_matters": "It reinforces that context architecture is partly software architecture, partly durable instruction, and partly selective retrieval.",
+      "suggested_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "OpenAI Codex",
+        "AGENTS.md",
+        "MCP",
+        "RAG",
+        "Tree-sitter",
+        "Neo4j",
+        "context7",
+        ".NET",
+        "gRPC"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Codex",
+        "MCP",
+        "Tree-sitter",
+        "Neo4j",
+        "context7"
+      ],
+      "local_practice_implication": "Long-lived codebase support should define stable architectural boundaries and use graph or retrieval layers only for the cross-boundary context that static instructions cannot safely preserve.",
+      "follow_up_notes": "Potentially useful for context-state rehydration and code retrieval evidence patterns."
+    },
+    {
+      "id": "2026-07-20-007",
+      "title": "Agent protocol explainer separates tool access from agent delegation",
+      "source_url": "https://howaiworks.ai/blog/mcp-vs-a2a-vs-acp-how-ai-agents-talk",
+      "source_type": "public technical explainer",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "HowAIWorks maps MCP to agent-tool interaction, A2A to agent-agent delegation, and ACP to a historical agent-agent layer that folded into A2A.",
+      "why_it_matters": "Local MCP practice pages should avoid treating agent protocols as interchangeable; each layer carries different security, identity, and governance responsibilities.",
+      "suggested_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "MCP",
+        "A2A",
+        "ACP",
+        "Signed Agent Card",
+        "Linux Foundation"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "A2A",
+        "ACP",
+        "Signed Agent Card",
+        "Linux Foundation"
+      ],
+      "local_practice_implication": "Governance rules should distinguish tool-call approval, data-resource access, delegated-agent identity, and cross-organization trust boundaries.",
+      "follow_up_notes": "Ingest as a local protocol-boundary practice note only if upstream does not already cover the broad protocol facts."
+    },
+    {
+      "id": "2026-07-20-008",
+      "title": "Agent-loop article argues the loop, not the model call, owns reliability",
+      "source_url": "https://agenticthinking.ai/blog/the-agent-is-a-while-loop/",
+      "source_type": "public technical article",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "Agentic Thinking argues that durable agent progress comes from loop design: termination, memory, recursion controls, fresh-context evaluation, external checks, and budgets around repeated model steps.",
+      "why_it_matters": "The local agent-workflow and verification pages can use this as a practice signal for treating loop termination and external verification as first-class design surfaces.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Agentic Thinking",
+        "ReAct",
+        "Reflexion",
+        "Self-Refine",
+        "Ralph",
+        "agent harness"
+      ],
+      "upstream_owned_entities": [
+        "Agentic Thinking",
+        "ReAct",
+        "Reflexion",
+        "Self-Refine",
+        "Ralph"
+      ],
+      "local_practice_implication": "Loop designs should define what stops the work, what persists across iterations, how fresh-context verifiers participate, and how recursion is bounded.",
+      "follow_up_notes": "Avoid duplicating general technique history; keep local note to orient-inspect-patch-verify and verification-loop pages."
+    },
+    {
+      "id": "2026-07-20-009",
+      "title": "Agent-loop field guide catalogs bounded, conditional, check, fan-out, and nested loops",
+      "source_url": "https://agenticthinking.ai/blog/a-field-guide-to-agent-loops/",
+      "source_type": "public technical article",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "A companion Agentic Thinking field guide describes loop shapes and axes such as control flow, stop conditions, memory, and who checks the result.",
+      "why_it_matters": "This maps directly to local workflow design: planning loops, TDD loops, subagent fan-out, repair loops, and nested reviewer loops need explicit shape and stop criteria.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Agentic Thinking",
+        "ReAct",
+        "Self-Refine",
+        "agent loops"
+      ],
+      "upstream_owned_entities": [
+        "Agentic Thinking",
+        "ReAct",
+        "Self-Refine"
+      ],
+      "local_practice_implication": "Workflow docs should name whether a loop is bounded, conditional, generate-and-check, fan-out-and-join, nested, or planner-executor, and should state the verified stop condition.",
+      "follow_up_notes": "Potential ingest target: research-plan-implement-review lifecycle, subagent coordination, and AI-assisted TDD."
+    },
+    {
+      "id": "2026-07-20-010",
+      "title": "Cursor users ask for global AGENTS.md support across harnesses",
+      "source_url": "https://forum.cursor.com/t/support-global-agents-md/150406",
+      "source_type": "public product forum",
+      "visible_dates": [
+        "July 20, 2026, 2:41am",
+        "July 20, 2026, 3:03am"
+      ],
+      "summary": "A Cursor feature request gained fresh July 20 comments asking for support for a global AGENTS.md path so multiple agent harnesses can share one durable instruction source.",
+      "why_it_matters": "The practice issue is instruction provenance and scope: user-level, organization-level, and repository-level instructions need predictable precedence and update control.",
+      "suggested_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "Cursor",
+        "AGENTS.md",
+        "~/.agents/AGENTS.md"
+      ],
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "local_practice_implication": "Shared instruction files should have explicit scope, precedence, ownership, refresh expectations, and collision behavior across agent harnesses.",
+      "follow_up_notes": "Use as a durable-instruction scope example, not a Cursor feature-tracking leaf."
+    },
+    {
+      "id": "2026-07-20-011",
+      "title": "Cursor community project packages specialized software-development roles as an MCP server",
+      "source_url": "https://forum.cursor.com/t/software-factory-mcp-turn-your-ai-coding-assistant-into-a-software-development-team/166179",
+      "source_type": "public product forum",
+      "visible_dates": [
+        "July 20, 2026, 3:44pm"
+      ],
+      "summary": "A Cursor community showcase describes Software Factory MCP, an open-source MCP server that exposes specialized development roles including product manager, architect, backend, frontend, database, AI, QA, security, DevOps, code reviewer, and documentation writer.",
+      "why_it_matters": "It reflects a local-practice trend toward packaging team roles and workflow contracts as callable tools or agents rather than relying on one general-purpose assistant.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Software Factory MCP",
+        "MCP",
+        "subagents"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Software Factory MCP",
+        "MCP"
+      ],
+      "local_practice_implication": "Role-packaged agents need explicit task boundaries, handoff contracts, evidence requirements, and review gates before being treated as a software-development team.",
+      "follow_up_notes": "Route broad MCP-server catalog coverage upstream; keep local note to subagent coordination and agent operating models."
+    },
+    {
+      "id": "2026-07-20-012",
+      "title": "Cursor confirms subagentStart deny hook report is reproducible",
+      "source_url": "https://forum.cursor.com/t/subagentstart-hook-deny-is-not-enforced/166143",
+      "source_type": "public product forum bug report",
+      "visible_dates": [
+        "July 20, 2026, 1:17pm"
+      ],
+      "summary": "A Cursor staff reply says they reproduced a report where a subagentStart hook returning deny appeared not to block the subagent, and suggested trying a preToolUse hook as a workaround.",
+      "why_it_matters": "This is a concrete approval-control lesson: a UI denial or hook callback is not a governance boundary unless enforcement is tested at the actual execution point.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Cursor",
+        "subagentStart",
+        "preToolUse",
+        "subagents",
+        "hooks"
+      ],
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "local_practice_implication": "Permission hooks should be covered by regression tests that prove denied actions cannot proceed, including subagent launch paths and tool-use fallbacks.",
+      "follow_up_notes": "Potential ingest target: destructive-command controls, human-agent approval boundaries, and tool-call governance."
+    },
+    {
+      "id": "2026-07-20-013",
+      "title": "Cursor subagent model reports expose cost and admin-policy drift",
+      "source_url": "https://forum.cursor.com/t/the-subagents-use-much-pricey-models-despite-theyre-not-active-or-selected/166166",
+      "source_type": "public product forum bug report",
+      "visible_dates": [
+        "July 20, 2026, 12:50pm"
+      ],
+      "summary": "A Cursor report says subagents can select more expensive models than the user configured, while a separate Enterprise report says the CLI listed an admin-blocked model as available and current before rejecting it at run time.",
+      "why_it_matters": "Agent-cost controls and model access controls need to align across UI, CLI catalogs, inherited subagent settings, and backend enforcement.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Grok 4.5",
+        "Composer 2.5",
+        "Fable 5",
+        "Cursor CLI",
+        "Model Access Control"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Grok 4.5",
+        "Composer 2.5",
+        "Fable 5"
+      ],
+      "local_practice_implication": "Cost and model governance should validate inherited subagent defaults, catalog visibility, configured policy, and runtime rejection paths as one contract.",
+      "follow_up_notes": "Related source also found at https://forum.cursor.com/t/cursor-cli-lists-blocked-fable-5-as-available-and-current-on-enterprise/166188."
+    },
+    {
+      "id": "2026-07-20-014",
+      "title": "Shell-command approval discussion asks for explainable command review",
+      "source_url": "https://forum.cursor.com/t/add-explain-to-shell-command-approval-run-once-allow-skip/161730",
+      "source_type": "public product forum feature request",
+      "visible_dates": [
+        "July 20, 2026, 9:08am"
+      ],
+      "summary": "A Cursor approval-flow discussion received a July 20 comment that side chat helps explain proposed commands, but a first-class Explain action in the approval card would be smoother.",
+      "why_it_matters": "Human approval quality depends on the reviewer understanding exact command strings, chained operations, arguments, expected effects, and failure modes before execution.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Cursor",
+        "shell command approval",
+        "auto-run",
+        "side chat"
+      ],
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "local_practice_implication": "Approval UIs should present structured explanations for proposed commands and risky patterns in the same flow where the user grants permission.",
+      "follow_up_notes": "Fold into approval-boundary and user-visible progress guidance during ingest."
+    },
+    {
+      "id": "2026-07-20-015",
+      "title": "Resource2Skill article frames multimodal resources as provenance-bearing agent skills",
+      "source_url": "https://www.developersdigest.tech/blog/resource2skill-multimodal-agent-skills",
+      "source_type": "public technical article",
+      "visible_dates": [
+        "July 20, 2026",
+        "Last updated: July 20, 2026"
+      ],
+      "summary": "Developers Digest summarizes Resource2Skill as a research-backed pattern for distilling tutorials, repositories, articles, code, and reference artifacts into executable agent skills while preserving source evidence.",
+      "why_it_matters": "It extends durable instruction practice from hand-written SKILL.md files toward generated, reviewable, provenance-bearing workflow artifacts.",
+      "suggested_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Resource2Skill",
+        "Microsoft Research",
+        "SKILL.md",
+        "Hugging Face",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Resource2Skill",
+        "Microsoft Research",
+        "Hugging Face",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Generated agent skills should carry source provenance, license checks, human review, sandbox probes, and periodic revalidation before production use.",
+      "follow_up_notes": "During ingest, avoid broad paper coverage; focus on source-faithful skill distillation and validation practice."
+    },
+    {
+      "id": "2026-07-20-016",
+      "title": "McKinsey cost-management article recommends limits on retries, tool calls, and loops",
+      "source_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale",
+      "source_type": "public consulting article",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "McKinsey recommends managing AI demand through outcome-oriented cost controls, including structured outputs, response-length caps, and limits on retries, tool calls, agent loops, and escalation paths.",
+      "why_it_matters": "The operating-model pages should connect agent loop design and context usage to enterprise cost governance, not only developer productivity.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "McKinsey",
+        "CIO",
+        "structured outputs",
+        "agent loops",
+        "tool calls"
+      ],
+      "upstream_owned_entities": [
+        "McKinsey"
+      ],
+      "local_practice_implication": "Agent adoption playbooks should include per-use-case budgets, loop and retry ceilings, structured-output constraints, and escalation policies tied to business value.",
+      "follow_up_notes": "Potential ingest target: agent-cost telemetry and workflow-before-model-selection."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Ghostcommit attack hides malicious AI instructions in images",
+      "source_url": "https://www.malwarebytes.com/blog/ai/2026/07/ghostcommit-attack-hides-malicious-ai-instructions-in-images",
+      "visible_dates": [
+        "July 13, 2026"
+      ],
+      "reason": "Published before the cutoff window, despite related article lists showing July 20 items."
+    },
+    {
+      "title": "GitHub Copilot in Visual Studio Code, June 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "visible_dates": [
+        "July 8, 2026"
+      ],
+      "reason": "Published outside the two-day cutoff window."
+    },
+    {
+      "title": "GitHub Code Quality generally available July 20, 2026 advance notice",
+      "source_url": "https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/",
+      "visible_dates": [
+        "June 16, 2026"
+      ],
+      "reason": "Older advance notice; superseded for this collector by the July 20 GA changelog."
+    },
+    {
+      "title": "Safer pull_request_target defaults for GitHub Actions checkout",
+      "source_url": "https://github.blog/changelog/2026-06-18-safer-pull_request_target-defaults-for-github-actions-checkout/",
+      "visible_dates": [
+        "June 18, 2026",
+        "Updated July 15, 2026"
+      ],
+      "reason": "The source was published and visibly updated before the cutoff window; July 20 is an enforcement date, not a visible source update."
+    },
+    {
+      "title": "What to Put in Your AGENTS.md So Your Agent Handles the Database Right",
+      "source_url": "https://www.prisma.io/blog/",
+      "visible_dates": [
+        "July 17, 2026"
+      ],
+      "reason": "Visible date is outside the two-day cutoff window."
+    },
+    {
+      "title": "Restore GenerateImage prompt review card and countdown before auto-run",
+      "source_url": "https://forum.cursor.com/t/restore-generateimage-prompt-review-card-countdown-before-auto-run/166088",
+      "visible_dates": [
+        "July 18, 2026, 7:54pm"
+      ],
+      "reason": "Visible timestamp is before the cutoff start of 2026-07-18T20:32:00-04:00."
+    },
+    {
+      "title": "Protopie launches native MCP support",
+      "source_url": "https://www.einnews.com/pr_news/927085421/protopie-launches-native-mcp-support-connecting-human-precision-to-the-era-of-ai-vibe-coding",
+      "visible_dates": [
+        "Search result said July 20, 2026"
+      ],
+      "reason": "The opened source page was blocked by a human-verification page, so the visible date and details could not be verified from the source."
+    },
+    {
+      "title": "Best Skills for Roo Code in 2026",
+      "source_url": "https://www.agensi.io/learn/best-skills-for-roo-code-2026",
+      "visible_dates": [
+        "Search result said today"
+      ],
+      "reason": "Search snippet indicated freshness, but the source was not opened and verified before artifact closeout."
+    },
+    {
+      "title": "AI-Assisted Software Development from Code to Copilot",
+      "source_url": "https://www.codemag.com/event/AIASD-07-20",
+      "visible_dates": [
+        "Monday, July 20, 2026 - 10:00AM to Friday, July 24, 2026 - 3:30PM"
+      ],
+      "reason": "Event date is inside the window, but the page does not show a publication or update date; excluded as a boundary-only/current event listing."
+    },
+    {
+      "title": "Agentic Thinking content calendar future loop posts",
+      "source_url": "https://agenticthinking.ai/blog/the-agent-is-a-while-loop/",
+      "visible_dates": [
+        "July 21, 2026",
+        "July 22, 2026",
+        "July 23, 2026",
+        "July 24, 2026",
+        "July 25, 2026",
+        "July 27, 2026",
+        "July 28, 2026",
+        "July 29, 2026"
+      ],
+      "reason": "Future-dated calendar entries were excluded; only the July 20 published loop articles were included."
+    }
+  ],
+  "source_urls": [
+    "https://www.langchain.com/blog/building-governed-agents-a-framework-for-cost-control-and-compliance",
+    "https://www.langchain.com/blog/issuebench-how-we-evaluate-engine",
+    "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/",
+    "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/",
+    "https://community.nethserver.org/t/adding-ai-agent-development-guidelines-to-stephdl-ns8-kickstart-modules/28114",
+    "https://community.openai.com/t/how-do-you-preserve-project-context-across-codex-sessions-in-a-large-codebase/1387550",
+    "https://howaiworks.ai/blog/mcp-vs-a2a-vs-acp-how-ai-agents-talk",
+    "https://agenticthinking.ai/blog/the-agent-is-a-while-loop/",
+    "https://agenticthinking.ai/blog/a-field-guide-to-agent-loops/",
+    "https://forum.cursor.com/t/support-global-agents-md/150406",
+    "https://forum.cursor.com/t/software-factory-mcp-turn-your-ai-coding-assistant-into-a-software-development-team/166179",
+    "https://forum.cursor.com/t/subagentstart-hook-deny-is-not-enforced/166143",
+    "https://forum.cursor.com/t/the-subagents-use-much-pricey-models-despite-theyre-not-active-or-selected/166166",
+    "https://forum.cursor.com/t/cursor-cli-lists-blocked-fable-5-as-available-and-current-on-enterprise/166188",
+    "https://forum.cursor.com/t/add-explain-to-shell-command-approval-run-once-allow-skip/161730",
+    "https://www.developersdigest.tech/blog/resource2skill-multimodal-agent-skills",
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale"
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector; leave synthesis to the ingest workflow.",
+    "During ingest, keep broad company, model, product, developer-tool, protocol, and framework coverage routed to the upstream AI wiki.",
+    "Likely local themes: governed-agent control planes, trace issue evals, AI review gates, setup-prompt governance, durable instruction scope, context continuity, protocol-layer boundaries, verified loop design, subagent control enforcement, explainable approvals, provenance-bearing skills, and cost limits for loops and tool calls.",
+    "Pre-existing untracked Clippings and the July 19 raw collector artifact were present before this run and were left untouched."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
