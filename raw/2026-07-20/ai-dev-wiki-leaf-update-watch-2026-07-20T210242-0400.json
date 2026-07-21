@@ -1,0 +1,398 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-20T21:02:42-04:00",
+  "cutoff_window": {
+    "start": "2026-07-13T21:02:42-04:00",
+    "end": "2026-07-20T21:02:42-04:00",
+    "days": 7
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+  ],
+  "source_urls_checked": [
+    "https://agentic.ai/news",
+    "https://daige.st/en/blog/ai-agent-information-monitoring-automation",
+    "https://docs.github.com/en/code-security/how-tos/maintain-quality-code/unblock-your-pr",
+    "https://docs.github.com/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge",
+    "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+    "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+    "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+    "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+    "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/",
+    "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+  ],
+  "leaf_results": [
+    {
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "source_urls_checked": [
+        "https://docs.github.com/en/code-security/how-tos/maintain-quality-code/unblock-your-pr",
+        "https://docs.github.com/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge",
+        "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+        "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+        "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/"
+      ],
+      "qualifying_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "source_urls_checked": [
+        "https://docs.github.com/en/code-security/how-tos/maintain-quality-code/unblock-your-pr",
+        "https://docs.github.com/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge",
+        "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/"
+      ],
+      "qualifying_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "source_urls_checked": [
+        "https://docs.github.com/en/code-security/how-tos/maintain-quality-code/unblock-your-pr",
+        "https://docs.github.com/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge",
+        "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+        "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+        "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+        "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/"
+      ],
+      "qualifying_update_count": 4,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/automated-update-feeds.md",
+      "source_urls_checked": [
+        "https://agentic.ai/news",
+        "https://daige.st/en/blog/ai-agent-information-monitoring-automation"
+      ],
+      "qualifying_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "source_urls_checked": [
+        "https://agentic.ai/news",
+        "https://daige.st/en/blog/ai-agent-information-monitoring-automation"
+      ],
+      "qualifying_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/leaf-update-watch.md",
+      "source_urls_checked": [
+        "https://agentic.ai/news",
+        "https://daige.st/en/blog/ai-agent-information-monitoring-automation"
+      ],
+      "qualifying_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "source_urls_checked": [
+        "https://agentic.ai/news",
+        "https://daige.st/en/blog/ai-agent-information-monitoring-automation"
+      ],
+      "qualifying_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "source_urls_checked": [
+        "https://agentic.ai/news",
+        "https://daige.st/en/blog/ai-agent-information-monitoring-automation"
+      ],
+      "qualifying_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No qualifying local-practice update found in this run."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+        "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure"
+      ],
+      "qualifying_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-07-20-github-code-quality-is-now-generally-available/",
+      "visible_date": "2026-07-20",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "GitHub Code Quality reached general availability for Enterprise Cloud and Team, pairing deterministic CodeQL analysis with AI-assisted detection, Copilot Autofix, organization dashboards, coverage metrics, ruleset quality gates, and enablement/finding APIs. Billing begins at GA with per-active-committer licensing plus metered AI-powered work.",
+      "why_it_matters_for_leaf": "AI-generated and agent-authored code can now be governed at the pull-request boundary through quality gates, coverage checks, and autofix review points, strengthening local practices for fix branches, PR packaging, refactoring, and review triage.",
+      "named_entities": [
+        "GitHub Code Quality",
+        "GitHub Enterprise Cloud",
+        "GitHub Team",
+        "CodeQL",
+        "Copilot Autofix",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "CodeQL"
+      ],
+      "local_practice_implication": "Treat AI-assisted quality findings as reviewable PR evidence. Keep autofixes behind human review, record quality-gate outcomes in PR closeout, and account for separate licensing/usage cost when recommending adoption."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+      "visible_date": "2026-07-17",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "GitHub added repository-level Copilot metrics API endpoints that report daily pull-request activity for Copilot coding agent and Copilot code review, including PRs created/merged and review suggestion counts by comment type.",
+      "why_it_matters_for_leaf": "Fix-branch packaging and intelligent-review practices can use repository-level telemetry to detect where agent-created PRs and AI reviews are increasing throughput, reviewer load, or merge risk.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot coding agent",
+        "Copilot code review",
+        "REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Add repository-level agent PR and review metrics to adoption dashboards before scaling autonomous coding-agent workflows."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+      "visible_date": "2026-07-17",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "Copilot code review added branch-readable custom instructions, broader instruction-file support, a dedicated copilot-code-review.yml setup file, default firewalling, and separate runner configuration from the cloud coding agent.",
+      "why_it_matters_for_leaf": "AI review quality now depends more directly on review-specific runtime setup, instruction provenance, and network controls, not just model choice.",
+      "named_entities": [
+        "Copilot code review",
+        "AGENTS.md",
+        "REVIEW.md",
+        "GEMINI.md",
+        "CLAUDE.md",
+        "copilot-code-review.yml"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "When using AI code review, version review instructions in the branch under review and verify the review runtime/firewall separately from coding-agent runtime configuration."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-14-security-reviews-now-available-in-the-github-copilot-app/",
+      "visible_date": "2026-07-14",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "factual_summary": "GitHub shipped a /security-review command in the Copilot app public preview for in-flight changes, returning prioritized high-confidence vulnerability findings with severity/confidence scores and re-verifiable suggestions.",
+      "why_it_matters_for_leaf": "Security checks are moving closer to the local coding loop, so generated-code refactoring and intelligent review practices should distinguish fast in-workstream scanning from merge-gate or post-merge security controls.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "/security-review",
+        "Dependabot",
+        "GitHub code scanning",
+        "secret scanning"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Dependabot"
+      ],
+      "local_practice_implication": "Use in-workstream security review as an early filter, but keep PR checks, code scanning, and human security review as the authoritative merge controls."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/inference-needs-memory-how-context-is-becoming-ai-infrastructure",
+      "visible_date": "2026-07-14",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "factual_summary": "TechRadar Pro published an IBM Storage perspective arguing that inference context and KV cache should be treated as AI-native data and managed through an inference-context memory layer across GPU, CPU, local storage, and shared infrastructure instead of being discarded as temporary state.",
+      "why_it_matters_for_leaf": "The article supports a durable local-practice distinction between prompt context, retrieved knowledge, runtime state, and infrastructure-level inference memory. It also reinforces context rehydration and compaction as architecture decisions with cost, latency, resilience, and continuity consequences.",
+      "named_entities": [
+        "TechRadar Pro",
+        "IBM Storage",
+        "KV cache",
+        "inference context memory layer"
+      ],
+      "upstream_owned_entities": [
+        "IBM"
+      ],
+      "local_practice_implication": "Context-architecture pages should preserve the boundary between local wiki/structured memory and infrastructure-managed inference memory, and should evaluate reuse, durability, and recomputation cost explicitly."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://docs.github.com/en/code-security/tutorials/improve-code-quality/catch-issues-before-merge",
+      "reason": "No visible publication or update date in the fetched page; mentions Code Quality behavior but date qualification is ambiguous."
+    },
+    {
+      "source_url": "https://docs.github.com/en/code-security/how-tos/maintain-quality-code/unblock-your-pr",
+      "reason": "No visible publication or update date in the fetched page; useful background but excluded from strict seven-day source set."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/",
+      "reason": "Visible date is 2026-07-13 with no time; the run cutoff is 2026-07-13T21:02:42-04:00, so this is boundary-only and superseded by the 2026-07-20 GA source."
+    },
+    {
+      "source_url": "https://daige.st/en/blog/ai-agent-information-monitoring-automation",
+      "reason": "Published 5 months ago; crawled recently is not a qualifying publication or visible update date."
+    },
+    {
+      "source_url": "https://agentic.ai/news",
+      "reason": "Daily-updated broad agentic AI product/news feed; broad ecosystem entity coverage is upstream-owned under federation rules and no selected source-workflow leaf needs a local update from it."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-08-github-copilot-in-visual-studio-code-june-2026-releases/",
+      "reason": "Published 2026-07-08, outside the strict seven-day cutoff for the 2026-07-20T21:02:42-04:00 run."
+    }
+  ],
+  "named_entities": [
+    "/security-review",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "CodeQL",
+    "Copilot Autofix",
+    "Copilot code review",
+    "Copilot coding agent",
+    "Dependabot",
+    "GEMINI.md",
+    "GitHub Actions",
+    "GitHub Code Quality",
+    "GitHub Copilot",
+    "GitHub Copilot app",
+    "GitHub Enterprise Cloud",
+    "GitHub Team",
+    "GitHub code scanning",
+    "IBM Storage",
+    "KV cache",
+    "REST API",
+    "REVIEW.md",
+    "TechRadar Pro",
+    "copilot-code-review.yml",
+    "inference context memory layer",
+    "secret scanning"
+  ],
+  "upstream_owned_entities": [
+    "CodeQL",
+    "Dependabot",
+    "GitHub",
+    "GitHub Copilot",
+    "IBM"
+  ],
+  "follow_up_notes": [
+    "Ingest should decide whether GitHub Code Quality GA belongs in coding-practice leaves and July digest.",
+    "Context architecture ingest should keep IBM/KV-cache ecosystem details upstream or source-attributed and focus local synthesis on context-state practice implications.",
+    "Source-workflow leaves had no qualifying local-practice update this run."
+  ],
+  "federation_note": "Broad ecosystem product and vendor facts are upstream-owned by the AI wiki; this artifact records only downstream practice implications for selected local leaves."
+}
