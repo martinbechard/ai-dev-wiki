@@ -33,6 +33,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds coding-fleet and verification-capacity signals. Parallel agent execution can increase candidate output faster than human or automated verification capacity, so the coordinator should assign owners, define merge-conflict controls, queue verification work, and stop fan-out when review capacity rather than generation is the bottleneck.
 
+The July 18-21 raw sources add effort-routing and graph-control signals. The [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md) frames high-effort multi-agent mode as an escalation path rather than a default when subagents inherit expensive reasoning settings. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) and [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) add loop and graph-engineering evidence: subagent systems should make routers, joins, human checkpoints, budgets, policies, trace identifiers, and stop rules visible before parallelism is treated as reliability.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -53,6 +55,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Preserve coordinator ownership for role boundaries, shared state, cache use, tool budgets, and evidence reconciliation even when multi-agent support is built into the model or desktop surface.
 - Log or verify programmatic filtering and intermediate-result decisions before accepting subagent outputs as complete evidence.
 - Pair multi-agent fan-out with owner assignment, merge-conflict control, verification queues, review-capacity limits, and explicit stop conditions.
+- Route high-effort or high-cost subagents deliberately; do not let a parent mode silently cascade expensive reasoning, tool budgets, or autonomy into every delegated worker.
+- Represent multi-agent graphs with explicit routers, joins, human checkpoints, identities, budgets, traces, and stop conditions before making them recurring workflow infrastructure.
 
 ## Authoritative Sources
 
@@ -68,6 +72,9 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 
 ## Related Code
 
@@ -105,3 +112,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-07-13 with legacy-modernization subagent roles, source-system constraints, verification gates, cost attribution, and escalation paths.
 - Maintained on 2026-07-14 with built-in multi-agent role boundaries, shared-state rules, cache/tool budget accounting, and programmatic filtering verification.
 - Maintained on 2026-07-16 with coding-fleet verification capacity, owner assignment, merge-conflict control, and fan-out stop conditions.
+- Maintained on 2026-07-22 with effort-routing, graph-control, trace, budget, and inherited-subagent mode boundaries.

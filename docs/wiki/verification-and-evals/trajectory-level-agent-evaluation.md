@@ -35,6 +35,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds AgentCompass and production-eval evidence. Trajectory evaluation should separate benchmark, harness, and environment components, preserve asynchronous execution state, and score whether tool calls, arguments, state changes, recovery behavior, cost, and safety controls followed the intended path. Final prose or a generated diff is not enough when the agent mutates files, records, tickets, calendars, deployments, or other stateful systems.
 
+The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) and [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) add trace-issue and graph-engineering evidence. Trajectory evaluation should preserve graph/run/node identifiers, routers, joins, deterministic functions, tool calls, human checkpoints, budgets, policies, approvals, failure categories, and issue grouping so multi-agent systems can be debugged at the path level rather than judged only by final output.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -59,6 +61,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Whether calibration tasks cover end-to-end builds, reconstruction, and production-like delivery paths when public benchmark scope moves beyond issue patches.
 - Whether benchmark, harness, and environment components are separated enough to compare agent systems without hiding setup or runtime differences.
 - Whether tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls match the intended path.
+- Whether graph/run/node identifiers, routers, joins, deterministic functions, policies, budgets, human checkpoints, and issue-grouping records explain the path in multi-agent workflows.
 
 ## Practice Boundaries
 
@@ -81,6 +84,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Expand local trajectory suites when benchmark scope shifts toward realistic end-to-end delivery, architecture reconstruction, or production task realism.
 - Separate benchmark, harness, and environment evidence when comparing agent systems across coding, research, productivity, or tool-use tasks.
 - Score tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls alongside final-task outcome.
+- Preserve graph topology, run identifiers, node identifiers, routed decisions, grouped failures, and human checkpoint records when evaluating multi-agent systems.
 
 ## Authoritative Sources
 
@@ -100,6 +104,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 
 ## Related Code
 
@@ -136,3 +142,4 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Maintained on 2026-07-12 with provider-adapter, side-effect, trace-assertion, cost, and sandbox signals for coding-agent trajectories.
 - Maintained on 2026-07-14 with proof-loop artifacts and end-to-end delivery benchmark signals for trajectory evaluation.
 - Maintained on 2026-07-17 with benchmark-harness-environment separation, asynchronous execution state, tool-call scoring, state-change checks, recovery behavior, cost, and safety controls.
+- Maintained on 2026-07-22 with graph/run/node identifiers, routed decisions, human checkpoints, issue grouping, and multi-agent topology evidence.

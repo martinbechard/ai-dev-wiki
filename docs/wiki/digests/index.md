@@ -2,7 +2,7 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The current July digest includes the July 22 synthesis for agent routing, governance, tool approval, context, verification, and cost-control practice.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
@@ -44,3 +44,4 @@ This digest hub is downstream of raw source ingest. Public collectors and leaf w
 
 - Created on 2026-06-23 as the hub for monthly AI-assisted development digests.
 - Simplified on 2026-07-17 so dated ingest summaries and raw-source provenance live in monthly digest pages rather than the digest hub.
+- Maintained on 2026-07-22 with the current July digest scope.

@@ -1,0 +1,550 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-19T20:34:49-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-07-17T20:34:49-04:00",
+    "end": "2026-07-19T20:34:49-04:00",
+    "rule": "Include only public sources with visible publication or update dates inside the two-day window. Exclude future-dated, missing-date, ambiguous-date, or boundary-only candidates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owned_scope": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "collector_action": "Record upstream-owned entities by name, but keep only local practice implications or routing notes in this raw artifact."
+  },
+  "qualifying_updates": [
+    {
+      "id": "2026-07-19-001",
+      "title": "Coding-agent market snapshot emphasizes harness architecture over model leaderboards",
+      "source_url": "https://claude-world.com/articles/ai-coding-models-tools-july-2026/",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 19, 2026",
+        "Snapshot date: July 19, 2026"
+      ],
+      "summary": "A July 19 coding-agent snapshot frames modern coding tools as model plus harness systems, with harness features such as tools, permissions, parallel workers, persistence, terminal interfaces, AGENTS.md support, skills, hooks, MCP, subagents, and worktrees.",
+      "why_it_matters": "Local practice pages should keep separating model choice from harness capabilities when comparing coding-agent adoption, context, permissions, and workflow design.",
+      "suggested_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Antigravity",
+        "Jules",
+        "Grok Build",
+        "Grok 4.5",
+        "AGENTS.md",
+        "MCP",
+        "ACP"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Antigravity",
+        "Jules",
+        "Grok Build",
+        "Grok 4.5",
+        "MCP",
+        "ACP"
+      ],
+      "local_practice_implication": "Treat terminal-first operation, worktree isolation, subagent fan-out, headless mode, skills, and hook surfaces as harness architecture criteria rather than product encyclopedia facts.",
+      "follow_up_notes": "During ingest, avoid creating local product leaves; fold the practice implication into harness selection and workflow pages."
+    },
+    {
+      "id": "2026-07-19-002",
+      "title": "Forum post questions whether context compression lowers whole-task coding-agent cost",
+      "source_url": "https://discuss.huggingface.co/t/why-90-fewer-tokens-did-not-mean-90-lower-coding-agent-cost/177997",
+      "source_type": "public forum post",
+      "visible_dates": [
+        "July 19, 2026, 1:38pm"
+      ],
+      "summary": "A Hugging Face forum post sanity-checks the claim that compressing one context component by 90 percent makes the complete coding-agent task nearly 90 percent cheaper.",
+      "why_it_matters": "It reinforces that local context architecture and cost-telemetry guidance should measure full loop cost, not isolated token-reduction claims.",
+      "suggested_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Hugging Face",
+        "coding-agent cost",
+        "context compression"
+      ],
+      "upstream_owned_entities": [
+        "Hugging Face"
+      ],
+      "local_practice_implication": "Cost evaluations should capture end-to-end agent loops, repeated context sends, tool calls, retries, and verification work rather than single-prompt token deltas.",
+      "follow_up_notes": "Potential ingest target: agent-cost telemetry or context-selection pages."
+    },
+    {
+      "id": "2026-07-19-003",
+      "title": "Benchmark discussion asks for task-shape reporting beyond aggregate Pass@1",
+      "source_url": "https://community.deeplearning.ai/t/should-coding-agent-benchmarks-report-task-shape-not-only-aggregate-pass-1/893900",
+      "source_type": "public forum post",
+      "visible_dates": [
+        "July 19, 2026, 3:02pm"
+      ],
+      "summary": "A DeepLearning.AI forum post argues that coding-agent benchmark reports should include task shape, because aggregate Pass@1 may hide differences in where high-effort modes help or fail.",
+      "why_it_matters": "Local eval pages can use this as a practice signal for shape-aware reporting: task size, repo state, verification burden, tool use, and failure mode matter alongside headline scores.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "DeepLearning.AI",
+        "Tura",
+        "Pass@1",
+        "coding-agent benchmarks"
+      ],
+      "upstream_owned_entities": [
+        "DeepLearning.AI",
+        "Tura"
+      ],
+      "local_practice_implication": "Benchmark summaries should include task-shape dimensions before teams use them to choose agent modes or governance levels.",
+      "follow_up_notes": "Ingest could extend code-review eval rubric or trajectory-level evaluation guidance."
+    },
+    {
+      "id": "2026-07-19-004",
+      "title": "Cursor MCP approval report says tool-call arguments are hidden before allow or deny",
+      "source_url": "https://forum.cursor.com/t/reading-content-of-mcp-tool-calls/166109",
+      "source_type": "public forum bug report",
+      "visible_dates": [
+        "July 19, 2026, 11:37am",
+        "Cursor version date: 2026-07-17T02:53:53.006Z"
+      ],
+      "summary": "A Cursor user reports that MCP tool-call approval prompts no longer expose the SQL or command arguments before allow or deny, reducing the ability to audit Supabase MCP calls before execution.",
+      "why_it_matters": "This is a concrete UI-level governance issue: approval prompts are weak if reviewers cannot see the action payload they are approving.",
+      "suggested_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Cursor",
+        "MCP",
+        "Supabase MCP",
+        "execute_sql",
+        "Windows 11"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "MCP",
+        "Supabase"
+      ],
+      "local_practice_implication": "MCP approval guidance should require visible tool name, arguments, target resource, mutability, and expected side effect before a human or reviewer agent can approve.",
+      "follow_up_notes": "Potentially merge with MCP governance and approval-card design guidance."
+    },
+    {
+      "id": "2026-07-19-005",
+      "title": "Cursor feature request calls for prompt review and progress before image-generation auto-run",
+      "source_url": "https://forum.cursor.com/t/restore-generateimage-prompt-review-card-countdown-before-auto-run/166088",
+      "source_type": "public forum feature request",
+      "visible_dates": [
+        "July 18, 2026, 7:54pm",
+        "Related topic activity: July 19, 2026"
+      ],
+      "summary": "A Cursor user asks to restore a review card, explicit confirmation, countdown, and visible prompt for GenerateImage calls, saying the current auto-run behavior spends time and retries without enough pre-execution visibility.",
+      "why_it_matters": "The same approval and progress principles apply beyond shell commands: expensive or externally visible agent actions need reviewable inputs and progress state.",
+      "suggested_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Cursor IDE",
+        "GenerateImage",
+        "Agents Approvals",
+        "Auto-run",
+        "Run Modes"
+      ],
+      "upstream_owned_entities": [
+        "Cursor IDE"
+      ],
+      "local_practice_implication": "Action classes outside code execution still need permission semantics when they consume scarce resources, create artifacts, or affect external workflows.",
+      "follow_up_notes": "Ingest as a user-visible progress and approval-boundary example, not as Cursor product coverage."
+    },
+    {
+      "id": "2026-07-19-006",
+      "title": "Cursor auto-review thread clarifies run-mode nudges and best-effort guardrails",
+      "source_url": "https://forum.cursor.com/t/cursor-settings-agents-run-mode-keeps-reverting-to-auto-review/165821",
+      "source_type": "public forum bug report with vendor response",
+      "visible_dates": [
+        "July 17, 2026, 10:04pm vendor response inside cutoff"
+      ],
+      "summary": "A Cursor thread reports Allowlist unexpectedly changing to Auto-review through approval-card defaults; a vendor response says users can disable the nudge and states run modes are best-effort guardrails rather than hard boundaries.",
+      "why_it_matters": "The update is a practice signal for consent UX: prompts that change global autonomy settings must be explicit, durable, and reversible, and docs should distinguish best-effort guidance from enforcement.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Allowlist",
+        "Auto-review",
+        "Run Mode",
+        "Grok 4.5"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Grok 4.5"
+      ],
+      "local_practice_implication": "Approval systems should avoid prechecked escalation of autonomy and should label whether a control is enforcement, classifier review, or user guidance.",
+      "follow_up_notes": "Could support durable guidance on approvals, consent, and destructive-command controls."
+    },
+    {
+      "id": "2026-07-19-007",
+      "title": "Agent documentation essay argues verification claims need explicit scope",
+      "source_url": "https://agenticthinking.ai/blog/proven-end-to-end/",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 18, 2026"
+      ],
+      "summary": "An Agentic Thinking article argues that agent-system claims such as works, verified, handles, and proven need evidence scope, and recommends separating documented guarantees from code-enforced guarantees.",
+      "why_it_matters": "This directly supports local wiki practice around verification language, candor, and distinguishing asserted instructions from enforced controls.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Agentic Thinking",
+        "verification",
+        "de-bias ledger",
+        "documented versus enforced guarantees"
+      ],
+      "upstream_owned_entities": [
+        "Agentic Thinking"
+      ],
+      "local_practice_implication": "Wiki and runbook language should qualify verification by observed scope and mark guidance-only controls separately from enforced controls.",
+      "follow_up_notes": "Good candidate for verification-tax, instruction boundaries, and governance-control wording."
+    },
+    {
+      "id": "2026-07-19-008",
+      "title": "Threat brief advises treating coding-agent tool outputs as attacker-controlled",
+      "source_url": "https://buttondown.com/krypteiasec/archive/daily-threat-brief-july-18-2026/",
+      "source_type": "public security brief",
+      "visible_dates": [
+        "July 18, 2026"
+      ],
+      "summary": "A daily security brief connects agent-operated attacks, coding-agent tool-output hijacking, and internet-facing orchestration framework risk, recommending that agent tool inputs such as error reports, retrieved documents, and MCP responses be treated as untrusted.",
+      "why_it_matters": "Local MCP and retrieval workflows should treat tool output as hostile input before shell execution, credential access, or package installation.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Krypteia Sec",
+        "JADEPUFFER",
+        "Agentjacking",
+        "Langflow",
+        "CISA",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Krypteia Sec",
+        "JADEPUFFER",
+        "Agentjacking",
+        "Langflow",
+        "CISA",
+        "MCP"
+      ],
+      "local_practice_implication": "Retrieval, MCP, and diagnostic outputs should pass through trust labeling, allowlists, and approval gates before agents use them to execute commands or touch credentials.",
+      "follow_up_notes": "Route broad threat-actor and framework coverage upstream; keep only the local practice rule."
+    },
+    {
+      "id": "2026-07-19-009",
+      "title": "HalluSquatting article frames hallucinated repos and skills as coding-agent supply-chain risk",
+      "source_url": "https://www.developersdigest.tech/blog/hallusquatting-ai-coding-agent-security",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 18, 2026",
+        "Last updated: July 18, 2026"
+      ],
+      "summary": "A Developers Digest article summarizes HalluSquatting risk for AI coding agents and recommends exact URLs or registry-resolved identifiers, approval gates for clone/install actions, sandboxing, dependency cooldowns, lockfile-only CI, and resolution-evidence logging.",
+      "why_it_matters": "This is directly relevant to package-install risk, skill provenance, MCP install governance, and source-fetch approvals.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Developers Digest",
+        "HalluSquatting",
+        "Agentic Botnets",
+        "promptware",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest",
+        "HalluSquatting",
+        "Agentic Botnets",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "External resource fetch, clone, install, MCP install, and skill install should be privileged verbs with provenance checks, sandboxing, and logged resolution evidence.",
+      "follow_up_notes": "Likely ingest target: sensitive-data-and-supply-chain controls plus tool-call and MCP governance."
+    },
+    {
+      "id": "2026-07-19-010",
+      "title": "Skills-library article treats reusable skills as structured TDD and diagnosis workflows",
+      "source_url": "https://dailyaiworld.com/blogs/matt-pocock-skills-production-agent-workflows-2026",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 18, 2026 metric in article",
+        "Published today in search metadata"
+      ],
+      "summary": "A DailyAIWorld article describes a public skills collection as composable planning, development, quality, and knowledge workflows for coding agents, with an explicit contrast between structured TDD or diagnosis workflows and loose chat-driven code generation.",
+      "why_it_matters": "It is a local practice signal for durable agent instructions and portable skill libraries as execution scaffolding, while the specific repository and metrics belong upstream.",
+      "suggested_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Matt Pocock",
+        "mattpocock/skills",
+        "Total TypeScript",
+        "Claude Code",
+        "Claude Code Plugin Marketplace",
+        "TDD"
+      ],
+      "upstream_owned_entities": [
+        "Matt Pocock",
+        "mattpocock/skills",
+        "Total TypeScript",
+        "Claude Code",
+        "Claude Code Plugin Marketplace"
+      ],
+      "local_practice_implication": "Teams should describe skills as reusable workflow contracts with planning, testing, diagnosis, and handoff responsibilities, not merely prompt snippets.",
+      "follow_up_notes": "Verify current repository facts before ingest; if uncertain, keep as a practice-oriented source note only."
+    },
+    {
+      "id": "2026-07-19-011",
+      "title": "Private-inference article links coding-agent adoption to code-retention risk",
+      "source_url": "https://dailyaiworld.com/blogs/zro-private-inference-coding-agents-2026",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 16, 2026 launch detail",
+        "Published yesterday in search metadata"
+      ],
+      "summary": "A DailyAIWorld article discusses private inference for coding-agent workflows, arguing that prompts containing proprietary source code create retention, training-use, review, jurisdiction, and approval concerns.",
+      "why_it_matters": "Local governance pages should treat inference endpoint selection as a data-handling and approval decision, especially for proprietary source or regulated environments.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Zro",
+        "MoonMath",
+        "Product Hunt",
+        "GDPR",
+        "OpenAI-compatible REST API",
+        "MiniMax M3",
+        "GLM 5.2",
+        "DeepSeek Coder V3",
+        "Qwen 2.5 Coder",
+        "Mistral Large 2"
+      ],
+      "upstream_owned_entities": [
+        "Zro",
+        "MoonMath",
+        "Product Hunt",
+        "GDPR",
+        "MiniMax M3",
+        "GLM 5.2",
+        "DeepSeek Coder V3",
+        "Qwen 2.5 Coder",
+        "Mistral Large 2"
+      ],
+      "local_practice_implication": "Endpoint approval checklists should ask where prompts, code context, tool outputs, and responses are processed, retained, logged, and available for review.",
+      "follow_up_notes": "Keep product claims upstream-owned; local value is the data-retention checklist for coding-agent inference."
+    },
+    {
+      "id": "2026-07-19-012",
+      "title": "Selection guide frames team-ready coding agents around harness and delivery governance",
+      "source_url": "https://ones.com/blog/tool-guide/2026-selection-guide-ai-resource-3/",
+      "source_type": "public vendor article",
+      "visible_dates": [
+        "July 19, 2026"
+      ],
+      "summary": "A vendor selection guide evaluates AI resource-management agents using workflow fit, repository context, human-agent collaboration, safety controls, CI/CD integration, review coordination, and risk visibility.",
+      "why_it_matters": "Although product ranking is upstream-owned and vendor-biased, the criteria align with local adoption and operating-model guidance for team-scale agent deployment.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "ONES.com",
+        "Cursor",
+        "GitHub Copilot Workspace",
+        "Devin",
+        "Sweep",
+        "AutoGPT"
+      ],
+      "upstream_owned_entities": [
+        "ONES.com",
+        "Cursor",
+        "GitHub Copilot Workspace",
+        "Devin",
+        "Sweep",
+        "AutoGPT"
+      ],
+      "local_practice_implication": "Team adoption criteria should include delivery visibility, review routing, risk tracking, and integration with existing planning systems, not only coding automation depth.",
+      "follow_up_notes": "Use only as a practice-criteria source; do not import product rankings."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "The Agent Is a While Loop",
+      "source_url": "https://agenticthinking.ai/blog/the-agent-is-a-while-loop/",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "reason": "Future-dated relative to the local run timestamp of 2026-07-19T20:34:49-04:00."
+    },
+    {
+      "title": "A Field Guide to Agent Loops",
+      "source_url": "https://agenticthinking.ai/blog/a-field-guide-to-agent-loops/",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "reason": "Future-dated relative to the local run timestamp of 2026-07-19T20:34:49-04:00."
+    },
+    {
+      "title": "Loop on the Gap, Not the Try-Count",
+      "source_url": "https://agenticthinking.ai/blog/loop-on-the-gap-not-the-try-count/",
+      "visible_dates": [
+        "July 21, 2026"
+      ],
+      "reason": "Future-dated relative to the local run timestamp."
+    },
+    {
+      "title": "Codex changelog",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_dates": [
+        "2026-07-16 latest visible changelog entry opened during search"
+      ],
+      "reason": "Latest visible relevant entry was outside the two-day cutoff window."
+    },
+    {
+      "title": "Work mode admin FAQ",
+      "source_url": "https://learn.chatgpt.com/docs/enterprise/work-admin-faq",
+      "visible_dates": [
+        "Work mode launched July 9, 2026"
+      ],
+      "reason": "Useful governance content, but no visible last-2-day publication or update date on the page."
+    },
+    {
+      "title": "Agent approvals and security",
+      "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+      "visible_dates": [],
+      "reason": "Useful current documentation, but visible publication or update date was missing or ambiguous."
+    },
+    {
+      "title": "Codex configuration reference",
+      "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "visible_dates": [],
+      "reason": "Useful current documentation, but visible publication or update date was missing or ambiguous."
+    },
+    {
+      "title": "Claude Code memory documentation",
+      "source_url": "https://code.claude.com/docs/en/memory",
+      "visible_dates": [],
+      "reason": "Useful durable-instruction documentation, but visible publication or update date was missing or ambiguous."
+    },
+    {
+      "title": "Claude Code review documentation",
+      "source_url": "https://code.claude.com/docs/en/code-review",
+      "visible_dates": [
+        "Before a July 2026 update"
+      ],
+      "reason": "Month-level update date is boundary-ambiguous and not enough for the strict two-day filter."
+    },
+    {
+      "title": "Structured Feedback Improves Repair in an LLM Agent Loop",
+      "source_url": "https://arxiv.org/abs/2607.14167",
+      "visible_dates": [
+        "Submitted on 15 Jul 2026"
+      ],
+      "reason": "Relevant to repair loops, but submitted before the cutoff window."
+    },
+    {
+      "title": "How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement",
+      "source_url": "https://arxiv.org/abs/2607.13718",
+      "visible_dates": [
+        "Submitted on 15 Jul 2026"
+      ],
+      "reason": "Relevant to permissions, but submitted before the cutoff window."
+    },
+    {
+      "title": "Why AI coding agents keep stalling before production and the governance controls that fix it",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-agents-keep-stalling-before-production-and-the-governance-controls-that-fix-it",
+      "visible_dates": [
+        "Published 6 days ago in search metadata"
+      ],
+      "reason": "Relevant governance article, but outside the two-day cutoff window."
+    }
+  ],
+  "search_notes": [
+    "Searched public web sources only.",
+    "Did not send private repository content, PII, proprietary content, or company-internal local content to external services.",
+    "Two untracked local Clippings files existed before this run and were not read for web collection or modified by this collector.",
+    "Official product documentation with no visible last-2-day date was excluded even when crawled today or clearly relevant.",
+    "Product, company, model, framework, MCP-server, and broad-tool details were recorded as upstream-owned where applicable."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

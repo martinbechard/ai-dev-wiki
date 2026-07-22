@@ -13,6 +13,8 @@ Terminal agent workflows run coding-agent work through shell or IDE terminal ses
 
 The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records terminal coding agents, IDE-managed skills, and destructive-command denial improvements as product evidence for this local pattern. Broad product coverage belongs upstream in [OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), and the [AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md); locally, terminal agents need session scope, command-risk controls, denial reasons, approval handoffs, and evidence before they can affect files, dependencies, credentials, external services, or long-lived workspace state.
 
+The [Herdr clipping](../../../raw/processed/Herdr one terminal for the whole herd.md) adds an agent-multiplexer operating pattern. When a terminal surface keeps several coding agents, logs, servers, and long-lived jobs in one session, the workflow should preserve pane identity, workspace path, model or agent label, permission mode, running command, output stream, and attach or detach history as evidence. Multiplexing is useful only when it improves operator visibility and session recovery without hiding which agent or pane owns a command, approval, or verification result.
+
 This page owns terminal-session workflow shape. [Destructive command controls](../governance-and-risk/destructive-command-controls.md) owns destructive shell enforcement, [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) owns policy and audit enforcement, and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions around command execution and consequential state changes.
 
 ## Practice Boundaries
@@ -23,10 +25,12 @@ This page owns terminal-session workflow shape. [Destructive command controls](.
 - Route destructive shell actions through destructive-command controls instead of relying on terminal-agent prose.
 - Preserve verification evidence and final workspace state before claiming a terminal-agent run completed safely.
 - Treat IDE-managed skills, imported rules, and terminal helpers as instruction or supply-chain inputs when they can change command behavior.
+- For multiplexed terminal sessions, keep each pane's agent identity, repository, command stream, permission mode, and verification evidence distinguishable after reconnects or server replacement.
 
 ## Authoritative Sources
 
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [Herdr clipping](../../../raw/processed/Herdr one terminal for the whole herd.md)
 - [destructive command controls](../governance-and-risk/destructive-command-controls.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -60,3 +64,4 @@ This page owns terminal-session workflow shape. [Destructive command controls](.
 ## Maintenance Notes
 
 - Created on 2026-07-17 from public raw artifacts about terminal coding agents, IDE-managed skills, and destructive-command denial evidence.
+- Maintained on 2026-07-22 with agent-multiplexer session evidence, pane identity, and reconnect boundaries.

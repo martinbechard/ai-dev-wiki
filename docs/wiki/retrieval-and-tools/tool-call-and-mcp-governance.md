@@ -51,6 +51,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds MCP least-privilege and interceptor signals. Tool governance should include capability scoping, argument validation, sandboxing, approval gates, runtime monitoring, and a common policy interception layer when several MCP servers or agent tools expose heterogeneous action surfaces. Broad MCP protocol and vendor background remains upstream-owned; locally, interception is useful only when it produces enforceable policy decisions and audit evidence before a tool call reaches code, data, or external systems.
 
+The July 18-20 raw sources add approval visibility, API-safe evaluation, and connection-inventory controls. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) records API emulation for agent-skill evals and MCP connection inventory as local governance signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) reports tool-call approval prompts that hide SQL or command arguments as a control failure shape. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) adds setup prompts, MCP installation, protocol-layer boundaries, subagent hooks, and explainable command review. Locally, tool approvals should expose material arguments, emulate costly or mutating APIs during evals, and inventory connections before trust is granted.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -96,6 +98,10 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Validate MCP server trust through configuration fingerprints, authentication prompts, transport expectations, local test evidence, and domain-owner approval before enabling read/write service tools.
 - Use capability scoping, argument validation, sandboxing, approval gates, runtime monitoring, and interception points for MCP or tool surfaces that can act across multiple systems.
 - Keep common MCP policy enforcement close enough to execution that prompt injection, over-privileged tools, and untrusted tool output cannot bypass server-by-server review.
+- Show material tool-call arguments, SQL, shell commands, target systems, and side effects before allow or deny decisions.
+- Use proxy or emulator-backed API evals for agent skills that would otherwise call live, costly, mutating, or nondeterministic services.
+- Inventory MCP connections, setup prompts, subagent hooks, and protocol-layer boundaries before treating tool access as approved.
+- Provide an explainable command-review path when side effects depend on shell or service-call semantics that are not obvious from the command text alone.
 
 ## Authoritative Sources
 
@@ -130,6 +136,9 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
+- [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 
 ## Related Code
 
@@ -177,3 +186,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-13 with RAG infrastructure, CLI/MCP onboarding, runtime separation, credential handling, and public setup approval controls.
 - Maintained on 2026-07-14 with programmatic tool orchestration, MCP trust validation, authentication, and governed service-tool controls.
 - Maintained on 2026-07-15 with MCP least privilege, argument validation, runtime monitoring, approval gates, and common policy interception controls.
+- Maintained on 2026-07-22 with visible tool-call arguments, API-safe skill evals, MCP inventories, setup-prompt review, subagent-hook checks, and explainable command approval.

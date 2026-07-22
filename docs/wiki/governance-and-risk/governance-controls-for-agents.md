@@ -43,6 +43,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The July 17 raw sources add governed-agent infrastructure evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records event-triggered automation, terminal-agent hardening, and remediation flows as product evidence for local controls. The durable owners are [event-triggered agent workflows](../agent-workflows/event-triggered-agent-workflows.md), [terminal agent workflows](../agent-workflows/terminal-agent-workflows.md), [destructive command controls](destructive-command-controls.md), [ai-assisted security repair gates](ai-assisted-security-repair-gates.md), [agent governance infrastructure](agent-governance-infrastructure.md), and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md).
 
+The July 18-21 raw sources add agent-control refinements. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) and [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) add branch-tested review instructions, setup prompts, approval agents, prompt-injection defenses, API-safe skill evaluation, MCP connection inventory, and explainable command approvals. The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) adds repository-hosted agent governance rules and agent readiness checklists. Locally, these are control-plane requirements: instructions, setup prompts, approvals, tool connections, and agent-mediated contributions need policy evidence before they change code or external state.
+
 The detailed control leaves are:
 
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) owns direct and indirect prompt-injection handling, source labels, and untrusted-content boundaries.
@@ -91,6 +93,7 @@ The detailed control leaves are:
 - Route destructive shell commands through command-risk detection, path containment, denial evidence, and explicit approval before execution.
 - Route permission inventories, revocation paths, centralized discovery, audit integrity, and agent-traffic monitoring through governance infrastructure leaves instead of relying on local prompt rules.
 - Use scenario-level security guardrails and structural-integrity checks before treating AI acceleration in vulnerability or dependency workflows as reduced risk.
+- Treat branch-readable instructions, setup prompts, approval agents, MCP connection inventories, command explanations, and repository-hosted agent-governance manifests as enforceable workflow controls when they affect code or tool authority.
 
 ## Authoritative Sources
 
@@ -122,6 +125,9 @@ The detailed control leaves are:
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 
 ## Related Code
 
@@ -170,3 +176,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-13 with AI-authored-code traceability, regulated lifecycle controls, and cross-boundary agent visibility requirements.
 - Maintained on 2026-07-14 with isolate-scope-approve production controls and investment-governance evidence for scaled agent adoption.
 - Maintained on 2026-07-17 with routing to focused leaves for event-triggered workflow governance, destructive-command controls, governance infrastructure, approval boundaries, and security repair gates.
+- Maintained on 2026-07-22 with branch-tested instruction controls, setup-prompt governance, command explanation, MCP inventories, and repository-hosted agent-governance evidence.

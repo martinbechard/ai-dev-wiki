@@ -37,6 +37,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The July 17 raw sources add measurable agent-loop evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records terminal agents, IDE profiling workflows, and build-optimization loops as practice evidence for validating the workflow a developer actually uses. Performance-specific baseline, workload, measurement, rollback, and approval checks live in [agent-assisted performance optimization gates](agent-assisted-performance-optimization-gates.md), while benchmark-harness-environment separation, asynchronous execution, tool-call trajectories, outcome-state checks, online traces, and security gates live in [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md).
 
+The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness evidence. The [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json) frames deep research as search, read, evaluate, refine, and search again with corroboration and citation checks. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) adds API-safe evaluation for skills that call live services. The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) adds readiness checks for isolation, authorization, prompt integrity, command safety, egress, provenance, rollback, and incident response before coding agents are deployed.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -70,6 +72,9 @@ The July 17 raw sources add measurable agent-loop evidence. The [topic news coll
 - Require severity, confidence, remediation, and re-verification evidence before AI-assisted security review counts as resolved risk.
 - Validate agent loops against the developer workflow being optimized, and route performance-specific evidence through the performance optimization gates.
 - Separate benchmark, harness, and environment evidence; preserve tool-call trajectories, state-change checks, online traces, cost signals, and security gates when evaluating production agents.
+- Evaluate research agents as iterative search-read-evaluate-refine loops with corroborated sources, citation quality, context-loss controls, and explicit stop criteria.
+- Use emulated or resettable services when evaluating API-calling skills so live costs, mutations, and nondeterministic state do not mask skill quality.
+- Include readiness checks for isolation, authorization boundaries, prompt integrity, command safety, network egress, provenance, rollback, recovery, human governance, explainability, and incident response before deployment.
 
 ## Authoritative Sources
 
@@ -95,6 +100,9 @@ The July 17 raw sources add measurable agent-loop evidence. The [topic news coll
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json)
+- [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
+- [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 
 ## Related Code
 
@@ -138,3 +146,4 @@ The July 17 raw sources add measurable agent-loop evidence. The [topic news coll
 - Maintained on 2026-07-13 with frontend task-completion checks and risk-tiered review evidence for AI-generated code.
 - Maintained on 2026-07-15 with act-observe-decide-retry-stop loop conditions and AI security review re-verification evidence.
 - Maintained on 2026-07-17 with routing to performance optimization gates and trajectory-level evaluation for workflow-specific agent-loop evidence.
+- Maintained on 2026-07-22 with deep-research loop checks, API-safe skill evals, and coding-agent readiness verification.

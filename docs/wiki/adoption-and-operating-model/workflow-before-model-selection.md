@@ -45,6 +45,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add shared-capability, service-delivery, and multi-repository workflow signals. Teams should decide whether the workflow needs centrally funded identity, trusted connectors, curated knowledge, evaluations, observability, model routing, reusable agent patterns, domain-expert-owned MCP servers, or multi-repository workspaces before standardizing the model or desktop surface.
 
+The July 18-21 raw sources reinforce workflow selection as routing design. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) and [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) tie coding-assistant workflows to reusable skills, read-only repository research, task-appropriate models, setup-prompt governance, durable instruction scope, and context-continuity architecture. The [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md) adds a cost-control lesson: high-effort or multi-agent modes should be selected by task decomposition, risk, and verification need, not as a blanket default.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -77,6 +79,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Match each workflow shape to review capacity, lifecycle standards, verification gates, cost telemetry, and escalation paths.
 - Identify shared platform capabilities, domain-owned service tools, and multi-repository workspace needs before selecting a model, assistant surface, or agent desktop.
 - Treat public-sector or service-delivery MCP examples as workflow-grounding evidence, not as permission to expose broad read/write APIs without domain-owner approval.
+- Treat high-effort reasoning, subagent fan-out, setup prompts, reusable skills, and context-continuity layers as workflow choices that need cost, risk, and verification criteria before they become defaults.
 
 ## Authoritative Sources
 
@@ -102,6 +105,9 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
 
 ## Related Code
 
@@ -146,3 +152,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-12 with engineering-leader AI literacy, reliability, governance evidence, and rollout-risk inputs to workflow selection.
 - Maintained on 2026-07-13 with experiment, mandate, regulated lifecycle, and modernization-package workflow distinctions.
 - Maintained on 2026-07-14 with shared-capability, domain-owned MCP service-tool, and multi-repository workspace inputs to workflow selection.
+- Maintained on 2026-07-22 with high-effort routing, setup-prompt governance, reusable-skill, and context-continuity workflow inputs.

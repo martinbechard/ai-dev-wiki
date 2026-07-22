@@ -55,6 +55,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds production governance infrastructure signals. Control planes should maintain current permission inventories, revocation paths, centralized discovery for running agents and connected services, tamper-evident audit logs, policy standards, dependency visibility, and agent-to-agent traffic monitoring so governance remains enforceable as teams add skills, MCP servers, tools, and connected services.
 
+The July 18-21 raw sources add runtime-governance and agent-readiness controls. The [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json), [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json), and [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) reinforce isolate-scope-approve controls, policy-as-code enforcement, zero-trust identity, sandboxing, monitoring, ownership, incident readiness, and kill-switch paths. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) adds governed-agent gateways and trace issue detection: runtime control planes should observe model calls, tool calls, MCP calls, agent-to-agent hops, budgets, permissions, traces, and recurring failure categories.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -102,6 +104,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Centralize MCP or tool policy enforcement when server-by-server configuration would create inconsistent permissions, redaction, rate-limit, or audit behavior.
 - Record delegation-chain evidence, agent identity, authorization decisions, procurement governance proof, and data-locality commitments before recurring private-agent deployment.
 - Maintain current permission inventories, revocation paths, connected-service discovery, dependency visibility, tamper-evident audit logs, policy standards, and agent-traffic monitoring as control-plane infrastructure.
+- Require agent readiness evidence for isolation, authorization boundaries, command safety, network egress, workflow visibility, provenance, rollback, incident response, explainability, and kill-switch behavior before production-like autonomy.
+- Treat governed-agent gateways and trace issue monitors as runtime control planes when they enforce cost, permission, data-boundary, policy, and failure-category evidence across model, tool, MCP, and agent-to-agent hops.
 
 ## Authoritative Sources
 
@@ -139,6 +143,10 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json)
+- [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 
 ## Related Code
 
@@ -191,3 +199,4 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Maintained on 2026-07-15 with isolated coding-agent environments, scoped permissions, live monitoring, policy-based routing, audit trails, and cross-server MCP policy enforcement.
 - Maintained on 2026-07-16 with delegation-chain evidence, off-host authorization, agent identity, governance proof, and private-agent data-locality boundaries.
 - Maintained on 2026-07-17 with current permission inventories, revocation paths, centralized discovery, audit integrity, dependency visibility, and agent-traffic monitoring.
+- Maintained on 2026-07-22 with readiness checklists, policy-as-code, gateway-level runtime controls, trace issue detection, incident readiness, and kill-switch evidence.

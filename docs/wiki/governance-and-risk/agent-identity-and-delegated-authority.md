@@ -29,6 +29,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds delegation-chain and first-class agent identity signals. Delegated authority should record who requested the task, which agent or workload identity acted, which downstream system trusted it, which authorization decision allowed the action, and which confused-deputy controls prevented one principal from spending another principal's authority.
 
+The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) reinforces first-class digital identity for autonomous agents. Agent access should be discoverable, owned by a named human or team, governed by policy, auditable, and issued just-in-time privileged access rather than long-lived secrets. The local delegated-authority record should show which identity acted, which owner was accountable, which policy granted temporary access, and how revocation or incident response would work.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -50,6 +52,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Require unique workload identity, scoped job authority, approval boundaries, quota limits, exception paths, and fast revocation for production agent actions.
 - Treat shared service accounts and prompt-only job scopes as ambient access until an external policy layer binds the task and credential scope.
 - Preserve delegation-chain evidence across requester, agent identity, tool server, downstream system, authorization decision, and confused-deputy controls.
+- Prefer discoverable, owner-assigned, policy-bound agent identities with just-in-time privileged access over long-lived secrets or inherited human accounts.
 
 ## Authoritative Sources
 
@@ -64,6 +67,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 
 ## Related Code
 
@@ -98,3 +102,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-10 with cross-enterprise MCP identity, task-scoped credentials, and runtime authorization evidence.
 - Maintained on 2026-07-12 with workload identity, authority cards, task-based access control, short-lived credentials, quotas, and fast revocation.
 - Maintained on 2026-07-16 with delegation-chain, first-class agent identity, authorization-decision, and confused-deputy evidence.
+- Maintained on 2026-07-22 with owner-assigned agent identities, just-in-time privileged access, and incident-response revocation evidence.

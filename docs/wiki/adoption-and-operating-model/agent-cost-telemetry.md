@@ -49,6 +49,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds coding-agent cost and loop-control signals. Multi-model routing, hard spend caps, organization-level budgets, FinOps dashboards, review file limits, on-demand review continuation, and runaway-loop termination should be attached to the workflow outcome they support. Cost telemetry should distinguish useful escalation to a stronger model from repeated retries, excessive review continuation, or an autonomous loop that should have stopped.
 
+The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) questions whether context compression in one component actually lowers whole-task cost, while the [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) recommends limits on retries, tool calls, loops, and escalation paths. The [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) adds credit-pool visibility, per-user credit reporting, review rate-limit impact, and cost-aware model routing as workflow evidence.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -89,6 +91,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Budget shared identity, connector, knowledge, evaluation, observability, routing, and reusable-pattern capabilities as platform costs before expanding agent adoption.
 - Record model-routing complexity, hard spend caps, organization budgets, PR review file limits, on-demand continuation, and loop-termination events as workflow-level cost evidence.
 - Review runaway-loop stops and review-continuation spend as scope or verification signals, not only as billing events.
+- Validate context-compression savings against whole-task spend, accepted outcome, latency, and verification cost instead of extrapolating from one shortened context component.
+- Track shared credit pools, per-user credit visibility, rate-limit wait time, subagent model choices, loop counts, retry counts, and escalation events as workflow telemetry.
 
 ## Authoritative Sources
 
@@ -117,6 +121,9 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
+- [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 
 ## Related Code
 
@@ -160,3 +167,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-13 with multi-agent modernization cost attribution and spend-dashboard mapping to accepted outcomes.
 - Maintained on 2026-07-14 with model-size, cache, multi-agent, MCP, PR-review, quality-feature, and shared-capability cost attribution.
 - Maintained on 2026-07-15 with multi-model routing, spend caps, organization budgets, PR file limits, review continuation, and runaway-loop cost signals.
+- Maintained on 2026-07-22 with whole-task context-compression checks, shared credit pools, rate-limit impact, subagent model, and retry-loop cost telemetry.

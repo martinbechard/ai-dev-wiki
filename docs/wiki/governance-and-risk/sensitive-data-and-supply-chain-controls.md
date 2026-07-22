@@ -45,6 +45,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The July 17 raw sources add portable-skill supply-chain evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) and [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) treat public skill registries, imported instruction bundles, generated skill files, tool-scope metadata, and poisoned registry paths as supply-chain inputs. Local adoption should pin source registries, record owner and version, review allowed tool scope, and preserve tamper-evident approval history before skills can alter agent authority.
 
+The July 19-21 raw sources add generated-dependency, private-inference, and agentic-application risk signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) and [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json) reinforce HalluSquatting and private-inference concerns: hallucinated package, repository, or skill names should be resolved against exact registries or URLs before clone or install actions, and proprietary code prompts need retention, training-use, jurisdiction, and approval review. The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) maps OWASP agentic-application controls to goal constraints, untrusted retrieved content, per-agent identity, AIBOM provenance, sandboxed execution, behavioral monitoring, and kill switches across IDE, CLI, and PR workflows.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -84,6 +86,9 @@ The July 17 raw sources add portable-skill supply-chain evidence. The [topic new
 - Route secret-scanning alerts with detector category, attribution, verified-domain, and webhook evidence while keeping credential values out of prompts and raw artifacts.
 - Require OS-neutral and provider-neutral runner egress evidence before generated scripts, dependency installs, or signing workflows can use sensitive credentials.
 - Treat public skill registries, imported instruction bundles, generated skill files, and tool-scope metadata as supply-chain inputs until provenance, owner, version, trust status, approval history, and allowed authority are reviewed.
+- Resolve AI-suggested package, repository, and skill names against exact registries, URLs, lockfiles, and approval evidence before clone, install, import, or scaffold actions.
+- Review private-inference and hosted-agent paths for source retention, training-use terms, jurisdiction, reviewer access, approval, and auditability before proprietary code enters prompts.
+- Pair agentic application controls with goal constraints, untrusted-content handling, AIBOM provenance, sandboxing, behavioral monitoring, and kill switches when agents can affect IDE, CLI, or pull-request workflows.
 
 ## Authoritative Sources
 
@@ -114,6 +119,9 @@ The July 17 raw sources add portable-skill supply-chain evidence. The [topic new
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
+- [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json)
+- [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -160,3 +168,4 @@ The July 17 raw sources add portable-skill supply-chain evidence. The [topic new
 - Maintained on 2026-07-15 with instruction-file trust review, repository-history secret coverage, symlink/path checks, sandbox execution controls, patch validation, and data-residency review.
 - Maintained on 2026-07-16 with secret-scanning routing fields and runner-neutral egress controls for generated build and deployment workflows.
 - Maintained on 2026-07-17 with public skill registry, imported instruction bundle, generated skill, tool-scope, and poisoned registry supply-chain controls.
+- Maintained on 2026-07-22 with HalluSquatting resolution, private-inference review, AIBOM provenance, untrusted-content, sandbox, monitoring, and kill-switch controls.

@@ -33,6 +33,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds model-routing and benchmark-repository signals for review evals. Rubrics should record whether routing decisions were based on language, repository risk, review depth, finding type, and validated-fix outcome, and should keep benchmark repository provenance separate from local acceptance evidence. Broad review-tool and benchmark entity coverage remains upstream-owned.
 
+The July 18-21 raw sources add task-shape, review-history, disagreement, and AI-code gate signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) argues that benchmark reports should expose task shape beyond aggregate Pass@1, and the [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) adds full review-history visibility, rate-limit impact metrics, reviewer disagreement as a stop condition, and AI-code verification gates. Review evals should score when reviewers fail to converge, when review wait time or rate limits change process quality, and when AI-generated code needs a gate that prioritizes security and architecture risks over style-only findings.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -57,6 +59,9 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Prefer real-codebase and language-specific eval tasks over generic score claims when calibrating AI code review.
 - Track benchmark provenance, contamination risk, repository-context use, false positives, and validated-fix outcomes separately.
 - Record model-routing criteria, review depth, finding category, benchmark provenance, and validated-fix outcome as separate review-eval fields.
+- Include task shape, review-history state, review wait time, rate-limit effects, and reviewer convergence or disagreement when comparing review agents.
+- Treat persistent reviewer disagreement on a central risk as a stop condition that needs human review or better evidence, not as a success after repeated rounds.
+- Evaluate AI-code gates by security, architecture, dependency, and quality risk priority instead of rewarding style-only volume.
 
 ## Authoritative Sources
 
@@ -76,6 +81,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
+- [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 
 ## Related Code
 
@@ -111,3 +118,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-05 with architecture-context, workflow-integration, actionability, customization, latency, and compliance-fit dimensions.
 - Maintained on 2026-07-11 with real-codebase, language-specific, contamination-aware, and validated-fix review eval dimensions.
 - Maintained on 2026-07-16 with model-routing, review-depth, finding-category, benchmark-provenance, and validated-fix eval fields.
+- Maintained on 2026-07-22 with task-shape reporting, review-history state, rate-limit impact, reviewer-disagreement stop conditions, and AI-code gate priorities.
