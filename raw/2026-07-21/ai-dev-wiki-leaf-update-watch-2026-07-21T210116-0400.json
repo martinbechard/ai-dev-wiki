@@ -1,0 +1,395 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-21T21:01:16-04:00",
+    "rule": "Only sources published or visibly updated within the last 7 days qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start": "2026-07-14T21:01:16-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "candidate": "Cursor 3.11 Side Chats and Conversation Search",
+      "reason": "Stale relative to strict cutoff window starting 2026-07-14T21:01:16-04:00.",
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "2026-07-10"
+    },
+    {
+      "candidate": "Coder AI Stack governed environments",
+      "reason": "Stale relative to strict cutoff window.",
+      "source_url": "https://coder.com/blog/inside-the-stack-secure-and-scale-ai-coding-agents-with-coder",
+      "visible_date": "2026-07-08"
+    },
+    {
+      "candidate": "AGENTS.md explained as durable instructions",
+      "reason": "Stale relative to strict cutoff window.",
+      "source_url": "https://www.braingrid.ai/blog/agents-md-explained",
+      "visible_date": "2026-07-13"
+    },
+    {
+      "candidate": "Junior developers and AI practical agentic career path",
+      "reason": "Stale relative to strict cutoff window.",
+      "source_url": "https://agiflow.io/blog/junior-developers-becoming-agentic-engineers",
+      "visible_date": "2026-07-05 updated"
+    },
+    {
+      "candidate": "Best Claude Code Skills in 2026",
+      "reason": "Stale relative to strict cutoff window.",
+      "source_url": "https://www.taskade.com/blog/claude-code-skills",
+      "visible_date": "2026-07-03"
+    },
+    {
+      "candidate": "Cursor plugins and live debugging context",
+      "reason": "Missing or ambiguous visible date; excluded by watch rules.",
+      "source_url": "https://ssojet.com/blog/best-cursor-plugins",
+      "visible_date": "No article-level date visible in opened page; related footer dates are not the candidate article date."
+    },
+    {
+      "candidate": "AI Coding Agents Move the Bottleneck to Review Queues",
+      "reason": "Stale relative to strict cutoff window.",
+      "source_url": "https://www.developersdigest.tech/blog/ai-coding-agents-review-queues",
+      "visible_date": "2026-06-21 updated 2026-06-28"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "source_url": "https://saaswithalex.pages.dev/posts/repository-context-strategies-ai-coding/",
+      "summary": "A public context-engineering article frames repository context as a cost and quality bottleneck for coding agents, citing token-metered pricing pressure and local context layers that reduce repeated repo exploration. It specifically discusses context-router as a memory-aware MCP-native context engine that stores observations in git and returns a minimal useful slice to future agents."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "summary": "TechRadar Pro argues that autonomous agents should be treated as first-class digital identities with discoverability, assigned human ownership, policies, auditability, and just-in-time privileged access rather than direct exposure to long-lived secrets."
+    },
+    {
+      "source_url": "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+      "summary": "Cycode summarizes the OWASP Top 10 for Agentic Applications 2026 and maps agentic defenses to goal constraints, untrusted retrieved content, per-agent identity with short-lived credentials, AIBOM-backed supply-chain provenance, sandboxed execution, behavioral monitoring, and kill switches across IDE, CLI, and PR workflows."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.15769",
+      "summary": "The arXiv preprint proposes an Agent Governance Manifest for OSS collaboration, arguing that agent-mediated contributions need repository-hosted rules coordinating risk, evidence, accountability, preparation obligations, verification rights, and maintainer decision authority. In its study, AGM-supported materials improved reviewer risk-label recovery and perceived review support."
+    },
+    {
+      "source_url": "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html",
+      "summary": "Gensee published a 15-question readiness checklist for deploying coding agents, requiring runtime evidence for isolation, authorization boundaries, file and secret access, prompt integrity, command safety, network egress, workflow visibility, long-horizon safety, provenance, runtime policy enforcement, rollback, recovery, human governance, explainability, and incident readiness."
+    },
+    {
+      "source_url": "https://cursor.com/changelog",
+      "summary": "Cursor changed its Slack integration so it shares a plan before starting, can start in a named multi-repo environment, prompts when it needs to switch repositories mid-task, and can read from or send status to other Slack channels and threads."
+    }
+  ],
+  "follow_up_notes": [
+    "Normal raw ingest should review the qualifying updates and update only downstream local-practice leaves when the implication is durable.",
+    "Route broad ecosystem/product/entity background to the upstream AI wiki per docs/wiki/federation.md.",
+    "No docs/wiki pages were updated by this watch run."
+  ],
+  "ledger_update_intent": {
+    "excluded_candidate_count": 7,
+    "qualified_update_count": 6,
+    "selected_leaf_count": 15
+  },
+  "named_entities": [
+    "AI-first identity model",
+    "AIBOM",
+    "Agent Governance Manifest",
+    "Amazon Q Developer",
+    "Bito AI Architect",
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Cycode",
+    "EchoLeak",
+    "Gemini CLI",
+    "GenseeAI",
+    "GitHub Copilot",
+    "MCP",
+    "OWASP Top 10 for Agentic Applications 2026",
+    "Ping Identity",
+    "SWE-Bench Pro",
+    "Slack",
+    "TechRadar Pro",
+    "agent-mediated contributions",
+    "arXiv",
+    "context-router",
+    "just-in-time privileged access",
+    "multi-repo environments",
+    "open-source software"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "A public context-engineering article frames repository context as a cost and quality bottleneck for coding agents, citing token-metered pricing pressure and local context layers that reduce repeated repo exploration. It specifically discusses context-router as a memory-aware MCP-native context engine that stores observations in git and returns a minimal useful slice to future agents.",
+      "follow_up_note": "Ingest should preserve only the local context-router practice implication and route product/model/tool background upstream.",
+      "id": "context-strategies-token-cost-2026-07-15",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "context-router",
+        "MCP",
+        "GitHub Copilot",
+        "Bito AI Architect",
+        "SWE-Bench Pro"
+      ],
+      "published_or_updated_at": "2026-07-15",
+      "source_url": "https://saaswithalex.pages.dev/posts/repository-context-strategies-ai-coding/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "MCP",
+        "Bito AI Architect",
+        "SWE-Bench Pro"
+      ],
+      "visible_date_basis": "Page header shows July 15, 2026.",
+      "why_it_matters_for_leaf": "Supports the local thin-context-router practice with a current public example of context routing as an economic and quality-control layer, not only a convenience feature."
+    },
+    {
+      "factual_summary": "TechRadar Pro argues that autonomous agents should be treated as first-class digital identities with discoverability, assigned human ownership, policies, auditability, and just-in-time privileged access rather than direct exposure to long-lived secrets.",
+      "follow_up_note": "Keep the local implication on identity/ownership controls; broad vendor coverage belongs upstream.",
+      "id": "agent-access-not-secrets-2026-07-20",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Ping Identity",
+        "TechRadar Pro",
+        "AI-first identity model",
+        "just-in-time privileged access"
+      ],
+      "published_or_updated_at": "2026-07-20",
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "upstream_owned_entities": [
+        "Ping Identity"
+      ],
+      "visible_date_basis": "Article page shows Published 20 July 2026.",
+      "why_it_matters_for_leaf": "Reinforces delegated authority, ownership rosters, and approval boundaries as operating controls for AI-assisted development agents."
+    },
+    {
+      "factual_summary": "Cycode summarizes the OWASP Top 10 for Agentic Applications 2026 and maps agentic defenses to goal constraints, untrusted retrieved content, per-agent identity with short-lived credentials, AIBOM-backed supply-chain provenance, sandboxed execution, behavioral monitoring, and kill switches across IDE, CLI, and PR workflows.",
+      "follow_up_note": "During ingest, separate durable local gate language from broad OWASP/ecosystem incident background.",
+      "id": "owasp-agentic-top10-explainer-2026-07-21",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "OWASP Top 10 for Agentic Applications 2026",
+        "Cycode",
+        "AIBOM",
+        "EchoLeak",
+        "Amazon Q Developer",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-07-21",
+      "source_url": "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+      "upstream_owned_entities": [
+        "OWASP",
+        "Cycode",
+        "Amazon Q Developer",
+        "MCP"
+      ],
+      "visible_date_basis": "Article page shows Last updated July 21, 2026 and Originally published July 21, 2026.",
+      "why_it_matters_for_leaf": "Provides a recent security-control vocabulary that can inform local repair gates, governance infrastructure, identity scoping, and human-agent trust boundaries."
+    },
+    {
+      "factual_summary": "The arXiv preprint proposes an Agent Governance Manifest for OSS collaboration, arguing that agent-mediated contributions need repository-hosted rules coordinating risk, evidence, accountability, preparation obligations, verification rights, and maintainer decision authority. In its study, AGM-supported materials improved reviewer risk-label recovery and perceived review support.",
+      "follow_up_note": "Ingest as local governance/evaluation practice evidence, not as a broad encyclopedia entry about OSS governance.",
+      "id": "agent-governance-manifest-arxiv-2026-07-17",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Agent Governance Manifest",
+        "arXiv",
+        "open-source software",
+        "agent-mediated contributions"
+      ],
+      "published_or_updated_at": "2026-07-17T08:58:54Z",
+      "source_url": "https://arxiv.org/abs/2607.15769",
+      "upstream_owned_entities": [
+        "arXiv"
+      ],
+      "visible_date_basis": "arXiv submission history shows Fri, 17 Jul 2026 08:58:54 UTC.",
+      "why_it_matters_for_leaf": "Strongly aligns with local practice leaves about source routing, code-review rubrics, judge boundaries, product-quality gates, workflow calibration, and operating agreements."
+    },
+    {
+      "factual_summary": "Gensee published a 15-question readiness checklist for deploying coding agents, requiring runtime evidence for isolation, authorization boundaries, file and secret access, prompt integrity, command safety, network egress, workflow visibility, long-horizon safety, provenance, runtime policy enforcement, rollback, recovery, human governance, explainability, and incident readiness.",
+      "follow_up_note": "Local ingest should use the checklist shape for operating agreements and gates while routing product specifics upstream.",
+      "id": "gensee-runtime-readiness-checklist-2026-07-16",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "GenseeAI",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Gemini CLI"
+      ],
+      "published_or_updated_at": "2026-07-16",
+      "source_url": "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Gemini CLI"
+      ],
+      "visible_date_basis": "Article page shows July 16, 2026.",
+      "why_it_matters_for_leaf": "Adds a current public checklist framing broad adoption as evidence-backed runtime readiness rather than policy intent."
+    },
+    {
+      "factual_summary": "Cursor changed its Slack integration so it shares a plan before starting, can start in a named multi-repo environment, prompts when it needs to switch repositories mid-task, and can read from or send status to other Slack channels and threads.",
+      "follow_up_note": "Preserve the local workflow implication; route Cursor product coverage upstream if needed.",
+      "id": "cursor-slack-plan-multirepo-crosschannel-2026-07-17",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Slack",
+        "multi-repo environments"
+      ],
+      "published_or_updated_at": "2026-07-17",
+      "source_url": "https://cursor.com/changelog",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Slack"
+      ],
+      "visible_date_basis": "Cursor changelog entry is dated Jul 17, 2026.",
+      "why_it_matters_for_leaf": "A cited public source now shows source-routing and approval implications in a production coding-agent workflow: plan-before-action, explicit repository/environment switching, and cross-channel context flow."
+    }
+  ],
+  "run_timestamp": "2026-07-21T21:01:16-04:00",
+  "run_timestamp_utc": "2026-07-22T01:01:16Z",
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+  ],
+  "source_urls_checked": [
+    "https://agiflow.io/blog/junior-developers-becoming-agentic-engineers",
+    "https://arxiv.org/abs/2607.15769",
+    "https://coder.com/blog/inside-the-stack-secure-and-scale-ai-coding-agents-with-coder",
+    "https://cursor.com/changelog",
+    "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+    "https://saaswithalex.pages.dev/posts/repository-context-strategies-ai-coding/",
+    "https://ssojet.com/blog/best-cursor-plugins",
+    "https://www.braingrid.ai/blog/agents-md-explained",
+    "https://www.developersdigest.tech/blog/ai-coding-agents-review-queues",
+    "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html",
+    "https://www.taskade.com/blog/claude-code-skills",
+    "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": [
+      "https://arxiv.org/abs/2607.15769",
+      "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html"
+    ],
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": [
+      "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://www.braingrid.ai/blog/agents-md-explained",
+      "https://www.taskade.com/blog/claude-code-skills"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+      "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html",
+      "https://cursor.com/changelog"
+    ],
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "https://saaswithalex.pages.dev/posts/repository-context-strategies-ai-coding/",
+      "https://coder.com/blog/inside-the-stack-secure-and-scale-ai-coding-agents-with-coder"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://agiflow.io/blog/junior-developers-becoming-agentic-engineers"
+    ],
+    "docs/wiki/context-architecture/thin-context-router.md": [
+      "https://saaswithalex.pages.dev/posts/repository-context-strategies-ai-coding/",
+      "https://ssojet.com/blog/best-cursor-plugins"
+    ],
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": [
+      "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+      "https://arxiv.org/abs/2607.15769",
+      "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html"
+    ],
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": [
+      "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "https://cycode.com/blog/owasp-top-10-agentic-applications/"
+    ],
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": [
+      "https://cycode.com/blog/owasp-top-10-agentic-applications/",
+      "https://www.gensee.ai/blogs/15-questions-before-deploying-ai-coding-agents.html"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "https://arxiv.org/abs/2607.15769",
+      "https://cursor.com/changelog",
+      "https://coder.com/blog/inside-the-stack-secure-and-scale-ai-coding-agents-with-coder",
+      "https://www.developersdigest.tech/blog/ai-coding-agents-review-queues"
+    ],
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": [
+      "https://arxiv.org/abs/2607.15769"
+    ],
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md": [
+      "https://arxiv.org/abs/2607.15769"
+    ],
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": [
+      "https://arxiv.org/abs/2607.15769"
+    ],
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md": [
+      "https://arxiv.org/abs/2607.15769"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Amazon Q Developer",
+    "Bito AI Architect",
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Cycode",
+    "Gemini CLI",
+    "GitHub Copilot",
+    "MCP",
+    "OWASP",
+    "Ping Identity",
+    "SWE-Bench Pro",
+    "Slack",
+    "arXiv"
+  ]
+}
