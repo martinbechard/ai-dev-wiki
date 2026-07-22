@@ -1,0 +1,418 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-21T20:31:01-0400",
+  "cutoff_window": {
+    "start": "2026-07-19T20:31:01-0400",
+    "end": "2026-07-21T20:31:01-0400",
+    "rule": "Include only public sources with a visible publication or update date inside the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_ai_wiki_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "downstream_owned_lens": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, source workflows, verification, governance, and local adoption patterns."
+  },
+  "qualifying_updates": [
+    {
+      "id": "2026-07-21-001",
+      "title": "Copilot model routing adds parallel-tool coding-agent option",
+      "source_url": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 21, 2026"
+      ],
+      "summary": "GitHub announced Gemini 3.6 Flash availability in GitHub Copilot, describing it as designed for web and app development, coding, longer-horizon agentic tasks, configurable reasoning effort, and parallel tool use.",
+      "why_it_matters": "Local practice pages should treat model selection as a governed runtime-control question when agents can vary reasoning effort and invoke tools in parallel.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Gemini 3.6 Flash",
+        "Google",
+        "parallel tool use"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Gemini 3.6 Flash",
+        "Google"
+      ],
+      "local_practice_implication": "Record only the practice implication: configurable reasoning effort and parallel tool use require explicit model-routing, budget, and tool-permission policies rather than product encyclopedia coverage.",
+      "follow_up_notes": "During ingest, link to upstream model/product pages if needed and update local model-routing or tool-governance guidance only."
+    },
+    {
+      "id": "2026-07-21-002",
+      "title": "Copilot cost centers gain UI-managed AI credit pools",
+      "source_url": "https://github.blog/changelog/2026-07-20-ai-credit-pools-for-cost-centers-in-the-billing-ui/",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "GitHub added billing UI management for Copilot AI credit pools on cost centers, including automatic pool-limit calculation from assigned licenses and limit behavior that can block included usage or continue as overage spend.",
+      "why_it_matters": "AI-assisted development operating models increasingly need spend governance that maps agent and assistant usage to teams, cost centers, and explicit overage decisions.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "AI credit pools",
+        "cost centers"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise"
+      ],
+      "local_practice_implication": "Keep the local lesson on budget boundaries, chargeback, and overage approval policy for AI-assisted development rather than duplicating GitHub billing documentation.",
+      "follow_up_notes": "Potential ingest target: adoption or governance leaf covering per-team AI spend controls."
+    },
+    {
+      "id": "2026-07-21-003",
+      "title": "Copilot users gain personal AI credit visibility",
+      "source_url": "https://github.blog/changelog/2026-07-20-copilot-users-can-now-see-ai-credits-used-per-billing-cycle/",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "GitHub added per-user visibility into Copilot AI credits used during the billing cycle, including users without an individual budget.",
+      "why_it_matters": "Personal usage visibility is a concrete adoption-control pattern: developers can see actual AI consumption rather than relying only on admin dashboards or percentage-of-budget abstractions.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "AI credits",
+        "usage-based billing"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise"
+      ],
+      "local_practice_implication": "Local guidance can treat individual usage telemetry as part of responsible developer adoption, cost feedback loops, and agent-workload planning.",
+      "follow_up_notes": "Consider folding into existing spend-governance or adoption telemetry pages during ingest."
+    },
+    {
+      "id": "2026-07-21-004",
+      "title": "CodeRabbit records full review history in Change Stack",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "CodeRabbit added Change Stack visibility for full pull request review history, including human and bot approvals, comments, change requests, pending reviews, filtering, timeline sorting, and in-app review/comment viewing.",
+      "why_it_matters": "AI code review workflows need auditable review timelines that include both human and bot states so teams can reconstruct approval paths and identify stale or conflicting review signals.",
+      "suggested_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "Change Stack",
+        "pull request review history",
+        "bot approvals"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "The local practice lens is review-state provenance and auditability, not CodeRabbit product coverage.",
+      "follow_up_notes": "During ingest, compare with existing AI review gate and source workflow pages."
+    },
+    {
+      "id": "2026-07-21-005",
+      "title": "CodeRabbit exposes review rate-limit impact metrics",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "CodeRabbit added billing usage metrics that show conditional rate-limit impact for users, limited reviews, review wait time, active users, and warnings when monthly spend approaches a configured cap.",
+      "why_it_matters": "Agentic review programs need operational signals for saturation, queues, spend caps, and review latency before teams rely on automated review as a delivery gate.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "rate limits",
+        "review wait time",
+        "usage-based reviews"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "Track rate-limit and queue telemetry as first-class evidence when deciding whether AI review gates are reliable enough for normal delivery flow.",
+      "follow_up_notes": "Potential ingest target: review-capacity or runtime-telemetry leaf."
+    },
+    {
+      "id": "2026-07-21-006",
+      "title": "CodeRabbit automations manage incident webhooks through admin connection",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "source_type": "public vendor changelog",
+      "visible_dates": [
+        "July 21, 2026"
+      ],
+      "summary": "CodeRabbit added managed PagerDuty webhook subscriptions for Slack and workspace automations after a global admin connects PagerDuty from the automation editor, with selectable incident event types.",
+      "why_it_matters": "When agent or review automations react to production incidents, connection ownership, webhook lifecycle management, and event-scope choices become governance controls.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "PagerDuty",
+        "Slack",
+        "workspace automations",
+        "webhooks"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "PagerDuty",
+        "Slack"
+      ],
+      "local_practice_implication": "Capture the local pattern as admin-owned connection setup plus scoped event triggers for incident-driven agent workflows.",
+      "follow_up_notes": "Avoid duplicating PagerDuty or Slack background; keep only the workflow governance implication."
+    },
+    {
+      "id": "2026-07-21-007",
+      "title": "METR proposes expenditure horizon for agent optimization ability",
+      "source_url": "https://metr.org/",
+      "source_type": "public research organization update",
+      "visible_dates": [
+        "July 21, 2026"
+      ],
+      "summary": "METR listed a new item titled \"Expenditure Horizon: Measuring Optimization Ability, with an Application to NanoGPT,\" proposing a measure of an AI agent's optimization ability and applying it to a NanoGPT speedrun.",
+      "why_it_matters": "Software engineering eval pages can treat optimization over expenditure as a possible lens for long-horizon coding agents, especially when agents spend compute and attempts to improve a target artifact.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "METR",
+        "Expenditure Horizon",
+        "NanoGPT",
+        "AI agent optimization ability"
+      ],
+      "upstream_owned_entities": [
+        "METR",
+        "NanoGPT"
+      ],
+      "local_practice_implication": "Keep the downstream note on eval design: measure agent improvement loops against expenditure and artifact outcomes, not only pass/fail task completion.",
+      "follow_up_notes": "Fetch the article detail during ingest if a durable eval leaf needs exact definitions and methodology."
+    },
+    {
+      "id": "2026-07-21-008",
+      "title": "AI reviewer disagreement framed as a stop condition",
+      "source_url": "https://www.contrastsecurity.com/security-influencers/when-ai-reviewers-cannot-agree?hs_amp=true",
+      "source_type": "public article",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "Contrast Security described a controlled multi-round AI code-review run where reviewers did not converge: after three rounds and about half an hour of agent time, the central security issue remained unresolved and the finding count grew.",
+      "why_it_matters": "AI code-review loops need explicit non-convergence handling; additional rounds are not automatically evidence of progress when reviewers disagree about a fix.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Contrast Security",
+        "AI code review",
+        "non-convergence",
+        "reviewer agents"
+      ],
+      "upstream_owned_entities": [
+        "Contrast Security"
+      ],
+      "local_practice_implication": "Local review-loop guidance should add stop conditions for growing finding sets, unresolved central issues, and reviewer disagreement rather than trusting fixed round budgets.",
+      "follow_up_notes": "Potential ingest target: lifecycle AI review gates or verification-loop pages."
+    },
+    {
+      "id": "2026-07-21-009",
+      "title": "SonarQube Server release emphasizes AI-code verification gates",
+      "source_url": "https://www.sonarsource.com/blog/introducing-sonarqube-server-2026-4/",
+      "source_type": "public vendor blog",
+      "visible_dates": [
+        "July 20, 2026"
+      ],
+      "summary": "Sonar announced SonarQube Server 2026.4 with a code verification layer for AI-generated code, architecture management, organization-wide quality-gate visibility, and an Agentic AI quality gate that prioritizes dependency security while tolerating minor style issues.",
+      "why_it_matters": "Teams adopting AI-generated code need quality gates that separate high-consequence security and dependency issues from lower-signal style findings, while also watching whether gates are bypassed.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Sonar",
+        "SonarQube Server 2026.4",
+        "Agentic AI quality gate",
+        "AI-generated code",
+        "architecture management"
+      ],
+      "upstream_owned_entities": [
+        "Sonar",
+        "SonarQube Server"
+      ],
+      "local_practice_implication": "Treat AI-code verification as a calibrated gate with security priority, architecture drift visibility, and bypass monitoring rather than a generic static-analysis update.",
+      "follow_up_notes": "During ingest, avoid a product leaf; fold the practice into verification gates and AI-generated-code review guidance."
+    },
+    {
+      "id": "2026-07-21-010",
+      "title": "Graph engineering post maps multi-agent topology to governance evidence",
+      "source_url": "https://www.truefoundry.com/fr/blog/graph-engineering-enterprise-guide",
+      "source_type": "public vendor article",
+      "visible_dates": [
+        "Published: July 20, 2026"
+      ],
+      "summary": "TrueFoundry framed graph engineering as the design and operation of multi-agent systems as explicit graphs of agents, deterministic functions, routers, joins, tools, and human checkpoints, with emphasis on identities, graph/run/node identifiers, budgets, policy, traces, approvals, and orchestrator records.",
+      "why_it_matters": "Local multi-agent guidance should distinguish topology governance from single-agent loop design and require correlation identifiers that connect orchestration traces with model, tool, policy, latency, and cost records.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "graph engineering",
+        "multi-agent systems",
+        "MCP Gateway",
+        "Agent Harness",
+        "approval checkpoints"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "MCP Gateway",
+        "Agent Harness"
+      ],
+      "local_practice_implication": "Capture the downstream lens as topology-as-artifact, node identity, trace correlation, and approval checkpoint placement for multi-agent development workflows.",
+      "follow_up_notes": "The term is emerging and contested; ingest should avoid treating it as a settled standard."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Copilot code review customization and configurability improvements",
+      "source_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+      "visible_dates": [
+        "July 17, 2026"
+      ],
+      "reason": "Outside the strict two-day cutoff window for this run, despite high local relevance to custom instructions, setup steps, and firewall support."
+    },
+    {
+      "title": "GitHub Mobile: Fix pull request comments with Copilot cloud agent",
+      "source_url": "https://github.blog/changelog/2026-07-17-github-mobile-fix-pull-request-comments-with-copilot-cloud-agent/",
+      "visible_dates": [
+        "July 17, 2026"
+      ],
+      "reason": "Outside the strict two-day cutoff window."
+    },
+    {
+      "title": "GitLab 19.2 Brings Governed Agentic Automation",
+      "source_url": "https://about.gitlab.com/press/releases/2026-07-16-gitlab-19-2-brings-governed-agentic-automation/",
+      "visible_dates": [
+        "July 16, 2026"
+      ],
+      "reason": "Outside the strict two-day cutoff window; also broad product release coverage is upstream-owned except for local practice implications."
+    },
+    {
+      "title": "Context Engineering: A Practical Guide for AI Agents",
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "visible_dates": [
+        "last month"
+      ],
+      "reason": "Published outside the window and visible date is relative in search output."
+    },
+    {
+      "title": "The biggest MCP spec update ships July 28",
+      "source_url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+      "visible_dates": [
+        "June 18, 2026",
+        "July 28, 2026 release-candidate subject"
+      ],
+      "reason": "Published outside the cutoff; the July 28 date is future-facing subject matter, not a qualifying publication/update date."
+    },
+    {
+      "title": "Loop Engineering for Verifiable Evidence-Gated Lifecycle Control",
+      "source_url": "https://arxiv.org/abs/2607.14890",
+      "visible_dates": [
+        "Published: 5 days ago"
+      ],
+      "reason": "Outside the strict two-day cutoff window; relative date was not precise enough for inclusion."
+    },
+    {
+      "title": "CodeRabbit finishing touch opt-outs",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "visible_dates": [
+        "July 17, 2026"
+      ],
+      "reason": "Outside the strict two-day cutoff window."
+    },
+    {
+      "title": "Just-in-Time Context for AI Agents: A Runtime Discipline",
+      "source_url": "https://www.truefoundry.com/fr/blog/jit-context-just-in-time-context-agents",
+      "visible_dates": [
+        "July 21, 2026 shown in related/recent-post areas"
+      ],
+      "reason": "Main article publication/update date was ambiguous in the fetched page; excluded despite local relevance."
+    },
+    {
+      "title": "AI Agents News - Week of July 21, 2026",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_dates": [
+        "Monday, July 20, 2026"
+      ],
+      "reason": "Aggregator/secondary coverage; excluded in favor of primary vendor and research sources."
+    },
+    {
+      "title": "Riding the wave of client-side OpenTelemetry",
+      "source_url": "https://www.apmdigest.com/hot-topic/aiml",
+      "visible_dates": [
+        "July 22, 2026"
+      ],
+      "reason": "Future-dated relative to the run timestamp."
+    }
+  ],
+  "search_notes": [
+    "Searched public web sources only; no private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Preferred primary vendor changelogs, public vendor articles, and public research-organization updates with visible dates in the strict window.",
+    "Broad product, company, model, MCP/protocol, and developer-tool facts were marked upstream-owned and reduced to local AI-assisted development practice implications.",
+    "Existing untracked Clippings and raw/2026-07-19 collector files in the workspace were not modified."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
