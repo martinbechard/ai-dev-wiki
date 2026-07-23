@@ -1,0 +1,553 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_local": "2026-07-22T20:31:40-0400",
+  "run_timestamp_utc": "2026-07-23T00:31:40Z",
+  "cutoff_window": {
+    "start_utc": "2026-07-21T00:31:40Z",
+    "end_utc": "2026-07-23T00:31:40Z",
+    "policy": "Include only public sources published or visibly updated within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_scope": "The upstream AI wiki owns broad AI ecosystem coverage for companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "routing_note": "Upstream-owned entities are recorded only to preserve routing; local notes focus on downstream practice implications."
+  },
+  "search_queries": [
+    "AI-assisted development code review agent workflow July 22 2026",
+    "coding agent prompts durable instructions July 22 2026",
+    "MCP governance tool calls approvals audit logs July 22 2026",
+    "software engineering evals coding agents July 22 2026",
+    "site:github.blog/changelog July 22 2026 Copilot coding agent",
+    "July 22 2026 AI code review",
+    "July 21 2026 context engineering agents",
+    "July 22 2026 structured outputs agents"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "New Copilot usage metrics impact dashboard",
+      "source_url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "GitHub released an enterprise and organization dashboard that groups engaged Copilot users into AI adoption phases, compares passive and engaged cohorts, shows six-month trends, and recommends enablement next steps.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption programs can move beyond active-seat counts toward cohort-based operating metrics that distinguish code-first, agent-first, and multi-agent usage before planning enablement or policy changes.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot usage metrics API",
+        "AI adoption phase"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Track adoption phase and PR throughput as operating-model evidence, not as a product encyclopedia update."
+    },
+    {
+      "title": "Gemini 3.6 Flash is now available in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 21, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "GitHub added Gemini 3.6 Flash to Copilot surfaces, including Copilot CLI, cloud agent, Copilot app, IDEs, and GitHub.com, with configurable reasoning effort, parallel tool use, gradual rollout, and administrator enablement for business plans.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams need model-routing and admin-enable policies that account for reasoning-effort controls, usage-based pricing, and parallel tool-use behavior across coding-agent surfaces.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.6 Flash",
+        "Google"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.6 Flash",
+        "Google"
+      ],
+      "local_practice_implication": "Record as a model governance and rollout-control signal rather than a local model page."
+    },
+    {
+      "title": "OpenAI Presence enterprise agent launch",
+      "source_url": "https://openai.com/index/introducing-openai-presence/",
+      "publisher": "OpenAI",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "OpenAI introduced Presence as an enterprise product for deployed voice and chat agents with scoped knowledge and system access, policies, approvals, escalations, simulations, graders, guardrails, and Codex-assisted update proposals that teams test and approve.",
+      "why_it_matters_for_ai_assisted_development_practice": "The deployment pattern reinforces job-scoped permissions, production feedback loops, simulation-backed evaluation, and controlled rollout of agent behavior changes.",
+      "named_entities": [
+        "OpenAI",
+        "OpenAI Presence",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "OpenAI Presence",
+        "Codex"
+      ],
+      "local_practice_implication": "Use only the practice lens: approvals, guardrails, simulations, and tested change proposals for production agents."
+    },
+    {
+      "title": "Claude Platform release notes for Managed Agents",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "publisher": "Anthropic",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "The July 22 Claude Platform notes added model effort configuration for Managed Agents, lifecycle webhooks for environments and memory stores, initial events that start a session loop at creation time, optional version handling on agent updates, and event deltas for session thread streams.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent harnesses should treat effort, event lifecycle hooks, seeded initial state, optimistic concurrency, and subagent stream deltas as explicit design surfaces for reliable long-running workflows.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Platform",
+        "Claude Managed Agents"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Platform",
+        "Claude Managed Agents"
+      ],
+      "local_practice_implication": "Capture as harness architecture implications for lifecycle events, progress streaming, and state initialization."
+    },
+    {
+      "title": "MintMCP guide to MCP server governance",
+      "source_url": "https://www.mintmcp.com/blog/what-mcp-server",
+      "publisher": "MintMCP",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "MintMCP published a guide describing MCP servers as exposing tools, resources, and prompts; it highlights security controls for each primitive, hosted versus local deployment tradeoffs, gateway logging, agent attribution, role bundles, SCIM alignment, and agent-specific credentials.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP adoption needs a governed control plane that separates local development convenience from enterprise credential management, approval workflows, attribution, and audit evidence.",
+      "named_entities": [
+        "MintMCP",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "SCIM"
+      ],
+      "upstream_owned_entities": [
+        "MintMCP",
+        "Model Context Protocol",
+        "MCP Gateway"
+      ],
+      "local_practice_implication": "Keep the local note to governed tool access, role-bundled permissions, and auditability."
+    },
+    {
+      "title": "AI-Generated Code Security: The CISO Guide",
+      "source_url": "https://www.arnica.io/blog/ai-code-security-complete-guide",
+      "publisher": "Arnica",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Arnica framed AI-generated code as untrusted input and recommended SAST, dependency scanning, secrets detection, review gates, tool inventory, and audit evidence tying generated artifacts back to an originating tool and reviewer.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted development pipelines should prove provenance, security scanning, and reviewer accountability for AI-touched code before merge.",
+      "named_entities": [
+        "Arnica",
+        "SAST",
+        "NIST AI RMF",
+        "EU AI Act",
+        "SOC 2 Type II"
+      ],
+      "upstream_owned_entities": [
+        "Arnica",
+        "NIST AI RMF",
+        "EU AI Act"
+      ],
+      "local_practice_implication": "Use as practice evidence for AI-code review gates, provenance, and supply-chain/security controls."
+    },
+    {
+      "title": "How to kill the code review",
+      "source_url": "https://www.aviator.co/blog/how-to-kill-the-code-review/",
+      "publisher": "Aviator",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Aviator argued that code review combines two different jobs: team alignment and standards checking. The article says agent-generated code makes the intent trail harder to preserve because implementation remains while prompts, tickets, and micro-decisions often do not.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams should preserve decision rationale and implementation intent separately from deterministic standards checks instead of assuming one AI code review pass can replace both functions.",
+      "named_entities": [
+        "Aviator",
+        "AI Engineer World's Fair",
+        "Faros"
+      ],
+      "upstream_owned_entities": [
+        "Aviator",
+        "Faros"
+      ],
+      "local_practice_implication": "Route to code-review practice: alignment artifacts, standards registries, and review traceability."
+    },
+    {
+      "title": "MCP Is Growing Up: The 2026 Roadmap Takes Shape",
+      "source_url": "https://obot.ai/blog/mcp-is-growing-up-the-2026-roadmap-takes-shape/",
+      "publisher": "Obot",
+      "visible_date": "Published: July 21, 2026; Last Updated: July 21, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Obot summarized the MCP 2026 roadmap and July 28 release candidate, including a stateless protocol core, request metadata on each call, discoverability, cache hints, W3C trace context, formal extensions, audited UI actions, and task handles for long-running work.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP runtime design should externalize state explicitly, preserve trace context, and expect governance controls such as audit trails, SSO authorization, and gateway behavior to live in surrounding enterprise infrastructure.",
+      "named_entities": [
+        "Obot",
+        "Model Context Protocol",
+        "MCP Apps",
+        "MCP Tasks",
+        "W3C Trace Context",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "Obot",
+        "Model Context Protocol",
+        "MCP Apps",
+        "MCP Tasks",
+        "OpenTelemetry"
+      ],
+      "local_practice_implication": "Treat as a governed MCP practice update, not broad MCP ecosystem coverage."
+    },
+    {
+      "title": "Building Sierra's MCP Gateway",
+      "source_url": "https://sierra.ai/blog/building-sierras-mcp-gateway-an-engineering-iceberg",
+      "publisher": "Sierra",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Sierra described internal MCP gateway lessons: coordination becomes the bottleneck as engineers become more productive, gateway coverage must fit complete workflows, client support varies, read-only CLI tokens can be safer than broad proxied tool access, and interactive versus scheduled agents need different identities.",
+      "why_it_matters_for_ai_assisted_development_practice": "Enterprise agent platforms need service ownership, scoped credentials, approval trails, full-workflow fit, and clear separation between human identity and service-account identity.",
+      "named_entities": [
+        "Sierra",
+        "Pinecone",
+        "Model Context Protocol",
+        "GitHub",
+        "AWS",
+        "Claude Design"
+      ],
+      "upstream_owned_entities": [
+        "Sierra",
+        "Pinecone",
+        "Model Context Protocol",
+        "GitHub",
+        "AWS",
+        "Claude Design"
+      ],
+      "local_practice_implication": "Use as a local lens on MCP gateway operating model, identity, and full-workflow coverage."
+    },
+    {
+      "title": "Structured Outputs in 2026",
+      "source_url": "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+      "publisher": "MightyBot",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "MightyBot argued that schema-enforced JSON is no longer the hard part for enterprise LLM workflows; the remaining failure mode is semantically wrong values inside valid structures, requiring validation layers around structured outputs.",
+      "why_it_matters_for_ai_assisted_development_practice": "Structured-output harnesses should validate meaning, business constraints, and downstream effects rather than treating parseable JSON as sufficient evidence.",
+      "named_entities": [
+        "MightyBot",
+        "structured outputs",
+        "constrained decoding"
+      ],
+      "upstream_owned_entities": [
+        "MightyBot",
+        "structured outputs",
+        "constrained decoding"
+      ],
+      "local_practice_implication": "Route to structured-output and validation architecture practice."
+    },
+    {
+      "title": "Specification-Driven Development as the Foundation of AI-Native Enterprise Software Engineering",
+      "source_url": "https://arxiv.org/pdf/2607.16680",
+      "publisher": "arXiv",
+      "visible_date": "Preprint dated July 21, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The preprint proposes a specification-governance reference model for AI-native enterprise development, organizing failure modes of ungoverned generation and contrasting spec-first, spec-anchored, and spec-as-source rigor tiers.",
+      "why_it_matters_for_ai_assisted_development_practice": "The useful local takeaway is to treat specifications, quality constraints, architectural constraints, and validation boundaries as explicit workflow artifacts rather than relying on conversational acceptance.",
+      "named_entities": [
+        "arXiv",
+        "Specification Governance Reference Model",
+        "specification-driven development"
+      ],
+      "upstream_owned_entities": [
+        "arXiv",
+        "specification-driven development"
+      ],
+      "local_practice_implication": "Route to spec governance, AI-assisted TDD, and acceptance-gate practice."
+    },
+    {
+      "title": "Context Engineering Research: 2026 Papers and Benchmarks",
+      "source_url": "https://www.iwoszapar.com/p/context-engineering-research-2026",
+      "publisher": "Iwo Szapar",
+      "visible_date": "June 23, 2026; Updated July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The updated article distinguished benchmark intents for context engineering and argued that static context files affect agent behavior but may not improve outcomes unless they are concise, durable, and matched to the task being measured.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context-file practice should be evaluated by task shape, token cost, runtime, and instruction-following behavior, not only binary benchmark pass rates.",
+      "named_entities": [
+        "Iwo Szapar",
+        "ContextBench",
+        "SWE-contextbench",
+        "AGENTS.md",
+        "AGENTbench"
+      ],
+      "upstream_owned_entities": [
+        "ContextBench",
+        "SWE-contextbench",
+        "AGENTS.md",
+        "AGENTbench"
+      ],
+      "local_practice_implication": "Use as context architecture guidance for concise durable instructions and task-matched evals."
+    },
+    {
+      "title": "OpenAI's Codex Context Cut Puts Enterprise AI Coding Workflows on Notice",
+      "source_url": "https://devops.com/openais-codex-context-cut-puts-enterprise-ai-coding-workflows-on-notice/",
+      "publisher": "DevOps.com",
+      "visible_date": "July 22, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "DevOps.com reported developer debate around a claimed Codex CLI context-window reduction and used it to argue that teams should design around bounded context, retrieval, instrumentation, and narrower multi-agent work rather than assuming stable large context windows.",
+      "why_it_matters_for_ai_assisted_development_practice": "Because the reported vendor change was not verified from an official source in this run, the durable practice signal is the need for context-budget telemetry and resilient task decomposition.",
+      "named_entities": [
+        "DevOps.com",
+        "OpenAI",
+        "Codex CLI",
+        "GPT-5.6"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "GPT-5.6"
+      ],
+      "local_practice_implication": "Treat as a context architecture follow-up requiring primary-source verification before any product claim is promoted."
+    },
+    {
+      "title": "Code review isn't your bottleneck, even with AI",
+      "source_url": "https://octopus.com/blog/code-review-not-bottleneck-even-with-ai",
+      "publisher": "Octopus Deploy",
+      "visible_date": "July 21, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Octopus argued that teams blaming AI-created code-review volume should first inspect delivery batch size and unreleased reviewed changes, because downstream deployment and approval constraints may be the actual bottleneck.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI adoption metrics should cover the whole value stream from generated change to deployed value, not only coding speed or review queue size.",
+      "named_entities": [
+        "Octopus Deploy",
+        "GitLab AI Accountability Report"
+      ],
+      "upstream_owned_entities": [
+        "Octopus Deploy",
+        "GitLab"
+      ],
+      "local_practice_implication": "Use as operating-model evidence for value-stream telemetry after AI coding rollout."
+    },
+    {
+      "title": "Behavior Review for AI-Native Delivery",
+      "source_url": "https://www.callstack.com/events/behavior-review-for-ai-native-delivery",
+      "publisher": "Callstack",
+      "visible_date": "Tuesday, July 21, 2026",
+      "matched_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Callstack hosted a session on behavior review for AI-native delivery, describing a bounded QA agent that inspects the running app flow touched by a pull request and returns evidence for reviewers.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI code-review and E2E suites may miss runtime behavior; bounded behavior-review agents can provide PR-specific runtime evidence before merge.",
+      "named_entities": [
+        "Callstack",
+        "Agent Device",
+        "React Native"
+      ],
+      "upstream_owned_entities": [
+        "Callstack",
+        "Agent Device",
+        "React Native"
+      ],
+      "local_practice_implication": "Route to verification-loop and behavior-review practice."
+    },
+    {
+      "title": "Building Vault: A Dual-Screen Terminal for Self-Hosted AI Agents",
+      "source_url": "https://www.callstack.com/blog/building-vault-a-dual-screen-terminal-for-self-hosted-ai-agents",
+      "publisher": "Callstack",
+      "visible_date": "7/22/2026",
+      "matched_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Callstack described a handheld terminal that keeps inference off-device, uses a small OLED for live activity and an e-paper display for durable output, and fronts a self-hosted agent running on a LAN host.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent UI design can separate live progress from durable results while keeping model execution replaceable, bounded, and off constrained endpoints.",
+      "named_entities": [
+        "Callstack",
+        "Vault",
+        "OpenClaw",
+        "ESP32-S3"
+      ],
+      "upstream_owned_entities": [
+        "Callstack",
+        "Vault",
+        "OpenClaw"
+      ],
+      "local_practice_implication": "Route to harness UI, streaming progress, and self-hosted agent interface patterns."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Repository-level GitHub Copilot usage metrics generally available",
+      "source_url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+      "visible_date": "July 17, 2026",
+      "reason": "Outside the last-2-days cutoff window."
+    },
+    {
+      "title": "GitHub Copilot code review customization and configurability improvements",
+      "source_url": "https://github.blog/changelog/2026-07-17-improvements-to-copilot-code-review-customization-and-configurability/",
+      "visible_date": "July 17, 2026",
+      "reason": "Outside the last-2-days cutoff window."
+    },
+    {
+      "title": "AI credit pools for cost centers in the billing UI",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.20",
+      "reason": "Boundary-only date on listing and outside the strict two-day window from 2026-07-23T00:31:40Z."
+    },
+    {
+      "title": "GitHub Code Quality is now generally available",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.20",
+      "reason": "Boundary-only date on listing and not clearly within the strict cutoff."
+    },
+    {
+      "title": "The biggest MCP spec update ships July 28",
+      "source_url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+      "visible_date": "June 18, 2026",
+      "reason": "Useful MCP practice topic, but published outside the cutoff window."
+    },
+    {
+      "title": "How to Control, Audit, and Secure MCP Server Access at Scale",
+      "source_url": "https://www.truefoundry.com/blog/enterprise-mcp-governance-control-audit-secure-mcp-server-access",
+      "visible_date": "Published: 2 months ago in search result",
+      "reason": "Outside cutoff and no qualifying visible publication/update date in the current-window evidence."
+    },
+    {
+      "title": "MCP Gateway Governance: The Invisible Layer That Enterprise AI Needs",
+      "source_url": "https://composio.dev/content/mcp-gateway-governance",
+      "visible_date": "Published: last month in search result",
+      "reason": "Outside cutoff window."
+    },
+    {
+      "title": "Context Engineering is the Key to Unlocking AI Agents in DevOps",
+      "source_url": "https://devops.com/context-engineering-is-the-key-to-unlocking-ai-agents-in-devops-2/",
+      "visible_date": "Published 4 months ago; listing also showed July 21 webinar text",
+      "reason": "The qualifying-looking date was an adjacent event listing, not the article publication date."
+    },
+    {
+      "title": "AI Agents News - Week of July 22, 2026",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "Crawled today; contained Sunday, July 19, 2026 item",
+      "reason": "Ambiguous rolling digest date and broad upstream-owned ecosystem coverage; no stable qualifying item date for local practice ingest."
+    },
+    {
+      "title": "Instagram and Threads posts about AI code review, structured outputs, or coding agents",
+      "source_url": "https://www.instagram.com/ and https://www.threads.com/",
+      "visible_date": "Search snippets showed today or July 22, 2026",
+      "reason": "Social snippets were incomplete, low-verifiability source surfaces and mostly broad commentary rather than durable practice documentation."
+    },
+    {
+      "title": "A new coding trick challenges how developers spend on AI models",
+      "source_url": "https://northeasttimes.com/2026/07/21/a-new-coding-trick-challenges-how-developers-spend-on-ai-models/",
+      "visible_date": "July 21, 2026",
+      "reason": "Search result summarized a secondary report about another blog; primary source was not collected in this run."
+    },
+    {
+      "title": "Call for Proposals for AGNTCY and MCPCon North America",
+      "source_url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/program/cfp/",
+      "visible_date": "No qualifying publication or update date found in search result",
+      "reason": "Future event/CFP page without a visible current-window source date."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 16,
+    "excluded_candidate_count": 12,
+    "source_url_count": 28
+  },
+  "follow_up_notes": [
+    "Verify the DevOps.com Codex context-window claim against an official OpenAI or repository source before promoting the product-specific detail into a durable wiki page.",
+    "Potential ingest targets include cohort-based AI adoption metrics, Managed Agents lifecycle events, MCP gateway identity patterns, AI-generated code provenance gates, structured-output validation beyond parseability, and behavior-review agents.",
+    "Keep upstream-owned product, model, company, protocol, and framework background in the upstream AI wiki; use this artifact for local practice implications only."
+  ],
+  "blockers": []
+}
