@@ -1,0 +1,534 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-22T21:01:21-04:00",
+  "cutoff_window": {
+    "start": "2026-07-15T21:01:21-04:00",
+    "end": "2026-07-22T21:01:21-04:00",
+    "policy": "Only sources published or visibly updated within the last 7 days relative to run time qualify; missing, ambiguous, future-dated, or boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+  ],
+  "selected_leaf_count": 15,
+  "leaf_universe_count": 69,
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+    "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+    "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+    "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions",
+    "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+    "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+    "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+    "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+    "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+    "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+    "https://www.pointfive.co/blog/ai-coding-agent-cost-tools-2026",
+    "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "2026-07-16-techradar-agent-governance-audit",
+      "source_url": "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+      "visible_published_or_updated_at": "2026-07-16T09:17:06+00:00",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "factual_summary": "TechRadar describes AI-agent governance as a system-level control problem: organizations need discoverable AI-tool inventories, revocation paths, affirmative permitted-use policies, and explicit controls for what agents can access and do.",
+      "why_it_matters_for_leaf": "Supports local practice leaves that frame agent governance as operational routing, ownership, approval, and workflow constraints rather than static policy text.",
+      "named_entities": [
+        "TechRadar",
+        "Model Context Protocol",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Route MCP protocol background upstream; keep the local implication around permission inventories, revocation, and workflow gates."
+    },
+    {
+      "id": "2026-07-20-techradar-agent-identity-access",
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "visible_published_or_updated_at": "2026-07-20T09:07:18+00:00",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "factual_summary": "TechRadar argues that autonomous agents should be first-class digital identities with human owners, lifecycle visibility, audit trails, and brokered just-in-time access rather than long-lived secrets.",
+      "why_it_matters_for_leaf": "Reinforces local guidance that reusable runbooks and lifecycle gates need identity ownership, auditability, and secret-free access patterns before agents can operate across systems.",
+      "named_entities": [
+        "TechRadar",
+        "AI agents",
+        "IAM"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Consider whether local governance pages should distinguish agent identity lifecycle from ordinary human IAM during ingest."
+    },
+    {
+      "id": "2026-07-21-techradar-agent-spend-accountability",
+      "source_url": "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+      "visible_published_or_updated_at": "2026-07-21T13:57:15+00:00",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "TechRadar compares agent sprawl to SaaS sprawl but notes AI agents can consume resources continuously and unpredictably, making cost visibility, budget ownership, and infrastructure-level controls early deployment requirements.",
+      "why_it_matters_for_leaf": "Strengthens the cost telemetry and workflow-selection leaves by tying per-agent spend visibility to deployment approval and business-outcome accountability.",
+      "named_entities": [
+        "TechRadar",
+        "AWS Banking on the Cloud 2026",
+        "EU AI Act",
+        "DORA"
+      ],
+      "upstream_owned_entities": [
+        "AWS",
+        "EU AI Act",
+        "DORA"
+      ],
+      "follow_up_note": "Route broad regulatory/entity background upstream; keep local implications for cost ownership and deployment gates."
+    },
+    {
+      "id": "2026-07-21-techradar-tokenomics-hidden-tax",
+      "source_url": "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions",
+      "visible_published_or_updated_at": "2026-07-21T08:58:55+00:00",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "factual_summary": "TechRadar reports token economics concerns around infrastructure, orchestration, retries, idle capacity, oversized context windows, and inefficient routing; it highlights production, consumption, and value as separate cost layers.",
+      "why_it_matters_for_leaf": "Gives the local verification-tax and model-selection leaves a concrete cost-control angle: instrument production and consumption paths before judging AI value or defaulting to frontier models.",
+      "named_entities": [
+        "TechRadar",
+        "FinOps X",
+        "Goldman Sachs",
+        "Tokenomics Foundation",
+        "Linux Foundation"
+      ],
+      "upstream_owned_entities": [
+        "Goldman Sachs",
+        "Linux Foundation"
+      ],
+      "follow_up_note": "Keep entity background upstream; ingest should focus on cost telemetry dimensions and task-tier routing implications."
+    },
+    {
+      "id": "2026-07-21-techradar-agentic-architecture",
+      "source_url": "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+      "visible_published_or_updated_at": "2026-07-21T10:17:24+00:00",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "TechRadar distinguishes static automation from agentic systems that maintain goals, reason over actions, invoke tools, evaluate intermediate results, and adapt plans; it argues governance and observability should be built into architecture.",
+      "why_it_matters_for_leaf": "Maps directly to workflow-before-model-selection and event-triggered workflow leaves by making architecture, observability, and control points the selection criteria rather than marketing claims.",
+      "named_entities": [
+        "TechRadar",
+        "agentic AI"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Use as practice evidence for architecture-first workflow selection; avoid duplicating broad agentic-AI definitions."
+    },
+    {
+      "id": "2026-07-21-techradar-coding-agent-sandbox-escapes",
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "visible_published_or_updated_at": "2026-07-21T11:20:00+00:00",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "TechRadar reports on Pillar findings that AI coding agents including Cursor, Codex CLI, Gemini CLI, and Antigravity were susceptible to sandbox-escape patterns where untrusted repository content influenced host-side components.",
+      "why_it_matters_for_leaf": "Adds a concrete verification and lifecycle-gate implication: delegated coding handoffs and inspect-patch-verify loops need untrusted-content checks, sandbox-boundary review, and post-patch validation before accepting agent changes.",
+      "named_entities": [
+        "TechRadar",
+        "Pillar",
+        "Cursor",
+        "Codex CLI",
+        "Gemini CLI",
+        "Antigravity",
+        "CVE-2026-48124",
+        "GHSA-v4xv-rqh3-w9mc"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Codex CLI",
+        "Gemini CLI",
+        "Antigravity"
+      ],
+      "follow_up_note": "Route product/CVE background upstream or security wiki; retain local practice implications for handoff review and lifecycle security gates."
+    },
+    {
+      "id": "2026-07-22-businessinsider-engineer-coding-agent-practice",
+      "source_url": "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+      "visible_published_or_updated_at": "2026-07-22T09:19:01.214Z",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "factual_summary": "Business Insider profiles a Microsoft senior software engineer who says AI tools accelerated project delivery but still require human checking because agents hallucinate and users retain context the tools lack.",
+      "why_it_matters_for_leaf": "Supports local practice leaves that keep senior-led review, tier-specific conventions, handoffs, and orient-inspect-patch-verify loops centered on human context and correction rather than replacement narratives.",
+      "named_entities": [
+        "Business Insider",
+        "Microsoft",
+        "Microsoft 365 Agents SDK",
+        "GitHub Copilot",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "GitHub Copilot",
+        "Claude"
+      ],
+      "follow_up_note": "Keep product/entity details upstream; local ingest should focus on senior supervision and correction-loop practice."
+    },
+    {
+      "id": "2026-07-19-marktechpost-wandr-research-agent-benchmark",
+      "source_url": "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+      "visible_published_or_updated_at": "2026-07-19",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+      ],
+      "factual_summary": "MarkTechPost summarizes Perplexity WANDR as a benchmark and harness for 500 evidence-heavy wide-and-deep research tasks, with per-record grading, hierarchy-level scoring, and diagnostics for discovery, enrichment, and evidence failures.",
+      "why_it_matters_for_leaf": "Provides a qualifying strict-window pointer for deep-research and trajectory-eval leaves because it emphasizes per-record evidence checks, partial progress, recall loss, cost, latency, and failure localization.",
+      "named_entities": [
+        "MarkTechPost",
+        "Perplexity",
+        "WANDR",
+        "DRACO",
+        "Search as Code",
+        "Anthropic",
+        "OpenAI",
+        "Exa"
+      ],
+      "upstream_owned_entities": [
+        "Perplexity",
+        "Anthropic",
+        "OpenAI",
+        "Exa"
+      ],
+      "follow_up_note": "Route broad benchmark/entity background upstream; keep local practice implications for evidence-heavy evaluation and verification tax."
+    }
+  ],
+  "qualifying_update_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep",
+      "visible_date": "2026-07-14",
+      "reason": "Primary WANDR page is useful but visibly dated before the strict 7-day cutoff from this run; excluded as stale for this artifact while the July 19 secondary summary qualified."
+    },
+    {
+      "source_url": "https://www.langchain.com/blog/agent-evaluation-readiness-checklist",
+      "visible_date": "2026-04",
+      "reason": "Strong agent-evaluation guidance but outside the strict 7-day window."
+    },
+    {
+      "source_url": "https://www.pointfive.co/blog/ai-coding-agent-cost-tools-2026",
+      "visible_date": "2026-07-07",
+      "reason": "Relevant to agent cost telemetry but outside the strict 7-day window."
+    },
+    {
+      "source_url": "https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/",
+      "visible_date": "2026-05-27",
+      "reason": "Relevant to monitored coding-agent workflows but outside the strict 7-day window."
+    },
+    {
+      "source_url": "https://medium.com/%40dewasheesh.rana/ai-governance-in-2026-from-responsible-ai-principles-to-enterprise-controls-9cf1774e817f",
+      "visible_date": "2026-07-19 search result",
+      "reason": "Recent but lower-authority and duplicative of stronger governance sources; excluded to avoid adding broad ecosystem analysis to local practice queue."
+    }
+  ],
+  "excluded_candidate_count": 5,
+  "leaf_results": {
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T13:57:15+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20T09:07:18+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-22T09:19:01.214Z",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-22T09:19:01.214Z",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T11:20:00+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T11:20:00+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-19",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T11:20:00+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T11:20:00+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T13:57:15+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T13:57:15+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-22T09:19:01.214Z",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-22T09:19:01.214Z",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21T10:17:24+00:00",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": {
+      "last_checked_at": "2026-07-22T21:01:21-04:00",
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-22T09:19:01.214Z",
+      "source_urls_checked": [
+        "https://www.businessinsider.com/microsoft-software-engineer-ai-hallucinates-deadlines-job-less-stressful-tech-2026-7",
+        "https://www.marktechpost.com/2026/07/19/perplexity-ai-releases-wandr-an-open-benchmark-evaluating-research-agents-that-must-search-wide-and-deep/",
+        "https://www.techradar.com/pro/agentic-ai-in-the-enterprise-why-architecture-matters-more-than-marketing-claims",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/most-enterprise-ai-governance-is-already-out-of-date",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/the-hidden-tax-on-your-ai-ambitions"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  },
+  "federation_routing_note": "Broad ecosystem entity updates are upstream-owned by the AI wiki according to docs/wiki/federation.md; this artifact keeps only local practice implications for ai-dev-wiki.",
+  "docs_wiki_updated": false,
+  "follow_up_notes": [
+    "Ingest should decide whether these qualify for local practice leaf refreshes and July digest items.",
+    "Do not duplicate upstream-owned entity background for products, companies, models, frameworks, MCP, or benchmarks."
+  ]
+}
