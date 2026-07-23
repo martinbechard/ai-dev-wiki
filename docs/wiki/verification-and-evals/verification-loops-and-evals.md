@@ -75,6 +75,9 @@ The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness
 - Evaluate research agents as iterative search-read-evaluate-refine loops with corroborated sources, citation quality, context-loss controls, and explicit stop criteria.
 - Use emulated or resettable services when evaluating API-calling skills so live costs, mutations, and nondeterministic state do not mask skill quality.
 - Include readiness checks for isolation, authorization boundaries, prompt integrity, command safety, network egress, provenance, rollback, recovery, human governance, explainability, and incident response before deployment.
+- Evaluate deployed agents with simulations, graders, guardrails, escalation paths, and approved update proposals before behavior changes reach production.
+- Treat behavior review as a runtime acceptance layer that checks whether the system did the right work, not only whether generated code passes static checks.
+- Score research-agent workflows at the record, hierarchy, evidence, recall, cost, latency, and failure-localization levels when tasks require wide and deep search.
 
 ## Authoritative Sources
 
@@ -103,6 +106,8 @@ The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness
 - [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json)
 - [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 
 ## Related Code
 
@@ -147,3 +152,4 @@ The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness
 - Maintained on 2026-07-15 with act-observe-decide-retry-stop loop conditions and AI security review re-verification evidence.
 - Maintained on 2026-07-17 with routing to performance optimization gates and trajectory-level evaluation for workflow-specific agent-loop evidence.
 - Maintained on 2026-07-22 with deep-research loop checks, API-safe skill evals, and coding-agent readiness verification.
+- Maintained on 2026-07-22 with production-agent simulations, behavior-review acceptance, and research-agent hierarchy scoring.

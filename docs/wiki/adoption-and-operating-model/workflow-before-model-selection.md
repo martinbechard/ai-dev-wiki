@@ -80,6 +80,8 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 - Identify shared platform capabilities, domain-owned service tools, and multi-repository workspace needs before selecting a model, assistant surface, or agent desktop.
 - Treat public-sector or service-delivery MCP examples as workflow-grounding evidence, not as permission to expose broad read/write APIs without domain-owner approval.
 - Treat high-effort reasoning, subagent fan-out, setup prompts, reusable skills, and context-continuity layers as workflow choices that need cost, risk, and verification criteria before they become defaults.
+- Treat model availability inside a coding assistant as a rollout-control event: capture admin enablement, reasoning-effort controls, parallel tool-use behavior, pricing mode, and fallback route before standardizing the workflow.
+- Prefer workflow architecture, observability, control points, and task-state durability over marketing claims when deciding whether a process needs static automation, a bounded agent, or a long-running managed agent.
 
 ## Authoritative Sources
 
@@ -108,6 +110,8 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 - [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 
 ## Related Code
 
@@ -153,3 +157,4 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 - Maintained on 2026-07-13 with experiment, mandate, regulated lifecycle, and modernization-package workflow distinctions.
 - Maintained on 2026-07-14 with shared-capability, domain-owned MCP service-tool, and multi-repository workspace inputs to workflow selection.
 - Maintained on 2026-07-22 with high-effort routing, setup-prompt governance, reusable-skill, and context-continuity workflow inputs.
+- Maintained on 2026-07-22 with model rollout-control, reasoning-effort, parallel tool-use, architecture, and observability selection signals.

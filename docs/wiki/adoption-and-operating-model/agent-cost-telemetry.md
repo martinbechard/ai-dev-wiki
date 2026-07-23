@@ -51,6 +51,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) questions whether context compression in one component actually lowers whole-task cost, while the [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) recommends limits on retries, tool calls, loops, and escalation paths. The [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) adds credit-pool visibility, per-user credit reporting, review rate-limit impact, and cost-aware model routing as workflow evidence.
 
+The July 22 raw sources add adoption-phase and tokenomics evidence. The [topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json) records cohort dashboards, code-first versus agent-first usage phases, PR-throughput comparisons, and value-stream telemetry as adoption signals that must be tied to accepted outcomes rather than seat activity. The [leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json) adds production, consumption, and value cost layers, so cost telemetry should separate infrastructure, orchestration, retry, idle-capacity, context-window, and model-routing costs before judging AI value.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -93,6 +95,8 @@ The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. T
 - Review runaway-loop stops and review-continuation spend as scope or verification signals, not only as billing events.
 - Validate context-compression savings against whole-task spend, accepted outcome, latency, and verification cost instead of extrapolating from one shortened context component.
 - Track shared credit pools, per-user credit visibility, rate-limit wait time, subagent model choices, loop counts, retry counts, and escalation events as workflow telemetry.
+- Pair adoption-phase dashboards and PR-throughput measures with accepted outcomes before treating AI usage growth as operating-model success.
+- Split tokenomics evidence into production, consumption, and value layers so routing, context size, retries, orchestration, and idle capacity can be corrected separately.
 
 ## Authoritative Sources
 
@@ -124,6 +128,8 @@ The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. T
 - [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 
 ## Related Code
 
@@ -168,3 +174,4 @@ The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. T
 - Maintained on 2026-07-14 with model-size, cache, multi-agent, MCP, PR-review, quality-feature, and shared-capability cost attribution.
 - Maintained on 2026-07-15 with multi-model routing, spend caps, organization budgets, PR file limits, review continuation, and runaway-loop cost signals.
 - Maintained on 2026-07-22 with whole-task context-compression checks, shared credit pools, rate-limit impact, subagent model, and retry-loop cost telemetry.
+- Maintained on 2026-07-22 with adoption-phase dashboard, value-stream telemetry, and tokenomics cost-layer controls.

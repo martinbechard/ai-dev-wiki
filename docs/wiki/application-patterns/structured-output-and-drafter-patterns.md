@@ -28,6 +28,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Do not trade away schema validation, permission checks, or auditability for faster drafted tool arguments or JSON payloads.
 - Treat generated documents, spreadsheets, slide decks, web apps, and other delivered files as auditable artifacts, not only as chat answers.
 - Require source traceability, connector-scope evidence, file-access boundaries, approval state, and validation checks before accepting a generated artifact.
+- Treat structured outputs as validation contracts: schema adherence is useful only when paired with retries, refusal handling, partial-output recovery, provenance fields, and downstream deterministic checks.
+- Use structured extraction and drafting to preserve source attribution and reviewable fields rather than hiding uncertain generation behind prose.
 
 ## Authoritative Sources
 
@@ -37,6 +39,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [Governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 
 ## Related Code
 
@@ -65,3 +68,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Created on 2026-06-23 from the application harness source guidance on structured output, DSLs, and model-drafted executable artifacts.
 - Maintained on 2026-07-07 with structured-output latency, drafter verification cost, and whole-loop validation guidance.
 - Maintained on 2026-07-11 with artifact-producing agent boundaries for files, connector scope, approval state, and audit evidence.
+- Maintained on 2026-07-22 with structured-output validation contracts, recovery handling, provenance fields, and deterministic downstream checks.

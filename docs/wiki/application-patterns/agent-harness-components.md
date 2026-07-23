@@ -78,6 +78,9 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Convert done claims into specifications, evidence bundles, independent verification results, and traceable tool execution before a harness marks a delegated task complete.
 - Provide isolated disposable workspaces for code execution, dependency setup, retry loops, and runtime feedback when generated code may run before human review.
 - Treat MCP trust decisions, canonical path checks, spend caps, loop termination, and data-residency placement as harness components for autonomous coding workflows.
+- Model long-running managed agents with lifecycle webhooks, seeded initial session state, explicit effort controls, optimistic update-version handling, memory-store events, and stream deltas.
+- Treat production voice or chat agents as harnesses with scoped knowledge, scoped system access, guardrails, simulations, graders, escalations, approvals, and tested update proposals.
+- Design gateway-style agent harnesses so identity, authorization, workflow coverage, and audit evidence remain externalized instead of buried inside one agent session.
 
 ## Authoritative Sources
 
@@ -108,6 +111,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 
 ## Related Code
 
@@ -148,3 +152,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-10 with bounded loop controls, output-path verification, per-step traces, and harness taxonomy ownership.
 - Maintained on 2026-07-14 with production control components, programmatic tool execution, and proof-loop evidence for delegated completion claims.
 - Maintained on 2026-07-15 with isolated disposable workspaces, MCP trust decisions, path-boundary checks, spend caps, loop termination, and data-residency controls.
+- Maintained on 2026-07-22 with managed-agent lifecycle hooks, seeded sessions, stream deltas, production-agent simulations, and gateway-style identity controls.

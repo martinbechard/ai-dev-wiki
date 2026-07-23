@@ -55,6 +55,9 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Prefer current relevant context graphs and freshness checks over bulk loading when agent work depends on work-management, code, documentation, or customer signals.
 - Classify task scope before repository-wide retrieval, and prefer narrow source checks when the task can be answered or edited from a small evidence set.
 - Treat secondary summaries of context-selection research as pointers until original papers or source artifacts are verified.
+- Keep durable instructions concise and source-backed; context expansion should be driven by task evidence needs, not by appending every prompt, ticket, or prior conversation.
+- Pair context-engineering changes with task-matched evals so compression, routing, and retrieval do not silently remove rationale, constraints, or source provenance.
+- Treat secondary commentary about vendor context-window changes as a routing signal until primary sources verify product behavior.
 
 ## Authoritative Sources
 
@@ -75,6 +78,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 
 ## Related Code
 
@@ -110,3 +114,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-12 with active-versus-durable context selection, freshness labels, origin labels, and stale-memory checks.
 - Maintained on 2026-07-15 with per-loop-step context selection, current-context graph signals, and freshness controls.
 - Maintained on 2026-07-16 with task-scope classification, narrow-retrieval controls, and secondary-summary verification boundaries.
+- Maintained on 2026-07-22 with concise durable-instruction, task-matched eval, and primary-source verification boundaries.

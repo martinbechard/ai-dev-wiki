@@ -102,6 +102,10 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 - Use proxy or emulator-backed API evals for agent skills that would otherwise call live, costly, mutating, or nondeterministic services.
 - Inventory MCP connections, setup prompts, subagent hooks, and protocol-layer boundaries before treating tool access as approved.
 - Provide an explainable command-review path when side effects depend on shell or service-call semantics that are not obvious from the command text alone.
+- Govern MCP servers as tools, resources, and prompts with separate controls for each primitive.
+- Distinguish local developer convenience from enterprise MCP control planes that need role bundles, gateway logging, SCIM alignment, agent attribution, approval workflows, and agent-specific credentials.
+- Expect stateless MCP calls, request metadata, cache hints, trace context, audited UI actions, and long-running task handles to require explicit state externalization and audit joins in the surrounding harness.
+- Keep broad Model Context Protocol, MCP server, and vendor coverage upstream; maintain local MCP notes only when they change tool access, identity, approval, observability, or workflow design.
 
 ## Authoritative Sources
 
@@ -139,6 +143,7 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 - [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
 - [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 
 ## Related Code
 
@@ -185,5 +190,6 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 - Maintained on 2026-07-12 with LLM gateway governance controls for authentication, routing, rate limits, cost, failover, and audit evidence.
 - Maintained on 2026-07-13 with RAG infrastructure, CLI/MCP onboarding, runtime separation, credential handling, and public setup approval controls.
 - Maintained on 2026-07-14 with programmatic tool orchestration, MCP trust validation, authentication, and governed service-tool controls.
+- Maintained on 2026-07-22 with MCP primitive controls, gateway auditability, agent attribution, trace context, and task-handle governance.
 - Maintained on 2026-07-15 with MCP least privilege, argument validation, runtime monitoring, approval gates, and common policy interception controls.
 - Maintained on 2026-07-22 with visible tool-call arguments, API-safe skill evals, MCP inventories, setup-prompt review, subagent-hook checks, and explainable command approval.

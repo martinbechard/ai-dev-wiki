@@ -89,6 +89,9 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Keep AI security detections separate from deterministic scanner results in PR review summaries, policy decisions, and residual-risk notes.
 - Treat large PR AI review as a budgeted workflow with file limits, continuation cost, reviewer-attention controls, and explicit residual risk.
 - Separate current-code review findings from repository-history secret findings, and require canonical path, command-approval, remediation, and re-verification evidence for security review.
+- Split code review into alignment and standards-checking work: deterministic checks can cover many style and policy issues, but intent, rationale, tradeoffs, and team alignment need preserved source context.
+- Treat AI-generated code as untrusted input until provenance, dependency scanning, secrets checks, SAST, review gates, and reviewer ownership are recorded.
+- Preserve prompts, tickets, implementation rationale, and micro-decisions when generated code would otherwise leave only the final diff for reviewers.
 
 ## Authoritative Sources
 
@@ -118,6 +121,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 
 ## Related Code
 
@@ -161,3 +166,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-13 with risk-based review, review-surrender controls, and evidence-led acceptance boundaries for AI-authored changes.
 - Maintained on 2026-07-14 with on-demand security review, AI-labeled PR detections, confidence, re-verification, and human-triage requirements.
 - Maintained on 2026-07-15 with large-PR review budgets, repository-history secret review, canonical path checks, command approval, and active security-review evidence.
+- Maintained on 2026-07-22 with review-intent trails, standards-check separation, generated-code provenance, and security-review gate evidence.

@@ -94,6 +94,10 @@ The detailed control leaves are:
 - Route permission inventories, revocation paths, centralized discovery, audit integrity, and agent-traffic monitoring through governance infrastructure leaves instead of relying on local prompt rules.
 - Use scenario-level security guardrails and structural-integrity checks before treating AI acceleration in vulnerability or dependency workflows as reduced risk.
 - Treat branch-readable instructions, setup prompts, approval agents, MCP connection inventories, command explanations, and repository-hosted agent-governance manifests as enforceable workflow controls when they affect code or tool authority.
+- Maintain discoverable inventories of agents, tools, connected services, permissions, owners, revocation paths, and permitted-use policies before agents operate across systems.
+- Prefer first-class agent identities, just-in-time access, lifecycle visibility, and audit trails over long-lived shared secrets for autonomous workflows.
+- Treat coding-agent sandbox escapes and untrusted repository content as governance failures that require sandbox-boundary review, egress controls, and post-patch validation.
+- Route upstream product, protocol, company, and CVE background to the upstream AI or security wiki; keep this page focused on local approval, ownership, and audit controls.
 
 ## Authoritative Sources
 
@@ -128,6 +132,8 @@ The detailed control leaves are:
 - [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
+- [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 
 ## Related Code
 
@@ -177,3 +183,4 @@ The detailed control leaves are:
 - Maintained on 2026-07-14 with isolate-scope-approve production controls and investment-governance evidence for scaled agent adoption.
 - Maintained on 2026-07-17 with routing to focused leaves for event-triggered workflow governance, destructive-command controls, governance infrastructure, approval boundaries, and security repair gates.
 - Maintained on 2026-07-22 with branch-tested instruction controls, setup-prompt governance, command explanation, MCP inventories, and repository-hosted agent-governance evidence.
+- Maintained on 2026-07-22 with inventory, revocation, agent identity, just-in-time access, and sandbox-boundary control evidence.
