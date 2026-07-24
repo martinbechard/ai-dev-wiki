@@ -53,6 +53,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The July 18-20 raw sources add approval visibility, API-safe evaluation, and connection-inventory controls. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) records API emulation for agent-skill evals and MCP connection inventory as local governance signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) reports tool-call approval prompts that hide SQL or command arguments as a control failure shape. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) adds setup prompts, MCP installation, protocol-layer boundaries, subagent hooks, and explainable command review. Locally, tool approvals should expose material arguments, emulate costly or mutating APIs during evals, and inventory connections before trust is granted.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds MCP specification and enterprise gateway evidence. MCP governance should account for stateless compatibility windows, logging placement, secret-scanning surfaces, filtered tool discovery, per-tool authorization, rate limits, OAuth or PRM support, deployment model, and audit evidence before connecting agents to enterprise tools.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -109,6 +111,7 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -172,6 +175,7 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with stateless MCP, gateway-selection, filtered discovery, per-tool authorization, logging, and secret-scanning guidance.
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.
 - Maintained on 2026-06-23 with public governed-MCP and runtime agent governance signals.
 - Maintained on 2026-06-24 with MCP gateway policy, untrusted tool-output, and routing-aware evidence requirements.

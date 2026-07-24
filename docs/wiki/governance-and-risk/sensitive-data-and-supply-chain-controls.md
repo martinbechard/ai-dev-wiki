@@ -47,6 +47,8 @@ The July 17 raw sources add portable-skill supply-chain evidence. The [topic new
 
 The July 19-21 raw sources add generated-dependency, private-inference, and agentic-application risk signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) and [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json) reinforce HalluSquatting and private-inference concerns: hallucinated package, repository, or skill names should be resolved against exact registries or URLs before clone or install actions, and proprietary code prompts need retention, training-use, jurisdiction, and approval review. The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) maps OWASP agentic-application controls to goal constraints, untrusted retrieved content, per-agent identity, AIBOM provenance, sandboxed execution, behavioral monitoring, and kill switches across IDE, CLI, and PR workflows.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add deterministic guardrail, sandbox-escape, SANDWORM_MODE, agentic incident, and AI-generated-code security evidence. Supply-chain controls should treat agent-authored commits like untrusted external contributions, enforce provenance and PR policy, model command side effects and repository-config writes, monitor package tokens and AI toolchains, and keep containment, egress, and package access outside model discretion.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -92,6 +94,8 @@ The July 19-21 raw sources add generated-dependency, private-inference, and agen
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -152,6 +156,7 @@ The July 19-21 raw sources add generated-dependency, private-inference, and agen
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with deterministic guardrails, sandbox escapes, SANDWORM_MODE, untrusted AI-authored commit, package-token, egress, and containment guidance.
 - Created on 2026-06-23 to separate sensitive-data, package-install, dependency, model-artifact, source, and licensing controls from the broader governance-controls page.
 - Maintained on 2026-06-24 with agent skill, tool manifest, MCP server, and connector configuration supply-chain controls.
 - Maintained on 2026-06-25 with marketplace allowlists, runtime agent-security checks, and credential-broker controls for agent tooling.

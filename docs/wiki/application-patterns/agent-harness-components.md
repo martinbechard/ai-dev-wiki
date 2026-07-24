@@ -43,6 +43,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) and [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json) add execution-environment, trust-layer, and loop-termination signals. Coding-agent harnesses need isolated disposable workspaces with filesystem, shell, package, network, and step-persistent state when they must execute and retry code. They also need MCP trust decisions, path-boundary checks, spend caps, runaway-loop termination, and data-residency controls as runtime components rather than optional product settings.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add managed-agent and sandbox evidence. Harnesses should expose effort controls, lifecycle webhooks, session-start events, memory-store events, thread-level subagent deltas, deterministic containment, egress controls, package-access controls, and brokered just-in-time access as explicit components rather than burying them in model prompts.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -84,6 +86,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
 - [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
@@ -138,6 +142,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.
 - Maintained on 2026-06-24 with public harness taxonomy signals for context, execution, evaluation, observability, and guardrails.
 - Maintained on 2026-06-26 with runner, parallel-step, remote-startup, compiled-configuration, provenance, and tamper-evident logging signals.

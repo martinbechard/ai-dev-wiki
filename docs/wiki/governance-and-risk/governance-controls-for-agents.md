@@ -52,6 +52,8 @@ The detailed control leaves are:
 - [sensitive-data-and-supply-chain-controls.md](sensitive-data-and-supply-chain-controls.md) owns secrets, PII, package installs, dependencies, model or source artifacts, licensing, and third-party notices.
 - [destructive-command-controls.md](destructive-command-controls.md) owns destructive shell command detection, denial reasons, path containment, explicit approval, and recovery evidence.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds agent automation controls and enterprise connector governance evidence. Governance controls should classify first-party and third-party agents, record rationale and confidence for automated suggestions, preserve proposed-state-change approval panels, monitor agent activity, and detect prompt-injection attempts before content retrieval or action.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -101,6 +103,7 @@ The detailed control leaves are:
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
@@ -165,6 +168,7 @@ The detailed control leaves are:
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with agent classification, rationale, confidence, proposed-change approval, activity oversight, and prompt-injection detection guidance.
 - Created on 2026-06-23 from local source guidance on agent boundaries, package-install risk, security, and human accountability.
 - Updated on 2026-06-23 with OWASP LLM risk mapping, infrastructure governance boundaries, and HVE Core licensing and responsible AI signals.
 - Split on 2026-06-23 so recurring governance controls live in focused leaves while this page keeps the local agent-control model.

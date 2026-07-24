@@ -35,6 +35,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The July 18-21 raw sources add task-shape, review-history, disagreement, and AI-code gate signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) argues that benchmark reports should expose task shape beyond aggregate Pass@1, and the [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) adds full review-history visibility, rate-limit impact metrics, reviewer disagreement as a stop condition, and AI-code verification gates. Review evals should score when reviewers fail to converge, when review wait time or rate limits change process quality, and when AI-generated code needs a gate that prioritizes security and architecture risks over style-only findings.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds review-eval evidence for splitting human alignment review from deterministic standards checking. Code-review rubrics should score captured intent, acceptance criteria, invariant coverage, verifier verdicts, provenance, exploitability prioritization, remediation evidence, and whether AI-authored code is treated as untrusted until policy gates pass.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -65,6 +67,7 @@ The July 18-21 raw sources add task-shape, review-history, disagreement, and AI-
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [generated code refactoring](../coding-practices/generated-code-refactoring.md)
@@ -108,6 +111,7 @@ The July 18-21 raw sources add task-shape, review-history, disagreement, and AI-
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with alignment-versus-standards review separation, intent capture, invariant coverage, verifier verdict, provenance, and exploitability rubric fields.
 - Created on 2026-06-23 to hold AI-assisted code review eval and rubric practice.
 - Maintained on 2026-06-25 with cost-quality and retrieval-depth measurements for AI code review.
 - Maintained on 2026-06-26 with prompt provenance, review-depth settings, retrieval path, and knowledge-package acceptance boundaries.

@@ -53,6 +53,8 @@ The July 19-21 raw sources add budget-pool, subagent, and loop-limit evidence. T
 
 The July 22 raw sources add adoption-phase and tokenomics evidence. The [topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json) records cohort dashboards, code-first versus agent-first usage phases, PR-throughput comparisons, and value-stream telemetry as adoption signals that must be tied to accepted outcomes rather than seat activity. The [leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json) adds production, consumption, and value cost layers, so cost telemetry should separate infrastructure, orchestration, retry, idle-capacity, context-window, and model-routing costs before judging AI value.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds adoption telemetry evidence from the Copilot usage metrics impact dashboard and agent-sprawl cost reporting. Local cost telemetry should separate passive licensed users, code-first users, agent-first users, multi-agent users, external-service consumption, and budget owners instead of treating seat count or aggregate requests as enough adoption evidence.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -100,6 +102,7 @@ The July 22 raw sources add adoption-phase and tokenomics evidence. The [topic n
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [workflow before model selection](workflow-before-model-selection.md)
 - [subagent coordination](../agent-workflows/subagent-coordination.md)
@@ -155,6 +158,7 @@ The July 22 raw sources add adoption-phase and tokenomics evidence. The [topic n
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with adoption-phase telemetry, agent-sprawl cost visibility, external-service dependency, and budget-owner signals.
 - Created on 2026-06-23 from public source guidance on coding-agent token economics, step-level cost tracing, subagent fan-out, and outcome-linked telemetry.
 - Maintained on 2026-06-26 with adoption-phase reporting and usage-based model enablement as outcome-linked telemetry inputs.
 - Maintained on 2026-06-27 with marginal-cost and infrastructure total-cost signals for autonomous agent loops.

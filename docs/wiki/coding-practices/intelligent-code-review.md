@@ -45,6 +45,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) and [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json) add review-capacity, history-secret, path-boundary, and active-security-review signals. Large PR review should be treated as a budgeted workflow with explicit file limits, continuation cost, and reviewer attention controls. Security review should separate current-code findings from repository-history secret risk, and autonomous review should include canonical path checks, command approval, severity, confidence, remediation, and re-verification evidence before generated findings affect merge decisions.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds code-review redesign and AI-generated-code security evidence. Intelligent review should preserve implementation intent, acceptance criteria, invariant registers, deterministic test plans, verifier-agent verdicts, provenance, context-aware security checks, and remediation evidence so human review can focus on alignment and risk rather than re-reading every generated line unaided.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -95,6 +97,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -149,6 +152,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with implementation-intent, invariant-register, deterministic-test, verifier-agent, provenance, and AI-generated-code security review guidance.
 - Created on 2026-06-23 from source guidance on intelligent self-code-review, source references, tier-specific review, coherence checks, and security checks.
 - Maintained on 2026-06-24 with diff-focused review boundaries and routing to lifecycle review gates for PRD or design review.
 - Maintained on 2026-06-25 with review depth, retrieval path, and cost-quality measurement as explicit AI review configuration surfaces.

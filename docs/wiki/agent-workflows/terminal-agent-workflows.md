@@ -17,6 +17,8 @@ The [Herdr clipping](../../../raw/processed/Herdr one terminal for the whole her
 
 This page owns terminal-session workflow shape. [Destructive command controls](../governance-and-risk/destructive-command-controls.md) owns destructive shell enforcement, [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) owns policy and audit enforcement, and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions around command execution and consequential state changes.
 
+The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape and allowlist-bypass evidence for terminal coding agents. Locally, terminal command policy should evaluate arguments, file writes, repository configuration, host-side readers, hooks, IDE integrations, and downstream command effects instead of classifying commands only by executable name.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -29,6 +31,7 @@ This page owns terminal-session workflow shape. [Destructive command controls](.
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [Herdr clipping](../../../raw/processed/Herdr one terminal for the whole herd.md)
 - [destructive command controls](../governance-and-risk/destructive-command-controls.md)
@@ -63,5 +66,6 @@ This page owns terminal-session workflow shape. [Destructive command controls](.
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with sandbox-escape, allowlist-bypass, repository-configuration, and host-side trust boundary guidance.
 - Created on 2026-07-17 from public raw artifacts about terminal coding agents, IDE-managed skills, and destructive-command denial evidence.
 - Maintained on 2026-07-22 with agent-multiplexer session evidence, pane identity, and reconnect boundaries.

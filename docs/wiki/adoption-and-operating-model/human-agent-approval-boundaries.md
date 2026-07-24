@@ -33,6 +33,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The July 17 raw sources add approval-surface refinements. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records dependency remediation, autofix, terminal denial reasons, and build optimization as cases where the agent may prepare changes or experiments while the human retains merge, command, baseline, experiment, and application decisions. Destructive command approvals route to [destructive command controls](../governance-and-risk/destructive-command-controls.md), and optimization approvals route to [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md).
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds issue-triage and draft-PR handoff evidence. Approval boundaries should show an agent rationale, confidence signal, proposed state change, progress evidence, and review request before suggested issue metadata, Linear handoffs, or generated pull requests become accepted workflow state.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -59,6 +61,7 @@ The July 17 raw sources add approval-surface refinements. The [topic news collec
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -105,6 +108,7 @@ The July 17 raw sources add approval-surface refinements. The [topic news collec
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Created on 2026-06-23 from source-backed approval, delegation, and human-accountability guidance.
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.

@@ -31,6 +31,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) reinforces first-class digital identity for autonomous agents. Agent access should be discoverable, owned by a named human or team, governed by policy, auditable, and issued just-in-time privileged access rather than long-lived secrets. The local delegated-authority record should show which identity acted, which owner was accountable, which policy granted temporary access, and how revocation or incident response would work.
 
+The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) reinforces the identity boundary for autonomous agents. Agents should be discoverable, assigned human owners, authorized through brokered just-in-time access, and audited through policy decisions rather than receiving long-lived secrets or broad inherited credentials.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -56,6 +58,7 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -94,6 +97,7 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with discoverable-agent, human-owner, brokered-access, and no-long-lived-secret identity guidance.
 - Created on 2026-06-24 to separate agent instance identity, delegated authority, shared-channel agents, and credential revocation from broader governance infrastructure.
 - Maintained on 2026-06-25 with non-human identity controls for owner assignment, least privilege, recurring access review, monitoring, and audit evidence.
 - Maintained on 2026-06-29 with inherited-permission analysis, stale-credential checks, runtime enforcement, and UI-first audit preservation.

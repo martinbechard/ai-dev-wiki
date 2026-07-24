@@ -15,6 +15,8 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 
 This page owns the trigger-driven workflow shape. [Governance controls for agents](../governance-and-risk/governance-controls-for-agents.md) owns the control model, [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) owns identity, authorization, monitoring, and audit enforcement, and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns decisions that remain human-owned.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds issue-to-agent handoff evidence from GitHub Issues and Linear-backed Copilot cloud agent workflows. Locally, event-triggered issue agents should preserve the source issue, rationale, confidence, proposed metadata changes, isolated execution environment, progress stream, draft pull request, and human review point before the workflow mutates backlog state or code.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -26,6 +28,7 @@ This page owns the trigger-driven workflow shape. [Governance controls for agent
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
@@ -58,4 +61,5 @@ This page owns the trigger-driven workflow shape. [Governance controls for agent
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with issue-to-agent handoff evidence, rationale, confidence, progress streams, isolated execution, and review gates.
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.

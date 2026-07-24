@@ -27,6 +27,8 @@ The [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-de
 
 The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds managed-settings, session-observability, and knowledge-workspace signals. Persistent coding workspaces should record inherited IDE or CLI settings, managed agent configuration, session IDs, sandbox or runtime identifiers, trace links, and durable knowledge artifacts so a resumed agent can distinguish current project state from stale memory or external notes.
 
+The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape evidence for persistent agent workspaces. A workspace is an active trust boundary: files created by an agent can later be trusted by host components, local daemons, IDE integrations, Git hooks, shell policies, or other automation, so resumed workspace state needs the same scrutiny as direct tool output.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -47,6 +49,7 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
@@ -83,6 +86,7 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with workspace-as-trust-boundary guidance for agent-written files and downstream host readers.
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.
 - Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.
 - Maintained on 2026-07-02 with background-agent notification, draft-PR handoff, inherited-configuration, and subagent-state signals.

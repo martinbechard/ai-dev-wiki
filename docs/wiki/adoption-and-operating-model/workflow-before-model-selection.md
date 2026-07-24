@@ -47,6 +47,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The July 18-21 raw sources reinforce workflow selection as routing design. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) and [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) tie coding-assistant workflows to reusable skills, read-only repository research, task-appropriate models, setup-prompt governance, durable instruction scope, and context-continuity architecture. The [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md) adds a cost-control lesson: high-effort or multi-agent modes should be selected by task decomposition, risk, and verification need, not as a blanket default.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds regulated-industry scaling and benchmark-selection evidence. Workflow selection should choose task privilege, workspace isolation, validation loop, platform observability, and workflow-fit evals before selecting a coding model or accepting aggregate leaderboard scores.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -85,6 +87,7 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -140,6 +143,7 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with regulated scaling, task-scoped privilege, platform observability, and workflow-fit eval selection guidance.
 - Created on 2026-06-23 from source-backed workflow, harness, and model-selection guidance.
 - Maintained on 2026-06-23 with public coding-agent selection guidance focused on workflow fit, governance burden, and loop design.
 - Maintained on 2026-06-25 with delegated-work operating model signals for supervision, context discipline, progress visibility, and approval gates.

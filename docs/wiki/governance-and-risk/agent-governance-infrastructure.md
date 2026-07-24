@@ -57,6 +57,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 
 The July 18-21 raw sources add runtime-governance and agent-readiness controls. The [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json), [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json), and [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) reinforce isolate-scope-approve controls, policy-as-code enforcement, zero-trust identity, sandboxing, monitoring, ownership, incident readiness, and kill-switch paths. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) adds governed-agent gateways and trace issue detection: runtime control planes should observe model calls, tool calls, MCP calls, agent-to-agent hops, budgets, permissions, traces, and recurring failure categories.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add platform-governance and compromised-agent evidence. Agent infrastructure should make privileges task-scoped and identity-bound, keep human owners discoverable, provide policy and audit trails, support just-in-time access, and monitor enterprise-layer behavior when agents can reach identity, application, network, content, package, or CI systems.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -109,6 +111,8 @@ The July 18-21 raw sources add runtime-governance and agent-readiness controls. 
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -179,6 +183,7 @@ The July 18-21 raw sources add runtime-governance and agent-readiness controls. 
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with task-scoped identity, human owners, just-in-time access, audit trails, and enterprise-layer monitoring signals.
 - Created on 2026-06-23 to separate infrastructure enforcement, identity, authorization, audit, and accountability from the broader governance-controls page.
 - Maintained on 2026-06-23 with public runtime governance signals for agent inventory, policy enforcement, governed MCP, and run-level evidence.
 - Maintained on 2026-06-24 with trace monitoring, delegated identity, credential revocation, and MCP policy controls.

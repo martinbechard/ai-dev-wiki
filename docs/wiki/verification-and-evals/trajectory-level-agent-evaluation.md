@@ -37,6 +37,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 
 The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) and [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) add trace-issue and graph-engineering evidence. Trajectory evaluation should preserve graph/run/node identifiers, routers, joins, deterministic functions, tool calls, human checkpoints, budgets, policies, approvals, failure categories, and issue grouping so multi-agent systems can be debugged at the path level rather than judged only by final output.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds workflow-fit eval evidence from benchmark ledgers and graph-engineering practice. Trajectory evaluation should connect graph stages, deterministic code steps, subagent streaming, tool-use benchmarks, terminal benchmarks, repository-understanding benchmarks, and long-horizon software-engineering tasks to the workflow being authorized.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -88,6 +90,7 @@ The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-d
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [representative workflow calibration](representative-workflow-calibration.md)
 - [verification loops and evals](verification-loops-and-evals.md)
@@ -132,6 +135,7 @@ The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with workflow-fit benchmark routing, graph-stage, deterministic-step, subagent-streaming, and long-horizon task evidence.
 - Created on 2026-06-24 to hold trajectory, trace, and intermediate-decision evaluation practice for agent workflows.
 - Maintained on 2026-06-27 with cross-run agreement, environment-design, and benchmark-to-local-suite routing rules.
 - Maintained on 2026-06-30 with behavioral unit, integration, online, and benchmark eval shape guidance.

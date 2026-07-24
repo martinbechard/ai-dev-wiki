@@ -39,6 +39,8 @@ The July 17 raw sources add measurable agent-loop evidence. The [topic news coll
 
 The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness evidence. The [July 18 leaf update watch source](../../../raw/processed/2026-07-18/ai-dev-wiki-leaf-update-watch-2026-07-18T210124-0400.json) frames deep research as search, read, evaluate, refine, and search again with corroboration and citation checks. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) adds API-safe evaluation for skills that call live services. The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) adds readiness checks for isolation, authorization, prompt integrity, command safety, egress, provenance, rollback, and incident response before coding agents are deployed.
 
+The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds benchmark-ledger and deterministic-guardrail evidence. Verification loops should choose evals by workflow fit, such as MCP tool use, browser work, repository understanding, framework-specific application work, terminal tasks, and long-horizon software engineering, while keeping containment and independent checks outside model discretion.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -81,6 +83,7 @@ The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness
 
 ## Authoritative Sources
 
+- [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
@@ -138,6 +141,7 @@ The July 18-21 raw sources add research-loop, API-emulation, and agent-readiness
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with workflow-fit eval selection, benchmark-ledger routing, deterministic guardrails, containment, and independent-check guidance.
 - Created on 2026-06-23 from local source guidance on verification, evals, graders, grounding, and done signals.
 - Maintained on 2026-06-23 as the verification and eval overview after splitting acceptance, review, judge, and calibration leaves.
 - Maintained on 2026-06-27 with artifact-level acceptance criteria and progress-output continuity checks.

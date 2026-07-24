@@ -37,6 +37,8 @@ The [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds automated prompt-injection red-team evidence. Automated adversarial generation is useful only when the harness tests realistic third-party surfaces such as browser pages, connected apps, local files, tool outputs, code repositories, tickets, and email-like content, and when human review remains responsible for attack classes the automated generator misses. Broad OpenAI and GPT-Red background stays upstream; locally, prompt-injection acceptance should require repeatable indirect-injection cases before trusting tool-using agents.
 
+The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape, repository-config, compromised-agent, and dataset-processing attack evidence. Untrusted content includes agent-written files, repository metadata, hookable configuration, data-processing inputs, and connected-app content that may be read later by trusted host components or enterprise tools.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -69,6 +71,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 ## Authoritative Sources
 
+- [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
@@ -114,6 +117,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-07-23 with agent-written file, repository metadata, hookable configuration, dataset-processing, and connected-app trust boundary guidance.
 - Created on 2026-06-23 to separate prompt-injection and untrusted-content practice from the broader governance-controls page.
 - Maintained on 2026-06-24 with MCP and tool-output trust-boundary guidance for coding-agent workflows.
 - Maintained on 2026-06-25 with agentjacking and credential-broker controls for MCP-connected coding-agent workflows.
