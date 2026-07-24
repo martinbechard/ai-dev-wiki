@@ -1,0 +1,598 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-23T21:02:43-04:00",
+  "cutoff_window": {
+    "start": "2026-07-16T21:02:43-04:00",
+    "end": "2026-07-23T21:02:43-04:00",
+    "rule": "Only public sources with visible publication or update dates inside this window qualify; missing, ambiguous, future-dated, or boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md"
+  ],
+  "source_urls_checked": [
+    "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+    "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+    "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+    "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+    "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+    "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+    "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+    "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+    "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+    "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+    "https://huggingface.co/blog/security-incident-july-2026",
+    "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+    "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+    "https://winder.ai/how-to-build-ai-agents-2026/",
+    "https://sourcegraph.com/blog/context-engineering",
+    "https://github.com/ai-boost/awesome-harness-engineering",
+    "https://www.hstoday.us/subject-matter-areas/ai-and-advanced-tech/agentic-ai-and-the-critical-infrastructure-attack-surface-that-lacks-governance/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "pillar-week-of-sandbox-escapes-2026-07-20",
+      "source_url": "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+      "published_or_updated_at": "2026-07-20",
+      "visible_date_basis": "Article header shows July 20, 2026.",
+      "factual_summary": "Pillar Research reported multiple sandbox escapes and boundary bypasses across Cursor, Codex, Gemini CLI, and Antigravity. The central pattern is that an agent can write workspace files later trusted by host components, local daemons, IDE integrations, hooks, or command policies outside the agent process.",
+      "why_it_matters_for_leaf": "Local agent workflow leaves should treat the workspace as an active trust boundary, not inert context; approval and sandbox policy need to account for host-side readers and automation triggered by agent-created files.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "named_entities": [
+        "Pillar Security",
+        "Cursor",
+        "OpenAI Codex CLI",
+        "Google Gemini CLI",
+        "Google Antigravity",
+        "Docker Desktop",
+        "VS Code",
+        "Git"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "OpenAI Codex CLI",
+        "Google Gemini CLI",
+        "Google Antigravity",
+        "Docker Desktop",
+        "VS Code",
+        "Git"
+      ],
+      "follow_up_note": "During ingest, keep vendor background upstream and preserve only the local practice rule: sandbox scope includes agent-written files and downstream host trust handoffs."
+    },
+    {
+      "id": "pillar-gitpwned-codex-cli-2026-07-20",
+      "source_url": "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+      "published_or_updated_at": "2026-07-20",
+      "visible_date_basis": "Article header shows July 20, 2026.",
+      "factual_summary": "Pillar described a Codex CLI allowlist bypass where git show --output could write attacker-controlled content into .git/config, causing later git diff execution through an external diff tool. The vulnerability was reported to OpenAI and patched in Codex CLI v0.95.0.",
+      "why_it_matters_for_leaf": "Local destructive-command guidance should model command arguments, side effects, and repository config writes rather than trusting command names such as git show or git diff as read-only.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": [
+        "Pillar Security",
+        "OpenAI",
+        "Codex CLI",
+        "Git",
+        "Bugcrowd"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "Git",
+        "Bugcrowd"
+      ],
+      "follow_up_note": "Ingest as a command-policy example; route product-version detail to upstream tool leaves if needed."
+    },
+    {
+      "id": "techradar-agent-access-not-secrets-2026-07-20",
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "published_or_updated_at": "2026-07-20",
+      "visible_date_basis": "Article header shows Published 20 July 2026.",
+      "factual_summary": "The article argues that autonomous agents should be discoverable, assigned human owners, governed through policies and audit trails, and given brokered just-in-time access instead of long-lived credentials or direct secret exposure.",
+      "why_it_matters_for_leaf": "The update reinforces local practice around agent identity, scoped permissions, secret avoidance, and lifecycle auditability for terminal and application harness workflows.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Ping Identity",
+        "Matt Berzinski"
+      ],
+      "upstream_owned_entities": [
+        "Ping Identity"
+      ],
+      "follow_up_note": "Extract only the local operating implication: agents need unique identities, owners, audit, and JIT access instead of secrets."
+    },
+    {
+      "id": "itpro-crowdstrike-lotl-agents-2026-07-17",
+      "source_url": "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+      "published_or_updated_at": "2026-07-17",
+      "visible_date_basis": "Article header shows Published 17 July 2026.",
+      "factual_summary": "ITPro reported CrowdStrike commentary that compromised agents can intensify living-off-the-land attacks because agents may inherit broad enterprise reach and operate across identity, application, and network layers.",
+      "why_it_matters_for_leaf": "Local governance should not evaluate an agent only as a prompt surface; it also needs monitoring and containment across the enterprise layers its tools can reach.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "named_entities": [
+        "ITPro",
+        "CrowdStrike",
+        "Zeki Turedi"
+      ],
+      "upstream_owned_entities": [
+        "CrowdStrike"
+      ],
+      "follow_up_note": "Use as evidence for cross-layer monitoring and identity/app/network control, not as a broad CrowdStrike entity update."
+    },
+    {
+      "id": "crowdstrike-sandworm-mode-toolchain-2026-07-21",
+      "source_url": "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+      "published_or_updated_at": "2026-07-21",
+      "visible_date_basis": "CrowdStrike blog navigation lists the article with Jul 21, 2026.",
+      "factual_summary": "CrowdStrike described SANDWORM_MODE as an AI toolchain supply-chain attack class with behavior that can resemble legitimate automation, creating detection blind spots around credentials, package tokens, and AI development pipelines.",
+      "why_it_matters_for_leaf": "The local supply-chain controls leaf should track AI toolchain telemetry, credential exposure, and package-pipeline trust as part of agent workflow risk.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "CrowdStrike",
+        "SANDWORM_MODE",
+        "npm"
+      ],
+      "upstream_owned_entities": [
+        "CrowdStrike",
+        "npm"
+      ],
+      "follow_up_note": "Prefer the CrowdStrike primary source over secondary coverage when ingesting supply-chain implications."
+    },
+    {
+      "id": "techradar-agent-problem-budgeted-2026-07-21",
+      "source_url": "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+      "published_or_updated_at": "2026-07-21",
+      "visible_date_basis": "Article header shows Published 21 July 2026.",
+      "factual_summary": "The article frames AI agent sprawl as a governance and financial-risk problem: autonomous execution can create unpredictable consumption, external-service dependencies, unclear budget ownership, and regulatory exposure unless visibility and controls are built into infrastructure.",
+      "why_it_matters_for_leaf": "Prototype-to-cloud and workflow-selection practices should include cost visibility, ownership, and dependency accountability before scaling agent deployments.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Flexera",
+        "AWS Banking on the Cloud 2026",
+        "EU AI Act",
+        "DORA"
+      ],
+      "upstream_owned_entities": [
+        "Flexera",
+        "AWS",
+        "EU AI Act",
+        "DORA"
+      ],
+      "follow_up_note": "Keep regulatory/entity background upstream; local implication is deployment-gate cost and accountability visibility."
+    },
+    {
+      "id": "techradar-huggingface-agentic-attack-2026-07-20",
+      "source_url": "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+      "published_or_updated_at": "2026-07-20",
+      "visible_date_basis": "Article header shows Published 20 July 2026.",
+      "factual_summary": "TechRadar summarized Hugging Face disclosure that an autonomous agent-driven campaign used malicious dataset processing paths, many short-lived sandboxes, credential theft, lateral movement, and AI-assisted defensive analysis.",
+      "why_it_matters_for_leaf": "This gives local evidence for treating data-processing inputs, agentic security harnesses, and incident-response model availability as part of supply-chain and governance practice.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Hugging Face",
+        "GLM 5.2"
+      ],
+      "upstream_owned_entities": [
+        "Hugging Face",
+        "GLM 5.2"
+      ],
+      "follow_up_note": "Primary Hugging Face disclosure was checked but excluded from qualifying because its visible date is boundary-only for the scan window; use TechRadar for the strict-window raw note and revisit the primary source in ingest."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://huggingface.co/blog/security-incident-july-2026",
+      "visible_date": "Published July 16, 2026",
+      "reason": "Boundary-only date at the seven-day cutoff with no visible time; relevant primary source but excluded by strict date rule."
+    },
+    {
+      "source_url": "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+      "visible_date": "Jul 14, 2026",
+      "reason": "Published before the seven-day cutoff window."
+    },
+    {
+      "source_url": "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+      "visible_date": "July 2026",
+      "reason": "Month-only visible date is ambiguous and not eligible for the strict seven-day window."
+    },
+    {
+      "source_url": "https://winder.ai/how-to-build-ai-agents-2026/",
+      "visible_date": "Jul 6, 2026",
+      "reason": "Published before the seven-day cutoff window."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "visible_date": "last month in search result",
+      "reason": "No strict visible publication or update date inside the seven-day window."
+    },
+    {
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "visible_date": "Search result reported today; page did not show a stable publication or update date in fetched content",
+      "reason": "Ambiguous visible date; excluded despite topic relevance."
+    },
+    {
+      "source_url": "https://www.hstoday.us/subject-matter-areas/ai-and-advanced-tech/agentic-ai-and-the-critical-infrastructure-attack-surface-that-lacks-governance/",
+      "visible_date": "March 25, 2026",
+      "reason": "Published before the seven-day cutoff window."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "visible_date": "Published 21 July 2026",
+      "reason": "Relevant but secondary coverage duplicating the more detailed Pillar primary source; checked for corroboration, not separately counted."
+    },
+    {
+      "source_url": "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+      "visible_date": "Published July 21, 2026 - 3:51 pm UTC",
+      "reason": "Relevant but secondary coverage duplicating the more detailed Pillar primary source; checked for corroboration, not separately counted."
+    },
+    {
+      "source_url": "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+      "visible_date": "Search result indicated 2 days ago; fetched page did not expose a stable publication date in visible lines",
+      "reason": "Ambiguous visible date in fetched content; CrowdStrike primary source used instead."
+    }
+  ],
+  "per_leaf_results": {
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "pillar-gitpwned-codex-cli-2026-07-20",
+        "crowdstrike-sandworm-mode-toolchain-2026-07-21"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "pillar-gitpwned-codex-cli-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "pillar-gitpwned-codex-cli-2026-07-20",
+        "itpro-crowdstrike-lotl-agents-2026-07-17",
+        "techradar-huggingface-agentic-attack-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": {
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://www.hstoday.us/subject-matter-areas/ai-and-advanced-tech/agentic-ai-and-the-critical-infrastructure-attack-surface-that-lacks-governance/"
+      ],
+      "qualifying_update_ids": [
+        "techradar-agent-access-not-secrets-2026-07-20",
+        "itpro-crowdstrike-lotl-agents-2026-07-17",
+        "techradar-agent-problem-budgeted-2026-07-21"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "pillar-gitpwned-codex-cli-2026-07-20",
+        "techradar-agent-access-not-secrets-2026-07-20",
+        "itpro-crowdstrike-lotl-agents-2026-07-17",
+        "crowdstrike-sandworm-mode-toolchain-2026-07-21",
+        "techradar-huggingface-agentic-attack-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": {
+      "source_urls_checked": [
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://sourcegraph.com/blog/context-engineering",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_update",
+      "last_qualified_update_at": null,
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf."
+    },
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": {
+      "source_urls_checked": [
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://sourcegraph.com/blog/context-engineering",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "pillar-gitpwned-codex-cli-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": {
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://www.hstoday.us/subject-matter-areas/ai-and-advanced-tech/agentic-ai-and-the-critical-infrastructure-attack-surface-that-lacks-governance/"
+      ],
+      "qualifying_update_ids": [
+        "techradar-huggingface-agentic-attack-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-20",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_update",
+      "last_qualified_update_at": null,
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf."
+    },
+    "docs/wiki/agent-workflows/subagent-coordination.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://thenextweb.com/news/ai-coding-agents-sandbox-escapes-pillar",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+        "https://www.crowdstrike.com/en-us/blog/denying-the-worm-sandworm-mode-and-ai-toolchain-supply-chain-attacks/",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.techradar.com/pro/security/this-one-was-different-from-anything-we-had-handled-before-hugging-face-confirms-it-was-hit-by-cyberattack-powered-by-an-ai-agent",
+        "https://huggingface.co/blog/security-incident-july-2026",
+        "https://www.manifold.security/blog/claude-for-chrome-extension-bypass",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_update",
+      "last_qualified_update_at": null,
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf."
+    },
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": {
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.itpro.com/technology/artificial-intelligence/compromised-ai-agents-could-make-living-off-the-land-attacks-much-more-dangerous-says-crowdstrike-field-cto",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://www.hstoday.us/subject-matter-areas/ai-and-advanced-tech/agentic-ai-and-the-critical-infrastructure-attack-surface-that-lacks-governance/"
+      ],
+      "qualifying_update_ids": [
+        "techradar-agent-problem-budgeted-2026-07-21"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/application-patterns/agent-harness-components.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "techradar-agent-access-not-secrets-2026-07-20",
+        "crowdstrike-sandworm-mode-toolchain-2026-07-21",
+        "techradar-huggingface-agentic-attack-2026-07-20"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualifying_update_ids": [
+        "techradar-agent-access-not-secrets-2026-07-20",
+        "itpro-crowdstrike-lotl-agents-2026-07-17",
+        "techradar-agent-problem-budgeted-2026-07-21"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/application-patterns/application-harness-patterns.md": {
+      "source_urls_checked": [
+        "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+        "https://www.pillar.security/blog/gitpwned-allowlist-to-rce",
+        "https://www.osfi-bsif.gc.ca/en/risks/technology-cyber-risk-management/technology-risk-bulletin/generative-agentic-artificial-intelligence-implications-technology-cyber-security-operational",
+        "https://winder.ai/how-to-build-ai-agents-2026/",
+        "https://github.com/ai-boost/awesome-harness-engineering",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualifying_update_ids": [
+        "pillar-week-of-sandbox-escapes-2026-07-20",
+        "techradar-agent-access-not-secrets-2026-07-20",
+        "techradar-agent-problem-budgeted-2026-07-21"
+      ],
+      "last_result": "qualified_update_found",
+      "last_qualified_update_at": "2026-07-21",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  },
+  "federation_routing_note": "Broad product, company, model, framework, and regulatory background belongs to the upstream AI wiki. This artifact records only downstream local-practice implications for AI-assisted development workflows, governance, verification, and harness design.",
+  "blockers": []
+}
