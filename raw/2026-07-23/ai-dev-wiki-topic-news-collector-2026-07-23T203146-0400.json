@@ -1,0 +1,563 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-23T20:31:46-0400",
+  "run_timestamp_utc": "2026-07-24T00:31:46Z",
+  "cutoff_window": {
+    "start_utc": "2026-07-22T00:31:46Z",
+    "end_utc": "2026-07-24T00:31:46Z",
+    "policy": "Include only public web sources visibly published or updated within the last two days relative to run time. Exclude missing, ambiguous, future-dated, outside-window, and boundary-only dates."
+  },
+  "privacy_and_scope": {
+    "public_sources_only": true,
+    "private_or_company_internal_content_sent_to_external_services": false,
+    "docs_wiki_updated": false,
+    "raw_processed_updated": false,
+    "federation_rule": "One-way downstream federation: broad companies, models, products, developer tools, agentic frameworks, MCP servers, general tools, and broad techniques remain upstream-owned by /Users/martinbechard/dev/ai-wiki/docs/wiki. This artifact records only AI-assisted development practice implications or routing notes."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "source_searches": [
+    "AI code review July 23 2026 software engineering evals",
+    "coding agent prompts durable instructions July 23 2026",
+    "MCP governance approvals audit logs July 23 2026",
+    "context engineering AI-assisted development July 23 2026",
+    "site:github.blog/changelog AI coding agent July 22 2026 OR July 23 2026",
+    "site:github.blog/changelog copilot July 22 2026 July 23 2026",
+    "site:docs.anthropic.com/en/release-notes July 22 2026 Claude Managed Agents",
+    "July 22 2026 AI code review security agents",
+    "July 23 2026 AI coding agents governance platform teams",
+    "July 22 2026 MCP agent governance gateway"
+  ],
+  "qualifying_update_count": 13,
+  "qualifying_updates": [
+    {
+      "id": "2026-07-23-github-issues-agent-automation-controls",
+      "source_url": "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/",
+      "source_title": "Agent automation controls in GitHub Issues in public preview",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 23, 2026",
+      "visible_date_basis": "Page header shows July 23, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub Issues added controls for agent-made issue metadata changes, including rationale, confidence ratings, and approval panels for suggested changes before they apply.",
+      "why_it_matters_for_ai_assisted_development_practice": "Issue triage automation needs visible rationale, confidence, and human-review points so teams can choose which agent actions are automatic and which remain approval-gated.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Issues",
+        "GitHub Agentic Workflows",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Issues",
+        "GitHub Copilot",
+        "Copilot cloud agent"
+      ],
+      "local_practice_implication": "Add rationale and confidence as first-class workflow evidence when designing issue-routing agents or backlog automations.",
+      "follow_up_notes": "Ingest should route durable guidance to agent governance and human-agent approval boundary pages, not create a local GitHub product leaf."
+    },
+    {
+      "id": "2026-07-23-github-copilot-linear-cloud-agent-ga",
+      "source_url": "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available/",
+      "source_title": "Copilot cloud agent for Linear is now generally available",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 23, 2026",
+      "visible_date_basis": "Page header shows July 23, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub described assigning Linear issues to Copilot cloud agent so it analyzes the issue, opens a draft pull request, works in an ephemeral GitHub Actions environment, streams progress to Linear, and requests review when complete.",
+      "why_it_matters_for_ai_assisted_development_practice": "The handoff shape reinforces a useful background-agent contract: source issue, isolated workspace, streamed progress, draft PR, and explicit human review at completion.",
+      "named_entities": [
+        "GitHub",
+        "Linear",
+        "Copilot cloud agent",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Linear",
+        "GitHub Copilot",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Use issue-to-agent handoffs as governed workflow events with progress streams and draft-PR review rather than silent autonomous commits.",
+      "follow_up_notes": "Ingest should preserve the workflow contract and route product details upstream."
+    },
+    {
+      "id": "2026-07-22-github-copilot-usage-metrics-impact-dashboard",
+      "source_url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+      "source_title": "New Copilot usage metrics impact dashboard",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Page header shows July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub released a Copilot metrics impact dashboard grouping engaged users into adoption phases such as code-first, agent-first, multi-agent or Copilot app, and passive licensed users, with per-cohort productivity metrics.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption programs can move beyond seat counts by tracking cohorts, merge velocity, pull requests, and usage depth for agentic workflows.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Treat adoption telemetry as cohort-based operating evidence rather than a single aggregate activity metric.",
+      "follow_up_notes": "Potential ingest target: adoption operating model and agent cost or adoption telemetry pages."
+    },
+    {
+      "id": "2026-07-23-github-mcp-server-next-spec",
+      "source_url": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/",
+      "source_title": "GitHub MCP Server supports the next MCP specification",
+      "publisher": "GitHub Changelog",
+      "visible_date": "July 23, 2026",
+      "visible_date_basis": "Page header shows July 23, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub said its MCP Server supports the upcoming stateless MCP specification, including removal of Redis session writes, lighter request inspection for logging and secret scanning, and SDK-backed compatibility.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP gateway and tool-call designs need to account for stateless scaling, compatibility windows, logging placement, and secret-scanning surfaces.",
+      "named_entities": [
+        "GitHub MCP Server",
+        "Model Context Protocol",
+        "MCP Go SDK",
+        "VS Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub MCP Server",
+        "Model Context Protocol",
+        "VS Code"
+      ],
+      "local_practice_implication": "Record stateless MCP as a tool-governance and harness architecture concern, not as a broad protocol explainer.",
+      "follow_up_notes": "Route broad MCP specification coverage upstream; local ingest should focus on logging, secret scanning, and gateway practice implications."
+    },
+    {
+      "id": "2026-07-22-anthropic-managed-agents-release-notes",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "source_title": "Claude Platform release notes",
+      "publisher": "Anthropic",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Release notes section is dated July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Anthropic added effort levels to Managed Agents model configuration, lifecycle webhooks for environments and memory stores, initial session events to start an agent loop, optional version checks for updates, and thread-level event deltas for subagent streaming.",
+      "why_it_matters_for_ai_assisted_development_practice": "Managed-agent harnesses are converging on explicit effort controls, lifecycle eventing, session seeding, optimistic concurrency, and subagent streaming as operational primitives.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Managed Agents",
+        "Claude Platform",
+        "memory stores"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Managed Agents"
+      ],
+      "local_practice_implication": "Use lifecycle webhooks and session-start events as durable patterns for agent harness orchestration, progress telemetry, and memory governance.",
+      "follow_up_notes": "Ingest should avoid duplicating Claude product coverage and keep only harness architecture and subagent-progress implications."
+    },
+    {
+      "id": "2026-07-23-platform-engineering-regulated-ai-coding-agents",
+      "source_url": "https://platformengineering.org/blog/platform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries",
+      "source_title": "From pilot to production: The platform team's playbook for scaling AI coding agents in regulated industries",
+      "publisher": "Platform Engineering",
+      "visible_date": "July 23, 2026",
+      "visible_date_basis": "Article metadata says Published on July 23, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The article argues that scaling AI coding agents in regulated industries requires platform-owned governance, observability, structured context engineering, ephemeral workspaces, privilege separation by task type, and validation loops.",
+      "why_it_matters_for_ai_assisted_development_practice": "It frames the transition from pilots to production as a platform responsibility with different privilege profiles for test-running, refactoring, and sensitive-code tasks.",
+      "named_entities": [
+        "Platform Engineering",
+        "Coder",
+        "Cursor",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "Coder",
+        "Cursor",
+        "Gartner"
+      ],
+      "local_practice_implication": "Treat agent privileges as task-scoped and identity-bound; pair ephemeral workspaces with auditability and validation gates.",
+      "follow_up_notes": "Potential ingest target: governance controls for agents, human-agent approval boundaries, and context-engineering for request packages."
+    },
+    {
+      "id": "2026-07-22-box-agent-security-controls",
+      "source_url": "https://www.helpnetsecurity.com/2026/07/22/box-new-security-capabilities/",
+      "source_title": "Box expands enterprise AI governance with new agent security features",
+      "publisher": "Help Net Security",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Article header shows July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Help Net Security reported Box agent-security features for guardrails, third-party agent activity oversight, prompt injection detection, and access policies based on agent classification.",
+      "why_it_matters_for_ai_assisted_development_practice": "Enterprise content connectors need controls that distinguish first-party and third-party agents, classify agent access, and detect prompt-injection attempts before content retrieval or action.",
+      "named_entities": [
+        "Box",
+        "Box Agents",
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "upstream_owned_entities": [
+        "Box",
+        "Box Agents",
+        "Anthropic Claude",
+        "OpenAI ChatGPT",
+        "Google Gemini"
+      ],
+      "local_practice_implication": "Record connector governance as agent classification, activity oversight, and prompt-injection detection practice rather than a Box product page.",
+      "follow_up_notes": "Broad Box/product coverage belongs upstream; local ingest can update sensitive-data and tool-governance pages."
+    },
+    {
+      "id": "2026-07-22-langchain-graph-engineering",
+      "source_url": "https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph",
+      "source_title": "3 Years of Graph Engineering with LangGraph",
+      "publisher": "LangChain",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Article byline shows July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "LangChain described graph engineering as a way to make agent workflows cheaper, faster, and more predictable by using fixed stages and subagents, such as classify, search, and synthesize for a knowledge-base agent.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multi-agent and retrieval workflows benefit from explicit graph stages where code handles deterministic structure and the model reasons only where it adds value.",
+      "named_entities": [
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "GitHub",
+        "Notion",
+        "Slack"
+      ],
+      "upstream_owned_entities": [
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "GitHub",
+        "Notion",
+        "Slack"
+      ],
+      "local_practice_implication": "Use graph-stage design as a local agent workflow pattern; route framework background upstream.",
+      "follow_up_notes": "Potential ingest target: subagent coordination and agent harness components."
+    },
+    {
+      "id": "2026-07-22-tyk-enterprise-mcp-gateway-comparison",
+      "source_url": "https://tyk.io/learning-center/best-enterprise-mcp-gateways/",
+      "source_title": "Best enterprise Model Context Protocol (MCP) gateway providers compared",
+      "publisher": "Tyk",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Page date shows July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Tyk compared enterprise MCP gateway capabilities including deployment model, filtered tool discovery, per-tool rate limits, OAuth and PRM support, multi-protocol governance, compliance posture, and source-code posture.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP adoption needs procurement and architecture criteria for filtered tool discovery, per-tool RBAC, audit trails, protocol support, and compliance evidence.",
+      "named_entities": [
+        "Tyk",
+        "Amazon Bedrock AgentCore Gateway",
+        "Composio",
+        "IBM MCP Context Forge",
+        "Kong AI Gateway",
+        "Portkey",
+        "TrueFoundry",
+        "Docker MCP Gateway",
+        "MintMCP",
+        "Obot",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Tyk",
+        "Amazon Bedrock AgentCore Gateway",
+        "Composio",
+        "IBM MCP Context Forge",
+        "Kong AI Gateway",
+        "Portkey",
+        "TrueFoundry",
+        "Docker MCP Gateway",
+        "MintMCP",
+        "Obot",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Represent MCP gateway selection as governed tool-call practice with explicit access-control, audit, and deployment criteria.",
+      "follow_up_notes": "Do not ingest as a vendor catalog; extract only reusable gateway-governance criteria."
+    },
+    {
+      "id": "2026-07-23-benchlm-benchmark-ledger-updates",
+      "source_url": "https://benchlm.ai/benchmarks",
+      "source_title": "AI Benchmarks: 323 LLM Evaluations Ranked (July 2026)",
+      "publisher": "BenchLM.ai",
+      "visible_date": "updated July 23, 2026",
+      "visible_date_basis": "Multiple benchmark rows on the page show updated July 23, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "BenchLM listed many agent and coding evaluation entries updated July 23, including MCP tool-use benchmarks, automation benchmarks, repository-understanding benchmarks, React and Next.js coding-agent evals, terminal benchmarks, and long-horizon software-engineering benchmarks.",
+      "why_it_matters_for_ai_assisted_development_practice": "Evaluation coverage is fragmenting by task class, so teams need to match evals to workflows such as MCP tool use, browser work, repository changes, framework-specific app work, and long-horizon terminal tasks.",
+      "named_entities": [
+        "BenchLM.ai",
+        "MCP Atlas",
+        "MCPMark-Verified",
+        "Toolathlon",
+        "AutomationBench",
+        "NL2Repo",
+        "ReactBench",
+        "Next.js Evals",
+        "DeepSWE",
+        "SWE-Marathon",
+        "Terminal-Bench Hard"
+      ],
+      "upstream_owned_entities": [
+        "BenchLM.ai",
+        "MCP Atlas",
+        "MCPMark-Verified",
+        "Toolathlon",
+        "AutomationBench",
+        "NL2Repo",
+        "ReactBench",
+        "Next.js Evals",
+        "DeepSWE",
+        "SWE-Marathon",
+        "Terminal-Bench"
+      ],
+      "local_practice_implication": "Use workflow-fit as the local eval selection rule; avoid treating aggregate leaderboards as sufficient evidence for a coding-agent rollout.",
+      "follow_up_notes": "Potential ingest target: code-review evals, trajectory-level evals, and representative workflow calibration."
+    },
+    {
+      "id": "2026-07-22-aviator-code-review-replacement",
+      "source_url": "https://www.aviator.co/blog/how-to-kill-the-code-review/",
+      "source_title": "How to kill the code review",
+      "publisher": "Aviator",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Article byline shows July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "short_factual_summary": "Aviator argued that agent-generated code separates review into alignment and standards-checking, with intent capture, acceptance criteria, invariant registers, deterministic test plans, and a separate verifier agent for judgment cases.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted review should preserve human alignment work while moving repeatable standards checks into deterministic gates and scoped verifier agents.",
+      "named_entities": [
+        "Aviator",
+        "AI Engineer World's Fair",
+        "Faros"
+      ],
+      "upstream_owned_entities": [
+        "Aviator",
+        "AI Engineer World's Fair",
+        "Faros"
+      ],
+      "local_practice_implication": "Capture implementation intent during agent sessions and review the intent, criteria, and verification verdicts rather than relying only on diff reading.",
+      "follow_up_notes": "Potential ingest target: intelligent code review and AI-assisted TDD pages."
+    },
+    {
+      "id": "2026-07-22-endorlabs-deterministic-agent-guardrails",
+      "source_url": "https://www.endorlabs.com/learn/the-openai-and-hugging-face-security-incident-why-ai-agents-need-deterministic-guardrails",
+      "source_title": "The OpenAI and Hugging Face security incident: why AI agents need deterministic guardrails",
+      "publisher": "Endor Labs",
+      "visible_date": "July 22, 2026",
+      "visible_date_basis": "Article metadata shows published and updated on July 22, 2026.",
+      "matched_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Endor Labs discussed an agent containment incident and argued that agentic systems need deterministic controls, independent verification, and detection for behavior the controls do not anticipate.",
+      "why_it_matters_for_ai_assisted_development_practice": "Security gates for coding agents should not depend only on model compliance; containment, egress, package access, and detection controls need deterministic enforcement outside the agent.",
+      "named_entities": [
+        "Endor Labs",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "upstream_owned_entities": [
+        "Endor Labs",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "local_practice_implication": "Treat package access, egress, and benchmark or test environments as governed resources with independent controls and audit trails.",
+      "follow_up_notes": "Potential ingest target: sensitive data and supply-chain controls and verification tax pages."
+    },
+    {
+      "id": "2026-07-22-arnica-ai-code-security-guide",
+      "source_url": "https://www.arnica.io/blog/ai-code-security-complete-guide",
+      "source_title": "AI-Generated Code Security: The CISO Guide (July 2026)",
+      "publisher": "Arnica",
+      "visible_date": "Published 2 days ago in search result; page title and content indicate July 2026 guide",
+      "visible_date_basis": "Search result showed Published: 2 days ago at collection time; article content is a July 2026 guide but page body did not expose a precise date in fetched lines.",
+      "matched_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Arnica described AI code security controls for continuous pull request review, context-aware taint analysis, exploitability prioritization, inline remediation feedback, and treating AI-authored commits like unverified external contributions.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-authored commits can outpace manual review and lack human metadata, so teams need PR-level policy boundaries and security checks that understand multi-file context and tool-call blast radius.",
+      "named_entities": [
+        "Arnica",
+        "Cursor",
+        "EU AI Act",
+        "NIST AI RMF"
+      ],
+      "upstream_owned_entities": [
+        "Arnica",
+        "Cursor",
+        "EU AI Act",
+        "NIST AI RMF"
+      ],
+      "local_practice_implication": "Require AI-authored code to pass policy gates comparable to untrusted contributor changes, including provenance, context, and remediation evidence.",
+      "follow_up_notes": "Because the fetched page lacked a precise visible body date, future ingest should verify the date again before treating this as durable evidence."
+    }
+  ],
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "source_title": "Top AI coding agents can be easy victims to sandbox escapes, showing they aren't as secure as they claim to be",
+      "visible_date": "Published 21 July 2026",
+      "reason": "Outside strict 48-hour cutoff for a 2026-07-23T20:31:46-0400 run, and only a date without a visible time was available."
+    },
+    {
+      "source_url": "https://www.globenewswire.com/news-release/2026/07/21/3330788/0/en/webflow-mcp-2-0-brings-governance-to-the-agentic-web.html",
+      "source_title": "Webflow MCP 2.0 Brings Governance to the Agentic Web",
+      "visible_date": "July 21, 2026 12:30 ET",
+      "reason": "Outside strict 48-hour cutoff relative to the run time."
+    },
+    {
+      "source_url": "https://developers.googleblog.com/en/search/?query=AI+coding+agent",
+      "source_title": "Scaling Agentic RL: High-Throughput Agentic Training with Tunix",
+      "visible_date": "July 21, 2026",
+      "reason": "Date-only source was outside or at an ambiguous boundary for the strict window; broad framework/library coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+      "source_title": "The biggest MCP spec update ships July 28: What changes for AI agent authentication",
+      "visible_date": "June 18, 2026",
+      "reason": "Outside date window; broad MCP specification background is upstream-owned."
+    },
+    {
+      "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "source_title": "The 2026-07-28 MCP Specification Release Candidate",
+      "visible_date": "Published 2 months ago in search result",
+      "reason": "Outside date window and broad protocol release coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/ai-code-review",
+      "source_title": "AI Code Review in 2026: How It Works and How to Adopt It",
+      "visible_date": "Published 2 months ago in search result",
+      "reason": "Outside date window despite being locally relevant as a practice source."
+    },
+    {
+      "source_url": "https://sureprompts.com/blog/the-complete-guide-to-prompting-ai-coding-agents-2026",
+      "source_title": "The Complete Guide to Prompting AI Coding Agents (2026)",
+      "visible_date": "April 20, 2026; updated May 5, 2026",
+      "reason": "Outside date window."
+    },
+    {
+      "source_url": "https://www.linkedin.com/posts/craigmcluckie_enterprise-readiness-guide-for-the-july-2026-activity-7484993848360964096-tGDg",
+      "source_title": "Enterprise Readiness Guide for the July 2026 MCP Spec Update",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Outside strict two-day window and social post visibility was less stable than primary sources."
+    },
+    {
+      "source_url": "https://voxel51.com/events/mcp-agents-skills-meetup-july-29-2026",
+      "source_title": "MCP/Agents/Skills Meetup - July 29, 2026",
+      "visible_date": "July 29, 2026 event date",
+      "reason": "Future-dated event page; not a published practice update inside the cutoff window."
+    },
+    {
+      "source_url": "https://www.instagram.com/reel/DW19FuSjo08/",
+      "source_title": "Instagram reel mentioning context engineering and agent systems",
+      "visible_date": "Published 3 months ago in search result",
+      "reason": "Outside date window and social-media source was not needed when primary or stable public sources were available."
+    }
+  ],
+  "source_urls": [
+    "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/",
+    "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available/",
+    "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+    "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/",
+    "https://platform.claude.com/docs/en/release-notes/overview",
+    "https://platformengineering.org/blog/platform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries",
+    "https://www.helpnetsecurity.com/2026/07/22/box-new-security-capabilities/",
+    "https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph",
+    "https://tyk.io/learning-center/best-enterprise-mcp-gateways/",
+    "https://benchlm.ai/benchmarks",
+    "https://www.aviator.co/blog/how-to-kill-the-code-review/",
+    "https://www.endorlabs.com/learn/the-openai-and-hugging-face-security-incident-why-ai-agents-need-deterministic-guardrails",
+    "https://www.arnica.io/blog/ai-code-security-complete-guide"
+  ],
+  "follow_up_notes": [
+    "Collector stayed raw-only; do not move this artifact to raw/processed until an ingest run synthesizes it into docs/wiki.",
+    "Route broad product, company, framework, model, protocol, and vendor coverage to upstream ai-wiki. Local ingest should keep only operating practices: approval confidence, issue-to-agent handoff contracts, adoption telemetry cohorts, stateless MCP gateway governance, lifecycle webhooks, session seeding, subagent streaming, task-scoped privileges, connector oversight, graph-stage workflows, workflow-fit eval selection, deterministic review gates, and AI-authored code policy boundaries.",
+    "Verify Arnica page date during ingest because fetched body did not expose a precise published date, although the search result did."
+  ],
+  "blockers": []
+}
