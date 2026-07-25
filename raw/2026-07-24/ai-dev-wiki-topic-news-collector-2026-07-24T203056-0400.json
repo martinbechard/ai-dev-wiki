@@ -1,0 +1,433 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": {
+    "utc": "2026-07-25T00:30:56Z",
+    "local": "2026-07-24T20:30:56-0400",
+    "timezone": "America/Toronto"
+  },
+  "cutoff_window": {
+    "start_utc": "2026-07-23T00:30:56Z",
+    "end_utc": "2026-07-25T00:30:56Z",
+    "visible_date_rule": "Included only public sources with visible publication or submission dates on 2026-07-23 or 2026-07-24, or exact timestamps inside the cutoff window. Excluded missing, ambiguous, future-dated, older, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, source workflows, verification, governance, and adoption patterns.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad AI ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_behavior": "Recorded upstream-owned entities for routing and kept findings focused on downstream practice implications. No docs/wiki pages were updated and no collector output was saved under raw/processed."
+  },
+  "items": [
+    {
+      "id": "2026-07-24-stack-overflow-context-engineering-bottleneck",
+      "source_url": "https://stackoverflow.blog/2026/07/24/no-dumb-questions-ai-bottleneck/",
+      "source_title": "No Dumb Questions: What is the AI bottleneck? How does context engineering fix it?",
+      "publisher": "Stack Overflow Blog",
+      "visible_date": "2026-07-24",
+      "date_basis": "Article page shows July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "Stack Overflow frames the current AI adoption bottleneck as missing work context, tool connectivity, human judgment loops, and context distraction rather than model capability alone.",
+      "why_it_matters_for_ai_assisted_development_practice": "Useful for local practice guidance on context architecture: teams should inventory relevant and irrelevant sources, design rejection of distracting context, test context selection with mock workflows, and treat human approval as part of the workflow design.",
+      "named_entities": [
+        "Stack Overflow",
+        "Stack Internal",
+        "context engineering",
+        "human-in-the-loop workflows"
+      ],
+      "upstream_owned_entities": [
+        "Stack Overflow",
+        "Stack Internal"
+      ],
+      "local_practice_implication": "Record as a practice-level source for source selection, context filtering, connector setup cost, and adoption tradeoff analysis.",
+      "follow_up_notes": [
+        "Consider whether a durable local leaf should distinguish context completeness from context distraction during ingest."
+      ]
+    },
+    {
+      "id": "2026-07-24-github-copilot-claude-opus-5-agentic-coding",
+      "source_url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/",
+      "source_title": "Claude Opus 5 is now available in GitHub Copilot",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-24",
+      "date_basis": "Changelog page shows July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub added Claude Opus 5 to Copilot surfaces and highlighted early testing on autonomous code changes, regression verification, coordinated tool use, targeted changes, and reduced execution overhead.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is model selection by task shape: long-running coding tasks need explicit regression verification and overhead tracking, while administrators still control model availability through policy.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Claude Opus 5",
+        "Anthropic",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Claude Opus 5",
+        "Anthropic"
+      ],
+      "local_practice_implication": "Use only as a downstream note about model-policy gating, regression-verification expectations, and agentic task-fit evaluation.",
+      "follow_up_notes": [
+        "Route broad model/product coverage upstream if ingested."
+      ]
+    },
+    {
+      "id": "2026-07-23-github-mobile-ci-repair-cloud-agent",
+      "source_url": "https://github.blog/changelog/2026-07-23-github-mobile-fix-failing-actions-checks-with-copilot-cloud-agent/",
+      "source_title": "GitHub Mobile: Fix failing Actions checks with Copilot cloud agent",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-23",
+      "date_basis": "Changelog page shows July 23, 2026.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub Mobile now lets users ask Copilot coding agent to investigate a failed GitHub Actions check, open a new pull request on top of the existing pull request, and tag the user for review.",
+      "why_it_matters_for_ai_assisted_development_practice": "Shows a concrete CI-to-agent repair loop where the agent proposes a separate reviewable PR instead of mutating the original branch directly.",
+      "named_entities": [
+        "GitHub Mobile",
+        "GitHub Actions",
+        "Copilot coding agent",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Mobile",
+        "GitHub Actions",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Candidate evidence for regression repair handoff patterns, especially preserving review boundaries around agent fixes.",
+      "follow_up_notes": [
+        "Check whether existing source-workflow leaves already cover PR-on-PR repair handoff before creating a new local lens."
+      ]
+    },
+    {
+      "id": "2026-07-23-github-linear-cloud-agent-ga",
+      "source_url": "https://github.blog/changelog/2026-07-23-copilot-cloud-agent-for-linear-is-now-generally-available/",
+      "source_title": "Copilot cloud agent for Linear is now generally available",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-23",
+      "date_basis": "Changelog page shows July 23, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The Linear integration lets teams assign issues to Copilot cloud agent, which opens a draft pull request in an ephemeral GitHub Actions environment, streams progress to Linear, requests review, and supports model choice, custom agents, branch controls, and steering comments.",
+      "why_it_matters_for_ai_assisted_development_practice": "Strong local signal for issue-to-agent handoff contracts: task assignment, base/working branch control, progress streaming, custom repository agents, and review request are explicit workflow surfaces.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot cloud agent",
+        "Linear",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Linear",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Capture as downstream evidence for governed background-agent workflows and structured issue handoff controls.",
+      "follow_up_notes": [
+        "Could update an existing issue-to-agent handoff or streaming progress leaf during ingest."
+      ]
+    },
+    {
+      "id": "2026-07-23-github-issue-agent-automation-controls",
+      "source_url": "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/",
+      "source_title": "Agent automation controls in GitHub Issues in public preview",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-23",
+      "date_basis": "Changelog page shows July 23, 2026 and an editor note on July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "GitHub Issues added public-preview controls for agent automations: approvals, confidence levels, and rationale on supported changes to labels, fields, issue type, closure, and assignees. The page explicitly says approvals are workflow convenience, not a security control.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is directly relevant to local governance semantics: confidence-rated suggestions, rationale-bearing audit trails, and the difference between review convenience and enforceable security boundary.",
+      "named_entities": [
+        "GitHub Issues",
+        "GitHub Agentic Workflows",
+        "Copilot cloud agent",
+        "REST API",
+        "GraphQL API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Issues",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Candidate for a local approval-boundary or agent-rationale leaf because the source distinguishes lifecycle review from security enforcement.",
+      "follow_up_notes": [
+        "During ingest, avoid presenting approvals as permission controls."
+      ]
+    },
+    {
+      "id": "2026-07-23-github-mcp-server-next-spec",
+      "source_url": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/",
+      "source_title": "GitHub MCP Server supports the next MCP specification",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-23",
+      "date_basis": "Changelog page shows July 23, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub MCP Server added support for the next MCP specification before its July 28, 2026 release, including stateless core changes, removed sessions/initialize behavior, header-based logging and secret-scanning support, elicitation changes, and official conformance tests.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local practice implication is governed MCP upgrade handling: stateless transport changes, logging without payload inspection, elicitation compatibility, and conformance suites as agent-verifiable implementation gates.",
+      "named_entities": [
+        "GitHub MCP Server",
+        "Model Context Protocol",
+        "MCP Go SDK",
+        "VS Code",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub MCP Server",
+        "Model Context Protocol",
+        "MCP Go SDK",
+        "VS Code",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Record as a downstream governed-tooling practice note, not an upstream MCP server product leaf.",
+      "follow_up_notes": [
+        "Potentially relevant to existing governed MCP gateway and conformance-test verification pages."
+      ]
+    },
+    {
+      "id": "2026-07-24-anthropic-claude-opus-5-tool-changes-fallbacks",
+      "source_url": "https://www.anthropic.com/news/claude-opus-5",
+      "source_title": "Introducing Claude Opus 5",
+      "publisher": "Anthropic",
+      "visible_date": "2026-07-24",
+      "date_basis": "Anthropic newsroom and article page show Jul 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Anthropic released Claude Opus 5 and beta API features for mid-conversation tool changes without invalidating prompt cache and automatic fallbacks for safety-classifier-blocked requests.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is runtime tool-surface management: changing tools mid-conversation affects cache and permission design, while fallback routing should be governed and auditable when safety classifiers alter execution paths.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Opus 5",
+        "Claude Platform",
+        "Claude Code",
+        "prompt cache",
+        "automatic fallbacks"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Opus 5",
+        "Claude Platform",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Possible downstream lens for tool-list mutation, prompt-cache assumptions, and fallback routing governance.",
+      "follow_up_notes": [
+        "Route broad model release facts upstream; keep only tool-change and fallback governance implications locally."
+      ]
+    },
+    {
+      "id": "2026-07-23-arxiv-workbuddy-bench",
+      "source_url": "https://arxiv.org/abs/2607.20911",
+      "source_title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+      "publisher": "arXiv",
+      "visible_date": "2026-07-23",
+      "date_basis": "arXiv abstract page shows submitted on 23 Jul 2026 and v1 Thu, 23 Jul 2026 04:34:06 UTC.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The paper introduces an open multi-domain coding-agent benchmark spanning repository code, web front-end work, office workflows, and security workflows, with tasks reverse-engineered from real work but rewritten to resist prompt contamination and scored under reproducible harnesses.",
+      "why_it_matters_for_ai_assisted_development_practice": "Useful local evidence for eval design: benchmark tasks should be distribution-informed, auditable, contamination-resistant, workspace-shaped, and scored with domain-specific verifiers rather than a single aggregate score.",
+      "named_entities": [
+        "Tencent WorkBuddy Bench",
+        "CodeBuddy Code",
+        "Claude Code",
+        "coding-agent benchmark",
+        "contamination-resistant task construction"
+      ],
+      "upstream_owned_entities": [
+        "Tencent",
+        "CodeBuddy Code",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Candidate evidence for software-engineering eval pages and harness architecture guidance.",
+      "follow_up_notes": [
+        "During ingest, keep benchmark entity background upstream if needed and focus local writing on eval methodology."
+      ]
+    },
+    {
+      "id": "2026-07-23-arxiv-maintenance-signals-ai-assisted-repositories",
+      "source_url": "https://arxiv.org/abs/2607.21079",
+      "source_title": "Maintenance Signals in AI-Assisted GitHub Repositories: Evidence from GenAI Adopters",
+      "publisher": "arXiv",
+      "visible_date": "2026-07-23",
+      "date_basis": "arXiv abstract page shows submitted on 23 Jul 2026 and v1 Thu, 23 Jul 2026 09:10:10 UTC.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The paper studies 622 public GenAI adopters, 179 repositories with visible AI-assistance configuration files, matched traditional repositories, and 248 AI-assisted-repository issues, finding signals that AI assistance shifts maintenance work toward validating generated content, external AI dependencies, and AI-specific behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Good evidence that adoption operating models should track maintenance and validation work, not just code generation velocity.",
+      "named_entities": [
+        "GenAI adopters",
+        "GitHub repositories",
+        "AI-assistance configuration files",
+        "maintenance signals"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "local_practice_implication": "Candidate source for team adoption and coding-practice pages that discuss repository maintenance overhead from AI assistance.",
+      "follow_up_notes": [
+        "Check whether existing adoption pages have a maintenance-cost lens before adding new coverage."
+      ]
+    },
+    {
+      "id": "2026-07-23-arxiv-cue-anchored-working-memory",
+      "source_url": "https://arxiv.org/abs/2607.20972",
+      "source_title": "Delivery, Not Storage: Cue-Anchored Working Memory as a Harness Property for Coding Agents",
+      "publisher": "arXiv",
+      "visible_date": "2026-07-23",
+      "date_basis": "arXiv abstract page shows submitted on 23 Jul 2026 and v1 Thu, 23 Jul 2026 06:50:04 UTC.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "The paper argues that coding-agent memory must be harness-delivered rather than voluntarily retrieved by the agent, proposing cue-triggered memory injection based on paths, symbols, events, semantics, and time, with audit-logged deterministic delivery.",
+      "why_it_matters_for_ai_assisted_development_practice": "Strong local signal for durable agent instructions and context architecture: memory delivery, provenance framing, staleness checks, and post-compaction re-injection are harness responsibilities, not prompt-only obligations.",
+      "named_entities": [
+        "cue-anchored working memory",
+        "coding-agent harness",
+        "Claude Code",
+        "Vectr",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Model Context Protocol",
+        "Vectr"
+      ],
+      "local_practice_implication": "Candidate source for context-continuity and harness-owned memory pages.",
+      "follow_up_notes": [
+        "During ingest, separate the general technique/entity background from local practice claims about deterministic delivery and audit logs."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+      "source_title": "The Week of Sandbox Escapes",
+      "visible_date": "2026-07-20",
+      "reason": "Outside strict two-day visible-date window despite strong relevance to coding-agent sandbox boundaries."
+    },
+    {
+      "source_url": "https://www.pillar.security/blog/one-docker-socket-to-rule-them-all-escaping-codex-cursor-and-gemini-clis-sandboxes",
+      "source_title": "The Week of Sandbox Escapes Day 2: One Docker socket to rule them all",
+      "visible_date": "2026-07-20",
+      "reason": "Outside strict two-day visible-date window."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "source_title": "Top AI coding agents can be easy victims to sandbox escapes",
+      "visible_date": "published 3 days ago",
+      "reason": "Relative date resolved outside requested last-two-day window and the original Pillar source was older than the window."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.20759",
+      "source_title": "IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests",
+      "visible_date": "2026-07-22",
+      "reason": "arXiv abstract page shows submitted on 22 Jul 2026, before the cutoff window."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+      "source_title": "How Anthropic secures its AI-native software development lifecycle",
+      "visible_date": "2026-07-21",
+      "reason": "Outside strict two-day visible-date window."
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-openai-presence/",
+      "source_title": "Introducing OpenAI Presence",
+      "visible_date": "published 2 days ago",
+      "reason": "Search result exposed only a relative date without a verified exact publication timestamp during collection; excluded as ambiguous."
+    },
+    {
+      "source_url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+      "source_title": "The biggest MCP spec update ships July 28: What changes for AI agent authentication",
+      "visible_date": "2026-06-18",
+      "reason": "Outside strict two-day visible-date window."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "source_title": "Context Engineering: A Practical Guide for AI Agents (2026)",
+      "visible_date": "published last month",
+      "reason": "Outside strict two-day visible-date window."
+    },
+    {
+      "source_url": "https://openai.com/index/harness-engineering/",
+      "source_title": "Harness engineering: leveraging Codex in an agent-first world",
+      "visible_date": "published 5 months ago",
+      "reason": "Outside strict two-day visible-date window, though highly relevant to harness practice."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+      "source_title": "New Copilot usage metrics impact dashboard",
+      "visible_date": "2026-07-22",
+      "reason": "Boundary-adjacent but before the pinned UTC cutoff; excluded under strict window rule."
+    }
+  ],
+  "source_queries": [
+    "AI coding agent instructions context engineering July 24 2026",
+    "AI code review coding agent workflow July 24 2026",
+    "MCP governed practice approvals audit logs July 24 2026",
+    "RAG codebases code retrieval July 24 2026",
+    "site:stackoverflow.blog/2026/07/24 AI bottleneck context engineering agents",
+    "site:github.blog/changelog/2026-07-24 copilot agent coding",
+    "site:github.blog/changelog/2026-07-23 copilot agent coding",
+    "site:github.blog/changelog/2026-07-23 GitHub MCP Server supports the next MCP specification",
+    "site:anthropic.com/news Jul 24 2026 Claude Code",
+    "site:arxiv.org AI coding agents evaluation software engineering July 23 2026"
+  ],
+  "summary": {
+    "qualifying_update_count": 10,
+    "excluded_candidate_count": 10,
+    "blockers": []
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for artifact"
+  }
+}
