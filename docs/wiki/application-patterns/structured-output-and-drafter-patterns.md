@@ -17,6 +17,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds an artifact-producing agent lens. When agents produce spreadsheets, slides, documents, web apps, or other finished files, the harness should treat each artifact as a structured output with source traceability, connector scope, local-file access rules, approval pauses, validation checks, and audit evidence before delivery.
 
+The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds enterprise structured-output evidence. Structured extraction and drafter flows should preserve schemas, citations, refusal handling, partial-output recovery, and deterministic downstream checks so generated records can be reviewed and retried instead of trusted as prose.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -30,6 +32,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Require source traceability, connector-scope evidence, file-access boundaries, approval state, and validation checks before accepting a generated artifact.
 - Treat structured outputs as validation contracts: schema adherence is useful only when paired with retries, refusal handling, partial-output recovery, provenance fields, and downstream deterministic checks.
 - Use structured extraction and drafting to preserve source attribution and reviewable fields rather than hiding uncertain generation behind prose.
+- Keep citations, confidence fields, refusal states, and partial-output markers in generated records when enterprise workflows require review or retry.
 
 ## Authoritative Sources
 
@@ -40,6 +43,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -69,3 +73,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-07-07 with structured-output latency, drafter verification cost, and whole-loop validation guidance.
 - Maintained on 2026-07-11 with artifact-producing agent boundaries for files, connector scope, approval state, and audit evidence.
 - Maintained on 2026-07-22 with structured-output validation contracts, recovery handling, provenance fields, and deterministic downstream checks.
+- Maintained on 2026-07-24 with citation, confidence, refusal-state, partial-output, review, and retry guidance.

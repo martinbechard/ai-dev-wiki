@@ -17,6 +17,8 @@ The [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds agent-authorship accountability. Fix packages should identify when a coding agent authored or materially shaped commits, attach the security or quality violations found against those commits, and state the human repair owner. Generated-code policy pressure is a packaging concern because maintainers may reject work when authorship, understanding, or repair responsibility is unclear.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add review-packaging evidence. CI repair agents should preserve the failed check, investigation path, patch scope, created repair branch or PR, and human review request; AI code review automation should leave source-backed comments and setup evidence rather than turning reviewer labor into unstructured cleanup.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -27,6 +29,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Package review notes around reproduction, scope, patch, verification, and remaining risk.
 - Include the review path and human acceptance point when a generated or agent-assisted change is proposed for merge.
 - Preserve agent-authorship, violation attribution, and human repair ownership in PR notes when agent-generated commits are part of the fix.
+- Preserve failed-check evidence, investigation notes, generated repair branch or PR identity, and review-request state for agent-assisted CI fixes.
+- Package AI-review findings with source locations, reproduction or setup evidence, and suggested checks so the human reviewer is not left to rediscover the whole issue.
 
 ## Authoritative Sources
 
@@ -36,6 +40,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [Generated code refactoring](generated-code-refactoring.md)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -64,3 +70,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Created on 2026-06-23 from source guidance on fix assistants, branch scope, regression coverage, and review-ready evidence.
 - Maintained on 2026-06-29 with review-path packaging for agent-assisted production changes.
 - Maintained on 2026-07-07 with agent-authorship, violation-attribution, and human repair ownership packaging.
+- Maintained on 2026-07-24 with failed-check repair handoff and source-backed AI-review packaging guidance.

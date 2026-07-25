@@ -17,6 +17,8 @@ This page owns the trigger-driven workflow shape. [Governance controls for agent
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds issue-to-agent handoff evidence from GitHub Issues and Linear-backed Copilot cloud agent workflows. Locally, event-triggered issue agents should preserve the source issue, rationale, confidence, proposed metadata changes, isolated execution environment, progress stream, draft pull request, and human review point before the workflow mutates backlog state or code.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) refines the issue-to-agent pattern. CI repair from a failed check should create a separate reviewable repair proposal when the platform supports it, and issue-tracker assignment should carry branch controls, progress streaming, model or agent choice, steering comments, and an explicit review request.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -25,10 +27,13 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Keep human approval visible when the agent crosses from diagnosis into mutation, merge, release, external response, or production-adjacent action.
 - Preserve trigger payload, target scope, tool arguments, policy decisions, handoff notes, and verification evidence in the run record.
 - Route recurring event-triggered agents through owner rosters, revocation paths, monitoring, and audit storage.
+- Prefer reviewable PR-on-PR or draft-PR repair handoffs for CI failures instead of mutating the original branch without a separate review surface.
+- Record branch selection, working branch, model or agent selection, steering comments, and progress-stream evidence for issue-triggered coding agents.
 
 ## Authoritative Sources
 
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
@@ -62,4 +67,5 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with issue-to-agent handoff evidence, rationale, confidence, progress streams, isolated execution, and review gates.
+- Maintained on 2026-07-24 with CI repair PR-on-PR, branch-control, progress-stream, steering-comment, and review-request guidance.
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.

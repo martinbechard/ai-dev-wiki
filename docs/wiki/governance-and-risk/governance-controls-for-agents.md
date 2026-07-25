@@ -54,6 +54,8 @@ The detailed control leaves are:
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds agent automation controls and enterprise connector governance evidence. Governance controls should classify first-party and third-party agents, record rationale and confidence for automated suggestions, preserve proposed-state-change approval panels, monitor agent activity, and detect prompt-injection attempts before content retrieval or action.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add two governance refinements. Approval panels and rationale-bearing suggestions improve reviewability but do not enforce security by themselves. Coding-agent sandbox escapes, generated files, mid-conversation tool changes, and fallback routing need policy, audit, and post-action validation outside the prompt.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -100,6 +102,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Prefer first-class agent identities, just-in-time access, lifecycle visibility, and audit trails over long-lived shared secrets for autonomous workflows.
 - Treat coding-agent sandbox escapes and untrusted repository content as governance failures that require sandbox-boundary review, egress controls, and post-patch validation.
 - Route upstream product, protocol, company, and CVE background to the upstream AI or security wiki; keep this page focused on local approval, ownership, and audit controls.
+- Require policy-backed enforcement for approval panels, confidence scores, and rationale displays before treating them as security-relevant controls.
+- Audit fallback routing and mid-conversation tool-list changes when they can alter model choice, allowed actions, cache behavior, or execution path.
 
 ## Authoritative Sources
 
@@ -137,6 +141,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -188,3 +194,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-17 with routing to focused leaves for event-triggered workflow governance, destructive-command controls, governance infrastructure, approval boundaries, and security repair gates.
 - Maintained on 2026-07-22 with branch-tested instruction controls, setup-prompt governance, command explanation, MCP inventories, and repository-hosted agent-governance evidence.
 - Maintained on 2026-07-22 with inventory, revocation, agent identity, just-in-time access, and sandbox-boundary control evidence.
+- Maintained on 2026-07-24 with approval-panel enforcement limits, sandbox-escape validation, tool-list mutation, and fallback-routing governance.

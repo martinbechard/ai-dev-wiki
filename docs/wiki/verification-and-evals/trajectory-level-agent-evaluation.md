@@ -39,6 +39,8 @@ The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-d
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds workflow-fit eval evidence from benchmark ledgers and graph-engineering practice. Trajectory evaluation should connect graph stages, deterministic code steps, subagent streaming, tool-use benchmarks, terminal benchmarks, repository-understanding benchmarks, and long-horizon software-engineering tasks to the workflow being authorized.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds multi-domain coding-agent benchmark evidence. Trajectory evaluation should preserve contamination-resistant task construction, repository-code, frontend, office, and security workflow coverage, reproducible harness state, and scoring artifacts when claims about autonomous coding skill inform adoption.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -87,6 +89,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Separate benchmark, harness, and environment evidence when comparing agent systems across coding, research, productivity, or tool-use tasks.
 - Score tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls alongside final-task outcome.
 - Preserve graph topology, run identifiers, node identifiers, routed decisions, grouped failures, and human checkpoint records when evaluating multi-agent systems.
+- Record benchmark domain coverage, task provenance, contamination controls, execution environment, scoring rules, and produced artifacts before using an agent benchmark to justify workflow expansion.
+- Prefer representative local workflow calibration when public benchmark tasks do not match the repository, toolchain, data sensitivity, or approval path.
 
 ## Authoritative Sources
 
@@ -109,6 +113,7 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 
 ## Related Code
 
@@ -147,3 +152,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-14 with proof-loop artifacts and end-to-end delivery benchmark signals for trajectory evaluation.
 - Maintained on 2026-07-17 with benchmark-harness-environment separation, asynchronous execution state, tool-call scoring, state-change checks, recovery behavior, cost, and safety controls.
 - Maintained on 2026-07-22 with graph/run/node identifiers, routed decisions, human checkpoints, issue grouping, and multi-agent topology evidence.
+- Maintained on 2026-07-24 with multi-domain benchmark, contamination-control, reproducible-harness, and local-calibration guidance.

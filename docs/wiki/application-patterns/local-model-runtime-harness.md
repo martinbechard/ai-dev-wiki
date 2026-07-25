@@ -17,6 +17,8 @@ The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agent
 
 The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds a repository-trust gate for local agent harnesses. Local execution must not treat cloned repositories, setup scripts, DNS indirection, dependency install steps, or agent-proposed remediation commands as safe merely because they run on a developer workstation. The harness should inspect and gate setup commands before execution.
 
+The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds local-runtime economics evidence. Deskside or local agentic setups should be evaluated as harness choices with measured token cost, latency, capacity, update cadence, security posture, and fallback path rather than as a blanket replacement for managed services.
+
 ## Practice Boundaries
 
 - Treat local inference as a product harness choice with operational costs, validation needs, and user-visible behavior.
@@ -29,6 +31,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Prefer centralized telemetry or explicit local telemetry export when local execution affects enterprise FinOps, security, or compliance review.
 - Require repository trust checks, setup-command inspection, and explicit execution gates before a local agent runs project bootstrap, dependency, network, or remediation commands.
 - Treat agent helpfulness loops as a runtime risk when the agent can install packages, execute scripts, or follow indirect setup instructions.
+- Measure token cost, latency, utilization, security posture, update cadence, and fallback behavior before adopting local or deskside agentic runtimes.
+- Keep hosted fallback and governance routing explicit when local capacity or model coverage cannot satisfy a workflow.
 
 ## Authoritative Sources
 
@@ -39,6 +43,7 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - [Application harness patterns](application-harness-patterns.md)
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -70,3 +75,4 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 - Upstream durable leaves for Dwarf Star, DeepSeek V4, selective quantization, SSD expert caching, and distributed prefill are Not yet identified; this page treats them as source-specific runtime examples, not local entity or technique coverage.
 - Maintained on 2026-06-27 with local workstation inference as a latency, support, crash, telemetry, and auditability tradeoff.
 - Maintained on 2026-07-03 with repository trust, setup-command inspection, and local execution gates for agent harnesses.
+- Maintained on 2026-07-24 with local runtime cost, latency, capacity, security, update-cadence, and fallback-evaluation guidance.

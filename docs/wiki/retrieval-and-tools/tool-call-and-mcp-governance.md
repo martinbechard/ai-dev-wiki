@@ -55,6 +55,8 @@ The July 18-20 raw sources add approval visibility, API-safe evaluation, and con
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds MCP specification and enterprise gateway evidence. MCP governance should account for stateless compatibility windows, logging placement, secret-scanning surfaces, filtered tool discovery, per-tool authorization, rate limits, OAuth or PRM support, deployment model, and audit evidence before connecting agents to enterprise tools.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add runtime tool-surface controls. MCP upgrades should be treated as compatibility and conformance gates, not just version bumps. Mid-conversation tool-list changes and fallback routing should be logged because they can alter cache assumptions, available actions, and which provider or safety path handled a request.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -101,6 +103,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Use capability scoping, argument validation, sandboxing, approval gates, runtime monitoring, and interception points for MCP or tool surfaces that can act across multiple systems.
 - Keep common MCP policy enforcement close enough to execution that prompt injection, over-privileged tools, and untrusted tool output cannot bypass server-by-server review.
 - Show material tool-call arguments, SQL, shell commands, target systems, and side effects before allow or deny decisions.
+- Run conformance tests or equivalent compatibility checks before accepting MCP transport, session, elicitation, or logging-behavior changes.
+- Log mid-conversation tool-list changes, fallback routing decisions, and cache-impact assumptions when they affect action availability or reproducibility.
 - Use proxy or emulator-backed API evals for agent skills that would otherwise call live, costly, mutating, or nondeterministic services.
 - Inventory MCP connections, setup prompts, subagent hooks, and protocol-layer boundaries before treating tool access as approved.
 - Provide an explainable command-review path when side effects depend on shell or service-call semantics that are not obvious from the command text alone.
@@ -147,6 +151,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -197,3 +203,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-22 with MCP primitive controls, gateway auditability, agent attribution, trace context, and task-handle governance.
 - Maintained on 2026-07-15 with MCP least privilege, argument validation, runtime monitoring, approval gates, and common policy interception controls.
 - Maintained on 2026-07-22 with visible tool-call arguments, API-safe skill evals, MCP inventories, setup-prompt review, subagent-hook checks, and explainable command approval.
+- Maintained on 2026-07-24 with MCP conformance, mid-conversation tool-surface, fallback-routing, and cache-assumption guidance.

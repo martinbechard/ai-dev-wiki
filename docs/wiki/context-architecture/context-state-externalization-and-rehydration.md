@@ -23,6 +23,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) adds active context and durable-state separation. Rehydration should rebuild the current working set from durable decisions, artifacts, memory entries, and auditable storage, then mark which facts are current, stale, or only historical before they influence tool calls.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds cue-anchored memory evidence. Coding-agent memory should be delivered by the harness from durable path, symbol, event, semantic, and time cues rather than left to the model to remember or voluntarily search for the right fact.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -39,6 +41,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Recheck persisted tool results and metadata before treating rehydrated context as trusted instruction or permission state.
 - Rebuild active working context from durable decisions, artifacts, memory entries, and auditable storage instead of copying the whole prior transcript.
 - Mark rehydrated facts as current, stale, or historical before they affect planning, tool access, or acceptance claims.
+- Use deterministic cue rules and audit logs when memory is injected from paths, symbols, events, semantic matches, or time windows.
+- Treat voluntary agent recall as weaker evidence than harness-delivered memory tied to a durable source.
 
 ## Authoritative Sources
 
@@ -52,6 +56,7 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -85,3 +90,4 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 - Maintained on 2026-07-07 with event-history, retry-record, human-wait, state-bucket, and memory-retention rehydration guidance.
 - Maintained on 2026-07-08 with trust labels, authorization provenance, and rehydrated metadata checks.
 - Maintained on 2026-07-12 with active-context rebuilding from durable decisions, artifacts, memory entries, and auditable storage plus stale-fact labeling.
+- Maintained on 2026-07-24 with cue-anchored memory delivery and audit-log guidance.

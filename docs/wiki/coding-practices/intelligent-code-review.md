@@ -47,6 +47,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds code-review redesign and AI-generated-code security evidence. Intelligent review should preserve implementation intent, acceptance criteria, invariant registers, deterministic test plans, verifier-agent verdicts, provenance, context-aware security checks, and remediation evidence so human review can focus on alignment and risk rather than re-reading every generated line unaided.
 
+The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds code-review setup and trust signals. AI review should declare repository access, action permissions, review scope, evidence sources, and expected output format before it comments, and the review result should separate code-quality, security, test, and maintainability findings from broad model or product comparisons.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -94,6 +96,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Split code review into alignment and standards-checking work: deterministic checks can cover many style and policy issues, but intent, rationale, tradeoffs, and team alignment need preserved source context.
 - Treat AI-generated code as untrusted input until provenance, dependency scanning, secrets checks, SAST, review gates, and reviewer ownership are recorded.
 - Preserve prompts, tickets, implementation rationale, and micro-decisions when generated code would otherwise leave only the final diff for reviewers.
+- Declare repository access, action permissions, review target, source evidence, and output contract before running AI code review automation.
+- Separate AI-review comments into actionable source-backed findings instead of broad tool assessments or unexplained confidence claims.
 
 ## Authoritative Sources
 
@@ -126,6 +130,7 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -171,3 +176,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-14 with on-demand security review, AI-labeled PR detections, confidence, re-verification, and human-triage requirements.
 - Maintained on 2026-07-15 with large-PR review budgets, repository-history secret review, canonical path checks, command approval, and active security-review evidence.
 - Maintained on 2026-07-22 with review-intent trails, standards-check separation, generated-code provenance, and security-review gate evidence.
+- Maintained on 2026-07-24 with AI-review setup, permissions, scope, evidence, output-contract, and actionable-finding guidance.

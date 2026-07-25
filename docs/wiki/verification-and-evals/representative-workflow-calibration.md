@@ -25,6 +25,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add full-delivery and dockerless-verification signals. Local calibration should include end-to-end web application builds, cleanroom program reconstruction, production-like coding-agent tasks, and constrained verification environments when those are representative of the target workflow. Commentary about dockerless verification should be treated as a prompt to verify primary sources and local constraints before changing the suite.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds two calibration signals. Public coding-agent benchmarks should be mapped to local workflow domains before adoption decisions, and context-engineering changes should be tested with mock workflows that include both needed context and distracting context.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -40,6 +42,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Include price, latency, reviewed-solution quality, and local fit when comparing coding-agent benchmark results.
 - Include full-delivery, reconstruction, production-like, and constrained-verification tasks when those better match the workflow than isolated issue patches.
 - Verify primary benchmark or paper sources before using commentary to change calibration tasks or acceptance gates.
+- Map public benchmark domains to local repository, frontend, office, security, review, and approval workflows before using them as evidence.
+- Include distractor sources in context-selection evals so retrieval, memory, and connector policies prove exclusion as well as recall.
 
 ## Authoritative Sources
 
@@ -53,6 +57,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 
 ## Related Code
 
@@ -84,3 +89,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-01 with model-refresh calibration triggers for coding, terminal, browser, repair, review, and verification tasks.
 - Maintained on 2026-07-11 with real-codebase and language-specific benchmark methodology as local calibration inputs.
 - Maintained on 2026-07-14 with end-to-end delivery, cleanroom reconstruction, production-like task, and constrained-verification calibration inputs.
+- Maintained on 2026-07-24 with benchmark-domain mapping and context-distractor calibration guidance.

@@ -45,6 +45,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add managed-agent and sandbox evidence. Harnesses should expose effort controls, lifecycle webhooks, session-start events, memory-store events, thread-level subagent deltas, deterministic containment, egress controls, package-access controls, and brokered just-in-time access as explicit components rather than burying them in model prompts.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds harness-owned memory and eval evidence. Coding-agent memory should be injected by deterministic cues and audit logs, and benchmark harnesses should preserve task provenance, contamination resistance, reproducible setup, and scoring surfaces as first-class runtime components.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -83,6 +85,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Model long-running managed agents with lifecycle webhooks, seeded initial session state, explicit effort controls, optimistic update-version handling, memory-store events, and stream deltas.
 - Treat production voice or chat agents as harnesses with scoped knowledge, scoped system access, guardrails, simulations, graders, escalations, approvals, and tested update proposals.
 - Design gateway-style agent harnesses so identity, authorization, workflow coverage, and audit evidence remain externalized instead of buried inside one agent session.
+- Deliver memory from deterministic path, symbol, event, semantic, or time cues with traceable source links instead of relying on model-initiated recall.
+- Preserve benchmark task construction, contamination controls, execution setup, scoring, and artifact evidence as harness components when eval results guide workflow authorization.
 
 ## Authoritative Sources
 
@@ -116,6 +120,7 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 
 ## Related Code
 
@@ -158,3 +163,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-14 with production control components, programmatic tool execution, and proof-loop evidence for delegated completion claims.
 - Maintained on 2026-07-15 with isolated disposable workspaces, MCP trust decisions, path-boundary checks, spend caps, loop termination, and data-residency controls.
 - Maintained on 2026-07-22 with managed-agent lifecycle hooks, seeded sessions, stream deltas, production-agent simulations, and gateway-style identity controls.
+- Maintained on 2026-07-24 with cue-delivered memory, benchmark provenance, contamination-resistance, setup, scoring, and artifact-evidence components.

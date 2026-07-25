@@ -31,6 +31,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds context-engineering technique signals for compression, hierarchy, scoping, and state externalization. Context selection should classify task scope before broad retrieval, especially for simple tasks where repository-wide reading wastes tokens and can distract the model. Secondary summaries should be treated as pointers until the original source is verified.
 
+The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add a context-distraction rule. Context engineering is not only about adding missing project knowledge; it also rejects irrelevant connectors, stale memories, oversized summaries, and attractive but unauthoritative snippets that distract the agent from the current work.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -58,6 +60,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Keep durable instructions concise and source-backed; context expansion should be driven by task evidence needs, not by appending every prompt, ticket, or prior conversation.
 - Pair context-engineering changes with task-matched evals so compression, routing, and retrieval do not silently remove rationale, constraints, or source provenance.
 - Treat secondary commentary about vendor context-window changes as a routing signal until primary sources verify product behavior.
+- Test context selection against mock or representative workflows that include both relevant sources and plausible distractors.
+- Prefer source inventories, freshness labels, and exclusion notes over broad connector enablement when agents need work context.
 
 ## Authoritative Sources
 
@@ -79,6 +83,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
+- [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 
 ## Related Code
 
@@ -115,3 +121,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-15 with per-loop-step context selection, current-context graph signals, and freshness controls.
 - Maintained on 2026-07-16 with task-scope classification, narrow-retrieval controls, and secondary-summary verification boundaries.
 - Maintained on 2026-07-22 with concise durable-instruction, task-matched eval, and primary-source verification boundaries.
+- Maintained on 2026-07-24 with context-distraction, source-inventory, freshness-label, and representative distractor-test guidance.
