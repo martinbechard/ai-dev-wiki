@@ -1,0 +1,645 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-24T21:01:41-04:00",
+    "rule": "Only public sources with visible publication or update dates within the last 7 days relative to run_timestamp qualify.",
+    "start": "2026-07-17T21:01:41-04:00"
+  },
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "note": "Date-only item falls on cutoff date, but the run window starts at 2026-07-17T21:01:41-04:00; publication time is not visible.",
+      "reason": "boundary_only_date_before_precise_cutoff",
+      "source_url": "https://www.samuelfaj.com/en/blog/codebase-rag-only-works-when-the-agent-asks-well/",
+      "visible_date": "2026-07-17"
+    },
+    {
+      "note": "Useful PR-packaging discussion, but published before the cutoff.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://www.samuelfaj.com/en/blog/agent-prs-die-when-they-become-reviewer-labor/",
+      "visible_date": "2026-07-16"
+    },
+    {
+      "note": "Search result indicates about two weeks old, and opened page did not expose a qualifying visible publication date in the selected lines.",
+      "reason": "outside_or_ambiguous_window",
+      "source_url": "https://arxiv.org/html/2607.04697v1",
+      "visible_date": "about 2 weeks ago / arXiv 2607.04697"
+    },
+    {
+      "note": "AI code review trust-gap article predates the strict window.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://futurumgroup.com/insights/ai-code-review-hits-a-wall-why-speed-without-trust-risks-engineering-chaos/",
+      "visible_date": "2026-07-03"
+    },
+    {
+      "note": "Tool ranking article predates the strict window.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://levelop.dev/blog/the-best-ai-coding-agents-in-2026-a-practical-ranking-for-working-developers",
+      "visible_date": "2026-07-12"
+    },
+    {
+      "note": "Context-layer article is relevant but not recently updated enough for this run.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://atlan.com/know/context-layer-for-ai-agents/",
+      "visible_date": "updated 2026-06-30 / published 2026-05-08"
+    },
+    {
+      "note": "Rollback guidance was relevant but no visible article date was found on the opened page.",
+      "reason": "missing_visible_date",
+      "source_url": "https://www.developersdigest.tech/blog/permissions-logs-rollback-ai-coding-agents",
+      "visible_date": null
+    },
+    {
+      "note": "Search result looked current but the source is an aggregator without a stable visible item date in the opened result.",
+      "reason": "missing_visible_date",
+      "source_url": "https://agentic.ai/news",
+      "visible_date": null
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity, vendor, model, framework, MCP, and product background is upstream-owned by the AI wiki; this artifact preserves only downstream local practice implications for later ingest.",
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/local-model-runtime-harness.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent"
+      ],
+      "source_urls_checked": [
+        "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "qualified_update_count": 2,
+      "qualified_update_urls": [
+        "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/"
+      ],
+      "source_urls_checked": [
+        "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+      "qualified_update_count": 2,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/coding-practices/ai-assisted-tdd.md",
+      "qualified_update_count": 2,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.windowscentral.com/microsoft/windows-11/windows-11s-massive-july-2026-update-shows-how-ai-is-changing-patch-tuesday"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.windowscentral.com/microsoft/windows-11/windows-11s-massive-july-2026-update-shows-how-ai-is-changing-patch-tuesday"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+      "qualified_update_count": 2,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+      "qualified_update_count": 2,
+      "qualified_update_urls": [
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/"
+      ],
+      "source_urls_checked": [
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://arxiv.org/html/2607.21503v1"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.samuelfaj.com/en/blog/codebase-rag-only-works-when-the-agent-asks-well/",
+        "https://atlan.com/know/context-layer-for-ai-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/"
+      ],
+      "source_urls_checked": [
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "qualified_update_count": 3,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/",
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+        "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/",
+        "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/",
+        "https://www.developersdigest.tech/blog/permissions-logs-rollback-ai-coding-agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/"
+      ],
+      "source_urls_checked": [
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+        "https://www.samuelfaj.com/en/blog/agent-prs-die-when-they-become-reviewer-labor/",
+        "https://arxiv.org/html/2607.04697v1"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "qualified_update_count": 3,
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+        "https://www.vellum.ai/blog/best-ai-coding-agents"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+        "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+        "https://www.vellum.ai/blog/best-ai-coding-agents",
+        "https://futurumgroup.com/insights/ai-code-review-hits-a-wall-why-speed-without-trust-risks-engineering-chaos/",
+        "https://levelop.dev/blog/the-best-ai-coding-agents-in-2026-a-practical-ranking-for-working-developers"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "qualified_update_count": 4,
+      "qualified_update_urls": [
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+        "https://outcomeschool.com/blog/how-does-context-compaction-work",
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.vellum.ai/blog/best-ai-coding-agents"
+      ],
+      "source_urls_checked": [
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+        "https://outcomeschool.com/blog/how-does-context-compaction-work",
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.vellum.ai/blog/best-ai-coding-agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "qualified_update_count": 1,
+      "qualified_update_urls": [
+        "https://arxiv.org/html/2607.21503v1"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "qualified_update_count": 4,
+      "qualified_update_urls": [
+        "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+        "https://outcomeschool.com/blog/how-does-context-compaction-work",
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.vellum.ai/blog/best-ai-coding-agents"
+      ],
+      "source_urls_checked": [
+        "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+        "https://outcomeschool.com/blog/how-does-context-compaction-work",
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.vellum.ai/blog/best-ai-coding-agents"
+      ]
+    }
+  ],
+  "leaf_universe_count": 69,
+  "qualifying_update_count": 12,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Sponsored Business Insider/Dell piece says agentic workflows multiply token use; Dell positions deskside/local agent execution with policy enforcement and action logs as a way to keep source-sensitive coding, research, and private-assistant workloads in-house while controlling cost.",
+      "follow_up_note": "During ingest, keep durable vendor background upstream and retain only the local harness implication.",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "BI Studios",
+        "Dell AI Factory with Nvidia",
+        "Dell Deskside Agentic AI",
+        "Nvidia NemoClaw",
+        "OpenShell",
+        "Signal65",
+        "Futurum"
+      ],
+      "source_url": "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+      "upstream_owned_entities": [
+        "Dell",
+        "Nvidia",
+        "NemoClaw"
+      ],
+      "visible_date": "2026-07-24T16:38:04.915Z",
+      "why_it_matters_for_leaf": "The local runtime harness leaf should treat local execution as a governance, logging, and cost-design decision rather than only a model-hosting convenience."
+    },
+    {
+      "factual_summary": "MightyBot argues schema-enforced structured outputs reduce malformed JSON but do not prove semantic truth; production workflows need evidence pointers, deterministic validation, confidence routing, narrow call scope, and structured execution plans.",
+      "follow_up_note": "Route model/provider details upstream; local page owns validation and drafter-pattern practice.",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "named_entities": [
+        "MightyBot",
+        "GPT-5.6",
+        "Claude 5",
+        "Gemini",
+        "GLM 5.2"
+      ],
+      "source_url": "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+      "upstream_owned_entities": [
+        "MightyBot",
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "GLM"
+      ],
+      "visible_date": "2026-07-22",
+      "why_it_matters_for_leaf": "The structured-output leaf should emphasize evidence-linked validation and small scoped extractions, not just JSON schema compliance."
+    },
+    {
+      "factual_summary": "TechRadar Pro opinion cites Gearset research and DORA-aligned framing: teams apply equal or stricter review to AI-generated work, use AI more heavily in build than release, and redirect saved time toward observability, test coverage, disaster recovery, and process discipline.",
+      "follow_up_note": "Consider ingesting as support for risk-curve approval and test/observability emphasis.",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Gearset",
+        "Google DORA",
+        "Gartner",
+        "Forrester",
+        "MIT CSAIL"
+      ],
+      "source_url": "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+      "upstream_owned_entities": [
+        "Gearset",
+        "Google",
+        "DORA"
+      ],
+      "visible_date": "2026-07-23",
+      "why_it_matters_for_leaf": "Local practice pages should frame AI trust as risk-based stage gating with visible process evidence, not as blanket acceptance or rejection of generated code."
+    },
+    {
+      "factual_summary": "TechRadar reports Pillar findings where coding agents can write or modify workspace files later consumed by host components such as IDE extensions, Git integrations, daemons, or Docker paths, bypassing the apparent sandbox boundary.",
+      "follow_up_note": "Keep vulnerability/entity details upstream or security wiki; local leaf implication is artifact trust boundaries.",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Pillar Security",
+        "Cursor",
+        "Codex CLI",
+        "Gemini CLI",
+        "Antigravity",
+        "Google"
+      ],
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "upstream_owned_entities": [
+        "Cursor",
+        "OpenAI Codex",
+        "Gemini CLI",
+        "Antigravity",
+        "Pillar Security"
+      ],
+      "visible_date": "2026-07-21",
+      "why_it_matters_for_leaf": "Prompt/package boundaries and tool governance should track host consumers of agent-written files, not only direct tool permissions inside the agent process."
+    },
+    {
+      "factual_summary": "Samuel Fajreldines turns the Pillar sandbox-escape pattern into local harness guidance: host configuration, Git hooks, IDE config, virtual environments, daemons, Docker, and CI should become explicit approval or blocking surfaces because they may run agent-written artifacts later.",
+      "follow_up_note": "Useful for ingest into file-boundary and MCP governance leaves; avoid duplicating product vulnerability encyclopedia detail.",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Samuel Fajreldines",
+        "Pillar Security",
+        "Cursor",
+        "Codex",
+        "Gemini CLI",
+        "Antigravity",
+        "Stack Overflow"
+      ],
+      "source_url": "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/",
+      "upstream_owned_entities": [
+        "Pillar Security",
+        "Cursor",
+        "OpenAI Codex",
+        "Gemini CLI",
+        "Antigravity"
+      ],
+      "visible_date": "2026-07-23",
+      "why_it_matters_for_leaf": "This is a direct local-practice restatement of the file-boundary problem: control should follow agent-created artifacts into downstream host consumers."
+    },
+    {
+      "factual_summary": "A GitHub Actions Codex review workflow separates read-only analysis from comment publishing, treats PR content and instruction files as untrusted, constrains review categories to correctness/security/performance, requires path/line/evidence/fix, and validates workflow plumbing before review quality.",
+      "follow_up_note": "Ingest only the workflow pattern and trust-boundary guidance; upstream owns product/action background.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "named_entities": [
+        "Samuel Fajreldines",
+        "GitHub Actions",
+        "OpenAI Codex action",
+        "GitHub",
+        "OpenAI"
+      ],
+      "source_url": "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+      "upstream_owned_entities": [
+        "GitHub Actions",
+        "OpenAI Codex"
+      ],
+      "visible_date": "2026-07-24",
+      "why_it_matters_for_leaf": "The code-review and PR-packaging leaves can use this as a current example of least-privilege review automation with evidence requirements and advisory-first rollout."
+    },
+    {
+      "factual_summary": "A TypeScript MCP server tutorial exposes narrow read-only CI evidence tools to Claude Code and Codex, validates arguments with Zod, fixes data to a known workspace path, caps result size, tests with MCP Inspector before agent connection, and notes Codex allowlist/approval controls.",
+      "follow_up_note": "Good local practice evidence; keep broad MCP/product facts upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Samuel Fajreldines",
+        "Model Context Protocol",
+        "MCP Inspector",
+        "TypeScript",
+        "Zod",
+        "Claude Code",
+        "Codex"
+      ],
+      "source_url": "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Claude Code",
+        "OpenAI Codex",
+        "TypeScript",
+        "Zod"
+      ],
+      "visible_date": "2026-07-23",
+      "why_it_matters_for_leaf": "The RAG/MCP practice leaves should prefer narrow evidence servers with schema validation, fixed data roots, output limits, and pre-agent protocol inspection."
+    },
+    {
+      "factual_summary": "Windows Central reports Microsoft using MDASH, a multi-model agentic security scanning harness with more than 100 specialized agents, to analyze, debate, and validate security findings while maintaining separate validation systems for update quality.",
+      "follow_up_note": "Potential support for AI-assisted TDD/verification loops; route Windows product specifics upstream or security wiki.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "Windows Central",
+        "Microsoft",
+        "Windows 11",
+        "MDASH",
+        "Action1",
+        "Windows Latest"
+      ],
+      "source_url": "https://www.windowscentral.com/microsoft/windows-11/windows-11s-massive-july-2026-update-shows-how-ai-is-changing-patch-tuesday",
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Windows",
+        "MDASH"
+      ],
+      "visible_date": "2026-07-18",
+      "why_it_matters_for_leaf": "The local verification/eval implication is that AI-assisted defect discovery still needs independent validation and regression protection before release."
+    },
+    {
+      "factual_summary": "Business Insider series synthesis reports fast shifts in AI coding adoption, token-budget pressure, and software engineers spending more time reviewing AI-generated code, fixing mistakes, and maintaining control over process and career value.",
+      "follow_up_note": "Use for local adoption/telemetry framing only; broad labor-market/product coverage belongs upstream or outside this repo.",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "Vibe Mode",
+        "Uber",
+        "Amazon"
+      ],
+      "source_url": "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+      "upstream_owned_entities": [
+        "Business Insider",
+        "Uber",
+        "Amazon"
+      ],
+      "visible_date": "2026-07-22T09:30:03.237Z",
+      "why_it_matters_for_leaf": "The local operating-model implication is that runtime telemetry and agent cost signals should be part of workflow governance, not just finance reporting."
+    },
+    {
+      "factual_summary": "Outcome School explains context compaction as summarizing older conversation content to keep long-running LLM sessions inside the context window, with emphasis on preserving important points while reducing overflow pressure.",
+      "follow_up_note": "Ingest cautiously as explanatory support; pair with stronger research evidence where possible.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "named_entities": [
+        "Outcome School",
+        "Amit Shekhar"
+      ],
+      "source_url": "https://outcomeschool.com/blog/how-does-context-compaction-work",
+      "upstream_owned_entities": [
+        "Outcome School"
+      ],
+      "visible_date": "2026-07-21",
+      "why_it_matters_for_leaf": "This reinforces the local compaction leaf baseline: compaction is an operational pattern for long sessions, but needs evidence-preserving summaries to avoid losing decisions."
+    },
+    {
+      "factual_summary": "The Agentic Context Management paper argues production agent failures often stem from unmanaged context, not reasoning limits; it decomposes context management into architecting, ingesting, scoping, anticipating, and compacting/consolidation, and argues naive append-only context has quadratic token-cost growth.",
+      "follow_up_note": "Likely worth a downstream context architecture ingest; route company/product background upstream.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "named_entities": [
+        "arXiv",
+        "Gaurav Dadhich",
+        "Maximem",
+        "Synap",
+        "LongMemEval",
+        "LoCoMo"
+      ],
+      "source_url": "https://arxiv.org/html/2607.21503v1",
+      "upstream_owned_entities": [
+        "Maximem",
+        "Synap",
+        "LongMemEval",
+        "LoCoMo"
+      ],
+      "visible_date": "2026-07-23",
+      "why_it_matters_for_leaf": "This is strong current evidence for treating context as a lifecycle with scoping, anticipation, compaction, and provenance rather than as a flat memory store or RAG-only problem."
+    },
+    {
+      "factual_summary": "Vellum survey-style guide frames coding agents as active project executors and highlights current limits: session-boundary context loss, incomplete work context, security differences, cost growth, need for manual review, and success measured by fewer regressions rather than more generated lines.",
+      "follow_up_note": "Broad tool comparisons belong upstream; local pages can use the limitations as operating criteria.",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "named_entities": [
+        "Vellum",
+        "Devin",
+        "Cursor",
+        "Claude Code",
+        "OpenHands",
+        "Windsurf",
+        "Stack Overflow",
+        "GitHub"
+      ],
+      "source_url": "https://www.vellum.ai/blog/best-ai-coding-agents",
+      "upstream_owned_entities": [
+        "Vellum",
+        "Devin",
+        "Cursor",
+        "Claude Code",
+        "OpenHands",
+        "Windsurf"
+      ],
+      "visible_date": "2026-07-20",
+      "why_it_matters_for_leaf": "The local implication is to value retained work context, conservative change management, security model clarity, and regression reduction over raw code volume."
+    }
+  ],
+  "run_timestamp": "2026-07-24T21:01:41-04:00",
+  "run_timestamp_utc": "2026-07-25T01:01:41Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, stable path sort for ties.",
+  "source_urls_checked": [
+    "https://agentic.ai/news",
+    "https://arxiv.org/html/2607.04697v1",
+    "https://arxiv.org/html/2607.21503v1",
+    "https://atlan.com/know/context-layer-for-ai-agents/",
+    "https://futurumgroup.com/insights/ai-code-review-hits-a-wall-why-speed-without-trust-risks-engineering-chaos/",
+    "https://levelop.dev/blog/the-best-ai-coding-agents-in-2026-a-practical-ranking-for-working-developers",
+    "https://mightybot.ai/blog/structured-outputs-for-enterprise-llms/",
+    "https://outcomeschool.com/blog/how-does-context-compaction-work",
+    "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+    "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+    "https://www.developersdigest.tech/blog/permissions-logs-rollback-ai-coding-agents",
+    "https://www.samuelfaj.com/en/blog/agent-prs-die-when-they-become-reviewer-labor/",
+    "https://www.samuelfaj.com/en/blog/codebase-rag-only-works-when-the-agent-asks-well/",
+    "https://www.samuelfaj.com/en/blog/how-to-build-a-typescript-mcp-server-for-coding-agents/",
+    "https://www.samuelfaj.com/en/blog/how-to-set-up-ai-code-review-in-github-actions/",
+    "https://www.samuelfaj.com/en/blog/the-agent-stayed-sandboxed-the-host-trusted-the-file/",
+    "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+    "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+    "https://www.vellum.ai/blog/best-ai-coding-agents",
+    "https://www.windowscentral.com/microsoft/windows-11/windows-11s-massive-july-2026-update-shows-how-ai-is-changing-patch-tuesday"
+  ]
+}
