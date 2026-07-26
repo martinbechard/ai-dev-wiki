@@ -21,6 +21,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds outcome-based SaaS and guardrail-infrastructure signals. Agent workflows that bypass interface-heavy products should be funded and pruned by outcome, cross-system value, and governance burden, while guardrails and policy enforcement become part of the infrastructure cost rather than optional overhead.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) and [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) add local-versus-cloud placement evidence from a sponsored vendor-positioned source. Treat the claimed savings as non-neutral, but preserve the practice signal: local, deskside, self-hosted, and cloud execution choices should be evaluated against policy enforcement, action logs, data sensitivity, latency, utilization, escalation to frontier models, and total operating cost.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -33,6 +35,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Compare cost to workflow outcome and review burden, not only to provider invoices or seat counts.
 - Compare seat-based tools against outcome-owned agent workflows by cross-system value, governance burden, and retirement criteria.
 - Include guardrails, policy enforcement, session forensics, and owner review time in the infrastructure cost of autonomous agent workflows.
+- Treat local or deskside agent execution as a governed workload-placement option only when policy enforcement, logs, sensitive-data handling, utilization, escalation rules, and maintenance costs are explicit.
+- Mark sponsored infrastructure cost claims as vendor-positioned evidence until local traces and accepted outcomes support the placement decision.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -45,6 +49,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - [federation.md](../federation.md)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 
 ## Related Code
 
@@ -73,3 +79,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Created on 2026-06-27 from the Affordable AI Agents source as the local operating-model lens for managed, subscription, self-hosted, and local execution economics.
 - Maintained on 2026-07-05 with normalized multi-agent cost traces across models, tools, shell commands, MCP, subagents, errors, and timing.
 - Maintained on 2026-07-09 with outcome-owned SaaS economics, guardrail infrastructure, policy-enforcement cost, and pruning criteria.
+- Maintained on 2026-07-25 with sponsored-claim caution and workload-placement criteria for local, self-hosted, deskside, and cloud agent execution.

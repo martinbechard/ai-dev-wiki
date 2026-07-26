@@ -17,6 +17,8 @@ The local rule is that agent adoption should not replace learning with passive r
 
 The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) adds a public training-sequence signal: teams often need developers to learn structured prompting, agentic coding tools, MCP/tool governance, RAG provenance, and agent evaluation before granting broad autonomous-agent responsibility. The local rule is to sequence responsibility with supervised practice, not to hand juniors fully autonomous tools because a product surface is available.
 
+The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) adds labor-market evidence that AI coding tools can concentrate productivity gains with senior engineers while automating simpler debugging and feature work. The local learning-path rule is to preserve hands-on debugging, review, and technical-judgment practice for juniors even when agents can produce the first draft faster.
+
 ## Practice Boundaries
 
 - Protect junior practice paths while using senior-led pods for high-leverage execution.
@@ -25,12 +27,14 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 - Treat junior pipeline health as part of the operating model, not a side effect of staffing.
 - Sequence junior responsibility from structured prompting and source-backed retrieval through tool governance, RAG provenance, agent execution, benchmark design, and guardrail work.
 - Pair broader agent permissions with supervised evidence that the developer can explain context selection, tool use, verification, and rollback.
+- Preserve junior debugging, simple-feature, review, and correction practice deliberately when agents absorb the easiest implementation tasks.
 
 ## Authoritative Sources
 
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [senior led agentic execution pods](senior-led-agentic-execution-pods.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 
 ## Related Code
 
@@ -58,3 +62,4 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 
 - Created on 2026-06-23 from source-backed guidance on the hourglass organization, junior practice, and long-term expertise pipelines.
 - Maintained on 2026-07-09 with staged developer learning from prompting through tool governance, RAG, agents, benchmarks, and guardrails.
+- Maintained on 2026-07-25 with explicit junior debugging, simple-feature, review, correction, and technical-judgment practice preservation.

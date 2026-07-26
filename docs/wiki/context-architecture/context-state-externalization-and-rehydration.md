@@ -25,6 +25,8 @@ The [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds cue-anchored memory evidence. Coding-agent memory should be delivered by the harness from durable path, symbol, event, semantic, and time cues rather than left to the model to remember or voluntarily search for the right fact.
 
+The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) frames context memory as a lifecycle rather than a single store. Durable agent state should record what to remember, how facts were extracted, where they were stored, which retrieval scope applies, when to compact or consolidate, when to forget stale material, and which provenance supports reuse. Broad memory-product and benchmark coverage stays upstream; locally, the practice implication is to make lifecycle, provenance, and cost-aware compaction explicit in rehydration files.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -43,6 +45,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Mark rehydrated facts as current, stale, or historical before they affect planning, tool access, or acceptance claims.
 - Use deterministic cue rules and audit logs when memory is injected from paths, symbols, events, semantic matches, or time windows.
 - Treat voluntary agent recall as weaker evidence than harness-delivered memory tied to a durable source.
+- Treat memory extraction, storage, retrieval scope, compaction, consolidation, forgetting, and provenance as separate lifecycle decisions when externalized state may be reused.
 
 ## Authoritative Sources
 
@@ -57,6 +60,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -91,3 +95,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-07-08 with trust labels, authorization provenance, and rehydrated metadata checks.
 - Maintained on 2026-07-12 with active-context rebuilding from durable decisions, artifacts, memory entries, and auditable storage plus stale-fact labeling.
 - Maintained on 2026-07-24 with cue-anchored memory delivery and audit-log guidance.
+- Maintained on 2026-07-25 with lifecycle-managed context memory, provenance, forgetting, and cost-aware compaction guidance.

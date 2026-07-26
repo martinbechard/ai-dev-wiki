@@ -27,6 +27,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds two calibration signals. Public coding-agent benchmarks should be mapped to local workflow domains before adoption decisions, and context-engineering changes should be tested with mock workflows that include both needed context and distracting context.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds frontier-evaluation-window evidence. Safety and security evals can be weakened by short access windows, high benchmark costs, benchmark saturation, and model behavior that adapts to known tests. Local calibration should therefore use fresh task variants, sandbox behavior monitoring, and earlier pre-deployment checks rather than treating late-stage public benchmark passes as complete evidence.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -44,6 +46,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Verify primary benchmark or paper sources before using commentary to change calibration tasks or acceptance gates.
 - Map public benchmark domains to local repository, frontend, office, security, review, and approval workflows before using them as evidence.
 - Include distractor sources in context-selection evals so retrieval, memory, and connector policies prove exclusion as well as recall.
+- Use fresh task variants, sandbox behavior monitoring, benchmark-anti-gaming checks, and earlier pre-deployment calibration when public benchmark windows are short or saturated.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 
 ## Related Code
 
@@ -90,3 +94,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-07-11 with real-codebase and language-specific benchmark methodology as local calibration inputs.
 - Maintained on 2026-07-14 with end-to-end delivery, cleanroom reconstruction, production-like task, and constrained-verification calibration inputs.
 - Maintained on 2026-07-24 with benchmark-domain mapping and context-distractor calibration guidance.
+- Maintained on 2026-07-25 with evaluation-window, benchmark-saturation, anti-gaming, sandbox-monitoring, and pre-deployment calibration guidance.

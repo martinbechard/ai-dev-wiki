@@ -49,6 +49,8 @@ The July 19-21 raw sources add generated-dependency, private-inference, and agen
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add deterministic guardrail, sandbox-escape, SANDWORM_MODE, agentic incident, and AI-generated-code security evidence. Supply-chain controls should treat agent-authored commits like untrusted external contributions, enforce provenance and PR policy, model command side effects and repository-config writes, monitor package tokens and AI toolchains, and keep containment, egress, and package access outside model discretion.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds agent-workstation and developer-toolchain evidence. AI-assisted development controls should cover developer machines, IDE extensions, package registries, CI/CD egress, pull requests, default branches, and fleet-wide incident checks because agents can accelerate both legitimate software changes and attacker movement across those surfaces.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -91,11 +93,13 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Resolve AI-suggested package, repository, and skill names against exact registries, URLs, lockfiles, and approval evidence before clone, install, import, or scaffold actions.
 - Review private-inference and hosted-agent paths for source retention, training-use terms, jurisdiction, reviewer access, approval, and auditability before proprietary code enters prompts.
 - Pair agentic application controls with goal constraints, untrusted-content handling, AIBOM provenance, sandboxing, behavioral monitoring, and kill switches when agents can affect IDE, CLI, or pull-request workflows.
+- Extend AI-assisted development supply-chain controls to agent workstations, IDE extensions, package registries, CI/CD egress, pull requests, default branches, and fleet-wide incident checks.
 
 ## Authoritative Sources
 
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -157,6 +161,7 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with deterministic guardrails, sandbox escapes, SANDWORM_MODE, untrusted AI-authored commit, package-token, egress, and containment guidance.
+- Maintained on 2026-07-25 with agent-workstation, IDE extension, package registry, CI/CD egress, PR, default-branch, and fleet-incident supply-chain controls.
 - Created on 2026-06-23 to separate sensitive-data, package-install, dependency, model-artifact, source, and licensing controls from the broader governance-controls page.
 - Maintained on 2026-06-24 with agent skill, tool manifest, MCP server, and connector configuration supply-chain controls.
 - Maintained on 2026-06-25 with marketplace allowlists, runtime agent-security checks, and credential-broker controls for agent tooling.

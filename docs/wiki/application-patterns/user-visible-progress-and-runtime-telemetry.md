@@ -33,6 +33,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds clearer task-progress and inline-visualization signals. Progress surfaces should distinguish task links, current run state, review annotations, generated visualizations, computer-use activity, and no-user-facing-change patch notes so users can tell whether a task is blocked, waiting, visually reporting, or merely updated at the runtime layer.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds coding-agent observability evidence. Agent telemetry should join prompts, agent sessions, pull requests, standards checks, cost, quality, MCP activity, and production or incident signals so adoption and reliability reviews can trace what an AI coding session changed and whether the workflow improved.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -55,6 +57,7 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Preserve test-failure pivots, trace saliency summaries, and earliest-error markers for operator diagnosis of failed agent runs.
 - Distinguish task links, current run state, review annotations, generated visualizations, computer-use activity, and runtime-only patch updates in progress surfaces.
 - Avoid presenting version-only or no-user-facing-change runtime updates as workflow progress for the user's task.
+- Join prompt, session, pull-request, standards-check, cost, quality, MCP, and production-signal telemetry when coding-agent observability is used for rollout or reliability decisions.
 
 ## Authoritative Sources
 
@@ -72,6 +75,7 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 
 ## Related Code
 
@@ -109,3 +113,4 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Maintained on 2026-07-09 with session-forensics, cost-and-use analytics, and run-level policy-decision telemetry.
 - Maintained on 2026-07-10 with bounded-loop progress, output-path checks, trace saliency, and earliest-error diagnostics.
 - Maintained on 2026-07-14 with task-link, review-annotation, visualization, computer-use, and runtime-only update progress boundaries.
+- Maintained on 2026-07-25 with coding-agent observability joins across prompts, sessions, pull requests, standards checks, cost, quality, MCP, and production signals.

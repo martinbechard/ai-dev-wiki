@@ -55,6 +55,8 @@ The July 22 raw sources add adoption-phase and tokenomics evidence. The [topic n
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds adoption telemetry evidence from the Copilot usage metrics impact dashboard and agent-sprawl cost reporting. Local cost telemetry should separate passive licensed users, code-first users, agent-first users, multi-agent users, external-service consumption, and budget owners instead of treating seat count or aggregate requests as enough adoption evidence.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) and [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) add cost-per-outcome and workload-placement evidence. Agentic workflows can multiply spend through repeated context replay, planning, checking, revision loops, external service calls, and local-versus-cloud routing choices. Sponsored or vendor-positioned cost claims should be treated cautiously, but the local operating rule is still durable: budget by workflow shape, owner, run location, context growth, policy logs, and accepted outcome rather than by seat activity or nominal token price.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -99,6 +101,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Track shared credit pools, per-user credit visibility, rate-limit wait time, subagent model choices, loop counts, retry counts, and escalation events as workflow telemetry.
 - Pair adoption-phase dashboards and PR-throughput measures with accepted outcomes before treating AI usage growth as operating-model success.
 - Split tokenomics evidence into production, consumption, and value layers so routing, context size, retries, orchestration, and idle capacity can be corrected separately.
+- Budget agentic workflows by task shape, context replay, run location, external-service consumption, policy logs, owner, and accepted outcome when local, self-hosted, or cloud routes are compared.
+- Treat sponsored or vendor-positioned cost claims as weak evidence unless they are mapped to local traces, verification cost, privacy constraints, and accepted outcomes.
 
 ## Authoritative Sources
 
@@ -133,6 +137,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 
 ## Related Code
 
@@ -179,3 +185,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-15 with multi-model routing, spend caps, organization budgets, PR file limits, review continuation, and runaway-loop cost signals.
 - Maintained on 2026-07-22 with whole-task context-compression checks, shared credit pools, rate-limit impact, subagent model, and retry-loop cost telemetry.
 - Maintained on 2026-07-22 with adoption-phase dashboard, value-stream telemetry, and tokenomics cost-layer controls.
+- Maintained on 2026-07-25 with workload-placement cost governance, sponsored-claim caution, context-replay budgeting, and cost-per-outcome routing evidence.

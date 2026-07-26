@@ -25,6 +25,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds permission-inventory evidence. Ownership rosters should show what each agent, skill, tool, MCP server, and connected service can access; who can revoke that access; which actions are allowed; and where audit trails bind the action back to an authenticated requester, operator, or approver.
 
+The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) adds cost, lifecycle, and operations-after-go-live evidence. Owner cards should include the workflow outcome, source-freshness owner, runbook maintainer, approval owner, log location, cost owner, monthly or recurring review cadence, and rollback or decommission trigger so operational upkeep is not separated from agent deployment.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -43,6 +45,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Record delegation pattern, outcome supervision cadence, audit-trail review, edge-case escalation path, and scope-expansion criteria for each recurring managed agent.
 - Treat agent management as an accountable operating role rather than a passive inventory entry.
 - Treat ownership rosters as current permission inventories with revocation owners, allowed-use definitions, and audit bindings for agents, tools, skills, MCP servers, and connected services.
+- Record workflow outcome, source-freshness owner, runbook maintainer, approval owner, log location, cost owner, review cadence, and rollback or decommission trigger for recurring AI workflows.
 
 ## Authoritative Sources
 
@@ -54,6 +57,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -88,3 +92,4 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Maintained on 2026-07-13 with cross-boundary visibility, escalation approver, and sanctioned fallback fields for unmanaged agent use.
 - Maintained on 2026-07-14 with delegation, outcome supervision, audit-trail review, edge-case escalation, and scope-expansion owner-card fields.
 - Maintained on 2026-07-17 with permission inventories, revocation ownership, allowed-use definitions, and authenticated audit bindings.
+- Maintained on 2026-07-25 with workflow outcome, freshness, runbook, approval, log, cost, review-cadence, rollback, and decommission owner-card fields.

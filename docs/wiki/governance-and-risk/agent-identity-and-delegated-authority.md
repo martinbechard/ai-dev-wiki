@@ -33,6 +33,8 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 
 The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) reinforces the identity boundary for autonomous agents. Agents should be discoverable, assigned human owners, authorized through brokered just-in-time access, and audited through policy decisions rather than receiving long-lived secrets or broad inherited credentials.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds on-behalf-of delegation evidence. When an agent crosses a tool, MCP server, API, or agent-to-agent boundary, the authorization record should keep both the human subject and machine actor visible through short-lived scoped credentials, rather than collapsing attribution into a generic service account. Broad OAuth, OIDC, Diagrid, Catalyst, Sentry, and MCP ecosystem coverage stays upstream; locally, the rule is to preserve requester identity, acting workload identity, scope, and audit evidence across delegated hops.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -55,10 +57,12 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Treat shared service accounts and prompt-only job scopes as ambient access until an external policy layer binds the task and credential scope.
 - Preserve delegation-chain evidence across requester, agent identity, tool server, downstream system, authorization decision, and confused-deputy controls.
 - Prefer discoverable, owner-assigned, policy-bound agent identities with just-in-time privileged access over long-lived secrets or inherited human accounts.
+- Preserve both the human subject and machine actor in delegated credentials or authorization records when an agent acts on behalf of a person across MCP, API, or agent-to-agent hops.
 
 ## Authoritative Sources
 
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -107,3 +111,4 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Maintained on 2026-07-12 with workload identity, authority cards, task-based access control, short-lived credentials, quotas, and fast revocation.
 - Maintained on 2026-07-16 with delegation-chain, first-class agent identity, authorization-decision, and confused-deputy evidence.
 - Maintained on 2026-07-22 with owner-assigned agent identities, just-in-time privileged access, and incident-response revocation evidence.
+- Maintained on 2026-07-25 with on-behalf-of delegation, dual human-and-agent attribution, short-lived scoped credentials, and cross-tool audit evidence.

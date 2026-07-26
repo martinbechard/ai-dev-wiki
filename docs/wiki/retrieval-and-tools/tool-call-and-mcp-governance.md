@@ -57,6 +57,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add runtime tool-surface controls. MCP upgrades should be treated as compatibility and conformance gates, not just version bumps. Mid-conversation tool-list changes and fallback routing should be logged because they can alter cache assumptions, available actions, and which provider or safety path handled a request.
 
+The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds regulated-gateway, context-limit, and fallback-governance signals. MCP gateways for regulated workflows should be evaluated as centralized control planes for authentication, authorization, policy, audit logging, network boundaries, device posture, model routing, and private deployment evidence. Tool-specific MCP guidance also reinforces that bounded context is not complete dataset visibility: agents should route large-scale or complete operations through direct APIs or workflow tools with explicit data coverage checks. Runtime tool-surface mutation and automatic fallback routing should be logged because they change available actions, cache assumptions, and reproducibility.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -112,6 +114,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Distinguish local developer convenience from enterprise MCP control planes that need role bundles, gateway logging, SCIM alignment, agent attribution, approval workflows, and agent-specific credentials.
 - Expect stateless MCP calls, request metadata, cache hints, trace context, audited UI actions, and long-running task handles to require explicit state externalization and audit joins in the surrounding harness.
 - Keep broad Model Context Protocol, MCP server, and vendor coverage upstream; maintain local MCP notes only when they change tool access, identity, approval, observability, or workflow design.
+- Evaluate regulated MCP gateways as access infrastructure with identity, authorization, device posture, network, audit, routing, and deployment evidence rather than as connector catalogs.
+- Require explicit data-coverage checks when an MCP-connected agent has bounded context and the task needs complete dataset operations.
 
 ## Authoritative Sources
 
@@ -153,6 +157,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 
 ## Related Code
 
@@ -204,3 +209,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-07-15 with MCP least privilege, argument validation, runtime monitoring, approval gates, and common policy interception controls.
 - Maintained on 2026-07-22 with visible tool-call arguments, API-safe skill evals, MCP inventories, setup-prompt review, subagent-hook checks, and explainable command approval.
 - Maintained on 2026-07-24 with MCP conformance, mid-conversation tool-surface, fallback-routing, and cache-assumption guidance.
+- Maintained on 2026-07-25 with regulated MCP gateway criteria, bounded-context data-coverage checks, and fallback/tool-surface audit guidance.

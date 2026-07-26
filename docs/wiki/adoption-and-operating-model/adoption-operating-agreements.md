@@ -29,6 +29,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds agent-sprawl and permissions-inventory evidence. Operating agreements should define how teams use [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) and [agent ownership rosters](agent-ownership-rosters.md) to keep discovery, revocation, policy, audit, and local autonomy boundaries current.
 
+The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) adds operating-model and workload-ownership evidence. Adoption agreements should tie AI systems to named workflow owners, source freshness, data readiness, architecture, runbooks, approval gates, logs, cost-per-outcome tracking, operations after go-live, and a periodic review cadence. Usage growth alone is not a sufficient success signal when useful outcomes, human oversight, and operational upkeep are unclear.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -55,6 +57,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Treat unmanaged individual tool use and centrally mandated usage as opposite failure modes when neither is tied to outcome evidence.
 - Define vendor or platform evidence requirements for AI management systems, data locality, prompt-injection defenses, security review, and model-routing boundaries before regulated workflows adopt private agents.
 - Define how teams use governance infrastructure and ownership rosters to keep running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence current while retaining local workflow autonomy.
+- Tie each adopted AI workflow to a named owner, data-readiness check, source-freshness path, runbook, approval gate, logs, cost-per-outcome evidence, and recurring operating review.
+- Treat usage metrics as adoption inputs, not success criteria, until useful outcomes and upkeep responsibilities are visible.
 
 ## Authoritative Sources
 
@@ -70,6 +74,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 
 ## Related Code
 
@@ -105,3 +110,4 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Maintained on 2026-07-14 with shared-capability funding, usage and spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules.
 - Maintained on 2026-07-16 with vendor-governance evidence, private-agent data locality, prompt-injection controls, security-review proof, and model-routing boundaries.
 - Maintained on 2026-07-17 with running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence.
+- Maintained on 2026-07-25 with workflow ownership, source freshness, data readiness, runbooks, approval gates, logs, cost-per-outcome, and recurring review cadence.
