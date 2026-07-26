@@ -1,0 +1,468 @@
+{
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp": "2026-07-25T21:02:50-04:00",
+  "run_timestamp_utc": "2026-07-26T01:02:50Z",
+  "cutoff_window": {
+    "start": "2026-07-18T21:02:50-04:00",
+    "end": "2026-07-25T21:02:50-04:00",
+    "policy": "Only sources published or visibly updated after the start and at or before the run timestamp qualify; date-only cutoff-day candidates are excluded unless after-cutoff time is visible."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort; index, digest, maintenance, federation, schema, glossary, known-defects, open-decisions, topic-index, and non-durable dated synthesis pages excluded.",
+  "leaf_universe_count": 69,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+  ],
+  "source_urls_checked": [
+    "https://airia.com/blog/what-is-ai-agent-governance-a-framework-for-keeping-agents-in-check/",
+    "https://arxiv.org/html/2607.21503v1",
+    "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+    "https://slite.com/learn/ai-knowledge-base-guide",
+    "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+    "https://www.aakashx.com/blog/secure-ai-agent-design/",
+    "https://www.avepoint.com/shifthappens/blog/ai-agent-ownership-governance",
+    "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+    "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+    "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/",
+    "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/2026-ai-hackathon",
+    "https://www.teamday.ai/blog/complete-guide-agentic-coding-2026",
+    "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+    "https://www.techradar.com/pro/brain-fry-and-broken-promises-the-hidden-cost-of-ai-without-architecture",
+    "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+    "https://www.thepromptindex.com/how-to-use-ai-agent-skills-the-complete-guide.html"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "source_url": "https://arxiv.org/html/2607.21503v1",
+      "visible_date": "2026-07-23",
+      "factual_summary": "arXiv paper frames agent context management as a lifecycle spanning deciding what to remember, extraction, store choice, scoped retrieval, anticipation, compaction, consolidation, forgetting stale information, and provenance; it argues naive accumulation grows token cost quadratically and benchmark claims need methodology separation.",
+      "why_it_matters_for_leaf": "Reinforces context-state externalization and rehydration as lifecycle architecture rather than a generic memory store, and supports keeping compaction, provenance, and cost behavior explicit in local context guidance.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "arXiv",
+        "Maximem",
+        "Maximem Synap",
+        "SuperMemory",
+        "Zep",
+        "Graphiti",
+        "Letta",
+        "MemGPT",
+        "LongMemEval",
+        "LoCoMo"
+      ],
+      "upstream_owned_entities": [
+        "Maximem",
+        "SuperMemory",
+        "Zep",
+        "Graphiti",
+        "Letta",
+        "MemGPT",
+        "LongMemEval",
+        "LoCoMo"
+      ],
+      "follow_up_note": "During ingest, route vendor and benchmark background upstream; keep the local practice implication about lifecycle-managed context, provenance, and cost-aware compaction."
+    },
+    {
+      "source_url": "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/",
+      "visible_date": "2026-07-21",
+      "factual_summary": "eGain describes AI agent response governance as a knowledge-governance layer: current, relevant, unambiguous source material; prioritization by question frequency, value, and complexity; consolidation into a governed source of truth; contradiction resolution; taxonomy; and ongoing drift controls.",
+      "why_it_matters_for_leaf": "Supports local raw-intake and automated-feed practice: source freshness, contradiction handling, taxonomy, and human review are part of keeping agent-facing wiki or knowledge content safe to retrieve.",
+      "matched_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md"
+      ],
+      "named_entities": [
+        "eGain",
+        "Gartner",
+        "Achmea"
+      ],
+      "upstream_owned_entities": [
+        "eGain",
+        "Gartner",
+        "Achmea"
+      ],
+      "follow_up_note": "Preserve only the local knowledge-governance workflow implication; route product/vendor background upstream."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "visible_date": "2026-07-20",
+      "factual_summary": "TechRadar opinion piece argues AI agents should be discoverable first-class identities with lifecycle governance, designated human owners, clear policies, audit trails, and just-in-time privileged access rather than direct exposure to long-lived secrets.",
+      "why_it_matters_for_leaf": "Strengthens the local approval-boundary and ownership-roster rule that autonomous agents need named human ownership, scoped permissions, auditable access, and secret-minimizing controls.",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Ping Identity",
+        "Matt Berzinski"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Ping Identity"
+      ],
+      "follow_up_note": "Keep identity-provider background upstream; local ingest should focus on owner, policy, audit, and just-in-time access implications."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+      "visible_date": "2026-07-21",
+      "factual_summary": "TechRadar opinion piece warns that autonomous AI agents can create spend and accountability sprawl because usage scales continuously across external services; it recommends early visibility, cost-to-outcome mapping, infrastructure-level controls, and ownership from deployment day one.",
+      "why_it_matters_for_leaf": "Adds a current cost-governance angle for hybrid infrastructure economics and adoption agreements: budget ownership, consumption review, and control placement must be explicit before agent deployments scale.",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Flexera",
+        "Marlon Oliver",
+        "AWS Banking on the Cloud 2026",
+        "EU AI Act",
+        "DORA",
+        "Amazon"
+      ],
+      "upstream_owned_entities": [
+        "Flexera",
+        "AWS",
+        "EU AI Act",
+        "DORA",
+        "Amazon"
+      ],
+      "follow_up_note": "Route broad regulatory and vendor context upstream; retain local cost-owner and infrastructure-control implications."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/brain-fry-and-broken-promises-the-hidden-cost-of-ai-without-architecture",
+      "visible_date": "2026-07-20",
+      "factual_summary": "TechRadar opinion piece argues AI overload comes from weak system design, not usage itself: many employees still orchestrate prompts, validation, and corrections manually, while structured multi-agent workflows and adaptive operating models should place human judgment at the right control points.",
+      "why_it_matters_for_leaf": "Supports local operating agreements and approval boundaries by separating strategic human review from constant manual supervision, and treating architecture as the lever for reducing orchestration burden.",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Slalom",
+        "Sonali Fenner",
+        "Employment Rights Act 2025"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Slalom",
+        "Employment Rights Act 2025"
+      ],
+      "follow_up_note": "Keep jurisdiction-specific employment-law details upstream or governance-owned; local page should focus on right-sized human review and workflow architecture."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+      "visible_date": "2026-07-22T09:30:03.237Z",
+      "factual_summary": "Business Insider reports that AI coding tools are reshaping daily engineering workflows, changing expectations for coding jobs, and raising an unresolved junior-talent problem because senior engineers often benefit most from AI while entry-level debugging and simple-feature work may be automated.",
+      "why_it_matters_for_leaf": "Qualifies for the junior-learning leaf because it reinforces that apprenticeship paths must intentionally preserve debugging, review, and technical-judgment practice as agents absorb simpler work.",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "Julia Herbst",
+        "Robert Scammell",
+        "The Great Coding Reset",
+        "Vibe Mode",
+        "Amazon",
+        "Uber"
+      ],
+      "upstream_owned_entities": [
+        "Business Insider",
+        "Amazon",
+        "Uber"
+      ],
+      "follow_up_note": "Use only the local talent-pipeline implication; route broad publication, company, and labor-market background upstream."
+    },
+    {
+      "source_url": "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+      "visible_date": "2026-07-25",
+      "factual_summary": "AakashX argues AI adoption is an operating-model change with workflow ownership, data readiness, architecture, governance, human oversight, operations after go-live, cost tracking by workflow, and review cadence; it warns against measuring usage instead of useful outcomes.",
+      "why_it_matters_for_leaf": "Directly supports adoption operating agreements, ownership rosters, automated update/feed governance, and raw monitor follow-up rules by tying AI systems to owners, source freshness, runbooks, approval gates, logs, cost, and monthly review.",
+      "matched_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "AakashX",
+        "Aakash Ahuja"
+      ],
+      "upstream_owned_entities": [
+        "AakashX"
+      ],
+      "follow_up_note": "If ingested, keep vendor identity upstream and focus locally on ownership, freshness, cost-per-outcome, approval, logs, and operating review cadence."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+      "visible_date": "2026-07-24",
+      "factual_summary": "Sponsored Business Insider/Dell piece says agentic workflows multiply token use and positions local/deskside agent execution as a way to control token cost, keep sensitive work local, enforce policies, and maintain logs before scaling to larger infrastructure.",
+      "why_it_matters_for_leaf": "Adds a current infrastructure-economics candidate for balancing managed APIs, local execution, cost telemetry, privacy, and governance controls.",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "BI Studios",
+        "Dell Technologies",
+        "Dell Deskside Agentic AI",
+        "Nvidia",
+        "NemoClaw",
+        "Bharat Patel",
+        "Signal65",
+        "Futurum"
+      ],
+      "upstream_owned_entities": [
+        "Dell",
+        "Nvidia",
+        "NemoClaw"
+      ],
+      "follow_up_note": "Treat as sponsored/vendor-positioned evidence; route product background upstream and keep only local cost/privacy/governance design implications."
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://atlan.com/know/ai-agent/context-engineering/context-engineering-techniques-ai-agents/",
+      "visible_date": "2026-07-13",
+      "reason": "outside_7_day_window",
+      "note": "Useful context engineering taxonomy, but published/updated before the 2026-07-18T21:02:50-04:00 cutoff."
+    },
+    {
+      "source_url": "https://slite.com/learn/ai-knowledge-base-guide",
+      "visible_date": "2026-07-06",
+      "reason": "outside_7_day_window",
+      "note": "Relevant to knowledge-base freshness and automatic related-page flags, but outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://www.teamday.ai/blog/complete-guide-agentic-coding-2026",
+      "visible_date": "2026-07-18",
+      "reason": "boundary_only_date_before_precise_cutoff",
+      "note": "Date-only updated value falls on the cutoff date, but no visible time proves it was updated after 2026-07-18T21:02:50-04:00."
+    },
+    {
+      "source_url": "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/2026-ai-hackathon",
+      "visible_date": "2026-07-23",
+      "reason": "upstream_or_adjacent_scope",
+      "note": "Recent and public, but primarily a broad MCP/event update; local selected leaves do not need another durable practice artifact from it."
+    },
+    {
+      "source_url": "https://www.aakashx.com/blog/secure-ai-agent-design/",
+      "visible_date": "referenced from qualifying source, not visibly checked",
+      "reason": "missing_visible_date",
+      "note": "Referenced by a qualifying page, but not separately opened with a visible date during this run."
+    },
+    {
+      "source_url": "https://www.avepoint.com/shifthappens/blog/ai-agent-ownership-governance",
+      "visible_date": "published 2 weeks ago",
+      "reason": "outside_7_day_window",
+      "note": "Relevant ownership framing, but search result date is outside the run window."
+    },
+    {
+      "source_url": "https://airia.com/blog/what-is-ai-agent-governance-a-framework-for-keeping-agents-in-check/",
+      "visible_date": "published last month",
+      "reason": "outside_7_day_window",
+      "note": "Relevant governance framework, but outside the strict publication/update window."
+    },
+    {
+      "source_url": "https://www.thepromptindex.com/how-to-use-ai-agent-skills-the-complete-guide.html",
+      "visible_date": "2026-04-20",
+      "reason": "outside_7_day_window",
+      "note": "Relevant durable skill-file source, but updated months before this run."
+    }
+  ],
+  "leaf_results": {
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": {
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1"
+      ],
+      "qualified_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": {
+      "source_urls_checked": [],
+      "qualified_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf."
+    },
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md": {
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1"
+      ],
+      "qualified_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md": {
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/source-workflows/automated-update-feeds.md": {
+      "source_urls_checked": [
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": {
+      "source_urls_checked": [
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/source-workflows/leaf-update-watch.md": {
+      "source_urls_checked": [
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/source-workflows/public-topic-news-collector.md": {
+      "source_urls_checked": [
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 1,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": {
+      "source_urls_checked": [
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.egain.com/blog/how-to-govern-ai-agent-responses-a-2026-guide-for-cx/"
+      ],
+      "qualified_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": {
+      "source_urls_checked": [
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/brain-fry-and-broken-promises-the-hidden-cost-of-ai-without-architecture",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualified_update_count": 5,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": {
+      "source_urls_checked": [
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualified_update_count": 3,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": {
+      "source_urls_checked": [],
+      "qualified_update_count": 0,
+      "last_result": "no_qualified_update_found",
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf."
+    },
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": {
+      "source_urls_checked": [
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+        "https://www.techradar.com/pro/brain-fry-and-broken-promises-the-hidden-cost-of-ai-without-architecture"
+      ],
+      "qualified_update_count": 3,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": {
+      "source_urls_checked": [
+        "https://arxiv.org/html/2607.21503v1",
+        "https://www.aakashx.com/blog/ai-adoption-operating-model/",
+        "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+        "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for"
+      ],
+      "qualified_update_count": 4,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": {
+      "source_urls_checked": [
+        "https://www.businessinsider.com/great-coding-reset-ai-software-engineering-2026-7",
+        "https://www.techradar.com/pro/brain-fry-and-broken-promises-the-hidden-cost-of-ai-without-architecture"
+      ],
+      "qualified_update_count": 2,
+      "last_result": "qualified_update_found",
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  },
+  "federation_routing": {
+    "upstream_owned_scopes": [
+      "broad AI ecosystem context",
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "downstream_owned_scope": "AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns",
+    "run_application": "Qualifying entries are saved raw-only for local practice implications; broad entity background is marked upstream-owned."
+  },
+  "blockers": []
+}
