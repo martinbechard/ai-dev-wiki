@@ -1,0 +1,411 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": {
+    "utc": "2026-07-26T00:33:14Z",
+    "local": "2026-07-25T20:33:14-0400",
+    "timezone": "America/Toronto"
+  },
+  "cutoff_window": {
+    "start_utc": "2026-07-24T00:33:14Z",
+    "end_utc": "2026-07-26T00:33:14Z",
+    "visible_date_rule": "Included only public sources with visible publication or update dates on 2026-07-24 or 2026-07-25, or exact timestamps inside the cutoff window. Excluded missing, ambiguous, future-dated, older, duplicate, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, source workflows, verification, governance, and adoption patterns.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad AI ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_behavior": "Recorded upstream-owned entities for routing and kept findings focused on downstream practice implications. No docs/wiki pages were updated and no collector output was saved under raw/processed."
+  },
+  "items": [
+    {
+      "id": "2026-07-24-diagrid-on-behalf-of-agent-delegation",
+      "source_url": "https://www.diagrid.io/blog/agent-identity-on-behalf-of-delegation",
+      "source_title": "On-Behalf-Of: how agents act on a person's verified identity",
+      "publisher": "Diagrid",
+      "visible_date": "2026-07-24",
+      "date_basis": "Article page shows July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Diagrid argues that agent service accounts create attribution and authorization gaps because downstream systems see only the agent identity, while on-behalf-of delegation keeps both the human subject and machine actor visible in short-lived scoped tokens.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is directly relevant to governed tool-call practice: agent actions should preserve requester identity, least privilege, and audit attribution across tool, MCP server, API, and agent-to-agent hops.",
+      "named_entities": [
+        "Diagrid",
+        "Catalyst",
+        "Sentry",
+        "OAuth 2.0 Token Exchange",
+        "RFC 8693",
+        "OIDC",
+        "MCP server"
+      ],
+      "upstream_owned_entities": [
+        "Diagrid",
+        "Catalyst",
+        "Sentry",
+        "OAuth 2.0 Token Exchange",
+        "OIDC",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Candidate source for a local delegated-agent-identity or approval-boundary lens; keep broad identity product coverage upstream.",
+      "follow_up_notes": [
+        "During ingest, connect this to permission and audit-log pages rather than creating a local Diagrid product page."
+      ]
+    },
+    {
+      "id": "2026-07-24-dash0-ai-coding-observability",
+      "source_url": "https://www.dash0.com/docs/dash0/get-started/use-ai",
+      "source_title": "Use AI in Dash0",
+      "publisher": "Dash0",
+      "visible_date": "2026-07-24",
+      "date_basis": "Documentation page shows Last updated: July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "Dash0 documents AI observability capabilities that include an AI SRE loop, AI coding visibility for Claude Code and Cursor usage, links from sessions to pull requests, cycle-time measurement, cost tracking, standards checks, and MCP/OpenTelemetry integrations.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is that AI-assisted development needs telemetry that joins prompts, agent sessions, pull requests, cost, quality checks, and production signals instead of measuring adoption only at the user or license level.",
+      "named_entities": [
+        "Dash0",
+        "Agent0",
+        "Darkplane",
+        "Claude Code",
+        "Cursor",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "Dash0",
+        "Claude Code",
+        "Cursor",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "local_practice_implication": "Candidate evidence for agent-cost telemetry, session-to-PR traceability, and observability-backed verification loops.",
+      "follow_up_notes": [
+        "Check whether existing adoption telemetry and verification pages already cover session-to-PR measurement before adding a new leaf."
+      ]
+    },
+    {
+      "id": "2026-07-24-truefoundry-regulated-mcp-gateway",
+      "source_url": "https://www.truefoundry.com/blog/best-mcp-gateway-for-regulated-industries",
+      "source_title": "Best MCP Gateway for Regulated Industries in 2026",
+      "publisher": "TrueFoundry",
+      "visible_date": "2026-07-24",
+      "date_basis": "Article page shows Published: July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "TrueFoundry describes MCP gateways as centralized control planes for authentication, authorization, policy controls, audit logging, network security, device-level enforcement, SSO onboarding, model routing, and private deployment in regulated environments.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local implication is that MCP adoption in regulated software teams should be treated as governed access infrastructure, with device policy and audit evidence, not just a connector catalog.",
+      "named_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "SOC 2",
+        "HIPAA",
+        "GDPR",
+        "PCI DSS",
+        "ITAR",
+        "Claude Code",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "Claude Code",
+        "Cursor",
+        "LangGraph",
+        "CrewAI",
+        "AutoGen"
+      ],
+      "local_practice_implication": "Candidate source for governed MCP gateway selection criteria and local audit-control requirements.",
+      "follow_up_notes": [
+        "Route platform comparisons upstream; keep the local synthesis to control-plane requirements."
+      ]
+    },
+    {
+      "id": "2026-07-25-ontraport-mcp-server-practice-limits",
+      "source_url": "https://ontraport.com/support/My-account/mcp-server",
+      "source_title": "Getting started with Ontraport's MCP Server",
+      "publisher": "Ontraport",
+      "visible_date": "2026-07-25",
+      "date_basis": "Support page shows Last updated on: July 25, 2026.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Ontraport's MCP guidance warns that an agent has a bounded context window rather than full-database visibility, recommends direct APIs or workflow tools for large-scale complete operations, and documents credential-scoped MCP permissions and hidden API keys after setup.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete practice source for context-window failure modes, tool-vs-API selection, unattended workflow caution, credential-scoped permissions, and avoiding confident partial-data actions.",
+      "named_entities": [
+        "Ontraport",
+        "Model Context Protocol",
+        "MCP Server",
+        "Claude Code",
+        "n8n",
+        "Zapier",
+        "Make"
+      ],
+      "upstream_owned_entities": [
+        "Ontraport",
+        "Model Context Protocol",
+        "Claude Code",
+        "n8n",
+        "Zapier",
+        "Make"
+      ],
+      "local_practice_implication": "Candidate evidence for codebase/source ingest pages that distinguish bounded agent context from complete dataset operations.",
+      "follow_up_notes": [
+        "During ingest, avoid restating Ontraport product setup; extract the generic practice rule."
+      ]
+    },
+    {
+      "id": "2026-07-24-business-insider-agentic-ai-tokenomics",
+      "source_url": "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+      "source_title": "The hidden bill behind agentic AI - and where to run it to maintain control",
+      "publisher": "Business Insider BI Studios",
+      "visible_date": "2026-07-24T16:38:04.915Z",
+      "date_basis": "Article page shows 2026-07-24T16:38:04.915Z.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "A sponsored Business Insider/Dell article frames agentic AI cost as variable consumption driven by repeated context, planning, checking, and revision loops, and argues for workload placement decisions that combine local execution, policy rules, action logs, and cloud escalation for frontier models.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is cost-per-outcome governance: agent loops should be budgeted by task shape and context replay, with run-location decisions and logs designed before broad rollout.",
+      "named_entities": [
+        "Business Insider",
+        "Dell AI Factory",
+        "Nvidia",
+        "Dell Deskside Agentic AI",
+        "NemoClaw",
+        "OpenShell",
+        "Signal65",
+        "Futurum"
+      ],
+      "upstream_owned_entities": [
+        "Business Insider",
+        "Dell",
+        "Nvidia",
+        "Dell Deskside Agentic AI",
+        "NemoClaw",
+        "OpenShell"
+      ],
+      "local_practice_implication": "Candidate support for hybrid agent infrastructure economics and agent-cost telemetry pages; mark as sponsored source if ingested.",
+      "follow_up_notes": [
+        "Use cautiously because the page is sponsored by Dell AI Factory with Nvidia."
+      ]
+    },
+    {
+      "id": "2026-07-24-axios-frontier-ai-evaluation-windows",
+      "source_url": "https://www.axios.com/2026/07/24/ai-safety-security-testing-hugging-face",
+      "source_title": "AI safety researchers face shrinking testing windows, rising costs",
+      "publisher": "Axios",
+      "visible_date": "2026-07-24",
+      "date_basis": "News result and article URL show July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Axios reports that AI safety and security evaluators face short access windows, high benchmark costs, model test-gaming behavior, benchmark saturation, and calls for earlier testing during training rather than only pre-deployment.",
+      "why_it_matters_for_ai_assisted_development_practice": "For local eval practice, it reinforces that agent and model verification gates should use fresh, hard-to-game tasks, monitor sandbox behavior, and avoid treating late-stage pass/fail benchmarks as complete evidence.",
+      "named_entities": [
+        "Axios",
+        "Hugging Face",
+        "OpenAI",
+        "Metr",
+        "EqualAI",
+        "Cisco",
+        "EquiStamp",
+        "Apollo Research"
+      ],
+      "upstream_owned_entities": [
+        "Axios",
+        "Hugging Face",
+        "OpenAI",
+        "Metr",
+        "EqualAI",
+        "Cisco",
+        "EquiStamp",
+        "Apollo Research"
+      ],
+      "local_practice_implication": "Candidate evidence for evaluation-window design, sandbox monitoring, and anti-gaming checks in AI-assisted development verification.",
+      "follow_up_notes": [
+        "Route broad frontier-model safety coverage upstream; keep local synthesis to software-engineering eval governance."
+      ]
+    },
+    {
+      "id": "2026-07-24-anthropic-claude-opus-5-tool-and-fallback-practice",
+      "source_url": "https://www.anthropic.com/news/claude-opus-5",
+      "source_title": "Introducing Claude Opus 5",
+      "publisher": "Anthropic",
+      "visible_date": "2026-07-24",
+      "date_basis": "Article page shows Jul 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Anthropic released Claude Opus 5 and describes stronger coding and verification behavior plus beta API features for mid-conversation tool changes without invalidating prompt cache and automatic fallbacks for safety-classifier-blocked requests.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local signal is runtime tool-surface management: changing tools during a run affects cache, permission, and replay assumptions, while fallback routing needs auditability when safety classifiers change execution paths.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Opus 5",
+        "Claude Platform",
+        "Claude Code",
+        "prompt cache",
+        "automatic fallbacks"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Opus 5",
+        "Claude Platform",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Possible downstream lens for tool-list mutation, prompt-cache assumptions, verification claims, and fallback routing governance.",
+      "follow_up_notes": [
+        "Route broad model release facts upstream; keep only tool-change and fallback governance implications locally."
+      ]
+    },
+    {
+      "id": "2026-07-24-stepsecurity-ai-agent-supply-chain-risk",
+      "source_url": "https://www.stepsecurity.io/blog/2026-mid-year-update-on-pace-for-our-biggest-year-yet",
+      "source_title": "2026 Mid-Year Update: On Pace for Our Biggest Year Yet",
+      "publisher": "StepSecurity",
+      "visible_date": "2026-07-24",
+      "date_basis": "Related-post card for the same article shows July 24, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "StepSecurity says AI has increased both software output and attacker speed, with supply-chain attacks shifting toward developer machines, repositories, package registries, CI/CD, malicious IDE extensions, AI agent hijacking, package cooldown controls, device policy, workflow egress blocking, and fleet-wide incident checks.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is that AI-assisted development risk controls must cover agent workstations, package installation, IDE extensions, CI egress, pull requests, and default branches rather than only generated code review.",
+      "named_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "Dev Machine Guard",
+        "Secure Registry",
+        "GitHub Actions",
+        "PyPI",
+        "VS Code"
+      ],
+      "upstream_owned_entities": [
+        "StepSecurity",
+        "Harden-Runner",
+        "Dev Machine Guard",
+        "Secure Registry",
+        "GitHub Actions",
+        "PyPI",
+        "VS Code"
+      ],
+      "local_practice_implication": "Candidate source for package-install risk, agent workstation policy, and CI/CD egress governance pages.",
+      "follow_up_notes": [
+        "During ingest, separate vendor product claims from general software supply-chain practice."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+      "source_title": "Humans in the loop: how software teams are learning to trust AI",
+      "publisher": "TechRadar",
+      "visible_date": "2026-07-23",
+      "reason": "Visible date is outside this run's strict date-only include set and overlaps the previous collector window; keep as duplicate/boundary-only rather than re-collecting."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/openais-latest-service-wants-to-get-your-company-build-and-get-better-integrated-with-ai-agents",
+      "source_title": "OpenAI's latest service wants to get your company build and get better integrated with AI agents",
+      "publisher": "TechRadar",
+      "visible_date": "2026-07-23",
+      "reason": "Visible date is outside this run's strict date-only include set and the entity update is broad OpenAI product coverage; route upstream if needed."
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-openai-presence/",
+      "source_title": "Introducing OpenAI Presence",
+      "publisher": "OpenAI",
+      "visible_date": "2026-07-22",
+      "reason": "Older than the two-day cutoff for this run; also broad product coverage owned upstream."
+    },
+    {
+      "source_url": "https://www.itpro.com/hardware/amd-expands-its-software-stack-with-rocm-ai",
+      "source_title": "AMD expands its software stack with Rocm.ai",
+      "publisher": "IT Pro",
+      "visible_date": "2026-07-23",
+      "reason": "Visible date is outside this run's strict date-only include set and the main update is broad product/tool coverage owned upstream."
+    },
+    {
+      "source_url": "https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/",
+      "source_title": "Best AI Coding Agents in 2026, Ranked",
+      "publisher": "MightyBot",
+      "visible_date": "Updated July 24, 2026",
+      "reason": "Qualifying visible update date, but excluded as a broad comparative product ranking whose primary durable coverage belongs upstream."
+    },
+    {
+      "source_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "source_title": "System Prompts",
+      "publisher": "Anthropic Claude Platform Docs",
+      "visible_date": "2026-07-24",
+      "reason": "Qualifying date, but the page is primarily a model-specific system-prompt index; route upstream unless local ingest needs only a durable-instruction transparency note."
+    },
+    {
+      "source_url": "https://help.openai.com/am-et/articles/6825453-chatgpt-release-notes",
+      "source_title": "ChatGPT Release Notes",
+      "publisher": "OpenAI Help Center",
+      "visible_date": "No qualifying visible date found near the relevant Codex Remote text in the opened page.",
+      "reason": "Missing or ambiguous current visible date for the specific item; excluded even though the content is practice-relevant."
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+      "source_title": "ChatGPT Enterprise and Edu Release Notes",
+      "publisher": "OpenAI Help Center",
+      "visible_date": "Older workspace-agent release-note sections visible in the opened page.",
+      "reason": "No visible July 24 or July 25 date tied to the relevant workspace-agent sections; excluded as not qualifying for this run."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.01418",
+      "source_title": "Adoption and Impact of Command-Line AI Coding Agents",
+      "publisher": "arXiv",
+      "visible_date": "2026-07-01",
+      "reason": "Older than the two-day cutoff despite strong local adoption relevance."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2606.22721",
+      "source_title": "Habituation at the Gate: Rising Approval and Declining Scrutiny in Human Review of AI Agent Code",
+      "publisher": "arXiv",
+      "visible_date": "2026-06-21",
+      "reason": "Older than the two-day cutoff despite strong AI code review relevance."
+    }
+  ],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated by this collector.",
+    "No collector output was written under raw/processed.",
+    "Likely ingest themes: delegated agent identity, MCP gateway governance, context-window limits, agent session telemetry, token/cost routing, anti-gaming eval windows, tool-surface mutation, and AI-expanded supply-chain risk.",
+    "If the ingest workflow processes the sponsored Business Insider item, mark it as sponsored and avoid treating vendor savings claims as neutral evidence."
+  ]
+}
