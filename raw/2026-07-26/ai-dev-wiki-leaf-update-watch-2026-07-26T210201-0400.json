@@ -1,0 +1,349 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-26T21:02:01-04:00",
+  "cutoff_window": {
+    "start": "2026-07-19T21:02:01-04:00",
+    "end": "2026-07-26T21:02:01-04:00",
+    "rule": "Only public sources with visible publication or update dates inside the window qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 69,
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+  ],
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+    "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+    "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+    "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+    "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+    "https://cursor.com/en-US/changelog",
+    "https://glsrm.forum/agents",
+    "https://codex.danielvaughan.com/2026/03/28/evaluating-codex-agents-evals-longhorizon/",
+    "https://amplifying.ai/coding-agents",
+    "https://artificialanalysis.ai/methodology/coding-agents-benchmarking",
+    "https://www.apolloresearch.ai/monitoring/evaluating-llm-calibration-for-coding-agent-monitoring/",
+    "https://www.stet.sh/",
+    "https://www.kiplinger.com/business/small-business/ai-how-businesses-can-budget"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://www.techradar.com/pro/artificial-intelligence-agents-need-access-not-secrets",
+      "visible_date": "2026-07-20",
+      "factual_summary": "The article frames AI agents as first-class digital identities that need lifecycle visibility, human ownership, policy boundaries, audit trails, and brokered just-in-time access instead of long-lived secrets.",
+      "why_it_matters_for_leaf": "It reinforces local practice guidance that agent identity, delegated authority, ownership, and lifecycle controls should be infrastructure primitives rather than ad hoc prompt rules.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Ping Identity"
+      ],
+      "upstream_owned_entities": [
+        "Ping Identity"
+      ],
+      "follow_up_note": "Ingest should keep vendor background upstream and retain only the agent identity and access-governance operating implication locally."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "visible_date": "2026-07-21",
+      "factual_summary": "Reporting on Pillar research says repository-controlled content can steer coding agents to modify configuration that a trusted host component later executes outside the intended sandbox boundary; the article names Cursor, Codex, Gemini CLI, and Antigravity as affected platforms with several fixes already issued.",
+      "why_it_matters_for_leaf": "It strengthens the local security-repair gate rule that AI-generated changes to config, hooks, dependencies, and host-integrated files need stricter review than ordinary code edits.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "named_entities": [
+        "Pillar",
+        "Cursor",
+        "Codex CLI",
+        "Gemini CLI",
+        "Antigravity",
+        "CVE-2026-48124",
+        "GHSA-v4xv-rqh3-w9mc"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Codex CLI",
+        "Gemini CLI",
+        "Antigravity",
+        "Pillar"
+      ],
+      "follow_up_note": "Ingest should route product and vulnerability entity background upstream while updating local practice around host-boundary review gates if needed."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/the-agent-problem-nobody-budgeted-for",
+      "visible_date": "2026-07-21",
+      "factual_summary": "The article argues that agentic AI cost and governance risk comes from autonomous, continuous consumption across systems, so organizations need early visibility, infrastructure-level controls, and ownership of budgets and accountability.",
+      "why_it_matters_for_leaf": "It directly supports cost telemetry, outcome alignment, and workflow-before-model-selection leaves by tying agent deployment decisions to per-task value, infrastructure controls, and accountable ownership.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Flexera",
+        "EU AI Act",
+        "DORA"
+      ],
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "DORA",
+        "Flexera"
+      ],
+      "follow_up_note": "Ingest should focus on workflow-level cost ownership and avoid duplicating regulation background."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent",
+      "visible_date": "2026-07-24T16:38:04.915Z",
+      "factual_summary": "The sponsored article says token prices fell while enterprise AI spending rose, because agentic workflows consume far more tokens; it presents local agent execution on Dell workstations with policy logging as a cost and governance option, with commissioned analysis claiming up to 87 percent token-spend savings over two years versus public-cloud APIs.",
+      "why_it_matters_for_leaf": "It adds a current example for treating model and hosting choice as an operating-model and cost-telemetry decision rather than a simple model preference.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "Dell AI Factory with Nvidia",
+        "Dell Deskside Agentic AI",
+        "Nvidia",
+        "NemoClaw",
+        "OpenShell",
+        "Signal65",
+        "Futurum"
+      ],
+      "upstream_owned_entities": [
+        "Dell",
+        "Nvidia",
+        "NemoClaw",
+        "OpenShell"
+      ],
+      "follow_up_note": "Treat vendor and benchmark claims as provenance; local synthesis should use the source as an example of cost-governed workload placement."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+      "visible_date": "2026-07-23",
+      "factual_summary": "The article reports that mature software teams are reviewing AI-generated work at least as rigorously as teammate work, often applying stricter checks, using AI more in lower-risk build phases than release, and relying on human judgment for validation, risk, and business alignment.",
+      "why_it_matters_for_leaf": "It reinforces local product-judgment gates, representative workflow calibration, tier-specific conventions, and senior-led operating models that keep humans responsible for release-risk and outcome fit.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Gearset",
+        "DORA",
+        "MIT CSAIL",
+        "Gartner",
+        "Forrester"
+      ],
+      "upstream_owned_entities": [
+        "DORA",
+        "MIT CSAIL",
+        "Gartner",
+        "Forrester",
+        "Gearset"
+      ],
+      "follow_up_note": "Ingest should capture the local practice of risk-tiered AI use and equal-or-stricter review, not the broad AI adoption narrative."
+    },
+    {
+      "source_url": "https://cursor.com/en-US/changelog",
+      "visible_date": "2026-07-22",
+      "factual_summary": "Cursor Router routes Auto-mode requests to models by task type and complexity, exposes cost, balance, and intelligence optimization modes, and gives admins controls for defaults, restrictions, allowlists, blocklists, and model visibility.",
+      "why_it_matters_for_leaf": "It provides a current product example for thin routing, workflow-before-model-selection, and cost-aware model selection patterns where policy and task classification decide model use.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Cursor Router",
+        "Grok 4.5"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Cursor Router",
+        "Grok 4.5"
+      ],
+      "follow_up_note": "Route product specifics upstream; local leaf ingest can cite the routing-control implication for cost-aware agent setup."
+    },
+    {
+      "source_url": "https://glsrm.forum/agents",
+      "visible_date": "2026-07-22",
+      "factual_summary": "The GLSRM coding-agent benchmark snapshot reports 44 configurations across 7 harnesses and 40 models, ranking complete harness-plus-model setups on solve rate, dollars per completed task, tokens, and wall-clock time.",
+      "why_it_matters_for_leaf": "It supports representative workflow calibration by measuring full agent stacks and efficiency, not only model names or single outcome metrics.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "named_entities": [
+        "GLSRM",
+        "Codex",
+        "Claude Code",
+        "Cursor CLI"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude Code",
+        "Cursor CLI"
+      ],
+      "follow_up_note": "Ingest should keep individual leaderboard/entity coverage upstream and preserve the local calibration pattern."
+    },
+    {
+      "source_url": "https://codex.danielvaughan.com/2026/03/28/evaluating-codex-agents-evals-longhorizon/",
+      "visible_date": "Updated 2026-07-25",
+      "factual_summary": "The article describes agentic coding evaluation as trace plus artifacts plus checks, separating process, style, and efficiency goals; it recommends repeated runs, cost and latency thresholds, and additional checks for whether the agent touched the right files or followed the right process.",
+      "why_it_matters_for_leaf": "It maps directly to local eval-rubric, judge-boundary, representative calibration, and portable-runbook practices for evaluating agent changes beyond unit test success.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "named_entities": [
+        "Codex Knowledge Base",
+        "OpenAI",
+        "LongCLI-Bench",
+        "Codex CLI"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "LongCLI-Bench"
+      ],
+      "follow_up_note": "Use as a local-practice source only after checking whether the cited primary OpenAI eval guidance already owns the durable background."
+    },
+    {
+      "source_url": "https://amplifying.ai/coding-agents",
+      "visible_date": "Data as of 2026-07-24",
+      "factual_summary": "The Coding Agents Index preview reports public-repository signals for agent PRs, commits, merge outcomes, review patterns, autonomy, and source coverage limits, including a visible human-review split for merged agent work.",
+      "why_it_matters_for_leaf": "It supports local product-judgment and representative-calibration leaves by showing why teams need source-aware metrics for what agents actually ship and whether human review occurred.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "named_entities": [
+        "Amplifying",
+        "Coding Agents Index",
+        "Claude Code",
+        "OpenAI Codex",
+        "Jules"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Jules"
+      ],
+      "follow_up_note": "Ingest should treat this as public signal about review and merge patterns; entity and leaderboard details belong upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://artificialanalysis.ai/methodology/coding-agents-benchmarking",
+      "visible_date": "July 2026-current",
+      "reason": "Visible date is month-level only, so it is ambiguous for the strict 7-day window.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ]
+    },
+    {
+      "source_url": "https://www.apolloresearch.ai/monitoring/evaluating-llm-calibration-for-coding-agent-monitoring/",
+      "visible_date": "2026-07-07",
+      "reason": "Publication date is outside the 7-day window.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ]
+    },
+    {
+      "source_url": "https://www.stet.sh/",
+      "visible_date": "No visible publication or update date on opened page",
+      "reason": "No visible source date to prove the update is inside the window.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ]
+    },
+    {
+      "source_url": "https://www.kiplinger.com/business/small-business/ai-how-businesses-can-budget",
+      "visible_date": "Search result reported published 2 days ago; opened page did not expose an exact publication date in extracted text",
+      "reason": "Excluded conservatively because the opened page did not expose an exact visible date, despite the search result recency.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ]
+    },
+    {
+      "source_url": "https://www.theguardian.com/technology/ng-interactive/2026/jul/12/software-developers-engineers-ai",
+      "visible_date": "2026-07-12",
+      "reason": "URL and visible date indicate the article is outside the 7-day window.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ]
+    }
+  ],
+  "federation_routing": {
+    "upstream_ai_wiki_owns": [
+      "company profiles",
+      "model and product background",
+      "developer-tool entity pages",
+      "MCP server entity pages",
+      "broad regulation and benchmark entity coverage"
+    ],
+    "local_ai_dev_wiki_owns": [
+      "agent identity and delegated authority operating implications",
+      "cost telemetry and workload-placement practice",
+      "risk-tiered human review and release gating",
+      "representative workflow calibration and rubric boundaries",
+      "thin routing and source-reconciliation practices"
+    ]
+  },
+  "follow_up_notes": [
+    "Normal ingest should decide whether these raw findings update the selected local durable leaves or only reinforce existing guidance.",
+    "Do not move this raw artifact to raw/processed until durable-leaf synthesis and verifier gates pass.",
+    "Vendor, model, benchmark, and regulation entity background should route to upstream ai-wiki; local pages should keep downstream practice implications."
+  ]
+}
