@@ -27,6 +27,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) frames context memory as a lifecycle rather than a single store. Durable agent state should record what to remember, how facts were extracted, where they were stored, which retrieval scope applies, when to compact or consolidate, when to forget stale material, and which provenance supports reuse. Broad memory-product and benchmark coverage stays upstream; locally, the practice implication is to make lifecycle, provenance, and cost-aware compaction explicit in rehydration files.
 
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) adds repository-instruction and auto-memory boundary evidence. Rehydration should preserve the authority boundary between shared instructions, private memory, and source evidence.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -46,6 +48,8 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Use deterministic cue rules and audit logs when memory is injected from paths, symbols, events, semantic matches, or time windows.
 - Treat voluntary agent recall as weaker evidence than harness-delivered memory tied to a durable source.
 - Treat memory extraction, storage, retrieval scope, compaction, consolidation, forgetting, and provenance as separate lifecycle decisions when externalized state may be reused.
+- Separate shared repository instructions, private local preferences, and tool-specific memories before using rehydrated state as authority.
+- Treat transcripts, generated context files, and cross-tool continuity notes as provenance-bearing evidence whose currentness and authority need review.
 
 ## Authoritative Sources
 
@@ -61,6 +65,7 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -96,3 +101,4 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Maintained on 2026-07-12 with active-context rebuilding from durable decisions, artifacts, memory entries, and auditable storage plus stale-fact labeling.
 - Maintained on 2026-07-24 with cue-anchored memory delivery and audit-log guidance.
 - Maintained on 2026-07-25 with lifecycle-managed context memory, provenance, forgetting, and cost-aware compaction guidance.
+- Maintained on 2026-07-26 with repository-instruction, private preference, tool-memory, transcript, generated context, and cross-tool continuity boundaries.

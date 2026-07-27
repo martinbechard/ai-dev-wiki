@@ -49,6 +49,8 @@ The July 18-21 raw sources reinforce workflow selection as routing design. The [
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds regulated-industry scaling and benchmark-selection evidence. Workflow selection should choose task privilege, workspace isolation, validation loop, platform observability, and workflow-fit evals before selecting a coding model or accepting aggregate leaderboard scores.
 
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add agent-selection and routing-control evidence. Teams should select the agent surface from the intended supervision model and audit posture before comparing product popularity.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -84,6 +86,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Treat high-effort reasoning, subagent fan-out, setup prompts, reusable skills, and context-continuity layers as workflow choices that need cost, risk, and verification criteria before they become defaults.
 - Treat model availability inside a coding assistant as a rollout-control event: capture admin enablement, reasoning-effort controls, parallel tool-use behavior, pricing mode, and fallback route before standardizing the workflow.
 - Prefer workflow architecture, observability, control points, and task-state durability over marketing claims when deciding whether a process needs static automation, a bounded agent, or a long-running managed agent.
+- Compare IDE-supervised, terminal-loop, Git-controlled, cloud, voice-steered, asynchronous, and human-led surfaces by supervision channel and source-control evidence.
+- Review permission prompts, network exposure, generated instruction setup, model-router policy, cost transparency, and auditability before adopting open-source, commercial, or voice-steered tools.
 
 ## Authoritative Sources
 
@@ -115,6 +119,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -162,3 +168,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-14 with shared-capability, domain-owned MCP service-tool, and multi-repository workspace inputs to workflow selection.
 - Maintained on 2026-07-22 with high-effort routing, setup-prompt governance, reusable-skill, and context-continuity workflow inputs.
 - Maintained on 2026-07-22 with model rollout-control, reasoning-effort, parallel tool-use, architecture, and observability selection signals.
+- Maintained on 2026-07-26 with supervision-surface, permission, network-exposure, model-routing, voice-steering, and auditability selection criteria.

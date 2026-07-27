@@ -31,6 +31,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) adds auto-remediation and agentic autofix evidence. Security repair packets should explain the vulnerability, proposed target version or code change, build-preserving rationale, validation command, and remaining human decision. Draft pull requests are the right handoff shape when an agent explores files, proposes a fix, reruns a scanner, and iterates; they should not be treated as merged repairs until owner review and regression evidence pass.
 
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add development-workflow visibility and sandbox-escape evidence. Security repair gates should treat agent changes that can affect host execution or delivery paths as privileged changes.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -55,6 +57,8 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 - Require affected-version, exploitability, maintainer-confirmation, regression, fixed-version, and disclosure evidence when AI-assisted bug hunting reports a vulnerability.
 - Keep dependency auto-remediation non-automerge by default, with vulnerability context, target-version rationale, build-preserving notes, and validation evidence in the review packet.
 - Treat agentic autofix loops as draft-PR workflows that must preserve scanner rerun results and owner review before a repair is accepted.
+- Review agent-generated changes to configuration, hooks, dependency metadata, host-integrated files, generated tests, and deployment paths as sandbox-boundary or supply-chain-sensitive work.
+- Require centralized review evidence, provenance, re-verification, and rollback readiness before merging privileged security repair changes.
 
 ## Authoritative Sources
 
@@ -72,6 +76,8 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -106,3 +112,4 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 - Maintained on 2026-07-14 with active-loop AI security review, confidence, source localization, re-verification, and AI-detection policy evidence.
 - Maintained on 2026-07-16 with AI bug-hunting gates for affected versions, exploitability, owner confirmation, regression evidence, fixed versions, and disclosure handling.
 - Maintained on 2026-07-17 with non-automerge dependency remediation packets and draft-PR agentic autofix validation evidence.
+- Maintained on 2026-07-26 with workflow-security visibility, sandbox-boundary review, configuration, hook, dependency, generated-test, deployment, provenance, and rollback gates.

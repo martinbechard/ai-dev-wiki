@@ -11,7 +11,7 @@ tags: ["verification-and-evals"]
 
 Model and harness changes need calibration against representative work, not only generic benchmark scores. A workflow can depend on code review, tool calls, long-context behavior, retrieval, latency, or local runtime choices, so the calibration set should include those task shapes.
 
-The Dwarf Star source is useful local-harness evidence because it describes calibration prompts that include code reviews, math problems, agent tool calls, and long documents. It also describes comparing local model token probabilities against a reference service to measure drift after quantization. The local practice is to evaluate the behaviors the workflow actually needs before relying on a model, quantization setting, or local inference path.
+The [Dwarf Star source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md) is useful local-harness evidence because it describes calibration prompts that include code reviews, math problems, agent tool calls, and long documents. It also describes comparing local model token probabilities against a reference service to measure drift after quantization. The local practice is to evaluate the behaviors the workflow actually needs before relying on a model, quantization setting, or local inference path.
 
 Runtime telemetry supports calibration because it makes model and tool behavior inspectable. Useful signals include prompt size, prefill behavior, time to first token, decode speed, cache behavior, memory pressure, tool-call validity, and source attribution. Application harness ownership remains in [application harness patterns](../application-patterns/application-harness-patterns.md); this page owns the eval and calibration lens.
 
@@ -28,6 +28,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds two calibration signals. Public coding-agent benchmarks should be mapped to local workflow domains before adoption decisions, and context-engineering changes should be tested with mock workflows that include both needed context and distracting context.
 
 The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds frontier-evaluation-window evidence. Safety and security evals can be weakened by short access windows, high benchmark costs, benchmark saturation, and model behavior that adapts to known tests. Local calibration should therefore use fresh task variants, sandbox behavior monitoring, and earlier pre-deployment checks rather than treating late-stage public benchmark passes as complete evidence.
+
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add cost-aware benchmark and public repository signal evidence. Calibration should compare complete agent stacks and local task fit instead of promoting aggregate solve rate alone.
 
 ## Practice Boundaries
 
@@ -47,6 +49,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Map public benchmark domains to local repository, frontend, office, security, review, and approval workflows before using them as evidence.
 - Include distractor sources in context-selection evals so retrieval, memory, and connector policies prove exclusion as well as recall.
 - Use fresh task variants, sandbox behavior monitoring, benchmark-anti-gaming checks, and earlier pre-deployment calibration when public benchmark windows are short or saturated.
+- Compare task realism, repository exploration, contamination resistance, verifier determinism, and human-review evidence when benchmark results influence local calibration.
+- Compare dollars per completed task, tokens, wall-clock time, and workflow fit before adopting benchmark rankings or community telemetry as operating defaults.
 
 ## Authoritative Sources
 
@@ -62,6 +66,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -95,3 +101,4 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Maintained on 2026-07-14 with end-to-end delivery, cleanroom reconstruction, production-like task, and constrained-verification calibration inputs.
 - Maintained on 2026-07-24 with benchmark-domain mapping and context-distractor calibration guidance.
 - Maintained on 2026-07-25 with evaluation-window, benchmark-saturation, anti-gaming, sandbox-monitoring, and pre-deployment calibration guidance.
+- Maintained on 2026-07-26 with whole-agent-stack efficiency, contamination-resistant benchmark, public-repository review, and cost-per-completed-task calibration guidance.

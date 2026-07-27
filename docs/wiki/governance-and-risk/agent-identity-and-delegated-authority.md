@@ -35,6 +35,8 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 
 The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds on-behalf-of delegation evidence. When an agent crosses a tool, MCP server, API, or agent-to-agent boundary, the authorization record should keep both the human subject and machine actor visible through short-lived scoped credentials, rather than collapsing attribution into a generic service account. Broad OAuth, OIDC, Diagrid, Catalyst, Sentry, and MCP ecosystem coverage stays upstream; locally, the rule is to preserve requester identity, acting workload identity, scope, and audit evidence across delegated hops.
 
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add subagent-auditability and first-class digital identity evidence. Multi-agent delegation records should let debugging and compliance review reconstruct who delegated what.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -58,11 +60,15 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Preserve delegation-chain evidence across requester, agent identity, tool server, downstream system, authorization decision, and confused-deputy controls.
 - Prefer discoverable, owner-assigned, policy-bound agent identities with just-in-time privileged access over long-lived secrets or inherited human accounts.
 - Preserve both the human subject and machine actor in delegated credentials or authorization records when an agent acts on behalf of a person across MCP, API, or agent-to-agent hops.
+- Preserve delegation instructions, task decomposition, delegating principal, receiving agent, payload visibility boundaries, and policy decisions when subagents act under delegated authority.
+- Record access grants and review outcomes for asynchronous or multi-agent work so delegated authority can be reconstructed after the run.
 
 ## Authoritative Sources
 
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -112,3 +118,4 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Maintained on 2026-07-16 with delegation-chain, first-class agent identity, authorization-decision, and confused-deputy evidence.
 - Maintained on 2026-07-22 with owner-assigned agent identities, just-in-time privileged access, and incident-response revocation evidence.
 - Maintained on 2026-07-25 with on-behalf-of delegation, dual human-and-agent attribution, short-lived scoped credentials, and cross-tool audit evidence.
+- Maintained on 2026-07-26 with subagent delegation auditability, task-decomposition evidence, payload visibility boundaries, access grants, and review outcomes.

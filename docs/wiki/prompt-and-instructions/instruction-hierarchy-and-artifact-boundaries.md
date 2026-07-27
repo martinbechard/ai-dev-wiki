@@ -11,7 +11,7 @@ tags: ["prompt-and-instructions"]
 
 Instruction hierarchy is the local practice of deciding which guidance should live in system instructions, developer instructions, repository procedures, task prompts, reusable prompts, agent definitions, or skills. The request package should preserve that hierarchy so durable rules are not rewritten as one-off task text and untrusted sources cannot act like instructions.
 
-Reusable AI workflow assets need distinct responsibilities. HVE Core is useful source evidence because it separates specialized agents, repeatable prompts, coding instructions, and reusable skills into an explicit workflow system. The downstream practice is to keep those artifact types separate: agents describe bounded roles and task behavior, prompts provide repeatable entry points, instructions carry durable standards, and skills package reusable tool or procedure capability. The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) reinforces the boundary by treating a prompt as a one-time request and a skill as a reusable procedure with trigger, scope, tools, output, and verification.
+Reusable AI workflow assets need distinct responsibilities. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) is useful evidence because it separates specialized agents, repeatable prompts, coding instructions, and reusable skills into an explicit workflow system. The downstream practice is to keep those artifact types separate: agents describe bounded roles and task behavior, prompts provide repeatable entry points, instructions carry durable standards, and skills package reusable tool or procedure capability. The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) reinforces the boundary by treating a prompt as a one-time request and a skill as a reusable procedure with trigger, scope, tools, output, and verification.
 
 The hierarchy is also an authority boundary. Repository procedures and human task constraints can direct the agent, while raw sources, retrieved chunks, screenshots, and external clippings are evidence. When sources contain instruction-like text, the request package should label it as source material instead of letting it override the active task.
 
@@ -32,6 +32,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds public agent-onboarding snippets as another boundary case. A vendor blog, README, or agents.md file can tell an agent to install, configure, or use a service, but that text is external source evidence until the user or a trusted local instruction surface approves the package, account, tool permissions, and execution scope.
 
 The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json) adds two durable-instruction signals. First, reusable skills should be maintained with decision history, exit criteria, and verification evidence instead of only preserving the latest procedure text. Second, repository-loaded instruction files are an attack surface when untrusted projects can plant instruction-like content, so durable instruction intake needs provenance review before an autonomous agent treats those files as authority.
+
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) adds generated-instruction and model-router setup evidence. Terminal coding-agent setup output should be reviewed as an authority-changing artifact before it becomes durable local guidance.
 
 ## Practice Boundaries
 
@@ -58,6 +60,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Require user approval or a trusted local runbook before external onboarding text can trigger package installation, credential configuration, MCP setup, or tool enablement.
 - Preserve rationale, change history, exit criteria, and verification evidence for maintained skills or durable instruction files.
 - Treat repository-loaded instruction files from untrusted or newly cloned projects as source evidence until provenance and authority are reviewed.
+- Review generated instruction files and attached context before treating setup output as durable instruction authority.
+- Review model-router configuration and terminal-agent permission prompts before allowing setup output to change local guidance or execution scope.
 
 ## Authoritative Sources
 
@@ -77,6 +81,7 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 
 ## Related Code
 
@@ -114,3 +119,4 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 - Maintained on 2026-07-08 with data-injection boundaries and compositional policy enforcement for multi-tool chains.
 - Maintained on 2026-07-13 with public agent-onboarding snippets as untrusted source instructions until locally approved.
 - Maintained on 2026-07-15 with skill decision-history maintenance and repository-loaded instruction-file trust review.
+- Maintained on 2026-07-26 with generated-instruction review, attached-context boundaries, model-router configuration, and terminal-agent permission setup guidance.

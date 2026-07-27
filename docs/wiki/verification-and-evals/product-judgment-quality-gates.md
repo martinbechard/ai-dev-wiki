@@ -19,6 +19,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds productivity-outcome and agent-eval-pipeline signals. Product judgment should measure business or user outcomes, task completion, quality regressions, cost, latency, and reviewer burden together; agentic eval pipelines should connect those outcome measures to deterministic checks, LLM judges, human review, and trace evidence instead of accepting a single model score as product quality.
 
+The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) adds human-in-the-loop trust evidence. Product judgment gates should keep human review proportional to the risk of accepting AI-generated work.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -32,6 +34,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Treat screenshots and rendered previews as partial evidence; they do not replace user-flow acceptance for interactive work.
 - Tie product acceptance to outcome, quality, cost, latency, and reviewer-burden evidence rather than only model score or generated artifact presence.
 - Connect agentic eval pipelines to traces, deterministic checks, LLM judges, and human product review before using them as release gates.
+- Apply equal-or-stricter human review for AI-generated product work when release risk, user impact, compliance, or business alignment is material.
 
 ## Authoritative Sources
 
@@ -42,6 +45,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -71,3 +75,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.
 - Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.
 - Maintained on 2026-07-16 with productivity-outcome, reviewer-burden, trace-linked eval-pipeline, and multi-signal product quality gates.
+- Maintained on 2026-07-26 with equal-or-stricter human review guidance for AI-generated product work under release, user, compliance, or business-alignment risk.

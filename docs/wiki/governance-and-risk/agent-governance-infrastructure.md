@@ -59,6 +59,8 @@ The July 18-21 raw sources add runtime-governance and agent-readiness controls. 
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add platform-governance and compromised-agent evidence. Agent infrastructure should make privileges task-scoped and identity-bound, keep human owners discoverable, provide policy and audit trails, support just-in-time access, and monitor enterprise-layer behavior when agents can reach identity, application, network, content, package, or CI systems.
 
+The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add workflow-security and supervision-channel evidence. Governance infrastructure should keep autonomous coding work visible across its security and supervision path.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -108,6 +110,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintain current permission inventories, revocation paths, connected-service discovery, dependency visibility, tamper-evident audit logs, policy standards, and agent-traffic monitoring as control-plane infrastructure.
 - Require agent readiness evidence for isolation, authorization boundaries, command safety, network egress, workflow visibility, provenance, rollback, incident response, explainability, and kill-switch behavior before production-like autonomy.
 - Treat governed-agent gateways and trace issue monitors as runtime control planes when they enforce cost, permission, data-boundary, policy, and failure-category evidence across model, tool, MCP, and agent-to-agent hops.
+- Preserve centralized visibility across generation, test, review, merge, and deployment before scaling autonomous coding volume.
+- Record voice steering, usage monitors, model-router decisions, refusal paths, and subagent handoffs when they affect supervision or audit evidence.
 
 ## Authoritative Sources
 
@@ -151,6 +155,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 19 leaf update watch source](../../../raw/processed/2026-07-19/ai-dev-wiki-leaf-update-watch-2026-07-19T210231-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
+- [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -205,3 +211,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-16 with delegation-chain evidence, off-host authorization, agent identity, governance proof, and private-agent data-locality boundaries.
 - Maintained on 2026-07-17 with current permission inventories, revocation paths, centralized discovery, audit integrity, dependency visibility, and agent-traffic monitoring.
 - Maintained on 2026-07-22 with readiness checklists, policy-as-code, gateway-level runtime controls, trace issue detection, incident readiness, and kill-switch evidence.
+- Maintained on 2026-07-26 with workflow-security visibility, supervision-channel records, usage monitors, model-router decisions, refusal paths, and subagent handoff audit evidence.

@@ -11,7 +11,7 @@ tags: ["verification-and-evals"]
 
 AI-assisted code review evals measure whether a model or harness can inspect changes against the repository's standards, source evidence, and risk profile. They should test the review task itself, not only whether the model can produce plausible comments.
 
-Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The AI-assisted coding deck treats review as part of the controlled coding loop, and the Dwarf Star source is evidence that code review prompts can be part of representative model calibration.
+Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats review as part of the controlled coding loop, and the [Dwarf Star source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md) is evidence that code review prompts can be part of representative model calibration.
 
 This page owns review-specific eval practice. General grader selection lives in [judge grader boundaries](judge-grader-boundaries.md), and delivery acceptance gates live in [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md).
 
@@ -36,6 +36,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 The July 18-21 raw sources add task-shape, review-history, disagreement, and AI-code gate signals. The [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json) argues that benchmark reports should expose task shape beyond aggregate Pass@1, and the [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) adds full review-history visibility, rate-limit impact metrics, reviewer disagreement as a stop condition, and AI-code verification gates. Review evals should score when reviewers fail to converge, when review wait time or rate limits change process quality, and when AI-generated code needs a gate that prioritizes security and architecture risks over style-only findings.
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds review-eval evidence for splitting human alignment review from deterministic standards checking. Code-review rubrics should score captured intent, acceptance criteria, invariant coverage, verifier verdicts, provenance, exploitability prioritization, remediation evidence, and whether AI-authored code is treated as untrusted until policy gates pass.
+
+The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) adds trace-plus-artifact eval and public review-signal evidence. Code review evals should measure the agent's process and review evidence, not only generated-review text.
 
 ## Practice Boundaries
 
@@ -64,6 +66,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Include task shape, review-history state, review wait time, rate-limit effects, and reviewer convergence or disagreement when comparing review agents.
 - Treat persistent reviewer disagreement on a central risk as a stop condition that needs human review or better evidence, not as a success after repeated rounds.
 - Evaluate AI-code gates by security, architecture, dependency, and quality risk priority instead of rewarding style-only volume.
+- Score right-file selection, process adherence, trace artifacts, and repeated-run stability when evaluating coding-agent review workflows.
+- Score cost thresholds, latency thresholds, and human-review presence as separate review-eval fields when they affect acceptance.
 
 ## Authoritative Sources
 
@@ -86,6 +90,7 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
+- [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 
 ## Related Code
 
@@ -123,3 +128,4 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 - Maintained on 2026-07-11 with real-codebase, language-specific, contamination-aware, and validated-fix review eval dimensions.
 - Maintained on 2026-07-16 with model-routing, review-depth, finding-category, benchmark-provenance, and validated-fix eval fields.
 - Maintained on 2026-07-22 with task-shape reporting, review-history state, rate-limit impact, reviewer-disagreement stop conditions, and AI-code gate priorities.
+- Maintained on 2026-07-26 with right-file, process-adherence, trace-artifact, repeated-run, cost, latency, and human-review eval criteria.
