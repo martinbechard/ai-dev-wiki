@@ -1,0 +1,499 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": {
+    "utc": "2026-07-27T00:30:54Z",
+    "local": "2026-07-26T20:30:54-0400",
+    "timezone": "America/Toronto"
+  },
+  "cutoff_window": {
+    "start_utc": "2026-07-25T00:30:54Z",
+    "end_utc": "2026-07-27T00:30:54Z",
+    "visible_date_rule": "Included only public sources with visible publication or update dates on 2026-07-25 or 2026-07-26, or exact timestamps inside the cutoff window. Excluded missing, ambiguous, future-dated, older, duplicate, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, source workflows, verification, governance, and adoption patterns.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad AI ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_behavior": "Recorded upstream-owned entities for routing and kept findings focused on downstream practice implications. No docs/wiki pages were updated and no collector output was saved under raw/processed."
+  },
+  "items": [
+    {
+      "id": "2026-07-25-tokoscope-deepswe-benchmark-realism",
+      "source_url": "https://tokoscope.com/articles/deepswe",
+      "source_title": "DeepSWE: The Coding Agent Benchmark That Fixes SWE-bench's Blind Spots",
+      "publisher": "Tokoscope",
+      "visible_date": "2026-07-25",
+      "date_basis": "Article page shows 2026-07-25.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Tokoscope describes DeepSWE as a coding-agent benchmark built from original long-horizon tasks across active open-source repositories, using behavior-focused prompts and program-based verifiers rather than issue-derived tasks or LLM-as-judge scoring.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is that software-engineering evals should resist contamination and over-specified prompts, require repository exploration, and attach cost-per-task evidence to pass rates.",
+      "named_entities": [
+        "Tokoscope",
+        "DeepSWE",
+        "Datacurve AI",
+        "SWE-bench",
+        "HumanEval",
+        "GPT-5.5",
+        "Claude Opus 4.8",
+        "Claude Sonnet 4.6",
+        "Kimi K2.7 Code",
+        "Gemini 3.1 Pro"
+      ],
+      "upstream_owned_entities": [
+        "Tokoscope",
+        "Datacurve AI",
+        "DeepSWE",
+        "SWE-bench",
+        "HumanEval",
+        "GPT-5.5",
+        "Claude Opus",
+        "Claude Sonnet",
+        "Kimi",
+        "Gemini"
+      ],
+      "local_practice_implication": "Candidate evidence for trajectory-level evaluation, benchmark realism, contamination controls, and cost-aware agent eval reporting.",
+      "follow_up_notes": [
+        "During ingest, route model leaderboard details upstream and keep the local synthesis to benchmark design practice."
+      ]
+    },
+    {
+      "id": "2026-07-25-omidsaffari-open-source-agent-selection",
+      "source_url": "https://omidsaffari.com/blog/open-source-ai-coding-agents-guide",
+      "source_title": "How to Pick an Open-Source AI Coding Agent: 9 Tools, Four Different Jobs",
+      "publisher": "Omid Saffari",
+      "visible_date": "2026-07-25",
+      "date_basis": "Article page shows Saturday, July 25, 2026.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "The guide compares open-source coding agents by workflow surface, license, privacy, setup, costs, permission policy, and failure mode, and frames selection around IDE supervision, terminal loops, Git-controlled edits, and autonomous queues.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice-level selection frame: choose the agent surface by supervision model, repository-context exposure, queue ownership, approval behavior, and Git evidence rather than by product popularity alone.",
+      "named_entities": [
+        "OpenCode",
+        "Cline",
+        "Aider",
+        "OpenHands",
+        "Gemini CLI",
+        "Continue",
+        "goose",
+        "mini-SWE-agent",
+        "Qwen Code",
+        "Claude Sonnet 5"
+      ],
+      "upstream_owned_entities": [
+        "OpenCode",
+        "Cline",
+        "Aider",
+        "OpenHands",
+        "Gemini CLI",
+        "Continue",
+        "goose",
+        "mini-SWE-agent",
+        "Qwen Code",
+        "Claude Sonnet"
+      ],
+      "local_practice_implication": "Candidate source for operating-model guidance on tool selection by supervision surface, permissions, network exposure, and source-control evidence.",
+      "follow_up_notes": [
+        "Avoid creating local product comparison leaves; extract the reusable selection criteria."
+      ]
+    },
+    {
+      "id": "2026-07-25-codex-knowledge-base-subagent-auditability",
+      "source_url": "https://codex.danielvaughan.com/2026/07/25/codex-cli-multi-agent-v2-encrypted-delegation-auditability-eu-ai-act-compliance/",
+      "source_title": "The Multi-Agent Auditability Gap: Why Codex CLI's Encrypted Sub-Agent Delegation Is a Compliance Liability",
+      "publisher": "Codex Knowledge Base",
+      "visible_date": "2026-07-25",
+      "date_basis": "Article page shows July 25, 2026 and Updated July 25, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The article argues that encrypted sub-agent delegation payloads leave local logs with evidence that a delegation occurred but not the delegated instruction text, reducing inspectability for debugging, compliance, and audit trails.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multi-agent workflow records need enough task-decomposition evidence to reconstruct who delegated what, to whom, under which authority, and with which review outcome.",
+      "named_entities": [
+        "Codex CLI",
+        "MultiAgentV2",
+        "GPT-5.6 Sol",
+        "GPT-5.6 Terra",
+        "EU AI Act",
+        "Annex III"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "GPT-5.6 Terra",
+        "EU AI Act"
+      ],
+      "local_practice_implication": "Candidate evidence for subagent audit logs, delegation-chain records, and approval evidence requirements.",
+      "follow_up_notes": [
+        "Treat the article as a downstream governance lens; verify primary product and legal details before durable claims."
+      ]
+    },
+    {
+      "id": "2026-07-26-clawdboard-cost-telemetry",
+      "source_url": "https://clawdboard.ai/stats/tools",
+      "source_title": "AI Coding Tool Comparison",
+      "publisher": "clawdboard",
+      "visible_date": "2026-07-26T22:58:00Z",
+      "date_basis": "Stats page shows Last updated: July 26, 2026 at 10:58 PM UTC and says data refreshes hourly.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "The stats page reports opt-in developer usage logs across eight AI coding tools, including estimated aggregate spend, token volume, per-tool cost share, developer counts, and active days.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent adoption needs cost and token telemetry at the tool and workflow level so teams can detect outlier spend, compare task surfaces, and budget agent use by outcome rather than license count.",
+      "named_entities": [
+        "clawdboard",
+        "Codex CLI",
+        "Claude Code",
+        "OpenCode",
+        "Claude Code Desktop",
+        "GitHub Copilot CLI",
+        "OpenCode Go",
+        "Cursor",
+        "Gemini CLI"
+      ],
+      "upstream_owned_entities": [
+        "clawdboard",
+        "Codex CLI",
+        "Claude Code",
+        "OpenCode",
+        "GitHub Copilot CLI",
+        "Cursor",
+        "Gemini CLI"
+      ],
+      "local_practice_implication": "Candidate source for agent cost telemetry, usage ledgers, and per-tool operating model dashboards.",
+      "follow_up_notes": [
+        "Opt-in community telemetry may be skewed; use it as a practice signal, not a representative market metric."
+      ]
+    },
+    {
+      "id": "2026-07-26-cyber-defense-ai-dev-workflow-security",
+      "source_url": "https://www.cyberdefensemagazine.com/ai-moved-into-the-dev-workflow-security-didnt/",
+      "source_title": "AI Moved into the Dev Workflow. Security Didn't.",
+      "publisher": "Cyber Defense Magazine",
+      "visible_date": "2026-07-26",
+      "date_basis": "Article page shows July 26, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The article frames AI coding systems as increasingly autonomous development agents that can make architecture decisions, generate tests, and ship changes, creating visibility gaps for security teams when work happens outside centralized review processes.",
+      "why_it_matters_for_ai_assisted_development_practice": "Security governance should follow the agent workflow itself: generation, testing, review, merge, and deployment records need policy checks and visibility before AI-authored volume scales.",
+      "named_entities": [
+        "Cyber Defense Magazine",
+        "Appknox",
+        "IBM"
+      ],
+      "upstream_owned_entities": [
+        "Cyber Defense Magazine",
+        "Appknox",
+        "IBM"
+      ],
+      "local_practice_implication": "Candidate support for AI-assisted security review gates, traceability, and centralized review visibility.",
+      "follow_up_notes": [
+        "During ingest, separate general security-market framing from concrete local workflow controls."
+      ]
+    },
+    {
+      "id": "2026-07-26-neodrop-voice-supervision-and-refusal",
+      "source_url": "https://neodrop.ai/post/13NjXa9u7Gq",
+      "source_title": "AI Product Updates, July 26: Athena, Voice-Controlled Coding Agents, and More",
+      "publisher": "Neodrop",
+      "visible_date": "2026-07-26",
+      "date_basis": "Page shows 2026-07-26.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "The roundup notes Openbase voice dispatch, steering, and approval for asynchronous coding agents, CodexBar Lite as a macOS monitor for Codex CLI usage, and a hackathon pattern that makes disagreement and refusal part of an agent architecture.",
+      "why_it_matters_for_ai_assisted_development_practice": "Asynchronous coding-agent supervision is moving beyond chat prompts into voice steering, usage monitors, explicit refusal paths, and multi-agent council patterns that need auditable decision records.",
+      "named_entities": [
+        "Neodrop",
+        "Openbase",
+        "CodexBar Lite",
+        "Codex CLI",
+        "DELPHAI",
+        "Microsoft Foundry",
+        "Product Hunt"
+      ],
+      "upstream_owned_entities": [
+        "Neodrop",
+        "Openbase",
+        "CodexBar Lite",
+        "Codex CLI",
+        "Microsoft Foundry",
+        "Product Hunt"
+      ],
+      "local_practice_implication": "Candidate evidence for streaming progress, supervision channels, refusal-as-signal, and lightweight usage monitors.",
+      "follow_up_notes": [
+        "Treat product launches as upstream-owned; local durable content should focus on supervision and refusal workflow patterns."
+      ]
+    },
+    {
+      "id": "2026-07-26-di-tang-agent-safety-system-level",
+      "source_url": "https://tdteach.github.io/paper-news/2026-07-26/",
+      "source_title": "Agent safety moves upstream.",
+      "publisher": "Di Tang",
+      "visible_date": "2026-07-26",
+      "date_basis": "Page header shows July 26, 2026 Research Brief.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "The research brief identifies a shift from model-only evaluation toward system-level deployment-aware testing across runtimes, retrieval, memory, tool workflows, human review, runtime constraints, cost, latency, abstention, and calibration.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local verification should evaluate the full coding-agent system: retrieval routing, memory behavior, tool authorization, runtime containment, human escalation, and recoverability, not only final answer correctness.",
+      "named_entities": [
+        "Di Tang",
+        "(A)iSpy",
+        "FinSAgent",
+        "RAG"
+      ],
+      "upstream_owned_entities": [
+        "Di Tang",
+        "(A)iSpy",
+        "FinSAgent",
+        "RAG"
+      ],
+      "local_practice_implication": "Candidate support for deployment-aware evals, gated autonomy, retrieval-risk reviews, and runtime/tool orchestration tests.",
+      "follow_up_notes": [
+        "Route broad paper coverage upstream; extract local practice guidance on harness design and retrieval/tool failure modes."
+      ]
+    },
+    {
+      "id": "2026-07-25-memoryplugin-claude-code-memory-boundaries",
+      "source_url": "https://blog.memoryplugin.com/claude-code-memory/",
+      "source_title": "Claude Code Memory, Explained: CLAUDE.md, Auto Memory, and What They Miss",
+      "publisher": "MemoryPlugin Blog",
+      "visible_date": "2026-07-25",
+      "date_basis": "Article page shows July 25, 2026.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The article distinguishes repository instruction files from auto memory, describes local and project-scoped memory boundaries, and notes that memories and transcripts can become isolated by tool, machine, and repository.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable agent instructions and memory need explicit scope boundaries: team-shared repo conventions, private local preferences, cross-tool continuity, and searchable decision history should not be conflated.",
+      "named_entities": [
+        "MemoryPlugin",
+        "Claude Code",
+        "CLAUDE.md",
+        "AGENTS.md",
+        "Codex",
+        "Cursor",
+        "Copilot",
+        "Gemini CLI"
+      ],
+      "upstream_owned_entities": [
+        "MemoryPlugin",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Copilot",
+        "Gemini CLI"
+      ],
+      "local_practice_implication": "Candidate evidence for context-memory lifecycle, durable instruction scope, and private-vs-shared memory governance.",
+      "follow_up_notes": [
+        "Avoid product-specific memory claims unless primary docs confirm them; local synthesis should cover scope separation and governance."
+      ]
+    },
+    {
+      "id": "2026-07-25-techpriyo-opencode-openrouter-routing",
+      "source_url": "https://www.techpriyo.com/how-to-use-opencode-cli-with-openrouter/",
+      "source_title": "How to Use OpenCode CLI with OpenRouter",
+      "publisher": "TechPriyo.Com",
+      "visible_date": "2026-07-25",
+      "date_basis": "Article page shows July 25, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "The tutorial describes initializing a terminal coding agent so it creates an AGENTS.md or OpenCode.md context file, attaching files into prompts, granting bash/file permissions, and using a model-router service for provider failover.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is that provider failover and model routing should be governed like part of the agent runtime, with permission prompts, generated instruction files, and context attachment treated as auditable setup actions.",
+      "named_entities": [
+        "TechPriyo.Com",
+        "OpenCode",
+        "OpenRouter",
+        "AGENTS.md",
+        "OpenCode.md",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "OpenCode",
+        "OpenRouter",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "local_practice_implication": "Candidate source for setup-prompt governance, generated instruction review, model-router failover controls, and terminal-agent permission prompts.",
+      "follow_up_notes": [
+        "Use cautiously as a tutorial source; verify tool specifics against primary docs before durable product claims."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/approvals",
+      "source_title": "Manage approvals and permissions",
+      "publisher": "Visual Studio Code",
+      "visible_date": "last week",
+      "reason": "Excluded because the visible date is relative and ambiguous even though the page was crawled within the last two days.",
+      "potential_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "routing_note": "The approval, URL-review, terminal auto-approval, and sandboxing practices are locally relevant if a future run finds a precise visible update date."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/security",
+      "source_title": "Security",
+      "publisher": "Visual Studio Code",
+      "visible_date": "last week",
+      "reason": "Excluded because the visible date is relative and ambiguous.",
+      "potential_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "routing_note": "Potential future source for hooks, audit trails, MCP approvals, terminal command policy, and sandboxing once a precise update date is visible."
+    },
+    {
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "source_title": "GitHub Copilot changelog label",
+      "publisher": "GitHub Changelog",
+      "visible_date": "2026-07-24 and 2026-07-23 entries",
+      "reason": "Excluded because July 24 entries are boundary-day dates without visible times for the strict 48-hour window and July 23 entries are outside the window.",
+      "potential_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "routing_note": "Specific product and MCP specification coverage is upstream-owned; local ingest would keep only agent automation control or workflow-governance implications."
+    },
+    {
+      "source_url": "https://aidailycheck.com/learn/claude-md-and-agents-md",
+      "source_title": "CLAUDE.md and AGENTS.md: How to Steer AI Agents",
+      "publisher": "AI Daily Check",
+      "visible_date": "2026-07-22",
+      "reason": "Excluded because the opened page shows Last updated: July 22, 2026, despite the search result claiming a more recent date.",
+      "potential_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture"
+      ],
+      "routing_note": "The source is locally relevant to durable instruction practice but not eligible for this run's date window."
+    },
+    {
+      "source_url": "https://learn.scale.com/public/blogs/the-state-of-ai-in-the-software-development-lifecycle",
+      "source_title": "The State of AI in the Software Development Lifecycle",
+      "publisher": "Scale Events",
+      "visible_date": "2026-07-20",
+      "reason": "Excluded because the opened page shows July 20, 2026, despite the search result claiming July 26.",
+      "potential_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "routing_note": "Older source about SDLC placement and testing limits; not eligible for this run."
+    },
+    {
+      "source_url": "https://t.co/EpP4KZ6VjG",
+      "source_title": "Developer Weekly Briefing - July 25, 2026",
+      "publisher": "Coder Legion",
+      "visible_date": "2026-07-25 with relative time text",
+      "reason": "Excluded because the result is a t.co short URL and the article is a roundup with several serious incident claims that need primary-source verification before local routing.",
+      "potential_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "routing_note": "If primary sources are found, route broad entity or incident background upstream and keep local practice to credential exposure, package-install gates, and agent identity controls."
+    },
+    {
+      "source_url": "https://kd-agentic.hashnode.dev/ai-daily-digest-july-26-2026-openai-presence-poolside-laguna-open-source-agent-security-incident",
+      "source_title": "AI Daily Digest - July 26, 2026: OpenAI Presence, Poolside Laguna Open-Source, Agent Security Incident",
+      "publisher": "Hashnode",
+      "visible_date": "2026-07-26 and Updated July 25, 2026",
+      "reason": "Excluded because it is a secondary roundup with high-impact security and product claims that reference primary sources not verified in this run.",
+      "potential_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "routing_note": "Potential local practice topics are audit logs, bounded sessions, and confirmation gates; broad product and incident coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://lanceum.com/news/ai-coding-agents-sandbox-escapes",
+      "source_title": "Sandbox escapes disclosed in Cursor, Codex, Gemini CLI and Antigravity",
+      "publisher": "Lanceum",
+      "visible_date": "2026-07-21",
+      "reason": "Excluded because the article date is July 21, 2026, outside the cutoff window, even though the page header included July 26 site text.",
+      "potential_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "routing_note": "Older but relevant to sandbox escape practice; route broad product vulnerability coverage upstream."
+    },
+    {
+      "source_url": "https://appamass.com/en/blog",
+      "source_title": "Blog: Agentic Coding, React Native & Expo Apps",
+      "publisher": "appamass",
+      "visible_date": "mixed dates",
+      "reason": "Excluded because the opened blog index did not expose the July 25-26 posts shown in the search snippet and only returned older visible entries.",
+      "potential_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "routing_note": "Potential source for AI code review merge gates if a stable per-post URL with a visible eligible date is available."
+    },
+    {
+      "source_url": "https://aitoolsrecap.com/Blog/best-ai-coding-agents-2026",
+      "source_title": "Best AI Coding Agents in 2026: 9 Tools Ranked by Real-World Performance and Use Case",
+      "publisher": "AIToolsRecap",
+      "visible_date": "2026-06-16 with page calendar text for 2026-07-26",
+      "reason": "Excluded because the byline date is June 16, 2026; the July 26 text appears to be calendar/navigation context rather than publication or update date.",
+      "potential_topic_roots": [
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "routing_note": "Product ranking coverage is upstream-owned; local selection criteria would need a current eligible source."
+    }
+  ],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated by this collector.",
+    "Do not move this artifact to raw/processed until a later ingest synthesizes qualifying practice implications into durable wiki pages and passes verification.",
+    "Likely ingest clusters: benchmark realism and cost-aware evals; agent selection by supervision surface and permission policy; subagent auditability and delegated authority; memory and durable instruction scope; agent security visibility and workflow-level governance.",
+    "Verify primary docs before durable claims about specific products, model names, legal obligations, or security incidents."
+  ]
+}
