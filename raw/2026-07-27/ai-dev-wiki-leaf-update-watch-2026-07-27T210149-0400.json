@@ -1,0 +1,462 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-07-27T21:01:49-04:00",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start": "2026-07-20T21:01:49-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "id": "excluded-1",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "reason": "outside_7_day_window",
+      "source_url": "https://pharosproduction.com/insights/engineering/build-vs-buy-ai-agent/",
+      "summary": "Build-vs-buy scorecard and TCO guidance is relevant but predates cutoff.",
+      "visible_date": "Updated July 14, 2026"
+    },
+    {
+      "id": "excluded-2",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "reason": "outside_7_day_window",
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/",
+      "summary": "Harness loop/component definition is relevant but predates cutoff.",
+      "visible_date": "Last updated Jun 3, 2026"
+    },
+    {
+      "id": "excluded-3",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "reason": "outside_7_day_window",
+      "source_url": "https://huggingface.co/papers/2607.06624",
+      "summary": "AgentLens is relevant to trajectory evaluation but predates cutoff.",
+      "visible_date": "Published on Jul 7; submitted Jul 9, 2026"
+    },
+    {
+      "id": "excluded-4",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "reason": "outside_or_missing_exact_window_date",
+      "source_url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+      "summary": "TRAJECT-Bench is relevant but has no qualifying visible update date within the window.",
+      "visible_date": "2026 only on Amazon Science; OpenReview result says last modified Apr 11, 2026"
+    },
+    {
+      "id": "excluded-5",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "reason": "outside_strict_window",
+      "source_url": "https://papers.cool/arxiv/2607.17641",
+      "summary": "Verify-repair stopping paper is relevant but is before the strict cutoff of 2026-07-21T01:01:49Z.",
+      "visible_date": "Publish: 2026-07-20 07:52:36 UTC"
+    }
+  ],
+  "federation_boundary": "Broad AI ecosystem entities, products, companies, models, frameworks, MCP servers, and techniques are upstream-owned by ai-wiki; this downstream artifact keeps only local AI-assisted development practice implications.",
+  "leaf_results": {
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "google-gemini-deep-research-agent-2026-07-23"
+      ],
+      "source_urls_checked": [
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research?hl=en"
+      ]
+    },
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-agent-ide-manager-update-2026-07-25",
+        "clawtab-local-vs-cloud-boundary-2026-07-25",
+        "vscode-agent-host-release-2026-07-22"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/best-llm-agent-ides",
+        "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+        "https://releasebot.io/updates/microsoft/visual-studio-code"
+      ]
+    },
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-agent-ide-manager-update-2026-07-25",
+        "vscode-agent-host-release-2026-07-22"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/best-llm-agent-ides",
+        "https://releasebot.io/updates/microsoft/visual-studio-code"
+      ]
+    },
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": {
+      "excluded_candidate_ids": [
+        "excluded-5"
+      ],
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://papers.cool/arxiv/2607.17641"
+      ]
+    },
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-local-vs-cloud-boundary-2026-07-25",
+        "mastra-managed-workspaces-2026-07-22"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+        "https://mastra.ai/blog/introducing-managed-workspaces-for-mastra-platform"
+      ]
+    },
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "google-gemini-deep-research-agent-2026-07-23",
+        "clawtab-local-vs-cloud-boundary-2026-07-25"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research?hl=en"
+      ]
+    },
+    "docs/wiki/agent-workflows/subagent-coordination.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-agent-ide-manager-update-2026-07-25"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/best-llm-agent-ides"
+      ]
+    },
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-agent-ide-manager-update-2026-07-25",
+        "vscode-agent-host-release-2026-07-22"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/best-llm-agent-ides",
+        "https://releasebot.io/updates/microsoft/visual-studio-code"
+      ]
+    },
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": {
+      "excluded_candidate_ids": [
+        "excluded-1"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "clawtab-local-vs-cloud-boundary-2026-07-25"
+      ],
+      "source_urls_checked": [
+        "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+        "https://pharosproduction.com/insights/engineering/build-vs-buy-ai-agent/"
+      ]
+    },
+    "docs/wiki/application-patterns/agent-harness-components.md": {
+      "excluded_candidate_ids": [
+        "excluded-2"
+      ],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "mastra-managed-workspaces-2026-07-22",
+        "vscode-agent-host-release-2026-07-22"
+      ],
+      "source_urls_checked": [
+        "https://developers.cloudflare.com/agents/harnesses/",
+        "https://mastra.ai/blog/introducing-managed-workspaces-for-mastra-platform",
+        "https://releasebot.io/updates/microsoft/visual-studio-code"
+      ]
+    },
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "box-agent-content-governance-2026-07-21"
+      ],
+      "source_urls_checked": [
+        "https://siliconangle.com/2026/07/21/box-adds-security-controls-govern-ai-agents-working-enterprise-content/"
+      ]
+    },
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": {
+      "excluded_candidate_ids": [],
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "qualifying_update_ids": [
+        "box-agent-content-governance-2026-07-21"
+      ],
+      "source_urls_checked": [
+        "https://siliconangle.com/2026/07/21/box-adds-security-controls-govern-ai-agents-working-enterprise-content/"
+      ]
+    },
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": {
+      "excluded_candidate_ids": [
+        "excluded-3",
+        "excluded-4"
+      ],
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://huggingface.co/papers/2607.06624",
+        "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use"
+      ]
+    },
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": {
+      "excluded_candidate_ids": [
+        "excluded-3",
+        "excluded-5"
+      ],
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://huggingface.co/papers/2607.06624",
+        "https://papers.cool/arxiv/2607.17641"
+      ]
+    },
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": {
+      "excluded_candidate_ids": [
+        "excluded-5"
+      ],
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://papers.cool/arxiv/2607.17641"
+      ]
+    }
+  },
+  "leaf_universe_count": 69,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Google Cloud documentation for Gemini Enterprise Agent Platform describes Gemini Deep Research Agent as a preview managed agent for asynchronous multi-step research that plans, searches multiple sources, iterates, and outputs cited reports. The page warns not to use proprietary, sensitive, or confidential data with the Pre-GA offering and lists grounding, file/folder upload, remote MCP server, and inline citation capabilities.",
+      "follow_up_note": "Route broad product coverage upstream; local ingest should focus on workflow boundary, privacy warning, source citation review, and asynchronous handoff practice.",
+      "id": "google-gemini-deep-research-agent-2026-07-23",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Gemini Enterprise Agent Platform",
+        "Gemini Deep Research Agent",
+        "MCP"
+      ],
+      "qualified_update_at": "2026-07-23",
+      "source_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research?hl=en",
+      "upstream_owned_entities": [
+        "Google",
+        "Gemini",
+        "MCP"
+      ],
+      "visible_date": "Last updated 2026-07-23 UTC",
+      "why_it_matters_for_leaf": "Local deep-research and research-plan lifecycle leaves should treat deep research as an asynchronous, evidence-producing workflow with explicit data-sensitivity boundaries and review expectations, not as a low-latency chat substitute."
+    },
+    {
+      "factual_summary": "ClawTab updated its coding-agent IDE/manager comparison for Cursor Router, Claude Remote Control server mode, Codex scheduled worktrees, and multi-agent IDE/CLI/cloud/tmux workflows. It evaluates execution location, parallelism/isolation, supervision, handoffs, automation, and provider choice as workflow criteria, and notes that Claude Code supports subagents, worktree-based sessions, and experimental Agent Teams with coordination overhead.",
+      "follow_up_note": "Keep product taxonomy upstream; local implication belongs in workflow selection, subagent coordination overhead, and reviewable handoff criteria.",
+      "id": "clawtab-agent-ide-manager-update-2026-07-25",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "named_entities": [
+        "ClawTab",
+        "Cursor Router",
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "tmux"
+      ],
+      "qualified_update_at": "2026-07-25",
+      "source_url": "https://clawtab.cc/articles/best-llm-agent-ides",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Claude Code",
+        "Codex",
+        "OpenCode"
+      ],
+      "visible_date": "Published April 13, 2026; Updated July 25, 2026",
+      "why_it_matters_for_leaf": "The local workflow leaves can use this as raw evidence that handoff, isolation, scheduling, provider choice, and visible supervision are now first-class criteria for coding-agent operating practice."
+    },
+    {
+      "factual_summary": "ClawTab updated its local-vs-cloud coding-agent guide to distinguish local terminal agents, local managed worktrees, cloud coding agents, GitHub-native agents, and browser-agent infrastructure. It frames execution-boundary choice around where files, credentials, tools, approvals, review loops, and reproducible setup live.",
+      "follow_up_note": "Ingest as local execution-boundary guidance; do not duplicate product comparisons.",
+      "id": "clawtab-local-vs-cloud-boundary-2026-07-25",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "named_entities": [
+        "ClawTab",
+        "Claude Code",
+        "Codex",
+        "GitHub agents",
+        "Browserbase"
+      ],
+      "qualified_update_at": "2026-07-25",
+      "source_url": "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "GitHub",
+        "Browserbase"
+      ],
+      "visible_date": "Published July 14, 2026; Updated July 25, 2026",
+      "why_it_matters_for_leaf": "Local practice should select workflow shape from execution-boundary requirements before choosing a branded agent: local state and private tools favor local execution, while reproducible tasks and reviewable diffs can favor cloud or repository-native delegation."
+    },
+    {
+      "factual_summary": "Mastra announced managed Workspaces for its platform, combining persistent file storage with sandboxed command execution through PlatformFilesystem and PlatformSandbox primitives. The persistent filesystem is described as surviving conversations, deploys, and restarts so agents can retain generated reports, working documents, and iterated code.",
+      "follow_up_note": "Route product details upstream; local update should emphasize persistence plus sandbox pairing for harness design.",
+      "id": "mastra-managed-workspaces-2026-07-22",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "Mastra",
+        "PlatformFilesystem",
+        "PlatformSandbox"
+      ],
+      "qualified_update_at": "2026-07-22",
+      "source_url": "https://mastra.ai/blog/introducing-managed-workspaces-for-mastra-platform",
+      "upstream_owned_entities": [
+        "Mastra"
+      ],
+      "visible_date": "Jul 22, 2026",
+      "why_it_matters_for_leaf": "This reinforces the local pattern that durable workspaces are a harness-level component, not only conversation memory, and that persistence should be paired with sandbox execution boundaries."
+    },
+    {
+      "factual_summary": "Releasebot surfaced Visual Studio Code 1.130 release notes describing agent host improvements, faster multi-file review in the Agents window, assisted tool approvals, better chat visibility, and smarter terminal file links for Git diffs. The release frames the agent host as a dedicated process for harnesses such as Copilot, Claude, and Codex.",
+      "follow_up_note": "Verify against primary VS Code notes during ingest if possible; keep local implication limited to session host, approvals, and review workflow patterns.",
+      "id": "vscode-agent-host-release-2026-07-22",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "named_entities": [
+        "Visual Studio Code",
+        "Releasebot",
+        "GitHub Copilot",
+        "Claude",
+        "Codex",
+        "Agent Host Protocol"
+      ],
+      "qualified_update_at": "2026-07-22",
+      "source_url": "https://releasebot.io/updates/microsoft/visual-studio-code",
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Claude",
+        "Codex"
+      ],
+      "visible_date": "Date parsed from source: Jul 22, 2026; feed last updated Jul 23, 2026",
+      "why_it_matters_for_leaf": "Local agent workflows should treat agent sessions, approval interruptions, multi-file review, and terminal diff links as runtime/harness affordances that affect handoff quality and event-driven review loops."
+    },
+    {
+      "factual_summary": "SiliconANGLE reported Box security controls for AI agents working with enterprise content, including action vetting, permission blocking, label-based access controls, required approval for deletion actions, prompt-injection detection, MCP guardrails, audit trails, threshold alerts, and human-in-the-loop holds for high-impact actions.",
+      "follow_up_note": "Route company/product detail upstream; local ingest should focus on runtime governance controls and lifecycle approval gates.",
+      "id": "box-agent-content-governance-2026-07-21",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "Box",
+        "Box Shield Pro",
+        "Model Context Protocol",
+        "Anthropic Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "qualified_update_at": "2026-07-21T11:00:00-04:00",
+      "source_url": "https://siliconangle.com/2026/07/21/box-adds-security-controls-govern-ai-agents-working-enterprise-content/",
+      "upstream_owned_entities": [
+        "Box",
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "MCP"
+      ],
+      "visible_date": "Updated 11:00 EDT / July 21 2026",
+      "why_it_matters_for_leaf": "The local governance leaves should keep emphasizing runtime-enforced authorization, content sensitivity controls, prompt-injection screening, auditability, and high-impact approval gates for agents that can act on enterprise content."
+    }
+  ],
+  "run_timestamp": "2026-07-27T21:01:49-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md"
+  ],
+  "source_urls_checked": [
+    "https://clawtab.cc/articles/best-llm-agent-ides",
+    "https://clawtab.cc/articles/local-vs-cloud-ai-coding-agents",
+    "https://developers.cloudflare.com/agents/harnesses/",
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research?hl=en",
+    "https://huggingface.co/papers/2607.06624",
+    "https://mastra.ai/blog/introducing-managed-workspaces-for-mastra-platform",
+    "https://papers.cool/arxiv/2607.17641",
+    "https://pharosproduction.com/insights/engineering/build-vs-buy-ai-agent/",
+    "https://releasebot.io/updates/microsoft/visual-studio-code",
+    "https://siliconangle.com/2026/07/21/box-adds-security-controls-govern-ai-agents-working-enterprise-content/",
+    "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use"
+  ]
+}
