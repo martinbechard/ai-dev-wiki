@@ -9,6 +9,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 ## Pattern Leaf Pages
 
 - [application-harness-patterns.md](application-harness-patterns.md) is the overview for harness design boundaries.
+- [file-oriented-enterprise-builder-workflows.md](file-oriented-enterprise-builder-workflows.md) records source-controlled artifacts, local validation, Git review, and publish workflows for enterprise builders.
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) records schema, DSL, validation, execution, and audit boundaries for model-drafted artifacts.
 - [agent-harness-components.md](agent-harness-components.md) records the fixed loop, registry, context, persistence, hooks, and permission components of a coding-agent harness.
 - [ai-process-layer-and-workflow-state.md](ai-process-layer-and-workflow-state.md) records the process layer between user interface and backend systems, including workflow state and validation loops.
@@ -52,3 +53,4 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - Created on 2026-06-23 as the local owner for AI application and harness patterns.
 - Maintained on 2026-06-23 by splitting reusable harness concepts into durable leaf pages.
 - Maintained on 2026-06-24 with harness taxonomy, TTFT, and visible progress signals from the leaf update watch.
+- Maintained on 2026-07-27 with file-oriented enterprise builder workflows as a durable leaf.

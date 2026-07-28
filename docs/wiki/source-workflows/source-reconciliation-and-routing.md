@@ -31,6 +31,17 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) reinforce the same federation boundary. Broad coding-agent tool and company coverage routes to the [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md), and [Nvidia](../../../upstream-ai-wiki/companies/nvidia-ai.md), while model-family coverage routes through the [upstream model hub](../../../upstream-ai-wiki/models/index.md). Local pages keep benchmark design, agent selection, subagent auditability, workflow security, supervision, memory scope, model routing, cost telemetry, and human-review practice.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) and [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) keep broad ecosystem entities upstream-owned while retaining local practice leaves.
+
+Upstream routing:
+
+- [Amazon AI](../../../upstream-ai-wiki/companies/amazon-ai.md), [Google AI](../../../upstream-ai-wiki/companies/google-ai.md), [Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md), [Oracle](../../../upstream-ai-wiki/companies/oracle.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Mastra](../../../upstream-ai-wiki/agentic-frameworks/mastra.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), the upstream [AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md), and the upstream [MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md) own broad product, company, framework, and MCP-server coverage.
+- Endor Labs, Apideck, Box, Visual Studio Code, and some July 27 product-specific pages do not yet have dedicated upstream leaves identified in this local ingest, so local synthesis links upstream hubs when available and keeps only downstream practice.
+
+Local routing:
+
+- Local pages keep [layered AI code review roles](../coding-practices/layered-ai-code-review-roles.md), [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md), [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md), [coding agent runtime updater integrity](coding-agent-runtime-updater-integrity.md), [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md), [file-oriented enterprise builder workflows](../application-patterns/file-oriented-enterprise-builder-workflows.md), [deep research and writing workflows](../agent-workflows/deep-research-and-writing-workflows.md), [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md), [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md), and [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
+
 ## Practice Boundaries
 
 - Read authoritative source files before updating wiki understanding.
@@ -49,6 +60,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Route July 17 product, vendor, framework, and benchmark entities upstream while retaining local practice evidence for governance, approval, remediation, skills, sandboxing, and evals.
 - Recheck weak date evidence before durable synthesis; keep misdated or snippet-only items as routing notes unless official source-page evidence supports the ingest window.
 - Route July 26 product, benchmark, model, company, regulation, and coding-agent tool entities upstream while retaining local practice for evaluation, governance, instruction, memory, cost, supervision, and review controls.
+- Route July 27 vendor, MCP server, IDE, coding-agent, and enterprise-product updates upstream while retaining linked local leaves for review-role, tool-discovery, telemetry, instruction, updater, CI, workflow, and governance practice.
 
 ## Authoritative Sources
 
@@ -77,6 +89,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [upstream LangChain stack](../../../upstream-ai-wiki/agentic-frameworks/langchain-stack.md)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -102,6 +116,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 - The upstream AI wiki does not yet have GitLab, JetBrains, WebStorm, GoLand, or Cursor product entity leaves to link for the July 17 routing note.
 - The upstream AI wiki does not yet have dedicated entity leaves for July 26 benchmark sources such as Tokoscope, DeepSWE, GLSRM, Coding Agents Index, or the open-source coding-agent comparison set; route them through the upstream coding-agents, model, or technique hubs until entity leaves exist.
+- The upstream AI wiki does not yet have dedicated local links for Endor Labs, Apideck, Box, or Visual Studio Code in the July 27 source-routing note; route through upstream company, developer-tool, coding-agent, or MCP hubs until those leaves exist.
 
 ## Maintenance Notes
 
@@ -113,3 +128,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-16 with broad-entity routing for product, vendor, runner-provider, certification, and coding-agent ecosystem updates.
 - Maintained on 2026-07-17 with broad-entity routing for product, vendor, framework, benchmark, and weak-date evidence, including non-promotion of the Cursor mobile item.
 - Maintained on 2026-07-26 with upstream routing for products, benchmarks, models, companies, regulations, and coding-agent tools while retaining local evaluation, governance, instruction, memory, cost, supervision, and review controls.
+- Maintained on 2026-07-27 with upstream routing for vendor, MCP server, IDE, and coding-agent entities while retaining local practice implications.

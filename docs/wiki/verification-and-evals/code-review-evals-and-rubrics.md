@@ -39,6 +39,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) adds trace-plus-artifact eval and public review-signal evidence. Code review evals should measure the agent's process and review evidence, not only generated-review text.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds layered review-role calibration. The reusable role model lives in [layered AI code review roles](../coding-practices/layered-ai-code-review-roles.md); this eval page owns the rubric field that scores whether expected role-specific findings remain separated in review output.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -68,6 +70,7 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - Evaluate AI-code gates by security, architecture, dependency, and quality risk priority instead of rewarding style-only volume.
 - Score right-file selection, process adherence, trace artifacts, and repeated-run stability when evaluating coding-agent review workflows.
 - Score cost thresholds, latency thresholds, and human-review presence as separate review-eval fields when they affect acceptance.
+- Score whether review results separate implementation, architecture, and security findings when those roles are expected to catch different failure modes.
 
 ## Authoritative Sources
 
@@ -91,6 +94,7 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - [July 19 topic news collector source](../../../raw/processed/2026-07-19/ai-dev-wiki-topic-news-collector-2026-07-19T203449-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 
 ## Related Code
 
@@ -109,6 +113,7 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - [verification-and-evals](index.md)
 - [judge grader boundaries](judge-grader-boundaries.md)
 - [representative workflow calibration](representative-workflow-calibration.md)
+- [layered AI code review roles](../coding-practices/layered-ai-code-review-roles.md)
 
 ## Open Questions
 
@@ -129,3 +134,4 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - Maintained on 2026-07-16 with model-routing, review-depth, finding-category, benchmark-provenance, and validated-fix eval fields.
 - Maintained on 2026-07-22 with task-shape reporting, review-history state, rate-limit impact, reviewer-disagreement stop conditions, and AI-code gate priorities.
 - Maintained on 2026-07-26 with right-file, process-adherence, trace-artifact, repeated-run, cost, latency, and human-review eval criteria.
+- Maintained on 2026-07-27 with layered implementation, architecture, and security review-role scoring.

@@ -13,6 +13,8 @@ Deep research workflows need more autonomy than finished writing workflows. The 
 
 The local practice is to separate exploratory research from constrained production. Research agents earn autonomy when the task requires branching across public sources and evidence types. Writing systems should prefer deterministic structure, style examples, review loops, and acceptance criteria so the output is grounded and not generic.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds managed deep-research evidence. Asynchronous research agents should be treated as evidence-producing handoff workflows with data-sensitivity boundaries, citation review, and source provenance checks, not as low-latency chat substitutes.
+
 ## Practice Boundaries
 
 - Use an agentic loop for research when the system must decide which sources to inspect, when to pivot, and how to gather enough evidence.
@@ -20,12 +22,14 @@ The local practice is to separate exploratory research from constrained producti
 - Keep raw findings, source evidence, and compiled claims separate until review validates the synthesis.
 - Prefer evaluator-optimizer loops for prose quality only when the reviewer has a clear rubric and examples.
 - Treat broad frameworks and MCP products as upstream-owned unless the local page is documenting the research or writing workflow pattern.
+- Require explicit data-sensitivity, citation, and source-review boundaries when a managed research agent searches, uploads files, uses MCP, or produces a cited report asynchronously.
 
 ## Authoritative Sources
 
 - [Deep research workshop source](../../../raw/processed/Full Workshop Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.md)
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -53,3 +57,4 @@ The local practice is to separate exploratory research from constrained producti
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold the research-agent versus writing-workflow boundary.
+- Maintained on 2026-07-27 with asynchronous managed research-agent handoff, citation, and data-sensitivity boundaries.

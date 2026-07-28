@@ -19,6 +19,8 @@ This page owns terminal-session workflow shape. [Destructive command controls](.
 
 The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape and allowlist-bypass evidence for terminal coding agents. Locally, terminal command policy should evaluate arguments, file writes, repository configuration, host-side readers, hooks, IDE integrations, and downstream command effects instead of classifying commands only by executable name.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds terminal-agent manager evidence. Terminal workflows should preserve whether the work ran in a local CLI, server-mode remote control surface, scheduled worktree, tmux-style manager, or IDE-integrated host because each surface changes reconnect evidence, command visibility, and approval timing.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -28,6 +30,7 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Preserve verification evidence and final workspace state before claiming a terminal-agent run completed safely.
 - Treat IDE-managed skills, imported rules, and terminal helpers as instruction or supply-chain inputs when they can change command behavior.
 - For multiplexed terminal sessions, keep each pane's agent identity, repository, command stream, permission mode, and verification evidence distinguishable after reconnects or server replacement.
+- Record execution surface and reconnect history when terminal-agent work moves through local CLI, remote control, scheduled worktree, tmux, or IDE-hosted sessions.
 
 ## Authoritative Sources
 
@@ -40,6 +43,7 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -69,3 +73,4 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Maintained on 2026-07-23 with sandbox-escape, allowlist-bypass, repository-configuration, and host-side trust boundary guidance.
 - Created on 2026-07-17 from public raw artifacts about terminal coding agents, IDE-managed skills, and destructive-command denial evidence.
 - Maintained on 2026-07-22 with agent-multiplexer session evidence, pane identity, and reconnect boundaries.
+- Maintained on 2026-07-27 with local CLI, remote-control, scheduled-worktree, tmux, and IDE-hosted execution-surface evidence.

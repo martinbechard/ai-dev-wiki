@@ -29,6 +29,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape evidence for persistent agent workspaces. A workspace is an active trust boundary: files created by an agent can later be trusted by host components, local daemons, IDE integrations, Git hooks, shell policies, or other automation, so resumed workspace state needs the same scrutiny as direct tool output.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds persistent filesystem and sandbox-pairing evidence. A durable workspace should preserve generated reports, working documents, and iterated code only when command execution remains sandboxed and the workspace records which state survived conversations, deploys, and restarts.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -46,6 +48,7 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Treat concurrent agent PRs as a managed queue with branch ownership, overlap visibility, merge sequencing, and intent-level conflict review.
 - Record inherited workspace settings, managed agent configuration, session identifiers, sandbox or runtime identifiers, and trace links when they affect reproducibility.
 - Keep durable knowledge artifacts separate from transient chat memory so resumed agents can verify what is current before acting.
+- Pair persistent file storage with sandboxed command execution, and record which durable files are trusted state versus generated artifacts requiring re-verification.
 
 ## Authoritative Sources
 
@@ -61,6 +64,7 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -94,3 +98,4 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Maintained on 2026-07-06 with worktree-orchestration and resumable scan or eval workspace evidence.
 - Maintained on 2026-07-07 with concurrent agent PR overlap, merge sequencing, and intent-level conflict review guidance.
 - Maintained on 2026-07-10 with managed workspace settings, session identifiers, trace links, and durable knowledge artifact boundaries.
+- Maintained on 2026-07-27 with persistent filesystem and sandboxed command-execution pairing guidance.

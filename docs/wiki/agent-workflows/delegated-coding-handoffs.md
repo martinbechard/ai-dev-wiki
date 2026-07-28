@@ -27,6 +27,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json) adds issue-tracker and project-filter signals. When tickets, project boards, or issue trackers become the control plane for agentic engineering work, the handoff should carry acceptance criteria, assigned human owner, review-state filter, governance fields, audit evidence, and whether the agent-authored pull request is blocked, review-ready, or merge-ready. Broad Jira, GitHub Projects, and coding-agent product coverage remains upstream-owned.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds execution-boundary and agent-manager criteria. Handoffs should state whether work ran locally, in managed worktrees, in a cloud session, through repository-native delegation, or through a browser-agent surface because file access, credential location, supervision, review loop, and reproducible setup differ by boundary.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -41,6 +43,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Name the accountable owner separately from the coordinating or implementing agent when a task spans planning, tests, docs, or review.
 - Include specifications, evidence artifacts, independent verification results, and integration-order notes when the handoff claims delegated work is complete.
 - Preserve ticket, board, pull-request review state, human owner, audit fields, and approval status when project-management tools coordinate agentic engineering work.
+- Record execution location, file and credential boundary, supervision surface, review loop, and reproducible setup evidence when a task moves between local, worktree, cloud, repository-native, or browser-agent environments.
 
 ## Authoritative Sources
 
@@ -56,6 +59,7 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -89,3 +93,4 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 - Maintained on 2026-06-28 with remote-control steering, review, organization, and intervention evidence.
 - Maintained on 2026-07-14 with accountable-owner boundaries, proof artifacts, independent verification, and integration-order handoff requirements.
 - Maintained on 2026-07-16 with issue-tracker control-plane, PR review-state, governance-field, and audit-evidence handoff requirements.
+- Maintained on 2026-07-27 with local, managed-worktree, cloud, repository-native, and browser-agent execution-boundary handoff criteria.

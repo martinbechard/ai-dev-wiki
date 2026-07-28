@@ -17,6 +17,8 @@ The [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI
 
 The lifecycle complements the [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md). RPI describes the larger phase structure; the orient-inspect-patch-verify loop describes how each coding pass stays grounded.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds asynchronous research and execution-boundary evidence. The lifecycle should treat managed deep research as a research-phase artifact that needs citation and data-sensitivity review, and should choose local, cloud, worktree, or repository-native implementation paths before coding starts.
+
 ## Practice Boundaries
 
 - Keep research evidence-gathering distinct from file modification.
@@ -25,6 +27,8 @@ The lifecycle complements the [orient inspect patch verify loop](orient-inspect-
 - Treat review as verification against source evidence, tests, lint, build output, and project standards.
 - Define hypotheses, ownership boundaries, and success metrics before building an agentic workflow.
 - Use proof-of-value checks and continuous monitoring when behavior depends on prompts, context, tools, and model updates.
+- Treat asynchronous research reports as lifecycle inputs that need source, citation, and sensitivity review before they become implementation plans.
+- Choose the implementation execution boundary before coding starts when local files, credentials, approvals, or reproducible setup affect risk.
 
 ## Authoritative Sources
 
@@ -32,6 +36,7 @@ The lifecycle complements the [orient inspect patch verify loop](orient-inspect-
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -59,3 +64,4 @@ The lifecycle complements the [orient inspect patch verify loop](orient-inspect-
 ## Maintenance Notes
 
 - Created on 2026-06-23 from source-backed RPI and HVE workflow-packaging guidance.
+- Maintained on 2026-07-27 with asynchronous research report review and execution-boundary selection guidance.

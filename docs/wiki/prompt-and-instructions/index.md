@@ -11,6 +11,7 @@ This topic owns durable instruction patterns and prompt packaging guidance for A
 - [request-packages-and-file-boundaries.md](request-packages-and-file-boundaries.md) records the request package, file boundary, source-label, and done-signal pattern.
 - [instruction-hierarchy-and-artifact-boundaries.md](instruction-hierarchy-and-artifact-boundaries.md) records how durable instructions, agents, prompts, and skills stay separated.
 - [context-engineering-for-request-packages.md](context-engineering-for-request-packages.md) records how project data, conventions, and evidence are selected for a request.
+- [executable-prd-templates.md](executable-prd-templates.md) records PRD template fields that become controlled implementation inputs for coding agents.
 - [portable-agent-skills-and-runbooks.md](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md) records the adoption lens for reusable procedure skills and composed runbooks.
 
 ## Authoritative Sources
@@ -49,3 +50,4 @@ This topic owns durable instruction patterns and prompt packaging guidance for A
 - Created on 2026-06-23 as the local owner for prompt and instruction patterns.
 - Maintained on 2026-06-23 to separate request packaging, context engineering, and reusable instruction artifacts into durable leaves.
 - Maintained on 2026-06-23 to link prompt boundaries to portable skill and runbook practice.
+- Maintained on 2026-07-27 with executable PRD templates as a durable leaf.

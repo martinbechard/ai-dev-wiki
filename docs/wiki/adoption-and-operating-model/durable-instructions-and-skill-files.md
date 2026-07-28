@@ -25,6 +25,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 
 The July 17 raw sources add skill-provenance and registry-control evidence. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records IDE-managed skills, public registry connections, and cross-agent imports as durability pressure. Durable instruction surfaces should include owner, version, compatibility target, and change history, while public registry provenance, poisoned registry risk, and allowed tool scope route to [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md).
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds two instruction-surface signals. Repository rule-file discovery can show setup spread but not actual usage or quality, so it stays here as an adoption-metric caveat. [Executable PRD templates](../prompt-and-instructions/executable-prd-templates.md) owns PRD templates that define permissions, approval gates, logging, escalation, and eval-style done criteria.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -42,6 +44,8 @@ The July 17 raw sources add skill-provenance and registry-control evidence. The 
 - Train developers to review generated skills, prompts, hooks, and rules before moving them into reusable durable guidance.
 - Track owner, version, compatibility target, source location, and change history for skills or instruction files that become durable procedure.
 - Route public skill registries, imported instruction bundles, allowed tool scope, and poisoned registry controls through supply-chain review before treating them as trusted instructions.
+- Treat repository rule-file discovery as a coarse adoption signal, not proof of productive or correct agent use.
+- Route PRD templates that define permissions, approval gates, logging, escalation, or eval-style done criteria through [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md).
 
 ## Authoritative Sources
 
@@ -55,6 +59,7 @@ The July 17 raw sources add skill-provenance and registry-control evidence. The 
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 
 ## Related Code
 
@@ -76,6 +81,7 @@ The July 17 raw sources add skill-provenance and registry-control evidence. The 
 - [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
 - [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md)
+- [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md)
 
 ## Open Questions
 
@@ -90,3 +96,4 @@ The July 17 raw sources add skill-provenance and registry-control evidence. The 
 - Maintained on 2026-07-08 with generated customization review, hook boundaries, managed-setting separation, and provider-selection scope.
 - Maintained on 2026-07-09 with repo-local instruction trust boundaries and generated customization review as developer skill practice.
 - Maintained on 2026-07-17 with IDE-managed skills, source ownership, compatibility metadata, change history, and routing to supply-chain controls for registry and tool-scope risk.
+- Maintained on 2026-07-27 with rule-file adoption caveats and executable PRD template review boundaries.

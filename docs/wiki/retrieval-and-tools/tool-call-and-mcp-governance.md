@@ -59,6 +59,10 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds regulated-gateway, context-limit, and fallback-governance signals. MCP gateways for regulated workflows should be evaluated as centralized control planes for authentication, authorization, policy, audit logging, network boundaries, device posture, model routing, and private deployment evidence. Tool-specific MCP guidance also reinforces that bounded context is not complete dataset visibility: agents should route large-scale or complete operations through direct APIs or workflow tools with explicit data coverage checks. Runtime tool-surface mutation and automatic fallback routing should be logged because they change available actions, cache assumptions, and reproducibility.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds [progressive MCP tool discovery](progressive-mcp-tool-discovery.md) as a concrete context-budget and least-privilege pattern. This page keeps the governance boundary: discovered tools need policy evidence before invocation.
+
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) reinforces runtime governance for content agents. Permission blocking, label-based access, prompt-injection screening, audit trails, threshold alerts, and approval holds for high-impact actions belong in the tool-control layer, not only in prompt guidance.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -116,6 +120,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Keep broad Model Context Protocol, MCP server, and vendor coverage upstream; maintain local MCP notes only when they change tool access, identity, approval, observability, or workflow design.
 - Evaluate regulated MCP gateways as access infrastructure with identity, authorization, device posture, network, audit, routing, and deployment evidence rather than as connector catalogs.
 - Require explicit data-coverage checks when an MCP-connected agent has bounded context and the task needs complete dataset operations.
+- Route on-demand tool-schema selection through [progressive MCP tool discovery](progressive-mcp-tool-discovery.md) when large tool catalogs would waste context or expand action scope.
+- Treat content-agent guardrails as runtime controls that can block actions, screen untrusted content, and hold high-impact operations for approval.
 
 ## Authoritative Sources
 
@@ -158,6 +164,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -179,6 +187,7 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 - [agent identity and delegated authority](../governance-and-risk/agent-identity-and-delegated-authority.md)
 - [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
+- [progressive MCP tool discovery](progressive-mcp-tool-discovery.md)
 
 ## Open Questions
 
@@ -210,3 +219,4 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Maintained on 2026-07-22 with visible tool-call arguments, API-safe skill evals, MCP inventories, setup-prompt review, subagent-hook checks, and explainable command approval.
 - Maintained on 2026-07-24 with MCP conformance, mid-conversation tool-surface, fallback-routing, and cache-assumption guidance.
 - Maintained on 2026-07-25 with regulated MCP gateway criteria, bounded-context data-coverage checks, and fallback/tool-surface audit guidance.
+- Maintained on 2026-07-27 with progressive MCP discovery, field-scope, managed-OAuth, API-log, and content-agent guardrail guidance.

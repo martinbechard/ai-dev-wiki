@@ -29,6 +29,8 @@ The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-d
 
 The July 17 raw sources add security and production-agent gate examples. The [topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) records GitLab security review, dependency auto-remediation, and GitHub agentic autofix as review-stage flows that should preserve logic-flaw reasoning, vulnerability context, validation commands, and draft-PR handoff boundaries. The [leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) reinforces that production lifecycle gates must include infrastructure scope, scenario guardrails, online trace checks, and security gates before a workflow graduates beyond assisted drafting.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds enterprise content-agent controls as lifecycle gate evidence. Workflows that can delete, modify, or publish enterprise content should require action vetting, label-aware access controls, prompt-injection checks, audit trails, threshold alerts, and human holds before they graduate into standing operations.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -50,6 +52,7 @@ The July 17 raw sources add security and production-agent gate examples. The [to
 - Require AI-generated code gates to prove provenance, tool inventory, security scanning, reviewer accountability, and re-verification before merge.
 - Treat production-agent behavior updates as tested change proposals with simulations, graders, guardrails, approvals, escalations, and rollout evidence before deployment.
 - Add sandbox-boundary and untrusted-content checks when coding agents read repository content that can influence host-side components or command execution.
+- Gate enterprise content-agent workflows on action vetting, content labels, prompt-injection checks, audit trails, alerts, and human holds for high-impact actions.
 
 ## Authoritative Sources
 
@@ -68,6 +71,7 @@ The July 17 raw sources add security and production-agent gate examples. The [to
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -103,3 +107,4 @@ The July 17 raw sources add security and production-agent gate examples. The [to
 - Maintained on 2026-07-12 with lifecycle gates for adversarial review topology, regression proof, untrusted content, dependency policy, gateway controls, and owner readiness.
 - Maintained on 2026-07-17 with review-stage logic-flaw reasoning, remediation packet evidence, draft-PR handoff boundaries, online traces, and production-loop security gates.
 - Maintained on 2026-07-22 with generated-code provenance, production-agent simulation, rollout approval, and sandbox-boundary gates.
+- Maintained on 2026-07-27 with content-agent action-vetting, label-control, audit, alert, and human-hold lifecycle gates.

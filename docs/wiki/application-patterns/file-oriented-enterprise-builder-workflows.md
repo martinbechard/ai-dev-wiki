@@ -1,0 +1,59 @@
+---
+type: "Application Pattern"
+title: "File-Oriented Enterprise Builder Workflows"
+description: "File-oriented enterprise builder workflows expose low-code or enterprise app artifacts as reviewable source-controlled files."
+tags: ["application-patterns"]
+---
+
+# File-Oriented Enterprise Builder Workflows
+
+## Current Understanding
+
+File-oriented enterprise builder workflows expose low-code or enterprise app artifacts as reviewable source-controlled files. The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) records a report about enterprise builder tooling, while Oracle primary sources describe [AI Agent Studio CLI local artifact development and validation](https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm), [APEXlang validation](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html), and [APEXlang editing in Visual Studio Code](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html). Broad [Oracle](../../../upstream-ai-wiki/companies/oracle.md), VS Code, product, and MCP background stays upstream; locally, the reusable pattern is that AI-assisted enterprise builder changes should travel through ordinary software evidence.
+
+The practice is to keep generated or assisted artifacts in files that can be diffed, validated locally, reviewed through Git, and published through controlled steps. This keeps low-code and enterprise agent-platform changes inside the same source, test, review, and release discipline as code.
+
+## Practice Boundaries
+
+- Prefer file-backed artifacts when enterprise builder changes need review, tests, or release evidence.
+- Use CLI or extension tooling to validate artifacts before publish, not only visual builder previews.
+- Keep Git diffs, generated files, validation results, and publish steps visible in the handoff.
+- Treat AI-generated builder changes as untrusted implementation drafts until source review and validation pass.
+- Route product-specific builder details upstream unless they change local source-control, validation, or release practice.
+
+## Authoritative Sources
+
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [Oracle AI Agent Studio CLI source](https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm)
+- [Oracle APEXlang validation source](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html)
+- [Oracle APEXlang Visual Studio Code source](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html)
+- [application harness patterns](application-harness-patterns.md)
+- [agent harness components](agent-harness-components.md)
+- [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
+- [source reconciliation and routing](../source-workflows/source-reconciliation-and-routing.md)
+
+## Related Code
+
+- Not yet identified.
+
+## Related Tests
+
+- Not yet identified.
+
+## Related Backlog Items
+
+- Not yet identified.
+
+## Related Wiki Pages
+
+- [application harness patterns](application-harness-patterns.md)
+- [agent harness components](agent-harness-components.md)
+- [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
+
+## Open Questions
+
+- No open wiki questions are recorded for this topic.
+
+## Maintenance Notes
+
+- Created on 2026-07-27 from July 27 raw-source evidence about enterprise builder artifacts, local validation, Git review, and publish workflows.

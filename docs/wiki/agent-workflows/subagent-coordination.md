@@ -35,6 +35,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The July 18-21 raw sources add effort-routing and graph-control signals. The [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md) frames high-effort multi-agent mode as an escalation path rather than a default when subagents inherit expensive reasoning settings. The [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) and [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json) add loop and graph-engineering evidence: subagent systems should make routers, joins, human checkpoints, budgets, policies, trace identifiers, and stop rules visible before parallelism is treated as reliability.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds agent-manager and multi-surface execution criteria. Subagent coordination should account for IDE, CLI, cloud, worktree, and terminal multiplexer surfaces as different supervision and handoff channels, and it should treat built-in agent teams as coordination overhead that still needs role boundaries, shared-state rules, and review capacity checks.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -57,6 +59,7 @@ The July 18-21 raw sources add effort-routing and graph-control signals. The [Co
 - Pair multi-agent fan-out with owner assignment, merge-conflict control, verification queues, review-capacity limits, and explicit stop conditions.
 - Route high-effort or high-cost subagents deliberately; do not let a parent mode silently cascade expensive reasoning, tool budgets, or autonomy into every delegated worker.
 - Represent multi-agent graphs with explicit routers, joins, human checkpoints, identities, budgets, traces, and stop conditions before making them recurring workflow infrastructure.
+- Compare IDE, CLI, cloud, worktree, and terminal-multiplexer coordination by supervision, isolation, handoff, and review-capacity evidence before choosing a subagent surface.
 
 ## Authoritative Sources
 
@@ -75,6 +78,7 @@ The July 18-21 raw sources add effort-routing and graph-control signals. The [Co
 - [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -113,3 +117,4 @@ The July 18-21 raw sources add effort-routing and graph-control signals. The [Co
 - Maintained on 2026-07-14 with built-in multi-agent role boundaries, shared-state rules, cache/tool budget accounting, and programmatic filtering verification.
 - Maintained on 2026-07-16 with coding-fleet verification capacity, owner assignment, merge-conflict control, and fan-out stop conditions.
 - Maintained on 2026-07-22 with effort-routing, graph-control, trace, budget, and inherited-subagent mode boundaries.
+- Maintained on 2026-07-27 with IDE, CLI, cloud, worktree, and terminal-multiplexer coordination criteria.

@@ -19,6 +19,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) refines the issue-to-agent pattern. CI repair from a failed check should create a separate reviewable repair proposal when the platform supports it, and issue-tracker assignment should carry branch controls, progress streaming, model or agent choice, steering comments, and an explicit review request.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds scheduled and host-driven agent execution evidence. Event-triggered workflows should distinguish scheduled worktrees, agent-host sessions, and CI or issue-triggered runs because each trigger changes inherited context, approval timing, progress visibility, and review handoff.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -29,6 +31,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Route recurring event-triggered agents through owner rosters, revocation paths, monitoring, and audit storage.
 - Prefer reviewable PR-on-PR or draft-PR repair handoffs for CI failures instead of mutating the original branch without a separate review surface.
 - Record branch selection, working branch, model or agent selection, steering comments, and progress-stream evidence for issue-triggered coding agents.
+- Distinguish schedule, CI, issue, host-session, and manual triggers when inherited context, approval timing, or review handoff differs.
 
 ## Authoritative Sources
 
@@ -40,6 +43,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [source reconciliation and routing](../source-workflows/source-reconciliation-and-routing.md)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -69,3 +73,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-07-23 with issue-to-agent handoff evidence, rationale, confidence, progress streams, isolated execution, and review gates.
 - Maintained on 2026-07-24 with CI repair PR-on-PR, branch-control, progress-stream, steering-comment, and review-request guidance.
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.
+- Maintained on 2026-07-27 with scheduled-worktree, agent-host, CI, issue, and manual trigger distinctions.

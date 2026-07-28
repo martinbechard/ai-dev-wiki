@@ -14,6 +14,7 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 - [raw-project-wiki-monitor.md](raw-project-wiki-monitor.md) records the clipping move, raw ingest, durable leaf update, digest update, lint, and processed-source move workflow.
 - [clipping-and-raw-intake.md](clipping-and-raw-intake.md) records where human-saved source notes, unprocessed raw artifacts, and fully processed raw artifacts belong.
 - [source-reconciliation-and-routing.md](source-reconciliation-and-routing.md) records authority order, conflict handling, synonym normalization, and federation routing during source ingest.
+- [coding-agent-runtime-updater-integrity.md](coding-agent-runtime-updater-integrity.md) records signed-manifest, exact-marker, fail-closed, and manual-patch boundaries for coding-agent runtime updaters.
 
 ## Authoritative Sources
 
@@ -21,9 +22,9 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 - [topic-index.md](../topic-index.md)
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
-- Target environment automation record for AI Dev Wiki Topic News Collector.
-- Target environment automation record for AI Dev Wiki Leaf Update Watch.
-- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
+- Target environment automation record for AI Dev Wiki Topic News Collector: Not yet identified.
+- Target environment automation record for AI Dev Wiki Leaf Update Watch: Not yet identified.
+- Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor: Not yet identified.
 
 ## Related Code
 
@@ -52,3 +53,4 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 
 - Created on 2026-06-23 as the owner for raw source, clipping, ingest, and automation workflows.
 - Split on 2026-06-23 into durable leaves for update feeds, collector behavior, leaf watches, raw ingest, clipping intake, and source reconciliation.
+- Maintained on 2026-07-27 with coding-agent runtime updater integrity as a durable leaf.

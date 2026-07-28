@@ -59,6 +59,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add opt-in community telemetry and benchmark-efficiency signals. Cost telemetry should separate representative market claims from local operating evidence before using external usage data in workflow decisions.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds coding-agent observability evidence from a CloudWatch guide, with AWS primary context from the [CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/) and an [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/). Local telemetry should connect agent spend, adoption, accepted edits, commits, pull-request flow, and alerting so teams do not confuse raw token activity with productivity.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -107,6 +109,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Treat sponsored or vendor-positioned cost claims as weak evidence unless they are mapped to local traces, verification cost, privacy constraints, and accepted outcomes.
 - Track tool share, active users, active days, tokens, local execution, model-router choices, and review burden only when those signals explain workflow cost.
 - Treat public dollars-per-completed-task and wall-clock benchmark efficiency as comparison inputs that need local normalization by workflow, task mix, user cohort, privacy boundary, and accepted outcome.
+- Join cost, activity, accepted edits, commits, pull-request flow, and alerts when evaluating whether coding-agent usage is producing accepted delivery outcomes.
 
 ## Authoritative Sources
 
@@ -145,6 +148,9 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
+- [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
 ## Related Code
 
@@ -193,3 +199,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-22 with adoption-phase dashboard, value-stream telemetry, and tokenomics cost-layer controls.
 - Maintained on 2026-07-25 with workload-placement cost governance, sponsored-claim caution, context-replay budgeting, and cost-per-outcome routing evidence.
 - Maintained on 2026-07-26 with opt-in telemetry caution, benchmark-efficiency, active-user, token, cost-per-completed-task, local-execution, and model-router cost guidance.
+- Maintained on 2026-07-27 with spend, activity, accepted-edit, commit, pull-request-flow, and alerting telemetry joins.

@@ -33,6 +33,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add a context-distraction rule. Context engineering is not only about adding missing project knowledge; it also rejects irrelevant connectors, stale memories, oversized summaries, and attractive but unauthoritative snippets that distract the agent from the current work.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md) as a tool-schema selection pattern. This page keeps the context rule: discovered schemas are dynamic context and should enter the active request only when the current task needs them.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -62,6 +64,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Treat secondary commentary about vendor context-window changes as a routing signal until primary sources verify product behavior.
 - Test context selection against mock or representative workflows that include both relevant sources and plausible distractors.
 - Prefer source inventories, freshness labels, and exclusion notes over broad connector enablement when agents need work context.
+- Keep large tool catalogs behind discovery or routing tools when the current task only needs a narrow operation surface, and route governance details through [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md).
 
 ## Authoritative Sources
 
@@ -78,6 +81,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)
 - [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
 - [context state externalization and rehydration](context-state-externalization-and-rehydration.md)
+- [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
@@ -85,6 +89,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 
 ## Related Code
 
@@ -122,3 +127,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-07-16 with task-scope classification, narrow-retrieval controls, and secondary-summary verification boundaries.
 - Maintained on 2026-07-22 with concise durable-instruction, task-matched eval, and primary-source verification boundaries.
 - Maintained on 2026-07-24 with context-distraction, source-inventory, freshness-label, and representative distractor-test guidance.
+- Maintained on 2026-07-27 with progressive tool-schema discovery as dynamic context selection.

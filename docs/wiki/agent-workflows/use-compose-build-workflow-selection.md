@@ -21,6 +21,8 @@ This page owns the workflow-selection rule. [workflow before model selection](..
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) reinforce that shared governance, observability, model routing, reusable agent patterns, programmatic tool orchestration, and domain-owned MCP servers are compose-or-build considerations. The decision is not whether a model can call a tool; it is whether the workflow needs local control over identity, context, verification, audit, cost, and service boundaries.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds execution-boundary selection evidence. Local terminal agents, managed worktrees, cloud coding agents, repository-native agents, browser-agent infrastructure, and persistent workspaces should be compared by where files, credentials, tools, approvals, review loops, reproducible setup, and durable state live before deciding whether to use, compose, or build.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -31,6 +33,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Keep token cost, context visibility, and subsidized vendor pricing in the workflow economics review.
 - Treat self-hosted and local execution as build choices that need utilization, staffing, latency, telemetry, and governance justification.
 - Choose compose or build when the workflow needs local control over identity, context routing, verification, audit, cost attribution, programmatic tool execution, or domain-owned service boundaries.
+- Choose the execution boundary before the branded tool when file locality, credential custody, approval timing, review loop, reproducible setup, or durable workspace state drives the workflow.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -71,3 +75,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Created on 2026-06-23 from source-backed use, compose, and build workflow-selection guidance.
 - Maintained on 2026-06-27 with hosting and local-execution choices as per-workflow build decisions.
 - Maintained on 2026-07-14 with shared governance, observability, model routing, reusable agent patterns, programmatic tools, and domain-owned MCP service boundaries as compose-or-build inputs.
+- Maintained on 2026-07-27 with execution-boundary selection for local, managed-worktree, cloud, repository-native, browser-agent, and persistent workspace choices.

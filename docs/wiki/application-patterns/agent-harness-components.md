@@ -47,6 +47,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds harness-owned memory and eval evidence. Coding-agent memory should be injected by deterministic cues and audit logs, and benchmark harnesses should preserve task provenance, contamination resistance, reproducible setup, and scoring surfaces as first-class runtime components.
 
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds persistent workspace and agent-host evidence. Durable filesystem state, sandbox command execution, faster multi-file review surfaces, assisted tool approvals, chat visibility, terminal diff links, and dedicated agent host processes are harness components when they affect handoff quality and event-driven review loops.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -87,6 +89,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Design gateway-style agent harnesses so identity, authorization, workflow coverage, and audit evidence remain externalized instead of buried inside one agent session.
 - Deliver memory from deterministic path, symbol, event, semantic, or time cues with traceable source links instead of relying on model-initiated recall.
 - Preserve benchmark task construction, contamination controls, execution setup, scoring, and artifact evidence as harness components when eval results guide workflow authorization.
+- Treat persistent filesystems, sandbox execution, agent host processes, approval UX, multi-file review surfaces, and terminal diff links as harness components when they determine reviewability.
 
 ## Authoritative Sources
 
@@ -121,6 +124,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 15 leaf update watch source](../../../raw/processed/2026-07-15/ai-dev-wiki-leaf-update-watch-2026-07-15T210218-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 
 ## Related Code
 
@@ -148,6 +152,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
+- Maintained on 2026-07-27 with persistent filesystem, sandbox execution, agent-host, tool-approval, multi-file-review, and terminal-diff-link harness components.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.
 - Maintained on 2026-06-24 with public harness taxonomy signals for context, execution, evaluation, observability, and guardrails.
 - Maintained on 2026-06-26 with runner, parallel-step, remote-startup, compiled-configuration, provenance, and tamper-evident logging signals.

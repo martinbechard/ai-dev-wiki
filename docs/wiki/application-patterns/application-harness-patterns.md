@@ -23,6 +23,10 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) and [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) add production-monitoring and harness-taxonomy signals. A product harness should separate model-output observability from application-runtime observability, preserve traces that distinguish retrieval, prompt, model, tool, and application failures, and treat reusable harness primitives as design surfaces for context delivery, tool interfaces, planning artifacts, verification loops, memory systems, permissions, sandboxes, and telemetry.
 
+The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md). This overview keeps the harness boundary: enterprise builder artifacts need source, validation, review, and publish evidence when AI agents can modify them.
+
+The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds persistent workspace evidence. Durable filesystem state paired with sandboxed command execution is a harness component, not only chat memory, when agents retain generated reports, working documents, and iterated code across runs.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -41,6 +45,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Treat agent runtimes as deployed services with invocation contracts, session isolation, explicit state buckets, telemetry traces, retries, and human waits.
 - Separate model-output quality monitoring from application-runtime monitoring so repair loops can distinguish retrieval, prompt, model, tool, and code-path defects.
 - Treat harness primitives such as context delivery, permissions, memory, tool interfaces, planning artifacts, verification loops, sandboxes, and telemetry as explicit design surfaces.
+- Route source-controlled low-code or enterprise builder artifacts through [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md).
+- Pair [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md) with sandbox execution and provenance when files survive across conversations, deploys, or restarts.
 
 ## Authoritative Sources
 
@@ -53,6 +59,8 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [federation.md](../federation.md)
 
 ## Related Code
@@ -73,6 +81,7 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md)
+- [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md)
 
 ## Open Questions
 
@@ -86,3 +95,4 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 - Maintained on 2026-06-24 with harness category and progress-telemetry signals from the [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-07-07 with production runtime, invocation-contract, session-isolation, state-bucket, and telemetry-trace obligations.
 - Maintained on 2026-07-11 with model-output versus runtime observability and reusable harness primitive taxonomy.
+- Maintained on 2026-07-27 with source-controlled enterprise-builder artifacts and persistent-workspace harness boundaries.
