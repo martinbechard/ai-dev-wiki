@@ -1,0 +1,347 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-27T20:31:32-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-07-25T20:31:32-04:00",
+    "end": "2026-07-27T20:31:32-04:00",
+    "rule": "Include only public sources published or visibly updated within the last 2 days relative to the run timestamp; exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practices, including context architecture, source workflows, prompts, agent workflows, coding practices, retrieval and tools, verification, governance, and adoption.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem entities: companies, models, products, developer tools, agentic frameworks, MCP servers, general techniques, and vendor background.",
+    "handling": "Record upstream-owned entities by name and keep only local practice implications or routing notes."
+  },
+  "search_queries": [
+    "AI assisted development coding agents practice updated July 27 2026",
+    "coding agent prompts durable instructions July 27 2026",
+    "software engineering evals AI coding agents July 27 2026",
+    "MCP agent governance tool approvals July 27 2026",
+    "\"July 27, 2026\" \"coding agents\"",
+    "\"July 27, 2026\" \"MCP\" \"approval\" \"agent\"",
+    "\"July 27, 2026\" \"structured output\" \"coding agent\"",
+    "\"July 27, 2026\" \"AI coding\" \"OpenTelemetry\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-07-27-endor-ai-code-review-agents",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://www.endorlabs.com/learn/ai-code-review",
+      "visible_date": {
+        "published": "July 27, 2026",
+        "updated": "July 24, 2026"
+      },
+      "short_factual_summary": "Endor Labs published a solution brief for AI code review that frames review as three agent roles: developer, architect, and security engineer. The page argues that AI-authored pull requests can carry design and security weaknesses that signature-based scanners miss.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that AI code review should be modeled as layered behavioral and architecture review, not only static vulnerability scanning. Ingest should consider whether local review guidance distinguishes authoring checks, architecture checks, and security checks.",
+      "named_entities": [
+        "Endor Labs",
+        "AI Code Review",
+        "SAST",
+        "SCA"
+      ],
+      "upstream_owned_entities": [
+        "Endor Labs",
+        "AI code review products"
+      ],
+      "local_practice_implication": "Record as a review-gate pattern: use specialized review roles and preserve human review for design intent and security context.",
+      "follow_up_notes": "During ingest, avoid duplicating vendor product coverage; extract only review role design and scanner-boundary practice."
+    },
+    {
+      "id": "2026-07-27-apideck-mcp-progressive-discovery",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://www.apideck.com/mcp-server",
+      "visible_date": {
+        "last_updated": "July 27, 2026"
+      },
+      "short_factual_summary": "Apideck's MCP server page describes dynamic mode, where agents initially load four meta-tools and discover specific API tools on demand. It also describes scoped permissions, field-level data scopes, managed OAuth through Vault, and API logs.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice-level update is a concrete MCP design pattern: keep tool schemas out of the context window until needed, and combine progressive discovery with permission and data-scope enforcement.",
+      "named_entities": [
+        "Apideck",
+        "MCP",
+        "Model Context Protocol",
+        "Vault",
+        "Claude",
+        "Codex",
+        "Cursor",
+        "Windsurf"
+      ],
+      "upstream_owned_entities": [
+        "Apideck",
+        "MCP servers",
+        "Claude",
+        "Codex",
+        "Cursor",
+        "Windsurf"
+      ],
+      "local_practice_implication": "Consider a retrieval-and-tools leaf or maintenance note on progressive MCP tool discovery as a context budget and least-privilege control.",
+      "follow_up_notes": "Verify against upstream MCP coverage before adding any local MCP server details."
+    },
+    {
+      "id": "2026-07-27-aws-coding-agent-insights-guide",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://ecorpit.com/cloudwatch-coding-agent-insights-measure-ai-coding-roi-2026/",
+      "visible_date": {
+        "published": "July 27, 2026",
+        "referenced_launch": "July 20, 2026"
+      },
+      "short_factual_summary": "EcorpIT published a guide to CloudWatch Coding Agent Insights, describing telemetry for Claude Code, Codex, and GitHub Copilot through OpenTelemetry metrics, with dashboard sections for token spend, per-team cost, developer-productivity signals, queries, and alerts.",
+      "why_it_matters_for_ai_assisted_development_practice": "Even though the AWS launch predates the window, the in-window guide reinforces an operating-model pattern: teams need telemetry that connects agent spend, adoption, and delivery signals without treating token counts alone as productivity.",
+      "named_entities": [
+        "Amazon CloudWatch",
+        "Coding Agent Insights",
+        "OpenTelemetry",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "Amazon Web Services",
+        "Amazon CloudWatch",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Route to adoption and operating model as a metric design note: evaluate AI-assisted development by cost, activity, accepted edits, commits, and PR flow, not raw usage alone.",
+      "follow_up_notes": "If ingested, cite the AWS primary launch or operations blog as corroborating source, but keep product background upstream-owned."
+    },
+    {
+      "id": "2026-07-26-morningmail-agentic-coding-prd-prompts",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://morningmail.ai/en/newsletter/agentic-coding-7LswmXRrJNp1QHsbwKoU/2026-07-26",
+      "visible_date": {
+        "published": "Sunday, July 26, 2026"
+      },
+      "short_factual_summary": "MorningMail's Agentic Coding edition summarized recent practice sources about executable PRD templates, Claude Code workflow tips, extracted system prompts, and a Claude Code best-practice repository. It highlighted autonomy levels, tool permissions, failure fallbacks, cost envelopes, and version-controlled template edits.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is that product specifications are increasingly executable inputs for agents. Specs need explicit autonomy boundaries, permissions, fallback behavior, and verification seeds when they are used as prompts.",
+      "named_entities": [
+        "MorningMail.ai",
+        "Product Map",
+        "AgentsRoom",
+        "Piebald-AI",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Product Map",
+        "AgentsRoom",
+        "Piebald-AI"
+      ],
+      "local_practice_implication": "Consider ingesting a prompt-and-instructions note that template edits should be reviewed like prompt changes when documents are loaded by coding agents.",
+      "follow_up_notes": "Use MorningMail as a routing source only; follow primary Product Map, AgentsRoom, and GitHub repository sources before durable synthesis."
+    },
+    {
+      "id": "2026-07-26-ix-claude-code-updater-guards",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "source_url": "https://ix.dev/updates",
+      "visible_date": {
+        "published": "Jul 26, 2026 05:10 UTC"
+      },
+      "short_factual_summary": "The ix update log describes a Claude Code updater that regenerates version-coupled artifacts, verifies a signed manifest, fails closed when expected markers are missing, and deliberately leaves a security-relevant byte-patch target manual.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete source-workflow pattern for AI-agent runtime maintenance: automate reproducible artifact refreshes, assert exact markers, and keep security-sensitive patch targets under explicit human control.",
+      "named_entities": [
+        "ix",
+        "Claude Code",
+        "Nix",
+        "GPG"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Nix"
+      ],
+      "local_practice_implication": "Route to source workflows or governance as an updater-integrity pattern for pinned coding-agent runtimes and prompt snapshots.",
+      "follow_up_notes": "If ingested, preserve source-specific scope; do not generalize the byte-patch practice beyond runtimes with comparable signed binary patching."
+    },
+    {
+      "id": "2026-07-26-ix-ci-cache-sharding-and-hidden-failure",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://ix.dev/updates",
+      "visible_date": {
+        "published": "Jul 26, 2026 04:30 UTC"
+      },
+      "short_factual_summary": "The ix update log records that a cache-push CI lane spent eighteen hours failing because builds compiled single-threaded, then describes sharding and runner sizing changes. It notes that red runs also hid a clippy error that would otherwise have been caught.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that agent-heavy CI must verify the verifier: a slow or wedged gate can mask actual regressions, so harnesses need freshness, capacity, and failure-signal checks.",
+      "named_entities": [
+        "ix",
+        "GitHub Actions",
+        "Nix",
+        "Clippy"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Actions",
+        "Nix",
+        "Clippy"
+      ],
+      "local_practice_implication": "Route to verification and evals as a CI-harness reliability pattern: evaluate gate health separately from the software change under test.",
+      "follow_up_notes": "The source is a public project log; ingest only the durable gate-health lesson."
+    },
+    {
+      "id": "2026-07-27-ai-coding-info-rule-file-trends",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "source_url": "https://ai-coding.info/en",
+      "visible_date": {
+        "latest_ranking_date": "July 27, 2026",
+        "latest_report": "07/03/2026"
+      },
+      "short_factual_summary": "AI Coding Info published July 27 ranking tables based on public GitHub repositories where AI coding-agent rule files were found, with Codex CLI, Claude Code, Copilot Agent, Gemini CLI, and Cursor listed among the tracked agents.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is that durable instruction files are observable adoption artifacts. Repository-level rule files can be used as a coarse adoption signal, but not as proof of actual agent usage or quality.",
+      "named_entities": [
+        "AI Coding Info",
+        "Codex CLI",
+        "Claude Code",
+        "Copilot Agent",
+        "Gemini CLI",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "GitHub Copilot",
+        "Gemini CLI",
+        "Cursor"
+      ],
+      "local_practice_implication": "Route to adoption as a measurement caveat: instruction-file discovery can track setup spread, while productivity or correctness still requires separate evidence.",
+      "follow_up_notes": "Treat as a public trend signal, not an authoritative benchmark."
+    },
+    {
+      "id": "2026-07-27-oracle-vscode-file-oriented-agent-workflows",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://visualstudiomagazine.com/articles/2026/07/27/oracle-leans-on-vs-code-for-new-ai-dev-tooling.aspx",
+      "visible_date": {
+        "published": "07/27/2026"
+      },
+      "short_factual_summary": "Visual Studio Magazine reported that Oracle's Fusion AI Agent Studio and APEX workflows place VS Code at the center of local development using extensions, CLI tools, source-controlled artifacts, Git, validation, and AI coding-agent assistance.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that low-code and enterprise agent platforms are adopting file-oriented, source-controlled workflows so AI-generated changes can be reviewed, tested, and published like normal software changes.",
+      "named_entities": [
+        "Oracle",
+        "Visual Studio Code",
+        "Fusion AI Agent Studio",
+        "APEX",
+        "APEXlang",
+        "Codex",
+        "Claude Code",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Visual Studio Code",
+        "Codex",
+        "Claude Code",
+        "MCP"
+      ],
+      "local_practice_implication": "Route to source workflows and application patterns as a source-controlled artifacts pattern for AI-assisted enterprise app builders.",
+      "follow_up_notes": "If ingested, verify with Oracle primary docs and keep Oracle product detail upstream-owned."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://sanka.com/docs/developers/mcp/",
+      "visible_date": "Last updated: July 13, 2026",
+      "reason": "Search snippet suggested July 27, but the page itself showed July 13, outside the two-day window."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions",
+      "visible_date": "No exact visible published or updated date found on opened page",
+      "reason": "Relevant durable-instruction content, but the visible date was ambiguous, so excluded from qualifying findings."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.21997",
+      "visible_date": "Submitted on 24 Jul 2026",
+      "reason": "Relevant AI code review empirical study, but submitted outside the strict two-day window."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.21909",
+      "visible_date": "Submitted on 24 Jul 2026",
+      "reason": "Relevant parallel coding-agent coordination paper, but submitted outside the strict two-day window."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2607.21832",
+      "visible_date": "Submitted on 23 Jul 2026",
+      "reason": "Relevant empirical study of agentic pull requests, but submitted outside the strict two-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "visible_date": "Latest visible matching Copilot entries were July 24 or earlier",
+      "reason": "No qualifying July 26 or July 27 Copilot changelog item was visible in the opened search result."
+    },
+    {
+      "source_url": "https://www.harness.io/blog/ai-is-writing-more-code-than-ever-your-release-process-hasnt-kept-up",
+      "visible_date": "July 14, 2026",
+      "reason": "Relevant release-process and AI-generated-code bottleneck source, but stale for this run."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/security/top-ai-coding-agents-can-be-easy-victims-to-sandbox-escapes-showing-they-arent-as-secure-as-they-claim-to-be",
+      "visible_date": "Published 6 days ago in search result",
+      "reason": "Relevant sandbox-escape reporting, but outside the two-day window."
+    },
+    {
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+      "visible_date": "Posted on: Jul 20, 2026",
+      "reason": "Primary AWS launch is relevant but outside the strict window; retained only as follow-up corroboration for an in-window guide."
+    },
+    {
+      "source_url": "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
+      "visible_date": "17 JUN 2026 with editor note in July 2026",
+      "reason": "Useful primary operations blog, but the visible update was month-level only and therefore boundary-ambiguous for this strict collector."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "collector_notes": [
+    "No docs/wiki pages were updated.",
+    "No raw/processed files were created or moved.",
+    "All findings are public web sources.",
+    "The artifact records upstream-owned entities separately from local practice implications."
+  ]
+}
