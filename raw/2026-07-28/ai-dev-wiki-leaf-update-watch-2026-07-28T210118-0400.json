@@ -1,0 +1,576 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-07-28T21:01:18-04:00",
+  "cutoff_window": {
+    "start": "2026-07-21T21:01:18-04:00",
+    "end": "2026-07-28T21:01:18-04:00",
+    "timezone": "America/Toronto",
+    "rule": "visible publication or update date must fall inside this window; missing, ambiguous, future-dated, and boundary-only dates are excluded"
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 74,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md"
+  ],
+  "source_urls_checked": [
+    "https://aclanthology.org/2026.findings-acl.1960/",
+    "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+    "https://awesomeagents.ai/news/lm-studio-bionic-open-model-agent/",
+    "https://blogs.oracle.com/apex/announcing-oracle-apex-261",
+    "https://codemingle.ai/newsletter/ai_news_report-2026-07-24",
+    "https://codex.danielvaughan.com/2026/04/28/context-engineering-for-codex-cli-practical-guide/",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+    "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+    "https://digitalthoughtdisruption.com/2026/07/21/ai-agent-prototype-to-production-readiness-checklist/amp/",
+    "https://docs.openclaw.ai/plugins/sdk-agent-harness",
+    "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/htmrn/new-features.html",
+    "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+    "https://mylesborins.com/",
+    "https://openai.com/index/instruction-hierarchy-challenge/",
+    "https://rogerstringer.com/blog/context-engineering-production-agents",
+    "https://safeguard.sh/resources/blog/prompt-injection-via-ai-agent-cicd-workflow-tampering",
+    "https://sreeni.blog/2026/07/",
+    "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+    "https://www.emergentmind.com/topics/instruction-hierarchy-ih",
+    "https://www.fiddler.ai/blog/prompt-injection-prevention-coding-agents",
+    "https://www.gradually.ai/en/changelogs/openclaw/",
+    "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+    "https://www.oreilly.com/radar/topics/ai-ml/",
+    "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+    "https://www.sfora.ai/knowledge-base/ai-prds",
+    "https://www.stepsecurity.io/blog/securing-vibe-coding-and-ai-coding-agents-an-end-to-end-approach-with-stepsecurity",
+    "https://www.stork.ai/blog/best-ai-code-review-tools-2026",
+    "https://www.trantorinc.com/blog/ai-code-review-engineering-leader-guide-automated-pr-review-2026"
+  ],
+  "checked_by_leaf": {
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": [
+      "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "https://docs.oracle.com/en/database/oracle/apex/26.1/htmrn/new-features.html",
+      "https://blogs.oracle.com/apex/announcing-oracle-apex-261"
+    ],
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md": [
+      "https://sreeni.blog/2026/07/",
+      "https://www.stork.ai/blog/best-ai-code-review-tools-2026",
+      "https://www.trantorinc.com/blog/ai-code-review-engineering-leader-guide-automated-pr-review-2026"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "https://www.sfora.ai/knowledge-base/ai-prds",
+      "https://www.oreilly.com/radar/topics/ai-ml/"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://amplitude.com/docs/amplitude-ai/amplitude-mcp"
+    ],
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md": [
+      "https://www.gradually.ai/en/changelogs/openclaw/",
+      "https://docs.openclaw.ai/plugins/sdk-agent-harness"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "https://rogerstringer.com/blog/context-engineering-production-agents"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+      "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/"
+    ],
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": [
+      "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "https://www.fiddler.ai/blog/prompt-injection-prevention-coding-agents",
+      "https://digitalthoughtdisruption.com/2026/07/21/ai-agent-prototype-to-production-readiness-checklist/amp/"
+    ],
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": [
+      "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "https://www.fiddler.ai/blog/prompt-injection-prevention-coding-agents",
+      "https://safeguard.sh/resources/blog/prompt-injection-via-ai-agent-cicd-workflow-tampering"
+    ],
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": [
+      "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "https://codemingle.ai/newsletter/ai_news_report-2026-07-24",
+      "https://digitalthoughtdisruption.com/2026/07/21/ai-agent-prototype-to-production-readiness-checklist/amp/"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "https://www.stepsecurity.io/blog/securing-vibe-coding-and-ai-coding-agents-an-end-to-end-approach-with-stepsecurity",
+      "https://www.fiddler.ai/blog/prompt-injection-prevention-coding-agents"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "https://codex.danielvaughan.com/2026/04/28/context-engineering-for-codex-cli-practical-guide/"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [
+      "https://aclanthology.org/2026.findings-acl.1960/",
+      "https://www.emergentmind.com/topics/instruction-hierarchy-ih",
+      "https://openai.com/index/instruction-hierarchy-challenge/"
+    ],
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": [
+      "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "https://codemingle.ai/newsletter/ai_news_report-2026-07-24",
+      "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/"
+    ],
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": [
+      "https://mylesborins.com/",
+      "https://awesomeagents.ai/news/lm-studio-bionic-open-model-agent/",
+      "https://docs.openclaw.ai/plugins/sdk-agent-harness"
+    ]
+  },
+  "qualifying_updates": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "published_or_updated_at": "2026-07-28",
+      "date_basis": "visible publication date",
+      "factual_summary": "Microsoft Agent Framework added .NET support for discovering and loading Agent Skills from MCP servers, including progressive-disclosure skill loading, remote skill packaging, central governance, archive bounds, and approval defaults for skill tools.",
+      "why_it_matters_for_leaf": "The local progressive MCP tool discovery leaf should track remote skill discovery as a governed variant of progressive disclosure: central teams can publish tool/skill surfaces once while downstream agents load details only on demand.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Model Context Protocol",
+        "Agent Skills",
+        "Microsoft.Agents.AI.Mcp",
+        "Microsoft Foundry"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Model Context Protocol",
+        "Microsoft Foundry"
+      ],
+      "follow_up_note": "Route framework/product background upstream; keep local guidance focused on governed progressive-disclosure and remote-content trust boundaries."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "published_or_updated_at": "2026-07-23",
+      "date_basis": "visible publication date",
+      "factual_summary": "Microsoft announced Agent Framework Declarative Workflows 1.0 across Python and .NET, letting teams express multi-agent orchestration, workflow state, branching, MCP/HTTP/function tool calls, human approval, and checkpoint/resume behavior in YAML.",
+      "why_it_matters_for_leaf": "This supports the local process-layer practice of treating workflow state and orchestration as reviewable artifacts rather than hidden application control flow.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Declarative Workflows",
+        "Power Fx",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "MCP"
+      ],
+      "follow_up_note": "Consider ingesting the practice implication into workflow-state and maybe source-workflow pages, without duplicating Microsoft framework background."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "published_or_updated_at": "2026-07-22",
+      "date_basis": "visible publication date",
+      "factual_summary": "Microsoft released a production-oriented Agent Framework harness with loop execution, planning, memory, context management, approvals, telemetry, history persistence, compaction, skills, and web search enabled by default for Python and .NET agents.",
+      "why_it_matters_for_leaf": "The application harness pattern should distinguish model calls from the surrounding runtime responsibilities: state, approvals, telemetry, compaction, and tool execution are first-class harness concerns.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Agent Harness",
+        "OpenTelemetry",
+        "Agent Skills"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "OpenTelemetry"
+      ],
+      "follow_up_note": "Keep local page focused on reusable harness responsibilities and verification implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+      "published_or_updated_at": "2026-07-22",
+      "date_basis": "visible publication date",
+      "factual_summary": "OReilly published guidance arguing that harness complexity should match action and context complexity, with core harness jobs covering loop, tool execution, context management, state, and safety.",
+      "why_it_matters_for_leaf": "This adds a selection heuristic for local harness guidance: avoid blanket harness feature checklists and map controls to actual task complexity.",
+      "named_entities": [
+        "OReilly",
+        "OpenClaw",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenClaw",
+        "Claude Code",
+        "Codex"
+      ],
+      "follow_up_note": "Use as a practice source for harness-sizing criteria rather than as product coverage."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "published_or_updated_at": "2026-07-23",
+      "date_basis": "visible publication date",
+      "factual_summary": "Roger Stringer described production context engineering as a versioned context contract with evidence supply chains, authority boundaries, destructive-action approval tokens, state compaction, and outcome-based evaluation.",
+      "why_it_matters_for_leaf": "The destructive-command controls leaf can use this as public support for enforcing destructive-action gates in the runtime instead of relying only on prompt wording.",
+      "named_entities": [
+        "context engineering",
+        "production agents",
+        "human-in-the-loop approval"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Also relevant to context request packages and evaluation gates; avoid overgeneralizing beyond the article’s production-agent scope."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "published_or_updated_at": "2026-07-24",
+      "date_basis": "visible publication date",
+      "factual_summary": "StepTo summarized 2026 coding-agent attack patterns including agentjacking through poisoned Sentry events, rogue MCP server installation via typosquatted packages, MCP tool poisoning, and agent configuration persistence.",
+      "why_it_matters_for_leaf": "The local prompt-injection leaf should emphasize that coding agents ingest untrusted issue, error, log, and tool metadata as part of normal work, so defenses need allowlisted MCP surfaces, integrity-monitored agent config, scoped credentials, controlled egress, and human review.",
+      "named_entities": [
+        "Sentry",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "Codex",
+        "SANDWORM_MODE",
+        "MCPTox"
+      ],
+      "upstream_owned_entities": [
+        "Sentry",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "Codex"
+      ],
+      "follow_up_note": "Corroborate specific cited campaigns during ingest where possible; local implication is input-trust and configuration-integrity controls."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "published_or_updated_at": "2026-07-24",
+      "date_basis": "visible publication date",
+      "factual_summary": "The same StepTo article framed coding-agent dependency trees and MCP configuration as security-critical infrastructure because malicious packages or config writes can create persistent instruction channels into privileged agents.",
+      "why_it_matters_for_leaf": "The sensitive-data and supply-chain controls leaf should cover agent configuration files, MCP registrations, ambient credentials, and egress controls as supply-chain surfaces, not just repository dependencies.",
+      "named_entities": [
+        "MCP",
+        "SANDWORM_MODE",
+        "npm",
+        "Claude Code",
+        "Cursor",
+        "Windsurf"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "npm",
+        "Claude Code",
+        "Cursor",
+        "Windsurf"
+      ],
+      "follow_up_note": "Treat product/vulnerability background as upstream-owned; keep local content on supply-chain control implications."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "published_or_updated_at": "2026-07-23",
+      "date_basis": "visible publication date",
+      "factual_summary": "The production context-engineering article recommends versioned context contracts, just-in-time retrieval of authoritative runtime facts, explicit source authority/freshness rules, and compact working state preserving decisions rather than raw transcripts.",
+      "why_it_matters_for_leaf": "The request-package leaf can use this as current public evidence for packaging sources, boundaries, completion criteria, and freshness rules instead of stuffing full background into prompts.",
+      "named_entities": [
+        "context contract",
+        "context engineering",
+        "working state"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Potentially ingest with the destructive-command and eval-gate implications as one coherent source."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "published_or_updated_at": "2026-07-23",
+      "date_basis": "visible publication date",
+      "factual_summary": "The article distinguishes code-based graders, model-based graders, and human review, and recommends separating capability evals from regression evals with environment-based verification of agent outcomes.",
+      "why_it_matters_for_leaf": "The performance-optimization gate leaf can reuse this as local practice support for making eval gates outcome-based and blocking deployment on regression failures.",
+      "named_entities": [
+        "code-based graders",
+        "model-based graders",
+        "human review"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Tie this to existing eval-gate and acceptance-gate leaves during ingest."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/htmrn/new-features.html",
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "reason": "No visible publication or update date within the strict seven-day window; crawler recency is not a publication date."
+    },
+    {
+      "source_url": "https://blogs.oracle.com/apex/announcing-oracle-apex-261",
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "reason": "Published May 14, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://sreeni.blog/2026/07/",
+      "leaf_id": "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+      "reason": "Relevant AI code-review content is dated July 18, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://www.sfora.ai/knowledge-base/ai-prds",
+      "leaf_id": "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+      "reason": "Published July 20, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "leaf_id": "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+      "reason": "Existing cited source checked, but no visible strict-window update found."
+    },
+    {
+      "source_url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "reason": "Search result showed progressive discovery content but page fetch returned 404, so source is not usable for this run."
+    },
+    {
+      "source_url": "https://www.gradually.ai/en/changelogs/openclaw/",
+      "leaf_id": "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+      "reason": "Latest visible OpenClaw release entry is July 18, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://docs.openclaw.ai/plugins/sdk-agent-harness",
+      "leaf_id": "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+      "reason": "Useful runtime-artifact content, but no visible publication or update date in the strict seven-day window."
+    },
+    {
+      "source_url": "https://www.fiddler.ai/blog/prompt-injection-prevention-coding-agents",
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "reason": "Published and last edited July 16, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://digitalthoughtdisruption.com/2026/07/21/ai-agent-prototype-to-production-readiness-checklist/amp/",
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "reason": "Visible date is July 21, 2026 with no time; excluded as boundary-only for a July 21 21:01 cutoff."
+    },
+    {
+      "source_url": "https://safeguard.sh/resources/blog/prompt-injection-via-ai-agent-cicd-workflow-tampering",
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "reason": "Published July 8, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://aclanthology.org/2026.findings-acl.1960/",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "reason": "Visible date is July 2026 month only; excluded as ambiguous for strict seven-day qualification."
+    },
+    {
+      "source_url": "https://www.emergentmind.com/topics/instruction-hierarchy-ih",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "reason": "Updated July 2, 2026, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://awesomeagents.ai/news/lm-studio-bionic-open-model-agent/",
+      "leaf_id": "docs/wiki/application-patterns/local-model-runtime-harness.md",
+      "reason": "Published July 17, 2026, outside the strict seven-day window."
+    }
+  ],
+  "factual_summaries": [
+    {
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "summary": "Microsoft Agent Framework added .NET support for discovering and loading Agent Skills from MCP servers, including progressive-disclosure skill loading, remote skill packaging, central governance, archive bounds, and approval defaults for skill tools."
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "summary": "Microsoft announced Agent Framework Declarative Workflows 1.0 across Python and .NET, letting teams express multi-agent orchestration, workflow state, branching, MCP/HTTP/function tool calls, human approval, and checkpoint/resume behavior in YAML."
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "summary": "Microsoft released a production-oriented Agent Framework harness with loop execution, planning, memory, context management, approvals, telemetry, history persistence, compaction, skills, and web search enabled by default for Python and .NET agents."
+    },
+    {
+      "source_url": "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+      "summary": "OReilly published guidance arguing that harness complexity should match action and context complexity, with core harness jobs covering loop, tool execution, context management, state, and safety."
+    },
+    {
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "summary": "Roger Stringer described production context engineering as a versioned context contract with evidence supply chains, authority boundaries, destructive-action approval tokens, state compaction, and outcome-based evaluation."
+    },
+    {
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "summary": "StepTo summarized 2026 coding-agent attack patterns including agentjacking through poisoned Sentry events, rogue MCP server installation via typosquatted packages, MCP tool poisoning, and agent configuration persistence."
+    },
+    {
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "summary": "The same StepTo article framed coding-agent dependency trees and MCP configuration as security-critical infrastructure because malicious packages or config writes can create persistent instruction channels into privileged agents."
+    },
+    {
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "summary": "The production context-engineering article recommends versioned context contracts, just-in-time retrieval of authoritative runtime facts, explicit source authority/freshness rules, and compact working state preserving decisions rather than raw transcripts."
+    },
+    {
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "summary": "The article distinguishes code-based graders, model-based graders, and human review, and recommends separating capability evals from regression evals with environment-based verification of agent outcomes."
+    }
+  ],
+  "why_items_matter": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "why_it_matters": "The local progressive MCP tool discovery leaf should track remote skill discovery as a governed variant of progressive disclosure: central teams can publish tool/skill surfaces once while downstream agents load details only on demand."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "why_it_matters": "This supports the local process-layer practice of treating workflow state and orchestration as reviewable artifacts rather than hidden application control flow."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "why_it_matters": "The application harness pattern should distinguish model calls from the surrounding runtime responsibilities: state, approvals, telemetry, compaction, and tool execution are first-class harness concerns."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+      "why_it_matters": "This adds a selection heuristic for local harness guidance: avoid blanket harness feature checklists and map controls to actual task complexity."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "why_it_matters": "The destructive-command controls leaf can use this as public support for enforcing destructive-action gates in the runtime instead of relying only on prompt wording."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "why_it_matters": "The local prompt-injection leaf should emphasize that coding agents ingest untrusted issue, error, log, and tool metadata as part of normal work, so defenses need allowlisted MCP surfaces, integrity-monitored agent config, scoped credentials, controlled egress, and human review."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "why_it_matters": "The sensitive-data and supply-chain controls leaf should cover agent configuration files, MCP registrations, ambient credentials, and egress controls as supply-chain surfaces, not just repository dependencies."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "why_it_matters": "The request-package leaf can use this as current public evidence for packaging sources, boundaries, completion criteria, and freshness rules instead of stuffing full background into prompts."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "why_it_matters": "The performance-optimization gate leaf can reuse this as local practice support for making eval gates outcome-based and blocking deployment on regression failures."
+    }
+  ],
+  "named_entities": [
+    "Agent Harness",
+    "Agent Skills",
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Declarative Workflows",
+    "MCP",
+    "MCPTox",
+    "Microsoft Agent Framework",
+    "Microsoft Foundry",
+    "Microsoft.Agents.AI.Mcp",
+    "Model Context Protocol",
+    "OReilly",
+    "OpenClaw",
+    "OpenTelemetry",
+    "Power Fx",
+    "SANDWORM_MODE",
+    "Sentry",
+    "Windsurf",
+    "code-based graders",
+    "context contract",
+    "context engineering",
+    "human review",
+    "human-in-the-loop approval",
+    "model-based graders",
+    "npm",
+    "production agents",
+    "working state"
+  ],
+  "upstream_owned_entities": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "MCP",
+    "Microsoft Agent Framework",
+    "Microsoft Foundry",
+    "Model Context Protocol",
+    "OpenClaw",
+    "OpenTelemetry",
+    "Sentry",
+    "Windsurf",
+    "npm"
+  ],
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "note": "Route framework/product background upstream; keep local guidance focused on governed progressive-disclosure and remote-content trust boundaries."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "note": "Consider ingesting the practice implication into workflow-state and maybe source-workflow pages, without duplicating Microsoft framework background."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "note": "Keep local page focused on reusable harness responsibilities and verification implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "source_url": "https://www.oreilly.com/radar/stop-overengineering-your-agent-harness/",
+      "note": "Use as a practice source for harness-sizing criteria rather than as product coverage."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "note": "Also relevant to context request packages and evaluation gates; avoid overgeneralizing beyond the article’s production-agent scope."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "note": "Corroborate specific cited campaigns during ingest where possible; local implication is input-trust and configuration-integrity controls."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "source_url": "https://stepto.net/blog/ai-coding-agent-supply-chain-attacks-mcp-prompt-injection-2026",
+      "note": "Treat product/vulnerability background as upstream-owned; keep local content on supply-chain control implications."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "note": "Potentially ingest with the destructive-command and eval-gate implications as one coherent source."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "source_url": "https://rogerstringer.com/blog/context-engineering-production-agents",
+      "note": "Tie this to existing eval-gate and acceptance-gate leaves during ingest."
+    }
+  ],
+  "docs_wiki_updated": false,
+  "raw_processed_updated": false,
+  "blockers": []
+}
