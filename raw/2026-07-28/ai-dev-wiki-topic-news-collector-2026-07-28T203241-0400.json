@@ -1,0 +1,390 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_local": "2026-07-28T20:32:41-0400",
+  "run_timestamp_utc": "2026-07-29T00:32:41Z",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start_local": "2026-07-26T20:32:41-0400",
+    "end_local": "2026-07-28T20:32:41-0400",
+    "start_utc": "2026-07-27T00:32:41Z",
+    "end_utc": "2026-07-29T00:32:41Z",
+    "date_policy": "Included sources with visible publication or update dates on July 27 or July 28, 2026 because those local dates are inside the two-day run window. Excluded missing, ambiguous, future-dated, outside-window, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice implications, operating model, guidance structure, source workflows, verification, governance, and local adoption patterns.",
+    "upstream_scope": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "source": "docs/wiki/federation.md"
+  },
+  "search_queries": [
+    "site:github.blog/changelog AI coding agent July 28 2026",
+    "site:openai.com/codex coding agent July 28 2026",
+    "site:anthropic.com/news Claude Code July 28 2026",
+    "site:vercel.com/changelog AI agent July 28 2026",
+    "AI-assisted software development code review July 28 2026",
+    "coding agents approvals audit logs July 28 2026",
+    "MCP governed practice coding agent July 28 2026",
+    "software engineering evals coding agents July 28 2026",
+    "site:github.blog/changelog/2026-07-28 Copilot code quality malicious workflows approval",
+    "site:github.blog/changelog/2026-07-27 GitHub Copilot enterprise managed settings cloud agent",
+    "site:github.blog/changelog/2026-07-27 Copilot JetBrains improved OpenTelemetry configuration model management",
+    "site:github.blog/changelog/2026-07-28 GitHub Copilot app usage metrics report rollups"
+  ],
+  "qualifying_findings": [
+    {
+      "id": "github-copilot-app-usage-rollups-2026-07-28",
+      "source_url": "https://github.blog/changelog/2026-07-28-github-copilot-app-usage-metrics-now-expand-across-report-rollups/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 28, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "GitHub says Copilot app activity is now attributed to individual users in enterprise-user and organization-user reports, appears in feature, model, and language rollups, and contributes to code activity, lines-of-code, and daily-active-user totals.",
+      "why_it_matters": "Agent adoption measurement can move from aggregate app usage to user-level and surface-level attribution, which supports cohort analysis, rollout governance, cost review, and claims about generated-code volume.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub",
+          "reason": "company owned by upstream AI wiki"
+        },
+        {
+          "entity": "GitHub Copilot app",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Keep any local ingest focused on measurement practice: per-user agent-app telemetry, surface-specific adoption reporting, generated-code accounting, and governance dashboards."
+    },
+    {
+      "id": "github-actions-malicious-workflow-approval-2026-07-28",
+      "source_url": "https://github.blog/changelog/2026-07-28-github-actions-holds-potentially-malicious-workflows-for-approval/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 28, 2026",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "GitHub Actions now automatically holds certain workflow runs in public repositories when they are identified as potentially malicious; a write-access collaborator must approve the run through an authenticated web session before it executes.",
+      "why_it_matters": "AI-assisted development workflows that generate or modify CI configuration need explicit pre-execution review gates for suspicious automation, especially when credentials and deployment secrets may be reachable from CI.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Actions",
+          "reason": "developer platform/tool owned by upstream AI wiki"
+        },
+        {
+          "entity": "GitHub Enterprise Server",
+          "reason": "developer platform/product owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Track as evidence for approval-before-execution controls around agent-authored workflow files and CI-side effects, including the limitation that this protection is public-github.com only."
+    },
+    {
+      "id": "github-dependabot-malware-openssf-2026-07-28",
+      "source_url": "https://github.blog/changelog/2026-07-28-dependabot-alerts-on-malicious-packages-across-more-ecosystems/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 28, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "GitHub Advisory Database now ingests malware advisories from the OpenSSF malicious-packages repository, expanding Dependabot malware alert coverage beyond npm to ecosystems including PyPI, with matches visible through the type:malware filter.",
+      "why_it_matters": "Package-install risk in coding-agent workflows is increasingly governed by malware advisory feeds, not only CVE alerts. AI-generated dependency changes should be checked against malware-specific alerts before merge.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Advisory Database",
+        "OpenSSF malicious-packages",
+        "Dependabot",
+        "npm",
+        "PyPI"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Advisory Database",
+          "reason": "developer/security platform owned by upstream AI wiki"
+        },
+        {
+          "entity": "Dependabot",
+          "reason": "developer tool owned by upstream AI wiki"
+        },
+        {
+          "entity": "OpenSSF malicious-packages",
+          "reason": "broad ecosystem security source owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Preserve as local evidence for dependency-change gates that separate malware alerts from vulnerability alerts and require package-install review for agent-authored updates."
+    },
+    {
+      "id": "github-copilot-grok-4-5-policy-2026-07-28",
+      "source_url": "https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 28, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "GitHub announced Grok 4.5 rollout in Copilot across IDE, CLI, cloud agent, app, JetBrains, Xcode, and Eclipse surfaces; Business and Enterprise administrators must enable the model policy, which is off by default.",
+      "why_it_matters": "The local practice signal is the default-deny model governance pattern for a newly added reasoning model across multiple agent surfaces, plus the need to treat model availability as a centrally governed rollout instead of a developer-local choice.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Grok 4.5",
+        "xAI",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent",
+        "GitHub Copilot app",
+        "JetBrains",
+        "Xcode",
+        "Eclipse"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Grok 4.5",
+          "reason": "model owned by upstream AI wiki"
+        },
+        {
+          "entity": "xAI",
+          "reason": "company/model provider owned by upstream AI wiki"
+        },
+        {
+          "entity": "GitHub Copilot",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Do not create a local model page; route model facts upstream and keep only the governance note about default-off enterprise model policy and cross-surface rollout checks."
+    },
+    {
+      "id": "github-copilot-jetbrains-otel-model-mcp-2026-07-27",
+      "source_url": "https://github.blog/changelog/2026-07-27-github-copilot-for-jetbrains-adds-improvved-opentelemetry-configuration-and-model-management/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 27, 2026",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "GitHub Copilot for JetBrains added OpenTelemetry export settings for agent workflows, token-limit controls for BYOK and custom endpoints, built-in model enablement controls, MCP servers and custom agents in Claude agent flows, CLI session forks, a rubber-duck command, and a todo list in the harness.",
+      "why_it_matters": "IDE-hosted agent workflows are getting explicit telemetry, token budgeting, MCP diagnostics, custom-agent routing, and progress visibility controls. Those are local practice surfaces for repeatable harness governance rather than broad product facts.",
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "OpenTelemetry",
+        "BYOK",
+        "MCP",
+        "Claude",
+        "Copilot CLI",
+        "JetBrains"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot for JetBrains",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        },
+        {
+          "entity": "OpenTelemetry",
+          "reason": "broad developer observability standard/tooling owned upstream"
+        },
+        {
+          "entity": "MCP",
+          "reason": "broad protocol owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Candidate local ingest should focus on telemetry export policy, model/token controls, MCP diagnostics, durable todo/progress surfaces, and custom-agent setup consistency inside IDE agent workflows."
+    },
+    {
+      "id": "github-copilot-managed-settings-app-cloud-agent-2026-07-27",
+      "source_url": "https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 27, 2026",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "GitHub says enterprise managed settings now govern the Copilot app and Copilot cloud agent with the same managed-settings.json used by other Copilot clients, including plugin availability, plugin marketplaces, approval-prompt bypass controls for interactive clients, and default auto model selection.",
+      "why_it_matters": "Durable agent instructions and permissions increasingly need cross-client enforcement so cloud agents, desktop apps, CLIs, and IDE integrations do not drift into different plugin, marketplace, approval, or model-routing policies.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot cloud agent",
+        "managed-settings.json",
+        "Copilot CLI",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot app",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        },
+        {
+          "entity": "Copilot cloud agent",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        },
+        {
+          "entity": "Visual Studio Code",
+          "reason": "developer tool owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Preserve as local evidence for durable instruction governance: one canonical managed policy file, explicit plugin marketplace controls, and surface-aware approval bypass rules."
+    },
+    {
+      "id": "github-copilot-app-access-policy-2026-07-27",
+      "source_url": "https://github.blog/changelog/2026-07-27-manage-github-copilot-app-access-with-a-dedicated-policy/",
+      "source_type": "primary changelog",
+      "publisher": "GitHub",
+      "visible_date": "July 27, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "GitHub introduced a dedicated enterprise and organization policy for Copilot app access, separate from the Copilot CLI policy. The post says app sessions use isolated workspaces and land changes through pull requests, so existing reviews, checks, and audit history apply.",
+      "why_it_matters": "Agent-client rollout can be staged by client and organization instead of tied to CLI enablement. The isolated-workspace-to-PR path is a concrete source workflow boundary for adoption governance.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot CLI",
+        "AI Controls"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot app",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        },
+        {
+          "entity": "Copilot CLI",
+          "reason": "developer tool/product owned by upstream AI wiki"
+        }
+      ],
+      "local_practice_implication": "Track as operating-model evidence for client-specific enablement, organization-delegated rollout, and pull-request-centered agent contribution review."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-07-23-agent-automation-controls-in-github-issues-in-public-preview/",
+      "visible_date": "July 23, 2026",
+      "reason": "Outside the two-day cutoff window, despite strong relevance to approvals, confidence, rationale, and audit trails for agent issue automation."
+    },
+    {
+      "source_url": "https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/",
+      "visible_date": "No exact visible publication date found in fetched page text; URL only shows month.",
+      "reason": "Excluded for ambiguous visible date even though the page discusses ACP-compatible agents, separate workspaces, local models, diagnostics, proposed-change review, context usage, and Docker isolation."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+      "visible_date": "Search result showed published 5 days ago.",
+      "reason": "Outside the two-day cutoff window and secondary-source article rather than a primary practice update."
+    },
+    {
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6996078",
+      "visible_date": "Posted July 18, 2026; Date Written June 25, 2026.",
+      "reason": "Outside the two-day cutoff window, although relevant to AI agent effects on coding, testing, and review behavior."
+    },
+    {
+      "source_url": "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/",
+      "visible_date": "July 9, 2026",
+      "reason": "Outside the two-day cutoff window; also vendor library content rather than a new dated practice change."
+    },
+    {
+      "source_url": "https://blog.codacy.com/ai-breaking-code-review-how-engineering-teams-survive-pr-bottleneck",
+      "visible_date": "22/07/2026",
+      "reason": "Outside the two-day cutoff window, despite relevance to AI-generated pull-request review bottlenecks."
+    },
+    {
+      "source_url": "https://www.agentapprove.com/changelog",
+      "visible_date": "July 19, 2026",
+      "reason": "Outside the two-day cutoff window, despite relevance to encryption safeguards and approval-event debug logs."
+    },
+    {
+      "source_url": "https://vercel.com/changelog/vercel-agent-has-updated-pricing",
+      "visible_date": "June 30, 2026",
+      "reason": "Outside the two-day cutoff window; previously relevant to agent cost telemetry and pricing governance."
+    },
+    {
+      "source_url": "https://vercel.com/changelog/eve-agent-observability",
+      "visible_date": "June 26, 2026",
+      "reason": "Outside the two-day cutoff window; previously relevant to agent run observability, retention, and tool-call tracing."
+    },
+    {
+      "source_url": "https://community.openai.com/c/codex/37",
+      "visible_date": "Forum activity dates only, including July 27, 2026.",
+      "reason": "Excluded because forum listing items are discussion/activity signals, not stable source updates, and individual topic dates were not inspected as authoritative practice changes."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact raw-only for a later ingest pass; do not move it to raw/processed until docs/wiki synthesis and verification are complete.",
+    "Potential local synthesis themes: cross-client managed policy files, approval-before-execution gates for CI workflows, malware-specific dependency gates, per-user agent-app telemetry, IDE agent OpenTelemetry, MCP diagnostics, token controls, and client-specific rollout policies.",
+    "Route broad model and product facts about Grok 4.5, GitHub Copilot, GitHub Actions, Dependabot, OpenSSF, and MCP to the upstream AI wiki if durable entity pages need changes.",
+    "If ingested, split findings by practice lens instead of by vendor changelog: governance policy propagation, supply-chain gates, telemetry and adoption metrics, and IDE/harness workflow controls."
+  ],
+  "counts": {
+    "qualifying_update_count": 7,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}
