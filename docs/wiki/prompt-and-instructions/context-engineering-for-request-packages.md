@@ -11,7 +11,7 @@ tags: ["prompt-and-instructions"]
 
 Context engineering is the local practice of selecting project data, coding conventions, documentation, source labels, and verification expectations for a specific request. It is broader than prompt wording because it decides which evidence and rules the model can see while doing the work.
 
-The request package should carry enough context for the model to act with less ambiguity without loading unrelated history. The AI-assisted coding deck frames repository understanding as request packaging, context assembly, retrieval, and verification evidence. The Hypervelocity Engineering source describes context engineering as supplying project data, conventions, and documentation so AI work becomes more accurate and can use smaller or task-specialized models.
+The request package should carry enough context for the model to act with less ambiguity without loading unrelated history. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) frames repository understanding as request packaging, context assembly, retrieval, and verification evidence. The [Hypervelocity Engineering source](../../../raw/processed/Hypervelocity engineer @edandersen.md) describes context engineering as supplying project data, conventions, and documentation so AI work becomes more accurate and can use smaller or task-specialized models.
 
 The local boundary is practical: context engineering decides what to include, [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) decide where stable guidance lives, and [request packages and file boundaries](request-packages-and-file-boundaries.md) decide how the selected material is labeled inside the request.
 
@@ -20,6 +20,8 @@ The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-d
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a story-file and semantic-layer signal. Spec-driven agent workflows need context packages that bind requirements, architecture, role responsibilities, and implementation story state into a handoff artifact. Data-agent and analytics workflows need governed semantics, source truth, and execution monitoring so retrieved business data does not become unsupported model guesswork.
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds governed sensitive-code request constraints. A request package for sensitive-code work should include approved runtime, network posture, credential boundary, audit expectation, and human approval checkpoints instead of relying only on ordinary task context.
+
+The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds production context-contract evidence. Request packages should state source authority, freshness, just-in-time retrieval rules, destructive-action approval requirements, and compact working state so later compaction or handoff preserves decisions rather than raw transcript volume.
 
 ## Practice Boundaries
 
@@ -34,6 +36,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Include governed semantic definitions and source-truth labels when agents retrieve business metrics or analytics context.
 - Include runtime, network, credential, audit, and approval constraints when the request asks an agent to work on sensitive code.
 - Label setup commands, repository metadata, and tool context as evidence unless the task authority explicitly permits acting on them.
+- Include source authority, freshness, destructive-action approval requirements, and compact current decision state when a task may be resumed, compacted, or delegated.
 
 ## Authoritative Sources
 
@@ -45,6 +48,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -74,3 +78,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-06-25 with issue, RFC, instruction, reference, API, verification, and handoff evidence for default coding-agent use.
 - Maintained on 2026-07-04 with story-file handoffs and governed semantic context for data-agent workflows.
 - Maintained on 2026-07-08 with sensitive-code runtime, network, credential, audit, approval, and setup-command request constraints.
+- Maintained on 2026-07-28 with source-authority, freshness, approval-token, and compact working-state guidance for production context contracts.

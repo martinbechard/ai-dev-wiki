@@ -35,6 +35,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 
 The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds coding-agent observability evidence. Agent telemetry should join prompts, agent sessions, pull requests, standards checks, cost, quality, MCP activity, and production or incident signals so adoption and reliability reviews can trace what an AI coding session changed and whether the workflow improved.
 
+The July 28 raw sources add IDE agent telemetry and adoption-reporting evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) supports per-user and surface-level usage joins, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds IDE-hosted OpenTelemetry export, token-limit controls, MCP diagnostics, custom-agent routing, CLI session forks, and durable todo/progress surfaces.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -58,6 +60,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Distinguish task links, current run state, review annotations, generated visualizations, computer-use activity, and runtime-only patch updates in progress surfaces.
 - Avoid presenting version-only or no-user-facing-change runtime updates as workflow progress for the user's task.
 - Join prompt, session, pull-request, standards-check, cost, quality, MCP, and production-signal telemetry when coding-agent observability is used for rollout or reliability decisions.
+- Join per-user adoption reports with IDE telemetry, token budgets, MCP diagnostics, custom-agent routes, session forks, and todo/progress state when agent work can cross surfaces.
+- Keep token-limit changes, model enablement, MCP diagnostics, and telemetry export settings visible as runtime controls, not only developer preferences.
 
 ## Authoritative Sources
 
@@ -76,6 +80,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -114,3 +120,4 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Maintained on 2026-07-10 with bounded-loop progress, output-path checks, trace saliency, and earliest-error diagnostics.
 - Maintained on 2026-07-14 with task-link, review-annotation, visualization, computer-use, and runtime-only update progress boundaries.
 - Maintained on 2026-07-25 with coding-agent observability joins across prompts, sessions, pull requests, standards checks, cost, quality, MCP, and production signals.
+- Maintained on 2026-07-28 with per-user adoption, IDE OpenTelemetry, token-limit, MCP diagnostic, custom-agent, session-fork, and todo/progress telemetry guidance.

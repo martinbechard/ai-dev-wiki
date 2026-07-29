@@ -19,6 +19,8 @@ The [Chat SDK clipping](../../../raw/processed/Universal chat layer for building
 
 The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json) adds long-running runtime and memory signals. Agent applications should separate model context from durable execution history, event logs, human waits, state buckets, memory retention, and update semantics. Runtime frameworks, memory products, and cloud services stay upstream-owned; locally, the process layer must decide which state is authoritative, resumable, visible, and eligible for rehydration.
 
+The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md). This page keeps the process-layer boundary: runtime state, approval state, and checkpoint authority still need application ownership when orchestration is loaded from a workflow artifact.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -32,6 +34,7 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Treat rich chat cards, streamed responses, and channel posts as workflow outputs that need the same provenance and approval handling as other agent artifacts.
 - Separate model context from durable execution history, event logs, human waits, memory retention, and update semantics.
 - Define which state bucket is authoritative before a long-running agent workflow resumes, retries, or asks for human input.
+- Use [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md) when branching, human approvals, checkpoints, and tool-call policy need source review before runtime execution.
 
 ## Authoritative Sources
 
@@ -42,6 +45,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 
 ## Related Code
 
@@ -71,3 +76,4 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 - Maintained on 2026-07-02 with operational-readiness, workflow-memory, citation, logging, approval, and handoff-state requirements.
 - Maintained on 2026-07-06 with collaboration-channel event, thread, adapter, streamed-response, and follow-up state requirements.
 - Maintained on 2026-07-07 with long-running execution history, event-log, human-wait, state-bucket, and memory-retention boundaries.
+- Maintained on 2026-07-28 with declarative workflow, branching, tool-call, human-approval, checkpoint, and resume-state guidance.

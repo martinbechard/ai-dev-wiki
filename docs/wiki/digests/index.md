@@ -2,7 +2,7 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The current July digest includes the July 27 synthesis for layered review, progressive MCP discovery, execution-boundary selection, telemetry joins, executable instructions, and runtime governance.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The current July digest includes item-level July 28 entries for managed policy, telemetry, CI approvals, supply-chain gates, remote skills, harness sizing, workflow artifacts, context contracts, and eval gates.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
@@ -51,3 +51,4 @@ This digest hub is downstream of raw source ingest. Public collectors and leaf w
 - Maintained on 2026-07-25 with the July 25 raw ingest digest scope.
 - Maintained on 2026-07-26 with the July 26 raw ingest digest scope.
 - Maintained on 2026-07-27 with the July 27 raw ingest digest scope.
+- Maintained on 2026-07-28 with the July 28 raw ingest digest scope.

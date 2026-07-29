@@ -39,6 +39,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) adds sandbox-escape, repository-config, compromised-agent, and dataset-processing attack evidence. Untrusted content includes agent-written files, repository metadata, hookable configuration, data-processing inputs, and connected-app content that may be read later by trusted host components or enterprise tools.
 
+The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) adds suspicious CI workflow approval evidence, while the [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds poisoned operational inputs, MCP/tool poisoning, and persistent agent-configuration evidence. Coding agents routinely ingest issues, error reports, logs, dependency metadata, MCP registrations, and workflow files; those inputs should remain evidence until integrity, authority, credential-scope, egress, and review checks permit action.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -68,6 +70,8 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - Require independent source and path verification before an agent follows a generated URL, writes through a filesystem link, or acts on hidden image or binary instructions.
 - Test indirect prompt injection across repository, browser, file, tool-output, ticket, and connected-app surfaces before expanding agent tool authority.
 - Keep automated red-team findings tied to human triage, missed-attack review, and harness policy changes instead of treating generated attacks as complete coverage.
+- Treat CI workflow files, agent configuration, MCP registrations, issue/error/log metadata, and dependency metadata as untrusted instruction surfaces until integrity and authority checks pass.
+- Require allowlisted tool surfaces, scoped credentials, controlled egress, and human review when untrusted operational content can steer a coding agent toward persistent configuration or CI side effects.
 
 ## Authoritative Sources
 
@@ -89,6 +93,8 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -118,6 +124,7 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with agent-written file, repository metadata, hookable configuration, dataset-processing, and connected-app trust boundary guidance.
+- Maintained on 2026-07-28 with CI workflow tampering, agent-configuration integrity, MCP registration, scoped-credential, and egress-control boundaries.
 - Created on 2026-06-23 to separate prompt-injection and untrusted-content practice from the broader governance-controls page.
 - Maintained on 2026-06-24 with MCP and tool-output trust-boundary guidance for coding-agent workflows.
 - Maintained on 2026-06-25 with agentjacking and credential-broker controls for MCP-connected coding-agent workflows.

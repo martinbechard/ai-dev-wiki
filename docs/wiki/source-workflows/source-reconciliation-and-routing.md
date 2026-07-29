@@ -33,6 +33,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) and [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) keep broad ecosystem entities upstream-owned while retaining local practice leaves.
 
+The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) and [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) keep broad ecosystem entities upstream-owned. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [xAI](../../../upstream-ai-wiki/companies/xai.md), the [Grok model family](../../../upstream-ai-wiki/models/grok-model-family.md), [Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md), [MCP observability](../../../upstream-ai-wiki/techniques/mcp-observability.md), and the [upstream MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md) own broad product, company, model, framework, protocol, and observability background.
+
 Upstream routing:
 
 - [Amazon AI](../../../upstream-ai-wiki/companies/amazon-ai.md), [Google AI](../../../upstream-ai-wiki/companies/google-ai.md), [Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md), [Oracle](../../../upstream-ai-wiki/companies/oracle.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Mastra](../../../upstream-ai-wiki/agentic-frameworks/mastra.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), the upstream [AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md), and the upstream [MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md) own broad product, company, framework, and MCP-server coverage.
@@ -41,6 +43,11 @@ Upstream routing:
 Local routing:
 
 - Local pages keep [layered AI code review roles](../coding-practices/layered-ai-code-review-roles.md), [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md), [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md), [coding agent runtime updater integrity](coding-agent-runtime-updater-integrity.md), [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md), [file-oriented enterprise builder workflows](../application-patterns/file-oriented-enterprise-builder-workflows.md), [deep research and writing workflows](../agent-workflows/deep-research-and-writing-workflows.md), [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md), [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md), and [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
+- July 28 telemetry routing stays local in [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md) and [user-visible progress and runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md).
+- July 28 approval and governance routing stays local in [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md), [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md), and [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md).
+- July 28 tool routing stays local in [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md), [remote MCP skill discovery and governance](../retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md), and [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md).
+- July 28 harness and context routing stays local in [application harness patterns](../application-patterns/application-harness-patterns.md), [harness sizing by workflow complexity](../application-patterns/harness-sizing-by-workflow-complexity.md), [AI process layer and workflow state](../application-patterns/ai-process-layer-and-workflow-state.md), [declarative agent workflow artifacts](../application-patterns/declarative-agent-workflow-artifacts.md), and [context engineering for request packages](../prompt-and-instructions/context-engineering-for-request-packages.md).
+- July 28 risk and eval routing stays local in [prompt injection and untrusted content](../governance-and-risk/prompt-injection-and-untrusted-content.md), [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md), [destructive command controls](../governance-and-risk/destructive-command-controls.md), and [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md).
 
 ## Practice Boundaries
 
@@ -61,6 +68,7 @@ Local routing:
 - Recheck weak date evidence before durable synthesis; keep misdated or snippet-only items as routing notes unless official source-page evidence supports the ingest window.
 - Route July 26 product, benchmark, model, company, regulation, and coding-agent tool entities upstream while retaining local practice for evaluation, governance, instruction, memory, cost, supervision, and review controls.
 - Route July 27 vendor, MCP server, IDE, coding-agent, and enterprise-product updates upstream while retaining linked local leaves for review-role, tool-discovery, telemetry, instruction, updater, CI, workflow, and governance practice.
+- Route July 28 product, company, model, framework, IDE, MCP, and observability-tool updates upstream while retaining local managed-policy, telemetry, approval, supply-chain, context, harness, and eval practice.
 
 ## Authoritative Sources
 
@@ -91,6 +99,8 @@ Local routing:
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -117,6 +127,7 @@ Local routing:
 - The upstream AI wiki does not yet have GitLab, JetBrains, WebStorm, GoLand, or Cursor product entity leaves to link for the July 17 routing note.
 - The upstream AI wiki does not yet have dedicated entity leaves for July 26 benchmark sources such as Tokoscope, DeepSWE, GLSRM, Coding Agents Index, or the open-source coding-agent comparison set; route them through the upstream coding-agents, model, or technique hubs until entity leaves exist.
 - The upstream AI wiki does not yet have dedicated local links for Endor Labs, Apideck, Box, or Visual Studio Code in the July 27 source-routing note; route through upstream company, developer-tool, coding-agent, or MCP hubs until those leaves exist.
+- The upstream AI wiki owns July 28 GitHub, Copilot, GitHub Actions, Dependabot, OpenSSF, Grok, xAI, Microsoft Agent Framework, MCP, OpenTelemetry, IDE, and framework background; use upstream hubs if exact entity leaves are missing.
 
 ## Maintenance Notes
 
@@ -129,3 +140,4 @@ Local routing:
 - Maintained on 2026-07-17 with broad-entity routing for product, vendor, framework, benchmark, and weak-date evidence, including non-promotion of the Cursor mobile item.
 - Maintained on 2026-07-26 with upstream routing for products, benchmarks, models, companies, regulations, and coding-agent tools while retaining local evaluation, governance, instruction, memory, cost, supervision, and review controls.
 - Maintained on 2026-07-27 with upstream routing for vendor, MCP server, IDE, and coding-agent entities while retaining local practice implications.
+- Maintained on 2026-07-28 with upstream routing for product, company, model, framework, IDE, MCP, and observability entities while retaining local governance, telemetry, approval, supply-chain, context, harness, and eval practice.

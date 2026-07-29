@@ -12,6 +12,7 @@ This topic does not catalog MCP servers or tool products. It records how retriev
 - [rag-provenance-ranking-and-chunking.md](rag-provenance-ranking-and-chunking.md) records RAG source provenance, chunking, hybrid retrieval, and reranking practice.
 - [tool-call-and-mcp-governance.md](tool-call-and-mcp-governance.md) records client action tools, dynamic context tools, and MCP governance boundaries.
 - [progressive-mcp-tool-discovery.md](progressive-mcp-tool-discovery.md) records on-demand tool-schema discovery, context budgeting, scoped permissions, managed OAuth, and invocation logs.
+- [remote-mcp-skill-discovery-and-governance.md](remote-mcp-skill-discovery-and-governance.md) records remote skill package provenance, approval defaults, diagnostics, and central governance.
 - [rag-tools-and-mcp-practice.md](rag-tools-and-mcp-practice.md) connects the retrieval and tool leaves as the local practice overview.
 
 ## Authoritative Sources
@@ -47,3 +48,4 @@ This topic does not catalog MCP servers or tool products. It records how retriev
 - Created on 2026-06-23 as the local owner for retrieval and tool-use practice.
 - Maintained on 2026-06-23 to separate code retrieval, RAG provenance, and tool governance into durable leaves.
 - Maintained on 2026-07-27 with progressive MCP tool discovery as a durable leaf.
+- Maintained on 2026-07-28 with remote MCP skill discovery and governance as a durable leaf.

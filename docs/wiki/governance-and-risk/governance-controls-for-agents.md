@@ -58,6 +58,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) and [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) add scoped discovery and enterprise content-control signals. Progressive tool discovery, field-level scopes, managed OAuth, content labels, action vetting, prompt-injection detection, audit trails, alerts, and high-impact approval holds should be enforced by the runtime around the agent.
 
+The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) and [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) add managed-policy, dependency, and CI gate evidence. Cross-client model, plugin, marketplace, approval-bypass, token-limit, telemetry, and remote-skill policy routes through [agent governance infrastructure](agent-governance-infrastructure.md) and [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md). Malware-specific package alerts route through [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md), while CI execution holds route through [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md).
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -107,6 +109,7 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Require policy-backed enforcement for approval panels, confidence scores, and rationale displays before treating them as security-relevant controls.
 - Audit fallback routing and mid-conversation tool-list changes when they can alter model choice, allowed actions, cache behavior, or execution path.
 - Enforce field-level scopes, action vetting, prompt-injection screening, audit trails, and approval holds in the runtime when agents act on enterprise content or discovered tools.
+- Enforce managed model, plugin, marketplace, approval-bypass, telemetry, token-limit, remote-skill, CI execution, and malware-alert policies consistently across agent clients and IDE surfaces.
 
 ## Authoritative Sources
 
@@ -148,6 +151,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -201,3 +206,4 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Maintained on 2026-07-22 with inventory, revocation, agent identity, just-in-time access, and sandbox-boundary control evidence.
 - Maintained on 2026-07-24 with approval-panel enforcement limits, sandbox-escape validation, tool-list mutation, and fallback-routing governance.
 - Maintained on 2026-07-27 with progressive-discovery and enterprise-content runtime control guidance.
+- Maintained on 2026-07-28 with cross-client managed policy, CI execution approval, telemetry, token-limit, remote-skill, and malware-alert policy guidance.

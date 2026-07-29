@@ -15,17 +15,21 @@ The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-de
 
 This page owns the downstream destructive-action enforcement rule. [Terminal agent workflows](../agent-workflows/terminal-agent-workflows.md) owns terminal-session workflow shape, [agent governance infrastructure](agent-governance-infrastructure.md) owns policy enforcement and audit, and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns the human decision boundary.
 
+The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds runtime approval-token evidence. Destructive-action controls should be enforced by the runtime as source-aware approval tokens or equivalent policy decisions, so untrusted context, retrieved logs, or model wording cannot silently authorize deletion, dependency mutation, network changes, or other side effects.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
 - Preserve the proposed command, detected risk class, denial reason, terminal session, current workspace, and operator-visible decision in the run record.
 - Deny or escalate destructive commands when the local harness cannot explain the target scope, intended side effect, or recovery path.
 - Route shell-aware parsing, normalization, sandboxing, approval semantics, and command-audit architecture to the upstream shell command safety technique.
+- Require runtime-held approval evidence for destructive or high-impact actions; prompt text and retrieved context are not approval tokens.
 
 ## Authoritative Sources
 
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -56,3 +60,4 @@ This page owns the downstream destructive-action enforcement rule. [Terminal age
 ## Maintenance Notes
 
 - Created on 2026-07-17 from public raw artifacts about terminal-agent forced-removal detection and denial reasons, with broader command-safety controls routed to the upstream AI wiki.
+- Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.

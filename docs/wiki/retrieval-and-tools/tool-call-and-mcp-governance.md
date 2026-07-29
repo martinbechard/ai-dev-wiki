@@ -63,6 +63,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) reinforces runtime governance for content agents. Permission blocking, label-based access, prompt-injection screening, audit trails, threshold alerts, and approval holds for high-impact actions belong in the tool-control layer, not only in prompt guidance.
 
+The July 28 raw sources add cross-client and remote-skill tool governance evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) records managed settings for plugins, marketplaces, approval bypasses, and model routing across agent clients, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) records MCP-discovered skills, token-limit controls, MCP diagnostics, and custom-agent routing as governed tool surfaces.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -122,6 +124,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Require explicit data-coverage checks when an MCP-connected agent has bounded context and the task needs complete dataset operations.
 - Route on-demand tool-schema selection through [progressive MCP tool discovery](progressive-mcp-tool-discovery.md) when large tool catalogs would waste context or expand action scope.
 - Treat content-agent guardrails as runtime controls that can block actions, screen untrusted content, and hold high-impact operations for approval.
+- Apply managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, and custom-agent policies consistently across IDE, CLI, app, cloud-agent, and remote-skill surfaces.
+- Treat remote MCP skills as governed tool packages whose publisher, archive bounds, allowed tool scope, approval defaults, and diagnostics need review before use.
 
 ## Authoritative Sources
 
@@ -166,6 +170,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -220,3 +226,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-07-24 with MCP conformance, mid-conversation tool-surface, fallback-routing, and cache-assumption guidance.
 - Maintained on 2026-07-25 with regulated MCP gateway criteria, bounded-context data-coverage checks, and fallback/tool-surface audit guidance.
 - Maintained on 2026-07-27 with progressive MCP discovery, field-scope, managed-OAuth, API-log, and content-agent guardrail guidance.
+- Maintained on 2026-07-28 with cross-client managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, custom-agent, and remote-skill controls.

@@ -11,7 +11,7 @@ tags: ["governance-and-risk"]
 
 Sensitive data and supply-chain controls protect prompts, raw artifacts, tools, dependencies, models, and third-party source material. The local rule is to keep secrets, credentials, PII, company-internal content, proprietary source, and license-sensitive material out of prompts and public raw artifacts unless the human explicitly approves that use.
 
-Package installs and third-party artifacts deserve explicit review because they can introduce vulnerable, malicious, unnecessary, or license-incompatible dependencies. The same supply-chain lens applies to model artifacts, training data, retrieved source collections, MCP servers, browser extensions, workflow plugins, and copied prompt or skill libraries. HVE Core is useful as a source example because it exposes license, third-party notice, security, governance, and responsible-AI signals alongside reusable agent artifacts.
+Package installs and third-party artifacts deserve explicit review because they can introduce vulnerable, malicious, unnecessary, or license-incompatible dependencies. The same supply-chain lens applies to model artifacts, training data, retrieved source collections, MCP servers, browser extensions, workflow plugins, and copied prompt or skill libraries. [HVE Core](../../../raw/processed/microsoft-hve-core.md) is useful as a source example because it exposes license, third-party notice, security, governance, and responsible-AI signals alongside reusable agent artifacts.
 
 The [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) adds agent-configuration risk: coding-agent tool manifests, skills, MCP servers, tool descriptions, and editor or workspace connectors are supply-chain inputs. They need provenance, review, inventory, and change detection because prompt injection or malicious behavior can live in tool descriptions and reusable agent artifacts, not only in package code.
 
@@ -50,6 +50,8 @@ The July 19-21 raw sources add generated-dependency, private-inference, and agen
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) and [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json) add deterministic guardrail, sandbox-escape, SANDWORM_MODE, agentic incident, and AI-generated-code security evidence. Supply-chain controls should treat agent-authored commits like untrusted external contributions, enforce provenance and PR policy, model command side effects and repository-config writes, monitor package tokens and AI toolchains, and keep containment, egress, and package access outside model discretion.
 
 The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) adds agent-workstation and developer-toolchain evidence. AI-assisted development controls should cover developer machines, IDE extensions, package registries, CI/CD egress, pull requests, default branches, and fleet-wide incident checks because agents can accelerate both legitimate software changes and attacker movement across those surfaces.
+
+The July 28 raw sources add malware-advisory and agent-configuration supply-chain evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) treats malware-specific package alerts as distinct from CVE-style vulnerability alerts, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) reinforces that MCP registrations, dependency trees, CI workflows, and agent configuration files are persistent instruction and execution surfaces. Local dependency gates should review malware advisory type, registry provenance, lockfile impact, and generated install intent before accepting agent-authored package changes.
 
 ## Practice Boundaries
 
@@ -94,12 +96,16 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 - Review private-inference and hosted-agent paths for source retention, training-use terms, jurisdiction, reviewer access, approval, and auditability before proprietary code enters prompts.
 - Pair agentic application controls with goal constraints, untrusted-content handling, AIBOM provenance, sandboxing, behavioral monitoring, and kill switches when agents can affect IDE, CLI, or pull-request workflows.
 - Extend AI-assisted development supply-chain controls to agent workstations, IDE extensions, package registries, CI/CD egress, pull requests, default branches, and fleet-wide incident checks.
+- Separate malware-specific dependency alerts from ordinary vulnerability alerts when reviewing agent-authored install, update, or lockfile changes.
+- Treat MCP registrations, CI workflows, and agent configuration files as persistent supply-chain inputs that need provenance, integrity monitoring, scoped credentials, and review before agent use.
 
 ## Authoritative Sources
 
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -162,6 +168,7 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 
 - Maintained on 2026-07-23 with deterministic guardrails, sandbox escapes, SANDWORM_MODE, untrusted AI-authored commit, package-token, egress, and containment guidance.
 - Maintained on 2026-07-25 with agent-workstation, IDE extension, package registry, CI/CD egress, PR, default-branch, and fleet-incident supply-chain controls.
+- Maintained on 2026-07-28 with malware-specific dependency alerts, MCP registration integrity, agent configuration, CI workflow, and lockfile review controls.
 - Created on 2026-06-23 to separate sensitive-data, package-install, dependency, model-artifact, source, and licensing controls from the broader governance-controls page.
 - Maintained on 2026-06-24 with agent skill, tool manifest, MCP server, and connector configuration supply-chain controls.
 - Maintained on 2026-06-25 with marketplace allowlists, runtime agent-security checks, and credential-broker controls for agent tooling.

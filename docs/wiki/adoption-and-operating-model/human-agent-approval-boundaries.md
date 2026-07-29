@@ -37,6 +37,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) sharpens the approval boundary: issue automation approvals are workflow convenience unless backed by independent policy enforcement. A confidence score, rationale, or suggested state change can help humans review agent work, but it is not itself a security control.
 
+The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) adds client-specific access and CI execution-hold evidence. Teams can enable an agent client separately from a CLI, but isolated workspaces, pull-request handoff, and suspicious-workflow approval holds still need write-access or owner review before generated changes or CI side effects become trusted workflow state.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -62,11 +64,14 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Route destructive-command and performance-optimization approvals through their focused control pages when command risk or measurement evidence changes the decision.
 - Distinguish review convenience from enforceable authorization; approval UI alone does not replace policy, permissions, audit, and ownership controls.
 - Treat low-confidence or weak-rationale suggestions as review prompts, not as authority to mutate workflow state.
+- Stage agent-client rollout separately from CLI or IDE access when the workflow, isolated workspace, pull-request handoff, and reviewer capacity differ.
+- Require owner or write-access approval before suspicious agent-authored workflow changes execute CI or reach credentials.
 
 ## Authoritative Sources
 
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -115,6 +120,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 - Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Maintained on 2026-07-24 with the distinction between workflow-convenience approvals and enforceable security controls.
+- Maintained on 2026-07-28 with client-specific access rollout, isolated-workspace PR handoff, and CI workflow approval-hold guidance.
 - Created on 2026-06-23 from source-backed approval, delegation, and human-accountability guidance.
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.

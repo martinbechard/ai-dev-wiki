@@ -61,6 +61,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add workflow-security and supervision-channel evidence. Governance infrastructure should keep autonomous coding work visible across its security and supervision path.
 
+The July 28 raw sources add cross-client managed-policy and suspicious-workflow control evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) records enterprise policy surfaces for model enablement, agent-client access, managed settings, plugin marketplaces, approval-bypass controls, and CI workflow approval holds. The [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) reinforces governed remote skills and IDE telemetry controls. Local governance infrastructure should distribute policy across cloud agents, apps, IDEs, CLIs, and MCP skill loaders so one surface cannot bypass another.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -112,6 +114,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Treat governed-agent gateways and trace issue monitors as runtime control planes when they enforce cost, permission, data-boundary, policy, and failure-category evidence across model, tool, MCP, and agent-to-agent hops.
 - Preserve centralized visibility across generation, test, review, merge, and deployment before scaling autonomous coding volume.
 - Record voice steering, usage monitors, model-router decisions, refusal paths, and subagent handoffs when they affect supervision or audit evidence.
+- Distribute model policy, plugin marketplace rules, approval-bypass settings, client access, token limits, and telemetry export rules consistently across cloud, app, IDE, CLI, and MCP skill-loading surfaces.
+- Hold suspicious or high-impact agent-authored workflow execution until policy and owner approval evidence are recorded.
 
 ## Authoritative Sources
 
@@ -157,6 +161,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
+- [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 
 ## Related Code
 
@@ -212,3 +218,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-17 with current permission inventories, revocation paths, centralized discovery, audit integrity, dependency visibility, and agent-traffic monitoring.
 - Maintained on 2026-07-22 with readiness checklists, policy-as-code, gateway-level runtime controls, trace issue detection, incident readiness, and kill-switch evidence.
 - Maintained on 2026-07-26 with workflow-security visibility, supervision-channel records, usage monitors, model-router decisions, refusal paths, and subagent handoff audit evidence.
+- Maintained on 2026-07-28 with cross-client managed policy, model enablement, plugin marketplace, approval bypass, CI approval hold, token-limit, telemetry-export, and remote-skill governance evidence.
