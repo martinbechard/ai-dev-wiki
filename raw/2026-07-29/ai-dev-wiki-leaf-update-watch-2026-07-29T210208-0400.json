@@ -1,0 +1,556 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "policy": "Include only public sources with visible publication or update dates inside the last seven days. Exclude missing, ambiguous, future-dated, or boundary-only dates.",
+    "timezone": "America/Toronto",
+    "window_end": "2026-07-29T21:02:08-04:00",
+    "window_start": "2026-07-22T21:02:08-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "reason": "Date-only July 22 is boundary-only relative to 2026-07-22T21:02:08-04:00 cutoff; cannot prove it was published after cutoff.",
+      "source_title": "The Microsoft Agent Framework Harness is now released",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "visible_date": "2026-07-22"
+    },
+    {
+      "reason": "Outside strict seven-day window for this run.",
+      "source_title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
+      "source_url": "https://www.alphaxiv.org/abs/2607.18161",
+      "visible_date": "2026-07-20"
+    },
+    {
+      "reason": "Outside strict seven-day window for this run.",
+      "source_title": "What are the best AI code review tools in 2026?",
+      "source_url": "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/",
+      "visible_date": "2026-07-09"
+    },
+    {
+      "reason": "Outside strict seven-day window for this run.",
+      "source_title": "Building a Document Q&A Agent: Architecture, Trade-offs, and Common Failures",
+      "source_url": "https://www.extend.ai/resources/building-document-qa-agent-architecture-tradeoffs-failures",
+      "visible_date": "2026-07-07"
+    },
+    {
+      "reason": "Outside strict seven-day window for this run.",
+      "source_title": "What is Structured Output?",
+      "source_url": "https://agentspan.ai/glossary/structured-output/",
+      "visible_date": "2026-07-06"
+    },
+    {
+      "reason": "Future-dated relative to run timestamp; excluded even though search result matched generated-code refactoring.",
+      "source_title": "RepoAI: Automated code refactoring through multi-agent LLM orchestration and retrieval-augmented generation",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0167642326000432",
+      "visible_date": "August 2026"
+    },
+    {
+      "reason": "Original source date is outside the window; provider observation timestamps are not a visible content publication/update date for the paper.",
+      "source_title": "TDAD: Test-Driven Agentic Development",
+      "source_url": "https://commonplace.workforcefutures.net/paper/arxiv%3A2603.17973",
+      "visible_date": "March 18, 2026 with July 22/23 provider observations"
+    }
+  ],
+  "federation_routing": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, workflows, verification, governance, and adoption patterns.",
+    "upstream_owned_entities": [
+      "Azure",
+      "Claude Code",
+      "Codex",
+      "Codex CLI",
+      "DiskANN",
+      "Gemini CLI",
+      "Microsoft Agent Framework",
+      "Microsoft Foundry Toolbox",
+      "Model Context Protocol",
+      "Ollama",
+      "OpenAI",
+      "OpenCode",
+      "OpenHands",
+      "Roo Code",
+      "Scality"
+    ],
+    "upstream_scope": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques stay upstream in the AI wiki."
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; ingest workflow owns durable synthesis and raw/processed moves.",
+    "Corroborate secondary commentary sources before making normative wiki guidance.",
+    "Prefer official OpenAI changelog for the multi-folder Codex item if accessible during ingest."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "qualified_update_ids": [
+        "2026-07-23-microsoft-agent-framework-declarative-workflows-1-0"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+        "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "leaf_id": "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+      "qualified_update_ids": [],
+      "result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+        "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "qualified_update_ids": [
+        "2026-07-28-microsoft-agent-skills-from-mcp"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+        "https://twiscan.com/en/x/OpenAIDevs"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "qualified_update_ids": [
+        "2026-07-23-microsoft-agent-framework-declarative-workflows-1-0"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+        "https://agentspan.ai/glossary/structured-output/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+      "qualified_update_ids": [
+        "2026-07-28-microsoft-agent-skills-from-mcp"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+        "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/coding-practices/ai-assisted-tdd.md",
+      "qualified_update_ids": [
+        "2026-07-23-acceptance-test-gauntlet-for-ai-code"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.explainx.ai/blog/uncle-bob-ai-coding-gauntlet-tests-not-reviews-july-2026",
+        "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-july-23-2026/",
+        "https://commonplace.workforcefutures.net/paper/arxiv%3A2603.17973"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "qualified_update_ids": [],
+      "result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://www.alphaxiv.org/abs/2607.18161",
+        "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf.",
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "qualified_update_ids": [],
+      "result": "no_qualified_update_found",
+      "source_urls_checked": [
+        "https://www.alphaxiv.org/abs/2607.18161",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0167642326000432"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "qualified_update_ids": [
+        "2026-07-23-acceptance-test-gauntlet-for-ai-code"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.explainx.ai/blog/uncle-bob-ai-coding-gauntlet-tests-not-reviews-july-2026",
+        "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "qualified_update_ids": [
+        "2026-07-29-codex-context-compaction-showdown",
+        "2026-07-29-codex-compaction-architecture"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+        "https://codex.danielvaughan.com/2026/03/31/codex-cli-context-compaction-architecture/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "qualified_update_ids": [
+        "2026-07-29-codex-context-compaction-showdown",
+        "2026-07-23-openai-devs-codex-multifolder-primary-folder"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://twiscan.com/en/x/OpenAIDevs",
+        "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "qualified_update_ids": [
+        "2026-07-29-codex-context-compaction-showdown",
+        "2026-07-29-codex-compaction-architecture"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+        "https://codex.danielvaughan.com/2026/03/31/codex-cli-context-compaction-architecture/",
+        "https://github.com/openai/codex/issues/25792"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+      "qualified_update_ids": [
+        "2026-07-23-openai-devs-codex-multifolder-primary-folder"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://twiscan.com/en/x/OpenAIDevs",
+        "https://community.openai.com/t/using-chatgpt-for-planning-vs-codex/1382876/36"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+      "qualified_update_ids": [
+        "2026-07-23-openai-devs-codex-multifolder-primary-folder"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://twiscan.com/en/x/OpenAIDevs",
+        "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "qualified_update_ids": [
+        "2026-07-29-scality-rag-storage-provenance"
+      ],
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.solved.scality.com/rag-data-storage-for-enterprise-ai/",
+        "https://www.extend.ai/resources/building-document-qa-agent-architecture-tradeoffs-failures"
+      ]
+    }
+  ],
+  "leaf_universe_count": 77,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Microsoft announced Agent Framework Declarative Workflows 1.0 for Python and .NET, describing YAML workflow definitions for agent coordination, state changes, branching, human handoffs, checkpoints, resume, and Function/MCP/HTTP tool steps.",
+      "follow_up_note": "If ingested, route framework background upstream and keep only the local practice rule for reviewable orchestration artifacts.",
+      "id": "2026-07-23-microsoft-agent-framework-declarative-workflows-1-0",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "local_practice_implication": "For durable workflow leaves, preserve review gates around workflow definitions, branch conditions, human handoffs, checkpoint state, and tool steps before runtime use.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Declarative Workflows",
+        "Python",
+        " .NET",
+        "YAML",
+        "Power Fx",
+        "MCP"
+      ],
+      "publisher": "Microsoft Agent Framework Blog",
+      "source_title": "Move Agent Orchestration/Workflows out of Code with Agent Framework Declarative Workflows 1.0",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-07-23",
+      "visible_date_basis": "Search result and Microsoft blog category page show July 23, 2026; direct page was intermittently blocked, but search extract exposed the dated article text.",
+      "why_it_matters_for_leaf": "Declarative workflow files strengthen the local rule that orchestration artifacts should be reviewed, versioned, and treated as executable contracts rather than hidden control flow."
+    },
+    {
+      "factual_summary": "Microsoft described .NET support for discovering and loading Agent Skills from MCP servers, including skill-md and archive distribution, authenticated retrieval, central publication, archive size/file-count limits, blocked archive script execution, and approval defaults for skill tools.",
+      "follow_up_note": "Good candidate for remote MCP skill discovery leaf; avoid duplicating broad MCP or Microsoft product coverage.",
+      "id": "2026-07-28-microsoft-agent-skills-from-mcp",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "local_practice_implication": "Treat remote skills as code-adjacent supply-chain inputs with publisher review, package limits, approval defaults, and central policy ownership.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Microsoft.Agents.AI.Mcp",
+        "Microsoft Foundry Toolbox"
+      ],
+      "publisher": "Microsoft Agent Framework Blog",
+      "source_title": "Discover Agent Skills from MCP servers in .NET",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Model Context Protocol",
+        "Microsoft Foundry Toolbox"
+      ],
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Article header lists July 28th, 2026.",
+      "why_it_matters_for_leaf": "Remote skill discovery can change agent capabilities at runtime, so local MCP governance needs provenance, archive bounds, approval state, and diagnostics before agents use discovered skills."
+    },
+    {
+      "factual_summary": "The article compares extract-style compaction with event-store compaction, names compaction thresholds across several coding agents, and argues that destructive summarization can accumulate information loss while event-sourced histories preserve replay and audit paths.",
+      "follow_up_note": "Use as downstream practice evidence only; product-by-product cataloging belongs upstream.",
+      "id": "2026-07-29-codex-context-compaction-showdown",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "local_practice_implication": "Record compaction events, preserve task state and authority rules outside lossy summaries, and prefer auditable state stores for long-running governed work.",
+      "named_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenCode",
+        "Roo Code",
+        "Pi",
+        "OpenHands"
+      ],
+      "publisher": "Codex Knowledge Base",
+      "source_title": "Context Compaction Showdown: How Codex CLI, Claude Code, and 5 Other Agents Handle Full Context Windows",
+      "source_url": "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenCode",
+        "Roo Code",
+        "OpenHands"
+      ],
+      "visible_date": "2026-07-29",
+      "visible_date_basis": "Page header says published April 10, 2026 and updated July 29, 2026.",
+      "why_it_matters_for_leaf": "Local context architecture guidance should preserve originals or recovery paths when compacted summaries drive code, review, security, or governance decisions."
+    },
+    {
+      "factual_summary": "The article describes pre-turn and mid-turn compaction triggers in an agent loop and contrasts OpenAI-hosted server-side compaction with local summary fallback behavior for non-OpenAI providers.",
+      "follow_up_note": "Corroborate with official Codex docs before normative product-specific claims; local lens can still use the trigger-pattern implication.",
+      "id": "2026-07-29-codex-compaction-architecture",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "local_practice_implication": "Long-running tasks should keep explicit acceptance criteria, current status, source paths, and blockers in durable notes that compaction can reconstruct.",
+      "named_entities": [
+        "Codex CLI",
+        "OpenAI",
+        "Ollama",
+        "Azure"
+      ],
+      "publisher": "Codex Knowledge Base",
+      "source_title": "Codex CLI Context Compaction: Architecture, Configuration, and Managing Long Sessions",
+      "source_url": "https://codex.danielvaughan.com/2026/03/31/codex-cli-context-compaction-architecture/",
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "OpenAI",
+        "Ollama",
+        "Azure"
+      ],
+      "visible_date": "2026-07-29",
+      "visible_date_basis": "Page header says published March 31, 2026 and updated July 29, 2026.",
+      "why_it_matters_for_leaf": "Compaction is runtime control flow, not just storage cleanup; local guidance should require pending requests, approval boundaries, and project rules to survive compaction triggers."
+    },
+    {
+      "factual_summary": "The article separates production RAG storage into source archive, parsed chunk store, embedding store, vector index, keyword index, metadata layer, and retention archive, and emphasizes provenance, access control, versioning, freshness, and latency as storage-layer concerns.",
+      "follow_up_note": "Use as implementation commentary; pair with primary architecture or vendor docs before durable synthesis.",
+      "id": "2026-07-29-scality-rag-storage-provenance",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "local_practice_implication": "Preserve source archives, parsed chunks, embedding versions, authority metadata, ACLs, and freshness checks when RAG evidence influences agent outputs.",
+      "named_entities": [
+        "Scality",
+        "RAG",
+        "BM25",
+        "HNSW",
+        "IVF-PQ",
+        "DiskANN"
+      ],
+      "publisher": "Scality",
+      "source_title": "RAG data storage for enterprise AI: a design guide",
+      "source_url": "https://www.solved.scality.com/rag-data-storage-for-enterprise-ai/",
+      "upstream_owned_entities": [
+        "Scality",
+        "DiskANN"
+      ],
+      "visible_date": "2026-07-24",
+      "visible_date_basis": "Search result showed Friday, July 24, 2026; opened page content also displayed a current-site date inside the run window, so date is treated as visible but should be corroborated during ingest.",
+      "why_it_matters_for_leaf": "RAG provenance guidance should treat metadata, versioned embeddings, source archives, and access controls as first-class retrieval evidence, not optional database details."
+    },
+    {
+      "factual_summary": "The article summarizes public July 2026 statements attributed to Robert C. Martin: agents may write unit tests and implementation code, while humans review higher-level Gherkin acceptance tests and QA procedures with rigor scaled by criticality plus periodic manual testing.",
+      "follow_up_note": "Secondary source with volatile X-thread basis; corroborate before turning into strong normative guidance.",
+      "id": "2026-07-23-acceptance-test-gauntlet-for-ai-code",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "local_practice_implication": "For high-autonomy coding, put human attention on acceptance criteria, QA procedures, constraints, and criticality rather than assuming line-by-line review scales.",
+      "named_entities": [
+        "Robert C. Martin",
+        "Gherkin",
+        "Claude Code",
+        "ATDD"
+      ],
+      "publisher": "explainx.ai",
+      "source_title": "Uncle Bob Doesnt Review AI Code. He Builds a Gauntlet Instead",
+      "source_url": "https://www.explainx.ai/blog/uncle-bob-ai-coding-gauntlet-tests-not-reviews-july-2026",
+      "upstream_owned_entities": [
+        "Claude Code"
+      ],
+      "visible_date": "2026-07-23",
+      "visible_date_basis": "Article header lists Jul 23, 2026.",
+      "why_it_matters_for_leaf": "AI-assisted TDD and intelligent review guidance should distinguish implementation review from human-owned behavioral specifications and criticality-weighted acceptance gates."
+    },
+    {
+      "factual_summary": "OpenAI Developers posted that local Codex projects can include related code, docs, and reference files from multiple folders while one primary folder remains the Git root; the primary folder handles Git operations, reviews, pull requests, AGENTS.md, and skill discovery.",
+      "follow_up_note": "Prefer official OpenAI changelog if available during ingest; this watch used a public mirror because search exposed the dated official posts.",
+      "id": "2026-07-23-openai-devs-codex-multifolder-primary-folder",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "local_practice_implication": "Record primary-folder authority in multi-root workspaces; secondary folders can be evidence sources but should not silently supply project rules, skills, or Git scope.",
+      "named_entities": [
+        "OpenAI Developers",
+        "Codex",
+        "AGENTS.md"
+      ],
+      "publisher": "OpenAI Developers on X, mirrored by Twiscan",
+      "source_title": "OpenAI Developers public posts about Codex local project related folders",
+      "source_url": "https://twiscan.com/en/x/OpenAIDevs",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "visible_date": "2026-07-23T20:31",
+      "visible_date_basis": "Public post mirror shows OpenAI Developers posts at 2026.07.23 20:31.",
+      "why_it_matters_for_leaf": "Request-package and code-retrieval guidance should distinguish primary authority roots from secondary readable/editable context folders so agents do not load the wrong instructions or operate in the wrong Git root."
+    }
+  ],
+  "run_timestamp": "2026-07-29T21:02:08-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+  ],
+  "selection_policy": "Unchecked leaves first, then oldest last_checked_at, with stable relative path tie-break.",
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": [
+      "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/"
+    ],
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": [
+      "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/"
+    ],
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": [
+      "https://devblogs.microsoft.com/agent-framework/move-agent-orchestration-workflows-out-of-code-with-agent-framework-declarative-workflows-1-0/",
+      "https://agentspan.ai/glossary/structured-output/"
+    ],
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": [
+      "https://devblogs.microsoft.com/agent-framework/the-microsoft-agent-framework-harness-is-now-released/",
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://www.explainx.ai/blog/uncle-bob-ai-coding-gauntlet-tests-not-reviews-july-2026",
+      "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-july-23-2026/",
+      "https://commonplace.workforcefutures.net/paper/arxiv%3A2603.17973"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://www.alphaxiv.org/abs/2607.18161",
+      "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://www.alphaxiv.org/abs/2607.18161",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0167642326000432"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://www.explainx.ai/blog/uncle-bob-ai-coding-gauntlet-tests-not-reviews-july-2026",
+      "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+      "https://codex.danielvaughan.com/2026/03/31/codex-cli-context-compaction-architecture/"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://twiscan.com/en/x/OpenAIDevs",
+      "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+      "https://codex.danielvaughan.com/2026/03/31/codex-cli-context-compaction-architecture/",
+      "https://github.com/openai/codex/issues/25792"
+    ],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://twiscan.com/en/x/OpenAIDevs",
+      "https://community.openai.com/t/using-chatgpt-for-planning-vs-codex/1382876/36"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://twiscan.com/en/x/OpenAIDevs",
+      "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://www.solved.scality.com/rag-data-storage-for-enterprise-ai/",
+      "https://www.extend.ai/resources/building-document-qa-agent-architecture-tradeoffs-failures"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://twiscan.com/en/x/OpenAIDevs"
+    ]
+  }
+}
