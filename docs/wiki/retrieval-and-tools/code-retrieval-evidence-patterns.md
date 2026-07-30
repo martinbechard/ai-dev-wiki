@@ -31,6 +31,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add incident-evidence and searchable-workspace signals. Incident investigations should centralize metrics, traces, logs, deployments, ownership metadata, and linked evidence bundles before asking an agent for a narrative. Search across chats, projects, images, and documents is useful local retrieval context only when matched artifacts can be opened, attributed, filtered, and verified against source files or runtime evidence.
 
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds primary-folder evidence for multi-root workspaces. Related code, docs, and reference folders can improve retrieval, but code claims and edits should still identify which root supplied the evidence, which root owns repository instructions, and which root controls Git operations.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -53,6 +55,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Treat generated README proposals as drafts that need source-path, test, dependency, and contribution-guidance checks.
 - Build incident investigation bundles from linked metrics, traces, logs, deployment history, ownership metadata, and source files before accepting a generated diagnosis.
 - Treat searchable workspace artifacts as retrieval candidates that still need opening, attribution, filtering, and source or runtime verification.
+- In multi-root workspaces, record which folder supplied retrieval evidence and which primary folder owns Git and instruction authority.
 
 ## Authoritative Sources
 
@@ -71,6 +74,7 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -105,3 +109,4 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 - Maintained on 2026-07-04 with dependency-aware review retrieval and scan-to-merge evidence paths.
 - Maintained on 2026-07-09 with repository-overview verification and generated README source checks.
 - Maintained on 2026-07-14 with incident evidence bundles and searchable workspace artifact verification.
+- Maintained on 2026-07-29 with multi-root retrieval attribution and primary-folder Git/instruction authority guidance.

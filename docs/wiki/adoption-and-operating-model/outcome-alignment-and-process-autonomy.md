@@ -23,6 +23,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json) adds agent-sprawl and eval-outcome evidence. Team autonomy is sustainable only when [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md) can inspect running agents, connections, dependencies, standards, and audit evidence. Outcome alignment should route state-change correctness, tool trajectories, costs, and safety gates through [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md) rather than treating process compliance or assistant usage as the outcome.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds an outcome-measurement caution. Teams can vary how heavily they use agents, but shared outcome alignment should reject raw token volume, generated lines, or agent activity as proxies for productivity when those signals are detached from accepted delivery, quality, maintainability, and review evidence.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -37,6 +39,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Expand agent scope from supervised outcomes and edge-case handling evidence, not from confidence in generic agent capability.
 - Let teams vary agent workflows only when governance infrastructure still exposes running agents, dependencies, connected services, standards, and comparable outcome evidence.
 - Use trajectory-level state-change correctness, tool paths, costs, and safety evidence as outcome measures instead of assistant usage or process conformance alone.
+- Compare AI-heavy and AI-light processes by accepted outcomes, quality, maintainability, and review burden rather than by raw AI activity.
 
 ## Authoritative Sources
 
@@ -48,6 +51,7 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 
 ## Related Code
 
@@ -80,3 +84,4 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 - Maintained on 2026-07-09 with outcome-based agent workflow funding, pruning, and guardrail-comparable process autonomy.
 - Maintained on 2026-07-14 with delegation mechanics, audit trails, edge-case escalation, and scope-expansion evidence as comparable outcome controls.
 - Maintained on 2026-07-17 with links to governance infrastructure for agent-sprawl visibility and trajectory evaluation for state-change, tool-path, cost, and safety outcome evidence.
+- Maintained on 2026-07-29 with raw AI-activity, token-volume, and generated-line measurement anti-pattern guidance.

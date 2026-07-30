@@ -35,6 +35,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) and [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) keep broad ecosystem entities upstream-owned. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [xAI](../../../upstream-ai-wiki/companies/xai.md), the [Grok model family](../../../upstream-ai-wiki/models/grok-model-family.md), [Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md), [MCP observability](../../../upstream-ai-wiki/techniques/mcp-observability.md), and the [upstream MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md) own broad product, company, model, framework, protocol, and observability background.
 
+The July 29 raw sources keep broad ecosystem entities upstream-owned. [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), [Anthropic](../../../upstream-ai-wiki/companies/anthropic.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md), [Model Context Protocol](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md), [MCP server coverage](../../../upstream-ai-wiki/mcp-servers/index.md), [AWS Bedrock](../../../upstream-ai-wiki/developer-tools/amazon-bedrock.md), and named coding-agent tools own broad product, company, framework, protocol, and developer-tool context. Local pages keep only downstream practice for failure attribution, instruction layers, outcome prompting, measurement, MCP migration, thin harnesses, compaction, RAG provenance, acceptance gates, and primary-folder authority.
+
 Upstream routing:
 
 - [Amazon AI](../../../upstream-ai-wiki/companies/amazon-ai.md), [Google AI](../../../upstream-ai-wiki/companies/google-ai.md), [Microsoft AI](../../../upstream-ai-wiki/companies/microsoft-ai.md), [Oracle](../../../upstream-ai-wiki/companies/oracle.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Mastra](../../../upstream-ai-wiki/agentic-frameworks/mastra.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), the upstream [AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md), and the upstream [MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md) own broad product, company, framework, and MCP-server coverage.
@@ -69,6 +71,7 @@ Local routing:
 - Route July 26 product, benchmark, model, company, regulation, and coding-agent tool entities upstream while retaining local practice for evaluation, governance, instruction, memory, cost, supervision, and review controls.
 - Route July 27 vendor, MCP server, IDE, coding-agent, and enterprise-product updates upstream while retaining linked local leaves for review-role, tool-discovery, telemetry, instruction, updater, CI, workflow, and governance practice.
 - Route July 28 product, company, model, framework, IDE, MCP, and observability-tool updates upstream while retaining local managed-policy, telemetry, approval, supply-chain, context, harness, and eval practice.
+- Route July 29 company, product, framework, protocol, benchmark, conference, and tool entities upstream while retaining local practice for eval attribution, context, prompting, measurement, MCP migration, harnesses, RAG, TDD, and primary-root authority.
 
 ## Authoritative Sources
 
@@ -101,6 +104,8 @@ Local routing:
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -128,6 +133,7 @@ Local routing:
 - The upstream AI wiki does not yet have dedicated entity leaves for July 26 benchmark sources such as Tokoscope, DeepSWE, GLSRM, Coding Agents Index, or the open-source coding-agent comparison set; route them through the upstream coding-agents, model, or technique hubs until entity leaves exist.
 - The upstream AI wiki does not yet have dedicated local links for Endor Labs, Apideck, Box, or Visual Studio Code in the July 27 source-routing note; route through upstream company, developer-tool, coding-agent, or MCP hubs until those leaves exist.
 - The upstream AI wiki owns July 28 GitHub, Copilot, GitHub Actions, Dependabot, OpenSSF, Grok, xAI, Microsoft Agent Framework, MCP, OpenTelemetry, IDE, and framework background; use upstream hubs if exact entity leaves are missing.
+- The upstream AI wiki owns July 29 Claude Code, Anthropic, OpenAI, Microsoft Agent Framework, Model Context Protocol, MCP servers, AWS Bedrock, benchmark, conference, and coding-agent tool background; use upstream hubs if exact entity leaves are missing.
 
 ## Maintenance Notes
 
@@ -141,3 +147,4 @@ Local routing:
 - Maintained on 2026-07-26 with upstream routing for products, benchmarks, models, companies, regulations, and coding-agent tools while retaining local evaluation, governance, instruction, memory, cost, supervision, and review controls.
 - Maintained on 2026-07-27 with upstream routing for vendor, MCP server, IDE, and coding-agent entities while retaining local practice implications.
 - Maintained on 2026-07-28 with upstream routing for product, company, model, framework, IDE, MCP, and observability entities while retaining local governance, telemetry, approval, supply-chain, context, harness, and eval practice.
+- Maintained on 2026-07-29 with upstream routing for company, product, framework, protocol, benchmark, conference, and coding-agent tool entities while retaining local practice implications.

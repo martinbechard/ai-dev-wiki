@@ -35,6 +35,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md) as a tool-schema selection pattern. This page keeps the context rule: discovered schemas are dynamic context and should enter the active request only when the current task needs them.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) and [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) add compaction-survivability evidence. Long-running tasks should keep current status, acceptance criteria, source paths, approval boundaries, and unresolved blockers in durable state that can survive pre-turn or mid-turn compaction.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -65,6 +67,7 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Test context selection against mock or representative workflows that include both relevant sources and plausible distractors.
 - Prefer source inventories, freshness labels, and exclusion notes over broad connector enablement when agents need work context.
 - Keep large tool catalogs behind discovery or routing tools when the current task only needs a narrow operation surface, and route governance details through [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md).
+- Treat compaction as runtime control flow: critical status, approvals, source paths, and blockers should be recoverable outside lossy summaries.
 
 ## Authoritative Sources
 
@@ -90,6 +93,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -128,3 +133,4 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Maintained on 2026-07-22 with concise durable-instruction, task-matched eval, and primary-source verification boundaries.
 - Maintained on 2026-07-24 with context-distraction, source-inventory, freshness-label, and representative distractor-test guidance.
 - Maintained on 2026-07-27 with progressive tool-schema discovery as dynamic context selection.
+- Maintained on 2026-07-29 with compaction-survivability guidance for status, approvals, source paths, and blockers.

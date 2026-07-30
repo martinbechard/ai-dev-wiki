@@ -29,6 +29,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md). This page keeps the overview boundary; the sizing leaf owns how loop control, memory, approvals, telemetry, persistence, compaction, skills, and tools scale with action risk.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds thin-harness architecture evidence from enterprise commentary. Harness code should stay thin enough to preserve model portability, while skill or process artifacts, context resolvers, auditable data connectors, and validation gates carry the operational controls that make workflows reliable.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -52,6 +54,7 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - Route source-controlled low-code or enterprise builder artifacts through [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md).
 - Pair [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md) with sandbox execution and provenance when files survive across conversations, deploys, or restarts.
 - Route harness-size decisions through [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md).
+- Keep orchestration thin where possible, but make skill artifacts, context resolvers, data connectors, validation, and audit evidence explicit harness responsibilities.
 
 ## Authoritative Sources
 
@@ -67,6 +70,7 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 - [federation.md](../federation.md)
@@ -105,3 +109,4 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - Maintained on 2026-07-11 with model-output versus runtime observability and reusable harness primitive taxonomy.
 - Maintained on 2026-07-27 with source-controlled enterprise-builder artifacts and persistent-workspace harness boundaries.
 - Maintained on 2026-07-28 with harness-sizing guidance for loop, planning, memory, approvals, telemetry, history, compaction, skills, and tool execution.
+- Maintained on 2026-07-29 with thin-harness, skill-artifact, context-resolver, data-connector, and audit-control guidance.

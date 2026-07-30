@@ -65,6 +65,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The July 28 raw sources add cross-client and remote-skill tool governance evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) records managed settings for plugins, marketplaces, approval bypasses, and model routing across agent clients, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) records MCP-discovered skills, token-limit controls, MCP diagnostics, and custom-agent routing as governed tool surfaces.
 
+The July 29 raw sources add MCP migration and state-handle evidence. The [topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) records stateless-core, OAuth-hardening, extension, migration-plan, elicitation, and explicit-state-handle implications for remote MCP practice, while the [leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) reinforces remote skill package governance through MCP servers. Broad protocol details stay upstream; locally, protocol revisions should trigger conformance tests, session-dependence audits, explicit state externalization, approval review, and traceability updates before agents rely on changed servers.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -126,6 +128,7 @@ The July 28 raw sources add cross-client and remote-skill tool governance eviden
 - Treat content-agent guardrails as runtime controls that can block actions, screen untrusted content, and hold high-impact operations for approval.
 - Apply managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, and custom-agent policies consistently across IDE, CLI, app, cloud-agent, and remote-skill surfaces.
 - Treat remote MCP skills as governed tool packages whose publisher, archive bounds, allowed tool scope, approval defaults, and diagnostics need review before use.
+- Treat MCP protocol revisions as deployment lifecycle events that require conformance evidence, state-handle review, migration plans, approval checks, and updated audit joins.
 
 ## Authoritative Sources
 
@@ -172,6 +175,8 @@ The July 28 raw sources add cross-client and remote-skill tool governance eviden
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -227,3 +232,4 @@ The July 28 raw sources add cross-client and remote-skill tool governance eviden
 - Maintained on 2026-07-25 with regulated MCP gateway criteria, bounded-context data-coverage checks, and fallback/tool-surface audit guidance.
 - Maintained on 2026-07-27 with progressive MCP discovery, field-scope, managed-OAuth, API-log, and content-agent guardrail guidance.
 - Maintained on 2026-07-28 with cross-client managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, custom-agent, and remote-skill controls.
+- Maintained on 2026-07-29 with MCP protocol migration, explicit state-handle, conformance, approval, and audit-join guidance.

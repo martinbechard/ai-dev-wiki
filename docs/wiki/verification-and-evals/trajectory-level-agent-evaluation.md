@@ -43,6 +43,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add benchmark-realism and system-level safety evidence. Coding-agent benchmark claims should affect local autonomy only when the run evidence can explain the path, not only the final score.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds failure-attribution evidence from agent self-improvement research. Non-improving agent runs should be classified against ambiguous specifications, missing task information, brittle evaluators, unstable services, weak retrieval, and prompt or model limits before the local workflow treats prompt optimization as the fix.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -95,6 +97,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Prefer representative local workflow calibration when public benchmark tasks do not match the repository, toolchain, data sensitivity, or approval path.
 - Preserve task provenance, contamination controls, harness configuration, verifier behavior, and cost per completed task before using benchmark results to justify workflow expansion.
 - Evaluate retrieval, memory, runtime constraints, tool authorization, abstention, refusal, and human-review paths as deployment evidence, not as model-only score details.
+- Diagnose failed or flat eval runs with an attribution taxonomy before changing prompts, model routes, or autonomy levels.
 
 ## Authoritative Sources
 
@@ -120,6 +123,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 
 ## Related Code
 
@@ -160,3 +164,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-22 with graph/run/node identifiers, routed decisions, human checkpoints, issue grouping, and multi-agent topology evidence.
 - Maintained on 2026-07-24 with multi-domain benchmark, contamination-control, reproducible-harness, and local-calibration guidance.
 - Maintained on 2026-07-26 with benchmark-realism, cost-per-task, system-level safety, retrieval, memory, tool-authorization, refusal, and human-escalation evaluation guidance.
+- Maintained on 2026-07-29 with failure-attribution taxonomy guidance for non-improving agent eval runs.

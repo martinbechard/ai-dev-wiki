@@ -1,0 +1,444 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-29T20:31:19-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "window_start": "2026-07-27T20:31:19-04:00",
+    "window_end": "2026-07-29T20:31:19-04:00",
+    "policy": "Include only public sources with visible publication or update dates inside the strict two-day window. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, source workflows, agent operating practices, verification, governance, and adoption patterns.",
+    "upstream_scope": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques.",
+    "rule_applied": "Entity updates are marked upstream-owned; findings preserve only local practice implications or routing notes."
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-07-29-cmu-agent-self-improvement-failure-attribution",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://www.ri.cmu.edu/event/the-limits-of-prompt-based-self-improvement-in-language-model-agents-meta-optimization-and-failure-attribution/",
+      "source_title": "The Limits of Prompt-Based Self-Improvement in Language Model Agents: Meta-Optimization and Failure Attribution",
+      "publisher": "Carnegie Mellon University Robotics Institute",
+      "visible_date": "2026-07-29",
+      "visible_date_basis": "Event page lists 2026-07-29 14:30:00 to 15:30:00 and Details date Wednesday, July 29 (2026-07-29).",
+      "short_factual_summary": "The thesis presentation reports that persistent-memory prompt optimizer variants built on Agentic Context Engineering did not reliably improve over ACE on AppWorld, showed no improvement on Toolathlon, and used an evidence-grounded pipeline to attribute failures in long agent trajectories.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local eval guidance should treat non-improving agent runs as possible evidence of ambiguous specs, missing task information, brittle evaluators, or unstable services before blaming prompts or models.",
+      "named_entities": [
+        "Agentic Context Engineering",
+        "AppWorld",
+        "Toolathlon",
+        "Carnegie Mellon University Robotics Institute",
+        "Yusen Hu"
+      ],
+      "upstream_owned_entities": [
+        "Agentic Context Engineering",
+        "AppWorld",
+        "Toolathlon"
+      ],
+      "local_practice_implication": "Add failure-attribution taxonomy and trajectory evidence requirements to software-engineering eval and regression-repair workflows.",
+      "follow_up_notes": "Route broad benchmark/entity background upstream if ingested; local leaf should focus on attribution workflow and evaluator trust."
+    },
+    {
+      "id": "2026-07-28-maven-context-engineering-claude-code-system",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://maven.com/altered-craft-learning/context-engineering-for-claude-code",
+      "source_title": "Context Engineering for Claude Code",
+      "publisher": "Maven / Altered Craft Learning",
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Course page lists next cohort July 28, 2026, 12:30-3:30pm EDT.",
+      "short_factual_summary": "The workshop frames context engineering as a system of agent files, custom skills, and automated hooks, with CLAUDE.md split across project, folder, and user levels and hooks used as guardrails.",
+      "why_it_matters_for_ai_assisted_development_practice": "Practice signals continue moving from single prompt files toward layered instruction ecosystems, reusable skill contracts, and hook-based enforcement that does not consume context-window space.",
+      "named_entities": [
+        "Claude Code",
+        "CLAUDE.md",
+        "Sam Keen",
+        "Maven",
+        "Altered Craft"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Maven"
+      ],
+      "local_practice_implication": "Compare local AGENTS.md and skill guidance against a layered context model: team conventions, project facts, personal preferences, workflow skills, and pre/post/stop hooks.",
+      "follow_up_notes": "Avoid duplicating Claude Code product coverage; preserve only practice patterns for durable agent instruction architecture."
+    },
+    {
+      "id": "2026-07-28-business-insider-tokenmaxxing-measurement",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "source_title": "This Y Combinator startup just raised $13.5 million to stop developers from tokenmaxxing",
+      "publisher": "Business Insider",
+      "visible_date": "2026-07-28T12:11:55.757Z",
+      "visible_date_basis": "Article timestamp is visible in page HTML.",
+      "short_factual_summary": "Business Insider reports that Weave raised $13.5 million for software that measures human and AI coding-tool output and aims to reduce incentives for high-volume AI use as a proxy for productivity.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption guidance needs metrics that separate useful engineering output from raw token volume, AI activity counts, or lines-of-code-like quantity measures.",
+      "named_entities": [
+        "Weave",
+        "Y Combinator",
+        "Standard Capital",
+        "Robinhood",
+        "PostHog",
+        "Reducto"
+      ],
+      "upstream_owned_entities": [
+        "Weave",
+        "Y Combinator",
+        "Standard Capital",
+        "Robinhood",
+        "PostHog",
+        "Reducto"
+      ],
+      "local_practice_implication": "Adoption dashboards should include outcome quality and cost governance, not agent-usage leaderboards that reward overuse.",
+      "follow_up_notes": "If ingested, create a local downstream lens for AI-assisted development measurement rather than a company page."
+    },
+    {
+      "id": "2026-07-27-business-insider-outcome-guardrail-prompting",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.businessinsider.com/anthropic-claude-code-prompting-tips-boris-cherny-micromanaging-ai-2026-7",
+      "source_title": "Creator of Anthropic's Claude Code wants you to stop micromanaging your AI",
+      "publisher": "Business Insider",
+      "visible_date": "2026-07-27T22:08:02.085Z",
+      "visible_date_basis": "Article timestamp is visible in page HTML and is inside the strict cutoff window.",
+      "short_factual_summary": "The article reports Boris Cherny's advice to specify the desired outcome, boundaries, and success criteria instead of over-prescribing every implementation step for modern coding agents.",
+      "why_it_matters_for_ai_assisted_development_practice": "Prompt guidance should distinguish durable guardrails and acceptance criteria from unnecessary step-level micromanagement that may block stronger agent planning.",
+      "named_entities": [
+        "Boris Cherny",
+        "Claude Code",
+        "Anthropic",
+        "Y Combinator",
+        "Andrew Ng"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Anthropic",
+        "Y Combinator",
+        "Andrew Ng"
+      ],
+      "local_practice_implication": "Instruction templates can be revised toward outcome, constraints, verification evidence, and rollback boundaries while leaving implementation path discovery to the agent when risk allows.",
+      "follow_up_notes": "Potential follow-up under prompt-and-instructions as a local practice note on outcome-oriented prompting."
+    },
+    {
+      "id": "2026-07-28-luma-mcp-graduation-enterprise-governance",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://luma.com/2ceed3cp",
+      "source_title": "Agentic AI Night - MCP Release Party",
+      "publisher": "Luma / AAIF Community Austin",
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Event page states that on July 28, 2026 MCP graduates and describes the July 28 event.",
+      "short_factual_summary": "The event page says MCP's 2026-07-28 spec changes agent deployment at scale with stateless protocol core, OAuth 2.1 hardening, and an extensions framework, plus sessions on production architecture and governance.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP-as-practice guidance should include migration and governance readiness, not just tool connectivity. Stateless deployment affects load balancing, approval, observability, and enterprise rollout planning.",
+      "named_entities": [
+        "Model Context Protocol",
+        "Agentic AI Foundation",
+        "AAIF Community Austin",
+        "Coder",
+        "AWS",
+        "Cisco",
+        "Bitmovin"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Agentic AI Foundation",
+        "Coder",
+        "AWS",
+        "Cisco",
+        "Bitmovin"
+      ],
+      "local_practice_implication": "Update local governed-MCP practice to treat protocol revisions as deployment lifecycle events with migration plans, approval gates, and traceability expectations.",
+      "follow_up_notes": "Broad MCP spec coverage belongs upstream; keep local lens to managed tool practice and rollout controls."
+    },
+    {
+      "id": "2026-07-28-bovo-mcp-stateless-migration",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.bovo-digital.tech/en/blog/mcp-2026-specification-stateless-enterprise-agents",
+      "source_title": "MCP 2026-07-28: Stateless Transport, MCP Apps, and What Enterprises Must Migrate",
+      "publisher": "BOVO Digital",
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Article page lists July 28, 2026 as publication date.",
+      "short_factual_summary": "The article summarizes MCP 2026-07-28 migration implications: no Mcp-Session-Id, no initialize handshake, explicit handles for application state, multi-round-trip requests for elicitation, routing headers, and migration planning for deprecated features.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local MCP governance guidance should capture the operational shift from hidden transport state to explicit tool-returned handles that agents can reason about and pass across workflow steps.",
+      "named_entities": [
+        "Model Context Protocol",
+        "BOVO Digital",
+        "n8n",
+        "Claude",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "BOVO Digital",
+        "n8n",
+        "Claude",
+        "Cursor"
+      ],
+      "local_practice_implication": "Agent tool workflows should audit session dependence, define explicit state handles, and add request/response trace points before migrating remote MCP servers.",
+      "follow_up_notes": "Pair with official MCP source if ingested; record BOVO as implementation commentary, not protocol authority."
+    },
+    {
+      "id": "2026-07-28-moodys-thin-harness-engineering",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.moodys.com/web/en/us/creditview/blog/harness-engineering.html",
+      "source_title": "The Harness Era: Why Enterprise AI Architecture Matters More Than Model Selection",
+      "publisher": "Moody's",
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Search result and article page identify publication as July 28, 2026.",
+      "short_factual_summary": "Moody's argues that harness design is becoming more strategic than model selection, recommending thin orchestration, skill files, resolvers that load only needed context, model portability, and auditable data connectors.",
+      "why_it_matters_for_ai_assisted_development_practice": "Application-pattern guidance should explicitly separate harness code, skill/process artifacts, context resolvers, and authoritative data connectors to control token cost and auditability.",
+      "named_entities": [
+        "Moody's",
+        "Anthropic",
+        "OpenAI",
+        "AWS Bedrock",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Moody's",
+        "Anthropic",
+        "OpenAI",
+        "AWS Bedrock",
+        "MCP"
+      ],
+      "local_practice_implication": "Add a candidate downstream lens for thin harness architecture as a cost, portability, and audit control pattern.",
+      "follow_up_notes": "Use as practice-oriented enterprise architecture evidence; do not create local company or provider pages."
+    },
+    {
+      "id": "2026-07-29-codex-knowledge-base-context-compaction",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://codex.danielvaughan.com/2026/04/10/context-compaction-showdown-coding-agents/",
+      "source_title": "Context Compaction Showdown: How Codex CLI, Claude Code, and 5 Other Agents Handle Full Context Windows",
+      "publisher": "Codex Knowledge Base",
+      "visible_date": "Updated July 29, 2026",
+      "visible_date_basis": "Article page shows original date April 10, 2026 and updated date July 29, 2026.",
+      "short_factual_summary": "The updated article compares context-compaction strategies across coding agents, including dual-path compaction, summary prefixes, encrypted compaction payloads, multi-mechanism cleanup, tail preservation, and summary verification.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context architecture guidance should treat compaction as an explicit reliability and security design surface, not an invisible model feature.",
+      "named_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenCode",
+        "Roo Code",
+        "Pi",
+        "OpenHands"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenCode",
+        "Roo Code",
+        "Pi",
+        "OpenHands"
+      ],
+      "local_practice_implication": "Potential local leaf: compaction acceptance criteria covering retained recent context, summarized decisions, prompt-injection resistance, non-looping behavior, and auditability.",
+      "follow_up_notes": "If ingested, verify claims against primary tool docs or source before treating agent-specific mechanisms as durable facts."
+    },
+    {
+      "id": "2026-07-28-laravel-news-agent-engineering-sessions",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://laravel-news.com/watch-laracon-us-2026-day-one-live-on-youtube",
+      "source_title": "Watch Laracon US 2026 Live on YouTube",
+      "publisher": "Laravel News",
+      "visible_date": "2026-07-28",
+      "visible_date_basis": "Article page says published on July 28th, 2026.",
+      "short_factual_summary": "Laravel News lists Laracon sessions including 'From Vibe Coding to Vibe Engineering,' 'Building a CLI Coding Agent from Scratch,' 'Building for Agents & Humans,' and 'Think Harder: How I Prompt.'",
+      "why_it_matters_for_ai_assisted_development_practice": "Mainstream framework conferences are surfacing practice-level agent topics alongside ordinary engineering content, which is an adoption signal for team training and operating model pages.",
+      "named_entities": [
+        "Laracon US 2026",
+        "Laravel News",
+        "Laravel",
+        "Mateus Guimaraes",
+        "Gordon Diggs",
+        "Thorsten Ball"
+      ],
+      "upstream_owned_entities": [
+        "Laravel",
+        "Laracon US 2026"
+      ],
+      "local_practice_implication": "Track conference-session themes as adoption evidence, not as authoritative implementation guidance unless session materials become available.",
+      "follow_up_notes": "Potential follow-up: look for public recordings/transcripts before ingesting substantive claims."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.shiplight.ai/blog/catching-hallucinations-in-ai-generated-code",
+      "source_title": "How to Catch Hallucinations in AI-Generated Code",
+      "visible_date": "Conflicting search/open evidence",
+      "reason": "Search result showed updated July 28, 2026, but opened page did not expose that date in visible lines. Excluded as inconsistent visible-date evidence.",
+      "upstream_owned_entities": [
+        "Shiplight",
+        "MCP"
+      ],
+      "local_routing_note": "Practice is relevant to verification, but date proof must be refreshed from visible page metadata before ingest."
+    },
+    {
+      "source_url": "https://blog.thnkandgrow.com/gitnexus-ai-powered-code-review-github-pull-requests/",
+      "source_title": "GitNexus: AI-Powered Code Review for GitHub PRs",
+      "visible_date": "Search result mixed March 16, 2026 and July 28, 2026",
+      "reason": "Opened page did not expose July 28, 2026 as a publication or update date. Excluded for ambiguous/inconsistent date evidence.",
+      "upstream_owned_entities": [
+        "GitNexus",
+        "GitHub"
+      ],
+      "local_routing_note": "RAG-for-code-review architecture is relevant but needs a qualifying date."
+    },
+    {
+      "source_url": "https://ai-coding.info/en/languages/typescript",
+      "source_title": "Usage rate statistics and trends of AI Coding Agent for TypeScript language",
+      "visible_date": "Search result said July 28, 2026; opened page displayed May 13, 2026 in extracted text",
+      "reason": "Date evidence conflicted between search result and opened page. Excluded as inconsistent.",
+      "upstream_owned_entities": [
+        "AI Coding.Info",
+        "Claude Code",
+        "Codex CLI",
+        "Copilot Agent",
+        "Cursor"
+      ],
+      "local_routing_note": "Could be useful adoption telemetry if a stable visible daily snapshot can be verified."
+    },
+    {
+      "source_url": "https://tastematter.dev/",
+      "source_title": "Context Engineering Intelligence Brief",
+      "visible_date": "Search result said Tuesday, July 28, 2026; opened page displayed Wednesday, July 22, 2026",
+      "reason": "Opened source content did not match the candidate date. Excluded as stale or dynamic-page mismatch.",
+      "upstream_owned_entities": [
+        "tastematter"
+      ],
+      "local_routing_note": "Signals are practice-oriented but need stable dated permalink or archive page."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-07-27-agents-sdk-v0.20.0-mcp-sdk-v2/",
+      "source_title": "Agents SDK adds MCP Specification 2026-07-28 support",
+      "visible_date": "2026-07-27",
+      "reason": "Visible date lacks time and is on the cutoff calendar day; strict window cannot prove it was published after 2026-07-27T20:31:19-04:00.",
+      "upstream_owned_entities": [
+        "Cloudflare",
+        "Agents SDK",
+        "Model Context Protocol"
+      ],
+      "local_routing_note": "Likely relevant MCP migration evidence, but excluded as boundary-only under the automation rule."
+    },
+    {
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "source_title": "GitHub Changelog Copilot label",
+      "visible_date": "July 21-24, 2026 entries",
+      "reason": "Relevant Copilot/MCP entries in the visible result were outside the strict two-day window.",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub MCP Server",
+        "GitHub"
+      ],
+      "local_routing_note": "Upstream-owned product and MCP-server coverage; local use would be practice implications only."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/humans-in-the-loop-how-software-teams-are-learning-to-trust-ai",
+      "source_title": "Humans in the loop: how software teams are learning to trust AI",
+      "visible_date": "Published 6 days ago in search result",
+      "reason": "Outside the strict two-day publication/update window.",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "DORA"
+      ],
+      "local_routing_note": "Human-review practice topic is relevant, but this run excludes it by date."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "source_title": "Set up a context engineering flow in VS Code",
+      "visible_date": "Published 2 weeks ago; crawled 2 days ago",
+      "reason": "Crawl recency is not a visible publication or update date; visible publication is outside the window.",
+      "upstream_owned_entities": [
+        "VS Code",
+        "GitHub Copilot",
+        "Microsoft"
+      ],
+      "local_routing_note": "Strong context-engineering source for later ingest, but not this strict collector window."
+    },
+    {
+      "source_url": "https://aclanthology.org/2026.findings-acl.2020/",
+      "source_title": "OmniCode: A Benchmark for Evaluating Software Development Agents",
+      "visible_date": "July 2026",
+      "reason": "Month-only date is too ambiguous for the strict two-day window.",
+      "upstream_owned_entities": [
+        "OmniCode",
+        "ACL Anthology",
+        "SWE-Agent"
+      ],
+      "local_routing_note": "Benchmark methodology is relevant to verification-and-evals but needs exact publication/update date."
+    },
+    {
+      "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "source_title": "The 2026-07-28 MCP Specification Release Candidate",
+      "visible_date": "May 21, 2026",
+      "reason": "Official source is authoritative for the July 28 spec but the visible publication date is outside the collector window.",
+      "upstream_owned_entities": [
+        "Model Context Protocol"
+      ],
+      "local_routing_note": "Use as authoritative follow-up evidence if a qualifying July 28 final-spec source is available or during ingest verification."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 9,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Collector only wrote raw JSON and did not edit docs/wiki or raw/processed.",
+    "Before ingesting MCP findings, pair commentary sources with official MCP specification/changelog evidence and keep broad protocol coverage upstream-owned.",
+    "Several promising code-review and hallucination-verification sources were excluded because search snippets showed recent dates that the opened pages did not visibly confirm."
+  ]
+}

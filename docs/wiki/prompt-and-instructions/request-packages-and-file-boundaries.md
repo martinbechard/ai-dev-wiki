@@ -27,6 +27,10 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds multi-repository, inline-review, and project-artifact signals. Request packages should label repository boundaries, project search results, inline diff edits, PR side-panel review findings, and generated visualizations as separate evidence surfaces so the agent does not treat one repository's files, one chat artifact, or one review annotation as global authority.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds outcome-oriented prompting evidence. Strong request packages should specify the desired outcome, constraints, success criteria, verification evidence, and rollback boundary while leaving implementation-path discovery to the agent when the risk profile allows it.
+
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds multi-folder primary-root evidence. In a multi-root workspace, the request package should name the primary Git and instruction root separately from secondary readable or editable evidence folders so agents do not inherit the wrong repository rules or perform Git operations in the wrong scope.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -45,6 +49,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Do not let generated architecture or tests erase the distinction between source requirements and the agent's proposed interpretation.
 - Label multi-repository boundaries, project-search matches, inline edits, PR annotations, and visualization artifacts as separate evidence surfaces inside the request package.
 - Require repository-specific source reads before carrying a claim or edit from one repository in a project workspace into another.
+- Prefer outcome, constraints, success criteria, verification evidence, and rollback boundaries over unnecessary step-by-step micromanagement when autonomy is appropriate.
+- Name the primary Git and instruction root separately from secondary evidence folders in multi-root workspaces.
 
 ## Authoritative Sources
 
@@ -58,6 +64,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -93,3 +101,4 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Maintained on 2026-07-09 with trust labels for repo-local instructions, generated skill files, workspace customizations, and third-party repository guidance.
 - Maintained on 2026-07-10 with requirement-to-architecture-to-test traceability for agentic requirement packages.
 - Maintained on 2026-07-14 with multi-repository boundaries, project artifact search, inline diff edits, PR annotations, and visualization evidence labels.
+- Maintained on 2026-07-29 with outcome-oriented prompting and primary-root authority guidance for multi-folder workspaces.

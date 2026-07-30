@@ -17,6 +17,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) reinforces TDD as an AI coding stabilizer. Tests force design intent into executable constraints before the agent drafts implementation, and regression checks protect behavior when generated code is refactored or trimmed.
 
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds acceptance-test ownership evidence from secondary commentary. Human review should stay focused on behavioral specifications, Gherkin-style acceptance tests, QA procedures, and criticality-scaled coverage when agents are allowed to draft unit tests and implementation code.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -28,6 +30,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Link generated tests to the source requirement or decision they protect when an agent turns requirements into code.
 - Use failing tests to expose requirement interpretation errors before accepting generated architecture or implementation.
 - Use tests and behavior inventories to constrain AI-generated refactors before large cleanup or bloat-removal passes.
+- Keep humans accountable for acceptance criteria, QA procedures, and criticality-scaled coverage even when agents draft lower-level tests and implementation.
 
 ## Authoritative Sources
 
@@ -37,6 +40,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - [Generated code refactoring](generated-code-refactoring.md)
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -65,3 +69,4 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.
 - Maintained on 2026-07-11 with TDD as an executable constraint for AI-generated code cleanup and refactoring.
+- Maintained on 2026-07-29 with human-owned acceptance-test, QA-procedure, and criticality-scaled coverage guidance.

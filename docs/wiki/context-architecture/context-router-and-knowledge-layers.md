@@ -25,6 +25,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 
 The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json) adds repository-context routing evidence. Memory-aware, MCP-native context layers that store observations in git can reduce repeated repository exploration, but they should be routed as source-backed observation layers with freshness, authority, and minimum-useful-slice checks. Local practice should keep these observations separate from durable instructions, current files, and verified wiki facts until the agent opens the relevant evidence.
 
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds multi-folder workspace routing evidence. Context routers should name one primary repository and instruction root for Git operations, reviews, pull requests, AGENTS.md, and skill discovery, while secondary folders remain attributed evidence roots until a task explicitly grants them authority.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -43,6 +45,7 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 - Route active turn context, working-set assembly, durable decisions, artifacts, and auditable storage as separate context layers.
 - Route searchable chats, project files, images, and documents as attributed retrieval candidates that must be opened and verified before they become durable context.
 - Route memory-aware repository observations as attributed, freshness-labeled retrieval candidates; require direct evidence checks before they replace live file reads or durable wiki synthesis.
+- Route primary Git and instruction roots separately from secondary related-code, documentation, and reference folders.
 
 ## Authoritative Sources
 
@@ -55,6 +58,7 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -87,3 +91,4 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 - Maintained on 2026-07-12 with active context, working-set assembly, durable decisions, artifacts, and auditable storage as separate routing layers.
 - Maintained on 2026-07-14 with searchable project artifact routing, source labels, and direct-open verification boundaries.
 - Maintained on 2026-07-22 with memory-aware repository observation routing, freshness labels, and minimum-useful-slice checks.
+- Maintained on 2026-07-29 with primary Git/instruction root and secondary evidence-folder routing guidance.

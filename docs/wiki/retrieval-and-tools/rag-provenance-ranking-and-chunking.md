@@ -29,6 +29,8 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds retrieval and context-layer evidence. Codebase RAG should preserve query intent, source provenance, chunk boundaries, ranking rationale, and rejected distractors; context compaction should keep originals recoverable when a summary drives code, security, or review decisions.
 
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds storage-layer provenance evidence. Enterprise RAG design should separate source archives, parsed chunks, embedding versions, vector and keyword indexes, metadata, ACLs, freshness checks, and retention archives so agents can cite and verify the source path behind retrieved evidence.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -50,6 +52,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - Require source inventory, access boundaries, credential hygiene, logging, runtime separation, and blast-radius review before RAG-backed agents act on retrieved development or enterprise data.
 - Record query intent, chunk boundaries, ranking rationale, and rejected distractors when retrieval evidence affects code edits or review findings.
 - Keep recoverable originals for compacted retrieval outputs that may later need source, security, or provenance audit.
+- Preserve source archives, parsed chunk records, embedding versions, index metadata, ACLs, freshness status, and retention records when RAG evidence drives agent action.
 
 ## Authoritative Sources
 
@@ -64,6 +67,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -96,3 +100,4 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - Maintained on 2026-07-09 with RAG responsibility training for citation paths, ranking rationale, chunk authority, and access boundaries.
 - Maintained on 2026-07-13 with RAG infrastructure inventory, runtime separation, credential hygiene, logging, and blast-radius controls.
 - Maintained on 2026-07-24 with query-intent, chunk-boundary, ranking-rationale, rejected-distractor, and recoverable-original guidance.
+- Maintained on 2026-07-29 with storage-layer provenance, embedding-version, ACL, freshness, and retention guidance.

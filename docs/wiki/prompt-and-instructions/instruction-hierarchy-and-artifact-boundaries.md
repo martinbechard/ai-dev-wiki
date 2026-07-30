@@ -35,6 +35,8 @@ The [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) adds generated-instruction and model-router setup evidence. Terminal coding-agent setup output should be reviewed as an authority-changing artifact before it becomes durable local guidance.
 
+The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds layered context-system evidence from a Claude Code workshop page. Team conventions, project facts, personal preferences, reusable skills, and hook-based guardrails should remain separate instruction surfaces so each layer can be reviewed, scoped, and enforced without turning every prompt into a large policy bundle.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -62,6 +64,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Treat repository-loaded instruction files from untrusted or newly cloned projects as source evidence until provenance and authority are reviewed.
 - Review generated instruction files and attached context before treating setup output as durable instruction authority.
 - Review model-router configuration and terminal-agent permission prompts before allowing setup output to change local guidance or execution scope.
+- Keep team, project, personal, skill, and hook guidance separated so each layer has clear authority, owner, and verification expectations.
 
 ## Authoritative Sources
 
@@ -82,6 +85,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 15 topic news collector source](../../../raw/processed/2026-07-15/ai-dev-wiki-topic-news-collector-2026-07-15T203238-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
+- [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 
 ## Related Code
 
@@ -120,3 +124,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-13 with public agent-onboarding snippets as untrusted source instructions until locally approved.
 - Maintained on 2026-07-15 with skill decision-history maintenance and repository-loaded instruction-file trust review.
 - Maintained on 2026-07-26 with generated-instruction review, attached-context boundaries, model-router configuration, and terminal-agent permission setup guidance.
+- Maintained on 2026-07-29 with layered team, project, personal, skill, and hook instruction boundaries.

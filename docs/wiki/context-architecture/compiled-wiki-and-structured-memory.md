@@ -27,6 +27,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) adds wiki-memory and context-schema reinforcement. Agent-maintained wiki memory is useful when it is persistent, structured, inspectable, and source-backed, while context schemas should separate system instructions, retrieved knowledge, memory, and tool I/O. Freshness metadata, trust labels, per-field refresh cadence, and multi-step validation decide whether memory can safely rehydrate a later task.
 
+The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds an event-store compaction signal. Summaries can be useful active context, but durable memory should preserve replayable or attributable originals for decisions, approvals, source reads, and tool actions when later review depends on what happened before compaction.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -48,6 +50,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Define extraction instructions, metadata filters, retrieval modes, update paths, TTL behavior, and retention boundaries for agent memory before using it as task context.
 - Separate instructions, retrieved knowledge, durable memory, and tool I/O when designing context schemas.
 - Attach freshness, trust, source, and refresh-cadence metadata to memory records that may influence future agent decisions.
+- Preserve replayable or attributable originals for compacted decisions, approvals, source reads, and tool actions when later audit matters.
 
 ## Authoritative Sources
 
@@ -61,6 +64,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 
 ## Related Code
 
@@ -94,3 +98,4 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Maintained on 2026-07-06 with persistent agent-memory capture, attribution, session-boundary, and source-backed rehydration boundaries.
 - Maintained on 2026-07-07 with governed memory extraction, hybrid retrieval, metadata filtering, update APIs, TTL, and retention boundaries.
 - Maintained on 2026-07-11 with agent-maintained wiki memory, context-schema separation, trust metadata, and refresh-cadence guidance.
+- Maintained on 2026-07-29 with event-store compaction, replay, and attributable-original guidance for auditable task memory.
