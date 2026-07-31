@@ -1,0 +1,433 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-30T20:32:28-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-07-28T20:32:28-04:00",
+    "end": "2026-07-30T20:32:28-04:00",
+    "policy": "Include only public sources with visible publication, update, event, or effective dates inside the window. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_ai_wiki_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and adoption patterns."
+  },
+  "search_queries": [
+    "AI assisted development code review agent workflow July 30 2026",
+    "context engineering coding agents durable instructions July 30 2026",
+    "MCP governed practice agent permissions approvals audit logs July 30 2026",
+    "software engineering evals coding agents harness July 30 2026",
+    "Jul 30, 2026 AI coding workflow",
+    "Jul 29, 2026 agentic coding",
+    "July 30, 2026 MCP agents skills",
+    "July 29, 2026 AI Native SDLC"
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Agent environments as the durable coding-agent substrate",
+      "source_url": "https://maven.com/p/0684ab",
+      "visible_date": "Thu, Jul 30, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "summary": "Maven listed a lesson on building environments instead of agents, focused on fast-start agent computers, reliable long jobs, secret isolation, and build-versus-buy choices for coding-agent infrastructure.",
+      "why_it_matters": "This reinforces a local practice pattern: treat the execution environment, secret boundary, and restart behavior as first-class context architecture rather than only prompt design.",
+      "named_entities": [
+        "Maven",
+        "Adam Azzam",
+        "Hamel Husain",
+        "Modal",
+        "Ramp"
+      ],
+      "upstream_owned_entities": [
+        "Maven",
+        "Modal",
+        "Ramp"
+      ],
+      "local_practice_implication": "Capture environment readiness, secret scoping, and long-job durability as acceptance criteria for coding-agent workflow design.",
+      "follow_up_notes": "Consider a downstream lens on agent environment readiness if multiple raw items converge on sandbox and restart practices."
+    },
+    {
+      "title": "Compiler diagnostics as deterministic feedback for coding agents",
+      "source_url": "https://www.meetup.com/toronto-java-users-group/events/315477262/",
+      "visible_date": "Thursday, Jul 30, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "summary": "The Toronto Java Users Group session framed Java annotation processors and Error Prone as compiler-level mechanisms for reporting custom diagnostics, suggesting fixes, and enforcing architecture rules.",
+      "why_it_matters": "The page explicitly contrasts prompts and documentation with deterministic compiler diagnostics, making static checks a shared feedback loop for humans and coding agents.",
+      "named_entities": [
+        "Toronto Java Users Group",
+        "Error Prone",
+        "MapStruct",
+        "Spring Boot",
+        "Adib Saikali",
+        "Tanzu",
+        "Broadcom"
+      ],
+      "upstream_owned_entities": [
+        "Error Prone",
+        "MapStruct",
+        "Spring Boot",
+        "Tanzu",
+        "Broadcom"
+      ],
+      "local_practice_implication": "Prefer enforceable compiler or static-analysis rules for durable architectural guidance when prompts alone would be advisory.",
+      "follow_up_notes": "Potential ingest target: deterministic guardrails for AI-assisted TDD and regression repair."
+    },
+    {
+      "title": "Control-plane phases for reliable coding-agent workflows",
+      "source_url": "https://www.meetup.com/boston-ai-machine-learning-data-science/events/314912796/",
+      "visible_date": "Jul 29, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "A Boston MCP, Agents and Skills meetup described Atomic as a control plane around coding agents, with persistent memory, deterministic workflow phases from research to shipping, and human-in-the-loop gates.",
+      "why_it_matters": "The item maps directly to local workflow governance: repeatability comes from phase structure, memory boundaries, and review gates around otherwise stochastic coding-agent execution.",
+      "named_entities": [
+        "Atomic",
+        "Claude Code",
+        "GitHub Copilot",
+        "Microsoft Research",
+        "Alex Lavaee"
+      ],
+      "upstream_owned_entities": [
+        "Atomic",
+        "Claude Code",
+        "GitHub Copilot",
+        "Microsoft Research"
+      ],
+      "local_practice_implication": "Represent coding-agent work as explicit lifecycle phases with gate evidence rather than a single open-ended session.",
+      "follow_up_notes": "Route broad product or SDK detail upstream; keep only the phase-and-gate operating model locally."
+    },
+    {
+      "title": "Cross-environment UI automation with supervised multi-agent handoffs",
+      "source_url": "https://www.meetup.com/boston-ai-machine-learning-data-science/events/314912796/",
+      "visible_date": "Jul 29, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "summary": "The same meetup described UISurf as a UI automation platform with planning, browser, desktop, automation, and summarization agents coordinating browser and desktop tasks with human supervision support.",
+      "why_it_matters": "For AI-assisted development tools, browser and desktop handoffs require explicit orchestration, environment-specific agents, and summary artifacts so progress can be reviewed after action.",
+      "named_entities": [
+        "UISurf",
+        "Texas A&M AgriLife Research",
+        "Henry Ruiz"
+      ],
+      "upstream_owned_entities": [
+        "UISurf",
+        "Texas A&M AgriLife Research"
+      ],
+      "local_practice_implication": "When agents span UI surfaces, require an orchestration owner and final task summary rather than letting separate agents act without shared state.",
+      "follow_up_notes": "If ingested, keep framework identity upstream-owned and synthesize the local pattern as supervised cross-environment handoff."
+    },
+    {
+      "title": "Internal skills tied to validation-bearing workflows",
+      "source_url": "https://www.meetup.com/boston-ai-machine-learning-data-science/events/314912796/",
+      "visible_date": "Jul 29, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "A meetup talk on AI-assisted skills emphasized converting repetitive manual workflows into reliable internal tools connected to real team workflows, standards, and validation steps.",
+      "why_it_matters": "This supports a local adoption rule: skills are durable process artifacts only when tied to existing standards and validation, not standalone prompts.",
+      "named_entities": [
+        "Janvi Vijaykumar Saddi",
+        "Astreya",
+        "Google"
+      ],
+      "upstream_owned_entities": [
+        "Astreya",
+        "Google"
+      ],
+      "local_practice_implication": "Catalog internal skills by the workflow and validation evidence they own, not just by the tool or model they invoke.",
+      "follow_up_notes": "Useful as support for a durable-instructions or team-adoption leaf."
+    },
+    {
+      "title": "Safe agent sandboxes with permissions and approval gates",
+      "source_url": "https://www.meetup.com/boston-ai-machine-learning-data-science/events/314912796/",
+      "visible_date": "Jul 29, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "summary": "The meetup also listed a sandbox-pattern talk on letting agents read, write, execute, and iterate in controlled environments while using permissions, human approval, and guardrails to protect production.",
+      "why_it_matters": "It reinforces the local governance boundary that tool access is a runtime control surface requiring approval semantics and production separation.",
+      "named_entities": [
+        "Adonai Vera",
+        "Voxel51"
+      ],
+      "upstream_owned_entities": [
+        "Voxel51"
+      ],
+      "local_practice_implication": "Document sandbox capabilities, approval prompts, and production-blocking rules as part of the workflow contract.",
+      "follow_up_notes": "Consider linking this with package-install and tool-call risk during ingest."
+    },
+    {
+      "title": "AI-native SDLC emphasizes memory and independent grading",
+      "source_url": "https://www.startupfolsom.org/folsom-events/introduction-to-ai-native-sdlc-by-evolution-labs-7gswk",
+      "visible_date": "Wednesday, July 29, 2026",
+      "date_basis": "event date visible on source page",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "Startup Folsom listed an Evolution Labs session for intermediate AI-native SDLC practices, including context-window failure modes, substrate-as-memory, independent grading, rituals, and operating practices for AI-run codebases.",
+      "why_it_matters": "The item combines several local practice themes: durable memory, context-loss mitigation, independent verification, and rituals that preserve codebase integrity at scale.",
+      "named_entities": [
+        "Startup Folsom",
+        "Evolution Labs"
+      ],
+      "upstream_owned_entities": [
+        "Startup Folsom",
+        "Evolution Labs"
+      ],
+      "local_practice_implication": "Avoid self-graded loops; define independent validation and durable memory surfaces for longer-running AI-assisted development workflows.",
+      "follow_up_notes": "Good candidate evidence for a verification leaf on grader independence."
+    },
+    {
+      "title": "Codex team workflow bootcamp highlights approvals and worktrees",
+      "source_url": "https://academy.openai.com/en/public/clubs/builders-etkn1/resources/codex-bootcamp-2026-07-18",
+      "visible_date": "Jul 29, 2026",
+      "date_basis": "in-window session date visible on source page; resource itself shows July 18, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "OpenAI Academy listed Codex Bootcamp sessions covering scoping, context, steering progress, code review before changes, team workflows with shared context, repository guidance, approvals, sandboxing, tool connections, skills, automations, worktrees, sub-agents, memory, execution rules, CI, security, and code-review patterns.",
+      "why_it_matters": "The event schedule reflects a practical progression from individual agentic coding to governed team operation and automation controls.",
+      "named_entities": [
+        "OpenAI Academy",
+        "Codex",
+        "OpenAI API"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "OpenAI API"
+      ],
+      "local_practice_implication": "Team adoption guidance should cover repository instructions, approval surfaces, worktree isolation, reusable skills, and review-before-apply practices together.",
+      "follow_up_notes": "Keep product identity upstream-owned; local synthesis should focus on the staged curriculum as an operating-model signal."
+    },
+    {
+      "title": "AI-native build workflow packages PRDs and code review",
+      "source_url": "https://www.codecademy.com/workshops/vibe-code-your-personal-website-in-1-day-britney-russ/overview",
+      "visible_date": "July 30, 2026",
+      "date_basis": "cohort date visible on source page",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "summary": "Codecademy listed a July 30 workshop teaching an AI-native build process from brand and content through requirements, code, review, deployment, analytics, and search, including slash commands for PRDs optimized for AI code agents.",
+      "why_it_matters": "The source shows AI-assisted development instruction moving from one-off code generation into a complete requirements-to-review workflow.",
+      "named_entities": [
+        "Codecademy",
+        "Claude",
+        "Cursor",
+        "Claude Code",
+        "Next.js",
+        "Vercel"
+      ],
+      "upstream_owned_entities": [
+        "Codecademy",
+        "Claude",
+        "Cursor",
+        "Claude Code",
+        "Next.js",
+        "Vercel"
+      ],
+      "local_practice_implication": "Treat PRD generation, coding-agent prompts, code review, and deployment verification as one workflow chain when teaching AI-assisted builds.",
+      "follow_up_notes": "Could inform a local practice note on requirements-first agent workflows."
+    },
+    {
+      "title": "Cost-constrained AI code-review eval challenge",
+      "source_url": "https://www.meetup.com/london-ai-cost-hackers/events/315767303/",
+      "visible_date": "Thursday, Jul 30, 2026",
+      "date_basis": "event date visible in public search result",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "A London AI Cost Hack listing described an optimization challenge for a software engineering workflow with starter code, an eval set, hidden eval scoring, and an AI code-review example that reads pull requests, checks for bugs and security issues, estimates risk, and writes a review.",
+      "why_it_matters": "The event treats cost, routing, smaller models, rules, and local inference as variables constrained by eval pass rates, which is directly relevant to practical AI code-review checks.",
+      "named_entities": [
+        "London AI Cost Hackers",
+        "Merge Gateway"
+      ],
+      "upstream_owned_entities": [
+        "Merge Gateway"
+      ],
+      "local_practice_implication": "Code-review agents should be evaluated on usefulness, bug/security coverage, risk classification, and cost, not only model capability.",
+      "follow_up_notes": "Verify the live page during ingest because current collector evidence came from the public search result snippet rather than an opened page body."
+    },
+    {
+      "title": "Bedrock Agents Classic migration favors managed harnesses",
+      "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/agents-classic-maintenance-mode.html",
+      "visible_date": "July 30, 2026",
+      "date_basis": "effective maintenance-mode date visible on source page",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "summary": "AWS documentation says Bedrock Agents Classic is closed to new customers starting July 30, 2026 and recommends AgentCore harness for new development, with declared model, tools, instructions, environment, compute, memory, identity, observability, MCP gateway tools, code interpreter, guardrails, tracing, and system prompt configuration.",
+      "why_it_matters": "Although the service and product details are upstream-owned, the migration guidance is a practice signal: prefer managed harnesses unless there is a clear reason to own the orchestration loop.",
+      "named_entities": [
+        "Amazon Bedrock Agents Classic",
+        "Amazon Bedrock AgentCore",
+        "AWS",
+        "MCP",
+        "Strands",
+        "LangChain",
+        "OpenAI Agents SDK",
+        "Claude Agent SDK"
+      ],
+      "upstream_owned_entities": [
+        "Amazon Bedrock Agents Classic",
+        "Amazon Bedrock AgentCore",
+        "AWS",
+        "MCP",
+        "Strands",
+        "LangChain",
+        "OpenAI Agents SDK",
+        "Claude Agent SDK"
+      ],
+      "local_practice_implication": "When planning agent migrations, choose a managed harness for standard tool, memory, identity, tracing, and guardrail needs; reserve custom loops for advanced orchestration requirements.",
+      "follow_up_notes": "If ingested, route product lifecycle coverage upstream and keep only the harness-selection rule locally."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Changelog: Dependabot alerts on malicious packages across more ecosystems",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.28",
+      "reason": "Date-only July 28 item cannot be safely placed after the 2026-07-28T20:32:28-04:00 cutoff."
+    },
+    {
+      "title": "GitHub Changelog: GitHub Actions holds potentially malicious workflows for approval",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.28",
+      "reason": "Date-only July 28 item is boundary-only relative to this run window."
+    },
+    {
+      "title": "GitHub Copilot for JetBrains adds improved OpenTelemetry configuration and model management",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.27",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Manage GitHub Copilot app access with a dedicated policy",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.27",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Enterprise managed settings in the GitHub Copilot app and Copilot cloud agent",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Jul.27",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Harness Agent DLC targets AI agent development gaps",
+      "source_url": "https://www.techtarget.com/searchitoperations/news/366646195/Harness-Agent-DLC-targets-AI-agent-development-gaps",
+      "visible_date": "Published: 22 Jul 2026",
+      "reason": "Relevant to agent lifecycle testing, but published before the cutoff window."
+    },
+    {
+      "title": "How DoorDash built an AI code reviewer engineers actually listen to",
+      "source_url": "https://careersatdoordash.com/blog/doordash-built-an-ai-code-reviewer-engineers-actually-listen-to/",
+      "visible_date": "May 11, 2026",
+      "reason": "Relevant AI code-review practice source, but outside the cutoff window."
+    },
+    {
+      "title": "The Next Generation of Developer Productivity with GitHub Copilot and Visual Studio",
+      "source_url": "https://visualstudiomagazine.com/articles/2026/05/12/the-next-generation-of-developer-productivity-with-github-copilot-and-visual-studio.aspx",
+      "visible_date": "05/12/2026; event date July 29, 2026",
+      "reason": "Article publication is outside the cutoff; the in-window event date alone does not make the article newly published or updated."
+    },
+    {
+      "title": "Visual Studio 2026 release notes July update",
+      "source_url": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
+      "visible_date": "Released on July 28, 2026 and July 14, 2026",
+      "reason": "The AI feature section belongs to July 14; the July 28 bugfix date is date-only and not clearly tied to AI-assisted development practice."
+    },
+    {
+      "title": "GitHub Models fully retired on July 30, 2026",
+      "source_url": "https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/",
+      "visible_date": "July 1, 2026; effective July 30, 2026",
+      "reason": "Product lifecycle item is upstream-owned and published outside the cutoff; local practice implication is only model access migration hygiene."
+    },
+    {
+      "title": "Visual Studio's July 2026 Updates Make AI Assistance Smarter",
+      "source_url": "https://magnetism-solutions.squarespace.com/news",
+      "visible_date": "July 29, 2026 in search result",
+      "reason": "Search result suggested an in-window article, but the opened page did not expose the claimed July 29 item in retrievable page text."
+    },
+    {
+      "title": "Build Lab: From Idea to Deployed App in 90 Minutes with Claude Code",
+      "source_url": "https://www.meetup.com/nyc-applied-ai-builders/events/315287294/",
+      "visible_date": "Thursday, Jul 30, 2026",
+      "reason": "The listing is canceled, so it is not a qualifying current practice update."
+    }
+  ],
+  "counts": {
+    "qualifying_updates": 11,
+    "excluded_candidates": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "collector_notes": [
+    "Collector stayed raw-only and did not update docs/wiki or raw/processed.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Broad ecosystem entity updates were marked upstream-owned; local notes only capture AI-assisted development practice implications.",
+    "Prior automation memory referenced the July 29 artifact under raw, but the current checkout has it under raw/processed; this did not block the current raw collector run."
+  ]
+}
