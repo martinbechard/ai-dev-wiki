@@ -13,6 +13,7 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
 - [subagent-coordination.md](subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [delegated-coding-handoffs.md](delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
+- [supervised-cross-environment-handoffs.md](supervised-cross-environment-handoffs.md) records handoff evidence when agents span browser, desktop, terminal, repository, or cloud surfaces.
 - [deep-research-and-writing-workflows.md](deep-research-and-writing-workflows.md) records the split between exploratory research agents and constrained writing workflows.
 - [persistent-agent-workspaces.md](persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
 - [event-triggered-agent-workflows.md](event-triggered-agent-workflows.md) records governed triggers, allowed actions, approval handoffs, and run evidence.
@@ -58,3 +59,4 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - Split on 2026-06-23 so reusable workflow concepts live in durable leaf pages.
 - Maintained on 2026-06-23 to add persistent workspaces and public loop-design signals for long-running agent work.
 - Maintained on 2026-07-17 to add separate event-triggered and terminal agent workflow controls.
+- Maintained on 2026-07-30 with supervised cross-environment handoffs as a durable leaf.

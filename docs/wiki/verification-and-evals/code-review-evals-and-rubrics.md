@@ -41,6 +41,8 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds layered review-role calibration. The reusable role model lives in [layered AI code review roles](../coding-practices/layered-ai-code-review-roles.md); this eval page owns the rubric field that scores whether expected role-specific findings remain separated in review output.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) and primary [London AI Cost Hack event page](https://www.meetup.com/london-ai-cost-hackers/events/315767303/) add two review-eval refinements. Compiler or static-analysis diagnostics should be scored separately from model review comments because they provide deterministic architecture feedback. Cost-constrained code-review challenges should also score usefulness, bug and security coverage, risk classification, and cost together rather than treating model choice as the only variable.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -71,6 +73,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Score right-file selection, process adherence, trace artifacts, and repeated-run stability when evaluating coding-agent review workflows.
 - Score cost thresholds, latency thresholds, and human-review presence as separate review-eval fields when they affect acceptance.
 - Score whether review results separate implementation, architecture, and security findings when those roles are expected to catch different failure modes.
+- Score deterministic compiler or static-analysis findings separately from model-generated review comments.
+- Include usefulness, bug and security coverage, risk classification, and cost as separate dimensions for cost-constrained code-review agents.
 
 ## Authoritative Sources
 
@@ -95,6 +99,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [London AI Cost Hack event page](https://www.meetup.com/london-ai-cost-hackers/events/315767303/)
 
 ## Related Code
 
@@ -135,3 +141,4 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Maintained on 2026-07-22 with task-shape reporting, review-history state, rate-limit impact, reviewer-disagreement stop conditions, and AI-code gate priorities.
 - Maintained on 2026-07-26 with right-file, process-adherence, trace-artifact, repeated-run, cost, latency, and human-review eval criteria.
 - Maintained on 2026-07-27 with layered implementation, architecture, and security review-role scoring.
+- Maintained on 2026-07-30 with deterministic diagnostic scoring and cost-constrained code-review eval dimensions after live primary-source corroboration.

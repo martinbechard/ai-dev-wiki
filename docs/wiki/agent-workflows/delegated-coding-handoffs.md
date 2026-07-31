@@ -29,6 +29,8 @@ The [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-d
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds execution-boundary and agent-manager criteria. Handoffs should state whether work ran locally, in managed worktrees, in a cloud session, through repository-native delegation, or through a browser-agent surface because file access, credential location, supervision, review loop, and reproducible setup differ by boundary.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md) as a focused handoff leaf. When work spans browser, desktop, terminal, repository, or cloud surfaces, the handoff should identify the surface boundary and the evidence that lets the next reviewer inspect progress outside the original UI.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -44,6 +46,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Include specifications, evidence artifacts, independent verification results, and integration-order notes when the handoff claims delegated work is complete.
 - Preserve ticket, board, pull-request review state, human owner, audit fields, and approval status when project-management tools coordinate agentic engineering work.
 - Record execution location, file and credential boundary, supervision surface, review loop, and reproducible setup evidence when a task moves between local, worktree, cloud, repository-native, or browser-agent environments.
+- Route browser, desktop, terminal, repository, or cloud boundary transitions through [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md).
 
 ## Authoritative Sources
 
@@ -60,6 +63,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -77,6 +81,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
 - [subagent coordination](subagent-coordination.md)
+- [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
@@ -94,3 +99,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-07-14 with accountable-owner boundaries, proof artifacts, independent verification, and integration-order handoff requirements.
 - Maintained on 2026-07-16 with issue-tracker control-plane, PR review-state, governance-field, and audit-evidence handoff requirements.
 - Maintained on 2026-07-27 with local, managed-worktree, cloud, repository-native, and browser-agent execution-boundary handoff criteria.
+- Maintained on 2026-07-30 with supervised cross-environment handoff routing.

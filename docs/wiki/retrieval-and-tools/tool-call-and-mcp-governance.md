@@ -13,7 +13,7 @@ Tool calls turn model intent into software-mediated action. The model requests a
 
 Dynamic context tools sit between retrieval and action. They let a model request targeted additional information when the application cannot know all needed context upfront. Action tools perform governed operations such as reading, writing, scheduling, querying, transforming, or updating external systems.
 
-MCP is the local practice boundary for standardized tool access. It exposes typed tools through a server and client arrangement while credentials remain in the connector or server. Broad MCP ecosystem coverage belongs to the upstream [AI wiki MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md); this page owns how local AI-assisted workflows should treat MCP as a governed access layer.
+MCP is the local practice boundary for standardized tool access. It exposes typed tools through a server and client arrangement while credentials remain in the connector or server. Broad MCP ecosystem coverage belongs to the upstream [AI wiki MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md); this page owns how local AI-assisted workflows should treat MCP as a governed access layer. [MCP scoped authorization and approval evidence](mcp-scoped-authorization-and-approval-evidence.md) owns the focused resource-scope, read/write, and approval-payload evidence contract.
 
 The [topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) adds a governed-execution lens for MCP and agent tools: tool governance should account for the acting identity, policy version, execution environment, runtime inventory, tool-call transcript, and generated-output validation. Vendor-specific governed MCP products remain upstream-owned; the local rule is that tool access should produce reviewable evidence when it can change code, data, infrastructure, or external systems.
 
@@ -66,6 +66,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 The July 28 raw sources add cross-client and remote-skill tool governance evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) records managed settings for plugins, marketplaces, approval bypasses, and model routing across agent clients, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) records MCP-discovered skills, token-limit controls, MCP diagnostics, and custom-agent routing as governed tool surfaces.
 
 The July 29 raw sources add MCP migration and state-handle evidence. The [topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) records stateless-core, OAuth-hardening, extension, migration-plan, elicitation, and explicit-state-handle implications for remote MCP practice, while the [leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) reinforces remote skill package governance through MCP servers. Broad protocol details stay upstream; locally, protocol revisions should trigger conformance tests, session-dependence audits, explicit state externalization, approval review, and traceability updates before agents rely on changed servers.
+
+The July 30 raw sources add IAM and approval-package evidence. The [leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) records resource-scoped MCP authorization, read/write capability separation, and per-tool permission checks, and the [topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces sandbox permissions for read, write, execute, and iterate workflows. Locally, MCP calls should preserve resource scope, task scope, exact action payload, human or policy approval evidence, and the executed payload so the audit trail can prove that approval and execution matched.
 
 ## Practice Boundaries
 
@@ -129,6 +131,8 @@ The July 29 raw sources add MCP migration and state-handle evidence. The [topic 
 - Apply managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, and custom-agent policies consistently across IDE, CLI, app, cloud-agent, and remote-skill surfaces.
 - Treat remote MCP skills as governed tool packages whose publisher, archive bounds, allowed tool scope, approval defaults, and diagnostics need review before use.
 - Treat MCP protocol revisions as deployment lifecycle events that require conformance evidence, state-handle review, migration plans, approval checks, and updated audit joins.
+- Scope MCP authorization by resource, task, user or agent identity, and read/write capability before the tool is callable.
+- Preserve exact proposed and executed payloads for high-impact tool calls so approval evidence can be matched to action evidence.
 
 ## Authoritative Sources
 
@@ -177,6 +181,8 @@ The July 29 raw sources add MCP migration and state-handle evidence. The [topic 
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 
 ## Related Code
 
@@ -199,6 +205,7 @@ The July 29 raw sources add MCP migration and state-handle evidence. The [topic 
 - [agent identity and delegated authority](../governance-and-risk/agent-identity-and-delegated-authority.md)
 - [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
 - [progressive MCP tool discovery](progressive-mcp-tool-discovery.md)
+- [MCP scoped authorization and approval evidence](mcp-scoped-authorization-and-approval-evidence.md)
 
 ## Open Questions
 
@@ -207,6 +214,7 @@ The July 29 raw sources add MCP migration and state-handle evidence. The [topic 
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with stateless MCP, gateway-selection, filtered discovery, per-tool authorization, logging, and secret-scanning guidance.
+- Maintained on 2026-07-30 with resource-scoped MCP authorization, read/write separation, sandbox permission evidence, and exact approval-to-execution payload matching.
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.
 - Maintained on 2026-06-23 with public governed-MCP and runtime agent governance signals.
 - Maintained on 2026-06-24 with MCP gateway policy, untrusted tool-output, and routing-aware evidence requirements.

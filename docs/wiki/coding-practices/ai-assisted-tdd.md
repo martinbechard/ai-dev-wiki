@@ -19,6 +19,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 
 The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds acceptance-test ownership evidence from secondary commentary. Human review should stay focused on behavioral specifications, Gherkin-style acceptance tests, QA procedures, and criticality-scaled coverage when agents are allowed to draft unit tests and implementation code.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds compiler-diagnostic evidence for durable guardrails. When architecture rules, generated-code constraints, or framework conventions can be encoded as compiler or static-analysis diagnostics, those checks should supplement prompts so both humans and agents receive deterministic feedback during the TDD loop.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -31,6 +33,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Use failing tests to expose requirement interpretation errors before accepting generated architecture or implementation.
 - Use tests and behavior inventories to constrain AI-generated refactors before large cleanup or bloat-removal passes.
 - Keep humans accountable for acceptance criteria, QA procedures, and criticality-scaled coverage even when agents draft lower-level tests and implementation.
+- Prefer compiler, type, lint, or static-analysis diagnostics for recurring architectural constraints when prompts alone would leave the rule advisory.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -70,3 +74,4 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.
 - Maintained on 2026-07-11 with TDD as an executable constraint for AI-generated code cleanup and refactoring.
 - Maintained on 2026-07-29 with human-owned acceptance-test, QA-procedure, and criticality-scaled coverage guidance.
+- Maintained on 2026-07-30 with compiler and static-analysis diagnostics as deterministic AI-assisted TDD guardrails.

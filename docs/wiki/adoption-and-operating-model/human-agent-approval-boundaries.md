@@ -39,6 +39,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) adds client-specific access and CI execution-hold evidence. Teams can enable an agent client separately from a CLI, but isolated workspaces, pull-request handoff, and suspicious-workflow approval holds still need write-access or owner review before generated changes or CI side effects become trusted workflow state.
 
+The July 30 raw sources add exact-payload and sandbox approval evidence. The [leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) frames human approval as a control-plane package that captures proposed action, evidence, scope, policy result, approver, and payload, while the [topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces permissions and guardrails for controlled read, write, execute, and iterate environments. Approval is durable only when the authorized payload and executed payload can be compared.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -66,6 +68,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Treat low-confidence or weak-rationale suggestions as review prompts, not as authority to mutate workflow state.
 - Stage agent-client rollout separately from CLI or IDE access when the workflow, isolated workspace, pull-request handoff, and reviewer capacity differ.
 - Require owner or write-access approval before suspicious agent-authored workflow changes execute CI or reach credentials.
+- Capture proposed action, evidence, scope, policy decision, approver, and exact payload for consequential agent actions.
+- Block execution when the payload, target path, data class, or side-effect scope differs from what was approved.
 
 ## Authoritative Sources
 
@@ -88,6 +92,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 
 ## Related Code
 
@@ -121,6 +127,7 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Maintained on 2026-07-24 with the distinction between workflow-convenience approvals and enforceable security controls.
 - Maintained on 2026-07-28 with client-specific access rollout, isolated-workspace PR handoff, and CI workflow approval-hold guidance.
+- Maintained on 2026-07-30 with approval-package evidence, sandbox permission controls, and approved-versus-executed payload matching.
 - Created on 2026-06-23 from source-backed approval, delegation, and human-accountability guidance.
 - Maintained on 2026-06-23 with public AI control guidance on progressive permissions, sandboxing, monitoring, and containment.
 - Maintained on 2026-07-01 with runtime tool authorization, block thresholds, monitoring, and audit trails as approval boundaries.

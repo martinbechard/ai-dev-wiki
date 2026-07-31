@@ -21,6 +21,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) adds an agent data injection boundary. Rules, facts, metadata, tool-originated data, and authorization evidence should remain separate layers so a retrieved field or persisted fact cannot impersonate a higher-priority instruction.
 
+The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds current instruction-layer evidence from file-based coding-agent guidance. Repository, file-scoped, organization, and user instruction layers need explicit priority and diagnostics so agents can explain which rule source applied without allowing lower-priority project data to rewrite durable policy.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -34,6 +36,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Preserve policy and provenance metadata with retrieved business or project context so agents can explain why the context was valid for the task.
 - Preserve trust labels for facts, metadata, tool output, and authorization evidence when those layers are later assembled into a request.
 - Do not let data or metadata loaded from repositories, tools, or memory rewrite the rules layer.
+- Record instruction priority, scope, and diagnostics when repository, file-scoped, organization, or user guidance can overlap.
 
 ## Authoritative Sources
 
@@ -45,6 +48,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
+- [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 
 ## Related Code
 
@@ -75,3 +79,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Maintained on 2026-06-29 with permission-aware company context as a refreshable knowledge layer.
 - Maintained on 2026-07-03 with governed meaning, lineage, decision memory, policy metadata, and provenance as knowledge-layer concerns.
 - Maintained on 2026-07-08 with trust labels separating rules, facts, metadata, tool output, and authorization evidence.
+- Maintained on 2026-07-30 with instruction priority, scope, and diagnostics for file-based coding-agent guidance.

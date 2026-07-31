@@ -37,6 +37,8 @@ The July 18-21 raw sources add effort-routing and graph-control signals. The [Co
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds agent-manager and multi-surface execution criteria. Subagent coordination should account for IDE, CLI, cloud, worktree, and terminal multiplexer surfaces as different supervision and handoff channels, and it should treat built-in agent teams as coordination overhead that still needs role boundaries, shared-state rules, and review capacity checks.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds cross-environment UI automation evidence. When subagents are specialized by planning, browser, desktop, automation, or summarization role, [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md) owns the environment boundary and summary artifact while this page owns role separation and coordinator accountability.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -60,6 +62,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Route high-effort or high-cost subagents deliberately; do not let a parent mode silently cascade expensive reasoning, tool budgets, or autonomy into every delegated worker.
 - Represent multi-agent graphs with explicit routers, joins, human checkpoints, identities, budgets, traces, and stop conditions before making them recurring workflow infrastructure.
 - Compare IDE, CLI, cloud, worktree, and terminal-multiplexer coordination by supervision, isolation, handoff, and review-capacity evidence before choosing a subagent surface.
+- Keep role separation, shared state, and summary artifacts explicit when subagents specialize by UI surface.
 
 ## Authoritative Sources
 
@@ -79,6 +82,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -97,6 +101,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [agent workflows](index.md)
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
+- [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md)
 
@@ -118,3 +123,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-07-16 with coding-fleet verification capacity, owner assignment, merge-conflict control, and fan-out stop conditions.
 - Maintained on 2026-07-22 with effort-routing, graph-control, trace, budget, and inherited-subagent mode boundaries.
 - Maintained on 2026-07-27 with IDE, CLI, cloud, worktree, and terminal-multiplexer coordination criteria.
+- Maintained on 2026-07-30 with cross-environment role separation and handoff-summary routing.

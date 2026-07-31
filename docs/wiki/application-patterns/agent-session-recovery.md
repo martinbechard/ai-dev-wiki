@@ -1,0 +1,55 @@
+---
+type: "Application Pattern"
+title: "Agent Session Recovery"
+description: "Agent session recovery preserves enough durable state for a long-running agent workflow to resume without trusting a chat summary."
+tags: ["application-patterns"]
+---
+
+# Agent Session Recovery
+
+## Current Understanding
+
+Agent session recovery preserves enough durable state for a long-running agent workflow to resume without trusting a chat summary. The recovery surface should include startup continuity checks, progress cursors, last material outputs, generated artifacts, verification evidence, and unresolved blockers.
+
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces long-job durability and restart behavior as coding-agent environment criteria. The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds file-backed wiki and recovery-feature evidence. Locally, a recoverable session needs both a trustworthy environment and durable evidence that a resumed human or agent can inspect.
+
+## Practice Boundaries
+
+- Run startup continuity checks before resuming from a persistent workspace or durable session record.
+- Preserve progress cursors, last material outputs, generated artifacts, verification evidence, and unresolved blockers in durable locations.
+- Treat recovered filesystem state as untrusted until current instructions, source files, and validation evidence are rechecked.
+- Link recovery records to the environment, approval, tool-call, and verification evidence that made the prior work acceptable.
+- Archive or reset recovery state when it no longer matches the live repository or accepted plan.
+
+## Authoritative Sources
+
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [agent harness components](agent-harness-components.md)
+- [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
+
+## Related Code
+
+- Not yet identified.
+
+## Related Tests
+
+- Not yet identified.
+
+## Related Backlog Items
+
+- Not yet identified.
+
+## Related Wiki Pages
+
+- [agent harness components](agent-harness-components.md)
+- [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
+- [agent environment readiness](agent-environment-readiness.md)
+
+## Open Questions
+
+- No open wiki questions are recorded for this topic.
+
+## Maintenance Notes
+
+- Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.

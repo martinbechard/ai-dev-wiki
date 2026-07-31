@@ -13,18 +13,23 @@ Harness sizing by workflow complexity matches runtime controls to the risk and s
 
 The local rule is to avoid both underbuilt and overbuilt harnesses. A low-risk drafting workflow can use lighter state and review. A long-running action workflow needs explicit loop control, tool execution, memory, approval, telemetry, persistence, compaction, and recovery evidence.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds environment-readiness criteria to harness sizing. When setup latency, secrets, dependency caches, network posture, or long-running jobs dominate the risk, the harness size should include managed environment provisioning, restart checks, artifact persistence, and policy evidence rather than only more prompt or orchestration logic.
+
 ## Practice Boundaries
 
 - Size harness controls to action risk, context complexity, duration, and need for recovery.
 - Use lighter harnesses for low-risk drafting or inspection workflows with clear human review.
 - Require loop control, state, approvals, telemetry, persistence, compaction, and rollback evidence for long-running or mutating workflows.
 - Revisit harness size when a workflow gains tools, credentials, external effects, or unattended execution.
+- Include managed environment provisioning, restart checks, and artifact persistence when environment readiness is the limiting factor for unattended work.
 
 ## Authoritative Sources
 
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
+- [agent environment readiness](agent-environment-readiness.md)
 
 ## Related Code
 
@@ -51,3 +56,4 @@ The local rule is to avoid both underbuilt and overbuilt harnesses. A low-risk d
 ## Maintenance Notes
 
 - Created on 2026-07-28 from July 28 raw evidence about matching harness responsibilities to action and context complexity.
+- Maintained on 2026-07-30 with environment-readiness criteria for setup latency, secrets, restart checks, and artifact persistence.

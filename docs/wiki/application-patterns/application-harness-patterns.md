@@ -11,7 +11,7 @@ tags: ["application-patterns"]
 
 The harness around the model is where an AI application becomes reliable product software. The harness coordinates user interface, server orchestration, model calls, context assembly, tools, workflow state, validation, progress display, and product output.
 
-The detailed harness patterns live in sibling leaves. [Agent harness components](agent-harness-components.md) covers the loop, registry, persistence, hooks, and permission layer; [structured output and drafter patterns](structured-output-and-drafter-patterns.md) cover executable artifacts; [AI process layer and workflow state](ai-process-layer-and-workflow-state.md) covers orchestration and state; [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md) covers progress and health signals; and [local model runtime harness](local-model-runtime-harness.md) covers local operation.
+The detailed harness patterns live in sibling leaves. The Pattern Leaves section below routes each harness concern to its focused owner.
 
 Named frameworks, SDKs, models, and products are upstream-owned entities. This page owns the local architecture pattern and points to local leaves for workflow-specific practice.
 
@@ -31,10 +31,15 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds thin-harness architecture evidence from enterprise commentary. Harness code should stay thin enough to preserve model portability, while skill or process artifacts, context resolvers, auditable data connectors, and validation gates carry the operational controls that make workflows reliable.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds [agent environment readiness](agent-environment-readiness.md) as a harness design leaf. This page keeps the overview boundary: fast-start environments, dependency state, secret isolation, long-job durability, restart semantics, and managed-versus-custom substrate decisions are harness responsibilities when they determine whether coding-agent work is reproducible and reviewable.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
 - [agent-harness-components.md](agent-harness-components.md) owns the fixed runtime pieces of an agent harness.
+- [agent-session-recovery.md](agent-session-recovery.md) owns startup continuity checks, progress cursors, durable artifacts, and resumability evidence.
+- [agent-lifecycle-hooks.md](agent-lifecycle-hooks.md) owns hook points for session starts, tool-surface changes, approvals, memory updates, verification, failures, and completion.
+- [agent-environment-readiness.md](agent-environment-readiness.md) owns setup, isolation, secret scoping, restart, and persistence criteria for coding-agent environments.
 - [harness-sizing-by-workflow-complexity.md](harness-sizing-by-workflow-complexity.md) owns matching harness responsibilities to action risk and context complexity.
 - [ai-process-layer-and-workflow-state.md](ai-process-layer-and-workflow-state.md) owns workflow orchestration between interface and backend systems.
 - [declarative-agent-workflow-artifacts.md](declarative-agent-workflow-artifacts.md) owns reviewable workflow artifacts for branching, approvals, checkpoints, and resume behavior.
@@ -55,6 +60,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Pair [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md) with sandbox execution and provenance when files survive across conversations, deploys, or restarts.
 - Route harness-size decisions through [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md).
 - Keep orchestration thin where possible, but make skill artifacts, context resolvers, data connectors, validation, and audit evidence explicit harness responsibilities.
+- Treat setup latency, dependency availability, secret isolation, long-job survival, restart behavior, and artifact persistence as harness design inputs through [agent environment readiness](agent-environment-readiness.md).
 
 ## Authoritative Sources
 
@@ -71,7 +77,11 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
+- [agent session recovery](agent-session-recovery.md)
+- [agent lifecycle hooks](agent-lifecycle-hooks.md)
+- [agent environment readiness](agent-environment-readiness.md)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 - [federation.md](../federation.md)
 
@@ -110,3 +120,5 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Maintained on 2026-07-27 with source-controlled enterprise-builder artifacts and persistent-workspace harness boundaries.
 - Maintained on 2026-07-28 with harness-sizing guidance for loop, planning, memory, approvals, telemetry, history, compaction, skills, and tool execution.
 - Maintained on 2026-07-29 with thin-harness, skill-artifact, context-resolver, data-connector, and audit-control guidance.
+- Maintained on 2026-07-30 with agent environment readiness routing for setup, secret isolation, restart, and durable execution substrate criteria.
+- Maintained on 2026-07-30 with session recovery and lifecycle hooks split into separate focused leaves.

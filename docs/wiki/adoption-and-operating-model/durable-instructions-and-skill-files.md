@@ -27,6 +27,8 @@ The July 17 raw sources add skill-provenance and registry-control evidence. The 
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds two instruction-surface signals. Repository rule-file discovery can show setup spread but not actual usage or quality, so it stays here as an adoption-metric caveat. [Executable PRD templates](../prompt-and-instructions/executable-prd-templates.md) owns PRD templates that define permissions, approval gates, logging, escalation, and eval-style done criteria.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds internal-skill adoption evidence. Skills become durable process artifacts when they are tied to named workflows, team standards, validation steps, and owner review; standalone prompts or uncataloged snippets should not be promoted until the workflow and evidence contract are clear.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -46,6 +48,7 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Route public skill registries, imported instruction bundles, allowed tool scope, and poisoned registry controls through supply-chain review before treating them as trusted instructions.
 - Treat repository rule-file discovery as a coarse adoption signal, not proof of productive or correct agent use.
 - Route PRD templates that define permissions, approval gates, logging, escalation, or eval-style done criteria through [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md).
+- Catalog internal skills by workflow, owner, validation evidence, standards coverage, and compatibility target before treating them as reusable procedure.
 
 ## Authoritative Sources
 
@@ -60,6 +63,7 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -97,3 +101,4 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Maintained on 2026-07-09 with repo-local instruction trust boundaries and generated customization review as developer skill practice.
 - Maintained on 2026-07-17 with IDE-managed skills, source ownership, compatibility metadata, change history, and routing to supply-chain controls for registry and tool-scope risk.
 - Maintained on 2026-07-27 with rule-file adoption caveats and executable PRD template review boundaries.
+- Maintained on 2026-07-30 with internal-skill workflow ownership, standards, validation, and compatibility evidence.

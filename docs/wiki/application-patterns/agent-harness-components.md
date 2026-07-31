@@ -9,7 +9,7 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
-An agent harness is the fixed runtime architecture that lets a model act, observe the result, and continue toward a goal. The [agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md) distinguishes a harness from a framework: a framework gives a human abstractions to assemble, while a harness ships an operating loop, tool registry, context control, persistence, hooks, and permission layer that an agent can use directly.
+An agent harness is the fixed runtime architecture that lets a model act, observe the result, and continue toward a goal. The [agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md) distinguishes a harness from a framework: a framework gives a human abstractions to assemble, while a harness ships an operating loop, tool registry, context control, persistence, hooks, and permission layer that an agent can use directly. [Agent session recovery](agent-session-recovery.md) and [agent lifecycle hooks](agent-lifecycle-hooks.md) own those focused details; this page remains the component map.
 
 The local harness component model includes an iteration loop, context management and compaction, a tool and skill registry, subagent management, built-in primitives, session persistence, dynamic instruction assembly, lifecycle hooks, and dispatch-time permissions. These components support the broader [application harness patterns](application-harness-patterns.md) page by naming the runtime pieces that must be present before a model-backed application can safely do work.
 
@@ -48,6 +48,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) adds harness-owned memory and eval evidence. Coding-agent memory should be injected by deterministic cues and audit logs, and benchmark harnesses should preserve task provenance, contamination resistance, reproducible setup, and scoring surfaces as first-class runtime components.
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds persistent workspace and agent-host evidence. Durable filesystem state, sandbox command execution, faster multi-file review surfaces, assisted tool approvals, chat visibility, terminal diff links, and dedicated agent host processes are harness components when they affect handoff quality and event-driven review loops.
+
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds [agent environment readiness](agent-environment-readiness.md) as a focused harness component. Coding-agent environments should expose setup state, dependency readiness, secret isolation, restart behavior, long-job durability, and artifact persistence as inspectable runtime surfaces before teams rely on longer unattended workflows.
 
 ## Practice Boundaries
 
@@ -90,6 +92,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Deliver memory from deterministic path, symbol, event, semantic, or time cues with traceable source links instead of relying on model-initiated recall.
 - Preserve benchmark task construction, contamination controls, execution setup, scoring, and artifact evidence as harness components when eval results guide workflow authorization.
 - Treat persistent filesystems, sandbox execution, agent host processes, approval UX, multi-file review surfaces, and terminal diff links as harness components when they determine reviewability.
+- Treat environment setup, dependency availability, secret scoping, restart semantics, and long-job durability as harness components rather than prompt-only assumptions.
 
 ## Authoritative Sources
 
@@ -125,6 +128,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -141,6 +145,9 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 ## Related Wiki Pages
 
 - [application harness patterns](application-harness-patterns.md)
+- [agent session recovery](agent-session-recovery.md)
+- [agent lifecycle hooks](agent-lifecycle-hooks.md)
+- [agent environment readiness](agent-environment-readiness.md)
 - [AI process layer and workflow state](ai-process-layer-and-workflow-state.md)
 - [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
@@ -153,6 +160,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Maintained on 2026-07-27 with persistent filesystem, sandbox execution, agent-host, tool-approval, multi-file-review, and terminal-diff-link harness components.
+- Maintained on 2026-07-30 with agent-environment readiness components for setup, secrets, restart, and long-job durability.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.
 - Maintained on 2026-06-24 with public harness taxonomy signals for context, execution, evaluation, observability, and guardrails.
 - Maintained on 2026-06-26 with runner, parallel-step, remote-startup, compiled-configuration, provenance, and tamper-evident logging signals.

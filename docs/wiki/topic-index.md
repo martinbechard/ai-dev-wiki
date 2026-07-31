@@ -1,7 +1,7 @@
 ---
 type: "Topic Index"
 title: "Topic Index"
-description: "digests/index.md is the hub for monthly AI-assisted development digests."
+description: "Index of AI-assisted development wiki topics, local practice leaves, source workflows, digests, and federation boundaries."
 ---
 
 # Topic Index
@@ -39,6 +39,7 @@ description: "digests/index.md is the hub for monthly AI-assisted development di
 - [agent-workflows/use-compose-build-workflow-selection.md](agent-workflows/use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
 - [agent-workflows/subagent-coordination.md](agent-workflows/subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [agent-workflows/delegated-coding-handoffs.md](agent-workflows/delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
+- [agent-workflows/supervised-cross-environment-handoffs.md](agent-workflows/supervised-cross-environment-handoffs.md) records handoff evidence when agents span browser, desktop, terminal, repository, or cloud surfaces.
 - [agent-workflows/deep-research-and-writing-workflows.md](agent-workflows/deep-research-and-writing-workflows.md) records the split between exploratory research agents and constrained writing workflows.
 - [agent-workflows/persistent-agent-workspaces.md](agent-workflows/persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
 - [agent-workflows/event-triggered-agent-workflows.md](agent-workflows/event-triggered-agent-workflows.md) records governed triggers, allowed actions, approval handoffs, and run evidence.
@@ -53,6 +54,7 @@ description: "digests/index.md is the hub for monthly AI-assisted development di
 - [retrieval-and-tools/code-retrieval-evidence-patterns.md](retrieval-and-tools/code-retrieval-evidence-patterns.md) records exact-symbol, semantic, and runtime evidence patterns for repository work.
 - [retrieval-and-tools/rag-provenance-ranking-and-chunking.md](retrieval-and-tools/rag-provenance-ranking-and-chunking.md) records RAG source provenance, chunking, hybrid retrieval, and reranking practice.
 - [retrieval-and-tools/tool-call-and-mcp-governance.md](retrieval-and-tools/tool-call-and-mcp-governance.md) records client action tools, dynamic context tools, and MCP governance boundaries.
+- [retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md](retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md) records MCP resource scoping, read/write separation, approval packages, and exact-payload evidence.
 - [retrieval-and-tools/progressive-mcp-tool-discovery.md](retrieval-and-tools/progressive-mcp-tool-discovery.md) records on-demand tool-schema discovery, context budgeting, scoped permissions, managed OAuth, and invocation logs.
 - [retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md](retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md) records remote skill package provenance, approval defaults, diagnostics, and central governance.
 - [retrieval-and-tools/rag-tools-and-mcp-practice.md](retrieval-and-tools/rag-tools-and-mcp-practice.md) connects the retrieval and tool leaves as the local practice overview.
@@ -67,8 +69,11 @@ description: "digests/index.md is the hub for monthly AI-assisted development di
 - [verification-and-evals/product-judgment-quality-gates.md](verification-and-evals/product-judgment-quality-gates.md) records product judgment gates, periodic health review, and pre-merge acceptance checks.
 - [application-patterns/index.md](application-patterns/index.md) is the hub for harness architecture, structured outputs, streaming, workflow state, and product controls.
 - [application-patterns/application-harness-patterns.md](application-patterns/application-harness-patterns.md) is the overview for harness design boundaries.
+- [application-patterns/agent-environment-readiness.md](application-patterns/agent-environment-readiness.md) records setup, isolation, secret scoping, restart, and persistence criteria for coding-agent environments.
 - [application-patterns/harness-sizing-by-workflow-complexity.md](application-patterns/harness-sizing-by-workflow-complexity.md) records how harness controls scale with action risk and context complexity.
 - [application-patterns/agent-harness-components.md](application-patterns/agent-harness-components.md) records the fixed loop, registry, context, persistence, hooks, and permission components of an agent harness.
+- [application-patterns/agent-session-recovery.md](application-patterns/agent-session-recovery.md) records startup continuity checks, progress cursors, durable artifacts, and resumability evidence.
+- [application-patterns/agent-lifecycle-hooks.md](application-patterns/agent-lifecycle-hooks.md) records hook points for session starts, tool-surface changes, approvals, memory updates, verification, failures, and completion.
 - [application-patterns/file-oriented-enterprise-builder-workflows.md](application-patterns/file-oriented-enterprise-builder-workflows.md) records source-controlled artifacts, local validation, Git review, and publish workflows for enterprise builders.
 - [application-patterns/structured-output-and-drafter-patterns.md](application-patterns/structured-output-and-drafter-patterns.md) records schema, DSL, validation, execution, and audit boundaries for model-drafted artifacts.
 - [application-patterns/ai-process-layer-and-workflow-state.md](application-patterns/ai-process-layer-and-workflow-state.md) records the process layer between user interface and backend systems.

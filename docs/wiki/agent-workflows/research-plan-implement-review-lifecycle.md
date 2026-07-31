@@ -19,6 +19,15 @@ The lifecycle complements the [orient inspect patch verify loop](orient-inspect-
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds asynchronous research and execution-boundary evidence. The lifecycle should treat managed deep research as a research-phase artifact that needs citation and data-sensitivity review, and should choose local, cloud, worktree, or repository-native implementation paths before coding starts.
 
+The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds control-plane phase evidence. Reliable coding-agent workflows should preserve phase evidence rather than run as one continuous open-ended session:
+
+1. Research gathers source, codebase, and requirement evidence.
+2. Planning records scope, memory boundaries, and implementation path.
+3. Implementation stays inside the approved execution boundary.
+4. Verification records tests, checks, and independent grading where needed.
+5. Review preserves human gates, unresolved risks, and acceptance evidence.
+6. Shipping records release, handoff, or deployment decisions separately from agent completion claims.
+
 ## Practice Boundaries
 
 - Keep research evidence-gathering distinct from file modification.
@@ -29,6 +38,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Use proof-of-value checks and continuous monitoring when behavior depends on prompts, context, tools, and model updates.
 - Treat asynchronous research reports as lifecycle inputs that need source, citation, and sensitivity review before they become implementation plans.
 - Choose the implementation execution boundary before coding starts when local files, credentials, approvals, or reproducible setup affect risk.
+- Preserve phase evidence and gate decisions across research, planning, implementation, verification, review, and shipping.
 
 ## Authoritative Sources
 
@@ -37,6 +47,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 
 ## Related Code
 
@@ -65,3 +76,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 - Created on 2026-06-23 from source-backed RPI and HVE workflow-packaging guidance.
 - Maintained on 2026-07-27 with asynchronous research report review and execution-boundary selection guidance.
+- Maintained on 2026-07-30 with explicit control-plane phases, memory boundaries, and human gate evidence.

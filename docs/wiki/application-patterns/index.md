@@ -9,10 +9,13 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 ## Pattern Leaf Pages
 
 - [application-harness-patterns.md](application-harness-patterns.md) is the overview for harness design boundaries.
+- [agent-environment-readiness.md](agent-environment-readiness.md) records setup, isolation, secret scoping, restart, and persistence criteria for coding-agent environments.
 - [harness-sizing-by-workflow-complexity.md](harness-sizing-by-workflow-complexity.md) records how harness controls scale with action risk and context complexity.
 - [file-oriented-enterprise-builder-workflows.md](file-oriented-enterprise-builder-workflows.md) records source-controlled artifacts, local validation, Git review, and publish workflows for enterprise builders.
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) records schema, DSL, validation, execution, and audit boundaries for model-drafted artifacts.
 - [agent-harness-components.md](agent-harness-components.md) records the fixed loop, registry, context, persistence, hooks, and permission components of a coding-agent harness.
+- [agent-session-recovery.md](agent-session-recovery.md) records startup continuity checks, progress cursors, durable artifacts, and resumability evidence.
+- [agent-lifecycle-hooks.md](agent-lifecycle-hooks.md) records hook points for session starts, tool-surface changes, approvals, memory updates, verification, failures, and completion.
 - [ai-process-layer-and-workflow-state.md](ai-process-layer-and-workflow-state.md) records the process layer between user interface and backend systems, including workflow state and validation loops.
 - [declarative-agent-workflow-artifacts.md](declarative-agent-workflow-artifacts.md) records reviewable orchestration artifacts for branching, approvals, checkpoints, and resume behavior.
 - [user-visible-progress-and-runtime-telemetry.md](user-visible-progress-and-runtime-telemetry.md) records progress events, streaming signals, operational metrics, and visible runtime health.
@@ -57,3 +60,5 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - Maintained on 2026-06-24 with harness taxonomy, TTFT, and visible progress signals from the leaf update watch.
 - Maintained on 2026-07-27 with file-oriented enterprise builder workflows as a durable leaf.
 - Maintained on 2026-07-28 with declarative workflow artifacts and harness sizing as durable leaves.
+- Maintained on 2026-07-30 with agent environment readiness as a durable leaf.
+- Maintained on 2026-07-30 with separate session recovery and lifecycle hooks durable leaves.

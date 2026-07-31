@@ -27,6 +27,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 
 The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) adds cost, lifecycle, and operations-after-go-live evidence. Owner cards should include the workflow outcome, source-freshness owner, runbook maintainer, approval owner, log location, cost owner, monthly or recurring review cadence, and rollback or decommission trigger so operational upkeep is not separated from agent deployment.
 
+The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds identity-lifecycle evidence. Owner cards should also name the agent identity, purpose, permission scope, creation date, review date, expiry or renewal rule, initiating human attribution, executing-agent attribution, and audit trail location.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -46,6 +48,7 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Treat agent management as an accountable operating role rather than a passive inventory entry.
 - Treat ownership rosters as current permission inventories with revocation owners, allowed-use definitions, and audit bindings for agents, tools, skills, MCP servers, and connected services.
 - Record workflow outcome, source-freshness owner, runbook maintainer, approval owner, log location, cost owner, review cadence, and rollback or decommission trigger for recurring AI workflows.
+- Record agent identity, purpose, permission scope, creation date, review date, expiry or renewal rule, initiating human attribution, executing-agent attribution, and audit trail location.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
+- [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -93,3 +97,4 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Maintained on 2026-07-14 with delegation, outcome supervision, audit-trail review, edge-case escalation, and scope-expansion owner-card fields.
 - Maintained on 2026-07-17 with permission inventories, revocation ownership, allowed-use definitions, and authenticated audit bindings.
 - Maintained on 2026-07-25 with workflow outcome, freshness, runbook, approval, log, cost, review-cadence, rollback, and decommission owner-card fields.
+- Maintained on 2026-07-30 with identity lifecycle, expiry, initiating-human attribution, executing-agent attribution, and audit-trail fields.
