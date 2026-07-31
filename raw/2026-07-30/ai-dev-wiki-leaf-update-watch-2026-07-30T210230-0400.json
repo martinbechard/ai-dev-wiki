@@ -1,0 +1,407 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 19,
+    "qualified_update_count": 6,
+    "selected_leaf_count": 15,
+    "source_url_check_count": 30
+  },
+  "cutoff_window": {
+    "end": "2026-07-30T21:02:30-04:00",
+    "rule": "Only sources published or visibly updated within the last 7 days relative to run time qualify.",
+    "start": "2026-07-23T21:02:30-04:00",
+    "timezone": "America/Toronto"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "reason": "Visible last-updated date 2026-07-21 is before the strict cutoff window.",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "reason": "Relevant MCP governance content, but no visible publication or update date in opened page; crawl date alone is not accepted.",
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "reason": "Relevant tool permission content, but no visible publication or update date in opened page; crawl date alone is not accepted.",
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "reason": "Visible page date 22 July 2026 is before the strict cutoff window.",
+      "source_url": "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "reason": "Relevant skill-file content, but only crawl date was visible in search result.",
+      "source_url": "https://stencila.io/docs/skills/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "reason": "Relevant skill-file product page, but no visible publication or update date was found.",
+      "source_url": "https://skillfile.net/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "reason": "Relevant to agentic software collaboration and junior learning, but no strict-window visible publication or update date was found.",
+      "source_url": "https://research.google/pubs/from-correctness-to-collaboration-a-human-centered-taxonomy-of-ai-agent-behavior-in-software-engineering/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "reason": "Visible date is 2026-07-23 without time; date-only boundary evidence cannot prove it falls after the 2026-07-23T21:02:30-04:00 cutoff.",
+      "source_url": "https://www.upgrad.com/blog/agentic-ai-learning-path/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "reason": "Relevant to context rehydration, but no visible strict-window publication or update date was found.",
+      "source_url": "https://www.agentrehydration.com/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "reason": "Visible last-updated date is June 2026, outside the strict 7-day window.",
+      "source_url": "https://developers.cloudflare.com/agent-memory/concepts/how-agent-memory-works/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "reason": "Visible last-updated date is June 2026, outside the strict 7-day window.",
+      "source_url": "https://developers.cloudflare.com/agents/concepts/conversation-state-and-memory/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "reason": "Relevant context and memory content, but no visible strict-window publication or update date was found.",
+      "source_url": "https://cloud.google.com/resources/core-concepts-ai-agents"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "reason": "Relevant self-service analytics governance content, but opened page did not expose a strict-window publication or update date.",
+      "source_url": "https://www.qlik.com/blog/self-service-analytics-governance-guide"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "reason": "Relevant governed analytics content, but no visible publication or update date was found.",
+      "source_url": "https://strata.do/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "reason": "Relevant governance-context content, but no visible publication or update date was found.",
+      "source_url": "https://atlan.com/active-data-governance/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md"
+      ],
+      "reason": "Relevant public feed description, but no visible publication or update date was found.",
+      "source_url": "https://ai-news.helloworldfirm.com/about/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "reason": "Relevant agent-readable feed description, but no visible publication or update date was found.",
+      "source_url": "https://tensorfeed.ai/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "reason": "Search result shows last-year publication and 5-month-old update, outside the strict window.",
+      "source_url": "https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md"
+      ],
+      "reason": "Relevant raw ingest command page, but no visible strict-window publication or update date was found.",
+      "source_url": "https://abubakarsiddik31.github.io/axiom-wiki/commands/ingest/"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity updates are upstream-owned; this artifact keeps local practice implications only.",
+    "upstream_owned_entity_count": 11
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch artifact directly; run the normal raw-source ingest workflow if these updates should be synthesized.",
+    "Prioritize MCP IAM/tool authorization, agent approval evidence packages, agent identity/ownership lifecycle, instruction-file layer precedence, token-cost routing, and Markdown wiki portability during ingest."
+  ],
+  "leaf_universe_count": 77,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Google Cloud MCP documentation now describes IAM-based access control for Google and Google Cloud remote MCP servers, including project-level and resource-level control, project tags, read-only or read-write tool use, the Tool User role, and the mcp.tools.call permission.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "local_practice_implication": "When this raw source is ingested, keep broad Google Cloud MCP background upstream and retain only the local control pattern: resource-scoped MCP authorization, least-privilege roles, and read/write capability separation.",
+      "named_entities": [
+        "Google Cloud",
+        "Model Context Protocol",
+        "Identity and Access Management",
+        "Google Cloud remote MCP servers"
+      ],
+      "published_or_updated_at": "2026-07-27",
+      "source_url": "https://docs.cloud.google.com/mcp/access-control",
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Model Context Protocol"
+      ],
+      "visible_date_basis": "Page footer: Last updated 2026-07-27 UTC.",
+      "why_it_matters_for_leaf": "Local MCP practice pages should keep treating tool access as an identity and authorization design problem, not only a server configuration detail."
+    },
+    {
+      "factual_summary": "TechRadar reports that enterprise AI agents need first-class identities, named owners, defined purposes, scoped permissions, creation/review/expiry lifecycle records, and audit trails preserving both the initiating human and executing agent.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "local_practice_implication": "Ingest should focus on owner, identity, lifecycle, and audit roster practices; route general security ecosystem detail upstream.",
+      "named_entities": [
+        "TechRadar",
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance",
+        "AI agents"
+      ],
+      "published_or_updated_at": "2026-07-29",
+      "source_url": "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "upstream_owned_entities": [
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "visible_date_basis": "Article byline: Published 29 July 2026.",
+      "why_it_matters_for_leaf": "This reinforces local practice leaves around tool governance, adoption agreements, ownership rosters, and human approval boundaries."
+    },
+    {
+      "factual_summary": "The article frames human approval as an enforceable control-plane pattern: agents propose actions, a deterministic policy/enforcement point evaluates evidence, approvals capture exact payloads and scope, and execution is allowed only when the approved and executed payloads match.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "local_practice_implication": "Future wiki synthesis should emphasize approval packages, exact-payload matching, policy-as-configuration, and audit evidence rather than chat-only confirmation.",
+      "named_entities": [
+        "Digital Thought Disruption",
+        "AI agents"
+      ],
+      "published_or_updated_at": "2026-07-26",
+      "source_url": "https://digitalthoughtdisruption.com/2026/07/26/implementing-human-review-ai-agents-control-plane/",
+      "upstream_owned_entities": [],
+      "visible_date_basis": "Article byline: July 26, 2026.",
+      "why_it_matters_for_leaf": "This is directly relevant to local approval-boundary and tool-call governance leaves because it separates prompt behavior from deterministic authority enforcement."
+    },
+    {
+      "factual_summary": "Business Insider sponsored content from Dell AI Factory with NVIDIA says agentic workflows can consume far more tokens than chatbots, making tokenomics a P&L issue; it argues for cost-per-outcome thinking and selectively running workhorse agent workloads locally for governance, privacy, and predictable infrastructure economics.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "local_practice_implication": "Keep vendor/product details upstream; local synthesis should capture workload-routing criteria, token-cost telemetry, and cost-per-outcome framing.",
+      "named_entities": [
+        "Business Insider",
+        "Dell Technologies",
+        "Dell AI Factory",
+        "NVIDIA",
+        "Bharat Patel",
+        "Dell Deskside Agentic AI",
+        "NVIDIA NemoClaw"
+      ],
+      "published_or_updated_at": "2026-07-30T19:16:14.323Z",
+      "source_url": "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "upstream_owned_entities": [
+        "Dell Technologies",
+        "NVIDIA",
+        "NVIDIA NemoClaw"
+      ],
+      "visible_date_basis": "Article timestamp: 2026-07-30T19:16:14.323Z.",
+      "why_it_matters_for_leaf": "This updates local operating-model and infrastructure-economics leaves with current public language around cost visibility, local/cloud routing, and cost-per-outcome metrics."
+    },
+    {
+      "factual_summary": "VS Code documentation describes custom instruction categories, AGENTS.md support, file-scoped .instructions.md files, organization-level instructions, instruction priority, generation commands, diagnostics, and the deprecation of settings-based code/test generation instructions in favor of file-based instructions.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "local_practice_implication": "Ingest should keep product mechanics minimal and update local guidance on instruction layer precedence, file boundaries, diagnostics, and durable project-owned rules.",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "published_or_updated_at": "2026-07-29",
+      "source_url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions",
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot"
+      ],
+      "visible_date_basis": "Page footer displays 7/29/2026.",
+      "why_it_matters_for_leaf": "This is a current public source for durable instruction-file practice and the separation between always-on repository guidance, scoped instruction files, and user or organization-level rules."
+    },
+    {
+      "factual_summary": "LeafWiki describes a Markdown-on-disk wiki model with tree navigation, full-text search, revision history, link refactoring, backup/restore, and public or private modes; the Jul 25 v0.12.0 entry highlights backup and restore, two-factor authentication, drag and drop, favorites, and editor resizing.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md"
+      ],
+      "local_practice_implication": "Route product specifics upstream if needed; local pages may use it as evidence that durable wiki workflows benefit from portable Markdown files, link maintenance, and recovery features.",
+      "named_entities": [
+        "LeafWiki",
+        "SQLite",
+        "Markdown"
+      ],
+      "published_or_updated_at": "2026-07-25",
+      "source_url": "https://leafwiki.com/",
+      "upstream_owned_entities": [
+        "LeafWiki"
+      ],
+      "visible_date_basis": "Home page Latest from the blog lists Jul 25, 2026 LeafWiki v0.12.0.",
+      "why_it_matters_for_leaf": "The update is relevant as public evidence for lifespan-organized documentation, clipping/raw-intake portability, and leaf-watch assumptions about folder-oriented Markdown knowledge bases."
+    }
+  ],
+  "run_timestamp": "2026-07-30T21:02:30-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": [
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "https://digitalthoughtdisruption.com/2026/07/26/implementing-human-review-ai-agents-control-plane/"
+    ],
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": [
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "https://enterpriseacp.com/",
+      "https://www.agentcenter.cloud/blogs/how-to-assign-and-track-ai-agent-ownership"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://code.visualstudio.com/docs/agent-customization/custom-instructions",
+      "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html",
+      "https://stencila.io/docs/skills/",
+      "https://skillfile.net/"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://digitalthoughtdisruption.com/2026/07/26/implementing-human-review-ai-agents-control-plane/",
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools"
+    ],
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "https://www.businessinsider.com/sc/dell-deskside-agentic-ai-cuts-token-costs-by-87-percent"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://research.google/pubs/from-correctness-to-collaboration-a-human-centered-taxonomy-of-ai-agent-behavior-in-software-engineering/",
+      "https://www.upgrad.com/blog/agentic-ai-learning-path/"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://www.agentrehydration.com/",
+      "https://developers.cloudflare.com/agent-memory/concepts/how-agent-memory-works/",
+      "https://developers.cloudflare.com/agents/concepts/conversation-state-and-memory/",
+      "https://cloud.google.com/resources/core-concepts-ai-agents"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://leafwiki.com/"
+    ],
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md": [
+      "https://code.visualstudio.com/docs/agent-customization/custom-instructions",
+      "https://llmwikis.org/reference/agent-rules/",
+      "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html"
+    ],
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md": [
+      "https://www.qlik.com/blog/self-service-analytics-governance-guide",
+      "https://strata.do/",
+      "https://atlan.com/active-data-governance/",
+      "https://www.quaeris.ai/platform"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [
+      "https://docs.cloud.google.com/mcp/access-control",
+      "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp",
+      "https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://docs.cloud.google.com/mcp/access-control",
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "https://digitalthoughtdisruption.com/2026/07/26/implementing-human-review-ai-agents-control-plane/",
+      "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://ai-news.helloworldfirm.com/about/",
+      "https://tensorfeed.ai/",
+      "https://n8n.io/workflows/6157-multi-source-news-curator-with-mistral-ai-analysis-summaries-and-custom-channels/"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://leafwiki.com/",
+      "https://abubakarsiddik31.github.io/axiom-wiki/commands/ingest/"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://leafwiki.com/",
+      "https://ai-news.helloworldfirm.com/about/"
+    ]
+  }
+}
