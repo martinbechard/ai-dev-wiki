@@ -15,6 +15,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 Readiness is a harness concern. [Agent harness components](agent-harness-components.md) owns the broader loop, tool registry, persistence, and permissions; this page owns the narrower question of whether the environment can be provisioned, constrained, resumed, and inspected well enough for the intended workflow.
 
+The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) adds sponsored but relevant evidence that runtime placement, privacy controls, local workhorse capacity, and cost-per-outcome expectations are readiness inputs. Because the source is vendor-positioned, the local rule is cautious: use it to ask whether local, managed, or cloud execution changes privacy, latency, cost, and verification evidence, not to assume one substrate is automatically better.
+
 ## Practice Boundaries
 
 - Define the runtime boundary before agents receive file, shell, network, package, or credential access.
@@ -24,10 +26,13 @@ Readiness is a harness concern. [Agent harness components](agent-harness-compone
 - Preserve logs, generated artifacts, and verification output where a resumed agent or human reviewer can inspect them.
 - Prefer managed or reusable environment substrates when standard setup, isolation, recovery, identity, telemetry, and policy requirements are already provided.
 - Reserve custom environment orchestration for workflows whose setup, security, latency, or integration needs cannot be met by an existing managed harness.
+- Compare local, managed, and cloud execution substrates by privacy boundary, setup readiness, runtime telemetry, verification evidence, and cost per accepted outcome.
+- Treat vendor-positioned infrastructure claims as prompts for local readiness checks rather than as direct substrate-selection rules.
 
 ## Authoritative Sources
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -57,3 +62,4 @@ Readiness is a harness concern. [Agent harness components](agent-harness-compone
 ## Maintenance Notes
 
 - Created on 2026-07-30 from public evidence about fast-start coding-agent environments, secret isolation, long-job durability, and managed-versus-custom substrate selection.
+- Maintained on 2026-07-31 with sponsored runtime-placement, privacy, local-capacity, and cost-per-outcome readiness signals.

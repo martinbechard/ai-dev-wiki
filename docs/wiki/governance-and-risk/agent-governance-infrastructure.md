@@ -63,6 +63,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The July 28 raw sources add cross-client managed-policy and suspicious-workflow control evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) records enterprise policy surfaces for model enablement, agent-client access, managed settings, plugin marketplaces, approval-bypass controls, and CI workflow approval holds. The [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) reinforces governed remote skills and IDE telemetry controls. Local governance infrastructure should distribute policy across cloud agents, apps, IDEs, CLIs, and MCP skill loaders so one surface cannot bypass another.
 
+The July 31 raw sources add registry, audit, identity, and formal-correctness evidence. The [topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) records centralized MCP-server registration, admin approval, runtime blocking, AI trust policy, AI-processing audit records, and OAuth authorization controls. The [leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) reinforces first-class agent identity, owner, purpose, permissions, lifecycle, audit trail, inventory, revocable credentials, and formal-verification layering. Broad company, product, standard, and formal-method background stays upstream-owned; locally, these sources strengthen the infrastructure rule that governance must be enforceable before and during agent execution.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -116,6 +118,9 @@ The July 28 raw sources add cross-client managed-policy and suspicious-workflow 
 - Record voice steering, usage monitors, model-router decisions, refusal paths, and subagent handoffs when they affect supervision or audit evidence.
 - Distribute model policy, plugin marketplace rules, approval-bypass settings, client access, token limits, and telemetry export rules consistently across cloud, app, IDE, CLI, and MCP skill-loading surfaces.
 - Hold suspicious or high-impact agent-authored workflow execution until policy and owner approval evidence are recorded.
+- Require agent identities to carry owner, purpose, permission set, lifecycle date, inventory record, audit trail, and task-specific revocation path before granting durable workflow access.
+- Treat formal correctness tools as governance evidence that can strengthen policy-boundary checks but cannot replace runtime identity, authorization, monitoring, and human escalation controls.
+- Capture AI-processing audit records, trust-layer policy decisions, and remote-tool authorization events where they can be joined to agent identity and workflow outcome.
 
 ## Authoritative Sources
 
@@ -163,6 +168,8 @@ The July 28 raw sources add cross-client managed-policy and suspicious-workflow 
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
+- [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 
 ## Related Code
 
@@ -218,4 +225,5 @@ The July 28 raw sources add cross-client managed-policy and suspicious-workflow 
 - Maintained on 2026-07-17 with current permission inventories, revocation paths, centralized discovery, audit integrity, dependency visibility, and agent-traffic monitoring.
 - Maintained on 2026-07-22 with readiness checklists, policy-as-code, gateway-level runtime controls, trace issue detection, incident readiness, and kill-switch evidence.
 - Maintained on 2026-07-26 with workflow-security visibility, supervision-channel records, usage monitors, model-router decisions, refusal paths, and subagent handoff audit evidence.
+- Maintained on 2026-07-31 with MCP registration governance, AI trust-layer audit, first-class agent identity, lifecycle, revocable credentials, and formal-correctness layering.
 - Maintained on 2026-07-28 with cross-client managed policy, model enablement, plugin marketplace, approval bypass, CI approval hold, token-limit, telemetry-export, and remote-skill governance evidence.

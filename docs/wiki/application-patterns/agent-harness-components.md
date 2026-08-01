@@ -51,6 +51,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds [agent environment readiness](agent-environment-readiness.md) as a focused harness component. Coding-agent environments should expose setup state, dependency readiness, secret isolation, restart behavior, long-job durability, and artifact persistence as inspectable runtime surfaces before teams rely on longer unattended workflows.
 
+The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) adds workflow-state and autonomous-testing harness evidence. Queue-triggered flows, single-node live traces, AI-processing audit records, model-policy toggles, secure credential references, remote-control viewing, and human controls belong in the harness boundary when an agent or test system can execute workflow steps autonomously.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -93,6 +95,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Preserve benchmark task construction, contamination controls, execution setup, scoring, and artifact evidence as harness components when eval results guide workflow authorization.
 - Treat persistent filesystems, sandbox execution, agent host processes, approval UX, multi-file review surfaces, and terminal diff links as harness components when they determine reviewability.
 - Treat environment setup, dependency availability, secret scoping, restart semantics, and long-job durability as harness components rather than prompt-only assumptions.
+- Treat queue triggers, live node traces, AI-processing audit records, model-policy gates, credential references, remote viewing, and human stop or supervision controls as harness components for autonomous workflow and test execution.
 
 ## Authoritative Sources
 
@@ -129,6 +132,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 
 ## Related Code
 
@@ -177,3 +181,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Maintained on 2026-07-15 with isolated disposable workspaces, MCP trust decisions, path-boundary checks, spend caps, loop termination, and data-residency controls.
 - Maintained on 2026-07-22 with managed-agent lifecycle hooks, seeded sessions, stream deltas, production-agent simulations, and gateway-style identity controls.
 - Maintained on 2026-07-24 with cue-delivered memory, benchmark provenance, contamination-resistance, setup, scoring, and artifact-evidence components.
+- Maintained on 2026-07-31 with queue-triggered workflow state, live execution traces, AI-processing audit, model-policy gates, credential references, remote viewing, and human controls for autonomous testing.

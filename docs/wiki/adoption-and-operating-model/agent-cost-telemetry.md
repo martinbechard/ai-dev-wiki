@@ -65,6 +65,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 
 The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds token-volume measurement risk. Telemetry should detect overuse incentives such as raw AI activity, token spend, generated lines, or tool-call counts being treated as productivity when they are not joined to quality, maintainability, review burden, delivery throughput, and accepted outcomes.
 
+The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) adds external evidence for budget wallets, capped spend, limit notifications, additional-fund requests, PR-state normalization, and cost-per-outcome infrastructure claims. The local telemetry rule is unchanged but sharper: cost, token use, generated activity, and benchmark success rates need accepted-output, review-quality, privacy, run-location, and workflow-shape joins before they influence adoption or model-routing decisions.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -116,6 +118,9 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Join cost, activity, accepted edits, commits, pull-request flow, and alerts when evaluating whether coding-agent usage is producing accepted delivery outcomes.
 - Attribute agent-app usage to user, organization, feature surface, model, language, daily activity, code activity, generated lines, and accepted delivery outcomes before using it as adoption evidence.
 - Reject AI-usage leaderboards or token-volume goals as success metrics unless they are tied to accepted outcomes and review quality.
+- Treat AI wallets, spend caps, limit notifications, and additional-fund requests as workflow signals that should trigger scope, routing, or verification review.
+- Normalize benchmark and productivity telemetry by pull-request state, accepted merges, review burden, task mix, and workflow shape before comparing tools or teams.
+- Preserve sponsored cost-infrastructure claims as weak evidence unless local traces show privacy, runtime placement, and accepted-outcome benefits.
 
 ## Authoritative Sources
 
@@ -157,6 +162,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
 - [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
@@ -210,3 +216,4 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Maintained on 2026-07-27 with spend, activity, accepted-edit, commit, pull-request-flow, and alerting telemetry joins.
 - Maintained on 2026-07-28 with per-user, organization, feature, model, language, daily-active-use, code-activity, and generated-line attribution for agent-app adoption reporting.
 - Maintained on 2026-07-29 with token-volume and AI-activity measurement anti-pattern controls.
+- Maintained on 2026-07-31 with AI wallet, budget alert, PR-state normalization, sponsored tokenomics, and cost-per-outcome routing evidence.

@@ -25,6 +25,8 @@ The [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-
 
 The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds an outcome-measurement caution. Teams can vary how heavily they use agents, but shared outcome alignment should reject raw token volume, generated lines, or agent activity as proxies for productivity when those signals are detached from accepted delivery, quality, maintainability, and review evidence.
 
+The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) reinforces that outcome alignment should not become centralized token or tool-use conformance. AI wallets, tokenmaxxing concerns, PR-state-normalized benchmarks, and embedded execution teams all point to the same local rule: teams can choose different agent workflows, but shared governance should compare accepted outcomes, review burden, cost, safety evidence, and customer or workflow value rather than raw AI activity.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -40,6 +42,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Let teams vary agent workflows only when governance infrastructure still exposes running agents, dependencies, connected services, standards, and comparable outcome evidence.
 - Use trajectory-level state-change correctness, tool paths, costs, and safety evidence as outcome measures instead of assistant usage or process conformance alone.
 - Compare AI-heavy and AI-light processes by accepted outcomes, quality, maintainability, and review burden rather than by raw AI activity.
+- Compare budget use, benchmark results, and embedded-agent work by accepted outcomes, review burden, safety evidence, and customer workflow value rather than by token volume or agent activity.
 
 ## Authoritative Sources
 
@@ -52,6 +55,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 
 ## Related Code
 
@@ -85,3 +89,4 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Maintained on 2026-07-14 with delegation mechanics, audit trails, edge-case escalation, and scope-expansion evidence as comparable outcome controls.
 - Maintained on 2026-07-17 with links to governance infrastructure for agent-sprawl visibility and trajectory evaluation for state-change, tool-path, cost, and safety outcome evidence.
 - Maintained on 2026-07-29 with raw AI-activity, token-volume, and generated-line measurement anti-pattern guidance.
+- Maintained on 2026-07-31 with budget wallet, tokenmaxxing, PR-state normalization, and embedded-execution signals for outcome-over-activity comparisons.
