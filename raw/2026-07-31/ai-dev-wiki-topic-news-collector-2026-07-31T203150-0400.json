@@ -1,0 +1,213 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-07-31T20:31:50-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start_inclusive": "2026-07-29T20:31:50-04:00",
+    "end_inclusive": "2026-07-31T20:31:50-04:00",
+    "date_rule": "Include only public sources visibly published or updated within the last 2 days relative to the run timestamp; exclude missing, ambiguous, future-dated, and boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule": "Keep broad companies, products, models, developer tools, agentic frameworks, MCP servers, and broad techniques upstream-owned; record only the local AI-assisted-development practice implication."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_queries": [
+    "AI assisted development code review evals software engineering July 30 2026",
+    "coding agents MCP approvals audit logs July 30 2026",
+    "context engineering coding agents durable instructions July 30 2026",
+    "AI code review package install risk licensing privacy July 30 2026",
+    "site:github.blog/changelog 2026 July 30 Copilot code review agent",
+    "site:github.blog/changelog 2026 July 31 Copilot coding agent",
+    "site:docs.github.com/en/copilot 2026 July 30 coding agent MCP approvals",
+    "site:blog.jetbrains.com 2026 July 30 AI coding agent",
+    "\"July 31, 2026\" \"coding agent\"",
+    "\"July 30, 2026\" \"coding agent\"",
+    "\"Jul.31\" \"Copilot\" \"GitHub Changelog\"",
+    "\"Jul.30\" \"GitHub Changelog\" \"Copilot\"",
+    "\"July 30, 2026\" \"AI code review\"",
+    "\"July 31, 2026\" \"AI code review\"",
+    "\"July 30, 2026\" \"MCP\" \"coding agents\"",
+    "\"July 31, 2026\" \"MCP\" \"coding agents\""
+  ],
+  "findings": [
+    {
+      "title": "Agent 365 BYO MCP governance flow and schema evaluation",
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "publisher": "Microsoft Learn",
+      "visible_date": "Last updated on 2026-07-30",
+      "qualifying_date_basis": "The page footer shows Last updated on 2026-07-30, which is inside the cutoff window.",
+      "factual_summary": "Microsoft's Agent Tools documentation describes a centralized registry for AI-powered tools and MCP servers, a BYO MCP server registration flow with admin review and approval, runtime blocking, declared-tool snapshots, supported client surfaces, and Defender advanced hunting observability. The page also documents a local MCP evaluation command that combines deterministic checks with optional coding-agent semantic scoring while warning that schema data is handed to a local coding agent when semantic scoring is enabled.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete governance pattern for MCP-as-practice: developer registration, admin approval, server-level block controls, tool-schema transparency, security telemetry, and explicit data-handling notices for agent-scored tool evaluation. Local wiki relevance is strongest for governed MCP onboarding, approval evidence, tool-call observability, and the boundary between deterministic validation and agent-mediated semantic checks.",
+      "suggested_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Microsoft Agent 365",
+        "Microsoft 365 admin center",
+        "Model Context Protocol",
+        "BYO MCP server",
+        "Agent 365 Tooling Gateway",
+        "Microsoft Defender",
+        "GitHub Copilot CLI",
+        "Claude Code",
+        "Copilot Studio",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Microsoft",
+          "reason": "company and product ecosystem background belongs upstream"
+        },
+        {
+          "entity": "Model Context Protocol",
+          "reason": "protocol background belongs upstream; local note should focus on governed use"
+        },
+        {
+          "entity": "GitHub Copilot CLI",
+          "reason": "developer tool background belongs upstream; local note should focus on evaluation and governance practice"
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "coding-agent product background belongs upstream; local note should focus on tool-schema evaluation practice"
+        }
+      ],
+      "follow_up_notes": [
+        "Consider ingesting as a local practice update for remote MCP registration, approval evidence, runtime block controls, and tool-schema evaluation boundaries.",
+        "Do not create local encyclopedia pages for Microsoft Agent 365, MCP, GitHub Copilot CLI, or Claude Code."
+      ]
+    },
+    {
+      "title": "UiPath late-July releases add MCP OAuth, audit, queues, and autonomous test execution controls",
+      "source_url": "https://docs.uipath.com/release-notes/other/latest/release-notes/cloud-platform-july-2026",
+      "publisher": "UiPath Documentation",
+      "visible_date": "Release catalog includes July 30, 2026 and July 31, 2026 entries in the July 16, 2026 - July 31, 2026 release timeframe.",
+      "qualifying_date_basis": "The release catalog lists Automation Ops on July 30, Maestro on July 31, Orchestrator on July 30 and July 31, and Test Manager on July 30, all inside the cutoff window.",
+      "factual_summary": "UiPath's late-July release notes include a Bring Your Own Model-only governance toggle in AI Trust Layer policies, AI Trust Layer audit records for Unstructured and Complex Documents extraction inputs and outputs, MCP OAuth public preview with built-in OAuth proxy, resource-bound tokens and callback-domain allow lists, queue-triggered Maestro flows, live execution trace for single nodes in the VS Code extension, and Test Manager autonomous execution and exploration with model selection, secure credential references, live remote-control viewing, and human controls.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update reinforces several practice-level patterns: agent model-routing governance, audit capture for AI processing, governed MCP authorization, queue-backed workflow state, live execution traces, and autonomous testing with explicit human supervision. Local wiki relevance is strongest for harness architecture, approval boundaries, audit logs, and AI-assisted verification workflows.",
+      "suggested_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "UiPath",
+        "AI Trust Layer",
+        "MCP OAuth",
+        "Maestro",
+        "Orchestrator",
+        "Studio Web",
+        "VS Code extension",
+        "Test Manager",
+        "Autopilot"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "UiPath",
+          "reason": "company and product ecosystem background belongs upstream"
+        },
+        {
+          "entity": "Model Context Protocol",
+          "reason": "protocol background belongs upstream; local note should focus on OAuth, audit, and authorization practice"
+        },
+        {
+          "entity": "Visual Studio Code",
+          "reason": "general developer tool background belongs upstream; local note should focus on live execution trace practice"
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest should factor common patterns into existing local leaves for MCP authorization evidence, agent harness components, user-visible progress, verification loops, and human-agent approval boundaries.",
+        "Avoid broad UiPath product catalog coverage in this downstream wiki."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Changelog July listing",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "Latest relevant visible AI-assisted development entries in the search result were July 28, 2026 or earlier.",
+      "reason": "Excluded because July 28 entries are outside the two-day cutoff window for this run and no July 30 or July 31 Copilot or coding-agent changelog item was visible."
+    },
+    {
+      "title": "GitHub Code Quality generally available July 20, 2026",
+      "source_url": "https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/",
+      "visible_date": "Published June 16, 2026; GA date July 20, 2026.",
+      "reason": "Excluded because both publication and GA dates are outside the cutoff window."
+    },
+    {
+      "title": "Copilot code review customization and configurability improvements",
+      "source_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+      "visible_date": "Published July 17, 2026.",
+      "reason": "Excluded because the visible publication date is outside the cutoff window."
+    },
+    {
+      "title": "Visual Studio Magazine Copilot workshop article",
+      "source_url": "https://visualstudiomagazine.com/articles/2026/06/09/mastering-ai-development-and-building-ai-apps-with-github-copilot.aspx",
+      "visible_date": "Published June 9, 2026; event date July 31, 2026.",
+      "reason": "Excluded because the visible publication date is outside the cutoff window; the July 31 date is an event schedule date, not a source publication or update date."
+    },
+    {
+      "title": "Microsoft Community Hub Copilot spend governance article",
+      "source_url": "https://techcommunity.microsoft.com/blog/FinOpsBlog/cap-it-with-github-make-it-count-with-azure-governing-github-copilot-spend/4539492",
+      "visible_date": "Search result reported published 5 days ago.",
+      "reason": "Excluded because the visible publication timing is older than the two-day cutoff window."
+    },
+    {
+      "title": "Luzmo Product Release Update - July 2026",
+      "source_url": "https://www.luzmo.com/blog/product-release-update-july-2026",
+      "visible_date": "Published July 9, 2026.",
+      "reason": "Excluded because the visible publication date is outside the cutoff window, even though a trial period mentioned July 31, 2026."
+    },
+    {
+      "title": "Augment Code AWS Bedrock Agents vs Cosmos comparison",
+      "source_url": "https://www.augmentcode.com/tools/aws-bedrock-agents-vs-cosmos",
+      "visible_date": "Published July 13, 2026.",
+      "reason": "Excluded because the visible publication date is outside the cutoff window; July 30 appears as a lifecycle date inside the article, not the source date."
+    },
+    {
+      "title": "TechWell AI-Powered QA webinar listing",
+      "source_url": "https://www.techwell.com/web-seminars?page=0",
+      "visible_date": "Event date July 30, 2026.",
+      "reason": "Excluded because the visible date is an event date and no qualifying publication or update date was visible."
+    },
+    {
+      "title": "CodeRabbit documentation changelog",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "visible_date": "Latest visible entries in result were May 2026.",
+      "reason": "Excluded because the visible changelog entries were outside the cutoff window."
+    },
+    {
+      "title": "QASkills Promptfoo coding-agent evaluation article",
+      "source_url": "https://qaskills.sh/blog/promptfoo-evaluate-codex-vs-claude-agents-2026",
+      "visible_date": "Published July 14, 2026.",
+      "reason": "Excluded because the visible publication date is outside the cutoff window."
+    }
+  ],
+  "counts": {
+    "qualifying_updates": 2,
+    "excluded_candidates": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
