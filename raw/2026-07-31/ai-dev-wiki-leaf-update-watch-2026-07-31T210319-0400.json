@@ -1,0 +1,629 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-07-31T21:03:19-04:00",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; missing, ambiguous, future-dated, or boundary-only dates are excluded.",
+    "start": "2026-07-24T21:03:19-04:00",
+    "timezone": "America/Toronto"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "exclusion_reason": "Search result showed Published: 2 weeks ago, which is outside the strict seven-day window; page itself did not expose a precise qualifying date in the opened content.",
+      "source_url": "https://code.visualstudio.com/docs/agent-customization/hooks"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "exclusion_reason": "Search result showed Published: 2 weeks ago and opened page did not expose a precise in-window publication/update date.",
+      "source_url": "https://code.visualstudio.com/docs/agents/agents-window"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "exclusion_reason": "Relevant hook reference content, but no visible in-window publication or update date was found in the opened/search result content.",
+      "source_url": "https://docs.github.com/en/copilot/reference/hooks-reference"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "exclusion_reason": "Relevant sandbox, environment, secret, and setup-script details, but no visible publication or update date was found.",
+      "source_url": "https://support.atlassian.com/jira-software-cloud/docs/configure-a-jira-coding-agent-session/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "exclusion_reason": "Relevant Jira Coding Agent sandbox description, but no visible publication or update date was found.",
+      "source_url": "https://support.atlassian.com/jira-software-cloud/docs/what-is-the-jira-coding-agent/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "exclusion_reason": "Visible Last updated 2026-07-21 UTC is outside the strict seven-day window for this run.",
+      "source_url": "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "exclusion_reason": "Relevant control-plane persistence and workspace-isolation content, but no visible publication or update date was found.",
+      "source_url": "https://coder.com/docs/ai-coder/agents/architecture"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "exclusion_reason": "Relevant workspace secret restart behavior, but no visible publication or update date was found.",
+      "source_url": "https://coder.com/docs/user-guides/user-secrets"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "exclusion_reason": "Visible posted date 2026-05-06 is outside the strict seven-day window.",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "exclusion_reason": "Visible posted date 2026-06-17 is outside the strict seven-day window.",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/safe-secrets-handling-in-agent-toolkit-for-aws/"
+    }
+  ],
+  "factual_summaries": [
+    "Business Insider reported that Weave raised $13.5M for software that measures human and AI coding-tool output and argues against lines-of-code or AI-activity volume as productivity proxies.",
+    "The Guardian reported Atlassian introduced monthly AI wallets for R&D staff, with capped spend, limit notifications, and additional-fund requests, while noting concern that high AI use can be mistaken for productivity.",
+    "A sponsored Business Insider post from Dell AI Factory with NVIDIA framed agentic tokenomics as a business cost issue and argued for local workhorse infrastructure, privacy controls, and cost per outcome.",
+    "PR Arena showed AI coding-agent success rates and explicitly separated all PRs, ready PRs, merged PRs, and draft-heavy versus ready-PR workflow differences.",
+    "Business Insider reported Amazon will invest $1B in AWS Forward Deployed Engineering, embedding AI engineers with customers to build and launch agentic AI systems quickly.",
+    "TechRadar argued that AI agents need first-class identities, named owners, purposes, permissions, lifecycle dates, audit trails, inventory, and task-specific revocable credentials.",
+    "ITPro reported Amazon support for the Lean FRO and described Lean-based formal verification as part of AI-agent safety and policy-boundary correctness, while noting governance and orchestration remain necessary."
+  ],
+  "federation_routing_note": "Broad ecosystem entities, product identities, companies, frameworks, MCP protocol/server background, and benchmark/product catalogs are upstream-owned by the AI wiki. This raw artifact keeps only downstream practice, workflow, governance, verification, and operating-model implications.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-environment-readiness.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-session-recovery.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "note": "No strict-window qualifying update found for this selected leaf; exclusions record missing or out-of-window visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream."
+    }
+  ],
+  "leaf_universe_count": 82,
+  "named_entities": [
+    "AWS Clean Rooms",
+    "AWS Forward Deployed Engineering",
+    "Allen Institute",
+    "Amazon",
+    "Amazon Aurora",
+    "Anthropic",
+    "Atlassian",
+    "Bedrock AgentCore",
+    "Business Insider",
+    "Claude Code",
+    "Cloud Security Alliance",
+    "Codegen",
+    "Cox Automotive",
+    "Cursor Agents",
+    "Dell AI Factory",
+    "Dell Deskside Agentic AI",
+    "Dell Technologies",
+    "Devin",
+    "Elastic",
+    "Gartner",
+    "GitHub Copilot coding agent",
+    "Google Cloud",
+    "Google Labs Jules",
+    "Guardian Australia",
+    "ITPro",
+    "Lean",
+    "Lean Focused Research Organization",
+    "NBA",
+    "NFL",
+    "NIST",
+    "NVIDIA",
+    "OpenAI",
+    "OpenAI Codex",
+    "PR Arena",
+    "Palantir",
+    "PostHog",
+    "Ricoh",
+    "Robinhood",
+    "SampCert",
+    "Southwest Airlines",
+    "Standard Capital",
+    "Stripe",
+    "TechRadar",
+    "Weave",
+    "Y Combinator",
+    "Zendesk"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "Business Insider reported that Weave raised $13.5M for software that measures human and AI coding-tool output and argues against lines-of-code or AI-activity volume as productivity proxies.",
+      "follow_up_note": "Ingest should preserve this as cost/outcome telemetry evidence, not as a broad company profile.",
+      "named_entities": [
+        "Weave",
+        "Y Combinator",
+        "Standard Capital",
+        "Robinhood",
+        "PostHog",
+        "Business Insider"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_type": "news",
+      "source_url": "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "upstream_owned_entities": [
+        "Weave",
+        "Y Combinator",
+        "Standard Capital",
+        "Robinhood",
+        "PostHog"
+      ],
+      "visible_published_or_updated_at": "2026-07-28T12:11:55.757Z",
+      "why_it_matters_for_leaf": "Supports the local rule that spend and AI activity must be joined to accepted engineering output before teams claim productivity or ROI."
+    },
+    {
+      "factual_summary": "The Guardian reported Atlassian introduced monthly AI wallets for R&D staff, with capped spend, limit notifications, and additional-fund requests, while noting concern that high AI use can be mistaken for productivity.",
+      "follow_up_note": "Use as adoption-cost governance evidence; broad Atlassian and product background belongs upstream.",
+      "named_entities": [
+        "Atlassian",
+        "Claude Code",
+        "Elastic",
+        "Gartner",
+        "Guardian Australia"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_type": "news",
+      "source_url": "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Claude Code",
+        "Elastic",
+        "Gartner"
+      ],
+      "visible_published_or_updated_at": "2026-07-30",
+      "why_it_matters_for_leaf": "Adds public evidence for budget envelopes, spend alerts, and rejecting tokenmaxxing as a success measure unless linked to useful workflow outcomes."
+    },
+    {
+      "factual_summary": "A sponsored Business Insider post from Dell AI Factory with NVIDIA framed agentic tokenomics as a business cost issue and argued for local workhorse infrastructure, privacy controls, and cost per outcome.",
+      "follow_up_note": "Preserve sponsored-source caution if ingested; do not convert vendor positioning into a hard local rule.",
+      "named_entities": [
+        "Dell Technologies",
+        "NVIDIA",
+        "Dell AI Factory",
+        "Dell Deskside Agentic AI",
+        "Business Insider"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_type": "sponsored_news",
+      "source_url": "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "upstream_owned_entities": [
+        "Dell Technologies",
+        "NVIDIA",
+        "Dell AI Factory"
+      ],
+      "visible_published_or_updated_at": "2026-07-30T19:16:14.323Z",
+      "why_it_matters_for_leaf": "Relevant as weak vendor-positioned evidence that runtime placement, privacy posture, and cost model are workflow-readiness and model-selection inputs."
+    },
+    {
+      "factual_summary": "PR Arena showed AI coding-agent success rates and explicitly separated all PRs, ready PRs, merged PRs, and draft-heavy versus ready-PR workflow differences.",
+      "follow_up_note": "Route product/leaderboard background upstream; keep local implication about metric normalization.",
+      "named_entities": [
+        "PR Arena",
+        "GitHub Copilot coding agent",
+        "OpenAI Codex",
+        "Cursor Agents",
+        "Devin",
+        "Codegen",
+        "Google Labs Jules"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_type": "public_leaderboard",
+      "source_url": "https://prarena.ai/",
+      "upstream_owned_entities": [
+        "GitHub Copilot coding agent",
+        "OpenAI Codex",
+        "Cursor Agents",
+        "Devin",
+        "Codegen",
+        "Google Labs Jules"
+      ],
+      "visible_published_or_updated_at": "2026-07-31T03:42:00Z",
+      "why_it_matters_for_leaf": "Adds an external benchmark caution: workflow shape changes the meaning of success metrics, so local selection should normalize by ready, merged, review, and acceptance evidence."
+    },
+    {
+      "factual_summary": "Business Insider reported Amazon will invest $1B in AWS Forward Deployed Engineering, embedding AI engineers with customers to build and launch agentic AI systems quickly.",
+      "follow_up_note": "Use only the team-shape and customer-embedded execution implication locally.",
+      "named_entities": [
+        "Amazon",
+        "AWS Forward Deployed Engineering",
+        "Allen Institute",
+        "Cox Automotive",
+        "NBA",
+        "NFL",
+        "Ricoh",
+        "Southwest Airlines",
+        "OpenAI",
+        "Anthropic",
+        "Google Cloud",
+        "Stripe",
+        "Palantir"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_type": "news",
+      "source_url": "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+      "upstream_owned_entities": [
+        "Amazon",
+        "AWS",
+        "OpenAI",
+        "Anthropic",
+        "Google Cloud",
+        "Stripe",
+        "Palantir"
+      ],
+      "visible_published_or_updated_at": "2026-07-31T04:02:01.240Z",
+      "why_it_matters_for_leaf": "Supports the local operating-model distinction between generic assistant rollout and senior, embedded, workflow-owning execution capacity for production AI systems."
+    },
+    {
+      "factual_summary": "TechRadar argued that AI agents need first-class identities, named owners, purposes, permissions, lifecycle dates, audit trails, inventory, and task-specific revocable credentials.",
+      "follow_up_note": "Ingest as governance-pattern evidence while routing organization background upstream.",
+      "named_entities": [
+        "TechRadar",
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_type": "news_feature",
+      "source_url": "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "upstream_owned_entities": [
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "visible_published_or_updated_at": "2026-07-29",
+      "why_it_matters_for_leaf": "Directly reinforces local governance infrastructure rules around identity, owner, purpose, lifecycle, auditability, and short-lived permissions before deployment."
+    },
+    {
+      "factual_summary": "ITPro reported Amazon support for the Lean FRO and described Lean-based formal verification as part of AI-agent safety and policy-boundary correctness, while noting governance and orchestration remain necessary.",
+      "follow_up_note": "Route Lean and AWS product background upstream; local value is governance-infrastructure layering.",
+      "named_entities": [
+        "Amazon",
+        "Lean Focused Research Organization",
+        "Lean",
+        "Bedrock AgentCore",
+        "SampCert",
+        "AWS Clean Rooms",
+        "Amazon Aurora",
+        "ITPro"
+      ],
+      "qualifying_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_type": "news",
+      "source_url": "https://www.itpro.com/software/development/amazon-targets-agent-safety-gains-with-investment-in-team-behind-lean-programming-language",
+      "upstream_owned_entities": [
+        "Amazon",
+        "Lean",
+        "Bedrock AgentCore",
+        "AWS Clean Rooms",
+        "Amazon Aurora"
+      ],
+      "visible_published_or_updated_at": "2026-07-28",
+      "why_it_matters_for_leaf": "Adds evidence that formal correctness tools can strengthen agent safety but do not replace runtime governance, ownership, and orchestration controls."
+    }
+  ],
+  "run_timestamp": "2026-07-31T21:03:19-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+  ],
+  "source_urls_checked": [
+    "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/",
+    "https://code.visualstudio.com/docs/agent-customization/hooks",
+    "https://code.visualstudio.com/docs/agents/agents-window",
+    "https://coder.com/docs/ai-coder/agents/architecture",
+    "https://coder.com/docs/user-guides/user-secrets",
+    "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp",
+    "https://docs.github.com/en/copilot/reference/hooks-reference",
+    "https://prarena.ai/",
+    "https://support.atlassian.com/jira-software-cloud/docs/configure-a-jira-coding-agent-session/",
+    "https://support.atlassian.com/jira-software-cloud/docs/what-is-the-jira-coding-agent/",
+    "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+    "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+    "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+    "https://www.itpro.com/software/development/amazon-targets-agent-safety-gains-with-investment-in-team-behind-lean-programming-language",
+    "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+    "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "https://prarena.ai/"
+    ],
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": [
+      "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "https://prarena.ai/",
+      "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know"
+    ],
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": [
+      "https://code.visualstudio.com/docs/agent-customization/hooks",
+      "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/"
+    ],
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": [
+      "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+      "https://prarena.ai/"
+    ],
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": [
+      "https://code.visualstudio.com/docs/agent-customization/hooks",
+      "https://code.visualstudio.com/docs/agents/agents-window"
+    ],
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": [
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "https://prarena.ai/",
+      "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+      "https://support.atlassian.com/jira-software-cloud/docs/configure-a-jira-coding-agent-session/"
+    ],
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": [
+      "https://code.visualstudio.com/docs/agents/agents-window",
+      "https://support.atlassian.com/jira-software-cloud/docs/configure-a-jira-coding-agent-session/",
+      "https://support.atlassian.com/jira-software-cloud/docs/what-is-the-jira-coding-agent/",
+      "https://prarena.ai/"
+    ],
+    "docs/wiki/application-patterns/agent-environment-readiness.md": [
+      "https://support.atlassian.com/jira-software-cloud/docs/configure-a-jira-coding-agent-session/",
+      "https://support.atlassian.com/jira-software-cloud/docs/what-is-the-jira-coding-agent/",
+      "https://coder.com/docs/ai-coder/agents/architecture",
+      "https://coder.com/docs/user-guides/user-secrets",
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track"
+    ],
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": [
+      "https://code.visualstudio.com/docs/agent-customization/hooks",
+      "https://docs.github.com/en/copilot/reference/hooks-reference"
+    ],
+    "docs/wiki/application-patterns/agent-session-recovery.md": [
+      "https://code.visualstudio.com/docs/agents/agents-window",
+      "https://coder.com/docs/ai-coder/agents/architecture",
+      "https://coder.com/docs/user-guides/user-secrets"
+    ],
+    "docs/wiki/context-architecture/thin-context-router.md": [
+      "https://code.visualstudio.com/docs/agents/agents-window",
+      "https://code.visualstudio.com/docs/agent-customization/hooks"
+    ],
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": [
+      "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "https://www.itpro.com/software/development/amazon-targets-agent-safety-gains-with-investment-in-team-behind-lean-programming-language",
+      "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp",
+      "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track"
+    ],
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": [
+      "https://docs.cloud.google.com/iam/docs/roles-permissions/mcp",
+      "https://docs.github.com/en/copilot/reference/hooks-reference"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "https://prarena.ai/",
+      "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing"
+    ]
+  },
+  "upstream_owned_entities": [
+    "AWS",
+    "AWS Clean Rooms",
+    "Amazon",
+    "Amazon Aurora",
+    "Anthropic",
+    "Atlassian",
+    "Bedrock AgentCore",
+    "Claude Code",
+    "Cloud Security Alliance",
+    "Codegen",
+    "Cursor Agents",
+    "Dell AI Factory",
+    "Dell Technologies",
+    "Devin",
+    "Elastic",
+    "Gartner",
+    "GitHub Copilot coding agent",
+    "Google Cloud",
+    "Google Labs Jules",
+    "Lean",
+    "NIST",
+    "NVIDIA",
+    "OpenAI",
+    "OpenAI Codex",
+    "Palantir",
+    "PostHog",
+    "Robinhood",
+    "Standard Capital",
+    "Stripe",
+    "Weave",
+    "Y Combinator",
+    "Zendesk"
+  ],
+  "why_each_item_matters": [
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_url": "https://www.businessinsider.com/weave-funding-tokenmaxxing-startup-y-combinator-ai-coding-spend-developers-2026-7",
+      "why_it_matters": "Supports the local rule that spend and AI activity must be joined to accepted engineering output before teams claim productivity or ROI."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://www.theguardian.com/technology/2026/jul/30/atlassian-tightens-tracking-of-staff-ai-use-as-other-technology-firms-encourage-tokenmaxxing",
+      "why_it_matters": "Adds public evidence for budget envelopes, spend alerts, and rejecting tokenmaxxing as a success measure unless linked to useful workflow outcomes."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://www.businessinsider.com/sc/manage-token-costs-while-keeping-agentic-goals-on-track",
+      "why_it_matters": "Relevant as weak vendor-positioned evidence that runtime placement, privacy posture, and cost model are workflow-readiness and model-selection inputs."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://prarena.ai/",
+      "why_it_matters": "Adds an external benchmark caution: workflow shape changes the meaning of success metrics, so local selection should normalize by ready, merged, review, and acceptance evidence."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://www.businessinsider.com/amazon-investing-1b-in-new-role-forward-deployed-engineer-career-2026-7",
+      "why_it_matters": "Supports the local operating-model distinction between generic assistant rollout and senior, embedded, workflow-owning execution capacity for production AI systems."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "why_it_matters": "Directly reinforces local governance infrastructure rules around identity, owner, purpose, lifecycle, auditability, and short-lived permissions before deployment."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://www.itpro.com/software/development/amazon-targets-agent-safety-gains-with-investment-in-team-behind-lean-programming-language",
+      "why_it_matters": "Adds evidence that formal correctness tools can strengthen agent safety but do not replace runtime governance, ownership, and orchestration controls."
+    }
+  ]
+}
