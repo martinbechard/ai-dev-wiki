@@ -1,0 +1,386 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "counts": {
+    "excluded_candidate_count": 7,
+    "qualifying_update_count": 3,
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 10
+  },
+  "cutoff_window": {
+    "basis": "7 days relative to run timestamp",
+    "end": "2026-08-03T12:18:00-04:00",
+    "start": "2026-07-27T12:18:00-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "exclusion_reason": "Date is only July 2026 on the ACL page; no visible exact publication/update date inside the 7-day window.",
+      "observed_date": "2026-07",
+      "source_url": "https://aclanthology.org/2026.acl-long.888/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "exclusion_reason": "Visible last updated date is 2026-07-16, outside the 7-day cutoff.",
+      "observed_date": "2026-07-16",
+      "source_url": "https://www.ai-standards.dev/docs/07-llmops/evaluation/llm-as-judge"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "exclusion_reason": "Search result exposed it as published two weeks ago, outside the 7-day cutoff despite current crawl freshness.",
+      "observed_date": "published two weeks ago",
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/agents"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "exclusion_reason": "No visible publication or update date found; crawl date alone is not accepted as source freshness.",
+      "observed_date": null,
+      "source_url": "https://agent-spaces.com/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "exclusion_reason": "No visible publication or update date found; crawl date alone is not accepted as source freshness.",
+      "observed_date": null,
+      "source_url": "https://usespaces.dev/"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "exclusion_reason": "Documentation version was visible, but no publication or update date was visible in the result/page text.",
+      "observed_date": null,
+      "source_url": "https://coder.com/docs/index"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "exclusion_reason": "Relevant visible changelog items were dated 2026-07-22 or earlier, outside the 7-day cutoff.",
+      "observed_date": "2026-07-22",
+      "source_url": "https://cursor.com/en-US/changelog"
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest workflow should decide whether to update delegated-authority language for owner/initiator/executor audit separation.",
+    "Ingest workflow should decide whether security repair gates need explicit exploitable-risk prioritization and precision/recall metrics.",
+    "No docs/wiki pages were updated by this watch."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+        "https://www.techradar.com/pro/the-real-fight-in-agentic-commerce-isnt-autonomy-its-authorization"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+        "https://www.techradar.com/pro/the-real-fight-in-agentic-commerce-isnt-autonomy-its-authorization"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+        "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://cursor.com/en-US/changelog",
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+        "https://aclanthology.org/2026.acl-long.888/",
+        "https://www.ai-standards.dev/docs/07-llmops/evaluation/llm-as-judge"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://aclanthology.org/2026.acl-long.888/",
+        "https://www.ai-standards.dev/docs/07-llmops/evaluation/llm-as-judge"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+        "https://aclanthology.org/2026.acl-long.888/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw updates for local practice implications; route broad ecosystem/entity details upstream.",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "qualified_update_urls": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+        "https://www.ai-standards.dev/docs/07-llmops/evaluation/llm-as-judge"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents",
+        "https://cursor.com/en-US/changelog"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents",
+        "https://cursor.com/en-US/changelog"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents",
+        "https://agent-spaces.com/",
+        "https://usespaces.dev/",
+        "https://coder.com/docs/index"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents",
+        "https://agent-spaces.com/",
+        "https://usespaces.dev/"
+      ]
+    },
+    {
+      "follow_up_note": "No strict-window qualifying update found for this selected leaf; exclusions record stale, missing, or ambiguous visible dates.",
+      "last_result": "no_qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "qualified_update_urls": [],
+      "source_urls_checked": [
+        "https://code.visualstudio.com/docs/agents/concepts/agents",
+        "https://agent-spaces.com/",
+        "https://coder.com/docs/index"
+      ]
+    }
+  ],
+  "leaf_universe_count": 82,
+  "qualifying_updates": [
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "factual_summary": "A public agentic-security analysis argues that enterprise AI agents need first-class identities, named owners, explicit purposes, specific permissions, lifecycle review/expiry, dual human-and-agent audit trails, inventory/discovery, task-specific revocable credentials, and zero-trust treatment.",
+      "named_entities": [
+        "TechRadar",
+        "Zendesk",
+        "Vinay Patel",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "published_or_updated_at": "2026-07-29",
+      "routing_summary": "Keep only the local governance implication; route broad organization/entity background upstream.",
+      "source_url": "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "upstream_owned_entities": [
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "visible_date_evidence": "TechRadar page states Published 29 July 2026.",
+      "why_it_matters_for_leaf": "The local delegated-authority leaf should later consider whether agent identity guidance distinguishes owner, initiator, executor, approval policy, and lifecycle recertification rather than treating an agent as an invisible feature inside an application."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "factual_summary": "A Checkmarx CEO interview frames AI-accelerated development as increasing finding volume faster than security teams can remediate, arguing for exploitable-risk prioritization, early IDE-stage fixes, human oversight, governance for shadow AI, and precision/recall-style metrics such as F1 over raw finding counts.",
+      "named_entities": [
+        "TechRadar",
+        "Checkmarx",
+        "Sandeep Johri",
+        "Anthropic",
+        "Claude Code",
+        "Claude Mythos",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-07-30",
+      "routing_summary": "Keep only the local gate/eval implication; route product and company details upstream.",
+      "source_url": "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+      "upstream_owned_entities": [
+        "Checkmarx",
+        "Anthropic",
+        "Claude Code",
+        "Claude Mythos",
+        "Gartner"
+      ],
+      "visible_date_evidence": "TechRadar page states Published 30 July 2026.",
+      "why_it_matters_for_leaf": "This is relevant to security repair gates and evaluation leaves because it emphasizes verified true positives, prioritization, remediation latency, and calibrated review signals over undifferentiated vulnerability volume."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "factual_summary": "A public agentic-commerce analysis says the critical issue is authorization rather than autonomy: agent transactions need proof of permission, bounded delegated intent, authenticated agents, task-specific credentials, dispute evidence, and verifiable records.",
+      "named_entities": [
+        "TechRadar",
+        "commercetools",
+        "Visa",
+        "Mastercard",
+        "Stripe",
+        "Adobe"
+      ],
+      "published_or_updated_at": "2026-07-31",
+      "routing_summary": "Treat commerce/payment entity details as upstream-owned; retain only the delegated authorization implication.",
+      "source_url": "https://www.techradar.com/pro/the-real-fight-in-agentic-commerce-isnt-autonomy-its-authorization",
+      "upstream_owned_entities": [
+        "commercetools",
+        "Visa",
+        "Mastercard",
+        "Stripe",
+        "Adobe"
+      ],
+      "visible_date_evidence": "TechRadar page states Published 31 July 2026.",
+      "why_it_matters_for_leaf": "Although commerce itself is upstream/broad, the delegated-authority pattern reinforces a local practice requirement to preserve who authorized an agent action, what boundaries applied, and what record proves the agent stayed inside scope."
+    }
+  ],
+  "run_timestamp": "2026-08-03T12:18:00-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+  ],
+  "selection_policy": "unchecked leaves first, then oldest last_checked_at, stable relative path tie-break",
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+    "https://www.techradar.com/pro/the-real-fight-in-agentic-commerce-isnt-autonomy-its-authorization",
+    "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+    "https://cursor.com/en-US/changelog",
+    "https://aclanthology.org/2026.acl-long.888/",
+    "https://www.ai-standards.dev/docs/07-llmops/evaluation/llm-as-judge",
+    "https://code.visualstudio.com/docs/agents/concepts/agents",
+    "https://agent-spaces.com/",
+    "https://usespaces.dev/",
+    "https://coder.com/docs/index"
+  ]
+}
