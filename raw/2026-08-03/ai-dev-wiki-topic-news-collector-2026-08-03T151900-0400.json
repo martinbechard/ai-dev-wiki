@@ -1,0 +1,167 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-03T15:19:00-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start_inclusive": "2026-08-01T15:19:00-04:00",
+    "end_inclusive": "2026-08-03T15:19:00-04:00",
+    "date_rule": "Include only public sources visibly published or updated within the last 2 days relative to the run timestamp; exclude missing, ambiguous, future-dated, and boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule": "Keep broad companies, products, models, developer tools, agentic frameworks, MCP servers, and broad techniques upstream-owned; record only the local AI-assisted-development practice implication."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_queries": [
+    "AI coding agent prompt engineering practice updated August 2026",
+    "site:github.blog/changelog AI coding agent August 2026",
+    "site:openai.com/index coding agent August 2026",
+    "site:anthropic.com/news coding agent August 2026",
+    "AI-assisted development coding agent August 2 2026",
+    "AI code review August 2 2026 coding agent",
+    "MCP governed practice August 2 2026 agent tools",
+    "software engineering evals AI coding August 2 2026",
+    "\"Aug.1\" \"GitHub Changelog\" \"Copilot\" \"2026\"",
+    "\"Aug. 1\" \"GitHub Changelog\" \"Copilot\" \"2026\"",
+    "site:github.blog/changelog/2026-08 GitHub Copilot",
+    "site:github.blog/changelog/2026-08 MCP Copilot",
+    "\"AI coding\" \"August 1, 2026\" developers",
+    "\"coding agents\" \"August 1, 2026\" software development",
+    "\"AI-assisted software development\" \"August 1, 2026\"",
+    "\"MCP\" \"August 1, 2026\" \"coding agent\"",
+    "\"August 2, 2026\" \"AI skills\" \"coding\"",
+    "\"August 2, 2026\" \"AI coding assistant\"",
+    "\"August 2, 2026\" \"agentic engineering\"",
+    "\"August 2, 2026\" \"MCP\" \"AI agents\"",
+    "\"Last updated\" \"August 2, 2026\" \"coding agent\"",
+    "\"Last updated\" \"Aug 2, 2026\" \"MCP\" \"agent\"",
+    "\"Updated Aug 2, 2026\" \"AI code review\"",
+    "\"Aug 2, 2026\" \"Claude Code\" \"AGENTS.md\""
+  ],
+  "findings": [],
+  "excluded_candidates": [
+    {
+      "title": "Codexal Code officially launches August 1, 2026",
+      "source_url": "https://codexal.co/en/news/codexal-code-launch.php",
+      "publisher": "Codexal",
+      "visible_date": "Published: Aug 1, 2026",
+      "reason": "Excluded because the visible publication date is date-only on the cutoff boundary day; without a time or timezone it cannot be confirmed inside the two-day window starting 2026-08-01T15:19:00-04:00.",
+      "routing_note": "If later ingested by a broader source window, keep Codexal and Codexal Code as upstream-owned product/company entities and retain only local practice implications around data residency, audit trails, privacy controls, and regional adoption."
+    },
+    {
+      "title": "The State of AI Skills: Mid-2026",
+      "source_url": "https://aiskill.market/blog/the-state-of-ai-skills-mid-2026",
+      "publisher": "AI Skill Market",
+      "visible_date": "August 1, 2026",
+      "reason": "Excluded because the visible publication date is date-only on the cutoff boundary day; without a time or timezone it cannot be confirmed inside the two-day window.",
+      "routing_note": "If later ingested by a broader source window, keep broad skill platforms and registries upstream-owned and retain only local practice implications around skill-stack governance, approval metadata, internal registries, and quality controls."
+    },
+    {
+      "title": "Agentic Engineering - Vibe Coding The Right Way",
+      "source_url": "https://kanedevacademy.vercel.app/",
+      "publisher": "Kane Dev Academy",
+      "visible_date": "Sun, Aug 2 at 7:00 PM PHT; page also states Aug 2 2026 in 4 days",
+      "reason": "Excluded because the visible date is an event schedule date, not a publication or update date, and the page contains stale future-relative wording.",
+      "routing_note": "Practice implication would be local if later qualified: spec-plan-dispatch-verify workflows for agentic engineering training."
+    },
+    {
+      "title": "Live AI Tools Workshop UAE",
+      "source_url": "https://be10x.ai/ai-ae-25-1/",
+      "publisher": "Be10X",
+      "visible_date": "August 2, 2026 11:00 AM GST onwards",
+      "reason": "Excluded because the visible date is an event date and the page is a general AI productivity workshop, not a practice-level AI-assisted software development source.",
+      "routing_note": "No local follow-up needed unless a later source shows developer-workflow content."
+    },
+    {
+      "title": "GitHub Changelog August listing",
+      "source_url": "https://github.blog/changelog/",
+      "publisher": "GitHub",
+      "visible_date": "Aug.03 release: Migrate from GitLab to GitHub with GitHub Enterprise Importer",
+      "reason": "Excluded because the visible August 3 item is not about AI-assisted development practice. The relevant Copilot, MCP, model, code review, and supply-chain entries visible on the page were July 31 or earlier and therefore outside this run's two-day cutoff.",
+      "routing_note": "Keep GitHub and Copilot product coverage upstream-owned; local practice notes only qualify when the source describes AI-assisted development workflow, governance, retrieval, verification, or adoption practice."
+    },
+    {
+      "title": "Manage tools for agents in Microsoft 365 admin center",
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "publisher": "Microsoft Learn",
+      "visible_date": "Last updated on 2026-07-30",
+      "reason": "Excluded because the visible last-updated date is outside the two-day cutoff window.",
+      "routing_note": "This was captured in the 2026-07-31 collector run for local MCP governance and tool-schema evaluation practice."
+    },
+    {
+      "title": "The 2026 EU AI Act and AI-Generated Code: What Changes for Dev Teams",
+      "source_url": "https://www.augmentcode.com/guides/eu-ai-act-2026",
+      "publisher": "Augment Code",
+      "visible_date": "Apr 20, 2026; Last updated: Jun 18, 2026",
+      "reason": "Excluded because the visible publication and update dates are outside the two-day cutoff window; August 2 appears as a regulatory milestone inside the article, not the source date.",
+      "routing_note": "If later refreshed by a qualifying update, keep Augment Code and named tools upstream-owned and retain only local governance implications around traceability, human oversight, and AI-generated-code classification."
+    },
+    {
+      "title": "Codaro AI code review landing page",
+      "source_url": "https://codaro.dev/",
+      "publisher": "Codaro",
+      "visible_date": "From August 2, 2026 the EU AI Act introduces new logging and transparency obligations",
+      "reason": "Excluded because the visible August 2 text is a regulatory deadline, not a publication or page update date.",
+      "routing_note": "Potential local practice area is audit logging for AI code review, but this source does not qualify for the current time window."
+    },
+    {
+      "title": "AISecDev 2026 workshop page",
+      "source_url": "https://sites.usp.br/icem/aisecdev-cbsoft-2026/",
+      "publisher": "USP",
+      "visible_date": "Author notification: August 3, 2026; workshop date: September 8, 2026",
+      "reason": "Excluded because August 3 is an event milestone, not a visible publication or update date, and September 8 is future-dated relative to this run.",
+      "routing_note": "The topic is relevant to verification, auditability, and security in AI-assisted development, but the source does not qualify for this collector window."
+    },
+    {
+      "title": "MCP Server listing for Agent Module",
+      "source_url": "https://chat.mcp.so/zh/server/agent-module/Agent%20Module",
+      "publisher": "mcp.so",
+      "visible_date": "Created At 12 days ago; Updated At 12 days ago",
+      "reason": "Excluded because the visible relative dates are older than the two-day cutoff and the page does not provide an absolute update date inside the window.",
+      "routing_note": "If later qualified, keep the MCP server entity upstream-owned and retain only local practice implications around deterministic agent retrieval and compliance evidence."
+    },
+    {
+      "title": "Agentic Engineering - Cold Mountain Wiki",
+      "source_url": "https://www.coldmountain.ai/wiki/tools/agentic-engineering",
+      "publisher": "Cold Mountain",
+      "visible_date": "Created Apr 5, 2026; Updated Jul 26, 2026",
+      "reason": "Excluded because the visible updated date is outside the two-day cutoff window.",
+      "routing_note": "If later refreshed by a qualifying update, local relevance would be context engineering, loop governance, and agent workflow taxonomy, while named tools and techniques remain upstream-owned."
+    },
+    {
+      "title": "KILLSWITCH.md - The AI Agent Emergency Stop Standard",
+      "source_url": "https://killswitch.md/",
+      "publisher": "KILLSWITCH.md",
+      "visible_date": "Last updated: March 2026",
+      "reason": "Excluded because the visible update date is outside the two-day cutoff window.",
+      "routing_note": "Local practice relevance would be stop conditions, audit logs, escalation rules, and AGENTS.md safety complements if a qualifying update appears."
+    }
+  ],
+  "counts": {
+    "qualifying_updates": 0,
+    "excluded_candidates": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated because this collector is raw-only.",
+    "No source files were moved to raw/processed by this collector."
+  ]
+}
