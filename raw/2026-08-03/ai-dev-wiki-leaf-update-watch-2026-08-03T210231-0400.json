@@ -1,0 +1,354 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-08-03T21:02:31-04:00",
+    "policy": "Only public sources visibly published or updated in the last 7 days relative to run time qualify; missing, ambiguous, future-dated, stale, and boundary-only dates are excluded.",
+    "start": "2026-07-27T21:02:31-04:00",
+    "timezone": "America/Toronto"
+  },
+  "excluded_candidates": [
+    {
+      "publisher": "Microsoft / Visual Studio Code",
+      "reason": "Search metadata said published about 2 weeks ago, outside the strict 7-day window; page itself did not expose a qualifying updated date.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://code.visualstudio.com/docs/agents/reference/ai-features-cheat-sheet",
+      "title": "AI features in VS Code cheat sheet"
+    },
+    {
+      "publisher": "Microsoft / Visual Studio Code",
+      "reason": "Search metadata said published about 2 weeks ago, outside the strict 7-day window; page itself did not expose a qualifying updated date.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/agents",
+      "title": "Agents"
+    },
+    {
+      "publisher": "Microsoft / Visual Studio Code",
+      "reason": "Search metadata said published about 2 weeks ago, outside the strict 7-day window; page itself did not expose a qualifying updated date.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/trust-and-safety",
+      "title": "Trust and safety"
+    },
+    {
+      "publisher": "Amazon Science",
+      "reason": "Page showed only year 2026 and search metadata said crawled two weeks ago; no visible strict-window publication/update date.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "source_url": "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+      "title": "TRAJECT-Bench: A trajectory-aware benchmark for evaluating agentic tool use"
+    },
+    {
+      "publisher": "AWS",
+      "reason": "Visible publication date Apr 22, 2026 is outside the strict 7-day window despite recent crawl metadata.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-new-features-to-build-agents-faster/",
+      "title": "Amazon Bedrock AgentCore adds new features to help developers build agents faster"
+    },
+    {
+      "publisher": "Microsoft Foundry Blog",
+      "reason": "Visible publication date Jun 2, 2026 is outside the strict 7-day window despite recent crawl metadata.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "source_url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+      "title": "Build agents you can trust across any framework with open evals and a control standard"
+    },
+    {
+      "publisher": "Harness Developer Hub",
+      "reason": "Visible last updated date Jul 22, 2026 is outside the strict 7-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "source_url": "https://developer.harness.io/3k-docs/ai/harness-agents/",
+      "title": "Harness Agents"
+    },
+    {
+      "publisher": "The Register",
+      "reason": "Visible publication date Jul 8, 2026 is outside the strict 7-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ],
+      "source_url": "https://www.theregister.com/security/2026/07/08/bug-in-top-ai-coding-agents-shows-that-unix-era-security-headaches-never-really-die/5268025",
+      "title": "Bug in top AI coding agents shows that Unix-era security headaches never really die"
+    },
+    {
+      "publisher": "InfoWorld",
+      "reason": "Visible publication date May 4, 2026 is outside the strict 7-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "source_url": "https://www.infoworld.com/article/4166247/improving-ai-agents-through-better-evaluations.html",
+      "title": "Improving AI agents through better evaluations"
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only artifact; do not update docs/wiki from this watch.",
+    "Ingest should evaluate source quality for event/agenda-style sources before synthesis.",
+    "Route broad product, company, protocol, benchmark, and framework entity background to the upstream AI wiki."
+  ],
+  "leaf_universe_count": 82,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "date_evidence": "Page lists print book available Aug 3, 2026; catalog page lists July 2026 and source was crawled on run date.",
+      "factual_summary": "The catalog/preview frames agent implementation around workflow-versus-agent selection, context engineering, harness engineering, tool use, human-in-the-loop tool approval, workspace/sandbox execution, multi-agent orchestration, observability, datasets, rubrics, LLM-as-judge, and evaluation-gated deployment.",
+      "follow_up_note": "Ingest should preserve this as local practice guidance only; route broad framework, protocol, and benchmark background upstream.",
+      "id": "2026-08-03-manning-agent-book-available",
+      "named_entities": [
+        "Manning",
+        "Build an AI Agent (From Scratch)",
+        "GAIA",
+        "MCP",
+        "OpenTelemetry",
+        "LLM-as-a-judge"
+      ],
+      "publisher": "Manning",
+      "source_url": "https://www.manning.com/preview/build-an-ai-agent-from-scratch/chapter-1",
+      "title": "Build an AI Agent (From Scratch)",
+      "upstream_owned_entities": [
+        "MCP",
+        "OpenTelemetry",
+        "GAIA"
+      ],
+      "visible_date": "2026-08-03",
+      "why_it_matters_for_leaf": "It reinforces several local practice leaves: choose workflow versus agent deliberately, treat the harness as the place where context, tools, state, approvals, and evaluation live, and make evaluation gates part of delivery rather than a separate afterthought."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "date_evidence": "Article page says Published 29 July 2026.",
+      "factual_summary": "The article argues that AI agents need first-class identities, named owners, purposes, permissions, lifecycle review or expiry, audit trails that preserve both human authorizer and executing agent, and visibility across SaaS, internal automation, development environments, and third-party integrations.",
+      "follow_up_note": "Use for local governance control implications; do not duplicate broad NIST or CSA entity background locally.",
+      "id": "2026-07-29-techradar-agentic-security-controls",
+      "named_entities": [
+        "TechRadar",
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "publisher": "TechRadar",
+      "source_url": "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+      "title": "Agentic security does not need a whole new definition - you just need to reframe what you already know",
+      "upstream_owned_entities": [
+        "Zendesk",
+        "NIST",
+        "Cloud Security Alliance"
+      ],
+      "visible_date": "2026-07-29",
+      "why_it_matters_for_leaf": "This is direct evidence for local governance and review-gate leaves: agent controls should extend existing least-privilege, lifecycle, audit, and accountability controls before pilots scale into production."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "date_evidence": "PR Newswire page says Jul 28, 2026, 08:02 ET.",
+      "factual_summary": "Barndoor introduced AgentProfile to tie each agent to a unique governed record, human manager, credentials, tool/model/data access, cost tracking, continuous operation enforcement, least-privilege permissions, central deprovisioning, and policy changes outside agent code.",
+      "follow_up_note": "Ingest can cite AgentProfile as an example of local governance-pattern pressure while routing Barndoor product/company coverage upstream.",
+      "id": "2026-07-28-barndoor-agentprofile",
+      "named_entities": [
+        "Barndoor AI",
+        "AgentProfile",
+        "MCP Governance",
+        "LLM Gateway",
+        "Okta",
+        "Microsoft 365"
+      ],
+      "publisher": "PR Newswire / Barndoor AI",
+      "source_url": "https://www.prnewswire.com/news-releases/barndoor-unveils-agentprofile-ending-borrowed-identities-and-blind-costs-for-every-agent-302835915.html",
+      "title": "Barndoor unveils AgentProfile, ending borrowed identities and blind costs for every agent",
+      "upstream_owned_entities": [
+        "Barndoor AI",
+        "Okta",
+        "Microsoft 365",
+        "MCP"
+      ],
+      "visible_date": "2026-07-28T08:02:00-04:00",
+      "why_it_matters_for_leaf": "The update is concrete market evidence that governance tooling is moving from human-borrowed credentials toward per-agent records, runtime enforcement, cost attribution, and lifecycle controls."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "date_evidence": "Article page says Published Jul 15, 2026 Updated Jul 28, 2026.",
+      "factual_summary": "The checklist recommends bounding the job before access, reducing tools/data/autonomy, keeping authorization and high-impact approvals outside the model, rerunning adversarial tests after prompt/tool/retrieval/memory/policy/model changes, attaching evidence to release controls, and recording retest triggers.",
+      "follow_up_note": "Good candidate for ingest as a local checklist source if source quality is acceptable for this wiki.",
+      "id": "2026-07-28-practical-read-agent-security-checklist",
+      "named_entities": [
+        "The Practical Read"
+      ],
+      "publisher": "The Practical Read",
+      "source_url": "https://thepracticalread.yashkaku25.chatgpt.site/blog/ai-agent-security-checklist",
+      "title": "AI agent security checklist: 10 checks before deployment",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-07-28",
+      "why_it_matters_for_leaf": "This maps directly to local destructive-command controls, prompt-injection handling, prototype-to-cloud promotion gates, and verification tax: controls need evidence, owners, and retest triggers, not checkbox-only approval."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "date_evidence": "Page lists Held on Jul 29, 2026; search metadata reported Published 6 days ago during this run.",
+      "factual_summary": "The workshop describes a hands-on harness of focused agents that plan, implement, and verify each other\u2019s work, using reusable tools, project memory, checkpoints, and a pipeline run against a real app rather than prompt-only operation.",
+      "follow_up_note": "Treat as practice-signal evidence; avoid overstating event-page marketing as validated technical performance.",
+      "id": "2026-07-29-chain-react-agent-harness-workshop",
+      "named_entities": [
+        "Chain React",
+        "React Native",
+        "Bee",
+        "Amazon"
+      ],
+      "publisher": "Chain React",
+      "source_url": "https://chainreactconf.com/workshops/past-the-vibes-build-an-agent-harness-for-your-react-native-app",
+      "title": "Past the Vibes: Build an Agent Harness for Your React Native App",
+      "upstream_owned_entities": [
+        "React Native",
+        "Bee",
+        "Amazon"
+      ],
+      "visible_date": "2026-07-29",
+      "why_it_matters_for_leaf": "This supports local harness leaves by showing practitioner-facing demand for reusable tools, memory, checkpoints, plan-implement-verify loops, and app-specific execution pipelines."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "date_evidence": "Page lists Date, Time and Location: Jul 29, 2026; search metadata reported Published 6 days ago during this run.",
+      "factual_summary": "The meetup agenda includes an Agent Control Plane talk describing persistent memory, deterministic workflow phases (Research, Specify, Implement, Ship), and human-in-the-loop gates around coding agents; it also includes UI automation agents with planning, specialized browser/desktop agents, orchestration, A2A communication, and human supervision.",
+      "follow_up_note": "Use cautiously as event agenda evidence; broad product/entity details belong upstream.",
+      "id": "2026-07-29-meetup-agent-control-plane",
+      "named_entities": [
+        "Meetup",
+        "Voxel51",
+        "Atomic",
+        "Claude Code",
+        "GitHub Copilot",
+        "UISurf",
+        "A2A"
+      ],
+      "publisher": "Meetup / Singapore AI, Machine Learning and Computer Vision Meetup",
+      "source_url": "https://www.meetup.com/singapore-computer-vision-meetup/events/314912743/",
+      "title": "July 29 - MCP, Agents and Skills Meetup",
+      "upstream_owned_entities": [
+        "Voxel51",
+        "Claude Code",
+        "GitHub Copilot",
+        "A2A"
+      ],
+      "visible_date": "2026-07-29",
+      "why_it_matters_for_leaf": "This is another practice signal for deterministic lifecycle phases, review gates, subagent coordination, and supervised cross-environment handoffs as local workflow patterns."
+    }
+  ],
+  "routing_summary": {
+    "local_downstream_owned_implications": [
+      "agent harness component sizing and workflow selection",
+      "agent governance records, identities, ownership, lifecycle gates, approvals, audit evidence",
+      "verification loops, eval gates, retest triggers, and release evidence",
+      "process-layer workflow state and human-supervised handoffs"
+    ],
+    "upstream_owned_entities": [
+      "A2A",
+      "Amazon",
+      "Barndoor AI",
+      "Bee",
+      "Claude Code",
+      "Cloud Security Alliance",
+      "GAIA",
+      "GitHub Copilot",
+      "MCP",
+      "Microsoft 365",
+      "NIST",
+      "Okta",
+      "OpenTelemetry",
+      "React Native",
+      "Voxel51",
+      "Zendesk"
+    ]
+  },
+  "run_timestamp": "2026-08-03T21:02:31-04:00",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+  ],
+  "selection_rule": "New or previously unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/security/agentic-security-doesnt-need-a-whole-new-definition-you-just-need-to-reframe-what-you-already-know",
+    "https://www.prnewswire.com/news-releases/barndoor-unveils-agentprofile-ending-borrowed-identities-and-blind-costs-for-every-agent-302835915.html",
+    "https://thepracticalread.yashkaku25.chatgpt.site/blog/ai-agent-security-checklist",
+    "https://www.manning.com/preview/build-an-ai-agent-from-scratch/chapter-1",
+    "https://chainreactconf.com/workshops/past-the-vibes-build-an-agent-harness-for-your-react-native-app",
+    "https://www.meetup.com/singapore-computer-vision-meetup/events/314912743/",
+    "https://code.visualstudio.com/docs/agents/reference/ai-features-cheat-sheet",
+    "https://code.visualstudio.com/docs/agents/concepts/agents",
+    "https://code.visualstudio.com/docs/agents/concepts/trust-and-safety",
+    "https://www.amazon.science/publications/traject-bench-a-trajectory-aware-benchmark-for-evaluating-agentic-tool-use",
+    "https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-new-features-to-build-agents-faster/",
+    "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+    "https://developer.harness.io/3k-docs/ai/harness-agents/",
+    "https://www.theregister.com/security/2026/07/08/bug-in-top-ai-coding-agents-shows-that-unix-era-security-headaches-never-really-die/5268025",
+    "https://www.infoworld.com/article/4166247/improving-ai-agents-through-better-evaluations.html"
+  ]
+}
