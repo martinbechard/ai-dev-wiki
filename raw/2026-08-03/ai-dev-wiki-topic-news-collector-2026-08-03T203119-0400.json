@@ -1,0 +1,274 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": {
+    "local": "2026-08-03T20:31:19-04:00",
+    "utc": "2026-08-04T00:31:19Z"
+  },
+  "cutoff_window": {
+    "local_start": "2026-08-01T20:31:19-04:00",
+    "local_end": "2026-08-03T20:31:19-04:00",
+    "utc_start": "2026-08-02T00:31:19Z",
+    "utc_end": "2026-08-04T00:31:19Z",
+    "date_policy": "Only public sources with a visible publication or update date inside the exact two-day window qualify. Event dates, effective dates, crawler dates, relative freshness, future dates, missing dates, and boundary-only dates are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "agentic frameworks",
+      "MCP servers",
+      "general developer tools",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted development practice, operating guidance, workflow design, verification, governance, and adoption implications only."
+  },
+  "search_queries": [
+    "site:github.blog/changelog AI code review August 3 2026 GitHub Copilot coding agent",
+    "site:github.blog/changelog Copilot coding agent August 2026",
+    "site:docs.github.com Copilot coding agent changelog August 2026 AI code review",
+    "site:anthropic.com/news Claude Code August 2026",
+    "August 3 2026 coding agent AI development practice blog",
+    "August 2 2026 AI code review software engineering evals blog",
+    "August 3 2026 context engineering coding agents blog",
+    "August 3 2026 MCP agent workflow governance blog",
+    "\"Aug 3, 2026\" \"AI code\" \"review\"",
+    "\"Aug 3, 2026\" \"coding agent\"",
+    "\"August 3, 2026\" \"software engineering\" \"AI agents\"",
+    "\"Aug 2, 2026\" \"coding agent\" \"AI\"",
+    "site:openai.com/blog coding agents August 2026 Codex",
+    "site:openai.com/index August 2026 Codex software engineering agents",
+    "site:developers.googleblog.com agent software engineering August 2026",
+    "site:cloud.google.com/blog AI coding agents August 2026 software engineering",
+    "\"Aug 3, 2026\" \"MCP\" \"agents\" \"governance\"",
+    "\"August 3, 2026\" \"MCP\" \"agent\" \"tools\"",
+    "\"Aug 3, 2026\" \"AGENTS.md\"",
+    "\"August 2, 2026\" \"AGENTS.md\"",
+    "site:github.blog/changelog/2026-08 GitHub Copilot August 3 2026",
+    "site:github.blog/changelog/2026-08 Copilot \"August\" \"2026\"",
+    "site:github.blog/changelog \"August 3, 2026\" \"Copilot\"",
+    "site:github.blog/changelog \"August 2, 2026\" \"Copilot\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "The Future of Code Intelligence: Where It's Heading",
+      "url": "https://codeintelligently.com/blog/future-of-code-intelligence-industry",
+      "publisher": "CodeIntelligently",
+      "author": "Vaibhav Verma",
+      "visible_date": "August 3, 2026",
+      "date_basis": "Article page shows August 3, 2026.",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The article frames code intelligence as moving from keyword search and static analysis toward semantic code search, continuous architecture validation, automated impact analysis, observability-linked code understanding, and codebase-specific AI pair programming. It also argues that AI will augment rather than replace code review because architectural judgment and business-logic validation remain human responsibilities.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is useful downstream practice evidence for treating repository knowledge, ADRs, code search, impact analysis, and observability as context infrastructure for coding agents. It supports local guidance that teams should invest in Level 2 quality gates before relying on AI-assisted review or codebase-specific assistants for higher-risk work.",
+      "named_entities": [
+        "Sourcegraph",
+        "GitHub Code Search",
+        "OpenGrok",
+        "SonarQube",
+        "ESLint",
+        "Semgrep",
+        "CodeClimate",
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "Amazon Q Developer",
+        "Google CodeGemma",
+        "Meta CodeLlama",
+        "Sentry",
+        "Honeycomb",
+        "Datadog",
+        "Sourcegraph Cody",
+        "Continue.dev"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Sourcegraph",
+          "reason": "Broad developer-tool/product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "GitHub Code Search",
+          "reason": "Broad developer-tool/product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "OpenGrok",
+          "reason": "Broad developer-tool coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "SonarQube",
+          "reason": "Broad developer-tool coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "ESLint",
+          "reason": "Broad developer-tool coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Semgrep",
+          "reason": "Broad developer-tool/product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "CodeClimate",
+          "reason": "Broad developer-tool/product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Broad coding-assistant product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Cursor",
+          "reason": "Broad coding-assistant product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Broad coding-agent product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Amazon Q Developer",
+          "reason": "Broad coding-assistant product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Google CodeGemma",
+          "reason": "Broad model-family coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Meta CodeLlama",
+          "reason": "Broad model-family coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Sentry",
+          "reason": "Broad observability product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Honeycomb",
+          "reason": "Broad observability product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Datadog",
+          "reason": "Broad observability product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Sourcegraph Cody",
+          "reason": "Broad coding-assistant product coverage belongs in upstream ai-wiki."
+        },
+        {
+          "entity": "Continue.dev",
+          "reason": "Broad coding-assistant product coverage belongs in upstream ai-wiki."
+        }
+      ],
+      "local_practice_implications": [
+        "Code retrieval guidance should distinguish keyword search, semantic search, and codebase-aware assistants as different maturity levels.",
+        "Architecture-validation guidance can treat ADRs and intended responsibility boundaries as future machine-checkable context, not just human documentation.",
+        "AI-assisted review guidance should keep business logic and architectural judgment as human-owned review responsibilities while using AI for mechanical and high-signal prechecks.",
+        "Adoption guidance should encourage teams to baseline static analysis, dependency scanning, and quality gates before scaling codebase-specific AI pair programming."
+      ],
+      "follow_up_notes": [
+        "Ingest can later decide whether this belongs in code-retrieval evidence patterns, context router guidance, code-review evals, or adoption maturity leaves.",
+        "Do not create local leaves for the named products or model families; route those entity updates upstream if needed."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "AI SaaSpocalypse: OpenAI, Deputy say software engineers crucial for AI agents",
+      "url": "https://www.theaustralian.com.au/business/technology/why-your-ai-bots-are-turning-marxist-and-the-saaspocalypse-is-overblown/news-story/f566c32d1e46c900380fa2951bac23ee",
+      "visible_date": "Search result reported today; full article access was paywalled.",
+      "reason": "Excluded because the underlying public article content was not accessible enough to verify the visible date and claims as a public source."
+    },
+    {
+      "title": "The Product Builder Certification: From Vibe Coding to Spec Engineering",
+      "url": "https://maven.com/level-up-with-ai/product-builder-certification-spec-engineering-beyond-vibe-coding",
+      "visible_date": "Next cohort August 2, 2026",
+      "reason": "Excluded because the visible date is a cohort date, not a publication or update date."
+    },
+    {
+      "title": "Doctoral student in Intentional Monitoring of Agentic AI Software",
+      "url": "https://www.linkedin.com/posts/phdscanner_doctoral-student-in-intentional-monitoring-activity-7480084603408494592-lqDV",
+      "visible_date": "Search result relative timestamp and deadline August 3, 2026",
+      "reason": "Excluded because the accessible evidence was a relative social timestamp plus an application deadline, not a stable visible publication or update date."
+    },
+    {
+      "title": "AI Builder",
+      "url": "https://capd.mit.edu/jobs/m37-management-lp-ai-builder/",
+      "visible_date": "Recruitment began July 3, 2026; expires August 3, 2026",
+      "reason": "Excluded because the recent date is an expiry date and the publication date is outside the window."
+    },
+    {
+      "title": "argus-dashboard 0.1.0 README",
+      "url": "https://docs.rs/crate/argus-dashboard/latest/source/README.md",
+      "visible_date": "README mentions enforcement starts August 2, 2026",
+      "reason": "Excluded because the recent date is an enforcement/effective date; no visible publication or update date inside the window was available."
+    },
+    {
+      "title": "O'Reilly Live Online Sessions - Recently Added",
+      "url": "https://www.oreilly.com/products/new-live-online-sessions.html",
+      "visible_date": "Page says added this month and lists August 3, 2026 sessions",
+      "reason": "Excluded because the page does not provide an exact publication or update date inside the two-day window; session dates are not source publication dates."
+    },
+    {
+      "title": "Agentic Engineering from first principles",
+      "url": "https://learn.mindmake.rs/en/",
+      "visible_date": "Access opens August 3, 2026",
+      "reason": "Excluded because the visible date is an access-opening date, not a publication or update date."
+    },
+    {
+      "title": "Obot at AI4 2026",
+      "url": "https://obot.ai/blog/ai4-2026/",
+      "visible_date": "Event date August 3, 2026; search result says published 6 months ago",
+      "reason": "Excluded because the publication date is outside the window and the recent date is only an event date."
+    },
+    {
+      "title": "Copilot Billing Preview app will be retired on August 3",
+      "url": "https://github.blog/changelog/2026-07-07-copilot-billing-preview-app-will-be-retired-on-august-3/",
+      "visible_date": "Published July 7, 2026; retirement effective August 3, 2026",
+      "reason": "Excluded because the source publication date is outside the cutoff and the in-window date is only an effective date."
+    },
+    {
+      "title": "Claude Code Changelog",
+      "url": "https://claudelog.com/claude-code-changelog/",
+      "visible_date": "Latest visible entry July 22, 2026",
+      "reason": "Excluded because the visible entry date is outside the two-day window."
+    },
+    {
+      "title": "GitHub Changelog",
+      "url": "https://github.blog/changelog/",
+      "visible_date": "Latest relevant visible entries were July 28, 2026 or earlier",
+      "reason": "Excluded because no relevant GitHub Copilot, coding-agent, code-review, MCP, or AI-assisted development practice entry was visibly dated inside the window."
+    },
+    {
+      "title": "OpenAI Newsroom Engineering",
+      "url": "https://openai.com/news/engineering/",
+      "visible_date": "Latest visible engineering entries were June 30, 2026 or earlier",
+      "reason": "Excluded because visible publication dates were outside the two-day window."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector output; no docs/wiki pages were updated.",
+    "The next ingest pass should inspect this artifact before synthesis, retain the upstream entity routing, and decide whether the single finding changes durable local guidance.",
+    "The strict-window search produced many event-date and effective-date hits; they were excluded rather than inferred as recent publication updates."
+  ],
+  "blockers": [],
+  "counts": {
+    "qualifying_updates": 1,
+    "excluded_candidates": 12,
+    "blockers": 0
+  }
+}
