@@ -43,6 +43,8 @@ The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-d
 
 The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) adds tool-schema evaluation and autonomous testing controls. Deterministic MCP schema checks and optional agent-scored semantic checks should be separated because they have different data-handling and repeatability properties. Autonomous test execution should record model selection, secure credential references, live viewing, remote-control supervision, and human intervention evidence before the result is accepted.
 
+The August 3 raw sources add repair-prioritization and deployment-eval evidence. The [midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json) frames AI-accelerated security repair around exploitable-risk prioritization, verified true positives, remediation latency, and precision/recall-style metrics instead of raw finding volume. The [evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces evaluation-gated agent deployment with datasets, rubrics, LLM-as-judge boundaries, adversarial retesting, and release-control evidence after prompt, tool, retrieval, memory, policy, or model changes.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -84,6 +86,9 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Score research-agent workflows at the record, hierarchy, evidence, recall, cost, latency, and failure-localization levels when tasks require wide and deep search.
 - Separate deterministic tool-schema checks from agent-scored semantic checks, and record data-handling boundaries when schema content is handed to a coding agent.
 - Require autonomous test runs to preserve model selection, credential-reference, live-viewing, remote-control, and human-intervention evidence before treating results as accepted verification.
+- Evaluate AI-assisted security repair by exploitable-risk reduction, verified true positives, remediation latency, and calibrated precision/recall-style measures rather than total issue count.
+- Rerun adversarial and workflow evals after prompt, tool, retrieval, memory, policy, or model changes before promoting agent behavior.
+- Keep datasets, rubrics, judge boundaries, release evidence, and retest triggers in the delivery path for agents that can execute or verify real work.
 
 ## Authoritative Sources
 
@@ -116,6 +121,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
+- [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
+- [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 
 ## Related Code
 
@@ -163,3 +170,4 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Maintained on 2026-07-22 with deep-research loop checks, API-safe skill evals, and coding-agent readiness verification.
 - Maintained on 2026-07-22 with production-agent simulations, behavior-review acceptance, and research-agent hierarchy scoring.
 - Maintained on 2026-07-31 with deterministic-versus-agent-scored tool-schema evaluation and autonomous-test supervision evidence.
+- Maintained on 2026-08-03 with exploitable-risk repair metrics, adversarial retesting, datasets, rubrics, judge boundaries, release evidence, and retest triggers.

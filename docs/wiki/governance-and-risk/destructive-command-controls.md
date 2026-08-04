@@ -17,6 +17,8 @@ This page owns the downstream destructive-action enforcement rule. [Terminal age
 
 The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds runtime approval-token evidence. Destructive-action controls should be enforced by the runtime as source-aware approval tokens or equivalent policy decisions, so untrusted context, retrieved logs, or model wording cannot silently authorize deletion, dependency mutation, network changes, or other side effects.
 
+The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces the same rule from an agent-security checklist lens. High-impact actions should keep authorization outside the model, reduce the available tool and data surface before access is granted, and record retest triggers when prompt, tool, retrieval, memory, policy, or model changes could alter command behavior.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -24,12 +26,14 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - Deny or escalate destructive commands when the local harness cannot explain the target scope, intended side effect, or recovery path.
 - Route shell-aware parsing, normalization, sandboxing, approval semantics, and command-audit architecture to the upstream shell command safety technique.
 - Require runtime-held approval evidence for destructive or high-impact actions; prompt text and retrieved context are not approval tokens.
+- Rerun destructive-action and high-impact approval tests after prompt, tool, retrieval, memory, policy, model, or permission-surface changes.
 
 ## Authoritative Sources
 
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -61,3 +65,4 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 - Created on 2026-07-17 from public raw artifacts about terminal-agent forced-removal detection and denial reasons, with broader command-safety controls routed to the upstream AI wiki.
 - Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.
+- Maintained on 2026-08-03 with high-impact authorization, tool-surface reduction, and retest-trigger evidence.

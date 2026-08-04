@@ -60,6 +60,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) and [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) add managed-policy, dependency, and CI gate evidence. Cross-client model, plugin, marketplace, approval-bypass, token-limit, telemetry, and remote-skill policy routes through [agent governance infrastructure](agent-governance-infrastructure.md) and [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md). Malware-specific package alerts route through [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md), while CI execution holds route through [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md).
 
+The August 3 raw sources add agent identity and security-checklist evidence. The [midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforce named owners, purposes, permissions, lifecycle review, discovery, audit trails, and first-class agent records as control-plane requirements. The same evening source adds pre-deployment checklist signals: bound the job before access, reduce tools, keep authorization and high-impact approvals outside the model, rerun adversarial tests after prompt, tool, retrieval, memory, policy, or model changes, and attach evidence to release controls.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -110,6 +112,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Audit fallback routing and mid-conversation tool-list changes when they can alter model choice, allowed actions, cache behavior, or execution path.
 - Enforce field-level scopes, action vetting, prompt-injection screening, audit trails, and approval holds in the runtime when agents act on enterprise content or discovered tools.
 - Enforce managed model, plugin, marketplace, approval-bypass, telemetry, token-limit, remote-skill, CI execution, and malware-alert policies consistently across agent clients and IDE surfaces.
+- Require first-class agent records with owner, purpose, permissions, lifecycle review, inventory, cost attribution, and deprovisioning before agents operate across SaaS, repositories, or internal automation.
+- Attach adversarial-test, approval, retest-trigger, and release-control evidence to agent deployment decisions instead of treating a checklist answer as enforcement.
 
 ## Authoritative Sources
 
@@ -153,6 +157,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
+- [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 
 ## Related Code
 
@@ -207,3 +213,4 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Maintained on 2026-07-24 with approval-panel enforcement limits, sandbox-escape validation, tool-list mutation, and fallback-routing governance.
 - Maintained on 2026-07-27 with progressive-discovery and enterprise-content runtime control guidance.
 - Maintained on 2026-07-28 with cross-client managed policy, CI execution approval, telemetry, token-limit, remote-skill, and malware-alert policy guidance.
+- Maintained on 2026-08-03 with first-class agent records, lifecycle review, inventory, pre-deployment adversarial retest, and evidence-attached release controls.

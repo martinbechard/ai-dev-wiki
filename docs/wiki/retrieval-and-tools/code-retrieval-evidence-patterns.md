@@ -33,6 +33,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds primary-folder evidence for multi-root workspaces. Related code, docs, and reference folders can improve retrieval, but code claims and edits should still identify which root supplied the evidence, which root owns repository instructions, and which root controls Git operations.
 
+The [August 3 evening topic news collector source](../../../raw/processed/2026-08-03/ai-dev-wiki-topic-news-collector-2026-08-03T203119-0400.json) adds code-intelligence maturity evidence. Local retrieval practice should distinguish keyword search, static-analysis signals, semantic code search, architecture and ADR context, automated impact analysis, observability-linked code understanding, and codebase-specific assistants as different evidence layers. Broad developer-tool and model-family entities stay upstream-owned; locally, the rule is that each layer still needs source-opened, path-specific, or runtime-backed verification before it supports a coding or review claim.
+
 ## Practice Boundaries
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
@@ -56,6 +58,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Build incident investigation bundles from linked metrics, traces, logs, deployment history, ownership metadata, and source files before accepting a generated diagnosis.
 - Treat searchable workspace artifacts as retrieval candidates that still need opening, attribution, filtering, and source or runtime verification.
 - In multi-root workspaces, record which folder supplied retrieval evidence and which primary folder owns Git and instruction authority.
+- Treat code-intelligence tools as layered retrieval evidence: keyword and path search find candidates, semantic search expands neighborhoods, static analysis and impact analysis add risk signals, and observability links connect code claims to runtime behavior.
+- Verify codebase-specific assistant answers against opened source paths, tests, ADRs, dependency evidence, or runtime telemetry before using them for architecture, impact, or review decisions.
 
 ## Authoritative Sources
 
@@ -75,6 +79,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [August 3 evening topic news collector source](../../../raw/processed/2026-08-03/ai-dev-wiki-topic-news-collector-2026-08-03T203119-0400.json)
 
 ## Related Code
 
@@ -110,3 +115,4 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Maintained on 2026-07-09 with repository-overview verification and generated README source checks.
 - Maintained on 2026-07-14 with incident evidence bundles and searchable workspace artifact verification.
 - Maintained on 2026-07-29 with multi-root retrieval attribution and primary-folder Git/instruction authority guidance.
+- Maintained on 2026-08-03 with code-intelligence maturity layers for semantic search, architecture validation, impact analysis, observability-linked evidence, and codebase-specific assistants.

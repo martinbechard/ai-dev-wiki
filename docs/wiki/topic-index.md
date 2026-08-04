@@ -9,6 +9,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 ## Primary Topics
 
 - [digests/index.md](digests/index.md) is the hub for monthly AI-assisted development digests.
+- [digests/2026-08.md](digests/2026-08.md) is the active August 2026 digest for processed local source updates.
 - [digests/2026-07.md](digests/2026-07.md) is the active July 2026 digest for processed local source updates.
 - [digests/2026-06.md](digests/2026-06.md) is the active June 2026 digest for processed local source updates.
 - [context-architecture/index.md](context-architecture/index.md) is the hub for routers, rules layers, knowledge layers, context selection, and compaction.

@@ -53,6 +53,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) adds workflow-state and autonomous-testing harness evidence. Queue-triggered flows, single-node live traces, AI-processing audit records, model-policy toggles, secure credential references, remote-control viewing, and human controls belong in the harness boundary when an agent or test system can execute workflow steps autonomously.
 
+The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces harness engineering as the place where workflow-versus-agent selection, context, tools, state, approvals, observability, datasets, rubrics, LLM-as-judge boundaries, reusable tools, project memory, checkpoints, and plan-implement-verify loops become inspectable runtime components. Event and book sources are treated as practice signals, not performance proof; broad framework, protocol, and event entities remain upstream-owned.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -96,6 +98,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Treat persistent filesystems, sandbox execution, agent host processes, approval UX, multi-file review surfaces, and terminal diff links as harness components when they determine reviewability.
 - Treat environment setup, dependency availability, secret scoping, restart semantics, and long-job durability as harness components rather than prompt-only assumptions.
 - Treat queue triggers, live node traces, AI-processing audit records, model-policy gates, credential references, remote viewing, and human stop or supervision controls as harness components for autonomous workflow and test execution.
+- Keep workflow selection, context engineering, tool use, state, approval, observability, datasets, rubrics, judge boundaries, reusable tools, project memory, and checkpoints inside the harness contract when agents run against real applications.
+- Treat practitioner workshop and book evidence as signals for expected harness components, then require local verification before adopting a specific implementation pattern.
 
 ## Authoritative Sources
 
@@ -133,6 +137,7 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
+- [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 
 ## Related Code
 
@@ -182,3 +187,4 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Maintained on 2026-07-22 with managed-agent lifecycle hooks, seeded sessions, stream deltas, production-agent simulations, and gateway-style identity controls.
 - Maintained on 2026-07-24 with cue-delivered memory, benchmark provenance, contamination-resistance, setup, scoring, and artifact-evidence components.
 - Maintained on 2026-07-31 with queue-triggered workflow state, live execution traces, AI-processing audit, model-policy gates, credential references, remote viewing, and human controls for autonomous testing.
+- Maintained on 2026-08-03 with workflow-selection, context, tool, state, approval, observability, dataset, rubric, judge, memory, checkpoint, and plan-implement-verify harness components.
