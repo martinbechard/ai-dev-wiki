@@ -1,0 +1,232 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_local": "2026-08-04T20:32:17-0400",
+  "run_timestamp_utc": "2026-08-05T00:32:17Z",
+  "cutoff_window": {
+    "description": "Strict last-2-days public-source window relative to run timestamp.",
+    "start_utc": "2026-08-03T00:32:17Z",
+    "end_utc": "2026-08-05T00:32:17Z",
+    "date_policy": "Sources with missing, ambiguous, future, stale, or cutoff-boundary-only dates were excluded. Date-only August 3, 2026 sources were treated as boundary-date ambiguous because the exact publication time was not visible."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_owner": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "Practice-level implications for AI-assisted development workflows, governance, verification, context, adoption, and operating model.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ]
+  },
+  "search_queries": [
+    "AI coding agent workflow prompt instructions code review published August 4 2026",
+    "AI assisted development context engineering coding agents August 4 2026",
+    "MCP approvals permissions audit logs coding agents August 4 2026",
+    "AI code review software engineering evals August 4 2026",
+    "site:github.blog/changelog Copilot August 4 2026 instructions agent coding",
+    "site:code.visualstudio.com/updates August 2026 agents MCP approvals",
+    "site:docs.github.com/en/copilot \"Updated\" \"August 4, 2026\" \"agents\"",
+    "site:learn.microsoft.com \"August 4, 2026\" \"MCP\" \"agents\"",
+    "\"August 4, 2026\" \"AI code review\"",
+    "\"August 4, 2026\" \"coding agent\" \"review\"",
+    "\"August 3, 2026\" \"coding agent\" \"MCP\"",
+    "\"August 4, 2026\" \"context engineering\" \"code\"",
+    "\"Aug.04\" \"coding agent\" \"Changelog\"",
+    "\"August 4, 2026\" \"agent\" \"approval\" \"code\"",
+    "\"August 4, 2026\" \"Copilot\" \"automation\" \"settings\"",
+    "\"August 4, 2026\" \"MCP\" \"code review\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Retiring the Copilot Billing Preview app",
+      "source_url": "https://github.blog/changelog/2026-08-04-retiring-the-copilot-billing-preview-app/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "August 4, 2026",
+      "date_qualification": "Date-only August 4, 2026 is fully inside the collection window.",
+      "factual_summary": "GitHub retired the Copilot Billing Preview app and points users to GitHub billing settings for AI usage, budgets, cost centers, usage pool allocation, exports, and the billing API.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams using coding agents need cost controls and raw usage exports in the governed operating model, not a separate preview app. Wiki follow-up should emphasize budgets, user-level spend limits, cost-center allocation, and durable usage evidence for agent adoption reviews.",
+      "suggested_local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Billing Preview app",
+        "GitHub billing settings",
+        "AI credits",
+        "cost centers",
+        "billing API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Billing Preview app"
+      ],
+      "local_practice_implication": "Record cost telemetry, budget caps, and exportable usage reports as required governance evidence for managed agent rollouts."
+    },
+    {
+      "title": "Upcoming deprecation of GitHub Spark on github.com",
+      "source_url": "https://github.blog/changelog/2026-08-04-upcoming-deprecation-of-github-spark-on-github-com/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "August 4, 2026",
+      "date_qualification": "Date-only August 4, 2026 is fully inside the collection window.",
+      "factual_summary": "GitHub Spark stopped accepting new users and new app creation on August 4, 2026. Existing users can access Spark until August 31, 2026 to export apps. Apps using the retired GitHub Models llm() function must move to another inference provider.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-generated application workflows need export paths, provider replacement plans, and dependency checks for managed inference calls. Local wiki follow-up should treat this as an application-pattern and governance note, not as a broad product page.",
+      "suggested_local_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Spark",
+        "GitHub Models",
+        "llm()",
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Spark",
+        "GitHub Models",
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "local_practice_implication": "For agent-built apps, keep generated source exportable and inventory managed inference calls so retirement or provider changes can be handled without losing maintainability."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Customize the reasoning level for Copilot cloud agent",
+      "source_url": "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "August 3, 2026",
+      "reason": "Excluded because August 3 is the cutoff date and no exact publication time was visible to prove it falls after 2026-08-03T00:32:17Z.",
+      "routing_note": "If later verified in-window, local implication belongs under agent workflows, verification, and governance as reasoning-depth and AI-credit control practice; product entities remain upstream-owned."
+    },
+    {
+      "title": "Enterprise team specialization for managed settings",
+      "source_url": "https://github.blog/changelog/2026-08-03-enterprise-team-specialization-for-managed-settings/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "August 3, 2026",
+      "reason": "Excluded because August 3 is the cutoff date and no exact publication time was visible to prove it falls after 2026-08-03T00:32:17Z.",
+      "routing_note": "If later verified in-window, local implication belongs under governance and adoption as team-specific managed-settings practice; GitHub and Copilot remain upstream-owned."
+    },
+    {
+      "title": "Trigger Copilot automations with comments",
+      "source_url": "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "August 3, 2026",
+      "reason": "Excluded because August 3 is the cutoff date and no exact publication time was visible to prove it falls after 2026-08-03T00:32:17Z.",
+      "routing_note": "If later verified in-window, local implication belongs under source workflows and agent workflows as comment-trigger governance and audit practice; Copilot remains upstream-owned."
+    },
+    {
+      "title": "Visual Studio Code 1.130",
+      "source_url": "https://code.visualstudio.com/updates/v1_130",
+      "publisher": "Microsoft",
+      "visible_date": "Release date: July 22, 2026",
+      "reason": "Excluded as stale outside the last-2-days window.",
+      "routing_note": "Contains relevant agent-host, assisted approval, worktree, and review workflow details for historical ingest, but not this collector window."
+    },
+    {
+      "title": "Manage approvals and permissions",
+      "source_url": "https://code.visualstudio.com/docs/agents/approvals",
+      "publisher": "Microsoft",
+      "visible_date": "Published: 3 weeks ago in search result; no in-window visible page date found in opened content.",
+      "reason": "Excluded as stale or insufficiently date-qualified for the collection window.",
+      "routing_note": "Relevant to governed permissions and approvals, but not a qualifying recent update."
+    },
+    {
+      "title": "Best practices for using AI in VS Code",
+      "source_url": "https://code.visualstudio.com/docs/agents/best-practices",
+      "publisher": "Microsoft",
+      "visible_date": "Published: 3 weeks ago in search result; no in-window visible page date found in opened content.",
+      "reason": "Excluded as stale or insufficiently date-qualified for the collection window.",
+      "routing_note": "Relevant to context engineering, planning, review, and verification practices, but not a qualifying recent update."
+    },
+    {
+      "title": "Changelog - Claude Code Docs",
+      "source_url": "https://code.claude.com/docs/en/changelog",
+      "publisher": "Anthropic",
+      "visible_date": "Search result surfaced older March 2026 entries.",
+      "reason": "Excluded as stale outside the last-2-days window.",
+      "routing_note": "Relevant entries around MCP elicitation, worktrees, and compaction are historical and upstream product-owned."
+    },
+    {
+      "title": "Claude Code Changelog",
+      "source_url": "https://claudelog.com/claude-code-changelog/",
+      "publisher": "ClaudeLog",
+      "visible_date": "Latest visible entry in search result: Jun 23, 2026",
+      "reason": "Excluded as stale outside the last-2-days window.",
+      "routing_note": "Contains practice-relevant notes on background subagents and MCP diagnostics, but not recent enough."
+    },
+    {
+      "title": "AI-Native Engineering Trainer job posting",
+      "source_url": "https://careers.washu.edu/jobs/node8-ai-native-engineering-trainer/",
+      "publisher": "Washington University in St. Louis career site",
+      "visible_date": "Recruitment began July 4, 2026; expires August 4, 2026",
+      "reason": "Excluded because the August 4 date is an expiration deadline, not a publication or update date.",
+      "routing_note": "The posting signals adoption practices such as specs, acceptance criteria, playbooks, permissions, and review, but event/deadline dates are not valid evidence for this collector."
+    },
+    {
+      "title": "UiPath AgentHack is live",
+      "source_url": "https://forum.uipath.com/t/uipath-agenthack-is-live-50-000-in-prizes-three-tracks-and-7-weeks-to-build/5746132",
+      "publisher": "UiPath Community Forum",
+      "visible_date": "Search result showed May 15, 2026 registration and August 4, 2026 winners announcement date.",
+      "reason": "Excluded because the visible August 4 date is an event milestone and the post was published two months earlier.",
+      "routing_note": "Hackathon details are upstream/event-owned and not a recent practice update."
+    },
+    {
+      "title": "CodeRabbit Documentation changelog",
+      "source_url": "https://docs.coderabbit.ai/changelog",
+      "publisher": "CodeRabbit",
+      "visible_date": "Search result showed May 7, 2026 and older entries.",
+      "reason": "Excluded as stale outside the last-2-days window.",
+      "routing_note": "Relevant to AI code review change-stack and MCP integration practice, but not recent enough."
+    },
+    {
+      "title": "Jules changelog",
+      "source_url": "https://jules.google/docs/changelog/",
+      "publisher": "Google",
+      "visible_date": "Search result showed Aug 04, 2025 and older 2026 entries.",
+      "reason": "Excluded as stale or wrong-year result for the collection window.",
+      "routing_note": "Coding-agent product changelog is upstream-owned unless a future in-window item has a local workflow implication."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not ingest this collector output directly into docs/wiki until a separate raw-source ingest pass decides which local practice leaves should change.",
+    "If a later source exposes exact times for the August 3 GitHub changelog entries, reconsider the three boundary-date exclusions.",
+    "Potential local synthesis themes: AI credit budget evidence, generated-app exportability, managed inference dependency inventory, and provider-retirement checks for agent-built applications.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was used in public web search queries."
+  ],
+  "collector_outcome": {
+    "qualifying_update_count": 2,
+    "excluded_candidate_count": 12,
+    "docs_wiki_updates": 0,
+    "raw_processed_updates": 0,
+    "blockers": []
+  }
+}
