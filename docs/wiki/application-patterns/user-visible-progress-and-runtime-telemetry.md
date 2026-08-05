@@ -39,6 +39,8 @@ The July 28 raw sources add IDE agent telemetry and adoption-reporting evidence.
 
 The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) adds audit and live-trace signals from autonomous workflow and testing surfaces. Runtime telemetry should expose queue-triggered starts, single-node traces, AI-processing input/output audit records, remote-control viewing state, and human supervision events when the agentic workflow can continue without a hand-authored path.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds IDE agent-window and trace-routing evidence. Long-running coding-agent surfaces should show session state, subagent model and elapsed time, active tool calls, PR update state, and review context alongside trace identifiers so users can decide whether to supervise, interrupt, or accept the work.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -65,6 +67,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Join per-user adoption reports with IDE telemetry, token budgets, MCP diagnostics, custom-agent routes, session forks, and todo/progress state when agent work can cross surfaces.
 - Keep token-limit changes, model enablement, MCP diagnostics, and telemetry export settings visible as runtime controls, not only developer preferences.
 - Show queue-triggered starts, live node traces, AI-processing audit records, remote-control viewing state, and human supervision events when an autonomous workflow or test run is active.
+- Show session state, subagent model, elapsed time, active tool calls, PR update state, and review context when IDE or agent-window workflows manage long-running coding tasks.
+- Keep trace identifiers and visible progress joined so a user can move from progress UI to audit or review evidence.
 
 ## Authoritative Sources
 
@@ -86,6 +90,7 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 
 ## Related Code
 
@@ -126,3 +131,4 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Maintained on 2026-07-25 with coding-agent observability joins across prompts, sessions, pull requests, standards checks, cost, quality, MCP, and production signals.
 - Maintained on 2026-07-28 with per-user adoption, IDE OpenTelemetry, token-limit, MCP diagnostic, custom-agent, session-fork, and todo/progress telemetry guidance.
 - Maintained on 2026-07-31 with queue-trigger, live-node trace, AI-processing audit, remote viewing, and human-supervision telemetry guidance.
+- Maintained on 2026-08-04 with IDE agent-window session state, subagent timing, active tool-call, PR update, and trace-linkage guidance.

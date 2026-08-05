@@ -51,6 +51,8 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 
 The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) adds a layered review-role signal from a vendor AI code review brief. The reusable role model lives in [layered AI code review roles](layered-ai-code-review-roles.md); this page keeps the implementation review rule that generated pull requests need role-scoped evidence before review claims are treated as coverage.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds exploitable-risk triage and generated-code security pressure. AI review findings should be ranked by verified risk, checked against deterministic scanners or tests where possible, and kept under human security judgment so finding volume or fluent reasoning does not become automatic approval.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -101,6 +103,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Declare repository access, action permissions, review target, source evidence, and output contract before running AI code review automation.
 - Separate AI-review comments into actionable source-backed findings instead of broad tool assessments or unexplained confidence claims.
 - Route role separation for AI review through [layered AI code review roles](layered-ai-code-review-roles.md) when review findings imply different owners or gates.
+- Rank AI security-review findings by verified exploitable risk, deterministic evidence, remediation path, and human security judgment rather than raw finding count.
+- Treat AI reasoning in review as one input beside scanners, tests, repository context, and reviewer ownership.
 
 ## Authoritative Sources
 
@@ -135,6 +139,7 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 
 ## Related Code
 
@@ -183,3 +188,4 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 - Maintained on 2026-07-22 with review-intent trails, standards-check separation, generated-code provenance, and security-review gate evidence.
 - Maintained on 2026-07-24 with AI-review setup, permissions, scope, evidence, output-contract, and actionable-finding guidance.
 - Maintained on 2026-07-27 with layered authoring, architecture, and security review-role guidance for AI-authored pull requests.
+- Maintained on 2026-08-04 with exploitable-risk triage, deterministic evidence, and human security judgment for AI review findings.

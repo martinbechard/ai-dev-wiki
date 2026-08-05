@@ -19,6 +19,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json) and [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) add review-packaging evidence. CI repair agents should preserve the failed check, investigation path, patch scope, created repair branch or PR, and human review request; AI code review automation should leave source-backed comments and setup evidence rather than turning reviewer labor into unstructured cleanup.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds comment-triggered follow-up packaging evidence. When issue or pull-request comments launch documentation updates, error investigations, or follow-up issue creation, the fix package should preserve the trigger text, initiating comment, generated branch or issue identity, investigation notes, and review handoff so the automation remains auditable.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -31,6 +33,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Preserve agent-authorship, violation attribution, and human repair ownership in PR notes when agent-generated commits are part of the fix.
 - Preserve failed-check evidence, investigation notes, generated repair branch or PR identity, and review-request state for agent-assisted CI fixes.
 - Package AI-review findings with source locations, reproduction or setup evidence, and suggested checks so the human reviewer is not left to rediscover the whole issue.
+- Preserve comment trigger text, initiating issue or pull-request context, generated branch or issue identity, and review handoff for comment-triggered agent follow-ups.
 
 ## Authoritative Sources
 
@@ -42,6 +45,7 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 
 ## Related Code
 
@@ -71,3 +75,4 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 - Maintained on 2026-06-29 with review-path packaging for agent-assisted production changes.
 - Maintained on 2026-07-07 with agent-authorship, violation-attribution, and human repair ownership packaging.
 - Maintained on 2026-07-24 with failed-check repair handoff and source-backed AI-review packaging guidance.
+- Maintained on 2026-08-04 with comment-triggered automation packaging for generated branches, follow-up issues, investigation notes, and review handoffs.

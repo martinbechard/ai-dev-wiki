@@ -25,6 +25,8 @@ The [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-w
 
 The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json) adds behavior-inventory and TDD reinforcement. Refactoring generated code should start by preserving what the application currently does, turning that behavior inventory into regression checks where possible, then pruning bloat under lint, CI, instruction-file, and human-review guardrails. The goal is maintainable behavior-preserving code, not a raw line-count reduction.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds performance-sensitive systems-code evidence. Generated low-level, accelerator, compiler-adjacent, or infrastructure code remains a draft until architecture fit, optimization evidence, portability assumptions, and regression tests prove it works under the intended workload.
+
 ## Practice Boundaries
 
 - Refactor generated code toward the repository's existing patterns before treating it as finished.
@@ -42,6 +44,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Treat undisclosed or unowned generated code as not review-ready when project policy requires contributor accountability.
 - Build or confirm a behavior inventory before deleting generated code at scale.
 - Use regression checks, lint, CI, instruction files, and human review as guardrails when trimming generated-code bloat.
+- Require architecture, workload, optimization, portability, and regression evidence before accepting generated systems or performance-sensitive infrastructure code.
 
 ## Authoritative Sources
 
@@ -51,6 +54,7 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -87,3 +91,4 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 - Maintained on 2026-06-29 with governance, review-capacity, provenance, and maintainability risks for generated code at scale.
 - Maintained on 2026-07-07 with contributor-accountability, authorship, and repair-ownership requirements for generated code.
 - Maintained on 2026-07-11 with behavior inventory, regression-check, CI, lint, and human-review guardrails for generated-code cleanup.
+- Maintained on 2026-08-04 with generated systems-code architecture, optimization, portability, and regression evidence requirements.

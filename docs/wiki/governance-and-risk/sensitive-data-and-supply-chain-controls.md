@@ -53,6 +53,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 
 The July 28 raw sources add malware-advisory and agent-configuration supply-chain evidence. The [topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) treats malware-specific package alerts as distinct from CVE-style vulnerability alerts, while the [leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) reinforces that MCP registrations, dependency trees, CI workflows, and agent configuration files are persistent instruction and execution surfaces. Local dependency gates should review malware advisory type, registry provenance, lockfile impact, and generated install intent before accepting agent-authored package changes.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds open-source package compromise and AI-generated deception evidence. Reports of malicious packages using convincing generated code, documentation, maintainer identities, slopsquatting, and hidden prompt instructions reinforce that automated reviewers and coding agents need registry verification, maintainer provenance checks, package-name scrutiny, and AI-review-resistant inspection before installs or dependency edits are accepted. The same source reinforces that AI security findings should be prioritized by exploitable risk and checked with deterministic scanning plus human context before remediation is treated as approved.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -98,6 +100,8 @@ The July 28 raw sources add malware-advisory and agent-configuration supply-chai
 - Extend AI-assisted development supply-chain controls to agent workstations, IDE extensions, package registries, CI/CD egress, pull requests, default branches, and fleet-wide incident checks.
 - Separate malware-specific dependency alerts from ordinary vulnerability alerts when reviewing agent-authored install, update, or lockfile changes.
 - Treat MCP registrations, CI workflows, and agent configuration files as persistent supply-chain inputs that need provenance, integrity monitoring, scoped credentials, and review before agent use.
+- Treat generated package documentation, maintainer personas, and hidden prompt instructions as possible supply-chain deception when agents or AI reviewers inspect dependencies.
+- Combine deterministic scanning, exploitable-risk triage, and human security context before accepting AI-produced dependency or vulnerability remediation.
 
 ## Authoritative Sources
 
@@ -106,6 +110,7 @@ The July 28 raw sources add malware-advisory and agent-configuration supply-chai
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -186,3 +191,4 @@ The July 28 raw sources add malware-advisory and agent-configuration supply-chai
 - Maintained on 2026-07-16 with secret-scanning routing fields and runner-neutral egress controls for generated build and deployment workflows.
 - Maintained on 2026-07-17 with public skill registry, imported instruction bundle, generated skill, tool-scope, and poisoned registry supply-chain controls.
 - Maintained on 2026-07-22 with HalluSquatting resolution, private-inference review, AIBOM provenance, untrusted-content, sandbox, monitoring, and kill-switch controls.
+- Maintained on 2026-08-04 with AI-generated supply-chain deception, package-name scrutiny, maintainer provenance, and exploitable-risk remediation controls.

@@ -53,6 +53,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The July 31 raw sources add budget, benchmark, model-policy, and runtime-placement signals. The [leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) records spend wallets, tokenmaxxing cautions, PR-state differences, sponsored local-infrastructure positioning, and embedded senior execution capacity. The [topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) records model-policy toggles and autonomous testing controls. Locally, these are workflow-selection inputs, not product defaults: the team should choose the supervision surface, budget envelope, runtime placement, and acceptance evidence before selecting model routes, autonomous test execution, or local-versus-cloud infrastructure.
 
+The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json) adds generated-app retirement and inference-provider replacement signals. Agent-built application workflows should define exportability, source ownership, managed inference inventories, provider replacement paths, and deprecation review before selecting a builder surface or hosted inference route. Product lifecycle details stay upstream; locally, the workflow needs a survivable source and dependency plan before generated apps become team assets.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -92,6 +94,8 @@ The July 31 raw sources add budget, benchmark, model-policy, and runtime-placeme
 - Review permission prompts, network exposure, generated instruction setup, model-router policy, cost transparency, and auditability before adopting open-source, commercial, or voice-steered tools.
 - Use budget envelopes, PR-state normalization, runtime-placement constraints, model-policy toggles, and human-supervised test controls as workflow requirements before comparing model or agent products.
 - Treat embedded senior execution capacity as a workflow shape when production AI systems need domain ownership, customer-context translation, and launch accountability.
+- Require generated-app export paths, source ownership, managed inference inventories, and provider replacement plans before adopting a builder surface for durable work.
+- Treat product or inference-provider deprecation as a workflow-selection input, not only a procurement or vendor-news issue.
 
 ## Authoritative Sources
 
@@ -127,6 +131,7 @@ The July 31 raw sources add budget, benchmark, model-policy, and runtime-placeme
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
+- [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 
 ## Related Code
 
@@ -176,3 +181,4 @@ The July 31 raw sources add budget, benchmark, model-policy, and runtime-placeme
 - Maintained on 2026-07-22 with model rollout-control, reasoning-effort, parallel tool-use, architecture, and observability selection signals.
 - Maintained on 2026-07-26 with supervision-surface, permission, network-exposure, model-routing, voice-steering, and auditability selection criteria.
 - Maintained on 2026-07-31 with budget-envelope, PR-state normalization, runtime-placement, model-policy, autonomous-testing, and embedded execution-capacity workflow inputs.
+- Maintained on 2026-08-04 with generated-app exportability, managed-inference inventory, and provider-replacement workflow inputs.

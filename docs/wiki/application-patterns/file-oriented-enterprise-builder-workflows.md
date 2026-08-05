@@ -13,6 +13,8 @@ File-oriented enterprise builder workflows expose low-code or enterprise app art
 
 The practice is to keep generated or assisted artifacts in files that can be diffed, validated locally, reviewed through Git, and published through controlled steps. This keeps low-code and enterprise agent-platform changes inside the same source, test, review, and release discipline as code.
 
+The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json) adds an exportability signal from an upstream-owned generated-app product retirement. The local pattern is broader than that product: AI-built apps should have source export, dependency inventory, managed inference-call inventory, and replacement-provider notes before the builder surface becomes a durable delivery path.
+
 ## Practice Boundaries
 
 - Prefer file-backed artifacts when enterprise builder changes need review, tests, or release evidence.
@@ -20,6 +22,8 @@ The practice is to keep generated or assisted artifacts in files that can be dif
 - Keep Git diffs, generated files, validation results, and publish steps visible in the handoff.
 - Treat AI-generated builder changes as untrusted implementation drafts until source review and validation pass.
 - Route product-specific builder details upstream unless they change local source-control, validation, or release practice.
+- Require exportable source and dependency inventories for generated apps so product retirement does not strand review, maintenance, or provider migration.
+- Inventory managed inference calls separately from generated source files because provider replacement can be a runtime dependency, not only a code change.
 
 ## Authoritative Sources
 
@@ -27,6 +31,7 @@ The practice is to keep generated or assisted artifacts in files that can be dif
 - [Oracle AI Agent Studio CLI source](https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm)
 - [Oracle APEXlang validation source](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html)
 - [Oracle APEXlang Visual Studio Code source](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html)
+- [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
@@ -57,3 +62,4 @@ The practice is to keep generated or assisted artifacts in files that can be dif
 ## Maintenance Notes
 
 - Created on 2026-07-27 from July 27 raw-source evidence about enterprise builder artifacts, local validation, Git review, and publish workflows.
+- Maintained on 2026-08-04 with generated-app exportability, dependency inventory, managed inference-call inventory, and provider migration guidance.

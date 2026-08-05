@@ -15,6 +15,8 @@ The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-d
 
 The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds outcome-eval framing that applies to optimization work. Capability evals should prove an optimization agent can find and measure improvements, while regression evals should prove the accepted workflow still preserves correctness, deployment readiness, and environment-specific behavior after the change.
 
+The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds first-party trace and reasoning-depth evidence. Performance and optimization gates should preserve local workload traces, product-specific success criteria, model or reasoning settings, token and credit use, and task complexity so teams can decide whether a higher-effort run improved the accepted outcome enough to justify the cost.
+
 This page owns performance-specific acceptance. [Trajectory-level agent evaluation](trajectory-level-agent-evaluation.md) owns trace, harness, and environment evidence; [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md) owns delivery-level acceptance; and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions about experiments and applying changes.
 
 ## Practice Boundaries
@@ -27,12 +29,15 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Compare repeated measurements enough to distinguish real improvement from noise, warm-cache effects, or environment drift.
 - Keep rollback rules and human approval tied to the measured change, not to a broad grant for performance-agent autonomy.
 - Separate capability evals for finding optimization opportunities from regression evals that prove the deployed workflow remains correct in its target environment.
+- Preserve first-party workload traces and product-specific success criteria when optimizing agent-assisted workflows.
+- Record model route, reasoning depth, task complexity, token use, and credit cost when comparing optimization quality or performance outcomes.
 
 ## Authoritative Sources
 
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
@@ -64,3 +69,4 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 - Created on 2026-07-17 from public raw artifacts about build-performance agents, profiling workflows, baseline selection, incremental-build measurement, rollback rules, and approval gates.
 - Maintained on 2026-07-28 with capability-versus-regression eval boundaries for optimization agents and deployment-specific outcome checks.
+- Maintained on 2026-08-04 with first-party trace, task-complexity, reasoning-depth, token-cost, and product-specific success criteria.
