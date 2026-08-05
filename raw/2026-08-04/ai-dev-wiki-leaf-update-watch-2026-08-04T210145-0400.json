@@ -1,0 +1,401 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 15,
+    "qualifying_update_count": 10,
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 34
+  },
+  "cutoff_window": {
+    "end": "2026-08-05T01:01:45Z",
+    "rule": "Only include sources published or visibly updated within the last 7 days relative to run time; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start": "2026-07-29T01:01:45Z"
+  },
+  "excluded_candidates": [
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "reason": "Outside strict 7-day window or missing exact visible date; useful background only.",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": "Published 3 weeks ago in search result; no exact date on opened page"
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+      "reason": "Missing qualifying visible date.",
+      "source_url": "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "visible_date": "No in-window visible date found in this run"
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://www.makemyprd.com/guides/how-to-write-a-prd-for-ai-coding-tools",
+      "visible_date": "Updated May 15, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "visible_date": "March 10, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "reason": "Month-only date is boundary-ambiguous for the 7-day window.",
+      "source_url": "https://aclanthology.org/2026.findings-acl.1960/",
+      "visible_date": "July 2026 only"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "reason": "Missing qualifying visible date.",
+      "source_url": "https://modelcontextprotocol.io/docs/develop/clients/client-best-practices",
+      "visible_date": "No in-window visible update date found"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://dynamicmcp.tools/",
+      "visible_date": "Last updated May 25, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://code.visualstudio.com/docs/agents/security",
+      "visible_date": "Published 3 weeks ago in search result"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://www.agentpatternscatalog.org/patterns/structured-output/",
+      "visible_date": "Last updated May 21, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://agentspan.ai/glossary/structured-output/",
+      "visible_date": "Updated July 6, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/ai-assisted-tdd.md",
+      "reason": "Outside strict 7-day window or missing exact visible date.",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
+      "visible_date": "Published 3 weeks ago in search result; no exact date on opened page"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "reason": "Missing qualifying visible date.",
+      "source_url": "https://docs.github.com/en/copilot/concepts/agents/about-third-party-coding-agents",
+      "visible_date": "No visible publication or update date on opened page"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "reason": "Outside strict 7-day window.",
+      "source_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+      "visible_date": "July 17, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+      "reason": "Before cutoff 2026-07-29T01:01:45Z.",
+      "source_url": "https://hugobowne.substack.com/p/how-to-build-an-effective-agent-harness",
+      "visible_date": "July 28, 2026"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "reason": "Broad consumer/company agent strategy is upstream-owned ecosystem context, not a durable local practice update for this selected leaf.",
+      "source_url": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents",
+      "visible_date": "Published 6 days ago in search result"
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity background is upstream-owned by the AI wiki; this artifact records only local practice implications for selected downstream leaves.",
+  "follow_up_notes": [
+    "Review qualifying updates during normal raw ingest before editing docs/wiki pages.",
+    "Route broad product, company, model, framework, and tool background to the upstream AI wiki.",
+    "Keep scanner output raw-only; docs/wiki pages were not updated by this watch."
+  ],
+  "leaf_universe_count": 82,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Amazon linked compromises of popular npm packages including axios, debug, chalk, and typo-crypto to a North Korean threat actor; the report says generative AI enables convincing malicious code, documentation, fabricated maintainer identities, slopsquatting, and hidden prompt instructions aimed at automated reviewers.",
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "named_entities": [
+        "Amazon Threat Intelligence",
+        "Amazon Inspector",
+        "SAPPHIRE SLEET",
+        "BlueNoroff",
+        "STARDUST CHOLLIMA",
+        "axios",
+        "debug",
+        "chalk",
+        "typo-crypto",
+        "Linux Foundation Akrites"
+      ],
+      "source_url": "https://www.techradar.com/pro/security/amazon-flags-a-north-korean-hacker-group-as-being-behind-the-surge-in-open-source-supply-chain-attacks",
+      "upstream_owned_entities": [
+        "Amazon",
+        "North Korean threat actors",
+        "npm packages",
+        "Linux Foundation Akrites"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Strengthens the local practice that coding-agent workflows need dependency pinning, package-name scrutiny, source trust review, and AI-review-resistant supply-chain controls before agents install or approve code."
+    },
+    {
+      "factual_summary": "A Checkmarx-focused interview reports that AI-assisted development increases code volume and vulnerability triage pressure; it argues security should move earlier, prioritize exploitable risk, combine deterministic scanning with AI reasoning, and keep human oversight for confidence and context.",
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "named_entities": [
+        "Checkmarx",
+        "Sandeep Johri",
+        "Anthropic Mythos",
+        "Claude Code",
+        "Gartner"
+      ],
+      "source_url": "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+      "upstream_owned_entities": [
+        "Checkmarx",
+        "Anthropic",
+        "Claude Code",
+        "Gartner"
+      ],
+      "visible_published_or_updated_at": "2026-07-30",
+      "why_it_matters_for_leaf": "Supports local controls that treat AI-generated code and AI security findings as inputs to governed remediation, not automatic approval signals."
+    },
+    {
+      "factual_summary": "The article argues that AI evaluation is shifting from outsourced, turn-level benchmarks toward first-party feedback loops using live traces, user behavior, institutional knowledge, and trajectory-level signals.",
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "named_entities": [
+        "Kaon AI",
+        "LangSmith",
+        "Arize",
+        "Weights & Biases"
+      ],
+      "source_url": "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals",
+      "upstream_owned_entities": [
+        "Kaon AI",
+        "LangSmith",
+        "Arize",
+        "Weights & Biases"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Reinforces that local performance gates for agent-assisted optimization should preserve first-party workload traces and product-specific success criteria, not rely only on generic benchmark deltas."
+    },
+    {
+      "factual_summary": "GitHub added a per-run reasoning-level selector for Copilot cloud agent tasks; higher reasoning can improve complex-task answers but consumes more tokens and credits.",
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "named_entities": [
+        "GitHub Copilot cloud agent"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Adds a concrete public example of optimization gates needing to track quality, task complexity, token cost, and model/reasoning settings together."
+    },
+    {
+      "factual_summary": "Copilot cloud agent now exposes reasoning level as a task-start parameter for supported models, trading more reasoning for higher token and credit use.",
+      "leaf_id": "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+      "named_entities": [
+        "GitHub Copilot cloud agent"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Concrete signal that harness sizing should include adjustable reasoning depth as a runtime control matched to workflow complexity and budget."
+    },
+    {
+      "factual_summary": "GitHub added Copilot cloud agent automations that trigger from issue or pull-request comments for workflows such as documentation generation, error investigation, and follow-up issue creation.",
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "named_entities": [
+        "GitHub Copilot cloud agent",
+        "GitHub Copilot automations"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Shows a public implementation of event-triggered declarative workflow artifacts where trigger text, repository location, and automation intent need reviewable boundaries."
+    },
+    {
+      "factual_summary": "Copilot automations can now run from issue and pull-request comments and create documentation changes, investigate errors, or create follow-up work items based on configured trigger text.",
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "named_entities": [
+        "GitHub Copilot automations"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-08-03",
+      "why_it_matters_for_leaf": "Adds a current public pattern for PR packaging where comments can trigger follow-up work; local practice should keep trigger phrases explicit and ensure generated follow-ups remain reviewable."
+    },
+    {
+      "factual_summary": "The July VS Code Copilot release notes describe Agents window improvements: faster review workflows, code reviewed alongside chat, worktrees for Copilot/Claude/Codex sessions, subagent status with model/elapsed/tool-call details, and PR update handling from chat.",
+      "leaf_id": "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Claude",
+        "Codex"
+      ],
+      "source_url": "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/",
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Claude",
+        "Codex"
+      ],
+      "visible_published_or_updated_at": "2026-07-30",
+      "why_it_matters_for_leaf": "Supports local runtime telemetry guidance: users need visible session state, subagent activity, active tool calls, and PR/CI signals during long-running agent work."
+    },
+    {
+      "factual_summary": "Business Insider reports that AI coding agents are being used to create CUDA-like systems software quickly, while experts caution that generated systems code still faces verification and optimization bottlenecks.",
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "named_entities": [
+        "Nvidia",
+        "CUDA",
+        "Infinity",
+        "D-Matrix",
+        "Google",
+        "Amazon",
+        "Microsoft",
+        "OpenAI",
+        "Anthropic",
+        "DeepSeek",
+        "TileLang",
+        "Modular",
+        "INT21"
+      ],
+      "source_url": "https://www.businessinsider.com/nvidia-cuda-new-threats-ai-coding-agents-2026-8",
+      "upstream_owned_entities": [
+        "Nvidia",
+        "CUDA",
+        "OpenAI",
+        "Anthropic",
+        "DeepSeek",
+        "TileLang",
+        "Modular",
+        "INT21"
+      ],
+      "visible_published_or_updated_at": "2026-08-03T09:00:02.461Z",
+      "why_it_matters_for_leaf": "Reinforces the local rule that generated code, especially performance-sensitive infrastructure code, remains a draft until verified against architecture, tests, and optimization evidence."
+    },
+    {
+      "factual_summary": "The Checkmarx interview says AI-generated software increases vulnerability volume, false positives, and automation-bias risk; it recommends combining deterministic tools, AI reasoning, and human security expertise.",
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "named_entities": [
+        "Checkmarx",
+        "Sandeep Johri",
+        "Anthropic Mythos",
+        "Claude Code",
+        "Gartner"
+      ],
+      "source_url": "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+      "upstream_owned_entities": [
+        "Checkmarx",
+        "Anthropic",
+        "Claude Code",
+        "Gartner"
+      ],
+      "visible_published_or_updated_at": "2026-07-30",
+      "why_it_matters_for_leaf": "Supports intelligent-review guidance that AI reviewer findings should be ranked by verified risk and checked with deterministic security controls rather than treated as raw comment volume."
+    }
+  ],
+  "run_timestamp": "2026-08-04T21:01:45-04:00",
+  "run_timestamp_utc": "2026-08-05T01:01:45Z",
+  "selected_leaf_ids": [
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md"
+  ],
+  "source_urls_checked": {
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": [
+      "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments",
+      "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative"
+    ],
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": [
+      "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent",
+      "https://hugobowne.substack.com/p/how-to-build-an-effective-agent-harness"
+    ],
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": [
+      "https://www.agentpatternscatalog.org/patterns/structured-output/",
+      "https://agentspan.ai/glossary/structured-output/"
+    ],
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": [
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/",
+      "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments",
+      "https://docs.github.com/en/copilot/concepts/agents/about-third-party-coding-agents"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://www.businessinsider.com/nvidia-cuda-new-threats-ai-coding-agents-2026-8",
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/",
+      "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://www.techradar.com/pro/security/amazon-flags-a-north-korean-hacker-group-as-being-behind-the-surge-in-open-source-supply-chain-attacks",
+      "https://www.techradar.com/pro/security/identifying-vulnerabilities-is-no-longer-enough-companies-need-to-focus-on-fixing-exploitable-vulnerabilities-not-discovering-as-many-as-possible-says-checkmarx-ceo",
+      "https://code.visualstudio.com/docs/agents/security",
+      "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.html"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "https://www.makemyprd.com/guides/how-to-write-a-prd-for-ai-coding-tools"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/",
+      "https://openai.com/index/instruction-hierarchy-challenge/",
+      "https://aclanthology.org/2026.findings-acl.1960/"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://modelcontextprotocol.io/docs/develop/clients/client-best-practices",
+      "https://dynamicmcp.tools/"
+    ],
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md": [
+      "https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/",
+      "https://code.visualstudio.com/docs/agents/security"
+    ],
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": [
+      "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals",
+      "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent",
+      "https://www.businessinsider.com/nvidia-cuda-new-threats-ai-coding-agents-2026-8"
+    ]
+  }
+}
