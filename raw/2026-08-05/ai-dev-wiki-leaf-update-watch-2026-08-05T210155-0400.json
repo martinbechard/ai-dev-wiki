@@ -1,0 +1,314 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 8,
+    "qualifying_update_count": 3,
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 10
+  },
+  "cutoff_window": {
+    "duration_days": 7,
+    "end_utc": "2026-08-06T01:01:55Z",
+    "start_utc": "2026-07-30T01:01:55Z"
+  },
+  "excluded_candidates": [
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "reason": "boundary-only date",
+      "source_title": "Why AI pilots fail when the technology works",
+      "source_url": "https://www.itpro.com/technology/artificial-intelligence/why-ai-pilots-fail-when-the-technology-works",
+      "visible_date": "Published 30 July 2026 without visible time; the UTC cutoff is 2026-07-30T01:01:55Z, so a date-only July 30 source cannot be safely confirmed inside the window."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "reason": "stale",
+      "source_title": "Discover Agent Skills from MCP servers in .NET",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "visible_date": "July 28th, 2026, before cutoff 2026-07-30T01:01:55Z."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "reason": "stale or ambiguous update date",
+      "source_title": "Add context to chat / Manage context for AI",
+      "source_url": "https://code.visualstudio.com/docs/chat/copilot-chat-context",
+      "visible_date": "Search result showed Published 3 weeks ago; opened page exposed no qualifying visible update date inside the window."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md"
+      ],
+      "reason": "stale",
+      "source_title": "The 2026-07-28 Specification",
+      "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "visible_date": "URL and page title identify 2026-07-28, before cutoff 2026-07-30T01:01:55Z."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "reason": "missing visible date",
+      "source_title": "2026 Agentic Coding Trends Report",
+      "source_url": "https://resources.anthropic.com/2026-agentic-coding-trends-report",
+      "visible_date": "Opened page exposed no publication or update date; crawl recency is not source publication evidence."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "reason": "future-dated event",
+      "source_title": "Architecting Context-Aware Agents with the Microsoft IQ Stack",
+      "source_url": "https://reactor.microsoft.com/en-us/reactor/events/27386/",
+      "visible_date": "Event time is 2026-08-06T16:00:00Z, after the 2026-08-06T01:01:55Z run time."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "reason": "stale",
+      "source_title": "Agent instructions",
+      "source_url": "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html",
+      "visible_date": "Search result showed 22 July 2026 / published 2 weeks ago, before cutoff."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "reason": "stale",
+      "source_title": "TREC RAG 2026",
+      "source_url": "https://trec-rag.github.io/",
+      "visible_date": "Latest visible dated item was July 6, 2026 test topics, before cutoff."
+    }
+  ],
+  "federation_routing": {
+    "local_scope": "AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owned_entities": [
+      "Amazon",
+      "Anthropic",
+      "Claude Code",
+      "Codex",
+      "GitHub Copilot",
+      "Goldman Sachs",
+      "Meta",
+      "Microsoft Agent Framework",
+      "Model Context Protocol",
+      "Muse Code",
+      "Muse Spark",
+      "OpenAI",
+      "Pegasystems",
+      "Uber"
+    ],
+    "upstream_scope": "Broad AI ecosystem entities, products, model families, companies, frameworks, MCP servers, and reusable background route to upstream AI wiki."
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; hand this raw artifact to the normal ingest workflow if synthesis is desired.",
+    "Prioritize downstream practice implications around governed coding harnesses, token-cost controls, instruction distribution, and procurement/privacy approval boundaries."
+  ],
+  "leaf_universe_count": 82,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Microsoft announced stable .NET and Python GitHub Copilot Agent integration for Microsoft Agent Framework. The integration exposes a coding harness with repository-aware file operations, shell execution, URL fetching, MCP servers, session reuse, instruction directories, approval handlers, approval-required function tools, and OpenTelemetry tracing.",
+      "follow_up_note": "Ingest should extract only the downstream practice pattern: production coding harnesses need permission gates, observable tool execution, scoped MCP wiring, project guideline loading, and resumable state.",
+      "id": "microsoft-agent-framework-copilot-harness-2026-08-04",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "GitHub Copilot Agent",
+        "GitHub Copilot CLI",
+        "GitHub Copilot SDK",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "published_or_updated_at": "2026-08-04",
+      "publisher": "Microsoft Agent Framework Blog",
+      "source_title": "Build Production-Ready Agents with the GitHub Copilot Harness and Agent Framework",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Microsoft Agent Framework",
+        "Model Context Protocol"
+      ],
+      "visible_date_basis": "Article header shows August 4th, 2026.",
+      "why_it_matters_for_leaf": "Local practice leaves should watch the convergence of coding-agent harnesses with explicit permission handlers, observability, MCP integration, reusable instruction directories, and resumable session state because these are durable implementation patterns rather than product-only trivia."
+    },
+    {
+      "factual_summary": "The article frames agentic AI cost growth as a token-tax problem: repeated runtime reasoning, tool selection, retrieval, and context carry-forward can increase total tokens even as per-token prices fall. It argues for using agents at design time for exploration and routing repeatable execution through deterministic workflows or lighter-weight models.",
+      "follow_up_note": "Ingest should treat this as economics and context-architecture evidence, not broad enterprise-AI market coverage.",
+      "id": "techradar-token-tax-enterprise-ai-2026-07-31",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "named_entities": [
+        "TechRadar Pro",
+        "Pegasystems",
+        "Uber",
+        "Amazon",
+        "Goldman Sachs Research"
+      ],
+      "published_or_updated_at": "2026-07-31",
+      "publisher": "TechRadar Pro",
+      "source_title": "Beyond Tokenmaxxing: the rising token tax on enterprise AI",
+      "source_url": "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai",
+      "upstream_owned_entities": [
+        "Pegasystems",
+        "Uber",
+        "Amazon",
+        "Goldman Sachs"
+      ],
+      "visible_date_basis": "Article header shows Published 31 July 2026.",
+      "why_it_matters_for_leaf": "This is a local operating-model implication for agent economics: durable context, compiled memory, and workflow reuse are cost controls when repeatable tasks would otherwise be re-reasoned on every run."
+    },
+    {
+      "factual_summary": "Business Insider reported Meta Muse Code beta pricing, including standard token prices and a discounted contributor tier where user activity can be used to improve Meta products. The article contrasts token-priced coding agents with subscription-bundled Claude Code and Codex offerings.",
+      "follow_up_note": "Route product background upstream; keep only local procurement, privacy, and approval-boundary implications here.",
+      "id": "businessinsider-meta-muse-code-pricing-2026-08-05",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Meta",
+        "Muse Code",
+        "Muse Spark 1.2",
+        "Anthropic Claude Code",
+        "OpenAI Codex"
+      ],
+      "published_or_updated_at": "2026-08-05T21:31:45.090Z",
+      "publisher": "Business Insider",
+      "source_title": "Meta to take on Anthropic\u2019s Claude and OpenAI\u2019s Codex with new coding agent",
+      "source_url": "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8",
+      "upstream_owned_entities": [
+        "Meta",
+        "Muse Code",
+        "Muse Spark",
+        "Anthropic",
+        "Claude Code",
+        "OpenAI",
+        "Codex"
+      ],
+      "visible_date_basis": "Article metadata shows 2026-08-05T21:31:45.090Z.",
+      "why_it_matters_for_leaf": "For local practice, the durable implication is that coding-agent procurement and approval boundaries need to account for pricing model, cached-token pricing, and data-use terms before proprietary repositories or company code are exposed."
+    }
+  ],
+  "run_timestamp_local": "2026-08-05T21:01:55-04:00",
+  "run_timestamp_utc": "2026-08-06T01:01:55Z",
+  "selected_leaf_ids": [
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, tie-broken by stable relative path sort.",
+  "source_urls_checked": [
+    "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+    "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai",
+    "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8",
+    "https://www.itpro.com/technology/artificial-intelligence/why-ai-pilots-fail-when-the-technology-works",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://code.visualstudio.com/docs/chat/copilot-chat-context",
+    "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+    "https://resources.anthropic.com/2026-agentic-coding-trends-report",
+    "https://reactor.microsoft.com/en-us/reactor/events/27386/",
+    "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": [
+      "https://www.itpro.com/technology/artificial-intelligence/why-ai-pilots-fail-when-the-technology-works",
+      "https://resources.anthropic.com/2026-agentic-coding-trends-report"
+    ],
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": [
+      "https://www.itpro.com/technology/artificial-intelligence/why-ai-pilots-fail-when-the-technology-works"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8",
+      "https://resources.anthropic.com/2026-agentic-coding-trends-report"
+    ],
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai",
+      "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://www.itpro.com/technology/artificial-intelligence/why-ai-pilots-fail-when-the-technology-works"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://reactor.microsoft.com/en-us/reactor/events/27386/"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai",
+      "https://code.visualstudio.com/docs/chat/copilot-chat-context"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "https://www.techradar.com/pro/beyond-tokenmaxxing-the-rising-token-tax-on-enterprise-ai",
+      "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8"
+    ],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "https://www.jetbrains.com/help/ai-assistant/configure-agent-behavior.html"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://trec-rag.github.io/"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://devblogs.microsoft.com/agent-framework/build-production-ready-agents-with-the-github-copilot-harness-and-agent-framework/",
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+    ]
+  }
+}
