@@ -1,0 +1,219 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-06T00:30:56Z",
+  "cutoff_window": {
+    "timezone": "UTC",
+    "start_inclusive": "2026-08-04T00:30:56Z",
+    "end_exclusive": "2026-08-06T00:30:56Z",
+    "rule": "Only include public sources with a visible publication or update date inside the 48-hour run window. Exclude missing, ambiguous, future-dated, date-only boundary, and event-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, source workflows, prompt and instruction structure, agent workflows, coding practices, retrieval/tool use, verification/evals, application patterns, governance/risk, and adoption/operating model.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad AI ecosystem entities, including companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "collector_rule": "When a source primarily updates an upstream-owned entity, record the entity as upstream-owned and keep only the downstream practice implication or routing note."
+  },
+  "search_queries": [
+    "AI-assisted development practice code review agent workflow August 5 2026",
+    "context engineering coding agents durable instructions August 5 2026",
+    "MCP governance approvals audit logs coding agents August 5 2026",
+    "AI software engineering evals coding agents August 5 2026",
+    "site:github.blog/changelog AI coding agent August 5 2026",
+    "site:code.visualstudio.com/updates agent mode August 2026 VS Code",
+    "site:aws.amazon.com/blogs/devops AI coding agent August 2026 code review",
+    "site:developers.googleblog.com coding agent August 2026",
+    "\"August 5, 2026\" \"coding agent\"",
+    "\"Aug 5, 2026\" \"AI code review\"",
+    "\"August 4, 2026\" \"context engineering\" \"AI\" \"code\"",
+    "\"August 5, 2026\" \"MCP\" \"agent\" \"approval\"",
+    "\"Aug 4, 2026\" \"coding agent\" \"review\"",
+    "\"Aug 4, 2026\" \"AI-assisted coding\"",
+    "\"Aug 5, 2026\" \"agentic software development\"",
+    "\"Aug 5, 2026\" \"structured outputs\" \"agents\"",
+    "\"AI-generated code\" \"Aug 5, 2026\" developer workflow",
+    "\"AI coding\" \"Aug 5, 2026\" \"privacy\" \"code\"",
+    "\"agent\" \"code review\" \"Aug 5, 2026\" \"workflow\" -event",
+    "\"AI-assisted\" \"test management\" \"August 5, 2026\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Reviewing AI-Generated Code with Difftastic",
+      "source_url": "https://blog.openreplay.com/review-ai-generated-code-difftastic/",
+      "publisher": "OpenReplay",
+      "visible_date": "Aug 5, 2026",
+      "visible_date_basis": "Article page byline shows Aug 5, 2026.",
+      "summary": "OpenReplay published a workflow for reviewing AI-generated commits with Difftastic, using AST-based diffs to suppress formatting churn and reveal behavior-changing edits. The article recommends targeting exact agent commits with git external diff output and using difft --check-only --exit-code as a pre-merge or CI gate for distinguishing semantic changes from pure reformatting.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-generated branches often mix formatting churn with real logic edits. Structural diff review is a concrete coding-practice and source-workflow control that can reduce reviewer fatigue, make AI-authored behavior changes auditable, and provide a narrow verification gate before merge.",
+      "owning_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "OpenReplay",
+        "Difftastic",
+        "tree-sitter",
+        "Git",
+        "delta",
+        "diff-so-fancy",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "OpenReplay",
+        "Difftastic",
+        "tree-sitter",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Consider an AI-diff review pattern that asks agents to isolate behavior changes, lets reviewers inspect exact commits with structural diffs, and treats parser fallback as a signal requiring ordinary textual review.",
+      "follow_up_notes": [
+        "If ingested later, create or update a local practice note about structural diff review for AI-authored commits rather than a broad Difftastic product page.",
+        "Check whether existing source-workflow pages already mention semantic diff gates before synthesizing."
+      ]
+    },
+    {
+      "title": "Meta to take on Anthropic's Claude and OpenAI's Codex with new coding agent",
+      "source_url": "https://www.businessinsider.com/meta-muse-coding-agent-race-openai-codex-anthropic-claude-2026-8",
+      "publisher": "Business Insider",
+      "visible_date": "2026-08-05T21:31:45.090Z",
+      "visible_date_basis": "Article page exposes an ISO timestamp in the article header.",
+      "summary": "Business Insider reported that Meta announced a beta coding agent called Muse Code, powered by Muse Spark 1.2, positioned as a lower-cost competitor to Claude Code and OpenAI Codex. The report notes a discounted contributor tier whose condition is that user activity can be used to improve Meta products, while companies working with proprietary code may prefer a standard tier.",
+      "why_it_matters_for_ai_assisted_development_practice": "The broad product launch belongs upstream, but the pricing and contributor-tier terms are a local governance signal: team adoption playbooks should distinguish low-cost coding-agent tiers from proprietary-code-safe tiers, and should require explicit data-use checks before allowing repository access.",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Meta",
+        "Muse Code",
+        "Muse Spark 1.2",
+        "Anthropic",
+        "Claude Code",
+        "OpenAI",
+        "Codex",
+        "Alexandr Wang"
+      ],
+      "upstream_owned_entities": [
+        "Meta",
+        "Muse Code",
+        "Muse Spark 1.2",
+        "Anthropic",
+        "Claude Code",
+        "OpenAI",
+        "Codex",
+        "Alexandr Wang"
+      ],
+      "local_practice_implication": "Record only a downstream governance note: coding-agent tier selection should include explicit checks for training, feedback, telemetry, retention, proprietary-code handling, and per-team budget controls.",
+      "follow_up_notes": [
+        "Route any durable Muse Code product/entity coverage to the upstream AI wiki.",
+        "If ingested locally, synthesize only into governance/adoption pages as a data-use and cost-tier review example."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "AWS DevOps Agent adds release management capabilities to assess code changes before production (preview)",
+      "source_url": "https://aws.amazon.com/blogs/aws/aws-devops-agent-adds-release-management-capabilities-to-assess-code-changes-before-production-preview/",
+      "visible_date": "17 JUN 2026",
+      "reason": "Out of the 2026-08-04T00:30:56Z to 2026-08-06T00:30:56Z cutoff window."
+    },
+    {
+      "title": "Release readiness code reviews - AWS DevOps Agent",
+      "source_url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/release-management-release-readiness-code-review.html",
+      "visible_date": "No visible in-window publication or update date on opened page; search result only showed recent crawl.",
+      "reason": "Missing visible publication/update date; crawl date is not accepted as source update evidence."
+    },
+    {
+      "title": "Set up a context engineering flow in VS Code",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": "Published 3 weeks ago in search result",
+      "reason": "Out of cutoff window despite topical relevance to context engineering and durable instructions."
+    },
+    {
+      "title": "Visual Studio Code 1.128",
+      "source_url": "https://code.visualstudio.com/updates/v1_128",
+      "visible_date": "Release date: July 8, 2026",
+      "reason": "Out of cutoff window."
+    },
+    {
+      "title": "Manage tools for agents in Microsoft 365 admin center",
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "visible_date": "Published last month in search result",
+      "reason": "Out of cutoff window; otherwise relevant to MCP/tool approval governance."
+    },
+    {
+      "title": "How AI-assisted and agentic workflows are changing test management",
+      "source_url": "https://smartbear.com/resources/all/qmetry/",
+      "visible_date": "August 5, 2026 webinar date",
+      "reason": "Event date only; no visible publication or update date for the source page."
+    },
+    {
+      "title": "AIMUG Monthly Mixer & Showcase",
+      "source_url": "https://www.meetup.com/austin-langchain-ai-group/events/313446213/",
+      "visible_date": "Wednesday, Aug 5, 2026 event date; search result said published yesterday",
+      "reason": "Event listing is locally relevant to adoption/community practice, but the opened source provides an event date rather than a durable publication/update date."
+    },
+    {
+      "title": "[Guy Royse: Agents & Arbiter (LangGraph.js)] (in-person) #14",
+      "source_url": "https://www.meetup.com/columbusjs/events/313388592/",
+      "visible_date": "Wednesday, Aug 5, 2026 event date; search result said published yesterday",
+      "reason": "Event date only; broad LangGraph/framework details are upstream-owned and the local practice implication is not enough without a visible source update date."
+    },
+    {
+      "title": "Does Working with AI Agents Change How Developers Code, Test, and Review?",
+      "source_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6996078",
+      "visible_date": "Posted: 18 Jul 2026; Date Written: June 25, 2026",
+      "reason": "Out of cutoff window despite strong relevance to adoption and review/test behavior."
+    },
+    {
+      "title": "Code review at scale is broken. Here's how we're fixing it.",
+      "source_url": "https://www.augmentcode.com/blog/introducing-augment-code-review",
+      "visible_date": "Dec 11, 2025; Last updated: Jun 18, 2026",
+      "reason": "Out of cutoff window; broad product and benchmark claims are upstream-owned unless reduced to local review-practice implications."
+    },
+    {
+      "title": "How to build a cloud software factory - self-improving code review",
+      "source_url": "https://www.warp.dev/blog/how-to-build-a-cloud-software-factory-self-improving-code-review",
+      "visible_date": "July 15, 2026",
+      "reason": "Out of cutoff window."
+    },
+    {
+      "title": "Meta Releases Coding Agent to Compete With OpenAI and Anthropic",
+      "source_url": "https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517",
+      "visible_date": "Search result said published today",
+      "reason": "Likely in-window but not used because Business Insider provided a publicly open page with a visible exact timestamp for the same upstream-owned product event."
+    },
+    {
+      "title": "Google is in talks for a $1.5 billion-plus deal with AI coding agent startup Mechanize",
+      "source_url": "https://www.businessinsider.com/google-mechanize-deal-talent-tech-ai-coding-2026-8",
+      "visible_date": "Search result said published today",
+      "reason": "Upstream-owned acquisition/talent/product ecosystem update with no distinct local practice implication identified beyond broad coding-agent market activity."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 2,
+    "excluded_candidate_count": 13
+  },
+  "follow_up_notes": [
+    "Collector output is raw-only and intentionally not placed under raw/processed.",
+    "No docs/wiki pages were updated by this collector run.",
+    "Prefer local synthesis later into practice pages for structural AI-diff review and coding-agent data-use tier governance; route product/entity coverage upstream."
+  ],
+  "blockers": []
+}
