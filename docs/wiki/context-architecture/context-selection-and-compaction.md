@@ -37,6 +37,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) and [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) add compaction-survivability evidence. Long-running tasks should keep current status, acceptance criteria, source paths, approval boundaries, and unresolved blockers in durable state that can survive pre-turn or mid-turn compaction.
 
+The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax economics to context selection. Repeated retrieval, reasoning, context carry-forward, and tool-selection loops can make runtime context expensive even when each token is cheap; stable workflows should compile or reuse context only after freshness, provenance, and quality checks preserve the needed evidence.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -68,6 +70,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Prefer source inventories, freshness labels, and exclusion notes over broad connector enablement when agents need work context.
 - Keep large tool catalogs behind discovery or routing tools when the current task only needs a narrow operation surface, and route governance details through [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md).
 - Treat compaction as runtime control flow: critical status, approvals, source paths, and blockers should be recoverable outside lossy summaries.
+- Treat repeated retrieval and context carry-forward as cost signals; compile or cache context only when source provenance and freshness remain auditable.
 
 ## Authoritative Sources
 
@@ -95,6 +98,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 
 ## Related Code
 
@@ -134,3 +138,4 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Maintained on 2026-07-24 with context-distraction, source-inventory, freshness-label, and representative distractor-test guidance.
 - Maintained on 2026-07-27 with progressive tool-schema discovery as dynamic context selection.
 - Maintained on 2026-07-29 with compaction-survivability guidance for status, approvals, source paths, and blockers.
+- Maintained on 2026-08-05 with token-tax-aware context reuse and provenance-preserving compilation guidance.

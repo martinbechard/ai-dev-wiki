@@ -39,6 +39,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds cross-environment UI automation evidence. When subagents are specialized by planning, browser, desktop, automation, or summarization role, [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md) owns the environment boundary and summary artifact while this page owns role separation and coordinator accountability.
 
+The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) adds a terminal-native fleet distinction. The focused selection rule lives in [terminal-native agent fleet orchestration](terminal-native-agent-fleet-orchestration.md); this page keeps the coordination rule that in-process subagents, communicating agent teams, terminal multiplexers, and external worktree fleets need different isolation, shared-state, handoff, and review-capacity controls.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -63,6 +65,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Represent multi-agent graphs with explicit routers, joins, human checkpoints, identities, budgets, traces, and stop conditions before making them recurring workflow infrastructure.
 - Compare IDE, CLI, cloud, worktree, and terminal-multiplexer coordination by supervision, isolation, handoff, and review-capacity evidence before choosing a subagent surface.
 - Keep role separation, shared state, and summary artifacts explicit when subagents specialize by UI surface.
+- Distinguish in-process subagents, vendor-managed agent teams, terminal multiplexers, and worktree-based fleets before applying one coordination rule to all of them.
 
 ## Authoritative Sources
 
@@ -83,6 +86,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [July 21 topic news collector source](../../../raw/processed/2026-07-21/ai-dev-wiki-topic-news-collector-2026-07-21T203101-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 
 ## Related Code
 
@@ -104,6 +108,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 - [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md)
+- [terminal-native agent fleet orchestration](terminal-native-agent-fleet-orchestration.md)
 
 ## Open Questions
 
@@ -124,3 +129,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Maintained on 2026-07-22 with effort-routing, graph-control, trace, budget, and inherited-subagent mode boundaries.
 - Maintained on 2026-07-27 with IDE, CLI, cloud, worktree, and terminal-multiplexer coordination criteria.
 - Maintained on 2026-07-30 with cross-environment role separation and handoff-summary routing.
+- Maintained on 2026-08-05 with terminal-native fleet orchestration boundaries and coordination-surface distinctions.

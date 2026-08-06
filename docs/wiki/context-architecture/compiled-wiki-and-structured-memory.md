@@ -29,6 +29,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 
 The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds an event-store compaction signal. Summaries can be useful active context, but durable memory should preserve replayable or attributable originals for decisions, approvals, source reads, and tool actions when later review depends on what happened before compaction.
 
+The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax pressure to compiled memory. When repeated agent runs re-reason over the same retrieval, context, and tool-selection work, compiled wiki leaves or structured memory can reduce waste only if they preserve provenance, freshness checks, and a path back to original sources.
+
 ## Practice Boundaries
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
@@ -51,6 +53,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Separate instructions, retrieved knowledge, durable memory, and tool I/O when designing context schemas.
 - Attach freshness, trust, source, and refresh-cadence metadata to memory records that may influence future agent decisions.
 - Preserve replayable or attributable originals for compacted decisions, approvals, source reads, and tool actions when later audit matters.
+- Use compiled memory to reduce repeated reasoning only when the compiled view remains source-backed, refreshable, and scoped to the workflow.
 
 ## Authoritative Sources
 
@@ -65,6 +68,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 
 ## Related Code
 
@@ -99,3 +103,4 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Maintained on 2026-07-07 with governed memory extraction, hybrid retrieval, metadata filtering, update APIs, TTL, and retention boundaries.
 - Maintained on 2026-07-11 with agent-maintained wiki memory, context-schema separation, trust metadata, and refresh-cadence guidance.
 - Maintained on 2026-07-29 with event-store compaction, replay, and attributable-original guidance for auditable task memory.
+- Maintained on 2026-08-05 with token-tax-aware compiled memory boundaries.

@@ -25,6 +25,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 
 The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds cost-per-outcome and workload-routing evidence from another sponsored source. Treat vendor savings claims as non-neutral, but keep the practice: agentic workflows need token-cost telemetry, cost-per-outcome framing, and local-versus-cloud routing criteria that include governance, privacy, predictable infrastructure cost, and escalation quality.
 
+The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax and coding-agent tier evidence. Repeated reasoning, tool selection, retrieval, and context carry-forward can raise total tokens even as unit token prices fall, so repeatable execution should move toward deterministic workflows, compiled memory, or cheaper routes when quality evidence supports the shift. Coding-agent procurement should also account for whether discounted tiers can use activity to improve vendor products before proprietary repositories are exposed.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -40,6 +42,8 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - Treat local or deskside agent execution as a governed workload-placement option only when policy enforcement, logs, sensitive-data handling, utilization, escalation rules, and maintenance costs are explicit.
 - Mark sponsored infrastructure cost claims as vendor-positioned evidence until local traces and accepted outcomes support the placement decision.
 - Track token-cost telemetry and cost per accepted outcome before moving high-volume agent workflows between cloud, local, deskside, or self-hosted paths.
+- Treat repeated runtime reasoning and context carry-forward as token-tax drivers; prefer deterministic reuse when the workflow is stable enough.
+- Include data-use terms, cached-token pricing, and proprietary-code exposure in coding-agent tier selection before accepting lower-cost plans.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -55,6 +59,7 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 
 ## Related Code
 
@@ -85,3 +90,4 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - Maintained on 2026-07-09 with outcome-owned SaaS economics, guardrail infrastructure, policy-enforcement cost, and pruning criteria.
 - Maintained on 2026-07-25 with sponsored-claim caution and workload-placement criteria for local, self-hosted, deskside, and cloud agent execution.
 - Maintained on 2026-07-30 with cost-per-outcome telemetry and local-versus-cloud routing criteria from vendor-positioned cost evidence.
+- Maintained on 2026-08-05 with token-tax routing and coding-agent tier data-use review guidance.

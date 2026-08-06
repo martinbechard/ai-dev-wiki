@@ -45,6 +45,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 
 The August 3 raw sources add repair-prioritization and deployment-eval evidence. The [midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json) frames AI-accelerated security repair around exploitable-risk prioritization, verified true positives, remediation latency, and precision/recall-style metrics instead of raw finding volume. The [evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces evaluation-gated agent deployment with datasets, rubrics, LLM-as-judge boundaries, adversarial retesting, and release-control evidence after prompt, tool, retrieval, memory, policy, or model changes.
 
+The August 5 sources add coding-harness and trace-driven improvement evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records approval-gated tools, OpenTelemetry traces, and session reuse as coding-agent verification surfaces, while the [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md) frames agent improvement as an agent development lifecycle: identify production trace errors, propose a fix, run experiments, deploy, and monitor for regressions.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -89,6 +91,8 @@ The August 3 raw sources add repair-prioritization and deployment-eval evidence.
 - Evaluate AI-assisted security repair by exploitable-risk reduction, verified true positives, remediation latency, and calibrated precision/recall-style measures rather than total issue count.
 - Rerun adversarial and workflow evals after prompt, tool, retrieval, memory, policy, or model changes before promoting agent behavior.
 - Keep datasets, rubrics, judge boundaries, release evidence, and retest triggers in the delivery path for agents that can execute or verify real work.
+- Use production traces as candidate failure evidence, then require experiment results and regression monitoring before shipping agent-loop fixes.
+- Preserve approval-gated tool calls, trace IDs, session reuse, and harness telemetry when a coding agent is evaluated through a production-style harness.
 
 ## Authoritative Sources
 
@@ -123,6 +127,8 @@ The August 3 raw sources add repair-prioritization and deployment-eval evidence.
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
 
 ## Related Code
 
@@ -171,3 +177,4 @@ The August 3 raw sources add repair-prioritization and deployment-eval evidence.
 - Maintained on 2026-07-22 with production-agent simulations, behavior-review acceptance, and research-agent hierarchy scoring.
 - Maintained on 2026-07-31 with deterministic-versus-agent-scored tool-schema evaluation and autonomous-test supervision evidence.
 - Maintained on 2026-08-03 with exploitable-risk repair metrics, adversarial retesting, datasets, rubrics, judge boundaries, release evidence, and retest triggers.
+- Maintained on 2026-08-05 with trace-driven agent improvement loops and coding-harness telemetry evidence.

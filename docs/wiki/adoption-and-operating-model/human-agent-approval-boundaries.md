@@ -41,6 +41,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 
 The July 30 raw sources add exact-payload and sandbox approval evidence. The [leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) frames human approval as a control-plane package that captures proposed action, evidence, scope, policy result, approver, and payload, while the [topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces permissions and guardrails for controlled read, write, execute, and iterate environments. Approval is durable only when the authorized payload and executed payload can be compared.
 
+The August 5 raw sources add coding-agent harness and pricing-tier approval evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records repository-aware file operations, shell execution, MCP wiring, session reuse, instruction directories, approval handlers, and approval-required function tools as harness controls, and the [topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) records data-use tier selection as a repository-access decision. Locally, approval should cover both what the agent may do and which vendor terms permit proprietary code exposure.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -70,6 +72,8 @@ The July 30 raw sources add exact-payload and sandbox approval evidence. The [le
 - Require owner or write-access approval before suspicious agent-authored workflow changes execute CI or reach credentials.
 - Capture proposed action, evidence, scope, policy decision, approver, and exact payload for consequential agent actions.
 - Block execution when the payload, target path, data class, or side-effect scope differs from what was approved.
+- Require approval handlers or equivalent gates before coding harnesses execute shell commands, mutate repository files, or call approval-required tools.
+- Treat coding-agent pricing tiers, training-use terms, retention, telemetry, and proprietary-code handling as approval inputs before repository access is granted.
 
 ## Authoritative Sources
 
@@ -94,6 +98,8 @@ The July 30 raw sources add exact-payload and sandbox approval evidence. The [le
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 
 ## Related Code
 
@@ -137,3 +143,4 @@ The July 30 raw sources add exact-payload and sandbox approval evidence. The [le
 - Maintained on 2026-07-13 with pre-action approval clarity for symlink writes, package installs, repository fetches, public output, and credential-adjacent access.
 - Maintained on 2026-07-14 with accountable-ownership decisions and production-agent approval enforcement controls.
 - Maintained on 2026-07-17 with remediation, command, sandbox, permission-scope, and performance-optimization approval routing.
+- Maintained on 2026-08-05 with coding-harness approval handlers and pricing-tier data-use review boundaries.

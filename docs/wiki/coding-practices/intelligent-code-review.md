@@ -53,6 +53,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds exploitable-risk triage and generated-code security pressure. AI review findings should be ranked by verified risk, checked against deterministic scanners or tests where possible, and kept under human security judgment so finding volume or fluent reasoning does not become automatic approval.
 
+The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) adds parser-aware diff review as an implementation-review aid. The focused practice lives in [structural diff review for AI-generated code](structural-diff-review-for-ai-generated-code.md); this page keeps the review rule that structural diffs reduce noise but do not replace source inspection, tests, security evidence, or human acceptance.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -105,6 +107,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Route role separation for AI review through [layered AI code review roles](layered-ai-code-review-roles.md) when review findings imply different owners or gates.
 - Rank AI security-review findings by verified exploitable risk, deterministic evidence, remediation path, and human security judgment rather than raw finding count.
 - Treat AI reasoning in review as one input beside scanners, tests, repository context, and reviewer ownership.
+- Use structural diff output to triage formatting churn in AI-generated commits while preserving ordinary review for parser fallback, unsupported files, and behavior-risk decisions.
 
 ## Authoritative Sources
 
@@ -140,6 +143,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 
 ## Related Code
 
@@ -160,6 +164,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [fix branch and PR packaging](fix-branch-and-pr-packaging.md)
 - [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md)
 - [layered AI code review roles](layered-ai-code-review-roles.md)
+- [structural diff review for AI-generated code](structural-diff-review-for-ai-generated-code.md)
 
 ## Open Questions
 
@@ -189,3 +194,4 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Maintained on 2026-07-24 with AI-review setup, permissions, scope, evidence, output-contract, and actionable-finding guidance.
 - Maintained on 2026-07-27 with layered authoring, architecture, and security review-role guidance for AI-authored pull requests.
 - Maintained on 2026-08-04 with exploitable-risk triage, deterministic evidence, and human security judgment for AI review findings.
+- Maintained on 2026-08-05 with structural diff review routing for AI-generated commits.

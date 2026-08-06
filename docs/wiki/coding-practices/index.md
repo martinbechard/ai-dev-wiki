@@ -11,6 +11,7 @@ This topic owns local coding workflows and acceptance practices. It does not own
 - [ai-assisted-tdd.md](ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
 - [intelligent-code-review.md](intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
 - [layered-ai-code-review-roles.md](layered-ai-code-review-roles.md) records developer, architecture, and security role separation for AI-assisted review.
+- [structural-diff-review-for-ai-generated-code.md](structural-diff-review-for-ai-generated-code.md) records parser-aware diff triage for AI-generated commits and formatting churn.
 - [generated-code-refactoring.md](generated-code-refactoring.md) records the practice of treating generated output as a draft until it fits local architecture and verification expectations.
 - [fix-branch-and-pr-packaging.md](fix-branch-and-pr-packaging.md) records reproduction, scoped change packaging, regression coverage, and review-ready evidence for fixes.
 
@@ -47,3 +48,4 @@ This topic owns local coding workflows and acceptance practices. It does not own
 - Created on 2026-06-23 as the local owner for AI-assisted software engineering practice.
 - Maintained on 2026-06-23 by splitting reusable coding practice concepts into durable leaf pages.
 - Maintained on 2026-07-27 with layered AI code review roles as a durable leaf.
+- Maintained on 2026-08-05 with structural diff review for AI-generated code as a durable leaf.

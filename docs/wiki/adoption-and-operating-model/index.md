@@ -13,6 +13,7 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [human-agent-approval-boundaries.md](human-agent-approval-boundaries.md) records how humans keep authority over goals, review, and consequential action.
 - [durable-instructions-and-skill-files.md](durable-instructions-and-skill-files.md) records how stable procedures move into durable instruction surfaces.
 - [portable-agent-skills-and-runbooks.md](portable-agent-skills-and-runbooks.md) records how portable procedure skills and composed runbooks reduce procedural debt across agent tools.
+- [managed-agent-portability-boundaries.md](managed-agent-portability-boundaries.md) records layer-by-layer portability checks for managed agent platforms and vendor control planes.
 - [tier-specific-assistant-conventions.md](tier-specific-assistant-conventions.md) records how assistant behavior is specialized by work tier when evidence supports it.
 - [outcome-alignment-and-process-autonomy.md](outcome-alignment-and-process-autonomy.md) records the operating-model boundary between shared outcomes and team-owned process.
 - [hybrid-agent-infrastructure-economics.md](hybrid-agent-infrastructure-economics.md) records managed, subscription, self-hosted, and local execution economics as workflow-routing decisions.
@@ -65,3 +66,4 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - Maintained on 2026-06-23 to add portable skills and runbook composition as a durable operating practice.
 - Maintained on 2026-06-23 to add loop-design, outcome-oriented automation, and agent-cost telemetry practices from public sources.
 - Maintained on 2026-06-27 to add hybrid agent infrastructure economics as a workflow-routing operating practice.
+- Maintained on 2026-08-05 with managed-agent portability boundaries as a durable operating-model leaf.

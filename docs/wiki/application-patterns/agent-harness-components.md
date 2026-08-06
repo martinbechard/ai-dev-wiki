@@ -55,6 +55,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 
 The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces harness engineering as the place where workflow-versus-agent selection, context, tools, state, approvals, observability, datasets, rubrics, LLM-as-judge boundaries, reusable tools, project memory, checkpoints, and plan-implement-verify loops become inspectable runtime components. Event and book sources are treated as practice signals, not performance proof; broad framework, protocol, and event entities remain upstream-owned.
 
+The August 5 sources add coding harness, fleet-manager, and managed-agent portability evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records repository-aware file operations, shell execution, URL fetching, MCP wiring, session reuse, instruction directories, approval handlers, approval-required tools, and OpenTelemetry tracing as coding-harness components. The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) routes terminal fleet-manager selection to [terminal-native agent fleet orchestration](../agent-workflows/terminal-native-agent-fleet-orchestration.md), while the [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md) routes provider control-plane portability to [managed agent portability boundaries](../adoption-and-operating-model/managed-agent-portability-boundaries.md).
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -100,6 +102,8 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - Treat queue triggers, live node traces, AI-processing audit records, model-policy gates, credential references, remote viewing, and human stop or supervision controls as harness components for autonomous workflow and test execution.
 - Keep workflow selection, context engineering, tool use, state, approval, observability, datasets, rubrics, judge boundaries, reusable tools, project memory, and checkpoints inside the harness contract when agents run against real applications.
 - Treat practitioner workshop and book evidence as signals for expected harness components, then require local verification before adopting a specific implementation pattern.
+- Include repository file operations, shell execution, URL fetching, MCP wiring, session reuse, instruction directories, approval handlers, approval-required tools, and trace export in coding-agent harness reviews.
+- Separate terminal fleet-manager components from application-framework CLI lifecycle components when the harness must coordinate multiple coding-agent workers.
 
 ## Authoritative Sources
 
@@ -138,6 +142,9 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
+- [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
 
 ## Related Code
 
@@ -160,6 +167,8 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - [AI process layer and workflow state](ai-process-layer-and-workflow-state.md)
 - [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
+- [terminal-native agent fleet orchestration](../agent-workflows/terminal-native-agent-fleet-orchestration.md)
+- [managed agent portability boundaries](../adoption-and-operating-model/managed-agent-portability-boundaries.md)
 
 ## Open Questions
 
@@ -188,3 +197,4 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - Maintained on 2026-07-24 with cue-delivered memory, benchmark provenance, contamination-resistance, setup, scoring, and artifact-evidence components.
 - Maintained on 2026-07-31 with queue-triggered workflow state, live execution traces, AI-processing audit, model-policy gates, credential references, remote viewing, and human controls for autonomous testing.
 - Maintained on 2026-08-03 with workflow-selection, context, tool, state, approval, observability, dataset, rubric, judge, memory, checkpoint, and plan-implement-verify harness components.
+- Maintained on 2026-08-05 with coding harness components, terminal fleet-manager boundaries, and managed-agent portability routing.

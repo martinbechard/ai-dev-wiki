@@ -27,6 +27,8 @@ The [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds performance-sensitive systems-code evidence. Generated low-level, accelerator, compiler-adjacent, or infrastructure code remains a draft until architecture fit, optimization evidence, portability assumptions, and regression tests prove it works under the intended workload.
 
+The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) adds a cleanup signal for AI-generated commits that mix formatting churn with meaningful edits. Structural diff review lives in [structural diff review for AI-generated code](structural-diff-review-for-ai-generated-code.md); locally, generated-code cleanup should ask agents to separate semantic changes, formatting changes, and generated boilerplate before review.
+
 ## Practice Boundaries
 
 - Refactor generated code toward the repository's existing patterns before treating it as finished.
@@ -45,6 +47,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Build or confirm a behavior inventory before deleting generated code at scale.
 - Use regression checks, lint, CI, instruction files, and human review as guardrails when trimming generated-code bloat.
 - Require architecture, workload, optimization, portability, and regression evidence before accepting generated systems or performance-sensitive infrastructure code.
+- Separate semantic edits from formatting churn before review when generated code has been reformatted or mechanically rewritten.
 
 ## Authoritative Sources
 
@@ -55,6 +58,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -77,6 +81,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [ai-assisted TDD](ai-assisted-tdd.md)
 - [intelligent code review](intelligent-code-review.md)
 - [fix branch and PR packaging](fix-branch-and-pr-packaging.md)
+- [structural diff review for AI-generated code](structural-diff-review-for-ai-generated-code.md)
 - [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md)
 
 ## Open Questions
@@ -92,3 +97,4 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Maintained on 2026-07-07 with contributor-accountability, authorship, and repair-ownership requirements for generated code.
 - Maintained on 2026-07-11 with behavior inventory, regression-check, CI, lint, and human-review guardrails for generated-code cleanup.
 - Maintained on 2026-08-04 with generated systems-code architecture, optimization, portability, and regression evidence requirements.
+- Maintained on 2026-08-05 with semantic-versus-formatting separation for AI-generated commits.

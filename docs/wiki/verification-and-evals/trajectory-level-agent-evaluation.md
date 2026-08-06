@@ -45,6 +45,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json) adds failure-attribution evidence from agent self-improvement research. Non-improving agent runs should be classified against ambiguous specifications, missing task information, brittle evaluators, unstable services, weak retrieval, and prompt or model limits before the local workflow treats prompt optimization as the fix.
 
+The August 5 sources add production-trace and coding-harness evidence. The [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md) frames trace review, proposed fixes, experiments, deployment, and monitoring as an improvement lifecycle, while the [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records coding-harness traces and approval-gated tools. Trajectory evaluation should therefore preserve the production failure trace, proposed change, experiment result, deployed version, and regression monitor together.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -93,6 +95,7 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Separate benchmark, harness, and environment evidence when comparing agent systems across coding, research, productivity, or tool-use tasks.
 - Score tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls alongside final-task outcome.
 - Preserve graph topology, run identifiers, node identifiers, routed decisions, grouped failures, and human checkpoint records when evaluating multi-agent systems.
+- Preserve production failure traces, proposed fixes, experiment results, deployed versions, and regression-monitor signals when evaluating agent-loop improvements.
 - Record benchmark domain coverage, task provenance, contamination controls, execution environment, scoring rules, and produced artifacts before using an agent benchmark to justify workflow expansion.
 - Prefer representative local workflow calibration when public benchmark tasks do not match the repository, toolchain, data sensitivity, or approval path.
 - Preserve task provenance, contamination controls, harness configuration, verifier behavior, and cost per completed task before using benchmark results to justify workflow expansion.
@@ -124,6 +127,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
+- [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
 
 ## Related Code
 
@@ -165,3 +170,4 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 - Maintained on 2026-07-24 with multi-domain benchmark, contamination-control, reproducible-harness, and local-calibration guidance.
 - Maintained on 2026-07-26 with benchmark-realism, cost-per-task, system-level safety, retrieval, memory, tool-authorization, refusal, and human-escalation evaluation guidance.
 - Maintained on 2026-07-29 with failure-attribution taxonomy guidance for non-improving agent eval runs.
+- Maintained on 2026-08-05 with production-trace, experiment, deployment, and regression-monitor evidence for agent-loop improvements.
