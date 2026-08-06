@@ -17,6 +17,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds first-party trace and reasoning-depth evidence. Performance and optimization gates should preserve local workload traces, product-specific success criteria, model or reasoning settings, token and credit use, and task complexity so teams can decide whether a higher-effort run improved the accepted outcome enough to justify the cost.
 
+The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md) adds a benchmark-gaming boundary for performance work. A generated optimization that replaces the measured workload with a precomputed lookup can be correct for the exact benchmark while moving work, freshness risk, or maintenance cost outside the measured path. Performance gates should classify in-place fixes separately from cache, materialized-view, snapshot, or test-case-specific rewrites, and should count only the accepted class when ranking model or workflow quality.
+
 This page owns performance-specific acceptance. [Trajectory-level agent evaluation](trajectory-level-agent-evaluation.md) owns trace, harness, and environment evidence; [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md) owns delivery-level acceptance; and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions about experiments and applying changes.
 
 ## Practice Boundaries
@@ -31,6 +33,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Separate capability evals for finding optimization opportunities from regression evals that prove the deployed workflow remains correct in its target environment.
 - Preserve first-party workload traces and product-specific success criteria when optimizing agent-assisted workflows.
 - Record model route, reasoning depth, task complexity, token use, and credit cost when comparing optimization quality or performance outcomes.
+- Classify whether a speedup improves the target workload in place, moves work to precomputation, narrows the schema to one benchmark case, or changes freshness and maintenance obligations.
+- Count benchmark calls and read the produced patch or query before treating a fast result as an accepted optimization.
 
 ## Authoritative Sources
 
@@ -38,6 +42,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
@@ -70,3 +75,4 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Created on 2026-07-17 from public raw artifacts about build-performance agents, profiling workflows, baseline selection, incremental-build measurement, rollback rules, and approval gates.
 - Maintained on 2026-07-28 with capability-versus-regression eval boundaries for optimization agents and deployment-specific outcome checks.
 - Maintained on 2026-08-04 with first-party trace, task-complexity, reasoning-depth, token-cost, and product-specific success criteria.
+- Maintained on 2026-08-05 with benchmark-gaming classification, in-place fix counting, and tool-call cost evidence.

@@ -69,6 +69,8 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 
 The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json) adds a reporting-surface retirement signal. When preview billing tools disappear, governed agent rollouts should rely on durable usage exports, billing APIs, budget settings, cost-center allocation, and user-level spend limits rather than screenshots or temporary consoles. The local practice is to preserve cost evidence that can survive product-console churn and still map spend to agent owners, workflows, and accepted outcomes.
 
+The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md) adds tool-call floor and outcome-quality evidence. When an agent workflow calls a costly verifier, benchmark harness, database, browser, or external service, nominal token price can be swamped by flat tool-execution cost; a cheaper model that retries or tests more often can converge toward the same run cost as an expensive model. Cost telemetry should therefore track tool calls, external compute, and cost per accepted fix, not only token price or cost per run.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -125,6 +127,8 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - Preserve sponsored cost-infrastructure claims as weak evidence unless local traces show privacy, runtime placement, and accepted-outcome benefits.
 - Prefer durable usage exports, billing APIs, budget settings, and cost-center allocation over temporary reporting apps for recurring agent-cost evidence.
 - Keep user-level spend limits and budget ownership joined to the workflow, owner, and accepted outcome when product billing surfaces change.
+- Separate token cost from flat verifier, benchmark, database, browser, and external-service execution cost when tool calls dominate the workflow bill.
+- Report cost per accepted fix or accepted outcome when a correct answer can still game the measured task.
 
 ## Authoritative Sources
 
@@ -168,6 +172,7 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
+- [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 - [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
 - [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
@@ -223,3 +228,4 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - Maintained on 2026-07-29 with token-volume and AI-activity measurement anti-pattern controls.
 - Maintained on 2026-07-31 with AI wallet, budget alert, PR-state normalization, sponsored tokenomics, and cost-per-outcome routing evidence.
 - Maintained on 2026-08-04 with durable billing exports, budget settings, cost-center allocation, and preview-reporting retirement controls.
+- Maintained on 2026-08-05 with benchmark tool-call floors, external-compute cost attribution, and cost-per-accepted-fix guidance.

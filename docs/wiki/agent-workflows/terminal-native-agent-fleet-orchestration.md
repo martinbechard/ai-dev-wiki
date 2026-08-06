@@ -17,6 +17,8 @@ A terminal-native fleet manager is relevant when the coordination surface is the
 
 Application-framework CLIs remain useful, but they should not be evaluated as fleet consoles unless the terminal actually starts, assigns, supervises, and reconciles independent workers. A development CLI that runs a local server or invokes one root agent may be part of the harness lifecycle while leaving multi-agent coordination inside the application.
 
+The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md) adds a managed-app comparison point. Stacked sessions and stacked pull requests solve the same delivery pressure as terminal-native fleets at the source-control layer: keep a modernization effort split into ordered work packages, preserve prior session context, close or redirect an unfit branch, and target each pull request at the branch below it. The local fleet rule is to preserve the same chain evidence even when the coordination surface is a managed app rather than terminals.
+
 ## Practice Boundaries
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
@@ -25,10 +27,13 @@ Application-framework CLIs remain useful, but they should not be evaluated as fl
 - Route issue, pull-request, CI, and review-comment feedback back to the responsible worker or coordinator with auditable state.
 - Compare provider-neutral fleet claims by prompt, permission, tool, resume, and result-format compatibility, not only by whether several agent CLIs can launch.
 - Stop fan-out when review, verification, or merge-conflict capacity is the bottleneck.
+- Preserve stack order, base branch, closed or superseded attempt, dependent pull request, and reviewer handoff evidence when work is split into stacked sessions.
+- Treat managed stacked-session products as source-control orchestration surfaces; broad product background remains upstream.
 
 ## Authoritative Sources
 
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
+- [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
 - [subagent coordination](subagent-coordination.md)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [persistent agent workspaces](persistent-agent-workspaces.md)
@@ -68,3 +73,4 @@ Application-framework CLIs remain useful, but they should not be evaluated as fl
 ## Maintenance Notes
 
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
+- Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.

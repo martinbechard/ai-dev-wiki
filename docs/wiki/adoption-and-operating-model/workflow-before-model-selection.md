@@ -55,6 +55,8 @@ The July 31 raw sources add budget, benchmark, model-policy, and runtime-placeme
 
 The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json) adds generated-app retirement and inference-provider replacement signals. Agent-built application workflows should define exportability, source ownership, managed inference inventories, provider replacement paths, and deprecation review before selecting a builder surface or hosted inference route. Product lifecycle details stay upstream; locally, the workflow needs a survivable source and dependency plan before generated apps become team assets.
 
+The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md) adds a model-routing caution for tool-heavy workflows. Token price is not a sufficient selection criterion when the task depends on repeated benchmark, database, browser, search, or verifier calls, and benchmark success is not enough when the agent can satisfy the measured prompt by changing the workload boundary. Workflow selection should define the accepted fix class, tool-call budget, freshness expectations, and review method before comparing models.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -96,6 +98,8 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - Treat embedded senior execution capacity as a workflow shape when production AI systems need domain ownership, customer-context translation, and launch accountability.
 - Require generated-app export paths, source ownership, managed inference inventories, and provider replacement plans before adopting a builder surface for durable work.
 - Treat product or inference-provider deprecation as a workflow-selection input, not only a procurement or vendor-news issue.
+- Define accepted fix classes, tool-call budgets, freshness requirements, and patch-review expectations before selecting a model for optimization or verifier-heavy tasks.
+- Treat low token price as a workflow input only after tool-call discipline, accepted outcome rate, and review burden are measured.
 
 ## Authoritative Sources
 
@@ -132,6 +136,7 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
+- [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 
 ## Related Code
 
@@ -182,3 +187,4 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - Maintained on 2026-07-26 with supervision-surface, permission, network-exposure, model-routing, voice-steering, and auditability selection criteria.
 - Maintained on 2026-07-31 with budget-envelope, PR-state normalization, runtime-placement, model-policy, autonomous-testing, and embedded execution-capacity workflow inputs.
 - Maintained on 2026-08-04 with generated-app exportability, managed-inference inventory, and provider-replacement workflow inputs.
+- Maintained on 2026-08-05 with verifier-heavy model selection, accepted-fix classes, and tool-call budget guidance.

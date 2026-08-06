@@ -43,6 +43,8 @@ The July 30 raw sources add exact-payload and sandbox approval evidence. The [le
 
 The August 5 raw sources add coding-agent harness and pricing-tier approval evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records repository-aware file operations, shell execution, MCP wiring, session reuse, instruction directories, approval handlers, and approval-required function tools as harness controls, and the [topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) records data-use tier selection as a repository-access decision. Locally, approval should cover both what the agent may do and which vendor terms permit proprietary code exposure.
 
+The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md) adds stacked-work approval evidence. When an agent discovers that a branch target, dependency-removal strategy, or modernization scope is wrong, the human decision should be captured as a redirection, closure, or new stacked session rather than hidden inside the next patch. Approval boundaries should make each stack layer's branch target, inherited context, planned scope, pull-request relationship, and review state visible before dependent work proceeds.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -74,6 +76,8 @@ The August 5 raw sources add coding-agent harness and pricing-tier approval evid
 - Block execution when the payload, target path, data class, or side-effect scope differs from what was approved.
 - Require approval handlers or equivalent gates before coding harnesses execute shell commands, mutate repository files, or call approval-required tools.
 - Treat coding-agent pricing tiers, training-use terms, retention, telemetry, and proprietary-code handling as approval inputs before repository access is granted.
+- Preserve human redirection decisions when an agent closes, retargets, or stacks sessions after discovering the first branch or plan was wrong.
+- Require visible branch targets, inherited context, dependent pull requests, and review state before approving the next layer in stacked agent work.
 
 ## Authoritative Sources
 
@@ -100,6 +104,7 @@ The August 5 raw sources add coding-agent harness and pricing-tier approval evid
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
+- [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
 
 ## Related Code
 
@@ -144,3 +149,4 @@ The August 5 raw sources add coding-agent harness and pricing-tier approval evid
 - Maintained on 2026-07-14 with accountable-ownership decisions and production-agent approval enforcement controls.
 - Maintained on 2026-07-17 with remediation, command, sandbox, permission-scope, and performance-optimization approval routing.
 - Maintained on 2026-08-05 with coding-harness approval handlers and pricing-tier data-use review boundaries.
+- Maintained on 2026-08-05 with stacked-session redirection, branch-target, dependent-PR, and review-state approval evidence.
