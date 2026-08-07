@@ -1,0 +1,231 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-07T01:03:35Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; missing, ambiguous, future, or boundary-only dates are excluded.",
+    "start_utc": "2026-07-31T01:03:35Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_title": "Torque local terminal-native agent orchestration",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "source_url": "https://runtorque.com/"
+    },
+    {
+      "candidate_title": "CodeFleet agents and parallel worktrees documentation",
+      "reason": "missing_exact_visible_publication_or_update_date; page only says updated for CodeFleet 1.0.0",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "source_url": "https://codefleet.app/docs/agents"
+    },
+    {
+      "candidate_title": "Nora CLI-first agentic development workspace",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "source_url": "https://www.withnora.run/"
+    },
+    {
+      "candidate_title": "Warp terminal agents page",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "source_url": "https://www.warp.dev/agents"
+    },
+    {
+      "candidate_title": "Claude Managed Agents self-hosted sandboxes and MCP tunnels",
+      "reason": "published_2026-05-19_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "source_url": "https://claude.com/blog/claude-managed-agents-updates"
+    },
+    {
+      "candidate_title": "Claude self-hosted sandboxes documentation",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "source_url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes"
+    },
+    {
+      "candidate_title": "Amazon CloudWatch Coding Agent Insights launch",
+      "reason": "published_2026-07-20_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/"
+    },
+    {
+      "candidate_title": "Analyzing Claude Code usage with CloudWatch and OpenTelemetry",
+      "reason": "original_publication_2026-06-17_outside_cutoff_window; editor_note_only_says_July_2026_without_exact_updated_date",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "source_url": "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/"
+    },
+    {
+      "candidate_title": "GitHub Copilot changelog rollup",
+      "reason": "latest_visible_copilot_items_in_result_are_2026-07-24_or_older_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "source_url": "https://github.blog/changelog/label/copilot/"
+    },
+    {
+      "candidate_title": "GitHub Copilot usage-based billing announcement",
+      "reason": "published_2026-04-27_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+    },
+    {
+      "candidate_title": "Safeguarding VS Code against prompt injections",
+      "reason": "updated_2026-07-06_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://github.blog/security/vulnerability-research/safeguarding-vs-code-against-prompt-injections/"
+    },
+    {
+      "candidate_title": "How agents are transforming work",
+      "reason": "published_2026-06-25_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "source_url": "https://openai.com/index/how-agents-are-transforming-work/"
+    },
+    {
+      "candidate_title": "skillsync portable agent skills post listing",
+      "reason": "ambiguous_date_format_11.05.2026_not_accepted_for_strict_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_url": "https://prokopov.me/posts/"
+    },
+    {
+      "candidate_title": "AI Fabric for MCP Governance and Execution Sovereignty",
+      "reason": "event_is_future_dated_2026-08-19_to_2026-08-21_and_submission_date_is_relative_only",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ],
+      "source_url": "https://confengine.com/conferences/apidays-india-2026/proposal/50258/ai-fabric-for-mcp-governance-and-execution-sovereignty"
+    },
+    {
+      "candidate_title": "AgentRex adoption and skills blog listing",
+      "reason": "visible_items_in_result_are_2026-07-21_or_older_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "source_url": "https://agentrex.ai/blog/"
+    }
+  ],
+  "factual_summaries": [
+    "OpenReplay published a workflow for reviewing AI-generated commits with Difftastic, emphasizing syntax-tree diffs, parser fallback, and use as triage evidence for behavior-changing edits hidden by formatting churn."
+  ],
+  "follow_up_notes": [
+    "Ingest the OpenReplay structural-diff item only if the local coding-practice leaf needs a fresh public citation; keep broad Difftastic and tree-sitter background upstream-owned.",
+    "No docs/wiki pages were updated by this watch run."
+  ],
+  "leaf_universe_count": 85,
+  "named_entities": [
+    "AI coding tools",
+    "Difftastic",
+    "Git",
+    "OpenReplay",
+    "tree-sitter"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "OpenReplay published a workflow for reviewing AI-generated commits with Difftastic, emphasizing syntax-tree diffs, parser fallback, and use as triage evidence for behavior-changing edits hidden by formatting churn.",
+      "id": "openreplay-difftastic-ai-code-review-2026-08-05",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md"
+      ],
+      "named_entities": [
+        "OpenReplay",
+        "Difftastic",
+        "tree-sitter",
+        "Git",
+        "AI coding tools"
+      ],
+      "source_url": "https://blog.openreplay.com/review-ai-generated-code-difftastic/",
+      "upstream_owned_entities": [
+        "Difftastic",
+        "tree-sitter",
+        "AI coding tools"
+      ],
+      "visible_date": "2026-08-05",
+      "why_it_matters_for_leaf": "This directly reinforces the local practice leaf's rule that structural diffs help reviewers isolate behavior-changing agent edits while remaining subordinate to tests, source inspection, and human acceptance."
+    }
+  ],
+  "run_timestamp_local": "2026-08-06T21:03:35-04:00",
+  "run_timestamp_utc": "2026-08-07T01:03:35Z",
+  "scanner_boundary": "Raw-only leaf watch; scanner output was saved under raw and not raw/processed; docs/wiki pages were not updated.",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+  ],
+  "source_urls_checked": [
+    "https://blog.openreplay.com/review-ai-generated-code-difftastic/",
+    "https://runtorque.com/",
+    "https://codefleet.app/docs/agents",
+    "https://www.withnora.run/",
+    "https://www.warp.dev/agents",
+    "https://claude.com/blog/claude-managed-agents-updates",
+    "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+    "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/",
+    "https://github.blog/changelog/label/copilot/",
+    "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+    "https://github.blog/security/vulnerability-research/safeguarding-vs-code-against-prompt-injections/",
+    "https://openai.com/index/how-agents-are-transforming-work/",
+    "https://prokopov.me/posts/",
+    "https://confengine.com/conferences/apidays-india-2026/proposal/50258/ai-fabric-for-mcp-governance-and-execution-sovereignty",
+    "https://agentrex.ai/blog/"
+  ],
+  "upstream_owned_entities": [
+    "AI coding tools",
+    "Difftastic",
+    "tree-sitter"
+  ]
+}
