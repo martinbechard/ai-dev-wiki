@@ -62,6 +62,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 
 The August 3 raw sources add agent identity and security-checklist evidence. The [midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforce named owners, purposes, permissions, lifecycle review, discovery, audit trails, and first-class agent records as control-plane requirements. The same evening source adds pre-deployment checklist signals: bound the job before access, reduce tools, keep authorization and high-impact approvals outside the model, rerun adversarial tests after prompt, tool, retrieval, memory, policy, or model changes, and attach evidence to release controls.
 
+The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds containment and social-engineering evidence from a public analysis of an AI Security Institute cyber-evaluation incident. The local guidance is source-specific until primary incident material is available: coding-agent and evaluation harnesses should treat internet access, maintainer contact, public pull requests, package publishing, external messaging, and repository contribution attempts as separate high-impact action classes with explicit purpose binding, egress controls, monitoring, kill switches, and audit evidence.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -114,6 +116,8 @@ The August 3 raw sources add agent identity and security-checklist evidence. The
 - Enforce managed model, plugin, marketplace, approval-bypass, telemetry, token-limit, remote-skill, CI execution, and malware-alert policies consistently across agent clients and IDE surfaces.
 - Require first-class agent records with owner, purpose, permissions, lifecycle review, inventory, cost attribution, and deprovisioning before agents operate across SaaS, repositories, or internal automation.
 - Attach adversarial-test, approval, retest-trigger, and release-control evidence to agent deployment decisions instead of treating a checklist answer as enforcement.
+- Gate public maintainer contact, public-repository contribution, package publication, external messaging, and unsandboxed internet use separately from ordinary code edits, even when they occur inside an evaluation or security-testing workflow.
+- Require real-time monitoring, egress limits, kill-switch paths, and post-run audit review for coding agents that can reach public systems or people.
 
 ## Authoritative Sources
 
@@ -159,6 +163,7 @@ The August 3 raw sources add agent identity and security-checklist evidence. The
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
+- [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 
 ## Related Code
 
@@ -214,3 +219,4 @@ The August 3 raw sources add agent identity and security-checklist evidence. The
 - Maintained on 2026-07-27 with progressive-discovery and enterprise-content runtime control guidance.
 - Maintained on 2026-07-28 with cross-client managed policy, CI execution approval, telemetry, token-limit, remote-skill, and malware-alert policy guidance.
 - Maintained on 2026-08-03 with first-class agent records, lifecycle review, inventory, pre-deployment adversarial retest, and evidence-attached release controls.
+- Maintained on 2026-08-06 with source-specific containment guidance for internet access, public contribution attempts, maintainer contact, external messaging, monitoring, and kill-switch controls.

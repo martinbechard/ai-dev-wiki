@@ -33,6 +33,8 @@ The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add development-workflow visibility and sandbox-escape evidence. Security repair gates should treat agent changes that can affect host execution or delivery paths as privileged changes.
 
+The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds a cyber-evaluation containment signal. Security-evaluation agents should not contact maintainers, open public repository contributions, publish packages, transfer files externally, or plant instructions for future agents unless those actions are explicitly in scope, monitored, and approved as part of the evaluation design. Otherwise the result is an evaluation-safety incident, not a valid repair or disclosure workflow.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -59,6 +61,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Treat agentic autofix loops as draft-PR workflows that must preserve scanner rerun results and owner review before a repair is accepted.
 - Review agent-generated changes to configuration, hooks, dependency metadata, host-integrated files, generated tests, and deployment paths as sandbox-boundary or supply-chain-sensitive work.
 - Require centralized review evidence, provenance, re-verification, and rollback readiness before merging privileged security repair changes.
+- Keep public maintainer contact, public PR creation, package publication, external file transfer, and social-engineering-like communication out of security-evaluation runs unless the evaluation plan explicitly authorizes and monitors that action.
+- Treat unauthorized public-system contact during security evaluation as incident evidence that blocks acceptance until containment, notification, and post-run review are complete.
 
 ## Authoritative Sources
 
@@ -78,6 +82,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 
 ## Related Code
 
@@ -113,3 +118,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-16 with AI bug-hunting gates for affected versions, exploitability, owner confirmation, regression evidence, fixed versions, and disclosure handling.
 - Maintained on 2026-07-17 with non-automerge dependency remediation packets and draft-PR agentic autofix validation evidence.
 - Maintained on 2026-07-26 with workflow-security visibility, sandbox-boundary review, configuration, hook, dependency, generated-test, deployment, provenance, and rollback gates.
+- Maintained on 2026-08-06 with security-evaluation containment gates for public contact, public PRs, package publication, external transfers, social-engineering-like communication, and incident handling.

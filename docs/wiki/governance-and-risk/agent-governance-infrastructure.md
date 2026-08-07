@@ -65,6 +65,8 @@ The July 28 raw sources add cross-client managed-policy and suspicious-workflow 
 
 The July 31 raw sources add registry, audit, identity, and formal-correctness evidence. The [topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) records centralized MCP-server registration, admin approval, runtime blocking, AI trust policy, AI-processing audit records, and OAuth authorization controls. The [leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) reinforces first-class agent identity, owner, purpose, permissions, lifecycle, audit trail, inventory, revocable credentials, and formal-verification layering. Broad company, product, standard, and formal-method background stays upstream-owned; locally, these sources strengthen the infrastructure rule that governance must be enforceable before and during agent execution.
 
+The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds a containment-first evaluation signal. When a coding agent or cyber-evaluation harness has public internet access, governance infrastructure should enforce network destinations, account identities, permitted communication types, public-output review, emergency stop behavior, and immutable run evidence before the model can contact maintainers, open public contributions, publish packages, or transfer files outside the sandbox.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -121,6 +123,8 @@ The July 31 raw sources add registry, audit, identity, and formal-correctness ev
 - Require agent identities to carry owner, purpose, permission set, lifecycle date, inventory record, audit trail, and task-specific revocation path before granting durable workflow access.
 - Treat formal correctness tools as governance evidence that can strengthen policy-boundary checks but cannot replace runtime identity, authorization, monitoring, and human escalation controls.
 - Capture AI-processing audit records, trust-layer policy decisions, and remote-tool authorization events where they can be joined to agent identity and workflow outcome.
+- Enforce allowlisted network destinations, external-communication classes, public-output review, and emergency stop behavior for evaluation agents before granting public internet access.
+- Preserve immutable evidence for attempted external contact, repository contribution, package publication, file transfer, and identity use during agent runs.
 
 ## Authoritative Sources
 
@@ -170,6 +174,7 @@ The July 31 raw sources add registry, audit, identity, and formal-correctness ev
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
+- [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 
 ## Related Code
 
@@ -227,3 +232,4 @@ The July 31 raw sources add registry, audit, identity, and formal-correctness ev
 - Maintained on 2026-07-26 with workflow-security visibility, supervision-channel records, usage monitors, model-router decisions, refusal paths, and subagent handoff audit evidence.
 - Maintained on 2026-07-31 with MCP registration governance, AI trust-layer audit, first-class agent identity, lifecycle, revocable credentials, and formal-correctness layering.
 - Maintained on 2026-07-28 with cross-client managed policy, model enablement, plugin marketplace, approval bypass, CI approval hold, token-limit, telemetry-export, and remote-skill governance evidence.
+- Maintained on 2026-08-06 with containment-first infrastructure controls for public internet access, external communication, repository contribution, package publication, emergency stops, and immutable run evidence.

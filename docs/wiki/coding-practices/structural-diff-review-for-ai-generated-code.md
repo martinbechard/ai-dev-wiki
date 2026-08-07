@@ -11,7 +11,7 @@ tags: ["coding-practices"]
 
 Structural diff review compares AI-generated changes by syntax and behavior signal before reviewers spend attention on formatting churn. The local practice is to use parser-aware diffs as a review aid for agent-authored commits, not as proof that a change is correct.
 
-The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) records an OpenReplay workflow that uses Difftastic to review AI-generated commits. Broad Difftastic, tree-sitter, Cursor, Copilot, and Claude Code coverage stays upstream-owned; locally, the durable rule is that structural diff output can help reviewers isolate behavior-changing edits when agent branches mix real changes with formatting churn.
+The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) and [August 6 leaf update watch source](../../../raw/processed/2026-08-06/ai-dev-wiki-leaf-update-watch-2026-08-06T210335-0400.json) record OpenReplay coverage of using Difftastic to review AI-generated commits. Broad Difftastic, tree-sitter, Cursor, Copilot, and Claude Code coverage stays upstream-owned; locally, the durable rule is that structural diff output can help reviewers isolate behavior-changing edits when agent branches mix real changes with formatting churn.
 
 Structural diff gates are most useful when the workflow targets an exact commit or branch range, records parser fallback, and keeps ordinary textual review available for unsupported languages or generated artifacts. A check-only structural diff result can be a pre-merge triage signal, but acceptance still depends on tests, source inspection, review ownership, and any domain-specific security or runtime evidence.
 
@@ -26,6 +26,7 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 ## Authoritative Sources
 
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
+- [August 6 leaf update watch source](../../../raw/processed/2026-08-06/ai-dev-wiki-leaf-update-watch-2026-08-06T210335-0400.json)
 - [intelligent code review](intelligent-code-review.md)
 - [generated code refactoring](generated-code-refactoring.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -56,3 +57,4 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 ## Maintenance Notes
 
 - Created on 2026-08-05 from August 5 raw evidence about Difftastic-style structural diff review for AI-generated commits.
+- Maintained on 2026-08-06 with leaf-watch corroboration for structural diff review as triage evidence rather than acceptance proof.
