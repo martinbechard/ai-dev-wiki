@@ -1,0 +1,285 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-08T01:05:54Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; missing, ambiguous, relative-only, future, or boundary-only dates are excluded.",
+    "start_utc": "2026-08-01T01:05:54Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_title": "Google talks for Mechanize AI coding-agent talent and technology deal",
+      "reason": "relative_only_publication_date_in_search_result; no accepted exact visible publication_or_update_date captured for strict window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md"
+      ],
+      "source_url": "https://www.businessinsider.com/google-mechanize-deal-talent-tech-ai-coding-2026-8"
+    },
+    {
+      "candidate_title": "Red Hat asago AI governance orchestration project",
+      "reason": "relative_only_publication_date_in_search_result; page could not be opened with an exact visible date for strict window validation",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md"
+      ],
+      "source_url": "https://www.itpro.com/software/open-source/red-hat-launches-new-open-source-project-to-drive-ai-governance"
+    },
+    {
+      "candidate_title": "Proofpane Chain of Custody companion paper",
+      "reason": "visible_date_2026-08-01_is_boundary_only_for_cutoff_window_start_2026-08-01T01:05:54Z",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "source_url": "https://proofpane.com/"
+    },
+    {
+      "candidate_title": "Hexgate per-user authorization for AI agents",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://www.hexgate.ai/"
+    },
+    {
+      "candidate_title": "AgentGov AI agent governance platform",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://www.agentgov.co/"
+    },
+    {
+      "candidate_title": "Gemini API agent hooks documentation",
+      "reason": "published_two_weeks_ago_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "source_url": "https://ai.google.dev/gemini-api/docs/agent-hooks"
+    },
+    {
+      "candidate_title": "Snowflake Cortex Code Agent SDK hooks documentation",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "source_url": "https://docs.snowflake.com/en/user-guide/cortex-code-agent-sdk/hooks"
+    },
+    {
+      "candidate_title": "OpenAI Agents SDK sandbox execution coverage",
+      "reason": "published_2026-04-16_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://www.techwyse.com/news/ai-search/openai-agents-sdk-sandbox-execution-enterprise-marketing-automation"
+    },
+    {
+      "candidate_title": "OpenAI workspace agents in ChatGPT",
+      "reason": "published_2026-04-22_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "source_url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+    },
+    {
+      "candidate_title": "Zapier migration from Agents to AI by Zapier",
+      "reason": "published_2026-07-15_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "source_url": "https://help.zapier.com/hc/en-us/articles/47402591569805-Migrating-from-Agents-to-AI-by-Zapier"
+    },
+    {
+      "candidate_title": "BOVO MCP 2026-07-28 stateless transport migration guide",
+      "reason": "published_2026-07-28_outside_cutoff_window",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "source_url": "https://www.bovo-digital.tech/en/blog/mcp-2026-specification-stateless-enterprise-agents"
+    },
+    {
+      "candidate_title": "Agentic Runbook AI Agent Stack guide",
+      "reason": "published_2026-07-30_outside_cutoff_window; blog index also includes future-dated items not accepted",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://agenticrunbook.ai/blog/ai-agent-stack-cto-guide/"
+    },
+    {
+      "candidate_title": "Agentry news homepage",
+      "reason": "visible_date_2026-08-01_is_boundary_only_for_cutoff_window_start_2026-08-01T01:05:54Z",
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md"
+      ],
+      "source_url": "https://agentry.news/"
+    },
+    {
+      "candidate_title": "Okta AI Agents AMA thread",
+      "reason": "original_dates_2026-07-21_outside_cutoff_window; edited_10h_ago_is_relative_only; event date is not an accepted publication_or_update date",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://support.okta.com/help/s/question/0D5WR00001uYYLn0AO/join-the-discussion-for-ask-me-anything-on-august-5-2026-okta-for-ai-agents?language=de"
+    },
+    {
+      "candidate_title": "ServiceNow AI Learning Days agent sessions",
+      "reason": "event_schedule_date_only_not_a_visible_publication_or_update_date_for_source material",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://servicenow.swoogo.com/ailearningdays2026/11105001"
+    },
+    {
+      "candidate_title": "Span Agent Environment Readiness page",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "source_url": "https://www.span.app/platform/ai-environment-readiness"
+    },
+    {
+      "candidate_title": "VS Code agent concepts documentation",
+      "reason": "missing_visible_publication_or_update_date",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/agents"
+    }
+  ],
+  "factual_summaries": [],
+  "follow_up_notes": [
+    "No strict-window qualifying public update was found for the selected leaves.",
+    "Several potentially relevant items were excluded because the only visible dates were relative, boundary-only, event-only, future-dated, missing, or outside the cutoff window.",
+    "No docs/wiki pages were updated by this watch run; broad ecosystem entity details remain upstream-owned under docs/wiki/federation.md."
+  ],
+  "leaf_universe_count": 85,
+  "named_entities": [
+    "AgentGov",
+    "Agentry",
+    "Anthropic",
+    "BOVO Digital",
+    "Business Insider",
+    "Cursor",
+    "Gemini API",
+    "Google",
+    "Hexgate",
+    "ITPro",
+    "MCP",
+    "Mechanize",
+    "Model Context Protocol",
+    "Okta",
+    "OpenAI",
+    "Proofpane",
+    "Red Hat",
+    "ServiceNow",
+    "Snowflake",
+    "Span",
+    "VS Code",
+    "Zapier"
+  ],
+  "qualifying_updates": [],
+  "run_timestamp_local": "2026-08-07T21:05:54-04:00",
+  "run_timestamp_utc": "2026-08-08T01:05:54Z",
+  "scanner_boundary": "Raw-only leaf watch; scanner output was saved under raw and not raw/processed; docs/wiki pages were not updated.",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+  ],
+  "source_urls_checked": [
+    "https://agenticrunbook.ai/blog/",
+    "https://agenticrunbook.ai/blog/ai-agent-stack-cto-guide/",
+    "https://agentry.news/",
+    "https://ai.google.dev/gemini-api/docs/agent-hooks",
+    "https://blog.modelcontextprotocol.io/tags/authorization/",
+    "https://blog.openreplay.com/review-ai-generated-code-difftastic/",
+    "https://business.rice.edu/executive-education/open-enrollment-programs/business-intelligence-artificial-intelligence",
+    "https://code.visualstudio.com/docs/agents/concepts/agents",
+    "https://cursor.com/en-US/changelog",
+    "https://docs.snowflake.com/en/user-guide/cortex-code-agent-sdk/hooks",
+    "https://github.com/openai/openai-agents-python/blob/main/docs/agents.md",
+    "https://help.zapier.com/hc/en-us/articles/47402591569805-Migrating-from-Agents-to-AI-by-Zapier",
+    "https://nerova.ai/blog/what-is-openai-agents-sdk-practical-guide-2026",
+    "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+    "https://openai.com/index/open-source-codex-orchestration-symphony/",
+    "https://openai.com/index/running-codex-safely/",
+    "https://proofpane.com/",
+    "https://repost.aws/articles/AR9OFGjcoCRAi1rfwb277ZFQ/using-strands-hooks-to-deterministically-control-your-agent",
+    "https://servicenow.swoogo.com/ailearningdays2026/11105001",
+    "https://support.okta.com/help/s/question/0D5WR00001uYYLn0AO/join-the-discussion-for-ask-me-anything-on-august-5-2026-okta-for-ai-agents?language=de",
+    "https://telnyx.com/release-notes/conversation-workflows-ai-assistants",
+    "https://vorlon.io/events/black-hat-2026?hsLang=en",
+    "https://voxel51.com/events/mcp-agents-skills-meetup-july-29-2026",
+    "https://www.agentgov.co/",
+    "https://www.agitraining.com/ai-classes/online-ai-classes/advanced-copilot-course-august-06-2026",
+    "https://www.bovo-digital.tech/en/blog/mcp-2026-specification-stateless-enterprise-agents",
+    "https://www.businessinsider.com/google-mechanize-deal-talent-tech-ai-coding-2026-8",
+    "https://www.deepinspect.ai/blog/autonomous-ai-agent-governance",
+    "https://www.hexgate.ai/",
+    "https://www.itpro.com/software/open-source/red-hat-launches-new-open-source-project-to-drive-ai-governance",
+    "https://www.span.app/platform/ai-environment-readiness",
+    "https://www.techwyse.com/news/ai-search/openai-agents-sdk-sandbox-execution-enterprise-marketing-automation"
+  ],
+  "upstream_owned_entities": [
+    "AgentGov",
+    "Anthropic",
+    "Cursor",
+    "Gemini API",
+    "Google",
+    "Hexgate",
+    "MCP",
+    "Mechanize",
+    "Model Context Protocol",
+    "OpenAI",
+    "Proofpane",
+    "Red Hat",
+    "ServiceNow",
+    "Snowflake",
+    "Span",
+    "VS Code",
+    "Zapier"
+  ]
+}
