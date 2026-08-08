@@ -1,0 +1,364 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-07T20:32:03-0400",
+  "run_timestamp_utc": "2026-08-08T00:32:03Z",
+  "cutoff_window": {
+    "start_utc": "2026-08-06T00:32:03Z",
+    "end_utc": "2026-08-08T00:32:03Z",
+    "rule": "Include only public sources with visible publication, update, event, or schedule dates inside the two-day run window; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owned_scope": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ]
+  },
+  "search_queries": [
+    "AI coding agent workflow audit logs approvals permissions August 7 2026",
+    "context engineering coding agents durable instructions August 7 2026",
+    "AI code review evals software engineering agents August 7 2026",
+    "MCP governed practice approvals audit logs coding agents August 7 2026",
+    "\"August 7, 2026\" \"AI coding\" \"agent\"",
+    "\"August 6, 2026\" \"coding agent\" \"AI\"",
+    "\"August 7, 2026\" \"Claude Code\"",
+    "\"August 6, 2026\" \"Claude Code\"",
+    "\"August 7, 2026\" \"Codex\" \"coding\"",
+    "\"August 6, 2026\" \"Codex\" \"coding\"",
+    "\"August 6, 2026\" \"Model Context Protocol\"",
+    "\"2026-08-07\" \"modelcontextprotocol\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "MCP Community Event foregrounds enterprise MCP deployment practice",
+      "url": "https://home.mlops.community/en/public/events/a-virtual-mcp-community-event-for-ai-builders-14x29g2kqp",
+      "source_type": "public event agenda",
+      "visible_date": "August 6, 2026",
+      "visible_date_type": "event_date",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The event agenda lists practice sessions on enterprise MCP deployments, the MCP 728 migration, governance for real-world agents, source-level findings from 100 TypeScript MCP servers, observability-stack MCP usage, and sandboxed multi-agent review swarms.",
+      "why_it_matters": "For this wiki, the local value is not broad MCP coverage but concrete operating practices: authentication and agent identity, tool management, observability, policy enforcement, scoped permissions, human-in-the-loop design, audit trails, static analysis of MCP server source, sandbox isolation, shared context, and multi-agent code review coordination.",
+      "named_entities": [
+        "Model Context Protocol",
+        "MCP 728",
+        "MCPeek",
+        "OWASP MCP Top 10",
+        "Agentic AI Foundation",
+        "MLOps Community",
+        "MintMCP",
+        "VictoriaMetrics",
+        "Motorola Solutions",
+        "Arcade.dev",
+        "Optum",
+        "Sahaj Software"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "MCP servers",
+        "MCPeek",
+        "OWASP MCP Top 10",
+        "Agentic AI Foundation",
+        "MLOps Community",
+        "MintMCP",
+        "VictoriaMetrics",
+        "Motorola Solutions",
+        "Arcade.dev",
+        "Optum",
+        "Sahaj Software"
+      ],
+      "local_practice_implication": "Route broad MCP ecosystem and product/entity coverage upstream; keep local notes to governed MCP migration planning, source-level MCP server review gates, scoped authorization, audit evidence, observability integration, and sandboxed multi-agent review workflow design.",
+      "follow_up_notes": [
+        "In a later ingest pass, consider whether current local retrieval-and-tools pages need a downstream practice note about MCP spec migration checklists and source-level MCP server scanning.",
+        "Do not create local encyclopedia pages for the named MCP projects or vendors."
+      ]
+    },
+    {
+      "title": "Claude Community Taiwan hosts hands-on Skill Evals workshop",
+      "url": "https://claude.tw/",
+      "source_type": "public community workshop page",
+      "visible_date": "August 6, 2026",
+      "visible_date_type": "event_date",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The workshop agenda is focused on building and evaluating Claude Code Skills, especially designing eval suites for existing skills, surfacing edge cases, and improving quality and reliability.",
+      "why_it_matters": "This is a practice-level signal that reusable coding-agent skills are being treated as testable artifacts. The local implication is to treat durable agent instructions, skills, and runbooks as software-like assets with explicit eval suites and edge-case checks.",
+      "named_entities": [
+        "Claude Community Taiwan",
+        "Claude Code",
+        "Claude Code Skill",
+        "AWS Taipei Office"
+      ],
+      "upstream_owned_entities": [
+        "Claude Community Taiwan",
+        "Claude Code",
+        "Claude Code Skill",
+        "AWS"
+      ],
+      "local_practice_implication": "Route Claude and Skill product/entity background upstream; keep local coverage to skill-eval workflow design, reusable instruction verification, and quality-stability checks before teams rely on shared skills.",
+      "follow_up_notes": [
+        "A later ingest pass can compare this against local pages for durable instructions, portable agent skills, and judge/grader boundaries.",
+        "No local product leaf should be created for Claude Code."
+      ]
+    },
+    {
+      "title": "SEMI session describes production EDA copilot governance stack",
+      "url": "https://www.semi.org/en/event/ai-techniques-workshop",
+      "source_type": "public conference agenda",
+      "visible_date": "August 6th, 2026",
+      "visible_date_type": "event_date",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "A SEMI workshop session describes a production semiconductor sign-off copilot with multi-agent decomposition, RAG over manuals and API catalogs, agent skills, two-way MCP integration, tiered action approval, API-hallucination guards, prompt sanitization, audit trails, and on-premise or air-gapped local-LLM deployment.",
+      "why_it_matters": "The agenda is a domain-specific example of moving from a wrapper around an LLM to a governed agent harness. The local practice signal is the combination of context retrieval, tool execution, customer-extensible skills, approval tiers, prompt sanitization, audit evidence, and deployment constraints for IP-sensitive engineering workflows.",
+      "named_entities": [
+        "SEMI",
+        "Synopsys",
+        "ANSYS",
+        "Deep-Agent framework",
+        "Model Context Protocol",
+        "EDA Copilot"
+      ],
+      "upstream_owned_entities": [
+        "SEMI",
+        "Synopsys",
+        "ANSYS",
+        "Deep-Agent framework",
+        "Model Context Protocol",
+        "EDA Copilot"
+      ],
+      "local_practice_implication": "Route companies, framework, and MCP background upstream; keep local notes to harness architecture for IP-sensitive workflows, API-catalog grounding, approval classes, prompt sanitization, audit trails, and local or air-gapped deployment decision points.",
+      "follow_up_notes": [
+        "A later ingest pass can use this as evidence for application harness patterns, agent environment readiness, and sensitive data controls.",
+        "Do not duplicate broad semiconductor, vendor, or MCP encyclopedia context locally."
+      ]
+    },
+    {
+      "title": "OpenAI Academy lists Codex team-workflows bootcamp",
+      "url": "https://academy.openai.com/en/public/events",
+      "source_type": "public events index",
+      "visible_date": "August 6, 2026",
+      "visible_date_type": "event_date",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "The OpenAI Academy events index lists 'Codex bootcamp 201: Team workflows' as a Builders livestream on August 6, 2026 and marks slides as available.",
+      "why_it_matters": "The local signal is that coding-agent practice is being taught as a team workflow, not only an individual coding surface. That aligns with local operating-model coverage for handoffs, shared instructions, approval boundaries, and repeatable team adoption practices.",
+      "named_entities": [
+        "OpenAI Academy",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "OpenAI Academy",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "local_practice_implication": "Route OpenAI and Codex product background upstream; keep local notes to team workflow design, shared task handoffs, training materials, and adoption practices for coding-agent use.",
+      "follow_up_notes": [
+        "If slides become publicly available as a stable URL, a later collector can capture the content rather than only the event-listing signal.",
+        "No local product leaf should be created for Codex."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "AWS Bedrock AgentCore registry key capabilities and namespace migration",
+      "url": "https://docs.aws.amazon.com/fr_fr/bedrock-agentcore/latest/devguide/registry-key-capabilities.html",
+      "visible_date": "August 6, 2026",
+      "exclusion_reason": "The visible date is an effective migration date, while no visible publication or update date was available on the opened source page; broad AWS AgentCore registry and service namespace details are upstream-owned entity coverage.",
+      "named_entities": [
+        "Amazon Bedrock AgentCore",
+        "AWS Agent Registry",
+        "MCP Server",
+        "EventBridge",
+        "CloudTrail"
+      ],
+      "upstream_owned_entities": [
+        "Amazon",
+        "AWS",
+        "Amazon Bedrock AgentCore",
+        "AWS Agent Registry",
+        "Model Context Protocol",
+        "EventBridge",
+        "CloudTrail"
+      ],
+      "local_routing_note": "Potential local implication would be registry migration governance and IAM endpoint update playbooks, but this run excludes it for date-evidence weakness."
+    },
+    {
+      "title": "Claude Code Docs code review page",
+      "url": "https://setup-code.com/index",
+      "visible_date": null,
+      "exclusion_reason": "No visible publication or update date inside the two-day window; search result indicated the page was crawled last month. The content is relevant to AI code review practice but fails the strict date rule.",
+      "named_entities": [
+        "Claude Code",
+        "Code Review",
+        "GitHub",
+        "CLAUDE.md",
+        "REVIEW.md"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "GitHub"
+      ],
+      "local_routing_note": "Potential local implication would be review trigger governance, neutral check-run semantics, machine-readable severity parsing, and review-specific instruction files."
+    },
+    {
+      "title": "Backslash Black Hat 2026 agentic AI endpoint security page",
+      "url": "https://www.backslash.security/blackhat-2026",
+      "visible_date": "August 4-6, 2026",
+      "exclusion_reason": "The visible date is an event range with no visible publication or update date; the page is vendor/product-oriented and broad security/vendor coverage is upstream-owned unless a later source provides current practice evidence.",
+      "named_entities": [
+        "Backslash",
+        "Black Hat 2026",
+        "Guardian",
+        "Cursor",
+        "Claude Code",
+        "Copilot",
+        "Windsurf",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Backslash",
+        "Black Hat",
+        "Guardian",
+        "Cursor",
+        "Claude Code",
+        "Copilot",
+        "Windsurf",
+        "Model Context Protocol"
+      ],
+      "local_routing_note": "Potential local implication would be endpoint inventory, MCP allow-lists, permission drift detection, source exfiltration blocking, and forensic tool-call traces."
+    },
+    {
+      "title": "ServiceNow Black Hat 2026 SecOps community event page",
+      "url": "https://www.servicenow.com/community/secops-events/servicenow-is-headed-to-black-hat-usa-2026/ec-p/3572072",
+      "visible_date": "August 6, 2026",
+      "exclusion_reason": "The visible date is a session/event date and the page was published weeks before the run window; broad ServiceNow platform and Black Hat session coverage is upstream-owned.",
+      "named_entities": [
+        "ServiceNow",
+        "Black Hat USA 2026",
+        "AI Control Tower",
+        "Armis",
+        "Veza",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "ServiceNow",
+        "Black Hat",
+        "AI Control Tower",
+        "Armis",
+        "Veza",
+        "Cursor"
+      ],
+      "local_routing_note": "Potential local implication would be runtime agent-governance controls and identity-aware tool-call blocking, but this source is excluded for date/publication mismatch."
+    },
+    {
+      "title": "VS Code context engineering guide",
+      "url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": null,
+      "exclusion_reason": "Search result only showed 'last week' and no exact visible publication or update date inside the two-day window, making the date ambiguous for this strict collector.",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "custom instructions",
+        "prompt files"
+      ],
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot"
+      ],
+      "local_routing_note": "Potential local implication would be project-wide context curation, implementation-plan prompts, and concise instruction files."
+    },
+    {
+      "title": "TechRadar AI monocultures code-review article",
+      "url": "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "visible_date": "Published 3 days ago",
+      "exclusion_reason": "The visible relative publication date is outside the two-day run window.",
+      "named_entities": [
+        "TechRadar"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar"
+      ],
+      "local_routing_note": "Potential local implication would be layered, independent AI review roles and separation of duties."
+    },
+    {
+      "title": "HackerRank Orchestrate August 2026 hackathon",
+      "url": "https://www.hackerrank.com/hackerrank-orchestrate-august26",
+      "visible_date": "August 3-7, 2026",
+      "exclusion_reason": "The visible date is a judging/live-evaluation range rather than a publication or update date; the page was crawled weeks before the run window.",
+      "named_entities": [
+        "HackerRank",
+        "Orchestrate",
+        "Claude Code",
+        "Cursor",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "HackerRank",
+        "Claude Code",
+        "Cursor",
+        "Codex"
+      ],
+      "local_routing_note": "Potential local implication would be AI-judge interview patterns and agent-output submission artifacts, but it is excluded for date-evidence weakness."
+    },
+    {
+      "title": "Agentic AI Foundation events index",
+      "url": "https://home.mlops.community/public/events",
+      "visible_date": "August 6, 2026",
+      "exclusion_reason": "The index duplicated the specific MCP community event that is already captured as a qualifying source; excluded to avoid duplicate coverage from the same event.",
+      "named_entities": [
+        "Agentic AI Foundation",
+        "MCP Community Event",
+        "Coding Agents Lunch & Learn"
+      ],
+      "upstream_owned_entities": [
+        "Agentic AI Foundation",
+        "Model Context Protocol"
+      ],
+      "local_routing_note": "Use the dedicated event page rather than the index when ingesting."
+    }
+  ],
+  "follow_up_notes": [
+    "This run found mostly event/workshop agenda evidence rather than conventional dated release notes or blog posts.",
+    "Later ingest should decide whether event-date evidence is strong enough for durable wiki synthesis or should remain raw-only until slides, recordings, or post-event materials are public.",
+    "No docs/wiki pages were updated by this collector.",
+    "No collector output was saved under raw/processed."
+  ],
+  "blockers": []
+}
