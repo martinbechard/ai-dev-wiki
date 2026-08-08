@@ -69,6 +69,8 @@ The July 29 raw sources add MCP migration and state-handle evidence. The [topic 
 
 The July 30 raw sources add IAM and approval-package evidence. The [leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) records resource-scoped MCP authorization, read/write capability separation, and per-tool permission checks, and the [topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces sandbox permissions for read, write, execute, and iterate workflows. Locally, MCP calls should preserve resource scope, task scope, exact action payload, human or policy approval evidence, and the executed payload so the audit trail can prove that approval and execution matched.
 
+The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds enterprise MCP deployment and source-review evidence. Broad MCP 728, MCPeek, OWASP MCP Top 10, vendor, and event coverage stays upstream-owned; locally, MCP migration and deployment plans should include conformance checks, source-level server review, authentication and agent-identity evidence, observability integration, policy enforcement, scoped permissions, human-in-the-loop approval, audit trails, sandbox isolation, shared context controls, and multi-agent review boundaries.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -133,6 +135,7 @@ The July 30 raw sources add IAM and approval-package evidence. The [leaf update 
 - Treat MCP protocol revisions as deployment lifecycle events that require conformance evidence, state-handle review, migration plans, approval checks, and updated audit joins.
 - Scope MCP authorization by resource, task, user or agent identity, and read/write capability before the tool is callable.
 - Preserve exact proposed and executed payloads for high-impact tool calls so approval evidence can be matched to action evidence.
+- Treat MCP deployment agendas and migration events as prompts to review conformance, source-level server findings, identity, policy, observability, sandbox, and audit evidence before expanding tool access.
 
 ## Authoritative Sources
 
@@ -183,6 +186,7 @@ The July 30 raw sources add IAM and approval-package evidence. The [leaf update 
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 
 ## Related Code
 
@@ -241,3 +245,4 @@ The July 30 raw sources add IAM and approval-package evidence. The [leaf update 
 - Maintained on 2026-07-27 with progressive MCP discovery, field-scope, managed-OAuth, API-log, and content-agent guardrail guidance.
 - Maintained on 2026-07-28 with cross-client managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, custom-agent, and remote-skill controls.
 - Maintained on 2026-07-29 with MCP protocol migration, explicit state-handle, conformance, approval, and audit-join guidance.
+- Maintained on 2026-08-07 with enterprise MCP deployment, source-level server review, observability, sandbox, and multi-agent review boundaries.

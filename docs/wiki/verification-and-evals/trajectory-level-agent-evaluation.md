@@ -47,6 +47,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 
 The August 5 sources add production-trace and coding-harness evidence. The [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md) frames trace review, proposed fixes, experiments, deployment, and monitoring as an improvement lifecycle, while the [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records coding-harness traces and approval-gated tools. Trajectory evaluation should therefore preserve the production failure trace, proposed change, experiment result, deployed version, and regression monitor together.
 
+The August 7 observability clippings add a trace-to-regression boundary. The [LLM observability quality gates](llm-observability-quality-gates.md) leaf owns tool-selection practice, while this page keeps the trajectory rule: production traces should be convertible into eval cases with the relevant prompt version, tool-call spans, retrieval context, component score, human annotation, and release decision. Final-output scores are not enough when a run can fail because of retrieval, tool choice, argument shape, memory, orchestration, or prompt drift.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -101,6 +103,7 @@ The August 5 sources add production-trace and coding-harness evidence. The [Lang
 - Preserve task provenance, contamination controls, harness configuration, verifier behavior, and cost per completed task before using benchmark results to justify workflow expansion.
 - Evaluate retrieval, memory, runtime constraints, tool authorization, abstention, refusal, and human-review paths as deployment evidence, not as model-only score details.
 - Diagnose failed or flat eval runs with an attribution taxonomy before changing prompts, model routes, or autonomy levels.
+- Convert production traces into trajectory-level regression cases when trace evidence can explain which step, tool call, retrieval span, or prompt version caused the failure.
 
 ## Authoritative Sources
 
@@ -129,6 +132,7 @@ The August 5 sources add production-trace and coding-harness evidence. The [Lang
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
+- [LLM observability quality gates](llm-observability-quality-gates.md)
 
 ## Related Code
 
@@ -148,6 +152,7 @@ The August 5 sources add production-trace and coding-harness evidence. The [Lang
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 - [agent harness components](../application-patterns/agent-harness-components.md)
 - [code review evals and rubrics](code-review-evals-and-rubrics.md)
+- [LLM observability quality gates](llm-observability-quality-gates.md)
 
 ## Open Questions
 
@@ -171,3 +176,4 @@ The August 5 sources add production-trace and coding-harness evidence. The [Lang
 - Maintained on 2026-07-26 with benchmark-realism, cost-per-task, system-level safety, retrieval, memory, tool-authorization, refusal, and human-escalation evaluation guidance.
 - Maintained on 2026-07-29 with failure-attribution taxonomy guidance for non-improving agent eval runs.
 - Maintained on 2026-08-05 with production-trace, experiment, deployment, and regression-monitor evidence for agent-loop improvements.
+- Maintained on 2026-08-07 with trace-to-regression, component-score, annotation, and release-decision evidence.

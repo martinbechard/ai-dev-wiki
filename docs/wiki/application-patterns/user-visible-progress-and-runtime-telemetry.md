@@ -41,6 +41,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds IDE agent-window and trace-routing evidence. Long-running coding-agent surfaces should show session state, subagent model and elapsed time, active tool calls, PR update state, and review context alongside trace identifiers so users can decide whether to supervise, interrupt, or accept the work.
 
+The August 7 observability clippings add an LLM application telemetry boundary. [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md) owns release-control practice, while this page owns the runtime surface: traces, prompt versions, cost, latency, errors, feedback, session replay, product events, and human annotations should be joinable when operators need to decide whether a user-facing AI workflow is healthy, degraded, costly, or quality-regressing.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -69,6 +71,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Show queue-triggered starts, live node traces, AI-processing audit records, remote-control viewing state, and human supervision events when an autonomous workflow or test run is active.
 - Show session state, subagent model, elapsed time, active tool calls, PR update state, and review context when IDE or agent-window workflows manage long-running coding tasks.
 - Keep trace identifiers and visible progress joined so a user can move from progress UI to audit or review evidence.
+- Join LLM traces, prompt versions, cost, latency, errors, feedback, product events, and human annotations when quality or release decisions depend on runtime behavior.
 
 ## Authoritative Sources
 
@@ -91,6 +94,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md)
 
 ## Related Code
 
@@ -110,6 +114,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [local model runtime harness](local-model-runtime-harness.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
+- [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md)
 
 ## Open Questions
 
@@ -132,3 +137,4 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Maintained on 2026-07-28 with per-user adoption, IDE OpenTelemetry, token-limit, MCP diagnostic, custom-agent, session-fork, and todo/progress telemetry guidance.
 - Maintained on 2026-07-31 with queue-trigger, live-node trace, AI-processing audit, remote viewing, and human-supervision telemetry guidance.
 - Maintained on 2026-08-04 with IDE agent-window session state, subagent timing, active tool-call, PR update, and trace-linkage guidance.
+- Maintained on 2026-08-07 with LLM trace, prompt-version, product-event, annotation, cost, latency, and quality-regression telemetry joins.

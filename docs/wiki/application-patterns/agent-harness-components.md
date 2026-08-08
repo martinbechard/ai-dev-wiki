@@ -57,6 +57,8 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 
 The August 5 sources add coding harness, fleet-manager, and managed-agent portability evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records repository-aware file operations, shell execution, URL fetching, MCP wiring, session reuse, instruction directories, approval handlers, approval-required tools, and OpenTelemetry tracing as coding-harness components. The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) routes terminal fleet-manager selection to [terminal-native agent fleet orchestration](../agent-workflows/terminal-native-agent-fleet-orchestration.md), while the [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md) routes provider control-plane portability to [managed agent portability boundaries](../adoption-and-operating-model/managed-agent-portability-boundaries.md).
 
+The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds production copilot and enterprise MCP harness evidence. IP-sensitive engineering copilots need API-catalog grounding, RAG over controlled manuals, customer-extensible skills, two-way MCP integration, approval tiers, API-hallucination guards, prompt sanitization, audit trails, and on-premise or air-gapped deployment options as harness components rather than prompt-only promises.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -104,6 +106,7 @@ The August 5 sources add coding harness, fleet-manager, and managed-agent portab
 - Treat practitioner workshop and book evidence as signals for expected harness components, then require local verification before adopting a specific implementation pattern.
 - Include repository file operations, shell execution, URL fetching, MCP wiring, session reuse, instruction directories, approval handlers, approval-required tools, and trace export in coding-agent harness reviews.
 - Separate terminal fleet-manager components from application-framework CLI lifecycle components when the harness must coordinate multiple coding-agent workers.
+- Include API-catalog grounding, prompt sanitization, approval tiers, audit trails, MCP integration, and local or air-gapped deployment decisions when a harness acts in IP-sensitive engineering workflows.
 
 ## Authoritative Sources
 
@@ -145,6 +148,7 @@ The August 5 sources add coding harness, fleet-manager, and managed-agent portab
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
+- [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 
 ## Related Code
 
@@ -198,3 +202,4 @@ The August 5 sources add coding harness, fleet-manager, and managed-agent portab
 - Maintained on 2026-07-31 with queue-triggered workflow state, live execution traces, AI-processing audit, model-policy gates, credential references, remote viewing, and human controls for autonomous testing.
 - Maintained on 2026-08-03 with workflow-selection, context, tool, state, approval, observability, dataset, rubric, judge, memory, checkpoint, and plan-implement-verify harness components.
 - Maintained on 2026-08-05 with coding harness components, terminal fleet-manager boundaries, and managed-agent portability routing.
+- Maintained on 2026-08-07 with IP-sensitive copilot harness components for API grounding, prompt sanitization, approval tiers, audit, MCP, and air-gapped deployment.

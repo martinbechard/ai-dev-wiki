@@ -14,6 +14,7 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - [judge-grader-boundaries.md](judge-grader-boundaries.md) records deterministic grader, human review, and LLM-as-judge boundaries.
 - [representative-workflow-calibration.md](representative-workflow-calibration.md) records representative prompts, tool-call calibration, and local model drift checks.
 - [trajectory-level-agent-evaluation.md](trajectory-level-agent-evaluation.md) records trace, transcript, tool-call, state-transition, and intermediate-decision evidence for agent workflow evaluation.
+- [llm-observability-quality-gates.md](llm-observability-quality-gates.md) records how traces, prompt versions, datasets, evals, and release decisions become deployment evidence.
 - [agent-assisted-performance-optimization-gates.md](agent-assisted-performance-optimization-gates.md) records correctness, baseline, representative workload, measurement, rollback, and approval gates for optimization agents.
 - [product-judgment-quality-gates.md](product-judgment-quality-gates.md) records product judgment gates, periodic health review, and pre-merge acceptance checks.
 
@@ -55,3 +56,4 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - Maintained on 2026-06-23 to split acceptance gates, code review evals, grader boundaries, and representative calibration into durable leaves.
 - Maintained on 2026-06-24 to add trajectory-level agent evaluation for trace and intermediate-decision evidence.
 - Maintained on 2026-07-17 to add performance-optimization acceptance gates for agent-assisted speedup work.
+- Maintained on 2026-08-07 to add LLM observability quality gates as a durable leaf.

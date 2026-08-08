@@ -47,6 +47,8 @@ The August 3 raw sources add repair-prioritization and deployment-eval evidence.
 
 The August 5 sources add coding-harness and trace-driven improvement evidence. The [leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) records approval-gated tools, OpenTelemetry traces, and session reuse as coding-agent verification surfaces, while the [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md) frames agent improvement as an agent development lifecycle: identify production trace errors, propose a fix, run experiments, deploy, and monitor for regressions.
 
+The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM observability quality gates](llm-observability-quality-gates.md) leaf owns the detailed practice: traces, prompt versions, datasets, human annotations, cost and latency telemetry, and release thresholds should be connected before an observability tool counts as a quality gate. The [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md) reinforces component-level and end-to-end evals for RAG, agents, tool use, MCP, multi-turn conversations, prompt alignment, hallucination, and structured output. The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) also treats reusable coding-agent skills as testable artifacts with edge-case suites.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -93,6 +95,8 @@ The August 5 sources add coding-harness and trace-driven improvement evidence. T
 - Keep datasets, rubrics, judge boundaries, release evidence, and retest triggers in the delivery path for agents that can execute or verify real work.
 - Use production traces as candidate failure evidence, then require experiment results and regression monitoring before shipping agent-loop fixes.
 - Preserve approval-gated tool calls, trace IDs, session reuse, and harness telemetry when a coding agent is evaluated through a production-style harness.
+- Treat LLM observability as a quality gate only when trace evidence, eval datasets, rubrics, thresholds, and release decisions are joined.
+- Evaluate reusable skills and instruction bundles with edge-case suites and safe service emulation before they become shared team procedure.
 
 ## Authoritative Sources
 
@@ -129,6 +133,9 @@ The August 5 sources add coding-harness and trace-driven improvement evidence. T
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
+- [LLM observability quality gates](llm-observability-quality-gates.md)
+- [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md)
+- [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 
 ## Related Code
 
@@ -152,6 +159,7 @@ The August 5 sources add coding-harness and trace-driven improvement evidence. T
 - [judge grader boundaries](judge-grader-boundaries.md)
 - [representative workflow calibration](representative-workflow-calibration.md)
 - [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
+- [LLM observability quality gates](llm-observability-quality-gates.md)
 
 ## Open Questions
 
@@ -178,3 +186,4 @@ The August 5 sources add coding-harness and trace-driven improvement evidence. T
 - Maintained on 2026-07-31 with deterministic-versus-agent-scored tool-schema evaluation and autonomous-test supervision evidence.
 - Maintained on 2026-08-03 with exploitable-risk repair metrics, adversarial retesting, datasets, rubrics, judge boundaries, release evidence, and retest triggers.
 - Maintained on 2026-08-05 with trace-driven agent improvement loops and coding-harness telemetry evidence.
+- Maintained on 2026-08-07 with LLM observability quality-gate routing and reusable skill-eval evidence.
