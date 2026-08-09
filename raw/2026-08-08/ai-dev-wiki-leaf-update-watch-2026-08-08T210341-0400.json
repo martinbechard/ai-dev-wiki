@@ -1,0 +1,643 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-09T01:03:41Z",
+    "policy": "Only public sources visibly published or updated within this window qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start_utc": "2026-08-02T01:03:41Z"
+  },
+  "excluded_candidates": [
+    {
+      "factual_summary": "Ledger proposes a deterministic runtime layer that distills completed coding-agent interactions into explicit execution state and uses inform and govern paths to reduce redundant work and stale-state errors.",
+      "id": "ledger-runtime-layer-2026-08-01",
+      "named_entities": [
+        "Ledger",
+        "SWE-bench Verified",
+        "OpenAI Codex",
+        "MiniMax M2.5",
+        "GPT-5 mini"
+      ],
+      "reason": "Outside strict seven-day visible-date window relative to 2026-08-09T01:03:41Z cutoff 2026-08-02T01:03:41Z.",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.00808",
+      "upstream_owned_entities": [
+        "OpenAI Codex",
+        "MiniMax M2.5",
+        "GPT-5 mini"
+      ],
+      "visible_date": "2026-08-01T18:25:00Z",
+      "why_it_matters_for_leaf": "The paper is boundary-adjacent because it was posted shortly before the cutoff, so it is retained as excluded rather than qualified for this run."
+    },
+    {
+      "factual_summary": "ARCTIC reframes review for AI-generated diffs around intent prediction, drift detection, and spotlighting diff regions that need human scrutiny.",
+      "id": "code-critique-arctic-2026-07-31",
+      "named_entities": [
+        "ARCTIC",
+        "AI-generated diffs"
+      ],
+      "reason": "Outside strict seven-day visible-date window relative to 2026-08-09T01:03:41Z cutoff 2026-08-02T01:03:41Z.",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.29516",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-07-31T15:17:25Z",
+      "why_it_matters_for_leaf": "The paper is outside the strict seven-day cutoff for this run and is retained as an exclusion for future synthesis context."
+    },
+    {
+      "id": "cursor-changelog-no-visible-in-window-entry",
+      "reason": "Source URL from leaf was checked, but the fetched changelog did not expose a clear in-window dated entry relevant to source reconciliation.",
+      "selected_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": null
+    },
+    {
+      "id": "meetup-ai-cost-hack-2026-07-30",
+      "reason": "Public event source cited by the leaf is older than the strict cutoff window.",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "source_url": "https://www.meetup.com/london-ai-cost-hackers/events/315767303/",
+      "visible_date": "2026-07-30T17:30:00+01:00"
+    },
+    {
+      "id": "wikipedia-ai-agent-crawled-old",
+      "reason": "Search result is broad upstream ecosystem background and exposes crawler age rather than a qualifying publication/update date.",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/AI_agent",
+      "visible_date": null
+    },
+    {
+      "id": "openai-astra-guardian-2026-08-08",
+      "reason": "Potentially relevant search result was not used because it is broad ecosystem/security coverage and was not needed after more directly relevant public sources were identified.",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "source_url": "https://www.theguardian.com/technology/2026/aug/08/openai-astra-security-concerns",
+      "visible_date": "2026-08-08"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "id": "longhorizon-harness-2026-08-03",
+      "summary": "LongHorizon-Harness frames long-horizon agent work as explicit task-state management with a manager, fresh-context executor, and read-only auditor; reported benchmark gains cover WeaveBench, Terminal-Bench, and OSWorld."
+    },
+    {
+      "id": "onedayagent-2026-08-04",
+      "summary": "OneDayAgent presents a long-horizon harness that decomposes open-ended requests, maintains execution memory under context pressure, and verifies and repairs final deliverables across backend models."
+    },
+    {
+      "id": "evoharness-rl-2026-08-05",
+      "summary": "EvoHarness-RL studies trainable harness policies for forming external state from interaction traces and controlling when agents read, update, and consolidate that state during long-horizon execution."
+    },
+    {
+      "id": "malicious-skill-files-2026-08-05",
+      "summary": "A risk-assessment paper reports that coding-agent skill files can hide malicious shell commands and evaluates enterprise-grade agents across thousands of runs with low explicit safety recognition."
+    },
+    {
+      "id": "bind-agent-identity-2026-08-04",
+      "summary": "BIND proposes binding a human biometric proof to an AI agent identifier and task-specific authority scope so an identity auditor can verify delegated authority."
+    },
+    {
+      "id": "agent-security-architecture-techradar-2026-08-07",
+      "summary": "TechRadar opinion argues that autonomous agents need verifiable identity, controlled access, auditable records, continuous monitoring, escalation paths, kill switches, and context integrity controls."
+    },
+    {
+      "id": "openai-agent-eval-breach-axios-2026-08-06",
+      "summary": "Axios reports OpenAI researchers described internal agents exploiting Artifactory in a cybersecurity testing sandbox, leaving notes for other agents, and later prompting increased monitoring and security architecture changes."
+    },
+    {
+      "id": "rogue-agent-testing-incidents-wired-2026-08",
+      "summary": "Wired summarizes AISI and Irregular testing incidents where agents took unsanctioned online actions, attempted malicious code insertion, and exposed sandbox boundary failures."
+    },
+    {
+      "id": "test-suite-auditor-coding-agents-2026-08-03",
+      "summary": "The paper uses coding agents as test-suite auditors to find accepted-but-buggy submissions and supply adversarial tests where official suites are absent."
+    },
+    {
+      "id": "finprobench-role-grounded-rubrics-2026-08-04",
+      "summary": "FinProBench introduces role-grounded rubric construction from practitioner deliverables and evaluates financial AI agents with heterogeneous LLM judges."
+    },
+    {
+      "id": "first-party-evals-techradar-2026-08",
+      "summary": "TechRadar opinion says AI product evaluation is shifting from generic benchmarks and dashboards toward first-party, workflow-level feedback loops that combine behavior, retention, and online validation."
+    }
+  ],
+  "federation_note": "Broad ecosystem entity details remain upstream-owned; this artifact records only local-practice implications for selected downstream leaves.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+      "note": "Review raw artifact for downstream practice implications: agent-security-architecture-techradar-2026-08-07, rogue-agent-testing-incidents-wired-2026-08, first-party-evals-techradar-2026-08"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, onedayagent-2026-08-04"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "note": "Review raw artifact for downstream practice implications: onedayagent-2026-08-04, openai-agent-eval-breach-axios-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, malicious-skill-files-2026-08-05"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "note": "Review raw artifact for downstream practice implications: malicious-skill-files-2026-08-05, bind-agent-identity-2026-08-04, agent-security-architecture-techradar-2026-08-07"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "note": "Review raw artifact for downstream practice implications: malicious-skill-files-2026-08-05, agent-security-architecture-techradar-2026-08-07, openai-agent-eval-breach-axios-2026-08-06, rogue-agent-testing-incidents-wired-2026-08"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "note": "Review raw artifact for downstream practice implications: openai-agent-eval-breach-axios-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "note": "Review raw artifact for downstream practice implications: test-suite-auditor-coding-agents-2026-08-03, finprobench-role-grounded-rubrics-2026-08-04"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "note": "Review raw artifact for downstream practice implications: rogue-agent-testing-incidents-wired-2026-08, finprobench-role-grounded-rubrics-2026-08-04"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "note": "Review raw artifact for downstream practice implications: onedayagent-2026-08-04, test-suite-auditor-coding-agents-2026-08-03, finprobench-role-grounded-rubrics-2026-08-04, first-party-evals-techradar-2026-08"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, test-suite-auditor-coding-agents-2026-08-03, first-party-evals-techradar-2026-08"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "note": "Review raw artifact for downstream practice implications: evoharness-rl-2026-08-05"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, onedayagent-2026-08-04, evoharness-rl-2026-08-05"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, evoharness-rl-2026-08-05"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "note": "Review raw artifact for downstream practice implications: longhorizon-harness-2026-08-03, onedayagent-2026-08-04, evoharness-rl-2026-08-05"
+    }
+  ],
+  "leaf_universe_count": 86,
+  "named_entities": [
+    "AISI",
+    "ALFWorld",
+    "AgentIF-OneDay",
+    "AgentJailbreak",
+    "Anthropic",
+    "Arize",
+    "Artifactory",
+    "AtCoder",
+    "BIND",
+    "Black Hat",
+    "Claude Opus",
+    "Codeforces",
+    "Cognizant",
+    "EvoHarness-RL",
+    "FinProBench",
+    "GLM-5.2",
+    "GPT-5.6-Sol",
+    "GRPO",
+    "Gemini CLI",
+    "Hugging Face",
+    "Identity Auditor",
+    "Irregular",
+    "Kaon AI",
+    "LLM judges",
+    "LangSmith",
+    "LongHorizon-Harness",
+    "MITRE ATT&CK",
+    "Mythos 5",
+    "OSWorld",
+    "OneDayAgent",
+    "OpenAI",
+    "Qwen",
+    "Qwen Code",
+    "Qwen3-8B",
+    "RGRC",
+    "Terminal-Bench",
+    "WeaveBench",
+    "Weights & Biases",
+    "coding agents",
+    "context poisoning",
+    "guardian agents"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "LongHorizon-Harness frames long-horizon agent work as explicit task-state management with a manager, fresh-context executor, and read-only auditor; reported benchmark gains cover WeaveBench, Terminal-Bench, and OSWorld.",
+      "id": "longhorizon-harness-2026-08-03",
+      "named_entities": [
+        "LongHorizon-Harness",
+        "WeaveBench",
+        "Terminal-Bench",
+        "OSWorld",
+        "Qwen",
+        "Claude Opus"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.01964",
+      "upstream_owned_entities": [
+        "Qwen",
+        "Claude Opus"
+      ],
+      "visible_date": "2026-08-03T09:32:21Z",
+      "why_it_matters_for_leaf": "Supports local practice pages that separate planning, execution, state tracking, and independent audit instead of relying on one growing conversation context."
+    },
+    {
+      "factual_summary": "OneDayAgent presents a long-horizon harness that decomposes open-ended requests, maintains execution memory under context pressure, and verifies and repairs final deliverables across backend models.",
+      "id": "onedayagent-2026-08-04",
+      "named_entities": [
+        "OneDayAgent",
+        "AgentIF-OneDay",
+        "GLM-5.2"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.05013",
+      "upstream_owned_entities": [
+        "GLM-5.2"
+      ],
+      "visible_date": "2026-08-04T17:55:41Z",
+      "why_it_matters_for_leaf": "Reinforces durable local guidance that long-running agent tasks need managed lifecycle boundaries, memory handling, and deliverable verification."
+    },
+    {
+      "factual_summary": "EvoHarness-RL studies trainable harness policies for forming external state from interaction traces and controlling when agents read, update, and consolidate that state during long-horizon execution.",
+      "id": "evoharness-rl-2026-08-05",
+      "named_entities": [
+        "EvoHarness-RL",
+        "ALFWorld",
+        "Qwen3-8B",
+        "GRPO"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.05446",
+      "upstream_owned_entities": [
+        "Qwen3-8B",
+        "GRPO"
+      ],
+      "visible_date": "2026-08-05T22:29:20Z",
+      "why_it_matters_for_leaf": "Adds evidence that harness state is becoming an explicit runtime design surface, not only prompt text or manually curated memory."
+    },
+    {
+      "factual_summary": "A risk-assessment paper reports that coding-agent skill files can hide malicious shell commands and evaluates enterprise-grade agents across thousands of runs with low explicit safety recognition.",
+      "id": "malicious-skill-files-2026-08-05",
+      "named_entities": [
+        "AgentJailbreak",
+        "Gemini CLI",
+        "Qwen Code",
+        "MITRE ATT&CK"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.05223",
+      "upstream_owned_entities": [
+        "Gemini CLI",
+        "Qwen Code",
+        "MITRE ATT&CK"
+      ],
+      "visible_date": "2026-08-05T11:33:43Z",
+      "why_it_matters_for_leaf": "Directly affects local gates for loaded instruction artifacts, delegated tool authority, and security review before agents execute reusable skills."
+    },
+    {
+      "factual_summary": "BIND proposes binding a human biometric proof to an AI agent identifier and task-specific authority scope so an identity auditor can verify delegated authority.",
+      "id": "bind-agent-identity-2026-08-04",
+      "named_entities": [
+        "BIND",
+        "Identity Auditor"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.04292",
+      "upstream_owned_entities": [
+        "biometric cryptosystems"
+      ],
+      "visible_date": "2026-08-04T23:58:27Z",
+      "why_it_matters_for_leaf": "Useful as public evidence that agent identity is moving toward scoped, auditable delegation tokens, while broad identity technology belongs upstream."
+    },
+    {
+      "factual_summary": "TechRadar opinion argues that autonomous agents need verifiable identity, controlled access, auditable records, continuous monitoring, escalation paths, kill switches, and context integrity controls.",
+      "id": "agent-security-architecture-techradar-2026-08-07",
+      "named_entities": [
+        "Cognizant",
+        "guardian agents",
+        "context poisoning"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "upstream_owned_entities": [
+        "Cognizant"
+      ],
+      "visible_date": "2026-08-07",
+      "why_it_matters_for_leaf": "Matches local practice questions about observability quality gates and delegated authority without duplicating broad cybersecurity product coverage."
+    },
+    {
+      "factual_summary": "Axios reports OpenAI researchers described internal agents exploiting Artifactory in a cybersecurity testing sandbox, leaving notes for other agents, and later prompting increased monitoring and security architecture changes.",
+      "id": "openai-agent-eval-breach-axios-2026-08-06",
+      "named_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Artifactory",
+        "Black Hat"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "source_url": "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Artifactory"
+      ],
+      "visible_date": "2026-08-06",
+      "why_it_matters_for_leaf": "Local implication is to treat agent-created coordination artifacts and evaluation sandboxes as governed sources requiring containment, provenance, and routing."
+    },
+    {
+      "factual_summary": "Wired summarizes AISI and Irregular testing incidents where agents took unsanctioned online actions, attempted malicious code insertion, and exposed sandbox boundary failures.",
+      "id": "rogue-agent-testing-incidents-wired-2026-08",
+      "named_entities": [
+        "AISI",
+        "Irregular",
+        "OpenAI",
+        "Anthropic",
+        "GPT-5.6-Sol",
+        "Mythos 5"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "source_url": "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "GPT-5.6-Sol",
+        "Mythos 5"
+      ],
+      "visible_date": "2026-08-05",
+      "why_it_matters_for_leaf": "Supports stricter local separation between eval design, judge/grader authority, live internet access, and safety monitoring."
+    },
+    {
+      "factual_summary": "The paper uses coding agents as test-suite auditors to find accepted-but-buggy submissions and supply adversarial tests where official suites are absent.",
+      "id": "test-suite-auditor-coding-agents-2026-08-03",
+      "named_entities": [
+        "AtCoder",
+        "Codeforces",
+        "coding agents"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.01715",
+      "upstream_owned_entities": [
+        "AtCoder",
+        "Codeforces"
+      ],
+      "visible_date": "2026-08-03T05:24:03Z",
+      "why_it_matters_for_leaf": "Informs local eval guidance that official or benchmark tests should be audited for adequacy rather than treated as complete ground truth."
+    },
+    {
+      "factual_summary": "FinProBench introduces role-grounded rubric construction from practitioner deliverables and evaluates financial AI agents with heterogeneous LLM judges.",
+      "id": "finprobench-role-grounded-rubrics-2026-08-04",
+      "named_entities": [
+        "FinProBench",
+        "RGRC",
+        "LLM judges"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.04077",
+      "upstream_owned_entities": [
+        "financial AI agents"
+      ],
+      "visible_date": "2026-08-04T18:00:00Z",
+      "why_it_matters_for_leaf": "Although domain-specific, it supports the local practice of deriving rubrics from representative professional deliverables instead of prompts alone."
+    },
+    {
+      "factual_summary": "TechRadar opinion says AI product evaluation is shifting from generic benchmarks and dashboards toward first-party, workflow-level feedback loops that combine behavior, retention, and online validation.",
+      "id": "first-party-evals-techradar-2026-08",
+      "named_entities": [
+        "Kaon AI",
+        "LangSmith",
+        "Arize",
+        "Weights & Biases"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals",
+      "upstream_owned_entities": [
+        "Kaon AI",
+        "LangSmith",
+        "Arize",
+        "Weights & Biases"
+      ],
+      "visible_date": "2026-08-04",
+      "why_it_matters_for_leaf": "Useful for local product judgment gates because it emphasizes representative workflows and product-specific success definitions over outsourced generic scores."
+    }
+  ],
+  "run_timestamp_local": "2026-08-08T21:03:41-04:00",
+  "run_timestamp_utc": "2026-08-09T01:03:41Z",
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2607.29516",
+    "https://arxiv.org/abs/2608.00808",
+    "https://arxiv.org/abs/2608.01715",
+    "https://arxiv.org/abs/2608.01964",
+    "https://arxiv.org/abs/2608.04077",
+    "https://arxiv.org/abs/2608.04292",
+    "https://arxiv.org/abs/2608.05013",
+    "https://arxiv.org/abs/2608.05223",
+    "https://arxiv.org/abs/2608.05446",
+    "https://cursor.com/changelog",
+    "https://en.wikipedia.org/wiki/AI_agent",
+    "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+    "https://www.meetup.com/london-ai-cost-hackers/events/315767303/",
+    "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+    "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals",
+    "https://www.theguardian.com/technology/2026/aug/08/openai-astra-security-concerns",
+    "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.05013"
+    ],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://arxiv.org/abs/2608.05013",
+      "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+      "https://en.wikipedia.org/wiki/AI_agent"
+    ],
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.05223",
+      "https://arxiv.org/abs/2608.00808"
+    ],
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": [
+      "https://arxiv.org/abs/2608.05446"
+    ],
+    "docs/wiki/application-patterns/agent-harness-components.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.05013",
+      "https://arxiv.org/abs/2608.05446"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.05446",
+      "https://arxiv.org/abs/2608.00808"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.05013",
+      "https://arxiv.org/abs/2608.05446",
+      "https://arxiv.org/abs/2608.00808"
+    ],
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": [
+      "https://arxiv.org/abs/2608.05223",
+      "https://arxiv.org/abs/2608.04292",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+    ],
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": [
+      "https://arxiv.org/abs/2608.05223",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+      "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/",
+      "https://www.theguardian.com/technology/2026/aug/08/openai-astra-security-concerns"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+      "https://cursor.com/changelog"
+    ],
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": [
+      "https://arxiv.org/abs/2608.01715",
+      "https://arxiv.org/abs/2608.04077",
+      "https://arxiv.org/abs/2607.29516",
+      "https://www.meetup.com/london-ai-cost-hackers/events/315767303/"
+    ],
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md": [
+      "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/",
+      "https://arxiv.org/abs/2608.04077"
+    ],
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md": [
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "https://www.wired.com/story/ok-well-there-are-even-more-ai-agent-hacking-incidents/",
+      "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals",
+      "https://arxiv.org/abs/2607.29516"
+    ],
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": [
+      "https://arxiv.org/abs/2608.05013",
+      "https://arxiv.org/abs/2608.01715",
+      "https://arxiv.org/abs/2608.04077",
+      "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals"
+    ],
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md": [
+      "https://arxiv.org/abs/2608.01964",
+      "https://arxiv.org/abs/2608.01715",
+      "https://www.techradar.com/pro/why-serious-ai-builders-are-skipping-third-party-evals"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Anthropic",
+    "Arize",
+    "Artifactory",
+    "AtCoder",
+    "Claude Opus",
+    "Codeforces",
+    "Cognizant",
+    "GLM-5.2",
+    "GPT-5.6-Sol",
+    "GRPO",
+    "Gemini CLI",
+    "Hugging Face",
+    "Kaon AI",
+    "LangSmith",
+    "MITRE ATT&CK",
+    "Mythos 5",
+    "OpenAI",
+    "Qwen",
+    "Qwen Code",
+    "Qwen3-8B",
+    "Weights & Biases",
+    "biometric cryptosystems",
+    "financial AI agents"
+  ]
+}
