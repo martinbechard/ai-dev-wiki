@@ -1,0 +1,310 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-09T00:32:25Z",
+  "run_timestamp_local": "2026-08-08T20:33:57-04:00",
+  "cutoff_window": {
+    "start": "2026-08-07T00:32:25Z",
+    "end": "2026-08-09T00:32:25Z",
+    "rule": "Include only public sources with visible publication, update, or event dates within the last 2 days relative to run time; exclude missing, ambiguous, future-dated, or cutoff-boundary-only dates."
+  },
+  "privacy_and_sensitivity": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "notes": "Collector used public web search and local wiki boundary checks only. No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad AI techniques"
+    ],
+    "local_owned_lens": [
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "source workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ],
+    "routing_note": "Named coding-agent products, model families, companies, conference hosts, and MCP implementations are recorded as upstream-owned entities where applicable; this artifact keeps only downstream AI-assisted development practice implications."
+  },
+  "searches": [
+    {
+      "query": "AI assisted development coding agent practice approval audit logs August 8 2026",
+      "notes": "Returned mostly out-of-window or broad ecosystem/product pages; inspected likely local-practice matches."
+    },
+    {
+      "query": "context engineering coding agents durable instructions August 8 2026",
+      "notes": "Search snippet surfaced Context Keeper as August 8, but the opened page showed July 29, 2026 and was excluded."
+    },
+    {
+      "query": "MCP governed practice coding agents approvals audit logs August 8 2026",
+      "notes": "Returned MCP product and registry material, most broad/upstream-owned or out of window."
+    },
+    {
+      "query": "AI code review evals coding agent TDD August 8 2026",
+      "notes": "Returned eval, code-review, and training items mostly dated weeks or months earlier."
+    },
+    {
+      "query": "\"August 8, 2026\" \"coding agent\"",
+      "notes": "Found Google Books entry with a visible August 7, 2026 publication date and a context-injection page whose opened date did not match the snippet."
+    },
+    {
+      "query": "\"August 9, 2026\" \"coding agent\"",
+      "notes": "Found COSCUP harness session with an August 9, 2026 event time."
+    },
+    {
+      "query": "\"August 8, 2026\" \"AI coding agents\" \"harness\"",
+      "notes": "Found an August 8 hackathon and July-dated software-factory pages; only the hackathon had an in-window visible event date."
+    }
+  ],
+  "qualifying_findings": [
+    {
+      "title": "COSCUP session frames coding-agent harnesses as enforceable trust boundaries",
+      "source_url": "https://coscup.org/2026/session/M8WTHA/",
+      "source_type": "conference session page",
+      "visible_date": "2026-08-09 14:50 ~ 15:20",
+      "date_basis": "visible event schedule date on the source page",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "The session explains that Claude Code, Gemini CLI, and OpenAI Codex rely on an external harness to organize context, execute tool calls, manage permissions, restrict operating scope, and preserve session or execution state. It contrasts model-driven planning and tool selection with external enforcement for permission, sandbox, credentials, resource limits, audit records, test results, and recovery.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a direct local-practice signal for harness architecture: as prompts and fixed workflows shrink, teams still need external controls for sandboxing, approvals, auditability, verification results, and recovery rather than trusting the model to self-enforce consequential boundaries.",
+      "named_entities": [
+        "COSCUP",
+        "UbuCon Asia",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI Codex",
+        "GemiClawDex",
+        "Claude Opus 5",
+        "Claude Fable 5",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "entity": "Gemini CLI",
+          "scope": "developer tool"
+        },
+        {
+          "entity": "OpenAI Codex",
+          "scope": "developer tool"
+        },
+        {
+          "entity": "Claude Opus 5",
+          "scope": "model"
+        },
+        {
+          "entity": "Claude Fable 5",
+          "scope": "model"
+        },
+        {
+          "entity": "Anthropic",
+          "scope": "company"
+        }
+      ],
+      "local_practice_implication": "Candidate ingest should update or cross-link harness leaves around model/external-system separation, sandbox and permission enforcement, audit-log capture, test-result evidence, session persistence, and recovery mechanisms while routing product/model details upstream.",
+      "follow_up_notes": [
+        "Treat the event schedule date as an in-window visible date, but verify whether a recording, slides, or source repository appears before durable synthesis.",
+        "If synthesized, avoid restating broad product comparisons; keep the durable page focused on harness-enforced trust boundaries."
+      ]
+    },
+    {
+      "title": "Algorithms and Programs promotes AI-checkable outlines as specification practice",
+      "source_url": "https://books.google.com/books/about/Algorithms_and_Programs.html?id=LimVEQAAQBAJ",
+      "source_type": "book listing",
+      "visible_date": "Aug 7, 2026",
+      "date_basis": "visible publication date on Google Books listing",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Google Books lists Eric Braude's Algorithms and Programs: An AI-Assisted Approach as published by Addison-Wesley Professional on August 7, 2026. The description says the book replaces traditional pseudocode with precise algorithm outlines that define intended outcomes, support correctness reasoning and invariants, and align with AI-assisted development tools.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is specification shape: AI-assisted coding benefits from structured, outcome-oriented algorithm outlines that can be translated into code and checked against correctness conditions, rather than vague natural-language prompts or loosely maintained pseudocode.",
+      "named_entities": [
+        "Algorithms and Programs: An AI-Assisted Approach",
+        "Eric Braude",
+        "Addison-Wesley Professional",
+        "Google Books",
+        "Boston University"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Google Books",
+          "scope": "product"
+        },
+        {
+          "entity": "Addison-Wesley Professional",
+          "scope": "company/publisher"
+        }
+      ],
+      "local_practice_implication": "Candidate ingest should connect outcome-oriented algorithm outlines to executable PRD templates, TDD acceptance criteria, and verification/eval rubrics for generated implementations.",
+      "follow_up_notes": [
+        "Before durable synthesis, prefer the publisher page or preview text if available to verify whether the AI-assisted practice guidance is substantial beyond the listing description.",
+        "Keep broad book/entity metadata upstream-owned; local wiki should preserve only the specification and verification implication."
+      ]
+    },
+    {
+      "title": "Dubai AI Hub hackathon uses coding agents with codebase-health judging",
+      "source_url": "https://www.competehub.dev/en/competitions/lumaevt-9BJOQ1KEIpxPwFH",
+      "source_type": "competition summary page",
+      "visible_date": "August 8, 2026",
+      "date_basis": "visible event date and same-day end status on the source page",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "The competition summary describes a one-day August 8, 2026 voice-agent hackathon where teams build with AI coding agents, integrate live web data, submit a demo video and repository link, and are judged on agentic engineering and codebase health.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local signal is adoption workflow design: even short AI-agent build events are asking for repository evidence and codebase-health review, not only demos, which supports using reviewable artifacts and quality gates in AI-assisted training and adoption exercises.",
+      "named_entities": [
+        "Dubai AI Hub",
+        "CompeteHub",
+        "ElevenLabs",
+        "Cognition",
+        "Devin",
+        "context.dev"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "ElevenLabs",
+          "scope": "company/product"
+        },
+        {
+          "entity": "Cognition",
+          "scope": "company"
+        },
+        {
+          "entity": "Devin",
+          "scope": "developer tool"
+        },
+        {
+          "entity": "context.dev",
+          "scope": "developer tool/product"
+        }
+      ],
+      "local_practice_implication": "Candidate ingest should route this to adoption and verification patterns for workshop or hackathon exercises: provide accounts early, require repository submission, make codebase health an explicit judging criterion, and preserve demo artifacts as review evidence.",
+      "follow_up_notes": [
+        "The page appears to be a summarized competition listing rather than the official event page; verify the official competition page if available before durable synthesis.",
+        "Do not create local product leaves for sponsors; route sponsor/product details upstream."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Context Injection Patterns for AI Coding Agents",
+      "source_url": "https://context.nimblabs.com/blog/context-injection-patterns-ai-agents",
+      "visible_date": "July 29, 2026",
+      "reason": "Opened page showed July 29, 2026, outside the cutoff window, despite search snippet saying August 8, 2026.",
+      "potential_local_topic": "context architecture; prompt and instructions; retrieval and tools"
+    },
+    {
+      "title": "Manage approvals and permissions",
+      "source_url": "https://code.visualstudio.com/docs/agents/run/approvals",
+      "visible_date": "8/5/2026",
+      "reason": "Official documentation is highly relevant to approvals, tool permissions, URL approvals, and sandboxing, but visible page date is outside the cutoff window.",
+      "potential_local_topic": "governance and risk; adoption and operating model; retrieval and tools"
+    },
+    {
+      "title": "AI Agent-Driven Research Course",
+      "source_url": "https://aihorizons.io/Seminars/ai-agent-driven-research/",
+      "visible_date": "Starting August 4, 2026",
+      "reason": "Course content is relevant to multi-step workflows, built-in checks, human review, and documentation of AI use, but the visible start date is outside the cutoff window and no in-window update date was visible.",
+      "potential_local_topic": "adoption and operating model; verification and evals"
+    },
+    {
+      "title": "Software Factory: Shipping Code with Fleets of AI Agents",
+      "source_url": "https://murraycole.com/posts",
+      "visible_date": "July 8, 2026",
+      "reason": "Relevant to coding-agent fleet operating models, but visible date is outside the cutoff window.",
+      "potential_local_topic": "agent workflows; adoption and operating model"
+    },
+    {
+      "title": "What Is a Software Factory? How AI Agents Ship Code",
+      "source_url": "https://murraycole.com/posts",
+      "visible_date": "July 8, 2026",
+      "reason": "Search result and opened listing show July 8, 2026, outside the cutoff window.",
+      "potential_local_topic": "agent workflows; verification and evals"
+    },
+    {
+      "title": "Gantt Tracker Obsidian plugin",
+      "source_url": "https://community.obsidian.md/plugins/gantt-tracker",
+      "visible_date": "example dates include 2026-08-07 and 2026-08-08",
+      "reason": "The page mentions AI-agent-friendly AGENTS.md and FORMAT.md artifacts, but the in-window dates appear only in example data, not as publication, update, or event dates.",
+      "potential_local_topic": "prompt and instructions; source workflows"
+    },
+    {
+      "title": "ChatForest AI builder daily news index",
+      "source_url": "https://chatforest.com/",
+      "visible_date": "multiple visible dates, mostly June and July 2026",
+      "reason": "Relevant snippets were mostly broad ecosystem/product/model coverage or outside the cutoff window; in-window references were not local AI-assisted development practice updates.",
+      "potential_local_topic": "federation routing; upstream AI wiki"
+    },
+    {
+      "title": "Founder-Led Sales 2026: HubSpot CRM vs Item 12 LinkedIn MCP",
+      "source_url": "https://www.item12.com/blog/founder-led-sales-2026-hubspot-vs-item12-mcp",
+      "visible_date": "August 9, 2026",
+      "reason": "In-window and MCP-related, but focused on founder-led sales workflow rather than AI-assisted software development practice.",
+      "potential_local_topic": "excluded as non-local-topic"
+    },
+    {
+      "title": "VS Code context engineering guide",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": "search snippet only: last week",
+      "reason": "Highly relevant, but no precise visible in-window date was confirmed during this run.",
+      "potential_local_topic": "context architecture; prompt and instructions; coding practices"
+    },
+    {
+      "title": "Building AX evals that actually work",
+      "source_url": "https://developer.microsoft.com/blog/building-ax-evals-that-actually-work",
+      "visible_date": "July 15, 2026",
+      "reason": "Relevant to software engineering evals for coding agents, but outside the cutoff window and already likely covered by prior collector runs.",
+      "potential_local_topic": "verification and evals"
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 3,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Prioritize verification of any follow-on materials from the COSCUP harness session before durable ingest.",
+    "Consider a future source refresh for the VS Code approvals and context-engineering docs when they expose precise in-window update dates.",
+    "Keep all broad product, model, company, MCP server, and framework details routed to the upstream AI wiki; local wiki should ingest only practice implications."
+  ]
+}
