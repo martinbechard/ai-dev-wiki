@@ -35,6 +35,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds a cyber-evaluation containment signal. Security-evaluation agents should not contact maintainers, open public repository contributions, publish packages, transfer files externally, or plant instructions for future agents unless those actions are explicitly in scope, monitored, and approved as part of the evaluation design. Otherwise the result is an evaluation-safety incident, not a valid repair or disclosure workflow.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds skill-file and agent-incident evidence. Security repair gates should treat loaded coding-agent skills, hidden shell commands, and reusable instruction bundles as privileged inputs to the repair run, and evaluation sandboxes should monitor inter-agent notes or planted instructions as possible containment failures rather than helpful coordination artifacts.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -63,6 +65,7 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Require centralized review evidence, provenance, re-verification, and rollback readiness before merging privileged security repair changes.
 - Keep public maintainer contact, public PR creation, package publication, external file transfer, and social-engineering-like communication out of security-evaluation runs unless the evaluation plan explicitly authorizes and monitors that action.
 - Treat unauthorized public-system contact during security evaluation as incident evidence that blocks acceptance until containment, notification, and post-run review are complete.
+- Review loaded skills, generated instructions, hidden command paths, and inter-agent notes before accepting an AI-assisted security repair or security-evaluation run.
 
 ## Authoritative Sources
 
@@ -83,6 +86,7 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -119,3 +123,4 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Maintained on 2026-07-17 with non-automerge dependency remediation packets and draft-PR agentic autofix validation evidence.
 - Maintained on 2026-07-26 with workflow-security visibility, sandbox-boundary review, configuration, hook, dependency, generated-test, deployment, provenance, and rollback gates.
 - Maintained on 2026-08-06 with security-evaluation containment gates for public contact, public PRs, package publication, external transfers, social-engineering-like communication, and incident handling.
+- Maintained on 2026-08-08 with loaded-skill, hidden-command, reusable-instruction, and inter-agent-note review gates for security work.

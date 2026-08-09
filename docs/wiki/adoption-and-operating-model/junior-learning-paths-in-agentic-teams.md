@@ -19,6 +19,8 @@ The [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-w
 
 The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) adds labor-market evidence that AI coding tools can concentrate productivity gains with senior engineers while automating simpler debugging and feature work. The local learning-path rule is to preserve hands-on debugging, review, and technical-judgment practice for juniors even when agents can produce the first draft faster.
 
+The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds a training-event signal. Agent workshops and hackathons should require participants to submit repositories and reviewable artifacts, not only demos, so juniors practice explaining agent choices, codebase health, verification evidence, and handoff quality under supervision.
+
 ## Practice Boundaries
 
 - Protect junior practice paths while using senior-led pods for high-leverage execution.
@@ -28,6 +30,7 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Sequence junior responsibility from structured prompting and source-backed retrieval through tool governance, RAG provenance, agent execution, benchmark design, and guardrail work.
 - Pair broader agent permissions with supervised evidence that the developer can explain context selection, tool use, verification, and rollback.
 - Preserve junior debugging, simple-feature, review, and correction practice deliberately when agents absorb the easiest implementation tasks.
+- Use training events to practice repository evidence, codebase-health review, verification explanation, and supervised handoff rather than only demo delivery.
 
 ## Authoritative Sources
 
@@ -35,6 +38,7 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - [senior led agentic execution pods](senior-led-agentic-execution-pods.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 
 ## Related Code
 
@@ -63,3 +67,4 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 - Created on 2026-06-23 from source-backed guidance on the hourglass organization, junior practice, and long-term expertise pipelines.
 - Maintained on 2026-07-09 with staged developer learning from prompting through tool governance, RAG, agents, benchmarks, and guardrails.
 - Maintained on 2026-07-25 with explicit junior debugging, simple-feature, review, correction, and technical-judgment practice preservation.
+- Maintained on 2026-08-08 with training-event guidance for repository evidence, codebase-health review, verification explanation, and supervised handoff.

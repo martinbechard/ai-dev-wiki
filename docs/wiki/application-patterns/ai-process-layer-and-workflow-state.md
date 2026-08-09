@@ -23,6 +23,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json) adds queue-backed orchestration and autonomous test execution as process-layer state examples. A queue item, single-node trace, credential reference, remote-control viewing session, and human intervention event should remain durable workflow state rather than transient model context.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds long-horizon harness evidence for state policy. A manager, fresh-context executor, read-only auditor, execution memory, and learned state-update policy all reinforce that the process layer should decide which task state is durable, which state is injected into a fresh model context, and which state is locked as audit-only evidence.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -38,6 +40,7 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Define which state bucket is authoritative before a long-running agent workflow resumes, retries, or asks for human input.
 - Use [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md) when branching, human approvals, checkpoints, and tool-call policy need source review before runtime execution.
 - Store queue events, execution-node traces, credential-reference choices, remote-viewing status, and human intervention events as durable workflow state when autonomous tests or flows run.
+- Treat long-horizon manager state, executor context, auditor observations, and learned memory updates as separate process-layer state channels with explicit authority.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - [July 7 leaf update watch source](../../../raw/processed/2026-07-07/ai-dev-wiki-leaf-update-watch-2026-07-07T210326-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 
 ## Related Code
@@ -82,3 +86,4 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Maintained on 2026-07-07 with long-running execution history, event-log, human-wait, state-bucket, and memory-retention boundaries.
 - Maintained on 2026-07-28 with declarative workflow, branching, tool-call, human-approval, checkpoint, and resume-state guidance.
 - Maintained on 2026-07-31 with queue event, execution-node trace, credential-reference, remote-viewing, and human-intervention state guidance.
+- Maintained on 2026-08-08 with manager, fresh-context executor, read-only auditor, and learned state-policy boundaries.

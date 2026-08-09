@@ -33,6 +33,8 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) and [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) add team-readiness signals for governed adoption. Adoption agreements should link [agent environment readiness](../application-patterns/agent-environment-readiness.md), repository guidance, worktree isolation, approval surfaces, reusable skills, independent grading, and staged code-review practice before moving from individual agent use to shared team workflows.
 
+The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds an adoption-exercise signal. Hackathons and workshops that use coding agents should provide access and scope early, require repository evidence, preserve demo artifacts, and make codebase health or agentic-engineering review explicit so training exercises build review habits rather than only presentation skill.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -62,6 +64,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Tie each adopted AI workflow to a named owner, data-readiness check, source-freshness path, runbook, approval gate, logs, cost-per-outcome evidence, and recurring operating review.
 - Treat usage metrics as adoption inputs, not success criteria, until useful outcomes and upkeep responsibilities are visible.
 - Include environment readiness, repository instructions, approval surfaces, worktree isolation, reusable skills, independent grading, and code-review practice in shared team-agent rollout.
+- Design agent hackathons and workshops with account readiness, repository submission, demo artifacts, codebase-health review, and explicit agentic-engineering criteria.
 
 ## Authoritative Sources
 
@@ -80,6 +83,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 
 ## Related Code
 
@@ -117,3 +121,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Maintained on 2026-07-17 with running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence.
 - Maintained on 2026-07-25 with workflow ownership, source freshness, data readiness, runbooks, approval gates, logs, cost-per-outcome, and recurring review cadence.
 - Maintained on 2026-07-30 with team-agent rollout guidance for environments, repository instructions, approvals, worktrees, skills, independent grading, and review practice.
+- Maintained on 2026-08-08 with agent hackathon and workshop evidence requirements for repositories, demos, and codebase-health review.

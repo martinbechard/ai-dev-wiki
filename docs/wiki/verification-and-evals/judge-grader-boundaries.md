@@ -23,6 +23,8 @@ The [agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Ha
 
 The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json) adds current grader-comparison signals. Deterministic graders should own exact rules, schemas, and measurable properties, while LLM judges should be reserved for semantic quality or tradeoff judgments with calibrated rubrics and sampled human review. Human review remains the fallback when grader disagreement changes release, product, or security risk.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds adversarial-test and role-grounded-rubric evidence. Deterministic graders should still own generated adversarial tests and exact pass/fail outcomes, while human or calibrated model judges can score role-specific professional quality only when the rubric is derived from representative deliverables and disagreement is preserved with the trace.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -39,6 +41,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Decide whether the grader is scoring an agent step, an output artifact, a trace, or a thread before choosing deterministic assertions, human review, or an LLM judge.
 - Use deterministic graders for exactness, LLM judges for calibrated semantic judgment, and human review for consequential grader disagreement.
 - Keep grader disagreement, calibration examples, and human override reasons with the scored trace when the result affects release or security posture.
+- Keep generated adversarial tests, role-grounded rubric sources, heterogeneous judge outputs, and human override reasons separate when a benchmark or domain eval combines hard correctness with professional judgment.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json)
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -79,3 +83,4 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 - Maintained on 2026-06-26 with trace-linked judge results and judge-provider governance.
 - Maintained on 2026-06-30 with step, content, trace, and thread scoring boundaries for agent evals.
 - Maintained on 2026-07-16 with deterministic-grader, LLM-judge, and human-review disagreement boundaries.
+- Maintained on 2026-08-08 with adversarial-test, role-grounded-rubric, heterogeneous-judge, and trace-linked override boundaries.

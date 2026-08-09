@@ -59,6 +59,8 @@ The August 5 sources add coding harness, fleet-manager, and managed-agent portab
 
 The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds production copilot and enterprise MCP harness evidence. IP-sensitive engineering copilots need API-catalog grounding, RAG over controlled manuals, customer-extensible skills, two-way MCP integration, approval tiers, API-hallucination guards, prompt sanitization, audit trails, and on-premise or air-gapped deployment options as harness components rather than prompt-only promises.
 
+The August 8 sources add external-enforcement and long-horizon state evidence. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) frames coding-agent harnesses as the place where permissions, sandbox scope, credentials, resource limits, audit records, test results, and recovery are enforced outside model reasoning. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds manager, fresh-context executor, read-only auditor, execution memory, and trainable state-policy evidence for long-horizon work. Broad tool, model, benchmark, and conference entities remain upstream-owned; locally, these are harness component responsibilities.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -107,6 +109,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Include repository file operations, shell execution, URL fetching, MCP wiring, session reuse, instruction directories, approval handlers, approval-required tools, and trace export in coding-agent harness reviews.
 - Separate terminal fleet-manager components from application-framework CLI lifecycle components when the harness must coordinate multiple coding-agent workers.
 - Include API-catalog grounding, prompt sanitization, approval tiers, audit trails, MCP integration, and local or air-gapped deployment decisions when a harness acts in IP-sensitive engineering workflows.
+- Keep permission enforcement, sandbox boundaries, credential access, resource limits, audit records, test evidence, recovery state, manager/executor/auditor separation, and harness-owned memory outside model discretion for long-horizon coding work.
 
 ## Authoritative Sources
 
@@ -149,6 +152,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -203,3 +208,4 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Maintained on 2026-08-03 with workflow-selection, context, tool, state, approval, observability, dataset, rubric, judge, memory, checkpoint, and plan-implement-verify harness components.
 - Maintained on 2026-08-05 with coding harness components, terminal fleet-manager boundaries, and managed-agent portability routing.
 - Maintained on 2026-08-07 with IP-sensitive copilot harness components for API grounding, prompt sanitization, approval tiers, audit, MCP, and air-gapped deployment.
+- Maintained on 2026-08-08 with externally enforced trust boundaries, manager/executor/auditor separation, and long-horizon harness state controls.

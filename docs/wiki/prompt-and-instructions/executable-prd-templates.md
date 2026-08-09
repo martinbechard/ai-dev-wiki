@@ -24,6 +24,8 @@ The July 27 routing source also mentions cost envelopes and version-controlled t
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds requirements-to-review workflow evidence. When an AI-native build workflow packages brand or product context, requirements, coding-agent prompts, code review, deployment, analytics, and search into one instructional chain, the executable PRD should identify which fields become coding input, which become review criteria, and which become deployment verification evidence.
 
+The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds algorithm-outline evidence from an AI-assisted algorithms book listing. The local implication is specification shape: executable PRDs and algorithm outlines should define intended outcomes, invariants, correctness conditions, and acceptance checks in a form that a coding agent can translate into implementation and that a verifier can check.
+
 ## Practice Boundaries
 
 - Include allowed tools, human approval points, fallback or escalation behavior, logging requirements, and verification seeds when a PRD is loaded by a coding agent.
@@ -31,12 +33,14 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Link implementation plans and review gates back to the PRD fields that created the agent's authority.
 - Treat routing newsletters or secondary summaries as pointers until primary template sources are reviewed.
 - Keep PRD generation, coding-agent prompts, code review criteria, and deployment verification linked as one chain when a workflow teaches end-to-end AI-assisted builds.
+- Capture intended outcomes, invariants, correctness conditions, and acceptance checks explicitly when an algorithm outline becomes coding-agent input.
 
 ## Authoritative Sources
 
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [Product Map PRD guardrails source](https://www.productmap.io/blog/prd-for-ai-agent-guardrails)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
 - [instruction hierarchy and artifact boundaries](instruction-hierarchy-and-artifact-boundaries.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
@@ -69,3 +73,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 - Created on 2026-07-27 from July 27 raw-source evidence about PRD templates as executable agent inputs.
 - Maintained on 2026-07-30 with PRD-to-code-review-to-deployment workflow chaining for AI-native build instruction.
+- Maintained on 2026-08-08 with AI-checkable algorithm outline fields for outcomes, invariants, correctness conditions, and acceptance checks.

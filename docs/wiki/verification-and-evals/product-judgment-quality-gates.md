@@ -21,6 +21,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) adds human-in-the-loop trust evidence. Product judgment gates should keep human review proportional to the risk of accepting AI-generated work.
 
+The August 8 sources add long-horizon deliverable and adoption-exercise evidence. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) reinforces that open-ended agent deliverables need final verification and repair evidence, not only task decomposition. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds a hackathon signal: demo video and repository submission are stronger product-judgment evidence when paired with codebase-health review and agentic-engineering criteria.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -35,6 +37,7 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - Tie product acceptance to outcome, quality, cost, latency, and reviewer-burden evidence rather than only model score or generated artifact presence.
 - Connect agentic eval pipelines to traces, deterministic checks, LLM judges, and human product review before using them as release gates.
 - Apply equal-or-stricter human review for AI-generated product work when release risk, user impact, compliance, or business alignment is material.
+- Pair demos with repository evidence, codebase-health review, and final deliverable repair records when evaluating AI-agent build exercises or open-ended agent tasks.
 
 ## Authoritative Sources
 
@@ -46,6 +49,8 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -76,3 +81,4 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 - Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.
 - Maintained on 2026-07-16 with productivity-outcome, reviewer-burden, trace-linked eval-pipeline, and multi-signal product quality gates.
 - Maintained on 2026-07-26 with equal-or-stricter human review guidance for AI-generated product work under release, user, compliance, or business-alignment risk.
+- Maintained on 2026-08-08 with demo-plus-repository evidence, codebase-health judging, and final deliverable repair gates.

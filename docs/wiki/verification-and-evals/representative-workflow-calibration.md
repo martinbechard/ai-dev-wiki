@@ -31,6 +31,8 @@ The [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-d
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) and [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json) add cost-aware benchmark and public repository signal evidence. Calibration should compare complete agent stacks and local task fit instead of promoting aggregate solve rate alone.
 
+The August 8 sources add long-horizon, adversarial-test, and first-party eval signals. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) supports calibration tasks that exercise manager/executor/auditor separation, context pressure, execution memory, test-suite adequacy, and role-grounded rubrics. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds repository-submission and codebase-health review as calibration evidence for AI-agent training events.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -51,6 +53,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Use fresh task variants, sandbox behavior monitoring, benchmark-anti-gaming checks, and earlier pre-deployment calibration when public benchmark windows are short or saturated.
 - Compare task realism, repository exploration, contamination resistance, verifier determinism, and human-review evidence when benchmark results influence local calibration.
 - Compare dollars per completed task, tokens, wall-clock time, and workflow fit before adopting benchmark rankings or community telemetry as operating defaults.
+- Include long-horizon state management, final deliverable repair, adversarial test-suite auditing, role-grounded rubrics, repository evidence, and codebase-health criteria when those match the local workflow.
 
 ## Authoritative Sources
 
@@ -68,6 +71,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -102,3 +107,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-24 with benchmark-domain mapping and context-distractor calibration guidance.
 - Maintained on 2026-07-25 with evaluation-window, benchmark-saturation, anti-gaming, sandbox-monitoring, and pre-deployment calibration guidance.
 - Maintained on 2026-07-26 with whole-agent-stack efficiency, contamination-resistant benchmark, public-repository review, and cost-per-completed-task calibration guidance.
+- Maintained on 2026-08-08 with long-horizon state, adversarial-test, role-grounded-rubric, repository-evidence, and codebase-health calibration guidance.

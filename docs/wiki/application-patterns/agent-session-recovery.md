@@ -13,6 +13,8 @@ Agent session recovery preserves enough durable state for a long-running agent w
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces long-job durability and restart behavior as coding-agent environment criteria. The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds file-backed wiki and recovery-feature evidence. Locally, a recoverable session needs both a trustworthy environment and durable evidence that a resumed human or agent can inspect.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds long-horizon harness evidence: state should survive fresh executor contexts, and auditor observations should remain inspectable without being overwritten by the next model step. Recovery records should therefore separate task plan, execution memory, verifier or auditor findings, and final artifact evidence.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -20,11 +22,13 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Treat recovered filesystem state as untrusted until current instructions, source files, and validation evidence are rechecked.
 - Link recovery records to the environment, approval, tool-call, and verification evidence that made the prior work acceptable.
 - Archive or reset recovery state when it no longer matches the live repository or accepted plan.
+- Separate task plan, execution memory, auditor findings, and artifact evidence so resumed work can rehydrate needed state without rewriting audit history.
 
 ## Authoritative Sources
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -53,3 +57,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 ## Maintenance Notes
 
 - Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.
+- Maintained on 2026-08-08 with fresh-context executor, read-only auditor, execution-memory, and artifact-evidence recovery boundaries.

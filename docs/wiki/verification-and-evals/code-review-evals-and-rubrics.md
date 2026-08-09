@@ -43,6 +43,8 @@ The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-d
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) and primary [London AI Cost Hack event page](https://www.meetup.com/london-ai-cost-hackers/events/315767303/) add two review-eval refinements. Compiler or static-analysis diagnostics should be scored separately from model review comments because they provide deterministic architecture feedback. Cost-constrained code-review challenges should also score usefulness, bug and security coverage, risk classification, and cost together rather than treating model choice as the only variable.
 
+The August 8 sources add test-suite-auditor, role-grounded-rubric, and event-adoption signals. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) supports using coding agents to audit benchmark or contest test suites for accepted-but-buggy submissions and to derive rubrics from representative professional deliverables. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds a hackathon signal that codebase-health review can be an explicit judging criterion, so review evals should score repository evidence and codebase health alongside demo success.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -75,6 +77,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Score whether review results separate implementation, architecture, and security findings when those roles are expected to catch different failure modes.
 - Score deterministic compiler or static-analysis findings separately from model-generated review comments.
 - Include usefulness, bug and security coverage, risk classification, and cost as separate dimensions for cost-constrained code-review agents.
+- Include test-suite adequacy, adversarial test generation, role-grounded rubric fields, repository submission evidence, and codebase-health review when the review workflow judges AI-agent build outputs.
 
 ## Authoritative Sources
 
@@ -101,6 +104,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [London AI Cost Hack event page](https://www.meetup.com/london-ai-cost-hackers/events/315767303/)
+- [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 
 ## Related Code
 
@@ -142,3 +147,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Maintained on 2026-07-26 with right-file, process-adherence, trace-artifact, repeated-run, cost, latency, and human-review eval criteria.
 - Maintained on 2026-07-27 with layered implementation, architecture, and security review-role scoring.
 - Maintained on 2026-07-30 with deterministic diagnostic scoring and cost-constrained code-review eval dimensions after live primary-source corroboration.
+- Maintained on 2026-08-08 with test-suite-auditor, role-grounded-rubric, repository-evidence, and codebase-health review criteria.

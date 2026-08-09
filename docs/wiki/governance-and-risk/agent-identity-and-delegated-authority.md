@@ -39,6 +39,8 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The August 3 raw sources add three delegated-authority refinements. The [midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json) reinforces that existing identity, owner, purpose, permission, lifecycle, audit, discovery, task-credential, and zero-trust controls apply to agents as first-class actors. The [evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) adds agentic commerce and AgentProfile signals: agent actions need proof of delegated intent, authenticated agent identity, bounded credentials, cost attribution, central deprovisioning, and dispute-quality records. Broad company, payment, standard, and product background stays upstream; locally, this page owns the evidence fields that prove who authorized the agent and how the agent stayed inside scope.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds identity and instruction-supply-chain pressure. Biometric or otherwise high-assurance delegation proposals are broad ecosystem material, but locally they reinforce the same requirement: every delegated agent action needs a human authorizer, machine actor, task-specific authority scope, credential boundary, and independent audit record. Malicious skill-file evidence also means identity records should include which reusable instruction artifact was loaded when authority was exercised.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -66,6 +68,7 @@ The August 3 raw sources add three delegated-authority refinements. The [midday 
 - Record access grants and review outcomes for asynchronous or multi-agent work so delegated authority can be reconstructed after the run.
 - Treat agent commerce, SaaS, developer-tool, and automation actions as delegated-intent problems: record the authorizer, agent identity, bounded credential, allowed purpose, cost owner, and revocation path.
 - Preserve dispute-quality records for consequential agent actions, including what permission was granted, which scope constrained it, which credential was used, and which evidence proves the agent stayed inside scope.
+- Record loaded skill files or reusable instruction artifacts with delegated-authority evidence when they can affect tool access, command execution, or downstream system actions.
 
 ## Authoritative Sources
 
@@ -75,6 +78,7 @@ The August 3 raw sources add three delegated-authority refinements. The [midday 
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -126,3 +130,4 @@ The August 3 raw sources add three delegated-authority refinements. The [midday 
 - Maintained on 2026-07-25 with on-behalf-of delegation, dual human-and-agent attribution, short-lived scoped credentials, and cross-tool audit evidence.
 - Maintained on 2026-07-26 with subagent delegation auditability, task-decomposition evidence, payload visibility boundaries, access grants, and review outcomes.
 - Maintained on 2026-08-03 with agent-owner, delegated-intent, task-credential, cost-owner, deprovisioning, and dispute-record evidence.
+- Maintained on 2026-08-08 with high-assurance delegation signals and loaded-skill evidence for delegated agent actions.

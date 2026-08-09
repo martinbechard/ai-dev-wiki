@@ -21,6 +21,8 @@ The [Confident AI LangSmith alternatives clipping](../../../raw/processed/langsm
 
 The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds adjacent practice evidence: MCP enterprise deployment, skill evals, production copilot governance, and team coding-agent workflows all require trace, audit, evaluation, and approval evidence to be inspectable together.
 
+The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds security and first-party evaluation signals. Agent observability should connect identity, access, continuous monitoring, escalation paths, kill switches, context-integrity checks, and workflow-level feedback loops so agent behavior, retention, online validation, and safety incidents can become release or rollback evidence instead of dashboard-only signals.
+
 ## Gate Design Signals
 
 - Trace model calls, tool calls, retrieval spans, prompt versions, datasets, annotations, costs, latency, and errors by run or session.
@@ -41,6 +43,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Prefer trace-to-regression workflows when production failures are expensive or recurrent.
 - Require component-level evaluation when final-output scores cannot explain whether retrieval, tool selection, reasoning path, or generation failed.
 - Keep non-technical reviewer workflows tied to explicit rubrics and annotation provenance so shared ownership does not dilute acceptance criteria.
+- Connect security monitoring, kill-switch evidence, context-integrity signals, product feedback, retention, and online validation to release gates when autonomous-agent behavior affects users or external systems.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [Confident AI LangSmith alternatives clipping](../../../raw/processed/langsmith-alternatives-confident-ai.md)
 - [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [user-visible progress and runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md)
@@ -81,3 +85,4 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 ## Maintenance Notes
 
 - Created on 2026-08-07 from the observability and evaluation clipping set plus the August 7 collector's MCP, skill-eval, copilot-governance, and team-workflow signals.
+- Maintained on 2026-08-08 with autonomous-agent security monitoring, kill-switch, context-integrity, first-party feedback, and online-validation gates.
