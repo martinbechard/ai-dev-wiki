@@ -41,6 +41,8 @@ The [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-
 
 The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json) adds suspicious CI workflow approval evidence, while the [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds poisoned operational inputs, MCP/tool poisoning, and persistent agent-configuration evidence. Coding agents routinely ingest issues, error reports, logs, dependency metadata, MCP registrations, and workflow files; those inputs should remain evidence until integrity, authority, credential-scope, egress, and review checks permit action.
 
+The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) adds browser and document propagation evidence. AI browser pages, browser extension outputs, connected-app state, and hidden instructions in source documents can steer agents or generated artifacts after the original source is fetched. Locally, browser observations and imported documents should keep source labels, quarantine paths, and action gates before they can authorize generated output, account actions, or cross-document propagation.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -72,6 +74,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Keep automated red-team findings tied to human triage, missed-attack review, and harness policy changes instead of treating generated attacks as complete coverage.
 - Treat CI workflow files, agent configuration, MCP registrations, issue/error/log metadata, and dependency metadata as untrusted instruction surfaces until integrity and authority checks pass.
 - Require allowlisted tool surfaces, scoped credentials, controlled egress, and human review when untrusted operational content can steer a coding agent toward persistent configuration or CI side effects.
+- Treat browser pages, browser extension output, connected-app state, and imported documents as untrusted content even when the browser session or document connector is approved.
+- Quarantine hidden or copied instructions from source documents before agent-authored outputs can publish, email, commit, or propagate them into another artifact.
 
 ## Authoritative Sources
 
@@ -95,6 +99,7 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - [July 16 topic news collector source](../../../raw/processed/2026-07-16/ai-dev-wiki-topic-news-collector-2026-07-16T203157-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
 
 ## Related Code
 
@@ -116,6 +121,7 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - [prompt-and-instructions](../prompt-and-instructions/index.md)
 - [retrieval-and-tools](../retrieval-and-tools/index.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
+- [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md)
 
 ## Open Questions
 
@@ -137,3 +143,4 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 - Maintained on 2026-07-12 with public development-agent prompt-injection gates for issue text, PR content, generated artifacts, runtime files, and public output.
 - Maintained on 2026-07-13 with image-injection, symlink, public-issue, and generated-repository path boundaries.
 - Maintained on 2026-07-16 with automated indirect prompt-injection red-team coverage for browser, tool-output, repository, file, and connected-app surfaces.
+- Maintained on 2026-08-09 with AI browser, browser-extension, connected-app, and carrier-document propagation boundaries.

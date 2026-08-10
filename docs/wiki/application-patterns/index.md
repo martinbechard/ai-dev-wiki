@@ -20,6 +20,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - [declarative-agent-workflow-artifacts.md](declarative-agent-workflow-artifacts.md) records reviewable orchestration artifacts for branching, approvals, checkpoints, and resume behavior.
 - [user-visible-progress-and-runtime-telemetry.md](user-visible-progress-and-runtime-telemetry.md) records progress events, streaming signals, operational metrics, and visible runtime health.
 - [local-model-runtime-harness.md](local-model-runtime-harness.md) records local model operation as a harness concern, including calibration, memory hierarchy, session state, and workflow-specific telemetry.
+- [browser-agent-runtime-boundaries.md](browser-agent-runtime-boundaries.md) records browser sessions, search/fetch APIs, identity, proxies, and browser observations as governed agent runtime surfaces.
 
 ## Authoritative Sources
 
@@ -28,6 +29,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
+- [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [federation.md](../federation.md)
 
@@ -62,3 +64,4 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - Maintained on 2026-07-28 with declarative workflow artifacts and harness sizing as durable leaves.
 - Maintained on 2026-07-30 with agent environment readiness as a durable leaf.
 - Maintained on 2026-07-30 with separate session recovery and lifecycle hooks durable leaves.
+- Maintained on 2026-08-09 with browser-agent runtime boundaries as a durable leaf.

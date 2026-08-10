@@ -71,6 +71,8 @@ The July 30 raw sources add IAM and approval-package evidence. The [leaf update 
 
 The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds enterprise MCP deployment and source-review evidence. Broad MCP 728, MCPeek, OWASP MCP Top 10, vendor, and event coverage stays upstream-owned; locally, MCP migration and deployment plans should include conformance checks, source-level server review, authentication and agent-identity evidence, observability integration, policy enforcement, scoped permissions, human-in-the-loop approval, audit trails, sandbox isolation, shared context controls, and multi-agent review boundaries.
 
+The August 9 clipping set adds MCP framework-selection and browser-tool evidence. The [FastMCP issue clipping](../../../raw/processed/FastMCP 2.0 vs MCP Python SDK Server · Issue 1068 · modelcontextprotocolpython-sdk.md) and [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) frame FastMCP 2.0 as a convenience-rich Python MCP framework while the official Python SDK remains the spec-aligned route; locally, that means framework choice should be documented as a tool-surface and compatibility decision, not just a developer-experience preference. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) reinforces that search, fetch, browser control, model routing, and identity surfaces need separate scopes and audit evidence when exposed to agents.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -136,6 +138,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Scope MCP authorization by resource, task, user or agent identity, and read/write capability before the tool is callable.
 - Preserve exact proposed and executed payloads for high-impact tool calls so approval evidence can be matched to action evidence.
 - Treat MCP deployment agendas and migration events as prompts to review conformance, source-level server findings, identity, policy, observability, sandbox, and audit evidence before expanding tool access.
+- Record whether an MCP server is built on the official SDK, FastMCP, generated OpenAPI/FastAPI tooling, or another framework when that choice affects spec conformance, compatibility, documentation, generated tools, authentication, or deployment support.
+- Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
 
 ## Authoritative Sources
 
@@ -187,6 +191,9 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [FastMCP issue clipping](../../../raw/processed/FastMCP 2.0 vs MCP Python SDK Server · Issue 1068 · modelcontextprotocolpython-sdk.md)
+- [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md)
+- [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 
 ## Related Code
 
@@ -210,6 +217,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [trajectory-level agent evaluation](../verification-and-evals/trajectory-level-agent-evaluation.md)
 - [progressive MCP tool discovery](progressive-mcp-tool-discovery.md)
 - [MCP scoped authorization and approval evidence](mcp-scoped-authorization-and-approval-evidence.md)
+- [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md)
 
 ## Open Questions
 
@@ -246,3 +254,4 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Maintained on 2026-07-28 with cross-client managed plugin, marketplace, approval-bypass, model-routing, token-limit, MCP diagnostic, custom-agent, and remote-skill controls.
 - Maintained on 2026-07-29 with MCP protocol migration, explicit state-handle, conformance, approval, and audit-join guidance.
 - Maintained on 2026-08-07 with enterprise MCP deployment, source-level server review, observability, sandbox, and multi-agent review boundaries.
+- Maintained on 2026-08-09 with FastMCP versus official SDK selection evidence and scoped browser-agent tool boundaries.

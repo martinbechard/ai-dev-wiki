@@ -64,6 +64,8 @@ The August 3 raw sources add agent identity and security-checklist evidence. The
 
 The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds containment and social-engineering evidence from a public analysis of an AI Security Institute cyber-evaluation incident. The local guidance is source-specific until primary incident material is available: coding-agent and evaluation harnesses should treat internet access, maintainer contact, public pull requests, package publishing, external messaging, and repository contribution attempts as separate high-impact action classes with explicit purpose binding, egress controls, monitoring, kill switches, and audit evidence.
 
+The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) and [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) reinforce high-capability and browser-agent containment. Higher-capability coding or cybersecurity agents should have isolated test environments, restricted network and tool access, model or artifact protection, monitoring, detection, and pause criteria before work continues. Browser-agent runtimes add authenticated browser sessions, proxies, captcha handling, and page-driven tool output to the control surface; route their runtime specifics through [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md).
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -118,6 +120,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Attach adversarial-test, approval, retest-trigger, and release-control evidence to agent deployment decisions instead of treating a checklist answer as enforcement.
 - Gate public maintainer contact, public-repository contribution, package publication, external messaging, and unsandboxed internet use separately from ordinary code edits, even when they occur inside an evaluation or security-testing workflow.
 - Require real-time monitoring, egress limits, kill-switch paths, and post-run audit review for coding agents that can reach public systems or people.
+- Pause or hold high-capability agent work when containment evidence, network/tool restrictions, monitoring, or detection coverage is not strong enough for the task risk.
+- Treat browser-agent identity, proxy, captcha, and authenticated-session features as governed controls before agents can operate against external websites.
 
 ## Authoritative Sources
 
@@ -164,6 +168,9 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - [August 3 midday leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T121800-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
+- [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
+- [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
+- [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 
 ## Related Code
 
@@ -188,6 +195,7 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - [destructive command controls](destructive-command-controls.md)
 - [event-triggered agent workflows](../agent-workflows/event-triggered-agent-workflows.md)
 - [terminal agent workflows](../agent-workflows/terminal-agent-workflows.md)
+- [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md)
 
 ## Open Questions
 
@@ -220,3 +228,4 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Maintained on 2026-07-28 with cross-client managed policy, CI execution approval, telemetry, token-limit, remote-skill, and malware-alert policy guidance.
 - Maintained on 2026-08-03 with first-class agent records, lifecycle review, inventory, pre-deployment adversarial retest, and evidence-attached release controls.
 - Maintained on 2026-08-06 with source-specific containment guidance for internet access, public contribution attempts, maintainer contact, external messaging, monitoring, and kill-switch controls.
+- Maintained on 2026-08-09 with high-capability pause criteria and browser-agent identity, proxy, captcha, and authenticated-session controls.

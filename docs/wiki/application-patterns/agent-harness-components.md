@@ -61,6 +61,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 
 The August 8 sources add external-enforcement and long-horizon state evidence. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) frames coding-agent harnesses as the place where permissions, sandbox scope, credentials, resource limits, audit records, test results, and recovery are enforced outside model reasoning. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds manager, fresh-context executor, read-only auditor, execution memory, and trainable state-policy evidence for long-horizon work. Broad tool, model, benchmark, and conference entities remain upstream-owned; locally, these are harness component responsibilities.
 
+The August 9 sources add browser-agent and security-containment evidence. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) routes browser fleets, search and fetch APIs, identity, proxies, session recording, and model routing to [browser-agent runtime boundaries](browser-agent-runtime-boundaries.md). The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) and [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) reinforce that internet access, public contact, network reach, tool access, monitoring, kill switches, and audit trails are harness-owned controls for high-capability agents.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -110,6 +112,8 @@ The August 8 sources add external-enforcement and long-horizon state evidence. T
 - Separate terminal fleet-manager components from application-framework CLI lifecycle components when the harness must coordinate multiple coding-agent workers.
 - Include API-catalog grounding, prompt sanitization, approval tiers, audit trails, MCP integration, and local or air-gapped deployment decisions when a harness acts in IP-sensitive engineering workflows.
 - Keep permission enforcement, sandbox boundaries, credential access, resource limits, audit records, test evidence, recovery state, manager/executor/auditor separation, and harness-owned memory outside model discretion for long-horizon coding work.
+- Treat browser fleets, search/fetch APIs, authenticated browser sessions, proxies, and session recordings as harness components when agents operate through the web's native interface.
+- Keep internet access, external contact, public contribution, monitoring, and kill-switch controls outside model discretion when high-capability agents run security-sensitive or public-facing workflows.
 
 ## Authoritative Sources
 
@@ -154,6 +158,9 @@ The August 8 sources add external-enforcement and long-horizon state evidence. T
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
+- [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
+- [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
 
 ## Related Code
 
@@ -178,6 +185,7 @@ The August 8 sources add external-enforcement and long-horizon state evidence. T
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 - [terminal-native agent fleet orchestration](../agent-workflows/terminal-native-agent-fleet-orchestration.md)
 - [managed agent portability boundaries](../adoption-and-operating-model/managed-agent-portability-boundaries.md)
+- [browser-agent runtime boundaries](browser-agent-runtime-boundaries.md)
 
 ## Open Questions
 
@@ -209,3 +217,4 @@ The August 8 sources add external-enforcement and long-horizon state evidence. T
 - Maintained on 2026-08-05 with coding harness components, terminal fleet-manager boundaries, and managed-agent portability routing.
 - Maintained on 2026-08-07 with IP-sensitive copilot harness components for API grounding, prompt sanitization, approval tiers, audit, MCP, and air-gapped deployment.
 - Maintained on 2026-08-08 with externally enforced trust boundaries, manager/executor/auditor separation, and long-horizon harness state controls.
+- Maintained on 2026-08-09 with browser-agent runtime components and high-capability security-containment controls.

@@ -2,7 +2,7 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries, including the August 8 harness trust-boundary, skill-file risk, long-horizon eval, and agent training updates.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries, including the August 9 browser-agent runtime, MCP framework-selection, high-capability containment, and operating-model continuity updates.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
@@ -63,3 +63,4 @@ This digest hub is downstream of raw source ingest. Public collectors and leaf w
 - Maintained on 2026-08-05 with model-cost benchmark and stacked-session digest scope.
 - Maintained on 2026-08-06 with agent-containment incident and structural-diff corroboration digest scope.
 - Maintained on 2026-08-08 with the August 8 raw ingest digest scope.
+- Maintained on 2026-08-09 with the August 9 raw ingest digest scope.

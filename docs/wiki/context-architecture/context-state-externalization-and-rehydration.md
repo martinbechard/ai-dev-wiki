@@ -29,6 +29,8 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 
 The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json) adds repository-instruction and auto-memory boundary evidence. Rehydration should preserve the authority boundary between shared instructions, private memory, and source evidence.
 
+The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) adds human cognitive-continuity evidence for asynchronous agent work. Scratchpads, visible task state, editor grouping, context export, and MCP handoff surfaces help the human operator recover spatial awareness before approving or redirecting a running agent.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -50,6 +52,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Treat memory extraction, storage, retrieval scope, compaction, consolidation, forgetting, and provenance as separate lifecycle decisions when externalized state may be reused.
 - Separate shared repository instructions, private local preferences, and tool-specific memories before using rehydrated state as authority.
 - Treat transcripts, generated context files, and cross-tool continuity notes as provenance-bearing evidence whose currentness and authority need review.
+- Preserve human-readable scratchpads, visible task state, editor grouping notes, and exported context bundles when asynchronous agents can continue after the human loses screen-level continuity.
 
 ## Authoritative Sources
 
@@ -67,6 +70,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
+- [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
 ## Related Code
@@ -87,6 +91,7 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
+- [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
 ## Open Questions
 
@@ -102,3 +107,4 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 - Maintained on 2026-07-24 with cue-anchored memory delivery and audit-log guidance.
 - Maintained on 2026-07-25 with lifecycle-managed context memory, provenance, forgetting, and cost-aware compaction guidance.
 - Maintained on 2026-07-26 with repository-instruction, private preference, tool-memory, transcript, generated context, and cross-tool continuity boundaries.
+- Maintained on 2026-08-09 with scratchpad, visible task-state, editor grouping, and context-export continuity guidance for asynchronous agent work.

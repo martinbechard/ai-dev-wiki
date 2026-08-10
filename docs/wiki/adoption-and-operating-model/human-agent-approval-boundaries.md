@@ -45,6 +45,8 @@ The August 5 raw sources add coding-agent harness and pricing-tier approval evid
 
 The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md) adds stacked-work approval evidence. When an agent discovers that a branch target, dependency-removal strategy, or modernization scope is wrong, the human decision should be captured as a redirection, closure, or new stacked session rather than hidden inside the next patch. Approval boundaries should make each stack layer's branch target, inherited context, planned scope, pull-request relationship, and review state visible before dependent work proceeds.
 
+The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) adds ideation-first and event-derived operating-model evidence. Agent-heavy engineering shifts more work into problem framing, periodic prompting, supervision, and review cadence. Approval boundaries should therefore name who owns the framing decision, when the human re-enters the loop, and what state must be visible before an asynchronous or browser-capable agent continues acting.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -78,6 +80,8 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - Treat coding-agent pricing tiers, training-use terms, retention, telemetry, and proprietary-code handling as approval inputs before repository access is granted.
 - Preserve human redirection decisions when an agent closes, retargets, or stacks sessions after discovering the first branch or plan was wrong.
 - Require visible branch targets, inherited context, dependent pull requests, and review state before approving the next layer in stacked agent work.
+- Preserve human ownership of problem framing, supervision cadence, and acceptance criteria when agents perform longer asynchronous or browser-capable work.
+- Require visible task state, scratchpads, and review checkpoints before approving the next autonomous step after a human has been away from the screen.
 
 ## Authoritative Sources
 
@@ -105,6 +109,7 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
+- [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 
 ## Related Code
 
@@ -128,6 +133,7 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 - [destructive command controls](../governance-and-risk/destructive-command-controls.md)
 - [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md)
+- [context state externalization and rehydration](../context-architecture/context-state-externalization-and-rehydration.md)
 
 ## Open Questions
 
@@ -150,3 +156,4 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - Maintained on 2026-07-17 with remediation, command, sandbox, permission-scope, and performance-optimization approval routing.
 - Maintained on 2026-08-05 with coding-harness approval handlers and pricing-tier data-use review boundaries.
 - Maintained on 2026-08-05 with stacked-session redirection, branch-target, dependent-PR, and review-state approval evidence.
+- Maintained on 2026-08-09 with ideation-first engineering cadence and asynchronous review-state approval boundaries.
