@@ -1,0 +1,389 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-09T20:32:45-04:00",
+  "run_timestamp_utc": "2026-08-10T00:32:45Z",
+  "last_run_timestamp_utc": "2026-08-09T00:31:45.409Z",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start_utc": "2026-08-08T00:32:45Z",
+    "end_utc": "2026-08-10T00:32:45Z",
+    "policy": "Include only public sources with a visible publication, update, relative publication, or event/session timestamp inside the two-day run window. Exclude future-dated, missing-date, ambiguous-date, boundary-only, stale, upstream-only, or low-relevance candidates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "accepted_upstream": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns."
+  },
+  "existing_wiki_check": {
+    "local_pages_checked": [
+      "docs/wiki/topic-index.md",
+      "docs/wiki/federation.md",
+      "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "docs/wiki/context-architecture/index.md",
+      "docs/wiki/prompt-and-instructions/index.md",
+      "docs/wiki/agent-workflows/index.md",
+      "docs/wiki/coding-practices/index.md",
+      "docs/wiki/retrieval-and-tools/index.md",
+      "docs/wiki/verification-and-evals/index.md",
+      "docs/wiki/application-patterns/index.md",
+      "docs/wiki/governance-and-risk/index.md",
+      "docs/wiki/adoption-and-operating-model/index.md"
+    ],
+    "upstream_pages_checked": [
+      "upstream-ai-wiki/topic-index.md"
+    ],
+    "wiki_status": {
+      "page_count": 108,
+      "missing_required_files": 0,
+      "lint_findings": 0
+    }
+  },
+  "search_queries": [
+    "AI coding agent instructions context engineering August 9 2026",
+    "AI code review coding agents governance August 9 2026",
+    "MCP tool call governance coding agents August 9 2026",
+    "software engineering evals coding agents August 9 2026",
+    "\"August 9, 2026\" \"coding agents\"",
+    "\"August 8, 2026\" \"coding agents\"",
+    "\"Aug 9, 2026\" \"AI code review\"",
+    "\"Aug 8, 2026\" \"context engineering\"",
+    "\"2026-08-08\" \"coding agent\"",
+    "\"2026-08-08\" \"MCP\" \"coding\"",
+    "\"2026-08-08\" \"AI code review\"",
+    "\"2026-08-09\" \"coding agent\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "q1-agent-containment-controls",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_title": "OpenAI to pause some work on AI model Astra due to security concerns",
+      "source_url": "https://www.theguardian.com/technology/2026/aug/08/openai-astra-security-concerns",
+      "publisher": "The Guardian",
+      "visible_date": "Sat 8 Aug 2026 13.00 EDT; first published Sat 8 Aug 2026 12.51 EDT",
+      "date_basis": "visible publication timestamp inside cutoff window",
+      "short_factual_summary": "The report says OpenAI paused internal work on a higher-capability agent unless stricter controls are met, including isolated test environments, restricted network and tool access, model-weight protection, encryption, monitoring, and detection.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent governance pages should treat higher-capability agent use as a runtime-control problem, not only a prompt-policy problem. The local implication is to keep sandbox tiers, network/tool restrictions, monitoring, and explicit pause criteria in harness and verification practices.",
+      "named_entities": [
+        "OpenAI",
+        "Astra",
+        "Meta",
+        "Anthropic",
+        "UK AI Security Institute",
+        "Hugging Face",
+        "The Guardian",
+        "Reuters"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Astra",
+        "Meta",
+        "Anthropic",
+        "UK AI Security Institute",
+        "Hugging Face"
+      ],
+      "local_practice_implication": "Route broad model/company/security-incident background upstream; keep local notes to critical-capability gates, containment evidence, network/tool approval tiers, and audit-monitoring requirements for coding-agent harnesses.",
+      "follow_up_notes": "Candidate downstream ingest destinations: governance-and-risk/governance-controls-for-agents.md, governance-and-risk/destructive-command-controls.md, application-patterns/agent-harness-components.md, verification-and-evals/trajectory-level-agent-evaluation.md."
+    },
+    {
+      "id": "q2-replit-agent-operating-model",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_title": "Replit CEO's surprising take: AI is making software engineering more human",
+      "source_url": "https://www.businessinsider.com/replit-ceo-ai-software-engineers-more-human-saaspocalypse-2026-8",
+      "publisher": "Business Insider",
+      "visible_date": "2026-08-08T09:30:01.281Z",
+      "date_basis": "visible publication timestamp inside cutoff window",
+      "short_factual_summary": "Business Insider reports Replit CEO Amjad Masad describing a shift from continuous keyboard work toward whiteboard ideation and periodic prompting of coding agents, with engineers spending more time on problem framing and experimentation.",
+      "why_it_matters_for_ai_assisted_development_practice": "The adoption signal is about team operating model: agent-heavy engineering changes daily rhythm, supervision cadence, role expectations, and burnout risks. Local pages should keep the human authority, planning, and review parts explicit rather than treating agent use as only tooling.",
+      "named_entities": [
+        "Replit",
+        "Amjad Masad",
+        "Business Insider",
+        "Casey Newton",
+        "Anthropic",
+        "Microsoft",
+        "Meta"
+      ],
+      "upstream_owned_entities": [
+        "Replit",
+        "Amjad Masad",
+        "Anthropic",
+        "Microsoft",
+        "Meta"
+      ],
+      "local_practice_implication": "Route product/company coverage upstream; keep local notes to prompt cadence, ideation-first engineering workflows, human review ownership, and adoption-health checks.",
+      "follow_up_notes": "Candidate downstream ingest destinations: adoption-and-operating-model/adoption-operating-agreements.md, adoption-and-operating-model/human-agent-approval-boundaries.md, agent-workflows/orient-inspect-patch-verify-loop.md."
+    },
+    {
+      "id": "q3-devsparks-production-ai-development",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_title": "DevSparks Hyderabad returns to decode agentic AI, cybersecurity, and the future of software development",
+      "source_url": "https://m.dailyhunt.in/news/india/english/yourstory-epaper-yourstory/devsparks%2Bhyderabad%2Breturns%2Bto%2Bdecode%2Bagentic%2Bai%2Bcybersecurity%2Band%2Bthe%2Bfuture%2Bof%2Bsoftware%2Bdevelopment-newsid-n718943463?action=click&index=0&listname=topicsList&mode=pwa&topic=for+you&topicIndex=0",
+      "supporting_source_url": "https://devsparks.yourstory.com/2026/hyderabad",
+      "publisher": "YourStory via Dailyhunt",
+      "visible_date": "Dailyhunt page: 6 hrs ago at access time 2026-08-10T00:32Z; event page: August 8, 2026",
+      "date_basis": "visible relative publication timestamp and visible event date inside cutoff window",
+      "short_factual_summary": "The article frames DevSparks Hyderabad around agentic AI, cybersecurity, cloud costs, hybrid infrastructure, and developer productivity. It says enterprises are investing in AI gateways, LLM firewalls, and machine-identity governance for AI agents, and the event agenda includes prototype-to-production security review, audit trails, data residency, AI-native SDLC, production agentic systems, and enterprise architecture.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is an adoption and governance signal from a developer event: teams are connecting AI-assisted development to deployability, security review, data residency, access control, audit trails, hybrid infrastructure, and enterprise agent architecture.",
+      "named_entities": [
+        "DevSparks Hyderabad",
+        "YourStory",
+        "Dailyhunt",
+        "IBM Bob",
+        "IBM",
+        "NVIDIA",
+        "UBS India",
+        "EY GDS",
+        "Vultr",
+        "Tiger Analytics",
+        "MetLife"
+      ],
+      "upstream_owned_entities": [
+        "DevSparks Hyderabad",
+        "YourStory",
+        "Dailyhunt",
+        "IBM Bob",
+        "IBM",
+        "NVIDIA",
+        "UBS India",
+        "EY GDS",
+        "Vultr",
+        "Tiger Analytics",
+        "MetLife"
+      ],
+      "local_practice_implication": "Route event/product/company background upstream; keep local notes to prototype-to-production gates, audit-trail readiness, data-residency checks, AI gateway controls, LLM firewall placement, and machine-identity governance for developer agents.",
+      "follow_up_notes": "Candidate downstream ingest destinations: governance-and-risk/prototype-to-cloud-promotion-gates.md, governance-and-risk/agent-identity-and-delegated-authority.md, application-patterns/harness-sizing-by-workflow-complexity.md, adoption-and-operating-model/workflow-before-model-selection.md."
+    },
+    {
+      "id": "q4-coscup-harness-boundaries",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_title": "透過ClaudeCode，Gemini Cli，Codex來瞭解harness",
+      "source_url": "https://coscup.org/2026/session/M8WTHA/",
+      "publisher": "COSCUP x UbuCon Asia 2026",
+      "visible_date": "2026-08-09 14:50 ~ 15:20",
+      "date_basis": "visible public session timestamp inside cutoff window",
+      "short_factual_summary": "The session abstract separates the language model from the harness that connects repository data, tools, operating-system actions, permission control, context assembly, session state, and long-running work. It also argues that planning and tool selection may move toward models, while permissions, sandboxing, credentials, resource limits, audit logs, test results, and recovery mechanisms still need external enforcement.",
+      "why_it_matters_for_ai_assisted_development_practice": "The page is a concise public articulation of the local harness boundary: model-side planning can be dynamic, but authority, execution, audit, and recovery belong to enforced system layers.",
+      "named_entities": [
+        "COSCUP",
+        "UbuCon Asia",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI Codex",
+        "Claude Opus 5",
+        "Claude Fable 5",
+        "voidful",
+        "Eric Lam"
+      ],
+      "upstream_owned_entities": [
+        "COSCUP",
+        "UbuCon Asia",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI Codex",
+        "Claude Opus 5",
+        "Claude Fable 5"
+      ],
+      "local_practice_implication": "Route product and model background upstream; keep local notes to harness-owned context assembly, tool registry, permissions, sandboxing, durable session state, audit logs, and recovery controls.",
+      "follow_up_notes": "Candidate downstream ingest destinations: application-patterns/agent-harness-components.md, prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md, retrieval-and-tools/tool-call-and-mcp-governance.md, governance-and-risk/governance-controls-for-agents.md."
+    },
+    {
+      "id": "q5-coscup-human-cognitive-continuity",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_title": "The Faster AI Runs, The Easier It Is for Us to Get Lost in Front of the Screen?",
+      "source_url": "https://coscup.org/2026/en/session/9CYHJT/",
+      "publisher": "COSCUP x UbuCon Asia 2026",
+      "visible_date": "2026-08-08 10:40 ~ 11:10",
+      "date_basis": "visible public session timestamp inside cutoff window",
+      "short_factual_summary": "The session abstract says long-context coding agents can search repos and act autonomously, but human working memory and spatial awareness remain bottlenecks. It describes a scratchpad for asynchronous human-AI collaboration and virtual editor-group organization with AI context export and an MCP server.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is that context architecture should support the human operator, not only the agent. Durable scratchpads, visible task state, editor organization, and context export can reduce supervision errors when agents run asynchronously.",
+      "named_entities": [
+        "COSCUP",
+        "UbuCon Asia",
+        "Quick Prompt",
+        "VirtualTabs",
+        "VS Code",
+        "Model Context Protocol",
+        "ShengKai Tang"
+      ],
+      "upstream_owned_entities": [
+        "COSCUP",
+        "UbuCon Asia",
+        "Quick Prompt",
+        "VirtualTabs",
+        "VS Code",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Route tool/project/protocol entity coverage upstream; keep local notes to human cognitive continuity, scratchpad state, spatial awareness, context export, and MCP as a local context handoff surface.",
+      "follow_up_notes": "Candidate downstream ingest destinations: context-architecture/context-state-externalization-and-rehydration.md, context-architecture/context-selection-and-compaction.md, application-patterns/user-visible-progress-and-runtime-telemetry.md, adoption-and-operating-model/human-agent-approval-boundaries.md."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Context Injection Patterns for AI Coding Agents",
+      "source_url": "https://context.nimblabs.com/blog/context-injection-patterns-ai-agents",
+      "visible_date": "July 29, 2026",
+      "reason": "Search result suggested August 8, but the opened page showed July 29, outside the cutoff window."
+    },
+    {
+      "source_title": "Set up a context engineering flow in VS Code",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": "search result only showed last week",
+      "reason": "No concrete visible publication or update date inside the two-day window."
+    },
+    {
+      "source_title": "Governing MCP tool calls in .NET with the Agent Governance Toolkit",
+      "source_url": "https://devblogs.microsoft.com/dotnet/governing-mcp-tool-calls-in-dotnet-with-the-agent-governance-toolkit/",
+      "visible_date": "April 29, 2026",
+      "reason": "Outside the cutoff window."
+    },
+    {
+      "source_title": "Securing MCP: A Control Plane for Agent Tool Execution",
+      "source_url": "https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution",
+      "visible_date": "April 22, 2026",
+      "reason": "Outside the cutoff window."
+    },
+    {
+      "source_title": "Meta Releases Coding Agent to Compete With OpenAI and Anthropic",
+      "source_url": "https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517",
+      "visible_date": "4 days ago in search result",
+      "reason": "Outside the two-day cutoff and product/company coverage is upstream-owned."
+    },
+    {
+      "source_title": "Why context engineering is AI's next hiring challenge",
+      "source_url": "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+      "visible_date": "4 days ago in search result",
+      "reason": "Outside the two-day cutoff."
+    },
+    {
+      "source_title": "Junior Full-Stack Developer (Atlanta)",
+      "source_url": "https://customcareer.miami.edu/jobs/capgemini-america-inc-junior-software-developer-nashville/",
+      "visible_date": "Recruitment began July 9, 2026; expires August 9, 2026",
+      "reason": "Expiration date is inside the window but publication date is outside the window; not a qualifying public practice update."
+    },
+    {
+      "source_title": "What's New? Quarterly Release 26.7 Janus",
+      "source_url": "https://docs.cometbackup.com/blog/2026/2026-07-09-whats-new/",
+      "visible_date": "July 9, 2026",
+      "reason": "Outside the cutoff window; MCP product support is upstream-owned unless a later local-practice update appears."
+    },
+    {
+      "source_title": "Blog - agentgateway",
+      "source_url": "https://agentgateway.dev/blog/",
+      "visible_date": "July 20, 2026 and June 2026 entries",
+      "reason": "Outside the cutoff window."
+    },
+    {
+      "source_title": "DeepMind Opens $10M Multi-Agent AI Safety Research Grant",
+      "source_url": "https://ai-tldr.dev/releases/deepmind-multi-agent-safety-grant-jun11/",
+      "visible_date": "June 11, 2026; application deadline August 8, 2026",
+      "reason": "Publication date outside the cutoff; deadline-only date is boundary/event administration, not a new practice update."
+    },
+    {
+      "source_title": "AMD AI DevDay India 2026",
+      "source_url": "https://amd.indiadevday.com/",
+      "visible_date": "Saturday, August 8, 2026",
+      "reason": "Event page is in-window but the captured content was mostly broad event/workshop listing; no distinct AI-assisted development practice implication beyond already captured DevSparks/COSCUP signals."
+    },
+    {
+      "source_title": "OpenAI Codex and Codex app historical posts",
+      "source_url": "https://openai.com/index/introducing-codex/",
+      "visible_date": "2025-05-16 and older 2026 updates outside window",
+      "reason": "Outside the cutoff window and broad product coverage is upstream-owned."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 5,
+    "excluded_candidate_count": 12
+  },
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were searched and summarized.",
+    "No private repository content, proprietary material, sensitive data, PII, or company-internal local content was sent to external services.",
+    "Local wiki checks used repository files only."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Do not ingest directly from this collector into docs/wiki without the normal raw-source ingest and verifier-gated process.",
+    "If ingested, keep entity background in the upstream AI wiki and use this downstream wiki only for local practice implications.",
+    "The COSCUP items use visible public session timestamps as the freshness basis; an ingest pass should decide whether to keep them as event-derived practice signals or downgrade them to routing notes."
+  ]
+}
