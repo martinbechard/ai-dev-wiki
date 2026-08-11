@@ -1,0 +1,435 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-08-11T01:01:47Z",
+  "run_timestamp_local": "2026-08-10T21:01:47-04:00",
+  "cutoff_window": {
+    "start_local": "2026-08-03T21:01:47-04:00",
+    "end_local": "2026-08-10T21:01:47-04:00",
+    "rule": "Visible public publication or update date must be within the last 7 days; missing, ambiguous, future, stale, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 87,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+  ],
+  "source_urls_checked": [
+    "https://ainna.ai/resources/faq/ai-prd-guide-faq",
+    "https://arxiv.org/html/2604.09443v3",
+    "https://blog.sigplan.org/2026/04/21/repositories-are-human-agent-knowledge-factories/",
+    "https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://exadel.com/news/test-driven-development-ai-coding",
+    "https://github.com/LLMSecurity/awesome-agent-skills-security",
+    "https://medium.com/@moksh45/ai-code-refactoring-tools-in-2026-a-practical-developers-guide-347d2b94ec13",
+    "https://news.sap.com/2026/08/agent-sprawl-why-ai-governance-is-now-board-level-issue/",
+    "https://next.redhat.com/2026/07/28/building-skills-for-ai-agents-pitfalls-and-best-practices/",
+    "https://openai.com/index/instruction-hierarchy-challenge/",
+    "https://pub.towardsai.net/mcp-vs-agent-skills-what-the-2026-spec-change-finally-settled-for-me-9972d7456fba",
+    "https://sourcegraph.com/blog/context-engineering",
+    "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+    "https://witness.ai/blog/ai-browser-agent-security-risks/",
+    "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
+    "https://www.morphllm.com/best-ai-coding-agents-2026",
+    "https://www.productmap.io/blog/ai-prd-template",
+    "https://www.securityinfowatch.com/ai/article/55396026/ai-agent-security-reaches-a-turning-point-why-runtime-containment-is-emerging-as-the-new-zero-trust-standard",
+    "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+    "https://www.techradar.com/pro/what-ai-coding-benchmarks-still-miss-about-software-quality",
+    "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+    "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+    "https://www.youtube.com/watch?v=uhoC5sxg3UI"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md": [
+      "https://www.securityinfowatch.com/ai/article/55396026/ai-agent-security-reaches-a-turning-point-why-runtime-containment-is-emerging-as-the-new-zero-trust-standard",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "https://witness.ai/blog/ai-browser-agent-security-risks/"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://exadel.com/news/test-driven-development-ai-coding",
+      "https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "https://exadel.com/news/test-driven-development-ai-coding"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "https://medium.com/@moksh45/ai-code-refactoring-tools-in-2026-a-practical-developers-guide-347d2b94ec13"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "https://www.techradar.com/pro/what-ai-coding-benchmarks-still-miss-about-software-quality"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "https://www.securityinfowatch.com/ai/article/55396026/ai-agent-security-reaches-a-turning-point-why-runtime-containment-is-emerging-as-the-new-zero-trust-standard",
+      "https://github.com/LLMSecurity/awesome-agent-skills-security"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+      "https://sourcegraph.com/blog/context-engineering"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://www.productmap.io/blog/ai-prd-template",
+      "https://ainna.ai/resources/faq/ai-prd-guide-faq"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [
+      "https://openai.com/index/instruction-hierarchy-challenge/",
+      "https://arxiv.org/html/2604.09443v3",
+      "https://blog.sigplan.org/2026/04/21/repositories-are-human-agent-knowledge-factories/"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://pub.towardsai.net/mcp-vs-agent-skills-what-the-2026-spec-change-finally-settled-for-me-9972d7456fba"
+    ],
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/"
+    ],
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": [
+      "https://www.morphllm.com/best-ai-coding-agents-2026",
+      "https://www.youtube.com/watch?v=uhoC5sxg3UI"
+    ],
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": [
+      "https://news.sap.com/2026/08/agent-sprawl-why-ai-governance-is-now-board-level-issue/",
+      "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+    ],
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": [
+      "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+      "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://next.redhat.com/2026/07/28/building-skills-for-ai-agents-pitfalls-and-best-practices/"
+    ]
+  },
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "id": "techradar-ai-code-review-monocultures-2026-08-04",
+      "source_url": "https://www.techradar.com/pro/ai-monocultures-the-code-review-problem-nobodys-talking-about",
+      "source_title": "AI monocultures: the code review problem nobody's talking about",
+      "visible_date": "2026-08-04",
+      "date_basis": "TechRadar page shows Published 4 August 2026.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "The article argues that using the same AI model or tool family for code generation and code review creates shared blind spots. It recommends independent review responsibilities, defense-in-depth review roles, documented standards, recorded review decisions, and platform ownership of generation and review boundaries.",
+      "why_it_matters": "This reinforces the local practice that AI code review should be independent from generation, scoped into separate risk and quality roles, and tied to durable project memory rather than treated as a single assistant capability.",
+      "named_entities": [
+        "TechRadar",
+        "Qodo",
+        "Itamar Friedman",
+        "Microsoft",
+        "Satya Nadella"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Qodo",
+        "Microsoft"
+      ],
+      "follow_up_note": "Consider ingesting into intelligent code review, generated code refactoring, fix branch packaging, and agent ownership roster leaves."
+    },
+    {
+      "id": "techradar-context-engineering-hiring-2026-08-05",
+      "source_url": "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+      "source_title": "Why context engineering is AI's next hiring challenge",
+      "visible_date": "2026-08-05",
+      "date_basis": "TechRadar page shows Published 5 August 2026.",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "factual_summary": "The article distinguishes prompt engineering from context engineering and frames context as the surrounding data, permissions, retrieval, state, and workflow environment agents need. It says developer agents need relevant code, tests, dependencies, and deployment constraints, while too much context creates noise and governance difficulty.",
+      "why_it_matters": "This is directly relevant to request packages: local prompts should carry selected evidence, permissions, and constraints, not broad undifferentiated context. It also supports adoption agreements that assign context engineering to cross-functional engineering, data, platform, and security teams.",
+      "named_entities": [
+        "TechRadar",
+        "SurrealDB",
+        "Tobie Morgan Hitchcock",
+        "PwC"
+      ],
+      "upstream_owned_entities": [
+        "SurrealDB",
+        "PwC"
+      ],
+      "follow_up_note": "Review for context engineering and adoption operating agreement implications."
+    },
+    {
+      "id": "securityinfowatch-agent-runtime-containment-2026-08-05",
+      "source_url": "https://www.securityinfowatch.com/ai/article/55396026/ai-agent-security-reaches-a-turning-point-why-runtime-containment-is-emerging-as-the-new-zero-trust-standard",
+      "source_title": "AI Agent Security Reaches a Turning Point: Why Runtime Containment Is Emerging as the New Zero Trust Standard",
+      "visible_date": "2026-08-05",
+      "date_basis": "Security Info Watch page shows Aug. 5, 2026.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "The article says prompt filtering and identity verification are insufficient on their own for autonomous agents. It emphasizes runtime containment, behavioral supervision, least-privilege controls, sandboxes, egress controls, and function-level capability grants.",
+      "why_it_matters": "This supports local browser-agent runtime boundaries and sensitive-data controls that constrain what an agent can do during execution, not only what it can say or who authenticated it.",
+      "named_entities": [
+        "Security Info Watch",
+        "Anthropic",
+        "Cequence",
+        "Chase Cunningham"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Cequence"
+      ],
+      "follow_up_note": "Review for browser runtime boundary and supply-chain control leaves."
+    },
+    {
+      "id": "techradar-cybersecurity-ai-agents-2026-08-07",
+      "source_url": "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "source_title": "Why cybersecurity must evolve for the age of AI agents",
+      "visible_date": "2026-08-07",
+      "date_basis": "TechRadar page shows Published 7 August 2026.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "The article says autonomous agents expand the attack surface because they can use models, prompts, context, and external tools to act. It calls for verifiable identities, tightly controlled access, audit records, continuous monitoring, clear ownership, escalation paths, kill switches, risk-proportional guardrails, and protection against context poisoning.",
+      "why_it_matters": "This strengthens local guidance around browser-agent permissions, sensitive data, ownership rosters, and operating agreements where context integrity and runtime control are treated as security boundaries.",
+      "named_entities": [
+        "TechRadar",
+        "Cognizant",
+        "Vishal Salvi"
+      ],
+      "upstream_owned_entities": [
+        "Cognizant"
+      ],
+      "follow_up_note": "Review for sensitive data controls, ownership rosters, and browser runtime boundaries."
+    },
+    {
+      "id": "ustechautomations-agent-governance-platforms-2026-08-08",
+      "source_url": "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+      "source_title": "6 AI Agent Governance Platforms: Buyer Guide [2026]",
+      "visible_date": "2026-08-08",
+      "date_basis": "Page shows Aug 8, 2026.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "The buyer guide defines an AI agent governance platform as a control layer that records agent existence, ownership, access, evaluation status, human intervention requirements, and decision evidence once agents touch real systems.",
+      "why_it_matters": "This maps closely to local agent ownership rosters and adoption agreements because it treats ownership, access, evaluation, intervention, and evidence as lifecycle governance data.",
+      "named_entities": [
+        "US Tech Automations"
+      ],
+      "upstream_owned_entities": [
+        "US Tech Automations"
+      ],
+      "follow_up_note": "Review for agent ownership roster fields and adoption operating agreements."
+    }
+  ],
+  "excluded_candidate_count": 19,
+  "excluded_candidates": [
+    {
+      "source_url": "https://witness.ai/blog/ai-browser-agent-security-risks/",
+      "visible_date": "2026-07 (two weeks ago in search result)",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://exadel.com/news/test-driven-development-ai-coding",
+      "visible_date": null,
+      "reason": "missing_visible_publication_or_update_date_on_page",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ]
+    },
+    {
+      "source_url": "https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/",
+      "visible_date": "2026-01-09",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ]
+    },
+    {
+      "source_url": "https://medium.com/@moksh45/ai-code-refactoring-tools-in-2026-a-practical-developers-guide-347d2b94ec13",
+      "visible_date": "2026-07",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ]
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/what-ai-coding-benchmarks-still-miss-about-software-quality",
+      "visible_date": null,
+      "reason": "not_opened_as_candidate_after primary code-review source qualified",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ]
+    },
+    {
+      "source_url": "https://github.com/LLMSecurity/awesome-agent-skills-security",
+      "visible_date": "last week in search result",
+      "reason": "ambiguous_visible_date_without_exact_publication_date",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ]
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "visible_date": "2026-06",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ]
+    },
+    {
+      "source_url": "https://www.productmap.io/blog/ai-prd-template",
+      "visible_date": "2026-07-25",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ]
+    },
+    {
+      "source_url": "https://ainna.ai/resources/faq/ai-prd-guide-faq",
+      "visible_date": "2026-04",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ]
+    },
+    {
+      "source_url": "https://openai.com/index/instruction-hierarchy-challenge/",
+      "visible_date": "2026-03",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/html/2604.09443v3",
+      "visible_date": "2026-04",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://blog.sigplan.org/2026/04/21/repositories-are-human-agent-knowledge-factories/",
+      "visible_date": "2026-04-21",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "visible_date": "2026-07-28",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ]
+    },
+    {
+      "source_url": "https://pub.towardsai.net/mcp-vs-agent-skills-what-the-2026-spec-change-finally-settled-for-me-9972d7456fba",
+      "visible_date": "last week in search result",
+      "reason": "ambiguous_visible_date_without_exact_publication_date",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ]
+    },
+    {
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
+      "visible_date": "2026-06-02",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ]
+    },
+    {
+      "source_url": "https://www.morphllm.com/best-ai-coding-agents-2026",
+      "visible_date": "2026-08-02",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://www.youtube.com/watch?v=uhoC5sxg3UI",
+      "visible_date": "2026-06",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://news.sap.com/2026/08/agent-sprawl-why-ai-governance-is-now-board-level-issue/",
+      "visible_date": "2026-08-03",
+      "reason": "boundary_only_date_no_visible_time_for_cutoff_after_2026-08-03T21:01:47-04:00",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ]
+    },
+    {
+      "source_url": "https://next.redhat.com/2026/07/28/building-skills-for-ai-agents-pitfalls-and-best-practices/",
+      "visible_date": "2026-07-28",
+      "reason": "stale_outside_7_day_window",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ]
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity updates belong upstream in the AI wiki; this artifact records only downstream local practice implications.",
+    "upstream_owned_entities": [
+      "Anthropic",
+      "Cequence",
+      "Cognizant",
+      "Microsoft",
+      "PwC",
+      "Qodo",
+      "SurrealDB",
+      "TechRadar",
+      "US Tech Automations"
+    ]
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; route this raw artifact through the normal project-wiki ingest workflow.",
+    "Prioritize local practice implications around independent AI code review, context engineering, runtime containment, agent ownership, and governance evidence.",
+    "No qualifying in-window updates were found for AI-assisted TDD, executable PRD templates, instruction hierarchy, progressive MCP discovery, coding-agent runtime updater integrity, performance optimization gates, or durable instruction skill files in this scan."
+  ]
+}
