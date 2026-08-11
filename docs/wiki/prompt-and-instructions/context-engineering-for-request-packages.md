@@ -23,6 +23,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds production context-contract evidence. Request packages should state source authority, freshness, just-in-time retrieval rules, destructive-action approval requirements, and compact working state so later compaction or handoff preserves decisions rather than raw transcript volume.
 
+The August 10 raw sources add a distinction between prompt wording and context architecture. The [leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) frames context as data, permissions, retrieval, state, and workflow environment, while the [topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) connects SDLC gates, task slicing, and review separation to the context an agent receives. Local request packages should therefore include selected code, tests, dependencies, deployment constraints, permissions, source freshness, and lifecycle state without turning every available source into active context.
+
 ## Practice Boundaries
 
 - Start from the task, then select the smallest source set that can support the decision.
@@ -37,6 +39,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - Include runtime, network, credential, audit, and approval constraints when the request asks an agent to work on sensitive code.
 - Label setup commands, repository metadata, and tool context as evidence unless the task authority explicitly permits acting on them.
 - Include source authority, freshness, destructive-action approval requirements, and compact current decision state when a task may be resumed, compacted, or delegated.
+- Include selected code, tests, dependencies, deployment constraints, permissions, and lifecycle state when they are the context needed for the current agent step.
+- Keep builder and reviewer context packages separable so independent review is not conditioned by the same assumptions that generated the change.
 
 ## Authoritative Sources
 
@@ -49,6 +53,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
+- [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 
 ## Related Code
 
@@ -79,3 +85,4 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 - Maintained on 2026-07-04 with story-file handoffs and governed semantic context for data-agent workflows.
 - Maintained on 2026-07-08 with sensitive-code runtime, network, credential, audit, approval, and setup-command request constraints.
 - Maintained on 2026-07-28 with source-authority, freshness, approval-token, and compact working-state guidance for production context contracts.
+- Maintained on 2026-08-10 with request-package guidance for permissions, retrieval, state, workflow context, and builder-reviewer separation.

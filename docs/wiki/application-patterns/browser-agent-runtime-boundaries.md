@@ -15,6 +15,8 @@ Browser-agent work combines retrieval and action. Search and fetch APIs can prov
 
 Stagehand-style natural-language browser automation and generated browser steps are useful only when selectors, observations, and extracted data remain reviewable. If a model can decide what to click or extract, the harness should preserve the allowed domains, identity used, observed page state, extracted fields, side effects, and verification result so a later reviewer can tell whether the browser run followed the approved task.
 
+The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) adds runtime-containment evidence for autonomous agents. Browser agents should not rely only on prompt filtering or authenticated identity; the runtime needs behavioral supervision, least-privilege grants, sandboxing, egress controls, function-level capabilities, continuous monitoring, escalation paths, and kill switches when browser actions can affect real systems.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -24,6 +26,7 @@ Stagehand-style natural-language browser automation and generated browser steps 
 - Treat fetched pages, scraped content, and browser observations as untrusted evidence until source labels and prompt-injection controls are applied.
 - Review natural-language browser actions and generated selectors as tool instructions whose meaning can drift when page structure changes.
 - Route broad Browserbase, Stagehand, Playwright, Puppeteer, Selenium, and browser-use background to the upstream AI wiki unless a source changes local runtime, governance, or verification practice.
+- Pair browser-agent identity with runtime containment: least privilege, behavioral supervision, egress policy, function-level capability grants, escalation paths, and kill switches.
 
 ## Authoritative Sources
 
@@ -32,6 +35,7 @@ Stagehand-style natural-language browser automation and generated browser steps 
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
 - [prompt injection and untrusted content](../governance-and-risk/prompt-injection-and-untrusted-content.md)
 - [upstream browser-use page](../../../upstream-ai-wiki/agentic-frameworks/browser-use.md)
+- [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 
 ## Related Code
 
@@ -59,3 +63,4 @@ Stagehand-style natural-language browser automation and generated browser steps 
 ## Maintenance Notes
 
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
+- Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.

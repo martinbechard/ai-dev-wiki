@@ -29,6 +29,8 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 
 The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds identity-lifecycle evidence. Owner cards should also name the agent identity, purpose, permission scope, creation date, review date, expiry or renewal rule, initiating human attribution, executing-agent attribution, and audit trail location.
 
+The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) adds independent-review and governance-platform evidence. Owner cards should show when the generator and reviewer use different model or tool families, which platform or team owns that separation, what evaluation status applies, where human-intervention requirements live, and which decision evidence supports escalation, pause, rollback, or decommissioning.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -49,6 +51,8 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - Treat ownership rosters as current permission inventories with revocation owners, allowed-use definitions, and audit bindings for agents, tools, skills, MCP servers, and connected services.
 - Record workflow outcome, source-freshness owner, runbook maintainer, approval owner, log location, cost owner, review cadence, and rollback or decommission trigger for recurring AI workflows.
 - Record agent identity, purpose, permission scope, creation date, review date, expiry or renewal rule, initiating human attribution, executing-agent attribution, and audit trail location.
+- Record generator-reviewer independence when shared model or tool families could create common blind spots.
+- Record evaluation status, intervention requirements, decision evidence, and pause or rollback authority on owner cards for agents that touch real systems.
 
 ## Authoritative Sources
 
@@ -62,6 +66,7 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -98,3 +103,4 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - Maintained on 2026-07-17 with permission inventories, revocation ownership, allowed-use definitions, and authenticated audit bindings.
 - Maintained on 2026-07-25 with workflow outcome, freshness, runbook, approval, log, cost, review-cadence, rollback, and decommission owner-card fields.
 - Maintained on 2026-07-30 with identity lifecycle, expiry, initiating-human attribution, executing-agent attribution, and audit-trail fields.
+- Maintained on 2026-08-10 with generator-reviewer independence, evaluation status, human-intervention, decision-evidence, and pause-authority fields.

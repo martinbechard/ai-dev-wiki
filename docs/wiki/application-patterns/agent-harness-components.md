@@ -63,6 +63,8 @@ The August 8 sources add external-enforcement and long-horizon state evidence. T
 
 The August 9 sources add browser-agent and security-containment evidence. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) routes browser fleets, search and fetch APIs, identity, proxies, session recording, and model routing to [browser-agent runtime boundaries](browser-agent-runtime-boundaries.md). The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) and [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) reinforce that internet access, public contact, network reach, tool access, monitoring, kill switches, and audit trails are harness-owned controls for high-capability agents.
 
+The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds governed context-assembly and SDK harness evidence. Production agent harnesses should expose identity, task state, memory, retrieval, tool outputs, governance controls, structured responses, streaming progress, server-side sessions, tool registration, BYOK routing, and least-capability tool exposure as runtime components while routing broad product coverage upstream.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -114,6 +116,7 @@ The August 9 sources add browser-agent and security-containment evidence. The [B
 - Keep permission enforcement, sandbox boundaries, credential access, resource limits, audit records, test evidence, recovery state, manager/executor/auditor separation, and harness-owned memory outside model discretion for long-horizon coding work.
 - Treat browser fleets, search/fetch APIs, authenticated browser sessions, proxies, and session recordings as harness components when agents operate through the web's native interface.
 - Keep internet access, external contact, public contribution, monitoring, and kill-switch controls outside model discretion when high-capability agents run security-sensitive or public-facing workflows.
+- Expose identity, task state, memory, retrieval, tool outputs, governance controls, structured responses, streaming progress, tool registration, and least-capability grants as inspectable harness components.
 
 ## Authoritative Sources
 
@@ -161,6 +164,7 @@ The August 9 sources add browser-agent and security-containment evidence. The [B
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 
 ## Related Code
 
@@ -218,3 +222,4 @@ The August 9 sources add browser-agent and security-containment evidence. The [B
 - Maintained on 2026-08-07 with IP-sensitive copilot harness components for API grounding, prompt sanitization, approval tiers, audit, MCP, and air-gapped deployment.
 - Maintained on 2026-08-08 with externally enforced trust boundaries, manager/executor/auditor separation, and long-horizon harness state controls.
 - Maintained on 2026-08-09 with browser-agent runtime components and high-capability security-containment controls.
+- Maintained on 2026-08-10 with governed context assembly, structured response, streaming progress, server-side session, tool-registration, and least-capability harness guidance.

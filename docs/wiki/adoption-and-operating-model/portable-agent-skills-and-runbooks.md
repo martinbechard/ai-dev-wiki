@@ -25,6 +25,8 @@ The July 17 raw sources add IDE and platform packaging evidence. The [topic news
 
 The [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md) adds a layer-by-layer portability rule. The focused selection practice lives in [managed agent portability boundaries](managed-agent-portability-boundaries.md); this page keeps the skill rule that reusable procedures should stay in reviewable project or team artifacts when vendor-managed sessions, memory, and control-plane semantics cannot be moved cleanly.
 
+The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds a current vendor example of software-testing skills packaged for agents. Locally, test-suite architecture, TDD, load profiling, and vulnerability-audit skills should be imported as reviewable runbook material with owner, version, command behavior, customization notes, and generated-output review gates rather than as opaque product-specific capability.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -42,6 +44,7 @@ The [managed agent vertical integration query source](../../../raw/processed/que
 - Record source registry, import path, owner, compatibility target, verification standard, and approval workflow before importing portable skills across agent tools.
 - Treat platform skills that scaffold, evaluate, deploy, or monitor systems as operational runbooks, not just prompt snippets.
 - Keep portable procedures outside vendor session state when model, runtime, memory, or control-plane substitution matters.
+- Treat reusable testing and vulnerability-audit skills as runbook material that needs owner, version, command behavior, customization, and output-review metadata before team use.
 
 ## Authoritative Sources
 
@@ -55,6 +58,7 @@ The [managed agent vertical integration query source](../../../raw/processed/que
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
@@ -91,3 +95,4 @@ The [managed agent vertical integration query source](../../../raw/processed/que
 - Maintained on 2026-07-05 with versionable wiki memory, reusable context portability, and vendor-local memory boundaries.
 - Maintained on 2026-07-17 with IDE-managed skill imports, source registry metadata, cross-agent compatibility, and build-evaluate-deploy-monitor runbook boundaries.
 - Maintained on 2026-08-05 with layer-by-layer managed-agent portability guidance for reusable procedures.
+- Maintained on 2026-08-10 with testing-skill import boundaries for ownership, versioning, command behavior, customization, and generated-output review.

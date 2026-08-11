@@ -39,6 +39,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 
 The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax economics to context selection. Repeated retrieval, reasoning, context carry-forward, and tool-selection loops can make runtime context expensive even when each token is cheap; stable workflows should compile or reuse context only after freshness, provenance, and quality checks preserve the needed evidence.
 
+The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds loop-aware and production context-assembly evidence. Agent context includes open files, tool outputs, durable instructions, compaction, memory, permissions, task state, retrieved knowledge, and workflow lifecycle gates; locally, context selection should treat those surfaces as an engineered request lifecycle rather than prompt stuffing or vendor-product configuration.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -71,6 +73,7 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - Keep large tool catalogs behind discovery or routing tools when the current task only needs a narrow operation surface, and route governance details through [progressive MCP tool discovery](../retrieval-and-tools/progressive-mcp-tool-discovery.md).
 - Treat compaction as runtime control flow: critical status, approvals, source paths, and blockers should be recoverable outside lossy summaries.
 - Treat repeated retrieval and context carry-forward as cost signals; compile or cache context only when source provenance and freshness remain auditable.
+- Treat compaction, memory, durable instructions, open files, tool outputs, permissions, task state, retrieval, and workflow gates as context surfaces that need explicit owners and freshness evidence.
 
 ## Authoritative Sources
 
@@ -99,6 +102,7 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 
 ## Related Code
 
@@ -139,3 +143,4 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - Maintained on 2026-07-27 with progressive tool-schema discovery as dynamic context selection.
 - Maintained on 2026-07-29 with compaction-survivability guidance for status, approvals, source paths, and blockers.
 - Maintained on 2026-08-05 with token-tax-aware context reuse and provenance-preserving compilation guidance.
+- Maintained on 2026-08-10 with loop-aware context surfaces and governed production context-assembly guidance.

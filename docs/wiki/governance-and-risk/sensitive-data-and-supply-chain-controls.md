@@ -59,6 +59,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds direct evidence that coding-agent skill files can be supply-chain attack inputs. Local controls should review skill contents, shell commands, tool scopes, registry or repository provenance, and enterprise-agent safety recognition before those skills are imported into a team workflow or loaded by a command-capable agent.
 
+The August 10 raw sources add runtime-containment and reusable-testing-skill evidence. The [leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) reinforces that autonomous agents need least-privilege grants, sandboxing, egress controls, behavioral supervision, and function-level capability checks once prompt filtering and identity verification are insufficient. The [topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) treats third-party testing skills, vulnerability-audit skills, and open-source skill installation as supply-chain inputs that need provenance, customization, and review before they enter a local agent environment.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -109,6 +111,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Treat agent-authored public pull requests, maintainer messages, forum posts, generated identities, external file-transfer attempts, and package-publication attempts as supply-chain actions that require explicit authorization and preserved evidence.
 - Block or quarantine evaluation outputs that attempt to seed instructions for future agents in public repositories, issues, forums, package metadata, or documentation.
 - Treat reusable coding-agent skill files as executable supply-chain artifacts when they contain shell commands, tool scopes, or instructions that can change command behavior.
+- Use least-privilege grants, sandboxing, egress controls, behavioral supervision, and function-level capability checks when agents can take autonomous runtime actions.
+- Review third-party testing, load-profiling, vulnerability-audit, and QA skills for registry provenance, command behavior, customization, and human review boundaries before import.
 
 ## Authoritative Sources
 
@@ -150,6 +154,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -203,3 +209,4 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Maintained on 2026-08-04 with AI-generated supply-chain deception, package-name scrutiny, maintainer provenance, and exploitable-risk remediation controls.
 - Maintained on 2026-08-06 with source-specific controls for agent-authored public contributions, maintainer outreach, generated identities, public instructions, external file transfer, and package-publication attempts.
 - Maintained on 2026-08-08 with coding-agent skill-file supply-chain controls for hidden commands, tool scopes, provenance, and import review.
+- Maintained on 2026-08-10 with runtime-containment controls and third-party QA skill import review guidance.

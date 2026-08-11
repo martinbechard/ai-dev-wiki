@@ -35,6 +35,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds an adoption-exercise signal. Hackathons and workshops that use coding agents should provide access and scope early, require repository evidence, preserve demo artifacts, and make codebase health or agentic-engineering review explicit so training exercises build review habits rather than only presentation skill.
 
+The August 10 raw sources add SDLC-as-context and governance-platform evidence. The [topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) treats specification gates, task slicing, builder-reviewer separation, and weekly learning loops as context supplied by the development lifecycle. The [leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) reinforces ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill switches as operating-agreement fields once agents touch real systems.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -65,6 +67,8 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Treat usage metrics as adoption inputs, not success criteria, until useful outcomes and upkeep responsibilities are visible.
 - Include environment readiness, repository instructions, approval surfaces, worktree isolation, reusable skills, independent grading, and code-review practice in shared team-agent rollout.
 - Design agent hackathons and workshops with account readiness, repository submission, demo artifacts, codebase-health review, and explicit agentic-engineering criteria.
+- Treat SDLC structure as part of the agent context: specification gates, task slicing, independent review, and recurring learning loops should be explicit operating rules.
+- Record ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill-switch expectations before agents touch real systems.
 
 ## Authoritative Sources
 
@@ -84,6 +88,8 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
+- [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 
 ## Related Code
 
@@ -122,3 +128,4 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Maintained on 2026-07-25 with workflow ownership, source freshness, data readiness, runbooks, approval gates, logs, cost-per-outcome, and recurring review cadence.
 - Maintained on 2026-07-30 with team-agent rollout guidance for environments, repository instructions, approvals, worktrees, skills, independent grading, and review practice.
 - Maintained on 2026-08-08 with agent hackathon and workshop evidence requirements for repositories, demos, and codebase-health review.
+- Maintained on 2026-08-10 with SDLC-as-context, governance-platform, ownership, intervention, audit, and kill-switch operating-agreement fields.
