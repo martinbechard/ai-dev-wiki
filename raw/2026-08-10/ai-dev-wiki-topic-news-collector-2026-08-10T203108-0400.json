@@ -1,0 +1,333 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-11T00:31:08Z",
+  "run_timestamp_local": "2026-08-10T20:31:08-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-09T00:31:08Z",
+    "end_utc": "2026-08-11T00:31:08Z",
+    "rule": "Include only public sources published or visibly updated within the last 2 days relative to run_timestamp_utc. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_ai_wiki_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, workflow, context architecture, verification, governance, and operating-model implications.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_application": "Broad entity facts are recorded as upstream-owned metadata. Findings keep only local practice implications."
+  },
+  "queries_run": [
+    "AI coding agents governance approvals audit logs MCP August 2026",
+    "AI-assisted development TDD coding agents code review evals August 2026",
+    "context engineering coding agents durable instructions August 2026",
+    "MCP governed practice permissions approvals package install risk August 2026",
+    "AI coding agents code review evals after:2026-08-09",
+    "coding agents MCP governance after:2026-08-09",
+    "AI assisted software development TDD after:2026-08-09",
+    "context engineering agents after:2026-08-09",
+    "site:github.blog AI coding agents August 10 2026",
+    "site:anthropic.com/news Claude Code August 10 2026 coding",
+    "site:openai.com/index codex August 10 2026 coding agents",
+    "site:sourcegraph.com/blog coding agents August 10 2026 context",
+    "SAP Agentic AI From Prompt Engineering to Outcome Engineering August 2026"
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-08-10-keep-context-engineering-interactive-guide",
+      "source_url": "https://keep.md/blog/context-engineering",
+      "source_title": "Context Engineering: An Interactive Guide to How AI Agents Work",
+      "publisher": "Keep",
+      "visible_date": "August 10, 2026",
+      "visible_date_basis": "Article header shows August 10, 2026.",
+      "matched_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "The guide explains context windows, agent loops, context rot, compaction, memory, and loop engineering as parts of how agents build and maintain working context.",
+      "why_it_matters_for_ai_assisted_development_practice": "It reinforces that durable agent instructions, open files, tool outputs, compaction, and persisted memory are operational context surfaces that need explicit management rather than ad hoc prompt stuffing.",
+      "named_entities": [
+        "Keep",
+        "Ian Nuttall"
+      ],
+      "upstream_owned_entities": [
+        "Keep"
+      ],
+      "local_practice_implication": "Useful for context-architecture pages about context selection, compaction, memory boundaries, and loop-aware request packages.",
+      "follow_up_notes": "During ingest, compare against existing leaves on context selection, compaction, and durable instructions before creating any new page."
+    },
+    {
+      "id": "2026-08-10-leaddev-sdlc-context-engineering",
+      "source_url": "https://leaddev.com/software-quality/your-sdlc-is-your-context-engineering",
+      "source_title": "Your SDLC is your context engineering",
+      "publisher": "LeadDev",
+      "visible_date": "August 10, 2026",
+      "visible_date_basis": "Article header shows August 10, 2026.",
+      "matched_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The article argues that an agent's useful context is the SDLC itself, not only repository instruction files. It emphasizes task-level builder/reviewer separation, planning quality, and weekly learning loops for teams adopting agents.",
+      "why_it_matters_for_ai_assisted_development_practice": "It maps context engineering from file-level instructions to lifecycle design: specification gates, task slicing, independent review, and escalation boundaries become part of the context supplied to agents.",
+      "named_entities": [
+        "LeadDev",
+        "Daniel Kravets",
+        "Vendict",
+        "AGENTS.md",
+        "Cursor",
+        "Claude Code",
+        "CodeRabbit"
+      ],
+      "upstream_owned_entities": [
+        "LeadDev",
+        "Vendict",
+        "Cursor",
+        "Claude Code",
+        "CodeRabbit"
+      ],
+      "local_practice_implication": "Candidate evidence for downstream-owned operating-model guidance on specification-first agent work, task-level reviewer separation, and adoption feedback loops.",
+      "follow_up_notes": "If ingested, keep vendor and company references as upstream-owned routing metadata and focus local synthesis on SDLC-as-context practice."
+    },
+    {
+      "id": "2026-08-10-kimi-software-testing-skills",
+      "source_url": "https://www.kimi.com/resources/software-testing-skills",
+      "source_title": "AI Software Testing Skills for Smarter QA Automation",
+      "publisher": "Kimi",
+      "visible_date": "2026-08-10",
+      "visible_date_basis": "Article header shows 9 min read 2026-08-10.",
+      "matched_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The page describes reusable software-testing skills for AI agents, including test-suite architecture, test-driven development, HTTP load profiling, vulnerability auditing, open-source skill installation, customization, and review of generated outputs.",
+      "why_it_matters_for_ai_assisted_development_practice": "It is a current vendor example of packaging testing and QA workflows as reusable agent skills, with explicit customization and human review steps.",
+      "named_entities": [
+        "Kimi",
+        "Moonshot AI",
+        "test-suite-architect",
+        "test-driven-dev",
+        "http-load-profiler",
+        "code-vuln-audit"
+      ],
+      "upstream_owned_entities": [
+        "Kimi",
+        "Moonshot AI"
+      ],
+      "local_practice_implication": "Supports local pages about portable agent skills, AI-assisted TDD, QA skill review boundaries, and skill-install risk where third-party repositories are pulled into an agent environment.",
+      "follow_up_notes": "During ingest, separate local practice evidence from Kimi product coverage and evaluate whether package-install risk belongs under governance-and-risk."
+    },
+    {
+      "id": "2026-08-10-mongodb-context-engineering-agentic-apps",
+      "source_url": "https://www.mongodb.com/company/blog/technical/context-engineering-for-agentic-applications-on-aws-bedrock-agentcore-atlas",
+      "source_title": "Context Engineering for Agentic Applications on AWS Bedrock AgentCore and MongoDB Atlas",
+      "publisher": "MongoDB",
+      "visible_date": "August 10, 2026",
+      "visible_date_basis": "Article header shows August 10, 2026.",
+      "matched_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The post frames production agent reliability as explicit context assembly across identity, task state, memory, retrieved knowledge, tool outputs, and governance controls, with scale, cost, observability, and bounded context as production concerns.",
+      "why_it_matters_for_ai_assisted_development_practice": "It ties context engineering to production harness design: agent routing, retrieval scope, memory, state, governance, cost control, and observability need to be engineered as one request lifecycle.",
+      "named_entities": [
+        "MongoDB",
+        "AWS Bedrock AgentCore",
+        "MongoDB Atlas"
+      ],
+      "upstream_owned_entities": [
+        "MongoDB",
+        "AWS",
+        "AWS Bedrock AgentCore",
+        "MongoDB Atlas"
+      ],
+      "local_practice_implication": "Candidate evidence for local application-pattern and retrieval/tool pages that describe context assembly as a governed harness responsibility.",
+      "follow_up_notes": "Avoid duplicating AWS or MongoDB product coverage; keep only the practice pattern around controlled context assembly."
+    },
+    {
+      "id": "2026-08-10-github-copilot-sdk-java-agent-harness",
+      "source_url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
+      "source_title": "Using the GitHub Copilot SDK for Java",
+      "publisher": "GitHub Blog",
+      "visible_date": "August 10, 2026",
+      "visible_date_basis": "Article header shows August 10, 2026.",
+      "matched_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The article describes a Java SDK for creating agent sessions, registering tools, sending prompts, receiving structured responses, streaming real-time events, customizing system messages, using BYOK providers, and opting in only to needed tools.",
+      "why_it_matters_for_ai_assisted_development_practice": "It offers a concrete current example of harness-owned tool schemas, structured outputs, progress streaming, server-side agent sessions, and least-capability tool exposure.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot SDK for Java",
+        "Copilot",
+        "Jakarta EE",
+        "Open Liberty",
+        "PrimeFaces",
+        "OpenAI",
+        "Azure",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot SDK for Java",
+        "Jakarta EE",
+        "Open Liberty",
+        "PrimeFaces",
+        "OpenAI",
+        "Azure",
+        "Anthropic"
+      ],
+      "local_practice_implication": "Useful for local harness architecture, structured-output, streaming-progress, tool-registration, and permissions guidance without creating product encyclopedia coverage.",
+      "follow_up_notes": "During ingest, compare with application-harness-patterns, agent-harness-components, and user-visible-progress-and-runtime-telemetry."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.softwaretestingmagazine.com/knowledge/certainty-isnt-correctness-the-real-cost-of-trusting-ai-written-code/",
+      "source_title": "Certainty Isn't Correctness: The Cost of Trusting AI-Written Code",
+      "visible_date": null,
+      "exclusion_reason": "Search result said published today, but the opened page did not expose a visible publication or update date; excluded under missing-date rule."
+    },
+    {
+      "source_url": "https://medium.com/@greekofai/loop-vs-harness-vs-context-engineering-the-3-layers-of-ai-agent-engineering-explained-0ccbdc89f146",
+      "source_title": "Loop vs Harness vs Context Engineering: The 3 Layers of AI Agent Engineering Explained",
+      "visible_date": "Just now",
+      "exclusion_reason": "Member-only story with relative visible date and limited public content; excluded as insufficient public, stable date evidence for raw collector synthesis."
+    },
+    {
+      "source_url": "https://todatabeyond.substack.com/p/context-engineering-for-ai-agents",
+      "source_title": "Context Engineering for AI Agents: Concepts, Failure Modes, and Core Strategies",
+      "visible_date": "Aug 09, 2026",
+      "exclusion_reason": "Page is marked paid and only partial content is public; excluded to avoid relying on non-public article body."
+    },
+    {
+      "source_url": "https://redis.io/resources/state-of-context-engineering-2026/",
+      "source_title": "The state of context engineering",
+      "visible_date": null,
+      "exclusion_reason": "Opened page exposed report content but no visible publication or update date; crawled-today evidence is not accepted."
+    },
+    {
+      "source_url": "https://github.com/engineering4ai/awesome-spec-driven-development",
+      "source_title": "engineering4ai/awesome-spec-driven-development",
+      "visible_date": null,
+      "exclusion_reason": "Search result exposed current crawl only, not a visible publication or update date on the source result; excluded under missing-date rule."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/why-context-engineering-is-ais-next-hiring-challenge",
+      "source_title": "Why context engineering is AI's next hiring challenge",
+      "visible_date": "Published 5 days ago",
+      "exclusion_reason": "Outside the 2-day cutoff window."
+    },
+    {
+      "source_url": "https://www.mintmcp.com/blog/build-audit-trails-ai-coding-agents",
+      "source_title": "How to Build Audit Trails for AI Coding Agents",
+      "visible_date": "Published 3 months ago",
+      "exclusion_reason": "Outside the 2-day cutoff window despite crawler freshness."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2603.17973v1",
+      "source_title": "Reducing Code Regressions in AI Coding Agents via Graph-Based Test Impact Analysis",
+      "visible_date": "Published 4 months ago",
+      "exclusion_reason": "Outside the 2-day cutoff window."
+    },
+    {
+      "source_url": "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+      "source_title": "Model Context Protocol",
+      "visible_date": "2026-07-28",
+      "exclusion_reason": "Outside the 2-day cutoff window and broad MCP protocol documentation is upstream-owned."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/",
+      "source_title": "Security validation for third-party coding agents",
+      "visible_date": "2026-06-09",
+      "exclusion_reason": "Outside the 2-day cutoff window; relevant local practice was already eligible for prior collector windows."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source_title": "Introducing Claude Sonnet 5",
+      "visible_date": "Edit August 10, 2026",
+      "exclusion_reason": "In-window update was pricing-focused model/product coverage, which is upstream-owned; no new local AI-assisted development practice implication was identified."
+    },
+    {
+      "source_url": "https://chatgpt.com/codex/pricing/",
+      "source_title": "Codex Pricing",
+      "visible_date": null,
+      "exclusion_reason": "No visible in-window publication or update date in the search result; pricing/product coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agentic-ai-from-prompt-engineering-to-outcome-engineering/ba-p/14458317",
+      "source_title": "SAP Agentic AI: From Prompt Engineering to Outcome Engineering",
+      "visible_date": "Published 4 days ago",
+      "exclusion_reason": "Outside the 2-day cutoff window based on search result; broad SAP product/entity coverage is upstream-owned."
+    }
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed",
+    "notes": "Validated after writing the artifact."
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector artifact.",
+    "During ingest, preserve upstream-owned entity routing and synthesize only local AI-assisted development practice implications.",
+    "Potential local roots for later ingest: context-architecture, application-patterns, retrieval-and-tools, verification-and-evals, governance-and-risk, adoption-and-operating-model."
+  ]
+}
