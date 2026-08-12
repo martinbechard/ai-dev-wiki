@@ -8,6 +8,8 @@ Is portable Agent Plugin packaging really an MCP concept?
 
 No. Agent Plugins is a packaging and cross-client interoperability concept. Agent Plugins 1.0 defines two portable component types: Agent Skills and MCP servers. MCP is therefore one component inside the package rather than the parent concept. Client-specific extensions, installation, distribution, permissions, authentication, and user experience sit outside the portable core.
 
+The portable format does not define an agent-definition component. Agent definitions, commands, hooks, rules, and LSP servers are explicitly outside Agent Plugins 1.0 because their formats remain client-specific. Codex's own plugin format can additionally expose a plugin-level `agents/` directory, but that surface is a Codex extension rather than a portable Agent Plugins component.
+
 ## Wiki Pages Consulted
 
 - `docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md`
@@ -21,6 +23,7 @@ No. Agent Plugins is a packaging and cross-client interoperability concept. Agen
 - [Agent Plugins Specification 1.0.0](https://agent-plugins.org/specification)
 - [OpenAI plugin documentation](https://learn.chatgpt.com/docs/plugins)
 - [OpenAI plugin packaging documentation](https://developers.openai.com/plugins/build/plugins)
+- [OpenAI curated Codex plugins repository](https://github.com/openai/plugins)
 
 ## Durable Concepts Detected
 
@@ -29,6 +32,7 @@ No. Agent Plugins is a packaging and cross-client interoperability concept. Agen
 - Skills as workflow instructions
 - MCP servers as tool and data interfaces
 - Client extension namespaces for non-portable behavior
+- Codex-specific plugin-level agent definitions
 - Plugin supply-chain, permission, credential, and execution governance
 
 ## Candidate Wiki Destinations
@@ -48,7 +52,6 @@ No. Agent Plugins is a packaging and cross-client interoperability concept. Agen
 ## Open Questions
 
 - Should the upstream AI wiki create the broad Agent Plugins specification entity page before the downstream governance leaf links to it?
-- Which Codex-specific plugin components are portable under Agent Plugins 1.0 and which remain OpenAI client extensions?
 
 ## Privacy And Sensitivity Notes
 
