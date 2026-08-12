@@ -1,0 +1,397 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 7,
+    "qualifying_update_count": 5,
+    "selected_leaf_count": 15,
+    "source_url_count": 14
+  },
+  "cutoff_window": {
+    "end_local": "2026-08-11T21:02:10-04:00",
+    "policy": "Only sources visibly published or updated within the last 7 days qualify; date-only sources on the cutoff date are excluded as boundary-only unless time proves they are inside the window.",
+    "start_local": "2026-08-04T21:02:10-04:00"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_relevance": "context selection and compaction",
+      "reason": "published before strict seven-day cutoff start 2026-08-04T21:02:10-04:00",
+      "source_url": "https://arxiv.org/abs/2608.01326",
+      "visible_date": "2026-08-02"
+    },
+    {
+      "candidate_relevance": "remote MCP skill discovery and governance",
+      "reason": "published before strict seven-day cutoff",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "visible_date": "2026-07-28"
+    },
+    {
+      "candidate_relevance": "remote MCP governance",
+      "reason": "date-only update falls on cutoff date without visible time, so it is boundary-only/ambiguous for the 2026-08-04T21:02:10-04:00 cutoff",
+      "source_url": "https://cybertizeweb.com/blog/ai/mcp-adoption-report-2026/",
+      "visible_date": "2026-08-04"
+    },
+    {
+      "candidate_relevance": "junior learning paths in agentic teams",
+      "reason": "ambiguous visible date after opening source",
+      "source_url": "https://moonstack.co/blogs/ai-coding-agents-the-rise-of-ai-engineering-teams-in-2026",
+      "visible_date": "last week from search result only; opened page exposed no exact article date"
+    },
+    {
+      "candidate_relevance": "RAG provenance ranking and chunking",
+      "reason": "published before strict seven-day cutoff",
+      "source_url": "https://arxiv.org/abs/2607.04008",
+      "visible_date": "2026-07-04"
+    },
+    {
+      "candidate_relevance": "context compaction and gateway session management",
+      "reason": "not a qualifying update for the opened source page",
+      "source_url": "https://www.truefoundry.com/fr/blog/context-engineering-gateway-session-management",
+      "visible_date": "page itself older or undated in opened content; recent dates appeared only in related-post navigation"
+    },
+    {
+      "candidate_relevance": "context architecture and RAG",
+      "reason": "ambiguous visible date after opening source",
+      "source_url": "https://www.tartanhq.com/blog/context-layer-enterprise-ai-competitive-moat",
+      "visible_date": "search result showed August 6, 2026 but opened page did not expose a visible publication or update date"
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entity background is upstream-owned; this artifact preserves only durable local practice implications for the downstream AI Dev Wiki leaves.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+      "note": "Review raw artifact for downstream practice implications: csa-ai-coding-agent-cicd-secrets-2026-08-08, moclaw-grok-agent-workflows-cost-compaction-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+      "note": "Review raw artifact for downstream practice implications: moclaw-grok-agent-workflows-cost-compaction-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+      "note": "No strict-window qualifying public update found in this scan; exclusions record stale, missing, ambiguous, or boundary-only visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "note": "Review raw artifact for downstream practice implications: nvidia-nemoclaw-release-notes-context-memory-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "note": "Review raw artifact for downstream practice implications: agent-plugins-portable-skills-mcp-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "note": "Review raw artifact for downstream practice implications: moclaw-grok-agent-workflows-cost-compaction-2026-08-06, nvidia-nemoclaw-release-notes-context-memory-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "note": "Review raw artifact for downstream practice implications: nvidia-nemoclaw-release-notes-context-memory-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "note": "Review raw artifact for downstream practice implications: nvidia-nemoclaw-release-notes-context-memory-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+      "note": "Review raw artifact for downstream practice implications: csa-ai-coding-agent-cicd-secrets-2026-08-08, kubiosec-agentic-security-roundup-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+      "note": "Review raw artifact for downstream practice implications: csa-ai-coding-agent-cicd-secrets-2026-08-08, kubiosec-agentic-security-roundup-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "note": "Review raw artifact for downstream practice implications: kubiosec-agentic-security-roundup-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "note": "Review raw artifact for downstream practice implications: agent-plugins-portable-skills-mcp-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "note": "Review raw artifact for downstream practice implications: moclaw-grok-agent-workflows-cost-compaction-2026-08-06"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+      "note": "No strict-window qualifying public update found in this scan; exclusions record stale, missing, ambiguous, or boundary-only visible dates."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+      "note": "Review raw artifact for downstream practice implications: moclaw-grok-agent-workflows-cost-compaction-2026-08-06"
+    }
+  ],
+  "leaf_universe_count": 87,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Agent Plugins 1.0.0 was presented as a vendor-neutral package format for bundling Agent Skills and MCP server configuration with fixed component locations, a minimal manifest, independent component failure handling, and client extension namespaces. Google announced it was joining as a core maintainer and starting product support.",
+      "id": "agent-plugins-portable-skills-mcp-2026-08-06",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "local_practice_implication": "Keep local coverage focused on package trust review, source discovery, approval checkpoints, and client-specific governance gaps rather than duplicating broad ecosystem background.",
+      "named_entities": [
+        "Agent Plugins 1.0.0",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Google",
+        "Amazon",
+        "Cursor",
+        "Microsoft",
+        "OpenAI",
+        "Vercel"
+      ],
+      "source_urls": [
+        "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+        "https://aaif.io/blog/from-skills-and-tools-to-portable-agent-plugins",
+        "https://enchanter.gg/en/blog/agent-plugins-open-standard-skills-mcp"
+      ],
+      "upstream_owned_entities": [
+        "Agent Plugins 1.0.0",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Google",
+        "Amazon",
+        "Cursor",
+        "Microsoft",
+        "OpenAI",
+        "Vercel"
+      ],
+      "visible_published_or_updated_at": "2026-08-06",
+      "why_it_matters_for_leaf": "Remote skill and MCP governance should distinguish portable package structure from installation, sandboxing, permissions, credential handling, trust, and runtime authorization, because the standard intentionally leaves those controls to clients and servers."
+    },
+    {
+      "factual_summary": "Cloud Security Alliance reported that a public GitHub issue could trigger agent workflows that exposed CI runner secrets across Claude Code, Gemini CLI, and Codex default configurations. The report highlights untrusted issue content, workspace trust, allowlist enforcement gaps, multi-pass instruction trust, and vendor fixes or workflow changes.",
+      "id": "csa-ai-coding-agent-cicd-secrets-2026-08-08",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "local_practice_implication": "Preserve the downstream lens around evidence capture, approval boundaries, and file trust in coding workflows; route vendor/product background upstream.",
+      "named_entities": [
+        "Cloud Security Alliance",
+        "Novee Security",
+        "Black Hat USA 2026",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI Codex",
+        "CVE-2026-54316",
+        "CVE-2026-12537"
+      ],
+      "source_urls": [
+        "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/"
+      ],
+      "upstream_owned_entities": [
+        "Cloud Security Alliance",
+        "Anthropic",
+        "Google",
+        "OpenAI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI Codex"
+      ],
+      "visible_published_or_updated_at": "2026-08-08",
+      "why_it_matters_for_leaf": "Local agent approval and request-boundary practice should treat issue bodies, setup files, and later-loaded instruction artifacts as untrusted inputs that cannot implicitly authorize CI access, credential reads, or subsequent agent invocations."
+    },
+    {
+      "factual_summary": "KubioSec summarized current LLM, MCP, RAG, and agentic vulnerabilities, including LiteLLM MCP test endpoint command execution, Starlette host-header chaining, Mastra package poisoning, Langflow exploitation, Semantic Kernel prompt-to-shell issues, prompt-injection growth, and EU AI Act GPAI enforcement.",
+      "id": "kubiosec-agentic-security-roundup-2026-08-06",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "local_practice_implication": "Use this as raw evidence for local governance requirements around tool invocation evidence, prompt/file trust, and retrieval provenance.",
+      "named_entities": [
+        "KubioSec",
+        "LiteLLM",
+        "Starlette",
+        "CISA KEV",
+        "CrowdStrike",
+        "STARDUST CHOLLIMA",
+        "Mastra",
+        "Langflow",
+        "Microsoft Semantic Kernel",
+        "OWASP",
+        "EU AI Act"
+      ],
+      "source_urls": [
+        "https://www.kubiosec.tech/blog/2026-08-06-AI-Security-Roundup"
+      ],
+      "upstream_owned_entities": [
+        "LiteLLM",
+        "Starlette",
+        "Mastra",
+        "Langflow",
+        "Microsoft Semantic Kernel",
+        "OWASP",
+        "EU AI Act"
+      ],
+      "visible_published_or_updated_at": "2026-08-06",
+      "why_it_matters_for_leaf": "Code retrieval evidence and RAG provenance practices should include gateway and tool-layer provenance, package-source validation, prompt-injection handling, and explicit logs for retrieved content and tool execution, not just answer citations."
+    },
+    {
+      "factual_summary": "MoClaw described Grok 4.5 agent workflows with tool approvals, reasoning effort, context compaction, prompt caching, cost tracking, region-aware fallbacks, and an operating-record concern around which tools ran and why costs changed.",
+      "id": "moclaw-grok-agent-workflows-cost-compaction-2026-08-06",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "local_practice_implication": "Keep local notes on telemetry fields and approval checkpoints; route model/product claims upstream.",
+      "named_entities": [
+        "MoClaw",
+        "Grok 4.5",
+        "xAI"
+      ],
+      "source_urls": [
+        "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows"
+      ],
+      "upstream_owned_entities": [
+        "Grok 4.5",
+        "xAI"
+      ],
+      "visible_published_or_updated_at": "2026-08-06",
+      "why_it_matters_for_leaf": "Agent cost telemetry and context compaction need visible checkpoints, source logs, cache/cost fields, approval rules, and fallback policies before long-running agent workflows cross price or risk thresholds."
+    },
+    {
+      "factual_summary": "NVIDIA NemoClaw release notes exposed agent runtime documentation areas for progressive tool disclosure, context compaction, memory search, task-specific subagents, declarative multi-agent manifests, sandbox status, sandbox lifecycle, network request approval, gateway lifecycle authority, and sandbox hardening.",
+      "id": "nvidia-nemoclaw-release-notes-context-memory-2026-08-06",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "local_practice_implication": "Use only as practice evidence for visible runtime controls and state handling; broad product coverage belongs upstream.",
+      "named_entities": [
+        "NVIDIA NemoClaw",
+        "OpenClaw"
+      ],
+      "source_urls": [
+        "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6"
+      ],
+      "upstream_owned_entities": [
+        "NVIDIA NemoClaw",
+        "OpenClaw"
+      ],
+      "visible_published_or_updated_at": "2026-08-06",
+      "why_it_matters_for_leaf": "Context architecture leaves should watch how production agent runtimes externalize state, memory search, subagent setup, policy gates, and sandbox lifecycle into explicit operator-visible documents and controls."
+    }
+  ],
+  "run_timestamp_local": "2026-08-11T21:02:10-04:00",
+  "run_timestamp_utc": "2026-08-12T01:02:10Z",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+  ],
+  "source_urls_checked": [
+    "https://aaif.io/blog/from-skills-and-tools-to-portable-agent-plugins",
+    "https://arxiv.org/abs/2607.04008",
+    "https://arxiv.org/abs/2608.01326",
+    "https://cybertizeweb.com/blog/ai/mcp-adoption-report-2026/",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6",
+    "https://enchanter.gg/en/blog/agent-plugins-open-standard-skills-mcp",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+    "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows",
+    "https://moonstack.co/blogs/ai-coding-agents-the-rise-of-ai-engineering-teams-in-2026",
+    "https://www.kubiosec.tech/blog/2026-08-06-AI-Security-Roundup",
+    "https://www.tartanhq.com/blog/context-layer-enterprise-ai-competitive-moat",
+    "https://www.truefoundry.com/fr/blog/context-engineering-gateway-session-management"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+      "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows"
+    ],
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://moonstack.co/blogs/ai-coding-agents-the-rise-of-ai-engineering-teams-in-2026"
+    ],
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": [
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "https://enchanter.gg/en/blog/agent-plugins-open-standard-skills-mcp"
+    ],
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": [
+      "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6",
+      "https://www.tartanhq.com/blog/context-layer-enterprise-ai-competitive-moat",
+      "https://arxiv.org/abs/2608.01326"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "https://aaif.io/blog/from-skills-and-tools-to-portable-agent-plugins",
+      "https://enchanter.gg/en/blog/agent-plugins-open-standard-skills-mcp",
+      "https://www.tartanhq.com/blog/context-layer-enterprise-ai-competitive-moat"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://moclaw.ai/blog/grok-4-5-ai-agent-workflows",
+      "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6",
+      "https://arxiv.org/abs/2608.01326",
+      "https://www.truefoundry.com/fr/blog/context-engineering-gateway-session-management"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6",
+      "https://www.truefoundry.com/fr/blog/context-engineering-gateway-session-management"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://docs.nvidia.com/nemoclaw/user-guide/openclaw/release-notes/2026/8/6"
+    ],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+      "https://www.kubiosec.tech/blog/2026-08-06-AI-Security-Roundup"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+      "https://www.kubiosec.tech/blog/2026-08-06-AI-Security-Roundup"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://www.kubiosec.tech/blog/2026-08-06-AI-Security-Roundup",
+      "https://arxiv.org/abs/2607.04008",
+      "https://www.tartanhq.com/blog/context-layer-enterprise-ai-competitive-moat"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "https://aaif.io/blog/from-skills-and-tools-to-portable-agent-plugins",
+      "https://enchanter.gg/en/blog/agent-plugins-open-standard-skills-mcp",
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "https://cybertizeweb.com/blog/ai/mcp-adoption-report-2026/"
+    ]
+  }
+}
