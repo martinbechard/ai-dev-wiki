@@ -47,6 +47,8 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 
 The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) adds ideation-first and event-derived operating-model evidence. Agent-heavy engineering shifts more work into problem framing, periodic prompting, supervision, and review cadence. Approval boundaries should therefore name who owns the framing decision, when the human re-enters the loop, and what state must be visible before an asynchronous or browser-capable agent continues acting.
 
+The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds two approval-boundary refinements. Public issue content and repository setup files cannot authorize CI credential access or nested agent workflows simply because they are present in the task context, and tool-approval prompts should expose reasoning effort, tool identity, cost impact, fallback route, and operating-record fields before the human approves continued work.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -82,6 +84,8 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - Require visible branch targets, inherited context, dependent pull requests, and review state before approving the next layer in stacked agent work.
 - Preserve human ownership of problem framing, supervision cadence, and acceptance criteria when agents perform longer asynchronous or browser-capable work.
 - Require visible task state, scratchpads, and review checkpoints before approving the next autonomous step after a human has been away from the screen.
+- Require explicit approval before untrusted issue text, setup files, or later-loaded instructions can trigger CI access, credential reads, shell execution, or nested agent invocation.
+- Make tool approvals show tool identity, expected side effects, reasoning-effort or cost impact, fallback route, and audit-record fields when those factors change the approval decision.
 
 ## Authoritative Sources
 
@@ -110,6 +114,7 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
+- [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 
 ## Related Code
 
@@ -157,3 +162,4 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - Maintained on 2026-08-05 with coding-harness approval handlers and pricing-tier data-use review boundaries.
 - Maintained on 2026-08-05 with stacked-session redirection, branch-target, dependent-PR, and review-state approval evidence.
 - Maintained on 2026-08-09 with ideation-first engineering cadence and asynchronous review-state approval boundaries.
+- Maintained on 2026-08-11 with untrusted issue/setup-file approval boundaries and tool-approval evidence for cost, fallback, and operating records.

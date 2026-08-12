@@ -17,6 +17,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 
 The [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) adds an LLM-friendly documentation signal. When framework docs expose an MCP server or `llms.txt`/full-text surfaces for agent retrieval, the local governance question is not whether the documentation is convenient; it is whether the docs endpoint, generated context, version badges, and branch-versus-release status are source-labeled before they influence server code or tool policy.
 
+The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds portable plugin-package evidence. Agent Plugins-style bundles make skills, MCP configuration, manifests, component failures, and client extension namespaces travel together, so local review should check publisher trust, manifest scope, MCP server declarations, credential assumptions, and client-specific enforcement before treating the package as an approved development capability.
+
 ## Practice Boundaries
 
 - Treat discovered skills as code-adjacent supply-chain inputs.
@@ -25,6 +27,7 @@ The [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) ad
 - Require diagnostics and audit evidence when a remote skill changes available tools, actions, or context.
 - Enforce package-size, file-count, script-execution, transport-authentication, and approval-default limits before remote skills become active.
 - Treat framework documentation MCP servers and LLM-friendly docs as remote context packages with source labels, version scope, and release-status checks.
+- Treat portable skill-and-MCP plugin packages as governed capability bundles whose manifest, server declarations, extension namespaces, and client-enforced controls need review before installation.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ The [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) ad
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [upstream MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md)
 - [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md)
+- [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 
 ## Related Code
 
@@ -62,3 +66,4 @@ The [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) ad
 - Created on 2026-07-28 from July 28 raw evidence about remotely discovered MCP skills, package boundaries, approval defaults, diagnostics, and central governance.
 - Maintained on 2026-07-29 with authenticated retrieval, archive-limit, blocked-script, central-publication, approval-default, and diagnostic guidance.
 - Maintained on 2026-08-09 with MCP-served documentation and LLM-friendly docs as governed remote context packages.
+- Maintained on 2026-08-11 with portable plugin-package governance for bundled skills, MCP server configuration, manifests, and client extension namespaces.

@@ -43,6 +43,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The August 7 observability clippings add an LLM application telemetry boundary. [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md) owns release-control practice, while this page owns the runtime surface: traces, prompt versions, cost, latency, errors, feedback, session replay, product events, and human annotations should be joinable when operators need to decide whether a user-facing AI workflow is healthy, degraded, costly, or quality-regressing.
 
+The August 11 raw sources add IDE and workflow operating-record telemetry. The [topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) records agent debug logs, session visibility, OpenTelemetry settings, and per-model token breakdowns, while the [leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) records reasoning effort, context compaction, prompt caching, tool approvals, and region-aware fallback as operating-record fields. Locally, progress and telemetry should make those fields joinable by session when they explain approval, cost, or behavior.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -72,6 +74,7 @@ The August 7 observability clippings add an LLM application telemetry boundary. 
 - Show session state, subagent model, elapsed time, active tool calls, PR update state, and review context when IDE or agent-window workflows manage long-running coding tasks.
 - Keep trace identifiers and visible progress joined so a user can move from progress UI to audit or review evidence.
 - Join LLM traces, prompt versions, cost, latency, errors, feedback, product events, and human annotations when quality or release decisions depend on runtime behavior.
+- Join session/debug logs, telemetry export settings, token categories, reasoning effort, compaction, prompt-cache behavior, tool approvals, and fallback routes when they explain runtime behavior or cost.
 
 ## Authoritative Sources
 
@@ -95,6 +98,8 @@ The August 7 observability clippings add an LLM application telemetry boundary. 
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 
 ## Related Code
 
@@ -138,3 +143,4 @@ The August 7 observability clippings add an LLM application telemetry boundary. 
 - Maintained on 2026-07-31 with queue-trigger, live-node trace, AI-processing audit, remote viewing, and human-supervision telemetry guidance.
 - Maintained on 2026-08-04 with IDE agent-window session state, subagent timing, active tool-call, PR update, and trace-linkage guidance.
 - Maintained on 2026-08-07 with LLM trace, prompt-version, product-event, annotation, cost, latency, and quality-regression telemetry joins.
+- Maintained on 2026-08-11 with session/debug logs, token categories, reasoning effort, compaction, prompt-cache, tool-approval, and fallback-route telemetry joins.

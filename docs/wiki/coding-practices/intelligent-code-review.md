@@ -57,6 +57,8 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) adds AI monoculture evidence. When the same model or tool family generates and reviews code, shared blind spots can survive fluent review comments. Local review packages should preserve independent review responsibilities, defense-in-depth roles, documented standards, and decision records, and should route role-specific concerns through [layered AI code review roles](layered-ai-code-review-roles.md).
 
+The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds deterministic review-architecture evidence. OpenCodeReview-style staged review separates rule-guided dispatch, grounded file review with curated tools, file-level parallel review, and independent reflection under an information boundary. Locally, that supports review workflows that constrain retrieval and tool use, preserve reviewer independence, and measure token cost alongside source-backed finding quality.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -112,6 +114,7 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - Use structural diff output to triage formatting churn in AI-generated commits while preserving ordinary review for parser fallback, unsupported files, and behavior-risk decisions.
 - Avoid using the same model or tool family as both primary generator and only reviewer for higher-risk changes unless compensating deterministic checks and human review are recorded.
 - Preserve decision records that show which independent reviewer role, rubric, standard, or evidence source accepted the generated change.
+- Prefer deterministic review stages, curated tool surfaces, file-level scope boundaries, and independent reflection when free-form autonomous review produces unstable or unauditable findings.
 
 ## Authoritative Sources
 
@@ -149,6 +152,7 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 
 ## Related Code
 
@@ -201,3 +205,4 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - Maintained on 2026-08-04 with exploitable-risk triage, deterministic evidence, and human security judgment for AI review findings.
 - Maintained on 2026-08-05 with structural diff review routing for AI-generated commits.
 - Maintained on 2026-08-10 with AI monoculture, independent-review, defense-in-depth role, and decision-record guidance.
+- Maintained on 2026-08-11 with deterministic review-stage architecture, curated tool surfaces, file-level parallelism, and independent reflection evidence.

@@ -31,6 +31,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 
 The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds multi-folder primary-root evidence. In a multi-root workspace, the request package should name the primary Git and instruction root separately from secondary readable or editable evidence folders so agents do not inherit the wrong repository rules or perform Git operations in the wrong scope.
 
+The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds untrusted-content evidence from coding-agent security reports. Issue bodies, setup files, dependency metadata, retrieved vulnerability summaries, and later-loaded instruction artifacts should enter the request as labeled evidence until a human or policy gate explicitly authorizes command execution, credential access, CI side effects, or follow-on agent invocation.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -51,6 +53,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Require repository-specific source reads before carrying a claim or edit from one repository in a project workspace into another.
 - Prefer outcome, constraints, success criteria, verification evidence, and rollback boundaries over unnecessary step-by-step micromanagement when autonomy is appropriate.
 - Name the primary Git and instruction root separately from secondary evidence folders in multi-root workspaces.
+- Label issue text, setup files, dependency metadata, security roundups, and later-loaded instructions as untrusted evidence unless an explicit policy gate promotes them to actionable instruction.
 
 ## Authoritative Sources
 
@@ -66,6 +69,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 
 ## Related Code
 
@@ -102,3 +106,4 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Maintained on 2026-07-10 with requirement-to-architecture-to-test traceability for agentic requirement packages.
 - Maintained on 2026-07-14 with multi-repository boundaries, project artifact search, inline diff edits, PR annotations, and visualization evidence labels.
 - Maintained on 2026-07-29 with outcome-oriented prompting and primary-root authority guidance for multi-folder workspaces.
+- Maintained on 2026-08-11 with untrusted issue, setup-file, dependency-metadata, security-roundup, and later-loaded instruction boundaries.

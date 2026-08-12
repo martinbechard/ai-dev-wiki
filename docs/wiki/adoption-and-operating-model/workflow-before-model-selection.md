@@ -57,6 +57,8 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 
 The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md) adds a model-routing caution for tool-heavy workflows. Token price is not a sufficient selection criterion when the task depends on repeated benchmark, database, browser, search, or verifier calls, and benchmark success is not enough when the agent can satisfy the measured prompt by changing the workload boundary. Workflow selection should define the accepted fix class, tool-call budget, freshness expectations, and review method before comparing models.
 
+The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds model-lifecycle governance evidence. New coding models can be default-off enterprise policies, visible across several assistant surfaces, and paired with replacement deadlines for retired models. Locally, model availability should trigger surface inventory, rollout criteria, dependency checks, cost telemetry review, and replacement verification before administrators enable or retire a route for recurring workflows.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -100,6 +102,7 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - Treat product or inference-provider deprecation as a workflow-selection input, not only a procurement or vendor-news issue.
 - Define accepted fix classes, tool-call budgets, freshness requirements, and patch-review expectations before selecting a model for optimization or verifier-heavy tasks.
 - Treat low token price as a workflow input only after tool-call discipline, accepted outcome rate, and review burden are measured.
+- Treat model enablement, deprecation, and replacement as workflow-lifecycle events that need surface inventory, admin policy, dependent-workflow mapping, cost checks, and local verification before defaults change.
 
 ## Authoritative Sources
 
@@ -137,6 +140,7 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 - [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 
 ## Related Code
 
@@ -188,3 +192,4 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - Maintained on 2026-07-31 with budget-envelope, PR-state normalization, runtime-placement, model-policy, autonomous-testing, and embedded execution-capacity workflow inputs.
 - Maintained on 2026-08-04 with generated-app exportability, managed-inference inventory, and provider-replacement workflow inputs.
 - Maintained on 2026-08-05 with verifier-heavy model selection, accepted-fix classes, and tool-call budget guidance.
+- Maintained on 2026-08-11 with model-enable, model-deprecation, replacement-deadline, surface-inventory, and rollout-verification workflow governance.

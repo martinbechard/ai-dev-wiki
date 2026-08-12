@@ -17,6 +17,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 
 The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) reinforces MCP authorization as an enterprise deployment concern. Source-level server review, authentication, agent identity, scoped permissions, human-in-the-loop approvals, audit trails, and sandbox isolation should be captured before a server moves from demonstration to recurring team use.
 
+The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds managed-setting evidence for MCP access and permission-bypass behavior in an IDE agent surface. Locally, admin policy should record which MCP servers are allowed, whether permission bypass is disabled or narrowly scoped, which telemetry captures the decision, and what user-visible log evidence proves the agent used the approved path.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -27,6 +29,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Treat agent-scored tool-schema evaluation as a data-handling decision because schemas may be handed to a coding agent; deterministic schema checks and semantic scoring need separate evidence and review.
 - Keep broad MCP protocol lifecycle and server catalogs upstream; keep local notes focused on authorization, approval, audit, and workflow impact.
 - Require source-review, identity, scoped-permission, approval, audit, and sandbox evidence before moving an MCP server from demonstration to recurring team use.
+- Treat managed MCP access, permission-bypass behavior, and telemetry export settings as authorization controls that need admin policy evidence and run-level logs.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
@@ -64,3 +68,4 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Created on 2026-07-30 from public evidence about MCP resource scoping, read/write capability separation, sandbox permission classes, and approval-to-execution payload matching.
 - Maintained on 2026-07-31 with MCP registration review, runtime blocking, declared-tool snapshots, OAuth token scoping, callback-domain allow lists, and tool-schema evaluation boundaries.
 - Maintained on 2026-08-07 with enterprise MCP source-review, identity, approval, audit, and sandbox evidence requirements.
+- Maintained on 2026-08-11 with managed MCP access, permission-bypass, telemetry, and IDE debug-log evidence requirements.

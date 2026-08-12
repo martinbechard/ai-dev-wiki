@@ -71,6 +71,8 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 
 The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md) adds tool-call floor and outcome-quality evidence. When an agent workflow calls a costly verifier, benchmark harness, database, browser, or external service, nominal token price can be swamped by flat tool-execution cost; a cheaper model that retries or tests more often can converge toward the same run cost as an expensive model. Cost telemetry should therefore track tool calls, external compute, and cost per accepted fix, not only token price or cost per run.
 
+The August 11 raw sources add per-model and workflow-operating-record signals. The [topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) records per-model token breakdown fields for input, output, cache-read, cache-write, and consumed credits; the [leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) records workflow-level cost tracking with reasoning effort, context compaction, prompt caching, tool approvals, and fallback routes. Locally, these are evidence joins for model routing and workflow redesign, not product-reporting endpoints to duplicate.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -129,6 +131,7 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - Keep user-level spend limits and budget ownership joined to the workflow, owner, and accepted outcome when product billing surfaces change.
 - Separate token cost from flat verifier, benchmark, database, browser, and external-service execution cost when tool calls dominate the workflow bill.
 - Report cost per accepted fix or accepted outcome when a correct answer can still game the measured task.
+- Join per-model input, output, cache-read, cache-write, credit, reasoning-effort, tool-approval, compaction, and fallback-route fields to the workflow outcome when those fields are available.
 
 ## Authoritative Sources
 
@@ -173,6 +176,8 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 - [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 - [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
 - [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
@@ -229,3 +234,4 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 - Maintained on 2026-07-31 with AI wallet, budget alert, PR-state normalization, sponsored tokenomics, and cost-per-outcome routing evidence.
 - Maintained on 2026-08-04 with durable billing exports, budget settings, cost-center allocation, and preview-reporting retirement controls.
 - Maintained on 2026-08-05 with benchmark tool-call floors, external-compute cost attribution, and cost-per-accepted-fix guidance.
+- Maintained on 2026-08-11 with per-model token breakdown, cache-token, consumed-credit, reasoning-effort, prompt-cache, and fallback-route telemetry joins.

@@ -49,6 +49,8 @@ The August 5 sources add production-trace and coding-harness evidence. The [Lang
 
 The August 7 observability clippings add a trace-to-regression boundary. The [LLM observability quality gates](llm-observability-quality-gates.md) leaf owns tool-selection practice, while this page keeps the trajectory rule: production traces should be convertible into eval cases with the relevant prompt version, tool-call spans, retrieval context, component score, human annotation, and release decision. Final-output scores are not enough when a run can fail because of retrieval, tool choice, argument shape, memory, orchestration, or prompt drift.
 
+The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds SWE-RPG evidence for repository-level issue-resolution trajectories. Intermediate requirement-clarification and implementation-plan references expose failures that final patch outcomes hide, so local agent evals should preserve clarification questions, recovered implicit requirements, planning artifacts, and implementation evidence before judging whether a repository task was solved.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -74,6 +76,7 @@ The August 7 observability clippings add a trace-to-regression boundary. The [LL
 - Whether benchmark, harness, and environment components are separated enough to compare agent systems without hiding setup or runtime differences.
 - Whether tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls match the intended path.
 - Whether graph/run/node identifiers, routers, joins, deterministic functions, policies, budgets, human checkpoints, and issue-grouping records explain the path in multi-agent workflows.
+- Whether repository-level issue-resolution runs preserve requirement clarification, implicit-requirement recovery, implementation planning, and final patch evidence as separate trajectory stages.
 
 ## Practice Boundaries
 
@@ -104,6 +107,7 @@ The August 7 observability clippings add a trace-to-regression boundary. The [LL
 - Evaluate retrieval, memory, runtime constraints, tool authorization, abstention, refusal, and human-review paths as deployment evidence, not as model-only score details.
 - Diagnose failed or flat eval runs with an attribution taxonomy before changing prompts, model routes, or autonomy levels.
 - Convert production traces into trajectory-level regression cases when trace evidence can explain which step, tool call, retrieval span, or prompt version caused the failure.
+- Use intermediate requirement-clarification and implementation-plan evidence when evaluating repository-level issue resolution so implicit-requirement failures are not hidden by final patch scoring.
 
 ## Authoritative Sources
 
@@ -133,6 +137,7 @@ The August 7 observability clippings add a trace-to-regression boundary. The [LL
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
+- [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 
 ## Related Code
 
@@ -177,3 +182,4 @@ The August 7 observability clippings add a trace-to-regression boundary. The [LL
 - Maintained on 2026-07-29 with failure-attribution taxonomy guidance for non-improving agent eval runs.
 - Maintained on 2026-08-05 with production-trace, experiment, deployment, and regression-monitor evidence for agent-loop improvements.
 - Maintained on 2026-08-07 with trace-to-regression, component-score, annotation, and release-decision evidence.
+- Maintained on 2026-08-11 with repository-level issue-resolution trajectory checks for requirement clarification, implicit requirements, planning, and final patch evidence.
