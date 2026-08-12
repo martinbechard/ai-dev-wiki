@@ -1,0 +1,405 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-12T00:30:48Z",
+  "cutoff_window": {
+    "start": "2026-08-10T00:30:48Z",
+    "end": "2026-08-12T00:30:48Z",
+    "basis": "Two days before the UTC run timestamp. Date-only August 10 items were treated as cutoff-boundary ambiguous when no exact publication time was visible."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_policy": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "agentic frameworks",
+      "MCP servers",
+      "general developer tools",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, context architecture, and adoption implications only."
+  },
+  "search_summary": {
+    "methods": [
+      "Public web search for in-window AI-assisted development practice updates.",
+      "Official changelog inspection for GitHub Copilot entries dated August 11, 2026.",
+      "arXiv software-engineering and agent-skill paper inspection for exact UTC submission times.",
+      "Repository wiki status and federation review before saving raw output."
+    ],
+    "queries": [
+      "AI-assisted software development coding agents prompt instructions context engineering August 10 2026",
+      "AI code review evals software engineering agents August 11 2026",
+      "MCP agent governance audit logs permissions approvals August 11 2026",
+      "coding agents TDD regression repair code retrieval RAG codebases August 2026",
+      "after:2026-08-09 AI agents software development governance approvals audit logs",
+      "after:2026-08-09 context engineering coding agents durable instructions",
+      "after:2026-08-09 AI code review coding agents evals software engineering",
+      "after:2026-08-09 MCP security coding agents permissions approvals"
+    ]
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-08-11-github-copilot-jetbrains-memory-controls",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "source_title": "Copilot memory and Ollama in GitHub Copilot for JetBrains",
+      "visible_date": "August 11, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 11 is strictly after the 2026-08-10T00:30:48Z cutoff.",
+      "short_factual_summary": "GitHub announced persistent Copilot memory across agent chat sessions, Ollama as a BYOK provider in JetBrains, enterprise managed settings for plugin availability, MCP server access, permission bypass behavior, and OpenTelemetry settings, plus Codex session visibility in agent debug logs and updated permission modes, instructions, and skills.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update reinforces a governed-context pattern: durable memory, model/provider routing, MCP access, permission bypasses, telemetry, debug logs, instructions, and skills are now operator-managed surfaces rather than incidental chat behavior.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot for JetBrains",
+        "Ollama",
+        "BYOK",
+        "MCP",
+        "OpenTelemetry",
+        "Codex",
+        "Copilot CLI",
+        "JetBrains"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Ollama",
+        "MCP",
+        "OpenTelemetry",
+        "Codex",
+        "JetBrains"
+      ],
+      "local_practice_implication": "Candidate local synthesis belongs under context architecture, retrieval/tools governance, durable instructions, and user-visible runtime telemetry rather than local product leaves.",
+      "follow_up_notes": [
+        "During ingest, compare against existing pages on durable instructions, MCP scoped authorization, remote MCP skill discovery, and user-visible progress telemetry.",
+        "Route broad product details and model/provider coverage to the upstream AI wiki."
+      ]
+    },
+    {
+      "id": "2026-08-11-github-copilot-mai-code-1-1-flash",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/",
+      "source_title": "MAI-Code-1.1-Flash available in GitHub Copilot",
+      "visible_date": "August 11, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 11 is strictly after the 2026-08-10T00:30:48Z cutoff.",
+      "short_factual_summary": "GitHub said MAI-Code-1.1-Flash is rolling out in Copilot with vision support, coding quality, instruction-following, tool-use, and performance improvements; the model is available through auto selection or manual selection across Copilot surfaces, while Business and Enterprise administrators must enable the policy and it is off by default.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model choice for coding agents is becoming an administrative control point. Teams need model-policy review, rollout criteria, cost checks, and workflow suitability checks before enabling new coding models across agent surfaces.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1.1-Flash",
+        "MAI-Code-1-Flash",
+        "Microsoft",
+        "Copilot CLI",
+        "Copilot cloud agent",
+        "GitHub Copilot app",
+        "Visual Studio Code",
+        "Visual Studio",
+        "GitHub Mobile",
+        "JetBrains IDEs",
+        "Eclipse",
+        "Xcode"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1.1-Flash",
+        "MAI-Code-1-Flash",
+        "Microsoft",
+        "Visual Studio Code",
+        "Visual Studio",
+        "JetBrains IDEs",
+        "Eclipse",
+        "Xcode"
+      ],
+      "local_practice_implication": "Capture only the model-governance practice: default-off enterprise policy, surface inventory, and rollout/usage controls for coding-agent model selection.",
+      "follow_up_notes": [
+        "Check adoption and operating model pages for model-routing governance and cost-control language.",
+        "Do not create local model or product leaves."
+      ]
+    },
+    {
+      "id": "2026-08-11-github-copilot-mai-code-deprecation",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-11-upcoming-deprecation-of-mai-code-1-flash/",
+      "source_title": "Upcoming deprecation of MAI-Code-1-Flash",
+      "visible_date": "August 11, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 11 is strictly after the 2026-08-10T00:30:48Z cutoff.",
+      "short_factual_summary": "GitHub announced that MAI-Code-1-Flash will be deprecated across GitHub Copilot experiences on September 10, 2026, recommends MAI-Code-1.1-Flash, and notes that Enterprise administrators may need to enable the replacement model through Copilot model policies.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent workflows now need model-lifecycle monitoring: model deprecations can break or change agent behavior unless administrators map dependent workflows, update policies, and verify replacement behavior before retirement dates.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1-Flash",
+        "MAI-Code-1.1-Flash",
+        "Copilot Enterprise",
+        "Visual Studio Code",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MAI-Code-1-Flash",
+        "MAI-Code-1.1-Flash",
+        "Visual Studio Code"
+      ],
+      "local_practice_implication": "Fits local source-workflow and operating-model coverage for dependency inventories, provider-retirement checks, and migration verification gates.",
+      "follow_up_notes": [
+        "During ingest, connect to managed agent portability boundaries and leaf-update watch if current pages already cover retirement checks.",
+        "Record the September 10, 2026 deprecation as a practice-relevant deadline, not as a local model biography."
+      ]
+    },
+    {
+      "id": "2026-08-11-github-copilot-token-breakdown",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+      "source_title": "Per-model token breakdown in the usage report",
+      "visible_date": "August 11, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 11 is strictly after the 2026-08-10T00:30:48Z cutoff.",
+      "short_factual_summary": "GitHub added per-model token details to AI usage reports, showing input, output, cache-read, and cache-write tokens alongside AI credits consumed; the report is available to Copilot Business and Enterprise admins and individual Copilot users.",
+      "why_it_matters_for_ai_assisted_development_practice": "Per-model token accounting turns agent spend into auditable operating evidence, supporting budget controls, cached-context tuning, model routing decisions, and stakeholder reporting for AI-assisted development.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "AI usage report",
+        "AI credits"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with agent cost telemetry, runtime telemetry, and governance controls for usage-budget evidence.",
+      "follow_up_notes": [
+        "Check docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md before ingest.",
+        "Do not duplicate Copilot product documentation locally."
+      ]
+    },
+    {
+      "id": "2026-08-10-arxiv-opencodereview",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.09290",
+      "source_title": "OpenCodeReview: Determinism over Non-Determinism for Cost-Effective Agent-Based Code Review",
+      "visible_date": "Submitted on 10 Aug 2026; v1 Mon, 10 Aug 2026 08:43:16 UTC",
+      "date_granularity": "exact UTC submission time",
+      "date_qualification": "In-window because the v1 submission time is after 2026-08-10T00:30:48Z.",
+      "short_factual_summary": "The paper argues that LLM code-review agents suffer from unstable outcomes under unbounded tool use and from diff-local context. It proposes deterministic review stages: rule-guided dispatch, grounded file review with curated tools and ReAct, file-level parallel subagents, and independent reflection under an asymmetric information boundary. On AACR-Bench, it reports up to 2.17x higher SEM-F1 and 5-15x lower token use than mainstream coding agents across six backends.",
+      "why_it_matters_for_ai_assisted_development_practice": "The result supports deterministic review routing, bounded tool surfaces, independent falsification, and token-aware review architecture as practical design criteria for AI code review rather than relying on free-form autonomous review.",
+      "named_entities": [
+        "OpenCodeReview",
+        "AACR-Bench",
+        "ReAct",
+        "Claude Code",
+        "Codex",
+        "SEM-F1",
+        "Alibaba",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "OpenCodeReview",
+        "AACR-Bench",
+        "ReAct",
+        "Claude Code",
+        "Codex",
+        "Alibaba",
+        "arXiv"
+      ],
+      "local_practice_implication": "Local wiki should capture review-loop architecture implications: deterministic dispatch, curated retrieval/tool use, subagent boundaries, and independent reflection as eval-backed code-review practices.",
+      "follow_up_notes": [
+        "During ingest, compare with intelligent code review, layered AI code review roles, code-review evals, and trajectory-level agent evaluation pages.",
+        "Consider routing broad benchmark/entity details upstream."
+      ]
+    },
+    {
+      "id": "2026-08-10-arxiv-swe-rpg",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.09072",
+      "source_title": "A Unified Issue Resolution Benchmark for Requirement Clarification, Planning, and Code Generation for Coding Agents",
+      "visible_date": "Submitted on 10 Aug 2026; v1 Mon, 10 Aug 2026 03:22:04 UTC",
+      "date_granularity": "exact UTC submission time",
+      "date_qualification": "In-window because the v1 submission time is after 2026-08-10T00:30:48Z.",
+      "short_factual_summary": "The SWE-RPG benchmark adds intermediate ground-truth references for requirement clarification and implementation planning to repository-level issue resolution. It includes 163 tasks from 31 Python and Java repositories and reports an average resolved rate of 31.5% for evaluated coding agents, with implicit requirement recovery identified as a major bottleneck in 24.5%-46.0% of runs.",
+      "why_it_matters_for_ai_assisted_development_practice": "The paper supports evaluating agent trajectories before the final patch: requirement recovery and planning need their own evidence, rubrics, and review gates because pass/fail tests alone cannot explain where agent work diverged.",
+      "named_entities": [
+        "SWE-RPG",
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Claude-Sonnet-5",
+        "GPT-5.6-Terra",
+        "Python",
+        "Java",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "SWE-RPG",
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Claude-Sonnet-5",
+        "GPT-5.6-Terra",
+        "Python",
+        "Java",
+        "arXiv"
+      ],
+      "local_practice_implication": "Candidate local synthesis belongs in verification/evals and prompt/instruction practice: executable issue-resolution loops should preserve requirement clarification and implementation-plan evidence before code generation.",
+      "follow_up_notes": [
+        "Check verification loops, trajectory-level evaluation, and request-package pages during ingest.",
+        "Route model and benchmark encyclopedia details upstream while keeping local trajectory-diagnosis practice."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-08-10-copilot-on-web-expands-conversation-controls/",
+      "source_title": "Copilot on web expands conversation controls",
+      "visible_date": "August 10, 2026",
+      "reason": "Excluded as cutoff-boundary ambiguous. The page shows only a date, not an exact time after 2026-08-10T00:30:48Z."
+    },
+    {
+      "source_url": "https://leaddev.com/software-quality/your-sdlc-is-your-context-engineering",
+      "source_title": "Your SDLC is your context engineering",
+      "visible_date": "Search result showed yesterday; opened page did not expose a reliable publication timestamp in fetched text.",
+      "reason": "Excluded because the source page did not expose a visible publication or update date in fetched content, despite strong local practice relevance."
+    },
+    {
+      "source_url": "https://airia.com/blog/mcp-security-risks-the-complete-threat-model-for-enterprise-ai-agent-integrations/",
+      "source_title": "MCP Security Risks: The Complete Threat Model for Enterprise AI Agent Integrations",
+      "visible_date": "August 10, 2026",
+      "reason": "Excluded as cutoff-boundary ambiguous. The page shows only a date, not an exact time after 2026-08-10T00:30:48Z."
+    },
+    {
+      "source_url": "https://www.atlassian.com/blog/jira/writing-tickets-for-ai-agents",
+      "source_title": "Why better tickets help agents write better code",
+      "visible_date": "August 9, 2026",
+      "reason": "Excluded as out of window relative to the 2026-08-10T00:30:48Z cutoff."
+    },
+    {
+      "source_url": "https://www.keyfactor.com/education-center/mcp-servers-explained-turning-ai-agents-into-doers/",
+      "source_title": "MCP Servers Explained: Turning AI Agents into Doers",
+      "visible_date": "Search result showed today; opened page did not expose a reliable publication timestamp in fetched text.",
+      "reason": "Excluded because the source page did not expose a visible publication or update date in fetched content."
+    },
+    {
+      "source_url": "https://www.augmentcode.com/guides/secure-sdlc-agent-authored-code",
+      "source_title": "Secure SDLC When Agents Write the Code",
+      "visible_date": "Search result showed yesterday; opened page did not expose a reliable publication timestamp in fetched text.",
+      "reason": "Excluded because the source page did not expose a visible publication or update date in fetched content, despite strong governance relevance."
+    },
+    {
+      "source_url": "https://thenewstack.io/evaluating-coding-agents-framework/",
+      "source_title": "Coding agents can be evaluated. We just have to evaluate the work.",
+      "visible_date": "Search result showed published 2 days ago.",
+      "reason": "Excluded because the fetched source content was not available for source verification in this run."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2608.08793",
+      "source_title": "Evidence-Calibrated Runtime Reconstruction for Agent Skills Across Heterogeneous Coding Agents",
+      "visible_date": "Submitted on 9 Aug 2026; v1 Sun, 9 Aug 2026 16:18:13 UTC",
+      "reason": "Excluded as out of window relative to the 2026-08-10T00:30:48Z cutoff, even though the topic is highly relevant to skill lifecycle observability."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-11-automatically-migrate-branch-protection-rules-to-repository-rulesets/",
+      "source_title": "Automatically migrate branch protection rules to repository rulesets",
+      "visible_date": "August 11, 2026",
+      "reason": "Excluded because it is general repository governance and did not provide a specific AI-assisted development practice implication in the fetched source."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 6,
+    "excluded_candidate_count": 9
+  },
+  "validation_plan": [
+    "jq empty raw/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json",
+    "python3 -m json.tool raw/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json"
+  ],
+  "blockers": [],
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were searched and recorded.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Local repository content was used only to verify wiki workflow and federation boundaries."
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only and should not be moved to raw/processed until normal ingest and verifier-gated synthesis are complete.",
+    "During ingest, keep broad company, model, product, framework, MCP-server, and benchmark entity coverage in the upstream AI wiki; keep only AI-assisted development practice implications locally.",
+    "Boundary-excluded August 10 date-only sources may be reconsidered only if exact publication or update times are found."
+  ]
+}
