@@ -59,6 +59,8 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 
 The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds deterministic review-architecture evidence. OpenCodeReview-style staged review separates rule-guided dispatch, grounded file review with curated tools, file-level parallel review, and independent reflection under an information boundary. Locally, that supports review workflows that constrain retrieval and tool use, preserve reviewer independence, and measure token cost alongside source-backed finding quality.
 
+The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds system-context and agentic change-management evidence. AI-generated code can pass local diff review while failing against service ownership, dependency, operational, or production context; review queues also become change-management queues when agent-generated pull requests increase. Locally, intelligent review should preserve PR intent, risk explanation, downstream dependency checks, validation evidence, post-merge health signals, and human attention allocation rather than treating review as comment generation alone.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -115,6 +117,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Avoid using the same model or tool family as both primary generator and only reviewer for higher-risk changes unless compensating deterministic checks and human review are recorded.
 - Preserve decision records that show which independent reviewer role, rubric, standard, or evidence source accepted the generated change.
 - Prefer deterministic review stages, curated tool surfaces, file-level scope boundaries, and independent reflection when free-form autonomous review produces unstable or unauditable findings.
+- Include PR intent, operational blast radius, service ownership, downstream dependency checks, validation evidence, and post-merge health signals when reviewing agent-generated changes.
+- Treat review queue triage as change-management work when generated-code volume shifts scarce human judgment from writing code to deciding which changes are safe to accept.
 
 ## Authoritative Sources
 
@@ -153,6 +157,7 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -206,3 +211,4 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Maintained on 2026-08-05 with structural diff review routing for AI-generated commits.
 - Maintained on 2026-08-10 with AI monoculture, independent-review, defense-in-depth role, and decision-record guidance.
 - Maintained on 2026-08-11 with deterministic review-stage architecture, curated tool surfaces, file-level parallelism, and independent reflection evidence.
+- Maintained on 2026-08-12 with system-context review and agentic change-management queue evidence.

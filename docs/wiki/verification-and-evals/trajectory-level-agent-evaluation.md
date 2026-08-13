@@ -51,6 +51,8 @@ The August 7 observability clippings add a trace-to-regression boundary. The [LL
 
 The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds SWE-RPG evidence for repository-level issue-resolution trajectories. Intermediate requirement-clarification and implementation-plan references expose failures that final patch outcomes hide, so local agent evals should preserve clarification questions, recovered implicit requirements, planning artifacts, and implementation evidence before judging whether a repository task was solved.
 
+The August 12 raw sources add evaluation-framework and harness-layer evidence. The [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md), [Harbor motivation clipping](../../../raw/processed/Motivation.md), and [Inspect clipping](../../../raw/processed/Inspect.md) reinforce that trajectory evaluation needs explicit task, dataset, environment, trial, job, solver, scorer, sandbox, log, and tool boundaries. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds a model/context/harness split: a failed agent run should be attributed against retrieved context, permissions, memory, tools, code execution, delegation, environment, and scoring behavior before local practice treats the model as the only failure point.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -77,6 +79,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Whether tool-call order, argument correctness, state-change results, recovery behavior, cost, and safety controls match the intended path.
 - Whether graph/run/node identifiers, routers, joins, deterministic functions, policies, budgets, human checkpoints, and issue-grouping records explain the path in multi-agent workflows.
 - Whether repository-level issue-resolution runs preserve requirement clarification, implicit-requirement recovery, implementation planning, and final patch evidence as separate trajectory stages.
+- Whether the evaluated run preserves task, dataset, environment, trial, job, solver, scorer, sandbox, log, and tool evidence strongly enough to reproduce and attribute the path.
+- Whether model, context, harness, memory, permission, tool, environment, and scorer failures are separated before a trajectory verdict is used to change a workflow.
 
 ## Practice Boundaries
 
@@ -108,6 +112,7 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Diagnose failed or flat eval runs with an attribution taxonomy before changing prompts, model routes, or autonomy levels.
 - Convert production traces into trajectory-level regression cases when trace evidence can explain which step, tool call, retrieval span, or prompt version caused the failure.
 - Use intermediate requirement-clarification and implementation-plan evidence when evaluating repository-level issue resolution so implicit-requirement failures are not hidden by final patch scoring.
+- Keep evaluation-framework concepts as local harness evidence while routing broad Harbor, Inspect, benchmark, provider, and sandbox-product coverage upstream.
 
 ## Authoritative Sources
 
@@ -138,6 +143,10 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - [LangSmith Engine clipping](../../../raw/processed/Quickstart Autonomous Agent Improvement with LangSmith Engine.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md)
+- [Harbor motivation clipping](../../../raw/processed/Motivation.md)
+- [Inspect clipping](../../../raw/processed/Inspect.md)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -183,3 +192,4 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Maintained on 2026-08-05 with production-trace, experiment, deployment, and regression-monitor evidence for agent-loop improvements.
 - Maintained on 2026-08-07 with trace-to-regression, component-score, annotation, and release-decision evidence.
 - Maintained on 2026-08-11 with repository-level issue-resolution trajectory checks for requirement clarification, implicit requirements, planning, and final patch evidence.
+- Maintained on 2026-08-12 with Harbor, Inspect, and model/context/harness separation as trajectory failure-attribution evidence.

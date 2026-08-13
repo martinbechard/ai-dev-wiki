@@ -27,6 +27,8 @@ The [managed agent vertical integration query source](../../../raw/processed/que
 
 The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds a current vendor example of software-testing skills packaged for agents. Locally, test-suite architecture, TDD, load profiling, and vulnerability-audit skills should be imported as reviewable runbook material with owner, version, command behavior, customization notes, and generated-output review gates rather than as opaque product-specific capability.
 
+The August 12 raw sources add Agent Plugins packaging evidence. The [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md) clarifies that portable Agent Plugins packages are not the same thing as MCP, and the [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) plus [leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) show skills travelling with manifests, MCP server configuration, client namespaces, managed settings, and marketplace installation. This page keeps the skill/runbook contract; [portable agent plugin packaging and governance](../retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md) owns the package boundary that carries those skills between clients.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -45,6 +47,7 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Treat platform skills that scaffold, evaluate, deploy, or monitor systems as operational runbooks, not just prompt snippets.
 - Keep portable procedures outside vendor session state when model, runtime, memory, or control-plane substitution matters.
 - Treat reusable testing and vulnerability-audit skills as runbook material that needs owner, version, command behavior, customization, and output-review metadata before team use.
+- Keep the reusable skill contract distinct from the plugin package that installs it; review skill procedure, package manifest, MCP declarations, and client-specific behavior as separate artifacts.
 
 ## Authoritative Sources
 
@@ -59,6 +62,9 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
+- [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
@@ -82,6 +88,7 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - [workflow before model selection](workflow-before-model-selection.md)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [managed agent portability boundaries](managed-agent-portability-boundaries.md)
+- [portable agent plugin packaging and governance](../retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md)
 
 ## Open Questions
 
@@ -96,3 +103,4 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Maintained on 2026-07-17 with IDE-managed skill imports, source registry metadata, cross-agent compatibility, and build-evaluate-deploy-monitor runbook boundaries.
 - Maintained on 2026-08-05 with layer-by-layer managed-agent portability guidance for reusable procedures.
 - Maintained on 2026-08-10 with testing-skill import boundaries for ownership, versioning, command behavior, customization, and generated-output review.
+- Maintained on 2026-08-12 with Agent Plugins package boundaries separated from reusable skill and runbook contracts.

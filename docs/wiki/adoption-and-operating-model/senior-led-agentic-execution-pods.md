@@ -19,6 +19,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) adds public evidence for customer-embedded AI engineering as an operating model. Locally, that supports using senior-led pods when production AI systems require domain translation, customer workflow ownership, launch responsibility, and fast feedback loops rather than only tool enablement.
 
+The [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) adds workplace reinforcement-learning and Agentic Pods evidence. The local implication is governance-sensitive: senior pods should observe and redesign real workflows only with consent, privacy boundaries, and evidence ownership, then turn the observed workflow into representative task environments, acceptance gates, and operating changes rather than treating human work traces as generic training data.
+
 ## Practice Boundaries
 
 - Use senior-led pods for high-leverage workflows that need end-to-end ownership.
@@ -28,6 +30,7 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - Use dynamic subagents only when the pod can define partitions, expected intermediate results, and review checkpoints.
 - Keep the senior owner responsible for coverage reconciliation and final acceptance after delegated fan-out.
 - Use embedded senior pods when the workflow requires domain-context translation, customer feedback, build-and-launch ownership, and accountable production operation.
+- Treat observed human workflows and realistic work environments as sensitive operating evidence that needs consent, privacy boundaries, and explicit ownership before pods use it to redesign agent workflows.
 
 ## Authoritative Sources
 
@@ -37,6 +40,7 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - [outcome alignment and process autonomy](outcome-alignment-and-process-autonomy.md)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
+- [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 
 ## Related Code
 
@@ -66,3 +70,4 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - Created on 2026-06-23 from source-backed agentic pod, expert generalist, and HVE workflow-packaging guidance.
 - Maintained on 2026-07-05 with dynamic-subagent coverage, typed intermediate result, and senior-owner reconciliation signals.
 - Maintained on 2026-07-31 with customer-embedded AI engineering evidence for domain translation, launch ownership, and production workflow accountability.
+- Maintained on 2026-08-12 with realistic workflow-environment and Agentic Pods evidence as consent- and governance-sensitive operating inputs.

@@ -59,6 +59,8 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 
 The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds model-lifecycle governance evidence. New coding models can be default-off enterprise policies, visible across several assistant surfaces, and paired with replacement deadlines for retired models. Locally, model availability should trigger surface inventory, rollout criteria, dependency checks, cost telemetry review, and replacement verification before administrators enable or retire a route for recurring workflows.
 
+The August 12 raw sources add agent-package, usage-metric, ROI, realistic-work-environment, and coding-agent comparison evidence. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) reinforce that workflow selection should evaluate portability, package governance, review effort, agent activity metrics, cost-to-output assumptions, realistic task environments, review capacity, and workflow fit before standardizing one assistant surface or model family.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -103,6 +105,7 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Define accepted fix classes, tool-call budgets, freshness requirements, and patch-review expectations before selecting a model for optimization or verifier-heavy tasks.
 - Treat low token price as a workflow input only after tool-call discipline, accepted outcome rate, and review burden are measured.
 - Treat model enablement, deprecation, and replacement as workflow-lifecycle events that need surface inventory, admin policy, dependent-workflow mapping, cost checks, and local verification before defaults change.
+- Treat portable plugin availability, agent activity metrics, review-effort controls, ROI dashboards, and realistic work-environment evidence as workflow inputs that need local task fit and governance review before adoption expands.
 
 ## Authoritative Sources
 
@@ -141,6 +144,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 - [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 
 ## Related Code
 
@@ -193,3 +198,4 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Maintained on 2026-08-04 with generated-app exportability, managed-inference inventory, and provider-replacement workflow inputs.
 - Maintained on 2026-08-05 with verifier-heavy model selection, accepted-fix classes, and tool-call budget guidance.
 - Maintained on 2026-08-11 with model-enable, model-deprecation, replacement-deadline, surface-inventory, and rollout-verification workflow governance.
+- Maintained on 2026-08-12 with portable package, usage-metric, ROI, realistic-work-environment, and workflow-fit selection inputs.

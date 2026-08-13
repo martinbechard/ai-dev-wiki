@@ -31,6 +31,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) adds skill-eval workshop evidence. Durable skills should be treated as testable instruction artifacts: each shared skill needs representative tasks, edge-case prompts, expected tool-use boundaries, regression checks, and owner review before teams rely on it in recurring coding-agent work.
 
+The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds instruction-maintenance debt evidence. Durable instruction files should be periodically audited for obsolete front-loaded rules, repeated prompts, and model-era assumptions, then shortened or moved into progressive-disclosure skills when the standing prompt no longer needs them. Broad model and product details stay upstream; locally, the operating rule is to treat instruction cleanup as maintenance work with owner review and verification, not as casual prompt trimming.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -52,6 +54,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Route PRD templates that define permissions, approval gates, logging, escalation, or eval-style done criteria through [executable PRD templates](../prompt-and-instructions/executable-prd-templates.md).
 - Catalog internal skills by workflow, owner, validation evidence, standards coverage, and compatibility target before treating them as reusable procedure.
 - Evaluate shared skills with representative tasks, edge cases, tool-use expectations, and regression checks before promoting them into durable team guidance.
+- Audit durable instruction files for stale prompt debt and move recurring procedure into reviewed skills or wiki-backed guidance when progressive disclosure can carry it more safely.
 
 ## Authoritative Sources
 
@@ -68,6 +71,7 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -107,3 +111,4 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 - Maintained on 2026-07-27 with rule-file adoption caveats and executable PRD template review boundaries.
 - Maintained on 2026-07-30 with internal-skill workflow ownership, standards, validation, and compatibility evidence.
 - Maintained on 2026-08-07 with skill-eval workshop evidence for representative tasks, edge cases, tool-use expectations, and regression checks.
+- Maintained on 2026-08-12 with prompt-debt auditing and progressive-disclosure cleanup as durable instruction maintenance.

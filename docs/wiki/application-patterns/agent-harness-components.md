@@ -65,6 +65,8 @@ The August 9 sources add browser-agent and security-containment evidence. The [B
 
 The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds governed context-assembly and SDK harness evidence. Production agent harnesses should expose identity, task state, memory, retrieval, tool outputs, governance controls, structured responses, streaming progress, server-side sessions, tool registration, BYOK routing, and least-capability tool exposure as runtime components while routing broad product coverage upstream.
 
+The August 12 raw sources add evaluation-framework and context/harness-separation evidence. The [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md) and [Harbor motivation clipping](../../../raw/processed/Motivation.md) frame task, dataset, agent, container environment, trial, and job boundaries for containerized agent evaluation, including parallel trials and cloud sandbox runtimes. The [Inspect clipping](../../../raw/processed/Inspect.md) records tasks, datasets, solvers, scorers, tools, agents, sandboxes, logs, and external coding-agent support as evaluation components. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds a model/context/harness separation lens. Locally, harnesses should make evaluation entities, execution environment, scoring surface, logs, permissions, and tool surfaces explicit enough that failures can be attributed to context, tool, environment, scorer, or model behavior instead of collapsing into a model-only explanation.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -117,6 +119,8 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Treat browser fleets, search/fetch APIs, authenticated browser sessions, proxies, and session recordings as harness components when agents operate through the web's native interface.
 - Keep internet access, external contact, public contribution, monitoring, and kill-switch controls outside model discretion when high-capability agents run security-sensitive or public-facing workflows.
 - Expose identity, task state, memory, retrieval, tool outputs, governance controls, structured responses, streaming progress, tool registration, and least-capability grants as inspectable harness components.
+- Preserve task, dataset, agent, environment, trial, job, solver, scorer, sandbox, log, and tool boundaries when a harness is used to evaluate or optimize coding agents.
+- Diagnose agent failures across model, context, harness, environment, permission, tool, and scorer layers before changing prompts or model routes.
 
 ## Authoritative Sources
 
@@ -165,6 +169,10 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
+- [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md)
+- [Harbor motivation clipping](../../../raw/processed/Motivation.md)
+- [Inspect clipping](../../../raw/processed/Inspect.md)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -223,3 +231,4 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Maintained on 2026-08-08 with externally enforced trust boundaries, manager/executor/auditor separation, and long-horizon harness state controls.
 - Maintained on 2026-08-09 with browser-agent runtime components and high-capability security-containment controls.
 - Maintained on 2026-08-10 with governed context assembly, structured response, streaming progress, server-side session, tool-registration, and least-capability harness guidance.
+- Maintained on 2026-08-12 with Harbor, Inspect, and context/harness evaluation evidence for explicit task, environment, tool, scoring, and failure-attribution boundaries.

@@ -31,6 +31,8 @@ The July 17 raw sources add security and production-agent gate examples. The [to
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds enterprise content-agent controls as lifecycle gate evidence. Workflows that can delete, modify, or publish enterprise content should require action vetting, label-aware access controls, prompt-injection checks, audit trails, threshold alerts, and human holds before they graduate into standing operations.
 
+The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds repository-rule, system-context review, and agentic change-management evidence. Lifecycle gates should treat organization rule bypasses, AI-generated change volume, PR intent, risk explanations, validation evidence, post-merge health, and operational blast radius as reviewable governance signals before agent workflows move from assisted drafting to recurring delivery.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -53,6 +55,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Treat production-agent behavior updates as tested change proposals with simulations, graders, guardrails, approvals, escalations, and rollout evidence before deployment.
 - Add sandbox-boundary and untrusted-content checks when coding agents read repository content that can influence host-side components or command execution.
 - Gate enterprise content-agent workflows on action vetting, content labels, prompt-injection checks, audit trails, alerts, and human holds for high-impact actions.
+- Treat repository rule insights, bypass activity, PR risk summaries, validation evidence, post-merge health, and operational blast radius as lifecycle evidence for agent-generated change workflows.
 
 ## Authoritative Sources
 
@@ -72,6 +75,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -108,3 +112,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-07-17 with review-stage logic-flaw reasoning, remediation packet evidence, draft-PR handoff boundaries, online traces, and production-loop security gates.
 - Maintained on 2026-07-22 with generated-code provenance, production-agent simulation, rollout approval, and sandbox-boundary gates.
 - Maintained on 2026-07-27 with content-agent action-vetting, label-control, audit, alert, and human-hold lifecycle gates.
+- Maintained on 2026-08-12 with repository-rule insight, system-context review, and agentic change-management lifecycle evidence.

@@ -73,6 +73,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 
 The August 9 clipping set adds MCP framework-selection and browser-tool evidence. The [FastMCP issue clipping](../../../raw/processed/FastMCP 2.0 vs MCP Python SDK Server · Issue 1068 · modelcontextprotocolpython-sdk.md) and [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) frame FastMCP 2.0 as a convenience-rich Python MCP framework while the official Python SDK remains the spec-aligned route; locally, that means framework choice should be documented as a tool-surface and compatibility decision, not just a developer-experience preference. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) reinforces that search, fetch, browser control, model routing, and identity surfaces need separate scopes and audit evidence when exposed to agents.
 
+The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds governed API-to-MCP and citable retrieval evidence. OpenAPI specifications are not automatically agent-safe interfaces; generated or compiled MCP surfaces need least-privilege design, schema review, action-scope review, permission checks, and adapter verification. MCP-backed research or documentation retrieval should also preserve source citations and privacy/data-flow boundaries so tool output remains evidence rather than an unreviewed authority expansion.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -140,6 +142,8 @@ The August 9 clipping set adds MCP framework-selection and browser-tool evidence
 - Treat MCP deployment agendas and migration events as prompts to review conformance, source-level server findings, identity, policy, observability, sandbox, and audit evidence before expanding tool access.
 - Record whether an MCP server is built on the official SDK, FastMCP, generated OpenAPI/FastAPI tooling, or another framework when that choice affects spec conformance, compatibility, documentation, generated tools, authentication, or deployment support.
 - Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
+- Treat generated API-to-MCP surfaces as designed adapters that need least-privilege review, schema clarity, permission checks, and verification before agents call them.
+- Preserve citation and privacy-boundary evidence when MCP retrieval supplies sources to an agent workflow.
 
 ## Authoritative Sources
 
@@ -194,6 +198,7 @@ The August 9 clipping set adds MCP framework-selection and browser-tool evidence
 - [FastMCP issue clipping](../../../raw/processed/FastMCP 2.0 vs MCP Python SDK Server · Issue 1068 · modelcontextprotocolpython-sdk.md)
 - [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 
 ## Related Code
 
@@ -255,3 +260,4 @@ The August 9 clipping set adds MCP framework-selection and browser-tool evidence
 - Maintained on 2026-07-29 with MCP protocol migration, explicit state-handle, conformance, approval, and audit-join guidance.
 - Maintained on 2026-08-07 with enterprise MCP deployment, source-level server review, observability, sandbox, and multi-agent review boundaries.
 - Maintained on 2026-08-09 with FastMCP versus official SDK selection evidence and scoped browser-agent tool boundaries.
+- Maintained on 2026-08-12 with governed API-to-MCP adapter and citable MCP retrieval evidence.

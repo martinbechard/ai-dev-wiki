@@ -2,7 +2,7 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries, including the August 11 context telemetry, MCP governance, model lifecycle, cost telemetry, and review-eval updates.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries, including the August 12 portable plugin packaging, workflow-selection, review-governance, citable retrieval, and evaluation-harness updates.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
@@ -66,3 +66,4 @@ This digest hub is downstream of raw source ingest. Public collectors and leaf w
 - Maintained on 2026-08-09 with the August 9 raw ingest digest scope.
 - Maintained on 2026-08-10 with the August 10 raw ingest digest scope.
 - Maintained on 2026-08-11 with the August 11 raw ingest digest scope.
+- Maintained on 2026-08-12 with the August 12 raw ingest digest scope.

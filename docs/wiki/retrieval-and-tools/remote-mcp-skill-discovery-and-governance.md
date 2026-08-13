@@ -19,6 +19,8 @@ The [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md) ad
 
 The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds portable plugin-package evidence. Agent Plugins-style bundles make skills, MCP configuration, manifests, component failures, and client extension namespaces travel together, so local review should check publisher trust, manifest scope, MCP server declarations, credential assumptions, and client-specific enforcement before treating the package as an approved development capability.
 
+The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json), [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json), and [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md) refine that boundary. Remotely discovered skills may arrive inside a broader Agent Plugins package, but the package itself is not an MCP concept. Route package manifest, marketplace, managed-setting, and client-extension review through [portable agent plugin packaging and governance](portable-agent-plugin-packaging-and-governance.md); keep this page focused on remote skill provenance and activation.
+
 ## Practice Boundaries
 
 - Treat discovered skills as code-adjacent supply-chain inputs.
@@ -28,6 +30,7 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Enforce package-size, file-count, script-execution, transport-authentication, and approval-default limits before remote skills become active.
 - Treat framework documentation MCP servers and LLM-friendly docs as remote context packages with source labels, version scope, and release-status checks.
 - Treat portable skill-and-MCP plugin packages as governed capability bundles whose manifest, server declarations, extension namespaces, and client-enforced controls need review before installation.
+- Distinguish remote skill activation from portable plugin packaging so MCP-discovered procedure does not inherit trust merely because the package installed successfully.
 
 ## Authoritative Sources
 
@@ -38,6 +41,10 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - [upstream MCP server index](../../../upstream-ai-wiki/mcp-servers/index.md)
 - [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
+- [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
+- [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md)
+- [portable agent plugin packaging and governance](portable-agent-plugin-packaging-and-governance.md)
 
 ## Related Code
 
@@ -67,3 +74,4 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Maintained on 2026-07-29 with authenticated retrieval, archive-limit, blocked-script, central-publication, approval-default, and diagnostic guidance.
 - Maintained on 2026-08-09 with MCP-served documentation and LLM-friendly docs as governed remote context packages.
 - Maintained on 2026-08-11 with portable plugin-package governance for bundled skills, MCP server configuration, manifests, and client extension namespaces.
+- Maintained on 2026-08-12 with the Agent Plugins packaging boundary split into a separate portable package-governance leaf.
