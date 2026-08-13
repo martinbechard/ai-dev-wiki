@@ -1,0 +1,480 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "cutoff_utc": "2026-08-06T01:02:57Z",
+    "days": 7,
+    "include_rule": "Only include public sources published or visibly updated after the cutoff; stale, missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "excluded_candidates": [
+    {
+      "candidate_title": "Scaling AI Agent Infrastructure with the MCP Stateless updates",
+      "reason": "outside strict 7-day cutoff for run timestamp 2026-08-13T01:02:57Z; useful but older than cutoff",
+      "source_url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "visible_date": "2026-08-05"
+    },
+    {
+      "candidate_title": "From Code Review to Code Critique: Intent, Drift, and Spotlight for AI-Generated Diffs at Scale",
+      "reason": "outside strict 7-day cutoff despite search snippet saying last week",
+      "source_url": "https://arxiv.org/abs/2607.29516",
+      "visible_date": "2026-07-31T15:17:25Z"
+    },
+    {
+      "candidate_title": "Announcing the Agentic Resource Discovery specification",
+      "reason": "outside strict 7-day cutoff; broad ecosystem entity update belongs upstream if refreshed",
+      "source_url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+      "visible_date": "2026-06-17"
+    },
+    {
+      "candidate_title": "Introducing Splunk Agent Skills",
+      "reason": "relative search-snippet date only; no directly verified visible date captured in this run",
+      "source_url": "https://www.splunk.com/en_us/blog/artificial-intelligence/introducing-splunk-agent-skills.html",
+      "visible_date": "last week"
+    },
+    {
+      "candidate_title": "The Agent Skills Ecosystem in 2026",
+      "reason": "outside strict 7-day window",
+      "source_url": "https://agentman.ai/blog/agent-skills-ecosystem-report-2026",
+      "visible_date": "last month"
+    },
+    {
+      "candidate_title": "Best Terminal AI Coding Agents in 2026",
+      "reason": "missing directly verified publication or update date",
+      "source_url": "https://amux.io/blog/best-terminal-ai-coding-agents-2026/",
+      "visible_date": "not found in opened source during this run"
+    },
+    {
+      "candidate_title": "GitHub Copilot changelog label page",
+      "reason": "index page used only for discovery; specific changelog entries used when available",
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "visible_date": "2026-08-12 and other dates"
+    },
+    {
+      "candidate_title": "Agentic Resource Discovery specification",
+      "reason": "outside cutoff and broad ecosystem routing belongs upstream",
+      "source_url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+      "visible_date": "2026-06-17"
+    },
+    {
+      "candidate_title": "techradar-agent-security-context-boundary-2026-08-08",
+      "reason": "excluded from qualifying updates because this run did not capture a directly verified day-level visible publication or update date from the source page",
+      "source_url": "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "visible_date": "2026-08-08"
+    },
+    {
+      "candidate_title": "dataiku-rag-tools-governance-2026-08-12",
+      "reason": "excluded from qualifying updates because this run did not capture a directly verified day-level visible publication or update date from the source page",
+      "source_url": "https://www.dataiku.com/blog/ai-tools-for-rag",
+      "visible_date": "2026-08-12"
+    },
+    {
+      "candidate_title": "autonoma-coding-agent-delegation-boundary-2026-08",
+      "reason": "excluded from qualifying updates because this run did not capture a directly verified day-level visible publication or update date from the source page",
+      "source_url": "https://getautonoma.com/blog/best-ai-agent-for-coding",
+      "visible_date": "2026-08"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "id": "google-agent-plugins-2026-08-06",
+      "summary": "Google announced support for Agent Plugins 1.0.0, a vendor-neutral package format combining Agent Skills and MCP servers with a fixed directory layout and plugin manifest; Google joined the core maintainer group and shipped support through Agents CLI and Data Agent Kit."
+    },
+    {
+      "id": "vercel-agent-plugins-2026-08-06",
+      "summary": "Vercel announced Agent Plugins 1.0.0 as a small vendor-neutral packaging format with plugin.json, fixed component locations, published schemas, guides, and GitHub-hosted governance."
+    },
+    {
+      "id": "github-agent-plugins-copilot-2026-08-12",
+      "summary": "GitHub announced Agent Plugins 1.0 support in VS Code, Copilot CLI, and the Copilot app, including marketplace installation and shared plugin packages across compatible clients."
+    },
+    {
+      "id": "github-copilot-weekly-context-2026-08-07",
+      "summary": "GitHub Copilot updates included session resume and organization improvements, shared-session jumps, side questions, model/credit/cache visibility for completed requests, and a design-review skill update."
+    },
+    {
+      "id": "github-copilot-review-effort-2026-08-07",
+      "summary": "GitHub made Lite and Balanced Copilot code review effort levels generally available, with per-review selection and organization-level defaults for review depth."
+    },
+    {
+      "id": "github-agent-app-metrics-2026-08-07",
+      "summary": "GitHub added third-party agent app activity to the Copilot usage metrics API, broken out by individual recognized agent in 1-day and 28-day reports."
+    },
+    {
+      "id": "github-copilot-roi-dashboard-2026-08-07",
+      "summary": "GitHub added a potential ROI section to the Copilot impact dashboard that relates Copilot spend and AI credit consumption to pull-request output and developer compensation assumptions."
+    },
+    {
+      "id": "business-insider-rl-work-environments-2026-08-12",
+      "summary": "Business Insider reported a shift from chatbot-response training toward reinforcement learning environments that simulate workplace tasks, including software engineering, enterprise software use, and long-running work; it also described Uber Agentic Pods observing and redesigning department workflows."
+    },
+    {
+      "id": "dailydev-coding-agent-workflow-fit-2026-08-08",
+      "summary": "daily.dev compared major coding agents and argued teams should choose based on autonomy, reliability, price, workflow fit, and review capacity rather than a single best-agent ranking."
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity facts are upstream-owned by the AI wiki; this artifact keeps downstream local-practice implications only for later ingest.",
+  "follow_up_notes": [
+    "Review Agent Plugins updates for portable skills/runbooks, tier-specific assistant conventions, terminal orchestration, and MCP governance implications.",
+    "Review GitHub Copilot review effort, agent metrics, ROI, and session continuity updates for workflow-before-model-selection and delegated handoff guidance.",
+    "Review Business Insider workflow-environment reporting for senior pod and workflow-observation governance implications.",
+    "Dataiku, TechRadar, and Autonoma candidates need direct day-level date verification before synthesis."
+  ],
+  "leaf_universe_count": 87,
+  "named_entities": [
+    "AI credits",
+    "AWS",
+    "Agent Plugins",
+    "Agent Plugins 1.0",
+    "Agent Plugins 1.0.0",
+    "Agent Skills",
+    "Agentic Pods",
+    "Anysphere",
+    "Balanced effort",
+    "Business Insider",
+    "Claude",
+    "Claude Code",
+    "Codex",
+    "Copilot CLI",
+    "Copilot app",
+    "Cursor",
+    "Devin",
+    "GitHub",
+    "GitHub Copilot",
+    "GitHub Copilot CLI",
+    "GitHub Copilot app",
+    "GitHub Copilot code review",
+    "GitHub Copilot impact dashboard",
+    "GitHub Copilot usage metrics API",
+    "Google",
+    "Google Agents CLI",
+    "Google Cloud",
+    "Google Data Agent Kit",
+    "Google DeepMind",
+    "Grok",
+    "Impeccable skill",
+    "Lite effort",
+    "Mechanize",
+    "Meta",
+    "Microsoft",
+    "Model Context Protocol",
+    "OpenAI",
+    "OpenAI Codex",
+    "Scale AI",
+    "SpaceX",
+    "Uber",
+    "VS Code",
+    "Vercel",
+    "agent apps",
+    "daily.dev"
+  ],
+  "qualifying_updates": [
+    {
+      "date_evidence": "Google Developers Blog visibly lists AUG. 6, 2026.",
+      "factual_summary": "Google announced support for Agent Plugins 1.0.0, a vendor-neutral package format combining Agent Skills and MCP servers with a fixed directory layout and plugin manifest; Google joined the core maintainer group and shipped support through Agents CLI and Data Agent Kit.",
+      "id": "google-agent-plugins-2026-08-06",
+      "named_entities": [
+        "Agent Plugins 1.0.0",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Google Agents CLI",
+        "Google Data Agent Kit",
+        "Google DeepMind",
+        "Google Cloud"
+      ],
+      "published_or_updated_at": "2026-08-06",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "upstream_owned_entities": [
+        "Agent Plugins",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Google Agents CLI",
+        "Data Agent Kit"
+      ],
+      "why_it_matters_for_leaf": "Portable skills should now distinguish the skill/runbook content from the package wrapper and watch for plugin manifests as a portability layer."
+    },
+    {
+      "date_evidence": "Vercel blog visibly lists 6 Aug 2026.",
+      "factual_summary": "Vercel announced Agent Plugins 1.0.0 as a small vendor-neutral packaging format with plugin.json, fixed component locations, published schemas, guides, and GitHub-hosted governance.",
+      "id": "vercel-agent-plugins-2026-08-06",
+      "named_entities": [
+        "Vercel",
+        "AWS",
+        "Anysphere",
+        "GitHub",
+        "Microsoft",
+        "OpenAI",
+        "Agent Plugins"
+      ],
+      "published_or_updated_at": "2026-08-06",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md"
+      ],
+      "source_url": "https://vercel.com/blog/introducing-agent-plugins",
+      "upstream_owned_entities": [
+        "Vercel",
+        "Agent Plugins",
+        "OpenAI",
+        "Microsoft",
+        "GitHub"
+      ],
+      "why_it_matters_for_leaf": "Local guidance about portable agent runbooks can route broad standard details upstream while preserving the downstream practice implication: package boundaries and governance matter separately from skill content."
+    },
+    {
+      "date_evidence": "GitHub Changelog search result and label page visibly list Aug.12 Release.",
+      "factual_summary": "GitHub announced Agent Plugins 1.0 support in VS Code, Copilot CLI, and the Copilot app, including marketplace installation and shared plugin packages across compatible clients.",
+      "id": "github-agent-plugins-copilot-2026-08-12",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Copilot CLI",
+        "Copilot app",
+        "Agent Plugins 1.0"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Agent Plugins"
+      ],
+      "why_it_matters_for_leaf": "Tier-specific assistant conventions and terminal fleet orchestration need to account for plugin portability across local IDE, CLI, and app surfaces without assuming identical policy or UX."
+    },
+    {
+      "date_evidence": "GitHub Changelog visibly lists August 7, 2026.",
+      "factual_summary": "GitHub Copilot updates included session resume and organization improvements, shared-session jumps, side questions, model/credit/cache visibility for completed requests, and a design-review skill update.",
+      "id": "github-copilot-weekly-context-2026-08-07",
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "VS Code",
+        "Impeccable skill"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "VS Code"
+      ],
+      "why_it_matters_for_leaf": "Delegated handoffs and terminal-native orchestration should treat session resume, parallel questions, and request-level credit visibility as operational concerns for context continuity and cost review."
+    },
+    {
+      "date_evidence": "GitHub Changelog visibly lists August 7, 2026.",
+      "factual_summary": "GitHub made Lite and Balanced Copilot code review effort levels generally available, with per-review selection and organization-level defaults for review depth.",
+      "id": "github-copilot-review-effort-2026-08-07",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Lite effort",
+        "Balanced effort"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "why_it_matters_for_leaf": "Structural review practices can map review depth to pull-request risk instead of treating every AI-generated diff as needing the same review budget."
+    },
+    {
+      "date_evidence": "GitHub Changelog visibly lists August 7, 2026.",
+      "factual_summary": "GitHub added third-party agent app activity to the Copilot usage metrics API, broken out by individual recognized agent in 1-day and 28-day reports.",
+      "id": "github-agent-app-metrics-2026-08-07",
+      "named_entities": [
+        "GitHub Copilot usage metrics API",
+        "Claude",
+        "Codex",
+        "agent apps"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Claude",
+        "OpenAI Codex"
+      ],
+      "why_it_matters_for_leaf": "Workflow and model-selection practices can instrument which agents are used, by whom, and whether a newly adopted agent supplements or replaces an existing one."
+    },
+    {
+      "date_evidence": "GitHub Changelog visibly lists August 7, 2026.",
+      "factual_summary": "GitHub added a potential ROI section to the Copilot impact dashboard that relates Copilot spend and AI credit consumption to pull-request output and developer compensation assumptions.",
+      "id": "github-copilot-roi-dashboard-2026-08-07",
+      "named_entities": [
+        "GitHub Copilot impact dashboard",
+        "AI credits"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-impact-dashboard-adds-a-return-on-investment-section/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "why_it_matters_for_leaf": "Workflow-before-model-selection and operating-model pages should keep cost telemetry connected to workflow output and compensation assumptions, not only token price."
+    },
+    {
+      "date_evidence": "Business Insider page visibly lists 2026-08-12T09:00:02.431Z.",
+      "factual_summary": "Business Insider reported a shift from chatbot-response training toward reinforcement learning environments that simulate workplace tasks, including software engineering, enterprise software use, and long-running work; it also described Uber Agentic Pods observing and redesigning department workflows.",
+      "id": "business-insider-rl-work-environments-2026-08-12",
+      "named_entities": [
+        "Business Insider",
+        "Mechanize",
+        "Google",
+        "Scale AI",
+        "SpaceX",
+        "Grok",
+        "Meta",
+        "Uber",
+        "Agentic Pods"
+      ],
+      "published_or_updated_at": "2026-08-12T09:00:02.431Z",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "source_url": "https://www.businessinsider.com/ai-next-data-grab-work-reinforcement-learning-environments-google-meta-2026-8",
+      "upstream_owned_entities": [
+        "Mechanize",
+        "Google",
+        "Scale AI",
+        "SpaceX",
+        "Grok",
+        "Meta",
+        "Uber"
+      ],
+      "why_it_matters_for_leaf": "Senior-led pods and workflow selection practices should treat realistic workflow environments and human-work observation as governance-sensitive inputs, not generic model-selection news."
+    },
+    {
+      "date_evidence": "daily.dev page visibly lists Aug 8, 2026.",
+      "factual_summary": "daily.dev compared major coding agents and argued teams should choose based on autonomy, reliability, price, workflow fit, and review capacity rather than a single best-agent ranking.",
+      "id": "dailydev-coding-agent-workflow-fit-2026-08-08",
+      "named_entities": [
+        "daily.dev",
+        "Claude Code",
+        "OpenAI Codex",
+        "GitHub Copilot",
+        "Cursor",
+        "Devin"
+      ],
+      "published_or_updated_at": "2026-08-08",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "source_url": "https://daily.dev/blog/best-ai-coding-agents-comparison/",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "GitHub Copilot",
+        "Cursor",
+        "Devin"
+      ],
+      "why_it_matters_for_leaf": "Workflow-before-model-selection can use this as another practice-oriented signal that review capacity and workflow fit should precede model or tool standardization."
+    }
+  ],
+  "run_timestamp_local": "2026-08-12T21:02:57-04:00",
+  "run_timestamp_utc": "2026-08-13T01:02:57Z",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+  ],
+  "source_urls_checked": [
+    "https://agentman.ai/blog/agent-skills-ecosystem-report-2026",
+    "https://amux.io/blog/best-terminal-ai-coding-agents-2026/",
+    "https://arxiv.org/abs/2607.29516",
+    "https://daily.dev/blog/best-ai-coding-agents-comparison/",
+    "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+    "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+    "https://getautonoma.com/blog/best-ai-agent-for-coding",
+    "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/",
+    "https://github.blog/changelog/2026-08-07-copilot-impact-dashboard-adds-a-return-on-investment-section/",
+    "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity/",
+    "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+    "https://github.blog/changelog/label/copilot/",
+    "https://vercel.com/blog/introducing-agent-plugins",
+    "https://www.businessinsider.com/ai-next-data-grab-work-reinforcement-learning-environments-google-meta-2026-8",
+    "https://www.dataiku.com/blog/ai-tools-for-rag",
+    "https://www.splunk.com/en_us/blog/artificial-intelligence/introducing-splunk-agent-skills.html",
+    "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+  ],
+  "upstream_owned_entities": [
+    "Agent Plugins",
+    "Agent Skills",
+    "Claude",
+    "Claude Code",
+    "Cursor",
+    "Data Agent Kit",
+    "Devin",
+    "GitHub",
+    "GitHub Copilot",
+    "Google",
+    "Google Agents CLI",
+    "Grok",
+    "Mechanize",
+    "Meta",
+    "Microsoft",
+    "Model Context Protocol",
+    "OpenAI",
+    "OpenAI Codex",
+    "Scale AI",
+    "SpaceX",
+    "Uber",
+    "VS Code",
+    "Vercel"
+  ]
+}
