@@ -1,0 +1,497 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-13T00:32:13Z",
+  "cutoff_window": {
+    "start": "2026-08-11T00:32:13Z",
+    "end": "2026-08-13T00:32:13Z",
+    "basis": "Two days before the UTC run timestamp. Date-only August 11 items were treated as cutoff-boundary ambiguous when no exact publication or update time was visible."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_policy": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "agentic frameworks",
+      "MCP servers",
+      "general developer tools",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, context architecture, and adoption implications only."
+  },
+  "search_summary": {
+    "methods": [
+      "Public web search for in-window AI-assisted development practice updates.",
+      "Direct inspection of visible publication or update dates on public source pages.",
+      "Federation review before saving raw output; broad entity details are routed upstream and local notes keep only practice implications."
+    ],
+    "queries": [
+      "site:github.blog/changelog 2026 Copilot August 12 2026",
+      "site:openai.com/index codex August 12 2026",
+      "site:anthropic.com/news Claude Code August 12 2026",
+      "AI code review August 12 2026",
+      "MCP August 12 2026 agent governance",
+      "AI-assisted TDD August 12 2026",
+      "context engineering August 12 2026 code",
+      "software engineering evals August 12 2026 agent"
+    ]
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-08-12-github-agent-plugins-1-0",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "source_title": "Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "GitHub announced general availability of Agent Plugins 1.0 support across VS Code, Copilot CLI, the GitHub Copilot SDK, and the GitHub Copilot app. The changelog says a plugin can package skills and MCP server configuration once, keep Copilot-specific behavior under a namespaced directory, and use managed settings plus MCP allowlists for enterprise governance.",
+      "why_it_matters_for_ai_assisted_development_practice": "Portable skill-and-tool packaging is becoming a governed distribution layer for agent instructions, runbooks, and MCP access. Local practice should track how teams review plugin manifests, manage marketplaces, separate client-specific files, and pair plugin availability with MCP server allowlists.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "VS Code",
+        "Copilot CLI",
+        "GitHub Copilot SDK",
+        "MCP",
+        "AWS",
+        "Anysphere",
+        "Microsoft",
+        "OpenAI",
+        "Vercel",
+        "Google"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "VS Code",
+        "Copilot CLI",
+        "GitHub Copilot SDK",
+        "MCP",
+        "AWS",
+        "Anysphere",
+        "Microsoft",
+        "OpenAI",
+        "Vercel",
+        "Google"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs in retrieval/tool governance, durable instruction packaging, and adoption operating model pages rather than local product or protocol encyclopedia leaves.",
+      "follow_up_notes": [
+        "During ingest, compare against remote MCP skill discovery and governance pages.",
+        "Route broad standard and product coverage to the upstream AI wiki."
+      ]
+    },
+    {
+      "id": "2026-08-12-github-org-rule-insights",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-12-rule-insights-for-organizations-in-public-preview/",
+      "source_title": "Rule insights for organizations in public preview",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "GitHub put organization-level repository rule insights into public preview, aggregating rule evaluation metrics, bypass activity, filters, and CSV export across repositories.",
+      "why_it_matters_for_ai_assisted_development_practice": "As AI-generated changes and agent-opened pull requests increase, repository rule bypasses become an auditable governance signal. Local practice should connect AI-assisted source workflows to organization-level enforcement metrics and record keeping.",
+      "named_entities": [
+        "GitHub",
+        "GitHub repository rulesets",
+        "GitHub Code Quality",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub repository rulesets",
+        "GitHub Code Quality",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Candidate local note belongs with source workflow controls, lifecycle review gates, and audit evidence for agent-assisted code changes.",
+      "follow_up_notes": [
+        "During ingest, check governance controls for agents and lifecycle AI review gates.",
+        "Keep GitHub product specifics upstream-owned."
+      ]
+    },
+    {
+      "id": "2026-08-12-pagerduty-shift-left-ai-code-review",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.pagerduty.com/blog/ai/shift-left-ai-code-review/",
+      "source_title": "AI Is Outpacing Code Review. Here's How to Catch Up (Without Slowing Down)",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "PagerDuty argued that AI-generated code can pass local review while failing in production context, especially in microservice and cloud-native systems where no single reviewer or coding agent understands the full system state.",
+      "why_it_matters_for_ai_assisted_development_practice": "The article reinforces system-context review as a practice requirement: AI-assisted review should include downstream dependency awareness, operational blast radius, service ownership, and incident-facing verification rather than only syntax or local diff checks.",
+      "named_entities": [
+        "PagerDuty",
+        "Veracode",
+        "SmartBear"
+      ],
+      "upstream_owned_entities": [
+        "PagerDuty",
+        "Veracode",
+        "SmartBear"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs under intelligent code review, layered AI code review roles, verification gates, and application harness patterns.",
+      "follow_up_notes": [
+        "Compare with existing pages about layered review and verification tax.",
+        "Avoid restating vendor statistics without source-qualified context during ingest."
+      ]
+    },
+    {
+      "id": "2026-08-12-arize-context-harness-evaluation",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://arize.com/blog/why-is-your-agent-still-failing-context-harness-evaluation/",
+      "source_title": "You chose the best model. Why is your agent still failing?",
+      "visible_date": "Published August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "Arize and Atlan described model, context, and harness as separate layers of enterprise AI systems. They argue that agents now retrieve data, call tools, execute code, manage permissions, use memory, delegate to subagents, and work across long trajectories, so evaluation must cover context and harness behavior, not just model benchmarks.",
+      "why_it_matters_for_ai_assisted_development_practice": "This maps directly to local context architecture and harness design: code agents should be evaluated against trusted sources, permissions, tools, memory, handoffs, and production workflows because public model benchmarks do not test those local layers.",
+      "named_entities": [
+        "Arize AI",
+        "Atlan",
+        "Phoenix",
+        "subagents"
+      ],
+      "upstream_owned_entities": [
+        "Arize AI",
+        "Atlan",
+        "Phoenix"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with context router and knowledge layers, agent harness components, user-visible progress and runtime telemetry, and trajectory-level agent evaluation.",
+      "follow_up_notes": [
+        "During ingest, preserve the model/context/harness separation as a practice lens, not as a broad AI-system taxonomy leaf.",
+        "Check whether trajectory-level eval pages already cover tool calls and handoffs."
+      ]
+    },
+    {
+      "id": "2026-08-12-futurum-prompt-context-debt",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://futurumgroup.com/insights/anthropics-80-prompt-cut-shows-ai-creating-its-own-technical-debt/",
+      "source_title": "Anthropic's 80% Prompt Cut Shows AI Creating Its Own Technical Debt",
+      "visible_date": "Publication Date: August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "Futurum analyzed Anthropic's earlier context-engineering post, emphasizing a large Claude Code prompt reduction, movement from rigid rules to judgment-based guidance, progressive disclosure through skills, auto-memory, and a Claude doctor command for auditing user instruction files.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is instruction-file maintenance debt: durable agent rules should be periodically audited, shortened, and shifted into progressive disclosure or skill files when models and harnesses no longer need old front-loaded prompts.",
+      "named_entities": [
+        "Futurum Group",
+        "Anthropic",
+        "Claude Code",
+        "Claude 5",
+        "Claude Opus 5",
+        "Claude Sonnet 5",
+        "CLAUDE.md"
+      ],
+      "upstream_owned_entities": [
+        "Futurum Group",
+        "Anthropic",
+        "Claude Code",
+        "Claude 5",
+        "Claude Opus 5",
+        "Claude Sonnet 5"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with durable instructions, rules and knowledge layers, and adoption agreements around instruction hygiene.",
+      "follow_up_notes": [
+        "Treat the underlying Anthropic product and model details as upstream-owned.",
+        "Check durable-instructions-and-skill-files.md and instruction-hierarchy-and-artifact-boundaries.md during ingest."
+      ]
+    },
+    {
+      "id": "2026-08-12-coderabbit-agentic-change-management",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.coderabbit.ai/blog/introducing-agentic-change-management",
+      "source_title": "Code is abundant. Judgment is scarce. We raised $143 million to help it scale.",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "CodeRabbit announced Agentic Change Management alongside a Series C financing round, arguing that AI code review covers only part of the workflow. The post frames coding-agent adoption as shifting scarce engineering judgment from ticket planning toward pull-request triage, risk explanation, validation, and post-merge codebase health.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is that review queues are becoming change-management queues. Teams need explicit attention allocation, PR intent/risk summaries, validation gates, and post-merge health checks for agent-generated changes.",
+      "named_entities": [
+        "CodeRabbit",
+        "Agentic Change Management",
+        "Atomico",
+        "Smash Capital",
+        "BMW i Ventures",
+        "Datadog",
+        "Jellyfish"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "Agentic Change Management",
+        "Atomico",
+        "Smash Capital",
+        "BMW i Ventures",
+        "Datadog",
+        "Jellyfish"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with intelligent code review, delegated coding handoffs, lifecycle AI review gates, and adoption operating agreements.",
+      "follow_up_notes": [
+        "Route funding, customer, and product-category background upstream.",
+        "Keep local ingest focused on judgment allocation and review workflow changes."
+      ]
+    },
+    {
+      "id": "2026-08-12-digital-science-citable-agents-mcp",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "source_url": "https://www.digital-science.com/blog/show-your-sources-building-verifiable-citable-ai-agents-with-mcp/",
+      "source_title": "Show your sources: building verifiable, citable AI agents with MCP",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "Digital Science described MCP-backed access to structured research data as a way to ground AI agents in current, verified, citable sources while keeping the user's prompts and internal processing private from the data provider.",
+      "why_it_matters_for_ai_assisted_development_practice": "For codebase and documentation RAG, the article reinforces a source-ingest principle: agents should preserve source citations, separate trusted data retrieval from model reasoning, and document privacy and data-flow boundaries around MCP integrations.",
+      "named_entities": [
+        "Digital Science",
+        "Dimensions",
+        "Altmetric",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Digital Science",
+        "Dimensions",
+        "Altmetric",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with source reconciliation, clipping/raw intake, RAG provenance, and MCP scoped authorization pages.",
+      "follow_up_notes": [
+        "During ingest, avoid creating local MCP server leaves for Dimensions or Altmetric.",
+        "Extract only the citation and privacy-boundary practice."
+      ]
+    },
+    {
+      "id": "2026-08-12-subhadip-governed-mcp-tool-surfaces",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "source_url": "https://subhadipmitra.com/blog/2026/api-mcp-compiler/",
+      "source_title": "Your OpenAPI Spec Is Not an Agent Interface: Compiling Governed MCP Tool Surfaces",
+      "visible_date": "August 12, 2026",
+      "date_granularity": "date",
+      "date_qualification": "In-window because August 12 is strictly after the 2026-08-11T00:32:13Z cutoff.",
+      "short_factual_summary": "The post argues that an OpenAPI specification is not automatically an agent-safe interface and presents an API-to-MCP compiler concept for constrained tool surfaces, governance, and code generation.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that tool-call surfaces should be compiled, scoped, and reviewed for agent behavior instead of exposing raw API breadth. Tool schemas, permissions, and generated adapters need design and verification gates.",
+      "named_entities": [
+        "Subhadip Mitra",
+        "OpenAPI",
+        "MCP",
+        "api-mcp-compiler",
+        "GitHub",
+        "PyPI"
+      ],
+      "upstream_owned_entities": [
+        "OpenAPI",
+        "MCP",
+        "api-mcp-compiler",
+        "GitHub",
+        "PyPI"
+      ],
+      "local_practice_implication": "Candidate synthesis belongs with tool-call and MCP governance, MCP scoped authorization, and agent harness component design.",
+      "follow_up_notes": [
+        "Verify the linked repository and docs only during an ingest pass if a durable local practice note is created.",
+        "Route package and tool background upstream."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/claude-4",
+      "source_title": "Introducing Claude 4",
+      "visible_date": "May 22, 2025",
+      "reason": "Out of window; search result was crawled today but the visible publication date is older than the cutoff.",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude"
+      ]
+    },
+    {
+      "source_url": "https://www.langchain.com/blog/agent-observability-powers-agent-evaluation",
+      "source_title": "How to Debug AI Agents",
+      "visible_date": "Published: 6 months ago",
+      "reason": "Out of window despite topical relevance to agent observability and evaluation.",
+      "upstream_owned_entities": [
+        "LangChain"
+      ]
+    },
+    {
+      "source_url": "https://www.howdy.com/blog/modernizing-old-code-with-ai",
+      "source_title": "Modernizing Old Code with AI: Review the Premise, Not the Diff",
+      "visible_date": "August 14, 2026; updated on August 12, 2026",
+      "reason": "Excluded as future-dated relative to the 2026-08-13T00:32:13Z run timestamp, even though the page also shows an August 12 update.",
+      "upstream_owned_entities": [
+        "Howdy"
+      ]
+    },
+    {
+      "source_url": "https://www.devopsdigest.com/the-invisible-cost-of-ai-generated-code-reviews",
+      "source_title": "The Invisible Cost of AI-Generated Code Reviews",
+      "visible_date": "Published: 3 months ago",
+      "reason": "Out of window; search snippet showed a current related-link date, not a qualifying publication or update date for the article.",
+      "upstream_owned_entities": [
+        "DEVOPSdigest"
+      ]
+    },
+    {
+      "source_url": "https://www.jobilize.com/amp/job/us-co-aurora-remote-senior-devex-engineer-grabjobs-hiring-now-job-pr6gcf",
+      "source_title": "Remote Senior DevEx Engineer Job in Aurora",
+      "visible_date": "Posted: August 12, 2026",
+      "reason": "Excluded because a job listing is a weak public practice source for this collector; it signals hiring language but not a substantive practice update.",
+      "upstream_owned_entities": [
+        "Jobilize",
+        "GrabJobs"
+      ]
+    },
+    {
+      "source_url": "https://mit-xpro-education.emeritus.com/rag-and-context-engineering",
+      "source_title": "RAG and Context Engineering program",
+      "visible_date": "Starts On August 12, 2026",
+      "reason": "Excluded because the visible date is a course start date rather than a publication or update date.",
+      "upstream_owned_entities": [
+        "MIT xPRO",
+        "Emeritus"
+      ]
+    },
+    {
+      "source_url": "https://www.instagram.com/codedistrictofficial/p/Db74crskfZQ/",
+      "source_title": "AI didn't break engineering discipline",
+      "visible_date": "Photo by Code District on August 12, 2026",
+      "reason": "Excluded because the social post has limited durable source context and should not drive wiki raw findings when stronger public article sources are available.",
+      "upstream_owned_entities": [
+        "Instagram",
+        "Code District"
+      ]
+    },
+    {
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "source_title": "AI Agents News - Week of August 12, 2026",
+      "visible_date": "Week of August 12, 2026",
+      "reason": "Excluded because the weekly roundup mixes broad upstream-owned agent/product updates and did not provide a direct publication/update timestamp for each candidate item.",
+      "upstream_owned_entities": [
+        "AI Agent Store",
+        "MCP servers",
+        "agent products"
+      ]
+    },
+    {
+      "source_url": "https://www.gamut.so/blog/ai-agent-platform-comparison",
+      "source_title": "AI Agent Platform Comparison: Gamut vs Dust vs Lindy",
+      "visible_date": "Published: today",
+      "reason": "Excluded because the page is primarily a broad product comparison owned upstream; the local MCP governance implications are covered by stronger direct sources in this run.",
+      "upstream_owned_entities": [
+        "Gamut",
+        "Dust",
+        "Lindy",
+        "MCP"
+      ]
+    },
+    {
+      "source_url": "https://www.youtube.com/watch?v=2HtqFVLgjLI",
+      "source_title": "How Software Engineers Actually Use Coding Agents in 2026",
+      "visible_date": "Published: 3 months ago",
+      "reason": "Out of window despite topical relevance to steering, planning, and multi-agent practice.",
+      "upstream_owned_entities": [
+        "YouTube",
+        "coding agents"
+      ]
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated; this collector is raw-only.",
+    "During ingest, route upstream-owned company, product, MCP server, model, package, and broad framework details to the upstream AI wiki.",
+    "Practice-level synthesis candidates cluster around portable skill/MCP packaging, organization-level rule evidence, system-context code review, context/harness eval layers, instruction-file hygiene, change-management queues, citation-preserving MCP retrieval, and governed agent tool surfaces."
+  ]
+}
