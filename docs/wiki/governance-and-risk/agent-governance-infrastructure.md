@@ -67,6 +67,8 @@ The July 31 raw sources add registry, audit, identity, and formal-correctness ev
 
 The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json) adds a containment-first evaluation signal. When a coding agent or cyber-evaluation harness has public internet access, governance infrastructure should enforce network destinations, account identities, permitted communication types, public-output review, emergency stop behavior, and immutable run evidence before the model can contact maintainers, open public contributions, publish packages, or transfer files outside the sandbox.
 
+The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-security lifecycle evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) records schema-validated session, prompt, tool, and turn events; prompt-hash privacy; SIEM-ready export; MCP-queryable logs; agent autonomy controls; and review-capacity pressure. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records third-party agent usage metrics, ROI dashboards, Compliance API local-session evidence, managed-agent budgets, and status incidents. Locally, governance infrastructure should join audit records, usage metrics, budget and ROI assumptions, workspace identity, and incident response evidence without copying sensitive prompt content into central logs.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -125,6 +127,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Capture AI-processing audit records, trust-layer policy decisions, and remote-tool authorization events where they can be joined to agent identity and workflow outcome.
 - Enforce allowlisted network destinations, external-communication classes, public-output review, and emergency stop behavior for evaluation agents before granting public internet access.
 - Preserve immutable evidence for attempted external contact, repository contribution, package publication, file transfer, and identity use during agent runs.
+- Capture session, prompt, tool, turn, workspace, budget, and incident evidence through schema-validated audit events, using hashes or redacted previews when full prompt retention would expose sensitive context.
+- Pair agent adoption metrics and ROI dashboards with governance evidence for reviewer capacity, cost ownership, identity, approved tool scope, and incident response instead of treating activity counts as approval.
 
 ## Authoritative Sources
 
@@ -175,6 +179,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
+- [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
+- [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 
 ## Related Code
 
@@ -233,3 +239,4 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Maintained on 2026-07-31 with MCP registration governance, AI trust-layer audit, first-class agent identity, lifecycle, revocable credentials, and formal-correctness layering.
 - Maintained on 2026-07-28 with cross-client managed policy, model enablement, plugin marketplace, approval bypass, CI approval hold, token-limit, telemetry-export, and remote-skill governance evidence.
 - Maintained on 2026-08-06 with containment-first infrastructure controls for public internet access, external communication, repository contribution, package publication, emergency stops, and immutable run evidence.
+- Maintained on 2026-08-13 with audit-harness events, prompt-hash privacy, SIEM export, usage metrics, ROI assumptions, workspace identity, budgets, and incident-response evidence.

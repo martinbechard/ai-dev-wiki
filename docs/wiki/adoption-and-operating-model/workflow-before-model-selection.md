@@ -61,6 +61,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 
 The August 12 raw sources add agent-package, usage-metric, ROI, realistic-work-environment, and coding-agent comparison evidence. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) reinforce that workflow selection should evaluate portability, package governance, review effort, agent activity metrics, cost-to-output assumptions, realistic task environments, review capacity, and workflow fit before standardizing one assistant surface or model family.
 
+The August 13 raw sources add workforce-role, audit-harness, operational-data, and persistent-project-state signals. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) suggests that workflow selection should include senior review load, AI-evaluation work, production debugging, operational-data exposure, audit-event design, and persistent project state before selecting a coding-agent surface. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) adds agent activity metrics, ROI dashboards, managed-agent controls, workspace identity, and product status incidents as operating inputs rather than product-selection shortcuts.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -106,6 +108,7 @@ The August 12 raw sources add agent-package, usage-metric, ROI, realistic-work-e
 - Treat low token price as a workflow input only after tool-call discipline, accepted outcome rate, and review burden are measured.
 - Treat model enablement, deprecation, and replacement as workflow-lifecycle events that need surface inventory, admin policy, dependent-workflow mapping, cost checks, and local verification before defaults change.
 - Treat portable plugin availability, agent activity metrics, review-effort controls, ROI dashboards, and realistic work-environment evidence as workflow inputs that need local task fit and governance review before adoption expands.
+- Include review-capacity, AI-evaluation staffing, production-debugging ownership, audit-event design, operational-data exposure, persistent project state, managed-agent controls, and incident history before selecting a recurring agent workflow.
 
 ## Authoritative Sources
 
@@ -146,6 +149,8 @@ The August 12 raw sources add agent-package, usage-metric, ROI, realistic-work-e
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
+- [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
+- [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 
 ## Related Code
 
@@ -199,3 +204,4 @@ The August 12 raw sources add agent-package, usage-metric, ROI, realistic-work-e
 - Maintained on 2026-08-05 with verifier-heavy model selection, accepted-fix classes, and tool-call budget guidance.
 - Maintained on 2026-08-11 with model-enable, model-deprecation, replacement-deadline, surface-inventory, and rollout-verification workflow governance.
 - Maintained on 2026-08-12 with portable package, usage-metric, ROI, realistic-work-environment, and workflow-fit selection inputs.
+- Maintained on 2026-08-13 with workforce-role, audit-harness, operational-data, persistent-project-state, managed-agent, workspace-identity, and incident-history workflow inputs.

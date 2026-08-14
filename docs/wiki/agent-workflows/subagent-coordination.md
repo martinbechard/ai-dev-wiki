@@ -41,6 +41,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) adds a terminal-native fleet distinction. The focused selection rule lives in [terminal-native agent fleet orchestration](terminal-native-agent-fleet-orchestration.md); this page keeps the coordination rule that in-process subagents, communicating agent teams, terminal multiplexers, and external worktree fleets need different isolation, shared-state, handoff, and review-capacity controls.
 
+The August 13 sources add managed-agent and multiagent-hierarchy evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) distinguishes agents used as tool-like calls from long-lived peers without clear hierarchy. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records managed-agent budget caps, advisor roster entries, inference geography, and repository-loaded skills. Locally, subagent coordination should declare whether a worker is a bounded tool call, a peer actor, an advisor, or a managed long-running executor before delegation begins.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -66,6 +68,7 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - Compare IDE, CLI, cloud, worktree, and terminal-multiplexer coordination by supervision, isolation, handoff, and review-capacity evidence before choosing a subagent surface.
 - Keep role separation, shared state, and summary artifacts explicit when subagents specialize by UI surface.
 - Distinguish in-process subagents, vendor-managed agent teams, terminal multiplexers, and worktree-based fleets before applying one coordination rule to all of them.
+- Classify each delegated agent as a bounded tool call, peer actor, advisor, or managed executor, then attach hierarchy, authority, budget, geography, skill-loading, and conflict-resolution rules to that class.
 
 ## Authoritative Sources
 
@@ -87,6 +90,8 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
+- [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
+- [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 
 ## Related Code
 
@@ -130,3 +135,4 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - Maintained on 2026-07-27 with IDE, CLI, cloud, worktree, and terminal-multiplexer coordination criteria.
 - Maintained on 2026-07-30 with cross-environment role separation and handoff-summary routing.
 - Maintained on 2026-08-05 with terminal-native fleet orchestration boundaries and coordination-surface distinctions.
+- Maintained on 2026-08-13 with managed-agent budgets, advisor rosters, inference geography, repository-loaded skills, and peer-versus-tool hierarchy boundaries.
