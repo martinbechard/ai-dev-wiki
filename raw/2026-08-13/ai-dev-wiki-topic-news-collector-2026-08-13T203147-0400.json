@@ -1,0 +1,428 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-13T20:31:47-04:00",
+  "run_timestamp_utc": "2026-08-14T00:31:47Z",
+  "cutoff_window": {
+    "start_utc": "2026-08-12T00:31:47Z",
+    "end_utc": "2026-08-14T00:31:47Z",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to the run time; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_scope": "This wiki owns AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_scope": "The upstream AI wiki owns broad ecosystem entities, including companies, products, models, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "handling_rule": "Entity updates are recorded as upstream-owned when broad; local notes preserve only practice implications and routing guidance."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_notes": [
+    "Public web searches focused on context engineering, durable instructions, source ingest and citation workflows, coding-agent prompts, planning loops, subagents, AI-assisted TDD, code review, regression repair, code retrieval, RAG for codebases, tool-call practice, MCP governance, software engineering evals, harness architecture, structured outputs, streaming progress, permissions, approvals, audit logs, package-install risk, licensing, privacy, and team adoption.",
+    "Broad company, model, product, developer-tool, framework, MCP-server, and technique facts are not duplicated locally; they are identified as upstream-owned where present."
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app",
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "source_type": "vendor changelog",
+      "visible_date": "August 12, 2026",
+      "date_basis": "Page header shows August 12, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub announced general availability of Agent Plugins 1.0 support in VS Code, Copilot CLI, the Copilot SDK, and the Copilot app. The post describes one portable package for skills and MCP server configuration, namespaced client-specific files, managed settings for plugin availability, marketplace restrictions, and pairing plugin policy with MCP allowlists.",
+      "why_it_matters_for_ai_assisted_development_practice": "Portable plugin packaging is becoming an operational governance surface: teams need manifest review, marketplace allowlists, MCP server approval, and tool-client compatibility checks before a skill or connector becomes a team default.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "VS Code",
+        "Copilot CLI",
+        "GitHub Copilot SDK",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "VS Code",
+        "Copilot CLI",
+        "MCP"
+      ],
+      "local_practice_implication": "Route durable product/spec details upstream; consider a local raw-ingest follow-up for managed plugin policy, MCP allowlist evidence, and portable skill packaging governance.",
+      "follow_up_notes": [
+        "Check whether docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md should ingest this as evidence.",
+        "Preserve the distinction between portable skill/MCP packaging and client-specific behavior in any synthesis."
+      ]
+    },
+    {
+      "title": "Patterns and problems in emerging multiagent systems",
+      "source_url": "https://www.anthropic.com/research/multiagent-systems",
+      "source_type": "research article",
+      "visible_date": "Aug 13, 2026",
+      "date_basis": "Article header shows Aug 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Anthropic describes emerging risks and coordination problems in multiagent systems, including the difference between agents treating other agents as tool calls versus long-lived peers without a clear hierarchy.",
+      "why_it_matters_for_ai_assisted_development_practice": "Subagent and agent-team workflows need explicit hierarchy, authority, task boundaries, and escalation rules. Treating peers as durable actors rather than simple tool calls changes how teams should audit delegation and conflict resolution.",
+      "named_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "multiagent systems"
+      ],
+      "local_practice_implication": "Route broad multiagent research upstream; locally, use it as evidence for hierarchy, ownership, and review boundaries in subagent coordination.",
+      "follow_up_notes": [
+        "Check docs/wiki/agent-workflows/subagent-coordination.md and docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md during ingest."
+      ]
+    },
+    {
+      "title": "One audit trail for every coding agent, and what it proves",
+      "source_url": "https://workos.com/blog/audit-trail-for-every-coding-agent",
+      "source_type": "vendor engineering blog",
+      "visible_date": "August 13, 2026",
+      "date_basis": "Article header shows August 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "WorkOS describes an audit harness for local coding agents that records session, prompt, tool, and turn lifecycle events. It emphasizes schema validation, exportability, SIEM streaming, MCP-queryable audit logs, hashed previews instead of full prompt copies, and avoiding API keys on laptops through a proxy and device-authenticated channel.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent audit design can capture enough evidence for accountability without copying private prompts into central logs. The pattern supports prompt privacy, event schemas, actor resolution, and agent-queryable incident reconstruction.",
+      "named_entities": [
+        "WorkOS",
+        "Claude Code",
+        "Codex",
+        "OpenClaw",
+        "pi",
+        "MCP",
+        "Cloudflare"
+      ],
+      "upstream_owned_entities": [
+        "WorkOS",
+        "Claude Code",
+        "Codex",
+        "OpenClaw",
+        "pi",
+        "MCP",
+        "Cloudflare"
+      ],
+      "local_practice_implication": "Keep vendor and product background upstream; local synthesis should focus on audit event shape, prompt-hash privacy, append-only ingestion risks, and SIEM-ready evidence.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/governance-and-risk/agent-governance-infrastructure.md.",
+        "Review whether prompt_preview is acceptable for this wiki's privacy guidance or should be treated as potentially sensitive."
+      ]
+    },
+    {
+      "title": "Persistent Recursive Worlds Enable Autonomous Software Evolution",
+      "source_url": "https://arxiv.org/abs/2608.10450",
+      "source_type": "arXiv paper",
+      "visible_date": "Wed, 12 Aug 2026 08:44:05 UTC",
+      "date_basis": "Submission history shows v2 on Wed, 12 Aug 2026 08:44:05 UTC, inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The paper proposes organizing long-horizon software work around a persistent project world rather than a persistent agent. It reports finite-lived agents proposing changes, recursive delegation across repository paths, accepted consequences advancing version history, and evaluations involving long compiler-development and reimplementation runs.",
+      "why_it_matters_for_ai_assisted_development_practice": "The project-as-persistent-state framing maps directly to context externalization, agent session replacement, acceptance gates, and durable versioned evidence for long-running coding-agent work.",
+      "named_entities": [
+        "EvoX Genesis",
+        "DeepSeek V4 Flash",
+        "GLM 5.2",
+        "Rust",
+        "LLVM",
+        "Csmith",
+        "MESA",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "EvoX Genesis",
+        "DeepSeek V4 Flash",
+        "GLM 5.2",
+        "Rust",
+        "LLVM",
+        "Csmith",
+        "MESA",
+        "arXiv"
+      ],
+      "local_practice_implication": "Do not duplicate model or benchmark background; preserve the practice pattern around persistent project state, accepted-version gates, and agent replacement.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/context-architecture/context-state-externalization-and-rehydration.md.",
+        "Check whether the claims need a later paper/version verification before durable synthesis."
+      ]
+    },
+    {
+      "title": "The August 2026 Product Release: Bringing Agentic Integration Into Production",
+      "source_url": "https://www.snaplogic.com/blog/august-2026-product-release",
+      "source_type": "vendor product blog",
+      "visible_date": "Published August 13, 2026",
+      "date_basis": "Article byline shows Published August 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "SnapLogic describes MCP operational visibility with traffic, error rate, tool-call, and P99-latency metrics, direct exposure of pipelines as tools, discovery and export tools, and token exchange rules for narrower downstream credentials.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP is being operated like production infrastructure: teams need metrics, latency/error budgets, direct tool exposure reviews, and token exchange designs that preserve identity and auditability.",
+      "named_entities": [
+        "SnapLogic",
+        "MCP",
+        "SnapGPT",
+        "SnapCode",
+        "RFC 8693"
+      ],
+      "upstream_owned_entities": [
+        "SnapLogic",
+        "MCP",
+        "SnapGPT",
+        "SnapCode",
+        "RFC 8693"
+      ],
+      "local_practice_implication": "Route product details upstream; local notes should focus on operational MCP metrics and credential-scoping practice.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md.",
+        "Consider whether token exchange belongs with scoped authorization evidence."
+      ]
+    },
+    {
+      "title": "MongoDB Brings Live Operational Data to the Agentic Coding Stack",
+      "source_url": "https://www.hpcwire.com/bigdatawire/this-just-in/mongodb-brings-live-operational-data-to-the-agentic-coding-stack/",
+      "source_type": "public press-release mirror",
+      "visible_date": "August 13, 2026",
+      "date_basis": "Article page and dateline show August 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The announcement says MongoDB Atlas Managed MCP Server is a hosted service inside Atlas that connects coding agents and other AI tools to operational data without separate infrastructure. It describes tool access for listing collections and indexes, querying and aggregating data, inspecting schemas, and, with permissions, creating collections or managing indexes.",
+      "why_it_matters_for_ai_assisted_development_practice": "Direct agent access to operational data raises concrete governance questions: existing credentials and access controls must be mapped to tool permissions, mutation rights, schema inspection, and evidence capture before agents query or change live systems.",
+      "named_entities": [
+        "MongoDB",
+        "MongoDB Atlas",
+        "MongoDB Atlas Managed MCP Server",
+        "Claude Code",
+        "Codex",
+        "Grok Build",
+        "Devin",
+        "Cursor",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "MongoDB",
+        "MongoDB Atlas",
+        "MongoDB Atlas Managed MCP Server",
+        "Claude Code",
+        "Codex",
+        "Grok Build",
+        "Devin",
+        "Cursor",
+        "MCP"
+      ],
+      "local_practice_implication": "Keep the product launch upstream; locally, record the practice implication around live-data connector permissions, mutation gates, and operational-data scope.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md.",
+        "Treat operational-data mutation through MCP as a higher-risk approval class."
+      ]
+    },
+    {
+      "title": "Securing Black Hat's NOC: Lessons from James Pope of Corelight",
+      "source_url": "https://www.darkreading.com/cybersecurity-operations/securing-black-hat-s-noc-lessons-from-james-pope-of-corelight",
+      "source_type": "security news article",
+      "visible_date": "August 13, 2026",
+      "date_basis": "Article header shows August 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "Dark Reading reports Black Hat NOC lessons including MCP servers running without TLS, corporate data transmitted in clear text, and the recommendation to validate tools before deployment using network visibility.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP and agent tooling should be treated as deployable infrastructure subject to TLS checks, traffic inspection, credential-leak review, and pre-deployment validation rather than as harmless local developer conveniences.",
+      "named_entities": [
+        "Dark Reading",
+        "Black Hat",
+        "Corelight",
+        "MCP",
+        "Wireshark",
+        "Zeek"
+      ],
+      "upstream_owned_entities": [
+        "Dark Reading",
+        "Black Hat",
+        "Corelight",
+        "MCP",
+        "Wireshark",
+        "Zeek"
+      ],
+      "local_practice_implication": "Route broad security-event coverage upstream; local practice note should emphasize transport security and preflight validation for MCP servers and coding-agent tool surfaces.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md.",
+        "Use as supporting evidence, not as a product-specific page."
+      ]
+    },
+    {
+      "title": "AI Is Outpacing Code Review. Here's How to Catch Up",
+      "source_url": "https://www.pagerduty.com/blog/ai/shift-left-ai-code-review/",
+      "source_type": "vendor practice blog",
+      "visible_date": "August 12, 2026",
+      "date_basis": "Article byline shows August 12, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "PagerDuty argues that AI-generated code increases review and security pressure, citing known security issues in AI-generated code and the limited effectiveness of large human code reviews.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted code review workflows need earlier, automated, risk-aware checks rather than relying only on late human review of large diffs.",
+      "named_entities": [
+        "PagerDuty",
+        "Veracode",
+        "SmartBear"
+      ],
+      "upstream_owned_entities": [
+        "PagerDuty",
+        "Veracode",
+        "SmartBear"
+      ],
+      "local_practice_implication": "Keep cited vendor/tool background upstream; local synthesis can use the article as evidence for shift-left review and review-size limits.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/coding-practices/intelligent-code-review.md.",
+        "Verify cited primary studies separately before promoting numeric claims into docs/wiki."
+      ]
+    },
+    {
+      "title": "How AI is changing software engineering careers and where the opportunities are",
+      "source_url": "https://mindrift.ai/blog/ai-changing-software-engineering",
+      "source_type": "practice/adoption blog",
+      "visible_date": "August 13, 2026",
+      "date_basis": "Article header shows August 13, 2026.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Mindrift describes AI-assisted development as shifting senior developer work toward review, architecture, debugging AI-generated code, mentoring AI-assisted juniors, and specialized AI-adjacent roles including evaluation, coding-assistant tooling, RAG systems, and agent development.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption guidance should treat review judgment, production debugging, AI-evaluation work, and mentoring as explicit operating-model capacity, not incidental overhead around coding-agent use.",
+      "named_entities": [
+        "Mindrift",
+        "Fastly",
+        "Veracode"
+      ],
+      "upstream_owned_entities": [
+        "Mindrift",
+        "Fastly",
+        "Veracode"
+      ],
+      "local_practice_implication": "Do not duplicate labor-market coverage broadly; use only as practice evidence for team roles, review load, and adoption operating model.",
+      "follow_up_notes": [
+        "Potential ingest target: docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md.",
+        "Verify referenced workforce and security claims against primary sources if promoted."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Per-model token breakdown in the usage report",
+      "source_url": "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+      "visible_date": "August 11, 2026",
+      "reason": "Published before the 2026-08-12T00:31:47Z cutoff."
+    },
+    {
+      "title": "Copilot memory and Ollama in GitHub Copilot for JetBrains",
+      "source_url": "https://github.blog/changelog/label/copilot/",
+      "visible_date": "Aug.11 Release",
+      "reason": "Release date is before the cutoff."
+    },
+    {
+      "title": "Do Personalized Skills Help Coding Agents? An Empirical Study of Developer Interaction Histories",
+      "source_url": "https://arxiv.org/abs/2608.10319",
+      "visible_date": "Mon Aug 10 23:41:02 2026",
+      "reason": "Published before the cutoff."
+    },
+    {
+      "title": "AgentChaos: Chaos Engineering for Agent Systems via Programmatic Fault Injection",
+      "source_url": "https://arxiv.org/abs/2608.06790",
+      "visible_date": "Fri, 7 Aug 2026 04:24:29 UTC",
+      "reason": "Published before the cutoff despite topical relevance to agent-system evals."
+    },
+    {
+      "title": "August 13, 2026 member meeting: Keeping Your Agents on a Leash",
+      "source_url": "https://isc2-eastbay-chapter.org/member-meetings-upcoming/august-13-2026-member-meeting/",
+      "visible_date": "August 13, 2026",
+      "reason": "Visible date is the event date; no publication or update timestamp was visible, so it is event-only date evidence."
+    },
+    {
+      "title": "Cursor guides: subagents, rules, and MCP",
+      "source_url": "https://www.cursorworkshop.com/research",
+      "visible_date": "August 11, 2026 for latest listed topical entries",
+      "reason": "Latest visibly dated topical entries found in extracted text were before the cutoff."
+    },
+    {
+      "title": "The Verification Gap Behind Every AI-Generated Release",
+      "source_url": "https://devops.com/the-verification-gap-behind-every-ai-generated-release/",
+      "visible_date": "No reliable article publication date visible in extracted page text",
+      "reason": "Search snippet suggested recency, but the opened page did not expose a visible article date; excluded under missing-date rule."
+    },
+    {
+      "title": "Introducing Agentic Change Management",
+      "source_url": "https://www.coderabbit.ai/blog/introducing-agentic-change-management",
+      "visible_date": "No reliable article publication date visible in extracted page text",
+      "reason": "Search result suggested recency, but the opened source page did not expose a visible publication or update date; excluded under missing-date rule."
+    },
+    {
+      "title": "9 Best AI Agent Debugging Tools for Production (2026)",
+      "source_url": "https://arize.com/resources/best-ai-agent-debugging-tools/",
+      "visible_date": "Last updated August 12, 2026; Last verified August 5, 2026",
+      "reason": "Updated inside the window but primarily a vendor-including product comparison; current verification date predates the cutoff and broad product coverage is upstream-owned."
+    },
+    {
+      "title": "Best AI Coding Agents 2026: Claude Code vs Codex vs Muse Code",
+      "source_url": "https://www.buildfastwithai.com/blogs/best-ai-coding-agents-august-2026",
+      "visible_date": "Published yesterday in search result",
+      "reason": "Broad product ranking/comparison with upstream-owned entity coverage and insufficient local practice novelty."
+    },
+    {
+      "title": "Introducing Agent Skills",
+      "source_url": "https://www.anthropic.com/news/skills",
+      "visible_date": "Nov 20, 2025",
+      "reason": "Older source surfaced through related-post snippets; outside collection window."
+    },
+    {
+      "title": "Codex is now generally available",
+      "source_url": "https://openai.com/index/codex-now-generally-available/",
+      "visible_date": "Older article; search result showed related Aug 13, 2026 card text",
+      "reason": "Main source is outside the collection window; related-card date is not the source publication date."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 9,
+    "excluded_candidate_count": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python3_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "collector_scope_result": "Raw artifact only; docs/wiki pages were not updated and raw/processed was not used."
+}
