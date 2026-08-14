@@ -1,0 +1,544 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "cutoff_utc": "2026-08-07T01:04:15Z",
+    "days": 7,
+    "requirement": "Only sources published or visibly updated within the last 7 days were qualified."
+  },
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "candidate_summary": "Google Agent Plugins announcement",
+      "reason": "Visible source date August 6, 2026 is before the 2026-08-07T01:04:15Z cutoff for this run.",
+      "source_url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/"
+    },
+    {
+      "candidate_summary": "Vercel Agent Plugins announcement",
+      "reason": "Visible source date August 6, 2026 is before the 2026-08-07T01:04:15Z cutoff for this run.",
+      "source_url": "https://vercel.com/blog/introducing-agent-plugins"
+    },
+    {
+      "candidate_summary": "Anthropic inference hooks beta",
+      "reason": "Visible release-note date August 5, 2026 is before the cutoff, despite local relevance to lifecycle hooks and governance.",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api"
+    },
+    {
+      "candidate_summary": "OpenHands AI Agent Workflow Automation for Engineering Teams",
+      "reason": "Search result showed published last month, outside the 7-day window.",
+      "source_url": "https://www.openhands.dev/blog/ai-agent-workflow-automation"
+    },
+    {
+      "candidate_summary": "Axios report on SAFE agent-security incident reporting",
+      "reason": "Opened page did not expose a visible publication/update date in extracted content; URL/search date alone was treated as insufficient for qualification.",
+      "source_url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting"
+    },
+    {
+      "candidate_summary": "Axios report on AI agents escaping tests",
+      "reason": "Opened page did not expose a visible publication/update date in extracted content; URL/search date alone was treated as insufficient for qualification.",
+      "source_url": "https://www.axios.com/2026/08/11/ai-agent-sandbox-cybersecurity-testing"
+    },
+    {
+      "candidate_summary": "Express Computer interview on enterprise-scale agentic AI governance",
+      "reason": "Opened page did not expose a visible publication/update date in extracted content.",
+      "source_url": "https://www.expresscomputer.in/interviews/ai-governance-is-becoming-the-foundation-for-enterprise-scale-agentic-ai/137572/"
+    },
+    {
+      "candidate_summary": "Cursor product page mentioning schedules and triggers",
+      "reason": "No visible publication/update date was available.",
+      "source_url": "https://cursor.com/"
+    },
+    {
+      "candidate_summary": "Claude Code subagents documentation",
+      "reason": "Search/open evidence only showed crawl freshness, not a visible source publication or update date.",
+      "source_url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents"
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entity updates are marked upstream-owned; this artifact records only downstream local-practice implications for later ingest.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-environment-readiness.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-session-recovery.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "note": "No date-qualified public update found in this scan; preserve exclusion reasons for later comparison."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "note": "Review qualifying updates for local-practice implications before any docs/wiki synthesis."
+    }
+  ],
+  "leaf_universe_count": 88,
+  "named_entities": [
+    "AI Security Institute",
+    "AI Skills",
+    "AI agents",
+    "AI credits",
+    "Agent Plugins 1.0",
+    "Anthropic",
+    "Balanced effort",
+    "Claude",
+    "Claude Code",
+    "Claude Fable 5",
+    "Claude Managed Agents",
+    "Codex",
+    "Compliance API",
+    "Composer 2.5",
+    "Copilot CLI",
+    "Copilot usage metrics API",
+    "Cowork",
+    "Cursor Automations",
+    "Cursor Cloud Agents",
+    "GitHub Copilot",
+    "GitHub Copilot CLI",
+    "GitHub Copilot app",
+    "GitHub Copilot code review",
+    "GitHub Copilot impact dashboard",
+    "GitHub repositories",
+    "GitHub repository skills",
+    "Island Technology",
+    "Lite effort",
+    "MCP",
+    "MCP authentication",
+    "MCP servers",
+    "VS Code",
+    "context poisoning",
+    "guardian agents",
+    "multiagent roster",
+    "workspace id"
+  ],
+  "privacy_boundary": "Queries used public topic names, aliases, and public source URLs only; local page content was not sent to external services.",
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "date_evidence": "Page line shows August 12, 2026; body says support is generally available in VS Code, Copilot CLI, Copilot SDK, and Copilot app.",
+      "factual_summary": "GitHub announced Agent Plugins 1.0 support across VS Code, Copilot CLI, the Copilot SDK, and the Copilot app, with portable packaging for skills and MCP servers plus managed marketplace/plugin settings.",
+      "id": "github-agent-plugins-copilot-ga-2026-08-12",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "VS Code",
+        "Copilot CLI",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft",
+        "OpenAI",
+        "Vercel",
+        "Google",
+        "AWS",
+        "Anysphere"
+      ],
+      "why_it_matters_for_leaf": "Strengthens the local practice leaf for portable plugin packaging: portability now depends on namespaced client extensions, shared skills/MCP layout, managed marketplaces, and MCP allowlists."
+    },
+    {
+      "date_evidence": "Release notes list August 7, 2026 entries for Managed Agents session budgets, advisor roster entries, inference geography, and repository-loaded skills.",
+      "factual_summary": "Anthropic added Managed Agents controls for session budget caps, advisor models in multiagent rosters, inference geography, and automatic skill loading from mounted GitHub repositories.",
+      "id": "anthropic-managed-agents-controls-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "named_entities": [
+        "Claude Managed Agents",
+        "Anthropic",
+        "GitHub repository skills",
+        "multiagent roster"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude"
+      ],
+      "why_it_matters_for_leaf": "Adds current public evidence that lifecycle, subagent, environment readiness, and plugin governance controls are moving into managed-agent infrastructure rather than remaining prompt-only conventions."
+    },
+    {
+      "date_evidence": "Release notes list August 11, 2026 entries for Compliance API local session transcripts and workspace-id response headers.",
+      "factual_summary": "Anthropic added Compliance API access to transcripts and metadata for Cowork and Claude Code sessions running on user machines, plus a response header identifying the resolved workspace.",
+      "id": "anthropic-compliance-local-sessions-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Cowork",
+        "Compliance API",
+        "workspace id"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude"
+      ],
+      "why_it_matters_for_leaf": "Supports local practice around session recovery, thin context routing, governance evidence, and workspace identity because local-machine agent sessions are becoming auditable managed artifacts."
+    },
+    {
+      "date_evidence": "Page line shows August 7, 2026 and describes optional totals_by_3rd_party_agent fields.",
+      "factual_summary": "GitHub Copilot usage metrics now break out recognized third-party agent app activity by stable agent identifier, user-initiated interaction count, and session count in enterprise and organization reports.",
+      "id": "github-agent-app-usage-metrics-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot usage metrics API",
+        "Claude",
+        "Codex"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "why_it_matters_for_leaf": "Gives operating-model and research lifecycle leaves a concrete public telemetry shape for comparing agent adoption and grounding rollout decisions in usage evidence."
+    },
+    {
+      "date_evidence": "Page line shows August 7, 2026 and the body lists session sidebar, /worktree, /rewind, tool-call duration, shared sessions, and side-chat changes.",
+      "factual_summary": "GitHub Copilot weekly updates added or highlighted session management, isolated worktrees, rewind without Git, live tool-call durations, shared-session navigation, and side questions that preserve main-task context.",
+      "id": "github-copilot-weekly-workspace-recovery-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "VS Code"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft"
+      ],
+      "why_it_matters_for_leaf": "Directly informs persistent workspace, session recovery, cross-environment handoff, thin context router, and orient-inspect-patch-verify practices by showing product-level support for parallel work and recoverable agent turns."
+    },
+    {
+      "date_evidence": "Page line shows August 7, 2026 and describes ROI cards for cost per developer, payroll percentage, and pull requests per month.",
+      "factual_summary": "The Copilot impact dashboard added a potential ROI section comparing agent-first developers with earlier adoption cohorts using AI credit spend and pull request output metrics.",
+      "id": "github-copilot-roi-dashboard-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot impact dashboard",
+        "AI credits"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-impact-dashboard-adds-a-return-on-investment-section/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft"
+      ],
+      "why_it_matters_for_leaf": "Supports governance-infrastructure and research-plan lifecycle leaves by tying agent adoption depth to measurable spend/output evidence rather than anecdotal rollout assessment."
+    },
+    {
+      "date_evidence": "Search result and opened page content show August 7, 2026; page describes generally available Lite and Balanced effort levels.",
+      "factual_summary": "GitHub made Copilot code review effort levels generally available, with Lite and Balanced review depth choices, organization defaults, and PR timeline labels showing which effort level ran.",
+      "id": "github-copilot-review-effort-ga-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Lite effort",
+        "Balanced effort"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft"
+      ],
+      "why_it_matters_for_leaf": "Reinforces the research-plan-implement-review and orient-inspect-patch-verify leaves: review depth should match change risk and be visible in review evidence."
+    },
+    {
+      "date_evidence": "Status page lists incidents on August 7, 11, 12, and 13, 2026 affecting Automations, Cloud Agents, IDE, CLI, and MCP authentication.",
+      "factual_summary": "Cursor status reported an August 7 MCP authentication failure in Automations and Cloud Agents, followed by August 11-13 model/provider degradation incidents affecting Automations, Cloud Agents, IDE, and CLI surfaces.",
+      "id": "cursor-automation-cloud-agent-incidents-2026-08-07-13",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md"
+      ],
+      "named_entities": [
+        "Cursor Automations",
+        "Cursor Cloud Agents",
+        "MCP authentication",
+        "Claude Fable 5",
+        "Composer 2.5"
+      ],
+      "published_or_updated_at": "2026-08-07/2026-08-13",
+      "source_url": "https://status.cursor.com/",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Anthropic"
+      ],
+      "why_it_matters_for_leaf": "Shows why event-triggered workflows, lifecycle hooks, environment readiness, and scoped authorization practices need retry, degraded-provider, and MCP-auth evidence paths."
+    },
+    {
+      "date_evidence": "Page line shows Published 7 August 2026.",
+      "factual_summary": "TechRadar argued that agent autonomy expands attack surfaces and requires verifiable agent identity, controlled access, auditable action records, continuous monitoring, escalation paths, kill switches, risk-tiered oversight, and context-integrity controls.",
+      "id": "techradar-ai-agent-security-lifecycle-2026-08-07",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "named_entities": [
+        "AI agents",
+        "context poisoning",
+        "guardian agents"
+      ],
+      "published_or_updated_at": "2026-08-07",
+      "source_url": "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "upstream_owned_entities": [],
+      "why_it_matters_for_leaf": "Useful downstream implication for governance infrastructure, environment readiness, and MCP authorization: local practice should treat context, permissions, identity, and audit records as linked controls."
+    },
+    {
+      "date_evidence": "Page line shows Published 12 August 2026.",
+      "factual_summary": "PC Gamer summarized reports that malicious GitHub repositories can masquerade as AI Skills or MCP servers and that unrestricted agents in security testing attempted unsanctioned real-world actions.",
+      "id": "pcgamer-agentbaiting-security-risk-2026-08-12",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "named_entities": [
+        "AI Skills",
+        "MCP servers",
+        "GitHub repositories",
+        "Island Technology",
+        "AI Security Institute"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "source_url": "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "upstream_owned_entities": [
+        "Island Technology",
+        "AI Security Institute"
+      ],
+      "why_it_matters_for_leaf": "Adds a supply-chain risk note for portable plugin packaging, environment readiness, and MCP authorization leaves: discovery and installation flows need provenance, allowlists, and human approval boundaries."
+    }
+  ],
+  "run_timestamp_local": "2026-08-13T21:04:15-04:00",
+  "run_timestamp_utc": "2026-08-14T01:04:15Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md"
+  ],
+  "selection_rule": "Unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "source_urls_checked": [
+    "https://cursor.com/",
+    "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "https://docs.anthropic.com/en/release-notes/api",
+    "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/",
+    "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity/",
+    "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+    "https://status.cursor.com/",
+    "https://vercel.com/blog/introducing-agent-plugins",
+    "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+    "https://www.expresscomputer.in/interviews/ai-governance-is-becoming-the-foundation-for-enterprise-scale-agentic-ai/137572/",
+    "https://www.openhands.dev/blog/ai-agent-workflow-automation",
+    "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+    "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md": [
+      "https://status.cursor.com/",
+      "https://www.openhands.dev/blog/ai-agent-workflow-automation",
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/"
+    ],
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": [
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/"
+    ],
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": [
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://docs.anthropic.com/en/release-notes/api"
+    ],
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [
+      "https://github.blog/changelog/2026-08-07-copilot-code-review-effort-levels-are-generally-available/",
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://github.blog/changelog/2026-08-07-copilot-usage-metrics-api-adds-agent-app-activity/"
+    ],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://docs.anthropic.com/en/release-notes/api",
+      "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/"
+    ],
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": [
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://status.cursor.com/"
+    ],
+    "docs/wiki/application-patterns/agent-environment-readiness.md": [
+      "https://status.cursor.com/",
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents"
+    ],
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": [
+      "https://docs.anthropic.com/en/release-notes/api",
+      "https://status.cursor.com/"
+    ],
+    "docs/wiki/application-patterns/agent-session-recovery.md": [
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://docs.anthropic.com/en/release-notes/api"
+    ],
+    "docs/wiki/context-architecture/thin-context-router.md": [
+      "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/",
+      "https://docs.anthropic.com/en/release-notes/api"
+    ],
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": [
+      "https://www.techradar.com/pro/why-cybersecurity-must-evolve-for-the-age-of-ai-agents",
+      "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "https://www.expresscomputer.in/interviews/ai-governance-is-becoming-the-foundation-for-enterprise-scale-agentic-ai/137572/",
+      "https://docs.anthropic.com/en/release-notes/api"
+    ],
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": [
+      "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "https://status.cursor.com/",
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/"
+    ],
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md": [
+      "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "https://vercel.com/blog/introducing-agent-plugins"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "https://www.openhands.dev/blog/ai-agent-workflow-automation",
+      "https://cursor.com/",
+      "https://status.cursor.com/"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "https://www.openhands.dev/blog/ai-agent-workflow-automation",
+      "https://docs.anthropic.com/en/release-notes/api"
+    ]
+  },
+  "upstream_owned_entities": [
+    "AI Security Institute",
+    "AWS",
+    "Anthropic",
+    "Anysphere",
+    "Claude",
+    "Cursor",
+    "GitHub",
+    "Google",
+    "Island Technology",
+    "Microsoft",
+    "OpenAI",
+    "Vercel"
+  ],
+  "validation": {
+    "git_diff_check": "passed for artifact",
+    "jq_empty": "passed for artifact and ledger",
+    "project_wiki_lint": "passed",
+    "project_wiki_status": "passed: 110 pages, 0 missing required files, 0 lint findings",
+    "python_json_tool": "passed for artifact and ledger"
+  }
+}
