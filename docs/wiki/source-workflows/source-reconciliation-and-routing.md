@@ -48,6 +48,8 @@ The [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-d
 - Upstream protocol, tool, and method routing: [Model Context Protocol](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md), [Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md), [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [Visual Studio Code and other developer tools](../../../upstream-ai-wiki/developer-tools/index.md), [Lean and other formal-method techniques](../../../upstream-ai-wiki/techniques/index.md), [PR Arena and other benchmark context](../../../upstream-ai-wiki/techniques/index.md), and the upstream [AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md) own broad product, developer-tool, protocol, benchmark, and formal-method background.
 - Local routing: downstream practice stays in [MCP scoped authorization](../retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md), [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md), [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), [outcome alignment](../adoption-and-operating-model/outcome-alignment-and-process-autonomy.md), [workflow selection](../adoption-and-operating-model/workflow-before-model-selection.md), [agent harness components](../application-patterns/agent-harness-components.md), [runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md), [verification loops](../verification-and-evals/verification-loops-and-evals.md), [agent environment readiness](../application-patterns/agent-environment-readiness.md), and [senior-led execution pods](../adoption-and-operating-model/senior-led-agentic-execution-pods.md).
 
+The August 14 raw sources keep broad ecosystem entities upstream-owned. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [GitHub](../../../upstream-ai-wiki/companies/index.md), [xAI](../../../upstream-ai-wiki/companies/xai.md), [Grok model family](../../../upstream-ai-wiki/models/grok-model-family.md), [OpenAI](../../../upstream-ai-wiki/companies/openai.md), [Anthropic](../../../upstream-ai-wiki/companies/anthropic.md), [Model Context Protocol](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md), Cursor, Stack Overflow, WorkOS, TrueFoundry, AIMultiple, Open Secure AI Alliance, SAFE, AgentBaiting, AISI, Exabeam, and Gartner are routed as broad company, model, product, protocol, framework, security, or analyst background. Local pages keep only downstream practice implications for plugin supervision, model-policy enablement, context architecture, compaction, MCP approval gates, progressive tool discovery, provider status handling, cloud-agent environment provenance, prior-work reconstruction, incident evidence, repository/tool trust, and behavior baselines.
+
 Earlier July routing details retained below:
 
 Upstream routing:
@@ -87,6 +89,7 @@ Local routing:
 - Route July 29 company, product, framework, protocol, benchmark, conference, and tool entities upstream while retaining local practice for eval attribution, context, prompting, measurement, MCP migration, harnesses, RAG, TDD, and primary-root authority.
 - Route July 30 company, product, framework, protocol, event, developer-tool, and model entities upstream while retaining local practice for environment readiness, deterministic guardrails, lifecycle phases, approvals, MCP authorization, instruction layers, ownership, cost routing, managed harness selection, and wiki portability.
 - Route July 31 company, product, protocol, developer-tool, benchmark, formal-method, and vendor-positioned infrastructure entities upstream while retaining local practice for MCP authorization, governance, telemetry, workflow routing, harness state, runtime traces, verification, environment readiness, and embedded execution teams.
+- Route August 14 company, model, product, protocol, MCP, security-framework, incident, and analyst entities upstream while retaining local practice for plugin supervision, model policy, context architecture, compaction, approval gates, tool discovery, status handling, environment provenance, prior-work reconstruction, incident evidence, repository/tool trust, and behavior baselines.
 
 ## Authoritative Sources
 
@@ -125,6 +128,8 @@ Local routing:
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 
 ## Related Code
 
@@ -155,6 +160,7 @@ Local routing:
 - The upstream AI wiki owns July 29 Claude Code, Anthropic, OpenAI, Microsoft Agent Framework, Model Context Protocol, MCP servers, AWS Bedrock, benchmark, conference, and coding-agent tool background; use upstream hubs if exact entity leaves are missing.
 - The upstream AI wiki owns July 30 OpenAI, Codex, Claude Code, GitHub Copilot, Amazon Bedrock, Google Cloud, Nvidia, MCP, VS Code, and named event, company, product, framework, developer-tool, and model background; use upstream hubs if exact entity leaves are missing.
 - The upstream AI wiki owns July 31 Microsoft, Agent 365, UiPath, Atlassian, Amazon, Dell, Nvidia, Weave, Lean, PR Arena, MCP, Claude Code, GitHub Copilot, Visual Studio Code, and named coding-agent tool background; use upstream hubs if exact entity leaves are missing.
+- The upstream AI wiki owns August 14 GitHub, GitHub Copilot, xAI, Grok, OpenAI, Anthropic, MCP, Cursor, Stack Overflow, WorkOS, TrueFoundry, AIMultiple, Open Secure AI Alliance, SAFE, AgentBaiting, AISI, Exabeam, Gartner, and related broad entity background; use upstream hubs if exact entity leaves are missing.
 
 ## Maintenance Notes
 
@@ -171,3 +177,4 @@ Local routing:
 - Maintained on 2026-07-29 with upstream routing for company, product, framework, protocol, benchmark, conference, and coding-agent tool entities while retaining local practice implications.
 - Maintained on 2026-07-30 with upstream routing for event, company, product, framework, protocol, developer-tool, and model entities while retaining local practice implications.
 - Maintained on 2026-07-31 with upstream routing for company, product, protocol, developer-tool, benchmark, formal-method, and vendor-positioned infrastructure entities while retaining local practice implications.
+- Maintained on 2026-08-14 with upstream routing for company, model, product, protocol, MCP, security-framework, incident, and analyst entities while retaining local practice implications.

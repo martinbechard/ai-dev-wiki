@@ -27,6 +27,8 @@ The [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-
 
 The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json) adds multi-folder workspace routing evidence. Context routers should name one primary repository and instruction root for Git operations, reviews, pull requests, AGENTS.md, and skill discovery, while secondary folders remain attributed evidence roots until a task explicitly grants them authority.
 
+The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds enterprise source-ranking evidence. Context routers should keep source trust, freshness, access scope, conflict policy, and reranking criteria visible when drawing from Slack, Teams, drive, wiki, repository, or ticket sources. The router should not treat the existence of a connector as permission to merge every retrieved artifact into one undifferentiated context bundle.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -46,6 +48,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Route searchable chats, project files, images, and documents as attributed retrieval candidates that must be opened and verified before they become durable context.
 - Route memory-aware repository observations as attributed, freshness-labeled retrieval candidates; require direct evidence checks before they replace live file reads or durable wiki synthesis.
 - Route primary Git and instruction roots separately from secondary related-code, documentation, and reference folders.
+- Route enterprise knowledge sources with explicit source trust, freshness, access scope, conflict handling, and reranking labels before they become active model context.
 
 ## Authoritative Sources
 
@@ -59,6 +62,7 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 
 ## Related Code
 
@@ -92,3 +96,4 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 - Maintained on 2026-07-14 with searchable project artifact routing, source labels, and direct-open verification boundaries.
 - Maintained on 2026-07-22 with memory-aware repository observation routing, freshness labels, and minimum-useful-slice checks.
 - Maintained on 2026-07-29 with primary Git/instruction root and secondary evidence-folder routing guidance.
+- Maintained on 2026-08-14 with enterprise source trust, freshness, access-scope, conflict-policy, and reranking labels for context routing.

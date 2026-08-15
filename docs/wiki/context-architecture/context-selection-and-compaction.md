@@ -43,6 +43,8 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 
 The August 11 raw sources add memory, compaction, and operating-record evidence. The [topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) records persistent agent memory and managed settings as context surfaces, while the [leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) records context compaction, memory search, progressive tool disclosure, task-specific subagents, prompt caching, sandbox lifecycle, and approval-controlled network requests. Locally, context selection should expose which memory, compaction, tool catalog, and approval state affected a generation step.
 
+The August 14 topic collector adds context-architecture evidence from enterprise knowledge routing, coding-agent compaction, and MCP tool-exposure patterns. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records trust scores, conflict handling, reranking, response-runway planning, keep-recent compaction, and code-execution-style tool invocation as downstream practice signals. Locally, context selection should treat source trust, conflict policy, compaction thresholds, and tool-schema exposure as an engineered operating envelope rather than relying on maximum context size or full catalog loading.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -77,6 +79,8 @@ The August 11 raw sources add memory, compaction, and operating-record evidence.
 - Treat repeated retrieval and context carry-forward as cost signals; compile or cache context only when source provenance and freshness remain auditable.
 - Treat compaction, memory, durable instructions, open files, tool outputs, permissions, task state, retrieval, and workflow gates as context surfaces that need explicit owners and freshness evidence.
 - Record which persistent memory, compaction summary, prompt-cache segment, progressive tool catalog, sandbox state, and approval-controlled request entered each generation step when those surfaces affect the answer.
+- Define trust ranking, conflict handling, compaction thresholds, response runway, and recent-context retention before relying on enterprise knowledge stores or long coding-agent windows.
+- Benchmark tool-heavy context strategies against representative workflows, including token shifts, sandbox boundaries, and failure modes, before replacing schema-in-context discovery with generated code execution.
 
 ## Authoritative Sources
 
@@ -108,6 +112,7 @@ The August 11 raw sources add memory, compaction, and operating-record evidence.
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 
 ## Related Code
 
@@ -150,3 +155,4 @@ The August 11 raw sources add memory, compaction, and operating-record evidence.
 - Maintained on 2026-08-05 with token-tax-aware context reuse and provenance-preserving compilation guidance.
 - Maintained on 2026-08-10 with loop-aware context surfaces and governed production context-assembly guidance.
 - Maintained on 2026-08-11 with persistent memory, context compaction, prompt-cache, progressive-tool, sandbox-state, and approval-controlled request evidence.
+- Maintained on 2026-08-14 with trust-ranked enterprise context, conflict handling, response-runway compaction, keep-recent retention, and tool-schema exposure guidance.

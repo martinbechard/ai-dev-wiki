@@ -15,6 +15,8 @@ The August 12 raw sources add public adoption evidence without moving broad stan
 
 The August 13 raw sources add follow-on adoption and supply-chain evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) reinforce that portable packages need manifest review, managed availability policy, MCP allowlist evidence, client-specific namespace checks, and repository provenance before bundled skills or MCP servers become team defaults. Broad vendor and product coverage routes upstream; locally, repository-hosted skills and MCP declarations remain governed capability bundles.
 
+The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds cross-client plugin lifecycle evidence. Portable package governance should account for app-side plugin management, compatible agent-tool availability, side-channel questions from an agent, queued prompts or shell commands, pinned prompt context, and reversible edit recovery. Locally, these are operating controls around package use and supervision; broad product availability stays upstream-owned.
+
 Portable packages should not erase artifact boundaries. [Portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md) owns reusable procedure design; [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md) owns skills discovered through MCP; [tool call and MCP governance](tool-call-and-mcp-governance.md) owns runtime tool authorization; this page owns the packaging review that binds those components together.
 
 ## Practice Boundaries
@@ -26,6 +28,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Do not treat an Agent Plugins package as an MCP-only artifact; route MCP server details through MCP governance and skill procedure details through portable skill governance.
 - Preserve client enforcement evidence when package availability, MCP allowlists, or permission-bypass settings differ across IDE, CLI, app, or cloud-agent surfaces.
 - Treat repository-hosted skills, plugin packages, and MCP server declarations as supply-chain inputs until provenance, namespace, managed-availability policy, and allowlist evidence are recorded.
+- Treat plugin-management UI, side-channel agent questions, queued commands, pinned prompts, and rewind or recovery features as supervision and audit surfaces when portable packages enter recurring workflows.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md)
@@ -66,3 +70,4 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 
 - Created on 2026-08-12 from the portable Agent Plugins classification query and August 12 public Agent Plugins adoption evidence.
 - Maintained on 2026-08-13 with portable package policy, repository-skill provenance, MCP allowlist, and client-namespace review evidence.
+- Maintained on 2026-08-14 with plugin-management, side-channel-question, queued-command, pinned-prompt, and recovery-feature supervision evidence.

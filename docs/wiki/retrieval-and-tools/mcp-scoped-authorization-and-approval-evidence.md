@@ -21,6 +21,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 
 The August 13 sources add production-operations evidence for MCP authorization. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) records MCP operational visibility, token exchange, hosted operational-data access, and transport-security findings; the [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records MCP authentication incidents and plugin allowlist evidence. Locally, MCP authorization should include metrics, latency/error evidence, credential narrowing, TLS or transport checks, live-data mutation gates, and incident records before the server becomes recurring development infrastructure.
 
+The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds gateway-approval evidence. MCP tool approvals are not standardized by the protocol itself, so local harnesses should enforce approvals at a shared gateway or equivalent boundary, bind the request to requester, tool, resource, payload, and validity window, and return pending or denied states in agent-legible metadata. The same source also reinforces that approval logs are correlatable audit evidence, not a complete compliance record by themselves.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -33,6 +35,9 @@ The August 13 sources add production-operations evidence for MCP authorization. 
 - Require source-review, identity, scoped-permission, approval, audit, and sandbox evidence before moving an MCP server from demonstration to recurring team use.
 - Treat managed MCP access, permission-bypass behavior, and telemetry export settings as authorization controls that need admin policy evidence and run-level logs.
 - Require transport security, credential-scoping, operational metrics, incident history, and live-data mutation approval before agents use MCP servers against production-adjacent or operational data.
+- Enforce human approval at a gateway or equivalent tool boundary when the model proposes consequential MCP calls.
+- Bind approval requests to requester, tool, resource, proposed payload, validity window, denial semantics, and execution result before releasing a held call.
+- Treat approval-request records as correlatable audit evidence that still needs identity, policy, and downstream system logs for full review.
 
 ## Authoritative Sources
 
@@ -43,6 +48,7 @@ The August 13 sources add production-operations evidence for MCP authorization. 
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
@@ -75,3 +81,4 @@ The August 13 sources add production-operations evidence for MCP authorization. 
 - Maintained on 2026-08-07 with enterprise MCP source-review, identity, approval, audit, and sandbox evidence requirements.
 - Maintained on 2026-08-11 with managed MCP access, permission-bypass, telemetry, and IDE debug-log evidence requirements.
 - Maintained on 2026-08-13 with MCP operational metrics, credential narrowing, transport-security, live-data mutation, and incident-evidence requirements.
+- Maintained on 2026-08-14 with gateway-held MCP approval requests, requester/tool/resource/payload scope, validity windows, denial semantics, and audit-linkage guidance.

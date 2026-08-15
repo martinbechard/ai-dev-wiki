@@ -45,6 +45,8 @@ The August 7 observability clippings add an LLM application telemetry boundary. 
 
 The August 11 raw sources add IDE and workflow operating-record telemetry. The [topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) records agent debug logs, session visibility, OpenTelemetry settings, and per-model token breakdowns, while the [leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) records reasoning effort, context compaction, prompt caching, tool approvals, and region-aware fallback as operating-record fields. Locally, progress and telemetry should make those fields joinable by session when they explain approval, cost, or behavior.
 
+The August 14 raw sources add approval, queue, build, service-health, and behavior telemetry. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records side-channel agent questions, queued prompts and shell commands, rewind recovery, approval pending states, and hosted service disruptions. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records build status, logs, commit SHAs, run-to-build mapping, incident evidence fields, and purpose-based behavior baselines. Locally, progress surfaces should show whether work is waiting for approval, queued, running on a known environment, degraded by provider status, or deviating from expected behavior.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -75,6 +77,7 @@ The August 11 raw sources add IDE and workflow operating-record telemetry. The [
 - Keep trace identifiers and visible progress joined so a user can move from progress UI to audit or review evidence.
 - Join LLM traces, prompt versions, cost, latency, errors, feedback, product events, and human annotations when quality or release decisions depend on runtime behavior.
 - Join session/debug logs, telemetry export settings, token categories, reasoning effort, compaction, prompt-cache behavior, tool approvals, and fallback routes when they explain runtime behavior or cost.
+- Show side-channel questions, queued prompts, queued shell commands, approval-pending metadata, rewind points, service-health state, build status, build logs, commit SHA, run-to-build mapping, and purpose-baseline deviations when they affect review or acceptance.
 
 ## Authoritative Sources
 
@@ -100,6 +103,8 @@ The August 11 raw sources add IDE and workflow operating-record telemetry. The [
 - [LLM observability quality gates](../verification-and-evals/llm-observability-quality-gates.md)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 
 ## Related Code
 
@@ -144,3 +149,4 @@ The August 11 raw sources add IDE and workflow operating-record telemetry. The [
 - Maintained on 2026-08-04 with IDE agent-window session state, subagent timing, active tool-call, PR update, and trace-linkage guidance.
 - Maintained on 2026-08-07 with LLM trace, prompt-version, product-event, annotation, cost, latency, and quality-regression telemetry joins.
 - Maintained on 2026-08-11 with session/debug logs, token categories, reasoning effort, compaction, prompt-cache, tool-approval, and fallback-route telemetry joins.
+- Maintained on 2026-08-14 with side-channel question, queued-work, approval-pending, rewind, service-health, build-status, commit-SHA, run-to-build, and purpose-baseline telemetry.

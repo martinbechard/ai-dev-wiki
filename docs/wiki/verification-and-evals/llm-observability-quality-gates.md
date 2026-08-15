@@ -23,6 +23,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 
 The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds security and first-party evaluation signals. Agent observability should connect identity, access, continuous monitoring, escalation paths, kill switches, context-integrity checks, and workflow-level feedback loops so agent behavior, retention, online validation, and safety incidents can become release or rollback evidence instead of dashboard-only signals.
 
+The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) adds incident-learning and behavioral-intelligence signals. Observability gates for autonomous agents should preserve prompts, traces, tool calls, identities, permissions, credentials, human approvals, timelines, remediation evidence, purpose baselines, authorized-system inventories, and expected tool-call patterns. This lets teams evaluate whether a run matched its declared purpose rather than only whether isolated credentials or API calls were individually allowed.
+
 ## Gate Design Signals
 
 - Trace model calls, tool calls, retrieval spans, prompt versions, datasets, annotations, costs, latency, and errors by run or session.
@@ -44,6 +46,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Require component-level evaluation when final-output scores cannot explain whether retrieval, tool selection, reasoning path, or generation failed.
 - Keep non-technical reviewer workflows tied to explicit rubrics and annotation provenance so shared ownership does not dilute acceptance criteria.
 - Connect security monitoring, kill-switch evidence, context-integrity signals, product feedback, retention, and online validation to release gates when autonomous-agent behavior affects users or external systems.
+- Turn agent near misses, purpose deviations, repository/tool trust failures, and incident evidence into regression cases or rollback criteria when recurring workflows could repeat the behavior.
+- Evaluate agent behavior against declared purpose, authorized systems, expected tool-call patterns, approval evidence, and remediation outcomes, not only against aggregate success metrics.
 
 ## Authoritative Sources
 
@@ -54,6 +58,7 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [user-visible progress and runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md)
@@ -86,3 +91,4 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 - Created on 2026-08-07 from the observability and evaluation clipping set plus the August 7 collector's MCP, skill-eval, copilot-governance, and team-workflow signals.
 - Maintained on 2026-08-08 with autonomous-agent security monitoring, kill-switch, context-integrity, first-party feedback, and online-validation gates.
+- Maintained on 2026-08-14 with incident-learning, purpose-baseline, authorized-system, expected-tool-pattern, approval-evidence, and remediation-outcome gates.

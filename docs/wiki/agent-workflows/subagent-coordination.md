@@ -43,6 +43,8 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 
 The August 13 sources add managed-agent and multiagent-hierarchy evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) distinguishes agents used as tool-like calls from long-lived peers without clear hierarchy. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records managed-agent budget caps, advisor roster entries, inference geography, and repository-loaded skills. Locally, subagent coordination should declare whether a worker is a bounded tool call, a peer actor, an advisor, or a managed long-running executor before delegation begins.
 
+The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds task-queue and side-channel supervision evidence. When a CLI or app can create subagent tasks, queue prompts or shell commands, and ask the human questions without blocking the main turn, the coordinator still needs explicit ownership of queued work, approval timing, command scope, and returned evidence before integrating the result.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -69,6 +71,7 @@ The August 13 sources add managed-agent and multiagent-hierarchy evidence. The [
 - Keep role separation, shared state, and summary artifacts explicit when subagents specialize by UI surface.
 - Distinguish in-process subagents, vendor-managed agent teams, terminal multiplexers, and worktree-based fleets before applying one coordination rule to all of them.
 - Classify each delegated agent as a bounded tool call, peer actor, advisor, or managed executor, then attach hierarchy, authority, budget, geography, skill-loading, and conflict-resolution rules to that class.
+- Treat queued subagent prompts, queued shell commands, and side-channel questions as delegated work that needs owner, scope, approval state, and completion evidence before synthesis.
 
 ## Authoritative Sources
 
@@ -92,6 +95,7 @@ The August 13 sources add managed-agent and multiagent-hierarchy evidence. The [
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 
 ## Related Code
 
@@ -136,3 +140,4 @@ The August 13 sources add managed-agent and multiagent-hierarchy evidence. The [
 - Maintained on 2026-07-30 with cross-environment role separation and handoff-summary routing.
 - Maintained on 2026-08-05 with terminal-native fleet orchestration boundaries and coordination-surface distinctions.
 - Maintained on 2026-08-13 with managed-agent budgets, advisor rosters, inference geography, repository-loaded skills, and peer-versus-tool hierarchy boundaries.
+- Maintained on 2026-08-14 with queued subagent prompt, queued shell command, side-channel question, approval-timing, and returned-evidence guidance.

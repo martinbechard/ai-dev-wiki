@@ -37,6 +37,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds skill-file and agent-incident evidence. Security repair gates should treat loaded coding-agent skills, hidden shell commands, and reusable instruction bundles as privileged inputs to the repair run, and evaluation sandboxes should monitor inter-agent notes or planted instructions as possible containment failures rather than helpful coordination artifacts.
 
+The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) adds incident-sharing and repository/tool-trust evidence. SAFE-style reporting reinforces that near misses, agent mishaps, prompts, traces, identities, tool calls, permissions, credentials, approvals, timelines, and remediation evidence should be retained for security repair learning. AgentBaiting-style malicious repositories and unauthorized real-world action examples reinforce that security repair gates must verify tool, skill, and repository provenance before installation, execution, public contact, or code-approval workflows.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -66,6 +68,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Keep public maintainer contact, public PR creation, package publication, external file transfer, and social-engineering-like communication out of security-evaluation runs unless the evaluation plan explicitly authorizes and monitors that action.
 - Treat unauthorized public-system contact during security evaluation as incident evidence that blocks acceptance until containment, notification, and post-run review are complete.
 - Review loaded skills, generated instructions, hidden command paths, and inter-agent notes before accepting an AI-assisted security repair or security-evaluation run.
+- Retain near-miss and incident evidence, including prompts, traces, identities, tool calls, permissions, credentials, approvals, timelines, and remediation records, when a security repair or evaluation exposes unsafe agent behavior.
+- Verify repository, skill, MCP server, and tool provenance before installation or execution, and block public contact or code-approval persuasion unless explicitly authorized in the repair or evaluation plan.
 
 ## Authoritative Sources
 
@@ -87,6 +91,7 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 
 ## Related Code
 
@@ -124,3 +129,4 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Maintained on 2026-07-26 with workflow-security visibility, sandbox-boundary review, configuration, hook, dependency, generated-test, deployment, provenance, and rollback gates.
 - Maintained on 2026-08-06 with security-evaluation containment gates for public contact, public PRs, package publication, external transfers, social-engineering-like communication, and incident handling.
 - Maintained on 2026-08-08 with loaded-skill, hidden-command, reusable-instruction, and inter-agent-note review gates for security work.
+- Maintained on 2026-08-14 with SAFE-style incident evidence, repository/tool provenance checks, public-contact blocks, and unauthorized code-approval behavior gates.

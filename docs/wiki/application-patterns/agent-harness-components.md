@@ -67,6 +67,8 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 
 The August 12 raw sources add evaluation-framework and context/harness-separation evidence. The [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md) and [Harbor motivation clipping](../../../raw/processed/Motivation.md) frame task, dataset, agent, container environment, trial, and job boundaries for containerized agent evaluation, including parallel trials and cloud sandbox runtimes. The [Inspect clipping](../../../raw/processed/Inspect.md) records tasks, datasets, solvers, scorers, tools, agents, sandboxes, logs, and external coding-agent support as evaluation components. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds a model/context/harness separation lens. Locally, harnesses should make evaluation entities, execution environment, scoring surface, logs, permissions, and tool surfaces explicit enough that failures can be attributed to context, tool, environment, scorer, or model behavior instead of collapsing into a model-only explanation.
 
+The August 14 raw sources add gateway approval, cloud environment, behavioral baseline, and incident-reporting evidence. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records approval gateways, pending metadata, tool-catalog context strategies, and provider status incidents. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records prebuilt cloud-agent environments, SAFE incident evidence fields, AgentBaiting-style repository and skill risks, and purpose-based behavioral monitoring. Locally, harnesses should expose approval holding, build provenance, repository/tool trust gates, purpose baselines, and incident evidence as runtime components.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -121,6 +123,7 @@ The August 12 raw sources add evaluation-framework and context/harness-separatio
 - Expose identity, task state, memory, retrieval, tool outputs, governance controls, structured responses, streaming progress, tool registration, and least-capability grants as inspectable harness components.
 - Preserve task, dataset, agent, environment, trial, job, solver, scorer, sandbox, log, and tool boundaries when a harness is used to evaluate or optimize coding agents.
 - Diagnose agent failures across model, context, harness, environment, permission, tool, and scorer layers before changing prompts or model routes.
+- Include approval-hold state, pending metadata, prebuilt environment provenance, repository/tool trust gates, purpose-based behavioral baselines, and incident evidence fields in harness reviews for recurring agent workflows.
 
 ## Authoritative Sources
 
@@ -173,6 +176,8 @@ The August 12 raw sources add evaluation-framework and context/harness-separatio
 - [Harbor motivation clipping](../../../raw/processed/Motivation.md)
 - [Inspect clipping](../../../raw/processed/Inspect.md)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 
 ## Related Code
 
@@ -218,6 +223,7 @@ The August 12 raw sources add evaluation-framework and context/harness-separatio
 - Maintained on 2026-07-04 with agent-platform layering, control-plane ownership, and cross-layer trace evidence.
 - Maintained on 2026-07-05 with desktop file-agent permission, folder, edit-preview, and audit-boundary signals.
 - Maintained on 2026-07-06 with chat-agent adapter, security-scanning harness, virtual shell, and recurring workflow instrumentation components.
+- Maintained on 2026-08-14 with approval-hold, pending-metadata, environment-provenance, repository/tool trust-gate, purpose-baseline, and incident-evidence components.
 - Maintained on 2026-07-09 with shared UI-and-MCP operation paths and code-enabled managed-runtime isolation controls.
 - Maintained on 2026-07-10 with bounded loop controls, output-path verification, per-step traces, and harness taxonomy ownership.
 - Maintained on 2026-07-14 with production control components, programmatic tool execution, and proof-loop evidence for delegated completion claims.
