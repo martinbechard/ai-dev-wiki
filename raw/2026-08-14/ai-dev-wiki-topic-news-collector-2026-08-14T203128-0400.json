@@ -1,0 +1,451 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-15T00:31:28Z",
+  "run_timestamp_local": "2026-08-14T20:31:28-0400",
+  "cutoff_window": {
+    "window_hours": 48,
+    "start_utc": "2026-08-13T00:31:28Z",
+    "end_utc": "2026-08-15T00:31:28Z",
+    "date_policy": "Included only public sources with visible publication or update evidence inside the window. Date-only items on the cutoff boundary were excluded unless search-result relative freshness or another visible signal placed them inside the window."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, source workflows, verification, governance, and local adoption patterns.",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general developer tools",
+      "broad techniques"
+    ],
+    "collector_handling": "Entity and product facts are recorded as upstream-owned routing context. Findings retain only local AI-assisted development practice implications."
+  },
+  "search_queries": [
+    "AI-assisted development coding agents prompt instructions MCP governance published August 14 2026",
+    "AI code review agents software engineering evals August 14 2026",
+    "context engineering coding agents durable instructions August 14 2026",
+    "MCP governed practice coding agent approvals audit logs August 14 2026",
+    "site:github.blog copilot coding agent August 14 2026",
+    "site:openai.com codex August 14 2026 coding agent",
+    "site:anthropic.com claude code August 14 2026",
+    "site:blog.jetbrains.com AI Assistant coding agent August 14 2026",
+    "\"August 14, 2026\" \"coding agents\"",
+    "\"August 14, 2026\" \"AI agents\" \"software engineering\"",
+    "\"August 14, 2026\" \"MCP\" \"AI agents\"",
+    "stackoverflow blog \"What is AI context architecture?\" \"August 14, 2026\"",
+    "workos \"Stop giving your coding agent\" \"August 14, 2026\"",
+    "truefoundry \"Human Gate\" \"Published: August 14, 2026\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "github-copilot-weekly-agent-workflows-2026-08-13",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "source_title": "GitHub Copilot weekly releases - August 10",
+      "source_type": "vendor changelog",
+      "visible_dates": [
+        "August 13, 2026",
+        "Search result freshness: 21 hours ago at collection time"
+      ],
+      "date_window_assessment": "Included. Publisher date is the cutoff date, and search-result relative freshness places the item inside the 48-hour window.",
+      "short_factual_summary": "GitHub's weekly Copilot changelog listed portable Agent Plugins 1.0 availability across compatible agent tools, plugin management in the Copilot app, side-chat handling for agent questions, CLI task management for subagents, queued prompts and shell commands, plan-plus-autopilot headless mode, rewind recovery, app context preservation, JetBrains memory support, and pinned prompts in long VS Code chats.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update reinforces practice patterns around portable agent packaging, background task supervision, reversible agent edits, session/context continuity, and keeping human decisions separate from the blocked agent turn.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "Visual Studio Code",
+        "JetBrains",
+        "Ollama",
+        "Kimi K3",
+        "MAI-Code-1.1-Flash"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Agent Plugins 1.0",
+        "Visual Studio Code",
+        "JetBrains",
+        "Ollama",
+        "Kimi K3",
+        "MAI-Code-1.1-Flash"
+      ],
+      "local_practice_implication": "Consider ingest follow-up for portable plugin governance, subagent task queues, reversible agent changes, pinned prompt context, and side-channel approval discussions rather than product catalog details.",
+      "follow_up_notes": "During ingest, route broad Copilot and model availability facts upstream and keep local notes focused on operating controls and workflow structure."
+    },
+    {
+      "id": "github-copilot-grok-policy-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "source_title": "Grok 4.6 is now available in GitHub Copilot",
+      "source_type": "vendor changelog",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "date_window_assessment": "Included. Publisher date is fully inside the collection window.",
+      "short_factual_summary": "GitHub announced Grok 4.6 rollout in GitHub Copilot for multiple clients, with provider-list usage billing, gradual availability, and an enterprise/business administrator policy that is off by default.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is not the model launch itself; it is the need for model-provider enablement policies, usage-billing awareness, and model picker governance across coding-agent clients.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Grok 4.6",
+        "xAI",
+        "Visual Studio Code",
+        "Visual Studio",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent",
+        "GitHub Copilot app",
+        "JetBrains",
+        "Xcode",
+        "Eclipse"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Grok 4.6",
+        "xAI",
+        "Visual Studio Code",
+        "Visual Studio",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent",
+        "GitHub Copilot app",
+        "JetBrains",
+        "Xcode",
+        "Eclipse"
+      ],
+      "local_practice_implication": "Track administrator-off-by-default model policies and provider-billed model routing as adoption and governance concerns for coding-agent programs.",
+      "follow_up_notes": "Ingest should avoid creating a local Grok or Copilot entity leaf; preserve only the governance lens if useful."
+    },
+    {
+      "id": "stackoverflow-context-architecture-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://stackoverflow.blog/2026/08/14/ndq-ai-context-architecture-build-buy/",
+      "source_title": "No Dumb Questions: What is AI context architecture? Why not just build your own?",
+      "source_type": "public blog interview",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "date_window_assessment": "Included. Publisher date is fully inside the collection window.",
+      "short_factual_summary": "Stack Overflow framed AI context architecture as the system design around what an agent can see, work with, and safely act on. The discussion distinguished context infrastructure, context engineering, and architecture, and emphasized guardrails, constraints, reranking, trust scores, conflict handling, and multi-system enterprise knowledge sources.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update maps directly to local context architecture roots: agent context should be constrained, conflict-aware, ranked by trust, and designed before teams rely on retrieval volume alone.",
+      "named_entities": [
+        "Stack Overflow",
+        "Stack Internal",
+        "Slack",
+        "Microsoft Teams",
+        "Google Drive",
+        "SharePoint",
+        "Confluence",
+        "GitHub",
+        "Jira"
+      ],
+      "upstream_owned_entities": [
+        "Stack Overflow",
+        "Stack Internal",
+        "Slack",
+        "Microsoft Teams",
+        "Google Drive",
+        "SharePoint",
+        "Confluence",
+        "GitHub",
+        "Jira"
+      ],
+      "local_practice_implication": "Possible follow-up for context-router and retrieval pages: distinguish context architecture decisions from infrastructure mechanics and require trust/conflict policies for enterprise source ingestion.",
+      "follow_up_notes": "Route Stack product background upstream; local synthesis should focus on durable context architecture practice."
+    },
+    {
+      "id": "workos-coding-agent-context-window-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://workos.com/blog/coding-agent-context-window-compaction-settings",
+      "source_title": "Stop giving your coding agent a million-token context window",
+      "source_type": "technical practice blog",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "date_window_assessment": "Included. Publisher date is fully inside the collection window.",
+      "short_factual_summary": "WorkOS argued that a coding agent's effective context window should be derived from compaction threshold and response runway rather than from the model's maximum context capacity. The article described reserve and keep-recent compaction settings, per-model contextWindow configuration, and the need to verify behavior against the agent version in use.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is concrete: context capacity should be treated as an engineered operating envelope with compaction, recent-token retention, and model-specific verification, not as a bigger-is-always-better knob.",
+      "named_entities": [
+        "WorkOS",
+        "pi",
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "upstream_owned_entities": [
+        "WorkOS",
+        "pi",
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "local_practice_implication": "Consider a future raw ingest into context selection/compaction and verification pages for version-verified compaction settings and response-runway guidance.",
+      "follow_up_notes": "Do not copy tool-specific defaults as universal guidance without retaining the version caveat."
+    },
+    {
+      "id": "truefoundry-mcp-human-gate-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.truefoundry.com/pt/blog/mcp-tool-approval-human-gate-call-path",
+      "source_title": "The Human Gate: Designing MCP Tool Approvals at the Gateway Boundary",
+      "source_type": "technical practice blog",
+      "visible_dates": [
+        "Published: August 14, 2026"
+      ],
+      "date_window_assessment": "Included. Publisher date is fully inside the collection window.",
+      "short_factual_summary": "TrueFoundry described MCP approval gating as an implementation-level gateway pattern rather than something standardized by MCP itself. The flow holds a matched tools/call, creates or reuses an approval request, returns agent-legible pending metadata, and releases execution after a human decision. The article emphasized requester scoping, one-execution versus time-based validity, denial as ephemeral, and correlatable audit linkage rather than a self-contained compliance record.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a strong local governance pattern: approval should be enforced at a shared tool boundary with narrow requester/tool scope, clear metadata semantics, and honest audit claims.",
+      "named_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "MCP 2026-07-28 Tools specification"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "MCP 2026-07-28 Tools specification"
+      ],
+      "local_practice_implication": "Potential ingest target for MCP scoped authorization, approval evidence, and application harness patterns.",
+      "follow_up_notes": "Route protocol and vendor background upstream; keep local page updates to approval-boundary design and audit-evidence wording."
+    },
+    {
+      "id": "aimultiple-code-execution-mcp-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://aimultiple.com/code-execution-with-mcp",
+      "source_title": "Code Execution with MCP: A New Approach to AI Agent Efficiency",
+      "source_type": "benchmark/practice article",
+      "visible_dates": [
+        "updated on Aug 14, 2026",
+        "APA citation date: August 14, 2026"
+      ],
+      "date_window_assessment": "Included. Visible update and citation dates are fully inside the collection window.",
+      "short_factual_summary": "AIMultiple compared regular MCP, where full tool definitions and intermediate data enter the model context, with a code-execution approach where the model writes sandboxed code to call tools while only compact tool names and summaries enter context. In its limited test, the code-execution approach reported the same success rate with substantially lower input-token use, while increasing output-token use and adding sandbox/code-quality caveats.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is to evaluate MCP tool exposure as context architecture: large tool catalogs may need progressive disclosure, sandbox boundaries, and benchmarked cost/accuracy tradeoffs instead of loading all schemas into the prompt.",
+      "named_entities": [
+        "AIMultiple",
+        "Model Context Protocol",
+        "Anthropic",
+        "Bright Data",
+        "GPT-4.1",
+        "LangGraph",
+        "Google Agent Development Kit",
+        "Agent2Agent",
+        "OpenAI Agents SDK"
+      ],
+      "upstream_owned_entities": [
+        "AIMultiple",
+        "Model Context Protocol",
+        "Anthropic",
+        "Bright Data",
+        "GPT-4.1",
+        "LangGraph",
+        "Google Agent Development Kit",
+        "Agent2Agent",
+        "OpenAI Agents SDK"
+      ],
+      "local_practice_implication": "Potential ingest target for progressive MCP discovery, RAG/tool governance, and evaluation pages, with caution that the benchmark has only two query types and one tested model.",
+      "follow_up_notes": "Preserve the limitation notes during ingest; do not generalize the token savings beyond similar tool-heavy workflows."
+    },
+    {
+      "id": "claude-status-code-runtime-2026-08-14",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://status.claude.com/",
+      "source_title": "Claude Status",
+      "source_type": "public status page",
+      "visible_dates": [
+        "Aug 14, 2026 00:36 UTC",
+        "Aug 14, 2026 00:51 UTC",
+        "Aug 14, 2026 20:30 UTC",
+        "Aug 14, 2026 20:44 UTC",
+        "Aug 14, 2026 21:58 UTC"
+      ],
+      "date_window_assessment": "Included. Exact UTC status timestamps are inside the collection window.",
+      "short_factual_summary": "The public status page recorded resolved disruptions affecting Claude Code on the web and related services, and a later service disruption affecting Claude API, Claude Code, and Claude Cowork, with visible UTC investigation, monitoring, and resolution timestamps.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is operational: coding-agent workflows need provider-status awareness, retry/defer language, recovery handoffs, and contingency plans for sessions that depend on hosted agents or model services.",
+      "named_entities": [
+        "Anthropic",
+        "Claude API",
+        "Claude Code",
+        "Claude Cowork",
+        "Claude Code Mobile",
+        "Cowork Remote",
+        "Routines"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude API",
+        "Claude Code",
+        "Claude Cowork",
+        "Claude Code Mobile",
+        "Cowork Remote",
+        "Routines"
+      ],
+      "local_practice_implication": "Potential ingest target for source-workflow and adoption pages covering status checks, fallback agents, and workflow pause/resume evidence.",
+      "follow_up_notes": "This is not a product update; keep it as runtime dependency evidence only if ingesting."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://blog.jetbrains.com/idea/2026/08/how-to-use-ai-agents-in-intellij-idea-with-acp/",
+      "source_title": "How to Use AI Agents in IntelliJ IDEA With ACP",
+      "visible_dates": [
+        "August 12, 2026"
+      ],
+      "reason": "Outside the strict 48-hour window. The content is locally relevant to ACP boundaries, agent subprocesses, JSON-RPC, progress updates, file operations, permission requests, MCP exposure, and custom internal agents, but the visible publication date predates the cutoff."
+    },
+    {
+      "source_url": "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "source_title": "Welcome to the internet in 2026, where AI agents are both victim and attacker in malware wars",
+      "visible_dates": [
+        "Published 12 August 2026"
+      ],
+      "reason": "Outside the strict 48-hour window. The article is locally relevant to package-install risk, malicious skill/MCP server discovery, and agent autonomy controls, but its visible publication date predates the cutoff."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/ai-next-data-grab-work-reinforcement-learning-environments-google-meta-2026-8",
+      "source_title": "Forget Chatbot Training. AI's Next Big Data Grab Is About How We Work.",
+      "visible_dates": [
+        "Search result: Published 2 days ago"
+      ],
+      "reason": "Excluded as boundary/ambiguous. The source is relevant to software-engineering RL environments and workplace activity data, but no precise visible publication timestamp was available in the opened page to prove it falls after the cutoff."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+      "source_title": "Linus Torvalds says 'huge' Linux kernel updates are now the status quo - and it's all thanks to AI",
+      "visible_dates": [
+        "Published 13 August 2026"
+      ],
+      "reason": "Excluded as cutoff-date ambiguous. The publication date is the boundary date without a visible time; the underlying kernel messages discussed older August 9 activity. The item is relevant to AI-assisted code review volume and maintainer load, but not direct-date-verifiable inside the window."
+    },
+    {
+      "source_url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+      "source_title": "Auto mode is now the default in Claude Code for Pro, Max, and Team",
+      "visible_dates": [
+        "Search result: 8 days ago",
+        "Effective date mentioned: Aug 14, 2026"
+      ],
+      "reason": "Excluded because the source was published before the window. The August 14 date is an effective-date event, not visible evidence that the page was published or updated during the last two days."
+    },
+    {
+      "source_url": "https://devops.com/microsoft-decouples-ai-agents-from-the-vs-code-editor-in-latest-release/",
+      "source_title": "Microsoft Decouples AI Agents From the VS Code Editor in Latest Release",
+      "visible_dates": [
+        "Search result: By Tom Smith on August 14, 2026"
+      ],
+      "reason": "Excluded because direct page verification was not available during collection. Search snippet suggests relevance to agent-host isolation and protocol interoperability, but the collector could not open and verify the article body."
+    },
+    {
+      "source_url": "https://www.linkedin.com/pulse/ai-digest-august-13-2026-edward-wong-tgz5c",
+      "source_title": "AI Digest - August 13, 2026",
+      "visible_dates": [
+        "August 13, 2026"
+      ],
+      "reason": "Excluded because the accessible snippet primarily summarized upstream-owned entity news and lacked enough direct local practice detail for this downstream collector."
+    },
+    {
+      "source_url": "https://www.antisyphontraining.com/event/ai-summit/",
+      "source_title": "Infosec: Age of AI Summit",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "reason": "Excluded as event listing rather than a published practice update. No durable AI-assisted development practice facts were visible."
+    },
+    {
+      "source_url": "https://about.ads.microsoft.com/content/msa-about/global/en/resources/discover/case-studies/realtor-customer-success-story.html",
+      "source_title": "Realtor.com automates search insights in seconds with AI agents built on Microsoft Advertising MCP",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "reason": "Excluded as product/customer-story coverage primarily owned upstream. Local implication for governed MCP access was too narrow in the visible snippet to qualify without further direct verification."
+    },
+    {
+      "source_url": "https://home.mlops.community/public/events",
+      "source_title": "Coding Agents Lunch & Learn Session 21: Evaluating MCP Tools for Real-World Agent Workflows",
+      "visible_dates": [
+        "August 14, 2026"
+      ],
+      "reason": "Excluded as an event listing. The topic is relevant, but no substantive practice update was visible."
+    },
+    {
+      "source_url": "https://benchlm.ai/benchmarks/aacodingagents",
+      "source_title": "AA Coding Agents Leaderboard & Scores - August 2026",
+      "visible_dates": [
+        "Data refreshed August 14, 2026"
+      ],
+      "reason": "Excluded as broad benchmark/model leaderboard coverage owned upstream. No local evaluation-method practice detail was visible in the snippet beyond model ranking metadata."
+    },
+    {
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "source_title": "AI Agents News - Week of August 14, 2026",
+      "visible_dates": [
+        "1 hour ago",
+        "Week of August 14, 2026"
+      ],
+      "reason": "Excluded as aggregator coverage of upstream-owned agent/product news. The visible snippet did not provide enough direct local AI-assisted development practice evidence."
+    }
+  ],
+  "summary_counts": {
+    "qualifying_update_count": 7,
+    "excluded_candidate_count": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "wiki_page_updates": [],
+  "blockers": [],
+  "follow_up_notes": [
+    "Raw-only collector artifact; do not move to raw/processed until a separate ingest workflow synthesizes it.",
+    "During ingest, keep broad product, company, model, protocol, and tool background routed to the upstream AI wiki.",
+    "Highest-signal local practice candidates: portable plugin governance, subagent task queues, context-window compaction policy, context trust/conflict handling, MCP gateway approvals, and provider-status-aware agent workflow recovery."
+  ]
+}
