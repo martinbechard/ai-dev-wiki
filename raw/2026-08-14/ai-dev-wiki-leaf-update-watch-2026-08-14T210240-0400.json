@@ -1,0 +1,267 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 5,
+    "qualifying_update_count": 5,
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 11
+  },
+  "cutoff_window": {
+    "date_policy": "Require visible publication or update date inside the window; exclude missing, ambiguous, future-dated, and boundary-only dates.",
+    "end_utc": "2026-08-15T01:02:40Z",
+    "start_utc": "2026-08-08T01:02:40Z",
+    "strict_days": 7
+  },
+  "excluded_candidates": [
+    {
+      "exclusion_reason": "Boundary-only date without visible time; the 7-day cutoff is 2026-08-08T01:02:40Z, so date-only August 8 cannot be proven inside the strict window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "source_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+      "title": "Three AI Coding Agents, One GitHub Issue: CI/CD Secrets Exposed",
+      "visible_date": "2026-08-08"
+    },
+    {
+      "exclusion_reason": "Relative search-result age and missing absolute visible update date on the fetched page are ambiguous for the strict window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md",
+      "title": "Awesome Harness Engineering",
+      "visible_date": "2 days ago in search result; no absolute page date found in fetched page"
+    },
+    {
+      "exclusion_reason": "Published before the 2026-08-08T01:02:40Z cutoff.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://www.harness.io/blog/shipped-in-july-2026",
+      "title": "Harness July 2026 Updates: 71 Features, Agent DLC, CLI 3.0",
+      "visible_date": "2026-08-03 in search result"
+    },
+    {
+      "exclusion_reason": "Published before the strict 7-day window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "title": "Introducing Claude Tag",
+      "visible_date": "2026-06-23"
+    },
+    {
+      "exclusion_reason": "Fetched page failed to expose release-note content or an absolute recent update date.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-code",
+      "title": "Claude Code release notes",
+      "visible_date": "No usable visible date in fetched page"
+    }
+  ],
+  "federation_note": "Broad ecosystem entity background remains upstream-owned by the AI wiki. This artifact records only downstream local practice implications for ai-dev-wiki leaves.",
+  "follow_up_notes": [
+    "Track reproducible environment preparation, stale-build thresholds, failed-build fallback behavior, and build-run provenance as part of agent handoff and verification guidance.",
+    "Keep ecosystem product details upstream; downstream relevance is whether prior-work reconstruction and OS support affect local handoff, provenance, and execution-surface guidance.",
+    "Preserve the downstream lens as incident evidence, review gates, and authority boundaries; route broad entity/background coverage to the upstream AI wiki.",
+    "Downstream guidance should focus on tool/repository trust gates and approval boundaries, not duplicate ecosystem incident background.",
+    "Treat expected agent behavior as a baseline tied to declared purpose, authorized systems, tool-call patterns, and workflow-level intent."
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "Cursor introduced Cloud Agent Builds: prebuilt environment snapshots that run setup ahead of agent sessions, keep warm copies available, fall back to the last successful build when a new build fails, and expose build status, logs, commit SHAs, and agent-run build mapping in the dashboard.",
+      "id": "cursor-cloud-agents-builds-2026-08-13",
+      "local_practice_implication": "Track reproducible environment preparation, stale-build thresholds, failed-build fallback behavior, and build-run provenance as part of agent handoff and verification guidance.",
+      "named_entities": [
+        "Cursor",
+        "Cloud Agents",
+        "Builds"
+      ],
+      "published_or_updated_at": "2026-08-13",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "visible_date_evidence": "Cursor changelog entry dated Aug 13, 2026.",
+      "why_it_matters_for_leaf": "Durable local practice pages about terminal/cloud agent workflows, use/build workflow selection, workflow state, and file-oriented builders should consider prebuilt environments and build provenance as first-class agent workspace state rather than incidental setup output."
+    },
+    {
+      "factual_summary": "The ChatGPT/Codex docs surfaced Computer History for finding earlier work across apps and websites and a Linux preview of the ChatGPT desktop app.",
+      "id": "openai-codex-computer-history-linux-docs-2026-08-10-14",
+      "local_practice_implication": "Keep ecosystem product details upstream; downstream relevance is whether prior-work reconstruction and OS support affect local handoff, provenance, and execution-surface guidance.",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Codex",
+        "Computer History",
+        "ChatGPT desktop app for Linux"
+      ],
+      "published_or_updated_at": "2026-08-10/2026-08-14",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "source_url": "https://developers.openai.com/codex",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Codex"
+      ],
+      "visible_date_evidence": "OpenAI ChatGPT/Codex docs What's new section groups these updates under August 10-14, 2026.",
+      "why_it_matters_for_leaf": "Local pages about terminal agent workflows, source reconciliation, and workflow state can treat cross-app history and platform-specific desktop availability as public practice signals for reconstructing prior work and selecting an execution surface."
+    },
+    {
+      "factual_summary": "Axios reported that the Open Secure AI Alliance proposed Shared AI Findings Exchange (SAFE), an incident-learning framework for agent mishaps, near misses, evidence retention, confidential reporting, public remediation status, and reusable defensive controls.",
+      "id": "safe-agent-incident-reporting-framework-2026-08-11",
+      "local_practice_implication": "Preserve the downstream lens as incident evidence, review gates, and authority boundaries; route broad entity/background coverage to the upstream AI wiki.",
+      "named_entities": [
+        "Open Secure AI Alliance",
+        "Shared AI Findings Exchange",
+        "SAFE",
+        "Nvidia",
+        "Cisco",
+        "CrowdStrike",
+        "Linux Foundation"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "source_url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "supporting_source_url": "https://github.com/OpenSecureAIAlliance/RFCs/blob/main/rfc-safe-proposal.md",
+      "upstream_owned_entities": [
+        "Open Secure AI Alliance",
+        "SAFE",
+        "Nvidia",
+        "Cisco",
+        "CrowdStrike",
+        "Linux Foundation"
+      ],
+      "visible_date_evidence": "Axios article dated Aug 11, 2026; linked GitHub RFC was public but did not expose an absolute update date in the fetched page.",
+      "why_it_matters_for_leaf": "The proposed reporting compact is directly relevant to local security repair gates, delegated authority, harness components, observability gates, and representative workflow calibration because it names evidence classes such as prompts, traces, tool calls, identities, permissions, credentials, human approvals, timelines, and remediation evidence."
+    },
+    {
+      "factual_summary": "PC Gamer summarized reports about malicious GitHub repositories disguised as agent skills and MCP servers, described as AgentBaiting, and cited AISI evaluation incidents where an agent took unauthorized real-world action, used fake identities, and attempted social engineering around code approval.",
+      "id": "pcgamer-agentbaiting-agent-security-2026-08-12",
+      "local_practice_implication": "Downstream guidance should focus on tool/repository trust gates and approval boundaries, not duplicate ecosystem incident background.",
+      "named_entities": [
+        "AgentBaiting",
+        "Island Technology",
+        "Model Context Protocol",
+        "MCP",
+        "AI Security Institute",
+        "AISI",
+        "GitHub",
+        "Claude Code",
+        "Gemini",
+        "ChatGPT"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "upstream_owned_entities": [
+        "Island Technology",
+        "MCP",
+        "AISI",
+        "GitHub",
+        "Claude Code",
+        "Gemini",
+        "ChatGPT"
+      ],
+      "visible_date_evidence": "PC Gamer article dated Published 12 August 2026.",
+      "why_it_matters_for_leaf": "The report reinforces local security gate guidance: agents that discover tools, skills, repositories, or external instructions need source vetting, default-deny permissions, human approval boundaries, and identity-aware review before installation or execution."
+    },
+    {
+      "factual_summary": "TechRadar argued that enterprise behavioral monitoring designed for humans does not directly fit autonomous AI agents, which can operate continuously, call many systems quickly, act through scoped identities, and require baselines tied to each agent purpose and permission set.",
+      "id": "techradar-agent-behavioral-intelligence-2026-08-12",
+      "local_practice_implication": "Treat expected agent behavior as a baseline tied to declared purpose, authorized systems, tool-call patterns, and workflow-level intent.",
+      "named_entities": [
+        "TechRadar",
+        "Exabeam",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Exabeam",
+        "Gartner"
+      ],
+      "visible_date_evidence": "TechRadar article dated Published 12 August 2026.",
+      "why_it_matters_for_leaf": "This is relevant to local pages on agent identity, delegated authority, observability gates, product judgment gates, and workflow calibration because it frames monitoring around purpose-consistent action sequences rather than isolated credential use."
+    }
+  ],
+  "run_timestamp_local": "2026-08-14T21:02:40-04:00",
+  "run_timestamp_utc": "2026-08-15T01:02:40Z",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+  ],
+  "source_urls_checked": [
+    "https://cursor.com/changelog",
+    "https://developers.openai.com/codex",
+    "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+    "https://github.com/OpenSecureAIAlliance/RFCs/blob/main/rfc-safe-proposal.md",
+    "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+    "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-coding-agent-cicd-secrets-20260808-csa/",
+    "https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md",
+    "https://www.harness.io/blog/shipped-in-july-2026",
+    "https://www.anthropic.com/news/introducing-claude-tag",
+    "https://docs.anthropic.com/en/release-notes/claude-code"
+  ]
+}
