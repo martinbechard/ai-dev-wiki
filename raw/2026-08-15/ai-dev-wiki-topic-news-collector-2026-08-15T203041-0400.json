@@ -1,0 +1,271 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": {
+    "local": "2026-08-15T20:30:41-04:00",
+    "utc": "2026-08-16T00:30:41Z"
+  },
+  "cutoff_window": {
+    "start_utc": "2026-08-14T00:30:41Z",
+    "end_utc": "2026-08-16T00:30:41Z",
+    "policy": "Included only public web sources with visible publication or update dates inside the two-day window. Date-only August 14 sources were accepted because the visible date falls inside the UTC window after the cutoff date; date ranges, relative-only dates, stale crawls, and out-of-window dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general AI techniques"
+    ],
+    "handling": "Named vendors, products, models, frameworks, protocols, and developer tools are recorded as upstream-owned entities. Findings retain only the local AI-assisted development practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Grok 4.6 rolls into GitHub Copilot with admin-gated access",
+      "source_url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "source_type": "vendor changelog",
+      "visible_date": "August 14, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "GitHub announced that Grok 4.6 is rolling out in GitHub Copilot for multiple IDEs, Copilot CLI, Copilot cloud agent, and the Copilot app. The post says the model is intended for agentic coding and longer multi-step workflows, uses provider list pricing under usage-based billing, and is off by default for Copilot Business and Enterprise administrators until enabled in Copilot settings.",
+      "why_it_matters": "Model availability for coding agents is an operating-policy event, not just a product update. Teams need explicit model enablement, usage-budget review, and workflow-specific validation before allowing a new long-horizon coding model into shared agent runs.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Grok 4.6",
+        "xAI",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Grok 4.6",
+        "xAI",
+        "Visual Studio Code"
+      ],
+      "local_practice_implication": "Record as a governance and adoption note for model rollout gates: new model choices should require admin enablement evidence, billing awareness, and regression checks on representative agent workflows."
+    },
+    {
+      "title": "Self-hosted software-factory setup emphasizes split-plane boundaries",
+      "source_url": "https://www.warp.dev/articles/how-to-set-up-self-hosted-software-factory",
+      "source_type": "vendor practice guide",
+      "visible_date": "August 14, 2026",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Warp described a six-decision setup sequence for self-hosted software factories: orchestration ownership, execution location, outbound access, inference source, first intake-to-PR workflow, and data-exhaust storage. The guide separates execution, orchestration, model inference, and session records, and calls out worker pinning, per-role credentials, egress allowlists, retained eval data, and human fallback as explicit design choices.",
+      "why_it_matters": "Agent infrastructure decisions need to be documented before provisioning. The practice update reinforces split-plane architecture, egress review, scoped credentials, and one-workflow rollout as governance controls for AI-assisted development factories.",
+      "named_entities": [
+        "Warp",
+        "Warp Factories",
+        "Factory MCP",
+        "Claude Code",
+        "Codex",
+        "Linear",
+        "Slack",
+        "Kubernetes",
+        "Docker"
+      ],
+      "upstream_owned_entities": [
+        "Warp",
+        "Warp Factories",
+        "Factory MCP",
+        "Claude Code",
+        "Codex",
+        "Linear",
+        "Slack",
+        "Kubernetes",
+        "Docker"
+      ],
+      "local_practice_implication": "Use as downstream evidence for deployment-boundary checklists: local guidance should distinguish code/workspace residency, orchestration metadata, inference data, session transcripts, evals, memories, and per-role secrets."
+    },
+    {
+      "title": "CI-red coding-agent incident proposes milestone gates",
+      "source_url": "https://www.shopclawmart.com/daily/our-coding-agent-celebrated-success-while-ci-burned-red-for-three-hours",
+      "source_type": "practice incident note",
+      "visible_date": "Issue #308 August 15, 2026",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "The note describes a coding agent loop that treated successful command exit codes as deployment success while CI tests were failing. It identifies a milestone-gate pattern as the fix for production-shipping coding agents.",
+      "why_it_matters": "Agent verification needs semantic checks against CI/test status, not only shell exit codes or agent self-reports. Milestone gates should assert the externally meaningful state before an agent advances to the next phase.",
+      "named_entities": [
+        "Claw Mart Daily",
+        "CI"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Add to future verification coverage as evidence for milestone gates that inspect test results, deployment state, and pull-request checks rather than trusting the agent's completion narrative."
+    },
+    {
+      "title": "Planning-with-files package publishes persistent agent planning skill",
+      "source_url": "https://pi.dev/packages/planning-with-files",
+      "source_type": "public package listing",
+      "visible_date": "Aug 15, 2026",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "Pi lists planning-with-files version 3.10.1 as an extension and skill published on Aug 15, 2026. The package keeps task_plan.md, findings.md, and progress.md on disk so an agent's plan can survive context loss, compaction, clearing, crashes, and includes a security note warning that Pi packages can execute code and influence agent behavior.",
+      "why_it_matters": "Persistent file-backed planning is becoming a reusable context architecture pattern, but package-installed skills are executable governance surfaces. Teams need source review, version pinning, and package-install risk controls before using third-party planning skills.",
+      "named_entities": [
+        "Pi",
+        "planning-with-files",
+        "Agent Skills",
+        "npm",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Pi",
+        "Agent Skills",
+        "npm",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Route to local context architecture and package-install governance: durable plans can mitigate context loss, but installable skills should be treated as code execution and instruction-surface changes."
+    },
+    {
+      "title": "Unity AI Gateway guide frames governance for agents, MCP services, and skills",
+      "source_url": "https://datapao.com/databricks-unity-ai-gateway/",
+      "source_type": "practice guide",
+      "visible_date": "14 Aug 2026",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "Datapao's guide describes Databricks Unity AI Gateway as a governance layer for models, agents, MCP services, skills, and tools through Unity Catalog. It highlights spend attribution, budgets, rate limits, model routing, PII and prompt-injection guardrails, request and response audit tables, action-level controls, and unified tracing for model calls and MCP tool invocations.",
+      "why_it_matters": "The practice signal is that AI-assisted development governance is moving from static access control toward runtime request control, cost attribution, and auditability across models, tools, and agent actions.",
+      "named_entities": [
+        "Datapao",
+        "Databricks",
+        "Unity AI Gateway",
+        "Unity Catalog",
+        "MCP",
+        "Omnigent"
+      ],
+      "upstream_owned_entities": [
+        "Datapao",
+        "Databricks",
+        "Unity AI Gateway",
+        "Unity Catalog",
+        "MCP",
+        "Omnigent"
+      ],
+      "local_practice_implication": "Use as a governance-and-risk routing note for control-plane patterns: evaluate whether agent tool calls, model requests, cost, approvals, guardrails, and audit trails are visible at runtime rather than only documented in policy."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "How to Integrate AI Coding Agents into a Software Factory Workflow",
+      "source_url": "https://www.warp.dev/articles/integrate-ai-coding-agents-software-factory",
+      "visible_date": "August 13, 2026",
+      "reason": "Out of the strict two-day UTC window as date-only August 13 evidence; a related August 14 Warp source was included instead."
+    },
+    {
+      "title": "AGENTS.md vs. skills: How to steer a coding agent",
+      "source_url": "https://circleci.com/blog/agents-md-vs-skills/",
+      "visible_date": "Aug 11, 2026",
+      "reason": "Out of window. The source is practice-relevant but not published or visibly updated within the required two-day window."
+    },
+    {
+      "title": "OpenAI What's new: August 10-14, 2026",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new",
+      "visible_date": "August 10-14, 2026",
+      "reason": "Date range spans before the cutoff and individual item publication times are not visible. Excluded as ambiguous for strict two-day inclusion."
+    },
+    {
+      "title": "OpenAI ChatGPT & Codex changelog, August 2026 entry",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_date": "2026-08-13",
+      "reason": "Out of window for the visible dated entry surfaced by the page."
+    },
+    {
+      "title": "Anthropic Claude Platform release notes, Compliance API transcripts for Claude Code sessions",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api",
+      "visible_date": "August 11, 2026",
+      "reason": "Out of window even though the audit/transcript topic is locally relevant."
+    },
+    {
+      "title": "Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app",
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "visible_date": "August 12, 2026",
+      "reason": "Out of window and already covered by earlier collector memory."
+    },
+    {
+      "title": "Daily Digest - 2026-08-14",
+      "source_url": "https://www.antoinebuteau.com/daily-digest-2026-08-14/",
+      "visible_date": "Daily Digest - 2026-08-14",
+      "reason": "Secondary digest. It points to older or date-ambiguous primary sources; no independent primary practice update was included from this page."
+    },
+    {
+      "title": "Forget chatbot training. AI's next big data grab is about learning how humans work",
+      "source_url": "https://www.businessinsider.com/ai-next-data-grab-work-reinforcement-learning-environments-google-meta-2026-8",
+      "visible_date": "Published 3 days ago",
+      "reason": "Relative date places it outside or too close to the strict window without a visible exact timestamp; topic is also broad ecosystem coverage."
+    },
+    {
+      "title": "Best AI coding agents in 2026, compared",
+      "source_url": "https://daily.dev/blog/best-ai-coding-agents-comparison/",
+      "visible_date": "8 days ago / published last week",
+      "reason": "Out of window and primarily a tool comparison owned by the upstream ecosystem wiki."
+    },
+    {
+      "title": "The best AI coding agents in 2026",
+      "source_url": "https://www.producthunt.com/categories/ai-coding-agents",
+      "visible_date": "Last updated: Aug 15, 2026",
+      "reason": "Catalog/ranking page with broad product coverage; excluded under federation boundary because product cataloging belongs upstream and no specific local practice update was identified."
+    },
+    {
+      "title": "AI Agent Development Company: Enterprise AI Agents, Agentic AI, and Implementation",
+      "source_url": "https://trytrusted.com/article/ai-agent-development-company-enterprise-ai-agents-agentic-ai-and-implementation",
+      "visible_date": "4 hours ago",
+      "reason": "Relative-only visible freshness in search result and broad vendor/consulting overview; excluded as ambiguous and low-specificity."
+    },
+    {
+      "title": "GLM-5.3: Z.ai Coding Model, Benchmarks & Weights",
+      "source_url": "https://www.eigent.ai/blog/glm-5-3-coding-cyber-model",
+      "visible_date": "Aug 14, 2026 / 23 hours ago",
+      "reason": "Primarily model and benchmark coverage owned upstream. The local implication overlaps with the included GitHub Copilot model-governance finding."
+    }
+  ],
+  "follow_up_notes": [
+    "During ingest, route model, company, product, package, and protocol details to the upstream AI wiki unless the downstream page only needs a practice lens.",
+    "Potential downstream synthesis targets: model enablement policy, self-hosted agent runtime boundaries, milestone gates for CI truth, persistent file-backed planning, and runtime governance/control-plane patterns.",
+    "No docs/wiki pages were updated by this collector. Leave this artifact under raw until a separate ingest workflow synthesizes it and moves it to raw/processed after verification."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for artifact"
+  },
+  "blockers": []
+}
