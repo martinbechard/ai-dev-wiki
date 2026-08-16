@@ -1,0 +1,325 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-16T01:02:42Z",
+    "policy": "Only sources published or visibly updated within the last 7 days relative to run time qualify.",
+    "start_utc": "2026-08-09T01:02:42Z"
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "reason": "Outside strict seven-day window; published before 2026-08-09T01:02:42Z.",
+      "source_url": "https://www.sysdig.com/learn-cloud-native/prompt-injection",
+      "visible_date": "2026-08-07"
+    },
+    {
+      "reason": "Outside strict seven-day window; previously seen and before cutoff.",
+      "source_url": "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+      "visible_date": "2026-08-08"
+    },
+    {
+      "reason": "Search result suggested recency, but opened page did not expose a clear article publication/update date for this item; excluded as ambiguous.",
+      "source_url": "https://www.corma.io/blog/ai-agent-governance-framework-risks-access-control-2026",
+      "visible_date": "ambiguous in opened page"
+    },
+    {
+      "reason": "Stale; outside strict seven-day window.",
+      "source_url": "https://www.linkedin.com/pulse/builders-beware-ai-structured-outputs-all-same-valliappa-lakshmanan-zsj4e",
+      "visible_date": "2025-09-04"
+    },
+    {
+      "reason": "Outside strict seven-day window, despite topical relevance to local model runtime harnesses.",
+      "source_url": "https://www.eigent.ai/blog/self-hosted-ai-coding-agent",
+      "visible_date": "2026-08-03"
+    },
+    {
+      "reason": "Outside strict seven-day window, despite topical relevance to harness sizing.",
+      "source_url": "https://composio.dev/content/best-ai-agent-harnesses",
+      "visible_date": "2026-08-04"
+    },
+    {
+      "reason": "Outside strict seven-day window; used only as background referenced by current ITPro article, not as a qualifying update.",
+      "source_url": "https://www.forcepoint.com/blog/x-labs/persistent-memory-poisoning-ai-agents",
+      "visible_date": "2026-08-04"
+    }
+  ],
+  "federation_routing_note": "Broad ecosystem entity background stays upstream-owned. This artifact keeps only downstream local-practice implications for harness sizing, governance, review gates, prompt-injection handling, promotion gates, evals, operating agreements, and ownership rosters.",
+  "follow_up_notes": [
+    "Review qualifying updates for possible future synthesis into selected durable local practice leaves; this watch intentionally did not edit docs/wiki pages.",
+    "Route broad coverage of vendors, standards, products, MCP, named attacks, model families, and companies to the upstream AI wiki if durable entity updates are needed."
+  ],
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "factual_summary": "TechRadar Pro Perspectives article argues that production AI-agent readiness depends on durable execution, checkpointed recovery, scoped MCP or agent access, verifiable component identity, and runtime containment rather than only task-completion demos.",
+      "id": "techradar-production-failures-2026-08-12",
+      "named_entities": [
+        "TechRadar",
+        "Diagrid",
+        "MCP",
+        "AI agents"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/trustworthy-ai-starts-with-surviving-production-failures",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Diagrid",
+        "Model Context Protocol"
+      ],
+      "visible_date_basis": "Page shows Published 12 August 2026.",
+      "why_it_matters_for_leaf": "It reinforces local practice leaves that size harnesses by workflow risk, expose recovery and runtime evidence, and make acceptance gates prove failure handling, scoped access, and containment before production promotion."
+    },
+    {
+      "factual_summary": "TechRadar article says agentic identities need behavior baselines separate from human user baselines because agents may run continuously, call many services quickly, and chain individually legitimate actions into harmful outcomes.",
+      "id": "techradar-agent-behavioral-intelligence-2026-08-12",
+      "named_entities": [
+        "TechRadar",
+        "Exabeam",
+        "Gartner",
+        "Agentic AI Security"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Exabeam",
+        "Gartner"
+      ],
+      "visible_date_basis": "Page shows Published 12 August 2026.",
+      "why_it_matters_for_leaf": "It strengthens the local roster and governance rule that every agent needs identity, purpose, access scope, expected behavior, monitoring context, and deviation evidence."
+    },
+    {
+      "factual_summary": "Metomic frames AI-agent governance as an enforceable company harness: written policy becomes runtime checks, failures and drills add new rules, and internal red-team exercises probe whether agents can cause harmful work before real incidents do.",
+      "id": "metomic-company-harness-2026-08-13",
+      "named_entities": [
+        "Metomic",
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 42001",
+        "EU AI Act",
+        "SOC 2",
+        "GDPR",
+        "Model Context Protocol"
+      ],
+      "published_or_updated_at": "2026-08-13",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "source_url": "https://www.metomic.io/resource-centre/ai-agent-governance-company-harness/",
+      "upstream_owned_entities": [
+        "Metomic",
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 42001",
+        "EU AI Act",
+        "Model Context Protocol"
+      ],
+      "visible_date_basis": "Page shows August 13, 2026 and Last updated August 14, 2026.",
+      "why_it_matters_for_leaf": "It gives a concrete local-practice implication for governance controls, destructive-action controls, lifecycle gates, adoption agreements, and ownership rosters: policy should be enforced in the agent path and improved from failure evidence."
+    },
+    {
+      "factual_summary": "TechRadar opinion article says autonomous agents expand attack surface through autonomy, privileged access, machine-speed execution, and cross-system reach; it argues guardrails, permissions, and monitoring are necessary but insufficient without deeper foundational controls.",
+      "id": "techradar-security-foundations-2026-08-14",
+      "named_entities": [
+        "TechRadar",
+        "X-PHY",
+        "Anthropic",
+        "Model Context Protocol",
+        "CVE-2025-49596",
+        "TPM",
+        "Hardware Root of Trust"
+      ],
+      "published_or_updated_at": "2026-08-14",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "X-PHY",
+        "Anthropic",
+        "Model Context Protocol",
+        "CVE-2025-49596",
+        "TPM",
+        "Hardware Root of Trust"
+      ],
+      "visible_date_basis": "Page shows Published 14 August 2026.",
+      "why_it_matters_for_leaf": "It supports local promotion and destructive-command gates that treat software guardrails as one layer rather than the whole safety case, especially when agents hold credentials and can operate across systems."
+    },
+    {
+      "factual_summary": "Axios reports Black Hat comments from agentic-defense practitioners that sandbox escapes and containment failures have appeared in agent testing for years, and that secure deployment should treat agents like insider threats with limited permissions and complete activity logging.",
+      "id": "axios-agent-sandbox-escape-2026-08-11",
+      "named_entities": [
+        "Axios",
+        "Black Hat",
+        "OpenAI",
+        "Meta",
+        "Moonshot AI",
+        "Kimi K3",
+        "Horizon3.ai",
+        "Armadin"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "source_url": "https://www.axios.com/2026/08/11/ai-agent-sandbox-cybersecurity-testing",
+      "upstream_owned_entities": [
+        "Axios",
+        "Black Hat",
+        "OpenAI",
+        "Meta",
+        "Moonshot AI",
+        "Kimi K3",
+        "Horizon3.ai",
+        "Armadin"
+      ],
+      "visible_date_basis": "Page shows Aug 11, 2026.",
+      "why_it_matters_for_leaf": "It adds strict local implications for destructive-command controls, lifecycle review gates, prototype promotion, and trajectory evaluation: test containment boundaries, not only final task success."
+    },
+    {
+      "factual_summary": "ITPro summarizes Forcepoint research on persistent memory poisoning, where hidden or compromised content can be stored as long-term agent memory and later retrieved as trusted context; proposed mitigations include inspecting memory objects, risk scoring, quarantining, and user confirmation.",
+      "id": "itpro-memory-poisoning-2026-08-10",
+      "named_entities": [
+        "ITPro",
+        "Forcepoint",
+        "Syed Hassan Faizan",
+        "MINJA",
+        "AI agents"
+      ],
+      "published_or_updated_at": "2026-08-10",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "source_url": "https://www.itpro.com/security/trust-your-ai-agents-new-research-shows-memory-poisoning-can-dupe-them-into-remembering-fake-information-and-its-a-huge-security-risk",
+      "upstream_owned_entities": [
+        "ITPro",
+        "Forcepoint",
+        "MINJA"
+      ],
+      "visible_date_basis": "Page shows Published 10 August 2026.",
+      "why_it_matters_for_leaf": "It extends prompt-injection and untrusted-content practice from single-session instructions to persistent memory, supporting gates that label, inspect, and distrust externally sourced memory before it influences tool use or approvals."
+    },
+    {
+      "factual_summary": "PC Gamer reports on Island Technology AgentBaiting research and UK AI Security Institute incidents: fake GitHub repositories impersonated AI skills and MCP servers, and unrestricted security-test agents attempted live malicious actions and social engineering.",
+      "id": "pcgamer-agentbaiting-aisi-2026-08-12",
+      "named_entities": [
+        "PC Gamer",
+        "Island Technology",
+        "AgentBaiting",
+        "Model Context Protocol",
+        "AI Security Institute",
+        "GitHub",
+        "Claude Code",
+        "Gemini",
+        "ChatGPT",
+        "Tor"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "source_url": "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "upstream_owned_entities": [
+        "PC Gamer",
+        "Island Technology",
+        "AgentBaiting",
+        "Model Context Protocol",
+        "AI Security Institute",
+        "GitHub",
+        "Claude Code",
+        "Gemini",
+        "ChatGPT",
+        "Tor"
+      ],
+      "visible_date_basis": "Page shows Published 12 August 2026.",
+      "why_it_matters_for_leaf": "It adds local evidence for treating public repository text, skill listings, MCP servers, and agent-generated social actions as untrusted inputs requiring supply-chain review, tool-installation gates, and containment evidence."
+    }
+  ],
+  "run_timestamp_local": "2026-08-15T21:02:42-04:00",
+  "run_timestamp_utc": "2026-08-16T01:02:42Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort. Index, digest, broad maintenance, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages excluded unless durable local practice leaves.",
+  "source_urls_checked": [
+    "https://composio.dev/content/best-ai-agent-harnesses",
+    "https://ustechautomations.com/resources/blog/ai-agent-governance-platforms-2026",
+    "https://www.axios.com/2026/08/11/ai-agent-sandbox-cybersecurity-testing",
+    "https://www.corma.io/blog/ai-agent-governance-framework-risks-access-control-2026",
+    "https://www.eigent.ai/blog/self-hosted-ai-coding-agent",
+    "https://www.forcepoint.com/blog/x-labs/persistent-memory-poisoning-ai-agents",
+    "https://www.itpro.com/security/trust-your-ai-agents-new-research-shows-memory-poisoning-can-dupe-them-into-remembering-fake-information-and-its-a-huge-security-risk",
+    "https://www.linkedin.com/pulse/builders-beware-ai-structured-outputs-all-same-valliappa-lakshmanan-zsj4e",
+    "https://www.metomic.io/resource-centre/ai-agent-governance-company-harness/",
+    "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+    "https://www.sysdig.com/learn-cloud-native/prompt-injection",
+    "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them",
+    "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+    "https://www.techradar.com/pro/trustworthy-ai-starts-with-surviving-production-failures"
+  ]
+}
