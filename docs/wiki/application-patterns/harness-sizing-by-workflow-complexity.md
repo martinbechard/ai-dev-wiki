@@ -17,6 +17,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds adjustable reasoning-depth as a runtime sizing control. A complex task can justify stronger reasoning, but the harness should expose the setting, expected task complexity, token or credit budget, and acceptance evidence instead of silently raising effort for every run.
 
+The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds production-failure readiness evidence. Harness sizing should grow when a workflow needs durable execution, checkpoint recovery, scoped MCP access, component identity, behavior baselines, containment testing, activity logging, and memory inspection; a demo-complete harness is undersized when it cannot survive failure or explain recovery.
+
 ## Practice Boundaries
 
 - Size harness controls to action risk, context complexity, duration, and need for recovery.
@@ -26,12 +28,14 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Include managed environment provisioning, restart checks, and artifact persistence when environment readiness is the limiting factor for unattended work.
 - Treat reasoning depth, model effort, and credit budget as harness controls that should scale with task complexity and verification need.
 - Avoid inheriting high-effort settings into routine or low-risk workflows without an explicit cost and quality reason.
+- Include checkpointing, recovery, behavior baselines, scoped access, activity logging, containment tests, and memory inspection when workflow risk moves beyond assisted drafting.
 
 ## Authoritative Sources
 
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [agent environment readiness](agent-environment-readiness.md)
@@ -63,3 +67,4 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Created on 2026-07-28 from July 28 raw evidence about matching harness responsibilities to action and context complexity.
 - Maintained on 2026-07-30 with environment-readiness criteria for setup latency, secrets, restart checks, and artifact persistence.
 - Maintained on 2026-08-04 with adjustable reasoning-depth and credit-budget controls as harness sizing inputs.
+- Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, behavior-baseline, containment, activity-log, and memory-inspection sizing inputs.

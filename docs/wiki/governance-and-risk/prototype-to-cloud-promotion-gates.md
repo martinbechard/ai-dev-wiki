@@ -17,6 +17,8 @@ Promotion is a boundary change, not a cosmetic deployment step. An agent can hel
 
 The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json) and [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) add sensitive-code and execution-security signals. Promotion should require sandbox, network, credential, audit, approval, and provenance checks before coding agents work on production-like repositories, sensitive code, or hosted systems.
 
+The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds production-agent readiness evidence. Promotion should prove durable execution, checkpoint recovery, scoped access, component identity, runtime containment, complete activity logging, behavior baselines, and memory/source quarantine before a prototype or agent workflow is trusted in cloud, enterprise, or externally reachable environments.
+
 ## Practice Boundaries
 
 - Identify whether the app remains local, becomes shared internally, becomes public, or handles sensitive data.
@@ -27,6 +29,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - Keep promotion evidence in the handoff so the owner can see what was checked and what remains unresolved.
 - Require sandbox boundaries, deny-by-default network posture, credential separation, session audit evidence, and human approval before promoting sensitive-code agent workflows.
 - Include execution-boundary hardening in promotion criteria when an agent can run setup commands, generated code, or delegated tools.
+- Require checkpoint recovery, component identity, activity logging, behavior baselines, memory quarantine, and containment evidence before promotion to standing production or cloud-agent operation.
 
 ## Authoritative Sources
 
@@ -36,6 +39,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -63,3 +67,4 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 - Created on 2026-06-23 from public source guidance on security risks when AI-assisted prototypes become hosted, shared, or data-bearing applications.
 - Maintained on 2026-07-08 with sensitive-code sandbox, network, credential, audit, approval, and execution-boundary promotion checks.
+- Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, runtime containment, activity logging, behavior-baseline, and memory-quarantine promotion gates.

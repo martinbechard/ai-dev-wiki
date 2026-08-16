@@ -17,6 +17,8 @@ The August 13 raw sources add follow-on adoption and supply-chain evidence. The 
 
 The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds cross-client plugin lifecycle evidence. Portable package governance should account for app-side plugin management, compatible agent-tool availability, side-channel questions from an agent, queued prompts or shell commands, pinned prompt context, and reversible edit recovery. Locally, these are operating controls around package use and supervision; broad product availability stays upstream-owned.
 
+The August 15 raw sources add installable planning-skill and baiting evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records a file-backed planning package as a reusable context architecture pattern and an executable skill-installation surface. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) records fake repository, skill, and MCP-server baiting risks. Locally, portable package review should verify publisher, source archive, bundled commands, memory and plan-file writes, MCP server declarations, and install-time instructions before a package can influence agent behavior.
+
 Portable packages should not erase artifact boundaries. [Portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md) owns reusable procedure design; [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md) owns skills discovered through MCP; [tool call and MCP governance](tool-call-and-mcp-governance.md) owns runtime tool authorization; this page owns the packaging review that binds those components together.
 
 ## Practice Boundaries
@@ -29,6 +31,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Preserve client enforcement evidence when package availability, MCP allowlists, or permission-bypass settings differ across IDE, CLI, app, or cloud-agent surfaces.
 - Treat repository-hosted skills, plugin packages, and MCP server declarations as supply-chain inputs until provenance, namespace, managed-availability policy, and allowlist evidence are recorded.
 - Treat plugin-management UI, side-channel agent questions, queued commands, pinned prompts, and rewind or recovery features as supervision and audit surfaces when portable packages enter recurring workflows.
+- Review publisher identity, source archive, bundled commands, memory writes, plan-file writes, MCP declarations, and install instructions before an installable skill or plugin package can change agent behavior.
 
 ## Authoritative Sources
 
@@ -38,6 +41,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md)
@@ -71,3 +76,4 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Created on 2026-08-12 from the portable Agent Plugins classification query and August 12 public Agent Plugins adoption evidence.
 - Maintained on 2026-08-13 with portable package policy, repository-skill provenance, MCP allowlist, and client-namespace review evidence.
 - Maintained on 2026-08-14 with plugin-management, side-channel-question, queued-command, pinned-prompt, and recovery-feature supervision evidence.
+- Maintained on 2026-08-15 with installable planning-skill, publisher, source-archive, memory-write, plan-file, MCP-declaration, and repository-baiting package-review evidence.

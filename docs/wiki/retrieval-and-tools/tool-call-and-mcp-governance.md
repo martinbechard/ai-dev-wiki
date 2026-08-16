@@ -75,6 +75,8 @@ The August 9 clipping set adds MCP framework-selection and browser-tool evidence
 
 The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds governed API-to-MCP and citable retrieval evidence. OpenAPI specifications are not automatically agent-safe interfaces; generated or compiled MCP surfaces need least-privilege design, schema review, action-scope review, permission checks, and adapter verification. MCP-backed research or documentation retrieval should also preserve source citations and privacy/data-flow boundaries so tool output remains evidence rather than an unreviewed authority expansion.
 
+The August 15 raw sources add runtime control-plane and tool-installation evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records self-hosted factory egress choices, runtime gateway budgets, rate limits, guardrails, audit tables, action-level controls, and unified tracing. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) records scoped MCP access, verifiable component identity, repository/skill baiting, and tool-installation risk. Locally, MCP and tool governance should treat outbound access, tool identity, generated skills, memory writes, model calls, cost attribution, and audit traces as runtime-enforced control-plane decisions.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -144,6 +146,7 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
 - Treat generated API-to-MCP surfaces as designed adapters that need least-privilege review, schema clarity, permission checks, and verification before agents call them.
 - Preserve citation and privacy-boundary evidence when MCP retrieval supplies sources to an agent workflow.
+- Treat egress allowlists, runtime budgets, rate limits, guardrails, action-level controls, component identity, skill-install provenance, memory writes, and unified traces as MCP/tool control-plane evidence.
 
 ## Authoritative Sources
 
@@ -199,6 +202,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - [FastMCP 2.0 clipping](../../../raw/processed/Welcome to FastMCP 2.0!.md)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -230,6 +235,7 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-07-23 with stateless MCP, gateway-selection, filtered discovery, per-tool authorization, logging, and secret-scanning guidance.
 - Maintained on 2026-07-30 with resource-scoped MCP authorization, read/write separation, sandbox permission evidence, and exact approval-to-execution payload matching.
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.

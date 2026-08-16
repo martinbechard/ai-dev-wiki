@@ -47,6 +47,8 @@ The August 11 raw sources add IDE and workflow operating-record telemetry. The [
 
 The August 14 raw sources add approval, queue, build, service-health, and behavior telemetry. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records side-channel agent questions, queued prompts and shell commands, rewind recovery, approval pending states, and hosted service disruptions. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records build status, logs, commit SHAs, run-to-build mapping, incident evidence fields, and purpose-based behavior baselines. Locally, progress surfaces should show whether work is waiting for approval, queued, running on a known environment, degraded by provider status, or deviating from expected behavior.
 
+The August 15 raw sources add runtime control-plane and behavior-intelligence telemetry. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records self-hosted factory session records, retained eval data, CI milestone truth, gateway request and response audit tables, action-level controls, spend attribution, budgets, and unified tracing. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds continuous-agent behavior baselines, activity logging, deviation evidence, and memory-object inspection. Locally, telemetry should show not only progress but whether the run's actions, memory writes, cost, and recovery path match the approved workflow.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -78,6 +80,7 @@ The August 14 raw sources add approval, queue, build, service-health, and behavi
 - Join LLM traces, prompt versions, cost, latency, errors, feedback, product events, and human annotations when quality or release decisions depend on runtime behavior.
 - Join session/debug logs, telemetry export settings, token categories, reasoning effort, compaction, prompt-cache behavior, tool approvals, and fallback routes when they explain runtime behavior or cost.
 - Show side-channel questions, queued prompts, queued shell commands, approval-pending metadata, rewind points, service-health state, build status, build logs, commit SHA, run-to-build mapping, and purpose-baseline deviations when they affect review or acceptance.
+- Join session records, retained eval data, milestone checks, action-level controls, spend attribution, budgets, behavior baselines, activity logs, memory-object inspections, and recovery evidence when an agent can continue or act across systems.
 
 ## Authoritative Sources
 
@@ -105,6 +108,8 @@ The August 14 raw sources add approval, queue, build, service-health, and behavi
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -150,3 +155,4 @@ The August 14 raw sources add approval, queue, build, service-health, and behavi
 - Maintained on 2026-08-07 with LLM trace, prompt-version, product-event, annotation, cost, latency, and quality-regression telemetry joins.
 - Maintained on 2026-08-11 with session/debug logs, token categories, reasoning effort, compaction, prompt-cache, tool-approval, and fallback-route telemetry joins.
 - Maintained on 2026-08-14 with side-channel question, queued-work, approval-pending, rewind, service-health, build-status, commit-SHA, run-to-build, and purpose-baseline telemetry.
+- Maintained on 2026-08-15 with session-record, eval-retention, milestone-check, action-control, spend-attribution, behavior-baseline, memory-inspection, and recovery telemetry.

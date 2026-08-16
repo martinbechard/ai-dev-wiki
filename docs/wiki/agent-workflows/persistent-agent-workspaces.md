@@ -33,6 +33,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds an environment-readiness signal for long-running work. Persistent workspaces should record which setup, secret scope, dependency cache, logs, generated artifacts, and restart evidence make the next run trustworthy, and should not treat a recovered filesystem as current until startup checks confirm it.
 
+The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) adds self-hosted software-factory and file-backed planning evidence. Persistent workspaces should distinguish execution location, orchestration metadata, inference route, retained session records, eval data, plan files, and per-role credentials so a recovered workspace shows which plane owns each state object and which controls apply before resuming work.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -52,6 +54,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Keep durable knowledge artifacts separate from transient chat memory so resumed agents can verify what is current before acting.
 - Pair persistent file storage with sandboxed command execution, and record which durable files are trusted state versus generated artifacts requiring re-verification.
 - Record environment-readiness evidence, secret scope, dependency state, and restart checks before resuming long-running agent work from a persistent workspace.
+- Distinguish workspace files, orchestration records, inference data, session transcripts, eval artifacts, plan files, and per-role secrets before treating persistent workspace state as current.
 
 ## Authoritative Sources
 
@@ -69,6 +72,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 
 ## Related Code
 
@@ -105,3 +109,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Maintained on 2026-07-10 with managed workspace settings, session identifiers, trace links, and durable knowledge artifact boundaries.
 - Maintained on 2026-07-27 with persistent filesystem and sandboxed command-execution pairing guidance.
 - Maintained on 2026-07-30 with environment-readiness and restart evidence for persistent coding-agent workspaces.
+- Maintained on 2026-08-15 with split-plane workspace state, retained session records, eval artifacts, plan files, inference routing, and per-role secret boundaries.

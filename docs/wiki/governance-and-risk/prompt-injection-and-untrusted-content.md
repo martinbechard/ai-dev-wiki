@@ -43,6 +43,8 @@ The [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-d
 
 The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) adds browser and document propagation evidence. AI browser pages, browser extension outputs, connected-app state, and hidden instructions in source documents can steer agents or generated artifacts after the original source is fetched. Locally, browser observations and imported documents should keep source labels, quarantine paths, and action gates before they can authorize generated output, account actions, or cross-document propagation.
 
+The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds persistent memory poisoning and repository/skill baiting evidence. Hidden or compromised content can be stored as long-term memory and later retrieved as trusted context, while fake repositories, skills, or MCP servers can steer agents during installation or onboarding. Locally, memory objects, repository text, skill listings, and MCP onboarding material should remain untrusted evidence until provenance, risk scoring, quarantine, confirmation, and install-policy checks allow reuse.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -76,6 +78,7 @@ The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev
 - Require allowlisted tool surfaces, scoped credentials, controlled egress, and human review when untrusted operational content can steer a coding agent toward persistent configuration or CI side effects.
 - Treat browser pages, browser extension output, connected-app state, and imported documents as untrusted content even when the browser session or document connector is approved.
 - Quarantine hidden or copied instructions from source documents before agent-authored outputs can publish, email, commit, or propagate them into another artifact.
+- Treat persistent memory, repository skill listings, package descriptions, and MCP onboarding text as untrusted source evidence until provenance, quarantine, risk scoring, and explicit install or reuse approval are recorded.
 
 ## Authoritative Sources
 
@@ -100,6 +103,7 @@ The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -144,3 +148,4 @@ The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev
 - Maintained on 2026-07-13 with image-injection, symlink, public-issue, and generated-repository path boundaries.
 - Maintained on 2026-07-16 with automated indirect prompt-injection red-team coverage for browser, tool-output, repository, file, and connected-app surfaces.
 - Maintained on 2026-08-09 with AI browser, browser-extension, connected-app, and carrier-document propagation boundaries.
+- Maintained on 2026-08-15 with persistent-memory poisoning, repository-skill baiting, MCP onboarding, provenance, quarantine, and reuse-approval boundaries.

@@ -19,6 +19,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json) reinforces the same rule from an agent-security checklist lens. High-impact actions should keep authorization outside the model, reduce the available tool and data surface before access is granted, and record retest triggers when prompt, tool, retrieval, memory, policy, or model changes could alter command behavior.
 
+The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds containment and insider-threat evidence for agents with privileged or cross-system reach. Destructive-action controls should not stop at delete-command detection; they should also bound social actions, live security-test actions, lateral service calls, and chained individually legitimate operations that can produce harmful state changes when executed at agent speed.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -27,6 +29,7 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - Route shell-aware parsing, normalization, sandboxing, approval semantics, and command-audit architecture to the upstream shell command safety technique.
 - Require runtime-held approval evidence for destructive or high-impact actions; prompt text and retrieved context are not approval tokens.
 - Rerun destructive-action and high-impact approval tests after prompt, tool, retrieval, memory, policy, model, or permission-surface changes.
+- Treat live security actions, public contact, service-to-service mutation, and chained high-speed operations as high-impact action classes when an agent's privileges make the combined effect destructive.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -66,3 +70,4 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 - Created on 2026-07-17 from public raw artifacts about terminal-agent forced-removal detection and denial reasons, with broader command-safety controls routed to the upstream AI wiki.
 - Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.
 - Maintained on 2026-08-03 with high-impact authorization, tool-surface reduction, and retest-trigger evidence.
+- Maintained on 2026-08-15 with containment, insider-threat, live security-action, public-contact, service-mutation, and chained-operation risk evidence.

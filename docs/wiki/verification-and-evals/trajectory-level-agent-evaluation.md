@@ -53,6 +53,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 
 The August 12 raw sources add evaluation-framework and harness-layer evidence. The [Harbor core concepts clipping](../../../raw/processed/Core Concepts.md), [Harbor motivation clipping](../../../raw/processed/Motivation.md), and [Inspect clipping](../../../raw/processed/Inspect.md) reinforce that trajectory evaluation needs explicit task, dataset, environment, trial, job, solver, scorer, sandbox, log, and tool boundaries. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds a model/context/harness split: a failed agent run should be attributed against retrieved context, permissions, memory, tools, code execution, delegation, environment, and scoring behavior before local practice treats the model as the only failure point.
 
+The August 15 raw sources add containment and milestone-evaluation evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records a CI-red incident and self-hosted factory decisions that require trajectories to preserve execution location, egress, inference route, session records, and eval data. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds sandbox-escape, behavior-baseline, persistent-memory poisoning, and repository/skill baiting evidence. Trajectory evaluation should inspect whether the run stayed inside containment, used approved memories and tools, reached the external milestone, and recorded enough action history to explain deviations.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -81,6 +83,7 @@ The August 12 raw sources add evaluation-framework and harness-layer evidence. T
 - Whether repository-level issue-resolution runs preserve requirement clarification, implicit-requirement recovery, implementation planning, and final patch evidence as separate trajectory stages.
 - Whether the evaluated run preserves task, dataset, environment, trial, job, solver, scorer, sandbox, log, and tool evidence strongly enough to reproduce and attribute the path.
 - Whether model, context, harness, memory, permission, tool, environment, and scorer failures are separated before a trajectory verdict is used to change a workflow.
+- Whether execution location, egress, inference route, session records, eval data, memory writes, containment state, external milestone state, and behavior deviations are visible in the run history.
 
 ## Practice Boundaries
 
@@ -113,6 +116,7 @@ The August 12 raw sources add evaluation-framework and harness-layer evidence. T
 - Convert production traces into trajectory-level regression cases when trace evidence can explain which step, tool call, retrieval span, or prompt version caused the failure.
 - Use intermediate requirement-clarification and implementation-plan evidence when evaluating repository-level issue resolution so implicit-requirement failures are not hidden by final patch scoring.
 - Keep evaluation-framework concepts as local harness evidence while routing broad Harbor, Inspect, benchmark, provider, and sandbox-product coverage upstream.
+- Evaluate whether the trajectory preserved containment boundaries, approved memory/tool provenance, external CI or deployment truth, and behavior-baseline deviations before treating completion as reliable.
 
 ## Authoritative Sources
 
@@ -147,6 +151,8 @@ The August 12 raw sources add evaluation-framework and harness-layer evidence. T
 - [Harbor motivation clipping](../../../raw/processed/Motivation.md)
 - [Inspect clipping](../../../raw/processed/Inspect.md)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -193,3 +199,4 @@ The August 12 raw sources add evaluation-framework and harness-layer evidence. T
 - Maintained on 2026-08-07 with trace-to-regression, component-score, annotation, and release-decision evidence.
 - Maintained on 2026-08-11 with repository-level issue-resolution trajectory checks for requirement clarification, implicit requirements, planning, and final patch evidence.
 - Maintained on 2026-08-12 with Harbor, Inspect, and model/context/harness separation as trajectory failure-attribution evidence.
+- Maintained on 2026-08-15 with execution-location, egress, inference-route, retained-eval, containment, memory-provenance, repository-skill baiting, behavior-baseline, and external-milestone trajectory evidence.

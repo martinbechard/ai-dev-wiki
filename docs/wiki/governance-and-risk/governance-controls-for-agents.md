@@ -66,6 +66,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json) and [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json) reinforce high-capability and browser-agent containment. Higher-capability coding or cybersecurity agents should have isolated test environments, restricted network and tool access, model or artifact protection, monitoring, detection, and pause criteria before work continues. Browser-agent runtimes add authenticated browser sessions, proxies, captcha handling, and page-driven tool output to the control surface; route their runtime specifics through [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md).
 
+The August 15 raw sources reinforce controls as enforceable runtime architecture. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) adds model enablement, self-hosted factory, file-backed planning, CI milestone-gate, and runtime gateway evidence. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds durable execution, scoped MCP access, behavior baselines, company-harness drills, containment failures, persistent memory poisoning, and repository/skill baiting evidence. Locally, agent governance should require admin enablement, cost ownership, egress controls, scoped credentials, auditable session records, memory quarantine, repository-package provenance, and semantic acceptance gates before long-running agents operate across shared systems.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -122,6 +124,7 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - Require real-time monitoring, egress limits, kill-switch paths, and post-run audit review for coding agents that can reach public systems or people.
 - Pause or hold high-capability agent work when containment evidence, network/tool restrictions, monitoring, or detection coverage is not strong enough for the task risk.
 - Treat browser-agent identity, proxy, captcha, and authenticated-session features as governed controls before agents can operate against external websites.
+- Require model-enable evidence, runtime cost attribution, scoped credentials, egress policy, retained session records, memory inspection, repository-package provenance, and semantic CI or deployment gates when agents can run long-lived or cross-system work.
 
 ## Authoritative Sources
 
@@ -171,6 +174,8 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -229,3 +234,4 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 - Maintained on 2026-08-03 with first-class agent records, lifecycle review, inventory, pre-deployment adversarial retest, and evidence-attached release controls.
 - Maintained on 2026-08-06 with source-specific containment guidance for internet access, public contribution attempts, maintainer contact, external messaging, monitoring, and kill-switch controls.
 - Maintained on 2026-08-09 with high-capability pause criteria and browser-agent identity, proxy, captcha, and authenticated-session controls.
+- Maintained on 2026-08-15 with admin model enablement, self-hosted factory controls, scoped access, memory quarantine, repository-package provenance, containment, and semantic acceptance-gate evidence.

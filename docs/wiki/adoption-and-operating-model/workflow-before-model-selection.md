@@ -65,6 +65,8 @@ The August 13 raw sources add workforce-role, audit-harness, operational-data, a
 
 The August 14 raw sources add model-policy, plugin-supervision, environment-readiness, and provider-status inputs. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records administrator-off-by-default model policies, provider-billed routing, portable plugin management, queued agent work, pinned prompts, rewind recovery, and hosted service incidents. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records cloud-agent builds, prior-work reconstruction, incident reporting, repository/tool trust risk, and purpose-based behavioral monitoring. Locally, workflow selection should decide policy enablement, cost ownership, plugin supervision, environment provenance, continuity, and contingency handling before a model or hosted agent route becomes a team default.
 
+The August 15 raw sources add rollout and self-hosting constraints. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records admin-gated coding-model availability, self-hosted software-factory deployment choices, file-backed planning packages, and runtime AI gateway controls. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) reinforces that production agent workflows need durable execution, scoped access, runtime containment, behavior baselines, and governance drills. Locally, workflow selection should decide model enablement, spend owner, execution location, inference route, egress policy, retained evidence, and first workflow before adopting a new agent or factory surface.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -112,6 +114,7 @@ The August 14 raw sources add model-policy, plugin-supervision, environment-read
 - Treat portable plugin availability, agent activity metrics, review-effort controls, ROI dashboards, and realistic work-environment evidence as workflow inputs that need local task fit and governance review before adoption expands.
 - Include review-capacity, AI-evaluation staffing, production-debugging ownership, audit-event design, operational-data exposure, persistent project state, managed-agent controls, and incident history before selecting a recurring agent workflow.
 - Treat administrator-off-by-default models, provider-billed routes, portable plugin management, queued work, pinned prompts, rewind recovery, prebuilt environments, prior-work history, provider status, repository/tool trust, and behavioral baselines as workflow-selection inputs before enabling a recurring agent route.
+- Treat new coding-model availability, self-hosted factory setup, file-backed planning packages, runtime gateways, durable execution, scoped access, and behavior baselines as workflow-selection inputs before expanding long-horizon agent delegation.
 
 ## Authoritative Sources
 
@@ -156,6 +159,8 @@ The August 14 raw sources add model-policy, plugin-supervision, environment-read
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 
 ## Related Code
 
@@ -211,3 +216,4 @@ The August 14 raw sources add model-policy, plugin-supervision, environment-read
 - Maintained on 2026-08-12 with portable package, usage-metric, ROI, realistic-work-environment, and workflow-fit selection inputs.
 - Maintained on 2026-08-13 with workforce-role, audit-harness, operational-data, persistent-project-state, managed-agent, workspace-identity, and incident-history workflow inputs.
 - Maintained on 2026-08-14 with model-policy, provider-billing, plugin-supervision, queued-work, pinned-prompt, rewind, environment-provenance, prior-work-history, provider-status, repository/tool-trust, and behavior-baseline workflow inputs.
+- Maintained on 2026-08-15 with model rollout, self-hosted factory setup, runtime gateway, durable-execution, scoped-access, evidence-retention, and behavior-baseline workflow inputs.
