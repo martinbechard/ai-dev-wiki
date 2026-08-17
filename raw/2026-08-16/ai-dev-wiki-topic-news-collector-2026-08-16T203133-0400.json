@@ -1,0 +1,364 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-17T00:31:33Z",
+  "run_timestamp_local": "2026-08-16T20:31:33-0400",
+  "last_run_timestamp": "2026-08-16T00:30:15.380Z",
+  "cutoff_window": {
+    "start": "2026-08-15T00:31:33Z",
+    "end": "2026-08-17T00:31:33Z",
+    "policy": "Include only public sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, implementation, evaluation, source intake, and adoption implications.",
+    "upstream_scope": "Broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad AI ecosystem techniques owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "collector_decision": "Entity and product developments are recorded only as upstream-owned context unless the source also exposes a local practice implication."
+  },
+  "searches": [
+    {
+      "query": "AI code review agent prompt injection permissions audit logs August 15 2026",
+      "purpose": "Find governance, code review, approval, and audit-log practice updates."
+    },
+    {
+      "query": "coding agents MCP governance approvals audit logs August 15 2026",
+      "purpose": "Find MCP and tool-call governance updates with recent visible dates."
+    },
+    {
+      "query": "context engineering coding agents instructions August 16 2026",
+      "purpose": "Find context architecture and durable-instruction practice updates."
+    },
+    {
+      "query": "AI assisted development TDD evals code review August 16 2026",
+      "purpose": "Find TDD, eval, and review practice updates."
+    },
+    {
+      "query": "site:github.blog/changelog copilot August 15 2026 coding agent",
+      "purpose": "Check for official developer-tool updates while routing broad product coverage upstream."
+    },
+    {
+      "query": "site:anthropic.com/news August 15 2026 Claude Code",
+      "purpose": "Check official coding-agent provider updates while avoiding duplicate upstream entity coverage."
+    },
+    {
+      "query": "\"Aug 16, 2026\" \"coding agent\"",
+      "purpose": "Find exact-date public source candidates."
+    },
+    {
+      "query": "\"Aug 15, 2026\" \"MCP\" \"agent\"",
+      "purpose": "Find exact-date MCP practice candidates."
+    }
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Configuration-driven AI code review gates",
+      "source_url": "https://www.spinach.io/blog/ai-code-review",
+      "source_type": "vendor practice article",
+      "visible_date": "2026-08-16",
+      "date_basis": "Article page displays Aug 16, 2026.",
+      "topics": [
+        "Coding practices",
+        "Verification and evals",
+        "Governance and risk"
+      ],
+      "candidate_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The source frames AI code review as a configurable review layer with rule files, CI or pull-request integration, prioritization of security and logic issues, and measurable review outcomes rather than a generic autocomplete feature.",
+      "why_it_matters": "Local intelligent-code-review guidance can treat AI review as a policy-bearing gate: repository rules, severity filters, review placement, and outcome metrics should be explicit enough for teams to audit.",
+      "named_entities": [
+        "Spinach",
+        "GitHub",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Spinach",
+          "reason": "Company or product coverage belongs upstream; keep only the local review-gate implication."
+        },
+        {
+          "entity": "GitHub",
+          "reason": "Developer-tool ecosystem coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Represent AI code review checks as durable, versioned policy inputs tied to CI or PR gates, with separate handling for security, logic, maintainability, and style findings.",
+      "follow_up_notes": "During ingest, compare against docs/wiki/coding-practices/intelligent-code-review.md and docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md for duplicate coverage before adding new language."
+    },
+    {
+      "title": "Agentic coding requires bounded human review of generated changes",
+      "source_url": "https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/",
+      "source_type": "independent developer analysis",
+      "visible_date": "2026-08-16",
+      "date_basis": "Post URL and page date show 2026/08/16.",
+      "topics": [
+        "Coding practices",
+        "Verification and evals",
+        "Adoption and operating model"
+      ],
+      "candidate_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The author argues that AI-generated code changes shift effort toward reviewing, debugging, and selecting acceptable bug risk, and that higher output volume increases the need for quality gates and reviewer judgment.",
+      "why_it_matters": "The local wiki can use this as practice evidence for verification-tax and acceptance-gate guidance: faster code production does not reduce the need for review budgets, reproducible tests, and explicit acceptance thresholds.",
+      "named_entities": [
+        "Nolan Lawson",
+        "AI-generated code",
+        "code review"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Treat generated-code throughput as a review-capacity planning input; require teams to decide acceptable defect risk, test depth, and reviewer ownership before expanding autonomous implementation loops.",
+      "follow_up_notes": "Likely destinations are docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md and docs/wiki/coding-practices/generated-code-refactoring.md."
+    },
+    {
+      "title": "AI coding workflow report emphasizes prompt quality, context, and pull-request review",
+      "source_url": "https://swizec.com/blog/the-future-of-code-is-here-and-its-fast/",
+      "source_type": "developer practice article",
+      "visible_date": "2026-08-16",
+      "date_basis": "Page displays Aug 16, 2026.",
+      "topics": [
+        "Prompt and instructions",
+        "Context architecture",
+        "Coding practices",
+        "Adoption and operating model"
+      ],
+      "candidate_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The source describes AI-assisted coding speed gains alongside a workflow that depends on clear prompting, contextualizing the task, reviewing generated code, and using normal pull-request practices.",
+      "why_it_matters": "This is a concise practice signal for keeping prompt packages, context selection, and review evidence in the same operating loop instead of treating code generation as a separate activity.",
+      "named_entities": [
+        "Swizec Teller",
+        "AI coding",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Keep request packages and pull-request packaging coupled: the agent prompt should name the goal and constraints, while the PR records what was verified and what still needs human judgment.",
+      "follow_up_notes": "Check overlap with docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md and docs/wiki/coding-practices/fix-branch-and-pr-packaging.md."
+    },
+    {
+      "title": "MCP remote-tool access raises reviewable capability-boundary requirements",
+      "source_url": "https://www.developersdigest.tech/tags/mcp",
+      "source_type": "developer news digest",
+      "visible_date": "2026-08-15",
+      "date_basis": "Digest entry page displays Aug 15, 2026.",
+      "topics": [
+        "Retrieval and tools",
+        "Governance and risk",
+        "Application patterns"
+      ],
+      "candidate_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The MCP digest highlights remote tool integration and cloud-agent connectivity as a current developer concern, including the need to understand which services an agent can reach and how those capabilities are exposed.",
+      "why_it_matters": "Local MCP practice should keep focusing on scoped authorization, tool inventory, approval evidence, and reviewable connector capabilities rather than merely cataloging MCP servers.",
+      "named_entities": [
+        "MCP",
+        "Cloudflare",
+        "developer tools"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "MCP",
+          "reason": "Protocol background and server ecosystem coverage belongs upstream."
+        },
+        {
+          "entity": "Cloudflare",
+          "reason": "Company and product coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "For remote MCP-capable agents, capture a capability manifest, resource scopes, approval class, identity context, and audit evidence before enabling write or deployment tools.",
+      "follow_up_notes": "During ingest, route broad Cloudflare and MCP product facts upstream and keep only capability-boundary practice under docs/wiki/retrieval-and-tools."
+    },
+    {
+      "title": "Multi-agent software-development education stresses modular roles and human oversight",
+      "source_url": "https://opentrain-ai.com/lessons/multi-agent-architectures-for-software-development",
+      "source_type": "educational practice lesson",
+      "visible_date": "2026-08-15",
+      "date_basis": "Lesson page displays Aug 15, 2026.",
+      "topics": [
+        "Agent workflows",
+        "Application patterns",
+        "Adoption and operating model"
+      ],
+      "candidate_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The lesson presents software-development multi-agent architectures as role-specialized systems with planner, coder, tester, reviewer, or manager responsibilities and emphasizes coordination and human oversight.",
+      "why_it_matters": "Local subagent and harness guidance can use the source as practice evidence for explicit role boundaries, handoff artifacts, review loops, and avoiding unowned autonomous work.",
+      "named_entities": [
+        "OpenTrain AI",
+        "multi-agent architectures",
+        "software development agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenTrain AI",
+          "reason": "Company or course-provider background belongs upstream if needed."
+        },
+        {
+          "entity": "multi-agent architectures",
+          "reason": "Broad technique coverage belongs upstream; local scope is workflow and oversight practice."
+        }
+      ],
+      "local_practice_implication": "Document each subagent's authority, expected artifact, verification responsibility, and handoff criteria instead of only describing a model-to-model chain.",
+      "follow_up_notes": "Compare with docs/wiki/agent-workflows/subagent-coordination.md and docs/wiki/application-patterns/agent-harness-components.md."
+    },
+    {
+      "title": "Language-model coding workflows require source-control and rollback discipline",
+      "source_url": "https://simonwillison.net/2026/Aug/15/using-llms-for-code/",
+      "source_type": "independent developer practice article",
+      "visible_date": "2026-08-15",
+      "date_basis": "Post URL and page date show 2026/Aug/15.",
+      "topics": [
+        "Source workflows",
+        "Coding practices",
+        "Prompt and instructions",
+        "Verification and evals"
+      ],
+      "candidate_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The source collects guidance for using LLMs for code, including working in source control, keeping generated changes reviewable, and relying on tests or other checks rather than accepting output blindly.",
+      "why_it_matters": "This reinforces local practice pages that make git state, scoped diffs, tests, and rollback paths prerequisites for AI-assisted coding work.",
+      "named_entities": [
+        "Simon Willison",
+        "LLMs",
+        "source control",
+        "tests"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "LLMs",
+          "reason": "Broad model and technique background belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Before handing coding work to an assistant, require a clean reviewable change boundary, fast verification command, and a rollback path in source control.",
+      "follow_up_notes": "Potentially useful for docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md and docs/wiki/source-workflows/source-reconciliation-and-routing.md."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Context Engineering for Coding Agents",
+      "source_url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "visible_date": null,
+      "reason": "No qualifying visible publication or update date was confirmed during this run, despite strong topical relevance."
+    },
+    {
+      "title": "GitHub changelog search results for Copilot coding agent",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": null,
+      "reason": "Search did not surface a confirmed Aug 15-17, 2026 item with enough local practice signal; broad Copilot product updates are upstream-owned."
+    },
+    {
+      "title": "Anthropic news search for Claude Code",
+      "source_url": "https://www.anthropic.com/news",
+      "visible_date": null,
+      "reason": "No visibly dated in-window Claude Code practice update was confirmed; broad product and model coverage is upstream-owned."
+    },
+    {
+      "title": "OpenAI news search for Codex",
+      "source_url": "https://openai.com/index/",
+      "visible_date": null,
+      "reason": "No visibly dated in-window Codex practice update was confirmed; broad OpenAI product and model coverage is upstream-owned."
+    },
+    {
+      "title": "TechRadar AI coding assistant coverage",
+      "source_url": "https://www.techradar.com/",
+      "visible_date": "2026-08-13",
+      "reason": "Visible date is outside the cutoff window for this run."
+    },
+    {
+      "title": "Boundary-only date-only candidates from August 15",
+      "source_url": null,
+      "visible_date": "2026-08-15",
+      "reason": "Excluded candidates where only a date, not an exact time, was visible and the item appeared near the cutoff boundary without enough confidence."
+    },
+    {
+      "title": "General AI product and model launch stories",
+      "source_url": null,
+      "visible_date": "2026-08-15 to 2026-08-16",
+      "reason": "Excluded when the item was mainly company, model, product, or framework coverage owned by the upstream AI wiki and lacked a concrete downstream practice implication."
+    },
+    {
+      "title": "Search snippets without accessible dated source pages",
+      "source_url": null,
+      "visible_date": null,
+      "reason": "Excluded because snippets alone were not treated as enough evidence for a collector artifact."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 6,
+    "exclusion_count": 8
+  },
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were searched and captured.",
+    "No private repository content, company-internal information, proprietary source, secrets, PII, or local confidential content was sent to external services.",
+    "Local wiki paths are included only as candidate destinations and federation-routing context."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector artifact; normal raw ingest owns synthesis.",
+    "During ingest, check whether each source is already covered by the August 2026 digest or an existing raw/processed collector artifact.",
+    "Route upstream-owned entity background to /Users/martinbechard/dev/ai-wiki/docs/wiki and keep only downstream practice implications locally."
+  ]
+}
