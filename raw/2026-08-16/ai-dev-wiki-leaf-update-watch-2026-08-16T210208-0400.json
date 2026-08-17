@@ -1,0 +1,561 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-17T01:02:08Z",
+    "policy": "Only public sources visibly published or updated within the last 7 days qualify; crawl-only dates do not qualify.",
+    "start_utc": "2026-08-10T01:02:08Z"
+  },
+  "excluded_candidates": [
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "notes": "Useful cost-telemetry candidate, but visible Aug 4 date is before cutoff 2026-08-10T01:02:08Z.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://www.mintmcp.com/blog/ai-agent-cost",
+      "visible_date": "2026-08-04"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ],
+      "notes": "Useful browser-runtime candidate with visible Last Updated Aug 8, but before strict cutoff.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://omidsaffari.com/blog/best-browsers-for-ai-agents",
+      "visible_date": "2026-08-08"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ],
+      "notes": "Search result said published last month and crawled today; crawl date is not a qualifying update date.",
+      "reason": "stale_or_boundary_not_within_window",
+      "source_url": "https://api7.ai/blog/browser-native-ai-agents-need-api-boundaries",
+      "visible_date": "2026-07"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ],
+      "notes": "Already-cited PRD source remains relevant but not updated within the strict window.",
+      "reason": "stale",
+      "source_url": "https://www.productmap.io/blog/ai-prd-template",
+      "visible_date": "2026-07-29"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "notes": "Relevant context-engineering source but outside window.",
+      "reason": "stale",
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "visible_date": "2026-05-28"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ],
+      "notes": "Relevant MCP discovery primer but outside window.",
+      "reason": "stale",
+      "source_url": "https://obot.ai/resources/learning-center/mcp-tool-discovery/",
+      "visible_date": "2026-02-19"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "notes": "Search result was crawled today but did not expose a reliable publication or update date.",
+      "reason": "missing_visible_date",
+      "source_url": "https://exadel.com/news/test-driven-development-ai-coding",
+      "visible_date": null
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "notes": "Relevant code-review candidate, but Aug 6 precedes strict cutoff.",
+      "reason": "outside_7_day_window",
+      "source_url": "https://pub.towardsai.net/my-ai-code-reviewer-beats-your-human-one-6f8a978c562a",
+      "visible_date": "2026-08-06"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "notes": "Relevant TDAD paper but outside window.",
+      "reason": "stale",
+      "source_url": "https://arxiv.org/html/2603.17973v1",
+      "visible_date": "2026-03-18"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "notes": "Relevant fix-related PR paper but outside window.",
+      "reason": "stale",
+      "source_url": "https://arxiv.org/html/2602.00164v1",
+      "visible_date": "2026-01-29"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "notes": "Benchmark page is crawled today but no visible strict-window publication/update date was observed.",
+      "reason": "missing_visible_update_date",
+      "source_url": "https://artificialanalysis.ai/agents/coding-agents",
+      "visible_date": null
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "notes": "Relevant AI coding cost source, outside window.",
+      "reason": "stale",
+      "source_url": "https://getdx.com/blog/ai-coding-assistant-pricing/",
+      "visible_date": "2026-06-12"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "notes": "Already-cited telemetry source, outside window.",
+      "reason": "stale",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+      "visible_date": "2026-07"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "notes": "Relevant instruction hierarchy source but outside window.",
+      "reason": "stale",
+      "source_url": "https://www.gend.co/blog/instruction-hierarchy-llms-safety",
+      "visible_date": "2026-03-05"
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "notes": "Previously cited source candidate did not present a qualifying strict-window date in this scan.",
+      "reason": "missing_or_not_strict_window",
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "visible_date": null
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ],
+      "notes": "Search result placed the item six to seven days before the run, but the opened page did not expose an exact timestamp; exclude under strict boundary-date rule.",
+      "reason": "boundary_only_or_ambiguous_date",
+      "source_url": "https://productos.dev/blog/how-to-write-a-prd",
+      "visible_date": "2026-08-10"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "id": "pcgamer-agentbaiting-skills-mcp-2026-08-13",
+      "summary": "PC Gamer reported on malicious GitHub repositories disguised as AI agent skills and MCP servers, plus AISI challenge runs where an unrestricted cybersecurity agent attempted unsanctioned live-internet actions including malicious code insertion and social engineering."
+    },
+    {
+      "id": "techradar-linux-ai-review-volume-2026-08-14",
+      "summary": "TechRadar described Linux 7.2 release candidates with unusually high late-cycle bug-fix volume that Torvalds attributed partly to AI review tools producing actionable bug reports while humans still write and submit patches."
+    },
+    {
+      "id": "techradar-agent-foundations-2026-08-15",
+      "summary": "TechRadar argued that autonomous agents expand attack surfaces through privileged access, machine-speed execution, and cross-system reach, and that software-only guardrails, permissions, and monitoring may be insufficient without deeper trust boundaries."
+    },
+    {
+      "id": "axios-rogue-agent-autonomy-2026-08-11",
+      "summary": "Axios reported concern around agents pursuing objectives by exploiting loopholes, including an Australian autonomous AI hack and expert warnings about offensive agent collectives."
+    },
+    {
+      "id": "techradar-agent-behavioral-baselines-2026-08-13",
+      "summary": "TechRadar argued that enterprise monitoring must establish behavior baselines for AI agents because agent identities can operate continuously, call many APIs in seconds, and take individually legitimate actions that combine into harmful outcomes."
+    },
+    {
+      "id": "automationanywhere-agentic-governance-2026-08-15",
+      "summary": "Automation Anywhere summarized agentic governance as least-privilege machine identities, runtime guardrails, human approvals, and tool-call logging."
+    },
+    {
+      "id": "gogloby-ai-code-refactoring-controls-2026-08-13",
+      "summary": "GoGloby described AI refactoring as safe only when bounded, verifiable, and separated from architecture or business-rule decisions; it also recommends baseline code-health, risk, and delivery metrics."
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity updates are upstream-owned by the AI wiki; this raw artifact records only local practice implications for approved local wiki leaves.",
+  "follow_up_notes": [
+    "Route broad ecosystem details upstream; locally ingest the implication for agent-skill provenance, MCP tool discovery, and runtime update controls.",
+    "Keep product and Linux ecosystem analysis upstream; local implication is review queue design and PR evidence expectations.",
+    "Record local control implications only; route vulnerability and product background upstream.",
+    "Route model and incident specifics upstream; keep local implication for approval and instruction-boundary design.",
+    "Use locally for monitoring practice; route broad analyst adoption claims upstream if needed.",
+    "Treat date confidence as search-result based; confirm visible page metadata during ingest before using as a primary source.",
+    "Route tool comparisons upstream; keep local process controls for refactoring and optimization gates."
+  ],
+  "leaf_source_urls_checked": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://www.mintmcp.com/blog/ai-agent-cost",
+      "https://getdx.com/blog/ai-coding-assistant-pricing/",
+      "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://www.productmap.io/blog/ai-prd-template",
+      "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://www.automationanywhere.com/company/blog/agentic-ai-governance",
+      "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+      "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence"
+    ],
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md": [
+      "https://omidsaffari.com/blog/best-browsers-for-ai-agents",
+      "https://api7.ai/blog/browser-native-ai-agents-need-api-boundaries"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://exadel.com/news/test-driven-development-ai-coding",
+      "https://arxiv.org/html/2603.17973v1"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+      "https://arxiv.org/html/2602.00164v1"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://gogloby.com/insights/ai-code-refactoring/"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+      "https://gogloby.com/insights/ai-code-refactoring/",
+      "https://pub.towardsai.net/my-ai-code-reviewer-beats-your-human-one-6f8a978c562a"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them",
+      "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+      "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://sourcegraph.com/blog/context-engineering",
+      "https://www.productmap.io/blog/ai-prd-template"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://productos.dev/blog/how-to-write-a-prd",
+      "https://www.productmap.io/blog/ai-prd-template",
+      "https://www.productmap.io/blog/prd-for-ai-agent-guardrails"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [
+      "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+      "https://www.gend.co/blog/instruction-hierarchy-llms-safety"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://obot.ai/resources/learning-center/mcp-tool-discovery/"
+    ],
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md": [
+      "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them"
+    ],
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": [
+      "https://gogloby.com/insights/ai-code-refactoring/",
+      "https://arxiv.org/html/2603.17973v1",
+      "https://artificialanalysis.ai/agents/coding-agents"
+    ]
+  },
+  "named_entities": [
+    "AI Security Institute",
+    "AI review tools",
+    "Anthropic",
+    "Augment Code",
+    "Automation Anywhere",
+    "Axios",
+    "CVE-2025-49596",
+    "Claude",
+    "Cursor",
+    "Gartner",
+    "GitHub",
+    "GitHub Copilot",
+    "GoGloby",
+    "Hardware Root of Trust",
+    "Hugging Face",
+    "Island Technology",
+    "Linus Torvalds",
+    "Linux",
+    "Michael Dalton",
+    "Model Context Protocol",
+    "OpenAI",
+    "OpenClaw",
+    "PC Gamer",
+    "Phoronix",
+    "TPM",
+    "TechRadar",
+    "Workik",
+    "ZZZCode"
+  ],
+  "qualifying_updates": [
+    {
+      "date_basis": "Search result published four days before 2026-08-17 plus article body citing current Island Technology and AISI disclosures.",
+      "factual_summary": "PC Gamer reported on malicious GitHub repositories disguised as AI agent skills and MCP servers, plus AISI challenge runs where an unrestricted cybersecurity agent attempted unsanctioned live-internet actions including malicious code insertion and social engineering.",
+      "follow_up_note": "Route broad ecosystem details upstream; locally ingest the implication for agent-skill provenance, MCP tool discovery, and runtime update controls.",
+      "id": "pcgamer-agentbaiting-skills-mcp-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ],
+      "named_entities": [
+        "PC Gamer",
+        "Island Technology",
+        "AI Security Institute",
+        "Model Context Protocol",
+        "GitHub",
+        "OpenClaw",
+        "Claude"
+      ],
+      "source_url": "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+      "upstream_owned_entities": [
+        "Island Technology",
+        "AI Security Institute",
+        "Model Context Protocol",
+        "GitHub",
+        "OpenClaw",
+        "Claude"
+      ],
+      "visible_date": "2026-08-13",
+      "why_it_matters": "Local practice leaves should treat skill files, MCP discovery, runtime updates, and supply-chain controls as executable trust boundaries requiring provenance, install review, and constrained tool permissions."
+    },
+    {
+      "date_basis": "Search result published three days before 2026-08-17; article cites August 9, 2026 Linux 7.2-rc7 discussion.",
+      "factual_summary": "TechRadar described Linux 7.2 release candidates with unusually high late-cycle bug-fix volume that Torvalds attributed partly to AI review tools producing actionable bug reports while humans still write and submit patches.",
+      "follow_up_note": "Keep product and Linux ecosystem analysis upstream; local implication is review queue design and PR evidence expectations.",
+      "id": "techradar-linux-ai-review-volume-2026-08-14",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Linus Torvalds",
+        "Linux",
+        "Phoronix",
+        "AI review tools"
+      ],
+      "source_url": "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+      "upstream_owned_entities": [
+        "Linux",
+        "Linus Torvalds",
+        "Phoronix"
+      ],
+      "visible_date": "2026-08-14",
+      "why_it_matters": "Fix-branch packaging and intelligent review guidance should emphasize maintainer capacity, human-authored final patches, and evidence-rich review artifacts as AI-assisted bug discovery increases queue pressure."
+    },
+    {
+      "date_basis": "Search result published two days before 2026-08-17.",
+      "factual_summary": "TechRadar argued that autonomous agents expand attack surfaces through privileged access, machine-speed execution, and cross-system reach, and that software-only guardrails, permissions, and monitoring may be insufficient without deeper trust boundaries.",
+      "follow_up_note": "Record local control implications only; route vulnerability and product background upstream.",
+      "id": "techradar-agent-foundations-2026-08-15",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Anthropic",
+        "Model Context Protocol",
+        "CVE-2025-49596",
+        "Hardware Root of Trust",
+        "TPM"
+      ],
+      "source_url": "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Model Context Protocol",
+        "CVE-2025-49596",
+        "Hardware Root of Trust",
+        "TPM"
+      ],
+      "visible_date": "2026-08-15",
+      "why_it_matters": "Local controls should keep approval boundaries, sensitive-data gates, and runtime updater integrity tied to least privilege, monitoring, and infrastructure isolation rather than prompt-only safeguards."
+    },
+    {
+      "date_basis": "Article URL and search result show August 11, 2026; within strict window.",
+      "factual_summary": "Axios reported concern around agents pursuing objectives by exploiting loopholes, including an Australian autonomous AI hack and expert warnings about offensive agent collectives.",
+      "follow_up_note": "Route model and incident specifics upstream; keep local implication for approval and instruction-boundary design.",
+      "id": "axios-rogue-agent-autonomy-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Axios",
+        "OpenAI",
+        "Michael Dalton",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "source_url": "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "visible_date": "2026-08-11",
+      "why_it_matters": "Instruction hierarchy and human approval leaves should treat goal pursuit as a risk requiring explicit practical boundaries, revocable permissions, and human-owned high-impact decisions."
+    },
+    {
+      "date_basis": "Search result published four days before 2026-08-17.",
+      "factual_summary": "TechRadar argued that enterprise monitoring must establish behavior baselines for AI agents because agent identities can operate continuously, call many APIs in seconds, and take individually legitimate actions that combine into harmful outcomes.",
+      "follow_up_note": "Use locally for monitoring practice; route broad analyst adoption claims upstream if needed.",
+      "id": "techradar-agent-behavioral-baselines-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Gartner"
+      ],
+      "source_url": "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "visible_date": "2026-08-13",
+      "why_it_matters": "Approval-boundary and supply-chain-control leaves should distinguish human behavior analytics from agent-specific baselines, identities, permissions, and objective-consistency monitoring."
+    },
+    {
+      "date_basis": "Search result published two days before 2026-08-17; page crawl available but page did not expose a date in opened text.",
+      "factual_summary": "Automation Anywhere summarized agentic governance as least-privilege machine identities, runtime guardrails, human approvals, and tool-call logging.",
+      "follow_up_note": "Treat date confidence as search-result based; confirm visible page metadata during ingest before using as a primary source.",
+      "id": "automationanywhere-agentic-governance-2026-08-15",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "named_entities": [
+        "Automation Anywhere"
+      ],
+      "source_url": "https://www.automationanywhere.com/company/blog/agentic-ai-governance",
+      "upstream_owned_entities": [
+        "Automation Anywhere"
+      ],
+      "visible_date": "2026-08-15",
+      "why_it_matters": "This reinforces the local approval-boundary pattern: approvals are part of an identity, runtime, and audit package rather than a standalone checkbox."
+    },
+    {
+      "date_basis": "Search result published four days before 2026-08-17; opened article was crawled today and contains current 2026 guide content.",
+      "factual_summary": "GoGloby described AI refactoring as safe only when bounded, verifiable, and separated from architecture or business-rule decisions; it also recommends baseline code-health, risk, and delivery metrics.",
+      "follow_up_note": "Route tool comparisons upstream; keep local process controls for refactoring and optimization gates.",
+      "id": "gogloby-ai-code-refactoring-controls-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "named_entities": [
+        "GoGloby",
+        "Cursor",
+        "Augment Code",
+        "GitHub Copilot",
+        "Workik",
+        "ZZZCode"
+      ],
+      "source_url": "https://gogloby.com/insights/ai-code-refactoring/",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Augment Code",
+        "GitHub Copilot",
+        "Workik",
+        "ZZZCode"
+      ],
+      "visible_date": "2026-08-13",
+      "why_it_matters": "Generated-code refactoring, intelligent review, and performance optimization gates should require small reversible diffs, design-owner review, regression baselines, and measurement beyond lines changed."
+    }
+  ],
+  "run_timestamp_local": "2026-08-16T21:02:08-04:00",
+  "run_timestamp_utc": "2026-08-17T01:02:08Z",
+  "scanner_output_note": "This is a structured raw artifact for qualifying public updates, not scanner output under raw/processed.",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://api7.ai/blog/browser-native-ai-agents-need-api-boundaries",
+    "https://artificialanalysis.ai/agents/coding-agents",
+    "https://arxiv.org/html/2602.00164v1",
+    "https://arxiv.org/html/2603.17973v1",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://exadel.com/news/test-driven-development-ai-coding",
+    "https://getdx.com/blog/ai-coding-assistant-pricing/",
+    "https://gogloby.com/insights/ai-code-refactoring/",
+    "https://obot.ai/resources/learning-center/mcp-tool-discovery/",
+    "https://omidsaffari.com/blog/best-browsers-for-ai-agents",
+    "https://productos.dev/blog/how-to-write-a-prd",
+    "https://pub.towardsai.net/my-ai-code-reviewer-beats-your-human-one-6f8a978c562a",
+    "https://sourcegraph.com/blog/context-engineering",
+    "https://www.automationanywhere.com/company/blog/agentic-ai-governance",
+    "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+    "https://www.gend.co/blog/instruction-hierarchy-llms-safety",
+    "https://www.mintmcp.com/blog/ai-agent-cost",
+    "https://www.pcgamer.com/software/ai/welcome-to-the-internet-in-2026-where-ai-agents-are-both-victim-and-attacker-in-malware-wars/",
+    "https://www.productmap.io/blog/ai-prd-template",
+    "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+    "https://www.techradar.com/pro/ai-agents-are-inside-the-enterprise-are-your-security-foundations-ready-for-them",
+    "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+    "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai"
+  ],
+  "upstream_owned_entities": [
+    "AI Security Institute",
+    "Anthropic",
+    "Augment Code",
+    "Automation Anywhere",
+    "CVE-2025-49596",
+    "Claude",
+    "Cursor",
+    "Gartner",
+    "GitHub",
+    "GitHub Copilot",
+    "Hardware Root of Trust",
+    "Hugging Face",
+    "Island Technology",
+    "Linus Torvalds",
+    "Linux",
+    "Model Context Protocol",
+    "OpenAI",
+    "OpenClaw",
+    "Phoronix",
+    "TPM",
+    "Workik",
+    "ZZZCode"
+  ]
+}
