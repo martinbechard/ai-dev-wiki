@@ -24,6 +24,8 @@ Discovery is useful only when it preserves both relevance and control. A discove
 
 The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds a code-execution variant. Some tool-heavy workflows can keep full tool definitions and intermediate data out of active model context by letting the model write sandboxed code that calls tools through compact names or summaries. Locally, this remains a progressive-disclosure pattern only when sandbox limits, code-quality checks, token tradeoffs, and benchmark scope are recorded; limited benchmark gains should not be generalized across all MCP workloads.
 
+The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds an agent-baiting boundary for discovered tools and skills. Discovery should not treat a repository, registry entry, or metadata description as trusted because it advertises an MCP server or skill. The discovered package should remain inert until provenance, tool scope, command behavior, and install intent are reviewed under the same approval evidence used for direct MCP registration.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -33,12 +35,15 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Re-approve discovered tools when their schema, action scope, authentication, or returned-data authority changes.
 - Route remotely discovered skill packages through [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md).
 - Treat code-execution access to tool catalogs as a sandboxed progressive-disclosure variant, with explicit benchmark limits, output-token cost, code-quality review, and least-capability constraints.
+- Keep discovered MCP servers, skills, repositories, and setup helpers inert until provenance, command behavior, install intent, and tool scopes are reviewed.
+- Reject discovery results that try to seed instructions for future agents or request broader tools than the current task and policy allow.
 
 ## Authoritative Sources
 
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [context selection and compaction](../context-architecture/context-selection-and-compaction.md)
@@ -72,3 +77,4 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Created on 2026-07-27 from July 27 raw-source evidence about dynamic MCP mode, meta-tools, scoped permissions, managed OAuth, and API logs.
 - Maintained on 2026-07-28 with remote skill discovery, package-provenance, archive-bound, approval-default, and central-governance controls.
 - Maintained on 2026-08-14 with sandboxed code-execution as a progressive MCP discovery variant and benchmark-scope caveats.
+- Maintained on 2026-08-16 with agent-baiting discovery controls for MCP servers, skills, repositories, setup helpers, and future-agent instruction seeding.

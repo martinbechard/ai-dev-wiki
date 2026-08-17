@@ -23,6 +23,8 @@ The August 13 sources add production-operations evidence for MCP authorization. 
 
 The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds gateway-approval evidence. MCP tool approvals are not standardized by the protocol itself, so local harnesses should enforce approvals at a shared gateway or equivalent boundary, bind the request to requester, tool, resource, payload, and validity window, and return pending or denied states in agent-legible metadata. The same source also reinforces that approval logs are correlatable audit evidence, not a complete compliance record by themselves.
 
+The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds remote-tool capability-boundary evidence. Remote MCP-capable agents should publish a capability manifest before write or deployment tools are enabled. The local approval package should name exposed services, resource scopes, read/write class, identity context, approval class, audit evidence, and revocation path so reviewers can see which external systems the agent can reach.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -38,6 +40,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Enforce human approval at a gateway or equivalent tool boundary when the model proposes consequential MCP calls.
 - Bind approval requests to requester, tool, resource, proposed payload, validity window, denial semantics, and execution result before releasing a held call.
 - Treat approval-request records as correlatable audit evidence that still needs identity, policy, and downstream system logs for full review.
+- Require a capability manifest for remote MCP-capable agents before enabling write, deployment, or production-adjacent tools.
+- Include exposed services, resource scopes, read/write class, identity context, approval class, audit evidence, and revocation path in the authorization record.
 
 ## Authoritative Sources
 
@@ -49,6 +53,7 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
@@ -82,3 +87,4 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Maintained on 2026-08-11 with managed MCP access, permission-bypass, telemetry, and IDE debug-log evidence requirements.
 - Maintained on 2026-08-13 with MCP operational metrics, credential narrowing, transport-security, live-data mutation, and incident-evidence requirements.
 - Maintained on 2026-08-14 with gateway-held MCP approval requests, requester/tool/resource/payload scope, validity windows, denial semantics, and audit-linkage guidance.
+- Maintained on 2026-08-16 with remote MCP capability manifests, service reachability, identity context, approval class, audit evidence, and revocation-path guidance.

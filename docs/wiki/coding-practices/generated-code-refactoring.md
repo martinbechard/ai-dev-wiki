@@ -29,6 +29,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json) adds a cleanup signal for AI-generated commits that mix formatting churn with meaningful edits. Structural diff review lives in [structural diff review for AI-generated code](structural-diff-review-for-ai-generated-code.md); locally, generated-code cleanup should ask agents to separate semantic changes, formatting changes, and generated boilerplate before review.
 
+The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds bounded-refactoring evidence. AI refactoring should stay reversible, measured, and separate from architecture or business-rule decisions unless a design owner explicitly accepts that scope. Useful metrics include baseline code health, risk, regression results, delivery impact, and whether the diff remains small enough to review.
+
 ## Practice Boundaries
 
 - Refactor generated code toward the repository's existing patterns before treating it as finished.
@@ -48,6 +50,7 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Use regression checks, lint, CI, instruction files, and human review as guardrails when trimming generated-code bloat.
 - Require architecture, workload, optimization, portability, and regression evidence before accepting generated systems or performance-sensitive infrastructure code.
 - Separate semantic edits from formatting churn before review when generated code has been reformatted or mechanically rewritten.
+- Keep AI refactoring reversible and bounded by baseline metrics, regression checks, delivery-risk evidence, and design-owner review when architecture or business rules could change.
 
 ## Authoritative Sources
 
@@ -59,6 +62,7 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - [July 11 leaf update watch source](../../../raw/processed/2026-07-11/ai-dev-wiki-leaf-update-watch-2026-07-11T210242-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
+- [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -98,3 +102,4 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 - Maintained on 2026-07-11 with behavior inventory, regression-check, CI, lint, and human-review guardrails for generated-code cleanup.
 - Maintained on 2026-08-04 with generated systems-code architecture, optimization, portability, and regression evidence requirements.
 - Maintained on 2026-08-05 with semantic-versus-formatting separation for AI-generated commits.
+- Maintained on 2026-08-16 with reversible refactoring, baseline metrics, regression checks, delivery-risk evidence, and design-owner review.

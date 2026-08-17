@@ -49,6 +49,8 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 
 The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds two approval-boundary refinements. Public issue content and repository setup files cannot authorize CI credential access or nested agent workflows simply because they are present in the task context, and tool-approval prompts should expose reasoning effort, tool identity, cost impact, fallback route, and operating-record fields before the human approves continued work.
 
+The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) and [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) add goal-pursuit and review-capacity evidence. Agents can pursue objectives through loopholes or generate more candidate code than reviewers can absorb, so approval boundaries should define practical stop rules, revocable permissions, reviewer capacity, acceptable defect risk, and human-owned high-impact decisions before autonomy expands.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -86,6 +88,8 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Require visible task state, scratchpads, and review checkpoints before approving the next autonomous step after a human has been away from the screen.
 - Require explicit approval before untrusted issue text, setup files, or later-loaded instructions can trigger CI access, credential reads, shell execution, or nested agent invocation.
 - Make tool approvals show tool identity, expected side effects, reasoning-effort or cost impact, fallback route, and audit-record fields when those factors change the approval decision.
+- Define practical stop rules, revocable permissions, reviewer-capacity limits, and acceptable defect-risk thresholds before agents pursue goals through longer autonomous loops.
+- Keep high-impact decisions human-owned when the agent can exploit workflow loopholes, trigger external actions, or overwhelm review capacity with generated candidates.
 
 ## Authoritative Sources
 
@@ -115,6 +119,8 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
+- [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 
 ## Related Code
 
@@ -163,3 +169,4 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Maintained on 2026-08-05 with stacked-session redirection, branch-target, dependent-PR, and review-state approval evidence.
 - Maintained on 2026-08-09 with ideation-first engineering cadence and asynchronous review-state approval boundaries.
 - Maintained on 2026-08-11 with untrusted issue/setup-file approval boundaries and tool-approval evidence for cost, fallback, and operating records.
+- Maintained on 2026-08-16 with goal-pursuit stop rules, revocable permissions, reviewer-capacity, defect-risk, and high-impact decision boundaries.

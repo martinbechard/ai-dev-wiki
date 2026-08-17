@@ -63,6 +63,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The August 13 sources add shift-left and effort-level evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) reinforces early automated checks, risk-aware review, and senior reviewer capacity for AI-generated code. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records configurable review effort levels and visible PR evidence for which review depth ran. Locally, review workflows should select review depth from change risk and preserve the effort level, automated check results, and human residual-risk decision in the review record.
 
+The August 16 sources add configuration, review-capacity, and maintainer-queue evidence. The [topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) frames AI review as a rule-bearing PR or CI gate whose severity filters, repository rules, and outcome metrics should be versioned inputs. The [leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) records AI-assisted bug discovery increasing maintainer queues while humans still own final patches. Locally, AI review should publish the policy bundle it ran, separate security, logic, maintainability, and style findings, and show which human-owned repair path can absorb the extra findings.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -122,6 +124,9 @@ The August 13 sources add shift-left and effort-level evidence. The [topic news 
 - Include PR intent, operational blast radius, service ownership, downstream dependency checks, validation evidence, and post-merge health signals when reviewing agent-generated changes.
 - Treat review queue triage as change-management work when generated-code volume shifts scarce human judgment from writing code to deciding which changes are safe to accept.
 - Run risk-aware automated checks earlier in the workflow, then record review effort level, check coverage, reviewer capacity impact, and human residual-risk decision before merge.
+- Version AI-review rule files, severity filters, repository policy, and outcome metrics as review inputs rather than treating review comments as free-form model opinion.
+- Separate security, logic, maintainability, and style findings so reviewer queues can route findings to the right owner and reject low-signal noise.
+- Preserve human-authored final patches, maintainer-capacity signals, and evidence-rich review artifacts when AI tools increase bug-report volume.
 
 ## Authoritative Sources
 
@@ -163,6 +168,8 @@ The August 13 sources add shift-left and effort-level evidence. The [topic news 
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 
 ## Related Code
 
@@ -218,3 +225,4 @@ The August 13 sources add shift-left and effort-level evidence. The [topic news 
 - Maintained on 2026-08-11 with deterministic review-stage architecture, curated tool surfaces, file-level parallelism, and independent reflection evidence.
 - Maintained on 2026-08-12 with system-context review and agentic change-management queue evidence.
 - Maintained on 2026-08-13 with shift-left review, configurable effort levels, automated-check coverage, and reviewer-capacity evidence.
+- Maintained on 2026-08-16 with configuration-driven AI-review gates, finding-class separation, maintainer-capacity, and human-owned patch evidence.

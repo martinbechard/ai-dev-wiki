@@ -63,6 +63,8 @@ The August 10 raw sources add runtime-containment and reusable-testing-skill evi
 
 The August 13 raw sources add MCP and audit-data controls. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) records MCP servers without TLS, live operational-data tool access, token exchange, prompt-hash audit patterns, and shift-left review pressure. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records malicious repository risk for AI Skills or MCP servers and public agent-security examples. Locally, MCP transports, repository-hosted skills, operational-data tools, and central audit records are sensitive-data and supply-chain surfaces until transport security, provenance, mutation scope, and prompt-retention decisions are explicit.
 
+The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds agent-baiting evidence for skills and MCP servers. Public repositories that look like agent skills, MCP servers, setup helpers, or evaluation artifacts can carry instructions, code paths, and tool scopes meant to influence future agents. Locally, these artifacts need provenance, install review, constrained permissions, quarantine for suspicious content, and public-contribution blocks before a command-capable agent loads or acts on them.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -116,6 +118,8 @@ The August 13 raw sources add MCP and audit-data controls. The [topic news colle
 - Use least-privilege grants, sandboxing, egress controls, behavioral supervision, and function-level capability checks when agents can take autonomous runtime actions.
 - Review third-party testing, load-profiling, vulnerability-audit, and QA skills for registry provenance, command behavior, customization, and human review boundaries before import.
 - Require TLS or equivalent transport evidence, repository provenance, live-data mutation scope, token-exchange boundaries, and prompt-retention policy before approving MCP servers, skills, or audit pipelines for development workflows.
+- Treat repositories advertised as agent skills, MCP servers, setup helpers, or evaluation artifacts as executable supply-chain inputs until provenance, install intent, tool scope, and command behavior are reviewed.
+- Quarantine suspicious agent-facing artifacts and block public contribution, package publication, external file transfer, or future-agent instruction seeding unless explicitly authorized.
 
 ## Authoritative Sources
 
@@ -161,6 +165,7 @@ The August 13 raw sources add MCP and audit-data controls. The [topic news colle
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -216,3 +221,4 @@ The August 13 raw sources add MCP and audit-data controls. The [topic news colle
 - Maintained on 2026-08-08 with coding-agent skill-file supply-chain controls for hidden commands, tool scopes, provenance, and import review.
 - Maintained on 2026-08-10 with runtime-containment controls and third-party QA skill import review guidance.
 - Maintained on 2026-08-13 with MCP transport-security, repository-skill provenance, live-data mutation, token-exchange, and prompt-retention controls.
+- Maintained on 2026-08-16 with agent-baiting, skill and MCP provenance, quarantine, constrained-permission, and public-contribution block guidance.

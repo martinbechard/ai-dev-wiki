@@ -21,6 +21,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json) adds comment-triggered follow-up packaging evidence. When issue or pull-request comments launch documentation updates, error investigations, or follow-up issue creation, the fix package should preserve the trigger text, initiating comment, generated branch or issue identity, investigation notes, and review handoff so the automation remains auditable.
 
+The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds source-control and rollback discipline for language-model coding workflows. Before a fix assistant edits, the branch should have a clean reviewable change boundary, a fast verification command or known gate, and a rollback path. The same source also links prompt quality to PR review: the package should show the task goal, selected context, checks run, and residual human judgment instead of leaving the reviewer to reconstruct the session.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -34,6 +36,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Preserve failed-check evidence, investigation notes, generated repair branch or PR identity, and review-request state for agent-assisted CI fixes.
 - Package AI-review findings with source locations, reproduction or setup evidence, and suggested checks so the human reviewer is not left to rediscover the whole issue.
 - Preserve comment trigger text, initiating issue or pull-request context, generated branch or issue identity, and review handoff for comment-triggered agent follow-ups.
+- Start agent-assisted fixes from a clean source-control boundary, known verification gate, and rollback path before allowing generated edits to accumulate.
+- Carry the request goal, selected context, verification commands, and residual human decision into the PR or closeout evidence.
 
 ## Authoritative Sources
 
@@ -46,6 +50,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
+- [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 
 ## Related Code
 
@@ -76,3 +81,4 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 - Maintained on 2026-07-07 with agent-authorship, violation-attribution, and human repair ownership packaging.
 - Maintained on 2026-07-24 with failed-check repair handoff and source-backed AI-review packaging guidance.
 - Maintained on 2026-08-04 with comment-triggered automation packaging for generated branches, follow-up issues, investigation notes, and review handoffs.
+- Maintained on 2026-08-16 with clean source-control boundaries, verification commands, rollback paths, and request-to-PR evidence.

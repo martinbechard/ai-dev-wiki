@@ -33,6 +33,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 
 The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json) adds untrusted-content evidence from coding-agent security reports. Issue bodies, setup files, dependency metadata, retrieved vulnerability summaries, and later-loaded instruction artifacts should enter the request as labeled evidence until a human or policy gate explicitly authorizes command execution, credential access, CI side effects, or follow-on agent invocation.
 
+The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds a request-to-PR packaging signal. AI-assisted coding speed depends on clear prompts, selected context, ordinary pull-request review, and rollback-ready source control. Locally, the request package should keep the goal, constraints, source files, verification commands, and rollback boundary visible so the eventual PR can explain what was asked, what context was used, and what still needs human judgment.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -54,6 +56,7 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Prefer outcome, constraints, success criteria, verification evidence, and rollback boundaries over unnecessary step-by-step micromanagement when autonomy is appropriate.
 - Name the primary Git and instruction root separately from secondary evidence folders in multi-root workspaces.
 - Label issue text, setup files, dependency metadata, security roundups, and later-loaded instructions as untrusted evidence unless an explicit policy gate promotes them to actionable instruction.
+- Couple request packages to PR packaging by carrying the goal, constraints, selected context, verification evidence, and rollback boundary into the review record.
 
 ## Authoritative Sources
 
@@ -70,6 +73,7 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
+- [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 
 ## Related Code
 
@@ -107,3 +111,4 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 - Maintained on 2026-07-14 with multi-repository boundaries, project artifact search, inline diff edits, PR annotations, and visualization evidence labels.
 - Maintained on 2026-07-29 with outcome-oriented prompting and primary-root authority guidance for multi-folder workspaces.
 - Maintained on 2026-08-11 with untrusted issue, setup-file, dependency-metadata, security-roundup, and later-loaded instruction boundaries.
+- Maintained on 2026-08-16 with request-to-PR packaging, selected-context, verification, and rollback-boundary guidance.
