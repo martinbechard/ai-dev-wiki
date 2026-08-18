@@ -23,6 +23,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds source-control and rollback discipline for language-model coding workflows. Before a fix assistant edits, the branch should have a clean reviewable change boundary, a fast verification command or known gate, and a rollback path. The same source also links prompt quality to PR review: the package should show the task goal, selected context, checks run, and residual human judgment instead of leaving the reviewer to reconstruct the session.
 
+The August 17 topic news collector adds small dependent-PR and branch/worktree visibility evidence. Agent-assisted fixes remain easier to review when dependent branches, worktrees, and PR relationships are visible, because reviewers can see whether the AI work is a narrow patch, a stacked change, or a follow-on that depends on another unmerged result.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -38,6 +40,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Preserve comment trigger text, initiating issue or pull-request context, generated branch or issue identity, and review handoff for comment-triggered agent follow-ups.
 - Start agent-assisted fixes from a clean source-control boundary, known verification gate, and rollback path before allowing generated edits to accumulate.
 - Carry the request goal, selected context, verification commands, and residual human decision into the PR or closeout evidence.
+- Show dependent branch, worktree, stacked PR, and follow-on relationships when agent-assisted changes are split across review units.
 
 ## Authoritative Sources
 
@@ -51,6 +54,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 
 ## Related Code
 
@@ -82,3 +86,4 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Maintained on 2026-07-24 with failed-check repair handoff and source-backed AI-review packaging guidance.
 - Maintained on 2026-08-04 with comment-triggered automation packaging for generated branches, follow-up issues, investigation notes, and review handoffs.
 - Maintained on 2026-08-16 with clean source-control boundaries, verification commands, rollback paths, and request-to-PR evidence.
+- Maintained on 2026-08-17 with dependent branch, worktree, stacked PR, and follow-on relationship visibility.

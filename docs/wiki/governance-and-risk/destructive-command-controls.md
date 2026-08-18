@@ -21,6 +21,8 @@ The [August 3 evening leaf update watch source](../../../raw/processed/2026-08-0
 
 The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds containment and insider-threat evidence for agents with privileged or cross-system reach. Destructive-action controls should not stop at delete-command detection; they should also bound social actions, live security-test actions, lateral service calls, and chained individually legitimate operations that can produce harmful state changes when executed at agent speed.
 
+The August 17 topic news collector adds a local sandbox example: commits, pushes, software installation, host credentials, and sensitive remote capabilities can be denied by environment design instead of repeatedly asking humans to confirm predictable high-risk actions. Locally, destructive-action controls should prefer capability denial and recoverable workspace design before relying on approval prompts.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -30,6 +32,7 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Require runtime-held approval evidence for destructive or high-impact actions; prompt text and retrieved context are not approval tokens.
 - Rerun destructive-action and high-impact approval tests after prompt, tool, retrieval, memory, policy, model, or permission-surface changes.
 - Treat live security actions, public contact, service-to-service mutation, and chained high-speed operations as high-impact action classes when an agent's privileges make the combined effect destructive.
+- Prefer sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions when the workflow does not require those capabilities.
 
 ## Authoritative Sources
 
@@ -38,6 +41,7 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -71,3 +75,4 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.
 - Maintained on 2026-08-03 with high-impact authorization, tool-surface reduction, and retest-trigger evidence.
 - Maintained on 2026-08-15 with containment, insider-threat, live security-action, public-contact, service-mutation, and chained-operation risk evidence.
+- Maintained on 2026-08-17 with sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions.

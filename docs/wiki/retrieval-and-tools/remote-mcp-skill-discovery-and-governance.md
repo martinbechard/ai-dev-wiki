@@ -21,6 +21,8 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 
 The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json), [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json), and [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md) refine that boundary. Remotely discovered skills may arrive inside a broader Agent Plugins package, but the package itself is not an MCP concept. Route package manifest, marketplace, managed-setting, and client-extension review through [portable agent plugin packaging and governance](portable-agent-plugin-packaging-and-governance.md); keep this page focused on remote skill provenance and activation.
 
+The August 17 raw sources add managed allowlist and security-boundary evidence. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records a privileged CI/CD MCP-server risk signal; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records managed plugin/MCP settings, plugin packaging, and untrusted tool-description boundaries. Locally, remote skill or MCP discovery should reject shared servers that lack authentication, network exposure review, token scoping, allowlist evidence, and exploit-path testing before activation.
+
 ## Practice Boundaries
 
 - Treat discovered skills as code-adjacent supply-chain inputs.
@@ -31,6 +33,7 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Treat framework documentation MCP servers and LLM-friendly docs as remote context packages with source labels, version scope, and release-status checks.
 - Treat portable skill-and-MCP plugin packages as governed capability bundles whose manifest, server declarations, extension namespaces, and client-enforced controls need review before installation.
 - Distinguish remote skill activation from portable plugin packaging so MCP-discovered procedure does not inherit trust merely because the package installed successfully.
+- Reject remote skills or MCP servers that lack authentication, exposure review, token scoping, managed allowlist evidence, and exploit-path testing when they can reach CI/CD or other privileged systems.
 
 ## Authoritative Sources
 
@@ -44,6 +47,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 - [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [portable agent plugin packaging and governance](portable-agent-plugin-packaging-and-governance.md)
 
 ## Related Code
@@ -75,3 +80,4 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Maintained on 2026-08-09 with MCP-served documentation and LLM-friendly docs as governed remote context packages.
 - Maintained on 2026-08-11 with portable plugin-package governance for bundled skills, MCP server configuration, manifests, and client extension namespaces.
 - Maintained on 2026-08-12 with the Agent Plugins packaging boundary split into a separate portable package-governance leaf.
+- Maintained on 2026-08-17 with managed plugin/MCP settings, CI/CD MCP-server risk, untrusted tool-description boundaries, token scoping, allowlist, and exploit-path testing guidance.

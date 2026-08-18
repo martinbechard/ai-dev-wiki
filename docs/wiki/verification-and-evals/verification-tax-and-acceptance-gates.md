@@ -33,6 +33,8 @@ The August 15 raw sources add semantic milestone and production-readiness gates.
 
 The August 16 raw sources add a review-capacity planning rule. The [topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) argues that faster AI-generated implementation shifts effort toward debugging, review, and explicit defect-risk selection. The [leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) reinforces small reversible diffs, baselines, and design-owner review for refactoring or optimization. Acceptance gates should therefore size generation throughput against available tests, reviewer ownership, rollback paths, and acceptable defect risk before expanding autonomous loops.
 
+The August 17 topic news collector adds release-tax and frontend-agent evaluation signals. Acceptance should measure defect escape, change failure, trust, deployed behavior, retries, tool-call traces, and recovery evidence when AI coding increases delivery speed. Throughput remains a weak success measure until the resulting workflow proves release confidence and user-visible behavior.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -53,6 +55,7 @@ The August 16 raw sources add a review-capacity planning rule. The [topic news c
 - Require milestone gates to check external CI, deployment, pull-request, containment, memory, repository-provenance, and behavior-baseline evidence before accepting a long-running agent's completion claim.
 - Treat generated-code throughput as a verification-capacity input; require explicit defect-risk tolerance, test depth, reviewer ownership, and rollback evidence before increasing autonomy.
 - Require small reversible diffs, design-owner review, regression baselines, and measurement evidence when agent-assisted refactoring or optimization changes risk.
+- Measure defect escape, change failure, trust, deployed behavior, retries, tool-call traces, and recovery evidence before treating faster AI-assisted delivery as accepted work.
 
 ## Authoritative Sources
 
@@ -75,6 +78,7 @@ The August 16 raw sources add a review-capacity planning rule. The [topic news c
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 
 ## Related Code
 
@@ -112,3 +116,4 @@ The August 16 raw sources add a review-capacity planning rule. The [topic news c
 - Maintained on 2026-07-27 with CI gate freshness, capacity, and hidden-failure verification guidance.
 - Maintained on 2026-08-15 with semantic CI/deployment milestone, containment, memory-provenance, repository-provenance, behavior-baseline, and control-state acceptance gates.
 - Maintained on 2026-08-16 with review-capacity planning, defect-risk tolerance, reversible-diff, baseline, and design-owner acceptance evidence.
+- Maintained on 2026-08-17 with release-tax, defect-escape, change-failure, trust, deployed-behavior, retry, trace, and recovery-evidence acceptance signals.

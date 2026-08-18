@@ -55,6 +55,8 @@ The August 12 raw sources add evaluation-framework and harness-layer evidence. T
 
 The August 15 raw sources add containment and milestone-evaluation evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records a CI-red incident and self-hosted factory decisions that require trajectories to preserve execution location, egress, inference route, session records, and eval data. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds sandbox-escape, behavior-baseline, persistent-memory poisoning, and repository/skill baiting evidence. Trajectory evaluation should inspect whether the run stayed inside containment, used approved memories and tools, reached the external milestone, and recorded enough action history to explain deviations.
 
+The August 17 topic news collector adds agentic web-development evaluation evidence. Frontend-agent trajectories should preserve deployed behavior, retries, tool-call traces, recovery steps, and screenshot or runtime evidence so a leaderboard-style success score can be reconciled against the actual user-visible workflow.
+
 ## Evaluation Signals
 
 - Whether the request package preserved source authority and task boundaries.
@@ -84,6 +86,7 @@ The August 15 raw sources add containment and milestone-evaluation evidence. The
 - Whether the evaluated run preserves task, dataset, environment, trial, job, solver, scorer, sandbox, log, and tool evidence strongly enough to reproduce and attribute the path.
 - Whether model, context, harness, memory, permission, tool, environment, and scorer failures are separated before a trajectory verdict is used to change a workflow.
 - Whether execution location, egress, inference route, session records, eval data, memory writes, containment state, external milestone state, and behavior deviations are visible in the run history.
+- Whether deployed behavior, retries, tool-call traces, recovery steps, screenshots, and runtime evidence support frontend-agent or web-development verdicts.
 
 ## Practice Boundaries
 
@@ -116,6 +119,7 @@ The August 15 raw sources add containment and milestone-evaluation evidence. The
 - Convert production traces into trajectory-level regression cases when trace evidence can explain which step, tool call, retrieval span, or prompt version caused the failure.
 - Use intermediate requirement-clarification and implementation-plan evidence when evaluating repository-level issue resolution so implicit-requirement failures are not hidden by final patch scoring.
 - Keep evaluation-framework concepts as local harness evidence while routing broad Harbor, Inspect, benchmark, provider, and sandbox-product coverage upstream.
+- Preserve deployed behavior, retries, tool-call traces, recovery steps, screenshots, and runtime evidence when evaluating frontend or web-development agents.
 - Evaluate whether the trajectory preserved containment boundaries, approved memory/tool provenance, external CI or deployment truth, and behavior-baseline deviations before treating completion as reliable.
 
 ## Authoritative Sources
@@ -153,6 +157,7 @@ The August 15 raw sources add containment and milestone-evaluation evidence. The
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 
 ## Related Code
 
@@ -200,3 +205,4 @@ The August 15 raw sources add containment and milestone-evaluation evidence. The
 - Maintained on 2026-08-11 with repository-level issue-resolution trajectory checks for requirement clarification, implicit requirements, planning, and final patch evidence.
 - Maintained on 2026-08-12 with Harbor, Inspect, and model/context/harness separation as trajectory failure-attribution evidence.
 - Maintained on 2026-08-15 with execution-location, egress, inference-route, retained-eval, containment, memory-provenance, repository-skill baiting, behavior-baseline, and external-milestone trajectory evidence.
+- Maintained on 2026-08-17 with frontend-agent deployed-behavior, retry, tool-call trace, recovery, screenshot, and runtime evidence.

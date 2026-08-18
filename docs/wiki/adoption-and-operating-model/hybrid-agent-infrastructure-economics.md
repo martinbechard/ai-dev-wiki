@@ -27,6 +27,8 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 
 The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax and coding-agent tier evidence. Repeated reasoning, tool selection, retrieval, and context carry-forward can raise total tokens even as unit token prices fall, so repeatable execution should move toward deterministic workflows, compiled memory, or cheaper routes when quality evidence supports the shift. Coding-agent procurement should also account for whether discounted tiers can use activity to improve vendor products before proprietary repositories are exposed.
 
+The August 17 raw sources add model-level accounting, training, and host-infrastructure evidence. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records team training around token management and context-overload symptoms; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records per-model token breakdowns, admin-off model rollout, cheaper model routes, and Linux isolation or rollback costs. Locally, model routing should count token categories, cache behavior, admin enablement, sandbox operations, rollback paths, and operator skill as part of workflow economics.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -44,6 +46,7 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - Track token-cost telemetry and cost per accepted outcome before moving high-volume agent workflows between cloud, local, deskside, or self-hosted paths.
 - Treat repeated runtime reasoning and context carry-forward as token-tax drivers; prefer deterministic reuse when the workflow is stable enough.
 - Include data-use terms, cached-token pricing, and proprietary-code exposure in coding-agent tier selection before accepting lower-cost plans.
+- Train teams to read token categories, cache behavior, context-overload symptoms, admin model policy, sandbox cost, rollback cost, and operator skill as economic signals.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -60,6 +63,8 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 
 ## Related Code
 
@@ -91,3 +96,4 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - Maintained on 2026-07-25 with sponsored-claim caution and workload-placement criteria for local, self-hosted, deskside, and cloud agent execution.
 - Maintained on 2026-07-30 with cost-per-outcome telemetry and local-versus-cloud routing criteria from vendor-positioned cost evidence.
 - Maintained on 2026-08-05 with token-tax routing and coding-agent tier data-use review guidance.
+- Maintained on 2026-08-17 with token-category reporting, context-overload training, admin model rollout, cheaper route selection, Linux-host isolation, rollback, and operator-skill economics.

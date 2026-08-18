@@ -33,6 +33,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 
 The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds citable MCP retrieval evidence. For codebase and documentation RAG, MCP-backed retrieval should preserve citations, separate trusted data access from model reasoning, and document privacy boundaries around prompts, provider visibility, and internal processing before retrieved evidence drives agent action.
 
+The August 17 raw sources add an escalation rule for agentic RAG. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records codebase-RAG evaluation signals, and the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records agentic RAG as a plan/evaluate/retry loop for multi-hop questions. Locally, simple lookups should stay on cheaper classic retrieval, while agentic retrieval needs citations, chunking, retrieval-quality measurement, rejected-candidate evidence, and faithfulness checks before its extra complexity is justified.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -56,6 +58,7 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Keep recoverable originals for compacted retrieval outputs that may later need source, security, or provenance audit.
 - Preserve source archives, parsed chunk records, embedding versions, index metadata, ACLs, freshness status, and retention records when RAG evidence drives agent action.
 - Preserve citation paths, privacy boundaries, prompt/data-flow separation, and provider-visibility assumptions when MCP-backed retrieval supplies evidence to agents.
+- Use agentic RAG only when multi-hop complexity justifies a plan/evaluate/retry loop, and preserve citations, rejected candidates, retrieval-quality metrics, chunking rationale, and faithfulness checks.
 
 ## Authoritative Sources
 
@@ -72,6 +75,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 
 ## Related Code
 
@@ -106,3 +111,4 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Maintained on 2026-07-24 with query-intent, chunk-boundary, ranking-rationale, rejected-distractor, and recoverable-original guidance.
 - Maintained on 2026-07-29 with storage-layer provenance, embedding-version, ACL, freshness, and retention guidance.
 - Maintained on 2026-08-12 with citable MCP retrieval, privacy-boundary, and provider-visibility evidence.
+- Maintained on 2026-08-17 with agentic-RAG escalation, codebase-RAG evaluation, citation, rejected-candidate, retrieval-quality, chunking, and faithfulness guidance.

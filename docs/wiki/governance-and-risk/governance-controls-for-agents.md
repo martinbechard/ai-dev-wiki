@@ -68,6 +68,8 @@ The [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-
 
 The August 15 raw sources reinforce controls as enforceable runtime architecture. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) adds model enablement, self-hosted factory, file-backed planning, CI milestone-gate, and runtime gateway evidence. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds durable execution, scoped MCP access, behavior baselines, company-harness drills, containment failures, persistent memory poisoning, and repository/skill baiting evidence. Locally, agent governance should require admin enablement, cost ownership, egress controls, scoped credentials, auditable session records, memory quarantine, repository-package provenance, and semantic acceptance gates before long-running agents operate across shared systems.
 
+The August 17 topic news collector adds defensive-security and local-sandbox evidence. Security agents should receive approved access to codebases, infrastructure configuration, documentation, CI checks, security playbooks, and prioritized backlog targets rather than broad unconstrained autonomy. Local coding-agent sandboxes should deny host credentials, commits, pushes, installs, and sensitive remote capabilities by environment policy when those actions are outside the approved workflow.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -118,6 +120,7 @@ The August 15 raw sources reinforce controls as enforceable runtime architecture
 - Audit fallback routing and mid-conversation tool-list changes when they can alter model choice, allowed actions, cache behavior, or execution path.
 - Enforce field-level scopes, action vetting, prompt-injection screening, audit trails, and approval holds in the runtime when agents act on enterprise content or discovered tools.
 - Enforce managed model, plugin, marketplace, approval-bypass, telemetry, token-limit, remote-skill, CI execution, and malware-alert policies consistently across agent clients and IDE surfaces.
+- Give defensive agents approved code, infrastructure, documentation, CI, playbook, and backlog access while denying host credentials, commits, pushes, installs, and unapproved remote actions through sandbox policy.
 - Require first-class agent records with owner, purpose, permissions, lifecycle review, inventory, cost attribution, and deprovisioning before agents operate across SaaS, repositories, or internal automation.
 - Attach adversarial-test, approval, retest-trigger, and release-control evidence to agent deployment decisions instead of treating a checklist answer as enforcement.
 - Gate public maintainer contact, public-repository contribution, package publication, external messaging, and unsandboxed internet use separately from ordinary code edits, even when they occur inside an evaluation or security-testing workflow.
@@ -176,6 +179,7 @@ The August 15 raw sources reinforce controls as enforceable runtime architecture
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 
 ## Related Code
 
@@ -235,3 +239,4 @@ The August 15 raw sources reinforce controls as enforceable runtime architecture
 - Maintained on 2026-08-06 with source-specific containment guidance for internet access, public contribution attempts, maintainer contact, external messaging, monitoring, and kill-switch controls.
 - Maintained on 2026-08-09 with high-capability pause criteria and browser-agent identity, proxy, captcha, and authenticated-session controls.
 - Maintained on 2026-08-15 with admin model enablement, self-hosted factory controls, scoped access, memory quarantine, repository-package provenance, containment, and semantic acceptance-gate evidence.
+- Maintained on 2026-08-17 with defensive-security agent access and local coding-agent sandbox-denial evidence.

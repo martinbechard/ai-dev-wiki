@@ -35,6 +35,8 @@ The [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai
 
 The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) adds file-backed planning and software-factory state evidence. Durable plans can mitigate context loss when task_plan.md, findings.md, progress.md, session records, eval data, and workflow handoff files live outside the model. The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds memory-poisoning risk, so rehydration should inspect persistent memory objects and mark externally sourced memory as untrusted until quarantine, provenance, and user confirmation checks pass.
 
+The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds operating-record evidence for persistent memory, local-session compliance APIs, side-channel agent questions, subagent task state, SAFE-style incident records, and workspace identity. Locally, rehydration files should preserve enough prompts, tool traces, identities, permissions, credential references, plugin versions, and question/answer state for a later reviewer to reconstruct the workflow without treating vendor chat memory as the only state store.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -59,6 +61,7 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - Preserve human-readable scratchpads, visible task state, editor grouping notes, and exported context bundles when asynchronous agents can continue after the human loses screen-level continuity.
 - Prefer durable project state, accepted-version records, path-scoped delegation notes, and verification artifacts over persistent-agent memory when long-running software work needs continuity.
 - Treat file-backed plans, session records, eval data, and persistent memory as rehydration inputs with provenance labels, freshness checks, and quarantine rules before they can steer tool use.
+- Preserve incident-relevant prompts, tool traces, identities, permissions, credential references, workspace identity, plugin versions, and side-channel questions when they may be needed for secure replay or review.
 
 ## Authoritative Sources
 
@@ -80,6 +83,7 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
 ## Related Code
@@ -119,3 +123,4 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - Maintained on 2026-08-09 with scratchpad, visible task-state, editor grouping, and context-export continuity guidance for asynchronous agent work.
 - Maintained on 2026-08-13 with persistent-project-state, accepted-version, finite-lived-agent, and recursive-delegation continuity guidance.
 - Maintained on 2026-08-15 with file-backed plans, session records, eval data, persistent-memory provenance, quarantine, and confirmation guidance.
+- Maintained on 2026-08-17 with persistent-memory, local-session compliance, side-channel question, subagent task-state, SAFE-style incident, and workspace-identity evidence.

@@ -25,6 +25,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 
 The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds remote-tool capability-boundary evidence. Remote MCP-capable agents should publish a capability manifest before write or deployment tools are enabled. The local approval package should name exposed services, resource scopes, read/write class, identity context, approval class, audit evidence, and revocation path so reviewers can see which external systems the agent can reach.
 
+The August 17 topic news collector adds two high-impact authorization examples. CI workflow approval can be modeled as a narrow governed action only when protected-file, workflow, pull-request, and token guardrails are explicit; a shared network-reachable MCP server carrying organization CI/CD credentials is a privileged service that needs authentication, network exposure review, token scoping, and exploit-path testing before agents can call it.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -42,6 +44,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Treat approval-request records as correlatable audit evidence that still needs identity, policy, and downstream system logs for full review.
 - Require a capability manifest for remote MCP-capable agents before enabling write, deployment, or production-adjacent tools.
 - Include exposed services, resource scopes, read/write class, identity context, approval class, audit evidence, and revocation path in the authorization record.
+- Treat CI workflow approval and CI/CD-token MCP servers as high-impact authorization classes with protected-file checks, workflow scope, pull-request scope, token guardrails, authentication, exposure review, and exploit-path evidence.
 
 ## Authoritative Sources
 
@@ -54,6 +57,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
@@ -88,3 +92,4 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Maintained on 2026-08-13 with MCP operational metrics, credential narrowing, transport-security, live-data mutation, and incident-evidence requirements.
 - Maintained on 2026-08-14 with gateway-held MCP approval requests, requester/tool/resource/payload scope, validity windows, denial semantics, and audit-linkage guidance.
 - Maintained on 2026-08-16 with remote MCP capability manifests, service reachability, identity context, approval class, audit evidence, and revocation-path guidance.
+- Maintained on 2026-08-17 with governed CI workflow approval and CI/CD-token MCP server authorization evidence.

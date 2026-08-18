@@ -49,6 +49,7 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Route memory-aware repository observations as attributed, freshness-labeled retrieval candidates; require direct evidence checks before they replace live file reads or durable wiki synthesis.
 - Route primary Git and instruction roots separately from secondary related-code, documentation, and reference folders.
 - Route enterprise knowledge sources with explicit source trust, freshness, access scope, conflict handling, and reranking labels before they become active model context.
+- Route persistent memories, managed settings, and behavior-baseline deviations through different layers so convenience context cannot override governance evidence.
 
 ## Authoritative Sources
 
@@ -63,6 +64,7 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 
 ## Related Code
 
@@ -97,3 +99,4 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Maintained on 2026-07-22 with memory-aware repository observation routing, freshness labels, and minimum-useful-slice checks.
 - Maintained on 2026-07-29 with primary Git/instruction root and secondary evidence-folder routing guidance.
 - Maintained on 2026-08-14 with enterprise source trust, freshness, access-scope, conflict-policy, and reranking labels for context routing.
+- Maintained on 2026-08-17 with separate routing for persistent memory, managed agent settings, and behavior-baseline deviations.

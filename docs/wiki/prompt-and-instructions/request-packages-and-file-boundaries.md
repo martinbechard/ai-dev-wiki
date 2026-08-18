@@ -35,6 +35,8 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 
 The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds a request-to-PR packaging signal. AI-assisted coding speed depends on clear prompts, selected context, ordinary pull-request review, and rollback-ready source control. Locally, the request package should keep the goal, constraints, source files, verification commands, and rollback boundary visible so the eventual PR can explain what was asked, what context was used, and what still needs human judgment.
 
+The August 17 raw sources add artifact-lifecycle, convention-file, incident-record, and agent-security boundaries. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records durable context files and specification exit strategies; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records side-channel agent questions, SAFE-style incident evidence, and coding-agent security guidance. Locally, a request package should state which conventions are live, which specs are retired or superseded, which prompts and tool traces may become incident evidence, and which untrusted issue text, setup files, MCP descriptions, or credentials are outside the trusted instruction boundary.
+
 ## Practice Boundaries
 
 - Package the task with the smallest source set that can support the decision.
@@ -57,6 +59,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Name the primary Git and instruction root separately from secondary evidence folders in multi-root workspaces.
 - Label issue text, setup files, dependency metadata, security roundups, and later-loaded instructions as untrusted evidence unless an explicit policy gate promotes them to actionable instruction.
 - Couple request packages to PR packaging by carrying the goal, constraints, selected context, verification evidence, and rollback boundary into the review record.
+- Mark obsolete specs, superseded plans, untrusted issue text, setup files, MCP descriptions, credential references, and incident-evidence fields explicitly so they cannot masquerade as live instructions.
 
 ## Authoritative Sources
 
@@ -74,6 +77,8 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 
 ## Related Code
 
@@ -112,3 +117,4 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Maintained on 2026-07-29 with outcome-oriented prompting and primary-root authority guidance for multi-folder workspaces.
 - Maintained on 2026-08-11 with untrusted issue, setup-file, dependency-metadata, security-roundup, and later-loaded instruction boundaries.
 - Maintained on 2026-08-16 with request-to-PR packaging, selected-context, verification, and rollback-boundary guidance.
+- Maintained on 2026-08-17 with convention-file, specification-retirement, SAFE-style incident, side-channel question, and coding-agent security boundaries.

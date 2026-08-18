@@ -27,6 +27,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 
 The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) reinforces that outcome alignment should not become centralized token or tool-use conformance. AI wallets, tokenmaxxing concerns, PR-state-normalized benchmarks, and embedded execution teams all point to the same local rule: teams can choose different agent workflows, but shared governance should compare accepted outcomes, review burden, cost, safety evidence, and customer or workflow value rather than raw AI activity.
 
+The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds continuous-governance and agent-incident evidence. Outcome autonomy remains acceptable only when teams can produce comparable live evidence for identity, permissions, accessed systems, tool calls, data touched, business purpose, behavior baselines, incident records, and accountability trails. Periodic approval of a workflow is not enough when prompts, memory, model routing, and tool access can change underneath the team process.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -43,6 +45,7 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - Use trajectory-level state-change correctness, tool paths, costs, and safety evidence as outcome measures instead of assistant usage or process conformance alone.
 - Compare AI-heavy and AI-light processes by accepted outcomes, quality, maintainability, and review burden rather than by raw AI activity.
 - Compare budget use, benchmark results, and embedded-agent work by accepted outcomes, review burden, safety evidence, and customer workflow value rather than by token volume or agent activity.
+- Require comparable live evidence for identity, permissions, systems accessed, APIs called, data touched, business purpose, behavior baseline, incident records, and accountability when process-autonomous teams use agents.
 
 ## Authoritative Sources
 
@@ -56,6 +59,7 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - [July 17 leaf update watch source](../../../raw/processed/2026-07-17/ai-dev-wiki-leaf-update-watch-2026-07-17T210227-0400.json)
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 
 ## Related Code
 
@@ -90,3 +94,4 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 - Maintained on 2026-07-17 with links to governance infrastructure for agent-sprawl visibility and trajectory evaluation for state-change, tool-path, cost, and safety outcome evidence.
 - Maintained on 2026-07-29 with raw AI-activity, token-volume, and generated-line measurement anti-pattern guidance.
 - Maintained on 2026-07-31 with budget wallet, tokenmaxxing, PR-state normalization, and embedded-execution signals for outcome-over-activity comparisons.
+- Maintained on 2026-08-17 with continuous-governance, behavior-baseline, SAFE-style incident, identity, permission, and accountability-trail evidence.

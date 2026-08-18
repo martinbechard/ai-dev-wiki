@@ -17,6 +17,8 @@ The practical adoption test is whether the organization can move prompts and ski
 
 Domain state, business records, and audit-critical workflow state should remain outside vendor session state when provider substitution, long-term audit, or cross-tool continuity matters. Vendor-managed state can still be useful, but it should be treated as runtime state with export and retention questions, not as the only durable system of record.
 
+The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds cross-client packaging and compliance evidence. Agent Plugins, managed plugin/MCP settings, persistent memory, local model routing, debug visibility, local-session compliance endpoints, and workspace identity show that portability is constrained by more than prompt text. Locally, a managed-agent workflow should record which package manifest, skill files, MCP declarations, memory surfaces, transcript exports, and enterprise policy controls must move or be re-created before switching tools.
+
 ## Practice Boundaries
 
 - Evaluate managed-agent portability separately for models, prompts, tools, execution, state, telemetry, and control-plane semantics.
@@ -25,10 +27,12 @@ Domain state, business records, and audit-critical workflow state should remain 
 - Keep domain records, approval evidence, and workflow state in organization-owned systems when audit or provider substitution matters.
 - Require export, retention, versioning, and trace semantics before relying on vendor session history as durable memory.
 - Record portability gaps as selection criteria rather than flattening vertical integration into either open or closed.
+- Record package manifests, skill files, MCP declarations, memory surfaces, transcript exports, workspace identity, and enterprise policy controls before claiming a managed-agent workflow can move between tools.
 
 ## Authoritative Sources
 
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
+- [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md)
 - [durable instructions and skill files](durable-instructions-and-skill-files.md)
 - [agent harness components](../application-patterns/agent-harness-components.md)
@@ -61,3 +65,4 @@ Domain state, business records, and audit-critical workflow state should remain 
 ## Maintenance Notes
 
 - Created on 2026-08-05 from a query fragment about managed-agent vertical integration, tool interoperability, and control-plane portability.
+- Maintained on 2026-08-17 with Agent Plugins, managed plugin/MCP settings, memory, local model routing, debug visibility, compliance transcript, and workspace-identity portability boundaries.
