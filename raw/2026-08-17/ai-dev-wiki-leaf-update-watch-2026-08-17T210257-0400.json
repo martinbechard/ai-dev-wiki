@@ -1,0 +1,561 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-08-18T01:02:57Z",
+    "policy": "Only public sources published or visibly updated within the last 7 days qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start_utc": "2026-08-11T01:02:57Z"
+  },
+  "excluded_candidate_count": 11,
+  "excluded_candidates": [
+    {
+      "candidate_topic": "context engineering and compaction",
+      "notes": "Published before the 2026-08-11T01:02:57Z cutoff, despite being relevant to context selection and compaction.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://keep.md/blog/context-engineering",
+      "visible_date": "2026-08-10"
+    },
+    {
+      "candidate_topic": "GPT-5.6 agent efficiency and compaction",
+      "notes": "Search/opened page did not expose a reliable publication date in the visible page content; excluded under strict date rules even though content is locally relevant.",
+      "reason": "missing_visible_publication_date",
+      "source_url": "https://openai.com/index/builders-guide-to-gpt-5-6/",
+      "visible_date": null
+    },
+    {
+      "candidate_topic": "Agent Plugins packaging",
+      "notes": "Relevant but published before the cutoff; GitHub August 12 source covers in-window local practice implications.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+      "visible_date": "2026-08-06"
+    },
+    {
+      "candidate_topic": "MCP stateless updates",
+      "notes": "Relevant to MCP infrastructure but stale for this run window.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "visible_date": "2026-08-05"
+    },
+    {
+      "candidate_topic": "Copilot cloud agent reasoning level",
+      "notes": "Relevant to model-selection economics but stale for this run window.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent/",
+      "visible_date": "2026-08-03"
+    },
+    {
+      "candidate_topic": "AI coding assistant pricing and ROI",
+      "notes": "Pricing source was already checked in prior runs and is stale for this window.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://getdx.com/blog/ai-coding-assistant-pricing/",
+      "visible_date": "2026-06-12"
+    },
+    {
+      "candidate_topic": "Agent Plugins 1.0 analysis",
+      "notes": "In-window analysis, but official GitHub changelog was used as the primary public source for the same portable-plugin facts.",
+      "reason": "secondary_duplicate_of_primary_source",
+      "source_url": "https://blakecrosley.com/blog/agent-plugins-standard",
+      "visible_date": "2026-08-12"
+    },
+    {
+      "candidate_topic": "junior and senior agentic AI jobs",
+      "notes": "Job listings are public and recent but do not provide durable practice guidance for junior learning paths.",
+      "reason": "not_durable_local_practice_source",
+      "source_url": "https://au.indeed.com/q-ai-agentic-engineer-jobs.html",
+      "visible_date": "4 days ago"
+    },
+    {
+      "candidate_topic": "agentic AI learning path",
+      "notes": "Relevant to junior learning sequencing, but stale relative to the cutoff.",
+      "reason": "outside_window_before_cutoff",
+      "source_url": "https://pub.towardsai.net/how-id-learn-to-build-ai-agents-in-2026-the-8-week-path-2323d654ea46",
+      "visible_date": "2026-08-05"
+    },
+    {
+      "candidate_topic": "RAG failure modes",
+      "notes": "Search result did not provide a strict in-window publication date.",
+      "reason": "ambiguous_or_missing_visible_date",
+      "source_url": "https://www.linkedin.com/posts/rakeshgohel01_ive-reviewed-25-ai-agent-builds-in-2026-activity-7464294330384478208-p5HN",
+      "visible_date": null
+    },
+    {
+      "candidate_topic": "software engineer agentic AI learning",
+      "notes": "Search result exposed no reliable visible publication date and content appears broad rather than local-practice specific.",
+      "reason": "ambiguous_or_missing_visible_date",
+      "source_url": "https://medium.com/system-design-mastery-series/why-every-software-engineer-needs-to-learn-agentic-ai-before-2027-41ec86c602ef",
+      "visible_date": null
+    }
+  ],
+  "federation_routing": {
+    "local_scope": "Local AI-assisted development practice, workflow, governance, context architecture, retrieval, verification, and adoption implications.",
+    "upstream_owned_entity_handling": "Broad product, company, model, framework, protocol, and standards background is marked upstream-owned; this artifact records only downstream practice implications."
+  },
+  "follow_up_notes_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "Review qualifying updates: github-copilot-token-breakdown-2026-08-11, github-grok-46-copilot-2026-08-14, github-mai-code-flash-cost-2026-08-11, wavect-linux-agent-infrastructure-2026-08-12",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": "No strict-window qualifying public update found in this scan; exclusions record stale, duplicate, missing-date, or low-durability candidates.",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, github-agent-plugins-ga-2026-08-12, anthropic-compliance-local-sessions-2026-08-11",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": "Review qualifying updates: expresscomputer-agentic-governance-2026-08-17, techradar-agent-behavioral-baselines-2026-08-12, axios-safe-agent-incident-reporting-2026-08-11",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, github-agent-plugins-ga-2026-08-12, github-copilot-weekly-agent-workflows-2026-08-13",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": "Review qualifying updates: github-grok-46-copilot-2026-08-14",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, anthropic-compliance-local-sessions-2026-08-11",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, techradar-agent-behavioral-baselines-2026-08-12",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, anthropic-compliance-local-sessions-2026-08-11, codepick-coding-agent-security-2026-08-13",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, github-copilot-weekly-agent-workflows-2026-08-13, anthropic-compliance-local-sessions-2026-08-11, axios-safe-agent-incident-reporting-2026-08-11",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": "No strict-window qualifying public update found in this scan; exclusions record stale, duplicate, missing-date, or low-durability candidates.",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": "Review qualifying updates: github-copilot-weekly-agent-workflows-2026-08-13, axios-safe-agent-incident-reporting-2026-08-11, codepick-coding-agent-security-2026-08-13",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, axios-safe-agent-incident-reporting-2026-08-11, codepick-coding-agent-security-2026-08-13",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": "Review qualifying updates: raulji-agentic-rag-2026-08-13",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": "Review qualifying updates: github-copilot-memory-jetbrains-2026-08-11, github-agent-plugins-ga-2026-08-12, codepick-coding-agent-security-2026-08-13"
+  },
+  "leaf_universe_count": 88,
+  "qualifying_update_count": 13,
+  "qualifying_updates": [
+    {
+      "factual_summary": "GitHub added per-model token breakdowns to Copilot usage reports, including input, output, cache read, cache write tokens, and consumed AI credits.",
+      "id": "github-copilot-token-breakdown-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "AI credits",
+        "usage report"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_date_evidence": "GitHub changelog shows August 11, 2026.",
+      "why_matters_for_leaf": "Supports local cost telemetry and infrastructure economics by making model-level token drivers inspectable instead of only showing aggregate credits."
+    },
+    {
+      "factual_summary": "GitHub Copilot for JetBrains added Copilot memory across agent chat sessions, Ollama as a BYOK provider, enterprise managed settings for plugin and MCP access, Codex debug visibility, and updated permission modes/customizations through instructions and skills.",
+      "id": "github-copilot-memory-jetbrains-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "Copilot memory",
+        "Ollama",
+        "Codex",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Ollama",
+        "Codex",
+        "MCP"
+      ],
+      "visible_date_evidence": "GitHub changelog shows August 11, 2026.",
+      "why_matters_for_leaf": "Reinforces that memory, local model routing, plugin access, MCP permissions, debug logs, and skill customization should be separate governed layers rather than opaque chat history."
+    },
+    {
+      "factual_summary": "GitHub announced Agent Plugins 1.0 support in VS Code, Copilot CLI, the Copilot SDK, and the Copilot app. The package can bundle skills and MCP server configuration, uses plugin.json plus skills/ and mcp.json locations, and is governed through enterprise managed settings and MCP allowlists.",
+      "id": "github-agent-plugins-ga-2026-08-12",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "named_entities": [
+        "Agent Plugins 1.0",
+        "VS Code",
+        "GitHub Copilot CLI",
+        "GitHub Copilot SDK",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "upstream_owned_entities": [
+        "Agent Plugins",
+        "GitHub Copilot",
+        "MCP",
+        "VS Code"
+      ],
+      "visible_date_evidence": "GitHub changelog shows August 12, 2026.",
+      "why_matters_for_leaf": "Gives local practice evidence for separating reusable skill/runbook content from the portable package and for treating marketplace, MCP, and client-specific namespaces as governance surfaces."
+    },
+    {
+      "factual_summary": "GitHub Copilot weekly releases emphasized portable plugins, plugin version management, side chat for discussing an agent question before answering, and Copilot CLI /tasks for managing subagents and their tasks.",
+      "id": "github-copilot-weekly-agent-workflows-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "Agent Plugins 1.0"
+      ],
+      "published_or_updated_at": "2026-08-13",
+      "source_url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Agent Plugins"
+      ],
+      "visible_date_evidence": "GitHub weekly changelog shows August 13, 2026.",
+      "why_matters_for_leaf": "Adds workflow evidence that agent questions, subagent task state, and plugin versions need visible management rather than disappearing inside a single conversation."
+    },
+    {
+      "factual_summary": "GitHub began rolling out Grok 4.6 in Copilot for agentic coding and complex multi-step workflows, with usage-based billing at provider list pricing and an enterprise/business policy off by default.",
+      "id": "github-grok-46-copilot-2026-08-14",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "named_entities": [
+        "Grok 4.6",
+        "xAI",
+        "GitHub Copilot"
+      ],
+      "published_or_updated_at": "2026-08-14",
+      "source_url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "upstream_owned_entities": [
+        "Grok",
+        "xAI",
+        "GitHub Copilot"
+      ],
+      "visible_date_evidence": "GitHub changelog shows August 14, 2026.",
+      "why_matters_for_leaf": "Local implication is not the model background, which is upstream-owned; it is that model additions should pass through workflow-fit, cost, and admin-policy criteria before use in senior or high-volume agent workflows."
+    },
+    {
+      "factual_summary": "GitHub rolled out MAI-Code-1.1-Flash in Copilot as a smaller coding model with native image support, improved coding/tool use, and a reported 73% lower list price than MAI-Code-1-Flash.",
+      "id": "github-mai-code-flash-cost-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "MAI-Code-1.1-Flash",
+        "GitHub Copilot"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/",
+      "upstream_owned_entities": [
+        "MAI-Code",
+        "GitHub Copilot"
+      ],
+      "visible_date_evidence": "GitHub changelog shows August 11, 2026.",
+      "why_matters_for_leaf": "Supports local routing guidance that lightweight workflows can use cheaper models when quality evidence and policy enablement support that choice."
+    },
+    {
+      "factual_summary": "Anthropic added beta Compliance API endpoints that return metadata and transcripts for Cowork and Claude Code sessions running on users machines, and added an API response header identifying the workspace behind a request.",
+      "id": "anthropic-compliance-local-sessions-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Cowork",
+        "Compliance API"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Cowork"
+      ],
+      "visible_date_evidence": "Anthropic platform release notes show August 11, 2026.",
+      "why_matters_for_leaf": "Reinforces local practice that session transcripts, workspace identity, and local-machine agent records can become auditable rehydration evidence, but should be treated as governed compliance data."
+    },
+    {
+      "factual_summary": "The article argues that periodic governance fails for agentic systems because prompts, memory, model behavior, and tool access change continuously; it emphasizes live discovery, assessment, monitoring, enforcement, proof, identity, permissions, and accountability trails.",
+      "id": "expresscomputer-agentic-governance-2026-08-17",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "named_entities": [
+        "ISO/IEC 42001",
+        "NIST AI RMF",
+        "EU AI Act"
+      ],
+      "published_or_updated_at": "2026-08-17",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+      "upstream_owned_entities": [
+        "ISO/IEC 42001",
+        "NIST AI RMF",
+        "EU AI Act"
+      ],
+      "visible_date_evidence": "Express Computer article shows On Aug 17, 2026.",
+      "why_matters_for_leaf": "Supports downstream operating-model guidance that outcome autonomy requires comparable continuous evidence and governance, not one-time process approval."
+    },
+    {
+      "factual_summary": "The article says enterprise AI agents need behavioral baselines distinct from human behavior, including identities, permissions, accessed systems, APIs called, data retrieved or modified, business purpose, privilege level, and objective-consistent action sequences.",
+      "id": "techradar-agent-behavioral-baselines-2026-08-12",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Gartner",
+        "Agentic AI Security",
+        "Exabeam"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "source_url": "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "upstream_owned_entities": [
+        "Gartner",
+        "Exabeam"
+      ],
+      "visible_date_evidence": "TechRadar article shows Published 12 August 2026.",
+      "why_matters_for_leaf": "Adds practice evidence for evaluating agent autonomy by purpose-aligned behavior and comparable visibility rather than by human-user security assumptions."
+    },
+    {
+      "factual_summary": "Axios reported the Open Secure AI Alliance SAFE proposal for AI-agent security incident reporting, including preservation of prompts, traces, tool calls, identities, permissions, credentials, and staged reporting timelines.",
+      "id": "axios-safe-agent-incident-reporting-2026-08-11",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "named_entities": [
+        "Open Secure AI Alliance",
+        "Shared AI Findings Exchange",
+        "Linux Foundation",
+        "Nvidia",
+        "Cisco",
+        "CrowdStrike"
+      ],
+      "published_or_updated_at": "2026-08-11",
+      "source_url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "upstream_owned_entities": [
+        "Open Secure AI Alliance",
+        "Linux Foundation",
+        "Nvidia",
+        "Cisco",
+        "CrowdStrike"
+      ],
+      "visible_date_evidence": "Axios article is within the 7-day window and page references the SAFE proposal.",
+      "why_matters_for_leaf": "Supports local request-packaging and rehydration guidance: prompts, tool traces, identities, permissions, and credentials may need preservation as incident evidence, but the security framework itself belongs upstream or governance ingest."
+    },
+    {
+      "factual_summary": "The article frames Linux as a production host for tool-using AI agents because of open automation interfaces and isolation primitives, while stressing unprivileged identities, denied-by-default network/filesystem access, containers or microVMs, side-effect recording, rollback, and policy outside the agent loop.",
+      "id": "wavect-linux-agent-infrastructure-2026-08-12",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "Linux",
+        "SUSE",
+        "microVMs"
+      ],
+      "published_or_updated_at": "2026-08-12",
+      "source_url": "https://wavect.io/blog/linux-for-ai-agents/",
+      "upstream_owned_entities": [
+        "Linux",
+        "SUSE"
+      ],
+      "visible_date_evidence": "Wavect article shows 12 Aug 2026 and Last reviewed August 12, 2026.",
+      "why_matters_for_leaf": "Supports local infrastructure economics by reminding that local or self-hosted agent execution must count identity, isolation, audit, rollback, and operator skill as part of the cost."
+    },
+    {
+      "factual_summary": "The guide summarizes repository permissions, shell execution, prompt injection, and credential leak risks for coding agents, with recommendations for least-privilege work directories, worktrees, sensitive files outside the workspace, read-only mounts, tiered command approvals, and sandboxing.",
+      "id": "codepick-coding-agent-security-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "GitHub Copilot",
+        "Gemini CLI",
+        "Cursor",
+        "OWASP MCP Top 10"
+      ],
+      "published_or_updated_at": "2026-08-13",
+      "source_url": "https://codepick.dev/en/guides/ai-coding-agent-security-2026/",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "Gemini CLI",
+        "Cursor",
+        "OWASP MCP Top 10"
+      ],
+      "visible_date_evidence": "CodePick page shows Published 2026-08-13 and research timestamp 2026-08-13.",
+      "why_matters_for_leaf": "Adds local evidence for treating repository access, shell commands, untrusted issue text, MCP tool descriptions, and credential exposure as request-package and retrieval boundaries."
+    },
+    {
+      "factual_summary": "The article argues that agentic RAG wraps retrieval in a plan, evaluate, retry loop for complex multi-hop questions, while simple queries should remain on cheaper classic retrieval; it emphasizes citations, retrieval evaluation, chunking, and faithfulness measurement.",
+      "id": "raulji-agentic-rag-2026-08-13",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "named_entities": [
+        "Agentic RAG",
+        "Raulji Technologies"
+      ],
+      "published_or_updated_at": "2026-08-13",
+      "source_url": "https://www.rauljitechnologies.com/blog/agentic-rag-2026/",
+      "upstream_owned_entities": [
+        "RAG",
+        "Agentic RAG"
+      ],
+      "visible_date_evidence": "Raulji Technologies page shows Aug 13, 2026.",
+      "why_matters_for_leaf": "Supports local RAG practice that provenance, citations, and retrieval-quality measurement should decide when agentic retrieval complexity is justified."
+    }
+  ],
+  "run_timestamp_local": "2026-08-17T21:02:57-04:00",
+  "run_timestamp_utc": "2026-08-18T01:02:57Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+  ],
+  "source_urls_checked": [
+    "https://au.indeed.com/q-ai-agentic-engineer-jobs.html",
+    "https://blakecrosley.com/blog/agent-plugins-standard",
+    "https://codepick.dev/en/guides/ai-coding-agent-security-2026/",
+    "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+    "https://getdx.com/blog/ai-coding-assistant-pricing/",
+    "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent/",
+    "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+    "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+    "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+    "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+    "https://keep.md/blog/context-engineering",
+    "https://openai.com/index/builders-guide-to-gpt-5-6/",
+    "https://platform.claude.com/docs/en/release-notes/overview",
+    "https://pub.towardsai.net/how-id-learn-to-build-ai-agents-in-2026-the-8-week-path-2323d654ea46",
+    "https://wavect.io/blog/linux-for-ai-agents/",
+    "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+    "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+    "https://www.rauljitechnologies.com/blog/agentic-rag-2026/",
+    "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+      "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/",
+      "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "https://wavect.io/blog/linux-for-ai-agents/",
+      "https://getdx.com/blog/ai-coding-assistant-pricing/",
+      "https://github.blog/changelog/2026-08-03-customize-the-reasoning-level-for-copilot-cloud-agent/"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://au.indeed.com/q-ai-agentic-engineer-jobs.html",
+      "https://pub.towardsai.net/how-id-learn-to-build-ai-agents-in-2026-the-8-week-path-2323d654ea46"
+    ],
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": [
+      "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://platform.claude.com/docs/en/release-notes/overview",
+      "https://blakecrosley.com/blog/agent-plugins-standard",
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/"
+    ],
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": [
+      "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+      "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting"
+    ],
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": [
+      "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://blakecrosley.com/blog/agent-plugins-standard",
+      "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/"
+    ],
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": [
+      "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/",
+      "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://platform.claude.com/docs/en/release-notes/overview",
+      "https://keep.md/blog/context-engineering",
+      "https://openai.com/index/builders-guide-to-gpt-5-6/"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://www.techradar.com/pro/enterprise-ai-needs-a-new-model-for-behavioral-intelligence",
+      "https://keep.md/blog/context-engineering"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://platform.claude.com/docs/en/release-notes/overview",
+      "https://codepick.dev/en/guides/ai-coding-agent-security-2026/",
+      "https://keep.md/blog/context-engineering",
+      "https://openai.com/index/builders-guide-to-gpt-5-6/"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://platform.claude.com/docs/en/release-notes/overview",
+      "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://platform.claude.com/docs/en/release-notes/overview",
+      "https://wavect.io/blog/linux-for-ai-agents/"
+    ],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "https://codepick.dev/en/guides/ai-coding-agent-security-2026/"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "https://codepick.dev/en/guides/ai-coding-agent-security-2026/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://www.rauljitechnologies.com/blog/agentic-rag-2026/",
+      "https://keep.md/blog/context-engineering"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "https://github.blog/changelog/2026-08-11-copilot-memory-and-ollama-in-github-copilot-for-jetbrains/",
+      "https://codepick.dev/en/guides/ai-coding-agent-security-2026/",
+      "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "https://blakecrosley.com/blog/agent-plugins-standard"
+    ]
+  }
+}
