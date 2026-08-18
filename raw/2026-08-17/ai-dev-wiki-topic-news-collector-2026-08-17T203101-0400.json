@@ -1,0 +1,460 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector",
+    "run_timestamp": "2026-08-17T20:31:01-04:00",
+    "last_run_timestamp": "2026-08-17T00:31:20.227Z",
+    "artifact_created_at": "2026-08-17T20:31:01-04:00"
+  },
+  "cutoff_window": {
+    "relative_rule": "Include only public sources published or visibly updated within the last 2 days relative to run_timestamp.",
+    "start": "2026-08-15T20:31:01-04:00",
+    "end": "2026-08-17T20:31:01-04:00",
+    "date_handling": "Date-only August 17, 2026 sources were treated as qualifying because the full local day falls inside the current run window. Date-only August 15, 2026 sources were treated as cutoff-boundary ambiguous unless an exact time was visible. Future-dated August 18, 2026 references were excluded."
+  },
+  "federation": {
+    "local_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule": "The local wiki owns AI-assisted development practice, workflow, governance, implementation, verification, and adoption lenses. Broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques are upstream-owned.",
+    "source": "docs/wiki/federation.md"
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_queries": [
+    "\"AI-assisted development\" \"Aug 17, 2026\" code review",
+    "\"MCP\" \"Aug 17, 2026\" \"agent\" \"approval\"",
+    "\"context engineering\" \"August 17, 2026\" \"coding agents\"",
+    "\"AI code review\" \"August 18, 2026\"",
+    "site:github.blog/changelog \"August 17, 2026\" Copilot agent coding",
+    "site:openai.com/index \"August 17, 2026\" \"Codex\"",
+    "\"software engineering evals\" \"August 17, 2026\" AI agents",
+    "\"RAG for codebases\" \"August 17, 2026\"",
+    "\"tool calls\" \"August 17, 2026\" \"coding agents\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-08-17-freecodecamp-context-files",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.freecodecamp.org/news/how-to-manage-context-files-in-your-codebase-and-get-better-agent-output/",
+      "source_title": "How to Manage Context Files in Your Codebase and Get Better Output From AI Coding Agents",
+      "publisher": "freeCodeCamp",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The article argues that coding agents miss repository-specific conventions when teams keep architecture decisions, testing standards, and dependency policies only in people's heads or review comments.",
+      "why_it_matters": "Supports local practice guidance for durable context files, convention capture, and instruction surfaces that reduce agent rewrites caused by missing project context.",
+      "named_entities": [
+        "freeCodeCamp",
+        "coding agents",
+        "context files",
+        "Jest",
+        "Node test runner"
+      ],
+      "upstream_owned_entities": [
+        "freeCodeCamp",
+        "Jest",
+        "Node.js"
+      ],
+      "local_practice_implication": "Context architecture pages can use this as raw evidence for documenting test runners, dependency policy, service boundaries, and architectural conventions in agent-readable files."
+    },
+    {
+      "id": "2026-08-17-oreilly-spec-exit-strategy",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://www.oreilly.com/radar/when-ai-writes-the-code-specifications-need-an-exit-strategy/",
+      "source_title": "When AI Writes the Code, Specifications Need an Exit Strategy",
+      "publisher": "O'Reilly Radar",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The article warns that spec-driven agent work can accumulate requirements, plans, review reports, and Markdown artifacts that drift from the code unless teams define small change briefs and close out obsolete specifications.",
+      "why_it_matters": "Directly informs local source workflow and prompt artifact boundaries: agent plans and specs need lifecycle rules, exit criteria, and synchronization checks so documentation does not become a shadow codebase.",
+      "named_entities": [
+        "O'Reilly",
+        "spec-driven agent work",
+        "Markdown specifications",
+        "requirements engineering"
+      ],
+      "upstream_owned_entities": [
+        "O'Reilly"
+      ],
+      "local_practice_implication": "Prompt-and-instructions guidance should emphasize artifact retirement, source-of-truth hierarchy, and change-brief granularity for coding-agent work."
+    },
+    {
+      "id": "2026-08-17-gh-aw-approval-hypervisor",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_url": "https://github.github.com/gh-aw/blog/2026-08-17-weekly-update/",
+      "source_title": "Weekly Update - August 17, 2026",
+      "publisher": "GitHub Agentic Workflows",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Date present in title and URL; search result reported one day old.",
+      "short_factual_summary": "The update notes an experimental safe output that lets agents unblock fork pull request workflow approvals under protected-file, workflow, pull-request, and token guardrails; it also mentions cloud-hypervisor runtime isolation and expanded confused-deputy protection for pull_request_target triggers.",
+      "why_it_matters": "Provides fresh practice evidence for agent-run approval gates, CI unblocking as a governed action, hypervisor isolation, and confused-deputy defenses in source workflows.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "approve-workflow-run",
+        "fork pull request workflow runs",
+        "cloud-hypervisor",
+        "pull_request_target"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "cloud-hypervisor"
+      ],
+      "local_practice_implication": "Agent workflow pages can distinguish safe CI approval outputs from broad repo write authority and require evidence for protected-file and allowed-workflow scoping."
+    },
+    {
+      "id": "2026-08-17-openai-defenders-window",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://openai.com/index/the-defenders-window/",
+      "source_title": "The Defender's Window",
+      "publisher": "OpenAI",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "OpenAI recommends giving security teams approved agent access to codebases, infrastructure configuration, and technical documentation; it frames agentic security work around triage, secure-code review, CI checks, backlog prioritization, playbooks, and tabletop exercises.",
+      "why_it_matters": "Relevant to local governance practices for scoped agent permissions, security-specific skills, vulnerability backlog handling, and human-supervised rollout of defensive automation.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex Security plugin",
+        "ChatGPT Work",
+        "GPT-5.6 Sol",
+        "DMARC"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex Security plugin",
+        "ChatGPT",
+        "GPT-5.6 Sol",
+        "DMARC"
+      ],
+      "local_practice_implication": "Governance pages can capture the practice lens: agents should receive approved access, security playbooks, prioritized targets, and CI integration rather than unconstrained broad autonomy."
+    },
+    {
+      "id": "2026-08-17-pluralsight-token-training",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://www.pluralsight.com/resources/blog/software-development/popular-AI-tools-software-engineers",
+      "source_title": "The 5 AI tools modern software engineers are using in 2026",
+      "publisher": "Pluralsight",
+      "visible_date": "Aug 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The article says engineering teams need AI training that includes token management, model choice, usage monitoring, and recognition of context-overload symptoms, not only tool familiarity.",
+      "why_it_matters": "Supports local adoption guidance that treats cost telemetry and context budgeting as developer operating skills for AI-assisted development teams.",
+      "named_entities": [
+        "Pluralsight",
+        "AI tools",
+        "token management",
+        "context overload"
+      ],
+      "upstream_owned_entities": [
+        "Pluralsight"
+      ],
+      "local_practice_implication": "Adoption pages can frame token budgets, usage reviews, and context-overload detection as explicit team training and operating-model requirements."
+    },
+    {
+      "id": "2026-08-17-remedio-circleci-mcp-rce",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "source_url": "https://remedio.io/blog/the-critical-unauthenticated-rce-vulnerability-in-circlecis-mcp-server/",
+      "source_title": "The Critical Unauthenticated RCE Vulnerability In CircleCI's MCP Server",
+      "publisher": "Remedio",
+      "visible_date": "Aug 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The post reports a critical unauthenticated remote-code-execution issue in a CircleCI MCP server scenario where a shared, network-reachable server can carry an organization token for team or agent use.",
+      "why_it_matters": "Reinforces MCP governance practice: shared tool servers that hold CI/CD tokens need authentication, network exposure review, token scoping, and exploit-path testing before being made available to agents.",
+      "named_entities": [
+        "Remedio",
+        "CircleCI MCP server",
+        "MCP",
+        "CI/CD",
+        "CVSS 10.0"
+      ],
+      "upstream_owned_entities": [
+        "Remedio",
+        "CircleCI",
+        "MCP"
+      ],
+      "local_practice_implication": "Retrieval-and-tools guidance should treat MCP servers with build-system credentials as privileged services requiring approval evidence and isolation, not ordinary local tools."
+    },
+    {
+      "id": "2026-08-17-devopsdigest-ai-release-tax",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://www.devopsdigest.com/stop-paying-the-ai-release-tax-we-solved-the-velocity-problem-but-were-shipping-disasters-faster",
+      "source_title": "Stop Paying the AI \"Release Tax\": We Solved the Velocity Problem, but We're Shipping Disasters Faster",
+      "publisher": "DEVOPSdigest",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The piece argues that AI coding speed shifts the bottleneck to defect escape, change failure, trust, and verification, especially as agents begin acting on enterprise systems rather than only generating code.",
+      "why_it_matters": "Adds practice-level evidence for verification gates, release confidence metrics, and defect containment as first-class concerns in AI-assisted delivery.",
+      "named_entities": [
+        "DEVOPSdigest",
+        "Sauce Labs",
+        "AI coding assistants",
+        "autonomous AI agents",
+        "OpenClaw"
+      ],
+      "upstream_owned_entities": [
+        "DEVOPSdigest",
+        "Sauce Labs",
+        "OpenClaw"
+      ],
+      "local_practice_implication": "Verification pages can use this as a routing note for measuring trust, defect escape, and change failure instead of accepting throughput as the primary adoption metric."
+    },
+    {
+      "id": "2026-08-17-octopus-local-agent-sandbox",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "source_url": "https://octopus.com/blog/local-ai-agent-sandboxes",
+      "source_title": "Sandboxing local AI Agents",
+      "publisher": "Octopus Deploy",
+      "visible_date": "August 17, 2026",
+      "date_basis": "Publication date visible on page and page footer.",
+      "short_factual_summary": "The post proposes a VM sandbox for local agents to provide source-code access while denying host credentials, commits, pushes, software installation, and other sensitive local or remote capabilities.",
+      "why_it_matters": "Strong local-practice fit for permissions, approvals, sandbox profiles, package-install risk, host credential isolation, and approval-fatigue reduction.",
+      "named_entities": [
+        "Octopus Deploy",
+        "Vagrant",
+        "Claude Code",
+        "MCP",
+        "local AI agents"
+      ],
+      "upstream_owned_entities": [
+        "Octopus Deploy",
+        "Vagrant",
+        "Claude Code",
+        "MCP"
+      ],
+      "local_practice_implication": "Governance pages can separate capability denial by environment from repeated human confirmation prompts and define minimum sandbox controls for local coding agents."
+    },
+    {
+      "id": "2026-08-17-wavect-tool-output-cost",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://wavect.io/blog/codag-cost-control/",
+      "source_title": "How Coding Agents Keep Token Bills in Check with Output Compression",
+      "publisher": "Wavect",
+      "visible_date": "17 Aug 2026; Last reviewed August 17, 2026",
+      "date_basis": "Publication and review dates visible on page.",
+      "short_factual_summary": "The article identifies command output, repeated schema noise, debug retries, and handoff handbacks as common sources of tool-loop token waste, and recommends output compression with evidence retention and deterministic retrieval.",
+      "why_it_matters": "Relevant to context architecture and tool governance because cost control is not just model selection; it depends on tool-output shaping, trace hygiene, and replayable evidence.",
+      "named_entities": [
+        "Wavect",
+        "coding agents",
+        "MCP tools",
+        "browser automation",
+        "tool output compression"
+      ],
+      "upstream_owned_entities": [
+        "Wavect",
+        "MCP"
+      ],
+      "local_practice_implication": "Application-pattern and retrieval pages can distinguish lossy prompt compression from auditable output summarization that preserves raw evidence for replay."
+    },
+    {
+      "id": "2026-08-17-linkedin-codebase-rag",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://www.linkedin.com/pulse/best-rag-architecture-embedding-model-codebases-shyam-achuthan-j3kjc",
+      "source_title": "The Best RAG Architecture and Embedding Model for Codebases",
+      "publisher": "LinkedIn",
+      "visible_date": "Published Aug 17, 2026",
+      "date_basis": "Publication date visible on page.",
+      "short_factual_summary": "The post argues that codebase retrieval quality depends more on AST-aware chunking, hybrid lexical and semantic retrieval, freshness, graph expansion, reranking, and project-specific eval sets than on embedding-model choice alone.",
+      "why_it_matters": "Practice-level fit for RAG-for-codebases guidance: teams should build retrieval evals from their own merged PRs and verify semantic results against lexical indexes and symbol graphs.",
+      "named_entities": [
+        "LinkedIn",
+        "RAG",
+        "AST-aware chunking",
+        "hybrid retrieval",
+        "Merkle diffing",
+        "Voyage AI",
+        "Cursor",
+        "CORE-Bench"
+      ],
+      "upstream_owned_entities": [
+        "LinkedIn",
+        "RAG",
+        "Voyage AI",
+        "Cursor",
+        "CORE-Bench"
+      ],
+      "local_practice_implication": "Retrieval pages can capture the local decision lens: code RAG should be evaluated as a retrieval toolbox with freshness and PR-derived evals, while named tools and benchmarks route upstream."
+    },
+    {
+      "id": "2026-08-17-gitkraken-gitlens-flow",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://aithority.com/machine-learning/gitkraken-introduces-gitlens-19-bringing-human-and-ai-workflows-together-in-one-workbench/",
+      "source_title": "GitKraken Introduces GitLens 19, Bringing Human and AI Workflows Together in One Workbench",
+      "publisher": "AiThority / PRNewswire",
+      "visible_date": "Aug 17, 2026",
+      "date_basis": "Publication date visible in search result text and page excerpt.",
+      "short_factual_summary": "The release frames repository-wide context, stacked pull requests, worktrees, incoming changes, and AI-assisted development as one coordination surface for reviewing and merging parallel human and agent changes.",
+      "why_it_matters": "Useful local-practice evidence that AI-assisted development shifts source workflows toward managing many parallel branches, worktrees, and PR stacks rather than simply generating more code.",
+      "named_entities": [
+        "GitKraken",
+        "GitLens 19",
+        "Commit Graph",
+        "stacked pull requests",
+        "worktrees",
+        "AI-assisted development"
+      ],
+      "upstream_owned_entities": [
+        "GitKraken",
+        "GitLens",
+        "AiThority",
+        "PRNewswire"
+      ],
+      "local_practice_implication": "Source-workflow pages can route broad product details upstream while preserving the practice implication: reviewable AI work benefits from smaller dependent PRs and visible branch/worktree relationships."
+    },
+    {
+      "id": "2026-08-17-benchlm-agentic-webdev-eval",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://benchlm.ai/benchmarks/designarenaagenticwebdev",
+      "source_title": "Design Arena Agentic Web Dev Elo",
+      "publisher": "BenchLM.ai",
+      "visible_date": "Data verified August 17, 2026; Updated August 17, 2026",
+      "date_basis": "Verification and update dates visible on page.",
+      "short_factual_summary": "The page describes a display-only Elo rating from blinded comparisons of deployed multi-file React applications built by coding agents, including long-horizon behavior such as tool calls, retries, and failure recovery.",
+      "why_it_matters": "Practice-level evidence for evaluating agent-built applications through deployed artifacts and multi-step behavior, not only static code patches or isolated unit tests.",
+      "named_entities": [
+        "BenchLM.ai",
+        "Design Arena Agentic Web Dev",
+        "React",
+        "Elo",
+        "coding agents"
+      ],
+      "upstream_owned_entities": [
+        "BenchLM.ai",
+        "Design Arena",
+        "React"
+      ],
+      "local_practice_implication": "Verification pages can note that frontend-agent evals should include deployed behavior, retries, tool-call traces, and recovery evidence; model leaderboard specifics route upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.devopsdigest.com/the-invisible-cost-of-ai-generated-code-reviews",
+      "source_title": "The Invisible Cost of AI-Generated Code Reviews",
+      "visible_date": "Apr 17, 2026",
+      "reason": "Out of the two-day cutoff window despite strong practice relevance."
+    },
+    {
+      "source_url": "https://www.devopsdigest.com/coderabbit-releases-agentic-change-management",
+      "source_title": "CodeRabbit Releases Agentic Change Management",
+      "visible_date": "5 days ago in search result; August 18, 2026 page sidebar item also visible",
+      "reason": "Search result indicated source was older than the two-day window, and page-visible date evidence was ambiguous because August 18 appeared in adjacent page content."
+    },
+    {
+      "source_url": "https://explainx.ai/blog/enable-1m-token-context-window-codex-cli-gpt-5-6-sol-august-2026",
+      "source_title": "Enable 1M-Token Context Window in Codex CLI",
+      "visible_date": "Search result reported published yesterday and referenced August 17, 2026",
+      "reason": "Excluded because it is primarily a product/model configuration news item for upstream-owned Codex and GPT model coverage; local practice implication overlaps with existing context-budget governance and needs upstream routing first."
+    },
+    {
+      "source_url": "https://pi.dev/packages/betterwright?name=mcp",
+      "source_title": "BetterWright",
+      "visible_date": "Search result reported 11 hours ago; no clear publication or update date visible on opened page.",
+      "reason": "Excluded for missing visible source date even though the page has local practice relevance for browser-agent download approval and skill/MCP packaging."
+    },
+    {
+      "source_url": "https://benchlm.ai/coding",
+      "source_title": "Best LLM for Coding (August 2026): SWE-bench & LiveCodeBench Ranked",
+      "visible_date": "Data refreshed August 17, 2026",
+      "reason": "Excluded from local findings because the page is primarily a broad model leaderboard owned by the upstream AI wiki. A separate display-only agentic web-dev eval page was retained for local evaluation-practice implications."
+    },
+    {
+      "source_url": "https://conf.researchr.org/details/icse-2026/agent-2026-papers/6/Meta-RAG-on-Large-Codebases-Using-Code-Summarization",
+      "source_title": "Meta-RAG on Large Codebases Using Code Summarization",
+      "visible_date": "Search result had no publication/update date; conference page crawl was current only.",
+      "reason": "Excluded for missing visible within-window publication or update date."
+    },
+    {
+      "source_url": "https://aiagentsdirectory.com/news",
+      "source_title": "AI Agents News | Daily Briefs and 7-Day Summary",
+      "visible_date": "Monday, August 17, 2026 in search result",
+      "reason": "Excluded as a broad aggregator with an implausible unverified acquisition item and upstream-owned entity coverage."
+    },
+    {
+      "source_url": "https://qconsf.com/",
+      "source_title": "QCon San Francisco 2026",
+      "visible_date": "Event date Nov 18; no publication/update date visible in search result.",
+      "reason": "Excluded because event schedule dates are not publication or update dates for this collector."
+    },
+    {
+      "source_url": "https://www.instagram.com/utkarshhh.ai/p/DcJF9gCmWC4/",
+      "source_title": "Andrew Ng's team read over 10000 AI job ads...",
+      "visible_date": "August 17, 2026 in search result",
+      "reason": "Excluded because the source is social-media content with insufficient accessible detail for durable practice extraction."
+    },
+    {
+      "source_url": "https://medium.com/%40robert.broeckelmann/mcp-governance-with-bifrost-ai-gateway-89c06b9ecaeb",
+      "source_title": "MCP Governance With Bifrost AI Gateway",
+      "visible_date": "No clear visible publication date in search result.",
+      "reason": "Excluded for missing visible within-window date and because the apparent focus is an upstream-owned gateway/product implementation."
+    }
+  ],
+  "follow_up_notes": [
+    "Route broad entity details about OpenAI, Codex, GitHub, GitKraken, GitLens, CircleCI, MCP, BenchLM, Design Arena, React, Claude Code, Vagrant, Voyage AI, Cursor, and named models to the upstream AI wiki if durable entity coverage is needed.",
+    "During ingest, consider local lenses for durable context files, specification lifecycle and exit criteria, fork-PR approval gates, local-agent sandbox profiles, MCP server exposure review, tool-output compression with evidence retention, PR-derived retrieval eval sets, and deployed-application agent evals.",
+    "Do not synthesize this collector output directly into docs/wiki until the raw-source ingest workflow processes it and runs the normal project-wiki verification gates."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}
