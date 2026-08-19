@@ -1,0 +1,507 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-08-19T01:01:46Z",
+    "policy": "Only public sources visibly published or updated within the last 7 days were included; missing, ambiguous, future-dated, stale, or boundary-only dates were excluded.",
+    "start_utc": "2026-08-12T01:01:46Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate": "Google MCP stateless updates",
+      "reason": "Published before the 7-day cutoff window.",
+      "source_url": "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+      "visible_date": "2026-08-05"
+    },
+    {
+      "candidate": "GitHub per-model token breakdown",
+      "reason": "Date-only item falls before the strict UTC cutoff and is treated as boundary/out-of-window for this run.",
+      "source_url": "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+      "visible_date": "2026-08-11"
+    },
+    {
+      "candidate": "Anthropic API agent capabilities",
+      "reason": "Opened page did not expose a clear qualifying publication date for the article; related posts include dates but are not the candidate page.",
+      "source_url": "https://www.anthropic.com/news/agent-capabilities-api",
+      "visible_date": "not visible in opened article body"
+    },
+    {
+      "candidate": "Claude Code on the web",
+      "reason": "Opened page did not expose a clear qualifying publication date for the article; related posts include dates but are not the candidate page.",
+      "source_url": "https://www.anthropic.com/news/claude-code-on-the-web",
+      "visible_date": "not visible in opened article body"
+    },
+    {
+      "candidate": "Dust Amplitude MCP integration",
+      "reason": "Relevant to self-service analytics and automated reporting, but outside the 7-day cutoff window.",
+      "source_url": "https://docs.dust.tt/docs/changelog#amplitude-mcp-integration-query-your-product-data-with-natural-language",
+      "visible_date": "2026-04-09"
+    },
+    {
+      "candidate": "Instagram AI coding agent reel",
+      "reason": "Result had relative/social metadata without enough public page detail for a durable sourced artifact.",
+      "source_url": "https://www.instagram.com/ai_world_academy/reel/DcKopSkADnZ/",
+      "visible_date": "relative only / social result"
+    },
+    {
+      "candidate": "AI coding agents 2026 roadmap",
+      "reason": "Outside the 7-day cutoff window.",
+      "source_url": "https://codepick.dev/en/guides/ai-coding-agents-2026-roadmap/",
+      "visible_date": "2026-06-01"
+    },
+    {
+      "candidate": "Prompt injection defense guide",
+      "reason": "Outside the 7-day cutoff window.",
+      "source_url": "https://www.getmaxim.ai/articles/prompt-injection-defense-for-production-ai-agents-a-complete-2026-guide/",
+      "visible_date": "2026-06-02"
+    },
+    {
+      "candidate": "Prompt injection attacks guide",
+      "reason": "Outside the 7-day cutoff window for this run.",
+      "source_url": "https://www.sysdig.com/learn-cloud-native/prompt-injection",
+      "visible_date": "2026-08-07"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "id": "github-copilot-jetbrains-managed-settings-2026-08-18",
+      "summary": "GitHub Copilot for JetBrains added enterprise managed settings for plugin governance, MCP server allowlists, managed OpenTelemetry, and organization-controlled permission modes, including disabling approval bypass/autopilot behavior."
+    },
+    {
+      "id": "github-copilot-weekly-agent-workflows-2026-08-13",
+      "summary": "GitHub described portable Agent Plugins 1.0, Copilot app side chat for pending agent questions, Copilot CLI /tasks management, queued prompts and shell commands during an agent turn, plan plus autopilot headless mode, /rewind, and session-preserving /app handoff."
+    },
+    {
+      "id": "github-agent-plugins-governance-2026-08-12",
+      "summary": "Agent Plugins 1.0 became generally available across VS Code, Copilot CLI, the Copilot SDK, and the Copilot app; the package format can bundle skills and MCP server configuration and can be governed with enterprise managed settings and MCP allowlists."
+    },
+    {
+      "id": "github-rule-insights-org-governance-2026-08-12",
+      "summary": "GitHub introduced organization-level rule insights in public preview, aggregating repository ruleset evaluations, failed and bypassed runs, filters, top bypassed repositories, and CSV export for reporting."
+    },
+    {
+      "id": "axios-a2a-aaif-2026-08-17",
+      "summary": "Axios reported that Google-created Agent2Agent Protocol is moving to the Agentic AI Foundation, alongside MCP, to advance neutral interoperability for communication among independent agents."
+    },
+    {
+      "id": "techradar-mcp-context-myths-2026-08-17",
+      "summary": "TechRadar argued that MCP is a connectivity/access layer, not a replacement for APIs or domain context, and that organizations still need governed data exposure, permissions, auditability, and matter-aware context."
+    },
+    {
+      "id": "techradar-linux-ai-code-review-2026-08-13",
+      "summary": "TechRadar reported Linus Torvalds describing unusually large Linux 7.2 release candidates as a new normal driven by AI review tools producing bug reports, while humans still write, submit, and maintain the fixes."
+    },
+    {
+      "id": "atlassian-rovo-a2a-access-controls-2026-08-16",
+      "summary": "Atlassian Feature Focus lists Rovo updates including A2A-based third-party agent connectivity, Rovo Insights for adoption visibility, and AI Access Controls for governing rollout pace and policy alignment."
+    },
+    {
+      "id": "dust-slack-auto-replies-2026-08-14",
+      "summary": "Dust added configurable Slack auto-replies that let a Dust agent respond in a channel without an @mention, either to every message or only the first message in a new thread."
+    },
+    {
+      "id": "devops-ai-code-production-incidents-2026-08-12",
+      "summary": "DevOps.com summarized a Wakefield/Sauce Labs survey: 80% of surveyed executives traced a production incident, outage, or customer-impacting defect to AI-generated code in the prior year, while only 6% said AI-generated code is tested with AI tools all the time or often."
+    }
+  ],
+  "federation_routing_note": "Broad ecosystem entity coverage for products, vendors, protocols, and models remains upstream-owned per docs/wiki/federation.md; this artifact records only downstream local practice implications.",
+  "follow_up_notes": [
+    {
+      "id": "github-copilot-jetbrains-managed-settings-2026-08-18",
+      "note": "Ingest should consider whether local MCP governance leaves need a JetBrains-specific managed-settings implication."
+    },
+    {
+      "id": "github-copilot-weekly-agent-workflows-2026-08-13",
+      "note": "Ingest should keep product details upstream but preserve local workflow implications for task queues, steering, rewind, and handoff evidence."
+    },
+    {
+      "id": "github-agent-plugins-governance-2026-08-12",
+      "note": "Route broad Agent Plugins background upstream; local ingest should focus on governance and portability boundaries."
+    },
+    {
+      "id": "github-rule-insights-org-governance-2026-08-12",
+      "note": "Consider adding this as evidence for reporting/bypass telemetry when ingesting governance leaves."
+    },
+    {
+      "id": "axios-a2a-aaif-2026-08-17",
+      "note": "Route ecosystem ownership upstream; local pages may need a boundary note separating A2A-style agent communication from MCP tool access."
+    },
+    {
+      "id": "techradar-mcp-context-myths-2026-08-17",
+      "note": "Ingest should avoid legal-sector specifics unless used as an example of context-governance boundaries."
+    },
+    {
+      "id": "techradar-linux-ai-code-review-2026-08-13",
+      "note": "Use as practice evidence for review firehose risk and human maintainer gates, not as Linux ecosystem background."
+    },
+    {
+      "id": "atlassian-rovo-a2a-access-controls-2026-08-16",
+      "note": "Keep Atlassian/Rovo entity coverage upstream; local implication is the governance/adoption telemetry pattern."
+    },
+    {
+      "id": "dust-slack-auto-replies-2026-08-14",
+      "note": "Ingest should focus on event-triggered automation controls, not Dust product coverage."
+    },
+    {
+      "id": "devops-ai-code-production-incidents-2026-08-12",
+      "note": "Potential digest-worthy signal for verification gates, but avoid overgeneralizing survey claims beyond its sampled executives."
+    }
+  ],
+  "named_entities": [
+    "AI Access Controls",
+    "AI review tools",
+    "Agent Plugins 1.0",
+    "Agent2Agent Protocol",
+    "Agentic AI Foundation",
+    "Atlassian Rovo",
+    "Copilot CLI",
+    "DevOps.com",
+    "Dust",
+    "GitHub",
+    "GitHub Copilot",
+    "GitHub Copilot SDK",
+    "Google",
+    "JetBrains IDEs",
+    "Kimi K3",
+    "Linus Torvalds",
+    "Linux",
+    "MAI-Code-1.1-Flash",
+    "MCP servers",
+    "Model Context Protocol",
+    "NetDocuments",
+    "Ollama",
+    "OpenTelemetry",
+    "Rovo Insights",
+    "Sauce Labs",
+    "Slack",
+    "VS Code",
+    "Wakefield Research",
+    "repository rulesets",
+    "rule insights"
+  ],
+  "qualifying_updates": [
+    {
+      "date_basis": "GitHub changelog line shows August 18, 2026.",
+      "factual_summary": "GitHub Copilot for JetBrains added enterprise managed settings for plugin governance, MCP server allowlists, managed OpenTelemetry, and organization-controlled permission modes, including disabling approval bypass/autopilot behavior.",
+      "follow_up_note": "Ingest should consider whether local MCP governance leaves need a JetBrains-specific managed-settings implication.",
+      "id": "github-copilot-jetbrains-managed-settings-2026-08-18",
+      "named_entities": [
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "visible_date": "2026-08-18",
+      "why_matters_for_leaf": "Reinforces local guidance that tool access, plugin marketplaces, telemetry routing, and agent permission modes need tier-specific and tool-call governance rather than per-developer defaults."
+    },
+    {
+      "date_basis": "GitHub changelog line shows August 13, 2026.",
+      "factual_summary": "GitHub described portable Agent Plugins 1.0, Copilot app side chat for pending agent questions, Copilot CLI /tasks management, queued prompts and shell commands during an agent turn, plan plus autopilot headless mode, /rewind, and session-preserving /app handoff.",
+      "follow_up_note": "Ingest should keep product details upstream but preserve local workflow implications for task queues, steering, rewind, and handoff evidence.",
+      "id": "github-copilot-weekly-agent-workflows-2026-08-13",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Agent Plugins 1.0",
+        "Kimi K3",
+        "MAI-Code-1.1-Flash",
+        "Ollama"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Agent Plugins",
+        "Kimi",
+        "MAI-Code",
+        "Ollama"
+      ],
+      "visible_date": "2026-08-13",
+      "why_matters_for_leaf": "Maps directly to local handoff, terminal-fleet, event-triggered, and orient-inspect-patch-verify practices because the product surface is making background task queues, reversible edits, and cross-surface continuation first-class."
+    },
+    {
+      "date_basis": "GitHub changelog line shows August 12, 2026.",
+      "factual_summary": "Agent Plugins 1.0 became generally available across VS Code, Copilot CLI, the Copilot SDK, and the Copilot app; the package format can bundle skills and MCP server configuration and can be governed with enterprise managed settings and MCP allowlists.",
+      "follow_up_note": "Route broad Agent Plugins background upstream; local ingest should focus on governance and portability boundaries.",
+      "id": "github-agent-plugins-governance-2026-08-12",
+      "named_entities": [
+        "Agent Plugins 1.0",
+        "VS Code",
+        "GitHub Copilot SDK",
+        "MCP servers"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "upstream_owned_entities": [
+        "Agent Plugins",
+        "VS Code",
+        "GitHub Copilot",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-08-12",
+      "why_matters_for_leaf": "Supports local practice around portable agent skills, tier-specific conventions, and MCP governance by making skill packaging and server configuration shareable across compatible clients."
+    },
+    {
+      "date_basis": "GitHub changelog line shows August 12, 2026.",
+      "factual_summary": "GitHub introduced organization-level rule insights in public preview, aggregating repository ruleset evaluations, failed and bypassed runs, filters, top bypassed repositories, and CSV export for reporting.",
+      "follow_up_note": "Consider adding this as evidence for reporting/bypass telemetry when ingesting governance leaves.",
+      "id": "github-rule-insights-org-governance-2026-08-12",
+      "named_entities": [
+        "GitHub",
+        "repository rulesets",
+        "rule insights"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-12-rule-insights-for-organizations-in-public-preview/",
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "visible_date": "2026-08-12",
+      "why_matters_for_leaf": "Provides a public example of governance evidence becoming aggregatable and exportable, relevant to local update-feed and tool governance patterns that need auditable bypass and enforcement signals."
+    },
+    {
+      "date_basis": "Axios article URL and search result show August 17, 2026; page states 2026 copyright and article context.",
+      "factual_summary": "Axios reported that Google-created Agent2Agent Protocol is moving to the Agentic AI Foundation, alongside MCP, to advance neutral interoperability for communication among independent agents.",
+      "follow_up_note": "Route ecosystem ownership upstream; local pages may need a boundary note separating A2A-style agent communication from MCP tool access.",
+      "id": "axios-a2a-aaif-2026-08-17",
+      "named_entities": [
+        "Agent2Agent Protocol",
+        "Agentic AI Foundation",
+        "Google",
+        "Model Context Protocol"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards",
+      "upstream_owned_entities": [
+        "Agent2Agent Protocol",
+        "Agentic AI Foundation",
+        "Google",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-08-17",
+      "why_matters_for_leaf": "The local implication is not the broad A2A entity itself, but that multi-agent orchestration and tool governance should distinguish inter-agent communication protocols from MCP-style tool/data access."
+    },
+    {
+      "date_basis": "TechRadar page shows Published 17 August 2026.",
+      "factual_summary": "TechRadar argued that MCP is a connectivity/access layer, not a replacement for APIs or domain context, and that organizations still need governed data exposure, permissions, auditability, and matter-aware context.",
+      "follow_up_note": "Ingest should avoid legal-sector specifics unless used as an example of context-governance boundaries.",
+      "id": "techradar-mcp-context-myths-2026-08-17",
+      "named_entities": [
+        "Model Context Protocol",
+        "NetDocuments"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/from-connection-to-context-dispelling-the-legal-industrys-biggest-myths-about-mcp",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "NetDocuments"
+      ],
+      "visible_date": "2026-08-17",
+      "why_matters_for_leaf": "Strongly supports local RAG/MCP practice and rules-versus-knowledge layering: connecting a system is not enough unless the exposed context carries authority, permissions, metadata, and audit evidence."
+    },
+    {
+      "date_basis": "TechRadar page shows Published 13 August 2026.",
+      "factual_summary": "TechRadar reported Linus Torvalds describing unusually large Linux 7.2 release candidates as a new normal driven by AI review tools producing bug reports, while humans still write, submit, and maintain the fixes.",
+      "follow_up_note": "Use as practice evidence for review firehose risk and human maintainer gates, not as Linux ecosystem background.",
+      "id": "techradar-linux-ai-code-review-2026-08-13",
+      "named_entities": [
+        "Linux",
+        "Linus Torvalds",
+        "AI review tools"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+      "upstream_owned_entities": [
+        "Linux",
+        "Linus Torvalds"
+      ],
+      "visible_date": "2026-08-13",
+      "why_matters_for_leaf": "This is evidence for structural diff review and AI-assisted coding loops: AI can increase review throughput and defect discovery, but handoff, maintainer load, and human-submitted patches remain central controls."
+    },
+    {
+      "date_basis": "Atlassian Community page shows August 16, 2026 edited.",
+      "factual_summary": "Atlassian Feature Focus lists Rovo updates including A2A-based third-party agent connectivity, Rovo Insights for adoption visibility, and AI Access Controls for governing rollout pace and policy alignment.",
+      "follow_up_note": "Keep Atlassian/Rovo entity coverage upstream; local implication is the governance/adoption telemetry pattern.",
+      "id": "atlassian-rovo-a2a-access-controls-2026-08-16",
+      "named_entities": [
+        "Atlassian Rovo",
+        "Agent2Agent Protocol",
+        "Rovo Insights",
+        "AI Access Controls"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "source_url": "https://community.atlassian.com/forums/Customer-Success/Feature-Focus-2026-Vol-10-August/ba-p/3276660",
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Rovo",
+        "Agent2Agent Protocol"
+      ],
+      "visible_date": "2026-08-16 edited",
+      "why_matters_for_leaf": "Relevant to tier-specific conventions, self-service analytics governance, terminal/multi-agent orchestration, and event-triggered workflows because it combines agent interoperability, adoption telemetry, and access controls."
+    },
+    {
+      "date_basis": "Dust changelog entry shows August 14th, 2026.",
+      "factual_summary": "Dust added configurable Slack auto-replies that let a Dust agent respond in a channel without an @mention, either to every message or only the first message in a new thread.",
+      "follow_up_note": "Ingest should focus on event-triggered automation controls, not Dust product coverage.",
+      "id": "dust-slack-auto-replies-2026-08-14",
+      "named_entities": [
+        "Dust",
+        "Slack"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "source_url": "https://docs.dust.tt/docs/changelog",
+      "upstream_owned_entities": [
+        "Dust",
+        "Slack"
+      ],
+      "visible_date": "2026-08-14",
+      "why_matters_for_leaf": "This is a concrete event-triggered agent pattern: passive channel events can become agent runs, so local practice needs clear trigger scope, channel ownership, and noise controls."
+    },
+    {
+      "date_basis": "DevOps.com page shows By Mike Vizard on August 12, 2026.",
+      "factual_summary": "DevOps.com summarized a Wakefield/Sauce Labs survey: 80% of surveyed executives traced a production incident, outage, or customer-impacting defect to AI-generated code in the prior year, while only 6% said AI-generated code is tested with AI tools all the time or often.",
+      "follow_up_note": "Potential digest-worthy signal for verification gates, but avoid overgeneralizing survey claims beyond its sampled executives.",
+      "id": "devops-ai-code-production-incidents-2026-08-12",
+      "named_entities": [
+        "DevOps.com",
+        "Sauce Labs",
+        "Wakefield Research"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "source_url": "https://devops.com/survey-surfaces-rising-tide-of-production-issues-traced-back-to-ai-code/",
+      "upstream_owned_entities": [
+        "Sauce Labs",
+        "Wakefield Research"
+      ],
+      "visible_date": "2026-08-12",
+      "why_matters_for_leaf": "Supports local verification and review practices for AI-generated code, especially structural diff review, delegated handoffs, and orient-inspect-patch-verify evidence before production changes."
+    }
+  ],
+  "run_timestamp_local": "2026-08-18T21:01:46-04:00",
+  "run_timestamp_utc": "2026-08-19T01:01:46Z",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains/",
+    "https://github.blog/changelog/2026-08-13-github-copilot-weekly-releases-august-10/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+    "https://github.blog/changelog/2026-08-12-rule-insights-for-organizations-in-public-preview/",
+    "https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards",
+    "https://www.techradar.com/pro/from-connection-to-context-dispelling-the-legal-industrys-biggest-myths-about-mcp",
+    "https://www.techradar.com/pro/linus-torvalds-says-huge-linux-kernel-updates-are-now-the-status-quo-and-its-all-thanks-to-ai",
+    "https://community.atlassian.com/forums/Customer-Success/Feature-Focus-2026-Vol-10-August/ba-p/3276660",
+    "https://docs.dust.tt/docs/changelog",
+    "https://devops.com/survey-surfaces-rising-tide-of-production-issues-traced-back-to-ai-code/",
+    "https://devops.com/",
+    "https://developers.googleblog.com/scaling-ai-agent-infrastructure-with-the-mcp-stateless-updates/",
+    "https://github.blog/changelog/2026-08-11-per-model-token-breakdown-in-the-usage-report/",
+    "https://www.anthropic.com/news/agent-capabilities-api",
+    "https://www.anthropic.com/news/claude-code-on-the-web",
+    "https://docs.dust.tt/docs/changelog#amplitude-mcp-integration-query-your-product-data-with-natural-language",
+    "https://www.instagram.com/ai_world_academy/reel/DcKopSkADnZ/"
+  ],
+  "upstream_owned_entities": [
+    "Agent Plugins",
+    "Agent2Agent Protocol",
+    "Agentic AI Foundation",
+    "Atlassian",
+    "Dust",
+    "GitHub",
+    "GitHub Copilot",
+    "Google",
+    "JetBrains",
+    "Kimi",
+    "Linus Torvalds",
+    "Linux",
+    "MAI-Code",
+    "Model Context Protocol",
+    "NetDocuments",
+    "Ollama",
+    "OpenTelemetry",
+    "Rovo",
+    "Sauce Labs",
+    "Slack",
+    "VS Code",
+    "Wakefield Research"
+  ]
+}
