@@ -1,0 +1,455 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-18T20:33:20-04:00",
+  "last_run_timestamp": "2026-08-18T00:30:29.123Z",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-08-16T20:33:20-04:00",
+    "end": "2026-08-18T20:33:20-04:00",
+    "policy": "Only include public sources with visible publication or update dates inside the two-day window. Exclude missing, ambiguous, future-dated, boundary-only, stale, or local-only/private dates."
+  },
+  "wiki_status": {
+    "command": "python3 /Users/martinbechard/.agents/skills/project-wiki/scripts/wiki_ops.py status",
+    "result": "passed: 110 pages, 0 missing required files, 0 lint findings"
+  },
+  "federation_policy": {
+    "source": "docs/wiki/federation.md",
+    "summary": "The local wiki owns the AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and adoption patterns. The upstream AI wiki owns broad ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques.",
+    "collector_behavior": "Broad entity facts are recorded as upstream-owned entities; findings keep only local practice implications or routing notes."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "public_searches": [
+    {
+      "query": "AI coding agent context engineering instructions audit logs August 18 2026",
+      "notes": "Found older context-engineering and audit-log sources; most were excluded as stale."
+    },
+    {
+      "query": "AI code review agent workflow evals August 18 2026",
+      "notes": "Found August 18 practice sources on AI code review maintenance and adversarial source-code review."
+    },
+    {
+      "query": "MCP permissions approvals audit logs coding agents August 18 2026",
+      "notes": "Found August 18 MCP process/audit source and adjacent stale MCP security sources."
+    },
+    {
+      "query": "RAG codebases agent tool calls structured outputs August 18 2026",
+      "notes": "Most RAG and structured-output hits were outside the two-day window."
+    },
+    {
+      "query": "\"August 18, 2026\" \"coding agent\"",
+      "notes": "Found dated sources on cost management, code review, incidents, adoption, and agentic SDLC."
+    },
+    {
+      "query": "\"August 18, 2026\" \"MCP\" \"agent\" \"audit\"",
+      "notes": "Found MCP auditability and process-control sources; excluded social and weak-date hits."
+    }
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-08-18-openai-asana-codex-migration",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source": {
+        "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+        "url": "https://openai.com/index/asana/",
+        "publisher": "OpenAI",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date and article page content.",
+        "public": true
+      },
+      "summary": "Asana reports using Codex to migrate away from Enzyme in roughly two weeks, with people reviewing and approving proposed changes and with stated model/infrastructure costs around 12000 USD compared with a prior multi-year staffing estimate.",
+      "why_it_matters": "Large agent-assisted migrations should be planned as reviewable, costed change programs, not only prompt experiments. Local practice should preserve human approval, migration test evidence, and cost baselines for long-horizon modernization work.",
+      "named_entities": [
+        "Asana",
+        "OpenAI",
+        "Codex",
+        "Enzyme"
+      ],
+      "upstream_owned_entities": [
+        "Asana",
+        "OpenAI",
+        "Codex",
+        "Enzyme"
+      ],
+      "local_practice_implications": [
+        "Source-workflow pages can use this as evidence that migration tasks need explicit review and approval gates.",
+        "Verification pages can treat test-suite replacement as an acceptance-gate exercise, not a bulk rewrite alone.",
+        "Adoption pages can track model and infrastructure spend as part of the operating model for agent-led modernization."
+      ],
+      "follow_up_notes": "During ingest, route broad product and company facts upstream; keep only migration workflow, review, cost, and acceptance implications locally."
+    },
+    {
+      "id": "2026-08-18-pointfive-coding-agent-cost-management",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source": {
+        "title": "Coding agent cost management: a radically new practice, and a badly misunderstood one",
+        "url": "https://www.pointfive.co/blog/coding-agent-cost-management-discipline",
+        "publisher": "PointFive",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible byline date on article page.",
+        "public": true
+      },
+      "summary": "PointFive frames coding-agent cost management as an emerging ownership gap, citing public examples where rapid adoption exhausted budgets or ended pilots and asking which function owns agent spend.",
+      "why_it_matters": "Team adoption guidance should assign budget ownership, usage telemetry, thresholds, and escalation paths before agents become default development infrastructure.",
+      "named_entities": [
+        "PointFive",
+        "Gartner",
+        "Uber",
+        "Microsoft",
+        "Forbes"
+      ],
+      "upstream_owned_entities": [
+        "PointFive",
+        "Gartner",
+        "Uber",
+        "Microsoft",
+        "Forbes"
+      ],
+      "local_practice_implications": [
+        "Adoption operating agreements should include cost-owner and budget-burn fields.",
+        "Governance infrastructure should join usage metrics with model/provider cost data.",
+        "Runtime surfaces should expose per-task or per-agent cost before teams scale parallel coding-agent work."
+      ],
+      "follow_up_notes": "Verify cited third-party examples if ingest turns this into durable local guidance; do not duplicate vendor or analyst background locally."
+    },
+    {
+      "id": "2026-08-18-atomic-object-ai-code-review-maintenance",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "source": {
+        "title": "Our AI Code Review Workflow, 7 Months Later",
+        "url": "https://spin.atomicobject.com/ai-code-review-workflow-7/",
+        "publisher": "Atomic Object",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date on page.",
+        "public": true
+      },
+      "summary": "Atomic Object describes moving from hand-written code with agent assistance toward agent-written code plus close human review, and says its AI review workflow works only because someone maintains it continuously.",
+      "why_it_matters": "AI code review checks should be treated as maintained workflow assets with ownership, prompt/rule updates, and noise management rather than set-and-forget automation.",
+      "named_entities": [
+        "Atomic Object",
+        "Cursor",
+        "Codex",
+        "Sentry",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "Atomic Object",
+        "Cursor",
+        "Codex",
+        "Sentry",
+        "GitHub Actions"
+      ],
+      "local_practice_implications": [
+        "Coding-practice guidance should state that agent-authored code increases review-step responsibility.",
+        "Verification pages can separate AI review signal quality from human final approval.",
+        "Prompt/rules pages can treat review rules as living maintained assets."
+      ],
+      "follow_up_notes": "Good candidate for a local practice note on AI-review maintenance burden and reviewer attention."
+    },
+    {
+      "id": "2026-08-18-google-agentic-source-code-review",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source": {
+        "title": "Staying Ahead of Adversarial AI Through Agentic Source Code Review",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review",
+        "publisher": "Google Cloud Blog",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date on page.",
+        "public": true
+      },
+      "summary": "Google Threat Intelligence describes an agentic vulnerability discovery harness that chains specialized agents through threat modeling and review, using asset inventories, SBOMs, architecture docs, threat intelligence, and a distilled knowledge base as context before human expert review.",
+      "why_it_matters": "Code-security agents need explicit context architecture and evaluation stages: reconnaissance, domain-specific subagents, threat-model synthesis, prioritized findings, and expert review.",
+      "named_entities": [
+        "Google Cloud",
+        "Google Threat Intelligence Group",
+        "AVDH",
+        "SBOM"
+      ],
+      "upstream_owned_entities": [
+        "Google",
+        "Google Cloud",
+        "Google Threat Intelligence",
+        "SBOM"
+      ],
+      "local_practice_implications": [
+        "Retrieval/tool pages can treat architecture docs, inventories, SBOMs, and threat intel as first-class context inputs.",
+        "Verification pages can model code-security review as a phased, human-reviewed pipeline.",
+        "Application-pattern pages can capture specialized subagent orchestration for vulnerability review."
+      ],
+      "follow_up_notes": "Keep product and threat-intelligence platform details upstream; local page should focus on phased source-review harness architecture."
+    },
+    {
+      "id": "2026-08-17-endorlabs-harness-engineering-security-sensor",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source": {
+        "title": "Harness engineering: how to make AI coding agents reliable and secure",
+        "url": "https://www.endorlabs.com/learn/harness-engineering-how-to-make-ai-coding-agents-reliable-and-secure",
+        "publisher": "Endor Labs",
+        "visible_date": "Published August 17, 2026; updated August 17, 2026",
+        "date_basis": "Visible publish and update dates on article page.",
+        "public": true
+      },
+      "summary": "Endor Labs defines coding-agent harnesses around context, tools, constraints, sensors, memory, execution environments, skills, subagents, sandboxes, and feedback loops, then argues that security is a missing sensor when agents install packages and run commands autonomously.",
+      "why_it_matters": "Local harness architecture should treat security checks as runtime feedback signals alongside lint, compilation, tests, and quality gates.",
+      "named_entities": [
+        "Endor Labs",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "MCP",
+        "Veracode"
+      ],
+      "upstream_owned_entities": [
+        "Endor Labs",
+        "Model Context Protocol",
+        "Veracode"
+      ],
+      "local_practice_implications": [
+        "Application-pattern pages can expand harness components with security sensors and package-risk checks.",
+        "Context-architecture pages can classify rules files, system prompts, structured context, and tool exposure as harness inputs.",
+        "Verification pages can define success-silent, failure-verbose sensors that agents can use to self-correct."
+      ],
+      "follow_up_notes": "During ingest, avoid broad harness ranking; use the security-sensor implication and instruction-file context taxonomy locally."
+    },
+    {
+      "id": "2026-08-18-dataiku-agentic-risk-management",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "source": {
+        "title": "Agentic AI in enterprise risk management: a practical framework",
+        "url": "https://www.dataiku.com/blog/agentic-ai-enterprise-risk-management",
+        "publisher": "Dataiku",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date on page.",
+        "public": true
+      },
+      "summary": "Dataiku proposes a visibility, defense, and governance framework that starts with inventorying deployed agents, ranking the highest-risk agents, implementing runtime controls and audit logging for one agent, and scaling from measured results.",
+      "why_it_matters": "Governance rollout should begin with an agent inventory and risk-tiered pilot rather than trying to govern every agent equally on day one.",
+      "named_entities": [
+        "Dataiku",
+        "Dataiku Agent Management",
+        "Dataiku Govern"
+      ],
+      "upstream_owned_entities": [
+        "Dataiku",
+        "Dataiku Agent Management",
+        "Dataiku Govern"
+      ],
+      "local_practice_implications": [
+        "Governance pages can define a 30-day pilot pattern around inventory, risk tiering, runtime controls, monitoring, and audit logging.",
+        "Adoption pages can connect agent rollout order to blast radius and measured KPIs.",
+        "Application-pattern pages can treat audit trails and oversight as reusable runtime components."
+      ],
+      "follow_up_notes": "Treat vendor products as upstream-owned; local artifact should preserve the rollout pattern and governance fields."
+    },
+    {
+      "id": "2026-08-18-camunda-mcp-process-auditability",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "source": {
+        "title": "Three Ways Camunda Speaks MCP (And Why the Direction Matters)",
+        "url": "https://camunda.com/blog/2026/08/three-ways-camunda-speaks-mcp-and-why-the-direction-matters/",
+        "publisher": "Camunda",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date on page.",
+        "public": true
+      },
+      "summary": "Camunda describes three MCP integration directions: a process calls MCP tools, an MCP server exposes operational data, and a process becomes a callable MCP capability. It emphasizes visible tool selection, audit trails including discovery calls, human checkpoints for spend/commit actions, and fire-and-track receipts for long-running process invocations.",
+      "why_it_matters": "MCP governance practice should model directionality, tool discovery, receipts, and checkpoint placement, not just whether an MCP endpoint exists.",
+      "named_entities": [
+        "Camunda",
+        "MCP",
+        "BPMN",
+        "Operate"
+      ],
+      "upstream_owned_entities": [
+        "Camunda",
+        "Model Context Protocol",
+        "BPMN"
+      ],
+      "local_practice_implications": [
+        "Retrieval/tool pages can distinguish MCP-as-client, MCP-as-query-surface, and MCP-as-capability-export patterns.",
+        "Governance pages can require audit visibility for tools/list discovery and chosen tool calls.",
+        "Agent-workflow pages can use fire-and-track receipts for long-running tool-started work."
+      ],
+      "follow_up_notes": "Potential local leaf on MCP directionality as a governed practice; do not duplicate broad MCP protocol coverage."
+    },
+    {
+      "id": "2026-08-18-jetbrains-agent-adoption-trends",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source": {
+        "title": "AI Coding Agents: Adoption Trends",
+        "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+        "publisher": "JetBrains Research",
+        "visible_date": "August 18, 2026",
+        "date_basis": "Visible article date in search result and page context; page body cites May-July 2026 survey period.",
+        "public": true
+      },
+      "summary": "JetBrains reports from its Developer Ecosystem Survey 2026 that coding agents have become common in professional developer workflows, with daily and weekly usage figures, multi-agent IDE integration, and a control/execution plane direction for agent-driven development across tools and environments.",
+      "why_it_matters": "Adoption guidance should assume heterogeneous agent portfolios and plan for toolchain governance, not a single assistant rollout.",
+      "named_entities": [
+        "JetBrains",
+        "Developer Ecosystem Survey 2026",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "OpenCode",
+        "Cursor",
+        "Agent Client Protocol",
+        "JetBrains Central"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "OpenCode",
+        "Cursor",
+        "Agent Client Protocol",
+        "JetBrains Central"
+      ],
+      "local_practice_implications": [
+        "Adoption pages can track multi-agent governance, not only per-product usage.",
+        "Application-pattern pages can treat IDEs as agent orchestration surfaces with multiple backends.",
+        "Governance pages can require policy consistency across local agents, cloud agents, IDE surfaces, and execution planes."
+      ],
+      "follow_up_notes": "Confirm visible date during ingest because the opened page lines emphasize survey period more than publication metadata; exclude if date cannot be independently verified then."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Context Engineering for Coding Agents",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "visible_date": "05 February 2026",
+      "reason": "Out of two-day cutoff window despite high topical relevance."
+    },
+    {
+      "title": "Audit AI Agent Activity (Claude, Copilot, MCP)",
+      "url": "https://cli.nylas.com/guides/audit-ai-agent-activity",
+      "visible_date": "Updated June 6, 2026",
+      "reason": "Out of two-day cutoff window."
+    },
+    {
+      "title": "7 AI Coding Tools for EU AI Act Compliance (2026)",
+      "url": "https://www.augmentcode.com/tools/ai-coding-tools-eu-ai-act-compliance",
+      "visible_date": "April 26, 2026",
+      "reason": "Out of two-day cutoff window; regulatory deadline is current context but not a fresh publication/update."
+    },
+    {
+      "title": "Building Reliable AI Agents with Tool Calling and Structured Output in 2026",
+      "url": "https://towardsai.com/p/machine-learning/building-reliable-ai-agents-with-tool-calling-and-structured-output-in-2026",
+      "visible_date": "August 3, 2026",
+      "reason": "Out of two-day cutoff window."
+    },
+    {
+      "title": "MCP Gateway Audit Trail: What AI Agent Logs Miss",
+      "url": "https://www.metomic.io/resource-centre/mcp-gateway-audit-trail/",
+      "visible_date": "Last updated August 13, 2026",
+      "reason": "Out of two-day cutoff window."
+    },
+    {
+      "title": "Claude Platform release notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "visible_date": "August 11, 2026",
+      "reason": "Out of two-day cutoff window, though Compliance API and inference hook notes remain relevant for future ingest if captured by an in-window update."
+    },
+    {
+      "title": "Skill and plugin security scanning (beta)",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "visible_date": "August 6, 2026",
+      "reason": "Out of two-day cutoff window."
+    },
+    {
+      "title": "AI/TLDR Daily Digest - August 18, 2026",
+      "url": "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-august-18-2026/",
+      "visible_date": "2026-08-18",
+      "reason": "Digest source is an aggregator; individual linked items need direct source verification before being used as durable evidence."
+    },
+    {
+      "title": "MCP servers evolve their capabilities without asking. Audit them like infrastructure",
+      "url": "https://www.shopclawmart.com/daily/mcp-servers-evolve-their-capabilities-without-asking-audit-them-like-infrastruct",
+      "visible_date": "9 hours ago in search result",
+      "reason": "Weak relative date and low source authority; not used without a stable visible publication date on the page."
+    },
+    {
+      "title": "OpenClaw Guide (2026): Skills, MCP & Setup",
+      "url": "https://www.poster.ly/guides/openclaw-guide",
+      "visible_date": "14 hours ago in search result",
+      "reason": "Mostly product/setup guide and upstream-owned tool coverage; no distinct local practice implication captured."
+    },
+    {
+      "title": "Kiro vs Claude Code: Which AI Coding Agent Should You Use?",
+      "url": "https://myclaw.ai/blog/kiro-vs-claude-code",
+      "visible_date": "August 18, 2026",
+      "reason": "Product comparison belongs upstream; local practice implication was not distinct from already captured adoption/governance findings."
+    },
+    {
+      "title": "Best AI Agent Security Platforms for Securing Claude Code in 2026",
+      "url": "https://www.nightfall.ai/blog/ai-agent-security-platforms-securing-claude-code",
+      "visible_date": "August 17, 2026",
+      "reason": "Vendor comparison is mostly upstream-owned product coverage; local DLP/MCP security implications overlap with stronger governance findings."
+    },
+    {
+      "title": "AI agent execution control: what it is, and why AI-native PAM needs it",
+      "url": "https://www.alpacax.com/blog/ai-agent-execution-control-what-it-is-and-why-ai-native-pam-needs-it/",
+      "visible_date": "1 day ago in public search result; no full article publication date visible in fetched page body",
+      "reason": "Excluded under weak-date rule despite local relevance; relative search-result date is not a stable visible publication or update date."
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should not update docs/wiki directly from this collector until raw-source ingest runs.",
+    "AlpacaX execution-control source was excluded for weak date evidence; re-check manually only if needed for a later research task.",
+    "When synthesizing, route broad company, product, model, protocol, and tool background to /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "Candidate local themes: cost ownership for agent adoption, maintained AI-review workflows, security as a harness sensor, MCP directionality and receipts, session-purpose execution control, and phased agent-risk pilots."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed",
+    "notes": "Validated from repository root after artifact creation."
+  },
+  "blockers": []
+}
