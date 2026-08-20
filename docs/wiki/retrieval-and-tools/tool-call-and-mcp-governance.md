@@ -77,6 +77,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The August 15 raw sources add runtime control-plane and tool-installation evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records self-hosted factory egress choices, runtime gateway budgets, rate limits, guardrails, audit tables, action-level controls, and unified tracing. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) records scoped MCP access, verifiable component identity, repository/skill baiting, and tool-installation risk. Locally, MCP and tool governance should treat outbound access, tool identity, generated skills, memory writes, model calls, cost attribution, and audit traces as runtime-enforced control-plane decisions.
 
+The August 18 raw sources add MCP directionality, context-boundary, and managed-plugin governance signals. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) distinguishes three MCP integration directions: a process calls tools, an MCP server exposes operational data, and a process becomes a callable MCP capability. It also reinforces that MCP is a connectivity layer, not a substitute for governed context, permissions, semantic definitions, and auditability. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds portable plugin packages, MCP allowlists, tool-surface policy, and A2A-versus-MCP protocol separation as governance evidence. Locally, MCP review should name the integration direction, discovery call, chosen tool, receipt or long-running handle, checkpoint placement, and context authority before treating a server as approved.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -147,6 +149,9 @@ The August 15 raw sources add runtime control-plane and tool-installation eviden
 - Treat generated API-to-MCP surfaces as designed adapters that need least-privilege review, schema clarity, permission checks, and verification before agents call them.
 - Preserve citation and privacy-boundary evidence when MCP retrieval supplies sources to an agent workflow.
 - Treat egress allowlists, runtime budgets, rate limits, guardrails, action-level controls, component identity, skill-install provenance, memory writes, and unified traces as MCP/tool control-plane evidence.
+- Name whether MCP is being used as a client call path, an operational query surface, or an exported process capability, because each direction changes audit, receipt, and approval obligations.
+- Treat MCP connectivity as insufficient without governed context definitions, permission scopes, discovery-call evidence, selected-tool evidence, and human checkpoints for spend, commit, or other high-impact actions.
+- Separate A2A-style inter-agent communication from MCP-style tool or data access when designing orchestration and governance records.
 
 ## Authoritative Sources
 
@@ -204,6 +209,8 @@ The August 15 raw sources add runtime control-plane and tool-installation eviden
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -236,6 +243,7 @@ The August 15 raw sources add runtime control-plane and tool-installation eviden
 ## Maintenance Notes
 
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
+- Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.
 - Maintained on 2026-07-23 with stateless MCP, gateway-selection, filtered discovery, per-tool authorization, logging, and secret-scanning guidance.
 - Maintained on 2026-07-30 with resource-scoped MCP authorization, read/write separation, sandbox permission evidence, and exact approval-to-execution payload matching.
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.

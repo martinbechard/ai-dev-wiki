@@ -21,6 +21,7 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [junior-learning-paths-in-agentic-teams.md](junior-learning-paths-in-agentic-teams.md) records the talent-pipeline rule for preserving supervised junior practice.
 - [agent-ownership-rosters.md](agent-ownership-rosters.md) records agent owner cards, agent rosters, care loops, and decommissioning rules.
 - [agent-cost-telemetry.md](agent-cost-telemetry.md) records workflow-step cost tracing, subagent fan-out limits, and outcome-linked cost controls.
+- [ai-development-partner-selection.md](ai-development-partner-selection.md) records partner-selection criteria for AI solution delivery, governance fit, evidence, maintainability, and lifecycle economics.
 - Team rollout staging is deferred because the current source set does not identify a stable local stage model.
 
 ## Authoritative Sources
@@ -36,6 +37,7 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 - [source-workflows](../source-workflows/index.md)
+- [AI development partner selection query fragment](../../../raw/processed/query/2026-08-20-ai-software-development-partner-selection.md)
 
 ## Related Code
 
@@ -67,3 +69,4 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - Maintained on 2026-06-23 to add loop-design, outcome-oriented automation, and agent-cost telemetry practices from public sources.
 - Maintained on 2026-06-27 to add hybrid agent infrastructure economics as a workflow-routing operating practice.
 - Maintained on 2026-08-05 with managed-agent portability boundaries as a durable operating-model leaf.
+- Maintained on 2026-08-20 with AI development partner selection as a durable procurement and operating-model rubric.

@@ -33,6 +33,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) adds issue, pull-request, CI, review-comment, and merge-queue feedback routing as handoff evidence for coding-agent fleets. The fleet-selection practice lives in [terminal-native agent fleet orchestration](terminal-native-agent-fleet-orchestration.md); this page keeps the rule that a handoff must identify which worker owns each feedback item and what evidence makes the result review-ready.
 
+The August 18 raw sources add migration, queued-question, rewind, and session-preserving handoff evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records agent-assisted framework migration as a review-and-approval program rather than a one-shot rewrite. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records pending agent questions, task lists, queued steering, rewind, and cross-surface continuation as first-class workflow surfaces. Locally, a handoff should preserve the migration scope, pending questions, queued commands, rewind point, continuation surface, review owner, and evidence that the receiving reviewer can inspect without reconstructing the prior session.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -50,6 +52,7 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - Record execution location, file and credential boundary, supervision surface, review loop, and reproducible setup evidence when a task moves between local, worktree, cloud, repository-native, or browser-agent environments.
 - Route browser, desktop, terminal, repository, or cloud boundary transitions through [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md).
 - Preserve issue, pull-request, CI, review-comment, merge-queue, and worker-owner state when a terminal fleet manager coordinates delegated coding work.
+- Include migration baseline, scope, review approvals, pending questions, queued steering, rewind point, and continuation surface when long-running coding-agent work crosses sessions or tools.
 
 ## Authoritative Sources
 
@@ -68,6 +71,8 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -106,3 +111,4 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 - Maintained on 2026-07-27 with local, managed-worktree, cloud, repository-native, and browser-agent execution-boundary handoff criteria.
 - Maintained on 2026-07-30 with supervised cross-environment handoff routing.
 - Maintained on 2026-08-05 with issue, PR, CI, review-comment, merge-queue, and worker-owner handoff evidence for terminal agent fleets.
+- Maintained on 2026-08-18 with migration baseline, queued-question, rewind, continuation-surface, and review-owner handoff evidence.

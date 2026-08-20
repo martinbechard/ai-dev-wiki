@@ -17,6 +17,7 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - [llm-observability-quality-gates.md](llm-observability-quality-gates.md) records how traces, prompt versions, datasets, evals, and release decisions become deployment evidence.
 - [agent-assisted-performance-optimization-gates.md](agent-assisted-performance-optimization-gates.md) records correctness, baseline, representative workload, measurement, rollback, and approval gates for optimization agents.
 - [product-judgment-quality-gates.md](product-judgment-quality-gates.md) records product judgment gates, periodic health review, and pre-merge acceptance checks.
+- [ai-technical-solution-evaluation.md](ai-technical-solution-evaluation.md) records technical due-diligence criteria and knockout gates for proposed AI solutions.
 
 ## Authoritative Sources
 
@@ -27,6 +28,7 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - [Evals source](../../../raw/processed/You’ll Finally Understand AI Evals After Watching This.md)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [coding-practices](../coding-practices/index.md)
+- [AI technical solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md)
 
 ## Related Code
 
@@ -57,3 +59,4 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - Maintained on 2026-06-24 to add trajectory-level agent evaluation for trace and intermediate-decision evidence.
 - Maintained on 2026-07-17 to add performance-optimization acceptance gates for agent-assisted speedup work.
 - Maintained on 2026-08-07 to add LLM observability quality gates as a durable leaf.
+- Maintained on 2026-08-20 with AI technical solution evaluation as a durable due-diligence rubric.

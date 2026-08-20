@@ -21,6 +21,8 @@ The [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-d
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds scheduled and host-driven agent execution evidence. Event-triggered workflows should distinguish scheduled worktrees, agent-host sessions, and CI or issue-triggered runs because each trigger changes inherited context, approval timing, progress visibility, and review handoff.
 
+The August 18 raw sources add channel-trigger and queued-work signals. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records agents responding automatically to Slack channel messages without an explicit mention and coding-agent surfaces that accept queued prompts or shell commands during a running task. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) adds fire-and-track process receipts for long-running MCP-triggered work. Locally, passive channel events and queued steering are event triggers too; they need trigger scope, owner, noise controls, approval timing, and receipt evidence before they become standing automation.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -32,6 +34,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Prefer reviewable PR-on-PR or draft-PR repair handoffs for CI failures instead of mutating the original branch without a separate review surface.
 - Record branch selection, working branch, model or agent selection, steering comments, and progress-stream evidence for issue-triggered coding agents.
 - Distinguish schedule, CI, issue, host-session, and manual triggers when inherited context, approval timing, or review handoff differs.
+- Define channel, thread, mention, and passive-message trigger scope before allowing an agent to respond from collaboration events.
+- Preserve queued prompt, queued command, receipt, owner, and cancellation evidence when an event starts or steers long-running agent work.
 
 ## Authoritative Sources
 
@@ -44,6 +48,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [source reconciliation and routing](../source-workflows/source-reconciliation-and-routing.md)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 
 ## Related Code
 
@@ -74,3 +80,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-07-24 with CI repair PR-on-PR, branch-control, progress-stream, steering-comment, and review-request guidance.
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.
 - Maintained on 2026-07-27 with scheduled-worktree, agent-host, CI, issue, and manual trigger distinctions.
+- Maintained on 2026-08-18 with passive channel-trigger, queued-steering, long-running receipt, owner, and noise-control evidence.

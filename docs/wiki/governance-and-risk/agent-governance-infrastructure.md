@@ -69,6 +69,8 @@ The [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-security lifecycle evidence. The [topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json) records schema-validated session, prompt, tool, and turn events; prompt-hash privacy; SIEM-ready export; MCP-queryable logs; agent autonomy controls; and review-capacity pressure. The [leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json) records third-party agent usage metrics, ROI dashboards, Compliance API local-session evidence, managed-agent budgets, and status incidents. Locally, governance infrastructure should join audit records, usage metrics, budget and ROI assumptions, workspace identity, and incident response evidence without copying sensitive prompt content into central logs.
 
+The August 18 raw sources add inventory-first rollout, managed-settings, and bypass-telemetry evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records a practical enterprise-risk pattern: inventory deployed agents, rank the highest-risk ones, pilot runtime controls and audit logging on one agent, then scale from measured results. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds managed plugin settings, MCP allowlists, approval-bypass controls, organization rule-insight reports, adoption telemetry, and AI access controls as public signals for making rollout state and exception behavior auditable. Locally, governance should start with a current agent inventory, assigned owners, risk tiers, managed policy surfaces, and exportable evidence for bypasses or rollout exceptions.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -129,6 +131,8 @@ The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-securi
 - Preserve immutable evidence for attempted external contact, repository contribution, package publication, file transfer, and identity use during agent runs.
 - Capture session, prompt, tool, turn, workspace, budget, and incident evidence through schema-validated audit events, using hashes or redacted previews when full prompt retention would expose sensitive context.
 - Pair agent adoption metrics and ROI dashboards with governance evidence for reviewer capacity, cost ownership, identity, approved tool scope, and incident response instead of treating activity counts as approval.
+- Start governance rollout with an agent inventory, risk tiering, one controlled pilot, runtime logs, and measured results before expanding controls across all agents.
+- Treat managed settings, MCP allowlists, approval-bypass controls, rule-insight reports, and rollout telemetry as governance evidence that must be exportable and owner-reviewed.
 
 ## Authoritative Sources
 
@@ -181,6 +185,8 @@ The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-securi
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -214,6 +220,7 @@ The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-securi
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with task-scoped identity, human owners, just-in-time access, audit trails, and enterprise-layer monitoring signals.
+- Maintained on 2026-08-18 with inventory-first agent risk rollout, managed-settings governance, approval-bypass reporting, and rollout-telemetry signals.
 - Created on 2026-06-23 to separate infrastructure enforcement, identity, authorization, audit, and accountability from the broader governance-controls page.
 - Maintained on 2026-06-23 with public runtime governance signals for agent inventory, policy enforcement, governed MCP, and run-level evidence.
 - Maintained on 2026-06-24 with trace monitoring, delegated identity, credential revocation, and MCP policy controls.

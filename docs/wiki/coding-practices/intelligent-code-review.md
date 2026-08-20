@@ -65,6 +65,8 @@ The August 13 sources add shift-left and effort-level evidence. The [topic news 
 
 The August 16 sources add configuration, review-capacity, and maintainer-queue evidence. The [topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) frames AI review as a rule-bearing PR or CI gate whose severity filters, repository rules, and outcome metrics should be versioned inputs. The [leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) records AI-assisted bug discovery increasing maintainer queues while humans still own final patches. Locally, AI review should publish the policy bundle it ran, separate security, logic, maintainability, and style findings, and show which human-owned repair path can absorb the extra findings.
 
+The August 18 raw sources add review-maintenance, adversarial security-review, and production-incident signals. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records AI review as a maintained workflow asset with rule updates, noise control, and close human review of agent-authored code, while also recording phased agentic source-code review that starts from inventories, SBOMs, architecture, and threat intelligence before expert review. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds public signals that AI review can increase bug-report volume and that production incidents attributed to AI-generated code should push review workflows toward stronger test and gate evidence. Locally, review automation needs an owner, versioned policy, evidence inputs, and final human accountability before its findings change merge decisions.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -127,6 +129,9 @@ The August 16 sources add configuration, review-capacity, and maintainer-queue e
 - Version AI-review rule files, severity filters, repository policy, and outcome metrics as review inputs rather than treating review comments as free-form model opinion.
 - Separate security, logic, maintainability, and style findings so reviewer queues can route findings to the right owner and reject low-signal noise.
 - Preserve human-authored final patches, maintainer-capacity signals, and evidence-rich review artifacts when AI tools increase bug-report volume.
+- Assign an owner to maintain AI-review prompts, rules, severity filters, and noise controls when the workflow becomes a recurring PR or CI gate.
+- Ground security-oriented agentic review in inventories, architecture, SBOMs, threat intelligence, and expert triage before treating generated vulnerability findings as merge evidence.
+- Treat reported production incidents from AI-generated code as a signal to strengthen pre-merge tests, human review gates, and post-merge health checks rather than as a generic ban on generated code.
 
 ## Authoritative Sources
 
@@ -170,6 +175,8 @@ The August 16 sources add configuration, review-capacity, and maintainer-queue e
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -199,6 +206,7 @@ The August 16 sources add configuration, review-capacity, and maintainer-queue e
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with implementation-intent, invariant-register, deterministic-test, verifier-agent, provenance, and AI-generated-code security review guidance.
+- Maintained on 2026-08-18 with maintained AI-review workflow, adversarial source-review context, production-incident, and human-accountability signals.
 - Created on 2026-06-23 from source guidance on intelligent self-code-review, source references, tier-specific review, coherence checks, and security checks.
 - Maintained on 2026-06-24 with diff-focused review boundaries and routing to lifecycle review gates for PRD or design review.
 - Maintained on 2026-06-25 with review depth, retrieval path, and cost-quality measurement as explicit AI review configuration surfaces.

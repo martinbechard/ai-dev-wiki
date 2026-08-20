@@ -69,6 +69,8 @@ The August 12 raw sources add evaluation-framework and context/harness-separatio
 
 The August 14 raw sources add gateway approval, cloud environment, behavioral baseline, and incident-reporting evidence. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records approval gateways, pending metadata, tool-catalog context strategies, and provider status incidents. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records prebuilt cloud-agent environments, SAFE incident evidence fields, AgentBaiting-style repository and skill risks, and purpose-based behavioral monitoring. Locally, harnesses should expose approval holding, build provenance, repository/tool trust gates, purpose baselines, and incident evidence as runtime components.
 
+The August 18 raw sources add security-sensor, source-review, and auditability components. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) frames security checks as harness sensors alongside lint, build, tests, runtime feedback, and quality gates, and records agentic source-code review as a phased harness that gathers inventories, SBOMs, architecture context, threat intelligence, specialized subagent reviews, and expert validation. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) reinforces managed telemetry, permission modes, queued steering, rewind, and cross-surface handoff as harness-state components. Locally, a harness should expose security findings, package-risk checks, tool decisions, receipts, and steering state as structured runtime evidence rather than after-the-fact notes.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -124,6 +126,8 @@ The August 14 raw sources add gateway approval, cloud environment, behavioral ba
 - Preserve task, dataset, agent, environment, trial, job, solver, scorer, sandbox, log, and tool boundaries when a harness is used to evaluate or optimize coding agents.
 - Diagnose agent failures across model, context, harness, environment, permission, tool, and scorer layers before changing prompts or model routes.
 - Include approval-hold state, pending metadata, prebuilt environment provenance, repository/tool trust gates, purpose-based behavioral baselines, and incident evidence fields in harness reviews for recurring agent workflows.
+- Treat security scanners, package-risk checks, SBOM ingestion, threat-intelligence context, and expert-review handoffs as harness sensors when agents inspect or change source code.
+- Preserve queued prompts, shell commands, rewind points, cross-surface handoffs, permission modes, and telemetry export as harness state when a developer may resume or audit the run later.
 
 ## Authoritative Sources
 
@@ -178,6 +182,8 @@ The August 14 raw sources add gateway approval, cloud environment, behavioral ba
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -211,6 +217,7 @@ The August 14 raw sources add gateway approval, cloud environment, behavioral ba
 ## Maintenance Notes
 
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
+- Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.
 - Maintained on 2026-07-27 with persistent filesystem, sandbox execution, agent-host, tool-approval, multi-file-review, and terminal-diff-link harness components.
 - Maintained on 2026-07-30 with agent-environment readiness components for setup, secrets, restart, and long-job durability.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.

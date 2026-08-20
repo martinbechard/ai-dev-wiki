@@ -49,6 +49,8 @@ The August 5 sources add coding-harness and trace-driven improvement evidence. T
 
 The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM observability quality gates](llm-observability-quality-gates.md) leaf owns the detailed practice: traces, prompt versions, datasets, human annotations, cost and latency telemetry, and release thresholds should be connected before an observability tool counts as a quality gate. The [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md) reinforces component-level and end-to-end evals for RAG, agents, tool use, MCP, multi-turn conversations, prompt alignment, hallucination, and structured output. The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json) also treats reusable coding-agent skills as testable artifacts with edge-case suites.
 
+The August 18 raw sources add migration acceptance, production-defect, and security-review pipeline evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records agent-assisted framework migration as a reviewed change program, and records phased source-code vulnerability review that collects asset, SBOM, architecture, and threat-intelligence context before expert review. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records survey evidence about production incidents traced to AI-generated code; locally, that evidence supports acceptance gates that combine tests, source-backed review, runtime or post-merge signals, and sampled production health rather than relying on generated-code completion alone.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -97,6 +99,9 @@ The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM
 - Preserve approval-gated tool calls, trace IDs, session reuse, and harness telemetry when a coding agent is evaluated through a production-style harness.
 - Treat LLM observability as a quality gate only when trace evidence, eval datasets, rubrics, thresholds, and release decisions are joined.
 - Evaluate reusable skills and instruction bundles with edge-case suites and safe service emulation before they become shared team procedure.
+- Treat large agent-assisted migrations as acceptance-gate programs with baselines, tests, review approvals, and post-change evidence.
+- Verify agentic security-review pipelines across context collection, specialized review, finding prioritization, expert validation, remediation, and re-verification.
+- Use production incident and defect-escape signals to tune review and test depth for AI-generated code without overgeneralizing beyond the sampled source evidence.
 
 ## Authoritative Sources
 
@@ -136,6 +141,8 @@ The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM
 - [LLM observability quality gates](llm-observability-quality-gates.md)
 - [DeepEval framework clipping](../../../raw/processed/deepeval-framework.md)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
+- [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
 
@@ -187,3 +194,4 @@ The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM
 - Maintained on 2026-08-03 with exploitable-risk repair metrics, adversarial retesting, datasets, rubrics, judge boundaries, release evidence, and retest triggers.
 - Maintained on 2026-08-05 with trace-driven agent improvement loops and coding-harness telemetry evidence.
 - Maintained on 2026-08-07 with LLM observability quality-gate routing and reusable skill-eval evidence.
+- Maintained on 2026-08-18 with migration acceptance, agentic security-review pipeline, and AI-generated-code production-defect signals.
