@@ -1,0 +1,294 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-21T01:03:30Z",
+    "policy": "Only include sources with visible publication or update dates inside the last 7 days; exclude missing, ambiguous, future-dated, or boundary-only dates.",
+    "start_utc": "2026-08-14T01:03:30Z"
+  },
+  "excluded_candidates": [
+    {
+      "reason": "Ambiguous visible date on opened page; URL and search result indicate August 2026 / recently crawled, but the page body exposed no exact publication or update day.",
+      "relevance": "Adoption evidence for partner selection and operating-model leaves.",
+      "source_url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/"
+    },
+    {
+      "reason": "Visible update marker says only Updated August 2026 with no day, so it cannot be proven inside the strict 7-day window.",
+      "relevance": "MCP authorization and enterprise-managed authorization implications.",
+      "source_url": "https://aembit.io/blog/mcp-oauth-2-1-pkce-and-the-future-of-ai-authorization/"
+    },
+    {
+      "reason": "Search result suggested a recent crawl, but the opened page showed enforcement dates rather than a precise visible publication/update date inside the window.",
+      "relevance": "Agent action-layer logging and API/MCP compliance implications.",
+      "source_url": "https://salt.security/eu-ai-act-compliance"
+    },
+    {
+      "reason": "Visible date August 13, 2026 is before the strict cutoff start of 2026-08-14T01:03:30Z.",
+      "relevance": "Lifecycle-management framing for coding agents.",
+      "source_url": "https://www.warp.dev/articles/ai-coding-agent-lifecycle-management"
+    },
+    {
+      "reason": "No precise visible publication/update date inside the strict window; product-status dates shown are stale or lifecycle milestones, not page-update dates.",
+      "relevance": "Persistent workspaces and task lifecycle comparison.",
+      "source_url": "https://coder.com/docs/ai-coder/tasks-lifecycle"
+    },
+    {
+      "reason": "Visible last updated date June 16, 2026 is outside the 7-day window.",
+      "relevance": "Agent lifecycle hook design evidence.",
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/think/lifecycle-hooks/"
+    },
+    {
+      "reason": "Published about two months before this run, outside the 7-day window.",
+      "relevance": "Portable agent plugin packaging background.",
+      "source_url": "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/"
+    },
+    {
+      "reason": "Visible August 6, 2026 announcement date is outside the 7-day window.",
+      "relevance": "Portable agent plugin packaging background.",
+      "source_url": "https://blakecrosley.com/blog/agent-plugins-standard"
+    }
+  ],
+  "factual_summaries": [
+    {
+      "source_url": "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains/",
+      "summary": "GitHub Copilot for JetBrains added enterprise managed settings covering plugin governance, MCP server allow/deny lists, managed OpenTelemetry configuration, and organization-controlled permission modes that can disable Bypass Approvals or Autopilot."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-18-credential-revocation-and-deauthorization-by-token-type/",
+      "summary": "GitHub added token-type-specific bulk deauthorization and revocation for enterprises and organizations, with audit-log capture and affected-user notifications."
+    },
+    {
+      "source_url": "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+      "summary": "ShepHertz launched AgentAnywhere, a sovereign agentic AI platform for regulated sectors that runs agents inside customer-controlled infrastructure or cloud environments, uses customer encryption keys, and includes data masking, prompt-injection screening, central model/tool/agent communication governance, and signed evidence packs."
+    },
+    {
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+      "summary": "The article argues that static annual audits do not fit agents whose prompts, memory, models, and tool access change continuously; it frames live agent inventory, scoped permissions, accountability trails, monitoring, enforcement, and proof as prerequisites for governance."
+    }
+  ],
+  "federation_notes": "Broad ecosystem entities such as GitHub Copilot, JetBrains IDEs, MCP, AgentAnywhere, OpenTelemetry, OAuth, EU AI Act, NIST AI RMF, and ISO/IEC 42001 are upstream-owned. Local follow-up should keep only practice implications for governance evidence, authorization scope, lifecycle controls, environment readiness, and evaluation checklists.",
+  "follow_up_notes": [
+    "Consider ingesting the GitHub managed-settings update into local MCP authorization, plugin governance, environment readiness, lifecycle hooks, and governance infrastructure leaves.",
+    "Consider ingesting the GitHub credential-revocation update as local evidence for token revocation, audit logging, and session recovery controls.",
+    "Consider ingesting the Express Computer AgentAnywhere launch into partner/solution evaluation and governance-infrastructure leaves as an example of evidence-producing agent governance substrates.",
+    "Consider ingesting the Express Computer governance article into governance infrastructure and lifecycle leaves, preserving it as source-specific commentary rather than regulatory authority."
+  ],
+  "leaf_universe_count": 90,
+  "named_entities": [
+    "Agent Universal Gateway",
+    "AgentAnywhere",
+    "Autopilot",
+    "Bypass Approvals",
+    "Custodian",
+    "EU AI Act",
+    "GitHub App user access tokens",
+    "GitHub Copilot",
+    "GitHub Enterprise Managed Users",
+    "ISO 27001",
+    "ISO/IEC 42001",
+    "JetBrains IDEs",
+    "Kavach",
+    "MCP servers",
+    "NIST AI RMF",
+    "OAuth app tokens",
+    "OpenTelemetry",
+    "RBI controls",
+    "SOC 2",
+    "SSH keys",
+    "ShepHertz Technologies",
+    "Veil",
+    "agent memory",
+    "audit log",
+    "personal access tokens",
+    "prompt injection",
+    "shadow AI"
+  ],
+  "qualifying_updates": [
+    {
+      "date_basis": "Visible GitHub changelog date: August 18, 2026.",
+      "factual_summary": "GitHub Copilot for JetBrains added enterprise managed settings covering plugin governance, MCP server allow/deny lists, managed OpenTelemetry configuration, and organization-controlled permission modes that can disable Bypass Approvals or Autopilot.",
+      "id": "github-copilot-jetbrains-managed-settings-2026-08-18",
+      "local_practice_implication": "When ingesting, emphasize centrally managed allowlists, telemetry destinations, and permission-mode controls as local governance evidence rather than duplicating product background.",
+      "named_entities": [
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "MCP servers",
+        "OpenTelemetry",
+        "Bypass Approvals",
+        "Autopilot"
+      ],
+      "published_or_updated_at": "2026-08-18",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "why_it_matters_for_leaf": "This is direct evidence that local practices around MCP authorization evidence, plugin governance, lifecycle controls, and environment readiness should treat IDE-level managed settings as enforceable infrastructure, not just user preferences."
+    },
+    {
+      "date_basis": "Visible GitHub changelog date: August 18, 2026.",
+      "factual_summary": "GitHub added token-type-specific bulk deauthorization and revocation for enterprises and organizations, with audit-log capture and affected-user notifications.",
+      "id": "github-credential-revocation-token-type-2026-08-18",
+      "local_practice_implication": "Use as support for local incident-response requirements around revocation, audit capture, and recovery after compromised tool credentials.",
+      "named_entities": [
+        "GitHub Enterprise Managed Users",
+        "personal access tokens",
+        "SSH keys",
+        "OAuth app tokens",
+        "GitHub App user access tokens",
+        "audit log"
+      ],
+      "published_or_updated_at": "2026-08-18",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-18-credential-revocation-and-deauthorization-by-token-type/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "OAuth"
+      ],
+      "why_it_matters_for_leaf": "Agent and MCP authorization practices need revocation evidence at the credential-type level so incidents can contain agent/tool access without unnecessarily invalidating trusted credentials."
+    },
+    {
+      "date_basis": "Visible article date: On Aug 18, 2026.",
+      "factual_summary": "ShepHertz launched AgentAnywhere, a sovereign agentic AI platform for regulated sectors that runs agents inside customer-controlled infrastructure or cloud environments, uses customer encryption keys, and includes data masking, prompt-injection screening, central model/tool/agent communication governance, and signed evidence packs.",
+      "id": "expresscomputer-agentanywhere-sovereign-governance-2026-08-18",
+      "local_practice_implication": "Ingest should capture the local evaluation checklist implication: require evidence for data residency, masking logs, prompt-injection verdicts, tool-call governance, and signed compliance receipts.",
+      "named_entities": [
+        "ShepHertz Technologies",
+        "AgentAnywhere",
+        "Veil",
+        "Kavach",
+        "Agent Universal Gateway",
+        "Custodian",
+        "SOC 2",
+        "ISO 27001",
+        "RBI controls"
+      ],
+      "published_or_updated_at": "2026-08-18",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_url": "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+      "upstream_owned_entities": [
+        "ShepHertz Technologies",
+        "AgentAnywhere",
+        "Mistral",
+        "Qwen",
+        "GLM",
+        "Gemma",
+        "GPT-OSS",
+        "Llama"
+      ],
+      "why_it_matters_for_leaf": "The product launch is an example of market pressure toward governed execution substrates, trust receipts, prompt-injection screening, and sovereignty requirements that local partner and solution evaluations should ask vendors to demonstrate."
+    },
+    {
+      "date_basis": "Visible article date: On Aug 17, 2026.",
+      "factual_summary": "The article argues that static annual audits do not fit agents whose prompts, memory, models, and tool access change continuously; it frames live agent inventory, scoped permissions, accountability trails, monitoring, enforcement, and proof as prerequisites for governance.",
+      "id": "expresscomputer-continuous-agent-governance-2026-08-17",
+      "local_practice_implication": "Prefer local follow-up language about continuous inventories, scoped permission lifecycles, and proof-producing controls over broad regulatory background.",
+      "named_entities": [
+        "ISO/IEC 42001",
+        "NIST AI RMF",
+        "EU AI Act",
+        "shadow AI",
+        "prompt injection",
+        "agent memory"
+      ],
+      "published_or_updated_at": "2026-08-17",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "NIST AI RMF",
+        "ISO/IEC 42001"
+      ],
+      "why_it_matters_for_leaf": "This reinforces local guidance that agent governance belongs around the runtime and workflow lifecycle, with continuous discovery and evidence generation instead of periodic document-only review."
+    }
+  ],
+  "run_timestamp_local": "2026-08-20T21:03:30-04:00",
+  "run_timestamp_utc": "2026-08-21T01:03:30Z",
+  "scanner_output_policy": "No scanner output was saved under raw/processed; this artifact is raw source material only.",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md"
+  ],
+  "source_urls_checked": [
+    "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+    "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+    "https://github.blog/changelog/2026-08-18-enterprise-managed-settings-in-github-copilot-for-jetbrains/",
+    "https://github.blog/changelog/2026-08-18-credential-revocation-and-deauthorization-by-token-type/",
+    "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+    "https://aembit.io/blog/mcp-oauth-2-1-pkce-and-the-future-of-ai-authorization/",
+    "https://salt.security/eu-ai-act-compliance",
+    "https://www.warp.dev/articles/ai-coding-agent-lifecycle-management",
+    "https://coder.com/docs/ai-coder/tasks-lifecycle",
+    "https://developers.cloudflare.com/agents/harnesses/think/lifecycle-hooks/",
+    "https://developers.googleblog.com/agent-plugins-package-your-skills-tools-and-more/",
+    "https://blakecrosley.com/blog/agent-plugins-standard"
+  ],
+  "upstream_owned_entities": [
+    "AgentAnywhere",
+    "EU AI Act",
+    "GLM",
+    "GPT-OSS",
+    "Gemma",
+    "GitHub",
+    "GitHub Copilot",
+    "ISO/IEC 42001",
+    "JetBrains IDEs",
+    "Llama",
+    "Mistral",
+    "Model Context Protocol",
+    "NIST AI RMF",
+    "OAuth",
+    "OpenTelemetry",
+    "Qwen",
+    "ShepHertz Technologies"
+  ]
+}
