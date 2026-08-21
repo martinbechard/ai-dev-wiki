@@ -15,6 +15,8 @@ The [partner-selection query fragment](../../../raw/processed/query/2026-08-20-a
 
 Broad company, product, model, and framework comparisons remain upstream-owned. Locally, the durable question is whether the partner can operate inside this wiki's workflow, governance, verification, context, and cost disciplines.
 
+The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) adds market evidence for sovereignty and signed governance receipts. Product and company background stays upstream-owned; locally, partner selection should ask whether a partner can prove customer-controlled execution, data masking, prompt-injection screening, model/tool/agent communication governance, customer-held encryption keys when required, and signed evidence packs rather than only claim regulated-sector readiness.
+
 ## Selection Criteria
 
 - Workflow and business fit: the partner can map the actual user journey, failure modes, decision rights, and measurable outcome before proposing model or tool choices.
@@ -27,6 +29,7 @@ Broad company, product, model, and framework comparisons remain upstream-owned. 
 - Maintainability and transfer: source, prompts, configuration, evaluations, runbooks, and operating records can be handed over and maintained by the customer.
 - Operating economics: the cost model includes discovery, data work, model and tool use, evaluation, review, monitoring, support, and change.
 - Commercial trust: contracts should make IP, data use, exit paths, support obligations, and acceptance criteria explicit.
+- Sovereignty and evidence receipts: when regulated or sensitive work is in scope, the partner can show data-residency controls, customer-key options, masking logs, prompt-injection verdicts, tool-call governance, and signed compliance or evidence packs.
 
 ## Pilot Evidence
 
@@ -35,6 +38,7 @@ A selection pilot should use representative tasks and data, include expected fai
 ## Authoritative Sources
 
 - [Partner-selection query fragment](../../../raw/processed/query/2026-08-20-ai-software-development-partner-selection.md)
+- [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [Workflow before model selection](workflow-before-model-selection.md)
 - [Adoption operating agreements](adoption-operating-agreements.md)
 - [Agent cost telemetry](agent-cost-telemetry.md)
@@ -69,3 +73,4 @@ A selection pilot should use representative tasks and data, include expected fai
 ## Maintenance Notes
 
 - Created on 2026-08-20 from the partner-selection query fragment as a durable procurement and operating-model rubric.
+- Maintained on 2026-08-20 with sovereignty, customer-controlled execution, prompt-injection verdict, governance-receipt, and evidence-pack criteria.

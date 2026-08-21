@@ -35,6 +35,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) adds self-hosted software-factory and file-backed planning evidence. Persistent workspaces should distinguish execution location, orchestration metadata, inference route, retained session records, eval data, plan files, and per-role credentials so a recovered workspace shows which plane owns each state object and which controls apply before resuming work.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) reinforces git worktrees and rebuildable workspaces as operating practice. Locally, isolated workspaces are useful when agent drafts can be discarded, rebuilt, or compared against a clean baseline; each workspace still needs branch purpose, owner, hook/eval status, affected files, and merge or abandonment evidence.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -55,6 +57,8 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - Pair persistent file storage with sandboxed command execution, and record which durable files are trusted state versus generated artifacts requiring re-verification.
 - Record environment-readiness evidence, secret scope, dependency state, and restart checks before resuming long-running agent work from a persistent workspace.
 - Distinguish workspace files, orchestration records, inference data, session transcripts, eval artifacts, plan files, and per-role secrets before treating persistent workspace state as current.
+- Use worktrees or equivalent isolated workspaces when agent drafts need rebuild, comparison, or abandonment without contaminating the main working tree.
+- Record branch purpose, owner, hook results, eval status, affected files, and merge or abandonment evidence before handing off a persistent workspace.
 
 ## Authoritative Sources
 
@@ -73,6 +77,7 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -110,3 +115,4 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 - Maintained on 2026-07-27 with persistent filesystem and sandboxed command-execution pairing guidance.
 - Maintained on 2026-07-30 with environment-readiness and restart evidence for persistent coding-agent workspaces.
 - Maintained on 2026-08-15 with split-plane workspace state, retained session records, eval artifacts, plan files, inference routing, and per-role secret boundaries.
+- Maintained on 2026-08-20 with worktree isolation, rebuildable draft, hook/eval status, branch ownership, and merge-or-abandonment evidence.

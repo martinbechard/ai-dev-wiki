@@ -65,6 +65,8 @@ The August 13 raw sources add MCP and audit-data controls. The [topic news colle
 
 The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds agent-baiting evidence for skills and MCP servers. Public repositories that look like agent skills, MCP servers, setup helpers, or evaluation artifacts can carry instructions, code paths, and tool scopes meant to influence future agents. Locally, these artifacts need provenance, install review, constrained permissions, quarantine for suspicious content, and public-contribution blocks before a command-capable agent loads or acts on them.
 
+The August 20 raw sources add governed-skill, credential, and evidence-pack controls. The [topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) records skills, file APIs, browser action, sandbox execution, short-lived task-scoped credentials, and AI-review attribution limits; the [leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) records token-type revocation and sovereign-agent evidence packs. Locally, reusable skills, stored files, browser-control traces, token classes, signed receipts, and vendor transparency reports are sensitive or supply-chain surfaces until provenance, retention, scope, and auditability are explicit.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -120,6 +122,9 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Require TLS or equivalent transport evidence, repository provenance, live-data mutation scope, token-exchange boundaries, and prompt-retention policy before approving MCP servers, skills, or audit pipelines for development workflows.
 - Treat repositories advertised as agent skills, MCP servers, setup helpers, or evaluation artifacts as executable supply-chain inputs until provenance, install intent, tool scope, and command behavior are reviewed.
 - Quarantine suspicious agent-facing artifacts and block public contribution, package publication, external file transfer, or future-agent instruction seeding unless explicitly authorized.
+- Review reusable skill folders, stored agent files, browser-control traces, code-execution sandboxes, and signed evidence packs for provenance, retention, data class, and authority before they enter a shared workflow.
+- Treat token-type revocation, affected-user notifications, and audit logs as sensitive incident evidence; keep credential values out of prompts and raw artifacts while preserving enough metadata for containment review.
+- Require vendor transparency reports or adoption metrics to state data collection scope, safety methodology, exclusions, and auditability before using them as supply-chain or governance evidence.
 
 ## Authoritative Sources
 
@@ -166,6 +171,8 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - [August 13 topic news collector source](../../../raw/processed/2026-08-13/ai-dev-wiki-topic-news-collector-2026-08-13T203147-0400.json)
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -218,6 +225,7 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Maintained on 2026-07-22 with HalluSquatting resolution, private-inference review, AIBOM provenance, untrusted-content, sandbox, monitoring, and kill-switch controls.
 - Maintained on 2026-08-04 with AI-generated supply-chain deception, package-name scrutiny, maintainer provenance, and exploitable-risk remediation controls.
 - Maintained on 2026-08-06 with source-specific controls for agent-authored public contributions, maintainer outreach, generated identities, public instructions, external file transfer, and package-publication attempts.
+- Maintained on 2026-08-20 with reusable-skill, stored-file, browser-control, sandbox, signed-evidence-pack, token-revocation, and vendor-transparency controls.
 - Maintained on 2026-08-08 with coding-agent skill-file supply-chain controls for hidden commands, tool scopes, provenance, and import review.
 - Maintained on 2026-08-10 with runtime-containment controls and third-party QA skill import review guidance.
 - Maintained on 2026-08-13 with MCP transport-security, repository-skill provenance, live-data mutation, token-exchange, and prompt-retention controls.

@@ -27,6 +27,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 The August 14 raw sources add held-tool, build, history, and behavior-state examples. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records approval requests, pending metadata, queued prompts, queued shell commands, pinned prompts, rewind recovery, and service disruptions. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records prebuilt build state, prior-work reconstruction, incident evidence fields, and purpose-based behavioral baselines. Locally, those states belong in the process layer so users and auditors can tell what the model saw, what was waiting, what environment ran, and whether behavior matched the declared task.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds embedded product-workflow and conversation-context evidence. Human-agent collaboration works better when visible channel context, permissions, workflow objects, handoff cycles, and decision state are first-class application state rather than ad hoc prompts. Locally, product agents should store which conversation or workflow context was used, which private context was excluded, what the agent drafted or prepared, and which human decision accepted, redirected, or rejected the output.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -44,6 +46,8 @@ The August 14 raw sources add held-tool, build, history, and behavior-state exam
 - Store queue events, execution-node traces, credential-reference choices, remote-viewing status, and human intervention events as durable workflow state when autonomous tests or flows run.
 - Treat long-horizon manager state, executor context, auditor observations, and learned memory updates as separate process-layer state channels with explicit authority.
 - Store approval-request state, queued work, pinned context, rewind points, provider-status checks, build provenance, prior-work history, incident evidence, and purpose baselines outside the model transcript when they affect execution or review.
+- Store shared-channel context, workflow-object permissions, excluded private context, reasoning reconstruction, draft artifacts, and human accept or redirect decisions as process-layer state for human-agent collaboration.
+- Treat agent-first product workflows as application architecture: context, permissions, governance, and handoff state need durable owners before agents can act inside recurring work.
 
 ## Authoritative Sources
 
@@ -59,6 +63,7 @@ The August 14 raw sources add held-tool, build, history, and behavior-state exam
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 
 ## Related Code
@@ -93,3 +98,4 @@ The August 14 raw sources add held-tool, build, history, and behavior-state exam
 - Maintained on 2026-07-31 with queue event, execution-node trace, credential-reference, remote-viewing, and human-intervention state guidance.
 - Maintained on 2026-08-08 with manager, fresh-context executor, read-only auditor, and learned state-policy boundaries.
 - Maintained on 2026-08-14 with approval-request, queued-work, pinned-context, rewind, status-check, build-provenance, prior-work-history, incident-evidence, and behavior-baseline state boundaries.
+- Maintained on 2026-08-20 with embedded human-agent workflow state for channel context, permissions, private-context exclusion, draft artifacts, and human accept or redirect decisions.

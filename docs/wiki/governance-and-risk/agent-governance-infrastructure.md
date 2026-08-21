@@ -71,6 +71,8 @@ The August 13 raw sources add audit-harness, usage-metric, ROI, and agent-securi
 
 The August 18 raw sources add inventory-first rollout, managed-settings, and bypass-telemetry evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records a practical enterprise-risk pattern: inventory deployed agents, rank the highest-risk ones, pilot runtime controls and audit logging on one agent, then scale from measured results. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds managed plugin settings, MCP allowlists, approval-bypass controls, organization rule-insight reports, adoption telemetry, and AI access controls as public signals for making rollout state and exception behavior auditable. Locally, governance should start with a current agent inventory, assigned owners, risk tiers, managed policy surfaces, and exportable evidence for bypasses or rollout exceptions.
 
+The August 20 raw sources add continuous-control and evidence-pack signals. The [leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) records managed IDE settings, token-type revocation, audit-log capture, and governed sovereign-agent substrates. The [topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) records governance commentary about shadow AI, inherited permissions, continuous capability discovery, permission review, business-impact assessment, adjustable isolation, task-scoped credentials, dual-use gates, and vendor transparency. Locally, governance infrastructure should continuously discover agent surfaces, review inherited access, bind credentials to trust boundaries, require isolation or pause paths, and demand evidence packs or reporting methodology before adoption metrics are trusted.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -133,6 +135,10 @@ The August 18 raw sources add inventory-first rollout, managed-settings, and byp
 - Pair agent adoption metrics and ROI dashboards with governance evidence for reviewer capacity, cost ownership, identity, approved tool scope, and incident response instead of treating activity counts as approval.
 - Start governance rollout with an agent inventory, risk tiering, one controlled pilot, runtime logs, and measured results before expanding controls across all agents.
 - Treat managed settings, MCP allowlists, approval-bypass controls, rule-insight reports, and rollout telemetry as governance evidence that must be exportable and owner-reviewed.
+- Continuously discover agent capabilities, shadow-agent surfaces, inherited permissions, and connected tools instead of relying on periodic policy review alone.
+- Bind credentials to task scopes and trust boundaries, and preserve token-type revocation plus audit evidence for containment after agent or tool incidents.
+- Require adjustable isolation, emergency pause, signed evidence packs, and vendor-reporting methodology when agents operate in regulated, sensitive, or high-impact workflows.
+- Treat vendor adoption, safety, and usage metrics as governance inputs only when their collection method, scope, exclusions, and auditability are visible.
 
 ## Authoritative Sources
 
@@ -187,6 +193,8 @@ The August 18 raw sources add inventory-first rollout, managed-settings, and byp
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -247,3 +255,4 @@ The August 18 raw sources add inventory-first rollout, managed-settings, and byp
 - Maintained on 2026-07-28 with cross-client managed policy, model enablement, plugin marketplace, approval bypass, CI approval hold, token-limit, telemetry-export, and remote-skill governance evidence.
 - Maintained on 2026-08-06 with containment-first infrastructure controls for public internet access, external communication, repository contribution, package publication, emergency stops, and immutable run evidence.
 - Maintained on 2026-08-13 with audit-harness events, prompt-hash privacy, SIEM export, usage metrics, ROI assumptions, workspace identity, budgets, and incident-response evidence.
+- Maintained on 2026-08-20 with continuous discovery, inherited-permission review, task-scoped credentials, token-type revocation, isolation paths, evidence packs, and vendor-reporting methodology guidance.

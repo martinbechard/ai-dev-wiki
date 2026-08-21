@@ -67,6 +67,8 @@ The August 16 sources add configuration, review-capacity, and maintainer-queue e
 
 The August 18 raw sources add review-maintenance, adversarial security-review, and production-incident signals. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records AI review as a maintained workflow asset with rule updates, noise control, and close human review of agent-authored code, while also recording phased agentic source-code review that starts from inventories, SBOMs, architecture, and threat intelligence before expert review. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds public signals that AI review can increase bug-report volume and that production incidents attributed to AI-generated code should push review workflows toward stronger test and gate evidence. Locally, review automation needs an owner, versioned policy, evidence inputs, and final human accountability before its findings change merge decisions.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds AI-review attribution evidence from public Snowflake/Wiz coverage. The local review lesson is not to infer exact authorship from a co-author line or tool participation alone. Review records should preserve what the AI authored, what it reviewed or scanned, which workflow files or credentials were in scope, which security gates missed the issue, and how remediation rotated short-lived credentials or patched the workflow after responsible disclosure.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -132,6 +134,8 @@ The August 18 raw sources add review-maintenance, adversarial security-review, a
 - Assign an owner to maintain AI-review prompts, rules, severity filters, and noise controls when the workflow becomes a recurring PR or CI gate.
 - Ground security-oriented agentic review in inventories, architecture, SBOMs, threat intelligence, and expert triage before treating generated vulnerability findings as merge evidence.
 - Treat reported production incidents from AI-generated code as a signal to strengthen pre-merge tests, human review gates, and post-merge health checks rather than as a generic ban on generated code.
+- Preserve authorship, review participation, scanned scope, workflow-file scope, missed security-gate evidence, credential-rotation evidence, and patch timing before attributing an AI-assisted security flaw to generation or review failure.
+- Treat commit metadata, co-author trailers, and AI-review comments as weak attribution unless they are joined to tool traces, changed lines, scanned files, and remediation records.
 
 ## Authoritative Sources
 
@@ -177,6 +181,7 @@ The August 18 raw sources add review-maintenance, adversarial security-review, a
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -234,3 +239,4 @@ The August 18 raw sources add review-maintenance, adversarial security-review, a
 - Maintained on 2026-08-12 with system-context review and agentic change-management queue evidence.
 - Maintained on 2026-08-13 with shift-left review, configurable effort levels, automated-check coverage, and reviewer-capacity evidence.
 - Maintained on 2026-08-16 with configuration-driven AI-review gates, finding-class separation, maintainer-capacity, and human-owned patch evidence.
+- Maintained on 2026-08-20 with AI-review attribution, scanned-scope, workflow-file, missed-gate, credential-rotation, and remediation-timing evidence.

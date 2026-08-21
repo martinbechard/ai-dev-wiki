@@ -1,0 +1,490 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-20T20:31:45-04:00",
+  "last_run_timestamp": "2026-08-20T00:31:36.939Z",
+  "cutoff_window": {
+    "start": "2026-08-18T20:31:45-04:00",
+    "end": "2026-08-20T20:31:45-04:00",
+    "rule": "Include only public sources published or visibly updated within the last two days. Exclude date-only August 18 sources as cutoff-boundary ambiguous because no publication time proves they are after the cutoff."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "wiki_boundary_check": {
+    "local_pages_checked": [
+      "docs/wiki/federation.md",
+      "docs/wiki/topic-index.md",
+      "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "docs/wiki/source-workflows/automated-update-feeds.md"
+    ],
+    "upstream_pages_checked": [
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md"
+    ],
+    "federation_summary": "The upstream AI wiki owns broad companies, products, models, developer tools, agentic frameworks, MCP servers, and techniques. This collector keeps only downstream AI-assisted development practice implications and routes entity background upstream."
+  },
+  "search_queries": [
+    "AI coding agent governance approvals audit logs August 2026 software engineering",
+    "AI-assisted development TDD code review evals August 2026",
+    "context engineering coding agents durable instructions August 2026",
+    "MCP governance tool call permissions coding agents August 2026",
+    "AI coding agents source code review August 20 2026",
+    "AI software engineering agents August 20 2026 code review",
+    "agentic AI software development governance August 20 2026",
+    "MCP AI agents governance August 20 2026",
+    "site:github.blog/changelog AI coding agent August 20 2026",
+    "site:openai.com/index codex August 20 2026 coding agent",
+    "site:anthropic.com/news Claude Code August 20 2026",
+    "site:code.visualstudio.com/updates agent August 2026 instructions",
+    "CISA agentic AI guidance August 2026 agents credentials",
+    "CoSAI token exchange standard agentic AI August 2026",
+    "AI coding assistant flaw AI attack agent exploited five days Snowflake Wiz June 2026 August 2026",
+    "agentic AI credential identity controls August 2026",
+    "\"Build production agents with computer use, the Skills API, and the Files API\"",
+    "\"The Claude Code guide for startups\" \"August 20, 2026\"",
+    "\"Turning conversation into knowledge: how Slack builds human-agent teams\" \"August 19, 2026\"",
+    "\"How monday.com transformed its platform into an agent-first product\" \"August 20, 2026\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-08-20-anthropic-production-agent-apis",
+      "title": "Production-agent APIs package computer use, skills, and files as one workflow surface",
+      "source_urls": [
+        "https://claude.com/blog/computer-use-skills-api-files-api"
+      ],
+      "visible_dates": [
+        {
+          "date": "August 20, 2026",
+          "evidence": "Page metadata lists Date: August 20, 2026."
+        }
+      ],
+      "short_factual_summary": "Anthropic announced general availability for computer use, a browser use tool, the Skills API, and the Files API on the Claude Platform. The post describes agents operating software, loading versioned instruction/script/template folders only when a task calls for them, and reading or writing stored files by ID.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treats browser action, skill loading, file storage, and code execution as one governed harness surface. Local ingest should examine whether versioned skills, file expiration, sandbox execution, and browser-structure targeting need coverage in durable instruction, tool governance, and harness pattern leaves.",
+      "candidate_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Platform",
+        "Claude",
+        "computer use",
+        "browser use tool",
+        "Skills API",
+        "Files API",
+        "Microsoft Foundry",
+        "Google Cloud Vertex AI"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Platform",
+        "Claude",
+        "computer use",
+        "browser use tool",
+        "Skills API",
+        "Files API",
+        "Microsoft Foundry",
+        "Google Cloud Vertex AI"
+      ],
+      "local_practice_implication": "Keep product and API background upstream; locally consider skill versioning, scoped file retention, browser-action reliability, sandbox execution, and task evidence as application-harness and governance practices.",
+      "follow_up_notes": [
+        "Compare with existing local leaves for portable agent skills, structured-output drafter patterns, browser-agent runtime boundaries, and tool-call governance before synthesis."
+      ]
+    },
+    {
+      "id": "2026-08-20-claude-code-startup-operating-principles",
+      "title": "Startup Claude Code guide emphasizes verification, worktrees, hooks, and evals",
+      "source_urls": [
+        "https://claude.com/blog/claude-code-guide-for-startups"
+      ],
+      "visible_dates": [
+        {
+          "date": "August 20, 2026",
+          "evidence": "Page metadata lists Date: August 20, 2026."
+        }
+      ],
+      "short_factual_summary": "Anthropic published a Claude Code startup guide based on interviews with more than a dozen companies. The guide names operating principles such as everyone ships, automate tedium, trust but verify, build for rebuilding, and prototype/dogfood/productionize; it also points to root instruction files, loops, hooks, evaluations, plan mode, and git worktrees.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is not the Claude Code product itself but the operating model: non-specialists can draft changes, while teams need hard verification gates, isolated rebuild workspaces, maintained evals, and lifecycle hooks that enforce policy.",
+      "candidate_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude",
+        "ClickHouse",
+        "Omni",
+        "Clay",
+        "Artemis Security",
+        "Cognition",
+        "MCP",
+        "CLAUDE.md",
+        "git worktrees",
+        "hooks",
+        "plan mode"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude",
+        "ClickHouse",
+        "Omni",
+        "Clay",
+        "Artemis Security",
+        "Cognition",
+        "MCP"
+      ],
+      "local_practice_implication": "Keep vendor and customer-background coverage upstream; locally route the operating principles to durable adoption agreements, verification gates, isolated workspace practice, and durable instruction-file hygiene.",
+      "follow_up_notes": [
+        "During ingest, avoid copying the startup case-study metrics into local leaves unless they support a specific practice implication with attribution."
+      ]
+    },
+    {
+      "id": "2026-08-20-monday-agent-first-product-transition",
+      "title": "Agent-first product transition frames AI adoption as product architecture",
+      "source_urls": [
+        "https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate"
+      ],
+      "visible_dates": [
+        {
+          "date": "August 20, 2026",
+          "evidence": "Page metadata lists Date: August 20, 2026."
+        }
+      ],
+      "short_factual_summary": "Anthropic published a monday.com case study describing a shift from add-on AI features to a platform rebuilt around human-agent collaboration, existing workflow context, permissions, and governance. The article says monday launched the agent-first product in May 2026 and saw more than five million agent interactions.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a product-pattern signal: agent adoption matures when agents are embedded into source workflow, context, permissions, and governance surfaces instead of being layered on as isolated summarization or categorization features.",
+      "candidate_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Enterprise",
+        "monday.com",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Enterprise",
+        "monday.com",
+        "Claude"
+      ],
+      "local_practice_implication": "Route broad product/company background upstream; locally consider whether the existing agent-process-layer and workflow-state leaves need the 'AI dust ceiling' product-architecture contrast.",
+      "follow_up_notes": [
+        "Check existing application-pattern pages before creating any new local leaf; this likely extends agent process layer and workflow-state material."
+      ]
+    },
+    {
+      "id": "2026-08-19-slack-human-agent-knowledge",
+      "title": "Human-agent teams need shared conversation context and explicit handoffs",
+      "source_urls": [
+        "https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams"
+      ],
+      "visible_dates": [
+        {
+          "date": "August 19, 2026",
+          "evidence": "Page metadata lists Date: August 19, 2026."
+        }
+      ],
+      "short_factual_summary": "Anthropic published a Slack-focused interview about human-agent teams. The article says workplace conversation can become useful context for agents when work happens in visible channels, agents reconstruct reasoning and changed context, and teams use handoff cycles where agents draft or prepare and humans review, decide, or redirect.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is a context and operating-model rule: durable agent usefulness depends on searchable shared work context, not only final artifacts. Teams should decide what belongs in public channels, how private context is excluded, and when a human decision is required in the handoff loop.",
+      "candidate_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Slack",
+        "Claude",
+        "Claude in Slack",
+        "Jaime DeLanghe"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Slack",
+        "Claude",
+        "Claude in Slack"
+      ],
+      "local_practice_implication": "Route company and product background upstream; locally keep the channel-visibility, reasoning reconstruction, and human-agent handoff practices.",
+      "follow_up_notes": [
+        "During ingest, consider links to compiled wiki memory, context-state rehydration, event-triggered workflows, and human-agent approval boundaries."
+      ]
+    },
+    {
+      "id": "2026-08-19-techradar-governance-rails",
+      "title": "AI governance article argues for operational controls beyond policy documents",
+      "source_urls": [
+        "https://www.techradar.com/pro/ai-needs-rules-and-rails-why-governance-must-move-beyond-policy"
+      ],
+      "visible_dates": [
+        {
+          "date": "Published 19 August 2026",
+          "evidence": "Article byline shows Published 19 August 2026."
+        }
+      ],
+      "short_factual_summary": "TechRadar published an opinion article arguing that AI governance requires operational controls in addition to policy. It highlights shadow AI, AI agents acting with inherited permissions, continuous identification of AI capabilities, permission review, business-impact assessment, and controls that can adjust or isolate agents as capabilities change.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces the local governance pattern that coding agents and tool-enabled assistants need continuous discovery, identity and permission review, and action-level operational controls rather than periodic policy-only review.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Armis",
+        "ServiceNow",
+        "EU AI Act",
+        "PocketOS"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Armis",
+        "ServiceNow",
+        "EU AI Act",
+        "PocketOS"
+      ],
+      "local_practice_implication": "Do not duplicate broad governance or company background; use only the local practice lens around inherited permissions, shadow-agent discovery, and operational control loops.",
+      "follow_up_notes": [
+        "Check overlap with governance controls for agents, agent identity and delegated authority, and destructive-command controls before synthesis."
+      ]
+    },
+    {
+      "id": "2026-08-19-snowflake-ai-review-attribution",
+      "title": "Snowflake flaw coverage shows AI-review attribution and security gate gaps",
+      "source_urls": [
+        "https://www.itpro.com/security/wiz-cto-speaks-out-amid-snowflake-github-flaw-confusion",
+        "https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html"
+      ],
+      "visible_dates": [
+        {
+          "date": "Published 19 August 2026",
+          "evidence": "ITPro article byline shows Published 19 August 2026."
+        },
+        {
+          "date": "Aug 19, 2026",
+          "evidence": "CSO article metadata shows Aug 19, 2026."
+        }
+      ],
+      "short_factual_summary": "ITPro and CSO reported on Wiz Red Agent finding and exploiting a Snowflake GitHub Actions workflow vulnerability. Coverage clarified that GitHub Copilot was a PR co-author and participated in review or scanning, but the exact vulnerable lines were not clearly AI-authored; GitHub Advanced Security missed the vulnerable workflow, and Snowflake remediated after responsible disclosure.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is that AI-authored, AI-reviewed, and human-authored code can be hard to attribute from commit metadata alone. Review workflows need evidence for what an AI changed, what it scanned, what security checks missed, and how quickly short-lived credentials and patch cycles respond after agent-discovered flaws.",
+      "candidate_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Wiz",
+        "Red Agent",
+        "Snowflake",
+        "GitHub Copilot",
+        "GitHub Advanced Security",
+        "GitHub Actions",
+        "HackerOne",
+        "Jira"
+      ],
+      "upstream_owned_entities": [
+        "Wiz",
+        "Red Agent",
+        "Snowflake",
+        "GitHub Copilot",
+        "GitHub Advanced Security",
+        "GitHub Actions",
+        "HackerOne",
+        "Jira"
+      ],
+      "local_practice_implication": "Route entity and incident background upstream; locally keep attribution evidence, AI-review limits, workflow-injection review, credential rotation, and security gate regression implications.",
+      "follow_up_notes": [
+        "Potential ingest destinations include intelligent code review, code-review evals and rubrics, sensitive-data and supply-chain controls, and source reconciliation."
+      ]
+    },
+    {
+      "id": "2026-08-20-ai-governance-weekly-agent-controls",
+      "title": "Governance roundup calls for task-scoped credentials and agent audit evidence",
+      "source_urls": [
+        "https://aigovernance.com/news/ai-governance-weekly-august-20-2026"
+      ],
+      "visible_dates": [
+        {
+          "date": "August 20, 2026",
+          "evidence": "Page title and URL identify AI Governance Weekly - August 20, 2026."
+        }
+      ],
+      "short_factual_summary": "AI Governance Institute's August 20 weekly roundup lists program updates including short-lived task-scoped credentials at every agent trust boundary, dual-use review gates for biological and offensive cyber use cases, and vendor transparency requirements for usage and safety reports. Its top story also flags the Snowflake/Wiz AI-code-review incident.",
+      "why_it_matters_for_ai_assisted_development_practice": "Although secondary, the roundup compresses several practice-level governance actions into concrete checklist language: require trust-boundary credentials, add high-risk use-case review gates, and demand vendor reporting methodology before relying on adoption or safety metrics.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "AI Governance Institute",
+        "CISA",
+        "CoSAI",
+        "DOJ",
+        "NYC Local Law 144",
+        "Stanford",
+        "Evo 2",
+        "GLM-5.3",
+        "Wiz",
+        "GitHub Copilot",
+        "Snowflake"
+      ],
+      "upstream_owned_entities": [
+        "AI Governance Institute",
+        "CISA",
+        "CoSAI",
+        "DOJ",
+        "NYC Local Law 144",
+        "Stanford",
+        "Evo 2",
+        "GLM-5.3",
+        "Wiz",
+        "GitHub Copilot",
+        "Snowflake"
+      ],
+      "local_practice_implication": "Use as a routing source for governance practices only; verify primary sources before treating individual cited regulatory or security claims as durable facts.",
+      "follow_up_notes": [
+        "If ingested, distinguish the August 20 roundup date from older primary-source dates cited inside it."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "CoSAI Paper Sets Token-Exchange Standard for Agentic Trust Boundaries",
+      "url": "https://aigovernance.com/news/cosai-paper-sets-token-exchange-standard-for-agentic-trust-boundaries",
+      "visible_date": "2026-08-18",
+      "reason": "Excluded as cutoff-boundary ambiguous because the visible date is date-only August 18, 2026 and the run cutoff is August 18, 2026 at 20:31:45 -04:00. The underlying CoSAI paper date in the source is April 29, 2026."
+    },
+    {
+      "title": "ShepHertz launches AgentAnywhere to enable sovereign enterprise AI",
+      "url": "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+      "visible_date": "On Aug 18, 2026",
+      "reason": "Excluded as cutoff-boundary ambiguous because no publication time proves the August 18 item was published after the cutoff."
+    },
+    {
+      "title": "OpenAI announces slowing pace of development after hack by rogue agent",
+      "url": "https://www.theguardian.com/technology/2026/aug/18/open-ai-pause-hack",
+      "visible_date": "Tue 18 Aug 2026 16.47 EDT; last modified 17.58 EDT",
+      "reason": "Excluded because both visible publication and modification times are before the cutoff of 2026-08-18T20:31:45-04:00."
+    },
+    {
+      "title": "Exclusive: Google-backed agentic A2A protocol gets a new home",
+      "url": "https://www.axios.com/2026/08/17/a2a-agentic-ai-foundation-open-ai-standards",
+      "visible_date": "Search result showed Published: 3 days ago; opened page did not expose a concrete date in fetched text.",
+      "reason": "Excluded as out of window and insufficient visible date evidence. Broad A2A and protocol governance is also upstream-owned except for local practice routing."
+    },
+    {
+      "title": "Visual Studio Code 1.134",
+      "url": "https://code.visualstudio.com/updates/v1_134",
+      "visible_date": "Release page labels version 1.134 but fetched text did not expose a full publication date.",
+      "reason": "Excluded because no precise visible publication or update date was found, even though the agent-host and subagent-chat details are locally relevant."
+    },
+    {
+      "title": "Codex is now generally available",
+      "url": "https://openai.com/index/codex-now-generally-available/",
+      "visible_date": "October 6, 2025",
+      "reason": "Excluded as outside the two-day source window."
+    },
+    {
+      "title": "Harness engineering: leveraging Codex in an agent-first world",
+      "url": "https://openai.com/index/harness-engineering/",
+      "visible_date": "February 11, 2026",
+      "reason": "Excluded as outside the two-day source window."
+    },
+    {
+      "title": "Claude Code on the web",
+      "url": "https://claude.com/blog/claude-code-on-the-web",
+      "visible_date": "October 20, 2025; update November 12, 2025",
+      "reason": "Excluded as outside the two-day source window."
+    },
+    {
+      "title": "CISA, US and International Partners Release Guide to Secure Adoption of Agentic AI",
+      "url": "https://www.cisa.gov/news-events/news/cisa-us-and-international-partners-release-guide-secure-adoption-agentic-ai",
+      "visible_date": "May 1, 2026",
+      "reason": "Excluded as outside the two-day source window. It remains a primary source to verify if later ingest handles current credential-control roundup claims."
+    },
+    {
+      "title": "Secret scanning with GitHub MCP Server is now generally available",
+      "url": "https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server-is-now-generally-available/",
+      "visible_date": "May 5, 2026",
+      "reason": "Excluded as outside the two-day source window."
+    },
+    {
+      "title": "Why traditional enterprise governance falls short in the age of Agentic AI",
+      "url": "https://www.expresscomputer.in/guest-blogs/why-traditional-enterprise-governance-falls-short-in-the-age-of-agentic-ai/137862/",
+      "visible_date": "Search result showed Published: 3 days ago.",
+      "reason": "Excluded because the search result places it outside the two-day window and no later visible update date was captured."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 7,
+    "exclusion_count": 11
+  },
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were searched and recorded.",
+    "No private repository content, proprietary source text, credentials, PII, or company-internal local content was sent to external services.",
+    "Local wiki and automation memory files were read only to enforce repository workflow and federation boundaries."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Do not synthesize this collector output directly into docs/wiki until the raw-source ingest workflow processes it and runs normal project-wiki verification gates.",
+    "When ingesting, verify primary sources for secondary roundup claims before creating durable governance statements.",
+    "Keep product, company, model, framework, MCP server, and broad technique details routed to the upstream AI wiki; retain only the local AI-assisted development practice implications here."
+  ]
+}

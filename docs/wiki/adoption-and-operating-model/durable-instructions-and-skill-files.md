@@ -33,6 +33,8 @@ The [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-
 
 The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) adds instruction-maintenance debt evidence. Durable instruction files should be periodically audited for obsolete front-loaded rules, repeated prompts, and model-era assumptions, then shortened or moved into progressive-disclosure skills when the standing prompt no longer needs them. Broad model and product details stay upstream; locally, the operating rule is to treat instruction cleanup as maintenance work with owner review and verification, not as casual prompt trimming.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds startup operating-practice evidence for root instruction files, hooks, evals, and plan mode. Broad Claude Code product coverage stays upstream; locally, durable instructions should support "trust but verify" operating agreements by routing agents to project rules, worktree practice, hook evidence, and eval gates without turning a root instruction file into an overloaded manual.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -55,6 +57,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Catalog internal skills by workflow, owner, validation evidence, standards coverage, and compatibility target before treating them as reusable procedure.
 - Evaluate shared skills with representative tasks, edge cases, tool-use expectations, and regression checks before promoting them into durable team guidance.
 - Audit durable instruction files for stale prompt debt and move recurring procedure into reviewed skills or wiki-backed guidance when progressive disclosure can carry it more safely.
+- Keep root instruction files short enough to route agents to project rules, hooks, worktree boundaries, eval gates, and verification expectations without duplicating the durable wiki or every reusable skill.
+- Treat plan-mode prompts, hooks, and eval commands as maintained instruction surfaces when they shape recurring agent behavior or acceptance gates.
 
 ## Authoritative Sources
 
@@ -72,6 +76,7 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -112,3 +117,4 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 - Maintained on 2026-07-30 with internal-skill workflow ownership, standards, validation, and compatibility evidence.
 - Maintained on 2026-08-07 with skill-eval workshop evidence for representative tasks, edge cases, tool-use expectations, and regression checks.
 - Maintained on 2026-08-12 with prompt-debt auditing and progressive-disclosure cleanup as durable instruction maintenance.
+- Maintained on 2026-08-20 with root instruction, plan-mode, hook, worktree, and eval routing evidence from startup operating-practice signals.

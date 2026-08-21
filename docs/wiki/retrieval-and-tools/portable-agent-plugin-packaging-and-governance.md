@@ -19,6 +19,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 
 The August 15 raw sources add installable planning-skill and baiting evidence. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records a file-backed planning package as a reusable context architecture pattern and an executable skill-installation surface. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) records fake repository, skill, and MCP-server baiting risks. Locally, portable package review should verify publisher, source archive, bundled commands, memory and plan-file writes, MCP server declarations, and install-time instructions before a package can influence agent behavior.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds provider-native skill packaging evidence. General-availability APIs for skills, files, browser action, and code execution show portable instruction folders becoming part of a broader governed harness surface. Broad product and API coverage remains upstream-owned; locally, skill packages should be reviewed for versioning, lazy-loading rules, included scripts or templates, file-retention assumptions, sandbox execution, and evidence that the selected skill was actually loaded for the task.
+
 Portable packages should not erase artifact boundaries. [Portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md) owns reusable procedure design; [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md) owns skills discovered through MCP; [tool call and MCP governance](tool-call-and-mcp-governance.md) owns runtime tool authorization; this page owns the packaging review that binds those components together.
 
 ## Practice Boundaries
@@ -32,6 +34,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Treat repository-hosted skills, plugin packages, and MCP server declarations as supply-chain inputs until provenance, namespace, managed-availability policy, and allowlist evidence are recorded.
 - Treat plugin-management UI, side-channel agent questions, queued commands, pinned prompts, and rewind or recovery features as supervision and audit surfaces when portable packages enter recurring workflows.
 - Review publisher identity, source archive, bundled commands, memory writes, plan-file writes, MCP declarations, and install instructions before an installable skill or plugin package can change agent behavior.
+- Review skill package versioning, lazy-loading triggers, bundled scripts, templates, file identifiers, retention assumptions, and sandbox execution before a reusable skill becomes a shared team capability.
+- Preserve run evidence that names which skill package and version loaded, which files it read or wrote, and which execution sandbox handled its scripts.
 
 ## Authoritative Sources
 
@@ -43,6 +47,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md)
@@ -77,3 +82,4 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Maintained on 2026-08-13 with portable package policy, repository-skill provenance, MCP allowlist, and client-namespace review evidence.
 - Maintained on 2026-08-14 with plugin-management, side-channel-question, queued-command, pinned-prompt, and recovery-feature supervision evidence.
 - Maintained on 2026-08-15 with installable planning-skill, publisher, source-archive, memory-write, plan-file, MCP-declaration, and repository-baiting package-review evidence.
+- Maintained on 2026-08-20 with provider-native skill package versioning, lazy-loading, file-retention, sandbox-execution, and run-evidence guidance.

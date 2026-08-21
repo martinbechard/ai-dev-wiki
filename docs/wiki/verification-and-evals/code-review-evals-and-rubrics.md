@@ -47,6 +47,8 @@ The August 8 sources add test-suite-auditor, role-grounded-rubric, and event-ado
 
 The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json) adds OpenCodeReview evidence for staged, deterministic review evaluation. Review rubrics should score dispatch-rule correctness, grounded file selection, curated tool use, file-level parallel review independence, reflection independence, finding stability across runs, and token cost per validated finding instead of relying only on aggregate review quality.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds incident-attribution rubric fields for AI-assisted review. Review evals should score whether a reviewer can distinguish AI-authored code, AI-reviewed code, human-authored code, and AI-scanned-but-missed code from available evidence. For security-sensitive workflow files, rubrics should include missed-gate analysis, credential lifetime, responsible-disclosure response, and whether remediation evidence proves containment.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -81,6 +83,8 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Include usefulness, bug and security coverage, risk classification, and cost as separate dimensions for cost-constrained code-review agents.
 - Include test-suite adequacy, adversarial test generation, role-grounded rubric fields, repository submission evidence, and codebase-health review when the review workflow judges AI-agent build outputs.
 - Score deterministic review stages separately: dispatch, file selection, curated tool use, parallel reviewer independence, reflection independence, repeated-run stability, and cost per validated finding.
+- Score attribution evidence separately from defect detection: authored lines, reviewed scope, scanned files, tool traces, commit metadata, missed scanner output, credential rotation, and remediation timing should remain distinct rubric fields.
+- Include security-sensitive workflow-file cases where the expected review output names both the vulnerable automation path and the limits of AI attribution from incomplete metadata.
 
 ## Authoritative Sources
 
@@ -110,6 +114,7 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -153,3 +158,4 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 - Maintained on 2026-07-30 with deterministic diagnostic scoring and cost-constrained code-review eval dimensions after live primary-source corroboration.
 - Maintained on 2026-08-08 with test-suite-auditor, role-grounded-rubric, repository-evidence, and codebase-health review criteria.
 - Maintained on 2026-08-11 with staged deterministic review-eval criteria for dispatch, grounded file review, curated tools, independent reflection, stability, and token cost.
+- Maintained on 2026-08-20 with authorship, AI-review participation, scanned scope, missed-gate, credential-lifetime, responsible-disclosure, and containment rubric fields.

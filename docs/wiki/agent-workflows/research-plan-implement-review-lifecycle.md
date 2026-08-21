@@ -28,6 +28,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 5. Review preserves human gates, unresolved risks, and acceptance evidence.
 6. Shipping records release, handoff, or deployment decisions separately from agent completion claims.
 
+The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds startup operating principles that map cleanly onto this lifecycle: automate tedium, trust but verify, build for rebuilding, and prototype before productionizing. Locally, these principles translate into lifecycle evidence: reusable hooks for repetitive checks, plan records before implementation, rebuildable worktrees or drafts, evals and verification before trust, and dogfood or pilot evidence before a workflow becomes a production dependency.
+
 ## Practice Boundaries
 
 - Keep research evidence-gathering distinct from file modification.
@@ -39,6 +41,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Treat asynchronous research reports as lifecycle inputs that need source, citation, and sensitivity review before they become implementation plans.
 - Choose the implementation execution boundary before coding starts when local files, credentials, approvals, or reproducible setup affect risk.
 - Preserve phase evidence and gate decisions across research, planning, implementation, verification, review, and shipping.
+- Use hooks and reusable checks to automate repetitive verification, while keeping human ownership over trust, productionization, and final acceptance.
+- Treat rebuildable drafts, worktree isolation, and pilot or dogfood evidence as lifecycle gates before recurring agent workflows are promoted.
 
 ## Authoritative Sources
 
@@ -48,6 +52,7 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
+- [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 
 ## Related Code
 
@@ -77,3 +82,4 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 - Created on 2026-06-23 from source-backed RPI and HVE workflow-packaging guidance.
 - Maintained on 2026-07-27 with asynchronous research report review and execution-boundary selection guidance.
 - Maintained on 2026-07-30 with explicit control-plane phases, memory boundaries, and human gate evidence.
+- Maintained on 2026-08-20 with startup operating principles for automated tedium, trust-but-verify gates, rebuildable drafts, and prototype-to-production promotion.
