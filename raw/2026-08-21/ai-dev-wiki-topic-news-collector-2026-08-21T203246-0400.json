@@ -1,0 +1,510 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-21T20:32:46-04:00",
+  "cutoff_window": {
+    "start": "2026-08-19T20:32:46-04:00",
+    "end": "2026-08-21T20:32:46-04:00",
+    "rule": "Only public sources with visible publication or update dates inside the two-day run window qualify. Date-only August 20 and August 21 items qualify because the whole visible date is inside the window; date-only August 19 items would be boundary-ambiguous and were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "wiki_context_checked": {
+    "local_pages": [
+      "docs/wiki/federation.md",
+      "docs/wiki/topic-index.md",
+      "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+      "docs/wiki/coding-practices/intelligent-code-review.md",
+      "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+    ],
+    "upstream_scope_checked": [
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md",
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/companies/index.md",
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/developer-tools/index.md",
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/agentic-frameworks/index.md",
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/mcp-servers/index.md",
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/techniques/index.md"
+    ],
+    "federation_note": "The upstream AI wiki owns company, product, model, agentic-framework, MCP-server, developer-tool, and broad technique coverage. Findings below keep only local AI-assisted development practice implications."
+  },
+  "search_queries": [
+    "AI coding agents context engineering durable instructions August 2026",
+    "AI code review coding agent evals August 2026",
+    "MCP governance approval audit logs coding agents August 2026",
+    "AI assisted development TDD regression repair coding agents August 2026",
+    "\"August 21, 2026\" \"coding agents\"",
+    "\"August 20, 2026\" \"AI code review\"",
+    "\"August 21, 2026\" \"MCP\" \"agents\""
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Loop engineering framed as the enforceable runtime layer for agents",
+      "source_url": "https://www.truefoundry.com/fr/blog/loop-engineering-ai-agent-runtime",
+      "visible_date": "Published: August 21, 2026",
+      "source_type": "vendor engineering blog",
+      "owning_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "TrueFoundry describes an agent harness loop as the runtime place where persistence, context compaction, tool approvals, sandboxing, deferred capability discovery, and failure reconstruction are enforced between model calls.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a useful downstream-practice signal that high-risk coding-agent behavior should be enforced in the harness loop rather than expressed only as prompt guidance. It maps directly to local leaves on harness components, lifecycle hooks, context rehydration, and approval controls.",
+      "named_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "agent harness",
+        "loop engineering",
+        "tool approval",
+        "session persistence",
+        "sandbox",
+        "deferred tools",
+        "skills"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "Model Context Protocol",
+        "agentic frameworks",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, consider whether application-patterns should connect loop-level enforcement to existing leaves for harness components, session recovery, lifecycle hooks, structured outputs, and MCP approval evidence.",
+      "follow_up_notes": "Do not create a local TrueFoundry or TrueForge product leaf; route product background upstream."
+    },
+    {
+      "title": "Structured outputs require schema, deterministic validation, and authorization layers",
+      "source_url": "https://www.truefoundry.com/fr/blog/llm-structured-outputs-json-schema",
+      "visible_date": "Published: August 21, 2026",
+      "source_type": "vendor engineering blog",
+      "owning_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "TrueFoundry separates free-form text, valid JSON, schema-conforming objects, business-valid objects, and authorized actions; it notes that JSON mode is not a stable contract and that tool-call schemas still need policy enforcement.",
+      "why_it_matters_for_ai_assisted_development_practice": "The source reinforces the local pattern that model-drafted artifacts and tool calls need layered validation. It adds a concise practice distinction between syntactic parsing, schema conformance, business invariants, and authorization gates.",
+      "named_entities": [
+        "TrueFoundry",
+        "JSON mode",
+        "JSON Schema",
+        "Pydantic",
+        "Zod",
+        "structured outputs",
+        "tool calls",
+        "OpenAI Structured Outputs"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenAI",
+        "JSON Schema",
+        "Pydantic",
+        "Zod"
+      ],
+      "local_practice_implication": "During ingest, strengthen structured-output guidance around schema portability limits, provider refusal/truncation handling, deterministic domain validators, and authorization after validation.",
+      "follow_up_notes": "Keep provider-specific feature details upstream or source-attributed; local wiki should own the validation contract practice."
+    },
+    {
+      "title": "Stateful MCP human approval distinguished from binary allow/deny controls",
+      "source_url": "https://www.truefoundry.com/fr/blog/human-in-the-loop-mcp-truefoundry-vs-kong",
+      "visible_date": "August 21, 2026",
+      "source_type": "vendor comparison blog",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "TrueFoundry argues that MCP human-in-the-loop approval needs a stateful gateway workflow that persists pending requests, notifies authorized approvers, records decisions, and issues scoped expiring grants.",
+      "why_it_matters_for_ai_assisted_development_practice": "This adds a clear practice requirement for approval evidence: approval gates should record who approved what payload, for which scope, under what expiry, instead of treating MCP policy as only a per-request ACL.",
+      "named_entities": [
+        "TrueFoundry",
+        "Kong",
+        "MCP",
+        "human in the loop",
+        "tool ACLs",
+        "approval workflow",
+        "scoped expiring grant"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Kong",
+        "Model Context Protocol",
+        "MCP gateways"
+      ],
+      "local_practice_implication": "During ingest, compare with mcp-scoped-authorization-and-approval-evidence.md and governance-controls-for-agents.md for approval package fields and gateway state requirements.",
+      "follow_up_notes": "Treat the TrueFoundry versus Kong product comparison as upstream-owned and vendor-attributed; keep only the approval-state pattern locally."
+    },
+    {
+      "title": "AI code review economics should measure false-positive triage cost",
+      "source_url": "https://www.faros.ai/blog/why-cheaper-ai-models-can-cost-more-hidden-model-tax",
+      "visible_date": "August 20, 2026",
+      "source_type": "vendor blog",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Faros argues that the economic cost of AI code review depends on reviewer triage time from false positives, not only model or tool price, and gives an example where ten minutes of human triage exceeds the apparent per-request price difference.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local wiki already tracks agent cost telemetry and code-review rubrics; this source adds a practice metric for AI review selection: precision and downstream reviewer time should be measured as part of total review cost.",
+      "named_entities": [
+        "Faros AI",
+        "AI code review",
+        "model tax",
+        "false positives",
+        "reviewer triage"
+      ],
+      "upstream_owned_entities": [
+        "Faros AI",
+        "AI code review tools",
+        "model providers"
+      ],
+      "local_practice_implication": "During ingest, consider adding review false-positive triage time to code-review evals and agent-cost telemetry as a measurable adoption cost.",
+      "follow_up_notes": "Source is vendor analysis; avoid adopting its numeric example as universal."
+    },
+    {
+      "title": "Versioned review standards presented as repo-owned agent skills",
+      "source_url": "https://devops.com/ai-agents-are-writing-code-faster-than-anyone-can-review-it-tessl-is-betting-on-standards-to-close-that-gap/",
+      "visible_date": "August 20, 2026",
+      "source_type": "industry article",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "DevOps.com reports that Tessl Code Review stores review standards as team-owned, versioned skill files in the repository and evaluates pull requests using the surrounding codebase, team standards, and thread discussion rather than only the diff.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a local practice signal for durable review instructions: review criteria should be inspectable, versioned with source, and applied against codebase context rather than hidden inside a vendor system.",
+      "named_entities": [
+        "DevOps.com",
+        "Tessl",
+        "Tessl Code Review",
+        "AI code review",
+        "skill files",
+        "pull request"
+      ],
+      "upstream_owned_entities": [
+        "Tessl",
+        "AI code review products",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, evaluate whether intelligent-code-review.md and durable-instructions-and-skill-files.md should mention repo-owned review standards as a reviewability and portability pattern.",
+      "follow_up_notes": "Do not create a Tessl product page locally; retain only the versioned-review-standard practice."
+    },
+    {
+      "title": "Pull requests reframed as evidence carriers for agent-generated changes",
+      "source_url": "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+      "visible_date": "August 20, 2026",
+      "source_type": "vendor blog",
+      "owning_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "CodeRabbit argues that pull requests carry more context when agents produce code: generated changes need independent validation, prioritization by consequence, guided change explanations, and human accountability before shipping.",
+      "why_it_matters_for_ai_assisted_development_practice": "The source reinforces local fix-branch, PR packaging, and review-gate guidance: when author reasoning is weak or absent, the PR should carry evidence, risk triage, tests, and ownership decisions.",
+      "named_entities": [
+        "CodeRabbit",
+        "Agentic Change Management",
+        "CodeRabbit Triage",
+        "Change Stack",
+        "pull requests",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "AI code review products",
+        "GitHub",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, map this to source-workflows and coding-practices leaves that treat PRs as accountable evidence bundles rather than simple diffs.",
+      "follow_up_notes": "Vendor product features should stay attributed; local content should focus on PR evidence requirements."
+    },
+    {
+      "title": "AI code factories increase demand for verification pipelines",
+      "source_url": "https://www.qawolf.com/blog/code-factories-without-quality",
+      "visible_date": "August 20, 2026",
+      "source_type": "vendor blog",
+      "owning_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "QA Wolf argues that AI-assisted code generation has increased production velocity faster than verification capacity; it distinguishes line coverage from user-flow verification and calls for testing pipelines that scale with agent output.",
+      "why_it_matters_for_ai_assisted_development_practice": "This directly supports local verification-tax and AI-assisted TDD themes: agent throughput should not be counted as productivity unless verification, E2E coverage, flake handling, and feedback loops scale with it.",
+      "named_entities": [
+        "QA Wolf",
+        "AI code factories",
+        "E2E testing",
+        "AI code review",
+        "verification pipeline"
+      ],
+      "upstream_owned_entities": [
+        "QA Wolf",
+        "testing tools",
+        "AI code review tools"
+      ],
+      "local_practice_implication": "During ingest, consider adding verification capacity as an adoption bottleneck metric for coding-agent programs.",
+      "follow_up_notes": "Vendor framing is opinionated; use as supporting practice evidence, not as universal incident data."
+    },
+    {
+      "title": "Database agents framed around pre-approved reports rather than free SQL generation",
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "visible_date": "August 21, 2026",
+      "source_type": "vendor developer blog",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "Oracle describes letting agents use durable memory and query enterprise data through Oracle AI Database and MCP, with the article explicitly inviting discussion about pre-approved reports as an alternative to agents generating their own SQL.",
+      "why_it_matters_for_ai_assisted_development_practice": "This adds a concrete governed-data-agent pattern: expose bounded, pre-approved data tools and reports rather than direct arbitrary query generation when agents need enterprise data.",
+      "named_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Oracle AI Agent Memory",
+        "Oracle MCP servers",
+        "Oracle Database Tools",
+        "BIRD benchmark",
+        "NSA MCP security design considerations"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Oracle MCP servers",
+        "Model Context Protocol",
+        "BIRD benchmark",
+        "NSA"
+      ],
+      "local_practice_implication": "During ingest, route broad Oracle and MCP-server background upstream while keeping the local practice note that retrieval/data tools should prefer bounded reports, role-scoped queries, and audit evidence.",
+      "follow_up_notes": "May reinforce mcp-scoped-authorization-and-approval-evidence.md and rag-tools-and-mcp-practice.md."
+    },
+    {
+      "title": "Platform-specific coding-agent skills used as guardrails for prototype generation",
+      "source_url": "https://blog.box.com/turn-box-hub-campus-ai-assistant-minutes",
+      "visible_date": "August 21, 2026",
+      "source_type": "vendor developer blog",
+      "owning_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Box describes using an AI coding agent with a Box Skill so prototype generation can rely on platform-specific workflows, guardrails, and verification steps rather than only general model knowledge.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports the local pattern that durable, portable skills should package platform constraints, guardrails, and verification procedures for coding agents working around external services.",
+      "named_entities": [
+        "Box",
+        "Box Hub",
+        "Box Skill",
+        "OpenAI Codex",
+        "AI coding agent"
+      ],
+      "upstream_owned_entities": [
+        "Box",
+        "Box Skill",
+        "OpenAI Codex",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, consider linking this to durable-instructions-and-skill-files.md and portable-agent-skills-and-runbooks.md as an example of platform-specific guardrail packaging.",
+      "follow_up_notes": "Product and connector details belong upstream; local coverage should stay about skill packaging and verification boundaries."
+    },
+    {
+      "title": "Coding-agent orchestration described as one governed process artifact",
+      "source_url": "https://www.hpcwire.com/bigdatawire/this-just-in/uipath-introduces-uipath-maestro-flow-delivering-developer-first-orchestration-for-coding-agents/",
+      "visible_date": "August 21, 2026",
+      "source_type": "syndicated press release",
+      "owning_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "UiPath announced Maestro Flow as a developer-first orchestration canvas that lets builders use supported coding agents to design, run, observe, and govern an end-to-end business process as a single artifact from environments such as VS Code or UiPath Studio.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a local practice signal for file-oriented enterprise builder workflows and process-layer state: agent-generated workflow work should become reviewable, observable, governed artifacts rather than disconnected prototype steps.",
+      "named_entities": [
+        "UiPath",
+        "UiPath Maestro Flow",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex",
+        "VS Code",
+        "UiPath Studio"
+      ],
+      "upstream_owned_entities": [
+        "UiPath",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot",
+        "Codex",
+        "VS Code",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, compare with application-patterns/ai-process-layer-and-workflow-state.md and file-oriented-enterprise-builder-workflows.md for artifact review, observation, and governance requirements.",
+      "follow_up_notes": "Because this is a press release, source claims should remain attributed."
+    },
+    {
+      "title": "Collaborative coding-agent channels make intermediate work observable",
+      "source_url": "https://buttondown.com/ai-tldr/archive/aitldr-daily-digest-august-21-2026/",
+      "visible_date": "2026-08-21; item date 2026-08-20",
+      "source_type": "public newsletter digest",
+      "owning_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "AI/TLDR summarizes Slack Code as a workflow that creates a dedicated channel for a coding-agent job, with conversation, plan, diffs, preview, high-stakes approval routing, archival, and searchability.",
+      "why_it_matters_for_ai_assisted_development_practice": "Although Slack Code is product/entity news, the local practice implication is strong: agent progress should be visible to the team before PR handoff, with high-stakes changes routed to named approvers and the run left as searchable evidence.",
+      "named_entities": [
+        "AI/TLDR",
+        "Slack Code",
+        "Slack",
+        "Salesforce",
+        "Claude",
+        "Devin",
+        "GitHub Copilot",
+        "Vercel",
+        "ChatGPT"
+      ],
+      "upstream_owned_entities": [
+        "Slack",
+        "Salesforce",
+        "Slack Code",
+        "Claude",
+        "Devin",
+        "GitHub Copilot",
+        "Vercel",
+        "ChatGPT",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, map the practice to supervised handoffs, user-visible progress, runtime telemetry, and approval-boundary pages without duplicating Slack product coverage.",
+      "follow_up_notes": "Prefer primary Slack source if available during ingest; this collector records the public digest signal because it has a visible in-window date and concrete workflow details."
+    },
+    {
+      "title": "Agent adoption metrics highlight coordination overhead from increased PR volume",
+      "source_url": "https://aitoolsrecap.com/Blog/ai-news-august-21-2026",
+      "visible_date": "By AIToolsRecap August 21, 2026",
+      "source_type": "public news analysis",
+      "owning_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "AIToolsRecap reports on Linear aggregate workspace data, saying AI-authored issues rose toward half of issue creation, teams using coding agents increased weekly PR counts from 21 to 65, and total product development time still increased.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice-level adoption signal that agent output volume can increase coordination, triage, and review load instead of reducing cycle time unless operating agreements and verification capacity change.",
+      "named_entities": [
+        "AIToolsRecap",
+        "Linear",
+        "AI-authored issues",
+        "coding agents",
+        "pull requests",
+        "coordination overhead"
+      ],
+      "upstream_owned_entities": [
+        "Linear",
+        "AIToolsRecap",
+        "developer tools"
+      ],
+      "local_practice_implication": "During ingest, consider agent adoption metrics that distinguish throughput from cycle-time improvement and include coordination burden in operating-model guidance.",
+      "follow_up_notes": "Verify against the primary Linear report during ingest before treating numeric details as authoritative."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Prediction Guard MCP server security checklist",
+      "source_url": "https://predictionguard.com/blog/mcp-server-security-checklist?hs_amp=true",
+      "visible_date": "No full visible publication or update date found in fetched page; search result showed relative freshness only",
+      "reason": "Excluded because the page content was relevant to MCP audit evidence, runtime policy enforcement, SIEM logs, PII/IP masking, and prompt-injection defense, but the collector could not verify a visible in-window publication or update date from the page itself."
+    },
+    {
+      "title": "MCP Agents Working Group weekly meeting",
+      "source_url": "https://meet.modelcontextprotocol.io/2026/08/mcp-agents-working-group-weekly--r8rHVTFAZspg",
+      "visible_date": "August 21, 2026",
+      "reason": "Excluded as event/meeting metadata with agenda links but no accessible public practice update in the fetched page."
+    },
+    {
+      "title": "DevToolLab best AI code review tools guide",
+      "source_url": "https://devtoollab.com/blog/ai-code-review-tools",
+      "visible_date": "May 28, 2026 (Updated: August 20, 2026)",
+      "reason": "Excluded because the visible update date qualified, but the page is primarily broad tool-ranking and product-selection coverage owned upstream; no sufficiently new local practice detail was extracted beyond already-covered review criteria."
+    },
+    {
+      "title": "HBR sponsored article on agents that ship to production",
+      "source_url": "https://hbr.org/sponsored/2026/08/what-separates-ai-agents-that-ship-to-production-from-those-that-dont",
+      "visible_date": "August 21, 2026",
+      "reason": "Excluded because it is sponsored broad operating-model commentary; its feedback-loop, observability, eval, and cost-visibility themes overlap strongly with existing local leaves and did not add a distinct practice beyond the more concrete sources retained."
+    },
+    {
+      "title": "JetBrains blog index items on AI-assisted Django workflows and agent refactoring",
+      "source_url": "https://blog.jetbrains.com/",
+      "visible_date": "Index fetched August 21, 2026, but item-level dates were not visible in fetched index",
+      "reason": "Excluded because the fetched index did not expose stable item-level publication dates or full article bodies for the relevant AI-assisted development posts."
+    },
+    {
+      "title": "Ravenna product updates workflow run insights",
+      "source_url": "https://docs.ravenna.ai/changelog/2026",
+      "visible_date": "Last modified on August 21, 2026",
+      "reason": "Excluded because the update is product-changelog coverage for agentic service management; the local practice implication around workflow debug visibility is relevant but too boundary-adjacent without more AI-assisted development or coding-agent specificity."
+    },
+    {
+      "title": "AI Agent Store weekly news on Binance Agent OS and BNB Agent Studio",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "Friday, August 21, 2026 and Thursday, August 20, 2026",
+      "reason": "Excluded as broad autonomous financial-agent and wallet/product news. Governance implications around scoped permissions and audit trails are relevant but belong primarily to upstream ecosystem/entity coverage unless a local software-development workflow is identified."
+    },
+    {
+      "title": "MorphLLM best AI coding agent benchmark page",
+      "source_url": "https://www.morphllm.com/ai-coding-agent",
+      "visible_date": "AI coding agents compared (August 21, 2026)",
+      "reason": "Excluded as broad benchmark/product-ranking coverage owned upstream. No distinct downstream practice note beyond existing model/tool selection and eval caveats was retained."
+    },
+    {
+      "title": "Adafruit Raspberry Pi self-hosting AI models post",
+      "source_url": "https://blog.adafruit.com/2026/08/21/a-guide-to-self-hosting-ai-models-on-a-raspberry-pi-piday-raspberrypi/",
+      "visible_date": "August 21, 2026",
+      "reason": "Excluded because it is hardware/local-model hobbyist guidance with only incidental coding-assistant relevance; local model runtime harness implications are too weak for this collector."
+    },
+    {
+      "title": "Future-dated TrueFoundry graph engineering post",
+      "source_url": "https://www.truefoundry.com/fr/blog",
+      "visible_date": "August 22, 2026 in recent-post list",
+      "reason": "Excluded as future-dated relative to the run timestamp of 2026-08-21T20:32:46-04:00."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 12,
+    "excluded_candidate_count": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "privacy_and_sensitivity": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "notes": "Only public web queries and public source URLs were used. Local repository content was inspected locally to apply wiki boundaries and was not sent as search text beyond generic public-topic queries."
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "During ingest, prefer primary sources for Slack Code and Linear metrics if accessible; this collector retained secondary/digest items only for practice signals with visible in-window dates.",
+    "Do not update docs/wiki from this collector artifact. The raw ingest workflow owns synthesis and processed-source movement.",
+    "Preserve federation routing: vendor, product, framework, MCP-server, and general benchmark facts remain upstream-owned; local pages should keep only practice implications."
+  ]
+}
