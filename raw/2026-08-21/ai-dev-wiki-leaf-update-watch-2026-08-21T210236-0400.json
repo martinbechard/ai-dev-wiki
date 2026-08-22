@@ -1,0 +1,585 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-08-22T01:02:36Z",
+    "policy": "Only sources visibly published or updated within the last 7 days relative to run time qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded.",
+    "start_utc": "2026-08-15T01:02:36Z"
+  },
+  "excluded_candidates": [
+    {
+      "notes": "Useful AI code review rubric and multi-agent review architecture source, but Aug 13 is before the strict cutoff.",
+      "reason": "stale_outside_7_day_window",
+      "source_url": "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+      "visible_date": "2026-08-13"
+    },
+    {
+      "notes": "Relevant LLM observability comparison, but visible updated date is Aug 9.",
+      "reason": "stale_outside_7_day_window",
+      "source_url": "https://www.firecrawl.dev/blog/best-llm-observability-tools",
+      "visible_date": "2026-08-09 updated"
+    },
+    {
+      "notes": "Cited event page for code-review/eval cost context is older than the window.",
+      "reason": "stale_outside_7_day_window",
+      "source_url": "https://www.meetup.com/london-ai-cost-hackers/events/315767303/",
+      "visible_date": "2026-07-30"
+    },
+    {
+      "notes": "Cited Oracle readiness page opened, but no qualifying visible update date was available in fetched text.",
+      "reason": "missing_visible_publication_or_update_date",
+      "source_url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "visible_date": null
+    },
+    {
+      "notes": "Cited Oracle APEX documentation opened, but no qualifying visible update date was available in fetched text.",
+      "reason": "missing_visible_publication_or_update_date",
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "visible_date": null
+    },
+    {
+      "notes": "Cited Oracle SQLcl documentation opened, but no qualifying visible update date was available in fetched text.",
+      "reason": "missing_visible_publication_or_update_date",
+      "source_url": "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "visible_date": null
+    },
+    {
+      "notes": "Relevant agent harness article appeared in search results with crawl freshness only; no visible strict-window publication/update date was confirmed.",
+      "reason": "ambiguous_date",
+      "source_url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+      "visible_date": null
+    },
+    {
+      "notes": "GitHub README crawl/update freshness did not clearly establish a durable publication/update event for the local leaf.",
+      "reason": "ambiguous_or_repository_churn_date",
+      "source_url": "https://github.com/bradagi/awesome-cli-coding-agents",
+      "visible_date": "5 days ago in search snippet"
+    },
+    {
+      "notes": "Potentially relevant config-driven workflow post was excluded because the date was only a relative boundary value.",
+      "reason": "boundary_only_date",
+      "source_url": "https://www.reddit.com/r/ClaudeWorkflows/comments/1votzef/workflow_configdriven_ai_agent_orchestration_with/",
+      "visible_date": "7 days ago in search snippet"
+    },
+    {
+      "notes": "Relevant official least-privilege guidance for AI agents, but older than the window.",
+      "reason": "stale_outside_7_day_window",
+      "source_url": "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents",
+      "visible_date": "2026-07-15"
+    },
+    {
+      "notes": "Relevant agent identity governance framework, but older than the window.",
+      "reason": "stale_outside_7_day_window",
+      "source_url": "https://labs.cloudsecurityalliance.org/agentic/agentic-identity-governance-framework-v1/",
+      "visible_date": "4 months ago in search snippet"
+    },
+    {
+      "notes": "Relevant AAuth delegated-authority source, but visible date lacked a day and could not be placed in the strict window.",
+      "reason": "ambiguous_date",
+      "source_url": "https://aembit.io/blog/5-security-considerations-for-managing-ai-agents-and-their-identities/",
+      "visible_date": "Aug 2026 without day in snippet"
+    },
+    {
+      "notes": "Relevant coding-agent security product page, but no public date was visible.",
+      "reason": "missing_visible_publication_or_update_date",
+      "source_url": "https://generalanalysis.com/solutions/ai-code-assistants",
+      "visible_date": null
+    }
+  ],
+  "federation_notes": [
+    "Broad product, company, model, framework, standards, and protocol background is upstream-owned under docs/wiki/federation.md. This artifact records downstream local practice implications only."
+  ],
+  "leaf_checks": [
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, cursor-origin-code-hosting-2026-08-17",
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "cursor-origin-code-hosting-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://github.com/bradagi/awesome-cli-coding-agents",
+        "https://generalanalysis.com/solutions/ai-code-assistants"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, techradar-pilot-to-production-ai-2026-08-17",
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "techradar-pilot-to-production-ai-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, techradar-pilot-to-production-ai-2026-08-17",
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "techradar-pilot-to-production-ai-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works",
+        "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, techradar-pilot-to-production-ai-2026-08-17",
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "techradar-pilot-to-production-ai-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, fortinet-virtue-ai-continuous-agentic-security-2026-08-19, techradar-pilot-to-production-ai-2026-08-17",
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "fortinet-virtue-ai-continuous-agentic-security-2026-08-19",
+        "techradar-pilot-to-production-ai-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works",
+        "https://www.expresscomputer.in/news/fortinet-acquires-virtue-ai-to-strengthen-continuous-protection-for-agentic-ai/137933/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19",
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://www.reddit.com/r/ClaudeWorkflows/comments/1votzef/workflow_configdriven_ai_agent_orchestration_with/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-origin-code-hosting-2026-08-17, teable-ai-app-builders-2026-08-20",
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "qualifying_update_ids": [
+        "cursor-origin-code-hosting-2026-08-17",
+        "teable-ai-app-builders-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://teable.ai/blog/best-no-code-ai-app-builders",
+        "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+        "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+        "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: ping-agent-identity-perimeter-2026-08-20, express-ai-agent-iam-blind-spot-2026-08-18",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualifying_update_ids": [
+        "ping-agent-identity-perimeter-2026-08-20",
+        "express-ai-agent-iam-blind-spot-2026-08-18"
+      ],
+      "source_urls_checked": [
+        "https://www.pingidentity.com/en/resources/blog/post/ai-agent-identity-enterprise-security-perimeter.html",
+        "https://www.expresscomputer.in/guest-blogs/why-ai-agents-could-become-the-next-enterprise-security-blind-spot/137874/",
+        "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents",
+        "https://labs.cloudsecurityalliance.org/agentic/agentic-identity-governance-framework-v1/",
+        "https://aembit.io/blog/5-security-considerations-for-managing-ai-agents-and-their-identities/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: express-offby1-ai-patching-flawed-2026-08-18, fortinet-virtue-ai-continuous-agentic-security-2026-08-19, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualifying_update_ids": [
+        "express-offby1-ai-patching-flawed-2026-08-18",
+        "fortinet-virtue-ai-continuous-agentic-security-2026-08-19",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+        "https://www.expresscomputer.in/news/fortinet-acquires-virtue-ai-to-strengthen-continuous-protection-for-agentic-ai/137933/",
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: cursor-cloud-agents-harness-improvements-2026-08-19, cursor-origin-code-hosting-2026-08-17",
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "qualifying_update_ids": [
+        "cursor-cloud-agents-harness-improvements-2026-08-19",
+        "cursor-origin-code-hosting-2026-08-17"
+      ],
+      "source_urls_checked": [
+        "https://cursor.com/changelog",
+        "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: express-offby1-ai-patching-flawed-2026-08-18, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "qualifying_update_ids": [
+        "express-offby1-ai-patching-flawed-2026-08-18",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+        "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+        "https://www.meetup.com/london-ai-cost-hackers/events/315767303/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: express-offby1-ai-patching-flawed-2026-08-18, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "qualifying_update_ids": [
+        "express-offby1-ai-patching-flawed-2026-08-18",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+        "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: fortinet-virtue-ai-continuous-agentic-security-2026-08-19, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+      "qualifying_update_ids": [
+        "fortinet-virtue-ai-continuous-agentic-security-2026-08-19",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/news/fortinet-acquires-virtue-ai-to-strengthen-continuous-protection-for-agentic-ai/137933/",
+        "https://www.firecrawl.dev/blog/best-llm-observability-tools",
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: techradar-pilot-to-production-ai-2026-08-17, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "qualifying_update_ids": [
+        "techradar-pilot-to-production-ai-2026-08-17",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works",
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+        "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying update implications: express-offby1-ai-patching-flawed-2026-08-18, techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "qualifying_update_ids": [
+        "express-offby1-ai-patching-flawed-2026-08-18",
+        "techradar-test-engineer-quality-orchestrator-2026-08-20"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+        "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+        "https://www.firecrawl.dev/blog/best-llm-observability-tools"
+      ]
+    }
+  ],
+  "leaf_universe_count": 90,
+  "qualifying_updates": [
+    {
+      "date_basis": "Cursor changelog entry dated Aug 19, 2026",
+      "factual_summary": "Cursor updated cloud agents and its harness with event subscriptions, always-on custom modes, isolated subagent VMs, long-lived /goal objectives, and non-interrupting steering while agents work.",
+      "follow_up_note": "Ingest should capture only local harness/workflow implications and route product-level Cursor coverage upstream.",
+      "id": "cursor-cloud-agents-harness-improvements-2026-08-19",
+      "named_entities": [
+        "Cursor",
+        "Cursor Agent",
+        "Cloud Agents",
+        "Custom Modes",
+        "Subagents",
+        "/goal"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Anysphere"
+      ],
+      "visible_date": "2026-08-19",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md": "Terminal-native workflows increasingly need durable goals, event wakes, steering semantics, and explicit session evidence for long-running agent work.",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": "The release reinforces choosing composed hosted workflow capabilities when the platform already provides subscription, goal, and mode primitives.",
+        "docs/wiki/application-patterns/agent-harness-components.md": "Harness components now visibly include event subscriptions, persistent goals, isolated execution environments, and steering channels.",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": "The process layer needs durable state for goals, event sources, progress, and human steering, rather than only prompt-local context.",
+        "docs/wiki/application-patterns/application-harness-patterns.md": "Application harness patterns should treat always-on agent loops and isolated subagent environments as product-level runtime concerns.",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": "Custom modes and long-lived goals are declarative workflow artifacts that can make agent behavior more reviewable before and during execution.",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md": "Cursor remains a cited source for source-routing practice because platform changelogs can change which local workflow pages need refresh."
+      }
+    },
+    {
+      "date_basis": "Cursor changelog entry dated Aug 17, 2026",
+      "factual_summary": "Cursor introduced Origin code hosting with repos, pull requests, GitHub sync, repo-scoped agents, PR review, and Vercel/Depot/Buildkite integrations.",
+      "follow_up_note": "Treat as local implications for source-of-truth routing and file-oriented builder workflows.",
+      "id": "cursor-origin-code-hosting-2026-08-17",
+      "named_entities": [
+        "Cursor Origin",
+        "GitHub",
+        "Vercel",
+        "Depot",
+        "Buildkite"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "upstream_owned_entities": [
+        "Cursor",
+        "GitHub",
+        "Vercel",
+        "Depot",
+        "Buildkite"
+      ],
+      "visible_date": "2026-08-17",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md": "Terminal and cloud workflows are converging around repo-hosted, PR-aware agent execution rather than isolated chat sessions.",
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": "File-oriented enterprise builders now include agent-native code hosting, synchronized PR review, and app integrations as part of the generated-workflow surface.",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md": "Source reconciliation needs to account for platforms where GitHub remains source of truth while a managed agent environment mirrors repos and PR comments."
+      }
+    },
+    {
+      "date_basis": "Page date Aug 20, 2026",
+      "factual_summary": "Ping Identity argues that autonomous agents need first-class non-human identities that carry ownership, task, permissions, delegated authority, lifecycle controls, runtime authorization, least privilege, and auditability.",
+      "follow_up_note": "Keep broad identity-market analysis upstream; local page should focus on delegated-authority controls.",
+      "id": "ping-agent-identity-perimeter-2026-08-20",
+      "named_entities": [
+        "Ping Identity",
+        "AI agents",
+        "Gartner Hype Cycle for Digital Identity 2026"
+      ],
+      "source_url": "https://www.pingidentity.com/en/resources/blog/post/ai-agent-identity-enterprise-security-perimeter.html",
+      "upstream_owned_entities": [
+        "Ping Identity",
+        "Gartner"
+      ],
+      "visible_date": "2026-08-20",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": "Directly supports the local rule that delegated agent authority must be traceable to an owner, task, policy boundary, and action-time authorization decision."
+      }
+    },
+    {
+      "date_basis": "Article byline On Aug 18, 2026",
+      "factual_summary": "Express Computer describes AI-agent IAM failures as a confused-deputy variant where authenticated sessions are mistaken for authorization to perform state-changing account operations. It recommends independent authorization, least privilege, hardware-backed MFA, and human or out-of-band verification before writes.",
+      "follow_up_note": "Use as evidence for local delegated-authority gates, not as a general IAM encyclopedia entry.",
+      "id": "express-ai-agent-iam-blind-spot-2026-08-18",
+      "named_entities": [
+        "Express Computer",
+        "AI support agents",
+        "IAM",
+        "MFA",
+        "Confused Deputy problem"
+      ],
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-ai-agents-could-become-the-next-enterprise-security-blind-spot/137874/",
+      "upstream_owned_entities": [
+        "Express Computer"
+      ],
+      "visible_date": "2026-08-18",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": "Strengthens the distinction between agent authentication and independent authorization for sensitive write operations."
+      }
+    },
+    {
+      "date_basis": "Search result and article visibility date within window; opened page reports the Off-by-1 Labs study details.",
+      "factual_summary": "Coverage of Off-by-1 Labs reports that frontier-model vulnerability patches often fail or change behavior: 26.0% cleanly fixed selected vulnerabilities, 20.1% fixed but altered behavior, and 53.9% failed, introduced risk, or both. The article emphasizes execution-grounded validation and human expert review for AI-generated patches.",
+      "follow_up_note": "Route model and vendor facts upstream; keep local implications for security repair gates and eval calibration.",
+      "id": "express-offby1-ai-patching-flawed-2026-08-18",
+      "named_entities": [
+        "Off-by-1 Labs",
+        "Frontier Models Vulnerability Patches Are Often F.L.A.W.E.D.",
+        "OpenAI ChatGPT-5.5",
+        "Anthropic Opus 4.8",
+        "Spring AI",
+        "Gemini CLI"
+      ],
+      "source_url": "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Spring AI",
+        "Gemini CLI"
+      ],
+      "visible_date": "2026-08-18",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "AI security repair gates should treat model patches as drafts requiring exploit variants, regression coverage, and domain-expert approval.",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": "Code-review rubrics need behavioral and security-fix correctness checks, not only diff plausibility.",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md": "Judge/grader boundaries should keep model inspection subordinate to deterministic and execution-grounded validation for security repairs.",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md": "Representative calibration should include hard recent vulnerabilities and plausible exploit variants, not only generic patch tasks."
+      }
+    },
+    {
+      "date_basis": "Article byline On Aug 19, 2026",
+      "factual_summary": "Fortinet acquired Virtue AI to add runtime protection, automated validation, sandboxed red-teaming across 50 environments and 14 domains, MCP tool and source-code scanning, malicious tool-call blocking, and audit-ready evidence for agentic AI systems.",
+      "follow_up_note": "Keep product acquisition details upstream; local pages should capture continuous validation and runtime evidence implications.",
+      "id": "fortinet-virtue-ai-continuous-agentic-security-2026-08-19",
+      "named_entities": [
+        "Fortinet",
+        "Virtue AI",
+        "Guardian Agent",
+        "FortiAIGate",
+        "Model Context Protocol",
+        "Gartner"
+      ],
+      "source_url": "https://www.expresscomputer.in/news/fortinet-acquires-virtue-ai-to-strengthen-continuous-protection-for-agentic-ai/137933/",
+      "upstream_owned_entities": [
+        "Fortinet",
+        "Virtue AI",
+        "Model Context Protocol",
+        "Gartner"
+      ],
+      "visible_date": "2026-08-19",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/application-patterns/application-harness-patterns.md": "Application harnesses increasingly need runtime guardrails, red-team feedback, and tool-call policy enforcement as part of production operation.",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "Security repair workflows should connect patching and tool use to continuous validation and audit evidence.",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md": "LLM observability gates are expanding toward runtime agent monitoring, policy conformance, automated validation, and audit-ready security evidence."
+      }
+    },
+    {
+      "date_basis": "Page header Published August 20, 2026",
+      "factual_summary": "Teable compares AI app builders by use case, distinguishing live-data no-code builders, app-first vibe coding, engineering-led coding agents, hosted workspaces, and all-in-one prompt-to-app tools with tradeoffs around data, runtime, code control, deployment, and operations.",
+      "follow_up_note": "Route product catalog detail upstream; keep local classification of builder workflow control surfaces.",
+      "id": "teable-ai-app-builders-2026-08-20",
+      "named_entities": [
+        "Teable",
+        "Lovable",
+        "Claude Code",
+        "Codex",
+        "Replit",
+        "Base44",
+        "Cursor",
+        "Bubble",
+        "FlutterFlow",
+        "Softr"
+      ],
+      "source_url": "https://teable.ai/blog/best-no-code-ai-app-builders",
+      "upstream_owned_entities": [
+        "Teable",
+        "Lovable",
+        "Claude Code",
+        "Codex",
+        "Replit",
+        "Base44",
+        "Cursor",
+        "Bubble",
+        "FlutterFlow",
+        "Softr"
+      ],
+      "visible_date": "2026-08-20",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": "File-oriented enterprise builder workflows should distinguish visual/live-data app builders from code-generating agents and record who owns deployment, auth, runtime logs, and production operations."
+      }
+    },
+    {
+      "date_basis": "Article page Published 17 August 2026",
+      "factual_summary": "TechRadar argues that useful enterprise AI depends on operational discipline, workflow ownership, proprietary context, feedback loops, human oversight, and treating AI as an operating capability rather than a portfolio of pilots.",
+      "follow_up_note": "Use for local operating-model and product-judgment implications only.",
+      "id": "techradar-pilot-to-production-ai-2026-08-17",
+      "named_entities": [
+        "TechRadar Pro",
+        "Lean AI",
+        "agentic AI"
+      ],
+      "source_url": "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works",
+      "upstream_owned_entities": [
+        "TechRadar Pro"
+      ],
+      "visible_date": "2026-08-17",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": "Workflow selection should start from operating friction, ownership, measurement, and feedback loops before choosing a model or tool.",
+        "docs/wiki/application-patterns/agent-harness-components.md": "Harness design is valuable when it embeds domain context, feedback, and human oversight into work loops.",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": "The process layer should own workflow context, feedback, and operating-state control.",
+        "docs/wiki/application-patterns/application-harness-patterns.md": "Application harnesses become product software when they connect model behavior to business workflows and measurable outcomes.",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": "Product judgment gates should check business value, workflow fit, ownership, context quality, and human oversight, not just successful automation."
+      }
+    },
+    {
+      "date_basis": "Article page Published 20 August 2026",
+      "factual_summary": "TechRadar describes test engineers becoming quality orchestrators as AI generates, adapts, and maintains tests. It stresses evidence stewardship, traceability, human oversight, context-aware testing, continuous conformance assessment, and reviewable, defensible evidence.",
+      "follow_up_note": "Route standards background upstream; preserve local quality-gate and calibration implications.",
+      "id": "techradar-test-engineer-quality-orchestrator-2026-08-20",
+      "named_entities": [
+        "TechRadar Pro",
+        "ETSI TC MTS",
+        "EU AI Act"
+      ],
+      "source_url": "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+      "upstream_owned_entities": [
+        "TechRadar Pro",
+        "ETSI",
+        "EU AI Act"
+      ],
+      "visible_date": "2026-08-20",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "Security repair gates need human judgment and evidence stewardship when AI generates tests or fixes.",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": "Code-review rubrics should include whether evidence is reviewable, defensible, and tied to requirements and risk.",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md": "Model judges should not be final authority over test validity when domain judgment and traceability are required.",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md": "Observability gates can include continuous evidence collection and conformance assessment, not only logs and token metrics.",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": "Product judgment requires contextual assessment of whether generated tests match intended risks and user outcomes.",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md": "Representative calibration should use real workflow logs, requirements, and risk-bearing scenarios rather than isolated generated test cases."
+      }
+    }
+  ],
+  "run_timestamp_local": "2026-08-21T21:02:36-04:00",
+  "run_timestamp_utc": "2026-08-22T01:02:36Z",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+  ],
+  "source_urls_checked": [
+    "https://cursor.com/changelog",
+    "https://github.com/bradagi/awesome-cli-coding-agents",
+    "https://generalanalysis.com/solutions/ai-code-assistants",
+    "https://www.techradar.com/pro/beyond-pilot-purgatory-what-does-it-take-to-build-ai-that-works",
+    "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "https://www.expresscomputer.in/news/fortinet-acquires-virtue-ai-to-strengthen-continuous-protection-for-agentic-ai/137933/",
+    "https://www.reddit.com/r/ClaudeWorkflows/comments/1votzef/workflow_configdriven_ai_agent_orchestration_with/",
+    "https://teable.ai/blog/best-no-code-ai-app-builders",
+    "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+    "https://www.pingidentity.com/en/resources/blog/post/ai-agent-identity-enterprise-security-perimeter.html",
+    "https://www.expresscomputer.in/guest-blogs/why-ai-agents-could-become-the-next-enterprise-security-blind-spot/137874/",
+    "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents",
+    "https://labs.cloudsecurityalliance.org/agentic/agentic-identity-governance-framework-v1/",
+    "https://aembit.io/blog/5-security-considerations-for-managing-ai-agents-and-their-identities/",
+    "https://www.expresscomputer.in/news/ai-can-find-your-vulnerabilities-faster-than-ever-but-it-still-cant-be-trusted-to-fix-them/137889/",
+    "https://www.techradar.com/pro/how-ai-is-transforming-the-role-of-test-engineers",
+    "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+    "https://www.meetup.com/london-ai-cost-hackers/events/315767303/",
+    "https://www.firecrawl.dev/blog/best-llm-observability-tools"
+  ]
+}
