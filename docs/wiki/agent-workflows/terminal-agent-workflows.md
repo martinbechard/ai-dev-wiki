@@ -23,6 +23,12 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The August 14 raw sources add cloud-build, prior-work-history, queued-command, and hosted-status evidence. The [leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) records prebuilt environment snapshots, fallback to the last successful build, build logs, commit SHAs, and prior-work reconstruction across apps or websites. The [topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) records queued shell commands and provider status incidents. Locally, terminal-agent workflows should preserve build provenance, history-derived context, queue state, and service-health checks before unattended work proceeds.
 
+The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) adds convergence between terminal, cloud, and repo-hosted agent workflows:
+
+- Event wakes, durable goals, and steering semantics should be recorded as session evidence.
+- Repo-scoped agents, PR-aware execution, and source-host integrations should preserve their own review context.
+- Reviewers should be able to see whether work happened in a terminal, a managed cloud agent, or a mirrored code-hosting surface.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -34,6 +40,7 @@ The August 14 raw sources add cloud-build, prior-work-history, queued-command, a
 - For multiplexed terminal sessions, keep each pane's agent identity, repository, command stream, permission mode, and verification evidence distinguishable after reconnects or server replacement.
 - Record execution surface and reconnect history when terminal-agent work moves through local CLI, remote control, scheduled worktree, tmux, or IDE-hosted sessions.
 - Record prebuilt environment version, last-successful-build fallback, commit SHA, build logs, queued command state, prior-work-history source, and provider-status checks when terminal agents run in hosted or cloud workspaces.
+- Record event wake source, durable goal, steering event, repo scope, PR context, and source-host integration when terminal-agent work crosses into managed cloud or code-hosting surfaces.
 
 ## Authoritative Sources
 
@@ -49,6 +56,7 @@ The August 14 raw sources add cloud-build, prior-work-history, queued-command, a
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 
 ## Related Code
 
@@ -80,3 +88,4 @@ The August 14 raw sources add cloud-build, prior-work-history, queued-command, a
 - Maintained on 2026-07-22 with agent-multiplexer session evidence, pane identity, and reconnect boundaries.
 - Maintained on 2026-07-27 with local CLI, remote-control, scheduled-worktree, tmux, and IDE-hosted execution-surface evidence.
 - Maintained on 2026-08-14 with prebuilt environment, build-fallback, commit-SHA, build-log, queued-command, prior-work-history, and hosted-status evidence.
+- Maintained on 2026-08-21 with event-wake, durable-goal, steering, repo-scope, PR-context, and source-host integration evidence.

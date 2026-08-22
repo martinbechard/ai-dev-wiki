@@ -19,6 +19,12 @@ The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-d
 
 The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds enterprise structured-output evidence. Structured extraction and drafter flows should preserve schemas, citations, refusal handling, partial-output recovery, and deterministic downstream checks so generated records can be reviewed and retried instead of trusted as prose.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) reinforces structured output as a layered contract:
+
+- JSON mode, schema-conforming output, business-valid output, and authorized action are separate gates.
+- Provider-native structured output or tool-call schemas do not remove deterministic validators.
+- Refusal handling, truncation handling, and post-validation authorization checks remain harness responsibilities.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -33,6 +39,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - Treat structured outputs as validation contracts: schema adherence is useful only when paired with retries, refusal handling, partial-output recovery, provenance fields, and downstream deterministic checks.
 - Use structured extraction and drafting to preserve source attribution and reviewable fields rather than hiding uncertain generation behind prose.
 - Keep citations, confidence fields, refusal states, and partial-output markers in generated records when enterprise workflows require review or retry.
+- Separate syntactic JSON validity, schema conformance, business invariants, and authorization; do not let provider schema features stand in for domain validation or tool-permission gates.
 
 ## Authoritative Sources
 
@@ -44,6 +51,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 
 ## Related Code
 
@@ -74,3 +82,4 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 - Maintained on 2026-07-11 with artifact-producing agent boundaries for files, connector scope, approval state, and audit evidence.
 - Maintained on 2026-07-22 with structured-output validation contracts, recovery handling, provenance fields, and deterministic downstream checks.
 - Maintained on 2026-07-24 with citation, confidence, refusal-state, partial-output, review, and retry guidance.
+- Maintained on 2026-08-21 with layered JSON, schema, business-validation, refusal, truncation, and authorization gates.

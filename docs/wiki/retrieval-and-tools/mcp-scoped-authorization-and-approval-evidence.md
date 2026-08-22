@@ -29,6 +29,15 @@ The August 17 topic news collector adds two high-impact authorization examples. 
 
 The August 20 raw sources add managed endpoint and token-revocation evidence. The [leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) records enterprise-managed IDE settings that centrally govern MCP server allow/deny lists, managed telemetry, and permission modes such as approval bypass or autopilot behavior; the same source records token-type-specific bulk deauthorization and audit-log capture as incident-response evidence. The [topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) reinforces short-lived task-scoped credentials at trust boundaries. Locally, authorization records should include the managed policy source, telemetry destination, credential type, revocation path, affected-user notice, and audit event that proves the agent or tool access was narrowed after an incident.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) distinguishes stateful human approval from binary per-request allow or deny controls:
+
+- Hold consequential MCP calls as pending workflow objects.
+- Notify authorized approvers before releasing the tool call.
+- Record who approved which payload for which resource scope.
+- Issue scoped expiring grants and preserve execution evidence.
+
+[Governed database agent access](governed-database-agent-access.md) owns the separate bounded-report and role-scoped query-tool pattern for enterprise data.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -50,6 +59,7 @@ The August 20 raw sources add managed endpoint and token-revocation evidence. Th
 - Treat managed IDE or endpoint settings as authorization evidence when they enforce MCP allowlists, telemetry export, permission-mode limits, approval-bypass disablement, or autopilot constraints.
 - Preserve credential-type revocation evidence, affected-user notice, and audit-log capture so agent or tool incidents can be contained without over-revoking unrelated trusted access.
 - Prefer short-lived task-scoped credentials at agent trust boundaries when a tool can act on external systems or production-adjacent resources.
+- Represent consequential tool approval as a stateful workflow object with approver identity, payload, resource scope, expiry, execution result, and notification evidence.
 
 ## Authoritative Sources
 
@@ -65,6 +75,8 @@ The August 20 raw sources add managed endpoint and token-revocation evidence. Th
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [governed database agent access](governed-database-agent-access.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
 
@@ -101,3 +113,4 @@ The August 20 raw sources add managed endpoint and token-revocation evidence. Th
 - Maintained on 2026-08-16 with remote MCP capability manifests, service reachability, identity context, approval class, audit evidence, and revocation-path guidance.
 - Maintained on 2026-08-17 with governed CI workflow approval and CI/CD-token MCP server authorization evidence.
 - Maintained on 2026-08-20 with managed endpoint policy, MCP allowlist, permission-mode, telemetry, credential-type revocation, and task-scoped credential evidence.
+- Maintained on 2026-08-21 with stateful approval workflows, scoped expiring grants, and routing for governed database agent access.

@@ -35,6 +35,12 @@ The August 16 raw sources add a review-capacity planning rule. The [topic news c
 
 The August 17 topic news collector adds release-tax and frontend-agent evaluation signals. Acceptance should measure defect escape, change failure, trust, deployed behavior, retries, tool-call traces, and recovery evidence when AI coding increases delivery speed. Throughput remains a weak success measure until the resulting workflow proves release confidence and user-visible behavior.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) reinforces verification capacity as an adoption bottleneck:
+
+- AI code factories should be evaluated against user-flow verification and E2E capacity.
+- Flake handling and feedback loops should be scaled before generation throughput increases.
+- Reviewable evidence matters more than generated lines or PR count.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -56,6 +62,7 @@ The August 17 topic news collector adds release-tax and frontend-agent evaluatio
 - Treat generated-code throughput as a verification-capacity input; require explicit defect-risk tolerance, test depth, reviewer ownership, and rollback evidence before increasing autonomy.
 - Require small reversible diffs, design-owner review, regression baselines, and measurement evidence when agent-assisted refactoring or optimization changes risk.
 - Measure defect escape, change failure, trust, deployed behavior, retries, tool-call traces, and recovery evidence before treating faster AI-assisted delivery as accepted work.
+- Treat user-flow verification, E2E capacity, flake handling, feedback loops, and reviewable evidence as scaling constraints for AI code factories and high-throughput agent workflows.
 
 ## Authoritative Sources
 
@@ -79,6 +86,7 @@ The August 17 topic news collector adds release-tax and frontend-agent evaluatio
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 
 ## Related Code
 
@@ -117,3 +125,4 @@ The August 17 topic news collector adds release-tax and frontend-agent evaluatio
 - Maintained on 2026-08-15 with semantic CI/deployment milestone, containment, memory-provenance, repository-provenance, behavior-baseline, and control-state acceptance gates.
 - Maintained on 2026-08-16 with review-capacity planning, defect-risk tolerance, reversible-diff, baseline, and design-owner acceptance evidence.
 - Maintained on 2026-08-17 with release-tax, defect-escape, change-failure, trust, deployed-behavior, retry, trace, and recovery-evidence acceptance signals.
+- Maintained on 2026-08-21 with user-flow verification, E2E capacity, flake handling, feedback-loop, and reviewable-evidence scaling constraints.

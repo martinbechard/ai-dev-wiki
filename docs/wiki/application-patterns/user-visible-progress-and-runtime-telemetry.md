@@ -49,6 +49,12 @@ The August 14 raw sources add approval, queue, build, service-health, and behavi
 
 The August 15 raw sources add runtime control-plane and behavior-intelligence telemetry. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records self-hosted factory session records, retained eval data, CI milestone truth, gateway request and response audit tables, action-level controls, spend attribution, budgets, and unified tracing. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds continuous-agent behavior baselines, activity logging, deviation evidence, and memory-object inspection. Locally, telemetry should show not only progress but whether the run's actions, memory writes, cost, and recovery path match the approved workflow.
 
+The August 21 sources add collaborative-channel and event-subscription telemetry:
+
+- The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) records collaborative coding-agent channels where intermediate work is observable.
+- The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) records event subscriptions, long-lived goals, and non-interrupting steering.
+- Locally, progress surfaces should show channel-visible draft state, event source, steering changes, active goal, approval waits, and handoff status without treating visibility as proof of correctness.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -81,6 +87,7 @@ The August 15 raw sources add runtime control-plane and behavior-intelligence te
 - Join session/debug logs, telemetry export settings, token categories, reasoning effort, compaction, prompt-cache behavior, tool approvals, and fallback routes when they explain runtime behavior or cost.
 - Show side-channel questions, queued prompts, queued shell commands, approval-pending metadata, rewind points, service-health state, build status, build logs, commit SHA, run-to-build mapping, and purpose-baseline deviations when they affect review or acceptance.
 - Join session records, retained eval data, milestone checks, action-level controls, spend attribution, budgets, behavior baselines, activity logs, memory-object inspections, and recovery evidence when an agent can continue or act across systems.
+- Show channel-visible intermediate work, event subscriptions, active goals, steering events, approval waits, and handoff status for collaborative or long-running coding-agent workflows.
 
 ## Authoritative Sources
 
@@ -110,6 +117,8 @@ The August 15 raw sources add runtime control-plane and behavior-intelligence te
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 
 ## Related Code
 
@@ -156,3 +165,4 @@ The August 15 raw sources add runtime control-plane and behavior-intelligence te
 - Maintained on 2026-08-11 with session/debug logs, token categories, reasoning effort, compaction, prompt-cache, tool-approval, and fallback-route telemetry joins.
 - Maintained on 2026-08-14 with side-channel question, queued-work, approval-pending, rewind, service-health, build-status, commit-SHA, run-to-build, and purpose-baseline telemetry.
 - Maintained on 2026-08-15 with session-record, eval-retention, milestone-check, action-control, spend-attribution, behavior-baseline, memory-inspection, and recovery telemetry.
+- Maintained on 2026-08-21 with channel-visible intermediate work, event-subscription, active-goal, steering-event, approval-wait, and handoff-status telemetry.

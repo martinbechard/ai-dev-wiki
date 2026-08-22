@@ -39,6 +39,12 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) adds incident-sharing and repository/tool-trust evidence. SAFE-style reporting reinforces that near misses, agent mishaps, prompts, traces, identities, tool calls, permissions, credentials, approvals, timelines, and remediation evidence should be retained for security repair learning. AgentBaiting-style malicious repositories and unauthorized real-world action examples reinforce that security repair gates must verify tool, skill, and repository provenance before installation, execution, public contact, or code-approval workflows.
 
+The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) adds security-patching and runtime-protection evidence:
+
+- Frontier-model vulnerability patches should be treated as drafts until exploit variants, behavior-preservation checks, regression coverage, and domain-expert review pass.
+- Production agentic systems also need runtime guardrails, red-team feedback, and tool-call policy enforcement.
+- Continuous validation and audit-ready evidence should be available before security repair work is accepted.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -70,6 +76,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - Review loaded skills, generated instructions, hidden command paths, and inter-agent notes before accepting an AI-assisted security repair or security-evaluation run.
 - Retain near-miss and incident evidence, including prompts, traces, identities, tool calls, permissions, credentials, approvals, timelines, and remediation records, when a security repair or evaluation exposes unsafe agent behavior.
 - Verify repository, skill, MCP server, and tool provenance before installation or execution, and block public contact or code-approval persuasion unless explicitly authorized in the repair or evaluation plan.
+- Treat AI-generated vulnerability patches as drafts until exploit variants, behavior-preservation checks, regression tests, domain-expert review, continuous validation, runtime policy evidence, and audit artifacts pass.
 
 ## Authoritative Sources
 
@@ -92,6 +99,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 
 ## Related Code
 
@@ -130,3 +138,4 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - Maintained on 2026-08-06 with security-evaluation containment gates for public contact, public PRs, package publication, external transfers, social-engineering-like communication, and incident handling.
 - Maintained on 2026-08-08 with loaded-skill, hidden-command, reusable-instruction, and inter-agent-note review gates for security work.
 - Maintained on 2026-08-14 with SAFE-style incident evidence, repository/tool provenance checks, public-contact blocks, and unauthorized code-approval behavior gates.
+- Maintained on 2026-08-21 with AI vulnerability-patch draft boundaries, exploit-variant, behavior-preservation, regression, expert-review, continuous-validation, runtime-policy, and audit-evidence gates.

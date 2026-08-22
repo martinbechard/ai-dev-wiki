@@ -15,6 +15,12 @@ The practice is to keep generated or assisted artifacts in files that can be dif
 
 The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json) adds an exportability signal from an upstream-owned generated-app product retirement. The local pattern is broader than that product: AI-built apps should have source export, dependency inventory, managed inference-call inventory, and replacement-provider notes before the builder surface becomes a durable delivery path.
 
+The August 21 sources add builder-classification and agent-native hosting evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) records managed code hosting, synchronized PR review, repository-scoped agents, and app integrations as agent-native builder surfaces.
+- The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) distinguishes live-data no-code builders, prompt-to-app tools, hosted workspaces, and engineering-led coding agents.
+- Locally, builder adoption should record who owns source of truth, auth, deployment, runtime logs, data access, and production operations before the surface is used for enterprise delivery.
+
 ## Practice Boundaries
 
 - Prefer file-backed artifacts when enterprise builder changes need review, tests, or release evidence.
@@ -24,6 +30,7 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - Route product-specific builder details upstream unless they change local source-control, validation, or release practice.
 - Require exportable source and dependency inventories for generated apps so product retirement does not strand review, maintenance, or provider migration.
 - Inventory managed inference calls separately from generated source files because provider replacement can be a runtime dependency, not only a code change.
+- Classify builder workflows by source ownership, live-data access, code export, PR review path, deployment owner, runtime logs, auth boundary, and production-operations owner.
 
 ## Authoritative Sources
 
@@ -32,6 +39,8 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 - [Oracle APEXlang validation source](https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html)
 - [Oracle APEXlang Visual Studio Code source](https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html)
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
@@ -63,3 +72,4 @@ The [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-
 
 - Created on 2026-07-27 from July 27 raw-source evidence about enterprise builder artifacts, local validation, Git review, and publish workflows.
 - Maintained on 2026-08-04 with generated-app exportability, dependency inventory, managed inference-call inventory, and provider migration guidance.
+- Maintained on 2026-08-21 with builder workflow classification, agent-native hosting, PR review, deployment, auth, runtime-log, and operations ownership guidance.

@@ -49,6 +49,12 @@ The [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds incident-attribution rubric fields for AI-assisted review. Review evals should score whether a reviewer can distinguish AI-authored code, AI-reviewed code, human-authored code, and AI-scanned-but-missed code from available evidence. For security-sensitive workflow files, rubrics should include missed-gate analysis, credential lifetime, responsible-disclosure response, and whether remediation evidence proves containment.
 
+The August 21 sources add review-economics and evidence-stewardship criteria:
+
+- The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) argues that false-positive triage time can dominate model or tool price in AI review.
+- The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) reinforces reviewable, defensible test and patch evidence.
+- Locally, code-review evals should measure precision, reviewer triage burden, behavioral and security correctness, and traceable evidence quality together.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -85,6 +91,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Score deterministic review stages separately: dispatch, file selection, curated tool use, parallel reviewer independence, reflection independence, repeated-run stability, and cost per validated finding.
 - Score attribution evidence separately from defect detection: authored lines, reviewed scope, scanned files, tool traces, commit metadata, missed scanner output, credential rotation, and remediation timing should remain distinct rubric fields.
 - Include security-sensitive workflow-file cases where the expected review output names both the vulnerable automation path and the limits of AI attribution from incomplete metadata.
+- Measure false-positive rate, reviewer triage time, evidence reviewability, behavioral correctness, and security-fix correctness as separate rubric dimensions.
 
 ## Authoritative Sources
 
@@ -115,6 +122,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 11 topic news collector source](../../../raw/processed/2026-08-11/ai-dev-wiki-topic-news-collector-2026-08-11T203048-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 
 ## Related Code
 
@@ -159,3 +168,4 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Maintained on 2026-08-08 with test-suite-auditor, role-grounded-rubric, repository-evidence, and codebase-health review criteria.
 - Maintained on 2026-08-11 with staged deterministic review-eval criteria for dispatch, grounded file review, curated tools, independent reflection, stability, and token cost.
 - Maintained on 2026-08-20 with authorship, AI-review participation, scanned scope, missed-gate, credential-lifetime, responsible-disclosure, and containment rubric fields.
+- Maintained on 2026-08-21 with false-positive triage cost, reviewer-burden, evidence-quality, behavioral-correctness, and security-fix rubric criteria.

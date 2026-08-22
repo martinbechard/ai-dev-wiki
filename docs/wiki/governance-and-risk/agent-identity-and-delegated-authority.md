@@ -43,6 +43,12 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json) adds incident-reporting, repository-trust, and behavioral-baseline evidence. SAFE-style reporting points to prompts, traces, tool calls, identities, permissions, credentials, approvals, timelines, and remediation evidence as incident fields. AgentBaiting-style repositories and purpose-specific behavioral monitoring reinforce that delegated-authority records need the tool or skill source, declared purpose, authorized systems, expected action sequence, and exception handling when behavior leaves scope.
 
+The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) adds identity-perimeter and confused-deputy evidence:
+
+- Agent authority should be traceable to owner, task, policy boundary, action-time authorization, and lifecycle controls.
+- Authenticated sessions are not sufficient proof that an agent may perform sensitive writes.
+- Local records should preserve independent authorization, least privilege, out-of-band or human verification for consequential writes, and revocation evidence.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -73,6 +79,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - Record loaded skill files or reusable instruction artifacts with delegated-authority evidence when they can affect tool access, command execution, or downstream system actions.
 - Preserve prompts, traces, tool calls, identities, permissions, credentials, approvals, timelines, source repository or skill provenance, declared purpose, expected behavior, and remediation evidence when delegated authority is reviewed after an incident.
 - Treat purpose-inconsistent action sequences as delegated-authority findings even when each individual tool call used an allowed credential.
+- Require action-time authorization, least privilege, and human or out-of-band verification before sensitive writes; do not treat an authenticated session as delegated authority by itself.
 
 ## Authoritative Sources
 
@@ -84,6 +91,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - [August 3 evening leaf update watch source](../../../raw/processed/2026-08-03/ai-dev-wiki-leaf-update-watch-2026-08-03T210231-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -137,3 +145,4 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - Maintained on 2026-08-03 with agent-owner, delegated-intent, task-credential, cost-owner, deprovisioning, and dispute-record evidence.
 - Maintained on 2026-08-08 with high-assurance delegation signals and loaded-skill evidence for delegated agent actions.
 - Maintained on 2026-08-14 with incident-evidence fields, repository/skill provenance, declared-purpose baselines, expected action sequences, and purpose-inconsistent behavior findings.
+- Maintained on 2026-08-21 with owner, task, policy-boundary, action-time authorization, least-privilege, sensitive-write verification, and revocation evidence.

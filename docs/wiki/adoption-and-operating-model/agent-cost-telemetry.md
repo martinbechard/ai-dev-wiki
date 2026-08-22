@@ -75,6 +75,12 @@ The August 11 raw sources add per-model and workflow-operating-record signals. T
 
 The August 18 raw sources add cost-ownership and modernization-baseline evidence. The [PointFive cost-management source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) frames coding-agent spend as an ownership gap that needs budget owners, threshold policies, and escalation paths before rapid adoption turns into unmanaged burn. The same collector records an Asana modernization case where agent costs were compared with a multi-year migration baseline; locally, migration cost claims should be recorded beside scope, review, tests, and accepted outcomes instead of treated as standalone ROI proof. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds managed settings and per-surface governance signals that make agent spend easier to attribute when policy, plugin, telemetry, and permission modes are controlled centrally.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) adds reviewer-triage and coordination-overhead cost signals:
+
+- AI review cost should include the human minutes spent dismissing false positives.
+- Adoption metrics should separate pull-request volume from cycle-time improvement.
+- Agent activity should be joined to accepted outcomes and coordination burden before rollout claims use it as success evidence.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -136,6 +142,7 @@ The August 18 raw sources add cost-ownership and modernization-baseline evidence
 - Join per-model input, output, cache-read, cache-write, credit, reasoning-effort, tool-approval, compaction, and fallback-route fields to the workflow outcome when those fields are available.
 - Assign a budget owner, threshold, escalation path, and accepted-outcome baseline before scaling coding-agent pilots into standing team infrastructure.
 - Compare modernization-agent spend with the human delivery baseline, verification cost, review effort, and accepted migration outcome rather than with nominal model cost alone.
+- Include false-positive triage minutes, pull-request coordination load, cycle-time impact, accepted outcomes, and review quality when evaluating AI review or coding-agent adoption cost.
 
 ## Authoritative Sources
 
@@ -184,6 +191,7 @@ The August 18 raw sources add cost-ownership and modernization-baseline evidence
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
 - [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
@@ -213,6 +221,7 @@ The August 18 raw sources add cost-ownership and modernization-baseline evidence
 
 - Maintained on 2026-07-23 with adoption-phase telemetry, agent-sprawl cost visibility, external-service dependency, and budget-owner signals.
 - Maintained on 2026-08-18 with cost-owner, budget-threshold, modernization-baseline, and managed-settings attribution signals.
+- Maintained on 2026-08-21 with false-positive triage, pull-request coordination, cycle-time, accepted-outcome, and review-quality cost signals.
 - Created on 2026-06-23 from public source guidance on coding-agent token economics, step-level cost tracing, subagent fan-out, and outcome-linked telemetry.
 - Maintained on 2026-06-26 with adoption-phase reporting and usage-based model enablement as outcome-linked telemetry inputs.
 - Maintained on 2026-06-27 with marginal-cost and infrastructure total-cost signals for autonomous agent loops.

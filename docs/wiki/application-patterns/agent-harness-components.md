@@ -71,6 +71,12 @@ The August 14 raw sources add gateway approval, cloud environment, behavioral ba
 
 The August 18 raw sources add security-sensor, source-review, and auditability components. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) frames security checks as harness sensors alongside lint, build, tests, runtime feedback, and quality gates, and records agentic source-code review as a phased harness that gathers inventories, SBOMs, architecture context, threat intelligence, specialized subagent reviews, and expert validation. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) reinforces managed telemetry, permission modes, queued steering, rewind, and cross-surface handoff as harness-state components. Locally, a harness should expose security findings, package-risk checks, tool decisions, receipts, and steering state as structured runtime evidence rather than after-the-fact notes.
 
+The August 21 sources add loop-enforcement and persistent-agent evidence:
+
+- The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) frames loop engineering as the runtime layer for persistence, context compaction, deferred tool discovery, sandboxing, approvals, and failure reconstruction.
+- The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) adds event subscriptions, always-on modes, isolated subagent environments, long-lived goals, and non-interrupting steering as harness components.
+- Locally, the harness loop should own these controls as runtime state and policy surfaces rather than relying on prompt guidance alone.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -128,6 +134,7 @@ The August 18 raw sources add security-sensor, source-review, and auditability c
 - Include approval-hold state, pending metadata, prebuilt environment provenance, repository/tool trust gates, purpose-based behavioral baselines, and incident evidence fields in harness reviews for recurring agent workflows.
 - Treat security scanners, package-risk checks, SBOM ingestion, threat-intelligence context, and expert-review handoffs as harness sensors when agents inspect or change source code.
 - Preserve queued prompts, shell commands, rewind points, cross-surface handoffs, permission modes, and telemetry export as harness state when a developer may resume or audit the run later.
+- Treat loop-level persistence, context compaction, deferred tool discovery, sandboxing, approvals, failure reconstruction, event subscriptions, isolated subagents, durable goals, and steering channels as runtime components with inspectable state.
 
 ## Authoritative Sources
 
@@ -184,6 +191,8 @@ The August 18 raw sources add security-sensor, source-review, and auditability c
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 
 ## Related Code
 
@@ -218,6 +227,7 @@ The August 18 raw sources add security-sensor, source-review, and auditability c
 
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.
+- Maintained on 2026-08-21 with loop-enforcement, event-subscription, isolated-subagent, durable-goal, steering-channel, and failure-reconstruction evidence.
 - Maintained on 2026-07-27 with persistent filesystem, sandbox execution, agent-host, tool-approval, multi-file-review, and terminal-diff-link harness components.
 - Maintained on 2026-07-30 with agent-environment readiness components for setup, secrets, restart, and long-job durability.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.

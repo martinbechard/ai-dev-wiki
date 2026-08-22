@@ -31,6 +31,12 @@ The August 12 raw sources add Agent Plugins packaging evidence. The [portable ag
 
 The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds general-availability and workflow-management evidence for portable plugin packages. Locally, reusable skills and runbooks should keep version, owner, client compatibility, subagent task expectations, side-channel question handling, and MCP allowlist assumptions visible so a plugin update or client switch does not silently change the procedure.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) adds platform-specific skill evidence:
+
+- A reusable service skill should package platform workflows, constraints, guardrails, verification steps, and expected artifacts.
+- Coding agents should not prototype against external services from general model knowledge alone.
+- Product-specific details remain upstream-owned; locally, the runbook must show what the skill authorizes, what it forbids, and how generated artifacts are checked.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -51,6 +57,7 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Treat reusable testing and vulnerability-audit skills as runbook material that needs owner, version, command behavior, customization, and output-review metadata before team use.
 - Keep the reusable skill contract distinct from the plugin package that installs it; review skill procedure, package manifest, MCP declarations, and client-specific behavior as separate artifacts.
 - Record plugin version, owner, compatible clients, expected subagent task artifacts, side-channel question rules, and MCP allowlist assumptions in reusable runbooks.
+- For service-specific skills, record platform constraints, guardrails, generated artifacts, verification steps, allowed tool scope, and owner review before relying on them for prototype generation.
 
 ## Authoritative Sources
 
@@ -69,6 +76,7 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
@@ -109,3 +117,4 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Maintained on 2026-08-10 with testing-skill import boundaries for ownership, versioning, command behavior, customization, and generated-output review.
 - Maintained on 2026-08-12 with Agent Plugins package boundaries separated from reusable skill and runbook contracts.
 - Maintained on 2026-08-17 with plugin version, client compatibility, subagent task, side-channel question, and MCP allowlist runbook guidance.
+- Maintained on 2026-08-21 with service-specific skill constraints, guardrails, generated-artifact, verification-step, allowed-tool-scope, and owner-review guidance.

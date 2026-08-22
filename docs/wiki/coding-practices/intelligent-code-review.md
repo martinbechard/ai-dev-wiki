@@ -69,6 +69,12 @@ The August 18 raw sources add review-maintenance, adversarial security-review, a
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds AI-review attribution evidence from public Snowflake/Wiz coverage. The local review lesson is not to infer exact authorship from a co-author line or tool participation alone. Review records should preserve what the AI authored, what it reviewed or scanned, which workflow files or credentials were in scope, which security gates missed the issue, and how remediation rotated short-lived credentials or patched the workflow after responsible disclosure.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) adds review-standard and PR-evidence signals:
+
+- Review standards should be repo-owned, versioned, and inspectable when AI review enforces team rules.
+- Agent-generated pull requests should carry risk triage, validation evidence, guided change explanation, and human accountability.
+- The PR evidence package matters because the authoring session may not provide reliable intent on its own.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -93,6 +99,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Treat deployment model, source exposure, audit evidence, and data residency as review-tool selection criteria before measuring review quality.
 - Evaluate whether the reviewer understands repository-wide architecture and team standards, not only the changed hunk.
 - Use automated compliance checks, quality gates, and runtime evidence to reduce reviewer load without hiding final human judgment.
+- Keep AI review standards versioned with the repository or team source of truth, and record which standard set ran against a change.
+- Require agent-generated pull requests to carry consequence-based risk triage, validation evidence, change explanation, and human accountability instead of relying on fluent generated comments.
 - Include established software-quality dimensions when reviewing AI-generated changes that are larger than a local fix.
 - Preserve agent-authorship and violation-attribution metadata so reviewers can distinguish agent-introduced risk from ordinary human edits.
 - Require the submitter to understand, repair, and explain generated code before treating it as review-ready.
@@ -182,6 +190,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 
 ## Related Code
 
@@ -212,6 +221,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 - Maintained on 2026-07-23 with implementation-intent, invariant-register, deterministic-test, verifier-agent, provenance, and AI-generated-code security review guidance.
 - Maintained on 2026-08-18 with maintained AI-review workflow, adversarial source-review context, production-incident, and human-accountability signals.
+- Maintained on 2026-08-21 with repo-owned review standards and pull-request evidence requirements for agent-authored changes.
 - Created on 2026-06-23 from source guidance on intelligent self-code-review, source references, tier-specific review, coherence checks, and security checks.
 - Maintained on 2026-06-24 with diff-focused review boundaries and routing to lifecycle review gates for PRD or design review.
 - Maintained on 2026-06-25 with review depth, retrieval path, and cost-quality measurement as explicit AI review configuration surfaces.

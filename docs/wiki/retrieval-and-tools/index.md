@@ -12,6 +12,7 @@ This topic does not catalog MCP servers or tool products. It records how retriev
 - [rag-provenance-ranking-and-chunking.md](rag-provenance-ranking-and-chunking.md) records RAG source provenance, chunking, hybrid retrieval, and reranking practice.
 - [tool-call-and-mcp-governance.md](tool-call-and-mcp-governance.md) records client action tools, dynamic context tools, and MCP governance boundaries.
 - [mcp-scoped-authorization-and-approval-evidence.md](mcp-scoped-authorization-and-approval-evidence.md) records MCP resource scoping, read/write separation, approval packages, and exact-payload evidence.
+- [governed-database-agent-access.md](governed-database-agent-access.md) records bounded reports, role-scoped query tools, and audit evidence for database agents.
 - [progressive-mcp-tool-discovery.md](progressive-mcp-tool-discovery.md) records on-demand tool-schema discovery, context budgeting, scoped permissions, managed OAuth, and invocation logs.
 - [remote-mcp-skill-discovery-and-governance.md](remote-mcp-skill-discovery-and-governance.md) records remote skill package provenance, approval defaults, diagnostics, and central governance.
 - [portable-agent-plugin-packaging-and-governance.md](portable-agent-plugin-packaging-and-governance.md) records plugin manifests, bundled skills, MCP server declarations, client extension namespaces, marketplace source, and managed-policy evidence as one package-governance boundary.
@@ -53,3 +54,4 @@ This topic does not catalog MCP servers or tool products. It records how retriev
 - Maintained on 2026-07-28 with remote MCP skill discovery and governance as a durable leaf.
 - Maintained on 2026-07-30 with MCP scoped authorization and approval evidence as a durable leaf.
 - Maintained on 2026-08-12 with portable agent plugin packaging and governance as a durable leaf.
+- Maintained on 2026-08-21 with governed database agent access as a durable retrieval-and-tool leaf.

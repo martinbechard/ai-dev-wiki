@@ -35,6 +35,12 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds startup operating-practice evidence for root instruction files, hooks, evals, and plan mode. Broad Claude Code product coverage stays upstream; locally, durable instructions should support "trust but verify" operating agreements by routing agents to project rules, worktree practice, hook evidence, and eval gates without turning a root instruction file into an overloaded manual.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) adds durable-instruction signals:
+
+- Review standards can be team-owned, repo-versioned skill files that AI reviewers run against codebase context.
+- Platform-specific coding-agent skills can package service constraints, guardrails, and verification steps for prototypes.
+- Locally, both should remain inspectable, source-controlled, owner-reviewed instruction artifacts rather than hidden vendor configuration.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -59,6 +65,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Audit durable instruction files for stale prompt debt and move recurring procedure into reviewed skills or wiki-backed guidance when progressive disclosure can carry it more safely.
 - Keep root instruction files short enough to route agents to project rules, hooks, worktree boundaries, eval gates, and verification expectations without duplicating the durable wiki or every reusable skill.
 - Treat plan-mode prompts, hooks, and eval commands as maintained instruction surfaces when they shape recurring agent behavior or acceptance gates.
+- Store AI review standards and platform-specific guardrail skills as versioned, owner-reviewed instruction artifacts with verification steps and service constraints visible to reviewers.
 
 ## Authoritative Sources
 
@@ -77,6 +84,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 
 ## Related Code
 
@@ -118,3 +126,4 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Maintained on 2026-08-07 with skill-eval workshop evidence for representative tasks, edge cases, tool-use expectations, and regression checks.
 - Maintained on 2026-08-12 with prompt-debt auditing and progressive-disclosure cleanup as durable instruction maintenance.
 - Maintained on 2026-08-20 with root instruction, plan-mode, hook, worktree, and eval routing evidence from startup operating-practice signals.
+- Maintained on 2026-08-21 with repo-versioned review standards and platform-specific guardrail skill packaging.

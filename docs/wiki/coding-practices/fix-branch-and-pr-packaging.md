@@ -25,6 +25,12 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 
 The August 17 topic news collector adds small dependent-PR and branch/worktree visibility evidence. Agent-assisted fixes remain easier to review when dependent branches, worktrees, and PR relationships are visible, because reviewers can see whether the AI work is a narrow patch, a stacked change, or a follow-on that depends on another unmerged result.
 
+The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) adds a pull-request evidence-carrier signal for agent-generated changes:
+
+- Consequence-based risk triage should appear in the PR package.
+- Independent validation should be linked before merge.
+- Guided change explanation and the human owner should be explicit when the authoring agent cannot supply durable intent by itself.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -41,6 +47,7 @@ The August 17 topic news collector adds small dependent-PR and branch/worktree v
 - Start agent-assisted fixes from a clean source-control boundary, known verification gate, and rollback path before allowing generated edits to accumulate.
 - Carry the request goal, selected context, verification commands, and residual human decision into the PR or closeout evidence.
 - Show dependent branch, worktree, stacked PR, and follow-on relationships when agent-assisted changes are split across review units.
+- Package agent-generated PRs as evidence carriers with risk triage, independent validation, change explanation, and named human accountability.
 
 ## Authoritative Sources
 
@@ -55,6 +62,7 @@ The August 17 topic news collector adds small dependent-PR and branch/worktree v
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 
 ## Related Code
 
@@ -87,3 +95,4 @@ The August 17 topic news collector adds small dependent-PR and branch/worktree v
 - Maintained on 2026-08-04 with comment-triggered automation packaging for generated branches, follow-up issues, investigation notes, and review handoffs.
 - Maintained on 2026-08-16 with clean source-control boundaries, verification commands, rollback paths, and request-to-PR evidence.
 - Maintained on 2026-08-17 with dependent branch, worktree, stacked PR, and follow-on relationship visibility.
+- Maintained on 2026-08-21 with risk triage, independent validation, change explanation, and human accountability for agent-generated PRs.
