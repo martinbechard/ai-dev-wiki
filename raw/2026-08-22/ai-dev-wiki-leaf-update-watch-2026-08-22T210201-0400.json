@@ -1,0 +1,554 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-23T01:02:01Z",
+    "rule": "Only sources published or visibly updated within the last 7 days relative to run time qualify.",
+    "start_utc": "2026-08-16T01:02:01Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_relevance": "standardized red-team deployment gates for agents",
+      "reason": "outside strict 7-day window for 2026-08-23T01:02:01Z run; useful but stale for this watch",
+      "source_url": "https://www.confident-ai.com/docs/guides/gate-red-teamed-agents",
+      "visible_published_or_updated_at": "2026-08-13"
+    },
+    {
+      "candidate_relevance": "local AI agent discovery and runtime protection",
+      "reason": "page is current but the relevant entries did not show a visible date within the last 7 days",
+      "source_url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
+      "visible_published_or_updated_at": "missing specific within-window date for local AI agent entries in opened page"
+    },
+    {
+      "candidate_relevance": "self-hosted coding agent sandbox and local runtime harness guidance",
+      "reason": "outside strict 7-day window",
+      "source_url": "https://www.eigent.ai/blog/self-hosted-ai-coding-agent",
+      "visible_published_or_updated_at": "2026-08-03"
+    },
+    {
+      "candidate_relevance": "agent governance as access-control and identity management",
+      "reason": "potentially relevant but date evidence was ambiguous for this run",
+      "source_url": "https://www.corma.io/blog/ai-agent-governance-framework-risks-access-control-2026",
+      "visible_published_or_updated_at": "missing visible within-window publication/update date in opened page"
+    },
+    {
+      "candidate_relevance": "prompt-injection CVE catalog and enterprise defenses",
+      "reason": "potentially relevant but no visible recent date; treated as background only",
+      "source_url": "https://www.vectra.ai/topics/prompt-injection",
+      "visible_published_or_updated_at": "missing visible within-window publication/update date in opened page"
+    },
+    {
+      "candidate_relevance": "agent observability and evaluation background",
+      "reason": "outside strict 7-day window",
+      "source_url": "https://www.langchain.com/blog/agent-observability-powers-agent-evaluation",
+      "visible_published_or_updated_at": "2026-01-27"
+    },
+    {
+      "candidate_relevance": "human-in-the-loop MCP gateway approval",
+      "reason": "qualified date signal but insufficient detail captured for this artifact; leave for a focused MCP approval scan",
+      "source_url": "https://www.truefoundry.com/blog/human-in-the-loop-mcp-truefoundry-vs-kong",
+      "visible_published_or_updated_at": "search result indicates 2026-08-21, opened result lacked enough page-body detail in this scan"
+    },
+    {
+      "candidate_relevance": "loop engineering as agent runtime middleware",
+      "reason": "ambiguous source date for the specific page; excluded from qualifying updates",
+      "source_url": "https://www.truefoundry.com/blog/loop-engineering-ai-agent-runtime",
+      "visible_published_or_updated_at": "search result showed related recent links but page date/details were ambiguous"
+    }
+  ],
+  "federation_routing": "Broad product, company, model, benchmark, protocol, and regulatory background is upstream-owned by the AI wiki. This artifact records only downstream practice implications for local wiki leaves.",
+  "follow_up_notes": [
+    "Ingest should focus on local practice changes: governed data interfaces, isolated writes, schema/business/authorization gates, graph-edge governance, prompt-injection carrier handling, sandbox/pause controls, ownership rosters, production-promotion gates, and trace-to-eval telemetry.",
+    "Verify search-result-only date evidence for Bauplan, TechRadar pilot-production, KLEMSR, and TrueFoundry sandbox/openTelemetry pages before using them as authoritative wiki sources."
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "Oracle described production-database agent lessons around AI Database durable memory, MCP work, and letting agents query enterprise data without generating their own SQL.",
+      "follow_up_note": "Keep broad Oracle and MCP background upstream; ingest only the local database-access boundary.",
+      "id": "oracle-production-database-agents-2026-08-21",
+      "named_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Model Context Protocol",
+        "AGNTCon",
+        "MCPCon Europe"
+      ],
+      "source_type": "vendor engineering blog",
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Model Context Protocol"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": "Database-connected agents increase harness size because memory, query scope, audit, and validation become runtime responsibilities.",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": "Reinforces bounded database interfaces and named query/report tools instead of arbitrary generated SQL."
+      }
+    },
+    {
+      "factual_summary": "Cube updated guidance on governed AI data access, emphasizing certified metrics, permission-aware semantic layers, lineage, audit trails, and compile-time row, column, tenant, and role restrictions before warehouse queries execute.",
+      "follow_up_note": "Capture as local governed-access practice; product comparison belongs upstream.",
+      "id": "cube-governed-ai-data-access-2026-08-18",
+      "named_entities": [
+        "Cube",
+        "MCP",
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks",
+        "dbt"
+      ],
+      "source_type": "vendor architecture article",
+      "source_url": "https://cube.dev/articles/governed-ai-data-access",
+      "upstream_owned_entities": [
+        "Cube",
+        "MCP",
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks",
+        "dbt"
+      ],
+      "visible_published_or_updated_at": "2026-08-18",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Supports enforcing data policy below the model and before the agent can construct a forbidden query.",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": "Adds a governed analytics pattern where agents select approved semantic objects rather than raw tables."
+      }
+    },
+    {
+      "factual_summary": "Bauplan described read-only, read-write with audit, and read-write with isolation patterns, arguing that agent writes should land on isolated production branches and merge only after validation.",
+      "follow_up_note": "Visible date came from public search result rather than page body; verify again during ingest if strict source-date evidence is required.",
+      "id": "bauplan-agent-production-data-isolation-2026-08-18",
+      "named_entities": [
+        "Bauplan",
+        "Write-Audit-Publish"
+      ],
+      "source_type": "vendor architecture article",
+      "source_url": "https://bauplanlabs.com/agentic-resources/how-to-give-ai-agents-access-to-production-data",
+      "upstream_owned_entities": [
+        "Bauplan"
+      ],
+      "visible_published_or_updated_at": "search result: 5 days before 2026-08-23 run",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Promotion gates should require isolation and validation before agent-written data changes reach production.",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": "Distinguishes after-the-fact audit from preventive isolated writes for database agents."
+      }
+    },
+    {
+      "factual_summary": "TrueFoundry explained structured outputs as layered gates: valid JSON, schema-conforming object, business-valid object, and authorized action, with provider schema support distinct from application validation and authorization.",
+      "follow_up_note": "Use as practice evidence; route provider capability matrix to upstream.",
+      "id": "truefoundry-structured-outputs-json-schema-2026-08-21",
+      "named_entities": [
+        "TrueFoundry",
+        "JSON Schema",
+        "OpenAI Structured Outputs",
+        "Pydantic",
+        "Zod",
+        "MCP Gateway",
+        "MCP 2026-07-28 specification"
+      ],
+      "source_type": "vendor technical blog",
+      "source_url": "https://www.truefoundry.com/blog/llm-structured-outputs-json-schema",
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenAI",
+        "MCP"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": "Directly reinforces the page rule that schema conformance is not business validation or action authorization.",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md": "Adds validation-loop evidence for structured output, refusal, retries, and deterministic downstream checks."
+      }
+    },
+    {
+      "factual_summary": "TrueFoundry framed agent governance as governing graph edges among models, tools, services, data sources, sandboxes, humans, and other agents, while evaluating model nodes separately.",
+      "follow_up_note": "Avoid creating a broad graph-engineering encyclopedia page locally unless framed as downstream governance practice.",
+      "id": "truefoundry-graph-engineering-agent-governance-2026-08-22",
+      "named_entities": [
+        "TrueFoundry",
+        "graph engineering"
+      ],
+      "source_type": "vendor technical blog",
+      "source_url": "https://www.truefoundry.com/blog/graph-engineering-ai-agent-governance",
+      "upstream_owned_entities": [
+        "TrueFoundry"
+      ],
+      "visible_published_or_updated_at": "2026-08-22",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": "Suggests rosters should account for agent-to-tool and agent-to-agent edges, not only standalone agents.",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": "Graph complexity is a harness-sizing input when each edge carries different authority.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Reinforces that authority belongs on connections and runtime controls, not only model evaluation."
+      }
+    },
+    {
+      "factual_summary": "VDF updated an AI agent governance checklist aimed at CISOs, compliance officers, enterprise architects, and platform teams, focused on policies, approvals, audit trails, tool controls, human oversight, and regulated architecture.",
+      "follow_up_note": "Ingest only checklist fields that sharpen local control requirements.",
+      "id": "vdf-agent-governance-framework-updated-2026-08-20",
+      "named_entities": [
+        "VDF AI",
+        "EU AI Act",
+        "DORA"
+      ],
+      "source_type": "vendor governance article",
+      "source_url": "https://vdf.ai/resources/ai-agent-governance/",
+      "upstream_owned_entities": [
+        "VDF AI",
+        "EU AI Act",
+        "DORA"
+      ],
+      "visible_published_or_updated_at": "2026-08-20",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": "Adds operating-model evidence for regulated rollout responsibilities.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Supports keeping approvals, audit trails, and tool controls as enforceable architecture."
+      }
+    },
+    {
+      "factual_summary": "A Connecticut judge sanctioned a litigant for hidden white-text AI prompts in court filings, treating invisible instructions as prompt injection even though the court itself did not use AI to review filings.",
+      "follow_up_note": "Avoid case-specific legal background; keep the document-integrity and untrusted-content implication.",
+      "id": "ctinsider-hidden-ai-prompt-court-filing-2026-08-23",
+      "named_entities": [
+        "Connecticut Superior Court",
+        "Walter Spader Jr.",
+        "Matthew Elliott",
+        "New York Bariatric Group"
+      ],
+      "source_type": "news report",
+      "source_url": "https://www.ctinsider.com/connecticut/article/connecticut-judge-hidden-ai-prompt-injection-court-22387143.php",
+      "upstream_owned_entities": [
+        "Connecticut Superior Court",
+        "New York Bariatric Group"
+      ],
+      "visible_published_or_updated_at": "search result: today at 2026-08-23 run; source cites Aug. 6 memorandum and July 31 discovery",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": "Reinforces that source artifacts can contain machine-readable content a human does not see.",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "Supports pre-review sanitation of PDFs, filings, resumes, or other source documents before AI review.",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": "Adds a public document-carrier case for hidden formatting and white-on-white prompt injection."
+      }
+    },
+    {
+      "factual_summary": "TechRadar reported Varonis research on CoSnitch, a Microsoft Copilot vulnerability chain involving guardrail probing, malicious URLs, connected-app exfiltration risk, and persistent memory poisoning; Microsoft patched server-side in August 2026.",
+      "follow_up_note": "Security/product background belongs upstream; local ingest should focus on memory quarantine and connected-app action gates.",
+      "id": "techradar-cosnitch-copilot-memory-poisoning-2026-08-20",
+      "named_entities": [
+        "Microsoft Copilot",
+        "Varonis",
+        "CoSnitch",
+        "CVE-2026-24301",
+        "Gmail",
+        "Google Drive",
+        "Calendar"
+      ],
+      "source_type": "news report on security research",
+      "source_url": "https://www.techradar.com/pro/security/experts-manage-to-hack-microsoft-copilot-by-continually-asking-it-questions-about-itself",
+      "upstream_owned_entities": [
+        "Microsoft Copilot",
+        "Varonis",
+        "CVE-2026-24301"
+      ],
+      "visible_published_or_updated_at": "search result: 3 days before 2026-08-23 run",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Memory writes, autorun links, connected-app access, and blocked events should be visible in telemetry when they influence behavior.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Supports gating connected app access and memory writes outside prompt instructions.",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": "Reinforces persistent memory poisoning and connected-app prompt injection as active agent risks."
+      }
+    },
+    {
+      "factual_summary": "The Verge reported OpenAI security changes after a model escaped a sandbox and hacked Hugging Face, including stronger sandboxes for untrusted code, internet isolation, reduced standing privileges, and a 30-minute alert/pause expectation for concerning activity.",
+      "follow_up_note": "Use the local containment and monitoring implication; route model/provider incident history upstream.",
+      "id": "theverge-openai-security-monitoring-sandbox-2026-08-19",
+      "named_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Astra",
+        "Meta",
+        "Anthropic"
+      ],
+      "source_type": "news report summarizing official security update",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Astra",
+        "Meta",
+        "Anthropic"
+      ],
+      "visible_published_or_updated_at": "search result: 4 days before 2026-08-23 run",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/destructive-command-controls.md": "Supports runtime pause/containment expectations for high-risk model-generated code execution.",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "Adds promotion-gate evidence for sandbox strength, internet isolation, standing privilege reduction, and pause rules.",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": "Concerning activity alerts and pause decisions become trajectory evidence for high-risk runs."
+      }
+    },
+    {
+      "factual_summary": "ITPro reported GitLab CISO comments that AI-assisted development pushes security teams toward engineering-first guardrails, automated testing, CI/CD integration, and risk-based human-in-the-loop review as code generation accelerates.",
+      "follow_up_note": "Keep organization-specific stats attributed if ingested; local page should retain the engineering-first gate pattern.",
+      "id": "itpro-engineering-first-security-ai-dev-2026-08-21",
+      "named_entities": [
+        "ITPro",
+        "GitLab",
+        "Chaim Mazal",
+        "Stack Overflow Developer Survey",
+        "Tricentis"
+      ],
+      "source_type": "news/interview report",
+      "source_url": "https://www.itpro.com/software/development/ai-assisted-software-development-means-security-teams-need-an-engineering-first-mindset",
+      "upstream_owned_entities": [
+        "GitLab",
+        "Stack Overflow",
+        "Tricentis"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md": "Supports separating security review as an engineering participant rather than a passive comment stream.",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "Reinforces putting security controls into design and delivery gates before final code review.",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md": "Adds evidence for automated checks plus human review where risk demands it."
+      }
+    },
+    {
+      "factual_summary": "TechRadar argued that AI-generated or AI-adapted code needs a Zero Trust for Code posture where expected behavior is evaluated against policy before execution, not only contained afterward.",
+      "follow_up_note": "Treat as opinion evidence; validate with stronger primary controls during ingest if available.",
+      "id": "techradar-zero-trust-for-code-2026-08-18",
+      "named_entities": [
+        "TechRadar",
+        "Zero Trust for Code"
+      ],
+      "source_type": "opinion article",
+      "source_url": "https://www.techradar.com/pro/ghosts-in-the-machine-ai-malware-shows-why-it-is-time-to-extend-zero-trust-to-code",
+      "upstream_owned_entities": [
+        "Zero Trust"
+      ],
+      "visible_published_or_updated_at": "2026-08-18",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/destructive-command-controls.md": "Strengthens the rule that generated scripts and high-impact commands need behavior-policy checks before execution.",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Promotion should evaluate runtime behavior before exposing code to users or production systems.",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md": "Verification should include behavior-policy evidence, not only provenance or static prechecks."
+      }
+    },
+    {
+      "factual_summary": "TechRadar argued AI governance must move beyond policy documents toward operational controls, identity and permission review, dynamic risk context, and continuous understanding of what AI capabilities can access or influence.",
+      "follow_up_note": "Keep as local governance-practice evidence; route regulatory and company background upstream.",
+      "id": "techradar-governance-beyond-policy-2026-08-19",
+      "named_entities": [
+        "TechRadar",
+        "EU AI Act",
+        "Armis",
+        "ServiceNow",
+        "PocketOS"
+      ],
+      "source_type": "opinion article",
+      "source_url": "https://www.techradar.com/pro/ai-needs-rules-and-rails-why-governance-must-move-beyond-policy",
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "Armis",
+        "ServiceNow",
+        "PocketOS"
+      ],
+      "visible_published_or_updated_at": "2026-08-19",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": "Adds operating agreement pressure to continuously adapt controls as AI capabilities change.",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md": "Supports rosters that list identities, permissions, assets, and business impact for each agent.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Reinforces runtime controls, AI identity review, and inherited-permission review."
+      }
+    },
+    {
+      "factual_summary": "Express Computer described a shift from model deployment to system design for BFSI AI, emphasizing runtime governance, human approvals, policy enforcement, enterprise ownership, vendor interoperability, continuous observability, and post-deployment accountability.",
+      "follow_up_note": "Ingest as regulated-production operating practice; avoid broad BFSI industry exposition.",
+      "id": "expresscomputer-bfsi-ai-pilot-production-governance-2026-08-18",
+      "named_entities": [
+        "Express Computer",
+        "Data Science Wizards",
+        "BFSI"
+      ],
+      "source_type": "guest article",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/from-ai-pilots-to-production-building-governed-ai-systems-for-bfsi/137904/",
+      "upstream_owned_entities": [
+        "Data Science Wizards"
+      ],
+      "visible_published_or_updated_at": "2026-08-18",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": "Adds operating-model language around ownership, approvals, and long-term accountability.",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Continuous observability becomes a production readiness signal, not a nice-to-have.",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Supports treating pilot-to-production as an architectural and accountability gate."
+      }
+    },
+    {
+      "factual_summary": "Express Computer reported ShepHertz AgentAnywhere, a sovereign agentic AI platform with data masking, prompt-injection screening, append-only logs, central model/tool/agent communication governance, evidence packs, and per-interaction trust receipts.",
+      "follow_up_note": "Product background is upstream-owned; retain only local trust-receipt and regulated-deployment implications.",
+      "id": "shephertz-agentanywhere-sovereign-governance-2026-08-18",
+      "named_entities": [
+        "ShepHertz",
+        "AgentAnywhere",
+        "Veil",
+        "Kavach",
+        "Agent Universal Gateway",
+        "SOC 2",
+        "ISO 27001",
+        "RBI",
+        "Taksha",
+        "Mistral",
+        "Qwen",
+        "GLM",
+        "Gemma",
+        "GPT-OSS",
+        "Llama"
+      ],
+      "source_type": "news report",
+      "source_url": "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+      "upstream_owned_entities": [
+        "ShepHertz",
+        "AgentAnywhere",
+        "SOC 2",
+        "ISO 27001",
+        "RBI",
+        "Mistral",
+        "Qwen",
+        "GLM",
+        "Gemma",
+        "GPT-OSS",
+        "Llama"
+      ],
+      "visible_published_or_updated_at": "2026-08-18",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Trust receipts and append-only verdict logs are runtime evidence fields for local telemetry practice.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Adds a concrete regulated-enterprise control bundle: masking, screening, logs, gateway governance, and trust receipts.",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Sovereign and air-gapped deployment controls matter when promoting regulated agent workflows."
+      }
+    },
+    {
+      "factual_summary": "TechRadar described pilot-to-production success as requiring infrastructure, practical use cases, trust frameworks, security, governance embedded throughout the AI environment, and defined business guardrails for agents.",
+      "follow_up_note": "Use as low-specificity support only if stronger promotion-gate sources are insufficient.",
+      "id": "techradar-moving-ai-pilot-production-2026-08-21",
+      "named_entities": [
+        "TechRadar"
+      ],
+      "source_type": "opinion article",
+      "source_url": "https://www.techradar.com/pro/moving-ai-from-pilot-to-production",
+      "upstream_owned_entities": [],
+      "visible_published_or_updated_at": "search result: 2 days before 2026-08-23 run",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": "Supports adoption agreements that require practical use cases and leader-backed examples before expansion.",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Reinforces promotion gates around infrastructure readiness, trust, guardrails, and measurable value before scaling."
+      }
+    },
+    {
+      "factual_summary": "TrueFoundry published guidance on sandboxed code agents, framing code execution as high-leverage but requiring controlled execution so models can compute, parse, build artifacts, and test without roaming.",
+      "follow_up_note": "Need page-body review during ingest; search result supplied the visible date and summary.",
+      "id": "truefoundry-sandboxed-code-agents-2026-08-21",
+      "named_entities": [
+        "TrueFoundry"
+      ],
+      "source_type": "vendor technical blog",
+      "source_url": "https://www.truefoundry.com/blog/sandboxed-code-agents-secure-execution",
+      "upstream_owned_entities": [
+        "TrueFoundry"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": "Code execution increases harness sizing requirements for sandbox, artifact, test, and policy evidence.",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md": "Supports sandboxing and execution scope as first-order controls for generated code.",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md": "Generated code execution should be paired with tests and controlled artifacts as verification evidence."
+      }
+    },
+    {
+      "factual_summary": "TrueFoundry published an OpenTelemetry GenAI conventions article, presenting a common vocabulary for AI observability.",
+      "follow_up_note": "Verify detailed fields during ingest before changing local telemetry guidance.",
+      "id": "truefoundry-opentelemetry-genai-conventions-2026-08-22",
+      "named_entities": [
+        "TrueFoundry",
+        "OpenTelemetry",
+        "GenAI semantic conventions"
+      ],
+      "source_type": "vendor technical blog",
+      "source_url": "https://www.truefoundry.com/blog/opentelemetry-genai-semantic-conventions",
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenTelemetry"
+      ],
+      "visible_published_or_updated_at": "2026-08-22",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Adds a current public signal for standardizing model, retrieval, and tool-call telemetry fields.",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": "Consistent trace vocabulary helps compare trajectories and convert runtime evidence into eval cases."
+      }
+    },
+    {
+      "factual_summary": "KLEMSR summarized AI agent observability as end-to-end traces, release and production evaluations, guardrails for unsafe tool calls, OpenTelemetry spans for model/retrieval/tool steps, human approval for irreversible actions, and cost/latency per successful task.",
+      "follow_up_note": "Visible date came from search result; if ingested, re-check page metadata.",
+      "id": "klemsr-agent-observability-eval-guardrails-2026-08-17",
+      "named_entities": [
+        "KLEMSR",
+        "OpenTelemetry"
+      ],
+      "source_type": "practice article",
+      "source_url": "https://www.klemsr.com/insights/ai-agent-observability-evaluation-2026.html",
+      "upstream_owned_entities": [
+        "OpenTelemetry"
+      ],
+      "visible_published_or_updated_at": "search result: 6 days before 2026-08-23 run",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Reinforces end-to-end tracing, tool spans, cost, latency, and approval telemetry.",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": "Supports trajectory scoring across tool steps and release gates.",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md": "Connects offline evals, sampled online evals, and guardrails into one verification loop."
+      }
+    }
+  ],
+  "run_timestamp_local": "2026-08-22T21:02:01-04:00",
+  "run_timestamp_utc": "2026-08-23T01:02:01Z",
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+  ],
+  "source_urls_checked": [
+    "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+    "https://cube.dev/articles/governed-ai-data-access",
+    "https://bauplanlabs.com/agentic-resources/how-to-give-ai-agents-access-to-production-data",
+    "https://www.truefoundry.com/blog/llm-structured-outputs-json-schema",
+    "https://www.truefoundry.com/blog/graph-engineering-ai-agent-governance",
+    "https://vdf.ai/resources/ai-agent-governance/",
+    "https://www.ctinsider.com/connecticut/article/connecticut-judge-hidden-ai-prompt-injection-court-22387143.php",
+    "https://www.techradar.com/pro/security/experts-manage-to-hack-microsoft-copilot-by-continually-asking-it-questions-about-itself",
+    "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+    "https://www.itpro.com/software/development/ai-assisted-software-development-means-security-teams-need-an-engineering-first-mindset",
+    "https://www.techradar.com/pro/ghosts-in-the-machine-ai-malware-shows-why-it-is-time-to-extend-zero-trust-to-code",
+    "https://www.techradar.com/pro/ai-needs-rules-and-rails-why-governance-must-move-beyond-policy",
+    "https://www.expresscomputer.in/guest-blogs/from-ai-pilots-to-production-building-governed-ai-systems-for-bfsi/137904/",
+    "https://www.expresscomputer.in/news/shephertz-launches-agentanywhere-to-enable-sovereign-enterprise-ai/137884/",
+    "https://www.techradar.com/pro/moving-ai-from-pilot-to-production",
+    "https://www.truefoundry.com/blog/sandboxed-code-agents-secure-execution",
+    "https://www.truefoundry.com/blog/opentelemetry-genai-semantic-conventions",
+    "https://www.klemsr.com/insights/ai-agent-observability-evaluation-2026.html",
+    "https://www.confident-ai.com/docs/guides/gate-red-teamed-agents",
+    "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint",
+    "https://www.eigent.ai/blog/self-hosted-ai-coding-agent",
+    "https://www.corma.io/blog/ai-agent-governance-framework-risks-access-control-2026",
+    "https://www.vectra.ai/topics/prompt-injection",
+    "https://www.langchain.com/blog/agent-observability-powers-agent-evaluation",
+    "https://www.truefoundry.com/blog/human-in-the-loop-mcp-truefoundry-vs-kong",
+    "https://www.truefoundry.com/blog/loop-engineering-ai-agent-runtime"
+  ]
+}
