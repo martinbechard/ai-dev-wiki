@@ -1,0 +1,414 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-22T20:32:21-04:00",
+  "cutoff_window": {
+    "timezone": "America/Toronto",
+    "start": "2026-08-20T20:32:21-04:00",
+    "end": "2026-08-22T20:32:21-04:00",
+    "rule": "Include only public web sources with visible publication or update dates inside the last two days. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "wiki_checks": {
+    "local_pages_checked": [
+      "docs/wiki/federation.md",
+      "docs/wiki/topic-index.md",
+      "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "docs/wiki/source-workflows/automated-update-feeds.md"
+    ],
+    "upstream_pages_checked": [
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md"
+    ],
+    "status": "project-wiki status passed: docs/wiki has 113 pages, required files present, lint findings 0"
+  },
+  "federation_boundary": {
+    "summary": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques. This downstream artifact records only local practice implications for AI-assisted development workflows, governance, retrieval, verification, and adoption.",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki"
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-08-22-001",
+      "title": "GitHub Copilot brings shared agent sessions into Slack",
+      "source_url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/",
+      "source_type": "official changelog",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Page header shows 'August 21, 2026 • 2 minute read'.",
+      "short_factual_summary": "GitHub announced a public preview that lets teams use @GitHub in Slack to start Copilot agent sessions, plan changes, investigate failures, implement and validate work in a cloud sandbox, create pull requests, and inspect plans, diffs, and previews in dedicated code channels. The page says actions remain bounded by existing GitHub permissions and controls, and repository administrators can require additional approval for Copilot-attributed pull requests.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete shared-channel agent workflow pattern: agent progress, plans, diffs, review context, and stop/redirect controls move from a private agent session into a team-visible coordination surface while preserving repo permissions and human approval gates.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot CLI",
+        "GitHub Copilot app",
+        "Slack",
+        "Slack Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot CLI",
+        "GitHub Copilot app",
+        "Slack",
+        "Slack Code"
+      ],
+      "local_practice_implication": "Track shared agent-session evidence, app identity attribution, and extra PR approval as durable controls for channel-visible coding-agent work."
+    },
+    {
+      "id": "2026-08-22-002",
+      "title": "GitHub Copilot adds shared agent sessions in Microsoft Teams",
+      "source_url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+      "source_type": "official changelog",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Page header shows 'August 21, 2026 • 2 minute read'.",
+      "short_factual_summary": "GitHub announced a public preview for starting Copilot cloud agent sessions from Microsoft Teams. Participants can add context and steer work from the conversation; users with repository write access can trigger changes. The source also states that cloud agent sessions use AI credits, cloud sandbox usage is billed separately, admins must enable cloud agent and sandbox policies, and repository administrators can require extra approval for pull requests attributed to the Teams Copilot integration identity.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update ties collaborative agent work to concrete cost, sandbox, identity, permission, and approval controls, which are the governance evidence needed when team chat becomes an execution surface.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Microsoft Teams",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Microsoft Teams",
+        "Copilot cloud agent"
+      ],
+      "local_practice_implication": "Shared team-chat agent sessions should carry explicit budget routing, sandbox policy, write-access checks, integration identity attribution, and merge-approval deltas."
+    },
+    {
+      "id": "2026-08-22-003",
+      "title": "Security teams urged to adopt engineering-first AI development controls",
+      "source_url": "https://www.itpro.com/software/development/ai-assisted-software-development-means-security-teams-need-an-engineering-first-mindset",
+      "source_type": "industry article",
+      "visible_date": "Published 21 August 2026",
+      "visible_date_basis": "Article byline shows 'Published 21 August 2026'.",
+      "short_factual_summary": "ITPro reported GitLab CISO Chaim Mazal's view that AI-assisted development requires security teams to operate more like engineering teams, embedding automated testing, CI/CD-style guardrails, and security checks into development workflows. The article also cites concerns about AI adoption outpacing policy development and organizations shipping untested AI-generated code.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is that security review cannot remain a late manual audit when coding agents accelerate change. Controls need to be implemented as reusable engineering workflow components with risk-based human review.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "ITPro",
+        "GitLab",
+        "Chaim Mazal",
+        "Stack Overflow Developer Survey",
+        "Tricentis"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "Stack Overflow",
+        "Tricentis"
+      ],
+      "local_practice_implication": "AI-assisted security gates should be packaged as maintained engineering workflows with automated checks, CI integration, and documented human-in-loop thresholds."
+    },
+    {
+      "id": "2026-08-22-004",
+      "title": "Oracle describes a controlled Cursor MCP database workflow",
+      "source_url": "https://blogs.oracle.com/developers/build-a-controlled-cursor-mcp-workflow-with-oracle-ai-database",
+      "source_type": "vendor developer blog",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Article header shows 'August 21, 2026 19 minute read'.",
+      "short_factual_summary": "Oracle published a workflow that places SQLcl MCP between Cursor CLI and Oracle AI Database, using an approved saved connection, read-only validation, audit and activity trail checks, durable memory tables, tool traces, retrieval evidence, and a validation notebook before handing the workflow to the assistant.",
+      "why_it_matters_for_ai_assisted_development_practice": "The item is a specific MCP-as-boundary pattern for database access: tools expose controlled capabilities, the database remains the durable source for memory and traces, and the notebook functions as a repeatable harness that proves the boundary before operational use.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Oracle",
+        "Cursor CLI",
+        "Oracle AI Database",
+        "Oracle SQLcl",
+        "Oracle AI Agent Memory",
+        "MCP",
+        "LangChain"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Cursor CLI",
+        "Oracle AI Database",
+        "Oracle SQLcl",
+        "Oracle AI Agent Memory",
+        "MCP",
+        "LangChain"
+      ],
+      "local_practice_implication": "Agent database workflows should preserve request, tool call, database identity, retrieved context, decision reason, audit trail, and validation snapshot before adding write or broader read access."
+    },
+    {
+      "id": "2026-08-22-005",
+      "title": "Oracle frames production database agents as autonomous-insider risk",
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "source_type": "vendor developer blog",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Article header shows 'August 21, 2026 7 minute read'.",
+      "short_factual_summary": "Oracle described agent memory and MCP work for querying enterprise data without agents generating their own SQL. The article referenced NSA MCP security guidance, noted that safeguards trail adoption, and characterized agents with data access as increasingly acting like autonomous insiders.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces the local governance pattern that database agents require identity, authorization, query mediation, monitoring, and audit evidence rather than prompt-only assurances.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "MCP",
+        "NSA",
+        "BIRD benchmark",
+        "Agentic AI Foundation"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "MCP",
+        "NSA",
+        "BIRD benchmark",
+        "Agentic AI Foundation"
+      ],
+      "local_practice_implication": "Treat production-data agents as delegated insiders whose access must be scoped, mediated, logged, and reviewed against the intended business task."
+    },
+    {
+      "id": "2026-08-22-006",
+      "title": "DevOps.com outlines layered production AI eval systems",
+      "source_url": "https://devops.com/production-grade-ai-eval-systems/",
+      "source_type": "industry article",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Article byline shows 'By: Anjaiah Methuku on August 21, 2026'.",
+      "short_factual_summary": "DevOps.com argued that ordinary SRE metrics can stay healthy while an AI system fails users, and recommended evaluation before release, during CI, and on sampled production traffic. It also recommended a layered evaluator stack where deterministic checks run broadly and costlier LLM judges or human reviews run selectively.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update maps directly to eval operation: quality gates need stage placement, cost-aware evaluator selection, and live-sampling feedback rather than a single pre-release test suite.",
+      "candidate_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "DevOps.com",
+        "Anjaiah Methuku",
+        "LLM judges",
+        "SRE"
+      ],
+      "upstream_owned_entities": [
+        "DevOps.com",
+        "LLM judges",
+        "SRE"
+      ],
+      "local_practice_implication": "Maintain eval pipelines as layered release and runtime controls: deterministic checks first, selective LLM judges, and human domain review for high-risk or ambiguous cases."
+    },
+    {
+      "id": "2026-08-22-007",
+      "title": "TrueFoundry distinguishes agent-node evals from edge governance",
+      "source_url": "https://www.truefoundry.com/blog/graph-engineering-ai-agent-governance",
+      "source_type": "vendor engineering blog",
+      "visible_date": "Published: August 22, 2026",
+      "visible_date_basis": "Article header shows 'Published: August 22, 2026'.",
+      "short_factual_summary": "TrueFoundry described 'graph engineering' as governing the connections between models, tools, services, data sources, sandboxes, humans, and agents. It distinguishes evaluating nodes from governing edges, states that reachability is not authorization, and separates designed architecture diagrams from executed evidence such as harness events, gateway traces, IAM records, and downstream logs.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a useful local governance model for tool-call and MCP practice: hiding tool schemas or reducing context is not an authorization control, and executed tool graphs need evidence from harnesses, gateways, and downstream systems.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "MCP Gateway",
+        "AI Gateway",
+        "NIST AI Risk Management Framework",
+        "OWASP"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "MCP Gateway",
+        "AI Gateway",
+        "NIST AI Risk Management Framework",
+        "OWASP"
+      ],
+      "local_practice_implication": "During ingest, consider adding or reinforcing the rule that context/tool discovery reduction must be paired with independent authorization and execution evidence."
+    },
+    {
+      "id": "2026-08-22-008",
+      "title": "J-STAGE paper compares AI code-review orchestration cost and detection",
+      "source_url": "https://www.jstage.jst.go.jp/browse/jsaisigtwo/2026/AGI-033/_contents/-char/en",
+      "source_type": "technical report index",
+      "visible_date": "Published: August 21, 2026; Released on J-STAGE: August 21, 2026",
+      "visible_date_basis": "J-STAGE issue entry for 'Cost-vs-Defect Detection Performance Comparison of AI Code Review Orchestration Configurations' shows both dates.",
+      "short_factual_summary": "A JSAI Technical Report paper compares aspect-parallel review, adversarial critique, and multi-run aggregation for AI code review. The abstract says the benchmark inverts real bug-fix commits from Python, TypeScript, Go, and Rust repositories, evaluates 30 items across 12 models, 3 vendors, and 4 orchestrations, and finds multi-run aggregation wins in 8 of 12 models and all four repositories, with returns flattening above a stated cost band.",
+      "why_it_matters_for_ai_assisted_development_practice": "The paper provides a cost-aware evaluation frame for AI code review orchestration, useful for deciding when multiple passes or roles improve defect detection versus simply increasing spend.",
+      "candidate_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "J-STAGE",
+        "JSAI Technical Report",
+        "AI code review",
+        "Python",
+        "TypeScript",
+        "Go",
+        "Rust"
+      ],
+      "upstream_owned_entities": [
+        "J-STAGE",
+        "JSAI Technical Report",
+        "Python",
+        "TypeScript",
+        "Go",
+        "Rust"
+      ],
+      "local_practice_implication": "Code-review evals should track recall-weighted defect detection, orchestration shape, leakage controls, and cost bands instead of assuming premium single-shot review is always better."
+    },
+    {
+      "id": "2026-08-22-009",
+      "title": "Splunk frames agent payments as governance and observability problem",
+      "source_url": "https://www.splunk.com/en_us/blog/artificial-intelligence/the-agent-economy-when-ais-pay-each-other.html",
+      "source_type": "vendor blog",
+      "visible_date": "August 21, 2026",
+      "visible_date_basis": "Article header shows 'Artificial Intelligence August 21, 2026'.",
+      "short_factual_summary": "Splunk described an agentic web stack where MCP governs tool/API/data access, A2A governs agent-to-agent communication, payment protocols handle settlement, and identity and trust sit above them. The article argues that signed mandates can still fail to reflect intent because prompt injection attacks the decision layer, and that observability becomes a financial-control, security, and compliance system when agents hold wallets.",
+      "why_it_matters_for_ai_assisted_development_practice": "Although broad protocol and payment coverage is upstream-owned, the downstream practice implication is sharp: agent authorization, budget limits, payment approval, and runtime observability become part of delegated-authority design once agents can spend or trigger billable tool calls.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Splunk",
+        "MCP",
+        "A2A",
+        "x402",
+        "AP2",
+        "ACP",
+        "Linux Foundation",
+        "Coinbase",
+        "Stripe",
+        "Cloudflare",
+        "AWS"
+      ],
+      "upstream_owned_entities": [
+        "Splunk",
+        "MCP",
+        "A2A",
+        "x402",
+        "AP2",
+        "ACP",
+        "Linux Foundation",
+        "Coinbase",
+        "Stripe",
+        "Cloudflare",
+        "AWS"
+      ],
+      "local_practice_implication": "For agent tools that spend money or consume paid services, require mandate evidence, spend caps, prompt-injection defenses, and observability tied to the delegated human or workflow."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Announcing Slack Code",
+      "source_url": "https://docs.slack.dev/changelog/2026/08/20/slack-code/",
+      "visible_date": "August 20, 2026",
+      "reason": "Excluded as cutoff-day date-only evidence. The run cutoff was 2026-08-20T20:32:21-04:00 and the source did not expose a publication time. The August 21 GitHub Slack source was retained for the related local practice implication."
+    },
+    {
+      "title": "Getting started with MCP - AWS Prescriptive Guidance",
+      "source_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-frameworks/getting-started-with-mcp.html",
+      "visible_date": "No visible publication or update date on opened page",
+      "reason": "Excluded because the opened source did not expose a qualifying visible date, despite search-result freshness."
+    },
+    {
+      "title": "Codex is now generally available",
+      "source_url": "https://openai.com/index/codex-now-generally-available/",
+      "visible_date": "No qualifying visible article publication date in opened page",
+      "reason": "Excluded because the opened page did not expose an in-window publication or update date. Broad Codex product coverage is upstream-owned; any future ingest should only keep local admin, SDK, session-resume, structured-output, or review-gate practice implications if date evidence qualifies."
+    },
+    {
+      "title": "Unrolling the Codex agent loop",
+      "source_url": "https://openai.com/index/unrolling-the-codex-agent-loop/",
+      "visible_date": "January 23, 2026",
+      "reason": "Excluded as out of the two-day window. The source remains relevant to harness architecture but is not a recent public update for this collector run."
+    },
+    {
+      "title": "Scaling Codex to enterprises worldwide",
+      "source_url": "https://openai.com/index/scaling-codex-to-enterprises-worldwide/",
+      "visible_date": "April 21, 2026",
+      "reason": "Excluded as out of the two-day window. Broad enterprise Codex adoption coverage is upstream-owned; local operating-model implications require fresh source evidence."
+    },
+    {
+      "title": "GPT-5.1-Codex-Max System Card",
+      "source_url": "https://openai.com/index/gpt-5-1-codex-max-system-card/",
+      "visible_date": "No qualifying visible article publication date in opened page",
+      "reason": "Excluded because the opened page did not expose a qualifying in-window publication date. Model and system-card entity details are upstream-owned."
+    },
+    {
+      "title": "Claude Code changelog",
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-code",
+      "visible_date": "No qualifying visible dated changelog entry in opened page",
+      "reason": "Excluded because the fetched page redirected to GitHub and the opened content did not expose an in-window dated item that could be verified from the page text."
+    },
+    {
+      "title": "Computer use tool - Claude Platform Docs",
+      "source_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+      "visible_date": "No visible publication or update date on opened page",
+      "reason": "Excluded because the opened documentation page did not expose a qualifying visible publication or update date."
+    },
+    {
+      "title": "The Open-Source Agent Tooling Stack in August 2026",
+      "source_url": "https://the-agent-report.com/2026/08/open-source-agent-tooling-roundup-august-2026/",
+      "visible_date": "Search result only: Published yesterday",
+      "reason": "Excluded because only search-result relative freshness was visible during this run, not a concrete visible source date from the opened page."
+    },
+    {
+      "title": "MCP server ranking list for August 20, 2026",
+      "source_url": "https://mcpmarket.com/daily/top-mcp-server-list-august-20-2026",
+      "visible_date": "August 20, 2026",
+      "reason": "Excluded as a cutoff-day date-only source and because MCP server catalog/entity coverage is upstream-owned unless a local governance practice implication is explicit."
+    },
+    {
+      "title": "LinkedIn, Threads, Instagram, YouTube, and other social reposts about coding agents or context engineering",
+      "source_url": "multiple social or video result URLs",
+      "visible_date": "Relative or platform-rendered dates only",
+      "reason": "Excluded because the collector found sufficient primary or article sources; these candidates had weaker source authority, relative dates, login-dependent rendering, or no distinct local practice implication."
+    }
+  ],
+  "follow_up_notes": [
+    "During ingest, avoid creating local company, product, model, protocol, framework, or MCP-server encyclopedia leaves; route those details to the upstream AI wiki if needed.",
+    "Potential local synthesis themes: shared-channel agent sessions, integration identity and extra PR approvals, database-agent MCP boundaries, agent-edge governance evidence, layered production evals, cost-aware code-review orchestration, and spend-cap governance for billable agent actions.",
+    "The Slack Code official source was date-boundary excluded, but the August 21 GitHub Slack source provides qualifying evidence for the shared-channel coding-agent workflow."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}

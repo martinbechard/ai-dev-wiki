@@ -55,6 +55,8 @@ The August 21 sources add review-economics and evidence-stewardship criteria:
 - The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) reinforces reviewable, defensible test and patch evidence.
 - Locally, code-review evals should measure precision, reviewer triage burden, behavioral and security correctness, and traceable evidence quality together.
 
+The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) adds orchestration-shape evidence from a [technical-report index](https://www.jstage.jst.go.jp/browse/jsaisigtwo/2026/AGI-033/_contents/-char/en) comparing aspect-parallel review, adversarial critique, and multi-run aggregation across languages, models, vendors, and repositories. Locally, review evals should record orchestration shape, leakage controls, recall-weighted defect detection, language and repository mix, and cost band before treating repeated review passes as a quality improvement.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -92,6 +94,8 @@ The August 21 sources add review-economics and evidence-stewardship criteria:
 - Score attribution evidence separately from defect detection: authored lines, reviewed scope, scanned files, tool traces, commit metadata, missed scanner output, credential rotation, and remediation timing should remain distinct rubric fields.
 - Include security-sensitive workflow-file cases where the expected review output names both the vulnerable automation path and the limits of AI attribution from incomplete metadata.
 - Measure false-positive rate, reviewer triage time, evidence reviewability, behavioral correctness, and security-fix correctness as separate rubric dimensions.
+- Compare single-pass, aspect-parallel, adversarial, and multi-run review orchestration with the same defect corpus, leakage controls, language mix, and cost accounting.
+- Track where marginal defect detection flattens relative to added model spend and reviewer triage time.
 
 ## Authoritative Sources
 
@@ -124,6 +128,7 @@ The August 21 sources add review-economics and evidence-stewardship criteria:
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 
 ## Related Code
 
@@ -169,3 +174,4 @@ The August 21 sources add review-economics and evidence-stewardship criteria:
 - Maintained on 2026-08-11 with staged deterministic review-eval criteria for dispatch, grounded file review, curated tools, independent reflection, stability, and token cost.
 - Maintained on 2026-08-20 with authorship, AI-review participation, scanned scope, missed-gate, credential-lifetime, responsible-disclosure, and containment rubric fields.
 - Maintained on 2026-08-21 with false-positive triage cost, reviewer-burden, evidence-quality, behavioral-correctness, and security-fix rubric criteria.
+- Maintained on 2026-08-22 with orchestration-shape, leakage-control, recall-weighted detection, language-mix, repository-mix, and cost-band review-eval criteria.

@@ -45,6 +45,12 @@ The [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev
 
 The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds persistent memory poisoning and repository/skill baiting evidence. Hidden or compromised content can be stored as long-term memory and later retrieved as trusted context, while fake repositories, skills, or MCP servers can steer agents during installation or onboarding. Locally, memory objects, repository text, skill listings, and MCP onboarding material should remain untrusted evidence until provenance, risk scoring, quarantine, confirmation, and install-policy checks allow reuse.
 
+The August 22 raw sources add document-carrier and connected-app reinforcement:
+
+- The [topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) frames prompt injection as a risk to billable agent decisions and delegated authority.
+- The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) records hidden formatted prompt text in public documents, persistent memory poisoning, malicious links, and connected-app exfiltration as carrier patterns.
+- Locally, document ingestion, memory reuse, link following, and connected-app action require quarantine and authorization checks even when the user-facing text appears harmless.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -79,6 +85,9 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Treat browser pages, browser extension output, connected-app state, and imported documents as untrusted content even when the browser session or document connector is approved.
 - Quarantine hidden or copied instructions from source documents before agent-authored outputs can publish, email, commit, or propagate them into another artifact.
 - Treat persistent memory, repository skill listings, package descriptions, and MCP onboarding text as untrusted source evidence until provenance, quarantine, risk scoring, and explicit install or reuse approval are recorded.
+- Inspect PDFs, filings, resumes, pasted documents, and rich-text artifacts for hidden formatting, white-on-white text, copied prompts, embedded links, and machine-readable content before AI review or extraction.
+- Gate memory writes, memory reads, connected-app actions, and autorun links separately from the conversational answer because injection can persist beyond the original source encounter.
+- Require spend, payment, or paid-service actions to survive prompt-injection screening and delegated-intent checks before execution.
 
 ## Authoritative Sources
 
@@ -104,6 +113,8 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 
 ## Related Code
 
@@ -149,3 +160,4 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Maintained on 2026-07-16 with automated indirect prompt-injection red-team coverage for browser, tool-output, repository, file, and connected-app surfaces.
 - Maintained on 2026-08-09 with AI browser, browser-extension, connected-app, and carrier-document propagation boundaries.
 - Maintained on 2026-08-15 with persistent-memory poisoning, repository-skill baiting, MCP onboarding, provenance, quarantine, and reuse-approval boundaries.
+- Maintained on 2026-08-22 with hidden document-carrier inspection, connected-app, memory, autorun-link, and paid-action prompt-injection controls.

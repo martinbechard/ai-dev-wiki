@@ -51,6 +51,12 @@ The August 7 raw sources add LLM observability and skill-eval evidence. The [LLM
 
 The August 18 raw sources add migration acceptance, production-defect, and security-review pipeline evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records agent-assisted framework migration as a reviewed change program, and records phased source-code vulnerability review that collects asset, SBOM, architecture, and threat-intelligence context before expert review. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records survey evidence about production incidents traced to AI-generated code; locally, that evidence supports acceptance gates that combine tests, source-backed review, runtime or post-merge signals, and sampled production health rather than relying on generated-code completion alone.
 
+The August 22 sources add production-eval and runtime-evidence placement:
+
+- The [topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) supports release, CI, sampled production, deterministic, LLM-judge, and human-review layers rather than a single pre-release suite.
+- The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) adds schema/business/authorization gates, graph-edge evidence, sandbox execution controls, behavior-policy checks, and OpenTelemetry-style trace vocabulary as inputs to eval cases.
+- Locally, verification loops should explain where each evaluator runs, what evidence it consumes, what it costs, and which pause or escalation rule it can trigger.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -102,6 +108,10 @@ The August 18 raw sources add migration acceptance, production-defect, and secur
 - Treat large agent-assisted migrations as acceptance-gate programs with baselines, tests, review approvals, and post-change evidence.
 - Verify agentic security-review pipelines across context collection, specialized review, finding prioritization, expert validation, remediation, and re-verification.
 - Use production incident and defect-escape signals to tune review and test depth for AI-generated code without overgeneralizing beyond the sampled source evidence.
+- Place evals across release, CI, sampled production traffic, and human review so healthy infrastructure metrics do not hide task-wrong AI behavior.
+- Use deterministic checks broadly, and reserve LLM judges or human domain reviewers for ambiguous, costly, high-risk, or policy-sensitive cases.
+- Convert trace spans, tool-call edges, sandbox events, business-rule verdicts, authorization decisions, cost, latency, and pause events into reusable eval cases.
+- Check generated or adapted code against behavior policy before execution when the risk is destructive, networked, production-facing, or credential-adjacent.
 
 ## Authoritative Sources
 
@@ -143,6 +153,8 @@ The August 18 raw sources add migration acceptance, production-defect, and secur
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 
 ## Related Code
 
@@ -195,3 +207,4 @@ The August 18 raw sources add migration acceptance, production-defect, and secur
 - Maintained on 2026-08-05 with trace-driven agent improvement loops and coding-harness telemetry evidence.
 - Maintained on 2026-08-07 with LLM observability quality-gate routing and reusable skill-eval evidence.
 - Maintained on 2026-08-18 with migration acceptance, agentic security-review pipeline, and AI-generated-code production-defect signals.
+- Maintained on 2026-08-22 with layered production evals, graph-edge evidence, structured-output gates, sandbox controls, and trace-to-eval inputs.

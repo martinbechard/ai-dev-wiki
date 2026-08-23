@@ -16,6 +16,7 @@ This topic owns local operating rules and risk patterns. Provider security annou
 - [sensitive-data-and-supply-chain-controls.md](sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.
 - [ai-assisted-security-repair-gates.md](ai-assisted-security-repair-gates.md) records validation, maintainer consultation, patching, tests, CI, and disclosure gates for agent-assisted security work.
 - [destructive-command-controls.md](destructive-command-controls.md) records destructive shell command detection, path containment, denial reasons, explicit approval, and recovery evidence.
+- [execution-edge-authorization.md](execution-edge-authorization.md) records edge-level authorization for model-to-tool, agent-to-agent, user-to-agent, connected-app, database, sandbox, and paid-service actions.
 - [prototype-to-cloud-promotion-gates.md](prototype-to-cloud-promotion-gates.md) records the security boundary between local prototypes and hosted, shared, or data-bearing software.
 
 ## Authoritative Sources
@@ -59,3 +60,4 @@ This topic owns local operating rules and risk patterns. Provider security annou
 - Maintained on 2026-06-23 to add security repair and prototype promotion gates from public AI-assisted development security sources.
 - Maintained on 2026-06-24 to add lifecycle review gates and delegated-authority controls from public practice sources.
 - Maintained on 2026-07-17 to add destructive command controls for terminal and workflow agents.
+- Maintained on 2026-08-22 to add execution-edge authorization as a durable governance leaf.

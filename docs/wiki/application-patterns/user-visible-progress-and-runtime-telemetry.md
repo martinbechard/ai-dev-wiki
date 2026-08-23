@@ -55,6 +55,12 @@ The August 21 sources add collaborative-channel and event-subscription telemetry
 - The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) records event subscriptions, long-lived goals, and non-interrupting steering.
 - Locally, progress surfaces should show channel-visible draft state, event source, steering changes, active goal, approval waits, and handoff status without treating visibility as proof of correctness.
 
+The August 22 raw sources add execution-edge telemetry:
+
+- The [topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) records shared-channel coding-agent sessions, database-agent traces, layered production evals, and billable agent actions.
+- The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) records trust receipts, append-only verdict logs, OpenTelemetry-style GenAI conventions, memory writes, connected-app actions, sandbox events, and graph-edge evidence.
+- Locally, runtime telemetry should join progress, authority, spend, memory, connected-app, and eval evidence by session so a reviewer can inspect not only what happened, but who or what authorized each edge.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -88,6 +94,9 @@ The August 21 sources add collaborative-channel and event-subscription telemetry
 - Show side-channel questions, queued prompts, queued shell commands, approval-pending metadata, rewind points, service-health state, build status, build logs, commit SHA, run-to-build mapping, and purpose-baseline deviations when they affect review or acceptance.
 - Join session records, retained eval data, milestone checks, action-level controls, spend attribution, budgets, behavior baselines, activity logs, memory-object inspections, and recovery evidence when an agent can continue or act across systems.
 - Show channel-visible intermediate work, event subscriptions, active goals, steering events, approval waits, and handoff status for collaborative or long-running coding-agent workflows.
+- Join shared-channel messages, integration identity, repository permission checks, sandbox policy, budget owner, generated pull request, and extra approval state for chat-started coding-agent work.
+- Record memory writes, connected-app access, trust receipts, append-only verdict logs, sandbox events, graph-edge authorization, and downstream log links when they influence an agent's behavior or accountability.
+- Use common trace vocabulary for model, retrieval, tool, gateway, human approval, cost, latency, and eval events so runtime evidence can be reused in trajectory-level evaluation.
 
 ## Authoritative Sources
 
@@ -119,6 +128,8 @@ The August 21 sources add collaborative-channel and event-subscription telemetry
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 
 ## Related Code
 
@@ -166,3 +177,4 @@ The August 21 sources add collaborative-channel and event-subscription telemetry
 - Maintained on 2026-08-14 with side-channel question, queued-work, approval-pending, rewind, service-health, build-status, commit-SHA, run-to-build, and purpose-baseline telemetry.
 - Maintained on 2026-08-15 with session-record, eval-retention, milestone-check, action-control, spend-attribution, behavior-baseline, memory-inspection, and recovery telemetry.
 - Maintained on 2026-08-21 with channel-visible intermediate work, event-subscription, active-goal, steering-event, approval-wait, and handoff-status telemetry.
+- Maintained on 2026-08-22 with execution-edge telemetry for shared channels, database traces, billable actions, trust receipts, memory writes, connected apps, sandbox events, and reusable trace vocabulary.

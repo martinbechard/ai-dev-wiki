@@ -70,6 +70,16 @@ The August 15 raw sources reinforce controls as enforceable runtime architecture
 
 The August 17 topic news collector adds defensive-security and local-sandbox evidence. Security agents should receive approved access to codebases, infrastructure configuration, documentation, CI checks, security playbooks, and prioritized backlog targets rather than broad unconstrained autonomy. Local coding-agent sandboxes should deny host credentials, commits, pushes, installs, and sensitive remote capabilities by environment policy when those actions are outside the approved workflow.
 
+The August 22 raw sources reinforce governance as runtime architecture rather than policy prose:
+
+- [Shared-channel agent sessions](../agent-workflows/shared-channel-agent-sessions.md) own chat-visible steering, repository permission checks, integration identity, sandbox billing, and extra pull-request approvals.
+- [Governed database agent access](../retrieval-and-tools/governed-database-agent-access.md) owns database-agent insider risk, governed semantic layers, saved connections, audit trails, and isolated writes.
+- [Execution edge authorization](execution-edge-authorization.md) owns graph-edge authorization, paid agent actions, connected-app action gates, memory-write authority, sandbox pause criteria, and trust receipts.
+- [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md) own layered release, CI, sampled-production, deterministic, LLM-judge, and human-review evaluation placement.
+- [Prompt injection and untrusted content](prompt-injection-and-untrusted-content.md) owns hidden document carriers, persistent memory poisoning, malicious links, connected-app injection, and paid-action screening.
+
+The local synthesis from the [topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) is that controls are credible when authorization, spend limits, memory writes, connected-app actions, runtime traces, and pause or approval decisions are enforced outside the model and joined to the delegated human or workflow.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -128,6 +138,8 @@ The August 17 topic news collector adds defensive-security and local-sandbox evi
 - Pause or hold high-capability agent work when containment evidence, network/tool restrictions, monitoring, or detection coverage is not strong enough for the task risk.
 - Treat browser-agent identity, proxy, captcha, and authenticated-session features as governed controls before agents can operate against external websites.
 - Require model-enable evidence, runtime cost attribution, scoped credentials, egress policy, retained session records, memory inspection, repository-package provenance, and semantic CI or deployment gates when agents can run long-lived or cross-system work.
+- Treat team chat, connected apps, semantic layers, database tools, agent wallets, and cloud sandboxes as execution edges that need independent authorization and trace evidence.
+- Route mandate evidence, spend caps, memory writes, connected-app actions, graph evidence, and sandbox pause criteria through [execution edge authorization](execution-edge-authorization.md).
 
 ## Authoritative Sources
 
@@ -180,6 +192,8 @@ The August 17 topic news collector adds defensive-security and local-sandbox evi
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 
 ## Related Code
 
@@ -205,6 +219,7 @@ The August 17 topic news collector adds defensive-security and local-sandbox evi
 - [event-triggered agent workflows](../agent-workflows/event-triggered-agent-workflows.md)
 - [terminal agent workflows](../agent-workflows/terminal-agent-workflows.md)
 - [browser-agent runtime boundaries](../application-patterns/browser-agent-runtime-boundaries.md)
+- [execution edge authorization](execution-edge-authorization.md)
 
 ## Open Questions
 
@@ -240,3 +255,4 @@ The August 17 topic news collector adds defensive-security and local-sandbox evi
 - Maintained on 2026-08-09 with high-capability pause criteria and browser-agent identity, proxy, captcha, and authenticated-session controls.
 - Maintained on 2026-08-15 with admin model enablement, self-hosted factory controls, scoped access, memory quarantine, repository-package provenance, containment, and semantic acceptance-gate evidence.
 - Maintained on 2026-08-17 with defensive-security agent access and local coding-agent sandbox-denial evidence.
+- Maintained on 2026-08-22 with execution-edge authorization, spend-cap, memory-write, connected-app, sandbox-pause, and graph-evidence controls.

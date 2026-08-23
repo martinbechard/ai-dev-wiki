@@ -19,6 +19,7 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [persistent-agent-workspaces.md](persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
 - [event-triggered-agent-workflows.md](event-triggered-agent-workflows.md) records governed triggers, allowed actions, approval handoffs, and run evidence.
 - [terminal-agent-workflows.md](terminal-agent-workflows.md) records terminal-session scope, command-risk controls, denial reasons, approval handoffs, and session evidence.
+- [shared-channel-agent-sessions.md](shared-channel-agent-sessions.md) records chat-visible coding-agent sessions, steering evidence, permission checks, spend routing, and merge approval controls.
 
 ## Authoritative Sources
 
@@ -31,6 +32,7 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [federation.md](../federation.md)
+- [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 
 ## Related Code
 
@@ -62,3 +64,4 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - Maintained on 2026-07-17 to add separate event-triggered and terminal agent workflow controls.
 - Maintained on 2026-07-30 with supervised cross-environment handoffs as a durable leaf.
 - Maintained on 2026-08-05 with terminal-native agent fleet orchestration as a durable leaf.
+- Maintained on 2026-08-22 with shared-channel agent sessions as a durable leaf for chat-visible coding-agent work.

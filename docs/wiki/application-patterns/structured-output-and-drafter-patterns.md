@@ -25,6 +25,12 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Provider-native structured output or tool-call schemas do not remove deterministic validators.
 - Refusal handling, truncation handling, and post-validation authorization checks remain harness responsibilities.
 
+The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) sharpens the same contract with a source-carrier boundary:
+
+- Valid JSON, schema-conforming objects, business-valid objects, and authorized actions are separate gates.
+- Source artifacts such as PDFs, filings, resumes, connected-app records, or hidden formatted text can carry machine-readable instructions a human reviewer may not see.
+- Structured extraction should preserve provenance, hidden-content inspection state, refusal or retry state, and downstream authorization evidence before an artifact becomes an action.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -40,6 +46,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Use structured extraction and drafting to preserve source attribution and reviewable fields rather than hiding uncertain generation behind prose.
 - Keep citations, confidence fields, refusal states, and partial-output markers in generated records when enterprise workflows require review or retry.
 - Separate syntactic JSON validity, schema conformance, business invariants, and authorization; do not let provider schema features stand in for domain validation or tool-permission gates.
+- Inspect source artifacts for hidden, formatted, copied, or machine-readable instruction content before structured extraction results can trigger writes, publication, email, commits, or connected-app actions.
+- Preserve provenance, validation stage, business-rule verdict, authorization state, retry count, and refusal or truncation handling as fields that downstream code can audit.
 
 ## Authoritative Sources
 
@@ -52,6 +60,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 
 ## Related Code
 
@@ -83,3 +92,4 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Maintained on 2026-07-22 with structured-output validation contracts, recovery handling, provenance fields, and deterministic downstream checks.
 - Maintained on 2026-07-24 with citation, confidence, refusal-state, partial-output, review, and retry guidance.
 - Maintained on 2026-08-21 with layered JSON, schema, business-validation, refusal, truncation, and authorization gates.
+- Maintained on 2026-08-22 with hidden source-carrier inspection, provenance, validation-stage, and authorization-state evidence.

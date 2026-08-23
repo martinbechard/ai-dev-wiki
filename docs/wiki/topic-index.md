@@ -46,6 +46,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [agent-workflows/persistent-agent-workspaces.md](agent-workflows/persistent-agent-workspaces.md) records continuity, step verification, and oversight practice for long-running agent work.
 - [agent-workflows/event-triggered-agent-workflows.md](agent-workflows/event-triggered-agent-workflows.md) records governed triggers, allowed actions, approval handoffs, and run evidence.
 - [agent-workflows/terminal-agent-workflows.md](agent-workflows/terminal-agent-workflows.md) records terminal-session scope, command-risk controls, denial reasons, approval handoffs, and session evidence.
+- [agent-workflows/shared-channel-agent-sessions.md](agent-workflows/shared-channel-agent-sessions.md) tracks chat-visible coding-agent sessions, steering evidence, permission checks, spend routing, and merge approval controls.
 - [coding-practices/index.md](coding-practices/index.md) is the hub for TDD, review, regression repair, and refactoring generated code.
 - [coding-practices/ai-assisted-tdd.md](coding-practices/ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
 - [coding-practices/intelligent-code-review.md](coding-practices/intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
@@ -97,6 +98,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [governance-and-risk/sensitive-data-and-supply-chain-controls.md](governance-and-risk/sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.
 - [governance-and-risk/ai-assisted-security-repair-gates.md](governance-and-risk/ai-assisted-security-repair-gates.md) records validation, maintainer consultation, patching, tests, CI, and disclosure gates for agent-assisted security work.
 - [governance-and-risk/destructive-command-controls.md](governance-and-risk/destructive-command-controls.md) records destructive shell command risk detection, denial reasons, run-record evidence, and upstream routing for broader shell-command safety controls.
+- [governance-and-risk/execution-edge-authorization.md](governance-and-risk/execution-edge-authorization.md) records edge-level authorization for model-to-tool, agent-to-agent, user-to-agent, connected-app, database, sandbox, and paid-service actions.
 - [governance-and-risk/prototype-to-cloud-promotion-gates.md](governance-and-risk/prototype-to-cloud-promotion-gates.md) records the promotion boundary for local prototypes that become hosted, shared, or data-bearing software.
 - [adoption-and-operating-model/index.md](adoption-and-operating-model/index.md) is the hub for team rollout, operating agreements, workflow selection, and human acceptance.
 - [adoption-and-operating-model/adoption-operating-agreements.md](adoption-and-operating-model/adoption-operating-agreements.md) maps the local operating agreements and links the detailed leaves.
