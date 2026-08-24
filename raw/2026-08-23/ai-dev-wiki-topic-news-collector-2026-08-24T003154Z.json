@@ -1,0 +1,397 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-24T00:31:54Z",
+  "run_timestamp_local": "2026-08-23T20:31:54-0400",
+  "cutoff_window": {
+    "basis": "strict 48-hour public-source window relative to run_timestamp_utc",
+    "start_utc": "2026-08-22T00:31:54Z",
+    "end_utc": "2026-08-24T00:31:54Z",
+    "included_visible_dates": [
+      "2026-08-22",
+      "2026-08-23"
+    ],
+    "excluded_date_policy": "Missing, ambiguous, future-dated, boundary-only, and visibly older-than-window dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_wiki_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_owned_lens": [
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ]
+  },
+  "search_queries": [
+    "AI coding agent evaluation harness structured outputs permissions approvals audit logs MCP practice updated Aug 23 2026",
+    "context engineering coding agents instructions durable agent workflows Aug 23 2026",
+    "AI code review checks regression repair TDD coding agent prompts Aug 23 2026",
+    "MCP governed tool calls approvals package install risk coding agents Aug 23 2026",
+    "\"August 23, 2026\" \"coding agents\" \"approval\"",
+    "\"August 23, 2026\" \"MCP\" \"agents\" \"approval\"",
+    "\"August 22, 2026\" \"coding agents\" \"context\" \"workflow\"",
+    "\"August 23, 2026\" \"AI code review\" \"coding agents\"",
+    "\"August 22, 2026\" \"AI coding agents\" \"governance\"",
+    "\"August 23, 2026\" \"agent workflows\" \"coding agents\"",
+    "\"August 23, 2026\" \"context engineering\" \"coding agents\"",
+    "\"Slack Code\" \"AI coding agents\" \"automatic archiving\""
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Project context comparisons foreground delivery evidence and approval controls",
+      "source_url": "https://ones.com/blog/tool-guide/tools-connecting-coding-agents-with-project-context-2026-recommendations/?primary_category=tool-guide",
+      "source_name": "ONES.com",
+      "visible_date": "August 23, 2026",
+      "visible_date_kind": "published",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The article compares coding-agent context tools by repository context, workflow fit, human-agent collaboration, safety controls, delivery integration, and deployment governance. It recommends controlled pilots with shared context, defined approval points, and outcome comparison against existing process.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces that project context is not just code retrieval; AI-assisted delivery needs requirements, tasks, reviews, evidence, approvals, and workflow state connected before scaling agent use.",
+      "named_entities": [
+        "ONES.com",
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "Amazon Q Developer",
+        "Sourcegraph Cody",
+        "ONES Assistant",
+        "ONES Workflow Agent"
+      ],
+      "upstream_owned_entities": [
+        "ONES.com",
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "Amazon Q Developer",
+        "Sourcegraph Cody"
+      ],
+      "local_practice_implication": "Route product comparisons upstream; locally retain the evaluation dimensions for context architecture, adoption pilots, approval boundaries, and source-workflow evidence.",
+      "follow_up_notes": "Consider future ingest into project-context evaluation criteria, not as product encyclopedia coverage."
+    },
+    {
+      "title": "AI code review is framed as first-pass evidence, not approval",
+      "source_url": "https://aq.dev/guides/what-ai-code-review-can-and-cannot-catch/",
+      "source_name": "AQ",
+      "visible_date": "Published August 23, 2026",
+      "visible_date_kind": "published",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The guide says AI review is useful for source-visible defects such as mechanical bugs, vulnerability patterns, cross-file inconsistencies, and logic slips, but cannot reliably catch runtime behavior, unreachable configuration paths, unstated intent mismatches, or shared-model blind spots.",
+      "why_it_matters_for_ai_assisted_development_practice": "It provides a practice boundary for AI code review: treat AI review output as evidence, then verify changed behavior through execution, test output, real entry points, and human intent review.",
+      "named_entities": [
+        "AQ",
+        "CodeRabbit",
+        "Greptile",
+        "Cursor Bugbot",
+        "GitHub Copilot code review",
+        "Coldcard",
+        "Claude Code",
+        "OpenAI Codex"
+      ],
+      "upstream_owned_entities": [
+        "AQ",
+        "CodeRabbit",
+        "Greptile",
+        "Cursor",
+        "GitHub Copilot",
+        "Coldcard",
+        "Claude Code",
+        "OpenAI Codex"
+      ],
+      "local_practice_implication": "Local pages can use the static-versus-runtime review boundary and session-transcript evidence pattern while routing product details upstream.",
+      "follow_up_notes": "Candidate support for intelligent code review, verification loops, and user-visible progress or runtime evidence pages."
+    },
+    {
+      "title": "Enterprise agent evaluation criteria emphasize traceability and real-codebase trials",
+      "source_url": "https://7t.ai/blog/ai-oding-agents-for-enterprise-development-7tt/",
+      "source_name": "7T",
+      "visible_date": "August 22, 2026",
+      "visible_date_kind": "published",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "The article proposes evaluating AI coding agents for production readiness across code generation, debugging, testing, documentation, workflow orchestration, and integration. It calls out audit logs, access controls, reviewer attribution, code ownership, CI/CD integration, and representative trials on the actual codebase.",
+      "why_it_matters_for_ai_assisted_development_practice": "It supports a durable adoption rule: agent procurement or rollout should measure delivery-system fit and governance evidence, not demo output volume or benchmark claims alone.",
+      "named_entities": [
+        "7T",
+        "Microsoft",
+        "LinkedIn",
+        "VentureBeat",
+        "Faros AI"
+      ],
+      "upstream_owned_entities": [
+        "7T",
+        "Microsoft",
+        "LinkedIn",
+        "VentureBeat",
+        "Faros AI"
+      ],
+      "local_practice_implication": "Keep the local lens on rollout criteria, traceability, and representative workflow trials; route company and research-provider background upstream.",
+      "follow_up_notes": "Potential source for AI development partner selection and human-agent approval boundaries."
+    },
+    {
+      "title": "Browser-testing agent comparisons distinguish capability from review proof",
+      "source_url": "https://omidsaffari.com/blog/best-ai-coding-agents-with-browser-testing-2026",
+      "source_name": "Omid Saffari",
+      "visible_date": "Sunday, August 23, 2026",
+      "visible_date_kind": "published",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The guide ranks browser-testing coding agents by where the agent runs, what state it can access, and whether screenshots, recordings, or reproducible failure reports reach reviewers. It explicitly separates browser control as a capability from proof delivered into the workflow.",
+      "why_it_matters_for_ai_assisted_development_practice": "The distinction is useful for verification design: test automation should produce inspectable evidence attached to the issue, PR, or review surface, not just claim that a browser task ran.",
+      "named_entities": [
+        "Linear Agent",
+        "Claude Code",
+        "Cursor",
+        "Devin",
+        "OpenAI Codex",
+        "GitHub Copilot",
+        "Replit Agent"
+      ],
+      "upstream_owned_entities": [
+        "Linear Agent",
+        "Claude Code",
+        "Cursor",
+        "Devin",
+        "OpenAI Codex",
+        "GitHub Copilot",
+        "Replit Agent"
+      ],
+      "local_practice_implication": "Use as a verification-pattern signal for evidence-carrying browser checks; route product rankings and price details upstream.",
+      "follow_up_notes": "Candidate support for verification loops, acceptance gates, and runtime telemetry pages."
+    },
+    {
+      "title": "Developer learning guidance shifts from syntax to review, debugging, and direction",
+      "source_url": "https://explainx.ai/blog/microsoft-learn-still-worth-learning-to-code-tweet-backlash-august-2026",
+      "source_name": "explainx.ai",
+      "visible_date": "Aug 23, 2026",
+      "visible_date_kind": "published",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The article argues that in AI-assisted development, the learning floor has shifted from manually writing syntax to reading diffs critically, debugging, writing tests that catch agent misses, and understanding system design well enough to direct generated work.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a team-adoption signal: training and junior learning paths should emphasize comprehension, verification, and architectural judgment rather than prompt-only fluency.",
+      "named_entities": [
+        "explainx.ai",
+        "Microsoft Learn",
+        "Anthropic",
+        "Andrew Ng"
+      ],
+      "upstream_owned_entities": [
+        "explainx.ai",
+        "Microsoft Learn",
+        "Microsoft",
+        "Anthropic",
+        "Andrew Ng"
+      ],
+      "local_practice_implication": "Keep local coverage focused on adoption and learning-path implications; route public debate and entity background upstream.",
+      "follow_up_notes": "Potential source for junior learning paths and intelligent code review skill expectations."
+    },
+    {
+      "title": "Agent execution news highlights systems over model choice",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/2026-august",
+      "source_name": "AI Agent Store",
+      "visible_date": "Sunday, August 23, 2026",
+      "visible_date_kind": "dated daily update section",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "The August 23 daily update reports protocol and platform news, but its local practice signal is that long-horizon agent reliability depends on memory, tool use, feedback, supervision, governance, and execution environment rather than model capability alone.",
+      "why_it_matters_for_ai_assisted_development_practice": "The collector should not duplicate protocol or company coverage, but the execution-loop framing supports local guidance on harness architecture, supervision, and governed tool use.",
+      "named_entities": [
+        "Google A2A",
+        "Agentic AI Foundation",
+        "Model Context Protocol",
+        "AWS Bedrock AgentCore",
+        "Gemini Enterprise",
+        "Snowflake CoCo Automations",
+        "NotebookLM Enterprise",
+        "Google Agent Development Kit"
+      ],
+      "upstream_owned_entities": [
+        "Google",
+        "A2A",
+        "Agentic AI Foundation",
+        "Model Context Protocol",
+        "AWS Bedrock AgentCore",
+        "Gemini Enterprise",
+        "Snowflake CoCo Automations",
+        "NotebookLM Enterprise",
+        "Google Agent Development Kit"
+      ],
+      "local_practice_implication": "Record only the systems-practice implication locally; route protocol, product, and standards-organization updates to the upstream AI wiki.",
+      "follow_up_notes": "If ingested, use as a routing/federation example rather than as broad ecosystem coverage."
+    },
+    {
+      "title": "Agentic engineering stack guide separates toolchain layers and observability costs",
+      "source_url": "https://vibecoding.app/blog/agentic-engineering-tools",
+      "source_name": "vibecoding.app",
+      "visible_date": "Last verified August 23, 2026",
+      "visible_date_kind": "verified updated",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The guide organizes agentic engineering tools into layers, including coding agents, orchestration frameworks, data and memory, and observability/evaluation. It says observability and evaluation are often under-budgeted and needed quickly after adoption begins.",
+      "why_it_matters_for_ai_assisted_development_practice": "The stack-layer framing supports local adoption planning: teams should budget for traces, evaluation, memory/retrieval, and operating visibility as part of the first rollout, not as a later add-on.",
+      "named_entities": [
+        "vibecoding.app",
+        "LlamaCloud",
+        "LangSmith",
+        "LangGraph",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "vibecoding.app",
+        "LlamaCloud",
+        "LangSmith",
+        "LangGraph",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Use only the stack-budgeting and observability/eval practice lens locally; route product pricing and tool background upstream.",
+      "follow_up_notes": "Candidate support for harness sizing, observability quality gates, and agent-cost telemetry."
+    },
+    {
+      "title": "Agent skill directories keep expanding, raising skill governance pressure",
+      "source_url": "https://www.scriptbyai.com/claude-code-resource-list/",
+      "source_name": "ScriptByAI",
+      "visible_date": "August 23, 2026",
+      "visible_date_kind": "published or recent-resource date with changelog entry 08/23/2026",
+      "observed_at_utc": "2026-08-24T00:31:54Z",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The resource list shows a large and recently updated directory of Claude Code resources, agent skills, plugins, and repositories, with an 08/23/2026 changelog entry adding 13 agent skills and related resources.",
+      "why_it_matters_for_ai_assisted_development_practice": "Growing third-party skill directories increase the need to treat skills as executable instruction packages requiring provenance, review, approval, ownership, and risk controls before team adoption.",
+      "named_entities": [
+        "ScriptByAI",
+        "Claude Code",
+        "Codex",
+        "agent skills",
+        "MCP",
+        "SkillSpector",
+        "AGENTS.md"
+      ],
+      "upstream_owned_entities": [
+        "ScriptByAI",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol",
+        "SkillSpector"
+      ],
+      "local_practice_implication": "Do not duplicate the directory; locally capture only the governance implication for durable instructions, skill intake, and plugin approval workflows.",
+      "follow_up_notes": "Potential source for portable agent skills, durable instructions, and sensitive-data or supply-chain controls."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "How should teams implement human approval for high-risk MCP tool calls?",
+      "source_url": "https://nhimg.org/faq/how-should-teams-implement-human-approval-for-high-risk-mcp-tool-calls/",
+      "visible_date": "Updated August 21, 2026",
+      "reason": "Excluded because the visible update date is older than the strict 48-hour cutoff window."
+    },
+    {
+      "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway/",
+      "visible_date": "21 AUG 2026",
+      "reason": "Excluded because the visible publication date is older than the strict 48-hour cutoff window, despite strong local relevance."
+    },
+    {
+      "title": "AI Coding Agents Write the Code. Who Verifies It?",
+      "source_url": "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing",
+      "visible_date": "Aug 21, 2026",
+      "reason": "Excluded because the visible publication date is older than the strict 48-hour cutoff window."
+    },
+    {
+      "title": "Our AI Code Review Workflow, 7 Months Later",
+      "source_url": "https://spin.atomicobject.com/ai-code-review-workflow-7/",
+      "visible_date": "August 18, 2026",
+      "reason": "Excluded because the visible publication date is outside the two-day window."
+    },
+    {
+      "title": "Slack Code launch coverage from Salesforce and secondary outlets",
+      "source_url": "https://www.salesforce.com/introducing-slack-code/",
+      "visible_date": "Crawled today; source and related coverage indicate August 20-21, 2026 event timing",
+      "reason": "Excluded as a primary finding because the source event is older than the strict window and the topic is primarily upstream-owned product coverage. The practice signal may be revisited only through a qualifying dated practice source."
+    },
+    {
+      "title": "GitHub repository ai-boost/awesome-harness-engineering",
+      "source_url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "visible_date": "Search result reported 15 hours ago",
+      "reason": "Excluded because the opened page did not expose a stable visible publication or update date suitable for the artifact."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "exclusion_count": 6
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector artifact.",
+    "During later ingest, route upstream-owned entity updates to /Users/martinbechard/dev/ai-wiki/docs/wiki or record only local practice lenses.",
+    "Prioritize local synthesis around review evidence, context-delivery integration, governed tool access, browser-test proof, adoption learning paths, and skill-intake governance."
+  ]
+}
