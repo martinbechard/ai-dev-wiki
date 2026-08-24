@@ -1,0 +1,327 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-08-24T01:05:05Z",
+    "policy": "Only sources published or visibly updated within the last 7 days; ambiguous, future, missing, and boundary-only dates excluded.",
+    "start_utc": "2026-08-17T01:01:36Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ],
+      "id": "exadel-tdd-ai-coding",
+      "reason": "Topically relevant, but no clear page-visible publication or update date found in opened source.",
+      "source_url": "https://exadel.com/news/test-driven-development-ai-coding"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "id": "github-agentic-workflows-safe-outputs",
+      "reason": "Topically relevant docs for PR outputs, but opened page showed no visible publication or update date.",
+      "source_url": "https://github.github.com/gh-aw/reference/safe-outputs-pull-requests/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "id": "github-stacked-ai-prs-2026-08-04",
+      "reason": "Published 2026-08-04, outside the 7-day cutoff window.",
+      "source_url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "id": "mcp-agent-skills-2026-07-28",
+      "reason": "Published 2026-07-28, outside the 7-day cutoff window.",
+      "source_url": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-with-agent-skills"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "id": "honeycomb-token-cost-workflows-2026-07-29",
+      "reason": "Updated 2026-07-29, outside the 7-day cutoff window.",
+      "source_url": "https://www.honeycomb.io/resources/getting-started/how-to-track-token-cost-across-llm-workflows"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "id": "mintmcp-ai-agent-cost-2026-08-04",
+      "reason": "Published 2026-08-04, outside the 7-day cutoff window.",
+      "source_url": "https://www.mintmcp.com/blog/ai-agent-cost"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ],
+      "id": "createos-browser-sandboxes-2026-08-09",
+      "reason": "Published 2026-08-09, outside the 7-day cutoff window.",
+      "source_url": "https://createos.sh/blogs/browser-sandboxes-computer-use-agents"
+    }
+  ],
+  "federation_routing": "Broad ecosystem entity updates are upstream-owned by the AI wiki; this artifact preserves only local practice, workflow, governance, verification, adoption, and implementation implications.",
+  "follow_up_notes": [
+    "Do not update docs/wiki directly from this watcher artifact; route through normal raw-source ingest.",
+    "Verify search-result-only dates for TrueFoundry, A4BEE, and GoGloby during ingest before using them as strict-window evidence."
+  ],
+  "leaf_universe_count": 93,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "factual_summary": "GitHub described Copilot sessions in Slack and Microsoft Teams where shared conversations can plan, investigate, and hand off coding-agent work; Teams write access gates who can trigger code changes. Public reporting on Slack Code adds shared project channels, live previews, feedback, approvals, agent tabs, and existing Slack admin controls.",
+      "follow_up_note": "Ingest should check whether shared-channel pages need stronger language about channel-visible approvals, write-access gating, and admin-control evidence.",
+      "id": "github-copilot-shared-channel-sessions-2026-08-21",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "Slack Code",
+        "Claude Code",
+        "Devin",
+        "ChatGPT",
+        "Vercel Agent"
+      ],
+      "published_or_updated": "2026-08-21",
+      "source_urls": [
+        "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/",
+        "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+        "https://www.expresscomputer.in/news/ai-coding-gets-a-shared-workspace-with-slack-code/137964/"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "Anthropic Claude Code",
+        "Cognition Devin",
+        "OpenAI ChatGPT",
+        "Vercel Agent"
+      ],
+      "why_it_matters_for_leaf": "Reinforces the local rule that shared chat is a coordination and evidence surface, while repository permission, approval, billing, and audit boundaries remain separate authority gates."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "factual_summary": "TrueFoundry frames agent governance as a graph problem where designed architecture and executed graph differ; execution evidence comes from harness events, gateway traces, IAM records, and downstream logs. It also names MCP tools, skills, sandboxing, human checkpoints, context management, and session state as execution-loop components.",
+      "follow_up_note": "Route broad product coverage upstream; keep local implications around graph execution evidence, skills, context packages, and checkpoints.",
+      "id": "truefoundry-graph-engineering-2026-08-22",
+      "named_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "MCP",
+        "IAM"
+      ],
+      "published_or_updated": "search result visible date: 2 days before 2026-08-24 run",
+      "source_urls": [
+        "https://www.truefoundry.com/blog/graph-engineering-ai-agent-governance"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Model Context Protocol"
+      ],
+      "why_it_matters_for_leaf": "Supports edge-level authorization and artifact-boundary practice: diagrams and tool reachability are insufficient without executed-edge evidence and separately governed skills, tools, checkpoints, and state."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "factual_summary": "Express Computer argues that approved AI applications can become shadow AI when identity, feature set, integrations, data, purpose, or action capability changes inside ordinary workflows, including browser extensions, plug-ins, connectors, MCP servers, and embedded assistants.",
+      "follow_up_note": "Ingest should consider adding interaction-state checks to browser-runtime and sensitive-data control leaves.",
+      "id": "expresscomputer-approved-app-blind-spot-2026-08-21",
+      "named_entities": [
+        "Express Computer",
+        "IBM Cost of a Data Breach Report",
+        "MCP servers"
+      ],
+      "published_or_updated": "2026-08-21",
+      "source_urls": [
+        "https://www.expresscomputer.in/news/the-approved-app-blind-spot-when-sanctioned-ai-becomes-shadow-ai/137982/"
+      ],
+      "upstream_owned_entities": [
+        "IBM",
+        "Model Context Protocol"
+      ],
+      "why_it_matters_for_leaf": "Strengthens local practice that governance must follow interaction state, data path, identity, connectors, and agent actions rather than static app approval."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "TechRadar argues policies alone cannot govern AI systems that access data, applications, identities, infrastructure, and operational workflows; it recommends continuous capability identification, inherited-permission review, and business-impact-based controls.",
+      "follow_up_note": "Keep the local lens on operational governance controls and inherited permission review.",
+      "id": "techradar-governance-beyond-policy-2026-08-19",
+      "named_entities": [
+        "TechRadar",
+        "EU AI Act",
+        "PocketOS",
+        "Armis",
+        "ServiceNow"
+      ],
+      "published_or_updated": "2026-08-19",
+      "source_urls": [
+        "https://www.techradar.com/pro/ai-needs-rules-and-rails-why-governance-must-move-beyond-policy"
+      ],
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "TechRadar",
+        "Armis",
+        "ServiceNow"
+      ],
+      "why_it_matters_for_leaf": "Reinforces that approval boundaries and edge authorization require operational control evidence, not only written acceptable-use policy."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "factual_summary": "TechRadar argues AI-generated and AI-carried code needs behavior-policy checks before execution, because source, signature, or SBOM-style provenance can miss malicious runtime behavior.",
+      "follow_up_note": "Ingest should avoid duplicating broad AI-malware coverage and focus on execution-policy gates for local generated-code workflows.",
+      "id": "techradar-zero-trust-for-code-2026-08-18",
+      "named_entities": [
+        "TechRadar",
+        "Zero Trust for Code",
+        "AI malware"
+      ],
+      "published_or_updated": "2026-08-18",
+      "source_urls": [
+        "https://www.techradar.com/pro/ghosts-in-the-machine-ai-malware-shows-why-it-is-time-to-extend-zero-trust-to-code"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar"
+      ],
+      "why_it_matters_for_leaf": "Adds a local acceptance-gate implication: generated code and refactoring outputs need behavior and execution-policy evidence, not only provenance or static prechecks."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "factual_summary": "A public AI-generated code review policy post proposes risk tiers, human approval rules, security gates, and cost math for AI-generated changes.",
+      "follow_up_note": "If ingested, cite as practice evidence rather than as authoritative industry standard.",
+      "id": "omid-ai-generated-code-review-policy-2026-08-18",
+      "named_entities": [
+        "Omid Saffari"
+      ],
+      "published_or_updated": "2026-08-18",
+      "source_urls": [
+        "https://omidsaffari.com/blog/ai-generated-code-review-policy-2026"
+      ],
+      "upstream_owned_entities": [],
+      "why_it_matters_for_leaf": "Supports local review practice around risk-tiered review, explicit human approval, security gates, and review-cost accounting for AI-generated code."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "factual_summary": "A4BEE ties the EU AI Act high-risk enforcement date to agents that take actions in regulated settings, emphasizing that action-taking systems need designed governance rather than answer-only oversight.",
+      "follow_up_note": "Treat as routing evidence for high-risk action gates; verify primary regulatory citations during ingest.",
+      "id": "a4bee-high-risk-ai-agent-deadline-2026-08-19",
+      "named_entities": [
+        "A4BEE",
+        "EU AI Act"
+      ],
+      "published_or_updated": "search result visible date: 5 days before 2026-08-24 run",
+      "source_urls": [
+        "https://a4bee.com/article/ai-agents-eu-ai-act-ready/"
+      ],
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "A4BEE"
+      ],
+      "why_it_matters_for_leaf": "Reinforces local approval and acceptance-gate practice for regulated agent actions, while broad EU AI Act background remains upstream-owned."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "factual_summary": "GoGloby describes AI code refactoring as agent-assisted improvement of internal structure without behavior changes, targeting duplication, naming, oversized functions, dead dependencies, and module boundaries.",
+      "follow_up_note": "Verify page-visible publication date during ingest before treating it as strict-window evidence.",
+      "id": "gogloby-ai-code-refactoring-2026-08-19",
+      "named_entities": [
+        "GoGloby"
+      ],
+      "published_or_updated": "search result visible date: 5 days before 2026-08-24 run",
+      "source_urls": [
+        "https://gogloby.com/insights/ai-code-refactoring/"
+      ],
+      "upstream_owned_entities": [
+        "GoGloby"
+      ],
+      "why_it_matters_for_leaf": "Relevant to the local generated-code refactoring leaf as a current public framing of behavior-preserving refactor scope and review targets."
+    }
+  ],
+  "run_timestamp_local": "2026-08-23T21:05:05-0400",
+  "run_timestamp_utc": "2026-08-24T01:05:05Z",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://a4bee.com/article/ai-agents-eu-ai-act-ready/",
+    "https://createos.sh/blogs/browser-sandboxes-computer-use-agents",
+    "https://exadel.com/news/test-driven-development-ai-coding",
+    "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+    "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/",
+    "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+    "https://github.github.com/gh-aw/reference/safe-outputs-pull-requests/",
+    "https://gogloby.com/insights/ai-code-refactoring/",
+    "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-with-agent-skills",
+    "https://omidsaffari.com/blog/ai-generated-code-review-policy-2026",
+    "https://www.expresscomputer.in/news/ai-coding-gets-a-shared-workspace-with-slack-code/137964/",
+    "https://www.expresscomputer.in/news/the-approved-app-blind-spot-when-sanctioned-ai-becomes-shadow-ai/137982/",
+    "https://www.honeycomb.io/resources/getting-started/how-to-track-token-cost-across-llm-workflows",
+    "https://www.mintmcp.com/blog/ai-agent-cost",
+    "https://www.techradar.com/pro/ai-needs-rules-and-rails-why-governance-must-move-beyond-policy",
+    "https://www.techradar.com/pro/ghosts-in-the-machine-ai-malware-shows-why-it-is-time-to-extend-zero-trust-to-code",
+    "https://www.truefoundry.com/blog/graph-engineering-ai-agent-governance"
+  ]
+}
