@@ -25,6 +25,8 @@ The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-
 
 The August 10 raw sources add a distinction between prompt wording and context architecture. The [leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) frames context as data, permissions, retrieval, state, and workflow environment, while the [topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) connects SDLC gates, task slicing, and review separation to the context an agent receives. Local request packages should therefore include selected code, tests, dependencies, deployment constraints, permissions, source freshness, and lifecycle state without turning every available source into active context.
 
+The August 23 raw sources add project-context evaluation criteria. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) treats repository context, workflow fit, human-agent collaboration, safety controls, delivery integration, and deployment governance as evaluation dimensions for context-connected coding agents. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds executed-graph evidence for tools, skills, context, checkpoints, and session state. Locally, request packages should include the delivery evidence and approval points needed to prove the context was useful, not only the files the model read.
+
 ## Practice Boundaries
 
 - Start from the task, then select the smallest source set that can support the decision.
@@ -41,6 +43,8 @@ The August 10 raw sources add a distinction between prompt wording and context a
 - Include source authority, freshness, destructive-action approval requirements, and compact current decision state when a task may be resumed, compacted, or delegated.
 - Include selected code, tests, dependencies, deployment constraints, permissions, and lifecycle state when they are the context needed for the current agent step.
 - Keep builder and reviewer context packages separable so independent review is not conditioned by the same assumptions that generated the change.
+- Include task, requirement, review, approval, runtime, and delivery-state evidence when evaluating whether project-context tooling actually improves the workflow.
+- Preserve executed-graph evidence for which context, skills, tools, checkpoints, and state the agent used when that evidence affects governance or review.
 
 ## Authoritative Sources
 
@@ -55,6 +59,8 @@ The August 10 raw sources add a distinction between prompt wording and context a
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -86,3 +92,4 @@ The August 10 raw sources add a distinction between prompt wording and context a
 - Maintained on 2026-07-08 with sensitive-code runtime, network, credential, audit, approval, and setup-command request constraints.
 - Maintained on 2026-07-28 with source-authority, freshness, approval-token, and compact working-state guidance for production context contracts.
 - Maintained on 2026-08-10 with request-package guidance for permissions, retrieval, state, workflow context, and builder-reviewer separation.
+- Maintained on 2026-08-23 with project-context evaluation criteria and executed-graph evidence for context, skills, tools, checkpoints, and state.

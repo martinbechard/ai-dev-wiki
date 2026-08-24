@@ -67,6 +67,8 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 
 The August 20 raw sources add governed-skill, credential, and evidence-pack controls. The [topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) records skills, file APIs, browser action, sandbox execution, short-lived task-scoped credentials, and AI-review attribution limits; the [leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) records token-type revocation and sovereign-agent evidence packs. Locally, reusable skills, stored files, browser-control traces, token classes, signed receipts, and vendor transparency reports are sensitive or supply-chain surfaces until provenance, retention, scope, and auditability are explicit.
 
+The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) treats browser extensions, plug-ins, connectors, MCP servers, embedded assistants, and behavior-policed code execution as changing supply-chain surfaces even when the parent app is approved. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds public skill-directory growth as an intake risk. Locally, third-party skills, resource lists, plugins, generated code, and connected-app features remain untrusted until provenance, authority, tool scope, data path, runtime behavior, and owner approval are checked.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
@@ -125,6 +127,9 @@ The August 20 raw sources add governed-skill, credential, and evidence-pack cont
 - Review reusable skill folders, stored agent files, browser-control traces, code-execution sandboxes, and signed evidence packs for provenance, retention, data class, and authority before they enter a shared workflow.
 - Treat token-type revocation, affected-user notifications, and audit logs as sensitive incident evidence; keep credential values out of prompts and raw artifacts while preserving enough metadata for containment review.
 - Require vendor transparency reports or adoption metrics to state data collection scope, safety methodology, exclusions, and auditability before using them as supply-chain or governance evidence.
+- Reassess approved AI tools when connectors, plug-ins, browser extensions, MCP servers, embedded assistants, or action capabilities change the data path or side-effect surface.
+- Treat third-party skill directories and resource lists as discovery sources, not installation authority; review skill contents, owner, version, shell behavior, and allowed tools before import.
+- Require behavior-policy or execution-policy evidence before running AI-generated or AI-carried code when provenance, signature, or SBOM evidence cannot prove runtime intent.
 
 ## Authoritative Sources
 
@@ -173,6 +178,8 @@ The August 20 raw sources add governed-skill, credential, and evidence-pack cont
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -230,3 +237,4 @@ The August 20 raw sources add governed-skill, credential, and evidence-pack cont
 - Maintained on 2026-08-10 with runtime-containment controls and third-party QA skill import review guidance.
 - Maintained on 2026-08-13 with MCP transport-security, repository-skill provenance, live-data mutation, token-exchange, and prompt-retention controls.
 - Maintained on 2026-08-16 with agent-baiting, skill and MCP provenance, quarantine, constrained-permission, and public-contribution block guidance.
+- Maintained on 2026-08-23 with approved-app drift, skill-directory intake, behavior-policy, and AI-generated code execution controls.

@@ -75,6 +75,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Agent-generated pull requests should carry risk triage, validation evidence, guided change explanation, and human accountability.
 - The PR evidence package matters because the authoring session may not provide reliable intent on its own.
 
+The August 23 raw sources add a static-versus-runtime review boundary and policy-tier signal. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) frames AI review as useful first-pass evidence for source-visible defects, vulnerability patterns, cross-file inconsistencies, and logic slips, while runtime behavior, unreachable configuration paths, unstated intent, and shared-model blind spots still need tests, execution, and human intent review. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds risk tiers, explicit human approval, security gates, and review-cost accounting for AI-generated changes.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -144,6 +146,9 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Treat reported production incidents from AI-generated code as a signal to strengthen pre-merge tests, human review gates, and post-merge health checks rather than as a generic ban on generated code.
 - Preserve authorship, review participation, scanned scope, workflow-file scope, missed security-gate evidence, credential-rotation evidence, and patch timing before attributing an AI-assisted security flaw to generation or review failure.
 - Treat commit metadata, co-author trailers, and AI-review comments as weak attribution unless they are joined to tool traces, changed lines, scanned files, and remediation records.
+- Treat AI review as first-pass evidence for source-visible risks; require runtime checks, real entry points, tests, and human intent review for behavior that cannot be inferred from the diff.
+- Use risk-tiered review policy, security gates, and review-cost accounting when AI-generated changes vary by blast radius or reviewer burden.
+- Preserve session transcripts or tool traces when they explain what the reviewer saw, but do not let them replace independent validation of changed behavior.
 
 ## Authoritative Sources
 
@@ -191,6 +196,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -219,6 +226,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-23 with first-pass review boundaries, runtime-evidence requirements, risk-tiered policy, security gates, and review-cost accounting.
 - Maintained on 2026-07-23 with implementation-intent, invariant-register, deterministic-test, verifier-agent, provenance, and AI-generated-code security review guidance.
 - Maintained on 2026-08-18 with maintained AI-review workflow, adversarial source-review context, production-incident, and human-accountability signals.
 - Maintained on 2026-08-21 with repo-owned review standards and pull-request evidence requirements for agent-authored changes.

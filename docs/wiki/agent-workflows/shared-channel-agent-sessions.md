@@ -17,6 +17,8 @@ Shared channel agent sessions let teams start, steer, and review coding-agent wo
 
 This page owns the local workflow pattern. Broad GitHub Copilot, Slack, and Microsoft Teams product coverage belongs to the upstream AI wiki; locally, the durable rule is that shared chat is a coordination and evidence surface, not an authority source by itself.
 
+The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds a shared-workspace refinement. Channel-native coding agents can expose live previews, feedback, approvals, and task tabs beside ordinary chat, but the local control remains unchanged: channel visibility helps coordination and audit, while write access, repository permissions, approval authority, admin policy, and merge gates still need separate evidence.
+
 ## Practice Boundaries
 
 - Treat chat messages as steering evidence, not standalone authorization for repository writes, sandbox use, paid compute, or merges.
@@ -26,10 +28,12 @@ This page owns the local workflow pattern. Broad GitHub Copilot, Slack, and Micr
 - Route cloud-sandbox enablement, AI-credit use, separate sandbox billing, budget owner, and cost-center evidence through the same controls used for other delegated coding work.
 - Keep private context, secrets, credentials, and restricted repository data out of shared channels unless the repository and collaboration policy explicitly allow that exposure.
 - Link shared-channel sessions to [delegated coding handoffs](delegated-coding-handoffs.md) and [runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md) so later reviewers can reconstruct who asked for what, what changed, and which gates passed.
+- Treat channel-visible feedback, previews, and approval widgets as evidence inputs; require repository and admin-control records before accepting them as authorization for code changes.
 
 ## Authoritative Sources
 
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [GitHub Copilot shared Slack sessions changelog](https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/)
 - [GitHub Copilot shared Teams sessions changelog](https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
@@ -61,3 +65,4 @@ This page owns the local workflow pattern. Broad GitHub Copilot, Slack, and Micr
 ## Maintenance Notes
 
 - Created on 2026-08-22 from qualifying public-preview evidence for shared Slack and Microsoft Teams coding-agent sessions, keeping product-specific details upstream-owned.
+- Maintained on 2026-08-23 with shared-workspace feedback, preview, approval-widget, write-access, and admin-control evidence.

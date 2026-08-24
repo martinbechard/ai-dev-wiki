@@ -21,6 +21,8 @@ The [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-
 
 The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds a training-event signal. Agent workshops and hackathons should require participants to submit repositories and reviewable artifacts, not only demos, so juniors practice explaining agent choices, codebase health, verification evidence, and handoff quality under supervision.
 
+The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds learning-path evidence for AI-assisted development. Training should shift from syntax-only practice toward reading diffs critically, debugging, writing tests that catch agent misses, and understanding system design well enough to direct generated work.
+
 ## Practice Boundaries
 
 - Protect junior practice paths while using senior-led pods for high-leverage execution.
@@ -31,6 +33,7 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Pair broader agent permissions with supervised evidence that the developer can explain context selection, tool use, verification, and rollback.
 - Preserve junior debugging, simple-feature, review, and correction practice deliberately when agents absorb the easiest implementation tasks.
 - Use training events to practice repository evidence, codebase-health review, verification explanation, and supervised handoff rather than only demo delivery.
+- Teach critical diff reading, debugging, test design, and system-design explanation as core junior skills for directing and validating generated work.
 
 ## Authoritative Sources
 
@@ -39,6 +42,7 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 
 ## Related Code
 
@@ -68,3 +72,4 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Maintained on 2026-07-09 with staged developer learning from prompting through tool governance, RAG, agents, benchmarks, and guardrails.
 - Maintained on 2026-07-25 with explicit junior debugging, simple-feature, review, correction, and technical-judgment practice preservation.
 - Maintained on 2026-08-08 with training-event guidance for repository evidence, codebase-health review, verification explanation, and supervised handoff.
+- Maintained on 2026-08-23 with critical diff reading, debugging, agent-miss test design, and system-design explanation guidance.

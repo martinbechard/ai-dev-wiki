@@ -51,6 +51,8 @@ The [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-de
 
 The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) and [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) add goal-pursuit and review-capacity evidence. Agents can pursue objectives through loopholes or generate more candidate code than reviewers can absorb, so approval boundaries should define practical stop rules, revocable permissions, reviewer capacity, acceptable defect risk, and human-owned high-impact decisions before autonomy expands.
 
+The August 23 raw sources add shared-channel, code-review-policy, and regulated-action evidence. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) reinforces that AI review, project-context tools, and enterprise coding-agent trials should provide first-pass evidence, not approval. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds risk-tiered code-review policy, shared-channel write gating, inherited-permission review, and high-risk action gates. Locally, humans should approve intent, scope, risk tier, production or regulated action, and final acceptance even when the agent can plan, review, or act from a shared channel.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -90,6 +92,9 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Make tool approvals show tool identity, expected side effects, reasoning-effort or cost impact, fallback route, and audit-record fields when those factors change the approval decision.
 - Define practical stop rules, revocable permissions, reviewer-capacity limits, and acceptable defect-risk thresholds before agents pursue goals through longer autonomous loops.
 - Keep high-impact decisions human-owned when the agent can exploit workflow loopholes, trigger external actions, or overwhelm review capacity with generated candidates.
+- Treat AI review comments, project-context comparisons, browser-test results, and channel-visible approval widgets as evidence packages until a human accepts the specific risk tier and action.
+- Require explicit human approval for regulated, production, credential, dependency, or externally visible agent actions even when written policy or product controls already allow the tool.
+- Make shared-channel coding sessions expose who can trigger writes, who can approve, and which repository or admin policy enforced that boundary.
 
 ## Authoritative Sources
 
@@ -121,6 +126,8 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - [August 11 leaf update watch source](../../../raw/processed/2026-08-11/ai-dev-wiki-leaf-update-watch-2026-08-11T210210-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -170,3 +177,4 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Maintained on 2026-08-09 with ideation-first engineering cadence and asynchronous review-state approval boundaries.
 - Maintained on 2026-08-11 with untrusted issue/setup-file approval boundaries and tool-approval evidence for cost, fallback, and operating records.
 - Maintained on 2026-08-16 with goal-pursuit stop rules, revocable permissions, reviewer-capacity, defect-risk, and high-impact decision boundaries.
+- Maintained on 2026-08-23 with first-pass review evidence, shared-channel write gating, risk-tiered code review, and regulated-action approval boundaries.

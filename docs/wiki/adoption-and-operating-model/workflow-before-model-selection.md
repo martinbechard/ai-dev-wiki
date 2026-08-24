@@ -67,6 +67,8 @@ The August 14 raw sources add model-policy, plugin-supervision, environment-read
 
 The August 15 raw sources add rollout and self-hosting constraints. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records admin-gated coding-model availability, self-hosted software-factory deployment choices, file-backed planning packages, and runtime AI gateway controls. The [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) reinforces that production agent workflows need durable execution, scoped access, runtime containment, behavior baselines, and governance drills. Locally, workflow selection should decide model enablement, spend owner, execution location, inference route, egress policy, retained evidence, and first workflow before adopting a new agent or factory surface.
 
+The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds workflow-selection evidence from project-context, enterprise-agent, agent-news, and tool-stack sources. The reusable local signal is that long-horizon agent reliability depends on memory, tool use, feedback, supervision, governance, execution environment, observability, and evaluation budget, not model capability or product ranking alone.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -115,6 +117,7 @@ The August 15 raw sources add rollout and self-hosting constraints. The [topic n
 - Include review-capacity, AI-evaluation staffing, production-debugging ownership, audit-event design, operational-data exposure, persistent project state, managed-agent controls, and incident history before selecting a recurring agent workflow.
 - Treat administrator-off-by-default models, provider-billed routes, portable plugin management, queued work, pinned prompts, rewind recovery, prebuilt environments, prior-work history, provider status, repository/tool trust, and behavioral baselines as workflow-selection inputs before enabling a recurring agent route.
 - Treat new coding-model availability, self-hosted factory setup, file-backed planning packages, runtime gateways, durable execution, scoped access, and behavior baselines as workflow-selection inputs before expanding long-horizon agent delegation.
+- Budget memory, retrieval, tool governance, observability, evaluation, feedback, supervision, and execution-environment evidence as first-order workflow-selection inputs before comparing model capability.
 
 ## Authoritative Sources
 
@@ -161,6 +164,7 @@ The August 15 raw sources add rollout and self-hosting constraints. The [topic n
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 
 ## Related Code
 
@@ -217,3 +221,4 @@ The August 15 raw sources add rollout and self-hosting constraints. The [topic n
 - Maintained on 2026-08-13 with workforce-role, audit-harness, operational-data, persistent-project-state, managed-agent, workspace-identity, and incident-history workflow inputs.
 - Maintained on 2026-08-14 with model-policy, provider-billing, plugin-supervision, queued-work, pinned-prompt, rewind, environment-provenance, prior-work-history, provider-status, repository/tool-trust, and behavior-baseline workflow inputs.
 - Maintained on 2026-08-15 with model rollout, self-hosted factory setup, runtime gateway, durable-execution, scoped-access, evidence-retention, and behavior-baseline workflow inputs.
+- Maintained on 2026-08-23 with memory, tool-use, feedback, supervision, governance, execution-environment, observability, and evaluation-budget workflow-selection inputs.

@@ -41,6 +41,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Flake handling and feedback loops should be scaled before generation throughput increases.
 - Reviewable evidence matters more than generated lines or PR count.
 
+The August 23 raw sources add runtime-proof and policy-gate refinements. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) emphasizes that AI review, browser testing, enterprise agent trials, and toolchain layers should produce reviewable proof in the issue, pull request, or operating record. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds execution-policy gates for generated code, business-impact controls for governed AI systems, and high-risk action gates for regulated agent work.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -63,6 +65,9 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Require small reversible diffs, design-owner review, regression baselines, and measurement evidence when agent-assisted refactoring or optimization changes risk.
 - Measure defect escape, change failure, trust, deployed behavior, retries, tool-call traces, and recovery evidence before treating faster AI-assisted delivery as accepted work.
 - Treat user-flow verification, E2E capacity, flake handling, feedback loops, and reviewable evidence as scaling constraints for AI code factories and high-throughput agent workflows.
+- Require browser screenshots, recordings, reproducible failure reports, runtime traces, or policy-gate records to land in the review surface when the claim depends on executed behavior.
+- Gate generated or AI-carried code on behavior and execution-policy evidence when source provenance alone cannot prove runtime safety.
+- Treat regulated or business-impacting agent actions as acceptance-gate decisions requiring explicit risk class, approval evidence, execution trace, and rollback or escalation path.
 
 ## Authoritative Sources
 
@@ -87,6 +92,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -126,3 +133,4 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Maintained on 2026-08-16 with review-capacity planning, defect-risk tolerance, reversible-diff, baseline, and design-owner acceptance evidence.
 - Maintained on 2026-08-17 with release-tax, defect-escape, change-failure, trust, deployed-behavior, retry, trace, and recovery-evidence acceptance signals.
 - Maintained on 2026-08-21 with user-flow verification, E2E capacity, flake handling, feedback-loop, and reviewable-evidence scaling constraints.
+- Maintained on 2026-08-23 with browser-test proof, execution-policy, business-impact, and regulated-action gate evidence.

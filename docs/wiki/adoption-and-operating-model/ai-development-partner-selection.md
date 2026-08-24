@@ -17,6 +17,8 @@ Broad company, product, model, and framework comparisons remain upstream-owned. 
 
 The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) adds market evidence for sovereignty and signed governance receipts. Product and company background stays upstream-owned; locally, partner selection should ask whether a partner can prove customer-controlled execution, data masking, prompt-injection screening, model/tool/agent communication governance, customer-held encryption keys when required, and signed evidence packs rather than only claim regulated-sector readiness.
 
+The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds enterprise coding-agent trial criteria. A partner or platform proposal should be tested against the actual codebase and workflow for traceability, audit logs, access controls, reviewer attribution, code ownership, CI/CD integration, representative tasks, and delivery evidence rather than demo output volume.
+
 ## Selection Criteria
 
 - Workflow and business fit: the partner can map the actual user journey, failure modes, decision rights, and measurable outcome before proposing model or tool choices.
@@ -30,6 +32,7 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 - Operating economics: the cost model includes discovery, data work, model and tool use, evaluation, review, monitoring, support, and change.
 - Commercial trust: contracts should make IP, data use, exit paths, support obligations, and acceptance criteria explicit.
 - Sovereignty and evidence receipts: when regulated or sensitive work is in scope, the partner can show data-residency controls, customer-key options, masking logs, prompt-injection verdicts, tool-call governance, and signed compliance or evidence packs.
+- Enterprise rollout evidence: the partner can run representative codebase trials with traceability, audit logs, access controls, reviewer attribution, code ownership, CI/CD integration, and explicit delivery evidence.
 
 ## Pilot Evidence
 
@@ -39,6 +42,7 @@ A selection pilot should use representative tasks and data, include expected fai
 
 - [Partner-selection query fragment](../../../raw/processed/query/2026-08-20-ai-software-development-partner-selection.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [Workflow before model selection](workflow-before-model-selection.md)
 - [Adoption operating agreements](adoption-operating-agreements.md)
 - [Agent cost telemetry](agent-cost-telemetry.md)
@@ -74,3 +78,4 @@ A selection pilot should use representative tasks and data, include expected fai
 
 - Created on 2026-08-20 from the partner-selection query fragment as a durable procurement and operating-model rubric.
 - Maintained on 2026-08-20 with sovereignty, customer-controlled execution, prompt-injection verdict, governance-receipt, and evidence-pack criteria.
+- Maintained on 2026-08-23 with real-codebase trial, traceability, audit, attribution, code-ownership, and CI/CD integration criteria.

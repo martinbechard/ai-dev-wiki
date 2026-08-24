@@ -31,6 +31,8 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds bounded-refactoring evidence. AI refactoring should stay reversible, measured, and separate from architecture or business-rule decisions unless a design owner explicitly accepts that scope. Useful metrics include baseline code health, risk, regression results, delivery impact, and whether the diff remains small enough to review.
 
+The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds behavior-preserving refactor scope and execution-policy evidence. Refactoring generated code should target duplication, naming, oversized functions, dead dependencies, and module boundaries without changing behavior unless the task explicitly authorizes that design change. When generated or AI-carried code might execute, provenance checks should be paired with behavior or execution-policy gates because signatures and SBOM-style evidence do not prove runtime behavior.
+
 ## Practice Boundaries
 
 - Refactor generated code toward the repository's existing patterns before treating it as finished.
@@ -51,6 +53,8 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Require architecture, workload, optimization, portability, and regression evidence before accepting generated systems or performance-sensitive infrastructure code.
 - Separate semantic edits from formatting churn before review when generated code has been reformatted or mechanically rewritten.
 - Keep AI refactoring reversible and bounded by baseline metrics, regression checks, delivery-risk evidence, and design-owner review when architecture or business rules could change.
+- Target structure improvements such as duplication, naming, oversized functions, dead dependencies, and module boundaries while preserving behavior unless a design owner approves broader change.
+- Pair generated-code refactoring with execution-policy gates when the output can run scripts, change dependencies, or alter runtime behavior in ways static provenance cannot prove.
 
 ## Authoritative Sources
 
@@ -63,6 +67,7 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -103,3 +108,4 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Maintained on 2026-08-04 with generated systems-code architecture, optimization, portability, and regression evidence requirements.
 - Maintained on 2026-08-05 with semantic-versus-formatting separation for AI-generated commits.
 - Maintained on 2026-08-16 with reversible refactoring, baseline metrics, regression checks, delivery-risk evidence, and design-owner review.
+- Maintained on 2026-08-23 with behavior-preserving refactor scope and execution-policy evidence for AI-generated code.

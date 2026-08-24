@@ -41,6 +41,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Platform-specific coding-agent skills can package service constraints, guardrails, and verification steps for prototypes.
 - Locally, both should remain inspectable, source-controlled, owner-reviewed instruction artifacts rather than hidden vendor configuration.
 
+The August 23 raw sources add skill-intake pressure. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) records public skill-directory growth, and the [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) treats skills as part of the execution graph beside MCP tools, checkpoints, context, and session state. Locally, durable skills should enter team use through a reviewed intake path with owner, source snapshot, compatibility target, tool scope, verification steps, and retirement criteria.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -66,6 +68,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Keep root instruction files short enough to route agents to project rules, hooks, worktree boundaries, eval gates, and verification expectations without duplicating the durable wiki or every reusable skill.
 - Treat plan-mode prompts, hooks, and eval commands as maintained instruction surfaces when they shape recurring agent behavior or acceptance gates.
 - Store AI review standards and platform-specific guardrail skills as versioned, owner-reviewed instruction artifacts with verification steps and service constraints visible to reviewers.
+- Promote third-party skills only after intake records name the owner, source snapshot, compatibility target, allowed tools, verification steps, and retirement criteria.
+- Treat skill loading, skill updates, and skill retirement as execution-graph changes when they affect what an agent can do or how completion is verified.
 
 ## Authoritative Sources
 
@@ -85,6 +89,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -127,3 +133,4 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Maintained on 2026-08-12 with prompt-debt auditing and progressive-disclosure cleanup as durable instruction maintenance.
 - Maintained on 2026-08-20 with root instruction, plan-mode, hook, worktree, and eval routing evidence from startup operating-practice signals.
 - Maintained on 2026-08-21 with repo-versioned review standards and platform-specific guardrail skill packaging.
+- Maintained on 2026-08-23 with third-party skill intake, execution-graph, owner, compatibility, tool-scope, verification, and retirement criteria.

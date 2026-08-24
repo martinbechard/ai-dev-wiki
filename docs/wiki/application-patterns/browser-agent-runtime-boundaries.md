@@ -17,6 +17,8 @@ Stagehand-style natural-language browser automation and generated browser steps 
 
 The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) adds runtime-containment evidence for autonomous agents. Browser agents should not rely only on prompt filtering or authenticated identity; the runtime needs behavioral supervision, least-privilege grants, sandboxing, egress controls, function-level capabilities, continuous monitoring, escalation paths, and kill switches when browser actions can affect real systems.
 
+The August 23 raw sources add two boundary refinements. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) separates browser-control capability from review proof: screenshots, recordings, and reproducible failure reports need to land in the issue, pull request, or review surface. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds approved-app drift: browser extensions, plug-ins, connectors, and embedded assistants can turn ordinary workflows into action-capable agent surfaces when identity, data path, or side effects change.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -27,6 +29,8 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - Review natural-language browser actions and generated selectors as tool instructions whose meaning can drift when page structure changes.
 - Route broad Browserbase, Stagehand, Playwright, Puppeteer, Selenium, and browser-use background to the upstream AI wiki unless a source changes local runtime, governance, or verification practice.
 - Pair browser-agent identity with runtime containment: least privilege, behavioral supervision, egress policy, function-level capability grants, escalation paths, and kill switches.
+- Require browser-test proof to include screenshots, recordings, reproduction steps, extracted data, and failure reports attached to the review surface, not only an agent claim that the browser ran.
+- Reclassify approved browser extensions, plug-ins, connectors, and embedded assistants when they gain new identity, data-access, or action-taking behavior.
 
 ## Authoritative Sources
 
@@ -36,6 +40,8 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - [prompt injection and untrusted content](../governance-and-risk/prompt-injection-and-untrusted-content.md)
 - [upstream browser-use page](../../../upstream-ai-wiki/agentic-frameworks/browser-use.md)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 
 ## Related Code
 
@@ -64,3 +70,4 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.
+- Maintained on 2026-08-23 with browser-test proof requirements and approved-app drift checks for browser-adjacent agent surfaces.
