@@ -1,0 +1,304 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-08-25T18:41:00Z",
+    "rule": "visible publication or update date must fall strictly within the last 7 days; date-only August 18 candidates treated as boundary-only and excluded",
+    "start": "2026-08-18T18:41:00Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "reason": "Published before strict seven-day cutoff for this run; useful but stale for this watch window.",
+      "source_url": "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/",
+      "visible_date": "2026-08-17"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "reason": "Date-only August 18 candidate falls on the cutoff day without visible time; excluded as boundary-only per automation instruction.",
+      "source_url": "https://openai.com/index/asana/",
+      "visible_date": "2026-08-18"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "reason": "Useful public content but opened page did not expose a visible publication or update date in the retrieved content.",
+      "source_url": "https://bridgeapp.ai/resources/blog/what-is-agentic-coding",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "reason": "No visible publication/update date inside the strict seven-day window; search freshness conflicted with PDF metadata.",
+      "source_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/45AE29CF88BFCD0A368E582A471C466B/S2632324926100832a.pdf/div-class-title-towards-adaptive-categories-dimensional-governance-for-agentic-ai-div.pdf",
+      "visible_date": "received 2025-08-01; revised 2025-11-22; accepted 2026-06-03"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "reason": "Public context-engineering report page was relevant but retrieved content did not expose a visible publication or update date.",
+      "source_url": "https://redis.io/resources/state-of-context-engineering-2026/",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "reason": "Relevant AGENTS.md boundary guidance, but no visible publication/update date appeared in retrieved content.",
+      "source_url": "https://realpython.com/agents-md/",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ],
+      "reason": "Relevant agent workspace boundary documentation, but no visible publication/update date appeared in retrieved content.",
+      "source_url": "https://coder.com/docs/ai-coder/agents",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "reason": "Relevant hybrid infrastructure calculator, but no visible publication/update date appeared in retrieved content.",
+      "source_url": "https://www.apivale.com/blog/infrastructure-for-hybrid-llm-agent-deployments/",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ],
+      "reason": "Progressive MCP tool discovery update is outside seven-day window.",
+      "source_url": "https://www.truto.one/changelog/product-update-of-the-week-year-4-week-32/",
+      "visible_date": "2026-08-10"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+      ],
+      "reason": "Date-only August 18 candidate falls on the cutoff day without visible time; excluded as boundary-only per automation instruction.",
+      "source_url": "https://www.platformer.news/karpathy-llm-wiki-journalism-productivity/",
+      "visible_date": "2026-08-18"
+    }
+  ],
+  "federation_notes": "Broad companies, products, model families, tools, and public entities are marked upstream-owned; this artifact keeps only local workflow, practice, governance, evaluation, adoption, or context-architecture implications.",
+  "follow_up_notes": [
+    "Normal raw ingest should validate date evidence again for search-visible dates before synthesis.",
+    "Do not edit docs/wiki directly from this artifact; route through the raw project-wiki monitor."
+  ],
+  "privacy_notes": "Searches used public leaf topic names, aliases, and public source URLs only; no private local wiki page text was sent as a search payload.",
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "factual_summary": "TestDino published a 2026 guide that frames agent evaluation as task success plus tool-use correctness, trajectory quality, safety, latency, cost, repeated-run reliability, and human intervention, with deterministic graders for provable checks and calibrated LLM judges for bounded qualitative criteria.",
+      "follow_up_note": "Consider whether this belongs in agent-assisted performance optimization gates or the broader verification loops page during normal raw ingest.",
+      "id": "testdino-ai-agent-evaluation-metrics-2026-08-22",
+      "local_practice_implication": "Treat agent performance gates as multi-metric acceptance gates with hard deterministic checks where possible and calibrated qualitative rubrics where needed.",
+      "named_entities": [
+        "TestDino",
+        "LangSmith",
+        "Playwright"
+      ],
+      "source_url": "https://testdino.com/blog/ai-agent-evaluation-metrics",
+      "upstream_owned_entities": [
+        "LangSmith",
+        "Playwright"
+      ],
+      "visible_date": "2026-08-22",
+      "why_it_matters_for_leaf": "Performance optimization gates should not optimize speed or cost alone; they need release gates that connect latency and cost to task success, tool correctness, reliability, and safety evidence."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "factual_summary": "OpenAI introduced an Admin plugin for ChatGPT Work and Codex that lets admins review workspace activity, credit usage, access, permissions, usage limits, spending requests, and supported admin actions through permission-aware tools and recurring workflows.",
+      "follow_up_note": "Route broad OpenAI product details upstream; retain only local operating model implications for plugin governance and admin workflows.",
+      "id": "openai-admin-plugin-chatgpt-work-codex-2026-08-25",
+      "local_practice_implication": "When adopting managed agent plugins, record role/permission mapping, supported read/write actions, approval routing, spending controls, and evidence returned after each administrative action.",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "Admin plugin",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "source_url": "https://openai.com/index/introducing-admin-plugin/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "visible_date": "2026-08-25",
+      "why_it_matters_for_leaf": "Managed-agent portability and plugin/runbook practice now need to account for admin-facing plugins as governed operational surfaces, not just developer-side skills or CLI packages. Cost and usage controls also become workflow-visible rather than separate console-only evidence."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "factual_summary": "OpenAI published a Stampli case study describing Codex and ChatGPT Work used to connect product context, meeting notes, decisions, messaging guidelines, product systems, and business data into daily launch and go-to-market workflows with human review and final approval.",
+      "follow_up_note": "Evaluate during ingest whether this is a context-architecture update or an adoption operating model example.",
+      "id": "openai-stampli-codex-workflow-context-2026-08-20",
+      "local_practice_implication": "When context architecture supports non-engineering agent workflows, record which source systems feed the context layer, what gets transformed into reusable memory, and where human final approval remains mandatory.",
+      "named_entities": [
+        "OpenAI",
+        "Stampli",
+        "Codex",
+        "ChatGPT Work",
+        "HubSpot"
+      ],
+      "source_url": "https://openai.com/index/stampli/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Work",
+        "HubSpot"
+      ],
+      "visible_date": "2026-08-20",
+      "why_it_matters_for_leaf": "Compiled memory and context-router pages can use this as a public practice signal that agent context layers span source-of-truth systems, meeting notes, decisions, and business metrics, while senior-led execution still reserves approval and strategy judgment for people."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "factual_summary": "Codelevate published a production-agent context engineering guide that defines context as instructions, retrieved knowledge, tools, memory/state, and guardrails; it highlights overload, stale retrieval, conflicting sources, verbose tool outputs, lost state, and permission leakage as recurring failure modes.",
+      "follow_up_note": "Good candidate for synthesis into context router, compaction, and request-package boundary leaves.",
+      "id": "codelevate-context-engineering-production-agents-2026-08-24",
+      "local_practice_implication": "Request packages should name authoritative sources, freshness rules, tool-output shapes, state carryover policy, exclusion rules, and eval cadence before an agent is trusted with production context.",
+      "named_entities": [
+        "Codelevate",
+        "Anthropic",
+        "Gartner",
+        "EU AI Act"
+      ],
+      "source_url": "https://www.codelevate.com/blog/context-engineering-for-ai-agents-why-your-agent-fails-in-production",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Gartner",
+        "EU AI Act"
+      ],
+      "visible_date": "2026-08-24",
+      "why_it_matters_for_leaf": "The selected context leaves can tighten their local practice around authoritative-source routing, high-signal context selection, structured tool outputs, explicit state, and permission-scoped retrieval instead of prompt-only controls."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ],
+      "factual_summary": "Kingy AI updated an open-source coding-agent field guide with a visible August 24 official-source verification date, separating product fit from benchmark claims and comparing interface, model-control path, permission envelope, operational burden, maintenance evidence, documentation quality, current documented versions, and locally checked versions.",
+      "follow_up_note": "Route product details upstream; local pages should retain the evidence-label and version-freshness practice.",
+      "id": "kingy-open-source-coding-agent-field-guide-2026-08-24",
+      "local_practice_implication": "Agent-runtime selection ledgers should separate product identity, release freshness, local installation evidence, permission envelope, and unresolved benchmark coverage instead of collapsing them into rankings.",
+      "named_entities": [
+        "Kingy AI",
+        "OpenCode",
+        "Codex CLI",
+        "OpenHands",
+        "Cline",
+        "goose",
+        "Qwen Code"
+      ],
+      "source_url": "https://kingy.ai/blog/open-source-coding-agents-2026/",
+      "upstream_owned_entities": [
+        "OpenCode",
+        "Codex CLI",
+        "OpenHands",
+        "Cline",
+        "goose",
+        "Qwen Code"
+      ],
+      "visible_date": "2026-08-24",
+      "why_it_matters_for_leaf": "Runtime updater integrity and portability practice benefit from distinguishing official release freshness from locally checked versions, and from withholding comparative performance claims when coverage gates are incomplete."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+      ],
+      "factual_summary": "Hao Zhang published an essay framing the AI-agent bottleneck as coherent shared information for many autonomous readers and writers, treating it as continual, multi-writer semantic data integration with context construction as the read interface.",
+      "follow_up_note": "Open page only exposes year-level date while search exposed yesterday; keep the date-evidence caveat during ingest.",
+      "id": "hao-zhang-shared-information-world-2026-08-24",
+      "local_practice_implication": "Document context architecture as a shared information system with write governance, semantic integration, and read-time context construction, not just retrieval over static documents.",
+      "named_entities": [
+        "Hao Zhang"
+      ],
+      "source_url": "https://h20zhang.github.io/blog/2026/shared-information-world-ai-agents/",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-08-24-search-visible",
+      "why_it_matters_for_leaf": "Compiled wiki, context router, and lifespan documentation pages can use this as a local-practice signal for multi-writer governance, source coherence, and context construction from maintained shared information stores."
+    }
+  ],
+  "run_timestamp_local": "2026-08-25T14:41:00-0400",
+  "run_timestamp_utc": "2026-08-25T18:41:00Z",
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "source_urls_checked": [
+    "https://testdino.com/blog/ai-agent-evaluation-metrics",
+    "https://openai.com/index/introducing-admin-plugin/",
+    "https://openai.com/index/stampli/",
+    "https://www.codelevate.com/blog/context-engineering-for-ai-agents-why-your-agent-fails-in-production",
+    "https://kingy.ai/blog/open-source-coding-agents-2026/",
+    "https://www.platformer.news/karpathy-llm-wiki-journalism-productivity/",
+    "https://h20zhang.github.io/blog/2026/shared-information-world-ai-agents/",
+    "https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/",
+    "https://openai.com/index/asana/",
+    "https://bridgeapp.ai/resources/blog/what-is-agentic-coding",
+    "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/45AE29CF88BFCD0A368E582A471C466B/S2632324926100832a.pdf/div-class-title-towards-adaptive-categories-dimensional-governance-for-agentic-ai-div.pdf",
+    "https://redis.io/resources/state-of-context-engineering-2026/",
+    "https://realpython.com/agents-md/",
+    "https://coder.com/docs/ai-coder/agents"
+  ]
+}
