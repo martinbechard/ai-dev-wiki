@@ -1,0 +1,636 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-08-26T01:01:31Z",
+  "run_timestamp_local": "2026-08-25T21:01:31-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-19T01:01:31Z",
+    "end_utc": "2026-08-26T01:01:31Z",
+    "date_policy": "Only sources visibly published or updated within the last 7 days qualified; missing, ambiguous, future-dated, stale, and boundary-only dates were excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+  ],
+  "selection_basis": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort; excluded index, digest, broad maintenance, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages unless durable local practice leaves.",
+  "leaf_universe_count": 93,
+  "source_urls_checked": [
+    "https://modelcontextprotocol.io/development/roadmap",
+    "https://www.speakeasy.com/resources/skills-governance",
+    "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+    "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/",
+    "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers",
+    "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+    "https://arxiv.org/abs/2608.21311",
+    "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+    "https://www.augmentcode.com/guides/ai-code-review-ci-cd-pipeline",
+    "https://aiagentstore.ai/ai-agent-news/this-week",
+    "https://mastra.ai/articles/best-natoma-alternatives",
+    "https://nimbalyst.com/blog/best-ai-agent-orchestration-platforms-2026/",
+    "https://amux.io/blog/best-terminal-ai-coding-agents-2026/",
+    "https://tabulareditor.com/blog/lessons-from-anthropics-implementation-of-agentic-self-service-bi",
+    "https://pickaxe.co/post/ai-research-agent",
+    "https://arxiv.org/html/2607.29516v2",
+    "https://www.truefoundry.com/blog/mcp-tool-approval-human-gate-call-path"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "mcp-roadmap-updated-2026-08-22",
+      "source_url": "https://modelcontextprotocol.io/development/roadmap",
+      "visible_date": "Last updated: 2026-08-22",
+      "qualified": true,
+      "factual_summary": "The MCP roadmap prioritizes agentic messaging primitives, server-initiated events, HTTP-native transport hardening, agent identity/delegation, clearer tool-call result shapes, progressive discovery, primitive annotations, and generated SDK/conformance work.",
+      "why_it_matters_for_leaf": "Local MCP/tool leaves should treat protocol roadmap items as deployment-lifecycle signals: async tasks, progressive discovery, identity, cache semantics, and tool result shapes need conformance evidence before teams expand local tool access.",
+      "named_entities": [
+        "Model Context Protocol",
+        "MCP Working Groups",
+        "DPoP",
+        "Workload Identity Federation",
+        "ID-JAG",
+        "SEP-2663",
+        "SEP-2549",
+        "SEP-2575"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "MCP protocol specifications",
+        "MCP Working Groups"
+      ],
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "id": "speakeasy-skills-governance-2026-08-20",
+      "source_url": "https://www.speakeasy.com/resources/skills-governance",
+      "visible_date": "Published August 20, 2026",
+      "qualified": true,
+      "factual_summary": "Speakeasy defines skills governance as live tracking of every agent skill, including file identity, owner, loading agents, sanctioned status, and which tools the skill directs agents to call; it warns that skill files can evade normal software asset registers.",
+      "why_it_matters_for_leaf": "Local skill and rules-layer pages should treat SKILL.md-style files as governed operational assets, with owner, approval, tool-scope, and registry evidence rather than informal prompt snippets.",
+      "named_entities": [
+        "Speakeasy",
+        "SKILL.md",
+        "Cursor",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "Speakeasy",
+        "Cursor",
+        "Claude"
+      ],
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "id": "expresscomputer-maintainable-agents-2026-08-24",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "visible_date": "On Aug 24, 2026",
+      "qualified": true,
+      "factual_summary": "The article argues that production agents need software-discipline controls around prompts and tools: versioning, review, testing, documentation, ownership, componentized responsibilities, regression gates, rollback paths, tool-call tracing, and explicit automation boundaries.",
+      "why_it_matters_for_leaf": "Several local practice leaves can reuse this as public evidence that prompts, durable instructions, tool calls, and autonomy boundaries should be managed like production software behavior.",
+      "named_entities": [
+        "Express Computer",
+        "The Hartford India",
+        "Sugandha Srikanteswaran"
+      ],
+      "upstream_owned_entities": [
+        "Express Computer",
+        "The Hartford India"
+      ],
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "id": "snowflake-agentic-control-plane-2026-08-21",
+      "source_url": "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/",
+      "visible_date": "On Aug 21, 2026",
+      "qualified": true,
+      "factual_summary": "Snowflake emphasized governed enterprise AI deployment with trusted data, shared business context, model flexibility, cost controls, Horizon Context, Snowflake CoCo/CoWork, and Cortex AI Gateway visibility and access management.",
+      "why_it_matters_for_leaf": "The local implication is context-first analytics governance: semantic business meaning, access scope, cost telemetry, and model routing should be prerequisites before self-service data agents answer operational questions.",
+      "named_entities": [
+        "Snowflake",
+        "Cortex AI Gateway",
+        "Horizon Context",
+        "Snowflake CoCo",
+        "Snowflake CoWork",
+        "Snowflake World Tour Mumbai 2026"
+      ],
+      "upstream_owned_entities": [
+        "Snowflake",
+        "Cortex AI Gateway",
+        "Horizon Context"
+      ],
+      "leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ]
+    },
+    {
+      "id": "firecrawl-academic-search-agent-retrieval-2026-08-24",
+      "source_url": "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers",
+      "visible_date": "Aug 24, 2026",
+      "qualified": true,
+      "factual_summary": "Firecrawl describes agent-oriented academic search requirements: stable paper identity, in-body supporting passages rather than abstracts only, structured metadata, citation graph traversal, freshness, and rate limits that survive multi-hop loops.",
+      "why_it_matters_for_leaf": "Deep research and RAG leaves should require identity, passage-level evidence, citation relationships, and loop-suitable rate limits when research agents need verifiable citations.",
+      "named_entities": [
+        "Firecrawl",
+        "Firecrawl Research Index",
+        "arXivQA",
+        "Semantic Scholar",
+        "OpenAlex",
+        "Crossref",
+        "PubMed"
+      ],
+      "upstream_owned_entities": [
+        "Firecrawl",
+        "Firecrawl Research Index",
+        "Semantic Scholar",
+        "OpenAlex",
+        "Crossref",
+        "PubMed"
+      ],
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ]
+    },
+    {
+      "id": "coderabbit-pull-request-context-accountability-2026-08-20",
+      "source_url": "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+      "visible_date": "August 20, 2026",
+      "qualified": true,
+      "factual_summary": "CodeRabbit argues that AI-generated pull requests increase review volume and make the PR carry more context: issue rationale, agent activity, tests, security findings, review debate, approval records, semantic change grouping, and human ownership of the result.",
+      "why_it_matters_for_leaf": "Delegated coding handoffs and structural review should preserve intent, evidence, risk triage, semantic grouping, and accountable approval instead of treating an agent diff as self-explanatory.",
+      "named_entities": [
+        "CodeRabbit",
+        "GitHub",
+        "Kubernetes",
+        "tldraw",
+        "Daniel Stenberg"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "GitHub",
+        "Kubernetes",
+        "tldraw"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ]
+    },
+    {
+      "id": "arxiv-ai-to-ai-code-review-2026-08-21",
+      "source_url": "https://arxiv.org/abs/2608.21311",
+      "visible_date": "Submitted on 21 Aug 2026",
+      "qualified": true,
+      "factual_summary": "The paper reports a dataset of 248,641 AI-attributed GitHub PRs that received AI-attributed reviews, including 45,269 cross-product reviews and 208,145 same-product reviews; closed-loop AI-to-AI review is increasing but remains a minority of identified agent activity.",
+      "why_it_matters_for_leaf": "AI-generated code review practice should keep author-agent and reviewer-agent identity, review configuration, latency, and output differences visible because review evidence can vary by product pairing.",
+      "named_entities": [
+        "arXiv",
+        "CodAGE",
+        "CodeRabbit",
+        "Claude Code",
+        "GitHub Pull Requests"
+      ],
+      "upstream_owned_entities": [
+        "arXiv",
+        "CodAGE",
+        "CodeRabbit",
+        "Claude Code",
+        "GitHub"
+      ],
+      "leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ]
+    },
+    {
+      "id": "stackoverflow-spec-for-agentic-development-2026-08-21",
+      "source_url": "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+      "visible_date": "August 21, 2026",
+      "qualified": true,
+      "factual_summary": "Stack Overflow frames agentic development around the cost tradeoff between underspecified prompts and overlarge specs, recommending enough structure, examples, executable checks, spec validation, typed contracts, validators, and expiration of stale design prose.",
+      "why_it_matters_for_leaf": "Workflow and handoff leaves should preserve the right level of specification for the work type and treat multi-agent boundaries as explicit contracts with testable validation.",
+      "named_entities": [
+        "Stack Overflow",
+        "OReilly",
+        "BDD",
+        "Chroma"
+      ],
+      "upstream_owned_entities": [
+        "Stack Overflow",
+        "OReilly",
+        "Chroma"
+      ],
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ]
+    },
+    {
+      "id": "augment-ai-code-review-cicd-updated-2026-08-20",
+      "source_url": "https://www.augmentcode.com/guides/ai-code-review-ci-cd-pipeline",
+      "visible_date": "Last updated: Aug 20, 2026",
+      "qualified": true,
+      "factual_summary": "Augment describes AI code review as a CI/CD workflow triggered by pull-request events, extracting diffs, invoking review prompts, posting PR comments, and using permissions and allowed tools to scope the review action.",
+      "why_it_matters_for_leaf": "Event-triggered and structural-review leaves should treat PR review bots as controlled workflow runs with trigger payloads, repository permissions, allowed tools, comments, and merge-gate evidence.",
+      "named_entities": [
+        "Augment Code",
+        "GitHub Actions",
+        "Claude Code Action",
+        "OpenAI API"
+      ],
+      "upstream_owned_entities": [
+        "Augment Code",
+        "GitHub Actions",
+        "Claude Code",
+        "OpenAI API"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "id": "aiagentstore-agent-news-week-2026-08-25",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "Week of August 25, 2026; items dated August 20-23, 2026",
+      "qualified": true,
+      "factual_summary": "The weekly agent news page records recent items about versioned coding-agent CLI releases, A2A joining AAIF under neutral governance, Bedrock AgentCore Web Search GA, Gemini Enterprise platform consolidation, and Snowflake CoCo Automations public preview with inspectable Cortex threads.",
+      "why_it_matters_for_leaf": "Treat as routed evidence: broad product/protocol news is upstream-owned, while the local implication is to pin agent CLI versions, test release channels, preserve inspectable long-running task receipts, and compare retrieval/governance controls before adopting agent platforms.",
+      "named_entities": [
+        "DevAgentRadar",
+        "OpenCode",
+        "Zed",
+        "A2A",
+        "Agentic AI Foundation",
+        "MCP",
+        "Amazon Bedrock AgentCore",
+        "Gemini Enterprise",
+        "Snowflake CoCo Automations"
+      ],
+      "upstream_owned_entities": [
+        "OpenCode",
+        "Zed",
+        "A2A",
+        "Agentic AI Foundation",
+        "MCP",
+        "Amazon Bedrock AgentCore",
+        "Gemini Enterprise",
+        "Snowflake"
+      ],
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "id": "mastra-natoma-alternatives-agent-access-2026-08-24",
+      "source_url": "https://mastra.ai/articles/best-natoma-alternatives",
+      "visible_date": "Aug 24, 2026",
+      "qualified": true,
+      "factual_summary": "Mastra compares agent access, governance, and integration platforms around identity, workflow, and integration architecture rather than treating agent access as a simple connector catalog.",
+      "why_it_matters_for_leaf": "The local governance implication is to evaluate agent-access platforms by identity, authorization, integration scope, and workflow fit, while routing vendor-by-vendor product background upstream.",
+      "named_entities": [
+        "Mastra",
+        "Natoma"
+      ],
+      "upstream_owned_entities": [
+        "Mastra",
+        "Natoma"
+      ],
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://nimbalyst.com/blog/best-ai-agent-orchestration-platforms-2026/",
+      "reason": "Search result said 6 days ago, but the opened page did not expose a precise publication or update date; excluded as missing/ambiguous visible date.",
+      "candidate_relevance": "Terminal-native fleet orchestration and workflow selection."
+    },
+    {
+      "source_url": "https://amux.io/blog/best-terminal-ai-coding-agents-2026/",
+      "reason": "Opened page only exposed Updated August 2026 without a day; excluded as month-only ambiguous date.",
+      "candidate_relevance": "Terminal-native agent fleet orchestration."
+    },
+    {
+      "source_url": "https://tabulareditor.com/blog/lessons-from-anthropics-implementation-of-agentic-self-service-bi",
+      "reason": "Visible updated date is August 11, 2026, outside the strict 7-day window.",
+      "candidate_relevance": "Self-service analytics context governance."
+    },
+    {
+      "source_url": "https://pickaxe.co/post/ai-research-agent",
+      "reason": "Opened page did not expose a clear publication or update date for the article itself; footer-related article dates were not sufficient.",
+      "candidate_relevance": "Deep research citation workflow."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2607.29516v2",
+      "reason": "Visible date is August 16, 2026, outside the strict 7-day window.",
+      "candidate_relevance": "Structural review of AI-generated diffs."
+    },
+    {
+      "source_url": "https://www.truefoundry.com/blog/mcp-tool-approval-human-gate-call-path",
+      "reason": "Visible date is August 14, 2026, outside the strict 7-day window.",
+      "candidate_relevance": "MCP approval and gateway governance."
+    },
+    {
+      "source_url": "https://www.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+      "reason": "Search result only showed 8 days ago and no opened verification was performed after the item fell outside the target window.",
+      "candidate_relevance": "Adoption and operating-model context."
+    }
+  ],
+  "per_leaf_results": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2608.21311",
+        "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+        "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers"
+      ],
+      "qualifying_update_ids": [
+        "firecrawl-academic-search-agent-retrieval-2026-08-24",
+        "coderabbit-pull-request-context-accountability-2026-08-20",
+        "arxiv-ai-to-ai-code-review-2026-08-21"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: firecrawl-academic-search-agent-retrieval-2026-08-24, coderabbit-pull-request-context-accountability-2026-08-20, arxiv-ai-to-ai-code-review-2026-08-21"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/",
+        "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers"
+      ],
+      "qualifying_update_ids": [
+        "snowflake-agentic-control-plane-2026-08-21",
+        "firecrawl-academic-search-agent-retrieval-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: snowflake-agentic-control-plane-2026-08-21, firecrawl-academic-search-agent-retrieval-2026-08-24"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "source_urls_checked": [
+        "https://mastra.ai/articles/best-natoma-alternatives",
+        "https://modelcontextprotocol.io/development/roadmap",
+        "https://www.speakeasy.com/resources/skills-governance"
+      ],
+      "qualifying_update_ids": [
+        "mcp-roadmap-updated-2026-08-22",
+        "speakeasy-skills-governance-2026-08-20",
+        "mastra-natoma-alternatives-agent-access-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: mcp-roadmap-updated-2026-08-22, speakeasy-skills-governance-2026-08-20, mastra-natoma-alternatives-agent-access-2026-08-24"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.speakeasy.com/resources/skills-governance"
+      ],
+      "qualifying_update_ids": [
+        "speakeasy-skills-governance-2026-08-20",
+        "expresscomputer-maintainable-agents-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: speakeasy-skills-governance-2026-08-20, expresscomputer-maintainable-agents-2026-08-24"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+      "source_urls_checked": [
+        "https://mastra.ai/articles/best-natoma-alternatives",
+        "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/"
+      ],
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "snowflake-agentic-control-plane-2026-08-21",
+        "stackoverflow-spec-for-agentic-development-2026-08-21",
+        "mastra-natoma-alternatives-agent-access-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, snowflake-agentic-control-plane-2026-08-21, stackoverflow-spec-for-agentic-development-2026-08-21, mastra-natoma-alternatives-agent-access-2026-08-24"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "source_urls_checked": [
+        "https://pickaxe.co/post/ai-research-agent",
+        "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers"
+      ],
+      "qualifying_update_ids": [
+        "firecrawl-academic-search-agent-retrieval-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: firecrawl-academic-search-agent-retrieval-2026-08-24"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2608.21311",
+        "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+        "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/"
+      ],
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "coderabbit-pull-request-context-accountability-2026-08-20",
+        "arxiv-ai-to-ai-code-review-2026-08-21",
+        "stackoverflow-spec-for-agentic-development-2026-08-21"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, coderabbit-pull-request-context-accountability-2026-08-20, arxiv-ai-to-ai-code-review-2026-08-21, stackoverflow-spec-for-agentic-development-2026-08-21"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+      "source_urls_checked": [
+        "https://aiagentstore.ai/ai-agent-news/this-week",
+        "https://modelcontextprotocol.io/development/roadmap",
+        "https://www.augmentcode.com/guides/ai-code-review-ci-cd-pipeline",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/"
+      ],
+      "qualifying_update_ids": [
+        "mcp-roadmap-updated-2026-08-22",
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "augment-ai-code-review-cicd-updated-2026-08-20",
+        "aiagentstore-agent-news-week-2026-08-25"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: mcp-roadmap-updated-2026-08-22, expresscomputer-maintainable-agents-2026-08-24, augment-ai-code-review-cicd-updated-2026-08-20, aiagentstore-agent-news-week-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "source_urls_checked": [
+        "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+        "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/"
+      ],
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "coderabbit-pull-request-context-accountability-2026-08-20",
+        "stackoverflow-spec-for-agentic-development-2026-08-21"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, coderabbit-pull-request-context-accountability-2026-08-20, stackoverflow-spec-for-agentic-development-2026-08-21"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+      "source_urls_checked": [
+        "https://aiagentstore.ai/ai-agent-news/this-week",
+        "https://amux.io/blog/best-terminal-ai-coding-agents-2026/",
+        "https://nimbalyst.com/blog/best-ai-agent-orchestration-platforms-2026/",
+        "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/"
+      ],
+      "qualifying_update_ids": [
+        "stackoverflow-spec-for-agentic-development-2026-08-21",
+        "aiagentstore-agent-news-week-2026-08-25"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: stackoverflow-spec-for-agentic-development-2026-08-21, aiagentstore-agent-news-week-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2608.21311",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://www.augmentcode.com/guides/ai-code-review-ci-cd-pipeline",
+        "https://www.coderabbit.ai/blog/the-pull-request-lives-on-ai-gave-it-a-bigger-job"
+      ],
+      "qualifying_update_ids": [
+        "coderabbit-pull-request-context-accountability-2026-08-20",
+        "arxiv-ai-to-ai-code-review-2026-08-21",
+        "augment-ai-code-review-cicd-updated-2026-08-20"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: coderabbit-pull-request-context-accountability-2026-08-20, arxiv-ai-to-ai-code-review-2026-08-21, augment-ai-code-review-cicd-updated-2026-08-20"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://stackoverflow.blog/2026/08/21/dispatches-from-o-reilly-the-right-amount-of-spec-for-agentic-development/",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.speakeasy.com/resources/skills-governance"
+      ],
+      "qualifying_update_ids": [
+        "speakeasy-skills-governance-2026-08-20",
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "stackoverflow-spec-for-agentic-development-2026-08-21"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: speakeasy-skills-governance-2026-08-20, expresscomputer-maintainable-agents-2026-08-24, stackoverflow-spec-for-agentic-development-2026-08-21"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "source_urls_checked": [
+        "https://tabulareditor.com/blog/lessons-from-anthropics-implementation-of-agentic-self-service-bi",
+        "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/"
+      ],
+      "qualifying_update_ids": [
+        "snowflake-agentic-control-plane-2026-08-21"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: snowflake-agentic-control-plane-2026-08-21"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+      "source_urls_checked": [
+        "https://aiagentstore.ai/ai-agent-news/this-week",
+        "https://modelcontextprotocol.io/development/roadmap",
+        "https://www.expresscomputer.in/news/snowflake-charts-the-next-phase-of-enterprise-ai-with-the-agentic-control-plane/137968/",
+        "https://www.firecrawl.dev/blog/ai-agents-search-academic-papers"
+      ],
+      "qualifying_update_ids": [
+        "mcp-roadmap-updated-2026-08-22",
+        "snowflake-agentic-control-plane-2026-08-21",
+        "firecrawl-academic-search-agent-retrieval-2026-08-24",
+        "aiagentstore-agent-news-week-2026-08-25"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: mcp-roadmap-updated-2026-08-22, snowflake-agentic-control-plane-2026-08-21, firecrawl-academic-search-agent-retrieval-2026-08-24, aiagentstore-agent-news-week-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "source_urls_checked": [
+        "https://aiagentstore.ai/ai-agent-news/this-week",
+        "https://mastra.ai/articles/best-natoma-alternatives",
+        "https://modelcontextprotocol.io/development/roadmap",
+        "https://www.augmentcode.com/guides/ai-code-review-ci-cd-pipeline",
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.speakeasy.com/resources/skills-governance",
+        "https://www.truefoundry.com/blog/mcp-tool-approval-human-gate-call-path"
+      ],
+      "qualifying_update_ids": [
+        "mcp-roadmap-updated-2026-08-22",
+        "speakeasy-skills-governance-2026-08-20",
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "augment-ai-code-review-cicd-updated-2026-08-20",
+        "aiagentstore-agent-news-week-2026-08-25",
+        "mastra-natoma-alternatives-agent-access-2026-08-24"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: mcp-roadmap-updated-2026-08-22, speakeasy-skills-governance-2026-08-20, expresscomputer-maintainable-agents-2026-08-24, augment-ai-code-review-cicd-updated-2026-08-20, aiagentstore-agent-news-week-2026-08-25, mastra-natoma-alternatives-agent-access-2026-08-24"
+    }
+  ],
+  "follow_up_notes": [
+    "Route broad ecosystem entity updates for MCP, A2A, cloud agent platforms, Snowflake, CodeRabbit, Firecrawl, Mastra, GitHub, and OpenAI to the upstream AI wiki when they need durable entity coverage.",
+    "Local ingest should focus on practice implications: skill registry evidence, MCP roadmap conformance checks, inspectable agent task receipts, PR accountability, CI review gates, analytics semantic context, and citation-grade retrieval."
+  ]
+}
