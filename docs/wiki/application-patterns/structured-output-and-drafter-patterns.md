@@ -31,6 +31,8 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 - Source artifacts such as PDFs, filings, resumes, connected-app records, or hidden formatted text can carry machine-readable instructions a human reviewer may not see.
 - Structured extraction should preserve provenance, hidden-content inspection state, refusal or retry state, and downstream authorization evidence before an artifact becomes an action.
 
+The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) adds a code-mode drafter boundary. When an agent drafts JavaScript or TypeScript instead of a JSON object, the generated program should still execute behind a narrow host-function interface, with trusted service clients kept outside the sandbox, serialized host-call results, approval or authentication interruption, replay-safe resume, and per-run resource limits. Locally, code-mode execution is a stronger drafter pattern, not permission for generated code to inherit application secrets, Node.js access, network access, or generic request capabilities.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -48,6 +50,8 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 - Separate syntactic JSON validity, schema conformance, business invariants, and authorization; do not let provider schema features stand in for domain validation or tool-permission gates.
 - Inspect source artifacts for hidden, formatted, copied, or machine-readable instruction content before structured extraction results can trigger writes, publication, email, commits, or connected-app actions.
 - Preserve provenance, validation stage, business-rule verdict, authorization state, retry count, and refusal or truncation handling as fields that downstream code can audit.
+- Treat generated programs as structured artifacts whose host functions, resource limits, replay records, and approval interruptions are part of the validation contract.
+- Prefer product-shaped host functions over generic request functions so authorization checks remain attached to the business action.
 
 ## Authoritative Sources
 
@@ -61,6 +65,7 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
+- [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md)
 
 ## Related Code
 
@@ -93,3 +98,4 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 - Maintained on 2026-07-24 with citation, confidence, refusal-state, partial-output, review, and retry guidance.
 - Maintained on 2026-08-21 with layered JSON, schema, business-validation, refusal, truncation, and authorization gates.
 - Maintained on 2026-08-22 with hidden source-carrier inspection, provenance, validation-stage, and authorization-state evidence.
+- Maintained on 2026-08-25 with code-mode generated-program execution, host-function boundaries, interruption, replay, and resource-limit evidence.

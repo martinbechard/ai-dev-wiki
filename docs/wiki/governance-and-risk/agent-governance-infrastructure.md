@@ -73,6 +73,8 @@ The August 18 raw sources add inventory-first rollout, managed-settings, and byp
 
 The August 20 raw sources add continuous-control and evidence-pack signals. The [leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) records managed IDE settings, token-type revocation, audit-log capture, and governed sovereign-agent substrates. The [topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) records governance commentary about shadow AI, inherited permissions, continuous capability discovery, permission review, business-impact assessment, adjustable isolation, task-scoped credentials, dual-use gates, and vendor transparency. Locally, governance infrastructure should continuously discover agent surfaces, review inherited access, bind credentials to trust boundaries, require isolation or pause paths, and demand evidence packs or reporting methodology before adoption metrics are trusted.
 
+The August 25 raw sources reinforce governance as enforceable infrastructure. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records admin-facing plugins, customization catalogs, governance visibility gaps across APIs, MCP servers, and plug-ins, per-hop tool guardrails, OpenTelemetry GenAI maturity caveats, and policy-as-infrastructure framing. Locally, governance infrastructure should maintain connector inventory, identity and data-path visibility, read/write permission evidence, spending and usage controls, semantic-versioned observability contracts, opt-in content capture policy, and audit-to-enforcement rollout state.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -139,6 +141,8 @@ The August 20 raw sources add continuous-control and evidence-pack signals. The 
 - Bind credentials to task scopes and trust boundaries, and preserve token-type revocation plus audit evidence for containment after agent or tool incidents.
 - Require adjustable isolation, emergency pause, signed evidence packs, and vendor-reporting methodology when agents operate in regulated, sensitive, or high-impact workflows.
 - Treat vendor adoption, safety, and usage metrics as governance inputs only when their collection method, scope, exclusions, and auditability are visible.
+- Treat admin plugins, customization catalogs, API connectors, MCP servers, and third-party plug-ins as governed inventory entries with owner, identity, data path, permission, spend, and revocation evidence.
+- Pin observability semantic conventions, content-capture settings, and backend-support evidence when agent or MCP telemetry becomes a governance control.
 
 ## Authoritative Sources
 
@@ -195,6 +199,7 @@ The August 20 raw sources add continuous-control and evidence-pack signals. The 
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 
 ## Related Code
 
@@ -256,3 +261,4 @@ The August 20 raw sources add continuous-control and evidence-pack signals. The 
 - Maintained on 2026-08-06 with containment-first infrastructure controls for public internet access, external communication, repository contribution, package publication, emergency stops, and immutable run evidence.
 - Maintained on 2026-08-13 with audit-harness events, prompt-hash privacy, SIEM export, usage metrics, ROI assumptions, workspace identity, budgets, and incident-response evidence.
 - Maintained on 2026-08-20 with continuous discovery, inherited-permission review, task-scoped credentials, token-type revocation, isolation paths, evidence packs, and vendor-reporting methodology guidance.
+- Maintained on 2026-08-25 with admin-plugin, connector-inventory, per-hop guardrail, semantic-observability, spend-control, and policy-as-infrastructure evidence.

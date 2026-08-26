@@ -19,6 +19,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds production-failure readiness evidence. Harness sizing should grow when a workflow needs durable execution, checkpoint recovery, scoped MCP access, component identity, behavior baselines, containment testing, activity logging, and memory inspection; a demo-complete harness is undersized when it cannot survive failure or explain recovery.
 
+The August 25 clipping and raw sources add generated-code execution and loop-to-graph escalation evidence. The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) shows a narrow host-function boundary for untrusted JavaScript or TypeScript, durable interruption for approval or authentication, replay-safe resume, and timeout or memory limits. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) frames simple agent, durable loop, graph, and orchestration as increasing architecture levels. Locally, a harness should grow from sandboxed computation to resumable loops and graph coordination only when host-function authority, state, recovery, approval, or multi-agent topology requires it.
+
 ## Practice Boundaries
 
 - Size harness controls to action risk, context complexity, duration, and need for recovery.
@@ -29,6 +31,8 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Treat reasoning depth, model effort, and credit budget as harness controls that should scale with task complexity and verification need.
 - Avoid inheriting high-effort settings into routine or low-risk workflows without an explicit cost and quality reason.
 - Include checkpointing, recovery, behavior baselines, scoped access, activity logging, containment tests, and memory inspection when workflow risk moves beyond assisted drafting.
+- Use narrow host functions, serialized boundaries, resource limits, and replay-safe interruption when generated programs need to compute over trusted application capabilities.
+- Escalate from a simple agent to a loop or graph when state, recovery, approval timing, delegation topology, or operations evidence justifies the added harness machinery.
 
 ## Authoritative Sources
 
@@ -36,6 +40,8 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [agent environment readiness](agent-environment-readiness.md)
@@ -68,3 +74,4 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 - Maintained on 2026-07-30 with environment-readiness criteria for setup latency, secrets, restart checks, and artifact persistence.
 - Maintained on 2026-08-04 with adjustable reasoning-depth and credit-budget controls as harness sizing inputs.
 - Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, behavior-baseline, containment, activity-log, and memory-inspection sizing inputs.
+- Maintained on 2026-08-25 with generated-program sandbox, host-function, interruption, replay, and loop-to-graph escalation evidence.

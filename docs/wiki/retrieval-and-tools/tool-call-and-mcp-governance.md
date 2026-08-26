@@ -79,6 +79,8 @@ The August 15 raw sources add runtime control-plane and tool-installation eviden
 
 The August 18 raw sources add MCP directionality, context-boundary, and managed-plugin governance signals. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) distinguishes three MCP integration directions: a process calls tools, an MCP server exposes operational data, and a process becomes a callable MCP capability. It also reinforces that MCP is a connectivity layer, not a substitute for governed context, permissions, semantic definitions, and auditability. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) adds portable plugin packages, MCP allowlists, tool-surface policy, and A2A-versus-MCP protocol separation as governance evidence. Locally, MCP review should name the integration direction, discovery call, chosen tool, receipt or long-running handle, checkpoint placement, and context authority before treating a server as approved.
 
+The August 25 raw sources add tool-surface catalog, roadmap, and guardrail evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records OAuth token scoping and safe-MCP setup confusion, the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records customization catalogs and per-hop tool-call guardrails, and the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records MCP roadmap, skill-governance, and access-platform signals. Locally, discovery catalogs are inventory inputs rather than approval decisions; teams still need owner, token scope, read/write separation, pre-tool and post-tool inspection, exact-payload evidence, conformance checks, and audit-mode-to-enforcement rollout before broad tool access.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -152,6 +154,9 @@ The August 18 raw sources add MCP directionality, context-boundary, and managed-
 - Name whether MCP is being used as a client call path, an operational query surface, or an exported process capability, because each direction changes audit, receipt, and approval obligations.
 - Treat MCP connectivity as insufficient without governed context definitions, permission scopes, discovery-call evidence, selected-tool evidence, and human checkpoints for spend, commit, or other high-impact actions.
 - Separate A2A-style inter-agent communication from MCP-style tool or data access when designing orchestration and governance records.
+- Treat customization catalogs, skills directories, and plug-in stores as discovery surfaces whose entries require owner, source, scope, token, and approval review before enablement.
+- Place guardrails at prompt, model-output, pre-tool-call, and post-tool-result hops when tool content can carry instructions, secrets, PII, destructive SQL, unsafe shell commands, or policy violations.
+- Track MCP roadmap changes, semantic convention maturity, progressive discovery, async task handles, and identity/delegation primitives as conformance review inputs before expanding local tool access.
 
 ## Authoritative Sources
 
@@ -210,6 +215,9 @@ The August 18 raw sources add MCP directionality, context-boundary, and managed-
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 
 ## Related Code
@@ -244,6 +252,7 @@ The August 18 raw sources add MCP directionality, context-boundary, and managed-
 
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.
+- Maintained on 2026-08-25 with customization catalog, OAuth token-scope, MCP roadmap, skill-governance, and per-hop guardrail evidence.
 - Maintained on 2026-07-23 with stateless MCP, gateway-selection, filtered discovery, per-tool authorization, logging, and secret-scanning guidance.
 - Maintained on 2026-07-30 with resource-scoped MCP authorization, read/write separation, sandbox permission evidence, and exact approval-to-execution payload matching.
 - Created on 2026-06-23 to hold dynamic context, action-tool, and MCP governance practice.

@@ -15,6 +15,8 @@ The local rule is to automate repeatable regeneration while making trust checks 
 
 The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) extends the updater boundary to agent-facing skills and MCP runtime inputs. Runtime update jobs should not fetch, install, or rewrite skill files, MCP manifests, setup scripts, or wrapper prompts from public repositories unless provenance, tool scope, command behavior, and quarantine checks pass before the regenerated artifact becomes active.
 
+The August 25 raw sources add deprecation and version-freshness evidence. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records a deprecated Codex MCP server command in favor of an app server, and the [afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) records field-guide practice that separates official release freshness from locally checked versions, permission envelopes, and benchmark coverage. Locally, runtime updater records should keep command entry points, supported replacement paths, official source versions, local installed versions, permission envelopes, and unresolved benchmark claims separate before changing team setup instructions.
+
 ## Practice Boundaries
 
 - Regenerate version-coupled runtime artifacts from a declared source version and preserve the generated diff.
@@ -24,11 +26,15 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Record which runtime artifacts changed, which checks passed, and which manual patch targets remain outside automation.
 - Treat public skill files, MCP manifests, setup scripts, and wrapper prompts as runtime inputs that need provenance, command-behavior, and tool-scope review before automated refresh.
 - Quarantine generated runtime artifacts when marker checks, manifest signatures, repository provenance, or allowed tool scopes do not match the expected update package.
+- Treat deprecated command entry points and replacement app-server paths as versioned runtime dependencies that need explicit migration evidence before setup guidance changes.
+- Separate official release freshness, locally checked version, permission envelope, and benchmark evidence in runtime selection or updater ledgers.
 
 ## Authoritative Sources
 
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
 - [source reconciliation and routing](source-reconciliation-and-routing.md)
 - [raw project-wiki monitor](raw-project-wiki-monitor.md)
 - [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md)
@@ -60,3 +66,4 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 
 - Created on 2026-07-27 from July 27 raw-source evidence about signed-manifest runtime updates, exact-marker checks, fail-closed behavior, and manual security-sensitive patches.
 - Maintained on 2026-08-16 with public skill, MCP manifest, setup-script, wrapper-prompt, provenance, and quarantine checks for runtime updater inputs.
+- Maintained on 2026-08-25 with command-deprecation, app-server replacement, official-release freshness, local-version, permission-envelope, and benchmark-evidence boundaries.

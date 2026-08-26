@@ -19,6 +19,8 @@ Domain state, business records, and audit-critical workflow state should remain 
 
 The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds cross-client packaging and compliance evidence. Agent Plugins, managed plugin/MCP settings, persistent memory, local model routing, debug visibility, local-session compliance endpoints, and workspace identity show that portability is constrained by more than prompt text. Locally, a managed-agent workflow should record which package manifest, skill files, MCP declarations, memory surfaces, transcript exports, and enterprise policy controls must move or be re-created before switching tools.
 
+The [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) adds admin-plugin evidence for managed-agent portability. Admin-facing tools for workspace activity, credit usage, access, permissions, usage limits, spend requests, and supported actions are part of the managed control plane. Locally, portability review should record whether admin workflows, permission-aware tools, cost controls, recurring tasks, and action evidence can be exported, reproduced, or replaced when moving between managed agent environments.
+
 ## Practice Boundaries
 
 - Evaluate managed-agent portability separately for models, prompts, tools, execution, state, telemetry, and control-plane semantics.
@@ -28,11 +30,13 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Require export, retention, versioning, and trace semantics before relying on vendor session history as durable memory.
 - Record portability gaps as selection criteria rather than flattening vertical integration into either open or closed.
 - Record package manifests, skill files, MCP declarations, memory surfaces, transcript exports, workspace identity, and enterprise policy controls before claiming a managed-agent workflow can move between tools.
+- Include admin workflow surfaces, permission-aware action tools, usage limits, spending controls, recurring tasks, and evidence receipts in portability reviews.
 
 ## Authoritative Sources
 
 - [managed agent vertical integration query source](../../../raw/processed/query/2026-08-05-managed-agent-vertical-integration.md)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
 - [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md)
 - [durable instructions and skill files](durable-instructions-and-skill-files.md)
 - [agent harness components](../application-patterns/agent-harness-components.md)
@@ -66,3 +70,4 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 
 - Created on 2026-08-05 from a query fragment about managed-agent vertical integration, tool interoperability, and control-plane portability.
 - Maintained on 2026-08-17 with Agent Plugins, managed plugin/MCP settings, memory, local model routing, debug visibility, compliance transcript, and workspace-identity portability boundaries.
+- Maintained on 2026-08-25 with admin-plugin, usage, permission, spending, recurring-task, and action-evidence portability boundaries.

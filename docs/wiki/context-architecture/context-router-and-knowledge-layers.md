@@ -29,6 +29,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 
 The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds enterprise source-ranking evidence. Context routers should keep source trust, freshness, access scope, conflict policy, and reranking criteria visible when drawing from Slack, Teams, drive, wiki, repository, or ticket sources. The router should not treat the existence of a connector as permission to merge every retrieved artifact into one undifferentiated context bundle.
 
+The August 25 raw sources add context-as-system-state and shared-information evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) frames context engineering as assembling instructions, retrieved knowledge, tools, memory, schemas, and workflow data; the [afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) adds production-agent failure modes around stale retrieval, verbose tool output, lost state, and permission leakage; the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records agentic engineering vocabulary that maps context, skills, harnesses, evals, hooks, and workflows into recurring practice terms. Locally, the router should name context inputs, freshness rules, retrieval provenance, tool affordances, memory scope, schema contracts, state carryover, and exclusion rules before those inputs become active model context.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -50,6 +52,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Route primary Git and instruction roots separately from secondary related-code, documentation, and reference folders.
 - Route enterprise knowledge sources with explicit source trust, freshness, access scope, conflict handling, and reranking labels before they become active model context.
 - Route persistent memories, managed settings, and behavior-baseline deviations through different layers so convenience context cannot override governance evidence.
+- Route instructions, retrieved knowledge, tools, memory, schemas, workflow data, guardrails, and state carryover as separately labeled context inputs with freshness and authority rules.
+- Treat shared information stores as multi-writer systems whose write governance and read-time context construction need different controls.
 
 ## Authoritative Sources
 
@@ -65,6 +69,9 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
+- [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 
 ## Related Code
 
@@ -100,3 +107,4 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 - Maintained on 2026-07-29 with primary Git/instruction root and secondary evidence-folder routing guidance.
 - Maintained on 2026-08-14 with enterprise source trust, freshness, access-scope, conflict-policy, and reranking labels for context routing.
 - Maintained on 2026-08-17 with separate routing for persistent memory, managed agent settings, and behavior-baseline deviations.
+- Maintained on 2026-08-25 with system-state context inputs, production-agent context failure modes, shared-information governance, and agentic engineering vocabulary.

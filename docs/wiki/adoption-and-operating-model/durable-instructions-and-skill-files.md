@@ -43,6 +43,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 The August 23 raw sources add skill-intake pressure. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) records public skill-directory growth, and the [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) treats skills as part of the execution graph beside MCP tools, checkpoints, context, and session state. Locally, durable skills should enter team use through a reviewed intake path with owner, source snapshot, compatibility target, tool scope, verification steps, and retirement criteria.
 
+The August 25 raw sources add language-skill and skill-registry evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records language-specific Go skill files as maintained guidance for current coding practice, and the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records skills governance as live tracking of skill file identity, owner, loading agents, sanctioned status, and directed tool calls. Locally, skill packs should be treated as governed software-delivery assets with provenance, update cadence, language or framework scope, owner review, allowed tool scope, and regression expectations.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -70,6 +72,8 @@ The August 23 raw sources add skill-intake pressure. The [topic news collector s
 - Store AI review standards and platform-specific guardrail skills as versioned, owner-reviewed instruction artifacts with verification steps and service constraints visible to reviewers.
 - Promote third-party skills only after intake records name the owner, source snapshot, compatibility target, allowed tools, verification steps, and retirement criteria.
 - Treat skill loading, skill updates, and skill retirement as execution-graph changes when they affect what an agent can do or how completion is verified.
+- Track language-specific skill packs by owner, source snapshot, supported runtime or framework versions, update cadence, allowed tools, and validation examples before team adoption.
+- Keep a registry of sanctioned skills, loading agents, and directed tool calls when skill files can affect repository or connected-system behavior.
 
 ## Authoritative Sources
 
@@ -91,6 +95,8 @@ The August 23 raw sources add skill-intake pressure. The [topic news collector s
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
+- [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
 
 ## Related Code
 
@@ -134,3 +140,4 @@ The August 23 raw sources add skill-intake pressure. The [topic news collector s
 - Maintained on 2026-08-20 with root instruction, plan-mode, hook, worktree, and eval routing evidence from startup operating-practice signals.
 - Maintained on 2026-08-21 with repo-versioned review standards and platform-specific guardrail skill packaging.
 - Maintained on 2026-08-23 with third-party skill intake, execution-graph, owner, compatibility, tool-scope, verification, and retirement criteria.
+- Maintained on 2026-08-25 with language-specific skill-pack governance, skill registry, loading-agent, sanctioned-status, and directed-tool-call evidence.

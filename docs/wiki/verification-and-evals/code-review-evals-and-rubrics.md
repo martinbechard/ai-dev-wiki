@@ -57,6 +57,8 @@ The August 21 sources add review-economics and evidence-stewardship criteria:
 
 The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) adds orchestration-shape evidence from a [technical-report index](https://www.jstage.jst.go.jp/browse/jsaisigtwo/2026/AGI-033/_contents/-char/en) comparing aspect-parallel review, adversarial critique, and multi-run aggregation across languages, models, vendors, and repositories. Locally, review evals should record orchestration shape, leakage controls, recall-weighted defect detection, language and repository mix, and cost band before treating repeated review passes as a quality improvement.
 
+The August 25 raw sources add review-signal routing, AI-to-AI review, and application-level evaluation evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records generated-code review safeguards and application-level LLM evaluation; the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records configurable review finding grouping and non-droppable high-severity results; the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records AI-attributed PR review, CI-triggered review bots, and PR accountability evidence. Locally, review evals should score signal routing, severity vocabulary, inline-versus-summary placement, non-droppable critical findings, author/reviewer agent identity, and whether application-level outcomes survive the full workflow rather than only a model benchmark.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -96,6 +98,9 @@ The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai
 - Measure false-positive rate, reviewer triage time, evidence reviewability, behavioral correctness, and security-fix correctness as separate rubric dimensions.
 - Compare single-pass, aspect-parallel, adversarial, and multi-run review orchestration with the same defect corpus, leakage controls, language mix, and cost accounting.
 - Track where marginal defect detection flattens relative to added model spend and reviewer triage time.
+- Score review-signal configuration separately: grouping, ordering, severity labels, truncation, inline or summary placement, and mandatory high-severity surfacing should not be hidden inside aggregate review quality.
+- Preserve author-agent, reviewer-agent, CI-trigger, and human-owner identity when reviewing AI-generated or AI-reviewed pull requests.
+- Evaluate LLM-assisted code review at the application workflow level, including task success, tool use, evidence quality, safety, latency, cost, reliability, and human intervention.
 
 ## Authoritative Sources
 
@@ -129,6 +134,9 @@ The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
+- [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
 
 ## Related Code
 
@@ -175,3 +183,4 @@ The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai
 - Maintained on 2026-08-20 with authorship, AI-review participation, scanned scope, missed-gate, credential-lifetime, responsible-disclosure, and containment rubric fields.
 - Maintained on 2026-08-21 with false-positive triage cost, reviewer-burden, evidence-quality, behavioral-correctness, and security-fix rubric criteria.
 - Maintained on 2026-08-22 with orchestration-shape, leakage-control, recall-weighted detection, language-mix, repository-mix, and cost-band review-eval criteria.
+- Maintained on 2026-08-25 with configurable review-signal routing, non-droppable high-severity findings, AI-to-AI review identity, CI-triggered review, and application-level evaluation criteria.

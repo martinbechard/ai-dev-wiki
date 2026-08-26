@@ -23,6 +23,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The August 18 raw sources add channel-trigger and queued-work signals. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records agents responding automatically to Slack channel messages without an explicit mention and coding-agent surfaces that accept queued prompts or shell commands during a running task. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) adds fire-and-track process receipts for long-running MCP-triggered work. Locally, passive channel events and queued steering are event triggers too; they need trigger scope, owner, noise controls, approval timing, and receipt evidence before they become standing automation.
 
+The August 25 raw sources add connector-trigger and reviewable-workflow evidence. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records event-triggered scheduled tasks from Gmail, Slack, and GitHub events plus Runme and WebMCP notebook workflows for recurring Codex work, while the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records MCP roadmap and PR-review automation signals. Locally, connector-triggered workflows should preserve app authorization, watched resource scope, trigger coalescing, pending-event review, notebook or command evidence, and GitHub activity provenance before an event starts or mutates coding work.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -36,6 +38,7 @@ The August 18 raw sources add channel-trigger and queued-work signals. The [leaf
 - Distinguish schedule, CI, issue, host-session, and manual triggers when inherited context, approval timing, or review handoff differs.
 - Define channel, thread, mention, and passive-message trigger scope before allowing an agent to respond from collaboration events.
 - Preserve queued prompt, queued command, receipt, owner, and cancellation evidence when an event starts or steers long-running agent work.
+- Preserve connector authorization, watched-resource scope, pending-event review state, and source event provenance for Gmail, Slack, GitHub, CI, and notebook-driven triggers.
 
 ## Authoritative Sources
 
@@ -50,6 +53,8 @@ The August 18 raw sources add channel-trigger and queued-work signals. The [leaf
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
 
 ## Related Code
 
@@ -81,3 +86,4 @@ The August 18 raw sources add channel-trigger and queued-work signals. The [leaf
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.
 - Maintained on 2026-07-27 with scheduled-worktree, agent-host, CI, issue, and manual trigger distinctions.
 - Maintained on 2026-08-18 with passive channel-trigger, queued-steering, long-running receipt, owner, and noise-control evidence.
+- Maintained on 2026-08-25 with connector-triggered task, GitHub event, notebook workflow, and PR-review automation evidence.
