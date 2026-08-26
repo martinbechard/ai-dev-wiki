@@ -1,0 +1,526 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-26T00:33:15Z",
+  "run_timestamp_local": "2026-08-25T20:33:15-04:00",
+  "cutoff_window": {
+    "start": "2026-08-24T00:33:15Z",
+    "end": "2026-08-26T00:33:15Z",
+    "policy": "Included only public web sources with visible publication or update dates inside the two-day window. Excluded missing, ambiguous, future-dated, older, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practices, workflow design, context architecture, guidance structure, verification, governance, and adoption patterns.",
+    "upstream_scope": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques are owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "handling": "Entity and product details are marked as upstream-owned; local entries retain only the practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "ChatGPT scheduled tasks can trigger from Gmail, Slack, and GitHub events",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_date": "2026-08-25",
+      "source_type": "vendor changelog",
+      "factual_summary": "OpenAI documented event-triggered scheduled tasks that can react to supported Gmail, Slack, and GitHub events, including pull request activity such as reviews, comments, commit updates, and merges. The note states app access must be connected and approved, watched Slack channels must include the app, and event-triggered tasks cannot also use a time schedule.",
+      "why_it_matters": "Event-triggered coding or wiki-maintenance automations need source-workflow rules for app authorization, trigger coalescing, pending-event review, and GitHub activity provenance.",
+      "candidate_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "ChatGPT scheduled tasks",
+        "Gmail",
+        "Slack",
+        "GitHub",
+        "pull request events"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Gmail",
+        "Slack",
+        "GitHub"
+      ],
+      "local_practice_implication": "Record event-triggered automation as a source-workflow pattern with explicit connector permission evidence and review surfaces for batched events."
+    },
+    {
+      "title": "Codex MCP server command deprecated in favor of app server",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_date": "2026-08-24",
+      "source_type": "vendor changelog",
+      "factual_summary": "OpenAI marked the `codex mcp-server` command as deprecated and directed users to the Codex app server. The same changelog entry routes Claude Code usage through the Codex plugin for Claude Code.",
+      "why_it_matters": "Runtime setup instructions and MCP integration runbooks should treat command-level entry points as versioned dependencies that can be deprecated, and should separate local practice notes from upstream product documentation.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "codex mcp-server",
+        "Codex app server",
+        "Codex plugin for Claude Code",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Anthropic",
+        "Claude Code",
+        "MCP"
+      ],
+      "local_practice_implication": "Keep agent runtime integration instructions pinned to current supported commands and capture deprecations as raw source evidence before updating durable setup leaves."
+    },
+    {
+      "title": "Runme and WebMCP notebook workflow for recurring Codex work",
+      "source_url": "https://developers.openai.com/blog/automating-repetitive-work-at-openai-with-codex",
+      "visible_date": "Aug 25, 2026",
+      "source_type": "vendor engineering blog",
+      "factual_summary": "OpenAI described using Runme and WebMCP to turn recurring engineering tasks into reviewable, reusable workflows. The article highlights notebooks that combine instructions, commands, results, tables, charts, Markdown, code cells, and HTML.",
+      "why_it_matters": "Reusable agent workflows can be represented as executable notebooks that preserve instructions, commands, outputs, and review context together instead of relying on one-off prompts.",
+      "candidate_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "Runme",
+        "WebMCP",
+        "Codex",
+        "notebooks"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Runme",
+        "WebMCP",
+        "MCP"
+      ],
+      "local_practice_implication": "Consider a local practice leaf for reviewable executable workflow artifacts where prompts, commands, generated evidence, and replay instructions are bundled for recurring tasks."
+    },
+    {
+      "title": "GitHub Copilot app Customize tab groups MCP servers, plugins, skills, and canvases",
+      "source_url": "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+      "visible_date": "August 25, 2026",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub announced general availability of a Copilot app Customize tab that brings MCP servers, plugins, skills, and canvases into one browsing surface. The entry describes discovery by type, featured customizations, trending MCP options, and a backlog canvas for Azure DevOps triage and delegation.",
+      "why_it_matters": "Customization catalogs are becoming a practical control surface for agent tooling and context extensions; local guidance should distinguish discovery convenience from governance, approval, and scope control.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub Copilot app",
+        "Customize tab",
+        "MCP servers",
+        "plugins",
+        "skills",
+        "canvases",
+        "Azure DevOps"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Microsoft",
+        "Azure DevOps",
+        "MCP"
+      ],
+      "local_practice_implication": "Treat customization discovery as an inventory input, not as approval; governed teams still need owner, scope, data-access, and permission records for each enabled extension."
+    },
+    {
+      "title": "Qodo Advanced Configurations for AI code review signal control",
+      "source_url": "https://futurumgroup.com/insights/qodo-gives-teams-full-control-over-ai-code-review-signal/",
+      "visible_date": "Publication Date: August 25, 2026",
+      "source_type": "analyst article",
+      "factual_summary": "Futurum reported that Qodo released Advanced Configurations for controlling how AI-generated code review findings are grouped, ordered, labeled, and routed into pull requests. The article says teams can configure grouping by severity, finding type, category, or relevance; use different severity label vocabularies; set truncation; route findings to inline, summary, both, or drop; and cannot drop highest-severity findings.",
+      "why_it_matters": "AI review usefulness depends on signal routing and reviewer ergonomics, not only detection volume. Highest-severity non-droppable policies are a concrete pattern for preventing interface customization from hiding critical findings.",
+      "candidate_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Qodo",
+        "Advanced Configurations",
+        "AI code review",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "Futurum Group"
+      ],
+      "local_practice_implication": "Capture configurable review-signal policies as a practice pattern: route low-priority findings to reduce noise while preserving mandatory surfacing for high-severity results."
+    },
+    {
+      "title": "Agentic engineering glossary defines harnesses, context, skills, evals, and workflows",
+      "source_url": "https://mainmatter.com/blog/2026/08/25/agentic-engineering-glossary/",
+      "visible_date": "August 25, 2026",
+      "source_type": "engineering blog",
+      "factual_summary": "Mainmatter published a glossary for agentic engineering terms including agent harness, agent loop, context engineering, context rot, continuous AI, evals, handoff, harness engineering, hooks, plan mode, planner-generator-evaluator pattern, prompt injection, RAG, sandbox, skills, software factory, and subagent.",
+      "why_it_matters": "The glossary reflects convergence around practice vocabulary that maps closely to this wiki's local roots: context management, durable instructions, harness boundaries, subagent coordination, evaluation, and sandboxing.",
+      "candidate_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "agent harness",
+        "agent loop",
+        "context engineering",
+        "context rot",
+        "continuous AI",
+        "evals",
+        "handoff",
+        "hooks",
+        "plan mode",
+        "planner-generator-evaluator pattern",
+        "skills",
+        "subagent"
+      ],
+      "upstream_owned_entities": [
+        "Mainmatter",
+        "Agent Client Protocol",
+        "MCP",
+        "A2A",
+        "Deep-SWE"
+      ],
+      "local_practice_implication": "Use as a routing candidate for terminology normalization only where the local wiki needs practice-specific definitions; broad protocol or benchmark background belongs upstream."
+    },
+    {
+      "title": "AGNTCon and MCPCon Japan schedule centers production agent practice",
+      "source_url": "https://www.linuxfoundation.org/press/agntcon-mcpcon-japan-to-convene-builders-advancing-production-ready-agentic-ai",
+      "visible_date": "Tokyo, Japan, August 25, 2026",
+      "source_type": "foundation press release",
+      "factual_summary": "The Linux Foundation announced the AGNTCon + MCPCon Japan 2026 schedule, describing sessions on production-ready agentic AI, safe connections to tools and enterprise data, multi-agent coordination, evaluation, governance, observability, security, sandboxing, approval gates, audit trails, and verifying agent output.",
+      "why_it_matters": "The event program is evidence that production agent practice is coalescing around the same operational concerns this wiki tracks: boundaries, approvals, telemetry, evaluation, and tool safety.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "AGNTCon",
+        "MCPCon Japan 2026",
+        "Agentic AI Foundation",
+        "Linux Foundation",
+        "approval gates",
+        "audit trails",
+        "sandboxing"
+      ],
+      "upstream_owned_entities": [
+        "Linux Foundation",
+        "Agentic AI Foundation",
+        "MCP"
+      ],
+      "local_practice_implication": "Track the schedule as practice-signal evidence only; do not create local encyclopedia pages for the conference, foundation, or protocols."
+    },
+    {
+      "title": "AI governance framed as infrastructure rather than policy slides",
+      "source_url": "https://www.improving.com/thoughts/ai-governance-agentic-ai-framework/",
+      "visible_date": "August 25, 2026",
+      "source_type": "consulting blog",
+      "factual_summary": "Improving argued that agentic AI governance should be implemented as infrastructure rather than only policy artifacts. The visible text contrasts slide-based acceptable-use governance with the need for enforceable controls.",
+      "why_it_matters": "This supports the local governance pattern that agent access, approval, audit, and enforcement must be operationalized in the runtime and workflow, not left as static policy language.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "agentic AI governance",
+        "governance infrastructure",
+        "acceptable use policy",
+        "data classification"
+      ],
+      "upstream_owned_entities": [
+        "Improving"
+      ],
+      "local_practice_implication": "Route toward governance-controls pages as an operating-model evidence item for enforceable policy, not as broad AI governance background."
+    },
+    {
+      "title": "IANS reports AI governance visibility gaps from APIs, MCP, and plug-ins",
+      "source_url": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/25/ai-governance-is-advancing-while-the-attack-surface-expands",
+      "visible_date": "August 25, 2026",
+      "source_type": "security research blog",
+      "factual_summary": "IANS reported that AI governance is advancing while technical controls and visibility lag. The visible excerpt says 74 percent of enterprise AI environments pull data from external sources through APIs, MCP servers, or third-party plug-ins, expanding integrations, data paths, and identities security teams must protect.",
+      "why_it_matters": "AI-assisted development environments inherit the same exposure pattern when coding agents connect to repositories, issue trackers, CI, package registries, databases, and local tools through plug-ins or MCP.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "AI governance",
+        "APIs",
+        "MCP servers",
+        "third-party plug-ins",
+        "enterprise AI environments"
+      ],
+      "upstream_owned_entities": [
+        "IANS Research",
+        "MCP"
+      ],
+      "local_practice_implication": "Use as raw evidence for inventory-first governance of agent connectors, including identities and data paths introduced by developer plug-ins."
+    },
+    {
+      "title": "TrueFoundry describes per-hop guardrails for agent tool calls",
+      "source_url": "https://www.truefoundry.com/blog/ai-agent-guardrails",
+      "visible_date": "Published: August 25, 2026",
+      "source_type": "vendor engineering blog",
+      "factual_summary": "TrueFoundry described agent guardrails that inspect prompts, model outputs, MCP pre-tool calls, and MCP post-tool results. The article separates identity/access decisions from content checks, maps risks such as prompt injection, PII, secrets, destructive SQL, unsafe shell commands, and policy violations to hook points, and recommends starting guardrails in audit mode before stronger enforcement.",
+      "why_it_matters": "Per-hop inspection is a concrete runtime pattern for preventing authorized agents from acting on unsafe payloads. The audit-to-enforce rollout sequence is useful for AI-assisted development tool-call governance.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "AI Gateway",
+        "MCP pre-tool hook",
+        "MCP post-tool hook",
+        "prompt injection detection",
+        "PII detection",
+        "secrets detection",
+        "SQL sanitizer",
+        "Cedar",
+        "OPA"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "MCP",
+        "Cedar",
+        "OPA",
+        "Azure Prompt Shield"
+      ],
+      "local_practice_implication": "Capture the hook placement and phased enforcement approach as governed tool-call practice, while routing vendor product specifics upstream."
+    },
+    {
+      "title": "TrueFoundry frames agent systems as agent-to-loop-to-graph architecture",
+      "source_url": "https://www.truefoundry.com/blog/andrew-ng-loop-graph-engineering-production",
+      "visible_date": "Published: August 24, 2026",
+      "source_type": "vendor engineering blog",
+      "factual_summary": "TrueFoundry described a production architecture progression from single agent to durable loop to graph, then self-modification and orchestration. The article maps each step to systems questions including tool use, state, recovery, context, approvals, topology, delegation, verification, containment, promotion, and operations.",
+      "why_it_matters": "The progression provides a practice-level lens for deciding when a simple coding-agent workflow needs state externalization, graph coordination, subagent boundaries, or promotion controls.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "agent loop",
+        "graph architecture",
+        "self-modification",
+        "orchestration",
+        "state",
+        "recovery",
+        "approval"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Andrew Ng"
+      ],
+      "local_practice_implication": "Use as candidate evidence for harness-sizing and workflow-escalation guidance: add loop and graph machinery only when state, coordination, or governance needs justify it."
+    },
+    {
+      "title": "TrueFoundry summarizes OpenTelemetry GenAI conventions for agent and MCP observability",
+      "source_url": "https://www.truefoundry.com/blog/opentelemetry-genai-semantic-conventions",
+      "visible_date": "Published: August 24, 2026",
+      "source_type": "vendor engineering blog",
+      "factual_summary": "TrueFoundry summarized the status of OpenTelemetry GenAI semantic conventions, noting that GenAI, provider-specific, and MCP conventions moved to a dedicated repository, were marked Development, and had no official release as of August 21, 2026. The article says current concepts cover model operations, token usage, agent steps, MCP calls, content events, and evaluation results, while content capture remains opt-in and governance-sensitive.",
+      "why_it_matters": "Agent observability should pin emitted semantic versions, test backend support, separate telemetry transport from semantic maturity, and treat prompt or response capture as a policy decision rather than a default.",
+      "candidate_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "OpenTelemetry",
+        "GenAI semantic conventions",
+        "MCP semantic conventions",
+        "gen_ai.evaluation.result",
+        "OTLP",
+        "agent spans",
+        "content capture"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "OpenTelemetry",
+        "MCP"
+      ],
+      "local_practice_implication": "Use as raw evidence for version-aware observability contracts, opt-in content telemetry, and separate evaluator computation from telemetry carriers."
+    },
+    {
+      "title": "Express Computer argues prompts should be managed as system logic",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "visible_date": "On Aug 24, 2026",
+      "source_type": "guest article",
+      "factual_summary": "Express Computer published a guest article arguing that prompts define agent behavior and should be versioned, reviewed, tested, documented, and owned. It recommends modular agent architecture, explicit contracts, validated outputs, regression tests for prompt updates, rollback paths, observability of prompt components and tool calls, and upfront automation boundaries.",
+      "why_it_matters": "The article directly supports durable-instruction practice: prompts and agent instructions should be treated as operational assets with tests, ownership, rollback, observability, and risk-scoped autonomy.",
+      "candidate_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "prompts as system logic",
+        "regression tests",
+        "rollback paths",
+        "automation boundaries",
+        "tool calls",
+        "output validation"
+      ],
+      "upstream_owned_entities": [
+        "Express Computer",
+        "The Hartford India"
+      ],
+      "local_practice_implication": "Use as evidence for prompt-change review gates and instruction ownership, not as broad agent-product coverage."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Context Engineering for Coding Agents",
+      "source_url": "https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html",
+      "visible_date": "Crawled today; no qualifying publication/update date visible in search result",
+      "reason": "Excluded because the visible date was crawl-only, not a publication or updated date inside the cutoff window.",
+      "named_entities": [
+        "context engineering",
+        "coding agents"
+      ]
+    },
+    {
+      "title": "Enterprise MCP Governance: How to Control, Audit, and Secure MCP Server Access at Scale",
+      "source_url": "https://www.truefoundry.com/blog/enterprise-mcp-governance-control-audit-secure-mcp-server-access",
+      "visible_date": "Published: May 8, 2026",
+      "reason": "Excluded because the publication date is older than the two-day cutoff window, even though the page linked to newer related posts.",
+      "named_entities": [
+        "TrueFoundry",
+        "MCP Gateway",
+        "enterprise MCP governance"
+      ]
+    },
+    {
+      "title": "Claude Apps release notes: memory in Claude Cowork",
+      "source_url": "https://docs.anthropic.com/en/release-notes/claude-apps",
+      "visible_date": "August 25, 2026",
+      "reason": "Excluded as primarily an upstream-owned product memory update; local practice implication was too general without a coding-agent or AI-assisted development workflow angle in the visible excerpt.",
+      "named_entities": [
+        "Claude Cowork",
+        "memory",
+        "sensitive topics setting"
+      ]
+    },
+    {
+      "title": "GitHub Copilot default model enablement for Business and Enterprise",
+      "source_url": "https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise/",
+      "visible_date": "July 29, 2026 with policy effective August 26, 2026",
+      "reason": "Excluded because the publication date is outside the window and the August 26 effective date is a boundary/future operational date rather than a visible publication/update date inside the cutoff.",
+      "named_entities": [
+        "GitHub Copilot",
+        "model enablement",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ]
+    },
+    {
+      "title": "GitHub Copilot in Microsoft Teams shared agentic work",
+      "source_url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+      "visible_date": "August 21, 2026",
+      "reason": "Excluded because the visible publication/update date is older than the two-day cutoff window.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Microsoft Teams",
+        "shared agentic work"
+      ]
+    },
+    {
+      "title": "GitHub RAG explainer",
+      "source_url": "https://github.com/resources/articles/software-development-with-retrieval-augmentation-generation-rag",
+      "visible_date": "August 14, 2026",
+      "reason": "Excluded because the visible date is older than the two-day cutoff window and the article is broad technique background owned upstream.",
+      "named_entities": [
+        "retrieval-augmented generation",
+        "RAG",
+        "GitHub"
+      ]
+    },
+    {
+      "title": "AI Security Daily Briefing: August 25, 2026",
+      "source_url": "https://techmaniacs.com/2026/08/25/ai-security-daily-briefing-august-25-2026/",
+      "visible_date": "August 25, 2026",
+      "reason": "Excluded because it was an aggregated daily briefing with insufficient primary-source detail for durable local practice capture.",
+      "named_entities": [
+        "AI code review",
+        "SBOM",
+        "open-source packages"
+      ]
+    },
+    {
+      "title": "Agent Observability: Monitoring Decisions, Not Requests",
+      "source_url": "https://www.mongodb.com/company/blog/technical/agent-observability-monitoring-decisions-not-requests",
+      "visible_date": "Search result showed 7 hours ago; page text exposed no stable publication or update date in fetched lines",
+      "reason": "Excluded because the page lacked a stable visible publication/update date in the fetched content, despite a recency hint in search results.",
+      "named_entities": [
+        "agent observability",
+        "decision-level observability",
+        "memory-retrieval relevance",
+        "cost per task"
+      ]
+    },
+    {
+      "title": "Collate AI Governance Studio",
+      "source_url": "https://www.getcollate.io/blog/collate-governs-enterprise-ai-wherever-it-runs",
+      "visible_date": "Aug 25, 2026",
+      "reason": "Excluded from qualifying updates because it is mainly a product release and the broad AI asset registry/product details are upstream-owned; the local connector-inventory implication is already represented by stronger practice-level governance items in this run.",
+      "named_entities": [
+        "Collate AI Governance Studio",
+        "AI Asset Registry",
+        "AI Lineage",
+        "MCP servers"
+      ]
+    },
+    {
+      "title": "WSO2 self-managed AI Workspace",
+      "source_url": "https://wso2.com/about/news/wso2-makes-ai-workspace-self-hostable/",
+      "visible_date": "London, August 25, 2026",
+      "reason": "Excluded from qualifying updates because it is primarily a vendor product availability announcement; local sovereign and air-gapped governance implications overlap with existing governance-infrastructure findings.",
+      "named_entities": [
+        "WSO2 AI Workspace",
+        "self-managed API Platform",
+        "sovereign LLMs",
+        "MCP servers"
+      ]
+    }
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only; do not move this artifact to raw/processed until a separate ingest pass synthesizes qualifying items into durable pages and digests.",
+    "Likely local synthesis candidates include event-triggered agent workflows, reviewable executable workflow artifacts, governed customization catalogs, configurable AI review signal routing, per-hop guardrails, loop-to-graph workflow escalation, version-aware GenAI observability, and prompt-change regression gates.",
+    "Before durable page edits, search the upstream AI wiki for OpenAI, Codex, GitHub Copilot, Qodo, TrueFoundry, OpenTelemetry, MCP, Runme, WebMCP, and other broad entities to avoid duplicating upstream-owned coverage.",
+    "Some included sources are vendor or analyst materials. Ingest should preserve attribution and avoid generalizing product-specific claims into universal practice rules without corroboration."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
