@@ -1,0 +1,421 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_local": "2026-08-26T21:03:30-0400",
+    "policy": "Only public sources visibly published or updated within the last 7 days qualify; date-only boundary items are excluded unless clearly inside the window.",
+    "start_local": "2026-08-20T21:03:30-0400"
+  },
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "reason": "Missing exact visible publication date; cannot prove it falls inside the strict 7-day window.",
+      "source_url": "https://www.markupdesigns.com/blog/choosing-ai-development-company-uk/",
+      "visible_date": "published last week; no exact date in snippet"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "reason": "Visible date is outside the cutoff after applying the 2026-08-20T21:03:30-0400 boundary.",
+      "source_url": "https://www.gensee.ai/blog.html",
+      "visible_date": "2026-08-19"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "reason": "Original post is stale and the later search-result reply date is not enough to qualify the source as visibly updated in-window.",
+      "source_url": "https://discuss.ai.google.dev/t/gap-solution-have-your-agent-got-stucked-in-a-loop-and-wasting-time-and-tokens/171081",
+      "visible_date": "2026-06-13 original post; August 14 reply visible in search result only"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "reason": "Visible article date is stale for this 7-day watch.",
+      "source_url": "https://www.lotharschulz.info/tag/hooks/",
+      "visible_date": "2026-08-08"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "reason": "Visible publication date is outside the 7-day cutoff.",
+      "source_url": "https://www.cosmicjs.com/blog/cosmic-agent-plugin",
+      "visible_date": "2026-08-14"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "reason": "Relevant visible entries are outside the 7-day cutoff; newer page crawl is not a qualifying update date.",
+      "source_url": "https://developers.openai.com/codex/whats-new",
+      "visible_date": "2026-08-11 relevant import/sync entry; 2026-08-06 plugin entry"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "reason": "Primary spec URL was referenced by a current article, but no in-window visible update date was captured during this scan.",
+      "source_url": "https://agent-plugins.org/",
+      "visible_date": "not verified in this run"
+    },
+    {
+      "candidate_for_leaf_ids": [
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md"
+      ],
+      "reason": "Relevant to raw/wiki structure but lacks a qualifying visible publication or update date.",
+      "source_url": "https://sidekickstrategies.com/training/ai-content-system",
+      "visible_date": "crawled yesterday; no visible publication/update date"
+    }
+  ],
+  "federation_routing": "Broad ecosystem facts about model families, products, frameworks, MCP, Agent Plugins, and vendors are upstream-owned. This artifact records only downstream local-practice implications for workflows, governance, readiness, handoffs, and packaging controls.",
+  "follow_up_notes": [
+    "Ingest should decide whether AID-Guard and MCP roadmap evidence changes scoped-authorization guidance.",
+    "Ingest should treat Nimbalyst and Medium items as secondary market signals, not authoritative product facts.",
+    "No qualifying current source was found for clipping-and-raw-intake in this run."
+  ],
+  "leaf_universe_count": 93,
+  "privacy_and_sensitivity_notes": "Searches used only public topic names, aliases, and public source URLs. Local wiki page bodies were not sent as whole-page external queries.",
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "factual_summary": "Gensee listed a new technical article, \"Securing Coding Agents, One Operation at a Time,\" framing bounded operation authority, evidence, execution, and accepted output as one system architecture.",
+      "id": "gensee-operation-scoped-coding-agent-security-2026-08-26",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "GenseeAI",
+        "coding agents",
+        "operation-scoped authority"
+      ],
+      "source_url": "https://www.gensee.ai/blog.html",
+      "upstream_owned_entities": [
+        "coding agents"
+      ],
+      "visible_published_or_updated_at": "2026-08-26",
+      "why_it_matters_for_leaf": "Supports local leaves that treat agent readiness and governance as operation-scoped controls rather than ambient workspace trust."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "Gensee listed \"From Ambient Privilege to Operation-Scoped Authority,\" describing exact leases, multiple execution paths, and attested promotion for narrowed agent authority.",
+      "id": "gensee-operation-scoped-authority-2026-08-21",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "Gensee Crate Enterprise",
+        "operation-scoped authority",
+        "attested promotion"
+      ],
+      "source_url": "https://www.gensee.ai/blog.html",
+      "upstream_owned_entities": [
+        "GenseeAI"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaf": "Reinforces the local governance implication that approval evidence should bind to bounded delegated effects and promotion, not just initial user consent."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "AID-Guard proposes stateful authorization for delegated agent effects, with mandatory checkpoints for binding an observation, issuing a capability, and claiming at the effect boundary.",
+      "id": "aid-guard-stateful-authorization-2026-08-21",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "AID-Guard",
+        "delegated agent effects",
+        "capabilities",
+        "effect boundary"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.21159",
+      "upstream_owned_entities": [
+        "agent security research"
+      ],
+      "visible_published_or_updated_at": "2026-08-21",
+      "why_it_matters_for_leaf": "Provides current research evidence for local practice around capability-scoped execution, effect-boundary accountability, and durable approval evidence."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "The MCP roadmap was last updated 2026-08-22 and prioritizes agentic messaging primitives, server-initiated events, task composition, HTTP transport hardening, and agent identity/security.",
+      "id": "mcp-roadmap-agentic-messaging-security-2026-08-22",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "Model Context Protocol",
+        "Tasks",
+        "Triggers and Events WG",
+        "Agent identity"
+      ],
+      "source_url": "https://modelcontextprotocol.io/development/roadmap",
+      "upstream_owned_entities": [
+        "Model Context Protocol"
+      ],
+      "visible_published_or_updated_at": "2026-08-22",
+      "why_it_matters_for_leaf": "Affects local scanner and lifecycle-hook pages because public protocol work is moving toward push/event/task primitives instead of polling-heavy client loops."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "factual_summary": "OpenAI listed an August 25, 2026 WebMCP video about building agent-ready sites so Codex can use a site's WebMCP tools inside an app.",
+      "id": "openai-webmcp-agent-ready-sites-video-2026-08-25",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "OpenAI Codex",
+        "WebMCP",
+        "agent-ready sites"
+      ],
+      "source_url": "https://developers.openai.com/codex/videos",
+      "upstream_owned_entities": [
+        "OpenAI Codex",
+        "WebMCP"
+      ],
+      "visible_published_or_updated_at": "2026-08-25",
+      "why_it_matters_for_leaf": "Points to a local readiness criterion: agent-facing app surfaces need explicit MCP tool boundaries and verifiable interaction affordances."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "factual_summary": "OpenAI listed an August 25, 2026 administration video for managing a workspace with ChatGPT Work, including adoption and usage-limit review workflows.",
+      "id": "openai-workspace-management-video-2026-08-25",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "ChatGPT Work",
+        "workspace administration",
+        "usage limits"
+      ],
+      "source_url": "https://developers.openai.com/codex/videos",
+      "upstream_owned_entities": [
+        "OpenAI ChatGPT Work"
+      ],
+      "visible_published_or_updated_at": "2026-08-25",
+      "why_it_matters_for_leaf": "Supports local operating-model leaves that evaluate AI development partners and automated feeds by administration, usage, and review evidence rather than feature claims alone."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "factual_summary": "Nimbalyst updated its 2026 AI coding-agent comparison on August 22, emphasizing platforms, pricing, autonomy, visual workspaces, parallel agents, worktree support, and approval gates.",
+      "id": "nimbalyst-ai-coding-agents-updated-2026-08-22",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "Nimbalyst",
+        "Claude Code",
+        "OpenAI Codex",
+        "OpenCode",
+        "Cursor",
+        "Devin",
+        "worktrees"
+      ],
+      "source_url": "https://nimbalyst.com/blog/best-ai-coding-agents-2026/",
+      "upstream_owned_entities": [
+        "AI coding-agent products"
+      ],
+      "visible_published_or_updated_at": "2026-08-22",
+      "why_it_matters_for_leaf": "Useful only as a market signal for local evaluation criteria: compare workspace, platform, approval, and parallel-session ergonomics rather than treating coding agents as one category."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "factual_summary": "The Handoff Tax paper studies model-to-model continuation in coding agents and finds direction-dependent cost/quality penalties when inheriting another model trajectory.",
+      "id": "handoff-tax-arxiv-2026-08-25",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "The Handoff Tax",
+        "coding agents",
+        "model handoff",
+        "trajectory compaction",
+        "SWE-bench Verified"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.24358",
+      "upstream_owned_entities": [
+        "Claude models",
+        "GPT models",
+        "SWE-bench"
+      ],
+      "visible_published_or_updated_at": "2026-08-25",
+      "why_it_matters_for_leaf": "Directly informs local handoff and router practices: cross-environment continuation should preserve repository state and choose what trajectory context to pass based on handoff direction."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "factual_summary": "A current Medium analysis describes Agent Plugins 1.0.0 as a shared folder layout for skills and MCP servers, while noting that the spec remains a working draft and does not define runtime governance.",
+      "id": "agent-plugins-medium-current-analysis-2026-08-23",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        "Agent Plugins 1.0.0",
+        "plugin.json",
+        "skills",
+        "mcp.json"
+      ],
+      "source_url": "https://medium.com/@richardhightower/universal-agent-plugins-codex-plugins-grok-build-plugins-claude-code-plugins-e468e85a665a",
+      "upstream_owned_entities": [
+        "Agent Plugins",
+        "Codex",
+        "Claude Code",
+        "Grok Build"
+      ],
+      "visible_published_or_updated_at": "2026-08-23 inferred from search result \"4 days ago\"",
+      "why_it_matters_for_leaf": "Keep the local leaf focused on packaging governance: portability is not equivalent to permission, provenance, dependency, or execution safety."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "factual_summary": "A current Medium ecosystem post reports a visible repository-description shift from a Claude-specific .claude directory to a broader .agents directory in a popular skills repository.",
+      "id": "agents-directory-rename-medium-2026-08-24",
+      "local_practice_implication": "Capture as raw evidence for later ingest; do not update durable leaf pages in this watch.",
+      "named_entities": [
+        ".agents directory",
+        ".claude directory",
+        "mattpocock/skills"
+      ],
+      "source_url": "https://medium.com/@lssmj2014/the-234k-convergence-when-the-typescript-teacher-entered-the-foundation-tier-and-renamed-his-10048a230c00",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "agent skills ecosystem"
+      ],
+      "visible_published_or_updated_at": "2026-08-24",
+      "why_it_matters_for_leaf": "Treat as weak ecosystem signal only: local plugin and workspace pages should prefer agent-general packaging names when they avoid unnecessary vendor coupling."
+    }
+  ],
+  "run_timestamp_local": "2026-08-26T21:03:30-0400",
+  "run_timestamp_utc": "2026-08-27T01:03:30Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2608.21159",
+    "https://arxiv.org/abs/2608.24358",
+    "https://developers.openai.com/codex/videos",
+    "https://discuss.ai.google.dev/t/gap-solution-have-your-agent-got-stucked-in-a-loop-and-wasting-time-and-tokens/171081",
+    "https://medium.com/@lssmj2014/the-234k-convergence-when-the-typescript-teacher-entered-the-foundation-tier-and-renamed-his-10048a230c00",
+    "https://medium.com/@richardhightower/universal-agent-plugins-codex-plugins-grok-build-plugins-claude-code-plugins-e468e85a665a",
+    "https://medium.com/@tom.5610/building-your-second-brain-using-claude-code-and-obsidian-part-1-c67e0b97556b",
+    "https://modelcontextprotocol.io/development/roadmap",
+    "https://nimbalyst.com/blog/best-ai-coding-agents-2026/",
+    "https://sidekickstrategies.com/training/ai-content-system",
+    "https://www.gensee.ai/blog.html",
+    "https://www.lotharschulz.info/tag/hooks/"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md": [
+      "https://developers.openai.com/codex/videos",
+      "https://nimbalyst.com/blog/best-ai-coding-agents-2026/"
+    ],
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": [
+      "https://medium.com/@lssmj2014/the-234k-convergence-when-the-typescript-teacher-entered-the-foundation-tier-and-renamed-his-10048a230c00",
+      "https://nimbalyst.com/blog/best-ai-coding-agents-2026/"
+    ],
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [
+      "https://arxiv.org/abs/2608.24358"
+    ],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://nimbalyst.com/blog/best-ai-coding-agents-2026/"
+    ],
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": [
+      "https://arxiv.org/abs/2608.24358"
+    ],
+    "docs/wiki/application-patterns/agent-environment-readiness.md": [
+      "https://developers.openai.com/codex/videos",
+      "https://nimbalyst.com/blog/best-ai-coding-agents-2026/",
+      "https://www.gensee.ai/blog.html"
+    ],
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": [
+      "https://discuss.ai.google.dev/t/gap-solution-have-your-agent-got-stucked-in-a-loop-and-wasting-time-and-tokens/171081",
+      "https://modelcontextprotocol.io/development/roadmap",
+      "https://www.lotharschulz.info/tag/hooks/"
+    ],
+    "docs/wiki/application-patterns/agent-session-recovery.md": [
+      "https://arxiv.org/abs/2608.24358"
+    ],
+    "docs/wiki/context-architecture/thin-context-router.md": [
+      "https://arxiv.org/abs/2608.24358"
+    ],
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": [
+      "https://arxiv.org/abs/2608.21159",
+      "https://www.gensee.ai/blog.html"
+    ],
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": [
+      "https://arxiv.org/abs/2608.21159",
+      "https://developers.openai.com/codex/videos",
+      "https://modelcontextprotocol.io/development/roadmap",
+      "https://www.gensee.ai/blog.html"
+    ],
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md": [
+      "https://medium.com/@lssmj2014/the-234k-convergence-when-the-typescript-teacher-entered-the-foundation-tier-and-renamed-his-10048a230c00",
+      "https://medium.com/@richardhightower/universal-agent-plugins-codex-plugins-grok-build-plugins-claude-code-plugins-e468e85a665a"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://developers.openai.com/codex/videos",
+      "https://modelcontextprotocol.io/development/roadmap"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://medium.com/@tom.5610/building-your-second-brain-using-claude-code-and-obsidian-part-1-c67e0b97556b",
+      "https://sidekickstrategies.com/training/ai-content-system"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://developers.openai.com/codex/videos",
+      "https://modelcontextprotocol.io/development/roadmap"
+    ]
+  }
+}
