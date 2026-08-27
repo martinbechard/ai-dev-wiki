@@ -19,6 +19,8 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 
 The August 23 raw sources add two boundary refinements. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) separates browser-control capability from review proof: screenshots, recordings, and reproducible failure reports need to land in the issue, pull request, or review surface. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds approved-app drift: browser extensions, plug-ins, connectors, and embedded assistants can turn ordinary workflows into action-capable agent surfaces when identity, data path, or side effects change.
 
+The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds product signals for separate agent browsers and user-browser agents while broad Claude product coverage stays upstream-owned. Locally, browser-agent runtime selection should distinguish agent-owned browser identity from imported user sessions, require explicit import or exclusion rules for sensitive sites, and pair autonomous actions with prompt-injection screening, action-intent classifiers, enterprise domain controls, manual override, and browser-use evaluation evidence.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -31,6 +33,8 @@ The August 23 raw sources add two boundary refinements. The [topic news collecto
 - Pair browser-agent identity with runtime containment: least privilege, behavioral supervision, egress policy, function-level capability grants, escalation paths, and kill switches.
 - Require browser-test proof to include screenshots, recordings, reproduction steps, extracted data, and failure reports attached to the review surface, not only an agent claim that the browser ran.
 - Reclassify approved browser extensions, plug-ins, connectors, and embedded assistants when they gain new identity, data-access, or action-taking behavior.
+- Distinguish separate agent-browser sessions from user-browser extension sessions before importing logins, cookies, bookmarks, passwords, or site-specific state.
+- Require trusted-site scope, sensitive-site exclusions, prompt-injection probes, action-intent checks, manual override paths, enterprise enablement policy, and evaluation evidence before browser agents take autonomous actions.
 
 ## Authoritative Sources
 
@@ -42,6 +46,7 @@ The August 23 raw sources add two boundary refinements. The [topic news collecto
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
 ## Related Code
 
@@ -71,3 +76,4 @@ The August 23 raw sources add two boundary refinements. The [topic news collecto
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.
 - Maintained on 2026-08-23 with browser-test proof requirements and approved-app drift checks for browser-adjacent agent surfaces.
+- Maintained on 2026-08-26 with separate agent-browser versus user-browser identity, sensitive-site import rules, prompt-injection probes, action-intent checks, enterprise domain controls, manual override, and browser-use evaluation evidence.

@@ -81,6 +81,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Adoption metrics should separate pull-request volume from cycle-time improvement.
 - Agent activity should be joined to accepted outcomes and coordination burden before rollout claims use it as success evidence.
 
+The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds app-scoped billing automation evidence. Usage, invoice reconciliation, budgets, and cost-center workflows can use installation tokens instead of personal access tokens, but local telemetry should treat read-write billing permissions as a governed automation surface with owner, budget effect, reconciliation scope, and revocation evidence.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -143,6 +145,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Assign a budget owner, threshold, escalation path, and accepted-outcome baseline before scaling coding-agent pilots into standing team infrastructure.
 - Compare modernization-agent spend with the human delivery baseline, verification cost, review effort, and accepted migration outcome rather than with nominal model cost alone.
 - Include false-positive triage minutes, pull-request coordination load, cycle-time impact, accepted outcomes, and review quality when evaluating AI review or coding-agent adoption cost.
+- Prefer app-scoped credentials for recurring billing and usage telemetry only when the permission class, affected budgets, cost centers, reconciliation workflow, owner, and revocation path are recorded.
 
 ## Authoritative Sources
 
@@ -192,6 +195,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [AWS CloudWatch Coding Agent Insights launch](https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/)
 - [AWS CloudWatch and OpenTelemetry operations blog](https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/)
 
@@ -218,6 +222,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-08-26 with app-scoped billing automation, budget/cost-center permission review, and revocation evidence for recurring AI cost telemetry.
 
 - Maintained on 2026-07-23 with adoption-phase telemetry, agent-sprawl cost visibility, external-service dependency, and budget-owner signals.
 - Maintained on 2026-08-18 with cost-owner, budget-threshold, modernization-baseline, and managed-settings attribution signals.

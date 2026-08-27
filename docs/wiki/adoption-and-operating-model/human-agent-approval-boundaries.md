@@ -53,6 +53,8 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 
 The August 23 raw sources add shared-channel, code-review-policy, and regulated-action evidence. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) reinforces that AI review, project-context tools, and enterprise coding-agent trials should provide first-pass evidence, not approval. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds risk-tiered code-review policy, shared-channel write gating, inherited-permission review, and high-risk action gates. Locally, humans should approve intent, scope, risk tier, production or regulated action, and final acceptance even when the agent can plan, review, or act from a shared channel.
 
+The August 26 raw sources add exact-action and operation-scoped approval evidence. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records operation-scoped leases and effect-boundary claims, while the [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) records NHI guidance that approval should bind the human approver, exact agent action, execution context, timestamp, step-up authentication, tamper-evident logging, and short-lived execution token. Locally, ticket state or generic approval is weaker than payload-bound authorization retained with the action record.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -95,6 +97,8 @@ The August 23 raw sources add shared-channel, code-review-policy, and regulated-
 - Treat AI review comments, project-context comparisons, browser-test results, and channel-visible approval widgets as evidence packages until a human accepts the specific risk tier and action.
 - Require explicit human approval for regulated, production, credential, dependency, or externally visible agent actions even when written policy or product controls already allow the tool.
 - Make shared-channel coding sessions expose who can trigger writes, who can approve, and which repository or admin policy enforced that boundary.
+- Bind high-risk approvals to the human approver, exact agent action, execution context, timestamp, proposed payload, step-up authentication, tamper-evident log, short-lived execution token, and executed result.
+- Treat ticket state, chat assent, or generic approval records as insufficient when the agent action can change code, credentials, budgets, external systems, or regulated workflow state.
 
 ## Authoritative Sources
 
@@ -128,6 +132,8 @@ The August 23 raw sources add shared-channel, code-review-policy, and regulated-
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
 ## Related Code
 
@@ -178,3 +184,4 @@ The August 23 raw sources add shared-channel, code-review-policy, and regulated-
 - Maintained on 2026-08-11 with untrusted issue/setup-file approval boundaries and tool-approval evidence for cost, fallback, and operating records.
 - Maintained on 2026-08-16 with goal-pursuit stop rules, revocable permissions, reviewer-capacity, defect-risk, and high-impact decision boundaries.
 - Maintained on 2026-08-23 with first-pass review evidence, shared-channel write gating, risk-tiered code review, and regulated-action approval boundaries.
+- Maintained on 2026-08-26 with exact-action approval, operation-scoped leases, step-up authentication, tamper-evident logging, short-lived execution tokens, and payload-bound authorization evidence.

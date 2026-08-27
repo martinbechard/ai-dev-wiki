@@ -1,0 +1,435 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-27T00:32:07Z",
+  "cutoff_window": {
+    "start": "2026-08-25T00:32:07Z",
+    "end": "2026-08-27T00:32:07Z",
+    "date_policy": "Included sources with a visible publication or update date clearly inside the window. Sources visible only as August 25, 2026 were treated as boundary-day ambiguous because no time was visible relative to the exact cutoff."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, harness, and adoption implications.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "routing_rule_applied": "Broad entity updates are recorded as upstream-owned entities; only local practice implications are included."
+  },
+  "search_queries": [
+    "site:github.blog AI coding agent code review August 26 2026",
+    "site:anthropic.com Claude Code MCP permissions August 26 2026",
+    "site:openai.com Codex coding agent August 26 2026",
+    "site:github.blog Copilot coding agent August 26 2026",
+    "August 26 2026 AI code review agent evaluation software engineering evals",
+    "August 25 2026 MCP governance approval audit logs agent tool calls",
+    "August 26 2026 context engineering coding agents durable instructions",
+    "August 26 2026 AI assisted software development team adoption Codex case study",
+    "site:github.blog/changelog/2026-08-26 GitHub Copilot agent August 26 2026",
+    "site:github.blog/changelog/2026-08-25 GitHub Copilot agent August 25 2026",
+    "site:github.blog/changelog/2026-08-26 \"Copilot\" \"Release\" \"August 26, 2026\"",
+    "site:github.blog/changelog/2026-08-25 \"Copilot\" \"Release\"",
+    "site:openai.com/index August 26 2026 Codex loveholidays",
+    "site:openai.com/index August 26 2026 Kiro OpenAI Codex",
+    "site:developers.openai.com/codex/changelog August 2026 Codex CLI",
+    "site:openai.com/index \"Product\" \"Aug 26, 2026\" \"Codex\"",
+    "site:anthropic.com/news Aug 26 2026 Claude Code Cowork browser agent",
+    "site:docs.anthropic.com/en/release-notes \"August 25, 2026\" \"Claude Code\"",
+    "site:docs.anthropic.com/en/docs/claude-code \"August 26, 2026\" hooks MCP permissions",
+    "site:anthropic.com/engineering \"Aug 25, 2026\" \"Claude Code\"",
+    "August 26 2026 \"AI agent\" \"audit\" \"tool calls\" \"software\"",
+    "August 26 2026 \"MCP\" \"AI agents\" \"governance\" \"audit\"",
+    "August 25 2026 \"coding agents\" \"security\" \"permissions\"",
+    "August 26 2026 \"AI coding\" \"TDD\" \"code review\"",
+    "\"Claude gets its own browser in Cowork\" \"Aug 26, 2026\"",
+    "\"Claude in Chrome is generally available\" \"Aug 26, 2026\"",
+    "site:anthropic.com/news \"Aug 26, 2026\" \"Cowork\" \"browser\"",
+    "site:anthropic.com/news \"Aug 26, 2026\" \"Claude in Chrome\""
+  ],
+  "qualifying_findings": [
+    {
+      "title": "loveholidays scales non-specialist development through Codex-guided workflows",
+      "source_url": "https://openai.com/index/loveholidays/",
+      "source_type": "vendor customer story",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "OpenAI reports that loveholidays uses Codex to let business and technical teams propose infrastructure and data-platform changes through encoded best practices, instructions, validations, checks, and release guidance. The story reports AI-assisted code changes rising from 7% to 79% in one year and a 73% increase in AI-assisted deployment frequency.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is adoption-pattern evidence that broad access to coding agents depends on codified validations and release workflow guardrails, not only model access. It belongs locally as an operating-model and source-workflow signal rather than as a product encyclopedia update.",
+      "candidate_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "loveholidays"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "follow_up_notes": "Consider whether operating-agreement leaves should distinguish specialist-authored workflow validations from general user prompting."
+    },
+    {
+      "title": "GitHub global model policy reaches general availability",
+      "source_url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "source_type": "official changelog",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "GitHub says Copilot Business and Enterprise administrators can enforce a global default model availability policy through September 1, 2026. Unconfigured generally available models inherit the policy, explicit model choices are preserved, and open-weight or data-retaining models are disabled by default.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model routing is becoming an enterprise policy object. Local practice should treat default model availability, explicit overrides, data-retention exceptions, and rollout timing as governed decisions with audit-friendly records.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "DeepSeek",
+        "Kimi K2",
+        "Fable 5"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "DeepSeek",
+        "Kimi K2",
+        "Fable 5"
+      ],
+      "follow_up_notes": "Route product/model background upstream; keep local synthesis focused on model-policy evidence and explicit override practice."
+    },
+    {
+      "title": "GitHub App tokens can manage enterprise billing data",
+      "source_url": "https://github.blog/changelog/2026-08-26-github-apps-can-now-access-enterprise-billing-data/",
+      "source_type": "official changelog",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "GitHub Enterprise Cloud now lets enterprise owners grant GitHub Apps read or read-write enterprise billing permissions. App installation tokens can call enterprise billing REST API endpoints for usage, invoice reconciliation, budgets, and cost centers without depending on an individual owner's personal access token.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted development cost monitoring and budget automation can move from person-bound tokens to app-scoped credentials. That improves continuity but also requires explicit permission review because read-write billing automation can affect budgets and cost centers.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Apps",
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Billing REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Apps",
+        "GitHub Enterprise Cloud"
+      ],
+      "follow_up_notes": "Check whether billing and usage telemetry leaves should mention app-scoped credentials as the preferred automation pattern over personal tokens."
+    },
+    {
+      "title": "Claude Cowork receives a separate built-in browser",
+      "source_url": "https://claude.com/blog/cowork-built-in-browser",
+      "source_type": "official product announcement",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "Anthropic says Claude Cowork now opens its own browser in the desktop app to navigate sites, read pages, click, type, and fill forms. The browser is separate from the user's own browser, does not see tabs, bookmarks, or passwords by default, excludes banking, email, and SSO imports unless selected, and is admin-managed on Enterprise plans.",
+      "why_it_matters_for_ai_assisted_development_practice": "Browser-agent workflows are splitting into user-browser and agent-browser modes. Local harness guidance should treat browser identity, login import, trusted-site scope, prompt-injection exposure, and enterprise enablement as first-class runtime boundaries.",
+      "candidate_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Cowork",
+        "Claude desktop app",
+        "Claude in Chrome"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Cowork",
+        "Claude in Chrome"
+      ],
+      "follow_up_notes": "Do not create local product leaves; route product facts upstream and preserve only the browser-agent boundary implications locally."
+    },
+    {
+      "title": "Claude in Chrome GA adds autonomous browser-action safeguards",
+      "source_url": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "source_type": "official product announcement",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "Anthropic says Claude in Chrome is generally available on paid Claude plans and can take more autonomous browser actions. The post describes prompt-injection training, probes that screen web-content tool results, safety classifiers that check actions against the user's request, Enterprise approved-domain controls, and evaluation results for browser-use safeguards.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete browser-agent control pattern: scan tool results, verify intended actions before execution, keep manual override options, and govern enterprise domain scope. It maps to local prompt-injection, browser-agent runtime, and approval-boundary pages.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude in Chrome",
+        "Claude Cowork",
+        "Claude Sonnet 5",
+        "Claude Opus 5",
+        "Claude Fable 5",
+        "Claude Mythos 5"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude in Chrome",
+        "Claude Cowork",
+        "Claude Sonnet 5",
+        "Claude Opus 5",
+        "Claude Fable 5",
+        "Claude Mythos 5"
+      ],
+      "follow_up_notes": "Potential local synthesis should emphasize control design and eval shape rather than model/product comparison."
+    },
+    {
+      "title": "NHI approval evidence guidance binds humans to exact agent actions",
+      "source_url": "https://nhimg.org/faq/how-should-organisations-prove-that-a-human-approved-an-ai-agents-high-risk-acti/?utm_medium=NHIForum&utm_source=nhimg",
+      "source_type": "public FAQ",
+      "visible_date": "Updated August 26, 2026",
+      "factual_summary": "NHI Mgmt Group argues high-risk AI-agent approvals should bind the human approver, exact agent action, execution context, and timestamp. It recommends transaction-specific approval prompts, step-up authentication, tamper-evident logging, and short-lived execution tokens constrained to approved parameters.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports local approval-boundary guidance for coding agents and operational agents: a ticket state or generic approval log is weaker than payload-bound authorization evidence retained with the action record.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "NHI Mgmt Group",
+        "OWASP Agentic AI Top 10",
+        "OWASP NHI Top 10",
+        "NIST AI Risk Management Framework",
+        "NIST Cybersecurity Framework 2.0",
+        "CSA MAESTRO"
+      ],
+      "upstream_owned_entities": [
+        "OWASP Agentic AI Top 10",
+        "OWASP NHI Top 10",
+        "NIST AI Risk Management Framework",
+        "NIST Cybersecurity Framework 2.0",
+        "CSA MAESTRO"
+      ],
+      "follow_up_notes": "Use as practice evidence for exact-payload approval records, not as standards background."
+    },
+    {
+      "title": "TrueFoundry frames MCP as connectivity plus gateway governance",
+      "source_url": "https://www.truefoundry.com/blog/benefits-of-mcp",
+      "source_type": "vendor technical blog",
+      "visible_date": "Published: August 26, 2026",
+      "factual_summary": "TrueFoundry says MCP standardizes tool and data access for agents but leaves authorization, identity, scoped permissions, and audit evidence to enterprise gateway layers. The post emphasizes reusable servers, per-tool scoping, protocol-layer metrics, user attribution, and governance over shared service tokens.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces the local rule that MCP adoption is not complete when a server is connected. Teams need identity propagation, curated tool subsets, credential custody, per-tool telemetry, and audit logs before letting agents act in enterprise systems.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "Agent Gateway",
+        "AI Gateway",
+        "Claude Desktop",
+        "Claude Code",
+        "VS Code",
+        "Okta",
+        "Azure AD"
+      ],
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Model Context Protocol",
+        "MCP Gateway",
+        "Agent Gateway",
+        "AI Gateway",
+        "Claude Desktop",
+        "Claude Code",
+        "VS Code",
+        "Okta",
+        "Azure AD"
+      ],
+      "follow_up_notes": "Local ingest should preserve the gateway-governance implication and route broad MCP or vendor coverage upstream."
+    },
+    {
+      "title": "MintMCP maps AI-SPM to agent identity and runtime governance",
+      "source_url": "https://www.mintmcp.com/blog/ai-security-posture-management",
+      "source_type": "vendor technical blog",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "MintMCP describes AI Security Posture Management as spanning cloud, model, data, application, and agentic runtime layers. It lists agent discovery, first-class agent identities, scoped credentials, MCP tool-call visibility, command and file-access monitoring, token-cost tracking, prompt-injection guardrails, and runtime policy enforcement as agentic-layer controls.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is practice-level vocabulary for separating cloud/model posture from coding-agent runtime posture. Local governance leaves can use it as evidence for inventories, per-agent credentials, tool-call monitoring, and policy-enforced runtime controls.",
+      "candidate_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "MintMCP",
+        "AI Security Posture Management",
+        "MCP Gateway",
+        "Agent Gateway",
+        "Agent Monitor",
+        "Mint Guard",
+        "NIST AI RMF",
+        "EU AI Act",
+        "MITRE ATLAS"
+      ],
+      "upstream_owned_entities": [
+        "MintMCP",
+        "AI Security Posture Management",
+        "MCP Gateway",
+        "Agent Gateway",
+        "NIST AI RMF",
+        "EU AI Act",
+        "MITRE ATLAS"
+      ],
+      "follow_up_notes": "Treat platform list content as upstream-owned; local value is the control taxonomy for agent runtime governance."
+    },
+    {
+      "title": "Specira separates MCP access governance from requirements validation",
+      "source_url": "https://www.specira.ai/blog/ai-agents-mcp-requirements",
+      "source_type": "vendor analysis",
+      "visible_date": "August 26, 2026",
+      "factual_summary": "Specira argues that an MCP server can govern whether an agent can reach requirements data, under whose identity, and with what audit record, but cannot determine whether the requirement is correct, complete, unambiguous, testable, or endorsed. It recommends scoping agent access to validated requirements, making ambiguity machine-visible, using multiple reviewer perspectives, and retaining decision records beyond access logs.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a strong local practice signal for spec-first and executable-PRD workflows: retrieval and permissions are not acceptance criteria. A validation gate must exist before agent-readable requirements become implementation input.",
+      "candidate_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Specira",
+        "Model Context Protocol",
+        "Jama Connect",
+        "Stacklok",
+        "WRITER"
+      ],
+      "upstream_owned_entities": [
+        "Specira",
+        "Model Context Protocol",
+        "Jama Connect",
+        "Stacklok",
+        "WRITER"
+      ],
+      "follow_up_notes": "Consider follow-up synthesis into executable PRD templates or lifecycle review gates."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot app Customize tab is generally available",
+      "source_url": "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+      "visible_date": "August 25, 2026",
+      "reason": "Boundary-day date without visible time; cannot confirm it is later than the exact cutoff of 2026-08-25T00:32:07Z."
+    },
+    {
+      "title": "Push rules in rulesets now support path exceptions",
+      "source_url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions/",
+      "visible_date": "August 25, 2026",
+      "reason": "Boundary-day date without visible time; potentially relevant to repository governance but excluded under the no boundary-only date rule."
+    },
+    {
+      "title": "Rule insights dashboard generally available",
+      "source_url": "https://github.blog/changelog/2026-08-25-rule-insights-dashboard-generally-available/",
+      "visible_date": "August 25, 2026",
+      "reason": "Boundary-day date without visible time; potentially relevant to governance metrics but excluded under the no boundary-only date rule."
+    },
+    {
+      "title": "Release notes: Claude memory in Cowork",
+      "source_url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "visible_date": "August 25, 2026",
+      "reason": "Boundary-day date without visible time; potentially relevant to context memory and sensitive-topic settings but excluded under the no boundary-only date rule."
+    },
+    {
+      "title": "Shadow Agents, Standing Privileges, and the Governance Gap Between Deployment and Discovery",
+      "source_url": "https://www.oreilly.com/radar/shadow-agents-standing-privileges-and-the-governance-gap-between-deployment-and-discovery/",
+      "visible_date": "August 25, 2026",
+      "reason": "Boundary-day date without visible time; practice-relevant governance analysis but excluded under the no boundary-only date rule."
+    },
+    {
+      "title": "AI Coding Agents Are Leaking CI/CD Secrets in 2026",
+      "source_url": "https://www.refontelearning.com/blog/ai-coding-agents-leaking-cicd-secrets",
+      "visible_date": "Tue, Aug 25, 2026",
+      "reason": "Boundary-day date without visible time; also relies on secondary summaries for some statistics."
+    },
+    {
+      "title": "Advancing price-performance for developers with GPT-5.6 in Kiro",
+      "source_url": "https://openai.com/index/gpt-5-6-in-kiro/",
+      "visible_date": "Search result showed 2 days ago; page body did not expose a clear publication date in opened lines and related-card metadata showed Product Aug 24, 2026.",
+      "reason": "Missing or conflicting visible date; excluded despite relevance to spec-driven development and property-based testing."
+    },
+    {
+      "title": "How we contain Claude across products",
+      "source_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "visible_date": "Published May 25, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "UpGuard research on unrestricted AI coding-tool access",
+      "source_url": "https://www.upguard.com/press/new-research-from-upguard-1-in-5-developers-grant-ai-vibe-coding-tools-unrestricted-workstation-access",
+      "visible_date": "February 4, 2026",
+      "reason": "Outside the two-day cutoff window; search result crawl recency did not qualify the source."
+    },
+    {
+      "title": "Axonius AI harness durable context post",
+      "source_url": "https://www.axonius.com/blog/we-built-an-ai-harness-and-asked-it-to-do-less-but-better",
+      "visible_date": "Search result showed 11 hours ago; opened page did not expose a visible publication or update date.",
+      "reason": "Missing visible date, even though the content is relevant to durable context and MCP fan-out cost."
+    },
+    {
+      "title": "Claude Agent SDK / Warp self-improving agents",
+      "source_url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+      "visible_date": "Search and blog index showed August 26, 2026",
+      "reason": "Direct page open failed in the browsing tool, so source details could not be verified from the page body."
+    }
+  ],
+  "follow_up_notes": [
+    "Prioritize ingesting browser-agent runtime boundaries from the two Anthropic Aug 26 posts into local governance/application-pattern leaves while routing Claude product background upstream.",
+    "Consider a local model-policy governance update from GitHub's global model policy GA, focused on default inheritance, explicit overrides, and data-retention exceptions.",
+    "Use the NHI and Specira pieces together for a stronger distinction between access approval, action approval, and artifact validation.",
+    "Leave all broad company, model, product, MCP protocol, and standards background to the upstream AI wiki."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}

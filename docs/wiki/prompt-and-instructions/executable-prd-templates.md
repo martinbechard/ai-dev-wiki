@@ -26,6 +26,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds algorithm-outline evidence from an AI-assisted algorithms book listing. The local implication is specification shape: executable PRDs and algorithm outlines should define intended outcomes, invariants, correctness conditions, and acceptance checks in a form that a coding agent can translate into implementation and that a verifier can check.
 
+The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds requirements-validation evidence. MCP access can govern whether an agent may read a requirement, under whose identity, and with what audit record, but it does not prove that the requirement is correct, complete, unambiguous, testable, or endorsed. Locally, executable PRDs should make validated status, ambiguity markers, reviewer perspectives, decision records, and acceptance criteria explicit before requirements become agent-readable implementation input.
+
 ## Practice Boundaries
 
 - Include allowed tools, human approval points, fallback or escalation behavior, logging requirements, and verification seeds when a PRD is loaded by a coding agent.
@@ -34,6 +36,7 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Treat routing newsletters or secondary summaries as pointers until primary template sources are reviewed.
 - Keep PRD generation, coding-agent prompts, code review criteria, and deployment verification linked as one chain when a workflow teaches end-to-end AI-assisted builds.
 - Capture intended outcomes, invariants, correctness conditions, and acceptance checks explicitly when an algorithm outline becomes coding-agent input.
+- Scope agent access to validated requirement sections and make ambiguity, endorsement, reviewer perspective, decision record, and testability fields visible before the PRD authorizes implementation.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - [Product Map PRD guardrails source](https://www.productmap.io/blog/prd-for-ai-agent-guardrails)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
 - [instruction hierarchy and artifact boundaries](instruction-hierarchy-and-artifact-boundaries.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
@@ -74,3 +78,4 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 - Created on 2026-07-27 from July 27 raw-source evidence about PRD templates as executable agent inputs.
 - Maintained on 2026-07-30 with PRD-to-code-review-to-deployment workflow chaining for AI-native build instruction.
 - Maintained on 2026-08-08 with AI-checkable algorithm outline fields for outcomes, invariants, correctness conditions, and acceptance checks.
+- Maintained on 2026-08-26 with requirement-validation status, ambiguity markers, reviewer perspectives, decision records, and testability gates before agent-readable implementation input.

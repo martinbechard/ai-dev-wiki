@@ -38,6 +38,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 [Governed database agent access](governed-database-agent-access.md) owns the separate bounded-report and role-scoped query-tool pattern for enterprise data.
 
+The August 26 raw sources sharpen the approval-evidence contract. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records operation-scoped leases, capability issuance, effect-boundary claims, WebMCP readiness, and MCP roadmap work on agentic messaging, tasks, events, HTTP hardening, and agent identity. The [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds NHI exact-action approval evidence and TrueFoundry gateway-governance evidence. Locally, MCP access is complete only when identity propagation, curated tool subsets, credential custody, protocol-layer telemetry, exact payload approval, scoped execution token, and gateway audit evidence are all captured.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -60,6 +62,9 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Preserve credential-type revocation evidence, affected-user notice, and audit-log capture so agent or tool incidents can be contained without over-revoking unrelated trusted access.
 - Prefer short-lived task-scoped credentials at agent trust boundaries when a tool can act on external systems or production-adjacent resources.
 - Represent consequential tool approval as a stateful workflow object with approver identity, payload, resource scope, expiry, execution result, and notification evidence.
+- Issue operation-scoped leases or scoped execution tokens only after the observation, requester, resource, tool, payload, effect boundary, and expiry are recorded.
+- Treat MCP roadmap items such as tasks, events, server-initiated messages, HTTP hardening, and agent identity as future authorization surfaces that need approval and audit hooks before adoption.
+- Treat MCP gateways as governance boundaries only when they provide identity propagation, per-tool scoping, credential custody, protocol telemetry, user attribution, and audit logs instead of shared service-token access.
 
 ## Authoritative Sources
 
@@ -76,6 +81,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [governed database agent access](governed-database-agent-access.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -114,3 +121,4 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Maintained on 2026-08-17 with governed CI workflow approval and CI/CD-token MCP server authorization evidence.
 - Maintained on 2026-08-20 with managed endpoint policy, MCP allowlist, permission-mode, telemetry, credential-type revocation, and task-scoped credential evidence.
 - Maintained on 2026-08-21 with stateful approval workflows, scoped expiring grants, and routing for governed database agent access.
+- Maintained on 2026-08-26 with operation-scoped leases, exact-action approval, WebMCP readiness, MCP roadmap event/task identity implications, and gateway-governance evidence.

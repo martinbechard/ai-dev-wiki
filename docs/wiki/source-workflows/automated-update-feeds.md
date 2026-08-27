@@ -21,6 +21,8 @@ Collectors only use public sources and must avoid private, proprietary, sensitiv
 
 The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) reinforces the feed boundary: leaf watches may find useful public evidence about managed settings, cost telemetry, harnesses, and source workflows, but the raw artifact remains the handoff to ingest. Feed output should identify qualifying URLs, excluded candidates, and follow-up notes without turning watcher output into wiki edits before the monitor processes it.
 
+The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds MCP roadmap evidence for server-initiated events, task composition, agentic messaging, and agent identity. Locally, update-feed design should keep polling as the default source-first collector pattern until event or task primitives can provide source URL, visible date, authorization scope, trigger reason, exclusion rationale, and replayable raw artifact evidence.
+
 ## Feed Topics
 
 The feed-topic list is configuration for local practice monitoring, not a separate entity inventory.
@@ -35,6 +37,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Application patterns: harness architecture, structured outputs, workflow state, streaming progress, and AI process layers.
 - Governance and risk: permissions, approvals, audit logs, secrets, prompt injection, package-install risk, licensing, privacy, and compliance.
 - Adoption and operating model: team rollout, operating agreements, acceptance gates, training material, and human accountability.
+- Event and task primitives: server-initiated events, agentic messaging, and task composition can reduce polling only when they preserve source-first provenance, authorization scope, replayability, and exclusion evidence.
 
 ## Configured Automations
 
@@ -49,6 +52,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - Target environment automation record for AI Dev Wiki Topic News Collector.
 - Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
@@ -87,3 +91,4 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Recorded the configured update-feed automations on 2026-06-23 after setup.
 - Split on 2026-06-23 so each automation layer has a durable local practice leaf.
 - Maintained on 2026-07-10 with leaf-watch handoff boundaries for qualifying URLs, exclusions, and follow-up notes.
+- Maintained on 2026-08-26 with MCP roadmap event, task, messaging, and identity implications for source-first feed design.

@@ -75,6 +75,8 @@ The August 20 raw sources add continuous-control and evidence-pack signals. The 
 
 The August 25 raw sources reinforce governance as enforceable infrastructure. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records admin-facing plugins, customization catalogs, governance visibility gaps across APIs, MCP servers, and plug-ins, per-hop tool guardrails, OpenTelemetry GenAI maturity caveats, and policy-as-infrastructure framing. Locally, governance infrastructure should maintain connector inventory, identity and data-path visibility, read/write permission evidence, spending and usage controls, semantic-versioned observability contracts, opt-in content capture policy, and audit-to-enforcement rollout state.
 
+The August 26 raw sources add operation-scoped authority, model-policy, browser-agent, billing-automation, and agent-security-posture evidence. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records Gensee and AID-Guard signals for leases, capability issuance, effect-boundary claims, and attested promotion; the [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) records GitHub model defaults, GitHub App billing permissions, Anthropic browser-agent controls, NHI exact-action approvals, TrueFoundry gateway governance, MintMCP AI-SPM controls, and Specira requirements-validation boundaries. Locally, these sources reinforce that governance infrastructure should bind authority to operation, model route, credential type, browser identity, exact payload, runtime telemetry, and validation gate rather than to a broad agent or workspace trust grant.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -143,6 +145,9 @@ The August 25 raw sources reinforce governance as enforceable infrastructure. Th
 - Treat vendor adoption, safety, and usage metrics as governance inputs only when their collection method, scope, exclusions, and auditability are visible.
 - Treat admin plugins, customization catalogs, API connectors, MCP servers, and third-party plug-ins as governed inventory entries with owner, identity, data path, permission, spend, and revocation evidence.
 - Pin observability semantic conventions, content-capture settings, and backend-support evidence when agent or MCP telemetry becomes a governance control.
+- Bind delegated authority to an operation, capability lease, effect boundary, exact approval payload, model-policy decision, credential type, browser identity, and validation gate when those factors change what the agent can do.
+- Prefer app-scoped automation credentials over personal tokens for recurring usage or billing workflows only when read/write permissions, budget effects, cost-center changes, owner review, and revocation evidence are explicit.
+- Separate cloud, model, data, application, and agentic-runtime posture evidence so coding-agent inventories, per-agent identities, tool-call monitoring, command/file access, prompt-injection guardrails, and token-cost controls remain reviewable.
 
 ## Authoritative Sources
 
@@ -200,6 +205,8 @@ The August 25 raw sources reinforce governance as enforceable infrastructure. Th
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
 ## Related Code
 
@@ -234,6 +241,7 @@ The August 25 raw sources reinforce governance as enforceable infrastructure. Th
 
 - Maintained on 2026-07-23 with task-scoped identity, human owners, just-in-time access, audit trails, and enterprise-layer monitoring signals.
 - Maintained on 2026-08-18 with inventory-first agent risk rollout, managed-settings governance, approval-bypass reporting, and rollout-telemetry signals.
+- Maintained on 2026-08-26 with operation-scoped authority, model-policy, browser-agent, billing-automation, exact-action approval, gateway-governance, AI-SPM, and requirements-validation infrastructure signals.
 - Created on 2026-06-23 to separate infrastructure enforcement, identity, authorization, audit, and accountability from the broader governance-controls page.
 - Maintained on 2026-06-23 with public runtime governance signals for agent inventory, policy enforcement, governed MCP, and run-level evidence.
 - Maintained on 2026-06-24 with trace monitoring, delegated identity, credential revocation, and MCP policy controls.

@@ -15,6 +15,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) and [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) add continuous-governance and startup-operating-practice signals. Hooks should fire when managed settings are applied, skills or files are loaded, browser action begins, approval mode changes, verification runs, credentials are revoked, or a human handoff is required. Locally, the hook contract should expose these state changes to policy and audit systems instead of leaving them as provider-specific product behavior.
 
+The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds MCP roadmap signals for agentic messaging, tasks, server-initiated events, and agent identity. Locally, lifecycle hooks should prepare for inbound event and task starts, server-initiated prompts, identity changes, operation-lease issuance, and task-completion evidence without letting protocol events bypass policy or source provenance.
+
 ## Practice Boundaries
 
 - Emit lifecycle hooks for session start, tool-surface changes, approvals, memory updates, verification steps, failure states, and completion.
@@ -24,12 +26,14 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Record hook failures as workflow evidence when they affect approval, audit, telemetry, or recovery guarantees.
 - Emit hooks for managed-policy application, skill or file loading, browser-action start, sandbox execution, approval-mode changes, credential revocation, and human handoff points.
 - Use hooks to support continuous agent inventory and permission review when prompts, memory, models, tools, or access can change between runs.
+- Emit hooks for inbound events, task composition, server-initiated messages, agent-identity changes, operation-lease issuance, and task-completion evidence when protocol primitives trigger agent work.
 
 ## Authoritative Sources
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -60,3 +64,4 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 - Created on 2026-07-30 from public evidence about phase gates, sandbox permissions, managed harness controls, and auditable runtime transitions.
 - Maintained on 2026-08-20 with managed-policy, skill/file loading, browser-action, approval-mode, credential-revocation, and continuous-governance hook points.
+- Maintained on 2026-08-26 with inbound event, task-composition, server-initiated message, agent-identity, operation-lease, and task-completion hook points.

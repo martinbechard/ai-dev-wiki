@@ -15,6 +15,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds browser-use and conversation-to-knowledge handoff signals. When an agent crosses from browser action or shared channel context into repository, workflow, or external-system action, the handoff should name the visible context used, private context excluded, browser or channel evidence captured, and the human decision required before the next environment changes state.
 
+The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds model-to-model continuation evidence from the Handoff Tax paper. Broad benchmark and model background stays upstream-owned; locally, the handoff contract should preserve repository state separately from model trajectory, record which trajectory summary or scratchpad is handed over, and choose how much prior reasoning to pass based on handoff direction, cost, and quality risk.
+
 This page complements [delegated coding handoffs](delegated-coding-handoffs.md) and [subagent coordination](subagent-coordination.md). Those pages own the general handoff and subagent contract; this page owns cross-environment supervision, state transfer, and evidence normalization.
 
 ## Practice Boundaries
@@ -25,11 +27,14 @@ This page complements [delegated coding handoffs](delegated-coding-handoffs.md) 
 - Require human supervision or approval when a handoff crosses from observation into file writes, shell execution, credentials, external systems, or public output.
 - Make the final summary identify environment boundaries, unresolved state, and verification evidence rather than only describing task progress.
 - Record visible channel context, excluded private context, browser-structure evidence, generated draft artifacts, and the human review or redirect point when handoffs cross from conversation or browser work into executable action.
+- Preserve repository state, changed files, verification evidence, and unresolved decisions separately from model trajectory when handing work between agents or models.
+- Record whether the receiving agent should inherit detailed reasoning, a compact summary, or only task state when continuation direction creates cost or quality risk.
 
 ## Authoritative Sources
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [subagent coordination](subagent-coordination.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -60,3 +65,4 @@ This page complements [delegated coding handoffs](delegated-coding-handoffs.md) 
 
 - Created on 2026-07-30 from public evidence about supervised browser, desktop, planning, automation, and summary handoffs.
 - Maintained on 2026-08-20 with browser-use, shared-channel context, private-context exclusion, and human redirect evidence for cross-environment handoffs.
+- Maintained on 2026-08-26 with model-to-model continuation evidence, repository-state preservation, trajectory-summary selection, and direction-sensitive handoff cost or quality risk.

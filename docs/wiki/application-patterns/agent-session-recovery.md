@@ -17,6 +17,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) adds token-type revocation and audit-log evidence. When recovery follows a credential, tool, or agent incident, the recovery record should name affected credential classes, deauthorization action, user notice, audit event, residual access, and whether unrelated trusted credentials were intentionally preserved.
 
+The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds model-to-model continuation evidence. A recovered session should not assume that another model or agent can safely inherit the full prior trajectory; recovery records should separate durable repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence so a resumed agent can choose the minimum context needed for the handoff direction.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -26,6 +28,7 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 - Archive or reset recovery state when it no longer matches the live repository or accepted plan.
 - Separate task plan, execution memory, auditor findings, and artifact evidence so resumed work can rehydrate needed state without rewriting audit history.
 - For security recovery, preserve credential class, revocation or deauthorization action, affected-user notice, audit-log reference, residual-access review, and containment result before resuming agent work.
+- For model or agent continuation recovery, separate repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence before deciding how much prior reasoning to reload.
 
 ## Authoritative Sources
 
@@ -33,6 +36,7 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -63,3 +67,4 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 - Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.
 - Maintained on 2026-08-08 with fresh-context executor, read-only auditor, execution-memory, and artifact-evidence recovery boundaries.
 - Maintained on 2026-08-20 with credential-class revocation, deauthorization, user-notice, audit-log, residual-access, and containment recovery evidence.
+- Maintained on 2026-08-26 with model-to-model continuation boundaries separating repository state, accepted plan, blockers, trajectory summaries, and verification evidence.

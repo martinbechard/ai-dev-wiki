@@ -51,6 +51,8 @@ The August 22 raw sources add document-carrier and connected-app reinforcement:
 - The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) records hidden formatted prompt text in public documents, persistent memory poisoning, malicious links, and connected-app exfiltration as carrier patterns.
 - Locally, document ingestion, memory reuse, link following, and connected-app action require quarantine and authorization checks even when the user-facing text appears harmless.
 
+The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds browser-agent safeguard evidence. Browser pages and tool results should be screened before autonomous browser actions, and the executed action should be checked against the user's request, enterprise trusted-domain scope, and manual override path. Broad Claude product details stay upstream-owned; locally, browser-agent prompt-injection handling becomes a runtime gate, not only a prompt instruction.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -88,6 +90,7 @@ The August 22 raw sources add document-carrier and connected-app reinforcement:
 - Inspect PDFs, filings, resumes, pasted documents, and rich-text artifacts for hidden formatting, white-on-white text, copied prompts, embedded links, and machine-readable content before AI review or extraction.
 - Gate memory writes, memory reads, connected-app actions, and autorun links separately from the conversational answer because injection can persist beyond the original source encounter.
 - Require spend, payment, or paid-service actions to survive prompt-injection screening and delegated-intent checks before execution.
+- Screen browser observations and web-content tool results before autonomous browser actions, then verify intended action, trusted-domain scope, and manual override availability before execution.
 
 ## Authoritative Sources
 
@@ -115,6 +118,7 @@ The August 22 raw sources add document-carrier and connected-app reinforcement:
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
+- [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
 ## Related Code
 
@@ -161,3 +165,4 @@ The August 22 raw sources add document-carrier and connected-app reinforcement:
 - Maintained on 2026-08-09 with AI browser, browser-extension, connected-app, and carrier-document propagation boundaries.
 - Maintained on 2026-08-15 with persistent-memory poisoning, repository-skill baiting, MCP onboarding, provenance, quarantine, and reuse-approval boundaries.
 - Maintained on 2026-08-22 with hidden document-carrier inspection, connected-app, memory, autorun-link, and paid-action prompt-injection controls.
+- Maintained on 2026-08-26 with browser-agent content screening, action-intent checks, trusted-domain scope, and manual-override controls.
