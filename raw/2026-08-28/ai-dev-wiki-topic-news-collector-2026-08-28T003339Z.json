@@ -1,0 +1,303 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-08-28T00:33:39Z",
+  "cutoff_window": {
+    "start": "2026-08-26T00:33:39Z",
+    "end": "2026-08-28T00:33:39Z",
+    "date_policy": "Included sources with a visible publication or update date clearly inside the two-day window. Sources with only crawler recency, missing body dates, future dates, stale dates, or boundary-only dates that could not be placed after the exact cutoff were excluded."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, harness, source, prompt, and adoption implications.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "routing_rule_applied": "Broad entity updates are recorded as upstream-owned entities; only local practice implications are included."
+  },
+  "search_queries": [
+    "site:github.blog/changelog/2026-08-27 Copilot AI coding agent August 27 2026",
+    "site:github.blog/changelog/2026-08-27 GitHub Copilot August 27 2026",
+    "site:developers.openai.com/codex/changelog August 27 2026 Codex CLI",
+    "site:anthropic.com OR site:claude.com August 27 2026 Claude Code MCP",
+    "August 27 2026 AI code review software engineering",
+    "August 27 2026 coding agent code review",
+    "August 27 2026 MCP audit logs AI agents",
+    "August 27 2026 context engineering coding agents",
+    "site:harness.io/blog August 27 2026 AI code review",
+    "site:semgrep.dev/blog August 27 2026 AI code review",
+    "site:snyk.io/blog August 27 2026 AI coding agents security",
+    "site:socket.dev/blog August 27 2026 AI coding agent security",
+    "August 27 2026 software engineering eval LLM",
+    "August 27 2026 SWE-bench agent",
+    "site:arxiv.org 2608 software engineering agent evaluation August 27 2026",
+    "August 27 2026 Model Context Protocol agent approval",
+    "site:blog.cloudflare.com August 27 2026 MCP agent",
+    "site:vercel.com/blog August 27 2026 MCP agent",
+    "August 28 2026 coding agent",
+    "August 28 2026 AI code review",
+    "August 28 2026 MCP AI agents governance",
+    "site:github.blog/changelog/2026-08-28 Copilot"
+  ],
+  "qualifying_findings": [
+    {
+      "title": "GitHub Copilot coding agent can now use custom MCP servers in Visual Studio Code",
+      "source_url": "https://github.blog/changelog/2026-08-27-github-copilot-coding-agent-can-now-use-custom-mcp-servers-in-visual-studio-code/",
+      "source_type": "official changelog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "GitHub says Copilot coding agent in Visual Studio Code can use custom MCP servers, letting teams connect agent workflows to external services and internal developer systems through configured MCP endpoints.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP access is moving into day-to-day coding-agent execution, so local practice should treat MCP server selection, credential custody, tool-scope review, workspace policy, and approval evidence as part of IDE coding-agent governance rather than as optional integration detail.",
+      "candidate_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot coding agent",
+        "Visual Studio Code",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Model Context Protocol"
+      ],
+      "follow_up_notes": "Route broad Copilot, VS Code, and MCP product/protocol coverage upstream; retain local synthesis around governed custom-server use inside coding-agent workflows."
+    },
+    {
+      "title": "GitHub Copilot code review custom instructions are generally available",
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-custom-instructions-general-availability/",
+      "source_type": "official changelog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "GitHub says custom instructions for Copilot code review are generally available, allowing organizations and repositories to steer review behavior with persisted guidance.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI review quality increasingly depends on durable review rubrics encoded near the source. Local coding-practice guidance should distinguish repository-level review instructions, organization-wide norms, and generated-review evidence from one-off reviewer prompts.",
+      "candidate_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "follow_up_notes": "Consider whether local intelligent-code-review and code-review-evals leaves should record custom-instruction maintenance as a review-governance practice."
+    },
+    {
+      "title": "GitHub Copilot deprecates custom code guidelines in favor of repository instructions",
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-deprecation-of-custom-code-guidelines/",
+      "source_type": "official changelog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "GitHub says Copilot custom code guidelines are deprecated and directs users toward repository custom instructions and related instruction-file mechanisms for future guidance.",
+      "why_it_matters_for_ai_assisted_development_practice": "Provider-specific guidance surfaces can churn. Local instruction architecture should keep durable team norms in portable repository artifacts where possible, track provider mappings separately, and avoid treating a single product's guideline UI as the authoritative source of development standards.",
+      "candidate_local_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "repository custom instructions",
+        "custom code guidelines"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "follow_up_notes": "Use as evidence for portable instruction-file strategy; product migration details belong upstream."
+    },
+    {
+      "title": "OpenAI Codex CLI changelog adds runtime and workflow controls",
+      "source_url": "https://developers.openai.com/codex/changelog/",
+      "source_type": "official changelog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "OpenAI's Codex changelog lists Codex CLI updates on August 27, 2026, including changes around local runtime behavior and developer workflow control surfaces.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent runtime surfaces change quickly, so local harness and source-workflow guidance should preserve the distinction between stable operating policies and provider-specific CLI flags, defaults, and session behavior.",
+      "candidate_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI"
+      ],
+      "follow_up_notes": "A future ingest pass should cite only the specific runtime-control implication that maps to local pages; broad Codex release history remains upstream-owned."
+    },
+    {
+      "title": "Harness explains agent-ready repository structure for AI code review",
+      "source_url": "https://www.harness.io/blog/agent-ready-code-repository-ai-code-review",
+      "source_type": "vendor technical blog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "Harness describes an agent-ready repository as one with clear ownership metadata, review boundaries, tests, documentation, and signals that help AI code-review agents locate context and produce actionable feedback.",
+      "why_it_matters_for_ai_assisted_development_practice": "The post supports the local idea that AI code review is a repository-information architecture problem. Review agents need source ownership, test intent, conventions, and retrieval hints, not just model access at pull-request time.",
+      "candidate_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Harness",
+        "AI code review",
+        "code review agents"
+      ],
+      "upstream_owned_entities": [
+        "Harness"
+      ],
+      "follow_up_notes": "Use as practice evidence for repository readiness and review context; avoid duplicating Harness product coverage locally."
+    },
+    {
+      "title": "Semgrep advises using AI carefully in security code review",
+      "source_url": "https://semgrep.dev/blog/2026/using-ai-in-security-code-review",
+      "source_type": "vendor technical blog",
+      "visible_date": "August 27, 2026",
+      "factual_summary": "Semgrep discusses where AI can assist security code review and where deterministic rules, reviewer judgment, and validation remain necessary. The guidance emphasizes augmenting security review instead of delegating final assurance to generated comments.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is local evidence for layered AI review roles: AI review should triage, explain, and route likely findings while deterministic checks and human security review remain acceptance gates for high-risk changes.",
+      "candidate_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Semgrep",
+        "AI security code review",
+        "static analysis"
+      ],
+      "upstream_owned_entities": [
+        "Semgrep"
+      ],
+      "follow_up_notes": "Potential local synthesis should connect security review roles to verification gates and regression repair, not create a local Semgrep product page."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Claude Cowork built-in browser",
+      "source_url": "https://claude.com/blog/cowork-built-in-browser",
+      "visible_date": "August 26, 2026",
+      "reason": "Already captured in the previous collector artifact; no newer visible update found in this run."
+    },
+    {
+      "title": "Claude in Chrome generally available",
+      "source_url": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "visible_date": "August 26, 2026",
+      "reason": "Already captured in the previous collector artifact; no newer visible update found in this run."
+    },
+    {
+      "title": "GitHub global model policy generally available",
+      "source_url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "visible_date": "August 26, 2026",
+      "reason": "Already captured in the previous collector artifact; retained as prior evidence but excluded from this artifact to avoid duplicate collector output."
+    },
+    {
+      "title": "TrueFoundry benefits of MCP",
+      "source_url": "https://www.truefoundry.com/blog/benefits-of-mcp",
+      "visible_date": "Published: August 26, 2026",
+      "reason": "Already captured in the previous collector artifact; no newer visible update found in this run."
+    },
+    {
+      "title": "Specira AI agents and MCP requirements",
+      "source_url": "https://www.specira.ai/blog/ai-agents-mcp-requirements",
+      "visible_date": "August 26, 2026",
+      "reason": "Already captured in the previous collector artifact; no newer visible update found in this run."
+    },
+    {
+      "title": "JetStream Verified MCP governance layer",
+      "source_url": "https://jetstream.security/insights/jetstream-verified-mcp-governance-layer-for-enterprise-ai-agents/",
+      "visible_date": "July 13, 2026",
+      "reason": "Outside the two-day cutoff window, despite search-result recency and topic relevance."
+    },
+    {
+      "title": "Vercel MCP roadmap",
+      "source_url": "https://vercel.com/blog/mcp-roadmap",
+      "visible_date": "Search result showed about six days before the run",
+      "reason": "Outside the two-day cutoff window and primarily upstream-owned product/platform coverage."
+    },
+    {
+      "title": "Socket report on Chrome extension supply-chain risk",
+      "source_url": "https://socket.dev/blog/chrome-extensions-hijacked-with-malware-in-massive-supply-chain-attack",
+      "visible_date": "August 27, 2026",
+      "reason": "Security-relevant, but not sufficiently specific to AI-assisted development practice, coding agents, tool-call governance, or approved topic roots for this collector run."
+    },
+    {
+      "title": "arXiv software engineering agent evaluation results",
+      "source_url": "https://arxiv.org/",
+      "visible_date": "Search results did not expose a specific qualifying paper date and body URL during collection",
+      "reason": "Ambiguous date and insufficient source specificity; excluded under the visible-date requirement."
+    },
+    {
+      "title": "General August 28, 2026 coding-agent search results",
+      "source_url": "https://www.google.com/search?q=August+28+2026+coding+agent",
+      "visible_date": "August 28, 2026 search query date only",
+      "reason": "Search-query date is not a source publication date; no qualifying public source with a clear visible August 28, 2026 body date was verified before the run timestamp."
+    }
+  ],
+  "follow_up_notes": [
+    "Treat GitHub Copilot custom MCP support as a local governance and retrieval-practice signal, while routing broad Copilot, VS Code, and MCP coverage upstream.",
+    "Consider combining the two GitHub instruction-related changelog entries into durable local guidance about portable repository instruction files and review rubrics.",
+    "The Harness and Semgrep items both point toward layered AI code review: repository context readiness, deterministic checks, and human security gates should remain separate concerns.",
+    "No docs/wiki pages or raw/processed files were updated by this collector run."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed"
+  },
+  "blockers": []
+}
