@@ -59,6 +59,8 @@ The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai
 
 The August 25 raw sources add review-signal routing, AI-to-AI review, and application-level evaluation evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records generated-code review safeguards and application-level LLM evaluation; the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records configurable review finding grouping and non-droppable high-severity results; the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records AI-attributed PR review, CI-triggered review bots, and PR accountability evidence. Locally, review evals should score signal routing, severity vocabulary, inline-versus-summary placement, non-droppable critical findings, author/reviewer agent identity, and whether application-level outcomes survive the full workflow rather than only a model benchmark.
 
+The August 27 raw sources add production-review and repository-readiness fields. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records bot-authored PR review coverage, large-PR support, explicit resolution reasons, and production LLM evaluation for secret scanning. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records custom review instructions, agent-ready repository structure, and AI-assisted security review boundaries. Locally, review evals should score durable instruction fit, repository metadata quality, review identity, resolution-reason quality, LLM-judge calibration against production labels, and separation between AI triage, deterministic checks, and human security acceptance.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -101,6 +103,11 @@ The August 25 raw sources add review-signal routing, AI-to-AI review, and applic
 - Score review-signal configuration separately: grouping, ordering, severity labels, truncation, inline or summary placement, and mandatory high-severity surfacing should not be hidden inside aggregate review quality.
 - Preserve author-agent, reviewer-agent, CI-trigger, and human-owner identity when reviewing AI-generated or AI-reviewed pull requests.
 - Evaluate LLM-assisted code review at the application workflow level, including task success, tool use, evidence quality, safety, latency, cost, reliability, and human intervention.
+- Score whether custom review instructions are versioned, repository-owned, and reflected in findings without hiding product-specific setting drift.
+- Score review resolution reasons and bot-authored PR review evidence as feedback-loop data, not only as closed-comment counts.
+- Include repository-readiness fields such as ownership metadata, test intent, documentation, conventions, and retrieval hints when evaluating AI review quality.
+- Calibrate LLM-as-judge review or secret-scanning evals against production labels, deterministic checks, and human adjudication instead of treating judge fluency as correctness.
+- Keep AI security triage, deterministic scanner results, and human security acceptance as separate eval signals.
 
 ## Authoritative Sources
 
@@ -137,6 +144,8 @@ The August 25 raw sources add review-signal routing, AI-to-AI review, and applic
 - [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
 ## Related Code
 
@@ -184,3 +193,4 @@ The August 25 raw sources add review-signal routing, AI-to-AI review, and applic
 - Maintained on 2026-08-21 with false-positive triage cost, reviewer-burden, evidence-quality, behavioral-correctness, and security-fix rubric criteria.
 - Maintained on 2026-08-22 with orchestration-shape, leakage-control, recall-weighted detection, language-mix, repository-mix, and cost-band review-eval criteria.
 - Maintained on 2026-08-25 with configurable review-signal routing, non-droppable high-severity findings, AI-to-AI review identity, CI-triggered review, and application-level evaluation criteria.
+- Maintained on 2026-08-27 with custom review-instruction evals, bot-authored PR review evidence, resolution reasons, repository-readiness fields, and production LLM-judge calibration boundaries.

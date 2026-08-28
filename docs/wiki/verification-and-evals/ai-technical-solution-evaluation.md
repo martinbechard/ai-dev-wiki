@@ -17,6 +17,8 @@ Partner capability belongs in [AI development partner selection](../adoption-and
 
 The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) adds concrete evidence fields for governed agent substrates: data masking logs, prompt-injection screening verdicts, central model/tool/agent communication policy, customer-controlled deployment, customer-held encryption keys where needed, and signed evidence packs. Locally, these are not product endorsements; they are evaluation artifacts a proposed solution should produce when it claims regulated, sovereign, or high-assurance readiness.
 
+The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds terminal-agent, harness, and file-world evaluation evidence. Proposed agent solutions should show verifier quality, process traces, behavior regularization or guardrails, checkpoint and recovery behavior, resource accounting, file-world validation, preview evidence, and production-label calibration when those claims affect acceptance.
+
 ## Evaluation Criteria
 
 - Functional and workflow fit: the solution supports the real user journey, decision points, exception handling, and measurable outcome.
@@ -30,6 +32,7 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 - Maintainability and portability: source, prompts, evaluation datasets, configuration, telemetry, and model/provider replacement paths can survive handoff.
 - Lifecycle cost: build, data work, model use, tools, evaluation, review, monitoring, support, and change costs are visible.
 - Governance evidence: regulated or high-assurance solutions produce data-masking records, prompt-injection verdicts, tool-call policy evidence, signed receipts, and customer-controlled deployment or key-management proof when those claims affect acceptance.
+- Agent execution evidence: terminal or file-world solutions produce verifier-quality evidence, process traces, checkpoint and recovery records, resource accounting, preview evidence, and production-label calibration when those claims affect acceptance.
 
 ## Knockout Gates
 
@@ -41,6 +44,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 - [Technical-solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [Verification loops and evals](verification-loops-and-evals.md)
 - [Representative workflow calibration](representative-workflow-calibration.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
@@ -79,3 +83,4 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 - Created on 2026-08-20 from the technical-solution evaluation query fragment as a durable due-diligence rubric.
 - Maintained on 2026-08-20 with data-masking, prompt-injection verdict, tool-call policy, signed evidence pack, customer-controlled deployment, and key-boundary evaluation artifacts.
+- Maintained on 2026-08-27 with terminal-agent, harness-state, verifier-quality, process-trace, file-world validation, preview, resource-accounting, and production-label calibration evidence.

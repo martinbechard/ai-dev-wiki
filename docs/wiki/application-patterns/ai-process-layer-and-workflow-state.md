@@ -35,6 +35,8 @@ The August 21 sources add persistent goal, orchestration-artifact, and collabora
 - The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) records coding-agent orchestration as a governed process artifact and collaborative channels as places where intermediate work becomes observable.
 - Locally, the process layer should persist goals, event subscriptions, orchestration artifacts, intermediate drafts, approvals, and handoff decisions outside the model transcript.
 
+The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds declarative-workflow and persistent-harness state evidence. YAML workflow actions, checkpoint stores, human input requests, telemetry hooks, persistent REPL histories, memories, skill state, subagent specifications, recovery state, resource accounting, and verification records belong in durable process state when they control long-running agent behavior.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -55,6 +57,7 @@ The August 21 sources add persistent goal, orchestration-artifact, and collabora
 - Store shared-channel context, workflow-object permissions, excluded private context, reasoning reconstruction, draft artifacts, and human accept or redirect decisions as process-layer state for human-agent collaboration.
 - Treat agent-first product workflows as application architecture: context, permissions, governance, and handoff state need durable owners before agents can act inside recurring work.
 - Persist long-lived goals, event subscriptions, steering state, orchestration artifacts, intermediate channel-visible work, approvals, and handoff decisions as application state outside the model transcript.
+- Persist declarative action state, checkpoints, human-input requests, telemetry hooks, REPL histories, memories, subagent specs, recovery state, resource accounting, and verification records outside the model transcript for long-running harnesses.
 
 ## Authoritative Sources
 
@@ -73,6 +76,7 @@ The August 21 sources add persistent goal, orchestration-artifact, and collabora
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 
 ## Related Code
@@ -109,3 +113,4 @@ The August 21 sources add persistent goal, orchestration-artifact, and collabora
 - Maintained on 2026-08-14 with approval-request, queued-work, pinned-context, rewind, status-check, build-provenance, prior-work-history, incident-evidence, and behavior-baseline state boundaries.
 - Maintained on 2026-08-20 with embedded human-agent workflow state for channel context, permissions, private-context exclusion, draft artifacts, and human accept or redirect decisions.
 - Maintained on 2026-08-21 with durable-goal, event-subscription, steering-state, orchestration-artifact, intermediate-work, approval, and handoff state guidance.
+- Maintained on 2026-08-27 with declarative workflow, checkpoint, human-input, telemetry, persistent REPL, memory, subagent, recovery, resource-accounting, and verification state guidance.

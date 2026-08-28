@@ -40,6 +40,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 The August 26 raw sources sharpen the approval-evidence contract. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records operation-scoped leases, capability issuance, effect-boundary claims, WebMCP readiness, and MCP roadmap work on agentic messaging, tasks, events, HTTP hardening, and agent identity. The [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds NHI exact-action approval evidence and TrueFoundry gateway-governance evidence. Locally, MCP access is complete only when identity propagation, curated tool subsets, credential custody, protocol-layer telemetry, exact payload approval, scoped execution token, and gateway audit evidence are all captured.
 
+The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) adds coding-agent custom MCP access inside the IDE. Locally, custom MCP servers for day-to-day coding agents should be approved through server inventory, credential custody, tool-scope review, workspace policy, and approval evidence before the agent can call internal developer systems.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -65,6 +67,7 @@ The August 26 raw sources sharpen the approval-evidence contract. The [leaf upda
 - Issue operation-scoped leases or scoped execution tokens only after the observation, requester, resource, tool, payload, effect boundary, and expiry are recorded.
 - Treat MCP roadmap items such as tasks, events, server-initiated messages, HTTP hardening, and agent identity as future authorization surfaces that need approval and audit hooks before adoption.
 - Treat MCP gateways as governance boundaries only when they provide identity propagation, per-tool scoping, credential custody, protocol telemetry, user attribution, and audit logs instead of shared service-token access.
+- Treat IDE coding-agent custom MCP servers as governed development infrastructure, with server registration, credential custody, tool scope, workspace policy, and approval evidence captured before use.
 
 ## Authoritative Sources
 
@@ -83,6 +86,7 @@ The August 26 raw sources sharpen the approval-evidence contract. The [leaf upda
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 - [governed database agent access](governed-database-agent-access.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -122,3 +126,4 @@ The August 26 raw sources sharpen the approval-evidence contract. The [leaf upda
 - Maintained on 2026-08-20 with managed endpoint policy, MCP allowlist, permission-mode, telemetry, credential-type revocation, and task-scoped credential evidence.
 - Maintained on 2026-08-21 with stateful approval workflows, scoped expiring grants, and routing for governed database agent access.
 - Maintained on 2026-08-26 with operation-scoped leases, exact-action approval, WebMCP readiness, MCP roadmap event/task identity implications, and gateway-governance evidence.
+- Maintained on 2026-08-27 with IDE coding-agent custom MCP server governance for inventory, credential custody, tool-scope, workspace-policy, and approval evidence.

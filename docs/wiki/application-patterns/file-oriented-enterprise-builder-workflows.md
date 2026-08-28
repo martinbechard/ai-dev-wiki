@@ -21,6 +21,8 @@ The August 21 sources add builder-classification and agent-native hosting eviden
 - The [topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json) distinguishes live-data no-code builders, prompt-to-app tools, hosted workspaces, and engineering-led coding agents.
 - Locally, builder adoption should record who owns source of truth, auth, deployment, runtime logs, data access, and production operations before the surface is used for enterprise delivery.
 
+The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds two file-world signals. Prototype-first cloud-agent sessions can create a repository after work starts, and file-oriented workspace benchmarks reinforce that source authority, file diffs, validation, previews, and publish controls are part of the workflow evidence. Locally, builder workflows should capture the moment a generated file world becomes the source of truth.
+
 ## Practice Boundaries
 
 - Prefer file-backed artifacts when enterprise builder changes need review, tests, or release evidence.
@@ -31,6 +33,7 @@ The August 21 sources add builder-classification and agent-native hosting eviden
 - Require exportable source and dependency inventories for generated apps so product retirement does not strand review, maintenance, or provider migration.
 - Inventory managed inference calls separately from generated source files because provider replacement can be a runtime dependency, not only a code change.
 - Classify builder workflows by source ownership, live-data access, code export, PR review path, deployment owner, runtime logs, auth boundary, and production-operations owner.
+- Record when prototype artifacts become repository-backed source, including generated file set, validation evidence, preview evidence, publish approval, deployment owner, and rollback or export path.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The August 21 sources add builder-classification and agent-native hosting eviden
 - [August 4 topic news collector source](../../../raw/processed/2026-08-04/ai-dev-wiki-topic-news-collector-2026-08-04T203217-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
@@ -73,3 +77,4 @@ The August 21 sources add builder-classification and agent-native hosting eviden
 - Created on 2026-07-27 from July 27 raw-source evidence about enterprise builder artifacts, local validation, Git review, and publish workflows.
 - Maintained on 2026-08-04 with generated-app exportability, dependency inventory, managed inference-call inventory, and provider migration guidance.
 - Maintained on 2026-08-21 with builder workflow classification, agent-native hosting, PR review, deployment, auth, runtime-log, and operations ownership guidance.
+- Maintained on 2026-08-27 with prototype-first repository creation, file-world verification, preview, publish, and source-of-truth transition evidence.

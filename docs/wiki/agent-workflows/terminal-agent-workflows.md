@@ -29,6 +29,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Repo-scoped agents, PR-aware execution, and source-host integrations should preserve their own review context.
 - Reviewers should be able to see whether work happened in a terminal, a managed cloud agent, or a mirrored code-hosting surface.
 
+The August 27 raw sources add prototype-first and runtime-control signals. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records cloud-agent sessions that can start before a connected third-party repository exists, create a repository in the background, expose browser previews, and publish through a connected deployment account. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records coding-agent runtime control changes. Locally, terminal and cloud-agent workflows should distinguish prototype-first sessions from repository-bound implementation sessions and preserve when SCM ownership, preview evidence, publishing authority, and CLI or runtime settings became binding.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -41,6 +43,7 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Record execution surface and reconnect history when terminal-agent work moves through local CLI, remote control, scheduled worktree, tmux, or IDE-hosted sessions.
 - Record prebuilt environment version, last-successful-build fallback, commit SHA, build logs, queued command state, prior-work-history source, and provider-status checks when terminal agents run in hosted or cloud workspaces.
 - Record event wake source, durable goal, steering event, repo scope, PR context, and source-host integration when terminal-agent work crosses into managed cloud or code-hosting surfaces.
+- Record the transition from prototype-first cloud work to repository-bound implementation, including created repository, source owner, preview URL evidence, deployment account, publishing approval, and runtime-control settings.
 
 ## Authoritative Sources
 
@@ -57,6 +60,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
 ## Related Code
 
@@ -89,3 +94,4 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Maintained on 2026-07-27 with local CLI, remote-control, scheduled-worktree, tmux, and IDE-hosted execution-surface evidence.
 - Maintained on 2026-08-14 with prebuilt environment, build-fallback, commit-SHA, build-log, queued-command, prior-work-history, and hosted-status evidence.
 - Maintained on 2026-08-21 with event-wake, durable-goal, steering, repo-scope, PR-context, and source-host integration evidence.
+- Maintained on 2026-08-27 with prototype-first cloud-agent sessions, repository creation, preview, publishing, SCM ownership, and runtime-control evidence.

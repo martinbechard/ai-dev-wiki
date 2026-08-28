@@ -25,6 +25,8 @@ The [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-
 
 The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) adds adversarial-test and role-grounded-rubric evidence. Deterministic graders should still own generated adversarial tests and exact pass/fail outcomes, while human or calibrated model judges can score role-specific professional quality only when the rubric is derived from representative deliverables and disagreement is preserved with the trace.
 
+The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds two boundary signals. Terminal-agent training evidence emphasizes verifier quality and process-level behavior, while production secret-scanning evaluation uses LLM judgment only after calibration against production labels and deterministic security signals.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -42,6 +44,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Use deterministic graders for exactness, LLM judges for calibrated semantic judgment, and human review for consequential grader disagreement.
 - Keep grader disagreement, calibration examples, and human override reasons with the scored trace when the result affects release or security posture.
 - Keep generated adversarial tests, role-grounded rubric sources, heterogeneous judge outputs, and human override reasons separate when a benchmark or domain eval combines hard correctness with professional judgment.
+- Evaluate terminal-agent process traces with verifiers that can inspect behavior, not only final task success.
+- Calibrate production LLM judges against labeled outcomes and deterministic security checks before their scores affect release or repair gates.
 
 ## Authoritative Sources
 
@@ -54,6 +58,7 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - [Agent evals source](../../../raw/processed/Making Agent Evals Isn’t As Hard As You Think!.md)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 
 ## Related Code
 
@@ -84,3 +89,4 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 - Maintained on 2026-06-30 with step, content, trace, and thread scoring boundaries for agent evals.
 - Maintained on 2026-07-16 with deterministic-grader, LLM-judge, and human-review disagreement boundaries.
 - Maintained on 2026-08-08 with adversarial-test, role-grounded-rubric, heterogeneous-judge, and trace-linked override boundaries.
+- Maintained on 2026-08-27 with terminal-agent verifier-quality boundaries and production LLM-judge calibration against labels and deterministic security signals.

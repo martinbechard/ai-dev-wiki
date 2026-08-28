@@ -77,6 +77,8 @@ The August 21 sources add loop-enforcement and persistent-agent evidence:
 - The [leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json) adds event subscriptions, always-on modes, isolated subagent environments, long-lived goals, and non-interrupting steering as harness components.
 - Locally, the harness loop should own these controls as runtime state and policy surfaces rather than relying on prompt guidance alone.
 
+The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds declarative workflow, persistent REPL, subagent, human-inspection, recovery, verification, and resource-accounting evidence. Locally, these are harness components when they decide what state survives, which tools can execute, how humans inspect or interrupt, how a run recovers, and how long-horizon work is evaluated.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -135,6 +137,7 @@ The August 21 sources add loop-enforcement and persistent-agent evidence:
 - Treat security scanners, package-risk checks, SBOM ingestion, threat-intelligence context, and expert-review handoffs as harness sensors when agents inspect or change source code.
 - Preserve queued prompts, shell commands, rewind points, cross-surface handoffs, permission modes, and telemetry export as harness state when a developer may resume or audit the run later.
 - Treat loop-level persistence, context compaction, deferred tool discovery, sandboxing, approvals, failure reconstruction, event subscriptions, isolated subagents, durable goals, and steering channels as runtime components with inspectable state.
+- Treat declarative workflow loading, checkpoint persistence, retained REPL history, memory stores, subagent specifications, human inspection, recovery, verification, and resource accounting as harness components for long-horizon agent work.
 
 ## Authoritative Sources
 
@@ -193,6 +196,7 @@ The August 21 sources add loop-enforcement and persistent-agent evidence:
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 
 ## Related Code
 
@@ -228,6 +232,7 @@ The August 21 sources add loop-enforcement and persistent-agent evidence:
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.
 - Maintained on 2026-08-21 with loop-enforcement, event-subscription, isolated-subagent, durable-goal, steering-channel, and failure-reconstruction evidence.
+- Maintained on 2026-08-27 with declarative workflow loading, checkpoint persistence, retained REPL history, memory stores, subagent specs, human inspection, recovery, verification, and resource-accounting components.
 - Maintained on 2026-07-27 with persistent filesystem, sandbox execution, agent-host, tool-approval, multi-file-review, and terminal-diff-link harness components.
 - Maintained on 2026-07-30 with agent-environment readiness components for setup, secrets, restart, and long-job durability.
 - Created on 2026-06-23 to hold harness runtime components separately from broader application architecture.

@@ -39,6 +39,8 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 
 The August 23 raw sources add skills, MCP tools, and session state as execution-loop components. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) reinforces that tools, skills, sandboxing, checkpoints, context management, and session state belong in separately governed artifact layers. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds public skill-directory growth as a reminder that external skill lists are source evidence until reviewed and promoted.
 
+The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) adds a provider migration signal for review guidance. When product-specific code guideline surfaces are deprecated in favor of repository instructions, local teams should keep durable norms in portable repository artifacts and map provider-specific settings to those artifacts rather than making the product UI the source of truth.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -69,6 +71,7 @@ The August 23 raw sources add skills, MCP tools, and session state as execution-
 - Keep team, project, personal, skill, and hook guidance separated so each layer has clear authority, owner, and verification expectations.
 - Keep skills, MCP tools, sandbox controls, checkpoints, context management, and session state in separately reviewed artifact layers rather than blending them into one task prompt.
 - Treat public skill directories and resource lists as external source evidence until a local owner reviews provenance, version, tool scope, and verification expectations.
+- Keep review instructions, coding standards, and provider-specific guideline settings mapped to portable repository instruction files where possible so product-surface churn does not change the authoritative team rule.
 
 ## Authoritative Sources
 
@@ -92,6 +95,7 @@ The August 23 raw sources add skills, MCP tools, and session state as execution-
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
 ## Related Code
 
@@ -132,3 +136,4 @@ The August 23 raw sources add skills, MCP tools, and session state as execution-
 - Maintained on 2026-07-26 with generated-instruction review, attached-context boundaries, model-router configuration, and terminal-agent permission setup guidance.
 - Maintained on 2026-07-29 with layered team, project, personal, skill, and hook instruction boundaries.
 - Maintained on 2026-08-23 with skills, MCP tools, sandbox, checkpoint, context, session-state, and public skill-directory artifact boundaries.
+- Maintained on 2026-08-27 with repository instruction files as the portable owner for review guidance when provider-specific guideline surfaces change.

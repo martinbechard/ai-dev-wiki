@@ -45,6 +45,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Production agentic systems also need runtime guardrails, red-team feedback, and tool-call policy enforcement.
 - Continuous validation and audit-ready evidence should be available before security repair work is accepted.
 
+The August 27 raw sources add review and evaluation evidence for security repair gates. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records production LLM evaluation for secret scanning and bot-authored pull request review evidence. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records AI-assisted security review as augmentation rather than final assurance. Locally, security repair should keep AI triage, deterministic scanner evidence, production-label calibration, human security judgment, and final remediation evidence separate.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -77,6 +79,7 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Retain near-miss and incident evidence, including prompts, traces, identities, tool calls, permissions, credentials, approvals, timelines, and remediation records, when a security repair or evaluation exposes unsafe agent behavior.
 - Verify repository, skill, MCP server, and tool provenance before installation or execution, and block public contact or code-approval persuasion unless explicitly authorized in the repair or evaluation plan.
 - Treat AI-generated vulnerability patches as drafts until exploit variants, behavior-preservation checks, regression tests, domain-expert review, continuous validation, runtime policy evidence, and audit artifacts pass.
+- Keep AI security-review triage, deterministic scanner output, production-label calibration, human security judgment, and remediation proof as separate gates before repair acceptance.
 
 ## Authoritative Sources
 
@@ -100,6 +103,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
+- [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
 ## Related Code
 
@@ -139,3 +144,4 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Maintained on 2026-08-08 with loaded-skill, hidden-command, reusable-instruction, and inter-agent-note review gates for security work.
 - Maintained on 2026-08-14 with SAFE-style incident evidence, repository/tool provenance checks, public-contact blocks, and unauthorized code-approval behavior gates.
 - Maintained on 2026-08-21 with AI vulnerability-patch draft boundaries, exploit-variant, behavior-preservation, regression, expert-review, continuous-validation, runtime-policy, and audit-evidence gates.
+- Maintained on 2026-08-27 with AI security-review augmentation, production-label calibration, deterministic scanner separation, human security judgment, and remediation-proof gates.
