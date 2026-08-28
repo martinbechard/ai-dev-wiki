@@ -1,0 +1,436 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "duration_days": 7,
+    "end_utc": "2026-08-28T01:02:07Z",
+    "start_utc": "2026-08-21T01:02:07Z"
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "reason": "Published before the 2026-08-21T01:02:07Z cutoff window; relevant to cloud-agent harness improvements but stale for this run.",
+      "source_url": "https://cursor.com/changelog/08-19-26",
+      "visible_date": "2026-08-19"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "reason": "Published before the cutoff window; relevant to multi-session work management but stale for this run.",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+      "visible_date": "2026-08-19"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "reason": "Visible date is boundary-only relative to the seven-day cutoff and no qualifying timestamp was captured; routed out of qualifying updates.",
+      "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "reason": "Published before cutoff; the August 27 Cursor start-from-scratch page supersedes it for this run.",
+      "source_url": "https://cursor.com/changelog/origin-code-hosting",
+      "visible_date": "2026-08-17"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited source checked for file-oriented builder workflows; no visible publication or update date inside the last seven days was established.",
+      "source_url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "visible_date": "26C readiness date only"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited source checked; version label is not a qualifying visible recent update date.",
+      "source_url": "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "visible_date": "26.1 documentation version only"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited source checked; version label is not a qualifying visible recent update date.",
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "visible_date": "26.1 documentation version only"
+    }
+  ],
+  "federation_routing_note": "Broad ecosystem entities named by sources are upstream-owned by docs/wiki/federation.md; this artifact records only local AI-assisted development practice implications for selected leaves.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "note": "No strict-window qualifying public update found for this leaf in this scan; exclusions record stale or missing-date candidates when applicable."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "note": "No strict-window qualifying public update found for this leaf in this scan; exclusions record stale or missing-date candidates when applicable."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications."
+    }
+  ],
+  "leaf_universe_count": 93,
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "factual_summary": "GitHub expanded Copilot code review to cover automatically requested reviews on bot-authored pull requests, including Copilot cloud-agent pull requests, and very large pull requests. It also added explicit resolution reasons for Copilot review comments: Addressed, Won't fix, and Incorrect.",
+      "id": "github-copilot-code-review-bot-and-large-pr-support-2026-08-27",
+      "local_practice_implication": "Capture policy, billing attribution, and resolution-reason evidence locally; route product background to upstream.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review",
+        "Copilot cloud agent",
+        "GitHub.com"
+      ],
+      "published_or_updated_at": "2026-08-27",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "visible_date_basis": "GitHub Changelog page shows August 27, 2026.",
+      "why_it_matters_for_leaf": "Local review-gate leaves should treat bot-authored agent pull requests as eligible for full automated review only when organization billing and policy settings are deliberately configured, and should retain human-readable resolution evidence for review feedback loops."
+    },
+    {
+      "factual_summary": "Cursor Cloud Agents can now start without a connected third-party repository, create an Origin repository in the background, provide browser live preview through port forwarding, and publish via a connected Vercel account.",
+      "id": "cursor-cloud-agents-start-without-repo-2026-08-27",
+      "local_practice_implication": "Keep local guidance on repo creation gates, preview evidence, and promotion controls; route product coverage upstream.",
+      "named_entities": [
+        "Cursor Cloud Agents",
+        "Cursor Origin",
+        "Vercel",
+        "GitHub"
+      ],
+      "published_or_updated_at": "2026-08-27",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "source_url": "https://cursor.com/changelog/start-from-scratch",
+      "upstream_owned_entities": [
+        "Cursor",
+        "Vercel",
+        "GitHub"
+      ],
+      "visible_date_basis": "Cursor changelog page shows Aug 27, 2026.",
+      "why_it_matters_for_leaf": "Local harness and file-oriented builder workflows should distinguish prototype-first cloud agent sessions from repository-bound implementation sessions, including the point at which repo visibility, SCM ownership, preview, and publishing controls become binding."
+    },
+    {
+      "factual_summary": "Microsoft Agent Framework declarative workflow documentation now presents YAML-defined workflow actions for .NET and Python, checkpoint/resume patterns, request events for human input, telemetry hooks, and source-generated serializer options for AOT-safe checkpoint persistence.",
+      "id": "microsoft-agent-framework-declarative-workflows-updated-2026-08-25",
+      "local_practice_implication": "Keep local practice focused on artifact review, checkpoint governance, and workflow-state evidence; route framework background upstream.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Azure Agent Provider",
+        "DeclarativeWorkflowBuilder",
+        "CheckpointManager",
+        "Power Fx",
+        "MCP"
+      ],
+      "published_or_updated_at": "2026-08-25T18:41:00Z",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative",
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Azure AI Foundry",
+        "MCP"
+      ],
+      "visible_date_basis": "Microsoft Learn HTML metadata exposes updated_at 2026-08-25T18:41:00Z; page body documents declarative workflow YAML, checkpoints, event streaming, external input requests, telemetry configuration, and AOT-safe checkpoint serialization.",
+      "why_it_matters_for_leaf": "Declarative workflow artifacts and process-layer pages should preserve executable workflow specs, checkpoint stores, telemetry, human input requests, and serialization choices as part of the reviewed artifact, not as incidental runtime code."
+    },
+    {
+      "factual_summary": "The paper studies reinforcement learning for terminal agents and argues that verifier quality and process-level behavior regularization matter more than simply scaling synthetic environment quantity. The proposed River recipe filters low-quality environments and adds behavior regularization, improving Terminal-Bench-Lite and Terminal-Bench-v2.1 results across model sizes.",
+      "id": "terminal-agent-rl-generalization-river-2026-08-23",
+      "local_practice_implication": "Record terminal-agent eval implications locally; route benchmark and method background upstream.",
+      "named_entities": [
+        "River",
+        "Terminal-Bench-Lite",
+        "Terminal-Bench-v2.1",
+        "TMax"
+      ],
+      "published_or_updated_at": "2026-08-23T22:34:40Z",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.22631",
+      "upstream_owned_entities": [
+        "Terminal-Bench",
+        "River"
+      ],
+      "visible_date_basis": "arXiv submission history shows v1 Sun, 23 Aug 2026 22:34:40 UTC.",
+      "why_it_matters_for_leaf": "Terminal-agent workflow and eval leaves should emphasize verifier quality, process traces, and behavior regularization as durable evaluation concerns for command-line agents, rather than treating benchmark environment count as sufficient evidence."
+    },
+    {
+      "factual_summary": "Prime Agent frames harnesses as the membrane between a model and the world, with persistent IPython REPL state, retained histories, memories, skills, subagent specifications, direct agent-to-agent communication, human inspection, recovery, verification, and resource accounting for long-horizon evaluation.",
+      "id": "prime-agent-harness-version-2026-08-24",
+      "local_practice_implication": "Use as evidence for local harness capability boundaries; route entity background upstream.",
+      "named_entities": [
+        "Prime Agent",
+        "Recursive Language Model",
+        "Continual Harness",
+        "IPython",
+        "ARC-AGI-3",
+        "Factorio",
+        "MazeBench"
+      ],
+      "published_or_updated_at": "2026-08-24",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "source_url": "https://arxiv.org/html/2608.23552",
+      "upstream_owned_entities": [
+        "Prime Agent",
+        "ARC-AGI-3",
+        "IPython"
+      ],
+      "visible_date_basis": "arXiv HTML shows current version August 24, 2026.",
+      "why_it_matters_for_leaf": "Agent harness component and workflow-state pages should treat persistence, recovery, observability, resource accounting, and human intervention affordances as first-class harness features that shape evaluation outcomes."
+    },
+    {
+      "factual_summary": "Apodex 1.1 characterizes file-oriented work as tasks where facts, rules, context, and history are distributed across workspace files rather than concentrated in a prompt. It stresses authority relationships, derivation logic, and delivery requirements in constructed file worlds.",
+      "id": "apodex-file-oriented-workspace-benchmark-2026-08-23",
+      "local_practice_implication": "Keep downstream focus on source-authority and file-world verification patterns.",
+      "named_entities": [
+        "Apodex 1.1"
+      ],
+      "published_or_updated_at": "2026-08-25",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.23283",
+      "upstream_owned_entities": [
+        "Apodex"
+      ],
+      "visible_date_basis": "arXiv abstract page shows submitted on 24 Aug 2026 and last revised 25 Aug 2026 for current v2.",
+      "why_it_matters_for_leaf": "File-oriented enterprise builder workflow guidance should preserve source authority, cross-file relationships, and derivation logic as evaluation and handoff evidence for generated artifacts."
+    },
+    {
+      "factual_summary": "GitHub describes production LLM evaluation for secret scanning: start from the product decision, distinguish primary outcomes from safety constraints and operational guardrails, rerun offline evaluation like integration tests, keep evaluation close to production, audit labels, use targeted synthetic cases, perform error analysis, and use LLM-as-judge for triage rather than ground truth.",
+      "id": "github-llm-evaluation-production-secret-scanning-2026-08-25",
+      "local_practice_implication": "Capture production-eval method locally; route GitHub product background upstream.",
+      "named_entities": [
+        "GitHub secret scanning",
+        "LLM-as-judge",
+        "GitHub"
+      ],
+      "published_or_updated_at": "2026-08-25",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "source_url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "upstream_owned_entities": [
+        "GitHub secret scanning",
+        "GitHub"
+      ],
+      "visible_date_basis": "GitHub Blog article shows August 25, 2026.",
+      "why_it_matters_for_leaf": "Solution-evaluation and judge-boundary leaves should preserve decision-specific metrics, safety guardrails, versioned prompts/models/datasets, production-like inputs, label provenance, and human review routing for ambiguous or high-impact cases."
+    }
+  ],
+  "run_timestamp_local": "2026-08-27T21:02:07-0400",
+  "run_timestamp_utc": "2026-08-28T01:02:07Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2608.22631",
+    "https://arxiv.org/abs/2608.23283",
+    "https://arxiv.org/html/2608.23552",
+    "https://cursor.com/changelog",
+    "https://cursor.com/changelog/08-19-26",
+    "https://cursor.com/changelog/origin-code-hosting",
+    "https://cursor.com/changelog/start-from-scratch",
+    "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+    "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+    "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+    "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+    "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative",
+    "https://openai.com/index/previewing-gpt-5-6-sol/"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md": [
+      "https://arxiv.org/abs/2608.22631",
+      "https://cursor.com/changelog/start-from-scratch",
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+      "https://openai.com/index/previewing-gpt-5-6-sol/"
+    ],
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": [
+      "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative"
+    ],
+    "docs/wiki/application-patterns/agent-harness-components.md": [
+      "https://arxiv.org/html/2608.23552",
+      "https://cursor.com/changelog/08-19-26",
+      "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://arxiv.org/html/2608.23552",
+      "https://cursor.com/changelog/08-19-26",
+      "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://arxiv.org/html/2608.23552",
+      "https://cursor.com/changelog/start-from-scratch",
+      "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/"
+    ],
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": [
+      "https://learn.microsoft.com/en-us/agent-framework/workflows/declarative"
+    ],
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": [
+      "https://arxiv.org/abs/2608.23283",
+      "https://cursor.com/changelog/origin-code-hosting",
+      "https://cursor.com/changelog/start-from-scratch",
+      "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html"
+    ],
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": [
+      "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/"
+    ],
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": [
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "https://cursor.com/changelog",
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "https://cursor.com/changelog",
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "https://arxiv.org/abs/2608.23283",
+      "https://cursor.com/changelog/origin-code-hosting",
+      "https://cursor.com/changelog/start-from-scratch"
+    ],
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md": [
+      "https://arxiv.org/abs/2608.22631",
+      "https://arxiv.org/abs/2608.23283",
+      "https://arxiv.org/html/2608.23552",
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "https://openai.com/index/previewing-gpt-5-6-sol/"
+    ],
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": [
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/"
+    ],
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md": [
+      "https://arxiv.org/abs/2608.22631",
+      "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/"
+    ]
+  }
+}
