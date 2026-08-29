@@ -1,0 +1,551 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "duration_days": 7,
+    "end_utc": "2026-08-29T01:03:06Z",
+    "start_utc": "2026-08-22T01:03:06Z"
+  },
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md"
+      ],
+      "reason": "Visible date is outside or boundary-only relative to the strict 2026-08-22T01:03:06Z cutoff; useful structured-output content but excluded from qualifying updates.",
+      "source_url": "https://www.truefoundry.com/blog/llm-structured-outputs-json-schema",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "reason": "Published before the seven-day cutoff window.",
+      "source_url": "https://www.dawiso.com/glossary/ai-lifecycle-governance",
+      "visible_date": "2026-08-20"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "reason": "Visible date is before or boundary-only relative to the strict cutoff; relevant but stale for this run.",
+      "source_url": "https://www.sweet.security/agent-security/ai-agent-governance-tools",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ],
+      "reason": "Published before the cutoff window.",
+      "source_url": "https://winder.ai/ai-agent-harness-comparison/",
+      "visible_date": "2026-08-20"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "reason": "Page body and search result date conflicted; excluded as ambiguous rather than relying on a possibly stale or future-misaligned date.",
+      "source_url": "https://arxiv.org/html/2608.23552",
+      "visible_date": "2026-08-05 body date; search result said 5 days ago"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "reason": "Published before the cutoff window.",
+      "source_url": "https://www.kosmoy.com/resources/blog/best-ai-observability-platforms-2026/",
+      "visible_date": "2026-07-16"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "reason": "Published before the cutoff window.",
+      "source_url": "https://www.confident-ai.com/knowledge-base/compare/best-ai-evaluation-tools-for-ci-cd",
+      "visible_date": "2026-08-03"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md"
+      ],
+      "reason": "Published before the cutoff window.",
+      "source_url": "https://sourcegraph.com/blog/ai-code-review",
+      "visible_date": "2026-05-21"
+    },
+    {
+      "candidate_relevance": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "reason": "Published before the cutoff window.",
+      "source_url": "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+      "visible_date": "2026-08-13"
+    }
+  ],
+  "federation_routing_note": "Broad ecosystem entities named by sources are upstream-owned by docs/wiki/federation.md; this artifact records only local AI-assisted development practice implications for selected leaves.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: techradar-govern-ai-agents-before-rogue-2026-08-27, openhands-agent-observability-guide-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: goldman-agent-skills-institutional-knowledge-2026-08-25, shiftmag-spreadsheet-prompt-injection-red-team-2026-08-27, truefoundry-prompt-versioning-production-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: devops-long-running-agent-runtime-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: expresscomputer-ai-native-operating-models-2026-08-29, goldman-agent-skills-institutional-knowledge-2026-08-25, nimbalyst-coding-agent-workspace-layer-updated-2026-08-22"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: expresscomputer-ai-native-operating-models-2026-08-29, techradar-govern-ai-agents-before-rogue-2026-08-27, goldman-agent-skills-institutional-knowledge-2026-08-25, waxell-agent-lifecycle-governance-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: wsj-ai-model-harness-2026-08-25, devops-long-running-agent-runtime-2026-08-26, nimbalyst-coding-agent-workspace-layer-updated-2026-08-22"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/local-model-runtime-harness.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: wsj-ai-model-harness-2026-08-25, nimbalyst-coding-agent-workspace-layer-updated-2026-08-22"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: shiftmag-spreadsheet-prompt-injection-red-team-2026-08-27, microsoft-agent-framework-structured-outputs-2026-08-25, truefoundry-prompt-versioning-production-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: techradar-govern-ai-agents-before-rogue-2026-08-27, wsj-ai-model-harness-2026-08-25, openhands-agent-observability-guide-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: openhands-agent-observability-guide-2026-08-25, expresscomputer-shipping-ai-generated-code-production-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/destructive-command-controls.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: techradar-i-approve-dangerous-button-2026-08-25, checkpoint-contextual-agent-action-controls-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: expresscomputer-ai-native-operating-models-2026-08-29, techradar-govern-ai-agents-before-rogue-2026-08-27, techradar-i-approve-dangerous-button-2026-08-25, expresscomputer-shipping-ai-generated-code-production-2026-08-26, waxell-agent-lifecycle-governance-2026-08-27, checkpoint-contextual-agent-action-controls-2026-08-27, microsoft-agent-framework-structured-outputs-2026-08-25"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: techradar-i-approve-dangerous-button-2026-08-25, devops-long-running-agent-runtime-2026-08-26, expresscomputer-shipping-ai-generated-code-production-2026-08-26, waxell-agent-lifecycle-governance-2026-08-27, truefoundry-prompt-versioning-production-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: checkpoint-contextual-agent-action-controls-2026-08-27, shiftmag-spreadsheet-prompt-injection-red-team-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+      "note": "Review qualifying updates in this artifact for downstream practice implications: expresscomputer-ai-native-operating-models-2026-08-29, techradar-i-approve-dangerous-button-2026-08-25, devops-long-running-agent-runtime-2026-08-26, expresscomputer-shipping-ai-generated-code-production-2026-08-26"
+    }
+  ],
+  "leaf_universe_count": 93,
+  "qualifying_update_count": 14,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Express Computer argues that enterprise AI value increasingly depends on redesigning end-to-end workflows, decision processes, orchestration, and governance rather than only adding copilots for individual productivity.",
+      "id": "expresscomputer-ai-native-operating-models-2026-08-29",
+      "local_practice_implication": "Keep the local lens on operating agreements and governance checkpoints; route broad enterprise AI-market framing upstream.",
+      "named_entities": [
+        "Express Computer",
+        "Automation Anywhere",
+        "McKinsey"
+      ],
+      "published_or_updated_at": "2026-08-29 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://www.expresscomputer.in/guest-blogs/enterprises-must-shift-from-ai-assisted-to-ai-native-operating-models/138155/",
+      "upstream_owned_entities": [
+        "Automation Anywhere",
+        "McKinsey"
+      ],
+      "visible_date_basis": "Search result showed Published: today during the 2026-08-29T01:03:06Z run; article body discusses AI-native operating models and operational governance.",
+      "why_it_matters_for_leaf": "The selected operating-model and governance leaves should treat workflow redesign, accountable ownership, and embedded approvals as prerequisites for scaled local agent adoption."
+    },
+    {
+      "factual_summary": "TechRadar reports that organizations often lack visibility into which agents are running, what they can access, and who is accountable, and recommends registration, discovery, observability data, granular guardrails, and attention to action ordering.",
+      "id": "techradar-govern-ai-agents-before-rogue-2026-08-27",
+      "local_practice_implication": "Add source evidence for live agent inventories, telemetry-backed ownership, and sequence-aware governance gates.",
+      "named_entities": [
+        "TechRadar",
+        "iManage"
+      ],
+      "published_or_updated_at": "2026-08-27 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/govern-ai-agents-before-they-go-rogue",
+      "upstream_owned_entities": [
+        "iManage"
+      ],
+      "visible_date_basis": "Search result showed Published: 2 days ago during the 2026-08-29T01:03:06Z run; page body stresses active-agent inventory, runtime visibility, guardrails, and action sequencing.",
+      "why_it_matters_for_leaf": "The leaf implications are local: agent rosters need runtime-discovery evidence, observability gates should record actual behavior and cost, and governance controls should evaluate action sequences, not just allowed resources."
+    },
+    {
+      "factual_summary": "The Wall Street Journal highlights the AI model harness as a distinct software layer that controls model tasks, token cost, memory, business-data context, and agent actions, with Moody\u2019s cited as building a proprietary harness.",
+      "id": "wsj-ai-model-harness-2026-08-25",
+      "local_practice_implication": "Use as raw evidence for sizing harness responsibilities and economics, not as a product page for a vendor.",
+      "named_entities": [
+        "Wall Street Journal",
+        "Moody\u2019s",
+        "David Pan"
+      ],
+      "published_or_updated_at": "2026-08-25 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "source_url": "https://www.wsj.com/cio-journal/introducing-the-ai-model-harness-a638c65b",
+      "upstream_owned_entities": [
+        "Moody\u2019s"
+      ],
+      "visible_date_basis": "Search result showed Published: 4 days ago during this run; accessible lines describe the model harness as code that provides memory, business-data context, and action capability.",
+      "why_it_matters_for_leaf": "Local harness-sizing guidance should separate the model from the operational software layer that owns context, actions, cost routing, and enterprise control surfaces."
+    },
+    {
+      "factual_summary": "TechRadar warns that human approvals can become weak rituals if autonomous-agent actions are opaque, and argues for identity, policy enforcement, observability, reasoning transparency, and accountability infrastructure around multi-agent systems.",
+      "id": "techradar-i-approve-dangerous-button-2026-08-25",
+      "local_practice_implication": "Keep local guidance focused on evidence-rich approvals rather than blanket human-in-the-loop language.",
+      "named_entities": [
+        "TechRadar"
+      ],
+      "published_or_updated_at": "2026-08-25 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "upstream_owned_entities": [],
+      "visible_date_basis": "Search result showed Published: 4 days ago during this run; page body references agents as users, identity management, observability, policy enforcement, accountability, and multi-agent handoffs.",
+      "why_it_matters_for_leaf": "Approval gates should be backed by traceable action evidence and identity policy, especially before destructive operations or prototype-to-production promotion."
+    },
+    {
+      "factual_summary": "OpenHands frames AI agent observability as tracing, governance, and control for agents that open pull requests, fix CI, upgrade dependencies, and remediate CVEs without continuous human supervision.",
+      "id": "openhands-agent-observability-guide-2026-08-25",
+      "local_practice_implication": "Route product/runtime specifics upstream; keep local evaluation and telemetry requirements tied to coding-agent actions.",
+      "named_entities": [
+        "OpenHands",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-08-25",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md"
+      ],
+      "source_url": "https://www.openhands.dev/blog/ai-agent-observability",
+      "upstream_owned_entities": [
+        "OpenHands",
+        "Gartner"
+      ],
+      "visible_date_basis": "Page body shows Published on August 25, 2026.",
+      "why_it_matters_for_leaf": "Quality gates for coding agents should retain traces of pull-request actions, CI fixes, dependency changes, and remediation behavior so human reviewers can audit what happened."
+    },
+    {
+      "factual_summary": "DevOps.com argues that long-running production agents need durable execution, workflow orchestration, checkpoints, retries, human review, scoped permissions, observability, auditable evidence, and recovery rather than stateless request-response APIs.",
+      "id": "devops-long-running-agent-runtime-2026-08-26",
+      "local_practice_implication": "Capture durable runtime readiness as a local application-pattern and governance criterion.",
+      "named_entities": [
+        "DevOps.com",
+        "Anuj Kapoor"
+      ],
+      "published_or_updated_at": "2026-08-26",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://devops.com/the-missing-runtime-for-long-running-ai-agents/",
+      "upstream_owned_entities": [],
+      "visible_date_basis": "Page body shows By Anuj Kapoor on August 26, 2026.",
+      "why_it_matters_for_leaf": "Representative workflow calibration should include minutes-or-hours workflows with human waits and system failures, while promotion gates should require durable runtime evidence before production use."
+    },
+    {
+      "factual_summary": "Business Insider reports that Goldman Sachs is systematizing institutional engineering knowledge into reusable AI skills, studying internal processes, and updating those skills through a constant improvement loop as all developers use agentic tools.",
+      "id": "goldman-agent-skills-institutional-knowledge-2026-08-25",
+      "local_practice_implication": "Record local practice implications for skill ownership, roster responsibility, and product-judgment calibration.",
+      "named_entities": [
+        "Goldman Sachs",
+        "Marco Argenti",
+        "Claude",
+        "Devin",
+        "Cognition"
+      ],
+      "published_or_updated_at": "2026-08-25T09:16:01Z",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://www.businessinsider.com/goldman-sachs-engineers-ai-marco-argenti-2026-8",
+      "upstream_owned_entities": [
+        "Goldman Sachs",
+        "Claude",
+        "Devin",
+        "Cognition"
+      ],
+      "visible_date_basis": "Page body shows 2026-08-25T09:16:01.233Z.",
+      "why_it_matters_for_leaf": "Operating agreements and judgment gates should treat reusable skill files as governed knowledge assets with owners, review loops, and eval-backed improvement, not just prompt snippets."
+    },
+    {
+      "factual_summary": "Express Computer, via a Checkmarx security leader, says AI-generated code is already reaching production and requires accurate security tooling, workflow integration, cost planning, tool-agnostic controls, regulated-domain experience, and shared accountability across security, engineering, and leadership.",
+      "id": "expresscomputer-shipping-ai-generated-code-production-2026-08-26",
+      "local_practice_implication": "Use as evidence for multi-role review gates and non-vendor-locked controls in local coding practice.",
+      "named_entities": [
+        "Express Computer",
+        "Checkmarx",
+        "Copilot",
+        "Cursor",
+        "Windsurf"
+      ],
+      "published_or_updated_at": "2026-08-26",
+      "selected_leaf_ids": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "source_url": "https://www.expresscomputer.in/guest-blogs/five-things-technology-and-security-leaders-must-get-right-before-shipping-ai-generated-code-to-production/138106/",
+      "upstream_owned_entities": [
+        "Checkmarx",
+        "Copilot",
+        "Cursor",
+        "Windsurf"
+      ],
+      "visible_date_basis": "Page body shows On Aug 26, 2026.",
+      "why_it_matters_for_leaf": "Layered AI code review should make ownership explicit across automated scans, human engineering review, security review, and leadership accountability before production promotion."
+    },
+    {
+      "factual_summary": "Waxell defines AI agent lifecycle governance as defining, enforcing, and revoking agent authority from design through decommissioning, with attention to permissions, credentials, integrations, runtime policing, and retirement records.",
+      "id": "waxell-agent-lifecycle-governance-2026-08-27",
+      "local_practice_implication": "Keep local guidance on joiner-mover-leaver style authority records for agents.",
+      "named_entities": [
+        "Waxell",
+        "IBM Cost of a Data Breach Report"
+      ],
+      "published_or_updated_at": "2026-08-27",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "source_url": "https://waxell.ai/blog/ai-agent-lifecycle-governance",
+      "upstream_owned_entities": [
+        "Waxell",
+        "IBM"
+      ],
+      "visible_date_basis": "Page body shows Aug 27, 2026.",
+      "why_it_matters_for_leaf": "Lifecycle gates should include decommissioning and credential retirement as first-class control points, not just launch approval and runtime monitoring."
+    },
+    {
+      "factual_summary": "Check Point argues that valid tools and legitimate users are not enough: agent control must judge whether a proposed action belongs in the current task context, especially for destructive commands, permission changes, and confidential-data transfers.",
+      "id": "checkpoint-contextual-agent-action-controls-2026-08-27",
+      "local_practice_implication": "Record contextual authorization as a local governance gate for high-risk agent actions.",
+      "named_entities": [
+        "Check Point"
+      ],
+      "published_or_updated_at": "2026-08-27 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "source_url": "https://blog.checkpoint.com/ai-security/stopping-the-ai-agent-actions-no-rule-could-see-coming/",
+      "upstream_owned_entities": [
+        "Check Point"
+      ],
+      "visible_date_basis": "Search result showed Published: 2 days ago during this run; page body describes destructive commands, self-permission expansion, confidential-data movement, and context-aware action control.",
+      "why_it_matters_for_leaf": "Destructive-command controls should incorporate task-context checks and anomaly detection, not only static allowlists or tool-level approval."
+    },
+    {
+      "factual_summary": "ShiftMag demonstrates prompt injection through spreadsheet-like offer files and companion eval tests, showing that strict JSON output and model-level safeguards do not eliminate risks from untrusted business documents.",
+      "id": "shiftmag-spreadsheet-prompt-injection-red-team-2026-08-27",
+      "local_practice_implication": "Preserve local guidance that untrusted source material needs red-team fixtures, source isolation, and human review for consequential decisions.",
+      "named_entities": [
+        "ShiftMag",
+        "Claude Desktop",
+        "Claude Code",
+        "ChatGPT",
+        "Promptfoo",
+        "OpenAI Codex SDK"
+      ],
+      "published_or_updated_at": "2026-08-27",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "upstream_owned_entities": [
+        "Claude",
+        "ChatGPT",
+        "Promptfoo",
+        "OpenAI Codex"
+      ],
+      "visible_date_basis": "Page body shows 27.08.2026.",
+      "why_it_matters_for_leaf": "Structured output improves reviewability but should not be treated as a security boundary; product-judgment gates need adversarial document fixtures for untrusted-input workflows."
+    },
+    {
+      "factual_summary": "Microsoft Learn documents structured outputs for agents through typed RunAsync results and response_format JSON schema paths, while warning that DefaultAzureCredential convenience requires careful production handling because fallback probing can create latency and security risks.",
+      "id": "microsoft-agent-framework-structured-outputs-2026-08-25",
+      "local_practice_implication": "Route Microsoft Agent Framework background upstream while preserving local schema-contract and credential-boundary implications.",
+      "named_entities": [
+        "Microsoft Agent Framework",
+        "Azure OpenAI",
+        "DefaultAzureCredential",
+        "Foundry Agent"
+      ],
+      "published_or_updated_at": "2026-08-25 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/agent-framework/agents/structured-outputs",
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Azure OpenAI",
+        "Azure AI Foundry"
+      ],
+      "visible_date_basis": "Search result showed 4 days ago during this run; page body documents structured-output approaches for agents and production credential cautions.",
+      "why_it_matters_for_leaf": "Structured-output leaves should distinguish compile-time typed results, runtime schema formats, and production credential behavior as separate implementation and governance choices."
+    },
+    {
+      "factual_summary": "TrueFoundry describes prompt versioning as treating prompts as immutable, testable, promotable, comparable, revertible artifacts connected to evaluation results, guardrails, model choices, and structured-output schema.",
+      "id": "truefoundry-prompt-versioning-production-2026-08-27",
+      "local_practice_implication": "Keep local guidance on prompt artifacts as reviewable system logic, not on TrueFoundry product positioning.",
+      "named_entities": [
+        "TrueFoundry",
+        "Gartner"
+      ],
+      "published_or_updated_at": "2026-08-27 search-result date",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "source_url": "https://www.truefoundry.com/blog/what-is-prompt-versioning",
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "Gartner"
+      ],
+      "visible_date_basis": "Search result showed 2 days ago during this run; page body covers prompt versions with authors, timestamps, descriptions, testing, promotion, comparison, reversion, eval results, and structured-output schema.",
+      "why_it_matters_for_leaf": "Product-judgment and lifecycle gates should require traceable prompt lineage and rollback paths when prompt changes affect production behavior."
+    },
+    {
+      "factual_summary": "Nimbalyst\u2019s updated coding-agent comparison separates agent harnesses, AI IDEs, visual workspaces, and cloud agents, and says the workspace above multiple agents governs parallel sessions, worktree isolation, reviewable commits, and pricing/availability tradeoffs.",
+      "id": "nimbalyst-coding-agent-workspace-layer-updated-2026-08-22",
+      "local_practice_implication": "Use only the workspace-layer and harness-boundary implications locally; route tool catalog details upstream.",
+      "named_entities": [
+        "Nimbalyst",
+        "Claude Code",
+        "OpenAI Codex",
+        "OpenCode",
+        "Aider",
+        "Cline",
+        "Cursor",
+        "Devin",
+        "Replit Agent"
+      ],
+      "published_or_updated_at": "2026-08-22",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "source_url": "https://nimbalyst.com/blog/best-ai-coding-agents-2026/",
+      "upstream_owned_entities": [
+        "Nimbalyst",
+        "Claude Code",
+        "OpenAI Codex",
+        "OpenCode",
+        "Aider",
+        "Cline",
+        "Cursor",
+        "Devin",
+        "Replit Agent"
+      ],
+      "visible_date_basis": "Page body shows Updated August 22, 2026.",
+      "why_it_matters_for_leaf": "Local harness-sizing and operating-agreement leaves should distinguish single-agent harness choices from team workspace controls and portability boundaries."
+    }
+  ],
+  "run_timestamp_local": "2026-08-28T21:03:06-0400",
+  "run_timestamp_utc": "2026-08-29T01:03:06Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/html/2608.23552",
+    "https://blog.checkpoint.com/ai-security/stopping-the-ai-agent-actions-no-rule-could-see-coming/",
+    "https://devops.com/the-missing-runtime-for-long-running-ai-agents/",
+    "https://learn.microsoft.com/en-us/agent-framework/agents/structured-outputs",
+    "https://nimbalyst.com/blog/best-ai-coding-agents-2026/",
+    "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+    "https://sourcegraph.com/blog/ai-code-review",
+    "https://waxell.ai/blog/ai-agent-lifecycle-governance",
+    "https://winder.ai/ai-agent-harness-comparison/",
+    "https://www.businessinsider.com/goldman-sachs-engineers-ai-marco-argenti-2026-8",
+    "https://www.confident-ai.com/knowledge-base/compare/best-ai-evaluation-tools-for-ci-cd",
+    "https://www.dawiso.com/glossary/ai-lifecycle-governance",
+    "https://www.expresscomputer.in/guest-blogs/enterprises-must-shift-from-ai-assisted-to-ai-native-operating-models/138155/",
+    "https://www.expresscomputer.in/guest-blogs/five-things-technology-and-security-leaders-must-get-right-before-shipping-ai-generated-code-to-production/138106/",
+    "https://www.kosmoy.com/resources/blog/best-ai-observability-platforms-2026/",
+    "https://www.linkedin.com/blog/engineering/ai/high-signal-ai-code-review-that-adapts-to-your-codebase-at-scale",
+    "https://www.openhands.dev/blog/ai-agent-observability",
+    "https://www.sweet.security/agent-security/ai-agent-governance-tools",
+    "https://www.techradar.com/pro/govern-ai-agents-before-they-go-rogue",
+    "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+    "https://www.truefoundry.com/blog/llm-structured-outputs-json-schema",
+    "https://www.truefoundry.com/blog/what-is-prompt-versioning",
+    "https://www.wsj.com/cio-journal/introducing-the-ai-model-harness-a638c65b"
+  ]
+}
