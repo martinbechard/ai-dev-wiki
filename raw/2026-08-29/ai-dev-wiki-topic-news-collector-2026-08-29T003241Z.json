@@ -1,0 +1,554 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-29T00:32:41Z",
+  "run_timestamp_local": "2026-08-28T20:32:41-0400",
+  "last_run_timestamp_utc": "2026-08-28T00:30:55.659Z",
+  "cutoff_window": {
+    "basis": "visible publication or update date within the last 2 days relative to run_timestamp_utc",
+    "start_utc": "2026-08-27T00:32:41Z",
+    "end_utc": "2026-08-29T00:32:41Z",
+    "included_visible_dates": [
+      "2026-08-27",
+      "2026-08-28"
+    ],
+    "excluded_boundary_rule": "Items with only 2026-08-26 visible dates were excluded because no visible time confirmed they fell inside the exact two-day window."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "wiki_checks": {
+    "local_status": "project-wiki status passed with 115 pages, 0 missing required files, 0 lint findings",
+    "local_pages_checked": [
+      "docs/wiki/federation.md",
+      "docs/wiki/topic-index.md"
+    ],
+    "upstream_pages_checked": [
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md"
+    ],
+    "federation_summary": "The local wiki owns AI-assisted development practice, workflow, governance, verification, and adoption lenses. The upstream AI wiki owns broad ecosystem entities including companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques."
+  },
+  "searches": [
+    {
+      "query": "AI assisted development code review agent MCP governance August 28 2026",
+      "purpose": "Find recent code review, governance, MCP, and adoption practice signals."
+    },
+    {
+      "query": "context engineering coding agents August 28 2026",
+      "purpose": "Find recent context architecture and coding-agent prompt practice signals."
+    },
+    {
+      "query": "AI coding agent security permissions approval logs August 28 2026",
+      "purpose": "Find recent permission, audit, and approval signals for governed coding agents."
+    },
+    {
+      "query": "RAG codebases coding agents August 28 2026",
+      "purpose": "Find recent code retrieval and codebase RAG practice signals."
+    },
+    {
+      "query": "site:github.blog/changelog August 27 2026 copilot code review",
+      "purpose": "Check primary GitHub changelog sources for in-window Copilot review and policy updates."
+    },
+    {
+      "query": "site:anthropic.com/news August 27 2026 Claude Code",
+      "purpose": "Check primary Anthropic news for in-window agent harness, safety, and workflow updates."
+    },
+    {
+      "query": "August 28 2026 MCP security coding agents permission approval audit logs",
+      "purpose": "Find in-window MCP authorization, permission, and audit evidence."
+    },
+    {
+      "query": "site:arxiv.org AI code review August 27 2026 software engineering agents",
+      "purpose": "Check recent public research candidates for software engineering eval and review updates."
+    }
+  ],
+  "qualifying_findings": [
+    {
+      "id": "github-copilot-code-review-bot-large-pr-resolution-reasons-2026-08-27",
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "source_type": "primary changelog",
+      "visible_date": "August 27, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "GitHub Copilot code review expanded coverage to automatically requested reviews on bot-authored pull requests, including Copilot cloud agent pull requests, and removed the previous 300-file or 20,000-line pull request size limit. The changelog also added explicit resolution reasons for Copilot review comments: Addressed, Won't fix, and Incorrect.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-authored pull requests now need review rules that handle bot-to-agent review loops, organization-billed review attribution, large-diff triage, and reviewer feedback labels. The local practice implication belongs in code review gates, structural diff review, review receipts, and eval feedback loops rather than broad GitHub product coverage.",
+      "candidate_local_topics": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review",
+        "Copilot cloud agent",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "upstream_scope": "developer tool and product coverage"
+        },
+        {
+          "entity": "GitHub",
+          "upstream_scope": "company/provider coverage"
+        }
+      ],
+      "local_practice_implication": "Treat AI review output as a governed review stage with explicit resolution evidence, bot-authored PR attribution, and separate large-PR review strategy."
+    },
+    {
+      "id": "github-copilot-policies-billing-agent-sessions-review-effort-2026-08-28",
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "source_type": "primary changelog",
+      "visible_date": "August 28, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "GitHub announced upcoming Copilot policy and billing changes: new Business and Enterprise signups by credit card or PayPal will resume with account vetting and upfront seat billing, Copilot cloud agent, GitHub.com chat, and mobile chat will converge to a unified Copilot policy no earlier than September 28, 2026, chat data retention will align with the agent sessions experience for the account lifetime, and Copilot code review's default effort level will move from Lite to Balanced.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams need operating-model checks for policy consolidation, retention changes, sandboxed cloud-agent rollout, spend controls, and default review-depth changes. The local wiki should record the practice implication without duplicating Copilot product details owned upstream.",
+      "candidate_local_topics": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot cloud agent",
+        "Copilot Chat",
+        "GitHub Mobile",
+        "Sandbox"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "upstream_scope": "developer tool and product coverage"
+        },
+        {
+          "entity": "GitHub Mobile",
+          "upstream_scope": "developer/product surface coverage"
+        }
+      ],
+      "local_practice_implication": "Review default effort, retention, sandbox, billing, and policy settings as part of agent rollout governance before platform defaults change."
+    },
+    {
+      "id": "github-copilot-visual-studio-shared-agents-usage-thinking-review-2026-08-28",
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "source_type": "primary changelog",
+      "visible_date": "August 28, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "GitHub's Visual Studio Copilot update added organization-level custom agents, usage visibility from the context window, low/medium/high thinking effort controls, model management with capabilities, context window sizes and cost information, and Git-agent reviews of uncommitted changes or commits before pull requests.",
+      "why_it_matters_for_ai_assisted_development_practice": "IDE-native agent work is becoming an administered team surface: custom agents need source labels and ownership, thinking effort needs task-risk guidance, usage views support spend telemetry, and pre-PR Git-agent review needs review receipt rules.",
+      "candidate_local_topics": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Visual Studio",
+        "Git agent",
+        "Azure DevOps",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "upstream_scope": "developer tool and product coverage"
+        },
+        {
+          "entity": "Visual Studio",
+          "upstream_scope": "general developer tool coverage"
+        },
+        {
+          "entity": "Azure DevOps",
+          "upstream_scope": "general developer tool coverage"
+        }
+      ],
+      "local_practice_implication": "Define team-owned custom agent catalogs, risk-based thinking effort defaults, and pre-PR AI review evidence before treating IDE agent output as review-ready."
+    },
+    {
+      "id": "github-copilot-weekly-releases-august-24-2026-08-28",
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "source_type": "primary changelog",
+      "visible_date": "August 28, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "GitHub's Copilot weekly release page for the week of August 24 was published on August 28, 2026. The collector retained it as a qualifying source because it is an in-window primary release summary related to Copilot surfaces, but the page content was not fully captured by the browser excerpt during this run.",
+      "why_it_matters_for_ai_assisted_development_practice": "Weekly release summaries can carry cross-surface workflow changes that affect context continuity, review behavior, and governed agent rollout. Because the page excerpt was incomplete, later ingest should re-open the source and extract only concrete practice-level changes.",
+      "candidate_local_topics": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "upstream_scope": "developer tool and product coverage"
+        }
+      ],
+      "local_practice_implication": "Use as a follow-up extraction candidate; do not synthesize durable practice until specific release facts are verified."
+    },
+    {
+      "id": "wired-openai-codex-persistent-mode-proactivity-2026-08-27",
+      "source_url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "source_type": "reputable secondary reporting",
+      "visible_date": "2026-08-27",
+      "date_confidence": "visible page timestamp via article metadata and search result",
+      "factual_summary": "WIRED reported that public Codex code changes reveal work on a Persistent mode in which Codex can continue until put to sleep, create follow-up tasks, work across sessions, use past user interactions and user knowledge, and message users sparingly. The report says OpenAI confirmed testing but said there are no immediate launch plans, and notes instructions that persistence does not expand allowed actions and external changes still require user approval.",
+      "why_it_matters_for_ai_assisted_development_practice": "Persistent agents make task memory, wake/sleep controls, proactive follow-up boundaries, approval renewal, and cross-session audit trails more important. Product and model details remain upstream-owned; the local signal is the operating practice for long-running and proactive coding agents.",
+      "candidate_local_topics": [
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/governance-and-risk/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI",
+        "Codex desktop app",
+        "ChatGPT Work",
+        "Persistent mode"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Codex",
+          "upstream_scope": "developer tool/product coverage"
+        },
+        {
+          "entity": "ChatGPT Work",
+          "upstream_scope": "product coverage"
+        }
+      ],
+      "local_practice_implication": "Long-running agents need explicit stop controls, durable run memory, scoped proactivity, recurring approval checks, and user-visible evidence of self-created follow-up work."
+    },
+    {
+      "id": "business-insider-ai-coding-loneliness-review-load-2026-08-27",
+      "source_url": "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+      "source_type": "reputable secondary reporting",
+      "visible_date": "2026-08-27T09:30:02.436Z",
+      "date_confidence": "visible article timestamp",
+      "factual_summary": "Business Insider reported on a former OpenAI engineer who left commercial software after AI-agent coding made feature work more solitary, fragmented flow into short agent-management tasks, and increased the share of time spent reviewing generated code and checking for errors. The article also cites similar concerns from other developers and an Anthropic engineering leader.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption programs should track collaboration quality, review load, flow interruption, and team learning, not only code throughput. The local value is an operating-model and human-approval-boundary signal rather than a profile of the named individual or OpenAI.",
+      "candidate_local_topics": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/team-learning-and-skill-health.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex desktop app",
+        "Kasra Kyanzadeh",
+        "Anthropic",
+        "Fiona Fung"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Anthropic",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Codex desktop app",
+          "upstream_scope": "developer tool/product coverage"
+        }
+      ],
+      "local_practice_implication": "Team adoption metrics should include collaboration, reviewer fatigue, and task-switching burden alongside velocity and accepted-code metrics."
+    },
+    {
+      "id": "express-computer-ai-native-operating-model-governance-orchestration-2026-08-28",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/enterprises-must-shift-from-ai-assisted-to-ai-native-operating-models/138155/",
+      "source_type": "industry commentary",
+      "visible_date": "Aug 28, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "Express Computer published commentary arguing that enterprises gain more from AI when they redesign workflows, decisions, governance, and orchestration instead of limiting AI to isolated productivity assistance. The article frames governance as an operational requirement and emphasizes coordinated workflows among AI agents, people, automations, applications, and approval points.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports the local operating-model rule that workflow redesign and governed orchestration come before model selection or isolated tool rollout. Broad Automation Anywhere and McKinsey context should route upstream or remain attribution only.",
+      "candidate_local_topics": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "Automation Anywhere",
+        "Adi Kuruganti",
+        "McKinsey"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Automation Anywhere",
+          "upstream_scope": "company/product coverage"
+        },
+        {
+          "entity": "McKinsey",
+          "upstream_scope": "company/source background where needed"
+        }
+      ],
+      "local_practice_implication": "When ingesting, connect the source to workflow-before-model-selection and approval-aware orchestration rather than creating local company leaves."
+    },
+    {
+      "id": "salesforce-anthropic-claudeforce-governed-workflow-integration-2026-08-27",
+      "source_url": "https://www.expresscomputer.in/news/salesforce-and-anthropic-expand-partnership-with-claudeforce/138127/",
+      "source_type": "industry news",
+      "visible_date": "Aug 27, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "Express Computer reported that Salesforce and Anthropic expanded their partnership around Claudeforce, Salesforce in Claude, Slack, Salesforce data, business rules, governance capabilities, MCP servers, APIs, CLI tools, centrally managed authentication and permissions, and the Salesforce Trust Boundary via Amazon Bedrock.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local signal is the emerging enterprise pattern of routing agent actions through existing business rules, central permissions, trust boundaries, and multiple tool interfaces. Company, product, and partner details are upstream-owned.",
+      "candidate_local_topics": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "named_entities": [
+        "Salesforce",
+        "Anthropic",
+        "Claude",
+        "Claudeforce",
+        "Salesforce in Claude",
+        "Slack",
+        "AIforce",
+        "MCP",
+        "Amazon Bedrock",
+        "Salesforce Trust Boundary"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Salesforce",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Anthropic",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Claude",
+          "upstream_scope": "model/product coverage"
+        },
+        {
+          "entity": "MCP",
+          "upstream_scope": "protocol and broad ecosystem coverage"
+        },
+        {
+          "entity": "Amazon Bedrock",
+          "upstream_scope": "developer tool/product coverage"
+        }
+      ],
+      "local_practice_implication": "Use as evidence for central authentication, permission, and trust-boundary controls around agent actions that cross chat, CRM, Slack, MCP, API, and CLI surfaces."
+    },
+    {
+      "id": "anthropic-model-hardware-standard-agent-physical-safety-evals-2026-08-27",
+      "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "source_type": "primary announcement",
+      "visible_date": "Aug 27, 2026",
+      "date_confidence": "visible page date",
+      "factual_summary": "Anthropic announced a research preview of the Model Hardware Standard, a model-agnostic way for agents to discover and operate programmable physical devices through standard protocols including MCP. The announcement says Anthropic will use the preview to build safety evaluations and best practices before open sourcing, and it notes expert oversight remains necessary for physical-world reasoning limitations.",
+      "why_it_matters_for_ai_assisted_development_practice": "Although MHS itself is an upstream-owned technique/product candidate, the local practice implication is strong for harness design: high-consequence tool calls need device metadata, safety evals, expert oversight, recoverability boundaries, and protocols that keep physical actions auditable.",
+      "candidate_local_topics": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Model Hardware Standard",
+        "MHS",
+        "Model Context Protocol",
+        "HHMI Janelia Research Campus",
+        "AWS Strands Robots",
+        "Hugging Face LeRobot",
+        "Raspberry Pi"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Anthropic",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Model Hardware Standard",
+          "upstream_scope": "technique/protocol/product background if adopted upstream"
+        },
+        {
+          "entity": "Model Context Protocol",
+          "upstream_scope": "protocol and MCP ecosystem coverage"
+        },
+        {
+          "entity": "AWS Strands Robots",
+          "upstream_scope": "agentic framework/developer tool coverage"
+        },
+        {
+          "entity": "Hugging Face LeRobot",
+          "upstream_scope": "framework/tool coverage"
+        }
+      ],
+      "local_practice_implication": "Physical or otherwise high-impact agent tools should have discoverable capability metadata, safety-specific evals, human oversight points, and audit-ready action boundaries."
+    },
+    {
+      "id": "openai-thailand-startup-codex-prototype-deployment-adoption-2026-08-28",
+      "source_url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand/",
+      "source_type": "primary announcement",
+      "visible_date": "August 28, 2026 inferred from search result; page excerpt shows in-window recency but not a visible line-level date",
+      "date_confidence": "search result recency plus source page metadata not fully exposed in fetched lines",
+      "factual_summary": "OpenAI announced support for Thailand's next generation of AI startups and described an eight-week accelerator to help founders move from prototype to deployment. The article says Codex weekly active usage in Thailand has grown more than 350-fold since the start of 2026 and frames the next step as helping prototypes become products people can use and trust.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is adoption-stage gating: coding-agent programs should connect prototype acceleration with trust, deployment readiness, domain knowledge, and local mentoring rather than measuring usage growth alone. Regional and OpenAI company details remain upstream-owned.",
+      "candidate_local_topics": [
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/team-learning-and-skill-health.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Thailand",
+        "NIA",
+        "AIAT",
+        "OpenAI Codex Hackathon Bangkok"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "upstream_scope": "company/provider coverage"
+        },
+        {
+          "entity": "Codex",
+          "upstream_scope": "developer tool/product coverage"
+        }
+      ],
+      "local_practice_implication": "Treat prototype-to-deployment promotion and trust gates as adoption-workflow requirements for coding-agent startup programs."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.expresscomputer.in/guest-blogs/five-things-technology-and-security-leaders-must-get-right-before-shipping-ai-generated-code-to-production/138106/",
+      "visible_date": "Aug 26, 2026",
+      "reason": "Excluded as boundary-only/outside-window: no visible time confirmed publication after 2026-08-27T00:32:41Z despite strong relevance to AI-generated code security governance."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "visible_date": "August 26, 2026",
+      "reason": "Excluded as boundary-only/outside-window. Related links were in-window, but the source's own visible publication date was August 26."
+    },
+    {
+      "source_url": "https://www.okta.com/newsroom/press-releases/okta-brings-first-class-identity-to-ai-agents-with-agent-sso/",
+      "visible_date": "24 August 2026",
+      "reason": "Excluded because the visible page date predates the two-day window even though search results indicated recent crawling."
+    },
+    {
+      "source_url": "https://aiagentstore.ai/ai-agent-news/daily/2026-08-26",
+      "visible_date": "August 26, 2026",
+      "reason": "Excluded as outside-window and secondary aggregation; primary Okta source also predates the window."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news/web-search",
+      "visible_date": "older page with related-post links dated Aug 28 and Aug 26",
+      "reason": "Excluded because the opened page was not itself an in-window Claude Code or governance update; related items were not extracted as qualifying sources."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "visible_date": "Aug 27, 2026",
+      "reason": "Excluded after screening because the relevant content was scientific subscription access rather than AI-assisted development practice, coding workflow, harness, governance, or eval practice."
+    },
+    {
+      "source_url": "https://www.theguardian.com/technology/2026/aug/26/openai-staff-observed-warning-signs-before-ai-agent-hacking-crusade-caused-global-alarm",
+      "visible_date": "Aug 26, 2026",
+      "reason": "Excluded as outside-window and partly upstream-owned incident coverage. A local ingest pass may route only practice implications if a later in-window source confirms the same incident response facts."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.13175",
+      "visible_date": "Jun 11, 2026",
+      "reason": "Excluded because the paper predates the two-day window, despite relevance to code-review practice."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2606.07297v1",
+      "visible_date": "Jun 5, 2026",
+      "reason": "Excluded because the paper predates the two-day window, despite relevance to repository exploration and code retrieval evals."
+    },
+    {
+      "source_url": "https://arxiv.org/html/2608.21311v1",
+      "visible_date": "8 days ago",
+      "reason": "Excluded because visible recency is outside the two-day window, despite relevance to AI-to-AI code review datasets."
+    },
+    {
+      "source_url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+      "visible_date": "August 27, 2026",
+      "reason": "Excluded after screening because it concerns Earth AI geospatial modeling automation rather than AI-assisted software development practice."
+    },
+    {
+      "source_url": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr/",
+      "visible_date": "August 25, 2026",
+      "reason": "Excluded because the visible date predates the window and the topic is XR conversational-agent interaction rather than local AI-assisted development practice."
+    },
+    {
+      "source_url": "https://permissionprotocol.com/agent-incident-tracker",
+      "visible_date": "Updated August 2026",
+      "reason": "Excluded because the visible update date is month-only and therefore ambiguous for the two-day cutoff."
+    },
+    {
+      "source_url": "https://www.claudeworkshop.com/topics/ai-coding-governance",
+      "visible_date": "crawled yesterday; no reliable visible publication date captured",
+      "reason": "Excluded because crawler recency is not a visible publication or update date."
+    }
+  ],
+  "follow_up_notes": [
+    "Later ingest should re-open the GitHub Copilot weekly releases source and extract concrete in-window changes before updating durable pages.",
+    "Route broad GitHub Copilot, OpenAI Codex, Anthropic Claude, Salesforce, Okta, MHS, and MCP background to the upstream AI wiki; keep only downstream practice implications in this repository.",
+    "Potential local synthesis themes: bot-authored PR review attribution, large-PR AI review strategy, review-resolution feedback loops, policy and billing defaults, persistent-agent run memory, adoption health metrics, and high-impact tool safety evals.",
+    "No docs/wiki pages or raw/processed files were updated by this collector."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
