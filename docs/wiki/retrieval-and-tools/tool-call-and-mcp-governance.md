@@ -81,6 +81,8 @@ The August 18 raw sources add MCP directionality, context-boundary, and managed-
 
 The August 25 raw sources add tool-surface catalog, roadmap, and guardrail evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records OAuth token scoping and safe-MCP setup confusion, the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records customization catalogs and per-hop tool-call guardrails, and the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records MCP roadmap, skill-governance, and access-platform signals. Locally, discovery catalogs are inventory inputs rather than approval decisions; teams still need owner, token scope, read/write separation, pre-tool and post-tool inspection, exact-payload evidence, conformance checks, and audit-mode-to-enforcement rollout before broad tool access.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds cross-surface MCP and high-impact tool evidence. Central authentication, permission scope, trust-boundary labels, MCP/API/CLI route labels, per-hop audit records, capability metadata, safety-specific evals, and oversight checkpoints are local tool-governance requirements when agent actions cross chat, business-app, or physical-device boundaries.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -160,6 +162,7 @@ The August 25 raw sources add tool-surface catalog, roadmap, and guardrail evide
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
@@ -250,6 +253,7 @@ The August 25 raw sources add tool-surface catalog, roadmap, and guardrail evide
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with cross-surface MCP, central authentication, trust-boundary, high-impact tool, safety-eval, and per-hop audit evidence.
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.
 - Maintained on 2026-08-25 with customization catalog, OAuth token-scope, MCP roadmap, skill-governance, and per-hop guardrail evidence.

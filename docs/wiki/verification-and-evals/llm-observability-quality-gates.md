@@ -36,6 +36,8 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 - Separate observability from orchestration when vendor scope expansion would make the monitoring layer dictate workflow architecture.
 - Treat self-hosting, data retention, role access, exportability, and managed-cloud terms as adoption gates when traces may contain prompts, user content, proprietary code, or regulated data.
 
+The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds agent-observability and running-inventory evidence. LLM observability gates should connect traces, agent identity, running-agent discovery, action order, cost, latency, approval evidence, and remediation outcomes for coding agents that work without continuous supervision.
+
 ## Practice Boundaries
 
 - Do not use broad vendor comparison tables as local tool recommendations without verifying the current product, pricing, and data-handling state.
@@ -51,6 +53,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [Open-source LLM observability tools clipping](../../../raw/processed/7-best-free-open-source-llm-observability-tools.md)
 - [Braintrust LangSmith alternatives clipping](../../../raw/processed/langsmith-alternatives-2026-braintrust.md)
 - [LangSmith orchestration-layer clipping](../../../raw/processed/langsmith-competing-hosted-ai-layers.md)
@@ -89,6 +92,7 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with running-agent discovery, action-order, approval, cost, latency, trace, and remediation observability gates.
 - Created on 2026-08-07 from the observability and evaluation clipping set plus the August 7 collector's MCP, skill-eval, copilot-governance, and team-workflow signals.
 - Maintained on 2026-08-08 with autonomous-agent security monitoring, kill-switch, context-integrity, first-party feedback, and online-validation gates.
 - Maintained on 2026-08-14 with incident-learning, purpose-baseline, authorized-system, expected-tool-pattern, approval-evidence, and remediation-outcome gates.

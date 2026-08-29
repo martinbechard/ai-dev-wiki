@@ -15,6 +15,8 @@ The [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-
 
 Structural diff gates are most useful when the workflow targets an exact commit or branch range, records parser fallback, and keeps ordinary textual review available for unsupported languages or generated artifacts. A check-only structural diff result can be a pre-merge triage signal, but acceptance still depends on tests, source inspection, review ownership, and any domain-specific security or runtime evidence.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds large-PR review evidence. When AI review tooling covers very large bot-authored pull requests, structural diff review should help humans choose inspection slices and isolate behavior-changing edits; it should not turn removed file-count or line-count limits into automatic review sufficiency.
+
 ## Practice Boundaries
 
 - Use structural diffs to reduce reviewer noise when AI-generated changes include formatting, reordering, or generated boilerplate.
@@ -22,6 +24,7 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 - Treat parser fallback, unsupported file types, or unusually large generated artifacts as reasons to run ordinary textual review.
 - Keep structural diff output as triage evidence; do not let it replace tests, static analysis, security review, or human acceptance.
 - Ask agents to separate behavior changes from formatting changes when structural review shows avoidable churn.
+- Use structural diff output to triage very large or bot-authored pull requests while preserving human review of behavior, tests, security, and residual risk.
 
 ## Authoritative Sources
 
@@ -30,6 +33,7 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 - [intelligent code review](intelligent-code-review.md)
 - [generated code refactoring](generated-code-refactoring.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 
 ## Related Code
 
@@ -58,3 +62,4 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 
 - Created on 2026-08-05 from August 5 raw evidence about Difftastic-style structural diff review for AI-generated commits.
 - Maintained on 2026-08-06 with leaf-watch corroboration for structural diff review as triage evidence rather than acceptance proof.
+- Maintained on 2026-08-29 with large bot-authored pull-request triage guidance.

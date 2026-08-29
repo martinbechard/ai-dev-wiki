@@ -53,6 +53,8 @@ The August 22 raw sources add document-carrier and connected-app reinforcement:
 
 The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds browser-agent safeguard evidence. Browser pages and tool results should be screened before autonomous browser actions, and the executed action should be checked against the user's request, enterprise trusted-domain scope, and manual override path. Broad Claude product details stay upstream-owned; locally, browser-agent prompt-injection handling becomes a runtime gate, not only a prompt instruction.
 
+The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds spreadsheet-style prompt-injection and contextual authorization evidence. Strict JSON, schema output, or model-level safeguards do not eliminate risk when untrusted business documents carry adversarial instructions, so consequential extraction workflows need red-team fixtures, source isolation, hidden-content inspection, and human review before actions execute.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -91,9 +93,12 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Gate memory writes, memory reads, connected-app actions, and autorun links separately from the conversational answer because injection can persist beyond the original source encounter.
 - Require spend, payment, or paid-service actions to survive prompt-injection screening and delegated-intent checks before execution.
 - Screen browser observations and web-content tool results before autonomous browser actions, then verify intended action, trusted-domain scope, and manual override availability before execution.
+- Red-team spreadsheet, table, and document extraction workflows with adversarial fixtures before structured output can trigger consequential decisions or writes.
+- Require contextual authorization for actions proposed after reading untrusted content; valid tools and valid users are not enough when the source can steer the action sequence.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -166,3 +171,4 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Maintained on 2026-08-15 with persistent-memory poisoning, repository-skill baiting, MCP onboarding, provenance, quarantine, and reuse-approval boundaries.
 - Maintained on 2026-08-22 with hidden document-carrier inspection, connected-app, memory, autorun-link, and paid-action prompt-injection controls.
 - Maintained on 2026-08-26 with browser-agent content screening, action-intent checks, trusted-domain scope, and manual-override controls.
+- Maintained on 2026-08-29 with spreadsheet prompt-injection red-team fixtures, source isolation, and contextual authorization guidance.

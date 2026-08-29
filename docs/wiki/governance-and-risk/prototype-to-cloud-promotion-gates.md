@@ -19,6 +19,8 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds production-agent readiness evidence. Promotion should prove durable execution, checkpoint recovery, scoped access, component identity, runtime containment, complete activity logging, behavior baselines, and memory/source quarantine before a prototype or agent workflow is trusted in cloud, enterprise, or externally reachable environments.
 
+The August 28 and 29 raw sources add prototype-to-deployment trust evidence. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records an accelerator-style prototype-to-product signal and managed coding-agent policy controls, while the [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records production AI-generated-code gates and durable runtime readiness. Locally, promotion should require user trust, deployment readiness, retention and billing review, sandbox scope, review depth, rollback, and post-launch verification.
+
 ## Practice Boundaries
 
 - Identify whether the app remains local, becomes shared internally, becomes public, or handles sensitive data.
@@ -33,6 +35,8 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md)
 - [prompt injection and untrusted content](prompt-injection-and-untrusted-content.md)
@@ -65,6 +69,7 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with prototype-to-product trust, retention, billing, sandbox, review-depth, rollback, and post-launch verification gates.
 - Created on 2026-06-23 from public source guidance on security risks when AI-assisted prototypes become hosted, shared, or data-bearing applications.
 - Maintained on 2026-07-08 with sensitive-code sandbox, network, credential, audit, approval, and execution-boundary promotion checks.
 - Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, runtime containment, activity logging, behavior-baseline, and memory-quarantine promotion gates.

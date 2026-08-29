@@ -19,6 +19,8 @@ The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-w
 
 The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json) adds local-runtime economics evidence. Deskside or local agentic setups should be evaluated as harness choices with measured token cost, latency, capacity, update cadence, security posture, and fallback path rather than as a blanket replacement for managed services.
 
+The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds model-harness and workspace-layer evidence. Local runtime decisions should separate the model from the layer that owns memory, business context, token cost, model routing, parallel sessions, worktree isolation, reviewable commits, and persistent artifacts.
+
 ## Practice Boundaries
 
 - Treat local inference as a product harness choice with operational costs, validation needs, and user-visible behavior.
@@ -36,6 +38,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Representative workflow calibration](../verification-and-evals/representative-workflow-calibration.md)
@@ -71,6 +74,7 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with model-harness and workspace-layer boundaries for memory, cost, routing, parallel sessions, and reviewable commits.
 - Created on 2026-06-23 from the local model operations source and local verification guidance for representative calibration.
 - Upstream durable leaves for Dwarf Star, DeepSeek V4, selective quantization, SSD expert caching, and distributed prefill are Not yet identified; this page treats them as source-specific runtime examples, not local entity or technique coverage.
 - Maintained on 2026-06-27 with local workstation inference as a latency, support, crash, telemetry, and auditability tradeoff.

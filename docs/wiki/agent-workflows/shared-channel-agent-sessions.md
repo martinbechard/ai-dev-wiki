@@ -19,6 +19,8 @@ This page owns the local workflow pattern. Broad GitHub Copilot, Slack, and Micr
 
 The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds a shared-workspace refinement. Channel-native coding agents can expose live previews, feedback, approvals, and task tabs beside ordinary chat, but the local control remains unchanged: channel visibility helps coordination and audit, while write access, repository permissions, approval authority, admin policy, and merge gates still need separate evidence.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds shared-agent and IDE agent evidence. Shared sessions and IDE-native custom agents should preserve trigger identity, catalog source, usage visibility, thinking effort, context-window pressure, model capability, and pre-PR review evidence before chat-visible or IDE-visible work is treated as review-ready.
+
 ## Practice Boundaries
 
 - Treat chat messages as steering evidence, not standalone authorization for repository writes, sandbox use, paid compute, or merges.
@@ -32,6 +34,7 @@ The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-de
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [GitHub Copilot shared Slack sessions changelog](https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/)
@@ -64,5 +67,6 @@ The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with shared-agent trigger, custom-agent catalog, usage visibility, effort, context-window, model-capability, and pre-PR review evidence.
 - Created on 2026-08-22 from qualifying public-preview evidence for shared Slack and Microsoft Teams coding-agent sessions, keeping product-specific details upstream-owned.
 - Maintained on 2026-08-23 with shared-workspace feedback, preview, approval-widget, write-access, and admin-control evidence.

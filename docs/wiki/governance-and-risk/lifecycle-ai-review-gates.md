@@ -35,6 +35,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The August 15 raw sources add milestone, rollout, and containment review gates. The [topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json) records new coding-model access, self-hosted factory setup, and CI-red incident evidence, while the [leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds durable execution, scoped access, company-harness drills, sandbox escape, memory-poisoning, and repository-skill baiting evidence. Lifecycle gates should review model enablement, execution-plane boundaries, retained run data, semantic CI or deployment truth, containment testing, and package provenance before a workflow graduates.
 
+The August 28 and 29 raw sources add lifecycle evidence for long-running runtime, prompt-version, managed policy, and prototype promotion gates. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records durable execution, checkpoints, retries, scoped permissions, observability, prompt versioning, and AI-generated-code production controls. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds policy-default and prototype-to-deployment signals. Locally, prompts, skills, policies, review defaults, runtime settings, and agent permissions should be reviewed as lifecycle artifacts before promotion.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -62,6 +64,8 @@ The August 15 raw sources add milestone, rollout, and containment review gates. 
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [intelligent code review](../coding-practices/intelligent-code-review.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -107,6 +111,7 @@ The August 15 raw sources add milestone, rollout, and containment review gates. 
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with prompt-version, managed-policy, long-running runtime, scoped-permission, observability, and prototype-promotion gate evidence.
 - Created on 2026-06-24 from public source signals about AI review moving from code review into PRD and design governance.
 - Maintained on 2026-06-25 with platform-lifecycle signals for specs, issues, review prompts, security checks, and operational feedback as reviewable artifacts.
 - Maintained on 2026-06-29 with continuous lifecycle review gates across requirements, design, code, security, and acceptance.

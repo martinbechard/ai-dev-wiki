@@ -37,6 +37,8 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 
 The August 10 raw sources add SDLC-as-context and governance-platform evidence. The [topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) treats specification gates, task slicing, builder-reviewer separation, and weekly learning loops as context supplied by the development lifecycle. The [leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) reinforces ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill switches as operating-agreement fields once agents touch real systems.
 
+The August 28 and 29 raw sources add operating-model evidence for workflow redesign, institutional skill ownership, review load, and workspace-layer boundaries. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records signals that AI-assisted development programs should track collaboration quality, reviewer fatigue, prototype-to-deployment trust, and workflow orchestration, not only usage or generated-code throughput. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds skill ownership, constant improvement loops, and workspace-layer selection as operating agreement fields.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -69,9 +71,12 @@ The August 10 raw sources add SDLC-as-context and governance-platform evidence. 
 - Design agent hackathons and workshops with account readiness, repository submission, demo artifacts, codebase-health review, and explicit agentic-engineering criteria.
 - Treat SDLC structure as part of the agent context: specification gates, task slicing, independent review, and recurring learning loops should be explicit operating rules.
 - Record ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill-switch expectations before agents touch real systems.
+- Track collaboration quality, reviewer fatigue, learning health, skill ownership, workspace boundaries, and prototype-to-deployment trust as adoption outcomes alongside speed or usage.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -117,6 +122,7 @@ The August 10 raw sources add SDLC-as-context and governance-platform evidence. 
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with workflow-redesign, institutional skill ownership, reviewer-fatigue, collaboration-health, workspace-layer, and prototype-to-deployment trust fields.
 - Created on 2026-06-23 from local source guidance on scaling practice, skill files, workflow choice, tiers, and human acceptance.
 - Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.
 - Maintained on 2026-07-09 with outcome-owned agent workflows, staged developer training, guardrails, and autonomy-expansion evidence.

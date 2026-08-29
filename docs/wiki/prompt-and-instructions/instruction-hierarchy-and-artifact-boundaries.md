@@ -41,6 +41,8 @@ The August 23 raw sources add skills, MCP tools, and session state as execution-
 
 The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) adds a provider migration signal for review guidance. When product-specific code guideline surfaces are deprecated in favor of repository instructions, local teams should keep durable norms in portable repository artifacts and map provider-specific settings to those artifacts rather than making the product UI the source of truth.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds organization-level custom-agent evidence. Team-owned custom agent catalogs should record source labels, policy owner, model or capability assumptions, context-window and cost guidance, and review expectations so agent definitions remain governed artifacts rather than invisible assistant behavior.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -75,6 +77,7 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [Hypervelocity engineer source](../../../raw/processed/Hypervelocity engineer @edandersen.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -122,6 +125,7 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.
 - Maintained on 2026-06-25 with Agent Experience and plugin-SDLC artifact boundaries across instructions, skills, MCP surfaces, issues, and RFCs.

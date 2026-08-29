@@ -37,6 +37,8 @@ The August 21 sources add persistent goal, orchestration-artifact, and collabora
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds declarative-workflow and persistent-harness state evidence. YAML workflow actions, checkpoint stores, human input requests, telemetry hooks, persistent REPL histories, memories, skill state, subagent specifications, recovery state, resource accounting, and verification records belong in durable process state when they control long-running agent behavior.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds AI-native workflow-state evidence. Cross-surface agent actions that move between chat, CRM, Slack, MCP, APIs, CLI tools, repositories, and approval points should preserve decision owner, automation owner, application boundary, approval point, action evidence, and rollback path as workflow state.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -61,6 +63,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Application harness patterns](application-harness-patterns.md)
@@ -103,6 +106,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with AI-native orchestration, cross-surface action, approval-point, owner, evidence, and rollback workflow-state signals.
 - Created on 2026-06-23 from local source guidance on AI process layers, workflow state, validation loops, tools, checkpoints, and compaction.
 - Maintained on 2026-07-02 with operational-readiness, workflow-memory, citation, logging, approval, and handoff-state requirements.
 - Maintained on 2026-07-06 with collaboration-channel event, thread, adapter, streamed-response, and follow-up state requirements.

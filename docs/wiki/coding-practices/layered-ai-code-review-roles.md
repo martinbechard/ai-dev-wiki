@@ -19,6 +19,8 @@ Role responsibilities:
 
 The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) adds security-review augmentation evidence. AI can triage, explain, and route likely security findings, but deterministic rules and human security judgment remain separate gates for high-risk changes.
 
+The August 28 and 29 raw sources add review-load and production-risk evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records public guidance that AI-generated code reaching production still needs tool-agnostic security controls, workflow integration, and shared accountability across security, engineering, and leadership. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds developer-experience evidence that agent-heavy coding can increase review load and reduce collaborative learning when review work is not explicitly staffed.
+
 ## Practice Boundaries
 
 - Declare which review roles are active before an AI reviewer comments.
@@ -27,6 +29,7 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 - Preserve human review for design tradeoffs, security context, and final acceptance.
 - Evaluate layered review by source-backed findings, missed risks, repair evidence, and reviewer attention cost rather than comment volume.
 - Keep AI security-review triage separate from deterministic rules and human security acceptance so generated comments do not become final assurance.
+- Size developer, architect, security, and human learning roles to review load; do not let one fluent agent review stream hide ownership for production risk or team skill health.
 
 ## Authoritative Sources
 
@@ -35,6 +38,8 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 - [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md)
 - [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 
 ## Related Code
 
@@ -62,3 +67,4 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 
 - Created on 2026-07-27 from July 27 raw-source evidence about developer, architect, and security-engineer AI review roles.
 - Maintained on 2026-08-27 with AI security-review augmentation boundaries for triage, deterministic rules, and human security judgment.
+- Maintained on 2026-08-29 with production AI-generated-code accountability and review-load evidence for role-scoped review.

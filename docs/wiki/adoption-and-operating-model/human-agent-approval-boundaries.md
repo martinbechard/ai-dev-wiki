@@ -55,6 +55,8 @@ The August 23 raw sources add shared-channel, code-review-policy, and regulated-
 
 The August 26 raw sources add exact-action and operation-scoped approval evidence. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records operation-scoped leases and effect-boundary claims, while the [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) records NHI guidance that approval should bind the human approver, exact agent action, execution context, timestamp, step-up authentication, tamper-evident logging, and short-lived execution token. Locally, ticket state or generic approval is weaker than payload-bound authorization retained with the action record.
 
+The August 28 and 29 raw sources add approval-boundary evidence for persistent agents, managed policy changes, and AI review output. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records persistent-mode reporting that recurring or cross-session agents still need user-controlled wake, sleep, follow-up, memory, and external-change approvals, while GitHub Copilot policy changes make review effort, retention, billing, sandboxing, and chat or agent policy consolidation approval inputs. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) reinforces that approvals are weak when humans cannot see the agent identity, action sequence, runtime evidence, or production risk.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -99,9 +101,12 @@ The August 26 raw sources add exact-action and operation-scoped approval evidenc
 - Make shared-channel coding sessions expose who can trigger writes, who can approve, and which repository or admin policy enforced that boundary.
 - Bind high-risk approvals to the human approver, exact agent action, execution context, timestamp, proposed payload, step-up authentication, tamper-evident log, short-lived execution token, and executed result.
 - Treat ticket state, chat assent, or generic approval records as insufficient when the agent action can change code, credentials, budgets, external systems, or regulated workflow state.
+- Keep wake/sleep control, follow-up task creation, cross-session memory use, policy-default changes, review-effort changes, retention, billing, and sandbox settings inside explicit human or administrator approval boundaries.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 28 topic news collector source](../../../raw/processed/2026-07-28/ai-dev-wiki-topic-news-collector-2026-07-28T203241-0400.json)
@@ -185,3 +190,4 @@ The August 26 raw sources add exact-action and operation-scoped approval evidenc
 - Maintained on 2026-08-16 with goal-pursuit stop rules, revocable permissions, reviewer-capacity, defect-risk, and high-impact decision boundaries.
 - Maintained on 2026-08-23 with first-pass review evidence, shared-channel write gating, risk-tiered code review, and regulated-action approval boundaries.
 - Maintained on 2026-08-26 with exact-action approval, operation-scoped leases, step-up authentication, tamper-evident logging, short-lived execution tokens, and payload-bound authorization evidence.
+- Maintained on 2026-08-29 with persistent-agent approval, policy-default, retention, billing, sandbox, action-sequence, and runtime-evidence boundaries.

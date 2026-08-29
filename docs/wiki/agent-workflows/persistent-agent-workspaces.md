@@ -37,6 +37,8 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) reinforces git worktrees and rebuildable workspaces as operating practice. Locally, isolated workspaces are useful when agent drafts can be discarded, rebuilt, or compared against a clean baseline; each workspace still needs branch purpose, owner, hook/eval status, affected files, and merge or abandonment evidence.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds persistent-agent reporting evidence. Cross-session or proactive coding agents need durable run memory, wake and sleep controls, user-visible follow-up task creation, sparse notification rules, and repeated approval checks for external changes; persistence does not expand allowed actions.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -62,6 +64,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
@@ -104,6 +107,7 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with wake/sleep control, follow-up task, sparse notification, memory-source, and approval-renewal evidence for persistent agents.
 - Maintained on 2026-07-23 with workspace-as-trust-boundary guidance for agent-written files and downstream host readers.
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.
 - Maintained on 2026-06-26 with worktree isolation and assisted-conflict workflow implications for persistent agent workspaces.

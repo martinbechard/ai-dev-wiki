@@ -61,6 +61,8 @@ The August 22 raw sources add execution-edge telemetry:
 - The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) records trust receipts, append-only verdict logs, OpenTelemetry-style GenAI conventions, memory writes, connected-app actions, sandbox events, and graph-edge evidence.
 - Locally, runtime telemetry should join progress, authority, spend, memory, connected-app, and eval evidence by session so a reviewer can inspect not only what happened, but who or what authorized each edge.
 
+The August 28 and 29 raw sources add runtime inventory, observability, and IDE usage-visibility evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records tracing and governance for agents that open pull requests, fix CI, upgrade dependencies, remediate CVEs, use model harnesses, and need running-agent inventories. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds context-window usage, cost information, review effort, shared sessions, and persistent follow-up signals. Locally, progress telemetry should join what the user sees with runtime identity, cost, state, and approval evidence.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -100,6 +102,8 @@ The August 22 raw sources add execution-edge telemetry:
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
@@ -157,6 +161,7 @@ The August 22 raw sources add execution-edge telemetry:
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.
 - Created on 2026-06-23 from source guidance on progress events, agent UI updates, and runtime metrics for local or long-running AI workflows.
 - Maintained on 2026-06-24 with TTFT, pipeline latency, and tool-call pause state guidance.
 - Maintained on 2026-06-26 with remote provisioning, background-agent visibility, permission-denial, authentication, telemetry, and cleanup states.

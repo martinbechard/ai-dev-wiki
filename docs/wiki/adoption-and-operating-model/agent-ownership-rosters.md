@@ -31,6 +31,8 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 
 The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json) adds independent-review and governance-platform evidence. Owner cards should show when the generator and reviewer use different model or tool families, which platform or team owns that separation, what evaluation status applies, where human-intervention requirements live, and which decision evidence supports escalation, pause, rollback, or decommissioning.
 
+The August 28 and 29 raw sources add live discovery, lifecycle, and institutional-skill evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records running-agent inventory, lifecycle governance, reusable AI skill ownership, and workspace-layer boundaries. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) reinforces that organization-level custom agents, shared sessions, and persistent agents need owner cards that cover catalog source, policy owner, runtime visibility, wake or sleep authority, and review cadence.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -53,9 +55,12 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 - Record agent identity, purpose, permission scope, creation date, review date, expiry or renewal rule, initiating human attribution, executing-agent attribution, and audit trail location.
 - Record generator-reviewer independence when shared model or tool families could create common blind spots.
 - Record evaluation status, intervention requirements, decision evidence, and pause or rollback authority on owner cards for agents that touch real systems.
+- Record runtime-discovery status, catalog source, reusable-skill owner, lifecycle stage, credential owner, wake or sleep authority, and decommission evidence for persistent or organization-level agents.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
 - [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
@@ -94,6 +99,7 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with live agent discovery, reusable-skill ownership, custom-agent catalogs, lifecycle stage, wake or sleep authority, and decommission evidence.
 - Created on 2026-06-23 to hold agent roster and owner-card practice.
 - Maintained on 2026-06-27 with single-responsible-owner and ownership-card fields from public practice updates.
 - Maintained on 2026-07-05 with risk classification, gateway policy, logging, monitoring, oversight evidence, and deployer-obligation fields.

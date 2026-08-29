@@ -79,6 +79,8 @@ The August 23 raw sources add a static-versus-runtime review boundary and policy
 
 The August 27 raw sources add repository-owned review instructions, bot-authored PR coverage, and repository-readiness evidence. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records automated review coverage for bot-authored and very large pull requests plus explicit resolution reasons. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records generally available custom review instructions and an agent-ready repository pattern. Locally, review is strongest when source ownership, test intent, local conventions, durable review rubrics, generated-review identity, resolution reasons, and human accountability are all preserved.
 
+The August 28 and 29 raw sources add bot-to-agent review and IDE pre-PR review evidence. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records automated reviews on bot-authored pull requests, removal of large-diff limits, explicit review-comment resolution reasons, and Visual Studio Git-agent review of uncommitted changes or commits. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds production AI-generated-code pressure and agent-observability evidence. Locally, AI review should preserve author identity, review identity, review effort, diff scale, resolution reason, telemetry evidence, and the human acceptance decision before generated review output becomes merge evidence.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -154,9 +156,12 @@ The August 27 raw sources add repository-owned review instructions, bot-authored
 - Keep custom review instructions in repository-owned, versioned artifacts and preserve the instruction set that ran with each generated review.
 - Treat bot-authored or very large pull requests as reviewable only when review identity, billing or policy attribution, resolution reasons, and human acceptance responsibility remain visible.
 - Make repository readiness part of AI review intake: ownership metadata, test intent, documentation, conventions, and retrieval hints should be available before generated findings are trusted.
+- Preserve bot-authored PR attribution, automated-review identity, review-effort setting, large-diff strategy, resolution reason, telemetry evidence, and pre-PR review evidence when agents review agent-authored work.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -233,6 +238,7 @@ The August 27 raw sources add repository-owned review instructions, bot-authored
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with bot-to-agent review, large-diff review strategy, review-effort, pre-PR review, telemetry, and human acceptance evidence.
 - Maintained on 2026-08-23 with first-pass review boundaries, runtime-evidence requirements, risk-tiered policy, security gates, and review-cost accounting.
 - Maintained on 2026-08-27 with repository-owned review instructions, bot-authored PR review identity, resolution reasons, and repository-readiness evidence.
 - Maintained on 2026-07-23 with implementation-intent, invariant-register, deterministic-test, verifier-agent, provenance, and AI-generated-code security review guidance.

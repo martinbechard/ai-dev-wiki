@@ -33,6 +33,8 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 
 The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) adds a code-mode drafter boundary. When an agent drafts JavaScript or TypeScript instead of a JSON object, the generated program should still execute behind a narrow host-function interface, with trusted service clients kept outside the sandbox, serialized host-call results, approval or authentication interruption, replay-safe resume, and per-run resource limits. Locally, code-mode execution is a stronger drafter pattern, not permission for generated code to inherit application secrets, Node.js access, network access, or generic request capabilities.
 
+The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds structured-output and prompt-versioning evidence. Typed agent results, response-format schemas, immutable prompt versions, eval results, guardrails, model choices, and structured-output schemas should be treated as reviewable system contracts; they still need deterministic validators, credential-boundary review, source isolation, and regression evidence before promotion.
+
 ## Practice Boundaries
 
 - Use structured output when downstream code must execute, validate, store, or audit model intent.
@@ -55,6 +57,7 @@ The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval fo
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Application harness patterns](application-harness-patterns.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -91,6 +94,7 @@ The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval fo
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with prompt-version, schema-contract, credential-boundary, source-isolation, and eval-promotion evidence.
 - Created on 2026-06-23 from the application harness source guidance on structured output, DSLs, and model-drafted executable artifacts.
 - Maintained on 2026-07-07 with structured-output latency, drafter verification cost, and whole-loop validation guidance.
 - Maintained on 2026-07-11 with artifact-producing agent boundaries for files, connector scope, approval state, and audit evidence.

@@ -23,6 +23,8 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 
 The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds learning-path evidence for AI-assisted development. Training should shift from syntax-only practice toward reading diffs critically, debugging, writing tests that catch agent misses, and understanding system design well enough to direct generated work.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds developer-experience evidence that agent-heavy coding can fragment flow into supervision and review tasks. The local learning-path rule is to preserve collaborative design, debugging, test writing, and reviewer judgment practice so junior developers are not left only approving generated code they did not learn to reason about.
+
 ## Practice Boundaries
 
 - Protect junior practice paths while using senior-led pods for high-leverage execution.
@@ -37,6 +39,7 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [senior led agentic execution pods](senior-led-agentic-execution-pods.md)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
@@ -68,6 +71,7 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with collaboration-quality, reviewer-fatigue, and supervised-practice evidence for agent-heavy coding.
 - Created on 2026-06-23 from source-backed guidance on the hourglass organization, junior practice, and long-term expertise pipelines.
 - Maintained on 2026-07-09 with staged developer learning from prompting through tool governance, RAG, agents, benchmarks, and guardrails.
 - Maintained on 2026-07-25 with explicit junior debugging, simple-feature, review, correction, and technical-judgment practice preservation.

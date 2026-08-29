@@ -25,6 +25,8 @@ The August 18 raw sources add channel-trigger and queued-work signals. The [leaf
 
 The August 25 raw sources add connector-trigger and reviewable-workflow evidence. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records event-triggered scheduled tasks from Gmail, Slack, and GitHub events plus Runme and WebMCP notebook workflows for recurring Codex work, while the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records MCP roadmap and PR-review automation signals. Locally, connector-triggered workflows should preserve app authorization, watched resource scope, trigger coalescing, pending-event review, notebook or command evidence, and GitHub activity provenance before an event starts or mutates coding work.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds AI-native orchestration evidence. Event-triggered agent workflows should record the event source, business rule, agent role, human approval point, automation dependency, application boundary, and completion evidence before recurring triggered actions are allowed.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -42,6 +44,7 @@ The August 25 raw sources add connector-trigger and reviewable-workflow evidence
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
@@ -81,6 +84,7 @@ The August 25 raw sources add connector-trigger and reviewable-workflow evidence
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with AI-native event-source, business-rule, approval-point, automation-dependency, boundary, and completion-evidence signals.
 - Maintained on 2026-07-23 with issue-to-agent handoff evidence, rationale, confidence, progress streams, isolated execution, and review gates.
 - Maintained on 2026-07-24 with CI repair PR-on-PR, branch-control, progress-stream, steering-comment, and review-request guidance.
 - Created on 2026-07-17 from public raw artifacts about governed event-triggered automation and issue-to-agent handoffs.

@@ -79,6 +79,8 @@ The August 21 sources add loop-enforcement and persistent-agent evidence:
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds declarative workflow, persistent REPL, subagent, human-inspection, recovery, verification, and resource-accounting evidence. Locally, these are harness components when they decide what state survives, which tools can execute, how humans inspect or interrupt, how a run recovers, and how long-horizon work is evaluated.
 
+The August 28 and 29 raw sources add model-harness, durable-runtime, and high-impact tool evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records business context, memory, token cost, model routing, durable execution, checkpoint recovery, scoped permissions, observability, and runtime traces as harness responsibilities. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds capability metadata, safety eval hooks, high-impact tool boundaries, and physical-device oversight requirements.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -141,6 +143,8 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
@@ -229,6 +233,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with model-harness, durable-runtime, capability-metadata, high-impact tool, safety-eval, trace, cost, and recovery components.
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.
 - Maintained on 2026-08-21 with loop-enforcement, event-subscription, isolated-subagent, durable-goal, steering-channel, and failure-reconstruction evidence.

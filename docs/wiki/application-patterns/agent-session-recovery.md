@@ -19,6 +19,8 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 
 The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds model-to-model continuation evidence. A recovered session should not assume that another model or agent can safely inherit the full prior trajectory; recovery records should separate durable repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence so a resumed agent can choose the minimum context needed for the handoff direction.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds persistent-agent recovery evidence. Recovery should include wake or sleep state, self-created follow-up tasks, memory sources, sparse notification records, and external-change approvals before a resumed agent continues work.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -32,6 +34,7 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
@@ -64,6 +67,7 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with persistent-agent wake/sleep, follow-up task, memory-source, notification, and approval recovery evidence.
 - Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.
 - Maintained on 2026-08-08 with fresh-context executor, read-only auditor, execution-memory, and artifact-evidence recovery boundaries.
 - Maintained on 2026-08-20 with credential-class revocation, deauthorization, user-notice, audit-log, residual-access, and containment recovery evidence.

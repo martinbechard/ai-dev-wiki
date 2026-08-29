@@ -21,6 +21,8 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 
 The August 25 clipping and raw sources add generated-code execution and loop-to-graph escalation evidence. The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) shows a narrow host-function boundary for untrusted JavaScript or TypeScript, durable interruption for approval or authentication, replay-safe resume, and timeout or memory limits. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) frames simple agent, durable loop, graph, and orchestration as increasing architecture levels. Locally, a harness should grow from sandboxed computation to resumable loops and graph coordination only when host-function authority, state, recovery, approval, or multi-agent topology requires it.
 
+The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds AI model harness, long-running runtime, and workspace-layer evidence. Harness sizing should explicitly account for the layer that owns business context, memory, token cost, model routing, parallel workspaces, reviewable commits, durable execution, checkpoints, retries, scoped permissions, observability, and recovery.
+
 ## Practice Boundaries
 
 - Size harness controls to action risk, context complexity, duration, and need for recovery.
@@ -36,6 +38,7 @@ The August 25 clipping and raw sources add generated-code execution and loop-to-
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
@@ -70,6 +73,7 @@ The August 25 clipping and raw sources add generated-code execution and loop-to-
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with model-harness, workspace-layer, durable-runtime, cost-control, and recovery-sizing inputs.
 - Created on 2026-07-28 from July 28 raw evidence about matching harness responsibilities to action and context complexity.
 - Maintained on 2026-07-30 with environment-readiness criteria for setup latency, secrets, restart checks, and artifact persistence.
 - Maintained on 2026-08-04 with adjustable reasoning-depth and credit-budget controls as harness sizing inputs.

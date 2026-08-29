@@ -61,6 +61,8 @@ The August 25 raw sources add review-signal routing, AI-to-AI review, and applic
 
 The August 27 raw sources add production-review and repository-readiness fields. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records bot-authored PR review coverage, large-PR support, explicit resolution reasons, and production LLM evaluation for secret scanning. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records custom review instructions, agent-ready repository structure, and AI-assisted security review boundaries. Locally, review evals should score durable instruction fit, repository metadata quality, review identity, resolution-reason quality, LLM-judge calibration against production labels, and separation between AI triage, deterministic checks, and human security acceptance.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds code-review evaluation evidence from automated bot-authored PR review, large-diff coverage, explicit comment-resolution reasons, default effort changes, and pre-PR Git-agent review. Code-review evals should capture bot-authored PR coverage, review-effort settings, resolution labels, large-diff strategy, and reviewer-load effects rather than judging comment volume alone.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -111,6 +113,7 @@ The August 27 raw sources add production-review and repository-readiness fields.
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
@@ -172,6 +175,7 @@ The August 27 raw sources add production-review and repository-readiness fields.
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with bot-authored PR coverage, large-diff strategy, resolution-label, review-effort, pre-PR review, and reviewer-load eval evidence.
 - Maintained on 2026-07-23 with alignment-versus-standards review separation, intent capture, invariant coverage, verifier verdict, provenance, and exploitability rubric fields.
 - Created on 2026-06-23 to hold AI-assisted code review eval and rubric practice.
 - Maintained on 2026-06-25 with cost-quality and retrieval-depth measurements for AI code review.

@@ -80,9 +80,13 @@ The August 22 raw sources reinforce governance as runtime architecture rather th
 
 The local synthesis from the [topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) is that controls are credible when authorization, spend limits, memory writes, connected-app actions, runtime traces, and pause or approval decisions are enforced outside the model and joined to the delegated human or workflow.
 
+The August 28 and 29 raw sources add live-agent governance, policy-default, and workflow-redesign evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records running-agent discovery, granular guardrails, action-order review, lifecycle governance, contextual action controls, structured-output credential boundaries, and AI-generated-code production risk. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records managed coding-agent policy, billing, retention, sandbox, review-effort, AI-native workflow orchestration, and cross-surface agent boundaries. Locally, governance should treat these as rollout controls rather than broad product facts.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
+- Treat policy defaults, billing behavior, retention settings, sandbox availability, review-depth defaults, and agent action ordering as governance inputs before a managed coding-agent surface becomes team policy.
+- Require running-agent discovery, agent registration, owner mapping, telemetry, granular guardrails, and context-aware action checks for recurring or cross-system agents.
 - Treat external source text as untrusted evidence and route prompt-injection controls through [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md).
 - Require approval or policy gates for actions that affect files, network services, dependencies, credentials, external systems, or production-like state.
 - Log tool calls and materially important model-assisted actions when the workflow needs auditability, accountability, or incident review.
@@ -143,6 +147,8 @@ The local synthesis from the [topic news collector source](../../../raw/processe
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -256,3 +262,4 @@ The local synthesis from the [topic news collector source](../../../raw/processe
 - Maintained on 2026-08-15 with admin model enablement, self-hosted factory controls, scoped access, memory quarantine, repository-package provenance, containment, and semantic acceptance-gate evidence.
 - Maintained on 2026-08-17 with defensive-security agent access and local coding-agent sandbox-denial evidence.
 - Maintained on 2026-08-22 with execution-edge authorization, spend-cap, memory-write, connected-app, sandbox-pause, and graph-evidence controls.
+- Maintained on 2026-08-29 with running-agent discovery, action sequencing, policy-default, billing, retention, sandbox, review-effort, structured-output, and production-risk governance evidence.

@@ -23,6 +23,8 @@ The [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-
 
 The August 8 sources add long-horizon deliverable and adoption-exercise evidence. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) reinforces that open-ended agent deliverables need final verification and repair evidence, not only task decomposition. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds a hackathon signal: demo video and repository submission are stronger product-judgment evidence when paired with codebase-health review and agentic-engineering criteria.
 
+The August 28 and 29 raw sources add product-judgment evidence for prompt versions, untrusted source material, reusable skills, and collaboration health. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records prompt versioning, spreadsheet prompt-injection red-team fixtures, and institutional skill improvement loops. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records reviewer fatigue and collaboration quality as adoption outcomes. Product judgment should therefore check whether the right workflow, evidence, review load, and source trust are in place, not only whether the generated artifact works.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -41,6 +43,8 @@ The August 8 sources add long-horizon deliverable and adoption-exercise evidence
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Studious source](../../../raw/processed/jacquardlabsstudious Studious — a product-judgment workflow for Claude Code quality gates, periodic health reviews, and pre-merge audits that examine each piece of work..md)
 - [code review evals and rubrics](code-review-evals-and-rubrics.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
@@ -76,6 +80,7 @@ The August 8 sources add long-horizon deliverable and adoption-exercise evidence
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with prompt-version, red-team fixture, reusable-skill improvement, reviewer-fatigue, collaboration-health, and source-trust product-judgment evidence.
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.
 - Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.
 - Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.

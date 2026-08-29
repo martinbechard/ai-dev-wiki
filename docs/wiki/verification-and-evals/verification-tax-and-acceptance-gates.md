@@ -43,6 +43,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 The August 23 raw sources add runtime-proof and policy-gate refinements. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) emphasizes that AI review, browser testing, enterprise agent trials, and toolchain layers should produce reviewable proof in the issue, pull request, or operating record. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds execution-policy gates for generated code, business-impact controls for governed AI systems, and high-risk action gates for regulated agent work.
 
+The August 28 and 29 raw sources add verification-capacity evidence for review defaults, prototype promotion, and human review load. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records policy changes, default review effort, prototype-to-deployment trust, and developer-experience concerns about review burden. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records durable runtime, AI-generated-code production, prompt-versioning, and structured-output eval evidence. Locally, acceptance gates should measure review capacity, policy defaults, durable runtime proof, and product trust before throughput is counted as success.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -71,6 +73,8 @@ The August 23 raw sources add runtime-proof and policy-gate refinements. The [to
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -121,6 +125,7 @@ The August 23 raw sources add runtime-proof and policy-gate refinements. The [to
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with review-capacity, default review-effort, prototype trust, durable-runtime, prompt-version, structured-output, and human-review-load acceptance evidence.
 - Created on 2026-06-23 to hold verification-tax and acceptance-gate practice for agentic delivery.
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.
 - Maintained on 2026-07-07 with evidence-path gates for tool-use, localization, step-state, and runtime telemetry failures.

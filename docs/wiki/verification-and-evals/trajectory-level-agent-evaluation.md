@@ -88,6 +88,8 @@ The August 17 topic news collector adds agentic web-development evaluation evide
 - Whether execution location, egress, inference route, session records, eval data, memory writes, containment state, external milestone state, and behavior deviations are visible in the run history.
 - Whether deployed behavior, retries, tool-call traces, recovery steps, screenshots, and runtime evidence support frontend-agent or web-development verdicts.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds high-impact action and persistent-agent trajectory evidence. Trajectory evals should inspect cross-session memory, follow-up task creation, action sequences, capability metadata, safety-specific eval checkpoints, and human oversight decisions when agents can operate beyond ordinary code text.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -124,6 +126,7 @@ The August 17 topic news collector adds agentic web-development evaluation evide
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [representative workflow calibration](representative-workflow-calibration.md)
@@ -185,6 +188,7 @@ The August 17 topic news collector adds agentic web-development evaluation evide
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with persistent-agent, action-sequence, capability-metadata, high-impact-tool, safety-eval, and oversight trajectory signals.
 - Maintained on 2026-07-23 with workflow-fit benchmark routing, graph-stage, deterministic-step, subagent-streaming, and long-horizon task evidence.
 - Created on 2026-06-24 to hold trajectory, trace, and intermediate-decision evaluation practice for agent workflows.
 - Maintained on 2026-06-27 with cross-run agreement, environment-design, and benchmark-to-local-suite routing rules.

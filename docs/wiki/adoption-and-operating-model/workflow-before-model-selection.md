@@ -71,6 +71,8 @@ The August 26 raw sources add model-policy and coding-agent comparison evidence.
 
 The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds workflow-selection evidence from project-context, enterprise-agent, agent-news, and tool-stack sources. The reusable local signal is that long-horizon agent reliability depends on memory, tool use, feedback, supervision, governance, execution environment, observability, and evaluation budget, not model capability or product ranking alone.
 
+The August 28 and 29 raw sources add workflow redesign, policy, and prototype-to-deployment evidence. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records signals that AI-native operating models redesign workflows, decisions, governance, and orchestration before tool selection, while managed coding-agent policy changes make retention, billing, sandboxing, review effort, and model or chat policy defaults workflow inputs. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) reinforces that harness choice, workspace layer, durable execution, and operating ownership should precede product or model comparisons.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -122,9 +124,12 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 - Record global model defaults, explicit overrides, data-retention exceptions, open-weight model policy, rollout timing, workspace administration, and usage-limit review before standardizing a coding-agent workflow.
 - Compare coding-agent surfaces by platform fit, visual or terminal workspace shape, parallel-agent support, worktree behavior, approval gates, pricing, and autonomy boundary against the intended workflow.
 - Budget memory, retrieval, tool governance, observability, evaluation, feedback, supervision, and execution-environment evidence as first-order workflow-selection inputs before comparing model capability.
+- Review retention, billing, sandboxing, review effort, policy defaults, workspace layer, and prototype-to-deployment trust gates as workflow-selection inputs before standardizing a coding assistant or managed agent route.
 
 ## Authoritative Sources
 
+- [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -199,6 +204,7 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with AI-native workflow redesign, managed policy, review-effort, retention, billing, sandbox, workspace-layer, and prototype-to-deployment selection inputs.
 - Maintained on 2026-07-23 with regulated scaling, task-scoped privilege, platform observability, and workflow-fit eval selection guidance.
 - Created on 2026-06-23 from source-backed workflow, harness, and model-selection guidance.
 - Maintained on 2026-06-23 with public coding-agent selection guidance focused on workflow fit, governance burden, and loop design.
