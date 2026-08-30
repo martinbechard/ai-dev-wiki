@@ -42,6 +42,12 @@ The August 26 raw sources sharpen the approval-evidence contract. The [leaf upda
 
 The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) adds coding-agent custom MCP access inside the IDE. Locally, custom MCP servers for day-to-day coding agents should be approved through server inventory, credential custody, tool-scope review, workspace policy, and approval evidence before the agent can call internal developer systems.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) adds managed MCP and skill registration evidence from shared coding-agent surfaces and runtime control planes:
+
+- MCP servers, plugins, skills, gateways, and agent registries should be handled as governed tool infrastructure.
+- Capability manifests, identity propagation, and budget policy should be visible before recurring use.
+- Protocol telemetry, approval records, and revocation evidence should remain linked to the same authorization surface.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -68,9 +74,11 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 - Treat MCP roadmap items such as tasks, events, server-initiated messages, HTTP hardening, and agent identity as future authorization surfaces that need approval and audit hooks before adoption.
 - Treat MCP gateways as governance boundaries only when they provide identity propagation, per-tool scoping, credential custody, protocol telemetry, user attribution, and audit logs instead of shared service-token access.
 - Treat IDE coding-agent custom MCP servers as governed development infrastructure, with server registration, credential custody, tool scope, workspace policy, and approval evidence captured before use.
+- Treat MCP servers, plugins, skills, gateways, and agent registries as linked authorization surfaces whose capability metadata, identity, budget, telemetry, approval, and revocation records must agree.
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
@@ -115,6 +123,7 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with managed MCP, skill, plugin, gateway, registry, identity-propagation, budget-policy, telemetry, and revocation evidence.
 - Created on 2026-07-30 from public evidence about MCP resource scoping, read/write capability separation, sandbox permission classes, and approval-to-execution payload matching.
 - Maintained on 2026-07-31 with MCP registration review, runtime blocking, declared-tool snapshots, OAuth token scoping, callback-domain allow lists, and tool-schema evaluation boundaries.
 - Maintained on 2026-08-07 with enterprise MCP source-review, identity, approval, audit, and sandbox evidence requirements.

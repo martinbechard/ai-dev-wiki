@@ -45,6 +45,11 @@ The August 23 raw sources add skill-intake pressure. The [topic news collector s
 
 The August 25 raw sources add language-skill and skill-registry evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) records language-specific Go skill files as maintained guidance for current coding practice, and the [evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json) records skills governance as live tracking of skill file identity, owner, loading agents, sanctioned status, and directed tool calls. Locally, skill packs should be treated as governed software-delivery assets with provenance, update cadence, language or framework scope, owner review, allowed tool scope, and regression expectations.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) and [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) reinforce shared instruction governance:
+
+- Instructions, custom agents, MCP registrations, skills, plugins, and canvases are maintainable software assets rather than loose prompt text.
+- Team-published agent catalogs should record owner, repository scope, permission defaults, skill or plugin provenance, version, validation evidence, and rollback path before they become shared development infrastructure.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -74,9 +79,12 @@ The August 25 raw sources add language-skill and skill-registry evidence. The [a
 - Treat skill loading, skill updates, and skill retirement as execution-graph changes when they affect what an agent can do or how completion is verified.
 - Track language-specific skill packs by owner, source snapshot, supported runtime or framework versions, update cadence, allowed tools, and validation examples before team adoption.
 - Keep a registry of sanctioned skills, loading agents, and directed tool calls when skill files can affect repository or connected-system behavior.
+- Treat team-published custom agents, MCP registrations, skills, plugins, and canvases as versioned instruction surfaces with owner, permission, validation, and rollback evidence.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
@@ -126,6 +134,7 @@ The August 25 raw sources add language-skill and skill-registry evidence. The [a
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.
 - Maintained on 2026-06-23 to separate durable instruction placement from portable skill and runbook composition.
 - Maintained on 2026-07-04 with instruction provenance, confirmation dates, and stale-rule review triggers.

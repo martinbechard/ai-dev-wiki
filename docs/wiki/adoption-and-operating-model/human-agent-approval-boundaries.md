@@ -57,6 +57,13 @@ The August 26 raw sources add exact-action and operation-scoped approval evidenc
 
 The August 28 and 29 raw sources add approval-boundary evidence for persistent agents, managed policy changes, and AI review output. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records persistent-mode reporting that recurring or cross-session agents still need user-controlled wake, sleep, follow-up, memory, and external-change approvals, while GitHub Copilot policy changes make review effort, retention, billing, sandboxing, and chat or agent policy consolidation approval inputs. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) reinforces that approvals are weak when humans cannot see the agent identity, action sequence, runtime evidence, or production risk.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) and [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) add approval-boundary signals:
+
+- Shallow approval clicks are not governance.
+- Persistent agents need explicit sleep and permission-ceiling rules.
+- Managed coding-agent policy changes can alter review effort, retention, billing, and sandbox defaults.
+- Local approval should verify scope, policy, outcome, and audit evidence before granting higher-impact actions or accepting changed defaults.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -102,9 +109,12 @@ The August 28 and 29 raw sources add approval-boundary evidence for persistent a
 - Bind high-risk approvals to the human approver, exact agent action, execution context, timestamp, proposed payload, step-up authentication, tamper-evident log, short-lived execution token, and executed result.
 - Treat ticket state, chat assent, or generic approval records as insufficient when the agent action can change code, credentials, budgets, external systems, or regulated workflow state.
 - Keep wake/sleep control, follow-up task creation, cross-session memory use, policy-default changes, review-effort changes, retention, billing, and sandbox settings inside explicit human or administrator approval boundaries.
+- Verify scope, policy, outcome, and audit evidence before accepting approval-click workflows or changed managed-agent defaults.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
@@ -170,6 +180,7 @@ The August 28 and 29 raw sources add approval-boundary evidence for persistent a
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with approval-depth, persistent-agent permission ceiling, policy-default, review-effort, billing, retention, and sandbox-default evidence.
 - Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Maintained on 2026-07-24 with the distinction between workflow-convenience approvals and enforceable security controls.
 - Maintained on 2026-07-28 with client-specific access rollout, isolated-workspace PR handoff, and CI workflow approval-hold guidance.

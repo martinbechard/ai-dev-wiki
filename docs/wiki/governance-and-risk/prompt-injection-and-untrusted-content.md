@@ -55,6 +55,12 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds spreadsheet-style prompt-injection and contextual authorization evidence. Strict JSON, schema output, or model-level safeguards do not eliminate risk when untrusted business documents carry adversarial instructions, so consequential extraction workflows need red-team fixtures, source isolation, hidden-content inspection, and human review before actions execute.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) adds spreadsheet and indirect-prompt-injection evidence:
+
+- Ordinary analysis documents, webpages, APIs, plugins, knowledge bases, and memory can carry hidden instructions that later reach tools, dependencies, or code changes.
+- Context packages should label source trust and isolate untrusted content.
+- Dependency or tool changes should stay behind containment and deny-by-default policy checks.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -95,9 +101,11 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Screen browser observations and web-content tool results before autonomous browser actions, then verify intended action, trusted-domain scope, and manual override availability before execution.
 - Red-team spreadsheet, table, and document extraction workflows with adversarial fixtures before structured output can trigger consequential decisions or writes.
 - Require contextual authorization for actions proposed after reading untrusted content; valid tools and valid users are not enough when the source can steer the action sequence.
+- Treat webpages, APIs, plugins, knowledge bases, and memory as indirect-prompt-injection carriers when they can later steer tool use, dependency changes, or code edits.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
@@ -153,6 +161,7 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with spreadsheet, indirect-prompt-injection, untrusted-document, containment, deny-by-default tool, and dependency-gate evidence.
 - Maintained on 2026-07-23 with agent-written file, repository metadata, hookable configuration, dataset-processing, and connected-app trust boundary guidance.
 - Maintained on 2026-07-28 with CI workflow tampering, agent-configuration integrity, MCP registration, scoped-credential, and egress-control boundaries.
 - Created on 2026-06-23 to separate prompt-injection and untrusted-content practice from the broader governance-controls page.

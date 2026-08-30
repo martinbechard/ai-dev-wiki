@@ -21,6 +21,12 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds persistent-agent recovery evidence. Recovery should include wake or sleep state, self-created follow-up tasks, memory sources, sparse notification records, and external-change approvals before a resumed agent continues work.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) adds IDE and shared-agent recovery evidence:
+
+- Interrupted-session restore should preserve the task cursor.
+- Cross-application continuation should preserve permission mode and tool configuration.
+- Shared session state should preserve review evidence so resumed work does not silently widen authority or lose human steering context.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -31,9 +37,11 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Separate task plan, execution memory, auditor findings, and artifact evidence so resumed work can rehydrate needed state without rewriting audit history.
 - For security recovery, preserve credential class, revocation or deauthorization action, affected-user notice, audit-log reference, residual-access review, and containment result before resuming agent work.
 - For model or agent continuation recovery, separate repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence before deciding how much prior reasoning to reload.
+- Preserve permission mode, tool configuration, shared-session context, and review evidence when recovery crosses IDE, chat, or application surfaces.
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
@@ -67,6 +75,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with interrupted-session restore, cross-application continuation, permission-mode, tool-configuration, and review-evidence recovery guidance.
 - Maintained on 2026-08-29 with persistent-agent wake/sleep, follow-up task, memory-source, notification, and approval recovery evidence.
 - Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.
 - Maintained on 2026-08-08 with fresh-context executor, read-only auditor, execution-memory, and artifact-evidence recovery boundaries.

@@ -47,6 +47,12 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 
 The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json) adds role-specialized software-development education evidence. Planner, coder, tester, reviewer, and manager roles are useful only when each role has an authority boundary, expected artifact, verification duty, handoff criterion, and human oversight point. Locally, a role label is not a delegation contract unless it also states what the coordinator will accept or reject when the subagent returns.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) adds a cost-aware model-routing signal for subagents:
+
+- A stronger orchestrating model can reserve judgment, decomposition, and acceptance work.
+- Cheaper implementation subagents are appropriate only for well-scoped mechanical changes.
+- The task package, verification gate, and accepted-change metric should remain inspectable before cheaper routing is treated as lower-cost engineering.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -76,9 +82,11 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 - Treat queued subagent prompts, queued shell commands, and side-channel questions as delegated work that needs owner, scope, approval state, and completion evidence before synthesis.
 - Require each planner, coder, tester, reviewer, or manager subagent role to declare authority, expected artifact, verification responsibility, handoff criterion, and human oversight point.
 - Reject returned subagent work when the evidence does not match the role contract, even if the role label sounds appropriate.
+- Route cheaper subagents only for well-scoped mechanical work when the coordinator retains judgment, acceptance, and verification responsibility.
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md)
@@ -130,6 +138,7 @@ The [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with cost-aware orchestrator/subagent model-routing and accepted-change evidence.
 - Created on 2026-06-23 from source-backed subagent, specialist-agent, and integration guidance.
 - Maintained on 2026-06-23 with public loop-design guidance on recurring subagent loops, independent validation, and stop conditions.
 - Maintained on 2026-06-28 with typed delegation contracts for subagent configuration.

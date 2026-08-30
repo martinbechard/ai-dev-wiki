@@ -57,6 +57,12 @@ The August 22 sources add production-eval and runtime-evidence placement:
 - The [leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) adds schema/business/authorization gates, graph-edge evidence, sandbox execution controls, behavior-policy checks, and OpenTelemetry-style trace vocabulary as inputs to eval cases.
 - Locally, verification loops should explain where each evaluator runs, what evidence it consumes, what it costs, and which pause or escalation rule it can trigger.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) and [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) add formal-methods, approval-depth, and maintainability evidence:
+
+- Automated reasoning and proof assistants can complement probabilistic coding agents for correctness-sensitive work.
+- Production agent changes still need tests, reviewable prompt or instruction versions, and validation evidence.
+- Observability, rollback paths, and outcome review remain part of the verification loop.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -112,9 +118,12 @@ The August 22 sources add production-eval and runtime-evidence placement:
 - Use deterministic checks broadly, and reserve LLM judges or human domain reviewers for ambiguous, costly, high-risk, or policy-sensitive cases.
 - Convert trace spans, tool-call edges, sandbox events, business-rule verdicts, authorization decisions, cost, latency, and pause events into reusable eval cases.
 - Check generated or adapted code against behavior policy before execution when the risk is destructive, networked, production-facing, or credential-adjacent.
+- Treat formal proof or automated reasoning as an additional correctness layer, not a replacement for tests, runtime evidence, source review, and human acceptance.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -186,6 +195,7 @@ The August 22 sources add production-eval and runtime-evidence placement:
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with formal-methods, automated-reasoning, approval-depth, maintainable-agent, observability, rollback, and outcome-review evidence.
 - Maintained on 2026-07-23 with workflow-fit eval selection, benchmark-ledger routing, deterministic guardrails, containment, and independent-check guidance.
 - Created on 2026-06-23 from local source guidance on verification, evals, graders, grounding, and done signals.
 - Maintained on 2026-06-23 as the verification and eval overview after splitting acceptance, review, judge, and calibration leaves.

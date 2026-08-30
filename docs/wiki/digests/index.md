@@ -2,7 +2,7 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries should stay brief, stay reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries, including the August 29 managed-agent policy, bot-to-agent review, persistent-agent, observability, workflow-state, ownership, harness, structured-output, prompt-injection, execution-edge, and adoption-quality updates.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries stay brief, reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
@@ -81,3 +81,4 @@ This digest hub is downstream of raw source ingest. Public collectors and leaf w
 - Maintained on 2026-08-25 with connector-trigger, tool-governance, context, skill, sandboxed execution, review-eval, runtime-update, and portability digest scope.
 - Maintained on 2026-08-26 with operation-scoped governance, browser-agent, model-policy, PRD-validation, feed-hook, handoff, and plugin-packaging digest scope.
 - Maintained on 2026-08-29 with managed-agent policy, bot-to-agent review, persistent-agent, observability, workflow-state, ownership, harness, structured-output, prompt-injection, execution-edge, and adoption-quality digest scope.
+- Maintained on 2026-08-29 with shared-agent, cost-aware routing, runtime-governance, destructive-command, prompt-injection, and formal-verification digest scope.

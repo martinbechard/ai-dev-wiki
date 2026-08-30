@@ -33,6 +33,12 @@ The [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-d
 
 The August 8 sources add long-horizon, adversarial-test, and first-party eval signals. The [leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json) supports calibration tasks that exercise manager/executor/auditor separation, context pressure, execution memory, test-suite adequacy, and role-grounded rubrics. The [topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json) adds repository-submission and codebase-health review as calibration evidence for AI-agent training events.
 
+The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) adds coding-leaderboard methodology evidence:
+
+- Live arena results and benchmark cross-checks should be treated as calibration prompts, not direct model-selection authority.
+- Coding-agent rankings should be mapped to local task shape, repository exploration needs, accepted-change quality, and verification cost.
+- Leaderboard movement should trigger representative workflow calibration before model or assistant defaults change.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -54,9 +60,11 @@ The August 8 sources add long-horizon, adversarial-test, and first-party eval si
 - Compare task realism, repository exploration, contamination resistance, verifier determinism, and human-review evidence when benchmark results influence local calibration.
 - Compare dollars per completed task, tokens, wall-clock time, and workflow fit before adopting benchmark rankings or community telemetry as operating defaults.
 - Include long-horizon state management, final deliverable repair, adversarial test-suite auditing, role-grounded rubrics, repository evidence, and codebase-health criteria when those match the local workflow.
+- Treat coding-leaderboard updates as prompts to rerun representative local tasks before changing model, assistant, or effort defaults.
 
 ## Authoritative Sources
 
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -98,6 +106,7 @@ The August 8 sources add long-horizon, adversarial-test, and first-party eval si
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with coding-leaderboard methodology, live-arena, benchmark-cross-check, accepted-change, and verification-cost calibration evidence.
 - Created on 2026-06-23 to hold representative workflow calibration and local-model drift-check practice.
 - Maintained on 2026-06-26 with prompt-provenance, human-review behavior, trace-linked quality, retrieval, tool-call, cost, and latency calibration signals.
 - Maintained on 2026-06-30 with optimized-versus-baseline context calibration for compression, cache alignment, retrieval, memory, and provenance layers.

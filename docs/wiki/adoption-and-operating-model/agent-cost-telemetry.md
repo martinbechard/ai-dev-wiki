@@ -83,6 +83,12 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds app-scoped billing automation evidence. Usage, invoice reconciliation, budgets, and cost-center workflows can use installation tokens instead of personal access tokens, but local telemetry should treat read-write billing permissions as a governed automation surface with owner, budget effect, reconciliation scope, and revocation evidence.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) and [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json) add FinOps, leaderboard, and practitioner-cost evidence:
+
+- Agent workloads can amplify tokens beyond chatbot baselines.
+- Task economics are more useful when measured as cost per accepted, reviewed, and merged change rather than cost per prompt or benchmark attempt.
+- Local telemetry should expose budget caps, quota pressure, reasoning effort, subagent routing, request fan-out, context caching, and accepted-change quality before model or assistant defaults are changed.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -146,9 +152,12 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Compare modernization-agent spend with the human delivery baseline, verification cost, review effort, and accepted migration outcome rather than with nominal model cost alone.
 - Include false-positive triage minutes, pull-request coordination load, cycle-time impact, accepted outcomes, and review quality when evaluating AI review or coding-agent adoption cost.
 - Prefer app-scoped credentials for recurring billing and usage telemetry only when the permission class, affected budgets, cost centers, reconciliation workflow, owner, and revocation path are recorded.
+- Track agent economics by accepted change, review outcome, quota pressure, request fan-out, and context reuse so lower nominal model cost does not hide extra coordination, verification, or retry cost.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
+- [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [workflow before model selection](workflow-before-model-selection.md)
@@ -223,6 +232,7 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with FinOps quota, cost-per-accepted-change, subagent routing, and leaderboard-methodology cost evidence.
 - Maintained on 2026-08-26 with app-scoped billing automation, budget/cost-center permission review, and revocation evidence for recurring AI cost telemetry.
 
 - Maintained on 2026-07-23 with adoption-phase telemetry, agent-sprawl cost visibility, external-service dependency, and budget-owner signals.

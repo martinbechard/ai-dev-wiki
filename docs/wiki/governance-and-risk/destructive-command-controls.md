@@ -25,6 +25,12 @@ The August 17 topic news collector adds a local sandbox example: commits, pushes
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds context-aware action-control evidence. Destructive command controls should judge whether a proposed high-impact action belongs to the current task and approved payload, not only whether the command, user, or tool is normally allowed.
 
+The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json) adds a destructive-automation incident signal:
+
+- Cleanup, reset, delete, migration, and generated-script workflows need dry-run evidence.
+- Isolated fixtures, path allowlists, rollback or backup evidence, and human review should exist before execution outside a scratch workspace.
+- Safety tests should not reuse production-adjacent paths without explicit containment evidence.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -36,9 +42,11 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Treat live security actions, public contact, service-to-service mutation, and chained high-speed operations as high-impact action classes when an agent's privileges make the combined effect destructive.
 - Prefer sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions when the workflow does not require those capabilities.
 - Block destructive or confidential-data actions when the command is individually valid but the action sequence, task context, or approved payload does not justify it.
+- Require dry-run evidence, isolated fixtures, path allowlists, rollback or backup evidence, and human review before generated cleanup or deletion scripts run outside scratch workspaces.
 
 ## Authoritative Sources
 
+- [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
@@ -75,6 +83,7 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-29 with dry-run, isolated-fixture, path-allowlist, rollback, backup, and human-review evidence for destructive generated scripts.
 - Created on 2026-07-17 from public raw artifacts about terminal-agent forced-removal detection and denial reasons, with broader command-safety controls routed to the upstream AI wiki.
 - Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.
 - Maintained on 2026-08-03 with high-impact authorization, tool-surface reduction, and retest-trigger evidence.

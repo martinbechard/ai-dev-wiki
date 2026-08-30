@@ -1,0 +1,428 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-30T00:31:50Z",
+  "run_timestamp_local": "2026-08-29T20:31:50-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-28T00:31:50Z",
+    "end_utc": "2026-08-30T00:31:50Z",
+    "rule": "Include only public sources with a visible publication or update date within the last 2 days relative to the run time. Date-only August 28, 2026 and later qualified; missing, ambiguous, future-dated, older, and boundary-only lower-bound candidates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "source": "docs/wiki/federation.md",
+    "rule": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques are upstream-owned. This collector records only local AI-assisted development practice implications or routing notes."
+  },
+  "search_queries": [
+    "context engineering AI coding agents practice updated August 29 2026",
+    "AI code review agent workflow evaluation updated August 29 2026",
+    "MCP governance tool permissions audit logs coding agents August 2026",
+    "AI assisted TDD coding agents regression repair August 29 2026",
+    "site:github.blog changelog copilot coding agent August 29 2026",
+    "site:github.blog/changelog Copilot coding agent August 28 2026",
+    "site:anthropic.com/news Claude Code August 29 2026",
+    "site:openai.com/index Codex August 29 2026",
+    "site:sourcegraph.com/blog AI code review August 28 2026 coding agents",
+    "site:devblogs.microsoft.com AI coding agents August 28 2026",
+    "site:stackoverflow.blog AI coding agents August 28 2026",
+    "site:engineering.atspotify.com AI agents code review August 2026",
+    "\"August 29, 2026\" \"AI coding\" agents",
+    "\"August 29, 2026\" \"Copilot\" \"code review\"",
+    "\"August 29, 2026\" \"MCP\" \"coding agents\"",
+    "\"August 29, 2026\" \"context engineering\" \"agents\"",
+    "site:openai.com/index \"August 29, 2026\" \"agent\" \"security\"",
+    "site:openai.com/index \"August 28, 2026\" Codex agent security persistent",
+    "site:openai.com/index \"published this week\" \"persistent\" \"agents\" \"sandbox\"",
+    "site:openai.com/index \"Hugging Face\" \"persistent\" \"sandbox\" OpenAI technical report"
+  ],
+  "qualifying_findings": [
+    {
+      "title": "Copilot in Visual Studio exposes organization custom agents, effort controls, usage visibility, and Git-agent pre-PR review",
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "source_type": "vendor changelog",
+      "visible_date": "August 28, 2026",
+      "visible_date_evidence": "Page header says \"August 28, 2026 - 2 minute read\".",
+      "short_factual_summary": "GitHub's Visual Studio update says organization and enterprise owners can publish custom agents across repositories; users can adjust Low, Medium, and High thinking effort; model management exposes capabilities, context windows, and costs; and a Git agent can review uncommitted changes or commits before a pull request.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice-level signal that coding-agent use is moving toward centrally published team agents, explicit reasoning-cost controls, and review-before-PR loops inside source workflows.",
+      "mapped_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio",
+        "Git agent",
+        "Azure DevOps"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Product and broad feature coverage belongs to the upstream AI wiki; local wiki should keep the team-agent, effort-control, and review-loop practice implication."
+        },
+        {
+          "entity": "Visual Studio",
+          "reason": "General developer-tool coverage is upstream-owned; local relevance is workflow integration."
+        }
+      ],
+      "follow_up_notes": "Consider a local lens on centrally published custom agents and pre-PR agent review as operating practices, not a Copilot product page."
+    },
+    {
+      "title": "Copilot weekly release emphasizes shared team agent sessions, permission defaults, MCP and skills management, crash recovery, and cross-app session continuation",
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "source_type": "vendor changelog",
+      "visible_date": "August 28, 2026",
+      "visible_date_evidence": "Page header says \"August 28, 2026 - 2 minute read\".",
+      "short_factual_summary": "GitHub's weekly Copilot release notes describe shared agent sessions in Slack and Teams, a Customize tab for MCP servers, plugins, skills, and canvases, CLI defaults for execution and permission modes, interrupted-session restore, enterprise controls for JetBrains, cross-application session continuation in VS Code, and side-by-side model review.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update points to a mature agent operating model: shared visibility, reproducible session recovery, explicit default permission modes, and governed tool/skill registration instead of one-off chat usage.",
+      "mapped_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "MCP",
+        "JetBrains",
+        "VS Code",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Product release coverage belongs upstream; local note should focus on shared sessions, permissions, and managed tools."
+        },
+        {
+          "entity": "Model Context Protocol",
+          "reason": "Protocol and server ecosystem details are upstream-owned; local note can cover MCP as a governed practice."
+        },
+        {
+          "entity": "Claude",
+          "reason": "Model/product coverage is upstream-owned; local relevance is second-opinion review workflow."
+        }
+      ],
+      "follow_up_notes": "Useful evidence for pages about streaming or shared progress, agent permissions, durable session recovery, and governed MCP/skill registration."
+    },
+    {
+      "title": "GitHub announces upcoming unified Copilot policy and Balanced default for code review effort",
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "source_type": "vendor changelog",
+      "visible_date": "August 28, 2026",
+      "visible_date_evidence": "Page header says \"August 28, 2026\" and related posts list it as \"Aug.28 Improvement\".",
+      "short_factual_summary": "GitHub says Copilot Chat on github.com, Copilot Chat in GitHub Mobile, and Copilot cloud agent will converge into a single policy no earlier than September 28, 2026. It also says Copilot code review's Default effort value will use Balanced starting September 28, with organization and repository settings available for defaults.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams running coding agents need policy review before defaults change, especially where chat retention, sandbox-backed cloud agent behavior, and code-review effort levels affect governance, cost, and review quality.",
+      "mapped_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent",
+        "GitHub Mobile",
+        "Sandbox"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Product and billing details belong upstream; local relevance is administrative default review and policy impact."
+        }
+      ],
+      "follow_up_notes": "Potential local guidance: maintain a settings-review checklist whenever agent policy, data retention, or default review effort changes."
+    },
+    {
+      "title": "Stack Overflow episode frames Lean and automated reasoning as correctness support for AI agents",
+      "source_url": "https://stackoverflow.blog/podcast/",
+      "source_type": "podcast listing",
+      "visible_date": "August 28, 2026",
+      "visible_date_evidence": "Podcast listing shows \"August 28, 2026\" for \"When you keep AI Lean, you keep AI correct\".",
+      "short_factual_summary": "Stack Overflow describes an August 28 podcast conversation with Leo de Moura about proving correctness in AI agents with Lean, how automated reasoning complements probabilistic AI models, and using AI for continuous code optimization.",
+      "why_it_matters_for_ai_assisted_development_practice": "The item is relevant to verification practice because it treats formal proof and automated reasoning as companions to agentic coding rather than as generic benchmark claims.",
+      "mapped_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Stack Overflow",
+        "Leo de Moura",
+        "AWS",
+        "Lean"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Lean",
+          "reason": "Broad language/tool background is upstream-owned; local relevance is proof-backed agent verification."
+        },
+        {
+          "entity": "Stack Overflow",
+          "reason": "Company/platform background is upstream-owned; local relevance is practice framing."
+        }
+      ],
+      "follow_up_notes": "If ingested, avoid turning this into a Lean encyclopedia entry; use it as evidence for formal-methods-backed agent verification."
+    },
+    {
+      "title": "Angular Architects updates an agentic engineering field report with cost-per-accepted-change and subagent model-selection heuristics",
+      "source_url": "https://www.angulararchitects.io/blog/ae-summer-2026-update-for-angular/",
+      "source_type": "practitioner blog",
+      "visible_date": "29. August 2026",
+      "visible_date_evidence": "Page header says \"29. August 2026\".",
+      "short_factual_summary": "The post updates an agentic engineering series with a model-harness-app stack view, DeepSWE and Artificial Analysis snapshots, a cost-per-accepted-change framing, and a workflow preference that uses a stronger orchestrating model with a cheaper implementation subagent for well-scoped work.",
+      "why_it_matters_for_ai_assisted_development_practice": "It gives practice-level heuristics for measuring real agent economics: judge cost by accepted, reviewed, merged changes; pick effort levels by task complexity; and route mechanical subagent work to cheaper models when quality remains acceptable.",
+      "mapped_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Angular Architects",
+        "DeepSWE",
+        "Artificial Analysis",
+        "Fable 5",
+        "GPT-5.6 Sol",
+        "GLM-5.3 Flash",
+        "T3 Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Fable 5",
+          "reason": "Model background belongs upstream; local relevance is model routing by task and cost."
+        },
+        {
+          "entity": "GPT-5.6 Sol",
+          "reason": "Model background belongs upstream; local relevance is subagent selection and cost measurement."
+        },
+        {
+          "entity": "DeepSWE",
+          "reason": "Benchmark background belongs upstream; local relevance is using task-cost metrics as an eval input."
+        },
+        {
+          "entity": "Codex",
+          "reason": "Product background belongs upstream; local relevance is app/harness selection practice."
+        }
+      ],
+      "follow_up_notes": "Could support local leaves on cost-per-accepted-change, model routing for subagents, and quarterly re-evaluation of agent stacks."
+    },
+    {
+      "title": "TrueFoundry maps LLM-agent security to information flow, delegated authority, persistent state, runtimes, gateways, registries, and provenance-aware state",
+      "source_url": "https://www.truefoundry.com/ar/blog/llm-agent-security-runtime-control-planes",
+      "source_type": "vendor/practitioner security blog",
+      "visible_date": "Published: August 29, 2026",
+      "visible_date_evidence": "Page header says \"Published: August 29, 2026\".",
+      "short_factual_summary": "TrueFoundry summarizes a 2026 LLM-agent security survey and argues that secure agents require systems controls across information flow, delegated authority, and persistent state. The post maps controls to runtime boundaries, model gateways, MCP gateways, agent registries, budgets, traces, and provenance-aware state responsibilities.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is directly relevant to local governance: prompt filters, sandboxes, approvals, and gateways must compose with identity, state integrity, audit evidence, and systems-of-record boundaries for coding agents with tools.",
+      "mapped_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "TrueFoundry AI Gateway",
+        "MCP Gateway",
+        "Agent Registry",
+        "Yuchen Ling",
+        "Shengcheng Yu",
+        "Zhenyu Chen",
+        "Chunrong Fang",
+        "Toward Secure LLM Agents"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "TrueFoundry",
+          "reason": "Company and product details belong upstream; local relevance is the control-plane/runtimes practice model."
+        },
+        {
+          "entity": "Model Context Protocol",
+          "reason": "Protocol coverage belongs upstream; local relevance is MCP gateway as governed tool access."
+        },
+        {
+          "entity": "Toward Secure LLM Agents",
+          "reason": "Broad research-paper background may be upstream-owned; local relevance is its security framework applied to coding-agent practice."
+        }
+      ],
+      "follow_up_notes": "Good candidate evidence for local guidance on least privilege, state provenance, and audit boundaries in agent harnesses."
+    },
+    {
+      "title": "explainx.ai analyzes Uber's software-factory cost controls for coding agents",
+      "source_url": "https://www.explainx.ai/blog/uber-software-factory-agent-cost-optimization-august-2026",
+      "source_type": "secondary practitioner analysis",
+      "visible_date": "Aug 29, 2026",
+      "visible_date_evidence": "Article header says \"Aug 29, 2026 - 9 min read\".",
+      "short_factual_summary": "The post summarizes a reported Uber Engineering software-factory case study and frames total agent spend as a six-term equation: adoption, engagement, turns per session, requests per turn, tokens per request, and price per token. It highlights cheaper default models for well-scoped subagent tasks, context compaction/caching, request fan-out control, and real-time cost visibility.",
+      "why_it_matters_for_ai_assisted_development_practice": "Even as secondary analysis, it captures a useful operating model for teams scaling coding agents: measure work-unit economics, reduce unnecessary turns and context bloat, and make spend visible while agents are running.",
+      "mapped_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "explainx.ai",
+        "Uber Engineering",
+        "Uday Kiran Medisetty",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Uber",
+          "reason": "Company case-study background belongs upstream; local relevance is cost-control practice."
+        },
+        {
+          "entity": "Model Context Protocol",
+          "reason": "Protocol details are upstream-owned; local relevance is context bloat in tool-connected agent workflows."
+        }
+      ],
+      "follow_up_notes": "Treat as secondary unless the original Uber source is available during ingest; useful for a cost-control lens, not broad Uber coverage."
+    },
+    {
+      "title": "LLM Stats updates coding leaderboard methodology around live arena results plus benchmark cross-checks",
+      "source_url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "source_type": "benchmark/leaderboard page",
+      "visible_date": "Updated August 30, 2026",
+      "visible_date_evidence": "Page header says \"Updated August 30, 2026\".",
+      "short_factual_summary": "LLM Stats says its coding leaderboard combines blind human voting from live coding arenas with benchmark scores such as SWE-bench Verified, HumanEval, and LiveCodeBench. It describes task-specific arenas for React, canvas games, creative coding, D3, Three.js, SVG, and Tone.js outputs, and says open-ended arena performance is weighted heavily.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is evaluation design: coding-agent selection should combine task-representative output checks with benchmark cross-checks rather than relying on a single model leaderboard or one generic score.",
+      "mapped_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "LLM Stats",
+        "SWE-bench Verified",
+        "HumanEval",
+        "LiveCodeBench",
+        "GPT-5.6 Sol",
+        "Claude Fable 5",
+        "Claude Mythos Preview"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GPT-5.6 Sol",
+          "reason": "Model ranking belongs upstream; local relevance is evaluation methodology."
+        },
+        {
+          "entity": "Claude Fable 5",
+          "reason": "Model ranking belongs upstream; local relevance is evaluation methodology."
+        },
+        {
+          "entity": "SWE-bench Verified",
+          "reason": "Benchmark background belongs upstream; local relevance is cross-checking model selection against work-shaped tests."
+        }
+      ],
+      "follow_up_notes": "Use cautiously because it is a leaderboard page; local ingest should focus on benchmark-mixing practice, not model standings."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Copilot code review: Resolution reasons and expanded capabilities",
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "visible_date": "August 27, 2026",
+      "reason": "Excluded because the visible date is outside the strict two-day window for this run and date-only evidence cannot prove a qualifying time after the cutoff."
+    },
+    {
+      "title": "OpenAI Is Developing a 'Persistent' AI Agent",
+      "source_url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "visible_date": "Aug 27, 2026 12:52 PM",
+      "reason": "Excluded because the visible timestamp is before the local cutoff of 2026-08-27T20:31:50-0400."
+    },
+    {
+      "title": "The Hugging Face incident and the road ahead",
+      "source_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "visible_date": "Search result indicated 3 days ago",
+      "reason": "Excluded because the visible date evidence was outside the two-day window; the source is also broad AI security/entity coverage mostly owned by the upstream AI wiki."
+    },
+    {
+      "title": "Codex is now generally available",
+      "source_url": "https://openai.com/index/codex-now-generally-available/",
+      "visible_date": "October 6, 2025",
+      "reason": "Excluded because the article's visible publication date is not within the window; search snippets exposed future related links but the article itself is older."
+    },
+    {
+      "title": "Azure Cosmos DB in the Agentic Era: Data Tools for Developers and AI Agents",
+      "source_url": "https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-in-the-agentic-era-data-tools-for-developers-and-ai-agents/",
+      "visible_date": "August 18th, 2026",
+      "reason": "Excluded because the visible publication date is outside the two-day window, despite strong practice relevance around schema sampling, consent, identity, and local test data."
+    },
+    {
+      "title": "Responsible AI adoption needs developer workflow design",
+      "source_url": "https://stackoverflow.blog/",
+      "visible_date": "August 24, 2026",
+      "reason": "Excluded because the visible date on the listing is outside the two-day window."
+    },
+    {
+      "title": "AI Agents News - Week of August 29, 2026",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "5 hours ago / Friday, August 28, 2026",
+      "reason": "Excluded from qualifying findings because it is an aggregator of broad entity and product updates; direct sources should be preferred for ingest. It can be used as discovery evidence only."
+    },
+    {
+      "title": "Best AI Governance Tools for Coding Agents in 2026",
+      "source_url": "https://www.getmaxim.ai/articles/top-5-ai-governance-tools-for-coding-agents-in-2026/",
+      "visible_date": "3 days ago",
+      "reason": "Excluded because the visible date was outside the strict two-day window."
+    },
+    {
+      "title": "How to Build Audit Trails for AI Coding Agents",
+      "source_url": "https://www.mintmcp.com/blog/build-audit-trails-ai-coding-agents",
+      "visible_date": "Apr 16, 2026",
+      "reason": "Excluded because the publication date is older than the window, even though audit trail content is locally relevant."
+    },
+    {
+      "title": "Context Engineering: A Practical Guide for AI Agents",
+      "source_url": "https://sourcegraph.com/blog/context-engineering",
+      "visible_date": "28 May 2026",
+      "reason": "Excluded because the publication date is older than the window."
+    },
+    {
+      "title": "Context Engineering for AI Agents in Open-Source Software",
+      "source_url": "https://dl.acm.org/doi/10.1145/3793302.3793350",
+      "visible_date": "4 Aug 2026",
+      "reason": "Excluded because the visible publication date is outside the window."
+    },
+    {
+      "title": "AI Coding Agents: Who's Testing the Code? (2026)",
+      "source_url": "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing",
+      "visible_date": "Aug 21, 2026",
+      "reason": "Excluded because the visible publication date is outside the window."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector output; do not move this artifact to raw/processed until a later ingest synthesizes it into durable wiki pages and passes the required verification gates.",
+    "Likely local practice lenses: organization-published agents, permission-mode defaults, shared agent sessions, cost-per-accepted-change, formal verification for agent-produced code, agent security control planes, and benchmark-mixing for model selection.",
+    "Before ingest, prefer primary/direct sources where secondary analyses mention vendor or company case studies, especially for the Uber software-factory item.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
