@@ -1,0 +1,657 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-08-30T01:01:48Z",
+    "rule": "Only include public sources with visible publication or update dates after the cutoff start and at or before the run timestamp; exclude missing, ambiguous, future-dated, and boundary-only candidates.",
+    "start_utc": "2026-08-23T01:01:48Z"
+  },
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "candidate_summary": "Oracle production-database agent access discussion remains relevant but was published before the cutoff.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "reason": "outside strict seven-day window for run ending 2026-08-30T01:01:48Z",
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_summary": "Langfuse agent evaluation page covers trajectory, tool use, task completion, and multi-turn quality but lacked a visible qualifying date.",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "reason": "no visible publication or update date on opened page",
+      "source_url": "https://langfuse.com/resources/engineering/ai-agent-evaluation",
+      "visible_date": null
+    },
+    {
+      "candidate_summary": "Eigent explains Slack Code shared channels, but the visible publication date predates the cutoff.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md"
+      ],
+      "reason": "outside strict seven-day window for run ending 2026-08-30T01:01:48Z",
+      "source_url": "https://www.eigent.ai/blog/slack-code-multiplayer-ai-coding",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_summary": "arXiv paper on AI-to-AI GitHub PR reviews has useful review evidence but is stale for this run.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "reason": "outside strict seven-day window for run ending 2026-08-30T01:01:48Z",
+      "source_url": "https://arxiv.org/html/2608.21311v1",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_summary": "Minitap testing article is relevant to AI-generated code verification but stale for this run.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "reason": "outside strict seven-day window for run ending 2026-08-30T01:01:48Z",
+      "source_url": "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_summary": "Minitap spec-driven development guide is relevant to request packaging but stale for this run.",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "reason": "outside strict seven-day window for run ending 2026-08-30T01:01:48Z",
+      "source_url": "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+      "visible_date": "2026-08-21"
+    },
+    {
+      "candidate_summary": "VS Code context-engineering guide is relevant and public but has no visible qualifying date in the opened content.",
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "reason": "no visible publication or update date on opened page",
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": null
+    },
+    {
+      "factual_summary": "Sweet Security describes indirect prompt injection in agentic systems and highlights controls such as untrusted-content labeling, permission restriction, egress controls, sandboxed tools, runtime monitoring, and human approval for high-impact actions.",
+      "id": "sweet-indirect-prompt-injection-agentic-ai-2026-08-21",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "local_practice_implication": "Not counted as qualifying for this run because of the visible date.",
+      "named_entities": [
+        "Sweet Security",
+        "OWASP"
+      ],
+      "source_type": "public security article",
+      "source_url": "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection",
+      "upstream_owned_entities": [
+        "Prompt injection",
+        "OWASP Top 10 for LLM Applications"
+      ],
+      "visible_date": "2026-08-21",
+      "why_it_matters": "The source was checked because it is relevant to selected governance leaves, but it falls before the strict seven-day window for this run."
+    }
+  ],
+  "federation_boundary": {
+    "downstream_ai_dev_wiki_owns": "Local AI-assisted-development practices, workflow, governance, adoption, verification, context architecture, and implementation lenses.",
+    "routing_note": "Qualifying items are captured only for local practice implications; broad entity background remains upstream-owned.",
+    "upstream_ai_wiki_owns": "Broad AI ecosystem entities, products, companies, models, frameworks, MCP servers, and techniques."
+  },
+  "leaf_results": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review raw artifact for downstream practice implications: itpro-google-gemini-enterprise-finops-2026-08-26",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "itpro-google-gemini-enterprise-finops-2026-08-26"
+      ],
+      "source_urls_checked": [
+        "https://www.itpro.com/technology/artificial-intelligence/google-targets-ai-cost-efficiency-with-new-finops-features-for-gemini-enterprise"
+      ]
+    },
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, wired-codex-persistent-mode-report-2026-08-27",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "wired-codex-persistent-mode-report-2026-08-27"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+      ]
+    },
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, techradar-approve-button-agent-governance-2026-08-24, wired-codex-persistent-mode-report-2026-08-27",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "techradar-approve-button-agent-governance-2026-08-24",
+        "wired-codex-persistent-mode-report-2026-08-27"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+        "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+      ]
+    },
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md": {
+      "excluded_candidate_urls": [
+        "https://www.eigent.ai/blog/slack-code-multiplayer-ai-coding"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: businessinsider-ai-coding-collaboration-fatigue-2026-08-27",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "businessinsider-ai-coding-collaboration-fatigue-2026-08-27"
+      ],
+      "source_urls_checked": [
+        "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+        "https://www.eigent.ai/blog/slack-code-multiplayer-ai-coding"
+      ]
+    },
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md": {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review raw artifact for downstream practice implications: wired-codex-persistent-mode-report-2026-08-27",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "wired-codex-persistent-mode-report-2026-08-27"
+      ],
+      "source_urls_checked": [
+        "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+      ]
+    },
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": {
+      "excluded_candidate_urls": [
+        "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: tomshardware-claude-delete-safeguard-failure-2026-08-28",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "tomshardware-claude-delete-safeguard-failure-2026-08-28"
+      ],
+      "source_urls_checked": [
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+        "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+      ]
+    },
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": {
+      "excluded_candidate_urls": [
+        "https://www.minitap.ai/magazine/spec-driven-development-sdd"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: tomshardware-claude-delete-safeguard-failure-2026-08-28",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "tomshardware-claude-delete-safeguard-failure-2026-08-28"
+      ],
+      "source_urls_checked": [
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+        "https://www.minitap.ai/magazine/spec-driven-development-sdd"
+      ]
+    },
+    "docs/wiki/coding-practices/generated-code-refactoring.md": {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, tomshardware-claude-delete-safeguard-failure-2026-08-28",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "tomshardware-claude-delete-safeguard-failure-2026-08-28"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up"
+      ]
+    },
+    "docs/wiki/coding-practices/intelligent-code-review.md": {
+      "excluded_candidate_urls": [
+        "https://arxiv.org/html/2608.21311v1"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: businessinsider-ai-coding-collaboration-fatigue-2026-08-27",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "businessinsider-ai-coding-collaboration-fatigue-2026-08-27"
+      ],
+      "source_urls_checked": [
+        "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+        "https://arxiv.org/html/2608.21311v1"
+      ]
+    },
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md": {
+      "excluded_candidate_urls": [
+        "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: techradar-approve-button-agent-governance-2026-08-24, tomshardware-claude-delete-safeguard-failure-2026-08-28, shiftmag-spreadsheet-prompt-injection-demo-2026-08-27, threatlocker-indirect-prompt-injection-2026-08-26",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "techradar-approve-button-agent-governance-2026-08-24",
+        "tomshardware-claude-delete-safeguard-failure-2026-08-28",
+        "shiftmag-spreadsheet-prompt-injection-demo-2026-08-27",
+        "threatlocker-indirect-prompt-injection-2026-08-26"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+        "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+        "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+        "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+      ]
+    },
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": {
+      "excluded_candidate_urls": [
+        "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: techradar-approve-button-agent-governance-2026-08-24, shiftmag-spreadsheet-prompt-injection-demo-2026-08-27, threatlocker-indirect-prompt-injection-2026-08-26",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "techradar-approve-button-agent-governance-2026-08-24",
+        "shiftmag-spreadsheet-prompt-injection-demo-2026-08-27",
+        "threatlocker-indirect-prompt-injection-2026-08-26"
+      ],
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+        "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+        "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+        "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+      ]
+    },
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": {
+      "excluded_candidate_urls": [
+        "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+        "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, wired-codex-persistent-mode-report-2026-08-27, shiftmag-spreadsheet-prompt-injection-demo-2026-08-27, threatlocker-indirect-prompt-injection-2026-08-26",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "wired-codex-persistent-mode-report-2026-08-27",
+        "shiftmag-spreadsheet-prompt-injection-demo-2026-08-27",
+        "threatlocker-indirect-prompt-injection-2026-08-26"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+        "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+        "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+        "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+        "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide"
+      ]
+    },
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": {
+      "excluded_candidate_urls": [
+        "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+      ],
+      "follow_up_note": "No strict-window qualifying public update found in this scan; exclusions record stale or missing-date candidates when applicable.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+      ]
+    },
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": {
+      "excluded_candidate_urls": [
+        "https://langfuse.com/resources/engineering/ai-agent-evaluation"
+      ],
+      "follow_up_note": "No strict-window qualifying public update found in this scan; exclusions record stale or missing-date candidates when applicable.",
+      "last_result": "no_qualified_update_found",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://langfuse.com/resources/engineering/ai-agent-evaluation"
+      ]
+    },
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": {
+      "excluded_candidate_urls": [
+        "https://langfuse.com/resources/engineering/ai-agent-evaluation",
+        "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+      ],
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-maintainable-agents-2026-08-24, techradar-approve-button-agent-governance-2026-08-24",
+      "last_qualified_update_at": "within 2026-08-23T01:01:48Z..2026-08-30T01:01:48Z visible-date scan window",
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "expresscomputer-maintainable-agents-2026-08-24",
+        "techradar-approve-button-agent-governance-2026-08-24"
+      ],
+      "source_urls_checked": [
+        "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+        "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+        "https://langfuse.com/resources/engineering/ai-agent-evaluation",
+        "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+      ]
+    }
+  },
+  "leaf_universe_count": 93,
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Express Computer argues that production agents should be treated as maintainable software: prompts become system behavior, oversized prompts create reliability debt, and production use needs versioning, review, tests, documented ownership, validated outputs, failure handling, observability, rollback, and bounded autonomy.",
+      "id": "expresscomputer-maintainable-agents-2026-08-24",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "local_practice_implication": "Instruction changes should be reviewable, testable, owned, observable, and reversible before they affect production workflows.",
+      "named_entities": [
+        "Express Computer",
+        "The Hartford India",
+        "Sugandha Srikanteswaran"
+      ],
+      "source_type": "public article",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "upstream_owned_entities": [
+        "AI agents"
+      ],
+      "visible_date": "2026-08-24",
+      "why_it_matters": "Reinforces local leaves that treat prompt/instruction packages, generated code, verification loops, and approval boundaries as governed engineering assets rather than disposable prompt text."
+    },
+    {
+      "factual_summary": "ITPro reports new Gemini Enterprise FinOps controls including billing flexibility, spend-based savings plans, project-level hard caps, and pooled developer-tool quota; it also cites agent workloads as consuming four to fifteen times more tokens than chatbots.",
+      "id": "itpro-google-gemini-enterprise-finops-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "local_practice_implication": "Agent telemetry should track budget caps, quota pressure, and loop-driven token amplification, not only aggregate model bills.",
+      "named_entities": [
+        "Google",
+        "Gemini Enterprise",
+        "ITPro",
+        "Signal65",
+        "Gartner",
+        "Harness"
+      ],
+      "source_type": "public news article",
+      "source_url": "https://www.itpro.com/technology/artificial-intelligence/google-targets-ai-cost-efficiency-with-new-finops-features-for-gemini-enterprise",
+      "upstream_owned_entities": [
+        "Google",
+        "Gemini Enterprise"
+      ],
+      "visible_date": "2026-08-26",
+      "why_it_matters": "Adds a fresh cost-governance signal for agent cost telemetry: local teams need per-project caps, quota pooling, and workload-level attribution for loop-heavy coding agents."
+    },
+    {
+      "factual_summary": "TechRadar distinguishes human-on-the-loop governance from shallow approvals and says agent autonomy needs enforceable boundaries, identity controls, reasoning/audit trails, validation, observability, and outcome review rather than rote approval clicks.",
+      "id": "techradar-approve-button-agent-governance-2026-08-24",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "local_practice_implication": "Approval workflows should verify scope, policy, outcome, and audit evidence before granting higher-impact agent actions.",
+      "named_entities": [
+        "TechRadar",
+        "Extreme Networks",
+        "Markus Nispel"
+      ],
+      "source_type": "public opinion article",
+      "source_url": "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "upstream_owned_entities": [
+        "AI agents"
+      ],
+      "visible_date": "2026-08-24",
+      "why_it_matters": "Supports local practice pages that define approval as an authorization and evidence boundary, not a UI ritual."
+    },
+    {
+      "factual_summary": "WIRED reports that public Codex code references a tested Persistent mode that can continue until put to sleep, create follow-up tasks, use prior user knowledge, and message sparingly, while instructions state that persistence does not expand permissions and outside-system changes still require approval.",
+      "id": "wired-codex-persistent-mode-report-2026-08-27",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "local_practice_implication": "Persistent agents need explicit sleep/stop semantics, separate permission ceilings, proactive-task review, and context-use boundaries.",
+      "named_entities": [
+        "WIRED",
+        "OpenAI",
+        "Codex",
+        "Thibault Sottiaux",
+        "ChatGPT Work"
+      ],
+      "source_type": "public news article",
+      "source_url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Work"
+      ],
+      "visible_date": "2026-08-27",
+      "why_it_matters": "Shows a concrete product direction toward long-running coding agents and highlights the need for durable instruction, approval, and runtime boundaries."
+    },
+    {
+      "factual_summary": "Business Insider reports a former OpenAI Codex desktop app engineer saying AI-agent coding made commercial software feel lonelier, shifted work into one-person agent-managed projects, increased task switching, and made code review occupy a larger share of engineering time.",
+      "id": "businessinsider-ai-coding-collaboration-fatigue-2026-08-27",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "local_practice_implication": "Agent operating models should measure collaboration load, review queue pressure, and shared task visibility, not just solo task completion.",
+      "named_entities": [
+        "Business Insider",
+        "OpenAI",
+        "Codex desktop app",
+        "Kasra Kyanzadeh"
+      ],
+      "source_type": "public news article",
+      "source_url": "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex desktop app"
+      ],
+      "visible_date": "2026-08-27T09:30:02.436Z",
+      "why_it_matters": "Adds an adoption signal for shared-channel and review practices: agent throughput can reduce collaboration unless teams deliberately preserve shared work visibility and review capacity."
+    },
+    {
+      "factual_summary": "Tom's Hardware reports a developer data-loss incident where an AI-written cleanup script intended to sandbox and clean agent temp folders reused deletion targets during testing and deleted the user's home directory after safety-review model changes.",
+      "id": "tomshardware-claude-delete-safeguard-failure-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "local_practice_implication": "Destructive automation needs dry-run evidence, isolated fixtures, path allowlists, rollback/backups, and human review before execution outside a scratch workspace.",
+      "named_entities": [
+        "Tom's Hardware",
+        "Claude",
+        "Anthropic",
+        "Sebastien Guillemot"
+      ],
+      "source_type": "public news article",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters": "Provides a concrete failure mode for destructive-operation safeguards, AI-generated test logic, branch packaging, and generated-code review."
+    },
+    {
+      "factual_summary": "ShiftMag demonstrates prompt injection against an ordinary spreadsheet-analysis task, emphasizing that agents can be manipulated by harmless-looking documents and that coding agents can also be tricked into dependency or tool misuse.",
+      "id": "shiftmag-spreadsheet-prompt-injection-demo-2026-08-27",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "local_practice_implication": "Context packages should label source trust, isolate untrusted document content, and keep dependency/tool changes behind policy checks.",
+      "named_entities": [
+        "ShiftMag",
+        "Josip Antolis",
+        "Simon Willison"
+      ],
+      "source_type": "public engineering article",
+      "source_url": "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "upstream_owned_entities": [
+        "Prompt injection"
+      ],
+      "visible_date": "2026-08-27",
+      "why_it_matters": "Strengthens the local practice case for treating retrieved files, spreadsheets, and tool outputs as untrusted context rather than executable instruction."
+    },
+    {
+      "factual_summary": "ThreatLocker explains indirect prompt injection as hidden instructions placed in documents, webpages, emails, plugins, APIs, knowledge bases, or memory that an AI system later retrieves; it recommends allowlisting, containment, storage controls, PAM, SaaS restrictions, and unauthorized-tool controls.",
+      "id": "threatlocker-indirect-prompt-injection-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "local_practice_implication": "Agent retrieval and tool use should be governed through deny-by-default execution, containment, and least-privilege storage/tool access.",
+      "named_entities": [
+        "ThreatLocker"
+      ],
+      "source_type": "public security article",
+      "source_url": "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+      "upstream_owned_entities": [
+        "Prompt injection",
+        "Privileged Access Management"
+      ],
+      "visible_date": "2026-08-26",
+      "why_it_matters": "Adds a current control-oriented source for supply-chain, context, and execution-edge leaves."
+    }
+  ],
+  "run_timestamp_local": "2026-08-29T21:01:48-0400",
+  "run_timestamp_utc": "2026-08-30T01:01:48Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/html/2608.21311v1",
+    "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+    "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+    "https://langfuse.com/resources/engineering/ai-agent-evaluation",
+    "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+    "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+    "https://www.eigent.ai/blog/slack-code-multiplayer-ai-coding",
+    "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+    "https://www.itpro.com/technology/artificial-intelligence/google-targets-ai-cost-efficiency-with-new-finops-features-for-gemini-enterprise",
+    "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing",
+    "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+    "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection",
+    "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+    "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+    "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://www.itpro.com/technology/artificial-intelligence/google-targets-ai-cost-efficiency-with-new-finops-features-for-gemini-enterprise"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+    ],
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md": [
+      "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+      "https://www.eigent.ai/blog/slack-code-multiplayer-ai-coding"
+    ],
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md": [
+      "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "https://www.minitap.ai/magazine/spec-driven-development-sdd"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://www.businessinsider.com/openai-software-engineer-leaves-ai-coding-lonely-draining-2026-8",
+      "https://arxiv.org/html/2608.21311v1"
+    ],
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md": [
+      "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+      "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+      "https://www.sweet.security/agent-security/ai-agent-indirect-prompt-injection"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "https://www.threatlocker.com/blog/indirect-prompt-injection-how-attackers-manipulate-ai-agents-through-untrusted-data",
+      "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+      "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide"
+    ],
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": [
+      "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+    ],
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": [
+      "https://langfuse.com/resources/engineering/ai-agent-evaluation"
+    ],
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": [
+      "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "https://www.techradar.com/pro/why-i-approve-can-become-the-most-dangerous-button-in-enterprise-ai",
+      "https://langfuse.com/resources/engineering/ai-agent-evaluation",
+      "https://www.minitap.ai/magazine/ai-coding-agents-automated-testing"
+    ]
+  },
+  "validation": {
+    "git_diff_check": "passed for current-run artifact with no whitespace findings",
+    "jq_empty": "passed for artifact and ledger",
+    "python_json_tool": "passed for artifact and ledger"
+  }
+}
