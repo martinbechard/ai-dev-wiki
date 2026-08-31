@@ -1,0 +1,363 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-08-31T00:33:07Z",
+  "run_timestamp_local": "2026-08-30T20:33:07-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-29T00:33:07Z",
+    "end_utc": "2026-08-31T00:33:07Z",
+    "rule": "Include only public sources with a visible publication or update date inside the last 2 days relative to run time; exclude missing, ambiguous, future-dated, crawl-only, snippet-only, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, adoption, implementation, verification, evaluation, and operating-model lenses.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem coverage for companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "collector_action": "Broad entity facts are recorded as upstream-owned; only local practice implications and routing notes are included."
+  },
+  "search_queries": [
+    "AI coding agents code review August 29 2026",
+    "context engineering coding agents August 29 2026",
+    "MCP governed practice audit logs permissions August 29 2026",
+    "AI assisted development TDD agent workflow August 29 2026",
+    "AI coding agents \"Aug 30, 2026\"",
+    "AI code review \"Aug 30, 2026\"",
+    "coding agents \"Aug 29, 2026\" \"TDD\"",
+    "\"Kiro Crew\" \"Aug 30, 2026\" \"signed audit log\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "AI Coding Agents: Production Reliability Matters",
+      "source_url": "https://istranin.dev/blog/ai-coding-agents-production-reliability/",
+      "publisher": "istranin.dev",
+      "author": "Artem Istranin",
+      "visible_date": "Published Aug 29, 2026; Updated Aug 29, 2026",
+      "date_basis": "Direct page metadata visible in the article header.",
+      "summary": "The article frames production-ready AI-assisted development around contracts, red-green-refactor TDD, layered tests, disciplined review, useful documentation, and deterministic CI checks. It emphasizes making a test fail for the expected reason before an agent implements the change.",
+      "why_it_matters": "This is a local coding-practice and verification update because it converts agent speed into reviewable evidence, regression protection, and production gates rather than treating generated code as complete.",
+      "candidate_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "TDD",
+        "CI"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Broad product coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Cursor",
+          "reason": "Broad product coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Broad product coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "OpenAI Codex",
+          "reason": "Broad product/model-family coverage belongs to the upstream AI wiki."
+        }
+      ],
+      "local_practice_implication": "A durable local lens could capture agent TDD as a production gate: fail-first tests, layered verification, review ownership, and documentation intent."
+    },
+    {
+      "title": "AWS Open Sources Kiro Crew for Asynchronous Coding Agents",
+      "source_url": "https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/",
+      "publisher": "InfoQ",
+      "author": "Renato Losio",
+      "visible_date": "Aug 30, 2026",
+      "date_basis": "Direct page date visible under the article title.",
+      "summary": "InfoQ reports on Kiro Crew as an open-source system for running multiple coding agents across sessions, tools, and tasks. The article highlights shared memory, reusable skills, scheduled jobs, concurrent agents, subagents, MCP/webhook integrations, live visibility into plans and tool calls, approval gates, sandboxing, denied-by-default commands, credential redaction, and signed audit logs.",
+      "why_it_matters": "This is a local agent-workflow and governance update because it shows concrete operating controls for asynchronous multi-agent development: persistent context, approval surfaces, observability, and auditability.",
+      "candidate_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "AWS",
+        "Amazon",
+        "Kiro Crew",
+        "Kiro CLI",
+        "MeshClaw",
+        "Agent Client Protocol",
+        "MCP",
+        "Slack",
+        "Telegram",
+        "WeCom",
+        "Apache 2.0"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "AWS",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Amazon",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Kiro Crew",
+          "reason": "Broad product/tool coverage belongs to the upstream AI wiki; this collector keeps only the local operating-practice lens."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol/ecosystem coverage belongs to the upstream AI wiki; governed usage patterns are local."
+        },
+        {
+          "entity": "Agent Client Protocol",
+          "reason": "Protocol coverage belongs upstream; local relevance is visibility and approval practice."
+        }
+      ],
+      "local_practice_implication": "Future local synthesis could compare asynchronous coding-agent workspaces by required controls: per-agent context isolation, approval gates, persistent memory, scheduled jobs, signed audit trails, and cost review."
+    },
+    {
+      "title": "Cloudflare Extends AI Search to Make it Easier for Agents and Developers to Search Custom Data",
+      "source_url": "https://www.infoq.com/news/2026/08/cloudflare-ai-search",
+      "publisher": "InfoQ",
+      "author": "Sergio De Simone",
+      "visible_date": "Aug 30, 2026",
+      "date_basis": "Direct InfoQ listing and article snippet show Aug 30, 2026.",
+      "summary": "InfoQ describes Cloudflare AI Search as a managed search and retrieval service for custom data, combining crawling, parsing, embedding, vector storage, and retrieval APIs. The reported practice shift is packaging retrieval primitives into a single agent-facing search endpoint, including discover-mode crawling where a sitemap is unavailable.",
+      "why_it_matters": "This is a local retrieval-and-tools update because it highlights a recurring implementation pattern for codebase and documentation retrieval: make ingestion, parsing, embedding, and search explicit infrastructure instead of relying on ad hoc prompt context.",
+      "candidate_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Cloudflare",
+        "Cloudflare AI Search",
+        "Workers AI",
+        "AI Gateway",
+        "Vectorize",
+        "R2",
+        "Browser Run",
+        "EmDash",
+        "wrangler"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Cloudflare",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Cloudflare AI Search",
+          "reason": "Product coverage belongs upstream; local relevance is retrieval workflow architecture."
+        },
+        {
+          "entity": "Workers AI",
+          "reason": "Developer-platform product coverage belongs upstream."
+        },
+        {
+          "entity": "Vectorize",
+          "reason": "Developer-platform product coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "A local page could capture the practice of explicit retrieval pipelines for agents: source discovery, parse policy, embedding/index ownership, public endpoint risk, and freshness validation."
+    },
+    {
+      "title": "I manage 10+ agents at Cisco. It doesn't mean longer hours, but the work can feel more intense.",
+      "source_url": "https://www.businessinsider.com/cisco-director-engineering-ai-agents-faster-work-2026-8",
+      "publisher": "Business Insider",
+      "author": "Ana Altchek, as told to",
+      "visible_date": "2026-08-30T09:55:01.291Z",
+      "date_basis": "Direct page timestamp visible below the headline.",
+      "summary": "A Cisco engineering director describes daily management of 10 to 20 software agents, including orchestrator agents that spawn subagents, connect to Jira and GitHub with explicit permission, create code from tickets, request authorization for sensitive operations, and route production changes through at least two human engineering reviews. The piece also notes higher cognitive load from multitasking and asynchronous review.",
+      "why_it_matters": "This is a local adoption and operating-model update because it captures how engineering management shifts from code crafting to architecture, workflow orchestration, permission decisions, review ownership, and security/legal coordination.",
+      "candidate_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Cisco",
+        "Sergio Freitas",
+        "Jira",
+        "GitHub",
+        "Claude Opus 4.5"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Cisco",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Jira",
+          "reason": "General developer tool coverage belongs upstream."
+        },
+        {
+          "entity": "GitHub",
+          "reason": "General developer platform coverage belongs upstream."
+        },
+        {
+          "entity": "Claude Opus 4.5",
+          "reason": "Model coverage belongs to the upstream AI wiki."
+        }
+      ],
+      "local_practice_implication": "Future local synthesis could update agent operating-model guidance around explicit permissions, two-reviewer production gates, security scan/legal review paths, and the cognitive load of managing many active agent threads."
+    },
+    {
+      "title": "Best Aider alternatives: AI code assistants for devs in 2026",
+      "source_url": "https://replit.com/discover/aider-alternative",
+      "publisher": "Replit",
+      "author": "The Replit Team",
+      "visible_date": "Published on: Mon, Apr 13, 2026; Updated on: Sun, Aug 30, 2026",
+      "date_basis": "Direct page metadata shows the Aug 30, 2026 update date.",
+      "summary": "The updated guide compares terminal assistants, AI-first IDEs, self-hosted tools, and cloud build/deploy platforms using criteria such as setup surface, cost model, editor fit, model/provider flexibility, privacy mode, self-hosting, code review, approval mode, and team policy controls.",
+      "why_it_matters": "The product roster itself is upstream-owned, but the selection criteria are a local practice update for teams choosing governed AI-assisted development workflows.",
+      "candidate_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Aider",
+        "Replit",
+        "Agent 4",
+        "Cursor",
+        "GitHub Copilot",
+        "Windsurf",
+        "Devin Desktop",
+        "Cline",
+        "Zed",
+        "Tabby",
+        "Amazon Q Developer",
+        "Tabnine",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Aider",
+          "reason": "General developer tool coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Replit",
+          "reason": "Company/product coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Cursor",
+          "reason": "General AI developer tool coverage belongs upstream."
+        },
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Cline",
+          "reason": "General AI developer tool coverage belongs upstream."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol coverage belongs upstream; local relevance is governed tool access."
+        }
+      ],
+      "local_practice_implication": "A local operating-model lens could turn the comparison criteria into a team adoption checklist: where code runs, who pays for usage bursts, how approvals work, how reviews happen, and what privacy controls exist."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Claude nukes a developer's 700 GB home directory while testing deletion safeguards",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "visible_date": "Published 28 August 2026",
+      "reason": "Outside the strict cutoff window for this run; useful as a deletion-safeguard practice example but not eligible."
+    },
+    {
+      "title": "Introducing Kiro Crew",
+      "source_url": "https://kiro.dev/blog/introducing-kiro-crew/",
+      "visible_date": "August 4, 2026",
+      "reason": "Primary announcement is older than the window; the Aug 30 InfoQ report was used instead as the qualifying update."
+    },
+    {
+      "title": "Test-Driven Development -- AI Agent Skill by obra",
+      "source_url": "https://agenticskills.io/skills/test-driven-development",
+      "visible_date": "Index live v1.3.0 AUG 29 2026; Updated 2 months ago; synced from source repo fetched May 24, 2026; last commit 2026-07-05",
+      "reason": "Visible metadata conflicts: the index date is in-window, but the skill update/source sync dates are older, so the source update date is ambiguous."
+    },
+    {
+      "title": "Your AI Writes the Code. Who's Checking It for Security? Meet AI Security Skill",
+      "source_url": "https://pub.towardsai.net/your-ai-writes-the-code-whos-checking-it-for-security-meet-ai-security-skill-e9b9ea641b69",
+      "visible_date": "Search result showed 9 hours ago / Last published Aug 30, 2026; opened page did not expose a stable article publication date in the retrieved body.",
+      "reason": "Excluded because the direct page body did not provide a reliable visible publication or update date for the article."
+    },
+    {
+      "title": "I Gave My AI Agent Eyes Inside a Real Compose App",
+      "source_url": "https://proandroiddev.com/i-gave-my-ai-agent-eyes-inside-a-real-compose-app-e7d4546417f8",
+      "visible_date": "Search result showed Aug 30, 2026; opened page body was not available enough to confirm date and content.",
+      "reason": "Excluded because the directly opened page did not provide verifiable article metadata."
+    },
+    {
+      "title": "Top Platforms for Spinning Up Ephemeral Dev Environments for Coding Agents",
+      "source_url": "https://www.qovery.com/blog/ephemeral-dev-environments-for-coding-agents-platforms-compared",
+      "visible_date": "Search result showed AUG 30, 2026.",
+      "reason": "Excluded because the page could not be opened with enough direct content in this run to verify visible date and claims."
+    },
+    {
+      "title": "AI Coding Weekly -- Aug 24 - Aug 30, 2026",
+      "source_url": "https://aicodingdir.com/ai-coding-news/",
+      "visible_date": "Issue W36 Aug 24 - Aug 30, 2026",
+      "reason": "Excluded as a weekly aggregator with mixed item dates and broad upstream-owned ecosystem coverage; no single local-practice item was verified from direct source evidence."
+    },
+    {
+      "title": "Best AI Agent Failure Analysis Tools 2026",
+      "source_url": "https://omidsaffari.com/blog",
+      "visible_date": "Aug 30, 2026 on blog index",
+      "reason": "Excluded because only a blog-index date was visible from search, not a directly verified article page date and content."
+    },
+    {
+      "title": "Overseeing AI-Generated Code",
+      "source_url": "https://www.linkedin.com/pulse/overseeing-ai-generated-code-scott-thurlow-zkddc",
+      "visible_date": "Published Aug 30, 2026 in search result",
+      "reason": "Excluded because the article body was not reliably accessible for direct verification during this run."
+    },
+    {
+      "title": "AI Coding Agents: What They Are, How They Work, Use Cases, and Best Practices",
+      "source_url": "https://www.anfloy.com/blog/ai-coding-agents",
+      "visible_date": "Search result showed Aug 30, 2026.",
+      "reason": "Excluded because the direct page could not be opened with enough verifiable metadata and content in this run."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep the artifact in raw for later ingest; do not move it to raw/processed until a normal raw ingest pass synthesizes it into durable wiki pages and passes verification.",
+    "For future ingest, likely local lenses are agent TDD gates, asynchronous multi-agent operating controls, explicit retrieval pipeline architecture, agent-management operating models, and tool-selection governance criteria.",
+    "Route broad product, company, model, protocol, and framework updates to the upstream AI wiki unless a local page needs only a downstream practice lens."
+  ],
+  "collector_boundary_checks": {
+    "public_sources_only": true,
+    "local_private_content_sent_externally": false,
+    "docs_wiki_updated": false,
+    "raw_processed_updated": false,
+    "artifact_type": "raw structured JSON source artifact"
+  },
+  "counts": {
+    "qualifying_updates": 5,
+    "excluded_candidates": 10
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
