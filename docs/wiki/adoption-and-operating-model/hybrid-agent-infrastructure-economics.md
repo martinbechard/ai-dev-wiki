@@ -29,6 +29,8 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 
 The August 17 raw sources add model-level accounting, training, and host-infrastructure evidence. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records team training around token management and context-overload symptoms; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records per-model token breakdowns, admin-off model rollout, cheaper model routes, and Linux isolation or rollback costs. Locally, model routing should count token categories, cache behavior, admin enablement, sandbox operations, rollback paths, and operator skill as part of workflow economics.
 
+The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) and [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) add self-hosted and machine-traffic economics. Local or self-hosted agents should be compared against managed execution as full operating surfaces, and growing machine-user traffic should make edge performance and security controls part of agent infrastructure cost.
+
 ## Practice Boundaries
 
 - Classify agent workloads by frequency, autonomy level, context size, latency tolerance, governance burden, review cost, and expected outcome before choosing the hosting path.
@@ -47,6 +49,8 @@ The August 17 raw sources add model-level accounting, training, and host-infrast
 - Treat repeated runtime reasoning and context carry-forward as token-tax drivers; prefer deterministic reuse when the workflow is stable enough.
 - Include data-use terms, cached-token pricing, and proprietary-code exposure in coding-agent tier selection before accepting lower-cost plans.
 - Train teams to read token categories, cache behavior, context-overload symptoms, admin model policy, sandbox cost, rollback cost, and operator skill as economic signals.
+- Compare self-hosted agents, local models, cloud models, OpenAI-compatible endpoints, and cron automation by isolation, maintenance, endpoint exposure, escalation quality, and review cost.
+- Treat machine-user traffic, edge decision points, origin offload, latency, resiliency, and security policy as cost inputs when agent workflows increase automated request volume.
 - Feed infrastructure decisions back into [agent cost telemetry](agent-cost-telemetry.md), [workflow before model selection](workflow-before-model-selection.md), and [use compose build workflow selection](../agent-workflows/use-compose-build-workflow-selection.md).
 
 ## Authoritative Sources
@@ -65,6 +69,8 @@ The August 17 raw sources add model-level accounting, training, and host-infrast
 - [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -97,3 +103,4 @@ The August 17 raw sources add model-level accounting, training, and host-infrast
 - Maintained on 2026-07-30 with cost-per-outcome telemetry and local-versus-cloud routing criteria from vendor-positioned cost evidence.
 - Maintained on 2026-08-05 with token-tax routing and coding-agent tier data-use review guidance.
 - Maintained on 2026-08-17 with token-category reporting, context-overload training, admin model rollout, cheaper route selection, Linux-host isolation, rollback, and operator-skill economics.
+- Maintained on 2026-08-30 with self-hosted agent, endpoint, cron, sensitive-file isolation, machine-user traffic, edge-latency, origin-offload, resiliency, and security-policy economics.

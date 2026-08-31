@@ -23,6 +23,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json) adds reusable testing-skill evidence. Test-suite architecture, TDD, load profiling, and vulnerability auditing can be packaged as agent skills, but locally those skills should make test intent, customization points, generated-output review, and human acceptance criteria explicit rather than hiding QA judgment inside a reusable prompt package.
 
+The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) adds production-reliability evidence for agent TDD. A fail-first test should fail for the expected reason before the agent implements the change, and the resulting patch should be accepted only through evidence that survives the review and CI path.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -38,6 +40,8 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Prefer compiler, type, lint, or static-analysis diagnostics for recurring architectural constraints when prompts alone would leave the rule advisory.
 - Treat reusable TDD and QA skills as helpers for test drafting and review workflow setup, not as replacements for human-owned acceptance criteria or coverage decisions.
 - Require generated tests from reusable skills to link back to the source behavior, risk, or regression they protect.
+- Confirm that a new failing test fails for the expected reason before asking an agent to satisfy it.
+- Pair agent TDD with layered tests, review notes, documentation intent, and deterministic CI evidence before treating generated code as production-ready.
 
 ## Authoritative Sources
 
@@ -50,6 +54,7 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -81,3 +86,4 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 - Maintained on 2026-07-29 with human-owned acceptance-test, QA-procedure, and criticality-scaled coverage guidance.
 - Maintained on 2026-07-30 with compiler and static-analysis diagnostics as deterministic AI-assisted TDD guardrails.
 - Maintained on 2026-08-10 with reusable testing-skill boundaries for generated tests, customization, and human acceptance criteria.
+- Maintained on 2026-08-30 with fail-first expected-failure, layered-test, review, documentation, and deterministic-CI evidence for production agent TDD.

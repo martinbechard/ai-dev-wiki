@@ -45,6 +45,8 @@ The August 23 raw sources add runtime-proof and policy-gate refinements. The [to
 
 The August 28 and 29 raw sources add verification-capacity evidence for review defaults, prototype promotion, and human review load. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records policy changes, default review effort, prototype-to-deployment trust, and developer-experience concerns about review burden. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records durable runtime, AI-generated-code production, prompt-versioning, and structured-output eval evidence. Locally, acceptance gates should measure review capacity, policy defaults, durable runtime proof, and product trust before throughput is counted as success.
 
+The August 30 raw sources add spec-linked and production-reliability acceptance evidence. The [leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) treats specs as measurable implementation inputs, while the [topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) reinforces that agent-generated code needs fail-first proof plus reviewable production gates.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -70,6 +72,8 @@ The August 28 and 29 raw sources add verification-capacity evidence for review d
 - Require browser screenshots, recordings, reproducible failure reports, runtime traces, or policy-gate records to land in the review surface when the claim depends on executed behavior.
 - Gate generated or AI-carried code on behavior and execution-policy evidence when source provenance alone cannot prove runtime safety.
 - Treat regulated or business-impacting agent actions as acceptance-gate decisions requiring explicit risk class, approval evidence, execution trace, and rollback or escalation path.
+- Require agent-readable specs to name verification criteria, expected contract evidence, and independent verifier responsibilities when the requirement becomes implementation input.
+- Treat expected-failure proof, layered test results, review notes, documentation intent, and deterministic CI as the acceptance package for production-oriented agent TDD.
 
 ## Authoritative Sources
 
@@ -98,6 +102,8 @@ The August 28 and 29 raw sources add verification-capacity evidence for review d
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -139,3 +145,4 @@ The August 28 and 29 raw sources add verification-capacity evidence for review d
 - Maintained on 2026-08-17 with release-tax, defect-escape, change-failure, trust, deployed-behavior, retry, trace, and recovery-evidence acceptance signals.
 - Maintained on 2026-08-21 with user-flow verification, E2E capacity, flake handling, feedback-loop, and reviewable-evidence scaling constraints.
 - Maintained on 2026-08-23 with browser-test proof, execution-policy, business-impact, and regulated-action gate evidence.
+- Maintained on 2026-08-30 with spec-linked verification criteria, independent verifier responsibility, expected-failure proof, layered-test, review, documentation, and deterministic-CI acceptance evidence.

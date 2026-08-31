@@ -39,6 +39,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds persistent-agent reporting evidence. Cross-session or proactive coding agents need durable run memory, wake and sleep controls, user-visible follow-up task creation, sparse notification rules, and repeated approval checks for external changes; persistence does not expand allowed actions.
 
+The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) reinforces persistence as an operating-model boundary. A persistent agent may continue between user prompts, but durable workspace state should make proactivity, memory use, and permission renewal inspectable before external or consequential actions occur.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -61,6 +63,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Distinguish workspace files, orchestration records, inference data, session transcripts, eval artifacts, plan files, and per-role secrets before treating persistent workspace state as current.
 - Use worktrees or equivalent isolated workspaces when agent drafts need rebuild, comparison, or abandonment without contaminating the main working tree.
 - Record branch purpose, owner, hook results, eval status, affected files, and merge or abandonment evidence before handing off a persistent workspace.
+- Treat persistent proactivity as scheduled or stateful work that still needs wake/sleep authority, memory-source inspection, notification policy, and permission renewal.
+- Do not let a recovered workspace or prior interaction become action authority without current repository, instruction, and approval checks.
 
 ## Authoritative Sources
 
@@ -81,6 +85,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 
 ## Related Code
 
@@ -120,3 +125,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Maintained on 2026-07-30 with environment-readiness and restart evidence for persistent coding-agent workspaces.
 - Maintained on 2026-08-15 with split-plane workspace state, retained session records, eval artifacts, plan files, inference routing, and per-role secret boundaries.
 - Maintained on 2026-08-20 with worktree isolation, rebuildable draft, hook/eval status, branch ownership, and merge-or-abandonment evidence.
+- Maintained on 2026-08-30 with persistent-agent proactivity, sparse notification, sleep-control, memory-source, permission-ceiling, and approval-renewal evidence.

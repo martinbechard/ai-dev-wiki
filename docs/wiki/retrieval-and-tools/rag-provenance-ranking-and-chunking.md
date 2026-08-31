@@ -35,6 +35,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The August 17 raw sources add an escalation rule for agentic RAG. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records codebase-RAG evaluation signals, and the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records agentic RAG as a plan/evaluate/retry loop for multi-hop questions. Locally, simple lookups should stay on cheaper classic retrieval, while agentic retrieval needs citations, chunking, retrieval-quality measurement, rejected-candidate evidence, and faithfulness checks before its extra complexity is justified.
 
+The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) adds managed search-pipeline evidence for agent retrieval. Agent-facing retrieval should be operated as explicit infrastructure so custom data reaches prompts through owned ingestion, freshness, exposure, and validation controls.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -59,6 +61,8 @@ The August 17 raw sources add an escalation rule for agentic RAG. The [topic new
 - Preserve source archives, parsed chunk records, embedding versions, index metadata, ACLs, freshness status, and retention records when RAG evidence drives agent action.
 - Preserve citation paths, privacy boundaries, prompt/data-flow separation, and provider-visibility assumptions when MCP-backed retrieval supplies evidence to agents.
 - Use agentic RAG only when multi-hop complexity justifies a plan/evaluate/retry loop, and preserve citations, rejected candidates, retrieval-quality metrics, chunking rationale, and faithfulness checks.
+- Make retrieval pipelines explicit: source discovery, crawl or sitemap policy, parser behavior, embedding/index ownership, retrieval API boundaries, freshness checks, and endpoint exposure review.
+- Validate retrieved custom-data evidence before it becomes coding, review, or governance context for an acting agent.
 
 ## Authoritative Sources
 
@@ -77,6 +81,7 @@ The August 17 raw sources add an escalation rule for agentic RAG. The [topic new
 - [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -112,3 +117,4 @@ The August 17 raw sources add an escalation rule for agentic RAG. The [topic new
 - Maintained on 2026-07-29 with storage-layer provenance, embedding-version, ACL, freshness, and retention guidance.
 - Maintained on 2026-08-12 with citable MCP retrieval, privacy-boundary, and provider-visibility evidence.
 - Maintained on 2026-08-17 with agentic-RAG escalation, codebase-RAG evaluation, citation, rejected-candidate, retrieval-quality, chunking, and faithfulness guidance.
+- Maintained on 2026-08-30 with explicit retrieval-pipeline, crawling, parsing, embedding, vector-storage, retrieval-API, freshness, and endpoint-exposure guidance.

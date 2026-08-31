@@ -53,6 +53,10 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Cheaper implementation subagents are appropriate only for well-scoped mechanical changes.
 - The task package, verification gate, and accepted-change metric should remain inspectable before cheaper routing is treated as lower-cost engineering.
 
+The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) adds asynchronous multi-agent workspace evidence. The local coordination contract should make shared state, delegated side effects, visibility, approvals, isolation, and auditability explicit before concurrent agents become a standing engineering surface.
+
+The same source adds Cisco management evidence for many active software agents. Local subagent coordination should keep permission decisions, at least two human production reviews, security or legal escalation paths, and cognitive-load management visible when a leader or senior engineer supervises several active agent threads.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -83,6 +87,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Require each planner, coder, tester, reviewer, or manager subagent role to declare authority, expected artifact, verification responsibility, handoff criterion, and human oversight point.
 - Reject returned subagent work when the evidence does not match the role contract, even if the role label sounds appropriate.
 - Route cheaper subagents only for well-scoped mechanical work when the coordinator retains judgment, acceptance, and verification responsibility.
+- Require asynchronous multi-agent workspaces to expose shared-memory boundaries, scheduled-job ownership, visible plans, tool-call traces, approval state, sandbox policy, credential redaction, and signed audit evidence.
+- Keep webhook, MCP, and messaging integrations inside the delegation contract so subagents cannot create side effects outside the coordinator's reviewed surface.
 
 ## Authoritative Sources
 
@@ -109,6 +115,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 13 leaf update watch source](../../../raw/processed/2026-08-13/ai-dev-wiki-leaf-update-watch-2026-08-13T210415-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -156,3 +163,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Maintained on 2026-08-13 with managed-agent budgets, advisor rosters, inference geography, repository-loaded skills, and peer-versus-tool hierarchy boundaries.
 - Maintained on 2026-08-14 with queued subagent prompt, queued shell command, side-channel question, approval-timing, and returned-evidence guidance.
 - Maintained on 2026-08-16 with role-specialized subagent authority, artifact, verification, handoff, and oversight criteria.
+- Maintained on 2026-08-30 with asynchronous multi-agent workspace, shared-memory, scheduled-job, visible-plan, tool-call, approval, sandbox, redaction, and signed-audit evidence.

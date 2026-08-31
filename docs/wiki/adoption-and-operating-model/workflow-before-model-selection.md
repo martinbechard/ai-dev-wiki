@@ -79,6 +79,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Cross-app session recovery should be evaluated when a workflow crosses IDE, chat, and application surfaces.
 - Formal verification and cost-per-accepted-change routing should be considered before a model, assistant, or IDE integration becomes the default.
 
+The August 30 raw sources add selection criteria from public agent TDD, asynchronous coding-agent workspaces, self-hosting, and assistant comparisons. The [topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) treats tool comparisons as workflow-fit evidence rather than product rankings, while the [leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) reinforces that persistent, self-hosted, and skill-driven agents need operating decisions before tool choice.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -132,6 +134,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Budget memory, retrieval, tool governance, observability, evaluation, feedback, supervision, and execution-environment evidence as first-order workflow-selection inputs before comparing model capability.
 - Review retention, billing, sandboxing, review effort, policy defaults, workspace layer, and prototype-to-deployment trust gates as workflow-selection inputs before standardizing a coding assistant or managed agent route.
 - Evaluate shared-agent catalogs, effort defaults, session recovery, formal-verification needs, and cost-per-accepted-change metrics before standardizing an assistant surface or model route.
+- Compare coding-agent surfaces by setup surface, editor fit, runtime location, model/provider flexibility, privacy mode, self-hosting option, review workflow, approval mode, and team policy controls.
+- Decide persistence, self-hosting, reusable skills, permissions, memory, eval loops, and infrastructure requirements before turning an assistant comparison into a team default.
 
 ## Authoritative Sources
 
@@ -184,6 +188,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 
 ## Related Code
 
@@ -214,6 +220,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 - Maintained on 2026-08-29 with shared custom-agent, effort-control, policy-convergence, formal-verification, session-recovery, and subagent-economics workflow-selection evidence.
 - Maintained on 2026-08-29 with AI-native workflow redesign, managed policy, review-effort, retention, billing, sandbox, workspace-layer, and prototype-to-deployment selection inputs.
+- Maintained on 2026-08-30 with setup-surface, editor-fit, runtime-location, model-flexibility, privacy, self-hosting, review, approval, team-policy, persistence, skill, memory, eval, and infrastructure selection criteria.
 - Maintained on 2026-07-23 with regulated scaling, task-scoped privilege, platform observability, and workflow-fit eval selection guidance.
 - Created on 2026-06-23 from source-backed workflow, harness, and model-selection guidance.
 - Maintained on 2026-06-23 with public coding-agent selection guidance focused on workflow fit, governance burden, and loop design.

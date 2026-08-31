@@ -37,6 +37,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Coding agents should not prototype against external services from general model knowledge alone.
 - Product-specific details remain upstream-owned; locally, the runbook must show what the skill authorizes, what it forbids, and how generated artifacts are checked.
 
+The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) adds portable-skill evidence from Microsoft Agent Skills and Goldman Sachs skill packaging. Locally, reusable skills should keep detailed procedure and institutional knowledge in reviewable packages that can be approved, evaluated, and refreshed without bloating every prompt.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -58,6 +60,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Keep the reusable skill contract distinct from the plugin package that installs it; review skill procedure, package manifest, MCP declarations, and client-specific behavior as separate artifacts.
 - Record plugin version, owner, compatible clients, expected subagent task artifacts, side-channel question rules, and MCP allowlist assumptions in reusable runbooks.
 - For service-specific skills, record platform constraints, guardrails, generated artifacts, verification steps, allowed tool scope, and owner review before relying on them for prototype generation.
+- Use progressive disclosure for skills so agents load detailed instructions, scripts, resources, and assets only when the task needs them.
+- Pair institutional skill libraries with security review, owner feedback, and eval loops so reusable practices stay current and auditable.
 
 ## Authoritative Sources
 
@@ -77,6 +81,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
@@ -118,3 +123,4 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Maintained on 2026-08-12 with Agent Plugins package boundaries separated from reusable skill and runbook contracts.
 - Maintained on 2026-08-17 with plugin version, client compatibility, subagent task, side-channel question, and MCP allowlist runbook guidance.
 - Maintained on 2026-08-21 with service-specific skill constraints, guardrails, generated-artifact, verification-step, allowed-tool-scope, and owner-review guidance.
+- Maintained on 2026-08-30 with progressive-disclosure, script/resource/asset, approval-control, security-review, feedback-loop, and eval-loop skill evidence.

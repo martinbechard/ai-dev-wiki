@@ -28,6 +28,8 @@ The [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-
 
 The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds requirements-validation evidence. MCP access can govern whether an agent may read a requirement, under whose identity, and with what audit record, but it does not prove that the requirement is correct, complete, unambiguous, testable, or endorsed. Locally, executable PRDs should make validated status, ambiguity markers, reviewer perspectives, decision records, and acceptance criteria explicit before requirements become agent-readable implementation input.
 
+The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) adds public SpecMine and spec-driven development evidence. PRDs become more agent-executable when they link requirement intent to repository evidence and independent verification instead of living as planning prose alone.
+
 ## Practice Boundaries
 
 - Include allowed tools, human approval points, fallback or escalation behavior, logging requirements, and verification seeds when a PRD is loaded by a coding agent.
@@ -37,6 +39,8 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Keep PRD generation, coding-agent prompts, code review criteria, and deployment verification linked as one chain when a workflow teaches end-to-end AI-assisted builds.
 - Capture intended outcomes, invariants, correctness conditions, and acceptance checks explicitly when an algorithm outline becomes coding-agent input.
 - Scope agent access to validated requirement sections and make ambiguity, endorsement, reviewer perspective, decision record, and testability fields visible before the PRD authorizes implementation.
+- Link executable PRDs or specs to code references, requirement indexes, scope boundaries, and verification criteria when those artifacts drive agent implementation.
+- Treat separate verifier-agent expectations as part of the PRD contract when spec drift or requirement ambiguity would otherwise reach merge review late.
 
 ## Authoritative Sources
 
@@ -45,6 +49,7 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
 - [instruction hierarchy and artifact boundaries](instruction-hierarchy-and-artifact-boundaries.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
@@ -79,3 +84,4 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Maintained on 2026-07-30 with PRD-to-code-review-to-deployment workflow chaining for AI-native build instruction.
 - Maintained on 2026-08-08 with AI-checkable algorithm outline fields for outcomes, invariants, correctness conditions, and acceptance checks.
 - Maintained on 2026-08-26 with requirement-validation status, ambiguity markers, reviewer perspectives, decision records, and testability gates before agent-readable implementation input.
+- Maintained on 2026-08-30 with repository-linked spec, reference-index, scope-boundary, verification-criteria, and verifier-agent evidence.
