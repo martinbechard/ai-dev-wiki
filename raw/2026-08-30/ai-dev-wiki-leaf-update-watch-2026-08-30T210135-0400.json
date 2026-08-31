@@ -1,0 +1,354 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_local": "2026-08-30T21:01:35-0400",
+    "end_utc": "2026-08-31T01:01:35Z",
+    "start_local": "2026-08-23T21:01:35-0400",
+    "start_utc": "2026-08-24T01:01:35Z"
+  },
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "reason": "Boundary-day date-only evidence; no exact qualifying time visible after cutoff 2026-08-24T01:01:35Z. Useful for later ingest only if policy accepts date-only boundary evidence.",
+      "url": "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+      "visible_date": "On Aug 24, 2026"
+    },
+    {
+      "reason": "Stale for this run window; before cutoff.",
+      "url": "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+      "visible_date": "Aug 21, 2026"
+    },
+    {
+      "reason": "Stale for this run window; before cutoff.",
+      "url": "https://www.ai-crescent.com/guides/context-engineering-for-production-ai-agents",
+      "visible_date": "August 22, 2026"
+    },
+    {
+      "reason": "Stale for this run window; before cutoff.",
+      "url": "https://www.sentinelone.com/labs/context-engineering-compaction-agent-memory-for-automated-malware-analysis/",
+      "visible_date": "July 2, 2026"
+    },
+    {
+      "reason": "Missing exact visible publication or update date in the opened source page.",
+      "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+      "visible_date": "No publish or updated date visible in extracted page; article body reports May-July 2026 survey period."
+    },
+    {
+      "reason": "Stale and not within seven-day window.",
+      "url": "https://medium.com/@haberlah/how-to-write-prds-for-ai-coding-agents-d60d72efb797",
+      "visible_date": "Published 7 months ago in search result; no qualifying current direct-page date used."
+    }
+  ],
+  "federation_routing": "Broad products, companies, model families, frameworks, MCP entities, and benchmarks are upstream-owned by the AI wiki. This artifact preserves only local practice implications for the downstream AI-assisted development wiki.",
+  "follow_up_notes_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "Review qualifying updates for local-practice implications from: techradar-self-host-openclaw-agent-2026-08-25, expresscomputer-machine-first-internet-2026-08-30",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": "Review qualifying updates for local-practice implications from: businessinsider-goldman-agent-skills-2026-08-25",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": "Review qualifying updates for local-practice implications from: techradar-self-host-openclaw-agent-2026-08-25, microsoft-agent-skills-doc-updated-2026-08-25, wired-openai-codex-persistent-agent-2026-08-27",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": "Review qualifying updates for local-practice implications from: wired-openai-codex-persistent-agent-2026-08-27",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": "Review qualifying updates for local-practice implications from: microsoft-agent-skills-doc-updated-2026-08-25, businessinsider-goldman-agent-skills-2026-08-25",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": "Review qualifying updates for local-practice implications from: businessinsider-goldman-agent-skills-2026-08-25",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": "Review qualifying updates for local-practice implications from: businessinsider-goldman-agent-skills-2026-08-25, microsoft-agent-skills-doc-updated-2026-08-25",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": "Review qualifying updates for local-practice implications from: microsoft-agent-skills-doc-updated-2026-08-25, augment-spec-driven-development-guide-updated-2026-08-30",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": "Review qualifying updates for local-practice implications from: microsoft-agent-skills-doc-updated-2026-08-25",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": "Review qualifying updates for local-practice implications from: wired-openai-codex-persistent-agent-2026-08-27, businessinsider-goldman-agent-skills-2026-08-25",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": "Review qualifying updates for local-practice implications from: augment-spec-driven-development-guide-updated-2026-08-30, microsoft-agent-skills-doc-updated-2026-08-25",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": "Review qualifying updates for local-practice implications from: arxiv-specmine-sdd-corpus-2026-08-25-revised-2026-08-27, augment-spec-driven-development-guide-updated-2026-08-30",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": "Review qualifying updates for local-practice implications from: microsoft-agent-skills-doc-updated-2026-08-25, businessinsider-goldman-agent-skills-2026-08-25",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": "Review qualifying updates for local-practice implications from: arxiv-specmine-sdd-corpus-2026-08-25-revised-2026-08-27, augment-spec-driven-development-guide-updated-2026-08-30",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Review qualifying updates for local-practice implications from: arxiv-specmine-sdd-corpus-2026-08-25-revised-2026-08-27, augment-spec-driven-development-guide-updated-2026-08-30"
+  },
+  "leaf_selection": {
+    "eligible_leaf_count": 89,
+    "selected_leaf_count": 15,
+    "selection_rule": "New or unchecked leaves first, then oldest last_checked_at, with stable relative path tie-breaks. Index, digest, broad maintenance, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages were excluded unless durable local-practice leaves."
+  },
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "date_granularity": "exact submission and revision timestamps visible in submission history",
+      "factual_summary": "SpecMine reports a public corpus of spec-driven development artifacts covering hundreds of thousands of spec files and tens of thousands of repositories, with pull request and reference indexes connecting specs to code changes.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "arxiv-specmine-sdd-corpus-2026-08-25-revised-2026-08-27",
+      "named_entities": [
+        "SpecMine",
+        "GitHub Spec Kit",
+        "OpenSpec",
+        "AWS Kiro",
+        "arXiv",
+        "Shyam Agarwal",
+        "Bogdan Vasilescu"
+      ],
+      "source_type": "public research preprint",
+      "upstream_owned_entities": [
+        "GitHub Spec Kit",
+        "OpenSpec",
+        "AWS Kiro"
+      ],
+      "url": "https://arxiv.org/abs/2608.25202",
+      "visible_date": "Submitted on 25 Aug 2026; last revised 27 Aug 2026",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md": "Adds public evidence that spec-driven development artifacts are becoming measurable, repository-linked inputs for coding agents rather than isolated planning documents.",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": "Adds public evidence that spec-driven development artifacts are becoming measurable, repository-linked inputs for coding agents rather than isolated planning documents.",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Adds public evidence that spec-driven development artifacts are becoming measurable, repository-linked inputs for coding agents rather than isolated planning documents."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "date_granularity": "visible last-updated date",
+      "factual_summary": "Augment describes spec-driven development as executable contracts for AI coding agents, emphasizes scope boundaries and verification criteria, and frames separate verifier agents as a way to catch drift before merge.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "augment-spec-driven-development-guide-updated-2026-08-30",
+      "named_entities": [
+        "Augment Code",
+        "GitHub Spec Kit",
+        "Cosmos",
+        "Kiro",
+        "OpenAPI"
+      ],
+      "source_type": "public vendor guide",
+      "upstream_owned_entities": [
+        "Augment Code",
+        "GitHub Spec Kit",
+        "Kiro"
+      ],
+      "url": "https://www.augmentcode.com/guides/what-is-spec-driven-development",
+      "visible_date": "Apr 23, 2026; Last updated: Aug 30, 2026",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": "Reinforces the local practice of making scope, constraints, and verification criteria explicit before agents implement or verify changes.",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md": "Reinforces the local practice of making scope, constraints, and verification criteria explicit before agents implement or verify changes.",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md": "Reinforces the local practice of making scope, constraints, and verification criteria explicit before agents implement or verify changes.",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": "Reinforces the local practice of making scope, constraints, and verification criteria explicit before agents implement or verify changes.",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Reinforces the local practice of making scope, constraints, and verification criteria explicit before agents implement or verify changes."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "date_granularity": "visible date and time",
+      "factual_summary": "WIRED reports that OpenAI is testing a Codex Persistent mode that could continue work until put to sleep, create follow-up tasks, use past interactions, and message users sparingly while preserving permission limits.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "wired-openai-codex-persistent-agent-2026-08-27",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "WIRED",
+        "Thibault Sottiaux",
+        "Sam Altman"
+      ],
+      "source_type": "public news report",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "url": "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/",
+      "visible_date": "Aug 27, 2026 12:52 PM",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": "Makes persistence, proactivity, sleep controls, and permission boundaries a concrete operating-model concern for local agent workflows.",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": "Makes persistence, proactivity, sleep controls, and permission boundaries a concrete operating-model concern for local agent workflows.",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": "Makes persistence, proactivity, sleep controls, and permission boundaries a concrete operating-model concern for local agent workflows."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "date_granularity": "visible ISO timestamp",
+      "factual_summary": "Business Insider reports Goldman Sachs is turning institutional engineering knowledge into reusable agent skills and eval loops so AI tools can follow firm-specific data, security, design, and cloud migration practices.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "businessinsider-goldman-agent-skills-2026-08-25",
+      "named_entities": [
+        "Goldman Sachs",
+        "Marco Argenti",
+        "Claude",
+        "Devin",
+        "Business Insider",
+        "JPMorgan"
+      ],
+      "source_type": "public news report",
+      "upstream_owned_entities": [
+        "Goldman Sachs",
+        "Claude",
+        "Devin",
+        "JPMorgan"
+      ],
+      "url": "https://www.businessinsider.com/goldman-sachs-engineers-ai-marco-argenti-2026-8",
+      "visible_date": "2026-08-25T09:16:01.233Z",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops.",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops.",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops.",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops.",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops.",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": "Shows a large engineering organization packaging institutional knowledge as reusable skills and keeping them current through evals and feedback loops."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "date_granularity": "visible publish date",
+      "factual_summary": "TechRadar describes self-hosting an OpenClaw agent with Open WebUI, local or cloud model options, an OpenAI-compatible endpoint, cron workflows, and isolation cautions for sensitive files.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "techradar-self-host-openclaw-agent-2026-08-25",
+      "named_entities": [
+        "TechRadar",
+        "OpenClaw",
+        "Open WebUI",
+        "OpenAI",
+        "Anthropic",
+        "Ollama",
+        "Llama",
+        "Qwen"
+      ],
+      "source_type": "public how-to article",
+      "upstream_owned_entities": [
+        "OpenClaw",
+        "Open WebUI",
+        "OpenAI",
+        "Anthropic",
+        "Ollama",
+        "Llama",
+        "Qwen"
+      ],
+      "url": "https://www.techradar.com/pro/how-to-self-host-your-own-ai-agent",
+      "visible_date": "Published 25 August 2026",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "Adds current public evidence for the managed-versus-self-hosted boundary, including local execution, endpoint exposure, cron operation, and data isolation tradeoffs.",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": "Adds current public evidence for the managed-versus-self-hosted boundary, including local execution, endpoint exposure, cron operation, and data isolation tradeoffs."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "date_granularity": "visible publish date",
+      "factual_summary": "Express Computer reports Fastly executives describing AI agents as machine users that create more dynamic traffic, push edge infrastructure toward decision and control functions, and make latency, origin offload, and responsive capacity planning operating concerns.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "expresscomputer-machine-first-internet-2026-08-30",
+      "named_entities": [
+        "Express Computer",
+        "Fastly",
+        "Artur Bergman",
+        "Scott Lovett",
+        "Smita Satyavada",
+        "Nicola Gerber"
+      ],
+      "source_type": "public news article",
+      "upstream_owned_entities": [
+        "Fastly"
+      ],
+      "url": "https://www.expresscomputer.in/artificial-intelligence-ai/the-internet-is-becoming-machine-first-are-enterprises-ready/138171/",
+      "visible_date": "On Aug 30, 2026",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "Connects AI-agent traffic to infrastructure economics, edge controls, latency, resiliency, and security policy as local operating concerns."
+      }
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+      ],
+      "date_granularity": "visible last-updated date",
+      "factual_summary": "Microsoft Learn documents Agent Skills as portable packages of instructions, scripts, resources, and assets with progressive disclosure, approval controls, security review guidance, and a distinction between adaptive skills and deterministic workflows.",
+      "follow_up_note": "Route broad ecosystem/product background upstream; ingest locally only for practice, workflow, governance, architecture, verification, or operating-model implications.",
+      "id": "microsoft-agent-skills-doc-updated-2026-08-25",
+      "named_entities": [
+        "Microsoft Learn",
+        "Agent Framework",
+        "Agent Skills",
+        "MCP",
+        "Harness Agent"
+      ],
+      "source_type": "public product documentation",
+      "upstream_owned_entities": [
+        "Microsoft Agent Framework",
+        "Agent Skills",
+        "MCP"
+      ],
+      "url": "https://learn.microsoft.com/en-us/agent-framework/agents/skills",
+      "visible_date": "Last updated on 2026-08-25",
+      "why_it_matters_for_leaf": {
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection.",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": "Provides current product documentation for portable skill structure, progressive disclosure, approval rules, security review, and skill-versus-workflow selection."
+      }
+    }
+  ],
+  "run_timestamp_local": "2026-08-30T21:01:35-0400",
+  "run_timestamp_utc": "2026-08-31T01:01:35Z",
+  "scanner_output_boundary": "No scanner output was saved under raw/processed. This raw artifact is the source artifact for later ingest; docs/wiki pages were not updated by this watch.",
+  "selected_leaf_ids": [
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2608.25202",
+    "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+    "https://learn.microsoft.com/en-us/agent-framework/agents/skills",
+    "https://medium.com/@haberlah/how-to-write-prds-for-ai-coding-agents-d60d72efb797",
+    "https://www.ai-crescent.com/guides/context-engineering-for-production-ai-agents",
+    "https://www.augmentcode.com/guides/what-is-spec-driven-development",
+    "https://www.businessinsider.com/goldman-sachs-engineers-ai-marco-argenti-2026-8",
+    "https://www.expresscomputer.in/artificial-intelligence-ai/the-internet-is-becoming-machine-first-are-enterprises-ready/138171/",
+    "https://www.expresscomputer.in/guest-blogs/from-working-prompts-to-maintainable-agents-treating-ai-like-real-software/138042/",
+    "https://www.minitap.ai/magazine/spec-driven-development-sdd",
+    "https://www.sentinelone.com/labs/context-engineering-compaction-agent-memory-for-automated-malware-analysis/",
+    "https://www.techradar.com/pro/how-to-self-host-your-own-ai-agent",
+    "https://www.wired.com/story/openai-is-developing-a-persistent-ai-agent/"
+  ]
+}
