@@ -1,0 +1,397 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "counts": {
+    "excluded_candidate_count": 6,
+    "qualifying_update_count": 8,
+    "selected_leaf_count": 15
+  },
+  "cutoff_window": {
+    "end_utc": "2026-09-01T01:01:22Z",
+    "rule": "Only public sources with direct visible publication or update dates inside this 7-day window qualify.",
+    "start_utc": "2026-08-25T01:01:22Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "reason": "outside 7-day cutoff window for 2026-09-01T01:01:22Z run",
+      "source_url": "https://www.mintmcp.com/blog/rag-architecture",
+      "visible_date": "2026-08-22"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "reason": "outside 7-day cutoff window despite useful self-service analytics guidance",
+      "source_url": "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+      "visible_date": "2026-06-03"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "reason": "ambiguous or missing visible date; excluded under strict date rule",
+      "source_url": "https://brenthaskins.com/blog/rag-not-compromise-production-llm",
+      "visible_date": "search result showed relative date only and page body did not expose an absolute publication/update date"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "reason": "outside 7-day cutoff window",
+      "source_url": "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/",
+      "visible_date": "2026-08-03"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "reason": "outside 7-day cutoff window; benchmark/product ranking also mostly upstream-owned",
+      "source_url": "https://www.morphllm.com/best-ai-coding-agents-2026",
+      "visible_date": "2026-08-02"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "reason": "outside 7-day cutoff window and not specific enough for selected durable local leaves",
+      "source_url": "https://www.aitoolsjournal.com/ai-news/ai-agent-news-week-of-august-8-2026",
+      "visible_date": "2026-08-08"
+    }
+  ],
+  "federation_routing": "Broad product, company, benchmark, model, framework, and platform background remains upstream-owned by the AI wiki; this artifact keeps only downstream local-practice implications for ai-dev-wiki leaves.",
+  "follow_up_notes": [
+    "Ingest into event-triggered workflow and handoff leaves with emphasis on app-scoped permissions and approval pauses.",
+    "Route product details upstream; keep local practice around execution-boundary selection and per-tier assistant controls.",
+    "Ingest as orchestration verification evidence; avoid turning it into vendor coverage.",
+    "Route broad security-method background upstream; keep local implication for skill-file scope, refusal tradeoffs, and evidence-gated adoption.",
+    "Ingest as context-governance evidence for AI-assisted analytics, not as platform endorsement.",
+    "Ingest as benchmark/eval evidence for pipeline-level RAG and optimization acceptance boundaries.",
+    "Use as operating-model evidence for data-governed AI context and production gates.",
+    "Route vendor/platform specifics upstream; keep local implication for governed execution history and policy-first model routing."
+  ],
+  "leaf_universe": {
+    "eligible_leaf_count": 93,
+    "selection_rule": "new or unchecked leaves first, then oldest last_checked_at, stable relative path tie-break"
+  },
+  "qualifying_updates": [
+    {
+      "also_checked": [
+        "https://learn.chatgpt.com/docs/whats-new"
+      ],
+      "factual_summary": "OpenAI release notes say ChatGPT Work scheduled tasks can use supported app webhooks for Gmail messages, Slack channel messages, and GitHub pull request activity; actions requiring approval pause for review, and shared tasks become independent copies with each recipient connecting their own apps.",
+      "follow_up_note": "Ingest into event-triggered workflow and handoff leaves with emphasis on app-scoped permissions and approval pauses.",
+      "id": "openai-event-triggered-scheduled-tasks-2026-08-25",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Gmail",
+        "Slack",
+        "GitHub pull request activity"
+      ],
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Gmail",
+        "Slack",
+        "GitHub"
+      ],
+      "visible_date": "2026-08-25",
+      "why_it_matters_for_leaf": "Event-triggered local agent workflows should model webhook identity, app connection ownership, approval pauses, and independent task copies as workflow controls rather than simple polling replacements."
+    },
+    {
+      "factual_summary": "ClawTab updated its coding-agent IDE and manager comparison, explicitly comparing editor-first agents, terminal agents, cloud delegation, and manager layers by execution location, multi-agent isolation, approval handling, review flow, and scheduling or monitoring support.",
+      "follow_up_note": "Route product details upstream; keep local practice around execution-boundary selection and per-tier assistant controls.",
+      "id": "clawtab-coding-agent-ides-managers-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "named_entities": [
+        "ClawTab",
+        "Cursor",
+        "Claude Code",
+        "Codex",
+        "OpenCode"
+      ],
+      "source_url": "https://clawtab.cc/articles/best-llm-agent-ides",
+      "upstream_owned_entities": [
+        "ClawTab",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "OpenCode"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Local workflow selection and terminal-native orchestration pages can use this as public evidence that assistant choice should be evaluated by execution boundary, isolation, approval, review, and monitoring fit rather than product ranking alone."
+    },
+    {
+      "factual_summary": "Brief describes multi-agent coding orchestration as a primary-owner workflow: delegate only independent workstreams with explicit inputs and outputs, give editing agents separate workspaces, collect artifacts and evidence, reconcile assumptions, review actual diffs, integrate in dependency order, and verify combined behavior.",
+      "follow_up_note": "Ingest as orchestration verification evidence; avoid turning it into vendor coverage.",
+      "id": "brief-orchestration-verification-2026-08-25",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md"
+      ],
+      "named_entities": [
+        "Brief"
+      ],
+      "source_url": "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification",
+      "upstream_owned_entities": [
+        "Brief"
+      ],
+      "visible_date": "2026-08-25",
+      "why_it_matters_for_leaf": "This reinforces local delegated handoff, orient-inspect-patch-verify, and structural diff review practices: parallel completion is not acceptance evidence without owner reconciliation, diff review, and integrated verification."
+    },
+    {
+      "factual_summary": "The SkillShield paper introduces prompt-space security skills for coding agents, synthesized offline from attacks or failures and injected at session start. It evaluates fixed-budget scopes and reports RedCode reductions in malware-generation severity and execution attack success, with low benign-task refusal.",
+      "follow_up_note": "Route broad security-method background upstream; keep local implication for skill-file scope, refusal tradeoffs, and evidence-gated adoption.",
+      "id": "skillshield-prompt-space-security-skills-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "SkillShield",
+        "RedCode",
+        "Llama Guard 3",
+        "Xiaodong Wu",
+        "Zhimin Zhao",
+        "Qi Li",
+        "Xiangman Li",
+        "Yu Shi",
+        "Bram Adams",
+        "Jianbing Ni"
+      ],
+      "source_url": "https://arxiv.org/abs/2608.25817",
+      "upstream_owned_entities": [
+        "SkillShield",
+        "RedCode",
+        "Llama Guard 3"
+      ],
+      "visible_date": "2026-08-26T14:00:11Z",
+      "why_it_matters_for_leaf": "Tier-specific assistant conventions and rules/knowledge layers should treat security skills as bounded prompt/context assets that need scope, budget, and evaluation evidence before being adopted as durable instructions."
+    },
+    {
+      "factual_summary": "Domo frames self-service analytics as an operating model that requires success metrics, scope and ownership alignment, governance from the start, semantic layers, data catalogs, role-based access, and AI-generated answers governed like human-built reports.",
+      "follow_up_note": "Ingest as context-governance evidence for AI-assisted analytics, not as platform endorsement.",
+      "id": "domo-self-service-analytics-governance-2026-08-25",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "named_entities": [
+        "Domo",
+        "semantic layer",
+        "data catalog",
+        "row-level security"
+      ],
+      "source_url": "https://www.domo.com/learn/article/self-service-analytics-best-practices",
+      "upstream_owned_entities": [
+        "Domo"
+      ],
+      "visible_date": "2026-08-25",
+      "why_it_matters_for_leaf": "The local self-service analytics context-governance leaf should track that AI-assisted analytics still needs certified metrics, owner records, data readiness, access controls, and auditability before answers drive business decisions."
+    },
+    {
+      "factual_summary": "MLCommons introduced an end-to-end RAG inference benchmark with separate ingestion and QnA workloads, multi-hop FRAMES queries, traceable chunks tagged with original Wikipedia URLs, retrieval, reranking, document grading, sufficiency checking, answer generation, and task-level performance metrics.",
+      "follow_up_note": "Ingest as benchmark/eval evidence for pipeline-level RAG and optimization acceptance boundaries.",
+      "id": "mlcommons-e2e-rag-inference-benchmark-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "named_entities": [
+        "MLCommons",
+        "MLPerf Inference",
+        "FRAMES",
+        "FAISS HNSW",
+        "ColBERTv2.0",
+        "GPT-OSS-120B",
+        "GPT-OSS-20B",
+        "Llama-3.1-8B-Instruct"
+      ],
+      "source_url": "https://mlcommons.org/2026/08/endtoend-inference/",
+      "upstream_owned_entities": [
+        "MLCommons",
+        "MLPerf",
+        "FRAMES",
+        "FAISS",
+        "ColBERT",
+        "GPT-OSS",
+        "Llama"
+      ],
+      "visible_date": "2026-08-26",
+      "why_it_matters_for_leaf": "RAG provenance and performance-gate leaves should evaluate the whole retrieval pipeline, not just a single model. Chunk provenance, reranking, multi-hop sufficiency, right-sized model routing, accuracy thresholds, and compliance gaps all matter for acceptance."
+    },
+    {
+      "factual_summary": "Hyperight argues that enterprise AI production bottlenecks often come from organizational and data-level misalignment, and recommends extending data governance practices, reusing stewardship and access-control workflows, and moving from static gates to platform infrastructure with lineage across models and RAG architectures.",
+      "follow_up_note": "Use as operating-model evidence for data-governed AI context and production gates.",
+      "id": "hyperight-enterprise-ai-production-data-governance-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Hyperight",
+        "Collibra",
+        "Data 2030 Summit",
+        "Wouter Mertens"
+      ],
+      "source_url": "https://hyperight.com/how-to-accelerate-enterprise-ai-production/",
+      "upstream_owned_entities": [
+        "Hyperight",
+        "Collibra",
+        "Data 2030 Summit"
+      ],
+      "visible_date": "2026-08-31",
+      "why_it_matters_for_leaf": "Self-service analytics and rules/knowledge-layer pages should preserve ownership, data quality, lineage, access rights, and reusable governance workflows as AI context infrastructure rather than inventing parallel AI-only processes."
+    },
+    {
+      "factual_summary": "VDF AI describes an enterprise control layer that coordinates networks of agents, models, tools, decisions, and sub-workflows; applies model-routing policy before quality/cost/latency optimization; and preserves workflow versions, run artifacts, choices, outcomes, and provenance in organizational memory.",
+      "follow_up_note": "Route vendor/platform specifics upstream; keep local implication for governed execution history and policy-first model routing.",
+      "id": "vdf-ai-control-layer-2026-08-29",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "named_entities": [
+        "VDF AI",
+        "VDF AI Networks",
+        "VDF AI Router",
+        "SEEMR",
+        "Vault",
+        "Memory Graph"
+      ],
+      "source_url": "https://vdf.ai/blog/why-we-built-vdf-ai-enterprise-intelligence-control-layer/",
+      "upstream_owned_entities": [
+        "VDF AI"
+      ],
+      "visible_date": "2026-08-29",
+      "why_it_matters_for_leaf": "Workflow-before-model-selection, rules/knowledge-layer, and code-retrieval evidence pages can use this as public evidence for explicit model policy, execution-state ownership, cost and latency records, permission-aware knowledge access, and reusable provenance from prior runs."
+    }
+  ],
+  "run_timestamp_local": "2026-08-31T21:01:22-0400",
+  "run_timestamp_utc": "2026-09-01T01:01:22Z",
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2608.25817",
+    "https://brenthaskins.com/blog/rag-not-compromise-production-llm",
+    "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+    "https://clawtab.cc/articles/best-llm-agent-ides",
+    "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/",
+    "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "https://hyperight.com/how-to-accelerate-enterprise-ai-production/",
+    "https://learn.chatgpt.com/docs/whats-new",
+    "https://mlcommons.org/2026/08/endtoend-inference/",
+    "https://vdf.ai/blog/why-we-built-vdf-ai-enterprise-intelligence-control-layer/",
+    "https://www.aitoolsjournal.com/ai-news/ai-agent-news-week-of-august-8-2026",
+    "https://www.domo.com/learn/article/self-service-analytics-best-practices",
+    "https://www.mintmcp.com/blog/rag-architecture",
+    "https://www.morphllm.com/best-ai-coding-agents-2026",
+    "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": [
+      "https://arxiv.org/abs/2608.25817",
+      "https://clawtab.cc/articles/best-llm-agent-ides"
+    ],
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": [
+      "https://clawtab.cc/articles/best-llm-agent-ides",
+      "https://vdf.ai/blog/why-we-built-vdf-ai-enterprise-intelligence-control-layer/",
+      "https://www.morphllm.com/best-ai-coding-agents-2026"
+    ],
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md": [
+      "https://clawtab.cc/articles/best-llm-agent-ides",
+      "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    ],
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": [
+      "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "https://learn.chatgpt.com/docs/whats-new",
+      "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification"
+    ],
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md": [
+      "https://github.blog/changelog/2026-08-03-trigger-copilot-automations-with-comments/",
+      "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "https://learn.chatgpt.com/docs/whats-new"
+    ],
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": [
+      "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification"
+    ],
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md": [
+      "https://clawtab.cc/articles/best-llm-agent-ides",
+      "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification"
+    ],
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md": [
+      "https://www.runbrief.ai/learn/ai-coding-agent-orchestration-verification"
+    ],
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md": [
+      "https://arxiv.org/abs/2608.25817",
+      "https://hyperight.com/how-to-accelerate-enterprise-ai-production/",
+      "https://vdf.ai/blog/why-we-built-vdf-ai-enterprise-intelligence-control-layer/",
+      "https://www.aitoolsjournal.com/ai-news/ai-agent-news-week-of-august-8-2026"
+    ],
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md": [
+      "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+      "https://hyperight.com/how-to-accelerate-enterprise-ai-production/",
+      "https://www.domo.com/learn/article/self-service-analytics-best-practices"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://vdf.ai/blog/why-we-built-vdf-ai-enterprise-intelligence-control-layer/"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://arxiv.org/abs/2608.25817",
+      "https://learn.chatgpt.com/docs/whats-new"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": [
+      "https://brenthaskins.com/blog/rag-not-compromise-production-llm",
+      "https://mlcommons.org/2026/08/endtoend-inference/",
+      "https://www.mintmcp.com/blog/rag-architecture"
+    ],
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md": [
+      "https://arxiv.org/abs/2608.25817",
+      "https://clawtab.cc/articles/best-llm-agent-ides"
+    ],
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": [
+      "https://mlcommons.org/2026/08/endtoend-inference/"
+    ]
+  }
+}
