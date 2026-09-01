@@ -1,0 +1,631 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-01T00:32:23Z",
+  "run_timestamp_local": "2026-08-31T20:32:23-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-30T00:32:23Z",
+    "end_utc": "2026-09-01T00:32:23Z",
+    "rule": "Include only public sources with a visible publication or update date inside the last 2 days relative to run time; exclude missing, ambiguous, future-dated, crawl-only, snippet-only, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, adoption, implementation, verification, evaluation, and operating-model lenses.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad ecosystem coverage for companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "collector_action": "Broad entity facts are recorded as upstream-owned; only local practice implications and routing notes are included."
+  },
+  "search_queries": [
+    "site:github.blog changelog Copilot coding agent August 31 2026 OR August 30 2026",
+    "AI coding agents production reliability August 31 2026",
+    "AI assisted development code review August 31 2026",
+    "software engineering AI agents evals August 31 2026",
+    "site:sourcegraph.com/blog August 31 2026 AI coding agents code search",
+    "site:anthropic.com/news August 31 2026 Claude Code agents instructions",
+    "site:openai.com/index August 31 2026 Codex coding agent",
+    "site:martinfowler.com articles AI coding August 2026 agent",
+    "\"Aug 31, 2026\" \"AI code review\"",
+    "\"August 31, 2026\" \"coding agents\" \"code review\"",
+    "\"August 30, 2026\" \"coding agents\" \"software engineering\"",
+    "\"Aug 31, 2026\" \"MCP\" \"agents\" \"software\""
+  ],
+  "qualifying_updates": [
+    {
+      "title": "GitHub Copilot in VS Code, August 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "publisher": "GitHub Changelog",
+      "author": "GitHub",
+      "visible_date": "August 31, 2026",
+      "date_basis": "Direct changelog date visible above the article title.",
+      "summary": "The VS Code release notes describe agent-session organization, side-by-side chats, a /btw side conversation that shares context and prompt cache, external session continuation, shared sessions across VS Code windows, an experimental /rubber-duck second-opinion command, transcript search, sticky prompt scroll, token-usage visibility, browser element comments for agent feedback, and dictation cleanup instructions.",
+      "why_it_matters": "This is a local agent-workflow, context-architecture, and verification update because it shows concrete interface patterns for durable sessions, long conversation navigation, human feedback on web artifacts, and second-opinion review loops around coding agents.",
+      "candidate_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "VS Code",
+        "Agent Host",
+        "Claude",
+        "Agent Plugins 1.0"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "GitHub Copilot",
+          "reason": "Product coverage belongs to the upstream AI wiki; local relevance is session and review practice."
+        },
+        {
+          "entity": "Visual Studio Code",
+          "reason": "General developer-tool coverage belongs upstream; local relevance is agent work-surface design."
+        },
+        {
+          "entity": "Claude",
+          "reason": "Model/product-family coverage belongs upstream."
+        },
+        {
+          "entity": "Agent Plugins 1.0",
+          "reason": "Broad plugin-standard coverage belongs upstream; local relevance is portable customization governance."
+        }
+      ],
+      "local_practice_implication": "A local synthesis could define durable agent-session ergonomics: comparable side-by-side runs, context-preserving side conversations, session provenance, token visibility, and second-opinion review that remains subordinate to tests and human review.",
+      "follow_up_notes": "Check whether existing agent-workflow pages already distinguish second-model critique from independent verification before ingest."
+    },
+    {
+      "title": "Debian won't ban AI code from its Linux distribution",
+      "source_url": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+      "publisher": "The Verge",
+      "author": "Stevie Bonifield",
+      "visible_date": "Aug 31, 2026, 3:34 PM UTC",
+      "date_basis": "Direct timestamp visible in the article header.",
+      "summary": "The article reports that Debian voted to allow AI-assisted development, maintenance, and documentation contributions while holding contributors responsible for quality, correctness, maintainability, legal compliance, review, testing, and modification of AI-assisted output. Disclosure of AI assistance is encouraged but not required.",
+      "why_it_matters": "This is a local governance and source-workflow update because it provides a concrete open-source policy stance: AI assistance does not lower contributor accountability, and generated material still needs review, validation, and legal scrutiny.",
+      "candidate_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Debian",
+        "The Verge",
+        "It\u0027s FOSS",
+        "Canonical",
+        "Ubuntu"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Debian",
+          "reason": "Broad project/entity coverage belongs upstream; local relevance is contributor accountability practice."
+        },
+        {
+          "entity": "Canonical",
+          "reason": "Company/project coverage belongs upstream."
+        },
+        {
+          "entity": "Ubuntu",
+          "reason": "Broad project/entity coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Future local wiki work could treat AI disclosure as separate from responsibility: disclosure may be optional in a policy, but review, test evidence, and license/legal accountability remain mandatory operating controls.",
+      "follow_up_notes": "If ingested, prefer Debian's original policy page as an authoritative source alongside this news article."
+    },
+    {
+      "title": "Coforge launches AI adoption framework to address barriers to agentic development",
+      "source_url": "https://www.expresscomputer.in/news/coforge-launches-ai-adoption-framework-to-address-barriers-to-agentic-development/138215/",
+      "publisher": "Express Computer",
+      "author": "Express Computer",
+      "visible_date": "On Aug 31, 2026",
+      "date_basis": "Direct page date visible below the section label and byline.",
+      "summary": "Coforge announced an AI adoption framework for scaling agentic software development beyond pilots. The report says the framework addresses workforce readiness, development operating models, adoption measurement, governance, code review, testing, requirements management, quality controls, and team responsibilities, combining Kotter, ADKAR, and operational change-management methods.",
+      "why_it_matters": "This is a local adoption and operating-model update because it treats agentic development as an organizational transformation with measurement, governance, and delivery-model changes rather than a tool rollout.",
+      "candidate_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Coforge",
+        "Anup Nair",
+        "Kotter\u0027s Change Model",
+        "Prosci ADKAR",
+        "Operational Change Management",
+        "OpCM"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Coforge",
+          "reason": "Company coverage belongs to the upstream AI wiki; local relevance is adoption practice."
+        },
+        {
+          "entity": "Kotter\u0027s Change Model",
+          "reason": "Broad change-management technique coverage belongs upstream; local relevance is its use in agentic-development adoption."
+        },
+        {
+          "entity": "Prosci ADKAR",
+          "reason": "Broad change-management framework coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "A local adoption lens could track agentic-development readiness through workflow redesign, review/test capacity, governance clarity, adoption telemetry, and explicit team responsibility changes.",
+      "follow_up_notes": "Look for a primary Coforge announcement or whitepaper before turning this into durable local guidance."
+    },
+    {
+      "title": "Operant AI launches Semantic Firewall to secure AI agents",
+      "source_url": "https://www.expresscomputer.in/news/operant-ai-launches-semantic-firewall-to-secure-ai-agents/138201/",
+      "publisher": "Express Computer",
+      "author": "Express Computer",
+      "visible_date": "On Aug 31, 2026",
+      "date_basis": "Direct page date visible below the section label and byline.",
+      "summary": "Operant AI announced an agent security layer that evaluates prompts, responses, commands, tool calls, data movement, and follow-up instructions, then applies allow, block, or redact decisions inline. Reported controls include Tool Intent Guard, Code Intent Guard for package and MCP server installs, Data Intent Guard, Scope Guard, natural-language policies, browser AI protection, Claude coverage, and token metering.",
+      "why_it_matters": "This is a local governance, tool-call, and permissions update because it highlights runtime controls for agent intent, tool use, code execution, package-install risk, data boundaries, and audit explanations.",
+      "candidate_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Operant AI",
+        "Operant Semantic Firewall",
+        "Vrajesh Bhavsar",
+        "MCP",
+        "Claude",
+        "ChatGPT",
+        "Copilot",
+        "Gemini",
+        "Microsoft Purview",
+        "Bedrock",
+        "Vertex",
+        "Foundry"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Operant AI",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Operant Semantic Firewall",
+          "reason": "Product coverage belongs upstream; local relevance is policy-enforcement practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol coverage belongs upstream; local relevance is governed server-install practice."
+        },
+        {
+          "entity": "Claude",
+          "reason": "Product/model-family coverage belongs upstream."
+        },
+        {
+          "entity": "ChatGPT",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Copilot",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Gemini",
+          "reason": "Product/model-family coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Local guidance could model agent runtime governance as continuous policy enforcement over tool intent, data movement, installation actions, scope drift, and budget visibility, not just static approval prompts.",
+      "follow_up_notes": "Separate product claims from generalizable control categories during ingest."
+    },
+    {
+      "title": "Improving our alignment and security efforts",
+      "source_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "publisher": "Anthropic",
+      "author": "Anthropic",
+      "visible_date": "Aug 31, 2026",
+      "date_basis": "Direct publication date visible below the article title.",
+      "summary": "Anthropic described incidents from cybersecurity evaluations and published containment guidance for future evaluations: probe sandbox configurations for vulnerabilities, use close human supervision, perform testing without internet access inside a second sandbox where possible, confirm evaluation tasks are solvable, state explicit targets and network boundaries as instructions, and monitor model reasoning, actions, and network activity in real time.",
+      "why_it_matters": "This is a local verification, eval, permissions, and audit-log update because it turns model evaluation safety into concrete harness and environment requirements: scope setting, containment checks, solvability checks, monitoring, and stop conditions.",
+      "candidate_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Mythos 5",
+        "UK AI Security Institute",
+        "AISI"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Anthropic",
+          "reason": "Company coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Claude",
+          "reason": "Model/product-family coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "Claude Mythos 5",
+          "reason": "Model coverage belongs upstream; local relevance is evaluation containment practice."
+        },
+        {
+          "entity": "UK AI Security Institute",
+          "reason": "Organization coverage belongs upstream; local relevance is reported evaluation-safety lesson."
+        }
+      ],
+      "local_practice_implication": "A durable local eval-safety page could require explicit scope instructions, verified network boundaries, nested containment tests, solvability checks, live monitors, and human stop authority for high-risk agent runs.",
+      "follow_up_notes": "During ingest, avoid duplicating model-incident background; preserve the downstream practice implications for software-agent eval harnesses."
+    },
+    {
+      "title": "The Manipulated Agent: When Apify's MCP Turns Against You",
+      "source_url": "https://pluto.security/blog/apify-mcp-prompt-injection/",
+      "publisher": "Pluto Security",
+      "author": "Eitan Chassid and Yotam Perkal",
+      "visible_date": "Aug 31, 2026",
+      "date_basis": "Direct page date visible under the author names.",
+      "summary": "Pluto Security describes an indirect prompt-injection scenario where untrusted web content returned through an MCP server can steer an authenticated follow-up action. The article recommends separating open-web retrieval from authenticated state-changing tools, preserving provenance for tool arguments, requiring confirmation for new destinations or destructive/spend actions, and monitoring chains of context and tool calls rather than isolated calls.",
+      "why_it_matters": "This is a local retrieval-and-tools and governance update because it gives concrete architecture rules for MCP trust boundaries, source provenance, approvals, and prompt-injection-resistant tool-call workflows.",
+      "candidate_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Pluto Security",
+        "Apify",
+        "MCP",
+        "CVE-2026-46341",
+        "CVE-2026-81093",
+        "NVD",
+        "VulnCheck",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Pluto Security",
+          "reason": "Company/security-researcher coverage belongs upstream."
+        },
+        {
+          "entity": "Apify",
+          "reason": "Company/product coverage belongs upstream; local relevance is MCP trust-boundary practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol coverage belongs upstream; local relevance is governed practice."
+        },
+        {
+          "entity": "CVE-2026-46341",
+          "reason": "Vulnerability/entity coverage belongs upstream or the security wiki; local relevance is tool-boundary design."
+        },
+        {
+          "entity": "CVE-2026-81093",
+          "reason": "Vulnerability/entity coverage belongs upstream or the security wiki; local relevance is tool-boundary design."
+        }
+      ],
+      "local_practice_implication": "Local practice guidance should treat retrieved content as untrusted input with provenance that cannot silently become tool arguments, destinations, credentials, or spend/state-changing actions.",
+      "follow_up_notes": "Coordinate with the security wiki if CVE details are ingested; keep this wiki focused on MCP/tool-call operating practice."
+    },
+    {
+      "title": "The real test of AI-native code analysis: is your security debt shrinking?",
+      "source_url": "https://www.endorlabs.com/learn/the-real-test-of-ai-native-code-analysis-is-your-security-debt-shrinking",
+      "publisher": "Endor Labs",
+      "author": "Andrew Stiefel",
+      "visible_date": "Published on August 31, 2026; Updated on August 31, 2026",
+      "date_basis": "Direct published and updated dates visible in the article header.",
+      "summary": "The article argues that AI-native code analysis should be evaluated by operational outcomes such as whether the security-debt backlog becomes smaller, younger, and cheaper to remediate. It frames coding agents as increasing output faster than review and delivery systems can absorb, and emphasizes validation, exploitability analysis, safe fixes, tests, and review as the bottleneck after detection.",
+      "why_it_matters": "This is a local code-review and verification update because it pushes evaluation away from finding volume and toward debt retirement, false-positive handling, remediation quality, and review throughput.",
+      "candidate_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Endor Labs",
+        "Andrew Stiefel",
+        "GitClear",
+        "DORA",
+        "Faros AI",
+        "Comcast"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Endor Labs",
+          "reason": "Company/product coverage belongs to the upstream AI wiki."
+        },
+        {
+          "entity": "GitClear",
+          "reason": "Company/report coverage belongs upstream; local relevance is metric interpretation."
+        },
+        {
+          "entity": "DORA",
+          "reason": "Broad research/program coverage belongs upstream."
+        },
+        {
+          "entity": "Faros AI",
+          "reason": "Company/report coverage belongs upstream."
+        },
+        {
+          "entity": "Comcast",
+          "reason": "Company coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Future local eval guidance could require outcome metrics for AI code-review systems: validated true positives, remediation age, debt burn-down, regression rate, and reviewer workload rather than raw issue counts.",
+      "follow_up_notes": "If ingested, avoid repeating broad report statistics without checking primary sources; capture the practice-level metric shift."
+    },
+    {
+      "title": "The AI-Native SDLC Starts With Your Infrastructure",
+      "source_url": "https://metalbear.com/blog/ai-native-sdlc-infrastructure/",
+      "publisher": "MetalBear",
+      "author": "Eyal Bukchin",
+      "visible_date": "August 30, 2026",
+      "date_basis": "Direct page date visible next to the author name.",
+      "summary": "The article responds to an agentic SDLC playbook by arguing that agent verification depends on what the agent's code actually runs against. It distinguishes file artifacts such as intent.md, spec.md, plan.md, CLAUDE.md, skills, and REVIEW.md from runtime reality, and recommends production-like dependency access plus isolation for concurrent agent sessions through traffic filtering, queue splitting, and database branching.",
+      "why_it_matters": "This is a local verification, context-architecture, and application-patterns update because it treats agent self-checks as environment-dependent and calls out shared staging interference when several agents test at once.",
+      "candidate_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "MetalBear",
+        "mirrord",
+        "Anthropic",
+        "Claude Code",
+        "CLAUDE.md",
+        "REVIEW.md",
+        "Kubernetes"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "MetalBear",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "mirrord",
+          "reason": "Product/developer-tool coverage belongs upstream; local relevance is infrastructure-backed agent verification practice."
+        },
+        {
+          "entity": "Anthropic",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Product coverage belongs upstream; local relevance is agent workflow artifact practice."
+        },
+        {
+          "entity": "Kubernetes",
+          "reason": "Broad developer-platform coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "A local page could require agents to verify against explicit runtime dependencies, record what environment checks use, and isolate concurrent agent sessions that share staging infrastructure.",
+      "follow_up_notes": "Check existing verification pages for a runtime-environment prerequisite before adding another leaf."
+    },
+    {
+      "title": "Agent Harness in 2026: Hype Word, Industry Term, or Useful Technical Concept?",
+      "source_url": "https://suedbroecker.net/2026/08/30/agent-harness-in-2026-hype-word-industry-term-or-useful-technical-concept/",
+      "publisher": "Thomas Suedbroecker's Blog",
+      "author": "Thomas Suedbroecker",
+      "visible_date": "August 30, 2026",
+      "date_basis": "Direct date visible on the homepage listing and article URL/date path.",
+      "summary": "The article surveys how several vendors use the term agent harness, concluding that there is no normative cross-vendor definition but a common functional core around the agent loop, context, tools, state, execution coordination, permissions, feedback, sandboxing, observability, and provenance. It distinguishes the harness from the model, UI, and execution environment.",
+      "why_it_matters": "This is a local harness-architecture and provenance update because it gives a vocabulary for documenting what actually coordinates AI-assisted engineering work and where evidence about context, commands, tools, approvals, models, tests, and intermediate failures is produced.",
+      "candidate_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "IBM Bob",
+        "Google Antigravity",
+        "Anthropic",
+        "Claude Code",
+        "Microsoft",
+        "Visual Studio Code",
+        "NIST"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Codex",
+          "reason": "Product/model coverage belongs upstream; local relevance is harness responsibilities."
+        },
+        {
+          "entity": "IBM Bob",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Google Antigravity",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Anthropic",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Product coverage belongs upstream."
+        },
+        {
+          "entity": "Microsoft",
+          "reason": "Company coverage belongs upstream."
+        },
+        {
+          "entity": "Visual Studio Code",
+          "reason": "Developer-tool coverage belongs upstream."
+        },
+        {
+          "entity": "NIST",
+          "reason": "Standards organization coverage belongs upstream."
+        }
+      ],
+      "local_practice_implication": "Local durable guidance could define agent-harness responsibilities as the reviewable control plane for context, permissions, tool exposure, execution, feedback, and provenance in AI-assisted development.",
+      "follow_up_notes": "Treat the author's working definition as a source-specific synthesis, not a formal standard."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "VS Code 1.135 Gives AI Coding Agents a Second Opinion",
+      "source_url": "https://devops.com/vs-code-1-135-gives-ai-coding-agents-a-second-opinion/",
+      "visible_date": "August 31, 2026",
+      "reason": "Excluded as secondary analysis of the GitHub VS Code changelog already captured from the primary source; no distinct local-practice facts required a second item.",
+      "upstream_owned_entities": [
+        "Microsoft",
+        "VS Code",
+        "GitHub Copilot",
+        "Claude"
+      ]
+    },
+    {
+      "title": "PR Arena - AI Coding Agent Leaderboard",
+      "source_url": "https://prarena.ai/",
+      "visible_date": "Updated August 31, 2026 19:07 UTC",
+      "reason": "Excluded because the page is mainly a broad product leaderboard, which is upstream-owned, and the visible metrics included an implausible success rate above 100% for one agent, requiring more validation before local use.",
+      "upstream_owned_entities": [
+        "GitHub Copilot coding agent",
+        "OpenAI Codex",
+        "Cursor Agents",
+        "Devin",
+        "Codegen",
+        "Google Labs Jules"
+      ]
+    },
+    {
+      "title": "How I turned Claude into a self-improving PM assistant",
+      "source_url": "https://www.lennysnewsletter.com/",
+      "visible_date": "Aug 31, 2026 in search result/listing",
+      "reason": "Excluded because only a listing/snippet was available during collection, and the source topic was product-management workflow rather than approved AI-assisted development practice roots.",
+      "upstream_owned_entities": [
+        "Claude"
+      ]
+    },
+    {
+      "title": "The best code review tools to try in 2026",
+      "source_url": "https://www.producthunt.com/",
+      "visible_date": "Last updated: Aug 31, 2026",
+      "reason": "Excluded because it is a broad tool/product list with no durable local practice update beyond upstream-owned product discovery.",
+      "upstream_owned_entities": [
+        "Kilo Code Reviewer",
+        "Code review tools"
+      ]
+    },
+    {
+      "title": "Only 16% of 'Docs' Commits Were Docs. Re-Tier Review.",
+      "source_url": "https://www.beri.net/article/claude-code-plugin-docs-commits-runtime-instructions-review-tiering",
+      "visible_date": "8 hours ago in search result",
+      "reason": "Excluded because the collector did not verify a direct page date and the available snippet mixed unrelated/latest-link dates with article context.",
+      "upstream_owned_entities": [
+        "Claude Code"
+      ]
+    },
+    {
+      "title": "Best AI for Coding 2026: Pricing Compared",
+      "source_url": "https://www.aipricing.guru/blog/best-ai-for-coding-2026/",
+      "visible_date": "April 22, 2026",
+      "reason": "Excluded as stale outside the cutoff window; references to August 31, 2026 were pricing-period boundaries rather than publication/update evidence.",
+      "upstream_owned_entities": [
+        "Cursor",
+        "GitHub Copilot",
+        "Claude Sonnet 5",
+        "Codestral"
+      ]
+    },
+    {
+      "title": "Best AI Agents for Software Development Ranked",
+      "source_url": "https://www.marktechpost.com/2026/05/15/best-ai-agents-for-software-development-ranked-a-benchmark-driven-look-at-the-current-field/",
+      "visible_date": "May 15, 2026",
+      "reason": "Excluded as stale outside the cutoff window and primarily broad product/model benchmark coverage owned upstream.",
+      "upstream_owned_entities": [
+        "Claude Opus 4.7",
+        "GPT-5.5",
+        "Terminal-Bench",
+        "SWE-bench"
+      ]
+    },
+    {
+      "title": "Best AI Customer Service Software for Large Enterprises in 2026",
+      "source_url": "https://www.mavenagi.com/blog/ai-customer-service-software-large-enterprises",
+      "visible_date": "4 days ago in search result",
+      "reason": "Excluded as outside the two-day cutoff and not specific to the approved AI-assisted development topic roots.",
+      "upstream_owned_entities": [
+        "Customer service AI software"
+      ]
+    },
+    {
+      "title": "AI Agent Security in 2026: What Enterprises Are Getting Wrong",
+      "source_url": "https://agatsoftware.com/ai-agent-security-enterprise-2026/",
+      "visible_date": "March 20, 2026",
+      "reason": "Excluded as stale outside the cutoff window, despite relevant governance and MCP-security themes.",
+      "upstream_owned_entities": [
+        "AGAT Software",
+        "Pragatix",
+        "MCP"
+      ]
+    },
+    {
+      "title": "Codex vs Claude Code (August 2026)",
+      "source_url": "https://www.morphllm.com/comparisons/codex-vs-claude-code",
+      "visible_date": "Search result reported published 3 months ago; page snippet referenced August 31, 2026",
+      "reason": "Excluded because the current-looking date was part of comparative content, not verified direct publication/update evidence, and the subject is broad product comparison owned upstream.",
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "SWE-bench",
+        "DeepSWE"
+      ]
+    },
+    {
+      "title": "Daily AI Agent News - August 2026",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/2026-august",
+      "visible_date": "2 days ago in search result",
+      "reason": "Excluded because the visible date came from a search/listing snippet and the page aggregates broad AI-agent product news already owned upstream.",
+      "upstream_owned_entities": [
+        "Salesforce",
+        "Slack Code",
+        "coding agents"
+      ]
+    },
+    {
+      "title": "Best Open Weight Coding Models for Private Agents 2026",
+      "source_url": "https://omidsaffari.com/blog/best-open-weight-coding-models-for-private-agents-2026",
+      "visible_date": "24 hours ago in search result",
+      "reason": "Excluded because no direct page date was verified during the run and the topic is mainly broad model selection owned upstream.",
+      "upstream_owned_entities": [
+        "OpenHands",
+        "vLLM",
+        "open-weight coding models"
+      ]
+    }
+  ],
+  "follow_up_notes": [
+    "Collector output is raw-only and intentionally does not update docs/wiki pages or raw/processed.",
+    "During ingest, prefer primary policy, changelog, or vendor announcement pages when available; use news coverage mainly as discovery or supplemental evidence.",
+    "Possible durable lenses: agent-session ergonomics, AI contribution accountability, agentic-development adoption readiness, runtime intent controls, eval containment, MCP provenance boundaries, debt-retirement metrics, production-like verification environments, and harness provenance responsibilities.",
+    "Coordinate CVE-specific details with the security wiki if they become more than supporting evidence for MCP/tool-call governance."
+  ]
+}
