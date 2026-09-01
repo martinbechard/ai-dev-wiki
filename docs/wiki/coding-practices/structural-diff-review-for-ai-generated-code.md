@@ -17,6 +17,8 @@ Structural diff gates are most useful when the workflow targets an exact commit 
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds large-PR review evidence. When AI review tooling covers very large bot-authored pull requests, structural diff review should help humans choose inspection slices and isolate behavior-changing edits; it should not turn removed file-count or line-count limits into automatic review sufficiency.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) reinforces that parallel agent output needs owner reconciliation before acceptance. Structural diff review is the coordinator's inspection aid when several agents produce independent changes: compare actual patch ranges, identify behavior-changing edits, separate formatting churn, and review integration conflicts before combined verification.
+
 ## Practice Boundaries
 
 - Use structural diffs to reduce reviewer noise when AI-generated changes include formatting, reordering, or generated boilerplate.
@@ -25,6 +27,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Keep structural diff output as triage evidence; do not let it replace tests, static analysis, security review, or human acceptance.
 - Ask agents to separate behavior changes from formatting changes when structural review shows avoidable churn.
 - Use structural diff output to triage very large or bot-authored pull requests while preserving human review of behavior, tests, security, and residual risk.
+- Use structural diff output during multi-agent reconciliation to compare actual patch ranges, isolate behavior changes, and find integration conflicts before combined verification.
 
 ## Authoritative Sources
 
@@ -34,6 +37,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [generated code refactoring](generated-code-refactoring.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -63,3 +67,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Created on 2026-08-05 from August 5 raw evidence about Difftastic-style structural diff review for AI-generated commits.
 - Maintained on 2026-08-06 with leaf-watch corroboration for structural diff review as triage evidence rather than acceptance proof.
 - Maintained on 2026-08-29 with large bot-authored pull-request triage guidance.
+- Maintained on 2026-08-31 with multi-agent reconciliation, patch-range, behavior-change, formatting-churn, and integration-conflict review evidence.

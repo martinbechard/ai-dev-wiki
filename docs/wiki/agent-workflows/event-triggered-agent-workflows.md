@@ -27,6 +27,8 @@ The August 25 raw sources add connector-trigger and reviewable-workflow evidence
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds AI-native orchestration evidence. Event-triggered agent workflows should record the event source, business rule, agent role, human approval point, automation dependency, application boundary, and completion evidence before recurring triggered actions are allowed.
 
+The August 31 raw sources add connector-webhook and IDE-session evidence. The [leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) records ChatGPT Work scheduled tasks triggered by Gmail, Slack, and GitHub pull-request activity, with approval pauses for actions that need review and independent app connections for shared task copies. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records VS Code agent sessions with side conversations, external continuation, shared sessions, transcript search, token visibility, and second-opinion prompts. Locally, webhook-triggered and IDE-session-triggered work should preserve trigger identity, app connection owner, approval pause state, session provenance, and review evidence before events become standing automation.
+
 ## Practice Boundaries
 
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
@@ -41,6 +43,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Define channel, thread, mention, and passive-message trigger scope before allowing an agent to respond from collaboration events.
 - Preserve queued prompt, queued command, receipt, owner, and cancellation evidence when an event starts or steers long-running agent work.
 - Preserve connector authorization, watched-resource scope, pending-event review state, and source event provenance for Gmail, Slack, GitHub, CI, and notebook-driven triggers.
+- Preserve app connection ownership, approval pause state, session provenance, transcript searchability, and second-opinion review evidence when webhook events or IDE sessions trigger agent work.
 
 ## Authoritative Sources
 
@@ -58,6 +61,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -91,3 +96,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Maintained on 2026-07-27 with scheduled-worktree, agent-host, CI, issue, and manual trigger distinctions.
 - Maintained on 2026-08-18 with passive channel-trigger, queued-steering, long-running receipt, owner, and noise-control evidence.
 - Maintained on 2026-08-25 with connector-triggered task, GitHub event, notebook workflow, and PR-review automation evidence.
+- Maintained on 2026-08-31 with webhook-triggered task ownership, approval-pause, shared-task, session-provenance, transcript, token-visibility, and second-opinion review evidence.

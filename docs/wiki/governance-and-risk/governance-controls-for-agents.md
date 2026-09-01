@@ -82,6 +82,8 @@ The local synthesis from the [topic news collector source](../../../raw/processe
 
 The August 28 and 29 raw sources add live-agent governance, policy-default, and workflow-redesign evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records running-agent discovery, granular guardrails, action-order review, lifecycle governance, contextual action controls, structured-output credential boundaries, and AI-generated-code production risk. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records managed coding-agent policy, billing, retention, sandbox, review-effort, AI-native workflow orchestration, and cross-surface agent boundaries. Locally, governance should treat these as rollout controls rather than broad product facts.
 
+The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds open-source contribution, runtime semantic-policy, eval-containment, and MCP prompt-injection evidence. AI-assisted contributions should keep contributor accountability for quality, correctness, maintainability, legal compliance, review, testing, and modification even when disclosure is optional. High-risk agent evaluations should probe sandbox configuration, restrict or remove internet access where possible, state target and network boundaries, monitor reasoning/actions/network activity, and preserve human stop authority. Runtime guardrails should inspect tool intent, data movement, package or MCP server installs, scope drift, and follow-up instructions before action.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -144,6 +146,9 @@ The August 28 and 29 raw sources add live-agent governance, policy-default, and 
 - Require model-enable evidence, runtime cost attribution, scoped credentials, egress policy, retained session records, memory inspection, repository-package provenance, and semantic CI or deployment gates when agents can run long-lived or cross-system work.
 - Treat team chat, connected apps, semantic layers, database tools, agent wallets, and cloud sandboxes as execution edges that need independent authorization and trace evidence.
 - Route mandate evidence, spend caps, memory writes, connected-app actions, graph evidence, and sandbox pause criteria through [execution edge authorization](execution-edge-authorization.md).
+- Keep AI-assisted contributor accountability, review, testing, maintainability, and legal-compliance obligations explicit even when a policy does not require AI-use disclosure.
+- Probe containment, network reachability, tool restrictions, monitoring, and human stop paths before high-risk agent evaluations or security-testing workflows proceed.
+- Enforce runtime policy over tool intent, data movement, package and MCP server installation, scope drift, and follow-up instructions when agents can cross systems.
 
 ## Authoritative Sources
 
@@ -200,6 +205,7 @@ The August 28 and 29 raw sources add live-agent governance, policy-default, and 
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -233,6 +239,7 @@ The August 28 and 29 raw sources add live-agent governance, policy-default, and 
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-31 with AI-assisted contributor accountability, runtime semantic-policy, eval containment, tool-intent, data-movement, package/MCP-install, and high-risk network-boundary evidence.
 - Maintained on 2026-07-23 with agent classification, rationale, confidence, proposed-change approval, activity oversight, and prompt-injection detection guidance.
 - Created on 2026-06-23 from local source guidance on agent boundaries, package-install risk, security, and human accountability.
 - Updated on 2026-06-23 with OWASP LLM risk mapping, infrastructure governance boundaries, and HVE Core licensing and responsible AI signals.

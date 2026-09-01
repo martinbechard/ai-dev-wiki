@@ -81,6 +81,8 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 The August 28 and 29 raw sources add model-harness, durable-runtime, and high-impact tool evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records business context, memory, token cost, model routing, durable execution, checkpoint recovery, scoped permissions, observability, and runtime traces as harness responsibilities. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds capability metadata, safety eval hooks, high-impact tool boundaries, and physical-device oversight requirements.
 
+The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds harness-definition and runtime-infrastructure evidence. Agent harnesses should expose the agent loop, context, tools, state, execution coordination, permissions, feedback, sandboxing, observability, and provenance as reviewable components rather than relying on vendor labels. AI-native SDLC infrastructure should let agents verify against the dependencies their code actually uses while isolating concurrent sessions through traffic filtering, queue splitting, database branching, and explicit environment evidence.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -140,6 +142,8 @@ The August 28 and 29 raw sources add model-harness, durable-runtime, and high-im
 - Preserve queued prompts, shell commands, rewind points, cross-surface handoffs, permission modes, and telemetry export as harness state when a developer may resume or audit the run later.
 - Treat loop-level persistence, context compaction, deferred tool discovery, sandboxing, approvals, failure reconstruction, event subscriptions, isolated subagents, durable goals, and steering channels as runtime components with inspectable state.
 - Treat declarative workflow loading, checkpoint persistence, retained REPL history, memory stores, subagent specifications, human inspection, recovery, verification, and resource accounting as harness components for long-horizon agent work.
+- Treat the agent loop, context, tools, state, execution coordination, permissions, feedback, sandboxing, observability, and provenance as explicit harness components regardless of vendor terminology.
+- Verify generated code against declared runtime dependencies, and isolate concurrent sessions with traffic filtering, queue splitting, database branching, or equivalent environment controls.
 
 ## Authoritative Sources
 
@@ -201,6 +205,7 @@ The August 28 and 29 raw sources add model-harness, durable-runtime, and high-im
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -233,6 +238,7 @@ The August 28 and 29 raw sources add model-harness, durable-runtime, and high-im
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-31 with agent-loop, context, tool, state, permission, feedback, sandbox, observability, provenance, runtime-dependency, and concurrent-session isolation evidence.
 - Maintained on 2026-08-29 with model-harness, durable-runtime, capability-metadata, high-impact tool, safety-eval, trace, cost, and recovery components.
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
 - Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.

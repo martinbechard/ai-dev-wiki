@@ -35,6 +35,8 @@ The [CLI multi-agent orchestration research source](../../../raw/processed/proje
 
 The August 18 raw sources add migration, queued-question, rewind, and session-preserving handoff evidence. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) records agent-assisted framework migration as a review-and-approval program rather than a one-shot rewrite. The [leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json) records pending agent questions, task lists, queued steering, rewind, and cross-surface continuation as first-class workflow surfaces. Locally, a handoff should preserve the migration scope, pending questions, queued commands, rewind point, continuation surface, review owner, and evidence that the receiving reviewer can inspect without reconstructing the prior session.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) reinforces primary-owner orchestration: independent workstreams need explicit inputs and outputs, separate editing workspaces, collected artifacts, reconciled assumptions, actual diff review, dependency-ordered integration, and combined verification. It also adds shared-task evidence where each recipient's copy has its own connected apps. Locally, a delegated handoff should distinguish shareable task instructions from per-recipient credentials and should not treat parallel agent completion as acceptance until the coordinator reconciles the outputs.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -53,6 +55,7 @@ The August 18 raw sources add migration, queued-question, rewind, and session-pr
 - Route browser, desktop, terminal, repository, or cloud boundary transitions through [supervised cross-environment handoffs](supervised-cross-environment-handoffs.md).
 - Preserve issue, pull-request, CI, review-comment, merge-queue, and worker-owner state when a terminal fleet manager coordinates delegated coding work.
 - Include migration baseline, scope, review approvals, pending questions, queued steering, rewind point, and continuation surface when long-running coding-agent work crosses sessions or tools.
+- Distinguish reusable task instructions from per-recipient app credentials, and require coordinator reconciliation, diff review, dependency ordering, and combined verification before accepting parallel delegated work.
 
 ## Authoritative Sources
 
@@ -73,6 +76,7 @@ The August 18 raw sources add migration, queued-question, rewind, and session-pr
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -112,3 +116,4 @@ The August 18 raw sources add migration, queued-question, rewind, and session-pr
 - Maintained on 2026-07-30 with supervised cross-environment handoff routing.
 - Maintained on 2026-08-05 with issue, PR, CI, review-comment, merge-queue, and worker-owner handoff evidence for terminal agent fleets.
 - Maintained on 2026-08-18 with migration baseline, queued-question, rewind, continuation-surface, and review-owner handoff evidence.
+- Maintained on 2026-08-31 with primary-owner orchestration, independent-workspace, per-recipient app-connection, artifact reconciliation, diff-review, and combined-verification evidence.

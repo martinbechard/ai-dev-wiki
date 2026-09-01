@@ -61,6 +61,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Context packages should label source trust and isolate untrusted content.
 - Dependency or tool changes should stay behind containment and deny-by-default policy checks.
 
+The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds MCP prompt-injection and runtime-filtering evidence. Untrusted open-web content returned through an MCP server can steer a later authenticated action if provenance is lost between retrieval and tool arguments. Runtime filters can help only when they inspect prompts, responses, commands, tool calls, data movement, follow-up instructions, and scope changes before action. Locally, the content boundary should be chain-aware: a harmless-looking retrieved page can become dangerous when it supplies a destination, command, package, MCP server, credential use, or spend request to a later step.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -102,6 +104,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Red-team spreadsheet, table, and document extraction workflows with adversarial fixtures before structured output can trigger consequential decisions or writes.
 - Require contextual authorization for actions proposed after reading untrusted content; valid tools and valid users are not enough when the source can steer the action sequence.
 - Treat webpages, APIs, plugins, knowledge bases, and memory as indirect-prompt-injection carriers when they can later steer tool use, dependency changes, or code edits.
+- Preserve provenance from retrieved content into proposed tool arguments, destinations, package installs, MCP server installs, and spend requests so hidden instructions cannot launder themselves into authenticated actions.
+- Screen the sequence of prompt, response, command, tool-call, data-movement, and follow-up steps when untrusted content can influence a state-changing action.
 
 ## Authoritative Sources
 
@@ -132,6 +136,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -181,3 +186,4 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Maintained on 2026-08-22 with hidden document-carrier inspection, connected-app, memory, autorun-link, and paid-action prompt-injection controls.
 - Maintained on 2026-08-26 with browser-agent content screening, action-intent checks, trusted-domain scope, and manual-override controls.
 - Maintained on 2026-08-29 with spreadsheet prompt-injection red-team fixtures, source isolation, and contextual authorization guidance.
+- Maintained on 2026-08-31 with MCP prompt-injection, argument-provenance, retrieval/action separation, runtime-filter, tool-chain, package-install, and spend-action evidence.

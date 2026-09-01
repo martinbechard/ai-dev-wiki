@@ -63,6 +63,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Production agent changes still need tests, reviewable prompt or instruction versions, and validation evidence.
 - Observability, rollback paths, and outcome review remain part of the verification loop.
 
+The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and security-debt evidence. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records high-risk cybersecurity-eval containment guidance, AI-native SDLC infrastructure requirements, and outcome metrics for AI-native code analysis. The [leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) records end-to-end RAG benchmark practice. Locally, verification should check sandbox configuration, internet and network boundaries, task solvability, live monitoring, production-like dependency access, concurrent-session isolation, traceable retrieval stages, and whether AI security review reduces validated debt rather than only increasing finding volume.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -119,6 +121,9 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Convert trace spans, tool-call edges, sandbox events, business-rule verdicts, authorization decisions, cost, latency, and pause events into reusable eval cases.
 - Check generated or adapted code against behavior policy before execution when the risk is destructive, networked, production-facing, or credential-adjacent.
 - Treat formal proof or automated reasoning as an additional correctness layer, not a replacement for tests, runtime evidence, source review, and human acceptance.
+- For high-risk agent evals, verify sandbox configuration, network boundaries, task solvability, live monitors, human stop authority, and post-run evidence before accepting the result.
+- Treat production-like dependency access and concurrent-session isolation as verification prerequisites when an agent must prove code against real service behavior.
+- Measure AI-native code analysis by validated true positives, remediation age, debt reduction, regression rate, and reviewer workload instead of raw finding counts.
 
 ## Authoritative Sources
 
@@ -164,6 +169,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -218,3 +225,4 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Maintained on 2026-08-07 with LLM observability quality-gate routing and reusable skill-eval evidence.
 - Maintained on 2026-08-18 with migration acceptance, agentic security-review pipeline, and AI-generated-code production-defect signals.
 - Maintained on 2026-08-22 with layered production evals, graph-edge evidence, structured-output gates, sandbox controls, and trace-to-eval inputs.
+- Maintained on 2026-08-31 with high-risk eval containment, production-like runtime dependency, concurrent-session isolation, end-to-end RAG, and security-debt outcome metric evidence.

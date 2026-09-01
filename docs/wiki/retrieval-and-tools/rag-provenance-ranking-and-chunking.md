@@ -37,6 +37,8 @@ The August 17 raw sources add an escalation rule for agentic RAG. The [topic new
 
 The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) adds managed search-pipeline evidence for agent retrieval. Agent-facing retrieval should be operated as explicit infrastructure so custom data reaches prompts through owned ingestion, freshness, exposure, and validation controls.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds end-to-end RAG benchmark and control-layer evidence. Retrieval quality should be evaluated across ingestion and question-answering workloads, multi-hop sufficiency, traceable chunks, ranking, reranking, document grading, answer generation, task-level performance, model-route policy, and compliance gaps. Provenance is not only a citation field; it should survive from source URL through chunk, rank, sufficiency check, answer, workflow choice, and outcome record.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -63,6 +65,7 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 - Use agentic RAG only when multi-hop complexity justifies a plan/evaluate/retry loop, and preserve citations, rejected candidates, retrieval-quality metrics, chunking rationale, and faithfulness checks.
 - Make retrieval pipelines explicit: source discovery, crawl or sitemap policy, parser behavior, embedding/index ownership, retrieval API boundaries, freshness checks, and endpoint exposure review.
 - Validate retrieved custom-data evidence before it becomes coding, review, or governance context for an acting agent.
+- Evaluate RAG as an end-to-end pipeline with ingestion, retrieval, reranking, grading, sufficiency, answer generation, task metrics, model-routing policy, and provenance joined to outcomes.
 
 ## Authoritative Sources
 
@@ -82,6 +85,7 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -118,3 +122,4 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 - Maintained on 2026-08-12 with citable MCP retrieval, privacy-boundary, and provider-visibility evidence.
 - Maintained on 2026-08-17 with agentic-RAG escalation, codebase-RAG evaluation, citation, rejected-candidate, retrieval-quality, chunking, and faithfulness guidance.
 - Maintained on 2026-08-30 with explicit retrieval-pipeline, crawling, parsing, embedding, vector-storage, retrieval-API, freshness, and endpoint-exposure guidance.
+- Maintained on 2026-08-31 with end-to-end RAG benchmark, ingestion, multi-hop sufficiency, traceable-chunk, reranking, grading, model-routing, and outcome-provenance evidence.

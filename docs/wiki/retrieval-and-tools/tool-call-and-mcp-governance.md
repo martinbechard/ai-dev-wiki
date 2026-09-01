@@ -83,6 +83,8 @@ The August 25 raw sources add tool-surface catalog, roadmap, and guardrail evide
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds cross-surface MCP and high-impact tool evidence. Central authentication, permission scope, trust-boundary labels, MCP/API/CLI route labels, per-hop audit records, capability metadata, safety-specific evals, and oversight checkpoints are local tool-governance requirements when agent actions cross chat, business-app, or physical-device boundaries.
 
+The August 31 raw sources add runtime policy and indirect-injection evidence for tool calls. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records Semantic Firewall-style controls over prompts, responses, commands, tool calls, data movement, package or MCP server installs, scope drift, and natural-language policies, and it records an Apify MCP prompt-injection scenario where untrusted web content can steer authenticated follow-up actions. Locally, tool governance should separate open-web retrieval from authenticated state-changing tools, preserve provenance for tool arguments, require confirmation for new destinations or destructive/spend actions, and monitor action chains rather than isolated calls.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -159,6 +161,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Treat customization catalogs, skills directories, and plug-in stores as discovery surfaces whose entries require owner, source, scope, token, and approval review before enablement.
 - Place guardrails at prompt, model-output, pre-tool-call, and post-tool-result hops when tool content can carry instructions, secrets, PII, destructive SQL, unsafe shell commands, or policy violations.
 - Track MCP roadmap changes, semantic convention maturity, progressive discovery, async task handles, and identity/delegation primitives as conformance review inputs before expanding local tool access.
+- Separate untrusted retrieval tools from authenticated state-changing tools, preserve argument provenance, and require confirmation when retrieved content proposes new destinations, installs, destructive actions, spend, or scope expansion.
+- Monitor tool-call chains across prompts, responses, commands, data movement, and follow-up instructions so policy decisions can catch unsafe intent that is invisible in one isolated call.
 
 ## Authoritative Sources
 
@@ -218,6 +222,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 - [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
@@ -253,6 +258,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
 - Maintained on 2026-08-29 with cross-surface MCP, central authentication, trust-boundary, high-impact tool, safety-eval, and per-hop audit evidence.
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.

@@ -81,6 +81,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The August 30 raw sources add selection criteria from public agent TDD, asynchronous coding-agent workspaces, self-hosting, and assistant comparisons. The [topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) treats tool comparisons as workflow-fit evidence rather than product rankings, while the [leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) reinforces that persistent, self-hosted, and skill-driven agents need operating decisions before tool choice.
 
+The August 31 raw sources add execution-boundary, control-layer, and adoption-framework evidence. The [leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) records coding-agent comparisons by editor-first, terminal, cloud-delegation, and manager-layer fit, plus enterprise control-layer evidence for model-routing policy, workflow versions, run artifacts, outcomes, and provenance. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records adoption-framework coverage for workforce readiness, operating models, governance, code review, testing, requirements, quality controls, and team responsibilities. Locally, assistant choice should follow execution boundary, isolation, approval, review, provenance, and adoption measurement requirements rather than generic product rank.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -136,6 +138,7 @@ The August 30 raw sources add selection criteria from public agent TDD, asynchro
 - Evaluate shared-agent catalogs, effort defaults, session recovery, formal-verification needs, and cost-per-accepted-change metrics before standardizing an assistant surface or model route.
 - Compare coding-agent surfaces by setup surface, editor fit, runtime location, model/provider flexibility, privacy mode, self-hosting option, review workflow, approval mode, and team policy controls.
 - Decide persistence, self-hosting, reusable skills, permissions, memory, eval loops, and infrastructure requirements before turning an assistant comparison into a team default.
+- Compare assistant and manager layers by execution location, workspace isolation, approval flow, review surface, scheduling, monitoring, provenance, and adoption-measurement requirements before selecting a model or product route.
 
 ## Authoritative Sources
 
@@ -190,6 +193,8 @@ The August 30 raw sources add selection criteria from public agent TDD, asynchro
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -218,6 +223,7 @@ The August 30 raw sources add selection criteria from public agent TDD, asynchro
 
 ## Maintenance Notes
 
+- Maintained on 2026-08-31 with execution-boundary, manager-layer, model-routing-policy, workflow-provenance, workforce-readiness, governance, quality-control, and adoption-measurement evidence.
 - Maintained on 2026-08-29 with shared custom-agent, effort-control, policy-convergence, formal-verification, session-recovery, and subagent-economics workflow-selection evidence.
 - Maintained on 2026-08-29 with AI-native workflow redesign, managed policy, review-effort, retention, billing, sandbox, workspace-layer, and prototype-to-deployment selection inputs.
 - Maintained on 2026-08-30 with setup-surface, editor-fit, runtime-location, model-flexibility, privacy, self-hosting, review, approval, team-policy, persistence, skill, memory, eval, and infrastructure selection criteria.

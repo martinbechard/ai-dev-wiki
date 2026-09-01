@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current August digest](2026-08.md) includes August 30 practice updates for agent TDD, spec-driven inputs, portable skills, persistent and asynchronous workspaces, retrieval pipelines, infrastructure economics, and workflow selection.
+The [current August digest](2026-08.md) includes August 31 practice updates for webhook and IDE-session workflows, delegated handoffs, workflow selection, tier conventions, context governance, RAG, tool governance, eval containment, harness components, and [adoption operating agreements](../adoption-and-operating-model/adoption-operating-agreements.md).
 
 ## Monthly Digests
 
@@ -85,3 +85,4 @@ The [current August digest](2026-08.md) includes August 30 practice updates for 
 - Maintained on 2026-08-29 with managed-agent policy, bot-to-agent review, persistent-agent, observability, workflow-state, ownership, harness, structured-output, prompt-injection, execution-edge, and adoption-quality digest scope.
 - Maintained on 2026-08-29 with shared-agent, cost-aware routing, runtime-governance, destructive-command, prompt-injection, and formal-verification digest scope.
 - Maintained on 2026-08-30 with agent TDD, spec-driven input, portable-skill, persistent-workspace, asynchronous-subagent, retrieval-pipeline, infrastructure-economics, and workflow-selection digest scope.
+- Maintained on 2026-08-31 with event-triggered workflow, delegated-handoff, workflow-selection, tier-convention, context-governance, RAG, tool-governance, eval-containment, harness, and adoption-operating digest scope.

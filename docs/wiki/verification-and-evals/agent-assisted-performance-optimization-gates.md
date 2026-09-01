@@ -21,6 +21,8 @@ The [model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-ru
 
 The [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) adds agent-evaluation metrics that also apply to performance optimization. Speed, latency, or cost improvements should be accepted only with task success, tool-use correctness, trajectory quality, safety, repeated-run reliability, and human-intervention evidence. Deterministic graders should own provable checks, while calibrated LLM judges may cover bounded qualitative criteria without replacing measured performance and correctness evidence.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds end-to-end RAG benchmark evidence. Retrieval optimization should measure ingestion and question-answering workloads together, including chunk provenance, ranking, reranking, document grading, sufficiency checks, answer quality, latency, and model-routing cost. An optimization that improves one retrieval stage is not accepted until the pipeline-level task still meets accuracy, compliance, and provenance requirements.
+
 This page owns performance-specific acceptance. [Trajectory-level agent evaluation](trajectory-level-agent-evaluation.md) owns trace, harness, and environment evidence; [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md) owns delivery-level acceptance; and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions about experiments and applying changes.
 
 ## Practice Boundaries
@@ -39,6 +41,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Count benchmark calls and read the produced patch or query before treating a fast result as an accepted optimization.
 - Gate speed, latency, and cost claims with task success, tool correctness, trajectory quality, safety, repeated-run reliability, and human-intervention evidence.
 - Prefer deterministic graders for provable optimization checks and reserve calibrated judges for bounded qualitative review.
+- For RAG optimization, measure ingestion, retrieval, reranking, grading, sufficiency, answer quality, latency, model-routing cost, and provenance as one accepted pipeline.
 
 ## Authoritative Sources
 
@@ -48,6 +51,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 - [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
@@ -82,3 +86,4 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Maintained on 2026-08-04 with first-party trace, task-complexity, reasoning-depth, token-cost, and product-specific success criteria.
 - Maintained on 2026-08-05 with benchmark-gaming classification, in-place fix counting, and tool-call cost evidence.
 - Maintained on 2026-08-25 with task-success, tool-correctness, trajectory-quality, safety, reliability, human-intervention, deterministic-grader, and calibrated-judge gates.
+- Maintained on 2026-08-31 with end-to-end RAG ingestion, retrieval, reranking, grading, sufficiency, answer-quality, latency, routing-cost, and provenance gates.

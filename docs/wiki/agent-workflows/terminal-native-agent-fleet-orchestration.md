@@ -19,6 +19,8 @@ Application-framework CLIs remain useful, but they should not be evaluated as fl
 
 The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md) adds a managed-app comparison point. Stacked sessions and stacked pull requests solve the same delivery pressure as terminal-native fleets at the source-control layer: keep a modernization effort split into ordered work packages, preserve prior session context, close or redirect an unfit branch, and target each pull request at the branch below it. The local fleet rule is to preserve the same chain evidence even when the coordination surface is a managed app rather than terminals.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds coding-agent manager comparison evidence. Fleet selection should compare editor-first agents, terminal agents, cloud delegation, and manager layers by execution location, multi-agent isolation, approval handling, review flow, scheduling, and monitoring support. Broad product coverage stays upstream; locally, the durable rule is that a manager layer is useful only when it improves coordination evidence and review throughput without hiding workspace, permission, or merge-state boundaries.
+
 ## Practice Boundaries
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
@@ -29,6 +31,7 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - Stop fan-out when review, verification, or merge-conflict capacity is the bottleneck.
 - Preserve stack order, base branch, closed or superseded attempt, dependent pull request, and reviewer handoff evidence when work is split into stacked sessions.
 - Treat managed stacked-session products as source-control orchestration surfaces; broad product background remains upstream.
+- Compare fleet managers by execution location, multi-agent isolation, approval flow, review surface, scheduling, monitoring, and exported coordination evidence.
 
 ## Authoritative Sources
 
@@ -46,6 +49,7 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 - [upstream Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md)
 - [upstream Mastra](../../../upstream-ai-wiki/agentic-frameworks/mastra.md)
 - [upstream OpenAI Agents SDK](../../../upstream-ai-wiki/agentic-frameworks/openai-agents-sdk.md)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -74,3 +78,4 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.
+- Maintained on 2026-08-31 with execution-location, isolation, approval, review, scheduling, monitoring, and coordination-evidence criteria for coding-agent manager layers.

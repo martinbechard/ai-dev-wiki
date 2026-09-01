@@ -13,6 +13,8 @@ Self-service analytics agents are primarily a context-governance problem. The [A
 
 For analytics-style workflows, the agent should be routed first to canonical metrics, semantic layers, lineage, curated reference docs, and business context. Query history can be useful raw material, but it should be distilled into maintained reference documents and reusable patterns instead of exposed as an unstructured source of truth.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds Domo and Hyperight evidence that self-service analytics remains an operating-model and data-governance problem when AI is involved. AI-generated answers should inherit certified metrics, owner records, data-readiness checks, semantic layers, catalogs, role-based access, lineage, and auditability before they drive business decisions. Enterprise AI production should reuse stewardship and access-control workflows instead of treating agent context as separate from governed data practice.
+
 ## Practice Boundaries
 
 - Prefer fewer governed datasets and metric definitions over many plausible near-duplicates.
@@ -21,12 +23,15 @@ For analytics-style workflows, the agent should be routed first to canonical met
 - Treat query corpora as curation input unless a specific query is authoritative evidence.
 - Maintain analytics skills and reference docs alongside the models they describe.
 - Validate analytics agents with snapshot-safe evals, domain gates, and telemetry that records skill version, model, and result.
+- Require certified metric ownership, data-readiness checks, role-based access, lineage, and audit trails before AI-generated analytics answers drive decisions.
+- Reuse stewardship, semantic-layer, catalog, and access-control workflows as agent context infrastructure instead of building parallel AI-only data governance.
 
 ## Authoritative Sources
 
 - [Anthropic analytics source](../../../raw/processed/How Anthropic enables self-service data analytics with Claude.md)
 - [context selection and compaction](context-selection-and-compaction.md)
 - [judge grader boundaries](../verification-and-evals/judge-grader-boundaries.md)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -53,3 +58,4 @@ For analytics-style workflows, the agent should be routed first to canonical met
 ## Maintenance Notes
 
 - Created on 2026-06-23 to hold analytics-specific context governance.
+- Maintained on 2026-08-31 with certified-metric, ownership, semantic-layer, catalog, role-based-access, lineage, auditability, and stewardship evidence for AI-assisted analytics.

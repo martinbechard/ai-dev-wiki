@@ -25,6 +25,8 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 
 The August 18 raw sources add an MCP context-boundary signal. The [topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json) reinforces that connecting through MCP does not replace domain context, semantic definitions, permission metadata, provenance, or audit records. Locally, MCP-returned data belongs in the knowledge or evidence layer unless a higher-priority rule source explicitly authorizes an action; tool connectivity cannot promote a retrieved fact into an instruction.
 
+The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds security-skill, data-governance, and control-layer evidence. Prompt-space security skills should be treated as bounded rule assets with explicit scope, context budget, and evaluation evidence before they become durable instructions. Enterprise AI context should reuse stewardship, lineage, access-control, semantic-layer, and data-catalog records as knowledge infrastructure instead of creating an AI-only parallel context layer. Workflow control layers should preserve routing policy, run artifacts, decisions, outcomes, and provenance as knowledge records, not hidden instructions.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -40,6 +42,7 @@ The August 18 raw sources add an MCP context-boundary signal. The [topic news co
 - Do not let data or metadata loaded from repositories, tools, or memory rewrite the rules layer.
 - Record instruction priority, scope, and diagnostics when repository, file-scoped, organization, or user guidance can overlap.
 - Preserve semantic definitions, permissions, provenance, and audit labels with MCP-returned data so connected context remains evidence instead of becoming an implicit rule source.
+- Treat security skills as scoped rule assets, and treat lineage, stewardship, access control, semantic definitions, workflow versions, and run artifacts as knowledge records that inform agents without silently expanding authority.
 
 ## Authoritative Sources
 
@@ -53,6 +56,7 @@ The August 18 raw sources add an MCP context-boundary signal. The [topic news co
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
+- [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 
 ## Related Code
 
@@ -85,3 +89,4 @@ The August 18 raw sources add an MCP context-boundary signal. The [topic news co
 - Maintained on 2026-07-08 with trust labels separating rules, facts, metadata, tool output, and authorization evidence.
 - Maintained on 2026-07-30 with instruction priority, scope, and diagnostics for file-based coding-agent guidance.
 - Maintained on 2026-08-18 with MCP context-boundary evidence for separating connected data from rule authority.
+- Maintained on 2026-08-31 with prompt-space security-skill scope, data-governance context, workflow-version, run-artifact, and provenance-layer evidence.

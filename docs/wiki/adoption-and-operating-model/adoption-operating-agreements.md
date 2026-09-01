@@ -39,6 +39,8 @@ The August 10 raw sources add SDLC-as-context and governance-platform evidence. 
 
 The August 28 and 29 raw sources add operating-model evidence for workflow redesign, institutional skill ownership, review load, and workspace-layer boundaries. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records signals that AI-assisted development programs should track collaboration quality, reviewer fatigue, prototype-to-deployment trust, and workflow orchestration, not only usage or generated-code throughput. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds skill ownership, constant improvement loops, and workspace-layer selection as operating agreement fields.
 
+The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds agentic-development adoption-framework evidence. Scaling beyond pilots should define workforce readiness, development operating model changes, adoption measurement, governance, code review, testing, requirements management, quality controls, and team responsibilities. Change-management frameworks remain broad upstream context; locally, operating agreements should make readiness, measurement, and review capacity visible before agentic development is treated as a standard delivery model.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -72,6 +74,7 @@ The August 28 and 29 raw sources add operating-model evidence for workflow redes
 - Treat SDLC structure as part of the agent context: specification gates, task slicing, independent review, and recurring learning loops should be explicit operating rules.
 - Record ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill-switch expectations before agents touch real systems.
 - Track collaboration quality, reviewer fatigue, learning health, skill ownership, workspace boundaries, and prototype-to-deployment trust as adoption outcomes alongside speed or usage.
+- Define workforce readiness, operating-model changes, adoption measurement, governance, review/test capacity, requirements management, quality controls, and team responsibilities before scaling agentic development beyond pilots.
 
 ## Authoritative Sources
 
@@ -95,6 +98,7 @@ The August 28 and 29 raw sources add operating-model evidence for workflow redes
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
 ## Related Code
 
@@ -135,3 +139,4 @@ The August 28 and 29 raw sources add operating-model evidence for workflow redes
 - Maintained on 2026-07-30 with team-agent rollout guidance for environments, repository instructions, approvals, worktrees, skills, independent grading, and review practice.
 - Maintained on 2026-08-08 with agent hackathon and workshop evidence requirements for repositories, demos, and codebase-health review.
 - Maintained on 2026-08-10 with SDLC-as-context, governance-platform, ownership, intervention, audit, and kill-switch operating-agreement fields.
+- Maintained on 2026-08-31 with workforce-readiness, operating-model, adoption-measurement, governance, review, testing, requirements, quality-control, and team-responsibility evidence.
