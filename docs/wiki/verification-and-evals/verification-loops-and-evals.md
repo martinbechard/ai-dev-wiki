@@ -65,6 +65,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and security-debt evidence. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records high-risk cybersecurity-eval containment guidance, AI-native SDLC infrastructure requirements, and outcome metrics for AI-native code analysis. The [leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) records end-to-end RAG benchmark practice. Locally, verification should check sandbox configuration, internet and network boundaries, task solvability, live monitoring, production-like dependency access, concurrent-session isolation, traceable retrieval stages, and whether AI security review reduces validated debt rather than only increasing finding volume.
 
+The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds sandbox preflight, trajectory-grader, and monitor-evaluation evidence. Verification should check named runtime profiles, migration safety, network isolation, solvability, declared target boundaries, monitor halt behavior, grader pass rates, and whether supervisory agents abstained when evidence was weak.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -124,6 +126,7 @@ The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and
 - For high-risk agent evals, verify sandbox configuration, network boundaries, task solvability, live monitors, human stop authority, and post-run evidence before accepting the result.
 - Treat production-like dependency access and concurrent-session isolation as verification prerequisites when an agent must prove code against real service behavior.
 - Measure AI-native code analysis by validated true positives, remediation age, debt reduction, regression rate, and reviewer workload instead of raw finding counts.
+- Check runtime profile, migration safety, network isolation, declared target boundaries, monitor halt behavior, grader pass rates, and abstention quality before accepting autonomous or supervisory agent workflows.
 
 ## Authoritative Sources
 
@@ -171,6 +174,7 @@ The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 
 ## Related Code
 
@@ -202,6 +206,7 @@ The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-01 with runtime-profile, migration-safety, network-isolation, target-boundary, monitor-halt, trajectory-grader, and abstention-quality verification evidence.
 - Maintained on 2026-08-29 with formal-methods, automated-reasoning, approval-depth, maintainable-agent, observability, rollback, and outcome-review evidence.
 - Maintained on 2026-07-23 with workflow-fit eval selection, benchmark-ledger routing, deterministic guardrails, containment, and independent-check guidance.
 - Created on 2026-06-23 from local source guidance on verification, evals, graders, grounding, and done signals.

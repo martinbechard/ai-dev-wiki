@@ -71,6 +71,7 @@ The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf 
 
 ## Practice Boundaries
 
+- Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
 - Keep secrets, credentials, PII, and company-internal material outside prompts, raw artifacts, screenshots, logs, and public source collectors unless explicitly approved.
 - Review assistant retention settings, account-lifetime chat or agent-session storage, sandbox scope, billing identity, connected-app policy, and managed review defaults before proprietary code or regulated data enters a managed coding-agent workflow.
 - Review package installs for necessity, provenance, maintenance health, security posture, and license fit before accepting them.
@@ -134,6 +135,7 @@ The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf 
 
 ## Authoritative Sources
 
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
@@ -212,6 +214,7 @@ The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-01 with customer-owned log storage, managed keys, opt-in monitoring, watermark provenance, private plugin, and reusable review-skill supply-chain controls.
 - Maintained on 2026-08-29 with retention, billing, sandbox, connected-app policy, and managed review-default controls for proprietary-code workflows.
 - Maintained on 2026-07-23 with deterministic guardrails, sandbox escapes, SANDWORM_MODE, untrusted AI-authored commit, package-token, egress, and containment guidance.
 - Maintained on 2026-07-25 with agent-workstation, IDE extension, package registry, CI/CD egress, PR, default-branch, and fleet-incident supply-chain controls.

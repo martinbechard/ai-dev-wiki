@@ -57,6 +57,8 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 
 The same source adds Cisco management evidence for many active software agents. Local subagent coordination should keep permission decisions, at least two human production reviews, security or legal escalation paths, and cognitive-load management visible when a leader or senior engineer supervises several active agent threads.
 
+The September 1 raw sources add multi-agent IDE and side-conversation evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records side conversations with shared context, second-opinion commands, and multiple windows connected to one Agent Host session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records isolated worktrees, branch-specific histories, run/debug configurations against selected worktrees, and policy-aware model choices for custom agents. Locally, subagent coordination should preserve workspace isolation, reviewer-visible branch history, second-opinion scope, and model-policy rationale.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -89,6 +91,7 @@ The same source adds Cisco management evidence for many active software agents. 
 - Route cheaper subagents only for well-scoped mechanical work when the coordinator retains judgment, acceptance, and verification responsibility.
 - Require asynchronous multi-agent workspaces to expose shared-memory boundaries, scheduled-job ownership, visible plans, tool-call traces, approval state, sandbox policy, credential redaction, and signed audit evidence.
 - Keep webhook, MCP, and messaging integrations inside the delegation contract so subagents cannot create side effects outside the coordinator's reviewed surface.
+- Isolate parallel agents by worktree or equivalent workspace, and record branch history, run configuration, second-opinion scope, and model-policy rationale for each delegated lane.
 
 ## Authoritative Sources
 
@@ -116,6 +119,8 @@ The same source adds Cisco management evidence for many active software agents. 
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 16 topic news collector source](../../../raw/processed/2026-08-16/ai-dev-wiki-topic-news-collector-2026-08-16T203133-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 
 ## Related Code
 
@@ -164,3 +169,4 @@ The same source adds Cisco management evidence for many active software agents. 
 - Maintained on 2026-08-14 with queued subagent prompt, queued shell command, side-channel question, approval-timing, and returned-evidence guidance.
 - Maintained on 2026-08-16 with role-specialized subagent authority, artifact, verification, handoff, and oversight criteria.
 - Maintained on 2026-08-30 with asynchronous multi-agent workspace, shared-memory, scheduled-job, visible-plan, tool-call, approval, sandbox, redaction, and signed-audit evidence.
+- Maintained on 2026-09-01 with side-conversation, second-opinion, shared-session, worktree-isolation, branch-history, and model-policy evidence.

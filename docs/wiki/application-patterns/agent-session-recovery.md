@@ -27,6 +27,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Cross-application continuation should preserve permission mode and tool configuration.
 - Shared session state should preserve review evidence so resumed work does not silently widen authority or lose human steering context.
 
+The September 1 raw sources add prompt-timeline and queue recovery evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records prompt timelines tied to file changes, external-session continuation, and multiple windows connected to one session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records editable queued prompts that sync to connected hosts, task identifiers, and active working-time visibility. Locally, recovery should compare queued intent, prompt timeline, changed files, host sync state, and active run state before sending more instructions.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -38,6 +40,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - For security recovery, preserve credential class, revocation or deauthorization action, affected-user notice, audit-log reference, residual-access review, and containment result before resuming agent work.
 - For model or agent continuation recovery, separate repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence before deciding how much prior reasoning to reload.
 - Preserve permission mode, tool configuration, shared-session context, and review evidence when recovery crosses IDE, chat, or application surfaces.
+- Compare queued prompts, prompt timeline, changed files, host sync state, task identifier, and active working time before resuming a long-running agent.
 
 ## Authoritative Sources
 
@@ -48,6 +51,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -81,3 +86,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Maintained on 2026-08-08 with fresh-context executor, read-only auditor, execution-memory, and artifact-evidence recovery boundaries.
 - Maintained on 2026-08-20 with credential-class revocation, deauthorization, user-notice, audit-log, residual-access, and containment recovery evidence.
 - Maintained on 2026-08-26 with model-to-model continuation boundaries separating repository state, accepted plan, blockers, trajectory summaries, and verification evidence.
+- Maintained on 2026-09-01 with prompt-timeline, queue-editing, host-sync, task-identifier, and active-working-time recovery evidence.

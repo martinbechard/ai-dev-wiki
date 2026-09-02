@@ -41,6 +41,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) reinforces persistence as an operating-model boundary. A persistent agent may continue between user prompts, but durable workspace state should make proactivity, memory use, and permission renewal inspectable before external or consequential actions occur.
 
+The September 1 raw sources add session-layout, external-continuation, and long-running task evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records side-by-side chats, side conversations with shared context, prompt timelines tied to file changes, external session continuation, multi-window Agent Host sessions, and second-opinion prompts. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records queued prompt editing, task triage, thread identifiers, active working-time visibility, and isolated worktree sessions. Locally, persistent workspaces should make layout, branch, prompt queue, timeline, task identifier, and continuation state visible before a resumed agent acts.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -65,6 +67,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Record branch purpose, owner, hook results, eval status, affected files, and merge or abandonment evidence before handing off a persistent workspace.
 - Treat persistent proactivity as scheduled or stateful work that still needs wake/sleep authority, memory-source inspection, notification policy, and permission renewal.
 - Do not let a recovered workspace or prior interaction become action authority without current repository, instruction, and approval checks.
+- Preserve prompt timelines, side-conversation scope, queue edits, task identifiers, active working time, and branch-specific session history when long-running work spans clients or worktrees.
 
 ## Authoritative Sources
 
@@ -86,6 +89,8 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 
 ## Related Code
 
@@ -126,3 +131,4 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Maintained on 2026-08-15 with split-plane workspace state, retained session records, eval artifacts, plan files, inference routing, and per-role secret boundaries.
 - Maintained on 2026-08-20 with worktree isolation, rebuildable draft, hook/eval status, branch ownership, and merge-or-abandonment evidence.
 - Maintained on 2026-08-30 with persistent-agent proactivity, sparse notification, sleep-control, memory-source, permission-ceiling, and approval-renewal evidence.
+- Maintained on 2026-09-01 with session-layout, side-conversation, prompt-timeline, queue-editing, task-identifier, and worktree-session evidence.

@@ -85,6 +85,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The August 31 raw sources add runtime policy and indirect-injection evidence for tool calls. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records Semantic Firewall-style controls over prompts, responses, commands, tool calls, data movement, package or MCP server installs, scope drift, and natural-language policies, and it records an Apify MCP prompt-injection scenario where untrusted web content can steer authenticated follow-up actions. Locally, tool governance should separate open-web retrieval from authenticated state-changing tools, preserve provenance for tool arguments, require confirmation for new destinations or destructive/spend actions, and monitor action chains rather than isolated calls.
 
+The September 1 raw sources add explicit tool-surface and approval-policy evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records browser automation moving to a default CLI mode, with MCP browser control requiring an explicit command, arguments, pinned package version, and allowed tool list. The same source records approval-policy behavior for Node REPL metadata. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records code-review approvals and managed plugin settings. Locally, tool governance should prefer narrow visible tool surfaces by default and require explicit configuration evidence when persistent MCP state or richer introspection is needed.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -163,6 +165,7 @@ The August 31 raw sources add runtime policy and indirect-injection evidence for
 - Track MCP roadmap changes, semantic convention maturity, progressive discovery, async task handles, and identity/delegation primitives as conformance review inputs before expanding local tool access.
 - Separate untrusted retrieval tools from authenticated state-changing tools, preserve argument provenance, and require confirmation when retrieved content proposes new destinations, installs, destructive actions, spend, or scope expansion.
 - Monitor tool-call chains across prompts, responses, commands, data movement, and follow-up instructions so policy decisions can catch unsafe intent that is invisible in one isolated call.
+- Prefer narrow CLI tool surfaces by default; require explicit MCP command, arguments, version pin, allowed-tool list, persistent-state reason, and approval-policy metadata when richer tool access is enabled.
 
 ## Authoritative Sources
 
@@ -223,6 +226,8 @@ The August 31 raw sources add runtime policy and indirect-injection evidence for
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
@@ -259,6 +264,7 @@ The August 31 raw sources add runtime policy and indirect-injection evidence for
 ## Maintenance Notes
 
 - Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
+- Maintained on 2026-09-01 with CLI-first browser tooling, explicit MCP configuration, package-version pinning, allowed-tool lists, Node REPL approval policy, code-review approval, and managed-plugin evidence.
 - Maintained on 2026-08-29 with cross-surface MCP, central authentication, trust-boundary, high-impact tool, safety-eval, and per-hop audit evidence.
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.

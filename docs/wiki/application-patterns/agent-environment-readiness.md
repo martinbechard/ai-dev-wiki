@@ -23,6 +23,8 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 
 The August 26 raw sources add operation-scoped and WebMCP readiness evidence. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) records bounded operation authority and agent-ready site signals; the [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) records browser-agent runtime controls. Locally, environment readiness includes whether the site, browser, tool server, or workspace exposes explicit agent-facing tools, identity boundaries, approval affordances, and reviewable interaction evidence.
 
+The September 1 raw sources add runtime-profile and worktree-readiness evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records named sandbox runtime profiles, migration fixers that avoid changing security intent, default no-sudo isolated-network Docker behavior, explicit gVisor or hypervisor isolation choices, and pre-run sandbox/network validation practices. The same source records worktree-aware run configurations and policy-aware model selection for IDE agents. Locally, environment readiness should require named runtime intent, migration evidence, runnable worktree configuration, model-policy eligibility, and boundary monitors before a coding agent starts.
+
 ## Practice Boundaries
 
 - Define the runtime boundary before agents receive file, shell, network, package, or credential access.
@@ -37,6 +39,7 @@ The August 26 raw sources add operation-scoped and WebMCP readiness evidence. Th
 - Check service health, inference geography, budget caps, skill-loading behavior, transport security, operational-data reach, and emergency-stop path before recurring or unattended agent work runs.
 - Check prebuilt environment freshness, failed-build fallback behavior, setup provenance, dependency cache state, commit SHA, build logs, and agent-run build mapping before relying on hosted agent environments.
 - Check operation-scoped authority, WebMCP or tool-boundary declarations, browser identity, trusted-site scope, approval affordances, and interaction evidence before treating a site or workspace as agent-ready.
+- Record runtime profile, sudo and network posture, migration result, worktree run/debug target, model-policy eligibility, and boundary-monitor evidence before execution.
 
 ## Authoritative Sources
 
@@ -47,6 +50,7 @@ The August 26 raw sources add operation-scoped and WebMCP readiness evidence. Th
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -80,3 +84,4 @@ The August 26 raw sources add operation-scoped and WebMCP readiness evidence. Th
 - Maintained on 2026-08-13 with managed-agent budget, inference-geography, repository-skill, service-health, MCP transport, and operational-data readiness checks.
 - Maintained on 2026-08-14 with prebuilt environment snapshots, setup provenance, dependency-cache, failed-build fallback, commit-SHA, build-log, and run-to-build readiness checks.
 - Maintained on 2026-08-26 with operation-scoped authority, WebMCP/tool-boundary declarations, browser identity, trusted-site scope, approval affordances, and interaction evidence for agent-ready environments.
+- Maintained on 2026-09-01 with runtime-profile, migration-fixer, network-isolation, worktree-run-configuration, model-policy, and boundary-monitor evidence.

@@ -48,6 +48,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Capability manifests, identity propagation, and budget policy should be visible before recurring use.
 - Protocol telemetry, approval records, and revocation evidence should remain linked to the same authorization surface.
 
+The [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) adds AI pull-request approval evidence. Copilot code review approvals are policy-gated, can be enabled at enterprise, organization, or repository scope, can be restricted to allowed file paths, and are dismissed after new commits. Locally, AI approval evidence should record enablement scope, allowed paths, merge-rule relationship, stale-approval invalidation, and the human or admin decision that made the approval signal admissible.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -75,10 +77,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Treat MCP gateways as governance boundaries only when they provide identity propagation, per-tool scoping, credential custody, protocol telemetry, user attribution, and audit logs instead of shared service-token access.
 - Treat IDE coding-agent custom MCP servers as governed development infrastructure, with server registration, credential custody, tool scope, workspace policy, and approval evidence captured before use.
 - Treat MCP servers, plugins, skills, gateways, and agent registries as linked authorization surfaces whose capability metadata, identity, budget, telemetry, approval, and revocation records must agree.
+- Treat AI-generated pull-request approvals as scoped authorization evidence only when enablement scope, allowed paths, merge-rule use, stale-approval invalidation, and admin ownership are recorded.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
@@ -123,6 +127,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-01 with AI pull-request approval enablement, allowed-path scope, merge-rule, stale-approval invalidation, and admin-decision evidence.
 - Maintained on 2026-08-29 with managed MCP, skill, plugin, gateway, registry, identity-propagation, budget-policy, telemetry, and revocation evidence.
 - Created on 2026-07-30 from public evidence about MCP resource scoping, read/write capability separation, sandbox permission classes, and approval-to-execution payload matching.
 - Maintained on 2026-07-31 with MCP registration review, runtime blocking, declared-tool snapshots, OAuth token scoping, callback-domain allow lists, and tool-schema evaluation boundaries.

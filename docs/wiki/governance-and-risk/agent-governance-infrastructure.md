@@ -83,6 +83,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Model gateways, MCP gateways, and agent registries should preserve policy and routing evidence.
 - Budget controls, traces, and provenance-aware state records should complement prompt filters and sandboxes rather than relying on one control layer.
 
+The September 1 raw sources add runtime-profile, customer-owned audit, and approval evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records named sandbox profiles, migration checks that avoid changing security intent, pre-run boundary validation, customer-owned activity storage, customer-managed encryption keys, opt-in monitoring controls, and watermark provenance limits. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records scoped AI code-review approvals, managed model policy, data-retention controls, budget expiration, and plugin settings. Locally, governance infrastructure should bind runtime profile, storage owner, key owner, monitoring authority, model eligibility, budget policy, and approval scope into the same auditable control plane.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -155,10 +157,13 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Prefer app-scoped automation credentials over personal tokens for recurring usage or billing workflows only when read/write permissions, budget effects, cost-center changes, owner review, and revocation evidence are explicit.
 - Separate cloud, model, data, application, and agentic-runtime posture evidence so coding-agent inventories, per-agent identities, tool-call monitoring, command/file access, prompt-injection guardrails, and token-cost controls remain reviewable.
 - Compose identity, delegated authority, persistent state, gateways, registries, budget controls, traces, and provenance-aware state rather than relying on one control layer.
+- Bind runtime profile, migration evidence, storage owner, key owner, monitoring authority, model eligibility, budget policy, and approval scope into the run-level governance record.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -248,6 +253,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with runtime control-plane, gateway, registry, budget, trace, and provenance-aware state governance evidence.
+- Maintained on 2026-09-01 with runtime-profile, migration, customer-owned storage, customer-managed key, opt-in monitoring, model-policy, budget, and AI-approval evidence.
 - Maintained on 2026-07-23 with task-scoped identity, human owners, just-in-time access, audit trails, and enterprise-layer monitoring signals.
 - Maintained on 2026-08-18 with inventory-first agent risk rollout, managed-settings governance, approval-bypass reporting, and rollout-telemetry signals.
 - Maintained on 2026-08-26 with operation-scoped authority, model-policy, browser-agent, billing-automation, exact-action approval, gateway-governance, AI-SPM, and requirements-validation infrastructure signals.

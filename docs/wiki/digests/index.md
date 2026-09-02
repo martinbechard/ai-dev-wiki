@@ -2,20 +2,22 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries stay brief, reverse chronological inside each monthly page, and point to durable leaves for detail. The [current August digest](2026-08.md) holds the item-level August 2026 summaries.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries stay brief, reverse chronological inside each monthly page, and point to durable leaves for detail. The [current September digest](2026-09.md) holds the item-level September 2026 summaries.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current August digest](2026-08.md) includes August 31 practice updates for webhook and IDE-session workflows, delegated handoffs, workflow selection, tier conventions, context governance, RAG, tool governance, eval containment, harness components, and [adoption operating agreements](../adoption-and-operating-model/adoption-operating-agreements.md).
+The [current September digest](2026-09.md) includes September 1 practice updates for runtime profiles, tool-surface controls, supervisory agent monitors, audit storage, worktree isolation, long-running task operations, and [adoption operating agreements](../adoption-and-operating-model/adoption-operating-agreements.md).
 
 ## Monthly Digests
 
+- [September 2026 development digest](2026-09.md) records processed September 2026 local source updates.
 - [August 2026 development digest](2026-08.md) records processed August 2026 local source updates.
 - [July 2026 development digest](2026-07.md) records processed July 2026 local source updates.
 - [June 2026 development digest](2026-06.md) records processed June 2026 local source updates.
 
 ## Authoritative Sources
 
+- [September 2026 development digest](2026-09.md)
 - [August 2026 development digest](2026-08.md)
 - [July 2026 development digest](2026-07.md)
 - [June 2026 development digest](2026-06.md)
@@ -86,3 +88,4 @@ The [current August digest](2026-08.md) includes August 31 practice updates for 
 - Maintained on 2026-08-29 with shared-agent, cost-aware routing, runtime-governance, destructive-command, prompt-injection, and formal-verification digest scope.
 - Maintained on 2026-08-30 with agent TDD, spec-driven input, portable-skill, persistent-workspace, asynchronous-subagent, retrieval-pipeline, infrastructure-economics, and workflow-selection digest scope.
 - Maintained on 2026-08-31 with event-triggered workflow, delegated-handoff, workflow-selection, tier-convention, context-governance, RAG, tool-governance, eval-containment, harness, and adoption-operating digest scope.
+- Maintained on 2026-09-01 with runtime-profile, tool-surface, supervisory-monitor, audit-storage, worktree-isolation, long-running-task, and adoption-policy digest scope.

@@ -21,6 +21,8 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 
 The August 26 raw sources add non-specialist workflow and market-comparison evidence. The [topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) records a loveholidays customer story where broader coding-agent use depends on encoded best practices, instructions, validations, checks, and release guidance, plus a secondary coding-agent comparison that emphasizes platform, pricing, autonomy, visual workspace, parallel-agent, worktree, and approval-gate differences. The [leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) also records workspace administration and usage-limit review signals. Locally, partner selection should test whether the partner can codify specialist workflow knowledge into governed validations and release checks that non-specialists can use safely.
 
+The September 1 raw sources add partner-selection evidence around managed policies, worktree isolation, audit storage, and long-running task operations. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records managed model policies, budget expiration, data retention, custom agents, and AI review approvals. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records customer-owned logs, customer-managed keys, isolated worktrees, policy-aware model choices, task triage, and durable task identifiers. Locally, partner selection should compare policy control, retention and key custody, workspace isolation, model eligibility, budget ownership, and recovery UX before relying on product breadth.
+
 ## Selection Criteria
 
 - Workflow and business fit: the partner can map the actual user journey, failure modes, decision rights, and measurable outcome before proposing model or tool choices.
@@ -37,6 +39,7 @@ The August 26 raw sources add non-specialist workflow and market-comparison evid
 - Enterprise rollout evidence: the partner can run representative codebase trials with traceability, audit logs, access controls, reviewer attribution, code ownership, CI/CD integration, and explicit delivery evidence.
 - Non-specialist workflow enablement: the partner can encode specialist best practices, instructions, validations, checks, release guidance, workspace administration, and usage-limit review so broader contributors can propose changes without bypassing governance.
 - Coding-agent fit: the partner compares workspace ergonomics, platform integration, parallel-agent support, worktree behavior, approval gates, pricing, and autonomy boundaries against the target workflow rather than ranking tools generically.
+- Managed-agent control fit: the partner can prove policy control, retention and key custody, workspace isolation, model eligibility, budget ownership, recovery UX, and durable task identifiers.
 
 ## Pilot Evidence
 
@@ -49,6 +52,8 @@ A selection pilot should use representative tasks and data, include expected fai
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [Workflow before model selection](workflow-before-model-selection.md)
 - [Adoption operating agreements](adoption-operating-agreements.md)
 - [Agent cost telemetry](agent-cost-telemetry.md)
@@ -86,3 +91,4 @@ A selection pilot should use representative tasks and data, include expected fai
 - Maintained on 2026-08-20 with sovereignty, customer-controlled execution, prompt-injection verdict, governance-receipt, and evidence-pack criteria.
 - Maintained on 2026-08-23 with real-codebase trial, traceability, audit, attribution, code-ownership, and CI/CD integration criteria.
 - Maintained on 2026-08-26 with non-specialist workflow enablement, encoded validation/release guidance, workspace administration, usage-limit review, and workflow-specific coding-agent fit criteria.
+- Maintained on 2026-09-01 with managed policy, retention, customer-key, worktree-isolation, budget, model-eligibility, recovery-UX, and task-identifier selection criteria.

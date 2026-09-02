@@ -17,6 +17,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 
 The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds MCP roadmap signals for agentic messaging, tasks, server-initiated events, and agent identity. Locally, lifecycle hooks should prepare for inbound event and task starts, server-initiated prompts, identity changes, operation-lease issuance, and task-completion evidence without letting protocol events bypass policy or source provenance.
 
+The September 1 raw sources add lifecycle evidence for stop conditions, prompt timelines, and approval hooks. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records cooldowns, typed stop-after expressions, trajectory graders, sandbox preflight validation, and Node REPL approval-policy fixes, while the [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records file-change prompt timelines and AI pull-request approval settings. Locally, lifecycle hooks should capture rate-limit decisions, dynamic stop evaluation, preflight validation, approval-policy metadata, and file-change attribution.
+
 ## Practice Boundaries
 
 - Emit lifecycle hooks for session start, tool-surface changes, approvals, memory updates, verification steps, failure states, and completion.
@@ -27,6 +29,7 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Emit hooks for managed-policy application, skill or file loading, browser-action start, sandbox execution, approval-mode changes, credential revocation, and human handoff points.
 - Use hooks to support continuous agent inventory and permission review when prompts, memory, models, tools, or access can change between runs.
 - Emit hooks for inbound events, task composition, server-initiated messages, agent-identity changes, operation-lease issuance, and task-completion evidence when protocol primitives trigger agent work.
+- Capture cooldown, stop-after, preflight-validation, approval-policy, prompt-timeline, and file-change attribution events as lifecycle evidence.
 
 ## Authoritative Sources
 
@@ -34,6 +37,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [agent harness components](agent-harness-components.md)
 - [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -65,3 +70,4 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Created on 2026-07-30 from public evidence about phase gates, sandbox permissions, managed harness controls, and auditable runtime transitions.
 - Maintained on 2026-08-20 with managed-policy, skill/file loading, browser-action, approval-mode, credential-revocation, and continuous-governance hook points.
 - Maintained on 2026-08-26 with inbound event, task-composition, server-initiated message, agent-identity, operation-lease, and task-completion hook points.
+- Maintained on 2026-09-01 with cooldown, stop-after, trajectory-grader, sandbox-preflight, approval-policy, and prompt-timeline hook evidence.

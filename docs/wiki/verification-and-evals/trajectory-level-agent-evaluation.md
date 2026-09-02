@@ -90,6 +90,8 @@ The August 17 topic news collector adds agentic web-development evaluation evide
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds high-impact action and persistent-agent trajectory evidence. Trajectory evals should inspect cross-session memory, follow-up task creation, action sequences, capability metadata, safety-specific eval checkpoints, and human oversight decisions when agents can operate beyond ordinary code text.
 
+The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds trajectory-grader and monitor evidence. Supervisory PR monitors report safe-output counts, grader pass rates, blocked-network-call observations, and whether a coding agent was nudged only when needed. Workflow releases also add trajectory grader metrics, cooldowns, and stop-after expressions. Locally, trajectory evaluation should score whether an agent or monitor acted, abstained, stopped, or escalated for the right reason, not only whether it produced a final patch.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -123,10 +125,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Keep evaluation-framework concepts as local harness evidence while routing broad Harbor, Inspect, benchmark, provider, and sandbox-product coverage upstream.
 - Preserve deployed behavior, retries, tool-call traces, recovery steps, screenshots, and runtime evidence when evaluating frontend or web-development agents.
 - Evaluate whether the trajectory preserved containment boundaries, approved memory/tool provenance, external CI or deployment truth, and behavior-baseline deviations before treating completion as reliable.
+- Score monitor abstention, targeted nudges, safe-output counts, grader pass rates, blocked-network observations, cooldown behavior, and stop-after behavior when evaluating supervisory agents.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [representative workflow calibration](representative-workflow-calibration.md)
@@ -188,6 +192,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-01 with supervisory-monitor, abstention, targeted-nudge, safe-output, grader-pass-rate, blocked-network, cooldown, and stop-after evaluation evidence.
 - Maintained on 2026-08-29 with persistent-agent, action-sequence, capability-metadata, high-impact-tool, safety-eval, and oversight trajectory signals.
 - Maintained on 2026-07-23 with workflow-fit benchmark routing, graph-stage, deterministic-step, subagent-streaming, and long-horizon task evidence.
 - Created on 2026-06-24 to hold trajectory, trace, and intermediate-decision evaluation practice for agent workflows.

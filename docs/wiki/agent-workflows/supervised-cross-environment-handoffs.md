@@ -19,6 +19,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 This page complements [delegated coding handoffs](delegated-coding-handoffs.md) and [subagent coordination](subagent-coordination.md). Those pages own the general handoff and subagent contract; this page owns cross-environment supervision, state transfer, and evidence normalization.
 
+The September 1 raw sources add handoff evidence for external agent-session continuation, shared Agent Host sessions, IDE-to-worktree movement, and long-running task control. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records continuing external Copilot or Claude sessions and connecting multiple windows to the same session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records moving an active conversation and uncommitted changes into a new worktree plus editable queued prompts that sync to connected hosts. Locally, a cross-environment handoff should name the origin client, destination workspace, uncommitted-change set, queued instructions, and review point.
+
 ## Practice Boundaries
 
 - Name the orchestration owner before multiple environment-specific agents act on one task.
@@ -29,12 +31,15 @@ This page complements [delegated coding handoffs](delegated-coding-handoffs.md) 
 - Record visible channel context, excluded private context, browser-structure evidence, generated draft artifacts, and the human review or redirect point when handoffs cross from conversation or browser work into executable action.
 - Preserve repository state, changed files, verification evidence, and unresolved decisions separately from model trajectory when handing work between agents or models.
 - Record whether the receiving agent should inherit detailed reasoning, a compact summary, or only task state when continuation direction creates cost or quality risk.
+- Record source client, destination worktree or host, uncommitted-change transfer, queued prompt state, and continuation identity when a session moves across tools.
 
 ## Authoritative Sources
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [subagent coordination](subagent-coordination.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -66,3 +71,4 @@ This page complements [delegated coding handoffs](delegated-coding-handoffs.md) 
 - Created on 2026-07-30 from public evidence about supervised browser, desktop, planning, automation, and summary handoffs.
 - Maintained on 2026-08-20 with browser-use, shared-channel context, private-context exclusion, and human redirect evidence for cross-environment handoffs.
 - Maintained on 2026-08-26 with model-to-model continuation evidence, repository-state preservation, trajectory-summary selection, and direction-sensitive handoff cost or quality risk.
+- Maintained on 2026-09-01 with external-session continuation, shared host sessions, worktree transfer, queued-prompt, and connected-host handoff evidence.

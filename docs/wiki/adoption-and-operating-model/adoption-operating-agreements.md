@@ -41,6 +41,8 @@ The August 28 and 29 raw sources add operating-model evidence for workflow redes
 
 The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds agentic-development adoption-framework evidence. Scaling beyond pilots should define workforce readiness, development operating model changes, adoption measurement, governance, code review, testing, requirements management, quality controls, and team responsibilities. Change-management frameworks remain broad upstream context; locally, operating agreements should make readiness, measurement, and review capacity visible before agentic development is treated as a standard delivery model.
 
+The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds public contribution-policy and worktree-operation evidence. Debian's AI contribution policy is useful locally as a permission-plus-accountability pattern: AI-assisted work can be allowed while contributors remain responsible for understanding, reviewing, testing, modifying, and legally vetting the output. Kilo-style isolated worktrees and model-policy controls add operating agreement fields for branch isolation, session portability, reviewer capacity, and approved model routes.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -75,6 +77,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - Record ownership, access, evaluation status, intervention requirements, escalation paths, audit records, and kill-switch expectations before agents touch real systems.
 - Track collaboration quality, reviewer fatigue, learning health, skill ownership, workspace boundaries, and prototype-to-deployment trust as adoption outcomes alongside speed or usage.
 - Define workforce readiness, operating-model changes, adoption measurement, governance, review/test capacity, requirements management, quality controls, and team responsibilities before scaling agentic development beyond pilots.
+- Allow AI assistance only with explicit contributor accountability for understanding, review, testing, modification, legal compliance, branch isolation, session portability, and approved model routes.
 
 ## Authoritative Sources
 
@@ -99,6 +102,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 
 ## Related Code
 
@@ -140,3 +144,4 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - Maintained on 2026-08-08 with agent hackathon and workshop evidence requirements for repositories, demos, and codebase-health review.
 - Maintained on 2026-08-10 with SDLC-as-context, governance-platform, ownership, intervention, audit, and kill-switch operating-agreement fields.
 - Maintained on 2026-08-31 with workforce-readiness, operating-model, adoption-measurement, governance, review, testing, requirements, quality-control, and team-responsibility evidence.
+- Maintained on 2026-09-01 with permission-plus-accountability contribution policy, worktree isolation, session portability, reviewer capacity, and model-route operating fields.

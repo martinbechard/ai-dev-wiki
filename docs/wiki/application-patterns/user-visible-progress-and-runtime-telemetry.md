@@ -63,6 +63,8 @@ The August 22 raw sources add execution-edge telemetry:
 
 The August 28 and 29 raw sources add runtime inventory, observability, and IDE usage-visibility evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records tracing and governance for agents that open pull requests, fix CI, upgrade dependencies, remediate CVEs, use model harnesses, and need running-agent inventories. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds context-window usage, cost information, review effort, shared sessions, and persistent follow-up signals. Locally, progress telemetry should join what the user sees with runtime identity, cost, state, and approval evidence.
 
+The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds long-running task and monitor telemetry signals. Mobile task lists expose running tasks, unread updates, tasks awaiting response, editable queued prompts, live working time, and thread identifiers. Supervisory workflows expose safe-output counts, grader pass rates, and blocked-network-call observations. Locally, telemetry should make waiting, unread, queued, blocked, graded, and actively-working states visible before a human decides whether to intervene.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -99,6 +101,7 @@ The August 28 and 29 raw sources add runtime inventory, observability, and IDE u
 - Join shared-channel messages, integration identity, repository permission checks, sandbox policy, budget owner, generated pull request, and extra approval state for chat-started coding-agent work.
 - Record memory writes, connected-app access, trust receipts, append-only verdict logs, sandbox events, graph-edge authorization, and downstream log links when they influence an agent's behavior or accountability.
 - Use common trace vocabulary for model, retrieval, tool, gateway, human approval, cost, latency, and eval events so runtime evidence can be reused in trajectory-level evaluation.
+- Expose unread updates, waiting-for-response state, queued prompt state, live working time, durable task identifiers, safe-output counts, grader pass rates, and blocked-network observations for long-running tasks.
 
 ## Authoritative Sources
 
@@ -134,6 +137,7 @@ The August 28 and 29 raw sources add runtime inventory, observability, and IDE u
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
+- [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 
 ## Related Code
 
@@ -162,6 +166,7 @@ The August 28 and 29 raw sources add runtime inventory, observability, and IDE u
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.
+- Maintained on 2026-09-01 with running-task, unread-update, awaiting-response, queued-prompt, working-time, thread-identifier, safe-output, and grader telemetry.
 - Created on 2026-06-23 from source guidance on progress events, agent UI updates, and runtime metrics for local or long-running AI workflows.
 - Maintained on 2026-06-24 with TTFT, pipeline latency, and tool-call pause state guidance.
 - Maintained on 2026-06-26 with remote provisioning, background-agent visibility, permission-denial, authentication, telemetry, and cleanup states.
