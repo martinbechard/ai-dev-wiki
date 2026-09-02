@@ -1,0 +1,620 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "counts": {
+    "excluded_candidate_count": 6,
+    "qualifying_update_count": 13,
+    "selected_leaf_count": 15
+  },
+  "cutoff_window": {
+    "end_utc": "2026-09-02T01:02:40Z",
+    "rule": "visible publication or update date must fall within the last 7 days; ambiguous, future, and boundary-only dates are excluded",
+    "start_local": "2026-08-25T21:02:40-0400",
+    "start_utc": "2026-08-26T01:02:40Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "reason": "date-only August 25 is boundary-ambiguous for cutoff 2026-08-25T21:02:40-0400; later in-window related August 28 and August 31 GitHub sources cover the qualifying facts",
+      "source_url": "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+      "visible_date": "2026-08-25"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "reason": "event schedule entries are not a published technical update, and some dates are future-dated relative to the run",
+      "source_url": "https://meet.modelcontextprotocol.io/2026",
+      "visible_date": "2026-08-31 and future September 2026 event dates"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "reason": "broad physical-device agent standard belongs upstream; no direct local AI-assisted development practice implication for selected leaves in this run",
+      "source_url": "https://www.anthropic.com/news/previewing-model-hardware-standard",
+      "visible_date": "2026-08-27"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "reason": "secondary news claim was not corroborated by an official or primary source during this raw-only watch",
+      "source_url": "https://www.axios.com/2026/09/01/openai-hugging-face-ai-agent-security",
+      "visible_date": "2026-09-01"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "reason": "commentary-level governance advice without primary implementation evidence; held for a broader topic collector if needed",
+      "source_url": "https://www.techradar.com/pro/govern-ai-agents-before-they-go-rogue",
+      "visible_date": "2026-08-27"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ],
+      "reason": "qualifying date, but evidence-media attachment is more directly owned by delegated handoffs or review evidence leaves not selected in this deterministic batch",
+      "source_url": "https://github.blog/changelog/2026-09-01-github-cli-media-in-issues-pull-requests-and-comments/",
+      "visible_date": "2026-09-01"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem product, model, company, MCP, and standards background remains upstream-owned; this artifact records downstream local-practice implications only.",
+    "upstream_owned_entities": [
+      "Agent Plugins 1.0",
+      "Anthropic",
+      "Azure DevOps",
+      "Claude",
+      "DeepSeek",
+      "Fable",
+      "GitHub",
+      "GitHub Copilot",
+      "GitHub Mobile",
+      "JetBrains",
+      "Kimi K2",
+      "MCP",
+      "Microsoft Teams",
+      "Slack",
+      "VS Code",
+      "Visual Studio",
+      "WSL"
+    ]
+  },
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+      "note": "No qualifying update found for this selected leaf in the current public-source window."
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-portable-agent-plugins-2026-08-31, github-copilot-weekly-customizations-enterprise-controls-2026-08-28, github-plugin-marketplace-autoupdate-managed-settings-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-code-review-approvals-2026-09-01, github-copilot-vscode-portable-agent-plugins-2026-08-31, github-plugin-marketplace-autoupdate-managed-settings-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-policies-billing-unified-agent-experience-2026-08-28, github-claude-fable-5-1-copilot-data-retention-2026-09-01, github-copilot-visual-studio-custom-agents-and-git-review-2026-08-28, github-copilot-user-budget-expiration-2026-09-01, github-global-model-policy-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-agent-sessions-2026-08-31, github-copilot-weekly-shared-sessions-cli-recovery-2026-08-28"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "note": "No qualifying update found for this selected leaf in the current public-source window."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-agent-sessions-2026-08-31"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-agent-sessions-2026-08-31, github-copilot-weekly-shared-sessions-cli-recovery-2026-08-28"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-environment-readiness.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-weekly-shared-sessions-cli-recovery-2026-08-28, github-claude-fable-5-1-copilot-data-retention-2026-09-01, github-copilot-visual-studio-custom-agents-and-git-review-2026-08-28, github-global-model-policy-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-agent-sessions-2026-08-31, github-copilot-code-review-expanded-capabilities-2026-08-27"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-session-recovery.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-agent-sessions-2026-08-31, github-copilot-weekly-shared-sessions-cli-recovery-2026-08-28, github-copilot-policies-billing-unified-agent-experience-2026-08-28"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "note": "No qualifying update found for this selected leaf in the current public-source window."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-code-review-approvals-2026-09-01, github-copilot-weekly-customizations-enterprise-controls-2026-08-28, github-copilot-policies-billing-unified-agent-experience-2026-08-28, github-copilot-code-review-default-balanced-2026-08-28, github-claude-fable-5-1-copilot-data-retention-2026-09-01, github-copilot-visual-studio-custom-agents-and-git-review-2026-08-28, github-copilot-user-budget-expiration-2026-09-01, github-copilot-code-review-expanded-capabilities-2026-08-27, github-global-model-policy-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-code-review-approvals-2026-09-01, github-copilot-weekly-customizations-enterprise-controls-2026-08-28, github-plugin-marketplace-autoupdate-managed-settings-2026-08-26"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+      "note": "Review raw artifact for downstream practice implications: github-copilot-vscode-portable-agent-plugins-2026-08-31, github-copilot-weekly-customizations-enterprise-controls-2026-08-28, github-plugin-marketplace-autoupdate-managed-settings-2026-08-26"
+    }
+  ],
+  "leaf_universe": {
+    "eligible_count": 93,
+    "selection_rule": "new or unchecked leaves first, then oldest last_checked_at, stable path sort"
+  },
+  "qualifying_updates": [
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says Copilot code review now emits approval assessments and can submit approvals when administrators enable the feature at enterprise, organization, or repository level; repository admins can constrain approval to allowed file paths and approvals are dismissed after new commits.",
+      "follow_up_note": "Ingest into governance and scoped-authorization leaves with emphasis on off-by-default approvals, path scope, and merge-rule evidence.",
+      "id": "github-copilot-code-review-approvals-2026-09-01",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "pull request approvals"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "Local governance leaves should treat AI reviewer approval as an explicit policy-gated capability with file-path scope, stale-approval invalidation, and human decision evidence rather than as a default merge signal."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub describes VS Code agent-session updates for arranging chats side by side, opening side conversations with shared context and prompt cache, navigating prompt timelines to file changes, continuing external Copilot or Claude sessions, connecting multiple windows to the same Agent Host session, and using a second-opinion command.",
+      "follow_up_note": "Ingest into workspace, recovery, subagent, lifecycle-hook, and cross-environment handoff leaves.",
+      "id": "github-copilot-vscode-agent-sessions-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code",
+        "Agent Host",
+        "Claude"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code",
+        "Claude"
+      ],
+      "visible_date": "2026-08-31",
+      "why_it_matters_for_leaf": "Persistent workspace and recovery practice should record session layout, prompt timeline, side-context boundaries, external-session continuation, and second-opinion evidence as inspectable workflow state."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "The same VS Code release notes say users can install agent customizations from plugins following the Agent Plugins 1.0 standard across VS Code and compatible agent clients.",
+      "follow_up_note": "Ingest as a portable-plugin governance signal, routing standards background upstream.",
+      "id": "github-copilot-vscode-portable-agent-plugins-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "VS Code",
+        "Agent Plugins 1.0",
+        "GitHub Copilot"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "VS Code",
+        "Agent Plugins 1.0",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-08-31",
+      "why_it_matters_for_leaf": "Portable plugin leaves should distinguish broad client support from the local governance rule: discovered skills/plugins need provenance, compatibility, allowed marketplaces, and review before use."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub weekly release notes describe shared Copilot sessions in Slack and Microsoft Teams, Copilot app WSL support, side-by-side tabs, external-browser preview handoff, CLI default execution and permission modes, easier plugin/MCP/skill management, and CLI restoration after interrupted sessions.",
+      "follow_up_note": "Ingest into environment readiness, persistent workspace, session recovery, and cross-environment handoff leaves.",
+      "id": "github-copilot-weekly-shared-sessions-cli-recovery-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "WSL",
+        "Copilot CLI"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "WSL"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Local workflow leaves should treat channel sessions, WSL environments, tab/browser boundaries, default permission modes, and interrupted-session restoration as state and approval surfaces for durable handoffs."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "The weekly release notes say the Copilot app Customize tab brings MCP servers, plugins, skills, and canvases together; JetBrains controls now cover plugins, MCP servers, telemetry, and agent permission modes; Visual Studio can share custom agents across an organization.",
+      "follow_up_note": "Ingest into plugin discovery, scoped authorization, and governance infrastructure leaves.",
+      "id": "github-copilot-weekly-customizations-enterprise-controls-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MCP servers",
+        "agent skills",
+        "JetBrains",
+        "Visual Studio"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MCP",
+        "JetBrains",
+        "Visual Studio"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Tool and plugin governance should represent customization marketplaces, telemetry, permission modes, and organization-published agents as managed surfaces with source, scope, and approval evidence."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub announced Copilot Business and Enterprise billing changes, a planned unified policy for Copilot cloud agent, Copilot Chat on github.com, and GitHub Mobile no earlier than September 28, and longer account-lifetime chat retention for the unified agent sessions experience.",
+      "follow_up_note": "Ingest with attention to billing, retention, unified policy, and default enablement review before adoption.",
+      "id": "github-copilot-policies-billing-unified-agent-experience-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent",
+        "GitHub Mobile",
+        "Sandbox"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Mobile"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Partner-selection and governance leaves should check billing readiness, policy convergence, default enablement, sandbox boundaries, and retention periods before treating a vendor agent experience as operationally equivalent across surfaces."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "The same GitHub notice says Copilot code review default effort level will change from Lite to Balanced on September 28, 2026 unless organizations or repositories explicitly select another default.",
+      "follow_up_note": "Ingest into governance infrastructure as a review-policy default-change signal.",
+      "id": "github-copilot-code-review-default-balanced-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Governance controls should record review-effort defaults as explicit policy settings because default changes affect verification cost, review depth, and audit expectations."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says Claude Fable 5.1 is available in Copilot for long-horizon coding and knowledge-work tasks, requires administrator enablement for Business and Enterprise, is off by default, requires data retention by default for safety classifiers, and has limited zero-data-retention access for eligible enterprises.",
+      "follow_up_note": "Ingest into partner-selection, environment-readiness, and governance leaves; keep model-family background upstream.",
+      "id": "github-claude-fable-5-1-copilot-data-retention-2026-09-01",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Anthropic",
+        "Claude Fable 5.1",
+        "Claude Fable 5"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Anthropic",
+        "Claude"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "Local partner selection and readiness checks should separate model capability from data-retention eligibility, administrator policy, billing model, and environment suitability for regulated code work."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub Visual Studio release notes describe organization-level custom agents, usage-plan visibility, model thinking-effort controls, model capability and cost views, and Git-agent review of uncommitted changes or commits before opening pull requests.",
+      "follow_up_note": "Ingest into partner-selection, environment-readiness, and governance leaves.",
+      "id": "github-copilot-visual-studio-custom-agents-and-git-review-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio",
+        "Azure DevOps",
+        "Git agent"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio",
+        "Azure DevOps"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Local operating practice should evaluate organization-published agents by source and scope, expose usage and cost controls in partner selection, and treat pre-PR Git-agent review as evidence before formal review."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says Copilot Business and Enterprise administrators can set expiration dates for individual user budgets; expired user budgets fall back to the next applicable cost-center or universal budget, and the REST API supports an expires_at field.",
+      "follow_up_note": "Ingest as cost-governance evidence for temporary user overrides and pilot controls.",
+      "id": "github-copilot-user-budget-expiration-2026-09-01",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Budgets REST API"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "Partner and governance practice should require temporary budget overrides to expire automatically and should prefer service-managed budget controls over manual cleanup for pilots or exception access."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says Copilot code review can now perform full reviews on automatically requested pull requests authored by bots including Copilot cloud agent, can review very large pull requests, and records resolution reasons such as Addressed, Wont fix, or Incorrect on Copilot review comments.",
+      "follow_up_note": "Ingest into governance and lifecycle hook leaves, emphasizing attribution and resolution feedback.",
+      "id": "github-copilot-code-review-expanded-capabilities-2026-08-27",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-08-27",
+      "why_it_matters_for_leaf": "Governance and lifecycle-hook leaves should track bot-authored PR review policy, billing attribution, large-change review capacity, and structured resolution reasons as feedback evidence."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says enterprise managed settings can opt individual plugin marketplaces into automatic updates with autoUpdate on extraKnownMarketplaces; supported clients update installed plugins from the marketplace, but the marketplace must still be permitted by strictKnownMarketplaces.",
+      "follow_up_note": "Ingest into remote skill discovery, portable plugin packaging, tool governance, and scoped authorization leaves.",
+      "id": "github-plugin-marketplace-autoupdate-managed-settings-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "plugin marketplaces",
+        "enterprise managed settings"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-08-26",
+      "why_it_matters_for_leaf": "Portable plugin governance should record marketplace allowlists, automatic update authority, installed-plugin provenance, and client support as separate control fields."
+    },
+    {
+      "also_checked": [],
+      "factual_summary": "GitHub says generally available Copilot models can inherit a global model policy through a Delegate to default policy state; explicit administrator choices are preserved, and open-weight or data-retention-exception models are disabled by default.",
+      "follow_up_note": "Ingest into partner-selection, governance, and environment-readiness leaves.",
+      "id": "github-global-model-policy-2026-08-26",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "DeepSeek",
+        "Kimi K2",
+        "Fable 5"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "DeepSeek",
+        "Kimi K2",
+        "Fable"
+      ],
+      "visible_date": "2026-08-26",
+      "why_it_matters_for_leaf": "Model selection should be governed as environment policy rather than personal preference, with explicit treatment for default inheritance, data-retention exceptions, and model classes outside normal enterprise agreements."
+    }
+  ],
+  "run_timestamp_local": "2026-09-01T21:02:40-0400",
+  "run_timestamp_utc": "2026-09-02T01:02:40Z",
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+    "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+    "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+    "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+    "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+    "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+    "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+    "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+    "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+    "https://github.blog/changelog/2026-09-01-github-cli-media-in-issues-pull-requests-and-comments/",
+    "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+    "https://meet.modelcontextprotocol.io/2026",
+    "https://www.anthropic.com/news/previewing-model-hardware-standard",
+    "https://www.axios.com/2026/09/01/openai-hugging-face-ai-agent-security",
+    "https://www.techradar.com/pro/govern-ai-agents-before-they-go-rogue"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md": [
+      "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/"
+    ],
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": [
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/"
+    ],
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/"
+    ],
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": [
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "https://github.blog/changelog/2026-09-01-github-cli-media-in-issues-pull-requests-and-comments/"
+    ],
+    "docs/wiki/application-patterns/agent-environment-readiness.md": [
+      "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/"
+    ],
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": [
+      "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/"
+    ],
+    "docs/wiki/application-patterns/agent-session-recovery.md": [
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/"
+    ],
+    "docs/wiki/context-architecture/thin-context-router.md": [],
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md": [
+      "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/",
+      "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+      "https://www.anthropic.com/news/previewing-model-hardware-standard",
+      "https://www.axios.com/2026/09/01/openai-hugging-face-ai-agent-security",
+      "https://www.techradar.com/pro/govern-ai-agents-before-they-go-rogue"
+    ],
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md": [
+      "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "https://meet.modelcontextprotocol.io/2026"
+    ],
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md": [
+      "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+      "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/",
+      "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+      "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "https://meet.modelcontextprotocol.io/2026"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://github.blog/changelog/2026-08-26-enterprise-managed-settings-now-support-autoupdate-for-plugin-marketplaces/",
+      "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/"
+    ]
+  }
+}
