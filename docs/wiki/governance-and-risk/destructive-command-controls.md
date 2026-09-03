@@ -31,6 +31,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Isolated fixtures, path allowlists, rollback or backup evidence, and human review should exist before execution outside a scratch workspace.
 - Safety tests should not reuse production-adjacent paths without explicit containment evidence.
 
+The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) adds another destructive cleanup incident signal where a deletion-safeguard test reportedly affected a home directory. Locally, destructive-command controls should treat model downgrade, adversarial safety-check paths, variable reuse, and home-directory or production-adjacent fixtures as explicit risk inputs before any generated cleanup script runs.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -43,6 +45,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Prefer sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions when the workflow does not require those capabilities.
 - Block destructive or confidential-data actions when the command is individually valid but the action sequence, task context, or approved payload does not justify it.
 - Require dry-run evidence, isolated fixtures, path allowlists, rollback or backup evidence, and human review before generated cleanup or deletion scripts run outside scratch workspaces.
+- Reject destructive-safety tests that target home directories, production-adjacent paths, ambiguous variables, or model-dependent guard conditions unless an isolated fixture and recovery proof are already in place.
 
 ## Authoritative Sources
 
@@ -54,6 +57,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -90,3 +94,4 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Maintained on 2026-08-15 with containment, insider-threat, live security-action, public-contact, service-mutation, and chained-operation risk evidence.
 - Maintained on 2026-08-17 with sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions.
 - Maintained on 2026-08-29 with task-context and approved-payload checks for high-impact actions.
+- Maintained on 2026-09-02 with destructive cleanup incident evidence for model downgrades, adversarial safety checks, variable reuse, and home-directory fixture denial.

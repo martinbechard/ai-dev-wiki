@@ -83,6 +83,8 @@ The August 28 and 29 raw sources add bot-to-agent review and IDE pre-PR review e
 
 The September 1 raw sources add reusable review-skill, scoped AI-approval, and contribution-accountability evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records AI code-review approvals, allowed file paths, stale-approval dismissal, default review effort, and custom agents. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records reusable assisted-review skills and public policy that keeps contributors accountable for AI-assisted output. Locally, AI review should treat approval signals and review skills as repository-owned policy inputs, not as automatic merge authority.
 
+The September 2 raw sources add delegated-approval, media-evidence, and pre-PR review signals. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records path-scoped AI approval authority, Git-agent review of uncommitted changes or commits, second-opinion review commands, and review-effort or cost controls. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records CLI-attached images or videos as review evidence. Locally, review should distinguish readiness assessments from approval authority, preserve media provenance and alt text when visual evidence matters, and keep pre-PR review findings tied to the exact diff or commit inspected.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -160,6 +162,7 @@ The September 1 raw sources add reusable review-skill, scoped AI-approval, and c
 - Make repository readiness part of AI review intake: ownership metadata, test intent, documentation, conventions, and retrieval hints should be available before generated findings are trusted.
 - Preserve bot-authored PR attribution, automated-review identity, review-effort setting, large-diff strategy, resolution reason, telemetry evidence, and pre-PR review evidence when agents review agent-authored work.
 - Treat reusable review skills, AI approval signals, default review effort, path-scoped approval rules, stale-approval dismissal, and contributor accountability as review-system evidence that needs repository-owner policy before it affects merge decisions.
+- Distinguish AI readiness assessments from merge-counting approvals, and preserve path scope, inspected diff or commit, media attachment provenance, review effort, and human acceptance when visual or pre-PR evidence supports review.
 
 ## Authoritative Sources
 
@@ -167,6 +170,8 @@ The September 1 raw sources add reusable review-skill, scoped AI-approval, and c
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -278,3 +283,4 @@ The September 1 raw sources add reusable review-skill, scoped AI-approval, and c
 - Maintained on 2026-08-13 with shift-left review, configurable effort levels, automated-check coverage, and reviewer-capacity evidence.
 - Maintained on 2026-08-16 with configuration-driven AI-review gates, finding-class separation, maintainer-capacity, and human-owned patch evidence.
 - Maintained on 2026-08-20 with AI-review attribution, scanned-scope, workflow-file, missed-gate, credential-rotation, and remediation-timing evidence.
+- Maintained on 2026-09-02 with delegated approval, readiness assessment, media attachment, pre-PR Git-agent review, second-opinion review, review-effort, and cost-control evidence.

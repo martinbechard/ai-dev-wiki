@@ -49,6 +49,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Authenticated sessions are not sufficient proof that an agent may perform sensitive writes.
 - Local records should preserve independent authorization, least privilege, out-of-band or human verification for consequential writes, and revocation evidence.
 
+The September 2 raw sources add enterprise-agent authority evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records policy-gated Copilot approvals, managed default models, content exclusions, first-class production agent identities, and liability remaining with the deploying organization. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds agent-inventory fields and per-assistant grant requirements. Broad company, model, product, protocol, and standard coverage stays upstream-owned; locally, the delegated-authority record should include identity owner, purpose, model or policy route, tool scope, data classes, credential class, autonomy tier, oversight mode, review cadence, content-exclusion boundary, and decommission or revocation trigger.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -80,6 +82,7 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Preserve prompts, traces, tool calls, identities, permissions, credentials, approvals, timelines, source repository or skill provenance, declared purpose, expected behavior, and remediation evidence when delegated authority is reviewed after an incident.
 - Treat purpose-inconsistent action sequences as delegated-authority findings even when each individual tool call used an allowed credential.
 - Require action-time authorization, least privilege, and human or out-of-band verification before sensitive writes; do not treat an authenticated session as delegated authority by itself.
+- Treat enterprise model defaults, path-scoped AI approvals, content-exclusion policies, per-assistant grants, agent inventories, and decommission triggers as delegated-authority evidence when agents can affect code, spend, data, or merge state.
 
 ## Authoritative Sources
 
@@ -104,6 +107,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [July 21 leaf update watch source](../../../raw/processed/2026-07-21/ai-dev-wiki-leaf-update-watch-2026-07-21T210116-0400.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -146,3 +151,4 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 - Maintained on 2026-08-08 with high-assurance delegation signals and loaded-skill evidence for delegated agent actions.
 - Maintained on 2026-08-14 with incident-evidence fields, repository/skill provenance, declared-purpose baselines, expected action sequences, and purpose-inconsistent behavior findings.
 - Maintained on 2026-08-21 with owner, task, policy-boundary, action-time authorization, least-privilege, sensitive-write verification, and revocation evidence.
+- Maintained on 2026-09-02 with content-exclusion, managed-model-default, path-scoped AI approval, production-agent identity, per-assistant grant, inventory, oversight, and decommission-trigger evidence.

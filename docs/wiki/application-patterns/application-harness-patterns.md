@@ -35,6 +35,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The August 8 raw sources reinforce the overview boundary: coding-agent reliability comes from an external harness that owns context organization, tool execution, permissions, audit evidence, state persistence, and recovery. Detailed state and component guidance remains in [agent harness components](agent-harness-components.md), [AI process layer and workflow state](ai-process-layer-and-workflow-state.md), and [agent session recovery](agent-session-recovery.md).
 
+The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds desktop-agent and agent-application boundary evidence. A harness that can operate desktop apps, plugins, visual generation, browser workflows, recurring tasks, MCP tools, A2A messages, A2UI surfaces, or sandboxed app resources needs explicit approval boundaries, progress visibility, tool audit trails, and authoritative backend state instead of relying on the model transcript as the product architecture.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -64,6 +66,7 @@ The August 8 raw sources reinforce the overview boundary: coding-agent reliabili
 - Keep orchestration thin where possible, but make skill artifacts, context resolvers, data connectors, validation, and audit evidence explicit harness responsibilities.
 - Treat setup latency, dependency availability, secret isolation, long-job survival, restart behavior, and artifact persistence as harness design inputs through [agent environment readiness](agent-environment-readiness.md).
 - Treat external enforcement, state persistence, recovery, and auditability as harness architecture requirements before increasing model autonomy.
+- Treat desktop app control, plugin execution, visual generation, recurring task automation, MCP tools, A2A messages, A2UI surfaces, and sandboxed app resources as harness boundaries that need visible approvals, audit trails, and authoritative backend state.
 
 ## Authoritative Sources
 
@@ -83,6 +86,7 @@ The August 8 raw sources reinforce the overview boundary: coding-agent reliabili
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
 - [agent session recovery](agent-session-recovery.md)
 - [agent lifecycle hooks](agent-lifecycle-hooks.md)
@@ -128,3 +132,4 @@ The August 8 raw sources reinforce the overview boundary: coding-agent reliabili
 - Maintained on 2026-07-30 with agent environment readiness routing for setup, secret isolation, restart, and durable execution substrate criteria.
 - Maintained on 2026-07-30 with session recovery and lifecycle hooks split into separate focused leaves.
 - Maintained on 2026-08-08 with external-enforcement and state-persistence routing for long-horizon coding-agent harnesses.
+- Maintained on 2026-09-02 with desktop-agent, plugin, visual-generation, recurring-task, MCP, A2A, A2UI, sandboxed-resource, approval, audit, and authoritative-state boundaries.

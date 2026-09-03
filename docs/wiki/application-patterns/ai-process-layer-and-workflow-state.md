@@ -39,6 +39,8 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds AI-native workflow-state evidence. Cross-surface agent actions that move between chat, CRM, Slack, MCP, APIs, CLI tools, repositories, and approval points should preserve decision owner, automation owner, application boundary, approval point, action evidence, and rollback path as workflow state.
 
+The September 2 raw sources add policy and interface state evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records content-exclusion policy, managed model defaults, side conversations, prompt timelines, shared sessions, session continuation, and permission modes. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop-agent work and app-boundary surfaces. Locally, the process layer should persist policy version, excluded context, model route, conversation branch, prompt timeline, collaboration surface, approval state, UI resource boundary, and authoritative backend action result.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -60,6 +62,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Treat agent-first product workflows as application architecture: context, permissions, governance, and handoff state need durable owners before agents can act inside recurring work.
 - Persist long-lived goals, event subscriptions, steering state, orchestration artifacts, intermediate channel-visible work, approvals, and handoff decisions as application state outside the model transcript.
 - Persist declarative action state, checkpoints, human-input requests, telemetry hooks, REPL histories, memories, subagent specs, recovery state, resource accounting, and verification records outside the model transcript for long-running harnesses.
+- Persist content-exclusion policy, model default, conversation branch, prompt timeline, collaboration surface, permission mode, UI resource boundary, approval state, and authoritative action result when agent work crosses desktop, CLI, chat, or application surfaces.
 
 ## Authoritative Sources
 
@@ -81,6 +84,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -118,3 +123,4 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Maintained on 2026-08-20 with embedded human-agent workflow state for channel context, permissions, private-context exclusion, draft artifacts, and human accept or redirect decisions.
 - Maintained on 2026-08-21 with durable-goal, event-subscription, steering-state, orchestration-artifact, intermediate-work, approval, and handoff state guidance.
 - Maintained on 2026-08-27 with declarative workflow, checkpoint, human-input, telemetry, persistent REPL, memory, subagent, recovery, resource-accounting, and verification state guidance.
+- Maintained on 2026-09-02 with content-exclusion, managed-model, conversation-branch, prompt-timeline, collaboration-surface, permission-mode, UI-resource, approval, and authoritative-action-result state.

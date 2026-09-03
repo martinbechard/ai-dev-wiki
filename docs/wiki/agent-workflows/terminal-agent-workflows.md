@@ -31,6 +31,8 @@ The [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-de
 
 The August 27 raw sources add prototype-first and runtime-control signals. The [leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) records cloud-agent sessions that can start before a connected third-party repository exists, create a repository in the background, expose browser previews, and publish through a connected deployment account. The [topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json) records coding-agent runtime control changes. Locally, terminal and cloud-agent workflows should distinguish prototype-first sessions from repository-bound implementation sessions and preserve when SCM ownership, preview evidence, publishing authority, and CLI or runtime settings became binding.
 
+The September 2 raw sources add governed context, session-continuity, and destructive-operation evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records Copilot app and CLI content exclusions, managed model defaults, side conversations, prompt timelines, session continuation, shared collaboration sessions, and runtime permission controls. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop agents working across apps and a destructive cleanup incident. Locally, terminal workflows should preserve excluded-path boundaries, model route policy, session lineage, collaboration surface, runtime mode, permission defaults, and fixture or sandbox evidence before command-capable work continues.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -44,6 +46,7 @@ The August 27 raw sources add prototype-first and runtime-control signals. The [
 - Record prebuilt environment version, last-successful-build fallback, commit SHA, build logs, queued command state, prior-work-history source, and provider-status checks when terminal agents run in hosted or cloud workspaces.
 - Record event wake source, durable goal, steering event, repo scope, PR context, and source-host integration when terminal-agent work crosses into managed cloud or code-hosting surfaces.
 - Record the transition from prototype-first cloud work to repository-bound implementation, including created repository, source owner, preview URL evidence, deployment account, publishing approval, and runtime-control settings.
+- Record excluded-source boundaries, managed model route, side-conversation lineage, prompt timeline, collaboration channel, permission default, and sandbox fixture evidence when terminal or desktop-agent sessions can execute commands.
 
 ## Authoritative Sources
 
@@ -62,6 +65,8 @@ The August 27 raw sources add prototype-first and runtime-control signals. The [
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -95,3 +100,4 @@ The August 27 raw sources add prototype-first and runtime-control signals. The [
 - Maintained on 2026-08-14 with prebuilt environment, build-fallback, commit-SHA, build-log, queued-command, prior-work-history, and hosted-status evidence.
 - Maintained on 2026-08-21 with event-wake, durable-goal, steering, repo-scope, PR-context, and source-host integration evidence.
 - Maintained on 2026-08-27 with prototype-first cloud-agent sessions, repository creation, preview, publishing, SCM ownership, and runtime-control evidence.
+- Maintained on 2026-09-02 with content-exclusion, managed-model-route, session-lineage, collaboration-surface, runtime-permission, desktop-agent, and destructive-operation containment evidence.

@@ -47,6 +47,8 @@ The August 14 topic collector adds context-architecture evidence from enterprise
 
 The August 17 raw sources add convention-capture, compression, and auditability evidence. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records context files for repository conventions and output compression for tool-heavy agents; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records persistent memory, local-session compliance records, coding-agent security boundaries, and prompt-cache or token evidence. Locally, context selection should keep test-runner policy, dependency policy, architectural conventions, memory, compressed outputs, and exact originals as separate labeled context surfaces so cost reduction does not erase replay, audit, or security evidence.
 
+The September 2 raw sources add content-exclusion and session-branch evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records Copilot content exclusions in app and CLI agentic workflows plus side conversations, prompt timelines, transcript search, and external session continuation. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop-agent workflows that can cross applications. Locally, context selection should preserve which paths were excluded, which conversation branch or timeline supplied context, and which external session state was resumed before an agent acts.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -84,6 +86,7 @@ The August 17 raw sources add convention-capture, compression, and auditability 
 - Define trust ranking, conflict handling, compaction thresholds, response runway, and recent-context retention before relying on enterprise knowledge stores or long coding-agent windows.
 - Benchmark tool-heavy context strategies against representative workflows, including token shifts, sandbox boundaries, and failure modes, before replacing schema-in-context discovery with generated code execution.
 - Keep repository convention files, compressed tool outputs, persistent memory, local-session transcripts, and exact source originals separately labeled when they can affect audit, replay, security review, or cost analysis.
+- Preserve content-exclusion policy, excluded path evidence, conversation branch, prompt timeline, transcript-search result, and resumed external-session state when those surfaces decide what an agent sees.
 
 ## Authoritative Sources
 
@@ -118,6 +121,8 @@ The August 17 raw sources add convention-capture, compression, and auditability 
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -162,3 +167,4 @@ The August 17 raw sources add convention-capture, compression, and auditability 
 - Maintained on 2026-08-11 with persistent memory, context compaction, prompt-cache, progressive-tool, sandbox-state, and approval-controlled request evidence.
 - Maintained on 2026-08-14 with trust-ranked enterprise context, conflict handling, response-runway compaction, keep-recent retention, and tool-schema exposure guidance.
 - Maintained on 2026-08-17 with convention-capture, output-compression, memory, transcript, prompt-cache, and exact-original audit guidance.
+- Maintained on 2026-09-02 with content-exclusion, excluded-path, conversation-branch, prompt-timeline, transcript-search, external-session-continuation, and desktop-agent context evidence.

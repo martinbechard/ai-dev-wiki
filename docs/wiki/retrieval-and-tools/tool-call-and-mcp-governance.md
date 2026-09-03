@@ -87,6 +87,8 @@ The August 31 raw sources add runtime policy and indirect-injection evidence for
 
 The September 1 raw sources add explicit tool-surface and approval-policy evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records browser automation moving to a default CLI mode, with MCP browser control requiring an explicit command, arguments, pinned package version, and allowed tool list. The same source records approval-policy behavior for Node REPL metadata. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records code-review approvals and managed plugin settings. Locally, tool governance should prefer narrow visible tool surfaces by default and require explicit configuration evidence when persistent MCP state or richer introspection is needed.
 
+The September 2 raw sources add audit-trail and agent-application boundary evidence. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records tool-call log fields for call ID, session, actor, tool, arguments, result, authentication, policy decision, request metadata, outcome, and storage expectations, plus per-assistant grants for traceable writes. It also records an application pattern that separates MCP tool execution, A2A communication, A2UI host-rendered interfaces, sandboxed MCP Apps resources, human approval, and database-held transaction authority. Broad protocol and vendor details stay upstream-owned; locally, these are tool-governance evidence fields and control-boundary checks.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -166,10 +168,13 @@ The September 1 raw sources add explicit tool-surface and approval-policy eviden
 - Separate untrusted retrieval tools from authenticated state-changing tools, preserve argument provenance, and require confirmation when retrieved content proposes new destinations, installs, destructive actions, spend, or scope expansion.
 - Monitor tool-call chains across prompts, responses, commands, data movement, and follow-up instructions so policy decisions can catch unsafe intent that is invisible in one isolated call.
 - Prefer narrow CLI tool surfaces by default; require explicit MCP command, arguments, version pin, allowed-tool list, persistent-state reason, and approval-policy metadata when richer tool access is enabled.
+- Preserve call ID, session, actor, tool, arguments, authentication, policy decision, result state, request metadata, outcome, and storage location for governed tool calls.
+- Separate tool execution, inter-agent communication, host-rendered UI, sandboxed app resources, human approval, and authoritative transaction state when MCP-style applications can write or commit changes.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
@@ -265,6 +270,7 @@ The September 1 raw sources add explicit tool-surface and approval-policy eviden
 
 - Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
 - Maintained on 2026-09-01 with CLI-first browser tooling, explicit MCP configuration, package-version pinning, allowed-tool lists, Node REPL approval policy, code-review approval, and managed-plugin evidence.
+- Maintained on 2026-09-02 with tool-call audit fields, per-assistant grant evidence, MCP/A2A/A2UI/MCP Apps boundary separation, approval handoff, and transaction-authority evidence.
 - Maintained on 2026-08-29 with cross-surface MCP, central authentication, trust-boundary, high-impact tool, safety-eval, and per-hop audit evidence.
 - Maintained on 2026-08-15 with self-hosted egress, runtime gateways, budgets, rate limits, guardrails, action controls, component identity, skill-install provenance, memory writes, and unified tracing.
 - Maintained on 2026-08-18 with MCP directionality, process receipts, context-boundary, managed-plugin, and A2A/MCP separation signals.

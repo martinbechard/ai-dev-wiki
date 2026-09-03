@@ -21,6 +21,8 @@ The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-
 
 The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json) adds PR-repair delegation signals from mobile and cloud-agent flows. The local loop can accept an agent handoff for merge conflicts, failing workflows, review comments, tests, or follow-up changes only when the returned diff is reviewable and the verification evidence is carried back into the same inspect, patch, and verify cycle.
 
+The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds a time-boxed loop practice. Before an agent loop starts, the request package should state acceptance criteria, test-suite fit, and rollback path; during execution, the operator should stop or re-scope when the loop produces retries without new evidence. Stability after shipped changes and review round trips are stronger outcome measures than accepted suggestions.
+
 ## Practice Boundaries
 
 - Orient from repository state, procedures, and existing wiki pages before proposing changes.
@@ -33,6 +35,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Link workflow strategy decisions to [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md).
 - Choose the next inspect, refine, verify, or stop step according to uncertainty, change risk, and verification cost.
 - Treat delegated PR repair as another pass through the loop: inspect the conflict or failure, patch narrowly, run the relevant checks, and report reviewable evidence before merge.
+- Time-box agent loops with acceptance criteria, test-suite fit, rollback path, retry limits, and outcome measures based on shipped stability and review round trips.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - [federation.md](../federation.md)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -71,3 +75,4 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 - Split on 2026-06-23 so RPI lifecycle, use-compose-build selection, subagent coordination, and handoffs live in durable leaf pages.
 - Maintained on 2026-06-28 with cost-sensitive evidence gathering, refinement, verification, and stop decisions.
 - Maintained on 2026-07-08 with delegated PR repair loops for conflicts, failing workflows, review comments, tests, and follow-up changes.
+- Maintained on 2026-09-02 with time-boxed agent loops, acceptance criteria, test-suite fit, rollback paths, retry limits, shipped-stability, and review-round-trip outcome measures.

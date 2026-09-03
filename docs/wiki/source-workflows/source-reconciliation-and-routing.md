@@ -52,6 +52,8 @@ The August 14 raw sources keep broad ecosystem entities upstream-owned. [GitHub 
 
 The August 27 raw sources keep broad ecosystem entities upstream-owned. GitHub, [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), Cursor, Vercel, Microsoft Agent Framework, MCP, River, Terminal-Bench, Prime Agent, Apodex, Codex CLI, Harness, Semgrep, Visual Studio Code, OpenAI, and related companies, products, frameworks, protocols, benchmarks, and developer tools remain upstream-owned. Local pages keep only downstream practice implications for governed custom MCP use, repository-owned review instructions, bot-authored PR review evidence, prototype-first repository creation, declarative workflow artifacts, harness state, file-world validation, verifier quality, production judge calibration, repository readiness, and security-review gates.
 
+The September 2 raw sources keep broad ecosystem entities upstream-owned. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [GitHub CLI](../../../upstream-ai-wiki/developer-tools/index.md), [OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md), [Anthropic](../../../upstream-ai-wiki/companies/anthropic.md), [Oracle](../../../upstream-ai-wiki/companies/oracle.md), [Model Context Protocol](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md), A2A, A2UI, MCP Apps, OAuth, standards, models, and company details remain upstream-owned. The downstream ingest keeps practice implications from the [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) and [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json): context-exclusion policy, model-default governance, delegated review authority, assistant-specific grants, audit trails, time-boxed loops, destructive-action containment, and agent application control boundaries.
+
 Earlier July routing details retained below:
 
 Upstream routing:
@@ -93,6 +95,7 @@ Local routing:
 - Route July 31 company, product, protocol, developer-tool, benchmark, formal-method, and vendor-positioned infrastructure entities upstream while retaining local practice for MCP authorization, governance, telemetry, workflow routing, harness state, runtime traces, verification, environment readiness, and embedded execution teams.
 - Route August 14 company, model, product, protocol, MCP, security-framework, incident, and analyst entities upstream while retaining local practice for plugin supervision, model policy, context architecture, compaction, approval gates, tool discovery, status handling, environment provenance, prior-work reconstruction, incident evidence, repository/tool trust, and behavior baselines.
 - Route August 27 company, product, framework, protocol, benchmark, developer-tool, and security-vendor entities upstream while retaining local practice for MCP governance, review instructions, PR review evidence, repository creation, workflow artifacts, harness state, file validation, verifier quality, judge calibration, repository readiness, and security gates.
+- Route September 2 company, product, model, protocol, standard, and developer-tool entities upstream while retaining local practice for context exclusions, model defaults, delegated review authority, assistant grants, audit trails, time-boxed loops, destructive-action containment, and agent application boundaries.
 
 ## Authoritative Sources
 
@@ -135,6 +138,8 @@ Local routing:
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 
 ## Related Code
 
@@ -185,3 +190,4 @@ Local routing:
 - Maintained on 2026-07-31 with upstream routing for company, product, protocol, developer-tool, benchmark, formal-method, and vendor-positioned infrastructure entities while retaining local practice implications.
 - Maintained on 2026-08-14 with upstream routing for company, model, product, protocol, MCP, security-framework, incident, and analyst entities while retaining local practice implications.
 - Maintained on 2026-08-27 with upstream routing for company, product, framework, protocol, benchmark, developer-tool, and security-vendor entities while retaining local practice implications.
+- Maintained on 2026-09-02 with upstream routing for Copilot, Codex, Claude, Oracle, MCP, A2A, A2UI, OAuth, standards, models, and company coverage while retaining downstream practice implications.

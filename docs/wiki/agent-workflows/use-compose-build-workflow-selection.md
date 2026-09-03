@@ -23,6 +23,8 @@ The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-d
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds execution-boundary selection evidence. Local terminal agents, managed worktrees, cloud coding agents, repository-native agents, browser-agent infrastructure, and persistent workspaces should be compared by where files, credentials, tools, approvals, review loops, reproducible setup, and durable state live before deciding whether to use, compose, or build.
 
+The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) adds managed-model and reasoning-effort selection evidence. When an enterprise can set team-specific default models, expose model capability and cost views, or configure thinking effort as a run parameter, workflow selection should distinguish individual model choice from governed defaults, exception policy, retention review, and cost-performance evidence. Broad model and product details stay upstream-owned.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -34,6 +36,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Treat self-hosted and local execution as build choices that need utilization, staffing, latency, telemetry, and governance justification.
 - Choose compose or build when the workflow needs local control over identity, context routing, verification, audit, cost attribution, programmatic tool execution, or domain-owned service boundaries.
 - Choose the execution boundary before the branded tool when file locality, credential custody, approval timing, review loop, reproducible setup, or durable workspace state drives the workflow.
+- Treat managed default models, team overrides, retention-gated enablement, reasoning-effort controls, and cost/capability views as workflow-selection inputs rather than prompt-time preferences.
 
 ## Authoritative Sources
 
@@ -45,6 +48,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 
 ## Related Code
 
@@ -76,3 +80,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Maintained on 2026-06-27 with hosting and local-execution choices as per-workflow build decisions.
 - Maintained on 2026-07-14 with shared governance, observability, model routing, reusable agent patterns, programmatic tools, and domain-owned MCP service boundaries as compose-or-build inputs.
 - Maintained on 2026-07-27 with execution-boundary selection for local, managed-worktree, cloud, repository-native, browser-agent, and persistent workspace choices.
+- Maintained on 2026-09-02 with managed default models, team overrides, retention-gated enablement, reasoning-effort, and cost/capability selection evidence.

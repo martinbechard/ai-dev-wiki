@@ -50,6 +50,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) adds AI pull-request approval evidence. Copilot code review approvals are policy-gated, can be enabled at enterprise, organization, or repository scope, can be restricted to allowed file paths, and are dismissed after new commits. Locally, AI approval evidence should record enablement scope, allowed paths, merge-rule relationship, stale-approval invalidation, and the human or admin decision that made the approval signal admissible.
 
+The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds per-assistant OAuth and audit evidence. Sharing one token across multiple assistants collapses attribution for writes, so the local approval package should record the assistant-specific grant, requester, target resource, write class, consent screen or policy decision, and audit trail that proves which assistant acted.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -78,11 +80,13 @@ The [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-
 - Treat IDE coding-agent custom MCP servers as governed development infrastructure, with server registration, credential custody, tool scope, workspace policy, and approval evidence captured before use.
 - Treat MCP servers, plugins, skills, gateways, and agent registries as linked authorization surfaces whose capability metadata, identity, budget, telemetry, approval, and revocation records must agree.
 - Treat AI-generated pull-request approvals as scoped authorization evidence only when enablement scope, allowed paths, merge-rule use, stale-approval invalidation, and admin ownership are recorded.
+- Prefer assistant-specific grants over shared tokens when multiple agents can write through the same external service, and preserve the consent or policy evidence that binds each grant to the acting assistant.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
@@ -128,6 +132,7 @@ The [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-
 ## Maintenance Notes
 
 - Maintained on 2026-09-01 with AI pull-request approval enablement, allowed-path scope, merge-rule, stale-approval invalidation, and admin-decision evidence.
+- Maintained on 2026-09-02 with assistant-specific OAuth grants, write attribution, consent evidence, and per-assistant audit trails.
 - Maintained on 2026-08-29 with managed MCP, skill, plugin, gateway, registry, identity-propagation, budget-policy, telemetry, and revocation evidence.
 - Created on 2026-07-30 from public evidence about MCP resource scoping, read/write capability separation, sandbox permission classes, and approval-to-execution payload matching.
 - Maintained on 2026-07-31 with MCP registration review, runtime blocking, declared-tool snapshots, OAuth token scoping, callback-domain allow lists, and tool-schema evaluation boundaries.
