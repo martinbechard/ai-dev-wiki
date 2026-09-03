@@ -1,0 +1,573 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-09-03T01:01:49Z",
+    "rule": "Only direct visible publication or update dates within the last 7 days; no snippets, crawl dates, future dates, ambiguous dates, or boundary-only date-only evidence.",
+    "start_utc": "2026-08-27T01:01:49Z"
+  },
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "candidate_summary": "Cursor changelog described self-hosted cloud agents running on external infrastructure and computer use on Linux/Mac.",
+      "exclusion_reason": "Boundary-only date at the start of the 7-day window; visible date lacks time, so it could fall before 2026-08-27T01:01:49Z.",
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "2026-08-27"
+    },
+    {
+      "candidate_summary": "Cursor changelog described browser live preview, publish-to-Vercel, custom modes, steering, repository sync, app extensions, and build history.",
+      "exclusion_reason": "Outside the 7-day cutoff window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "2026-08-19"
+    },
+    {
+      "candidate_summary": "Oracle AI Agent Studio CLI supports local artifact development, validation, debugging, testing, and Codex/Claude Code assisted editing.",
+      "exclusion_reason": "No direct visible publication or update date on fetched source page.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "source_url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "visible_date": "unknown"
+    },
+    {
+      "candidate_summary": "Oracle APEXlang in VS Code documentation covers export, validation, editing, import, and proactive error surfacing.",
+      "exclusion_reason": "No direct visible publication or update date on fetched source page.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "visible_date": "unknown"
+    },
+    {
+      "candidate_summary": "Oracle SQLcl APEXlang documentation covers generate, export, validate, and import commands.",
+      "exclusion_reason": "No direct visible publication or update date on fetched source page.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "source_url": "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "visible_date": "unknown"
+    },
+    {
+      "candidate_summary": "Axios reported a broad Meta model/product release for coding and agentic tasks.",
+      "exclusion_reason": "Broad ecosystem model/company update owned by upstream AI wiki; no selected local-practice implication specific enough for this downstream batch.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "source_url": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues",
+      "visible_date": "2026-09-02"
+    },
+    {
+      "candidate_summary": "ArXiv paper on building terminal AI coding agents is relevant to terminal workflow leaves.",
+      "exclusion_reason": "Publication date is outside the 7-day cutoff window; crawl date is not accepted as update evidence.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://arxiv.org/html/2603.05344v1",
+      "visible_date": "2026-03-05"
+    },
+    {
+      "candidate_summary": "Winder.AI comparison of AI agent harnesses is relevant to harness components.",
+      "exclusion_reason": "Visible publication date is outside the 7-day cutoff window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://winder.ai/ai-agent-harness-comparison/",
+      "visible_date": "2026-08-20"
+    },
+    {
+      "candidate_summary": "Veracode GenAI code security report covers vulnerability rates in AI-generated code.",
+      "exclusion_reason": "Visible publication date is outside the 7-day cutoff window.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "source_url": "https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/",
+      "visible_date": "2026-07-28"
+    }
+  ],
+  "federation_routing": "Broad ecosystem entities such as vendors, products, models, frameworks, standards, CVEs, and IDEs remain upstream-owned by the AI wiki. This artifact preserves only downstream local-practice implications for selected leaves.",
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/source-workflows/automated-update-feeds.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/leaf-update-watch.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "note": "Review qualifying updates that reference this leaf before any future ingest; keep broad entity background upstream and ingest only local practice implications."
+    }
+  ],
+  "leaf_universe_count": 93,
+  "qualifying_update_count": 11,
+  "qualifying_updates": [
+    {
+      "date_basis": "GitHub Changelog visible publication date, September 2, 2026",
+      "factual_summary": "GitHub made Copilot content exclusions generally available in the Copilot app and Copilot CLI for Business and Enterprise customers, so configured enterprise, organization, and repository exclusions are respected when agentic workflows choose context.",
+      "id": "github-copilot-content-exclusions-app-cli-ga-2026-09-02",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "content exclusion policies",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-02",
+      "why_it_matters_for_leaf": "Selected source-workflow and reconciliation leaves should treat public-source scanning, clipping, and agent runs as context-boundary sensitive: excluded files are now a vendor-enforced control in more Copilot surfaces, not only an IDE convention."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, September 2, 2026",
+      "factual_summary": "GitHub added enterprise-managed settings for default Copilot models, including team-specific defaults through managed configuration files, across the Copilot app, Copilot CLI, and VS Code for Business and Enterprise plans.",
+      "id": "github-copilot-enterprise-managed-default-models-2026-09-02",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "Copilot app",
+        "Copilot CLI",
+        "Visual Studio Code"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "visible_date": "2026-09-02",
+      "why_it_matters_for_leaf": "Workflow-selection leaves should capture that model choice can now be a governed default by team instead of an individual prompt-time choice, affecting repeatability, auditability, and cost/performance routing."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, September 1, 2026",
+      "factual_summary": "GitHub Copilot code review now emits approval assessments and can submit pull-request approvals when administrators enable the public-preview feature at enterprise, organization, or repository level; Copilot approvals are off by default and can be scoped by file path.",
+      "id": "github-copilot-code-review-approvals-preview-2026-09-01",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "pull request approvals",
+        "required approvals",
+        "enterprise administrators",
+        "repository administrators"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "Security-repair and delegated-authority leaves need to distinguish advisory assessments from merge-counting approvals, and record that path-scoped delegated review authority is becoming an explicit vendor control."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, September 1, 2026",
+      "factual_summary": "GitHub made Anthropic Claude Fable 5.1 available in Copilot for long-horizon autonomous coding and knowledge-work tasks, with the model policy off by default for Business and Enterprise administrators and data retention required by default for safety classifiers except for eligible zero-retention exemptions.",
+      "id": "github-claude-fable-5-1-copilot-data-retention-2026-09-01",
+      "named_entities": [
+        "Claude Fable 5.1",
+        "Anthropic",
+        "GitHub Copilot",
+        "Enterprise Frontier Safeguards",
+        "zero data retention"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "upstream_owned_entities": [
+        "Claude Fable 5.1",
+        "Anthropic",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "Terminal-agent and workflow-selection guidance should route model enablement through governance checks because retention, safety classifier operation, eligibility, and long-running task fit now vary by model policy."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, August 31, 2026",
+      "factual_summary": "GitHub summarized August VS Code agent releases covering side-by-side chat organization, side conversations, prompt timeline navigation, portable agent plugins, continuation of external Copilot or Claude sessions, multi-window Agent Host sessions, second-opinion review commands, transcript search, terminal-output reflow, model token usage, browser element comments, and project-specific dictation cleanup.",
+      "id": "github-copilot-vscode-agent-session-workflows-2026-08-31",
+      "named_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Agent Host",
+        "Claude",
+        "agent plugins",
+        "Copilot sessions"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Claude"
+      ],
+      "visible_date": "2026-08-31",
+      "why_it_matters_for_leaf": "Terminal-workflow and harness leaves should treat session continuity, side conversations, prompt timelines, portable plugins, and usage visibility as first-class workflow state, not only UI conveniences."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, August 28, 2026",
+      "factual_summary": "GitHub weekly Copilot releases added shared agent sessions in Slack and Teams, a Customize tab combining MCP servers, plugins, skills, and canvases, Azure DevOps-to-session entry points, WSL support, split tabs, default CLI execution and permission modes, plugin/MCP/skill management, interrupted-session restore, Rust runtime performance, and enterprise controls for JetBrains plugins, MCP servers, telemetry, and permission modes.",
+      "id": "github-copilot-weekly-agent-controls-2026-08-28",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "MCP servers",
+        "agent skills",
+        "Azure DevOps",
+        "WSL",
+        "Copilot CLI",
+        "JetBrains"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "MCP",
+        "Azure DevOps",
+        "JetBrains"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Source and application workflow leaves should record that agent controls are spreading across collaboration surfaces, CLI defaults, and IDE policy, which affects repeatable handoffs and permission-mode selection."
+    },
+    {
+      "date_basis": "GitHub Changelog visible publication date, August 28, 2026",
+      "factual_summary": "The Visual Studio Copilot August update added organization-level custom agents, usage visibility, thinking-effort controls, model management with capability and cost views, and Git-agent review of uncommitted changes or commits with inline findings before pull requests.",
+      "id": "github-copilot-visual-studio-custom-agents-git-review-2026-08-28",
+      "named_entities": [
+        "GitHub Copilot for Visual Studio",
+        "Git agent",
+        "custom agents",
+        "Azure DevOps",
+        "model thinking effort"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio",
+        "Azure DevOps"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Harness and security-repair leaves should recognize pre-PR review as a local gate pattern, and workflow-selection leaves should include reasoning-effort and model-cost controls as explicit run parameters."
+    },
+    {
+      "date_basis": "TechRadar visible publication date, September 1, 2026",
+      "factual_summary": "TechRadar argued that autonomous agents running in infrastructure expose gaps in human/machine IAM assumptions and recommended first-class cryptographic identities, no static credentials, short-lived action-scoped privileges, containment, and identity policy enforcement before execution.",
+      "id": "techradar-ai-production-identity-control-plane-2026-09-01",
+      "named_entities": [
+        "Teleport",
+        "AI agents",
+        "zero trust",
+        "static credentials",
+        "short-lived privileges",
+        "identity policy"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/overcoming-the-biggest-blocker-to-ai-production",
+      "upstream_owned_entities": [
+        "AI agents",
+        "zero trust"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "The delegated-authority and AI process-state leaves should frame agent execution as identity-bound workflow state with action-scoped authorization rather than generic service access."
+    },
+    {
+      "date_basis": "Express Computer visible publication date, August 31, 2026",
+      "factual_summary": "Express Computer described agentic decisions as multi-step tool-call loops where governance attaches to policy gates and logs, with liability remaining with the deploying organization under existing regulatory regimes; recommended controls include agent registers, scoped identities, autonomy limits, kill switches, decision traceability, and change management.",
+      "id": "expresscomputer-agent-decision-ownership-2026-08-31",
+      "named_entities": [
+        "DPDP Act",
+        "IT Act",
+        "RBI",
+        "SEBI",
+        "IRDAI",
+        "agent registers",
+        "kill switches",
+        "decision traceability"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "source_url": "https://www.expresscomputer.in/guest-blogs/your-ai-agent-has-just-made-a-decision-who-owns-it/138183/",
+      "upstream_owned_entities": [
+        "DPDP Act",
+        "EU AI Act"
+      ],
+      "visible_date": "2026-08-31",
+      "why_it_matters_for_leaf": "Delegated-authority and workflow-state pages should preserve named human or organizational accountability, decision traceability, and gate/log placement when describing autonomous development agents."
+    },
+    {
+      "date_basis": "ITPro visible publication date, September 1, 2026",
+      "factual_summary": "ITPro reported Forescout Vedere Labs used Claude Code and later Claude Opus 4.6 with analysis tools and a live PLC to port a WAGO PLC RCE exploit for CVE-2021-31886; the work still required human expertise and steering but produced working payloads and showed AI can lower barriers to exploit development.",
+      "id": "itpro-ai-assisted-plc-exploit-development-2026-09-01",
+      "named_entities": [
+        "Forescout Vedere Labs",
+        "Claude Code",
+        "Claude Opus 4.6",
+        "WAGO PLC",
+        "CVE-2021-31886",
+        "Ghidra",
+        "Nucleus FTP server"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "source_url": "https://www.itpro.com/security/cyber-attacks/security-researchers-warn-of-ai-powered-plc-attacks-in-wake-of-siemens-advisories",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Claude Opus 4.6",
+        "CVE-2021-31886",
+        "Ghidra"
+      ],
+      "visible_date": "2026-09-01",
+      "why_it_matters_for_leaf": "AI-assisted security-repair gates should distinguish defensive repair from exploit enablement, require constrained tooling and human review around vulnerability work, and document when model/tool access materially changes risk."
+    },
+    {
+      "date_basis": "Tom's Hardware visible publication date, August 28, 2026",
+      "factual_summary": "Tom's Hardware reported a developer lost a 700 GB home directory after Claude tested deletion safeguards for an agent cleanup script; the report attributes the failure to an adversarial safety-check path, model downgrade, and variable-name reuse during cleanup.",
+      "id": "tomshardware-claude-agent-deletion-safeguard-failure-2026-08-28",
+      "named_entities": [
+        "Claude",
+        "Claude Fable",
+        "Claude Opus 4.8",
+        "Sebastien Guillemot",
+        "/tmp",
+        "home directory"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+      "upstream_owned_entities": [
+        "Claude",
+        "Anthropic",
+        "Claude Fable",
+        "Claude Opus 4.8"
+      ],
+      "visible_date": "2026-08-28",
+      "why_it_matters_for_leaf": "Terminal workflow, raw monitor, and harness pages should treat destructive file operations as requiring isolated test fixtures, non-home-directory sandboxes, explicit variable isolation, backup/recovery assumptions, and constrained cleanup permissions."
+    }
+  ],
+  "run_timestamp_local": "2026-09-02T21:01:49-0400",
+  "run_timestamp_utc": "2026-09-03T01:01:49Z",
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+  ],
+  "selected_leaves": [
+    {
+      "leaf_id": "docs/wiki/source-workflows/automated-update-feeds.md",
+      "title": "Automated Update Feeds"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "title": "Clipping And Raw Intake"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/leaf-update-watch.md",
+      "title": "Leaf Update Watch"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "title": "Terminal Agent Workflows"
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "title": "Use Compose Build Workflow Selection"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "title": "Agent Harness Components"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "title": "AI Process Layer And Workflow State"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "title": "Application Harness Patterns"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "title": "Declarative Agent Workflow Artifacts"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "title": "File-Oriented Enterprise Builder Workflows"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "title": "Agent Identity And Delegated Authority"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "title": "AI Assisted Security Repair Gates"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/public-topic-news-collector.md",
+      "title": "Public Topic News Collector"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+      "title": "Raw Project-Wiki Monitor"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+      "title": "Source Reconciliation And Routing"
+    }
+  ],
+  "selection_policy": "New or previously unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+    "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+    "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+    "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+    "https://github.blog/changelog/2026-08-31-github-copilot-in-vs-code-august-2026-releases/",
+    "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated/",
+    "https://github.blog/changelog/2026-08-28-github-copilot-weekly-releases-august-24/",
+    "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+    "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+    "https://www.techradar.com/pro/overcoming-the-biggest-blocker-to-ai-production",
+    "https://www.expresscomputer.in/guest-blogs/your-ai-agent-has-just-made-a-decision-who-owns-it/138183/",
+    "https://www.itpro.com/security/cyber-attacks/security-researchers-warn-of-ai-powered-plc-attacks-in-wake-of-siemens-advisories",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/claude-nukes-a-developers-700-gb-home-directory-while-testing-a-script-to-ensure-it-wouldnt-do-so-automatic-model-downgrade-may-have-contributed-to-the-screw-up",
+    "https://cursor.com/changelog",
+    "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+    "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues",
+    "https://arxiv.org/html/2603.05344v1",
+    "https://winder.ai/ai-agent-harness-comparison/",
+    "https://www.ox.security/blog/ai-code-security/",
+    "https://www.veracode.com/blog/2026-genai-code-security-report-ai-risk/"
+  ]
+}
