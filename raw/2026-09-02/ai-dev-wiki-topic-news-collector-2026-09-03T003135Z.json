@@ -1,0 +1,433 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-03T00:31:35Z",
+  "run_timestamp_local": "2026-09-02T20:31:35-0400",
+  "cutoff_window": {
+    "relative_window": "last 2 days relative to run time",
+    "start_utc": "2026-09-01T00:31:35Z",
+    "end_utc": "2026-09-03T00:31:35Z",
+    "date_policy": "Accepted direct visible publication or update dates inside the window. Excluded missing, ambiguous, stale, future-dated, crawl-only, and boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_scope": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rules_source": "docs/wiki/federation.md",
+    "downstream_owned_scope": "AI-assisted development practice, workflow, governance, verification, evaluation, adoption, implementation, and operating-model implications.",
+    "upstream_owned_scope": "Broad AI companies, products, models, developer tools, agentic frameworks, MCP servers, and general techniques."
+  },
+  "qualifying_findings": [
+    {
+      "title": "GitHub Copilot content exclusions reach app and CLI agentic workflows",
+      "source_url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "governance-and-risk",
+        "context-architecture",
+        "retrieval-and-tools"
+      ],
+      "short_factual_summary": "GitHub says the Copilot app and Copilot CLI now respect enterprise, organization, and repository content-exclusion policies so excluded files are not used as context in agentic workflows.",
+      "why_it_matters_for_ai_assisted_development_practice": "Content-exclusion policies are becoming a reusable context-governance control for coding agents, not just editor autocomplete. Local practice should treat excluded paths as a first-class context boundary during source retrieval, agent execution, and audit review.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI"
+      ],
+      "local_practice_implication": "Record as a downstream governance lens for sensitive-source exclusion and context-selection policy."
+    },
+    {
+      "title": "GitHub adds enterprise-managed default model settings for Copilot",
+      "source_url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "governance-and-risk",
+        "adoption-and-operating-model",
+        "prompt-and-instructions"
+      ],
+      "short_factual_summary": "GitHub says Copilot Business and Enterprise administrators can set the default model for new conversations through managed settings and optionally allow enterprise teams to override it through team mappings.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model choice is moving into team-level operating policy. Local adoption guidance should separate default model governance, team exceptions, and user override rights from broad model benchmarking.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "local_practice_implication": "Capture as a managed-settings practice for team-specific assistant defaults and exception handling."
+    },
+    {
+      "title": "GitHub previews Copilot code-review approval authority",
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "coding-practices",
+        "verification-and-evals",
+        "governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub says Copilot can now assess when a pull request is ready to approve, and administrators can authorize Copilot to sign off. The approval feature is off by default and configurable at enterprise, organization, and repository levels.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI review is crossing from advice into delegated review authority. Local review gates should distinguish AI-generated findings, AI readiness assessments, and any configured approval authority from human approval obligations.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "local_practice_implication": "Route to intelligent code review and lifecycle AI review gates as a practice-level authority boundary."
+    },
+    {
+      "title": "GitHub exposes temporary user-budget expiration for Copilot",
+      "source_url": "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "adoption-and-operating-model",
+        "governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub says Copilot Business and Enterprise administrators can set optional expiration dates for individual user budgets, including expiration at the next billing cycle or a specific date.",
+      "why_it_matters_for_ai_assisted_development_practice": "Temporary budget overrides are now governable lifecycle artifacts. Adoption practice can pair pilot access, incident response, onboarding bursts, or role changes with automatic spending cleanup.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Budgets REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Record as an operating-model pattern for time-boxed assistant spend and pilot governance."
+    },
+    {
+      "title": "GitHub CLI supports attaching media to issues and pull requests",
+      "source_url": "https://github.blog/changelog/2026-09-01-github-cli-media-in-issues-pull-requests-and-comments/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "source-workflows",
+        "verification-and-evals",
+        "coding-practices"
+      ],
+      "short_factual_summary": "GitHub says gh v2.99.0 adds a repeatable --attach flag for issue and pull-request commands, supporting images and videos with Markdown references and alt text.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agents can attach screenshots or videos directly when filing bugs, creating PRs, or reporting verification evidence. This strengthens source-ingest and review workflows where visual proof matters.",
+      "named_entities": [
+        "GitHub",
+        "GitHub CLI",
+        "gh"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub CLI"
+      ],
+      "local_practice_implication": "Route to source-workflow and verification evidence patterns, especially frontend and UI regression repair."
+    },
+    {
+      "title": "GitHub adds Claude Fable 5.1 to Copilot with retention policy gates",
+      "source_url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "governance-and-risk",
+        "adoption-and-operating-model",
+        "agent-workflows"
+      ],
+      "short_factual_summary": "GitHub says Claude Fable 5.1 is available in Copilot surfaces for long-horizon coding and knowledge-work tasks. The policy is off by default for Copilot Business and Enterprise administrators, requires data retention by default, and has a time-bound zero-data-retention exemption for eligible enterprises.",
+      "why_it_matters_for_ai_assisted_development_practice": "Long-horizon agent model adoption now carries explicit retention and safety-classifier gates. Local practice should route model availability details upstream while preserving the downstream decision pattern: administrator enablement, retention review, and exception expiry.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Anthropic",
+        "Claude Fable 5.1",
+        "Enterprise Frontier Safeguards"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Anthropic",
+        "Claude Fable 5.1",
+        "Enterprise Frontier Safeguards"
+      ],
+      "local_practice_implication": "Keep only the retention-gated model-enablement practice in this wiki; route model capability details upstream."
+    },
+    {
+      "title": "OpenAI expands Codex desktop workflows beyond code editing",
+      "source_url": "https://openai.com/index/codex-for-almost-everything/",
+      "source_type": "vendor announcement",
+      "visible_date": "September 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "agent-workflows",
+        "application-patterns",
+        "adoption-and-operating-model",
+        "governance-and-risk"
+      ],
+      "short_factual_summary": "OpenAI says Codex desktop can operate apps on a computer, use plugins, generate images, remember preferences, work across developer workflows such as PR review and multi-file or multi-terminal views, and take on ongoing repeatable work.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent workflows are extending into desktop, browser, visual, plugin, memory, and recurring automation surfaces. Downstream coverage should focus on approval boundaries, progress visibility, multi-agent coordination, and local-workstation safety rather than broad Codex product coverage.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT",
+        "gpt-image-1.5"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT",
+        "gpt-image-1.5"
+      ],
+      "local_practice_implication": "Use as evidence for supervised desktop-agent workflows, plugin governance, and recurring task operating rules."
+    },
+    {
+      "title": "Obot publishes practical tool-call audit trail schema",
+      "source_url": "https://obot.ai/blog/what-to-log-when-an-agent-calls-a-tool-ai-agent-audit-trail-schema/",
+      "source_type": "vendor blog/tutorial",
+      "visible_date": "Published: September 1, 2026; Last Updated: September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "retrieval-and-tools",
+        "governance-and-risk",
+        "verification-and-evals"
+      ],
+      "short_factual_summary": "Obot describes an AI agent audit trail schema for tool calls, including call ID, session, actor, tool, arguments, result status, authentication, policy decisions, request metadata, outcomes, and storage expectations.",
+      "why_it_matters_for_ai_assisted_development_practice": "Tool-call logs are being framed as governance evidence rather than chat history. Local MCP practice should preserve delegated authority, policy decision, and result-state evidence for troubleshooting, security review, and compliance.",
+      "named_entities": [
+        "Obot",
+        "MCP",
+        "MCP Gateway",
+        "SOC 2",
+        "HIPAA",
+        "PCI-DSS"
+      ],
+      "upstream_owned_entities": [
+        "Obot",
+        "MCP",
+        "MCP Gateway"
+      ],
+      "local_practice_implication": "Route to tool-call governance and audit-log evidence patterns."
+    },
+    {
+      "title": "GAICC defines agentic AI governance around delegated authority",
+      "source_url": "https://gaicc.org/blog/agentic-ai-governance-guide/",
+      "source_type": "governance guide",
+      "visible_date": "September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "governance-and-risk",
+        "adoption-and-operating-model",
+        "retrieval-and-tools"
+      ],
+      "short_factual_summary": "GAICC frames agentic AI governance as controlling delegated authority, with inventory fields for agent identity, owner, purpose, model, tool scope, data classes, credentials, autonomy tier, oversight mode, review dates, and decommission triggers.",
+      "why_it_matters_for_ai_assisted_development_practice": "The article gives a concrete inventory shape for AI development agents and their tool bindings. Local governance pages can use it as public evidence for treating coding agents as first-class risk assets with lifecycle review.",
+      "named_entities": [
+        "GAICC",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "OWASP Top 10 for Agentic Applications",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "GAICC",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "OWASP Top 10 for Agentic Applications",
+        "MCP"
+      ],
+      "local_practice_implication": "Use as a downstream agent-inventory, autonomy-tier, and review-cadence practice source."
+    },
+    {
+      "title": "Oracle demonstrates governed MCP, A2A, A2UI, and MCP Apps boundaries",
+      "source_url": "https://blogs.oracle.com/developers/develop-a2ui-and-mcp-apps-with-oracle-ai-database-and-the-java-mcp-toolkit-running-in-google-gemini-enterprise-app-chatgpt-and-claude",
+      "source_type": "vendor developer blog",
+      "visible_date": "September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "application-patterns",
+        "retrieval-and-tools",
+        "governance-and-risk",
+        "agent-workflows"
+      ],
+      "short_factual_summary": "Oracle describes a reference architecture where MCP exposes governed database operations, A2A connects host or agent communication, A2UI lets agents declare host-rendered interfaces, MCP Apps provide sandboxed UI resources, and the database retains transaction and audit authority.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a concrete application pattern for separating agent intent, tool execution, UI rendering, human approval, and authoritative transaction state. Local pages should capture the control-boundary pattern and route protocol or product background upstream.",
+      "named_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Oracle Database MCP Java Toolkit",
+        "MCP",
+        "A2A",
+        "A2UI",
+        "MCP Apps",
+        "AG-UI",
+        "Gemini Enterprise",
+        "ChatGPT",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle AI Database",
+        "Oracle Database MCP Java Toolkit",
+        "MCP",
+        "A2A",
+        "A2UI",
+        "MCP Apps",
+        "AG-UI",
+        "Gemini Enterprise",
+        "ChatGPT",
+        "Claude"
+      ],
+      "local_practice_implication": "Route to agent application patterns for explicit execution authority, UI sandboxing, and approval handoff design."
+    },
+    {
+      "title": "Zop argues each AI assistant needs a separate grant and audit trail",
+      "source_url": "https://zop.dev/resources/blogs/oauth-consent-for-ai-assistants-per-assistant-grants",
+      "source_type": "vendor engineering blog",
+      "visible_date": "September 2, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "governance-and-risk",
+        "retrieval-and-tools",
+        "source-workflows"
+      ],
+      "short_factual_summary": "Zop argues that sharing one access token across multiple AI assistants prevents platforms from identifying which assistant performed a write, and says each assistant needs its own grant and traceable audit trail.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent identity should not collapse into a shared token. Local approval and MCP governance guidance can use this as evidence for per-assistant grants, revocation isolation, and write-action attribution.",
+      "named_entities": [
+        "Zop.Dev",
+        "OAuth",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Zop.Dev",
+        "OAuth",
+        "MCP"
+      ],
+      "local_practice_implication": "Route to agent identity, delegated authority, and audit trail practice."
+    },
+    {
+      "title": "Think Different recommends time-boxing AI coding agent loops",
+      "source_url": "https://www.thinkdifferent.blog/blog/ai-coding-workflows-time-boxing-agent-loops-before-they-eat-the-day-2026-09/",
+      "source_type": "independent practitioner blog",
+      "visible_date": "Sep 1, 2026",
+      "visible_date_granularity": "day",
+      "topics": [
+        "agent-workflows",
+        "coding-practices",
+        "verification-and-evals"
+      ],
+      "short_factual_summary": "Jakub Jirak argues that agent loops should be time-boxed and preceded by a short checklist covering acceptance criteria, test-suite fit, and rollback path. The article suggests tracking shipped-change stability and review round trips rather than accepted suggestion counts.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a direct practice update for planning loops and AI-assisted TDD: constrain delegated work by time, explicit success criteria, test relevance, rollback, and outcome metrics.",
+      "named_entities": [
+        "Think Different",
+        "Jakub Jirak"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Route to orient-inspect-patch-verify loops and verification acceptance gates."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Coforge launches AI adoption framework to address barriers to agentic development",
+      "source_url": "https://www.expresscomputer.in/news/coforge-launches-ai-adoption-framework-to-address-barriers-to-agentic-development/138215/",
+      "visible_date": "On Aug 31, 2026",
+      "reason": "Excluded because the visible publication date is outside the strict two-day window for this run.",
+      "routing_note": "Relevant to adoption practice but stale for this collector."
+    },
+    {
+      "title": "Overcoming the biggest blocker to AI production",
+      "source_url": "https://www.techradar.com/pro/overcoming-the-biggest-blocker-to-ai-production",
+      "visible_date": "Published 1 September 2026",
+      "reason": "Excluded because the article is broad agentic infrastructure and identity opinion rather than AI-assisted development-specific practice.",
+      "routing_note": "Could inform governance if a future ingest needs broader agent identity context; much of the entity background is upstream-owned."
+    },
+    {
+      "title": "Pi Coding Agent home page",
+      "source_url": "https://pi.dev/",
+      "visible_date": "No direct visible publication or update date found on the opened page",
+      "reason": "Excluded for missing visible date despite local-practice relevance around extensible harnesses, skills, context engineering, and permission gates.",
+      "routing_note": "If a dated package or changelog page is available, collect that direct source instead."
+    },
+    {
+      "title": "Towards AI publication page",
+      "source_url": "https://pub.towardsai.net/",
+      "visible_date": "Crawled today; no direct qualifying article date on opened page",
+      "reason": "Excluded because the opened page is a publication index and does not provide a direct dated article with specific AI-assisted development practice evidence.",
+      "routing_note": "Search individual articles rather than using the publication landing page."
+    },
+    {
+      "title": "InfoWorld latest-page listing for vibe-coding mistakes",
+      "source_url": "https://www.infoworld.com/",
+      "visible_date": "Sep 2, 2026 on index listing",
+      "reason": "Excluded because the collector saw only the index listing, not the direct article body and URL with full visible publication evidence.",
+      "routing_note": "Revisit if the direct article URL is accessible."
+    },
+    {
+      "title": "Trust3 AI agent discovery guide",
+      "source_url": "https://trust3.ai/learn/agent-discovery/",
+      "visible_date": "Search result said 12 hours ago; opened page did not show a direct publication date",
+      "reason": "Excluded because direct page date evidence was missing; search-result recency alone is not enough.",
+      "routing_note": "Content is relevant to agent inventory and lifecycle discovery if a dated source can be verified."
+    },
+    {
+      "title": "Best Model-Agnostic Coding Agents 2026",
+      "source_url": "https://omidsaffari.com/blog/best-model-agnostic-coding-agents-2026",
+      "visible_date": "Tuesday, September 1, 2026 in search snippet",
+      "reason": "Excluded because the source primarily ranks broad coding-agent products, which are upstream-owned; local practice implications were too thin without relying on product comparisons.",
+      "routing_note": "Route product and tool comparison coverage upstream."
+    },
+    {
+      "title": "AI Agent Governance Is Not Governing People / Arcade homepage",
+      "source_url": "https://www.arcade.dev/",
+      "visible_date": "Search result said 19 hours ago; opened result resolved to a marketing homepage without direct publication date",
+      "reason": "Excluded for ambiguous direct date and insufficient article-level source evidence.",
+      "routing_note": "Search for a dated Arcade blog or changelog page before ingest."
+    }
+  ],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated; this is a raw collector artifact only.",
+    "No files were saved under raw/processed.",
+    "Future ingest should split product or model facts to upstream-owned ai-wiki coverage and keep only local practice lenses here.",
+    "Likely downstream pages to consider during ingest: governance-and-risk/agent-identity-and-delegated-authority.md, governance-and-risk/sensitive-data-and-supply-chain-controls.md, retrieval-and-tools/tool-call-and-mcp-governance.md, coding-practices/intelligent-code-review.md, verification-and-evals/verification-loops-and-evals.md, source-workflows/source-reconciliation-and-routing.md, and application-patterns/structured-output-and-drafter-patterns.md."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
