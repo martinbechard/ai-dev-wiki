@@ -68,6 +68,11 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - AI review settings should preserve the effort level, repository or organization default, and pre-PR review surface.
 - Code-review quality should not be inferred from one generated comment stream.
 
+The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) source adds fleet-governance and security-repair review evidence:
+
+- The [source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports scoring critic/reviewer independence, sandboxed reproduction, architecture or threat-model evidence, and human-curated vulnerability acceptance.
+- It also separates per-diff reviewer accuracy from repository-fleet governance evidence for quality, security, coverage, policy, and trend enforcement.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -116,10 +121,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Calibrate LLM-as-judge review or secret-scanning evals against production labels, deterministic checks, and human adjudication instead of treating judge fluency as correctness.
 - Keep AI security triage, deterministic scanner results, and human security acceptance as separate eval signals.
 - Preserve review effort, repository or organization default, and pre-PR review surface as separate eval fields.
+- Score sandboxed reproduction, critic/reviewer independence, human-curated acceptance criteria, true-positive filtering, and fleet-level quality or security trends separately from per-diff comment plausibility.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -184,6 +191,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 - Maintained on 2026-08-29 with review-effort defaults and pre-PR review evidence.
 - Maintained on 2026-08-29 with bot-authored PR coverage, large-diff strategy, resolution-label, review-effort, pre-PR review, and reviewer-load eval evidence.
+- Maintained on 2026-09-03 with sandboxed reproduction, critic-reviewer independence, human-curated vulnerability acceptance, true-positive filtering, and fleet-level governance evidence.
 - Maintained on 2026-07-23 with alignment-versus-standards review separation, intent capture, invariant coverage, verifier verdict, provenance, and exploitability rubric fields.
 - Created on 2026-06-23 to hold AI-assisted code review eval and rubric practice.
 - Maintained on 2026-06-25 with cost-quality and retrieval-depth measurements for AI code review.

@@ -21,6 +21,13 @@ The [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds model-harness and workspace-layer evidence. Local runtime decisions should separate the model from the layer that owns memory, business context, token cost, model routing, parallel sessions, worktree isolation, reviewable commits, and persistent artifacts.
 
+The September 3 raw sources add offline-route and local-memory evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) reinforces outbound meters and budget envelopes as runtime controls.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds local embeddings, private sharing defaults, team memory stores, and offline/local inference routes as harness choices.
+
+Locally, local runtime evaluation should still check audit and approval evidence.
+
 ## Practice Boundaries
 
 - Treat local inference as a product harness choice with operational costs, validation needs, and user-visible behavior.
@@ -35,6 +42,7 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Treat agent helpfulness loops as a runtime risk when the agent can install packages, execute scripts, or follow indirect setup instructions.
 - Measure token cost, latency, utilization, security posture, update cadence, and fallback behavior before adopting local or deskside agentic runtimes.
 - Keep hosted fallback and governance routing explicit when local capacity or model coverage cannot satisfy a workflow.
+- Include memory ownership, embedding locality, private sharing defaults, offline fallback, outbound-meter visibility, budget envelope behavior, and audit evidence when evaluating local or deskside runtimes.
 
 ## Authoritative Sources
 
@@ -47,6 +55,8 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -80,3 +90,4 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Maintained on 2026-06-27 with local workstation inference as a latency, support, crash, telemetry, and auditability tradeoff.
 - Maintained on 2026-07-03 with repository trust, setup-command inspection, and local execution gates for agent harnesses.
 - Maintained on 2026-07-24 with local runtime cost, latency, capacity, security, update-cadence, and fallback-evaluation guidance.
+- Maintained on 2026-09-03 with local-memory ownership, embedding locality, private sharing defaults, offline inference routes, outbound meters, budget envelopes, and audit-evidence guidance.

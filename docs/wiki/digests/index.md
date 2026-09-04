@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) includes September 2 practice updates for context policy, model governance, review authority, tool audit, desktop-agent boundaries, destructive-action gates, time-boxed loops, and budget expiry.
+The [current September digest](2026-09.md) includes September 3 practice updates for agent identity, owned memory, tool-call audit, workspace isolation, web-search evaluation, security-repair review, governed deployment, and spend controls.
 
 ## Monthly Digests
 
@@ -90,3 +90,4 @@ The [current September digest](2026-09.md) includes September 2 practice updates
 - Maintained on 2026-08-31 with event-triggered workflow, delegated-handoff, workflow-selection, tier-convention, context-governance, RAG, tool-governance, eval-containment, harness, and adoption-operating digest scope.
 - Maintained on 2026-09-01 with runtime-profile, tool-surface, supervisory-monitor, audit-storage, worktree-isolation, long-running-task, and adoption-policy digest scope.
 - Maintained on 2026-09-02 with context-policy, model-governance, review-authority, media-evidence, tool-audit, desktop-agent, application-boundary, security-gate, loop-timebox, and budget-expiry digest scope.
+- Maintained on 2026-09-03 with agent-identity, owned-memory, tool-call-audit, workspace-isolation, web-search-eval, security-repair-review, governed-deployment, and spend-control digest scope.

@@ -19,6 +19,13 @@ The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-de
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds terminal-agent, harness, and file-world evaluation evidence. Proposed agent solutions should show verifier quality, process traces, behavior regularization or guardrails, checkpoint and recovery behavior, resource accounting, file-world validation, preview evidence, and production-label calibration when those claims affect acceptance.
 
+The September 3 raw sources add web-search, security-repair, and governed-substrate evaluation evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports repeated web-search trials, citation audits, sandboxed vulnerability reproduction, critic/review agents, and human-curated acceptance criteria.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds customer-controlled execution, tool-call audit schemas, and governed deployment paths as substrate evidence.
+
+Locally, technical solution evaluation should vary one tool or substrate at a time and require traceable sandbox or policy evidence before accepting agent-side security or deployment claims.
+
 ## Evaluation Criteria
 
 - Functional and workflow fit: the solution supports the real user journey, decision points, exception handling, and measurable outcome.
@@ -33,6 +40,8 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - Lifecycle cost: build, data work, model use, tools, evaluation, review, monitoring, support, and change costs are visible.
 - Governance evidence: regulated or high-assurance solutions produce data-masking records, prompt-injection verdicts, tool-call policy evidence, signed receipts, and customer-controlled deployment or key-management proof when those claims affect acceptance.
 - Agent execution evidence: terminal or file-world solutions produce verifier-quality evidence, process traces, checkpoint and recovery records, resource accounting, preview evidence, and production-label calibration when those claims affect acceptance.
+- Tool and substrate evaluation: search, extraction, execution, and deployment tools are compared with one variable changed at a time, repeated trials, verified answers, citation audits, trace review, cost, latency, and tool-call counts.
+- Security and deployment-agent evidence: proposed solutions show sandboxed reproduction, critic or reviewer independence, human-curated acceptance criteria, governed credentials, and policy logs before vulnerability repair or deployment claims pass.
 
 ## Knockout Gates
 
@@ -45,6 +54,8 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 - [Technical-solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [Verification loops and evals](verification-loops-and-evals.md)
 - [Representative workflow calibration](representative-workflow-calibration.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
@@ -84,3 +95,4 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 - Created on 2026-08-20 from the technical-solution evaluation query fragment as a durable due-diligence rubric.
 - Maintained on 2026-08-20 with data-masking, prompt-injection verdict, tool-call policy, signed evidence pack, customer-controlled deployment, and key-boundary evaluation artifacts.
 - Maintained on 2026-08-27 with terminal-agent, harness-state, verifier-quality, process-trace, file-world validation, preview, resource-accounting, and production-label calibration evidence.
+- Maintained on 2026-09-03 with web-search repeated-trial methodology, citation audit, sandboxed security reproduction, critic-reviewer independence, governed execution, and tool-substrate evaluation evidence.

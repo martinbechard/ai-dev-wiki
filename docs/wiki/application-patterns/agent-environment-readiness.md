@@ -25,6 +25,11 @@ The August 26 raw sources add operation-scoped and WebMCP readiness evidence. Th
 
 The September 1 raw sources add runtime-profile and worktree-readiness evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records named sandbox runtime profiles, migration fixers that avoid changing security intent, default no-sudo isolated-network Docker behavior, explicit gVisor or hypervisor isolation choices, and pre-run sandbox/network validation practices. The same source records worktree-aware run configurations and policy-aware model selection for IDE agents. Locally, environment readiness should require named runtime intent, migration evidence, runnable worktree configuration, model-policy eligibility, and boundary monitors before a coding agent starts.
 
+The September 3 [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds customer-controlled execution and worktree isolation evidence:
+
+- Agent-loop and execution-worker separation makes code, caches, secrets, terminal, filesystem, and browser access explicit readiness inputs.
+- One-task, one-branch, one-worktree, one-agent practice still needs separate port, database, volume, dependency, and environment-file reservations.
+
 ## Practice Boundaries
 
 - Define the runtime boundary before agents receive file, shell, network, package, or credential access.
@@ -40,6 +45,7 @@ The September 1 raw sources add runtime-profile and worktree-readiness evidence.
 - Check prebuilt environment freshness, failed-build fallback behavior, setup provenance, dependency cache state, commit SHA, build logs, and agent-run build mapping before relying on hosted agent environments.
 - Check operation-scoped authority, WebMCP or tool-boundary declarations, browser identity, trusted-site scope, approval affordances, and interaction evidence before treating a site or workspace as agent-ready.
 - Record runtime profile, sudo and network posture, migration result, worktree run/debug target, model-policy eligibility, and boundary-monitor evidence before execution.
+- Verify execution locality, cache and secret boundary, worktree branch target, port allocation, database or volume separation, dependency scope, and environment-file ownership before parallel or cloud-hosted coding agents run.
 
 ## Authoritative Sources
 
@@ -51,6 +57,7 @@ The September 1 raw sources add runtime-profile and worktree-readiness evidence.
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -85,3 +92,4 @@ The September 1 raw sources add runtime-profile and worktree-readiness evidence.
 - Maintained on 2026-08-14 with prebuilt environment snapshots, setup provenance, dependency-cache, failed-build fallback, commit-SHA, build-log, and run-to-build readiness checks.
 - Maintained on 2026-08-26 with operation-scoped authority, WebMCP/tool-boundary declarations, browser identity, trusted-site scope, approval affordances, and interaction evidence for agent-ready environments.
 - Maintained on 2026-09-01 with runtime-profile, migration-fixer, network-isolation, worktree-run-configuration, model-policy, and boundary-monitor evidence.
+- Maintained on 2026-09-03 with customer-controlled execution, execution-worker separation, worktree isolation, runtime-resource reservation, and secret/cache locality evidence.

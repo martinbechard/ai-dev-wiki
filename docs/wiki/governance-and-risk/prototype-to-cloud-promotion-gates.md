@@ -21,6 +21,11 @@ The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-de
 
 The August 28 and 29 raw sources add prototype-to-deployment trust evidence. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records an accelerator-style prototype-to-product signal and managed coding-agent policy controls, while the [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records production AI-generated-code gates and durable runtime readiness. Locally, promotion should require user trust, deployment readiness, retention and billing review, sandbox scope, review depth, rollback, and post-launch verification.
 
+The September 3 raw sources add governed deployment and data-agent promotion evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) reinforces ERP rule validation, approval thresholds, revocation, workspace isolation, least privilege, SIEM export, and before-go-live validation.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) supports mediated deployment execution through scoped access, policy-as-code guardrails, permissions, and audit logging.
+
 ## Practice Boundaries
 
 - Identify whether the app remains local, becomes shared internally, becomes public, or handles sensitive data.
@@ -32,6 +37,7 @@ The August 28 and 29 raw sources add prototype-to-deployment trust evidence. The
 - Require sandbox boundaries, deny-by-default network posture, credential separation, session audit evidence, and human approval before promoting sensitive-code agent workflows.
 - Include execution-boundary hardening in promotion criteria when an agent can run setup commands, generated code, or delegated tools.
 - Require checkpoint recovery, component identity, activity logging, behavior baselines, memory quarantine, and containment evidence before promotion to standing production or cloud-agent operation.
+- Require mediated deployment execution, policy-as-code guardrails, approval thresholds, revocation controls, workspace isolation, least privilege, SIEM export, and before-go-live validation when an agent can affect cloud, ERP, or enterprise data.
 
 ## Authoritative Sources
 
@@ -44,6 +50,8 @@ The August 28 and 29 raw sources add prototype-to-deployment trust evidence. The
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -73,3 +81,4 @@ The August 28 and 29 raw sources add prototype-to-deployment trust evidence. The
 - Created on 2026-06-23 from public source guidance on security risks when AI-assisted prototypes become hosted, shared, or data-bearing applications.
 - Maintained on 2026-07-08 with sensitive-code sandbox, network, credential, audit, approval, and execution-boundary promotion checks.
 - Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, runtime containment, activity logging, behavior-baseline, and memory-quarantine promotion gates.
+- Maintained on 2026-09-03 with mediated deployment, policy-as-code, ERP rule validation, approval thresholds, revocation, workspace isolation, least privilege, SIEM export, and before-go-live validation gates.

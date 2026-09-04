@@ -33,6 +33,13 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) adds another destructive cleanup incident signal where a deletion-safeguard test reportedly affected a home directory. Locally, destructive-command controls should treat model downgrade, adversarial safety-check paths, variable reuse, and home-directory or production-adjacent fixtures as explicit risk inputs before any generated cleanup script runs.
 
+The September 3 raw sources add cost, deployment, and infrastructure side-effect evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports treating outbound spend, credential revocation, ERP risk zones, and infrastructure apply as high-impact action classes.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) reinforces governed execution for deployment-capable coding agents.
+
+Locally, destructive-action controls should include spend exhaustion, cloud deployment, infrastructure mutation, and credential revocation alongside shell deletion.
+
 ## Practice Boundaries
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
@@ -46,6 +53,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Block destructive or confidential-data actions when the command is individually valid but the action sequence, task context, or approved payload does not justify it.
 - Require dry-run evidence, isolated fixtures, path allowlists, rollback or backup evidence, and human review before generated cleanup or deletion scripts run outside scratch workspaces.
 - Reject destructive-safety tests that target home directories, production-adjacent paths, ambiguous variables, or model-dependent guard conditions unless an isolated fixture and recovery proof are already in place.
+- Treat infrastructure apply, cloud deployment, outbound spend escalation, high-volume API use, and credential revocation as high-impact actions that need policy evidence, blast-radius scoring, and rollback or kill-switch paths.
+- Prefer behavior-specific throttles or 429-style denials when a session exceeds an approved cost or request envelope before allowing the same credential to continue.
 
 ## Authoritative Sources
 
@@ -58,6 +67,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [upstream shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
@@ -95,3 +106,4 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Maintained on 2026-08-17 with sandbox-level denial for commits, pushes, installs, host credentials, and sensitive remote actions.
 - Maintained on 2026-08-29 with task-context and approved-payload checks for high-impact actions.
 - Maintained on 2026-09-02 with destructive cleanup incident evidence for model downgrades, adversarial safety checks, variable reuse, and home-directory fixture denial.
+- Maintained on 2026-09-03 with spend-envelope, outbound-meter, behavior-specific kill-switch, credential-revocation, ERP risk-zone, infrastructure-blast-radius, and governed-deployment evidence.

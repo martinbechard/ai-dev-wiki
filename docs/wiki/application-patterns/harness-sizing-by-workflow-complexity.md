@@ -23,6 +23,11 @@ The August 25 clipping and raw sources add generated-code execution and loop-to-
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds AI model harness, long-running runtime, and workspace-layer evidence. Harness sizing should explicitly account for the layer that owns business context, memory, token cost, model routing, parallel workspaces, reviewable commits, durable execution, checkpoints, retries, scoped permissions, observability, and recovery.
 
+The September 3 raw sources add security-control-plane and interoperability evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports adding pre-tool classifiers, hardened sandboxes, critic/review roles, runtime mediation, and information-flow controls for high-risk workflows.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) treats harness specs, drift checks, durable sessions, permissions, memory, cost, approvals, and sandbox settings as portable configuration evidence.
+
 ## Practice Boundaries
 
 - Size harness controls to action risk, context complexity, duration, and need for recovery.
@@ -35,6 +40,8 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Include checkpointing, recovery, behavior baselines, scoped access, activity logging, containment tests, and memory inspection when workflow risk moves beyond assisted drafting.
 - Use narrow host functions, serialized boundaries, resource limits, and replay-safe interruption when generated programs need to compute over trusted application capabilities.
 - Escalate from a simple agent to a loop or graph when state, recovery, approval timing, delegation topology, or operations evidence justifies the added harness machinery.
+- Add pre-tool classifiers, sandbox hardening, critic/review roles, information-flow controls, persistent-state inspection, and runtime mediation when a workflow can probe, exploit, repair, deploy, or cross trust boundaries.
+- Treat declared harness specs, drift checks, context handling, permission stance, memory behavior, cost controls, approvals, and sandbox configuration as sizing evidence when a harness must move across runtimes.
 
 ## Authoritative Sources
 
@@ -45,6 +52,8 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [agent environment readiness](agent-environment-readiness.md)
@@ -79,3 +88,4 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Maintained on 2026-08-04 with adjustable reasoning-depth and credit-budget controls as harness sizing inputs.
 - Maintained on 2026-08-15 with durable execution, checkpoint recovery, scoped access, component identity, behavior-baseline, containment, activity-log, and memory-inspection sizing inputs.
 - Maintained on 2026-08-25 with generated-program sandbox, host-function, interruption, replay, and loop-to-graph escalation evidence.
+- Maintained on 2026-09-03 with pre-tool classifier, hardened-sandbox, critic-review, runtime-mediation, information-flow, harness-spec, drift-check, and interoperability sizing evidence.

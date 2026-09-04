@@ -33,6 +33,11 @@ The [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-de
 
 The August 28 and 29 raw sources add live discovery, lifecycle, and institutional-skill evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records running-agent inventory, lifecycle governance, reusable AI skill ownership, and workspace-layer boundaries. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) reinforces that organization-level custom agents, shared sessions, and persistent agents need owner cards that cover catalog source, policy owner, runtime visibility, wake or sleep authority, and review cadence.
 
+The September 3 raw sources add decision-owner and identity-taxonomy evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) reinforces that business-action agents need owner, autonomy, trace, kill-switch, and tool-change fields.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds identity classes that affect lifecycle, credential duration, delegated authority, review cadence, and revocation.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -56,6 +61,8 @@ The August 28 and 29 raw sources add live discovery, lifecycle, and institutiona
 - Record generator-reviewer independence when shared model or tool families could create common blind spots.
 - Record evaluation status, intervention requirements, decision evidence, and pause or rollback authority on owner cards for agents that touch real systems.
 - Record runtime-discovery status, catalog source, reusable-skill owner, lifecycle stage, credential owner, wake or sleep authority, and decommission evidence for persistent or organization-level agents.
+- Record autonomy tier, kill switch, immutable decision trace, tool-change owner, and per-call authorization evidence when an agent can execute or recommend business actions.
+- Classify each agent identity as copilot, autonomous agent, orchestrator, ephemeral subagent, or external agent service when that class changes credential duration, delegation limits, or review cadence.
 
 ## Authoritative Sources
 
@@ -72,6 +79,8 @@ The August 28 and 29 raw sources add live discovery, lifecycle, and institutiona
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 10 leaf update watch source](../../../raw/processed/2026-08-10/ai-dev-wiki-leaf-update-watch-2026-08-10T210147-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [human agent approval boundaries](human-agent-approval-boundaries.md)
 - [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md)
 
@@ -110,3 +119,4 @@ The August 28 and 29 raw sources add live discovery, lifecycle, and institutiona
 - Maintained on 2026-07-25 with workflow outcome, freshness, runbook, approval, log, cost, review-cadence, rollback, and decommission owner-card fields.
 - Maintained on 2026-07-30 with identity lifecycle, expiry, initiating-human attribution, executing-agent attribution, and audit-trail fields.
 - Maintained on 2026-08-10 with generator-reviewer independence, evaluation status, human-intervention, decision-evidence, and pause-authority fields.
+- Maintained on 2026-09-03 with autonomy-tier, kill-switch, immutable-trace, identity-taxonomy, credential-duration, delegation-limit, and per-call authorization fields.

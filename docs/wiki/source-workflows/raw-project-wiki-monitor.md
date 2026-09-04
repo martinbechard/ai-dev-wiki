@@ -23,6 +23,11 @@ The July 10 raw artifacts reinforce item-level ingest. The [topic news collector
 
 The July 25 raw artifacts reinforce source routing and evidence quality. The [topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json) includes upstream-owned companies, products, standards, models, and MCP servers, while the [leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json) maps public evidence to existing local leaves. The monitor should keep broad entity background upstream, preserve sponsored-source caution, and synthesize only the local practice implications into durable leaves and item-level digest entries.
 
+The September 3 raw artifacts reinforce high-volume item-level routing:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) and [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) contain many upstream-owned products, providers, standards, and protocols.
+- The monitor should route their local practice implications into durable leaves and item-level digests instead of preserving batch-shaped wiki prose.
+
 ## Practice Boundaries
 
 - Ignore hidden filesystem metadata and keep clipping moves collision-safe.
@@ -38,6 +43,7 @@ The July 25 raw artifacts reinforce source routing and evidence quality. The [to
 - Preserve processed artifacts as provenance after item-level leaves and digests hold the reusable understanding.
 - Treat collector runs with many unrelated findings as multiple item-level practice updates rather than one digest or page-change batch.
 - Preserve source-quality labels such as sponsored or vendor-positioned evidence when those labels affect how strongly a local operating rule should rely on the source.
+- For high-volume collector pairs, group synthesis by durable practice implication and independently changing digest item, not by raw artifact, provider, protocol, or source sweep.
 
 ## Authoritative Sources
 
@@ -53,6 +59,8 @@ The July 25 raw artifacts reinforce source routing and evidence quality. The [to
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -85,3 +93,4 @@ The July 25 raw artifacts reinforce source routing and evidence quality. The [to
 - Maintained on 2026-07-05 with compact wiki-memory synthesis and processed-artifact provenance signals.
 - Maintained on 2026-07-10 with item-level ingest boundaries for high-volume collector and leaf-watch artifacts.
 - Maintained on 2026-07-25 with upstream entity routing, sponsored-source caution, and item-level synthesis for topic-news and leaf-watch artifacts.
+- Maintained on 2026-09-03 with high-volume item-level routing across ownership, identity, memory, tool audit, runtime control, worktree isolation, evaluation, and governed deployment practice implications.

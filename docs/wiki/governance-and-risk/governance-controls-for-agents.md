@@ -84,6 +84,13 @@ The August 28 and 29 raw sources add live-agent governance, policy-default, and 
 
 The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds open-source contribution, runtime semantic-policy, eval-containment, and MCP prompt-injection evidence. AI-assisted contributions should keep contributor accountability for quality, correctness, maintainability, legal compliance, review, testing, and modification even when disclosure is optional. High-risk agent evaluations should probe sandbox configuration, restrict or remove internet access where possible, state target and network boundaries, monitor reasoning/actions/network activity, and preserve human stop authority. Runtime guardrails should inspect tool intent, data movement, package or MCP server installs, scope drift, and follow-up instructions before action.
 
+The September 3 raw sources add control-stack and spend-boundary evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) reinforces owner registers, scoped identities, kill switches, business-rule validation, SIEM export, and runtime mediation as recurring controls.
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) connects identity, access, memory, monitoring, audit, governed execution, and cost attribution as one control stack.
+
+Locally, governance controls should join those records by agent or session so a risky run can be attributed and stopped outside model self-limiting.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -103,6 +110,9 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - Check inherited permissions, stale credentials, escalation paths, and audit evidence before allowing autonomous or semi-autonomous agents to act.
 - Inventory shadow agents, local MCP servers, connector grants, and developer-side tool paths that can bypass centrally managed visibility.
 - Require command previews, normalized working directories, path-containment checks, backups or restore points, and explicit approval before destructive file operations.
+- Join identity, access, memory, monitoring, audit, cost, and revocation evidence by agent or session when the workflow can keep running after a single prompt.
+- Treat daily token or request envelopes, outbound API meters, and spend-triggered session restrictions as blast-radius controls for long-running agents.
+- Validate business-rule, system-of-record, and SIEM-export controls before agents move from advisory reasoning to operational side effects.
 - Capture who invoked which agent tool, what data or repository scope it touched, and which policy allowed or blocked the action.
 - Encode recurring compliance requirements as automated checks when they can be tested at pull-request time.
 - Require governed semantic definitions, source-truth labels, and execution monitoring before agents retrieve or act on business metrics.
@@ -154,6 +164,8 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -240,6 +252,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 ## Maintenance Notes
 
 - Maintained on 2026-08-31 with AI-assisted contributor accountability, runtime semantic-policy, eval containment, tool-intent, data-movement, package/MCP-install, and high-risk network-boundary evidence.
+- Maintained on 2026-09-03 with identity-access-memory-monitoring-audit stack, business-rule validation, SIEM export, cost envelopes, kill-switch, and revocation evidence.
 - Maintained on 2026-07-23 with agent classification, rationale, confidence, proposed-change approval, activity oversight, and prompt-injection detection guidance.
 - Created on 2026-06-23 from local source guidance on agent boundaries, package-install risk, security, and human accountability.
 - Updated on 2026-06-23 with OWASP LLM risk mapping, infrastructure governance boundaries, and HVE Core licensing and responsible AI signals.

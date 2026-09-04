@@ -37,6 +37,11 @@ The [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai
 
 The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds operating-record evidence for persistent memory, local-session compliance APIs, side-channel agent questions, subagent task state, SAFE-style incident records, and workspace identity. Locally, rehydration files should preserve enough prompts, tool traces, identities, permissions, credential references, plugin versions, and question/answer state for a later reviewer to reconstruct the workflow without treating vendor chat memory as the only state store.
 
+The September 3 [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds owned-memory and migration-safety evidence:
+
+- Rehydration should distinguish transcript archives from indexed memory, embeddings, team stores, and audit interfaces.
+- Memory format changes need provenance, freshness labels, and backup verification before multiple agents or teammates depend on the same store.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -62,6 +67,8 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Prefer durable project state, accepted-version records, path-scoped delegation notes, and verification artifacts over persistent-agent memory when long-running software work needs continuity.
 - Treat file-backed plans, session records, eval data, and persistent memory as rehydration inputs with provenance labels, freshness checks, and quarantine rules before they can steer tool use.
 - Preserve incident-relevant prompts, tool traces, identities, permissions, credential references, workspace identity, plugin versions, and side-channel questions when they may be needed for secure replay or review.
+- Distinguish raw transcripts, indexed memories, embeddings, audit views, and exported summaries before using recalled material as current project state.
+- Require provenance, freshness labels, backup verification, and format-version evidence before shared or team memory migrations steer future agent work.
 
 ## Authoritative Sources
 
@@ -84,6 +91,7 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
 ## Related Code
@@ -124,3 +132,4 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Maintained on 2026-08-13 with persistent-project-state, accepted-version, finite-lived-agent, and recursive-delegation continuity guidance.
 - Maintained on 2026-08-15 with file-backed plans, session records, eval data, persistent-memory provenance, quarantine, and confirmation guidance.
 - Maintained on 2026-08-17 with persistent-memory, local-session compliance, side-channel question, subagent task-state, SAFE-style incident, and workspace-identity evidence.
+- Maintained on 2026-09-03 with owned-memory, provenance-indexed recall, local embeddings, audit-interface, backup, team-memory, and format-migration evidence.

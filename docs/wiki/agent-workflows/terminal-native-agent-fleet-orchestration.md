@@ -21,6 +21,11 @@ The [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-cop
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds coding-agent manager comparison evidence. Fleet selection should compare editor-first agents, terminal agents, cloud delegation, and manager layers by execution location, multi-agent isolation, approval handling, review flow, scheduling, and monitoring support. Broad product coverage stays upstream; locally, the durable rule is that a manager layer is useful only when it improves coordination evidence and review throughput without hiding workspace, permission, or merge-state boundaries.
 
+The September 3 [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds worktree-isolation and customer-controlled execution evidence:
+
+- Fleet orchestration should assign task, branch, worktree, agent identity, runtime resources, and merge path per worker.
+- Managed or cloud agent surfaces should still record where side effects execute and who controls that worker.
+
 ## Practice Boundaries
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
@@ -32,6 +37,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Preserve stack order, base branch, closed or superseded attempt, dependent pull request, and reviewer handoff evidence when work is split into stacked sessions.
 - Treat managed stacked-session products as source-control orchestration surfaces; broad product background remains upstream.
 - Compare fleet managers by execution location, multi-agent isolation, approval flow, review surface, scheduling, monitoring, and exported coordination evidence.
+- Assign one task, branch, worktree, agent identity, port range, database or volume scope, environment-file owner, and merge path per parallel worker when runtime collisions could affect evidence.
+- Record whether side effects run in the local checkout, managed worktree, cloud sandbox, or customer-controlled execution worker before comparing fleet results.
 
 ## Authoritative Sources
 
@@ -50,6 +57,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [upstream Mastra](../../../upstream-ai-wiki/agentic-frameworks/mastra.md)
 - [upstream OpenAI Agents SDK](../../../upstream-ai-wiki/agentic-frameworks/openai-agents-sdk.md)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -79,3 +87,4 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.
 - Maintained on 2026-08-31 with execution-location, isolation, approval, review, scheduling, monitoring, and coordination-evidence criteria for coding-agent manager layers.
+- Maintained on 2026-09-03 with one-task-one-worktree worker isolation, runtime-resource reservation, customer-controlled execution, and side-effect locality evidence.

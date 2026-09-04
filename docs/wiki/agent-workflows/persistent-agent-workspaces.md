@@ -43,6 +43,11 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 The September 1 raw sources add session-layout, external-continuation, and long-running task evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records side-by-side chats, side conversations with shared context, prompt timelines tied to file changes, external session continuation, multi-window Agent Host sessions, and second-opinion prompts. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records queued prompt editing, task triage, thread identifiers, active working-time visibility, and isolated worktree sessions. Locally, persistent workspaces should make layout, branch, prompt queue, timeline, task identifier, and continuation state visible before a resumed agent acts.
 
+The September 3 [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds workspace observability and memory-provenance evidence:
+
+- Persistent workspaces should preserve run phase, exported activity, failure state, child-session scope, and automation review status.
+- Successful conversations should not become reusable automations until memory provenance and cost or context feedback are inspectable.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -68,6 +73,7 @@ The September 1 raw sources add session-layout, external-continuation, and long-
 - Treat persistent proactivity as scheduled or stateful work that still needs wake/sleep authority, memory-source inspection, notification policy, and permission renewal.
 - Do not let a recovered workspace or prior interaction become action authority without current repository, instruction, and approval checks.
 - Preserve prompt timelines, side-conversation scope, queue edits, task identifiers, active working time, and branch-specific session history when long-running work spans clients or worktrees.
+- Preserve live-activity state, failure phase, child-conversation scope, exported activity logs, automation enablement review, memory provenance, and context or cost feedback for reusable workspace automation.
 
 ## Authoritative Sources
 
@@ -91,6 +97,7 @@ The September 1 raw sources add session-layout, external-continuation, and long-
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -132,3 +139,4 @@ The September 1 raw sources add session-layout, external-continuation, and long-
 - Maintained on 2026-08-20 with worktree isolation, rebuildable draft, hook/eval status, branch ownership, and merge-or-abandonment evidence.
 - Maintained on 2026-08-30 with persistent-agent proactivity, sparse notification, sleep-control, memory-source, permission-ceiling, and approval-renewal evidence.
 - Maintained on 2026-09-01 with session-layout, side-conversation, prompt-timeline, queue-editing, task-identifier, and worktree-session evidence.
+- Maintained on 2026-09-03 with live activity, failure phase, child-conversation, automation-review, activity-export, memory-provenance, and context-cost feedback evidence.

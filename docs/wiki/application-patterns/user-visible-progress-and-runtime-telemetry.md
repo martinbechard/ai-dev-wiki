@@ -65,6 +65,13 @@ The August 28 and 29 raw sources add runtime inventory, observability, and IDE u
 
 The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds long-running task and monitor telemetry signals. Mobile task lists expose running tasks, unread updates, tasks awaiting response, editable queued prompts, live working time, and thread identifiers. Supervisory workflows expose safe-output counts, grader pass rates, and blocked-network-call observations. Locally, telemetry should make waiting, unread, queued, blocked, graded, and actively-working states visible before a human decides whether to intervene.
 
+The September 3 raw sources add automation, audit, and cost-control telemetry evidence:
+
+- The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) reinforces automation phases, activity exports, tool-call audit fields, memory audit interfaces, and governed execution logs.
+- The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) adds pre-tool classifiers, SIEM trails, outbound API meters, token or request envelopes, and spend-triggered alerts.
+
+Locally, telemetry should join progress, policy, memory, execution-boundary, and spend state before authority, budget, or sandbox limits are exceeded.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -102,6 +109,7 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - Record memory writes, connected-app access, trust receipts, append-only verdict logs, sandbox events, graph-edge authorization, and downstream log links when they influence an agent's behavior or accountability.
 - Use common trace vocabulary for model, retrieval, tool, gateway, human approval, cost, latency, and eval events so runtime evidence can be reused in trajectory-level evaluation.
 - Expose unread updates, waiting-for-response state, queued prompt state, live working time, durable task identifiers, safe-output counts, grader pass rates, and blocked-network observations for long-running tasks.
+- Expose automation phase, structured failure state, activity export location, pre-tool-call classifier decisions, memory-recall provenance, outbound API meter state, token or request envelope usage, and spend-triggered alerts when autonomous work can continue.
 
 ## Authoritative Sources
 
@@ -138,6 +146,8 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
 ## Related Code
 
@@ -167,6 +177,7 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 - Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.
 - Maintained on 2026-09-01 with running-task, unread-update, awaiting-response, queued-prompt, working-time, thread-identifier, safe-output, and grader telemetry.
+- Maintained on 2026-09-03 with automation-phase, activity-export, pre-tool-classifier, memory-provenance, execution-log, outbound-meter, budget-envelope, and spend-alert telemetry.
 - Created on 2026-06-23 from source guidance on progress events, agent UI updates, and runtime metrics for local or long-running AI workflows.
 - Maintained on 2026-06-24 with TTFT, pipeline latency, and tool-call pause state guidance.
 - Maintained on 2026-06-26 with remote provisioning, background-agent visibility, permission-denial, authentication, telemetry, and cleanup states.
