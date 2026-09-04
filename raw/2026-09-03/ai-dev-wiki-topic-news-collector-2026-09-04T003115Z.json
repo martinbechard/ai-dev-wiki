@@ -1,0 +1,472 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-04T00:31:15Z",
+  "run_timestamp_local": "2026-09-03T20:31:15-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-02T00:31:15Z",
+    "end_utc": "2026-09-04T00:31:15Z",
+    "rule": "Include only public sources with direct visible publication or update dates inside the last two days relative to the run time; exclude missing, ambiguous, future-dated, crawl-only, snippet-only, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, evaluation, adoption, and implementation lenses.",
+    "upstream_owned_scope": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad AI techniques"
+    ],
+    "handling": "Broad entity news is marked upstream-owned; this artifact keeps only downstream practice implications or routing notes."
+  },
+  "collection_method": {
+    "source_types": [
+      "vendor blogs",
+      "engineering blogs",
+      "security briefings",
+      "practice articles",
+      "documentation/news pages"
+    ],
+    "privacy_boundary": "Only public web sources were searched. No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  },
+  "qualifying_updates": [
+    {
+      "title": "OpenHands Agent Canvas adds clearer automation, review, and activity controls",
+      "source_url": "https://www.openhands.dev/blog/new-in-agent-canvas-august-2026",
+      "visible_date": "September 2, 2026",
+      "date_evidence": "Article page lists Published on September 2, 2026.",
+      "summary": "OpenHands described eight Agent Canvas releases that added live agent activity indicators, structured failure handling, context and cost visibility, child conversations, automation run phases, CSV/JSON activity exports, review-before-enable imported automations, provider credential validation, and easier inspection of generated files and commits.",
+      "why_it_matters_for_ai_assisted_development": "The update is practice-level evidence that agent workspaces are converging on observable run states, reviewable artifacts, explicit automation configuration, and cost/context feedback loops rather than treating agent work as opaque chat.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "OpenHands",
+        "Agent Canvas",
+        "Canvas Apps",
+        "Automation Git Sync",
+        "Jira",
+        "GitHub",
+        "Slack",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "OpenHands",
+        "MCP",
+        "GitHub",
+        "Slack",
+        "Jira"
+      ],
+      "local_practice_implication": "Track agent runs with visible phases, exported activity, cost/context controls, and reviewable diffs before turning successful conversations into repeatable automations.",
+      "follow_up_notes": "Consider ingesting into agent workflow observability, repeatable automations, and trusted workspace extension lenses."
+    },
+    {
+      "title": "Cloudflare positions Sandboxes as customer-controlled execution for Cursor Cloud Agents",
+      "source_url": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/",
+      "visible_date": "September 2, 2026",
+      "date_evidence": "Press release header and dateline both show September 2, 2026.",
+      "summary": "Cloudflare announced support for running Cursor Cloud Agents on Cloudflare Sandboxes. Cursor continues to handle the agent loop while terminal, filesystem, and browser actions execute inside customer-controlled Cloudflare environments, keeping code, build caches, and secrets closer to the customer's security boundary.",
+      "why_it_matters_for_ai_assisted_development": "The announcement reinforces a deployment pattern where the agent user experience can be separated from the execution worker, allowing teams to keep familiar tools while tightening locality, secret handling, and environment control.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Cloudflare",
+        "Cloudflare Sandboxes",
+        "Cursor",
+        "Cursor Cloud Agents",
+        "Cursor Self-Hosted Machines",
+        "SpaceXAI"
+      ],
+      "upstream_owned_entities": [
+        "Cloudflare",
+        "Cursor",
+        "Cloudflare Sandboxes"
+      ],
+      "local_practice_implication": "Treat agent execution locality as a first-class governance choice: where commands run, where secrets sit, and which worker performs side effects should be explicit in workflow design.",
+      "follow_up_notes": "Route broad company/product coverage upstream; retain only execution-boundary and customer-controlled sandbox practice notes locally."
+    },
+    {
+      "title": "Hugging Face post argues coding-agent memory should be owned and provenance-indexed",
+      "source_url": "https://huggingface.co/blog/funes",
+      "visible_date": "Published September 3, 2026",
+      "date_evidence": "Article page lists Published September 3, 2026.",
+      "summary": "The Funes post describes a local durable memory layer built from coding-agent session traces, with retrieval, ranking, and exact provenance so agents can reuse prior reasoning across tools and machines. It frames memory as a dataset the user owns, private by default when shared to Hugging Face.",
+      "why_it_matters_for_ai_assisted_development": "The practice update emphasizes that raw agent transcripts are not enough; durable memory needs indexing, retrieval, ranking, and source provenance to help future agents understand why prior implementation decisions happened.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Hugging Face",
+        "Funes",
+        "Claude Code",
+        "Codex",
+        "pi",
+        "Hermes"
+      ],
+      "upstream_owned_entities": [
+        "Hugging Face",
+        "Claude Code",
+        "Codex",
+        "Hermes",
+        "Funes"
+      ],
+      "local_practice_implication": "Memory systems for coding agents should preserve user ownership, local defaults, retrieval quality, and exact provenance rather than only archiving conversation logs.",
+      "follow_up_notes": "Could inform context architecture pages that distinguish trace archive, indexed memory, and provenance-cited recall."
+    },
+    {
+      "title": "AI-MEMORY 2.0 ships OKF format, local embeddings, backups, and team agent support",
+      "source_url": "https://akitaonrails.com/en/2026/09/02/ai-memory-2-0-best-memory-system-for-agents-and-teams/",
+      "visible_date": "September 2, 2026",
+      "date_evidence": "Article page header lists September 2, 2026.",
+      "summary": "AI-MEMORY 2.0 introduced a native Open Knowledge Format on disk, local embeddings enabled by default, multi-agent and team project support, a web auditing interface, semantic versioning, and a verified backup step before format migration.",
+      "why_it_matters_for_ai_assisted_development": "The release is practical evidence that team-scale agent memory is becoming a managed repository artifact with migration safety, local retrieval, audit views, and cross-agent continuity.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "AI-MEMORY",
+        "Open Knowledge Format",
+        "OKF",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "AI-MEMORY",
+        "Open Knowledge Format",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Agent memory migrations should be backup-verified, format-versioned, locally inspectable, and safe for multiple agents or teammates to use on the same project.",
+      "follow_up_notes": "Useful as source evidence for durable memory and team-context governance leaves."
+    },
+    {
+      "title": "Obot publishes a tool-call audit trail schema for AI agents",
+      "source_url": "https://obot.ai/blog/what-to-log-when-an-agent-calls-a-tool-ai-agent-audit-trail-schema/",
+      "visible_date": "Published: September 1, 2026; Last Updated: September 2, 2026",
+      "date_evidence": "Article metadata shows Published September 1, 2026 and Last Updated September 2, 2026.",
+      "summary": "Obot's guide argues chat history is insufficient for auditability and lists tool-call trace fields such as call ID, session, actor, tool, arguments, result status, authentication, policy decisions, latency, and storage choices for troubleshooting, security review, and compliance.",
+      "why_it_matters_for_ai_assisted_development": "The update provides a concrete practice schema for moving from conversation-level narratives to verifiable records of agent side effects and policy decisions.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Obot",
+        "MCP",
+        "AI agent audit trail"
+      ],
+      "upstream_owned_entities": [
+        "Obot",
+        "MCP"
+      ],
+      "local_practice_implication": "Tool-call logs should capture actor, policy, authentication, arguments, outputs, status, timing, and storage context in structured records that can be reviewed independently of chat.",
+      "follow_up_notes": "Candidate source for audit-log field checklists and governed tool-call practice."
+    },
+    {
+      "title": "Agentic coding field note recommends short loops with acceptance, tests, and rollback checks",
+      "source_url": "https://www.thinkdifferent.blog/blog/agentic-coding-why-short-agent-loops-beat-heroic-ones-2026-09/",
+      "visible_date": "Sep 3, 2026",
+      "date_evidence": "Article byline lists Sep 3, 2026.",
+      "summary": "The field note argues that reliable agentic coding comes from short, bounded loops rather than heroic long-running prompts. It recommends checking acceptance criteria, test-suite relevance, rollback path, review round trips, and whether changes remain shipped.",
+      "why_it_matters_for_ai_assisted_development": "This is a direct local-practice update about operating discipline: agent capability needs explicit task fit, pre-handoff checks, and outcome metrics beyond accepted suggestions.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Think Different",
+        "Jakub Jirak",
+        "Agentic coding"
+      ],
+      "upstream_owned_entities": [
+        "Agentic coding"
+      ],
+      "local_practice_implication": "Prefer small agent loops with clear acceptance criteria, test relevance, rollback plans, and shipped-change metrics over single large prompts optimized for spectacle.",
+      "follow_up_notes": "Useful for coding practice and verification loop guidance."
+    },
+    {
+      "title": "MCP field note frames sandboxing as a day-to-day tool-call practice",
+      "source_url": "https://www.thinkdifferent.blog/blog/mcp-servers-sandboxing-mcp-tool-calls-so-one-bad-prompt-cannot-ruin-a-week-2026-09/",
+      "visible_date": "Sep 2, 2026",
+      "date_evidence": "Article byline lists Sep 2, 2026.",
+      "summary": "The field note distinguishes MCP's protocol capability from the practice of sandboxing tool calls. It highlights auth, quotas, and observability friction and recommends checklists around acceptance criteria, tests, rollback paths, review habits, and measurement.",
+      "why_it_matters_for_ai_assisted_development": "The source keeps MCP coverage at the local workflow level: tool servers need sandbox boundaries, observability, and explicit operating habits before they become dependable engineering infrastructure.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "MCP",
+        "Model Context Protocol",
+        "Think Different",
+        "Jakub Jirak"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Treat MCP server adoption as governed practice: sandbox side effects, define auth and quota expectations, observe tool calls, and measure shipped outcomes rather than only server availability.",
+      "follow_up_notes": "Could support a downstream MCP governance practice lens while leaving protocol background upstream-owned."
+    },
+    {
+      "title": "OpenReplay documents git worktrees as isolation practice for parallel coding agents",
+      "source_url": "https://blog.openreplay.com/git-worktrees-ai-agents/",
+      "visible_date": "Sep 3, 2026",
+      "date_evidence": "Article header lists Sep 3, 2026.",
+      "summary": "OpenReplay recommends one task, one branch, one worktree, and one agent when running multiple AI coding agents on a repository. It also notes that worktrees isolate files but not runtimes, so teams must separately assign ports, databases, Docker volumes, dependencies, and environment files.",
+      "why_it_matters_for_ai_assisted_development": "The article gives concrete source-workflow practice for avoiding agent collisions while preserving the operational caveat that runtime resources remain shared unless intentionally separated.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "OpenReplay",
+        "git worktree",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "OpenReplay",
+        "git worktree"
+      ],
+      "local_practice_implication": "Parallel agent work should isolate checkout state with worktrees and also reserve separate runtime resources so tests and dev servers do not collide.",
+      "follow_up_notes": "Candidate for source workflow guidance on multi-agent branch isolation and merge review."
+    },
+    {
+      "title": "Cloud Security Alliance briefing flags git configuration and MCP authentication risk for coding agents",
+      "source_url": "https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20260903/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "Report page lists Report Date September 3, 2026 and Prepared September 3, 2026.",
+      "summary": "The CSA briefing summarized GitSpawn, a reported class of git-configuration flaws in which repository config can trigger commands when coding agents inspect repositories, and a Grafana MCP Server authentication-bypass/SSRF issue where authentication remains optional after the fix.",
+      "why_it_matters_for_ai_assisted_development": "The item is security-heavy but has direct downstream workflow implications: untrusted repositories, git config, and MCP server defaults are part of the agent execution surface, not just ordinary developer-tool configuration.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Cloud Security Alliance",
+        "GitSpawn",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Hermes Agent",
+        "Qwen Code",
+        "Grok Build",
+        "Grafana MCP Server",
+        "CVE-2026-19516"
+      ],
+      "upstream_owned_entities": [
+        "Cloud Security Alliance",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Hermes Agent",
+        "Qwen Code",
+        "Grok Build",
+        "Grafana MCP Server",
+        "CVE-2026-19516"
+      ],
+      "local_practice_implication": "Agent workflows should treat repository metadata and MCP server authentication defaults as governed attack surfaces, with untrusted-repo handling and explicit auth enablement before tool access.",
+      "follow_up_notes": "Route vulnerability detail to security wiki if ingested there; keep local downstream notes focused on source trust and agent permission boundaries."
+    },
+    {
+      "title": "MintMCP describes identity, access, memory, monitoring, and audit as one governance stack",
+      "source_url": "https://www.mintmcp.com/blog/ai-agent-governance-stack",
+      "visible_date": "September 2, 2026",
+      "date_evidence": "Article page header lists September 2, 2026.",
+      "summary": "MintMCP outlined a five-pillar AI agent governance stack covering identity, access, memory, monitoring, and audit. It recommends first-class non-human agent principals, scoped credentials, Virtual MCP endpoints, visibility before enforcement, runtime guardrails, company-owned memory, SIEM export, and cost attribution.",
+      "why_it_matters_for_ai_assisted_development": "The article collects multiple governance practices into an operating architecture that applies directly to coding agents and MCP-enabled development workflows.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "MintMCP",
+        "MCP Gateway",
+        "Agent Gateway",
+        "Virtual MCP",
+        "Agent Monitor",
+        "Claude",
+        "Cursor",
+        "ChatGPT",
+        "Gemini",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "MintMCP",
+        "MCP",
+        "Claude",
+        "Cursor",
+        "ChatGPT",
+        "Gemini",
+        "Copilot"
+      ],
+      "local_practice_implication": "Agent governance should be designed as infrastructure with named identities, curated tool surfaces, policy logs, memory ownership, cost visibility, and kill-switch or revocation paths.",
+      "follow_up_notes": "Keep vendor details upstream; local ingest can use this as evidence for agent governance stack patterns."
+    },
+    {
+      "title": "MintMCP details non-human identity management patterns for agent deployments",
+      "source_url": "https://www.mintmcp.com/blog/non-human-identity-management-ai-agents",
+      "visible_date": "September 2, 2026",
+      "date_evidence": "Article page header lists September 2, 2026.",
+      "summary": "MintMCP's CISO guide classifies agent identity types, including copilot, autonomous, orchestrator, ephemeral sub-agent, and agent-as-a-service identities. It recommends unique identities, named human owners, deny-by-default permissions, task-scoped access, tool allowlists, constrained delegation, and runtime checks on every tool invocation.",
+      "why_it_matters_for_ai_assisted_development": "The update provides actionable identity and delegation practices for coding-agent programs where subagents, scheduled tasks, and external tool calls need traceable authorization.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "MintMCP",
+        "Cloud Security Alliance",
+        "Agent Identity Governance Framework",
+        "MCP Gateway",
+        "Virtual MCP"
+      ],
+      "upstream_owned_entities": [
+        "MintMCP",
+        "Cloud Security Alliance",
+        "MCP"
+      ],
+      "local_practice_implication": "Coding-agent programs should map identity type to lifecycle, owner, credential duration, delegation limits, and per-call authorization rather than reusing human or shared service credentials.",
+      "follow_up_notes": "Potential source for governance leaves on agent identity taxonomy and task-scoped permission reviews."
+    },
+    {
+      "title": "Qovery frames governed execution as safer deployment access for coding agents",
+      "source_url": "https://www.qovery.com/blog/governed-execution-ai-agent-deployments",
+      "visible_date": "SEP 2, 2026",
+      "date_evidence": "Public search result and site card showed SEP 2, 2026 for the article.",
+      "summary": "Qovery described governed execution for AI coding agents as using scoped access, policy-as-code guardrails, permissions, and audit logging through an infrastructure platform instead of handing agents raw personal cloud credentials.",
+      "why_it_matters_for_ai_assisted_development": "The item supports a concrete practice boundary for agent deployment workflows: agents can participate in infrastructure changes when their side effects pass through the same governed controls used by human engineers.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Qovery",
+        "Claude Code",
+        "Cursor",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Kubernetes"
+      ],
+      "upstream_owned_entities": [
+        "Qovery",
+        "Claude Code",
+        "Cursor",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Kubernetes"
+      ],
+      "local_practice_implication": "Deployment-capable agents should receive mediated, auditable, policy-scoped execution paths instead of direct cloud credentials or broad production access.",
+      "follow_up_notes": "Verify direct page metadata again during ingest; the site search card showed the visible date but the collector page fetch did not return full article text."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Open SWE: An Open-Source Framework for Internal Coding Agents",
+      "source_url": "https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents",
+      "observed_date_or_signal": "Search result suggested September 3, 2026; opened page showed March 17, 2026.",
+      "exclusion_reason": "Direct visible page date is outside the cutoff window; snippet date was not accepted over the page metadata."
+    },
+    {
+      "title": "GitHub Copilot in Visual Studio August update",
+      "source_url": "https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/",
+      "observed_date_or_signal": "August 28, 2026.",
+      "exclusion_reason": "Outside the two-day cutoff window even though it has relevant custom-agent and review-practice material."
+    },
+    {
+      "title": "GitHub Copilot policies and billing changes",
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "observed_date_or_signal": "August 28, 2026; changes start September 1, 2026.",
+      "exclusion_reason": "Publication date is outside the window; September 1 effective date is boundary context rather than a new publication inside the collector window."
+    },
+    {
+      "title": "Claude Code on the web",
+      "source_url": "https://www.anthropic.com/news/claude-code-on-the-web",
+      "observed_date_or_signal": "Original page date November 12, 2025 with related-post snippets from September 2, 2026.",
+      "exclusion_reason": "The opened source page did not show a qualifying update date for the Claude Code article itself; related-post dates were not accepted as evidence."
+    },
+    {
+      "title": "How Claude's text watermark works",
+      "source_url": "https://www.anthropic.com/news/claude-text-watermark",
+      "observed_date_or_signal": "Published August 14, 2026; updated September 1, 2026.",
+      "exclusion_reason": "Update date is before the strict start timestamp of 2026-09-02T00:31:15Z."
+    },
+    {
+      "title": "Product Hunt AI coding agents category",
+      "source_url": "https://www.producthunt.com/categories/ai-coding-agents",
+      "observed_date_or_signal": "Last updated Sep 3, 2026.",
+      "exclusion_reason": "Broad product catalog/ranking belongs upstream; the page offered limited local practice detail beyond product comparison."
+    },
+    {
+      "title": "Gamut best AI coding agents guide",
+      "source_url": "https://www.gamut.so/blog/best-ai-coding-agents",
+      "observed_date_or_signal": "September 3, 2026.",
+      "exclusion_reason": "Mostly broad product comparison and market framing; upstream-owned entity coverage outweighed durable downstream practice content."
+    },
+    {
+      "title": "AI Agents News weekly/daily briefs",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "observed_date_or_signal": "September 3, 2026.",
+      "exclusion_reason": "Aggregator summary with broad agent/product news; prefer direct primary or practice-specific sources for local collection."
+    },
+    {
+      "title": "AI Agents Directory daily digest",
+      "source_url": "https://aiagentsdirectory.com/news",
+      "observed_date_or_signal": "September 3, 2026.",
+      "exclusion_reason": "Aggregator coverage emphasized broad enterprise AI/product ecosystem events already upstream-owned."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 12,
+    "excluded_candidate_count": 9
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Keep this artifact raw-only until a separate ingest workflow synthesizes local practice pages.",
+    "During ingest, re-check Qovery page metadata because the collector used public search/site-card date evidence when the direct fetch did not expose the article body.",
+    "Security-heavy CSA details may belong in ai-security-wiki; ai-dev-wiki should retain source-trust and agent-permission implications only."
+  ]
+}
