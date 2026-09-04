@@ -1,0 +1,456 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-09-04T01:01:57Z",
+    "note": "Strict 7-day window from 2026-08-28T01:01:57Z through 2026-09-04T01:01:57Z; date-only visible dates accepted when the page date falls within the window and is not future-dated relative to the run date.",
+    "start_utc": "2026-08-28T01:01:57Z"
+  },
+  "docs_wiki_updated": false,
+  "excluded_candidates": [
+    {
+      "reason": "Excluded: page showed only relative visible date, not a direct visible publication/update date, despite URL date and search metadata. Content may belong upstream or governance leaves if independently confirmed.",
+      "source_url": "https://www.axios.com/2026/09/03/house-bill-ai-agents-security"
+    },
+    {
+      "reason": "Excluded from local raw updates: broad AI deception/alignment article belongs mainly to upstream AI wiki; local implications overlapped with Anthropic source captured in this run.",
+      "source_url": "https://www.theguardian.com/news/2026/sep/01/if-you-build-something-vastly-smarter-than-you-it-better-be-on-your-side-can-we-stop-ai-from-deceiving-us"
+    },
+    {
+      "reason": "Excluded: visible publication date Mar 11, 2026 is outside the 7-day window, even though the page had current sidebar links.",
+      "source_url": "https://openai.com/index/designing-agents-to-resist-prompt-injection/"
+    },
+    {
+      "reason": "Excluded: visible publication date Aug 7, 2026 is outside the 7-day window.",
+      "source_url": "https://www.sysdig.com/learn-cloud-native/prompt-injection"
+    },
+    {
+      "reason": "Excluded: visible publication date Jul 9, 2026 is outside the 7-day window.",
+      "source_url": "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+    },
+    {
+      "reason": "Excluded as duplicative lower-specificity governance guidance after higher-signal direct-date sources covered boundaries, owners, audit trails, monitoring, and production controls.",
+      "source_url": "https://www.dunify.co/blog/ai-agent-governance"
+    }
+  ],
+  "follow_up_notes": [
+    "Normal raw ingest should decide which qualifying updates deserve durable local-practice synthesis and route upstream-owned entity background to the upstream AI wiki."
+  ],
+  "leaf_universe_count": 93,
+  "processed_paths_updated": false,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Express Computer argues that accountability for agentic decisions attaches to the deploying organization and a designated human owner, not to the model. It recommends an agent register, scoped identities, autonomy tiers, kill switches, immutable decision traces, and tool-change control for agents that execute business actions.",
+      "follow_up_note": "Review for downstream-owned agent register, owner, autonomy tier, kill switch, and tool-change-control practice guidance.",
+      "id": "expresscomputer-agent-decision-ownership-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md"
+      ],
+      "named_entities": [
+        "Express Computer",
+        "Sudip Mazumder",
+        "Amit Singh",
+        "Swapneel Saha",
+        "Algihaz Holding",
+        "DPDP Act",
+        "IT Act",
+        "EU AI Act",
+        "NIST AI RMF"
+      ],
+      "source_type": "public article",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/your-ai-agent-has-just-made-a-decision-who-owns-it/138183/",
+      "upstream_owned_entities": [
+        "EU AI Act",
+        "NIST AI RMF",
+        "DPDP Act"
+      ],
+      "visible_date": "On Aug 31, 2026",
+      "why_it_matters_for_leaf": "Supports local operating-agreement and ownership-roster leaves by giving concrete accountability, review-date, identity, trace, and change-control fields for human-agent agreements."
+    },
+    {
+      "factual_summary": "Anthropic describes containment and monitoring changes after model-evaluation incidents, including pausing high-risk evaluations, adding classifiers that block sandbox probing or unexpected internet access before tool calls run, hardening cyber sandboxes, real-time monitoring, explicit scope setting, and external-evaluator practices.",
+      "follow_up_note": "Use only the downstream practice implication: evaluation sandboxes need independently verified boundaries, monitors, and explicit permitted-action scopes.",
+      "id": "anthropic-alignment-security-practices-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Mythos 5",
+        "METR",
+        "UK AI Security Institute",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude",
+        "OpenAI",
+        "Hugging Face",
+        "METR",
+        "UK AI Security Institute"
+      ],
+      "visible_date": "Aug 31, 2026",
+      "why_it_matters_for_leaf": "Gives concrete evidence for lifecycle AI review gates, judge/grader environment boundaries, destructive action controls, prompt-injection boundaries, and runtime telemetry expectations in local AI-development workflows."
+    },
+    {
+      "factual_summary": "Google Cloud introduced Mantis as an open-source harness for automated vulnerability discovery, triage, reproduction, and patching. The post emphasizes critic/review agents, sandboxed reproduction, repository-history context, generated architecture and threat-model documentation, and human-curated acceptance criteria to filter true positives.",
+      "follow_up_note": "Review for downstream guidance that security-review agents need sandboxed reproduction and explicit vulnerability acceptance criteria.",
+      "id": "google-mantis-bug-finding-harness-2026-09-02",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Mantis",
+        "Gemini Enterprise",
+        "Google",
+        "Antigravity"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs",
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "Gemini Enterprise",
+        "Antigravity"
+      ],
+      "visible_date": "September 2, 2026",
+      "why_it_matters_for_leaf": "Strengthens technical solution evaluation, code-review rubrics, layered review roles, lifecycle gates, and harness-sizing guidance because it ties AI security review to reproducible evidence and sandboxed acceptance criteria."
+    },
+    {
+      "factual_summary": "Codacy argues that PR-level AI review cannot by itself prove whether quality, security, coverage, and policy enforcement are improving across a repository fleet. It separates per-diff reviewer accuracy from a governance layer that records trends, audit evidence, and cross-repository enforcement.",
+      "follow_up_note": "Review for rubric wording that separates pull-request finding quality from fleet-level governance and audit evidence.",
+      "id": "codacy-ai-code-review-governance-2026-08-28",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "Codacy",
+        "CodeRabbit",
+        "GitHub Copilot",
+        "Claude Code Review",
+        "Cursor BugBot",
+        "Greptile",
+        "Martian",
+        "Code Review Bench"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://blog.codacy.com/ai-code-review-governance",
+      "upstream_owned_entities": [
+        "Codacy",
+        "CodeRabbit",
+        "GitHub Copilot",
+        "Claude Code",
+        "Cursor",
+        "Greptile",
+        "Martian"
+      ],
+      "visible_date": "28/08/2026",
+      "why_it_matters_for_leaf": "Fits code-review eval/rubric and layered-review leaves by distinguishing diff-local reviewer scoring from portfolio-level governance evidence and auditability."
+    },
+    {
+      "factual_summary": "Parallel publishes an agentic web-search evaluation checklist: define verifiable tasks, use production-representative multi-hop and fresh questions, vary only the search tool, run each arm multiple times, judge against verified answers, audit citations, sample failures manually, and measure cost, tool calls, token usage, and latency.",
+      "follow_up_note": "Review for downstream eval guidance: date methodology, run repeated trials, audit citations, and capture cost/latency alongside accuracy.",
+      "id": "parallel-web-search-agent-eval-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "Parallel",
+        "Parallel Search",
+        "Parallel Extract",
+        "Task APIs"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://parallel.ai/blog/how-to-eval-web-search",
+      "upstream_owned_entities": [
+        "Parallel"
+      ],
+      "visible_date": "August 31, 2026",
+      "why_it_matters_for_leaf": "Useful for AI technical solution evaluation, judge/grader boundaries, and runtime telemetry because it turns tool evaluation into measured, repeatable, cited, cost-aware trials."
+    },
+    {
+      "factual_summary": "Harness reports August features for agent-scale delivery: a code repository and AI Code Review designed for high pull-request and commit volume, review grouping by risk, AI-risk scanning of agent skills for prompt injection, tool poisoning, and data exfiltration, and infrastructure blast-radius scoring before Terraform/OpenTofu apply.",
+      "follow_up_note": "Review for downstream delivery-gate guidance around risk-grouped review, skill scanning, and blast-radius evidence before destructive infrastructure actions.",
+      "id": "harness-august-agent-scale-delivery-2026-09-02",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "Harness",
+        "Harness CLI",
+        "AI Code Review",
+        "AI Risks scanner",
+        "Blast Radius Agent",
+        "Terraform",
+        "OpenTofu",
+        "Claude Code"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://www.harness.io/blog/shipped-in-august-2026",
+      "upstream_owned_entities": [
+        "Harness",
+        "Terraform",
+        "OpenTofu",
+        "Claude Code"
+      ],
+      "visible_date": "Published: September 2, 2026; Last updated: 2026-09-03",
+      "why_it_matters_for_leaf": "Supports layered AI code review, harness sizing, prompt-injection controls, destructive command controls, and prototype-to-cloud gates by showing delivery platforms adding pre-apply risk scoring and agent-skill security scans."
+    },
+    {
+      "factual_summary": "Xorosoft frames ERP agent governance around separating reasoning from authority. It recommends gradual permission expansion, system-of-record business-rule validation, approval thresholds, audit trails, revocation controls, and green/amber/red risk zones for operational actions.",
+      "follow_up_note": "Review for downstream rule that deterministic systems of record must validate agent-recommended side effects.",
+      "id": "xorosoft-erp-agent-governance-2026-09-03",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "Xorosoft",
+        "ERP",
+        "Shopify",
+        "Microsoft Dynamics 365 ERP MCP server",
+        "MCP"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://xorosoft.com/ai-agent-governance-erp/",
+      "upstream_owned_entities": [
+        "Xorosoft",
+        "Shopify",
+        "Microsoft Dynamics 365",
+        "MCP"
+      ],
+      "visible_date": "September 3, 2026",
+      "why_it_matters_for_leaf": "Adds concrete downstream practice implications for ownership rosters, governance controls, destructive-command boundaries, and prototype-to-cloud promotion gates where agents move from advisory to transactional authority."
+    },
+    {
+      "factual_summary": "CData defines AI agent data governance as policies and controls over what enterprise data agents can access, what they can do, and how actions are monitored and attributed. It recommends OAuth/SAML identity passthrough, RBAC enforcement, workspace isolation, least privilege, SIEM-exported audit trails, and before-go-live validation checks.",
+      "follow_up_note": "Review for downstream pilot-to-production checklist: identity passthrough, workspace isolation, SIEM logging, and least-privilege validation.",
+      "id": "cdata-agent-data-governance-2026-09-03",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "CData",
+        "CData Connect AI",
+        "MCP",
+        "OAuth 2.1",
+        "SAML",
+        "RBAC",
+        "SIEM",
+        "Copilot Studio",
+        "Claude",
+        "Gemini",
+        "OWASP Top 10 for Agentic Applications",
+        "NIST AI Risk Management Framework"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://www.cdata.com/blog/ai-agent-data-governance",
+      "upstream_owned_entities": [
+        "CData",
+        "MCP",
+        "OAuth",
+        "SAML",
+        "RBAC",
+        "SIEM",
+        "Copilot Studio",
+        "Claude",
+        "Gemini",
+        "OWASP",
+        "NIST AI Risk Management Framework"
+      ],
+      "visible_date": "September 3, 2026",
+      "why_it_matters_for_leaf": "Supports ownership rosters, governance controls, prompt-injection/untrusted-context handling, and promotion gates because governed pilots should validate attribution, scoped access, and blocked-source behavior before production."
+    },
+    {
+      "factual_summary": "TrueFoundry maps a 2026 LLM-agent security survey to runtime and control-plane responsibilities. It emphasizes information flow, delegated authority, persistent state, explicit trust boundaries, least privilege, containment, runtime mediation, and deployment-realistic evidence across model, tool, and agent boundaries.",
+      "follow_up_note": "Review for downstream systems-control wording: provenance-aware state and runtime mediation belong in harness requirements.",
+      "id": "truefoundry-agent-security-runtime-control-2026-08-31",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "named_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "Yuchen Ling",
+        "Shengcheng Yu",
+        "Zhenyu Chen",
+        "Chunrong Fang",
+        "MCP Gateway",
+        "Agent Registry",
+        "AI Gateway"
+      ],
+      "source_type": "public vendor analysis of public paper",
+      "source_url": "https://www.truefoundry.com/blog/llm-agent-security-runtime-control-planes",
+      "upstream_owned_entities": [
+        "TrueFoundry",
+        "TrueForge",
+        "MCP"
+      ],
+      "visible_date": "Published: August 31, 2026",
+      "why_it_matters_for_leaf": "Directly informs harness sizing, prompt injection, governance controls, destructive action controls, structured output/runtime boundaries, and user-visible telemetry by treating security as a composed systems problem rather than prompt filtering alone."
+    },
+    {
+      "factual_summary": "Superagentic AI announced SuperQode v2 as a harness interoperability layer for coding agents. The post emphasizes harness tradeoffs in context handling, tool surface, permissions, memory, cost, A2A/ACP/MCP interoperability, durable sessions, approvals, sandboxes, WorkOrders, HarnessSpec drift checks, and offline/local inference routes.",
+      "follow_up_note": "Review for downstream harness-as-artifact guidance, especially drift checks and declared sandbox/tool/write stances.",
+      "id": "superqode-v2-harness-interoperability-2026-09-02",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Superagentic AI",
+        "SuperQode",
+        "Agent2Agent",
+        "A2A",
+        "ACP",
+        "MCP",
+        "HarnessSpec",
+        "GEPA",
+        "MetaHarness",
+        "SkillOpt",
+        "Ollama",
+        "MLX",
+        "LM Studio",
+        "vLLM",
+        "SGLang",
+        "TGI",
+        "llama.cpp"
+      ],
+      "source_type": "public product post",
+      "source_url": "https://shashikantjagtap.net/introducing-superqode-v2-the-harness-interoperability-layer-for-coding-agents/",
+      "upstream_owned_entities": [
+        "SuperQode",
+        "A2A",
+        "ACP",
+        "MCP",
+        "Ollama",
+        "MLX",
+        "LM Studio",
+        "vLLM",
+        "SGLang",
+        "TGI",
+        "llama.cpp"
+      ],
+      "visible_date": "September 2, 2026",
+      "why_it_matters_for_leaf": "Useful for local model runtime harness and harness-sizing leaves because it treats the harness as a versioned artifact with declared runtime, sandbox, tools, memory, approvals, workflow, and evidence settings."
+    },
+    {
+      "factual_summary": "RequestRocket argues that runaway agent spend should be treated as runtime governance failure. It recommends outbound API meters, daily request or token envelopes, named agent identity at the cap, shared FinOps/security alerts, and 429-style behavior-specific kill switches paired with credential revocation for hostile sessions.",
+      "follow_up_note": "Review for downstream guidance on daily token/request envelopes, named capped identities, and spend-triggered session restriction.",
+      "id": "requestrocket-agent-cost-governance-2026-09-04",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "RequestRocket",
+        "ARISE",
+        "Aizome",
+        "Lawrence Pingree",
+        "Amir Ofek",
+        "MCP"
+      ],
+      "source_type": "public vendor post",
+      "source_url": "https://requestrocket.com/blog/ai-agent-cost-governance-runaway-spend",
+      "upstream_owned_entities": [
+        "RequestRocket",
+        "ARISE",
+        "Aizome",
+        "MCP"
+      ],
+      "visible_date": "September 4, 2026",
+      "why_it_matters_for_leaf": "Supports governance controls, destructive-command controls, lifecycle gates, and progress telemetry because economic limits are another blast-radius control for long-running agents."
+    }
+  ],
+  "raw_only": true,
+  "run_timestamp_local": "2026-09-03T21:01:57-0400",
+  "run_timestamp_utc": "2026-09-04T01:01:57Z",
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://www.axios.com/2026/09/03/house-bill-ai-agents-security",
+    "https://www.expresscomputer.in/guest-blogs/your-ai-agent-has-just-made-a-decision-who-owns-it/138183/",
+    "https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs",
+    "https://www.anthropic.com/news/improving-alignment-security-efforts",
+    "https://blog.codacy.com/ai-code-review-governance",
+    "https://parallel.ai/blog/how-to-eval-web-search",
+    "https://www.harness.io/blog/shipped-in-august-2026",
+    "https://xorosoft.com/ai-agent-governance-erp/",
+    "https://www.dunify.co/blog/ai-agent-governance",
+    "https://requestrocket.com/blog/ai-agent-cost-governance-runaway-spend",
+    "https://www.cdata.com/blog/ai-agent-data-governance",
+    "https://shashikantjagtap.net/introducing-superqode-v2-the-harness-interoperability-layer-for-coding-agents/",
+    "https://www.truefoundry.com/blog/llm-agent-security-runtime-control-planes",
+    "https://www.theguardian.com/news/2026/sep/01/if-you-build-something-vastly-smarter-than-you-it-better-be-on-your-side-can-we-stop-ai-from-deceiving-us",
+    "https://openai.com/index/designing-agents-to-resist-prompt-injection/",
+    "https://www.sysdig.com/learn-cloud-native/prompt-injection",
+    "https://www.sonarsource.com/resources/library/best-ai-code-review-tools/"
+  ]
+}
