@@ -1,0 +1,291 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_local": "2026-09-04T21:02:11-0400",
+  "run_timestamp_utc": "2026-09-05T01:02:11Z",
+  "cutoff_window": {
+    "start_utc": "2026-08-29T01:02:11Z",
+    "end_utc": "2026-09-05T01:02:11Z",
+    "rule": "Include only public sources with direct visible publication or update dates inside the last 7 days relative to the run time; exclude missing, ambiguous, future-dated, crawl-only, snippet-only, or boundary-only dates."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+  ],
+  "source_urls_checked": [
+    "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+    "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+    "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+    "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+    "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+    "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+    "https://meet.modelcontextprotocol.io/2026/09/mcp-agents-working-group-weekly--nFSIHNrMph1N",
+    "https://openai.com/index/path-to-astra/",
+    "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+    "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+    "https://www.ideabosque.com/library/ai-workflow-design-multi-step-agent-processes/",
+    "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can"
+  ],
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-budget-expiration-2026-09-01",
+      "source_url": "https://github.blog/changelog/2026-09-01-set-an-expiration-date-for-individual-user-budgets/",
+      "visible_date": "September 1, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "factual_summary": "GitHub Copilot Business and Enterprise administrators can set optional expiration dates for individual user budgets. Expired individual budgets fall back to the next applicable cost-center or universal budget, and the Budgets REST API exposes an expires_at field.",
+      "why_it_matters_for_leaf": "Temporary spend overrides can now be treated as governed pilot, onboarding, incident-response, or role-change controls with explicit cleanup rather than manual follow-up debt.",
+      "named_entities": [
+        "GitHub Copilot",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "Budgets REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "federation_routing": "Broad product and pricing details are upstream-owned; keep the downstream implication about temporary budget ownership, expiry, and workflow outcome evidence.",
+      "follow_up_note": "Consider adding a future ingest note to keep temporary budget overrides tied to owner, reason, model route, expiry, and accepted outcome."
+    },
+    {
+      "id": "github-copilot-code-review-approval-assessments-2026-09-01",
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "visible_date": "September 1, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "factual_summary": "GitHub Copilot code review now includes approval assessments and can be authorized to submit pull-request approvals in public preview. The feature is off by default, configurable at enterprise, organization, and repository levels, and fresh commits dismiss Copilot approvals like human approvals.",
+      "why_it_matters_for_leaf": "AI review output can now become merge-rule evidence when explicitly enabled, so local review gates should distinguish advisory assessments from authorized approvals that affect mergeability.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "federation_routing": "Product feature coverage belongs upstream; local coverage should focus on code-review authority, approval boundaries, and product judgment gates.",
+      "follow_up_note": "Ingest should separate at-a-glance AI approval assessments from merge-counting approvals and require admin-scope evidence before treating them as release gates."
+    },
+    {
+      "id": "github-copilot-enterprise-default-model-settings-2026-09-02",
+      "source_url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+      "visible_date": "September 2, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "factual_summary": "GitHub Copilot enterprise-managed settings can set any preferred Copilot model as the default for new conversations, and can customize defaults by enterprise team through managed configuration files.",
+      "why_it_matters_for_leaf": "Model defaults become durable operating instructions that can vary by team, so request packages and telemetry should record which managed default shaped cost, behavior, and validation expectations.",
+      "named_entities": [
+        "GitHub Copilot",
+        "enterprise-managed settings",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "federation_routing": "Keep model and product catalog context upstream; downstream note should cover durable policy files, team defaults, and cost or eval attribution.",
+      "follow_up_note": "If ingested, tie managed model defaults to skill/instruction ownership and workflow-level telemetry rather than duplicating model catalog details."
+    },
+    {
+      "id": "github-copilot-claude-fable-5-1-data-retention-2026-09-01",
+      "source_url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot/",
+      "visible_date": "September 1, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "factual_summary": "GitHub announced Claude Fable 5.1 availability in Copilot with a policy that is off by default for Business and Enterprise. GitHub says this model requires data retention by default for Anthropic safety classifiers, with time-bound zero-data-retention access available only to eligible enterprise customers.",
+      "why_it_matters_for_leaf": "Model enablement is also a data-control and approval decision; local governance should require retention, eligibility, policy owner, and exception-expiry evidence before routing sensitive workflows to the model.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Claude Fable 5.1",
+        "Anthropic",
+        "Enterprise Frontier Safeguards"
+      ],
+      "upstream_owned_entities": [
+        "Claude Fable 5.1",
+        "Anthropic",
+        "GitHub Copilot"
+      ],
+      "federation_routing": "Broad model capabilities are upstream-owned; downstream coverage should focus on data retention, enablement authority, and sensitive-workflow routing.",
+      "follow_up_note": "Potential ingest should update sensitive-data and approval-boundary pages with model-policy and retention-gate implications."
+    },
+    {
+      "id": "openai-astra-frontier-safeguards-2026-09-01",
+      "source_url": "https://openai.com/index/path-to-astra/",
+      "visible_date": "September 1, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "OpenAI said Astra meets its Critical cybersecurity capability threshold and described stronger safeguards, additional monitoring, and production misalignment monitors that can slow, pause, or stop legitimate work. If a task pauses in ChatGPT or Codex, users may be asked to review; API tasks stop.",
+      "why_it_matters_for_leaf": "High-capability agent runs need durable authorization, trace, pause, resume, and calibration evidence because safety monitors can interrupt long-running or defensive workflows as part of the execution boundary.",
+      "named_entities": [
+        "OpenAI",
+        "Astra",
+        "Codex",
+        "ChatGPT",
+        "Preparedness Framework",
+        "Daybreak"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Astra",
+        "GPT-6 Astra",
+        "Daybreak"
+      ],
+      "federation_routing": "Keep model/system-card background upstream; local practice implication is execution-edge authorization, observability, and representative workflow calibration.",
+      "follow_up_note": "Ingest should emphasize designed pause states and trace evidence for long-running agent workflows rather than model capability cataloging."
+    },
+    {
+      "id": "ideabosque-agent-workflow-state-patterns-2026-09-01",
+      "source_url": "https://www.ideabosque.com/library/ai-workflow-design-multi-step-agent-processes/",
+      "visible_date": "Last updated: September 1, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md"
+      ],
+      "factual_summary": "IdeaBosque described five workflow-level patterns for multi-step agents: parallel read fan-out with serialized writes, human checkpoints as durable states, compensation paths, durable workflow state over stateless protocols, and measured data-driven branching.",
+      "why_it_matters_for_leaf": "This reinforces the local rule that approval and recovery boundaries should be persisted as workflow state and audit evidence, not left as prompt-only instructions in a chat session.",
+      "named_entities": [
+        "IdeaBosque",
+        "Model Context Protocol",
+        "MCP",
+        "OpenAI",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "OpenAI",
+        "Gartner"
+      ],
+      "federation_routing": "MCP protocol details are upstream-owned; downstream value is the workflow-state and approval-boundary practice.",
+      "follow_up_note": "Potential ingest can cross-link approval boundaries, context request packages, and shared-channel sessions around durable workflow state."
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "exclusion_reason": "Already captured in same-day topic news collector raw artifact raw/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json; broad model details are upstream-owned.",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/",
+      "visible_date": "September 3, 2026",
+      "exclusion_reason": "Already captured in same-day topic news collector raw artifact; broad model availability is upstream-owned, with only pricing and validation implications local.",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+      "visible_date": "September 2, 2026",
+      "exclusion_reason": "Already captured in same-day topic news collector raw artifact; would otherwise qualify for sensitive-code and context-exclusion practice.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ]
+    },
+    {
+      "source_url": "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+      "visible_date": "September 4, 2026",
+      "exclusion_reason": "Already captured in same-day topic news collector raw artifact; avoid duplicate raw capture in this leaf watch.",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+      "visible_date": "Published 3 September 2026",
+      "exclusion_reason": "Already captured in same-day topic news collector raw artifact; would otherwise qualify for browser-agent runtime and product-judgment evaluation practice.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://shiftmag.dev/ai-agents-arent-safe-from-prompt-injection-and-spreadsheets-prove-it-11609/",
+      "visible_date": "27.08.2026",
+      "exclusion_reason": "Visible publication date is before the strict window start of 2026-08-29T01:02:11Z.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ]
+    },
+    {
+      "source_url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+      "visible_date": "August 22, 2026",
+      "exclusion_reason": "Visible publication date is before the strict window start of 2026-08-29T01:02:11Z, even though the page remains relevant to durable-state and agent-identity practice.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ]
+    },
+    {
+      "source_url": "https://meet.modelcontextprotocol.io/2026/09/mcp-agents-working-group-weekly--nFSIHNrMph1N",
+      "visible_date": "September 4, 2026",
+      "exclusion_reason": "Event listing has little substantive public detail beyond agenda and repository links, so it is not enough for a factual local-practice update.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md"
+      ]
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only artifact; do not update docs/wiki from this watch.",
+    "Route broad model, product, company, MCP, and vendor background to the upstream AI wiki; keep only downstream operating practice, approval, telemetry, verification, context, and governance implications here.",
+    "Same-day topic collector duplicates were recorded as exclusions instead of repeated qualifying updates."
+  ]
+}
