@@ -91,6 +91,12 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The September 2 raw sources add temporary budget and managed-default evidence. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records expiring individual user budgets for Copilot, and the [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records managed default models, model cost/capability views, and reasoning-effort controls. Locally, temporary budget overrides should be tied to pilots, onboarding, incident response, or role changes, with expiry, owner, exception reason, model route, and accepted-outcome evidence preserved.
 
+The September 4 raw sources add budget-expiry and model-policy reinforcement:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records optional individual-budget expiration and fallback to cost-center or universal budgets.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records model availability, replacement schedules, and stronger-model enablement as administrator policy events.
+- Locally, budget expiry should be reviewed with the same workflow evidence as model enablement: owner, exception reason, planned end date, fallback budget, affected assistant surfaces, and accepted outcomes.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -156,9 +162,12 @@ The September 2 raw sources add temporary budget and managed-default evidence. T
 - Prefer app-scoped credentials for recurring billing and usage telemetry only when the permission class, affected budgets, cost centers, reconciliation workflow, owner, and revocation path are recorded.
 - Track agent economics by accepted change, review outcome, quota pressure, request fan-out, and context reuse so lower nominal model cost does not hide extra coordination, verification, or retry cost.
 - Record temporary budget overrides with expiry date, owner, exception reason, model route, reasoning effort, and accepted-outcome evidence so pilot or incident spend cleans itself up.
+- Review expired individual budgets against their fallback cost center or universal budget so spend controls do not silently outlive the workflow or remove a still-needed pilot route.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
@@ -237,6 +246,7 @@ The September 2 raw sources add temporary budget and managed-default evidence. T
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with budget-expiry fallback, model-policy replacement, and workflow-level owner evidence for cost controls.
 - Maintained on 2026-09-02 with temporary budget expiry, managed default model, model cost/capability view, reasoning-effort, exception-owner, and accepted-outcome evidence.
 - Maintained on 2026-08-29 with FinOps quota, cost-per-accepted-change, subagent routing, and leaderboard-methodology cost evidence.
 - Maintained on 2026-08-26 with app-scoped billing automation, budget/cost-center permission review, and revocation evidence for recurring AI cost telemetry.

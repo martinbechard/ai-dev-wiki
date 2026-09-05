@@ -69,6 +69,12 @@ The August 20 raw sources add governed-skill, credential, and evidence-pack cont
 
 The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) treats browser extensions, plug-ins, connectors, MCP servers, embedded assistants, and behavior-policed code execution as changing supply-chain surfaces even when the parent app is approved. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds public skill-directory growth as an intake risk. Locally, third-party skills, resource lists, plugins, generated code, and connected-app features remain untrusted until provenance, authority, tool scope, data path, runtime behavior, and owner approval are checked.
 
+The September 4 raw sources add retention and publishing-control evidence:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records a coding model in Copilot that requires default data retention for safety classifiers unless an eligible enterprise zero-data-retention exception applies.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records Copilot content exclusions, npm trusted publishing configurations, staged approval after malware scanning, reusable workflow identity, and CodeQL query expansion.
+- Locally, model enablement, package publishing, reusable workflows, and scanner upgrades should be treated as one supply-chain review path when agent-authored code can reach repositories or registries.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -132,9 +138,12 @@ The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf 
 - Reassess approved AI tools when connectors, plug-ins, browser extensions, MCP servers, embedded assistants, or action capabilities change the data path or side-effect surface.
 - Treat third-party skill directories and resource lists as discovery sources, not installation authority; review skill contents, owner, version, shell behavior, and allowed tools before import.
 - Require behavior-policy or execution-policy evidence before running AI-generated or AI-carried code when provenance, signature, or SBOM evidence cannot prove runtime intent.
+- Review data-retaining model routes, content exclusions, trusted-publishing OIDC configuration, staged malware-scan approval, reusable workflow identity, and CodeQL coverage before agent-authored changes reach package or release paths.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -214,6 +223,7 @@ The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with data-retention exception, content-exclusion, trusted-publishing, staged malware-scan, reusable-workflow identity, and CodeQL supply-chain evidence.
 - Maintained on 2026-09-01 with customer-owned log storage, managed keys, opt-in monitoring, watermark provenance, private plugin, and reusable review-skill supply-chain controls.
 - Maintained on 2026-08-29 with retention, billing, sandbox, connected-app policy, and managed review-default controls for proprietary-code workflows.
 - Maintained on 2026-07-23 with deterministic guardrails, sandbox escapes, SANDWORM_MODE, untrusted AI-authored commit, package-token, egress, and containment guidance.

@@ -67,6 +67,12 @@ The August 31 raw sources add eval-containment, runtime-infrastructure, RAG, and
 
 The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds sandbox preflight, trajectory-grader, and monitor-evaluation evidence. Verification should check named runtime profiles, migration safety, network isolation, solvability, declared target boundaries, monitor halt behavior, grader pass rates, and whether supervisory agents abstained when evidence was weak.
 
+The September 4 raw sources add demanding-work validation and browser-agent eval evidence:
+
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records Codex and Copilot guidance that stronger models should plan, validate, batch diagnosis, check results, and use asynchronous clarification only when the available tool supports it.
+- The same source records browser-agent evaluation gaps around transactions and irreversible actions.
+- Locally, verification should require tool-availability checks, result inspection, transaction-safety gates, and documented safeguards before a workflow credits stronger-model or browser-agent claims.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -127,9 +133,11 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - Treat production-like dependency access and concurrent-session isolation as verification prerequisites when an agent must prove code against real service behavior.
 - Measure AI-native code analysis by validated true positives, remediation age, debt reduction, regression rate, and reviewer workload instead of raw finding counts.
 - Check runtime profile, migration safety, network isolation, declared target boundaries, monitor halt behavior, grader pass rates, and abstention quality before accepting autonomous or supervisory agent workflows.
+- Verify tool availability, result inspection, transaction-safety controls, irreversible-action safeguards, and browser-agent eval coverage before accepting stronger-model or autonomous-browser workflow claims.
 
 ## Authoritative Sources
 
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
@@ -206,6 +214,7 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with stronger-model validation, async-tool availability, result-inspection, transaction-safety, and browser-agent evaluation evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration-safety, network-isolation, target-boundary, monitor-halt, trajectory-grader, and abstention-quality verification evidence.
 - Maintained on 2026-08-29 with formal-methods, automated-reasoning, approval-depth, maintainable-agent, observability, rollback, and outcome-review evidence.
 - Maintained on 2026-07-23 with workflow-fit eval selection, benchmark-ledger routing, deterministic guardrails, containment, and independent-check guidance.

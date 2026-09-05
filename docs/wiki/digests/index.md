@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) includes September 3 practice updates for agent identity, owned memory, tool-call audit, workspace isolation, web-search evaluation, security-repair review, governed deployment, and spend controls.
+The [current September digest](2026-09.md) includes September 4 practice updates for budget expiry, AI review approvals, managed model routing, data retention, workflow state, browser-agent safeguards, async-tool availability, supply-chain gates, and stronger-model verification.
 
 ## Monthly Digests
 
@@ -91,3 +91,4 @@ The [current September digest](2026-09.md) includes September 3 practice updates
 - Maintained on 2026-09-01 with runtime-profile, tool-surface, supervisory-monitor, audit-storage, worktree-isolation, long-running-task, and adoption-policy digest scope.
 - Maintained on 2026-09-02 with context-policy, model-governance, review-authority, media-evidence, tool-audit, desktop-agent, application-boundary, security-gate, loop-timebox, and budget-expiry digest scope.
 - Maintained on 2026-09-03 with agent-identity, owned-memory, tool-call-audit, workspace-isolation, web-search-eval, security-repair-review, governed-deployment, and spend-control digest scope.
+- Maintained on 2026-09-04 with budget-expiry, review-approval, model-routing, retention, workflow-state, browser-agent, async-tool, supply-chain, and verification digest scope.

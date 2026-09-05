@@ -41,6 +41,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The September 2 raw sources add policy and interface state evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records content-exclusion policy, managed model defaults, side conversations, prompt timelines, shared sessions, session continuation, and permission modes. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop-agent work and app-boundary surfaces. Locally, the process layer should persist policy version, excluded context, model route, conversation branch, prompt timeline, collaboration surface, approval state, UI resource boundary, and authoritative backend action result.
 
+The September 4 raw sources add workflow-state and checkpoint evidence:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records model defaults, budget expiry, approval state, data-retention exceptions, and production monitors that can slow, pause, or stop work.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records multi-root sessions, session hierarchies, attention status, Agent Merge, reusable workflow identity, and human checkpoints as durable states.
+- Locally, the process layer should persist which state caused a pause, which model and budget policy applied, which session branch or root was active, and which human checkpoint released or redirected the workflow.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -63,9 +69,12 @@ The September 2 raw sources add policy and interface state evidence. The [Septem
 - Persist long-lived goals, event subscriptions, steering state, orchestration artifacts, intermediate channel-visible work, approvals, and handoff decisions as application state outside the model transcript.
 - Persist declarative action state, checkpoints, human-input requests, telemetry hooks, REPL histories, memories, subagent specs, recovery state, resource accounting, and verification records outside the model transcript for long-running harnesses.
 - Persist content-exclusion policy, model default, conversation branch, prompt timeline, collaboration surface, permission mode, UI resource boundary, approval state, and authoritative action result when agent work crosses desktop, CLI, chat, or application surfaces.
+- Persist model and budget policy, pause reason, monitor decision, session hierarchy, active root, merge state, reusable-workflow identity, and human-checkpoint result when long-running agent work can branch or stop.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -111,6 +120,7 @@ The September 2 raw sources add policy and interface state evidence. The [Septem
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with budget-policy, model-route, pause-monitor, session-hierarchy, active-root, merge-state, reusable-workflow identity, and checkpoint-state evidence.
 - Maintained on 2026-08-29 with AI-native orchestration, cross-surface action, approval-point, owner, evidence, and rollback workflow-state signals.
 - Created on 2026-06-23 from local source guidance on AI process layers, workflow state, validation loops, tools, checkpoints, and compaction.
 - Maintained on 2026-07-02 with operational-readiness, workflow-memory, citation, logging, approval, and handoff-state requirements.

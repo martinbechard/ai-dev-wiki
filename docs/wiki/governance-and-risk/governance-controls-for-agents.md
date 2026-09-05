@@ -91,6 +91,12 @@ The September 3 raw sources add control-stack and spend-boundary evidence:
 
 Locally, governance controls should join those records by agent or session so a risky run can be attributed and stopped outside model self-limiting.
 
+The September 4 raw sources add policy-default, pause-monitor, and supply-chain-control evidence:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records budget expiry, AI review approvals, managed defaults, data-retaining model enablement, and cybersecurity monitors that can slow, pause, or stop work.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records content exclusions, model policy, model deprecation, trusted publishing, reusable workflow identity, and human checkpoints.
+- Locally, administrator policy should bind those controls to the agent, repository, workflow, model route, budget, data boundary, and release or registry path before autonomous work scales.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -159,9 +165,12 @@ Locally, governance controls should join those records by agent or session so a 
 - Keep AI-assisted contributor accountability, review, testing, maintainability, and legal-compliance obligations explicit even when a policy does not require AI-use disclosure.
 - Probe containment, network reachability, tool restrictions, monitoring, and human stop paths before high-risk agent evaluations or security-testing workflows proceed.
 - Enforce runtime policy over tool intent, data movement, package and MCP server installation, scope drift, and follow-up instructions when agents can cross systems.
+- Bind budget expiry, AI approvals, managed model defaults, data-retaining routes, pause monitors, content exclusions, trusted publishing, and reusable-workflow identity to explicit administrator policy before recurring agents can affect repositories, packages, or external systems.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
@@ -251,6 +260,7 @@ Locally, governance controls should join those records by agent or session so a 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with budget-expiry, AI-approval, managed-default, data-retention, pause-monitor, content-exclusion, trusted-publishing, and workflow-identity controls.
 - Maintained on 2026-08-31 with AI-assisted contributor accountability, runtime semantic-policy, eval containment, tool-intent, data-movement, package/MCP-install, and high-risk network-boundary evidence.
 - Maintained on 2026-09-03 with identity-access-memory-monitoring-audit stack, business-rule validation, SIEM export, cost envelopes, kill-switch, and revocation evidence.
 - Maintained on 2026-07-23 with agent classification, rationale, confidence, proposed-change approval, activity oversight, and prompt-injection detection guidance.

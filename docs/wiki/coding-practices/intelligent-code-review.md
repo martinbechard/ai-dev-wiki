@@ -85,6 +85,12 @@ The September 1 raw sources add reusable review-skill, scoped AI-approval, and c
 
 The September 2 raw sources add delegated-approval, media-evidence, and pre-PR review signals. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records path-scoped AI approval authority, Git-agent review of uncommitted changes or commits, second-opinion review commands, and review-effort or cost controls. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records CLI-attached images or videos as review evidence. Locally, review should distinguish readiness assessments from approval authority, preserve media provenance and alt text when visual evidence matters, and keep pre-PR review findings tied to the exact diff or commit inspected.
 
+The September 4 raw sources add approval, merge-readiness, and content-boundary evidence:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records Copilot code review approval assessments that are off by default, configurable at enterprise, organization, and repository levels, and dismissed by fresh commits like human approvals.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records content exclusions, Agent Merge, multi-root sessions, review-relevant model validation claims, and CodeQL security-check expansion.
+- Locally, AI approval should remain a repository-owner policy with path scope, stale-approval invalidation, content-exclusion evidence, deterministic scanner joins, and human accountability before it affects merge readiness.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -163,9 +169,12 @@ The September 2 raw sources add delegated-approval, media-evidence, and pre-PR r
 - Preserve bot-authored PR attribution, automated-review identity, review-effort setting, large-diff strategy, resolution reason, telemetry evidence, and pre-PR review evidence when agents review agent-authored work.
 - Treat reusable review skills, AI approval signals, default review effort, path-scoped approval rules, stale-approval dismissal, and contributor accountability as review-system evidence that needs repository-owner policy before it affects merge decisions.
 - Distinguish AI readiness assessments from merge-counting approvals, and preserve path scope, inspected diff or commit, media attachment provenance, review effort, and human acceptance when visual or pre-PR evidence supports review.
+- Treat AI pull-request approvals as review-system evidence only when repository policy, path scope, content exclusions, scanner results, stale-approval dismissal, and human merge accountability are recorded.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
@@ -248,6 +257,7 @@ The September 2 raw sources add delegated-approval, media-evidence, and pre-PR r
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with AI approval, stale-dismissal, content-exclusion, Agent Merge, model-validation, and CodeQL evidence.
 - Maintained on 2026-08-29 with bot-to-agent review, large-diff review strategy, review-effort, pre-PR review, telemetry, and human acceptance evidence.
 - Maintained on 2026-09-01 with reusable review-skill, path-scoped AI approval, stale-approval dismissal, default review-effort, and contributor-accountability evidence.
 - Maintained on 2026-08-23 with first-pass review boundaries, runtime-evidence requirements, risk-tiered policy, security gates, and review-cost accounting.

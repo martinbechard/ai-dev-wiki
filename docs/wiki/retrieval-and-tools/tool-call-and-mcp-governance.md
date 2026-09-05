@@ -94,6 +94,12 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Tool-call records should preserve actor, authentication, policy, arguments, result status, timing, storage, and troubleshooting context.
 - MCP adoption should verify sandboxing, explicit authentication, quotas, curated gateway endpoints, and mediated deployment execution before trusting side effects.
 
+The September 4 raw sources add async-tool and workflow-identity evidence:
+
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records Codex CLI guidance fixes that narrow asynchronous clarification to sessions where the relevant tool exists and supports the expected text-only payload.
+- The same source records reusable workflow identity fields, multiple trusted-publishing OIDC configurations, staged approvals, and content exclusions in agent-facing Copilot surfaces.
+- Locally, tool governance should record tool availability, payload modality, workflow file identity, publishing configuration, staged approval status, and excluded-content policy before tool-mediated work is accepted.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -178,9 +184,11 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Prefer narrow CLI tool surfaces by default; require explicit MCP command, arguments, version pin, allowed-tool list, persistent-state reason, and approval-policy metadata when richer tool access is enabled.
 - Preserve call ID, session, actor, tool, arguments, authentication, policy decision, result state, request metadata, outcome, and storage location for governed tool calls.
 - Separate tool execution, inter-agent communication, host-rendered UI, sandboxed app resources, human approval, and authoritative transaction state when MCP-style applications can write or commit changes.
+- Record tool availability, payload modality, reusable workflow identity, publishing configuration, staged approval status, and content-exclusion policy when a tool-mediated agent action depends on async questions, OIDC publishing, or generated review.
 
 ## Authoritative Sources
 
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
@@ -277,6 +285,7 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with async-tool availability, payload-modality, reusable-workflow identity, trusted-publishing configuration, staged approval, and content-exclusion evidence.
 - Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
 - Maintained on 2026-09-01 with CLI-first browser tooling, explicit MCP configuration, package-version pinning, allowed-tool lists, Node REPL approval policy, code-review approval, and managed-plugin evidence.
 - Maintained on 2026-09-02 with tool-call audit fields, per-assistant grant evidence, MCP/A2A/A2UI/MCP Apps boundary separation, approval handoff, and transaction-authority evidence.

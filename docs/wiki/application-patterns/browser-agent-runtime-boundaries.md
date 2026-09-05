@@ -21,6 +21,12 @@ The August 23 raw sources add two boundary refinements. The [topic news collecto
 
 The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json) adds product signals for separate agent browsers and user-browser agents while broad Claude product coverage stays upstream-owned. Locally, browser-agent runtime selection should distinguish agent-owned browser identity from imported user sessions, require explicit import or exclusion rules for sensitive sites, and pair autonomous actions with prompt-injection screening, action-intent classifiers, enterprise domain controls, manual override, and browser-use evaluation evidence.
 
+The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) adds browser-agent evaluation evidence:
+
+- Transaction handling was the lowest-scoring evaluated browser capability in the reported source.
+- Many multi-step workflows lacked documented safeguards before irreversible actions.
+- Locally, browser-agent runtime design should require transaction fixtures, no-op or sandbox routes, explicit irreversible-action checkpoints, and captured safeguard evidence before authenticated browser agents handle real accounts or business records.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -35,9 +41,11 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 - Reclassify approved browser extensions, plug-ins, connectors, and embedded assistants when they gain new identity, data-access, or action-taking behavior.
 - Distinguish separate agent-browser sessions from user-browser extension sessions before importing logins, cookies, bookmarks, passwords, or site-specific state.
 - Require trusted-site scope, sensitive-site exclusions, prompt-injection probes, action-intent checks, manual override paths, enterprise enablement policy, and evaluation evidence before browser agents take autonomous actions.
+- Use transaction fixtures, sandbox or no-op routes, irreversible-action checkpoints, and documented safeguard evidence before accepting browser-agent workflows that can submit forms, purchase, approve, delete, or mutate records.
 
 ## Authoritative Sources
 
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [agent harness components](agent-harness-components.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
@@ -73,6 +81,7 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.
 - Maintained on 2026-08-23 with browser-test proof requirements and approved-app drift checks for browser-adjacent agent surfaces.

@@ -83,6 +83,12 @@ The August 30 raw sources add selection criteria from public agent TDD, asynchro
 
 The August 31 raw sources add execution-boundary, control-layer, and adoption-framework evidence. The [leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) records coding-agent comparisons by editor-first, terminal, cloud-delegation, and manager-layer fit, plus enterprise control-layer evidence for model-routing policy, workflow versions, run artifacts, outcomes, and provenance. The [topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) records adoption-framework coverage for workforce readiness, operating models, governance, code review, testing, requirements, quality controls, and team responsibilities. Locally, assistant choice should follow execution boundary, isolation, approval, review, provenance, and adoption measurement requirements rather than generic product rank.
 
+The September 4 raw sources add availability, deprecation, and stronger-model routing evidence:
+
+- The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records managed default-model settings and data-retaining model exceptions.
+- The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records GPT-6 Astra availability, model deprecations, Gemini 3.8 Flash validation claims, and Codex CLI guidance fixes for asynchronous questions.
+- Locally, a model route should change only after the workflow maps affected surfaces, replacement deadline, retention terms, verification evidence, async-question support, and fallback behavior.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -139,9 +145,12 @@ The August 31 raw sources add execution-boundary, control-layer, and adoption-fr
 - Compare coding-agent surfaces by setup surface, editor fit, runtime location, model/provider flexibility, privacy mode, self-hosting option, review workflow, approval mode, and team policy controls.
 - Decide persistence, self-hosting, reusable skills, permissions, memory, eval loops, and infrastructure requirements before turning an assistant comparison into a team default.
 - Compare assistant and manager layers by execution location, workspace isolation, approval flow, review surface, scheduling, monitoring, provenance, and adoption-measurement requirements before selecting a model or product route.
+- Treat stronger-model availability, model retirement, retention exceptions, and async-question support as workflow-lifecycle changes that need surface inventory, replacement testing, fallback policy, and verification evidence before defaults move.
 
 ## Authoritative Sources
 
+- [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -223,6 +232,7 @@ The August 31 raw sources add execution-boundary, control-layer, and adoption-fr
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-04 with stronger-model availability, deprecation, retention, validation-claim, and async-question support routing evidence.
 - Maintained on 2026-08-31 with execution-boundary, manager-layer, model-routing-policy, workflow-provenance, workforce-readiness, governance, quality-control, and adoption-measurement evidence.
 - Maintained on 2026-08-29 with shared custom-agent, effort-control, policy-convergence, formal-verification, session-recovery, and subagent-economics workflow-selection evidence.
 - Maintained on 2026-08-29 with AI-native workflow redesign, managed policy, review-effort, retention, billing, sandbox, workspace-layer, and prototype-to-deployment selection inputs.
