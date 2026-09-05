@@ -1,0 +1,483 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-05T00:32:14Z",
+  "run_timestamp_local": "2026-09-04T20:32:14-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-03T00:32:14Z",
+    "end_utc": "2026-09-05T00:32:14Z",
+    "rule": "Include only public sources with direct visible publication or update dates inside the last two days relative to the run time; exclude missing, ambiguous, future-dated, crawl-only, snippet-only, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, evaluation, adoption, and implementation lenses.",
+    "upstream_owned_scope": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad AI techniques"
+    ],
+    "handling": "Broad entity news is marked upstream-owned; this artifact keeps only downstream practice implications or routing notes."
+  },
+  "collection_method": {
+    "source_types": [
+      "official changelogs",
+      "vendor documentation/news pages",
+      "enterprise practice articles",
+      "software engineering and agent evaluation coverage"
+    ],
+    "privacy_boundary": "Only public web sources were searched. No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Codex CLI hotfix narrows asynchronous clarification guidance to available tools",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_date": "2026-09-04",
+      "date_evidence": "The ChatGPT and Codex changelog lists Codex CLI 0.153.4 under September 2026 with a visible 2026-09-04 date.",
+      "summary": "Codex CLI 0.153.4 fixed Astra visibility in the bundled model picker and updated Astra guidance so asynchronous questions are used only when the relevant tool is available in the current session.",
+      "why_it_matters_for_ai_assisted_development": "The update is practice-level evidence that model-facing agent instructions need to be conditioned on the actual session tool surface, especially when clarification flows depend on optional tooling.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "GPT-6 Astra",
+        "Astra",
+        "asynchronous questions"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "GPT-6 Astra",
+        "Astra"
+      ],
+      "local_practice_implication": "Instruction packs should gate optional interaction patterns on tool availability and avoid telling agents to use workflows that the current harness cannot execute.",
+      "follow_up_notes": "Consider using this as source evidence for prompt/instruction capability gating."
+    },
+    {
+      "title": "Codex CLI backport corrects async-question guidance for text-only support",
+      "source_url": "https://learn.chatgpt.com/docs/changelog",
+      "visible_date": "2026-09-04",
+      "date_evidence": "The ChatGPT and Codex changelog lists Codex CLI 0.153.3 with a visible 2026-09-04 date.",
+      "summary": "Codex CLI 0.153.3 added GPT-6 Astra to Amazon Bedrock catalogs and corrected guidance for asynchronous clarification questions so the guidance uses the supported tool and recognizes that the tool accepts text only.",
+      "why_it_matters_for_ai_assisted_development": "The correction highlights a durable authoring concern: prompts and agent instructions should document the shape of tool inputs, not just the existence of a capability.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "GPT-6 Astra",
+        "Amazon Bedrock",
+        "Mantle",
+        "Runtime"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex CLI",
+        "GPT-6 Astra",
+        "Amazon Bedrock",
+        "Mantle",
+        "Runtime"
+      ],
+      "local_practice_implication": "Tool-use guidance should specify supported argument types and fallback behavior so agents do not infer richer I/O than the harness exposes.",
+      "follow_up_notes": "Route model/catalog details upstream; keep the text-only tool contract implication locally."
+    },
+    {
+      "title": "OpenAI weekly Codex digest emphasizes demanding-work verification before completion",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new",
+      "visible_date": "August 31-September 4, 2026",
+      "date_evidence": "The What's new page groups the update under the visible August 31-September 4, 2026 digest window.",
+      "summary": "The Codex digest describes GPT-6 Astra as intended for complex work across code, apps, and research, with users carrying out a workflow, checking the result, and producing artifacts that fit their templates and task.",
+      "why_it_matters_for_ai_assisted_development": "Although the model and product details are upstream-owned, the downstream practice point is that higher-capability coding agents still need explicit result checks and template/task-fit acceptance before completion.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Work",
+        "GPT-6 Astra"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT Work",
+        "GPT-6 Astra"
+      ],
+      "local_practice_implication": "Treat advanced-agent adoption as a workflow design problem: task execution, result checking, and artifact conformance remain explicit completion criteria.",
+      "follow_up_notes": "Potential source for an adoption lens on matching agent capability to verification burden."
+    },
+    {
+      "title": "GitHub Copilot weekly release links agent work to content protections and merge readiness",
+      "source_url": "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/",
+      "visible_date": "September 4, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 4, 2026.",
+      "summary": "GitHub's weekly Copilot release notes say Copilot app and CLI now honor content exclusions, JetBrains has a generally available Copilot harness, and VS Code updates include Agent Merge, multi-root agent sessions, session hierarchies, and attention status.",
+      "why_it_matters_for_ai_assisted_development": "The update ties several local practices together: sensitive-code exclusions, harness consistency, multi-workspace delegation, review feedback repair, failed-check repair, merge-conflict repair, and clear attention signals.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "JetBrains",
+        "VS Code",
+        "Agent Merge",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "JetBrains",
+        "VS Code",
+        "Agent Merge",
+        "Claude"
+      ],
+      "local_practice_implication": "Agent workspaces should combine context-exclusion policy, merge-readiness loops, workspace scoping, and visible attention states instead of treating agent delegation as a single undifferentiated chat.",
+      "follow_up_notes": "Useful for source workflow and agent-work coordination lenses; direct VS Code release date was outside the strict window, so this cites the in-window weekly GitHub summary."
+    },
+    {
+      "title": "GitHub Copilot model availability notes planning, validation, and admin enablement",
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 4, 2026.",
+      "summary": "GitHub announced GPT-6 Astra availability in Copilot and described internal testing where the model planned and validated as it went, batched diagnosis with verification, and confirmed results before declaring completion. Business and Enterprise administrators can manage access through model policy.",
+      "why_it_matters_for_ai_assisted_development": "The model is upstream-owned, but the local practice implication is that model selection should be paired with expectations for planning, verification batching, completion evidence, usage cost, and administrator policy control.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GPT-6 Astra",
+        "OpenAI",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot coding agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GPT-6 Astra",
+        "OpenAI",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot coding agent"
+      ],
+      "local_practice_implication": "When adopting a new coding model, evaluate not only benchmark quality but also whether the agent harness produces observable planning, diagnosis, verification, and completion evidence under administrator policy.",
+      "follow_up_notes": "Keep broad model coverage upstream; possible local ingestion target is model-selection governance for coding agents."
+    },
+    {
+      "title": "GitHub npm trusted publishing supports multiple OIDC configurations and staged approvals",
+      "source_url": "https://github.blog/changelog/2026-09-03-multiple-trusted-publishing-configurations-for-npm/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 3, 2026.",
+      "summary": "GitHub announced that npm packages can have multiple trusted publishing configurations, staged packages can be approved only after malware scanning completes, and maintainers can inspect staged version history. The guidance recommends keeping configurations staged-only unless direct publishing is explicitly needed.",
+      "why_it_matters_for_ai_assisted_development": "Agent-generated package changes and release automation increase package-install and publishing risk; the update gives maintainers a stronger human approval and malware-scan checkpoint before registry publication.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "npm",
+        "trusted publishing",
+        "OIDC",
+        "malware scanning"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "npm",
+        "trusted publishing",
+        "OIDC"
+      ],
+      "local_practice_implication": "Release workflows used by coding agents should prefer short-lived identity, staged publishing, malware scanning, and explicit maintainer approval over broad long-lived publishing tokens.",
+      "follow_up_notes": "Candidate source for package-install and publishing risk governance."
+    },
+    {
+      "title": "GitHub Actions adds runner-deprecation visibility, Dependabot alert scope, and reusable workflow identity",
+      "source_url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 3, 2026.",
+      "summary": "GitHub Actions added an API for runner version deprecations, a read-only vulnerability-alerts permission for GITHUB_TOKEN, and job context fields that identify the workflow file, SHA, repository, and path for reusable workflows.",
+      "why_it_matters_for_ai_assisted_development": "These controls help teams keep agent-run CI current, grant least-privilege security visibility, and audit the exact reusable workflow that produced a result.",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "Dependabot",
+        "GITHUB_TOKEN",
+        "reusable workflows"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "Dependabot"
+      ],
+      "local_practice_implication": "Agent-managed CI should expose runner lifecycle status, keep security permissions narrow, and record reusable workflow provenance so verification evidence can be attributed to the correct workflow source.",
+      "follow_up_notes": "Useful for source-workflow provenance and least-privilege CI guidance."
+    },
+    {
+      "title": "GitHub Copilot model deprecation schedule requires workflow and policy refresh",
+      "source_url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 3, 2026.",
+      "summary": "GitHub announced selected Copilot models will be deprecated on October 2, 2026 and recommended alternatives. It advised teams to update workflows and integrations before the date and noted that Business and Enterprise administrators may need to enable replacement models through model policies.",
+      "why_it_matters_for_ai_assisted_development": "The specific model lifecycle belongs upstream, but teams running durable coding-agent workflows need deprecation checks in their operating model so prompts, harness defaults, eval baselines, and admin policies do not silently rot.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.5 Flash",
+        "Gemini 3.6 Flash",
+        "Gemini 3.8 Flash",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Claude Opus 4.7",
+        "Claude Opus 5"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.5 Flash",
+        "Gemini 3.6 Flash",
+        "Gemini 3.8 Flash",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Claude Opus 4.7",
+        "Claude Opus 5"
+      ],
+      "local_practice_implication": "Maintain a model lifecycle review for agent workflows: inventory pinned models, refresh eval expectations, update prompts or tool defaults, and verify admin policy access before a deprecation date.",
+      "follow_up_notes": "Do not create local model leaves; use as evidence for operational model-lifecycle checks."
+    },
+    {
+      "title": "GitHub Copilot adds Gemini 3.8 Flash with validation and recovery claims",
+      "source_url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 3, 2026.",
+      "summary": "GitHub announced Gemini 3.8 Flash availability in Copilot and said early testing showed strong performance on complex terminal-based coding tasks with rigorous validation and persistent recovery from actionable failures. Administrator model policies control access for Business and Enterprise plans.",
+      "why_it_matters_for_ai_assisted_development": "The model itself is upstream-owned, but the practice signal is that terminal-based agent evaluation should include failure recovery, validation behavior, rollout timing, cost, and policy enablement.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.8 Flash",
+        "Google",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 3.8 Flash",
+        "Google",
+        "Copilot CLI",
+        "GitHub Copilot cloud agent"
+      ],
+      "local_practice_implication": "Coding-agent evals should test persistent recovery from actionable failures in terminal workflows, not just first-pass correctness or chat response quality.",
+      "follow_up_notes": "Potential source for evaluation criteria around terminal workflows and error recovery."
+    },
+    {
+      "title": "CodeQL 2.26.4 improves Actions and taint-flow security checks",
+      "source_url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+      "visible_date": "September 3, 2026",
+      "date_evidence": "The GitHub Changelog page header shows September 3, 2026.",
+      "summary": "GitHub described CodeQL 2.26.4 updates including improved Rust data-flow alert locations, new Java/Kotlin SQL injection sink models, JavaScript/TypeScript syntax support, Python taint-flow additions, and GitHub Actions query changes for actor checks, unpinned reusable workflows, and environment modeling.",
+      "why_it_matters_for_ai_assisted_development": "As coding agents edit workflows and application code, static-analysis coverage changes can create new findings or close old ones; teams need to treat analyzer updates as part of the verification surface.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "CodeQL",
+        "GitHub Actions",
+        "Go",
+        "Rust",
+        "Java",
+        "Kotlin",
+        "JavaScript",
+        "TypeScript",
+        "Python"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "CodeQL",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Agent regression-repair and code-review loops should record analyzer versions and expect alert churn when security query packs improve precision or expand taint-flow coverage.",
+      "follow_up_notes": "Good evidence for AI code-review checks and workflow-security verification."
+    },
+    {
+      "title": "Enterprise agent-workflow article maps human checkpoints to risk triggers",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+      "visible_date": "Sep 4, 2026",
+      "date_evidence": "The article byline shows On Sep 4, 2026.",
+      "summary": "The article recommends placing human checkpoints before high-stakes actions, during uncertain work, after outputs are produced but before release, or through sampled completed cases. It also identifies triggers such as low confidence, sensitive topics, constraint violations, value thresholds, and random sampling.",
+      "why_it_matters_for_ai_assisted_development": "The source is directly relevant to coding-agent approvals, stop conditions, permissions, audit sampling, and release gates because it separates checkpoint placement from the trigger logic that activates human oversight.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Express Computer",
+        "Gartner",
+        "Shiva Varma",
+        "human-in-the-loop checkpoints",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        "Gartner",
+        "AI agents"
+      ],
+      "local_practice_implication": "Design coding-agent oversight as explicit placements and triggers: pre-execution approvals for high-risk commands, in-loop clarification for ambiguity, post-execution review for held outputs, and sampled QA for drift.",
+      "follow_up_notes": "Candidate source for approval and oversight pattern leaves."
+    },
+    {
+      "title": "Browser-agent evaluation coverage flags transaction and safeguard gaps",
+      "source_url": "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+      "visible_date": "Published 3 September 2026",
+      "date_evidence": "The TechRadar article header shows Published 3 September 2026.",
+      "summary": "TechRadar reported on Decodo research that evaluated 45 agents across 10 browsing capabilities; no agent scored the maximum, transaction handling was the lowest-scoring category, and many multi-step workflows lacked documented safeguards before irreversible actions.",
+      "why_it_matters_for_ai_assisted_development": "The item provides evaluation evidence for governed tool and browser workflows: teams should not infer reliable autonomy from agent marketing claims, especially for irreversible actions and multi-step tool use.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Decodo",
+        "Claude for Chrome",
+        "ChatGPT Chrome Extension",
+        "AI agents",
+        "browser-native agents"
+      ],
+      "upstream_owned_entities": [
+        "Decodo",
+        "Claude for Chrome",
+        "ChatGPT Chrome Extension",
+        "AI agents"
+      ],
+      "local_practice_implication": "Browser and tool-use evals should include transaction completion, cross-tab awareness, third-party integration handling, and documented safeguards for irreversible actions.",
+      "follow_up_notes": "Use as evidence for evaluation rubrics and approval gates around browser automation."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Content exclusions generally available in Copilot app and CLI",
+      "source_url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+      "visible_date": "September 2, 2026",
+      "reason": "Direct visible publication date is before the strict cutoff window start of 2026-09-03T00:32:14Z. A same-topic in-window weekly GitHub summary was captured instead."
+    },
+    {
+      "title": "Visual Studio Code 1.136 release notes",
+      "source_url": "https://code.visualstudio.com/updates/v1_136",
+      "visible_date": "Release date: September 2, 2026",
+      "reason": "Direct visible release date is outside the strict window. In-window GitHub weekly release coverage was used only for the September 4 summary context."
+    },
+    {
+      "title": "Anthropic engineering page: How we contain Claude across products",
+      "source_url": "https://www.anthropic.com/engineering",
+      "visible_date": "No direct publication date visible in opened page section",
+      "reason": "Relevant to containment, blast radius, and agent harness governance, but the opened source did not expose a qualifying visible publication date."
+    },
+    {
+      "title": "Effective context engineering for AI agents",
+      "source_url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "visible_date": "Published Sep 29, 2025",
+      "reason": "High relevance for context architecture, but the visible publication date is outside the two-day window."
+    },
+    {
+      "title": "Writing effective tools for agents - with agents",
+      "source_url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "visible_date": "Published Sep 11, 2025",
+      "reason": "High relevance for MCP and tool-call design, but the visible publication date is outside the two-day window."
+    },
+    {
+      "title": "AI Code Review: 7 Best Practices for 2026",
+      "source_url": "https://www.startearly.ai/post/ai-code-review-how-to-make-it-work-for-you/",
+      "visible_date": "30 Sept 2025",
+      "reason": "Relevant practice guidance, but the visible date is outside the strict window; crawl date was ignored."
+    },
+    {
+      "title": "RAG Is Not Always the Answer Anymore: How AI Agents Search Code in 2026",
+      "source_url": "https://dev.to/nimay_04/rag-is-not-always-the-answer-anymore-how-ai-agents-search-code-in-2026-43m3",
+      "visible_date": "26 May 2026",
+      "reason": "Relevant to codebase retrieval practice, but the visible publication date is outside the two-day window."
+    },
+    {
+      "title": "Local vs Cloud AI Agents for Confidential Work (2026)",
+      "source_url": "https://omidsaffari.com/blog/local-ai-agents-vs-cloud-ai-agents-for-confidential-work-2026",
+      "visible_date": "Search result indicated 3 days ago",
+      "reason": "Potentially relevant for confidentiality and governance, but the apparent visible date is outside the two-day window and was not independently qualified."
+    },
+    {
+      "title": "Meta-RAG on Large Codebases Using Code Summarization",
+      "source_url": "https://conf.researchr.org/details/icse-2026/agent-2026-papers/6/Meta-RAG-on-Large-Codebases-Using-Code-Summarization",
+      "visible_date": "No qualifying publication or update date visible in search result",
+      "reason": "Relevant to codebase RAG and bug localization, but no direct in-window visible source date was available."
+    }
+  ],
+  "source_search_notes": [
+    "Searched public web sources only for AI-assisted development practice updates across approved local topic roots.",
+    "Official changelog sources were preferred when they exposed direct visible dates inside the strict collection window.",
+    "Search snippets and crawl dates were not used as qualification evidence unless an opened page also exposed a direct visible date."
+  ],
+  "follow_up_notes": [
+    "Ingest candidates: capability-gated instructions, tool-input contract guidance, merge-readiness loops, CI provenance, package publishing approvals, agent oversight checkpoints, browser-action safeguards, and analyzer-version-aware verification.",
+    "Do not synthesize this raw collector output into docs/wiki from this automation; normal raw-source ingest owns page updates and raw/processed moves.",
+    "Broad companies, products, models, frameworks, protocols, developer tools, MCP servers, and security entities should remain upstream-owned unless a downstream practice lens is explicitly created."
+  ],
+  "blockers": []
+}
