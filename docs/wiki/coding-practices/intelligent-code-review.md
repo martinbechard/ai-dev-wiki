@@ -91,6 +91,8 @@ The September 4 raw sources add approval, merge-readiness, and content-boundary 
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records content exclusions, Agent Merge, multi-root sessions, review-relevant model validation claims, and CodeQL security-check expansion.
 - Locally, AI approval should remain a repository-owner policy with path scope, stale-approval invalidation, content-exclusion evidence, deterministic scanner joins, and human accountability before it affects merge readiness.
 
+The September 5 [topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json) adds looped PR-completion and review-strength evidence. Agent Merge-style workflows should keep review feedback, failed checks, conflicts, workflow reruns, and readiness state visible, while stronger-model or orchestration claims should be tied to cross-file defect evidence, cost, and human merge accountability.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -170,9 +172,12 @@ The September 4 raw sources add approval, merge-readiness, and content-boundary 
 - Treat reusable review skills, AI approval signals, default review effort, path-scoped approval rules, stale-approval dismissal, and contributor accountability as review-system evidence that needs repository-owner policy before it affects merge decisions.
 - Distinguish AI readiness assessments from merge-counting approvals, and preserve path scope, inspected diff or commit, media attachment provenance, review effort, and human acceptance when visual or pre-PR evidence supports review.
 - Treat AI pull-request approvals as review-system evidence only when repository policy, path scope, content exclusions, scanner results, stale-approval dismissal, and human merge accountability are recorded.
+- Require agent PR-completion loops to preserve review-feedback, failed-check, conflict, rerun, readiness, and human-merge evidence before review automation becomes merge-state input.
+- Treat stronger-model review results as scoped evidence whose cross-file defect coverage, cost, false-positive load, and validated repairs still need repository-specific calibration.
 
 ## Authoritative Sources
 
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -257,6 +262,7 @@ The September 4 raw sources add approval, merge-readiness, and content-boundary 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with PR-completion loop, failed-check, merge-conflict, rerun, cross-file defect, cost, and human-merge evidence.
 - Maintained on 2026-09-04 with AI approval, stale-dismissal, content-exclusion, Agent Merge, model-validation, and CodeQL evidence.
 - Maintained on 2026-08-29 with bot-to-agent review, large-diff review strategy, review-effort, pre-PR review, telemetry, and human acceptance evidence.
 - Maintained on 2026-09-01 with reusable review-skill, path-scoped AI approval, stale-approval dismissal, default review-effort, and contributor-accountability evidence.

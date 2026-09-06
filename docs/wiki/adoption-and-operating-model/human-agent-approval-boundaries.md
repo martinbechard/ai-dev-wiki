@@ -110,9 +110,14 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Treat ticket state, chat assent, or generic approval records as insufficient when the agent action can change code, credentials, budgets, external systems, or regulated workflow state.
 - Keep wake/sleep control, follow-up task creation, cross-session memory use, policy-default changes, review-effort changes, retention, billing, and sandbox settings inside explicit human or administrator approval boundaries.
 - Verify scope, policy, outcome, and audit evidence before accepting approval-click workflows or changed managed-agent defaults.
+- Place checkpoints according to risk and observability: preexecution approval for consequential starts, in-loop intervention for uncertain branches, postexecution review for produced artifacts, and sampled out-of-loop review for lower-risk recurring work.
+- Trigger human checkpoints from confidence thresholds, topic or risk routing, constraint violations, value thresholds, irreversible actions, and random sampling rather than only from the agent's request for help.
+- Treat adoption metrics, token consumption, and dashboard visibility as supervision evidence, not performance-review targets; contribution impact and verified outcomes remain the human acceptance frame.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -180,6 +185,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with checkpoint-placement, trigger, irreversible-action, and adoption-incentive evidence.
 - Maintained on 2026-08-29 with approval-depth, persistent-agent permission ceiling, policy-default, review-effort, billing, retention, and sandbox-default evidence.
 - Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Maintained on 2026-07-24 with the distinction between workflow-convenience approvals and enforceable security controls.

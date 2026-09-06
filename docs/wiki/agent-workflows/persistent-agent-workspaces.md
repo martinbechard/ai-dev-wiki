@@ -74,9 +74,13 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Do not let a recovered workspace or prior interaction become action authority without current repository, instruction, and approval checks.
 - Preserve prompt timelines, side-conversation scope, queue edits, task identifiers, active working time, and branch-specific session history when long-running work spans clients or worktrees.
 - Preserve live-activity state, failure phase, child-conversation scope, exported activity logs, automation enablement review, memory provenance, and context or cost feedback for reusable workspace automation.
+- Record whether coding-agent side effects run on the developer machine, a managed worktree, a cloud sandbox, or a customer-controlled worker, and preserve which repositories, caches, secrets, artifacts, and dashboards cross that execution boundary.
+- Compare cloud development environments, programmatic sandboxes, and bundled agent workspaces by isolation, parallelism, reproducibility, attribution, artifact retention, and whether the workspace can be rebuilt or discarded after the run.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
@@ -124,6 +128,7 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with customer-controlled worker, sandbox, repository/cache/secret locality, cloud-environment comparison, and rebuildable-workspace evidence.
 - Maintained on 2026-08-29 with wake/sleep control, follow-up task, sparse notification, memory-source, and approval-renewal evidence for persistent agents.
 - Maintained on 2026-07-23 with workspace-as-trust-boundary guidance for agent-written files and downstream host readers.
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.

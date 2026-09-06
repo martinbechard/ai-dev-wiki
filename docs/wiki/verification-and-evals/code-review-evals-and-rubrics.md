@@ -122,9 +122,12 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 - Keep AI security triage, deterministic scanner results, and human security acceptance as separate eval signals.
 - Preserve review effort, repository or organization default, and pre-PR review surface as separate eval fields.
 - Score sandboxed reproduction, critic/reviewer independence, human-curated acceptance criteria, true-positive filtering, and fleet-level quality or security trends separately from per-diff comment plausibility.
+- When stronger coding models or multi-model orchestration are proposed for review, score cross-file defect detection, hard-case coverage, cost premium, reviewer triage burden, and validated-fix outcome as separate fields.
+- Treat agent-driven PR completion loops as review-eval workflows only when the loop records review feedback, failed checks, merge conflicts, rerun evidence, stopping criteria, and the human merge decision.
 
 ## Authoritative Sources
 
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -189,6 +192,7 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with cross-file review, multi-model orchestration, cost-premium, Agent Merge loop, failed-check, conflict, rerun, and human-merge eval evidence.
 - Maintained on 2026-08-29 with review-effort defaults and pre-PR review evidence.
 - Maintained on 2026-08-29 with bot-authored PR coverage, large-diff strategy, resolution-label, review-effort, pre-PR review, and reviewer-load eval evidence.
 - Maintained on 2026-09-03 with sandboxed reproduction, critic-reviewer independence, human-curated vulnerability acceptance, true-positive filtering, and fleet-level governance evidence.

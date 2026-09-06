@@ -134,9 +134,12 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 - Measure AI-native code analysis by validated true positives, remediation age, debt reduction, regression rate, and reviewer workload instead of raw finding counts.
 - Check runtime profile, migration safety, network isolation, declared target boundaries, monitor halt behavior, grader pass rates, and abstention quality before accepting autonomous or supervisory agent workflows.
 - Verify tool availability, result inspection, transaction-safety controls, irreversible-action safeguards, and browser-agent eval coverage before accepting stronger-model or autonomous-browser workflow claims.
+- When high-capability agent safeguards pause or stop legitimate long-running work, preserve the classifier signal, inspected reasoning or action trace, operator decision, and recovery path as verification evidence rather than treating the interruption as an opaque failure.
+- For autonomous browsing evals, score multi-step workflow completion separately from transaction handling, safeguard documentation, irreversible-action prevention, and human-intervention quality.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -214,6 +217,7 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with safeguard pause, classifier-trace, recovery-path, autonomous browsing, transaction-handling, and human-intervention eval evidence.
 - Maintained on 2026-09-04 with stronger-model validation, async-tool availability, result-inspection, transaction-safety, and browser-agent evaluation evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration-safety, network-isolation, target-boundary, monitor-halt, trajectory-grader, and abstention-quality verification evidence.
 - Maintained on 2026-08-29 with formal-methods, automated-reasoning, approval-depth, maintainable-agent, observability, rollback, and outcome-review evidence.

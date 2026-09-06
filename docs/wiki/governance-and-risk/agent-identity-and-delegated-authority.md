@@ -92,9 +92,13 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 - Treat enterprise model defaults, path-scoped AI approvals, content-exclusion policies, per-assistant grants, agent inventories, and decommission triggers as delegated-authority evidence when agents can affect code, spend, data, or merge state.
 - Treat identity type, credential duration, delegation limits, runtime per-call checks, and revocation trigger as authority fields, not as optional inventory metadata.
 - Require a named human or team owner before an agent identity can receive standing tool access or perform repeated scheduled work.
+- Preserve source owner, data sensitivity, lineage, access policy, identity passthrough, workspace boundary, and audit-export target when delegated authority includes data access, not only when the agent performs a write.
+- Record who an agent represents, what mandate constrains it, who remains responsible, and which registration or authorization record links the agent to a natural person or accountable organization before it acts across public or business systems.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 25 topic news collector source](../../../raw/processed/2026-07-25/ai-dev-wiki-topic-news-collector-2026-07-25T203314-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)
@@ -146,6 +150,7 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.
 - Maintained on 2026-07-23 with discoverable-agent, human-owner, brokered-access, and no-long-lived-secret identity guidance.
 - Created on 2026-06-24 to separate agent instance identity, delegated authority, shared-channel agents, and credential revocation from broader governance infrastructure.
 - Maintained on 2026-06-25 with non-human identity controls for owner assignment, least privilege, recurring access review, monitoring, and audit evidence.

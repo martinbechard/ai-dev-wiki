@@ -74,9 +74,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Keep skills, MCP tools, sandbox controls, checkpoints, context management, and session state in separately reviewed artifact layers rather than blending them into one task prompt.
 - Treat public skill directories and resource lists as external source evidence until a local owner reviews provenance, version, tool scope, and verification expectations.
 - Keep review instructions, coding standards, and provider-specific guideline settings mapped to portable repository instruction files where possible so product-surface churn does not change the authoritative team rule.
+- Keep repository-level agent behavior in AGENTS.md or equivalent project rules, and move longer repeatable task procedures into SKILL.md or reusable skills so the same instruction is not copied into both layers.
+- Test project rules and reusable skills together when they compose, recording which layer owns normal behavior, task workflow, tool scope, and verification expectations.
 
 ## Authoritative Sources
 
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [Hypervelocity engineer source](../../../raw/processed/Hypervelocity engineer @edandersen.md)
@@ -125,6 +128,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with AGENTS.md versus SKILL.md and project-rules versus reusable-skills instruction-layer evidence.
 - Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.

@@ -185,9 +185,13 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 - Preserve call ID, session, actor, tool, arguments, authentication, policy decision, result state, request metadata, outcome, and storage location for governed tool calls.
 - Separate tool execution, inter-agent communication, host-rendered UI, sandboxed app resources, human approval, and authoritative transaction state when MCP-style applications can write or commit changes.
 - Record tool availability, payload modality, reusable workflow identity, publishing configuration, staged approval status, and content-exclusion policy when a tool-mediated agent action depends on async questions, OIDC publishing, or generated review.
+- Treat enterprise MCP gateways as agent traffic control planes only when they preserve delegated identity, tool-parameter policy decisions, approved-tool catalog state, cost guardrails, blocked attempts, and intent-bearing audit logs.
+- For platform-specific agent workflows, record whether the agent should use deterministic CLI calls or MCP tools, which route is privileged, which context source is official, and which reversible version or audit record proves the action can be rolled back.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
@@ -285,6 +289,7 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with enterprise MCP gateway, delegated identity, tool-parameter policy, cost guardrail, deterministic CLI versus MCP routing, and rollback evidence.
 - Maintained on 2026-09-04 with async-tool availability, payload-modality, reusable-workflow identity, trusted-publishing configuration, staged approval, and content-exclusion evidence.
 - Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
 - Maintained on 2026-09-01 with CLI-first browser tooling, explicit MCP configuration, package-version pinning, allowed-tool lists, Node REPL approval policy, code-review approval, and managed-plugin evidence.

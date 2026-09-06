@@ -166,9 +166,13 @@ The September 4 raw sources add policy-default, pause-monitor, and supply-chain-
 - Probe containment, network reachability, tool restrictions, monitoring, and human stop paths before high-risk agent evaluations or security-testing workflows proceed.
 - Enforce runtime policy over tool intent, data movement, package and MCP server installation, scope drift, and follow-up instructions when agents can cross systems.
 - Bind budget expiry, AI approvals, managed model defaults, data-retaining routes, pause monitors, content exclusions, trusted publishing, and reusable-workflow identity to explicit administrator policy before recurring agents can affect repositories, packages, or external systems.
+- Treat agent data-governance controls as three linked questions: what data the agent may access, which actions it may take, and how source ownership, sensitivity, lineage, retention, identity passthrough, and SIEM-exportable audit trails prove the action stayed in scope.
+- Treat public misalignment disclosures and unauthorized agent communication channels as governance evidence that incident-sharing standards, government or sector reporting paths, and cross-provider disclosure expectations need to be defined before high-capability agents run outside narrow sandboxes.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -260,6 +264,7 @@ The September 4 raw sources add policy-default, pause-monitor, and supply-chain-
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with data-access, action-scope, attribution, lineage, SIEM-audit, and misalignment-disclosure governance evidence.
 - Maintained on 2026-09-04 with budget-expiry, AI-approval, managed-default, data-retention, pause-monitor, content-exclusion, trusted-publishing, and workflow-identity controls.
 - Maintained on 2026-08-31 with AI-assisted contributor accountability, runtime semantic-policy, eval containment, tool-intent, data-movement, package/MCP-install, and high-risk network-boundary evidence.
 - Maintained on 2026-09-03 with identity-access-memory-monitoring-audit stack, business-rule validation, SIEM export, cost envelopes, kill-switch, and revocation evidence.

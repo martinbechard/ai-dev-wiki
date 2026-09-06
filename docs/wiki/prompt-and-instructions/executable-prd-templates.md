@@ -41,9 +41,13 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Scope agent access to validated requirement sections and make ambiguity, endorsement, reviewer perspective, decision record, and testability fields visible before the PRD authorizes implementation.
 - Link executable PRDs or specs to code references, requirement indexes, scope boundaries, and verification criteria when those artifacts drive agent implementation.
 - Treat separate verifier-agent expectations as part of the PRD contract when spec drift or requirement ambiguity would otherwise reach merge review late.
+- Keep agent-facing specs alive through implementation by pairing requirements, technical design, task breakdown, and verifier expectations with drift checks instead of treating the spec as a one-time prompt.
+- For platform-backed app specs, identify official platform context, deterministic CLI routes, privileged MCP access, environment separation, audit logs, scoped permissions, and reversible versions before the agent moves from prompt to production change.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [Product Map PRD guardrails source](https://www.productmap.io/blog/prd-for-ai-agent-guardrails)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
@@ -80,6 +84,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with living-spec drift checks, requirement/design/task breakdown, official platform context, CLI/MCP routing, environment separation, audit, permissions, and reversible-version evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about PRD templates as executable agent inputs.
 - Maintained on 2026-07-30 with PRD-to-code-review-to-deployment workflow chaining for AI-native build instruction.
 - Maintained on 2026-08-08 with AI-checkable algorithm outline fields for outcomes, invariants, correctness conditions, and acceptance checks.

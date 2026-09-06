@@ -146,9 +146,14 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 - Decide persistence, self-hosting, reusable skills, permissions, memory, eval loops, and infrastructure requirements before turning an assistant comparison into a team default.
 - Compare assistant and manager layers by execution location, workspace isolation, approval flow, review surface, scheduling, monitoring, provenance, and adoption-measurement requirements before selecting a model or product route.
 - Treat stronger-model availability, model retirement, retention exceptions, and async-question support as workflow-lifecycle changes that need surface inventory, replacement testing, fallback policy, and verification evidence before defaults move.
+- Treat long-horizon coding-model availability as a workflow-lifecycle event: inventory every assistant surface that can use it, define planning and validation expectations, and test whether the added capability changes review burden, latency, cost, or autonomy boundaries.
+- Evaluate multi-model orchestration as a workflow design, not a model ranking: record routing criteria, fallback model, quality target, estimated cost, offline-versus-live evidence, and which tasks should stay pinned for reproducibility.
+- Compare delegated coding tools by execution location, team policy controls, review follow-up, CI repair, ticket-sized feature fit, flaky-test diagnosis, and backlog cleanup before adopting a generic product ranking.
 
 ## Authoritative Sources
 
+- [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -232,6 +237,7 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-05 with long-horizon model availability, multi-model orchestration, delegated-tool comparison, review-follow-up, CI repair, feature, flaky-test, and backlog-cleanup workflow criteria.
 - Maintained on 2026-09-04 with stronger-model availability, deprecation, retention, validation-claim, and async-question support routing evidence.
 - Maintained on 2026-08-31 with execution-boundary, manager-layer, model-routing-policy, workflow-provenance, workforce-readiness, governance, quality-control, and adoption-measurement evidence.
 - Maintained on 2026-08-29 with shared custom-agent, effort-control, policy-convergence, formal-verification, session-recovery, and subagent-economics workflow-selection evidence.
