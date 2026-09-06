@@ -1,0 +1,550 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-06T01:02:31Z",
+  "run_timestamp_local": "2026-09-05T21:02:31-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-30T01:02:31Z",
+    "start_local": "2026-08-29T21:02:31-0400",
+    "end_utc": "2026-09-06T01:02:31Z",
+    "end_local": "2026-09-05T21:02:31-0400",
+    "rule": "Only public sources visibly published or updated inside this seven-day window qualify; missing, ambiguous, future, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+  ],
+  "source_urls_checked": [
+    "https://blog.codercops.com/blog/spec-driven-development-guide-2026",
+    "https://claude.com/blog/memory",
+    "https://claude.com/blog/skills",
+    "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
+    "https://openai.com/index/path-to-astra/",
+    "https://python.plainenglish.io/ai-coding-agents-are-changing-what-it-means-to-be-a-developer-0a57383256f7",
+    "https://stackoverflow.blog/2025/10/31/vibe-coding-needs-a-spec-too/",
+    "https://www.allspice.io/post/why-ai-needs-design-intent",
+    "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+    "https://www.cdata.com/blog/ai-agent-data-governance",
+    "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/",
+    "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+    "https://www.taskade.com/blog/agent-harness-history",
+    "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+    "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "id": "snowflake-enterprise-mcp-gateway-2026-09-02",
+      "source_url": "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+      "visible_date": "Sep 2, 2026",
+      "date_basis": "visible publication date on source page",
+      "factual_summary": "Snowflake describes enterprise MCP gateway governance as a control plane for agent-to-system traffic, emphasizing dynamic user-delegated identity, tool-parameter-level policies, cataloged approved tools, cost guardrails, and audit logs that preserve agent intent, tool choices, and blocked attempts. It cites August 2026 enterprise earnings-call signals for rapid MCP growth at Datadog, Figma, Atlassian, and Salesforce.",
+      "named_entities": [
+        "Snowflake",
+        "Cortex AI Gateway",
+        "Model Context Protocol",
+        "Linux Foundation",
+        "Datadog",
+        "Figma",
+        "Atlassian",
+        "Salesforce"
+      ],
+      "upstream_owned_entities": [
+        "Snowflake",
+        "Cortex AI Gateway",
+        "Model Context Protocol",
+        "Datadog",
+        "Figma",
+        "Atlassian",
+        "Salesforce"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "why_it_matters": "Adds practice evidence that governed agent access must move from endpoint authorization to per-tool, per-parameter, per-user, trajectory-audited control, reinforcing local database access and outcome-evidence boundaries.",
+      "follow_up_note": "Consider adding MCP gateway trajectory and identity-bound audit evidence to governed database access and trajectory-level eval leaves during ingest."
+    },
+    {
+      "id": "cdata-ai-agent-data-governance-2026-09-03",
+      "source_url": "https://www.cdata.com/blog/ai-agent-data-governance",
+      "visible_date": "September 3, 2026",
+      "date_basis": "visible byline date on source page",
+      "factual_summary": "CData frames AI agent data governance around what data an agent can access, what actions it can take, and how those actions are attributed. It recommends named source owners, sensitivity classification, lineage, access policy, retention policy, least privilege, identity passthrough, workspace isolation, and SIEM-exportable audit trails.",
+      "named_entities": [
+        "CData",
+        "CData Connect AI",
+        "OAuth",
+        "SAML",
+        "SOC 2",
+        "ISO/IEC 42001",
+        "GDPR",
+        "EU AI Act",
+        "SIEM"
+      ],
+      "upstream_owned_entities": [
+        "CData",
+        "CData Connect AI",
+        "OAuth",
+        "SAML",
+        "SOC 2",
+        "ISO/IEC 42001",
+        "GDPR",
+        "EU AI Act"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "why_it_matters": "Strengthens the local rule that enterprise data tools need source ownership, identity-bound permissions, workspace isolation, and reconstructable audit evidence before agents query or mutate business systems.",
+      "follow_up_note": "Ingest with vendor-positioning caveat; route product detail upstream and keep source-level readiness and audit criteria locally."
+    },
+    {
+      "id": "wired-meta-hatch-tokenmaxxing-2026-09-02",
+      "source_url": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+      "visible_date": "Sep 2, 2026 9:32 PM",
+      "date_basis": "visible timestamp on source page",
+      "factual_summary": "WIRED reports that Meta reduced performance-review language tied to AI usage and token consumption while encouraging employees to test Hatch, an agentic tool that can browse the web and operate applications. Employees raised privacy, resource-use, and bug concerns; Meta stated that contribution impact, not AI adoption dashboards or token counts, is the evaluation focus.",
+      "named_entities": [
+        "Meta",
+        "Hatch",
+        "WIRED",
+        "Business Insider",
+        "The Information",
+        "Reuters",
+        "Mark Zuckerberg"
+      ],
+      "upstream_owned_entities": [
+        "Meta",
+        "Hatch",
+        "WIRED",
+        "Business Insider",
+        "The Information",
+        "Reuters"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "why_it_matters": "Adds current operating-model evidence against measuring AI adoption by token volume or tool-use dashboards and for judging agent use by accepted contribution impact, privacy posture, resource burden, and defect outcomes.",
+      "follow_up_note": "Fold into outcome alignment and hybrid economics; avoid duplicating Meta/Hatch product coverage locally."
+    },
+    {
+      "id": "techradar-decodo-browser-agent-eval-2026-09-03",
+      "source_url": "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+      "visible_date": "Published 3 September 2026",
+      "date_basis": "visible publication date on source page",
+      "factual_summary": "TechRadar summarizes Decodo research evaluating 45 AI agents across 10 autonomous browsing capabilities. No agent achieved a perfect score; transaction handling was the weakest category, and more than half of agents capable of multi-step workflows lacked documented safeguards before irreversible actions.",
+      "named_entities": [
+        "TechRadar",
+        "Decodo",
+        "Claude for Chrome",
+        "ChatGPT Chrome Extension",
+        "Gabriele Vitke"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Decodo",
+        "Claude for Chrome",
+        "ChatGPT Chrome Extension"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "why_it_matters": "Adds browser-agent eval evidence that local verification should test transaction completion, cross-tab awareness, third-party integration behavior, and safeguards before irreversible actions, not only vendor claims.",
+      "follow_up_note": "Use as browser-agent verification and trajectory evidence; route product rankings upstream."
+    },
+    {
+      "id": "openai-path-to-astra-safeguards-2026-09-01",
+      "source_url": "https://openai.com/index/path-to-astra/",
+      "visible_date": "September 1, 2026",
+      "date_basis": "visible publication date on source page",
+      "factual_summary": "OpenAI describes Astra-class cybersecurity capability evaluation and production misalignment monitoring, including classifiers that inspect reasoning and actions for unauthorized behavior and stop or pause tasks. It notes that legitimate long-running work may be slowed, paused, or stopped when safeguards flag potential misuse.",
+      "named_entities": [
+        "OpenAI",
+        "Astra",
+        "GPT-5.6 Sol",
+        "Preparedness Framework",
+        "ExploitBench - Internal Port",
+        "V8",
+        "Daybreak",
+        "Codex",
+        "ChatGPT"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Astra",
+        "GPT-5.6 Sol",
+        "Preparedness Framework",
+        "V8",
+        "Daybreak",
+        "Codex",
+        "ChatGPT"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "why_it_matters": "Adds current safety-eval evidence for long-running, high-capability agents: local evals should preserve action trajectories, pause reasons, human review points, and false-positive calibration for consequential tasks.",
+      "follow_up_note": "Keep model and benchmark cataloging upstream; ingest only the local monitor, pause, and calibration implications."
+    },
+    {
+      "id": "cloudflare-cursor-sandboxes-2026-09-02",
+      "source_url": "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/",
+      "visible_date": "SAN FRANCISCO, September 2, 2026",
+      "date_basis": "visible dateline on source page",
+      "factual_summary": "Cloudflare announced support for running Cursor Cloud Agents on Cloudflare Sandboxes. Cursor keeps the agent loop, routing, and result streaming, while terminal, filesystem, and browser actions run on a customer-controlled worker or sandbox; repositories, build caches, and secrets remain on customer machines, while chunks and artifacts may be uploaded for PR and dashboard views.",
+      "named_entities": [
+        "Cloudflare",
+        "Cursor Cloud Agents",
+        "Cloudflare Sandboxes",
+        "Cursor Self-Hosted Machines",
+        "Devin Outposts",
+        "Claude Managed Agents",
+        "Cursor CLI",
+        "Cloud Agents API"
+      ],
+      "upstream_owned_entities": [
+        "Cloudflare",
+        "Cursor",
+        "Cursor Cloud Agents",
+        "Cloudflare Sandboxes",
+        "Devin",
+        "Claude Managed Agents"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "why_it_matters": "Adds concrete portability and economics evidence that self-hosted execution can be separated from provider-hosted planning, orchestration, inference, artifacts, and dashboards; local reviews should track which layer actually moved.",
+      "follow_up_note": "Use for managed-agent portability and hybrid infrastructure economics; route product background upstream."
+    },
+    {
+      "id": "codercops-spec-driven-development-2026-09-01",
+      "source_url": "https://blog.codercops.com/blog/spec-driven-development-guide-2026",
+      "visible_date": "September 1, 2026",
+      "date_basis": "visible journal date on source page",
+      "factual_summary": "CODERCOPS describes spec-driven development as making a written spec the artifact an AI agent builds from, with requirements, technical design, and task breakdown reviewed before implementation. It warns that specs drift when treated as one-time ritual rather than living source-of-truth material.",
+      "named_entities": [
+        "CODERCOPS",
+        "Spec Kit",
+        "Kiro",
+        "BMAD",
+        "GitHub",
+        "AWS"
+      ],
+      "upstream_owned_entities": [
+        "CODERCOPS",
+        "Spec Kit",
+        "Kiro",
+        "BMAD",
+        "GitHub",
+        "AWS"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md"
+      ],
+      "why_it_matters": "Adds current PRD/spec practice evidence that agent-readable specs need reviewable requirements, technical design, acceptance criteria, task breakdowns, versioning, and drift controls.",
+      "follow_up_note": "Ingest into executable PRD templates with source-quality caveat; treat tool comparisons as upstream-owned."
+    },
+    {
+      "id": "medium-ai-coding-developer-role-2026-09-relative",
+      "source_url": "https://python.plainenglish.io/ai-coding-agents-are-changing-what-it-means-to-be-a-developer-0a57383256f7",
+      "visible_date": "3 days ago as displayed on 2026-09-06 run",
+      "date_basis": "visible relative publication age on source page, resolved against run timestamp",
+      "factual_summary": "A Python in Plain English article argues that developers increasingly direct, review, and validate AI coding agents rather than only writing code, citing asynchronous GitHub coding agents and longer-running Codex-style engineering tasks as examples.",
+      "named_entities": [
+        "Python in Plain English",
+        "Medium",
+        "GitHub",
+        "OpenAI Codex",
+        "Kiran"
+      ],
+      "upstream_owned_entities": [
+        "Medium",
+        "GitHub",
+        "OpenAI Codex"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "why_it_matters": "Adds a lightweight practice signal for preserving developer learning around directing, reviewing, validating, and debugging agent work rather than only accepting generated code.",
+      "follow_up_note": "Use cautiously because the page is member-only and gives a relative date; prefer stronger corroboration during ingest."
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "visible_date": "Aug 27, 2026",
+      "reason": "older than strict seven-day cutoff for this run; potentially relevant to trajectory and harness evaluation but out of window"
+    },
+    {
+      "source_url": "https://claude.com/blog/skills",
+      "visible_date": "October 16, 2025 with December 18, 2025 update",
+      "reason": "outside strict window despite relevance to portable agent skills and runbooks"
+    },
+    {
+      "source_url": "https://claude.com/blog/memory",
+      "visible_date": "September 11, 2025 with October 23, 2025 update",
+      "reason": "outside strict window despite relevance to compiled memory and rehydration"
+    },
+    {
+      "source_url": "https://www.allspice.io/post/why-ai-needs-design-intent",
+      "visible_date": "not visible on opened source page; search result claimed September 3, 2026",
+      "reason": "excluded because the opened page did not expose a direct publication or update date"
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
+      "visible_date": "September 2, 2025",
+      "reason": "outside strict window; already represented by older spec-driven development evidence"
+    },
+    {
+      "source_url": "https://stackoverflow.blog/2025/10/31/vibe-coding-needs-a-spec-too/",
+      "visible_date": "October 31, 2025 main article; related links dated September 2026",
+      "reason": "excluded because the opened page was an old article and current related links were not the target source content"
+    },
+    {
+      "source_url": "https://www.taskade.com/blog/agent-harness-history",
+      "visible_date": "August 9, 2026",
+      "reason": "outside strict window despite context architecture relevance"
+    },
+    {
+      "source_url": "https://eve.security/",
+      "visible_date": "no visible publication date on opened page",
+      "reason": "excluded because the opened page had product claims but no usable direct date for the strict window"
+    }
+  ],
+  "per_leaf_results": [
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+      "source_urls_checked": [
+        "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+        "https://www.cdata.com/blog/ai-agent-data-governance"
+      ],
+      "qualifying_update_ids": [
+        "snowflake-enterprise-mcp-gateway-2026-09-02",
+        "cdata-ai-agent-data-governance-2026-09-03"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+        "https://openai.com/index/path-to-astra/",
+        "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+      ],
+      "qualifying_update_ids": [
+        "snowflake-enterprise-mcp-gateway-2026-09-02",
+        "techradar-decodo-browser-agent-eval-2026-09-03",
+        "openai-path-to-astra-safeguards-2026-09-01"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+      "source_urls_checked": [
+        "https://www.techradar.com/pro/research-finds-ai-agents-havent-quite-mastered-real-world-browsing-tasks-despite-claiming-they-can",
+        "https://openai.com/index/path-to-astra/",
+        "https://stackoverflow.blog/2025/10/31/vibe-coding-needs-a-spec-too/"
+      ],
+      "qualifying_update_ids": [
+        "techradar-decodo-browser-agent-eval-2026-09-03",
+        "openai-path-to-astra-safeguards-2026-09-01"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+      "source_urls_checked": [
+        "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+        "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/"
+      ],
+      "qualifying_update_ids": [
+        "wired-meta-hatch-tokenmaxxing-2026-09-02",
+        "cloudflare-cursor-sandboxes-2026-09-02"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+      "source_urls_checked": [
+        "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+        "https://python.plainenglish.io/ai-coding-agents-are-changing-what-it-means-to-be-a-developer-0a57383256f7"
+      ],
+      "qualifying_update_ids": [
+        "wired-meta-hatch-tokenmaxxing-2026-09-02",
+        "medium-ai-coding-developer-role-2026-09-relative"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+      "source_urls_checked": [
+        "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/",
+        "https://claude.com/blog/skills"
+      ],
+      "qualifying_update_ids": [
+        "cloudflare-cursor-sandboxes-2026-09-02"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+      "source_urls_checked": [
+        "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+        "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/"
+      ],
+      "qualifying_update_ids": [
+        "snowflake-enterprise-mcp-gateway-2026-09-02",
+        "wired-meta-hatch-tokenmaxxing-2026-09-02"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+      "source_urls_checked": [
+        "https://claude.com/blog/skills",
+        "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_updates_found",
+      "follow_up_note": "No in-window local-practice update found in checked public sources."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+      "source_urls_checked": [
+        "https://python.plainenglish.io/ai-coding-agents-are-changing-what-it-means-to-be-a-developer-0a57383256f7",
+        "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+      ],
+      "qualifying_update_ids": [
+        "medium-ai-coding-developer-role-2026-09-relative"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+      "source_urls_checked": [
+        "https://claude.com/blog/memory",
+        "https://www.taskade.com/blog/agent-harness-history"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_updates_found",
+      "follow_up_note": "No in-window local-practice update found in checked public sources."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+      "source_urls_checked": [
+        "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+        "https://www.cdata.com/blog/ai-agent-data-governance",
+        "https://www.allspice.io/post/why-ai-needs-design-intent"
+      ],
+      "qualifying_update_ids": [
+        "cdata-ai-agent-data-governance-2026-09-03"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-selection-and-compaction.md",
+      "source_urls_checked": [
+        "https://claude.com/blog/memory",
+        "https://www.allspice.io/post/why-ai-needs-design-intent",
+        "https://www.taskade.com/blog/agent-harness-history"
+      ],
+      "qualifying_update_ids": [],
+      "last_result": "no_qualifying_updates_found",
+      "follow_up_note": "No in-window local-practice update found in checked public sources."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+      "source_urls_checked": [
+        "https://www.cloudflare.com/en-in/press/press-releases/2026/cloudflare-expands-support-for-ai-coding-agents-with-cursor-cloud-agents-on-cloudflare-sandboxes/",
+        "https://claude.com/blog/memory"
+      ],
+      "qualifying_update_ids": [
+        "cloudflare-cursor-sandboxes-2026-09-02"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+      "source_urls_checked": [
+        "https://blog.codercops.com/blog/spec-driven-development-guide-2026",
+        "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/"
+      ],
+      "qualifying_update_ids": [
+        "codercops-spec-driven-development-2026-09-01"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+      "source_urls_checked": [
+        "https://blog.codercops.com/blog/spec-driven-development-guide-2026",
+        "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
+        "https://stackoverflow.blog/2025/10/31/vibe-coding-needs-a-spec-too/"
+      ],
+      "qualifying_update_ids": [
+        "codercops-spec-driven-development-2026-09-01"
+      ],
+      "last_result": "qualified_updates_found",
+      "follow_up_note": "Review qualifying updates for local practice implications."
+    }
+  ],
+  "federation_notes": [
+    "Broad product, company, model, framework, protocol, and vendor background is upstream-owned by the federated AI wiki. This artifact preserves downstream local-practice implications only.",
+    "No docs/wiki pages or raw/processed files were edited by this watch."
+  ],
+  "validation": {
+    "intended_checks": [
+      "jq empty",
+      "python3 -m json.tool",
+      "git diff --check scoped to current artifact and automation memory/state changes"
+    ]
+  }
+}
