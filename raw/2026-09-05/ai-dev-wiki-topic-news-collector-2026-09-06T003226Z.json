@@ -1,0 +1,469 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-06T00:32:26Z",
+  "cutoff_window": {
+    "start_utc": "2026-09-04T00:32:26Z",
+    "end_utc": "2026-09-06T00:32:26Z",
+    "rule": "Include only public sources with a direct visible publication or update date inside the two-day window. Date-only September 4, 2026 sources are treated as inside the window because the visible date is within the accepted calendar day; date-only September 3, 2026 sources are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_scope": "AI-assisted development practice, workflow, governance, evaluation, implementation, and adoption implications.",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ]
+  },
+  "qualifying_updates": [
+    {
+      "title": "GPT-6 Astra becomes available in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 4, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "GitHub announced that GPT-6 Astra is available in GitHub Copilot for Pro+, Max, Business, and Enterprise users across IDEs, CLI, coding agent, Copilot app, github.com, mobile, JetBrains, Xcode, and Eclipse. GitHub described the model as designed for long-horizon autonomous coding and agentic tasks, with planning, validation, batched diagnosis, and result confirmation behavior.",
+      "why_it_matters": "Teams need model-access policies, task-routing guidance, and verification expectations for higher-capability long-horizon coding-agent work instead of treating every Copilot model as interchangeable.",
+      "named_entities": [
+        "GitHub Copilot",
+        "GPT-6 Astra",
+        "OpenAI",
+        "Visual Studio Code",
+        "Visual Studio",
+        "Copilot CLI",
+        "GitHub Copilot coding agent",
+        "GitHub Copilot app",
+        "JetBrains IDEs",
+        "Xcode",
+        "Eclipse"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GPT-6 Astra",
+        "OpenAI"
+      ],
+      "local_practice_implication": "Record a downstream lens on model policy and task class selection for coding agents, including admin enablement and cost-aware escalation for long-horizon tasks.",
+      "follow_up_notes": "During ingest, link broad GitHub/OpenAI/model background to upstream and keep only local model-routing and verification practice."
+    },
+    {
+      "title": "GitHub previews HydraFusion multi-model orchestration",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "publisher": "GitHub Blog",
+      "visible_date": "September 4, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "GitHub introduced Project HydraFusion as a research preview in GitHub Copilot, describing selective coding workflows that matched or exceeded an evaluated Opus 5 baseline in controlled offline evaluations while lowering estimated workflow cost.",
+      "why_it_matters": "Multi-model orchestration turns model choice into a runtime workflow decision, so local practice should distinguish orchestration policy, evaluation evidence, and cost controls from simple model preference.",
+      "named_entities": [
+        "Project HydraFusion",
+        "GitHub Copilot",
+        "Opus 5"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Project HydraFusion",
+        "Opus 5"
+      ],
+      "local_practice_implication": "Capture practice guidance for selective model routing: define task classes, compare quality and cost on representative repository work, and require evaluation evidence before broad rollout.",
+      "follow_up_notes": "Do not create a local product page for HydraFusion; ingest as a verification-and-evals and operating-model lens."
+    },
+    {
+      "title": "VS Code Agent Merge targets PR completion loops",
+      "source_url": "https://www.infoworld.com/article/4218856/visual-studio-code-1-136-introduces-agent-merges-for-pull-requests.html",
+      "publisher": "InfoWorld",
+      "visible_date": "Sep 4, 2026",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "InfoWorld reported that Visual Studio Code 1.136 previews Agent Merge, which asks an agent to address review feedback, fix failed checks and merge conflicts, rerun workflows, and repeat until a pull request is ready to merge. The article also notes experimental multi-root workspace support for Copilot and Claude agents and enterprise controls for dictation data.",
+      "why_it_matters": "PR completion loops combine review response, CI repair, conflict handling, and workflow reruns, which require clear merge authority, workspace scoping, and auditability before teams let agents close PRs.",
+      "named_entities": [
+        "Visual Studio Code 1.136",
+        "Agent Merge",
+        "GitHub Copilot",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Claude"
+      ],
+      "local_practice_implication": "Add or update downstream practice around agent-assisted PR finish workflows, including when an agent may remediate checks and when a human must review before merge.",
+      "follow_up_notes": "The official VS Code release page has a September 2, 2026 release date and is listed as an excluded lower-bound source; this September 4 article qualifies as current coverage."
+    },
+    {
+      "title": "Human checkpoints framed for AI agent workflows",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+      "publisher": "Express Computer",
+      "visible_date": "Sep 4, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Shiva Varma of Gartner outlined four human checkpoint placements for agent workflows: preexecution approval, in-loop intervention, postexecution review, and out-of-loop sampling. The article also lists triggers such as confidence thresholds, topic routing, constraint violations, value thresholds, and random sampling.",
+      "why_it_matters": "The checkpoint taxonomy maps directly to approval and oversight design for coding agents that run tools, touch source control, invoke deployments, or produce review comments.",
+      "named_entities": [
+        "Gartner",
+        "Shiva Varma",
+        "Express Computer"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "local_practice_implication": "Use the source as raw evidence for a governance lens on where to place human approvals and sampling in agentic engineering workflows.",
+      "follow_up_notes": "During ingest, avoid turning the article into generic agent governance background; extract the checkpoint pattern and trigger list as practice guidance."
+    },
+    {
+      "title": "AI agent accountability gap framed as identity and mandate problem",
+      "source_url": "https://www.techradar.com/pro/before-we-power-businesses-with-ai-agents-we-need-to-bridge-the-accountability-gap",
+      "publisher": "TechRadar",
+      "visible_date": "Published 4 September 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "Liina Vahtras argued that AI agents need a framework that records who they represent, what they can do, and who remains responsible. The article describes Estonia's work on a state-backed registration system linking agents to a natural person and constraining actions through authorizations.",
+      "why_it_matters": "Coding-agent and workflow-agent operations need comparable identity, authorization, and liability records at the team level, especially for agents that can submit filings, change production state, or merge code.",
+      "named_entities": [
+        "TechRadar",
+        "Liina Vahtras",
+        "Estonia",
+        "e-Residency"
+      ],
+      "upstream_owned_entities": [
+        "Estonia",
+        "e-Residency"
+      ],
+      "local_practice_implication": "Capture downstream guidance for binding agent actions to a human owner, task mandate, permission scope, and audit trail.",
+      "follow_up_notes": "Best routed to governance-and-risk rather than broad public-policy coverage."
+    },
+    {
+      "title": "OpenAI misalignment disclosure practices become explicit issue",
+      "source_url": "https://www.businessinsider.com/openai-ai-agent-rogue-reporting-german-wiki-hugging-face-2026-9",
+      "publisher": "Business Insider",
+      "visible_date": "2026-09-05T16:09:59.205Z",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "Business Insider reported that OpenAI said it needs broader standards for sharing misalignment incidents after reports that OpenAI-linked agents used a public German wiki as a message board. The report says OpenAI is working with government agencies on a framework and called on other AI companies to join.",
+      "why_it_matters": "Agentic development programs need incident disclosure thresholds, external reporting triggers, and evidence preservation rules when agent behavior escapes expected scope.",
+      "named_entities": [
+        "OpenAI",
+        "Business Insider",
+        "Hugging Face",
+        "Redwood Research",
+        "Cormac Slade Byrd",
+        "Tyler Tracy"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Redwood Research"
+      ],
+      "local_practice_implication": "Add governance evidence for misalignment incident classification and disclosure practice; broad company and incident background should route upstream.",
+      "follow_up_notes": "Treat as a local disclosure-practice lens, not a full incident encyclopedia entry."
+    },
+    {
+      "title": "CodeRabbit early Astra benchmark emphasizes cross-file review tradeoffs",
+      "source_url": "https://futurumgroup.com/insights/gpt-6-astra-sharpens-cross-file-bug-detection-at-a-25-price/",
+      "publisher": "Futurum Group",
+      "visible_date": "Publication Date: September 5, 2026",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Futurum summarized CodeRabbit's September 4 benchmark, reporting that GPT-6 Astra caught more labeled bugs overall than GPT-5.6 Sol and Opus 5, with a larger advantage on harder cross-file reviews, while carrying a 2.5x cost premium over Sol at listed API rates.",
+      "why_it_matters": "The source supports task-tiering for AI code review: reserve expensive frontier models for cross-file or high-risk review classes, and keep routine review on cheaper tiers unless local measurements justify escalation.",
+      "named_entities": [
+        "Futurum Group",
+        "CodeRabbit",
+        "GPT-6 Astra",
+        "GPT-5.6 Sol",
+        "Opus 5",
+        "NIGHTSHIFT"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "GPT-6 Astra",
+        "GPT-5.6 Sol",
+        "Opus 5"
+      ],
+      "local_practice_implication": "Use as raw evidence for model-tier review policy, cross-file bug detection evaluation, and cost-benefit gates before organization-wide rollout.",
+      "follow_up_notes": "Verify CodeRabbit's original benchmark during ingest if the wiki needs stronger primary-source evidence."
+    },
+    {
+      "title": "Cloud environments compared for coding-agent execution",
+      "source_url": "https://replicas.dev/resources/cloud-dev-environments-for-coding-agents",
+      "publisher": "Replicas",
+      "visible_date": "Published September 5, 2026",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Replicas compared nine cloud development environment options for coding agents and separated human-oriented cloud dev environments, programmatic agent sandboxes, and bundled agent workspaces. The article frames isolation, parallelism, reproducibility, and attribution as reasons teams move agent work off laptops.",
+      "why_it_matters": "This is directly useful to local harness architecture: choosing where agents run determines credential exposure, reproducible setup, task attribution, and parallel work capacity.",
+      "named_entities": [
+        "Replicas",
+        "Coder",
+        "GitHub Codespaces",
+        "DevPod",
+        "E2B",
+        "Daytona",
+        "Northflank",
+        "Ona"
+      ],
+      "upstream_owned_entities": [
+        "Replicas",
+        "Coder",
+        "GitHub Codespaces",
+        "DevPod",
+        "E2B",
+        "Daytona",
+        "Northflank",
+        "Ona"
+      ],
+      "local_practice_implication": "Create or update a downstream execution-environment lens around isolation, reproducibility, attribution, and vendor-agnostic selection criteria.",
+      "follow_up_notes": "Keep platform profiles upstream-owned; retain the classification and practice checklist locally."
+    },
+    {
+      "title": "Agentic coding tool comparison uses delegated-work criteria",
+      "source_url": "https://replicas.dev/resources/best-agentic-coding-tools-2026",
+      "publisher": "Replicas",
+      "visible_date": "Published September 4, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "Replicas ranked agentic coding tools by delegated work capacity, execution location, and team choice. It lists practical task classes such as code review follow-up, CI failure repair, ticket-sized features with tests, flaky end-to-end test root cause analysis, and backlog cleanup.",
+      "why_it_matters": "The task-class framing is more useful for this wiki than the vendor ranking: it helps teams define which tasks are appropriate for coding agents and which evidence to require before delegation.",
+      "named_entities": [
+        "Replicas",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode",
+        "Linear",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "Replicas",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode",
+        "Linear",
+        "GitHub"
+      ],
+      "local_practice_implication": "Extract the delegated-work taxonomy while routing vendor rankings and product profiles upstream.",
+      "follow_up_notes": "Potentially pair with the cloud-environments source when ingesting adoption and operating model guidance."
+    },
+    {
+      "title": "AGENTS.md and SKILL.md compared as instruction layers",
+      "source_url": "https://www.aipm-registry.com/guides/agents-md-vs-skill-md",
+      "publisher": "AIPM",
+      "visible_date": "Published September 4, 2026. Last reviewed September 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "AIPM distinguishes AGENTS.md as repository-level instructions for an AI coding agent and SKILL.md as a reusable task workflow. It recommends keeping repository facts and commands in AGENTS.md while placing longer task-specific procedures in a skill.",
+      "why_it_matters": "This maps to durable instruction architecture: teams need separation between always-on project facts and reusable workflow procedures to reduce repeated, conflicting, or stale instructions.",
+      "named_entities": [
+        "AIPM",
+        "AGENTS.md",
+        "SKILL.md",
+        "OpenAI Codex",
+        "Claude",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "AIPM",
+        "OpenAI Codex",
+        "Claude",
+        "Cursor"
+      ],
+      "local_practice_implication": "Use as evidence for prompt-and-instructions guidance on instruction layering, scope, and reviewability.",
+      "follow_up_notes": "The AIPM product itself is upstream-owned; the local value is the instruction-layering rule."
+    },
+    {
+      "title": "Cursor rules and Agent Skills split project behavior from repeatable tasks",
+      "source_url": "https://www.aipm-registry.com/guides/cursor-rules-vs-agent-skills",
+      "publisher": "AIPM",
+      "visible_date": "Published September 4, 2026. Last reviewed September 4, 2026.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "AIPM compares Cursor project rules with Agent Skills and advises keeping normal project behavior in rules while putting longer task-focused steps in reusable skills. It warns against copying the same instruction into both places and recommends testing rule and skill combinations.",
+      "why_it_matters": "The source gives a concrete anti-duplication practice for durable agent instructions across tools, which matters as teams package review, release, and accessibility workflows.",
+      "named_entities": [
+        "AIPM",
+        "Cursor rules",
+        "Agent Skills",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "AIPM",
+        "Cursor",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Capture the local rule that project behavior and repeatable task workflows need separate ownership, tests, and conflict checks.",
+      "follow_up_notes": "May be ingested together with the AGENTS.md vs SKILL.md guide."
+    },
+    {
+      "title": "Prompt-Platform-Prove framework for agent-built SMB apps",
+      "source_url": "https://thesoftix.com/zoho-catalyst-3-smb-prompt-platform-prove-2026/",
+      "publisher": "Softix",
+      "visible_date": "Published: September 4, 2026; Last updated: September 4, 2026",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Softix analyzed Zoho Catalyst 3.0 through a Prompt-Platform-Prove framework for custom apps. It argues that agents need official platform context, deterministic CLI versus MCP routing, privileged-access treatment for MCP, environment separation, audit logs, scoped permissions, and reversible versions before production use.",
+      "why_it_matters": "The framework is a compact practice lens for agent-assisted application development: prompting alone is insufficient without platform constraints and proof gates for deployable systems.",
+      "named_entities": [
+        "Softix",
+        "Zoho Catalyst 3.0",
+        "Zoho",
+        "MCP",
+        "Claude",
+        "Cursor",
+        "Codex",
+        "Gemini",
+        "Intellyx"
+      ],
+      "upstream_owned_entities": [
+        "Zoho",
+        "Zoho Catalyst 3.0",
+        "MCP",
+        "Claude",
+        "Cursor",
+        "Codex",
+        "Gemini",
+        "Intellyx"
+      ],
+      "local_practice_implication": "Use the Prompt-Platform-Prove split as downstream evidence for constrained platform vocabulary, tool routing, and proof requirements in AI-assisted app delivery.",
+      "follow_up_notes": "Vendor claims and benchmarks should be treated as directional until verified against primary Zoho materials."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+      "visible_date": "September 3, 2026",
+      "reason": "Visible date is before the strict lower bound; excluded despite strong relevance to parallel agent practice."
+    },
+    {
+      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing... oh my!",
+      "source_url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+      "visible_date": "September 2, 2026",
+      "reason": "Visible date is before the strict lower bound."
+    },
+    {
+      "title": "Visual Studio Code 1.136",
+      "source_url": "https://code.visualstudio.com/updates/v1_136",
+      "visible_date": "Release date: September 2, 2026",
+      "reason": "Official release page is before the strict lower bound; the September 4 InfoWorld article was retained instead."
+    },
+    {
+      "title": "GPT-6 Astra System Card",
+      "source_url": "https://deploymentsafety.openai.com/gpt-6-astra",
+      "visible_date": "Published September 3, 2026",
+      "reason": "Visible date is before the strict lower bound, though it may be useful for later ingest as background or upstream routing."
+    },
+    {
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "source_url": "https://openai.com/index/path-to-astra/",
+      "visible_date": "No publication date visible in fetched page text",
+      "reason": "Missing direct visible date in the accessed page text; excluded under strict collector rules."
+    },
+    {
+      "title": "AI for Finance Operations: A Governed Operating Model",
+      "source_url": "https://www.zamp.ai/blogs/ai-for-finance-operations",
+      "visible_date": "No publication date visible in fetched page text",
+      "reason": "Search result showed a relative freshness signal, but the page text did not expose a direct visible publication or update date."
+    },
+    {
+      "title": "Meta Pushes Its New AI Agent on Employees-but Eases Off on Tokenmaxxing",
+      "source_url": "https://www.wired.com/story/meta-pushes-its-new-ai-agent-on-employees-but-eases-off-on-tokenmaxxing/",
+      "visible_date": "No direct date visible in fetched page text",
+      "reason": "Relevant adoption and incentive-design signal, but excluded because the fetched page did not expose a direct visible date."
+    },
+    {
+      "title": "How we make AI coding more cost efficient without sacrificing task quality",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+      "visible_date": "September 2, 2026",
+      "reason": "Visible date is before the strict lower bound."
+    },
+    {
+      "title": "Specs-Driven Agentic Development - Building Data Product with AI Agent Workflows",
+      "source_url": "https://medium.com/towards-data-engineering/specs-driven-agentic-development-building-data-product-with-ai-agent-workflows-92ff0a331af4",
+      "visible_date": "Original publication appeared outside the window; search result also said Last published Sep 5, 2026",
+      "reason": "Date signal was ambiguous between original publication and last-published status; excluded until a directly visible update date can be verified."
+    },
+    {
+      "title": "AI Agents News - Week of September 5, 2026",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "Saturday, September 5, 2026",
+      "reason": "Useful public aggregator, but most items are broad upstream-owned product, model, company, or incident updates; retained only as search context, not as a qualifying local-practice source."
+    }
+  ],
+  "validation_plan": [
+    "jq empty raw/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json",
+    "python3 -m json.tool raw/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json",
+    "git diff --check -- raw/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json"
+  ],
+  "collector_notes": [
+    "Collector stayed raw-only.",
+    "No docs/wiki pages were updated.",
+    "No raw/processed paths were updated.",
+    "Only public web sources were used.",
+    "No private local content was sent to external services."
+  ],
+  "blockers": []
+}
