@@ -43,6 +43,8 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 
 The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds public contribution-policy and worktree-operation evidence. Debian's AI contribution policy is useful locally as a permission-plus-accountability pattern: AI-assisted work can be allowed while contributors remain responsible for understanding, reviewing, testing, modifying, and legally vetting the output. Kilo-style isolated worktrees and model-policy controls add operating agreement fields for branch isolation, session portability, reviewer capacity, and approved model routes.
 
+The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds adoption-measurement evidence from coding-agent operating snapshots. Locally, adoption agreements should resist tool-access success metrics unless they are joined to useful behavior, human steering thresholds, review capacity, and accepted outcomes.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -78,11 +80,14 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - Track collaboration quality, reviewer fatigue, learning health, skill ownership, workspace boundaries, and prototype-to-deployment trust as adoption outcomes alongside speed or usage.
 - Define workforce readiness, operating-model changes, adoption measurement, governance, review/test capacity, requirements management, quality controls, and team responsibilities before scaling agentic development beyond pilots.
 - Allow AI assistance only with explicit contributor accountability for understanding, review, testing, modification, legal compliance, branch isolation, session portability, and approved model routes.
+- Join access, usage, concurrent-session, and token metrics to task classes, intervention rates, and accepted outcomes before using them to justify rollout expansion.
+- Defer index-level adoption advice until the article body or an equivalent primary source is verified.
 
 ## Authoritative Sources
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -145,3 +150,4 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - Maintained on 2026-08-10 with SDLC-as-context, governance-platform, ownership, intervention, audit, and kill-switch operating-agreement fields.
 - Maintained on 2026-08-31 with workforce-readiness, operating-model, adoption-measurement, governance, review, testing, requirements, quality-control, and team-responsibility evidence.
 - Maintained on 2026-09-01 with permission-plus-accountability contribution policy, worktree isolation, session portability, reviewer capacity, and model-route operating fields.
+- Maintained on 2026-09-06 with workflow taxonomy, concurrent-session, intervention-rate, task-horizon, and adoption-measurement evidence.

@@ -73,6 +73,8 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 - The [source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports scoring critic/reviewer independence, sandboxed reproduction, architecture or threat-model evidence, and human-curated vulnerability acceptance.
 - It also separates per-diff reviewer accuracy from repository-fleet governance evidence for quality, security, coverage, policy, and trend enforcement.
 
+The September 6 raw sources add merge-state, harness-security, and workflow-metric evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support review rubrics that test whether AI review remains auditable during concurrent or merge-state-heavy changes.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -124,10 +126,14 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 - Score sandboxed reproduction, critic/reviewer independence, human-curated acceptance criteria, true-positive filtering, and fleet-level quality or security trends separately from per-diff comment plausibility.
 - When stronger coding models or multi-model orchestration are proposed for review, score cross-file defect detection, hard-case coverage, cost premium, reviewer triage burden, and validated-fix outcome as separate fields.
 - Treat agent-driven PR completion loops as review-eval workflows only when the loop records review feedback, failed checks, merge conflicts, rerun evidence, stopping criteria, and the human merge decision.
+- Score merge-state explanation, excluded-content handling, and harness-risk attribution when AI review handles concurrent changes.
+- Include intervention-point visibility and audit trail quality when merge agents or fleet workers can change the review state.
 
 ## Authoritative Sources
 
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -193,6 +199,7 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with cross-file review, multi-model orchestration, cost-premium, Agent Merge loop, failed-check, conflict, rerun, and human-merge eval evidence.
+- Maintained on 2026-09-06 with merge-state, excluded-content, harness-risk, intervention-point, concurrent-write, and audit-trail review evidence.
 - Maintained on 2026-08-29 with review-effort defaults and pre-PR review evidence.
 - Maintained on 2026-08-29 with bot-authored PR coverage, large-diff strategy, resolution-label, review-effort, pre-PR review, and reviewer-load eval evidence.
 - Maintained on 2026-09-03 with sandboxed reproduction, critic-reviewer independence, human-curated vulnerability acceptance, true-positive filtering, and fleet-level governance evidence.

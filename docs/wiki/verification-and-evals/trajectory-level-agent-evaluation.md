@@ -92,6 +92,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds trajectory-grader and monitor evidence. Supervisory PR monitors report safe-output counts, grader pass rates, blocked-network-call observations, and whether a coding agent was nudged only when needed. Workflow releases also add trajectory grader metrics, cooldowns, and stop-after expressions. Locally, trajectory evaluation should score whether an agent or monitor acted, abstained, stopped, or escalated for the right reason, not only whether it produced a final patch.
 
+The September 6 raw sources add concurrent-agent, context-preservation, and fleet-control trajectory evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support preserving enough trajectory evidence to explain long-running and multi-agent runs.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -126,11 +128,15 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 - Preserve deployed behavior, retries, tool-call traces, recovery steps, screenshots, and runtime evidence when evaluating frontend or web-development agents.
 - Evaluate whether the trajectory preserved containment boundaries, approved memory/tool provenance, external CI or deployment truth, and behavior-baseline deviations before treating completion as reliable.
 - Score monitor abstention, targeted nudges, safe-output counts, grader pass rates, blocked-network observations, cooldown behavior, and stop-after behavior when evaluating supervisory agents.
+- Preserve concurrent-agent identity, async-question state, recovery path, and peer-steering messages when evaluating long-running or multi-agent trajectories.
+- Record fleet-policy decisions, audit integrity, and sandbox-control evidence when parallel runs coordinate or execute remotely.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [representative workflow calibration](representative-workflow-calibration.md)
@@ -193,6 +199,7 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 ## Maintenance Notes
 
 - Maintained on 2026-09-01 with supervisory-monitor, abstention, targeted-nudge, safe-output, grader-pass-rate, blocked-network, cooldown, and stop-after evaluation evidence.
+- Maintained on 2026-09-06 with concurrent-agent, async-question, recovery-path, peer-steering, fleet-policy, audit-integrity, and sandbox-control trajectory evidence.
 - Maintained on 2026-08-29 with persistent-agent, action-sequence, capability-metadata, high-impact-tool, safety-eval, and oversight trajectory signals.
 - Maintained on 2026-07-23 with workflow-fit benchmark routing, graph-stage, deterministic-step, subagent-streaming, and long-horizon task evidence.
 - Created on 2026-06-24 to hold trajectory, trace, and intermediate-decision evaluation practice for agent workflows.

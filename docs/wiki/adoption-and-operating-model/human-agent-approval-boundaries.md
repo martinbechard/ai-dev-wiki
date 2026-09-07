@@ -64,6 +64,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Managed coding-agent policy changes can alter review effort, retention, billing, and sandbox defaults.
 - Local approval should verify scope, policy, outcome, and audit evidence before granting higher-impact actions or accepting changed defaults.
 
+The September 6 raw sources add async-decision, sandbox, and fleet-approval evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support approval records that bind the exact action while allowing low-risk independent work to continue around unanswered human decisions.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -113,11 +115,15 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Place checkpoints according to risk and observability: preexecution approval for consequential starts, in-loop intervention for uncertain branches, postexecution review for produced artifacts, and sampled out-of-loop review for lower-risk recurring work.
 - Trigger human checkpoints from confidence thresholds, topic or risk routing, constraint violations, value thresholds, irreversible actions, and random sampling rather than only from the agent's request for help.
 - Treat adoption metrics, token consumption, and dashboard visibility as supervision evidence, not performance-review targets; contribution impact and verified outcomes remain the human acceptance frame.
+- Keep asynchronous questions and peer-agent steering inside explicit approval records that name session visibility, action payload, and the work that may continue without the answer.
+- Require credential lifetime, command digest, and tool payload evidence when an approval crosses into sandboxed execution or fleet coordination.
 
 ## Authoritative Sources
 
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -186,6 +192,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with checkpoint-placement, trigger, irreversible-action, and adoption-incentive evidence.
+- Maintained on 2026-09-06 with asynchronous-question, session-visibility, short-lived-credential, command-digest, peer-agent steering, and approval-payload evidence.
 - Maintained on 2026-08-29 with approval-depth, persistent-agent permission ceiling, policy-default, review-effort, billing, retention, and sandbox-default evidence.
 - Maintained on 2026-07-23 with rationale, confidence, proposed-change, progress, and draft-PR approval evidence for issue-to-agent workflows.
 - Maintained on 2026-07-24 with the distinction between workflow-convenience approvals and enforceable security controls.

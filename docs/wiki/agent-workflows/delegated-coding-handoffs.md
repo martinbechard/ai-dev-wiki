@@ -37,6 +37,8 @@ The August 18 raw sources add migration, queued-question, rewind, and session-pr
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) reinforces primary-owner orchestration: independent workstreams need explicit inputs and outputs, separate editing workspaces, collected artifacts, reconciled assumptions, actual diff review, dependency-ordered integration, and combined verification. It also adds shared-task evidence where each recipient's copy has its own connected apps. Locally, a delegated handoff should distinguish shareable task instructions from per-recipient credentials and should not treat parallel agent completion as acceptance until the coordinator reconciles the outputs.
 
+The September 6 raw sources add merge, sandbox, and async-question handoff evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support handoff packets that preserve execution boundaries and unresolved human questions instead of relying on session memory.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -56,6 +58,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Preserve issue, pull-request, CI, review-comment, merge-queue, and worker-owner state when a terminal fleet manager coordinates delegated coding work.
 - Include migration baseline, scope, review approvals, pending questions, queued steering, rewind point, and continuation surface when long-running coding-agent work crosses sessions or tools.
 - Distinguish reusable task instructions from per-recipient app credentials, and require coordinator reconciliation, diff review, dependency ordering, and combined verification before accepting parallel delegated work.
+- Include excluded-content policy, active root, merge or conflict state, unanswered-question queue, and allowed continuation scope in delegated handoff packets.
+- Record sandbox owner and short-lived credential scope when delegated work executes outside the local checkout.
 
 ## Authoritative Sources
 
@@ -77,6 +81,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 
 ## Related Code
 
@@ -117,3 +123,4 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Maintained on 2026-08-05 with issue, PR, CI, review-comment, merge-queue, and worker-owner handoff evidence for terminal agent fleets.
 - Maintained on 2026-08-18 with migration baseline, queued-question, rewind, continuation-surface, and review-owner handoff evidence.
 - Maintained on 2026-08-31 with primary-owner orchestration, independent-workspace, per-recipient app-connection, artifact reconciliation, diff-review, and combined-verification evidence.
+- Maintained on 2026-09-06 with content-exclusion, active-root, merge-state, sandbox-owner, short-lived-credential, async-question, and continuation-scope evidence.

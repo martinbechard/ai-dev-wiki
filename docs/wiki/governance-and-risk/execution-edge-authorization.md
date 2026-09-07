@@ -17,6 +17,8 @@ The August 23 raw sources refine the edge evidence model. The [topic news collec
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds cross-surface and physical-tool execution-edge evidence. Chat, CRM, Slack, MCP, API, CLI, hardware, and physical-device actions all become execution edges when an agent can act through them, so capability metadata, central authentication, permission scope, oversight points, safety evals, and audit-ready action records are required before use.
 
+The September 6 raw sources add sandbox, credential-lifetime, and critical-risk edge evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support proving edge controls before high-impact agent execution is enabled.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -28,10 +30,14 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Compare designed agent graphs with executed tool, skill, context, checkpoint, IAM, and downstream-log evidence before treating an authorization design as effective.
 - Recheck authorization when an approved application changes identity, feature set, connector reach, data path, purpose, or action capability inside an ordinary workflow.
 - Pair regulated or high-impact agent actions with continuous capability discovery, inherited-permission review, and business-impact gates instead of relying only on acceptable-use policy.
+- Require runtime-isolation proof, short-lived credential scope, and repository binding before high-impact agent edges are enabled.
+- Add capability-tier review, incident escalation, and revocation evidence for cyber-capable or production-adjacent agent edges.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
@@ -65,5 +71,6 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with cross-surface, hardware, physical-tool, capability-metadata, safety-eval, and oversight execution-edge evidence.
+- Maintained on 2026-09-06 with runtime-isolation, short-lived-credential, repository-binding, cyber-capability, incident-escalation, and revocation evidence.
 - Created on 2026-08-22 from raw-source evidence about graph-edge governance, paid agent actions, connected apps, database agents, sandbox pauses, and trust receipts.
 - Maintained on 2026-08-23 with executed-graph evidence, shadow-AI state changes, inherited-permission review, and regulated action gates.

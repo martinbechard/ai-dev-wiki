@@ -42,6 +42,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Rehydration should distinguish transcript archives from indexed memory, embeddings, team stores, and audit interfaces.
 - Memory format changes need provenance, freshness labels, and backup verification before multiple agents or teammates depend on the same store.
 
+The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds coding-agent context-preservation evidence. Rehydration should label durable, recalled, cached, and live state before using it to plan or act.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -69,6 +71,7 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Preserve incident-relevant prompts, tool traces, identities, permissions, credential references, workspace identity, plugin versions, and side-channel questions when they may be needed for secure replay or review.
 - Distinguish raw transcripts, indexed memories, embeddings, audit views, and exported summaries before using recalled material as current project state.
 - Require provenance, freshness labels, backup verification, and format-version evidence before shared or team memory migrations steer future agent work.
+- Label durable notes, searchable transcript windows, cache-retained context, active questions, and live repository evidence separately during rehydration.
 
 ## Authoritative Sources
 
@@ -92,6 +95,7 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
 ## Related Code
@@ -133,3 +137,4 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Maintained on 2026-08-15 with file-backed plans, session records, eval data, persistent-memory provenance, quarantine, and confirmation guidance.
 - Maintained on 2026-08-17 with persistent-memory, local-session compliance, side-channel question, subagent task-state, SAFE-style incident, and workspace-identity evidence.
 - Maintained on 2026-09-03 with owned-memory, provenance-indexed recall, local embeddings, audit-interface, backup, team-memory, and format-migration evidence.
+- Maintained on 2026-09-06 with durable-note, searchable-window, cache-retention, asynchronous-question, and live-repository evidence labels.

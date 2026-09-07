@@ -26,6 +26,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Fleet orchestration should assign task, branch, worktree, agent identity, runtime resources, and merge path per worker.
 - Managed or cloud agent surfaces should still record where side effects execute and who controls that worker.
 
+The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support making fleet controls visible before parallel workers coordinate.
+
 ## Practice Boundaries
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
@@ -39,6 +41,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Compare fleet managers by execution location, multi-agent isolation, approval flow, review surface, scheduling, monitoring, and exported coordination evidence.
 - Assign one task, branch, worktree, agent identity, port range, database or volume scope, environment-file owner, and merge path per parallel worker when runtime collisions could affect evidence.
 - Record whether side effects run in the local checkout, managed worktree, cloud sandbox, or customer-controlled execution worker before comparing fleet results.
+- Preserve fleet policy version, opt-out state, tool restrictions, and session visibility before parallel agent workers coordinate.
+- Record audit-chain integrity, conductor owner, peer-steering messages, and sandbox assignment for fleet runs that fan out or execute remotely.
 
 ## Authoritative Sources
 
@@ -58,6 +62,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - [upstream OpenAI Agents SDK](../../../upstream-ai-wiki/agentic-frameworks/openai-agents-sdk.md)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 
 ## Related Code
 
@@ -88,3 +94,4 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.
 - Maintained on 2026-08-31 with execution-location, isolation, approval, review, scheduling, monitoring, and coordination-evidence criteria for coding-agent manager layers.
 - Maintained on 2026-09-03 with one-task-one-worktree worker isolation, runtime-resource reservation, customer-controlled execution, and side-effect locality evidence.
+- Maintained on 2026-09-06 with fleet-policy, opt-out, tool-restriction, session-visibility, audit-chain, conductor, peer-steering, and sandbox-assignment evidence.

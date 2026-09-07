@@ -63,6 +63,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds MCP prompt-injection and runtime-filtering evidence. Untrusted open-web content returned through an MCP server can steer a later authenticated action if provenance is lost between retrieval and tool arguments. Runtime filters can help only when they inspect prompts, responses, commands, tool calls, data movement, follow-up instructions, and scope changes before action. Locally, the content boundary should be chain-aware: a harmless-looking retrieved page can become dangerous when it supplies a destination, command, package, MCP server, credential use, or spend request to a later step.
 
+The September 6 raw sources add repository-config and index-level security-source evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support treating repository state and index-only security summaries as untrusted evidence until stronger checks confirm them.
+
 ## Practice Boundaries
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
@@ -106,10 +108,14 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - Treat webpages, APIs, plugins, knowledge bases, and memory as indirect-prompt-injection carriers when they can later steer tool use, dependency changes, or code edits.
 - Preserve provenance from retrieved content into proposed tool arguments, destinations, package installs, MCP server installs, and spend requests so hidden instructions cannot launder themselves into authenticated actions.
 - Screen the sequence of prompt, response, command, tool-call, data-movement, and follow-up steps when untrusted content can influence a state-changing action.
+- Treat repository configuration, package manifests, and generated files as untrusted evidence until path and execution-boundary checks confirm the claim.
+- Defer index-only security summaries until the article body or an equivalent primary source is verified.
 
 ## Authoritative Sources
 
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
@@ -167,6 +173,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with spreadsheet, indirect-prompt-injection, untrusted-document, containment, deny-by-default tool, and dependency-gate evidence.
+- Maintained on 2026-09-06 with repository-config, package-install, trusted-host-component, generated-state, index-only-source, and execution-boundary evidence.
 - Maintained on 2026-07-23 with agent-written file, repository metadata, hookable configuration, dataset-processing, and connected-app trust boundary guidance.
 - Maintained on 2026-07-28 with CI workflow tampering, agent-configuration integrity, MCP registration, scoped-credential, and egress-control boundaries.
 - Created on 2026-06-23 to separate prompt-injection and untrusted-content practice from the broader governance-controls page.

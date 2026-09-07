@@ -73,6 +73,8 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 - The same source records browser-agent evaluation gaps around transactions and irreversible actions.
 - Locally, verification should require tool-availability checks, result inspection, transaction-safety gates, and documented safeguards before a workflow credits stronger-model or browser-agent claims.
 
+The September 6 raw sources add task-horizon, agent-facing, and harness-security eval evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support measuring agent completion through the allowed surface before autonomy expands.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -136,10 +138,14 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 - Verify tool availability, result inspection, transaction-safety controls, irreversible-action safeguards, and browser-agent eval coverage before accepting stronger-model or autonomous-browser workflow claims.
 - When high-capability agent safeguards pause or stop legitimate long-running work, preserve the classifier signal, inspected reasoning or action trace, operator decision, and recovery path as verification evidence rather than treating the interruption as an opaque failure.
 - For autonomous browsing evals, score multi-step workflow completion separately from transaction handling, safeguard documentation, irreversible-action prevention, and human-intervention quality.
+- Measure task completion, silent failure, intervention count, and allowed-surface coverage before increasing agent autonomy.
+- Require harness-control evidence before accepting agent-facing product surfaces or critical-risk agent workflows.
 
 ## Authoritative Sources
 
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -218,6 +224,7 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with safeguard pause, classifier-trace, recovery-path, autonomous browsing, transaction-handling, and human-intervention eval evidence.
+- Maintained on 2026-09-06 with task-horizon, human-intervention, silent-failure, agent-facing funnel, harness-control, and critical-risk safeguard evidence.
 - Maintained on 2026-09-04 with stronger-model validation, async-tool availability, result-inspection, transaction-safety, and browser-agent evaluation evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration-safety, network-isolation, target-boundary, monitor-halt, trajectory-grader, and abstention-quality verification evidence.
 - Maintained on 2026-08-29 with formal-methods, automated-reasoning, approval-depth, maintainable-agent, observability, rollback, and outcome-review evidence.

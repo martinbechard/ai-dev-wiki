@@ -26,6 +26,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 
 The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json) adds an agent-baiting boundary for discovered tools and skills. Discovery should not treat a repository, registry entry, or metadata description as trusted because it advertises an MCP server or skill. The discovered package should remain inert until provenance, tool scope, command behavior, and install intent are reviewed under the same approval evidence used for direct MCP registration.
 
+The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) adds a secondary MCP protocol-change signal. Locally, protocol-specific discovery claims should remain deferred until the authoritative MCP specification confirms the reported behavior.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -37,6 +39,7 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Treat code-execution access to tool catalogs as a sandboxed progressive-disclosure variant, with explicit benchmark limits, output-token cost, code-quality review, and least-capability constraints.
 - Keep discovered MCP servers, skills, repositories, and setup helpers inert until provenance, command behavior, install intent, and tool scopes are reviewed.
 - Reject discovery results that try to seed instructions for future agents or request broader tools than the current task and policy allow.
+- Record conformance evidence and externalized state joins before adopting secondary reports about MCP discovery behavior.
 
 ## Authoritative Sources
 
@@ -44,6 +47,7 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [context selection and compaction](../context-architecture/context-selection-and-compaction.md)
@@ -78,3 +82,4 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 - Maintained on 2026-07-28 with remote skill discovery, package-provenance, archive-bound, approval-default, and central-governance controls.
 - Maintained on 2026-08-14 with sandboxed code-execution as a progressive MCP discovery variant and benchmark-scope caveats.
 - Maintained on 2026-08-16 with agent-baiting discovery controls for MCP servers, skills, repositories, setup helpers, and future-agent instruction seeding.
+- Maintained on 2026-09-06 with secondary MCP protocol-change evidence deferred behind authoritative specification confirmation.

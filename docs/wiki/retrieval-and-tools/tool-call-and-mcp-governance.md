@@ -100,6 +100,8 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 - The same source records reusable workflow identity fields, multiple trusted-publishing OIDC configurations, staged approvals, and content exclusions in agent-facing Copilot surfaces.
 - Locally, tool governance should record tool availability, payload modality, workflow file identity, publishing configuration, staged approval status, and excluded-content policy before tool-mediated work is accepted.
 
+The September 6 raw sources add MCP operations, registry, and verification evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) is a secondary protocol-change signal, while the [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) supports operational MCP governance. Locally, protocol-specific MCP claims need authoritative specification evidence, while tool-route approval should still preserve registry, authentication, isolation, health, command, and approval evidence.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -187,11 +189,15 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 - Record tool availability, payload modality, reusable workflow identity, publishing configuration, staged approval status, and content-exclusion policy when a tool-mediated agent action depends on async questions, OIDC publishing, or generated review.
 - Treat enterprise MCP gateways as agent traffic control planes only when they preserve delegated identity, tool-parameter policy decisions, approved-tool catalog state, cost guardrails, blocked attempts, and intent-bearing audit logs.
 - For platform-specific agent workflows, record whether the agent should use deterministic CLI calls or MCP tools, which route is privileged, which context source is official, and which reversible version or audit record proves the action can be rolled back.
+- Join MCP registry version, authentication path, per-client isolation, health signals, failure counts, command digests, and approval decisions before expanding a tool route.
+- Require authoritative specification evidence before changing protocol assumptions from secondary MCP reports.
 
 ## Authoritative Sources
 
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
@@ -290,6 +296,7 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with enterprise MCP gateway, delegated identity, tool-parameter policy, cost guardrail, deterministic CLI versus MCP routing, and rollback evidence.
+- Maintained on 2026-09-06 with MCP registry, authentication, per-client isolation, health signal, failure count, command digest, structured-tool approval, and protocol-claim deferral evidence.
 - Maintained on 2026-09-04 with async-tool availability, payload-modality, reusable-workflow identity, trusted-publishing configuration, staged approval, and content-exclusion evidence.
 - Maintained on 2026-08-31 with runtime semantic-policy, prompt/response/command/tool/data-movement inspection, retrieval/action separation, argument provenance, MCP install, spend-action, and chain-monitoring evidence.
 - Maintained on 2026-09-01 with CLI-first browser tooling, explicit MCP configuration, package-version pinning, allowed-tool lists, Node REPL approval policy, code-review approval, and managed-plugin evidence.

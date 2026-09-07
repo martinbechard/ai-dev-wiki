@@ -89,6 +89,8 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records GPT-6 Astra availability, model deprecations, Gemini 3.8 Flash validation claims, and Codex CLI guidance fixes for asynchronous questions.
 - Locally, a model route should change only after the workflow maps affected surfaces, replacement deadline, retention terms, verification evidence, async-question support, and fallback behavior.
 
+The September 6 raw sources add agent-adoption measurement and tool-fit evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support selecting models and tools from workflow behavior rather than access availability or generation speed.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -149,11 +151,15 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 - Treat long-horizon coding-model availability as a workflow-lifecycle event: inventory every assistant surface that can use it, define planning and validation expectations, and test whether the added capability changes review burden, latency, cost, or autonomy boundaries.
 - Evaluate multi-model orchestration as a workflow design, not a model ranking: record routing criteria, fallback model, quality target, estimated cost, offline-versus-live evidence, and which tasks should stay pinned for reproducibility.
 - Compare delegated coding tools by execution location, team policy controls, review follow-up, CI repair, ticket-sized feature fit, flaky-test diagnosis, and backlog cleanup before adopting a generic product ranking.
+- Compare coding-agent surfaces by task horizon, human-intervention rate, context fit, review load, and accepted outcomes before making access or model availability the selection criterion.
+- Check supported runtime surface, SDK stability, and cache behavior when a release note claims better agent compatibility.
 
 ## Authoritative Sources
 
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
+- [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -238,6 +244,7 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with long-horizon model availability, multi-model orchestration, delegated-tool comparison, review-follow-up, CI repair, feature, flaky-test, and backlog-cleanup workflow criteria.
+- Maintained on 2026-09-06 with agent-adoption measurement, task-horizon, intervention-rate, SDK-surface, prompt-cache, context-fit, and tool-fit evidence.
 - Maintained on 2026-09-04 with stronger-model availability, deprecation, retention, validation-claim, and async-question support routing evidence.
 - Maintained on 2026-08-31 with execution-boundary, manager-layer, model-routing-policy, workflow-provenance, workforce-readiness, governance, quality-control, and adoption-measurement evidence.
 - Maintained on 2026-08-29 with shared custom-agent, effort-control, policy-convergence, formal-verification, session-recovery, and subagent-economics workflow-selection evidence.

@@ -29,6 +29,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The September 1 raw sources add prompt-timeline and queue recovery evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records prompt timelines tied to file changes, external-session continuation, and multiple windows connected to one session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records editable queued prompts that sync to connected hosts, task identifiers, and active working-time visibility. Locally, recovery should compare queued intent, prompt timeline, changed files, host sync state, and active run state before sending more instructions.
 
+The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds reply-recovery and context-preservation evidence. Recovery records should separate conversation memory, transport state, tool health, and unfinished human input before a resumed agent continues.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -41,6 +43,8 @@ The September 1 raw sources add prompt-timeline and queue recovery evidence. The
 - For model or agent continuation recovery, separate repository state, accepted plan, unresolved blockers, trajectory summary, and verification evidence before deciding how much prior reasoning to reload.
 - Preserve permission mode, tool configuration, shared-session context, and review evidence when recovery crosses IDE, chat, or application surfaces.
 - Compare queued prompts, prompt timeline, changed files, host sync state, task identifier, and active working time before resuming a long-running agent.
+- Separate durable notes, searchable prior context, unanswered questions, and reply-recovery status before treating a recovered session as ready to continue.
+- Preserve MCP failure counts and latency diagnostics when tool health explains why a session needs recovery.
 
 ## Authoritative Sources
 
@@ -53,6 +57,7 @@ The September 1 raw sources add prompt-timeline and queue recovery evidence. The
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -87,3 +92,4 @@ The September 1 raw sources add prompt-timeline and queue recovery evidence. The
 - Maintained on 2026-08-20 with credential-class revocation, deauthorization, user-notice, audit-log, residual-access, and containment recovery evidence.
 - Maintained on 2026-08-26 with model-to-model continuation boundaries separating repository state, accepted plan, blockers, trajectory summaries, and verification evidence.
 - Maintained on 2026-09-01 with prompt-timeline, queue-editing, host-sync, task-identifier, and active-working-time recovery evidence.
+- Maintained on 2026-09-06 with context-note, searchable-history, async-question, reply-recovery, MCP-failure, and latency-diagnostic recovery evidence.
