@@ -1,0 +1,418 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-07T00:31:31Z",
+  "run_timestamp_local": "2026-09-06T20:31:31-0400",
+  "cutoff_window": {
+    "timezone": "UTC",
+    "start_inclusive": "2026-09-05T00:31:31Z",
+    "end_inclusive": "2026-09-07T00:31:31Z",
+    "qualification_rule": "Only public sources with direct visible dates inside the strict two-day window were included. Date-only September 5 items were accepted only when the visible page also showed a release or publication context inside the window; older, missing-date, ambiguous, future-dated, or snippet-only dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_owner_scope": "AI-assisted development practice: context architecture, source workflows, instructions, agent workflows, coding practices, retrieval and tools, verification/evals, application patterns, governance/risk, and adoption/operating model.",
+    "collector_action": "Recorded practice implications and routing notes only; did not update docs/wiki or raw/processed."
+  },
+  "qualifying_updates": [
+    {
+      "title": "OpenAI shares internal coding-agent adoption and measurement snapshot",
+      "source_url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "visible_date": "September 6, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "OpenAI reported that researchers now use coding agents throughout the day, often concurrently, and that research organization agent runtime reached 3.1 agent workdays for every human workday by mid-August. The post also describes a six-phase taxonomy for classifying agent work and notes that successful 4-8 hour tasks often still require one or more human interventions.",
+      "why_it_matters": "The local practice signal is that agent adoption should be measured by workflow taxonomies, intervention rates, and task horizon, not just raw usage or generated-code volume.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Epoch AI"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Epoch AI"
+      ],
+      "local_practice_implication": "Candidate coverage for agent operating metrics, concurrent session norms, and human-steering thresholds in high-complexity coding-agent workflows.",
+      "follow_up_notes": "Ingest should avoid creating an OpenAI entity page locally; preserve only measurement and operating-model lessons."
+    },
+    {
+      "title": "OpenAI describes Codex context preservation and asynchronous question handling with Astra",
+      "source_url": "https://openai.com/index/gpt-6-astra/",
+      "visible_date": "today on page during 2026-09-07T00:31:31Z run",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "OpenAI's Astra announcement says Codex will preserve notes across context windows, keep earlier context windows searchable, ask asynchronous questions while continuing independent work, and lean into verification through browser testing and code execution during higher-effort coding tasks. The same page says Astra meets OpenAI's Critical cybersecurity threshold and needs stronger safeguards.",
+      "why_it_matters": "The practice update is about context externalization, async human-decision gates, and risk-tiered safeguards for more capable coding agents.",
+      "named_entities": [
+        "OpenAI",
+        "GPT-6 Astra",
+        "Codex",
+        "Devin",
+        "Jane Street",
+        "Lovable",
+        "Hugging Face"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-6 Astra",
+        "Codex",
+        "Devin",
+        "Jane Street",
+        "Lovable",
+        "Hugging Face"
+      ],
+      "local_practice_implication": "Candidate coverage for persistent context notes, searchable prior windows, async blocking-question queues, and stronger authorization for cyber-capable model use.",
+      "follow_up_notes": "Treat product and model facts as upstream-owned; local wiki should keep the context-management and governance lens."
+    },
+    {
+      "title": "OpenClaw release adds recovery, swarm, session-access, and MCP operations controls",
+      "source_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2",
+      "visible_date": "released this 05 Sep 20:00",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "OpenClaw v2026.9.2 highlights reply recovery across gateway restarts, live settings changes, default-enabled swarm orchestration with opt-outs and tool restrictions, cross-agent session visibility controls, Slack approval/session status, personal connected accounts, Gateway latency diagnostics, MCP server failure counts, OAuth sign-in from the MCP servers tab, and isolation for per-client MCP server behavior.",
+      "why_it_matters": "The release shows agent harnesses adding durable recovery, explicit cross-agent visibility scopes, observable MCP health, and operational diagnostics as first-class controls.",
+      "named_entities": [
+        "OpenClaw",
+        "MCP",
+        "Slack",
+        "OpenAI",
+        "GPT-6 Astra",
+        "Gateway",
+        "OpenTelemetry",
+        "Prometheus"
+      ],
+      "upstream_owned_entities": [
+        "OpenClaw",
+        "MCP",
+        "Slack",
+        "OpenAI",
+        "GPT-6 Astra",
+        "OpenTelemetry",
+        "Prometheus"
+      ],
+      "local_practice_implication": "Candidate coverage for session recovery, multi-agent visibility policy, MCP degradation handling, and gateway-level telemetry in application harness patterns.",
+      "follow_up_notes": "Route OpenClaw product details upstream; local ingest can cite the release as evidence for operational control patterns."
+    },
+    {
+      "title": "Kiro Crew release formalizes fleet policy, MCP governance, approvals, and peer-agent steering",
+      "source_url": "https://github.com/kirodotdev/KiroCrew/releases/tag/v0.5.0",
+      "visible_date": "released this 05 Sep 04:59",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Kiro Crew v0.5.0 adds centrally published security policies, enterprise MCP registry controls with version pins, tamper-evident audit log fixes under concurrent writers, repository-bound app execution trust, changed approval behavior for silent commands and structured tools, bulk and per-call approval handling, readable command digests, agent-to-agent session_send, conductor-managed fan-outs, workflow libraries, wake-on-change PR watches, and model downgrade visibility.",
+      "why_it_matters": "The release is strong practice evidence that coding-agent fleets need centrally distributed policy, provenance-bound tool trust, auditable concurrent writes, and explicit conductor/workflow governance.",
+      "named_entities": [
+        "Kiro Crew",
+        "AWS",
+        "MCP",
+        "Slack",
+        "Gateway"
+      ],
+      "upstream_owned_entities": [
+        "Kiro Crew",
+        "AWS",
+        "MCP",
+        "Slack"
+      ],
+      "local_practice_implication": "Candidate coverage for fleet security policy, approval ergonomics, peer-agent coordination, workflow libraries, and agent audit-chain integrity.",
+      "follow_up_notes": "Do not duplicate Kiro Crew product coverage; keep local lens on governance and operating controls."
+    },
+    {
+      "title": "Pi release exposes agent runtime compatibility and prompt-cache fixes",
+      "source_url": "https://github.com/earendil-works/pi/releases/tag/v0.85.1",
+      "visible_date": "released this 05 Sep 12:29",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "Pi v0.85.1 adds GPT-6 Astra support for OpenAI API keys and OpenAI Codex subscriptions, fixes SDK import failures caused by unintentionally published experimental code and dependencies, and adjusts long prompt-cache requests for GPT-5.6+ Responses models to use a 30-minute prompt cache option.",
+      "why_it_matters": "The local practice signal is that agent CLIs need stable supported SDK surfaces, clear separation of source-only experimental APIs, and cache settings that match provider behavior.",
+      "named_entities": [
+        "Pi",
+        "GPT-6 Astra",
+        "OpenAI",
+        "Codex",
+        "Responses"
+      ],
+      "upstream_owned_entities": [
+        "Pi",
+        "GPT-6 Astra",
+        "OpenAI",
+        "Codex",
+        "Responses"
+      ],
+      "local_practice_implication": "Candidate coverage for provider-compatibility checks, cache-retention tuning, and supported-versus-experimental API boundaries in agent harnesses.",
+      "follow_up_notes": "Use cautiously during ingest because this is narrower than the OpenClaw/Kiro governance evidence."
+    },
+    {
+      "title": "GrowthOS frames agent experience as task completion, not human web traffic",
+      "source_url": "https://www.usegrowthos.com/blog",
+      "visible_date": "Sep 5, 2026; Sep 6, 2026; Sep 7, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows"
+      ],
+      "factual_summary": "GrowthOS listed new agent-user posts dated September 5-7, including agent experience, agent funnels, task-completion rate, silent failures, and traffic metrics that fail to capture zero-click answers, API-mediated demand, and agent-run journeys.",
+      "why_it_matters": "The practice update is a measurement shift: AI-assisted development teams building public docs, APIs, or developer surfaces may need to test whether agents can discover, authenticate, complete, and report on tasks.",
+      "named_entities": [
+        "GrowthOS",
+        "Agent Experience",
+        "Agent Task Completion Rate"
+      ],
+      "upstream_owned_entities": [
+        "GrowthOS"
+      ],
+      "local_practice_implication": "Candidate coverage for agent-facing product-surface evals, source citation journeys, docs discoverability, and task-completion funnels.",
+      "follow_up_notes": "If ingested, treat AX terminology as a local evaluation lens rather than a product page."
+    },
+    {
+      "title": "Aibl.to publishes team AI adoption guidance centered on real work",
+      "source_url": "https://aibl.to/blog/",
+      "visible_date": "September 6, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "Aibl.to's September 6 blog listing says many companies no longer have an AI access problem, but struggle to turn access into useful behavior; it recommends starting with real work rather than generic tool adoption.",
+      "why_it_matters": "This supports local operating-model guidance that adoption work should begin from repeatable workflows and behavior changes, not broad tool rollouts.",
+      "named_entities": [
+        "Aibl.to",
+        "Gabriel Ceicoschi"
+      ],
+      "upstream_owned_entities": [
+        "Aibl.to"
+      ],
+      "local_practice_implication": "Candidate coverage for workflow-first AI adoption, training scoping, and practice selection before model or tool standardization.",
+      "follow_up_notes": "The source is a blog index with a visible publication date; ingest should fetch the individual post if available before durable synthesis."
+    },
+    {
+      "title": "Hmmnm posts prompt-injection defense framing for AI systems",
+      "source_url": "https://hmmnm.com/blog/",
+      "visible_date": "September 5, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "factual_summary": "Hmmnm's blog index lists a September 5 AI Security post comparing prompt injection to SQL injection and promising a defense playbook with real examples.",
+      "why_it_matters": "Prompt injection remains a core local governance topic for agents that read untrusted tool, retrieval, and web content.",
+      "named_entities": [
+        "Hmmnm",
+        "Prompt Injection",
+        "SQL Injection",
+        "OWASP"
+      ],
+      "upstream_owned_entities": [
+        "OWASP"
+      ],
+      "local_practice_implication": "Candidate coverage for prompt-injection defenses around tool results, retrieval context, and agent permissions.",
+      "follow_up_notes": "Before ingest, open the article body and verify concrete defense guidance; the collector captured only index-level visible summary."
+    },
+    {
+      "title": "MCPMarket daily list surfaces verification, gateway, docs-ingest, and memory MCP patterns",
+      "source_url": "https://mcpmarket.com/daily/top-mcp-server-list-september-5-2026",
+      "visible_date": "September 5, 2026 in URL and page title",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "The September 5 MCPMarket list ranks servers for binary-claim verification, local MCP gateway consolidation, AI-writing factual checks, documentation scraping for LLM ingestion, headless validation for game development, semantic shared memory, and Git-preserved development decisions.",
+      "why_it_matters": "Although individual MCP servers are upstream-owned, the local practice signal is that MCP ecosystems are converging on verification, provenance, context compression, docs ingestion, and persistent memory patterns.",
+      "named_entities": [
+        "MCPMarket",
+        "MCP",
+        "Reverify",
+        "Toolport",
+        "Zero Slop",
+        "Documentation Scraper",
+        "Godot Agent",
+        "Montycat",
+        "CommitLore"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "MCPMarket",
+        "Reverify",
+        "Toolport",
+        "Zero Slop",
+        "Documentation Scraper",
+        "Godot Agent",
+        "Montycat",
+        "CommitLore"
+      ],
+      "local_practice_implication": "Candidate coverage for MCP governance checklists, tool-verification patterns, and context-memory surfaces rather than individual server catalog pages.",
+      "follow_up_notes": "Route server-specific background upstream; local ingest should extract only pattern-level implications."
+    },
+    {
+      "title": "AI Agent Store weekly page highlights incident logs and critical-risk agent safeguards",
+      "source_url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "visible_date": "Sunday, September 6, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "AI Agent Store's September 6 weekly page summarizes public reporting on AI agent misalignment incidents, critical cybersecurity risk classification, and recommends internal misalignment incident logs, escalation paths, threat models, access controls, usage monitoring, and audit trails for agentic systems.",
+      "why_it_matters": "This is a practice-level governance signal for agent incident reporting and risk-tiered deployment controls, especially when agents can communicate externally or touch security-sensitive systems.",
+      "named_entities": [
+        "AI Agent Store",
+        "OpenAI",
+        "Astra",
+        "Hugging Face",
+        "Wired"
+      ],
+      "upstream_owned_entities": [
+        "AI Agent Store",
+        "OpenAI",
+        "Astra",
+        "Hugging Face",
+        "Wired"
+      ],
+      "local_practice_implication": "Candidate coverage for incident logs, escalation paths, access monitoring, and procurement questions for high-risk agent workflows.",
+      "follow_up_notes": "Prefer primary incident sources during ingest; use this source as a dated routing pointer if primary pages are not directly available."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot in Visual Studio - June update",
+      "source_url": "https://github.blog/changelog/2026-07-14-github-copilot-in-visual-studio-june-update/",
+      "visible_date": "July 14, 2026",
+      "reason": "Outside the strict two-day window, despite useful MCP trust and usage-alert content."
+    },
+    {
+      "title": "GitHub CLI Linux package signing key expires September 5",
+      "source_url": "https://github.blog/changelog/2026-09-03-github-cli-linux-package-signing-key-expires-september-5/",
+      "visible_date": "September 3, 2026",
+      "reason": "Outside the strict two-day window by publication date; September 5 is an effective date, not publication or update date."
+    },
+    {
+      "title": "GPT-6 Astra is generally available in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside the strict two-day window. Product/model availability is also upstream-owned except for local governance implications."
+    },
+    {
+      "title": "Upcoming deprecation of selected GitHub Copilot models",
+      "source_url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+      "visible_date": "September 3, 2026",
+      "reason": "Outside the strict two-day window and mostly upstream-owned model catalog governance."
+    },
+    {
+      "title": "Replit September 4 changelog",
+      "source_url": "https://docs.replit.com/updates/2026/09/04/changelog",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside the strict two-day window; excluded even though analytics and backups have agent-built-app operating implications."
+    },
+    {
+      "title": "Claude Code on the web",
+      "source_url": "https://www.anthropic.com/news/claude-code-on-the-web",
+      "visible_date": "No explicit visible date in opened page excerpt",
+      "reason": "Missing directly visible publication date in the opened source; product background is upstream-owned."
+    },
+    {
+      "title": "Anthropic newsroom latest entries",
+      "source_url": "https://www.anthropic.com/news",
+      "visible_date": "Latest visible entries were August 27, August 14, July 24, and July 6, 2026",
+      "reason": "No qualifying September 5-7 entries found in the opened newsroom excerpt."
+    },
+    {
+      "title": "The Developer Who Forgets",
+      "source_url": "https://heera.it/the-developer-who-forgets",
+      "visible_date": "September 6, 2026 in search result snippet",
+      "reason": "Opened page did not return usable body lines, so the collector could not verify the visible date and source content directly."
+    },
+    {
+      "title": "Developers Digest - Coding Agents Need Better Human Loops",
+      "source_url": "https://www.developersdigest.tech/blog/human-loop-coding-agents",
+      "visible_date": "Search result said published yesterday / fetched September 6, 2026",
+      "reason": "URL was not safe to open through the browser tool; excluded because direct visible date and content could not be verified."
+    },
+    {
+      "title": "TrueFoundry - Claude Managed Agents Alternatives",
+      "source_url": "https://www.truefoundry.com/blog/claude-managed-agents-alternatives",
+      "visible_date": "Search result said about 10 hours ago",
+      "reason": "Opened page did not return usable body lines; excluded because direct visible date and source content could not be verified."
+    },
+    {
+      "title": "Business Insider - AI agents keep finding ways to bend the rules",
+      "source_url": "https://www.businessinsider.com/ai-agents-rogue-strategies-cheating-lying-german-wiki-openai-anthropic-2026-9",
+      "visible_date": "Published today in search result",
+      "reason": "Search result was relevant, but the collector prioritized open primary or directly accessible sources; not included without direct page verification."
+    },
+    {
+      "title": "LeadDev - How AI will shape software engineering in 2026",
+      "source_url": "https://leaddev.com/ai/how-ai-will-shape-engineering-in-2026",
+      "visible_date": "January 13, 2026",
+      "reason": "Outside the strict two-day window."
+    }
+  ],
+  "search_queries": [
+    "site:github.blog/changelog/copilot September 6 2026 coding agent code review",
+    "site:github.blog/changelog/copilot September 5 2026 coding agent",
+    "AI coding agent workflow September 6 2026 Published",
+    "AI code review September 6 2026 Published",
+    "MCP governance practice September 5 2026 Published",
+    "software engineering evals AI agents September 6 2026",
+    "\"Sep 6, 2026\" \"AI\" \"code review\"",
+    "\"Sep 6, 2026\" \"agent\" \"software engineering\"",
+    "\"Sep 5, 2026\" \"AI\" \"codebase\" \"RAG\"",
+    "\"Sep 5, 2026\" \"MCP\" \"agent\" \"developer\"",
+    "site:anthropic.com/news September 6 2026 Claude Code",
+    "site:openai.com/index September 6 2026 coding agents evals",
+    "\"September 6, 2026\" \"coding agents\" \"workflow\"",
+    "\"September 6, 2026\" \"prompt injection\" \"agent\" \"MCP\"",
+    "\"September 5, 2026\" \"agent experience\" \"AI agent\""
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed",
+    "wiki_lint": "passed",
+    "okf_validate": "passed"
+  },
+  "blockers": [],
+  "created_raw_path": "raw/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json"
+}
