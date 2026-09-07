@@ -1,0 +1,262 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-07T01:02:56Z",
+  "run_timestamp_local": "2026-09-06T21:02:56-0400",
+  "cutoff_window": {
+    "start_utc": "2026-08-31T01:02:56Z",
+    "end_utc": "2026-09-07T01:02:56Z",
+    "rule": "Only public sources published or visibly updated within the last 7 days are eligible; ambiguous, missing, future-dated, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+  ],
+  "source_urls_checked": [
+    "https://aaif.io/blog/mcp-2026-changes-the-rules",
+    "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+    "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/",
+    "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+    "https://github.com/andyrewlee/awesome-agent-orchestrators",
+    "https://medium.com/@robert.broeckelmann/mcp-governance-part-1-5c697f1461fd",
+    "https://oobeya.io/blog/complete-developers-guide-to-ai-coding-tools-2026",
+    "https://vercel.com/changelog/run-cursor-cloud-agents-vercel-sandbox",
+    "https://vibe-eval.com/updates/security-harness-for-ai-agents-sep-2026/",
+    "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+    "https://www.produktiv.ai/platform/mcp-governance",
+    "https://www.techradar.com/pro/overcoming-the-biggest-blocker-to-ai-production"
+  ],
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/",
+      "visible_date": "September 4, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "factual_summary": "GitHub weekly release notes say Copilot app and CLI now honor content exclusions, VS Code adds Agent Merge for review feedback, failed checks, and conflicts, multi-root workspaces bring agent sessions to every folder, and chat sessions show which related sessions need attention.",
+      "why_it_matters": "Local instruction and handoff practice should treat content exclusions, multi-root workspace scope, merge-readiness agents, and attention-state session hierarchies as boundary evidence for request packaging and delegated agent operation.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "Visual Studio Code",
+        "Agent Merge",
+        "Claude agent sessions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Claude"
+      ],
+      "follow_up_note": "During ingest, route broad product availability upstream and keep local implications around content boundaries, session hierarchy, and merge-review workflow."
+    },
+    {
+      "source_url": "https://vercel.com/changelog/run-cursor-cloud-agents-vercel-sandbox",
+      "visible_date": "3 Sep 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "factual_summary": "Vercel announced that Cursor Cloud Agents can run on Vercel Sandbox through Cursor Self-Hosted Machines APIs, with Cursor managing the agent harness and inference loop while Vercel provides isolated Firecracker microVMs, durable worker/session handling, and short-lived user-scoped credentials.",
+      "why_it_matters": "Terminal and cloud-agent handoffs increasingly separate the agent harness from the execution environment, so local workflow pages should track where durable control planes, sandbox isolation, and credential lifetimes belong.",
+      "named_entities": [
+        "Vercel Sandbox",
+        "Cursor Cloud Agents",
+        "Cursor Self-Hosted Machines",
+        "Vercel Functions",
+        "Vercel Workflow",
+        "Firecracker"
+      ],
+      "upstream_owned_entities": [
+        "Vercel",
+        "Cursor",
+        "Firecracker"
+      ],
+      "follow_up_note": "Check whether terminal-native fleet orchestration should cite sandbox-per-request and short-lived credential patterns as a cloud handoff boundary."
+    },
+    {
+      "source_url": "https://vibe-eval.com/updates/security-harness-for-ai-agents-sep-2026/",
+      "visible_date": "as of September 3, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md"
+      ],
+      "factual_summary": "VibeEval summarizes early-September agent-harness incidents and defenses, including GitSpawn disclosures from September 1-2, Apollo Watcher Live on September 3, AIR Security on September 1, and Vercel moving Cursor Cloud Agents to Firecracker-backed sandboxing on September 3; it frames harness risk around repository config, package installs, and trusted host components that later execute agent-written state.",
+      "why_it_matters": "The orient-inspect step itself can become an execution boundary when ordinary tools such as git read attacker-controlled config, and review gates need evidence from harness controls rather than only generated diffs.",
+      "named_entities": [
+        "GitSpawn",
+        "Manifold Security",
+        "Apollo Research Watcher Live",
+        "AIR Security",
+        "Vercel Sandbox",
+        "Cursor Cloud Agents",
+        "Claude Code",
+        "OpenAI Codex",
+        "Goose",
+        "Qwen Code",
+        "Grok Build"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Cursor",
+        "Goose",
+        "Qwen Code",
+        "Grok Build"
+      ],
+      "follow_up_note": "Prefer primary incident sources during ingest where available; keep this source as a secondary synthesis of September harness categories."
+    },
+    {
+      "source_url": "https://oobeya.io/blog/complete-developers-guide-to-ai-coding-tools-2026",
+      "visible_date": "2026-09-03",
+      "matched_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "factual_summary": "Oobeya published a developer guide that classifies AI coding tools from autocomplete through coding agents, and advises teams to evaluate codebase context, agent capabilities, security/data controls, pricing, workflow metrics, outcome metrics, rollout phases, and review burden instead of choosing tools only by generation speed.",
+      "why_it_matters": "This reinforces the local operating-model rule that workflow, context fit, review load, and measurement come before model/tool selection or tier-specific assistant rollout.",
+      "named_entities": [
+        "Oobeya",
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "JetBrains AI Assistant",
+        "Amazon Q Developer",
+        "Gemini Code Assist",
+        "Tabnine"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Cursor",
+        "Claude Code",
+        "OpenAI Codex",
+        "JetBrains AI Assistant",
+        "Amazon Q Developer",
+        "Gemini Code Assist",
+        "Tabnine"
+      ],
+      "follow_up_note": "During ingest, avoid turning the page into a product comparison; extract evaluation criteria and adoption workflow implications."
+    },
+    {
+      "source_url": "https://aaif.io/blog/mcp-2026-changes-the-rules",
+      "visible_date": "September 3, 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "factual_summary": "AAIF explains the 2026-07-28 MCP specification changes as stateless requests, optional versioned extensions, and direct discovery without a session handshake, with client capability metadata carried per request.",
+      "why_it_matters": "Progressive MCP discovery and tool-governance pages should distinguish per-request capability declaration and optional extension support from older session-negotiation assumptions.",
+      "named_entities": [
+        "Agentic AI Foundation",
+        "Model Context Protocol",
+        "MCP 2026-07-28",
+        "MCP Apps",
+        "Tasks extension",
+        "Skills over MCP"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "MCP Apps"
+      ],
+      "follow_up_note": "Verify against the authoritative MCP specification before ingesting and keep broad protocol background upstream-owned."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/overcoming-the-biggest-blocker-to-ai-production",
+      "visible_date": "Published 1 September 2026",
+      "matched_leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "factual_summary": "TechRadar published an opinion piece arguing that production AI agents need first-class, zero-anonymity identity; agents should use short-lived privileges tied to specific human-authorized actions and operate in contained trusted execution environments before touching production infrastructure.",
+      "why_it_matters": "Event-triggered workflows and acceptance gates need identity, action scope, and containment evidence before autonomous operations are allowed to affect production systems.",
+      "named_entities": [
+        "TechRadar",
+        "Teleport",
+        "AI agents",
+        "IAM",
+        "zero trust"
+      ],
+      "upstream_owned_entities": [
+        "Teleport",
+        "TechRadar"
+      ],
+      "follow_up_note": "Use as a practice-oriented identity-control source; confirm any vendor-specific claims if promoted into governance pages."
+    }
+  ],
+  "excluded_candidate_count": 6,
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "reason": "Already captured in the September 5 topic-news raw artifact; broad model availability is upstream-owned except for local workflow implications."
+    },
+    {
+      "source_url": "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+      "visible_date": "On Sep 4, 2026",
+      "reason": "Already captured in the September 5 topic-news raw artifact; not duplicated in this leaf-watch artifact."
+    },
+    {
+      "source_url": "https://medium.com/@robert.broeckelmann/mcp-governance-part-1-5c697f1461fd",
+      "visible_date": "Search result said published 2 days ago; opened page did not expose a stable visible publication date in accessible content",
+      "reason": "Excluded for missing direct visible date despite relevant MCP gateway governance content."
+    },
+    {
+      "source_url": "https://www.produktiv.ai/platform/mcp-governance",
+      "visible_date": "Search result said crawled 5 days ago; opened page did not expose a stable publication or update date",
+      "reason": "Excluded for missing direct visible date; product page content is also vendor positioning rather than dated practice research."
+    },
+    {
+      "source_url": "https://github.com/andyrewlee/awesome-agent-orchestrators",
+      "visible_date": "Search result said 2 days ago; opened GitHub page did not expose a stable updated date in accessible content",
+      "reason": "Excluded for missing direct visible date even though the taxonomy is relevant to terminal-native orchestration."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "visible_date": "August 28, 2026",
+      "reason": "Excluded as outside the strict seven-day window starting 2026-08-31T01:02:56Z."
+    }
+  ],
+  "federation_boundary": "Broad companies, products, models, frameworks, protocols, and tools are upstream-owned by the AI wiki. This artifact records only local AI-assisted-development practice implications for future ingest.",
+  "raw_only_boundary": "No docs/wiki pages or raw/processed files were updated by this watch."
+}
