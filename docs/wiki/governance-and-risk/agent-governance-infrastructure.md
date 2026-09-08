@@ -85,6 +85,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The September 1 raw sources add runtime-profile, customer-owned audit, and approval evidence. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records named sandbox profiles, migration checks that avoid changing security intent, pre-run boundary validation, customer-owned activity storage, customer-managed encryption keys, opt-in monitoring controls, and watermark provenance limits. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records scoped AI code-review approvals, managed model policy, data-retention controls, budget expiration, and plugin settings. Locally, governance infrastructure should bind runtime profile, storage owner, key owner, monitoring authority, model eligibility, budget policy, and approval scope into the same auditable control plane.
 
+The September 7 raw sources add policy-distribution, data-governance, and regulatory inventory evidence. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records content exclusions, enterprise-managed model defaults, AI pull-request approval controls, browser/native app policies, source-level data governance, SIEM-exportable audit trails, and proposed agent inventory and tamper-proof logs. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records build-versus-buy pressure and coding-versus-enterprise-agent operating boundaries. Locally, governance infrastructure should join model policy, app-control policy, source-access validation, approval admissibility, agent inventory, audit-log integrity, build-versus-buy gates, and accountable operating owner before agent autonomy expands.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -158,12 +160,15 @@ The September 1 raw sources add runtime-profile, customer-owned audit, and appro
 - Separate cloud, model, data, application, and agentic-runtime posture evidence so coding-agent inventories, per-agent identities, tool-call monitoring, command/file access, prompt-injection guardrails, and token-cost controls remain reviewable.
 - Compose identity, delegated authority, persistent state, gateways, registries, budget controls, traces, and provenance-aware state rather than relying on one control layer.
 - Bind runtime profile, migration evidence, storage owner, key owner, monitoring authority, model eligibility, budget policy, and approval scope into the run-level governance record.
+- Join model policy, app-control policy, source-access validation, approval admissibility, inventory, audit-log integrity, build-versus-buy gates, and accountable operating owner before expanding agent autonomy.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -254,6 +259,7 @@ The September 1 raw sources add runtime-profile, customer-owned audit, and appro
 
 - Maintained on 2026-08-29 with runtime control-plane, gateway, registry, budget, trace, and provenance-aware state governance evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration, customer-owned storage, customer-managed key, opt-in monitoring, model-policy, budget, and AI-approval evidence.
+- Maintained on 2026-09-07 with model-policy, app-control, source-access, approval-admissibility, inventory, audit-integrity, and build-versus-buy governance evidence.
 - Maintained on 2026-07-23 with task-scoped identity, human owners, just-in-time access, audit trails, and enterprise-layer monitoring signals.
 - Maintained on 2026-08-18 with inventory-first agent risk rollout, managed-settings governance, approval-bypass reporting, and rollout-telemetry signals.
 - Maintained on 2026-08-26 with operation-scoped authority, model-policy, browser-agent, billing-automation, exact-action approval, gateway-governance, AI-SPM, and requirements-validation infrastructure signals.

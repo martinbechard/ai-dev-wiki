@@ -50,6 +50,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 The September 6 raw sources add context-window, recovery, and cloud-sandbox continuity evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support separating recovered context from current workspace authority before a resumed agent trusts persistent state.
 
+The September 7 raw sources add concurrent-session and workspace-boundary evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records coding-agent use across concurrent research sessions, while the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records session hierarchy, multi-root workspace, Agent Merge, and runtime-history receipts. Locally, persistent workspaces should preserve concurrent lane purpose, active root set, merge state, runtime receipt history, and human steering thresholds before a resumed agent acts.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -80,6 +82,7 @@ The September 6 raw sources add context-window, recovery, and cloud-sandbox cont
 - Compare cloud development environments, programmatic sandboxes, and bundled agent workspaces by isolation, parallelism, reproducibility, attribution, artifact retention, and whether the workspace can be rebuilt or discarded after the run.
 - Distinguish durable notes, searchable context history, active workspace roots, and unresolved question queues before resuming persistent work.
 - Record reply-recovery state, sandbox locality, and cross-agent visibility when the workspace crosses runtime or agent boundaries.
+- Preserve concurrent-session purpose, workspace root membership, merge readiness, runtime receipt history, and human steering thresholds when multiple agent sessions advance the same project.
 
 ## Authoritative Sources
 
@@ -87,6 +90,8 @@ The September 6 raw sources add context-window, recovery, and cloud-sandbox cont
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
@@ -136,6 +141,7 @@ The September 6 raw sources add context-window, recovery, and cloud-sandbox cont
 
 - Maintained on 2026-09-05 with customer-controlled worker, sandbox, repository/cache/secret locality, cloud-environment comparison, and rebuildable-workspace evidence.
 - Maintained on 2026-09-06 with durable-note, searchable-context, active-root, unresolved-question, reply-recovery, sandbox-locality, and cross-agent-visibility evidence.
+- Maintained on 2026-09-07 with concurrent-session, active-root, merge-state, runtime-history, and human-steering evidence.
 - Maintained on 2026-08-29 with wake/sleep control, follow-up task, sparse notification, memory-source, and approval-renewal evidence for persistent agents.
 - Maintained on 2026-07-23 with workspace-as-trust-boundary guidance for agent-written files and downstream host readers.
 - Created on 2026-06-23 from public source guidance on long-running agent workspaces, continuity, step verification, and oversight checkpoints.

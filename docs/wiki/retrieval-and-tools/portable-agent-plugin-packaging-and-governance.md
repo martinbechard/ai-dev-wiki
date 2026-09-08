@@ -25,6 +25,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 The September 1 raw sources add portable plugin and managed-marketplace evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records Agent Plugins 1.0 customizations across compatible clients and managed plugin marketplace settings. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records authenticated plugin installation from private repositories and reusable review-skill repositories. Locally, portable plugin intake should preserve client compatibility, source marketplace, repository access path, authentication class, bundled skill behavior, and owner approval.
 
+The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds plugin marketplace and enterprise availability evidence. Portable plugin governance should record marketplace operation history, source repository or directory path, compatible clients, admin availability settings, personal account connection requirements, approval duration, and revocation path before a plugin or skill becomes reusable development infrastructure.
+
 Portable packages should not erase artifact boundaries. [Portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md) owns reusable procedure design; [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md) owns skills discovered through MCP; [tool call and MCP governance](tool-call-and-mcp-governance.md) owns runtime tool authorization; this page owns the packaging review that binds those components together.
 
 ## Practice Boundaries
@@ -42,6 +44,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Preserve run evidence that names which skill package and version loaded, which files it read or wrote, and which execution sandbox handled its scripts.
 - Treat shared plugin folder layouts and `.agents` naming as portability aids, not as proof of permission safety, provenance, dependency safety, client compatibility, or runtime governance.
 - Record compatible clients, marketplace or repository source, private-repository authentication class, bundled skill behavior, owner approval, and update policy before plugin use.
+- Record marketplace operation history, compatible clients, admin availability, personal connection requirements, approval duration, and revocation path for reusable plugins and skills.
 
 ## Authoritative Sources
 
@@ -57,6 +60,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [portable agent skills and runbooks](../adoption-and-operating-model/portable-agent-skills-and-runbooks.md)
@@ -88,6 +92,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 ## Maintenance Notes
 
 - Maintained on 2026-09-01 with Agent Plugins 1.0 compatibility, managed marketplace, private-repository authentication, reusable review-skill, and update-policy evidence.
+- Maintained on 2026-09-07 with marketplace-operation, client-compatibility, admin-availability, personal-connection, approval-duration, and revocation evidence.
 - Created on 2026-08-12 from the portable Agent Plugins classification query and August 12 public Agent Plugins adoption evidence.
 - Maintained on 2026-08-13 with portable package policy, repository-skill provenance, MCP allowlist, and client-namespace review evidence.
 - Maintained on 2026-08-14 with plugin-management, side-channel-question, queued-command, pinned-prompt, and recovery-feature supervision evidence.

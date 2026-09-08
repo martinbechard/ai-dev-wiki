@@ -52,6 +52,8 @@ The [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-
 
 The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds per-assistant OAuth and audit evidence. Sharing one token across multiple assistants collapses attribution for writes, so the local approval package should record the assistant-specific grant, requester, target resource, write class, consent screen or policy decision, and audit trail that proves which assistant acted.
 
+The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds centralized-policy and account-scoped approval evidence. MCP authorization should distinguish protocol scopes, step-up prompts, client confirmations, account-scoped remembered approvals, saved approval duration, centralized policy enforcement, token custody, identity passthrough, resource-bound permissions, and source-system audit evidence before tool access is treated as approved.
+
 ## Practice Boundaries
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -81,12 +83,14 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - Treat MCP servers, plugins, skills, gateways, and agent registries as linked authorization surfaces whose capability metadata, identity, budget, telemetry, approval, and revocation records must agree.
 - Treat AI-generated pull-request approvals as scoped authorization evidence only when enablement scope, allowed paths, merge-rule use, stale-approval invalidation, and admin ownership are recorded.
 - Prefer assistant-specific grants over shared tokens when multiple agents can write through the same external service, and preserve the consent or policy evidence that binds each grant to the acting assistant.
+- Distinguish protocol scopes, step-up prompts, client confirmations, remembered approvals, centralized policy enforcement, token custody, and source-system audit evidence before treating MCP access as approved.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [July 31 topic news collector source](../../../raw/processed/2026-07-31/ai-dev-wiki-topic-news-collector-2026-07-31T203150-0400.json)
@@ -133,6 +137,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 - Maintained on 2026-09-01 with AI pull-request approval enablement, allowed-path scope, merge-rule, stale-approval invalidation, and admin-decision evidence.
 - Maintained on 2026-09-02 with assistant-specific OAuth grants, write attribution, consent evidence, and per-assistant audit trails.
+- Maintained on 2026-09-07 with centralized-policy, remembered-approval, token-custody, identity-passthrough, and source-system audit evidence.
 - Maintained on 2026-08-29 with managed MCP, skill, plugin, gateway, registry, identity-propagation, budget-policy, telemetry, and revocation evidence.
 - Created on 2026-07-30 from public evidence about MCP resource scoping, read/write capability separation, sandbox permission classes, and approval-to-execution payload matching.
 - Maintained on 2026-07-31 with MCP registration review, runtime blocking, declared-tool snapshots, OAuth token scoping, callback-domain allow lists, and tool-schema evaluation boundaries.

@@ -31,6 +31,8 @@ The September 1 raw sources add prompt-timeline and queue recovery evidence. The
 
 The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds reply-recovery and context-preservation evidence. Recovery records should separate conversation memory, transport state, tool health, and unfinished human input before a resumed agent continues.
 
+The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds runtime reconnect and history evidence. Recovery records should preserve completed commands, patch history, Guardian review history, account-scoped MCP approval history, compressed rollout state, uncertain queued submissions, and service-drop recovery markers so a resumed agent can tell which actions are durable and which submissions still need confirmation.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -45,6 +47,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - Compare queued prompts, prompt timeline, changed files, host sync state, task identifier, and active working time before resuming a long-running agent.
 - Separate durable notes, searchable prior context, unanswered questions, and reply-recovery status before treating a recovered session as ready to continue.
 - Preserve MCP failure counts and latency diagnostics when tool health explains why a session needs recovery.
+- Preserve command history, patch history, verifier history, approval history, compression state, and uncertain queued submissions when reconnecting after runtime or service interruption.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -93,3 +97,4 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - Maintained on 2026-08-26 with model-to-model continuation boundaries separating repository state, accepted plan, blockers, trajectory summaries, and verification evidence.
 - Maintained on 2026-09-01 with prompt-timeline, queue-editing, host-sync, task-identifier, and active-working-time recovery evidence.
 - Maintained on 2026-09-06 with context-note, searchable-history, async-question, reply-recovery, MCP-failure, and latency-diagnostic recovery evidence.
+- Maintained on 2026-09-07 with command-history, patch-history, review-history, approval-history, compression-state, and uncertain-submission recovery evidence.

@@ -30,6 +30,8 @@ The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-d
 
 The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json) adds startup operating principles that map cleanly onto this lifecycle: automate tedium, trust but verify, build for rebuilding, and prototype before productionizing. Locally, these principles translate into lifecycle evidence: reusable hooks for repetitive checks, plan records before implementation, rebuildable worktrees or drafts, evals and verification before trust, and dogfood or pilot evidence before a workflow becomes a production dependency.
 
+The September 7 raw sources add human-checkpoint and product-validation evidence. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records checkpoint placement before execution, during execution, after execution, and through sampled review; the [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records prototype and delivery loops that require validation questions, blocker triage, dependency ownership, and human interpretation of evidence. Locally, the lifecycle should make checkpoint triggers, validation questions, dependency state, blocker state, and review ownership explicit before implementation output becomes accepted work.
+
 ## Practice Boundaries
 
 - Keep research evidence-gathering distinct from file modification.
@@ -43,6 +45,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Preserve phase evidence and gate decisions across research, planning, implementation, verification, review, and shipping.
 - Use hooks and reusable checks to automate repetitive verification, while keeping human ownership over trust, productionization, and final acceptance.
 - Treat rebuildable drafts, worktree isolation, and pilot or dogfood evidence as lifecycle gates before recurring agent workflows are promoted.
+- Place human checkpoints at bounded lifecycle transitions, in-loop risk triggers, post-execution review, and sampled audits when task confidence, sensitivity, value, or constraint behavior warrants it.
+- Pair agent-built prototypes with validation questions, evidence review, and product-decision ownership before treating task completion as product progress.
 
 ## Authoritative Sources
 
@@ -53,6 +57,8 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 
 ## Related Code
 
@@ -83,3 +89,4 @@ The [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai
 - Maintained on 2026-07-27 with asynchronous research report review and execution-boundary selection guidance.
 - Maintained on 2026-07-30 with explicit control-plane phases, memory boundaries, and human gate evidence.
 - Maintained on 2026-08-20 with startup operating principles for automated tedium, trust-but-verify gates, rebuildable drafts, and prototype-to-production promotion.
+- Maintained on 2026-09-07 with checkpoint-placement, prototype-validation, dependency-owner, blocker-triage, and review-ownership evidence.

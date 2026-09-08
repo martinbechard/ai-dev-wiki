@@ -23,6 +23,8 @@ The August 26 raw sources add non-specialist workflow and market-comparison evid
 
 The September 1 raw sources add partner-selection evidence around managed policies, worktree isolation, audit storage, and long-running task operations. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records managed model policies, budget expiration, data retention, custom agents, and AI review approvals. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records customer-owned logs, customer-managed keys, isolated worktrees, policy-aware model choices, task triage, and durable task identifiers. Locally, partner selection should compare policy control, retention and key custody, workspace isolation, model eligibility, budget ownership, and recovery UX before relying on product breadth.
 
+The September 7 raw sources add partner-selection evidence for model policy, data governance, and delivery economics. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records team-scoped default model policy, source-level data governance, identity passthrough, token lifecycle controls, and SIEM-exportable audit trails. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds AI-first SDLC, build-versus-buy, and prototype-validation signals. Locally, partner selection should test whether a partner can prove model-route governance, source-access validation, audit export, review capacity, build-versus-buy assumptions, and validation-before-expansion discipline.
+
 ## Selection Criteria
 
 - Workflow and business fit: the partner can map the actual user journey, failure modes, decision rights, and measurable outcome before proposing model or tool choices.
@@ -40,6 +42,7 @@ The September 1 raw sources add partner-selection evidence around managed polici
 - Non-specialist workflow enablement: the partner can encode specialist best practices, instructions, validations, checks, release guidance, workspace administration, and usage-limit review so broader contributors can propose changes without bypassing governance.
 - Coding-agent fit: the partner compares workspace ergonomics, platform integration, parallel-agent support, worktree behavior, approval gates, pricing, and autonomy boundaries against the target workflow rather than ranking tools generically.
 - Managed-agent control fit: the partner can prove policy control, retention and key custody, workspace isolation, model eligibility, budget ownership, recovery UX, and durable task identifiers.
+- Agent-era operating fit: the partner can prove model-route governance, source-access validation, audit export, review capacity, build-versus-buy assumptions, and validation-before-expansion discipline.
 
 ## Pilot Evidence
 
@@ -53,6 +56,8 @@ A selection pilot should use representative tasks and data, include expected fai
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [Workflow before model selection](workflow-before-model-selection.md)
 - [Adoption operating agreements](adoption-operating-agreements.md)
@@ -92,3 +97,4 @@ A selection pilot should use representative tasks and data, include expected fai
 - Maintained on 2026-08-23 with real-codebase trial, traceability, audit, attribution, code-ownership, and CI/CD integration criteria.
 - Maintained on 2026-08-26 with non-specialist workflow enablement, encoded validation/release guidance, workspace administration, usage-limit review, and workflow-specific coding-agent fit criteria.
 - Maintained on 2026-09-01 with managed policy, retention, customer-key, worktree-isolation, budget, model-eligibility, recovery-UX, and task-identifier selection criteria.
+- Maintained on 2026-09-07 with model-route governance, source-access validation, audit export, review capacity, build-versus-buy, and validation-before-expansion criteria.

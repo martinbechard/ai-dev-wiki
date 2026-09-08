@@ -45,6 +45,8 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds adoption-measurement evidence from coding-agent operating snapshots. Locally, adoption agreements should resist tool-access success metrics unless they are joined to useful behavior, human steering thresholds, review capacity, and accepted outcomes.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds operating-model boundary evidence. Adoption agreements should distinguish coding-agent sessions from unattended enterprise-agent operations, name developer-as-architect responsibilities, define build-versus-buy gates, and require prototype validation before agent-generated output becomes product direction.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -68,6 +70,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - Provide sanctioned tools and clear prohibited-data categories so shadow AI is handled as an operating-model gap, not only a policy violation.
 - Pair rollout targets with review-capacity planning, governance evidence, and practical literacy for agent-generated work.
 - Name shared-capability funding, usage visibility, spend visibility, outcome ROI, edge-case escalation, and delegated-scope expansion rules in the operating agreement.
+- Distinguish coding-agent work from unattended enterprise-agent operations, and name developer-as-architect, build-versus-buy, review-capacity, and prototype-validation responsibilities.
 - Treat unmanaged individual tool use and centrally mandated usage as opposite failure modes when neither is tied to outcome evidence.
 - Define vendor or platform evidence requirements for AI management systems, data locality, prompt-injection defenses, security review, and model-routing boundaries before regulated workflows adopt private agents.
 - Define how teams use governance infrastructure and ownership rosters to keep running-agent discovery, connected-service inventories, revocation paths, policy standards, and audit evidence current while retaining local workflow autonomy.
@@ -85,6 +88,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 
 ## Authoritative Sources
 
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -151,3 +155,4 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - Maintained on 2026-08-31 with workforce-readiness, operating-model, adoption-measurement, governance, review, testing, requirements, quality-control, and team-responsibility evidence.
 - Maintained on 2026-09-01 with permission-plus-accountability contribution policy, worktree isolation, session portability, reviewer capacity, and model-route operating fields.
 - Maintained on 2026-09-06 with workflow taxonomy, concurrent-session, intervention-rate, task-horizon, and adoption-measurement evidence.
+- Maintained on 2026-09-07 with coding-versus-enterprise-agent, developer-as-architect, build-versus-buy, review-capacity, and prototype-validation agreement fields.

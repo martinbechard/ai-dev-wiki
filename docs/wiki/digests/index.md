@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) includes September 6 practice updates for agent-adoption measurement, context recovery, cloud-agent handoffs, fleet and MCP governance, execution-edge authorization, prompt-injection handling, and agent evaluation.
+The [current September digest](2026-09.md) includes September 7 item-level updates for instruction placement, concurrent workspaces, checkpoint placement, prototype validation, model policy, app/source controls, approval audit, build-versus-buy gates, MCP authorization, plugin governance, data-agent retrieval, agent UI, runtime telemetry, human-loop evaluation, and model-route performance validation.
 
 ## Monthly Digests
 
@@ -50,6 +50,7 @@ The [current September digest](2026-09.md) includes September 6 practice updates
 
 - Maintained on 2026-09-05 with the September 5 raw ingest digest scope.
 - Maintained on 2026-09-06 with the September 6 raw ingest digest scope.
+- Maintained on 2026-09-07 with the September 7 raw ingest digest scope.
 - Created on 2026-06-23 as the hub for monthly AI-assisted development digests.
 - Simplified on 2026-07-17 so dated ingest summaries and raw-source provenance live in monthly digest pages rather than the digest hub.
 - Maintained on 2026-07-22 with the current July digest scope.

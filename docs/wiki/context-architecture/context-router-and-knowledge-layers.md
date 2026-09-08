@@ -31,6 +31,8 @@ The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai
 
 The August 25 raw sources add context-as-system-state and shared-information evidence. The [afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json) frames context engineering as assembling instructions, retrieved knowledge, tools, memory, schemas, and workflow data; the [afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) adds production-agent failure modes around stale retrieval, verbose tool output, lost state, and permission leakage; the [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records agentic engineering vocabulary that maps context, skills, harnesses, evals, hooks, and workflows into recurring practice terms. Locally, the router should name context inputs, freshness rules, retrieval provenance, tool affordances, memory scope, schema contracts, state carryover, and exclusion rules before those inputs become active model context.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds instruction-placement and semantic-context evidence. Context routers should route reusable procedures to skills, durable constraints to rules files, and just-in-time evidence to retrieval layers; data-agent routes should include lineage, column descriptions, project definitions, metric ownership, and source-truth checks before retrieved data becomes answer context.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -54,10 +56,12 @@ The August 25 raw sources add context-as-system-state and shared-information evi
 - Route persistent memories, managed settings, and behavior-baseline deviations through different layers so convenience context cannot override governance evidence.
 - Route instructions, retrieved knowledge, tools, memory, schemas, workflow data, guardrails, and state carryover as separately labeled context inputs with freshness and authority rules.
 - Treat shared information stores as multi-writer systems whose write governance and read-time context construction need different controls.
+- Route skills, rules files, retrieval evidence, lineage, metric definitions, and source-truth checks as separate context layers when coding or data agents need both procedure and facts.
 
 ## Authoritative Sources
 
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
@@ -108,3 +112,4 @@ The August 25 raw sources add context-as-system-state and shared-information evi
 - Maintained on 2026-08-14 with enterprise source trust, freshness, access-scope, conflict-policy, and reranking labels for context routing.
 - Maintained on 2026-08-17 with separate routing for persistent memory, managed agent settings, and behavior-baseline deviations.
 - Maintained on 2026-08-25 with system-state context inputs, production-agent context failure modes, shared-information governance, and agentic engineering vocabulary.
+- Maintained on 2026-09-07 with skills, rules-file, retrieved-context, lineage, metric-definition, and source-truth routing evidence.

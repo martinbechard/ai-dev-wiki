@@ -43,6 +43,8 @@ The [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds organization-level custom-agent evidence. Team-owned custom agent catalogs should record source labels, policy owner, model or capability assumptions, context-window and cost guidance, and review expectations so agent definitions remain governed artifacts rather than invisible assistant behavior.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds explicit placement evidence for skills, rules files, and retrieved context. Locally, skills should carry reusable procedures, rules files should carry durable constraints and conventions, and retrieval should supply just-in-time repository evidence with provenance. Teams should avoid moving all three concerns into one prompt or instruction file because that hides authority, freshness, and verification boundaries.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -68,6 +70,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Require user approval or a trusted local runbook before external onboarding text can trigger package installation, credential configuration, MCP setup, or tool enablement.
 - Preserve rationale, change history, exit criteria, and verification evidence for maintained skills or durable instruction files.
 - Treat repository-loaded instruction files from untrusted or newly cloned projects as source evidence until provenance and authority are reviewed.
+- Use skills for reusable procedures, rules files for durable constraints, and retrieval for just-in-time evidence; keep their authority, freshness, and verification boundaries visible.
 - Review generated instruction files and attached context before treating setup output as durable instruction authority.
 - Review model-router configuration and terminal-agent permission prompts before allowing setup output to change local guidance or execution scope.
 - Keep team, project, personal, skill, and hook guidance separated so each layer has clear authority, owner, and verification expectations.
@@ -79,6 +82,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Authoritative Sources
 
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
@@ -129,6 +133,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-05 with AGENTS.md versus SKILL.md and project-rules versus reusable-skills instruction-layer evidence.
+- Maintained on 2026-09-07 with skill, rules-file, and retrieved-context placement boundaries.
 - Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.

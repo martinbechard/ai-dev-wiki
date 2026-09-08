@@ -94,6 +94,8 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 The September 6 raw sources add concurrent-agent, context-preservation, and fleet-control trajectory evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support preserving enough trajectory evidence to explain long-running and multi-agent runs.
 
+The September 7 raw sources add human-loop and concurrent-work trajectory evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records benchmark concerns about steering, verification, and adaptation inside live workflows, while the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records concurrent sessions, attention state, and recovery receipts. Locally, trajectory evaluation should score when humans steer, when the agent recovers, which lane held attention, and whether adaptation improved the final outcome.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -103,6 +105,7 @@ The September 6 raw sources add concurrent-agent, context-preservation, and flee
 - Use human review when trajectory evidence contains judgment-heavy product, security, architecture, or operational tradeoffs.
 - Track cross-run agreement and disagreement as evidence about task clarity, retrieval sufficiency, and rubric quality.
 - Treat public benchmark gains as candidate eval inputs, not as local authorization to increase tool or write access.
+- Score human steering, recovery behavior, attention state, concurrent-lane ownership, and adaptation quality when evaluating long-running coding-agent work.
 - Use behavioral unit evals for expected next actions, integration evals for final artifacts, online evals for deployed trend monitoring, and benchmarks for capability-level comparison.
 - Prefer environment-backed eval datasets for long-running agents when correctness depends on filesystem, tool, browser, or service state.
 - Evaluate platform agent runs at the trajectory level when control-plane, runtime, memory, retrieval, or tool decisions affect trust.
@@ -137,6 +140,8 @@ The September 6 raw sources add concurrent-agent, context-preservation, and flee
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
 - [representative workflow calibration](representative-workflow-calibration.md)
@@ -198,6 +203,7 @@ The September 6 raw sources add concurrent-agent, context-preservation, and flee
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-07 with human-steering, recovery-behavior, attention-state, concurrent-lane, and adaptation-quality trajectory evidence.
 - Maintained on 2026-09-01 with supervisory-monitor, abstention, targeted-nudge, safe-output, grader-pass-rate, blocked-network, cooldown, and stop-after evaluation evidence.
 - Maintained on 2026-09-06 with concurrent-agent, async-question, recovery-path, peer-steering, fleet-policy, audit-integrity, and sandbox-control trajectory evidence.
 - Maintained on 2026-08-29 with persistent-agent, action-sequence, capability-metadata, high-impact-tool, safety-eval, and oversight trajectory signals.

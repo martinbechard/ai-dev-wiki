@@ -63,6 +63,8 @@ The August 22 raw sources add execution-edge telemetry:
 
 The August 28 and 29 raw sources add runtime inventory, observability, and IDE usage-visibility evidence. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records tracing and governance for agents that open pull requests, fix CI, upgrade dependencies, remediate CVEs, use model harnesses, and need running-agent inventories. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds context-window usage, cost information, review effort, shared sessions, and persistent follow-up signals. Locally, progress telemetry should join what the user sees with runtime identity, cost, state, and approval evidence.
 
+The September 7 raw sources add UI and policy telemetry evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records streaming token rendering, tool-call displays, inline diffs, long-context conversations, and background-agent changes as agent-product UI requirements. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records session hierarchy, attention state, completed-command history, saved approvals, app-control policies, and SIEM-exportable audit evidence. Locally, progress telemetry should join user-visible streaming and diff state with command receipts, attention state, approval state, policy state, and audit export readiness.
+
 The [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) adds long-running task and monitor telemetry signals. Mobile task lists expose running tasks, unread updates, tasks awaiting response, editable queued prompts, live working time, and thread identifiers. Supervisory workflows expose safe-output counts, grader pass rates, and blocked-network-call observations. Locally, telemetry should make waiting, unread, queued, blocked, graded, and actively-working states visible before a human decides whether to intervene.
 
 The September 3 raw sources add automation, audit, and cost-control telemetry evidence:
@@ -113,6 +115,8 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 
 ## Authoritative Sources
 
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -199,3 +203,4 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 - Maintained on 2026-08-15 with session-record, eval-retention, milestone-check, action-control, spend-attribution, behavior-baseline, memory-inspection, and recovery telemetry.
 - Maintained on 2026-08-21 with channel-visible intermediate work, event-subscription, active-goal, steering-event, approval-wait, and handoff-status telemetry.
 - Maintained on 2026-08-22 with execution-edge telemetry for shared channels, database traces, billable actions, trust receipts, memory writes, connected apps, sandbox events, and reusable trace vocabulary.
+- Maintained on 2026-09-07 with streaming-output, tool-call display, inline-diff, attention-state, command-receipt, approval-state, app-policy, and audit-export telemetry.

@@ -23,6 +23,8 @@ The [August 25 afternoon leaf update watch source](../../../raw/processed/2026-0
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds end-to-end RAG benchmark evidence. Retrieval optimization should measure ingestion and question-answering workloads together, including chunk provenance, ranking, reranking, document grading, sufficiency checks, answer quality, latency, and model-routing cost. An optimization that improves one retrieval stage is not accepted until the pipeline-level task still meets accuracy, compliance, and provenance requirements.
 
+The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds terminal-based coding-task validation and recovery evidence for model routes. Performance or speed claims tied to a model route should be accepted only when complex terminal tasks preserve validation steps, actionable-failure recovery, representative workload behavior, and model-policy eligibility.
+
 This page owns performance-specific acceptance. [Trajectory-level agent evaluation](trajectory-level-agent-evaluation.md) owns trace, harness, and environment evidence; [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md) owns delivery-level acceptance; and [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md) owns human decisions about experiments and applying changes.
 
 ## Practice Boundaries
@@ -42,6 +44,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Gate speed, latency, and cost claims with task success, tool correctness, trajectory quality, safety, repeated-run reliability, and human-intervention evidence.
 - Prefer deterministic graders for provable optimization checks and reserve calibrated judges for bounded qualitative review.
 - For RAG optimization, measure ingestion, retrieval, reranking, grading, sufficiency, answer quality, latency, model-routing cost, and provenance as one accepted pipeline.
+- Accept model-route speed or performance claims only with representative terminal-task validation, actionable-failure recovery, workflow-fit evidence, and model-policy eligibility.
 
 ## Authoritative Sources
 
@@ -52,6 +55,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - [Model-cost benchmark clipping](../../../raw/processed/cheapest-model-per-run-most-expensive-per-real-fix.md)
 - [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md)
@@ -87,3 +91,4 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Maintained on 2026-08-05 with benchmark-gaming classification, in-place fix counting, and tool-call cost evidence.
 - Maintained on 2026-08-25 with task-success, tool-correctness, trajectory-quality, safety, reliability, human-intervention, deterministic-grader, and calibrated-judge gates.
 - Maintained on 2026-08-31 with end-to-end RAG ingestion, retrieval, reranking, grading, sufficiency, answer-quality, latency, routing-cost, and provenance gates.
+- Maintained on 2026-09-07 with terminal-task validation, actionable-failure recovery, workflow-fit, and model-policy performance gates.

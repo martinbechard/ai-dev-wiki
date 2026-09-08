@@ -25,6 +25,8 @@ The August 8 sources add long-horizon deliverable and adoption-exercise evidence
 
 The August 28 and 29 raw sources add product-judgment evidence for prompt versions, untrusted source material, reusable skills, and collaboration health. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records prompt versioning, spreadsheet prompt-injection red-team fixtures, and institutional skill improvement loops. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) records reviewer fatigue and collaboration quality as adoption outcomes. Product judgment should therefore check whether the right workflow, evidence, review load, and source trust are in place, not only whether the generated artifact works.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds prototype-validation evidence. Agent-built prototypes should be judged against demand, willingness-to-pay, product-decision evidence, and human interpretation before task completion is treated as validation. The same source reinforces that design-time defect discovery and developer-as-architect responsibilities are product gates, not only coding productivity claims.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -40,6 +42,7 @@ The August 28 and 29 raw sources add product-judgment evidence for prompt versio
 - Connect agentic eval pipelines to traces, deterministic checks, LLM judges, and human product review before using them as release gates.
 - Apply equal-or-stricter human review for AI-generated product work when release risk, user impact, compliance, or business alignment is material.
 - Pair demos with repository evidence, codebase-health review, and final deliverable repair records when evaluating AI-agent build exercises or open-ended agent tasks.
+- Judge agent-built prototypes against demand, willingness-to-pay, product-decision evidence, and human interpretation before treating task completion as validation.
 
 ## Authoritative Sources
 
@@ -55,6 +58,7 @@ The August 28 and 29 raw sources add product-judgment evidence for prompt versio
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 
 ## Related Code
 
@@ -81,6 +85,7 @@ The August 28 and 29 raw sources add product-judgment evidence for prompt versio
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with prompt-version, red-team fixture, reusable-skill improvement, reviewer-fatigue, collaboration-health, and source-trust product-judgment evidence.
+- Maintained on 2026-09-07 with prototype-validation, demand-evidence, willingness-to-pay, design-time defect, and developer-as-architect product gates.
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.
 - Maintained on 2026-07-06 with runtime, compliance, audit, oversight, and software-quality evidence gates.
 - Maintained on 2026-07-13 with realistic frontend task checks and screenshot-versus-acceptance boundaries.

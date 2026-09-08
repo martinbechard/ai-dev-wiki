@@ -1,0 +1,402 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-08T00:30:58Z",
+  "run_timestamp_local": "2026-09-07T20:30:58-0400",
+  "cutoff_window": {
+    "timezone": "UTC",
+    "start_inclusive": "2026-09-06T00:30:58Z",
+    "end_inclusive": "2026-09-08T00:30:58Z",
+    "qualification_rule": "Only public sources with direct visible publication or update dates inside the strict two-day window were included. Missing, ambiguous, future-dated, older, lower-bound-only, or snippet-only dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_owner_scope": "AI-assisted development practice: context architecture, source workflows, instructions, agent workflows, coding practices, retrieval and tools, verification/evals, application patterns, governance/risk, and adoption/operating model.",
+    "collector_action": "Recorded practice implications and routing notes only; did not update docs/wiki or raw/processed."
+  },
+  "qualifying_updates": [
+    {
+      "title": "OpenAI shares internal coding-agent adoption and measurement snapshot",
+      "source_url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "visible_date": "September 6, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "OpenAI reported that its researchers are using coding agents throughout the day, often in concurrent sessions. The post describes increased delegation across research phases, higher technical-help and monitoring use, and continued human steering needs on longer-horizon work.",
+      "why_it_matters": "The local practice signal is to measure agent adoption by workflow taxonomy, task horizon, intervention rates, and accepted outcomes rather than raw generated-code or token volume alone.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Epoch AI"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Epoch AI"
+      ],
+      "local_practice_implication": "Candidate coverage for concurrent agent sessions, agent-work classification, and human-steering thresholds in high-complexity coding-agent workflows.",
+      "follow_up_notes": "Route company and product facts upstream; keep only measurement and operating-model lessons locally."
+    },
+    {
+      "title": "Unblocked separates agent skills, rules files, and retrieved context",
+      "source_url": "https://getunblocked.com/blog/agent-skills-vs-rules-files/",
+      "visible_date": "Sep 7, 2026",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Unblocked framed skills, rules files, and retrieval as separate mechanisms for shaping agent behavior, with different responsibilities for reusable procedures, durable constraints, and just-in-time repository context.",
+      "why_it_matters": "The article maps directly to local guidance on where teams should place standing instructions, task-specific procedures, and retrieved evidence so coding agents do not overload one context layer.",
+      "named_entities": [
+        "Unblocked",
+        "Agent Skills",
+        "MCP",
+        "Cursor",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "Unblocked",
+        "Agent Skills",
+        "MCP",
+        "Cursor",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Candidate coverage for instruction placement rules, context budgets, and durable skills versus retrieved repository evidence.",
+      "follow_up_notes": "Avoid a local product leaf; ingest only the placement taxonomy if useful."
+    },
+    {
+      "title": "Bruin argues MCP data agents need lineage and metric definitions",
+      "source_url": "https://getbruin.com/blog/data-tools-with-mcp-servers-2026/",
+      "visible_date": "September 7, 2026",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "factual_summary": "Bruin listed data-stack MCP servers and emphasized that warehouse access is not enough: agents also need lineage, column descriptions, project definitions, and authoritative metric definitions to produce reliable answers.",
+      "why_it_matters": "The practice update reinforces that governed MCP access must include provenance and semantic context, not just tool connectivity.",
+      "named_entities": [
+        "Bruin",
+        "MCP",
+        "dbt",
+        "Snowflake",
+        "Databricks",
+        "ClickHouse",
+        "Postgres",
+        "BigQuery",
+        "DuckDB"
+      ],
+      "upstream_owned_entities": [
+        "Bruin",
+        "MCP",
+        "dbt",
+        "Snowflake",
+        "Databricks",
+        "ClickHouse",
+        "Postgres",
+        "BigQuery",
+        "DuckDB"
+      ],
+      "local_practice_implication": "Candidate coverage for MCP tool qualification, retrieval provenance, lineage-aware data agents, and metric-definition checks.",
+      "follow_up_notes": "Broad data-tool catalog details belong upstream; local wiki should keep the governance and context-contract lesson."
+    },
+    {
+      "title": "Beam distinguishes coding-agent work from unattended enterprise operations",
+      "source_url": "https://beam.ai/agentic-insights/coding-agents-vs-enterprise-ai-agents",
+      "visible_date": "Sep 6, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "factual_summary": "Beam compared developer-facing coding agents with enterprise agents by user, unit of work, runtime surface, loop shape, built-in knowledge, and governance model. It positions coding-agent output as code or pull requests that humans review and merge.",
+      "why_it_matters": "The local practice implication is a clearer operating boundary: coding agents automate engineering sessions, while business-process agents require durable process ownership and audit controls.",
+      "named_entities": [
+        "Beam",
+        "Claude Code",
+        "Codex",
+        "Gartner"
+      ],
+      "upstream_owned_entities": [
+        "Beam",
+        "Claude Code",
+        "Codex",
+        "Gartner"
+      ],
+      "local_practice_implication": "Candidate coverage for agent role boundaries, handoff expectations, and audit responsibilities across engineering and business operations.",
+      "follow_up_notes": "Route product comparisons upstream; local ingest can cite the operating-model distinction."
+    },
+    {
+      "title": "InfoWorld describes AI-first development as an SDLC operating model",
+      "source_url": "https://www.infoworld.com/article/4215005/why-ai-first-development-matters-and-how-to-get-there.html",
+      "visible_date": "Sep 7, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "factual_summary": "InfoWorld described AI-first development as applying AI across the software development life cycle, with developers acting as architects who oversee agentic workflows. The article also highlights earlier defect surfacing, code review economics, and modernization work that clears more quickly.",
+      "why_it_matters": "The practice signal is that team adoption should be framed as an operating-model change with design-time quality gates, not as a selective productivity add-on.",
+      "named_entities": [
+        "InfoWorld",
+        "Black Duck Software",
+        "Collin Hogue-Spears"
+      ],
+      "upstream_owned_entities": [
+        "InfoWorld",
+        "Black Duck Software"
+      ],
+      "local_practice_implication": "Candidate coverage for AI-first SDLC adoption, design-time defect gates, and developer-as-architect responsibilities.",
+      "follow_up_notes": "Use as adoption and quality-gate evidence; avoid broad vendor background."
+    },
+    {
+      "title": "ETCIO reports build-versus-buy pressure from coding-agent adoption",
+      "source_url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ai-coding-agents-shift-corporate-tech-spending-companies-build-software-internally-over-buying/133859948",
+      "visible_date": "Sep 7, 2026 at 08:04 AM IST",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "factual_summary": "ETCIO reported, citing McKinsey research, that AI coding agents are changing corporate technology spending by making internal software builds more attractive for some organizations, especially in technology and healthcare.",
+      "why_it_matters": "The local practice angle is the need for explicit build-versus-buy gates that account for agent-enabled delivery speed, ownership cost, review capacity, and governance.",
+      "named_entities": [
+        "ETCIO",
+        "ANI",
+        "McKinsey",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "ETCIO",
+        "ANI",
+        "McKinsey"
+      ],
+      "local_practice_implication": "Candidate coverage for agent-era build-versus-buy decision criteria and adoption economics.",
+      "follow_up_notes": "Preserve the economic decision lens; do not duplicate broad McKinsey or company coverage locally."
+    },
+    {
+      "title": "Developers Digest highlights human-loop gaps in coding-agent benchmarks",
+      "source_url": "https://www.developersdigest.tech/tags/ai-coding",
+      "visible_date": "Blog Sep 6, 2026",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "factual_summary": "Developers Digest summarized a position paper arguing that coding-agent research over-optimizes for solo autonomy while real developer work depends on steering, verification, and adaptation inside live workflows.",
+      "why_it_matters": "The practice update supports evaluation designs that measure human-agent loop quality rather than only benchmark autonomy or issue-resolution rate.",
+      "named_entities": [
+        "Developers Digest",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "Developers Digest"
+      ],
+      "local_practice_implication": "Candidate coverage for human-loop evaluation criteria, steering protocols, and workflow-representative coding-agent benchmarks.",
+      "follow_up_notes": "The tag page points to the article; ingest should re-check the final article URL before moving this raw source to processed."
+    },
+    {
+      "title": "Verdent guide frames prototype validation as evidence before agent-built product expansion",
+      "source_url": "https://www.verdent.ai/guides/agents/ai-agents-for-product-managers",
+      "visible_date": "September 7, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "factual_summary": "Verdent described using agents to break product goals into tasks and return outputs for review while warning that prototype task completion is not the same as validated demand or willingness to pay.",
+      "why_it_matters": "The local practice implication is to pair agent-generated prototypes with explicit validation questions and human interpretation of evidence.",
+      "named_entities": [
+        "Verdent",
+        "Verdent Manager"
+      ],
+      "upstream_owned_entities": [
+        "Verdent",
+        "Verdent Manager"
+      ],
+      "local_practice_implication": "Candidate coverage for prototype validation loops, evidence reviews, and product-decision boundaries around agent-built prototypes.",
+      "follow_up_notes": "Keep the product-validation workflow; route Verdent product background upstream."
+    },
+    {
+      "title": "Verdent guide treats software delivery agents as dependency, blocker, and review coordinators",
+      "source_url": "https://www.verdent.ai/guides/agents/ai-agents-for-project-management",
+      "visible_date": "September 7, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "factual_summary": "Verdent's software project delivery guide positions agents as coordinators for dependencies, execution, blockers, and review, with human-facing outputs that still require inspection.",
+      "why_it_matters": "The practice signal is that agent workflows need explicit coordination state, blocker handling, and review checkpoints rather than only implementation prompts.",
+      "named_entities": [
+        "Verdent"
+      ],
+      "upstream_owned_entities": [
+        "Verdent"
+      ],
+      "local_practice_implication": "Candidate coverage for delivery-loop state, blocker triage, dependency ownership, and agent-to-human review packages.",
+      "follow_up_notes": "Ingest as workflow evidence only; avoid local vendor coverage."
+    },
+    {
+      "title": "Eddyter documents UI requirements for AI-agent products",
+      "source_url": "https://eddyter.com/blogs/best-rich-text-editor-for-ai-agents-2026",
+      "visible_date": "Sep 7, 2026; Updated On 07.09.2026",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "factual_summary": "Eddyter argued that AI-agent products need editors that support streaming token rendering, tool-call displays, inline diff visualization, code highlighting, long-context conversations, and background-agent changes without corrupting user state.",
+      "why_it_matters": "The local practice update is about application harness UX: agent products need first-class UI patterns for streaming progress, tool evidence, and reviewable diffs.",
+      "named_entities": [
+        "Eddyter",
+        "Lexical",
+        "TipTap",
+        "Monaco",
+        "Cursor",
+        "Devin",
+        "Claude Code",
+        "Windsurf",
+        "Aider",
+        "Continue.dev"
+      ],
+      "upstream_owned_entities": [
+        "Eddyter",
+        "Lexical",
+        "TipTap",
+        "Monaco",
+        "Cursor",
+        "Devin",
+        "Claude Code",
+        "Windsurf",
+        "Aider",
+        "Continue.dev"
+      ],
+      "local_practice_implication": "Candidate coverage for streaming agent UI, tool-call rendering, diff review surfaces, and long-context editor state management.",
+      "follow_up_notes": "Route editor/product catalog facts upstream; keep only the application-pattern requirements locally."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "source_url": "https://github.blog/",
+      "visible_date": "September 3, 2026",
+      "reason": "Older than the strict two-day window."
+    },
+    {
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "source_url": "https://github.blog/",
+      "visible_date": "September 4, 2026",
+      "reason": "Older than the strict two-day window and product/model details are upstream-owned."
+    },
+    {
+      "title": "GPT-6 Astra is generally available in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "reason": "Older than the strict two-day window; product/model availability is upstream-owned."
+    },
+    {
+      "title": "Leverage Code Review for Sustainable AI Coding Development",
+      "source_url": "https://cacm.acm.org/news/leverage-code-review-for-sustainable-ai-coding-development/",
+      "visible_date": "September 4, 2026 at 1:23 pm",
+      "reason": "Older than the strict two-day window."
+    },
+    {
+      "title": "Best AI powered code review tools in 2026",
+      "source_url": "https://composio.dev/content/best-ai-powered-code-review-tools-in-2026",
+      "visible_date": "Sep 4, 2026",
+      "reason": "Older than the strict two-day window; broad tool ranking is upstream-owned."
+    },
+    {
+      "title": "Agentic Dev: Why Your Dev Team Needs a P2P Mesh of Local AI Agents",
+      "source_url": "https://medium.com/@visrow/agentic-dev-why-your-dev-team-needs-a-p2p-mesh-of-local-ai-agents-389269be1fa9",
+      "visible_date": "6 hours ago",
+      "reason": "Only a relative date was visible on the opened page; excluded under the direct-date rule."
+    },
+    {
+      "title": "AI News 2026-09-07: Anthropic Releases MCP 2.1 with Bidirectional Tool Calling",
+      "source_url": "https://skillsllm.com/news/ai-news-2026-09-07",
+      "visible_date": "9/7/2026",
+      "reason": "Claims a protocol update but did not provide sufficiently authoritative source evidence in the collected page."
+    },
+    {
+      "title": "List of Top MCP Servers for September 7, 2026",
+      "source_url": "https://mcpmarket.com/daily/top-mcp-server-list-september-7-2026",
+      "visible_date": "September 7, 2026",
+      "reason": "Broad MCP server catalog belongs upstream; no distinct local practice implication beyond routing."
+    },
+    {
+      "title": "Qwen Max MCP Server",
+      "source_url": "https://mcp.nacos.io/mcp/server/server20270",
+      "visible_date": "2026.09.07 updated",
+      "reason": "Single MCP server entity update is upstream-owned; no local practice-level guidance found."
+    },
+    {
+      "title": "What are AI coding agents and how do they automatically build sites?",
+      "source_url": "https://www.godaddy.com/resources/ae/skills/what-are-ai-coding-agents",
+      "visible_date": "Sep 7, 2026",
+      "reason": "Introductory broad explainer; local wiki already owns practice leaves and upstream owns broad entity background."
+    },
+    {
+      "title": "Best AI Agent Editor 2026 social/product ranking snippets",
+      "source_url": "https://eddyter.com/blogs/best-rich-text-editor-for-ai-agents-2026",
+      "visible_date": "Sep 7, 2026",
+      "reason": "Ranking and pricing claims were excluded; only the UI pattern requirements were retained."
+    },
+    {
+      "title": "Business Insider coverage of OpenAI coding-token spending",
+      "source_url": "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+      "visible_date": "Published today",
+      "reason": "Relative date and secondary-source business coverage; original OpenAI source was retained instead."
+    }
+  ],
+  "public_search_queries": [
+    "AI-assisted development code review September 7 2026 agent workflows",
+    "context engineering coding agents September 7 2026",
+    "AI coding agents TDD September 7 2026",
+    "MCP governed tool calls coding agents September 7 2026",
+    "\"Sep 7, 2026\" \"coding agents\"",
+    "\"Sep 7, 2026\" \"AI agents\" \"code review\"",
+    "\"Sep 6, 2026\" \"coding agents\"",
+    "\"Sep 7, 2026\" \"Model Context Protocol\"",
+    "site:github.blog/changelog \"Sep 7, 2026\" \"Copilot\"",
+    "site:martinfowler.com/articles/exploring-gen-ai September 2026 coding agents TDD context engineering"
+  ],
+  "follow_up_notes": [
+    "Ingest should re-check the Developers Digest article target URL rather than relying solely on the tag page.",
+    "Do not create local encyclopedia pages for upstream-owned companies, products, models, tools, frameworks, or MCP servers.",
+    "Potential local synthesis targets include durable-instructions-and-skill-files.md, tool-call-and-mcp-governance.md, user-visible-progress-and-runtime-telemetry.md, code-review-evals-and-rubrics.md, and ai-development-partner-selection.md."
+  ],
+  "blockers": []
+}

@@ -37,6 +37,8 @@ The August 8 raw sources reinforce the overview boundary: coding-agent reliabili
 
 The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds desktop-agent and agent-application boundary evidence. A harness that can operate desktop apps, plugins, visual generation, browser workflows, recurring tasks, MCP tools, A2A messages, A2UI surfaces, or sandboxed app resources needs explicit approval boundaries, progress visibility, tool audit trails, and authoritative backend state instead of relying on the model transcript as the product architecture.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds agent-product UI evidence. Agent applications need harness support for streaming token rendering, tool-call displays, inline diff visualization, code highlighting, long-context conversations, and background-agent changes without corrupting user state. Locally, these requirements route to focused telemetry, recovery, and process-state leaves rather than becoming an editor or product catalog.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -67,6 +69,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - Treat setup latency, dependency availability, secret isolation, long-job survival, restart behavior, and artifact persistence as harness design inputs through [agent environment readiness](agent-environment-readiness.md).
 - Treat external enforcement, state persistence, recovery, and auditability as harness architecture requirements before increasing model autonomy.
 - Treat desktop app control, plugin execution, visual generation, recurring task automation, MCP tools, A2A messages, A2UI surfaces, and sandboxed app resources as harness boundaries that need visible approvals, audit trails, and authoritative backend state.
+- Treat streaming output, tool-call displays, inline diffs, code highlighting, long-context editing, and background-agent mutations as harness UI responsibilities that must preserve user state.
 
 ## Authoritative Sources
 
@@ -87,6 +90,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
 - [agent session recovery](agent-session-recovery.md)
 - [agent lifecycle hooks](agent-lifecycle-hooks.md)
@@ -133,3 +137,4 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - Maintained on 2026-07-30 with session recovery and lifecycle hooks split into separate focused leaves.
 - Maintained on 2026-08-08 with external-enforcement and state-persistence routing for long-horizon coding-agent harnesses.
 - Maintained on 2026-09-02 with desktop-agent, plugin, visual-generation, recurring-task, MCP, A2A, A2UI, sandboxed-resource, approval, audit, and authoritative-state boundaries.
+- Maintained on 2026-09-07 with streaming-output, tool-call display, inline-diff, long-context editor, and background-agent state requirements.

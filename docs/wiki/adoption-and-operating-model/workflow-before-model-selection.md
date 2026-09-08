@@ -91,6 +91,8 @@ The September 4 raw sources add availability, deprecation, and stronger-model ro
 
 The September 6 raw sources add agent-adoption measurement and tool-fit evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support selecting models and tools from workflow behavior rather than access availability or generation speed.
 
+The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-policy evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) frames AI-first adoption as a software-delivery operating model with design-time quality gates, developer-as-architect responsibilities, and build-versus-buy criteria. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records team-scoped managed model defaults and validation/recovery evidence for model routes. Locally, workflow selection should compare agent-enabled delivery speed, review capacity, ownership cost, model-policy eligibility, validation evidence, and fallback behavior before shifting work from bought systems to internal builds.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -113,6 +115,7 @@ The September 6 raw sources add agent-adoption measurement and tool-fit evidence
 - Compare coding-agent tools by editor fit, runtime shape, model-routing controls, multi-agent workspace support, and cost transparency against the intended workflow.
 - Add enterprise identity, audit, retention, residency, deployment, support, and evidence needs to workflow selection before coding-agent procurement expands.
 - Define collaboration-channel triggers, subscriptions, state, tool scope, and response posting rules before selecting a chat-agent toolkit.
+- Compare agent-enabled delivery speed, review capacity, ownership cost, model-policy eligibility, validation evidence, and fallback behavior before changing build-versus-buy or model-route defaults.
 - Verify repository-overview outputs against authoritative files before treating them as project knowledge or onboarding evidence.
 - Route admin-enabled models by task risk, context size, autonomy level, cost envelope, and verification burden rather than developer preference alone.
 - Treat specialized multi-agent modernization packages as workflow definitions with explicit roles, gates, evidence, and cost telemetry.
@@ -160,6 +163,8 @@ The September 6 raw sources add agent-adoption measurement and tool-fit evidence
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -243,6 +248,7 @@ The September 6 raw sources add agent-adoption measurement and tool-fit evidence
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-07 with AI-first SDLC, build-versus-buy, model-policy, review-capacity, validation, and fallback routing evidence.
 - Maintained on 2026-09-05 with long-horizon model availability, multi-model orchestration, delegated-tool comparison, review-follow-up, CI repair, feature, flaky-test, and backlog-cleanup workflow criteria.
 - Maintained on 2026-09-06 with agent-adoption measurement, task-horizon, intervention-rate, SDK-surface, prompt-cache, context-fit, and tool-fit evidence.
 - Maintained on 2026-09-04 with stronger-model availability, deprecation, retention, validation-claim, and async-question support routing evidence.

@@ -39,6 +39,8 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds end-to-end RAG benchmark and control-layer evidence. Retrieval quality should be evaluated across ingestion and question-answering workloads, multi-hop sufficiency, traceable chunks, ranking, reranking, document grading, answer generation, task-level performance, model-route policy, and compliance gaps. Provenance is not only a citation field; it should survive from source URL through chunk, rank, sufficiency check, answer, workflow choice, and outcome record.
 
+The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds lineage-aware MCP data-agent evidence. Data agents need warehouse connectivity plus lineage, column descriptions, project definitions, and authoritative metric definitions before retrieved answers can be trusted. Locally, retrieval provenance should join tool access, semantic context, metric ownership, lineage, rejected candidates, and cited source truth when agents answer from enterprise data.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -66,6 +68,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Make retrieval pipelines explicit: source discovery, crawl or sitemap policy, parser behavior, embedding/index ownership, retrieval API boundaries, freshness checks, and endpoint exposure review.
 - Validate retrieved custom-data evidence before it becomes coding, review, or governance context for an acting agent.
 - Evaluate RAG as an end-to-end pipeline with ingestion, retrieval, reranking, grading, sufficiency, answer generation, task metrics, model-routing policy, and provenance joined to outcomes.
+- Join tool access, lineage, column descriptions, project definitions, metric ownership, rejected candidates, and cited source truth when data agents answer from enterprise repositories.
 
 ## Authoritative Sources
 
@@ -86,6 +89,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 
 ## Related Code
 
@@ -123,3 +127,4 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Maintained on 2026-08-17 with agentic-RAG escalation, codebase-RAG evaluation, citation, rejected-candidate, retrieval-quality, chunking, and faithfulness guidance.
 - Maintained on 2026-08-30 with explicit retrieval-pipeline, crawling, parsing, embedding, vector-storage, retrieval-API, freshness, and endpoint-exposure guidance.
 - Maintained on 2026-08-31 with end-to-end RAG benchmark, ingestion, multi-hop sufficiency, traceable-chunk, reranking, grading, model-routing, and outcome-provenance evidence.
+- Maintained on 2026-09-07 with lineage, column-description, project-definition, metric-ownership, rejected-candidate, and source-truth evidence for data agents.

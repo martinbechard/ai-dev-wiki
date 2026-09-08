@@ -59,6 +59,8 @@ The same source adds Cisco management evidence for many active software agents. 
 
 The September 1 raw sources add multi-agent IDE and side-conversation evidence. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records side conversations with shared context, second-opinion commands, and multiple windows connected to one Agent Host session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records isolated worktrees, branch-specific histories, run/debug configurations against selected worktrees, and policy-aware model choices for custom agents. Locally, subagent coordination should preserve workspace isolation, reviewer-visible branch history, second-opinion scope, and model-policy rationale.
 
+The September 7 raw sources add concurrent-session and delivery-coordination evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records concurrent agent use, delivery-loop dependency coordination, blocker handling, and review packages; the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records session hierarchy, multi-root workspaces, and visible attention state. Locally, coordinators should track lane purpose, dependency ownership, blocker state, attention state, and review package completeness before accepting parallel work.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -92,6 +94,7 @@ The September 1 raw sources add multi-agent IDE and side-conversation evidence. 
 - Require asynchronous multi-agent workspaces to expose shared-memory boundaries, scheduled-job ownership, visible plans, tool-call traces, approval state, sandbox policy, credential redaction, and signed audit evidence.
 - Keep webhook, MCP, and messaging integrations inside the delegation contract so subagents cannot create side effects outside the coordinator's reviewed surface.
 - Isolate parallel agents by worktree or equivalent workspace, and record branch history, run configuration, second-opinion scope, and model-policy rationale for each delegated lane.
+- Record concurrent lane purpose, dependency ownership, blocker state, attention state, and review-package evidence before integrating parallel agent work.
 
 ## Authoritative Sources
 
@@ -121,6 +124,8 @@ The September 1 raw sources add multi-agent IDE and side-conversation evidence. 
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 
 ## Related Code
 
@@ -170,3 +175,4 @@ The September 1 raw sources add multi-agent IDE and side-conversation evidence. 
 - Maintained on 2026-08-16 with role-specialized subagent authority, artifact, verification, handoff, and oversight criteria.
 - Maintained on 2026-08-30 with asynchronous multi-agent workspace, shared-memory, scheduled-job, visible-plan, tool-call, approval, sandbox, redaction, and signed-audit evidence.
 - Maintained on 2026-09-01 with side-conversation, second-opinion, shared-session, worktree-isolation, branch-history, and model-policy evidence.
+- Maintained on 2026-09-07 with concurrent-session, dependency-owner, blocker-state, attention-state, and review-package evidence.

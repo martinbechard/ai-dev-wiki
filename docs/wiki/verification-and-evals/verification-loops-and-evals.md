@@ -75,6 +75,8 @@ The September 4 raw sources add demanding-work validation and browser-agent eval
 
 The September 6 raw sources add task-horizon, agent-facing, and harness-security eval evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support measuring agent completion through the allowed surface before autonomy expands.
 
+The September 7 raw sources add human-loop and prototype-validation eval evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records human-loop benchmark gaps, prototype validation before product expansion, and design-time quality gates; the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records model-route validation and recovery claims. Locally, verification should measure steering quality, human intervention points, validation questions, recovered failure handling, and workflow-representative tasks rather than only autonomous issue resolution.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -93,6 +95,7 @@ The September 6 raw sources add task-horizon, agent-facing, and harness-security
 - Require trace, observation, and path-choice evidence when a test agent owns the execution path rather than only authoring a script.
 - Separate static review, CI, preview, staging, production, and operations evidence when an AI-generated change affects a deployed workflow.
 - Include maintainability, reliability, security, and other software-quality dimensions in acceptance gates when the risk exceeds simple functional correctness.
+- Measure steering quality, intervention timing, validation questions, recovered failure handling, and workflow-representative task behavior rather than only autonomous issue resolution.
 - Classify tool-use failures separately from final-output failure so skipped calls, ignored evidence, fabricated outputs, and unnecessary calls become actionable diagnostics.
 - Preserve per-step state, runtime telemetry, sandbox session metrics, and trace identifiers when they explain verification cost, failure localization, or anomalous agent behavior.
 - Separate vulnerability classification from line-level localization, proof quality, compilation context, and contamination controls in security-oriented evals.
@@ -146,6 +149,8 @@ The September 6 raw sources add task-horizon, agent-facing, and harness-security
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -223,6 +228,7 @@ The September 6 raw sources add task-horizon, agent-facing, and harness-security
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-07 with human-loop, prototype-validation, model-route validation, recovered-failure, and workflow-representative eval evidence.
 - Maintained on 2026-09-05 with safeguard pause, classifier-trace, recovery-path, autonomous browsing, transaction-handling, and human-intervention eval evidence.
 - Maintained on 2026-09-06 with task-horizon, human-intervention, silent-failure, agent-facing funnel, harness-control, and critical-risk safeguard evidence.
 - Maintained on 2026-09-04 with stronger-model validation, async-tool availability, result-inspection, transaction-safety, and browser-agent evaluation evidence.
