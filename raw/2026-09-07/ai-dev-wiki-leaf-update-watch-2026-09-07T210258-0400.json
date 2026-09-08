@@ -1,0 +1,402 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-08T01:02:58Z",
+  "run_timestamp_local": "2026-09-07T21:02:58-0400",
+  "cutoff_window": {
+    "start_exclusive": null,
+    "start_inclusive": "2026-09-01T01:02:58Z",
+    "end_inclusive": "2026-09-08T01:02:58Z",
+    "timezone": "America/Toronto",
+    "qualification_rule": "Only sources with direct visible publication or update dates from 2026-09-01T01:02:58Z through 2026-09-08T01:02:58Z qualify; relative-only, missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/",
+    "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+    "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+    "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+    "https://curity.io/blog/mcp-authorization-isnt-enough-for-ai-agents/",
+    "https://www.cdata.com/blog/ai-agent-data-governance",
+    "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+    "https://www.axios.com/2026/09/03/house-bill-ai-agents-security",
+    "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+    "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+    "https://help.openai.com/en/articles/11481834-chatgpt-rate-card-business-enterpriseedu",
+    "https://github.com/openai/codex/releases",
+    "https://openai.com/index/research-acceleration-view-inside-openai/",
+    "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+    "https://arxiv.org/list/cs.AI/new?ref=genaisecretsauce.com"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_owner": "../../upstream-ai-wiki",
+    "upstream_owned_scopes": [
+      "broad AI ecosystem context",
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_owner_scope": "AI-assisted development lens: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "routing_note": "Broad ecosystem entity details are upstream-owned; this artifact records only downstream local-practice implications."
+  },
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-weekly-agent-sessions-content-protections-2026-09-04",
+      "source_url": "https://github.blog/changelog/2026-09-04-github-copilot-weekly-releases-august-31/",
+      "visible_date": "September 4, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "factual_summary": "GitHub Copilot weekly releases say Copilot app and CLI now honor content exclusions, Copilot for JetBrains has a generally available harness, VS Code adds Agent Merge, experimental multi-root workspaces for Copilot and Claude sessions, and hierarchical chat sessions that show attention state.",
+      "why_it_matters": "Selected workspace, handoff, coordination, readiness, recovery, and governance leaves depend on whether agent sessions expose workspace boundaries, attention state, merge-readiness work, and sensitive-code exclusion evidence.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "Copilot for JetBrains",
+        "Visual Studio Code",
+        "Agent Merge",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Claude"
+      ],
+      "follow_up_note": "Review persistent workspace and cross-environment handoff leaves for session hierarchy, multi-root workspace, content exclusion, and Agent Merge evidence."
+    },
+    {
+      "id": "openai-codex-cli-0-153-runtime-and-recovery-receipts-2026-09-03",
+      "source_url": "https://github.com/openai/codex/releases",
+      "visible_date": "released this 03 Sep 01:37; 04 Sep 23:25 hotfix also visible",
+      "selected_leaf_ids": [
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "factual_summary": "OpenAI Codex release notes for 0.153.0 list plugin CLI marketplace operations, complete TUI history for patches, background-terminal input, and completed commands, session reconnect after app-server drops with uncertain queued submissions paused, Guardian review history surviving compaction/restarts/forks, account-scoped remembered MCP approvals, rollout compression/resume handling, and later hotfixes for Astra visibility and async-question guidance.",
+      "why_it_matters": "Runtime updater integrity and recovery leaves need versioned receipts for updater behavior, approval history, compressed session replay, MCP approval scoping, and plugin marketplace operations before local setup guidance changes.",
+      "named_entities": [
+        "OpenAI Codex",
+        "Codex CLI",
+        "TUI",
+        "Guardian",
+        "MCP",
+        "GPT-6 Astra"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Codex",
+        "MCP",
+        "GPT-6 Astra"
+      ],
+      "follow_up_note": "Review updater, lifecycle-hook, session-recovery, MCP-approval, and plugin-packaging leaves for Codex 0.153 runtime receipts."
+    },
+    {
+      "id": "github-copilot-code-review-approval-evidence-2026-09-01",
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "visible_date": "September 1, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "GitHub Copilot code review now includes approval assessments and can be admin-authorized to approve pull requests; the feature is off by default, configurable at enterprise, organization, and repository levels, and an assessment alone does not satisfy merge requirements.",
+      "why_it_matters": "The selected approval and governance leaves track when AI-generated approval signals are admissible, which admin scope enabled them, and how they relate to merge rules and human review.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review governance and MCP approval leaves for admin scope, default-off state, and merge-rule relationship."
+    },
+    {
+      "id": "github-enterprise-managed-default-model-settings-2026-09-02",
+      "source_url": "https://github.blog/changelog/2026-09-02-enterprise-managed-settings-support-any-default-model/",
+      "visible_date": "September 2, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "factual_summary": "GitHub says enterprise-managed settings can set a preferred Copilot model as the default for new conversations, with team-specific defaults via managed JSON and team mappings across Copilot app, CLI, and VS Code for Business and Enterprise.",
+      "why_it_matters": "Partner selection and governance need evidence that model routing can be centrally owned, team-specific, and auditable across multiple agent clients instead of left to personal defaults.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "follow_up_note": "Review partner-selection and governance leaves for team-scoped model-policy and override evidence."
+    },
+    {
+      "id": "github-gemini-flash-validation-recovery-model-policy-2026-09-03",
+      "source_url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot/",
+      "visible_date": "September 3, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "factual_summary": "GitHub made Gemini 3.8 Flash available in Copilot and described early testing on complex terminal-based coding tasks with validation and persistent recovery from actionable failures; Business and Enterprise admins can manage access through model policy.",
+      "why_it_matters": "Selected eval, recovery, partner-selection, and governance leaves should treat model choice as a policy-gated workflow variable tied to validation and recovery evidence, not just model availability.",
+      "named_entities": [
+        "Gemini 3.8 Flash",
+        "Google",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "Gemini 3.8 Flash",
+        "Google",
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review performance-gate and partner-selection leaves for model-policy, recovery, and validation evidence."
+    },
+    {
+      "id": "curity-mcp-authorization-fine-grained-agent-control-2026-09-03",
+      "source_url": "https://curity.io/blog/mcp-authorization-isnt-enough-for-ai-agents/",
+      "visible_date": "2026-09-03",
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md"
+      ],
+      "factual_summary": "Curity argues that MCP OAuth authorization, MCP step-up authorization, and local tool-call control do not by themselves provide centralized, context-aware, organization-controlled authorization across agents; it proposes minimum, revocable task permissions mediated by a centralized policy/token-vaulting layer.",
+      "why_it_matters": "The selected MCP authorization and plugin-governance leaves need to distinguish protocol scopes, server-defined step-up controls, client-side tool confirmations, and centralized policy enforcement.",
+      "named_entities": [
+        "Curity",
+        "Model Context Protocol",
+        "OAuth",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Curity",
+        "Model Context Protocol",
+        "OAuth",
+        "Claude Code"
+      ],
+      "follow_up_note": "Review MCP approval and plugin packaging leaves for centralized policy versus per-server/per-client control boundaries."
+    },
+    {
+      "id": "cdata-agent-data-governance-infrastructure-layer-2026-09-03",
+      "source_url": "https://www.cdata.com/blog/ai-agent-data-governance",
+      "visible_date": "September 3, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "factual_summary": "CData frames AI agent data governance around identity passthrough/RBAC, workspace isolation, SIEM-exportable audit trails, source-level data governance, OAuth/SAML passthrough, resource-bound permissions, token lifecycle management, and validating source access per environment.",
+      "why_it_matters": "The selected governance, readiness, MCP approval, and partner-selection leaves need infrastructure-level evidence for data access, audit, environment validation, token rotation, and least privilege before agents connect to enterprise data.",
+      "named_entities": [
+        "CData Connect AI",
+        "OAuth",
+        "SAML",
+        "SIEM",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "GDPR",
+        "EU AI Act",
+        "OWASP"
+      ],
+      "upstream_owned_entities": [
+        "CData",
+        "OAuth",
+        "SAML",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "GDPR",
+        "EU AI Act",
+        "OWASP"
+      ],
+      "follow_up_note": "Review governance and environment-readiness leaves for source-access validation, identity passthrough, and SIEM evidence."
+    },
+    {
+      "id": "expresscomputer-human-checkpoints-agent-workflows-2026-09-04",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/how-to-apply-human-checkpoints-across-ai-agent-workflows/138417/",
+      "visible_date": "Sep 4, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "factual_summary": "Express Computer/Gartner describes human checkpoint placement before execution, during execution, after execution, and through out-of-loop sampling, with triggers such as confidence thresholds, sensitive topics, constraint violations, value thresholds, and random sampling.",
+      "why_it_matters": "Selected lifecycle, hook, governance, and partner-selection leaves can use this as practice evidence for where a harness should pause, record, route, or sample agent work rather than treating human review as a single final gate.",
+      "named_entities": [
+        "Express Computer",
+        "Gartner",
+        "Shiva Varma"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "follow_up_note": "Review lifecycle and hook leaves for checkpoint placement and trigger taxonomy."
+    },
+    {
+      "id": "openai-enterprise-computer-use-policy-controls-2026-09-03",
+      "source_url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+      "visible_date": "September 3, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "OpenAI Enterprise/Edu release notes add policy settings for browser and native app use on supported desktop clients, including website defaults/exceptions, upload/download/history/developer-access restrictions, automatic review, saved approvals, approval duration, and app allow/block rules. The same dated note adds Zendesk and OneNote plugins, where members connect their own accounts and admins manage availability separately.",
+      "why_it_matters": "Selected handoff, readiness, governance, plugin, and authorization leaves need evidence that cross-environment browser/native-app controls, saved approvals, plugin availability, and account-specific access are policy surfaces.",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Enterprise",
+        "ChatGPT Edu",
+        "Codex",
+        "Zendesk",
+        "OneNote"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT Enterprise",
+        "ChatGPT Edu",
+        "Codex",
+        "Zendesk",
+        "OneNote"
+      ],
+      "follow_up_note": "Review handoff, readiness, governance, and plugin leaves for browser/native-app controls and account-scoped plugin access."
+    },
+    {
+      "id": "axios-stop-rogue-ai-act-agent-inventory-logs-2026-09-03",
+      "source_url": "https://www.axios.com/2026/09/03/house-bill-ai-agents-security",
+      "visible_date": "Sep 3, 2026",
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "factual_summary": "Axios reports the proposed Stop Rogue AI Act would direct NIST to publish AI-agent deployment standards covering continuous maintenance and verification of agent actions, security/reliability evaluation, tamper-proof logs, and continuous machine-readable inventories of AI agents.",
+      "why_it_matters": "Governance and recovery leaves track the need for machine-readable agent inventories and tamper-proof action logs as infrastructure evidence for incident response and recurring agent operation.",
+      "named_entities": [
+        "Stop Rogue AI Act",
+        "NIST",
+        "CISA",
+        "Josh Gottheimer",
+        "Mike Lawler",
+        "Palo Alto Networks",
+        "Alliance for Secure AI"
+      ],
+      "upstream_owned_entities": [
+        "NIST",
+        "CISA",
+        "Palo Alto Networks",
+        "Alliance for Secure AI"
+      ],
+      "follow_up_note": "Review governance and recovery leaves for inventory, tamper-proof logs, and action-verification evidence."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot/",
+      "visible_date": "September 4, 2026",
+      "reason": "Already captured in prior processed topic collector and leaf-watch artifacts and in the current same-day topic collector; broad model/entity details route upstream, with only local model-policy implications retained via related Copilot/GitHub updates."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+      "visible_date": "September 2, 2026",
+      "reason": "Already captured by September 2 and September 4 processed raw artifacts; included as source checked for affected leaves but not duplicated as a standalone qualifying record."
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/11481834-chatgpt-rate-card-business-enterpriseedu",
+      "visible_date": "Updated: 2 hours ago",
+      "reason": "Relative-only update timestamp lacks a stable absolute visible date in the opened page, so it is excluded under the direct-date rule."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+      "visible_date": "Published: today in search result only",
+      "reason": "Search-result-only relative date and broad OpenAI/Codex cost story; no opened absolute visible date was used for qualification."
+    },
+    {
+      "source_url": "https://arxiv.org/list/cs.AI/new?ref=genaisecretsauce.com",
+      "visible_date": "current arXiv new-list crawl only",
+      "reason": "Search result included mixed abstracts and no selected, directly opened, date-qualified RAG provenance paper within the window."
+    },
+    {
+      "source_url": "https://www.ft.com/content/943e0a27-0147-4654-b4e8-551533dcded9",
+      "visible_date": "6 days ago in search result only",
+      "reason": "Search-result-only relative date and inaccessible/paywalled details; not used as a qualifying source."
+    },
+    {
+      "source_url": "https://omidsaffari.com/blog/t3-code-long-running-production-tasks-2026",
+      "visible_date": "August 26, 2026",
+      "reason": "Visible date is before the strict lower bound 2026-09-01T01:02:58Z."
+    },
+    {
+      "source_url": "https://onehorizon.ai/blog/agents-are-ephemeral-work-is-durable",
+      "visible_date": "August 26, 2026",
+      "reason": "Visible date is before the strict lower bound 2026-09-01T01:02:58Z."
+    },
+    {
+      "source_url": "https://www.premai.io/blog/rag-chunking-strategies-the-2026-benchmark-guide/",
+      "visible_date": "March 17, 2026",
+      "reason": "Visible date is outside the seven-day window."
+    }
+  ],
+  "run_result": {
+    "selected_leaf_count": 15,
+    "qualifying_update_count": 10,
+    "excluded_candidate_count": 9,
+    "artifact_path": "/Users/martinbechard/dev/ai-dev-wiki/raw/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json",
+    "ledger_path": "/Users/martinbechard/.codex/automations/ai-dev-wiki-leaf-update-watch/state.json",
+    "blockers": []
+  }
+}
