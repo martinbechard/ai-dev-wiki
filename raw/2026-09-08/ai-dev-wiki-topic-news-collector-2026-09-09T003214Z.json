@@ -1,0 +1,398 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp_utc": "2026-09-09T00:32:14Z",
+  "collector_identity": "Northstar",
+  "cutoff_window": {
+    "start_utc": "2026-09-07T00:32:14Z",
+    "end_utc": "2026-09-09T00:32:14Z",
+    "rule": "Include only public sources with a direct visible publication or update date inside the two-day window. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_ai_wiki_owns": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_ai_dev_wiki_owns": [
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ],
+    "collector_application": "Broad product and ecosystem facts are treated as upstream-owned; this artifact records only downstream practice implications and routing notes."
+  },
+  "search_queries": [
+    "site:github.blog changelog Copilot coding agent September 8 2026",
+    "site:github.blog/changelog Copilot September 8 2026 code review coding agent",
+    "AI coding agent code review September 8 2026",
+    "September 8 2026 AI coding agents software development practice",
+    "September 8 2026 context engineering AI agents developers",
+    "September 8 2026 agentic software engineering evals",
+    "September 7 2026 AI code review agents",
+    "site:arxiv.org/abs/2609 AI agents software engineering Sep 8 2026",
+    "site:blog.jetbrains.com AI coding agents September 8 2026 JetBrains",
+    "site:github.blog/changelog September 8 2026 Copilot",
+    "September 8 2026 AI-assisted code review developer",
+    "Sep 8 Claude Code agent workflow",
+    "Sep 8 Codex coding agent workflow",
+    "Sep 7 context engineering AI agents"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Automatic Dependabot access to GitHub-hosted registries",
+      "source_url": "https://github.blog/changelog/2026-09-08-automatic-dependabot-access-to-github-hosted-registries/",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "GitHub re-enabled automatic GitHub Packages authentication for Dependabot jobs. Dependabot can request packages:read through GITHUB_TOKEN for GitHub-hosted registries, reusing repository access granted through Manage Actions access, while fallback behavior avoids overriding explicit registry credentials.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding agents and dependency-update bots increasingly operate inside the same source workflow. This update reduces PAT handling for automated dependency work and gives source-workflow pages a concrete example of least-privilege package access, fallback authentication, and credential-removal hygiene.",
+      "suggested_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "Dependabot",
+        "GitHub Packages",
+        "GitHub Actions",
+        "GITHUB_TOKEN",
+        "ghcr.io"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Dependabot",
+        "GitHub Packages"
+      ],
+      "local_practice_implication": "Dependency automation guidance can recommend repository-scoped package grants over long-lived PAT registry entries when the package is hosted in GitHub Packages.",
+      "follow_up_notes": [
+        "Check whether source-workflows has a leaf for dependency-update bot credentials or package registry access.",
+        "If ingested, avoid duplicating GitHub product background; keep the credential-governance lens."
+      ]
+    },
+    {
+      "title": "Agents as both attack targets and adversaries",
+      "source_url": "https://www.axios.com/2026/09/08/ai-agents-bugcrowd-cyberattacks-hack",
+      "publisher": "Axios",
+      "visible_date": "September 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "Axios reported Bugcrowd CEO Dave Gerry's warning that enterprise AI agents should be treated as targets as well as possible adversaries. The article connects this risk to agent identity controls, enterprise tool sprawl, opaque agent action traces, and unauthorized pre-deployment agent behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local wiki can use this as a governance and risk signal: agent permissions, identity, inventory, auditability, and tool approval boundaries need to be treated as operational controls, not just application security add-ons.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Axios",
+        "Bugcrowd",
+        "Dave Gerry",
+        "OpenAI",
+        "Hugging Face",
+        "Black Hat"
+      ],
+      "upstream_owned_entities": [
+        "Bugcrowd",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "local_practice_implication": "Agent harness guidance should explicitly inventory agent identities, reachable tools, approved systems, and auditable action traces before granting broad enterprise access.",
+      "follow_up_notes": [
+        "Consider a downstream lens on agent identity and action attribution.",
+        "Route any broad OpenAI or Bugcrowd security event chronology upstream."
+      ]
+    },
+    {
+      "title": "OpenAI researcher coding-agent token spend",
+      "source_url": "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+      "publisher": "Business Insider",
+      "visible_date": "2026-09-07T11:32:34.175Z",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "Business Insider reported that OpenAI researchers' coding-agent usage rose sharply, with median daily token spend estimates above $600 by mid-August and 90th-percentile users above $7,000 per day. The article also noted organizational pushback against token leaderboards and indiscriminate high usage.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a current practice signal for operating-model coverage: agent adoption needs cost observability, meaningful productivity measures, and budget controls, not raw token consumption as a success metric.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Business Insider",
+        "Tom Carter",
+        "Sam Altman",
+        "Meta",
+        "Amazon",
+        "OpenClaw",
+        "Peter Steinberger"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Meta",
+        "Amazon",
+        "OpenClaw"
+      ],
+      "local_practice_implication": "Team-adoption guidance should distinguish agent intensity from delivered, production-qualified value and pair spend dashboards with outcome metrics.",
+      "follow_up_notes": [
+        "Check adoption-and-operating-model for cost-governance or token-budget leaves.",
+        "Keep company-specific adoption narrative upstream-owned."
+      ]
+    },
+    {
+      "title": "Security review process for community agent components",
+      "source_url": "https://www.expresscomputer.in/news/tenable-and-openai-launch-ai-security-review-process-for-community-built-components/138538/",
+      "publisher": "Express Computer",
+      "visible_date": "Sep 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "Express Computer reported that Tenable and OpenAI launched CyberAgents Exchange AI Inspector, a review process for community-built AI agents, skills, MCP servers, and multi-agent playbooks. The process combines model assessment, Tenable exposure tooling, and security-researcher review before enterprise deployment.",
+      "why_it_matters_for_ai_assisted_development_practice": "This gives the local wiki a concrete current example for governed intake of third-party agent components: pre-deployment inspection, expert review, and component registries should be part of MCP and skills adoption workflows.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Tenable",
+        "OpenAI",
+        "CyberAgents Exchange",
+        "CyberAgents Exchange AI Inspector",
+        "Tenable One AI Exposure",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Tenable",
+        "OpenAI",
+        "CyberAgents Exchange",
+        "MCP"
+      ],
+      "local_practice_implication": "Tool and skill adoption pages can treat community agent components like dependencies: inspect before use, require provenance, and reserve human security review for deployment decisions.",
+      "follow_up_notes": [
+        "Look for an existing local leaf on package-install risk, MCP governance, or skill intake.",
+        "Route broad CyberAgents Exchange product details upstream."
+      ]
+    },
+    {
+      "title": "Pipeline-versus-agent production litmus",
+      "source_url": "https://dev.to/james_anderson_h/most-ai-agents-are-just-if-statements-in-a-trench-coat-3960",
+      "publisher": "DEV Community",
+      "visible_date": "Sep 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "A DEV Community practice post argued that many production systems branded as agents are fixed pipelines with LLM calls. It proposed a control-flow litmus: if the flowchart can be drawn before execution, the system is a pipeline; reserve autonomous agency for tasks whose next step is genuinely discovered at runtime.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is directly relevant to application patterns and agent workflows because it reframes autonomy as a cost that must be justified through reproducibility, debuggability, testing, latency, and token-budget tradeoffs.",
+      "suggested_local_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "DEV Community",
+        "James Anderson"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Pattern guidance can include a decision rule: implement fixed workflows for listable steps and add bounded model-chosen control only where discovery makes static flow impossible.",
+      "follow_up_notes": [
+        "Potentially map to a durable leaf on workflow-first agent design or autonomy budgeting.",
+        "Community-source status means later ingest should corroborate with higher-authority engineering sources if possible."
+      ]
+    },
+    {
+      "title": "Shared Knowledge MCP human review boundary",
+      "source_url": "https://dev.to/pascal_cescato_692b7a8a20/from-ai-solutions-to-shared-knowledge-building-an-mcp-for-the-community-6bk",
+      "publisher": "DEV Community",
+      "visible_date": "Sep 7, 2026; comments visibly updated Sep 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "A DEV Community submission described an MCP server that converts an explicitly shared AI-assistant solution into a Markdown article and GitHub pull request, leaving publication to human review. Follow-up discussion emphasized the boundary between structuring a contribution and deciding whether it is true, non-sensitive, and worth publishing.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a current, concrete source-ingest pattern for AI-assisted development knowledge: extract only with explicit sharing, keep conversations private, validate structured output, and require human review before public documentation.",
+      "suggested_local_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "DEV Community",
+        "Pascal CESCATO",
+        "Shared Knowledge MCP",
+        "GitHub",
+        "GitHub Copilot",
+        "ElevenLabs",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "ElevenLabs",
+        "MCP"
+      ],
+      "local_practice_implication": "Source-workflow guidance can separate assistant-mediated formatting from epistemic authority, requiring explicit user intent and human acceptance before any private solution becomes public knowledge.",
+      "follow_up_notes": [
+        "Likely relevant to durable source-ingest and citation-workflow leaves.",
+        "Preserve the privacy and human-review boundary if ingested."
+      ]
+    },
+    {
+      "title": "Zero-telemetry prompt cost instrumentation",
+      "source_url": "https://dev.to/ib2mofficial/why-i-built-a-zero-telemetry-chrome-extension-to-measure-the-physical-cost-of-ai-prompts-4dmf",
+      "publisher": "DEV Community",
+      "visible_date": "Sep 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "A DEV Community post described EcoPrompt, a client-side browser extension that estimates prompt carbon, water, energy, and API cost in real time while avoiding prompt-text capture or server routing. The author emphasized local-only measurement, soft daily budgets, and prompt batching.",
+      "why_it_matters_for_ai_assisted_development_practice": "This gives adoption and governance pages a lightweight pattern for agent and prompt-cost awareness: surface cost signals without collecting sensitive prompt content, and make batching or context pruning visible to developers.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "DEV Community",
+        "EcoPrompt",
+        "ChatGPT",
+        "Claude",
+        "Gemini",
+        "Chrome Web Store"
+      ],
+      "upstream_owned_entities": [
+        "ChatGPT",
+        "Claude",
+        "Gemini"
+      ],
+      "local_practice_implication": "Developer-facing AI cost instrumentation should minimize telemetry, avoid collecting prompt text, and make context-pruning tradeoffs understandable at the point of use.",
+      "follow_up_notes": [
+        "Could support a future local practice lens on token-spend observability and privacy-preserving usage telemetry.",
+        "Verify environmental-estimation assumptions before turning this into wiki guidance."
+      ]
+    },
+    {
+      "title": "Self-correcting RAG production loop",
+      "source_url": "https://dataaspirant.com/blog/corrective-rag/",
+      "publisher": "DataAspirant",
+      "visible_date": "Published Sep 8, 2026",
+      "observed_at_utc": "2026-09-09T00:32:14Z",
+      "summary": "DataAspirant published a practical guide mapping Corrective RAG, Self-RAG, and Adaptive-RAG into a production graph: route by difficulty, grade retrieval evidence, rewrite or search when retrieval fails, generate only from graded evidence, then check groundedness and usefulness with retry budgets.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a strong local-practice update for codebase RAG and retrieval tooling: it turns research patterns into concrete graph nodes, structured-output graders, retry caps, parallel document grading, and streaming progress cues.",
+      "suggested_local_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "DataAspirant",
+        "Corrective RAG",
+        "Self-RAG",
+        "Adaptive-RAG",
+        "LangGraph",
+        "Pydantic"
+      ],
+      "upstream_owned_entities": [
+        "Corrective RAG",
+        "Self-RAG",
+        "Adaptive-RAG",
+        "LangGraph",
+        "Pydantic"
+      ],
+      "local_practice_implication": "Retrieval guidance can frame self-correction as a bounded workflow with typed grader outputs, explicit retry budgets, parallel grading, and instrumented failure rates.",
+      "follow_up_notes": [
+        "Check retrieval-and-tools for existing RAG evaluation and grounding leaves.",
+        "Keep broad technique descriptions upstream-owned; local value is implementation practice."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Harbor Adapters and Harbor-Index",
+      "source_url": "https://arxiv.org/abs/2609.04298",
+      "visible_date": "Submitted Thu, 3 Sep 2026 16:26:20 UTC",
+      "reason": "Outside the two-day cutoff window despite relevance to agentic evaluation infrastructure."
+    },
+    {
+      "title": "Don't Let the Model Write the YAML",
+      "source_url": "https://arxiv.org/abs/2609.00227",
+      "visible_date": "Submitted Mon, 31 Aug 2026 18:37:12 UTC",
+      "reason": "Outside the two-day cutoff window; relevant to deterministic structured edits but stale for this run."
+    },
+    {
+      "title": "ArcticSwarm: Deferring Early Consensus in Long-Horizon Multi-Agent Research",
+      "source_url": "https://arxiv.org/abs/2609.01870",
+      "visible_date": "Submitted Tue, 1 Sep 2026 21:08:40 UTC",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "GitHub Copilot weekly releases - August 31",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "September 4, 2026",
+      "reason": "Visible date is outside the two-day cutoff window."
+    },
+    {
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "source_url": "https://github.blog/",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside the two-day cutoff window and primarily upstream product coverage."
+    },
+    {
+      "title": "Behind SPFx Dev Skills: testing what agents know and fixing what they miss",
+      "source_url": "https://devblogs.microsoft.com/microsoft365dev/behind-spfx-dev-skills-testing-what-agents-know-and-fixing-what-they-miss/",
+      "visible_date": "Published 6 days ago in search result",
+      "reason": "Outside the two-day cutoff window, though relevant to agent extension evaluation practice."
+    },
+    {
+      "title": "Leverage Code Review for Sustainable AI Coding",
+      "source_url": "https://cacm.acm.org/",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "AI Coding Agents: Adoption Trends",
+      "source_url": "https://blog.jetbrains.com/",
+      "visible_date": "August 18, 2026",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "title": "Semaphore agent-native CI landing page",
+      "source_url": "https://semaphore.io/",
+      "visible_date": "Crawled today; no direct publication or update date visible in the captured page",
+      "reason": "Date evidence is ambiguous; crawler freshness is not acceptable for the strict window."
+    },
+    {
+      "title": "Coursera AI Agents with Model Context Protocol Specialization",
+      "source_url": "https://www.coursera.org/specializations/ai-agents-model-context-protocol",
+      "visible_date": "Starts Sep 9, 2026",
+      "reason": "Course start date is not a publication or update date for source qualification."
+    },
+    {
+      "title": "What Are AI Agents? A Practical Guide to Agentic AI",
+      "source_url": "https://dataaspirant.com/blog/what-are-ai-agents/",
+      "visible_date": "Published Aug 14, 2026",
+      "reason": "The page exposed newer related links but this article's own publication date is outside the cutoff window."
+    },
+    {
+      "title": "With Context Windows This Large, Why Do We Still Need Memory?",
+      "source_url": "https://dev.to/uchan135/with-context-windows-this-large-why-do-we-still-need-memory-5d8m",
+      "visible_date": "Posted on Sep 6",
+      "reason": "Outside the two-day cutoff window relative to run start."
+    }
+  ],
+  "follow_up_notes": [
+    "Later ingest should prioritize practice lenses: dependency-bot credential governance, agent identity controls, cost observability, community component review, workflow-versus-agent design, private-to-public source contribution gates, privacy-preserving prompt telemetry, and bounded self-correcting RAG.",
+    "Do not update docs/wiki from this collector artifact; route it through the raw-source ingest workflow and verifier gate.",
+    "When ingesting community posts, corroborate durable guidance with higher-authority implementation sources where feasible."
+  ],
+  "blockers": []
+}
