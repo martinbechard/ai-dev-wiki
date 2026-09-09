@@ -1,0 +1,431 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-09T01:01:52Z",
+  "run_timestamp_local": "2026-09-08T21:01:52-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-02T01:01:52Z",
+    "end_utc": "2026-09-09T01:01:52Z",
+    "policy": "Only public sources with direct visible publish/update dates inside the window qualify; broad ecosystem entity facts are routed upstream and only local practice implications are retained."
+  },
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md"
+  ],
+  "source_urls_checked": [
+    "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+    "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+    "https://blogs.oracle.com/developers/post/getting-started-with-oracle-apex-development-in-vs-code",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+    "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+    "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+    "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+    "https://openai.com/index/the-hugging-face-incident-and-the-road-ahead/",
+    "https://registry.modelcontextprotocol.io/",
+    "https://www.axios.com/2026/09/03/house-bill-ai-agents-security",
+    "https://www.axios.com/2026/09/08/ai-agents-bugcrowd-cyberattacks-hack",
+    "https://www.expresscomputer.in/news/zoho-launches-catalyst-30-for-ai-assisted-application-development/138373/",
+    "https://www.financialexpress.com/business/news/zohos-catalyst-3-0-takes-aim-at-the-code-to-production-gap/4330680/",
+    "https://www.helpnetsecurity.com/2026/09/07/chris-webber-teleport-zero-trust-ai-agents/",
+    "https://www.helpnetsecurity.com/2026/09/07/toolhive-open-source-mcp-server-security/",
+    "https://www.helpnetsecurity.com/2026/09/08/microsoft-project-zenith-windows-11-experience/",
+    "https://www.helpnetsecurity.com/2026/09/08/product-showcase-doppler-secrets-management-platform/",
+    "https://www.theguardian.com/technology/2026/sep/04/openai-agent-goes-rogue"
+  ],
+  "qualifying_update_count": 11,
+  "qualifying_updates": [
+    {
+      "id": "github-hydrafusion-bounded-orchestration-2026-09-04",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "visible_date": "September 4, 2026",
+      "source_type": "vendor engineering blog",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "factual_summary": "GitHub introduced Project HydraFusion as a Copilot CLI research preview that selects among single, cascade, and critique execution patterns; the design records cost, latency, role, diagnostics, cancellation, validation, isolated review, and fail-safe patch application.",
+      "why_it_matters_for_leaf": "It supplies a current public example of use/compose/build workflow selection becoming runtime policy, with bounded execution and isolated review as harness responsibilities rather than prompt wording.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot CLI",
+        "Project HydraFusion",
+        "TerminalBench 2.1",
+        "DeepSWE",
+        "CheckpointBench",
+        "Claude Opus 5",
+        "GPT-5.6 Sol"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Claude Opus 5",
+        "GPT-5.6 Sol"
+      ],
+      "follow_up_note": "During ingest, keep broad product/model benchmarking upstream and synthesize only the local harness/governance pattern."
+    },
+    {
+      "id": "github-parallel-worktree-agent-sessions-2026-09-03",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+      "visible_date": "September 3, 2026",
+      "source_type": "vendor developer blog",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "factual_summary": "GitHub described Copilot app agent sessions that run independently, keep their own context, and can execute in separate Git worktrees while the user monitors progress and reviews completed results.",
+      "why_it_matters_for_leaf": "It reinforces the local workflow rule that parallel terminal or app-based agents need isolated checkout state, resumable context, and review-centered human control.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Git worktrees"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app"
+      ],
+      "follow_up_note": "Use as practice evidence for worktree isolation and task review, not as a product encyclopedia entry."
+    },
+    {
+      "id": "github-loop-engineering-vocabulary-2026-09-02",
+      "source_url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+      "visible_date": "September 2, 2026",
+      "source_type": "vendor educational blog",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "factual_summary": "GitHub framed loop engineering as scheduled, repeatable agent systems with fetching, validation, escalation, skills, observability, routing, and checkpoints; it also described squads and fleets as role-specialized multi-agent workflow structures.",
+      "why_it_matters_for_leaf": "It gives public terminology for the wiki's scheduled feed and leaf-watch practices, especially validation checkpoints and escalation when a loop gets stuck.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Podcast",
+        "loop engineering",
+        "Ralph loops",
+        "squads",
+        "fleets"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "follow_up_note": "During ingest, preserve the local automation design implications and avoid importing the entire vocabulary explainer."
+    },
+    {
+      "id": "github-complete-task-efficiency-metrics-2026-09-02",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+      "visible_date": "September 2, 2026",
+      "source_type": "vendor engineering blog",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "factual_summary": "GitHub reported that reducing individual tool outputs can increase total task cost when useful details are omitted, and described evaluating harness changes with complete task metrics and controlled online experiments before shipping.",
+      "why_it_matters_for_leaf": "It supports the local practice of optimizing automation and tool output for end-to-end completion evidence rather than local token count alone.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot CLI",
+        "Rust Token Killer",
+        "RTK"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot CLI"
+      ],
+      "follow_up_note": "Good candidate for application harness and update-feed validation guidance; keep RTK details source-specific."
+    },
+    {
+      "id": "toolhive-containerized-mcp-governance-2026-09-07",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/07/toolhive-open-source-mcp-server-security/",
+      "visible_date": "September 7, 2026",
+      "source_type": "security trade article",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Help Net Security described ToolHive as an Apache-2.0 open-source platform that runs MCP servers in containers, applies permission files, identity/access policy, audit logs, registry curation, provenance verification, gateway SSO, traces, and metrics.",
+      "why_it_matters_for_leaf": "It is directly relevant to MCP server discovery and runtime governance: local practice should distinguish sandboxing from full identity, policy, and telemetry integration.",
+      "named_entities": [
+        "ToolHive",
+        "Stacklok",
+        "Model Context Protocol",
+        "MCP Registry API",
+        "Docker",
+        "Podman",
+        "Kubernetes",
+        "OIDC",
+        "OAuth",
+        "OpenTelemetry",
+        "Prometheus"
+      ],
+      "upstream_owned_entities": [
+        "ToolHive",
+        "Stacklok",
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Route broad ToolHive background upstream; retain the local governance distinction between isolated install and governed rollout."
+    },
+    {
+      "id": "teleport-zero-trust-agent-runtime-2026-09-07",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/07/chris-webber-teleport-zero-trust-ai-agents/",
+      "visible_date": "September 7, 2026",
+      "source_type": "sponsored security interview",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Teleport argued that AI agent security needs unique agent identity, trusted runtimes with zero starting privileges, continuous behavioral enforcement, objective-aware monitoring, and runtime termination when risk is detected.",
+      "why_it_matters_for_leaf": "It strengthens delegated-authority and repair-gate guidance: point-in-time approval is insufficient when agents act continuously or in groups.",
+      "named_entities": [
+        "Teleport",
+        "Chris Webber",
+        "AI agents",
+        "zero trust",
+        "trusted runtimes"
+      ],
+      "upstream_owned_entities": [
+        "Teleport"
+      ],
+      "follow_up_note": "Treat vendor claims cautiously; useful as current public signal for identity and enforcement patterns."
+    },
+    {
+      "id": "microsoft-project-zenith-local-agent-containment-2026-09-08",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/08/microsoft-project-zenith-windows-11-experience/",
+      "visible_date": "September 8, 2026",
+      "source_type": "security trade article",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "factual_summary": "Help Net Security reported Microsoft Project Zenith as a Windows 11 developer-PC experience with local large-model workflows and day-one platform protections for agents, including OS-enforced identity, containment through Microsoft Execution Containers, and enterprise manageability.",
+      "why_it_matters_for_leaf": "It shows terminal/developer workstation workflows shifting toward local model execution plus OS-level containment and identity controls.",
+      "named_entities": [
+        "Microsoft",
+        "Project Zenith",
+        "Windows 11",
+        "AMD Ryzen AI Halo",
+        "Windows Terminal",
+        "Visual Studio Code",
+        "WSL",
+        "Microsoft Execution Containers",
+        "MXC"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Windows 11",
+        "Project Zenith"
+      ],
+      "follow_up_note": "Keep product/device details upstream; local implication is workstation policy for local agents."
+    },
+    {
+      "id": "doppler-secrets-for-agent-identities-2026-09-08",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/08/product-showcase-doppler-secrets-management-platform/",
+      "visible_date": "September 8, 2026",
+      "source_type": "sponsored product showcase",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Help Net Security covered Doppler positioning secrets management for developers, CI/CD pipelines, MCP servers, and AI agents, with a single system of record and runtime delivery instead of scattered credentials.",
+      "why_it_matters_for_leaf": "It adds a current public example that delegated authority must account for automated identities and runtime secret delivery, especially around MCP servers.",
+      "named_entities": [
+        "Doppler",
+        "MCP servers",
+        "AI agents",
+        "CI/CD pipelines"
+      ],
+      "upstream_owned_entities": [
+        "Doppler"
+      ],
+      "follow_up_note": "Sponsored source; use only as market signal for automated identity/secrets pressure."
+    },
+    {
+      "id": "axios-stop-rogue-ai-agent-standards-2026-09-03",
+      "source_url": "https://www.axios.com/2026/09/03/house-bill-ai-agents-security",
+      "visible_date": "September 3, 2026",
+      "source_type": "news article",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "Axios reported that U.S. Representatives Josh Gottheimer and Mike Lawler introduced the Stop Rogue AI Act, directing NIST to develop standards for secure AI-agent deployment, action verification, reliability evaluation, tamper-proof logs, and machine-readable agent inventories.",
+      "why_it_matters_for_leaf": "It is a public policy signal for inventory, auditability, and action verification becoming expected controls for delegated agents.",
+      "named_entities": [
+        "Josh Gottheimer",
+        "Mike Lawler",
+        "Stop Rogue AI Act",
+        "NIST",
+        "CISA",
+        "Palo Alto Networks",
+        "GoDaddy",
+        "Infoblox",
+        "Alliance for Secure AI"
+      ],
+      "upstream_owned_entities": [
+        "Stop Rogue AI Act",
+        "NIST",
+        "CISA"
+      ],
+      "follow_up_note": "Retain local control implications; route bill tracking and policy background upstream if maintained there."
+    },
+    {
+      "id": "axios-agent-hack-identity-visibility-2026-09-08",
+      "source_url": "https://www.axios.com/2026/09/08/ai-agents-bugcrowd-cyberattacks-hack",
+      "visible_date": "September 8, 2026",
+      "source_type": "news article",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ],
+      "factual_summary": "Axios reported Bugcrowd CEO Dave Gerry's warning that enterprise AI agents may become both attack targets and insider-threat-like actors, and that companies will need better visibility into agents, their actions, and controls around what exists on their networks.",
+      "why_it_matters_for_leaf": "It reinforces the need for delegated-authority inventories, attribution evidence, and security repair gates that can detect compromised or drifting agents.",
+      "named_entities": [
+        "Bugcrowd",
+        "Dave Gerry",
+        "Black Hat",
+        "OpenAI",
+        "Hugging Face",
+        "Cisco Talos"
+      ],
+      "upstream_owned_entities": [
+        "Bugcrowd",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "follow_up_note": "Use as risk evidence; avoid repeating sensational incident detail without primary-source corroboration."
+    },
+    {
+      "id": "zoho-catalyst-agent-ready-prompt-to-production-2026-09-03",
+      "source_url": "https://www.expresscomputer.in/news/zoho-launches-catalyst-30-for-ai-assisted-application-development/138373/",
+      "visible_date": "September 3, 2026",
+      "source_type": "trade news article",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "factual_summary": "Express Computer reported Zoho Catalyst 3.0 as an AI-agent-ready cloud development platform with AI IDE integrations, Agent Skills, MCP support, a non-interactive CLI, open-sourced skills/SDK/CLI/Slyte framework components, and hosting/runtime services.",
+      "why_it_matters_for_leaf": "It is a current public example of enterprise builder workflows exposing agent skills, CLI operations, and deployment surfaces that coding assistants can use from the development environment.",
+      "named_entities": [
+        "Zoho",
+        "Catalyst 3.0",
+        "Agent Skills",
+        "Model Context Protocol",
+        "Claude Code",
+        "Codex",
+        "Slyte JavaScript framework"
+      ],
+      "upstream_owned_entities": [
+        "Zoho",
+        "Catalyst 3.0",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Pair with Financial Express September 2 article if ingest needs an independent source for prompt-to-production framing."
+    }
+  ],
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "source_url": "https://openai.com/index/the-hugging-face-incident-and-the-road-ahead/",
+      "visible_date": "September 1, 2026",
+      "reason": "outside strict lower bound for this run window",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/",
+      "visible_date": "September 8, 2025",
+      "reason": "visible publish date is older than the 7-day window",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md"
+      ]
+    },
+    {
+      "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "visible_date": "July 28, 2026",
+      "reason": "visible publish date is older than the 7-day window",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ]
+    },
+    {
+      "source_url": "https://blogs.oracle.com/developers/post/getting-started-with-oracle-apex-development-in-vs-code",
+      "visible_date": "July 27, 2026",
+      "reason": "visible publish date is older than the 7-day window",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "visible_date": "no clear page-level publication date in result",
+      "reason": "no direct visible date inside the run window",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ]
+    },
+    {
+      "source_url": "https://registry.modelcontextprotocol.io/",
+      "visible_date": "individual listing update dates vary; search result showed one server updated 9/7/2026",
+      "reason": "catalog listing is broad upstream-owned MCP registry material; no selected local-practice leaf update was isolated from a stable dated source page",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md"
+      ]
+    },
+    {
+      "source_url": "https://www.financialexpress.com/business/news/zohos-catalyst-3-0-takes-aim-at-the-code-to-production-gap/4330680/",
+      "visible_date": "September 2, 2026 18:37 IST",
+      "reason": "duplicate coverage of Zoho Catalyst 3.0 retained as corroboration but not counted as a separate independently changing update",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ]
+    },
+    {
+      "source_url": "https://www.helpnetsecurity.com/2026/09/08/product-showcase-doppler-secrets-management-platform/",
+      "visible_date": "September 8, 2026",
+      "reason": "sponsored source; counted only as market signal for secrets/delegated identity, not as a product capability claim for wiki synthesis",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ]
+    },
+    {
+      "source_url": "https://www.theguardian.com/technology/2026/sep/04/openai-agent-goes-rogue",
+      "visible_date": "September 4, 2026 via search result",
+      "reason": "secondary article with sensational broad-model incident framing; local repair-gate implication already covered by more directly actionable governance/security sources",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md"
+      ]
+    }
+  ],
+  "federation_note": "Broad ecosystem entities, products, companies, models, frameworks, and MCP background remain upstream-owned by the AI wiki. This raw artifact retains only downstream AI-assisted-development practice implications for selected local leaves.",
+  "created_raw_path": "raw/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json",
+  "blockers": []
+}
