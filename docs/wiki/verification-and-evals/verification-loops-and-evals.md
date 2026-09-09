@@ -77,6 +77,8 @@ The September 6 raw sources add task-horizon, agent-facing, and harness-security
 
 The September 7 raw sources add human-loop and prototype-validation eval evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records human-loop benchmark gaps, prototype validation before product expansion, and design-time quality gates; the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records model-route validation and recovery claims. Locally, verification should measure steering quality, human intervention points, validation questions, recovered failure handling, and workflow-representative tasks rather than only autonomous issue resolution.
 
+The September 8 raw sources add orchestration, component-review, and corrective-retrieval evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records complete-task metrics, controlled experiments, isolated review, validation, and fail-safe patch application, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records pre-deployment review for community agent components and corrective-RAG groundedness/usefulness checks. Locally, verification loops should test the chosen harness path, component intake gate, and retrieval self-correction path before crediting autonomy or tool expansion.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -143,6 +145,7 @@ The September 7 raw sources add human-loop and prototype-validation eval evidenc
 - For autonomous browsing evals, score multi-step workflow completion separately from transaction handling, safeguard documentation, irreversible-action prevention, and human-intervention quality.
 - Measure task completion, silent failure, intervention count, and allowed-surface coverage before increasing agent autonomy.
 - Require harness-control evidence before accepting agent-facing product surfaces or critical-risk agent workflows.
+- Verify orchestration choices, third-party component intake, and corrective-RAG retry paths with complete-task metrics, isolated review, groundedness, usefulness, and fail-safe rollback evidence.
 
 ## Authoritative Sources
 
@@ -151,6 +154,8 @@ The September 7 raw sources add human-loop and prototype-validation eval evidenc
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -228,6 +233,7 @@ The September 7 raw sources add human-loop and prototype-validation eval evidenc
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with complete-task metrics, controlled experiment, isolated review, component intake, corrective-RAG, groundedness, usefulness, and fail-safe rollback evidence.
 - Maintained on 2026-09-07 with human-loop, prototype-validation, model-route validation, recovered-failure, and workflow-representative eval evidence.
 - Maintained on 2026-09-05 with safeguard pause, classifier-trace, recovery-path, autonomous browsing, transaction-handling, and human-intervention eval evidence.
 - Maintained on 2026-09-06 with task-horizon, human-intervention, silent-failure, agent-facing funnel, harness-control, and critical-risk safeguard evidence.

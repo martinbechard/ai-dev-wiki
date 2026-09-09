@@ -17,6 +17,8 @@ This page owns folder lifecycle and intake rules. It does not own the content-sp
 
 The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json) reinforces the lifecycle boundary: raw public updates are evidence for maintained wiki memory, not durable context by themselves. Intake should preserve the artifact, then let ingest produce compact leaves and digest entries before the artifact moves to processed storage.
 
+The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds a private-to-public contribution boundary. Assistant-mediated source workflows may format an explicitly shared solution into documentation or a pull request, but publication still needs human review for truth, sensitivity, and value. Locally, source intake should preserve explicit sharing intent, keep private conversation content out of public raw artifacts, validate structured output, and require human acceptance before private work becomes public knowledge.
+
 ## Practice Boundaries
 
 - Keep human-saved source notes in [Clippings](../../../Clippings) until the ingest workflow moves them.
@@ -27,6 +29,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - Update wiki source links when a processed-source move changes a referenced path.
 - Treat raw public update artifacts as evidence awaiting synthesis, not as maintained project memory.
 - Move artifacts only after the wiki holds the compact source-backed understanding and source links point to the processed location.
+- Preserve explicit sharing intent, sensitivity review, structured-output validation, and human acceptance before assistant-mediated private material becomes public documentation.
 
 ## Authoritative Sources
 
@@ -36,6 +39,7 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 - [schema.md](../schema.md)
 - [README.md](../README.md)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -65,3 +69,4 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 - Created on 2026-06-23 to separate clipping intake and raw folder lifecycle from the broader source-workflows hub.
 - Maintained on 2026-07-05 with raw public update artifacts as evidence for compact wiki-memory synthesis.
+- Maintained on 2026-09-08 with private-to-public source contribution, explicit-sharing, sensitivity-review, structured-output, and human-acceptance evidence.

@@ -23,6 +23,8 @@ The August 21 sources add builder-classification and agent-native hosting eviden
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds two file-world signals. Prototype-first cloud-agent sessions can create a repository after work starts, and file-oriented workspace benchmarks reinforce that source authority, file diffs, validation, previews, and publish controls are part of the workflow evidence. Locally, builder workflows should capture the moment a generated file world becomes the source of truth.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds agent-ready builder evidence. Enterprise builder platforms that expose IDE integrations, agent skills, MCP access, non-interactive CLIs, open-source framework pieces, and hosting services should be governed as source-backed delivery paths. Locally, prompt-to-production workflows need generated file diffs, skill and MCP provenance, CLI command evidence, hosting or runtime owner, validation output, and rollback or export paths before they are treated as enterprise implementation.
+
 ## Practice Boundaries
 
 - Prefer file-backed artifacts when enterprise builder changes need review, tests, or release evidence.
@@ -34,6 +36,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - Inventory managed inference calls separately from generated source files because provider replacement can be a runtime dependency, not only a code change.
 - Classify builder workflows by source ownership, live-data access, code export, PR review path, deployment owner, runtime logs, auth boundary, and production-operations owner.
 - Record when prototype artifacts become repository-backed source, including generated file set, validation evidence, preview evidence, publish approval, deployment owner, and rollback or export path.
+- Require skill/MCP provenance, CLI command evidence, hosting-owner, validation-output, and rollback/export evidence when an agent-ready builder turns prompts into deployable artifacts.
 
 ## Authoritative Sources
 
@@ -45,6 +48,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [delegated coding handoffs](../agent-workflows/delegated-coding-handoffs.md)
@@ -74,6 +78,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with agent-ready builder, skill/MCP provenance, non-interactive CLI, hosting-owner, validation, and rollback/export evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about enterprise builder artifacts, local validation, Git review, and publish workflows.
 - Maintained on 2026-08-04 with generated-app exportability, dependency inventory, managed inference-call inventory, and provider migration guidance.
 - Maintained on 2026-08-21 with builder workflow classification, agent-native hosting, PR review, deployment, auth, runtime-log, and operations ownership guidance.

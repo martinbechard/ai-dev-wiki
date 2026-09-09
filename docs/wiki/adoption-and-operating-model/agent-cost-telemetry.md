@@ -97,6 +97,8 @@ The September 4 raw sources add budget-expiry and model-policy reinforcement:
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records model availability, replacement schedules, and stronger-model enablement as administrator policy events.
 - Locally, budget expiry should be reviewed with the same workflow evidence as model enablement: owner, exception reason, planned end date, fallback budget, affected assistant surfaces, and accepted outcomes.
 
+The September 8 raw sources add whole-task and privacy-preserving cost evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records a case where reducing individual tool output can raise total task cost if useful details disappear. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records token-spend concerns and local-only prompt-cost instrumentation. Locally, cost telemetry should join token spend, tool-output size, privacy boundary, batching/context-pruning choice, review burden, and accepted outcome rather than rewarding raw usage or isolated compression.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -163,11 +165,15 @@ The September 4 raw sources add budget-expiry and model-policy reinforcement:
 - Track agent economics by accepted change, review outcome, quota pressure, request fan-out, and context reuse so lower nominal model cost does not hide extra coordination, verification, or retry cost.
 - Record temporary budget overrides with expiry date, owner, exception reason, model route, reasoning effort, and accepted-outcome evidence so pilot or incident spend cleans itself up.
 - Review expired individual budgets against their fallback cost center or universal budget so spend controls do not silently outlive the workflow or remove a still-needed pilot route.
+- Measure output trimming, batching, context pruning, and prompt-cost instrumentation by whole-task accepted outcome, privacy boundary, latency, and review burden.
+- Avoid token-spend leaderboards unless they are explicitly normalized by delivered value, quality, and production-qualified outcomes.
 
 ## Authoritative Sources
 
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
@@ -246,6 +252,7 @@ The September 4 raw sources add budget-expiry and model-policy reinforcement:
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with whole-task efficiency, output-trimming, prompt-cost, privacy-boundary, batching, context-pruning, token-spend, and leaderboard-risk evidence.
 - Maintained on 2026-09-04 with budget-expiry fallback, model-policy replacement, and workflow-level owner evidence for cost controls.
 - Maintained on 2026-09-02 with temporary budget expiry, managed default model, model cost/capability view, reasoning-effort, exception-owner, and accepted-outcome evidence.
 - Maintained on 2026-08-29 with FinOps quota, cost-per-accepted-change, subagent routing, and leaderboard-methodology cost evidence.

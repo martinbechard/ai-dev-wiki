@@ -41,6 +41,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 
 The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds lineage-aware MCP data-agent evidence. Data agents need warehouse connectivity plus lineage, column descriptions, project definitions, and authoritative metric definitions before retrieved answers can be trusted. Locally, retrieval provenance should join tool access, semantic context, metric ownership, lineage, rejected candidates, and cited source truth when agents answer from enterprise data.
 
+The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds corrective-RAG implementation evidence. Codebase and documentation RAG can use a bounded graph that routes by difficulty, grades retrieved evidence, rewrites or searches when retrieval fails, generates only from graded evidence, and checks groundedness and usefulness with retry budgets. Broad Corrective RAG, Self-RAG, Adaptive-RAG, LangGraph, and Pydantic background stays upstream-owned; locally, the useful practice is typed grader output, parallel document grading, failure-rate instrumentation, and explicit retry caps.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -69,6 +71,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Validate retrieved custom-data evidence before it becomes coding, review, or governance context for an acting agent.
 - Evaluate RAG as an end-to-end pipeline with ingestion, retrieval, reranking, grading, sufficiency, answer generation, task metrics, model-routing policy, and provenance joined to outcomes.
 - Join tool access, lineage, column descriptions, project definitions, metric ownership, rejected candidates, and cited source truth when data agents answer from enterprise repositories.
+- Use bounded corrective-RAG graphs when retrieval complexity justifies them, with typed grader outputs, retry caps, fallback search or rewrite paths, groundedness checks, usefulness checks, and failure-rate telemetry.
 
 ## Authoritative Sources
 
@@ -90,6 +93,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -128,3 +132,4 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Maintained on 2026-08-30 with explicit retrieval-pipeline, crawling, parsing, embedding, vector-storage, retrieval-API, freshness, and endpoint-exposure guidance.
 - Maintained on 2026-08-31 with end-to-end RAG benchmark, ingestion, multi-hop sufficiency, traceable-chunk, reranking, grading, model-routing, and outcome-provenance evidence.
 - Maintained on 2026-09-07 with lineage, column-description, project-definition, metric-ownership, rejected-candidate, and source-truth evidence for data agents.
+- Maintained on 2026-09-08 with corrective-RAG graph, typed-grader, fallback rewrite/search, groundedness, usefulness, retry-cap, and failure-rate evidence.

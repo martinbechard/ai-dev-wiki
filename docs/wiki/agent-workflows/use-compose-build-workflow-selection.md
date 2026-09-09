@@ -25,6 +25,8 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) adds managed-model and reasoning-effort selection evidence. When an enterprise can set team-specific default models, expose model capability and cost views, or configure thinking effort as a run parameter, workflow selection should distinguish individual model choice from governed defaults, exception policy, retention review, and cost-performance evidence. Broad model and product details stay upstream-owned.
 
+The September 8 raw sources add bounded-orchestration and autonomy-budget evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records runtime selection among single-agent, cascade, and critique patterns, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records a pipeline-versus-agent litmus for fixed control flow. Locally, workflow selection should choose static pipelines when steps are known, compose bounded agent orchestration when runtime discovery is useful, and require cost, latency, validation, cancellation, and review evidence before escalating to multi-model or multi-agent execution.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -37,6 +39,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Choose compose or build when the workflow needs local control over identity, context routing, verification, audit, cost attribution, programmatic tool execution, or domain-owned service boundaries.
 - Choose the execution boundary before the branded tool when file locality, credential custody, approval timing, review loop, reproducible setup, or durable workspace state drives the workflow.
 - Treat managed default models, team overrides, retention-gated enablement, reasoning-effort controls, and cost/capability views as workflow-selection inputs rather than prompt-time preferences.
+- Prefer fixed workflows when the path can be known before execution, and require explicit discovery value before agentic control flow adds cost, latency, or review burden.
+- Treat single, cascade, critique, and other multi-agent execution patterns as workflow policies that need cancellation, validation, cost, and isolated-review evidence.
 
 ## Authoritative Sources
 
@@ -49,6 +53,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -81,3 +87,4 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Maintained on 2026-07-14 with shared governance, observability, model routing, reusable agent patterns, programmatic tools, and domain-owned MCP service boundaries as compose-or-build inputs.
 - Maintained on 2026-07-27 with execution-boundary selection for local, managed-worktree, cloud, repository-native, browser-agent, and persistent workspace choices.
 - Maintained on 2026-09-02 with managed default models, team overrides, retention-gated enablement, reasoning-effort, and cost/capability selection evidence.
+- Maintained on 2026-09-08 with bounded orchestration, pipeline-versus-agent, cancellation, validation, cost, and isolated-review evidence.

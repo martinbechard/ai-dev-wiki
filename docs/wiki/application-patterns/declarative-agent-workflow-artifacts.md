@@ -19,6 +19,8 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds updated declarative workflow evidence from an upstream-owned framework. Locally, YAML-defined actions, checkpoint and resume behavior, human input events, telemetry hooks, and serializer choices are executable workflow contract fields that should be source-reviewed before recurring agent workflows run.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds loop and orchestration evidence for declarative workflows. Scheduled loops, squads, fleets, single/cascade/critique paths, validation checkpoints, and escalation behavior should be represented as reviewable workflow contract fields when they control recurring agent execution.
+
 ## Practice Boundaries
 
 - Review branching, tool-call, approval, checkpoint, and resume semantics before runtime execution.
@@ -28,6 +30,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - Review tool-step definitions, state transitions, and branch conditions with the same care as code when they control agent execution.
 - Version and review comment trigger phrases, allowed repositories, generated-output scope, and follow-up actions before event-triggered automations run from issues or pull requests.
 - Treat declarative action definitions, checkpoint stores, human-input events, telemetry hooks, and persistence serializers as reviewable workflow fields when they affect agent execution or recovery.
+- Record orchestration pattern, validation checkpoint, escalation rule, and fleet or squad role boundaries as workflow fields when recurring loops coordinate several agents.
 
 ## Authoritative Sources
 
@@ -35,6 +38,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [AI process layer and workflow state](ai-process-layer-and-workflow-state.md)
 - [application harness patterns](application-harness-patterns.md)
 - [upstream Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md)
@@ -67,3 +71,4 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - Maintained on 2026-07-29 with 1.0 declarative workflow definition, state-transition, and tool-step review guidance.
 - Maintained on 2026-08-04 with comment-triggered automation boundaries for issues, pull requests, documentation generation, error investigation, and follow-up issue creation.
 - Maintained on 2026-08-27 with declarative action, checkpoint, human-input, telemetry, and serializer fields as source-reviewable workflow contract evidence.
+- Maintained on 2026-09-08 with scheduled loop, squad/fleet role, orchestration-pattern, validation-checkpoint, and escalation-rule evidence.

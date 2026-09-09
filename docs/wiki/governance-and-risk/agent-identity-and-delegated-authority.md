@@ -58,6 +58,8 @@ The September 3 raw sources add identity-as-control evidence:
 
 Locally, delegated authority should be reviewed at the identity edge before the tool edge.
 
+The September 8 raw sources add attack-surface, local-runtime, secrets, and policy-standard evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records zero-starting-privilege runtimes, continuous enforcement, OS-level containment, runtime secret delivery, action verification, tamper-proof logs, machine-readable inventories, and agent visibility as delegated-authority controls. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) reinforces the same local rule from enterprise-agent risk reporting: teams need an inventory of agent identities, reachable tools, approved systems, auditable action traces, and controls before broad enterprise access is granted.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -94,6 +96,8 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 - Require a named human or team owner before an agent identity can receive standing tool access or perform repeated scheduled work.
 - Preserve source owner, data sensitivity, lineage, access policy, identity passthrough, workspace boundary, and audit-export target when delegated authority includes data access, not only when the agent performs a write.
 - Record who an agent represents, what mandate constrains it, who remains responsible, and which registration or authorization record links the agent to a natural person or accountable organization before it acts across public or business systems.
+- Treat zero-starting-privilege runtime identity, containment, secret delivery, action verification, tamper-evident logs, and machine-readable inventory as delegated-authority evidence for continuous or grouped agents.
+- Inventory reachable tools and approved systems before granting broad enterprise access, because agents are both actors to govern and attack surfaces to monitor.
 
 ## Authoritative Sources
 
@@ -124,6 +128,8 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -150,6 +156,7 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.
 - Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.
 - Maintained on 2026-07-23 with discoverable-agent, human-owner, brokered-access, and no-long-lived-secret identity guidance.
 - Created on 2026-06-24 to separate agent instance identity, delegated authority, shared-channel agents, and credential revocation from broader governance infrastructure.

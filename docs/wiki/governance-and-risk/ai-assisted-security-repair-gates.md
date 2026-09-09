@@ -49,6 +49,8 @@ The August 27 raw sources add review and evaluation evidence for security repair
 
 The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) adds exploit-development and destructive-cleanup risk signals. AI-assisted security work can lower the barrier to exploit porting when paired with analysis tools and live targets, while deletion-safeguard testing can itself become destructive when fixtures, model routes, or variables are unsafe. Locally, security repair gates should distinguish defensive repair from exploit enablement, require constrained tooling and authorized targets, and keep cleanup scripts inside isolated fixtures with rollback proof.
 
+The September 8 raw sources add agent-target and component-review signals. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records agent visibility, compromised-agent risk, zero-trust runtimes, action verification, continuous enforcement, and runtime termination. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records community agent-component inspection before deployment. Locally, security repair gates should verify agent identity, reachable tools, component provenance, action traces, termination criteria, and human security review before a repair or deployment workflow trusts agent-generated output.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -83,6 +85,7 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Treat AI-generated vulnerability patches as drafts until exploit variants, behavior-preservation checks, regression tests, domain-expert review, continuous validation, runtime policy evidence, and audit artifacts pass.
 - Keep AI security-review triage, deterministic scanner output, production-label calibration, human security judgment, and remediation proof as separate gates before repair acceptance.
 - Distinguish defensive security repair from exploit enablement, and require constrained tools, authorized targets, isolated cleanup fixtures, rollback proof, and human review when agent work touches exploit code or destructive scripts.
+- Verify agent identity, reachable tools, component provenance, action traces, termination criteria, and human security review before security repair or deployment workflows trust agent-generated output.
 
 ## Authoritative Sources
 
@@ -109,6 +112,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -150,3 +155,4 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 - Maintained on 2026-08-21 with AI vulnerability-patch draft boundaries, exploit-variant, behavior-preservation, regression, expert-review, continuous-validation, runtime-policy, and audit-evidence gates.
 - Maintained on 2026-08-27 with AI security-review augmentation, production-label calibration, deterministic scanner separation, human security judgment, and remediation-proof gates.
 - Maintained on 2026-09-02 with exploit-development, constrained-tool, authorized-target, destructive-cleanup, isolated-fixture, rollback-proof, and human-review gates.
+- Maintained on 2026-09-08 with agent-visibility, compromised-agent, zero-trust-runtime, action-verification, continuous-enforcement, component-review, and termination-criteria gates.

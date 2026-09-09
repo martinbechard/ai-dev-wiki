@@ -23,6 +23,8 @@ The [August 12 topic news collector source](../../../raw/processed/2026-08-12/ai
 
 The August 17 raw sources add managed allowlist and security-boundary evidence. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records a privileged CI/CD MCP-server risk signal; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records managed plugin/MCP settings, plugin packaging, and untrusted tool-description boundaries. Locally, remote skill or MCP discovery should reject shared servers that lack authentication, network exposure review, token scoping, allowlist evidence, and exploit-path testing before activation.
 
+The September 8 raw sources add registry, gateway, and community-component review evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records containerized MCP operations with registry curation, provenance verification, SSO, traces, and metrics, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records third-party agent, skill, MCP server, and playbook inspection before enterprise deployment. Locally, discovered remote skills need a governed intake path before activation, not just a convenient install route.
+
 ## Practice Boundaries
 
 - Treat discovered skills as code-adjacent supply-chain inputs.
@@ -34,6 +36,7 @@ The August 17 raw sources add managed allowlist and security-boundary evidence. 
 - Treat portable skill-and-MCP plugin packages as governed capability bundles whose manifest, server declarations, extension namespaces, and client-enforced controls need review before installation.
 - Distinguish remote skill activation from portable plugin packaging so MCP-discovered procedure does not inherit trust merely because the package installed successfully.
 - Reject remote skills or MCP servers that lack authentication, exposure review, token scoping, managed allowlist evidence, and exploit-path testing when they can reach CI/CD or other privileged systems.
+- Require registry curation, provenance verification, identity integration, telemetry, and component-review evidence before activating remote skills or MCP packages from community sources.
 
 ## Authoritative Sources
 
@@ -50,6 +53,8 @@ The August 17 raw sources add managed allowlist and security-boundary evidence. 
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [portable agent plugin packaging and governance](portable-agent-plugin-packaging-and-governance.md)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 ## Related Code
 
@@ -81,3 +86,4 @@ The August 17 raw sources add managed allowlist and security-boundary evidence. 
 - Maintained on 2026-08-11 with portable plugin-package governance for bundled skills, MCP server configuration, manifests, and client extension namespaces.
 - Maintained on 2026-08-12 with the Agent Plugins packaging boundary split into a separate portable package-governance leaf.
 - Maintained on 2026-08-17 with managed plugin/MCP settings, CI/CD MCP-server risk, untrusted tool-description boundaries, token scoping, allowlist, and exploit-path testing guidance.
+- Maintained on 2026-09-08 with registry-curation, provenance-verification, identity-integration, telemetry, and community-component review evidence.

@@ -33,6 +33,8 @@ The August 27 raw sources add prototype-first and runtime-control signals. The [
 
 The September 2 raw sources add governed context, session-continuity, and destructive-operation evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records Copilot app and CLI content exclusions, managed model defaults, side conversations, prompt timelines, session continuation, shared collaboration sessions, and runtime permission controls. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop agents working across apps and a destructive cleanup incident. Locally, terminal workflows should preserve excluded-path boundaries, model route policy, session lineage, collaboration surface, runtime mode, permission defaults, and fixture or sandbox evidence before command-capable work continues.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds parallel-session and local-runtime evidence. Independent agent sessions can run in separate worktrees while a developer monitors progress, and local workstation agents may combine terminal, editor, subsystem, local-model, OS identity, and containment surfaces. Locally, terminal workflows should record each session's worktree, local runtime boundary, containment profile, model route, approval state, and completed review package before concurrent command-capable work is accepted.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -47,6 +49,7 @@ The September 2 raw sources add governed context, session-continuity, and destru
 - Record event wake source, durable goal, steering event, repo scope, PR context, and source-host integration when terminal-agent work crosses into managed cloud or code-hosting surfaces.
 - Record the transition from prototype-first cloud work to repository-bound implementation, including created repository, source owner, preview URL evidence, deployment account, publishing approval, and runtime-control settings.
 - Record excluded-source boundaries, managed model route, side-conversation lineage, prompt timeline, collaboration channel, permission default, and sandbox fixture evidence when terminal or desktop-agent sessions can execute commands.
+- Preserve worktree, local runtime, containment profile, model route, approval state, and review package evidence for parallel terminal or workstation-agent sessions.
 
 ## Authoritative Sources
 
@@ -67,6 +70,7 @@ The September 2 raw sources add governed context, session-continuity, and destru
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 
 ## Related Code
 
@@ -93,6 +97,7 @@ The September 2 raw sources add governed context, session-continuity, and destru
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with parallel worktree, local runtime, containment profile, model-route, approval-state, and review-package evidence.
 - Maintained on 2026-07-23 with sandbox-escape, allowlist-bypass, repository-configuration, and host-side trust boundary guidance.
 - Created on 2026-07-17 from public raw artifacts about terminal coding agents, IDE-managed skills, and destructive-command denial evidence.
 - Maintained on 2026-07-22 with agent-multiplexer session evidence, pane identity, and reconnect boundaries.

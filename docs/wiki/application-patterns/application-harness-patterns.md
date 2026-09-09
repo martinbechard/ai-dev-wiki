@@ -39,6 +39,8 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds agent-product UI evidence. Agent applications need harness support for streaming token rendering, tool-call displays, inline diff visualization, code highlighting, long-context conversations, and background-agent changes without corrupting user state. Locally, these requirements route to focused telemetry, recovery, and process-state leaves rather than becoming an editor or product catalog.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds bounded multi-model orchestration and parallel-session evidence. Application harnesses should expose orchestration choice, isolated workspace state, diagnostics, cancellation, validation, and review surfaces so users can compare single-agent, cascade, critique, or parallel worktree execution without losing source authority or rollback evidence.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -70,6 +72,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Treat external enforcement, state persistence, recovery, and auditability as harness architecture requirements before increasing model autonomy.
 - Treat desktop app control, plugin execution, visual generation, recurring task automation, MCP tools, A2A messages, A2UI surfaces, and sandboxed app resources as harness boundaries that need visible approvals, audit trails, and authoritative backend state.
 - Treat streaming output, tool-call displays, inline diffs, code highlighting, long-context editing, and background-agent mutations as harness UI responsibilities that must preserve user state.
+- Expose orchestration choice, isolated workspace state, diagnostics, cancellation, validation, and review surfaces when an application harness supports cascade, critique, or parallel agent execution.
 
 ## Authoritative Sources
 
@@ -91,6 +94,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
 - [agent session recovery](agent-session-recovery.md)
 - [agent lifecycle hooks](agent-lifecycle-hooks.md)
@@ -138,3 +142,4 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Maintained on 2026-08-08 with external-enforcement and state-persistence routing for long-horizon coding-agent harnesses.
 - Maintained on 2026-09-02 with desktop-agent, plugin, visual-generation, recurring-task, MCP, A2A, A2UI, sandboxed-resource, approval, audit, and authoritative-state boundaries.
 - Maintained on 2026-09-07 with streaming-output, tool-call display, inline-diff, long-context editor, and background-agent state requirements.
+- Maintained on 2026-09-08 with orchestration-choice, parallel-worktree, diagnostics, cancellation, validation, review-surface, and rollback evidence.

@@ -19,6 +19,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) reinforces the boundary with selected leaf ids, upstream-owned entity lists, qualifying updates, excluded candidates, and source URLs checked by leaf. Locally, the watcher artifact should keep those routing decisions explicit so ingest can update local practice leaves while leaving broad model, product, protocol, framework, and vendor background to the upstream AI wiki.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) reinforces leaf-watch output as a loop handoff. A useful watcher artifact records selected leaves, qualifying updates, excluded candidates, visible dates, upstream-owned entities, follow-up notes, and checked URLs so ingest can decide what is local practice evidence without rerunning broad product or model research.
+
 ## Practice Boundaries
 
 - Select durable local leaves, not folder hubs or maintenance pages, as the update-check unit.
@@ -30,6 +32,7 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Record excluded candidates with date or evidence reasons so downstream ingest can trust the source-window boundary.
 - Keep follow-up notes scoped to local practice implications rather than broad upstream entity summaries.
 - Include upstream-owned entity routing, selected leaf ids, qualifying updates, excluded candidates, and source URLs checked by leaf when a watcher run covers several durable leaves.
+- Preserve loop handoff fields, including visible dates, checked URLs, exclusions, follow-up notes, and upstream-owned entities, so ingest can stay deterministic.
 
 ## Authoritative Sources
 
@@ -39,6 +42,7 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - [federation.md](../federation.md)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 
 ## Related Code
 
@@ -69,3 +73,4 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Created on 2026-06-23 to separate durable-leaf public update checks from the broader automated-update-feeds page.
 - Maintained on 2026-07-10 with structured qualified-update, exclusion, and follow-up-note evidence boundaries.
 - Maintained on 2026-08-26 with selected leaf ids, upstream-owned entity routing, qualifying updates, excluded candidates, and source-URL-by-leaf evidence boundaries.
+- Maintained on 2026-09-08 with visible-date, checked-URL, exclusion, follow-up, and upstream-routing fields as deterministic loop handoff evidence.

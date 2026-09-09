@@ -102,6 +102,8 @@ The September 4 raw sources add async-tool and workflow-identity evidence:
 
 The September 6 raw sources add MCP operations, registry, and verification evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) is a secondary protocol-change signal, while the [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) supports operational MCP governance. Locally, protocol-specific MCP claims need authoritative specification evidence, while tool-route approval should still preserve registry, authentication, isolation, health, command, and approval evidence.
 
+The September 8 raw sources add containerized MCP, component-review, and secrets-delivery evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records container isolation, permission files, registry curation, provenance verification, gateway SSO, audit logs, traces, and metrics as MCP rollout criteria. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds community agent-component review and runtime secret delivery as tool-governance signals. Locally, sandboxing is necessary but not sufficient: governed MCP rollout also needs identity, policy, provenance, telemetry, component intake review, and revocation evidence.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -191,6 +193,8 @@ The September 6 raw sources add MCP operations, registry, and verification evide
 - For platform-specific agent workflows, record whether the agent should use deterministic CLI calls or MCP tools, which route is privileged, which context source is official, and which reversible version or audit record proves the action can be rolled back.
 - Join MCP registry version, authentication path, per-client isolation, health signals, failure counts, command digests, and approval decisions before expanding a tool route.
 - Require authoritative specification evidence before changing protocol assumptions from secondary MCP reports.
+- Treat containerized MCP servers as still requiring identity, permission files, registry curation, provenance verification, gateway authentication, audit logs, traces, metrics, and revocation paths.
+- Inspect third-party agents, skills, MCP servers, and playbooks as component dependencies before deployment, especially when they can receive runtime secrets or reach enterprise tools.
 
 ## Authoritative Sources
 
@@ -198,6 +202,8 @@ The September 6 raw sources add MCP operations, registry, and verification evide
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
@@ -295,6 +301,7 @@ The September 6 raw sources add MCP operations, registry, and verification evide
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with containerized MCP, permission-file, registry-curation, provenance-verification, gateway-SSO, component-review, runtime-secret, and telemetry evidence.
 - Maintained on 2026-09-05 with enterprise MCP gateway, delegated identity, tool-parameter policy, cost guardrail, deterministic CLI versus MCP routing, and rollback evidence.
 - Maintained on 2026-09-06 with MCP registry, authentication, per-client isolation, health signal, failure count, command digest, structured-tool approval, and protocol-claim deferral evidence.
 - Maintained on 2026-09-04 with async-tool availability, payload-modality, reusable-workflow identity, trusted-publishing configuration, staged approval, and content-exclusion evidence.

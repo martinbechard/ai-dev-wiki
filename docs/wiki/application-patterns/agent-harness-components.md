@@ -83,6 +83,8 @@ The August 28 and 29 raw sources add model-harness, durable-runtime, and high-im
 
 The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds harness-definition and runtime-infrastructure evidence. Agent harnesses should expose the agent loop, context, tools, state, execution coordination, permissions, feedback, sandboxing, observability, and provenance as reviewable components rather than relying on vendor labels. AI-native SDLC infrastructure should let agents verify against the dependencies their code actually uses while isolating concurrent sessions through traffic filtering, queue splitting, database branching, and explicit environment evidence.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds bounded orchestration and whole-task efficiency evidence. It records role selection, diagnostics, cancellation, validation, fail-safe patch application, isolated review, worktree isolation, loop checkpoints, and complete-task metrics as harness responsibilities. Locally, harnesses should preserve enough trace, validation, and rollback evidence to decide whether a smaller tool output, a larger context packet, a cascade, or a critique path actually improved accepted completion.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -144,6 +146,8 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - Treat declarative workflow loading, checkpoint persistence, retained REPL history, memory stores, subagent specifications, human inspection, recovery, verification, and resource accounting as harness components for long-horizon agent work.
 - Treat the agent loop, context, tools, state, execution coordination, permissions, feedback, sandboxing, observability, and provenance as explicit harness components regardless of vendor terminology.
 - Verify generated code against declared runtime dependencies, and isolate concurrent sessions with traffic filtering, queue splitting, database branching, or equivalent environment controls.
+- Preserve role, diagnostic, cancellation, validation, isolated-review, and fail-safe patch evidence when a harness chooses among orchestration patterns.
+- Optimize tool output and context size against accepted task completion, not only local token counts or individual call cost.
 
 ## Authoritative Sources
 
@@ -206,6 +210,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 - [August 21 leaf update watch source](../../../raw/processed/2026-08-21/ai-dev-wiki-leaf-update-watch-2026-08-21T210236-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 
 ## Related Code
 
@@ -238,6 +243,7 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with bounded orchestration, complete-task efficiency, isolated review, cancellation, and fail-safe patch evidence.
 - Maintained on 2026-08-31 with agent-loop, context, tool, state, permission, feedback, sandbox, observability, provenance, runtime-dependency, and concurrent-session isolation evidence.
 - Maintained on 2026-08-29 with model-harness, durable-runtime, capability-metadata, high-impact tool, safety-eval, trace, cost, and recovery components.
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.

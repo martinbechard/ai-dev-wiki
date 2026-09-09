@@ -23,6 +23,8 @@ The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-
 
 The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json) adds MCP roadmap evidence for server-initiated events, task composition, agentic messaging, and agent identity. Locally, update-feed design should keep polling as the default source-first collector pattern until event or task primitives can provide source URL, visible date, authorization scope, trigger reason, exclusion rationale, and replayable raw artifact evidence.
 
+The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds loop-engineering terminology for scheduled agent systems. Locally, recurring feed loops should preserve fetch criteria, validation checkpoints, stuck-loop escalation, source-window exclusions, observability, and operator handoff evidence before a collector result is trusted by ingest.
+
 ## Feed Topics
 
 The feed-topic list is configuration for local practice monitoring, not a separate entity inventory.
@@ -38,6 +40,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Governance and risk: permissions, approvals, audit logs, secrets, prompt injection, package-install risk, licensing, privacy, and compliance.
 - Adoption and operating model: team rollout, operating agreements, acceptance gates, training material, and human accountability.
 - Event and task primitives: server-initiated events, agentic messaging, and task composition can reduce polling only when they preserve source-first provenance, authorization scope, replayability, and exclusion evidence.
+- Loop engineering: recurring collector and watch loops need fetch criteria, validation checkpoints, stuck-loop escalation, source-window exclusions, observability, and operator handoff evidence.
 
 ## Configured Automations
 
@@ -53,6 +56,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [federation.md](../federation.md)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
+- [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - Target environment automation record for AI Dev Wiki Topic News Collector.
 - Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
@@ -92,3 +96,4 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Split on 2026-06-23 so each automation layer has a durable local practice leaf.
 - Maintained on 2026-07-10 with leaf-watch handoff boundaries for qualifying URLs, exclusions, and follow-up notes.
 - Maintained on 2026-08-26 with MCP roadmap event, task, messaging, and identity implications for source-first feed design.
+- Maintained on 2026-09-08 with loop-engineering, validation-checkpoint, stuck-loop escalation, observability, and operator-handoff evidence.

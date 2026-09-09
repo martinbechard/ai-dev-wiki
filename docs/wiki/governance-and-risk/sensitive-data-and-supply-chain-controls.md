@@ -75,6 +75,8 @@ The September 4 raw sources add retention and publishing-control evidence:
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records Copilot content exclusions, npm trusted publishing configurations, staged approval after malware scanning, reusable workflow identity, and CodeQL query expansion.
 - Locally, model enablement, package publishing, reusable workflows, and scanner upgrades should be treated as one supply-chain review path when agent-authored code can reach repositories or registries.
 
+The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds dependency-bot credential and community-agent component evidence. Automatic package-registry access can reduce personal-token handling only when repository-scoped grants, explicit registry credentials, fallback behavior, and credential-removal hygiene are reviewable. Community agents, skills, MCP servers, and playbooks should enter the same supply-chain lane as dependencies: provenance, model or scanner assessment, expert review, and deployment approval are required before enterprise use.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -139,11 +141,14 @@ The September 4 raw sources add retention and publishing-control evidence:
 - Treat third-party skill directories and resource lists as discovery sources, not installation authority; review skill contents, owner, version, shell behavior, and allowed tools before import.
 - Require behavior-policy or execution-policy evidence before running AI-generated or AI-carried code when provenance, signature, or SBOM evidence cannot prove runtime intent.
 - Review data-retaining model routes, content exclusions, trusted-publishing OIDC configuration, staged malware-scan approval, reusable workflow identity, and CodeQL coverage before agent-authored changes reach package or release paths.
+- Prefer repository-scoped package access for dependency automation over long-lived personal registry tokens when package scope, fallback credentials, and removal hygiene are explicit.
+- Treat community agent components, MCP servers, skills, and playbooks as deployable dependencies that need provenance, scanner or model assessment, expert review, and approval before enterprise use.
 
 ## Authoritative Sources
 
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
+- [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -223,6 +228,7 @@ The September 4 raw sources add retention and publishing-control evidence:
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-08 with dependency-bot package access, personal-token reduction, community-agent component intake, provenance, assessment, expert review, and deployment-approval evidence.
 - Maintained on 2026-09-04 with data-retention exception, content-exclusion, trusted-publishing, staged malware-scan, reusable-workflow identity, and CodeQL supply-chain evidence.
 - Maintained on 2026-09-01 with customer-owned log storage, managed keys, opt-in monitoring, watermark provenance, private plugin, and reusable review-skill supply-chain controls.
 - Maintained on 2026-08-29 with retention, billing, sandbox, connected-app policy, and managed review-default controls for proprietary-code workflows.
