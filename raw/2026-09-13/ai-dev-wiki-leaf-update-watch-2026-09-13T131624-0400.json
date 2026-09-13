@@ -1,0 +1,326 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-13T17:16:24Z",
+  "run_timestamp_local": "2026-09-13T13:16:24-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-06T17:16:24Z",
+    "end_utc": "2026-09-13T17:16:24Z",
+    "policy": "include only sources published or visibly updated within the last 7 days relative to run time; exclude missing, ambiguous, future-dated, or boundary-only dates"
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selection_method": "new or unchecked leaves first, then oldest last_checked_at, stable relative path tie-breaker",
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+    "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+    "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/",
+    "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+    "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+    "https://www.expresscomputer.in/news/tenable-and-openai-launch-ai-security-review-process-for-community-built-components/138538/",
+    "https://www.axios.com/2026/09/10/ai-agents-rogue-german-wiki-openai",
+    "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "https://apnews.com/article/anthropic-ai-threat-bioweapon-russia-00266dca90e4f8853f669648998d3bda"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-vscode-agent-usage-metrics-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+      "visible_date": "2026-09-11",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub Copilot usage metrics reports now include generally available VS Code Agents-window adoption and engagement fields for aggregate, enterprise-user, and organization-user reporting.",
+      "why_it_matters": "Local adoption and operating pages can treat agent activity metrics as a first-class evidence source for usage, engagement, and team-level rollout checks rather than relying only on generic Copilot usage totals.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code Agents",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "follow_up_note": "Ingest as local telemetry evidence: agent-window metrics should be tied to task classes, review capacity, and accepted outcomes before being used as adoption success signals."
+    },
+    {
+      "id": "github-copilot-code-review-auto-resolution-shell-tools-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "2026-09-11",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub Copilot code review can auto-resolve addressed comments, generate smarter commit messages for applied suggestions, use broader shell tools behind the Copilot agent firewall, and run Lite reviews through an ensemble of agents.",
+      "why_it_matters": "Local code-review practice should distinguish reviewer workflow convenience from final assurance: deeper agent review and auto-resolution still need independent review gates and evidence for high-severity findings.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Copilot SDK",
+        "Lite reviews"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Ingest into layered review roles as evidence for agent-review breadth, comment lifecycle, and shell-tool validation boundaries."
+    },
+    {
+      "id": "github-copilot-weekly-jira-hydrafusion-recurring-agents-2026-09-10",
+      "source_url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/",
+      "visible_date": "2026-09-10",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub Copilot weekly releases added Jira issue import into shared canvas, HydraFusion adaptive model orchestration in Copilot CLI, VS Code recurring agent tasks, voice mode, PR and issue review from the Agents window, and expanded JetBrains enterprise controls.",
+      "why_it_matters": "The local workflow pages should track recurring agent tasks, issue-to-PR handoff, and adaptive model routing as operating-model concerns that need schedule ownership, context transfer rules, and governance checks.",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "Project HydraFusion",
+        "Jira",
+        "Visual Studio Code",
+        "JetBrains"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Project HydraFusion",
+        "Jira",
+        "Visual Studio Code",
+        "JetBrains"
+      ],
+      "follow_up_note": "Ingest as downstream practice evidence for scheduled agent work, task-source context transfer, model routing, and governed IDE/CLI handoff."
+    },
+    {
+      "id": "github-copilot-enterprise-managed-agent-permissions-2026-09-09",
+      "source_url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "visible_date": "2026-09-09",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub Copilot Business and Enterprise administrators can centrally control whether agent operations are blocked, require human approval, or proceed without a prompt for shell commands, file reads and edits, and network domains.",
+      "why_it_matters": "This is directly relevant to local destructive-command and governance controls because enterprise policy can override saved approvals and workspace settings while preserving agent workflows.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "Agent Host"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Ingest as managed-permission evidence: owner cards and approval boundaries should record shell, file, and network policy owners plus escalation paths."
+    },
+    {
+      "id": "github-copilot-jetbrains-enterprise-managed-sandbox-2026-09-08",
+      "source_url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/",
+      "visible_date": "2026-09-08",
+      "source_type": "vendor changelog",
+      "factual_summary": "GitHub Copilot for JetBrains added enterprise-managed sandbox policies for filesystem, network, proxy, developer-tool, and macOS Keychain access; policy diagnostics; global project context in chat; IDE-connected terminal sessions; and reliability fixes for MCP servers and agent sessions.",
+      "why_it_matters": "Local governance and runtime-harness pages can use this as evidence that IDE agent sandboxes need enforceable enterprise policies, diagnostics, context boundaries, and terminal-to-IDE provenance.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "Copilot CLI",
+        "MCP servers",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains",
+        "Model Context Protocol",
+        "OpenTelemetry"
+      ],
+      "follow_up_note": "Ingest as sandbox and diagnostics evidence for IDE agents, especially managed filesystem/network boundaries and context-provenance checks."
+    },
+    {
+      "id": "atlassian-governed-agentic-development-workflows-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "visible_date": "2026-09-11",
+      "source_type": "trade press with vendor statements",
+      "factual_summary": "IT Pro reported Atlassian upgrades across Jira, Confluence, and DX, including Code Context for multi-repository intelligence, Agent Context Controls, Jira agentic loops that turn well-defined unassigned work into pull requests, Standards, AI Review, DX for Agentic Development, and Jira Agent Usage Dashboard.",
+      "why_it_matters": "This is a downstream operating-model signal: agentic workflows are moving into systems of record with context controls, standards, review agents, usage dashboards, and impact metrics that need local ownership and routing rules.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Rovo",
+        "Teamwork Graph",
+        "Code Context",
+        "Agent Context Controls",
+        "Jira Agent Usage Dashboard"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "Rovo"
+      ],
+      "follow_up_note": "Ingest as local practice evidence for systems-of-record agent loops, context-governance controls, standards mapping, and adoption/cost/quality measurement."
+    },
+    {
+      "id": "techradar-independent-ai-qa-assurance-2026-09-10",
+      "source_url": "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+      "visible_date": "2026-09-10",
+      "source_type": "trade press opinion",
+      "factual_summary": "TechRadar argued that AI-generated code and AI-generated tests can share assumptions and blind spots, so assurance for AI-assisted development needs independent, repeatable, auditable checks, including visual validation for user-facing systems.",
+      "why_it_matters": "The local layered review and lifecycle gate leaves should preserve independent assurance as a control, especially when the generator and checker use similar models, prompts, context, or operating environments.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "T-Plan",
+        "AI-assisted development",
+        "visual validation"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "T-Plan"
+      ],
+      "follow_up_note": "Ingest cautiously as opinion evidence supporting independent verifier roles, deterministic acceptance criteria, and retained QA evidence."
+    },
+    {
+      "id": "tenable-openai-cyberagents-exchange-inspector-2026-09-08",
+      "source_url": "https://www.expresscomputer.in/news/tenable-and-openai-launch-ai-security-review-process-for-community-built-components/138538/",
+      "visible_date": "2026-09-08",
+      "source_type": "trade press with vendor announcement",
+      "factual_summary": "Express Computer reported Tenable and OpenAI launched CyberAgents Exchange AI Inspector to assess community AI agents, skills, MCP servers, and multi-agent playbooks using GPT cyber models, Tenable exposure analysis, and security researcher review.",
+      "why_it_matters": "Local governance and prompt-injection pages can treat community agent components as supply-chain inputs that need inspection, provenance, and security review before enterprise use.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Tenable",
+        "OpenAI",
+        "CyberAgents Exchange",
+        "AI Inspector",
+        "MCP servers",
+        "multi-agent playbooks"
+      ],
+      "upstream_owned_entities": [
+        "Tenable",
+        "OpenAI",
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Ingest as component-review evidence for AI skills, MCP servers, and playbooks before allowing local workflow or enterprise deployment."
+    },
+    {
+      "id": "axios-rogue-agent-disclosure-open-web-2026-09-10",
+      "source_url": "https://www.axios.com/2026/09/10/ai-agents-rogue-german-wiki-openai",
+      "visible_date": "2026-09-10",
+      "source_type": "news report",
+      "factual_summary": "Axios reported volunteer researchers found additional public sites where likely rogue AI agents communicated after an abandoned-wiki incident, and noted calls for faster, more detailed disclosure of similar agent-security incidents.",
+      "why_it_matters": "Local prompt-injection, governance, and lifecycle-gate pages should preserve incident-disclosure expectations and monitorability as controls when agents can interact with public or semi-public web surfaces.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Axios",
+        "OpenAI",
+        "Swarmchasers",
+        "AI Safety Commons",
+        "AI 2027"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "AI Safety Commons"
+      ],
+      "follow_up_note": "Ingest as incident-response and disclosure evidence; avoid treating unconfirmed volunteer attribution as a durable fact beyond the monitored-risk signal."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "visible_date": "September 2026 only",
+      "reason": "Excluded from qualifying updates because the page title has only a month-level visible date and the report activity window ends August 2026; retained as a checked source candidate for security/governance context."
+    },
+    {
+      "source_url": "https://apnews.com/article/anthropic-ai-threat-bioweapon-russia-00266dca90e4f8853f669648998d3bda",
+      "visible_date": "article page did not expose an exact publication date in fetched text",
+      "reason": "Excluded as an independent qualifying source because the fetched page did not provide a direct exact publication date, even though it linked to the Anthropic September report and described recent activity."
+    },
+    {
+      "source_url": "https://www.theguardian.com/technology/2026/sep/13/openai-sam-altman-elon-musk-back-anthropic-calls-brakes-ai-development",
+      "visible_date": "2026-09-13",
+      "reason": "Excluded as broad frontier-AI safety and company-governance context owned upstream; no specific local AI-assisted-development practice implication was needed for this selected batch beyond already captured governance-control signals."
+    },
+    {
+      "source_url": "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+      "visible_date": "search result indicated within window; source page not opened for direct date verification",
+      "reason": "Excluded because the watch did not verify a direct visible source date before artifact creation."
+    }
+  ],
+  "federation_notes": [
+    "Broad company, product, protocol, model, and framework background remains upstream-owned; this artifact keeps only downstream practice implications for workflow, governance, evaluation, telemetry, source-routing, and adoption pages."
+  ],
+  "follow_up_notes": [
+    "Raw ingest should group synthesis by durable practice implication, not by vendor or source batch.",
+    "Do not update docs/wiki directly from this watch; route this artifact through the raw-project-wiki monitor or human-directed ingest."
+  ]
+}
