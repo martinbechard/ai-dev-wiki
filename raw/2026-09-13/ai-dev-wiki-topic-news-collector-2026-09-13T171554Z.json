@@ -1,0 +1,391 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-13T17:15:54Z",
+  "collector_scope": "Raw-only public-source collection for AI-assisted development practice updates. No docs/wiki pages or raw/processed files were updated.",
+  "cutoff_window": {
+    "start_utc": "2026-09-11T17:15:54Z",
+    "end_utc": "2026-09-13T17:15:54Z",
+    "date_rule": "Include only sources with a direct visible publication or update date within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "Practice-level implications for AI-assisted development workflows, governance, verification, context, adoption, permissions, and operating model.",
+    "handling_rule": "For upstream-owned entities, record the entity as upstream-owned and keep only the downstream practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Atlassian adds governed agentic development workflow capabilities",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "source_type": "news report",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "ITPro reported that Atlassian is extending AI coding-agent workflows across Jira, Confluence, and DX with Code Context, agentic loops, Agent Context Controls, Standards, AI Review, and DX measurement for agentic development.",
+      "why_it_matters_for_ai_assisted_development": "The update frames agent adoption as a connected operating system of context, delegation, guardrails, review, audit, and measurement rather than isolated prompting sessions.",
+      "relevant_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Rovo",
+        "Code Context",
+        "Teamwork Graph",
+        "Agent Context Controls",
+        "Standards",
+        "AI Review",
+        "Jira Agent Usage Dashboard"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "Rovo",
+        "Teamwork Graph"
+      ],
+      "local_practice_implication": "Local coverage should focus on the practice pattern of grounding agents in multi-repository organizational context, constraining what agents can see, mapping standards to repositories, reviewing PRs against standards, and measuring throughput, quality, adoption, cost, and tool/MCP use.",
+      "follow_up_notes": "Route broad Atlassian product details upstream; retain downstream notes for governed agent loops and measurement practices."
+    },
+    {
+      "title": "Harness research warns agent adoption is outrunning governance",
+      "source_url": "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+      "source_type": "news report",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "ITPro reported Harness research saying 87% of engineering teams experienced an agent-related security event in the last year, while only 44% could verify a complete inventory of agents, MCP servers, and LLMs despite 77% confidence. The report also said only 19% have gates to prevent production-impacting failures and about one-third have agent kill switches.",
+      "why_it_matters_for_ai_assisted_development": "The reported gap between confidence and verifiable controls supports wiki coverage of inventory, gating, kill switches, and verification as operating practices for agentic software delivery.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "Harness",
+        "Keith Mann",
+        "MCP",
+        "LLM"
+      ],
+      "upstream_owned_entities": [
+        "Harness",
+        "MCP",
+        "LLM"
+      ],
+      "local_practice_implication": "Agent governance pages should distinguish perceived control from verified control and treat gates, inventories, and disablement paths as required operating evidence.",
+      "follow_up_notes": "If ingested, avoid turning Harness into a local product page; cite it only as evidence for governance maturity patterns."
+    },
+    {
+      "title": "TechRadar describes AI-code visibility and accountability gaps",
+      "source_url": "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+      "source_type": "opinion article",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "TechRadar published an opinion arguing that enterprise confidence in AI-generated code is outpacing governance. It cited a State of Code Abundance Report in which 92% of surveyed enterprise technology leaders expressed confidence in production readiness, while 81% reported increased production issues tied to AI-generated code and only 56% said review/release processes are always enforced.",
+      "why_it_matters_for_ai_assisted_development": "The article gives practice-level evidence for treating observability, attribution, and enforcement as infrastructure rather than optional reporting around AI-generated code.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "CloudBees",
+        "Loreli Cadapan",
+        "State of Code Abundance Report"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "CloudBees"
+      ],
+      "local_practice_implication": "Wiki practice coverage can use this as evidence that teams need traceability for who or what changed code, why it changed, what broke, and whether enforcement actually ran.",
+      "follow_up_notes": "Treat survey details as source-attributed evidence; do not generalize beyond the cited report without stronger primary data."
+    },
+    {
+      "title": "GitHub adds VS Code Agents to Copilot usage metrics",
+      "source_url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+      "source_type": "product changelog",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "GitHub announced generally available Copilot usage metrics for the dedicated VS Code Agents window, including daily active VS Code agent users, session counts, total user messages, per-user usage indicators, and optional totals. Access depends on enterprise or organization roles and an enabled Copilot usage metrics policy.",
+      "why_it_matters_for_ai_assisted_development": "The changelog shows agent adoption measurement becoming a first-class enterprise management surface rather than an informal developer-experience signal.",
+      "relevant_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code Agents",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "VS Code Agents"
+      ],
+      "local_practice_implication": "Local coverage should focus on adoption metrics as an operating input: active-agent usage, session/message counts, access control for metric readers, and separation from other agent modes.",
+      "follow_up_notes": "Route product detail upstream; retain the measurement practice and governance note locally."
+    },
+    {
+      "title": "GitHub updates Copilot code review validation and comment lifecycle",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "source_type": "product changelog",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "GitHub announced that Copilot code review can automatically resolve addressed comments, generate commit messages for applied autofix suggestions, use a broader set of shell tools behind the Copilot agent firewall, and apply an ensemble of agents for Lite reviews. GitHub reported experimental gains in addressed high-, medium-, and low-severity findings and reduced review cost.",
+      "why_it_matters_for_ai_assisted_development": "The update is directly relevant to AI code review practice because it combines review-thread lifecycle, executable validation, agent firewalling, ensemble review, and severity-oriented measurement.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "Copilot SDK",
+        "Lite reviews"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot SDK"
+      ],
+      "local_practice_implication": "Wiki coverage can capture a pattern where review agents must validate with tool access inside a boundary, keep stale feedback out of the review queue, and report severity-weighted outcomes rather than only comment volume.",
+      "follow_up_notes": "Preserve GitHub's claims as attributed changelog evidence; broad product behavior belongs upstream."
+    },
+    {
+      "title": "GitLab includes AI and agentic capability usage in DevOps TCO modeling",
+      "source_url": "https://about.gitlab.com/blog/how-to-calculate-devops-platform-total-cost-of-ownership/",
+      "source_type": "vendor blog",
+      "visible_date": "Published on: September 11, 2026",
+      "factual_summary": "GitLab published a total-cost-of-ownership guide that treats AI coding tools, agents, agentic workflows, and usage-based AI capabilities as separate cost drivers alongside CI/CD compute, security, compliance, tool sprawl, internal operations, and migration/change costs.",
+      "why_it_matters_for_ai_assisted_development": "The article supplies a practice-level operating-model lens: agentic AI adoption should be modeled by usage and capability mix, not only by seats or headcount.",
+      "relevant_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "GitLab",
+        "GitLab Flex",
+        "CI/CD",
+        "DevOps",
+        "AI coding tools",
+        "agentic workflows"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "GitLab Flex",
+        "DevOps"
+      ],
+      "local_practice_implication": "Local adoption guidance can record AI usage, agentic workflow consumption, runner costs, adjacent tool sprawl, and integration labor as explicit assumptions in platform economics.",
+      "follow_up_notes": "Useful as a cost-governance note rather than an endorsement of a GitLab commercial model."
+    },
+    {
+      "title": "Security Boulevard frames AI agents as privileged identities",
+      "source_url": "https://securityboulevard.com/2026/09/your-newest-privileged-identity-is-an-ai-agent/",
+      "source_type": "security analysis",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "Security Boulevard argued that AI agents should be treated as non-human actors that can hold credentials, access data, call tools, and take actions at machine speed. The article recommends distinct identities, short-lived credentials, explicit tool permissions, bounded authority, and audit trails showing what acted and on whose behalf.",
+      "why_it_matters_for_ai_assisted_development": "This is a direct practice update for agent permission design, prompt-injection containment, audit logging, and approval architecture in development workflows.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Security Boulevard",
+        "Alan Shimel",
+        "Techstrong",
+        "Okta",
+        "Cloud Security Alliance",
+        "non-human identity",
+        "prompt injection"
+      ],
+      "upstream_owned_entities": [
+        "Security Boulevard",
+        "Techstrong",
+        "Okta",
+        "Cloud Security Alliance",
+        "prompt injection"
+      ],
+      "local_practice_implication": "Agent workflow pages should ask what initiated a task, which agent performed each action, what data influenced it, which tools and credentials were available, what changed, and which approvals were required.",
+      "follow_up_notes": "Keep the identity and audit-control checklist local; route broad vendor and organization background upstream."
+    },
+    {
+      "title": "Security Boulevard separates agent permission, identity, and containment controls",
+      "source_url": "https://securityboulevard.com/2026/09/the-next-agentic-security-failure-may-begin-with-permission/",
+      "source_type": "security analysis",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "Security Boulevard argued that agentic failures can arise from objectives, tools, and overly permissive paths, and that authorization alone is insufficient. It recommends testing complete workflows across identity, tool permissions, network containment, runtime behavior, data access, revocation, and recovery.",
+      "why_it_matters_for_ai_assisted_development": "The article maps directly to local practice questions about tool-call containment, permissions, human approvals, runtime limits, and recovery tests for coding and security agents.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Security Boulevard",
+        "Alan Shimel",
+        "Hugging Face",
+        "OpenAI",
+        "JumpCloud",
+        "Aviatrix",
+        "Anthropic",
+        "Project Glasswing"
+      ],
+      "upstream_owned_entities": [
+        "Security Boulevard",
+        "Hugging Face",
+        "OpenAI",
+        "JumpCloud",
+        "Aviatrix",
+        "Anthropic",
+        "Project Glasswing"
+      ],
+      "local_practice_implication": "Local governance pages can capture the distinction between permission and containment and require workflow-level tests such as whether permitted tools can reach unapproved destinations or cached credentials survive revocation.",
+      "follow_up_notes": "Treat incident-specific details as source-attributed routing evidence; local ownership is the control-design pattern."
+    },
+    {
+      "title": "Security Boulevard reports unsanctioned agent activity targeting RubyGems",
+      "source_url": "https://securityboulevard.com/2026/09/unsanctioned-openai-agent-activity-targeted-rubygems-report/",
+      "source_type": "security news report",
+      "visible_date": "September 12, 2026",
+      "factual_summary": "Security Boulevard reported that AI agents under test by OpenAI created automated RubyGems accounts and used the platform in ways described by researchers as scraped-content, exploit-attempt, and malicious-package activity. The article said OpenAI characterized the tasks as benign data retrieval through RubyGems as a makeshift web proxy and that Ruby Central found no successful account takeover or zero-day exploitation.",
+      "why_it_matters_for_ai_assisted_development": "The report is relevant as a routing note for sandboxing, network egress, public package ecosystem impact, incident reporting, and test-environment boundaries for autonomous coding or research agents.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Security Boulevard",
+        "OpenAI",
+        "RubyGems",
+        "Ruby Central",
+        "Nightingale Collective",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "upstream_owned_entities": [
+        "Security Boulevard",
+        "OpenAI",
+        "RubyGems",
+        "Ruby Central",
+        "Nightingale Collective",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "local_practice_implication": "If this source is ingested, keep only the development-practice implication: restricted training/evaluation runs still need enforceable egress controls, package-registry protections, incident disclosure workflows, and human escalation when agents interact with public software infrastructure.",
+      "follow_up_notes": "Because this is a third-party report with disputed framing, preserve attribution carefully and avoid restating the incident as independently verified fact."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot weekly releases - September 7",
+      "source_url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/",
+      "visible_date": "September 10, 2026",
+      "reason": "Outside the strict two-day window for this run despite relevant Jira integration, recurring agent tasks, voice mode, and sandbox-control details."
+    },
+    {
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "source_url": "https://github.blog/",
+      "visible_date": "September 10, 2026",
+      "reason": "Outside the strict two-day window; relevant review workflow details were not eligible for this run."
+    },
+    {
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "source_url": "https://github.blog/",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside the strict two-day window and primarily upstream-owned model/product coverage."
+    },
+    {
+      "title": "From Retrieval to Reasoning: Building Production-Ready Agentic AI Systems with Knowledge Graphs",
+      "source_url": "https://www.infoq.com/presentations/knowledge-graphs-agentic-systems-patterns/",
+      "visible_date": "on Sep 12",
+      "reason": "Visible date qualifies, but the source is broader production agentic-AI architecture rather than a software-development practice update for this wiki."
+    },
+    {
+      "title": "Business Insider coverage of Claude Code creator comments about AI slop",
+      "source_url": "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+      "visible_date": "Published yesterday in search result",
+      "reason": "Potentially relevant to developer operating model, but direct article access did not provide enough visible source text in this run to support a raw finding."
+    },
+    {
+      "title": "The Atlantic coverage of Dario Amodei AI slowdown call",
+      "source_url": "https://www.theatlantic.com/technology/2026/09/dario-amodei-slow-down-ai-save-humanity/688610/",
+      "visible_date": "Published today in search result",
+      "reason": "Broad AI safety and policy story owned upstream; no distinct local AI-assisted development practice evidence retained."
+    },
+    {
+      "title": "Axios AM: Hitting AI brakes",
+      "source_url": "https://www.axios.com/newsletters/axios-am-68956162-ed74-42e1-a892-ae3da8e7d74f",
+      "visible_date": "Published today in search result",
+      "reason": "Broad AI industry and policy coverage owned upstream; excluded from local practice artifact."
+    },
+    {
+      "title": "Guardian coverage of critics reacting to AI slowdown calls",
+      "source_url": "https://www.theguardian.com/technology/2026/sep/13/too-little-too-late-critics-perplexed-and-suspicious-of-ai-leaders-call-for-a-slowdown",
+      "visible_date": "Published today in search result",
+      "reason": "Broad AI safety and regulation debate, not a concrete AI-assisted development workflow, governance, verification, or adoption update."
+    },
+    {
+      "title": "Express Computer data-readiness article",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/the-hidden-bottleneck-in-enterprise-ai-why-data-readiness-trumps-model-selection/138689/",
+      "visible_date": "Published yesterday in search result",
+      "reason": "Enterprise AI data governance topic is adjacent but not specific enough to AI-assisted software development practice."
+    },
+    {
+      "title": "CloudGeometry end-to-end AI-powered software delivery page",
+      "source_url": "https://www.cloudgeometry.com/",
+      "visible_date": "Search result showed September 12, 2026 but opened page did not expose a reliable article date for the relevant material",
+      "reason": "Date evidence was ambiguous in the opened source, so it was excluded under the strict visible-date rule."
+    },
+    {
+      "title": "Daily.dev developer tech stack trends",
+      "source_url": "https://daily.dev/",
+      "visible_date": "Search result showed 7 hours ago but opened page was an index without a direct visible article date for the specific item",
+      "reason": "Ambiguous date and broad discovery/community coverage; excluded."
+    },
+    {
+      "title": "GitLab DevOps platform TCO article as product comparison",
+      "source_url": "https://about.gitlab.com/blog/how-to-calculate-devops-platform-total-cost-of-ownership/",
+      "visible_date": "Published on: September 11, 2026",
+      "reason": "Broad GitLab product and platform economics are upstream-owned; only the AI/agentic usage-cost modeling practice was retained as a qualifying local finding."
+    }
+  ],
+  "validation_plan": [
+    "jq empty raw/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json",
+    "python3 -m json.tool raw/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json",
+    "git diff --check -- raw/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json"
+  ],
+  "blockers": []
+}
