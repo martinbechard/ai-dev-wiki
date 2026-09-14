@@ -27,6 +27,8 @@ The August 10 raw sources add a distinction between prompt wording and context a
 
 The August 23 raw sources add project-context evaluation criteria. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) treats repository context, workflow fit, human-agent collaboration, safety controls, delivery integration, and deployment governance as evaluation dimensions for context-connected coding agents. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds executed-graph evidence for tools, skills, context, checkpoints, and session state. Locally, request packages should include the delivery evidence and approval points needed to prove the context was useful, not only the files the model read.
 
+The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds long-horizon harness evidence. Context engineering should be treated as runtime behavior when work spans many tool calls: durable state, memory externalization, decomposition, goal tracking, and decision-history preservation are controls for context overflow and goal loss, not only prompt wording.
+
 ## Practice Boundaries
 
 - Start from the task, then select the smallest source set that can support the decision.
@@ -45,6 +47,7 @@ The August 23 raw sources add project-context evaluation criteria. The [topic ne
 - Keep builder and reviewer context packages separable so independent review is not conditioned by the same assumptions that generated the change.
 - Include task, requirement, review, approval, runtime, and delivery-state evidence when evaluating whether project-context tooling actually improves the workflow.
 - Preserve executed-graph evidence for which context, skills, tools, checkpoints, and state the agent used when that evidence affects governance or review.
+- For long-horizon coding tasks, externalize task state, open decisions, verified facts, rejected paths, and next checks so compaction or handoff preserves the work's current direction.
 
 ## Authoritative Sources
 
@@ -61,6 +64,7 @@ The August 23 raw sources add project-context evaluation criteria. The [topic ne
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 
 ## Related Code
 
@@ -86,6 +90,7 @@ The August 23 raw sources add project-context evaluation criteria. The [topic ne
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-13 with long-horizon harness context, durable state, open-decision, rejected-path, and decision-history preservation guidance.
 - Created on 2026-06-23 to hold the request-package side of context engineering.
 - Maintained on 2026-06-25 with issue, RFC, instruction, reference, API, verification, and handoff evidence for default coding-agent use.
 - Maintained on 2026-07-04 with story-file handoffs and governed semantic context for data-agent workflows.

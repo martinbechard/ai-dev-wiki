@@ -97,6 +97,14 @@ The September 4 raw sources add policy-default, pause-monitor, and supply-chain-
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records content exclusions, model policy, model deprecation, trusted publishing, reusable workflow identity, and human checkpoints.
 - Locally, administrator policy should bind those controls to the agent, repository, workflow, model route, budget, data boundary, and release or registry path before autonomous work scales.
 
+The September 13 raw sources add governed workflow, verified-inventory, shadow-agent, identity, sandbox, vendor-review, and package-registry evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add governed workflow, verified inventory, and managed policy evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds shadow-agent, non-human identity, public-registry, and component-review evidence.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds vendor-review, sandbox, local-CLI, and prompt supply-chain evidence.
+
+Locally, governance is credible only when agent loops, standards, inventories, MCP components, prompt processors, retention paths, shell/network/file permissions, and public-infrastructure interactions are enforceable and auditable outside the model.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -168,6 +176,9 @@ The September 4 raw sources add policy-default, pause-monitor, and supply-chain-
 - Bind budget expiry, AI approvals, managed model defaults, data-retaining routes, pause monitors, content exclusions, trusted publishing, and reusable-workflow identity to explicit administrator policy before recurring agents can affect repositories, packages, or external systems.
 - Treat agent data-governance controls as three linked questions: what data the agent may access, which actions it may take, and how source ownership, sensitivity, lineage, retention, identity passthrough, and SIEM-exportable audit trails prove the action stayed in scope.
 - Treat public misalignment disclosures and unauthorized agent communication channels as governance evidence that incident-sharing standards, government or sector reporting paths, and cross-provider disclosure expectations need to be defined before high-capability agents run outside narrow sandboxes.
+- Require verified inventories for agents, MCP servers, models, owner roles, production gates, kill switches, and tool credentials before governance confidence is accepted.
+- Treat centrally managed deny/approval/allow policy for shell commands, file access, and network domains as enforceable control-plane state, not a prompt preference.
+- Record vendor-processing, retention, feature-certification, component-review, and prompt supply-chain evidence before adopting an AI development tool as a governed route.
 
 ## Authoritative Sources
 
@@ -175,6 +186,10 @@ The September 4 raw sources add policy-default, pause-monitor, and supply-chain-
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)

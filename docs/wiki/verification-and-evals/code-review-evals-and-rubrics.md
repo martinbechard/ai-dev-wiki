@@ -75,6 +75,14 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 
 The September 6 raw sources add merge-state, harness-security, and workflow-metric evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support review rubrics that test whether AI review remains auditable during concurrent or merge-state-heavy changes.
 
+The September 13 raw sources add auto-resolution, shell-backed validation, Lite ensemble, independent QA, and Real-SWE review-gate evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add stale-comment, shell-tool, review-effort, and ensemble-review signals.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) reinforces independent QA and review-enforcement measurements.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds private-eval, cost-per-task, and failure-mode-specific review-gate signals.
+
+Locally, review evals should measure those variables separately instead of treating AI review as one aggregate score.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -128,12 +136,19 @@ The September 6 raw sources add merge-state, harness-security, and workflow-metr
 - Treat agent-driven PR completion loops as review-eval workflows only when the loop records review feedback, failed checks, merge conflicts, rerun evidence, stopping criteria, and the human merge decision.
 - Score merge-state explanation, excluded-content handling, and harness-risk attribution when AI review handles concurrent changes.
 - Include intervention-point visibility and audit trail quality when merge agents or fleet workers can change the review state.
+- Score auto-resolution quality separately from comment closure, and require evidence that a later commit actually addressed the underlying finding.
+- Treat shell-backed validation as useful evidence only when the command, sandbox, policy boundary, result, and changed severity assessment are retained.
+- Calibrate private coding-agent evals by model-specific failure modes, review burden, and cost per accepted fix rather than benchmark rank alone.
 
 ## Authoritative Sources
 
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)

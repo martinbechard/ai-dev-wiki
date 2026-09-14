@@ -66,6 +66,14 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The September 6 raw sources add async-decision, sandbox, and fleet-approval evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support approval records that bind the exact action while allowing low-risk independent work to continue around unanswered human decisions.
 
+The September 13 raw sources add managed-permission, agent-loop, production-readiness, and selective-review evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) tie managed permissions and governed agent loops to approval design.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds governance maturity and agent identity evidence.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) separates reviewable production code from disposable prototypes and adds selective-review pressure.
+
+Locally, centrally managed policy, work-item standards, production blast radius, developer accountability, rollback speed, and review capacity should decide which agent actions need human approval before execution or merge.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -117,6 +125,9 @@ The September 6 raw sources add async-decision, sandbox, and fleet-approval evid
 - Treat adoption metrics, token consumption, and dashboard visibility as supervision evidence, not performance-review targets; contribution impact and verified outcomes remain the human acceptance frame.
 - Keep asynchronous questions and peer-agent steering inside explicit approval records that name session visibility, action payload, and the work that may continue without the answer.
 - Require credential lifetime, command digest, and tool payload evidence when an approval crosses into sandboxed execution or fleet coordination.
+- Treat administrator-managed agent policy as a standing approval boundary that users and workspace settings cannot weaken.
+- Require an accountable human maintainer for production AI-assisted code, while allowing lighter review only for low-blast-radius throwaway prototypes with explicit disposal or containment.
+- Tune mandatory review, automated rollback, service criticality, and ownership together so selective review does not erase human accountability.
 
 ## Authoritative Sources
 
@@ -124,6 +135,10 @@ The September 6 raw sources add async-decision, sandbox, and fleet-approval evid
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)

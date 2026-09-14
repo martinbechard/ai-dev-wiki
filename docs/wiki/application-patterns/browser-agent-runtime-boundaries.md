@@ -27,6 +27,8 @@ The [September 4 topic news collector source](../../../raw/processed/2026-09-04/
 - Many multi-step workflows lacked documented safeguards before irreversible actions.
 - Locally, browser-agent runtime design should require transaction fixtures, no-op or sandbox routes, explicit irreversible-action checkpoints, and captured safeguard evidence before authenticated browser agents handle real accounts or business records.
 
+The September 13 raw sources add shadow-agent and local-runtime evidence that applies to browser-adjacent agents. The [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) and [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) reinforce that agents combining local-data access with internet reachability, inherited browser identity, or local CLI credentials need explicit inventory, domain, credential, and monitored-runtime boundaries before use.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -42,6 +44,8 @@ The [September 4 topic news collector source](../../../raw/processed/2026-09-04/
 - Distinguish separate agent-browser sessions from user-browser extension sessions before importing logins, cookies, bookmarks, passwords, or site-specific state.
 - Require trusted-site scope, sensitive-site exclusions, prompt-injection probes, action-intent checks, manual override paths, enterprise enablement policy, and evaluation evidence before browser agents take autonomous actions.
 - Use transaction fixtures, sandbox or no-op routes, irreversible-action checkpoints, and documented safeguard evidence before accepting browser-agent workflows that can submit forms, purchase, approve, delete, or mutate records.
+- Treat local-data access plus internet reachability as a higher-risk browser or integration-agent class that needs owner inventory, egress controls, and revocation evidence before rollout.
+- Prefer disposable monitored browser or cloud-sandbox sessions with short-lived credentials when an agent would otherwise inherit personal browser state or laptop-scoped access.
 
 ## Authoritative Sources
 
@@ -55,6 +59,8 @@ The [September 4 topic news collector source](../../../raw/processed/2026-09-04/
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 
 ## Related Code
 
@@ -81,6 +87,7 @@ The [September 4 topic news collector source](../../../raw/processed/2026-09-04/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
 - Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.

@@ -77,6 +77,14 @@ The September 4 raw sources add retention and publishing-control evidence:
 
 The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds dependency-bot credential and community-agent component evidence. Automatic package-registry access can reduce personal-token handling only when repository-scoped grants, explicit registry credentials, fallback behavior, and credential-removal hygiene are reviewable. Community agents, skills, MCP servers, and playbooks should enter the same supply-chain lane as dependencies: provenance, model or scanner assessment, expert review, and deployment approval are required before enterprise use.
 
+The September 13 raw sources add shadow-agent, vendor-review, package-registry, and sandbox-escape evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add community-component, MCP-security, shadow-agent, and local-data-plus-internet risk evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds prompt-injection, identity, public-registry, and review-enforcement evidence.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds prompt supply-chain, vendor-review, local sandbox, and package-registry evidence.
+
+Locally, these surfaces need inventory, processor, retention, certification-scope, runtime-behavior, and revocation evidence before adoption.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -143,12 +151,19 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - Review data-retaining model routes, content exclusions, trusted-publishing OIDC configuration, staged malware-scan approval, reusable workflow identity, and CodeQL coverage before agent-authored changes reach package or release paths.
 - Prefer repository-scoped package access for dependency automation over long-lived personal registry tokens when package scope, fallback credentials, and removal hygiene are explicit.
 - Treat community agent components, MCP servers, skills, and playbooks as deployable dependencies that need provenance, scanner or model assessment, expert review, and approval before enterprise use.
+- Inventory unsanctioned or shadow AI tools by data access, internet reachability, actor identity, owner, and revocation path before they are allowed near development assets.
+- Ask vendor-security questions at the feature tier actually used: prompt processors, no-training terms, retention ceilings, flagged-content handling, indemnity exclusions, eval coverage, and certification boundaries.
+- Treat public package registries, repository config, editor task settings, Docker sockets, local history, and keychains as supply-chain surfaces when a local coding agent can read or execute through them.
 
 ## Authoritative Sources
 
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)

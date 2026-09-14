@@ -26,6 +26,14 @@ The September 3 raw sources add web-search, security-repair, and governed-substr
 
 Locally, technical solution evaluation should vary one tool or substrate at a time and require traceable sandbox or policy evidence before accepting agent-side security or deployment claims.
 
+The September 13 raw sources add private-eval, inventory, kill-switch, component, vendor-review, and whole-task-cost evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add inventory, production-gate, kill-switch, community-component, and usage-metric evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds governance maturity, code visibility, and review-enforcement evidence.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds private historical tickets, CI-equivalent harnesses, vendor-review questions, cost per resolved task, and model-specific failure-mode analysis.
+
+Locally, those signals become evaluation criteria for the proposed agent route rather than broad product or benchmark coverage.
+
 ## Evaluation Criteria
 
 - Functional and workflow fit: the solution supports the real user journey, decision points, exception handling, and measurable outcome.
@@ -42,6 +50,9 @@ Locally, technical solution evaluation should vary one tool or substrate at a ti
 - Agent execution evidence: terminal or file-world solutions produce verifier-quality evidence, process traces, checkpoint and recovery records, resource accounting, preview evidence, and production-label calibration when those claims affect acceptance.
 - Tool and substrate evaluation: search, extraction, execution, and deployment tools are compared with one variable changed at a time, repeated trials, verified answers, citation audits, trace review, cost, latency, and tool-call counts.
 - Security and deployment-agent evidence: proposed solutions show sandboxed reproduction, critic or reviewer independence, human-curated acceptance criteria, governed credentials, and policy logs before vulnerability repair or deployment claims pass.
+- Private coding-agent evaluation: proposed agent routes are tested on representative historical tickets with CI-equivalent harnesses, reviewer rubrics, failure classifications, cost per resolved task, and model-task approval records.
+- Governance operability: proposed agent platforms show a complete inventory of agents, tools, MCP servers, models, owners, production-impact gates, kill switches, and revocation paths before confidence claims influence acceptance.
+- Vendor and component assurance: proposed AI tools show prompt processors, retention terms, feature-specific eval evidence, certification boundaries, deployable component provenance, and security-review records.
 
 ## Knockout Gates
 
@@ -56,6 +67,10 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [Verification loops and evals](verification-loops-and-evals.md)
 - [Representative workflow calibration](representative-workflow-calibration.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
@@ -92,6 +107,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-13 with private-ticket evals, inventory proof, kill switches, vendor-review evidence, community-component provenance, and cost-per-resolved-task criteria.
 - Created on 2026-08-20 from the technical-solution evaluation query fragment as a durable due-diligence rubric.
 - Maintained on 2026-08-20 with data-masking, prompt-injection verdict, tool-call policy, signed evidence pack, customer-controlled deployment, and key-boundary evaluation artifacts.
 - Maintained on 2026-08-27 with terminal-agent, harness-state, verifier-quality, process-trace, file-world validation, preview, resource-accounting, and production-label calibration evidence.

@@ -93,6 +93,14 @@ The September 4 raw sources add approval, merge-readiness, and content-boundary 
 
 The September 5 [topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json) adds looped PR-completion and review-strength evidence. Agent Merge-style workflows should keep review feedback, failed checks, conflicts, workflow reruns, and readiness state visible, while stronger-model or orchestration claims should be tied to cross-file defect evidence, cost, and human merge accountability.
 
+The September 13 raw sources add review automation and human-accountability evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add auto-resolution, shell validation, and Lite ensemble evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) reinforces independent QA, review enforcement, and accountable AI-code visibility.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds generated-code maintainability, private evals, and selective-review pressure.
+
+Locally, those are review-system inputs that still need source-backed findings, command evidence, failure-mode calibration, and human ownership before merge.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -174,10 +182,17 @@ The September 5 [topic news collector source](../../../raw/processed/2026-09-05/
 - Treat AI pull-request approvals as review-system evidence only when repository policy, path scope, content exclusions, scanner results, stale-approval dismissal, and human merge accountability are recorded.
 - Require agent PR-completion loops to preserve review-feedback, failed-check, conflict, rerun, readiness, and human-merge evidence before review automation becomes merge-state input.
 - Treat stronger-model review results as scoped evidence whose cross-file defect coverage, cost, false-positive load, and validated repairs still need repository-specific calibration.
+- Preserve auto-resolution reasons, addressed-commit evidence, shell-command validation output, and review-effort setting when AI review changes the PR comment lifecycle.
+- Keep AI-generated production code explainable and repairable by a human owner even when review automation reduces required line-by-line reading.
+- Use selective human review only when risk tier, rollback plan, tests, ownership, and failure-mode evidence justify the lighter gate.
 
 ## Authoritative Sources
 
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)

@@ -19,6 +19,14 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The September 6 raw sources add sandbox, credential-lifetime, and critical-risk edge evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support proving edge controls before high-impact agent execution is enabled.
 
+The September 13 raw sources add managed-permission, sandbox-diagnostic, non-human-identity, MCP security, and local-CLI execution evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) add managed shell, file, network, sandbox, and keychain policy evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds non-human identity, prompt-injection, and public-registry action evidence.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds local-CLI, Docker socket, repository-first-open, and short-lived credential evidence.
+
+Locally, these edges need centrally managed deny/approval/allow policy plus diagnostics that prove the executed edge matched the approved policy.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -32,12 +40,19 @@ The September 6 raw sources add sandbox, credential-lifetime, and critical-risk 
 - Pair regulated or high-impact agent actions with continuous capability discovery, inherited-permission review, and business-impact gates instead of relying only on acceptable-use policy.
 - Require runtime-isolation proof, short-lived credential scope, and repository binding before high-impact agent edges are enabled.
 - Add capability-tier review, incident escalation, and revocation evidence for cyber-capable or production-adjacent agent edges.
+- Treat enterprise-managed command, file, and network policy as higher authority than task prompts, workspace settings, auto-approval, or saved approvals.
+- Treat first-open repository inspection by a command-capable local agent as an execution-risk event when repository config, hooks, editor tasks, or generated outputs can run code.
+- Prefer short-lived, narrow execution credentials and monitored disposable environments when local CLI agents would inherit broad laptop sessions, keys, or authenticated services.
 
 ## Authoritative Sources
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
@@ -70,6 +85,7 @@ The September 6 raw sources add sandbox, credential-lifetime, and critical-risk 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-13 with managed-permission, sandbox-diagnostic, local-CLI, repository-first-open, short-lived-credential, and monitored-runtime edge evidence.
 - Maintained on 2026-08-29 with cross-surface, hardware, physical-tool, capability-metadata, safety-eval, and oversight execution-edge evidence.
 - Maintained on 2026-09-06 with runtime-isolation, short-lived-credential, repository-binding, cyber-capability, incident-escalation, and revocation evidence.
 - Created on 2026-08-22 from raw-source evidence about graph-edge governance, paid agent actions, connected apps, database agents, sandbox pauses, and trust receipts.

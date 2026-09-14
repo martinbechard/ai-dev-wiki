@@ -99,6 +99,14 @@ The September 4 raw sources add budget-expiry and model-policy reinforcement:
 
 The September 8 raw sources add whole-task and privacy-preserving cost evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records a case where reducing individual tool output can raise total task cost if useful details disappear. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records token-spend concerns and local-only prompt-cost instrumentation. Locally, cost telemetry should join token spend, tool-output size, privacy boundary, batching/context-pruning choice, review burden, and accepted outcome rather than rewarding raw usage or isolated compression.
 
+The September 13 raw sources add agent-window usage, TCO, high-percentile spend, Real-SWE, and whole-task energy evidence:
+
+- The [afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json) and [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) connect agent activity metrics and high-percentile spend to adoption evidence.
+- The [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json) adds usage-based AI capability costs to platform TCO.
+- The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds private-eval cost per resolved task and whole-task infrastructure cost.
+
+Locally, activity, token spend, benchmark rank, and infrastructure use become useful only when joined to task class, accepted outcome, review burden, model route, fan-out, run duration, and owner-approved budget.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -167,6 +175,9 @@ The September 8 raw sources add whole-task and privacy-preserving cost evidence.
 - Review expired individual budgets against their fallback cost center or universal budget so spend controls do not silently outlive the workflow or remove a still-needed pilot route.
 - Measure output trimming, batching, context pruning, and prompt-cost instrumentation by whole-task accepted outcome, privacy boundary, latency, and review burden.
 - Avoid token-spend leaderboards unless they are explicitly normalized by delivered value, quality, and production-qualified outcomes.
+- Separate dedicated agent-window activity, editor-agent activity, and background-agent activity before treating usage as adoption or productivity evidence.
+- Track cost per resolved task, cost per accepted change, and model-specific failure mode alongside benchmark scores when choosing coding-agent routes.
+- Treat energy, infrastructure, and long-running swarm cost as whole-task telemetry tied to duration, prompt count, helper-agent fan-out, and accepted outcome.
 
 ## Authoritative Sources
 
@@ -174,6 +185,10 @@ The September 8 raw sources add whole-task and privacy-preserving cost evidence.
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
+- [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
+- [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)

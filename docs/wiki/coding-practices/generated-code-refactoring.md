@@ -33,6 +33,8 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 
 The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) adds behavior-preserving refactor scope and execution-policy evidence. Refactoring generated code should target duplication, naming, oversized functions, dead dependencies, and module boundaries without changing behavior unless the task explicitly authorizes that design change. When generated or AI-carried code might execute, provenance checks should be paired with behavior or execution-policy gates because signatures and SBOM-style evidence do not prove runtime behavior.
 
+The [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) adds a production-readiness distinction for AI-authored code. Generated code can be treated as a disposable prototype only when blast radius, lifetime, and data exposure are intentionally low; production changes remain reviewable, explainable, maintainable, and owned by a developer who can repair the result after the agent leaves the loop.
+
 ## Practice Boundaries
 
 - Refactor generated code toward the repository's existing patterns before treating it as finished.
@@ -55,6 +57,7 @@ The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-de
 - Keep AI refactoring reversible and bounded by baseline metrics, regression checks, delivery-risk evidence, and design-owner review when architecture or business rules could change.
 - Target structure improvements such as duplication, naming, oversized functions, dead dependencies, and module boundaries while preserving behavior unless a design owner approves broader change.
 - Pair generated-code refactoring with execution-policy gates when the output can run scripts, change dependencies, or alter runtime behavior in ways static provenance cannot prove.
+- Separate disposable prototypes from production code by blast radius, intended lifetime, data exposure, and maintainer accountability before relaxing review or refactoring expectations.
 
 ## Authoritative Sources
 
@@ -68,6 +71,7 @@ The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-de
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
@@ -99,6 +103,7 @@ The [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-13 with prototype-versus-production generated-code boundaries for blast radius, lifetime, data exposure, and maintainer accountability.
 - Created on 2026-06-23 from local source guidance on TDD, review assistants, generated code, and branch packaging.
 - Maintained on 2026-06-23 as the generated-output refactoring leaf after splitting adjacent TDD, review, and fix-packaging practices.
 - Maintained on 2026-06-24 with documentation, traceability, and human oversight implications for sensitive generated-code workflows.
