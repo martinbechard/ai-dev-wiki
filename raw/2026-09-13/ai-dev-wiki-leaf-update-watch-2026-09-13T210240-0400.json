@@ -1,0 +1,415 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-14T01:02:40Z",
+  "run_timestamp_local": "2026-09-13T21:02:40-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-07T01:02:40Z",
+    "end_utc": "2026-09-14T01:02:40Z",
+    "rule": "Only public sources with direct visible publication or update dates inside this window qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 93,
+  "selection_method": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort; index, digest, federation, schema, glossary, known-defects, open-decisions, maintenance-log, topic-index, and dated source-synthesis pages excluded unless durable local practice leaves.",
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+    "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+    "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+    "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/",
+    "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.techradar.com/pro/almost-all-ai-tools-are-now-running-with-no-oversight-from-it-putting-companies-in-the-firing-line",
+    "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+    "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+    "https://www.techradar.com/pro/microsoft-engineer-claims-typing-code-is-absolutely-over-with-ai-and-github-copilot-set-to-transform-coding-as-we-know-it",
+    "https://www.expresscomputer.in/news/tenable-and-openai-launch-ai-security-review-process-for-community-built-components/138538/",
+    "https://www.expresscomputer.in/news/protectt-ai-launches-mcp-security-solution-for-bfsi-sector/138510/",
+    "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+    "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/mcp-server-and-ai-agent-government-hackathon",
+    "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+    "https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/",
+    "https://coding-is-like-cooking.info/2026/03/test-driven-development-with-agentic-ai/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-vscode-agent-usage-metrics-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+      "visible_date": "September 11, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "GitHub Copilot usage metrics added generally available enterprise and organization fields for activity in the dedicated VS Code Agents window, including daily active users, session counts, user messages, and per-user usage indicators. Access requires ownership, billing, or a custom role with View Copilot Metrics and the usage metrics policy enabled.",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "why_it_matters": "Local cost and adoption telemetry should distinguish dedicated agent-window usage from editor Agent Mode and generic rollups, and should preserve the permission boundary for who can view those metrics.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code Agents",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review whether agent-cost telemetry needs a field for dedicated agent-window activity versus editor-agent activity."
+    },
+    {
+      "id": "github-copilot-code-review-auto-resolution-and-lite-ensemble-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "Copilot code review now auto-resolves comments that later commits address, generates smarter commit messages for applied suggestions, uses broader shell tools behind an agent firewall, and uses an agent ensemble for Lite reviews. GitHub reports experiments with more addressed high-severity, medium-severity, and low-severity comments and lower review cost for Lite ensemble reviews.",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "why_it_matters": "Review evals should treat auto-resolution, shell-backed validation, and ensemble review as separate rubric variables, with stale-comment reduction, true issue closure, severity mix, and cost measured independently.",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Copilot SDK",
+        "Lite effort level"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Add review-eval fields for comment-resolution quality and shell-tool validation evidence."
+    },
+    {
+      "id": "github-copilot-enterprise-managed-agent-permissions-2026-09-09",
+      "source_url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "visible_date": "September 9, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "GitHub Copilot enterprise administrators can centrally mark shell commands, file reads and edits, and network domains as blocked, approval-required, or allowed. Managed restrictions are generally available across Copilot app, Copilot CLI, and VS Code Agent Host sessions and cannot be weakened by user or workspace settings, auto-approval, or saved approvals.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "why_it_matters": "Local approval-boundary guidance should model enterprise-managed policy as a higher authority than task prompts, workspace settings, and cached approvals for command, file, and network edges.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Agent Host",
+        "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "follow_up_note": "Review execution-edge authorization for centrally managed deny/approval/allow policy precedence."
+    },
+    {
+      "id": "github-copilot-jetbrains-managed-sandbox-and-ide-linked-cli-2026-09-08",
+      "source_url": "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/",
+      "visible_date": "September 8, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "GitHub Copilot for JetBrains added enterprise-managed sandbox policies for filesystem, network, proxy, developer-tool, and macOS Keychain access; global project context in chat; enterprise policy diagnostics; and an /ide command to connect terminal Copilot CLI sessions to JetBrains selections, diagnostics, file references, terminal environment variables, and project Python virtual environments.",
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+      ],
+      "why_it_matters": "Terminal-to-IDE grounding and managed sandbox diagnostics should be captured as runtime evidence when agent sessions claim bounded local execution or project-aware context.",
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "Copilot CLI",
+        "JetBrains IDEs",
+        "macOS Keychain",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains IDEs"
+      ],
+      "follow_up_note": "Review local runtime-boundary pages for IDE-linked terminal evidence and policy diagnostics."
+    },
+    {
+      "id": "harness-agentic-development-security-governance-gap-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+      "visible_date": "Published 11 September 2026",
+      "published_or_updated": "published",
+      "factual_summary": "ITPro reports Harness research saying 87 percent of engineering teams had an agent-related security event in the last year, only 44 percent could verify a complete inventory of agents, MCP servers, and LLMs despite 77 percent confidence, only 19 percent had a gate to block production-impacting failures, and about one-third had a rapid kill switch.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "why_it_matters": "Governance claims should be evaluated with inventory verification, production gates, and disable-path evidence rather than confidence statements about agent security.",
+      "named_entities": [
+        "Harness",
+        "Keith Mann",
+        "Trevor Stuart",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Harness",
+        "MCP"
+      ],
+      "follow_up_note": "Add inventory-verification and kill-switch evidence to governance and technical-solution evaluation rubrics."
+    },
+    {
+      "id": "atlassian-governed-agentic-development-workflows-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "visible_date": "Published 11 September 2026",
+      "published_or_updated": "published",
+      "factual_summary": "ITPro reports Atlassian upgrades for AI coding agents across Jira, Confluence, and DX: multi-repo Code Context, Jira agentic loops that convert backlog items into PRs, Agent Context Controls, centralized Standards, AI Review, DX for Agentic Development metrics, and a Jira Agent Usage Dashboard.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "why_it_matters": "Backlog-to-PR agent loops, context controls, standards, AI review, and delivery-impact telemetry should be treated as one governed workflow surface with traceable work-item, repository, review, adoption, quality, cost, and approval evidence.",
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Rovo",
+        "Teamwork Graph"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence"
+      ],
+      "follow_up_note": "Review shared-channel, code-review, cost-telemetry, and approval-boundary pages for governed Jira agent-loop evidence."
+    },
+    {
+      "id": "reco-shadow-ai-agent-oversight-report-2026-09-08",
+      "source_url": "https://www.techradar.com/pro/almost-all-ai-tools-are-now-running-with-no-oversight-from-it-putting-companies-in-the-firing-line",
+      "visible_date": "Published 8 September 2026",
+      "published_or_updated": "published",
+      "factual_summary": "TechRadar reports Reco findings that 80 percent of AI tools in enterprise ecosystems are not governed by IT oversight, 62 percent of assessed agent tools can both read local data and reach the internet, and 637 AI-agent-related vulnerabilities were identified. The report data spans enterprise telemetry, disclosed vulnerabilities, and analysis of 500 MCP servers.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "why_it_matters": "Browser agents and integration tools should be treated as approval and data-exfiltration surfaces when they inherit user permissions and combine local-data access with internet reachability.",
+      "named_entities": [
+        "Reco",
+        "MCP",
+        "Ofer Klein"
+      ],
+      "upstream_owned_entities": [
+        "Reco",
+        "MCP"
+      ],
+      "follow_up_note": "Add shadow-agent inventory and local-data-plus-internet reachability to sensitive-data controls."
+    },
+    {
+      "id": "techradar-independent-ai-qa-boundaries-2026-09-10",
+      "source_url": "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+      "visible_date": "Published 10 September 2026",
+      "published_or_updated": "published",
+      "factual_summary": "TechRadar opinion piece argues that when AI generates both software and tests from the same assumptions, code and tests can agree while still failing the user. It recommends independent, repeatable, auditable assurance; controlled expected results; retained pass/fail evidence; and visual validation alongside functional, integration, security, and performance tests.",
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "why_it_matters": "AI-assisted TDD and generated-code review should preserve independent assurance and visual/user-facing validation instead of accepting AI-generated tests as self-proving evidence.",
+      "named_entities": [
+        "TechRadar Pro",
+        "T-Plan",
+        "Charlie Wheeler"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "T-Plan"
+      ],
+      "follow_up_note": "Review TDD and grader-boundary pages for shared-assumption blind spot language."
+    },
+    {
+      "id": "openai-researcher-coding-agent-token-spend-2026-09-07",
+      "source_url": "https://www.businessinsider.com/openai-token-spend-ai-coding-researchers-2026-9",
+      "visible_date": "2026-09-07T11:32:34.175Z",
+      "published_or_updated": "published",
+      "factual_summary": "Business Insider reports OpenAI disclosures that median daily researcher token spend rose from 162 dollars in July to more than 600 dollars by mid-August, with 90th-percentile users above 7,000 dollars per day at API-equivalent prices. It also reports concerns about tokenmaxxing and companies shutting down internal usage leaderboards when cost was not clearly tied to productivity.",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "why_it_matters": "Cost telemetry should track high-intensity coding-agent use by accepted outcome and discourage raw token-use leaderboards unless normalized by productivity, quality, and review burden.",
+      "named_entities": [
+        "OpenAI",
+        "Business Insider",
+        "Sam Altman",
+        "Meta",
+        "Amazon"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Meta",
+        "Amazon"
+      ],
+      "follow_up_note": "Update agent-cost telemetry with high-percentile spend and tokenmaxxing risk if not already covered."
+    },
+    {
+      "id": "techradar-developer-role-verification-shift-2026-09-08",
+      "source_url": "https://www.techradar.com/pro/microsoft-engineer-claims-typing-code-is-absolutely-over-with-ai-and-github-copilot-set-to-transform-coding-as-we-know-it",
+      "visible_date": "Published 8 September 2026",
+      "published_or_updated": "published",
+      "factual_summary": "TechRadar reports debate around a Microsoft engineer claim that typing code is ending, while emphasizing developer roles shifting toward prompting agents, supervising workflow execution, reviewing outputs, verifying failures, and fine-tuning. The article cites concerns that longer-running tasks degrade accuracy and AI-generated code may contain more severe issues.",
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "why_it_matters": "Generated-code refactoring guidance should frame humans as supervisors of evidence, tests, and architectural fit rather than treating agent-generated code as complete because it executes part of the workflow.",
+      "named_entities": [
+        "Microsoft",
+        "David Fowler",
+        "GitHub Copilot",
+        "Aspire",
+        "CodeRabbit",
+        "Veracode"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "GitHub Copilot",
+        "Aspire",
+        "CodeRabbit",
+        "Veracode"
+      ],
+      "follow_up_note": "Review generated-code refactoring for supervision, long-task accuracy, and severe-issue risk."
+    },
+    {
+      "id": "tenable-openai-cyberagents-exchange-ai-inspector-2026-09-08",
+      "source_url": "https://www.expresscomputer.in/news/tenable-and-openai-launch-ai-security-review-process-for-community-built-components/138538/",
+      "visible_date": "On Sep 8, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "Express Computer reports Tenable and OpenAI launched CyberAgents Exchange AI Inspector, combining OpenAI GPT cyber models, Tenable One AI Exposure, and Tenable researcher review to assess community AI agents, skills, MCP servers, and multi-agent playbooks before enterprise deployment. The exchange reportedly contains more than 100 community-submitted AI components.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "why_it_matters": "Community agent components should be evaluated as supply-chain inputs with model-assisted review plus human security-review evidence before use in enterprise workflows.",
+      "named_entities": [
+        "Tenable",
+        "OpenAI",
+        "CyberAgents Exchange",
+        "CyberAgents Exchange AI Inspector",
+        "Tenable One AI Exposure"
+      ],
+      "upstream_owned_entities": [
+        "Tenable",
+        "OpenAI",
+        "CyberAgents Exchange"
+      ],
+      "follow_up_note": "Add community agent-component review evidence to supply-chain and technical-solution evaluation pages."
+    },
+    {
+      "id": "protectt-ai-mcp-security-scan-test-protect-2026-09-07",
+      "source_url": "https://www.expresscomputer.in/news/protectt-ai-launches-mcp-security-solution-for-bfsi-sector/138510/",
+      "visible_date": "On Sep 7, 2026",
+      "published_or_updated": "published",
+      "factual_summary": "Express Computer reports Protectt.ai launched an MCP security solution using Scan, Test, Protect stages. The scanner checks MCP packages, tool definitions, and parameter schemas for poisoned descriptions, hidden instructions, vulnerable dependencies, and supply-chain threats; testing simulates tool squatting, injection, and leakage; the proxy inspects calls and responses, blocks unauthorized tools, redacts sensitive data, and emits SIEM audit logs.",
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ],
+      "why_it_matters": "MCP security review should cover package metadata, tool schemas, runtime proxy enforcement, redaction, unauthorized-tool blocking, and SIEM-grade audit evidence.",
+      "named_entities": [
+        "Protectt.ai",
+        "MCP",
+        "BFSI",
+        "Manish Mimani"
+      ],
+      "upstream_owned_entities": [
+        "Protectt.ai",
+        "MCP"
+      ],
+      "follow_up_note": "Review MCP-related control pages for scan/test/protect lifecycle evidence."
+    },
+    {
+      "id": "wired-agent-energy-and-whole-task-cost-2026-09-13",
+      "source_url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+      "visible_date": "Sep 13, 2026 6:00 AM",
+      "published_or_updated": "published",
+      "factual_summary": "WIRED reports that agentic AI can turn a single user request into many self-prompts and long-running background work, making energy and infrastructure cost harder to infer from simple chatbot-query comparisons. The article describes frontier labs using large agent swarms and notes a lack of reliable agent-specific energy disclosure.",
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "why_it_matters": "Agent cost telemetry should treat energy and infrastructure use as whole-task costs tied to run duration, helper-agent fan-out, prompt count, and accepted outcome, not as simple per-query estimates.",
+      "named_entities": [
+        "WIRED",
+        "OpenAI",
+        "Meta",
+        "Sustainable AI",
+        "Boris Gamazaychikov",
+        "Zeke Hausfather"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Meta"
+      ],
+      "follow_up_note": "Consider adding infrastructure/energy observability as a weak but relevant cost-telemetry field."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.gsa.gov/artificial-intelligence/ai-community-of-practice/events-and-training/mcp-server-and-ai-agent-government-hackathon",
+      "visible_date": "September-November 2026 event window only",
+      "reason": "No concrete publication or last-updated date was visible in the fetched page text; event timing is not publication-date evidence."
+    },
+    {
+      "source_url": "https://www.snowflake.com/en/blog/engineering/enterprise-mcp-gateway-ai-agent-governance/",
+      "visible_date": "Sep 2, 2026",
+      "reason": "Visible publication date is before the strict lower bound of 2026-09-07T01:02:40Z."
+    },
+    {
+      "source_url": "https://codemanship.wordpress.com/2026/01/09/why-does-test-driven-development-work-so-well-in-ai-assisted-programming/",
+      "visible_date": "January 9, 2026",
+      "reason": "Visible publication date is outside the seven-day window."
+    },
+    {
+      "source_url": "https://coding-is-like-cooking.info/2026/03/test-driven-development-with-agentic-ai/",
+      "visible_date": "March 24, 2026",
+      "reason": "Visible publication date is outside the seven-day window."
+    }
+  ],
+  "federation_routing": "Broad product, vendor, framework, model, and MCP background remains upstream-owned by the AI wiki. This artifact keeps only downstream local practice implications for context architecture, coding practice, governance, verification, adoption telemetry, and source workflows.",
+  "blockers": []
+}
