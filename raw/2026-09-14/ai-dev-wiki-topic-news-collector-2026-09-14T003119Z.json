@@ -1,0 +1,507 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-14T00:31:19Z",
+  "collector_scope": "Raw-only public-source collection for AI-assisted development practice updates. No docs/wiki pages or raw/processed files were updated.",
+  "cutoff_window": {
+    "start_utc": "2026-09-12T00:31:19Z",
+    "end_utc": "2026-09-14T00:31:19Z",
+    "date_rule": "Include only sources with a direct visible publication or update date within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "Practice-level implications for AI-assisted development workflows, governance, verification, context, adoption, permissions, and operating model.",
+    "handling_rule": "For upstream-owned entities, record the entity as upstream-owned and keep only the downstream practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Private evals become the deployment gate for coding agents",
+      "source_url": "https://aicostcheck.com/blog/real-swe-benchmark-highlights-why-ai-coding-agents-need-priv",
+      "source_type": "practice guide",
+      "visible_date": "Published September 13, 2026",
+      "factual_summary": "AI Cost Check used Real-SWE as a prompt to describe production readiness as a private, ticket-based eval loop. The guide recommends representative historical tickets, CI-equivalent test harnesses, review gates, cost logging, results warehousing, and model routing by task difficulty rather than global benchmark rank.",
+      "why_it_matters_for_ai_assisted_development": "The update directly supports wiki coverage that agent approval should be scoped to task classes and repository evidence, with self-critique treated as iteration rather than a final approval gate.",
+      "relevant_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AI Cost Check",
+        "Real-SWE",
+        "Specific Labs",
+        "Fable 5.1",
+        "Gemini 3.8 Flash",
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI"
+      ],
+      "upstream_owned_entities": [
+        "Real-SWE",
+        "Specific Labs",
+        "Fable 5.1",
+        "Gemini 3.8 Flash",
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI"
+      ],
+      "local_practice_implication": "Local guidance should frame private evals around mergeable PR rate, test evidence, reviewer rubric, permissions, failure reasons, and cost per resolved task for each approved model-task pair.",
+      "follow_up_notes": "Route broad benchmark, model, and tool catalog details upstream; retain the private eval architecture and approval-boundary pattern locally."
+    },
+    {
+      "title": "Harness-level context engineering addresses long agent runs",
+      "source_url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks/",
+      "source_type": "technical article",
+      "visible_date": "September 12, 2026",
+      "factual_summary": "MarkTechPost summarized context engineering as a harness responsibility for long-horizon agent work, citing context overflow, goal loss, and missing state as predictable failure modes when tasks span many tool calls. The article points to harness mechanisms rather than model swaps as the layer that keeps work coherent.",
+      "why_it_matters_for_ai_assisted_development": "The article gives a practice-level bridge between context architecture and agent harness design: durable state, summaries, task decomposition, and goal tracking are operating controls for coding agents.",
+      "relevant_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "MarkTechPost",
+        "AWS Samples",
+        "autonomous cloud coding agents"
+      ],
+      "upstream_owned_entities": [
+        "AWS Samples",
+        "autonomous cloud coding agents"
+      ],
+      "local_practice_implication": "Local pages can treat context engineering as harness behavior: maintaining task state, externalizing memory, constraining goal drift, and preserving decision history across long runs.",
+      "follow_up_notes": "Do not create a broad AWS or harness product page locally; ingest only the reusable practice pattern if used."
+    },
+    {
+      "title": "Claude Code debate separates throwaway prototypes from reviewable production code",
+      "source_url": "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+      "source_type": "news report",
+      "visible_date": "2026-09-12T09:47:01.284Z",
+      "factual_summary": "Business Insider reported on Boris Cherny's response to a developer worried about AI-generated code quality. The discussion contrasted reviewable AI-assisted production code, where the submitting developer can explain and maintain changes, with low-blast-radius throwaway prototypes that may be treated more like black boxes.",
+      "why_it_matters_for_ai_assisted_development": "The item is useful practice evidence for separating code-quality obligations by blast radius, expected lifetime, and maintainability rather than adopting a single rule for all AI-generated code.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "Boris Cherny",
+        "Anthropic",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Business Insider",
+        "Boris Cherny",
+        "Anthropic",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Local coverage can describe a production-readiness rule: AI-assisted production changes remain explainable, reviewable, and maintainable by an accountable developer, while disposable prototypes may use lighter review if the blast radius is low.",
+      "follow_up_notes": "Route individual biography and product background upstream; keep only the code-quality operating distinction locally."
+    },
+    {
+      "title": "Agent sandbox risk shifts from model behavior to surrounding tools",
+      "source_url": "https://origami.sa/blog/ai-coding-agent-sandbox-escape-risk/",
+      "source_type": "security analysis",
+      "visible_date": "12 September 2026",
+      "factual_summary": "Origami summarized three recent disclosures in which coding agents or their surrounding tooling could execute attacker-controlled content from project files or sandbox outputs. The article highlights Git core.fsmonitor execution, tool allowlist gaps, Docker socket exposure, editor task settings, and delayed patching across CLI coding agents.",
+      "why_it_matters_for_ai_assisted_development": "The analysis is directly relevant to agent permission practice because it treats opening an unfamiliar repository with an agent as an execution event, not just a read event.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Origami",
+        "Manifold Security",
+        "GitSpawn",
+        "Pillar Security",
+        "Accomplish",
+        "The Hacker News",
+        "BleepingComputer",
+        "Upstarts Media",
+        "goose",
+        "Claude Code",
+        "Codex CLI",
+        "Cursor",
+        "Gemini CLI",
+        "Antigravity",
+        "CVE-2026-72718",
+        "CVE-2026-19592",
+        "CVE-2026-55607",
+        "CVE-2026-48124"
+      ],
+      "upstream_owned_entities": [
+        "Origami",
+        "Manifold Security",
+        "Pillar Security",
+        "Accomplish",
+        "The Hacker News",
+        "BleepingComputer",
+        "Upstarts Media",
+        "goose",
+        "Claude Code",
+        "Codex CLI",
+        "Cursor",
+        "Gemini CLI",
+        "Antigravity"
+      ],
+      "local_practice_implication": "Local governance guidance should cover external-code intake, inventorying agent versions, keeping production credentials off developer machines, using isolated first-open environments, and centralizing deployment paths with limited permissions.",
+      "follow_up_notes": "Security vulnerability details may belong in the upstream security wiki; local ingestion should focus on AI-assisted development workflow controls."
+    },
+    {
+      "title": "Real-SWE cost analysis ties review gates to model-specific failure modes",
+      "source_url": "https://www.beri.net/article/real-swe-private-codebase-benchmark-cost-per-resolved-task-failure-mode-review-gate",
+      "source_type": "analysis article",
+      "visible_date": "September 13, 2026",
+      "factual_summary": "The Daily Brief analyzed Specific Labs' Real-SWE benchmark and emphasized cost per resolved task and model-specific failure patterns. The article argues that engineering teams should choose coding agents by working-change economics and design review gates around the failure modes of the agent and harness they actually deploy.",
+      "why_it_matters_for_ai_assisted_development": "This source complements private-eval coverage by connecting eval results to review-gate design, model routing, and renewal economics rather than treating benchmark rank as the primary decision.",
+      "relevant_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "The Daily Brief",
+        "Real-SWE",
+        "Specific Labs",
+        "Fable 5.1",
+        "Gemini 3.8 Flash",
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI",
+        "Grok Build",
+        "Muse Code",
+        "Kimi Code",
+        "Hacker News"
+      ],
+      "upstream_owned_entities": [
+        "The Daily Brief",
+        "Real-SWE",
+        "Specific Labs",
+        "Fable 5.1",
+        "Gemini 3.8 Flash",
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI",
+        "Grok Build",
+        "Muse Code",
+        "Kimi Code",
+        "Hacker News"
+      ],
+      "local_practice_implication": "Local eval pages can distinguish leaderboard discovery from deployment proof and require review gates that are tailored to known failure modes for the chosen agent stack.",
+      "follow_up_notes": "If ingested with the AI Cost Check item, de-duplicate shared Real-SWE background and preserve only the additional cost/review-gate angle."
+    },
+    {
+      "title": "AI vendor review questions shift from SOC 2 to prompt supply chain evidence",
+      "source_url": "https://www.beri.net/article/ai-vendor-security-review-questions-that-change-the-answer",
+      "source_type": "security governance article",
+      "visible_date": "September 12, 2026",
+      "factual_summary": "The Daily Brief argued that AI vendor security review should ask who processes prompts, whether no-training terms apply to the actual tier, maximum retention including flagged content, what voids indemnity, whether the deployed feature is tested, and whether the feature is in certification scope. It compares major platform terms as of September 12, 2026.",
+      "why_it_matters_for_ai_assisted_development": "The article gives concrete review questions for teams adopting AI assistants, coding agents, API tools, and retrieval apps where prompts may cross provider or subprocessor boundaries.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "The Daily Brief",
+        "OpenAI",
+        "Anthropic",
+        "Microsoft",
+        "Google",
+        "Amazon Bedrock",
+        "ISO 42001",
+        "SOC 2",
+        "zero data retention",
+        "subprocessor"
+      ],
+      "upstream_owned_entities": [
+        "The Daily Brief",
+        "OpenAI",
+        "Anthropic",
+        "Microsoft",
+        "Google",
+        "Amazon Bedrock",
+        "ISO 42001",
+        "SOC 2",
+        "zero data retention"
+      ],
+      "local_practice_implication": "Local governance pages can turn these into a durable intake checklist for AI-assisted development tools: data processors, retention ceilings, no-training contract scope, feature-specific assurance, and certification boundaries.",
+      "follow_up_notes": "Preserve vendor-specific details as source-attributed evidence; avoid local broad platform encyclopedia coverage."
+    },
+    {
+      "title": "Local CLI coding agents framed as a privileged-laptop risk",
+      "source_url": "https://www.thepodcastsummary.com/episodes/hvwtHZ5E27c/cloud-sandboxes-security-vs-local-cli-agents.html",
+      "source_type": "podcast summary",
+      "visible_date": "Sunday, September 13, 2026",
+      "factual_summary": "The Podcast Summary recapped a Latent Space discussion in which Quinn Slack argued that local CLI coding agents inherit developer laptop permissions, including shell credentials, keys, local history, and authenticated internal services. The suggested alternative is remote disposable sandboxes with short-lived, narrow OIDC tokens and monitored execution.",
+      "why_it_matters_for_ai_assisted_development": "The source gives practice-level evidence for evaluating where agents run, how credentials are scoped, and whether audit logs exist for shell commands and token exchanges.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "The Podcast Summary",
+        "Latent Space",
+        "Quinn Slack",
+        "AMP",
+        "OIDC",
+        "G-Cloud"
+      ],
+      "upstream_owned_entities": [
+        "The Podcast Summary",
+        "Latent Space",
+        "Quinn Slack",
+        "AMP",
+        "OIDC",
+        "G-Cloud"
+      ],
+      "local_practice_implication": "Local guidance should compare local agent execution against cloud sandbox execution using blast radius, credential inheritance, temporary access, monitoring, and reproducibility as decision criteria.",
+      "follow_up_notes": "Use cautiously as a podcast summary; verify against the original episode before treating claims as primary evidence."
+    },
+    {
+      "title": "Mandatory code review challenged by parallel agent workflows",
+      "source_url": "https://www.thepodcastsummary.com/episodes/hvwtHZ5E27c/killing-mandatory-code-review-ai-agents.html",
+      "source_type": "podcast summary",
+      "visible_date": "Sunday, September 13, 2026",
+      "factual_summary": "The Podcast Summary recapped Quinn Slack's argument that mandatory pre-merge human review can erase the parallelism gains from AI coding agents. The summary describes a shift from mean-time-between-failure thinking toward fast recovery, automated rollback, trusted ownership, and selective review based on service criticality.",
+      "why_it_matters_for_ai_assisted_development": "The item captures an emerging operating-model tension: teams need review gates, but the shape of the gate may differ for low-risk internal tools versus critical production systems.",
+      "relevant_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "The Podcast Summary",
+        "Latent Space",
+        "Quinn Slack",
+        "AMP"
+      ],
+      "upstream_owned_entities": [
+        "The Podcast Summary",
+        "Latent Space",
+        "Quinn Slack",
+        "AMP"
+      ],
+      "local_practice_implication": "Local source-workflow guidance can record the decision axis: mandatory review, automated tests, rollback speed, ownership, and risk-tiering should be tuned together rather than copied wholesale from pre-agent development norms.",
+      "follow_up_notes": "Use as a candidate discussion source, not a blanket recommendation; any durable wiki synthesis should preserve risk-tier boundaries."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Boomi enterprise AI and MCP governance homepage",
+      "source_url": "https://boomi.com/",
+      "visible_date": "Search result indicated recent crawl and '1 day ago', but the opened page did not expose a direct publication or update date for the relevant content.",
+      "reason": "Excluded because the collector requires a direct visible date within the cutoff window, not crawler freshness or search-result relative dating.",
+      "named_entities": [
+        "Boomi",
+        "Boomi Connect",
+        "Agent Control Plane",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Boomi",
+        "Boomi Connect",
+        "Agent Control Plane",
+        "MCP"
+      ]
+    },
+    {
+      "title": "Cybersecurity Insiders AI-agent governance homepage result",
+      "source_url": "https://www.cybersecurity-insiders.com/",
+      "visible_date": "Search result showed relative recency, but the opened page did not expose the target article body or a direct visible publication date.",
+      "reason": "Excluded because the exact article and visible date could not be verified from the opened page.",
+      "named_entities": [
+        "Cybersecurity Insiders",
+        "CrowdStrike",
+        "Akamai",
+        "Zscaler",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Cybersecurity Insiders",
+        "CrowdStrike",
+        "Akamai",
+        "Zscaler",
+        "MCP"
+      ]
+    },
+    {
+      "title": "TechRadar: AI can't mark its own homework",
+      "source_url": "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Excluded because the visible relative date was outside the two-day cutoff window.",
+      "named_entities": [
+        "TechRadar"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar"
+      ]
+    },
+    {
+      "title": "Truefoundry enterprise MCP governance article",
+      "source_url": "https://www.truefoundry.com/blog/enterprise-mcp-governance-control-audit-secure-mcp-server-access",
+      "visible_date": "Published 3 days ago in search result",
+      "reason": "Excluded because the visible relative date was outside the two-day cutoff window, despite relevance to MCP audit logging.",
+      "named_entities": [
+        "Truefoundry",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Truefoundry",
+        "MCP"
+      ]
+    },
+    {
+      "title": "GitHub Copilot feature documentation",
+      "source_url": "https://docs.github.com/en/copilot/get-started/features",
+      "visible_date": "Crawled today, no direct visible publication or update date in opened result.",
+      "reason": "Excluded because crawler freshness is not enough for this collector, and the page is broad product documentation.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot cloud agent"
+      ]
+    },
+    {
+      "title": "Visual Studio Code agent marketing page",
+      "source_url": "https://code.visualstudio.com/",
+      "visible_date": "Crawled today, no direct visible publication or update date for the agent-practice content.",
+      "reason": "Excluded because the page is a broad product page without a qualifying direct visible date.",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "MCP"
+      ]
+    },
+    {
+      "title": "Orchestra Matillion Maia guide",
+      "source_url": "https://www.getorchestra.io/knowledge-hub/glossary/matillion-maia",
+      "visible_date": "Search result indicated publication today, but the opened page did not expose a direct visible publication date.",
+      "reason": "Excluded because the visible date could not be independently confirmed on the opened page and much of the article is product background.",
+      "named_entities": [
+        "Orchestra",
+        "Matillion Maia",
+        "Snowflake Cortex Code",
+        "dbt Wizard"
+      ],
+      "upstream_owned_entities": [
+        "Orchestra",
+        "Matillion Maia",
+        "Snowflake Cortex Code",
+        "dbt Wizard"
+      ]
+    },
+    {
+      "title": "Techreviewer AI app generators directory",
+      "source_url": "https://techreviewer.co/categories/ai-app-generators",
+      "visible_date": "Last updated: September 13, 2026",
+      "reason": "Excluded because the page is a broad product directory with limited local practice implication and would duplicate upstream-owned product/tool coverage.",
+      "named_entities": [
+        "Techreviewer",
+        "AI app generators"
+      ],
+      "upstream_owned_entities": [
+        "Techreviewer",
+        "AI app generators"
+      ]
+    },
+    {
+      "title": "TechTalks fall/winter AI developer events roundup",
+      "source_url": "https://bdtechtalks.com/2026/09/13/ai-developer-agentic-ai-events-you-shouldnt-miss-this-fall-winter-2026/",
+      "visible_date": "September 13, 2026",
+      "reason": "Excluded because the item is primarily an event roundup; its note that agent conferences are focusing on reliability, fresh data, and tool wiring is useful but too general for a standalone raw finding.",
+      "named_entities": [
+        "TechTalks",
+        "Linux Foundation",
+        "Agentic AI Foundation",
+        "AI Engineer"
+      ],
+      "upstream_owned_entities": [
+        "TechTalks",
+        "Linux Foundation",
+        "Agentic AI Foundation",
+        "AI Engineer"
+      ]
+    },
+    {
+      "title": "MarkTechPost Claude Opus 5 article",
+      "source_url": "https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/",
+      "visible_date": "July 24, 2026",
+      "reason": "Excluded because the visible publication date is outside the two-day cutoff and model capability coverage is upstream-owned.",
+      "named_entities": [
+        "MarkTechPost",
+        "Claude Opus 5",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "MarkTechPost",
+        "Claude Opus 5",
+        "Anthropic"
+      ]
+    }
+  ],
+  "search_queries": [
+    "AI assisted development code review practice September 13 2026",
+    "coding agents prompt instructions context engineering September 13 2026",
+    "AI software engineering evals code generation September 13 2026",
+    "MCP governance practice tool calls approvals audit logs September 13 2026",
+    "\"September 13, 2026\" \"AI code review\"",
+    "\"September 13, 2026\" \"coding agent\" \"review gate\"",
+    "\"September 12, 2026\" \"AI coding agents\" \"software development\"",
+    "\"September 12, 2026\" \"MCP\" \"AI agents\" governance"
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Keep this collector raw-only; do not update docs/wiki or move anything under raw/processed from this run.",
+    "Several qualifying sources are secondary analyses. If ingested into durable pages, prefer verifying high-risk claims against original disclosures or primary benchmark pages.",
+    "De-duplicate the two Real-SWE-related findings during ingest: one emphasizes private eval architecture; the other emphasizes cost per resolved task and review gates."
+  ]
+}
