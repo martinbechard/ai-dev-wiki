@@ -1,0 +1,424 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-15T00:31:23Z",
+  "collector_scope": "Raw-only public-source collection for AI-assisted development practice updates. No docs/wiki pages or raw/processed files were updated.",
+  "cutoff_window": {
+    "start_utc": "2026-09-13T00:31:23Z",
+    "end_utc": "2026-09-15T00:31:23Z",
+    "date_rule": "Include only sources with a direct visible publication or update date within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "Practice-level implications for AI-assisted development workflows, governance, verification, context, adoption, permissions, auditability, and operating model.",
+    "handling_rule": "For upstream-owned entities, record the entity as upstream-owned and keep only the downstream practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Copilot auto model selection adds cost-quality tiers",
+      "source_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+      "source_type": "official changelog",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "GitHub Copilot auto model selection now exposes efficiency, balance, and intelligence tiers. The tiers steer how auto selection weighs cost, quality, and response time per prompt while using the same available model pool. The feature is rolling out in Visual Studio Code, Copilot CLI, and the GitHub Copilot app.",
+      "why_it_matters_for_ai_assisted_development": "Teams adopting coding agents need operating guidance for model-routing tradeoffs. This update gives a concrete example of routing policy moving from hidden product behavior into a user- or organization-visible control surface.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "local_practice_implication": "Consider recording model-routing policy as part of agent workflow governance, especially when teams distinguish cheap routine edits from complex, quality-sensitive work.",
+      "follow_up_notes": "If ingested, keep the product details upstream-owned and use the local lens for cost-quality operating policy."
+    },
+    {
+      "title": "Agentic Batch Changes reaches general availability",
+      "source_url": "https://www.tmcnet.com/usubmit/-sourcegraph-announces-general-availability-agentic-batch-changes-ai-/2026/09/14/10444837.htm",
+      "source_type": "press release mirror",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "Sourcegraph announced general availability of Agentic Batch Changes for Sourcegraph Cloud customers. The system scopes a codebase-wide change, validates the approach in one repository, rolls out batches of pull requests, reacts to CI failures, and tracks merge status. Sourcegraph says engineers review and approve every changeset before merge, and that outcome-based pricing is tied to merged changesets.",
+      "why_it_matters_for_ai_assisted_development": "This is a practice-level signal for organization-scale agent workflows: planning, initial validation, staged rollout, CI feedback, human review, and fleet-level tracking are treated as one governed change-management loop.",
+      "relevant_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Sourcegraph",
+        "Agentic Batch Changes",
+        "Sourcegraph Cloud",
+        "Claude Code",
+        "Codex",
+        "Sourcegraph MCP",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "Azure DevOps",
+        "Gerrit",
+        "Mercari",
+        "Canva"
+      ],
+      "upstream_owned_entities": [
+        "Sourcegraph",
+        "Agentic Batch Changes",
+        "Sourcegraph Cloud",
+        "Claude Code",
+        "Codex",
+        "Sourcegraph MCP",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "Azure DevOps",
+        "Gerrit",
+        "Mercari",
+        "Canva"
+      ],
+      "local_practice_implication": "Large-scale agent changes should be modeled as governed rollouts with scoped planning, a single-repository proof, batched expansion, CI repair loops, human approval, and centralized tracking.",
+      "follow_up_notes": "A durable local page may belong under source workflows or agent workflows as a codebase-wide change pattern, with Sourcegraph as upstream-owned evidence."
+    },
+    {
+      "title": "Pentagon publishes AI-assisted software development procedures",
+      "source_url": "https://defensescoop.com/2026/09/14/pentagon-sets-procedures-for-ai-assisted-software-development/",
+      "source_type": "news report on government instruction",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "DefenseScoop reported on a Department of Defense instruction for Accelerated Mission Software that went into effect September 8. The guidance treats AI-generated code as unverified input, keeps developers and teams accountable for security and integrity, requires human review for security- or safety-critical AI-generated changes, applies normal review and security testing to AI-generated code, and calls for records of models, versions, and significant datasets in a software evidence package.",
+      "why_it_matters_for_ai_assisted_development": "The guidance is a strong governance reference for accountable AI-assisted development: AI output is not authority, sensitive code cannot be sent to unapproved external services, and model/data provenance becomes part of software evidence.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "DefenseScoop",
+        "Department of Defense",
+        "Department of War",
+        "Kirsten Davies",
+        "Accelerated Mission Software",
+        "SBOM"
+      ],
+      "upstream_owned_entities": [
+        "Department of Defense",
+        "Department of War",
+        "SBOM"
+      ],
+      "local_practice_implication": "Local governance pages should preserve the rule that AI-generated or modified code remains unverified until reviewed, tested, traced, and approved according to risk.",
+      "follow_up_notes": "Consider a governance leaf on evidence packages for AI-assisted development if the underlying instruction is later ingested directly."
+    },
+    {
+      "title": "Sonar emphasizes zero-trust verification for agentic development",
+      "source_url": "https://www.sonarsource.com/blog/sonar-supports-openai-call-for-collective-action-on-cyber-defense/",
+      "source_type": "vendor blog",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "Sonar argued that machine-speed code creation creates a verification gap and that final manual review or one CI check is insufficient. The post recommends independent verification across security, reliability, maintainability, architecture, and compliance; combines deterministic analysis with contextual agentic reasoning; and places checks inside the agent loop, PR/CI gate, and ongoing maintenance loop.",
+      "why_it_matters_for_ai_assisted_development": "The post gives concrete language for separating generation from verification and for layering deterministic and agentic checks across the software lifecycle.",
+      "relevant_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Sonar",
+        "OpenAI",
+        "LLM Leaderboard",
+        "Agent Centric Development Cycle",
+        "SonarQube plugin for Codex",
+        "SonarQube CLI",
+        "Sonar Vortex",
+        "GPT-5.6",
+        "SonarQube Remediation Agent",
+        "SonarQube Advanced Security",
+        "SonarQube Hunter Agent",
+        "Gitar"
+      ],
+      "upstream_owned_entities": [
+        "Sonar",
+        "OpenAI",
+        "LLM Leaderboard",
+        "Agent Centric Development Cycle",
+        "SonarQube plugin for Codex",
+        "SonarQube CLI",
+        "Sonar Vortex",
+        "GPT-5.6",
+        "SonarQube Remediation Agent",
+        "SonarQube Advanced Security",
+        "SonarQube Hunter Agent",
+        "Gitar"
+      ],
+      "local_practice_implication": "Verification guidance should avoid self-approval by the same model or agent and should distinguish inner-loop checks, PR/CI gates, and codebase maintenance checks.",
+      "follow_up_notes": "Use as practice evidence for independent semantic and mechanical verification boundaries, not as local product coverage."
+    },
+    {
+      "title": "Secure Code Warrior frames AI software governance around commit-level control",
+      "source_url": "https://www.securecodewarrior.com/",
+      "source_type": "vendor site update",
+      "visible_date": "September 14, 2026 visible in resource hub",
+      "factual_summary": "Secure Code Warrior's AI software governance page describes visibility into AI-assisted development, policy workflows at commit, approved-model policies, commit-level AI usage tracing, risk signals by repository and contributor, and audit-ready traceability of who or what generated code. The page's resource hub shows a September 14, 2026 application-security Hype Cycle item and the page foregrounds agentic coding security and secure coding training.",
+      "why_it_matters_for_ai_assisted_development": "The page is useful practice evidence for treating AI coding governance as commit-level observability and policy enforcement rather than only post-hoc vulnerability detection.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Secure Code Warrior",
+        "Trust Agent",
+        "Trust Agent: AI",
+        "Gartner Hype Cycle for Application Security 2026",
+        "Agentic Coding Security",
+        "Secure Coding Training"
+      ],
+      "upstream_owned_entities": [
+        "Secure Code Warrior",
+        "Trust Agent",
+        "Trust Agent: AI",
+        "Gartner Hype Cycle for Application Security 2026",
+        "Agentic Coding Security",
+        "Secure Coding Training"
+      ],
+      "local_practice_implication": "Governance pages can add commit-level AI usage, model policy, contributor accountability, and audit-ready traceability as control points for AI-assisted development.",
+      "follow_up_notes": "Visible date is attached to the resource hub item on the same page; treat as a weaker freshness signal than source pages with article-level timestamps."
+    },
+    {
+      "title": "Shift-left code review pattern puts independent review before PR creation",
+      "source_url": "https://dev.to/dev_kiran/shift-left-code-review-how-qodo-turns-your-coding-agent-into-its-own-first-reviewer-58fc",
+      "source_type": "community practice article",
+      "visible_date": "Posted on Sep 14",
+      "factual_summary": "The article describes a shift-left review workflow where a coding agent first loads codebase context and team rules, implements a change, runs tests, asks an independent reviewer to inspect local committed or uncommitted changes, fixes safe findings, and only then opens a PR. The article contrasts this with asking the same agent to review its own code and argues humans should retain product, architecture, migration, and security tradeoff decisions.",
+      "why_it_matters_for_ai_assisted_development": "The update provides a clear practice pattern for coding-agent quality loops: independent review before PR, safe auto-fixes, human-only decision categories, and local-change review as a feedback loop.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "DEV Community",
+        "Kiran Naragund",
+        "Qodo",
+        "Qodo Agentic Toolbox",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Kiro",
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "upstream_owned_entities": [
+        "DEV Community",
+        "Qodo",
+        "Qodo Agentic Toolbox",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Kiro"
+      ],
+      "local_practice_implication": "A local agent workflow leaf could formalize pre-PR independent review and divide findings into safe agent-fix items versus decisions requiring human judgment.",
+      "follow_up_notes": "Community source; verify against product docs before treating product capabilities as durable, but the workflow pattern is locally relevant."
+    },
+    {
+      "title": "ToolJet MCP case study emphasizes validated phases and maintainable platform-native output",
+      "source_url": "https://dev.to/tooljet/building-a-recall-response-console-with-tooljet-mcp-and-examining-tooljets-approach-to-ai-app-126",
+      "source_type": "vendor/community tutorial",
+      "visible_date": "Posted on Sep 14",
+      "factual_summary": "ToolJet described using Codex with ToolJet MCP to build a recall response console through phases: plan the next phase, validate it, fix validation errors, apply the phase, and verify the result. The article emphasizes that MCP operations created normal ToolJet pages, components, queries, data, and events rather than a separate generated React codebase, preserving GUI editability after the agent run.",
+      "why_it_matters_for_ai_assisted_development": "The practice signal is that tool-mediated generation can reduce maintenance burden when agent output remains inside a platform's native object model and every phase is validated before mutation.",
+      "relevant_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "ToolJet",
+        "ToolJet MCP",
+        "Codex",
+        "DEV Community",
+        "React",
+        "SQL"
+      ],
+      "upstream_owned_entities": [
+        "ToolJet",
+        "ToolJet MCP",
+        "Codex",
+        "DEV Community",
+        "React",
+        "SQL"
+      ],
+      "local_practice_implication": "Application-pattern guidance should distinguish freeform code generation from platform-native mutation APIs with validation gates and post-generation human-editable artifacts.",
+      "follow_up_notes": "Keep ToolJet/MCP details upstream-owned; local lens is validated phase gating and maintainable output form."
+    },
+    {
+      "title": "Claude Code skills article treats skills as workflow roles rather than generic prompts",
+      "source_url": "https://dev.to/sizzlebop/claude-code-skills-worth-trying-from-vague-idea-to-finished-feature-1nhe",
+      "source_type": "community practice article",
+      "visible_date": "Posted on Sep 14",
+      "factual_summary": "The article describes combining Claude Code skills for a feature workflow: clarifying behavior before implementation, domain modeling, simplifying designs to avoid unnecessary abstractions, applying design-system guidance, reviewing for complexity, and preserving handoff or task state. It explicitly says each skill should have a specific job rather than being treated as a magic coding boost.",
+      "why_it_matters_for_ai_assisted_development": "The source supports local prompt-and-instructions guidance that durable agent instructions should be role-scoped, composable, and tied to workflow phases such as clarification, modeling, implementation review, and handoff.",
+      "relevant_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "DEV Community",
+        "Matt Pocock",
+        "Ponytail",
+        "UI/UX Pro Max",
+        "Hallmark",
+        "i-have-adhd",
+        "Caveman"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "DEV Community",
+        "Matt Pocock",
+        "Ponytail",
+        "UI/UX Pro Max",
+        "Hallmark",
+        "i-have-adhd",
+        "Caveman"
+      ],
+      "local_practice_implication": "Instruction architecture pages can cite the practice of assigning skills narrow workflow responsibilities and using review skills after implementation for complexity control.",
+      "follow_up_notes": "Community source; useful for practice pattern only, not authoritative product coverage."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Atlassian introduces always-on capabilities for agentic development workflows",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "visible_date": "Published 11 September 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Strong local practice signal for context controls, standards, AI review, MCP tracking, usage dashboards, and agentic workflow measurement."
+    },
+    {
+      "title": "Agents have hit the mainstream in software engineering, but security and governance practices are not evolving fast enough",
+      "source_url": "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+      "visible_date": "Published 11 September 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Useful governance evidence about incomplete agent inventories, missing gates, and lack of kill switches."
+    },
+    {
+      "title": "The visibility gap that's smuggling risk into AI code",
+      "source_url": "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+      "visible_date": "Published 11 September 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Practice signal for treating AI-code governance as infrastructure with attribution, measurement, and oversight."
+    },
+    {
+      "title": "Claude Platform release notes: Managed Agents auto permission policies",
+      "source_url": "https://docs.anthropic.com/en/release-notes/api",
+      "visible_date": "September 10, 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Relevant to governed tool calls because server-side auto policy can run, deny, or pause for approval and report evaluation fields."
+    },
+    {
+      "title": "Cursor Projects changelog",
+      "source_url": "https://cursor.com/",
+      "visible_date": "Sep 10, 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Potentially relevant to project-level context packaging, but broad Cursor product details are upstream-owned."
+    },
+    {
+      "title": "GitHub Copilot code review auto-resolution and analysis updates",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Strong code-review practice signal for shell-tool validation, ensemble reviews, and automatic resolution of addressed comments."
+    },
+    {
+      "title": "Add VS Code Agents to Copilot usage metrics",
+      "source_url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+      "visible_date": "September 11, 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Useful adoption and operating-model signal for agent usage measurement across enterprises and organizations."
+    },
+    {
+      "title": "GitHub Copilot weekly releases - September 7",
+      "source_url": "https://github.blog/changelog/2026-09-10-github-copilot-weekly-releases-september-7/",
+      "visible_date": "September 10, 2026",
+      "exclusion_reason": "Outside the strict two-day window for this run.",
+      "relevance_if_later_ingested": "Potentially relevant if weekly release notes contain practice-level changes; date excludes it here."
+    },
+    {
+      "title": "Online AI-Assisted Engineering Cohort",
+      "source_url": "https://certification.qconferences.com/",
+      "visible_date": "Event date October 19, 2026; search result also showed September 14, 2026 page context",
+      "exclusion_reason": "No unambiguous visible publication or update date within the window; the main date is a future event date.",
+      "relevance_if_later_ingested": "Syllabus topics are locally relevant: codebase comprehension, permissions, sandboxing, sensors, self-correction, independent review, and CI for unattended agents."
+    },
+    {
+      "title": "AI Agents News - Week of September 14, 2026",
+      "source_url": "https://aiagentstore.ai/",
+      "visible_date": "September 14, 2026",
+      "exclusion_reason": "Excluded as a broad marketplace/news roundup with insufficient primary evidence for the claimed product updates in the opened search result.",
+      "relevance_if_later_ingested": "Could be used only as a pointer to primary sources, not as authority for product launches or shipped capabilities."
+    }
+  ],
+  "search_queries": [
+    "AI coding agent workflow structured outputs audit logs permissions approvals published September 14 2026",
+    "AI assisted development TDD code review agent harness September 14 2026",
+    "RAG codebase retrieval coding agents context engineering September 14 2026",
+    "MCP governance tool calling permissions approvals audit logs September 14 2026",
+    "September 14 2026 coding agents software engineering AI development governance",
+    "September 14 2026 AI code review published",
+    "September 14 2026 agentic development software",
+    "September 14 2026 MCP AI agents governance",
+    "Sep 14 AI coding code review agent",
+    "September 14, 2026 AI-assisted development software engineering practice",
+    "September 14, 2026 coding agent workflow",
+    "September 14, 2026 AI-generated code governance software",
+    "September 14, 2026 agent codebase review"
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Collector stayed raw-only: no docs/wiki pages and no raw/processed files were updated.",
+    "Several high-signal sources from September 10-11 were excluded because the strict two-day window starts at 2026-09-13T00:31:23Z.",
+    "Broad companies, products, models, developer tools, MCP servers, techniques, and ecosystem entities were marked upstream-owned; only the local practice implication was retained."
+  ]
+}
