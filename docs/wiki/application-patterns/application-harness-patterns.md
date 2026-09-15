@@ -41,6 +41,8 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds bounded multi-model orchestration and parallel-session evidence. Application harnesses should expose orchestration choice, isolated workspace state, diagnostics, cancellation, validation, and review surfaces so users can compare single-agent, cascade, critique, or parallel worktree execution without losing source authority or rollback evidence.
 
+[Platform-native agent mutation](platform-native-agent-mutation.md) owns the pattern where an agent uses a managed platform's native objects and validation paths so the result stays editable in the platform's normal UI. This overview keeps the broader harness boundary.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -73,6 +75,7 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Treat desktop app control, plugin execution, visual generation, recurring task automation, MCP tools, A2A messages, A2UI surfaces, and sandboxed app resources as harness boundaries that need visible approvals, audit trails, and authoritative backend state.
 - Treat streaming output, tool-call displays, inline diffs, code highlighting, long-context editing, and background-agent mutations as harness UI responsibilities that must preserve user state.
 - Expose orchestration choice, isolated workspace state, diagnostics, cancellation, validation, and review surfaces when an application harness supports cascade, critique, or parallel agent execution.
+- Route managed-platform mutation details to [platform-native agent mutation](platform-native-agent-mutation.md).
 
 ## Authoritative Sources
 
@@ -95,6 +98,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [platform-native agent mutation](platform-native-agent-mutation.md)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
 - [agent session recovery](agent-session-recovery.md)
 - [agent lifecycle hooks](agent-lifecycle-hooks.md)

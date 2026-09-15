@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) includes September 13 item-level updates for [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md), private evals, runtime sandboxing, selective review, context engineering, prompt supply-chain review, managed policy, AI code review automation, and governance maturity.
+The [current September digest](2026-09.md) records item-level September 2026 updates across routing, review, verification, observability, memory, harness, skill, governance, and training practice.
 
 ## Monthly Digests
 
@@ -48,6 +48,7 @@ The [current September digest](2026-09.md) includes September 13 item-level upda
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-14 with the September 14 raw ingest digest scope.
 - Maintained on 2026-09-13 with the September 13 raw ingest digest scope.
 - Maintained on 2026-09-08 with the September 8 raw ingest digest scope.
 - Maintained on 2026-09-05 with the September 5 raw ingest digest scope.

@@ -50,6 +50,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Instructions, custom agents, MCP registrations, skills, plugins, and canvases are maintainable software assets rather than loose prompt text.
 - Team-published agent catalogs should record owner, repository scope, permission defaults, skill or plugin provenance, version, validation evidence, and rollback path before they become shared development infrastructure.
 
+The [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) adds workflow-role evidence for skills. Skills should have narrow jobs such as behavior clarification, domain modeling, simplification, design-system guidance, complexity review, and handoff preservation, and they should be composed around workflow phases rather than treated as generic prompt boosts.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -80,6 +82,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Track language-specific skill packs by owner, source snapshot, supported runtime or framework versions, update cadence, allowed tools, and validation examples before team adoption.
 - Keep a registry of sanctioned skills, loading agents, and directed tool calls when skill files can affect repository or connected-system behavior.
 - Treat team-published custom agents, MCP registrations, skills, plugins, and canvases as versioned instruction surfaces with owner, permission, validation, and rollback evidence.
+- Assign each durable skill a specific workflow role, phase, expected inputs, and review point instead of using broad reusable prompts as undifferentiated coding boosts.
 
 ## Authoritative Sources
 
@@ -105,6 +108,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
 - [August 25 evening leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T210131-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 
 ## Related Code
 

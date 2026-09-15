@@ -11,6 +11,7 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [orient-inspect-patch-verify-loop.md](orient-inspect-patch-verify-loop.md) records the local controlled-change loop for coding agents.
 - [research-plan-implement-review-lifecycle.md](research-plan-implement-review-lifecycle.md) records the RPI lifecycle for professional agent work.
 - [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
+- [codebase-wide-agentic-batch-changes.md](codebase-wide-agentic-batch-changes.md) records staged fleet-wide agent rollout through proof, batched PRs, CI repair, merge tracking, and human approval.
 - [subagent-coordination.md](subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [delegated-coding-handoffs.md](delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
 - [supervised-cross-environment-handoffs.md](supervised-cross-environment-handoffs.md) records handoff evidence when agents span browser, desktop, terminal, repository, or cloud surfaces.

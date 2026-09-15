@@ -93,6 +93,8 @@ The September 6 raw sources add agent-adoption measurement and tool-fit evidence
 
 The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-policy evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) frames AI-first adoption as a software-delivery operating model with design-time quality gates, developer-as-architect responsibilities, and build-versus-buy criteria. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records team-scoped managed model defaults and validation/recovery evidence for model routes. Locally, workflow selection should compare agent-enabled delivery speed, review capacity, ownership cost, model-policy eligibility, validation evidence, and fallback behavior before shifting work from bought systems to internal builds.
 
+The September 14 raw sources add routing and enterprise-platform workflow signals. The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records cost-quality model tiers and Red Hat AI safety and multi-tenancy controls, while the [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records Sourcegraph-style batch changes and DoD-style evidence expectations. Locally, workflow selection should decide whether a task is routine, quality-sensitive, batch-rollout, or regulated before selecting model route or platform controls; professional training curriculum evidence belongs in [junior learning paths](junior-learning-paths-in-agentic-teams.md).
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -156,6 +158,7 @@ The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-polic
 - Compare delegated coding tools by execution location, team policy controls, review follow-up, CI repair, ticket-sized feature fit, flaky-test diagnosis, and backlog cleanup before adopting a generic product ranking.
 - Compare coding-agent surfaces by task horizon, human-intervention rate, context fit, review load, and accepted outcomes before making access or model availability the selection criterion.
 - Check supported runtime surface, SDK stability, and cache behavior when a release note claims better agent compatibility.
+- Select model-routing tiers, batch-change tooling, and platform safety controls from the workflow's risk, scale, and evidence requirements rather than from product availability alone.
 
 ## Authoritative Sources
 
@@ -165,6 +168,8 @@ The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-polic
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)

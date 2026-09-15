@@ -27,6 +27,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 
 The September 8 raw sources add bounded-orchestration and autonomy-budget evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records runtime selection among single-agent, cascade, and critique patterns, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records a pipeline-versus-agent litmus for fixed control flow. Locally, workflow selection should choose static pipelines when steps are known, compose bounded agent orchestration when runtime discovery is useful, and require cost, latency, validation, cancellation, and review evidence before escalating to multi-model or multi-agent execution.
 
+[Codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) owns staged fleet-wide rollout practice. This selection page keeps the use, compose, or build rule: use a managed platform when repository connectors and ordinary review evidence are enough, compose around it when local policy or ledgers are needed, and build only when rollout logic or source-control integration is differentiating.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -41,6 +43,7 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - Treat managed default models, team overrides, retention-gated enablement, reasoning-effort controls, and cost/capability views as workflow-selection inputs rather than prompt-time preferences.
 - Prefer fixed workflows when the path can be known before execution, and require explicit discovery value before agentic control flow adds cost, latency, or review burden.
 - Treat single, cascade, critique, and other multi-agent execution patterns as workflow policies that need cancellation, validation, cost, and isolated-review evidence.
+- Route codebase-wide rollout details to [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) before choosing whether to use, compose, or build.
 
 ## Authoritative Sources
 
@@ -55,6 +58,8 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md)
 
 ## Related Code
 

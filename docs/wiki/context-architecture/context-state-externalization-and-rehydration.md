@@ -44,6 +44,13 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 The [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) adds coding-agent context-preservation evidence. Rehydration should label durable, recalled, cached, and live state before using it to plan or act.
 
+The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) adds a compact memory architecture signal from Hermes Agent:
+
+- Small filesystem memory files can be injected at session start and kept frozen for prompt caching.
+- Larger history can live in indexed session search.
+- External memory becomes more appropriate when a workflow spans multiple projects, users, machines, semantic search needs, or background extraction.
+- Locally, rehydration should distinguish startup memory, frozen session memory, searchable history, and external multi-scope memory before using any layer as authority.
+
 ## Practice Boundaries
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
@@ -72,6 +79,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - Distinguish raw transcripts, indexed memories, embeddings, audit views, and exported summaries before using recalled material as current project state.
 - Require provenance, freshness labels, backup verification, and format-version evidence before shared or team memory migrations steer future agent work.
 - Label durable notes, searchable transcript windows, cache-retained context, active questions, and live repository evidence separately during rehydration.
+- Separate startup-injected memory files, frozen prompt-cache-friendly session memory, searchable session history, and external semantic memory before relying on recalled facts across projects, users, or machines.
 
 ## Authoritative Sources
 
@@ -96,6 +104,7 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 
 ## Related Code

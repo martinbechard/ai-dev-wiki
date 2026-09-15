@@ -10,6 +10,7 @@ This topic owns local coding workflows and acceptance practices. It does not own
 
 - [ai-assisted-tdd.md](ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
 - [intelligent-code-review.md](intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
+- [pre-pr-independent-review.md](pre-pr-independent-review.md) records independent review of local agent changes before pull-request creation.
 - [layered-ai-code-review-roles.md](layered-ai-code-review-roles.md) records developer, architecture, and security role separation for AI-assisted review.
 - [structural-diff-review-for-ai-generated-code.md](structural-diff-review-for-ai-generated-code.md) records parser-aware diff triage for AI-generated commits and formatting churn.
 - [generated-code-refactoring.md](generated-code-refactoring.md) records the practice of treating generated output as a draft until it fits local architecture and verification expectations.

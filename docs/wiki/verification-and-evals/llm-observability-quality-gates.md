@@ -38,6 +38,20 @@ The [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-de
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds agent-observability and running-inventory evidence. LLM observability gates should connect traces, agent identity, running-agent discovery, action order, cost, latency, approval evidence, and remediation outcomes for coding agents that work without continuous supervision.
 
+The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) adds span-reconstruction and fallback evidence from agent-observability comparisons. LLM observability gates should retain:
+
+- Failed-run reconstruction across spans.
+- Tool arguments.
+- Retrieved context.
+- Prompt versions.
+- Routing decisions.
+- Live scores.
+- Retention settings.
+- Cost attribution.
+- Model-fallback records.
+
+Those records let reviewer and release decisions explain why an agent run failed or escalated.
+
 ## Practice Boundaries
 
 - Do not use broad vendor comparison tables as local tool recommendations without verifying the current product, pricing, and data-handling state.
@@ -50,10 +64,12 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Connect security monitoring, kill-switch evidence, context-integrity signals, product feedback, retention, and online validation to release gates when autonomous-agent behavior affects users or external systems.
 - Turn agent near misses, purpose deviations, repository/tool trust failures, and incident evidence into regression cases or rollback criteria when recurring workflows could repeat the behavior.
 - Evaluate agent behavior against declared purpose, authorized systems, expected tool-call patterns, approval evidence, and remediation outcomes, not only against aggregate success metrics.
+- Preserve failed-run spans, tool arguments, retrieved context, prompt versions, routing decisions, live scoring, retention, cost attribution, and fallback records before observability evidence is used as a release or rollback gate.
 
 ## Authoritative Sources
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [Open-source LLM observability tools clipping](../../../raw/processed/7-best-free-open-source-llm-observability-tools.md)
 - [Braintrust LangSmith alternatives clipping](../../../raw/processed/langsmith-alternatives-2026-braintrust.md)
 - [LangSmith orchestration-layer clipping](../../../raw/processed/langsmith-competing-hosted-ai-layers.md)

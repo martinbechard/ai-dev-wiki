@@ -79,6 +79,13 @@ The September 7 raw sources add human-loop and prototype-validation eval evidenc
 
 The September 8 raw sources add orchestration, component-review, and corrective-retrieval evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records complete-task metrics, controlled experiments, isolated review, validation, and fail-safe patch application, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records pre-deployment review for community agent components and corrective-RAG groundedness/usefulness checks. Locally, verification loops should test the chosen harness path, component intake gate, and retrieval self-correction path before crediting autonomy or tool expansion.
 
+The September 14 raw sources add zero-trust and enterprise-platform validation evidence:
+
+- The [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records independent verification across security, reliability, maintainability, architecture, and compliance.
+- The same source records DoD-style normal review and security testing for AI-generated code.
+- The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records EvalHub-style safety benchmarking, compliance evidence, observability dashboards, fair-share scheduling, controlled rollouts, RAG, agent templates, and guardrails.
+- Locally, verification loops should combine deterministic checks, contextual review, compliance evidence, resource telemetry, and controlled rollout records before a generated change or platform configuration is accepted.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -118,6 +125,8 @@ The September 8 raw sources add orchestration, component-review, and corrective-
 - Include readiness checks for isolation, authorization boundaries, prompt integrity, command safety, network egress, provenance, rollback, recovery, human governance, explainability, and incident response before deployment.
 - Evaluate deployed agents with simulations, graders, guardrails, escalation paths, and approved update proposals before behavior changes reach production.
 - Treat behavior review as a runtime acceptance layer that checks whether the system did the right work, not only whether generated code passes static checks.
+- Layer deterministic analysis, contextual review, compliance evidence, architecture checks, and runtime telemetry instead of relying on final manual review or one CI result as the only generated-code gate.
+- Preserve rollout-control, safety-benchmark, GPU or token-utilization, fair-share scheduling, priority-routing, and guardrail evidence when enterprise AI platforms affect verification outcomes.
 - Score research-agent workflows at the record, hierarchy, evidence, recall, cost, latency, and failure-localization levels when tasks require wide and deep search.
 - Separate deterministic tool-schema checks from agent-scored semantic checks, and record data-handling boundaries when schema content is handed to a coding agent.
 - Require autonomous test runs to preserve model selection, credential-reference, live-viewing, remote-control, and human-intervention evidence before treating results as accepted verification.
@@ -156,6 +165,8 @@ The September 8 raw sources add orchestration, component-review, and corrective-
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)

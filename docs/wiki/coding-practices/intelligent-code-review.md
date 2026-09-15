@@ -101,6 +101,13 @@ The September 13 raw sources add review automation and human-accountability evid
 
 Locally, those are review-system inputs that still need source-backed findings, command evidence, failure-mode calibration, and human ownership before merge.
 
+The September 14 raw sources add review-adjacent signals that now route to focused leaves:
+
+- [Pre-PR independent review](pre-pr-independent-review.md) owns independent inspection of local agent changes before pull-request creation.
+- [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md) owns model, version, source-data, security, integrity, and human-review records for generated code.
+- The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records VS Code agent usage metrics, which route to [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md).
+- The same source records Atlassian AI Review, context-control, and standards surfaces, which route to [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -185,6 +192,8 @@ Locally, those are review-system inputs that still need source-backed findings, 
 - Preserve auto-resolution reasons, addressed-commit evidence, shell-command validation output, and review-effort setting when AI review changes the PR comment lifecycle.
 - Keep AI-generated production code explainable and repairable by a human owner even when review automation reduces required line-by-line reading.
 - Use selective human review only when risk tier, rollback plan, tests, ownership, and failure-mode evidence justify the lighter gate.
+- Route independent local-change review details to [pre-PR independent review](pre-pr-independent-review.md).
+- Route generated-code evidence package requirements to [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md).
 
 ## Authoritative Sources
 
@@ -193,6 +202,10 @@ Locally, those are review-system inputs that still need source-backed findings, 
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [pre-PR independent review](pre-pr-independent-review.md)
+- [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)

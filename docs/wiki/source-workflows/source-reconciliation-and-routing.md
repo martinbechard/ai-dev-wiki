@@ -54,6 +54,25 @@ The August 27 raw sources keep broad ecosystem entities upstream-owned. GitHub, 
 
 The September 2 raw sources keep broad ecosystem entities upstream-owned. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), [GitHub CLI](../../../upstream-ai-wiki/developer-tools/index.md), [OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md), [Anthropic](../../../upstream-ai-wiki/companies/anthropic.md), [Oracle](../../../upstream-ai-wiki/companies/oracle.md), [Model Context Protocol](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md), A2A, A2UI, MCP Apps, OAuth, standards, models, and company details remain upstream-owned. The downstream ingest keeps practice implications from the [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) and [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json): context-exclusion policy, model-default governance, delegated review authority, assistant-specific grants, audit trails, time-boxed loops, destructive-action containment, and agent application control boundaries.
 
+The September 14 raw sources keep broad ecosystem entities upstream-owned:
+
+- Upstream routing: broad companies, products, frameworks, models, certifications, observability tools, and developer tools route to the relevant upstream hub or exact upstream leaf when one exists.
+- Local routing:
+
+  | Practice signal | Local owner |
+  | --- | --- |
+  | Cost-quality routing | [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md) |
+  | Codebase-wide batch changes | [codebase-wide agentic batch changes](../agent-workflows/codebase-wide-agentic-batch-changes.md) |
+  | AI-code evidence packages | [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md) |
+  | Zero-trust verification | [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md) |
+  | Commit-level governance | [commit-level AI governance](../governance-and-risk/commit-level-ai-governance.md) |
+  | Pre-PR independent review | [pre-PR independent review](../coding-practices/pre-pr-independent-review.md) |
+  | Platform-native MCP output | [platform-native agent mutation](../application-patterns/platform-native-agent-mutation.md) |
+  | Role-scoped skills | [durable instructions and skill files](../adoption-and-operating-model/durable-instructions-and-skill-files.md) |
+  | Memory rehydration | [context rehydration](../context-architecture/context-state-externalization-and-rehydration.md) |
+  | Observability gates | [LLM observability gates](../verification-and-evals/llm-observability-quality-gates.md) |
+  | Agent-training workflow design | [junior learning paths](../adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md) |
+
 Earlier July routing details retained below:
 
 Upstream routing:
@@ -96,6 +115,7 @@ Local routing:
 - Route August 14 company, model, product, protocol, MCP, security-framework, incident, and analyst entities upstream while retaining local practice for plugin supervision, model policy, context architecture, compaction, approval gates, tool discovery, status handling, environment provenance, prior-work reconstruction, incident evidence, repository/tool trust, and behavior baselines.
 - Route August 27 company, product, framework, protocol, benchmark, developer-tool, and security-vendor entities upstream while retaining local practice for MCP governance, review instructions, PR review evidence, repository creation, workflow artifacts, harness state, file validation, verifier quality, judge calibration, repository readiness, and security gates.
 - Route September 2 company, product, model, protocol, standard, and developer-tool entities upstream while retaining local practice for context exclusions, model defaults, delegated review authority, assistant grants, audit trails, time-boxed loops, destructive-action containment, and agent application boundaries.
+- Route September 14 company, product, model, protocol, framework, certification, observability-tool, and developer-tool entities upstream while retaining local practice for routing, rollout, evidence, verification, governance, review, MCP output, skills, memory, observability, and training workflows.
 
 ## Authoritative Sources
 
@@ -140,6 +160,8 @@ Local routing:
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 
 ## Related Code
 

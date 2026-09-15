@@ -105,6 +105,10 @@ The September 13 raw sources add governed workflow, verified-inventory, shadow-a
 
 Locally, governance is credible only when agent loops, standards, inventories, MCP components, prompt processors, retention paths, shell/network/file permissions, and public-infrastructure interactions are enforceable and auditable outside the model.
 
+[Commit-level AI governance](commit-level-ai-governance.md) owns approved-model policies, AI-use traces, repository and contributor risk signals, and audit-ready records attached to source-control decisions. This page keeps the broader local control model across agent tools, identity, data, approval, and audit.
+
+The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) also records Atlassian-style context controls, standards, AI review, and system-of-record workflows. Locally, governance controls should preserve which backlog, repository, documentation, and context sources were allowed, which standards applied, and which system of record owned the final state before agent loops affect tickets or pull requests.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -179,6 +183,8 @@ Locally, governance is credible only when agent loops, standards, inventories, M
 - Require verified inventories for agents, MCP servers, models, owner roles, production gates, kill switches, and tool credentials before governance confidence is accepted.
 - Treat centrally managed deny/approval/allow policy for shell commands, file access, and network domains as enforceable control-plane state, not a prompt preference.
 - Record vendor-processing, retention, feature-certification, component-review, and prompt supply-chain evidence before adopting an AI development tool as a governed route.
+- Route source-control-attached AI attribution and approved-model policy details to [commit-level AI governance](commit-level-ai-governance.md).
+- Preserve context-control, standards, and system-of-record ownership evidence when agent workflows span tickets, repositories, documentation, and pull requests.
 
 ## Authoritative Sources
 
@@ -190,6 +196,9 @@ Locally, governance is credible only when agent loops, standards, inventories, M
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [commit-level AI governance](commit-level-ai-governance.md)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)

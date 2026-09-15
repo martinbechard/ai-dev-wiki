@@ -39,6 +39,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [agent-workflows/orient-inspect-patch-verify-loop.md](agent-workflows/orient-inspect-patch-verify-loop.md) records the local controlled-change loop for AI-assisted coding work.
 - [agent-workflows/research-plan-implement-review-lifecycle.md](agent-workflows/research-plan-implement-review-lifecycle.md) records the RPI lifecycle for professional agent work.
 - [agent-workflows/use-compose-build-workflow-selection.md](agent-workflows/use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
+- [agent-workflows/codebase-wide-agentic-batch-changes.md](agent-workflows/codebase-wide-agentic-batch-changes.md) records staged fleet-wide agent rollout through proof, batched PRs, CI repair, merge tracking, and human approval.
 - [agent-workflows/subagent-coordination.md](agent-workflows/subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [agent-workflows/delegated-coding-handoffs.md](agent-workflows/delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
 - [agent-workflows/supervised-cross-environment-handoffs.md](agent-workflows/supervised-cross-environment-handoffs.md) records handoff evidence when agents span browser, desktop, terminal, repository, or cloud surfaces.
@@ -51,6 +52,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [coding-practices/index.md](coding-practices/index.md) is the hub for TDD, review, regression repair, and refactoring generated code.
 - [coding-practices/ai-assisted-tdd.md](coding-practices/ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
 - [coding-practices/intelligent-code-review.md](coding-practices/intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
+- [coding-practices/pre-pr-independent-review.md](coding-practices/pre-pr-independent-review.md) records independent inspection of local agent changes before pull-request creation.
 - [coding-practices/layered-ai-code-review-roles.md](coding-practices/layered-ai-code-review-roles.md) records developer, architecture, and security role separation for AI-assisted review.
 - [coding-practices/structural-diff-review-for-ai-generated-code.md](coding-practices/structural-diff-review-for-ai-generated-code.md) records parser-aware diff triage for AI-generated commits and formatting churn.
 - [coding-practices/generated-code-refactoring.md](coding-practices/generated-code-refactoring.md) records the practice of refactoring generated output into maintainable, verified code.
@@ -78,6 +80,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [verification-and-evals/ai-technical-solution-evaluation.md](verification-and-evals/ai-technical-solution-evaluation.md) records technical due-diligence criteria and knockout gates for proposed AI solutions.
 - [application-patterns/index.md](application-patterns/index.md) is the hub for harness architecture, structured outputs, streaming, workflow state, and product controls.
 - [application-patterns/application-harness-patterns.md](application-patterns/application-harness-patterns.md) is the overview for harness design boundaries.
+- [application-patterns/platform-native-agent-mutation.md](application-patterns/platform-native-agent-mutation.md) records validation-gated agent mutation through managed-platform native objects and editable output.
 - [application-patterns/agent-environment-readiness.md](application-patterns/agent-environment-readiness.md) records setup, isolation, secret scoping, restart, and persistence criteria for coding-agent environments.
 - [application-patterns/harness-sizing-by-workflow-complexity.md](application-patterns/harness-sizing-by-workflow-complexity.md) records how harness controls scale with action risk and context complexity.
 - [application-patterns/agent-harness-components.md](application-patterns/agent-harness-components.md) records the fixed loop, registry, context, persistence, hooks, and permission components of an agent harness.
@@ -92,6 +95,8 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [application-patterns/browser-agent-runtime-boundaries.md](application-patterns/browser-agent-runtime-boundaries.md) records browser-agent search/fetch, authenticated sessions, proxies, identity, page observations, and session recordings as governed runtime surfaces.
 - [governance-and-risk/index.md](governance-and-risk/index.md) is the hub for permissions, approvals, secrets, audit logs, privacy, licensing, and prompt injection.
 - [governance-and-risk/governance-controls-for-agents.md](governance-and-risk/governance-controls-for-agents.md) records the overall local agent-control model.
+- [governance-and-risk/ai-code-evidence-packages.md](governance-and-risk/ai-code-evidence-packages.md) records model, source, review, and security evidence packages for generated code.
+- [governance-and-risk/commit-level-ai-governance.md](governance-and-risk/commit-level-ai-governance.md) records source-control-attached AI-use traces, approved-model policy, attribution, and audit evidence.
 - [governance-and-risk/prompt-injection-and-untrusted-content.md](governance-and-risk/prompt-injection-and-untrusted-content.md) records how untrusted input stays separated from live instructions.
 - [governance-and-risk/agent-governance-infrastructure.md](governance-and-risk/agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and accountability as infrastructure concerns.
 - [governance-and-risk/agent-identity-and-delegated-authority.md](governance-and-risk/agent-identity-and-delegated-authority.md) records human requester, agent instance, connector identity, delegated scope, shared-channel context, and credential revocation practice.

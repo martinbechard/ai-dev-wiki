@@ -9,6 +9,8 @@ This topic owns local operating rules and risk patterns. Provider security annou
 ## Governance Leaf Pages
 
 - [governance-controls-for-agents.md](governance-controls-for-agents.md) records the overall local agent-control model and links the specific control leaves.
+- [ai-code-evidence-packages.md](ai-code-evidence-packages.md) records model, source, review, and security evidence packages for generated code.
+- [commit-level-ai-governance.md](commit-level-ai-governance.md) records source-control-attached AI-use traces, approved-model policy, attribution, and audit evidence.
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) records how untrusted input, retrieved text, files, webpages, tickets, and clippings stay separated from live instructions.
 - [agent-governance-infrastructure.md](agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and human accountability as infrastructure concerns.
 - [agent-identity-and-delegated-authority.md](agent-identity-and-delegated-authority.md) records human requester, agent instance, connector identity, delegated scope, shared-channel context, and credential revocation practice.

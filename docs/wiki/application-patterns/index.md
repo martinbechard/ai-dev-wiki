@@ -9,6 +9,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 ## Pattern Leaf Pages
 
 - [application-harness-patterns.md](application-harness-patterns.md) is the overview for harness design boundaries.
+- [platform-native-agent-mutation.md](platform-native-agent-mutation.md) records validation-gated agent mutation through managed-platform native objects and editable output.
 - [agent-environment-readiness.md](agent-environment-readiness.md) records setup, isolation, secret scoping, restart, and persistence criteria for coding-agent environments.
 - [harness-sizing-by-workflow-complexity.md](harness-sizing-by-workflow-complexity.md) records how harness controls scale with action risk and context complexity.
 - [file-oriented-enterprise-builder-workflows.md](file-oriented-enterprise-builder-workflows.md) records source-controlled artifacts, local validation, Git review, and publish workflows for enterprise builders.

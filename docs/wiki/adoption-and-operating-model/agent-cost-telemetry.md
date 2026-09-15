@@ -107,6 +107,10 @@ The September 13 raw sources add agent-window usage, TCO, high-percentile spend,
 
 Locally, activity, token spend, benchmark rank, and infrastructure use become useful only when joined to task class, accepted outcome, review burden, model route, fan-out, run duration, and owner-approved budget.
 
+The September 14 raw sources add explicit cost-quality routing evidence. The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) and [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) record user-visible auto-model tiers, consumption-based AI procurement, token or credit clauses, budget-overrun risk, and AI FinOps language. Locally, cost telemetry should record the chosen routing tier, whether the workflow optimized for latency, quality, or cost, the tokenizer or credit policy that priced the run, and the accepted outcome that justified the route.
+
+The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) also records dedicated VS Code Agents usage metrics. Locally, adoption telemetry should separate dedicated agent-window users, sessions, messages, per-user indicators, and reporting-role access before teams treat agent-window activity as productivity or cost evidence.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -178,6 +182,8 @@ Locally, activity, token spend, benchmark rank, and infrastructure use become us
 - Separate dedicated agent-window activity, editor-agent activity, and background-agent activity before treating usage as adoption or productivity evidence.
 - Track cost per resolved task, cost per accepted change, and model-specific failure mode alongside benchmark scores when choosing coding-agent routes.
 - Treat energy, infrastructure, and long-running swarm cost as whole-task telemetry tied to duration, prompt count, helper-agent fan-out, and accepted outcome.
+- Record cost-quality routing tiers, tokenizer or credit-policy assumptions, price-change clauses, portability terms, and audit rights when consumption-based AI contracts affect recurring agent workflows.
+- Separate dedicated agent-window usage metrics from editor-agent and background-agent activity before using adoption telemetry in budget or productivity decisions.
 
 ## Authoritative Sources
 
@@ -189,6 +195,8 @@ Locally, activity, token spend, benchmark rank, and infrastructure use become us
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)

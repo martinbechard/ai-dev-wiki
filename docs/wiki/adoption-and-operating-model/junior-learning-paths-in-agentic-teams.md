@@ -25,6 +25,22 @@ The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai
 
 The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds developer-experience evidence that agent-heavy coding can fragment flow into supervision and review tasks. The local learning-path rule is to preserve collaborative design, debugging, test writing, and reviewer judgment practice so junior developers are not left only approving generated code they did not learn to reason about.
 
+The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) adds professional AI-agent curriculum evidence. A training path is useful locally when it asks working professionals to build one production-style agent application while covering:
+
+- Tool use.
+- RAG.
+- Memory.
+- Orchestration.
+- Multi-agent systems.
+- Evaluation.
+- Observability.
+- Guardrails.
+- Deployment.
+- Demos and presentations.
+- Feedback.
+
+That shape treats agent capability as supervised practice across the full delivery loop, not as isolated prompt use.
+
 ## Practice Boundaries
 
 - Protect junior practice paths while using senior-led pods for high-leverage execution.
@@ -36,6 +52,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Preserve junior debugging, simple-feature, review, and correction practice deliberately when agents absorb the easiest implementation tasks.
 - Use training events to practice repository evidence, codebase-health review, verification explanation, and supervised handoff rather than only demo delivery.
 - Teach critical diff reading, debugging, test design, and system-design explanation as core junior skills for directing and validating generated work.
+- Teach agent application delivery as a full loop that includes tool use, retrieval, memory, orchestration, evaluation, observability, guardrails, deployment, presentation, and feedback.
 
 ## Authoritative Sources
 
@@ -46,6 +63,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - [July 25 leaf update watch source](../../../raw/processed/2026-07-25/ai-dev-wiki-leaf-update-watch-2026-07-25T210250-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
+- [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 
 ## Related Code
 
