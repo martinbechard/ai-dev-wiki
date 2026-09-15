@@ -1,0 +1,300 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-15T01:02:44Z",
+  "run_timestamp_local": "2026-09-14T210244-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-08T01:02:44Z",
+    "end_utc": "2026-09-15T01:02:44Z",
+    "rule": "Only include sources visibly published or updated within this inclusive seven-day run window; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+  ],
+  "selected_leaf_count": 15,
+  "source_urls_checked": [
+    "https://deepeval.com/blog/top-5-llm-evaluation-frameworks",
+    "https://github.blog/ai-and-ml/generative-ai/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+    "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+    "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+    "https://indianexpress.com/article/education/iit-hyderabad-introduces-applied-ai-professional-certification-programme-10873647/",
+    "https://mem0.ai/blog/how-memory-works-in-hermes-agent-(and-how-to-improve-it)",
+    "https://www.expresscomputer.in/news/red-hat-ai-3-5-adds-safety-observability-and-multi-tenancy-controls-for-enterprise-ai/138639/",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.techradar.com/pro/the-way-we-use-and-pay-for-ai-is-changing",
+    "https://www.vellum.ai/blog/best-ai-agent-observability-tools"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-auto-model-selection-tiers-2026-09-14",
+      "source_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "GitHub Copilot auto model selection added efficiency, balance, and intelligence tiers that tune cost, quality, and response time preferences while selecting from the same model pool per prompt. The rollout applies to VS Code, Copilot CLI, and the GitHub Copilot app, with usage charged according to the selected model.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "why_it_matters": "Local model routing policy now needs to record who chooses cost-versus-quality posture, how prompt-level routing is audited, and when workflow calibration should override cheaper automatic choices.",
+      "follow_up_note": "Consider whether hybrid infrastructure economics and workflow calibration should mention configurable cost-quality routing as a governance and acceptance input."
+    },
+    {
+      "id": "github-copilot-vscode-agent-usage-metrics-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "GitHub Copilot usage metrics now include GA aggregate and per-user fields for activity in the dedicated VS Code Agents window, including daily active users, session counts, total user messages, and per-user usage indicators. Access depends on enterprise or organization reporting roles and the Copilot usage metrics policy.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code Agents",
+        "Copilot usage metrics API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "why_it_matters": "Agent adoption and operating-model reviews can now distinguish dedicated-agent activity from editor-agent activity, which strengthens usage, cost, and team-shape telemetry.",
+      "follow_up_note": "Review whether local adoption leaves should separate agent-window adoption metrics from generic assistant usage."
+    },
+    {
+      "id": "atlassian-governed-agentic-development-workflows-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "Atlassian announced agentic development workflow capabilities across Jira, Confluence, and DX: Code Context for multi-repo grounding, Agentic loops in Jira to turn backlog work into PRs, Agent Context Controls, Standards, AI Review, DX for Agentic Development, and a Jira Agent Usage Dashboard.",
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Rovo",
+        "Teamwork Graph",
+        "Agent Context Controls",
+        "Jira Agent Usage Dashboard"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "Rovo"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "why_it_matters": "The local practice implication is that agent loops are becoming tied to systems of record, organizational context, standards, usage dashboards, and product-quality metrics rather than isolated prompt sessions.",
+      "follow_up_note": "Review context-router, portability, product-judgment, and operating-model pages for system-of-record agent-loop governance."
+    },
+    {
+      "id": "red-hat-ai-3-5-operational-controls-2026-09-10",
+      "source_url": "https://www.expresscomputer.in/news/red-hat-ai-3-5-adds-safety-observability-and-multi-tenancy-controls-for-enterprise-ai/138639/",
+      "visible_date": "On Sep 10, 2026",
+      "factual_summary": "Red Hat AI 3.5 added EvalHub safety benchmarking and compliance evidence, observability dashboards for inference and GPU utilization, per-user token consumption, fair-share GPU scheduling, priority routing, controlled model rollouts, AutoRAG, agent templates, Responses API support, built-in RAG, and NeMo Guardrails for malicious tool calls.",
+      "named_entities": [
+        "Red Hat AI 3.5",
+        "EvalHub",
+        "Garak",
+        "AutoRAG",
+        "Responses API",
+        "NeMo Guardrails",
+        "OpenShift Virtualization",
+        "vLLM Omni"
+      ],
+      "upstream_owned_entities": [
+        "Red Hat",
+        "OpenShift",
+        "NeMo Guardrails",
+        "vLLM"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "why_it_matters": "Enterprise AI infrastructure is combining safety evals, compliance evidence, per-user consumption, GPU allocation, RAG testing, and guardrails into shared platform controls that local gates can reference as practice signals.",
+      "follow_up_note": "Check whether LLM observability and hybrid economics should add per-user token showback plus multi-tenant GPU control as gate inputs."
+    },
+    {
+      "id": "vellum-agent-observability-failure-reconstruction-2026-09-08",
+      "source_url": "https://www.vellum.ai/blog/best-ai-agent-observability-tools",
+      "visible_date": "Sep 8, 2026",
+      "factual_summary": "Vellum compared AI agent observability tools by whether failed runs can be reconstructed across spans, tool arguments, retrieved context, prompt versions, routing decisions, live scoring, retention, cost attribution, and model fallback records.",
+      "named_entities": [
+        "Vellum",
+        "Respan",
+        "Langfuse",
+        "LangSmith",
+        "Braintrust",
+        "Arize Phoenix",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "Vellum",
+        "Langfuse",
+        "LangSmith",
+        "Braintrust",
+        "Arize Phoenix",
+        "OpenTelemetry"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "why_it_matters": "The local observability gate should keep judging traces by failure reconstruction depth, routing visibility, live evaluation hooks, retention windows, and cost attribution instead of by dashboard presence alone.",
+      "follow_up_note": "Review LLM observability gates for prompt-version, routing-decision, and retention-window acceptance criteria."
+    },
+    {
+      "id": "iit-hyderabad-applied-ai-agent-training-2026-09-12",
+      "source_url": "https://indianexpress.com/article/education/iit-hyderabad-introduces-applied-ai-professional-certification-programme-10873647/",
+      "visible_date": "Updated: Sep 12, 2026 10:44 AM IST",
+      "factual_summary": "IIT Hyderabad launched a four-week Applied AI Professional Certification Programme where working professionals build one production-style AI agent application while covering tool use, RAG, memory, orchestration, multi-agent systems, evaluation, observability, guardrails, deployment, demos, presentations, and feedback.",
+      "named_entities": [
+        "IIT Hyderabad",
+        "Applied AI Professional Certification Programme",
+        "RAG"
+      ],
+      "upstream_owned_entities": [
+        "IIT Hyderabad"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md"
+      ],
+      "why_it_matters": "A public training program treats agent development as an integrated build-evaluate-operate loop, reinforcing local learning paths that pair hands-on construction with evaluation, guardrails, deployment, and feedback.",
+      "follow_up_note": "Review junior learning and runbook pages for production-style agent practice as a training requirement."
+    },
+    {
+      "id": "mem0-hermes-memory-snapshot-and-session-search-2026-09-14",
+      "source_url": "https://mem0.ai/blog/how-memory-works-in-hermes-agent-(and-how-to-improve-it)",
+      "visible_date": "Sep 14, 2026",
+      "factual_summary": "Mem0 described Hermes Agent memory as two small filesystem files injected into the system prompt at session start, frozen during the session to preserve prompt caching, with SQLite full-text session search for larger history. The article contrasts that with external memory for multi-project, multi-user, cross-machine, semantic-search, and background extraction use cases.",
+      "named_entities": [
+        "Mem0",
+        "Hermes Agent",
+        "SQLite",
+        "FTS5"
+      ],
+      "upstream_owned_entities": [
+        "Mem0",
+        "Hermes Agent"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "why_it_matters": "The local context architecture implication is a concrete split between always-in-context curated memory, session-history retrieval, provider-backed semantic memory, cache stability, portability, and multi-user scoping.",
+      "follow_up_note": "Review context memory leaves for frozen prompt snapshots, session-search separation, and provider-backed memory portability boundaries."
+    },
+    {
+      "id": "techradar-ai-consumption-procurement-shift-2026-09-08",
+      "source_url": "https://www.techradar.com/pro/the-way-we-use-and-pay-for-ai-is-changing",
+      "visible_date": "Published 8 September 2026",
+      "factual_summary": "TechRadar argued that AI procurement is shifting from flat subscriptions to metered consumption, citing agentic usage credit pools, token-based AI credits, tokenizer changes, budget overruns, smart-routing needs, audit rights, tokenizer-stability clauses, price-change notice provisions, portability terms, and AI FinOps.",
+      "named_entities": [
+        "TechRadar",
+        "Anthropic",
+        "GitHub Copilot",
+        "Salesforce",
+        "Microsoft",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "GitHub Copilot",
+        "Salesforce",
+        "Microsoft",
+        "OpenAI"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "why_it_matters": "The downstream practice signal is to treat AI cost governance as metered infrastructure with auditability, router policy, contract protections, and outcome-based spending review.",
+      "follow_up_note": "Consider adding procurement-contract and tokenizer-stability checks to hybrid economics and portability boundaries."
+    }
+  ],
+  "qualifying_update_count": 8,
+  "excluded_candidates": [
+    {
+      "id": "deepeval-framework-comparison-2026-09-02",
+      "source_url": "https://deepeval.com/blog/top-5-llm-evaluation-frameworks",
+      "visible_date": "2 Sept 2026",
+      "exclusion_reason": "Visible publication date is before the lower bound of the 2026-09-08T01:02:44Z..2026-09-15T01:02:44Z window.",
+      "named_entities": [
+        "DeepEval",
+        "Promptfoo",
+        "Ragas",
+        "Arize Phoenix",
+        "TruLens"
+      ]
+    },
+    {
+      "id": "github-cost-efficient-ai-coding-2026-09-02",
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+      "visible_date": "September 2, 2026",
+      "exclusion_reason": "Visible publication date is before the lower bound of the current strict seven-day window.",
+      "named_entities": [
+        "GitHub Copilot",
+        "HydraFusion"
+      ]
+    }
+  ],
+  "excluded_candidate_count": 2,
+  "federation_notes": {
+    "upstream_owned_scopes": "Broad product, company, model, framework, protocol, and tool background remains upstream-owned in the federated AI wiki. This artifact records only downstream practice implications for AI-assisted development workflows, context architecture, operating model, verification, and governance.",
+    "local_scope": "Raw-only watch artifact; docs/wiki pages were not edited."
+  },
+  "follow_up_notes": [
+    "Review raw artifact for downstream practice implications before ingesting into durable wiki leaves.",
+    "Do not move this artifact to raw/processed until independent project-wiki-topic verification returns VERDICT: GOOD during ingest."
+  ]
+}
