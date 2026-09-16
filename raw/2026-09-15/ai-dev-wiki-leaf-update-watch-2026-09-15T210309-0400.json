@@ -1,0 +1,302 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-16T01:03:09Z",
+  "run_timestamp_local": "2026-09-15T21:03:09-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-09T01:03:09Z",
+    "end_utc": "2026-09-16T01:03:09Z",
+    "rule": "Only public sources with direct visible publication or update dates inside this window qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 98,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions/",
+    "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+    "https://github.blog/changelog/2026-09-11-add-vs-code-agents-to-copilot-usage-metrics/",
+    "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+    "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+    "https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/",
+    "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+    "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+    "https://www.cdata.com/blog/ai-agent-data-governance",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.itpro.com/technology/artificial-intelligence/why-agentic-ai-requires-a-new-approach-to-enterprise-software-testing",
+    "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+    "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+    "https://www.warp.dev/articles/best-terminal-for-ai-coding-agents"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-custom-property-suggestions-2026-09-15",
+      "source_url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions/",
+      "visible_date": "September 15, 2026",
+      "factual_summary": "GitHub Copilot entered public preview for suggesting allowed values while organization or enterprise admins create repository custom properties. The same announcement says custom properties scope repository rulesets and that enterprise and organization owners can govern the feature through a policy.",
+      "why_it_matters": "This is a direct governance and evidence-package update: repository metadata taxonomies become partly AI-assisted, but still need policy control, review, and consistency checks before they drive rulesets.",
+      "leaf_implications": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Business",
+        "Copilot Enterprise",
+        "repository custom properties",
+        "rulesets"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review whether governance evidence pages should mention AI-suggested repository metadata as draftable but policy-owned evidence."
+    },
+    {
+      "id": "github-copilot-auto-model-selection-tiers-2026-09-14",
+      "source_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+      "visible_date": "September 14, 2026",
+      "factual_summary": "GitHub Copilot auto model selection added efficiency, balance, and intelligence tiers that tune cost, quality, and response-time tradeoffs per prompt. GitHub says the rollout applies to Visual Studio Code, Copilot CLI, and the GitHub Copilot app, with usage billed according to the selected model.",
+      "why_it_matters": "This strengthens local guidance that teams should decide workflow and control posture before model choice, because model selection is becoming an operating-policy and cost telemetry control rather than a one-time product choice.",
+      "leaf_implications": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Copilot CLI",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review tier conventions and terminal-agent orchestration pages for model-tier policy and cost/quality routing language."
+    },
+    {
+      "id": "github-copilot-code-review-agent-rereview-2026-09-11",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026",
+      "factual_summary": "GitHub Copilot code review now auto-resolves addressed comments on rereview, suggests commit messages for accepted fixes, uses broader shell tooling behind an agent firewall, and uses an ensemble of agents in Lite reviews. GitHub reported experiment results with more addressed high-, medium-, and low-severity comments and lower review cost.",
+      "why_it_matters": "This is a concrete pre-PR and AI review workflow update: agent review systems are adding validation tools and ensemble review behavior, but local practice should still separate review evidence from independent acceptance.",
+      "leaf_implications": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "Copilot SDK",
+        "Lite reviews"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review pre-PR pages for agent-rereview evidence boundaries and ensemble-review caveats."
+    },
+    {
+      "id": "github-copilot-managed-agent-permissions-2026-09-09",
+      "source_url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "visible_date": "September 9, 2026",
+      "factual_summary": "GitHub made centrally managed Copilot agent-operation permissions generally available across the Copilot app, Copilot CLI, and Visual Studio Code Agent Host sessions. Admins can block, require approval for, or allow shell commands, file reads and edits, and network domains; managed restrictions cannot be weakened by user or workspace settings.",
+      "why_it_matters": "This directly affects platform-native mutation, terminal-agent fleet operations, and commit-level governance because enterprise policy can now override local saved approvals and workspace auto-approval habits.",
+      "leaf_implications": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "Copilot CLI",
+        "Visual Studio Code",
+        "Agent Host"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Review mutation and terminal-agent pages for centrally managed approval policy precedence."
+    },
+    {
+      "id": "openai-chatgpt-work-codex-deep-research-and-worktrees-2026-09-10",
+      "source_url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+      "visible_date": "September 10, 2026",
+      "factual_summary": "OpenAI Enterprise/Edu release notes list Deep Research in Work and Codex, Codex CLI 0.154.0 experimental separate Git worktree support, and a Data plugin for connected business-data analysis. The same date range includes workspace permission notes for deep research and connected-source access.",
+      "why_it_matters": "This affects deep-research, delegated handoff, terminal workflow, and batch-change leaves because long-running research and coding tasks are becoming workspace-governed, connector-backed, and worktree-aware.",
+      "leaf_implications": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Work",
+        "Codex",
+        "Deep Research",
+        "Codex CLI",
+        "Data plugin",
+        "Git worktrees"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Codex"
+      ],
+      "follow_up_note": "Review whether handoff and deep-research pages should distinguish workspace permissions, connected-source permissions, and Git worktree isolation."
+    },
+    {
+      "id": "atlassian-governed-agentic-sdlc-workflows-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "ITPro reported Atlassian updates for governed agentic development workflows, including Code Context for multi-repository grounding, agentic loops in Jira that convert backlog items into pull requests, Standards for repository coding guardrails, AI Review, DX measurement, tool and MCP tracking, and a Jira Agent Usage Dashboard.",
+      "why_it_matters": "This supports local workflow leaves that frame agentic development as system-of-record orchestration rather than isolated prompts, with governance and measurement tied to planning and delivery systems.",
+      "leaf_implications": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Code Context",
+        "Teamwork Graph",
+        "Rovo",
+        "Jira Coding Agent",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "MCP"
+      ],
+      "follow_up_note": "Review event-triggered workflow and evidence-package pages for system-of-record agent loops, standards mapping, and usage dashboards."
+    },
+    {
+      "id": "itpro-agentic-ai-testing-governance-gap-2026-09-11",
+      "source_url": "https://www.itpro.com/technology/artificial-intelligence/why-agentic-ai-requires-a-new-approach-to-enterprise-software-testing",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "ITPro argued that agentic AI changes enterprise software testing because autonomous systems continuously influence business outcomes rather than only executing predictable releases. The article cites research indicating 83% of organizations trust agentic AI release decisions, but only 35% feel prepared to govern agents and autonomous workflows at scale.",
+      "why_it_matters": "This reinforces verification-loop and trajectory-evaluation leaves: tests must address variable autonomous behavior, governance readiness, and business-level software trust rather than only release validation.",
+      "leaf_implications": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md"
+      ],
+      "named_entities": [
+        "ITPro",
+        "Tricentis",
+        "SAP",
+        "agentic AI"
+      ],
+      "upstream_owned_entities": [
+        "SAP"
+      ],
+      "follow_up_note": "Review verification pages for governance-readiness language around autonomous workflow testing."
+    },
+    {
+      "id": "harness-agent-security-verification-gap-2026-09-11",
+      "source_url": "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+      "visible_date": "Published 11 September 2026",
+      "factual_summary": "ITPro reported Harness analysis that 87% of engineering teams experienced an agent-related security event in the prior year; 77% said they had a complete inventory of agents, MCP servers, and LLMs, but only 44% could verify it. The report also says only 19% had gates to stop production-impacting failures and about one-third had a kill switch.",
+      "why_it_matters": "This gives governance and verification pages current evidence for inventory, MCP/tool visibility, gating, and kill-switch controls as local operating concerns.",
+      "leaf_implications": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md"
+      ],
+      "named_entities": [
+        "Harness",
+        "ITPro",
+        "MCP",
+        "LLM"
+      ],
+      "upstream_owned_entities": [
+        "MCP"
+      ],
+      "follow_up_note": "Review governance pages for verified inventory, gates, and kill-switch evidence requirements."
+    },
+    {
+      "id": "techradar-independent-ai-qa-assurance-2026-09-10",
+      "source_url": "https://www.techradar.com/pro/ai-cant-mark-its-own-homework",
+      "visible_date": "Published 10 September 2026",
+      "factual_summary": "TechRadar published an opinion piece arguing that when AI creates code and checks the same code, organizations risk closed-loop confidence and shared blind spots. It recommends independent, repeatable, auditable assurance, including visual validation and retained evidence for passes and failures.",
+      "why_it_matters": "This directly supports the local pre-PR independent review and verification-loop pages: AI-assisted QA can propose checks, but acceptance evidence needs independent and deterministic controls.",
+      "leaf_implications": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "T-Plan",
+        "AI-assisted development",
+        "visual validation"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "Review pre-PR and verification-loop pages for closed-loop review caveats and auditable visual assurance."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.cdata.com/blog/ai-agent-data-governance",
+      "visible_date": "September 3, 2026",
+      "reason": "Outside strict seven-day window for this run.",
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ]
+    },
+    {
+      "source_url": "https://www.warp.dev/articles/best-terminal-for-ai-coding-agents",
+      "visible_date": "September 4, 2026",
+      "reason": "Outside strict seven-day window for this run.",
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ]
+    }
+  ],
+  "federation_routing_notes": [
+    "Broad product and vendor background for GitHub Copilot, OpenAI, Codex, Atlassian, Jira, Warp, and MCP remains upstream-owned by the broader AI wiki.",
+    "This artifact keeps only downstream AI-assisted-development practice implications: workflow orchestration, governance evidence, approval boundaries, verification loops, terminal fleet operation, and data-access controls."
+  ],
+  "blockers": []
+}
