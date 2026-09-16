@@ -60,6 +60,8 @@ Locally, delegated authority should be reviewed at the identity edge before the 
 
 The September 8 raw sources add attack-surface, local-runtime, secrets, and policy-standard evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records zero-starting-privilege runtimes, continuous enforcement, OS-level containment, runtime secret delivery, action verification, tamper-proof logs, machine-readable inventories, and agent visibility as delegated-authority controls. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) reinforces the same local rule from enterprise-agent risk reporting: teams need an inventory of agent identities, reachable tools, approved systems, auditable action traces, and controls before broad enterprise access is granted.
 
+The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds an agent-authentication taxonomy. Local delegated-authority records should distinguish delegated user authority, workload identity, registration protocols, and first-class agent principals with accountable human metadata before tools, tokens, or MCP-mediated actions are granted.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -98,9 +100,12 @@ The September 8 raw sources add attack-surface, local-runtime, secrets, and poli
 - Record who an agent represents, what mandate constrains it, who remains responsible, and which registration or authorization record links the agent to a natural person or accountable organization before it acts across public or business systems.
 - Treat zero-starting-privilege runtime identity, containment, secret delivery, action verification, tamper-evident logs, and machine-readable inventory as delegated-authority evidence for continuous or grouped agents.
 - Inventory reachable tools and approved systems before granting broad enterprise access, because agents are both actors to govern and attack surfaces to monitor.
+- Distinguish delegated user authority, workload identity, registration flow, and first-class agent principal identity before issuing tokens or granting tool access.
+- Preserve accountable human metadata for agent principals so audit and revocation do not collapse into anonymous service-account ownership.
 
 ## Authoritative Sources
 
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -156,6 +161,7 @@ The September 8 raw sources add attack-surface, local-runtime, secrets, and poli
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.
 - Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.
 - Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.
 - Maintained on 2026-07-23 with discoverable-agent, human-owner, brokered-access, and no-long-lived-secret identity guidance.

@@ -52,6 +52,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 Those records let reviewer and release decisions explain why an agent run failed or escalated.
 
+The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds request-level server-health evidence. Observability gates for deployed agent services should connect model and tool traces to ordinary service signals such as traffic, status trends, p95 latency, endpoint hot spots, environment separation, and ranked telemetry hypotheses before a prompt, tool, or deployment change is promoted.
+
 ## Practice Boundaries
 
 - Do not use broad vendor comparison tables as local tool recommendations without verifying the current product, pricing, and data-handling state.
@@ -65,9 +67,11 @@ Those records let reviewer and release decisions explain why an agent run failed
 - Turn agent near misses, purpose deviations, repository/tool trust failures, and incident evidence into regression cases or rollback criteria when recurring workflows could repeat the behavior.
 - Evaluate agent behavior against declared purpose, authorized systems, expected tool-call patterns, approval evidence, and remediation outcomes, not only against aggregate success metrics.
 - Preserve failed-run spans, tool arguments, retrieved context, prompt versions, routing decisions, live scoring, retention, cost attribution, and fallback records before observability evidence is used as a release or rollback gate.
+- Connect request-level health, latency, endpoint traffic, environment scope, and topology-linked hypotheses to eval or release gates when agent services are deployed.
 
 ## Authoritative Sources
 
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [Open-source LLM observability tools clipping](../../../raw/processed/7-best-free-open-source-llm-observability-tools.md)
@@ -108,6 +112,7 @@ Those records let reviewer and release decisions explain why an agent run failed
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with request-level service-health, environment, p95 latency, endpoint-hotspot, and ranked-hypothesis gate evidence.
 - Maintained on 2026-08-29 with running-agent discovery, action-order, approval, cost, latency, trace, and remediation observability gates.
 - Created on 2026-08-07 from the observability and evaluation clipping set plus the August 7 collector's MCP, skill-eval, copilot-governance, and team-workflow signals.
 - Maintained on 2026-08-08 with autonomous-agent security monitoring, kill-switch, context-integrity, first-party feedback, and online-validation gates.

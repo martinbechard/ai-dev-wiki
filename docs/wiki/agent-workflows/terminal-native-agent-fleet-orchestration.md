@@ -28,6 +28,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support making fleet controls visible before parallel workers coordinate.
 
+The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) adds model-tier routing and enterprise-managed agent-operation permissions across app, CLI, and editor-hosted sessions. Fleet orchestration should record which model-tier policy, command/file/network policy, and cost-quality route applied to each worker before comparing results across parallel agents.
+
 ## Practice Boundaries
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
@@ -43,6 +45,7 @@ The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidenc
 - Record whether side effects run in the local checkout, managed worktree, cloud sandbox, or customer-controlled execution worker before comparing fleet results.
 - Preserve fleet policy version, opt-out state, tool restrictions, and session visibility before parallel agent workers coordinate.
 - Record audit-chain integrity, conductor owner, peer-steering messages, and sandbox assignment for fleet runs that fan out or execute remotely.
+- Record model-tier route, usage-billing basis, and central command/file/network policy for each fleet worker when those settings differ by surface.
 
 ## Authoritative Sources
 
@@ -64,6 +67,7 @@ The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidenc
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 
 ## Related Code
 
@@ -90,6 +94,7 @@ The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidenc
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with model-tier routing and managed command, file, and network policy evidence for app, CLI, and editor-hosted workers.
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.
 - Maintained on 2026-08-31 with execution-location, isolation, approval, review, scheduling, monitoring, and coordination-evidence criteria for coding-agent manager layers.

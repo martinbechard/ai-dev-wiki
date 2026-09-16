@@ -96,6 +96,8 @@ The September 6 raw sources add concurrent-agent, context-preservation, and flee
 
 The September 7 raw sources add human-loop and concurrent-work trajectory evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records benchmark concerns about steering, verification, and adaptation inside live workflows, while the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records concurrent sessions, attention state, and recovery receipts. Locally, trajectory evaluation should score when humans steer, when the agent recovers, which lane held attention, and whether adaptation improved the final outcome.
 
+The September 15-16 raw sources add autonomous-testing, independent-assurance, and technical-debt audit evidence. The [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) records governance-readiness gaps for agentic testing and independent QA caveats, while the [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) records specialized multi-agent technical-debt audits. Locally, trajectory evaluation should score whether autonomous workflows preserve independent assurance, visual or runtime validation, retained pass/fail evidence, and role-specific findings for architecture, security, performance, testing, and code quality.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -133,9 +135,12 @@ The September 7 raw sources add human-loop and concurrent-work trajectory eviden
 - Score monitor abstention, targeted nudges, safe-output counts, grader pass rates, blocked-network observations, cooldown behavior, and stop-after behavior when evaluating supervisory agents.
 - Preserve concurrent-agent identity, async-question state, recovery path, and peer-steering messages when evaluating long-running or multi-agent trajectories.
 - Record fleet-policy decisions, audit integrity, and sandbox-control evidence when parallel runs coordinate or execute remotely.
+- Score independent assurance, visual validation, retained pass/fail artifacts, governance readiness, production-impact gates, kill-switch availability, and role-specific technical-debt findings when autonomous agents influence release decisions.
 
 ## Authoritative Sources
 
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -203,6 +208,7 @@ The September 7 raw sources add human-loop and concurrent-work trajectory eviden
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with independent-assurance, visual-validation, governance-readiness, production-gate, kill-switch, and specialized technical-debt audit evidence.
 - Maintained on 2026-09-07 with human-steering, recovery-behavior, attention-state, concurrent-lane, and adaptation-quality trajectory evidence.
 - Maintained on 2026-09-01 with supervisory-monitor, abstention, targeted-nudge, safe-output, grader-pass-rate, blocked-network, cooldown, and stop-after evaluation evidence.
 - Maintained on 2026-09-06 with concurrent-agent, async-question, recovery-path, peer-steering, fleet-policy, audit-integrity, and sandbox-control trajectory evidence.

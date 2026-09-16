@@ -21,6 +21,8 @@ The August 18 raw sources add enterprise-managed convention signals. The [leaf u
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds prompt-space security-skill evidence. Security-focused assistant conventions can be injected at session start, but they should be adopted as tier rules only when their scope, token budget, benign-task refusal rate, attack-class coverage, and evaluation evidence are explicit. Broad SkillShield, RedCode, and model-background coverage belongs upstream; locally, the adoption question is whether a tier's durable instruction layer improves safety without hiding overbroad refusals or stale security assumptions.
 
+The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) adds model-routing tiers as an assistant convention signal. When a platform exposes efficiency, balance, and intelligence routes, local conventions should state which work tiers may use each route, which tasks must stay pinned for reproducibility, and how billing or latency tradeoffs are reviewed.
+
 ## Practice Boundaries
 
 - Create a tier convention only when the work area has different sources, tools, approvals, or verification checks.
@@ -32,6 +34,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Include allowed assistant surfaces, plugin/MCP allowlists, telemetry routing, and approval-bypass policy in tier conventions when those controls differ by work boundary.
 - Use adoption visibility and access-control evidence to decide when a tier can move from advisory assistance to delegated execution.
 - Adopt security-focused assistant conventions only with explicit scope, token budget, attack-class coverage, benign-task refusal checks, and owner review cadence.
+- Define which work tiers may use automatic model routing and which must pin a route because cost, latency, reproducibility, or review depth matters.
 
 ## Authoritative Sources
 
@@ -41,6 +44,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
 - [August 18 leaf update watch source](../../../raw/processed/2026-08-18/ai-dev-wiki-leaf-update-watch-2026-08-18T210146-0400.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 
 ## Related Code
 
@@ -67,6 +71,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with automatic model-routing tier conventions for cost, latency, reproducibility, and review-depth decisions.
 - Created on 2026-06-23 to separate tier-specific assistant behavior from the broader operating-agreement map while preserving the missing local taxonomy.
 - Maintained on 2026-07-09 with staged responsibility conventions for prompting, retrieval, MCP, RAG, agents, benchmarks, and guardrails.
 - Maintained on 2026-08-18 with managed plugin, MCP allowlist, telemetry, permission-mode, approval-bypass, and access-control convention signals.

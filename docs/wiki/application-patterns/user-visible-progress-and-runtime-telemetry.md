@@ -74,6 +74,8 @@ The September 3 raw sources add automation, audit, and cost-control telemetry ev
 
 Locally, telemetry should join progress, policy, memory, execution-boundary, and spend state before authority, budget, or sandbox limits are exceeded.
 
+The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds request-level server health and telemetry-correlation evidence. Agent application telemetry should expose traffic, latency percentiles, status over time, endpoint hot spots, environment separation, and ranked hypotheses across metrics, logs, traces, and topology so repair agents receive evidence packages rather than isolated log snippets.
+
 ## Practice Boundaries
 
 - Stream progress when users need visible state during multi-step work.
@@ -112,9 +114,12 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 - Use common trace vocabulary for model, retrieval, tool, gateway, human approval, cost, latency, and eval events so runtime evidence can be reused in trajectory-level evaluation.
 - Expose unread updates, waiting-for-response state, queued prompt state, live working time, durable task identifiers, safe-output counts, grader pass rates, and blocked-network observations for long-running tasks.
 - Expose automation phase, structured failure state, activity export location, pre-tool-call classifier decisions, memory-recall provenance, outbound API meter state, token or request envelope usage, and spend-triggered alerts when autonomous work can continue.
+- Expose request-level service health, endpoint traffic, latency percentiles, environment scope, status trends, and topology-linked hypotheses when an agent service needs diagnosis or repair.
+- Package metrics, logs, traces, topology, and ranked root-cause hypotheses as handoff evidence rather than sending a repair agent isolated snippets.
 
 ## Authoritative Sources
 
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -179,6 +184,7 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with request-level service health, environment-separated telemetry, latency percentile, endpoint, and ranked-hypothesis evidence.
 - Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.
 - Maintained on 2026-09-01 with running-task, unread-update, awaiting-response, queued-prompt, working-time, thread-identifier, safe-output, and grader telemetry.
 - Maintained on 2026-09-03 with automation-phase, activity-export, pre-tool-classifier, memory-provenance, execution-log, outbound-meter, budget-envelope, and spend-alert telemetry.

@@ -27,6 +27,8 @@ The September 13 raw sources add managed-permission, sandbox-diagnostic, non-hum
 
 Locally, these edges need centrally managed deny/approval/allow policy plus diagnostics that prove the executed edge matched the approved policy.
 
+The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) reinforces central policy precedence for shell commands, file reads and edits, and network domains across app, CLI, and editor-hosted agent sessions. Locally, saved approvals and workspace defaults are weaker than enterprise-managed execution policy and should be reviewed as override attempts when they conflict.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -41,6 +43,7 @@ Locally, these edges need centrally managed deny/approval/allow policy plus diag
 - Require runtime-isolation proof, short-lived credential scope, and repository binding before high-impact agent edges are enabled.
 - Add capability-tier review, incident escalation, and revocation evidence for cyber-capable or production-adjacent agent edges.
 - Treat enterprise-managed command, file, and network policy as higher authority than task prompts, workspace settings, auto-approval, or saved approvals.
+- Record whether a command, file, or network edge was blocked, approval-gated, or allowed by enterprise policy before treating a local agent run as authorized.
 - Treat first-open repository inspection by a command-capable local agent as an execution-risk event when repository config, hooks, editor tasks, or generated outputs can run code.
 - Prefer short-lived, narrow execution credentials and monitored disposable environments when local CLI agents would inherit broad laptop sessions, keys, or authenticated services.
 
@@ -53,6 +56,7 @@ Locally, these edges need centrally managed deny/approval/allow policy plus diag
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
@@ -85,6 +89,7 @@ Locally, these edges need centrally managed deny/approval/allow policy plus diag
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with app, CLI, and editor-hosted managed-permission precedence evidence.
 - Maintained on 2026-09-13 with managed-permission, sandbox-diagnostic, local-CLI, repository-first-open, short-lived-credential, and monitored-runtime edge evidence.
 - Maintained on 2026-08-29 with cross-surface, hardware, physical-tool, capability-metadata, safety-eval, and oversight execution-edge evidence.
 - Maintained on 2026-09-06 with runtime-isolation, short-lived-credential, repository-binding, cyber-capability, incident-escalation, and revocation evidence.

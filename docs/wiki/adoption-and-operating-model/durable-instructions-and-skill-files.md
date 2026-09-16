@@ -52,6 +52,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) adds workflow-role evidence for skills. Skills should have narrow jobs such as behavior clarification, domain modeling, simplification, design-system guidance, complexity review, and handoff preservation, and they should be composed around workflow phases rather than treated as generic prompt boosts.
 
+The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds onboarding evidence for durable instruction files. Coding standards, architecture patterns, ADR rationale, and context files are useful durable guidance when they stay current and scoped; large documentation dumps and stale conventions should be rejected or converted into reviewed skills, wiki leaves, or deterministic checks.
+
 ## Practice Boundaries
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
@@ -83,9 +85,11 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 - Keep a registry of sanctioned skills, loading agents, and directed tool calls when skill files can affect repository or connected-system behavior.
 - Treat team-published custom agents, MCP registrations, skills, plugins, and canvases as versioned instruction surfaces with owner, permission, validation, and rollback evidence.
 - Assign each durable skill a specific workflow role, phase, expected inputs, and review point instead of using broad reusable prompts as undifferentiated coding boosts.
+- Keep onboarding guidance current, scoped, and rationale-bearing; do not promote stale documentation bundles into durable instruction files without owner review and verification.
 
 ## Authoritative Sources
 
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
@@ -138,6 +142,7 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with coding-agent onboarding, current standards, ADR rationale, context-file scope, and stale-documentation rejection evidence.
 - Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.
 - Maintained on 2026-06-23 to separate durable instruction placement from portable skill and runbook composition.

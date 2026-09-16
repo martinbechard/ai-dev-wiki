@@ -49,6 +49,8 @@ The August 17 raw sources add convention-capture, compression, and auditability 
 
 The September 2 raw sources add content-exclusion and session-branch evidence. The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json) records Copilot content exclusions in app and CLI agentic workflows plus side conversations, prompt timelines, transcript search, and external session continuation. The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) records desktop-agent workflows that can cross applications. Locally, context selection should preserve which paths were excluded, which conversation branch or timeline supplied context, and which external session state was resumed before an agent acts.
 
+The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds AI coding-agent onboarding guidance as context-selection evidence. Standards, architecture patterns, ADRs, and business vocabulary should enter context as concise current evidence, while stale documentation dumps and enforceable guardrails should stay outside the prompt unless a current source or deterministic check proves they apply.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -87,9 +89,11 @@ The September 2 raw sources add content-exclusion and session-branch evidence. T
 - Benchmark tool-heavy context strategies against representative workflows, including token shifts, sandbox boundaries, and failure modes, before replacing schema-in-context discovery with generated code execution.
 - Keep repository convention files, compressed tool outputs, persistent memory, local-session transcripts, and exact source originals separately labeled when they can affect audit, replay, security review, or cost analysis.
 - Preserve content-exclusion policy, excluded path evidence, conversation branch, prompt timeline, transcript-search result, and resumed external-session state when those surfaces decide what an agent sees.
+- Use concise standards, ADR rationale, current architecture patterns, and business vocabulary as selected context, while routing enforceable requirements to deterministic checks and rejecting stale documentation dumps.
 
 ## Authoritative Sources
 
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Context router and knowledge layers](context-router-and-knowledge-layers.md)
@@ -149,6 +153,7 @@ The September 2 raw sources add content-exclusion and session-branch evidence. T
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with selective coding-agent onboarding context, ADR rationale, current standards, business vocabulary, and stale-documentation rejection evidence.
 - Created on 2026-06-23 from source guidance on request context, token discipline, context windows, compaction, and evidence selection.
 - Maintained on 2026-06-23 with public context-engineering guidance framed as production infrastructure for multi-step agents.
 - Maintained on 2026-06-25 with proprietary-code bootstrapping guidance for baseline evals, concise instructions, reference examples, and current API evidence.

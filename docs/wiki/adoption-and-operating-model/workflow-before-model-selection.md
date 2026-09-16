@@ -159,9 +159,11 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - Compare coding-agent surfaces by task horizon, human-intervention rate, context fit, review load, and accepted outcomes before making access or model availability the selection criterion.
 - Check supported runtime surface, SDK stability, and cache behavior when a release note claims better agent compatibility.
 - Select model-routing tiers, batch-change tooling, and platform safety controls from the workflow's risk, scale, and evidence requirements rather than from product availability alone.
+- Treat efficiency, balance, and intelligence model tiers as workflow policy controls: decide cost, latency, quality, billing, and reproducibility expectations before allowing automatic routing to choose the model for each prompt.
 
 ## Authoritative Sources
 
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -253,6 +255,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with model-tier routing, cost-quality-latency, billing, and automatic-routing workflow evidence.
 - Maintained on 2026-09-07 with AI-first SDLC, build-versus-buy, model-policy, review-capacity, validation, and fallback routing evidence.
 - Maintained on 2026-09-05 with long-horizon model availability, multi-model orchestration, delegated-tool comparison, review-follow-up, CI repair, feature, flaky-test, and backlog-cleanup workflow criteria.
 - Maintained on 2026-09-06 with agent-adoption measurement, task-horizon, intervention-rate, SDK-surface, prompt-cache, context-fit, and tool-fit evidence.

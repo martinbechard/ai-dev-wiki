@@ -39,6 +39,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 
 The September 6 raw sources add merge, sandbox, and async-question handoff evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support handoff packets that preserve execution boundaries and unresolved human questions instead of relying on session memory.
 
+The September 15-16 raw sources add workspace-governed research, worktree isolation, deployment-diagnosis, and telemetry-hypothesis evidence. The [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) records workspace permissions, connected-source access, and separate Git worktree support for delegated research and coding. The [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) records deployment diagnosis summaries and ranked telemetry hypotheses as agent handoff artifacts. Locally, a handoff should carry the workspace, connected-source, worktree, deployment, and telemetry-evidence boundary that lets the receiving reviewer or agent continue without guessing from raw logs.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -60,6 +62,7 @@ The September 6 raw sources add merge, sandbox, and async-question handoff evide
 - Distinguish reusable task instructions from per-recipient app credentials, and require coordinator reconciliation, diff review, dependency ordering, and combined verification before accepting parallel delegated work.
 - Include excluded-content policy, active root, merge or conflict state, unanswered-question queue, and allowed continuation scope in delegated handoff packets.
 - Record sandbox owner and short-lived credential scope when delegated work executes outside the local checkout.
+- Include workspace permission, connected-source permission, Git worktree path, deploy identifier, environment, diagnosis summary, raw-log pointer, and ranked telemetry hypotheses when those artifacts explain the next repair step.
 
 ## Authoritative Sources
 
@@ -83,6 +86,8 @@ The September 6 raw sources add merge, sandbox, and async-question handoff evide
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
+- [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
+- [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 
 ## Related Code
 
@@ -112,6 +117,7 @@ The September 6 raw sources add merge, sandbox, and async-question handoff evide
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-15 with workspace-permission, connected-source, Git-worktree, deployment-diagnosis, and telemetry-hypothesis handoff evidence.
 - Created on 2026-06-23 from source-backed delegated coding, visible progress, and evidence-handoff guidance.
 - Maintained on 2026-06-25 with longer-horizon delegated-work handoff requirements.
 - Maintained on 2026-06-27 with handoffs as rehydration artifacts and remote-agent supervision evidence.
