@@ -1,0 +1,431 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-16T00:30:33Z",
+  "collector_scope": "Raw-only public-source collection for AI-assisted development practice updates. No docs/wiki pages or raw/processed files were updated.",
+  "cutoff_window": {
+    "start_utc": "2026-09-14T00:30:33Z",
+    "end_utc": "2026-09-16T00:30:33Z",
+    "date_rule": "Include only sources with a direct visible publication or update date within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "Practice-level implications for AI-assisted development workflows, governance, verification, context, adoption, permissions, auditability, and operating model.",
+    "handling_rule": "For upstream-owned entities, record the entity as upstream-owned and keep only the downstream practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Repository metadata suggestions become a governance assist",
+      "source_url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions/",
+      "source_type": "official changelog",
+      "visible_date": "September 15, 2026",
+      "factual_summary": "GitHub announced a public preview where Copilot suggests allowed values while enterprise or organization owners create repository custom property definitions. Custom properties can attach governance metadata to repositories and target rulesets; the feature includes a policy control for repository custom property suggestions.",
+      "why_it_matters_for_ai_assisted_development": "AI-assisted development governance depends on repository metadata that is consistent enough to drive rules, review requirements, and security policies. Suggested values move part of taxonomy creation into the admin workflow, while still requiring organization owners to decide whether suggestions fit local governance language.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "custom properties",
+        "rulesets"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise"
+      ],
+      "local_practice_implication": "Treat generated repository metadata suggestions as a starting point for governed taxonomy design, not as authority; keep human-owned policy language and review before applying rulesets across repository fleets.",
+      "follow_up_notes": "If ingested, route product details upstream and keep the downstream lens on metadata taxonomies for repository policy targeting."
+    },
+    {
+      "title": "Enterprise security configurations gain stronger enforcement",
+      "source_url": "https://github.blog/changelog/2026-09-15-enforce-github-advanced-security-configurations/",
+      "source_type": "official changelog",
+      "visible_date": "September 15, 2026",
+      "factual_summary": "GitHub announced that enterprise administrators can enforce GitHub Advanced Security configurations across organizations, preventing organization and repository administrators from overriding enterprise-level settings. The changelog describes enforcement levels for repository owners or both repository and organization owners.",
+      "why_it_matters_for_ai_assisted_development": "Agent-generated changes increase the need for centrally enforced security gates that local repositories cannot silently weaken. The update is practice evidence for separating enterprise security baselines from team-level convenience settings.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Advanced Security",
+        "security configurations",
+        "enterprise administrators"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Advanced Security"
+      ],
+      "local_practice_implication": "Record that AI-assisted repositories may need non-overridable security configuration baselines for scanning, secret blocking, and review gates when code generation increases change volume.",
+      "follow_up_notes": "Use as local governance evidence; avoid duplicating GitHub product coverage."
+    },
+    {
+      "title": "AI coding-agent onboarding guidance emphasizes selective context",
+      "source_url": "https://www.improving.com/thoughts/how-to-onboard-ai-coding-agent/",
+      "source_type": "consulting practice article",
+      "visible_date": "September 15, 2026",
+      "factual_summary": "Improving published guidance that AI coding agents need onboarding through coding standards, architecture patterns, ADRs, and context files. The article distinguishes context from guardrails and warns against dumping all documentation into context because stale or excessive material can increase cost and reproduce obsolete patterns.",
+      "why_it_matters_for_ai_assisted_development": "The article reinforces durable local practices already relevant to this wiki: agents need concise, high-signal instructions, rationale-bearing ADRs, structured context files, and deterministic guardrails rather than broad documentation dumps.",
+      "relevant_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Improving",
+        "Daniel Scheufler",
+        "AI coding agent",
+        "Architectural Decision Records",
+        "ADRs"
+      ],
+      "upstream_owned_entities": [
+        "Improving"
+      ],
+      "local_practice_implication": "Context files should prioritize current standards, architectural rationale, and business vocabulary while moving enforceable requirements into deterministic checks.",
+      "follow_up_notes": "Good candidate evidence for durable instructions, context selection, and guardrail boundary pages."
+    },
+    {
+      "title": "Agentic PR queues require evidence-based triage",
+      "source_url": "https://www.coderabbit.ai/blog/coderabbit-triage",
+      "source_type": "vendor practice blog",
+      "visible_date": "September 15, 2026",
+      "factual_summary": "CodeRabbit described a triage layer for pull-request queues where agent-created work can arrive faster than teams can review it. The post argues that review queues need priority, risk, ownership, effort, blocker, dependency, and evidence signals before a reviewer opens a PR, and that human judgment remains necessary for architectural and product decisions.",
+      "why_it_matters_for_ai_assisted_development": "This is practice-level evidence that the bottleneck in agentic software delivery shifts from code generation to deciding which generated changes deserve human attention and which review depth is appropriate.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "CodeRabbit Triage",
+        "Agentic Change Management",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "CodeRabbit Triage",
+        "Agentic Change Management"
+      ],
+      "local_practice_implication": "Local review workflows should model review capacity as a scarce resource and require visible evidence for priority, risk, reviewer assignment, and next action before accepting agent-generated PR volume.",
+      "follow_up_notes": "If ingested, anchor the product upstream and keep the local page focused on PR triage and review-capacity governance."
+    },
+    {
+      "title": "Deployment error diagnosis becomes an agent handoff artifact",
+      "source_url": "https://mastra.ai/blog/introducing-error-diagnostics-platform-cli",
+      "source_type": "vendor blog",
+      "visible_date": "Sep 15, 2026",
+      "factual_summary": "Mastra announced deployment error diagnosis in its platform and CLI. Failed deploys can be inspected by deploy ID, project, or environment; user errors receive explanations and recommendations that highlight problem code, and users can copy a Markdown diagnosis summary for a coding agent or downstream service.",
+      "why_it_matters_for_ai_assisted_development": "The update shows a concrete handoff pattern: runtime/build failures are summarized into structured, copyable evidence for an agent repair loop while raw logs remain available for inspection.",
+      "relevant_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Mastra",
+        "Mastra Platform",
+        "Mastra CLI",
+        "error diagnosis",
+        "deploy ID"
+      ],
+      "upstream_owned_entities": [
+        "Mastra",
+        "Mastra Platform",
+        "Mastra CLI"
+      ],
+      "local_practice_implication": "Repair loops should preserve machine-readable or Markdown evidence packages that summarize the failure, classify ownership, point to problem code, and retain access to raw logs for verifier review.",
+      "follow_up_notes": "Useful for pages about regression repair, runtime telemetry, and agent handoffs."
+    },
+    {
+      "title": "Agent observability adds request-level server health",
+      "source_url": "https://mastra.ai/blog/introducing-server-health-for-mastra-platform",
+      "source_type": "vendor blog",
+      "visible_date": "Sep 14, 2026",
+      "factual_summary": "Mastra announced a server-health request view for deployed Mastra servers. The view captures traffic, average and p95 duration, status over time, latency percentiles, high-traffic endpoints, and separates views by environment such as production and staging.",
+      "why_it_matters_for_ai_assisted_development": "Agent applications need ordinary production observability, not only model traces. Request-level health data gives teams a way to validate that agent services remain performant and reliable after prompt, tool, or deployment changes.",
+      "relevant_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Mastra",
+        "Mastra Platform",
+        "Observability",
+        "Datadog",
+        "Grafana",
+        "Sentry"
+      ],
+      "upstream_owned_entities": [
+        "Mastra",
+        "Mastra Platform",
+        "Datadog",
+        "Grafana",
+        "Sentry"
+      ],
+      "local_practice_implication": "Production agent harnesses should include request-level service health, environment separation, latency/error tracking, and endpoint-level visibility alongside model/tool traces.",
+      "follow_up_notes": "Pair with user-visible progress and runtime telemetry or agent harness observability pages if ingested."
+    },
+    {
+      "title": "Grab LLM-Kit analysis highlights shared agent plumbing",
+      "source_url": "https://www.infoq.com/news/2026/09/grab-agent-platform/",
+      "source_type": "technical news analysis",
+      "visible_date": "Sep 15, 2026",
+      "factual_summary": "InfoQ analyzed Grab's LLM-Kit, an internal framework reportedly standardizing more than 500 internal agent services. The analysis emphasizes shared scaffolding for agent loops, evaluation, tracing, secret handling, MCP tool-server connections, model gateway access, and production service templates, with the original Grab post noting that production wrapping once took far longer than the reasoning loop.",
+      "why_it_matters_for_ai_assisted_development": "The article is strong practice evidence that agent platform work concentrates in shared infrastructure: secrets, tracing, service discovery, eval endpoints, model gateways, remote tool discovery, and templates that prevent every team from solving the same safety and deployment problems.",
+      "relevant_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "InfoQ",
+        "Grab",
+        "LLM-Kit",
+        "FastAPI",
+        "LangGraph",
+        "OpenTelemetry",
+        "Vault",
+        "Model Context Protocol",
+        "MCP",
+        "GrabGPT Gateway",
+        "Amazon Bedrock AgentCore",
+        "Google Agent Runtime"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "Grab",
+        "LLM-Kit",
+        "FastAPI",
+        "LangGraph",
+        "OpenTelemetry",
+        "Vault",
+        "Model Context Protocol",
+        "Amazon Bedrock AgentCore",
+        "Google Agent Runtime"
+      ],
+      "local_practice_implication": "A durable local lens could describe agent platform templates as the way teams centralize non-negotiable plumbing while preserving local agent implementation ownership.",
+      "follow_up_notes": "Original Grab source is July 24, 2026 and outside this collector window; use the September 15 InfoQ analysis as the qualifying source and the Grab post as context only during ingest."
+    },
+    {
+      "title": "Automated RCA models telemetry correlation as evidence ranking",
+      "source_url": "https://www.infoq.com/news/2026/09/atlassian-automated-rca/",
+      "source_type": "technical news analysis",
+      "visible_date": "Sep 15, 2026",
+      "factual_summary": "InfoQ reported on Atlassian's automated root-cause analysis approach, which correlates metrics, logs, distributed traces, and service topology. The system detects anomalies, aligns them on a common timeline, maps them through a service dependency graph, and returns ranked hypotheses with supporting evidence.",
+      "why_it_matters_for_ai_assisted_development": "Even when not specific to coding agents, the pattern is directly useful for agent repair workflows: agents should receive ranked hypotheses grounded in telemetry evidence rather than isolated log snippets.",
+      "relevant_topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "InfoQ",
+        "Atlassian",
+        "Cloud Native Computing Foundation",
+        "OpenTelemetry",
+        "distributed traces"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "Atlassian",
+        "Cloud Native Computing Foundation",
+        "OpenTelemetry"
+      ],
+      "local_practice_implication": "Agent repair and incident-response workflows should package telemetry as ranked, evidence-backed hypotheses across metrics, logs, traces, and topology rather than relying on single-signal context.",
+      "follow_up_notes": "If ingested, keep this as a workflow/evidence pattern, not broad Atlassian or observability-product coverage."
+    },
+    {
+      "title": "Agent authentication comparison separates delegate and principal models",
+      "source_url": "https://www.agentmail.to/blog/ai-agent-authentication-platforms-compared-2026",
+      "source_type": "vendor comparison article",
+      "visible_date": "September 14, 2026 table date; related resource shown September 15, 2026",
+      "factual_summary": "AgentMail compared AI agent authentication platforms as of September 14, 2026. The article distinguishes delegated access, workload identity, registration protocols, and agent identity providers; it also contrasts agents acting as delegates for users with agents acting as principals with their own account identity and accountable human metadata.",
+      "why_it_matters_for_ai_assisted_development": "Agent tool access and MCP authorization increasingly depend on a clear identity model. The article is useful practice evidence for choosing whether a coding or workflow agent should borrow a user's authority, run as a workload identity, or authenticate as its own accountable principal.",
+      "relevant_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "AgentMail",
+        "AgentID",
+        "Auth0 for AI Agents",
+        "Descope Agentic Identity Hub",
+        "Stytch Connected Apps",
+        "Arcade",
+        "Microsoft Entra Agent ID",
+        "WorkOS auth.md",
+        "Google Cloud Agent Identity",
+        "OAuth",
+        "OIDC",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "AgentMail",
+        "AgentID",
+        "Auth0 for AI Agents",
+        "Descope Agentic Identity Hub",
+        "Stytch Connected Apps",
+        "Arcade",
+        "Microsoft Entra Agent ID",
+        "WorkOS auth.md",
+        "Google Cloud Agent Identity",
+        "OAuth",
+        "OIDC",
+        "MCP"
+      ],
+      "local_practice_implication": "Local governance should distinguish delegated user authority, workload identity, registration flow, and portable agent principal identity before granting tools, issuing tokens, or auditing agent actions.",
+      "follow_up_notes": "Disclosure says AgentID is built by AgentMail; use as taxonomy evidence and verify vendor-specific status before durable product claims."
+    },
+    {
+      "title": "Multi-agent technical-debt audits frame specialized review roles",
+      "source_url": "https://medium.com/syncfusion/multi-agent-ai-systems-a-smarter-way-to-detect-and-manage-technical-debt-a72f6352e7ce",
+      "source_type": "vendor/community article",
+      "visible_date": "Originally published September 15, 2026",
+      "factual_summary": "Syncfusion described using multi-agent AI systems for technical-debt detection and management. The article presents specialized analysis across architecture, security, performance, testing, and code quality, and frames repository-wide audits as a way to identify risks and prioritize improvements rather than relying only on periodic review.",
+      "why_it_matters_for_ai_assisted_development": "The article supports the local practice of separating reviewer roles by concern area and using repository-wide audits to decide which generated or accumulated changes need attention.",
+      "relevant_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Syncfusion",
+        "Syncfusion Code Studio",
+        "multi-agent AI systems",
+        "technical debt"
+      ],
+      "upstream_owned_entities": [
+        "Syncfusion",
+        "Syncfusion Code Studio"
+      ],
+      "local_practice_implication": "Repository-health review loops can assign specialized agent or reviewer roles for architecture, security, performance, testing, and code-quality concerns, while keeping prioritization and acceptance accountable to humans.",
+      "follow_up_notes": "Community/vendor source; use for practice framing, not as independent validation of product capability."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Visual Studio 2026 release notes",
+      "source_url": "https://learn.microsoft.com/",
+      "visible_date": "Released on September 15, 2026",
+      "reason": "Broad developer-tool release notes; potentially relevant Copilot features were not inspected as a distinct practice-level source within this run."
+    },
+    {
+      "title": "Top MCP server list for September 15, 2026",
+      "source_url": "https://mcpmarket.com/daily/top-mcp-server-list-september-15-2026",
+      "visible_date": "September 15, 2026",
+      "reason": "Upstream-owned MCP server catalog/listing; lacks local practice guidance beyond broad ecosystem discovery."
+    },
+    {
+      "title": "Best MCP Servers for Ad Platforms",
+      "source_url": "https://zernio.com/blog/mcp-for-ads",
+      "visible_date": "September 15, 2026",
+      "reason": "Domain-specific marketing/advertising MCP server roundup; broad MCP/server coverage belongs upstream and is outside AI-assisted development practice."
+    },
+    {
+      "title": "AI-Assisted Discovery Helps Microsoft Patch More Than 1,000 Vulnerabilities in a Month",
+      "source_url": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch/",
+      "visible_date": "Sep 15, 2026",
+      "reason": "Potentially relevant to security repair gates, but the inspected page did not expose enough article detail in this run to capture a precise local practice summary."
+    },
+    {
+      "title": "Cursor forum MCP bug reports",
+      "source_url": "https://forum.cursor.com/tag/mcp/47",
+      "visible_date": "September 14-15, 2026",
+      "reason": "Operational support/forum reports; useful for product troubleshooting but too product-specific and fragmented for this raw collector."
+    },
+    {
+      "title": "Netskope Agent Action Control",
+      "source_url": "https://www.netskope.com/",
+      "visible_date": "September 15, 2026 visible in search result",
+      "reason": "Search result suggested relevance, but the accessible page content did not expose the article body or stable article URL during this run."
+    },
+    {
+      "title": "Code.live AI code review article",
+      "source_url": "https://www.code.live/",
+      "visible_date": "September 15, 2026 visible in search result",
+      "reason": "Search-result-only candidate; not retained because the article was not opened and verified with direct page content."
+    },
+    {
+      "title": "Best LLMs for Agentic September 2026 Leaderboard",
+      "source_url": "https://benchlm.ai/",
+      "visible_date": "September 15, 2026",
+      "reason": "Broad model/benchmark leaderboard; upstream-owned model and evaluation catalog coverage rather than local practice update."
+    },
+    {
+      "title": "GitHub Copilot cost-quality auto model selection",
+      "source_url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+      "visible_date": "September 14, 2026",
+      "reason": "Already captured in the previous collector run; excluded to avoid duplicating recent raw coverage."
+    },
+    {
+      "title": "Sourcegraph Agentic Batch Changes general availability",
+      "source_url": "https://www.tmcnet.com/usubmit/-sourcegraph-announces-general-availability-agentic-batch-changes-ai-/2026/09/14/10444837.htm",
+      "visible_date": "September 14, 2026",
+      "reason": "Already captured in the previous collector run; excluded to avoid duplicating recent raw coverage."
+    },
+    {
+      "title": "Pentagon AI-assisted software development procedures",
+      "source_url": "https://defensescoop.com/2026/09/14/pentagon-sets-procedures-for-ai-assisted-software-development/",
+      "visible_date": "September 14, 2026",
+      "reason": "Already captured in the previous collector run; excluded to avoid duplicating recent raw coverage."
+    },
+    {
+      "title": "Sonar zero-trust verification for agentic development",
+      "source_url": "https://www.sonarsource.com/blog/sonar-supports-openai-call-for-collective-action-on-cyber-defense/",
+      "visible_date": "September 14, 2026",
+      "reason": "Already captured in the previous collector run; excluded to avoid duplicating recent raw coverage."
+    }
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Collector remained raw-only: no docs/wiki pages and no raw/processed files were updated.",
+    "Prefer ingesting these sources as local practice evidence, with broad product, company, framework, model, MCP, protocol, and tool details routed to the upstream AI wiki.",
+    "Several September 14 items were excluded because they were already captured by the previous collector run."
+  ]
+}
