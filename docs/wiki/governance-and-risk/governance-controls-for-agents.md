@@ -109,6 +109,8 @@ Locally, governance is credible only when agent loops, standards, inventories, M
 
 The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) also records Atlassian-style context controls, standards, AI review, and system-of-record workflows. Locally, governance controls should preserve which backlog, repository, documentation, and context sources were allowed, which standards applied, and which system of record owned the final state before agent loops affect tickets or pull requests.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add agent-governance and incident-reporting evidence. Locally, recurring-agent controls should prove delegated authority before they allow repeat execution.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -121,6 +123,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - Keep human intent and acceptance explicit even when an agent performs implementation work.
 - Validate model outputs before they reach browsers, shells, databases, workflow engines, or other execution surfaces.
 - Constrain agent tools, plugins, and external systems through the infrastructure boundaries in [agent-governance-infrastructure.md](agent-governance-infrastructure.md).
+- Join owner, allowed actions, denial telemetry, risk register, [agent incident reporting](agent-incident-reporting.md), and audit evidence before recurring agents operate.
 - Rate-limit, budget, and monitor expensive model operations to reduce denial-of-service and denial-of-wallet exposure.
 - Treat tool installation, plugin marketplaces, MCP server onboarding, and connector authorization as governance decisions, not only developer convenience steps.
 - Use runtime security checks, red-team cases, and audit trails to validate whether prompt-level rules are enforced by the surrounding system.
@@ -129,6 +132,9 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - Inventory shadow agents, local MCP servers, connector grants, and developer-side tool paths that can bypass centrally managed visibility.
 - Require command previews, normalized working directories, path-containment checks, backups or restore points, and explicit approval before destructive file operations.
 - Join identity, access, memory, monitoring, audit, cost, and revocation evidence by agent or session when the workflow can keep running after a single prompt.
+- Treat the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for governed loops, confidence gaps, risk registers, and MCP gateway-boundary practice.
+- Route the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) model-misalignment signal through [agent incident reporting](agent-incident-reporting.md).
+- Treat delegated-authority proof from the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) as governance-control evidence before recurring execution expands.
 - Treat daily token or request envelopes, outbound API meters, and spend-triggered session restrictions as blast-radius controls for long-running agents.
 - Validate business-rule, system-of-record, and SIEM-export controls before agents move from advisory reasoning to operational side effects.
 - Capture who invoked which agent tool, what data or repository scope it touched, and which policy allowed or blocked the action.
@@ -185,6 +191,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - Record vendor-processing, retention, feature-certification, component-review, and prompt supply-chain evidence before adopting an AI development tool as a governed route.
 - Route source-control-attached AI attribution and approved-model policy details to [commit-level AI governance](commit-level-ai-governance.md).
 - Preserve context-control, standards, and system-of-record ownership evidence when agent workflows span tickets, repositories, documentation, and pull requests.
+- Maintain risk-register entries with owner, tier, review date, monitoring record, audit evidence, and mitigation status for recurring or high-impact agents.
+- Route unexpected agent behavior, unauthorized communication channels, or governance-control failures through [agent incident reporting](agent-incident-reporting.md).
 
 ## Authoritative Sources
 
@@ -198,6 +206,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [commit-level AI governance](commit-level-ai-governance.md)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -288,6 +298,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.
 - Maintained on 2026-09-05 with data-access, action-scope, attribution, lineage, SIEM-audit, and misalignment-disclosure governance evidence.
 - Maintained on 2026-09-04 with budget-expiry, AI-approval, managed-default, data-retention, pause-monitor, content-exclusion, trusted-publishing, and workflow-identity controls.
 - Maintained on 2026-08-31 with AI-assisted contributor accountability, runtime semantic-policy, eval containment, tool-intent, data-movement, package/MCP-install, and high-risk network-boundary evidence.

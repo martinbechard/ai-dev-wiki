@@ -10,6 +10,7 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 
 - [verification-loops-and-evals.md](verification-loops-and-evals.md) records the build, test, lint, runtime, grounding, and eval overview.
 - [verification-tax-and-acceptance-gates.md](verification-tax-and-acceptance-gates.md) records the validation bottleneck and acceptance-gate practice for agentic delivery.
+- [agent-eval-failure-diagnosis.md](agent-eval-failure-diagnosis.md) records reasoning, action, execution, final-state, transcript, and repeated-trial failure diagnosis for agent evals.
 - [code-review-evals-and-rubrics.md](code-review-evals-and-rubrics.md) records AI-assisted code review evals, reviewer rubrics, and source-backed review evidence.
 - [judge-grader-boundaries.md](judge-grader-boundaries.md) records deterministic grader, human review, and LLM-as-judge boundaries.
 - [representative-workflow-calibration.md](representative-workflow-calibration.md) records representative prompts, tool-call calibration, and local model drift checks.
@@ -60,3 +61,4 @@ This topic owns evaluation practice rather than model benchmark catalogs. When a
 - Maintained on 2026-07-17 to add performance-optimization acceptance gates for agent-assisted speedup work.
 - Maintained on 2026-08-07 to add LLM observability quality gates as a durable leaf.
 - Maintained on 2026-08-20 with AI technical solution evaluation as a durable due-diligence rubric.
+- Maintained on 2026-09-16 to add agent eval failure diagnosis as a durable leaf; next check should route new eval-debugging sources to the leaf unless they change hub-level taxonomy.

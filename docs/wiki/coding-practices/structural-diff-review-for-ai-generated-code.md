@@ -19,6 +19,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) reinforces that parallel agent output needs owner reconciliation before acceptance. Structural diff review is the coordinator's inspection aid when several agents produce independent changes: compare actual patch ranges, identify behavior-changing edits, separate formatting churn, and review integration conflicts before combined verification.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) adds large migration and production-bar evidence. Locally, structural diff output is only a triage aid until risk-tiered validation and human ownership are attached.
+
 ## Practice Boundaries
 
 - Use structural diffs to reduce reviewer noise when AI-generated changes include formatting, reordering, or generated boilerplate.
@@ -28,6 +30,10 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Ask agents to separate behavior changes from formatting changes when structural review shows avoidable churn.
 - Use structural diff output to triage very large or bot-authored pull requests while preserving human review of behavior, tests, security, and residual risk.
 - Use structural diff output during multi-agent reconciliation to compare actual patch ranges, isolate behavior changes, and find integration conflicts before combined verification.
+- For infrastructure-scale or production agent changes, combine structural slices with explicit owners, tests, rollout evidence, and blast-radius review depth.
+- Keep prototype-level structural triage separate from production review where security, maintainability, runtime behavior, and repairability need stronger gates.
+- Keep infrastructure-scale rewrite slices inspectable and separately owned.
+- Attach follow-on test evidence before structural diff triage can support production acceptance.
 
 ## Authoritative Sources
 
@@ -38,6 +44,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 
 ## Related Code
 
@@ -68,3 +75,4 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Maintained on 2026-08-06 with leaf-watch corroboration for structural diff review as triage evidence rather than acceptance proof.
 - Maintained on 2026-08-29 with large bot-authored pull-request triage guidance.
 - Maintained on 2026-08-31 with multi-agent reconciliation, patch-range, behavior-change, formatting-churn, and integration-conflict review evidence.
+- Maintained on 2026-09-16 with incremental migration, production-bar, slice ownership, and blast-radius review evidence; next check should verify structural-diff handoffs name the inspected range, owner, and required follow-on tests.

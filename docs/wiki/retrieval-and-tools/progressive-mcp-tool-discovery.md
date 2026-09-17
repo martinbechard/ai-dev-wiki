@@ -28,6 +28,8 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 
 The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) adds a secondary MCP protocol-change signal. Locally, protocol-specific discovery claims should remain deferred until the authoritative MCP specification confirms the reported behavior.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) adds a gateway-boundary refinement. Progressive discovery should keep newly discovered action surfaces behind explicit gateway policy until the task proves a need for that tool.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -40,6 +42,9 @@ The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-
 - Keep discovered MCP servers, skills, repositories, and setup helpers inert until provenance, command behavior, install intent, and tool scopes are reviewed.
 - Reject discovery results that try to seed instructions for future agents or request broader tools than the current task and policy allow.
 - Record conformance evidence and externalized state joins before adopting secondary reports about MCP discovery behavior.
+- Keep discovered action-capable connectors behind gateway policy until the task, delegated identity, allowed actions, rate limits, and audit route are explicit.
+- Treat action chaining across systems as a discovery-risk signal that requires separation-of-duties and least-privilege review before invocation.
+- Require policy evidence before invoking a discovered MCP connector that can chain actions across operational systems.
 
 ## Authoritative Sources
 
@@ -48,6 +53,7 @@ The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [context selection and compaction](../context-architecture/context-selection-and-compaction.md)
@@ -83,3 +89,4 @@ The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-
 - Maintained on 2026-08-14 with sandboxed code-execution as a progressive MCP discovery variant and benchmark-scope caveats.
 - Maintained on 2026-08-16 with agent-baiting discovery controls for MCP servers, skills, repositories, setup helpers, and future-agent instruction seeding.
 - Maintained on 2026-09-06 with secondary MCP protocol-change evidence deferred behind authoritative specification confirmation.
+- Maintained on 2026-09-16 with gateway-boundary, action-chain, rate-limit, and separation-of-duties discovery controls; next check should confirm discovery logs record the selected tool, delegated identity, and approval route before invocation.

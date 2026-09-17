@@ -13,6 +13,7 @@ This topic owns local operating rules and risk patterns. Provider security annou
 - [commit-level-ai-governance.md](commit-level-ai-governance.md) records source-control-attached AI-use traces, approved-model policy, attribution, and audit evidence.
 - [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md) records how untrusted input, retrieved text, files, webpages, tickets, and clippings stay separated from live instructions.
 - [agent-governance-infrastructure.md](agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and human accountability as infrastructure concerns.
+- [agent-incident-reporting.md](agent-incident-reporting.md) records unexpected or concerning agent behavior as a reportable engineering governance event.
 - [agent-identity-and-delegated-authority.md](agent-identity-and-delegated-authority.md) records human requester, agent instance, connector identity, delegated scope, shared-channel context, and credential revocation practice.
 - [lifecycle-ai-review-gates.md](lifecycle-ai-review-gates.md) records AI review gates for PRDs, requirements, design inputs, acceptance criteria, and other pre-implementation artifacts.
 - [sensitive-data-and-supply-chain-controls.md](sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.
@@ -63,3 +64,4 @@ This topic owns local operating rules and risk patterns. Provider security annou
 - Maintained on 2026-06-24 to add lifecycle review gates and delegated-authority controls from public practice sources.
 - Maintained on 2026-07-17 to add destructive command controls for terminal and workflow agents.
 - Maintained on 2026-08-22 to add execution-edge authorization as a durable governance leaf.
+- Maintained on 2026-09-16 to add agent incident reporting as a durable governance leaf; next check should route future anomaly-reporting sources to the leaf unless they change hub-level governance structure.

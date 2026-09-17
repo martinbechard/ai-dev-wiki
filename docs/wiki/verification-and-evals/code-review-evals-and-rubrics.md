@@ -83,6 +83,8 @@ The September 13 raw sources add auto-resolution, shell-backed validation, Lite 
 
 Locally, review evals should measure those variables separately instead of treating AI review as one aggregate score.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add production-bar, repository-configuration, and multi-agent review evidence. Review evals should score whether those focused practices actually improve source-backed finding quality and human acceptance.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -126,6 +128,9 @@ Locally, review evals should measure those variables separately instead of treat
 - Preserve author-agent, reviewer-agent, CI-trigger, and human-owner identity when reviewing AI-generated or AI-reviewed pull requests.
 - Evaluate LLM-assisted code review at the application workflow level, including task success, tool use, evidence quality, safety, latency, cost, reliability, and human intervention.
 - Score whether custom review instructions are versioned, repository-owned, and reflected in findings without hiding product-specific setting drift.
+- Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) to score review depth by blast radius and validated production evidence.
+- Route configuration-driven review practice to [repository-configured AI code review](../coding-practices/repository-configured-ai-code-review.md).
+- Route multi-agent review practice to [multi-reviewer AI code review](../coding-practices/multi-reviewer-ai-code-review.md).
 - Score review resolution reasons and bot-authored PR review evidence as feedback-loop data, not only as closed-comment counts.
 - Include repository-readiness fields such as ownership metadata, test intent, documentation, conventions, and retrieval hints when evaluating AI review quality.
 - Calibrate LLM-as-judge review or secret-scanning evals against production labels, deterministic checks, and human adjudication instead of treating judge fluency as correctness.
@@ -139,6 +144,9 @@ Locally, review evals should measure those variables separately instead of treat
 - Score auto-resolution quality separately from comment closure, and require evidence that a later commit actually addressed the underlying finding.
 - Treat shell-backed validation as useful evidence only when the command, sandbox, policy boundary, result, and changed severity assessment are retained.
 - Calibrate private coding-agent evals by model-specific failure modes, review burden, and cost per accepted fix rather than benchmark rank alone.
+- Include prototype-versus-production review cases so rubrics do not reward light gates on high-blast-radius code.
+- Score [repository-configured AI code review](../coding-practices/repository-configured-ai-code-review.md) by whether configuration changes measurably affect relevant findings.
+- Score [multi-reviewer AI code review](../coding-practices/multi-reviewer-ai-code-review.md) by role separation, disagreement retention, source grounding, and human acceptance boundaries.
 
 ## Authoritative Sources
 
@@ -149,6 +157,8 @@ Locally, review evals should measure those variables separately instead of treat
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -213,6 +223,7 @@ Locally, review evals should measure those variables separately instead of treat
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-16 with production review-bar scoring and routing to repository-configured and multi-reviewer AI code review leaves; next check should evaluate those focused practices through source-backed finding quality.
 - Maintained on 2026-09-05 with cross-file review, multi-model orchestration, cost-premium, Agent Merge loop, failed-check, conflict, rerun, and human-merge eval evidence.
 - Maintained on 2026-09-06 with merge-state, excluded-content, harness-risk, intervention-point, concurrent-write, and audit-trail review evidence.
 - Maintained on 2026-08-29 with review-effort defaults and pre-PR review evidence.

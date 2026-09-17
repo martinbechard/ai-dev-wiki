@@ -53,6 +53,8 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [coding-practices/ai-assisted-tdd.md](coding-practices/ai-assisted-tdd.md) records the test-first loop for agent work and regression repair.
 - [coding-practices/intelligent-code-review.md](coding-practices/intelligent-code-review.md) records source-backed AI review, tier checks, coherence checks, and security review boundaries.
 - [coding-practices/pre-pr-independent-review.md](coding-practices/pre-pr-independent-review.md) records independent inspection of local agent changes before pull-request creation.
+- [coding-practices/repository-configured-ai-code-review.md](coding-practices/repository-configured-ai-code-review.md) records AI-review rules, path scopes, tool settings, and agent-facing prompts as governed repository policy.
+- [coding-practices/multi-reviewer-ai-code-review.md](coding-practices/multi-reviewer-ai-code-review.md) records role-separated AI review, synthesis evidence, disagreement retention, and human merge authority.
 - [coding-practices/layered-ai-code-review-roles.md](coding-practices/layered-ai-code-review-roles.md) records developer, architecture, and security role separation for AI-assisted review.
 - [coding-practices/structural-diff-review-for-ai-generated-code.md](coding-practices/structural-diff-review-for-ai-generated-code.md) records parser-aware diff triage for AI-generated commits and formatting churn.
 - [coding-practices/generated-code-refactoring.md](coding-practices/generated-code-refactoring.md) records the practice of refactoring generated output into maintainable, verified code.
@@ -70,6 +72,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [verification-and-evals/index.md](verification-and-evals/index.md) is the hub for build, test, lint, runtime checks, evals, graders, and done signals.
 - [verification-and-evals/verification-loops-and-evals.md](verification-and-evals/verification-loops-and-evals.md) records the build, test, lint, runtime, grounding, and eval overview.
 - [verification-and-evals/verification-tax-and-acceptance-gates.md](verification-and-evals/verification-tax-and-acceptance-gates.md) records the validation bottleneck and acceptance-gate practice for agentic delivery.
+- [verification-and-evals/agent-eval-failure-diagnosis.md](verification-and-evals/agent-eval-failure-diagnosis.md) records reasoning, action, execution, final-state, transcript, and repeated-trial failure diagnosis for agent evals.
 - [verification-and-evals/code-review-evals-and-rubrics.md](verification-and-evals/code-review-evals-and-rubrics.md) records AI-assisted code review evals, reviewer rubrics, and source-backed review evidence.
 - [verification-and-evals/judge-grader-boundaries.md](verification-and-evals/judge-grader-boundaries.md) records deterministic grader, human review, and LLM-as-judge boundaries.
 - [verification-and-evals/representative-workflow-calibration.md](verification-and-evals/representative-workflow-calibration.md) records representative prompts, tool-call calibration, and local model drift checks.
@@ -99,6 +102,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [governance-and-risk/commit-level-ai-governance.md](governance-and-risk/commit-level-ai-governance.md) records source-control-attached AI-use traces, approved-model policy, attribution, and audit evidence.
 - [governance-and-risk/prompt-injection-and-untrusted-content.md](governance-and-risk/prompt-injection-and-untrusted-content.md) records how untrusted input stays separated from live instructions.
 - [governance-and-risk/agent-governance-infrastructure.md](governance-and-risk/agent-governance-infrastructure.md) records identity, authorization, monitoring, audit, policy enforcement, and accountability as infrastructure concerns.
+- [governance-and-risk/agent-incident-reporting.md](governance-and-risk/agent-incident-reporting.md) records unexpected or concerning agent behavior as a reportable engineering governance event.
 - [governance-and-risk/agent-identity-and-delegated-authority.md](governance-and-risk/agent-identity-and-delegated-authority.md) records human requester, agent instance, connector identity, delegated scope, shared-channel context, and credential revocation practice.
 - [governance-and-risk/lifecycle-ai-review-gates.md](governance-and-risk/lifecycle-ai-review-gates.md) records AI review gates for requirements, PRDs, design inputs, acceptance criteria, and other pre-implementation artifacts.
 - [governance-and-risk/sensitive-data-and-supply-chain-controls.md](governance-and-risk/sensitive-data-and-supply-chain-controls.md) records secret, PII, package-install, dependency, model, source, licensing, and third-party artifact controls.

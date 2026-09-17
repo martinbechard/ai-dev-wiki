@@ -87,6 +87,8 @@ The September 1 raw sources add runtime-profile, customer-owned audit, and appro
 
 The September 7 raw sources add policy-distribution, data-governance, and regulatory inventory evidence. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records content exclusions, enterprise-managed model defaults, AI pull-request approval controls, browser/native app policies, source-level data governance, SIEM-exportable audit trails, and proposed agent inventory and tamper-proof logs. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records build-versus-buy pressure and coding-versus-enterprise-agent operating boundaries. Locally, governance infrastructure should join model policy, app-control policy, source-access validation, approval admissibility, agent inventory, audit-log integrity, build-versus-buy gates, and accountable operating owner before agent autonomy expands.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add provable-trust and risk-register infrastructure evidence. Locally, the control plane should prove the agent's authority and audit evidence, not just the fact that work happened.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -101,6 +103,7 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 - Inventory installed agents, tool servers, MCP servers, plugins, and connectors that can affect development workflows.
 - Capture run-level evidence for identity, policy version, execution environment, approvals, tool calls, and generated outputs when auditability matters.
 - Preserve enough trace, identity, credential, and routing evidence to investigate an agent run after a failure or security concern.
+- Attach allowed-action, denied-action, sovereignty, and tamper-evidence records when an agent acts with delegated authority.
 - Keep revocation paths ready for credentials and connectors that an agent can use through a developer environment.
 - Govern plugin marketplaces, MCP catalogs, extension sources, and installed agent tooling before tools are available to a developer or agent workflow.
 - Pair agent inventory with continuous monitoring, adversarial testing, and audit evidence when agents can touch sensitive systems or software delivery paths.
@@ -108,6 +111,8 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 - Specify deterministic policy boundaries for permissions, approvals, package installation, data access, and audit logs before agent workflows run.
 - Treat data-control and classification gates as infrastructure requirements when development context can reach external models or tools.
 - Maintain continuous inventory and behavioral monitoring for agent identities, credentials, connectors, and tool surfaces.
+- Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for governed loops, confidence gaps, risk registers, and MCP boundary controls.
+- Use the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) as evidence for delegated-authority proof and agent anomaly routing.
 - Prefer execution paths that preserve established approval, escalation, and audit artifacts when agents operate in enterprise workflows.
 - Default production-adjacent agents to read-only investigation until a scoped plan, sandbox validation result, requester authority, and approver attribution are recorded.
 - Treat managed settings, model policies, plugin marketplace controls, browser-tool enablement, and budget caps as policy-owned infrastructure rather than personal editor preferences.
@@ -161,6 +166,9 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 - Compose identity, delegated authority, persistent state, gateways, registries, budget controls, traces, and provenance-aware state rather than relying on one control layer.
 - Bind runtime profile, migration evidence, storage owner, key owner, monitoring authority, model eligibility, budget policy, and approval scope into the run-level governance record.
 - Join model policy, app-control policy, source-access validation, approval admissibility, inventory, audit-log integrity, build-versus-buy gates, and accountable operating owner before expanding agent autonomy.
+- Preserve allowed-action and denied-action evidence with the delegated authority, policy version, exact tool or API target, and accountable human for each consequential agent run.
+- Treat tamper-evident logs, signed receipts, or cryptographic evidence as governance infrastructure when post-hoc logs alone cannot prove authorization.
+- Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
 
 ## Authoritative Sources
 
@@ -169,6 +177,8 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -257,6 +267,7 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, delegated-authority proof, tamper-evident evidence, sovereignty, and incident-reporting routing evidence; next check should keep anomaly reporting in the focused incident leaf.
 - Maintained on 2026-08-29 with runtime control-plane, gateway, registry, budget, trace, and provenance-aware state governance evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration, customer-owned storage, customer-managed key, opt-in monitoring, model-policy, budget, and AI-approval evidence.
 - Maintained on 2026-09-07 with model-policy, app-control, source-access, approval-admissibility, inventory, audit-integrity, and build-versus-buy governance evidence.

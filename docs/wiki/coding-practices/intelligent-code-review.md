@@ -108,6 +108,8 @@ The September 14 raw sources add review-adjacent signals that now route to focus
 - The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records VS Code agent usage metrics, which route to [agent cost telemetry](../adoption-and-operating-model/agent-cost-telemetry.md).
 - The same source records Atlassian AI Review, context-control, and standards surfaces, which route to [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add review-configuration and multi-reviewer signals. Locally, this overview keeps the general rule that review decisions need visible ownership.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -194,6 +196,13 @@ The September 14 raw sources add review-adjacent signals that now route to focus
 - Use selective human review only when risk tier, rollback plan, tests, ownership, and failure-mode evidence justify the lighter gate.
 - Route independent local-change review details to [pre-PR independent review](pre-pr-independent-review.md).
 - Route generated-code evidence package requirements to [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md).
+- Vary review depth by blast radius, with production code requiring stronger validation and human explainability than disposable prototypes.
+- Route configuration-specific review practice through [repository-configured AI code review](repository-configured-ai-code-review.md).
+- Route role-separated review practice through [multi-reviewer AI code review](multi-reviewer-ai-code-review.md).
+- Preserve review evidence, repository configuration, role separation, and human merge authority before accepting AI reviewer output.
+- Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence that prototype and production review bars should stay distinct.
+- Keep large agent-authored migrations reviewable through incremental slices, explicit owners, and tests.
+- Route the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) review-practice signals to the focused configuration and multi-reviewer leaves.
 
 ## Authoritative Sources
 
@@ -204,6 +213,8 @@ The September 14 raw sources add review-adjacent signals that now route to focus
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [pre-PR independent review](pre-pr-independent-review.md)
 - [AI code evidence packages](../governance-and-risk/ai-code-evidence-packages.md)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
@@ -290,6 +301,7 @@ The September 14 raw sources add review-adjacent signals that now route to focus
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-16 with production-review bar evidence and routing to repository-configured and multi-reviewer AI code review leaves; next check should keep configuration and role-specific detail in those focused leaves.
 - Maintained on 2026-09-05 with PR-completion loop, failed-check, merge-conflict, rerun, cross-file defect, cost, and human-merge evidence.
 - Maintained on 2026-09-04 with AI approval, stale-dismissal, content-exclusion, Agent Merge, model-validation, and CodeQL evidence.
 - Maintained on 2026-08-29 with bot-to-agent review, large-diff review strategy, review-effort, pre-PR review, telemetry, and human acceptance evidence.

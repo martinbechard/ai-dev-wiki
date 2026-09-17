@@ -47,6 +47,8 @@ The August 28 and 29 raw sources add verification-capacity evidence for review d
 
 The August 30 raw sources add spec-linked and production-reliability acceptance evidence. The [leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) treats specs as measurable implementation inputs, while the [topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) reinforces that agent-generated code needs fail-first proof plus reviewable production gates.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add governance, eval, and blast-radius evidence. Locally, acceptance gates should separate prototype and production bars and route recurring agent-eval detail to the focused eval leaf.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -74,6 +76,11 @@ The August 30 raw sources add spec-linked and production-reliability acceptance 
 - Treat regulated or business-impacting agent actions as acceptance-gate decisions requiring explicit risk class, approval evidence, execution trace, and rollback or escalation path.
 - Require agent-readable specs to name verification criteria, expected contract evidence, and independent verifier responsibilities when the requirement becomes implementation input.
 - Treat expected-failure proof, layered test results, review notes, documentation intent, and deterministic CI as the acceptance package for production-oriented agent TDD.
+- Scale verification bars by blast radius: prototypes can use lighter evidence, but production AI-generated code needs lint, tests, E2E or fuzzing where relevant, automated and human review, security review, and repairability evidence.
+- Route material agent misbehavior, unexpected tool use, and governance-control failures through [agent incident reporting](../governance-and-risk/agent-incident-reporting.md).
+- Route recurring agent-eval failure-mode diagnosis through [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
+- Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for incremental runtime migration, governance checks, and production AI-code quality bars.
+- Use the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) as evidence for agent-eval and incident-reporting routing.
 
 ## Authoritative Sources
 
@@ -104,6 +111,8 @@ The August 30 raw sources add spec-linked and production-reliability acceptance 
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 
 ## Related Code
 
@@ -146,3 +155,4 @@ The August 30 raw sources add spec-linked and production-reliability acceptance 
 - Maintained on 2026-08-21 with user-flow verification, E2E capacity, flake handling, feedback-loop, and reviewable-evidence scaling constraints.
 - Maintained on 2026-08-23 with browser-test proof, execution-policy, business-impact, and regulated-action gate evidence.
 - Maintained on 2026-08-30 with spec-linked verification criteria, independent verifier responsibility, expected-failure proof, layered-test, review, documentation, and deterministic-CI acceptance evidence.
+- Maintained on 2026-09-16 with blast-radius review bars, incident-style misbehavior reporting, and failure-mode agent-eval evidence; next check should confirm acceptance gates distinguish prototype, production, and incident-response evidence.

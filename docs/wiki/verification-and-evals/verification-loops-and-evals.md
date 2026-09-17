@@ -86,6 +86,8 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 - The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records EvalHub-style safety benchmarking, compliance evidence, observability dashboards, fair-share scheduling, controlled rollouts, RAG, agent templates, and guardrails.
 - Locally, verification loops should combine deterministic checks, contextual review, compliance evidence, resource telemetry, and controlled rollout records before a generated change or platform configuration is accepted.
 
+The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add agent-eval and incident-reporting evidence. Locally, governance confidence must be backed by tested controls, audit records, and production-bar evidence.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -121,6 +123,9 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 - Validate agent loops against the developer workflow being optimized, and route performance-specific evidence through the performance optimization gates.
 - Separate benchmark, harness, and environment evidence; preserve tool-call trajectories, state-change checks, online traces, cost signals, and security gates when evaluating production agents.
 - Evaluate research agents as iterative search-read-evaluate-refine loops with corroborated sources, citation quality, context-loss controls, and explicit stop criteria.
+- Route practical agent-eval diagnosis from the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) to [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
+- Route model-misalignment reporting from the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) to [agent incident reporting](../governance-and-risk/agent-incident-reporting.md).
+- Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for tested controls and production-bar expectations.
 - Use emulated or resettable services when evaluating API-calling skills so live costs, mutations, and nondeterministic state do not mask skill quality.
 - Include readiness checks for isolation, authorization boundaries, prompt integrity, command safety, network egress, provenance, rollback, recovery, human governance, explainability, and incident response before deployment.
 - Evaluate deployed agents with simulations, graders, guardrails, escalation paths, and approved update proposals before behavior changes reach production.
@@ -155,6 +160,8 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 - Measure task completion, silent failure, intervention count, and allowed-surface coverage before increasing agent autonomy.
 - Require harness-control evidence before accepting agent-facing product surfaces or critical-risk agent workflows.
 - Verify orchestration choices, third-party component intake, and corrective-RAG retry paths with complete-task metrics, isolated review, groundedness, usefulness, and fail-safe rollback evidence.
+- Route recurring failure-mode detail through [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
+- Route material agent anomaly records through [agent incident reporting](../governance-and-risk/agent-incident-reporting.md).
 
 ## Authoritative Sources
 
@@ -167,6 +174,8 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -244,6 +253,7 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-16 with agent-eval and incident-reporting signals routed to focused leaves; next check should keep recurring failure-mode detail in agent eval failure diagnosis.
 - Maintained on 2026-09-08 with complete-task metrics, controlled experiment, isolated review, component intake, corrective-RAG, groundedness, usefulness, and fail-safe rollback evidence.
 - Maintained on 2026-09-07 with human-loop, prototype-validation, model-route validation, recovered-failure, and workflow-representative eval evidence.
 - Maintained on 2026-09-05 with safeguard pause, classifier-trace, recovery-path, autonomous browsing, transaction-handling, and human-intervention eval evidence.
