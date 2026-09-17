@@ -1,0 +1,637 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-17T01:05:08Z",
+  "run_timestamp_local": "2026-09-16T21:05:08-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-10T01:05:08Z",
+    "end_utc": "2026-09-17T01:05:08Z",
+    "start_local": "2026-09-09T21:05:08-0400",
+    "end_local": "2026-09-16T21:05:08-0400",
+    "rule": "Only sources with visible publication or update dates inside this seven-day window qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+  ],
+  "selection_method": "Eligible durable Markdown leaves under approved roots; exclude indexes, digests, broad maintenance pages, federation/schema/glossary/open-decisions/known-defects/topic-index, and dated source-synthesis pages; select unchecked first then oldest last_checked_at with stable path tie-break.",
+  "source_urls_checked": [
+    "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+    "https://www.atlassian.com/blog/jira/governed-agent-loops",
+    "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+    "https://www.harness.io/blog/ai-security-governance",
+    "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+    "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+    "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+    "https://arxiv.org/html/2607.29516v2",
+    "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+  ],
+  "per_leaf_results": {
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16",
+        "businessinsider-claude-code-quality-bar-2026-09-12",
+        "techradar-ai-code-visibility-gap-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16, businessinsider-claude-code-quality-bar-2026-09-12, techradar-ai-code-visibility-gap-2026-09-11"
+    },
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11"
+    },
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11",
+        "harness-agent-confidence-gap-2026-09-10",
+        "harness-ai-security-governance-framework-2026-09-15",
+        "techradar-ai-code-visibility-gap-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11, harness-agent-confidence-gap-2026-09-10, harness-ai-security-governance-framework-2026-09-15, techradar-ai-code-visibility-gap-2026-09-11"
+    },
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "expresscomputer-mcp-api-layer-agents-2026-09-15"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-mcp-api-layer-agents-2026-09-15"
+    },
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16"
+    },
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11"
+    },
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "expresscomputer-mcp-api-layer-agents-2026-09-15"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: expresscomputer-mcp-api-layer-agents-2026-09-15"
+    },
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16",
+        "atlassian-governed-agent-loops-2026-09-11",
+        "harness-agent-confidence-gap-2026-09-10",
+        "harness-ai-security-governance-framework-2026-09-15",
+        "businessinsider-claude-code-quality-bar-2026-09-12",
+        "techradar-ai-code-visibility-gap-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16, atlassian-governed-agent-loops-2026-09-11, harness-agent-confidence-gap-2026-09-10, harness-ai-security-governance-framework-2026-09-15, businessinsider-claude-code-quality-bar-2026-09-12, techradar-ai-code-visibility-gap-2026-09-11"
+    },
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11",
+        "harness-agent-confidence-gap-2026-09-10",
+        "harness-ai-security-governance-framework-2026-09-15",
+        "businessinsider-claude-code-quality-bar-2026-09-12",
+        "techradar-ai-code-visibility-gap-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11, harness-agent-confidence-gap-2026-09-10, harness-ai-security-governance-framework-2026-09-15, businessinsider-claude-code-quality-bar-2026-09-12, techradar-ai-code-visibility-gap-2026-09-11"
+    },
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16"
+    },
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16",
+        "businessinsider-claude-code-quality-bar-2026-09-12"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16, businessinsider-claude-code-quality-bar-2026-09-12"
+    },
+    "docs/wiki/agent-workflows/subagent-coordination.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11"
+    },
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "atlassian-governed-agent-loops-2026-09-11",
+        "expresscomputer-mcp-api-layer-agents-2026-09-15"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: atlassian-governed-agent-loops-2026-09-11, expresscomputer-mcp-api-layer-agents-2026-09-15"
+    },
+    "docs/wiki/application-patterns/agent-environment-readiness.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16",
+        "harness-agent-confidence-gap-2026-09-10",
+        "harness-ai-security-governance-framework-2026-09-15",
+        "expresscomputer-mcp-api-layer-agents-2026-09-15"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16, harness-agent-confidence-gap-2026-09-10, harness-ai-security-governance-framework-2026-09-15, expresscomputer-mcp-api-layer-agents-2026-09-15"
+    },
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": {
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://www.atlassian.com/blog/jira/governed-agent-loops",
+        "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+        "https://www.harness.io/blog/ai-security-governance",
+        "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+        "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+        "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+        "https://arxiv.org/html/2607.29516v2",
+        "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/"
+      ],
+      "qualifying_update_ids": [
+        "github-copilot-runtime-rust-port-2026-09-16",
+        "atlassian-governed-agent-loops-2026-09-11",
+        "harness-ai-security-governance-framework-2026-09-15",
+        "expresscomputer-mcp-api-layer-agents-2026-09-15"
+      ],
+      "result": "qualified_updates_found",
+      "follow_up_note": "Review raw artifact for downstream practice implications: github-copilot-runtime-rust-port-2026-09-16, atlassian-governed-agent-loops-2026-09-11, harness-ai-security-governance-framework-2026-09-15, expresscomputer-mcp-api-layer-agents-2026-09-15"
+    }
+  },
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-runtime-rust-port-2026-09-16",
+      "title": "GitHub describes an incremental Copilot runtime port to Rust using agent-assisted development",
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+      "published_or_updated_date": "2026-09-16",
+      "visible_date_evidence": "GitHub Blog article shows Stephen Toub and September 16, 2026.",
+      "source_type": "public primary vendor engineering post",
+      "factual_summary": "GitHub reported that the Copilot agent runtime was rewritten from TypeScript/Node into more than 800,000 lines of production Rust with AI agents writing most of the code across 128 pull requests. The migration used an in-place, component-by-component strategy, kept main shippable, relied on existing end-to-end tests at each step, shipped incremental releases, and treated runtime layering, lifecycle coupling, hooks, tools, session orchestration, and MCP support as major architectural concerns.",
+      "why_it_matters_for_selected_leaves": "This is practice-level evidence for structural diff review, request/file boundary discipline, persistent workspaces, lifecycle hooks, environment readiness, and acceptance gates: large agent-assisted changes need small reviewable slices, explicit runtime boundaries, continuous test gates, and rollout telemetry rather than a single unreviewable rewrite.",
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot SDK",
+        "Copilot agent runtime",
+        "Rust",
+        "TypeScript",
+        "Node.js",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Rust",
+        "TypeScript",
+        "Node.js",
+        "MCP"
+      ],
+      "local_practice_implication": "Keep local coverage focused on incremental migration workflow, reviewability, runtime layering, and validation gates; broad Copilot or language background belongs upstream.",
+      "follow_up_note": "Potential ingest should connect this evidence to reviewable migration slices, agent runtime readiness, lifecycle hook boundaries, and acceptance-gate design."
+    },
+    {
+      "id": "atlassian-governed-agent-loops-2026-09-11",
+      "title": "Atlassian announces governed agent loops, context controls, AI review, and DX measurement for agentic SDLC",
+      "source_url": "https://www.atlassian.com/blog/jira/governed-agent-loops",
+      "published_or_updated_date": "2026-09-11",
+      "visible_date_evidence": "Atlassian post surfaced as published six days before the September 17 UTC run and announces a September 22, 2026 related event; search result shows the post as published six days ago.",
+      "source_type": "public primary vendor blog",
+      "factual_summary": "Atlassian introduced Code Context for multi-repository grounding via Teamwork Graph, Agent Context Controls, agent loops in Jira, Standards, AI Review, DX for Agentic Development, and a Jira Agent Usage Dashboard. The post frames scaling AI in engineering as moving from ad hoc agent sessions to always-on workflows built on context, governed execution, and measurable impact.",
+      "why_it_matters_for_selected_leaves": "The update directly reinforces rules/knowledge layering, code-retrieval evidence, supervised handoffs, subagent coordination, verification gates, and partner selection criteria: teams need controlled context surfaces, organization-wide standards, code-review agents, usage telemetry, and cost/quality/adoption measurement before agent loops become operating practice.",
+      "relevant_leaf_ids": [
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Rovo",
+        "Confluence",
+        "DX",
+        "Teamwork Graph",
+        "Code Context",
+        "Agent Context Controls",
+        "AI Review",
+        "Jira Agent Usage Dashboard"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Rovo",
+        "Confluence"
+      ],
+      "local_practice_implication": "Local wiki ingestion should capture governance and measurement patterns, not duplicate Atlassian product background.",
+      "follow_up_note": "Compare against existing local pages on agent usage telemetry, code retrieval evidence, and supervised handoffs."
+    },
+    {
+      "id": "harness-agent-confidence-gap-2026-09-10",
+      "title": "Harness survey reports enterprise AI-agent confidence exceeding actual controls",
+      "source_url": "https://www.harness.io/press-and-news/new-report-reveals-ai-agent-confidence-gap",
+      "published_or_updated_date": "2026-09-10",
+      "visible_date_evidence": "Harness press page lists September 10, 2026.",
+      "source_type": "public primary vendor press page",
+      "factual_summary": "Harness published survey findings from 700 engineering leaders, stating that confidence in AI agents is outpacing testing, security, and governance controls. The page positions the gap as a control and verification problem for organizations adopting AI agents in software engineering.",
+      "why_it_matters_for_selected_leaves": "This provides recent practice-level evidence for acceptance gates, partner selection, environment readiness, and governance-by-evidence: confidence claims are insufficient without verifiable agent inventories, testing gates, policy enforcement, and incident controls.",
+      "relevant_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "named_entities": [
+        "Harness",
+        "State of Agent DLC 2026",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        "Harness"
+      ],
+      "local_practice_implication": "Treat vendor or partner confidence as evidence to verify, not as proof of operational readiness.",
+      "follow_up_note": "Potential ingest should mention survey-derived risk as supporting evidence, with attribution and without overgeneralizing beyond the survey."
+    },
+    {
+      "id": "harness-ai-security-governance-framework-2026-09-15",
+      "title": "Harness publishes an AI security governance framework centered on risk registers and accountability",
+      "source_url": "https://www.harness.io/blog/ai-security-governance",
+      "published_or_updated_date": "2026-09-15",
+      "visible_date_evidence": "Harness blog shows Published: September 15, 2026 and Last updated: 2026-09-16.",
+      "source_type": "public primary vendor blog",
+      "factual_summary": "Harness describes AI security governance as policies, risk processes, monitoring controls, and ownership assignments. The framework centers an AI risk register with named owners, tiers, review dates, monitoring/audit records, and accountability, and warns that many organizations operate with informal approval habits rather than written governance programs.",
+      "why_it_matters_for_selected_leaves": "The update is directly relevant to self-service analytics context governance, agent environment readiness, lifecycle hooks, verification gates, and partner selection: local practice should require named ownership, review dates, audit records, and monitoring hooks for agent-enabled systems.",
+      "relevant_leaf_ids": [
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "named_entities": [
+        "Harness",
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 42001",
+        "EU AI Act"
+      ],
+      "upstream_owned_entities": [
+        "Harness",
+        "NIST AI Risk Management Framework",
+        "ISO/IEC 42001",
+        "EU AI Act"
+      ],
+      "local_practice_implication": "Capture the operational governance artifacts and acceptance criteria rather than restating standards background.",
+      "follow_up_note": "Potential ingest can use this as current evidence for risk-register and auditability expectations in agent workflows."
+    },
+    {
+      "id": "expresscomputer-mcp-api-layer-agents-2026-09-15",
+      "title": "Express Computer guest post frames MCP as a governed API boundary for AI agents",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+      "published_or_updated_date": "2026-09-15",
+      "visible_date_evidence": "Article header shows On Sep 15, 2026.",
+      "source_type": "public trade article / expert guest post",
+      "factual_summary": "The article argues that MCP standardizes AI-agent access to APIs, deployment pipelines, observability systems, ticketing, and business tools, but that identity, authorization, audit logging, rate limits, access reviews, least privilege, separation of duties, and policy enforcement belong at the platform or gateway boundary. It emphasizes that the hard question is what an agent is allowed to do when chaining actions across systems.",
+      "why_it_matters_for_selected_leaves": "This qualifies for progressive MCP discovery, tool governance, environment readiness, lifecycle hooks, and supervised handoffs: tool discovery must stay coupled to identity, authorization, blast-radius controls, and auditability rather than exposing broad connector catalogs by default.",
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": [
+        "Model Context Protocol",
+        "MCP",
+        "OIDC",
+        "OAuth 2.1",
+        "Thales"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "OIDC",
+        "OAuth 2.1",
+        "Thales"
+      ],
+      "local_practice_implication": "Keep local synthesis on progressive discovery and boundary governance; route broad MCP protocol background upstream.",
+      "follow_up_note": "Potential ingest should connect MCP discovery to agent identity, gateway policy, and action-chain authorization."
+    },
+    {
+      "id": "businessinsider-claude-code-quality-bar-2026-09-12",
+      "title": "Business Insider reports Claude Code creator response distinguishing prototype and production AI-code review bars",
+      "source_url": "https://www.businessinsider.com/claude-codes-creator-email-ai-slop-reply-2026-9",
+      "published_or_updated_date": "2026-09-12T09:47:01Z",
+      "visible_date_evidence": "Business Insider article metadata shows 2026-09-12T09:47:01.284Z.",
+      "source_type": "public secondary reporting",
+      "factual_summary": "The article reports Boris Cherny responding to developer concerns about AI-generated code quality. It distinguishes low-blast-radius prototype code from production code, where higher bars, lint rules, tests, end-to-end tests, fuzzers, automated code reviews, security reviews, and refactoring routines are framed as necessary guardrails.",
+      "why_it_matters_for_selected_leaves": "The item reinforces structural diff review and verification-tax pages: local practice should vary review depth by blast radius, but production AI-generated code needs stronger acceptance gates and explainability than quick prototypes.",
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "named_entities": [
+        "Business Insider",
+        "Boris Cherny",
+        "Claude Code",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Anthropic"
+      ],
+      "local_practice_implication": "Capture the blast-radius and production-gate distinction, while upstream owns Claude Code entity background.",
+      "follow_up_note": "Potential ingest should cite as secondary reporting unless a primary post is later captured."
+    },
+    {
+      "id": "techradar-ai-code-visibility-gap-2026-09-11",
+      "title": "TechRadar opinion describes a visibility gap around AI-generated code risk",
+      "source_url": "https://www.techradar.com/pro/the-visibility-gap-thats-smuggling-risk-into-ai-code",
+      "published_or_updated_date": "2026-09-11",
+      "visible_date_evidence": "TechRadar page shows Published 11 September 2026.",
+      "source_type": "public trade opinion",
+      "factual_summary": "The article argues that enterprise confidence in AI-generated code is ahead of instrumentation, attribution, and enforcement. It cites survey claims that many leaders report confidence and formal processes while incidents increase and only a subset of processes are consistently enforced.",
+      "why_it_matters_for_selected_leaves": "This supports the verification-tax and structural-review lens: teams need visibility into which code was AI-generated, who reviewed it, why it changed, and what production behavior it caused before they can safely accelerate AI-assisted delivery.",
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "CloudBees",
+        "State of Code Abundance Report"
+      ],
+      "upstream_owned_entities": [
+        "CloudBees"
+      ],
+      "local_practice_implication": "Use as supporting practice commentary, not as sole statistical authority unless the underlying report is later captured.",
+      "follow_up_note": "Potential ingest should prefer primary survey source if found, while preserving this as a dated public practice signal."
+    }
+  ],
+  "excluded_candidate_count": 2,
+  "excluded_candidates": [
+    {
+      "id": "arxiv-code-critique-intent-drift-2026-08-14",
+      "title": "From Code Review to Code Critique: Intent, Drift, and Spotlight for AI-Generated Diffs at Scale",
+      "source_url": "https://arxiv.org/html/2607.29516v2",
+      "visible_date": "2026-08-14",
+      "reason": "Outside the strict seven-day window for this run; relevant to structural diff review but not included as a qualifying update.",
+      "would_have_matched_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ]
+    },
+    {
+      "id": "github-stacked-prs-ai-generated-prs-2026-08-04",
+      "title": "Turn one giant AI-generated pull request to a reviewable stack",
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+      "visible_date": "2026-08-04",
+      "reason": "Outside the strict seven-day window; relevant but already older than the allowed update window.",
+      "would_have_matched_leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md"
+      ]
+    }
+  ],
+  "federation_routing": {
+    "upstream_owned_entities": [
+      "Anthropic",
+      "Atlassian",
+      "Claude Code",
+      "CloudBees",
+      "Confluence",
+      "EU AI Act",
+      "GitHub Copilot",
+      "Harness",
+      "ISO/IEC 42001",
+      "Jira",
+      "MCP",
+      "Model Context Protocol",
+      "NIST AI Risk Management Framework",
+      "Node.js",
+      "OAuth 2.1",
+      "OIDC",
+      "Rovo",
+      "Rust",
+      "Thales",
+      "TypeScript"
+    ],
+    "downstream_owned_scope": "Local AI-assisted development practice, workflow, governance, verification, adoption, context architecture, retrieval/tooling usage, and implementation implications.",
+    "routing_note": "Broad company, product, model, language, framework, protocol, and standards background should route to the upstream AI wiki; this artifact preserves only downstream local-practice implications."
+  },
+  "artifact_policy": {
+    "raw_only": true,
+    "docs_wiki_updated": false,
+    "raw_processed_updated": false,
+    "public_sources_only": true,
+    "private_local_content_sent_to_external_services": false
+  },
+  "follow_up_notes": [
+    "Ingest can prioritize agent governance and observability evidence across Atlassian, Harness, and MCP boundary items.",
+    "GitHub runtime migration is a strong practice example for incremental, reviewable, test-gated agent-assisted infrastructure changes.",
+    "Use secondary/reporting items cautiously and prefer primary underlying reports if later discovered during ingest."
+  ]
+}
