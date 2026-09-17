@@ -1,0 +1,294 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-17T00:33:08Z",
+  "cutoff_window": {
+    "start_utc": "2026-09-15T00:33:08Z",
+    "end_utc": "2026-09-17T00:33:08Z",
+    "rule": "Include only public sources with a visible publication or update date within the last 2 days relative to the run timestamp. Exclude missing, ambiguous, future-dated, older, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_wiki_owns": "AI-assisted development practice, workflow, governance, evaluation, verification, implementation, and adoption lenses.",
+    "upstream_owned_scope": "Broad companies, products, models, developer tools, agentic frameworks, MCP servers, protocols, and broad techniques remain owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "local_handling_rule": "For upstream-owned entity updates, record only the local practice implication or routing note."
+  },
+  "qualifying_updates": [
+    {
+      "title": "OpenAI publishes a model-misalignment reporting framework",
+      "source_url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "visible_date": "September 16, 2026",
+      "source_type": "official research and safety post",
+      "factual_summary": "OpenAI published a framework for tracking, investigating, and disclosing model misalignment, including disclosure tracks, report contents, escalation paths, and six initial reports involving unexpected or concerning model behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent and automation teams can adapt the incident-reporting shape for local agent runs: record observed behavior, severity, affected third parties, discovery path, unresolved questions, mitigation status, and disclosure or escalation decisions.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "GPT-5.6 Sol",
+        "OpenAI Safety Advisory Group"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "local_practice_implication": "Treat agent misbehavior as a first-class engineering incident class, not only a model-lab safety topic; define when local coding-agent anomalies become disclosure, escalation, or audit events.",
+      "follow_up_notes": "Potential ingest should avoid duplicating OpenAI background and focus on local reporting templates, escalation gates, and audit requirements for AI-assisted development agents."
+    },
+    {
+      "title": "KDnuggets publishes a practical guide to AI-agent evals",
+      "source_url": "https://www.kdnuggets.com/how-to-build-effective-evals-for-ai-agents",
+      "visible_date": "September 16, 2026",
+      "source_type": "technical tutorial",
+      "factual_summary": "The article explains why agent evals differ from single-turn LLM evals, recommends separating reasoning, action, and overall execution failures, and describes grader choices, isolated harnesses, repeated trials, transcript review, and pull-request gating.",
+      "why_it_matters_for_ai_assisted_development_practice": "It gives directly usable evaluation guidance for software agents: define clear tasks, verify tool calls and final state with code-based checks where possible, inspect transcripts, and run evals automatically on every agent or prompt change.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "KDnuggets",
+        "Anthropic",
+        "IBM"
+      ],
+      "upstream_owned_entities": [
+        "KDnuggets",
+        "Anthropic",
+        "IBM"
+      ],
+      "local_practice_implication": "Local agent-eval guidance should emphasize layered failure diagnosis, isolated test harnesses, repeated runs, and merge-blocking regression checks rather than single aggregate pass/fail scores.",
+      "follow_up_notes": "Good candidate for later synthesis into verification-and-evals coverage because the article is practice-heavy and not primarily product news."
+    },
+    {
+      "title": "theCUBE Research argues agent governance needs provable trust",
+      "source_url": "https://thecuberesearch.com/ai-agent-governance-is-moving-from-observability-to-provable-trust/",
+      "visible_date": "September 16, 2026",
+      "source_type": "analyst article",
+      "factual_summary": "The article says autonomous agents change enterprise accountability because they can invoke tools, APIs, and other agents. It argues that observability alone does not prove authorization and highlights runtime policy enforcement, delegated authority, cryptographic evidence, and sovereignty constraints.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent governance should prove which permissions a delegated agent carried, which actions were allowed or denied, and whether audit evidence can be trusted, especially when agents act across repositories, tools, CI, and issue systems.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "theCUBE Research",
+        "Traefik Labs",
+        "SUSE",
+        "ECI Research"
+      ],
+      "upstream_owned_entities": [
+        "theCUBE Research",
+        "Traefik Labs",
+        "SUSE",
+        "ECI Research"
+      ],
+      "local_practice_implication": "Permission design for coding agents should include scoped delegation, denial telemetry, and tamper-evident evidence for consequential actions rather than relying only on post-hoc logs.",
+      "follow_up_notes": "Route broad company and product details upstream; retain the local authority, audit, and runtime enforcement implications."
+    },
+    {
+      "title": "CodeRabbit updates configuration for agentic change management",
+      "source_url": "https://docs.coderabbit.ai/reference/configuration",
+      "visible_date": "Last updated: September 15, 2026",
+      "source_type": "product documentation",
+      "factual_summary": "The CodeRabbit configuration reference documents review controls, path-specific instructions, review progress reporting, reviewer assignment rules, a request-changes workflow, tool configuration, security review sections, and a prompt section intended for AI agents in inline review comments.",
+      "why_it_matters_for_ai_assisted_development_practice": "The configuration surface shows code-review agents moving toward explicit, repository-local policy as code: review tone, paths, labels, reviewers, progress surfaces, tool access, and handoff prompts become maintainable governance inputs.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "GitHub",
+        "GitLab"
+      ],
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "GitHub",
+        "GitLab"
+      ],
+      "local_practice_implication": "Local AI code-review guidance should track review configuration as a governed artifact and distinguish human-facing summaries from agent-facing remediation prompts.",
+      "follow_up_notes": "If ingested, do not create a local CodeRabbit product leaf; capture configuration-practice patterns under local review workflow coverage."
+    },
+    {
+      "title": "Open Code Review highlights self-hosted multi-agent pull-request review",
+      "source_url": "https://fireup.pro/news/open-code-review-free-open-source-ai-agent-that-reviews-pull-requests",
+      "visible_date": "15 Sep 2026",
+      "source_type": "technology news item",
+      "factual_summary": "Fireup reports that Open Code Review is an Apache-2.0 self-hosted pull-request review agent that runs specialized reviewers in parallel, adds a debate phase, and posts a synthesized report directly to GitHub PRs.",
+      "why_it_matters_for_ai_assisted_development_practice": "The item reinforces a practice trend toward multi-perspective review rather than a single diff pass, and it raises local questions about reviewer persona design, debate trace retention, model flexibility, and where human review remains authoritative.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Open Code Review",
+        "CodeRabbit",
+        "PR-Agent",
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "Open Code Review",
+        "CodeRabbit",
+        "PR-Agent",
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "local_practice_implication": "AI code-review guidance should consider independent reviewer roles and synthesis steps, while retaining a human judgment gate for architecture, intent, security, and merge authority.",
+      "follow_up_notes": "Verify primary project repository details during ingest before treating stars, license, or feature claims as authoritative."
+    },
+    {
+      "title": "AI Agents Directory notes requirements-to-test coverage and coding-agent governance",
+      "source_url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-september-16-2026",
+      "visible_date": "September 16, 2026",
+      "source_type": "news brief with linked headlines",
+      "factual_summary": "The brief reports several AI-agent updates, including Red Hat focus on preventing compliance violations with AI coding agents, TestMu AI's Assurance Lifecycle for turning requirements into test coverage, an AI coding assistant session hijack, WSO2 agent governance as infrastructure, and increased developer use of AI for coding.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is the convergence of coding-agent governance, requirements-to-test traceability, and incident-driven security controls rather than the individual company announcements.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "AI Agents Directory",
+        "Red Hat",
+        "TestMu AI",
+        "WSO2",
+        "Factory",
+        "G5 Labs",
+        "Xsolla"
+      ],
+      "upstream_owned_entities": [
+        "Red Hat",
+        "TestMu AI",
+        "WSO2",
+        "Factory",
+        "G5 Labs",
+        "Xsolla"
+      ],
+      "local_practice_implication": "Later ingest should split governance-as-infrastructure, requirement coverage, and session-hijack risk into local practice notes only after checking primary sources.",
+      "follow_up_notes": "Because this is an aggregator, use it as a discovery artifact and verify primary linked sources before durable synthesis."
+    },
+    {
+      "title": "Help Net Security surfaces missing-governance and runaway-agent incidents",
+      "source_url": "https://www.helpnetsecurity.com/",
+      "visible_date": "September 16, 2026",
+      "source_type": "security news index",
+      "factual_summary": "The Help Net Security front page lists September 16 items on a runaway AI agent causing a large cloud bill and on what happens when AI-agent governance is missing at scale, alongside other AI and security coverage.",
+      "why_it_matters_for_ai_assisted_development_practice": "Even without using the article bodies, the dated headlines are local practice signals for spend controls, kill switches, budget alerts, execution limits, and governance reviews before coding agents receive cloud or CI authority.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Help Net Security",
+        "AI agent"
+      ],
+      "upstream_owned_entities": [
+        "Help Net Security"
+      ],
+      "local_practice_implication": "Agent permission guidance should include economic blast-radius controls, not only data and security blast-radius controls.",
+      "follow_up_notes": "During ingest, open the specific article pages or primary incident sources before adding durable claims."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title_or_query": "Augment Code code-review and software-factory pages",
+      "url": "https://www.augmentcode.com/solutions/code-review",
+      "observed_date": "No visible publication or update date on the opened page",
+      "reason": "Excluded despite practice relevance because the page itself did not show a qualifying visible date in the opened source."
+    },
+    {
+      "title_or_query": "Augment Code home page and guides index",
+      "url": "https://www.augmentcode.com/",
+      "observed_date": "Search result showed Sep 16, 2026 for one guide, but the opened page was an undated product page",
+      "reason": "Excluded because the qualifying date was not confirmed on the source page used for content."
+    },
+    {
+      "title_or_query": "Tyk API and AI governance homepage",
+      "url": "https://tyk.io/",
+      "observed_date": "No visible publication or update date on opened page",
+      "reason": "Excluded because the governance content was relevant but the page had no qualifying visible date."
+    },
+    {
+      "title_or_query": "Thomas Wiegold Claude Agent SDK guide",
+      "url": "https://thomas-wiegold.com/blog/claude-agent-sdk-guide/",
+      "observed_date": "Search result said published yesterday, but opened page did not expose a visible date in retrieved lines",
+      "reason": "Excluded because visible-date evidence was insufficient."
+    },
+    {
+      "title_or_query": "Sean Goedecke structured-output article",
+      "url": "https://www.seangoedecke.com/jev-means-structured-output-is-interesting-again/",
+      "observed_date": "Search result said 17 hours ago, but opened page did not show a visible publication date",
+      "reason": "Excluded because the article lacked a confirmed visible date within the source content."
+    },
+    {
+      "title_or_query": "Regolo build-verify loop article",
+      "url": "https://regolo.ai/the-build-verify-loop-stop-your-ai-agent-from-claiming-victory-before-the-tests-pass/",
+      "observed_date": "August 19, 2026",
+      "reason": "Excluded as older than the two-day window, even though the verification-loop topic is relevant."
+    },
+    {
+      "title_or_query": "Atlassian always-on agentic development workflow coverage",
+      "url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "observed_date": "Published 5 days ago in search result",
+      "reason": "Excluded as outside the strict two-day window."
+    },
+    {
+      "title_or_query": "GitHub blog AI and ML recent items",
+      "url": "https://github.blog/",
+      "observed_date": "Recent relevant posts visible from September 2-11, 2026; changelog entries from September 16 were not AI-assisted-development practice items",
+      "reason": "Excluded because relevant practice posts were older than the window and the in-window changelog items were operational GitHub changes rather than local AI-development practice updates."
+    },
+    {
+      "title_or_query": "Doshby AI Coding Agents Across the Software Development Lifecycle",
+      "url": "https://blog.doshby.com/",
+      "observed_date": "Sep 15, 2026",
+      "reason": "Excluded because only the blog index snippet was available and the article body was not inspected enough for durable factual extraction."
+    },
+    {
+      "title_or_query": "Business press coverage of OpenAI reporting framework",
+      "url": "https://www.businessinsider.com/openai-unveils-a-system-for-reporting-rogue-ai-agent-behavior-2026-9",
+      "observed_date": "Published today in search result",
+      "reason": "Excluded as duplicate coverage of the official OpenAI source already captured."
+    },
+    {
+      "title_or_query": "Wall Street Journal and Axios coverage of OpenAI safety incidents",
+      "url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
+      "observed_date": "Published today in search result",
+      "reason": "Excluded as duplicate secondary coverage; official OpenAI disclosure was preferred for the raw finding."
+    },
+    {
+      "title_or_query": "General AI frontier-safety policy articles from AP, Guardian, Verge, and Financial Times",
+      "url": "multiple",
+      "observed_date": "Published today in search results",
+      "reason": "Excluded because they are broad AI governance or regulation coverage owned upstream unless a later ingest identifies a specific local software-agent practice implication."
+    }
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "raw_only_boundary": "This collector created only a raw artifact and did not update docs/wiki pages or raw/processed."
+}
