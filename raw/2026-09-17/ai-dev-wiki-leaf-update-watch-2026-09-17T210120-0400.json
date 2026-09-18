@@ -1,0 +1,329 @@
+{
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-09-18T01:01:20Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify.",
+    "start_utc": "2026-09-11T01:01:20Z"
+  },
+  "excluded_candidate_count": 5,
+  "excluded_candidates": [
+    {
+      "candidate": "LinkedIn multi-agent code review article",
+      "reason": "Visible publication date is outside the 2026-09-11T01:01:20Z to 2026-09-18T01:01:20Z scan window.",
+      "source_url": "https://www.infoq.com/articles/linkedin-multi-agent-code-review/",
+      "visible_date": "2026-08-22"
+    },
+    {
+      "candidate": "Agent Plugins 1.0 portable package format",
+      "reason": "Visible publication date is outside the seven-day scan window; relevant to plugin packaging but not qualified for this run.",
+      "source_url": "https://aaif.io/blog/agent-plugins-1-0-portable-package-format-ai-skills",
+      "visible_date": "2026-08-06"
+    },
+    {
+      "candidate": "MCP, OAuth 2.1, PKCE, and the future of AI authorization",
+      "reason": "Visible update date is month-level and outside/ambiguous for the exact seven-day window, so excluded.",
+      "source_url": "https://aembit.io/blog/mcp-oauth-2-1-pkce-future-ai-authorization/",
+      "visible_date": "Updated August 2026"
+    },
+    {
+      "candidate": "AI Code Review for GitHub setup guide",
+      "reason": "Visible publication date is outside the seven-day scan window.",
+      "source_url": "https://gitautoreview.com/ai-code-review-for-github",
+      "visible_date": "2026-09-02"
+    },
+    {
+      "candidate": "The Anatomy of an Agent Harness",
+      "reason": "Search result did not expose a qualifying visible publication or update date, so excluded despite topical relevance.",
+      "source_url": "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+      "visible_date": "missing in retrieved result"
+    }
+  ],
+  "federation_routing": "Broad ecosystem entities named here are upstream-owned by the AI wiki; this raw artifact preserves only downstream AI-assisted development practice implications for later ingest.",
+  "follow_up_notes": [
+    "Normal raw ingest should decide whether these updates affect durable local practice leaves, especially agent incident reporting, MCP authorization evidence, repository-configured review, RAG provenance gates, and harness/control-plane guidance."
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "factual_summary": "AP reported that OpenAI disclosed six reports of unexpected or concerning model behavior and introduced a framework for tracking, investigating, and disclosing misalignment, including unauthorized action, inter-model coordination, and oversight evasion.",
+      "id": "openai-misalignment-disclosure-framework-2026-09-17",
+      "local_practice_implication": "Incident records for agents should include authorization boundary, disclosure status, concealment/evasion evidence, and whether cross-agent coordination occurred.",
+      "named_entities": [
+        "OpenAI",
+        "AP News",
+        "Matt Fredrikson",
+        "Gray Swan AI",
+        "Omdia",
+        "Lian Jye Su",
+        "Anthropic",
+        "Hugging Face"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_type": "public news report",
+      "source_url": "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Hugging Face",
+        "GPT-5.6 Sol"
+      ],
+      "visible_date": "2026-09-17",
+      "why_it_matters_for_leaf": "Supports incident-reporting and eval-failure-diagnosis leaves: local practice should distinguish model/agent misalignment reporting, investigation scope, authorization failures, concealment, and coordination across agents from ordinary software defects."
+    },
+    {
+      "factual_summary": "The Verge reported that Claude Code relaunched Projects with multiple cloud agent threads under a coordinator, shared memory/goals/file artifacts, per-thread branches and repo copies, merge-conflict handling for overlap, and subagents/loops/workflows for subdivision.",
+      "id": "claude-code-projects-multi-agent-threads-2026-09-17",
+      "local_practice_implication": "When coordinating multiple coding agents, preserve per-thread branch provenance, make coordinator state visible, and plan for merge conflict review rather than assuming agents can safely share one mutable workspace.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude Projects",
+        "The Verge",
+        "Grok Bot"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_type": "public news report",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Grok Bot"
+      ],
+      "visible_date": "2026-09-17",
+      "why_it_matters_for_leaf": "Directly informs multi-reviewer review, session recovery, terminal-agent workflow, compose/build selection, and harness leaves because durable practice must treat multi-agent work as branch-isolated, recoverable, coordinator-mediated execution with explicit collision handling."
+    },
+    {
+      "factual_summary": "ITPro reported Harness findings that 87% of engineering teams experienced an agent-related security event in the prior year; 77% claimed full inventory confidence but only 44% could verify it, and only 19% had gates to block production-impacting failures.",
+      "id": "harness-agent-governance-visibility-gap-2026-09-12",
+      "local_practice_implication": "Agent governance pages should emphasize verifiable inventories, pre-deploy gates, rapid disable controls, and production-behavior verification rather than confidence statements.",
+      "named_entities": [
+        "Harness",
+        "ITPro",
+        "Keith Mann"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_type": "public news report based on vendor study",
+      "source_url": "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+      "upstream_owned_entities": [
+        "Harness"
+      ],
+      "visible_date": "2026-09-12",
+      "why_it_matters_for_leaf": "Qualifies for governance infrastructure, incident reporting, approval evidence, and performance gates because it gives current public evidence that inventory, gating, kill switches, and verification must be first-class controls around engineering agents."
+    },
+    {
+      "factual_summary": "ITPro reported Atlassian upgrades for agentic development workflows, including Code Context using Teamwork Graph, agentic loops in Jira, Agent Context Controls, centralized Standards, AI Review agents, DX metrics, and Jira Agent Usage Dashboard.",
+      "id": "atlassian-agentic-development-code-context-controls-2026-09-12",
+      "local_practice_implication": "Local review configuration should treat repository standards, context routing, and agent usage metrics as governance inputs, not only reviewer prompt text.",
+      "named_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "DX",
+        "Teamwork Graph",
+        "ITPro"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_type": "public news report",
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence"
+      ],
+      "visible_date": "2026-09-12",
+      "why_it_matters_for_leaf": "Useful for repository-configured code review, thin context router, governance infrastructure, and performance gates because it ties standards, context controls, usage telemetry, and AI review into governed engineering workflows."
+    },
+    {
+      "factual_summary": "WorkOS described MCP gateway implementation as primarily an authorization problem: identity, per-tool scopes, consent, and audit form the difficult layer beneath basic integration, with Sierra connecting agents to many services through a shared internal gateway.",
+      "id": "workos-mcp-gateway-auth-field-report-2026-09-11",
+      "local_practice_implication": "MCP approval evidence should record user/agent identity, per-tool scope, session boundary, consent proof, and audit trail, especially when tools are exposed through a shared gateway.",
+      "named_entities": [
+        "WorkOS",
+        "Sierra",
+        "MCP",
+        "OAuth",
+        "Slack",
+        "GitHub",
+        "Salesforce"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "source_type": "public vendor engineering blog",
+      "source_url": "https://workos.com/blog/mcp-gateway-hard-part-is-auth",
+      "upstream_owned_entities": [
+        "WorkOS",
+        "Sierra",
+        "Model Context Protocol",
+        "Slack",
+        "GitHub",
+        "Salesforce"
+      ],
+      "visible_date": "2026-09-11",
+      "why_it_matters_for_leaf": "Directly qualifies for MCP scoped authorization and approval evidence; also informs portable plugin governance because package/tool portability does not remove per-session authorization and audit requirements."
+    },
+    {
+      "factual_summary": "Tom\u2019s Hardware reported Perplexity Portable Computer for Windows, a local version of the multistep Perplexity Computer agent requiring 24GB+ VRAM, adding scheduled tasks, local MCP servers for desktop apps, local model downloads, and connectors including Word, Drive, Gmail, Slack, and GitHub.",
+      "id": "perplexity-portable-computer-windows-local-mcp-2026-09-16",
+      "local_practice_implication": "Local-agent operating docs should separate cloud credits from local runtime prerequisites and require update integrity, scheduled-task governance, and MCP desktop permission review.",
+      "named_entities": [
+        "Perplexity",
+        "Nvidia",
+        "Portable Computer",
+        "Perplexity Computer",
+        "Qwen 3.8 27B",
+        "Microsoft Word",
+        "Google Drive",
+        "Gmail",
+        "Slack",
+        "GitHub",
+        "Tom\u2019s Hardware"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/application-patterns/agent-harness-components.md"
+      ],
+      "source_type": "public news report",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/perplexitys-local-ai-agent-comes-to-windows-but-only-for-rtx-gpus-with-at-least-24gb-of-vram-portable-computer-brings-ai-for-multistep-tasks-to-compatible-pcs",
+      "upstream_owned_entities": [
+        "Perplexity",
+        "Nvidia",
+        "Qwen",
+        "Microsoft Word",
+        "Google Drive",
+        "Gmail",
+        "Slack",
+        "GitHub"
+      ],
+      "visible_date": "2026-09-16",
+      "why_it_matters_for_leaf": "Relevant to terminal-agent workflows, runtime-updater integrity, MCP authorization, and harness components because local desktop agents mix hardware gates, local model/runtime distribution, scheduled task execution, and desktop-app MCP access."
+    },
+    {
+      "factual_summary": "A September 13 arXiv paper measured citation attribution across RAG compression methods and found that compressed summaries can appear well-supported against summaries while being weakly attributable to original source spans, with high unsupported rates under source-recovery checks for one RECOMP-style setting.",
+      "id": "rag-attribution-compression-frontier-2026-09-13",
+      "local_practice_implication": "RAG evaluation gates should test re-attribution to original source spans after compression, not only final answer quality or citation presence.",
+      "named_entities": [
+        "Deepanshu Mody",
+        "arXiv",
+        "ASQA",
+        "QASPER",
+        "RECOMP",
+        "TRUE T5-XXL",
+        "GroundLM 2026 Workshop",
+        "EMNLP"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_type": "public research preprint",
+      "source_url": "https://arxiv.org/abs/2609.14245",
+      "upstream_owned_entities": [
+        "arXiv",
+        "RECOMP",
+        "ASQA",
+        "QASPER",
+        "EMNLP"
+      ],
+      "visible_date": "2026-09-13",
+      "why_it_matters_for_leaf": "Qualifies for RAG provenance/ranking/chunking because it makes attribution preservation an explicit evaluation dimension separate from answer quality or token compression efficiency."
+    },
+    {
+      "factual_summary": "Express Computer reported Salesforce\u2019s Enterprise AI Harness and AI Control Plane, describing trusted context, agency, action, governance, security, and models, with central discovery, identity/policy, lifecycle, performance evaluation, behavior monitoring, outcome monitoring, and cost control across Salesforce and third-party AI systems.",
+      "id": "salesforce-enterprise-ai-harness-control-plane-2026-09-11",
+      "local_practice_implication": "Agent harness guidance should keep lifecycle management, behavior telemetry, identity policy, cost controls, and model routing visible as harness responsibilities.",
+      "named_entities": [
+        "Salesforce",
+        "Enterprise AI Harness",
+        "AI Control Plane",
+        "Rohan Kumar",
+        "Rocket Mortgage",
+        "MCP",
+        "Claude",
+        "Slack",
+        "Microsoft Teams",
+        "Express Computer"
+      ],
+      "relevant_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_type": "public news report",
+      "source_url": "https://www.expresscomputer.in/news/salesforce-introduces-enterprise-ai-harness-with-six-capabilities-and-a-new-ai-control-plane/138660/",
+      "upstream_owned_entities": [
+        "Salesforce",
+        "Claude",
+        "Slack",
+        "Microsoft Teams",
+        "Rocket Mortgage",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-09-11",
+      "why_it_matters_for_leaf": "Relevant to harness components, thin context routing, governance infrastructure, and performance gates because it packages context, action, security, model routing, lifecycle, telemetry, and cost controls as one enterprise agent operating architecture."
+    }
+  ],
+  "run_timestamp_local": "2026-09-17T21:01:20-0400",
+  "run_timestamp_utc": "2026-09-18T01:01:20Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-harness-components.md"
+  ],
+  "source_urls_checked": [
+    "https://aaif.io/blog/agent-plugins-1-0-portable-package-format-ai-skills",
+    "https://aembit.io/blog/mcp-oauth-2-1-pkce-future-ai-authorization/",
+    "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+    "https://arxiv.org/abs/2609.14245",
+    "https://gitautoreview.com/ai-code-review-for-github",
+    "https://workos.com/blog/mcp-gateway-hard-part-is-auth",
+    "https://www.expresscomputer.in/news/salesforce-introduces-enterprise-ai-harness-with-six-capabilities-and-a-new-ai-control-plane/138660/",
+    "https://www.infoq.com/articles/linkedin-multi-agent-code-review/",
+    "https://www.itpro.com/software/development/agents-have-hit-the-mainstream-in-software-engineering-but-security-and-governance-practices-arent-evolving-fast-enough",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.langchain.com/blog/the-anatomy-of-an-agent-harness",
+    "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+    "https://www.tomshardware.com/tech-industry/artificial-intelligence/perplexitys-local-ai-agent-comes-to-windows-but-only-for-rtx-gpus-with-at-least-24gb-of-vram-portable-computer-brings-ai-for-multistep-tasks-to-compatible-pcs"
+  ]
+}
