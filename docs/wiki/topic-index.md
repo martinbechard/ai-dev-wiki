@@ -39,6 +39,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [agent-workflows/orient-inspect-patch-verify-loop.md](agent-workflows/orient-inspect-patch-verify-loop.md) records the local controlled-change loop for AI-assisted coding work.
 - [agent-workflows/research-plan-implement-review-lifecycle.md](agent-workflows/research-plan-implement-review-lifecycle.md) records the RPI lifecycle for professional agent work.
 - [agent-workflows/use-compose-build-workflow-selection.md](agent-workflows/use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
+- [agent-workflows/agent-control-flow-selection.md](agent-workflows/agent-control-flow-selection.md) records fixed workflow, iterative-agent, planner-executor, and long-horizon harness selection for development work.
 - [agent-workflows/codebase-wide-agentic-batch-changes.md](agent-workflows/codebase-wide-agentic-batch-changes.md) records staged fleet-wide agent rollout through proof, batched PRs, CI repair, merge tracking, and human approval.
 - [agent-workflows/subagent-coordination.md](agent-workflows/subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [agent-workflows/delegated-coding-handoffs.md](agent-workflows/delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.

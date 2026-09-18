@@ -85,6 +85,8 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 
 The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds bounded orchestration and whole-task efficiency evidence. It records role selection, diagnostics, cancellation, validation, fail-safe patch application, isolated review, worktree isolation, loop checkpoints, and complete-task metrics as harness responsibilities. Locally, harnesses should preserve enough trace, validation, and rollback evidence to decide whether a smaller tool output, a larger context packet, a cascade, or a critique path actually improved accepted completion.
 
+The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds cloud multi-agent thread and enterprise control-plane evidence. Harness components should make coordinator state, shared goals, file artifacts, per-thread branches, merge-conflict handling, lifecycle management, behavior telemetry, identity policy, model routing, performance evaluation, outcome monitoring, and cost controls visible as runtime surfaces. Local-agent runtimes should also expose prerequisite checks, scheduled-task governance, update integrity, and desktop MCP permission review before they act on local applications.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -148,11 +150,14 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Verify generated code against declared runtime dependencies, and isolate concurrent sessions with traffic filtering, queue splitting, database branching, or equivalent environment controls.
 - Preserve role, diagnostic, cancellation, validation, isolated-review, and fail-safe patch evidence when a harness chooses among orchestration patterns.
 - Optimize tool output and context size against accepted task completion, not only local token counts or individual call cost.
+- Expose coordinator state, shared goals, file artifacts, per-thread branch provenance, merge-conflict review state, lifecycle controls, behavior telemetry, identity policy, and cost controls when a harness coordinates multiple coding-agent threads.
+- Separate cloud credits, local runtime prerequisites, scheduled-task permissions, update-integrity checks, and desktop MCP grants when a local agent runtime can operate on workstation applications.
 
 ## Authoritative Sources
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
+- [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
@@ -247,6 +252,7 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Maintained on 2026-08-31 with agent-loop, context, tool, state, permission, feedback, sandbox, observability, provenance, runtime-dependency, and concurrent-session isolation evidence.
 - Maintained on 2026-08-29 with model-harness, durable-runtime, capability-metadata, high-impact tool, safety-eval, trace, cost, and recovery components.
 - Maintained on 2026-07-23 with managed-agent lifecycle hooks, session events, memory events, subagent deltas, containment, egress, package-access, and brokered-access components.
+- Maintained on 2026-09-17 with coordinator-state, shared-goal, per-thread-branch, merge-conflict, lifecycle, behavior-telemetry, local-runtime prerequisite, scheduled-task, update-integrity, and desktop-MCP evidence.
 - Maintained on 2026-08-18 with security sensors, SBOM/threat-intelligence context, managed telemetry, permission-mode, queued-steering, and rewind-state components.
 - Maintained on 2026-08-21 with loop-enforcement, event-subscription, isolated-subagent, durable-goal, steering-channel, and failure-reconstruction evidence.
 - Maintained on 2026-08-27 with declarative workflow loading, checkpoint persistence, retained REPL history, memory stores, subagent specs, human inspection, recovery, verification, and resource-accounting components.

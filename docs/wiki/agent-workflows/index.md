@@ -11,6 +11,7 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - [orient-inspect-patch-verify-loop.md](orient-inspect-patch-verify-loop.md) records the local controlled-change loop for coding agents.
 - [research-plan-implement-review-lifecycle.md](research-plan-implement-review-lifecycle.md) records the RPI lifecycle for professional agent work.
 - [use-compose-build-workflow-selection.md](use-compose-build-workflow-selection.md) records per-workflow use, compose, or build selection.
+- [agent-control-flow-selection.md](agent-control-flow-selection.md) records fixed workflow, iterative-agent, planner-executor, and long-horizon harness selection.
 - [codebase-wide-agentic-batch-changes.md](codebase-wide-agentic-batch-changes.md) records staged fleet-wide agent rollout through proof, batched PRs, CI repair, merge tracking, and human approval.
 - [subagent-coordination.md](subagent-coordination.md) records how independent agent investigations are delegated and integrated.
 - [delegated-coding-handoffs.md](delegated-coding-handoffs.md) records acceptance and handoff criteria for delegated coding work.
@@ -66,3 +67,4 @@ This topic owns work planning, visible progress, subagents, handoffs, state-chan
 - Maintained on 2026-07-30 with supervised cross-environment handoffs as a durable leaf.
 - Maintained on 2026-08-05 with terminal-native agent fleet orchestration as a durable leaf.
 - Maintained on 2026-08-22 with shared-channel agent sessions as a durable leaf for chat-visible coding-agent work.
+- Maintained on 2026-09-17 with agent control flow selection as a durable leaf for ReAct, planner-executor, fixed-workflow, and harnessed-agent decisions.

@@ -15,6 +15,8 @@ The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 
 This operating rule keeps model choice from becoming a shortcut around process design. Model routing, product selection, and build-versus-buy decisions remain downstream of the workflow requirement.
 
+The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds feature-level adoption telemetry and budget-request evidence. Workflow selection should measure which assistant surfaces teams actually use, such as completion, agent edit, review, CLI, app, or cloud-agent work, then connect training, policy, budget approvals, and rollout decisions to those observed workflow surfaces rather than aggregate seat counts.
+
 The [leaf update watch source](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json) reinforces this rule from public coding-agent comparisons and loop-design sources: there is no single best agent outside the work shape, governance requirement, review burden, cost profile, and delivery goal. Leaderboards and product lists are upstream ecosystem material; the local decision is whether a workflow needs automation loops, worktrees, subagents, connectors, review gates, or a smaller human-led assist pattern.
 
 The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add delegated-work signals: longer-horizon agent tasks, default coding-agent use, and platform-level agent adoption make supervision, context discipline, approval gates, and progress visibility part of the workflow definition. Broad OpenAI, Codex, GitHub Copilot, Microsoft, and Linear coverage stays upstream; the local rule is to define delegation thresholds and operating controls before picking the assistant surface.
@@ -160,6 +162,8 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - Check supported runtime surface, SDK stability, and cache behavior when a release note claims better agent compatibility.
 - Select model-routing tiers, batch-change tooling, and platform safety controls from the workflow's risk, scale, and evidence requirements rather than from product availability alone.
 - Treat efficiency, balance, and intelligence model tiers as workflow policy controls: decide cost, latency, quality, billing, and reproducibility expectations before allowing automatic routing to choose the model for each prompt.
+- Track adoption by workflow surface so enablement and policy decisions distinguish completion, agent edit, code review, CLI, app, and cloud-agent use.
+- Define budget-request justification and approval evidence when metered assistant use becomes a recurring workflow dependency.
 
 ## Authoritative Sources
 
@@ -172,6 +176,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -294,3 +299,4 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - Maintained on 2026-08-15 with model rollout, self-hosted factory setup, runtime gateway, durable-execution, scoped-access, evidence-retention, and behavior-baseline workflow inputs.
 - Maintained on 2026-08-26 with global model policy defaults, explicit overrides, data-retention exceptions, workspace administration, usage-limit review, and workflow-specific coding-agent comparison criteria.
 - Maintained on 2026-08-23 with memory, tool-use, feedback, supervision, governance, execution-environment, observability, and evaluation-budget workflow-selection inputs.
+- Maintained on 2026-09-17 with feature-level adoption telemetry and budget-request workflow evidence.

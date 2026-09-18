@@ -89,6 +89,8 @@ The September 7 raw sources add policy-distribution, data-governance, and regula
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add provable-trust and risk-register infrastructure evidence. Locally, the control plane should prove the agent's authority and audit evidence, not just the fact that work happened.
 
+The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) and [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) add governance visibility, anomaly monitoring, and control-plane evidence. Locally, confidence claims should be backed by current agent inventory, production-impact gates, rapid disable controls, per-tool authorization, behavior monitoring, outcome monitoring, cost controls, and trace evidence that can detect tool misuse or privilege abuse.
+
 ## Practice Boundaries
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -168,6 +170,9 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Join model policy, app-control policy, source-access validation, approval admissibility, inventory, audit-log integrity, build-versus-buy gates, and accountable operating owner before expanding agent autonomy.
 - Preserve allowed-action and denied-action evidence with the delegated authority, policy version, exact tool or API target, and accountable human for each consequential agent run.
 - Treat tamper-evident logs, signed receipts, or cryptographic evidence as governance infrastructure when post-hoc logs alone cannot prove authorization.
+- Back governance confidence with verifiable inventory, pre-deploy gates, production-behavior checks, rapid disable controls, and current exception owners.
+- Preserve behavior monitoring, outcome monitoring, cost-control, identity-policy, and lifecycle-management evidence as control-plane outputs, not only dashboard screenshots.
+- Treat trace anomaly monitors as governance infrastructure when they inspect tool parameters, privilege use, cascading failures, resource exhaustion, or rogue-agent behavior.
 - Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
 
 ## Authoritative Sources
@@ -179,6 +184,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
@@ -268,6 +275,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, delegated-authority proof, tamper-evident evidence, sovereignty, and incident-reporting routing evidence; next check should keep anomaly reporting in the focused incident leaf.
+- Maintained on 2026-09-17 with verifiable inventory, pre-deploy gates, rapid disable controls, behavior monitoring, outcome monitoring, cost controls, and trace-anomaly evidence.
 - Maintained on 2026-08-29 with runtime control-plane, gateway, registry, budget, trace, and provenance-aware state governance evidence.
 - Maintained on 2026-09-01 with runtime-profile, migration, customer-owned storage, customer-managed key, opt-in monitoring, model-policy, budget, and AI-approval evidence.
 - Maintained on 2026-09-07 with model-policy, app-control, source-access, approval-admissibility, inventory, audit-integrity, and build-versus-buy governance evidence.

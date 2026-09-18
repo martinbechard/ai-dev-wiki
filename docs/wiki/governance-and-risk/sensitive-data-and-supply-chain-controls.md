@@ -85,6 +85,8 @@ The September 13 raw sources add shadow-agent, vendor-review, package-registry, 
 
 Locally, these surfaces need inventory, processor, retention, certification-scope, runtime-behavior, and revocation evidence before adoption.
 
+The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds untrusted-agent distribution evidence. Agent tools downloaded from search results, ads, or unfamiliar sites should be treated like executable supply-chain inputs: verify trusted channels, signatures or release provenance where available, install path, required permissions, and separation from secrets or wallets before experimentation.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -143,6 +145,7 @@ Locally, these surfaces need inventory, processor, retention, certification-scop
 - Treat repositories advertised as agent skills, MCP servers, setup helpers, or evaluation artifacts as executable supply-chain inputs until provenance, install intent, tool scope, and command behavior are reviewed.
 - Quarantine suspicious agent-facing artifacts and block public contribution, package publication, external file transfer, or future-agent instruction seeding unless explicitly authorized.
 - Review reusable skill folders, stored agent files, browser-control traces, code-execution sandboxes, and signed evidence packs for provenance, retention, data class, and authority before they enter a shared workflow.
+- Download agent tools only from trusted channels, verify release provenance or signatures where available, and keep secrets, wallets, and reusable credentials outside experimental agent environments.
 - Treat token-type revocation, affected-user notifications, and audit logs as sensitive incident evidence; keep credential values out of prompts and raw artifacts while preserving enough metadata for containment review.
 - Require vendor transparency reports or adoption metrics to state data collection scope, safety methodology, exclusions, and auditability before using them as supply-chain or governance evidence.
 - Reassess approved AI tools when connectors, plug-ins, browser extensions, MCP servers, embedded assistants, or action capabilities change the data path or side-effect surface.
@@ -164,6 +167,7 @@ Locally, these surfaces need inventory, processor, retention, certification-scop
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -275,3 +279,4 @@ Locally, these surfaces need inventory, processor, retention, certification-scop
 - Maintained on 2026-08-13 with MCP transport-security, repository-skill provenance, live-data mutation, token-exchange, and prompt-retention controls.
 - Maintained on 2026-08-16 with agent-baiting, skill and MCP provenance, quarantine, constrained-permission, and public-contribution block guidance.
 - Maintained on 2026-08-23 with approved-app drift, skill-directory intake, behavior-policy, and AI-generated code execution controls.
+- Maintained on 2026-09-17 with untrusted-agent download, trusted-channel, release-provenance, install-permission, and secret-separation evidence.

@@ -85,6 +85,8 @@ Locally, review evals should measure those variables separately instead of treat
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add production-bar, repository-configuration, and multi-agent review evidence. Review evals should score whether those focused practices actually improve source-backed finding quality and human acceptance.
 
+The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds independent-verification and maintainer-load evidence. Review evals should distinguish code suggestion, AI code review, deterministic analysis, reasoning-based review, quality gates, tests, and human judgment, and should measure whether AI-generated patches or security findings increase maintainer triage burden without accepted fixes.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -147,6 +149,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Include prototype-versus-production review cases so rubrics do not reward light gates on high-blast-radius code.
 - Score [repository-configured AI code review](../coding-practices/repository-configured-ai-code-review.md) by whether configuration changes measurably affect relevant findings.
 - Score [multi-reviewer AI code review](../coding-practices/multi-reviewer-ai-code-review.md) by role separation, disagreement retention, source grounding, and human acceptance boundaries.
+- Treat independent verification as a separate eval layer from the generator's self-review, with deterministic checks, reasoning-based review, tests, quality gates, and human judgment scored separately.
+- Include maintainer-capacity and triage-load cases when AI-generated patches or AI-found issues are proposed for open-source projects.
 
 ## Authoritative Sources
 
@@ -159,6 +163,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -226,6 +231,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Maintained on 2026-09-16 with production review-bar scoring and routing to repository-configured and multi-reviewer AI code review leaves; next check should evaluate those focused practices through source-backed finding quality.
 - Maintained on 2026-09-05 with cross-file review, multi-model orchestration, cost-premium, Agent Merge loop, failed-check, conflict, rerun, and human-merge eval evidence.
 - Maintained on 2026-09-06 with merge-state, excluded-content, harness-risk, intervention-point, concurrent-write, and audit-trail review evidence.
+- Maintained on 2026-09-17 with independent-verification, deterministic-analysis, quality-gate, human-judgment, maintainer-capacity, and triage-load evidence.
 - Maintained on 2026-08-29 with review-effort defaults and pre-PR review evidence.
 - Maintained on 2026-08-29 with bot-authored PR coverage, large-diff strategy, resolution-label, review-effort, pre-PR review, and reviewer-load eval evidence.
 - Maintained on 2026-09-03 with sandboxed reproduction, critic-reviewer independence, human-curated vulnerability acceptance, true-positive filtering, and fleet-level governance evidence.

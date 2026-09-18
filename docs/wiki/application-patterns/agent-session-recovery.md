@@ -33,6 +33,8 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 
 The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds runtime reconnect and history evidence. Recovery records should preserve completed commands, patch history, Guardian review history, account-scoped MCP approval history, compressed rollout state, uncertain queued submissions, and service-drop recovery markers so a resumed agent can tell which actions are durable and which submissions still need confirmation.
 
+The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds coordinated cloud-thread recovery evidence. When a project runs multiple agent threads, recovery should preserve coordinator memory, shared goals, shared files, each thread's branch or repository copy, overlap detection, merge-conflict status, and the human review needed before parallel work is combined.
+
 ## Practice Boundaries
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -48,6 +50,7 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - Separate durable notes, searchable prior context, unanswered questions, and reply-recovery status before treating a recovered session as ready to continue.
 - Preserve MCP failure counts and latency diagnostics when tool health explains why a session needs recovery.
 - Preserve command history, patch history, verifier history, approval history, compression state, and uncertain queued submissions when reconnecting after runtime or service interruption.
+- Preserve coordinator state, shared goals, shared file artifacts, per-thread branches or repository copies, overlap detection, and merge-conflict review evidence before resuming or merging coordinated agent work.
 
 ## Authoritative Sources
 
@@ -62,6 +65,7 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 
@@ -98,3 +102,4 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - Maintained on 2026-09-01 with prompt-timeline, queue-editing, host-sync, task-identifier, and active-working-time recovery evidence.
 - Maintained on 2026-09-06 with context-note, searchable-history, async-question, reply-recovery, MCP-failure, and latency-diagnostic recovery evidence.
 - Maintained on 2026-09-07 with command-history, patch-history, review-history, approval-history, compression-state, and uncertain-submission recovery evidence.
+- Maintained on 2026-09-17 with coordinator-state, shared-goal, shared-file, per-thread-branch, overlap, merge-conflict, and parallel-work recovery evidence.

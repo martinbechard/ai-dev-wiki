@@ -27,6 +27,8 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 
 The September 8 raw sources add bounded-orchestration and autonomy-budget evidence. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records runtime selection among single-agent, cascade, and critique patterns, while the [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records a pipeline-versus-agent litmus for fixed control flow. Locally, workflow selection should choose static pipelines when steps are known, compose bounded agent orchestration when runtime discovery is useful, and require cost, latency, validation, cancellation, and review evidence before escalating to multi-model or multi-agent execution.
 
+[Agent control flow selection](agent-control-flow-selection.md) owns the finer-grained choice among fixed workflows, iterative ReAct-style loops, planner-executor patterns, and long-horizon harnesses. This page keeps the use, compose, or build decision: whether the chosen control flow should be supplied by a managed tool, composed from existing harness pieces, or built as differentiating infrastructure.
+
 [Codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) owns staged fleet-wide rollout practice. This selection page keeps the use, compose, or build rule: use a managed platform when repository connectors and ordinary review evidence are enough, compose around it when local policy or ledgers are needed, and build only when rollout logic or source-control integration is differentiating.
 
 ## Practice Boundaries
@@ -42,6 +44,7 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - Choose the execution boundary before the branded tool when file locality, credential custody, approval timing, review loop, reproducible setup, or durable workspace state drives the workflow.
 - Treat managed default models, team overrides, retention-gated enablement, reasoning-effort controls, and cost/capability views as workflow-selection inputs rather than prompt-time preferences.
 - Prefer fixed workflows when the path can be known before execution, and require explicit discovery value before agentic control flow adds cost, latency, or review burden.
+- Route fixed-workflow, ReAct-style loop, planner-executor, and long-horizon harness distinctions to [agent control flow selection](agent-control-flow-selection.md).
 - Treat single, cascade, critique, and other multi-agent execution patterns as workflow policies that need cancellation, validation, cost, and isolated-review evidence.
 - Route codebase-wide rollout details to [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) before choosing whether to use, compose, or build.
 
@@ -58,6 +61,7 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md)
 
@@ -80,6 +84,7 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - [senior led agentic execution pods](../adoption-and-operating-model/senior-led-agentic-execution-pods.md)
 - [application harness patterns](../application-patterns/application-harness-patterns.md)
 - [hybrid agent infrastructure economics](../adoption-and-operating-model/hybrid-agent-infrastructure-economics.md)
+- [agent control flow selection](agent-control-flow-selection.md)
 
 ## Open Questions
 
@@ -93,3 +98,4 @@ The September 8 raw sources add bounded-orchestration and autonomy-budget eviden
 - Maintained on 2026-07-27 with execution-boundary selection for local, managed-worktree, cloud, repository-native, browser-agent, and persistent workspace choices.
 - Maintained on 2026-09-02 with managed default models, team overrides, retention-gated enablement, reasoning-effort, and cost/capability selection evidence.
 - Maintained on 2026-09-08 with bounded orchestration, pipeline-versus-agent, cancellation, validation, cost, and isolated-review evidence.
+- Maintained on 2026-09-17 with routing to agent control flow selection for ReAct, planner-executor, fixed-workflow, and harness distinctions.

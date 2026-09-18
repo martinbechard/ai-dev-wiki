@@ -43,6 +43,8 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds corrective-RAG implementation evidence. Codebase and documentation RAG can use a bounded graph that routes by difficulty, grades retrieved evidence, rewrites or searches when retrieval fails, generates only from graded evidence, and checks groundedness and usefulness with retry budgets. Broad Corrective RAG, Self-RAG, Adaptive-RAG, LangGraph, and Pydantic background stays upstream-owned; locally, the useful practice is typed grader output, parallel document grading, failure-rate instrumentation, and explicit retry caps.
 
+The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds compression-attribution evidence. RAG summaries can appear supported by intermediate compressed summaries while losing attribution to the original source spans, so local evals should test re-attribution to original documents after compression, not only final answer quality or citation presence.
+
 ## Practice Boundaries
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -72,6 +74,8 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - Evaluate RAG as an end-to-end pipeline with ingestion, retrieval, reranking, grading, sufficiency, answer generation, task metrics, model-routing policy, and provenance joined to outcomes.
 - Join tool access, lineage, column descriptions, project definitions, metric ownership, rejected candidates, and cited source truth when data agents answer from enterprise repositories.
 - Use bounded corrective-RAG graphs when retrieval complexity justifies them, with typed grader outputs, retry caps, fallback search or rewrite paths, groundedness checks, usefulness checks, and failure-rate telemetry.
+- Test compressed or summarized retrieval outputs against original source spans before accepting citations as grounded.
+- Preserve the path from original source span to chunk, compressed summary, generated answer, and final citation when compression is part of the RAG pipeline.
 
 ## Authoritative Sources
 
@@ -94,6 +98,7 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
 
 ## Related Code
 
@@ -133,3 +138,4 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - Maintained on 2026-08-31 with end-to-end RAG benchmark, ingestion, multi-hop sufficiency, traceable-chunk, reranking, grading, model-routing, and outcome-provenance evidence.
 - Maintained on 2026-09-07 with lineage, column-description, project-definition, metric-ownership, rejected-candidate, and source-truth evidence for data agents.
 - Maintained on 2026-09-08 with corrective-RAG graph, typed-grader, fallback rewrite/search, groundedness, usefulness, retry-cap, and failure-rate evidence.
+- Maintained on 2026-09-17 with compression-attribution evidence that requires source-span re-attribution after summarized retrieval.

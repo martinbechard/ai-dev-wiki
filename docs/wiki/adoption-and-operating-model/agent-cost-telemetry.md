@@ -111,9 +111,12 @@ The September 14 raw sources add explicit cost-quality routing evidence. The [Se
 
 The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) also records dedicated VS Code Agents usage metrics. Locally, adoption telemetry should separate dedicated agent-window users, sessions, messages, per-user indicators, and reporting-role access before teams treat agent-window activity as productivity or cost evidence.
 
+The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds budget-increase workflow evidence. When metered AI credits gate coding work, cost telemetry should record who requested more budget, which workflow needed it, what cap or adjustment was approved, and whether later accepted outcomes justified the increase.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
+- Record budget-increase requests, approver decisions, approved caps, denial reasons, workflow dependency, and post-approval outcome evidence when AI credit limits affect delivery.
 - Pair cost records with outcome evidence such as accepted patch, failed verification, useful research, rejected draft, or blocked handoff.
 - Bound subagent fan-out, retry loops, and long context growth with explicit budget or stop rules.
 - Compare cost against workflow value and review burden, not against model capability claims alone.
@@ -196,6 +199,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -275,6 +279,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-17 with budget-increase request, approver, cap, denial, workflow-dependency, and outcome evidence.
 - Maintained on 2026-09-08 with whole-task efficiency, output-trimming, prompt-cost, privacy-boundary, batching, context-pruning, token-spend, and leaderboard-risk evidence.
 - Maintained on 2026-09-04 with budget-expiry fallback, model-policy replacement, and workflow-level owner evidence for cost controls.
 - Maintained on 2026-09-02 with temporary budget expiry, managed default model, model cost/capability view, reasoning-effort, exception-owner, and accepted-outcome evidence.
