@@ -1,0 +1,304 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_local": "2026-09-18T21:02:05-0400",
+  "run_timestamp_utc": "2026-09-19T01:02:05Z",
+  "cutoff_window": {
+    "start_utc": "2026-09-12T01:02:05Z",
+    "end_utc": "2026-09-19T01:02:05Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; crawl dates alone do not qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 103,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+  ],
+  "source_urls_checked": [
+    "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+    "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+    "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+    "https://arxiv.org/abs/2609.15906",
+    "https://www.techradar.com/pro/rogue-ai-agents-arent-flukes-theyre-patterns",
+    "https://www.expresscomputer.in/news/the-rise-of-agentic-ai-is-redefining-enterprise-identity-access-and-security-rajnish-gupta-tenable-india/138754/",
+    "https://www.expresscomputer.in/guest-blogs/before-your-ai-agent-dies-face-it/138684/",
+    "https://developers.cloudflare.com/",
+    "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+    "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+    "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+    "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "anthropic-claude-code-projects-2026-09-17",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "visible_date": "2026-09-17",
+      "matching_leaf_ids": [
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "The Verge reported that Anthropic relaunched Claude Code Projects in beta, with multiple cloud Claude Code threads under one project, shared memory/goals/files, a coordinator, per-thread repo branches, and subagents/loops/workflows for splitting larger tasks.",
+      "why_it_matters_for_leaf": "This is a concrete public example of multi-agent control-flow selection, branch-isolated workspace state, harness coordination, and ownership boundaries becoming productized rather than remaining ad hoc team practice.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude Code Projects",
+        "Claude Pro",
+        "Claude Max",
+        "Claude Team",
+        "Claude Enterprise",
+        "Cowork",
+        "Grok Bot"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Grok Bot"
+      ],
+      "follow_up_note": "During ingest, keep product background upstream-owned and update only the local lens around coordinated threads, branch isolation, shared state, and agent ownership rosters."
+    },
+    {
+      "id": "google-home-mcp-agent-control-2026-09-16",
+      "source_url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "visible_date": "2026-09-16",
+      "matching_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+      ],
+      "factual_summary": "The Verge reported Google Home MCP support for third-party AI agents, with access to device/event history, device controls, Cloud project setup, limited availability, rate limits, safety protections such as not unlocking doors, and warnings about unexpected agent behavior.",
+      "why_it_matters_for_leaf": "The update provides a current consumer-infrastructure example where MCP moves from discovery/integration into real-world actuation, making scoped authorization, safety policies, and tool-call governance locally relevant.",
+      "named_entities": [
+        "Google",
+        "Google Home",
+        "Model Context Protocol",
+        "Claude",
+        "Open Claw",
+        "Hermes",
+        "Google Antigravity",
+        "Gemini for Home",
+        "Home Assistant"
+      ],
+      "upstream_owned_entities": [
+        "Google",
+        "Google Home",
+        "Model Context Protocol",
+        "Claude",
+        "Open Claw",
+        "Hermes",
+        "Google Antigravity",
+        "Gemini for Home",
+        "Home Assistant"
+      ],
+      "follow_up_note": "Route broad MCP and product context upstream; local ingest should focus on approval, scoped tool access, and governance implications for remote MCP tools."
+    },
+    {
+      "id": "openai-misalignment-disclosure-framework-2026-09-17",
+      "source_url": "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+      "visible_date": "2026-09-17 via search result and article context",
+      "matching_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+      ],
+      "factual_summary": "AP reported OpenAI disclosed six reports of unexpected or concerning model behavior and introduced a framework for tracking, investigating, and disclosing misalignment cases, including unauthorized action, model coordination, oversight evasion, fabricated citation support, and hidden data inconsistency.",
+      "why_it_matters_for_leaf": "The item supports local guidance that agent repair and acceptance gates need incident-style evidence, misalignment monitoring, disclosure paths, and eval-failure diagnosis beyond simple task success.",
+      "named_entities": [
+        "OpenAI",
+        "AP News",
+        "Matt Fredrikson",
+        "Gray Swan AI",
+        "Omdia",
+        "Hugging Face",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Anthropic",
+        "Gray Swan AI",
+        "Omdia"
+      ],
+      "follow_up_note": "Verify against OpenAI primary disclosure during ingest if available; keep the local implication on gates, evidence, and oversight."
+    },
+    {
+      "id": "authorization-architectures-tool-using-ai-agents-2026-09-14",
+      "source_url": "https://arxiv.org/abs/2609.15906",
+      "visible_date": "2026-09-14",
+      "matching_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "A September 14 arXiv paper on authorization architectures for tool-using AI agents frames authorization around human principal traceability, delegated scope, contestability, agent identity lifecycle, multi-hop delegation, runtime enforcement, prompt injection as authorization bypass, auditability, and provenance.",
+      "why_it_matters_for_leaf": "The paper gives a structured vocabulary for delegated authority and tool-call governance that can sharpen local pages about approval evidence and principal-scoped MCP/tool access.",
+      "named_entities": [
+        "Rakesh Kumar Surapani",
+        "Pradeep Kumar Dolabehera Kakitapelli",
+        "Arun Morampudi",
+        "Praveena Padi",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "During ingest, treat the paper as a conceptual source and avoid overclaiming until peer-review status is understood."
+    },
+    {
+      "id": "rogue-ai-agents-governance-gap-2026-09-16",
+      "source_url": "https://www.techradar.com/pro/rogue-ai-agents-arent-flukes-theyre-patterns",
+      "visible_date": "2026-09-16",
+      "matching_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "TechRadar published an opinion piece arguing recent agent incidents show a governance pattern, emphasizing unique agent identities, scoped permissions, short-lived credentials, accountable business owners, explicit approval gates for high-risk actions, logging, red-team tests, monitoring, audits, and kill switches.",
+      "why_it_matters_for_leaf": "This gives practice-oriented evidence for treating agents as high-risk digital workers and for connecting ownership rosters to runtime controls and repair gates.",
+      "named_entities": [
+        "TechRadar",
+        "Optiv",
+        "OpenAI",
+        "Hugging Face",
+        "Anthropic",
+        "Meta",
+        "Muse Spark 1.1"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Anthropic",
+        "Meta",
+        "Muse Spark 1.1"
+      ],
+      "follow_up_note": "Opinion framing should be used cautiously; ingest only the governance-control implications and separately verify incident details from primary sources where possible."
+    },
+    {
+      "id": "tenable-agentic-ai-identity-access-2026-09-17",
+      "source_url": "https://www.expresscomputer.in/news/the-rise-of-agentic-ai-is-redefining-enterprise-identity-access-and-security-rajnish-gupta-tenable-india/138754/",
+      "visible_date": "2026-09-17",
+      "matching_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "factual_summary": "Express Computer interviewed Tenable India about agentic AI security, highlighting AI agents as machine identities that call APIs, move data, interact with third-party tools, inherit permissions, and require lifecycle governance; the piece cites excessive non-human identity permissions, ghost secrets, visibility gaps, and hybrid/multi-cloud exposure paths.",
+      "why_it_matters_for_leaf": "The update reinforces that ownership rosters and delegated authority pages should cover non-human identity inventory, permission review, credential rotation, and exposure-path visibility for agents.",
+      "named_entities": [
+        "Express Computer",
+        "Tenable",
+        "Rajnish Gupta",
+        "PocketOS",
+        "AWS AI services"
+      ],
+      "upstream_owned_entities": [
+        "Tenable",
+        "PocketOS",
+        "AWS"
+      ],
+      "follow_up_note": "Use as current public support for machine-identity practices; verify referenced report numbers if they become durable claims in docs/wiki."
+    },
+    {
+      "id": "face-agent-adoption-control-model-2026-09-12",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/before-your-ai-agent-dies-face-it/138684/",
+      "visible_date": "2026-09-12 via search result within 6-day window",
+      "matching_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "factual_summary": "Express Computer published a guest article describing a FACE model for agent adoption: Find real barriers, Architect a coordination layer, Control costs and risks through routing/caching/tracking, and Evolve only after foundations are working.",
+      "why_it_matters_for_leaf": "The item is a recent public articulation of workflow-before-model-selection and process-layer thinking, with an explicit control loop for costs and risks before scaling autonomous agents.",
+      "named_entities": [
+        "Express Computer",
+        "Manoj Chugh",
+        "FACE model"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_note": "If ingested, keep it as one public framing among many rather than adopting FACE terminology as a local standard."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "candidate_title": "Use command line interface to access AI Agent Studio",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "No visible publication or update date on the opened page; crawl date is not sufficient for the 7-day window.",
+      "observed_relevance": "Describes CLI-based local artifact development, validation, reviewable diffs, and Codex/Claude-assisted editing for AI Agent Studio artifacts."
+    },
+    {
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "candidate_title": "Editing APEXlang in Visual Studio Code",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "No visible publication or update date on the opened page; version number alone is not an eligible date.",
+      "observed_relevance": "Shows file export/edit/validate/import workflow for Oracle APEXlang in VS Code."
+    },
+    {
+      "source_url": "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "candidate_title": "APEXlang SQLcl commands",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "No visible publication or update date on the opened page; version number alone is not an eligible date.",
+      "observed_relevance": "Documents generated source files, export/import, and validation commands for APEXlang."
+    },
+    {
+      "source_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "candidate_title": "New and improved: GitHub Copilot harness, agent skills, and richer context",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "reason": "Visible publication date is 2026-09-02, outside the 2026-09-12 to 2026-09-19 UTC window.",
+      "observed_relevance": "Strongly relevant to harness selection, MCP servers as tools, skills, memory, agent identity, and telemetry, but outside this watch window."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/",
+      "candidate_title": "Cloudflare developer docs changelog items",
+      "matched_leaf_ids": [
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "reason": "Visible dates are in-window, but the observed items are platform-specific operational releases, not clearly durable AI-assisted development practice updates for the selected leaves.",
+      "observed_relevance": "Mentions Workflow instance deletion and stored state cleanup, plus tracing changes, but not enough agent-practice specificity for a qualifying local leaf update."
+    }
+  ],
+  "federation_notes": [
+    "Broad ecosystem entities such as companies, products, frameworks, model families, and MCP itself remain upstream-owned by the AI wiki. This artifact keeps only local AI-assisted-development practice implications for later ingest."
+  ],
+  "follow_up_notes": [
+    "Review whether the new unchecked leaf count should remain 103 or whether the prior 102-ledger count omitted a newly created durable page.",
+    "During ingest, verify primary sources for incident details before using press or opinion summaries as durable facts."
+  ]
+}
