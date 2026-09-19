@@ -15,6 +15,13 @@ Fixed workflows fit development tasks whose stages and transitions are known bef
 
 The useful local rule is to classify the outer orchestration and inner executor separately. A fixed workflow can contain a ReAct-style node, a planner can delegate to iterative executors, and a Deep Agents-style harness can contain multiple control-flow shapes. Multiple agents, todos, or reactions to observations do not by themselves prove that ReAct is the governing architecture.
 
+The September 18 raw sources add a productized coordinator-worker signal from [Claude Projects coverage](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) and the [topic news collector source entry for the Anthropic announcement](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json). Broad Claude and Claude Code facts stay upstream-owned; locally, project-level agent orchestration should record:
+
+- The coordinator that owns the goal.
+- The worker thread or branch that owns each slice.
+- The shared-memory update path.
+- The merge or conflict evidence that proves workers rejoined the project safely.
+
 ## Practice Boundaries
 
 - Prefer fixed workflows when required stages, evidence gates, and approvals are known before execution.
@@ -22,11 +29,14 @@ The useful local rule is to classify the outer orchestration and inner executor 
 - Prefer planner-executor separation when dependencies can be represented up front and execution results may require replanning.
 - Evaluate long-horizon harnesses when file work, context offloading, delegated investigation, persistence, or recovery are required by the task.
 - Classify outer orchestration separately from inner executors so framework names do not hide workflow control.
+- Treat coordinator-worker project surfaces as long-horizon harnesses when they combine shared goals, parallel threads, per-thread branches, project memory, and conflict resolution.
 - Measure completion quality, tool and model calls, latency, recovery, context handling, and gate observance before claiming one control flow is better.
 - Route broad ReAct, LangGraph, Deep Agents, and planning-architecture background to the upstream AI wiki.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md)
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
 - [subagent coordination](subagent-coordination.md)
@@ -60,4 +70,5 @@ The useful local rule is to classify the outer orchestration and inner executor 
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with coordinator-worker project orchestration, per-thread branch, shared-memory, and conflict-resolution evidence.
 - Created on 2026-09-17 from source-backed research on ReAct, Deep Agents, planner-executor patterns, and workflow selection; next check should verify whether upstream technique leaves cover ReAct and planning architectures before adding more local detail.

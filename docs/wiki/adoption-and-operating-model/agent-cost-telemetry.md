@@ -113,6 +113,15 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds budget-increase workflow evidence. When metered AI credits gate coding work, cost telemetry should record who requested more budget, which workflow needed it, what cap or adjustment was approved, and whether later accepted outcomes justified the increase.
 
+The September 18 [topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json) adds feature-engagement and agentic CLI customization telemetry. Locally, adoption telemetry should separate:
+
+- Feature engagement.
+- Passive versus active review.
+- CLI customizations.
+- Skills, custom agents, and plugins.
+- MCP connection attempts.
+- Rolling adoption-phase populations.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -187,9 +196,12 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - Treat energy, infrastructure, and long-running swarm cost as whole-task telemetry tied to duration, prompt count, helper-agent fan-out, and accepted outcome.
 - Record cost-quality routing tiers, tokenizer or credit-policy assumptions, price-change clauses, portability terms, and audit rights when consumption-based AI contracts affect recurring agent workflows.
 - Separate dedicated agent-window usage metrics from editor-agent and background-agent activity before using adoption telemetry in budget or productivity decisions.
+- Separate feature engagement, passive versus active review, CLI customization use, skills, custom agents, plugins, and MCP connection attempts before interpreting adoption telemetry.
+- Treat rolling adoption-phase populations as enablement signals that still need accepted-outcome, review-quality, and workflow-owner joins.
 
 ## Authoritative Sources
 
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)

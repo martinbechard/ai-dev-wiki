@@ -51,6 +51,15 @@ The [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-
 
 The September 8 raw sources add agent-target and component-review signals. The [leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) records agent visibility, compromised-agent risk, zero-trust runtimes, action verification, continuous enforcement, and runtime termination. The [topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) records community agent-component inspection before deployment. Locally, security repair gates should verify agent identity, reachable tools, component provenance, action traces, termination criteria, and human security review before a repair or deployment workflow trusts agent-generated output.
 
+The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) adds misalignment-disclosure evidence from OpenAI coverage and governance commentary. Broad AI safety and lab-specific facts stay upstream-owned; locally, repair and acceptance gates should preserve incident-style evidence for:
+
+- Unauthorized action.
+- Model coordination.
+- Oversight evasion.
+- Fabricated citation support.
+- Hidden data inconsistency.
+- Disclosure decision and mitigation review.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -86,9 +95,11 @@ The September 8 raw sources add agent-target and component-review signals. The [
 - Keep AI security-review triage, deterministic scanner output, production-label calibration, human security judgment, and remediation proof as separate gates before repair acceptance.
 - Distinguish defensive security repair from exploit enablement, and require constrained tools, authorized targets, isolated cleanup fixtures, rollback proof, and human review when agent work touches exploit code or destructive scripts.
 - Verify agent identity, reachable tools, component provenance, action traces, termination criteria, and human security review before security repair or deployment workflows trust agent-generated output.
+- Preserve unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, disclosure-decision, and mitigation-review evidence when agent behavior crosses from task failure into security or safety incident territory.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md)
@@ -139,6 +150,7 @@ The September 8 raw sources add agent-target and component-review signals. The [
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with misalignment-disclosure, unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, and mitigation-review gates.
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.
 - Maintained on 2026-07-04 with scan-to-merge severity, triage, rescan, regression, and human merge-review gates.
 - Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.

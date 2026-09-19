@@ -33,6 +33,13 @@ The August 25 raw sources add context-as-system-state and shared-information evi
 
 The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds instruction-placement and semantic-context evidence. Context routers should route reusable procedures to skills, durable constraints to rules files, and just-in-time evidence to retrieval layers; data-agent routes should include lineage, column descriptions, project definitions, metric ownership, and source-truth checks before retrieved data becomes answer context.
 
+The September 18 [topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json) adds a concise public framing for skills, MCP, and RAG as complementary layers. Broad MCP, RAG, and product background stays upstream-owned; locally, context routers should separately route:
+
+- Access standards.
+- Readable procedural skills.
+- Retrieved grounding.
+- Human code ownership.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -57,9 +64,11 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Route instructions, retrieved knowledge, tools, memory, schemas, workflow data, guardrails, and state carryover as separately labeled context inputs with freshness and authority rules.
 - Treat shared information stores as multi-writer systems whose write governance and read-time context construction need different controls.
 - Route skills, rules files, retrieval evidence, lineage, metric definitions, and source-truth checks as separate context layers when coding or data agents need both procedure and facts.
+- Route access standards, readable team procedures, retrieval grounding, and human review ownership as separate layers when composing skills, MCP, and RAG in one workflow.
 
 ## Authoritative Sources
 
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -101,6 +110,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with skills, MCP, RAG, access-standard, procedural-knowledge, retrieval-grounding, and human-code-ownership layer boundaries.
 - Created on 2026-06-23 from the folder organization source note and the two local AI development decks.
 - Maintained on 2026-06-23 as the overview page for split context architecture leaves.
 - Maintained on 2026-07-03 with governed meaning, policy metadata, lineage, retrieval, memory, and task-rule routing boundaries.

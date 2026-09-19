@@ -106,6 +106,11 @@ The September 8 raw sources add containerized MCP, component-review, and secrets
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add MCP-as-action-boundary and provable-authorization evidence. Locally, tool governance should prove the permission chain and denial behavior for chained actions, not only log that a tool call happened.
 
+The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) and [topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json) add two tool-governance refinements:
+
+- Consumer infrastructure exposed through MCP should separate discovery, history reads, device or system controls, rate limits, and safety-denied actions.
+- Agent customization telemetry should separate MCP connection attempts, skill or plugin invocations, custom-agent starts, and tool calls instead of collapsing them into one adoption metric.
+
 ## Practice Boundaries
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
@@ -201,9 +206,13 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Inspect third-party agents, skills, MCP servers, and playbooks as component dependencies before deployment, especially when they can receive runtime secrets or reach enterprise tools.
 - Enforce identity, authorization, rate limits, separation of duties, access review, and audit at the MCP gateway or platform boundary when tool calls can chain across systems.
 - Preserve allowed and denied tool-call attempts, policy reason, delegated authority, and exact action payload so audit can prove why a chained action was or was not permitted.
+- Separate read-only history access, state-changing controls, rate limits, and safety-denied actions when MCP tools reach physical, operational, or customer-facing systems.
+- Interpret agent customization telemetry by event type; an MCP connection attempt is not the same as an approved tool call or a successful side effect.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)

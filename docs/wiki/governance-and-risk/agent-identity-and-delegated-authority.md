@@ -62,6 +62,11 @@ The September 8 raw sources add attack-surface, local-runtime, secrets, and poli
 
 The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds an agent-authentication taxonomy. Local delegated-authority records should distinguish delegated user authority, workload identity, registration protocols, and first-class agent principals with accountable human metadata before tools, tokens, or MCP-mediated actions are granted.
 
+The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) adds current authorization and non-human identity evidence:
+
+- The agent authorization paper frames human-principal traceability, delegated scope, contestability, multi-hop delegation, runtime enforcement, provenance, and prompt injection as authorization-bypass concerns.
+- Public machine-identity coverage reinforces that agent identities need inventory, permission review, credential rotation, and exposure-path visibility rather than inherited or ghost access.
+
 ## Practice Boundaries
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -102,9 +107,12 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 - Inventory reachable tools and approved systems before granting broad enterprise access, because agents are both actors to govern and attack surfaces to monitor.
 - Distinguish delegated user authority, workload identity, registration flow, and first-class agent principal identity before issuing tokens or granting tool access.
 - Preserve accountable human metadata for agent principals so audit and revocation do not collapse into anonymous service-account ownership.
+- Treat prompt injection as an authorization-bypass risk when tool-using agents can translate untrusted content into delegated actions.
+- Record contestability, multi-hop delegation, provenance, credential rotation, and exposure-path review for non-human agent identities.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
@@ -161,6 +169,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.
 - Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.
 - Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.

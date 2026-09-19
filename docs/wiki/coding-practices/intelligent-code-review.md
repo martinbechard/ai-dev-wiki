@@ -110,6 +110,14 @@ The September 14 raw sources add review-adjacent signals that now route to focus
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add review-configuration and multi-reviewer signals. Locally, this overview keeps the general rule that review decisions need visible ownership.
 
+The September 18 [topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json) adds review-lifecycle evidence from Copilot code review updates. Broad GitHub Copilot facts stay upstream-owned; locally, AI review should preserve:
+
+- Finding state and grouping.
+- Auto-resolution reasons.
+- Previously missed issue evidence.
+- Human replies that keep findings open.
+- Generated commit-message review when accepted suggestions are batched.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -203,9 +211,12 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence that prototype and production review bars should stay distinct.
 - Keep large agent-authored migrations reviewable through incremental slices, explicit owners, and tests.
 - Route the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) review-practice signals to the focused configuration and multi-reviewer leaves.
+- Preserve open, resolved, previously missed, and auto-resolved finding state when AI review comments become a managed lifecycle rather than one-time feedback.
+- Treat AI-generated batch commit messages as reviewable metadata that still needs human ownership before merge.
 
 ## Authoritative Sources
 
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)

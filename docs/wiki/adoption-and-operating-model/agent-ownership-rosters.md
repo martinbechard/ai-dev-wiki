@@ -38,6 +38,14 @@ The September 3 raw sources add decision-owner and identity-taxonomy evidence:
 - The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) reinforces that business-action agents need owner, autonomy, trace, kill-switch, and tool-change fields.
 - The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds identity classes that affect lifecycle, credential duration, delegated authority, review cadence, and revocation.
 
+The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) reinforces the owner-card link between agent identity and runtime controls. Opinion and vendor-interview sources should be treated as practice signals, not incident ground truth; locally, they support owner-card fields for:
+
+- Scoped permissions and short-lived credentials.
+- Accountable business owner.
+- Approval gates for high-risk actions.
+- Monitoring and audit cadence.
+- Kill-switch responsibility.
+
 ## Practice Boundaries
 
 - Name one human owner for every recurring agentic job that affects team work.
@@ -63,9 +71,11 @@ The September 3 raw sources add decision-owner and identity-taxonomy evidence:
 - Record runtime-discovery status, catalog source, reusable-skill owner, lifecycle stage, credential owner, wake or sleep authority, and decommission evidence for persistent or organization-level agents.
 - Record autonomy tier, kill switch, immutable decision trace, tool-change owner, and per-call authorization evidence when an agent can execute or recommend business actions.
 - Classify each agent identity as copilot, autonomous agent, orchestrator, ephemeral subagent, or external agent service when that class changes credential duration, delegation limits, or review cadence.
+- Record accountable business owner, short-lived credential policy, high-risk approval gate, monitoring owner, audit cadence, and kill-switch owner for agents treated as non-human workers.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md)
@@ -108,6 +118,7 @@ The September 3 raw sources add decision-owner and identity-taxonomy evidence:
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with scoped-permission, short-lived-credential, high-risk approval, monitoring, audit-cadence, and kill-switch owner-card fields.
 - Maintained on 2026-08-29 with live agent discovery, reusable-skill ownership, custom-agent catalogs, lifecycle stage, wake or sleep authority, and decommission evidence.
 - Created on 2026-06-23 to hold agent roster and owner-card practice.
 - Maintained on 2026-06-27 with single-responsible-owner and ownership-card fields from public practice updates.

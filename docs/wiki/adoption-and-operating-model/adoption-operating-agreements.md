@@ -47,6 +47,11 @@ The [September 6 topic news collector source](../../../raw/processed/2026-09-06/
 
 The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds operating-model boundary evidence. Adoption agreements should distinguish coding-agent sessions from unattended enterprise-agent operations, name developer-as-architect responsibilities, define build-versus-buy gates, and require prototype validation before agent-generated output becomes product direction.
 
+The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json) and [topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json) add trust-calibration and staged-adoption evidence. Opinion and practitioner sources should be attributed as such, but they support two durable operating-agreement rules:
+
+- Treat agents as software systems requiring ownership and review, not as human teammates.
+- Expand automation only after barriers, coordination layer, cost or risk controls, and working foundations are visible.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -85,9 +90,13 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Allow AI assistance only with explicit contributor accountability for understanding, review, testing, modification, legal compliance, branch isolation, session portability, and approved model routes.
 - Join access, usage, concurrent-session, and token metrics to task classes, intervention rates, and accepted outcomes before using them to justify rollout expansion.
 - Defer index-level adoption advice until the article body or an equivalent primary source is verified.
+- Use explicit language that keeps agents as software systems with human accountability, even when interfaces feel teammate-like.
+- Require barrier discovery, coordination-layer design, cost/risk controls, and foundation checks before scaling agent automation.
 
 ## Authoritative Sources
 
+- [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -139,6 +148,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-18 with trust-calibrated agent language, anti-anthropomorphism, staged adoption, coordination-layer, and cost/risk-control evidence.
 - Maintained on 2026-08-29 with workflow-redesign, institutional skill ownership, reviewer-fatigue, collaboration-health, workspace-layer, and prototype-to-deployment trust fields.
 - Created on 2026-06-23 from local source guidance on scaling practice, skill files, workflow choice, tiers, and human acceptance.
 - Split on 2026-06-23 so operating agreements link durable leaves rather than bundling independently changing concepts.
