@@ -1,0 +1,329 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-19T00:33:18Z",
+  "cutoff_window": {
+    "start_utc": "2026-09-17T00:33:18Z",
+    "end_utc": "2026-09-19T00:33:18Z",
+    "policy": "Only public sources with visible publication or update dates within the two-day run window were eligible. Missing, ambiguous, future-dated, duplicate, upstream-only, or boundary-only dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice: context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "handling": "Broad entity updates are recorded only as upstream-owned context or reduced to downstream practice implications."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Copilot code review adds progress grouping, comment titles, smarter auto-resolution, and batch commit messages",
+      "source_url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 18, 2026",
+      "factual_summary": "GitHub Copilot code review now shows an overview of review effort and findings, groups open, resolved, and previously missed issues, adds concise comment titles, improves auto-resolution behavior, and generates commit messages for eligible batches of accepted review suggestions.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI review output is becoming a managed feedback lifecycle rather than a flat stream of comments. Local review practice may need to account for finding state, severity, prior-round validation, human replies that keep findings open, and generated commit metadata when accepting agent suggestions.",
+      "candidate_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Capture as a downstream lens on AI code review triage, auto-resolution trust, and review suggestion batching rather than as a product feature leaf.",
+      "follow_up_notes": "During ingest, compare against any existing AI code review workflow guidance and record whether generated commit messages need human review before merge."
+    },
+    {
+      "title": "Copilot weekly release notes connect review validation, Sentry-driven fixes, Dev Containers, and agent-session PR flow",
+      "source_url": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 18, 2026",
+      "factual_summary": "GitHub's weekly Copilot release notes describe code review updates, shell-tool validation during reviews, Lite reviews combining findings from multiple agents, auto model selection tiers, Sentry canvas crash-to-fix workflows, local Dev Container support for VS Code agents, automatic cleanup of inactive sessions after PR merges, and PR creation from Agent Host sessions.",
+      "why_it_matters_for_ai_assisted_development_practice": "The release groups several operational patterns: agents validating with project tools, crash reports becoming repair tasks, local containerized execution, PR handoff from sessions, and lifecycle cleanup after merges. These are practice-level signals for harness architecture and source-workflow design.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Sentry",
+        "VS Code",
+        "Dev Containers",
+        "Copilot CLI",
+        "Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Sentry",
+        "VS Code",
+        "Dev Containers"
+      ],
+      "local_practice_implication": "Treat as evidence that coding-agent workflows are converging on validated repair loops, container-governed execution, and PR lifecycle controls.",
+      "follow_up_notes": "During ingest, avoid duplicating product documentation; extract only workflow implications such as validation expectations, crash-to-PR traceability, and session cleanup policies."
+    },
+    {
+      "title": "GitHub frames Skills, MCP, and RAG as complementary workflow layers",
+      "source_url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+      "source_type": "vendor blog",
+      "visible_date": "September 18, 2026",
+      "factual_summary": "A GitHub article argues that developers should read enough AI-generated code to own the result; that skills, MCP, and RAG solve different workflow problems; that MCP provides standard tool and data access; that skills package readable process expertise; and that retrieval grounds systems in relevant information outside model training data.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a clean public articulation of a layered practice model: interface standards for access, readable skills for team process, retrieval for grounding, and human review responsibility for generated code.",
+      "candidate_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "GitHub",
+        "Model Context Protocol",
+        "MCP",
+        "RAG",
+        "Skills"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Model Context Protocol",
+        "MCP",
+        "RAG",
+        "Skills"
+      ],
+      "local_practice_implication": "Keep broad MCP, RAG, and skills background upstream-owned, but capture the downstream composition pattern for agent context architecture.",
+      "follow_up_notes": "This may fit a local page on context architecture layering or durable agent instructions, with upstream links for the broad techniques."
+    },
+    {
+      "title": "Copilot usage metrics API adds agentic CLI customization telemetry",
+      "source_url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 17, 2026",
+      "factual_summary": "GitHub Copilot usage metrics now include agentic CLI activity for skills, custom agents, MCP servers, slash commands, and plugins. Reports can show top items, distinct use counts, and MCP connection attempts while hiding customer-defined item names for privacy.",
+      "why_it_matters_for_ai_assisted_development_practice": "Enterprise AI-assisted development programs need telemetry for which agent customizations are used, whether enablement is spreading, and where governance must distinguish invocations, agent starts, plugin skill calls, and MCP connection attempts.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Model Context Protocol",
+        "MCP",
+        "plugins",
+        "skills",
+        "custom agents"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "local_practice_implication": "Capture governance metrics vocabulary and privacy boundary guidance rather than product API specifics.",
+      "follow_up_notes": "Ingest should note that MCP activity counts connection attempts, not tool calls, so metrics need careful interpretation."
+    },
+    {
+      "title": "Copilot impact dashboard adds feature engagement and adoption-phase reporting",
+      "source_url": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 17, 2026",
+      "factual_summary": "GitHub's Copilot impact dashboard now reports active users who regularly use key features, including code completion, agent edit, passive and active Copilot code review, Copilot cloud agent, Copilot CLI, and Copilot app. The API also adds a rolling 28-day AI adoption phase population measure.",
+      "why_it_matters_for_ai_assisted_development_practice": "This update reinforces adoption measurement as a multi-feature operating-model concern rather than a single completion-usage metric. It distinguishes passive and active code review engagement and gives leaders a way to target enablement.",
+      "candidate_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot impact dashboard",
+        "Copilot cloud agent",
+        "Copilot CLI",
+        "Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Use as source evidence for adoption dashboards that separate feature types, active versus passive participation, and rolling maturity populations.",
+      "follow_up_notes": "During ingest, preserve the distinction between user-level reports and aggregate feature engagement."
+    },
+    {
+      "title": "Claude Projects redesign introduces coordinator-led parallel threads with shared memory",
+      "source_url": "https://claude.com/blog/projects-redesigned",
+      "source_type": "vendor product announcement",
+      "visible_date": "September 17, 2026",
+      "factual_summary": "Anthropic announced a redesigned Projects experience in beta for Claude Code users. Projects can scope a goal, delegate work to parallel threads, coordinate outputs, let each thread work on its own branch and repository copy, use subagents, loops, and workflows, and build shared project memory over time.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update provides public evidence for a project-level orchestration pattern: a coordinator chat, worker threads, branch isolation, merge-conflict handling, shared memory, configurable environments, and usage-limit awareness.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "Claude Projects",
+        "subagents"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude",
+        "Claude Code",
+        "Claude Projects"
+      ],
+      "local_practice_implication": "Route product facts upstream, but capture the downstream operating pattern for multi-thread agent coordination, branch boundaries, shared memory, and coordinator-worker handoff.",
+      "follow_up_notes": "During ingest, compare with local multi-agent coordination guidance and avoid restating Claude feature catalog details."
+    },
+    {
+      "title": "Martin Fowler highlights trust, anthropomorphism, and confidence risk in LLM practice",
+      "source_url": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+      "source_type": "practitioner essay",
+      "visible_date": "17 Sep 2026",
+      "factual_summary": "Martin Fowler writes that he sees both productivity potential and harm in LLMs, finds their confident unreliability and human-like style personally off-putting, and cautions against anthropomorphizing AI agents as conscious beings rather than software systems shaped by their creators.",
+      "why_it_matters_for_ai_assisted_development_practice": "The essay is relevant to team adoption and operating-model guidance: agent interfaces can create trust and accountability problems, and teams may need explicit language that treats agents as software components requiring review rather than human teammates.",
+      "candidate_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions"
+      ],
+      "named_entities": [
+        "Martin Fowler",
+        "LLMs",
+        "AI agents",
+        "Jessica Kerr",
+        "Pew Research"
+      ],
+      "upstream_owned_entities": [
+        "Martin Fowler",
+        "LLMs",
+        "AI agents"
+      ],
+      "local_practice_implication": "Use as practitioner evidence for adoption language, trust calibration, and anti-anthropomorphism guidance.",
+      "follow_up_notes": "This is opinion evidence, not a product update; ingest should attribute it clearly and avoid treating it as consensus."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Our framework for reporting model misalignment",
+      "source_url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "visible_date": "September 16, 2026",
+      "reason": "Visible date falls before the run cutoff window. It is also broad AI safety and alignment governance owned upstream, with only downstream implications for agent audit and disclosure practice."
+    },
+    {
+      "title": "Copilot budget increase requests are generally available",
+      "source_url": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/",
+      "visible_date": "September 16, 2026",
+      "reason": "Visible date falls before the run cutoff window. The budget-governance implication is related but this run kept the strict two-day window."
+    },
+    {
+      "title": "Fragments: September 16",
+      "source_url": "https://martinfowler.com/fragments/2026-09-16.html",
+      "visible_date": "16 September 2026",
+      "reason": "Visible date falls before the run cutoff window. It also summarizes other sources rather than providing a single durable practice update."
+    },
+    {
+      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "visible_date": "Published: yesterday",
+      "reason": "Secondary coverage duplicated the primary Anthropic Projects announcement, which was captured instead."
+    },
+    {
+      "title": "Anthropic says its model Claude is helping to build the next version of itself",
+      "source_url": "https://apnews.com/article/4d3a7430f57cbc7c39e1c5f2b7d7e132",
+      "visible_date": "Published: today",
+      "reason": "Broad frontier-lab self-improvement and AI safety story. Upstream AI wiki owns the entity and model-development context; no distinct local AI-assisted development practice update was captured."
+    },
+    {
+      "title": "Inside the suddenly explosive world of AI safety",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
+      "visible_date": "Published: yesterday",
+      "reason": "Broad AI safety ecosystem coverage centered on evaluators and frontier-lab incidents; upstream-owned except for possible future governance implications."
+    },
+    {
+      "title": "Hackers Used Anthropic's Claude to Break Into OpenAI",
+      "source_url": "https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883",
+      "visible_date": "Published: today",
+      "reason": "Security incident coverage and company-specific details are upstream/security-wiki oriented. No public primary practice source was available in this scan."
+    },
+    {
+      "title": "OpenAI ethically hacked with help of Anthropic's Claude chatbot",
+      "source_url": "https://www.theguardian.com/technology/2026/sep/18/openai-hacked-anthropic-claude-chatbot",
+      "visible_date": "18 September 2026",
+      "reason": "Secondary security incident coverage overlaps the WSJ item; routed upstream/security rather than local practice collection."
+    },
+    {
+      "title": "Manage the code coverage ruleset condition with the REST API",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "September 18, 2026",
+      "reason": "Public and in-window, but not specific to AI-assisted development practice."
+    },
+    {
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-October",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "September 18, 2026",
+      "reason": "Model/product lifecycle update. Broad model and product catalog details are upstream-owned; no local practice implication beyond routine dependency monitoring was extracted."
+    },
+    {
+      "title": "Claude for Small Business launches new workflows, integrations, and training programs",
+      "source_url": "https://www.anthropic.com/news",
+      "visible_date": "Sep 15, 2026",
+      "reason": "Visible date is outside the cutoff window."
+    },
+    {
+      "title": "Tokenmaxxing: Inside the enterprise AI budget crisis no one saw coming",
+      "source_url": "https://www.expresscomputer.in/news/tokenmaxxing-inside-the-enterprise-ai-budget-crisis-no-one-saw-coming/138840/",
+      "visible_date": "Published: today",
+      "reason": "Relevant to AI cost governance, but the scan favored primary/vendor or practitioner sources. Article was kept out because it summarizes enterprise spending trends without a directly inspectable primary artifact in this run."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 7,
+    "excluded_candidate_count": 12
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Keep this artifact under raw until a normal raw-source ingest pass synthesizes it into durable wiki pages.",
+    "Likely synthesis targets include AI code review lifecycle, agent telemetry and adoption dashboards, coordinator-worker project orchestration, context architecture layering, and trust-calibrated adoption guidance.",
+    "Do not create local encyclopedia leaves for GitHub, Copilot, Anthropic, Claude, MCP, RAG, or other broad upstream-owned entities."
+  ]
+}
