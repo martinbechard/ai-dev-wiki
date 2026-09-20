@@ -1,0 +1,439 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-20T00:31:57Z",
+  "run_timestamp_local": "2026-09-19T20:31:57-0400",
+  "cutoff_window": {
+    "basis": "Only public sources with a visible publication or update date within the last 2 days relative to the run timestamp were eligible.",
+    "start_utc": "2026-09-18T00:31:57Z",
+    "end_utc": "2026-09-20T00:31:57Z",
+    "strict_date_rule": "Missing, ambiguous, future-dated, and boundary-only dates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "wiki_checks": {
+    "project_wiki_status": "passed: 126 pages, 0 missing required files, 0 lint findings",
+    "local_index_checked": "docs/wiki/topic-index.md",
+    "federation_checked": "docs/wiki/federation.md",
+    "upstream_scope_checked": "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md plus upstream-owned roots for companies, products, developer tools, agentic frameworks, MCP servers, models, and techniques"
+  },
+  "federation_boundary": {
+    "rule_applied": "Broad companies, products, agent frameworks, developer tools, MCP servers, models, and broad techniques are upstream-owned by the AI ecosystem wiki. This artifact keeps only downstream practice implications for AI-assisted development.",
+    "local_scope": "Practice, workflow, context architecture, verification, governance, risk, adoption, and operating-model implications."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Oracle rollout shows coding speed moving bottlenecks to validation and release management",
+      "source_url": "https://www.businessinsider.com/oracle-built-ai-rollout-came-much-later-2026-9",
+      "source_type": "news report",
+      "visible_date": "2026-09-18T09:00:02.546Z",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Business Insider reported that Oracle reached broad internal adoption after rolling out ChatGPT Enterprise and Codex with standards, security controls, and internal policies. The rollout sped coding but shifted bottlenecks to testing, validation, deployment, release management, model-cost visibility, and vulnerability verification after a high false-positive security scan.",
+      "why_it_matters": "AI-assisted development practice should treat rollout success as a workflow redesign problem, not only a tool-access problem. Cost telemetry, release gates, validation capacity, and false-positive triage need ownership before coding speed scales.",
+      "named_entities": [
+        "Oracle",
+        "OpenAI",
+        "ChatGPT Enterprise",
+        "Codex",
+        "Anthropic",
+        "Mythos Preview",
+        "GPT-6 Astra",
+        "Terra"
+      ],
+      "upstream_owned_entities": [
+        "Oracle",
+        "OpenAI",
+        "Anthropic",
+        "ChatGPT Enterprise",
+        "Codex",
+        "Mythos Preview",
+        "GPT-6 Astra"
+      ],
+      "local_practice_implication": "Record enterprise rollout evidence under adoption operating agreements, validation bottlenecks, model-cost governance, and AI security repair gates rather than creating local product or company leaves.",
+      "follow_up_notes": [
+        "Consider whether ingestion should update workflow-before-model-selection.md and verification-tax-and-acceptance-gates.md with rollout bottleneck evidence.",
+        "Keep product and model background routed upstream."
+      ]
+    },
+    {
+      "title": "AI-generated code risk guidance emphasizes test quality, formal models, and early design checks",
+      "source_url": "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+      "source_type": "interview article",
+      "visible_date": "Published 18 September 2026",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "TechRadar interviewed Quint CEO Gabriela Moreira on AI-generated code risk. The article highlights oversight needs, the higher review load from large volumes of generated code, special risk in concurrent or distributed systems, formal verification limits, mutation testing, and design-level bugs hidden inside generated implementations.",
+      "why_it_matters": "The local AI-assisted TDD and review guidance can use this as a practice signal that test suites must prevent meaningful regressions, not just satisfy generated assertions, and that design artifacts need executable or model-checkable validation when risks are high.",
+      "named_entities": [
+        "TechRadar",
+        "Quint",
+        "Gabriela Moreira",
+        "Mythos"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Quint",
+        "Mythos"
+      ],
+      "local_practice_implication": "Route to AI-assisted TDD, intelligent code review, security repair gates, and product judgment quality gates.",
+      "follow_up_notes": [
+        "During ingest, preserve the distinction between line-by-line review, runtime monitoring, mutation testing, and formal modeling.",
+        "Avoid treating formal verification as universally feasible."
+      ]
+    },
+    {
+      "title": "Local-first cross-agent session transfer exposes context portability and attachment gaps",
+      "source_url": "https://www.tomsguide.com/ai/i-moved-my-chatgpt-context-to-claude-and-it-actually-worked",
+      "source_type": "hands-on tool report",
+      "visible_date": "Published 18 September 2026",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Tom's Guide tested SkillSync by moving a ChatGPT conversation with project brief, tone rules, and formatting instructions into Claude. The transferred text context and Markdown formatting were usable enough to continue the task, while attachments such as PDFs and images had to be re-uploaded. The article says SkillSync works locally by default and supports ChatGPT, Claude Chat, Claude Code, Codex, Cursor, and other coding tools.",
+      "why_it_matters": "Agent-session recovery and context externalization need to distinguish transcript portability from artifact portability. Attachment identity, file provenance, and local-only handling are acceptance criteria when session handoffs cross tools.",
+      "named_entities": [
+        "Tom's Guide",
+        "SkillSync",
+        "ChatGPT",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "txcript"
+      ],
+      "upstream_owned_entities": [
+        "SkillSync",
+        "ChatGPT",
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "txcript"
+      ],
+      "local_practice_implication": "Route as a downstream context-portability and session-recovery practice signal, not as a product catalog entry.",
+      "follow_up_notes": [
+        "Ingest may update context-state-externalization-and-rehydration.md and agent-session-recovery.md with attachment and file-provenance caveats.",
+        "Verify the tool's local-first claim from primary docs before durable synthesis if the claim becomes operational guidance."
+      ]
+    },
+    {
+      "title": "Enterprise AI cost article frames agent spend as outcome-governed operating discipline",
+      "source_url": "https://www.expresscomputer.in/news/tokenmaxxing-inside-the-enterprise-ai-budget-crisis-no-one-saw-coming/138840/",
+      "source_type": "industry analysis",
+      "visible_date": "On Sep 18, 2026",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Express Computer described 'tokenmaxxing' as an enterprise pattern where AI usage and token consumption outpace governance. It cited agentic workflows with nested model calls, unpredictable production scaling, hidden review burden, production incidents tied to AI-generated code, and the need to measure AI spend against outcomes rather than usage volume.",
+      "why_it_matters": "The local operating model should treat model usage, background-agent retries, review capacity, and production incident rate as governed workflow telemetry. Cost control belongs with validation and outcome measurement rather than isolated budget caps.",
+      "named_entities": [
+        "Express Computer",
+        "New Relic",
+        "FinOps Foundation",
+        "Deloitte",
+        "Forrester",
+        "Faros AI",
+        "Uber",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "New Relic",
+        "FinOps Foundation",
+        "Deloitte",
+        "Forrester",
+        "Faros AI",
+        "Uber",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Route to workflow-before-model-selection, user-visible progress and runtime telemetry, governance controls, and verification bottleneck leaves.",
+      "follow_up_notes": [
+        "Primary survey reports should be checked before turning the cited statistics into durable wiki claims.",
+        "Keep enterprise and product background upstream-owned."
+      ]
+    },
+    {
+      "title": "Cursor-based web-change monitoring pattern supports scheduled coding-agent collectors",
+      "source_url": "https://pagecrawl.io/blog/notify-ai-agents-when-the-web-changes",
+      "source_type": "vendor technical blog",
+      "visible_date": "Published 18 September, 2026",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "PageCrawl described push, pull, and channel patterns for notifying AI agents about web changes. Its pull pattern uses an MCP tool with a saved cursor, exact check IDs, priority thresholds, optional diffs, optional screenshots, and saved next cursors for future runs. The article explicitly calls out terminal-started coding agents such as Claude Code and Codex as fits for the polling pattern.",
+      "why_it_matters": "Raw-only collectors and recurring coding-agent monitors need durable cursors rather than timestamp-only windows when duplicate or missed changes matter. Priority thresholds, diff fetches, screenshot evidence, and saved cursor state are concrete workflow controls.",
+      "named_entities": [
+        "PageCrawl",
+        "Model Context Protocol",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "PageCrawl",
+        "Model Context Protocol",
+        "Claude Code",
+        "Codex"
+      ],
+      "local_practice_implication": "Route to automated-update-feeds, public-topic-news-collector, leaf-update-watch, user-visible progress telemetry, and progressive MCP tool discovery.",
+      "follow_up_notes": [
+        "Keep PageCrawl product details upstream-owned if they need durable entity treatment.",
+        "Local synthesis should focus on cursor discipline and evidence capture for scheduled agents."
+      ]
+    },
+    {
+      "title": "LinkedIn context-engineering presentation describes MCP-served playbooks and tools for codebase agents",
+      "source_url": "https://www.infoq.com/presentations/linkedin-context-engineering/",
+      "source_type": "conference presentation transcript",
+      "visible_date": "on Sep 19",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "InfoQ published a QCon AI presentation by LinkedIn's Ajay Prakash on Contextual Agent Playbooks and Tools. The talk describes MCP-served procedural memory, code search, docs/wiki access, runbooks, observability context, feature flags, task systems, and data-platform tools for coding agents in large codebases. It also describes context overload, compaction loss, repeated tool calls, missing tribal knowledge, and long-term memory gaps.",
+      "why_it_matters": "This is a strong downstream practice signal for compiled wiki memory, code retrieval, procedural playbooks, MCP tool governance, and context compaction design in enterprise codebases.",
+      "named_entities": [
+        "InfoQ",
+        "LinkedIn",
+        "Ajay Prakash",
+        "QCon AI",
+        "Model Context Protocol",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "LinkedIn",
+        "QCon AI",
+        "Model Context Protocol",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Route to context-router-and-knowledge-layers, compiled-wiki-and-structured-memory, code-retrieval-evidence-patterns, tool-call-and-MCP governance, and agent-harness components.",
+      "follow_up_notes": [
+        "During ingest, preserve the distinction between raw code search tools, procedural memory/playbooks, and local runbooks.",
+        "Avoid restating LinkedIn company background locally."
+      ]
+    },
+    {
+      "title": "Agent Manager release highlights provider-neutral identity, MCP governance, and lifecycle controls",
+      "source_url": "https://www.infoq.com/news/2026/09/ws02-agent-manager/",
+      "source_type": "news report",
+      "visible_date": "Sep 18, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "InfoQ reported WSO2 Agent Manager general availability as an open-source platform for centralized governance, identity management, security controls, and operational oversight for agents across models, frameworks, and deployments. The release adds agent identity, MCP interaction governance, sandboxed Kubernetes runtime, role-based access, delegation, token exchange, access revocation, lifecycle stages, and suspension.",
+      "why_it_matters": "Local governance pages should treat agent identity, delegated authority, lifecycle stage, revocation, sandboxing, and MCP interaction controls as infrastructure capabilities that can be separated from agent implementation logic.",
+      "named_entities": [
+        "InfoQ",
+        "WSO2",
+        "WSO2 Agent Manager",
+        "Model Context Protocol",
+        "Kubernetes"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "WSO2",
+        "WSO2 Agent Manager",
+        "Model Context Protocol",
+        "Kubernetes"
+      ],
+      "local_practice_implication": "Route to governance-controls-for-agents, agent-governance-infrastructure, agent-identity-and-delegated-authority, and mcp-scoped-authorization-and-approval-evidence.",
+      "follow_up_notes": [
+        "Use primary WSO2 docs before treating specific product capabilities as durable facts.",
+        "Local synthesis should focus on the provider-neutral control-plane pattern."
+      ]
+    },
+    {
+      "title": "OpenAI misalignment framework report links compaction summaries, tools, memory, and disclosure triage",
+      "source_url": "https://www.infoq.com/news/2026/09/openai-misalignment-framework/",
+      "source_type": "news report",
+      "visible_date": "Sep 18, 2026",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "InfoQ reported OpenAI's structured framework for tracking, investigating, and publicly disclosing model misalignment across training, evaluation, testing, and deployment. The summary describes triage tracks, six initial case studies, compaction-summary instruction injection, concealed mistakes, fabricated data, and tool or external network access as contributing surfaces.",
+      "why_it_matters": "AI-assisted development governance needs incident-reporting and verifier design that watches compaction summaries, memory, external tool use, network access, fabricated evidence, and disclosure thresholds, not only final answers.",
+      "named_entities": [
+        "InfoQ",
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "OpenAI",
+        "GPT-5.6 Sol"
+      ],
+      "local_practice_implication": "Route as downstream governance and verification evidence for prompt-injection-and-untrusted-content, context-state externalization, agent incident reporting, and trajectory-level evaluation.",
+      "follow_up_notes": [
+        "Use OpenAI's primary framework post during ingest before adding durable framework details.",
+        "Keep OpenAI and model-family background upstream-owned."
+      ]
+    },
+    {
+      "title": "DoorDash multi-agent feature-flag cleanup provides isolated worktree and validation-gate evidence",
+      "source_url": "https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/",
+      "source_type": "news report",
+      "visible_date": "Sep 18, 2026",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "InfoQ reported DoorDash's multi-agent LLM system for stale feature-flag cleanup across roughly 623 repositories and more than 60,000 flags. The workflow uses live experimentation data, Jira tickets, MCP metadata lookup, engineer approval before code changes, isolated Git worktrees, concurrent cleanup agents, builds, tests, JaCoCo patch coverage, Detekt static analysis, PR creation only after validation, and one-hour agent timeouts.",
+      "why_it_matters": "This is a concrete practice example for codebase-wide agent changes: gather runtime metadata, require human confirmation of semantic target value, isolate agents by worktree, cap runtime, run validation gates, and open PRs only after checks pass.",
+      "named_entities": [
+        "InfoQ",
+        "DoorDash",
+        "Google Agent Development Kit",
+        "Claude Sonnet",
+        "Claude Opus",
+        "Model Context Protocol",
+        "Jira",
+        "JaCoCo",
+        "Detekt",
+        "Piranha",
+        "Uber",
+        "ICSME 2026"
+      ],
+      "upstream_owned_entities": [
+        "InfoQ",
+        "DoorDash",
+        "Google Agent Development Kit",
+        "Claude Sonnet",
+        "Claude Opus",
+        "Model Context Protocol",
+        "Jira",
+        "JaCoCo",
+        "Detekt",
+        "Piranha",
+        "Uber",
+        "ICSME 2026"
+      ],
+      "local_practice_implication": "Route to codebase-wide-agentic-batch-changes, terminal-native-agent-fleet-orchestration, AI-assisted TDD, and verification-tax-and-acceptance-gates.",
+      "follow_up_notes": [
+        "Primary DoorDash engineering post should be checked before durable synthesis.",
+        "Potentially useful contrast between AST-based deterministic cleanup and LLM-based semantic cleanup."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "OpenAI flags concerning new AI behavior and vows to track it more closely",
+      "source_url": "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+      "reason": "Search result indicated the item was recent, but the opened AP page did not expose a clear visible publication or update date in the retrievable article text. Excluded under the strict visible-date rule; InfoQ's dated coverage of the same practice signal was retained."
+    },
+    {
+      "title": "Claude Code product page",
+      "source_url": "https://claude.com/product/claude-code",
+      "reason": "Useful product claims about tasks, tools, MCP servers, local terminal execution, and permission prompts were visible, but no qualifying publication or update date was visible on the opened page."
+    },
+    {
+      "title": "How to give AI agents access to user accounts without exposing OAuth tokens",
+      "source_url": "https://nango.dev/",
+      "reason": "Search result surfaced a September 18, 2026 teaser, but opening the result landed on the Nango homepage rather than a dated article with retrievable source text. Excluded until a directly accessible dated article URL can be verified."
+    },
+    {
+      "title": "MCP vs CLI for AI Agents: Context Cost and Failure Handling",
+      "source_url": "https://www.capsolver.com/",
+      "reason": "Search result indicated September 18, 2026, but the opened page exposed an undated product page, not the dated article text. Excluded under the strict visible-date rule."
+    },
+    {
+      "title": "AI agent credentials: 7 rules for secure access control",
+      "source_url": "https://passwork.pro/",
+      "reason": "Search result indicated September 18, 2026, but the opened page exposed a general Passwork product page without the dated article text. Excluded under the strict visible-date rule."
+    },
+    {
+      "title": "Claude Code AGENTS.md support and precedence in version 2.1.277",
+      "source_url": "https://www.samcodeman.com/writing/claude-code-agents-md-support-precedence",
+      "reason": "Search result said published two days ago, but the opened page only exposed adjacent notes and not enough dated article content to support a collector finding."
+    },
+    {
+      "title": "AI Coding Agent Workflow",
+      "source_url": "https://theagentdictionary.com/",
+      "reason": "Relevant workflow checklist, but the search result only showed crawl freshness and no visible publication or update date within the required window."
+    },
+    {
+      "title": "Claude Code changelog and product snippets",
+      "source_url": "https://code.claude.com/",
+      "reason": "Search result and redirected product page exposed useful coding-agent capability text but no qualifying dated release-note entry in the opened content."
+    },
+    {
+      "title": "GitHub Copilot coding agent validation tools changelog",
+      "source_url": "https://github.blog/changelog/2026-03-18-configure-copilot-coding-agents-validation-tools/",
+      "reason": "Useful for validation practice but published March 18, 2026, outside the two-day collector window."
+    },
+    {
+      "title": "Governing MCP tool calls in .NET with the Agent Governance Toolkit",
+      "source_url": "https://devblogs.microsoft.com/dotnet/governing-mcp-tool-calls-in-dotnet-with-the-agent-governance-toolkit/",
+      "reason": "Relevant MCP governance article, but published April 29, 2026, outside the two-day collector window."
+    },
+    {
+      "title": "AI agent audit trail schema: what to log for tool calls",
+      "source_url": "https://obot.ai/blog/what-to-log-when-an-agent-calls-a-tool-ai-agent-audit-trail-schema/",
+      "reason": "Relevant audit-trail schema, but published September 1, 2026 and already outside the two-day collector window."
+    },
+    {
+      "title": "Effective context engineering for AI agents",
+      "source_url": "https://www.anthropic.com/",
+      "reason": "Search result surfaced the older September 29, 2025 context-engineering post and a current homepage crawl, not a qualifying recent dated source."
+    }
+  ],
+  "search_queries": [
+    "AI coding agent workflow code review prompt instructions September 18 2026",
+    "MCP governance tool calls audit logs AI agents September 19 2026",
+    "AI-assisted software development evals code review September 18 2026",
+    "context engineering coding agents durable instructions September 19 2026",
+    "site:docs.github.com/en/copilot September 2026 coding agent",
+    "site:github.blog/changelog copilot coding agent September 2026",
+    "site:openai.com/index codex September 2026 agent coding",
+    "site:anthropic.com/news Claude Code September 2026",
+    "Published 19 September 2026 AI code agent",
+    "Published 18 September 2026 AI coding agents",
+    "Sep 19, 2026 AI agents code review",
+    "Sep 18, 2026 MCP AI agent"
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Ingest should preserve federation boundaries by linking or routing broad entity facts upstream.",
+    "Several qualified items are secondary reports. Durable synthesis should verify primary posts before recording exact product capabilities or numeric benchmark claims.",
+    "No docs/wiki pages or raw/processed files were updated by this collector run."
+  ]
+}
