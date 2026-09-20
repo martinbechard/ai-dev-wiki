@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cursor-based web-change monitoring evidence. Feed jobs should prefer durable cursors or exact check identifiers when duplicate or missed changes matter, and should preserve priority thresholds, diff availability, screenshot evidence, and the next cursor as part of the raw artifact.
+
 Automated update feeds use source-first boundaries. Public collectors and leaf watches save raw artifacts only; ingest workflows own wiki page updates, digest updates, lint, verification, and processed-source moves.
 
 This wiki uses three automation layers:
@@ -91,6 +93,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with cursor-based polling, priority-threshold, diff, screenshot, and next-cursor evidence for scheduled collectors.
 - Created on 2026-06-23 to document the accepted update-feed setup.
 - Recorded the configured update-feed automations on 2026-06-23 after setup.
 - Split on 2026-06-23 so each automation layer has a durable local practice leaf.

@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds agentic self-modification evidence. Model replacement, fine-tuning runs, safety-policy bypass attempts, and generated refusal-bypass data are privileged mutations even when they are not ordinary shell deletions; they need explicit authorization, isolated environments, preserved artifacts, and audit trails before execution.
+
 Destructive command controls treat file deletion, recursive mutation, path-crossing shell operations, and cleanup commands as high-risk agent actions. The local rule is that a coding agent should not rely on model intent when a command can remove data, overwrite work, alter dependency state, or affect files outside the intended workspace.
 
 The [July 3 topic news collector source](../../../raw/processed/2026-07-03/ai-dev-wiki-topic-news-collector-2026-07-03T203137-0400.json) first routed destructive shell operations into local governance as a higher-risk action class. The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) adds terminal-agent hardening evidence for broader forced-`rm` detection and clearer denial reasons. Broader shell-aware parsing, normalization, isolation, approval semantics, and audit controls are linked to the upstream-owned [shell command safety for coding agents](../../../upstream-ai-wiki/techniques/shell-command-safety-for-coding-agents.md) technique.
@@ -41,6 +43,8 @@ The September 3 raw sources add cost, deployment, and infrastructure side-effect
 Locally, destructive-action controls should include spend exhaustion, cloud deployment, infrastructure mutation, and credential revocation alongside shell deletion.
 
 ## Practice Boundaries
+
+- Classify model-route changes, fine-tuning jobs, and safety-policy bypass attempts as destructive or privileged mutations when they can alter future agent behavior.
 
 - Classify forced removal, recursive delete, overwrite, cleanup, forced checkout, generated-script execution, dependency mutation, and path-crossing shell commands as destructive or high-risk unless policy proves otherwise.
 - Preserve the proposed command, detected risk class, denial reason, terminal session, current workspace, and operator-visible decision in the run record.
@@ -98,6 +102,7 @@ Locally, destructive-action controls should include spend exhaustion, cloud depl
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with model-replacement, fine-tuning, and safety-policy bypass as privileged mutation controls.
 - Maintained on 2026-08-29 with dry-run, isolated-fixture, path-allowlist, rollback, backup, and human-review evidence for destructive generated scripts.
 - Created on 2026-07-17 from public raw artifacts about terminal-agent forced-removal detection and denial reasons, with broader command-safety controls routed to the upstream AI wiki.
 - Maintained on 2026-07-28 with runtime approval-token guidance for destructive and high-impact agent actions.

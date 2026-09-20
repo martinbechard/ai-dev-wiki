@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds incident-disclosure routing evidence. Provider misalignment disclosures, safety-evaluator access limits, and product-specific capability reports should be routed as upstream entity facts when broad background matters, while the local wiki keeps downstream implications for escalation, reproducible evidence, review gates, and disclosure paths.
+
 Source reconciliation keeps the wiki aligned with authoritative evidence. The wiki is a synthesis layer, so it follows the repository authority order: code and tests describe actual behavior, specifications describe intended behavior, procedures describe workflow obligations, backlog records describe tracked work, architecture and plans describe design intent, and wiki pages summarize those sources.
 
 During source ingest, recurring concepts and aliases should be normalized into the best durable page when evidence supports that mapping. Source-specific framing stays attributed to the source, while unresolved contradictions become open questions instead of false consensus.
@@ -90,6 +92,8 @@ Local routing:
 - July 28 risk and eval routing stays local in [prompt injection and untrusted content](../governance-and-risk/prompt-injection-and-untrusted-content.md), [sensitive data and supply-chain controls](../governance-and-risk/sensitive-data-and-supply-chain-controls.md), [destructive command controls](../governance-and-risk/destructive-command-controls.md), and [agent-assisted performance optimization gates](../verification-and-evals/agent-assisted-performance-optimization-gates.md).
 
 ## Practice Boundaries
+
+- Route provider incident frameworks and evaluator-access stories by separating upstream entity history from local review-gate and disclosure workflow implications.
 
 - Read authoritative source files before updating wiki understanding.
 - Use higher-priority sources when wiki prose conflicts with code, tests, specifications, procedures, backlog records, architecture, or plans.
@@ -197,6 +201,7 @@ Local routing:
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with provider incident, safety-evaluator, escalation, evidence, and disclosure-routing guidance.
 - Created on 2026-06-23 to separate authority order, source conflict handling, synonym normalization, and federation routing from the broader source-workflows hub.
 - Maintained on 2026-06-26 with knowledge-package routing that separates external agent evidence from local implementation acceptance.
 - Maintained on 2026-07-01 with knowledge-source migration semantics and FastMCP upstream routing.

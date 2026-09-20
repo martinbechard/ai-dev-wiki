@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds a polling-pattern refinement. Leaf watches should retain the selected leaf set, exact source checks, priority thresholds, diff or screenshot evidence when available, and cursor state so later runs can distinguish genuinely new evidence from repeated sightings.
+
 The leaf update watch is a raw-only automation for public updates about existing durable local wiki leaves. It builds a leaf universe from the accepted local topic roots, excludes hubs and maintenance pages, uses the relative wiki page path as the stable leaf id, and checks new or oldest-unchecked leaves first.
 
 The watch searches with public topic names, aliases, and source URLs rather than whole local wiki pages. It uses only public web sources, applies a seven-day visible publication or update window, routes broad upstream-owned entity updates through [federation.md](../federation.md), and saves qualifying findings as structured raw JSON artifacts under [raw](../../../raw). It does not edit wiki pages and does not save scanner output under [raw/processed](../../../raw/processed).
@@ -70,6 +72,7 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with cursor-state, selected-leaf, threshold, diff, and screenshot evidence for repeated public-source watches.
 - Created on 2026-06-23 to separate durable-leaf public update checks from the broader automated-update-feeds page.
 - Maintained on 2026-07-10 with structured qualified-update, exclusion, and follow-up-note evidence boundaries.
 - Maintained on 2026-08-26 with selected leaf ids, upstream-owned entity routing, qualifying updates, excluded candidates, and source-URL-by-leaf evidence boundaries.

@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise code-search evidence. Code retrieval should preserve whether the agent used raw code search, docs/wiki retrieval, procedural playbooks, runbooks, observability context, feature-flag state, or task-system metadata, because each source has different freshness, authority, and missing-tribal-knowledge risks.
+
 Code retrieval for AI-assisted development needs semantic search, exact repository evidence, and runtime truth. The model only sees the files, snippets, command output, tool results, and history that the harness sends in the request, so retrieval choices shape what the model can safely claim.
 
 Repository work should combine exact paths, symbols, tests, diffs, logs, and nearby call sites with broader semantic discovery. Semantic search is useful for finding likely neighborhoods, but build output, failing tests, stack traces, and runtime logs decide whether a claim matches the actual checkout.
@@ -38,6 +40,8 @@ The [August 3 evening topic news collector source](../../../raw/processed/2026-0
 The August 17 raw sources add codebase-RAG and incident-evidence refinements. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records codebase RAG as a toolbox with freshness and PR-derived evals; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records memory-backed code retrieval, SAFE-style tool-trace preservation, and coding-agent security boundaries. Locally, code retrieval evidence should preserve query intent, exact opened paths, freshness, PR outcome tests, prompts, tool traces, identities, and permissions when those facts support code changes or incident review.
 
 ## Practice Boundaries
+
+- Keep code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, and task metadata distinguishable in retrieval evidence.
 
 - Start with repository structure, exact filenames, symbols, and tests when the task changes code.
 - Use semantic search to find candidate neighborhoods, then read the exact files and call sites before editing.
@@ -110,6 +114,7 @@ The August 17 raw sources add codebase-RAG and incident-evidence refinements. Th
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with enterprise code-search, docs/wiki retrieval, runbook, observability, feature-flag, task-metadata, and tribal-knowledge evidence boundaries.
 - Created on 2026-06-23 to hold code retrieval evidence practice apart from document RAG and tool execution.
 - Maintained on 2026-06-25 with explicit retrieval-path evidence for AI review and coding-agent claims.
 - Maintained on 2026-06-26 with review-depth settings, repository exploration paths, and engineering-memory retrieval signals.

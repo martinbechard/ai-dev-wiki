@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds stateful AI-review experience evidence. Layered review outputs should carry severity, title, lifecycle state, resolved/open grouping, previously missed issue status, human override signals, auto-resolution evidence, and commit-level traceability when suggestions are batched into generated commits.
+
 Layered AI code review separates implementation, architecture, and security review expectations for AI-authored changes. The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) records a vendor brief that frames AI review through developer, architect, and security-engineer roles. Broad product coverage stays upstream; locally, the reusable pattern is that one fluent reviewer comment stream is weaker than explicit role-scoped findings.
 
 Role responsibilities:
@@ -29,6 +31,8 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 Locally, layered review should keep those roles distinct when generated fixes can reach production.
 
 ## Practice Boundaries
+
+- Preserve finding lifecycle state, severity, reviewer title, auto-resolution proof, prior-summary continuity, human override, and commit-level traceability for AI review comments.
 
 - Declare which review roles are active before an AI reviewer comments.
 - Keep implementation, architecture, and security findings separate when they imply different owners or acceptance gates.
@@ -75,6 +79,7 @@ Locally, layered review should keep those roles distinct when generated fixes ca
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with stateful AI-review, finding-lifecycle, severity, auto-resolution, human-override, and commit-level traceability evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about developer, architect, and security-engineer AI review roles.
 - Maintained on 2026-08-27 with AI security-review augmentation boundaries for triage, deterministic rules, and human security judgment.
 - Maintained on 2026-08-29 with production AI-generated-code accountability and review-load evidence for role-scoped review.

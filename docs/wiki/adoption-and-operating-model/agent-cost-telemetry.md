@@ -41,6 +41,8 @@ The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-de
 
 The [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json) adds budget, observability, and coding-cost taxonomy signals. Per-user budgets, coding-agent cost concepts, and public cost analyses are useful locally when they split token usage, context growth, tool execution, cache behavior, verification work, and accepted outcomes. Broad vendor billing details stay upstream; this page owns the workflow decision about whether a cost spike reflects useful evidence gathering, runaway context, repeated retries, or missing scope controls.
 
+The September 19 raw sources add spend-cap, runtime-isolation, and tokenmaxxing evidence. The [leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) pairs monthly assistant spend limits with isolated development environments, while the [topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) frames token growth, nested model calls, retries, review load, and production incidents as outcome-governed operating signals. Cost telemetry should therefore join spend caps to environment isolation, validation capacity, and accepted outcomes rather than treating usage volume as the control.
+
 The [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json) adds price-claim and benchmark-provenance signals. Coding-agent pricing claims should be interpreted through cost per verified outcome, not list price alone, and benchmark claims should carry provenance and contamination checks before they influence model-routing or adoption decisions.
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds multi-agent modernization and spend-dashboard evidence. Enterprise modernization workflows should track cost by role, work package, legacy platform, verification gate, and accepted outcome so multi-agent coordination is measured as an operating model rather than generic agent usage.
@@ -125,6 +127,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
+- Treat spend caps, runtime isolation, review capacity, validation queues, retry rates, production incidents, and accepted-outcome measurement as one operating control when agent work scales across teams.
 - Record budget-increase requests, approver decisions, approved caps, denial reasons, workflow dependency, and post-approval outcome evidence when AI credit limits affect delivery.
 - Pair cost records with outcome evidence such as accepted patch, failed verification, useful research, rejected draft, or blocked handoff.
 - Bound subagent fan-out, retry loops, and long context growth with explicit budget or stop rules.
@@ -291,6 +294,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with spend-cap, runtime-isolation, tokenmaxxing, validation-capacity, and outcome-governed cost evidence from the September 19 raw sources.
 - Maintained on 2026-09-17 with budget-increase request, approver, cap, denial, workflow-dependency, and outcome evidence.
 - Maintained on 2026-09-08 with whole-task efficiency, output-trimming, prompt-cost, privacy-boundary, batching, context-pruning, token-spend, and leaderboard-risk evidence.
 - Maintained on 2026-09-04 with budget-expiry fallback, model-policy replacement, and workflow-level owner evidence for cost controls.

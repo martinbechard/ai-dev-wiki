@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) reinforces the boundary between skill files and tool protocols. Skill files should package readable process knowledge, ownership, review depth, and context-selection guidance; they do not replace MCP or other governed interfaces when the workflow needs standardized access, identity, approval, or audit.
+
 Durable instructions and skill files keep reusable procedure outside the live prompt until an agent needs it. They give the assistant stable role, scope, project rules, references, tool expectations, safety boundaries, and examples without forcing every request to carry every rule.
 
 The [folder-organization source](../../../raw/processed/Folder organization by @AICodethatWorks.md) describes a thin router that points agents toward task-relevant rules, knowledge, decisions, references, active plans, and archives. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) describes agent definition files as the place for role, scope, project rules, important references, tool expectations, safety configuration, and examples. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) shows the same pattern as a packaged workflow system with agents, prompts, instructions, and skills.
@@ -55,6 +57,8 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds onboarding evidence for durable instruction files. Coding standards, architecture patterns, ADR rationale, and context files are useful durable guidance when they stay current and scoped; large documentation dumps and stale conventions should be rejected or converted into reviewed skills, wiki leaves, or deterministic checks.
 
 ## Practice Boundaries
+
+- Treat skills as human-readable procedure and MCP-style tools as governed access surfaces; do not let one stand in for the other's controls.
 
 - Move stable procedures into durable instruction surfaces once they are reused across tasks.
 - Keep the root router thin so it sends agents to the right guidance instead of becoming an overloaded prompt.
@@ -142,6 +146,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with skills-versus-MCP, code-ownership, risk-scaled review, and human-readable procedure boundaries.
 - Maintained on 2026-09-15 with coding-agent onboarding, current standards, ADR rationale, context-file scope, and stale-documentation rejection evidence.
 - Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.

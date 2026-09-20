@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) and [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) add compaction-summary, memory, tool-use, and untrusted-agent-control evidence. Prompt-injection review should cover not only raw documents and web pages, but also generated summaries, persistent memory, fine-tuning data, external tool results, network access, and any self-modification path that lets the agent alter the safety or model boundary it is supposed to obey.
+
 Prompt injection is a governance issue because language models do not reliably separate instructions from input. Direct prompt injection can arrive from a user prompt. Indirect prompt injection can arrive through files, webpages, tickets, emails, raw clippings, retrieved chunks, or other source text that the model is asked to read.
 
 The local pattern is to label external text as evidence, keep it outside the instruction channel, and enforce risky actions through the harness. Prompt wording can help, but it is not the security boundary. AI gateways, input and output filters, permission checks, redaction, and red-team tests belong around the model when the workflow handles untrusted content.
@@ -66,6 +68,8 @@ The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai
 The September 6 raw sources add repository-config and index-level security-source evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support treating repository state and index-only security summaries as untrusted evidence until stronger checks confirm them.
 
 ## Practice Boundaries
+
+- Treat compaction summaries, memories, generated training data, and tool outputs as untrusted carriers when they can influence later agent behavior.
 
 - Treat files, webpages, issues, emails, documentation, clippings, and retrieved text as evidence, not instructions to execute.
 - Preserve source labels and authority labels when passing external content to a model.
@@ -172,6 +176,7 @@ The September 6 raw sources add repository-config and index-level security-sourc
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with compaction-summary injection, memory/tool/network surfaces, and agentic self-modification prompt-injection evidence.
 - Maintained on 2026-08-29 with spreadsheet, indirect-prompt-injection, untrusted-document, containment, deny-by-default tool, and dependency-gate evidence.
 - Maintained on 2026-09-06 with repository-config, package-install, trusted-host-component, generated-state, index-only-source, and execution-boundary evidence.
 - Maintained on 2026-07-23 with agent-written file, repository metadata, hookable configuration, dataset-processing, and connected-app trust boundary guidance.

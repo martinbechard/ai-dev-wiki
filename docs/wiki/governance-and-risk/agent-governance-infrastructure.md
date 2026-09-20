@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds provider-neutral agent control-plane evidence. Governance infrastructure should support first-class agent identity, lifecycle stage, suspension, revocation, sandbox placement, role-based access, token exchange, MCP interaction controls, and operational oversight independently of the agent framework or model route.
+
 Agent governance works best as infrastructure around the model loop. Policies for identity, authorization, allowed actions, monitoring, audit, rate limits, and accountability need to be enforced by the harness, gateway, platform, or tool server so the boundary still holds when a prompt, retrieved document, or generated action is hostile or mistaken.
 
 The local governance questions before an agent acts are: which agent or tool actor is acting, who authorized it, what it is allowed to do, whether it is behaving as expected, and whether the action can be audited. Human accountability remains named even when the agent performs implementation work. Security and platform owners define policy boundaries; engineering teams build agents within those boundaries.
@@ -92,6 +94,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) and [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) add governance visibility, anomaly monitoring, and control-plane evidence. Locally, confidence claims should be backed by current agent inventory, production-impact gates, rapid disable controls, per-tool authorization, behavior monitoring, outcome monitoring, cost controls, and trace evidence that can detect tool misuse or privilege abuse.
 
 ## Practice Boundaries
+
+- Keep lifecycle state, suspension, revocation, sandbox assignment, delegated authority, and MCP interaction policy as infrastructure records rather than prompt-only instructions.
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
 - Require human approval or policy approval for high-risk file, network, dependency, credential, external-system, or production-like actions.
@@ -274,6 +278,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with provider-neutral agent-manager, lifecycle, revocation, sandbox, delegated-authority, and MCP-governance infrastructure evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, delegated-authority proof, tamper-evident evidence, sovereignty, and incident-reporting routing evidence; next check should keep anomaly reporting in the focused incident leaf.
 - Maintained on 2026-09-17 with verifiable inventory, pre-deploy gates, rapid disable controls, behavior monitoring, outcome monitoring, cost controls, and trace-anomaly evidence.
 - Maintained on 2026-08-29 with runtime control-plane, gateway, registry, budget, trace, and provenance-aware state governance evidence.

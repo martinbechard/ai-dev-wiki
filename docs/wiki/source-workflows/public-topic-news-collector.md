@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds evaluator-access and source-resolution caution. Collectors should preserve when a source only resolves to a homepage, when search-visible material lacks the exact article URL, and when independent evaluator access is limited, because those constraints affect later synthesis and review-gate confidence.
+
 The public topic news collector is a raw-only automation for AI-assisted development practice updates. It searches approved local topic roots, uses only public web sources, applies a two-day visible publication or update window, and saves qualifying findings as structured raw JSON artifacts under [raw](../../../raw).
 
 The collector does not edit wiki pages and does not save output under [raw/processed](../../../raw/processed). It respects the one-way federation boundary: broad ecosystem updates for companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques are upstream-owned, while this wiki keeps only the local practice implication or routing note.
@@ -16,6 +18,8 @@ The collector does not edit wiki pages and does not save output under [raw/proce
 The collector should include source URLs, visible dates, short factual summaries, relevance to AI-assisted development practice, named entities, upstream-owned entities, excluded candidates with reasons, and follow-up notes. It must not send private, proprietary, sensitive, PII, or company-internal local content to external services.
 
 ## Practice Boundaries
+
+- Preserve source-resolution gaps, homepage fallbacks, evaluator-access limits, and source uncertainty as collector facts rather than smoothing them during ingest.
 
 - Search public sources for practice-level updates across the accepted local topic roots.
 - Use the two-day visible date window in the configured automation.
@@ -57,4 +61,5 @@ The collector should include source URLs, visible dates, short factual summaries
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with source-resolution, homepage-fallback, evaluator-access, and source-uncertainty capture guidance.
 - Created on 2026-06-23 to separate the raw-only public topic collector from the broader automated-update-feeds page.

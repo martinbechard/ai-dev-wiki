@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-tool session recovery evidence. A recovered session should prove not only that text context transferred, but also that referenced attachments, local files, generated artifacts, and provenance anchors are still present or explicitly missing before work continues.
+
 Agent session recovery preserves enough durable state for a long-running agent workflow to resume without trusting a chat summary. The recovery surface should include startup continuity checks, progress cursors, last material outputs, generated artifacts, verification evidence, and unresolved blockers.
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) reinforces long-job durability and restart behavior as coding-agent environment criteria. The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds file-backed wiki and recovery-feature evidence. Locally, a recoverable session needs both a trustworthy environment and durable evidence that a resumed human or agent can inspect.
@@ -36,6 +38,8 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds coordinated cloud-thread recovery evidence. When a project runs multiple agent threads, recovery should preserve coordinator memory, shared goals, shared files, each thread's branch or repository copy, overlap detection, merge-conflict status, and the human review needed before parallel work is combined.
 
 ## Practice Boundaries
+
+- Mark transferred-but-missing attachments and local files as recovery blockers or rehydration tasks rather than assuming transcript context is complete.
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
 - Preserve progress cursors, last material outputs, generated artifacts, verification evidence, and unresolved blockers in durable locations.
@@ -93,6 +97,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with cross-tool session-transfer, attachment-rehydration, and provenance-check guidance.
 - Maintained on 2026-08-29 with interrupted-session restore, cross-application continuation, permission-mode, tool-configuration, and review-evidence recovery guidance.
 - Maintained on 2026-08-29 with persistent-agent wake/sleep, follow-up task, memory-source, notification, and approval recovery evidence.
 - Created on 2026-07-30 from public evidence about long-job durability, restart behavior, file-backed recovery features, and durable session evidence.

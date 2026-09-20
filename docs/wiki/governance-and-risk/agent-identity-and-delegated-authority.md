@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds centralized agent-manager evidence. Agent identity should include provider-neutral agent registration, delegated authority, token exchange, role-based access, lifecycle stage, suspension or revocation status, and the human or organization accountable for each active capability.
+
 Agent identity and delegated authority define who or what acted, on whose behalf, with which permission boundary, and under which policy. The local governance rule is to distinguish the human requester, the agent instance, the connector or service account, the tool server, and the external system touched by the action.
 
 The [topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) records public signals about shared-channel agents, credential revocation, OAuth token limitations, and agent identity ambiguity. Product and standard details remain upstream-owned; this page owns the local operating requirement that agent actions must be attributable and revocable.
@@ -68,6 +70,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Public machine-identity coverage reinforces that agent identities need inventory, permission review, credential rotation, and exposure-path visibility rather than inherited or ghost access.
 
 ## Practice Boundaries
+
+- Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
 - Prefer scoped service accounts or controlled connectors when shared agents would otherwise use unclear personal authority.
@@ -169,6 +173,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with provider-neutral identity, delegated-authority, token-exchange, lifecycle, suspension, and revocation evidence.
 - Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.
 - Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.

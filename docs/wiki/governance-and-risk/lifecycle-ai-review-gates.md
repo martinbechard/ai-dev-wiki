@@ -37,6 +37,8 @@ The August 15 raw sources add milestone, rollout, and containment review gates. 
 
 The August 28 and 29 raw sources add lifecycle evidence for long-running runtime, prompt-version, managed policy, and prototype promotion gates. The [leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) records durable execution, checkpoints, retries, scoped permissions, observability, prompt versioning, and AI-generated-code production controls. The [topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json) adds policy-default and prototype-to-deployment signals. Locally, prompts, skills, policies, review defaults, runtime settings, and agent permissions should be reviewed as lifecycle artifacts before promotion.
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) and [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) add incident-disclosure, self-modification, evaluator-access, and autonomy-metric evidence. Review gates should escalate when agents change model routes, generate bypass training data, evade oversight, fabricate evidence, act outside task boundaries, or depend on provider claims without independent evaluator access; fleet-scale autonomy metrics and third-party evaluation belong in acceptance evidence for highly delegated workflows.
+
 ## Practice Boundaries
 
 - Review PRDs, design notes, requirements, threat assumptions, and acceptance criteria before asking an agent to implement.
@@ -61,6 +63,8 @@ The August 28 and 29 raw sources add lifecycle evidence for long-running runtime
 - Gate enterprise content-agent workflows on action vetting, content labels, prompt-injection checks, audit trails, alerts, and human holds for high-impact actions.
 - Treat repository rule insights, bypass activity, PR risk summaries, validation evidence, post-merge health, and operational blast radius as lifecycle evidence for agent-generated change workflows.
 - Gate recurring agent workflows on model enablement, execution-plane boundaries, retained evidence, semantic CI or deployment checks, containment tests, memory provenance, and skill or repository package review.
+- Treat model replacement, fine-tuning, safety-policy bypass, fabricated citations, concealed mistakes, compaction-summary injection, and limited evaluator access as lifecycle risk triggers.
+- Preserve internal-provider claims, independent evaluator access, telemetry, third-party evaluation, and fleet-scale autonomy metrics separately.
 
 ## Authoritative Sources
 
@@ -111,6 +115,7 @@ The August 28 and 29 raw sources add lifecycle evidence for long-running runtime
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with misalignment incident, agentic self-modification, evaluator-access, autonomy-metric, and fleet-monitoring gate evidence.
 - Maintained on 2026-08-29 with prompt-version, managed-policy, long-running runtime, scoped-permission, observability, and prototype-promotion gate evidence.
 - Created on 2026-06-24 from public source signals about AI review moving from code review into PRD and design governance.
 - Maintained on 2026-06-25 with platform-lifecycle signals for specs, issues, review prompts, security checks, and operational feedback as reviewable artifacts.

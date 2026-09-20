@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise procedural-memory evidence. MCP-served playbooks, wiki access, runbooks, observability context, and task-system context can reduce repeated tool calls and missing tribal knowledge only when each memory source has provenance, owner, freshness, access scope, and compaction behavior recorded.
+
 Context systems need a clear source of truth and a clear compiled view. The [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md) contrasts prose-first wikis with structured memory stores: wikis are useful for browsable synthesis and deep topic work, while structured stores are better for high-volume, multi-agent, operational facts that need precise queries and auditability.
 
 The local rule is that a wiki should compile understanding from authoritative sources rather than become the authoritative store for every fast-changing fact. For raw-source ingest, source artifacts remain provenance, durable leaves hold synthesized practice, and digests point readers to the leaves. For high-volume operational memory, a structured store can be the source of truth while generated wiki pages act as a hot reference layer.
@@ -32,6 +34,8 @@ The [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-
 The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev-wiki-leaf-update-watch-2026-08-05T210155-0400.json) adds token-tax pressure to compiled memory. When repeated agent runs re-reason over the same retrieval, context, and tool-selection work, compiled wiki leaves or structured memory can reduce waste only if they preserve provenance, freshness checks, and a path back to original sources.
 
 ## Practice Boundaries
+
+- Give procedural memory, wiki retrieval, runbooks, observability context, and task-system memory explicit owners, freshness, access scope, and compaction rules before they are treated as reusable agent memory.
 
 - Use durable wiki leaves for stable synthesized practice, decisions, and cross-source understanding.
 - Use structured storage for high-volume operational facts, records, task state, and multi-agent query surfaces.
@@ -94,6 +98,7 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with enterprise procedural-memory, MCP-served playbook, wiki, runbook, observability, task-system, and compaction-boundary evidence.
 - Created on 2026-06-23 to hold source-of-truth and compiled-view boundaries.
 - Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.
 - Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.

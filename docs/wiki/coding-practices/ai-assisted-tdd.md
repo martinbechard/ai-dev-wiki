@@ -25,6 +25,8 @@ The [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai
 
 The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json) adds production-reliability evidence for agent TDD. A fail-first test should fail for the expected reason before the agent implements the change, and the resulting patch should be accepted only through evidence that survives the review and CI path.
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds AI-generated-code risk evidence. Generated assertions are not enough when the defect is a design-level bug, a concurrent behavior, or a distributed-system invariant; high-risk changes may need mutation tests, runtime monitoring, model-checkable specifications, or formal models before generated implementation passes are treated as meaningful.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -42,6 +44,7 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 - Require generated tests from reusable skills to link back to the source behavior, risk, or regression they protect.
 - Confirm that a new failing test fails for the expected reason before asking an agent to satisfy it.
 - Pair agent TDD with layered tests, review notes, documentation intent, and deterministic CI evidence before treating generated code as production-ready.
+- Treat mutation testing, runtime monitoring, and formal models as escalation paths for high-risk AI-generated changes, not as blanket requirements for every assisted edit.
 
 ## Authoritative Sources
 
@@ -80,6 +83,7 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with test-quality, generated-assertion, mutation-testing, formal-modeling, and design-level bug guidance.
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.
 - Maintained on 2026-07-11 with TDD as an executable constraint for AI-generated code cleanup and refactoring.

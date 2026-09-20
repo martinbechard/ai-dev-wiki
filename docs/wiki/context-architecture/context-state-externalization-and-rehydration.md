@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-agent session-transfer evidence. Transcript and instruction portability are different from artifact portability: a handoff can preserve project brief, tone, and formatting while still requiring PDFs, images, source files, and other attachments to be reattached or reverified from durable storage.
+
 Context state externalization is the practice of moving agent working state out of the conversation and onto durable project files before the model needs to rely on it. The [context management source](../../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md), [context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md), [context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md), and [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) frame the same local rule: important state should live in files that a fresh or recovering session can read, verify, and continue from.
 
 Externalization has two layers. Task-continuity files describe the purpose, constraints, source authority, and done signal for the work. Execution-continuity files describe the current cursor, completed units, produced artifacts, discrepancies, and next action. Rehydration means reading both layers back, checking them against disk truth, and resuming from the verified state instead of from conversation memory.
@@ -52,6 +54,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - Locally, rehydration should distinguish startup memory, frozen session memory, searchable history, and external multi-scope memory before using any layer as authority.
 
 ## Practice Boundaries
+
+- Separate transcript portability from attachment, file, and artifact portability when moving work between assistant surfaces.
 
 - Store active task state, handoffs, progress cursors, decision rationale, and intermediate observations in project files when later steps depend on them.
 - Use task-continuity files for stable purpose, constraints, source authority, and acceptance criteria.
@@ -133,6 +137,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with cross-agent context transfer, attachment identity, file provenance, and local-only handling caveats.
 - Created on 2026-06-27 from O'Reilly context-management sources covering durable context files, handoffs, cursor checks, rehydration, and lost-in-the-middle mitigation.
 - Maintained on 2026-06-28 with conversation-history management as layered retention, pruning, summarization, and rehydration.
 - Maintained on 2026-07-07 with event-history, retry-record, human-wait, state-bucket, and memory-retention rehydration guidance.

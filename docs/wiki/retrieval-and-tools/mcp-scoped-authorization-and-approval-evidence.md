@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds agent-manager evidence for MCP interaction governance. Approval records should bind MCP calls to the agent identity, delegated authority, lifecycle state, sandbox, role, token exchange, approval payload, revocation path, and execution result, especially when the control plane spans several models or frameworks.
+
 MCP scoped authorization and approval evidence records who or what may call a tool, for which resource, under which task scope, and with which approved payload. This keeps tool access as an enforceable control-plane decision rather than a prompt-level preference.
 
 The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds resource-scoped MCP authorization, read/write separation, and exact-payload approval evidence. The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds sandbox permission evidence for read, write, execute, and iterate workflows. Broad MCP protocol and vendor coverage remains upstream-owned; this page owns the local authorization evidence contract.
@@ -57,6 +59,8 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) and [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) add shared-gateway and usage-telemetry evidence. MCP gateways should record user and agent identity, per-tool scopes, session boundary, consent proof, audit trail, connection attempts, skill or custom-agent starts, and privacy-preserving grouping when customer-defined names are sensitive.
 
 ## Practice Boundaries
+
+- Include agent lifecycle state, sandbox assignment, delegated authority, token-exchange route, and revocation path when MCP approval crosses a shared control plane.
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
 - Store the policy decision, approver or policy owner, exact proposed payload, approved scope, and execution result for high-impact calls.
@@ -142,6 +146,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with agent-manager MCP authorization, lifecycle, sandbox, delegated-authority, token-exchange, and revocation evidence.
 - Maintained on 2026-09-01 with AI pull-request approval enablement, allowed-path scope, merge-rule, stale-approval invalidation, and admin-decision evidence.
 - Maintained on 2026-09-02 with assistant-specific OAuth grants, write attribution, consent evidence, and per-assistant audit trails.
 - Maintained on 2026-09-07 with centralized-policy, remembered-approval, token-custody, identity-passthrough, and source-system audit evidence.

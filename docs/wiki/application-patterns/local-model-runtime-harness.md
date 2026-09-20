@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds local agent runtime evidence from a Windows RTX-bound local agent. Local harness decisions should include hardware floors, local model downloads, local MCP server access, scheduled-task behavior, cloud-access toggles, subscription prerequisites, and permission boundaries between local and cloud execution.
+
 Local model operation is a harness design question, not only a model-selection question. The harness must decide how local inference affects latency, memory, privacy, tool-call reliability, session continuity, validation, and visible runtime health.
 
 The Dwarf Star source illustrates local runtime concerns that matter for application design: selective quantization, SSD-backed expert caching, resumable session state, distributed prefill tradeoffs, and real-time runtime metrics. [Representative workflow calibration](../verification-and-evals/representative-workflow-calibration.md) owns calibration prompts, drift checks, and workflow-specific eval coverage. This page owns the application harness lens: how local operation affects product latency, memory, privacy, tool-call reliability, session continuity, validation, and visible runtime health.
@@ -29,6 +31,8 @@ The September 3 raw sources add offline-route and local-memory evidence:
 Locally, local runtime evaluation should still check audit and approval evidence.
 
 ## Practice Boundaries
+
+- Include hardware prerequisites, local model storage, local MCP access, scheduled execution, optional cloud access, and subscription/runtime prerequisites in local-agent readiness checks.
 
 - Treat local inference as a product harness choice with operational costs, validation needs, and user-visible behavior.
 - Link calibration and drift-check decisions to [representative workflow calibration](../verification-and-evals/representative-workflow-calibration.md).
@@ -84,6 +88,7 @@ Locally, local runtime evaluation should still check audit and approval evidence
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with local-agent hardware floor, local MCP, scheduled-task, optional-cloud, and runtime-prerequisite evidence.
 - Maintained on 2026-08-29 with model-harness and workspace-layer boundaries for memory, cost, routing, parallel sessions, and reviewable commits.
 - Created on 2026-06-23 from the local model operations source and local verification guidance for representative calibration.
 - Upstream durable leaves for Dwarf Star, DeepSeek V4, selective quantization, SSD expert caching, and distributed prefill are Not yet identified; this page treats them as source-specific runtime examples, not local entity or technique coverage.

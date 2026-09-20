@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) records item-level September 2026 updates across governance metadata, model routing, review triage, runtime diagnosis, context, identity, verification, observability, memory, harness, control-flow selection, MCP boundaries, adoption telemetry, RAG provenance, and supply-chain practice.
+The [current September digest](2026-09.md) records item-level September 2026 updates across governance metadata, model routing, review triage, runtime diagnosis, context, identity, verification, observability, memory, harness, control-flow selection, MCP boundaries, adoption telemetry, RAG provenance, source collection, cost governance, session recovery, and supply-chain practice.
 
 ## Monthly Digests
 
@@ -48,6 +48,7 @@ The [current September digest](2026-09.md) records item-level September 2026 upd
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with the September 19 raw ingest digest scope.
 - Maintained on 2026-09-17 with the September 17 raw ingest digest scope.
 - Maintained on 2026-09-15 with the September 15 raw ingest digest scope.
 - Maintained on 2026-09-16 with the September 16 raw ingest digest scope; next check should keep the monthly digest link and description aligned after the next ingest.

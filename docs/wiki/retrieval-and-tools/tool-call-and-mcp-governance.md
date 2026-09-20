@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds MCP-served playbook and agent-manager evidence. Tool governance should distinguish raw code search, procedural playbooks, docs/wiki access, runbooks, observability context, feature flags, task-system controls, and data-platform tools, then bind each tool class to identity, lifecycle, sandbox, approval, telemetry, and revocation evidence.
+
 Tool calls turn model intent into software-mediated action. The model requests an action with arguments, the harness validates schema and permissions, software executes outside the model, and the result becomes context for a continuation or final answer.
 
 Dynamic context tools sit between retrieval and action. They let a model request targeted additional information when the application cannot know all needed context upfront. Action tools perform governed operations such as reading, writing, scheduling, querying, transforming, or updating external systems.
@@ -112,6 +114,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Agent customization telemetry should separate MCP connection attempts, skill or plugin invocations, custom-agent starts, and tool calls instead of collapsing them into one adoption metric.
 
 ## Practice Boundaries
+
+- Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
 
 - Describe tools with names, argument schemas, output contracts, and permission expectations.
 - Validate tool arguments, user authority, workflow limits, and approval requirements before execution.
@@ -318,6 +322,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with MCP-served playbooks, code search, runbook, observability, feature-flag, task-system, data-platform, identity, sandbox, lifecycle, and revocation evidence.
 - Maintained on 2026-09-16 with MCP gateway identity, authorization, rate-limit, access-review, separation-of-duties, denial-telemetry, and delegated-authority proof evidence; next check should verify primary incident sources before adding aggregator-discovered claims.
 - Maintained on 2026-09-08 with containerized MCP, permission-file, registry-curation, provenance-verification, gateway-SSO, component-review, runtime-secret, and telemetry evidence.
 - Maintained on 2026-09-05 with enterprise MCP gateway, delegated identity, tool-parameter policy, cost guardrail, deterministic CLI versus MCP routing, and rollback evidence.

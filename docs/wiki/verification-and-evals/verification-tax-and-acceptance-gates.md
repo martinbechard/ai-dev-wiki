@@ -49,6 +49,8 @@ The August 30 raw sources add spec-linked and production-reliability acceptance 
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add governance, eval, and blast-radius evidence. Locally, acceptance gates should separate prototype and production bars and route recurring agent-eval detail to the focused eval leaf.
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds rollout, formal-method, and large-scale cleanup evidence. Acceptance gates should distinguish faster coding from finished delivery, preserve design-level checks for concurrent or distributed systems, use mutation testing or formal models where risk justifies them, and require runtime metadata, human target confirmation, isolated worktrees, build/test/static-analysis evidence, coverage deltas, and bounded timeouts before codebase-wide agent changes open pull requests.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -73,6 +75,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Treat user-flow verification, E2E capacity, flake handling, feedback loops, and reviewable evidence as scaling constraints for AI code factories and high-throughput agent workflows.
 - Require browser screenshots, recordings, reproducible failure reports, runtime traces, or policy-gate records to land in the review surface when the claim depends on executed behavior.
 - Gate generated or AI-carried code on behavior and execution-policy evidence when source provenance alone cannot prove runtime safety.
+- Use formal modeling, mutation testing, runtime monitoring, and design review as risk-scaled gates rather than universal ceremony.
+- For codebase-wide cleanup agents, require authoritative runtime metadata, semantic-target confirmation, isolated execution, validation output, coverage evidence, and timeout records before accepting generated pull requests.
 - Treat regulated or business-impacting agent actions as acceptance-gate decisions requiring explicit risk class, approval evidence, execution trace, and rollback or escalation path.
 - Require agent-readable specs to name verification criteria, expected contract evidence, and independent verifier responsibilities when the requirement becomes implementation input.
 - Treat expected-failure proof, layered test results, review notes, documentation intent, and deterministic CI as the acceptance package for production-oriented agent TDD.
@@ -140,6 +144,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
 - Maintained on 2026-08-29 with review-capacity, default review-effort, prototype trust, durable-runtime, prompt-version, structured-output, and human-review-load acceptance evidence.
 - Created on 2026-06-23 to hold verification-tax and acceptance-gate practice for agentic delivery.
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.

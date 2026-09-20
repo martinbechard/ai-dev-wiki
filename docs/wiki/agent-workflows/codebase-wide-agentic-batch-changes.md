@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds a stale-feature-flag cleanup example. Codebase-wide agents should gather live runtime metadata, require engineer confirmation of the semantic target value, isolate concurrent workers in worktrees, cap runtime, run builds, tests, coverage, and static analysis, and create pull requests only after validation gates pass.
+
 Codebase-wide agentic batch changes roll a scoped agent change across many repositories through staged proof, CI repair, and human approval. The pattern is useful when one policy, migration, dependency, or API change needs consistent treatment across a fleet, but it is risky unless the rollout is governed as a change-management loop rather than a single agent prompt.
 
 The [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records a Sourcegraph Agentic Batch Changes example. Product specifics stay upstream; locally, the durable workflow is staged expansion with reviewable evidence at each boundary:
@@ -23,6 +25,10 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 This page owns the rollout workflow. [Use compose build workflow selection](use-compose-build-workflow-selection.md) owns the decision about whether to use a managed platform, compose local controls around it, or build differentiated rollout infrastructure.
 
 ## Practice Boundaries
+
+- Gather authoritative runtime or ownership metadata before code generation when the change depends on production state.
+- Require human confirmation of semantic target values before deleting or rewriting feature-flag paths.
+- Use isolated worktrees, runtime caps, build/test/static-analysis evidence, and coverage deltas before opening batch pull requests.
 
 - Scope the intended codebase-wide change before generating pull requests.
 - Prove the approach in one representative repository before expanding to batches.
@@ -61,4 +67,5 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with feature-flag cleanup, runtime metadata, semantic-target confirmation, isolated worktrees, validation gates, coverage, static-analysis, and timeout evidence.
 - Created on 2026-09-14 from Sourcegraph Agentic Batch Changes evidence in the September 15 topic news collector.

@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds multi-agent cleanup evidence. Fleet orchestration for repository-scale cleanup should record the metadata lookup source, engineer approval point, assigned worktree, worker timeout, validation commands, coverage result, static-analysis result, pull-request handoff, and any deterministic-tool alternative that could reduce LLM autonomy.
+
 Terminal-native agent fleet orchestration coordinates multiple coding-agent sessions through terminals, worktrees, task ledgers, and review handoffs. It differs from a framework CLI that only scaffolds, serves, evaluates, or deploys a multi-agent application whose topology lives in code.
 
 The [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md) separates terminal-native fleet managers from interactive subagent harnesses and application-framework CLIs. Broad Agent Orchestrator, Gas Town, Claude Squad, Claude Code, CrewAI, LangGraph, Deep Agents, Google ADK, Microsoft Agent Framework, Mastra, OpenAI Agents SDK, and provider background belongs upstream; locally, this page owns the selection rule for software-delivery fleets that run above individual coding-agent CLIs.
@@ -31,6 +33,8 @@ The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidenc
 The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) adds model-tier routing and enterprise-managed agent-operation permissions across app, CLI, and editor-hosted sessions. Fleet orchestration should record which model-tier policy, command/file/network policy, and cost-quality route applied to each worker before comparing results across parallel agents.
 
 ## Practice Boundaries
+
+- Preserve metadata source, approval point, worktree assignment, runtime cap, validation output, static-analysis output, coverage result, and PR handoff for each cleanup worker.
 
 - Distinguish terminal-native fleet orchestration from application-framework lifecycle commands before recommending a CLI tool.
 - Prefer worktree or workspace isolation when multiple coding agents mutate the same repository family.
@@ -94,6 +98,7 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with feature-flag cleanup fleet evidence for metadata lookup, approval point, worktree assignment, timeout, validation, static analysis, coverage, PR handoff, and deterministic-tool comparison.
 - Maintained on 2026-09-15 with model-tier routing and managed command, file, and network policy evidence for app, CLI, and editor-hosted workers.
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.

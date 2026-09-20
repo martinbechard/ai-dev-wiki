@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds agent-runtime migration and enterprise-cost evidence. Runtime telemetry should expose startup overhead, memory use, process supervision, crash recovery, monitoring state, nested model-call volume, background retries, review queue pressure, and accepted-outcome cost when those signals decide whether the workflow is healthy.
+
 Long-running AI workflows need visible progress so users can understand what the system is doing, where it is waiting, and which checks still matter. Token streaming can show generation, but useful progress also includes retrieved files, tool activity, approval waits, unresolved items, generated drafts, and runtime health.
 
 Progress events are product signals, not proof of hidden reasoning. The harness should expose enough state for the user to judge whether the workflow is alive, blocked, waiting for approval, or ready for acceptance. Local and long-running model workflows also need operational telemetry such as latency, memory pressure, cache behavior, GPU or accelerator use, token counts, and quality drift signals.
@@ -77,6 +79,8 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds request-level server health and telemetry-correlation evidence. Agent application telemetry should expose traffic, latency percentiles, status over time, endpoint hot spots, environment separation, and ranked hypotheses across metrics, logs, traces, and topology so repair agents receive evidence packages rather than isolated log snippets.
 
 ## Practice Boundaries
+
+- Expose runtime overhead, supervision, crash recovery, nested calls, retries, review pressure, and accepted-outcome cost when agent execution scales beyond one interactive turn.
 
 - Stream progress when users need visible state during multi-step work.
 - Separate user-visible progress from unsupported claims about hidden reasoning.
@@ -184,6 +188,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-19 with runtime-overhead, supervision, crash-recovery, nested-call, retry, review-pressure, and accepted-outcome telemetry evidence.
 - Maintained on 2026-09-15 with request-level service health, environment-separated telemetry, latency percentile, endpoint, and ranked-hypothesis evidence.
 - Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.
 - Maintained on 2026-09-01 with running-task, unread-update, awaiting-response, queued-prompt, working-time, thread-identifier, safe-output, and grader telemetry.
