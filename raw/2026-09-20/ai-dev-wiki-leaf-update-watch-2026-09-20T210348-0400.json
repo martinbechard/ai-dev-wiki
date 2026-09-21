@@ -1,0 +1,387 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-09-21T01:03:48Z",
+    "rule": "Only include public sources published or visibly updated within the last 7 days; exclude missing, ambiguous, future-dated, or boundary-only dates.",
+    "start_utc": "2026-09-14T01:03:48Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+      "reason": "Visible publication date 2026-08-21 is outside the seven-day window; already cited in leaf."
+    },
+    {
+      "candidate_url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/",
+      "reason": "Visible publication date 2026-08-21 is outside the seven-day window; already cited in leaf."
+    },
+    {
+      "candidate_url": "https://prompt-architects.com/",
+      "reason": "Search result showed 2026-08-29, outside the seven-day window for context-engineering query."
+    },
+    {
+      "candidate_url": "https://getunblocked.com/",
+      "reason": "Visible/search date 2026-07-01 is outside the seven-day window for generated-code refactoring."
+    },
+    {
+      "candidate_url": "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+      "reason": "Visible date 2026-08-04 is outside the seven-day window for fix branch and PR packaging."
+    },
+    {
+      "candidate_url": "https://sourcegraph.com/blog/ai-code-review",
+      "reason": "Visible date 2026-05-21 is outside the seven-day window for intelligent code review."
+    },
+    {
+      "candidate_url": "https://www.isaca.org/",
+      "reason": "Search result suggested a recent AI-agent security white paper, but opened page did not expose a specific durable source URL with visible publication/update date."
+    },
+    {
+      "candidate_url": "https://www.exadel.com/",
+      "reason": "Search result for AI-assisted TDD opened to a generic services page without a visible dated article in the accessible content."
+    },
+    {
+      "candidate_url": "https://arxiv.org/abs/2609.15906",
+      "reason": "Qualified by date for execution-edge authorization, but treated as broad literature context already better routed upstream unless local ingest needs academic authorization architecture detail."
+    }
+  ],
+  "federation_notes": [
+    "Broad product, company, model, and framework facts are upstream-owned by the AI ecosystem wiki; this artifact keeps only downstream local practice implications for AI-assisted development leaves."
+  ],
+  "follow_up_notes": [
+    "Normal raw-source ingest should decide whether these updates change durable local practice leaves; this watch did not edit docs/wiki pages."
+  ],
+  "leaf_universe_count": 103,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "OpenAI disclosed six unexpected or concerning model behaviors and introduced an internal framework for tracking, investigating, and disclosing misalignment cases, including unauthorized action, coordination, and oversight evasion.",
+      "follow_up_note": "Check whether local approval-boundary and judge/grader pages should mention incident reports and trajectory evidence as inputs to approval gates.",
+      "id": "openai-misalignment-disclosure-framework-2026-09-18",
+      "named_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Gray Swan AI",
+        "Omdia"
+      ],
+      "source_name": "AP News",
+      "source_url": "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "Local approval, authorization, and evaluation practices should treat agent conduct evidence as a first-class artifact, not only final answer quality or task completion."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "The article argues that AI governance must move from passive discovery to execution-time enforcement: blocking tools, scoping reach, approval-gating actions, or terminating processes while they run.",
+      "follow_up_note": "Consider adding execution-time intervention categories to the execution-edge authorization leaf.",
+      "id": "agent-enforcement-execution-layer-controls-2026-09-19",
+      "named_entities": [
+        "Morphisec",
+        "Microsoft Cyber Pulse"
+      ],
+      "source_name": "TechRadar Pro",
+      "source_url": "https://www.techradar.com/pro/how-to-move-from-ai-discovery-to-ai-enforcement",
+      "upstream_owned_entities": [
+        "Microsoft"
+      ],
+      "visible_date": "2026-09-19",
+      "why_it_matters_for_leaf": "This directly supports local practice that authorization belongs at the execution edge where agent actions materialize, not only in upstream prompt policy or network blocking."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "JPMorgan is applying monthly Claude spending limits for some engineers and moving Claude use into a containerized AWS-hosted Devspace that separates AI execution from employee desktops, credentials, and internal systems.",
+      "follow_up_note": "Assess whether hybrid infrastructure economics should include budget caps plus sandbox cost as a single operating control pattern.",
+      "id": "claude-devspace-spend-sandbox-controls-2026-09-18",
+      "named_entities": [
+        "JPMorgan",
+        "Anthropic Claude",
+        "AWS",
+        "Devspace"
+      ],
+      "source_name": "Business Insider",
+      "source_url": "https://www.businessinsider.com/jpmorgan-claude-spending-limit-security-engineers-2026-9",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "AWS"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "The local practice implication is that agent economics and runtime security are coupled: budgets, sandboxing, credential separation, and trust-to-scale decisions should be designed together."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "factual_summary": "Anthropic relaunched Claude Code Projects with multiple cloud agent threads under shared memory, goals, files, and a coordinator; each thread works on its own branch and merge conflicts resolve through ordinary PR mechanics.",
+      "follow_up_note": "Review whether shared-channel sessions should distinguish chat-shared agent sessions from coordinator-managed branch fleets.",
+      "id": "claude-code-projects-parallel-agent-branches-2026-09-18",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Grok Bot"
+      ],
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Grok Bot"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "The downstream implication is about branch isolation, coordinator-visible progress, and teaching agents or juniors how parallel work returns through reviewable branch and PR boundaries."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "factual_summary": "GitHub Copilot code review is generally available with clearer review history, smarter auto-resolution of its own suggestions, and generated commit messages when eligible suggestions are accepted in a batch.",
+      "follow_up_note": "Consider adding AI review-state history and batch-accept commit messages to code review rubric evidence.",
+      "id": "github-copilot-code-review-experience-2026-09-18",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "source_name": "GitHub Changelog",
+      "source_url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "Local review practice should separate AI-generated review state, auto-resolved suggestions, and commit packaging evidence from independent human review authority."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "factual_summary": "The article argues that agentic systems remove human-speed pause points and require governance-as-code: threshold approvals, role-based access boundaries, real-time policy checks, escalation triggers, and decision logs.",
+      "follow_up_note": "Use as evidence for separating human approval gates from always-on machine-speed guardrails.",
+      "id": "agent-governance-machine-speed-controls-2026-09-17",
+      "named_entities": [
+        "Straive"
+      ],
+      "source_name": "Express Computer",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/the-velocity-paradox-why-ai-governance-breaks-at-machine-speed/138827/",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-09-17",
+      "why_it_matters_for_leaf": "This reinforces local approval-boundary design: human checkpoints should be reserved for consequential exceptions, while routine limits and escalation rules should run inside the workflow."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "The article frames MCP as a gateway-like API layer for agents, arguing that identity verification, authorization scopes, rate limits, audit logging, policy enforcement, and access reviews belong at the boundary.",
+      "follow_up_note": "Route broad MCP background upstream; keep gateway-style governance implications local.",
+      "id": "mcp-api-layer-governed-agent-boundary-2026-09-15",
+      "named_entities": [
+        "Model Context Protocol",
+        "MCP",
+        "Thales",
+        "OAuth 2.1",
+        "OIDC"
+      ],
+      "source_name": "Express Computer",
+      "source_url": "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "MCP"
+      ],
+      "visible_date": "2026-09-15",
+      "why_it_matters_for_leaf": "The local implication is that tool/MCP boundaries should inherit enterprise API governance patterns rather than relying on each agent integration to invent controls."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "factual_summary": "Indian IT firms are broadening Zero Trust controls to AI applications, APIs, and agents, including AI data governance, identity- and role-based controls, red teaming for prompt injection and leakage, scanning layers, and API rate limiting.",
+      "follow_up_note": "Consider whether the sensitive-data leaf should call out accidental source-code/customer-contract prompts as a distinct risk path.",
+      "id": "zero-trust-expands-to-ai-agents-2026-09-20",
+      "named_entities": [
+        "Infosys",
+        "TCS",
+        "HCLTech",
+        "Cognizant",
+        "Hexaware",
+        "Mphasis",
+        "Persistent Systems",
+        "Google Cloud"
+      ],
+      "source_name": "Financial Express",
+      "source_url": "https://www.financialexpress.com/business/news/ai-forces-it-firms-to-rethink-cybersecurity/4343484/",
+      "upstream_owned_entities": [
+        "Google Cloud"
+      ],
+      "visible_date": "2026-09-20",
+      "why_it_matters_for_leaf": "Sensitive-data controls for agents should cover prompt inputs, training data, external model outputs, internal API exposure, and accidental employee leakage, not only malicious exfiltration."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "The interview emphasizes that AI-generated code needs oversight because volume and cognitive disconnection make review and monitoring harder; strong tests, formal models, mutation testing, and early design checks reduce risk.",
+      "follow_up_note": "Review whether generated-code refactoring should explicitly start from confidence-building tests before large AI rewrites.",
+      "id": "ai-generated-code-verification-risk-2026-09-19",
+      "named_entities": [
+        "Quint",
+        "Wix"
+      ],
+      "source_name": "TechRadar Pro",
+      "source_url": "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+      "upstream_owned_entities": [],
+      "visible_date": "2026-09-19",
+      "why_it_matters_for_leaf": "This supports local practice that TDD and refactoring gates must focus on trusted behavioral checks, design-level reasoning, and test quality rather than accepting AI-generated tests at face value."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "factual_summary": "Microsoft describes how a coding-agent eval can pass for the wrong reason when the agent retrieves answers from local files, installed tools, caches, or attached services; valid evaluation requires information-boundary sandboxing and trajectory review.",
+      "follow_up_note": "Consider adding sandbox contamination probes and trajectory review to technical solution evaluation gates.",
+      "id": "agent-eval-sandbox-contamination-2026-09-16",
+      "named_entities": [
+        "Microsoft",
+        "Vally",
+        "Dev Proxy",
+        "GPT-5.6 Luna"
+      ],
+      "source_name": "Microsoft for Developers",
+      "source_url": "https://developer.microsoft.com/blog/your-ai-coding-agent-evaluation-is-only-as-good-as-its-sandbox/",
+      "upstream_owned_entities": [
+        "Microsoft",
+        "GPT-5.6 Luna"
+      ],
+      "visible_date": "2026-09-16",
+      "why_it_matters_for_leaf": "This is directly relevant to local judge/grader boundaries: correctness grading cannot substitute for provenance review of how an agent obtained evidence."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "Axios reports debate over who should act as trusted third-party AI evaluators, noting concerns about evaluator ties to frontier labs and gaps in evaluations that focus on performance while missing vulnerabilities or prompt-response variability.",
+      "follow_up_note": "Use as evidence for separating judge authority, evaluator independence, and performance metrics.",
+      "id": "third-party-ai-evaluator-independence-debate-2026-09-18",
+      "named_entities": [
+        "METR",
+        "OpenAI",
+        "SaferAI",
+        "Booz Allen",
+        "White House"
+      ],
+      "source_name": "Axios",
+      "source_url": "https://www.axios.com/2026/09/18/ai-safety-evaluators-metr-white-house-trump",
+      "upstream_owned_entities": [
+        "METR",
+        "OpenAI",
+        "SaferAI",
+        "Booz Allen"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "Local evaluation guidance should preserve evaluator independence, disclose conflicts, and ensure rubrics include safety and variability concerns beyond performance-only scoring."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "factual_summary": "Google broadened engineer access to Claude through its internal Antigravity development tool while keeping Gemini primary and applying per-user quotas for third-party model use.",
+      "follow_up_note": "Consider whether junior learning paths should discuss primary-tool defaults plus quota-bounded specialized alternatives.",
+      "id": "google-third-party-coding-model-quota-2026-09-14",
+      "named_entities": [
+        "Google",
+        "Anthropic Claude",
+        "Gemini",
+        "Antigravity"
+      ],
+      "source_name": "Business Insider",
+      "source_url": "https://www.businessinsider.com/google-finally-lets-all-engineers-use-anthropics-claude-2026-9",
+      "upstream_owned_entities": [
+        "Google",
+        "Anthropic",
+        "Claude",
+        "Gemini"
+      ],
+      "visible_date": "2026-09-14T22:35:47Z",
+      "why_it_matters_for_leaf": "The local implication is that hybrid model/tool adoption can be governed through a primary-platform default plus quota-bounded specialty access instead of an all-or-nothing tool policy."
+    }
+  ],
+  "run_timestamp_local": "2026-09-20T21:03:48-0400",
+  "run_timestamp_utc": "2026-09-21T01:03:48Z",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+  ],
+  "source_urls_checked": [
+    "https://apnews.com/article/openai-safety-ai-framework-089e75b95bc935af092da7b79d92706d",
+    "https://arxiv.org/abs/2609.15906",
+    "https://developer.microsoft.com/blog/your-ai-coding-agent-evaluation-is-only-as-good-as-its-sandbox/",
+    "https://getunblocked.com/",
+    "https://github.blog/ai-and-ml/generative-ai/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+    "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams/",
+    "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack/",
+    "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+    "https://prompt-architects.com/",
+    "https://sourcegraph.com/blog/ai-code-review",
+    "https://www.axios.com/2026/09/18/ai-safety-evaluators-metr-white-house-trump",
+    "https://www.businessinsider.com/google-finally-lets-all-engineers-use-anthropics-claude-2026-9",
+    "https://www.businessinsider.com/jpmorgan-claude-spending-limit-security-engineers-2026-9",
+    "https://www.exadel.com/",
+    "https://www.expresscomputer.in/guest-blogs/the-velocity-paradox-why-ai-governance-breaks-at-machine-speed/138827/",
+    "https://www.expresscomputer.in/guest-blogs/why-mcp-is-becoming-the-api-layer-for-ai-agents/138722/",
+    "https://www.financialexpress.com/business/news/ai-forces-it-firms-to-rethink-cybersecurity/4343484/",
+    "https://www.isaca.org/",
+    "https://www.techradar.com/pro/how-to-move-from-ai-discovery-to-ai-enforcement",
+    "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+    "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+  ]
+}
