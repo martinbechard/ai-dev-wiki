@@ -27,6 +27,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Cross-application continuation and interrupted-session restore should preserve steering context.
 - Review queue pressure and task switching remain visible operating costs rather than hidden side effects of solo agent delegation.
 
+The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) adds coordinator-managed branch-fleet evidence. Shared agent work can now mean multiple cloud agent threads working under shared memory, goals, files, and coordinator-visible progress while each thread returns through its own branch and ordinary pull-request conflict handling. Locally, this is a workflow boundary: shared context and coordinator visibility help orchestration, but branch isolation, review gates, and merge-conflict resolution remain the acceptance path.
+
 ## Practice Boundaries
 
 - Treat chat messages as steering evidence, not standalone authorization for repository writes, sandbox use, paid compute, or merges.
@@ -37,9 +39,11 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 - Keep private context, secrets, credentials, and restricted repository data out of shared channels unless the repository and collaboration policy explicitly allow that exposure.
 - Link shared-channel sessions to [delegated coding handoffs](delegated-coding-handoffs.md) and [runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md) so later reviewers can reconstruct who asked for what, what changed, and which gates passed.
 - Treat channel-visible feedback, previews, and approval widgets as evidence inputs; require repository and admin-control records before accepting them as authorization for code changes.
+- Distinguish chat-shared agent sessions from coordinator-managed branch fleets; preserve shared goals and memory as coordination context while keeping each branch, pull request, review, and conflict decision independently attributable.
 
 ## Authoritative Sources
 
+- [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -75,6 +79,7 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with coordinator-managed branch-fleet, shared-memory, parallel-thread, branch-isolation, pull-request, and conflict-resolution evidence.
 - Maintained on 2026-08-29 with shared Slack and Teams session, cross-app continuation, interrupted-session restore, review-load, and task-switching evidence.
 - Maintained on 2026-08-29 with shared-agent trigger, custom-agent catalog, usage visibility, effort, context-window, model-capability, and pre-PR review evidence.
 - Created on 2026-08-22 from qualifying public-preview evidence for shared Slack and Microsoft Teams coding-agent sessions, keeping product-specific details upstream-owned.

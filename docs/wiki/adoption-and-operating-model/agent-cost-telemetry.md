@@ -124,6 +124,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - MCP connection attempts.
 - Rolling adoption-phase populations.
 
+The September 20 raw sources add acceptance-cost and bounded-repository automation evidence. The [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) frames token spend, retries, review time, incidents, post-deployment rework, and unverified generated code as one engineering-cost ledger. It also records repository-agent workflow guidance to measure cost per accepted suggestion plus reviewer correction time, rather than raw suggestion count or nominal model spend. Locally, a cheap run is not cheap when it creates extra correction work, incident load, or production rework.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -201,9 +203,12 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Separate dedicated agent-window usage metrics from editor-agent and background-agent activity before using adoption telemetry in budget or productivity decisions.
 - Separate feature engagement, passive versus active review, CLI customization use, skills, custom agents, plugins, and MCP connection attempts before interpreting adoption telemetry.
 - Treat rolling adoption-phase populations as enablement signals that still need accepted-outcome, review-quality, and workflow-owner joins.
+- Join token spend, retry loops, production incidents, post-deployment rework, senior-review load, and accepted outcomes before calling an agent workflow cheap or expensive.
+- Track cost per accepted suggestion or accepted change plus reviewer correction time for repository automation, especially when agents produce many small suggestions.
 
 ## Authoritative Sources
 
+- [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
@@ -294,6 +299,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with acceptance-cost, reviewer-correction-time, retry, incident, rework, and cost-per-accepted-suggestion evidence.
 - Maintained on 2026-09-19 with spend-cap, runtime-isolation, tokenmaxxing, validation-capacity, and outcome-governed cost evidence from the September 19 raw sources.
 - Maintained on 2026-09-17 with budget-increase request, approver, cap, denial, workflow-dependency, and outcome evidence.
 - Maintained on 2026-09-08 with whole-task efficiency, output-trimming, prompt-cost, privacy-boundary, batching, context-pruning, token-spend, and leaderboard-risk evidence.

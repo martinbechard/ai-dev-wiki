@@ -21,6 +21,8 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 
 This page owns the local acceptance and routing rules. Broad provider security announcements, model catalogs, package ecosystem watchlists, and product-specific vulnerability tracking belong upstream unless a local approval rule depends on them.
 
+The September 20 raw sources add Zero Trust and skill-packaging evidence for AI-assisted development controls. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) expands sensitive-data control beyond malicious exfiltration to prompt inputs, internal APIs, customer-contract text, source code, generated outputs, and employee leakage. The [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) adds a portable-skill validation signal: metadata inference, tool registration, hosted MCP pages, private skill libraries, and batch-run surfaces need deterministic packaging checks before teams treat them as safe reusable infrastructure.
+
 The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) adds two supply-chain signals. Workflow actions from unverified sources and package-account compromise controls should feed local review gates for agent-generated CI, dependency, and install changes. Platform details stay upstream; locally, agents should not add actions or packages without provenance, lockfile, and risk review.
 
 The [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json) reinforces data-control as a development-workflow gate. Source code, logs, code review material, internal docs, raw artifacts, and private context should be classified before they are sent to external models, hosted tools, browser agents, or third-party analysis surfaces. The local control is not product-specific; it is a rule that intelligence access cannot silently trade away data ownership, retention, or auditability.
@@ -157,9 +159,13 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - Inventory unsanctioned or shadow AI tools by data access, internet reachability, actor identity, owner, and revocation path before they are allowed near development assets.
 - Ask vendor-security questions at the feature tier actually used: prompt processors, no-training terms, retention ceilings, flagged-content handling, indemnity exclusions, eval coverage, and certification boundaries.
 - Treat public package registries, repository config, editor task settings, Docker sockets, local history, and keychains as supply-chain surfaces when a local coding agent can read or execute through them.
+- Apply Zero Trust controls to agent prompts, generated outputs, tool calls, internal APIs, customer-contract text, and source-code snippets when they can cross model, plugin, MCP, or hosted-agent boundaries.
+- Validate skill and plugin metadata, tool registrations, hosted MCP exposure, private-skill provenance, and batch-run authority before reusable agent packages enter team workflows.
 
 ## Authoritative Sources
 
+- [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
+- [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
@@ -247,6 +253,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with Zero Trust prompt, source-code, internal-API, generated-output, skill-package validation, hosted-MCP, and batch-run governance evidence.
 - Maintained on 2026-09-08 with dependency-bot package access, personal-token reduction, community-agent component intake, provenance, assessment, expert review, and deployment-approval evidence.
 - Maintained on 2026-09-04 with data-retention exception, content-exclusion, trusted-publishing, staged malware-scan, reusable-workflow identity, and CodeQL supply-chain evidence.
 - Maintained on 2026-09-01 with customer-owned log storage, managed keys, opt-in monitoring, watermark provenance, private plugin, and reusable review-skill supply-chain controls.

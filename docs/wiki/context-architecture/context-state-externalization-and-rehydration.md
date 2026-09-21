@@ -53,6 +53,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - External memory becomes more appropriate when a workflow spans multiple projects, users, machines, semantic search needs, or background extraction.
 - Locally, rehydration should distinguish startup memory, frozen session memory, searchable history, and external multi-scope memory before using any layer as authority.
 
+The [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) adds persistent personal-agent context as a governance analogy for coding-agent memory. Broad consumer-agent coverage stays upstream; locally, persistent development-agent context should have explicit ownership, retention, export, sharing, and revocation rules before teams depend on it as operational memory.
+
 ## Practice Boundaries
 
 - Separate transcript portability from attachment, file, and artifact portability when moving work between assistant surfaces.
@@ -84,9 +86,11 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 - Require provenance, freshness labels, backup verification, and format-version evidence before shared or team memory migrations steer future agent work.
 - Label durable notes, searchable transcript windows, cache-retained context, active questions, and live repository evidence separately during rehydration.
 - Separate startup-injected memory files, frozen prompt-cache-friendly session memory, searchable session history, and external semantic memory before relying on recalled facts across projects, users, or machines.
+- Treat persistent coding-agent memory and workspace context as owned operational data with retention, export, sharing, portability, and revocation rules before it becomes a rehydration source.
 
 ## Authoritative Sources
 
+- [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [Context management source](../../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md)
 - [Context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md)
 - [Context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md)
@@ -137,6 +141,7 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with persistent-context ownership, retention, export, sharing, portability, and revocation evidence.
 - Maintained on 2026-09-19 with cross-agent context transfer, attachment identity, file provenance, and local-only handling caveats.
 - Created on 2026-06-27 from O'Reilly context-management sources covering durable context files, handoffs, cursor checks, rehydration, and lost-in-the-middle mitigation.
 - Maintained on 2026-06-28 with conversation-history management as layered retention, pruning, summarization, and rehydration.

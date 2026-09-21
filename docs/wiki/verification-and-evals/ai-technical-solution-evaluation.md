@@ -34,6 +34,8 @@ The September 13 raw sources add private-eval, inventory, kill-switch, component
 
 Locally, those signals become evaluation criteria for the proposed agent route rather than broad product or benchmark coverage.
 
+The September 20 raw sources add information-boundary and evaluator-independence evidence. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) records sandbox-contamination risk: an agent can pass an eval by finding answers in local files, caches, installed tools, or attached services instead of solving the intended task. The same source records third-party evaluator-independence concerns. Locally, technical evaluation should preserve information-boundary controls, trajectory review, conflict disclosure, and safety or variability rubrics alongside ordinary performance scores.
+
 ## Evaluation Criteria
 
 - Functional and workflow fit: the solution supports the real user journey, decision points, exception handling, and measurable outcome.
@@ -53,6 +55,8 @@ Locally, those signals become evaluation criteria for the proposed agent route r
 - Private coding-agent evaluation: proposed agent routes are tested on representative historical tickets with CI-equivalent harnesses, reviewer rubrics, failure classifications, cost per resolved task, and model-task approval records.
 - Governance operability: proposed agent platforms show a complete inventory of agents, tools, MCP servers, models, owners, production-impact gates, kill switches, and revocation paths before confidence claims influence acceptance.
 - Vendor and component assurance: proposed AI tools show prompt processors, retention terms, feature-specific eval evidence, certification boundaries, deployable component provenance, and security-review records.
+- Information-boundary assurance: proposed agent evals show sandbox isolation, hidden-answer controls, attached-service limits, cache handling, and trajectory review before success rates influence acceptance.
+- Evaluator independence: proposed third-party or internal judge routes disclose conflicts, authority boundaries, rubric scope, safety coverage, and prompt-response variability handling before their scores are accepted.
 
 ## Knockout Gates
 
@@ -71,6 +75,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [Verification loops and evals](verification-loops-and-evals.md)
 - [Representative workflow calibration](representative-workflow-calibration.md)
 - [LLM observability quality gates](llm-observability-quality-gates.md)
@@ -107,6 +112,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with sandbox-contamination, trajectory-review, evaluator-independence, conflict-disclosure, and safety-variability rubric evidence.
 - Maintained on 2026-09-13 with private-ticket evals, inventory proof, kill switches, vendor-review evidence, community-component provenance, and cost-per-resolved-task criteria.
 - Created on 2026-08-20 from the technical-solution evaluation query fragment as a durable due-diligence rubric.
 - Maintained on 2026-08-20 with data-masking, prompt-injection verdict, tool-call policy, signed evidence pack, customer-controlled deployment, and key-boundary evaluation artifacts.

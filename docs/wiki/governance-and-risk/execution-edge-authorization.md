@@ -29,6 +29,8 @@ Locally, these edges need centrally managed deny/approval/allow policy plus diag
 
 The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) reinforces central policy precedence for shell commands, file reads and edits, and network domains across app, CLI, and editor-hosted agent sessions. Locally, saved approvals and workspace defaults are weaker than enterprise-managed execution policy and should be reviewed as override attempts when they conflict.
 
+The September 20 raw sources add execution-time enforcement and machine-speed governance evidence. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) and [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) reinforce that agent governance should block, approval-gate, rate-limit, scope, terminate, or escalate actions while they run. Prompt policy, passive discovery, and after-the-fact review are insufficient when an agent can trigger APIs, tools, MCP servers, repositories, credentials, or external systems at machine speed.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -46,9 +48,13 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 - Record whether a command, file, or network edge was blocked, approval-gated, or allowed by enterprise policy before treating a local agent run as authorized.
 - Treat first-open repository inspection by a command-capable local agent as an execution-risk event when repository config, hooks, editor tasks, or generated outputs can run code.
 - Prefer short-lived, narrow execution credentials and monitored disposable environments when local CLI agents would inherit broad laptop sessions, keys, or authenticated services.
+- Put policy checks, rate limits, scoped tool reach, escalation triggers, and decision logs on the runtime path for agent actions instead of relying only on written policy or post-run review.
+- Treat MCP servers and agent-facing APIs as execution edges that need identity verification, authorization scope, audit logging, rate limits, and access reviews before agents can invoke them.
 
 ## Authoritative Sources
 
+- [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
+- [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -89,6 +95,7 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with execution-time enforcement, machine-speed governance, MCP-as-API-boundary, policy-check, rate-limit, and escalation evidence.
 - Maintained on 2026-09-15 with app, CLI, and editor-hosted managed-permission precedence evidence.
 - Maintained on 2026-09-13 with managed-permission, sandbox-diagnostic, local-CLI, repository-first-open, short-lived-credential, and monitored-runtime edge evidence.
 - Maintained on 2026-08-29 with cross-surface, hardware, physical-tool, capability-metadata, safety-eval, and oversight execution-edge evidence.

@@ -27,6 +27,8 @@ The [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds AI-generated-code risk evidence. Generated assertions are not enough when the defect is a design-level bug, a concurrent behavior, or a distributed-system invariant; high-risk changes may need mutation tests, runtime monitoring, model-checkable specifications, or formal models before generated implementation passes are treated as meaningful.
 
+The September 20 raw sources reinforce the same risk with additional source coverage. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) and [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) support the local rule that high-volume AI-generated code needs confidence-building tests before broad rewrites, and that test quality should be challenged with mutation testing, design-stage checks, or formal models when ordinary generated tests could mirror the agent's own misunderstanding.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -45,6 +47,7 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 - Confirm that a new failing test fails for the expected reason before asking an agent to satisfy it.
 - Pair agent TDD with layered tests, review notes, documentation intent, and deterministic CI evidence before treating generated code as production-ready.
 - Treat mutation testing, runtime monitoring, and formal models as escalation paths for high-risk AI-generated changes, not as blanket requirements for every assisted edit.
+- Prefer confidence-building tests before large AI refactors or rewrites, and challenge generated tests when they may simply encode the same flawed assumption as the generated implementation.
 
 ## Authoritative Sources
 
@@ -58,6 +61,8 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 10 topic news collector source](../../../raw/processed/2026-08-10/ai-dev-wiki-topic-news-collector-2026-08-10T203108-0400.json)
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
+- [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
+- [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 
 ## Related Code
 
@@ -83,6 +88,7 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-20 with confidence-building tests before AI rewrites plus generated-test challenge, mutation-testing, and design-stage check evidence.
 - Maintained on 2026-09-19 with test-quality, generated-assertion, mutation-testing, formal-modeling, and design-level bug guidance.
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.

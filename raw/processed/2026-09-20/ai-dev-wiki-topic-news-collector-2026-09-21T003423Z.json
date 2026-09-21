@@ -1,0 +1,283 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-21T00:34:23Z",
+  "last_run_timestamp_utc": "2026-09-20T00:31:36.505Z",
+  "cutoff_window": {
+    "relative_window": "2 days before run time",
+    "start_utc": "2026-09-19T00:34:23Z",
+    "end_utc": "2026-09-21T00:34:23Z",
+    "date_policy": "Included only public web sources with visible publication, update, or page date evidence inside the window. Excluded missing, ambiguous, future-dated, and boundary-only dates."
+  },
+  "project_wiki_status": "passed: 126 pages, 0 missing required files, 0 lint findings",
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, operating model, and implementation lens.",
+    "upstream_scope": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques remain owned by /Users/martinbechard/dev/ai-wiki/docs/wiki.",
+    "federation_page": "docs/wiki/federation.md"
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "TechRadar interview stresses formal verification, mutation testing, and design-stage checks for AI-generated code",
+      "source_url": "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+      "source_type": "public web article",
+      "visible_date": "Published 18 September 2026",
+      "date_evidence": "Article masthead shows 'Published 18 September 2026'. Search result surfaced it as published 2 days before the run.",
+      "short_factual_summary": "TechRadar interviewed Gabriela Moreira of Quint about AI-generated code risks. The article argues that AI can produce large volumes of code whose architecture and failure modes are harder for humans to reason about, especially in concurrent, distributed, or non-deterministic systems. It recommends early design checks, behavior-focused tests, mutation testing, and, where feasible, formal models or formal verification.",
+      "why_it_matters_for_ai_assisted_development": "This reinforces local practice that AI-assisted coding needs verification gates scaled by system risk, not just line-by-line review. Mutation testing and formal models are useful evidence upgrades when AI output volume makes ordinary review insufficient.",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Gabriela Moreira",
+        "Quint",
+        "mutation testing",
+        "formal verification"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Quint"
+      ],
+      "local_practice_implication": "Consider adding or refreshing guidance that generated-code review should prefer behavior coverage, mutation-test confidence, and design-stage executable checks for high-risk systems.",
+      "follow_up_notes": "Route company and publication background upstream if needed; keep local synthesis focused on verification practices for AI-generated code."
+    },
+    {
+      "title": "Express Computer frames token spend, production incidents, and agent debt as engineering governance signals",
+      "source_url": "https://www.expresscomputer.in/news/tokenmaxxing-inside-the-enterprise-ai-budget-crisis-no-one-saw-coming/138840/",
+      "source_type": "public web article",
+      "visible_date": "Published 2 days ago in search result; page is current in the two-day run window",
+      "date_evidence": "Search result exposed 'Published: 2 days ago' for this URL during the run.",
+      "short_factual_summary": "Express Computer reports that unmanaged AI usage creates hidden cost and reliability risk. The article cites agentic workflows that trigger nested model calls, production handoff as a cost inflection point, and survey figures claiming increased production incidents, senior-engineer firefighting, post-deployment rework, and unverified AI-generated code. It recommends AI observability that ties prompts, token usage, latency, feedback, traces, and production behavior together.",
+      "why_it_matters_for_ai_assisted_development": "The local practice signal is that agent cost telemetry and production quality telemetry should be evaluated together. A cheap generation run is not cheap if it increases senior review load, incidents, or rework.",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Express Computer",
+        "New Relic",
+        "FinOps Foundation",
+        "Faros AI",
+        "Ganesh Narasimhadevara",
+        "agent debt"
+      ],
+      "upstream_owned_entities": [
+        "New Relic",
+        "FinOps Foundation",
+        "Faros AI",
+        "OpenAI",
+        "Anthropic",
+        "Google"
+      ],
+      "local_practice_implication": "Cost telemetry pages can treat token use, retries, background agent loops, review time, incidents, and rework as one acceptance-cost ledger rather than separate finance and engineering metrics.",
+      "follow_up_notes": "Verify survey claims again during ingest before converting numbers into durable wiki statements."
+    },
+    {
+      "title": "Verdent guide recommends cost-per-accepted-suggestion and correction-work tracking for GitHub agentic workflows",
+      "source_url": "https://www.verdent.ai/guides/agents/github-agentic-workflows",
+      "source_type": "public web guide",
+      "visible_date": "As checked on September 20, 2026",
+      "date_evidence": "Guide text states 'As checked on September 20, 2026'.",
+      "short_factual_summary": "Verdent's guide treats GitHub agentic repository automation as a bounded repository workflow rather than backlog ownership by agents. It notes that public-preview details are version-sensitive and recommends tracking cost per accepted suggestion alongside reviewer time because cheaper runs can create more correction work.",
+      "why_it_matters_for_ai_assisted_development": "The practice signal is that repository automation should be bounded to one task, version-sensitive, and judged by accepted useful output plus human correction cost rather than raw model cost or suggestion count.",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Verdent",
+        "GitHub",
+        "GitHub Copilot",
+        "AIC estimates"
+      ],
+      "upstream_owned_entities": [
+        "Verdent",
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Agent workflow and cost telemetry pages can add 'cost per accepted suggestion plus reviewer correction time' as a better delivery metric for repository automation.",
+      "follow_up_notes": "Keep GitHub product specifics upstream-owned; local ingest should focus on bounded workflow and cost-accounting practice."
+    },
+    {
+      "title": "AI Agent Store September 20 briefing surfaces skill validation and silent tool-registration failure checks",
+      "source_url": "https://aiagentstore.ai/",
+      "source_type": "public web briefing and marketplace page",
+      "visible_date": "September 20, 2026",
+      "date_evidence": "Page shows 'September 20, 2026' above the daily developments list.",
+      "short_factual_summary": "The September 20 AI Agent Store briefing says a Forge changelog dated September 19 adds faster skill-to-agent packaging that infers metadata from SKILL.md and a forge skills validate command to catch silent tool-registration failures.",
+      "why_it_matters_for_ai_assisted_development": "The local practice signal is that portable skills and agent plugins need deterministic validation for metadata, tool registration, and packaging before teams trust them in coding-agent harnesses.",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AI Agent Store",
+        "Forge",
+        "SKILL.md",
+        "skill-to-agent packaging"
+      ],
+      "upstream_owned_entities": [
+        "AI Agent Store",
+        "Forge"
+      ],
+      "local_practice_implication": "Portable agent skill governance should include a packaging validation step that fails visibly when tool registration is incomplete or metadata inference is wrong.",
+      "follow_up_notes": "During ingest, locate the primary Forge changelog if possible before treating AI Agent Store's summary as authoritative."
+    },
+    {
+      "title": "AI Agent Store September 20 briefing flags batch runs, hosted MCP pages, and private skill libraries",
+      "source_url": "https://aiagentstore.ai/",
+      "source_type": "public web briefing and marketplace page",
+      "visible_date": "September 20, 2026",
+      "date_evidence": "Page shows 'September 20, 2026' above the daily developments list and summarizes a September 19 Swarms changelog.",
+      "short_factual_summary": "The same September 20 briefing says Swarms shipped an Auto Agent Builder, multi-agent chat, batch runs up to 500 tasks, a hosted MCP page, an encrypted private Skills library, and S2A deployments on September 19.",
+      "why_it_matters_for_ai_assisted_development": "The local practice signal is not the product launch itself, but the need to govern high-volume batch execution, hosted MCP exposure, and private skill libraries as one permissioned runtime surface.",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AI Agent Store",
+        "Swarms",
+        "Auto Agent Builder",
+        "MCP",
+        "Skills library",
+        "S2A"
+      ],
+      "upstream_owned_entities": [
+        "AI Agent Store",
+        "Swarms",
+        "MCP"
+      ],
+      "local_practice_implication": "Batch-agent workflow guidance should require explicit task caps, MCP publication review, private skill provenance, and audit evidence before bulk runs are accepted.",
+      "follow_up_notes": "Route Swarms product coverage upstream; preserve local implication around batch-run and hosted-tool governance."
+    },
+    {
+      "title": "Axios personal-agent coverage highlights accumulated user context as a governance and ownership issue",
+      "source_url": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
+      "source_type": "public web news article",
+      "visible_date": "Published today in search result; article URL date path is 2026/09/20",
+      "date_evidence": "Search result exposed 'Published: today' during the September 20 local run; URL path includes 2026/09/20.",
+      "short_factual_summary": "Axios reports that personal AI agents are moving from professional work into everyday life, with agents that use memory, judgment, autonomy, app sign-in, and persistent cloud computers. It frames the competition as a fight to become the holder of users' personal information and context, while noting privacy and data-ownership concerns.",
+      "why_it_matters_for_ai_assisted_development": "Although consumer-agent product coverage is upstream-owned, the local practice implication is relevant to coding-agent adoption: persistent agent context should have ownership, retention, portability, and revocation rules before teams rely on it.",
+      "local_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Axios",
+        "OpenAI",
+        "Meta",
+        "Apple",
+        "Instinct",
+        "Grok Bot",
+        "Muse",
+        "OpenClaw"
+      ],
+      "upstream_owned_entities": [
+        "Axios",
+        "OpenAI",
+        "Meta",
+        "Apple",
+        "Instinct",
+        "Grok Bot",
+        "Muse",
+        "OpenClaw"
+      ],
+      "local_practice_implication": "Persistent coding-agent memory and workspace context should be treated as user-owned operational data with explicit retention, export, sharing, and revocation controls.",
+      "follow_up_notes": "Do not duplicate the personal-agent market story locally; use only as a governance analogy for development-agent context ownership."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Android Bench 2.0 coverage",
+      "source_url": "https://www.androidcentral.com/apps-software/android-os/android-bench-2-0",
+      "visible_date": "Published 3 days ago",
+      "reason": "Outside the two-day cutoff window despite relevant software-engineering eval content."
+    },
+    {
+      "title": "Claude Code Projects relaunch coverage",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "visible_date": "Published 3 days ago",
+      "reason": "Outside the two-day cutoff window and primarily upstream-owned product coverage."
+    },
+    {
+      "title": "Business Insider Daytona prompting-agents-as-management article",
+      "source_url": "https://www.businessinsider.com/ivan-burazin-daytona-ai-agents-prompting-managing-people-2026-9",
+      "visible_date": "Published 3 days ago",
+      "reason": "Outside the two-day cutoff window despite relevant adoption-operating-model signal."
+    },
+    {
+      "title": "OpenAI Agents API announcement",
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "visible_date": "No visible article publication date found on opened page",
+      "reason": "Excluded because the page did not expose a concrete visible publication or update date inside the cutoff window; product/API coverage is also upstream-owned except local harness implications."
+    },
+    {
+      "title": "OpenAI research acceleration article",
+      "source_url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "visible_date": "No visible article publication date found on opened page",
+      "reason": "Excluded because the opened page showed 2026 tags and internal period references but no visible publication or update date inside the cutoff window."
+    },
+    {
+      "title": "OpenAI internal coding-agent misalignment monitoring article",
+      "source_url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/",
+      "visible_date": "No visible article publication date found on opened page",
+      "reason": "Excluded because the opened page lacked a visible publication or update date inside the cutoff window, despite relevant monitoring categories."
+    },
+    {
+      "title": "DEV Community September 20 agent-practice article listings",
+      "source_url": "https://dev.to/",
+      "visible_date": "Sep 20 article listing dates",
+      "reason": "Excluded as qualifying findings because exact article URLs were not resolved during the run; retain as follow-up search targets for task-spec contracts, agent memory attack surfaces, resilient DevSecOps pipelines, and agentic coding flow."
+    },
+    {
+      "title": "Barron's Anthropic-Accenture safety partnership coverage",
+      "source_url": "https://www.barrons.com/articles/accenture-stock-anthropic-ai-safety-76cfc55f",
+      "visible_date": "Search result said published 2 days ago; opened page did not expose the article date",
+      "reason": "Excluded because date evidence was not visible on the opened page and most details are upstream-owned company/AI-safety ecosystem coverage."
+    },
+    {
+      "title": "AI Weekly live alerts and September 21 issue page",
+      "source_url": "https://aiweekly.co/",
+      "visible_date": "Sep 21, 2026 and relative live-alert timestamps",
+      "reason": "Excluded as future/current-day broad AI ecosystem coverage relative to the September 20 local collector run; useful only as upstream routing context."
+    }
+  ],
+  "follow_up_notes": [
+    "Use raw-source ingest, not this collector, to update docs/wiki pages.",
+    "Before synthesis, verify primary sources for AI Agent Store summaries, especially Forge and Swarms changelog claims.",
+    "Search exact DEV article URLs in a later run if the listings remain relevant and accessible.",
+    "Treat source-provided survey numbers and vendor claims as claims needing re-verification before durable wiki prose.",
+    "Do not move this artifact to raw/processed until normal project-wiki ingest and independent topic verification complete."
+  ],
+  "privacy_and_sensitivity_notes": [
+    "Only public web sources were searched and recorded.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Local repository files were used only to determine wiki scope, federation boundaries, topic roots, and artifact destination."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
