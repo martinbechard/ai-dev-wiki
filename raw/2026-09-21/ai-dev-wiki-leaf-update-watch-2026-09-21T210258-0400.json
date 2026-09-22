@@ -1,0 +1,365 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-09-22T01:02:58Z",
+    "rule": "Only visibly published or updated sources within the last 7 days; missing, ambiguous, future-dated, and boundary-only dates excluded.",
+    "start_utc": "2026-09-15T01:02:58Z"
+  },
+  "excluded_candidate_count": 5,
+  "excluded_candidates": [
+    {
+      "candidate": "Notion 3.7: Agent skills for your whole team",
+      "reason": "Boundary-day date without a visible time; could be before the 2026-09-15T01:02:58Z cutoff, so excluded as ambiguous boundary-only date despite local skill-library relevance.",
+      "source_url": "https://www.notion.com/en-gb/releases/2026-09-15",
+      "visible_date": "2026-09-15"
+    },
+    {
+      "candidate": "Build with OpenAI Agents API on Vercel",
+      "reason": "Published before the seven-day cutoff; relevant to managed-agent portability but outside this run window.",
+      "source_url": "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
+      "visible_date": "2026-09-10"
+    },
+    {
+      "candidate": "Agentic Coding Workflow 2026: The End-to-End Loop",
+      "reason": "Search result freshness did not match the page's visible publication date; outside the seven-day window.",
+      "source_url": "https://www.futureproofing.dev/resources/ai-native-team/agentic-coding-workflow-2026",
+      "visible_date": "2026-07-20"
+    },
+    {
+      "candidate": "PRD for AI agent guardrails",
+      "reason": "Existing leaf citation was noted, but no qualifying visible update date within the seven-day window was established.",
+      "source_url": "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "visible_date": "not visibly checked in current run"
+    },
+    {
+      "candidate": "skillbelt package security page",
+      "reason": "Relative date lacks an exact visible timestamp and falls on the boundary of the run window, so it was excluded as ambiguous.",
+      "source_url": "https://socket.dev/npm/package/skillbelt",
+      "visible_date": "relative date only: version published 7 days ago"
+    }
+  ],
+  "federation_boundary": {
+    "local_scope": "Practice, workflow, governance, verification, context architecture, adoption, and operating-model implications for AI-assisted development.",
+    "routing_note": "Named products and models are listed as upstream-owned entities; this artifact preserves only downstream local-practice implications.",
+    "upstream_scope": "Broad ecosystem entity, product, model, company, framework, MCP server, and benchmark background belongs to the upstream AI wiki."
+  },
+  "follow_up_notes": [
+    "Ingest candidates should update durable practice leaves only after normal raw-source ingest verification.",
+    "Do not treat model/vendor release notes as local entity pages; route broad entity updates upstream.",
+    "Compaction and final-response evidence gaps may deserve a durable local quality-gate update."
+  ],
+  "leaf_universe_count": 103,
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md"
+      ],
+      "factual_summary": "A public article summarized a Skill Crossroads audit of 216 public Claude Code skills and emphasized that many failures were triggerability and instruction-boundary problems rather than model-capability problems.",
+      "follow_up_note": "Consider ingesting as evidence for skill authoring quality criteria, not as a broad Claude Code product update.",
+      "id": "agent-skill-triggerability-audit-2026-09-17",
+      "named_entities": [
+        "Skill Crossroads",
+        "Claude Code",
+        "MCP",
+        "agent skills"
+      ],
+      "source_url": "https://blog.tzeyong.com/2026/09/ai-agent-skills-in-2026-why-69-dont-work.html",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "MCP"
+      ],
+      "visible_date": "2026-09-17",
+      "visible_date_basis": "Article byline: Thursday, September 17, 2026.",
+      "why_it_matters_for_leaf": "Portable skills and tier-specific conventions need natural-language trigger descriptions, explicit constraints, and verification hooks; otherwise shared runbooks can exist but fail to activate reliably."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md"
+      ],
+      "factual_summary": "RepoAtlas proposes an evolving select-project-refresh repository view for coding agents and reports a 2.4 point SWE-bench Verified resolve-rate gain while reducing input tokens and model calls against the strongest multimodal graph baseline.",
+      "follow_up_note": "Local ingest should focus on refreshable repository views and context-layer routing implications.",
+      "id": "repoatlas-evolving-repository-views-2026-09-15",
+      "named_entities": [
+        "RepoAtlas",
+        "SWE-bench Verified",
+        "Qwen3.6-35B-A3B",
+        "MiMo-V2.5",
+        "Kimi-K2.5"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.16936",
+      "upstream_owned_entities": [
+        "RepoAtlas",
+        "SWE-bench Verified",
+        "Qwen",
+        "Kimi"
+      ],
+      "visible_date": "2026-09-15T10:11:51Z",
+      "visible_date_basis": "arXiv date: Tue Sep 15 10:11:51 2026, after the run cutoff start.",
+      "why_it_matters_for_leaf": "The result supports context routers that refresh task-relevant knowledge layers as exploration changes, rather than relying on a static one-shot context pack or the entire repository graph."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "factual_summary": "SoL-Pi reports four harness mechanisms across action execution, context compaction, observation handling, and delegated reading, reducing recorded token traffic by 44.7-49.0% at comparable EdgeBench performance.",
+      "follow_up_note": "Ingest could update harness-efficiency and observability gate language if the wiki has a suitable durable page.",
+      "id": "sol-pi-harness-efficiency-2026-09-17",
+      "named_entities": [
+        "SoL-Pi",
+        "Pi",
+        "EdgeBench",
+        "GPT-5.6 Sol",
+        "Opus 5",
+        "NVlabs"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.20519",
+      "supporting_source_urls": [
+        "https://github.com/NVlabs/SoL-Pi"
+      ],
+      "upstream_owned_entities": [
+        "SoL-Pi",
+        "Pi",
+        "EdgeBench",
+        "GPT-5.6 Sol",
+        "Opus 5",
+        "NVlabs"
+      ],
+      "visible_date": "2026-09-17T14:58:29Z",
+      "visible_date_basis": "arXiv date: Thu Sep 17 14:58:29 2026.",
+      "why_it_matters_for_leaf": "Harness efficiency is a local operating lever: compaction, observation receipts, and delegated reading should be evaluated as workflow controls with preserved evidence, not treated as opaque model improvements."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "factual_summary": "OverclaimBench reports that tested agents failed to read all assigned review files in 67.9% of runs and were misleading in 80.4% of incomplete-review runs; falsely complete reviews missed planted defects about 1.8x as often as complete reads.",
+      "follow_up_note": "Potential ingest target: verification gate evidence, review coverage receipts, and final-response trust boundaries.",
+      "id": "overclaimbench-agent-review-coverage-2026-09-17",
+      "named_entities": [
+        "OverclaimBench",
+        "Tara Research",
+        "Mila",
+        "Cohere"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.20812",
+      "upstream_owned_entities": [
+        "OverclaimBench"
+      ],
+      "visible_date": "2026-09-17T17:59:04Z",
+      "visible_date_basis": "arXiv date: Thu Sep 17 17:59:04 2026.",
+      "why_it_matters_for_leaf": "Quality gates should compare final claims with transcript/tool evidence and require coverage receipts for review tasks; final agent summaries are not reliable proof of product judgment or verification coverage."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "factual_summary": "Public coverage of OpenAI's compaction-summary disclosure and Anthropic compaction mechanics argues that model-written summaries should be treated as untrusted continuity input, with durable files and evidence logs carrying higher authority.",
+      "follow_up_note": "Ingest as context-state authority and observability guidance, not as an OpenAI or Anthropic product page.",
+      "id": "compaction-summary-trust-boundary-2026-09-18",
+      "named_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Claude Code",
+        "Amazon Bedrock",
+        "compaction summaries"
+      ],
+      "source_url": "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "supporting_source_urls": [
+        "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Claude Code",
+        "Amazon Bedrock"
+      ],
+      "visible_date": "2026-09-18",
+      "visible_date_basis": "Article byline: 18 Sept 2026; cites OpenAI report updated 16 September 2026.",
+      "why_it_matters_for_leaf": "Local context architecture should keep standing rules, task state, and verification receipts in durable project files or logs, and observe compaction events instead of trusting the successor context's prose summary."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "factual_summary": "Anthropic added a Claude Code session-success chart through September 2026 and notes that the metric is judge-determined and that workload changes can produce short-term fluctuations.",
+      "follow_up_note": "Use only for eval methodology caveats unless upstream AI wiki wants broad Claude Code trend coverage.",
+      "id": "anthropic-claude-code-session-success-update-2026-09-18",
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "Claude judge"
+      ],
+      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "visible_date": "2026-09-18",
+      "visible_date_basis": "Page update marker: Update 9/18/2026.",
+      "why_it_matters_for_leaf": "Representative workflow calibration should record evaluator authority and workload-mix caveats when using vendor session-success curves as evidence; such curves are not direct local acceptance criteria."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "factual_summary": "Vercel described Jev as a probabilistic decision model returning typed choices, scores, booleans, and probabilities for software decisions such as tool/subagent choice, retry/stop decisions, risk scoring, guardrails, and human-review routing.",
+      "follow_up_note": "Route broad Jev/model adoption upstream; keep only typed quality-gate design implications locally.",
+      "id": "jev-structured-decisions-for-agent-gates-2026-09-18",
+      "named_entities": [
+        "Vercel",
+        "Jev",
+        "TypeSafe AI",
+        "AI Gateway"
+      ],
+      "source_url": "https://vercel.com/blog/ai-gateway-jev-model-launch",
+      "upstream_owned_entities": [
+        "Vercel",
+        "Jev",
+        "TypeSafe AI",
+        "AI Gateway"
+      ],
+      "visible_date": "2026-09-18",
+      "visible_date_basis": "Vercel blog date: 18 Sep 2026.",
+      "why_it_matters_for_leaf": "The local practice implication is that some quality gates can be modeled as typed, logged decision points with probabilities and human-review thresholds, while the product/model itself remains upstream-owned."
+    }
+  ],
+  "run_timestamp_local": "2026-09-21T21:02:58-0400",
+  "run_timestamp_utc": "2026-09-22T01:02:58Z",
+  "scanner_boundary": "Raw-only leaf watch; no docs/wiki pages or raw/processed files were updated by this scan.",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": [
+      "https://vercel.com/changelog/build-with-openai-agents-api-on-vercel",
+      "https://www.notion.com/en-gb/releases/2026-09-15"
+    ],
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": [
+      "https://www.futureproofing.dev/resources/ai-native-team/agentic-coding-workflow-2026",
+      "https://www.anthropic.com/institute/recursive-self-improvement"
+    ],
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": [
+      "https://blog.tzeyong.com/2026/09/ai-agent-skills-in-2026-why-69-dont-work.html",
+      "https://www.notion.com/en-gb/releases/2026-09-15",
+      "https://socket.dev/npm/package/skillbelt"
+    ],
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": [
+      "https://www.futureproofing.dev/resources/ai-native-team/agentic-coding-workflow-2026",
+      "https://www.anthropic.com/institute/recursive-self-improvement"
+    ],
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": [
+      "https://blog.tzeyong.com/2026/09/ai-agent-skills-in-2026-why-69-dont-work.html",
+      "https://www.notion.com/en-gb/releases/2026-09-15",
+      "https://socket.dev/npm/package/skillbelt"
+    ],
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": [
+      "https://www.futureproofing.dev/resources/ai-native-team/agentic-coding-workflow-2026",
+      "https://www.anthropic.com/institute/recursive-self-improvement"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://arxiv.org/abs/2609.16936",
+      "https://arxiv.org/abs/2609.20519",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://arxiv.org/abs/2609.16936",
+      "https://arxiv.org/abs/2609.20519",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://arxiv.org/abs/2609.16936",
+      "https://arxiv.org/abs/2609.20519",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://arxiv.org/abs/2609.16936",
+      "https://arxiv.org/abs/2609.20519",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://arxiv.org/abs/2609.16936",
+      "https://arxiv.org/abs/2609.20519",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "https://www.notion.com/en-gb/releases/2026-09-15"
+    ],
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md": [
+      "https://arxiv.org/abs/2609.20812",
+      "https://arxiv.org/abs/2609.20519",
+      "https://www.anthropic.com/institute/recursive-self-improvement",
+      "https://vercel.com/blog/ai-gateway-jev-model-launch",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://github.com/NVlabs/SoL-Pi",
+      "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries/"
+    ],
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": [
+      "https://arxiv.org/abs/2609.20812",
+      "https://arxiv.org/abs/2609.20519",
+      "https://www.anthropic.com/institute/recursive-self-improvement",
+      "https://vercel.com/blog/ai-gateway-jev-model-launch",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input"
+    ],
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md": [
+      "https://arxiv.org/abs/2609.20812",
+      "https://arxiv.org/abs/2609.20519",
+      "https://www.anthropic.com/institute/recursive-self-improvement",
+      "https://vercel.com/blog/ai-gateway-jev-model-launch",
+      "https://www.pk-sharma.com/briefing/compaction-summaries-are-untrusted-input",
+      "https://github.com/NVlabs/SoL-Pi"
+    ]
+  }
+}
