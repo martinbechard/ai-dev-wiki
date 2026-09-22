@@ -13,6 +13,8 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 
 Agent identity and delegated authority define who or what acted, on whose behalf, with which permission boundary, and under which policy. The local governance rule is to distinguish the human requester, the agent instance, the connector or service account, the tool server, and the external system touched by the action.
 
+The [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds credential-inventory export evidence. Broad GitHub platform coverage stays upstream; locally, SSH keys, personal access tokens, OAuth app tokens, and GitHub App tokens should be inventory sources for delegated-authority audits, incident response, and approval review because they connect agent-visible repository actions back to owners, scopes, expiration, last-use, and target repositories or organizations.
+
 The [topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) records public signals about shared-channel agents, credential revocation, OAuth token limitations, and agent identity ambiguity. Product and standard details remain upstream-owned; this page owns the local operating requirement that agent actions must be attributable and revocable.
 
 Delegated authority also matters in shared work channels. A channel agent can accumulate context, receive requests from multiple people, and act through connected tools. The local boundary is that channel memory, tool access, and approvals should be explicit enough that a future reviewer can tell which human goal authorized the action.
@@ -116,6 +118,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Authoritative Sources
 
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
@@ -173,6 +176,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with credential-inventory export evidence for delegated-authority audits.
 - Maintained on 2026-09-19 with provider-neutral identity, delegated-authority, token-exchange, lifecycle, suspension, and revocation evidence.
 - Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.

@@ -11,6 +11,8 @@ tags: ["context-architecture"]
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise context-engineering evidence. Context routers for large codebases should separate procedural playbooks, raw code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, task-system state, and data-platform tools so context overload, repeated tool calls, compaction loss, and missing tribal knowledge have visible owners.
 
+The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds refreshable repository-view and harness-efficiency evidence. Context routers should distinguish static one-shot packs from repository views that can be selected, refreshed, and re-evaluated as the task explores code; delegated reading and observation compaction are routed controls that need receipts rather than invisible model behavior.
+
 Context router and knowledge layers are the local pattern for keeping agent guidance small enough to load and stable enough to prevent repeated rediscovery. The source note describes a thin router file that points the agent to task-specific guidance, a rules layer for conventions, a knowledge layer for project facts, and documentation folders organized by lifespan.
 
 The specific patterns live in sibling leaves. [Thin context router](thin-context-router.md) owns routing, [rules and knowledge layers](rules-and-knowledge-layers.md) owns durable conventions and stable facts, [lifespan organized documentation](lifespan-organized-documentation.md) owns documentation authority signals, and [context selection and compaction](context-selection-and-compaction.md) owns token discipline.
@@ -72,6 +74,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
@@ -114,6 +117,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with refreshable repository-view, delegated-reading, and observation-compaction routing evidence.
 - Maintained on 2026-09-19 with enterprise context-engineering, procedural-playbook, code-search, runbook, observability, feature-flag, task-system, and data-platform context-layer evidence.
 - Maintained on 2026-09-18 with skills, MCP, RAG, access-standard, procedural-knowledge, retrieval-grounding, and human-code-ownership layer boundaries.
 - Created on 2026-06-23 from the folder organization source note and the two local AI development decks.

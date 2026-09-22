@@ -13,6 +13,8 @@ Portable agent skills are reusable procedures that can travel across agent tools
 
 A local skill should be narrower than a broad operating manual. It should name the triggering situation, the job it owns, the tools or references it expects, the boundaries that stop misuse, the output shape, and the proof standard required before completion. This keeps the live prompt small while giving the agent an inspectable procedure when the work calls for it.
 
+The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds public skill-triggerability audit evidence. Broad Claude Code and MCP coverage stays upstream; locally, portable skills need natural-language trigger descriptions, explicit instruction boundaries, and validation hooks because a reusable procedure can exist in a library but still fail to activate or constrain the agent reliably.
+
 Runbooks compose skills into reliable workflows. A skill answers what one reusable capability does, while a runbook defines the sequence that produces a larger outcome. The downstream practice is to keep skill primitives small, keep runbooks explicit, and route both through the correct scope: personal procedures stay personal, project procedures stay with the repository, and shared team procedures belong in a controlled team source of truth.
 
 The [July 1 evening leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T210055-0400.json) reinforces procedural debt as an operating risk. Portable skills and runbooks should record trigger rules, boundaries, required tools, ownership, and verification standards in a reusable artifact rather than leaving procedure inside a single vendor workspace, chat history, or personal prompt collection.
@@ -65,6 +67,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
 - [durable instructions and skill files](durable-instructions-and-skill-files.md)
 - [instruction hierarchy and artifact boundaries](../prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md)
@@ -113,6 +116,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with skill triggerability, instruction-boundary, and validation-hook evidence.
 - Created on 2026-06-23 from source-backed guidance on portable procedures, runbook composition, scope boundaries, procedural debt, and proof standards for agent work.
 - Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.
 - Maintained on 2026-07-03 with third-party skill intake, ownership, trust review, version pinning, and local adaptation boundaries.

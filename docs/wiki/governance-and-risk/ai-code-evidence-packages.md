@@ -15,6 +15,8 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 
 The September 15-16 raw sources add repository metadata, system-of-record workflow, and verified-inventory evidence. The [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) records AI-suggested repository custom-property values and governed agentic SDLC dashboards, while the [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds enforced security baselines and evidence-based pull-request triage. Locally, evidence packages should preserve the taxonomy, policy, ruleset, dashboard, and review-capacity signals that decide whether AI-generated changes receive the right gate.
 
+The [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds pipeline-governance evidence from vendor analysis. Broad CloudBees company and product coverage stays upstream; locally, generated-code evidence packages should make owner, reviewer, approval state, cost attribution, build, test, scan, and release-pipeline visibility inspectable together rather than scattered across separate tools.
+
 This page owns the generated-code evidence package. [Intelligent code review](../coding-practices/intelligent-code-review.md) owns review execution, and [governance controls for agents](governance-controls-for-agents.md) owns the broader local control model.
 
 ## Practice Boundaries
@@ -27,9 +29,11 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - Treat AI-suggested repository metadata as draft evidence until policy owners confirm the taxonomy and ruleset mapping.
 - Preserve inventory, usage-dashboard, verified-agent, MCP/tool, and kill-switch evidence when those signals decide review depth or production gates.
 - Include priority, risk, owner, blocker, dependency, and effort signals when generated pull-request volume exceeds ordinary reviewer capacity.
+- Keep pipeline evidence, cost attribution, reviewer identity, approval state, build/test/scan results, and release visibility joined when generated changes move toward production.
 
 ## Authoritative Sources
 
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
@@ -60,5 +64,6 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with pipeline-governance evidence package scope from the topic news collector.
 - Maintained on 2026-09-15 with repository metadata, system-of-record workflow, verified-inventory, security-baseline, and PR-triage evidence.
 - Created on 2026-09-14 from AI-assisted software development procedure evidence in the September 15 topic news collector.

@@ -13,6 +13,8 @@ Progressive MCP tool discovery keeps broad API catalogs out of active context un
 
 The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) adds [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md) as a skill-loading variant. This page keeps the progressive-disclosure boundary; the remote-skill leaf owns package provenance, archive bounds, approval defaults, diagnostics, and central governance.
 
+The [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds bounded-listing evidence from an OpenAI Agents SDK MCP pagination change. Broad SDK and MCP protocol coverage stays upstream; locally, tool and prompt enumeration should have page limits and actionable failure paths so a server that keeps returning fresh continuation cursors cannot consume unbounded pre-model resources.
+
 Discovery is useful only when it preserves both relevance and control. A discovered tool schema becomes dynamic context, so approval needs separate evidence for:
 
 - Provenance of the discovered tool schema.
@@ -21,6 +23,7 @@ Discovery is useful only when it preserves both relevance and control. A discove
 - Credential custody through managed OAuth or an equivalent control.
 - Invocation logs for audit and replay.
 - Remote skill-governance evidence when discovery loads reusable agent behavior rather than only a schema.
+- Deterministic page limits and actionable failures when tool or prompt listing exceeds expected discovery bounds.
 
 The [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json) adds a code-execution variant. Some tool-heavy workflows can keep full tool definitions and intermediate data out of active model context by letting the model write sandboxed code that calls tools through compact names or summaries. Locally, this remains a progressive-disclosure pattern only when sandbox limits, code-quality checks, token tradeoffs, and benchmark scope are recorded; limited benchmark gains should not be generalized across all MCP workloads.
 
@@ -48,6 +51,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 ## Authoritative Sources
 
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [August 14 topic news collector source](../../../raw/processed/2026-08-14/ai-dev-wiki-topic-news-collector-2026-08-14T203128-0400.json)
@@ -84,6 +88,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with MCP tool and prompt pagination-limit evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about dynamic MCP mode, meta-tools, scoped permissions, managed OAuth, and API logs.
 - Maintained on 2026-07-28 with remote skill discovery, package-provenance, archive-bound, approval-default, and central-governance controls.
 - Maintained on 2026-08-14 with sandboxed code-execution as a progressive MCP discovery variant and benchmark-scope caveats.

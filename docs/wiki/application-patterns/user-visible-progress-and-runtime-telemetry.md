@@ -15,6 +15,8 @@ Long-running AI workflows need visible progress so users can understand what the
 
 Progress events are product signals, not proof of hidden reasoning. The harness should expose enough state for the user to judge whether the workflow is alive, blocked, waiting for approval, or ready for acceptance. Local and long-running model workflows also need operational telemetry such as latency, memory pressure, cache behavior, GPU or accelerator use, token counts, and quality drift signals.
 
+The [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds realtime failure-envelope evidence. Broad SDK coverage stays upstream; locally, client-facing streaming events should carry safe fixed failure messages while internal diagnostics, original exceptions, retries, cancellation, and opt-in logs remain available to operators.
+
 The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) adds a latency boundary for user-facing agents: time to first token should be separated from total pipeline latency, and tool-call pauses should produce explicit progress states. A streaming model response is not enough when retrieval, tool use, pre-inference work, or approval waits can create silence before or between tokens.
 
 The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) adds remote-startup and permission-telemetry signals. Remote agent provisioning should expose checklist progress, background-agent visibility, restart state, permission denials, telemetry controls, authentication notices, and resource cleanup when those states affect trust or user acceptance.
@@ -123,6 +125,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Authoritative Sources
 
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
@@ -188,6 +191,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with realtime failure-envelope redaction evidence.
 - Maintained on 2026-09-19 with runtime-overhead, supervision, crash-recovery, nested-call, retry, review-pressure, and accepted-outcome telemetry evidence.
 - Maintained on 2026-09-15 with request-level service health, environment-separated telemetry, latency percentile, endpoint, and ranked-hypothesis evidence.
 - Maintained on 2026-08-29 with running-agent inventory, runtime tracing, cost, context-window, review-effort, shared-session, and persistent-follow-up telemetry evidence.

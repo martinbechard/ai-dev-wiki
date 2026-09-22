@@ -1,0 +1,332 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-22T00:32:30Z",
+  "cutoff_window": {
+    "start_utc": "2026-09-20T00:32:30Z",
+    "end_utc": "2026-09-22T00:32:30Z",
+    "date_policy": "Only public sources with visible publication, release, merge, or update evidence inside the window were accepted. Missing, future-dated, older, ambiguous, and boundary-only date evidence was excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, context architecture, adoption, and implementation lens."
+  },
+  "qualifying_updates": [
+    {
+      "id": "2026-09-21-cloudbees-agentic-pipeline-governance",
+      "source_url": "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+      "source_type": "vendor analysis",
+      "visible_date": "September 21, 2026",
+      "date_basis": "Article page and search result show published on September 21, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "CloudBees argues that enterprise-scale agentic coding shifts the bottleneck from code generation to review, ownership, spend attribution, pipeline visibility, and evidence of who approved what. It cites survey findings that formal AI-generated-code release processes are not always enforced and frames end-to-end pipeline visibility as the control layer.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that agent output needs delivery-pipeline evidence packages: build, test, scan, reviewer, owner, cost, and approval state should be inspectable together rather than scattered across tools.",
+      "named_entities": [
+        "CloudBees",
+        "CloudBees Unify",
+        "2026 State of Code Abundance Report"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "CloudBees",
+          "reason": "Company and product background belongs upstream; local artifact keeps only the pipeline-governance practice implication."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: governance-and-risk/ai-code-evidence-packages.md or adoption-and-operating-model/agent-cost-telemetry.md.",
+        "Treat survey statistics as vendor-reported unless independently verified."
+      ]
+    },
+    {
+      "id": "2026-09-21-lockstep-context-loss-workflow",
+      "source_url": "https://www.getlockstep.dev/blog/cursor-keeps-losing-context-mid-project",
+      "source_type": "vendor practice blog",
+      "visible_date": "September 21, 2026",
+      "date_basis": "Article header shows September 21, 2026.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Lockstep separates repository context, task context, reference context, and decision context. It recommends stable repository rules, short task handoffs, live retrieval for reference data, and approved decision records that agents can load by relevance instead of pasting a giant context file.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces the local context architecture rule that durable instructions, working handoffs, live retrieval, and team decisions are different authorities and should not be collapsed into one long prompt or memory file.",
+      "named_entities": [
+        "Lockstep",
+        "Cursor",
+        "Claude Code",
+        "AGENTS.md",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Cursor",
+          "reason": "Developer-tool background belongs upstream; local artifact keeps cross-tool continuity practice."
+        },
+        {
+          "entity": "Claude Code",
+          "reason": "Developer-tool background belongs upstream; local artifact keeps durable context layering practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol background belongs upstream; local artifact keeps the reference-context governance lens."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: context-architecture/context-state-externalization-and-rehydration.md or prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md.",
+        "Useful contrast: a handoff is temporary task state; approved decision records carry team authority."
+      ]
+    },
+    {
+      "id": "2026-09-21-highcircl-ai-code-security-study",
+      "source_url": "https://www.highcircl.com/en/blog/ai-code-security-evaluation-study",
+      "source_type": "secondary analysis of research preprint",
+      "visible_date": "September 21, 2026",
+      "date_basis": "Article page shows September 21, 2026.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "HighCircl summarizes a 100-developer study in which participants selected among AI-generated C suggestions with deliberately varied security and functionality. The article reports that only 22 percent of final submissions were fully secure and emphasizes that many developers lacked an explicit security-checking step.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted review policies should require explicit, structured security checks and not rely on a generic instruction to review AI suggestions. The study is about developer evaluation behavior, not a blanket claim that AI-generated code is less secure than human code.",
+      "named_entities": [
+        "HighCircl",
+        "IEEE Security & Privacy 2027",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_notes": [
+        "Potential ingest destination: coding-practices/intelligent-code-review.md or governance-and-risk/ai-assisted-security-repair-gates.md.",
+        "If ingested, cite the underlying preprint directly and preserve the article's caveat about small C tasks and researcher-curated suggestions."
+      ]
+    },
+    {
+      "id": "2026-09-21-github-credential-inventory-exports",
+      "source_url": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports/",
+      "source_type": "official changelog",
+      "visible_date": "September 21, 2026",
+      "date_basis": "GitHub changelog page shows September 21, 2026.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "GitHub Enterprise Cloud added credential inventory exports for SSH keys, personal access tokens, OAuth app tokens, and GitHub App tokens, including metadata such as scopes, owners, creation and expiration dates, last-used dates, and target organizations or repositories. GitHub says owners can correlate credentials with audit log activity.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent governance depends on knowing which human, app, or connector credentials can touch repositories and tools. Credential inventories are a practical source for incident response, approval review, and delegated-authority audits around coding agents.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Server",
+        "SSH keys",
+        "personal access tokens",
+        "OAuth App tokens",
+        "GitHub Apps"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub",
+          "reason": "Developer platform background belongs upstream; local artifact keeps credential-inventory and audit practice implication."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: governance-and-risk/agent-identity-and-delegated-authority.md or governance-and-risk/sensitive-data-and-supply-chain-controls.md.",
+        "Could be linked from retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md as credential evidence outside MCP itself."
+      ]
+    },
+    {
+      "id": "2026-09-21-openai-agents-mcp-list-page-limit",
+      "source_url": "https://github.com/openai/openai-agents-python/pull/5133",
+      "source_type": "public pull request",
+      "visible_date": "Sep 21, 2026",
+      "date_basis": "GitHub pull request page shows merged Sep 21, 2026 and a Sep 21, 2026 author comment.",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "The OpenAI Agents Python SDK merged an optional max_list_pages setting for stdio, SSE, and Streamable HTTP MCP servers. The PR says automatic tool and prompt listing can otherwise continue fetching successful pages indefinitely when a server returns fresh continuation cursors, including before model execution.",
+      "why_it_matters_for_ai_assisted_development_practice": "Tool discovery needs deterministic resource bounds. Agent harnesses that enumerate tools or prompts should set page limits and fail with actionable errors instead of allowing unbounded pre-model listing behavior.",
+      "named_entities": [
+        "OpenAI Agents Python SDK",
+        "MCP",
+        "stdio",
+        "SSE",
+        "Streamable HTTP"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI Agents Python SDK",
+          "reason": "Framework background belongs upstream; local artifact keeps governed tool-discovery practice."
+        },
+        {
+          "entity": "MCP",
+          "reason": "Protocol background belongs upstream; local artifact keeps pagination-control practice."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: retrieval-and-tools/progressive-mcp-tool-discovery.md or application-patterns/agent-harness-components.md.",
+        "Check whether local MCP guidance already says tool/schema discovery must be bounded."
+      ]
+    },
+    {
+      "id": "2026-09-21-openai-agents-realtime-error-redaction",
+      "source_url": "https://github.com/openai/openai-agents-python/pull/5132",
+      "source_type": "public pull request",
+      "visible_date": "Sep 21, 2026",
+      "date_basis": "GitHub pull request page shows merged Sep 21, 2026 and a Sep 21, 2026 author comment.",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "The OpenAI Agents Python SDK merged a realtime fix so SDK-generated async tool failure events emit fixed messages instead of raw exception details when applications forward events to clients. The PR says original Python exception propagation, cancellation, retries, and opt-in diagnostic logging are preserved.",
+      "why_it_matters_for_ai_assisted_development_practice": "Streaming progress and realtime tool telemetry should separate user-visible event payloads from internal diagnostic detail. Harnesses need redaction boundaries so tool failures do not leak sensitive exception text to browser clients.",
+      "named_entities": [
+        "OpenAI Agents Python SDK",
+        "Realtime",
+        "async tools"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI Agents Python SDK",
+          "reason": "Framework background belongs upstream; local artifact keeps the redacted event-envelope practice."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: application-patterns/user-visible-progress-and-runtime-telemetry.md or governance-and-risk/sensitive-data-and-supply-chain-controls.md.",
+        "Consider adding a general rule that client-facing agent events should carry safe envelopes and route diagnostics separately."
+      ]
+    },
+    {
+      "id": "2026-09-20-qwen-code-context-attribution-release",
+      "source_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2",
+      "source_type": "official release notes",
+      "visible_date": "20 Sep 14:12",
+      "date_basis": "GitHub release page shows v0.24.2 released 20 Sep 14:12; this is inside the run cutoff window.",
+      "topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "Qwen Code v0.24.2 release notes include context-file attribution to the extension that loaded each file and its cost, conditional extension rules, capped context warnings, explicit trust for undecided workspaces, internal bwrap-based Linux sandbox foundations, cross-session message judging, and transcript timing surfaces.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context budgets become governable when each loaded file has provenance and cost. The release also reinforces local practice themes around workspace trust, sandbox foundations, message routing, and transcript timing as harness-level evidence rather than prompt-only behavior.",
+      "named_entities": [
+        "Qwen Code",
+        "bwrap",
+        "Linux sandbox"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Qwen Code",
+          "reason": "Developer-tool background belongs upstream; local artifact keeps context attribution, trust, and sandbox practice implications."
+        }
+      ],
+      "follow_up_notes": [
+        "Potential ingest destination: context-architecture/context-selection-and-compaction.md or retrieval-and-tools/code-retrieval-evidence-patterns.md.",
+        "If ingested, avoid duplicating Qwen Code product coverage and preserve only the practice pattern."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+      "visible_date": "September 20, 2026",
+      "reason": "Boundary-only date: page gives a date but no visible time, and September 20 is the lower-bound date for the 48-hour window.",
+      "routing_note": "Potentially relevant to verification-and-evals if recaptured with exact time evidence."
+    },
+    {
+      "source_url": "https://www.getlockstep.dev/blog/why-claude-code-forgets-architecture-decisions",
+      "visible_date": "September 20, 2026",
+      "reason": "Boundary-only date: page gives a date but no visible time, and September 20 is the lower-bound date for the 48-hour window.",
+      "routing_note": "Practice overlaps with the accepted September 21 Lockstep context-loss source."
+    },
+    {
+      "source_url": "https://meet.modelcontextprotocol.io/2026/09/mcp-progressive-disclosure-working-group-z0v8ilOZDnmM",
+      "visible_date": "September 28, 2026",
+      "reason": "Future-dated event page relative to run timestamp.",
+      "routing_note": "Do not treat scheduled future working-group pages as shipped practice updates."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/",
+      "visible_date": "September 21, 2026",
+      "reason": "Upstream-owned model/product availability update with no distinct local practice implication beyond product catalog coverage.",
+      "routing_note": "Route broad model and GitHub Copilot availability coverage upstream."
+    },
+    {
+      "source_url": "https://evals.favur.dev/",
+      "visible_date": "Search result reported last updated Sep 21, 2026; page content did not expose a stable visible date in the fetched text.",
+      "reason": "Insufficient visible date evidence on the source page.",
+      "routing_note": "Potentially relevant to verification-and-evals if a dated changelog or release note is available."
+    },
+    {
+      "source_url": "https://github.com/ismailperim/briefd",
+      "visible_date": "No stable publication or release date found on fetched repository page.",
+      "reason": "Missing visible date evidence.",
+      "routing_note": "Practice idea is relevant to context-architecture, but collector requires recent visible date evidence."
+    },
+    {
+      "source_url": "https://github.com/cochinescu/decent-skills",
+      "visible_date": "No stable publication or release date found on fetched repository page.",
+      "reason": "Missing visible date evidence.",
+      "routing_note": "Practice idea is relevant to coding-practices, but collector requires recent visible date evidence."
+    },
+    {
+      "source_url": "https://amitrawat.dev/newsletter/agentic-engineer-weekly-issue-19/",
+      "visible_date": "Published on Sep 20, 2026",
+      "reason": "Boundary-only date and mostly secondary aggregation of upstream-owned product/framework/entity updates.",
+      "routing_note": "Use only as discovery; verify qualifying local practice items against dated primary sources."
+    },
+    {
+      "source_url": "https://sparkpulse.io/briefs/development/2026-09-21-enterprise-guardrails-ai-generated-agent-adjacent-workloads-dominated",
+      "visible_date": "Generated 19h ago; week of September 21, 2026",
+      "reason": "Relative generated time is volatile and the brief mainly aggregates product updates that should be verified against primary sources.",
+      "routing_note": "Use only as discovery for source-workflows, not as artifact evidence."
+    },
+    {
+      "source_url": "https://tech.xebia.ms/all/roundups/weekly-ai-roundup-2026-09-21",
+      "visible_date": "Search result reported published today; fetched page did not expose stable date lines.",
+      "reason": "Insufficient visible date evidence in fetched source text and mostly secondary aggregation.",
+      "routing_note": "Use only as discovery for dated primary source follow-up."
+    }
+  ],
+  "search_notes": [
+    "Used public web search only; no private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Checked existing local wiki roots and federation rules before collecting.",
+    "Collector output is raw-only; no docs/wiki pages or raw/processed files were updated.",
+    "Broad entity, model, product, company, framework, and MCP protocol background was marked upstream-owned or excluded unless the source had a local AI-assisted development practice implication."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}

@@ -11,6 +11,8 @@ tags: ["verification-and-evals"]
 
 LLM observability becomes a quality gate when traces, evals, prompt versions, datasets, and release decisions are connected. A trace dashboard by itself is reactive debugging; a governed quality gate turns production failures, prompt experiments, model routes, and tool-call traces into regression evidence before a change reaches users.
 
+The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds compaction-efficiency, review-coverage, compaction-summary, and typed-decision evidence. Observability gates should join token traffic, delegated reading, observation handling, final-claim coverage, compaction events, and typed probability-bearing gate outputs so harness improvements and agent claims can be checked against traces rather than accepted from summaries.
+
 The August 7 clipping set compares several LLM observability and evaluation tools, but broad product and company coverage belongs upstream. Locally, the durable practice is to choose an observability layer by the workflow controls it supports: tracing and cost telemetry, prompt versioning, production-to-eval conversion, human annotation, CI or release gates, self-hosting or data-control needs, OpenTelemetry compatibility, and cross-functional review.
 
 The [open-source LLM observability tools clipping](../../../raw/processed/7-best-free-open-source-llm-observability-tools.md) frames a baseline platform as trace capture, cost and latency dashboards, prompt management, evals, self-hosting, and product-analytics joins. The local implication is that LLM observability should join model behavior to product outcomes, session evidence, prompt versions, and cost signals instead of becoming a standalone log viewer.
@@ -71,6 +73,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
@@ -112,6 +115,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with harness-efficiency, review-coverage, compaction-summary, and typed-decision gate evidence.
 - Maintained on 2026-09-15 with request-level service-health, environment, p95 latency, endpoint-hotspot, and ranked-hypothesis gate evidence.
 - Maintained on 2026-08-29 with running-agent discovery, action-order, approval, cost, latency, trace, and remediation observability gates.
 - Created on 2026-08-07 from the observability and evaluation clipping set plus the August 7 collector's MCP, skill-eval, copilot-governance, and team-workflow signals.

@@ -13,6 +13,8 @@ Product judgment gates check whether the right thing is being built and whether 
 
 The local practice is to pair implementation workflow with judgment workflow. Coding agents can make building cheaper, but product review, design review, audit, and acceptance checks keep the team from shipping the wrong work or a weak experience. These gates complement [code review evals and rubrics](code-review-evals-and-rubrics.md) by reviewing product fit and user-facing delivery, not only code risk.
 
+The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds final-claim coverage, vendor metric caveat, and typed-decision evidence. Product judgment gates should compare final agent claims with transcript and file-coverage receipts, treat vendor session-success curves as methodology evidence rather than local acceptance criteria, and log typed decision scores when probabilistic gates route retries, stops, risk escalation, or human review.
+
 The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [July 6 leaf update watch source](../../../raw/processed/2026-07-06/ai-dev-wiki-leaf-update-watch-2026-07-06T210312-0400.json) add quality and compliance gates. Product judgment should include runtime environment checks, compliance evidence, audit logs, human oversight, and established software-quality dimensions when AI-generated work changes customer-facing or regulated workflows. Those gates should stay separate from vendor or standards background, which belongs upstream unless it changes local acceptance practice.
 
 The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json) adds frontend verification as a product-judgment gate. AI-generated UI should be accepted against realistic user conditions: task completion, accessibility, keyboard interaction, focus behavior, state changes, loading, and error paths. Screenshots and successful renders are supporting evidence, not product acceptance.
@@ -46,6 +48,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Studious source](../../../raw/processed/jacquardlabsstudious Studious — a product-judgment workflow for Claude Code quality gates, periodic health reviews, and pre-merge audits that examine each piece of work..md)
@@ -84,6 +87,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with final-claim coverage, vendor metric caveat, and typed-decision gate evidence.
 - Maintained on 2026-08-29 with prompt-version, red-team fixture, reusable-skill improvement, reviewer-fatigue, collaboration-health, and source-trust product-judgment evidence.
 - Maintained on 2026-09-07 with prototype-validation, demand-evidence, willingness-to-pay, design-time defect, and developer-as-architect product gates.
 - Created on 2026-06-23 to hold product judgment gates separately from code-review eval practice.

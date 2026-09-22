@@ -11,6 +11,8 @@ tags: ["verification-and-evals"]
 
 Model and harness changes need calibration against representative work, not only generic benchmark scores. A workflow can depend on code review, tool calls, long-context behavior, retrieval, latency, or local runtime choices, so the calibration set should include those task shapes.
 
+The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds harness-efficiency, review-coverage, and vendor-metric caveat evidence. Calibration should test whether compaction, delegated reading, and observation handling reduce cost without losing task evidence, and it should record evaluator authority and workload mix when external session-success curves are used as directional evidence.
+
 The [Dwarf Star source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md) is useful local-harness evidence because it describes calibration prompts that include code reviews, math problems, agent tool calls, and long documents. It also describes comparing local model token probabilities against a reference service to measure drift after quantization. The local practice is to evaluate the behaviors the workflow actually needs before relying on a model, quantization setting, or local inference path.
 
 Runtime telemetry supports calibration because it makes model and tool behavior inspectable. Useful signals include prompt size, prefill behavior, time to first token, decode speed, cache behavior, memory pressure, tool-call validity, and source attribution. Application harness ownership remains in [application harness patterns](../application-patterns/application-harness-patterns.md); this page owns the eval and calibration lens.
@@ -64,6 +66,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -106,6 +109,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with harness-efficiency, review-coverage, evaluator-authority, and workload-mix calibration evidence.
 - Maintained on 2026-08-29 with coding-leaderboard methodology, live-arena, benchmark-cross-check, accepted-change, and verification-cost calibration evidence.
 - Created on 2026-06-23 to hold representative workflow calibration and local-model drift-check practice.
 - Maintained on 2026-06-26 with prompt-provenance, human-review behavior, trace-linked quality, retrieval, tool-call, cost, and latency calibration signals.

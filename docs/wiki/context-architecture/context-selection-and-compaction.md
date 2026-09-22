@@ -13,6 +13,8 @@ Context selection decides what evidence the model sees for a request. The model 
 
 More context can reduce guessing, but it can also increase cost, latency, and distraction. Compaction summarizes, drops, or selects context so the useful evidence stays in view while unrelated history, stale files, and oversized tool output stay out of the request.
 
+The September 21 raw sources add refreshable repository-view, context-attribution, harness-efficiency, and compaction trust-boundary evidence. The [leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) supports context routers that refresh task-relevant repository views as exploration changes, measure compaction and delegated-reading as workflow controls, and treat compaction summaries as untrusted continuity input. The [topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds context-file attribution, cost visibility, capped-context warnings, and workspace trust as local selection evidence while broad Qwen Code coverage stays upstream.
+
 The [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md), [deep research workshop source](../../../raw/processed/Full Workshop Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.md), and [agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md) converge on the same operating rule: large context windows do not remove the need for selection. Context can rot before the nominal window is full, so the harness needs explicit context ownership, compaction rules, and source routing.
 
 The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) reinforces the local production-infrastructure lens: scoped inputs, durable knowledge layers, retrieval rules, and context governance need to be designed before agents are allowed to run multi-step development or operations workflows. Broad context-engineering taxonomy stays upstream; this page keeps the local selection and compaction rule.
@@ -93,6 +95,8 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -153,6 +157,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with refreshable repository-view, context-attribution, capped-context, workspace-trust, harness-efficiency, and compaction trust-boundary evidence.
 - Maintained on 2026-09-15 with selective coding-agent onboarding context, ADR rationale, current standards, business vocabulary, and stale-documentation rejection evidence.
 - Created on 2026-06-23 from source guidance on request context, token discipline, context windows, compaction, and evidence selection.
 - Maintained on 2026-06-23 with public context-engineering guidance framed as production infrastructure for multi-step agents.

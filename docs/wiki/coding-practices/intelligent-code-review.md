@@ -11,6 +11,8 @@ tags: ["coding-practices"]
 
 Intelligent code review uses an AI reviewer to compare a change against project rules, source references, risk tiers, contracts, tests, security expectations, and runtime behavior. The reviewer reduces human review load only when it is given the evidence needed to produce actionable findings.
 
+The September 21 raw sources add explicit security-check and coverage-receipt evidence. The [topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) records study coverage where developers often selected among AI-generated suggestions without a structured security step. The [leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) records review-coverage evidence where incomplete file review can still be reported as complete. Locally, review prompts and gates should require explicit security checks and coverage receipts rather than trusting a generic review instruction or final summary.
+
 The local practice is source-backed review. Review requests should embed repository instructions, architecture standards, important files, design docs, schema references, known risky modules, and tier-specific checklists. Coherence checks matter because generated changes can make front-end assumptions drift from backend contracts, generated clients, database fields, feature flags, or authorization rules.
 
 The [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json) adds a boundary for diff-focused AI review agents: they can critique pull request changes, compare surrounding code, and suggest fixes before merge, but they are not full QA, SAST policy ownership, or end-to-end acceptance. The [June 24 topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) adds that AI review can move earlier into PRD and design governance; that broader lifecycle pattern lives in [lifecycle AI review gates](../governance-and-risk/lifecycle-ai-review-gates.md).
@@ -216,6 +218,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Authoritative Sources
 
+- [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
+- [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 13 afternoon leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T131624-0400.json)
@@ -312,6 +316,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-21 with explicit security-check and review-coverage receipt evidence.
 - Maintained on 2026-09-16 with production-review bar evidence and routing to repository-configured and multi-reviewer AI code review leaves; next check should keep configuration and role-specific detail in those focused leaves.
 - Maintained on 2026-09-05 with PR-completion loop, failed-check, merge-conflict, rerun, cross-file defect, cost, and human-merge evidence.
 - Maintained on 2026-09-04 with AI approval, stale-dismissal, content-exclusion, Agent Merge, model-validation, and CodeQL evidence.
