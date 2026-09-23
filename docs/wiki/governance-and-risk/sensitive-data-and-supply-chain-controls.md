@@ -89,6 +89,8 @@ Locally, these surfaces need inventory, processor, retention, certification-scop
 
 The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds untrusted-agent distribution evidence. Agent tools downloaded from search results, ads, or unfamiliar sites should be treated like executable supply-chain inputs: verify trusted channels, signatures or release provenance where available, install path, required permissions, and separation from secrets or wallets before experimentation.
 
+The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds package-security execution-surface evidence. Locally, generated helper scripts, tests, package output, and local import paths are supply-chain surfaces when a coding agent executes them. Test output can carry instruction-like text, and module shadowing can make a generated helper import malicious local code while producing plausible results.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -161,6 +163,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - Treat public package registries, repository config, editor task settings, Docker sockets, local history, and keychains as supply-chain surfaces when a local coding agent can read or execute through them.
 - Apply Zero Trust controls to agent prompts, generated outputs, tool calls, internal APIs, customer-contract text, and source-code snippets when they can cross model, plugin, MCP, or hosted-agent boundaries.
 - Validate skill and plugin metadata, tool registrations, hosted MCP exposure, private-skill provenance, and batch-run authority before reusable agent packages enter team workflows.
+- Treat generated helper scripts, test output, local import paths, and module names as execution surfaces; require controlled import paths, restricted execution environments, provenance checks, and skepticism toward instructions emitted by package or test output.
 
 ## Authoritative Sources
 
@@ -174,6 +177,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - [September 13 topic news collector source](../../../raw/processed/2026-09-13/ai-dev-wiki-topic-news-collector-2026-09-13T171554Z.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
+- [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -253,6 +257,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-23 with generated-helper, test-output, local-import-path, module-shadowing, and restricted-execution supply-chain evidence.
 - Maintained on 2026-09-20 with Zero Trust prompt, source-code, internal-API, generated-output, skill-package validation, hosted-MCP, and batch-run governance evidence.
 - Maintained on 2026-09-08 with dependency-bot package access, personal-token reduction, community-agent component intake, provenance, assessment, expert review, and deployment-approval evidence.
 - Maintained on 2026-09-04 with data-retention exception, content-exclusion, trusted-publishing, staged malware-scan, reusable-workflow identity, and CodeQL supply-chain evidence.

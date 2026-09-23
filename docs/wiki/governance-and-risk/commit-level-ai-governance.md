@@ -15,6 +15,8 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 
 The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) adds centrally managed agent-operation permissions and custom-property suggestions as source-control governance signals. The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds enterprise-enforced security configurations and repository metadata suggestions. Locally, commit-level governance should record which enterprise policy, repository taxonomy, security baseline, and agent-operation rule applied when a change was proposed or accepted.
 
+The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) adds change-level governance evidence. Broad DETENT, NIST, ISO, and SBOM background stays upstream; locally, a commit-level record should answer which agent session produced a diff, what it was authorized to touch, which sources and constraints were used, whether a human reviewed it, what evidence was signed off, and how later incident review can reconstruct the accepted change.
+
 This page owns commit-level governance. [Governance controls for agents](governance-controls-for-agents.md) owns the broader local control model across agent tools, data, identity, and approvals.
 
 ## Practice Boundaries
@@ -26,10 +28,12 @@ This page owns commit-level governance. [Governance controls for agents](governa
 - Keep audit-ready records close enough to source control that later incident review can reconstruct the accepted change.
 - Record central shell, file, network, and security-configuration policies when they affect what an agent could inspect, edit, or execute for a commit.
 - Keep repository custom-property and ruleset evidence close to the commit when metadata decides required scans, approvals, or security baselines.
+- Attach agent-session identity, authorized scope, source context, execution record, review state, human acceptance, and durable evidence links to the accepted change rather than relying only on model policy or build inventory.
 
 ## Authoritative Sources
 
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
+- [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [governance controls for agents](governance-controls-for-agents.md)
@@ -59,4 +63,5 @@ This page owns commit-level governance. [Governance controls for agents](governa
 ## Maintenance Notes
 
 - Maintained on 2026-09-15 with central agent-operation policy, repository taxonomy, and enforced security-baseline governance evidence.
+- Maintained on 2026-09-22 with change-level agent-session, authorization, execution, review, and acceptance-chain evidence.
 - Created on 2026-09-14 from commit-level AI software governance evidence in the September 15 topic news collector.

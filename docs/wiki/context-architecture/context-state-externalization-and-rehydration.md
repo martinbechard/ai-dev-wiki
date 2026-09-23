@@ -57,6 +57,8 @@ The [September 20 topic news collector source](../../../raw/processed/2026-09-20
 
 The September 21 raw sources add context-loss and compaction trust-boundary evidence. The [topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) separates repository context, task handoffs, live reference retrieval, and approved decision records. The [leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) treats compaction summaries as untrusted continuity input. Locally, durable files, decisions, and evidence logs outrank model-written summaries when a task is rehydrated.
 
+The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds cross-agent memory-sharing evidence. A handoff between coding tools should carry current objective, changed files, rejected approaches, test evidence, unresolved questions, and next safe step rather than copying full chats or syncing personal memory. Repository instructions, task handoffs, live retrieval tools, and approved team decision records remain separate rehydration sources.
+
 ## Practice Boundaries
 
 - Separate transcript portability from attachment, file, and artifact portability when moving work between assistant surfaces.
@@ -91,11 +93,13 @@ The September 21 raw sources add context-loss and compaction trust-boundary evid
 - Treat persistent coding-agent memory and workspace context as owned operational data with retention, export, sharing, portability, and revocation rules before it becomes a rehydration source.
 - Keep repository rules, temporary task handoffs, live reference retrieval, and approved decision records as separate authorities during rehydration.
 - Treat compaction summaries as untrusted continuity input until durable files, evidence logs, and current repository state confirm them.
+- For cross-agent handoffs, preserve objective, changed files, rejected approaches, verification evidence, unresolved questions, and next safe step instead of treating personal memory or full transcripts as the shared source of truth.
 
 ## Authoritative Sources
 
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
+- [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [Context management source](../../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md)
 - [Context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md)
@@ -148,6 +152,7 @@ The September 21 raw sources add context-loss and compaction trust-boundary evid
 ## Maintenance Notes
 
 - Maintained on 2026-09-21 with repository/task/reference/decision context layering and compaction-summary trust-boundary evidence.
+- Maintained on 2026-09-23 with cross-agent handoff fields and personal-memory versus shared-decision boundaries.
 - Maintained on 2026-09-20 with persistent-context ownership, retention, export, sharing, portability, and revocation evidence.
 - Maintained on 2026-09-19 with cross-agent context transfer, attachment identity, file provenance, and local-only handling caveats.
 - Created on 2026-06-27 from O'Reilly context-management sources covering durable context files, handoffs, cursor checks, rehydration, and lost-in-the-middle mitigation.

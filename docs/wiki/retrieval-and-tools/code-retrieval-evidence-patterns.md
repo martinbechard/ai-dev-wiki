@@ -39,6 +39,8 @@ The [August 3 evening topic news collector source](../../../raw/processed/2026-0
 
 The August 17 raw sources add codebase-RAG and incident-evidence refinements. The [topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json) records codebase RAG as a toolbox with freshness and PR-derived evals; the [leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json) records memory-backed code retrieval, SAFE-style tool-trace preservation, and coding-agent security boundaries. Locally, code retrieval evidence should preserve query intent, exact opened paths, freshness, PR outcome tests, prompts, tool traces, identities, and permissions when those facts support code changes or incident review.
 
+The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds language-server and context-assembly evidence. Broad GitHub Copilot and Microsoft C++ Language Server coverage stays upstream; locally, reusable whole-codebase indexes are another retrieval substrate whose compile information, symbol freshness, index progress, and opened-path verification should be visible before an agent relies on code-navigation results.
+
 ## Practice Boundaries
 
 - Keep code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, and task metadata distinguishable in retrieval evidence.
@@ -67,6 +69,7 @@ The August 17 raw sources add codebase-RAG and incident-evidence refinements. Th
 - Treat code-intelligence tools as layered retrieval evidence: keyword and path search find candidates, semantic search expands neighborhoods, static analysis and impact analysis add risk signals, and observability links connect code claims to runtime behavior.
 - Verify codebase-specific assistant answers against opened source paths, tests, ADRs, dependency evidence, or runtime telemetry before using them for architecture, impact, or review decisions.
 - Evaluate codebase RAG with freshness checks, opened-path evidence, PR-derived outcomes, and incident-relevant prompt/tool/identity traces before trusting retrieved context for edits or reviews.
+- Treat language-server, compile-aware, semantic-search, and code-graph indexes as retrieval substrates that still need freshness labels, index-progress evidence, and exact opened-path verification before they support edits or review findings.
 
 ## Authoritative Sources
 
@@ -89,6 +92,7 @@ The August 17 raw sources add codebase-RAG and incident-evidence refinements. Th
 - [August 3 evening topic news collector source](../../../raw/processed/2026-08-03/ai-dev-wiki-topic-news-collector-2026-08-03T203119-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 
 ## Related Code
 
@@ -127,3 +131,4 @@ The August 17 raw sources add codebase-RAG and incident-evidence refinements. Th
 - Maintained on 2026-07-29 with multi-root retrieval attribution and primary-folder Git/instruction authority guidance.
 - Maintained on 2026-08-03 with code-intelligence maturity layers for semantic search, architecture validation, impact analysis, observability-linked evidence, and codebase-specific assistants.
 - Maintained on 2026-08-17 with codebase-RAG freshness, PR-derived eval, memory-backed retrieval, SAFE-style incident trace, and coding-agent security evidence.
+- Maintained on 2026-09-23 with language-server index, compile-aware graph, index-progress, and opened-path verification evidence.

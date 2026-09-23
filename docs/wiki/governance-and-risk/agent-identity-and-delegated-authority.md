@@ -15,6 +15,8 @@ Agent identity and delegated authority define who or what acted, on whose behalf
 
 The [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) adds credential-inventory export evidence. Broad GitHub platform coverage stays upstream; locally, SSH keys, personal access tokens, OAuth app tokens, and GitHub App tokens should be inventory sources for delegated-authority audits, incident response, and approval review because they connect agent-visible repository actions back to owners, scopes, expiration, last-use, and target repositories or organizations.
 
+The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) reinforces credential inventory as an agent-access prerequisite. Locally, agent workflows should join credential export metadata with audit logs and task records so delegated actions can be traced to owner, scope, target organization or repository, last-use evidence, and revocation status.
+
 The [topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) records public signals about shared-channel agents, credential revocation, OAuth token limitations, and agent identity ambiguity. Product and standard details remain upstream-owned; this page owns the local operating requirement that agent actions must be attributable and revocable.
 
 Delegated authority also matters in shared work channels. A channel agent can accumulate context, receive requests from multiple people, and act through connected tools. The local boundary is that channel memory, tool access, and approvals should be explicit enough that a future reviewer can tell which human goal authorized the action.
@@ -80,6 +82,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Keep channel access, memory scope, and tool permissions visible for team-facing agents.
 - Revoke SSO grants, personal access tokens, SSH keys, OAuth tokens, and connector credentials quickly when an agent or developer environment is suspected compromised.
 - Log credential revocation and follow-up review when a compromised credential could have been used by an agent workflow.
+- Join credential inventory exports to audit logs, task records, and revocation evidence when agent workflows use SSH keys, PATs, OAuth tokens, app tokens, or connector credentials.
 - Treat identity gaps as governance findings, not only as implementation details.
 - Assign accountable owners to agent identities and review their access periodically like other non-human identities.
 - Monitor agent activity against expected scope so delegated authority drift becomes visible before incident review.
@@ -119,6 +122,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 ## Authoritative Sources
 
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
+- [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
@@ -177,6 +181,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-21 with credential-inventory export evidence for delegated-authority audits.
+- Maintained on 2026-09-23 with credential inventory, audit-log join, task-record, target-scope, last-use, and revocation evidence.
 - Maintained on 2026-09-19 with provider-neutral identity, delegated-authority, token-exchange, lifecycle, suspension, and revocation evidence.
 - Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.

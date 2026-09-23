@@ -32,6 +32,8 @@ The September 6 raw sources add fleet-policy, sandbox, and peer-steering evidenc
 
 The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) adds model-tier routing and enterprise-managed agent-operation permissions across app, CLI, and editor-hosted sessions. Fleet orchestration should record which model-tier policy, command/file/network policy, and cost-quality route applied to each worker before comparing results across parallel agents.
 
+The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) adds CLI customization and model-policy telemetry evidence. Fleet scorecards should separate skills, custom agents, MCP servers, slash commands, plugins, connection attempts, model eligibility, usage-based billing, and surface-specific availability before comparing CLI, cloud-agent, IDE, or app workers.
+
 ## Practice Boundaries
 
 - Preserve metadata source, approval point, worktree assignment, runtime cap, validation output, static-analysis output, coverage result, and PR handoff for each cleanup worker.
@@ -50,6 +52,7 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 - Preserve fleet policy version, opt-out state, tool restrictions, and session visibility before parallel agent workers coordinate.
 - Record audit-chain integrity, conductor owner, peer-steering messages, and sandbox assignment for fleet runs that fan out or execute remotely.
 - Record model-tier route, usage-billing basis, and central command/file/network policy for each fleet worker when those settings differ by surface.
+- Record customization telemetry by event type for each fleet surface so skills, custom agents, MCP servers, slash commands, plugins, connection attempts, and approved tool effects are not compared as one adoption number.
 
 ## Authoritative Sources
 
@@ -72,6 +75,7 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
+- [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 
 ## Related Code
 
@@ -99,6 +103,7 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-19 with feature-flag cleanup fleet evidence for metadata lookup, approval point, worktree assignment, timeout, validation, static analysis, coverage, PR handoff, and deterministic-tool comparison.
+- Maintained on 2026-09-22 with CLI customization telemetry, model eligibility, usage-billing, and surface-specific availability evidence.
 - Maintained on 2026-09-15 with model-tier routing and managed command, file, and network policy evidence for app, CLI, and editor-hosted workers.
 - Created on 2026-08-05 from focused research on CLI multi-agent orchestration and terminal-native coding-agent fleet managers.
 - Maintained on 2026-08-05 with stacked-session and stacked-pull-request chain evidence for managed app coordination.

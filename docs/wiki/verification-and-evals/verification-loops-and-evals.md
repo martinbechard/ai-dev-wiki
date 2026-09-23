@@ -88,6 +88,8 @@ The September 14 raw sources add zero-trust and enterprise-platform validation e
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add agent-eval and incident-reporting evidence. Locally, governance confidence must be backed by tested controls, audit records, and production-bar evidence.
 
+The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) adds acceptance-chain and execution-time governance evidence. Locally, verification should record what was authorized, what happened, which checks ran, which AI review states changed, who signed off, and what durable evidence survives later review rather than treating line count, agent completion text, or a flat comment stream as sufficient proof.
+
 ## Practice Boundaries
 
 - Run the checks that match the change surface before claiming completion.
@@ -162,6 +164,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Verify orchestration choices, third-party component intake, and corrective-RAG retry paths with complete-task metrics, isolated review, groundedness, usefulness, and fail-safe rollback evidence.
 - Route recurring failure-mode detail through [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
 - Route material agent anomaly records through [agent incident reporting](../governance-and-risk/agent-incident-reporting.md).
+- Preserve authorization, action trace, review-state transition, test/build/scan output, acceptance decision, signer, and later-review evidence for AI-assisted changes before treating a workflow as verified.
 
 ## Authoritative Sources
 
@@ -176,6 +179,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -253,6 +257,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-22 with authorization, action-trace, review-state, acceptance decision, signoff, and later-review evidence.
 - Maintained on 2026-09-16 with agent-eval and incident-reporting signals routed to focused leaves; next check should keep recurring failure-mode detail in agent eval failure diagnosis.
 - Maintained on 2026-09-08 with complete-task metrics, controlled experiment, isolated review, component intake, corrective-RAG, groundedness, usefulness, and fail-safe rollback evidence.
 - Maintained on 2026-09-07 with human-loop, prototype-validation, model-route validation, recovered-failure, and workflow-representative eval evidence.
