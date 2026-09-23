@@ -1,0 +1,427 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-23T00:31:35Z",
+  "cutoff_window": {
+    "relative_rule": "Visible public publication or update date within the last 2 days relative to the run time.",
+    "start_utc": "2026-09-21T00:31:35Z",
+    "end_utc": "2026-09-23T00:31:35Z",
+    "date_handling": "Accepted date-only September 21-23, 2026 sources when the page itself displayed the date and the content was local-practice relevant; excluded missing, stale, future-dated, ambiguous, and secondary-only date evidence."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, context architecture, workflow guidance, verification, governance, and adoption lenses.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "handling": "Broad ecosystem entity updates were marked upstream-owned and kept only when there was a distinct local practice implication."
+  },
+  "qualifying_updates": [
+    {
+      "title": "CLAUDE.md vs agent memory: what each should store",
+      "url": "https://www.getlockstep.dev/blog/claude-md-vs-agent-memory",
+      "source_type": "practice blog",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The post separates stable repository instructions, personal agent memory, task handoffs, and shared team decision records, and warns against storing secrets or ownerless product exceptions in repository instruction files.",
+      "why_it_matters": "Local instruction guidance can use this as evidence for separating durable repo guidance from personal memory, temporary run state, and governed team decisions.",
+      "named_entities": [
+        "CLAUDE.md",
+        "agent memory",
+        "task handoff",
+        "architecture decision record",
+        "Lockstep"
+      ],
+      "upstream_owned_entities": [
+        "Lockstep",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Instruction files should contain stable commands, boundaries, conventions, and hard invariants, while changeable decisions need owner, status, scope, and replacement history.",
+      "follow_up_notes": "Consider a downstream lens on instruction-file hygiene and where to route temporary task state versus durable decisions."
+    },
+    {
+      "title": "How to share memory between Cursor and Claude Code",
+      "url": "https://www.getlockstep.dev/blog/share-memory-cursor-claude-code",
+      "source_type": "practice blog",
+      "visible_date": "September 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The post recommends bridging coding tools with version-controlled repo instructions, compact task handoffs, focused live tools, and approved team decision records instead of copying complete chats or syncing personal memory blindly.",
+      "why_it_matters": "It maps directly to cross-agent handoff practice and to the local wiki's preference for explicit state, source evidence, and decision ownership.",
+      "named_entities": [
+        "Cursor",
+        "Claude Code",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Claude Code",
+        "MCP"
+      ],
+      "local_practice_implication": "A tool switch should carry current objective, changed files, rejected approaches, test evidence, unresolved questions, and next safe step rather than transcript dumps.",
+      "follow_up_notes": "Useful for source-workflow and context-architecture pages that explain handoffs across heterogeneous coding agents."
+    },
+    {
+      "title": "Lumos Launches MCP Governance to Provide Agent Runtime Security",
+      "url": "https://www.prnewswire.com/news-releases/lumos-launches-mcp-governance-to-provide-agent-runtime-security-302886418.html",
+      "source_type": "press release",
+      "visible_date": "Sep 22, 2026, 12:00 ET",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Lumos announced MCP Governance for Claude Code and Codex, describing runtime permission checks that block an agent action when policy does not allow it and citing the scale of agent actions as a governance concern.",
+      "why_it_matters": "Although the product and vendor are upstream-owned, the practice signal is local: agent governance is moving from static inventory to point-of-action policy enforcement and runtime evidence.",
+      "named_entities": [
+        "Lumos",
+        "MCP Governance",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Lumos",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Local governance pages should distinguish permission inventory from per-action enforcement, auditability, and approval timing for tool calls.",
+      "follow_up_notes": "Route broad Lumos/product coverage upstream; keep only the governed MCP practice lens downstream."
+    },
+    {
+      "title": "Cut AI agent cost and improve accuracy with Code Execution in the Datadog MCP Server",
+      "url": "https://www.datadoghq.com/blog/datadog-code-execution/",
+      "source_type": "vendor engineering blog",
+      "visible_date": "Sep 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Datadog described a generally available Code Execution capability that lets agents use two MCP tools to run sandboxed JavaScript, query several Datadog APIs, keep intermediate data in code, filter results before returning them, and apply caller permissions outside the sandbox.",
+      "why_it_matters": "The practice pattern is a bounded execution substrate for multi-step tool work: move deterministic joining, filtering, parallel querying, and intermediate state out of model context while preserving permissions.",
+      "named_entities": [
+        "Datadog",
+        "Datadog MCP Server",
+        "Code Execution",
+        "execute_code",
+        "search_datadog_sdk",
+        "TypeScript client SDK"
+      ],
+      "upstream_owned_entities": [
+        "Datadog",
+        "Datadog MCP Server",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Tool-call practice should compare conversation-level tool chaining with sandboxed generated-code execution, especially for token cost, evidence minimization, and permission boundaries.",
+      "follow_up_notes": "Potential raw ingest should avoid turning this into a Datadog product page; focus on MCP code-execution boundaries."
+    },
+    {
+      "title": "Faster C++ code intelligence with whole codebase indexing",
+      "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "GitHub announced whole codebase indexing for C++ code intelligence in Copilot CLI, using compilation information and the Microsoft C++ Language Server to persist symbols, includes, relationships, and code-navigation data across files.",
+      "why_it_matters": "The local practice implication is that code retrieval for agentic development is shifting toward reusable language-server indexes rather than repeatedly rediscovering project structure per request.",
+      "named_entities": [
+        "GitHub Copilot CLI",
+        "Whole Codebase Indexing",
+        "Microsoft C++ Language Server",
+        "C++"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Microsoft C++ Language Server"
+      ],
+      "local_practice_implication": "Context architecture pages should distinguish semantic search, language-server symbol indexes, and compile-aware code graphs as separate retrieval substrates.",
+      "follow_up_notes": "Keep broad Copilot CLI feature tracking upstream; downstream lens is code-intelligence cache design and inspectable index progress."
+    },
+    {
+      "title": "GitHub Enterprise adds credential inventory exports",
+      "url": "https://github.blog/changelog/2026-09-21-github-enterprise-adds-credential-inventory-exports/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 21, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub Enterprise Cloud owners can export credential inventories across SSH keys, PATs, OAuth tokens, and GitHub App tokens, including metadata such as owners, scopes, permissions, creation and expiration dates, last-used dates, and target organizations or repositories.",
+      "why_it_matters": "Agent workflows increasingly rely on delegated credentials and tool access; credential inventory plus audit-log correlation is a governance prerequisite for incident response and policy review.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "SSH keys",
+        "personal access tokens",
+        "OAuth App access tokens",
+        "GitHub App tokens"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "local_practice_implication": "Governance guidance should treat agent-access credentials as inventoryable resources whose scopes, owners, last use, and audit-log activity must remain reviewable.",
+      "follow_up_notes": "Consider linking future source-workflow guidance to credential inventory rather than treating token hygiene as a purely human account-management concern."
+    },
+    {
+      "title": "Unfinished Work in Package Security",
+      "url": "https://nesbitt.io/2026/09/22/unfinished-work-in-package-security.html",
+      "source_type": "security practice blog",
+      "visible_date": "2026-09-22 in URL and page date",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The package-security essay includes a coding-agents section noting instruction injection through test output and a module-shadowing case where an agent-generated Python helper imported a malicious local module while producing the requested decoding result.",
+      "why_it_matters": "The practice signal is that generated helper scripts and test-output text must be treated as execution surfaces, not only as content for model scrutiny.",
+      "named_entities": [
+        "jqwik",
+        "Johann Rehberger",
+        "module shadowing",
+        "Python",
+        "struct.py"
+      ],
+      "upstream_owned_entities": [
+        "jqwik",
+        "Python"
+      ],
+      "local_practice_implication": "Agent security guidance should require controlled import paths, restricted execution environments, and skepticism toward instructions emitted by test output or untrusted package content.",
+      "follow_up_notes": "Good candidate for a governance/risk lens on package-install and generated-helper execution risk."
+    },
+    {
+      "title": "AI Coding Harness Architecture in 2026: Claude Code vs Codex CLI vs OpenCode and 5 More",
+      "url": "https://aicoderscope.com/blog/ai-coding-harnesses-architecture-comparison-2026/",
+      "source_type": "practice comparison",
+      "visible_date": "Last updated September 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "The comparison frames coding agents by harness architecture rather than model ranking, covering sandbox defaults, approval policies, instruction-file compatibility, local model support, memory/checkpoint behavior, and remote/session architecture.",
+      "why_it_matters": "The local practice implication is that teams should evaluate the loop around the model: sandbox, approvals, instruction loading, memory, provider routing, and inspectability.",
+      "named_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "OpenCode",
+        "Qwen Code",
+        "Gemini CLI",
+        "Goose",
+        "Cline",
+        "Zed Agent",
+        "AGENTS.md"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "OpenCode",
+        "Qwen Code",
+        "Gemini CLI",
+        "Goose",
+        "Cline",
+        "Zed Agent"
+      ],
+      "local_practice_implication": "Downstream content should keep product matrices upstream-owned but may capture evaluation criteria for selecting a coding-agent harness.",
+      "follow_up_notes": "Verify official docs before using any specific support claim; use as a prompt for local harness-evaluation criteria, not as an authoritative product catalog."
+    },
+    {
+      "title": "Context Engineering Is the Missing Layer Between Your Agent and Its Memory",
+      "url": "https://akillness.github.io/posts/context-engineering-agent-memory-design/",
+      "source_type": "practice blog",
+      "visible_date": "Posted Sep 22, 2026 Updated Sep 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The post describes context engineering as retrieval, memory, context assembly, and reasoning scaffolds, arguing that vector search alone is insufficient for code or live-production scenarios when ownership, execution paths, and telemetry relationships matter.",
+      "why_it_matters": "It offers a practice-level explanation of why code agents need structured code intelligence and source selection rather than larger prompts or raw semantic matches.",
+      "named_entities": [
+        "context engineering",
+        "Sourcegraph",
+        "mem0",
+        "semantic search",
+        "code graph"
+      ],
+      "upstream_owned_entities": [
+        "Sourcegraph",
+        "mem0"
+      ],
+      "local_practice_implication": "Context architecture pages can use the four-layer framing while avoiding broad technique duplication already owned by the upstream AI wiki.",
+      "follow_up_notes": "If ingested, keep the local lens on repository/codebase context assembly and routing, not general context-engineering encyclopedia coverage."
+    },
+    {
+      "title": "Refreshed repository pull requests page generally available",
+      "url": "https://github.blog/changelog/2026-09-21-refreshed-repository-pull-requests-page-generally-available/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 21, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub made a refreshed repository pull-request page generally available with content-assisted filtering, advanced search with Boolean/nested queries, compact presentation mode, status-check counts, stack indicators, unread-update indicators, bulk actions, and review-status filtering.",
+      "why_it_matters": "Agent-generated PR volume increases review triage pressure, so source-workflow guidance can treat scan density, status filters, stacked PR signals, and bulk operations as part of operating model design.",
+      "named_entities": [
+        "GitHub",
+        "pull requests",
+        "review status",
+        "status checks"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "local_practice_implication": "Review queues for AI-assisted work need ergonomic filtering and triage signals, not only more generated review comments.",
+      "follow_up_notes": "Keep GitHub product details upstream-owned; local follow-up is review-workflow ergonomics under higher PR volume."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Claude Opus 5.5 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/",
+      "visible_date": "September 22, 2026",
+      "reason": "Broad model availability and pricing update is upstream-owned; local practice implication overlaps with existing model-policy and billing considerations."
+    },
+    {
+      "title": "OpenAI's GPT-6 Sol and GPT-6 Luna now available",
+      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/",
+      "visible_date": "September 22, 2026",
+      "reason": "Broad model availability update is upstream-owned; no distinct local practice detail beyond model-policy routing."
+    },
+    {
+      "title": "Grok 4.7 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/",
+      "visible_date": "September 21, 2026",
+      "reason": "Broad model availability update is upstream-owned."
+    },
+    {
+      "title": "Use SeatLayer MCP with ChatGPT and Codex",
+      "url": "https://docs.seatlayer.io/agents/connect-chatgpt/",
+      "visible_date": "Search result claimed Sep 22, 2026; opened page displayed Updated Aug 17, 2026",
+      "reason": "Date evidence was stale or inconsistent, so the candidate was excluded despite a relevant MCP configuration boundary."
+    },
+    {
+      "title": "PURA Blog: How to Run an AI Code Review Trial That Tells You Something",
+      "url": "https://www.pura.sh/blog",
+      "visible_date": "Search result claimed Sep 22, 2026; opened page only showed older August/June article dates",
+      "reason": "Visible source page did not confirm an in-window article date."
+    },
+    {
+      "title": "AI Writes a Third of Public Code Review",
+      "url": "https://codepulsehq.com/research/ai-share-of-code-review",
+      "visible_date": "No visible publication or update date found on opened page",
+      "reason": "Relevant code-review practice evidence, but missing visible in-window source date."
+    },
+    {
+      "title": "How Researchers Use and Verify AI Coding Assistants",
+      "url": "https://arxiv.org/abs/2609.22049",
+      "visible_date": "Direct arXiv date Sep 18, 2026",
+      "reason": "Useful verification evidence, but direct source publication date is outside the two-day window; secondary pages claimed a later update and were not used as the qualifying date."
+    },
+    {
+      "title": "Nielsen Norman Group AI-agent power-user context-library item",
+      "url": "https://pipelinemag.ai/",
+      "visible_date": "Pipeline brief Sep 22, 2026",
+      "reason": "Only a secondary news brief was found; the primary NN/g page was not located during this run."
+    },
+    {
+      "title": "ClaudeUnreal release notes",
+      "url": "https://echoulen.github.io/claude-unreal/release-notes/",
+      "visible_date": "Search result claimed Sep 22, 2026; opened release-note lines surfaced older visible entries",
+      "reason": "Date evidence was ambiguous after opening the page."
+    },
+    {
+      "title": "Agentic.Schule blog items on Playwright MCP and craftsmanship",
+      "url": "https://agentic.schule/en/blog/",
+      "visible_date": "Sep 21-22, 2026 visible on index",
+      "reason": "Relevant practice posts, but not selected because higher-signal primary sources covered MCP permissions, context handoff, and governance within the same run."
+    },
+    {
+      "title": "Managing the Hidden Overhead of AI Software Engineering",
+      "url": "https://wpnews.pro/news/managing-the-hidden-overhead-of-ai-software-engineering",
+      "visible_date": "Sep 22, 2026 on Web Pulse",
+      "reason": "Secondary syndicated page found; the canonical dev.to source was not found directly during the run."
+    },
+    {
+      "title": "The Signal Room daily briefing",
+      "url": "https://betabriefing.ai/channels/the-signal-room/briefings/2026-09-22/",
+      "visible_date": "September 22, 2026",
+      "reason": "Generated daily briefing with aggregated claims; excluded in favor of direct sources."
+    }
+  ],
+  "search_notes": [
+    "Used public web search only; no private repository content was sent to external services.",
+    "Searched across context engineering, coding-agent memory, MCP governance, code execution tools, code retrieval, credential auditability, package-security risks, AI code review, and review-workflow ergonomics.",
+    "Kept broad ecosystem and product details as upstream-owned where applicable."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
