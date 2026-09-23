@@ -1,0 +1,349 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-09-23T01:01:51Z",
+    "policy": "Only public sources published or visibly updated within the last seven days are eligible; date-only boundary sources are excluded when exact eligibility is ambiguous.",
+    "start_utc": "2026-09-16T01:01:51Z"
+  },
+  "excluded_candidates": [
+    {
+      "candidate_summary": "DETENT Devin Desktop Kanban board analysis.",
+      "reason": "Date-only source falls on the seven-day boundary relative to 2026-09-16T01:01:51Z cutoff, so exact eligibility is ambiguous; also mostly a product-specific Kanban analysis that needs primary-source confirmation before local ingest.",
+      "source_url": "https://detent-ai.com/en/blog/devin-desktop-who-tracks-the-kanban",
+      "visible_date": "2026-09-16"
+    },
+    {
+      "candidate_summary": "AI Coding.Info repository list by coding agent.",
+      "reason": "Repository directory is current and public but functions as a catalog/list; no specific durable local practice update beyond broad ecosystem tracking.",
+      "source_url": "https://ai-coding.info/en/repositories",
+      "visible_date": "2026-09-22"
+    },
+    {
+      "candidate_summary": "D2i Technology agentic software development blog.",
+      "reason": "Generic consultancy guidance overlaps existing partner-selection and verification practice without a distinct source-backed delta.",
+      "source_url": "https://d2itechnology.com/blogs/how-to-build-applications-agentic-software-development/",
+      "visible_date": "2026-09-21"
+    },
+    {
+      "candidate_summary": "Inference Report GitHub trend page.",
+      "reason": "Daily trend aggregation and repository list, not direct evidence for a local practice leaf; route individual upstream entities separately if needed.",
+      "source_url": "https://inference.report/github/2026-09-22",
+      "visible_date": "2026-09-22"
+    },
+    {
+      "candidate_summary": "The CODEW developer tools workspace article.",
+      "reason": "Secondary developer-tools watch article; claims require direct product/source confirmation before local raw ingest.",
+      "source_url": "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+      "visible_date": "2026-09-22"
+    },
+    {
+      "candidate_summary": "AI Polix developer tools index snippets.",
+      "reason": "News index snippets mention several potentially relevant items, but individual article dates and primary evidence need focused verification before qualification.",
+      "source_url": "https://aipolix.com/en-us/developers",
+      "visible_date": "2026-09-21/2026-09-20"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entity background remains upstream-owned; this artifact keeps only local practice implications for workflow, governance, verification, adoption, and operating-model leaves.",
+    "upstream_owned_entities": [
+      "Anthropic",
+      "Claude",
+      "Claude Code",
+      "CloudBees",
+      "Cursor",
+      "DETENT",
+      "DORA",
+      "GitHub",
+      "GitHub Copilot",
+      "Grok 4.7",
+      "ISO/IEC 42001",
+      "MCP",
+      "METR",
+      "NIST",
+      "OpenTelemetry",
+      "Railway",
+      "Tines",
+      "xAI"
+    ]
+  },
+  "follow_up_notes": [
+    "Review packages should record AI-review state transitions and resolution reasons when available.",
+    "Partner scorecards should ask whether agentic CLI customizations have measurable usage and enablement-gap evidence.",
+    "Selection rubrics should separate actual feature engagement from licensed-seat or anecdotal adoption claims.",
+    "Check local durable-instruction pages on next eligible pass for AGENTS.md fallback and provider exception wording.",
+    "Review next ingest for whether pipeline-governance evidence duplicates the September 21 topic collector or adds a distinct partner-selection signal.",
+    "Governed data-access leaves should distinguish written approval from enforced operation-specific credentials.",
+    "If ingested, keep vendor framing secondary and extract the durable acceptance-chain practice.",
+    "Preserve as local change-level governance practice if later ingested.",
+    "Route broad model capability details upstream; keep only model-policy and billing evidence locally."
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "GitHub made Copilot code review's refreshed overview, review-effort attribution, grouped finding states, smarter auto-resolution, resolution reasons, and batch smart commit messages generally available.",
+      "follow_up_note": "Review packages should record AI-review state transitions and resolution reasons when available.",
+      "id": "github-copilot-code-review-evidence-2026-09-18",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review",
+        "GitHub"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "Pre-PR and trajectory-level review packages can now preserve review progress, open/resolved/previously-missed finding states, severity links, resolution reasons, and generated commit-message evidence instead of treating AI review as a flat comment stream."
+    },
+    {
+      "factual_summary": "GitHub added Copilot CLI report fields for agentic customization usage, including skills, custom agents, MCP servers, slash commands, and plugins, with per-user and aggregate reporting and privacy grouping for customer-defined names.",
+      "follow_up_note": "Partner scorecards should ask whether agentic CLI customizations have measurable usage and enablement-gap evidence.",
+      "id": "github-copilot-agentic-cli-usage-metrics-2026-09-17",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot CLI",
+        "Model Context Protocol",
+        "MCP",
+        "GitHub"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "MCP",
+        "GitHub"
+      ],
+      "visible_date": "2026-09-17",
+      "why_it_matters_for_leaf": "Terminal fleet and partner-selection evidence can now ask for customization adoption telemetry, distinguish invocation counts from MCP connection attempts, and avoid double-counting plugin skill metrics."
+    },
+    {
+      "factual_summary": "GitHub's Copilot impact dashboard and aggregate report APIs now include feature-level engagement over a rolling 28-day period for completion, agent edit, passive/active code review, cloud agent, CLI, and app surfaces.",
+      "follow_up_note": "Selection rubrics should separate actual feature engagement from licensed-seat or anecdotal adoption claims.",
+      "id": "github-copilot-feature-engagement-dashboard-2026-09-17",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot impact dashboard",
+        "GitHub"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "visible_date": "2026-09-17",
+      "why_it_matters_for_leaf": "AI development partner and adoption evaluations can move from seat-level claims to feature-specific engagement evidence, while preserving that dashboard figures are aggregate and may be absent or unavailable."
+    },
+    {
+      "factual_summary": "Anthropic's Claude Code v2.1.277 release added AGENTS.md fallback support when no CLAUDE.md is present, gateway egress-boundary settings, clearer error exits for internal failures, and improved raw API body OpenTelemetry linkage.",
+      "follow_up_note": "Check local durable-instruction pages on next eligible pass for AGENTS.md fallback and provider exception wording.",
+      "id": "anthropic-claude-code-agents-md-release-2026-09-18",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "AGENTS.md",
+        "OpenTelemetry"
+      ],
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "OpenTelemetry"
+      ],
+      "visible_date": "2026-09-18",
+      "why_it_matters_for_leaf": "Persistent workspace and fleet handoff rules should treat AGENTS.md as a cross-agent instruction surface that can now be consumed by Claude Code, while preserving provider exceptions and trace linkage as execution evidence rather than assuming instruction portability is universal."
+    },
+    {
+      "factual_summary": "CloudBees argued that agentic coding shifts the enterprise bottleneck from writing code to governing review, testing, security, authorship, cost, and release-pipeline visibility at higher change volume.",
+      "follow_up_note": "Review next ingest for whether pipeline-governance evidence duplicates the September 21 topic collector or adds a distinct partner-selection signal.",
+      "id": "cloudbees-agentic-coding-pipeline-governance-2026-09-21",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "named_entities": [
+        "CloudBees"
+      ],
+      "source_url": "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+      "upstream_owned_entities": [
+        "CloudBees"
+      ],
+      "visible_date": "2026-09-21",
+      "why_it_matters_for_leaf": "Generated-code evidence packages and codebase-wide rollout workflows should keep owner, reviewer, approval state, build/test/scan results, cost attribution, and release visibility joined when agent-authored changes approach production."
+    },
+    {
+      "factual_summary": "Tines summarized AI governance failures and emphasized that policies failed at execution time when prompt inputs, scoped credentials, approval gates, audit trails, and runtime monitoring were missing from the actual workflow.",
+      "follow_up_note": "Governed data-access leaves should distinguish written approval from enforced operation-specific credentials.",
+      "id": "tines-execution-path-governance-failures-2026-09-20",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "Tines",
+        "Cursor",
+        "Claude",
+        "Railway",
+        "PocketOS"
+      ],
+      "source_url": "https://www.tines.com/blog/real-ai-governance-failures-and-what-they-reveal-about-weak-controls/",
+      "upstream_owned_entities": [
+        "Tines",
+        "Cursor",
+        "Claude",
+        "Railway"
+      ],
+      "visible_date": "2026-09-20",
+      "why_it_matters_for_leaf": "Governed database and event-triggered agent access should put destructive-write authority behind scoped credentials and technical gates, not only written policy, especially when agents can discover tokens and act against production systems."
+    },
+    {
+      "factual_summary": "DETENT argued that AI software development moves effort from code production to analysis, context, verification, and acceptance, and that teams should record what was authorized, what happened, and who signed off rather than measuring lines of code produced.",
+      "follow_up_note": "If ingested, keep vendor framing secondary and extract the durable acceptance-chain practice.",
+      "id": "detent-ai-software-development-acceptance-chain-2026-09-20",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "DETENT",
+        "METR",
+        "DORA"
+      ],
+      "source_url": "https://detent-ai.com/en/blog/ai-software-development",
+      "upstream_owned_entities": [
+        "DETENT",
+        "METR",
+        "DORA"
+      ],
+      "visible_date": "2026-09-20",
+      "why_it_matters_for_leaf": "Orient/verify loops, delegated handoffs, and trajectory evals should treat acceptance evidence as a durable artifact separate from an agent's own completion summary."
+    },
+    {
+      "factual_summary": "DETENT argued that model/data governance and SBOM-style build inventories do not answer change-level questions such as which agent session produced a diff, what it was authorized to touch, whether a human reviewed it, and what signed evidence survives later review.",
+      "follow_up_note": "Preserve as local change-level governance practice if later ingested.",
+      "id": "detent-change-level-ai-governance-2026-09-19",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ],
+      "named_entities": [
+        "DETENT",
+        "NIST AI RMF",
+        "ISO/IEC 42001",
+        "SBOM",
+        "Claude Code"
+      ],
+      "source_url": "https://detent-ai.com/en/blog/ai-governance-framework-for-agent-written-code",
+      "upstream_owned_entities": [
+        "DETENT",
+        "NIST",
+        "ISO/IEC 42001",
+        "Claude Code"
+      ],
+      "visible_date": "2026-09-19",
+      "why_it_matters_for_leaf": "Commit-level governance should attach intent, authorized context, execution record, and human acceptance to the change itself, not only to model policy or build contents."
+    },
+    {
+      "factual_summary": "GitHub added Grok 4.7 to Copilot surfaces including IDEs, Copilot CLI, Copilot cloud agent, and the Copilot app, with usage-based billing and Business/Enterprise administrator model-policy controls.",
+      "follow_up_note": "Route broad model capability details upstream; keep only model-policy and billing evidence locally.",
+      "id": "github-copilot-grok-4-7-model-policy-2026-09-21",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md"
+      ],
+      "named_entities": [
+        "Grok 4.7",
+        "xAI",
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/",
+      "upstream_owned_entities": [
+        "Grok 4.7",
+        "xAI",
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "visible_date": "2026-09-21",
+      "why_it_matters_for_leaf": "Partner-selection and fleet-orchestration evidence should record model eligibility, billing basis, rollout state, and administrator policy before comparing agent results across Copilot surfaces."
+    }
+  ],
+  "run_timestamp_local": "2026-09-22T21:01:51-0400",
+  "run_timestamp_utc": "2026-09-23T01:01:51Z",
+  "scanner_output_policy": "This is a structured raw source artifact for later ingest. Scanner or ledger output was not written under raw/processed, and docs/wiki pages were not updated.",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience/",
+    "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/",
+    "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+    "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement/",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+    "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+    "https://www.tines.com/blog/real-ai-governance-failures-and-what-they-reveal-about-weak-controls/",
+    "https://detent-ai.com/en/blog/ai-software-development",
+    "https://detent-ai.com/en/blog/ai-governance-framework-for-agent-written-code",
+    "https://detent-ai.com/en/blog/devin-desktop-who-tracks-the-kanban",
+    "https://ai-coding.info/en/repositories",
+    "https://d2itechnology.com/blogs/how-to-build-applications-agentic-software-development/",
+    "https://inference.report/github/2026-09-22",
+    "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+    "https://aipolix.com/en-us/developers"
+  ]
+}
