@@ -51,6 +51,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds rollout, formal-method, and large-scale cleanup evidence. Acceptance gates should distinguish faster coding from finished delivery, preserve design-level checks for concurrent or distributed systems, use mutation testing or formal models where risk justifies them, and require runtime metadata, human target confirmation, isolated worktrees, build/test/static-analysis evidence, coverage deltas, and bounded timeouts before codebase-wide agent changes open pull requests.
 
+The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds agentic code-quality verification pressure. Acceptance gates should connect agentic scale to explainable review evidence, repository-wide context, historical PR decisions, and organization-specific standards before faster generation or larger PRs count as delivery success.
+
 ## Practice Boundaries
 
 - Decide the acceptance gate before claiming a task is complete.
@@ -85,6 +87,7 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 - Route recurring agent-eval failure-mode diagnosis through [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
 - Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for incremental runtime migration, governance checks, and production AI-code quality bars.
 - Use the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) as evidence for agent-eval and incident-reporting routing.
+- Require explainable review evidence, repository-wide context checks, historical PR-decision context, and organization-specific quality standards when agentic development increases change volume.
 
 ## Authoritative Sources
 
@@ -117,6 +120,7 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 
 ## Related Code
 
@@ -145,6 +149,7 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 ## Maintenance Notes
 
 - Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
+- Maintained on 2026-09-24 with agentic code-quality, explainable review evidence, repository-wide context, historical PR decision, and organization-specific standard gates.
 - Maintained on 2026-08-29 with review-capacity, default review-effort, prototype trust, durable-runtime, prompt-version, structured-output, and human-review-load acceptance evidence.
 - Created on 2026-06-23 to hold verification-tax and acceptance-gate practice for agentic delivery.
 - Maintained on 2026-06-23 to connect reusable skill contracts to proof standards.

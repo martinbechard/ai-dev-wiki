@@ -115,6 +115,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 The September 22-23 raw sources add point-of-action MCP enforcement, sandboxed code execution, and customization-telemetry evidence. The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) records Copilot CLI customization usage metrics that separate skills, custom agents, MCP servers, slash commands, plugins, and connection attempts. The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) records MCP governance as runtime permission checks and Datadog-style sandboxed code execution for multi-step tool queries. Locally, MCP controls should enforce policy at action time, keep generated-code execution sandboxed and permission-bound, and distinguish adoption metrics from approved side effects.
 
+The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) reinforces that MCP governance is more than server registration. Local tool policy should keep server registration, inventory visibility, approval prompts, runtime enforcement, and sandboxed generated-code execution as separately reviewable controls before agents chain operational queries or actions.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -217,6 +219,7 @@ The September 22-23 raw sources add point-of-action MCP enforcement, sandboxed c
 - Enforce MCP policy at point of action when a tool call could read, write, spend, deploy, or mutate external state; inventory alone is not proof that the action was allowed.
 - Treat sandboxed generated-code execution inside an MCP server as a separate tool substrate with caller permission checks, intermediate-data minimization, deterministic join/filter evidence, and output-size controls.
 - Separate skills, custom agents, MCP servers, slash commands, plugins, connection attempts, approved calls, and successful side effects in tool telemetry and enablement scorecards.
+- Keep MCP server registration, tool inventory, approval prompts, runtime enforcement, and sandboxed code execution as separate governable events.
 
 ## Authoritative Sources
 
@@ -224,6 +227,7 @@ The September 22-23 raw sources add point-of-action MCP enforcement, sandboxed c
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
+- [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -329,6 +333,7 @@ The September 22-23 raw sources add point-of-action MCP enforcement, sandboxed c
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-24 with MCP registration, inventory, approval-prompt, runtime-enforcement, and sandboxed-execution boundary evidence.
 - Maintained on 2026-09-23 with point-of-action MCP policy, sandboxed code execution, customization telemetry, and side-effect separation evidence.
 - Maintained on 2026-09-19 with MCP-served playbooks, code search, runbook, observability, feature-flag, task-system, data-platform, identity, sandbox, lifecycle, and revocation evidence.
 - Maintained on 2026-09-16 with MCP gateway identity, authorization, rate-limit, access-review, separation-of-duties, denial-telemetry, and delegated-authority proof evidence; next check should verify primary incident sources before adding aggregator-discovered claims.

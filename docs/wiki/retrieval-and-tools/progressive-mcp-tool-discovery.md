@@ -33,6 +33,8 @@ The [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) adds a gateway-boundary refinement. Progressive discovery should keep newly discovered action surfaces behind explicit gateway policy until the task proves a need for that tool.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds child-agent discovery scope evidence. When a delegated agent receives a restricted tool list, discovery bridges and MCP tools should remain non-invocable unless the named tool or bridge authority is explicitly granted for that subagent.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -48,6 +50,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Keep discovered action-capable connectors behind gateway policy until the task, delegated identity, allowed actions, rate limits, and audit route are explicit.
 - Treat action chaining across systems as a discovery-risk signal that requires separation-of-duties and least-privilege review before invocation.
 - Require policy evidence before invoking a discovered MCP connector that can chain actions across operational systems.
+- Separate the ability to discover tool schemas from the authority to invoke those tools, especially for child agents with explicit tool allowlists.
 
 ## Authoritative Sources
 
@@ -58,6 +61,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [context selection and compaction](../context-architecture/context-selection-and-compaction.md)
@@ -95,3 +99,4 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Maintained on 2026-08-16 with agent-baiting discovery controls for MCP servers, skills, repositories, setup helpers, and future-agent instruction seeding.
 - Maintained on 2026-09-06 with secondary MCP protocol-change evidence deferred behind authoritative specification confirmation.
 - Maintained on 2026-09-16 with gateway-boundary, action-chain, rate-limit, and separation-of-duties discovery controls; next check should confirm discovery logs record the selected tool, delegated identity, and approval route before invocation.
+- Maintained on 2026-09-23 with child-agent discovery versus invocation authority and explicit MCP tool allowlist evidence.

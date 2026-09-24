@@ -29,6 +29,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 The September 22-23 raw sources add adoption telemetry and harness-selection evidence. The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) records feature-level Copilot engagement, CLI customization metrics, and usage-based model-policy signals. The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) records harness-comparison criteria such as sandbox defaults, approval policies, instruction-file compatibility, local-model support, memory/checkpoint behavior, and remote or session architecture. Locally, partner scorecards should separate actual engagement evidence from seat counts or demonstrations, and should evaluate the loop around the model rather than only provider names.
 
+The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds agentic platform-selection evidence. Locally, partner selection should evaluate coordination, review, governance, cost, context, accountability, memory, telemetry, sandboxing, and approval controls together instead of treating model choice or a tool brand as the whole adoption decision.
+
 ## Selection Criteria
 
 - Workflow and business fit: the partner can map the actual user journey, failure modes, decision rights, and measurable outcome before proposing model or tool choices.
@@ -52,6 +54,7 @@ The September 22-23 raw sources add adoption telemetry and harness-selection evi
 - Eval and delegated-authority claims need evidence from the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) or an equivalent pilot record.
 - Adoption claims should separate licensed seats, rolling feature engagement, CLI customization usage, MCP connection attempts, plugin or skill invocations, and successful workflow outcomes.
 - Harness-selection claims should show sandbox defaults, approval policy, instruction-file compatibility, local-model route, memory or checkpoint behavior, remote/session architecture, billing basis, and admin model-policy controls for the target workflow.
+- Agentic platform claims should show coordination, review, governance, cost, context, accountability, memory, telemetry, sandboxing, and approval controls as one operating surface.
 
 ## Pilot Evidence
 
@@ -71,6 +74,7 @@ A selection pilot should use representative tasks and data, include expected fai
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
+- [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [Workflow before model selection](workflow-before-model-selection.md)
 - [Adoption operating agreements](adoption-operating-agreements.md)
@@ -113,3 +117,4 @@ A selection pilot should use representative tasks and data, include expected fai
 - Maintained on 2026-09-07 with model-route governance, source-access validation, audit export, review capacity, build-versus-buy, and validation-before-expansion criteria.
 - Maintained on 2026-09-16 with control-confidence, risk-register, failure-mode eval, delegated-authority, and incident-handling criteria; next check should confirm partner scorecards include owner, evidence, and review-date fields for those controls.
 - Maintained on 2026-09-23 with feature-engagement, CLI-customization, harness-selection, sandbox, approval, instruction, memory, remote-session, billing, and admin model-policy evidence.
+- Maintained on 2026-09-24 with agentic platform coordination, review, governance, cost, context, accountability, memory, telemetry, sandboxing, and approval-control criteria.

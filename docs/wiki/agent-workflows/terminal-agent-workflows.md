@@ -35,6 +35,8 @@ The September 2 raw sources add governed context, session-continuity, and destru
 
 The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds parallel-session and local-runtime evidence. Independent agent sessions can run in separate worktrees while a developer monitors progress, and local workstation agents may combine terminal, editor, subsystem, local-model, OS identity, and containment surfaces. Locally, terminal workflows should record each session's worktree, local runtime boundary, containment profile, model route, approval state, and completed review package before concurrent command-capable work is accepted.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds repository-ready terminal-agent evidence. Local terminal workflows should record tool-specific wrappers, configuration, runtime and sandbox posture, API stack, model route, and handoff surface before treating a CLI agent path as equivalent to another agent's path.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -50,6 +52,7 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Record the transition from prototype-first cloud work to repository-bound implementation, including created repository, source owner, preview URL evidence, deployment account, publishing approval, and runtime-control settings.
 - Record excluded-source boundaries, managed model route, side-conversation lineage, prompt timeline, collaboration channel, permission default, and sandbox fixture evidence when terminal or desktop-agent sessions can execute commands.
 - Preserve worktree, local runtime, containment profile, model route, approval state, and review package evidence for parallel terminal or workstation-agent sessions.
+- Treat repository-owned CLI wrappers and configuration as readiness evidence only when runtime, sandbox, API, model, context, and handoff differences remain visible.
 
 ## Authoritative Sources
 
@@ -71,6 +74,7 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 ## Related Code
 
@@ -106,3 +110,4 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Maintained on 2026-08-21 with event-wake, durable-goal, steering, repo-scope, PR-context, and source-host integration evidence.
 - Maintained on 2026-08-27 with prototype-first cloud-agent sessions, repository creation, preview, publishing, SCM ownership, and runtime-control evidence.
 - Maintained on 2026-09-02 with content-exclusion, managed-model-route, session-lineage, collaboration-surface, runtime-permission, desktop-agent, and destructive-operation containment evidence.
+- Maintained on 2026-09-23 with repository-ready terminal-agent wrappers, runtime posture, sandbox posture, API stack, model route, and handoff-surface evidence.

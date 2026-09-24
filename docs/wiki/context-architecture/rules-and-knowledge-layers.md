@@ -27,6 +27,8 @@ The August 18 raw sources add an MCP context-boundary signal. The [topic news co
 
 The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json) adds security-skill, data-governance, and control-layer evidence. Prompt-space security skills should be treated as bounded rule assets with explicit scope, context budget, and evaluation evidence before they become durable instructions. Enterprise AI context should reuse stewardship, lineage, access-control, semantic-layer, and data-catalog records as knowledge infrastructure instead of creating an AI-only parallel context layer. Workflow control layers should preserve routing policy, run artifacts, decisions, outcomes, and provenance as knowledge records, not hidden instructions.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds extension-owned context and conditional rule-loading evidence. Locally, provider or extension context belongs in the knowledge layer with provenance and cost attribution, while path-scoped rules should load only when relevant instead of being concatenated into every active request.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -43,6 +45,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Record instruction priority, scope, and diagnostics when repository, file-scoped, organization, or user guidance can overlap.
 - Preserve semantic definitions, permissions, provenance, and audit labels with MCP-returned data so connected context remains evidence instead of becoming an implicit rule source.
 - Treat security skills as scoped rule assets, and treat lineage, stewardship, access control, semantic definitions, workflow versions, and run artifacts as knowledge records that inform agents without silently expanding authority.
+- Preserve provider or extension ownership, provenance, and cost attribution for injected context, and prefer conditional path-scoped rules over always-loaded instruction files for narrow guidance.
 
 ## Authoritative Sources
 
@@ -57,6 +60,7 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 ## Related Code
 
@@ -90,3 +94,4 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 - Maintained on 2026-07-30 with instruction priority, scope, and diagnostics for file-based coding-agent guidance.
 - Maintained on 2026-08-18 with MCP context-boundary evidence for separating connected data from rule authority.
 - Maintained on 2026-08-31 with prompt-space security-skill scope, data-governance context, workflow-version, run-artifact, and provenance-layer evidence.
+- Maintained on 2026-09-23 with extension-owned context, provenance, cost attribution, and path-conditional rule-loading evidence.

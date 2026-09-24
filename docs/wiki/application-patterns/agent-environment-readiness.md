@@ -32,6 +32,8 @@ The September 3 [topic news collector source](../../../raw/processed/2026-09-03/
 
 The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) adds content-exclusion, data-governance, and desktop-control readiness evidence. Readiness checks should prove active exclusion policy, app and browser allow/block state, data-source ownership, identity passthrough, and environment-specific source-access validation before agents receive repository or enterprise data.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds terminal-agent substrate comparison evidence. Environment readiness should keep repository setup wrappers, sandbox defaults, local versus hosted execution, model/API stack, context-window assumptions, and runtime permission behavior visible when teams compare CLI or IDE agents.
+
 ## Practice Boundaries
 
 - Define the runtime boundary before agents receive file, shell, network, package, or credential access.
@@ -49,6 +51,7 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - Record runtime profile, sudo and network posture, migration result, worktree run/debug target, model-policy eligibility, and boundary-monitor evidence before execution.
 - Verify execution locality, cache and secret boundary, worktree branch target, port allocation, database or volume separation, dependency scope, and environment-file ownership before parallel or cloud-hosted coding agents run.
 - Verify content-exclusion policy, browser/native app control state, data-source ownership, identity passthrough, and environment-specific access before granting development or enterprise data.
+- Compare CLI and IDE agent readiness by setup wrapper, sandbox default, execution locality, model/API stack, context limit, and runtime permission behavior before routing work.
 
 ## Authoritative Sources
 
@@ -62,6 +65,7 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -98,3 +102,4 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 - Maintained on 2026-09-01 with runtime-profile, migration-fixer, network-isolation, worktree-run-configuration, model-policy, and boundary-monitor evidence.
 - Maintained on 2026-09-03 with customer-controlled execution, execution-worker separation, worktree isolation, runtime-resource reservation, and secret/cache locality evidence.
 - Maintained on 2026-09-07 with content-exclusion, browser/native-app control, data-source ownership, identity-passthrough, and source-access validation evidence.
+- Maintained on 2026-09-23 with setup-wrapper, sandbox-default, execution-locality, model/API stack, context-limit, and runtime-permission readiness evidence.

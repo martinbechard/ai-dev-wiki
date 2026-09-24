@@ -61,6 +61,8 @@ The September 1 raw sources add multi-agent IDE and side-conversation evidence. 
 
 The September 7 raw sources add concurrent-session and delivery-coordination evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records concurrent agent use, delivery-loop dependency coordination, blocker handling, and review packages; the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records session hierarchy, multi-root workspaces, and visible attention state. Locally, coordinators should track lane purpose, dependency ownership, blocker state, attention state, and review package completeness before accepting parallel work.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds dispatch-time subagent controls. Broad Qwen Code, Claude Code, Codex, and ACP coverage stays upstream; locally, subagent coordination should treat external-agent handoffs, per-subagent tool allowlists, explicit workflow versions, message or goal caps, and run-structure previews as delegation-contract evidence rather than prompt-only convention.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -95,6 +97,7 @@ The September 7 raw sources add concurrent-session and delivery-coordination evi
 - Keep webhook, MCP, and messaging integrations inside the delegation contract so subagents cannot create side effects outside the coordinator's reviewed surface.
 - Isolate parallel agents by worktree or equivalent workspace, and record branch history, run configuration, second-opinion scope, and model-policy rationale for each delegated lane.
 - Record concurrent lane purpose, dependency ownership, blocker state, attention state, and review-package evidence before integrating parallel agent work.
+- Bind external-agent handoffs to explicit executor contracts, tool allowlists, workflow versions, budget caps, permission state, and pre-run previews before dispatch.
 
 ## Authoritative Sources
 
@@ -126,6 +129,7 @@ The September 7 raw sources add concurrent-session and delivery-coordination evi
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 ## Related Code
 
@@ -176,3 +180,4 @@ The September 7 raw sources add concurrent-session and delivery-coordination evi
 - Maintained on 2026-08-30 with asynchronous multi-agent workspace, shared-memory, scheduled-job, visible-plan, tool-call, approval, sandbox, redaction, and signed-audit evidence.
 - Maintained on 2026-09-01 with side-conversation, second-opinion, shared-session, worktree-isolation, branch-history, and model-policy evidence.
 - Maintained on 2026-09-07 with concurrent-session, dependency-owner, blocker-state, attention-state, and review-package evidence.
+- Maintained on 2026-09-23 with external-agent handoff contracts, per-subagent tool allowlists, workflow-version, budget-cap, permission-state, and pre-run preview evidence.

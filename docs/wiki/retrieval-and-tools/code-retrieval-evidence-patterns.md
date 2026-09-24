@@ -41,6 +41,8 @@ The August 17 raw sources add codebase-RAG and incident-evidence refinements. Th
 
 The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds language-server and context-assembly evidence. Broad GitHub Copilot and Microsoft C++ Language Server coverage stays upstream; locally, reusable whole-codebase indexes are another retrieval substrate whose compile information, symbol freshness, index progress, and opened-path verification should be visible before an agent relies on code-navigation results.
 
+The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds minimal-sufficient-evidence retrieval evidence. Local code retrieval should evaluate whether the selected source set is sufficient for the current decision, not only whether individual chunks or files look semantically relevant.
+
 ## Practice Boundaries
 
 - Keep code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, and task metadata distinguishable in retrieval evidence.
@@ -70,6 +72,7 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - Verify codebase-specific assistant answers against opened source paths, tests, ADRs, dependency evidence, or runtime telemetry before using them for architecture, impact, or review decisions.
 - Evaluate codebase RAG with freshness checks, opened-path evidence, PR-derived outcomes, and incident-relevant prompt/tool/identity traces before trusting retrieved context for edits or reviews.
 - Treat language-server, compile-aware, semantic-search, and code-graph indexes as retrieval substrates that still need freshness labels, index-progress evidence, and exact opened-path verification before they support edits or review findings.
+- Check retrieval sufficiency as a set-level property for the current decision instead of accepting individually relevant snippets as enough evidence.
 
 ## Authoritative Sources
 
@@ -93,6 +96,7 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
+- [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 ## Related Code
 
@@ -132,3 +136,4 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - Maintained on 2026-08-03 with code-intelligence maturity layers for semantic search, architecture validation, impact analysis, observability-linked evidence, and codebase-specific assistants.
 - Maintained on 2026-08-17 with codebase-RAG freshness, PR-derived eval, memory-backed retrieval, SAFE-style incident trace, and coding-agent security evidence.
 - Maintained on 2026-09-23 with language-server index, compile-aware graph, index-progress, and opened-path verification evidence.
+- Maintained on 2026-09-23 with minimal-sufficient-evidence retrieval and decision-level source-set sufficiency evidence.

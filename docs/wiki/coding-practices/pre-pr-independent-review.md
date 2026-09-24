@@ -26,6 +26,8 @@ The September 15-16 raw sources add two review-pressure signals. The [leaf updat
 
 The September 22-23 raw sources add review-state and queue-triage evidence. The [leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) records AI-review overview state, finding groups, resolution reasons, previously missed findings, and generated batch commit messages. The [topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) records pull-request queue ergonomics such as content-assisted filtering, status-check counts, stack indicators, unread-update indicators, and review-status filters. Locally, pre-PR review should preserve both the finding lifecycle and the queue signal that determines whether an agent-authored change is ready for scarce reviewer attention.
 
+The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds configurable review-default and huge-PR evidence. Local review operations should record who owns default AI review effort, when automatic review triggers, why a team overrides enterprise defaults, and whether the diff surface has performance, probe, and unattended-reproduction evidence before the PR is handed to scarce human review.
+
 ## Practice Boundaries
 
 - Review the exact local diff, commit, or staged change that will become the pull request.
@@ -36,12 +38,14 @@ The September 22-23 raw sources add review-state and queue-triage evidence. The 
 - Preserve auto-resolution reasons, addressed-commit evidence, and validation output when AI rereview closes comments before a human sees the pull request.
 - Triage agent-created changes by priority, risk, ownership, dependency, blocker state, effort, and review depth before consuming human reviewer time.
 - Preserve review-state groups, previously missed issue evidence, resolution reasons, generated commit-message review, stack position, status-check count, unread-update state, and review-status filters when they affect whether a PR should be opened, updated, or held.
+- Record default AI-review effort owner, automatic-review trigger, enterprise-default override reason, huge-diff performance evidence, runtime probes, and unattended repro loops when PR scale affects reviewability.
 
 ## Authoritative Sources
 
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
+- [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [intelligent code review](intelligent-code-review.md)
@@ -72,4 +76,5 @@ The September 22-23 raw sources add review-state and queue-triage evidence. The 
 
 - Maintained on 2026-09-15 with AI rereview, auto-resolution, shell-validation, ensemble-review, independent-assurance, and PR-triage evidence.
 - Maintained on 2026-09-23 with review-state, resolution-reason, generated-commit-message, stack, status-check, unread-update, and review-filter evidence.
+- Maintained on 2026-09-24 with review-default ownership, automatic-review trigger, enterprise override, huge-diff performance, runtime-probe, and unattended-repro evidence.
 - Created on 2026-09-14 from shift-left review evidence in the September 15 topic news collector.
