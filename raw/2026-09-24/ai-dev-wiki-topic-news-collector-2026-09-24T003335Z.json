@@ -1,0 +1,467 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-09-24T00:33:35Z",
+  "cutoff_window": {
+    "relative_rule": "Visible public publication or update date within the last 2 days relative to the run time.",
+    "start_utc": "2026-09-22T00:33:35Z",
+    "end_utc": "2026-09-24T00:33:35Z",
+    "date_handling": "Accepted date-only September 22-24, 2026 sources when the page itself displayed the date and the content was local-practice relevant; excluded missing, stale, future-dated, ambiguous, boundary-only, and secondary-only date evidence."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "local_scope": "AI-assisted development practice, context architecture, workflow guidance, verification, governance, and adoption lenses.",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "handling": "Broad ecosystem entity updates were marked upstream-owned and kept only when there was a distinct local practice implication."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Local sandboxing in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "GitHub announced public-preview local sandboxing for local repository and working-tree sessions in the Copilot app. Project settings cover additional read/write and read-only filesystem paths, denied folders, outbound and local network settings, and Git or GitHub CLI credential access. If the operating system cannot enforce the requested policy, the sandboxed shell fails instead of running without sandboxing.",
+      "why_it_matters": "The local practice signal is a concrete fail-closed execution policy for coding-agent shells, with separate filesystem, network, and credential scopes.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "local sandboxing",
+        "Git credentials",
+        "GitHub CLI credentials"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Governance pages should treat local agent sessions as execution environments with explicit filesystem, network, and credential policy, and should prefer fail-closed behavior when sandbox enforcement is unavailable.",
+      "follow_up_notes": "Route broad Copilot app feature coverage upstream; keep the local note focused on permission policy and fail-closed shell behavior."
+    },
+    {
+      "title": "More ways to request and configure Copilot code reviews",
+      "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub added a dedicated personal code-review settings page across Copilot plans and an enterprise-level default review effort setting. Users can configure automatic review on pull-request creation, coauthoring, draft-to-ready transitions, new pushes, draft pull requests, and default Lite or Balanced review effort; enterprises can set inherited review-effort defaults with organization and repository overrides.",
+      "why_it_matters": "AI review depth is becoming an explicit personal, repository, organization, and enterprise policy surface rather than an implicit model behavior.",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Lite review effort",
+        "Balanced review effort",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Code-review operating guidance should record who owns default AI review effort, when automatic review is triggered, and where teams intentionally override enterprise defaults.",
+      "follow_up_notes": "Potential ingest should connect to existing review-configuration guidance without duplicating the GitHub product matrix."
+    },
+    {
+      "title": "OpenTelemetry in the GitHub Copilot app",
+      "url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub announced enterprise-managed OpenTelemetry configuration for Copilot app agent activity. Administrators can export traces of agent sessions, including model requests and tool use, to compatible monitoring tools; prompt and response content is excluded by default unless content-capture settings are reviewed and enabled.",
+      "why_it_matters": "The practice signal is centralized agent-session observability with privacy-sensitive content capture defaults.",
+      "named_entities": [
+        "OpenTelemetry",
+        "GitHub Copilot app",
+        "managed-settings.json",
+        "agent traces"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "OpenTelemetry"
+      ],
+      "local_practice_implication": "Agent observability guidance should distinguish structural execution traces from captured prompt or response content, and should make content capture a reviewed governance decision.",
+      "follow_up_notes": "Good evidence for local pages on traceability, audit logs, and privacy-preserving agent telemetry."
+    },
+    {
+      "title": "New features and improvements in Copilot for JetBrains",
+      "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/",
+      "source_type": "vendor changelog",
+      "visible_date": "September 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub Copilot for JetBrains 1.18.0 added assisted approvals for low-risk tool calls, re-editing earlier messages with conversation and file-change rewind, organization and enterprise skills and custom instructions, Codex plan mode, built-in GitHub MCP Server toggles, and persistent per-tool MCP controls.",
+      "why_it_matters": "Several local practice surfaces converge here: risk-tiered approvals, rewindable conversation state, shared instruction packages, plan review before implementation, and persistent MCP tool governance.",
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "assisted approvals",
+        "Codex agent",
+        "plan mode",
+        "GitHub MCP Server",
+        "organization skills"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Instruction and tool-governance pages should separate shared skills, organization-managed custom instructions, per-tool MCP controls, and human plan approval as distinct operating controls.",
+      "follow_up_notes": "Route product specifics upstream; retain the local pattern of approval tiers and persistent tool controls."
+    },
+    {
+      "title": "JetBrains Air: Building a System of Products for Agentic Software Development",
+      "url": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
+      "source_type": "vendor strategy blog",
+      "visible_date": "September 22, 2026 in URL and page",
+      "owning_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/context-architecture"
+      ],
+      "short_factual_summary": "JetBrains introduced JetBrains Air as a system spanning individual IDE agent work, team coordination, organizational governance, cost management, shared context, and multi-vendor agent support. The post frames agentic development as initiated, executed, coordinated, reviewed, and governed across surfaces, with Agent Client Protocol connecting IDEs to agent harnesses and observability.",
+      "why_it_matters": "The local practice signal is organizational: adoption pressure is moving beyond individual prompts toward shared context, policy, cost visibility, auditability, and accountability across multiple agents and vendors.",
+      "named_entities": [
+        "JetBrains Air",
+        "Air in JetBrains IDEs",
+        "Air Teams",
+        "Air Governance",
+        "Agent Client Protocol",
+        "Junie"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "JetBrains Air",
+        "Junie",
+        "Agent Client Protocol"
+      ],
+      "local_practice_implication": "Operating-model pages should evaluate agent platforms by coordination, review, governance, cost, context, and accountability controls instead of treating model or agent choice as the whole adoption decision.",
+      "follow_up_notes": "Use only as downstream operating-model evidence; broad product and protocol entity coverage belongs upstream."
+    },
+    {
+      "title": "Best MCP memory servers for teams using AI coding agents",
+      "url": "https://www.getlockstep.dev/blog/best-mcp-memory-servers-teams",
+      "source_type": "practice blog",
+      "visible_date": "September 24, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The post compares MCP memory options by team failure mode, distinguishing small local graphs, human-readable shared notes, hosted semantic recall, temporal graphs, and approved decision records. It proposes a two-agent test that checks whether a changed decision remains current, owned, and traceable across tools.",
+      "why_it_matters": "It gives local context architecture a practical test for whether memory is only storage/search or actually an authoritative team handoff and decision layer.",
+      "named_entities": [
+        "MCP Memory server",
+        "Basic Memory",
+        "Mem0",
+        "Graphiti",
+        "Lockstep",
+        "Claude Code",
+        "Cursor"
+      ],
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Basic Memory",
+        "Mem0",
+        "Graphiti",
+        "Lockstep",
+        "Claude Code",
+        "Cursor"
+      ],
+      "local_practice_implication": "Memory guidance should require scope separation, stale-fact handling, human acceptance, owner/status metadata, and cross-agent retrieval tests before treating memory as team context.",
+      "follow_up_notes": "Potential ingest should avoid a catalog of MCP memory products and focus on the local memory-evaluation test."
+    },
+    {
+      "title": "CLAUDE.md vs agent memory: what each should store",
+      "url": "https://www.getlockstep.dev/blog/claude-md-vs-agent-memory",
+      "source_type": "practice blog",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The post separates stable project instructions, personal auto memory, temporary task handoffs, and shared team decisions. It recommends keeping commands, boundaries, conventions, and hard invariants in repository guidance while keeping secrets, ownerless exceptions, temporary plans, and mutable product or architecture decisions out of static instruction files.",
+      "why_it_matters": "The local wiki already distinguishes durable instructions from task state; this source adds a current public framing for instruction hygiene and decision ownership.",
+      "named_entities": [
+        "CLAUDE.md",
+        "agent memory",
+        "task handoff",
+        "decision record",
+        "Lockstep"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Lockstep"
+      ],
+      "local_practice_implication": "Prompt and instruction pages should treat repository guidance as stable, scoped, reviewable behavior control, and route changing decisions to owner/status records instead of front-loading them into every agent session.",
+      "follow_up_notes": "Good candidate for a downstream lens on instruction-file maintenance and task handoff boundaries."
+    },
+    {
+      "title": "Lumos Launches MCP Governance to Provide Agent Runtime Security",
+      "url": "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "source_type": "vendor blog",
+      "visible_date": "Sep 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Lumos announced MCP Governance for Claude Code and Codex, describing runtime permission checks that decide whether an AI agent action is allowed and block actions when policy denies them.",
+      "why_it_matters": "Although the vendor and product are upstream-owned, the practice signal is local: governed tool access is shifting toward point-of-action permission decisions in agent runtimes.",
+      "named_entities": [
+        "Lumos",
+        "MCP Governance",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Lumos",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "MCP governance guidance should distinguish server registration, tool inventory, approval prompts, and runtime policy enforcement at the moment an agent acts.",
+      "follow_up_notes": "Keep only the governed-MCP practice lens downstream; route product background upstream."
+    },
+    {
+      "title": "Cut AI agent cost and improve accuracy with Code Execution in the Datadog MCP Server",
+      "url": "https://www.datadoghq.com/blog/datadog-code-execution/",
+      "source_type": "vendor engineering blog",
+      "visible_date": "Sep 22, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "Datadog described generally available Code Execution for its MCP Server. Agents use execute_code and search_datadog_sdk to run sandboxed JavaScript, query several Datadog APIs, keep intermediate data in code, filter large responses before returning them to the model, and rely on the trusted MCP service to apply caller permissions while keeping credentials outside the sandbox.",
+      "why_it_matters": "The local practice pattern is a bounded execution substrate for multi-step tool work: deterministic joining, filtering, parallel querying, and intermediate state can move out of model context while preserving permission checks.",
+      "named_entities": [
+        "Datadog",
+        "Datadog MCP Server",
+        "Code Execution",
+        "execute_code",
+        "search_datadog_sdk",
+        "TypeScript client SDK"
+      ],
+      "upstream_owned_entities": [
+        "Datadog",
+        "Datadog MCP Server",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "Tool-call practice should compare conversation-level tool chaining with sandboxed generated-code execution, especially for token cost, evidence minimization, credential isolation, and permission boundaries.",
+      "follow_up_notes": "Focus any ingest on MCP code-execution boundaries rather than a Datadog product page."
+    },
+    {
+      "title": "Rendering huge pull requests in the GitHub Copilot app",
+      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+      "source_type": "engineering blog",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub described rebuilding a pull-request diff surface for a million-line PR with hundreds of inline comments. The post emphasizes bounded lazy measurement, scroll anchoring, structure-first streaming, off-main-thread highlighting, production instrumentation, objective health signals, a mock-server headless probe lane, and an unattended desktop-app autopilot loop.",
+      "why_it_matters": "Agent-generated migrations and broad refactors can create review surfaces that fail under large diffs and many comments; the practice signal is to define measurable review-surface invariants and automate reproduction rather than relying on visual inspection.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "pull requests",
+        "inline review comments",
+        "headless probe lane",
+        "autopilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Review-workflow and application-pattern pages should treat diff review as an inspectable system with performance budgets, runtime probes, and unattended repro loops when AI-assisted changes increase PR scale.",
+      "follow_up_notes": "Potential local follow-up: large-PR review ergonomics and instrumentation for AI-generated migration branches."
+    },
+    {
+      "title": "Qodo's 2026 State of AI Code Quality Report Reveals Growing Verification Challenge as Agentic Development Scales",
+      "url": "https://www.globenewswire.com/de/news-release/2026/09/23/3367496/0/en/qodo-s-2026-state-of-ai-code-quality-report-reveals-growing-verification-challenge-as-agentic-development-scales.html",
+      "source_type": "press release",
+      "visible_date": "September 23, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "Qodo announced a 2026 AI code quality report based on research conducted August 7-14, 2026 with 500 U.S. software developers and 300 U.S. engineering leaders at organizations using AI meaningfully in the SDLC. The release frames agentic-development scale as creating a verification challenge and describes full-repository signals, prior PR decisions, explainable feedback, reduced noise, and organization-specific standards as quality controls.",
+      "why_it_matters": "The local practice signal is adoption-stage pressure: code generation velocity needs matching verification, repository context, prior-decision evidence, and organization-specific standards.",
+      "named_entities": [
+        "Qodo",
+        "2026 State of AI Code Quality Report",
+        "Censuswide",
+        "multi-agent review",
+        "context engineering"
+      ],
+      "upstream_owned_entities": [
+        "Qodo"
+      ],
+      "local_practice_implication": "Verification pages should connect agentic scale to explainable review evidence, repository-wide context, historical PR decisions, and organization-specific quality standards.",
+      "follow_up_notes": "Treat as vendor-sponsored survey evidence; verify details against the full report before turning any statistics into durable wiki claims."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "ADRs for AI coding agents: how to make every agent read architecture decisions",
+      "url": "https://www.getlockstep.dev/blog",
+      "visible_date": "Sep 25, 2026 on blog index",
+      "reason": "Future-dated relative to this run timestamp; excluded even though the topic is locally relevant."
+    },
+    {
+      "title": "Set up a test-driven development flow in VS Code",
+      "url": "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
+      "visible_date": "No visible publication or update date found on opened page",
+      "reason": "Highly relevant AI-assisted TDD workflow, but the opened source page did not display a qualifying in-window publication or update date."
+    },
+    {
+      "title": "Faster C++ code intelligence with whole codebase indexing",
+      "url": "https://github.blog/changelog/2026-09-22-faster-c-code-intelligence-with-whole-codebase-indexing/",
+      "visible_date": "September 22, 2026",
+      "reason": "Relevant code-retrieval signal, but excluded from the qualifying set to avoid over-weighting one vendor's product changelog after stronger governance, review, and context-practice items were selected."
+    },
+    {
+      "title": "OpenAI's GPT-6 Sol and GPT-6 Luna now available",
+      "url": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/",
+      "visible_date": "September 22, 2026",
+      "reason": "Broad model availability update is upstream-owned; no distinct local practice detail beyond model-policy routing."
+    },
+    {
+      "title": "Claude Opus 5.5 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot/",
+      "visible_date": "September 22, 2026",
+      "reason": "Broad model availability update is upstream-owned."
+    },
+    {
+      "title": "Grok 4.7 is now available in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/",
+      "visible_date": "September 21, 2026",
+      "reason": "Outside the two-day cutoff window and broad model availability is upstream-owned."
+    },
+    {
+      "title": "Benchmark Data and Method",
+      "url": "https://aicharts.io/data",
+      "visible_date": "Artificial Analysis coding-agent snapshot retrieved Sep 23, 2026, 3:44 AM UTC",
+      "reason": "Useful evaluation-method artifact, but most content is broad benchmark/model-agent comparison owned upstream; local practice implication was less direct than selected verification and observability sources."
+    },
+    {
+      "title": "Alibaba's Open Code Review: What Enterprises Can Copy from a Deterministic Pipeline Plus LLM Agents",
+      "url": "https://redreamality.com/blog/alibaba-open-code-review-deterministic-pipeline/",
+      "visible_date": "Published on September 23, 2026",
+      "reason": "Relevant secondary practice analysis, but excluded because the primary project/source evidence was not separately verified during this collector run."
+    },
+    {
+      "title": "Adversarial Review: Why Structured Disagreement Beats Consensus in Agentic Code Review",
+      "url": "https://codex.danielvaughan.com/2026/08/30/adversarial-review-structured-disagreement-code-review-codex-cli-multi-agent/",
+      "visible_date": "Published August 30, 2026; updated September 23, 2026",
+      "reason": "Updated in window, but the primary evidence appears to be older paper/workshop material and product-specific Codex CLI wiring; excluded pending primary-source verification."
+    },
+    {
+      "title": "Context Privilege Escalation: What 282 Vulnerable Sources in 12 Coding Agent Harnesses Reveal",
+      "url": "https://codex.danielvaughan.com/2026/09/02/context-privilege-escalation-attacks-ai-agent-harness-codex-cli-m-cpe-x-cpe-security/",
+      "visible_date": "Published September 2, 2026; updated September 23, 2026",
+      "reason": "Potentially relevant harness-security practice, but publication date is stale and the update was not inspected deeply enough to confirm a distinct in-window change."
+    },
+    {
+      "title": "Briefs 838",
+      "url": "https://o16g.com/briefs/",
+      "visible_date": "Wednesday, September 23, 2026",
+      "reason": "Aggregated brief with relevant practice framing, but excluded in favor of direct primary or vendor engineering sources."
+    },
+    {
+      "title": "Semantic Content Does the Text-to-SQL Work; Scaffolding Adds 0 to 15 Points",
+      "url": "https://www.sjarmak.com/digest",
+      "visible_date": "Sep 23, 2026",
+      "reason": "Aggregated digest with potentially relevant agentic-coding eval items, but not used because the collector requires direct public sources for qualifying findings."
+    },
+    {
+      "title": "Building Resilient Systems in the Age of Agentic Development with Antithesis and AWS",
+      "url": "https://somo.social/e/building-resilient-systems-in-the-age-of-agentic-22-september-2026",
+      "visible_date": "Tue, Sep 22, 2026",
+      "reason": "Event listing contains practice-level validation framing, but it is an event promotion rather than a durable source with concrete methods or findings."
+    }
+  ],
+  "search_notes": [
+    "Used public web search only; no private repository content was sent to external services.",
+    "Searched across context engineering, durable instructions, coding-agent memory, MCP governance, sandboxing, tool-call execution, code review configuration, AI-assisted TDD, review-surface instrumentation, software engineering evals, adoption governance, and agent observability.",
+    "Kept broad ecosystem and product details as upstream-owned where applicable.",
+    "Collector remained raw-only and did not update docs/wiki pages or raw/processed."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
