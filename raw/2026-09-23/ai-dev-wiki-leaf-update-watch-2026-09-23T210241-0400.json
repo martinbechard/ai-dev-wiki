@@ -1,0 +1,355 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-24T01:02:41Z",
+  "run_timestamp_local": "2026-09-23T21:02:41-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-17T01:02:41Z",
+    "end_utc": "2026-09-24T01:02:41Z",
+    "policy": "Only public sources published or visibly updated within the last 7 days relative to run time qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+  ],
+  "source_urls_checked": [
+    "https://mindpattern.ai/briefings/2026-09-21",
+    "https://qwenlm.github.io/qwen-code-docs/en/blog/updates/weekly-update-2026-09-17/",
+    "https://freedom.tech/posts/2026-09-19-qwen-code-0-24-1/",
+    "https://github.com/QwenLM/qwen-code/blob/main/docs/users/features/sub-agents.md",
+    "https://www.memorylake.ai/en/blogs/qwen-code-extension-context-attribution",
+    "https://arxiv.org/abs/2609.20050",
+    "https://thalesgroup.github.io/agilab/agent-workflows.html",
+    "https://codex.danielvaughan.com/2026/05/04/terminal-agent-showdown-codex-cli-claude-code-gemini-cli-may-2026/",
+    "https://openai.github.io/openai-agents-js/guides/agents/",
+    "https://meet.modelcontextprotocol.io/2026/09/mcp-progressive-disclosure-working-group-z0v8ilOZDnmM",
+    "https://arxiv.org/abs/2609.04681",
+    "https://docs.databricks.com/aws/en/agents/custom-agents/multi-agent-apps",
+    "https://codingagentguide.com/posts/coding-agent-lifecycle-hooks-policy-enforcement/",
+    "https://www.fuller-smith.co.uk/news/20260914hookpryshowsaiagentlifecyclehooksareawideopenattacksurface/",
+    "https://github.com/aws-samples/sample-codex-agent-team"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "id": "qwen-weekly-external-subagents-and-workflow-caps-2026-09-17",
+      "source_url": "https://qwenlm.github.io/qwen-code-docs/en/blog/updates/weekly-update-2026-09-17/",
+      "published_or_updated_at": "2026-09-17",
+      "visible_date_evidence": "Qwen Code weekly page shows 2026-09-17 and describes three stable releases shipped that week.",
+      "factual_summary": "Qwen Code added built-in handoff to Claude Code and Codex subagents, named workflow execution, message-level token caps, run structure previews, subagent thinking depth/tool restrictions, permission rebinding to exact workflow versions, goal turn/time caps, context accounting, and cross-session messaging.",
+      "why_it_matters_for_leaf": "Local workflow pages should watch whether terminal-agent orchestration practice is moving toward explicit subagent launch contracts, foreground permission visibility, bounded goals, and pre-run dispatch previews.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "named_entities": [
+        "Qwen Code",
+        "Claude Code",
+        "Codex",
+        "ACP",
+        "Qwen Team"
+      ],
+      "upstream_owned_entities": [
+        "Qwen Code",
+        "Claude Code",
+        "Codex",
+        "ACP"
+      ],
+      "follow_up_note": "Consider whether local handoff guidance should separate external-agent executor contracts, foreground permission surfacing, and bounded workflow previews."
+    },
+    {
+      "id": "qwen-code-subagent-tool-allowlists-2026-09-19",
+      "source_url": "https://freedom.tech/posts/2026-09-19-qwen-code-0-24-1/",
+      "published_or_updated_at": "2026-09-19",
+      "visible_date_evidence": "Release page shows Sat, Sep 19, 2026 and lists the v0.24.1 changes.",
+      "factual_summary": "Qwen Code v0.24.1 added explicit per-subagent tool allowlists, hook invocation progress metadata, configurable external memory providers, browser automation, workflow checkpointing, and named workflow locks.",
+      "why_it_matters_for_leaf": "Subagent coordination and lifecycle-hook leaves should treat tool scope, hook state, and checkpoints as first-class runtime controls rather than prompt-only conventions.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ],
+      "named_entities": [
+        "Qwen Code",
+        "Playwright",
+        "Mem0",
+        "OpenAI API"
+      ],
+      "upstream_owned_entities": [
+        "Qwen Code",
+        "Playwright",
+        "Mem0",
+        "OpenAI API"
+      ],
+      "follow_up_note": "If ingested, keep broad Qwen release detail upstream and retain only the local least-privilege subagent practice implication."
+    },
+    {
+      "id": "qwen-subagent-allowlist-docs-and-mcp-tool-scope-2026-09-23",
+      "source_url": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/features/sub-agents.md",
+      "published_or_updated_at": "visibly current in 2026-09-24 crawl; paired with 2026-09-19 release and Qwen docs updates",
+      "visible_date_evidence": "The public docs now describe allowlist/blocklist semantics for subagent tools and MCP tool patterns; direct page lacks a visible standalone publication date, so this is tied to the Sep 19 release source rather than counted as a separate release date.",
+      "factual_summary": "The sub-agent documentation says an explicit tools list restricts a subagent to named tools, applies to deferred tool discovery/invocation bridges, and MCP tools must be named explicitly when the subagent has a tools list.",
+      "why_it_matters_for_leaf": "Progressive tool discovery guidance should distinguish discovering tools from granting bridge invocation authority, especially for child agents.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": [
+        "Qwen Code",
+        "MCP",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Qwen Code",
+        "MCP",
+        "Claude Code"
+      ],
+      "follow_up_note": "Ingest only if paired with the Sep 19 release evidence; do not treat the undated GitHub page alone as a qualifying dated update."
+    },
+    {
+      "id": "agent-coordination-and-permission-scoping-briefing-2026-09-21",
+      "source_url": "https://mindpattern.ai/briefings/2026-09-21",
+      "published_or_updated_at": "2026-09-21",
+      "visible_date_evidence": "Briefing title/date is September 21, 2026.",
+      "factual_summary": "The briefing reports terminal-agent movement toward durable local coordination infrastructure, subagent permission scoping as dispatch-time policy, Qwen Code per-subagent tool allowlists, Qwen context-file attribution, and Codex-side changes around child-thread elicitation and structured temporary threads.",
+      "why_it_matters_for_leaf": "The local practice implication is that agent coordination should be auditable, durable, permission-scoped, and attributable by context source rather than hidden inside prompts or in-memory handoffs.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "named_entities": [
+        "Codex",
+        "Qwen Code",
+        "MCP",
+        "LocalAgentMessageBoard"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Qwen Code",
+        "MCP"
+      ],
+      "follow_up_note": "Route broad product specifics upstream; local page should capture the dispatch-time permission and durable coordination pattern."
+    },
+    {
+      "id": "qwen-extension-context-attribution-2026-09-21",
+      "source_url": "https://www.memorylake.ai/en/blogs/qwen-code-extension-context-attribution",
+      "published_or_updated_at": "2026-09-21",
+      "visible_date_evidence": "Article header shows News September 21, 2026 and cites Qwen Code v0.24.2 shipped September 20, 2026.",
+      "factual_summary": "Qwen Code v0.24.2 exposed extension ownership in /context detail and added path-conditional instruction rules so file-specific guidance can load only when relevant, with the article quoting Qwen guidance that extension context files are concatenated into every active session request.",
+      "why_it_matters_for_leaf": "Rules and knowledge layers should preserve provenance and cost attribution, and prefer conditional loading for narrow guidance over always-loaded instruction files.",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "named_entities": [
+        "Qwen Code",
+        "MemoryLake"
+      ],
+      "upstream_owned_entities": [
+        "Qwen Code",
+        "MemoryLake"
+      ],
+      "follow_up_note": "Useful local implication for context-governance pages: attribute context cost by provider/extension and move narrow rules behind path conditions."
+    },
+    {
+      "id": "serbench-minimal-sufficient-evidence-2026-09-17",
+      "source_url": "https://arxiv.org/abs/2609.20050",
+      "published_or_updated_at": "2026-09-17T10:56:47Z",
+      "visible_date_evidence": "arXiv page shows Date: Thu Sep 17 10:56:47 2026.",
+      "factual_summary": "The paper introduces state-conditioned minimal sufficient evidence recovery for coding agents and SERBench, arguing retrieval should recover the evidence set a current decision lacks rather than rerank passages by standalone similarity.",
+      "why_it_matters_for_leaf": "Code retrieval evidence guidance should emphasize sufficiency of the set of sources for the current agent decision, not only relevance ranking for individual chunks.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "named_entities": [
+        "SERBench",
+        "MSS-Complement",
+        "Qwen3-Embedding-8B",
+        "Qwen3-Reranker-8B",
+        "AMA-Bench"
+      ],
+      "upstream_owned_entities": [
+        "SERBench",
+        "MSS-Complement",
+        "Qwen"
+      ],
+      "follow_up_note": "If ingested, make the local page about retrieval sufficiency practice and evaluation gates, not a broad benchmark encyclopedia entry."
+    },
+    {
+      "id": "agilab-repo-ready-agent-workflows-2026-09-21",
+      "source_url": "https://thalesgroup.github.io/agilab/agent-workflows.html",
+      "published_or_updated_at": "2026-09-21 visible docs release/build label",
+      "visible_date_evidence": "Search result exposed Current release v2026.09.21_1 and docs build v2026.09.21_1; opened page describes repo-ready workflow conventions.",
+      "factual_summary": "The AGILab docs describe a repository-ready path for Codex, Claude, Aider, and OpenCode, and frame readiness as committed wrappers/configuration/conventions for each agent path rather than ad hoc setup.",
+      "why_it_matters_for_leaf": "Agent environment readiness and terminal-agent workflow pages can use this as practice evidence for repository-owned entry paths that normalize multiple agent tools while preserving tool differences.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "named_entities": [
+        "AGILab",
+        "Codex",
+        "Claude",
+        "Aider",
+        "OpenCode"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude",
+        "Aider",
+        "OpenCode"
+      ],
+      "follow_up_note": "Local implication is repo-readiness as configuration and workflow convention, not product comparison."
+    },
+    {
+      "id": "terminal-agent-showdown-updated-2026-09-23",
+      "source_url": "https://codex.danielvaughan.com/2026/05/04/terminal-agent-showdown-codex-cli-claude-code-gemini-cli-may-2026/",
+      "published_or_updated_at": "2026-09-23 visible updated date",
+      "visible_date_evidence": "Opened page shows May 4, 2026 and Updated September 23, 2026.",
+      "factual_summary": "The updated comparison frames Codex CLI, Claude Code, and Gemini CLI as similar user-facing terminal agents with materially different runtimes, sandbox posture, API stacks, model defaults, and context windows.",
+      "why_it_matters_for_leaf": "Terminal-agent workflow and environment-readiness guidance should evaluate runtime/sandbox/API posture explicitly when choosing between compose/build or handoff patterns.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md"
+      ],
+      "named_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI",
+        "Anthropic",
+        "Google"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "Claude Code",
+        "Gemini CLI",
+        "OpenAI",
+        "Anthropic",
+        "Google"
+      ],
+      "follow_up_note": "Treat as secondary practice source; verify product-specific claims against upstream/vendor sources during ingest."
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://meet.modelcontextprotocol.io/2026/09/mcp-progressive-disclosure-working-group-z0v8ilOZDnmM",
+      "reason": "future_dated_after_run_time",
+      "visible_date": "2026-09-28",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ]
+    },
+    {
+      "source_url": "https://openai.github.io/openai-agents-js/guides/agents/",
+      "reason": "no_visible_publication_or_update_date_on_opened_page",
+      "visible_date": null,
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2609.04681",
+      "reason": "published_before_cutoff_window",
+      "visible_date": "2026-09-04T03:16:30Z",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.databricks.com/aws/en/agents/custom-agents/multi-agent-apps",
+      "reason": "last_updated_before_cutoff_window",
+      "visible_date": "2026-09-11",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ]
+    },
+    {
+      "source_url": "https://codingagentguide.com/posts/coding-agent-lifecycle-hooks-policy-enforcement/",
+      "reason": "last_reviewed_before_cutoff_window",
+      "visible_date": "2026-09-01",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ]
+    },
+    {
+      "source_url": "https://www.fuller-smith.co.uk/news/20260914hookpryshowsaiagentlifecyclehooksareawideopenattacksurface/",
+      "reason": "published_before_cutoff_window",
+      "visible_date": "2026-09-14",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ]
+    },
+    {
+      "source_url": "https://github.com/aws-samples/sample-codex-agent-team",
+      "reason": "no_visible_publication_or_update_date_on_opened_page",
+      "visible_date": null,
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2609.12190",
+      "reason": "published_before_cutoff_window",
+      "visible_date": "2026-09-10T20:28:38Z",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ]
+    }
+  ],
+  "federation_routing": {
+    "upstream_owner": "AI wiki",
+    "local_owner": "AI-assisted development practice lens",
+    "rule": "Broad product, model, protocol, and company background remains upstream-owned; this artifact preserves only local-practice implications for selected leaves."
+  },
+  "follow_up_notes": [
+    "Prioritize local practice implications around explicit subagent tool scope, workflow previews, turn/time/token caps, context provenance, and retrieval evidence sufficiency.",
+    "Verify secondary-source product claims against vendor or repository sources during any later ingest.",
+    "Do not update docs/wiki pages from this watch artifact; normal raw ingest owns synthesis and processed moves."
+  ]
+}
