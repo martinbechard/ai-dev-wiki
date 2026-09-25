@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The September 25 raw sources add governance and review-load operating evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces that agent adoption agreements need autonomy tiers, escalation paths, runtime records, budget limits, workstation package controls, and explicit review-toil ownership. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds review-effort defaults, sandbox policy, proof-of-presence boundaries, and verification bottlenecks as team-level agreements rather than individual preference.
+
 Adoption operating agreements define how humans and agents work together as AI-assisted development scales. The agreement is a map of local practice boundaries rather than a substitute for the detailed leaves.
 
 The local agreement starts with [workflow before model selection](workflow-before-model-selection.md), keeps [human approval boundaries](human-agent-approval-boundaries.md) explicit, stores stable procedure in [durable instructions and skill files](durable-instructions-and-skill-files.md), and uses [tier-specific assistant conventions](tier-specific-assistant-conventions.md) when work areas need different context or checks.
@@ -64,6 +66,9 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Practice Boundaries
 
+- Make autonomy tier, runtime evidence, escalation path, budget limit, sandbox policy, proof-of-presence boundary, and review-effort default explicit team agreements.
+- Assign ownership for review toil, verification bottlenecks, workstation controls, and generated-code standards checks before expanding agent usage.
+
 - Keep this page as the operating-agreement map for the folder.
 - Put reusable practice detail in the durable leaves.
 - Keep ecosystem product comparisons upstream unless they directly change the local operating rule.
@@ -94,6 +99,9 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Require barrier discovery, coordination-layer design, cost/risk controls, and foundation checks before scaling agent automation.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
@@ -147,6 +155,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with autonomy-tier, escalation, runtime evidence, budget, sandbox, proof-of-presence, review-load, and verification-bottleneck evidence.
 
 - Maintained on 2026-09-18 with trust-calibrated agent language, anti-anthropomorphism, staged adoption, coordination-layer, and cost/risk-control evidence.
 - Maintained on 2026-08-29 with workflow-redesign, institutional skill ownership, reviewer-fatigue, collaboration-health, workspace-layer, and prototype-to-deployment trust fields.

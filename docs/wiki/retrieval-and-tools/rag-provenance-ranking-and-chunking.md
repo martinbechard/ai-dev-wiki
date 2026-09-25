@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds knowledge-gap canary evidence. Retrieval quality gates should include absent-answer probes that require abstention or uncertainty when source evidence is missing, because answer accuracy on present evidence does not prove the system will avoid fabricating over retrieval gaps.
+
 RAG retrieves context before the request so the model can answer from supplied evidence instead of relying on training data alone. The local practice includes full-text search, semantic search, vector storage, filters, chunk metadata, and reranking when first-stage retrieval returns noisy or overlapping candidates.
 
 Chunking is a source-shape decision. Policies, code, transcripts, slides, and tickets need different boundaries because a chunk that separates a claim from its explanation can stop grounding from working. Reranking is useful when broad retrieval finds plausible but poorly targeted passages, but it adds latency and cost.
@@ -47,6 +49,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+- Add absent-answer canaries to RAG evaluation alongside source-span attribution, ranking, chunking, and answer-quality checks.
+- Preserve paper, code, prompt, and log provenance for retrieval-gap tests so future agents can reproduce the absence behavior instead of trusting anecdotal failures.
+
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
 - Use semantic search to find nearby meanings when exact wording is unknown.
 - Store source text, document IDs, chunk metadata, permissions, and filters with retrieved records.
@@ -78,6 +83,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Preserve the path from original source span to chunk, compressed summary, generated answer, and final citation when compression is part of the RAG pipeline.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
@@ -123,6 +130,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with knowledge-gap canary and abstention-test evidence.
 
 - Created on 2026-06-23 to hold RAG quality, provenance, chunking, and reranking practice.
 - Maintained on 2026-06-26 with trace-linked retrieval provenance and engineering-memory context.

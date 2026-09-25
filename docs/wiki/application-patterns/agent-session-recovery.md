@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds managed-runtime pause, resume, fork, checkpoint, conversation-history, and working-state evidence. Session recovery should verify the runtime state that will be restored, the checkpoint or fork point used, the permission and credential envelope that survives resume, and the artifacts proving the resumed agent continued the intended task rather than merely restarting with a plausible summary.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-tool session recovery evidence. A recovered session should prove not only that text context transferred, but also that referenced attachments, local files, generated artifacts, and provenance anchors are still present or explicitly missing before work continues.
 
 Agent session recovery preserves enough durable state for a long-running agent workflow to resume without trusting a chat summary. The recovery surface should include startup continuity checks, progress cursors, last material outputs, generated artifacts, verification evidence, and unresolved blockers.
@@ -39,6 +41,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+- Preserve checkpoint, fork, conversation-history, working-state, approval-policy, and credential-scope evidence before resuming a managed coding-agent session.
+- Treat pause or fork APIs as recovery surfaces that need source-of-truth state checks, not as proof that the recovered agent still has correct context.
+
 - Mark transferred-but-missing attachments and local files as recovery blockers or rehydration tasks rather than assuming transcript context is complete.
 
 - Run startup continuity checks before resuming from a persistent workspace or durable session record.
@@ -57,6 +62,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Preserve coordinator state, shared goals, shared file artifacts, per-thread branches or repository copies, overlap detection, and merge-conflict review evidence before resuming or merging coordinated agent work.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -96,6 +103,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with managed-runtime pause/resume/fork, checkpoint, and working-state evidence.
 
 - Maintained on 2026-09-19 with cross-tool session-transfer, attachment-rehydration, and provenance-check guidance.
 - Maintained on 2026-08-29 with interrupted-session restore, cross-application continuation, permission-mode, tool-configuration, and review-evidence recovery guidance.

@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The September 25 raw sources add runtime-control and developer-workstation evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces that production agent governance needs runtime controls, immutable action records, autonomy tiers, escalation paths, cost limits, containment, and workstation/package controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds proof-of-presence and local sandbox signals: high-impact repository actions, token creation, webhook edits, credentials, network access, and filesystem reach need explicit freshness, human-presence, and fail-closed policy evidence.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds provider-neutral agent control-plane evidence. Governance infrastructure should support first-class agent identity, lifecycle stage, suspension, revocation, sandbox placement, role-based access, token exchange, MCP interaction controls, and operational oversight independently of the agent framework or model route.
 
 Agent governance works best as infrastructure around the model loop. Policies for identity, authorization, allowed actions, monitoring, audit, rate limits, and accountability need to be enforced by the harness, gateway, platform, or tool server so the boundary still holds when a prompt, retrieved document, or generated action is hostile or mistaken.
@@ -95,6 +97,10 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+- Treat human-presence checks, action freshness, autonomy tier, budget limit, escalation path, containment path, and immutable decision/action records as governance infrastructure for production agents.
+- Apply workstation and local-sandbox controls to package installs, MCP servers, generated code, filesystem access, network access, Git credentials, and GitHub CLI credentials before repository changes leave the developer environment.
+- Fail closed when the host cannot enforce the requested sandbox or credential boundary.
+
 - Keep lifecycle state, suspension, revocation, sandbox assignment, delegated authority, and MCP interaction policy as infrastructure records rather than prompt-only instructions.
 
 - Give each agent, workflow, and tool surface a clear identity and allowed-action set.
@@ -180,6 +186,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
@@ -277,6 +286,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with runtime governance, proof-of-presence, workstation control, local sandbox, and fail-closed evidence.
 
 - Maintained on 2026-09-19 with provider-neutral agent-manager, lifecycle, revocation, sandbox, delegated-authority, and MCP-governance infrastructure evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, delegated-authority proof, tamper-evident evidence, sovereignty, and incident-reporting routing evidence; next check should keep anomaly reporting in the focused incident leaf.

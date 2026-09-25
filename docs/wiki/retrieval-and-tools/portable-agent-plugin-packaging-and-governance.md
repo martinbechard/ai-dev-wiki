@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds Plugin4Shell-style SHA-pin bypass evidence and workstation governance. Portable plugin packages need provenance, approved source, manifest validation, allowed tools, and post-checkout commit-object verification; a recorded pin is not sufficient if the runtime can resolve or checkout a different commit than the intended SHA.
+
 Portable agent plugin packaging governs how reusable skills, MCP servers, manifests, and client-specific extensions travel across agent clients. The [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md) records the local classification rule: Agent Plugins packaging is broader than MCP. MCP servers are one portable component inside the package, while skills, manifests, installation, distribution, permissions, authentication, and client-specific extensions need their own review.
 
 The August 12 raw sources add public adoption evidence without moving broad standard ownership into this wiki. The [topic news collector source](../../../raw/processed/2026-08-12/ai-dev-wiki-topic-news-collector-2026-08-12T203213-0400.json) and [leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) record Agent Plugins support across several client surfaces, with shared packages, plugin manifests, skills, MCP server configuration, managed settings, allowlists, marketplace installation, and client-specific namespaces. Broad Agent Plugins, GitHub Copilot, VS Code, Google, Vercel, OpenAI, Microsoft, AWS, and Anysphere coverage belongs upstream; locally, the practice is to review the package as a capability bundle before it enters a development workflow.
@@ -33,6 +35,9 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 
 ## Practice Boundaries
 
+- Verify the checked-out commit object against the intended pinned SHA after clone or checkout, and record that comparison as plugin intake evidence.
+- Apply release-age cooldowns, known-malicious package blocks, MCP server guardrails, prompt/file-read guardrails, and generated-code security checks before reusable plugins can alter agent authority.
+
 - Treat the plugin manifest as a governed capability declaration, not only install metadata.
 - Review bundled skills, MCP server declarations, client-specific extension folders, marketplace source, managed settings, and allowlist requirements before installation.
 - Keep portable components separate from client-specific behavior so teams know which parts should work across clients and which parts depend on one agent surface.
@@ -50,6 +55,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Validate inferred metadata, tool registration, hosted MCP exposure, private library provenance, batch-run caps, and package contents before treating a portable skill or plugin as reusable team infrastructure.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md)
@@ -94,6 +101,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 - Should the upstream AI wiki create a broad Agent Plugins specification entity page so this local practice leaf can link to an upstream owner?
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with post-checkout SHA verification, workstation package controls, and plugin-governance evidence.
 
 - Maintained on 2026-09-20 with deterministic skill validation, metadata inference, tool-registration, hosted-MCP, private-library, and batch-run cap evidence.
 - Maintained on 2026-09-01 with Agent Plugins 1.0 compatibility, managed marketplace, private-repository authentication, reusable review-skill, and update-policy evidence.

@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds local sandbox and persistent-drive evidence. Coding-agent readiness should expose project-level filesystem, network, Git credential, and CLI credential policy before work starts, and should distinguish writable session state from read-only snapshots when persistent drives are shared across review or test sandboxes.
+
 Agent environment readiness treats the execution substrate, setup state, secrets boundary, and restart behavior as first-class workflow design inputs. A coding agent cannot be evaluated only by prompt quality when its computer, dependencies, credentials, network posture, and durable files determine what it can safely do.
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds a fast-start environment signal: teams should capture setup latency, dependency availability, secret isolation, long-job durability, restart semantics, and build-versus-buy criteria before treating an agent workflow as reliable. Broad platform and vendor identities stay upstream-owned; this page owns the downstream readiness checklist.
@@ -36,6 +38,10 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 
 ## Practice Boundaries
 
+- Check filesystem, outbound internet, local network, Git credential, and CLI credential policies before launching local coding-agent work.
+- Separate writable agent workspace state from read-only review or test snapshots when persistent storage is mounted into multiple sandboxes.
+- Treat fail-closed sandbox enforcement as an environment-readiness requirement.
+
 - Define the runtime boundary before agents receive file, shell, network, package, or credential access.
 - Record setup commands, dependency caches, environment variables, and known host assumptions when they affect reproducibility.
 - Scope secrets to the task and keep secret availability separate from general workspace access.
@@ -54,6 +60,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Compare CLI and IDE agent readiness by setup wrapper, sandbox default, execution locality, model/API stack, context limit, and runtime permission behavior before routing work.
 
 ## Authoritative Sources
+
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
@@ -93,6 +101,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with local sandbox policy, credential scope, persistent-drive, and read-only snapshot evidence.
 
 - Created on 2026-07-30 from public evidence about fast-start coding-agent environments, secret isolation, long-job durability, and managed-versus-custom substrate selection.
 - Maintained on 2026-07-31 with sponsored runtime-placement, privacy, local-capacity, and cost-per-outcome readiness signals.

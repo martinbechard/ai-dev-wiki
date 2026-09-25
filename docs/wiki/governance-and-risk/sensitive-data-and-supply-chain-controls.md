@@ -91,6 +91,8 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 
 The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds package-security execution-surface evidence. Locally, generated helper scripts, tests, package output, and local import paths are supply-chain surfaces when a coding agent executes them. Test output can carry instruction-like text, and module shadowing can make a generated helper import malicious local code while producing plausible results.
 
+The September 25 raw sources add workstation, plugin, and sandbox controls. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) records release-age cooldowns, known-malicious package blocking, plugin SHA post-checkout verification, MCP server guardrails, prompt/file-read guardrails, and generated-code security as developer-workstation controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds local sandbox settings for filesystem reach, outbound internet, local network access, Git credentials, and GitHub CLI credentials.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -164,6 +166,9 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - Apply Zero Trust controls to agent prompts, generated outputs, tool calls, internal APIs, customer-contract text, and source-code snippets when they can cross model, plugin, MCP, or hosted-agent boundaries.
 - Validate skill and plugin metadata, tool registrations, hosted MCP exposure, private-skill provenance, and batch-run authority before reusable agent packages enter team workflows.
 - Treat generated helper scripts, test output, local import paths, and module names as execution surfaces; require controlled import paths, restricted execution environments, provenance checks, and skepticism toward instructions emitted by package or test output.
+- Treat developer workstations as supply-chain enforcement points for coding agents: apply release-age cooldowns, malicious-package blocks, plugin provenance checks, MCP guardrails, prompt/file-read controls, and generated-code security before repository review.
+- Verify plugin SHA pins after checkout by comparing the resolved commit object to the intended pinned SHA; pin metadata alone is not enough evidence.
+- Require project-level sandbox policy for filesystem, network, Git credential, and CLI credential access, and fail closed when the host cannot enforce it.
 
 ## Authoritative Sources
 
@@ -178,6 +183,8 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
@@ -257,6 +264,7 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.
 - Maintained on 2026-09-23 with generated-helper, test-output, local-import-path, module-shadowing, and restricted-execution supply-chain evidence.
 - Maintained on 2026-09-20 with Zero Trust prompt, source-code, internal-API, generated-output, skill-package validation, hosted-MCP, and batch-run governance evidence.
 - Maintained on 2026-09-08 with dependency-bot package access, personal-token reduction, community-agent component intake, provenance, assessment, expert review, and deployment-approval evidence.

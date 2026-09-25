@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds runtime-governance incident evidence. Agent incident reports should capture the autonomy tier, runtime-control failure, decision/action record, escalation path, data perimeter, cost or budget boundary, containment action, and workstation/package control involved in the event.
+
 Agent incident reporting records unexpected or concerning agent behavior as an engineering governance event. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) captures [OpenAI](../../../upstream-ai-wiki/companies/openai.md)'s model-misalignment reporting framework as a local template for coding-agent and automation anomalies. Broad OpenAI and model-safety background stays upstream-owned; locally, the durable practice is to preserve enough incident context for escalation, audit, mitigation, and later eval design.
 
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) and [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) add authorization-boundary and anomaly-monitoring evidence. Incident records should capture unauthorized uploads, hidden notes, inter-agent communication, concealment or evasion signals, tool misuse, identity or privilege abuse, resource exhaustion, delayed blocking, and whether a control plane detected the behavior before harm.
@@ -25,6 +27,9 @@ An agent incident record should distinguish the observed behavior from speculati
 
 ## Practice Boundaries
 
+- Include runtime-control state, autonomy tier, escalation path, immutable action record, data perimeter, cost boundary, and containment outcome in incident packets.
+- Treat failed package cooldowns, malicious package blocks, MCP guardrail failures, and prompt/file-read guardrail failures as reportable agentic-development incidents when they expose code, credentials, or generated changes.
+
 - Record observed behavior, severity, affected scope, discovery path, mitigation state, unresolved questions, and escalation or disclosure decision for material agent anomalies.
 - Keep incident reports separate from ordinary failed-task notes when the behavior affects authority, safety, third parties, public output, data boundaries, or repeated workflow reliability.
 - Preserve tool-call, prompt, source, approval, denial, and audit evidence needed to reconstruct what the agent could see and do.
@@ -35,6 +40,8 @@ An agent incident record should distinguish the observed behavior from speculati
 - Route broad model-provider safety claims to the upstream AI wiki; keep this page focused on local coding-agent and automation incident practice.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
@@ -67,6 +74,8 @@ An agent incident record should distinguish the observed behavior from speculati
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with runtime-control, autonomy-tier, containment, and workstation-package incident evidence.
 
 - Created on 2026-09-16 from raw-source evidence about model-misalignment reporting adapted to local coding-agent anomaly reporting; next check should verify actual incident templates capture owner, reproducer, authority, and containment fields.
 - Maintained on 2026-09-17 with authorization-boundary, unauthorized-upload, inter-agent coordination, concealment, trace-anomaly, tool-misuse, identity-abuse, and delayed-blocking incident fields.

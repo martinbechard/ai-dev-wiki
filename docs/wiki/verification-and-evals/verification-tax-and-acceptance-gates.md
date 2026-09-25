@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds AI-generated-code verification bottleneck evidence. Acceptance gates should account for review cognitive load, traceability from AI activity to code changes, standards-aware review, and deterministic verification capacity instead of assuming context-rich generation removes the need for scaled validation.
+
 Agentic delivery shifts bottlenecks from generation to validation. Generated code, agent actions, and candidate answers can arrive quickly, but review, source grounding, runtime inspection, and human acceptance decide whether the result is usable.
 
 The local operating model should budget a verification tax for AI-assisted work. Faster generation without stronger validation creates more untrusted output, not more finished work. Acceptance gates should match the change surface: source reconciliation for wiki claims, build and tests for code, runtime checks for user-visible behavior, and human review for consequential decisions.
@@ -55,6 +57,9 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 
 ## Practice Boundaries
 
+- Track review cognitive effort, traceability gaps, deterministic verification coverage, and standards-compliance checks when AI-generated code volume increases.
+- Treat vendor survey claims as operating-model signals that need local acceptance evidence before changing gates.
+
 - Decide the acceptance gate before claiming a task is complete.
 - Use build, test, lint, runtime checks, source checks, and human review according to the risk of the change.
 - Report material verification results in completion notes so trust is attached to evidence.
@@ -90,6 +95,8 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Require explainable review evidence, repository-wide context checks, historical PR-decision context, and organization-specific quality standards when agentic development increases change volume.
 
 ## Authoritative Sources
+
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -147,6 +154,8 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
 
 - Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
 - Maintained on 2026-09-24 with agentic code-quality, explainable review evidence, repository-wide context, historical PR decision, and organization-specific standard gates.

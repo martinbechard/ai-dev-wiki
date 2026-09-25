@@ -87,6 +87,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds cloud multi-agent thread and enterprise control-plane evidence. Harness components should make coordinator state, shared goals, file artifacts, per-thread branches, merge-conflict handling, lifecycle management, behavior telemetry, identity policy, model routing, performance evaluation, outcome monitoring, and cost controls visible as runtime surfaces. Local-agent runtimes should also expose prerequisite checks, scheduled-task governance, update integrity, and desktop MCP permission review before they act on local applications.
 
+The September 25 raw sources add managed-runtime and security-taskflow evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) frames harness runtime as microVM-backed state, permissions, approvals, checkpoints, credentials, and pause/resume/fork APIs; broad product and framework identities stay upstream. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds a fuzzing taskflow pattern where prompts coordinate entrypoint analysis, build inspection, harness generation, coverage, crash triage, and reports while MCP tools execute high-risk commands in disposable environments.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -152,6 +154,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Optimize tool output and context size against accepted task completion, not only local token counts or individual call cost.
 - Expose coordinator state, shared goals, file artifacts, per-thread branch provenance, merge-conflict review state, lifecycle controls, behavior telemetry, identity policy, and cost controls when a harness coordinates multiple coding-agent threads.
 - Separate cloud credits, local runtime prerequisites, scheduled-task permissions, update-integrity checks, and desktop MCP grants when a local agent runtime can operate on workstation applications.
+- Treat managed-runtime state, approval policy, checkpoint history, credentials, and pause/resume/fork semantics as harness-owned evidence for durable coding-agent work.
+- Keep security-taskflow prompting separate from tool execution evidence: build, fuzz, coverage, crash triage, and report artifacts should be inspectable outside the model transcript.
 
 ## Authoritative Sources
 
@@ -216,6 +220,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 ## Related Code
 
@@ -248,6 +254,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-25 with managed-runtime state, checkpoint, approval-policy, and security-taskflow evidence.
 - Maintained on 2026-09-08 with bounded orchestration, complete-task efficiency, isolated review, cancellation, and fail-safe patch evidence.
 - Maintained on 2026-08-31 with agent-loop, context, tool, state, permission, feedback, sandbox, observability, provenance, runtime-dependency, and concurrent-session isolation evidence.
 - Maintained on 2026-08-29 with model-harness, durable-runtime, capability-metadata, high-impact tool, safety-eval, trace, cost, and recovery components.

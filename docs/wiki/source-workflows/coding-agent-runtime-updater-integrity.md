@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds plugin-checkout integrity evidence. Runtime updaters and plugin installers should not treat a requested ref, tag, or recorded SHA as final proof; after checkout they should compare the resolved HEAD commit object to the intended pinned SHA and fail closed when they differ.
+
 Coding agent runtime updater integrity keeps automated runtime refreshes reproducible, verifiable, and bounded by human control for security-sensitive patches. The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) records an updater log that regenerates version-coupled artifacts, verifies a signed manifest, fails closed when expected markers are missing, and leaves a security-relevant byte-patch target manual. Broad runtime and package-manager background stays upstream; locally, this page owns the updater-integrity workflow.
 
 The local rule is to automate repeatable regeneration while making trust checks deterministic. Signed manifests, exact marker checks, generated-artifact diffs, and fail-closed behavior prevent an updater from silently rewriting prompts, wrappers, runtime metadata, or binary patch targets beyond its verified scope.
@@ -18,6 +20,9 @@ The [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-de
 The August 25 raw sources add deprecation and version-freshness evidence. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) records a deprecated Codex MCP server command in favor of an app server, and the [afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json) records field-guide practice that separates official release freshness from locally checked versions, permission envelopes, and benchmark coverage. Locally, runtime updater records should keep command entry points, supported replacement paths, official source versions, local installed versions, permission envelopes, and unresolved benchmark claims separate before changing team setup instructions.
 
 ## Practice Boundaries
+
+- Compare the post-checkout commit object with the intended pinned SHA for plugin and runtime update material.
+- Record the trusted source, requested ref, resolved commit, checkout command, and fail-closed outcome when integrity evidence fails.
 
 - Regenerate version-coupled runtime artifacts from a declared source version and preserve the generated diff.
 - Verify signed manifests or equivalent provenance before accepting runtime artifacts.
@@ -30,6 +35,8 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 - Separate official release freshness, locally checked version, permission envelope, and benchmark evidence in runtime selection or updater ledgers.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [August 16 leaf update watch source](../../../raw/processed/2026-08-16/ai-dev-wiki-leaf-update-watch-2026-08-16T210208-0400.json)
@@ -63,6 +70,8 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with post-checkout pinned-SHA verification evidence.
 
 - Created on 2026-07-27 from July 27 raw-source evidence about signed-manifest runtime updates, exact-marker checks, fail-closed behavior, and manual security-sensitive patches.
 - Maintained on 2026-08-16 with public skill, MCP manifest, setup-script, wrapper-prompt, provenance, and quarantine checks for runtime updater inputs.

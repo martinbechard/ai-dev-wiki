@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds RAG absence and production-observability evidence. Agent eval diagnosis should test whether retrieval systems abstain when evidence is absent, not only whether they answer when evidence is present, and should join completed-task evaluation with traceable tool authorization, reliability, cost, latency, and quality signals.
+
 Agent eval failure diagnosis separates reasoning, action, execution, and final-state failures before changing prompts, tools, or models. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) records practice guidance for agent evals that use isolated harnesses, code-based checks where possible, repeated trials, transcript review, and pull-request gates for prompt or agent changes. Broad article or vendor background stays upstream-owned; locally, the durable rule is that a single aggregate pass/fail score is too coarse for recurring software agents.
 
 Failure diagnosis should identify the failure class before changing the agent. Common classes include:
@@ -24,6 +26,9 @@ The evidence package should include the task, initial state, allowed tools, tran
 
 ## Practice Boundaries
 
+- Include knowledge-gap canaries or absence tests when diagnosing retrieval-backed agents so fabrication and failure-to-abstain become visible.
+- Join traceable tool authorization, completed-task evaluation, reliability, latency, cost, and quality signals before attributing a failure only to model reasoning.
+
 - Separate reasoning, action selection, tool execution, final-state, transcript-review, and repeated-trial failures.
 - Prefer deterministic or code-based final-state checks when the task can be inspected through files, APIs, databases, or other structured state.
 - Use transcript review to explain why a failure happened, not as a substitute for final-state evidence.
@@ -32,6 +37,8 @@ The evidence package should include the task, initial state, allowed tools, tran
 - Convert incident patterns from [agent incident reporting](../governance-and-risk/agent-incident-reporting.md) into targeted eval cases when the workflow is expected to recur.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [verification loops and evals](verification-loops-and-evals.md)
@@ -61,5 +68,7 @@ The evidence package should include the task, initial state, allowed tools, tran
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with knowledge-gap canary, abstention, observability, and completed-task evaluation evidence.
 
 - Created on 2026-09-16 from raw-source evidence about practical AI-agent eval design and failure-mode separation; next check should map real failed eval cases to the listed diagnosis buckets before adding more categories.

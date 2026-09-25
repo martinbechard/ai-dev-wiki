@@ -73,6 +73,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - The agent authorization paper frames human-principal traceability, delegated scope, contestability, multi-hop delegation, runtime enforcement, provenance, and prompt injection as authorization-bypass concerns.
 - Public machine-identity coverage reinforces that agent identities need inventory, permission review, credential rotation, and exposure-path visibility rather than inherited or ghost access.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds proof-of-presence and planning-control evidence. High-impact repository or organization actions should preserve the human freshness check, identity-provider challenge, affected action type, and unavailable or future support caveats. Planning systems that launch agents should also preserve durable work IDs, lead-team ownership fields, model-routing decisions, setup-time secret exposure, token revocation audit entries, and comment-to-session routing evidence.
+
 ## Practice Boundaries
 
 - Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
@@ -118,12 +120,15 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Preserve accountable human metadata for agent principals so audit and revocation do not collapse into anonymous service-account ownership.
 - Treat prompt injection as an authorization-bypass risk when tool-using agents can translate untrusted content into delegated actions.
 - Record contestability, multi-hop delegation, provenance, credential rotation, and exposure-path review for non-human agent identities.
+- Preserve human-presence challenge evidence for high-impact repository actions instead of treating an existing authenticated session as fresh delegated authority.
+- Preserve planning-system work IDs, lead-team ownership, setup-secret exposure, model-routing policy, revocation audit entries, and comment-to-session routing when issue systems become agent control planes.
 
 ## Authoritative Sources
 
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
@@ -184,6 +189,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Maintained on 2026-09-23 with credential inventory, audit-log join, task-record, target-scope, last-use, and revocation evidence.
 - Maintained on 2026-09-19 with provider-neutral identity, delegated-authority, token-exchange, lifecycle, suspension, and revocation evidence.
 - Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.
+- Maintained on 2026-09-25 with proof-of-presence, durable work ID, lead-team ownership, model-routing, setup-secret, revocation-audit, and comment-routing evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.
 - Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.
 - Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.

@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The September 25 raw sources add ownership-roster fields for production agents and planning-system sessions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces accountable identity, runtime controls, budget limits, escalation paths, containment, and workstation controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds lead-team ownership, durable work IDs, setup-time secrets, model availability controls, OAuth revocation audit entries, and comment-follow-up routing as roster fields.
+
 Every agentic workflow that reads important context, produces work people act on, touches shared workflows, or can affect external systems needs a named owner. The [agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md) frames ownership as the 2026 maintenance skill: the team should know the agent job, context diet, boundaries, review cadence, and known failure modes before relying on the work.
 
 The local ownership roster is a lightweight operating artifact, not a governance theater exercise. It lists each meaningful agent, its owner, what it does, what it reads, what it can touch, what it cannot do, how review happens, and when it should be paused or decommissioned. This complements [human agent approval boundaries](human-agent-approval-boundaries.md), which owns the approval rule, and [agent governance infrastructure](../governance-and-risk/agent-governance-infrastructure.md), which owns enforcement.
@@ -48,6 +50,9 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Practice Boundaries
 
+- Include autonomy tier, budget owner, escalation contact, containment path, workstation-control owner, and runtime-evidence location in production-agent rosters.
+- Track lead team, durable work IDs, setup-secret exposure, allowed model routes, revocation audit evidence, and comment-follow-up route for planning-system-launched coding sessions.
+
 - Name one human owner for every recurring agentic job that affects team work.
 - Record the agent job in one sentence so vague assistants do not become unmanaged workflows.
 - Record the agent diet: source documents, tickets, examples, policies, repositories, and system connections it uses.
@@ -74,6 +79,9 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Record accountable business owner, short-lived credential policy, high-risk approval gate, monitoring owner, audit cadence, and kill-switch owner for agents treated as non-human workers.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -117,6 +125,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with ownership, durable-ID, budget, escalation, setup-secret, model-availability, revocation-audit, and comment-routing evidence.
 
 - Maintained on 2026-09-18 with scoped-permission, short-lived-credential, high-risk approval, monitoring, audit-cadence, and kill-switch owner-card fields.
 - Maintained on 2026-08-29 with live agent discovery, reusable-skill ownership, custom-agent catalogs, lifecycle stage, wake or sleep authority, and decommission evidence.

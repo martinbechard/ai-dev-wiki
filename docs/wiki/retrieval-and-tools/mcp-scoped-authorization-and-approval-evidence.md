@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The September 25 raw sources add runtime authorization evidence for MCP-mediated and connector-mediated actions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces authenticated request traces, tool-call validation, high-risk pauses, and quality/cost gates. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds OAuth-protected MCP consent handling where user consent can happen before model execution instead of becoming a model-visible tool error.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds agent-manager evidence for MCP interaction governance. Approval records should bind MCP calls to the agent identity, delegated authority, lifecycle state, sandbox, role, token exchange, approval payload, revocation path, and execution result, especially when the control plane spans several models or frameworks.
 
 MCP scoped authorization and approval evidence records who or what may call a tool, for which resource, under which task scope, and with which approved payload. This keeps tool access as an enforceable control-plane decision rather than a prompt-level preference.
@@ -60,6 +62,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Practice Boundaries
 
+- Preserve authenticated request, tool-call validation, approval pause, cost/quality gate, and action result evidence for MCP-mediated work.
+- Resolve OAuth consent and token refresh at the route or connector boundary before model execution; do not expose avoidable authorization failures as model-visible tool content.
+
 - Include agent lifecycle state, sandbox assignment, delegated authority, token-exchange route, and revocation path when MCP approval crosses a shared control plane.
 
 - Scope MCP authorization by resource, task, user or agent identity, capability, and read/write effect before the tool is callable.
@@ -95,6 +100,9 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Group or redact customer-defined tool names when telemetry is needed for governance but full names would expose sensitive workflow details.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
@@ -145,6 +153,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with authenticated-request trace, tool validation, approval pause, cost/quality gate, OAuth consent, and token-refresh evidence.
 
 - Maintained on 2026-09-19 with agent-manager MCP authorization, lifecycle, sandbox, delegated-authority, token-exchange, and revocation evidence.
 - Maintained on 2026-09-01 with AI pull-request approval enablement, allowed-path scope, merge-rule, stale-approval invalidation, and admin-decision evidence.

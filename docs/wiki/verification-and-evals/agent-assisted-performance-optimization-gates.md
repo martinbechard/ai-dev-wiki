@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds agent-optimization and review-toil evidence. Performance or cost improvements from agent workflow changes should start with a baseline, change one variable per round, and accept savings only after quality checks; survey or simulation numbers should be treated as adoption signals, not production benchmarks.
+
 Agent-assisted performance optimization gates keep speedup work tied to correctness, baselines, representative workloads, and approval. Optimization agents can propose patches, compiler flags, cache changes, dependency changes, or build-system edits quickly, but the accepted result is the verified improvement under the workflow a developer or system actually uses.
 
 The [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json) routed performance optimization into local eval practice as a correctness-preserving, trace-backed workflow rather than a benchmark headline. The [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json) adds build-agent evidence: performance work should record clean versus incremental baseline choice, profiling context, representative workload, suggested experiments, rollback path, and human approval before applying generated optimizations.
@@ -29,6 +31,9 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Practice Boundaries
 
+- Require a baseline, one-variable change record, quality gate, and rollback path before accepting cost or latency improvements from agent workflow optimization.
+- Track review and correction effort as part of optimization evidence when generated code increases reviewer toil or compliance-review load.
+
 - Record the baseline metric, workload, environment, cache state, and whether the target is clean build, incremental build, runtime latency, throughput, memory, or another performance dimension.
 - Preserve correctness checks before and after optimization so speed does not hide broken behavior.
 - Require profiling or measurement evidence before accepting an agent-proposed optimization target.
@@ -47,6 +52,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - Accept model-route speed or performance claims only with representative terminal-task validation, actionable-failure recovery, workflow-fit evidence, and model-policy eligibility.
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
 - [July 17 topic news collector source](../../../raw/processed/2026-07-17/ai-dev-wiki-topic-news-collector-2026-07-17T203209-0400.json)
@@ -84,6 +91,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with agent optimization baseline, one-variable iteration, quality gate, and review-toil evidence.
 
 - Created on 2026-07-17 from public raw artifacts about build-performance agents, profiling workflows, baseline selection, incremental-build measurement, rollback rules, and approval gates.
 - Maintained on 2026-07-28 with capability-versus-regression eval boundaries for optimization agents and deployment-specific outcome checks.

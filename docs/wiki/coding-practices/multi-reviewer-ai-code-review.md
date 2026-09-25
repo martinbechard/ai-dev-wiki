@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds multi-model audit and review-toil evidence. Multi-reviewer AI code review only improves review quality when independent model or role findings are deduplicated, synthesized, and measured for human actionability; otherwise the second reviewer can double noise, reviewer correction time, and compliance review load.
+
 Multi-reviewer AI code review uses distinct reviewer roles or debate phases while preserving synthesis evidence and human merge authority. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) records Open Code Review-style multi-agent pull-request review as a local practice signal. Broad project, license, or product background stays upstream-owned until primary project evidence is separately captured; locally, the durable pattern is role separation plus reviewable synthesis, not a claim about one product.
 
 The review is useful only when distinct reviewer roles add different source-backed checks. A multi-reviewer workflow should preserve:
@@ -21,6 +23,9 @@ The review is useful only when distinct reviewer roles add different source-back
 
 ## Practice Boundaries
 
+- Require a synthesis step that merges duplicate findings, preserves meaningful disagreement, and explains which reviewer signal should drive human attention.
+- Measure multi-reviewer review against false positives, developer action, correction time, and compliance-review load instead of counting findings as success.
+
 - Name reviewer roles, scope, and independence boundaries before treating multiple AI passes as stronger evidence.
 - Preserve role-specific findings, source evidence, disagreement, synthesis rationale, and unresolved residual risk.
 - Avoid counting repeated comments or consensus language as quality unless the workflow improves source-backed finding coverage.
@@ -28,6 +33,8 @@ The review is useful only when distinct reviewer roles add different source-back
 - Route reusable role taxonomies through [layered AI code review roles](layered-ai-code-review-roles.md) and evaluation criteria through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
+
+- [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [intelligent code review](intelligent-code-review.md)
@@ -57,5 +64,7 @@ The review is useful only when distinct reviewer roles add different source-back
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-09-25 with multi-model audit, deduplication, actionability, and review-toil evidence.
 
 - Created on 2026-09-16 from raw-source evidence about self-hosted multi-agent pull-request review patterns; next check should compare multi-reviewer findings against human triage records before expanding guidance.

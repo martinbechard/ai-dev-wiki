@@ -21,6 +21,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) adds large migration and production-bar evidence. Locally, structural diff output is only a triage aid until risk-tiered validation and human ownership are attached.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds huge pull-request review-surface evidence. Structural review practice should treat very large PR rendering and comment-state behavior as part of the review substrate: when a pull request contains thousands of files, millions of changed lines, or hundreds of comments, reviewers need objective telemetry and structural slices before trusting the interface to preserve meaningful inspection state.
+
 ## Practice Boundaries
 
 - Use structural diffs to reduce reviewer noise when AI-generated changes include formatting, reordering, or generated boilerplate.
@@ -34,6 +36,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Keep prototype-level structural triage separate from production review where security, maintainability, runtime behavior, and repairability need stronger gates.
 - Keep infrastructure-scale rewrite slices inspectable and separately owned.
 - Attach follow-on test evidence before structural diff triage can support production acceptance.
+- For huge pull requests, pair structural slices with review-surface health signals, comment-state preservation, and runtime telemetry before deciding that the PR is inspectable.
 
 ## Authoritative Sources
 
@@ -45,6 +48,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 ## Related Code
 
@@ -76,3 +80,4 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Maintained on 2026-08-29 with large bot-authored pull-request triage guidance.
 - Maintained on 2026-08-31 with multi-agent reconciliation, patch-range, behavior-change, formatting-churn, and integration-conflict review evidence.
 - Maintained on 2026-09-16 with incremental migration, production-bar, slice ownership, and blast-radius review evidence; next check should verify structural-diff handoffs name the inspected range, owner, and required follow-on tests.
+- Maintained on 2026-09-25 with huge-PR rendering, review-surface health, comment-state preservation, and structural-slice evidence.
