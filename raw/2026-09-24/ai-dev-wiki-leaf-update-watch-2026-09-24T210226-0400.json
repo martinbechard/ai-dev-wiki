@@ -1,0 +1,470 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-25T01:02:26Z",
+  "run_timestamp_local": "2026-09-24T21:02:26-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-18T01:02:26Z",
+    "end_utc": "2026-09-25T01:02:26Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days qualify; boundary-only and undated candidates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 103,
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+  ],
+  "selection_policy": "New or unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort.",
+  "privacy_and_federation_notes": [
+    "Searches used public topic names, aliases, and public cited/source URLs rather than private local page text.",
+    "Broad ecosystem entity updates belong upstream; this artifact records downstream local practice implications only."
+  ],
+  "source_urls_checked": [
+    "https://codeauditagent.com/en/blog",
+    "https://developers.cloudflare.com/agents/harnesses/",
+    "https://developers.openai.com/api/docs/guides/agent-evals",
+    "https://docs.digitalocean.com/products/managed-agents/agent-harness-runtime/concepts/overview/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+    "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/",
+    "https://himat.tech/insights/ai-agent-observability-control-production-2026",
+    "https://hub.openhands.dev/blog/best-automated-code-review-tools",
+    "https://learn.microsoft.com/agent-framework/agents/harness",
+    "https://openai.com/index/introducing-the-agents-api/",
+    "https://sdd.sh/2026/09/plugin4shell-ai-coding-agent-supply-chain-vulnerability/",
+    "https://stats.conversationalgeek.com/analysis/sonar-2026-ai-generated-code",
+    "https://traefik.io/press/traefik-labs-introduces-the-sovereign-trust-plane-bringing-verifiable-evidence-to-ai-agent-governance",
+    "https://www.digitalocean.com/resources/articles/what-is-agent-harness",
+    "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+    "https://www.globenewswire.com/news-release/2026/09/23/3367485/0/en/cycode-extends-its-adlc-security-capabilities-to-developers-workstations-stopping-software-supply-chain-attacks-before-they-start.html",
+    "https://www.gptmap.org/en/posts/agents-optimization-cookbook",
+    "https://www.reddit.com/r/Rag/comments/1wmi6so/we_gave_3_commercial_rag_systems_questions_whose/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "digitalocean-harness-runtime-overview-2026-09-21",
+      "source_url": "https://docs.digitalocean.com/products/managed-agents/agent-harness-runtime/concepts/overview/",
+      "visible_publication_or_update_date": "Last verified 21 Sep 2026",
+      "source_type": "vendor documentation",
+      "impacted_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "factual_summary": "DigitalOcean documents Harness Runtime as a managed microVM and tool-access environment for coding agents, with lifecycle APIs for pause, resume, fork, conversation history, working state, permissions, approvals, checkpoints, credentials, and optional Action Gateway integration.",
+      "why_it_matters_for_leaf": "Strengthens local harness and session recovery leaves: durable agent work depends on runtime-owned environment specs, state persistence, approval policies, and checkpoint/resume semantics rather than prompt text alone.",
+      "named_entities": [
+        "DigitalOcean Harness Runtime",
+        "Codex CLI",
+        "Claude Code",
+        "OpenCode",
+        "LangGraph",
+        "Hermes",
+        "Action Gateway"
+      ],
+      "upstream_owned_entities": [
+        "DigitalOcean",
+        "Codex CLI",
+        "Claude Code",
+        "OpenCode",
+        "LangGraph",
+        "Hermes"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "digitalocean-agent-harness-architecture-2026-09-21",
+      "source_url": "https://www.digitalocean.com/resources/articles/what-is-agent-harness",
+      "visible_publication_or_update_date": "Updated: September 21, 2026",
+      "source_type": "vendor explainer",
+      "impacted_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/application-patterns/agent-session-recovery.md"
+      ],
+      "factual_summary": "DigitalOcean frames a harness as the full runtime wrapper around tool execution, sandboxing, memory, guardrails, and observability, and distinguishes that layer from frameworks and SDKs.",
+      "why_it_matters_for_leaf": "Supports the local distinction between reusable frameworks, SDK calls, and the harness/control layer that owns execution evidence and policy.",
+      "named_entities": [
+        "agent harness",
+        "framework",
+        "SDK",
+        "Claude Code",
+        "OpenAI harness",
+        "Codex CLI"
+      ],
+      "upstream_owned_entities": [
+        "DigitalOcean",
+        "Claude Code",
+        "Codex CLI"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "codeauditagent-two-engines-one-audit-2026-09-23",
+      "source_url": "https://codeauditagent.com/en/blog",
+      "visible_publication_or_update_date": "September 23, 2026",
+      "source_type": "vendor blog index",
+      "impacted_leaf_ids": [
+        "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md"
+      ],
+      "factual_summary": "CodeAuditAgent published a multi-model audit article describing a second AI model reviewing the same code and merging two reports without doubling noise.",
+      "why_it_matters_for_leaf": "Maps to multi-reviewer AI code review as role or model diversity only helps when synthesis and deduplication keep findings actionable.",
+      "named_entities": [
+        "CodeAuditAgent",
+        "multi-model audit",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "CodeAuditAgent"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "codeauditagent-repo-prompt-injection-2026-09-23",
+      "source_url": "https://codeauditagent.com/en/blog",
+      "visible_publication_or_update_date": "September 23, 2026",
+      "source_type": "vendor blog index",
+      "impacted_leaf_ids": [
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md"
+      ],
+      "factual_summary": "CodeAuditAgent published a repository prompt-injection article treating code comments and repository content as possible instructions to models during code review.",
+      "why_it_matters_for_leaf": "Reinforces repository-configured review policy: review agents need prompt-injection controls, output validation, and safe handling of untrusted diffs and comments.",
+      "named_entities": [
+        "CodeAuditAgent",
+        "prompt injection",
+        "AI code review"
+      ],
+      "upstream_owned_entities": [
+        "CodeAuditAgent"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "gartner-agentic-governance-runtime-controls-2026-09-24",
+      "source_url": "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "visible_publication_or_update_date": "September 24, 2026",
+      "source_type": "analyst article",
+      "impacted_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "Gartner argues that agentic AI governance needs runtime controls, observability, algorithmic auditing, financial controls, autonomy tiers, escalation paths, data perimeters, and incident containment rather than policy documents alone.",
+      "why_it_matters_for_leaf": "Directly supports local governance infrastructure, incident reporting, adoption agreements, and ownership roster pages: every production agent needs accountable identity, immutable decision/action records, budget limits, escalation rules, and containment paths.",
+      "named_entities": [
+        "Gartner",
+        "agentic AI governance",
+        "runtime controls",
+        "agentic FinOps"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "cycode-workstation-agentic-development-security-2026-09-23",
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/23/3367485/0/en/cycode-extends-its-adlc-security-capabilities-to-developers-workstations-stopping-software-supply-chain-attacks-before-they-start.html",
+      "visible_publication_or_update_date": "September 23, 2026 09:00 ET",
+      "source_type": "press release",
+      "impacted_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "Cycode announced workstation protection for agentic development, using release-age cooldown policies and known-malicious package blocking before packages install on developer machines, and tying workstation control to shadow AI, coding assistants, MCP servers, prompt/file-read guardrails, and generated-code security.",
+      "why_it_matters_for_leaf": "Relevant to runtime updater integrity, plugin governance, and adoption operating agreements because coding agents extend supply-chain risk onto developer workstations before generated code reaches repository controls.",
+      "named_entities": [
+        "Cycode",
+        "Agentic Development Security",
+        "ADLC",
+        "Workstation Protection",
+        "MCP servers"
+      ],
+      "upstream_owned_entities": [
+        "Cycode"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "plugin4shell-coding-agent-plugin-sha-bypass-2026-09-19",
+      "source_url": "https://sdd.sh/2026/09/plugin4shell-ai-coding-agent-supply-chain-vulnerability/",
+      "visible_publication_or_update_date": "19 September 2026",
+      "source_type": "security analysis",
+      "impacted_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ],
+      "factual_summary": "The Plugin4Shell analysis says a Git checkout/ref-resolution issue can defeat plugin SHA-pin verification in some coding agents unless the checked-out HEAD is explicitly compared to the intended pinned SHA after checkout.",
+      "why_it_matters_for_leaf": "Directly updates local runtime updater and portable plugin governance practice: SHA pinning is not sufficient evidence unless the runtime verifies the resolved commit object after checkout and records that verification.",
+      "named_entities": [
+        "Plugin4Shell",
+        "Air Security",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "Gemini CLI",
+        "Git"
+      ],
+      "upstream_owned_entities": [
+        "Plugin4Shell",
+        "Air Security",
+        "Claude Code",
+        "Codex",
+        "GitHub Copilot",
+        "Gemini CLI",
+        "Git"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "himat-agent-observability-control-eval-2026-09-20",
+      "source_url": "https://himat.tech/insights/ai-agent-observability-control-production-2026",
+      "visible_publication_or_update_date": "September 20, 2026",
+      "source_type": "engineering guide",
+      "impacted_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+      ],
+      "factual_summary": "HiMat describes production agent observability as a separate layer that traces authenticated requests, validates tool calls, emits structured telemetry, evaluates completed tasks, pauses high-risk actions for approval, and aggregates reliability, cost, latency, and quality signals.",
+      "why_it_matters_for_leaf": "Supports MCP approval evidence, agent eval failure diagnosis, performance optimization gates, and governance leaves by requiring traceable tool authorization and quality/cost gates at workflow boundaries.",
+      "named_entities": [
+        "HiMat",
+        "agent observability",
+        "tool-call monitoring",
+        "evaluation gates"
+      ],
+      "upstream_owned_entities": [
+        "HiMat"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "gptmap-openai-agent-optimization-cookbook-verified-2026-09-22",
+      "source_url": "https://www.gptmap.org/en/posts/agents-optimization-cookbook",
+      "visible_publication_or_update_date": "verified 2026-09-22; source PR 2026-09-18",
+      "source_type": "secondary source with repo verification note",
+      "impacted_leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "factual_summary": "GPTMap summarizes an OpenAI Cookbook agent optimization tutorial as a repeatable sprint: measure a baseline, change one workflow part per round, and accept cost savings only after quality checks.",
+      "why_it_matters_for_leaf": "Fits performance optimization gates: cost/latency reductions should be gated by quality evidence and simulation numbers should not be treated as production benchmarks.",
+      "named_entities": [
+        "OpenAI Cookbook",
+        "agent optimization",
+        "quality evals",
+        "prompt caching"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "OpenAI Cookbook"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "rag-knowledge-gap-canaries-discussion-2026-09-21",
+      "source_url": "https://www.reddit.com/r/Rag/comments/1wmi6so/we_gave_3_commercial_rag_systems_questions_whose/",
+      "visible_publication_or_update_date": "Monday September 21 2026",
+      "source_type": "public discussion referencing arXiv paper and code",
+      "impacted_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+      ],
+      "factual_summary": "A public RAG discussion describes knowledge-gap canaries where absent answers expose systems that fabricate rather than abstain, and points to paper/code/logs for reproducible evidence.",
+      "why_it_matters_for_leaf": "Useful for RAG provenance and agent-eval diagnosis leaves: retrieval quality gates should test abstention and absence handling, not only answer accuracy on present evidence.",
+      "named_entities": [
+        "RAG",
+        "knowledge-gap canaries",
+        "OpenAI RAG",
+        "Gemini RAG",
+        "CustomGPT.ai"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Gemini",
+        "CustomGPT.ai"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "openhands-automated-code-review-tools-2026-09-23",
+      "source_url": "https://hub.openhands.dev/blog/best-automated-code-review-tools",
+      "visible_publication_or_update_date": "Sep 23, 2026",
+      "source_type": "vendor comparison",
+      "impacted_leaf_ids": [
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md"
+      ],
+      "factual_summary": "OpenHands describes GitHub Copilot Code Review as an advisory first-pass reviewer that does not replace required human approvals and recommends evaluating tools on real pull requests, false positives, developer action, and noise.",
+      "why_it_matters_for_leaf": "Reinforces repository-configured AI code review and adoption agreements: AI review should be governed as advisory signal with measured actionability, not a substitute for human acceptance.",
+      "named_entities": [
+        "OpenHands",
+        "GitHub Copilot Code Review",
+        "CodeRabbit",
+        "Qodo",
+        "Greptile"
+      ],
+      "upstream_owned_entities": [
+        "OpenHands",
+        "GitHub Copilot",
+        "CodeRabbit",
+        "Qodo",
+        "Greptile"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    },
+    {
+      "id": "sonar-ai-generated-code-review-toil-2026-09-23",
+      "source_url": "https://stats.conversationalgeek.com/analysis/sonar-2026-ai-generated-code",
+      "visible_publication_or_update_date": "Published September 23, 2026",
+      "source_type": "secondary analysis of survey report",
+      "impacted_leaf_ids": [
+        "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "factual_summary": "A Conversational Geek Stats analysis of Sonar survey data reports AI-generated code review and correction burdens, including technical debt, junior/senior review-effort differences, compliance-review differences, and partial static-analysis adoption.",
+      "why_it_matters_for_leaf": "Supports adoption agreements, ownership rosters, repository-configured review, and performance gates by making review toil and deterministic quality gates explicit adoption risks.",
+      "named_entities": [
+        "Sonar",
+        "State of Code Developer Survey 2026",
+        "static analysis",
+        "AI-generated code"
+      ],
+      "upstream_owned_entities": [
+        "Sonar"
+      ],
+      "federation_routing_note": "Keep broad entity background upstream; local ingest should capture only the practice, governance, workflow, verification, or operating-model implication for the impacted leaf pages."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/",
+      "visible_date": "September 18, 2026",
+      "reason": "Boundary date only relative to 2026-09-18T01:02:26Z cutoff; exact publication time not visible, so not used as qualifying evidence."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "visible_date": "August 12, 2026",
+      "reason": "Outside seven-day window, though useful as background for plugin governance."
+    },
+    {
+      "source_url": "https://traefik.io/press/traefik-labs-introduces-the-sovereign-trust-plane-bringing-verifiable-evidence-to-ai-agent-governance",
+      "visible_date": "September 15, 2026",
+      "reason": "Outside seven-day window."
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "visible_date": "September 10, 2026",
+      "reason": "Outside seven-day window; broad product entity context is upstream-owned."
+    },
+    {
+      "source_url": "https://developers.openai.com/api/docs/guides/agent-evals",
+      "visible_date": "No visible publication/update date in opened page",
+      "reason": "No qualifying visible publication or update date; crawled date alone is not source evidence."
+    },
+    {
+      "source_url": "https://learn.microsoft.com/agent-framework/agents/harness",
+      "visible_date": "Last updated 09/15/2026",
+      "reason": "Outside seven-day window."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/",
+      "visible_date": "Last updated Jun 3, 2026",
+      "reason": "Outside seven-day window."
+    }
+  ],
+  "follow_up_notes": [
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-harness-components.md",
+      "note": "Review qualifying update IDs: digitalocean-harness-runtime-overview-2026-09-21, digitalocean-agent-harness-architecture-2026-09-21, himat-agent-observability-control-eval-2026-09-20"
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/agent-session-recovery.md",
+      "note": "Review qualifying update IDs: digitalocean-harness-runtime-overview-2026-09-21, digitalocean-agent-harness-architecture-2026-09-21"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+      "note": "Review qualifying update IDs: codeauditagent-two-engines-one-audit-2026-09-23, sonar-ai-generated-code-review-toil-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+      "note": "Review qualifying update IDs: codeauditagent-repo-prompt-injection-2026-09-23, openhands-automated-code-review-tools-2026-09-23, sonar-ai-generated-code-review-toil-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/context-architecture/thin-context-router.md",
+      "note": "No qualifying in-window update found; ledger records checked sources only."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "note": "Review qualifying update IDs: gartner-agentic-governance-runtime-controls-2026-09-24, cycode-workstation-agentic-development-security-2026-09-23, himat-agent-observability-control-eval-2026-09-20"
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+      "note": "Review qualifying update IDs: gartner-agentic-governance-runtime-controls-2026-09-24, himat-agent-observability-control-eval-2026-09-20"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "note": "Review qualifying update IDs: gartner-agentic-governance-runtime-controls-2026-09-24, himat-agent-observability-control-eval-2026-09-20"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+      "note": "Review qualifying update IDs: plugin4shell-coding-agent-plugin-sha-bypass-2026-09-19, cycode-workstation-agentic-development-security-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "note": "Review qualifying update IDs: rag-knowledge-gap-canaries-discussion-2026-09-21"
+    },
+    {
+      "leaf_id": "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+      "note": "Review qualifying update IDs: plugin4shell-coding-agent-plugin-sha-bypass-2026-09-19, cycode-workstation-agentic-development-security-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "note": "Review qualifying update IDs: gptmap-openai-agent-optimization-cookbook-verified-2026-09-22, himat-agent-observability-control-eval-2026-09-20, sonar-ai-generated-code-review-toil-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+      "note": "Review qualifying update IDs: himat-agent-observability-control-eval-2026-09-20, rag-knowledge-gap-canaries-discussion-2026-09-21"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+      "note": "Review qualifying update IDs: gartner-agentic-governance-runtime-controls-2026-09-24, cycode-workstation-agentic-development-security-2026-09-23, sonar-ai-generated-code-review-toil-2026-09-23"
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+      "note": "Review qualifying update IDs: gartner-agentic-governance-runtime-controls-2026-09-24, cycode-workstation-agentic-development-security-2026-09-23, sonar-ai-generated-code-review-toil-2026-09-23"
+    }
+  ],
+  "scanner_output_storage": "No scanner output was saved under raw/processed; this raw artifact is the watcher evidence artifact for later ingest."
+}
