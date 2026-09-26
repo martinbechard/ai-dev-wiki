@@ -1,0 +1,758 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-09-26T01:00:20Z",
+    "rule": "Include only public sources published or visibly updated within the last 7 days; crawled dates alone do not qualify.",
+    "start_utc": "2026-09-19T01:00:20Z"
+  },
+  "excluded_candidates": [
+    {
+      "reason": "Published before the 7-day cutoff window for the 2026-09-26T01:00:20Z run; retained as near-miss context for agent telemetry.",
+      "source_url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+      "visible_date": "2026-09-17"
+    },
+    {
+      "reason": "Published before the 7-day cutoff; budget-increase workflow remains relevant but cannot be included as a qualifying update for this run.",
+      "source_url": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/",
+      "visible_date": "2026-09-16"
+    },
+    {
+      "reason": "Published before the 7-day cutoff; also broad authorization-architecture coverage is upstream-owned except for local delegated-authority implications.",
+      "source_url": "https://arxiv.org/abs/2609.15906",
+      "visible_date": "2026-09-14"
+    },
+    {
+      "reason": "Approximately 4 hours before the 7-day cutoff; excluded as outside-window even though topic is relevant.",
+      "source_url": "https://arxiv.org/abs/2609.22573",
+      "visible_date": "2026-09-18T20:51:19Z"
+    },
+    {
+      "reason": "No visible publication or updated date in the fetched page; crawled date is not acceptable evidence.",
+      "source_url": "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference",
+      "visible_date": null
+    },
+    {
+      "reason": "Included only by the visible updated date for harness implications; original publication date alone would be outside window.",
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+      "visible_date": "2026-09-16, updated 2026-09-23"
+    },
+    {
+      "reason": "Secondary commentary; included only for local workflow implications and not for product/entity facts.",
+      "source_url": "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+      "visible_date": "2026-09-22"
+    },
+    {
+      "reason": "Vendor-positioned explainer; included as practice-level review/verification signal, not as neutral market evidence.",
+      "source_url": "https://www.sonarsource.com/resources/library/code-review-ai-agent/",
+      "visible_date": "2026-09-22"
+    }
+  ],
+  "federation_notes": [
+    "Broad product, vendor, framework, protocol, and model facts are upstream-owned by the AI wiki. This artifact keeps only downstream practice implications for workflow, governance, verification, telemetry, and adoption leaves."
+  ],
+  "follow_up_notes": [
+    "During ingest, verify secondary sources against primary reports where noted, especially SpecPilot summaries of Mandiant incidents.",
+    "Do not update docs/wiki from this watch artifact directly; leave synthesis to the raw ingest workflow."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-22T10:00:00+08:00",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-22",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-23",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-25",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+        "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+        "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window public update with a clear local-practice implication found in checked sources.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update",
+      "leaf_id": "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+        "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-24",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+        "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+        "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+        "https://arxiv.org/abs/2609.15906"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-25",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "qualified_update_count": 3,
+      "source_urls_checked": [
+        "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+        "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+        "https://www.sonarsource.com/resources/library/code-review-ai-agent/",
+        "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window public update with a clear local-practice implication found in checked sources.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update",
+      "leaf_id": "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+        "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-22",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+        "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference",
+        "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-23",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-25",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/source-workflows/automated-update-feeds.md",
+      "qualified_update_count": 1,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window public update with a clear local-practice implication found in checked sources.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update",
+      "leaf_id": "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+        "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/"
+      ]
+    },
+    {
+      "follow_up_note": "No in-window public update with a clear local-practice implication found in checked sources.",
+      "last_qualified_update_at": null,
+      "last_result": "no_qualified_update",
+      "leaf_id": "docs/wiki/source-workflows/leaf-update-watch.md",
+      "qualified_update_count": 0,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-25",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "qualified_update_count": 2,
+      "source_urls_checked": [
+        "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+        "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+        "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualified local-practice updates during raw ingest.",
+      "last_qualified_update_at": "2026-09-25",
+      "last_result": "qualified_update_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "qualified_update_count": 3,
+      "source_urls_checked": [
+        "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+        "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+        "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+        "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference"
+      ]
+    }
+  ],
+  "named_entities": [
+    "AI coding agents",
+    "Claude Code",
+    "Claude Code Projects",
+    "Codex",
+    "Copilot Memory",
+    "Copilot SDK",
+    "Copilot cloud agent",
+    "Copilot code review",
+    "GitHub Copilot CLI",
+    "GitHub Copilot app",
+    "GitHub Copilot in JetBrains",
+    "GitHub Copilot runtime",
+    "GitHub Copilot usage metrics",
+    "GitHub Enterprise Cloud",
+    "GitHub MCP server",
+    "GitHub agentic autofix",
+    "Gitar",
+    "Lumos MCP Governance",
+    "Mandiant AI Risk and Resilience report",
+    "Microsoft Entra ID",
+    "Model Context Protocol",
+    "OIDC",
+    "OpenTelemetry",
+    "Rust",
+    "SAML",
+    "SEP-2640",
+    "Shai-Hulud",
+    "Skills Over MCP Working Group",
+    "Sonar",
+    "SonarQube",
+    "SpecPilot",
+    "assisted approvals",
+    "enterprise-managed settings",
+    "local sandboxing",
+    "managed custom instructions",
+    "proof of presence",
+    "pull request review stages",
+    "pull_request_review_times",
+    "rewind",
+    "shared organization skills"
+  ],
+  "qualifying_updates": [
+    {
+      "factual_summary": "The article describes coding agents shifting from chat/autocomplete into coordinated workspaces with task planning, branch-isolated workers, tests, validation, pull requests, and central progress monitoring.",
+      "follow_up_note": "Ingest as local coordinator-worker workflow evidence, not as product encyclopedia coverage.",
+      "leaf_id": "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+      "named_entities": [
+        "Claude Code Projects",
+        "GitHub MCP server",
+        "AI coding agents"
+      ],
+      "source_url": "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code",
+        "GitHub MCP server"
+      ],
+      "visible_published_or_updated_at": "2026-09-22T10:00:00+08:00",
+      "why_it_matters_for_leaf": "Reinforces the local control-flow rule that coordinator/worker workspace orchestration is distinct from single-loop code generation and needs explicit review and merge evidence."
+    },
+    {
+      "factual_summary": "GitHub Copilot app added OpenTelemetry export through enterprise-managed settings, with traces for agent sessions, model requests, and tool use; prompt and response content is excluded by default.",
+      "follow_up_note": "Use for process-layer telemetry and content-capture boundary; keep product details upstream.",
+      "leaf_id": "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "named_entities": [
+        "GitHub Copilot app",
+        "OpenTelemetry",
+        "enterprise-managed settings"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds process-layer state and observability evidence: traces, tool use, model requests, content-capture policy, and central telemetry settings are workflow state outside the transcript."
+    },
+    {
+      "factual_summary": "GitHub updated a long report on porting the Copilot agent runtime to Rust, describing the shared Copilot agent runtime as an embeddable harness used by multiple Copilot surfaces and a migration completed via agent-authored pull requests.",
+      "follow_up_note": "Ingest as harness architecture and migration-evidence pattern, not as broad GitHub product background.",
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "named_entities": [
+        "GitHub Copilot runtime",
+        "GitHub Copilot CLI",
+        "Copilot SDK",
+        "Rust"
+      ],
+      "source_url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Rust"
+      ],
+      "visible_published_or_updated_at": "2026-09-23",
+      "why_it_matters_for_leaf": "Strengthens the application-harness pattern: shared runtimes concentrate security, reliability, performance, and agent-loop behavior across products, so harness changes need staged PR and regression evidence."
+    },
+    {
+      "factual_summary": "GitHub Copilot app local sandboxing now limits file, network, and credential access per project; if the OS cannot enforce the requested policy, the sandboxed shell fails instead of running unsandboxed.",
+      "follow_up_note": "Route to harness/environment readiness and tool execution boundaries.",
+      "leaf_id": "docs/wiki/application-patterns/application-harness-patterns.md",
+      "named_entities": [
+        "GitHub Copilot app",
+        "local sandboxing"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-23",
+      "why_it_matters_for_leaf": "Adds concrete harness controls for filesystem, network, credential policy, enterprise override, and fail-closed behavior."
+    },
+    {
+      "factual_summary": "GitHub weekly release notes say JetBrains Copilot agent sessions now have assisted approvals for low-risk tool calls, prompts for higher-risk actions, and rewind support that reverts conversation and file changes before redirecting a session.",
+      "follow_up_note": "Ingest as local workflow-artifact semantics; avoid product feature cataloging.",
+      "leaf_id": "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "named_entities": [
+        "GitHub Copilot in JetBrains",
+        "assisted approvals",
+        "rewind"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds declarative/reviewable workflow fields for approval risk classes, redirect semantics, rewind state, and file-change rollback when agent sessions are controlled through tool policy."
+    },
+    {
+      "factual_summary": "GitHub introduced proof of presence for selected high-impact enterprise actions, requiring interactive re-authentication or MFA through the IdP before sensitive operations proceed.",
+      "follow_up_note": "Use for delegated authority and human-presence challenge records.",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "proof of presence",
+        "Microsoft Entra ID",
+        "SAML",
+        "OIDC"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "upstream_owned_entities": [
+        "GitHub",
+        "Microsoft Entra ID"
+      ],
+      "visible_published_or_updated_at": "2026-09-24",
+      "why_it_matters_for_leaf": "Adds delegated-authority evidence for human freshness checks, IdP challenge type, high-impact action class, and coming PR-merge support caveats."
+    },
+    {
+      "factual_summary": "Lumos announced MCP Governance for Claude Code and Codex, positioning action-time permission checks and blocks as the control point beyond inventory.",
+      "follow_up_note": "Use as local identity/action-time governance evidence, not vendor catalog text.",
+      "leaf_id": "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "named_entities": [
+        "Lumos MCP Governance",
+        "Claude Code",
+        "Codex"
+      ],
+      "source_url": "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "upstream_owned_entities": [
+        "Lumos",
+        "Claude Code",
+        "Codex"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds runtime delegated-authority evidence: inventory alone is insufficient; policy decisions must happen at the moment a tool action runs."
+    },
+    {
+      "factual_summary": "SpecPilot summarizes recent AI-coding-agent incidents: dependency recommendation leading to worm spread, a red-teamed internal assistant exposing credentials/repos, and a runaway loop causing a large bill and database disruption.",
+      "follow_up_note": "Verify against primary Mandiant report during ingest if available; preserve as secondary practice summary otherwise.",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "named_entities": [
+        "SpecPilot",
+        "Mandiant AI Risk and Resilience report",
+        "Shai-Hulud"
+      ],
+      "source_url": "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+      "upstream_owned_entities": [
+        "Mandiant",
+        "Shai-Hulud"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds security repair and agent-operation gates for dependency verification, task-scoped credentials, irreversible-action approval, per-task cost/call circuit breakers, and secret isolation from dynamic extensions."
+    },
+    {
+      "factual_summary": "GitHub says agentic autofix can use Copilot Memory to retrieve context for security alerts and store fix patterns for future alerts and other Copilot features.",
+      "follow_up_note": "Ingest as security-repair memory governance, not as broad memory feature coverage.",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "named_entities": [
+        "GitHub agentic autofix",
+        "Copilot Memory",
+        "Copilot code review",
+        "Copilot cloud agent"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds security-repair memory evidence: reusable fix patterns can speed recurring fixes but need provenance, scope, review, and stale-pattern controls."
+    },
+    {
+      "factual_summary": "Sonar describes code review AI agents that review pull requests, identify bugs/security vulnerabilities/logic errors, propose or apply fixes, and complement deterministic analysis such as static analysis.",
+      "follow_up_note": "Use as vendor-positioned but practice-relevant evidence for AI review plus deterministic verification.",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "named_entities": [
+        "Sonar",
+        "Gitar",
+        "SonarQube"
+      ],
+      "source_url": "https://www.sonarsource.com/resources/library/code-review-ai-agent/",
+      "upstream_owned_entities": [
+        "Sonar",
+        "Gitar"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Reinforces the local security-repair gate that AI review and deterministic scanners are complementary, and that generated fixes still need CI and deterministic verification boundaries."
+    },
+    {
+      "factual_summary": "The MCP Skills Over MCP working session says agent skills are rich structured instructions for agent workflows and context, with convergence work spanning protocol spec, registry schema, SDKs, and client behavior.",
+      "follow_up_note": "Route broad SEP background upstream; keep local skill intake and governance implications.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "named_entities": [
+        "Model Context Protocol",
+        "Skills Over MCP Working Group",
+        "SEP-2640"
+      ],
+      "source_url": "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "SEP-2640"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds remote-skill discovery governance evidence: skill discovery spans protocol, registry, SDK, and client behavior, so local intake must record provenance, scope, and activation policy."
+    },
+    {
+      "factual_summary": "GitHub Copilot app OpenTelemetry export sends agent activity data to compatible monitoring tools so teams can inspect session flow, model requests, and tool use centrally.",
+      "follow_up_note": "Use for audit trace and monitoring control-plane evidence.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "named_entities": [
+        "GitHub Copilot app",
+        "OpenTelemetry"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds tool-governance evidence fields for model/tool spans, managed telemetry settings, and content capture defaults."
+    },
+    {
+      "factual_summary": "GitHub Copilot app sandboxing separates filesystem, network, and credential policy for local sessions and can be tightened by enterprise-managed settings.",
+      "follow_up_note": "Pair with MCP/tool-call governance as host execution control evidence.",
+      "leaf_id": "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "named_entities": [
+        "GitHub Copilot app",
+        "local sandboxing"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-23",
+      "why_it_matters_for_leaf": "Adds tool-call governance evidence for local execution boundaries and fail-closed sandbox enforcement before command execution."
+    },
+    {
+      "factual_summary": "GitHub repository-level Copilot metrics now split human-reviewed pull request timing into ready-to-first-review, first-to-final-review, and final-review-to-merge stages, with median and p90 values.",
+      "follow_up_note": "Could support source-workflow feed fields for staged workflow evidence and p90 outliers.",
+      "leaf_id": "docs/wiki/source-workflows/automated-update-feeds.md",
+      "named_entities": [
+        "GitHub Copilot usage metrics",
+        "pull_request_review_times"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds automated-feed/operational telemetry evidence for preserving staged timing fields instead of only aggregate PR counts when monitoring AI-assisted development workflow changes."
+    },
+    {
+      "factual_summary": "GitHub usage metrics added PR review-stage medians and p90 timings, excluding Copilot/bot reviews from this human-review timing section.",
+      "follow_up_note": "Use for agent cost/adoption telemetry focused on human review burden.",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "named_entities": [
+        "GitHub Copilot usage metrics",
+        "pull request review stages"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds cost/adoption telemetry evidence: review capacity and bottleneck measurement should separate human review stages and avoid treating bot reviews as equivalent."
+    },
+    {
+      "factual_summary": "SpecPilot reports an incident summary where a formatting-tool failure caused an agent to loop through more than 15,000 API calls and roughly $50,000 in charges in under an hour.",
+      "follow_up_note": "Confirm primary report during ingest; use as cost-circuit-breaker practice evidence.",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "named_entities": [
+        "SpecPilot",
+        "Mandiant AI Risk and Resilience report"
+      ],
+      "source_url": "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+      "upstream_owned_entities": [
+        "Mandiant"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds concrete cost-telemetry/circuit-breaker evidence for per-task spend caps, call volume limits, and loop termination tied to workflow safety."
+    },
+    {
+      "factual_summary": "The MCP working session frames skills as structured instructions for agent workflows and context that may be discovered and consumed through MCP.",
+      "follow_up_note": "Update durable instruction page only for local skills-versus-MCP boundary if ingested.",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "named_entities": [
+        "Model Context Protocol",
+        "Skills Over MCP Working Group",
+        "SEP-2640"
+      ],
+      "source_url": "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "SEP-2640"
+      ],
+      "visible_published_or_updated_at": "2026-09-22",
+      "why_it_matters_for_leaf": "Adds durable-instruction boundary evidence: skill files remain readable workflow procedure, while MCP discovery introduces registry/client/SDK governance concerns."
+    },
+    {
+      "factual_summary": "GitHub weekly notes say shared organization and enterprise skills plus organization-managed custom instructions now work in local and Copilot agent sessions for JetBrains.",
+      "follow_up_note": "Use for owner-reviewed shared skill/custom-instruction governance.",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "named_entities": [
+        "GitHub Copilot in JetBrains",
+        "shared organization skills",
+        "managed custom instructions"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds durable instruction operating-model evidence for centrally shared skills and managed custom instructions that affect local and agent sessions."
+    },
+    {
+      "factual_summary": "Agentic autofix now stores successful fix patterns as Copilot Memory for future security alerts and other Copilot features.",
+      "follow_up_note": "Route to skill/memory provenance and security autofix gates.",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "named_entities": [
+        "GitHub agentic autofix",
+        "Copilot Memory"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "visible_published_or_updated_at": "2026-09-25",
+      "why_it_matters_for_leaf": "Adds durable memory/instruction evidence: learned patterns should be treated as reusable guidance with provenance, scope, and retirement review."
+    }
+  ],
+  "run_timestamp_local": "2026-09-25T21:00:20-0400",
+  "run_timestamp_utc": "2026-09-26T01:00:20Z",
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2609.15906",
+    "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference",
+    "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+    "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/",
+    "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+    "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+    "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+    "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+    "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+    "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+    "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+    "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+    "https://www.sonarsource.com/resources/library/code-review-ai-agent/",
+    "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md": [
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available/"
+    ],
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference"
+    ],
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md": [
+      "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/",
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+    ],
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": [
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html"
+    ],
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": [
+      "https://www.thecodew.com/2026/09/developer-tools-watch-ai-coding-agents-software-development-workspaces.html",
+      "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+    ],
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": [
+      "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+      "https://arxiv.org/abs/2609.15906"
+    ],
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": [
+      "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/",
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "https://www.sonarsource.com/resources/library/code-review-ai-agent/",
+      "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [
+      "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-plugin-reference",
+      "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "https://specpilot.dev/blog/ai-coding-agent-supply-chain-worm/"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "https://meet.modelcontextprotocol.io/2026/09/skills-over-mcp-working-session-bi-weekly--MYFUKU5zgMla"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Anthropic",
+    "Claude Code",
+    "Codex",
+    "GitHub",
+    "GitHub Copilot",
+    "GitHub MCP server",
+    "Gitar",
+    "JetBrains",
+    "Lumos",
+    "Mandiant",
+    "Microsoft Entra ID",
+    "Model Context Protocol",
+    "OpenTelemetry",
+    "Rust",
+    "SEP-2640",
+    "Shai-Hulud",
+    "Sonar"
+  ]
+}
