@@ -11,6 +11,8 @@ tags: ["retrieval-and-tools"]
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds MCP-served playbook and agent-manager evidence. Tool governance should distinguish raw code search, procedural playbooks, docs/wiki access, runbooks, observability context, feature flags, task-system controls, and data-platform tools, then bind each tool class to identity, lifecycle, sandbox, approval, telemetry, and revocation evidence.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds tool telemetry, sandbox, and runtime-enforcement evidence. Tool governance should preserve model/tool spans, managed telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, and fail-closed sandbox results before a local coding-agent action is trusted. Runtime MCP governance also reinforces that approved inventory is insufficient when the authorization decision needs to happen at the point of action.
+
 Tool calls turn model intent into software-mediated action. The model requests an action with arguments, the harness validates schema and permissions, software executes outside the model, and the result becomes context for a continuation or final answer.
 
 Dynamic context tools sit between retrieval and action. They let a model request targeted additional information when the application cannot know all needed context upfront. Action tools perform governed operations such as reading, writing, scheduling, querying, transforming, or updating external systems.
@@ -220,10 +222,13 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Treat sandboxed generated-code execution inside an MCP server as a separate tool substrate with caller permission checks, intermediate-data minimization, deterministic join/filter evidence, and output-size controls.
 - Separate skills, custom agents, MCP servers, slash commands, plugins, connection attempts, approved calls, and successful side effects in tool telemetry and enablement scorecards.
 - Keep MCP server registration, tool inventory, approval prompts, runtime enforcement, and sandboxed code execution as separate governable events.
+- Preserve model/tool spans, telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, sandbox result, and fail-closed outcome when local agent tools execute through a governed shell.
+- Enforce action-time MCP policy for tool calls that can read, write, spend, deploy, or mutate external state, even when the server is already inventoried.
 
 ## Authoritative Sources
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)

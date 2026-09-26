@@ -98,6 +98,8 @@ The September 7 raw sources add human-loop and concurrent-work trajectory eviden
 
 The September 15-16 raw sources add autonomous-testing, independent-assurance, and technical-debt audit evidence. The [leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json) records governance-readiness gaps for agentic testing and independent QA caveats, while the [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) records specialized multi-agent technical-debt audits. Locally, trajectory evaluation should score whether autonomous workflows preserve independent assurance, visual or runtime validation, retained pass/fail evidence, and role-specific findings for architecture, security, performance, testing, and code quality.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds held-out execution and professional-judgment evidence. A coding-agent trajectory can be evaluated by freezing generated programs or artifacts, running them in held-out environments, preserving prompts and released code when available, and scoring whether the path produced a robust solution rather than only an interactive success. DAYJOB-style professional-judgment signals stay upstream-owned or source-specific, but locally they reinforce full-workflow task coverage.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -136,10 +138,12 @@ The September 15-16 raw sources add autonomous-testing, independent-assurance, a
 - Preserve concurrent-agent identity, async-question state, recovery path, and peer-steering messages when evaluating long-running or multi-agent trajectories.
 - Record fleet-policy decisions, audit integrity, and sandbox-control evidence when parallel runs coordinate or execute remotely.
 - Score independent assurance, visual validation, retained pass/fail artifacts, governance readiness, production-impact gates, kill-switch availability, and role-specific technical-debt findings when autonomous agents influence release decisions.
+- Preserve frozen generated artifacts, held-out execution environments, released prompts or code when available, simulator or checker results, and professional-judgment task evidence when evaluating agent trajectories beyond ordinary code patches.
 
 ## Authoritative Sources
 
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
@@ -209,6 +213,7 @@ The September 15-16 raw sources add autonomous-testing, independent-assurance, a
 ## Maintenance Notes
 
 - Maintained on 2026-09-15 with independent-assurance, visual-validation, governance-readiness, production-gate, kill-switch, and specialized technical-debt audit evidence.
+- Maintained on 2026-09-25 with frozen generated artifacts, held-out execution, prompt/code release, and professional-judgment workflow-eval evidence.
 - Maintained on 2026-09-07 with human-steering, recovery-behavior, attention-state, concurrent-lane, and adaptation-quality trajectory evidence.
 - Maintained on 2026-09-01 with supervisory-monitor, abstention, targeted-nudge, safe-output, grader-pass-rate, blocked-network, cooldown, and stop-after evaluation evidence.
 - Maintained on 2026-09-06 with concurrent-agent, async-question, recovery-path, peer-steering, fleet-policy, audit-integrity, and sandbox-control trajectory evidence.

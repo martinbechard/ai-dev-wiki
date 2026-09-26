@@ -75,6 +75,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds proof-of-presence and planning-control evidence. High-impact repository or organization actions should preserve the human freshness check, identity-provider challenge, affected action type, and unavailable or future support caveats. Planning systems that launch agents should also preserve durable work IDs, lead-team ownership fields, model-routing decisions, setup-time secret exposure, token revocation audit entries, and comment-to-session routing evidence.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) reinforces action-time authority. Human-presence challenges, IdP re-authentication, and MCP governance tools are local evidence that inventory is not enough: delegated authority should be checked when a sensitive repository, organization, or MCP tool action is requested. Broad GitHub, Microsoft Entra ID, Lumos, Claude Code, and Codex facts stay upstream-owned.
+
 ## Practice Boundaries
 
 - Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
@@ -122,10 +124,12 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Record contestability, multi-hop delegation, provenance, credential rotation, and exposure-path review for non-human agent identities.
 - Preserve human-presence challenge evidence for high-impact repository actions instead of treating an existing authenticated session as fresh delegated authority.
 - Preserve planning-system work IDs, lead-team ownership, setup-secret exposure, model-routing policy, revocation audit entries, and comment-to-session routing when issue systems become agent control planes.
+- Enforce action-time authority checks for high-impact repository, organization, and MCP-mediated tool actions, preserving the requested payload, policy result, human-presence challenge, and IdP response when applicable.
 
 ## Authoritative Sources
 
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -186,6 +190,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Maintenance Notes
 
 - Maintained on 2026-09-21 with credential-inventory export evidence for delegated-authority audits.
+- Maintained on 2026-09-25 with action-time authority, proof-of-presence, IdP challenge, and MCP runtime policy evidence.
 - Maintained on 2026-09-23 with credential inventory, audit-log join, task-record, target-scope, last-use, and revocation evidence.
 - Maintained on 2026-09-19 with provider-neutral identity, delegated-authority, token-exchange, lifecycle, suspension, and revocation evidence.
 - Maintained on 2026-09-18 with authorization-architecture, prompt-injection-as-bypass, non-human identity inventory, credential-rotation, and exposure-path evidence.

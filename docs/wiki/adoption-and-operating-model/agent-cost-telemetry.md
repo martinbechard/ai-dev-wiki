@@ -126,6 +126,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 The September 20 raw sources add acceptance-cost and bounded-repository automation evidence. The [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) frames token spend, retries, review time, incidents, post-deployment rework, and unverified generated code as one engineering-cost ledger. It also records repository-agent workflow guidance to measure cost per accepted suggestion plus reviewer correction time, rather than raw suggestion count or nominal model spend. Locally, a cheap run is not cheap when it creates extra correction work, incident load, or production rework.
 
+The September 25 raw sources add review-stage and runaway-loop evidence. The [leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) records pull-request review-stage medians and p90s that separate human review stages and bot reviews; the [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) records secondary reporting about runaway API-call loops and long-horizon cost drivers. Locally, review capacity, call-volume limits, spend caps, context and tool-definition cost, and subagent fan-out should be joined before teams expand standing agent loops.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -205,10 +207,14 @@ The September 20 raw sources add acceptance-cost and bounded-repository automati
 - Treat rolling adoption-phase populations as enablement signals that still need accepted-outcome, review-quality, and workflow-owner joins.
 - Join token spend, retry loops, production incidents, post-deployment rework, senior-review load, and accepted outcomes before calling an agent workflow cheap or expensive.
 - Track cost per accepted suggestion or accepted change plus reviewer correction time for repository automation, especially when agents produce many small suggestions.
+- Separate human review-stage timing from bot review activity when review capacity is part of cost telemetry.
+- Set per-task spend, call-volume, retry, context-growth, tool-definition, and subagent fan-out limits for long-running or delegated workflows.
 
 ## Authoritative Sources
 
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
+- [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)

@@ -41,6 +41,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Coding-agent rankings should be mapped to local task shape, repository exploration needs, accepted-change quality, and verification cost.
 - Leaderboard movement should trigger representative workflow calibration before model or assistant defaults change.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds professional-judgment and program-synthesis benchmark evidence. Calibration suites should include realistic requests that require context interpretation and end-to-end professional judgment when those workflows are the target. When a benchmark freezes agent-generated programs and tests them on held-out instances, local calibration should preserve that separation between interactive development success and held-out execution success.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -63,10 +65,12 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 - Compare dollars per completed task, tokens, wall-clock time, and workflow fit before adopting benchmark rankings or community telemetry as operating defaults.
 - Include long-horizon state management, final deliverable repair, adversarial test-suite auditing, role-grounded rubrics, repository evidence, and codebase-health criteria when those match the local workflow.
 - Treat coding-leaderboard updates as prompts to rerun representative local tasks before changing model, assistant, or effort defaults.
+- Include professional-judgment tasks, held-out execution checks, frozen generated artifacts, and task-environment separation when calibrating agents meant to solve job-like or simulation-backed workflows.
 
 ## Authoritative Sources
 
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -110,6 +114,7 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-21 with harness-efficiency, review-coverage, evaluator-authority, and workload-mix calibration evidence.
+- Maintained on 2026-09-25 with professional-judgment, frozen-artifact, held-out execution, and simulation-backed calibration evidence.
 - Maintained on 2026-08-29 with coding-leaderboard methodology, live-arena, benchmark-cross-check, accepted-change, and verification-cost calibration evidence.
 - Created on 2026-06-23 to hold representative workflow calibration and local-model drift-check practice.
 - Maintained on 2026-06-26 with prompt-provenance, human-review behavior, trace-linked quality, retrieval, tool-call, cost, and latency calibration signals.

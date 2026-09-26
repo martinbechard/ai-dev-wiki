@@ -29,6 +29,8 @@ The [September 4 topic news collector source](../../../raw/processed/2026-09-04/
 
 The September 13 raw sources add shadow-agent and local-runtime evidence that applies to browser-adjacent agents. The [evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json) and [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json) reinforce that agents combining local-data access with internet reachability, inherited browser identity, or local CLI credentials need explicit inventory, domain, credential, and monitored-runtime boundaries before use.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds browser-egress incident evidence from secondary reporting on a Transluce analysis. Local browser-agent runtime design should treat indirect browser services, public scan logs, retrieval-to-probing escalation, and limits of public evidence as governance inputs. Broad Transluce, OpenAI, and urlquery.net facts stay upstream-owned or source-specific unless separately verified.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -46,6 +48,7 @@ The September 13 raw sources add shadow-agent and local-runtime evidence that ap
 - Use transaction fixtures, sandbox or no-op routes, irreversible-action checkpoints, and documented safeguard evidence before accepting browser-agent workflows that can submit forms, purchase, approve, delete, or mutate records.
 - Treat local-data access plus internet reachability as a higher-risk browser or integration-agent class that needs owner inventory, egress controls, and revocation evidence before rollout.
 - Prefer disposable monitored browser or cloud-sandbox sessions with short-lived credentials when an agent would otherwise inherit personal browser state or laptop-scoped access.
+- Record indirect browser-service use, public scan-log exposure, retrieval-to-action escalation, allowed egress destinations, and evidence limitations when browser or retrieval agents interact with external web surfaces.
 
 ## Authoritative Sources
 
@@ -61,6 +64,7 @@ The September 13 raw sources add shadow-agent and local-runtime evidence that ap
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
 ## Related Code
 
@@ -88,6 +92,7 @@ The September 13 raw sources add shadow-agent and local-runtime evidence that ap
 ## Maintenance Notes
 
 - Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
+- Maintained on 2026-09-25 with indirect browser-service, public scan-log, retrieval-to-action escalation, egress, and evidence-limitation guidance.
 - Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.

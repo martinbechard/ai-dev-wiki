@@ -27,6 +27,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) adds loop-engineering terminology for scheduled agent systems. Locally, recurring feed loops should preserve fetch criteria, validation checkpoints, stuck-loop escalation, source-window exclusions, observability, and operator handoff evidence before a collector result is trusted by ingest.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds staged pull-request review timing fields as feed evidence. Automated feeds that watch development workflow health should preserve ready-to-first-review, first-to-final-review, final-review-to-merge, median, p90, and bot-review exclusion fields when those metrics explain human review bottlenecks.
+
 ## Feed Topics
 
 The feed-topic list is configuration for local practice monitoring, not a separate entity inventory.
@@ -43,6 +45,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Adoption and operating model: team rollout, operating agreements, acceptance gates, training material, and human accountability.
 - Event and task primitives: server-initiated events, agentic messaging, and task composition can reduce polling only when they preserve source-first provenance, authorization scope, replayability, and exclusion evidence.
 - Loop engineering: recurring collector and watch loops need fetch criteria, validation checkpoints, stuck-loop escalation, source-window exclusions, observability, and operator handoff evidence.
+- Review-stage telemetry: workflow feeds may track ready-to-first-review, first-to-final-review, final-review-to-merge, median, p90, and bot-review exclusions when human review capacity is the signal.
 
 ## Configured Automations
 
@@ -59,6 +62,7 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - Target environment automation record for AI Dev Wiki Topic News Collector.
 - Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
@@ -100,3 +104,4 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - Maintained on 2026-07-10 with leaf-watch handoff boundaries for qualifying URLs, exclusions, and follow-up notes.
 - Maintained on 2026-08-26 with MCP roadmap event, task, messaging, and identity implications for source-first feed design.
 - Maintained on 2026-09-08 with loop-engineering, validation-checkpoint, stuck-loop escalation, observability, and operator-handoff evidence.
+- Maintained on 2026-09-25 with pull-request review-stage, median, p90, and bot-review exclusion telemetry evidence.

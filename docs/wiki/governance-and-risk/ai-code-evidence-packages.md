@@ -19,6 +19,8 @@ The [September 21 topic news collector source](../../../raw/processed/2026-09-21
 
 The September 22 [leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json) adds AI-review lifecycle, feature-engagement, and change-level governance evidence. Broad GitHub, Copilot, DETENT, and CloudBees coverage stays upstream; locally, evidence packages should preserve review overview state, open or resolved findings, previously missed findings, resolution reasons, generated commit-message evidence, feature-specific engagement, customization adoption metrics, owner and reviewer state, build or scan results, cost attribution, and human acceptance evidence as one inspectable record.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds decision-log evidence. Agentic coding can increase decision throughput faster than organizational memory, so generated-code evidence packages should preserve rationale for consequential changes, alternatives considered, tradeoffs, operational implications, and revisit triggers when those decisions affect future review, onboarding, incidents, or audits.
+
 This page owns the generated-code evidence package. [Intelligent code review](../coding-practices/intelligent-code-review.md) owns review execution, and [governance controls for agents](governance-controls-for-agents.md) owns the broader local control model.
 
 ## Practice Boundaries
@@ -33,10 +35,12 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - Include priority, risk, owner, blocker, dependency, and effort signals when generated pull-request volume exceeds ordinary reviewer capacity.
 - Keep pipeline evidence, cost attribution, reviewer identity, approval state, build/test/scan results, and release visibility joined when generated changes move toward production.
 - Preserve AI-review finding lifecycle, resolution reason, generated commit-message, feature-engagement, customization telemetry, and human acceptance-chain evidence when they affect whether generated code is trusted.
+- Include decision-log entries for consequential AI-assisted changes when the rationale, alternatives, tradeoffs, operational implications, or revisit triggers affect future trust in the code.
 
 ## Authoritative Sources
 
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
@@ -70,5 +74,6 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 - Maintained on 2026-09-21 with pipeline-governance evidence package scope from the topic news collector.
 - Maintained on 2026-09-22 with AI-review lifecycle, feature-engagement, customization-telemetry, and acceptance-chain evidence.
+- Maintained on 2026-09-25 with decision-log, rationale, alternatives, tradeoff, operational implication, and revisit-trigger evidence.
 - Maintained on 2026-09-15 with repository metadata, system-of-record workflow, verified-inventory, security-baseline, and PR-triage evidence.
 - Created on 2026-09-14 from AI-assisted software development procedure evidence in the September 15 topic news collector.

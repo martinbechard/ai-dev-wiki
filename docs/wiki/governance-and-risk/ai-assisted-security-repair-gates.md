@@ -60,6 +60,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Hidden data inconsistency.
 - Disclosure decision and mitigation review.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds repair-memory, supply-chain incident, and AI-review evidence. Security autofix memories can speed recurring fixes only when fix-pattern provenance, scope, stale-pattern review, and owner acceptance are visible. Secondary incident summaries should remain attributed unless primary evidence is available; locally they still reinforce dependency verification, task-scoped credentials, irreversible-action approval, cost or call circuit breakers, and deterministic scanner separation.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -96,10 +98,13 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Distinguish defensive security repair from exploit enablement, and require constrained tools, authorized targets, isolated cleanup fixtures, rollback proof, and human review when agent work touches exploit code or destructive scripts.
 - Verify agent identity, reachable tools, component provenance, action traces, termination criteria, and human security review before security repair or deployment workflows trust agent-generated output.
 - Preserve unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, disclosure-decision, and mitigation-review evidence when agent behavior crosses from task failure into security or safety incident territory.
+- Treat reusable security-fix memories as draft repair guidance until provenance, scope, stale-pattern risk, scanner evidence, tests, and human review pass.
+- Pair AI security-review findings with deterministic scanners and CI evidence, keeping secondary incident summaries attributed when primary reports are not available.
 
 ## Authoritative Sources
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
 - [governance controls for agents](governance-controls-for-agents.md)
 - [sensitive data and supply-chain controls](sensitive-data-and-supply-chain-controls.md)
@@ -151,6 +156,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-18 with misalignment-disclosure, unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, and mitigation-review gates.
+- Maintained on 2026-09-25 with security autofix memory provenance, stale-pattern review, dependency verification, task-scoped credential, irreversible-action, circuit-breaker, and deterministic-scanner evidence.
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.
 - Maintained on 2026-07-04 with scan-to-merge severity, triage, rescan, regression, and human merge-review gates.
 - Maintained on 2026-07-06 with agent-powered vulnerability scanning setup, resumability, revalidation, export, and sandbox gates.

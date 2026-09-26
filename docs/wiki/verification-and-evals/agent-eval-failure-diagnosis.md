@@ -24,6 +24,8 @@ Failure diagnosis should identify the failure class before changing the agent. C
 
 The evidence package should include the task, initial state, allowed tools, transcript, tool calls, expected final state, actual final state, trial count, and failed check.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds self-improvement and cost-failure evidence. When a harness tries to improve itself or a long-running agent loop scales up, diagnosis should separate sparse-update overfitting, eval leakage, stability-threshold failures, excessive context or tool-definition cost, subagent fan-out, and runaway API-call loops before changing model routes or prompts.
+
 ## Practice Boundaries
 
 - Include knowledge-gap canaries or absence tests when diagnosing retrieval-backed agents so fabrication and failure-to-abstain become visible.
@@ -35,10 +37,12 @@ The evidence package should include the task, initial state, allowed tools, tran
 - Run repeated trials when nondeterminism, routing, or tool timing could affect the result.
 - Gate recurring prompt, policy, tool, or agent changes through pull-request checks or equivalent reviewable change records.
 - Convert incident patterns from [agent incident reporting](../governance-and-risk/agent-incident-reporting.md) into targeted eval cases when the workflow is expected to recur.
+- Separate eval leakage, self-improvement overfitting, unstable sparse updates, excessive context growth, tool-definition cost, subagent fan-out, and runaway call loops before treating a failed long-horizon run as only a reasoning failure.
 
 ## Authoritative Sources
 
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [verification loops and evals](verification-loops-and-evals.md)
@@ -70,5 +74,6 @@ The evidence package should include the task, initial state, allowed tools, tran
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with knowledge-gap canary, abstention, observability, and completed-task evaluation evidence.
+- Maintained on 2026-09-25 with self-improvement overfitting, eval leakage, stability-threshold, context-cost, subagent fan-out, and runaway-loop diagnosis evidence.
 
 - Created on 2026-09-16 from raw-source evidence about practical AI-agent eval design and failure-mode separation; next check should map real failed eval cases to the listed diagnosis buckets before adding more categories.

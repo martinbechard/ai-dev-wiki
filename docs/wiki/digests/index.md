@@ -48,6 +48,7 @@ The [current September digest](2026-09.md) records the active month in item-leve
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-25 with the September 25 leaf-watch and September 26 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-25 with the September 24-25 raw ingest digest scope.
 - Maintained on 2026-09-24 with the September 23-24 raw ingest digest scope.
 - Maintained on 2026-09-23 with the September 22-23 raw ingest digest scope.

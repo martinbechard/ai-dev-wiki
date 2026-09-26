@@ -49,6 +49,8 @@ The September 22-23 raw sources add instruction-file portability and hygiene evi
 
 The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds shared-skill, organization-managed custom-instruction, tool-scoped MCP, and memory-placement evidence. Locally, repository guidance should hold stable, scoped, reviewable behavior control, while changing decisions and team memory need owner, status, stale-fact handling, and cross-agent retrieval checks before they are promoted into shared context.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds instruction-loader conformance evidence from an independent technical write-up. The local issue is not broad Claude Code product behavior, which stays upstream-owned; it is that teams should verify required repository instruction files reached the active model path. Instruction-file checks should fail visible when telemetry-backed feature flags, fallback loaders, or product settings prevent required guidance from loading.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -86,6 +88,8 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Treat AGENTS.md as a portable repository instruction surface when supported by the active agent, but keep personal memory, temporary handoffs, and mutable team decisions out of it unless they are promoted with owner, scope, status, and replacement evidence.
 - Separate shared skills, organization-managed custom instructions, tool-scoped MCP controls, plan approvals, and team memory so no layer silently expands another layer's authority.
 - Require memory entries to carry scope, owner, status, freshness or stale-fact handling, and cross-agent retrieval-test evidence before they become shared operating context.
+- Test instruction-file loading through an observable conformance check, not only by checking that AGENTS.md or another repository instruction file exists on disk.
+- Fail visible when a supported instruction layer is skipped because of feature flags, telemetry gates, product settings, or fallback-loader behavior.
 
 ## Authoritative Sources
 
@@ -93,6 +97,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
@@ -146,6 +151,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Maintained on 2026-09-07 with skill, rules-file, and retrieved-context placement boundaries.
 - Maintained on 2026-09-23 with AGENTS.md fallback, repository-instruction hygiene, personal-memory, task-handoff, and owned-decision boundaries.
 - Maintained on 2026-09-24 with shared-skill, custom-instruction, tool-scoped MCP, plan-approval, and team-memory placement evidence.
+- Maintained on 2026-09-25 with instruction-loader conformance, fail-visible missing-guidance, feature-flag, telemetry-gate, and fallback-loader evidence.
 - Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.

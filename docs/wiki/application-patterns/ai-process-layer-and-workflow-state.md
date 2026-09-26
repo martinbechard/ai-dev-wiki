@@ -47,6 +47,8 @@ The September 4 raw sources add workflow-state and checkpoint evidence:
 - The [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json) records multi-root sessions, session hierarchies, attention status, Agent Merge, reusable workflow identity, and human checkpoints as durable states.
 - Locally, the process layer should persist which state caused a pause, which model and budget policy applied, which session branch or root was active, and which human checkpoint released or redirected the workflow.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds managed telemetry evidence for agent sessions. Session flow, model requests, tool use, managed telemetry settings, and content-capture defaults are process-layer state because they explain what the agent did without making prompts and responses part of central telemetry by default. Broad GitHub Copilot and OpenTelemetry coverage remains upstream-owned.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -70,10 +72,12 @@ The September 4 raw sources add workflow-state and checkpoint evidence:
 - Persist declarative action state, checkpoints, human-input requests, telemetry hooks, REPL histories, memories, subagent specs, recovery state, resource accounting, and verification records outside the model transcript for long-running harnesses.
 - Persist content-exclusion policy, model default, conversation branch, prompt timeline, collaboration surface, permission mode, UI resource boundary, approval state, and authoritative action result when agent work crosses desktop, CLI, chat, or application surfaces.
 - Persist model and budget policy, pause reason, monitor decision, session hierarchy, active root, merge state, reusable-workflow identity, and human-checkpoint result when long-running agent work can branch or stop.
+- Persist agent-session flow, model-request spans, tool-use spans, managed telemetry settings, and content-capture policy when telemetry is used to reconstruct workflow state.
 
 ## Authoritative Sources
 
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -121,6 +125,7 @@ The September 4 raw sources add workflow-state and checkpoint evidence:
 ## Maintenance Notes
 
 - Maintained on 2026-09-04 with budget-policy, model-route, pause-monitor, session-hierarchy, active-root, merge-state, reusable-workflow identity, and checkpoint-state evidence.
+- Maintained on 2026-09-25 with session-flow, model-request, tool-use, telemetry-setting, and content-capture policy evidence.
 - Maintained on 2026-08-29 with AI-native orchestration, cross-surface action, approval-point, owner, evidence, and rollback workflow-state signals.
 - Created on 2026-06-23 from local source guidance on AI process layers, workflow state, validation loops, tools, checkpoints, and compaction.
 - Maintained on 2026-07-02 with operational-readiness, workflow-memory, citation, logging, approval, and handoff-state requirements.

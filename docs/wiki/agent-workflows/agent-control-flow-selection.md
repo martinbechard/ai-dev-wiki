@@ -22,6 +22,8 @@ The September 18 raw sources add a productized coordinator-worker signal from [C
 - The shared-memory update path.
 - The merge or conflict evidence that proves workers rejoined the project safely.
 
+The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds another coordinator-worker workspace signal. Local control-flow selection should treat task-planning workspaces, branch-isolated workers, central progress monitoring, validation, tests, and pull-request creation as long-horizon harness responsibilities rather than as ordinary autocomplete. Broad Claude Code Projects, GitHub MCP server, and AI coding-agent product facts stay upstream-owned.
+
 ## Practice Boundaries
 
 - Prefer fixed workflows when required stages, evidence gates, and approvals are known before execution.
@@ -30,6 +32,7 @@ The September 18 raw sources add a productized coordinator-worker signal from [C
 - Evaluate long-horizon harnesses when file work, context offloading, delegated investigation, persistence, or recovery are required by the task.
 - Classify outer orchestration separately from inner executors so framework names do not hide workflow control.
 - Treat coordinator-worker project surfaces as long-horizon harnesses when they combine shared goals, parallel threads, per-thread branches, project memory, and conflict resolution.
+- Require coordinator-worker workspace runs to preserve plan ownership, worker branch isolation, validation evidence, pull-request packaging, and central progress state before treating parallel coding work as ready for merge.
 - Measure completion quality, tool and model calls, latency, recovery, context handling, and gate observance before claiming one control flow is better.
 - Route broad ReAct, LangGraph, Deep Agents, and planning-architecture background to the upstream AI wiki.
 
@@ -37,6 +40,7 @@ The September 18 raw sources add a productized coordinator-worker signal from [C
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
+- [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md)
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
 - [subagent coordination](subagent-coordination.md)
@@ -71,4 +75,5 @@ The September 18 raw sources add a productized coordinator-worker signal from [C
 ## Maintenance Notes
 
 - Maintained on 2026-09-18 with coordinator-worker project orchestration, per-thread branch, shared-memory, and conflict-resolution evidence.
+- Maintained on 2026-09-25 with workspace orchestration, branch-isolated worker, validation, pull-request packaging, and central progress evidence.
 - Created on 2026-09-17 from source-backed research on ReAct, Deep Agents, planner-executor patterns, and workflow selection; next check should verify whether upstream technique leaves cover ReAct and planning architectures before adding more local detail.

@@ -47,6 +47,8 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) adds compression-attribution evidence. RAG summaries can appear supported by intermediate compressed summaries while losing attribution to the original source spans, so local evals should test re-attribution to original documents after compression, not only final answer quality or citation presence.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds codebase-RAG verification-cost evidence. A retrieval method can look token-efficient while fabricating citations or hiding harness bugs unless the eval resolves cited files and source spans. Local RAG evaluation should budget for citation resolution, original-source checks, and harness-bug discovery instead of treating cheap scoring as enough.
+
 ## Practice Boundaries
 
 - Add absent-answer canaries to RAG evaluation alongside source-span attribution, ranking, chunking, and answer-quality checks.
@@ -81,10 +83,12 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Use bounded corrective-RAG graphs when retrieval complexity justifies them, with typed grader outputs, retry caps, fallback search or rewrite paths, groundedness checks, usefulness checks, and failure-rate telemetry.
 - Test compressed or summarized retrieval outputs against original source spans before accepting citations as grounded.
 - Preserve the path from original source span to chunk, compressed summary, generated answer, and final citation when compression is part of the RAG pipeline.
+- Budget codebase-RAG evals for resolvable citation checks, source-span verification, and harness-bug discovery before accepting token-savings claims.
 
 ## Authoritative Sources
 
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
@@ -132,6 +136,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with knowledge-gap canary and abstention-test evidence.
+- Maintained on 2026-09-25 with citation-resolution, source-span verification, token-savings, and harness-bug discovery evidence.
 
 - Created on 2026-06-23 to hold RAG quality, provenance, chunking, and reranking practice.
 - Maintained on 2026-06-26 with trace-linked retrieval provenance and engineering-memory context.

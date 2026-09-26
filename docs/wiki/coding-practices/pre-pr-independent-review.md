@@ -28,6 +28,8 @@ The September 22-23 raw sources add review-state and queue-triage evidence. The 
 
 The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds configurable review-default and huge-PR evidence. Local review operations should record who owns default AI review effort, when automatic review triggers, why a team overrides enterprise defaults, and whether the diff surface has performance, probe, and unattended-reproduction evidence before the PR is handed to scarce human review.
 
+The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds review-evidence bottleneck evidence. Pre-PR review should preserve the explanation, semantic diff, system diagram, task state, validation, and independent-review evidence that proves an agent-authored change is safe enough for human review, rather than relying on a raw diff alone. Named review products in that source remain source-specific examples unless verified separately.
+
 ## Practice Boundaries
 
 - Review the exact local diff, commit, or staged change that will become the pull request.
@@ -39,6 +41,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Triage agent-created changes by priority, risk, ownership, dependency, blocker state, effort, and review depth before consuming human reviewer time.
 - Preserve review-state groups, previously missed issue evidence, resolution reasons, generated commit-message review, stack position, status-check count, unread-update state, and review-status filters when they affect whether a PR should be opened, updated, or held.
 - Record default AI-review effort owner, automatic-review trigger, enterprise-default override reason, huge-diff performance evidence, runtime probes, and unattended repro loops when PR scale affects reviewability.
+- Preserve explanation, semantic-diff, architecture or system-state, task-state, validation, and independent-review evidence before moving high-volume agent changes into human PR review.
 
 ## Authoritative Sources
 
@@ -46,6 +49,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
+- [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [intelligent code review](intelligent-code-review.md)
@@ -77,4 +81,5 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Maintained on 2026-09-15 with AI rereview, auto-resolution, shell-validation, ensemble-review, independent-assurance, and PR-triage evidence.
 - Maintained on 2026-09-23 with review-state, resolution-reason, generated-commit-message, stack, status-check, unread-update, and review-filter evidence.
 - Maintained on 2026-09-24 with review-default ownership, automatic-review trigger, enterprise override, huge-diff performance, runtime-probe, and unattended-repro evidence.
+- Maintained on 2026-09-25 with review-evidence bottleneck, semantic-diff, task-state, validation, and independent-review evidence.
 - Created on 2026-09-14 from shift-left review evidence in the September 15 topic news collector.
