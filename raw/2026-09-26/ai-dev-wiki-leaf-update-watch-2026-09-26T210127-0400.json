@@ -1,0 +1,394 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-27T01:01:27Z",
+  "run_timestamp_local": "2026-09-26T21:01:27-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-20T01:01:27Z",
+    "end_utc": "2026-09-27T01:01:27Z",
+    "policy": "Only public sources visibly published or updated within the last 7 days relative to run time qualify. Missing, ambiguous, future-dated, boundary-only, or upstream-owned entity-only updates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe": {
+    "eligible_leaf_count": 103,
+    "selection_policy": "Unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+    "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+    "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+    "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+    "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+    "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+    "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+    "https://www.helpnetsecurity.com/2026/09/25/ariel-assaraf-coralogix-ai-agent-guardrails/",
+    "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+    "https://secbriefs.com/research/agent-authority-boundary",
+    "https://www.tomsguide.com/ai/nvidia-says-local-ai-is-here-and-it-could-change-how-you-use-ai-at-home",
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html",
+    "https://github.com/truss-agent/truss-harness",
+    "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
+    "https://github.com/nvk/llm-wiki/blob/master/plugins/llm-wiki/skills/wiki/references/ingestion.md"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-local-sandboxing-2026-09-23",
+      "source_url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "published_or_updated_at": "2026-09-23",
+      "visible_date_evidence": "GitHub Changelog page dated September 23, 2026.",
+      "factual_summary": "GitHub Copilot app introduced local sandboxing in public preview for local repository and working tree sessions, with per-project filesystem, network, and credential policy controls; unsupported OS enforcement fails closed.",
+      "why_it_matters_for_leaf": "Local practice pages should treat sandbox settings as a concrete runtime control for destructive commands, prompt-injection blast-radius reduction, prototype promotion gates, and harness sizing for local sessions.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot app",
+        "GitHub Copilot CLI"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ]
+    },
+    {
+      "id": "github-copilot-opentelemetry-agent-monitoring-2026-09-22",
+      "source_url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+      "published_or_updated_at": "2026-09-22",
+      "visible_date_evidence": "GitHub Changelog page dated September 22, 2026.",
+      "factual_summary": "GitHub Copilot app added OpenTelemetry export through enterprise-managed settings so administrators can analyze agent sessions, inspect model and tool spans, and centralize telemetry settings; prompt and response capture is excluded by default.",
+      "why_it_matters_for_leaf": "This supports local guidance that user-visible progress, runtime telemetry, and cost governance should be durable harness features rather than after-the-fact notes.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "OpenTelemetry",
+        "Splunk Observability Cloud"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot app",
+        "OpenTelemetry"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ]
+    },
+    {
+      "id": "github-copilot-weekly-assisted-approvals-status-recovery-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "published_or_updated_at": "2026-09-25",
+      "visible_date_evidence": "GitHub Changelog page dated September 25, 2026.",
+      "factual_summary": "The weekly Copilot release grouped local sandboxing, OpenTelemetry, assisted approvals in JetBrains, conversation rewind for redirected agent sessions, clearer implementation-plan status, and remote Dev Container execution support.",
+      "why_it_matters_for_leaf": "The bundle shows enterprise coding agents converging on risk-tiered approvals, resumable/recoverable sessions, and remote execution surfaces that local operating models should cover together.",
+      "named_entities": [
+        "GitHub Copilot",
+        "JetBrains",
+        "VS Code",
+        "Dev Containers",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "JetBrains",
+        "VS Code"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ]
+    },
+    {
+      "id": "github-proof-of-presence-high-impact-actions-2026-09-24",
+      "source_url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "published_or_updated_at": "2026-09-24",
+      "visible_date_evidence": "GitHub Changelog page dated September 24, 2026.",
+      "factual_summary": "GitHub Enterprise Cloud public preview added proof-of-presence checks requiring interactive reauthentication or MFA before high-impact actions, with future support planned for pull request merges.",
+      "why_it_matters_for_leaf": "This is a concrete example of human presence checks for consequential operations, useful for approval boundaries, destructive-command controls, lifecycle gates, and prototype-to-cloud promotion controls.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "Microsoft Entra ID",
+        "SAML",
+        "OIDC",
+        "FDA Part 11"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Enterprise Cloud",
+        "Microsoft Entra ID"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ]
+    },
+    {
+      "id": "github-copilot-default-policy-new-features-2026-09-24",
+      "source_url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+      "published_or_updated_at": "2026-09-24",
+      "visible_date_evidence": "GitHub Changelog page dated September 24, 2026.",
+      "factual_summary": "GitHub added a global default policy for eligible generally available Copilot features and supported client capabilities, including Copilot Code Review policy and MCP server policy, with the policy taking effect October 22, 2026.",
+      "why_it_matters_for_leaf": "Local governance guidance should distinguish preview opt-in, general-availability defaults, and explicit enterprise decisions when promoting agent features into normal workflows.",
+      "named_entities": [
+        "GitHub Copilot Business",
+        "GitHub Copilot Enterprise",
+        "MCP servers",
+        "Copilot Code Review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "MCP"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ]
+    },
+    {
+      "id": "github-copilot-slack-teams-context-status-recovery-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+      "published_or_updated_at": "2026-09-25",
+      "visible_date_evidence": "GitHub Changelog page dated September 25, 2026.",
+      "factual_summary": "Copilot in Slack and Teams gained richer conversation context, links from generated GitHub work back to source discussion, model switching, default owners/repositories, duplicate issue checks, clearer long-task status, and safer repository switching.",
+      "why_it_matters_for_leaf": "This strengthens local guidance that collaboration agents need traceable source context, explicit ownership defaults, status reporting, and safeguards against stale sessions acting in the wrong repository.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ]
+    },
+    {
+      "id": "qodo-ai-code-quality-verification-bottleneck-2026-09-23",
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+      "published_or_updated_at": "2026-09-23T09:00:00-04:00",
+      "visible_date_evidence": "GlobeNewswire release timestamp September 23, 2026 09:00 ET.",
+      "factual_summary": "Qodo reported that review and validation of AI-generated code have become top delivery bottlenecks as AI expands across planning, coding, testing, review, security analysis, and bug fixing.",
+      "why_it_matters_for_leaf": "This supports local emphasis on layered review roles, lifecycle gates, and harness sizing by workflow complexity rather than a single undifferentiated AI review step.",
+      "named_entities": [
+        "Qodo",
+        "AI Code Quality Report"
+      ],
+      "upstream_owned_entities": [
+        "Qodo"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ]
+    },
+    {
+      "id": "helpnetsecurity-agent-execution-layer-guardrails-2026-09-25",
+      "source_url": "https://www.helpnetsecurity.com/2026/09/25/ariel-assaraf-coralogix-ai-agent-guardrails/",
+      "published_or_updated_at": "2026-09-25",
+      "visible_date_evidence": "Article URL and page metadata show September 25, 2026.",
+      "factual_summary": "Help Net Security interview argued that prompts can describe agent boundaries but cannot enforce them, and that controls should be risk-tiered because approval for every production-related action can make agents unusable.",
+      "why_it_matters_for_leaf": "Local approval-boundary and governance pages should preserve the difference between low-risk diagnostic autonomy and high-risk consequential actions.",
+      "named_entities": [
+        "Help Net Security",
+        "Coralogix",
+        "Ariel Assaraf"
+      ],
+      "upstream_owned_entities": [
+        "Coralogix"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ]
+    },
+    {
+      "id": "aws-agentcore-delegation-boundary-model-2026-09-25",
+      "source_url": "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+      "published_or_updated_at": "2026-09-25",
+      "visible_date_evidence": "AWS blog page dated 25 SEP 2026.",
+      "factual_summary": "AWS framed prompt injection, excessive agency, and information disclosure as related failures of uncontrolled delegation across trust, action, and access handoffs in agentic systems.",
+      "why_it_matters_for_leaf": "This gives a public model for routing prompt-injection guidance into architecture and authorization boundaries instead of treating it only as content filtering.",
+      "named_entities": [
+        "AWS",
+        "Amazon Bedrock AgentCore",
+        "OWASP"
+      ],
+      "upstream_owned_entities": [
+        "Amazon Bedrock AgentCore",
+        "AWS"
+      ],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md"
+      ]
+    },
+    {
+      "id": "secbriefs-agent-authority-boundary-2026-09-22",
+      "source_url": "https://secbriefs.com/research/agent-authority-boundary",
+      "published_or_updated_at": "2026-09-22",
+      "visible_date_evidence": "Page byline dated 22 Sep 2026.",
+      "factual_summary": "SecBriefs mapped enterprise AI-agent credential, plugin, runtime, and approval risks into a six-layer authority-control framework and emphasized the path from instruction to consequential action.",
+      "why_it_matters_for_leaf": "This supports local destructive-command and governance-control language focused on independent controls that can stop authority paths.",
+      "named_entities": [
+        "SecBriefs"
+      ],
+      "upstream_owned_entities": [],
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md"
+      ]
+    },
+    {
+      "id": "tomsguide-local-ai-harness-runtime-ownership-2026-09-20",
+      "source_url": "https://www.tomsguide.com/ai/nvidia-says-local-ai-is-here-and-it-could-change-how-you-use-ai-at-home",
+      "published_or_updated_at": "2026-09-20",
+      "visible_date_evidence": "Search result visible date Sun Sep 20 04:30:00 2026 UTC and article page content references local AI runtime and harness.",
+      "factual_summary": "Tom\u2019s Guide reported NVIDIA commentary that easier local model harnesses and runtimes will increase local AI adoption, framing local execution as an ownership, privacy, and cost question as agents touch personal data.",
+      "why_it_matters_for_leaf": "Local runtime pages should watch the operational split between local model execution, harness security, data ownership, and cost optimization.",
+      "named_entities": [
+        "NVIDIA",
+        "Tom\u2019s Guide"
+      ],
+      "upstream_owned_entities": [
+        "NVIDIA"
+      ],
+      "leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html",
+      "reason": "No visible publication or update date inside the strict seven-day window; crawler freshness alone is not enough.",
+      "named_entities": [
+        "Amazon CloudWatch",
+        "OpenTelemetry",
+        "OpenAI Codex",
+        "Claude Code",
+        "GitHub Copilot"
+      ],
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ]
+    },
+    {
+      "source_url": "https://github.com/truss-agent/truss-harness",
+      "reason": "GitHub repository result had crawl freshness but no visible qualifying publication or release date in the captured public result.",
+      "named_entities": [
+        "truss-harness"
+      ],
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md"
+      ]
+    },
+    {
+      "source_url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
+      "reason": "Visible publication date September 4, 2026 is outside the seven-day cutoff window for this run.",
+      "named_entities": [
+        "OpenAI",
+        "TechCrunch"
+      ],
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md"
+      ]
+    },
+    {
+      "source_url": "https://github.com/nvk/llm-wiki/blob/master/plugins/llm-wiki/skills/wiki/references/ingestion.md",
+      "reason": "Repository page has no visible qualifying update date in the captured result, and the content is a broad workflow reference rather than a new dated update.",
+      "named_entities": [
+        "llm-wiki"
+      ],
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "reason": "The new model-availability portions are broad ecosystem/product updates owned upstream; only sandboxing, telemetry, approvals, and workflow-control implications were kept locally.",
+      "named_entities": [
+        "Claude Opus 5.5",
+        "GPT-6 Sol",
+        "GPT-6 Luna",
+        "Grok 4.7",
+        "GitHub Copilot"
+      ],
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ]
+    }
+  ],
+  "counts": {
+    "selected_leaf_count": 15,
+    "source_url_checked_count": 16,
+    "qualifying_update_count": 11,
+    "excluded_candidate_count": 5
+  },
+  "federation_notes": [
+    "Broad product/model availability belongs upstream unless it changes local operating practice, guardrails, telemetry, approvals, or workflow routing.",
+    "GitHub Copilot, AWS Bedrock AgentCore, NVIDIA, OpenTelemetry, Slack, Microsoft Teams, and named model families are upstream-owned entities; this artifact records only downstream local-practice implications."
+  ],
+  "follow_up_notes": [
+    "During ingest, update only durable local practice leaves that need the operating implication; do not duplicate upstream product/model encyclopedia coverage.",
+    "Consider whether source-workflows leaves need an explicit no-update note for this batch, since no current dated public update qualified for public-topic collector or raw-project-wiki monitor practices."
+  ]
+}
