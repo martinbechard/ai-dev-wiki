@@ -30,6 +30,8 @@ The September 3 raw sources add security-control-plane and interoperability evid
 - The [leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json) supports adding pre-tool classifiers, hardened sandboxes, critic/review roles, runtime mediation, and information-flow controls for high-risk workflows.
 - The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) treats harness specs, drift checks, durable sessions, permissions, memory, cost, approvals, and sandbox settings as portable configuration evidence.
 
+The September 26 raw sources add local sandboxing, telemetry, and self-hosting sizing evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records per-project filesystem, network, and credential policy controls plus session telemetry as harness features for local coding-agent work. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records self-hosted agent stack sizing as a secondary-practice lead. Locally, harness sizing should separate orchestration, inference, embeddings, vector database, memory store, sandbox, telemetry, and compliance controls instead of sizing only by model parameters or context length.
+
 ## Practice Boundaries
 
 - Count runtime embedding, process isolation, memory overhead, startup cost, interop, supervision, monitoring, and crash recovery when choosing how large the harness needs to be.
@@ -46,6 +48,7 @@ The September 3 raw sources add security-control-plane and interoperability evid
 - Escalate from a simple agent to a loop or graph when state, recovery, approval timing, delegation topology, or operations evidence justifies the added harness machinery.
 - Add pre-tool classifiers, sandbox hardening, critic/review roles, information-flow controls, persistent-state inspection, and runtime mediation when a workflow can probe, exploit, repair, deploy, or cross trust boundaries.
 - Treat declared harness specs, drift checks, context handling, permission stance, memory behavior, cost controls, approvals, and sandbox configuration as sizing evidence when a harness must move across runtimes.
+- Size self-hosted or local coding-agent stacks by orchestration, inference, embeddings, vector storage, memory, sandbox policy, telemetry, and compliance needs rather than by model size alone.
 
 ## Authoritative Sources
 
@@ -61,6 +64,9 @@ The September 3 raw sources add security-control-plane and interoperability evid
 - [application harness patterns](application-harness-patterns.md)
 - [agent harness components](agent-harness-components.md)
 - [agent environment readiness](agent-environment-readiness.md)
+
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
 
 ## Related Code
 
@@ -86,6 +92,7 @@ The September 3 raw sources add security-control-plane and interoperability evid
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with local sandboxing, filesystem/network/credential policy, telemetry, self-hosted stack, inference, embedding, vector-store, memory, and compliance sizing evidence.
 - Maintained on 2026-09-19 with runtime-embedding, process-boundary, startup, memory, crash-isolation, interop, supervision, monitoring, and reliability sizing evidence.
 - Maintained on 2026-08-29 with model-harness, workspace-layer, durable-runtime, cost-control, and recovery-sizing inputs.
 - Created on 2026-07-28 from July 28 raw evidence about matching harness responsibilities to action and context complexity.

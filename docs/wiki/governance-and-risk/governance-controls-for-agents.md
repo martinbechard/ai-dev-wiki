@@ -111,6 +111,8 @@ The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai
 
 The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) and [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) add agent-governance and incident-reporting evidence. Locally, recurring-agent controls should prove delegated authority before they allow repeat execution.
 
+The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and agent-authority evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records local sandbox policy, centralized telemetry settings, Copilot default-policy changes, proof-of-presence checks, and public authority-boundary frameworks. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records an enterprise managed-settings validator. Locally, governance controls should treat AI feature defaults, managed JSON policy, team mappings, sandbox filesystem and network scope, telemetry content capture, and high-impact reauthentication as deployable control-plane state that must be validated before teams rely on it.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -193,6 +195,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - Preserve context-control, standards, and system-of-record ownership evidence when agent workflows span tickets, repositories, documentation, and pull requests.
 - Maintain risk-register entries with owner, tier, review date, monitoring record, audit evidence, and mitigation status for recurring or high-impact agents.
 - Route unexpected agent behavior, unauthorized communication channels, or governance-control failures through [agent incident reporting](agent-incident-reporting.md).
+- Validate managed AI settings, team mappings, default enablement policy, sandbox scope, telemetry export, and proof-of-presence requirements as enforceable control-plane state rather than treating them as product defaults.
 
 ## Authoritative Sources
 
@@ -266,6 +269,9 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -298,6 +304,7 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with managed-settings validation, default-policy, sandbox-scope, telemetry-export, proof-of-presence, and authority-boundary evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.
 - Maintained on 2026-09-05 with data-access, action-scope, attribution, lineage, SIEM-audit, and misalignment-disclosure governance evidence.
 - Maintained on 2026-09-04 with budget-expiry, AI-approval, managed-default, data-retention, pause-monitor, content-exclusion, trusted-publishing, and workflow-identity controls.

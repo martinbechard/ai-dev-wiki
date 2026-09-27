@@ -84,6 +84,8 @@ Locally, telemetry should join progress, policy, memory, execution-boundary, and
 
 The September 16 [topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json) adds request-level server health and telemetry-correlation evidence. Agent application telemetry should expose traffic, latency percentiles, status over time, endpoint hot spots, environment separation, and ranked hypotheses across metrics, logs, traces, and topology so repair agents receive evidence packages rather than isolated log snippets.
 
+The September 26 raw sources add coding-agent telemetry and shared-state surface evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records OpenTelemetry export through enterprise-managed settings, session model and tool spans, long-task status, conversation rewind, and remote execution signals. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records shared canvas-style interfaces where both user and agent can update state. Locally, progress telemetry should join structural traces, approval waits, shared UI state, originating conversation links, rewind points, and remote-run status while treating prompt or response capture as a governed content decision.
+
 ## Practice Boundaries
 
 - Expose runtime overhead, supervision, crash recovery, nested calls, retries, review pressure, and accepted-outcome cost when agent execution scales beyond one interactive turn.
@@ -128,6 +130,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 - Package metrics, logs, traces, topology, and ranked root-cause hypotheses as handoff evidence rather than sending a repair agent isolated snippets.
 - Separate structural execution traces from captured prompt, response, or tool-output content, and treat content capture as a governed telemetry setting.
 - Preserve headless probe results, runtime instrumentation, on-disk logs, health signals, and measurement-loop outcomes when agents optimize review surfaces for huge pull requests.
+- Join OpenTelemetry-style structural traces, long-task status, shared state surfaces, conversation-origin links, remote-run state, and rewind points without silently enabling prompt or response content capture.
 
 ## Authoritative Sources
 
@@ -173,6 +176,9 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -199,6 +205,7 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with OpenTelemetry export, structural traces, long-task status, shared canvas state, conversation-origin links, rewind, and remote-run evidence.
 - Maintained on 2026-09-25 with huge-PR rendering, headless probe, on-disk log, runtime instrumentation, health-signal, and measurement-loop evidence.
 - Maintained on 2026-09-21 with realtime failure-envelope redaction evidence.
 - Maintained on 2026-09-24 with structural trace versus content-capture telemetry boundaries.

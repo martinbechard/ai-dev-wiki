@@ -62,6 +62,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds repair-memory, supply-chain incident, and AI-review evidence. Security autofix memories can speed recurring fixes only when fix-pattern provenance, scope, stale-pattern review, and owner acceptance are visible. Secondary incident summaries should remain attributed unless primary evidence is available; locally they still reinforce dependency verification, task-scoped credentials, irreversible-action approval, cost or call circuit breakers, and deterministic scanner separation.
 
+The [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) adds current Copilot Memory and agentic autofix evidence. Repository-specific security memories should be treated as candidate repair knowledge, not authoritative rules: a past fix pattern needs provenance, alert scope, stale-pattern review, deterministic scanner or test evidence, and human security acceptance before it influences future code review, cloud-agent behavior, or security autofix output.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -100,6 +102,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Preserve unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, disclosure-decision, and mitigation-review evidence when agent behavior crosses from task failure into security or safety incident territory.
 - Treat reusable security-fix memories as draft repair guidance until provenance, scope, stale-pattern risk, scanner evidence, tests, and human review pass.
 - Pair AI security-review findings with deterministic scanners and CI evidence, keeping secondary incident summaries attributed when primary reports are not available.
+- Keep repository-specific autofix memories reviewable, scoped to the alert class, and separable from durable rules before allowing them to influence future repair or review behavior.
 
 ## Authoritative Sources
 
@@ -131,6 +134,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -155,6 +160,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with repository-specific autofix memory, alert-scope, stale-pattern, scanner, test, and human-security-acceptance evidence.
 - Maintained on 2026-09-18 with misalignment-disclosure, unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, and mitigation-review gates.
 - Maintained on 2026-09-25 with security autofix memory provenance, stale-pattern review, dependency verification, task-scoped credential, irreversible-action, circuit-breaker, and deterministic-scanner evidence.
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.

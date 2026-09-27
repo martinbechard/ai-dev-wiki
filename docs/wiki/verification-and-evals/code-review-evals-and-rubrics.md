@@ -87,6 +87,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 The [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) adds independent-verification and maintainer-load evidence. Review evals should distinguish code suggestion, AI code review, deterministic analysis, reasoning-based review, quality gates, tests, and human judgment, and should measure whether AI-generated patches or security findings increase maintainer triage burden without accepted fixes.
 
+The September 26 raw sources add review-stage and verification-capacity evidence. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records human pull-request review-stage metrics that exclude bot reviews, while the [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records public reporting that review and validation are scaling bottlenecks for AI-generated code. Locally, review evals should include stage-specific human latency, bot-versus-human attribution, finding-to-fix conversion, and reviewer triage burden as rubric fields.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -151,6 +153,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - Score [multi-reviewer AI code review](../coding-practices/multi-reviewer-ai-code-review.md) by role separation, disagreement retention, source grounding, and human acceptance boundaries.
 - Treat independent verification as a separate eval layer from the generator's self-review, with deterministic checks, reasoning-based review, tests, quality gates, and human judgment scored separately.
 - Include maintainer-capacity and triage-load cases when AI-generated patches or AI-found issues are proposed for open-source projects.
+- Include review-stage timing, bot-versus-human attribution, finding-to-fix conversion, and reviewer triage burden when evaluating AI review adoption.
 
 ## Authoritative Sources
 
@@ -203,6 +206,9 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -228,6 +234,7 @@ The [September 18 topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with review-stage timing, bot-versus-human attribution, finding-to-fix conversion, verification-capacity, and reviewer-triage evidence.
 - Maintained on 2026-09-16 with production review-bar scoring and routing to repository-configured and multi-reviewer AI code review leaves; next check should evaluate those focused practices through source-backed finding quality.
 - Maintained on 2026-09-05 with cross-file review, multi-model orchestration, cost-premium, Agent Merge loop, failed-check, conflict, rerun, and human-merge eval evidence.
 - Maintained on 2026-09-06 with merge-state, excluded-content, harness-risk, intervention-point, concurrent-write, and audit-trail review evidence.

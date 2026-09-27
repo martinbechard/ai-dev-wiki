@@ -74,6 +74,8 @@ The September 13 raw sources add managed-permission, agent-loop, production-read
 
 Locally, centrally managed policy, work-item standards, production blast radius, developer accountability, rollback speed, and review capacity should decide which agent actions need human approval before execution or merge.
 
+The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) adds current approval-boundary evidence from local sandboxing, assisted approvals, proof-of-presence checks, risk-tiered guardrails, and Slack or Teams agent handoffs. Approval boundaries should separate low-risk diagnostic or planning work from actions that mutate repositories, consume credentials, alter dependencies, merge pull requests, or create durable external work. For high-impact actions, a visible approval prompt is strongest when paired with scoped sandbox policy, exact target evidence, and step-up reauthentication or MFA.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -128,6 +130,7 @@ Locally, centrally managed policy, work-item standards, production blast radius,
 - Treat administrator-managed agent policy as a standing approval boundary that users and workspace settings cannot weaken.
 - Require an accountable human maintainer for production AI-assisted code, while allowing lighter review only for low-blast-radius throwaway prototypes with explicit disposal or containment.
 - Tune mandatory review, automated rollback, service criticality, and ownership together so selective review does not erase human accountability.
+- Separate diagnostic autonomy from consequential mutation, and require scoped sandbox evidence plus step-up human presence for high-impact repository, dependency, credential, merge, or external-work actions.
 
 ## Authoritative Sources
 
@@ -176,6 +179,8 @@ Locally, centrally managed policy, work-item standards, production blast radius,
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -206,6 +211,7 @@ Locally, centrally managed policy, work-item standards, production blast radius,
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with local sandboxing, assisted approval, proof-of-presence, risk-tiered guardrail, and chat-agent handoff evidence.
 - Maintained on 2026-09-05 with checkpoint-placement, trigger, irreversible-action, and adoption-incentive evidence.
 - Maintained on 2026-09-06 with asynchronous-question, session-visibility, short-lived-credential, command-digest, peer-agent steering, and approval-payload evidence.
 - Maintained on 2026-08-29 with approval-depth, persistent-agent permission ceiling, policy-default, review-effort, billing, retention, and sandbox-default evidence.

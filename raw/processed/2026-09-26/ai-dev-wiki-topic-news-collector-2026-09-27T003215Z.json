@@ -1,0 +1,358 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-27T00:32:15Z",
+  "run_timestamp_local": "2026-09-26T20:32:15-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-25T00:32:15Z",
+    "end_utc": "2026-09-27T00:32:15Z",
+    "basis": "Last 2 days relative to the automation run timestamp; date-only September 25, 2026 items are included because the publisher provides a visible in-window publication date but not a time of day."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule_applied": "Broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques remain upstream-owned; this artifact keeps only local practice, workflow, governance, verification, and adoption implications."
+  },
+  "qualifying_findings": [
+    {
+      "id": "github-copilot-slack-teams-context-traceability-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+      "source_title": "Updates to GitHub Copilot for Slack and Microsoft Teams",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher page heading shows September 25, 2026 and a 2 minute read.",
+      "short_factual_summary": "GitHub says Copilot integrations for Slack and Microsoft Teams can use files, attachments, message links, images, forwarded-message context, channel history, and thread history; created work links back to the originating conversation and includes direct links to resulting work.",
+      "why_it_matters_for_ai_assisted_development_practice": "Conversation-origin traceability is a practice pattern for source ingest and audit: team-chat context becomes part of the work package, and the resulting issue or task should preserve provenance back to the discussion that authorized it.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "Copilot cloud agent",
+        "GitHub app for Slack",
+        "GitHub app for Microsoft Teams"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "local_practice_implication": "When chat surfaces initiate agent work, local guidance should require durable links from source conversation to generated GitHub work and should treat attachments and forwarded context as captured source evidence.",
+      "follow_up_notes": "Candidate ingest destinations: source-workflows/source-reconciliation-and-routing.md, agent-workflows index or a leaf on chat-to-work routing, and governance-and-risk/ai-code-evidence-packages.md."
+    },
+    {
+      "id": "github-copilot-review-stage-metrics-api-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "source_title": "Usage metrics API adds pull request review stages",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher page heading shows September 25, 2026 and a 2 minute read.",
+      "short_factual_summary": "GitHub added pull_request_review_times metrics that split human-reviewed PR timing into ready-to-first-review, first-to-final-review, and final-review-to-merge medians and p90s; Copilot and bot reviews are ignored in this release.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI-assisted code review adoption should measure where review latency moves rather than counting review events alone. Separating human review stages from bot review helps teams avoid misattributing throughput changes to AI tooling.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot usage metrics API",
+        "pull_request_review_times",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Evaluation pages can use stage timing as an operating metric for AI-assisted review, especially when comparing AI suggestions against human review bottlenecks.",
+      "follow_up_notes": "Candidate ingest destinations: coding-practices/intelligent-code-review.md, verification-and-evals/code-review-evals-and-rubrics.md, adoption-and-operating-model/agent-cost-telemetry.md."
+    },
+    {
+      "id": "github-agentic-autofix-copilot-memory-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "source_title": "Agentic autofix now uses Copilot Memory",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher page heading shows September 25, 2026 and a 1 minute read.",
+      "short_factual_summary": "GitHub says agentic autofix reviews existing Copilot Memory entries for security-alert context and stores fix patterns as memory for future use; those memories can inform code review and cloud-agent behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Repository-specific secure fix memory is useful only if teams govern what becomes durable memory, how it is reviewed, and whether a past fix pattern applies to a new alert.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot Memory",
+        "agentic autofix",
+        "Copilot code review",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot Memory"
+      ],
+      "local_practice_implication": "Durable memory pages should distinguish approved repository conventions from merely observed fix history, especially for security repairs that may become future agent context.",
+      "follow_up_notes": "Candidate ingest destinations: governance-and-risk/ai-assisted-security-repair-gates.md, adoption-and-operating-model/durable-instructions-and-skill-files.md, context-architecture/rules-and-knowledge-layers.md."
+    },
+    {
+      "id": "github-enterprise-managed-settings-validator-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+      "source_title": "Enterprise managed settings in-product validator",
+      "publisher": "GitHub Changelog",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher page heading shows September 25, 2026 and a 1 minute read.",
+      "short_factual_summary": "GitHub added an in-product validator for enterprise managed Copilot settings that detects malformed JSON, unsupported configuration, invalid team mappings, and enforcement-blocking errors in managed-settings and team-mapping files.",
+      "why_it_matters_for_ai_assisted_development_practice": "Policy-as-file only works when malformed settings and team mapping drift are detected before teams rely on them. This is a concrete example of validating AI tool controls as deployable configuration.",
+      "named_entities": [
+        "GitHub Copilot",
+        "enterprise managed settings",
+        "copilot/managed-settings.json",
+        "copilot/team-mappings.json",
+        ".github-private"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Governance pages should treat managed AI settings as code: validate JSON, map teams explicitly, and require confirmation after default-branch changes before assuming enforcement.",
+      "follow_up_notes": "Candidate ingest destinations: governance-and-risk/governance-controls-for-agents.md, prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md."
+    },
+    {
+      "id": "github-copilot-canvases-shared-state-workflows-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture"
+      ],
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+      "source_title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "publisher": "GitHub Blog",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher byline shows September 25, 2026.",
+      "short_factual_summary": "GitHub describes Copilot app canvases as customizable interfaces shared between user and agent; canvas state can be changed through buttons, cards, filters, and controls, and the agent can use the same capabilities to update the interface.",
+      "why_it_matters_for_ai_assisted_development_practice": "Shared state surfaces can make agent work inspectable and steerable without forcing every interaction through chat. That supports progress telemetry, task boards, review checklists, and human control points as UI state rather than prose messages.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "canvases",
+        "/create-canvas",
+        "Awesome Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Awesome Copilot"
+      ],
+      "local_practice_implication": "Application-pattern pages can frame canvases as an implementation of bidirectional human-agent state, not as a product page, and compare them with runbooks, dashboards, and progress artifacts.",
+      "follow_up_notes": "Candidate ingest destinations: application-patterns/user-visible-progress-and-runtime-telemetry.md and application-patterns/declarative-agent-workflow-artifacts.md."
+    },
+    {
+      "id": "debedb-code-context-benchmark-auditable-citations-2026-09-25",
+      "topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/verification-and-evals"
+      ],
+      "source_url": "https://blog.debedb.com/2026/09/25/",
+      "source_title": "Keep, Change, Kill: What We're Doing Differently",
+      "publisher": "DEBEDb",
+      "visible_date": "September 25, 2026",
+      "date_evidence": "Publisher archive and article entry show September 25, 2026.",
+      "short_factual_summary": "The post reports a small code-context benchmark where agentic exploration with read_file/grep/glob scored highest against a pinned Java repository, while compressed or retrieved representations without reliable line spans produced fabricated or unresolved citations; the author marks the RAG row as confounded pending rerun.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local wiki already cares about code retrieval and evidence. This source is useful because it turns context strategy into an auditable harness question: line spans, control audits, printed inputs, non-empty output assertions, and cost instrumentation are part of the practice.",
+      "named_entities": [
+        "voitta-rag",
+        "llm-tldr",
+        "Repomix",
+        "Graphify",
+        "read_file",
+        "grep",
+        "glob"
+      ],
+      "upstream_owned_entities": [
+        "RAG",
+        "Repomix",
+        "Graphify",
+        "llm-tldr"
+      ],
+      "local_practice_implication": "Codebase RAG and context-packing guidance should require verifiable file:line evidence and should record harness defects as first-class eval findings rather than only ranking tools.",
+      "follow_up_notes": "Candidate ingest destinations: retrieval-and-tools/code-retrieval-evidence-patterns.md, retrieval-and-tools/rag-provenance-ranking-and-chunking.md, verification-and-evals/verification-loops-and-evals.md."
+    },
+    {
+      "id": "code-agent-review-self-hosted-agent-gpu-planning-2026-09-26",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "source_url": "https://codeagentreview.com/posts/gpu-resource-planning-for-self-hosted-agents",
+      "source_title": "GPU Resource Planning for Self-Hosted Agents",
+      "publisher": "Code Agent Review",
+      "visible_date": "September 26, 2026",
+      "date_evidence": "Publisher page byline and metadata show September 26, 2026.",
+      "short_factual_summary": "The article argues that production self-hosted agent stacks should be sized across orchestration, LLM inference, embeddings, vector database, and memory store layers; it says LLM inference and sometimes embeddings need GPU, while orchestration, vector database serving, and memory store are CPU/RAM-bound.",
+      "why_it_matters_for_ai_assisted_development_practice": "Self-hosting decisions for coding agents should be architecture- and workload-driven, not just model-size-driven. The article is a practice lead for separating inference capacity, orchestration overhead, memory, and compliance planning.",
+      "named_entities": [
+        "vLLM",
+        "Ollama",
+        "TGI",
+        "Qdrant",
+        "Weaviate",
+        "Milvus",
+        "FAISS",
+        "Mem0",
+        "Zep",
+        "Redis",
+        "LangGraph",
+        "CrewAI",
+        "Temporal"
+      ],
+      "upstream_owned_entities": [
+        "vLLM",
+        "Ollama",
+        "TGI",
+        "Qdrant",
+        "Weaviate",
+        "Milvus",
+        "FAISS",
+        "Mem0",
+        "Zep",
+        "Redis",
+        "LangGraph",
+        "CrewAI",
+        "Temporal"
+      ],
+      "local_practice_implication": "Treat the article as a secondary-practice lead for application harness sizing and adoption economics; verify specific hardware, license, and sizing claims before durable synthesis.",
+      "follow_up_notes": "Candidate ingest destinations: application-patterns/agent-environment-readiness.md, application-patterns/harness-sizing-by-workflow-complexity.md, adoption-and-operating-model/hybrid-agent-infrastructure-economics.md."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+      "visible_date": "September 23, 2026",
+      "reason": "Outside the strict two-day cutoff window for this run, despite topical relevance to AI code quality and verification."
+    },
+    {
+      "source_url": "https://www.futureproofing.dev/resources/ai-native-team/agentic-coding-workflow-2026",
+      "visible_date": "September 22, 2026",
+      "reason": "Outside the strict two-day cutoff window; crawler freshness alone is not visible publication evidence."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/agents",
+      "visible_date": "Not visible in search result; crawled today",
+      "reason": "No qualifying visible publication or update date within the window; crawler date is not source-date evidence."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/run/subagents",
+      "visible_date": "9/16/2026",
+      "reason": "Outside cutoff window even though the page is locally relevant to subagent practice."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "visible_date": "August 28, 2026",
+      "reason": "Outside cutoff window; includes future September 28 policy changes but the source publication date is stale for this collector."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+      "visible_date": "September 24, 2026",
+      "reason": "Date-only boundary item before the cutoff start; excluded rather than inferring publication time."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions/",
+      "visible_date": "September 24, 2026",
+      "reason": "Date-only boundary item before cutoff start; also mainly upstream product-governance coverage unless later routed to a local approval-boundary lens."
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+      "visible_date": "September 24, 2026",
+      "reason": "Relevant to shared agent UI patterns but outside the strict cutoff window for this run."
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "visible_date": "September 24, 2026",
+      "reason": "Outside cutoff window and partially security-specific; route to security wiki or local verification lens only if a later qualifying source appears."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2609.30233",
+      "visible_date": "September 24, 2026",
+      "reason": "Outside cutoff window and focused on task-and-motion planning rather than local AI-assisted development practice."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2609.29473",
+      "visible_date": "September 24, 2026",
+      "reason": "Outside cutoff window; relevant to education and adoption but not eligible for this run."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/appledevelopers/comments/1wow0or/anyone_else_feel_like_ai_coding_assistants_are/",
+      "visible_date": "Thursday September 24, 2026",
+      "reason": "Outside cutoff window and anecdotal; keep as watch lead for review-burden sentiment only."
+    },
+    {
+      "source_url": "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "visible_date": "September 22, 2026",
+      "reason": "Outside cutoff window and broad MCP governance product news is upstream-owned unless a local practice-specific source qualifies."
+    },
+    {
+      "source_url": "https://platform-monkey.com/guides/ai-code-review-agents",
+      "visible_date": "Last week / September 2026",
+      "reason": "Ambiguous non-specific visible date; not acceptable for strict two-day collection."
+    }
+  ],
+  "source_urls": [
+    "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+    "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+    "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+    "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+    "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+    "https://blog.debedb.com/2026/09/25/",
+    "https://codeagentreview.com/posts/gpu-resource-planning-for-self-hosted-agents"
+  ],
+  "counts": {
+    "qualifying_update_count": 7,
+    "excluded_candidate_count": 14,
+    "upstream_owned_entity_mentions_count": 31
+  },
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for scoped raw JSON artifact"
+  },
+  "blockers": [],
+  "privacy_and_sensitivity": {
+    "public_sources_only": true,
+    "local_private_content_sent_to_external_services": false,
+    "notes": "Search terms and public URLs were used externally. Local repository content was used only to apply federation and workflow rules."
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this collector; route through normal raw ingest.",
+    "Do not move this artifact to raw/processed until synthesis and verification complete.",
+    "Verify the secondary Code Agent Review hardware and licensing claims before durable wiki synthesis.",
+    "Deduplicate GitHub product entity background against the upstream AI wiki; keep only local governance, workflow, evaluation, adoption, and context implications."
+  ]
+}

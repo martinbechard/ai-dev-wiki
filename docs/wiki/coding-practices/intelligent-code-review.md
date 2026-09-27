@@ -120,6 +120,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Human replies that keep findings open.
 - Generated commit-message review when accepted suggestions are batched.
 
+The September 26 raw sources add review-stage telemetry and verification-bottleneck evidence. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records pull-request review-stage metrics that separate ready-to-first-review, first-to-final-review, and final-review-to-merge timing while excluding Copilot and bot reviews. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records Qodo's public verification-bottleneck framing. Locally, intelligent review should measure where human review latency moves and whether AI findings reduce accepted risk, not only whether automated comments or review events increase.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -158,6 +160,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Evaluate AI review systems by repository context, actionable findings, false-positive control, fix validation, and human judgment support rather than model branding alone.
 - Require patch-verification evidence for AI-assisted security findings before treating a vulnerability report as resolved.
 - Treat adversarial multi-agent review claims as useful only when reviewer independence, regression proof, implementation ownership, and repair accountability are inspectable.
+- Track human review-stage latency, bot-review exclusions, verification bottlenecks, and accepted-risk outcomes so AI review adoption is measured against reviewer capacity rather than comment volume.
 - Keep prompt-injection and untrusted-content gates active during review when the reviewer can inspect issue text, PR assets, generated artifacts, or runtime files.
 - Define risk tiers for AI-authored changes so critical paths, security-sensitive work, data migrations, and unclear generated code still require direct human reading.
 - Allow evidence-led review only when tests, static analysis, runtime checks, trace evidence, and source links are strong enough for a reviewer to document residual risk.
@@ -289,6 +292,9 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [August 28 topic news collector source](../../../raw/processed/2026-08-28/ai-dev-wiki-topic-news-collector-2026-08-28T003339Z.json)
 
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+
 ## Related Code
 
 - Not yet identified.
@@ -316,6 +322,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with review-stage telemetry, bot-review exclusion, verification-bottleneck, reviewer-capacity, and accepted-risk evidence.
 - Maintained on 2026-09-21 with explicit security-check and review-coverage receipt evidence.
 - Maintained on 2026-09-16 with production-review bar evidence and routing to repository-configured and multi-reviewer AI code review leaves; next check should keep configuration and role-specific detail in those focused leaves.
 - Maintained on 2026-09-05 with PR-completion loop, failed-check, merge-conflict, rerun, cross-file defect, cost, and human-merge evidence.

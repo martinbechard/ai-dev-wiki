@@ -29,6 +29,8 @@ The [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-de
 
 The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds extension-owned context and conditional rule-loading evidence. Locally, provider or extension context belongs in the knowledge layer with provenance and cost attribution, while path-scoped rules should load only when relevant instead of being concatenated into every active request.
 
+The [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) adds repository-specific security memory evidence. Learned fix patterns and agent memories belong in the knowledge layer with provenance, scope, owner review, and staleness checks; they should not become durable rules until a maintainer promotes them as accepted repository convention.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -46,6 +48,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Preserve semantic definitions, permissions, provenance, and audit labels with MCP-returned data so connected context remains evidence instead of becoming an implicit rule source.
 - Treat security skills as scoped rule assets, and treat lineage, stewardship, access control, semantic definitions, workflow versions, and run artifacts as knowledge records that inform agents without silently expanding authority.
 - Preserve provider or extension ownership, provenance, and cost attribution for injected context, and prefer conditional path-scoped rules over always-loaded instruction files for narrow guidance.
+- Keep learned fix patterns and repository-specific agent memories in the knowledge layer until provenance, scope, staleness, and owner review justify promotion into durable rules.
 
 ## Authoritative Sources
 
@@ -61,6 +64,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - [August 18 topic news collector source](../../../raw/processed/2026-08-18/ai-dev-wiki-topic-news-collector-2026-08-18T203320-0400.json)
 - [August 31 leaf update watch source](../../../raw/processed/2026-08-31/ai-dev-wiki-leaf-update-watch-2026-08-31T210122-0400.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
+
+- [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
 
 ## Related Code
 
@@ -86,6 +91,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-26 with repository-specific security memory, learned fix-pattern, provenance, scope, staleness, and owner-review evidence.
 - Created on 2026-06-23 from source guidance on durable rules, project facts, reusable procedures, and context-aware guidance.
 - Maintained on 2026-06-25 with layered teaching guidance for proprietary or unfamiliar project APIs.
 - Maintained on 2026-06-29 with permission-aware company context as a refreshable knowledge layer.
