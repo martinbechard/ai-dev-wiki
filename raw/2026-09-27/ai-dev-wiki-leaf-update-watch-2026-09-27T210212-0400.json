@@ -1,0 +1,487 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-28T01:02:12Z",
+  "run_timestamp_local": "2026-09-27T21:02:12-0400",
+  "cutoff_window": {
+    "start_local": "2026-09-20T21:02:12-0400",
+    "end_local": "2026-09-27T21:02:12-0400",
+    "window_days": 7
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 103,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://ai.newmanu.edu/bootcamps/agentic-software-engineering-capstone-repository"
+    ],
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md": [
+      "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/"
+    ],
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md": [
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://www.globenewswire.com/en/news-release/2026/09/22/3366103/0/en/index.html",
+      "https://developers.cloudflare.com/agents/tools/browser/"
+    ],
+    "docs/wiki/coding-practices/ai-assisted-tdd.md": [
+      "https://www.nasdaq.com/press-release/uipath-test-cloud-accelerates-autonomous-testing-enterprise-scale-2026-09-23",
+      "https://www.uipath.com/blog/product-and-updates/agentic-testing-evolves-again-uipath-test-cloud-next-chapter",
+      "https://starwest.techwell.com/program/conference-tracks/ai-testing-agents"
+    ],
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md": [
+      "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/"
+    ],
+    "docs/wiki/coding-practices/generated-code-refactoring.md": [
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
+    ],
+    "docs/wiki/coding-practices/intelligent-code-review.md": [
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/"
+    ],
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md": [
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+      "https://www.ibm.com/think/perspectives/how-to-effectively-govern-third-party-ai-agents-across-the-enterprise/jcr:content",
+      "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "https://www.globenewswire.com/en/news-release/2026/09/22/3366103/0/en/index.html"
+    ],
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md": [
+      "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+      "https://www.ibm.com/think/perspectives/how-to-effectively-govern-third-party-ai-agents-across-the-enterprise/jcr:content",
+      "https://www.globenewswire.com/en/news-release/2026/09/22/3366103/0/en/index.html"
+    ],
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md": [
+      "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/"
+    ],
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md": [
+      "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m09/cisco-ai-research-agenticops-scaling-quickly-in-the-enterprise.html",
+      "https://www.nasdaq.com/press-release/uipath-test-cloud-accelerates-autonomous-testing-enterprise-scale-2026-09-23"
+    ],
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md": [
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/"
+    ],
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md": [
+      "https://www.nasdaq.com/press-release/uipath-test-cloud-accelerates-autonomous-testing-enterprise-scale-2026-09-23",
+      "https://www.uipath.com/blog/product-and-updates/agentic-testing-evolves-again-uipath-test-cloud-next-chapter",
+      "https://starwest.techwell.com/program/conference-tracks/ai-testing-agents"
+    ],
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md": [
+      "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+      "https://www.ibm.com/think/perspectives/how-to-effectively-govern-third-party-ai-agents-across-the-enterprise/jcr:content"
+    ],
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md": [
+      "https://www.ibm.com/think/perspectives/how-to-effectively-govern-third-party-ai-agents-across-the-enterprise/jcr:content",
+      "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "https://www.globenewswire.com/en/news-release/2026/09/22/3366103/0/en/index.html",
+      "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m09/cisco-ai-research-agenticops-scaling-quickly-in-the-enterprise.html",
+      "https://www.uipath.com/blog/product-and-updates/agentic-testing-evolves-again-uipath-test-cloud-next-chapter"
+    ]
+  },
+  "qualifying_update_count": 13,
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-slack-teams-context-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams/",
+      "published_or_updated_at": "September 25, 2026",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "factual_summary": "GitHub Copilot in Slack and Microsoft Teams gained support for more conversation context, including Slack files, attachments, message links, Teams inline images, forwarded-message context, channel/thread history, similar-issue checks, direct work links, and originating-conversation back-links.",
+      "why_it_matters_for_leaf": "Shared-channel agent work increasingly depends on traceable conversation context, repository selection controls, and recovery states rather than treating chat as a disposable prompt surface.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams"
+      ]
+    },
+    {
+      "id": "github-copilot-weekly-local-sandboxing-agent-controls-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/",
+      "published_or_updated_at": "September 25, 2026",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md"
+      ],
+      "factual_summary": "GitHub's weekly Copilot release notes summarized local sandboxing for file, network, and credential controls; OpenTelemetry for activity monitoring; Slack/Teams thread model switching and recovery; JetBrains assisted approvals; and VS Code agent sessions in remote Dev Containers.",
+      "why_it_matters_for_leaf": "The update reinforces the local-practice split between portable agent workflow patterns and host-specific execution edges that must be governed by sandbox, telemetry, and approval policy.",
+      "named_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "JetBrains",
+        "VS Code",
+        "Dev Containers",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "JetBrains",
+        "VS Code",
+        "Dev Containers"
+      ]
+    },
+    {
+      "id": "github-copilot-local-sandboxing-2026-09-23",
+      "source_url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+      "published_or_updated_at": "September 23, 2026",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "factual_summary": "GitHub Copilot app local sandboxing entered public preview, allowing per-project limits on filesystem access, outbound/local network access, Git credentials, and GitHub CLI credentials; unsupported OS enforcement fails closed instead of running unsandboxed.",
+      "why_it_matters_for_leaf": "Local execution boundaries are moving from advisory instructions into enforceable runtime policy; local wiki implications belong in authorization, credential, and browser/runtime boundary guidance.",
+      "named_entities": [
+        "GitHub Copilot app",
+        "Git",
+        "GitHub CLI"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot app",
+        "GitHub CLI"
+      ]
+    },
+    {
+      "id": "github-copilot-code-review-settings-2026-09-23",
+      "source_url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "published_or_updated_at": "September 23, 2026",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "factual_summary": "GitHub Copilot code review added generally available personal review settings across Copilot plans and an enterprise-wide default review effort setting inherited by organization-owned repositories.",
+      "why_it_matters_for_leaf": "AI code review is becoming an explicitly configurable governance surface; review rubrics and PR packaging should record how automatic review, draft review, push review, and effort-level defaults affect workflow evidence.",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "Copilot Business",
+        "Copilot Enterprise"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot code review"
+      ]
+    },
+    {
+      "id": "github-copilot-usage-metrics-pr-review-stages-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "published_or_updated_at": "September 25, 2026",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "GitHub's Copilot usage metrics API added pull_request_review_times for repository-day reports, breaking review latency into ready-to-first-review, first-to-final-review, and final-review-to-merge medians and p90s for human-reviewed PRs.",
+      "why_it_matters_for_leaf": "PR packaging and review evals can measure where workflow delay sits instead of relying only on total merge time; Copilot/bot reviews are intentionally excluded from this release's counted review stage metrics.",
+      "named_entities": [
+        "GitHub Copilot usage metrics API",
+        "pull_request_review_times"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "id": "github-agentic-autofix-memory-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory/",
+      "published_or_updated_at": "September 25, 2026",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ],
+      "factual_summary": "GitHub agentic autofix now uses Copilot Memory in public preview, reviewing existing memories for context while fixing security alerts and storing successful fix patterns for future use by autofix, code review, and cloud agent features.",
+      "why_it_matters_for_leaf": "Security fix memory can improve repeated remediation, but it also makes repository-specific secure-development patterns a durable context asset that should be governed for provenance, sensitivity, and overgeneralization risk.",
+      "named_entities": [
+        "GitHub agentic autofix",
+        "Copilot Memory",
+        "Copilot code review",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub agentic autofix",
+        "Copilot Memory",
+        "Copilot cloud agent"
+      ]
+    },
+    {
+      "id": "github-enterprise-managed-settings-validator-2026-09-25",
+      "source_url": "https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator/",
+      "published_or_updated_at": "September 25, 2026",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "factual_summary": "GitHub added an in-product validator for enterprise managed Copilot settings, detecting malformed JSON, unsupported configurations, invalid team mappings, and related policy-enforcement errors in managed settings files.",
+      "why_it_matters_for_leaf": "Managed agent portability requires machine-checkable policy configuration; invalid settings can silently undermine the intended execution and access boundary.",
+      "named_entities": [
+        "GitHub Copilot",
+        "copilot/managed-settings.json",
+        "copilot/team-mappings.json"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "id": "ibm-third-party-agent-governance-2026-09-22",
+      "source_url": "https://www.ibm.com/think/perspectives/how-to-effectively-govern-third-party-ai-agents-across-the-enterprise/jcr:content",
+      "published_or_updated_at": "Published 22 September 2026",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "factual_summary": "IBM argued that enterprises should govern third-party agents by capability and impact rather than vendor trust alone, requiring verified owners, constrained access and autonomy, pre-action controls, and evidence trails for delegation accountability.",
+      "why_it_matters_for_leaf": "The local implication is a capability-scoped authorization model for managed agents, especially where vendor-provided agents can touch customer records, financial transactions, or other consequential systems.",
+      "named_entities": [
+        "IBM",
+        "Gartner",
+        "watsonx Orchestrate"
+      ],
+      "upstream_owned_entities": [
+        "IBM",
+        "Gartner",
+        "watsonx Orchestrate"
+      ]
+    },
+    {
+      "id": "gartner-runtime-controls-2026-09-24",
+      "source_url": "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "published_or_updated_at": "September 24, 2026",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "Gartner framed the agentic AI governance gap as the mismatch between written policies and runtime controls capable of enforcing behavior at machine speed, warning about operational, security, and cost incidents from insufficient controls.",
+      "why_it_matters_for_leaf": "Local governance guidance should keep focusing on runtime-enforced controls, cost and resource boundaries, and verifiable operating outcomes rather than policy prose alone.",
+      "named_entities": [
+        "Gartner",
+        "agentic AI",
+        "I&O"
+      ],
+      "upstream_owned_entities": [
+        "Gartner"
+      ]
+    },
+    {
+      "id": "akamai-behavioral-governance-2026-09-22",
+      "source_url": "https://www.globenewswire.com/en/news-release/2026/09/22/3366103/0/en/index.html",
+      "published_or_updated_at": "September 22, 2026 06:28 ET",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "factual_summary": "Akamai's SOTI report emphasized behavioral governance for nonhuman identities, MCP visibility gaps, sensitive-data leakage in chatbot conversations, unmanaged AI browser extensions, edge runtime protections, and matching autonomy to verifiability and reversibility.",
+      "why_it_matters_for_leaf": "Browser and execution-edge leaves should treat AI extensions, MCP-connected actions, and nonhuman identities as live governance surfaces that need observability, isolation, and reversible authorization.",
+      "named_entities": [
+        "Akamai",
+        "State of the Internet",
+        "Model Context Protocol",
+        "MCP",
+        "AI browser extensions"
+      ],
+      "upstream_owned_entities": [
+        "Akamai",
+        "Model Context Protocol",
+        "MCP"
+      ]
+    },
+    {
+      "id": "cisco-agenticops-autonomy-2026-09-23",
+      "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m09/cisco-ai-research-agenticops-scaling-quickly-in-the-enterprise.html",
+      "published_or_updated_at": "September 23, 2026",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "Cisco reported that NetOps organizations are moving toward AgenticOps, with operators setting direction and guardrails while AI agents sense, reason, and act; Cisco emphasized visibility, explainable context, guardrails, validation, and operational trust.",
+      "why_it_matters_for_leaf": "Outcome alignment should be modeled as operator-commanded autonomy with visible decisions and validation, not as unchecked delegation or mere productivity uplift.",
+      "named_entities": [
+        "Cisco",
+        "Omdia",
+        "AgenticOps",
+        "NetOps"
+      ],
+      "upstream_owned_entities": [
+        "Cisco",
+        "Omdia"
+      ]
+    },
+    {
+      "id": "uipath-test-cloud-autonomous-testing-2026-09-23",
+      "source_url": "https://www.nasdaq.com/press-release/uipath-test-cloud-accelerates-autonomous-testing-enterprise-scale-2026-09-23",
+      "published_or_updated_at": "Sep 23, 2026 8:35am EDT",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "factual_summary": "UiPath announced Test Cloud capabilities for autonomous test execution, autonomous exploration, semantic and AI-based verification for AI-infused apps and agents, Playwright integration, and a Delegate computer-use agent for routine test-run workflows.",
+      "why_it_matters_for_leaf": "AI-assisted testing practice is shifting toward agent-run execution and exploration, but quality professionals remain responsible for triage, validation boundaries, and release decisions.",
+      "named_entities": [
+        "UiPath",
+        "Test Cloud",
+        "Autopilot",
+        "Playwright",
+        "UiPath Delegate"
+      ],
+      "upstream_owned_entities": [
+        "UiPath",
+        "Playwright"
+      ]
+    },
+    {
+      "id": "uipath-agentic-testing-operating-model-2026-09-23",
+      "source_url": "https://www.uipath.com/blog/product-and-updates/agentic-testing-evolves-again-uipath-test-cloud-next-chapter",
+      "published_or_updated_at": "September 23, 2026",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "factual_summary": "UiPath's product update framed autonomous testing as an enterprise operating model where agents interpret intent, execute tests, explore applications, analyze results, and determine next steps under controls for approvals, credentials, decision records, data location, and deployment model.",
+      "why_it_matters_for_leaf": "The judge/grader boundary remains a human-governed quality system boundary: agents can run more of the loop, while people define intent, guardrails, ambiguity resolution, and risk decisions.",
+      "named_entities": [
+        "UiPath",
+        "Test Cloud",
+        "Public Test Cloud",
+        "Private Test Cloud",
+        "Playwright"
+      ],
+      "upstream_owned_entities": [
+        "UiPath",
+        "Playwright"
+      ]
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "reason": "Published August 28, 2026, outside the 7-day window; September 28 effective-date content is not a publication or visible update date."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-09-18-github-copilot-weekly-releases-september-14/",
+      "reason": "Published September 18, 2026, before cutoff 2026-09-20T21:02:12-0400."
+    },
+    {
+      "source_url": "https://ai.newmanu.edu/bootcamps/agentic-software-engineering-capstone-repository",
+      "reason": "Useful learning-path source, but no publication/update date was visible; the September 28 cohort date is future/event scheduling, not qualifying source publication evidence."
+    },
+    {
+      "source_url": "https://starwest.techwell.com/program/conference-tracks/ai-testing-agents",
+      "reason": "Visible September 24 session date is an event date only; no publication or update date was visible."
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/",
+      "reason": "Published September 18, 2026, before cutoff 2026-09-20T21:02:12-0400."
+    },
+    {
+      "source_url": "https://darkfactory.dev/news/2026-09-08-extra/story-1",
+      "reason": "Published September 8, 2026, outside the 7-day window."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/agents/tools/browser/",
+      "reason": "Last updated June 24, 2026, outside the 7-day window."
+    },
+    {
+      "source_url": "https://www.jstage.jst.go.jp/browse/jsaisigtwo/2026/AGI-033/_contents/-char/en",
+      "reason": "Search result exposed a 2026 index without a qualifying last-7-days publication/update date for the relevant content."
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad products, companies, models, frameworks, MCP entities, and ecosystem facts remain upstream-owned; this artifact preserves only local practice, governance, workflow, evaluation, adoption, or operating-model implications.",
+    "upstream_owned_entities_seen": [
+      "Akamai",
+      "Cisco",
+      "Copilot Memory",
+      "Copilot cloud agent",
+      "Dev Containers",
+      "Gartner",
+      "GitHub CLI",
+      "GitHub Copilot",
+      "GitHub Copilot app",
+      "GitHub Copilot code review",
+      "GitHub agentic autofix",
+      "IBM",
+      "JetBrains",
+      "MCP",
+      "Microsoft Teams",
+      "Model Context Protocol",
+      "Omdia",
+      "OpenTelemetry",
+      "Playwright",
+      "Slack",
+      "UiPath",
+      "VS Code",
+      "watsonx Orchestrate"
+    ]
+  },
+  "follow_up_notes": [
+    "Review qualified updates for downstream practice implications before any docs/wiki synthesis.",
+    "Do not update docs/wiki or raw/processed from this watcher artifact; normal raw ingest owns synthesis and movement.",
+    "Junior learning path leaf had no qualifying publication/update-dated source in this batch; Newman bootcamp page was recorded as excluded due future/event-date evidence only."
+  ],
+  "validation": {
+    "jq_empty": "passed for artifact and ledger",
+    "python_json_tool": "passed for artifact and ledger",
+    "git_diff_check": "passed for current-run artifact",
+    "project_wiki_status": "passed: 126 pages, 0 missing required files, 0 lint findings"
+  }
+}
