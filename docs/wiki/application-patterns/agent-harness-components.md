@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds a concise agent-harness definition and current control-plane vocabulary. Current public practice describes the harness as the loop that runs tool execution, context and memory, permissions or sandboxing, IDE or terminal integration, handoffs, replay, audit logs, and evidence records; locally, those remain harness components only when they are inspectable runtime surfaces rather than hidden product claims.
+
 An agent harness is the fixed runtime architecture that lets a model act, observe the result, and continue toward a goal. The [agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md) distinguishes a harness from a framework: a framework gives a human abstractions to assemble, while a harness ships an operating loop, tool registry, context control, persistence, hooks, and permission layer that an agent can use directly. [Agent session recovery](agent-session-recovery.md) and [agent lifecycle hooks](agent-lifecycle-hooks.md) own those focused details; this page remains the component map.
 
 The local harness component model includes an iteration loop, context management and compaction, a tool and skill registry, subagent management, built-in primitives, session persistence, dynamic instruction assembly, lifecycle hooks, and dispatch-time permissions. These components support the broader [application harness patterns](application-harness-patterns.md) page by naming the runtime pieces that must be present before a model-backed application can safely do work.
@@ -156,9 +158,11 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 - Separate cloud credits, local runtime prerequisites, scheduled-task permissions, update-integrity checks, and desktop MCP grants when a local agent runtime can operate on workstation applications.
 - Treat managed-runtime state, approval policy, checkpoint history, credentials, and pause/resume/fork semantics as harness-owned evidence for durable coding-agent work.
 - Keep security-taskflow prompting separate from tool execution evidence: build, fuzz, coverage, crash triage, and report artifacts should be inspectable outside the model transcript.
+- Treat handoff records, replay state, audit logs, evidence records, context and memory management, permission checks, sandboxing, and IDE or terminal bridges as harness components when they affect reviewability or control.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json)
@@ -254,6 +258,7 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with harness-loop, tool execution, context, memory, permission, sandbox, handoff, replay, audit-log, and evidence-record component signals.
 - Maintained on 2026-09-25 with managed-runtime state, checkpoint, approval-policy, and security-taskflow evidence.
 - Maintained on 2026-09-08 with bounded orchestration, complete-task efficiency, isolated review, cancellation, and fail-safe patch evidence.
 - Maintained on 2026-08-31 with agent-loop, context, tool, state, permission, feedback, sandbox, observability, provenance, runtime-dependency, and concurrent-session isolation evidence.

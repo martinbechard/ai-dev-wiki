@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds enterprise MCP checklist and coding-agent configuration evidence. MCP governance should not stop at catalog presence: publisher identity, official support, transport model, authentication path, least-privilege configuration, approval logs, prompt-injection handling, and metadata-size constraints are separate control points before an agent can rely on a server or tool description.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds MCP-served playbook and agent-manager evidence. Tool governance should distinguish raw code search, procedural playbooks, docs/wiki access, runbooks, observability context, feature flags, task-system controls, and data-platform tools, then bind each tool class to identity, lifecycle, sandbox, approval, telemetry, and revocation evidence.
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds tool telemetry, sandbox, and runtime-enforcement evidence. Tool governance should preserve model/tool spans, managed telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, and fail-closed sandbox results before a local coding-agent action is trusted. Runtime MCP governance also reinforces that approved inventory is insufficient when the authorization decision needs to happen at the point of action.
@@ -224,9 +226,12 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Keep MCP server registration, tool inventory, approval prompts, runtime enforcement, and sandboxed code execution as separate governable events.
 - Preserve model/tool spans, telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, sandbox result, and fail-closed outcome when local agent tools execute through a governed shell.
 - Enforce action-time MCP policy for tool calls that can read, write, spend, deploy, or mutate external state, even when the server is already inventoried.
+- Approve MCP servers by publisher, support source, transport, authentication, data exposure, least-privilege tool scope, audit logging, and metadata-change review before the server becomes available to coding agents.
+- Treat prompt-injection fixes, sandbox fixes, MCP description limits, and permission-mode changes as tool-surface changes that require revalidation, not as routine release-note noise.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
@@ -338,6 +343,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with MCP publisher, transport, authentication, audit-log, metadata-limit, prompt-injection, and sandbox-change approval evidence.
 - Maintained on 2026-09-24 with MCP registration, inventory, approval-prompt, runtime-enforcement, and sandboxed-execution boundary evidence.
 - Maintained on 2026-09-23 with point-of-action MCP policy, sandboxed code execution, customization telemetry, and side-effect separation evidence.
 - Maintained on 2026-09-19 with MCP-served playbooks, code search, runbook, observability, feature-flag, task-system, data-platform, identity, sandbox, lifecycle, and revocation evidence.

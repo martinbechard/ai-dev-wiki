@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds AI-engineering-architect and capability-census evidence. A single owner may coordinate agentic workflows, evals, permission rules, review, testing, deployment automation, model or provider selection, and velocity benchmarks, but outcome alignment still requires that these responsibilities be measured by accepted delivery, quality, risk, and review evidence rather than by tool adoption counts alone.
+
 Outcome alignment and process autonomy define how teams avoid both centralized process uniformity and unmanaged local variation. The local operating model aligns teams on outcomes, accountability, source handling, verification, security boundaries, and shared platform guardrails while letting the people closest to the work shape the workflow mechanics.
 
 The [process-autonomy source](../../../raw/processed/Allen Holub - On process.md) argues that teams should customize process to their needs, coordinate constantly, and receive guidance and support when alignment is missing. The [agentic team-structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md) applies a similar boundary to agentic work: become strict about outcome variance, tolerant of execution variance, and use guardrails around the outcomes that matter.
@@ -46,9 +48,12 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Compare AI-heavy and AI-light processes by accepted outcomes, quality, maintainability, and review burden rather than by raw AI activity.
 - Compare budget use, benchmark results, and embedded-agent work by accepted outcomes, review burden, safety evidence, and customer workflow value rather than by token volume or agent activity.
 - Require comparable live evidence for identity, permissions, systems accessed, APIs called, data touched, business purpose, behavior baseline, incident records, and accountability when process-autonomous teams use agents.
+- Assign explicit ownership for agentic workflow tooling, evals, permission rules, review loops, testing, deployment automation, model/provider selection, and velocity benchmarks when those controls affect multiple teams.
+- Compare agent-capability claims and architecture-owner programs by accepted delivery, quality, maintainability, review burden, risk reduction, and governed autonomy rather than by raw agent count or tool adoption.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [Process autonomy source](../../../raw/processed/Allen Holub - On process.md)
 - [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -87,6 +92,7 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with AI-engineering-architect ownership, agent-capability census, eval, permission, review, testing, deployment, and velocity-benchmark operating evidence.
 - Created on 2026-06-23 from source-backed process autonomy, outcome alignment, and platform guardrail guidance.
 - Maintained on 2026-07-05 with workflow-redesign, accessible-context, deterministic subagent coverage, and typed-intermediate-result signals.
 - Maintained on 2026-07-09 with outcome-based agent workflow funding, pruning, and guardrail-comparable process autonomy.

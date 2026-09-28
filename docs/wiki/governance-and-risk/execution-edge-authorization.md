@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds tool-sandbox and MCP approval evidence from coding-agent and enterprise MCP sources. Weekly coding-agent configuration updates make permission fixes, symlink write handling, sandbox boundaries, prompt-injection fixes, and MCP metadata limits part of execution-edge review, while enterprise MCP approval guidance reinforces publisher, transport, authentication, least-privilege, and audit-log checks before a server is exposed to agents.
+
 Execution edge authorization treats each model-to-tool, agent-to-agent, user-to-agent, and agent-to-system connection as an enforceable authorization boundary. The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) and [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) add the local rule that reachability is not authorization: an agent seeing a tool, channel, connected app, database surface, sandbox, or payment-like action does not mean it may use that edge.
 
 This page owns the edge-level authorization lens. [Agent governance infrastructure](agent-governance-infrastructure.md) owns the broader control plane, [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md) owns tool-call validation, [governed database agent access](../retrieval-and-tools/governed-database-agent-access.md) owns database boundaries, and [prompt injection and untrusted content](prompt-injection-and-untrusted-content.md) owns hostile source carriers.
@@ -50,9 +52,11 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 - Prefer short-lived, narrow execution credentials and monitored disposable environments when local CLI agents would inherit broad laptop sessions, keys, or authenticated services.
 - Put policy checks, rate limits, scoped tool reach, escalation triggers, and decision logs on the runtime path for agent actions instead of relying only on written policy or post-run review.
 - Treat MCP servers and agent-facing APIs as execution edges that need identity verification, authorization scope, audit logging, rate limits, and access reviews before agents can invoke them.
+- Treat coding-agent permission fixes, symlink write behavior, sandbox claims, MCP metadata limits, transport model, publisher identity, authentication method, and audit coverage as edge evidence before enabling or expanding local agent tool access.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -95,6 +99,7 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with coding-agent permission, sandbox, MCP publisher, transport, authentication, and audit-log approval evidence.
 - Maintained on 2026-09-20 with execution-time enforcement, machine-speed governance, MCP-as-API-boundary, policy-check, rate-limit, and escalation evidence.
 - Maintained on 2026-09-15 with app, CLI, and editor-hosted managed-permission precedence evidence.
 - Maintained on 2026-09-13 with managed-permission, sandbox-diagnostic, local-CLI, repository-first-open, short-lived-credential, and monitored-runtime edge evidence.

@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds deploy-aware review and agent-handoff evidence. Cursor-style rollout monitors and security-review bots shift part of AI review from pull-request comments toward post-merge or deployment-aware signals, while agent-oriented review comparisons reinforce that findings are more useful when they can hand back into the coding agent under human final judgment instead of becoming dead-end comments.
+
 Intelligent code review uses an AI reviewer to compare a change against project rules, source references, risk tiers, contracts, tests, security expectations, and runtime behavior. The reviewer reduces human review load only when it is given the evidence needed to produce actionable findings.
 
 The September 21 raw sources add explicit security-check and coverage-receipt evidence. The [topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) records study coverage where developers often selected among AI-generated suggestions without a structured security step. The [leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) records review-coverage evidence where incomplete file review can still be reported as complete. Locally, review prompts and gates should require explicit security checks and coverage receipts rather than trusting a generic review instruction or final summary.
@@ -218,9 +220,12 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 - Route the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) review-practice signals to the focused configuration and multi-reviewer leaves.
 - Preserve open, resolved, previously missed, and auto-resolved finding state when AI review comments become a managed lifecycle rather than one-time feedback.
 - Treat AI-generated batch commit messages as reviewable metadata that still needs human ownership before merge.
+- Treat deploy-aware monitors, revert-PR preparation, and security-review bots as review evidence that still needs severity, attack-path, baseline, rollback, and human final-judgment records before affecting release decisions.
+- Prefer review loops that can hand actionable findings back to the coding agent or submitter with scoped repair instructions, while keeping acceptance, merge, and residual-risk decisions human-owned.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
@@ -322,6 +327,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with deploy-aware review, security-review bot, revert-preparation, agent-handoff, and human-final-judgment evidence.
 - Maintained on 2026-09-26 with review-stage telemetry, bot-review exclusion, verification-bottleneck, reviewer-capacity, and accepted-risk evidence.
 - Maintained on 2026-09-21 with explicit security-check and review-coverage receipt evidence.
 - Maintained on 2026-09-16 with production-review bar evidence and routing to repository-configured and multi-reviewer AI code review leaves; next check should keep configuration and role-specific detail in those focused leaves.

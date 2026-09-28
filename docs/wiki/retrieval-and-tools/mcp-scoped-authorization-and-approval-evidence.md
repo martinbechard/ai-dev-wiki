@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds enterprise MCP approval-package evidence. A server approval should identify the publisher, hosting or transport path, authentication model, allowed tool set, least-privilege scope, audit-log destination, and revocation path before the agent sees the server as an available capability.
+
 The September 25 raw sources add runtime authorization evidence for MCP-mediated and connector-mediated actions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces authenticated request traces, tool-call validation, high-risk pauses, and quality/cost gates. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds OAuth-protected MCP consent handling where user consent can happen before model execution instead of becoming a model-visible tool error.
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds agent-manager evidence for MCP interaction governance. Approval records should bind MCP calls to the agent identity, delegated authority, lifecycle state, sandbox, role, token exchange, approval payload, revocation path, and execution result, especially when the control plane spans several models or frameworks.
@@ -98,9 +100,11 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Require shared MCP gateways to preserve user identity, agent identity, per-tool scope, consent proof, session boundary, credential custody, and audit trail instead of hiding access behind one service token.
 - Treat MCP connection attempts, skill invocations, custom-agent starts, slash-command use, and plugin activity as governed telemetry when teams permit custom tool surfaces.
 - Group or redact customer-defined tool names when telemetry is needed for governance but full names would expose sensitive workflow details.
+- Include publisher identity, transport class, authentication path, approved tool inventory, least-privilege scope, audit-log target, and revocation route in the MCP approval package before recurring agent use.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
@@ -154,6 +158,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with MCP publisher, transport, authentication, approved-tool inventory, least-privilege, audit-log, and revocation evidence.
 - Maintained on 2026-09-25 with authenticated-request trace, tool validation, approval pause, cost/quality gate, OAuth consent, and token-refresh evidence.
 
 - Maintained on 2026-09-19 with agent-manager MCP authorization, lifecycle, sandbox, delegated-authority, token-exchange, and revocation evidence.

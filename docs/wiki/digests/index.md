@@ -6,7 +6,7 @@ Monthly development digests summarize processed local source updates for AI-assi
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) records the active month in item-level, newest-first entries, including September 26 governance, telemetry, retrieval, review, and harness-sizing updates. It should remain the source of detailed September scope rather than copying that inventory into this hub.
+The [current September digest](2026-09.md) records the active month in item-level, newest-first entries, including September 27 execution-edge, MCP approval, harness, review, telemetry, and operating-ownership updates. It should remain the source of detailed September scope rather than copying that inventory into this hub.
 
 ## Monthly Digests
 
@@ -48,6 +48,7 @@ The [current September digest](2026-09.md) records the active month in item-leve
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with the September 27 leaf-watch and September 28 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-25 with the September 25 leaf-watch and September 26 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-26 with the September 26 leaf-watch and September 27 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-25 with the September 24-25 raw ingest digest scope.

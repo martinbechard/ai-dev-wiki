@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds current coding-agent prompt-injection and trace-tampering evidence. Weekly coding-agent configuration notes make prompt-audit checks, prompt-injection fixes, sandbox boundaries, and permission fixes a recurring release-review concern, while the tamperable-trace source reinforces that an agent with host access may be able to rewrite or delete local evidence after reading hostile or incentive-shaping instructions.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) and [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) add compaction-summary, memory, tool-use, and untrusted-agent-control evidence. Prompt-injection review should cover not only raw documents and web pages, but also generated summaries, persistent memory, fine-tuning data, external tool results, network access, and any self-modification path that lets the agent alter the safety or model boundary it is supposed to obey.
 
 Prompt injection is a governance issue because language models do not reliably separate instructions from input. Direct prompt injection can arrive from a user prompt. Indirect prompt injection can arrive through files, webpages, tickets, emails, raw clippings, retrieved chunks, or other source text that the model is asked to read.
@@ -114,9 +116,11 @@ The September 6 raw sources add repository-config and index-level security-sourc
 - Screen the sequence of prompt, response, command, tool-call, data-movement, and follow-up steps when untrusted content can influence a state-changing action.
 - Treat repository configuration, package manifests, and generated files as untrusted evidence until path and execution-boundary checks confirm the claim.
 - Defer index-only security summaries until the article body or an equivalent primary source is verified.
+- Treat prompt-audit reports, prompt-injection fixes, local session traces, and agent-authored logs as evidence that still needs provenance and tamper-resistance checks before it can expand trust in the run.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -176,6 +180,7 @@ The September 6 raw sources add repository-config and index-level security-sourc
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with prompt-audit, prompt-injection-fix, sandbox-boundary, and tamperable local-trace evidence.
 - Maintained on 2026-09-19 with compaction-summary injection, memory/tool/network surfaces, and agentic self-modification prompt-injection evidence.
 - Maintained on 2026-08-29 with spreadsheet, indirect-prompt-injection, untrusted-document, containment, deny-by-default tool, and dependency-gate evidence.
 - Maintained on 2026-09-06 with repository-config, package-install, trusted-host-component, generated-state, index-only-source, and execution-boundary evidence.

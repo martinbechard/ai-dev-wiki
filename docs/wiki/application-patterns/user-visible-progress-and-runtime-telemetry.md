@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds deploy-monitoring and audit-trace evidence. Runtime telemetry should distinguish ordinary PR review comments from rollout baselines, production signal comparison, revert-preparation state, and external or tamper-resistant audit records when the agent can modify local session traces.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds agent-runtime migration and enterprise-cost evidence. Runtime telemetry should expose startup overhead, memory use, process supervision, crash recovery, monitoring state, nested model-call volume, background retries, review queue pressure, and accepted-outcome cost when those signals decide whether the workflow is healthy.
 
 Long-running AI workflows need visible progress so users can understand what the system is doing, where it is waiting, and which checks still matter. Token streaming can show generation, but useful progress also includes retrieved files, tool activity, approval waits, unresolved items, generated drafts, and runtime health.
@@ -131,9 +133,11 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 - Separate structural execution traces from captured prompt, response, or tool-output content, and treat content capture as a governed telemetry setting.
 - Preserve headless probe results, runtime instrumentation, on-disk logs, health signals, and measurement-loop outcomes when agents optimize review surfaces for huge pull requests.
 - Join OpenTelemetry-style structural traces, long-task status, shared state surfaces, conversation-origin links, remote-run state, and rewind points without silently enabling prompt or response content capture.
+- Show rollout baseline, production-signal comparison, prepared revert state, security-review status, and externally controlled audit evidence when a coding-agent workflow spans pull request, deployment, and post-deploy monitoring.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -205,6 +209,7 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with rollout baseline, production-signal, revert-preparation, security-review status, and tamper-resistant audit evidence.
 - Maintained on 2026-09-26 with OpenTelemetry export, structural traces, long-task status, shared canvas state, conversation-origin links, rewind, and remote-run evidence.
 - Maintained on 2026-09-25 with huge-PR rendering, headless probe, on-disk log, runtime instrumentation, health-signal, and measurement-loop evidence.
 - Maintained on 2026-09-21 with realtime failure-envelope redaction evidence.

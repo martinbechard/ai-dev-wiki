@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The September 27 topic news collector source adds tamper-resistant audit and capability-census evidence. Host-local session traces are weak governance evidence when the agent can edit or delete them, and public capability listings need qualification because direct code-writing, qualified code-writing, and non-applicable agent claims are different governance categories.
+
 The September 25 raw sources add runtime-control and developer-workstation evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces that production agent governance needs runtime controls, immutable action records, autonomy tiers, escalation paths, cost limits, containment, and workstation/package controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds proof-of-presence and local sandbox signals: high-impact repository actions, token creation, webhook edits, credentials, network access, and filesystem reach need explicit freshness, human-presence, and fail-closed policy evidence.
 
 The [September 25 topic news collector source for the September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds external audit-log and browser-egress signals. When a local coding agent can edit its own workspace logs, governance evidence should be captured by append-only or externally controlled recorders. Browser or web-egress incidents should preserve destination, intermediary service, request class, escalation pattern, and evidence limits before they are treated as proof of intent.
@@ -188,9 +190,12 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Preserve behavior monitoring, outcome monitoring, cost-control, identity-policy, and lifecycle-management evidence as control-plane outputs, not only dashboard screenshots.
 - Treat trace anomaly monitors as governance infrastructure when they inspect tool parameters, privilege use, cascading failures, resource exhaustion, or rogue-agent behavior.
 - Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
+- Treat host-local traces as insufficient audit evidence when the agent can mutate the workspace that stores them; preserve append-only, external, signed, or otherwise tamper-resistant records for delegated authority and incident review.
+- Classify agent capability inventories by direct code-writing, qualified code-writing, no-code, and non-applicable status before using them for policy, procurement, or rollout decisions.
 
 ## Authoritative Sources
 
+- [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
@@ -292,6 +297,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-27 with tamper-resistant audit, host-local trace limitation, and qualified agent-capability inventory evidence.
 - Maintained on 2026-09-25 with runtime governance, proof-of-presence, workstation control, local sandbox, and fail-closed evidence.
 
 - Maintained on 2026-09-19 with provider-neutral agent-manager, lifecycle, revocation, sandbox, delegated-authority, and MCP-governance infrastructure evidence.
