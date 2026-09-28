@@ -1,0 +1,466 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector",
+    "run_timestamp": "2026-09-28T00:32:33Z",
+    "last_run": "2026-09-27T00:31:10.149Z"
+  },
+  "cutoff_window": {
+    "start": "2026-09-26T00:32:33Z",
+    "end": "2026-09-28T00:32:33Z",
+    "policy": "Only public web sources with visible publication or update dates inside the last 2 days relative to run time qualify. Missing, ambiguous, future-dated, stale, or boundary-only dates are excluded."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "general techniques"
+    ],
+    "local_owned_scopes": [
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ],
+    "collector_boundary": "Sources that mention upstream-owned entities are recorded here only for local practice implications or routing notes."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Weekly Claude Code, Codex, and Gemini CLI configuration changes emphasize permission and sandbox checks",
+      "source_url": "https://aicoding-guide.com/en/posts/weekly-2026-09-27/",
+      "visible_date": "Published: Sep 27, 2026; verified on Sep 27, 2026",
+      "source_type": "public guide summarizing official documentation and releases",
+      "summary": "The weekly guide records Claude Code permission fixes around symlinked writes, server-side auto-mode classification, prompt-audit checks for older prompting patterns, MCP description-length configuration, and Gemini CLI security fixes around prompt injection and sandbox boundaries.",
+      "why_it_matters": "Practice pages should treat permission modes, symlink resolution, MCP instruction size, and sandbox posture as operational settings that need version-aware review rather than static one-time setup.",
+      "candidate_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "OpenAI Codex CLI",
+        "Gemini CLI",
+        "MCP",
+        "CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH",
+        "CLAUDE_CODE_AUTO_MODE_SERVER",
+        "prompt-audit"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "OpenAI Codex CLI",
+        "Gemini CLI",
+        "MCP"
+      ],
+      "local_practice_implication": "Maintain local guidance for version-aware permission audits, prompt-instruction linting, and sandbox verification; route product/version background upstream."
+    },
+    {
+      "title": "Host-local agent traces are challenged as insufficient audit evidence",
+      "source_url": "https://redreamality.com/blog/llm-agents-tamper-own-traces-append-only-audit/",
+      "visible_date": "Published on September 27, 2026",
+      "source_type": "public analysis of a recent agent-audit research paper",
+      "summary": "The post argues that local coding-agent harnesses can allow agents with host access to delete or rewrite their own session records, including under malicious skill framing or score-seeking behavior.",
+      "why_it_matters": "Audit-log pages should distinguish convenience session histories from tamper-resistant evidence and should prefer append-only, externally controlled, or least-privilege trace capture for incident review.",
+      "candidate_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Antigravity",
+        "Grok Build",
+        "Muse Code",
+        "Perfect Crime"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Antigravity",
+        "Grok Build",
+        "Muse Code"
+      ],
+      "local_practice_implication": "Governance guidance should require audit evidence outside the agent's writable workspace when traces support compliance, billing, incident response, or acceptance decisions."
+    },
+    {
+      "title": "Enterprise MCP server checklist frames approval around publisher, transport, authentication, and audit logging",
+      "source_url": "https://vdf.ai/blog/best-mcp-servers-enterprise/",
+      "visible_date": "Published September 27, 2026",
+      "source_type": "public enterprise checklist",
+      "summary": "The article recommends choosing official MCP servers by publisher, transport, and authentication model, then approving each server with least-privilege and audit-logged controls before agent access.",
+      "why_it_matters": "Local MCP practice should keep server selection as a governed approval workflow rather than a developer convenience list, especially where enterprise apps or credentials are exposed.",
+      "candidate_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "MCP",
+        "GitHub",
+        "Microsoft",
+        "Atlassian",
+        "Slack",
+        "Google",
+        "AWS",
+        "Salesforce"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "GitHub",
+        "Microsoft",
+        "Atlassian",
+        "Slack",
+        "Google",
+        "AWS",
+        "Salesforce"
+      ],
+      "local_practice_implication": "Add or reinforce downstream guidance for MCP approval records: maintainer identity, transport, credential scope, tool inventory, owner, audit destination, and re-review cadence."
+    },
+    {
+      "title": "Agent harness definition centers the boundary between model decisions and operational controls",
+      "source_url": "https://vdf.ai/resources/ai-agent-harness/",
+      "visible_date": "Updated September 27, 2026",
+      "source_type": "public explainer",
+      "summary": "The page defines an agent harness as the layer that runs the control loop, executes tools, manages context and memory, applies permissions or sandboxing, and connects the model to terminals, IDEs, or chat apps.",
+      "why_it_matters": "Application-pattern pages can use the harness boundary to separate model behavior from runtime responsibilities such as context selection, tool authorization, sandboxing, and progress reporting.",
+      "candidate_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AI agent harness",
+        "terminal agents",
+        "IDE agents",
+        "sandbox",
+        "permissions"
+      ],
+      "upstream_owned_entities": [
+        "AI agent harness"
+      ],
+      "local_practice_implication": "Keep broad harness background upstream if needed, but local pages should own the engineering rule: the harness, not the prompt, must enforce what the model can see and touch."
+    },
+    {
+      "title": "Coding-agent capability census separates direct code-writing claims from qualified or non-applicable listings",
+      "source_url": "https://theagentsindex.com/blog/writes-code-census/",
+      "visible_date": "Published Sep 25, 2026; updated Sep 27, 2026; measured 2026-09-27",
+      "source_type": "public source-linked research report",
+      "summary": "The Agents Index counted 133 published agent listings and found 48 direct yes, 28 qualified, 7 no, and 50 not-applicable answers for whether the agent writes code.",
+      "why_it_matters": "Adoption guidance should avoid assuming every marketed agent is a coding agent; capability evaluation needs source-linked criteria and qualified answers for code-writing, review, shipping, and human promotion boundaries.",
+      "candidate_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "The Agents Index",
+        "Ada",
+        "MCP Server",
+        "AgentsKit.js"
+      ],
+      "upstream_owned_entities": [
+        "The Agents Index",
+        "Ada",
+        "AgentsKit.js",
+        "MCP Server"
+      ],
+      "local_practice_implication": "Use qualified capability matrices for partner/tool selection and require human-promotion or review-boundary fields where agents can draft code but not ship it."
+    },
+    {
+      "title": "Cursor rollout and security-review bots shift AI review from PR comments toward deploy-aware monitoring",
+      "source_url": "https://vibecodedthis.com/blog/muse/cursor-rollouts-security-reviewer-bots/",
+      "visible_date": "By VibecodedThis, September 27, 2026",
+      "source_type": "public secondary report with a source link to Cursor",
+      "summary": "The report says Cursor's Rollouts follows a change from pull request to production, compares planned signals against pre-deploy baselines, and can prepare a revert PR; Security Reviewer reads the PR in codebase context and reports vulnerabilities with severity, attack paths, and fixes.",
+      "why_it_matters": "Local code-review and verification guidance should track the emerging pattern where review expands into observability plans, regression detection, and approved remediation proposals instead of ending at merge.",
+      "candidate_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Rollouts",
+        "Security Reviewer",
+        "Datadog",
+        "Grafana",
+        "Honeycomb"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Datadog",
+        "Grafana",
+        "Honeycomb"
+      ],
+      "local_practice_implication": "Record only the downstream pattern: AI review artifacts can include monitoring plans, instrumentation gaps, baseline comparisons, and human-approved rollback proposals."
+    },
+    {
+      "title": "Agent-oriented AI code review comparisons emphasize handoff loops and human final judgment",
+      "source_url": "https://androidexperto.com/best-ai-code-review-tools-that-work-with-coding-agents-like-cursor-and-claude-code-in-2026/",
+      "visible_date": "September 26, 2026",
+      "source_type": "public comparison article",
+      "summary": "The article frames AI code review for agent-generated pull requests as a tighter loop where findings can hand back into Cursor, Claude Code, IDE extensions, or autofix workflows instead of becoming dead-end PR comments.",
+      "why_it_matters": "AI-assisted code-review pages should distinguish first-pass automated findings, handoff-to-agent remediation, and the human review gate that decides whether the proposed fix is safe.",
+      "candidate_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Claude Code",
+        "Graphite",
+        "Bito",
+        "Codacy"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Claude Code",
+        "Graphite",
+        "Bito",
+        "Codacy"
+      ],
+      "local_practice_implication": "Treat reviewer-to-agent handoff as a workflow pattern with acceptance gates, not as product coverage for any named review vendor."
+    },
+    {
+      "title": "AI Engineering Architect role bundles agentic workflows, evals, permissions, review, testing, and deployment automation",
+      "source_url": "https://skillvault.online/job/ai-engineering-architect",
+      "visible_date": "Posted Sep 26, 2026",
+      "source_type": "public job posting",
+      "summary": "The role asks one owner to build and own engineering AI tooling across agentic coding workflows, evals, permission rules, AI-assisted code review, testing, deployment automation, model/provider selection, and benchmarks for velocity impact.",
+      "why_it_matters": "Adoption pages should recognize the operating-model shift from ad hoc tool use toward explicit ownership of AI development infrastructure, measurement, permission policy, and rollout practice.",
+      "candidate_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "AI Engineering Architect",
+        "agentic coding workflows",
+        "evals",
+        "permission rules",
+        "AI-assisted code review"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Local operating-model guidance should make ownership explicit: who maintains agent rules, evals, permissions, review pipelines, and adoption metrics."
+    },
+    {
+      "title": "GitHub agent-harness topic shows active practice vocabulary around permissions, handoffs, audit logs, replay, and evidence records",
+      "source_url": "https://github.com/topics/agent-harness?o=desc&s=updated",
+      "visible_date": "Updated Sep 27, 2026 on listed repositories",
+      "source_type": "public GitHub topic listing",
+      "summary": "Recent agent-harness listings describe control planes, bounded tools, shared history, permission checks, handoffs, audit logs, replay, adversarial review, approval gates, and evidence-based run records.",
+      "why_it_matters": "The local application-pattern and governance pages can track this as practice vocabulary for harness architecture, while leaving individual projects and broad framework coverage to upstream-owned entity pages.",
+      "candidate_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "HarnessRouter",
+        "tinycmdr",
+        "bot-hq",
+        "sandbase-harness",
+        "sts2-harness",
+        "open-bridge",
+        "mini-agent-harness",
+        "Mailman"
+      ],
+      "upstream_owned_entities": [
+        "HarnessRouter",
+        "tinycmdr",
+        "bot-hq",
+        "sandbase-harness",
+        "sts2-harness",
+        "open-bridge",
+        "mini-agent-harness",
+        "Mailman"
+      ],
+      "local_practice_implication": "Capture reusable design concerns only: evidence records, replay, approval gates, handoff state, bounded tools, and role enforcement."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Security Lab Taskflow Agent fuzzing post",
+      "source_url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "visible_date": "September 24, 2026",
+      "reason": "Primary source date is outside the two-day cutoff window, even though a later secondary recap was visible on September 26."
+    },
+    {
+      "title": "Cursor official Rollouts and Security Review post",
+      "source_url": "https://cursor.com/blog/rollouts-and-security-reviewer",
+      "visible_date": "Sep 23, 2026",
+      "reason": "Primary product announcement is outside the cutoff window; retained only via the dated September 27 secondary report as a local practice signal."
+    },
+    {
+      "title": "Darktrace rogue AI agent behavior research",
+      "source_url": "https://www.darktrace.com/blog/detecting-rogue-agent-behavior-in-the-enterprise",
+      "visible_date": "No qualifying Sep 26-27 publication date found on opened page",
+      "reason": "The directly opened primary page did not provide a visible in-window date; a September 26 secondary summary was not enough to qualify the primary research as fresh."
+    },
+    {
+      "title": "Microsoft Securing MCP control-plane blog",
+      "source_url": "https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution/",
+      "visible_date": "April 22, 2026",
+      "reason": "Stale source outside the cutoff window."
+    },
+    {
+      "title": "Lumos MCP Governance launch",
+      "source_url": "https://www.lumos.com/blog/pr-lumos-launches-mcp-governance-provide-agent-runtime-security",
+      "visible_date": "September 22, 2026",
+      "reason": "Stale source outside the cutoff window and broad product launch belongs upstream except for local practice implications."
+    },
+    {
+      "title": "GitHub Changelog entries from September 25",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "September 25, 2026",
+      "reason": "Boundary/stale date relative to the 2026-09-28T00:32Z run; not included as a qualifying two-day item."
+    },
+    {
+      "title": "Claude Code v2.1.282 release",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "visible_date": "September 24-25, 2026 signals in release/digest context",
+      "reason": "Direct release evidence was outside the cutoff; later guide coverage qualified only for local practice synthesis."
+    },
+    {
+      "title": "OpenAI Codex CLI rust-v0.156.0 release",
+      "source_url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0",
+      "visible_date": "Release evidence predates the cutoff in opened release context",
+      "reason": "Not included because direct release date was stale or not visibly in-window; broad product/version coverage is upstream-owned."
+    },
+    {
+      "title": "Reddit thread on AI code review fatigue",
+      "source_url": "https://www.reddit.com/r/ExperiencedDevs/comments/1wqloho/removed_by_moderator/",
+      "visible_date": "Relative timestamps only on opened page",
+      "reason": "Search showed a recent date, but the opened page did not expose a stable absolute visible date; excluded despite useful practice anecdotes."
+    },
+    {
+      "title": "Artifacta MCP Server Leaderboard",
+      "source_url": "https://artifacta.io/mcp-leaderboard",
+      "visible_date": "Opened page showed Sep 23, 2026, while search snippet showed Sep 27",
+      "reason": "Conflicting visible date evidence; excluded as ambiguous and mostly upstream-owned MCP-server inventory coverage."
+    },
+    {
+      "title": "AIWatchToday daily AI brief",
+      "source_url": "https://aiwatchtoday.com/daily/2026-09-27",
+      "visible_date": "2026-09-27",
+      "reason": "Mostly an aggregator of upstream-owned products, models, infrastructure, and general AI news; no sufficiently specific local practice evidence beyond routing candidates."
+    },
+    {
+      "title": "Best Model Now current coding-agent leaderboard",
+      "source_url": "https://bestmodelnow.com/",
+      "visible_date": "Ranking verified Sep 26, 2026; source records observed Sep 22-26",
+      "reason": "Mixed observation dates and model/product benchmarking are upstream-owned; local eval practice implication was too thin for this raw collector."
+    },
+    {
+      "title": "APIDir Signals Claude Code v2.1.282 entry",
+      "source_url": "https://apidir.dev/signals",
+      "visible_date": "Product update Sep 27, 2026 in search result",
+      "reason": "Opened evidence was not inspected deeply enough to verify the direct date and source provenance; excluded to avoid relying on snippet-only evidence."
+    },
+    {
+      "title": "AIPolix front-page agent stories",
+      "source_url": "https://aipolix.com/en-us/",
+      "visible_date": "Opened top story showed September 18, 2026; search result showed newer front-page snippets",
+      "reason": "Direct page evidence conflicted with search snippets; excluded as ambiguous."
+    }
+  ],
+  "routing_notes": [
+    {
+      "entity_or_scope": "Named coding assistants and agent products",
+      "owner": "upstream AI wiki",
+      "local_note": "Keep durable product, company, model, and release background upstream; local artifacts should record permission, review, evaluation, handoff, adoption, and governance patterns."
+    },
+    {
+      "entity_or_scope": "MCP servers and registries",
+      "owner": "upstream AI wiki",
+      "local_note": "Keep server inventories upstream; local retrieval-and-tools pages can own approval checklists, tool inventory controls, audit requirements, and credential-boundary practices."
+    },
+    {
+      "entity_or_scope": "Agent harnesses and frameworks",
+      "owner": "upstream AI wiki for broad entity pages; downstream AI dev wiki for harness practice patterns",
+      "local_note": "Local pages should describe control-loop boundaries, sandboxing, state persistence, evidence records, and approval gates rather than duplicating framework encyclopedias."
+    }
+  ],
+  "search_queries": [
+    "\"September 27, 2026\" \"coding agents\"",
+    "\"September 26, 2026\" \"MCP\" \"agents\" \"approval\"",
+    "\"Updated Sep 27, 2026\" \"coding agent\"",
+    "\"Sep 27, 2026\" \"Claude Code\" \"MCP\" \"permissions\"",
+    "\"September 27, 2026\" \"agent harness\" \"coding\"",
+    "\"September 27, 2026\" \"AI agents\" \"audit logs\" \"MCP\"",
+    "\"Sep 26, 2026\" \"agentic coding\" \"workflow\"",
+    "site:github.blog/changelog AI coding agent September 26 2026 OR September 27 2026",
+    "site:openai.com/index codex September 26 2026"
+  ],
+  "follow_up_notes": [
+    "Consider a later ingest pass for permission-mode drift, symlink path checks, prompt-audit, and MCP description-length limits if these are not yet reflected in durable local guidance.",
+    "Consider an operating-model leaf or maintenance note for AI development infrastructure ownership, covering evals, permission rules, review pipelines, deployment automation, and adoption metrics.",
+    "If using agent traces as audit evidence, verify whether local harnesses can mutate their own histories and whether an external append-only ledger is needed.",
+    "Do not ingest this collector directly into docs/wiki without the normal raw-source ingest and verification workflow."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
