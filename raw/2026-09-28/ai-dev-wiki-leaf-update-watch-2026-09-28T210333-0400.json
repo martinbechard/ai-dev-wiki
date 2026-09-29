@@ -1,0 +1,347 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-09-29T01:03:33Z",
+  "run_timestamp_local": "2026-09-28T21:03:33-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-22T01:03:33Z",
+    "end_utc": "2026-09-29T01:03:33Z",
+    "relative_days": 7
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md"
+  ],
+  "source_urls_checked": [
+    "https://www.techradar.com/pro/enterprise-ai-has-a-memory-problem-but-businesses-have-the-answer",
+    "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-revamps-copilot-with-new-tools-support-for-frontier-models-available-now-through-frontier-program",
+    "https://www.agenticfabriq.com/blog/context-engineering-long-horizon-agents",
+    "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+    "https://www.reddit.com/r/AgentsOfAI/comments/1ws2ye2/reduced_my_jev_as_a_judges_calibration_error/",
+    "https://www.reddit.com/r/EngineeringManagers/comments/1wsd57z/are_coding_agents_creating_a_review_wall_or_am_i/",
+    "https://www.reddit.com/r/ClaudeAI/comments/1ws8tv3/the_code_review_gap_i_see_in_the_aiagent_era/",
+    "https://www.productmap.io/blog/ai-pm-agents-azure-repos-microsoft-365",
+    "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+    "https://www.productmap.io/blog",
+    "https://sourcegraph.com/blog/introducing-agentic-batch-changes?trk=article-ssr-frontend-pulse_little-text-block",
+    "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+    "https://www.gartner.com/en/documents/8338717",
+    "https://zeronoise.ai/posts/ai-makes-building-cheap-pm-judgment-and-discovery-set-the-bar-tz3636wp8yiqtkwz",
+    "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+    "https://www.reddit.com/r/LLMDevs/comments/1wgygqy/docs_tell_an_ai_coding_agent_whats_right_only/",
+    "https://www.contextely.com/blog/context-engineering-for-ai-agents",
+    "https://docs.databricks.com/aws/en/agent-skills/"
+  ],
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/enterprise-ai-has-a-memory-problem-but-businesses-have-the-answer",
+      "source_title": "Enterprise AI has a memory problem, but businesses have the answer",
+      "published_or_updated_at": "2026-09-24",
+      "date_evidence": "Article displays Published 24 September 2026.",
+      "factual_summary": "TechRadar Pro opinion argues that enterprise AI memory should be built from governed business context: authoritative content, access controls, provenance, metadata, relationships, monitoring, evaluation, and human oversight. It frames model upgrades as insufficient without an organization-specific context layer and ontology.",
+      "why_it_matters_for_leaf": "Supports the local practice that compiled wikis and structured memory are not just storage; they must carry authority, provenance, access, validity, and decision context so agents can rehydrate state safely.",
+      "named_entities": [
+        "TechRadar Pro",
+        "Hyland",
+        "John Newton"
+      ],
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Hyland"
+      ],
+      "local_practice_implication": "When refreshing local memory guidance, emphasize source authority and lifecycle metadata before bigger context windows or generic memory claims.",
+      "follow_up_note": "Potential future synthesis for compiled wiki, context router, and rehydration leaves if a raw ingest is requested."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "source_url": "https://www.agenticfabriq.com/blog/context-engineering-long-horizon-agents",
+      "source_title": "Context Engineering for Long-Horizon Agents",
+      "published_or_updated_at": "2026-09-23",
+      "date_evidence": "Article byline displays Sep 23, 2026.",
+      "factual_summary": "Agentic Fabriq distinguishes context poisoning, distraction, confusion, and clash, and argues that compaction is only one repair lever. It recommends clearing tool results, isolating subagents where interfaces are clean, externalizing state, progressive tool disclosure, and pinning task statements, authorization context, and irreversible-action ledgers outside compactable summaries.",
+      "why_it_matters_for_leaf": "Directly reinforces local compaction and rehydration guidance: diagnose the context failure mode first and protect governance-critical facts from summarizers.",
+      "named_entities": [
+        "Agentic Fabriq",
+        "Anthropic",
+        "Chroma",
+        "MCP-Zero",
+        "LiveMCPBench",
+        "Slipstream",
+        "CompactionRL"
+      ],
+      "upstream_owned_entities": [
+        "Agentic Fabriq",
+        "Anthropic",
+        "Chroma",
+        "MCP-Zero",
+        "LiveMCPBench",
+        "Slipstream",
+        "CompactionRL"
+      ],
+      "local_practice_implication": "Treat compaction policy as a governed design choice, not a generic token-reduction step; ledgers and approvals belong in durable state.",
+      "follow_up_note": "Candidate ingest should avoid duplicating broad paper summaries and keep the downstream rule around local context practice."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ],
+      "source_url": "https://www.productmap.io/blog/ai-pm-agents-azure-repos-microsoft-365",
+      "source_title": "Connect Azure Repos, Microsoft 365, and Teams to AI agents",
+      "published_or_updated_at": "2026-09-23",
+      "date_evidence": "Search-accessible article text displays Published: September 23, 2026.",
+      "factual_summary": "Product Map describes a workflow where SharePoint and Teams inputs are fetched once, converted to reviewed Markdown in an Azure Repos context repository, and then treated as the source agents read. It emphasizes pull-request review gates, Git history, branch policy, and avoiding repeated API/tool-token fetches for the same product context.",
+      "why_it_matters_for_leaf": "Adds current practice evidence for lifespan-organized documentation and executable PRD templates: durable context should move through reviewable files, not remain only in live collaboration tools.",
+      "named_entities": [
+        "Product Map",
+        "Azure Repos",
+        "Microsoft 365",
+        "Microsoft Teams",
+        "SharePoint",
+        "OneDrive",
+        "Microsoft Graph",
+        "Azure DevOps"
+      ],
+      "upstream_owned_entities": [
+        "Product Map",
+        "Microsoft",
+        "Azure Repos",
+        "Microsoft 365",
+        "Microsoft Teams",
+        "SharePoint",
+        "OneDrive"
+      ],
+      "local_practice_implication": "A local ingest should focus on the downstream pattern: fetch external docs once, accept them into Git as reviewed Markdown, and make the repo copy the agent-readable authority.",
+      "follow_up_note": "Useful for context repository, PRD template, and documentation lifespan leaves; preserve Product Map as an upstream-owned product entity."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "source_url": "https://www.tomshardware.com/tablets/microsoft-surface/microsoft-revamps-copilot-with-new-tools-support-for-frontier-models-available-now-through-frontier-program",
+      "source_title": "Microsoft revamps Copilot with new tools, support for frontier models",
+      "published_or_updated_at": "2026-09-25",
+      "date_evidence": "Article displays Published 25 September 2026.",
+      "factual_summary": "Tom's Hardware reports that Microsoft is reorganizing Copilot into Home, Code, and Autopilot surfaces, with the Code surface positioned against coding agents and a managed runtime for enterprise-hosted code, while Autopilot is framed as a recurring-work digital teammate.",
+      "why_it_matters_for_leaf": "The local implication is workflow topology before model selection: evaluate assistant surfaces by where context, sandboxing, recurring work, and enterprise runtime controls live, not just by which frontier model is attached.",
+      "named_entities": [
+        "Microsoft",
+        "Copilot",
+        "GitHub Copilot",
+        "ChatGPT Codex",
+        "Claude Code",
+        "Frontier Program",
+        "Copilot Managed Runtime"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft",
+        "Copilot",
+        "GitHub Copilot",
+        "ChatGPT Codex",
+        "Claude Code"
+      ],
+      "local_practice_implication": "Selection guidance should ask which work surface owns alignment, code execution, recurring tasks, and runtime hosting before comparing model capability.",
+      "follow_up_note": "Route broad product update to upstream AI wiki; retain only selection/workflow implications locally."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+      "source_title": "Qodo's 2026 State of AI Code Quality Report Reveals Growing Verification Challenge as Agentic Development Scales",
+      "published_or_updated_at": "2026-09-23",
+      "date_evidence": "Press release displays September 23, 2026 09:00 ET.",
+      "factual_summary": "Qodo reports survey findings that review and validation of AI-generated code are the top bottleneck for both developers and engineering leaders, that 36% of developers say AI-code review takes similar time but greater cognitive effort, and that 45% of engineering leaders have traceability from AI activity to resulting code changes.",
+      "why_it_matters_for_leaf": "Strengthens quality-gate leaves by connecting observability, traceability, and review load to delivery bottlenecks rather than treating evals as an optional afterthought.",
+      "named_entities": [
+        "Qodo",
+        "Censuswide"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "Censuswide"
+      ],
+      "local_practice_implication": "Local guidance should keep senior engineers in the verification loop while shifting routine validation into traceable gates that precede human review.",
+      "follow_up_note": "Potential raw ingest should keep survey stats attributed to Qodo/Censuswide and avoid turning vendor framing into a universal benchmark."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_url": "https://www.reddit.com/r/AgentsOfAI/comments/1ws2ye2/reduced_my_jev_as_a_judges_calibration_error/",
+      "source_title": "Reduced my Jev as a judge's calibration error",
+      "published_or_updated_at": "2026-09-28",
+      "date_evidence": "Search result and Reddit page show the post as today / Monday September 28, 2026 during this run window.",
+      "factual_summary": "A public Reddit discussion around Typed Evals/Jev argues that judge calibration matters most when confidence scores route actions, approvals, escalations, or human review. Commenters emphasize held-out labels, false-approval rates, slice-level reliability, abstention, and not relaxing binary gates solely because expected calibration error improved.",
+      "why_it_matters_for_leaf": "Directly maps to representative workflow calibration: production thresholds should be tied to action-specific error costs and representative labeled slices, not a single global confidence cutoff.",
+      "named_entities": [
+        "Jev",
+        "Typed Evals",
+        "TrustifAI",
+        "Reddit"
+      ],
+      "upstream_owned_entities": [
+        "Jev",
+        "Typed Evals",
+        "TrustifAI",
+        "Reddit"
+      ],
+      "local_practice_implication": "When using LLM judges as gates, calibrate for routing decisions and false approvals on representative workflow slices, with abstain paths for thin data.",
+      "follow_up_note": "Treat as practitioner evidence, not authoritative research; useful as a cautionary example for judge thresholds."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "source_url": "https://www.reddit.com/r/EngineeringManagers/comments/1wsd57z/are_coding_agents_creating_a_review_wall_or_am_i/",
+      "source_title": "Are coding agents creating a review wall, or am I inventing a problem?",
+      "published_or_updated_at": "2026-09-28",
+      "date_evidence": "Search result and Reddit page show the post as today / Monday September 28, 2026 during this run window.",
+      "factual_summary": "The public engineering-management discussion frames AI coding agents as shifting bottlenecks to review: more PRs, longer time to first review, lower reviewer attention, and compensating practices such as smaller work units, detailed specs, agent first-pass review, and human review on doubt.",
+      "why_it_matters_for_leaf": "Adds current practitioner evidence that codebase-wide/batch agent workflows need review-capacity design and product judgment gates, not just generation throughput.",
+      "named_entities": [
+        "Reddit",
+        "Atlassian"
+      ],
+      "upstream_owned_entities": [
+        "Reddit",
+        "Atlassian"
+      ],
+      "local_practice_implication": "Batch-change guidance should bound review scope, split work units, and reserve human review for uncertainty and high-risk decisions rather than raw volume.",
+      "follow_up_note": "Use cautiously as anecdotal evidence; pair with stronger survey/source evidence if ingested."
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1ws8tv3/the_code_review_gap_i_see_in_the_aiagent_era/",
+      "source_title": "The code review gap I see in the AI-agent era",
+      "published_or_updated_at": "2026-09-28",
+      "date_evidence": "Search result and Reddit page show the post as today / Monday September 28, 2026 during this run window.",
+      "factual_summary": "A public Reddit thread discusses moving some review effort from line-by-line human inspection to architectural impact reports, independent agent review, tests, end-to-end user simulation, severity triage, time-boxed review loops, and rerunning only checks affected by a fix.",
+      "why_it_matters_for_leaf": "The local implication is not to trust agent self-reports, but to wrap them in independent verification and scoped review loops that scale with generated-code volume.",
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Astra",
+        "DORA",
+        "Reddit"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Astra",
+        "DORA",
+        "Reddit"
+      ],
+      "local_practice_implication": "Verification guidance should distinguish human understanding artifacts from verification mechanisms and cap recursive review loops with severity and scope rules.",
+      "follow_up_note": "Practitioner anecdote; useful for operational patterns if cross-checked during ingest."
+    }
+  ],
+  "excluded_candidate_count": 9,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.productmap.io/blog/prd-for-ai-agent-guardrails",
+      "source_title": "How to write a PRD for an AI agent, guardrails included",
+      "visible_date": "2026-06-19",
+      "exclusion_reason": "Outside the seven-day window despite being cited by the executable PRD leaf and still topically relevant."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/introducing-agentic-batch-changes?trk=article-ssr-frontend-pulse_little-text-block",
+      "source_title": "Introducing Agentic Batch Changes: the frontier agent for code change at scale",
+      "visible_date": "2026-09-14",
+      "exclusion_reason": "Published before cutoff; relevant to codebase-wide batch changes but not eligible this run."
+    },
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+      "source_title": "AI Coding Agents: Adoption Trends",
+      "visible_date": "2026-08",
+      "exclusion_reason": "Crawled recently but published outside the cutoff window; crawl date is not publication/update evidence."
+    },
+    {
+      "source_url": "https://www.gartner.com/en/documents/8338717",
+      "source_title": "How to Select Enterprise AI Coding Agents",
+      "visible_date": "2026-09-02",
+      "exclusion_reason": "Published outside the seven-day window."
+    },
+    {
+      "source_url": "https://zeronoise.ai/posts/ai-makes-building-cheap-pm-judgment-and-discovery-set-the-bar-tz3636wp8yiqtkwz",
+      "source_title": "AI Makes Building Cheap; PM Judgment and Discovery Set the Bar",
+      "visible_date": "2026-09-18",
+      "exclusion_reason": "Published before cutoff; locally relevant to product judgment but boundary-old."
+    },
+    {
+      "source_url": "https://www.itpro.com/software/development/atlassian-introduces-always-on-capabilities-for-agentic-development-workflows",
+      "source_title": "Atlassian introduces always-on capabilities for agentic development workflows",
+      "visible_date": "2026-09-11",
+      "exclusion_reason": "Published outside cutoff; product/platform update would mostly route upstream unless local workflow implications are separately synthesized."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/LLMDevs/comments/1wgygqy/docs_tell_an_ai_coding_agent_whats_right_only/",
+      "source_title": "Docs tell an AI coding agent what's right; only deterministic CI enforces it",
+      "visible_date": "2026-09-15",
+      "exclusion_reason": "Published before cutoff; useful local-practice framing but not eligible."
+    },
+    {
+      "source_url": "https://www.contextely.com/blog/context-engineering-for-ai-agents",
+      "source_title": "Context Engineering for AI Agents: A Practical Playbook",
+      "visible_date": "2026-09-08",
+      "exclusion_reason": "Published before cutoff; crawled today is not sufficient update evidence."
+    },
+    {
+      "source_url": "https://docs.databricks.com/aws/en/agent-skills/",
+      "source_title": "Agent skills for AI coding assistants",
+      "visible_date": "2026-09-11",
+      "exclusion_reason": "Last updated before cutoff and mostly provider/product-specific; broad agent-skill entity context routes upstream."
+    }
+  ],
+  "upstream_routing_note": "Broad ecosystem product, company, model, framework, MCP server, and technique updates remain upstream AI wiki scope. This raw artifact records only downstream practice implications for selected local leaves.",
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch artifact; normal raw ingest owns synthesis and verification.",
+    "If ingested, preserve the distinction between public practitioner anecdotes and stronger vendor or research evidence."
+  ]
+}
