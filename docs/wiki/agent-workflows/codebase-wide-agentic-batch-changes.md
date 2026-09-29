@@ -11,6 +11,8 @@ tags: ["agent-workflows"]
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds modernization-workflow evidence. Codebase-wide modernization should be treated as a repeatable agent workflow with plugin installation review, real-codebase demonstrations, regulated-domain constraints, migration-slice gates, and evidence that large upgrades remain inspectable rather than one-off prompting.
 
+The [September 28 raw sources](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add review-wall and follow-up-fix evidence. Batch-change workflows should split generated work into reviewable units, track review latency and same-agent follow-up repairs, cap parallel patch interference, and treat merge as an intermediate state until follow-up defect signals are known.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds a stale-feature-flag cleanup example. Codebase-wide agents should gather live runtime metadata, require engineer confirmation of the semantic target value, isolate concurrent workers in worktrees, cap runtime, run builds, tests, coverage, and static analysis, and create pull requests only after validation gates pass.
 
 Codebase-wide agentic batch changes roll a scoped agent change across many repositories through staged proof, CI repair, and human approval. The pattern is useful when one policy, migration, dependency, or API change needs consistent treatment across a fleet, but it is risky unless the rollout is governed as a change-management loop rather than a single agent prompt.
@@ -40,10 +42,13 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 - Treat CI failures as feedback that can pause or narrow the rollout.
 - Preserve merge status, failed-check evidence, repair attempts, and human approval state for each batch.
 - Use outcome-based pricing or billing claims only alongside accepted-merge evidence and reviewer burden.
+- Track review latency, follow-up fixes, parallel patch interference, and same-agent repair loops before scaling generated batch changes.
 
 ## Authoritative Sources
 
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
@@ -73,6 +78,7 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, parallel-patch-interference, and review-latency evidence.
 - Maintained on 2026-09-25 with modernization workflow, plugin review, migration gate, and regulated-domain evidence.
 
 - Maintained on 2026-09-19 with feature-flag cleanup, runtime metadata, semantic-target confirmation, isolated worktrees, validation gates, coverage, static-analysis, and timeout evidence.

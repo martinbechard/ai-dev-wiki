@@ -43,6 +43,8 @@ The [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds professional-judgment and program-synthesis benchmark evidence. Calibration suites should include realistic requests that require context interpretation and end-to-end professional judgment when those workflows are the target. When a benchmark freezes agent-generated programs and tests them on held-out instances, local calibration should preserve that separation between interactive development success and held-out execution success.
 
+The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add local-eval-suite and judge-calibration evidence. Representative calibration should evaluate the full scaffold around coding agents: prompts, tools, workflow state, dependency changes, graders, security checks, human review, cost, and time-to-resolution. When LLM judges route approvals or escalations, calibration should use representative labeled slices, false-approval rates, abstention paths, and action-specific error costs instead of one global confidence threshold.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -66,11 +68,15 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Include long-horizon state management, final deliverable repair, adversarial test-suite auditing, role-grounded rubrics, repository evidence, and codebase-health criteria when those match the local workflow.
 - Treat coding-leaderboard updates as prompts to rerun representative local tasks before changing model, assistant, or effort defaults.
 - Include professional-judgment tasks, held-out execution checks, frozen generated artifacts, and task-environment separation when calibrating agents meant to solve job-like or simulation-backed workflows.
+- Calibrate LLM judges against representative workflow slices, false-approval costs, abstention paths, and the routing decision they control.
+- Evaluate prompts, models, tools, dependencies, workflow state, graders, review effort, cost, and time-to-resolution as one scaffold when agentic coding practice changes.
 
 ## Authoritative Sources
 
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -113,6 +119,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with eval-scaffold, judge-calibration, false-approval, abstention, cost, and time-to-resolution evidence.
 - Maintained on 2026-09-21 with harness-efficiency, review-coverage, evaluator-authority, and workload-mix calibration evidence.
 - Maintained on 2026-09-25 with professional-judgment, frozen-artifact, held-out execution, and simulation-backed calibration evidence.
 - Maintained on 2026-08-29 with coding-leaderboard methodology, live-arena, benchmark-cross-check, accepted-change, and verification-cost calibration evidence.

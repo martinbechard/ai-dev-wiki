@@ -97,6 +97,8 @@ The September 6 raw sources add agent-adoption measurement and tool-fit evidence
 
 The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-policy evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) frames AI-first adoption as a software-delivery operating model with design-time quality gates, developer-as-architect responsibilities, and build-versus-buy criteria. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records team-scoped managed model defaults and validation/recovery evidence for model routes. Locally, workflow selection should compare agent-enabled delivery speed, review capacity, ownership cost, model-policy eligibility, validation evidence, and fallback behavior before shifting work from bought systems to internal builds.
 
+The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds assistant-surface selection evidence. Workflow selection should identify where context, sandboxing, recurring work, enterprise runtime controls, alignment, and code execution live before model capability or product branding decides the route.
+
 The September 14 raw sources add routing and enterprise-platform workflow signals. The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records cost-quality model tiers and Red Hat AI safety and multi-tenancy controls, while the [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records Sourcegraph-style batch changes and DoD-style evidence expectations. Locally, workflow selection should decide whether a task is routine, quality-sensitive, batch-rollout, or regulated before selecting model route or platform controls; professional training curriculum evidence belongs in [junior learning paths](junior-learning-paths-in-agentic-teams.md).
 
 ## Practice Boundaries
@@ -122,6 +124,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - Add enterprise identity, audit, retention, residency, deployment, support, and evidence needs to workflow selection before coding-agent procurement expands.
 - Define collaboration-channel triggers, subscriptions, state, tool scope, and response posting rules before selecting a chat-agent toolkit.
 - Compare agent-enabled delivery speed, review capacity, ownership cost, model-policy eligibility, validation evidence, and fallback behavior before changing build-versus-buy or model-route defaults.
+- Compare assistant surfaces by context ownership, sandboxing, recurring-work support, runtime hosting, alignment controls, and verification fit before comparing attached frontier models.
 - Verify repository-overview outputs against authoritative files before treating them as project knowledge or onboarding evidence.
 - Route admin-enabled models by task risk, context size, autonomy level, cost envelope, and verification burden rather than developer preference alone.
 - Treat specialized multi-agent modernization packages as workflow definitions with explicit roles, gates, evidence, and cost telemetry.
@@ -176,6 +179,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
@@ -262,6 +266,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with assistant-surface, managed-runtime, recurring-work, sandboxing, and context-ownership selection evidence.
 - Maintained on 2026-09-15 with model-tier routing, cost-quality-latency, billing, and automatic-routing workflow evidence.
 - Maintained on 2026-09-07 with AI-first SDLC, build-versus-buy, model-policy, review-capacity, validation, and fallback routing evidence.
 - Maintained on 2026-09-05 with long-horizon model availability, multi-model orchestration, delegated-tool comparison, review-follow-up, CI repair, feature, flaky-test, and backlog-cleanup workflow criteria.

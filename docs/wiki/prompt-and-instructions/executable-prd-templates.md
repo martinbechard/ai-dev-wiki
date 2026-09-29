@@ -30,6 +30,8 @@ The [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai
 
 The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) adds public SpecMine and spec-driven development evidence. PRDs become more agent-executable when they link requirement intent to repository evidence and independent verification instead of living as planning prose alone.
 
+The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add architecture-request and context-repository evidence. Agent-facing architecture or PRD packages should make quality attributes measurable, record constraints and tradeoffs, identify which external documents were promoted into reviewed Markdown, and require review of generated tests before those tests become acceptance evidence.
+
 ## Practice Boundaries
 
 - Include allowed tools, human approval points, fallback or escalation behavior, logging requirements, and verification seeds when a PRD is loaded by a coding agent.
@@ -43,6 +45,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Treat separate verifier-agent expectations as part of the PRD contract when spec drift or requirement ambiguity would otherwise reach merge review late.
 - Keep agent-facing specs alive through implementation by pairing requirements, technical design, task breakdown, and verifier expectations with drift checks instead of treating the spec as a one-time prompt.
 - For platform-backed app specs, identify official platform context, deterministic CLI routes, privileged MCP access, environment separation, audit logs, scoped permissions, and reversible versions before the agent moves from prompt to production change.
+- Make quality attributes, constraints, tradeoffs, promoted source documents, and generated-test review explicit before a PRD authorizes architecture or implementation work.
 
 ## Authoritative Sources
 
@@ -54,6 +57,8 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [request packages and file boundaries](request-packages-and-file-boundaries.md)
 - [instruction hierarchy and artifact boundaries](instruction-hierarchy-and-artifact-boundaries.md)
 - [research plan implement review lifecycle](../agent-workflows/research-plan-implement-review-lifecycle.md)
@@ -90,3 +95,4 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Maintained on 2026-08-08 with AI-checkable algorithm outline fields for outcomes, invariants, correctness conditions, and acceptance checks.
 - Maintained on 2026-08-26 with requirement-validation status, ambiguity markers, reviewer perspectives, decision records, and testability gates before agent-readable implementation input.
 - Maintained on 2026-08-30 with repository-linked spec, reference-index, scope-boundary, verification-criteria, and verifier-agent evidence.
+- Maintained on 2026-09-28 with measurable quality attributes, tradeoff, reviewed-context-repository, and generated-test-review evidence.

@@ -15,6 +15,8 @@ Active documents hold living plans for work in progress. Decision records preser
 
 The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json) adds Markdown wiki portability evidence. File-backed knowledge bases benefit from tree navigation, full-text search, revision history, link refactoring, backup and restore, and public or private modes, but the local rule remains authority-based: portable Markdown helps only when active, reference, decision, archive, clipping, raw, and processed material keep their lifespan signals.
 
+The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds current context-repository evidence. External collaboration content should become durable agent context only after it is fetched once, converted into reviewed Markdown, accepted through source-control review, and assigned lifespan authority; live chat, drive, or team-space copies remain source evidence until that review happens.
+
 ## Practice Boundaries
 
 - Keep active plans separate from accepted decisions and stable references.
@@ -24,6 +26,7 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - Route agents to documents by lifespan when authority matters more than topic grouping.
 - Preserve tree structure, link maintenance, revision history, and backup or restore paths for file-backed wikis that agents use as durable context.
 - Keep portability features subordinate to lifespan authority so raw or archived material is not mistaken for current guidance.
+- Treat reviewed Markdown in source control as the agent-readable authority when external collaboration content has been promoted from live tools.
 
 ## Authoritative Sources
 
@@ -31,6 +34,7 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 - [Context router and knowledge layers](context-router-and-knowledge-layers.md)
 - [source-workflows](../source-workflows/index.md)
 - [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-wiki-leaf-update-watch-2026-07-30T210230-0400.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 
 ## Related Code
 
@@ -58,3 +62,4 @@ The [July 30 leaf update watch source](../../../raw/processed/2026-07-30/ai-dev-
 
 - Created on 2026-06-23 from the folder organization source note covering active plans, decisions, references, and archive authority signals.
 - Maintained on 2026-07-30 with Markdown wiki portability, link-maintenance, revision, backup, and lifespan-authority guidance.
+- Maintained on 2026-09-28 with reviewed-context-repository and external-collaboration-source promotion evidence.

@@ -27,6 +27,8 @@ The [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev
 
 The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json) adds two boundary signals. Terminal-agent training evidence emphasizes verifier quality and process-level behavior, while production secret-scanning evaluation uses LLM judgment only after calibration against production labels and deterministic security signals.
 
+The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds judge-routing evidence from practitioner eval discussion. When confidence scores route actions, approvals, escalations, or human review, judge calibration should be tied to held-out labels, slice-level reliability, false approvals, abstention, and the concrete decision being gated.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -46,6 +48,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - Keep generated adversarial tests, role-grounded rubric sources, heterogeneous judge outputs, and human override reasons separate when a benchmark or domain eval combines hard correctness with professional judgment.
 - Evaluate terminal-agent process traces with verifiers that can inspect behavior, not only final task success.
 - Calibrate production LLM judges against labeled outcomes and deterministic security checks before their scores affect release or repair gates.
+- Do not relax binary gates solely because aggregate calibration improves; check the routed action, slice, false-approval cost, and abstain behavior.
 
 ## Authoritative Sources
 
@@ -59,6 +62,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 - [July 16 leaf update watch source](../../../raw/processed/2026-07-16/ai-dev-wiki-leaf-update-watch-2026-07-16T210220-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 
 ## Related Code
 
@@ -84,6 +88,7 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with judge-routing, held-out-label, false-approval, slice-reliability, and abstention evidence.
 - Created on 2026-06-23 to hold deterministic grader, human review, and LLM-as-judge boundaries.
 - Maintained on 2026-06-26 with trace-linked judge results and judge-provider governance.
 - Maintained on 2026-06-30 with step, content, trace, and thread scoring boundaries for agent evals.

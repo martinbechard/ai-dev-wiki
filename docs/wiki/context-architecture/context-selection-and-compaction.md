@@ -19,6 +19,8 @@ The [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI
 
 The [context engineering source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) reinforces the local production-infrastructure lens: scoped inputs, durable knowledge layers, retrieval rules, and context governance need to be designed before agents are allowed to run multi-step development or operations workflows. Broad context-engineering taxonomy stays upstream; this page keeps the local selection and compaction rule.
 
+The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds long-horizon context-failure evidence. Selection and compaction should diagnose whether the failure is poisoning, distraction, confusion, or clash before trimming context. Governance-critical facts such as task statements, authorization context, irreversible-action ledgers, and approval history should live outside compactable summaries and be reloaded as durable state.
+
 The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) add a bootstrapping case: when agents work against proprietary code, internal SDKs, custom frameworks, or technologies absent from model training, context selection starts with baseline evals, concise durable instructions, reference implementations, current API surfaces, and diagnostic errors. Public vendor identity stays upstream; locally, this is a rule for teaching unknown project reality without flooding the request.
 
 The [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) adds a placement rule for long-context work. Larger context windows reduce some retrieval failures, but load-bearing instructions and source facts can still be ignored when buried in the middle of a long request. Important constraints should be externalized, curated into a short request package, placed near the beginning or near the point of use, and verified against disk state when the agent claims to know them.
@@ -110,6 +112,7 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - [Deep research workshop source](../../../raw/processed/Full Workshop Build Your Own Deep Research Agents - Louis-François Bouchard, Paul Iusztin, Samridhi.md)
 - [Agent harness source](../../../raw/processed/What is an Agent Harness? and How to build a great one!.md)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [Lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md)

@@ -15,6 +15,8 @@ Agents expand the attack surface because they combine generated text, retrieved 
 
 Provider security announcements and product feature catalogs belong upstream. This page owns the local practice implications.
 
+The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) adds per-action monitor, audit-evidence, and policy-before-execution signals. Governance controls should fail closed when action monitors cannot score a proposed action, preserve reviewer queues for high-score actions, log policy versions, approvals, prompts, tool calls, blocked actions, outcomes, inventories, risk assessments, and incident tickets, and separate policy review from code review when agents can pull tools, skills, plugins, community packages, or runtime-generated code before execution.
+
 The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json) and [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json) reinforce that controls need to cover the full agent operating surface: installation sources, tool catalogs, MCP trust boundaries, non-human identity, credential exposure, shadow AI, runtime filtering, red teaming, and audit trails. Product-specific controls from GitHub, Snyk, and governance vendors remain upstream-owned unless they define a local acceptance rule.
 
 The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) and [June 26 leaf update watch source](../../../raw/processed/2026-06-26/ai-dev-wiki-leaf-update-watch-2026-06-26T210418-0400.json) add policy-surface evidence for model enablement, plugin consent, marketplace restrictions, permission-denial transcripts, runner controls, package-account protection, and deterministic agent configuration. The local rule is to keep these as enforceable controls around the agent loop, with auditable evidence for why a tool, model, environment, or package action was allowed.
@@ -194,6 +196,9 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 - Route source-control-attached AI attribution and approved-model policy details to [commit-level AI governance](commit-level-ai-governance.md).
 - Preserve context-control, standards, and system-of-record ownership evidence when agent workflows span tickets, repositories, documentation, and pull requests.
 - Maintain risk-register entries with owner, tier, review date, monitoring record, audit evidence, and mitigation status for recurring or high-impact agents.
+- Preserve policy version, prompt, tool-call, approval, blocked-action, outcome, inventory, risk-assessment, test, and incident-ticket evidence when auditability must prove enforcement.
+- Fail closed when a blocking action monitor cannot score a proposed action, and route high-risk actions to human review before execution.
+- Review allowed hosts, tools, skills, environment access, data flow, and termination properties before autonomous agents execute third-party or runtime-generated code.
 - Route unexpected agent behavior, unauthorized communication channels, or governance-control failures through [agent incident reporting](agent-incident-reporting.md).
 - Validate managed AI settings, team mappings, default enablement policy, sandbox scope, telemetry export, and proof-of-presence requirements as enforceable control-plane state rather than treating them as product defaults.
 
@@ -268,6 +273,7 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
@@ -304,6 +310,7 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with per-action monitor, fail-closed, audit-evidence-package, policy-version, and policy-before-execution governance evidence.
 - Maintained on 2026-09-26 with managed-settings validation, default-policy, sandbox-scope, telemetry-export, proof-of-presence, and authority-boundary evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.
 - Maintained on 2026-09-05 with data-access, action-scope, attribution, lineage, SIEM-audit, and misalignment-disclosure governance evidence.

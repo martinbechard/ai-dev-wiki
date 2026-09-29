@@ -29,6 +29,8 @@ The August 28 and 29 raw sources add product-judgment evidence for prompt versio
 
 The [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) adds prototype-validation evidence. Agent-built prototypes should be judged against demand, willingness-to-pay, product-decision evidence, and human interpretation before task completion is treated as validation. The same source reinforces that design-time defect discovery and developer-as-architect responsibilities are product gates, not only coding productivity claims.
 
+The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add eval-operating-system, verification-bottleneck, and review-wall evidence. Product judgment gates should treat local eval suites, objective graders, review-load telemetry, traceability from AI activity to code changes, and reviewer cognitive load as operating evidence before agent throughput is counted as delivery improvement.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -45,6 +47,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - Apply equal-or-stricter human review for AI-generated product work when release risk, user impact, compliance, or business alignment is material.
 - Pair demos with repository evidence, codebase-health review, and final deliverable repair records when evaluating AI-agent build exercises or open-ended agent tasks.
 - Judge agent-built prototypes against demand, willingness-to-pay, product-decision evidence, and human interpretation before treating task completion as validation.
+- Track reviewer load, traceability, eval coverage, and follow-up fix evidence when generated-code volume changes product acceptance risk.
 
 ## Authoritative Sources
 
@@ -62,6 +65,8 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 
 ## Related Code
 
@@ -87,6 +92,7 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with eval-suite, review-load, traceability, follow-up-fix, and verification-bottleneck product-gate evidence.
 - Maintained on 2026-09-21 with final-claim coverage, vendor metric caveat, and typed-decision gate evidence.
 - Maintained on 2026-08-29 with prompt-version, red-team fixture, reusable-skill improvement, reviewer-fatigue, collaboration-health, and source-trust product-judgment evidence.
 - Maintained on 2026-09-07 with prototype-validation, demand-evidence, willingness-to-pay, design-time defect, and developer-as-architect product gates.

@@ -11,6 +11,8 @@ tags: ["coding-practices"]
 
 The September 27 topic news collector source adds deploy-aware review and agent-handoff evidence. Cursor-style rollout monitors and security-review bots shift part of AI review from pull-request comments toward post-merge or deployment-aware signals, while agent-oriented review comparisons reinforce that findings are more useful when they can hand back into the coding agent under human final judgment instead of becoming dead-end comments.
 
+The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add review-wall, follow-up-fix, and scoped-review-loop evidence. Intelligent review should treat agent-authored merges as needing post-merge fix-rate tracking, independent review, architectural impact summaries, severity triage, smaller work units, and bounded rerun loops rather than relying on line-by-line review alone or agent self-reports.
+
 Intelligent code review uses an AI reviewer to compare a change against project rules, source references, risk tiers, contracts, tests, security expectations, and runtime behavior. The reviewer reduces human review load only when it is given the evidence needed to produce actionable findings.
 
 The September 21 raw sources add explicit security-check and coverage-receipt evidence. The [topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json) records study coverage where developers often selected among AI-generated suggestions without a structured security step. The [leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) records review-coverage evidence where incomplete file review can still be reported as complete. Locally, review prompts and gates should require explicit security checks and coverage receipts rather than trusting a generic review instruction or final summary.
@@ -148,6 +150,8 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 - Treat deployment model, source exposure, audit evidence, and data residency as review-tool selection criteria before measuring review quality.
 - Evaluate whether the reviewer understands repository-wide architecture and team standards, not only the changed hunk.
 - Use automated compliance checks, quality gates, and runtime evidence to reduce reviewer load without hiding final human judgment.
+- Track post-merge fixes, same-agent repairs, reviewer latency, and low-attention review risk when AI-generated PR volume grows.
+- Use independent review, architectural-impact summaries, severity triage, and bounded rerun loops as review aids, not as replacements for human acceptance.
 - Keep AI review standards versioned with the repository or team source of truth, and record which standard set ran against a change.
 - Require agent-generated pull requests to carry consequence-based risk triage, validation evidence, change explanation, and human accountability instead of relying on fluent generated comments.
 - Include established software-quality dimensions when reviewing AI-generated changes that are larger than a local fix.
@@ -226,6 +230,8 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 ## Authoritative Sources
 
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
+- [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
@@ -327,6 +333,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, independent-review-loop, architectural-impact, and bounded-rerun evidence.
 - Maintained on 2026-09-27 with deploy-aware review, security-review bot, revert-preparation, agent-handoff, and human-final-judgment evidence.
 - Maintained on 2026-09-26 with review-stage telemetry, bot-review exclusion, verification-bottleneck, reviewer-capacity, and accepted-risk evidence.
 - Maintained on 2026-09-21 with explicit security-check and review-coverage receipt evidence.

@@ -11,6 +11,8 @@ tags: ["context-architecture"]
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise procedural-memory evidence. MCP-served playbooks, wiki access, runbooks, observability context, and task-system context can reduce repeated tool calls and missing tribal knowledge only when each memory source has provenance, owner, freshness, access scope, and compaction behavior recorded.
 
+The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds governed-enterprise-memory and reviewed-context-repository evidence. Compiled wiki and structured memory layers should prioritize authority, provenance, access controls, lifecycle metadata, and human-reviewed Markdown acceptance before they rely on bigger context windows, generic memory, or repeated live-tool fetches.
+
 Context systems need a clear source of truth and a clear compiled view. The [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md) contrasts prose-first wikis with structured memory stores: wikis are useful for browsable synthesis and deep topic work, while structured stores are better for high-volume, multi-agent, operational facts that need precise queries and auditability.
 
 The local rule is that a wiki should compile understanding from authoritative sources rather than become the authoritative store for every fast-changing fact. For raw-source ingest, source artifacts remain provenance, durable leaves hold synthesized practice, and digests point readers to the leaves. For high-volume operational memory, a structured store can be the source of truth while generated wiki pages act as a hot reference layer.
@@ -58,10 +60,12 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - Attach freshness, trust, source, and refresh-cadence metadata to memory records that may influence future agent decisions.
 - Preserve replayable or attributable originals for compacted decisions, approvals, source reads, and tool actions when later audit matters.
 - Use compiled memory to reduce repeated reasoning only when the compiled view remains source-backed, refreshable, and scoped to the workflow.
+- Promote external collaboration material into reviewed repository files when it becomes agent-readable authority; do not make live collaboration-tool fetches the durable memory layer by default.
 
 ## Authoritative Sources
 
 - [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md)
+- [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [context router and knowledge layers](context-router-and-knowledge-layers.md)
 - [source workflows](../source-workflows/index.md)
 - [June 29 leaf update watch source](../../../raw/processed/2026-06-29/ai-dev-wiki-leaf-update-watch-2026-06-29T210316-0400.json)
@@ -99,6 +103,7 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 ## Maintenance Notes
 
 - Maintained on 2026-09-19 with enterprise procedural-memory, MCP-served playbook, wiki, runbook, observability, task-system, and compaction-boundary evidence.
+- Maintained on 2026-09-28 with governed-memory, source-authority, lifecycle-metadata, and reviewed-context-repository evidence.
 - Created on 2026-06-23 to hold source-of-truth and compiled-view boundaries.
 - Maintained on 2026-06-29 with durable company-context and structured Markdown wiki memory signals.
 - Maintained on 2026-07-02 with file-based wiki memory, source synthesis, and freshness-boundary guidance.
