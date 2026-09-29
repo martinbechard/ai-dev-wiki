@@ -1,0 +1,536 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-29T00:32:27Z",
+  "run_timestamp_local": "2026-09-28T20:32:27-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-27T00:32:27Z",
+    "end_utc": "2026-09-29T00:32:27Z",
+    "rule": "Only public sources with visible publication or update dates inside the last two days relative to run time qualify. Future-dated, missing-date, ambiguous-date, stale-publication, and boundary-only event dates are excluded."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_wiki_owns": "AI-assisted development practice, workflow, guidance structure, verification, governance, local adoption, and implementation lenses.",
+    "upstream_wiki_owns": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, general techniques, and ecosystem background.",
+    "local_handling_rule": "When a source names upstream-owned entities, retain only the local practice implication or routing note."
+  },
+  "search_queries": [
+    "AI-assisted development coding agents prompt engineering code review evals September 28 2026",
+    "AI coding agents governance audit logs approvals September 28 2026",
+    "MCP governed practice tool calls approvals audit logs September 2026",
+    "\"September 28, 2026\" \"coding agent\" \"eval\"",
+    "\"Sep 28, 2026\" \"coding agents\" \"review\"",
+    "\"2026-09-28\" \"coding agents\" \"RAG\"",
+    "\"2026-09-28\" \"MCP\" \"coding agent\"",
+    "METR \"Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals\" September 2026",
+    "\"AI code review\" \"Sep 28, 2026\"",
+    "\"AI-assisted TDD\" \"Sep 28, 2026\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "metr-per-action-monitor-2026-09-27",
+      "source_title": "Implementing and Evaluating a Basic Per-Action Monitor for Safer Evals",
+      "source_url": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "publisher": "METR",
+      "visible_date": "September 27, 2026",
+      "date_basis": "Article page shows DATE September 27, 2026.",
+      "factual_summary": "METR describes a live per-action monitor for eval runs where an LLM judge scores proposed agent actions before execution, blocks actions above a threshold for human review, fails closed on monitor errors, and documents gaps around coverage, evasion, images, outdated Inspect versions, and centralized inference logging.",
+      "why_it_matters_for_ai_assisted_development_practice": "Evaluation and coding-agent harnesses need explicit monitorability claims, fail-closed behavior, human-review queues, version gates, and evidence for what the monitor can and cannot see before teams treat action blocking as a safety control.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "METR",
+        "Inspect",
+        "UK AISI",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "routing_note": "Company and product background belongs upstream; local note should keep only monitorability and incident-response practice implications."
+        },
+        {
+          "entity": "Anthropic",
+          "routing_note": "Company and model/provider background belongs upstream; local note should keep only eval incident and monitorability practice implications."
+        }
+      ],
+      "follow_up_notes": "Candidate for verification-loop and harness monitoring pages; do not ingest as broad AI safety entity coverage."
+    },
+    {
+      "id": "infoq-architecture-agents-2026-09-28",
+      "source_title": "Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
+      "source_url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture/",
+      "publisher": "InfoQ",
+      "visible_date": "Sep 28, 2026",
+      "date_basis": "Article page shows Sep 28, 2026.",
+      "factual_summary": "InfoQ argues that AI coding agents can document legacy services, identify architectural flaws, patch security issues, generate architecture foundations, and produce minimum viable architectures, but only when teams provide measurable quality attributes, constraints, trade-offs, tests, and review of generated tests.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is that architecture constraints must become explicit, measurable, and test-backed request inputs; agent speed raises the cost of vague quality attributes and unverified generated test harnesses.",
+      "suggested_local_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "InfoQ",
+        "Minimum Viable Architecture",
+        "Quality Attribute Requirements"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_notes": "Potential synthesis for architecture acceptance gates and request-package guidance."
+    },
+    {
+      "id": "letslearngenai-evals-operating-system-2026-09-28",
+      "source_title": "Why Evals Are Now the Operating System of AI-Assisted Coding",
+      "source_url": "https://letslearngenai.com/articles/why-evals-are-now-the-operating-system-of-ai-assisted-coding-2026-09-28",
+      "publisher": "LetsLearnGenAI",
+      "visible_date": "September 28, 2026",
+      "date_basis": "Article byline shows September 28, 2026.",
+      "factual_summary": "The article frames AI-assisted coding evaluation as a system-level practice: small repeatable local task suites, objective graders, regression control across prompts/models/tools/dependencies/workflows, and layered evidence from tests, security checks, human review, cost, and time-to-resolution.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams expanding from autocomplete to repository-wide agents should evaluate the full scaffold and delivery workflow, not only benchmark model capability or visible tests.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "LetsLearnGenAI"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_notes": "Useful for local eval-suite adoption guidance; verify claims before promoting into durable guidance."
+    },
+    {
+      "id": "jarmak-agent-pr-fix-rate-digest-2026-09-28",
+      "source_title": "Agents finish their own jobs, and their merges still need fixing more often",
+      "source_url": "https://www.sjarmak.ai/digest/weekly-2026-09-28/",
+      "publisher": "Stephanie Jarmak",
+      "visible_date": "Sep 28, 2026",
+      "date_basis": "Digest page title and byline show Sep 28, 2026.",
+      "factual_summary": "The digest summarizes studies and benchmarks claiming merged agent-authored PRs attract verified follow-up fixes at 1.62 times the odds of comparable human PRs, that same-agent fix follow-ups are common, that parallel patches can interfere, and that developer-written skills can reduce coding-agent cost more than synthesized skills in the cited experiments.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice signal is to treat merge as an intermediate milestone for agent work: track follow-up fix rates, parallel-change interference, skill authorship quality, and validator strength as adoption metrics.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Stephanie Jarmak",
+        "Codex",
+        "Copilot",
+        "Devin",
+        "Cursor",
+        "Claude Code",
+        "Django"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Codex",
+          "routing_note": "Product background belongs upstream; local note should keep only follow-up-fix and workflow-metric implications."
+        },
+        {
+          "entity": "Copilot",
+          "routing_note": "Product background belongs upstream; local note should keep only review and adoption metric implications."
+        },
+        {
+          "entity": "Devin",
+          "routing_note": "Product background belongs upstream; local note should keep only merged-agent-PR evidence implications."
+        },
+        {
+          "entity": "Cursor",
+          "routing_note": "Product background belongs upstream; local note should keep only workflow metric implications."
+        },
+        {
+          "entity": "Claude Code",
+          "routing_note": "Product background belongs upstream; local note should keep only local agent-workflow implications."
+        }
+      ],
+      "follow_up_notes": "If ingested, cite original papers where available before turning digest claims into durable wiki guidance."
+    },
+    {
+      "id": "inexplicable-failures-accountability-2026-09-27",
+      "source_title": "The Normalization of Inexplicable Failures",
+      "source_url": "https://tech4you.club/articles/the-normalization-of-inexplicable-failures",
+      "publisher": "tech4you mirror of i hate the future article",
+      "visible_date": "September 27, 2026",
+      "date_basis": "Mirror page shows September 27, 2026 and links the original article URL.",
+      "factual_summary": "The article argues that LLM-accelerated development risks normalizing opaque failures where teams stop tracing issues to concrete broken contracts, while also noting that automated QA and eval workflows can help preserve accountability.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-assisted delivery should preserve explainability, ownership, and failure-investigation paths; faster generation should expand automated QA and eval coverage rather than make unexplained defects acceptable.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "i hate the future",
+        "tech4you"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_notes": "Use only as a practice cautionary source; locate original page during ingest if available."
+    },
+    {
+      "id": "engineering-managers-review-wall-2026-09-28",
+      "source_title": "Are coding agents creating a review wall, or am I inventing a problem?",
+      "source_url": "https://www.reddit.com/r/EngineeringManagers/comments/1wsd57z/are_coding_agents_creating_a_review_wall_or_am_i/",
+      "publisher": "Reddit r/EngineeringManagers",
+      "visible_date": "Monday September 28, 2026",
+      "date_basis": "Search result shows Published today with Monday September 28, 2026; page content is publicly readable.",
+      "factual_summary": "The post reports practitioner concerns that AI coding agents increase incidents, low-quality PRs, review backlog, guardrail gaps, and unclear ROI; one described process splits work smaller, requires developer self-review, uses an agent first pass based on past reviews, and escalates uncertainty to a human reviewer.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption operating models should budget reviewer capacity, require smaller work units, add pre-review and self-review gates, and avoid treating agent throughput as net delivery unless review latency and quality are measured.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/agent-workflows"
+      ],
+      "named_entities": [
+        "Reddit",
+        "Atlassian"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Atlassian",
+          "routing_note": "Company background belongs upstream; local note should keep only the review-bottleneck operating-model signal."
+        }
+      ],
+      "follow_up_notes": "Treat as practitioner anecdote, not verified benchmark evidence."
+    },
+    {
+      "id": "grc-agent-governance-audit-evidence-2026-09-28",
+      "source_title": "What people do not see behind AI agent governance audits?",
+      "source_url": "https://www.reddit.com/r/grc/comments/1wsd758/what_people_do_not_see_behind_ai_agent_governance/",
+      "publisher": "Reddit r/grc",
+      "visible_date": "Monday September 28, 2026",
+      "date_basis": "Search result shows Published today with Monday September 28, 2026; page content is publicly readable.",
+      "factual_summary": "The post describes an AI agent audit evidence package that logs agent identity, user identity, prompts, tool calls, timestamps, blocked actions, policy versions, approvals, outcomes, inventory, risk assessment, access review, test evidence, and incident tickets, emphasizing proof of enforcement over static policy documents.",
+      "why_it_matters_for_ai_assisted_development_practice": "Governed coding-agent programs need replayable decision records that bind policy versions, approvals, tool calls, identities, and outcomes so auditors can verify enforcement months later.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Reddit"
+      ],
+      "upstream_owned_entities": [],
+      "follow_up_notes": "Treat as practitioner discussion; useful for audit-log field checklist after corroboration."
+    },
+    {
+      "id": "ai-agents-policy-vs-code-review-2026-09-28",
+      "source_title": "The end of code review",
+      "source_url": "https://www.reddit.com/r/AI_Agents/comments/1wr25w3/the_end_of_code_review/",
+      "publisher": "Reddit r/AI_Agents",
+      "visible_date": "Monday September 28, 2026",
+      "date_basis": "Search result shows Published 2 days ago with Monday September 28, 2026; page content is publicly readable.",
+      "factual_summary": "The post argues that autonomous agents pulling tools, skills, plugins, community packages, or runtime-generated code cannot be governed by conventional line-by-line code review alone; it proposes reviewing policy, allowed hosts, environment access, data flow, and termination properties before execution. Replies challenge that planning, acceptance tests, and pre-implementation critique remain necessary.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice implication is to separate policy review from code review for generated or third-party agent tool execution, while still preserving planning, tests, and human review for product behavior.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "Reddit",
+        "SafeScript",
+        "RunWield",
+        "Claude Opus 5.5",
+        "GPT Sol 6",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "SafeScript",
+          "routing_note": "Tool/product background belongs upstream if it becomes durable; local note should keep only policy-before-execution and static-verification practice implications."
+        },
+        {
+          "entity": "Claude Opus 5.5",
+          "routing_note": "Model background belongs upstream; local note should keep only multi-reviewer workflow implications."
+        },
+        {
+          "entity": "GPT Sol 6",
+          "routing_note": "Model background belongs upstream; local note should keep only multi-reviewer workflow implications."
+        },
+        {
+          "entity": "GitHub",
+          "routing_note": "Developer-tool background belongs upstream; local note should keep only allowed-host and token-policy practice implications."
+        }
+      ],
+      "follow_up_notes": "Treat as public practitioner discussion; corroborate before durable policy-language recommendations."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Upcoming changes to GitHub Copilot policies and billing",
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "visible_date": "August 28, 2026",
+      "reason": "Stale publication outside cutoff; September 28 is an effective date, not a visible publication/update date inside the run window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "More ways to request and configure Copilot code reviews",
+      "source_url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "visible_date": "September 23, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Auto-resolution and analysis updates in Copilot code review",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Copilot code review can now approve pull requests",
+      "source_url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+      "visible_date": "September 1, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Enterprise managed permissions for GitHub Copilot agent operations",
+      "source_url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "visible_date": "September 9, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Introducing the Agents API",
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "visible_date": "September 10, 2026",
+      "reason": "Published outside the strict two-day window and primarily broad product/API coverage owned upstream.",
+      "named_entities": [
+        "OpenAI",
+        "Agents API",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Agents API",
+        "Codex"
+      ]
+    },
+    {
+      "source_title": "Skill-as-API: Confidential Multi-Agent Coordination for Agentic Software Engineering",
+      "source_url": "https://arxiv.org/abs/2609.01677",
+      "visible_date": "Tue Sep 1 09:40:06 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "Skill-as-API",
+        "MCP",
+        "A2A",
+        "XMTP"
+      ],
+      "upstream_owned_entities": [
+        "MCP",
+        "A2A",
+        "XMTP"
+      ]
+    },
+    {
+      "source_title": "Self-Evolving Coding Agents",
+      "source_url": "https://arxiv.org/abs/2608.03392",
+      "visible_date": "Tue Aug 4 09:43:46 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "Self-Evolving Coding Agents"
+      ],
+      "upstream_owned_entities": []
+    },
+    {
+      "source_title": "AI Trust Registry for open-source AI agent projects",
+      "source_url": "https://hvtracker.net/",
+      "visible_date": "updated 2026-09-28 12:07 UTC",
+      "reason": "Date qualifies, but the page is a broad product/framework/MCP/entity registry owned upstream, not a local practice update.",
+      "named_entities": [
+        "HVTracker",
+        "Haystack",
+        "Vercel AI SDK",
+        "Codebase Memory MCP"
+      ],
+      "upstream_owned_entities": [
+        "Haystack",
+        "Vercel AI SDK",
+        "Codebase Memory MCP"
+      ]
+    },
+    {
+      "source_title": "Synthszr Charts coding ranking",
+      "source_url": "https://www.synthszr.com/en/rankings?group=coding",
+      "visible_date": "Sep 28, 2026",
+      "reason": "Date qualifies, but the page is a broad product momentum ranking owned upstream; no distinct local practice implication was identified.",
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Grok Bot",
+        "OpenClaw"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Grok Bot",
+        "OpenClaw"
+      ]
+    },
+    {
+      "source_title": "Best Coding agents radar",
+      "source_url": "https://aionradar.com/best/coding-agents",
+      "visible_date": "Sep 28, 2026",
+      "reason": "Date qualifies, but the page is a broad product-selection catalog owned upstream; no local practice-level update was extracted.",
+      "named_entities": [
+        "AI on Radar"
+      ],
+      "upstream_owned_entities": [
+        "coding agent product catalog"
+      ]
+    },
+    {
+      "source_title": "AgentBoards",
+      "source_url": "https://agentboards.org/",
+      "visible_date": "Sep 28, 2026",
+      "reason": "Date qualifies, but the content is a product board and release list, which belongs upstream unless a specific local governance or workflow implication is sourced elsewhere.",
+      "named_entities": [
+        "AgentBoards",
+        "OpenCode",
+        "AiderDesk",
+        "Letta"
+      ],
+      "upstream_owned_entities": [
+        "OpenCode",
+        "AiderDesk",
+        "Letta"
+      ]
+    },
+    {
+      "source_title": "Dromeas - AI Code Review, Security and Release Readiness",
+      "source_url": "https://dromeas.ai/",
+      "visible_date": "Updated Sep 28, 2026",
+      "reason": "The page has a qualifying update date and a possible code-map review practice implication, but it is primarily product marketing with no stable article-level evidence extracted during this run.",
+      "named_entities": [
+        "Dromeas"
+      ],
+      "upstream_owned_entities": [
+        "Dromeas"
+      ]
+    },
+    {
+      "source_title": "Best AI Code Review Tools for Azure DevOps (2026)",
+      "source_url": "https://hackernoon.com/company/qodo",
+      "visible_date": "Mon Sep 28 2026",
+      "reason": "Company listing shows a qualifying article date, but the inspected page was an index and did not expose enough article text for a practice-level finding.",
+      "named_entities": [
+        "Qodo",
+        "HackerNoon",
+        "Azure DevOps"
+      ],
+      "upstream_owned_entities": [
+        "Qodo",
+        "Azure DevOps"
+      ]
+    }
+  ],
+  "source_safety": {
+    "public_sources_only": true,
+    "private_or_local_sensitive_content_sent_to_external_services": false,
+    "local_content_used_for_external_search": "Only approved public topic phrases and wiki root names from the automation prompt were used; no private repository content was sent."
+  },
+  "collector_scope": {
+    "raw_only": true,
+    "updated_docs_wiki": false,
+    "updated_raw_processed": false,
+    "ingest_required_before_wiki_changes": true
+  },
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 14
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Before ingesting digest or Reddit-derived claims, corroborate with original studies or additional primary evidence where feasible.",
+    "Keep broad product, company, model, framework, MCP server, and catalog coverage upstream; local synthesis should focus on practice implications.",
+    "Candidate local themes: per-action monitorability, architecture-quality attributes in request packages, local eval suites, review-capacity bottlenecks, enforcement-grade audit logs, and policy-before-execution controls."
+  ]
+}
