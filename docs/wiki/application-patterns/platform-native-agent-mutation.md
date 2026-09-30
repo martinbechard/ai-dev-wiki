@@ -23,6 +23,8 @@ The key local pattern is that the operations created normal platform pages, comp
 
 This page owns the platform-native mutation pattern. [Application harness patterns](application-harness-patterns.md) owns the broader harness architecture boundary.
 
+The [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) adds platform-runtime evidence from enterprise agent surfaces. Local platform-native mutation should pair model reasoning with deterministic execution rails, governed enterprise data access, safety boundaries, and validation paths before agents can mutate platform objects or enterprise workflows.
+
 ## Practice Boundaries
 
 - Prefer platform-native mutation APIs when post-agent maintenance should happen in the platform's normal UI.
@@ -30,10 +32,12 @@ This page owns the platform-native mutation pattern. [Application harness patter
 - Preserve the platform's ordinary objects, events, queries, and data shape instead of bypassing them with a generated parallel codebase.
 - Record validation failures and fixes as part of the agent run evidence.
 - Route source-controlled builder artifacts through [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md) when the platform exports files.
+- Require deterministic execution rails, governed data access, safety-boundary evidence, and post-action validation before platform agents mutate enterprise objects or workflows.
 
 ## Authoritative Sources
 
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 
 ## Related Code
@@ -60,4 +64,5 @@ This page owns the platform-native mutation pattern. [Application harness patter
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with deterministic-execution, governed-data, safety-boundary, enterprise-object, and validation-path evidence.
 - Created on 2026-09-14 from platform-native MCP mutation evidence in the September 15 topic news collector.

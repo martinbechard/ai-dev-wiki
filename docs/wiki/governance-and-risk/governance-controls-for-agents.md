@@ -115,6 +115,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and agent-authority evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records local sandbox policy, centralized telemetry settings, Copilot default-policy changes, proof-of-presence checks, and public authority-boundary frameworks. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records an enterprise managed-settings validator. Locally, governance controls should treat AI feature defaults, managed JSON policy, team mappings, sandbox filesystem and network scope, telemetry content capture, and high-impact reauthentication as deployable control-plane state that must be validated before teams rely on it.
 
+The September 29 raw sources add self-managed agentic governance, pre-write boundary, and platform-safety evidence. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) records context and constraint checks before writing, independent verification, remediation controls, centralized LLM governance, dependency-risk checks, compliance reporting, protected path review, and architecture-decision drift checks. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) reinforces boundary-setting for high-autonomy agents and governed production records. Locally, controls should make those boundaries executable and auditable instead of relying on model self-restraint.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
@@ -133,6 +135,7 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 - Use runtime security checks, red-team cases, and audit trails to validate whether prompt-level rules are enforced by the surrounding system.
 - Require evidence for model enablement, plugin installation consent, marketplace allowlists, runner access, and package-affecting actions when those surfaces can change software delivery risk.
 - Check inherited permissions, stale credentials, escalation paths, and audit evidence before allowing autonomous or semi-autonomous agents to act.
+- Gate self-managed agentic coding with context/constraint checks, protected-path review, independent verification, remediation controls, centralized model policy, dependency-risk checks, compliance evidence, and architecture-drift checks.
 - Inventory shadow agents, local MCP servers, connector grants, and developer-side tool paths that can bypass centrally managed visibility.
 - Require command previews, normalized working directories, path-containment checks, backups or restore points, and explicit approval before destructive file operations.
 - Join identity, access, memory, monitoring, audit, cost, and revocation evidence by agent or session when the workflow can keep running after a single prompt.
@@ -216,6 +219,8 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
+- [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [commit-level AI governance](commit-level-ai-governance.md)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -310,6 +315,7 @@ The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, audit-evidence-package, policy-version, and policy-before-execution governance evidence.
 - Maintained on 2026-09-26 with managed-settings validation, default-policy, sandbox-scope, telemetry-export, proof-of-presence, and authority-boundary evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.

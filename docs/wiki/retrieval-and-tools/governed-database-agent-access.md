@@ -25,6 +25,8 @@ The August 22 sources add two governed data-access refinements:
 
 The [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json) adds a governed application-boundary example where MCP exposes database operations, A2A handles agent or host communication, A2UI and MCP Apps handle host-rendered or sandboxed UI resources, and the database retains transaction and audit authority. Locally, database-agent access should keep query execution, UI rendering, human approval, and authoritative commit state separate so an agent cannot treat a rendered interface or intermediate message as permission to mutate data.
 
+The [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) adds cross-schema team-sharing and governed-input evidence. Reusable database-adjacent agent teams should preserve owner-controlled definitions, grants, and workflow design separately from underlying resource privileges. Production data-agent governance should also record governed inputs, access classification, decisions, instructions, created documents, and durable audit records before the agent output becomes operational evidence.
+
 ## Practice Boundaries
 
 - Prefer bounded reports, views, stored procedures, or role-scoped query tools over free-form SQL generation.
@@ -36,6 +38,8 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - Prefer certified metrics, semantic-layer permissions, lineage, row, column, tenant, and role restrictions over exposing raw tables to agent-generated query plans.
 - Route write-capable data changes through isolated branches, publish gates, or equivalent staging so audit trails do not become the only control after production mutation.
 - Separate database execution, host-rendered UI, sandboxed app resources, human approval, and transaction authority when agents interact with data through MCP-style application surfaces.
+- Separate reusable agent-team grants from underlying database or resource privileges, and preserve owner-controlled definitions for agents, tasks, tools, prompts, and workflow design.
+- Record governed inputs, access class, produced decisions, instructions, created documents, and audit records before data-agent output is treated as operational evidence.
 
 ## Authoritative Sources
 
@@ -46,6 +50,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 - [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 
 ## Related Code
 
@@ -70,6 +75,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with reusable-agent-team grants, owner-controlled definitions, resource-privilege separation, governed-input, access-class, decision, instruction, created-document, and audit-record evidence.
 - Created on 2026-08-21 from raw-source evidence about bounded reports, role-scoped query tools, and audit evidence for database agents.
 - Maintained on 2026-08-22 with saved-connection validation, semantic-layer restrictions, tool traces, retrieval evidence, and isolated-write controls for database agents.
 - Maintained on 2026-09-02 with MCP database-operation, A2A, A2UI, MCP Apps, human-approval, and database-held transaction-authority boundaries.

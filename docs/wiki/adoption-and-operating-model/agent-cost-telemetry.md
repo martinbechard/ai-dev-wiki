@@ -128,6 +128,8 @@ The September 20 raw sources add acceptance-cost and bounded-repository automati
 
 The September 25 raw sources add review-stage and runaway-loop evidence. The [leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) records pull-request review-stage medians and p90s that separate human review stages and bot reviews; the [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) records secondary reporting about runaway API-call loops and long-horizon cost drivers. Locally, review capacity, call-volume limits, spend caps, context and tool-definition cost, and subagent fan-out should be joined before teams expand standing agent loops.
 
+The [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds eval-workflow cost evidence. Generated evaluation workflows can incur costs across orchestration, the application under test, optional model judges, retries, report generation, and iterative hillclimbing. Local cost telemetry should attach those costs to accepted eval improvements, failed attempts, reviewer time, and versioned benchmark results rather than treating the eval runner as free because the instructions are public.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -209,12 +211,15 @@ The September 25 raw sources add review-stage and runaway-loop evidence. The [le
 - Track cost per accepted suggestion or accepted change plus reviewer correction time for repository automation, especially when agents produce many small suggestions.
 - Separate human review-stage timing from bot review activity when review capacity is part of cost telemetry.
 - Set per-task spend, call-volume, retry, context-growth, tool-definition, and subagent fan-out limits for long-running or delegated workflows.
+- Include orchestration calls, application-under-test calls, model-judge calls, retries, generated reports, and hillclimb iterations when costing evaluation workflows.
+- Pair benchmark scores with token, cost, error-cleanliness, static-analysis, pytest, deliverable-manifest, and transcript evidence before comparing multi-agent SDLC runs.
 
 ## Authoritative Sources
 
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
+- [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
@@ -305,6 +310,7 @@ The September 25 raw sources add review-stage and runaway-loop evidence. The [le
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with eval-workflow orchestration, model-judge, retry, report, hillclimb, benchmark-cost, and efficiency-metric evidence.
 - Maintained on 2026-09-20 with acceptance-cost, reviewer-correction-time, retry, incident, rework, and cost-per-accepted-suggestion evidence.
 - Maintained on 2026-09-19 with spend-cap, runtime-isolation, tokenmaxxing, validation-capacity, and outcome-governed cost evidence from the September 19 raw sources.
 - Maintained on 2026-09-17 with budget-increase request, approver, cap, denial, workflow-dependency, and outcome evidence.

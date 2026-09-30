@@ -100,6 +100,8 @@ The September 15-16 raw sources add autonomous-testing, independent-assurance, a
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds held-out execution and professional-judgment evidence. A coding-agent trajectory can be evaluated by freezing generated programs or artifacts, running them in held-out environments, preserving prompts and released code when available, and scoring whether the path produced a robust solution rather than only an interactive success. DAYJOB-style professional-judgment signals stay upstream-owned or source-specific, but locally they reinforce full-workflow task coverage.
 
+The September 29 raw sources add named-score and role-weighted SDLC benchmark evidence. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) records evaluation across task outcome, tool use, trajectory, and grounding with separate named scores, execution evidence, production-derived datasets, regression tests, and trace inspection. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds multi-agent SDLC scoring that weights review and implementation roles while preserving artifact quality, efficiency metrics, and versioned-rubric caveats. Locally, trajectory evaluation should keep role-specific score weights and trace-level evidence visible instead of collapsing them into one leaderboard rank.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -139,11 +141,15 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Record fleet-policy decisions, audit integrity, and sandbox-control evidence when parallel runs coordinate or execute remotely.
 - Score independent assurance, visual validation, retained pass/fail artifacts, governance readiness, production-impact gates, kill-switch availability, and role-specific technical-debt findings when autonomous agents influence release decisions.
 - Preserve frozen generated artifacts, held-out execution environments, released prompts or code when available, simulator or checker results, and professional-judgment task evidence when evaluating agent trajectories beyond ordinary code patches.
+- Use separate named scores for task outcome, tool use, trajectory, grounding, artifact quality, and efficiency when those dimensions fail independently.
+- Record role weights, rubric version, token and cost metrics, static-analysis/test results, deliverable manifests, and transcript evidence before comparing multi-agent SDLC runs.
 
 ## Authoritative Sources
 
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
+- [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
+- [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
@@ -212,6 +218,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with named-score, role-weighted, artifact-quality, efficiency, production-dataset, regression-test, and trace-inspection evidence.
 - Maintained on 2026-09-15 with independent-assurance, visual-validation, governance-readiness, production-gate, kill-switch, and specialized technical-debt audit evidence.
 - Maintained on 2026-09-25 with frozen generated artifacts, held-out execution, prompt/code release, and professional-judgment workflow-eval evidence.
 - Maintained on 2026-09-07 with human-steering, recovery-behavior, attention-state, concurrent-lane, and adaptation-quality trajectory evidence.

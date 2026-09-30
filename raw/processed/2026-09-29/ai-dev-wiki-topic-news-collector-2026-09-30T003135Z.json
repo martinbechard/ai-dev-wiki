@@ -1,0 +1,620 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identifier": "Northstar",
+  "run_timestamp_utc": "2026-09-30T00:31:35Z",
+  "run_timestamp_local": "2026-09-29T20:31:35-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-28T00:31:35Z",
+    "end_utc": "2026-09-30T00:31:35Z",
+    "rule": "Only public sources with visible publication or update dates inside the last two days relative to run time qualify. Future-dated, missing-date, ambiguous-date, stale-publication, duplicate-prior-run, and boundary-only event dates are excluded."
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "owning_root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "owning_root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "owning_root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "owning_root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "owning_root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "owning_root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "owning_root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "owning_root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "owning_root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "owning_root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "local_wiki_owns": "AI-assisted development practice, workflow, guidance structure, verification, governance, local adoption, and implementation lenses.",
+    "upstream_wiki_owns": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, general techniques, and ecosystem background.",
+    "local_handling_rule": "When a source names upstream-owned entities, retain only the local practice implication or routing note."
+  },
+  "search_queries": [
+    "AI coding agent context engineering prompt instructions code review evals published September 29 2026",
+    "AI-assisted software development agent workflows evals September 29 2026",
+    "MCP governed practice permissions approvals audit logs September 29 2026",
+    "codebase RAG code retrieval coding agents September 29 2026",
+    "site:github.blog/changelog AI coding agent September 29 2026 code review pull request",
+    "site:docs.github.com Copilot coding agent instructions September 29 2026",
+    "site:openai.com codex coding agents September 29 2026 evals",
+    "site:anthropic.com engineering AI coding agents September 29 2026",
+    "\"September 29, 2026\" \"coding agent\" \"eval\"",
+    "\"Sep 29, 2026\" \"coding agents\" \"code review\"",
+    "\"2026-09-29\" \"AI coding\" \"agent\" \"governance\"",
+    "\"September 29, 2026\" \"MCP\" \"audit logs\"",
+    "site:anthropic.com \"Sep 29, 2026\" \"Claude Code\" eval hillclimbing",
+    "\"claude-api eval\" \"hillclimbing\" \"Sep 29, 2026\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "ai-data-press-change-boundaries-2026-09-29",
+      "source_title": "AI-Native Development Forces Teams To Define What Software May Change",
+      "source_url": "https://www.aidatapress.com/news/stephen-mcgowan-trolleyrelay-ai-code-review",
+      "publisher": "AI Data Press",
+      "visible_date": "Sep 29, 2026",
+      "date_basis": "Article page shows Sep 29, 2026 below the byline.",
+      "factual_summary": "The article describes a practice model where agent-started work is gated before code is written: tickets are checked against current architectural decisions, CI rules block merge paths, and billing or pricing folders require human review. It also reports that high-level solution documents are maintained by agents and periodically read for code/documentation drift.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent throughput needs upstream work-in-progress limits and executable change boundaries, not only downstream review capacity. Architecture decisions, ticket baselining, protected paths, and drift checks become part of the agent operating model.",
+      "suggested_local_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "AI Data Press",
+        "Stephen McGowan",
+        "TrolleyRelay",
+        "GitHub",
+        "Little's Law",
+        "Toyota production system"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "GitHub",
+          "routing_note": "Developer-tool background belongs upstream; local note should keep only protected-path and merge-gate practice implications."
+        }
+      ],
+      "follow_up_notes": "Potential synthesis for pre-write ticket baselining, protected agent scopes, and architecture-decision checks. Treat interview claims as practitioner evidence."
+    },
+    {
+      "id": "sonar-agentic-code-governance-self-managed-2026-09-29",
+      "source_title": "Sonar Extends Agentic Code Governance and Verification to Self-Managed Infrastructure",
+      "source_url": "https://www.prnewswire.com/news-releases/sonar-extends-agentic-code-governance-and-verification-to-self-managed-infrastructure-302893110.html",
+      "publisher": "PR Newswire / Sonar",
+      "visible_date": "Sep 29, 2026, 11:30 ET",
+      "date_basis": "Press release header shows Sep 29, 2026, 11:30 ET.",
+      "factual_summary": "Sonar announced SonarQube Server 2026.5 LTA with agentic capabilities for self-managed, on-premise, air-gapped, and VPC-restricted deployments. The release frames agentic code governance around context and constraints before writing, independent verification of changes, remediation controls, centralized LLM governance, MCP access, dependency risk checks, compliance reporting, and architecture visibility.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local practice signal is that agent governance is moving into sovereign infrastructure and layered verification: teams should separate context injection, independent verification, remediation automation, model/tool governance, and evidence generation when designing coding-agent controls.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "Sonar",
+        "SonarQube Server 2026.5 LTA",
+        "Sonar Vortex",
+        "SonarQube Remediation Agent",
+        "SonarQube Hunter Agent",
+        "Gitar",
+        "MCP",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Sonar",
+          "routing_note": "Company and product background belongs upstream; local note should keep only governance architecture and verification-practice implications."
+        },
+        {
+          "entity": "MCP",
+          "routing_note": "Protocol and server ecosystem background belongs upstream; local note should keep only governed access-control and audit implications."
+        },
+        {
+          "entity": "Anthropic",
+          "routing_note": "Company and model/provider background belongs upstream; local note should keep only centralized model-governance implications."
+        },
+        {
+          "entity": "OpenAI",
+          "routing_note": "Company and model/provider background belongs upstream; local note should keep only centralized model-governance implications."
+        }
+      ],
+      "follow_up_notes": "Product claims should be corroborated before durable guidance; useful for a control-layer taxonomy."
+    },
+    {
+      "id": "google-cloud-mcp-audit-logging-2026-09-28",
+      "source_title": "Google Cloud MCP servers audit logging",
+      "source_url": "https://docs.cloud.google.com/mcp/audit-logging",
+      "publisher": "Google Cloud Documentation",
+      "visible_date": "Last updated 2026-09-28 UTC",
+      "date_basis": "Documentation footer shows Last updated 2026-09-28 UTC.",
+      "factual_summary": "Google Cloud documents audit logging for remote MCP servers, including service-name filtering, permission-type mapping to Data Access versus Admin Activity logs, and the fact that Data Access audit logs for MCP are disabled by default and must be explicitly enabled for DATA_READ.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP access in coding-agent workflows needs explicit audit-log enablement and cost-aware logging decisions. A local governed-tool practice should distinguish administrative events from data access and record whether logs are actually enabled before relying on them as evidence.",
+      "suggested_local_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "Google Cloud",
+        "Model Context Protocol",
+        "MCP",
+        "Cloud Audit Logs",
+        "Identity and Access Management"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Google Cloud",
+          "routing_note": "Cloud provider background belongs upstream; local note should keep only audit-log configuration and governed MCP practice implications."
+        },
+        {
+          "entity": "MCP",
+          "routing_note": "Protocol background belongs upstream; local note should keep only auditability and permission practice implications."
+        }
+      ],
+      "follow_up_notes": "Good candidate for a governed-MCP checklist: service filter, DATA_READ enablement, logging cost, and evidence retention."
+    },
+    {
+      "id": "techbytes-codex-cloud-environments-code-review-2026-09-29",
+      "source_title": "OpenAI Codex Adds Cloud Environments, Voice CLI and Code Review",
+      "source_url": "https://techbytes.app/posts/openai-codex-cloud-cli-voice-code-review-devday/",
+      "publisher": "Tech Bytes",
+      "visible_date": "Sep 29, 2026",
+      "date_basis": "Article byline shows Sep 29, 2026.",
+      "factual_summary": "The article reports Codex cloud environments, reusable team development environments with approved settings and permissions, CLI voice steering, multi-task delegation, session resuming, worktree integration, an app code-review surface, and the open-sourcing of the Codex harness. It recommends piloting shared environments, checking secrets management, and verifying session resume and worktrees before team rollout.",
+      "why_it_matters_for_ai_assisted_development_practice": "Reusable agent environments turn local sandbox setup into a shared governance artifact. Teams should test environment permissions, secrets exposure, review accountability, worktree isolation, and fallback paths before standardizing a cloud coding-agent workflow.",
+      "suggested_local_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI",
+        "ChatGPT desktop app",
+        "GitHub",
+        "GitLab"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "OpenAI",
+          "routing_note": "Company background belongs upstream; local note should keep only environment governance and workflow-rollout implications."
+        },
+        {
+          "entity": "Codex",
+          "routing_note": "Product background belongs upstream; local note should keep only shared-environment, review, worktree, and harness-practice implications."
+        },
+        {
+          "entity": "GitHub",
+          "routing_note": "Developer-tool background belongs upstream; local note should keep only review-surface integration implications."
+        },
+        {
+          "entity": "GitLab",
+          "routing_note": "Developer-tool background belongs upstream; local note should keep only review-surface integration implications."
+        }
+      ],
+      "follow_up_notes": "Secondary source; verify against official OpenAI release notes before durable product-specific wiki synthesis."
+    },
+    {
+      "id": "anthropic-skills-build-eval-hillclimb-costing-2026-09-29",
+      "source_title": "Is Claude API Build Eval Free",
+      "source_url": "https://omidsaffari.com/blog/is-claude-api-build-eval-free",
+      "publisher": "Omid Saffari",
+      "visible_date": "Tuesday, September 29, 2026",
+      "date_basis": "Article page shows Tuesday, September 29, 2026 and links the September 28 guide plus the September 29 public commit.",
+      "factual_summary": "The article explains that Anthropic's build-eval and hillclimb workflows are public instructions, but running the generated evaluation can incur costs across Claude Code orchestration, the application under test, optional model judges, and retries. It cites a September 29 commit adding build-eval, eval-hillclimb, cost-hillclimb, eval-audit, report schema, report builder, and runner scaffold files to Anthropic's skills repository.",
+      "why_it_matters_for_ai_assisted_development_practice": "Eval automation needs an explicit spend model, not just a workflow. Local eval guidance should require cases, repetitions, variants, graders, retry rates, and hillclimb rounds to be budgeted before agentic optimization runs.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "Claude Code",
+        "claude-api skill",
+        "GitHub",
+        "commit 8a1541c4",
+        "build-eval",
+        "hillclimb"
+      ],
+      "supporting_public_sources": [
+        {
+          "title": "Anthropic skills commit 8a1541c4",
+          "url": "https://github.com/anthropics/skills/commit/8a1541c4",
+          "visible_date": "Commit page inspected; date basis used from article because the rendered page did not expose a stable timestamp in extracted text.",
+          "note": "Commit text lists build-eval and hillclimb guide additions under shared/evals."
+        }
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Anthropic",
+          "routing_note": "Company and product background belongs upstream; local note should keep only eval budgeting and workflow-practice implications."
+        },
+        {
+          "entity": "Claude Code",
+          "routing_note": "Product background belongs upstream; local note should keep only build-eval/hillclimb operating practices."
+        },
+        {
+          "entity": "GitHub",
+          "routing_note": "Developer-tool background belongs upstream; local note should keep only source-provenance and public-commit evidence implications."
+        }
+      ],
+      "follow_up_notes": "Potential durable guidance: always separate public workflow cost, orchestration cost, application-under-test cost, grader cost, and hillclimb loop budget."
+    },
+    {
+      "id": "favur-evals-versioned-multi-agent-sdlc-2026-09-28",
+      "source_title": "Favur Evals - Multi-agent SDLC, evaluated",
+      "source_url": "https://evals.favur.dev/",
+      "publisher": "Favur Evals",
+      "visible_date": "Last updated Sep 28, 2026",
+      "date_basis": "Search result and page content show a Sep 28, 2026 update; page methodology describes the current scoring rubric.",
+      "factual_summary": "Favur Evals publishes a multi-agent SDLC benchmark whose composite score weights per-agent roles toward code review and implementation, then planning and other roles. Its methodology combines artifact-quality scoring with efficiency metrics such as tokens, cost, error-cleanliness, static analysis, pytest results, deliverables manifests, and tool/transcript telemetry, while warning that scores are relative rankings under a versioned rubric.",
+      "why_it_matters_for_ai_assisted_development_practice": "The local eval-practice implication is to score full delivery roles and telemetry, not only final pass/fail, and to pin historical results to rubric versions when the harness changes.",
+      "suggested_local_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Favur Evals",
+        "pytest"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Favur Evals",
+          "routing_note": "Benchmark/product background belongs upstream if retained as an entity; local note should keep only role-weighted and rubric-versioned evaluation practice."
+        }
+      ],
+      "follow_up_notes": "Before ingest, verify whether the page itself exposes the update timestamp sufficiently or use as lower-confidence practice evidence."
+    },
+    {
+      "id": "reddit-ai-agent-code-review-gap-2026-09-29",
+      "source_title": "The code review gap I see in the AI-agent era",
+      "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1ws8tv3/the_code_review_gap_i_see_in_the_aiagent_era/",
+      "publisher": "Reddit r/ClaudeAI",
+      "visible_date": "Tuesday September 29, 2026",
+      "date_basis": "Search result shows Published yesterday with Tuesday September 29, 2026; inspected page is publicly readable and shows relative timestamps.",
+      "factual_summary": "The public discussion describes using a separate fresh-context review agent, requiring findings to reproduce or be dropped, fixing findings with failing tests, maintaining a short running note per feature, and distinguishing diff review from full-suite regression detection. Replies emphasize cold review by a different model, code maps or diagrams for intent, and reviewer independence from implementation context.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI code review practice needs evidence thresholds, fresh-context review, bounded review rounds, feature notes to avoid repeated false findings, and full-suite regression checks alongside diff-focused review.",
+      "suggested_local_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture"
+      ],
+      "named_entities": [
+        "Reddit",
+        "ClaudeAI",
+        "Claude Code",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        {
+          "entity": "Claude Code",
+          "routing_note": "Product background belongs upstream; local note should keep only fresh-context review and evidence-threshold implications."
+        },
+        {
+          "entity": "Codex",
+          "routing_note": "Product background belongs upstream; local note should keep only cross-agent review workflow implications."
+        }
+      ],
+      "follow_up_notes": "Treat as practitioner discussion, not benchmark evidence. Useful for review-loop vocabulary after corroboration."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Why Evals Are Now the Operating System of AI-Assisted Coding",
+      "source_url": "https://letslearngenai.com/articles/why-evals-are-now-the-operating-system-of-ai-assisted-coding-2026-09-28",
+      "visible_date": "September 28, 2026",
+      "reason": "Already captured in the previous collector artifact processed under raw/processed/2026-09-28; no new visible update identified.",
+      "named_entities": [
+        "LetsLearnGenAI"
+      ],
+      "upstream_owned_entities": []
+    },
+    {
+      "source_title": "Agents finish their own jobs, and their merges still need fixing more often",
+      "source_url": "https://www.sjarmak.ai/digest/weekly-2026-09-28/",
+      "visible_date": "Sep 28, 2026",
+      "reason": "Already captured in the previous collector artifact processed under raw/processed/2026-09-28; no new visible update identified.",
+      "named_entities": [
+        "Stephanie Jarmak",
+        "Codex",
+        "Copilot",
+        "Devin",
+        "Cursor",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Copilot",
+        "Devin",
+        "Cursor",
+        "Claude Code"
+      ]
+    },
+    {
+      "source_title": "Upcoming changes to GitHub Copilot policies and billing",
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "visible_date": "August 28, 2026",
+      "reason": "Stale publication outside cutoff; September 28 is an effective date, not a visible publication/update date inside the run window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Auto-resolution and analysis updates in Copilot code review",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Copilot code review: Resolution reasons and expanded capabilities",
+      "source_url": "https://github.blog/changelog/2026-08-27-copilot-code-review-resolution-reasons-and-expanded-capabilities/",
+      "visible_date": "August 27, 2026",
+      "reason": "Published outside the strict two-day window.",
+      "named_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ]
+    },
+    {
+      "source_title": "Introducing the Agents API",
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "visible_date": "September 10, 2026",
+      "reason": "Published outside the strict two-day window and primarily broad product/API coverage owned upstream.",
+      "named_entities": [
+        "OpenAI",
+        "Agents API",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Agents API",
+        "Codex"
+      ]
+    },
+    {
+      "source_title": "Anthropic Built a Better Way to Improve AI Agents Without Fooling Yourself",
+      "source_url": "https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-tuesday-april-28-2026/",
+      "visible_date": "Sep 29, 2026 in search result; page path/title indicates April 28, 2026",
+      "reason": "Ambiguous page identity and date mismatch between search snippet and extracted page path/title; excluded to avoid relying on unstable or contradictory date evidence.",
+      "named_entities": [
+        "The Neuron",
+        "Anthropic",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude Code"
+      ]
+    },
+    {
+      "source_title": "OpenAI Codex Adds Cloud Environments, Voice CLI and Code Review",
+      "source_url": "https://techbytes.app/posts/openai-codex-cloud-cli-voice-code-review-devday/",
+      "visible_date": "Sep 29, 2026",
+      "reason": "Included as a qualifying finding, but direct official OpenAI source was not extracted in this run; mark for official-source verification before durable product-specific synthesis.",
+      "named_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ]
+    },
+    {
+      "source_title": "Coding - Synthszr Charts",
+      "source_url": "https://www.synthszr.com/en/rankings?group=coding",
+      "visible_date": "Sep 29, 2026",
+      "reason": "Date qualifies, but the page is a broad product momentum ranking owned upstream; no distinct local practice-level update was identified.",
+      "named_entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Grok Bot",
+        "OpenClaw"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Grok Bot",
+        "OpenClaw"
+      ]
+    },
+    {
+      "source_title": "AgentBoards - choose the right AI for your task",
+      "source_url": "https://agentboards.org/",
+      "visible_date": "Sep 29, 2026 release items visible",
+      "reason": "Date qualifies for listed products, but the content is a broad agent/product board and release list owned upstream; no local practice-level update was extracted.",
+      "named_entities": [
+        "AgentBoards",
+        "Qwen Code",
+        "Claude Code",
+        "Codex",
+        "Gemini CLI",
+        "Strands Agents",
+        "OpenCode"
+      ],
+      "upstream_owned_entities": [
+        "Qwen Code",
+        "Claude Code",
+        "Codex",
+        "Gemini CLI",
+        "Strands Agents",
+        "OpenCode"
+      ]
+    },
+    {
+      "source_title": "The best AI coding agents in 2026",
+      "source_url": "https://www.producthunt.com/categories/ai-coding-agents?order=trending",
+      "visible_date": "Last updated Sep 29, 2026",
+      "reason": "Date qualifies, but the page is a broad product-selection catalog owned upstream; no local practice-level update was extracted.",
+      "named_entities": [
+        "Product Hunt",
+        "Cursor",
+        "Claude Code",
+        "Lovable"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Claude Code",
+        "Lovable"
+      ]
+    },
+    {
+      "source_title": "alibaba/open-code-review: macOS (Apple Silicon)",
+      "source_url": "https://imtaqin.id/alibaba-open-code-review-macos-apple-silicon",
+      "visible_date": "June 16, 2026 Updated Aug 6, 2026",
+      "reason": "Search result suggested Updated Sep 29, but opened page shows Updated Aug 6, 2026; excluded for stale visible date.",
+      "named_entities": [
+        "Alibaba",
+        "Open Code Review",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Alibaba",
+        "Open Code Review",
+        "Claude Code"
+      ]
+    },
+    {
+      "source_title": "Prompt engineering when agents can take action",
+      "source_url": "https://www.reddit.com/r/PromptEngineering/comments/1wrpe92/prompt_engineering_when_agents_can_take_action/",
+      "visible_date": "Sunday September 27, 2026 / relative 1d or 2d signals",
+      "reason": "Opened page exposed only relative timestamps and search result indicated September 27, outside the strict start timestamp; excluded as boundary/stale.",
+      "named_entities": [
+        "Reddit",
+        "Ploy"
+      ],
+      "upstream_owned_entities": [
+        "Ploy"
+      ]
+    },
+    {
+      "source_title": "7 Typical AI coding agent flows",
+      "source_url": "https://pixelsmint.com/post/7-typical-ai-coding-agent-flows",
+      "visible_date": "Sep 29, 2026 in search result",
+      "reason": "Search result suggested a qualifying date and useful workflow taxonomy, but the page was not successfully opened for direct visible-date verification during this run.",
+      "named_entities": [
+        "Carina Lab"
+      ],
+      "upstream_owned_entities": []
+    },
+    {
+      "source_title": "AI-Assisted Development: From Idea to Pull Request",
+      "source_url": "https://www.meetup.com/auckland-ios-meetup/events/316037443/",
+      "visible_date": "Tuesday, Sep 29, 2026",
+      "reason": "The visible date is an event date, not a publication or update date; excluded as boundary-only date evidence despite relevant practice content.",
+      "named_entities": [
+        "Auckland iOS Meetup",
+        "Codex",
+        "Claude",
+        "GitHub Copilot",
+        "Cursor",
+        "Xcode",
+        "Jira",
+        "Linear",
+        "Confluence",
+        "Figma",
+        "Sketch",
+        "Zeplin",
+        "Penpot",
+        "Rive"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude",
+        "GitHub Copilot",
+        "Cursor",
+        "Figma"
+      ]
+    },
+    {
+      "source_title": "Skills Archive - Agents MBA",
+      "source_url": "https://www.agents.mba/skills/?filter_platform=mcp",
+      "visible_date": "Sep 29, 2026",
+      "reason": "Date qualifies, but page is a broad skills/MCP catalog owned upstream; no distinct local practice-level update was identified.",
+      "named_entities": [
+        "Agents MBA",
+        "ECC MCP"
+      ],
+      "upstream_owned_entities": [
+        "ECC MCP"
+      ]
+    }
+  ],
+  "source_safety": {
+    "public_sources_only": true,
+    "private_or_local_sensitive_content_sent_to_external_services": false,
+    "local_content_used_for_external_search": "Only approved public topic phrases, wiki root names from the automation prompt, and public-source search terms were used; no private repository content was sent."
+  },
+  "collector_scope": {
+    "raw_only": true,
+    "updated_docs_wiki": false,
+    "updated_raw_processed": false,
+    "ingest_required_before_wiki_changes": true
+  },
+  "counts": {
+    "qualifying_update_count": 7,
+    "excluded_candidate_count": 16
+  },
+  "blockers": [],
+  "follow_up_notes": [
+    "Verify secondary product-release reports against official sources before durable product-specific wiki synthesis.",
+    "The Meetup workflow page was excluded because its visible date is an event date, not publication/update evidence.",
+    "Keep broad product, company, model, framework, MCP server, catalog, and ranking coverage upstream; local synthesis should focus on practice implications.",
+    "Candidate local themes: pre-write scope gates, self-managed agent governance, MCP audit-log enablement, shared agent environments, eval cost budgeting, role-weighted eval rubrics, and fresh-context review evidence thresholds."
+  ]
+}

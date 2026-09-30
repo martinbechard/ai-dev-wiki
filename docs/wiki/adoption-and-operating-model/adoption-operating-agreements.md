@@ -54,6 +54,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Treat agents as software systems requiring ownership and review, not as human teammates.
 - Expand automation only after barriers, coordination layer, cost or risk controls, and working foundations are visible.
 
+The [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds [pre-write change boundaries](pre-write-change-boundaries.md) as a focused operating practice. Operating agreements should define where that leaf's ticket baselining, architecture-decision checks, protected paths, CI merge gates, and generated-document drift checks become team rules.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -63,6 +65,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - [outcome-alignment-and-process-autonomy.md](outcome-alignment-and-process-autonomy.md) owns the process-autonomy operating rule.
 - [senior-led-agentic-execution-pods.md](senior-led-agentic-execution-pods.md) owns the senior execution pod pattern.
 - [junior-learning-paths-in-agentic-teams.md](junior-learning-paths-in-agentic-teams.md) owns the junior practice and talent-pipeline pattern.
+- [pre-write-change-boundaries.md](pre-write-change-boundaries.md) owns pre-implementation ticket, architecture, protected-path, CI, and drift gates for agent-started work.
 
 ## Practice Boundaries
 
@@ -97,6 +100,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 - Defer index-level adoption advice until the article body or an equivalent primary source is verified.
 - Use explicit language that keeps agents as software systems with human accountability, even when interfaces feel teammate-like.
 - Require barrier discovery, coordination-layer design, cost/risk controls, and foundation checks before scaling agent automation.
+- Route pre-implementation ticket, architecture, protected-path, CI, and drift-gate detail to [pre-write change boundaries](pre-write-change-boundaries.md).
 
 ## Authoritative Sources
 
@@ -105,6 +109,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
+- [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -156,6 +161,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with pre-write ticket, architecture-decision, protected-path, CI-merge-gate, and generated-document drift-check evidence.
 - Maintained on 2026-09-25 with autonomy-tier, escalation, runtime evidence, budget, sandbox, proof-of-presence, review-load, and verification-bottleneck evidence.
 
 - Maintained on 2026-09-18 with trust-calibrated agent language, anti-anthropomorphism, staged adoption, coordination-layer, and cost/risk-control evidence.

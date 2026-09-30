@@ -52,6 +52,8 @@ The September 6 raw sources add context-window, recovery, and cloud-sandbox cont
 
 The September 7 raw sources add concurrent-session and workspace-boundary evidence. The [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records coding-agent use across concurrent research sessions, while the [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records session hierarchy, multi-root workspace, Agent Merge, and runtime-history receipts. Locally, persistent workspaces should preserve concurrent lane purpose, active root set, merge state, runtime receipt history, and human steering thresholds before a resumed agent acts.
 
+The September 29 raw sources add reusable cloud-environment and worktree-continuity evidence. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) and [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) both record current coding-agent environments becoming shared, permissioned, multi-device, session-resumable, and review-aware. Local workspace practice should test shared environment settings, secrets handling, worktree integration, review surfaces, and security-scan routing before teams standardize a reusable agent environment.
+
 ## Practice Boundaries
 
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
@@ -83,6 +85,7 @@ The September 7 raw sources add concurrent-session and workspace-boundary eviden
 - Distinguish durable notes, searchable context history, active workspace roots, and unresolved question queues before resuming persistent work.
 - Record reply-recovery state, sandbox locality, and cross-agent visibility when the workspace crosses runtime or agent boundaries.
 - Preserve concurrent-session purpose, workspace root membership, merge readiness, runtime receipt history, and human steering thresholds when multiple agent sessions advance the same project.
+- Validate reusable shared environments for approved settings, permission scope, secret locality, worktree behavior, session resume, review routing, and security-scan attachment before broad team rollout.
 
 ## Authoritative Sources
 
@@ -92,6 +95,8 @@ The September 7 raw sources add concurrent-session and workspace-boundary eviden
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
+- [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
@@ -139,6 +144,7 @@ The September 7 raw sources add concurrent-session and workspace-boundary eviden
 
 ## Maintenance Notes
 
+- Maintained on 2026-09-29 with reusable cloud-environment, shared-setting, permission, secret, worktree, session-resume, review-surface, and security-scan evidence.
 - Maintained on 2026-09-05 with customer-controlled worker, sandbox, repository/cache/secret locality, cloud-environment comparison, and rebuildable-workspace evidence.
 - Maintained on 2026-09-06 with durable-note, searchable-context, active-root, unresolved-question, reply-recovery, sandbox-locality, and cross-agent-visibility evidence.
 - Maintained on 2026-09-07 with concurrent-session, active-root, merge-state, runtime-history, and human-steering evidence.

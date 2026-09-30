@@ -22,6 +22,7 @@ This topic owns practice adoption and operating-model decisions. It links upstre
 - [agent-ownership-rosters.md](agent-ownership-rosters.md) records agent owner cards, agent rosters, care loops, and decommissioning rules.
 - [agent-cost-telemetry.md](agent-cost-telemetry.md) records workflow-step cost tracing, subagent fan-out limits, and outcome-linked cost controls.
 - [ai-development-partner-selection.md](ai-development-partner-selection.md) records partner-selection criteria for AI solution delivery, governance fit, evidence, maintainability, and lifecycle economics.
+- [pre-write-change-boundaries.md](pre-write-change-boundaries.md) records pre-implementation ticket, architecture, protected-path, CI, and drift gates for agent-started work.
 - Team rollout staging is deferred because the current source set does not identify a stable local stage model.
 
 ## Authoritative Sources
