@@ -1,0 +1,677 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "cutoff_local": "2026-09-22T21:03:53-0400",
+    "cutoff_utc": "2026-09-23T01:03:53Z",
+    "mode": "last_7_days_relative_to_run_time",
+    "rule": "Only public sources with visible publication or update dates after the cutoff qualify; date-only boundary-day candidates are excluded as ambiguous."
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "reason": "Outside the 7-day cutoff window for this run.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.24234",
+      "title": "The Work Behind Delegation: A Framework for Supervising AI Coding Agents",
+      "visible_date": "Submitted on 21 Sep 2026"
+    },
+    {
+      "reason": "Older than cutoff 2026-09-23T01:03:53Z.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.26847",
+      "title": "Who Finishes the Job? A Study of Follow-Up Fixes and Commit Authorship on AI Coding Agent Pull Requests",
+      "visible_date": "Tue Sep 22 07:22:44 2026"
+    },
+    {
+      "reason": "Date-only source on the cutoff boundary day; exact publication time is ambiguous and may be before the cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"
+      ],
+      "source_url": "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response",
+      "title": "Salt Security Extends Its Agentic Security Platform with Native AI Detection and Response",
+      "visible_date": "September 22, 2026"
+    },
+    {
+      "reason": "Already cited in selected leaf but not visibly updated within the 7-day window.",
+      "related_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "title": "What we learned about letting agents into a production database",
+      "visible_date": "Last month / August 2026"
+    },
+    {
+      "reason": "Outside the 7-day cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+      ],
+      "source_url": "https://www.chatgptaihub.com/run-deep-research-chatgpt-work-codex-source-controls-live-steering-citations-deliverables/",
+      "title": "How to Run Deep Research in ChatGPT Work and Codex",
+      "visible_date": "September 10, 2026"
+    },
+    {
+      "reason": "Outside the 7-day cutoff window despite topical relevance.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "source_url": "https://www.langchain.com/resources/agent-evals",
+      "title": "Evaluating AI Agents at the Run, Trace, and Thread Level",
+      "visible_date": "June 23, 2026"
+    },
+    {
+      "reason": "Outside the 7-day cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+      "title": "How to avoid the hidden dangers of AI code",
+      "visible_date": "September 18, 2026"
+    }
+  ],
+  "federation_boundary": {
+    "downstream_owned_scopes": [
+      "local practice",
+      "workflow",
+      "governance",
+      "verification",
+      "adoption",
+      "implementation lens"
+    ],
+    "routing_note": "Broad product and company facts should route upstream; this raw artifact keeps only downstream practice implications for the selected local leaves.",
+    "upstream_owned_scopes": [
+      "broad AI companies",
+      "products",
+      "models",
+      "frameworks",
+      "MCP servers",
+      "general ecosystem background"
+    ],
+    "upstream_owner": "AI wiki"
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch artifact.",
+    "During ingest, corroborate Reddit anecdotes before promoting them as durable guidance.",
+    "Review boundary-date exclusions if a source later exposes an exact update timestamp within the window."
+  ],
+  "leaf_results": [
+    {
+      "excluded_candidate_urls": [
+        "https://www.chatgptaihub.com/run-deep-research-chatgpt-work-codex-source-controls-live-steering-citations-deliverables/"
+      ],
+      "follow_up_note": "No qualifying public update found in the 7-day window; excluded older or ambiguous candidates recorded where applicable.",
+      "last_result": "no_qualifying_update_found",
+      "leaf_id": "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://www.chatgptaihub.com/run-deep-research-chatgpt-work-codex-source-controls-live-steering-citations-deliverables/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://arxiv.org/abs/2609.24234"
+      ],
+      "follow_up_note": "Review 3 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+      "qualifying_update_ids": [
+        "aws-bedrock-agentcore-delegation-controls-2026-09-25",
+        "ando-agent-native-messaging-platform-2026-09-24",
+        "reddit-multi-agent-handoff-contract-checks-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2609.24234",
+        "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+        "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html",
+        "https://www.reddit.com/r/AI_Agents/comments/1wp2yny/multiagent_handoff_is_where_our_runs_die_whats/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 1 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+      "qualifying_update_ids": [
+        "ando-agent-native-messaging-platform-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 2 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+      "qualifying_update_ids": [
+        "aws-bedrock-agentcore-delegation-controls-2026-09-25",
+        "laminar-agent-eval-trajectories-regression-tests-2026-09-25"
+      ],
+      "source_urls_checked": [
+        "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+        "https://laminar.sh/article/how-to-evaluate-ai-agents"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 1 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+      "qualifying_update_ids": [
+        "openai-codex-reusable-cloud-environments-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 2 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+      "qualifying_update_ids": [
+        "openai-codex-reusable-cloud-environments-2026-09-29",
+        "ando-agent-native-messaging-platform-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+        "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response"
+      ],
+      "follow_up_note": "Review 2 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+      "qualifying_update_ids": [
+        "nvidia-open-agent-safety-platform-2026-09-28",
+        "oracle-fusion-claw-governed-agentic-runtime-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
+        "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response",
+        "https://www.oracle.com/se/news/announcement/oracle-extends-fusion-agentic-applications-with-introduction-of-fusion-claw-2026-09-29/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://arxiv.org/abs/2609.26847",
+        "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code"
+      ],
+      "follow_up_note": "Review 3 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/coding-practices/pre-pr-independent-review.md",
+      "qualifying_update_ids": [
+        "openai-codex-reusable-cloud-environments-2026-09-29",
+        "laminar-agent-eval-trajectories-regression-tests-2026-09-25",
+        "reddit-ai-generated-pr-review-load-2026-09-28"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2609.26847",
+        "https://laminar.sh/article/how-to-evaluate-ai-agents",
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+        "https://www.reddit.com/r/LockedIn_AI/comments/1wsi59t/aigenerated_prs_are_turning_code_review_into_a/",
+        "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response"
+      ],
+      "follow_up_note": "Review 6 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+      "qualifying_update_ids": [
+        "nvidia-open-agent-safety-platform-2026-09-28",
+        "oracle-fusion-claw-governed-agentic-runtime-2026-09-29",
+        "laminar-agent-eval-trajectories-regression-tests-2026-09-25",
+        "techradar-agent-governance-data-foundation-2026-09-23",
+        "reddit-multi-agent-handoff-contract-checks-2026-09-24",
+        "reddit-ai-generated-pr-review-load-2026-09-28"
+      ],
+      "source_urls_checked": [
+        "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
+        "https://laminar.sh/article/how-to-evaluate-ai-agents",
+        "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response",
+        "https://www.oracle.com/se/news/announcement/oracle-extends-fusion-agentic-applications-with-introduction-of-fusion-claw-2026-09-29/",
+        "https://www.reddit.com/r/AI_Agents/comments/1wp2yny/multiagent_handoff_is_where_our_runs_die_whats/",
+        "https://www.reddit.com/r/LockedIn_AI/comments/1wsi59t/aigenerated_prs_are_turning_code_review_into_a/",
+        "https://www.techradar.com/pro/why-ai-agent-governance-must-start-with-enterprise-data"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://arxiv.org/abs/2609.26847"
+      ],
+      "follow_up_note": "Review 3 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+      "qualifying_update_ids": [
+        "openai-codex-reusable-cloud-environments-2026-09-29",
+        "oracle-select-ai-agent-team-sharing-2026-09-25",
+        "techradar-agent-governance-data-foundation-2026-09-23"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2609.26847",
+        "https://blogs.oracle.com/developers/share-and-reuse-oracle-select-ai-agent-teams-across-schemas",
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+        "https://www.techradar.com/pro/why-ai-agent-governance-must-start-with-enterprise-data"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+      ],
+      "follow_up_note": "Review 3 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+      "qualifying_update_ids": [
+        "oracle-fusion-claw-governed-agentic-runtime-2026-09-29",
+        "oracle-select-ai-agent-team-sharing-2026-09-25",
+        "techradar-agent-governance-data-foundation-2026-09-23"
+      ],
+      "source_urls_checked": [
+        "https://blogs.oracle.com/developers/share-and-reuse-oracle-select-ai-agent-teams-across-schemas",
+        "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+        "https://www.oracle.com/se/news/announcement/oracle-extends-fusion-agentic-applications-with-introduction-of-fusion-claw-2026-09-29/",
+        "https://www.techradar.com/pro/why-ai-agent-governance-must-start-with-enterprise-data"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://www.langchain.com/resources/agent-evals"
+      ],
+      "follow_up_note": "Review 1 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+      "qualifying_update_ids": [
+        "laminar-agent-eval-trajectories-regression-tests-2026-09-25"
+      ],
+      "source_urls_checked": [
+        "https://laminar.sh/article/how-to-evaluate-ai-agents",
+        "https://www.langchain.com/resources/agent-evals"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 3 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+      "qualifying_update_ids": [
+        "nvidia-open-agent-safety-platform-2026-09-28",
+        "laminar-agent-eval-trajectories-regression-tests-2026-09-25",
+        "reddit-ai-generated-pr-review-load-2026-09-28"
+      ],
+      "source_urls_checked": [
+        "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
+        "https://laminar.sh/article/how-to-evaluate-ai-agents",
+        "https://www.reddit.com/r/LockedIn_AI/comments/1wsi59t/aigenerated_prs_are_turning_code_review_into_a/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [],
+      "follow_up_note": "Review 2 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+      "qualifying_update_ids": [
+        "aws-bedrock-agentcore-delegation-controls-2026-09-25",
+        "openai-codex-reusable-cloud-environments-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/"
+      ]
+    },
+    {
+      "excluded_candidate_urls": [
+        "https://arxiv.org/abs/2609.24234"
+      ],
+      "follow_up_note": "Review 5 qualifying update(s) in this raw artifact for downstream local-practice implications.",
+      "last_result": "qualifying_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/subagent-coordination.md",
+      "qualifying_update_ids": [
+        "aws-bedrock-agentcore-delegation-controls-2026-09-25",
+        "openai-codex-reusable-cloud-environments-2026-09-29",
+        "oracle-select-ai-agent-team-sharing-2026-09-25",
+        "ando-agent-native-messaging-platform-2026-09-24",
+        "reddit-multi-agent-handoff-contract-checks-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://arxiv.org/abs/2609.24234",
+        "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+        "https://blogs.oracle.com/developers/share-and-reuse-oracle-select-ai-agent-teams-across-schemas",
+        "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+        "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html",
+        "https://www.reddit.com/r/AI_Agents/comments/1wp2yny/multiagent_handoff_is_where_our_runs_die_whats/"
+      ]
+    }
+  ],
+  "leaf_universe_count": 103,
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "factual_summary": "AWS framed prompt injection, excessive agency, and information disclosure as failures of uncontrolled delegation, and described boundary checks for trust, action, and access handoffs in agentic systems.",
+      "id": "aws-bedrock-agentcore-delegation-controls-2026-09-25",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "local_practice_implication": "Represent as downstream delegation-control practice, not as broad AWS product coverage.",
+      "named_entities": [
+        "AWS",
+        "Amazon Bedrock AgentCore",
+        "FISMA",
+        "OWASP Prompt Injection"
+      ],
+      "published_or_updated": "2026-09-25",
+      "source_url": "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+      "upstream_owned_entities": [
+        "AWS",
+        "Amazon Bedrock AgentCore",
+        "OWASP"
+      ],
+      "visible_date_evidence": "AWS Public Sector Blog byline: 25 SEP 2026.",
+      "why_it_matters_for_leaf": "Reinforces local handoff and loop guidance: delegated agents need structured boundaries, confirmation for destructive actions, source-labeled tool results, and checks at each authority transition."
+    },
+    {
+      "factual_summary": "TechCrunch reported Codex reusable cloud development environments, a refreshed CLI, a new /agents view for delegating and tracking multiple tasks, worktree/session improvements, desktop code review, automatic initial reviews, and Codex Security Cloud scans on demand, on schedules, and on new commits.",
+      "id": "openai-codex-reusable-cloud-environments-2026-09-29",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "local_practice_implication": "Keep broad product details upstream; local leaves should capture workspace persistence, review gates, security scanning, and fleet/task tracking practices.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Codex CLI",
+        "ChatGPT desktop app",
+        "GitHub",
+        "GitLab",
+        "Codex Security Cloud",
+        "Daybreak Blue",
+        "Agents API",
+        "Amazon Bedrock Managed Agents"
+      ],
+      "published_or_updated": "2026-09-29 10:15 PDT",
+      "source_url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "GitHub",
+        "GitLab",
+        "Amazon Bedrock Managed Agents"
+      ],
+      "visible_date_evidence": "TechCrunch timestamp: 10:15 AM PDT, September 29, 2026.",
+      "why_it_matters_for_leaf": "Gives current public evidence that coding-agent workspaces are becoming persistent, configurable, multi-device, review-aware, and tied to repository security and commit workflows."
+    },
+    {
+      "factual_summary": "AP reported Nvidia unveiled an Open Agent Safety Platform intended to set boundaries for AI agents, presented in response to incidents involving autonomous agent behavior and model-evaluation safety concerns.",
+      "id": "nvidia-open-agent-safety-platform-2026-09-28",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "local_practice_implication": "Route product/platform coverage upstream; local implication is to document runtime boundary evidence and evaluation artifacts for agent-controlled mutation.",
+      "named_entities": [
+        "Nvidia",
+        "Open Agent Safety Platform",
+        "Hugging Face",
+        "OpenAI"
+      ],
+      "published_or_updated": "2026-09-28",
+      "source_url": "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
+      "upstream_owned_entities": [
+        "Nvidia",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "visible_date_evidence": "AP article surfaced as published September 28, 2026; page states Nvidia unveiled the platform Monday.",
+      "why_it_matters_for_leaf": "Adds public evidence that platform-level runtime boundaries are becoming part of agent mutation and governance discussions, especially for high-autonomy execution."
+    },
+    {
+      "factual_summary": "Oracle announced Fusion Claw as a governed agentic execution runtime for Fusion Agentic Applications, combining AI reasoning with deterministic enterprise computation and positioning AI Agent Studio around trusted enterprise data, security, governance, and performance.",
+      "id": "oracle-fusion-claw-governed-agentic-runtime-2026-09-29",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"
+      ],
+      "local_practice_implication": "Treat as downstream evidence for governed execution and trusted data boundaries, not as an Oracle product leaf.",
+      "named_entities": [
+        "Oracle",
+        "Oracle Fusion Claw",
+        "Oracle Fusion Agentic Applications",
+        "Oracle AI Agent Studio"
+      ],
+      "published_or_updated": "2026-09-29",
+      "source_url": "https://www.oracle.com/se/news/announcement/oracle-extends-fusion-agentic-applications-with-introduction-of-fusion-claw-2026-09-29/",
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle Fusion Claw",
+        "Oracle AI Agent Studio"
+      ],
+      "visible_date_evidence": "Oracle announcement dateline: Austin, Texas, September 29, 2026.",
+      "why_it_matters_for_leaf": "Supports the local pattern that platform-native mutation should pair model reasoning with deterministic execution rails and governance surfaces before agents operate on enterprise systems."
+    },
+    {
+      "factual_summary": "Oracle described cross-schema reuse for Select AI Agent Framework teams where an owner schema grants access to a team while retaining control of agents, tasks, tools, prompts, and workflow design; team access does not automatically grant access to underlying resources.",
+      "id": "oracle-select-ai-agent-team-sharing-2026-09-25",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md"
+      ],
+      "local_practice_implication": "Keep product mechanics upstream; local synthesis should focus on least-privilege shared workflow access and drift avoidance.",
+      "named_entities": [
+        "Oracle",
+        "Oracle Select AI Agent Framework",
+        "DBMS_CLOUD_AI_AGENT"
+      ],
+      "published_or_updated": "2026-09-25",
+      "source_url": "https://blogs.oracle.com/developers/share-and-reuse-oracle-select-ai-agent-teams-across-schemas",
+      "upstream_owned_entities": [
+        "Oracle",
+        "Oracle Select AI Agent Framework"
+      ],
+      "visible_date_evidence": "Oracle Developers Blog date: September 25, 2026.",
+      "why_it_matters_for_leaf": "Concrete public example of governed database-adjacent agent access: workflow reuse, owner-controlled definitions, role/user grants, and resource privilege separation."
+    },
+    {
+      "factual_summary": "Laminar described agent evaluation across task outcome, tool use, trajectory, and grounding, recommending separate named scores, execution evidence, production-derived datasets, regression tests, and trace inspection.",
+      "id": "laminar-agent-eval-trajectories-regression-tests-2026-09-25",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md"
+      ],
+      "local_practice_implication": "Use as practice evidence for trajectory scoring and evidence packages; do not create a local Laminar entity page.",
+      "named_entities": [
+        "Laminar"
+      ],
+      "published_or_updated": "2026-09-25",
+      "source_url": "https://laminar.sh/article/how-to-evaluate-ai-agents",
+      "upstream_owned_entities": [
+        "Laminar"
+      ],
+      "visible_date_evidence": "Laminar article date: Sep 25, 2026.",
+      "why_it_matters_for_leaf": "Directly updates local eval guidance: verification should inspect traces and tool trajectories, not only final answers, and should convert observed production failures into regression tests."
+    },
+    {
+      "factual_summary": "Ando announced an agent-native messaging platform for teams working alongside AI agents, with funding from Accel, Index Ventures, and Emergence Capital.",
+      "id": "ando-agent-native-messaging-platform-2026-09-24",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "local_practice_implication": "Route company/product background upstream; local implication is durable coordination and handoff practice for agent-native messaging.",
+      "named_entities": [
+        "Ando",
+        "Accel",
+        "Index Ventures",
+        "Emergence Capital"
+      ],
+      "published_or_updated": "2026-09-24 09:00 ET",
+      "source_url": "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html",
+      "upstream_owned_entities": [
+        "Ando",
+        "Accel",
+        "Index Ventures",
+        "Emergence Capital"
+      ],
+      "visible_date_evidence": "GlobeNewswire timestamp: September 24, 2026 09:00 ET.",
+      "why_it_matters_for_leaf": "Signals that agent workflow coordination is moving into dedicated communication surfaces, which affects event-triggered work, handoff records, and multi-agent operating agreements."
+    },
+    {
+      "factual_summary": "TechRadar opinion argued production agent governance depends on governed inputs, appropriate access, and reliable records of what agents produce, including decisions, instructions, and created documents.",
+      "id": "techradar-agent-governance-data-foundation-2026-09-23",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "local_practice_implication": "Use as practice-level governance signal; source is opinion, so keep factual claims attributed and avoid treating it as a standard.",
+      "named_entities": [
+        "TechRadar",
+        "Archive360"
+      ],
+      "published_or_updated": "2026-09-23",
+      "source_url": "https://www.techradar.com/pro/why-ai-agent-governance-must-start-with-enterprise-data",
+      "upstream_owned_entities": [
+        "TechRadar",
+        "Archive360"
+      ],
+      "visible_date_evidence": "TechRadar page date: Published 23 September 2026.",
+      "why_it_matters_for_leaf": "Supports local governance leaves that require evidence packages, traceability, access classification, and defensible records before agents operate over enterprise data."
+    },
+    {
+      "factual_summary": "A public Reddit thread discussed practical multi-agent handoff failures and community patterns such as coordinator-owned TaskSpec records, typed constraints, artifact references, count/hash checks, ingress schema validation, and fail-closed behavior.",
+      "id": "reddit-multi-agent-handoff-contract-checks-2026-09-24",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"
+      ],
+      "local_practice_implication": "Treat as anecdotal/public practitioner signal and corroborate with stronger sources during ingest before promoting as durable guidance.",
+      "named_entities": [
+        "Reddit",
+        "AI_Agents"
+      ],
+      "published_or_updated": "2026-09-24",
+      "source_url": "https://www.reddit.com/r/AI_Agents/comments/1wp2yny/multiagent_handoff_is_where_our_runs_die_whats/",
+      "upstream_owned_entities": [
+        "Reddit"
+      ],
+      "visible_date_evidence": "Search result visible date: Thursday September 24, 2026; Reddit thread shows recent comments and public discussion.",
+      "why_it_matters_for_leaf": "Useful community evidence for the local handoff model: handoff artifacts should carry typed invariants and artifact references rather than relying on prose summaries."
+    },
+    {
+      "factual_summary": "A public Reddit post described a team rejecting oversized AI-generated pull requests and cited review burden, unexplained touched files, mocked invented APIs, misplaced code, and authorization checks hidden by generated tests.",
+      "id": "reddit-ai-generated-pr-review-load-2026-09-28",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "local_practice_implication": "Use cautiously as practitioner anecdote; it supports review burden and evidence-package themes rather than a formal benchmark.",
+      "named_entities": [
+        "Reddit",
+        "LockedIn_AI",
+        "Cursor"
+      ],
+      "published_or_updated": "2026-09-28",
+      "source_url": "https://www.reddit.com/r/LockedIn_AI/comments/1wsi59t/aigenerated_prs_are_turning_code_review_into_a/",
+      "upstream_owned_entities": [
+        "Reddit",
+        "Cursor"
+      ],
+      "visible_date_evidence": "Reddit page shows 1d ago at run time; search result gives Monday September 28, 2026.",
+      "why_it_matters_for_leaf": "Anecdotal evidence for pre-PR independent review requirements: keep changes small, require author understanding, validate dependencies and auth paths, and avoid pushing review cost onto domain owners."
+    }
+  ],
+  "run_timestamp_local": "2026-09-29T21:03:53-0400",
+  "run_timestamp_utc": "2026-09-30T01:03:53Z",
+  "search_queries_used": [
+    "deep research writing workflows AI agents updates September 2026",
+    "delegated coding handoffs AI agents September 2026",
+    "event triggered agent workflows AI development September 2026",
+    "orient inspect patch verify loop AI coding agent September 2026",
+    "persistent agent workspaces coding agents September 2026",
+    "terminal native agent fleet orchestration September 2026 coding agents",
+    "platform native agent mutation AI agents September 2026",
+    "pre PR independent review AI generated code September 2026",
+    "AI code evidence packages commit governance September 2026",
+    "commit level AI governance coding agents September 2026",
+    "governed database agent access production database AI agents September 2026 Oracle",
+    "trajectory level agent evaluation verification loops evals September 2026 AI agents"
+  ],
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md"
+  ],
+  "source_urls_checked": [
+    "https://apnews.com/article/nvidia-ai-agent-artificial-intelligence-safety-3c4d7c1cfde82851c0577d1fa29b8621",
+    "https://arxiv.org/abs/2609.24234",
+    "https://arxiv.org/abs/2609.26847",
+    "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+    "https://blogs.oracle.com/developers/share-and-reuse-oracle-select-ai-agent-teams-across-schemas",
+    "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+    "https://laminar.sh/article/how-to-evaluate-ai-agents",
+    "https://salt.security/press-releases/salt-security-extends-its-agentic-security-platform-with-native-ai-detection-and-response",
+    "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
+    "https://www.chatgptaihub.com/run-deep-research-chatgpt-work-codex-source-controls-live-steering-citations-deliverables/",
+    "https://www.globenewswire.com/news-release/2026/9/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html",
+    "https://www.langchain.com/resources/agent-evals",
+    "https://www.oracle.com/se/news/announcement/oracle-extends-fusion-agentic-applications-with-introduction-of-fusion-claw-2026-09-29/",
+    "https://www.reddit.com/r/AI_Agents/comments/1wp2yny/multiagent_handoff_is_where_our_runs_die_whats/",
+    "https://www.reddit.com/r/LockedIn_AI/comments/1wsi59t/aigenerated_prs_are_turning_code_review_into_a/",
+    "https://www.techradar.com/pro/whatever-you-try-to-fix-breaks-things-even-more-how-to-avoid-the-hidden-dangers-of-ai-code",
+    "https://www.techradar.com/pro/why-ai-agent-governance-must-start-with-enterprise-data"
+  ]
+}
