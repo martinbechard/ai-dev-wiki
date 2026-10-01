@@ -21,6 +21,8 @@ The September 1 raw sources add lifecycle evidence for stop conditions, prompt t
 
 The September 7 raw sources add runtime, approval, and checkpoint hook evidence. The [leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json) records completed-command history, full patch history, background-terminal input, app-server reconnect behavior, saved approvals, and AI review approval settings; the [topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json) records checkpoint triggers around confidence, sensitivity, constraints, value, and sampled review. Locally, lifecycle hooks should emit receipt history, approval duration, reconnect uncertainty, checkpoint trigger, and sampled-review state as first-class workflow events.
 
+The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds native hook verification evidence. Configured hooks are not enough; hook behavior should be protocol-tested in a disposable project and distinguished from what a particular client actually observed. Hook records should therefore show configured intent, tested behavior, observed behavior, and failure state separately.
+
 ## Practice Boundaries
 
 - Emit lifecycle hooks for session start, tool-surface changes, approvals, memory updates, verification steps, failure states, and completion.
@@ -33,6 +35,7 @@ The September 7 raw sources add runtime, approval, and checkpoint hook evidence.
 - Emit hooks for inbound events, task composition, server-initiated messages, agent-identity changes, operation-lease issuance, and task-completion evidence when protocol primitives trigger agent work.
 - Capture cooldown, stop-after, preflight-validation, approval-policy, prompt-timeline, and file-change attribution events as lifecycle evidence.
 - Emit hook events for command completion, patch history, background input, reconnect uncertainty, approval duration, checkpoint triggers, and sampled-review decisions.
+- Separate configured hooks, protocol-tested hook behavior, observed client behavior, and hook failure evidence before relying on hooks for policy, audit, or recovery.
 
 ## Authoritative Sources
 
@@ -44,6 +47,7 @@ The September 7 raw sources add runtime, approval, and checkpoint hook evidence.
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 - [agent harness components](agent-harness-components.md)
 - [user-visible progress and runtime telemetry](user-visible-progress-and-runtime-telemetry.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
@@ -77,3 +81,4 @@ The September 7 raw sources add runtime, approval, and checkpoint hook evidence.
 - Maintained on 2026-08-26 with inbound event, task-composition, server-initiated message, agent-identity, operation-lease, and task-completion hook points.
 - Maintained on 2026-09-01 with cooldown, stop-after, trajectory-grader, sandbox-preflight, approval-policy, and prompt-timeline hook evidence.
 - Maintained on 2026-09-07 with runtime receipt, saved-approval, reconnect-uncertainty, checkpoint-trigger, and sampled-review hook evidence.
+- Maintained on 2026-10-01 with configured-hook, protocol-tested behavior, observed-client behavior, disposable-project verification, and hook-failure evidence.

@@ -45,6 +45,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 
 The [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) adds code-context benchmark evidence. The DEBEDb source is a small secondary benchmark, but its local lesson is durable: code-context strategies should be judged by whether file and line citations resolve, whether compressed or retrieved context fabricates spans, whether agentic exploration prints enough inputs for audit, and whether harness defects are recorded as eval findings instead of hidden inside a ranking.
 
+The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds done-claim and trace-evidence refinements. Code retrieval evidence should not stop at a final agent summary: reviewers should inspect session history, exact opened paths, final code state, and fresh verification output before accepting a completion claim. When the retrieval or trace artifact is writable by the same agent, the evidence package should identify which records came from outside the agent boundary.
+
 ## Practice Boundaries
 
 - Keep code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, and task metadata distinguishable in retrieval evidence.
@@ -76,6 +78,8 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - Treat language-server, compile-aware, semantic-search, and code-graph indexes as retrieval substrates that still need freshness labels, index-progress evidence, and exact opened-path verification before they support edits or review findings.
 - Check retrieval sufficiency as a set-level property for the current decision instead of accepting individually relevant snippets as enough evidence.
 - Score code-context strategies by resolvable file and line evidence, printed inputs, non-empty output checks, and harness-defect reporting rather than by compressed context size alone.
+- Verify coding-agent completion claims against session history, opened-path evidence, current file contents, and fresh final-code checks instead of treating a done message as retrieval evidence.
+- Identify which trace, log, or history records are outside the agent-writable boundary before using them as audit evidence.
 
 ## Authoritative Sources
 
@@ -102,6 +106,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 
 ## Related Code
 
@@ -128,6 +133,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 ## Maintenance Notes
 
 - Maintained on 2026-09-26 with code-context benchmark, line-citation, printed-input, non-empty-output, and harness-defect evidence.
+- Maintained on 2026-10-01 with coding-agent done-claim, session-history, final-code verification, mutable-trace, and external-boundary evidence.
 - Maintained on 2026-09-19 with enterprise code-search, docs/wiki retrieval, runbook, observability, feature-flag, task-metadata, and tribal-knowledge evidence boundaries.
 - Created on 2026-06-23 to hold code retrieval evidence practice apart from document RAG and tool execution.
 - Maintained on 2026-06-25 with explicit retrieval-path evidence for AI review and coding-agent claims.

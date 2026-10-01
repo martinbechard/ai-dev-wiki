@@ -15,6 +15,8 @@ The September 25 raw sources add runtime-control and developer-workstation evide
 
 The [September 25 topic news collector source for the September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds external audit-log and browser-egress signals. When a local coding agent can edit its own workspace logs, governance evidence should be captured by append-only or externally controlled recorders. Browser or web-egress incidents should preserve destination, intermediary service, request class, escalation pattern, and evidence limits before they are treated as proof of intent.
 
+The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds governed execution-plane evidence from AI review, MCP enforcement, and agency deployment patterns. Local governance infrastructure should join code-review configuration changes, MCP allowlist decisions, endpoint-hook enforcement, merge-request or pull-request audit trails, self-hosted or data-residency constraints, and model-provider flexibility under a system-of-record boundary so agent output remains reviewable independently of the model or coding surface.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds provider-neutral agent control-plane evidence. Governance infrastructure should support first-class agent identity, lifecycle stage, suspension, revocation, sandbox placement, role-based access, token exchange, MCP interaction controls, and operational oversight independently of the agent framework or model route.
 
 Agent governance works best as infrastructure around the model loop. Policies for identity, authorization, allowed actions, monitoring, audit, rate limits, and accountability need to be enforced by the harness, gateway, platform, or tool server so the boundary still holds when a prompt, retrieved document, or generated action is hostile or mistaken.
@@ -189,6 +191,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Back governance confidence with verifiable inventory, pre-deploy gates, production-behavior checks, rapid disable controls, and current exception owners.
 - Preserve behavior monitoring, outcome monitoring, cost-control, identity-policy, and lifecycle-management evidence as control-plane outputs, not only dashboard screenshots.
 - Treat trace anomaly monitors as governance infrastructure when they inspect tool parameters, privilege use, cascading failures, resource exhaustion, or rogue-agent behavior.
+- Bind AI-review policy changes, MCP runtime enforcement, system-of-record review gates, deployment locality, and model-provider routing into the same governance record when they affect one agent workflow.
 - Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
 - Treat host-local traces as insufficient audit evidence when the agent can mutate the workspace that stores them; preserve append-only, external, signed, or otherwise tamper-resistant records for delegated authority and incident review.
 - Classify agent capability inventories by direct code-writing, qualified code-writing, no-code, and non-applicable status before using them for policy, procurement, or rollout decisions.
@@ -199,6 +202,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
+- [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
@@ -298,6 +302,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-27 with tamper-resistant audit, host-local trace limitation, and qualified agent-capability inventory evidence.
+- Maintained on 2026-10-01 with AI-review configuration audit, runtime MCP enforcement, system-of-record review gates, self-hosted/data-residency, and model-provider-flexibility evidence.
 - Maintained on 2026-09-25 with runtime governance, proof-of-presence, workstation control, local sandbox, and fail-closed evidence.
 
 - Maintained on 2026-09-19 with provider-neutral agent-manager, lifecycle, revocation, sandbox, delegated-authority, and MCP-governance infrastructure evidence.

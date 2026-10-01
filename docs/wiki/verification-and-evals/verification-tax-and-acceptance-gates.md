@@ -55,6 +55,8 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 
 The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) adds agentic code-quality verification pressure. Acceptance gates should connect agentic scale to explainable review evidence, repository-wide context, historical PR decisions, and organization-specific standards before faster generation or larger PRs count as delivery success.
 
+The October 1 raw sources add done-claim, mutable-trace, and critic-workflow evidence. The [leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) treats coding-agent done messages as claims until session history and final-code checks confirm them, and notes that local JSONL traces can be mutable when they live inside the agent-reachable filesystem. The [topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds read-only critic and multi-model workflow evidence. Locally, acceptance gates should require fresh final-state verification, externally controlled or tamper-resistant evidence when traces matter, and reviewer independence when critique is part of the workflow.
+
 ## Practice Boundaries
 
 - Track review cognitive effort, traceability gaps, deterministic verification coverage, and standards-compliance checks when AI-generated code volume increases.
@@ -93,6 +95,9 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Use the [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json) as evidence for incremental runtime migration, governance checks, and production AI-code quality bars.
 - Use the [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) as evidence for agent-eval and incident-reporting routing.
 - Require explainable review evidence, repository-wide context checks, historical PR-decision context, and organization-specific quality standards when agentic development increases change volume.
+- Treat final messages as claims until checked against session history, current files, verification output, and final-code state.
+- Use externally controlled, append-only, or tamper-resistant evidence when local traces can be mutated by the agent under review.
+- Require critic role independence, read-only boundaries, and final human acceptance when multi-model critique is used as an acceptance signal.
 
 ## Authoritative Sources
 
@@ -128,6 +133,8 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
+- [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 
 ## Related Code
 
@@ -156,6 +163,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
+- Maintained on 2026-10-01 with done-claim verification, session-history review, final-code checks, mutable-trace risk, tamper-resistant evidence, and read-only critic workflow evidence.
 
 - Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
 - Maintained on 2026-09-24 with agentic code-quality, explainable review evidence, repository-wide context, historical PR decision, and organization-specific standard gates.

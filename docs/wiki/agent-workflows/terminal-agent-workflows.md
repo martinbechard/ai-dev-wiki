@@ -37,6 +37,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 
 The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds repository-ready terminal-agent evidence. Local terminal workflows should record tool-specific wrappers, configuration, runtime and sandbox posture, API stack, model route, and handoff surface before treating a CLI agent path as equivalent to another agent's path.
 
+The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds terminal-agent phase and hook evidence. Read-only research, planning artifacts, shell approvals, sandbox policy, lifecycle hook checks, done-claim verification, and session-history review should be visible terminal-workflow records rather than left inside a final message.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -53,6 +55,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Record excluded-source boundaries, managed model route, side-conversation lineage, prompt timeline, collaboration channel, permission default, and sandbox fixture evidence when terminal or desktop-agent sessions can execute commands.
 - Preserve worktree, local runtime, containment profile, model route, approval state, and review package evidence for parallel terminal or workstation-agent sessions.
 - Treat repository-owned CLI wrappers and configuration as readiness evidence only when runtime, sandbox, API, model, context, and handoff differences remain visible.
+- Preserve read-only research artifacts, planning artifacts, shell-approval decisions, sandbox posture, lifecycle-hook behavior, session-history checks, and final-code verification before accepting a terminal-agent done claim.
 
 ## Authoritative Sources
 
@@ -75,6 +78,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 
 ## Related Code
 
@@ -111,3 +115,4 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Maintained on 2026-08-27 with prototype-first cloud-agent sessions, repository creation, preview, publishing, SCM ownership, and runtime-control evidence.
 - Maintained on 2026-09-02 with content-exclusion, managed-model-route, session-lineage, collaboration-surface, runtime-permission, desktop-agent, and destructive-operation containment evidence.
 - Maintained on 2026-09-23 with repository-ready terminal-agent wrappers, runtime posture, sandbox posture, API stack, model route, and handoff-surface evidence.
+- Maintained on 2026-10-01 with read-only research, planning-artifact, shell-approval, sandbox, lifecycle-hook, session-history, and final-code verification evidence.

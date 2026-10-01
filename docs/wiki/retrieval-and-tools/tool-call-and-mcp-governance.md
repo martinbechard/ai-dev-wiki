@@ -15,6 +15,8 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 
 The [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds managed MCP audit-log evidence. For remote MCP servers, local approval should name the service filter, permission type, Admin Activity versus Data Access destination, and whether Data Access logs are enabled for read activity. A server can be officially hosted and still lack usable local evidence if DATA_READ logging remains off or the team has not proved where tool calls appear in audit logs.
 
+The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds runtime MCP enforcement and review-context evidence. Runtime governance should discover which MCP servers agents use, compare use against allowed-server policy, log or block out-of-policy calls at invocation time, and preserve endpoint-hook evidence across supported agent clients. When AI code review consumes MCP context, repository instructions, skills, and issue or pull-request history, those context sources should be treated as governed tool inputs with content-exclusion and source-provenance records.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds MCP-served playbook and agent-manager evidence. Tool governance should distinguish raw code search, procedural playbooks, docs/wiki access, runbooks, observability context, feature flags, task-system controls, and data-platform tools, then bind each tool class to identity, lifecycle, sandbox, approval, telemetry, and revocation evidence.
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds tool telemetry, sandbox, and runtime-enforcement evidence. Tool governance should preserve model/tool spans, managed telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, and fail-closed sandbox results before a local coding-agent action is trusted. Runtime MCP governance also reinforces that approved inventory is insufficient when the authorization decision needs to happen at the point of action.
@@ -226,6 +228,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Separate read-only history access, state-changing controls, rate limits, and safety-denied actions when MCP tools reach physical, operational, or customer-facing systems.
 - Interpret agent customization telemetry by event type; an MCP connection attempt is not the same as an approved tool call or a successful side effect.
 - Enforce MCP policy at point of action when a tool call could read, write, spend, deploy, or mutate external state; inventory alone is not proof that the action was allowed.
+- Preserve runtime MCP allowlist decisions, endpoint-hook enforcement evidence, and whether out-of-policy calls were logged, blocked, or allowed by exception.
 - Treat sandboxed generated-code execution inside an MCP server as a separate tool substrate with caller permission checks, intermediate-data minimization, deterministic join/filter evidence, and output-size controls.
 - Separate skills, custom agents, MCP servers, slash commands, plugins, connection attempts, approved calls, and successful side effects in tool telemetry and enablement scorecards.
 - Keep MCP server registration, tool inventory, approval prompts, runtime enforcement, and sandboxed code execution as separate governable events.
@@ -243,6 +246,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
+- [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -353,6 +357,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with managed MCP audit-log, service-filter, permission-category, Data Access, Admin Activity, and read-activity enablement evidence.
+- Maintained on 2026-10-01 with runtime MCP discovery, allowed-server policy, endpoint-hook enforcement, log-or-block decisions, and AI-review MCP context evidence.
 - Maintained on 2026-09-28 with policy-before-execution, allowed-host, dynamic-tool, runtime-generated-code, and policy-version audit evidence.
 - Maintained on 2026-09-27 with MCP publisher, transport, authentication, audit-log, metadata-limit, prompt-injection, and sandbox-change approval evidence.
 - Maintained on 2026-09-24 with MCP registration, inventory, approval-prompt, runtime-enforcement, and sandboxed-execution boundary evidence.

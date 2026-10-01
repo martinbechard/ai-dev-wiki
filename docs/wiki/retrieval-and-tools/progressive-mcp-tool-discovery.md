@@ -35,6 +35,8 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 
 The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds child-agent discovery scope evidence. When a delegated agent receives a restricted tool list, discovery bridges and MCP tools should remain non-invocable unless the named tool or bridge authority is explicitly granted for that subagent.
 
+The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds official registry evidence for recently updated agent-facing MCP servers, including discovery, repository trust, and reproducible-test or verification tools. Local practice should treat registry recency as a discovery signal only: invocation still needs publisher, repository, command behavior, trust, test reproducibility, and approval evidence.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -51,6 +53,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Treat action chaining across systems as a discovery-risk signal that requires separation-of-duties and least-privilege review before invocation.
 - Require policy evidence before invoking a discovered MCP connector that can chain actions across operational systems.
 - Separate the ability to discover tool schemas from the authority to invoke those tools, especially for child agents with explicit tool allowlists.
+- Treat registry "recently updated" metadata as a candidate-discovery signal, not trust evidence; verify publisher, repository, command behavior, test reproducibility, and approval route before invocation.
 
 ## Authoritative Sources
 
@@ -62,6 +65,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai-dev-wiki-leaf-update-watch-2026-09-16T210508-0400.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 - [remote MCP skill discovery and governance](remote-mcp-skill-discovery-and-governance.md)
 - [tool call and MCP governance](tool-call-and-mcp-governance.md)
 - [context selection and compaction](../context-architecture/context-selection-and-compaction.md)
@@ -100,3 +104,4 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Maintained on 2026-09-06 with secondary MCP protocol-change evidence deferred behind authoritative specification confirmation.
 - Maintained on 2026-09-16 with gateway-boundary, action-chain, rate-limit, and separation-of-duties discovery controls; next check should confirm discovery logs record the selected tool, delegated identity, and approval route before invocation.
 - Maintained on 2026-09-23 with child-agent discovery versus invocation authority and explicit MCP tool allowlist evidence.
+- Maintained on 2026-10-01 with MCP registry recency, discovery-server, repository-trust, reproducible-test, verification-tool, and registry-metadata trust-boundary evidence.

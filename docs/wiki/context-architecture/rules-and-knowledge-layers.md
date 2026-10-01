@@ -31,6 +31,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 
 The [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) adds repository-specific security memory evidence. Learned fix patterns and agent memories belong in the knowledge layer with provenance, scope, owner review, and staleness checks; they should not become durable rules until a maintainer promotes them as accepted repository convention.
 
+The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds instruction-stacking evidence. Layering more instructions does not by itself create obedience, so context architecture should separate durable rules, personal memory, repository facts, plugin guidance, MCP metadata, and task evidence with priority diagnostics and conflict handling before those layers are compiled into a request.
+
 ## Practice Boundaries
 
 - Put durable conventions in the rules layer when they apply across tasks.
@@ -49,6 +51,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - Treat security skills as scoped rule assets, and treat lineage, stewardship, access control, semantic definitions, workflow versions, and run artifacts as knowledge records that inform agents without silently expanding authority.
 - Preserve provider or extension ownership, provenance, and cost attribution for injected context, and prefer conditional path-scoped rules over always-loaded instruction files for narrow guidance.
 - Keep learned fix patterns and repository-specific agent memories in the knowledge layer until provenance, scope, staleness, and owner review justify promotion into durable rules.
+- Keep instruction-stack diagnostics with the assembled request so agents can see which rules, knowledge, plugin guidance, MCP metadata, and task evidence were active and which conflicts remain unresolved.
 
 ## Authoritative Sources
 
@@ -66,6 +69,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 
 ## Related Code
 
@@ -92,6 +96,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 ## Maintenance Notes
 
 - Maintained on 2026-09-26 with repository-specific security memory, learned fix-pattern, provenance, scope, staleness, and owner-review evidence.
+- Maintained on 2026-10-01 with instruction-stack, layer-priority, plugin-guidance, MCP-metadata, conflict-handling, and request-compilation diagnostic evidence.
 - Created on 2026-06-23 from source guidance on durable rules, project facts, reusable procedures, and context-aware guidance.
 - Maintained on 2026-06-25 with layered teaching guidance for proprietary or unfamiliar project APIs.
 - Maintained on 2026-06-29 with permission-aware company context as a refreshable knowledge layer.

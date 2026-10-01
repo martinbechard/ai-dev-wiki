@@ -2,14 +2,15 @@
 
 ## Current Understanding
 
-Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries stay brief, reverse chronological inside each monthly page, and point to durable leaves for detail. The [current September digest](2026-09.md) holds the item-level September 2026 summaries.
+Monthly development digests summarize processed local source updates for AI-assisted development practice. Digest entries stay brief, reverse chronological inside each monthly page, and point to durable leaves for detail. The [current October digest](2026-10.md) holds the item-level October 2026 summaries.
 
 This digest hub is downstream of raw source ingest. Public collectors and leaf watchers save raw artifacts first; monthly digest pages record the dated synthesis after durable topic leaves are refreshed.
 
-The [current September digest](2026-09.md) records the active month in item-level, newest-first entries, including September 29 agent-governance, MCP audit, workspace, review, handoff, platform-runtime, and eval updates. It should remain the source of detailed September scope rather than copying that inventory into this hub.
+The [current October digest](2026-10.md) records the active month in item-level, newest-first entries, including October 1 review-governance, MCP enforcement, sandbox-readiness, critic-workflow, instruction-stack, and done-claim evidence. It should remain the source of detailed October scope rather than copying that inventory into this hub.
 
 ## Monthly Digests
 
+- [October 2026 development digest](2026-10.md) records processed October 2026 local source updates.
 - [September 2026 development digest](2026-09.md) records processed September 2026 local source updates.
 - [August 2026 development digest](2026-08.md) records processed August 2026 local source updates.
 - [July 2026 development digest](2026-07.md) records processed July 2026 local source updates.
@@ -17,6 +18,7 @@ The [current September digest](2026-09.md) records the active month in item-leve
 
 ## Authoritative Sources
 
+- [October 2026 development digest](2026-10.md)
 - [September 2026 development digest](2026-09.md)
 - [August 2026 development digest](2026-08.md)
 - [July 2026 development digest](2026-07.md)
@@ -48,6 +50,7 @@ The [current September digest](2026-09.md) records the active month in item-leve
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-01 with the October 1 leaf-watch and topic-collector raw ingest digest scope.
 - Maintained on 2026-09-29 with the September 29 leaf-watch and September 30 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-27 with the September 27 leaf-watch and September 28 topic-collector raw ingest digest scope.
 - Maintained on 2026-09-25 with the September 25 leaf-watch and September 26 topic-collector raw ingest digest scope.
