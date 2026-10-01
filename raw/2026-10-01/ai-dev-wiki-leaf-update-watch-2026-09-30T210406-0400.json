@@ -1,0 +1,754 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-10-01T01:04:06Z",
+    "rule": "Only public sources visibly published or updated within seven days of run time qualify; crawl dates alone do not qualify.",
+    "start_utc": "2026-09-24T01:04:06Z"
+  },
+  "excluded_candidate_count": 11,
+  "excluded_candidates": [
+    {
+      "candidate": "OpenAI Agents SDK lifecycle hook docs",
+      "reason": "Useful official hook reference but no visible publication or update date on the page; crawl date alone is not accepted.",
+      "source_url": "https://openai.github.io/openai-agents-js/guides/agents/"
+    },
+    {
+      "candidate": "OpenAI Agents SDK hosted MCP defer_loading docs",
+      "reason": "Useful official progressive-loading reference but no visible publication or update date on the page; crawl date alone is not accepted.",
+      "source_url": "https://openai.github.io/openai-agents-python/mcp/"
+    },
+    {
+      "candidate": "MCP server tool design progressive discovery article",
+      "reason": "Search snippet indicated older publication and the opened page did not expose an in-window visible update date.",
+      "source_url": "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/"
+    },
+    {
+      "candidate": "Atomic coding-agent audit trail docs",
+      "reason": "Relevant lifecycle-hook provenance source, but opened page did not expose a visible in-window publication or update date.",
+      "source_url": "https://docs.atomic.dev/agents/overview"
+    },
+    {
+      "candidate": "SAFER hook coverage matrix",
+      "reason": "Relevant lifecycle coverage details, but GitHub crawl/update signal was not a visible source publication date for the documented claim.",
+      "source_url": "https://github.com/hashtagemy/safer"
+    },
+    {
+      "candidate": "AccessAllGPT MCP validation and task probes",
+      "reason": "Relevant MCP findings but visible publication dates were August 30 to September 2, 2026, outside the seven-day cutoff.",
+      "source_url": "https://www.accessallgpt.com/agents"
+    },
+    {
+      "candidate": "Zero-Trust Authorization and Discovery for Enterprise MCP",
+      "reason": "Visible arXiv date September 18, 2026 is outside the seven-day cutoff.",
+      "source_url": "https://arxiv.org/abs/2609.22573"
+    },
+    {
+      "candidate": "MCP roadmap with agent authorization and progressive discovery",
+      "reason": "Visible publication date September 22, 2026 is outside the seven-day cutoff.",
+      "source_url": "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work"
+    },
+    {
+      "candidate": "AI agent environment setup readiness",
+      "reason": "Visible publication date September 13, 2026 is outside the seven-day cutoff.",
+      "source_url": "https://automater.ai/intel/agent-env-setup-readiness/"
+    },
+    {
+      "candidate": "Self-service analytics governance explainer",
+      "reason": "Visible last-updated date September 8, 2026 is outside the seven-day cutoff.",
+      "source_url": "https://cube.dev/blog/what-is-self-service-analytics"
+    },
+    {
+      "candidate": "Agentic coding best practices September 2026 guide",
+      "reason": "Visible publication date September 15, 2026 is outside the seven-day cutoff; crawl freshness ignored.",
+      "source_url": "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md"
+    }
+  ],
+  "federation_routing": {
+    "rule": "Broad ecosystem entities remain upstream-owned; this artifact keeps only downstream local-practice implications.",
+    "upstream_owned_entities": [
+      "AGENTS.md",
+      "Cascade",
+      "Claude Code",
+      "Codex",
+      "Codex CLI",
+      "Cursor",
+      "CyberSecEval 2",
+      "GPT-5 Mini-R",
+      "Gemini Antigravity CLI",
+      "Gemini CLI",
+      "Hugging Face",
+      "IH-Challenge",
+      "MCP servers",
+      "METR",
+      "Model Context Protocol",
+      "Muse Code",
+      "Official MCP Registry",
+      "OpenAI",
+      "OpenAI Model Spec",
+      "RunStory",
+      "SpecStory",
+      "VS Code"
+    ]
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch artifact directly; use the normal raw ingest workflow if these findings are accepted.",
+    "Leave existing raw/2026-10-01 topic-news collector artifact untouched."
+  ],
+  "leaf_results": [
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+      "qualifying_update_ids": [
+        "front-load-four-phase-codex-cli-2026-09-28"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+      "qualifying_update_ids": [
+        "selvedge-native-agent-lifecycle-hooks-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+      "qualifying_update_ids": [
+        "front-load-four-phase-codex-cli-2026-09-28",
+        "specstory-done-claims-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+      "qualifying_update_ids": [
+        "front-load-four-phase-codex-cli-2026-09-28"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/application-patterns/agent-environment-readiness.md",
+      "qualifying_update_ids": [
+        "front-load-four-phase-codex-cli-2026-09-28",
+        "selvedge-native-agent-lifecycle-hooks-2026-09-24"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+      "qualifying_update_ids": [
+        "selvedge-native-agent-lifecycle-hooks-2026-09-24",
+        "paperdive-trace-tampering-2026-09-25"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No date-qualified local-practice update found in this run.",
+      "last_result": "no_qualified_updates_found",
+      "leaf_id": "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+      "qualifying_update_ids": [
+        "instruction-stacking-collapse-updated-2026-09-29",
+        "ai-in-context-instruction-hierarchy-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No date-qualified local-practice update found in this run.",
+      "last_result": "no_qualified_updates_found",
+      "leaf_id": "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+      "qualifying_update_ids": [
+        "instruction-stacking-collapse-updated-2026-09-29",
+        "ai-in-context-instruction-hierarchy-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+      "qualifying_update_ids": [
+        "instruction-stacking-collapse-updated-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+      "qualifying_update_ids": [
+        "specstory-done-claims-2026-09-29",
+        "paperdive-trace-tampering-2026-09-25",
+        "mcp-registry-recently-updated-2026-09-30"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+      "qualifying_update_ids": [
+        "mcp-registry-recently-updated-2026-09-30"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "Review qualifying raw items for possible downstream-practice ingest.",
+      "last_result": "qualified_updates_found",
+      "leaf_id": "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+      "qualifying_update_ids": [
+        "specstory-done-claims-2026-09-29",
+        "paperdive-trace-tampering-2026-09-25",
+        "ai-in-context-instruction-hierarchy-2026-09-29"
+      ],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    },
+    {
+      "follow_up_note": "No date-qualified local-practice update found in this run.",
+      "last_result": "no_qualified_updates_found",
+      "leaf_id": "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+      "qualifying_update_ids": [],
+      "source_urls_checked": [
+        "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+        "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+        "https://arxiv.org/abs/2609.22573",
+        "https://automater.ai/intel/agent-env-setup-readiness/",
+        "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+        "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+        "https://cube.dev/blog/what-is-self-service-analytics",
+        "https://docs.atomic.dev/agents/overview",
+        "https://github.com/hashtagemy/safer",
+        "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+        "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+        "https://openai.github.io/openai-agents-js/guides/agents/",
+        "https://openai.github.io/openai-agents-python/mcp/",
+        "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+        "https://registry.modelcontextprotocol.io/",
+        "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+        "https://specstory.com/learning/verification/coding-agent-done-claims",
+        "https://www.accessallgpt.com/agents"
+      ]
+    }
+  ],
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "factual_summary": "The article maps a four-phase coding-agent workflow to Codex CLI: read-only research, iterative planning, implementation after artifacts solidify, and verification gates. It treats the durable research document and planning artifact as more reliable handoff surfaces than raw chat history.",
+      "follow_up_note": "Ingest only the local workflow implication; keep Codex CLI product background upstream.",
+      "id": "front-load-four-phase-codex-cli-2026-09-28",
+      "named_entities": [
+        "Codex CLI",
+        "Infobip AI team",
+        "arXiv:2608.30701"
+      ],
+      "qualifies": true,
+      "source_url": "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+      "upstream_owned_entities": [
+        "Codex CLI"
+      ],
+      "visible_date": "Updated September 28, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md": "Supports pre-write admission by separating read-only research and planning before file mutation.",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md": "Connects terminal-agent use to explicit shell approval, sandboxing, and exported evidence artifacts.",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": "Reinforces choosing workflow mode by artifact maturity: explore, plan, then implement.",
+        "docs/wiki/application-patterns/agent-environment-readiness.md": "Treats writable roots, network access, and approval policy as setup inputs before prompting."
+      }
+    },
+    {
+      "factual_summary": "The article defines a coding agent done message as a claim rather than evidence, explains that agents can cite stale or nonexistent runs, and recommends checking session history and fresh final-code verification before accepting completion.",
+      "follow_up_note": "Potential ingest should anchor on acceptance gates and evidence retrieval, not product description.",
+      "id": "specstory-done-claims-2026-09-29",
+      "named_entities": [
+        "SpecStory",
+        "METR",
+        "RunStory"
+      ],
+      "qualifies": true,
+      "source_url": "https://specstory.com/learning/verification/coding-agent-done-claims",
+      "upstream_owned_entities": [
+        "SpecStory",
+        "METR",
+        "RunStory"
+      ],
+      "visible_date": "Last updated September 29, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md": "Reinforces terminal transcript review and return-code evidence for command-driven work.",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": "Frames session history and command outputs as evidence to retrieve when checking agent claims.",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Adds current public support for treating final agent claims as acceptance-gate inputs, not proof."
+      }
+    },
+    {
+      "factual_summary": "The guide gives a disposable-project verification path for native agent hooks and distinguishes configured hooks from protocol-tested behavior and observed client behavior.",
+      "follow_up_note": "Keep vendor hook catalog details upstream; local leaf should capture verification distinctions and fixture practice.",
+      "id": "selvedge-native-agent-lifecycle-hooks-2026-09-24",
+      "named_entities": [
+        "Selvedge",
+        "Codex hooks",
+        "Cursor hooks",
+        "Gemini CLI",
+        "VS Code Local",
+        "Cascade"
+      ],
+      "qualifies": true,
+      "source_url": "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+      "upstream_owned_entities": [
+        "Codex",
+        "Cursor",
+        "Gemini CLI",
+        "VS Code",
+        "Cascade"
+      ],
+      "visible_date": "Checked September 24, 2026; Last updated Sep 24, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": "Highlights that multi-root or cross-client payloads need unambiguous current-directory context before policy decisions are applied.",
+        "docs/wiki/application-patterns/agent-environment-readiness.md": "Uses disposable fixtures and client-specific setup checks before relying on hook gates.",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md": "Provides current hook-validation practice for startup, pre-tool, ordinary edit, read command, and compaction events."
+      }
+    },
+    {
+      "factual_summary": "The episode summarizes a trace-tampering paper and stresses that local coding-agent logs are often ordinary JSONL files inside the agent-reachable filesystem, so trace evidence can be mutable unless captured outside the agent boundary.",
+      "follow_up_note": "Treat as evaluation-evidence provenance; avoid restating broad model-scheming background locally.",
+      "id": "paperdive-trace-tampering-2026-09-25",
+      "named_entities": [
+        "PaperDive",
+        "LLM Agents Can Easily Tamper With Their Own Traces",
+        "Claude Code",
+        "Codex",
+        "Gemini Antigravity CLI",
+        "Muse Code"
+      ],
+      "qualifies": true,
+      "source_url": "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "Gemini Antigravity CLI",
+        "Muse Code"
+      ],
+      "visible_date": "Episode 278 - Sep 25, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md": "Supports hooks or external recorders that write evidence outside the agent-editable workspace.",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": "Adds a caution that retrieved traces need provenance and integrity context before being trusted.",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Strengthens the acceptance-gate rule that evidence location and tamper resistance matter, not only evidence presence."
+      }
+    },
+    {
+      "factual_summary": "The article argues that stacked system, global, repository, directory, user, plugin, and MCP instructions can conflict and that adding rules linearly does not guarantee obedience.",
+      "follow_up_note": "If ingested, state the local prompt-architecture implication without duplicating Codex CLI encyclopedia coverage.",
+      "id": "instruction-stacking-collapse-updated-2026-09-29",
+      "named_entities": [
+        "AGENTS.md",
+        "Codex CLI",
+        "Instruction Stacking Collapse",
+        "Anand and Chattaraj",
+        "arXiv:2608.02639"
+      ],
+      "qualifies": true,
+      "source_url": "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "AGENTS.md"
+      ],
+      "visible_date": "Updated September 29, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md": "Supports separating compact high-priority rules from lower-priority knowledge and tool descriptions.",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": "Reinforces explicit artifact boundaries between instructions, skills, prompts, plugins, and MCP tool descriptions.",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": "Adds a current caution that the full request package includes multiple instruction-bearing layers that should be bounded before execution."
+      }
+    },
+    {
+      "factual_summary": "The article reports OpenAI instruction-hierarchy training results and frames system, developer, user, and tool outputs as trust-ranked instruction sources, with programmatically graded tasks used to avoid relying only on LLM judges.",
+      "follow_up_note": "Broad model and dataset facts are upstream-owned; local relevance is hierarchy-aware artifact handling.",
+      "id": "ai-in-context-instruction-hierarchy-2026-09-29",
+      "named_entities": [
+        "OpenAI",
+        "GPT-5 Mini-R",
+        "IH-Challenge",
+        "Hugging Face",
+        "CyberSecEval 2",
+        "OpenAI Model Spec"
+      ],
+      "qualifies": true,
+      "source_url": "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "GPT-5 Mini-R",
+        "IH-Challenge",
+        "Hugging Face",
+        "CyberSecEval 2",
+        "OpenAI Model Spec"
+      ],
+      "visible_date": "By Marcus Bennett September 24, 2026; Updated September 29, 2026",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md": "Reinforces trust-tiered context layering as a safety and reliability control.",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": "Supports local practice of treating tool outputs and loaded artifacts as lower-trust data unless explicitly elevated.",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": "Shows why objective grading scripts are preferred where possible for instruction-following gates."
+      }
+    },
+    {
+      "factual_summary": "The official MCP registry exposes a recently-updated list with multiple agent-facing servers updated on 2026-09-30, including discovery, repository trust, and reproducible-test/verification tools.",
+      "follow_up_note": "Route server encyclopedia details upstream; local note should focus on registry churn and discovery-control practice.",
+      "id": "mcp-registry-recently-updated-2026-09-30",
+      "named_entities": [
+        "Official MCP Registry",
+        "ai.mekler/agent-discovery",
+        "com.repogates/repogates",
+        "com.agenshive/agenshive"
+      ],
+      "qualifies": true,
+      "source_url": "https://registry.modelcontextprotocol.io/",
+      "upstream_owned_entities": [
+        "Model Context Protocol",
+        "Official MCP Registry",
+        "MCP servers"
+      ],
+      "visible_date": "Updated 9/30/2026 on registry entries",
+      "why_it_matters_by_leaf": {
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": "Repository-trust and reproducible-test servers illustrate evidence surfaces that need source and authorization checks before use.",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": "Registry churn reinforces local guidance to search and inspect tools progressively instead of loading broad catalogs into active context."
+      }
+    }
+  ],
+  "run_timestamp_local": "2026-09-30T210406-0400",
+  "run_timestamp_utc": "2026-10-01T01:04:06Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+  ],
+  "source_urls_checked": [
+    "https://agentry.news/mcp-maintainers-chart-protocols-next-phase-with-agent-auth-work",
+    "https://aiincontext.com/articles/openai-trains-gpt-5-mini-r-to-obey-the-instruction-hierarchy-d74c912e",
+    "https://arxiv.org/abs/2609.22573",
+    "https://automater.ai/intel/agent-env-setup-readiness/",
+    "https://codex.danielvaughan.com/2026/08/08/instruction-stacking-collapse-agents-md-rule-conflicts-codex-cli-prompt-compilation-instruction-budget/",
+    "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+    "https://cube.dev/blog/what-is-self-service-analytics",
+    "https://docs.atomic.dev/agents/overview",
+    "https://github.com/hashtagemy/safer",
+    "https://github.com/pipelign/agentic-ai-resources/blob/main/use-cases/software-development/agentic-coding-best-practices-2026-09.md",
+    "https://mechcrate.dev/docs/corpus/api-design/mcp-server-tool-design/",
+    "https://openai.github.io/openai-agents-js/guides/agents/",
+    "https://openai.github.io/openai-agents-python/mcp/",
+    "https://paperdive.ai/episodes/278-llm-agents-can-easily-tamper-with-their-own-traces.html?t=668",
+    "https://registry.modelcontextprotocol.io/",
+    "https://selvedge.sh/guides/agent-lifecycle-hooks/",
+    "https://specstory.com/learning/verification/coding-agent-done-claims",
+    "https://www.accessallgpt.com/agents"
+  ]
+}
