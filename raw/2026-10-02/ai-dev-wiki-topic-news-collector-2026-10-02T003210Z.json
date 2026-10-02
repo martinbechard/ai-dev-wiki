@@ -1,0 +1,431 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "agent_identity": "Northstar",
+  "run_timestamp_utc": "2026-10-02T00:32:10Z",
+  "last_run_timestamp_utc": "2026-10-01T00:31:57.631Z",
+  "cutoff_window": {
+    "basis": "sources published or visibly updated within the last 2 days relative to run_timestamp_utc",
+    "start_utc": "2026-09-30T00:32:10Z",
+    "end_utc": "2026-10-02T00:32:10Z"
+  },
+  "searched_topic_roots": [
+    {
+      "topic": "Context architecture",
+      "root": "docs/wiki/context-architecture"
+    },
+    {
+      "topic": "Source workflows",
+      "root": "docs/wiki/source-workflows"
+    },
+    {
+      "topic": "Prompt and instructions",
+      "root": "docs/wiki/prompt-and-instructions"
+    },
+    {
+      "topic": "Agent workflows",
+      "root": "docs/wiki/agent-workflows"
+    },
+    {
+      "topic": "Coding practices",
+      "root": "docs/wiki/coding-practices"
+    },
+    {
+      "topic": "Retrieval and tools",
+      "root": "docs/wiki/retrieval-and-tools"
+    },
+    {
+      "topic": "Verification and evals",
+      "root": "docs/wiki/verification-and-evals"
+    },
+    {
+      "topic": "Application patterns",
+      "root": "docs/wiki/application-patterns"
+    },
+    {
+      "topic": "Governance and risk",
+      "root": "docs/wiki/governance-and-risk"
+    },
+    {
+      "topic": "Adoption and operating model",
+      "root": "docs/wiki/adoption-and-operating-model"
+    }
+  ],
+  "federation_boundary": {
+    "downstream_owner": "This repository owns AI-assisted development practice, workflow, guidance, verification, governance, and adoption lenses.",
+    "upstream_owner": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "local_collection_rule": "Broad product and ecosystem facts are marked upstream-owned; this artifact keeps only downstream practice implications and routing notes."
+  },
+  "searches_performed": [
+    {
+      "query": "AI code review practice October 1 2026 coding agent prompt instructions audit logs approvals",
+      "notes": "Used to discover dated GitHub changelog entries, current community discussions, and stale or ambiguous candidates."
+    },
+    {
+      "query": "context engineering coding agents October 1 2026 durable instructions source citation workflow",
+      "notes": "Used to check for recent context-engineering and instruction practice updates."
+    },
+    {
+      "query": "MCP governed practice permissions approvals audit logs October 1 2026",
+      "notes": "Used to check for governed tool-call and MCP approval practice updates."
+    },
+    {
+      "query": "software engineering evals AI coding agents October 1 2026",
+      "notes": "Used to check for recent eval, verification, and agent-harness practice updates."
+    },
+    {
+      "query": "site:github.blog/changelog/2026-10-01 copilot agent",
+      "notes": "Used to find official dated GitHub Copilot and workflow updates."
+    },
+    {
+      "query": "Actions retention now covers checks, runs, and statuses GitHub Changelog October 1 2026",
+      "notes": "Used to verify the dated retention update."
+    },
+    {
+      "query": "Scheduled code scanning skips inactive repositories GitHub Changelog October 1 2026",
+      "notes": "Used to verify the dated scanning schedule update."
+    },
+    {
+      "query": "Code coverage uploads no longer fail CI for new branches GitHub Changelog October 1 2026",
+      "notes": "Used to verify the dated coverage workflow update."
+    },
+    {
+      "query": "GitHub async merge API generally available October 1 2026",
+      "notes": "Used to verify the dated async merge automation update."
+    }
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Dynamic workflows in Copilot CLI and the Copilot app",
+      "source_url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "GitHub made dynamic workflows available in Copilot CLI, the Copilot app, and the Copilot SDK so teams can define reusable orchestration in code with staged steps, parallel work, structured handoffs, verification between agents, optional user input, and pause/resume checkpoints.",
+      "why_it_matters_for_ai_assisted_development_practice": "This reinforces a local practice boundary: durable agent workflows should move repeatable stages, verification gates, and orchestration policy into code rather than relying only on one-off prompts.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "GitHub Copilot SDK",
+        "dynamic workflows",
+        "subagents",
+        "structured results"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "GitHub Copilot SDK"
+      ],
+      "local_practice_implication": "Consider whether the agent-workflows pages should describe code-defined workflow stages, checkpointing, subagent cross-checks, and structured handoff artifacts as a reusable pattern.",
+      "routing_note": "Do not create local GitHub Copilot product coverage; route product/entity background upstream and keep the downstream orchestration practice lens here."
+    },
+    {
+      "title": "GitHub Copilot can now interact with desktop apps with computer use",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub announced public preview of computer use in Copilot CLI and the Copilot app on macOS and Windows, including app-control approval prompts, review/reset of always-allowed apps, macOS Accessibility and Screen Recording permission guidance, and organization-managed disablement.",
+      "why_it_matters_for_ai_assisted_development_practice": "Desktop-control agents expand the tool surface beyond APIs and MCP, making approval prompts, OS permission setup, organization controls, and user-visible constraints part of governed tool-call practice.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "computer use",
+        "macOS",
+        "Windows",
+        "Accessibility",
+        "Screen Recording"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "computer use"
+      ],
+      "local_practice_implication": "The governance lens should track computer-use approval policy, least-privilege desktop permissions, and reset/review procedures separately from ordinary code-editing agent tools.",
+      "routing_note": "Keep product details upstream-owned; retain the local implication for permission and approval workflows."
+    },
+    {
+      "title": "GitHub Copilot in VS Code September 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "The VS Code Copilot rollup describes agent-session automation, agent merge for review feedback and failed checks, pull request creation from sessions, related chat/session navigation, done-state cleanup, attention badges, Dev Container sessions, workspace attachment for quick chats, Codex conversation handoff into VS Code, noninterrupting chat messages, and GitHub issue or pull request context attachment.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update shows agent work becoming a session lifecycle with context attachment, workspace binding, pull-request handoff, check repair, and merge readiness, which are local workflow and operating-model concerns.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "VS Code",
+        "Codex",
+        "ChatGPT app",
+        "Dev Containers",
+        "agent merge",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Codex",
+        "ChatGPT app",
+        "Dev Containers"
+      ],
+      "local_practice_implication": "A future ingest should decide whether session lifecycle guidance needs leaves for workspace binding, PR handoff, check-repair loops, and agent-session cleanup.",
+      "routing_note": "Product rollout belongs upstream; local pages should keep the workflow pattern and adoption implications only."
+    },
+    {
+      "title": "New dashboard experience now the default",
+      "source_url": "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "GitHub made the redesigned dashboard the default, grouping active agent sessions, issues, and pull requests, separating feed updates, and allowing work starts such as assigning an issue to Copilot coding agent or opening a pull request in Copilot Chat.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice signal that agent work queues, issue assignment, and pull-request starts are moving into ordinary developer dashboards and need operating-model expectations for triage, ownership, and attention management.",
+      "named_entities": [
+        "GitHub",
+        "GitHub dashboard",
+        "GitHub Copilot",
+        "Copilot coding agent",
+        "Copilot Chat",
+        "issues",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot coding agent",
+        "Copilot Chat"
+      ],
+      "local_practice_implication": "The adoption model may need guidance for dashboard-driven agent sessions, active-work filters, and team conventions for assigning issues to coding agents.",
+      "routing_note": "Keep only workflow and adoption implications downstream."
+    },
+    {
+      "title": "Actions retention now covers checks, runs, and statuses",
+      "source_url": "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "Checks, workflow runs, and statuses are now governed by the same GitHub Actions retention setting as artifacts and logs, and records are automatically cleaned up after the configured retention period.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent verification and audit trails often depend on check histories, workflow logs, and status evidence; retention policy now directly affects how long review and regression-repair evidence remains available.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "checks",
+        "workflow runs",
+        "statuses",
+        "artifacts",
+        "logs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Verification guidance should treat CI/check retention as part of evidence planning, especially for agent-generated changes that may need later audit or postmortem review.",
+      "routing_note": "General GitHub Actions product behavior routes upstream; evidence-retention implications are local."
+    },
+    {
+      "title": "Scheduled code scanning skips inactive repositories",
+      "source_url": "https://github.blog/changelog/2026-10-01-scheduled-code-scanning-skips-inactive-repositories/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "Weekly scheduled scans for code scanning default setup and GitHub Code Quality now begin only after a push or pull request triggers analysis, rather than treating validation scans or detected-language changes as recent activity.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-assisted security and code-quality automation should not assume dormant repositories receive recurring analysis immediately after bulk enablement; meaningful scans are now tied to code-change activity.",
+      "named_entities": [
+        "GitHub",
+        "code scanning",
+        "GitHub Code Quality",
+        "default setup",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Quality"
+      ],
+      "local_practice_implication": "Repository-wide agent rollout checklists should distinguish enablement validation from recurring scan coverage and note that push or PR activity starts weekly scanning.",
+      "routing_note": "Security-product details route upstream or security wiki as appropriate; local practice keeps scan-signal timing for agent workflows."
+    },
+    {
+      "title": "Code coverage uploads no longer fail CI for new branches",
+      "source_url": "https://github.blog/changelog/2026-10-01-code-coverage-uploads-no-longer-fail-ci-for-new-branches/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "The GitHub Code Quality upload-code-coverage action now skips coverage uploads, with an Actions notice and step summary, when a push targets a branch that has no open pull request, instead of failing CI.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent branches often get pushed before a pull request exists; treating expected coverage-upload skips differently from failures reduces false-negative CI feedback loops and preserves meaningful regression-repair signals.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "upload-code-coverage",
+        "GitHub Actions",
+        "CI",
+        "pull requests"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Verification pages may need to distinguish skipped coverage uploads on pre-PR branches from failed coverage processing, and recommend pull_request triggers when immediate PR-open coverage is required.",
+      "routing_note": "Keep CI interpretation guidance locally; route product mechanics upstream."
+    },
+    {
+      "title": "GitHub async merge API generally available",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-async-merge-api-generally-available/",
+      "source_type": "official changelog",
+      "visible_date": "October 1, 2026",
+      "date_basis": "source page publication date",
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub made the async merge API generally available for individual or stacked pull requests, merge queues, and direct merges, with a submit-and-poll flow using a returned request ID.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent merge and automated PR landing workflows need asynchronous state handling, polling, timeout policy, and explicit rule-bypass governance instead of assuming a merge result in the initial API response.",
+      "named_entities": [
+        "GitHub",
+        "async merge API",
+        "pull requests",
+        "stacked pull requests",
+        "merge queue",
+        "REST",
+        "GraphQL"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "async merge API"
+      ],
+      "local_practice_implication": "Source-workflow guidance should treat programmatic merges as stateful operations with request IDs, polling, failure handling, and permission review for rule bypass.",
+      "routing_note": "API product details route upstream; local material should focus on agent workflow reliability and governance."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Model Context Protocol guide in OpenAI Agents SDK",
+      "source_url": "https://openai.github.io/openai-agents-js/guides/mcp/",
+      "visible_date": "Crawled today; no visible publication or update date on the opened page",
+      "reason": "Excluded because the page contains relevant MCP approval and allowlist guidance but lacked a direct visible publication or update date inside the accepted window."
+    },
+    {
+      "title": "Evaluate agent workflows in OpenAI API docs",
+      "source_url": "https://developers.openai.com/api/docs/guides/agent-evals",
+      "visible_date": "Crawled today; no visible publication or update date on the opened page",
+      "reason": "Excluded because the page contains relevant trace-grading and eval practice guidance but lacked a direct visible publication or update date inside the accepted window."
+    },
+    {
+      "title": "Working with evals in OpenAI API docs",
+      "source_url": "https://developers.openai.com/api/docs/guides/evals",
+      "visible_date": "No visible publication/update date; page includes future deprecation dates of October 31, 2026 and November 30, 2026",
+      "reason": "Excluded because future deprecation milestones are not the page publication/update date, and no qualifying source date was visible."
+    },
+    {
+      "title": "SREday San Francisco Q4 page",
+      "source_url": "https://sreday.com/2026-san-francisco-q4/",
+      "visible_date": "Event date October 2, 2026",
+      "reason": "Excluded because the visible conference/event date is not a publication or update date for the source page, even though the talks contain relevant verification-after-deploy and gated-playbook practice signals."
+    },
+    {
+      "title": "Reddit r/mcp discussion on policy enforcement before MCP tool calls",
+      "source_url": "https://www.reddit.com/r/mcp/comments/1wv9sd6/i_put_policy_enforcement_in_front_of_mcp_tool/",
+      "visible_date": "Relative-only timestamp on opened page, such as 33m ago; JSON endpoint did not return parseable JSON in this environment",
+      "reason": "Excluded because an exact public timestamp could not be validated; the content is relevant but relative-only timing is ambiguous for the strict window."
+    },
+    {
+      "title": "Reddit r/TechLeader discussion on approving agent PRs without reading",
+      "source_url": "https://www.reddit.com/r/TechLeader/comments/1wu7u7q/our_new_hires_approve_agent_prs_without_reading/",
+      "visible_date": "Relative-only timestamp on opened page, such as 17h ago; JSON endpoint did not return parseable JSON in this environment",
+      "reason": "Excluded because an exact public timestamp could not be validated; the content is relevant to AI code review practice but strict date evidence was insufficient."
+    },
+    {
+      "title": "Reddit r/grc discussion on auditing actions performed by AI agents",
+      "source_url": "https://www.reddit.com/r/grc/comments/1wt40x8/how_are_you_auditing_actions_performed_by_ai/",
+      "visible_date": "Relative-only timestamp on opened page, such as 1h ago; JSON endpoint did not return parseable JSON in this environment",
+      "reason": "Excluded because an exact public timestamp could not be validated; the content is relevant to delegated-agent audit evidence but strict date evidence was insufficient."
+    },
+    {
+      "title": "Actions Runner Controller release 0.15.0",
+      "source_url": "https://github.blog/changelog/2026-09-30-actions-runner-controller-release-0-15-0/",
+      "visible_date": "September 30, 2026",
+      "reason": "Excluded as boundary-risk date-only evidence. The two-day window starts at 2026-09-30T00:32:10Z, but the page exposes only a date without a time."
+    },
+    {
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "source_url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+      "visible_date": "September 18, 2026",
+      "reason": "Excluded as stale relative to the cutoff window, despite strong local-practice relevance for code review ownership, RAG, skills, and MCP."
+    },
+    {
+      "title": "Enterprise managed permissions for GitHub Copilot agent operations",
+      "source_url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "visible_date": "September 9, 2026",
+      "reason": "Excluded as stale relative to the cutoff window."
+    },
+    {
+      "title": "Advancing the science of AI agent evaluation and governance",
+      "source_url": "https://www.microsoft.com/en-us/research/event/advancing-the-science-of-ai-agent-evaluation/",
+      "visible_date": "October 22-23, 2026 event date",
+      "reason": "Excluded because the visible event date is future-dated and not evidence of publication or update within the current window."
+    }
+  ],
+  "counts": {
+    "qualifying_update_count": 8,
+    "excluded_candidate_count": 11
+  },
+  "follow_up_notes": [
+    "Ingest should preserve the one-way federation boundary by keeping GitHub/GitHub Copilot/GitHub Actions product facts upstream-owned and synthesizing only practice implications locally.",
+    "Potential local synthesis themes: code-defined agent workflows, desktop-control approval policy, agent-session lifecycle, CI evidence retention, scan-signal timing, pre-PR coverage skips, and async merge polling.",
+    "No docs/wiki pages were updated by this collector; no raw files were moved to raw/processed.",
+    "Community discussions on MCP authorization, delegated-agent auditing, and agent-PR review were excluded only because exact timestamps could not be validated from the accessible public pages."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for raw/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json"
+  },
+  "blockers": []
+}
