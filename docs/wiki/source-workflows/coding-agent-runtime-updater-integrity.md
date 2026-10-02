@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds managed-provider and network-switch evidence from upstream-owned coding-agent release notes. Runtime updater checks should treat provider allowlists, web-fetch-disable switches, artifact allow rules, login-refresh locking, and secret-redaction fixes as update-risk inputs because they can silently change which services an agent may call and what credentials might appear in logs.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds plugin-checkout integrity evidence. Runtime updaters and plugin installers should not treat a requested ref, tag, or recorded SHA as final proof; after checkout they should compare the resolved HEAD commit object to the intended pinned SHA and fail closed when they differ.
 
 Coding agent runtime updater integrity keeps automated runtime refreshes reproducible, verifiable, and bounded by human control for security-sensitive patches. The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) records an updater log that regenerates version-coupled artifacts, verifies a signed manifest, fails closed when expected markers are missing, and leaves a security-relevant byte-patch target manual. Broad runtime and package-manager background stays upstream; locally, this page owns the updater-integrity workflow.
@@ -29,6 +31,7 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 - Assert exact markers before patching generated files or wrappers, and fail closed when markers are absent.
 - Keep security-sensitive binary or byte-patch targets under explicit human control unless the patch process has equivalent provenance and rollback evidence.
 - Record which runtime artifacts changed, which checks passed, and which manual patch targets remain outside automation.
+- Track provider allowlists, network-fetch switches, artifact allow rules, login-refresh locks, and secret-redaction changes as runtime integrity inputs before accepting a coding-agent update.
 - Treat public skill files, MCP manifests, setup scripts, and wrapper prompts as runtime inputs that need provenance, command-behavior, and tool-scope review before automated refresh.
 - Quarantine generated runtime artifacts when marker checks, manifest signatures, repository provenance, or allowed tool scopes do not match the expected update package.
 - Treat deprecated command entry points and replacement app-server paths as versioned runtime dependencies that need explicit migration evidence before setup guidance changes.
@@ -36,6 +39,7 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 
 ## Authoritative Sources
 
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
@@ -71,6 +75,7 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with provider allowlist, web-fetch disablement, artifact allow-rule, login-refresh-lock, and secret-redaction update evidence.
 - Maintained on 2026-09-25 with post-checkout pinned-SHA verification evidence.
 
 - Created on 2026-07-27 from July 27 raw-source evidence about signed-manifest runtime updates, exact-marker checks, fail-closed behavior, and manual security-sensitive patches.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds practitioner evidence for eval-failure follow-up. Diagnosis should read traces, compare runs, replay failures, inspect tool arguments and state, add targeted logs, and treat comparison runs as evidence rather than ground truth before changing prompts, tools, models, or performance gates.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds RAG absence and production-observability evidence. Agent eval diagnosis should test whether retrieval systems abstain when evidence is absent, not only whether they answer when evidence is present, and should join completed-task evaluation with traceable tool authorization, reliability, cost, latency, and quality signals.
 
 Agent eval failure diagnosis separates reasoning, action, execution, and final-state failures before changing prompts, tools, or models. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) records practice guidance for agent evals that use isolated harnesses, code-based checks where possible, repeated trials, transcript review, and pull-request gates for prompt or agent changes. Broad article or vendor background stays upstream-owned; locally, the durable rule is that a single aggregate pass/fail score is too coarse for recurring software agents.
@@ -38,9 +40,12 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Gate recurring prompt, policy, tool, or agent changes through pull-request checks or equivalent reviewable change records.
 - Convert incident patterns from [agent incident reporting](../governance-and-risk/agent-incident-reporting.md) into targeted eval cases when the workflow is expected to recur.
 - Separate eval leakage, self-improvement overfitting, unstable sparse updates, excessive context growth, tool-definition cost, subagent fan-out, and runaway call loops before treating a failed long-horizon run as only a reasoning failure.
+- After an eval failure, read traces, compare similar runs, replay the failing case, inspect tool arguments and state, and add targeted logs before changing the agent.
+- Treat comparison runs as diagnostic evidence, not ground truth, when deciding whether a prompt, tool, model route, or performance gate caused the failure.
 
 ## Authoritative Sources
 
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
@@ -73,6 +78,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with trace reading, run comparison, replay, tool-argument inspection, targeted logging, and comparison-run caveats.
 - Maintained on 2026-09-25 with knowledge-gap canary, abstention, observability, and completed-task evaluation evidence.
 - Maintained on 2026-09-25 with self-improvement overfitting, eval leakage, stability-threshold, context-cost, subagent fan-out, and runaway-loop diagnosis evidence.
 

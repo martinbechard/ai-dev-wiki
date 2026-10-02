@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The October 2 raw sources add dashboard and survey signals for operating ownership. The [topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) records agent sessions, issues, and pull requests moving into developer dashboards, while the [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) records a source-attributed survey where audit-trail availability lagged reported policy violations. Locally, rosters should connect active agent queues, issue assignment, owner accountability, audit-trail readiness, and incident response rather than treating dashboard visibility as ownership.
+
 The September 25 raw sources add ownership-roster fields for production agents and planning-system sessions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces accountable identity, runtime controls, budget limits, escalation paths, containment, and workstation controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds lead-team ownership, durable work IDs, setup-time secrets, model availability controls, OAuth revocation audit entries, and comment-follow-up routing as roster fields.
 
 Every agentic workflow that reads important context, produces work people act on, touches shared workflows, or can affect external systems needs a named owner. The [agent ownership source](../../../raw/processed/You Can't Run AI Agents Without This.md) frames ownership as the 2026 maintenance skill: the team should know the agent job, context diet, boundaries, review cadence, and known failure modes before relying on the work.
@@ -52,6 +54,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 - Include autonomy tier, budget owner, escalation contact, containment path, workstation-control owner, and runtime-evidence location in production-agent rosters.
 - Track lead team, durable work IDs, setup-secret exposure, allowed model routes, revocation audit evidence, and comment-follow-up route for planning-system-launched coding sessions.
+- Connect dashboard-visible agent sessions, issue assignments, pull-request starts, audit-trail readiness, and incident-response ownership in the roster before treating agent queues as governed work.
 
 - Name one human owner for every recurring agentic job that affects team work.
 - Record the agent job in one sentence so vague assistants do not become unmanaged workflows.
@@ -80,6 +83,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Authoritative Sources
 
+- [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
@@ -126,6 +131,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with dashboard queue, issue-assignment, audit-trail readiness, and incident-ownership roster evidence.
 - Maintained on 2026-09-25 with ownership, durable-ID, budget, escalation, setup-secret, model-availability, revocation-audit, and comment-routing evidence.
 
 - Maintained on 2026-09-18 with scoped-permission, short-lived-credential, high-risk approval, monitoring, audit-cadence, and kill-switch owner-card fields.

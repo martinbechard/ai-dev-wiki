@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds desktop app control as an adjacent runtime boundary to browser automation. When an agent can operate local applications, the same local pattern applies: approval prompts, always-allowed app review, OS permission setup, organization disablement, and reset procedures are part of the runtime contract, not product-specific background.
+
 Browser-agent runtimes let agents operate the web through real browsers, search, fetch, identity, and proxy surfaces. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) frames browser infrastructure as a production surface for search, fetch, authenticated workflows, proxies, session recording, model routing, and headless browser fleets. Broad product and framework background belongs upstream; this page owns the local practice rule that browser access is an agent execution substrate with privileged side effects.
 
 Browser-agent work combines retrieval and action. Search and fetch APIs can provide token-efficient context, while browser control can log in, navigate dynamic pages, submit forms, extract documents, or synchronize records. Local harnesses should classify those paths separately: retrieval-only browser context can be lower risk, but authenticated browser sessions, proxy-backed scraping, captcha handling, account administration, and cross-system data entry require explicit domain allowlists, identity controls, data retention review, and audit evidence.
@@ -41,6 +43,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Review natural-language browser actions and generated selectors as tool instructions whose meaning can drift when page structure changes.
 - Route broad Browserbase, Stagehand, Playwright, Puppeteer, Selenium, and browser-use background to the upstream AI wiki unless a source changes local runtime, governance, or verification practice.
 - Pair browser-agent identity with runtime containment: least privilege, behavioral supervision, egress policy, function-level capability grants, escalation paths, and kill switches.
+- Treat desktop app control as a runtime surface with explicit app-level approval state, OS permission evidence, organization policy, and reset or review procedures before recurring use.
 - Require browser-test proof to include screenshots, recordings, reproduction steps, extracted data, and failure reports attached to the review surface, not only an agent claim that the browser ran.
 - Reclassify approved browser extensions, plug-ins, connectors, and embedded assistants when they gain new identity, data-access, or action-taking behavior.
 - Distinguish separate agent-browser sessions from user-browser extension sessions before importing logins, cookies, bookmarks, passwords, or site-specific state.
@@ -52,6 +55,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Authoritative Sources
 
+- [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [agent harness components](agent-harness-components.md)
@@ -91,6 +95,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with desktop app-control approval, OS-permission, organization-policy, and reset-procedure boundaries.
 - Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
 - Maintained on 2026-09-25 with indirect browser-service, public scan-log, retrieval-to-action escalation, egress, and evidence-limitation guidance.
 - Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.

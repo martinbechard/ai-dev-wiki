@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds crash and kill recovery evidence from an upstream-owned coding-agent release index. Recovery checks should confirm whether parallel-tool-session turns survived the interruption, whether resume or continue restored the intended state, and whether diagnostic logs or MCP error surfaces were redacted enough to avoid credential leakage during recovery.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds managed-runtime pause, resume, fork, checkpoint, conversation-history, and working-state evidence. Session recovery should verify the runtime state that will be restored, the checkpoint or fork point used, the permission and credential envelope that survives resume, and the artifacts proving the resumed agent continued the intended task rather than merely restarting with a plausible summary.
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-tool session recovery evidence. A recovered session should prove not only that text context transferred, but also that referenced attachments, local files, generated artifacts, and provenance anchors are still present or explicitly missing before work continues.
@@ -60,9 +62,11 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Preserve MCP failure counts and latency diagnostics when tool health explains why a session needs recovery.
 - Preserve command history, patch history, verifier history, approval history, compression state, and uncertain queued submissions when reconnecting after runtime or service interruption.
 - Preserve coordinator state, shared goals, shared file artifacts, per-thread branches or repository copies, overlap detection, and merge-conflict review evidence before resuming or merging coordinated agent work.
+- After a crash, kill, or parallel-tool interruption, check turn preservation, resume target, crash markers, MCP error output, log redaction, and credential exposure before trusting the recovered session.
 
 ## Authoritative Sources
 
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -104,6 +108,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with crash/kill recovery, parallel-tool turn preservation, MCP error redaction, and credential-leak recovery evidence.
 - Maintained on 2026-09-25 with managed-runtime pause/resume/fork, checkpoint, and working-state evidence.
 
 - Maintained on 2026-09-19 with cross-tool session-transfer, attachment-rehydration, and provenance-check guidance.

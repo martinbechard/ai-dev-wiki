@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The October 2 raw sources add runtime safety, app-control, and audit-trail evidence. The [topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) records desktop app control, workflow dashboards, CI evidence retention, code scanning schedule semantics, and async merge polling as local governance inputs. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) records source-attributed incidents, survey audit-trail gaps, runtime safety platform signals, and provider/network allowlist controls. Locally, governance infrastructure should join app-control policy, runtime containment, evidence retention, audit trail availability, and asynchronous operation state before expanding coding-agent autonomy.
+
 The September 27 topic news collector source adds tamper-resistant audit and capability-census evidence. Host-local session traces are weak governance evidence when the agent can edit or delete them, and public capability listings need qualification because direct code-writing, qualified code-writing, and non-applicable agent claims are different governance categories.
 
 The September 25 raw sources add runtime-control and developer-workstation evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces that production agent governance needs runtime controls, immutable action records, autonomy tiers, escalation paths, cost limits, containment, and workstation/package controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds proof-of-presence and local sandbox signals: high-impact repository actions, token creation, webhook edits, credentials, network access, and filesystem reach need explicit freshness, human-presence, and fail-closed policy evidence.
@@ -194,10 +196,13 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Bind AI-review policy changes, MCP runtime enforcement, system-of-record review gates, deployment locality, and model-provider routing into the same governance record when they affect one agent workflow.
 - Route agent anomaly records through [agent incident reporting](agent-incident-reporting.md) when control-plane evidence reveals unexpected or concerning behavior.
 - Treat host-local traces as insufficient audit evidence when the agent can mutate the workspace that stores them; preserve append-only, external, signed, or otherwise tamper-resistant records for delegated authority and incident review.
+- Join app-control approval state, runtime containment, provider and network policy, audit-trail availability, evidence-retention windows, and asynchronous operation state when evaluating coding-agent autonomy.
 - Classify agent capability inventories by direct code-writing, qualified code-writing, no-code, and non-applicable status before using them for policy, procurement, or rollout decisions.
 
 ## Authoritative Sources
 
+- [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -301,6 +306,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with app-control policy, runtime-containment, audit-trail, evidence-retention, provider/network policy, and async-operation governance evidence.
 - Maintained on 2026-09-27 with tamper-resistant audit, host-local trace limitation, and qualified agent-capability inventory evidence.
 - Maintained on 2026-10-01 with AI-review configuration audit, runtime MCP enforcement, system-of-record review gates, self-hosted/data-residency, and model-provider-flexibility evidence.
 - Maintained on 2026-09-25 with runtime governance, proof-of-presence, workstation control, local sandbox, and fail-closed evidence.

@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds practitioner evidence that RAG failures should be split by retrieval, grounding, and final-answer classes. Local RAG diagnostics should attach exact source spans, check whether those spans appear in top results, and distinguish unsupported answers from wrong answers given sufficient evidence.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds knowledge-gap canary evidence. Retrieval quality gates should include absent-answer probes that require abstention or uncertainty when source evidence is missing, because answer accuracy on present evidence does not prove the system will avoid fabricating over retrieval gaps.
 
 RAG retrieves context before the request so the model can answer from supplied evidence instead of relying on training data alone. The local practice includes full-text search, semantic search, vector storage, filters, chunk metadata, and reranking when first-stage retrieval returns noisy or overlapping candidates.
@@ -52,6 +54,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Practice Boundaries
 
 - Add absent-answer canaries to RAG evaluation alongside source-span attribution, ranking, chunking, and answer-quality checks.
+- Diagnose RAG failures by checking source-span availability, top-result presence, groundedness, and final-answer correctness as separate classes.
 - Preserve paper, code, prompt, and log provenance for retrieval-gap tests so future agents can reproduce the absence behavior instead of trusting anecdotal failures.
 
 - Use full-text search for exact names, IDs, phrases, paths, and literal terms.
@@ -87,6 +90,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Authoritative Sources
 
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
@@ -135,6 +139,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-02 with retrieval-versus-generation failure separation, source-span, groundedness, and final-answer diagnostic evidence.
 - Maintained on 2026-09-25 with knowledge-gap canary and abstention-test evidence.
 - Maintained on 2026-09-25 with citation-resolution, source-span verification, token-savings, and harness-bug discovery evidence.
 
