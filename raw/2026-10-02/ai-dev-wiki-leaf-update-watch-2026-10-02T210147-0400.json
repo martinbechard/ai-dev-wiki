@@ -1,0 +1,394 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end": "2026-10-03T01:01:47Z",
+    "rule": "Include only sources visibly published or updated within the last 7 days relative to run time.",
+    "start": "2026-09-26T01:01:47Z"
+  },
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "reason": "Published before cutoff window start 2026-09-26T01:01:47Z.",
+      "source_url": "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding",
+      "visible_date": "2026-09-25"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/application-harness-patterns.md"
+      ],
+      "reason": "Published before cutoff window start 2026-09-26T01:01:47Z.",
+      "source_url": "https://www.infoq.com/articles/agent-harness-build-one/",
+      "visible_date": "2026-09-25"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md"
+      ],
+      "reason": "Published before cutoff window start 2026-09-26T01:01:47Z.",
+      "source_url": "https://www.speakeasy.com/resources/mcp-governance",
+      "visible_date": "2026-09-24"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md"
+      ],
+      "reason": "Published before cutoff window start 2026-09-26T01:01:47Z.",
+      "source_url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+      "visible_date": "2026-09-22"
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/source-workflows/automated-update-feeds.md",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md"
+      ],
+      "reason": "Useful public documentation but no visible publication or update date in the opened page.",
+      "source_url": "https://developers.openai.com/api/docs/guides/tools-skills",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md"
+      ],
+      "reason": "Useful public help content but no visible publication or update date in the opened page.",
+      "source_url": "https://help.openai.com/en/articles/20001143-chatgpt-workspace-agents-for-enterprise-and-business",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited public source for the leaf, but the opened page did not expose a publication or update date.",
+      "source_url": "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited public source for the leaf, but the opened page did not expose a publication or update date.",
+      "source_url": "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md"
+      ],
+      "reason": "Existing cited public source for the leaf, but the opened page did not expose a publication or update date.",
+      "source_url": "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "visible_date": null
+    },
+    {
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "reason": "Relevant approval guidance but no visible publication or update date in opened page.",
+      "source_url": "https://code.visualstudio.com/docs/agents/run/approvals",
+      "visible_date": null
+    }
+  ],
+  "federation_routing": "Broad ecosystem entities, products, companies, model families, and framework background remain upstream-owned by the AI wiki. This artifact records only local practice implications for workflow, governance, verification, retrieval, approval, and operating-model leaves.",
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; process through the normal raw ingest workflow.",
+    "During ingest, deduplicate against October 2 and September 25 processed leaf-watch/topic-news sources before adding prose.",
+    "Keep source-specific product claims in Authoritative Sources or Maintenance Notes unless they alter a durable local practice rule."
+  ],
+  "leaf_universe_count": 104,
+  "qualifying_update_count": 8,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Thoughtworks describes coding-agent reliability as a harness problem, with pre-action guides, post-action sensors, and selective human gates separating routine automation from higher-blast-radius decisions.",
+      "follow_up_note": "During ingest, compare against existing application harness, security repair gate, and human approval boundary prose before adding another harness-control paragraph.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Thoughtworks",
+        "AI coding agent",
+        "agent harness"
+      ],
+      "source_type": "public article",
+      "source_url": "https://www.thoughtworks.com/en-ca/insights/blog/architecture/engineering-the-harness-a-practical-pattern-for-reliable-coding-agents",
+      "upstream_owned_entities": [
+        "Thoughtworks",
+        "large language models"
+      ],
+      "visible_date": "2026-09-29",
+      "why_it_matters_for_leaf": "Reinforces the local harness pattern: guidance, verification, and targeted approval boundaries are separate controls rather than one prompt-level rule."
+    },
+    {
+      "factual_summary": "AP reports OpenAI announced always-on Dot agents intended to complete ongoing tasks proactively on behalf of users, while also noting recent safety concerns around more advanced models.",
+      "follow_up_note": "Keep product specifics upstream; locally retain only implications for persistent workflow-state, task boundaries, and resumable artifacts.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "Sam Altman",
+        "Dots",
+        "Meta Muse"
+      ],
+      "source_type": "news article",
+      "source_url": "https://apnews.com/article/sam-altman-openai-conference-dots-agent-77b6b8888145869206996d7509d24256",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Dots",
+        "Meta Muse"
+      ],
+      "visible_date": "2026-09-29",
+      "why_it_matters_for_leaf": "Persistent cloud agents make control-flow selection, workflow state, and declarative task artifacts more important because work can continue outside the active chat turn."
+    },
+    {
+      "factual_summary": "Tom's Guide reports Dots are persistent AI agents with cloud virtual computers that can browse the web, use connected apps, and continue working when the user is not actively in ChatGPT.",
+      "follow_up_note": "Use only as secondary confirmation for background-agent operating-model implications.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md"
+      ],
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Dots"
+      ],
+      "source_type": "news article",
+      "source_url": "https://www.tomsguide.com/ai/openai-gave-chatgpt-a-virtual-computer-to-run-errands-for-you",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Dots"
+      ],
+      "visible_date": "2026-09-29",
+      "why_it_matters_for_leaf": "Adds local evidence that background execution shifts agent-control-flow decisions from single-response assistance toward stateful job ownership and app-layer supervision."
+    },
+    {
+      "factual_summary": "KuppingerCole frames AI-agent governance around agent ownership versus delegated authority, scoped and revocable mandates, and evidence trails tying actions back to authorization.",
+      "follow_up_note": "Consider whether delegated-authority leaves need a short comparison of identity, authorization, and evidence trail responsibilities.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "KuppingerCole",
+        "Decentralized Identity Foundation",
+        "Jonathan Care",
+        "Grace Rachmany"
+      ],
+      "source_type": "public webinar page",
+      "source_url": "https://www.kuppingercole.com/events/2026/09/ai-agent-governance",
+      "upstream_owned_entities": [
+        "KuppingerCole",
+        "Decentralized Identity Foundation"
+      ],
+      "visible_date": "2026-09-29",
+      "why_it_matters_for_leaf": "Supports local guidance that agent identity, tool-call authority, and human approval boundaries must preserve who delegated what authority and under which limits."
+    },
+    {
+      "factual_summary": "Speakeasy reports remote MCP server identity modes for User, Agent, and No Identity, an atomic provider/client setup path, workload-fleet admission with guarded wildcards, and grant-evidence checks that fail closed when evidence is missing.",
+      "follow_up_note": "Local ingest should preserve the governance pattern without turning the page into a Speakeasy product page.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "named_entities": [
+        "Speakeasy",
+        "MCP Gateway",
+        "Remote MCP server"
+      ],
+      "source_type": "product changelog",
+      "source_url": "https://www.speakeasy.com/changelog/post/2026-09-27-remote-mcp-servers-choose-who-they-act-as-and-a-workload",
+      "upstream_owned_entities": [
+        "Speakeasy",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-09-27",
+      "why_it_matters_for_leaf": "Gives concrete public evidence for remote MCP governance around who a server acts as, how identity setup is reviewed, and how missing grant evidence should block readiness."
+    },
+    {
+      "factual_summary": "Naxaya describes an AgentOps runbook for MCP tool-output prompt injection that freezes the action chain, preserves raw and normalized tool results, records policy decisions and approvals, and validates or rolls back write access.",
+      "follow_up_note": "Ingest as incident-response and provenance evidence if not already covered by existing MCP approval evidence leaves.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Naxaya",
+        "MCP",
+        "AgentOps"
+      ],
+      "source_type": "public article",
+      "source_url": "https://naxaya.com/articles/agentops-neutralize-indirect-prompt-injection-mcp-tool-output-before-production-action/",
+      "upstream_owned_entities": [
+        "Naxaya",
+        "Model Context Protocol"
+      ],
+      "visible_date": "2026-09-27",
+      "why_it_matters_for_leaf": "Maps directly to local security repair gates, RAG/MCP provenance, MCP tool-call governance, and approval-boundary evidence requirements."
+    },
+    {
+      "factual_summary": "RAGWarrant presents retrieval policy promotion as an auditable evidence decision using quality and hard-risk gates, negative-outcome preservation, and explicit PROMOTE, BLOCK, REJECT, or INCONCLUSIVE decisions.",
+      "follow_up_note": "Check whether retrieval governance pages already distinguish evidence preservation from leaderboard-style evaluation.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+        "docs/wiki/source-workflows/leaf-update-watch.md"
+      ],
+      "named_entities": [
+        "RAGWarrant",
+        "HotpotQA",
+        "CRAG",
+        "T2-RAGBench",
+        "MultiHop-RAG"
+      ],
+      "source_type": "public preprint",
+      "source_url": "https://arxiv.org/abs/2609.34179",
+      "upstream_owned_entities": [
+        "RAGWarrant",
+        "RAG benchmarks"
+      ],
+      "visible_date": "2026-09-28T02:58:06Z",
+      "why_it_matters_for_leaf": "Provides a recent public example for RAG governance and leaf-watch-style evidence preservation: automated metrics alone should not silently promote policy changes."
+    },
+    {
+      "factual_summary": "AP reports Nvidia announced Open Agent Safety Platform with a sandbox-style workspace and rule book for agents, with Nvidia arguing technical restrictions are better than relying on written prompt instructions alone.",
+      "follow_up_note": "Route product background upstream; local implication belongs in runtime safeguards and approval gates.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+      ],
+      "named_entities": [
+        "Nvidia",
+        "Open Agent Safety Platform",
+        "OpenShell"
+      ],
+      "source_type": "news article",
+      "source_url": "https://apnews.com/article/nvidia-ai-security-openshell-sentry-a4cfc84ed00353ff8f2dad4bed7b429e",
+      "upstream_owned_entities": [
+        "Nvidia",
+        "Open Agent Safety Platform"
+      ],
+      "visible_date": "2026-09-28",
+      "why_it_matters_for_leaf": "Reinforces security repair and approval-boundary guidance that consequential agent actions need runtime safeguards beyond instructions."
+    }
+  ],
+  "run_timestamp": "2026-10-03T01:01:47Z",
+  "run_timestamp_local": "2026-10-02T21:01:47-0400",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md"
+  ],
+  "source_urls_checked": {
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md": [
+      "https://developers.openai.com/api/docs/guides/tools-skills",
+      "https://help.openai.com/en/articles/20001143-chatgpt-workspace-agents-for-enterprise-and-business"
+    ],
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": [
+      "https://apnews.com/article/nvidia-ai-security-openshell-sentry-a4cfc84ed00353ff8f2dad4bed7b429e",
+      "https://www.infoq.com/articles/agent-harness-build-one/",
+      "https://www.thoughtworks.com/en-ca/insights/blog/architecture/engineering-the-harness-a-practical-pattern-for-reliable-coding-agents"
+    ],
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md": [
+      "https://apnews.com/article/sam-altman-openai-conference-dots-agent-77b6b8888145869206996d7509d24256",
+      "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding",
+      "https://www.tomsguide.com/ai/openai-gave-chatgpt-a-virtual-computer-to-run-errands-for-you"
+    ],
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": [
+      "https://apnews.com/article/sam-altman-openai-conference-dots-agent-77b6b8888145869206996d7509d24256",
+      "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding",
+      "https://www.tomsguide.com/ai/openai-gave-chatgpt-a-virtual-computer-to-run-errands-for-you"
+    ],
+    "docs/wiki/application-patterns/application-harness-patterns.md": [
+      "https://apnews.com/article/nvidia-ai-security-openshell-sentry-a4cfc84ed00353ff8f2dad4bed7b429e",
+      "https://www.infoq.com/articles/agent-harness-build-one/",
+      "https://www.thoughtworks.com/en-ca/insights/blog/architecture/engineering-the-harness-a-practical-pattern-for-reliable-coding-agents"
+    ],
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": [
+      "https://apnews.com/article/sam-altman-openai-conference-dots-agent-77b6b8888145869206996d7509d24256",
+      "https://help.openai.com/en/articles/20001143-chatgpt-workspace-agents-for-enterprise-and-business"
+    ],
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md": [
+      "https://docs.oracle.com/en/cloud/saas/readiness/common/26c/common26c/26C-common-wn-f50063.htm",
+      "https://docs.oracle.com/en/database/oracle/apex/26.1/apxdc/editing-apexlang-visual-studio-code.html",
+      "https://docs.oracle.com/en/database/oracle/sql-developer-command-line/26.1/sqcug/apexlang.html"
+    ],
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": [
+      "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+      "https://www.kuppingercole.com/events/2026/09/ai-agent-governance",
+      "https://www.speakeasy.com/changelog/post/2026-09-27-remote-mcp-servers-choose-who-they-act-as-and-a-workload"
+    ],
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": [
+      "https://apnews.com/article/nvidia-ai-security-openshell-sentry-a4cfc84ed00353ff8f2dad4bed7b429e",
+      "https://www.infoq.com/articles/agent-harness-build-one/",
+      "https://www.thoughtworks.com/en-ca/insights/blog/architecture/engineering-the-harness-a-practical-pattern-for-reliable-coding-agents"
+    ],
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md": [
+      "https://arxiv.org/abs/2609.34179",
+      "https://naxaya.com/articles/agentops-neutralize-indirect-prompt-injection-mcp-tool-output-before-production-action/"
+    ],
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": [
+      "https://code.visualstudio.com/docs/agents/run/approvals",
+      "https://naxaya.com/articles/agentops-neutralize-indirect-prompt-injection-mcp-tool-output-before-production-action/",
+      "https://www.speakeasy.com/changelog/post/2026-09-27-remote-mcp-servers-choose-who-they-act-as-and-a-workload",
+      "https://www.speakeasy.com/resources/mcp-governance"
+    ],
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": [
+      "https://code.visualstudio.com/docs/agents/run/approvals",
+      "https://naxaya.com/articles/agentops-neutralize-indirect-prompt-injection-mcp-tool-output-before-production-action/",
+      "https://www.speakeasy.com/changelog/post/2026-09-27-remote-mcp-servers-choose-who-they-act-as-and-a-workload",
+      "https://www.speakeasy.com/resources/mcp-governance"
+    ],
+    "docs/wiki/source-workflows/automated-update-feeds.md": [
+      "https://developers.openai.com/api/docs/guides/tools-skills",
+      "https://www.speakeasy.com/resources/mcp-governance"
+    ],
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md": [
+      "https://developers.openai.com/api/docs/guides/tools-skills",
+      "https://www.speakeasy.com/resources/mcp-governance"
+    ],
+    "docs/wiki/source-workflows/leaf-update-watch.md": [
+      "https://arxiv.org/abs/2609.34179",
+      "https://naxaya.com/articles/agentops-neutralize-indirect-prompt-injection-mcp-tool-output-before-production-action/"
+    ]
+  }
+}
