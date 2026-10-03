@@ -1,0 +1,379 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector",
+    "run_timestamp_utc": "2026-10-03T00:34:09Z",
+    "collector_identity": "Northstar"
+  },
+  "cutoff_window": {
+    "basis": "Last 2 days relative to run time; only public sources with visible publication or update dates inside the window were allowed as qualifying findings.",
+    "start_utc": "2026-10-01T00:34:09Z",
+    "end_utc": "2026-10-03T00:34:09Z",
+    "excluded_date_policy": "Missing, ambiguous, future-dated, crawl-only, date-only boundary, event-date-only, or outside-window sources were excluded or retained only as routing/exclusion notes."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, implementation, context, and adoption implications.",
+    "upstream_scope": "Broad companies, products, models, developer tools, agentic frameworks, MCP servers, and general techniques are owned by the upstream AI wiki.",
+    "federation_source_checked": "docs/wiki/federation.md",
+    "upstream_owned_entities_policy": "Named upstream-owned entities are recorded for routing and only the local practice implication is captured here."
+  },
+  "repository_checks": {
+    "wiki_status": {
+      "command": "/Users/martinbechard/.agents/skills/project-wiki/scripts/wiki_ops.py status",
+      "result": "Project wiki status reported docs/wiki with 128 pages, 0 missing required files, and 0 lint findings."
+    },
+    "existing_wiki_coverage_checked": [
+      "docs/wiki/topic-index.md",
+      "docs/wiki/federation.md",
+      "approved topic root file inventory",
+      "scoped grep across docs/wiki and raw for Copilot code review, dynamic workflows, computer use, TDD, agent loops, MCP, hooks, AGENTS.md, and custom instructions"
+    ],
+    "raw_only_boundary": "No docs/wiki pages and no raw/processed files were edited by this collector."
+  },
+  "qualifying_findings": [
+    {
+      "id": "github-copilot-code-review-api-effort-2026-10-02",
+      "source_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "source_title": "Copilot code review: API support and new default effort level",
+      "source_type": "vendor changelog",
+      "visible_date": "October 2, 2026",
+      "date_qualification": "Visible source date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub says Copilot code review can now be requested through REST and GraphQL APIs, callers can set review effort per request, and Balanced is now the default effort level for Copilot code review unless Lite was explicitly selected.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI review is becoming workflow-triggerable infrastructure rather than only an interactive PR action. Local practice should track API-triggered review provenance, effort-level defaults, review-cost policy, and whether repository or organization defaults changed the expected review depth.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "REST API",
+        "GraphQL API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Route broad product details upstream; locally, capture review-effort configuration, API-trigger evidence, and governance controls for automated AI review requests.",
+      "follow_up_notes": "During ingest, consider whether repository-configured AI code review and code-review eval leaves should mention API-triggered review requests and effort defaults."
+    },
+    {
+      "id": "github-dynamic-workflows-2026-10-01",
+      "source_url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "source_title": "Dynamic workflows in Copilot CLI and the Copilot app",
+      "source_type": "vendor changelog",
+      "visible_date": "October 1, 2026",
+      "date_qualification": "Visible source date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub describes dynamic workflows as code-defined orchestrations in Copilot CLI, the Copilot app, and the Copilot SDK that can combine commands, tools, services, parallel tasks, subagent verification, structured results, user input, checkpoints, and resume behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Reusable agent workflows are moving toward reviewable program artifacts with explicit checkpoints and structured handoffs. Local practice should treat workflow definitions as governed source artifacts with validation, permission boundaries, and audit evidence rather than as one-off prompts.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "GitHub Copilot SDK",
+        "dynamic workflows"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot SDK"
+      ],
+      "local_practice_implication": "Keep product coverage upstream; locally, capture reusable workflow-as-code patterns, checkpoint review, structured result propagation, and subagent verification gates.",
+      "follow_up_notes": "Potential ingest destinations include declarative agent workflow artifacts, agent control flow selection, and subagent coordination."
+    },
+    {
+      "id": "github-copilot-vscode-september-agent-sessions-2026-10-01",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+      "source_title": "GitHub Copilot in VS Code, September 2026 releases",
+      "source_type": "vendor changelog",
+      "visible_date": "October 1, 2026",
+      "date_qualification": "Visible source date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub summarizes September VS Code agent updates: recurring automations, agent merge handling review feedback and failed checks, PR creation from agent sessions, hierarchical related-session navigation, completed-session cleanup, attention badges, Dev Container sessions, workspace attachment for chats, and continuing Codex work from ChatGPT in VS Code.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent work surfaces are converging around session lifecycle management, status attention, environment selection, PR packaging, and cross-app continuity. Local practice should preserve session provenance and avoid treating cross-surface continuation as context-free work.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Codex",
+        "ChatGPT",
+        "Dev Containers"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Codex",
+        "ChatGPT"
+      ],
+      "local_practice_implication": "Capture lifecycle and handoff practice locally; route broad product and availability details upstream.",
+      "follow_up_notes": "Consider ingest into persistent agent workspaces, supervised cross-environment handoffs, shared channel agent sessions, and agent environment readiness."
+    },
+    {
+      "id": "github-copilot-computer-use-2026-10-01",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "source_title": "GitHub Copilot can now interact with desktop apps with computer use",
+      "source_type": "vendor changelog",
+      "visible_date": "October 1, 2026",
+      "date_qualification": "Visible source date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "short_factual_summary": "GitHub says computer use is in public preview for Copilot CLI and the Copilot app on macOS and Windows. Copilot can read accessible app content and visual context, click controls, enter text, press keys, scroll, drag, and navigate GUI workflows. The post says users approve app control, can review or reset always-allowed apps, macOS requires Accessibility and Screen Recording permissions, and managed settings can disable the feature.",
+      "why_it_matters_for_ai_assisted_development_practice": "Desktop automation expands agent authority beyond repository files and command-line tools into GUI applications. Local practice needs explicit outcome descriptions, app allowlists, permission review, screen-recording privacy boundaries, reset paths, and organization policy controls before desktop control is treated as normal development workflow.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "macOS",
+        "Windows"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI"
+      ],
+      "local_practice_implication": "Route broad feature coverage upstream; locally, capture cross-environment handoff, app-control approval evidence, and privacy constraints.",
+      "follow_up_notes": "Potential ingest targets include supervised cross-environment handoffs, browser-agent runtime boundaries, execution-edge authorization, and human-agent approval boundaries."
+    },
+    {
+      "id": "codex-kb-tdd-feedback-loop-updated-2026-10-02",
+      "source_url": "https://codex.danielvaughan.com/2026/03/28/test-first-development-codex-tdd-feedback-loop/",
+      "source_title": "Test-First Development with Codex: Using TDD as the Agent Feedback Loop",
+      "source_type": "independent practice article",
+      "visible_date": "Updated October 2, 2026",
+      "date_qualification": "Visible update date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The article frames tests as the objective feedback interface for autonomous coding agents, recommends writing failing tests before dispatch, warns that agents may weaken tests unless guarded, and shows AGENTS.md-style testing protocols plus automatic test-loop hooks.",
+      "why_it_matters_for_ai_assisted_development_practice": "It reinforces local TDD guidance that tests should encode intent before agent implementation and that guardrails must protect tests from being edited merely to satisfy a completion objective.",
+      "named_entities": [
+        "Codex",
+        "Codex CLI",
+        "AGENTS.md",
+        "TDD",
+        "PostToolUse hooks"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Codex CLI"
+      ],
+      "local_practice_implication": "Local wiki should keep the practice lens: failing tests as acceptance signals, anti-test-weakening rules, and hook-supported regression loops.",
+      "follow_up_notes": "During ingest, compare with existing ai-assisted-tdd and verification loops leaves to avoid duplicating already-processed TDD guidance."
+    },
+    {
+      "id": "codex-kb-adversarial-review-updated-2026-10-02",
+      "source_url": "https://codex.danielvaughan.com/2026/08/30/adversarial-review-structured-disagreement-code-review-codex-cli-multi-agent/",
+      "source_title": "Adversarial Review: Why Structured Disagreement Beats Consensus in Agentic Code Review",
+      "source_type": "independent practice article",
+      "visible_date": "Updated October 2, 2026",
+      "date_qualification": "Visible update date is inside the cutoff window.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns"
+      ],
+      "short_factual_summary": "The article describes a three-role adversarial review protocol with a main agent, reviewer, and critic. It emphasizes evidence-grounded disagreement categories, capped inner-loop convergence, outer-loop edits only after converged review issues, budget accounting, and writable-scope constraints.",
+      "why_it_matters_for_ai_assisted_development_practice": "It provides a concrete practice pattern for avoiding false consensus in AI review: critic roles should require code evidence or force retraction, and edit authority should be gated on converged, evidence-backed findings.",
+      "named_entities": [
+        "Codex CLI",
+        "AGENTS.md",
+        "SWE-PRBench",
+        "LiveCodeBench",
+        "SWE-bench Verified",
+        "Adversarial Review"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "SWE-PRBench",
+        "LiveCodeBench",
+        "SWE-bench Verified"
+      ],
+      "local_practice_implication": "Route benchmark and product background upstream; locally, capture the role-separated review protocol, evidence obligation, convergence gate, budget cap, and scope-control practice.",
+      "follow_up_notes": "Potential ingest destinations include multi-reviewer AI code review, code-review evals and rubrics, subagent coordination, and agent lifecycle hooks."
+    },
+    {
+      "id": "fervor-agent-harness-permission-layer-2026-10-02",
+      "source_url": "https://fervorai.dev/",
+      "source_title": "Fervor AI daily agent briefing",
+      "source_type": "independent briefing",
+      "visible_date": "October 2, 2026 afternoon edition and October 2, 2026 morning edition",
+      "date_qualification": "Visible briefing dates are inside the cutoff window; treated as a secondary briefing, not authoritative product documentation.",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "short_factual_summary": "The briefing states that October 1 agent-harness updates included plugin-level tool-call paths, Pi 1.0 plus an experimental durable runtime, GitHub Copilot desktop-app control, and a continuing gap where builders assemble their own permission layer. It also highlights recent analysis about crash recovery, local daemon defaults, plugin permission behavior, and MCP allowlists.",
+      "why_it_matters_for_ai_assisted_development_practice": "The secondary signal is not a product source, but it usefully clusters a practice trend: agent harness capability is advancing faster than uniform permission, durability, and daemon-governance patterns. Local practice should keep permission layers, crash recovery, plugin voting, and daemon exposure as explicit acceptance criteria.",
+      "named_entities": [
+        "Fervor AI",
+        "Claude Code",
+        "Pi",
+        "Pi Durable",
+        "GitHub Copilot",
+        "MCP",
+        "OpenRig",
+        "OpenAPPA",
+        "Figma"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Pi",
+        "Pi Durable",
+        "GitHub Copilot",
+        "MCP",
+        "OpenRig",
+        "OpenAPPA",
+        "Figma"
+      ],
+      "local_practice_implication": "Do not duplicate entity updates; retain the local governance implication that permission, crash recovery, local daemon exposure, and plugin authority must be tested as harness controls.",
+      "follow_up_notes": "Use only as supporting context during ingest; verify each product-specific claim against primary sources before durable synthesis."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "source_title": "Set up a context engineering flow in VS Code",
+      "visible_date": null,
+      "reason": "Useful practice content, but no visible publication or update date was found on the page; crawl date alone is not enough for this strict collector."
+    },
+    {
+      "source_url": "https://www.microsoft.com/en-us/research/publication/after-organizational-ai-acceptance-ai-bias-fades-but-a-junior-penalty-persists-in-code-review/",
+      "source_title": "After Organizational AI Acceptance, AI Bias Fades but a Junior Penalty Persists in Code Review",
+      "visible_date": "October 2026",
+      "reason": "The page shows month-level publication context but no exact in-window day; excluded because the visible date is ambiguous for a two-day collector window."
+    },
+    {
+      "source_url": "https://rob-knight.com/articles/the-agent-loop-protocol/",
+      "source_title": "The agent loop protocol",
+      "visible_date": "Published 26 September 2026; Updated 29 September 2026",
+      "reason": "Strong local-practice relevance, but the visible update date is outside the strict cutoff window."
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/dotnet/announcing-agent-governance-toolkit-mcp-extensions-for-dotnet/",
+      "source_title": "Announcing Agent Governance Toolkit MCP Extensions for .NET",
+      "visible_date": "May 21st, 2026",
+      "reason": "Practice-relevant MCP governance details, but outside the cutoff window."
+    },
+    {
+      "source_url": "https://github.com/P4ST4S/mcp-audit",
+      "source_title": "mcp-audit GitHub repository",
+      "visible_date": null,
+      "reason": "Repository page contains relevant MCP audit practice claims but no visible in-window publication/update date in the collected page text."
+    },
+    {
+      "source_url": "https://docs.github.com/en/copilot/reference/customization-cheat-sheet",
+      "source_title": "Copilot customization cheat sheet",
+      "visible_date": null,
+      "reason": "Relevant durable-instructions reference, but the collected page has no visible in-window publication or update date."
+    },
+    {
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-custom-instructions",
+      "source_title": "Adding custom instructions for GitHub Copilot CLI",
+      "visible_date": null,
+      "reason": "Relevant AGENTS.md and instruction-discovery details, but the collected page has no visible in-window publication or update date."
+    },
+    {
+      "source_url": "https://sreday.com/2026-san-francisco-q4/",
+      "source_title": "SREday San Francisco Q4 2026 agenda",
+      "visible_date": "October 2, 2026 event date",
+      "reason": "Contains practice-relevant talk abstracts, but the visible date is an event date rather than a publication/update date; excluded as boundary-only date evidence."
+    },
+    {
+      "source_url": "https://www.agent0s.com/",
+      "source_title": "Agent0s AI Intelligence Library",
+      "visible_date": "THURSDAY, AUGUST 13, 2026 in collected page text",
+      "reason": "Search snippet suggested an October 2 daily briefing, but the collected page text showed August 13, 2026; excluded because direct-page date evidence conflicted with search result text."
+    },
+    {
+      "source_url": "https://claudecodereview.ai/",
+      "source_title": "Claude Code Review",
+      "visible_date": "Relative dates such as 18h ago and 1d ago",
+      "reason": "Several items appear fresh and practice-relevant, but direct page text uses relative dates without stable absolute dates for the individual articles; excluded from qualifying findings."
+    },
+    {
+      "source_url": "https://blog.invidelabs.com/pi-coding-agent-local-models/",
+      "source_title": "What is the Pi coding agent, and how does it work with local models?",
+      "visible_date": "Oct 2, 2026 in search result; page fetch unavailable in collected evidence",
+      "reason": "Search result looked relevant, but direct page content was not available in the collected evidence; excluded pending direct-page verification."
+    },
+    {
+      "source_url": "https://www.chatgptaihub.com/codex-code-review-reproducible-pr-benchmark-rule-signal-reviewer-time-noise/",
+      "source_title": "Before You Trust Codex Code Review: A Reproducible PR Benchmark for Rule Signal, Reviewer Time, and False-Positive Noise",
+      "visible_date": "October 2, 2026 in search result; page fetch unavailable in collected evidence",
+      "reason": "Potentially useful evaluation-protocol content, but direct page content was not available in the collected evidence; excluded pending direct-page verification."
+    }
+  ],
+  "routing_notes": [
+    {
+      "entity": "GitHub Copilot",
+      "owner": "upstream-ai-wiki",
+      "local_note": "Only local workflow, review configuration, desktop-control approval, and session-governance implications belong here."
+    },
+    {
+      "entity": "Codex and Codex CLI",
+      "owner": "upstream-ai-wiki",
+      "local_note": "Only practice patterns such as TDD loops, adversarial review roles, hooks, and AGENTS.md protocol boundaries belong here."
+    },
+    {
+      "entity": "MCP",
+      "owner": "upstream-ai-wiki for protocol/entity background; ai-dev-wiki for governed development practice",
+      "local_note": "Keep permission, audit, allowlist, tool-call, and runtime-governance implications in local retrieval/governance leaves."
+    },
+    {
+      "entity": "Pi, Claude Code, OpenRig, OpenAPPA, Figma",
+      "owner": "upstream-ai-wiki",
+      "local_note": "Treat briefing mentions as routing signals only unless primary direct evidence is collected in a later run."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector output; do not move this artifact to raw/processed until a separate ingest synthesizes it into docs/wiki.",
+    "During ingest, deduplicate against October 1 processed source coverage that already updated governance infrastructure and instruction-layer leaves.",
+    "Verify product-specific claims from secondary sources against primary pages before durable synthesis.",
+    "Likely local ingest targets include repository-configured AI code review, multi-reviewer AI code review, code-review evals and rubrics, declarative agent workflow artifacts, supervised cross-environment handoffs, execution-edge authorization, human-agent approval boundaries, ai-assisted TDD, and agent lifecycle hooks."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
