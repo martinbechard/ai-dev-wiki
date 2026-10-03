@@ -77,6 +77,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) reinforces action-time authority. Human-presence challenges, IdP re-authentication, and MCP governance tools are local evidence that inventory is not enough: delegated authority should be checked when a sensitive repository, organization, or MCP tool action is requested. Broad GitHub, Microsoft Entra ID, Lumos, Claude Code, and Codex facts stay upstream-owned.
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds governance evidence for agent ownership, delegated mandates, remote MCP identity modes, workload-fleet admission, and grant-evidence checks. Delegated authority should preserve whether a server or tool acts as the user, the agent, or no identity; which owner granted the mandate; which workload pattern was admitted; and which missing grant evidence caused a fail-closed decision.
+
 ## Practice Boundaries
 
 - Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
@@ -125,6 +127,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Preserve human-presence challenge evidence for high-impact repository actions instead of treating an existing authenticated session as fresh delegated authority.
 - Preserve planning-system work IDs, lead-team ownership, setup-secret exposure, model-routing policy, revocation audit entries, and comment-to-session routing when issue systems become agent control planes.
 - Enforce action-time authority checks for high-impact repository, organization, and MCP-mediated tool actions, preserving the requested payload, policy result, human-presence challenge, and IdP response when applicable.
+- Record whether a remote MCP server or connected tool acts as the user, the agent, or no identity, and preserve owner mandate, workload admission, grant evidence, and fail-closed denial when authority proof is missing.
 
 ## Authoritative Sources
 
@@ -163,6 +166,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
 
 ## Related Code
 
@@ -197,6 +201,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Maintained on 2026-09-25 with proof-of-presence, durable work ID, lead-team ownership, model-routing, setup-secret, revocation-audit, and comment-routing evidence.
 - Maintained on 2026-09-15 with delegated user authority, workload identity, registration-flow, first-class agent principal, and accountable-human metadata evidence.
 - Maintained on 2026-09-08 with zero-starting-privilege runtime, OS containment, secret-delivery, action-verification, tamper-proof-log, machine-readable-inventory, and agent-visibility evidence.
+- Maintained on 2026-10-03 with delegated mandate, remote MCP identity mode, workload admission, grant-evidence, and fail-closed authority evidence.
 - Maintained on 2026-09-05 with data-governance authority fields and accountable-agent mandate or registration evidence.
 - Maintained on 2026-07-23 with discoverable-agent, human-owner, brokered-access, and no-long-lived-secret identity guidance.
 - Created on 2026-06-24 to separate agent instance identity, delegated authority, shared-channel agents, and credential revocation from broader governance infrastructure.

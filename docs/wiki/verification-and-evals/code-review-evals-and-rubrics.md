@@ -91,6 +91,8 @@ The September 26 raw sources add review-stage and verification-capacity evidence
 
 The September 29 raw sources add role-weighted review scoring and fresh-context review evidence. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) records composite multi-agent SDLC scoring that weights review and implementation roles while preserving artifact-quality, efficiency, static-analysis, pytest, manifest, and transcript evidence. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) and topic collector also reinforce independent review practice where unreproducible findings are dropped, fixes are tied to failing tests when practical, and short feature notes or code maps preserve intent without sharing the authoring agent's full context.
 
+The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds API-triggered review and adversarial-review evidence. Review evals should score requested effort versus default effort, API or automation provenance, and whether role-separated reviewer or critic findings converge on evidence-backed issues without converting unsupported disagreement into repair work.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -158,6 +160,8 @@ The September 29 raw sources add role-weighted review scoring and fresh-context 
 - Include review-stage timing, bot-versus-human attribution, finding-to-fix conversion, and reviewer triage burden when evaluating AI review adoption.
 - Preserve review-role weight, composite-score inputs, artifact-quality evidence, efficiency metrics, static-analysis output, pytest output, deliverable manifests, and tool/transcript telemetry when evaluating multi-agent SDLC review quality.
 - Score whether independent reviewers reproduce findings, reject unreproducible claims, request failing tests, and preserve intent notes before findings become agent repair work.
+- Score API-triggered review separately from human-requested review by preserving request actor, effort value, default policy, trigger context, and downstream human acceptance.
+- Score adversarial review by evidence-backed disagreement, retraction quality, convergence criteria, budget observance, and whether only converged findings reach writable repair work.
 
 ## Authoritative Sources
 
@@ -173,6 +177,7 @@ The September 29 raw sources add role-weighted review scoring and fresh-context 
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)

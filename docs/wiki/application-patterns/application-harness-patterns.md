@@ -45,6 +45,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds shared-runtime and local-sandbox evidence. A shared coding-agent runtime concentrates reliability, performance, and agent-loop behavior across product surfaces, so runtime migrations need staged pull-request and regression evidence. Local sandboxing, filesystem scope, network scope, credential scope, enterprise override policy, and fail-closed behavior are harness controls rather than prompt preferences.
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) reinforces harness design as separate pre-action guidance, post-action sensing, and selective human gates. Locally, the harness should encode task guidance, runtime controls, result sensors, and escalation gates as independent components so routine automation does not inherit authority meant only for higher-blast-radius decisions.
+
 ## Pattern Leaves
 
 - [structured-output-and-drafter-patterns.md](structured-output-and-drafter-patterns.md) owns model-drafted schemas, DSLs, validation, execution, retries, and audit.
@@ -80,6 +82,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Route managed-platform mutation details to [platform-native agent mutation](platform-native-agent-mutation.md).
 - Treat shared agent-runtime migrations as harness changes that need staged implementation, regression evidence, and rollback paths.
 - Enforce local sandbox filesystem, network, credential, override, and fail-closed policy as runtime controls before a coding-agent shell runs.
+- Separate pre-action guidance, action execution, post-action sensors, and human escalation gates so prompt instructions, runtime controls, and approval decisions do not blur together.
 
 ## Authoritative Sources
 
@@ -103,6 +106,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [platform-native agent mutation](platform-native-agent-mutation.md)
 - [harness sizing by workflow complexity](harness-sizing-by-workflow-complexity.md)
@@ -154,3 +158,4 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Maintained on 2026-09-07 with streaming-output, tool-call display, inline-diff, long-context editor, and background-agent state requirements.
 - Maintained on 2026-09-08 with orchestration-choice, parallel-worktree, diagnostics, cancellation, validation, review-surface, and rollback evidence.
 - Maintained on 2026-09-25 with shared-runtime migration, staged pull-request, regression, sandbox policy, credential scope, and fail-closed evidence.
+- Maintained on 2026-10-03 with harness guidance, sensor, runtime-control, and selective human-gate evidence.

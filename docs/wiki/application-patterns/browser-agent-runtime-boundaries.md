@@ -11,6 +11,8 @@ tags: ["application-patterns"]
 
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds desktop app control as an adjacent runtime boundary to browser automation. When an agent can operate local applications, the same local pattern applies: approval prompts, always-allowed app review, OS permission setup, organization disablement, and reset procedures are part of the runtime contract, not product-specific background.
 
+The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) reinforces the same app-control boundary with public-preview desktop automation evidence. Local runtime design should preserve the requested app-control outcome, app allowlist decision, accessibility or screen-recording permission state, organization policy, sensitive-app exclusions, and reset path before desktop control becomes a repeatable development workflow.
+
 Browser-agent runtimes let agents operate the web through real browsers, search, fetch, identity, and proxy surfaces. The [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md) frames browser infrastructure as a production surface for search, fetch, authenticated workflows, proxies, session recording, model routing, and headless browser fleets. Broad product and framework background belongs upstream; this page owns the local practice rule that browser access is an agent execution substrate with privileged side effects.
 
 Browser-agent work combines retrieval and action. Search and fetch APIs can provide token-efficient context, while browser control can log in, navigate dynamic pages, submit forms, extract documents, or synchronize records. Local harnesses should classify those paths separately: retrieval-only browser context can be lower risk, but authenticated browser sessions, proxy-backed scraping, captcha handling, account administration, and cross-system data entry require explicit domain allowlists, identity controls, data retention review, and audit evidence.
@@ -44,6 +46,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Route broad Browserbase, Stagehand, Playwright, Puppeteer, Selenium, and browser-use background to the upstream AI wiki unless a source changes local runtime, governance, or verification practice.
 - Pair browser-agent identity with runtime containment: least privilege, behavioral supervision, egress policy, function-level capability grants, escalation paths, and kill switches.
 - Treat desktop app control as a runtime surface with explicit app-level approval state, OS permission evidence, organization policy, and reset or review procedures before recurring use.
+- Preserve outcome description, app allowlist, OS permission state, sensitive-app exclusions, and organization disablement evidence when agents can click, type, drag, or navigate outside the browser.
 - Require browser-test proof to include screenshots, recordings, reproduction steps, extracted data, and failure reports attached to the review surface, not only an agent claim that the browser ran.
 - Reclassify approved browser extensions, plug-ins, connectors, and embedded assistants when they gain new identity, data-access, or action-taking behavior.
 - Distinguish separate agent-browser sessions from user-browser extension sessions before importing logins, cookies, bookmarks, passwords, or site-specific state.
@@ -56,6 +59,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Authoritative Sources
 
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
 - [agent harness components](agent-harness-components.md)
@@ -96,6 +100,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Maintenance Notes
 
 - Maintained on 2026-10-02 with desktop app-control approval, OS-permission, organization-policy, and reset-procedure boundaries.
+- Maintained on 2026-10-03 with app-control outcome, allowlist, accessibility or screen-recording permission, sensitive-app exclusion, policy, and reset evidence.
 - Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
 - Maintained on 2026-09-25 with indirect browser-service, public scan-log, retrieval-to-action escalation, egress, and evidence-limitation guidance.
 - Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.

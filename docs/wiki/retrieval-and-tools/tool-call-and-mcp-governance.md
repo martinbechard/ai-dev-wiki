@@ -17,6 +17,8 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 
 The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds runtime MCP enforcement and review-context evidence. Runtime governance should discover which MCP servers agents use, compare use against allowed-server policy, log or block out-of-policy calls at invocation time, and preserve endpoint-hook evidence across supported agent clients. When AI code review consumes MCP context, repository instructions, skills, and issue or pull-request history, those context sources should be treated as governed tool inputs with content-exclusion and source-provenance records.
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds remote MCP identity modes, provider/client setup review, workload-fleet admission, grant-evidence checks, and prompt-injection runbook evidence. Tool governance should record whether a remote server acts as the user, the agent, or no identity; preserve setup and admission evidence atomically; fail closed when grant evidence is absent; and freeze action chains when tool output may be carrying indirect prompt injection.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds MCP-served playbook and agent-manager evidence. Tool governance should distinguish raw code search, procedural playbooks, docs/wiki access, runbooks, observability context, feature flags, task-system controls, and data-platform tools, then bind each tool class to identity, lifecycle, sandbox, approval, telemetry, and revocation evidence.
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds tool telemetry, sandbox, and runtime-enforcement evidence. Tool governance should preserve model/tool spans, managed telemetry settings, content-capture defaults, filesystem scope, network scope, credential scope, and fail-closed sandbox results before a local coding-agent action is trusted. Runtime MCP governance also reinforces that approved inventory is insufficient when the authorization decision needs to happen at the point of action.
@@ -218,6 +220,8 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Separate tool execution, inter-agent communication, host-rendered UI, sandboxed app resources, human approval, and authoritative transaction state when MCP-style applications can write or commit changes.
 - Record tool availability, payload modality, reusable workflow identity, publishing configuration, staged approval status, and content-exclusion policy when a tool-mediated agent action depends on async questions, OIDC publishing, or generated review.
 - Treat enterprise MCP gateways as agent traffic control planes only when they preserve delegated identity, tool-parameter policy decisions, approved-tool catalog state, cost guardrails, blocked attempts, and intent-bearing audit logs.
+- Record remote MCP identity mode, atomic provider/client setup evidence, workload-fleet admission rule, grant-evidence result, and fail-closed denial before a remote server can become an approved tool surface.
+- Freeze action chains, preserve raw and normalized tool results, and record approvals or rollback when MCP tool output may contain indirect prompt injection.
 - For platform-specific agent workflows, record whether the agent should use deterministic CLI calls or MCP tools, which route is privileged, which context source is official, and which reversible version or audit record proves the action can be rolled back.
 - Join MCP registry version, authentication path, per-client isolation, health signals, failure counts, command digests, and approval decisions before expanding a tool route.
 - Require authoritative specification evidence before changing protocol assumptions from secondary MCP reports.
@@ -251,6 +255,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -356,6 +361,7 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-03 with remote MCP identity-mode, atomic setup, workload admission, grant-evidence, fail-closed denial, and prompt-injection action-freeze evidence.
 - Maintained on 2026-09-29 with managed MCP audit-log, service-filter, permission-category, Data Access, Admin Activity, and read-activity enablement evidence.
 - Maintained on 2026-10-01 with runtime MCP discovery, allowed-server policy, endpoint-hook enforcement, log-or-block decisions, and AI-review MCP context evidence.
 - Maintained on 2026-09-28 with policy-before-execution, allowed-host, dynamic-tool, runtime-generated-code, and policy-version audit evidence.

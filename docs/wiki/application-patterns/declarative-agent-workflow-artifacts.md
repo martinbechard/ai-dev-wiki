@@ -11,6 +11,8 @@ tags: ["application-patterns"]
 
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds code-defined dynamic workflow evidence from upstream-owned GitHub Copilot surfaces. Locally, reusable agent workflows should treat staged steps, parallel lanes, structured handoffs, verification checkpoints, optional user input, and pause/resume points as reviewable workflow contract fields instead of burying those controls in one-off prompts.
 
+The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds a second dynamic-workflow signal with commands, tools, services, parallel tasks, subagent verification, structured results, user input, checkpoints, and resume behavior. Locally, workflow-as-code artifacts should be source-reviewed like executable orchestration, including permission boundaries and handoff schemas.
+
 Declarative agent workflow artifacts make orchestration state visible before an agent runs. The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) records a workflow-artifact pattern for multi-agent orchestration, branching, tool calls, human approvals, checkpoints, and resume behavior.
 
 The local practice is to treat the workflow artifact as source evidence, not as a framework catalog. Broad Microsoft Agent Framework background belongs upstream; this page owns the downstream review rule for workflow state that controls agent actions.
@@ -36,11 +38,13 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Treat declarative action definitions, checkpoint stores, human-input events, telemetry hooks, and persistence serializers as reviewable workflow fields when they affect agent execution or recovery.
 - Record orchestration pattern, validation checkpoint, escalation rule, and fleet or squad role boundaries as workflow fields when recurring loops coordinate several agents.
 - Review code-defined agent workflows for staged steps, parallel work, structured result schemas, handoff shape, verification gates, optional human input, and pause/resume semantics before teams reuse them.
+- Preserve tool, service, subagent, user-input, checkpoint, resume, structured-result, and permission-boundary fields when code-defined workflows become reusable team artifacts.
 - Record approval risk class, redirect target, rewind point, conversation rollback, and file rollback semantics when agent sessions can revise or undo prior work.
 
 ## Authoritative Sources
 
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
@@ -76,6 +80,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 ## Maintenance Notes
 
 - Maintained on 2026-10-02 with code-defined dynamic workflow, structured handoff, verification checkpoint, user-input, and pause/resume evidence.
+- Maintained on 2026-10-03 with commands, tools, services, subagent-verification, structured-result, checkpoint, resume, and permission-boundary evidence.
 - Created on 2026-07-28 from July 28 raw evidence about reviewable workflow artifacts, branching, tool calls, approval points, checkpoints, and resume behavior.
 - Maintained on 2026-07-29 with 1.0 declarative workflow definition, state-transition, and tool-step review guidance.
 - Maintained on 2026-08-04 with comment-triggered automation boundaries for issues, pull requests, documentation generation, error investigation, and follow-up issue creation.

@@ -76,6 +76,8 @@ Locally, centrally managed policy, work-item standards, production blast radius,
 
 The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) adds current approval-boundary evidence from local sandboxing, assisted approvals, proof-of-presence checks, risk-tiered guardrails, and Slack or Teams agent handoffs. Approval boundaries should separate low-risk diagnostic or planning work from actions that mutate repositories, consume credentials, alter dependencies, merge pull requests, or create durable external work. For high-impact actions, a visible approval prompt is strongest when paired with scoped sandbox policy, exact target evidence, and step-up reauthentication or MFA.
 
+The October 2 and 3 raw sources add approval-boundary evidence for harness gates, desktop control, and delegated tool identity. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) reinforces selective human gates and scoped delegated mandates, while the [topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) records desktop app control, recurring automations, and cross-surface continuation. Locally, approval records should say which work may continue unattended, which app or tool surface is allowed, which identity acts, and which result or risk requires the human to return.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -131,6 +133,7 @@ The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai
 - Require an accountable human maintainer for production AI-assisted code, while allowing lighter review only for low-blast-radius throwaway prototypes with explicit disposal or containment.
 - Tune mandatory review, automated rollback, service criticality, and ownership together so selective review does not erase human accountability.
 - Separate diagnostic autonomy from consequential mutation, and require scoped sandbox evidence plus step-up human presence for high-impact repository, dependency, credential, merge, or external-work actions.
+- Record unattended-continuation scope, app or tool allowlist, acting identity, delegated mandate, checkpoint trigger, and return-to-human condition when agents can keep working across sessions, desktops, or connected tools.
 
 ## Authoritative Sources
 
@@ -180,6 +183,8 @@ The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai
 - [August 27 topic news collector source](../../../raw/processed/2026-08-27/ai-dev-wiki-topic-news-collector-2026-08-27T003207Z.json)
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 
 ## Related Code
 
@@ -211,6 +216,7 @@ The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-03 with unattended-continuation, app-control, acting-identity, delegated-mandate, checkpoint, and return-to-human evidence.
 - Maintained on 2026-09-26 with local sandboxing, assisted approval, proof-of-presence, risk-tiered guardrail, and chat-agent handoff evidence.
 - Maintained on 2026-09-05 with checkpoint-placement, trigger, irreversible-action, and adoption-incentive evidence.
 - Maintained on 2026-09-06 with asynchronous-question, session-visibility, short-lived-credential, command-digest, peer-agent steering, and approval-payload evidence.

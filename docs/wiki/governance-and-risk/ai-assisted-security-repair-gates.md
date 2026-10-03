@@ -64,6 +64,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 The [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) adds current Copilot Memory and agentic autofix evidence. Repository-specific security memories should be treated as candidate repair knowledge, not authoritative rules: a past fix pattern needs provenance, alert scope, stale-pattern review, deterministic scanner or test evidence, and human security acceptance before it influences future code review, cloud-agent behavior, or security autofix output.
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds MCP prompt-injection incident response and agent-safety platform evidence. Security repair gates should freeze action chains when untrusted tool output may have steered the agent, preserve raw and normalized results, record policy decisions and approvals, validate write access, and prefer runtime safeguards or sandbox rule books over prompt-only restrictions for consequential repair work.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -103,6 +105,8 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - Treat reusable security-fix memories as draft repair guidance until provenance, scope, stale-pattern risk, scanner evidence, tests, and human review pass.
 - Pair AI security-review findings with deterministic scanners and CI evidence, keeping secondary incident summaries attributed when primary reports are not available.
 - Keep repository-specific autofix memories reviewable, scoped to the alert class, and separable from durable rules before allowing them to influence future repair or review behavior.
+- Freeze the action chain when MCP or retrieval output may have injected instructions, and require raw-result, normalized-result, policy, approval, write-validation, and rollback evidence before repair work resumes.
+- Prefer enforceable runtime safeguards, sandbox rules, and technical restrictions over prompt-only safety instructions when security repair agents can mutate code or systems.
 
 ## Authoritative Sources
 
@@ -135,6 +139,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
 
 ## Related Code
 
@@ -161,6 +166,7 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 ## Maintenance Notes
 
 - Maintained on 2026-09-26 with repository-specific autofix memory, alert-scope, stale-pattern, scanner, test, and human-security-acceptance evidence.
+- Maintained on 2026-10-03 with MCP prompt-injection freeze, raw and normalized result preservation, write-validation, rollback, sandbox, and runtime-safeguard evidence.
 - Maintained on 2026-09-18 with misalignment-disclosure, unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, and mitigation-review gates.
 - Maintained on 2026-09-25 with security autofix memory provenance, stale-pattern review, dependency verification, task-scoped credential, irreversible-action, circuit-breaker, and deterministic-scanner evidence.
 - Created on 2026-06-23 from public source guidance on AI-assisted vulnerability validation, maintainer consultation, patching, tests, CI, and disclosure coordination.

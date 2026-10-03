@@ -49,6 +49,8 @@ The September 4 raw sources add workflow-state and checkpoint evidence:
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds managed telemetry evidence for agent sessions. Session flow, model requests, tool use, managed telemetry settings, and content-capture defaults are process-layer state because they explain what the agent did without making prompts and responses part of central telemetry by default. Broad GitHub Copilot and OpenTelemetry coverage remains upstream-owned.
 
+The October 3 raw sources add persistent-agent and session-lifecycle evidence. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) treats always-on agents as stateful jobs rather than chat replies, while the [topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) records recurring automations, related-session navigation, attention badges, cleanup, PR creation, merge handling, Dev Container sessions, and cross-app continuation as process-layer state. Locally, the process layer should preserve job owner, session lineage, environment, attention state, pending checks, cross-surface handoff, and cleanup decision before background or continued work is accepted.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -73,6 +75,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Persist content-exclusion policy, model default, conversation branch, prompt timeline, collaboration surface, permission mode, UI resource boundary, approval state, and authoritative action result when agent work crosses desktop, CLI, chat, or application surfaces.
 - Persist model and budget policy, pause reason, monitor decision, session hierarchy, active root, merge state, reusable-workflow identity, and human-checkpoint result when long-running agent work can branch or stop.
 - Persist agent-session flow, model-request spans, tool-use spans, managed telemetry settings, and content-capture policy when telemetry is used to reconstruct workflow state.
+- Persist background-agent job owner, session lineage, environment selection, related-session links, attention state, failed-check state, pull-request handoff, cleanup decision, and cross-app continuation evidence when work can resume outside the active chat.
 
 ## Authoritative Sources
 
@@ -99,6 +102,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - [declarative agent workflow artifacts](declarative-agent-workflow-artifacts.md)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 
 ## Related Code
 
@@ -126,6 +131,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 - Maintained on 2026-09-04 with budget-policy, model-route, pause-monitor, session-hierarchy, active-root, merge-state, reusable-workflow identity, and checkpoint-state evidence.
 - Maintained on 2026-09-25 with session-flow, model-request, tool-use, telemetry-setting, and content-capture policy evidence.
+- Maintained on 2026-10-03 with background-agent job ownership, session lineage, attention state, PR handoff, environment, cleanup, and cross-app continuation evidence.
 - Maintained on 2026-08-29 with AI-native orchestration, cross-surface action, approval-point, owner, evidence, and rollback workflow-state signals.
 - Created on 2026-06-23 from local source guidance on AI process layers, workflow state, validation loops, tools, checkpoints, and compaction.
 - Maintained on 2026-07-02 with operational-readiness, workflow-memory, citation, logging, approval, and handoff-state requirements.

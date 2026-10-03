@@ -19,6 +19,8 @@ The [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-w
 
 The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) adds a service-delivery MCP example and a searchable-workspace retrieval example. Local practice should keep public-sector MCP, project search, and work-artifact search routed through the detailed leaves: retrieval supplies attributed evidence, while MCP tools need identity, transport, read/write scope, local testing, and audit controls before action.
 
+The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds retrieval-policy promotion evidence from RAGWarrant and incident-response evidence for MCP tool-output prompt injection. Locally, retrieval and MCP practice should preserve negative outcomes, quality gates, hard-risk gates, raw and normalized tool results, policy decisions, approvals, and rollback evidence before retrieved content or tool output changes production behavior.
+
 ## Practice Boundaries
 
 - Use retrieval to assemble evidence before asking the model for a factual or code-aware answer.
@@ -27,6 +29,8 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Keep action tools typed, logged, validated, and executed outside the model.
 - Use retrieval controls to narrow evidence and tool controls to govern action; do not let either surface become hidden authority.
 - Route searchable work artifacts through evidence verification and route service-delivery MCP tools through identity, transport, read/write scope, testing, and audit controls.
+- Treat retrieval-policy promotion as an auditable decision with retained negative outcomes, quality gates, hard-risk gates, and explicit promote, block, reject, or inconclusive results.
+- Freeze action chains and preserve raw plus normalized tool outputs when MCP tool content may carry prompt-injection instructions before any write or external action continues.
 
 ## Authoritative Sources
 
@@ -36,6 +40,7 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - [federation.md](../federation.md)
 - [July 1 leaf update watch source](../../../raw/processed/2026-07-01/ai-dev-wiki-leaf-update-watch-2026-07-01T123920-0400.json)
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
+- [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json)
 
 ## Related Code
 
@@ -68,3 +73,4 @@ The [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-
 - Maintained on 2026-06-23 as the retrieval and tool overview after splitting detailed practice leaves.
 - Maintained on 2026-07-01 with search-first retrieval, faceted scoping, and MCP metadata governance boundaries.
 - Maintained on 2026-07-14 with searchable work artifacts and service-delivery MCP routing to detailed evidence and action-control leaves.
+- Maintained on 2026-10-03 with retrieval-policy promotion, negative-outcome preservation, hard-risk gate, MCP prompt-injection freeze, and rollback evidence.

@@ -29,6 +29,8 @@ The [September 19 topic news collector source](../../../raw/processed/2026-09-19
 
 The September 20 raw sources reinforce the same risk with additional source coverage. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) and [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) support the local rule that high-volume AI-generated code needs confidence-building tests before broad rewrites, and that test quality should be challenged with mutation testing, design-stage checks, or formal models when ordinary generated tests could mirror the agent's own misunderstanding.
 
+The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds an explicit agent-feedback-loop lens for TDD. Tests should be written or selected before implementation when they encode the behavior the agent must satisfy, and the workflow should guard against an agent weakening or rewriting tests simply to reach a passing state.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -48,6 +50,7 @@ The September 20 raw sources reinforce the same risk with additional source cove
 - Pair agent TDD with layered tests, review notes, documentation intent, and deterministic CI evidence before treating generated code as production-ready.
 - Treat mutation testing, runtime monitoring, and formal models as escalation paths for high-risk AI-generated changes, not as blanket requirements for every assisted edit.
 - Prefer confidence-building tests before large AI refactors or rewrites, and challenge generated tests when they may simply encode the same flawed assumption as the generated implementation.
+- Treat test edits during agent repair as reviewable changes: the agent may propose better tests, but weakening acceptance criteria to satisfy completion is a boundary violation unless a human accepts the changed requirement.
 
 ## Authoritative Sources
 
@@ -63,6 +66,7 @@ The September 20 raw sources reinforce the same risk with additional source cove
 - [August 30 topic news collector source](../../../raw/processed/2026-08-30/ai-dev-wiki-topic-news-collector-2026-08-31T003307Z.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 
 ## Related Code
 
@@ -89,6 +93,7 @@ The September 20 raw sources reinforce the same risk with additional source cove
 ## Maintenance Notes
 
 - Maintained on 2026-09-20 with confidence-building tests before AI rewrites plus generated-test challenge, mutation-testing, and design-stage check evidence.
+- Maintained on 2026-10-03 with fail-first feedback-loop and anti-test-weakening guardrail evidence.
 - Maintained on 2026-09-19 with test-quality, generated-assertion, mutation-testing, formal-modeling, and design-level bug guidance.
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.

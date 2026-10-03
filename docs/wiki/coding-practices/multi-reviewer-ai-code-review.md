@@ -21,6 +21,8 @@ The review is useful only when distinct reviewer roles add different source-back
 - How synthesis resolved or retained disagreement.
 - Which human remained responsible for architecture, intent, security, and merge decisions.
 
+The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds adversarial review evidence. A main reviewer and critic can improve review quality only when disagreement is structured, source-grounded, and bounded: unsupported objections should be retracted, converged issues should drive the repair pass, and the loop should preserve the budget and scope cap that stopped further debate.
+
 ## Practice Boundaries
 
 - Require a synthesis step that merges duplicate findings, preserves meaningful disagreement, and explains which reviewer signal should drive human attention.
@@ -30,6 +32,8 @@ The review is useful only when distinct reviewer roles add different source-back
 - Preserve role-specific findings, source evidence, disagreement, synthesis rationale, and unresolved residual risk.
 - Avoid counting repeated comments or consensus language as quality unless the workflow improves source-backed finding coverage.
 - Keep human review authoritative for architecture, intent, security acceptance, and merge decisions.
+- Require adversarial reviewer or critic roles to cite code, tests, logs, policy, or source documents for each objection, and preserve retractions when evidence does not support the disagreement.
+- Bound review-convergence loops with a clear budget and route only converged, source-backed issues into writable repair work.
 - Route reusable role taxonomies through [layered AI code review roles](layered-ai-code-review-roles.md) and evaluation criteria through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
@@ -37,6 +41,7 @@ The review is useful only when distinct reviewer roles add different source-back
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
+- [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [intelligent code review](intelligent-code-review.md)
 - [layered AI code review roles](layered-ai-code-review-roles.md)
 - [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md)
@@ -66,5 +71,6 @@ The review is useful only when distinct reviewer roles add different source-back
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with multi-model audit, deduplication, actionability, and review-toil evidence.
+- Maintained on 2026-10-03 with adversarial reviewer, critic, evidence-backed disagreement, retraction, convergence, budget, and writable-scope evidence.
 
 - Created on 2026-09-16 from raw-source evidence about self-hosted multi-agent pull-request review patterns; next check should compare multi-reviewer findings against human triage records before expanding guidance.
