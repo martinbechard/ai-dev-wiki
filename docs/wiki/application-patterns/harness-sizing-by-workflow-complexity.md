@@ -21,7 +21,7 @@ The [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev
 
 The [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json) adds production-failure readiness evidence. Harness sizing should grow when a workflow needs durable execution, checkpoint recovery, scoped MCP access, component identity, behavior baselines, containment testing, activity logging, and memory inspection; a demo-complete harness is undersized when it cannot survive failure or explain recovery.
 
-The August 25 clipping and raw sources add generated-code execution and loop-to-graph escalation evidence. The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) shows a narrow host-function boundary for untrusted JavaScript or TypeScript, durable interruption for approval or authentication, replay-safe resume, and timeout or memory limits. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) frames simple agent, durable loop, graph, and orchestration as increasing architecture levels. Locally, a harness should grow from sandboxed computation to resumable loops and graph coordination only when host-function authority, state, recovery, approval, or multi-agent topology requires it.
+The August 25 clipping and raw sources add generated-code execution and loop-to-graph escalation evidence. The [Run SDK clipping](../../../raw/processed/link-aliases/run-sdk-secure-eval.md) shows a narrow host-function boundary for untrusted JavaScript or TypeScript, durable interruption for approval or authentication, replay-safe resume, and timeout or memory limits. The [evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json) frames simple agent, durable loop, graph, and orchestration as increasing architecture levels. Locally, a harness should grow from sandboxed computation to resumable loops and graph coordination only when host-function authority, state, recovery, approval, or multi-agent topology requires it.
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds AI model harness, long-running runtime, and workspace-layer evidence. Harness sizing should explicitly account for the layer that owns business context, memory, token cost, model routing, parallel workspaces, reviewable commits, durable execution, checkpoints, retries, scoped permissions, observability, and recovery.
 
@@ -31,6 +31,16 @@ The September 3 raw sources add security-control-plane and interoperability evid
 - The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) treats harness specs, drift checks, durable sessions, permissions, memory, cost, approvals, and sandbox settings as portable configuration evidence.
 
 The September 26 raw sources add local sandboxing, telemetry, and self-hosting sizing evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records per-project filesystem, network, and credential policy controls plus session telemetry as harness features for local coding-agent work. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records self-hosted agent stack sizing as a secondary-practice lead. Locally, harness sizing should separate orchestration, inference, embeddings, vector database, memory store, sandbox, telemetry, and compliance controls instead of sizing only by model parameters or context length.
+
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds local runtime and evaluation-coupling evidence. A local coding-agent harness grows in size when one repeatable workflow must cover:
+
+- Local model serving.
+- Bug-fix execution.
+- Security limitations.
+- Tool metrics.
+- Refusal calibration.
+- Injection tests.
+- CI evaluation gates.
 
 ## Practice Boundaries
 
@@ -49,6 +59,7 @@ The September 26 raw sources add local sandboxing, telemetry, and self-hosting s
 - Add pre-tool classifiers, sandbox hardening, critic/review roles, information-flow controls, persistent-state inspection, and runtime mediation when a workflow can probe, exploit, repair, deploy, or cross trust boundaries.
 - Treat declared harness specs, drift checks, context handling, permission stance, memory behavior, cost controls, approvals, and sandbox configuration as sizing evidence when a harness must move across runtimes.
 - Size self-hosted or local coding-agent stacks by orchestration, inference, embeddings, vector storage, memory, sandbox policy, telemetry, and compliance needs rather than by model size alone.
+- Grow local harness controls when setup, bug-fix execution, security limitations, tool metrics, refusal calibration, injection tests, and CI gates must be validated together.
 
 ## Authoritative Sources
 
@@ -57,7 +68,7 @@ The September 26 raw sources add local sandboxing, telemetry, and self-hosting s
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 4 leaf update watch source](../../../raw/processed/2026-08-04/ai-dev-wiki-leaf-update-watch-2026-08-04T210145-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
-- [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md)
+- [Run SDK clipping](../../../raw/processed/link-aliases/run-sdk-secure-eval.md)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
@@ -67,6 +78,7 @@ The September 26 raw sources add local sandboxing, telemetry, and self-hosting s
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 
 ## Related Code
 
@@ -93,6 +105,7 @@ The September 26 raw sources add local sandboxing, telemetry, and self-hosting s
 ## Maintenance Notes
 
 - Maintained on 2026-09-26 with local sandboxing, filesystem/network/credential policy, telemetry, self-hosted stack, inference, embedding, vector-store, memory, and compliance sizing evidence.
+- Maintained on 2026-10-04 with local setup, bug-fix execution, security-limit, tool-metric, refusal-calibration, injection-test, and CI-gate sizing evidence.
 - Maintained on 2026-09-19 with runtime-embedding, process-boundary, startup, memory, crash-isolation, interop, supervision, monitoring, and reliability sizing evidence.
 - Maintained on 2026-08-29 with model-harness, workspace-layer, durable-runtime, cost-control, and recovery-sizing inputs.
 - Created on 2026-07-28 from July 28 raw evidence about matching harness responsibilities to action and context complexity.

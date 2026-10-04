@@ -31,7 +31,7 @@ The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-d
 
 The [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json) adds semantic-failure telemetry. A workflow can look healthy at the infrastructure layer while the agent is looping, using irrelevant evidence, or failing the task objective. Runtime telemetry should therefore include traces, tool-loop summaries, evaluation outcomes, retry reasons, and failure-attribution fields in addition to latency and resource metrics.
 
-The [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md) adds context-layer telemetry. When a harness compresses or routes context, users and operators need visible signals for token savings, cache hits, retrieval fallbacks, compressor choice, provenance, latency, and drift checks so optimization remains inspectable.
+The [Headroom context optimization source](../../../raw/processed/link-aliases/headroom-context-optimization-layer.md) adds context-layer telemetry. When a harness compresses or routes context, users and operators need visible signals for token savings, cache hits, retrieval fallbacks, compressor choice, provenance, latency, and drift checks so optimization remains inspectable.
 
 The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds security and behavior telemetry. Agent observability should include tool calls, reasoning-loop state, state transitions, quality checks, verification results, and security posture signals so operators can distinguish healthy execution from unsafe, looping, or task-wrong behavior.
 
@@ -90,6 +90,16 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 The September 26 raw sources add coding-agent telemetry and shared-state surface evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records OpenTelemetry export through enterprise-managed settings, session model and tool spans, long-task status, conversation rewind, and remote execution signals. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records shared canvas-style interfaces where both user and agent can update state. Locally, progress telemetry should join structural traces, approval waits, shared UI state, originating conversation links, rewind points, and remote-run status while treating prompt or response capture as a governed content decision.
 
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds workflow-journey accountability evidence. When agents cross financial, regulated, or multi-system workflows, runtime telemetry should reconstruct:
+
+- Systems accessed.
+- Actions taken.
+- Human judgment points.
+- Owner handoffs.
+- Small-error amplification paths.
+
+This evidence is needed instead of relying only on model explainability or final summaries.
+
 ## Practice Boundaries
 
 - Expose runtime overhead, supervision, crash recovery, nested calls, retries, review pressure, and accepted-outcome cost when agent execution scales beyond one interactive turn.
@@ -137,6 +147,7 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 - Join OpenTelemetry-style structural traces, long-task status, shared state surfaces, conversation-origin links, remote-run state, and rewind points without silently enabling prompt or response content capture.
 - Show rollout baseline, production-signal comparison, prepared revert state, security-review status, and externally controlled audit evidence when a coding-agent workflow spans pull request, deployment, and post-deploy monitoring.
 - Show selected workflow mode, critic role, critic model boundary, long-task state, and real-time progress updates when multi-model or critique workflows run.
+- Reconstruct workflow journeys across systems with accessed systems, actions taken, human judgment points, owner handoffs, and error-amplification evidence when agents operate in regulated or multi-system workflows.
 
 ## Authoritative Sources
 
@@ -151,11 +162,11 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
-- [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
+- [Local model operations source](../../../raw/processed/link-aliases/local-model-operations.md)
 - [June 24 leaf update watch source](../../../raw/processed/2026-06-24/ai-dev-wiki-leaf-update-watch-2026-06-24T210337-0400.json)
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
 - [June 28 leaf update watch source](../../../raw/processed/2026-06-28/ai-dev-wiki-leaf-update-watch-2026-06-28T210247-0400.json)
-- [Headroom context optimization source](../../../raw/processed/Headroom A Context Optimization Layer for LLM Applications - Tejas Chopra, Netflix, Inc..md)
+- [Headroom context optimization source](../../../raw/processed/link-aliases/headroom-context-optimization-layer.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [Application harness patterns](application-harness-patterns.md)
 - [July 7 topic news collector source](../../../raw/processed/2026-07-07/ai-dev-wiki-topic-news-collector-2026-07-07T203239-0400.json)
@@ -186,6 +197,7 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 
 ## Related Code
 
@@ -214,6 +226,7 @@ The September 26 raw sources add coding-agent telemetry and shared-state surface
 ## Maintenance Notes
 
 - Maintained on 2026-09-27 with rollout baseline, production-signal, revert-preparation, security-review status, and tamper-resistant audit evidence.
+- Maintained on 2026-10-04 with workflow-journey accountability, cross-system action, human-judgment, owner-handoff, and error-amplification evidence.
 - Maintained on 2026-10-01 with multi-model workflow mode, read-only critic, long-task status, clearer progress, and real-time update evidence.
 - Maintained on 2026-09-26 with OpenTelemetry export, structural traces, long-task status, shared canvas state, conversation-origin links, rewind, and remote-run evidence.
 - Maintained on 2026-09-25 with huge-PR rendering, headless probe, on-disk log, runtime instrumentation, health-signal, and measurement-loop evidence.

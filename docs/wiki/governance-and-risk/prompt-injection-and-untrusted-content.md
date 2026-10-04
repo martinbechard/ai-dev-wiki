@@ -31,7 +31,7 @@ The [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-w
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add two repository-trust cases. Untrusted third-party repositories can carry prompt injections across ordinary source files even without explicit hooks or tool configuration, and repo-local instruction files such as AGENTS.md can become attacker-controlled instructions when they are accepted before the user's task. Local practice should load those files as evidence until repository trust, instruction provenance, and command authority are established.
 
-The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds an issue-triggered agent case. Public issue titles and bodies are attacker-writable source text, not trusted task instructions, even when an automation intentionally reads them. If an agent can read private repositories and post public comments in the same workflow, the trust-boundary failure is already present before the jailbreak phrase succeeds; output posting, repository reads, and cross-repository lookup need separate policy gates.
+The [GitLost clipping](../../../raw/processed/link-aliases/gitlost-jailbreak-llms.md) adds an issue-triggered agent case. Public issue titles and bodies are attacker-writable source text, not trusted task instructions, even when an automation intentionally reads them. If an agent can read private repositories and post public comments in the same workflow, the trust-boundary failure is already present before the jailbreak phrase succeeds; output posting, repository reads, and cross-repository lookup need separate policy gates.
 
 The [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) reinforces prompt-injection handling for GitHub-style coding agents and public development workflows. Issue text, pull-request content, generated review artifacts, and runtime files should remain evidence until repository trust, instruction provenance, and harness policy decide whether any instruction can affect tools, dependencies, credentials, or public output.
 
@@ -68,6 +68,13 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 The [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json) adds MCP prompt-injection and runtime-filtering evidence. Untrusted open-web content returned through an MCP server can steer a later authenticated action if provenance is lost between retrieval and tool arguments. Runtime filters can help only when they inspect prompts, responses, commands, tool calls, data movement, follow-up instructions, and scope changes before action. Locally, the content boundary should be chain-aware: a harmless-looking retrieved page can become dangerous when it supplies a destination, command, package, MCP server, credential use, or spend request to a later step.
 
 The September 6 raw sources add repository-config and index-level security-source evidence. The [leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json) and [topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json) support treating repository state and index-only security summaries as untrusted evidence until stronger checks confirm them.
+
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds current agent-tool prompt-injection evidence from files, pages, repository text, API results, MCP output, email content, and obfuscated payloads. Local controls should:
+
+- Label tool results as evidence.
+- Require user-authored confirmation before risky actions.
+- Prevent execution before warning-only detections.
+- Render untrusted output without network access when output display itself can trigger a follow-on action.
 
 ## Practice Boundaries
 
@@ -117,16 +124,20 @@ The September 6 raw sources add repository-config and index-level security-sourc
 - Treat repository configuration, package manifests, and generated files as untrusted evidence until path and execution-boundary checks confirm the claim.
 - Defer index-only security summaries until the article body or an equivalent primary source is verified.
 - Treat prompt-audit reports, prompt-injection fixes, local session traces, and agent-authored logs as evidence that still needs provenance and tamper-resistance checks before it can expand trust in the run.
+- Label tool results, MCP responses, email content, and API output as source evidence and keep user-authored confirmation outside the model loop before risky actions.
+- Treat warning-after-execution prompt-injection detections as failed controls for consequential workflows; prevent execution before the hostile content reaches an action path.
+- Render untrusted agent output in no-network or otherwise constrained contexts when displayed output can carry active links, scripts, or follow-on instructions.
 
 ## Authoritative Sources
 
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [July 23 leaf update watch source](../../../raw/processed/2026-07-23/ai-dev-wiki-leaf-update-watch-2026-07-23T210243-0400.json)
-- [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
+- [OWASP LLM vulnerabilities source](../../../raw/processed/link-aliases/owasp-top-10-llm-vulnerabilities.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [retrieval and tools practice](../retrieval-and-tools/rag-tools-and-mcp-practice.md)
@@ -138,7 +149,7 @@ The September 6 raw sources add repository-config and index-level security-sourc
 - [July 8 leaf update watch source](../../../raw/processed/2026-07-08/ai-dev-wiki-leaf-update-watch-2026-07-08T210052-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
-- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
+- [GitLost clipping](../../../raw/processed/link-aliases/gitlost-jailbreak-llms.md)
 - [July 11 topic news collector source](../../../raw/processed/2026-07-11/ai-dev-wiki-topic-news-collector-2026-07-11T203215-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 13 leaf update watch source](../../../raw/processed/2026-07-13/ai-dev-wiki-leaf-update-watch-2026-07-13T210146-0400.json)
@@ -181,6 +192,7 @@ The September 6 raw sources add repository-config and index-level security-sourc
 ## Maintenance Notes
 
 - Maintained on 2026-09-27 with prompt-audit, prompt-injection-fix, sandbox-boundary, and tamperable local-trace evidence.
+- Maintained on 2026-10-04 with tool-result labelling, user-authored confirmation, pre-action execution prevention, and no-network rendering evidence.
 - Maintained on 2026-09-19 with compaction-summary injection, memory/tool/network surfaces, and agentic self-modification prompt-injection evidence.
 - Maintained on 2026-08-29 with spreadsheet, indirect-prompt-injection, untrusted-document, containment, deny-by-default tool, and dependency-gate evidence.
 - Maintained on 2026-09-06 with repository-config, package-install, trusted-host-component, generated-state, index-only-source, and execution-boundary evidence.

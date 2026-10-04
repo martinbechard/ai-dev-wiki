@@ -31,9 +31,19 @@ The [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-de
 - Source artifacts such as PDFs, filings, resumes, connected-app records, or hidden formatted text can carry machine-readable instructions a human reviewer may not see.
 - Structured extraction should preserve provenance, hidden-content inspection state, refusal or retry state, and downstream authorization evidence before an artifact becomes an action.
 
-The [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md) adds a code-mode drafter boundary. When an agent drafts JavaScript or TypeScript instead of a JSON object, the generated program should still execute behind a narrow host-function interface, with trusted service clients kept outside the sandbox, serialized host-call results, approval or authentication interruption, replay-safe resume, and per-run resource limits. Locally, code-mode execution is a stronger drafter pattern, not permission for generated code to inherit application secrets, Node.js access, network access, or generic request capabilities.
+The [Run SDK clipping](../../../raw/processed/link-aliases/run-sdk-secure-eval.md) adds a code-mode drafter boundary. When an agent drafts JavaScript or TypeScript instead of a JSON object, the generated program should still execute behind a narrow host-function interface, with trusted service clients kept outside the sandbox, serialized host-call results, approval or authentication interruption, replay-safe resume, and per-run resource limits. Locally, code-mode execution is a stronger drafter pattern, not permission for generated code to inherit application secrets, Node.js access, network access, or generic request capabilities.
 
 The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json) adds structured-output and prompt-versioning evidence. Typed agent results, response-format schemas, immutable prompt versions, eval results, guardrails, model choices, and structured-output schemas should be treated as reviewable system contracts; they still need deterministic validators, credential-boundary review, source isolation, and regression evidence before promotion.
+
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds structured-output strategy evidence from a LangChain openwiki reference. The harness should explicitly handle:
+
+- Stale structured-response state.
+- Parsing retries.
+- Provider-native schema behavior.
+- Tool-call schemas.
+- Raw JSON-schema limitations.
+
+Those concerns should not be hidden inside a model or provider feature.
 
 ## Practice Boundaries
 
@@ -54,10 +64,12 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - Preserve provenance, validation stage, business-rule verdict, authorization state, retry count, and refusal or truncation handling as fields that downstream code can audit.
 - Treat generated programs as structured artifacts whose host functions, resource limits, replay records, and approval interruptions are part of the validation contract.
 - Prefer product-shaped host functions over generic request functions so authorization checks remain attached to the business action.
+- Clear stale structured-response state before retries or later turns can reuse it, and record provider-native, tool-call, and raw JSON-schema limits in the validation contract.
 
 ## Authoritative Sources
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [Application harness patterns](application-harness-patterns.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -68,7 +80,7 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
-- [Run SDK clipping](../../../raw/processed/Introducing Run SDK secure eval for your agents.md)
+- [Run SDK clipping](../../../raw/processed/link-aliases/run-sdk-secure-eval.md)
 
 ## Related Code
 
@@ -95,6 +107,7 @@ The [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-de
 ## Maintenance Notes
 
 - Maintained on 2026-08-29 with prompt-version, schema-contract, credential-boundary, source-isolation, and eval-promotion evidence.
+- Maintained on 2026-10-04 with structured-output strategy, stale-state clearing, retry, provider-native schema, tool-call schema, and raw JSON-schema limitation evidence.
 - Created on 2026-06-23 from the application harness source guidance on structured output, DSLs, and model-drafted executable artifacts.
 - Maintained on 2026-07-07 with structured-output latency, drafter verification cost, and whole-loop validation guidance.
 - Maintained on 2026-07-11 with artifact-producing agent boundaries for files, connector scope, approval state, and audit evidence.

@@ -15,7 +15,7 @@ Local model operation is a harness design question, not only a model-selection q
 
 The Dwarf Star source illustrates local runtime concerns that matter for application design: selective quantization, SSD-backed expert caching, resumable session state, distributed prefill tradeoffs, and real-time runtime metrics. [Representative workflow calibration](../verification-and-evals/representative-workflow-calibration.md) owns calibration prompts, drift checks, and workflow-specific eval coverage. This page owns the application harness lens: how local operation affects product latency, memory, privacy, tool-call reliability, session continuity, validation, and visible runtime health.
 
-The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md) adds a workstation-execution caution for developer agents. Local inference can avoid cloud API charges, but the harness still has to account for prefill latency, memory ceilings, endpoint maintenance, crash recovery, lost developer flow, and weaker centralized telemetry. Local execution is not a default cost-control answer unless the workflow can tolerate those constraints and still produce verifiable value.
+The [Affordable AI Agents source](../../../raw/processed/link-aliases/affordable-ai-agents.md) adds a workstation-execution caution for developer agents. Local inference can avoid cloud API charges, but the harness still has to account for prefill latency, memory ceilings, endpoint maintenance, crash recovery, lost developer flow, and weaker centralized telemetry. Local execution is not a default cost-control answer unless the workflow can tolerate those constraints and still produce verifiable value.
 
 The [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json) adds a repository-trust gate for local agent harnesses. Local execution must not treat cloned repositories, setup scripts, DNS indirection, dependency install steps, or agent-proposed remediation commands as safe merely because they run on a developer workstation. The harness should inspect and gate setup commands before execution.
 
@@ -29,6 +29,12 @@ The September 3 raw sources add offline-route and local-memory evidence:
 - The [topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json) adds local embeddings, private sharing defaults, team memory stores, and offline/local inference routes as harness choices.
 
 Locally, local runtime evaluation should still check audit and approval evidence.
+
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds local OpenHands and Ollama tutorial evidence that local setup, bug fixing, security limits, and agent evaluation are being taught together. Locally, a local runtime harness should include security and evaluation checklists beside install steps so workstation setup does not outrun:
+
+- Verification.
+- Tool-permission review.
+- Injection testing.
 
 ## Practice Boundaries
 
@@ -47,20 +53,22 @@ Locally, local runtime evaluation should still check audit and approval evidence
 - Measure token cost, latency, utilization, security posture, update cadence, and fallback behavior before adopting local or deskside agentic runtimes.
 - Keep hosted fallback and governance routing explicit when local capacity or model coverage cannot satisfy a workflow.
 - Include memory ownership, embedding locality, private sharing defaults, offline fallback, outbound-meter visibility, budget envelope behavior, and audit evidence when evaluating local or deskside runtimes.
+- Pair local setup instructions with security limits, tool-permission checks, injection tests, and evaluation metrics before treating a workstation runtime as ready for coding-agent work.
 
 ## Authoritative Sources
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
-- [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
+- [Local model operations source](../../../raw/processed/link-aliases/local-model-operations.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Representative workflow calibration](../verification-and-evals/representative-workflow-calibration.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Application harness patterns](application-harness-patterns.md)
-- [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
+- [Affordable AI Agents source](../../../raw/processed/link-aliases/affordable-ai-agents.md)
 - [July 3 leaf update watch source](../../../raw/processed/2026-07-03/ai-dev-wiki-leaf-update-watch-2026-07-03T210126-0400.json)
 - [July 24 leaf update watch source](../../../raw/processed/2026-07-24/ai-dev-wiki-leaf-update-watch-2026-07-24T210141-0400.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 
 ## Related Code
 
@@ -96,3 +104,4 @@ Locally, local runtime evaluation should still check audit and approval evidence
 - Maintained on 2026-07-03 with repository trust, setup-command inspection, and local execution gates for agent harnesses.
 - Maintained on 2026-07-24 with local runtime cost, latency, capacity, security, update-cadence, and fallback-evaluation guidance.
 - Maintained on 2026-09-03 with local-memory ownership, embedding locality, private sharing defaults, offline inference routes, outbound meters, budget envelopes, and audit-evidence guidance.
+- Maintained on 2026-10-04 with local setup, security-limit, injection-test, tool-metric, refusal-calibration, and evaluation-checklist evidence.

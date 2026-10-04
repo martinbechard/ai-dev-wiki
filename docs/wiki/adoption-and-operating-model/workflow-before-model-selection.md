@@ -25,7 +25,7 @@ The [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-d
 
 The [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json) adds model and tooling administration signals. Low-latency coding models, review depth defaults, worktree support, and assisted merge or conflict workflows are becoming configurable platform settings. The local rule is to treat those settings as workflow policy, cost, and review-depth decisions rather than individual developer preferences.
 
-The [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md) adds a hosting and routing lens. The workflow definition should identify whether a task is exploratory, high-frequency automation, premium review, background debugging, or local-only execution before selecting a model or infrastructure path. Hosting choices belong downstream of the same workflow analysis because managed APIs, subscriptions, self-hosted clusters, and workstation inference change cost, latency, telemetry, staffing, and auditability.
+The [Affordable AI Agents source](../../../raw/processed/link-aliases/affordable-ai-agents.md) adds a hosting and routing lens. The workflow definition should identify whether a task is exploratory, high-frequency automation, premium review, background debugging, or local-only execution before selecting a model or infrastructure path. Hosting choices belong downstream of the same workflow analysis because managed APIs, subscriptions, self-hosted clusters, and workstation inference change cost, latency, telemetry, staffing, and auditability.
 
 The [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json) and [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json) add two routing checks. First, delegated task execution needs delegation boundaries, review checkpoints, escalation paths, and intervention modes before a model or remote-agent surface is selected. Second, multi-model coding environments need task-fit evals and organization defaults, not a single global assistant policy.
 
@@ -37,7 +37,7 @@ The [July 1 evening topic news collector source](../../../raw/processed/2026-07-
 
 The [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json) adds workflow-readiness and tool-selection signals. Agent workflows need trusted data, permissions, connected systems, citations, logging, approval checkpoints, state memory, and handoff shape before model or product choice. Coding-agent selection should account for editor fit, runtime constraints, model routing, multi-agent workspace support, and cost transparency as workflow surfaces rather than product rankings.
 
-The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md) add procurement and channel-workflow inputs. Enterprise coding-agent rollout should first answer identity, audit, retention, residency, deployment, support, and evidence requirements. Chat-agent workflows should also decide which channel events matter, when the bot subscribes to a thread, what state store is required, and which responses can be streamed or posted back before choosing a platform or model route.
+The [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json) and [Chat SDK clipping](../../../raw/processed/link-aliases/universal-chat-layer.md) add procurement and channel-workflow inputs. Enterprise coding-agent rollout should first answer identity, audit, retention, residency, deployment, support, and evidence requirements. Chat-agent workflows should also decide which channel events matter, when the bot subscribes to a thread, what state store is required, and which responses can be streamed or posted back before choosing a platform or model route.
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) adds admin-enabled model routing, repository overview generation, and modernization workflow packages. Workflow selection should decide when a source-backed repository orientation is sufficient, when a stronger model route is justified by task risk or context size, and when a specialized multi-agent modernization workflow needs its own gates, roles, and cost evidence.
 
@@ -49,7 +49,7 @@ The [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-d
 
 The [July 14 topic news collector source](../../../raw/processed/2026-07-14/ai-dev-wiki-topic-news-collector-2026-07-14T203259-0400.json) and [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json) add shared-capability, service-delivery, and multi-repository workflow signals. Teams should decide whether the workflow needs centrally funded identity, trusted connectors, curated knowledge, evaluations, observability, model routing, reusable agent patterns, domain-expert-owned MCP servers, or multi-repository workspaces before standardizing the model or desktop surface.
 
-The July 18-21 raw sources reinforce workflow selection as routing design. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) and [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) tie coding-assistant workflows to reusable skills, read-only repository research, task-appropriate models, setup-prompt governance, durable instruction scope, and context-continuity architecture. The [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md) adds a cost-control lesson: high-effort or multi-agent modes should be selected by task decomposition, risk, and verification need, not as a blanket default.
+The July 18-21 raw sources reinforce workflow selection as routing design. The [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json) and [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json) tie coding-assistant workflows to reusable skills, read-only repository research, task-appropriate models, setup-prompt governance, durable instruction scope, and context-continuity architecture. The [Codex ultra-mode clipping](../../../raw/processed/link-aliases/codex-ultra-mode.md) adds a cost-control lesson: high-effort or multi-agent modes should be selected by task decomposition, risk, and verification need, not as a blanket default.
 
 The [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json) adds regulated-industry scaling and benchmark-selection evidence. Workflow selection should choose task privilege, workspace isolation, validation loop, platform observability, and workflow-fit evals before selecting a coding model or accepting aggregate leaderboard scores.
 
@@ -100,6 +100,17 @@ The September 7 raw sources add AI-first SDLC, build-versus-buy, and model-polic
 The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds assistant-surface selection evidence. Workflow selection should identify where context, sandboxing, recurring work, enterprise runtime controls, alignment, and code execution live before model capability or product branding decides the route.
 
 The September 14 raw sources add routing and enterprise-platform workflow signals. The [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json) records cost-quality model tiers and Red Hat AI safety and multi-tenancy controls, while the [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records Sourcegraph-style batch changes and DoD-style evidence expectations. Locally, workflow selection should decide whether a task is routine, quality-sensitive, batch-rollout, or regulated before selecting model route or platform controls; professional training curriculum evidence belongs in [junior learning paths](junior-learning-paths-in-agentic-teams.md).
+
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds task-risk-based autonomy evidence. Workflow selection should define these items before allowing an agent to plan, edit, execute tools, or deploy:
+
+- Outcome.
+- Context.
+- Boundaries.
+- Reviewable increments.
+- Independent verification.
+- Human approval points.
+
+Autonomy should scale with reversibility, permission level, verification strength, and visibility of actions.
 
 ## Practice Boundaries
 
@@ -169,6 +180,8 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - Treat efficiency, balance, and intelligence model tiers as workflow policy controls: decide cost, latency, quality, billing, and reproducibility expectations before allowing automatic routing to choose the model for each prompt.
 - Track adoption by workflow surface so enablement and policy decisions distinguish completion, agent edit, code review, CLI, app, and cloud-agent use.
 - Define budget-request justification and approval evidence when metered assistant use becomes a recurring workflow dependency.
+- Select autonomy level by task risk, reversibility, permission level, verification strength, and action visibility before selecting the model, assistant surface, or agent mode.
+- Require outcome, context, boundary, increment, independent-verification, and approval-point definitions before agentic coding work becomes delegated execution.
 
 ## Authoritative Sources
 
@@ -183,6 +196,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -191,12 +205,12 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
-- [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
+- [Agentic team structures source](../../../raw/processed/link-aliases/agentic-team-structures-aws-events.md)
 - [Leaf Update Watch](../source-workflows/leaf-update-watch.md) source: [raw artifact](../../../raw/processed/2026-06-23/ai-dev-wiki-leaf-update-watch-2026-06-23T210209-0400.json)
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
 - [June 25 leaf update watch source](../../../raw/processed/2026-06-25/ai-dev-wiki-leaf-update-watch-2026-06-25T210126-0400.json)
 - [June 26 topic news collector source](../../../raw/processed/2026-06-26/ai-dev-wiki-topic-news-collector-2026-06-26T203331-0400.json)
-- [Affordable AI Agents source](../../../raw/processed/The Affordable AI Agents.md)
+- [Affordable AI Agents source](../../../raw/processed/link-aliases/affordable-ai-agents.md)
 - [June 27 topic news collector source](../../../raw/processed/2026-06-27/ai-dev-wiki-topic-news-collector-2026-06-27T203047-0400.json)
 - [June 27 leaf update watch source](../../../raw/processed/2026-06-27/ai-dev-wiki-leaf-update-watch-2026-06-27T210128-0400.json)
 - [June 28 topic news collector source](../../../raw/processed/2026-06-28/ai-dev-wiki-topic-news-collector-2026-06-28T203100-0400.json)
@@ -204,7 +218,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [July 1 evening topic news collector source](../../../raw/processed/2026-07-01/ai-dev-wiki-topic-news-collector-2026-07-01T203225-0400.json)
 - [July 2 leaf update watch source](../../../raw/processed/2026-07-02/ai-dev-wiki-leaf-update-watch-2026-07-02T210052-0400.json)
 - [July 6 topic news collector source](../../../raw/processed/2026-07-06/ai-dev-wiki-topic-news-collector-2026-07-06T203053-0400.json)
-- [Chat SDK clipping](../../../raw/processed/Universal chat layer for building bots and agents.md)
+- [Chat SDK clipping](../../../raw/processed/link-aliases/universal-chat-layer.md)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 10 leaf update watch source](../../../raw/processed/2026-07-10/ai-dev-wiki-leaf-update-watch-2026-07-10T210209-0400.json)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
@@ -213,7 +227,7 @@ The September 14 raw sources add routing and enterprise-platform workflow signal
 - [July 14 leaf update watch source](../../../raw/processed/2026-07-14/ai-dev-wiki-leaf-update-watch-2026-07-14T210238-0400.json)
 - [July 18 topic news collector source](../../../raw/processed/2026-07-18/ai-dev-wiki-topic-news-collector-2026-07-18T203453-0400.json)
 - [July 20 topic news collector source](../../../raw/processed/2026-07-20/ai-dev-wiki-topic-news-collector-2026-07-20T203200-0400.json)
-- [Codex ultra-mode clipping](../../../raw/processed/what does theo have to say about Codex ultra mode.md)
+- [Codex ultra-mode clipping](../../../raw/processed/link-aliases/codex-ultra-mode.md)
 - [July 22 topic news collector source](../../../raw/processed/2026-07-22/ai-dev-wiki-topic-news-collector-2026-07-22T203140-0400.json)
 - [July 22 leaf update watch source](../../../raw/processed/2026-07-22/ai-dev-wiki-leaf-update-watch-2026-07-22T210121-0400.json)
 - [July 26 topic news collector source](../../../raw/processed/2026-07-26/ai-dev-wiki-topic-news-collector-2026-07-26T203054-0400.json)

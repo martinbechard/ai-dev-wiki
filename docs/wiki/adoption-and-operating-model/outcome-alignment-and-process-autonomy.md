@@ -13,7 +13,7 @@ The September 27 topic news collector source adds AI-engineering-architect and c
 
 Outcome alignment and process autonomy define how teams avoid both centralized process uniformity and unmanaged local variation. The local operating model aligns teams on outcomes, accountability, source handling, verification, security boundaries, and shared platform guardrails while letting the people closest to the work shape the workflow mechanics.
 
-The [process-autonomy source](../../../raw/processed/Allen Holub - On process.md) argues that teams should customize process to their needs, coordinate constantly, and receive guidance and support when alignment is missing. The [agentic team-structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md) applies a similar boundary to agentic work: become strict about outcome variance, tolerant of execution variance, and use guardrails around the outcomes that matter.
+The [process-autonomy source](../../../raw/processed/link-aliases/allen-holub-on-process.md) argues that teams should customize process to their needs, coordinate constantly, and receive guidance and support when alignment is missing. The [agentic team-structures source](../../../raw/processed/link-aliases/agentic-team-structures-aws-events.md) applies a similar boundary to agentic work: become strict about outcome variance, tolerant of execution variance, and use guardrails around the outcomes that matter.
 
 This page owns the operating-model rule. Platform, permissions, and audit enforcement belong to [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md).
 
@@ -30,6 +30,17 @@ The [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-d
 The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json) reinforces that outcome alignment should not become centralized token or tool-use conformance. AI wallets, tokenmaxxing concerns, PR-state-normalized benchmarks, and embedded execution teams all point to the same local rule: teams can choose different agent workflows, but shared governance should compare accepted outcomes, review burden, cost, safety evidence, and customer or workflow value rather than raw AI activity.
 
 The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds continuous-governance and agent-incident evidence. Outcome autonomy remains acceptable only when teams can produce comparable live evidence for identity, permissions, accessed systems, tool calls, data touched, business purpose, behavior baselines, incident records, and accountability trails. Periodic approval of a workflow is not enough when prompts, memory, model routing, and tool access can change underneath the team process.
+
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds current developer-role and measurement evidence. As AI coding shifts work toward executable specification, context curation, proposal evaluation, architecture, security, deployment accountability, and outcome measurement, process autonomy should be evaluated by:
+
+- Review time.
+- Escaped defects.
+- Rework.
+- Security findings.
+- Customer impact.
+- Accepted outcomes.
+
+Generated lines and perceived speed are weaker signals.
 
 ## Practice Boundaries
 
@@ -50,12 +61,14 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Require comparable live evidence for identity, permissions, systems accessed, APIs called, data touched, business purpose, behavior baseline, incident records, and accountability when process-autonomous teams use agents.
 - Assign explicit ownership for agentic workflow tooling, evals, permission rules, review loops, testing, deployment automation, model/provider selection, and velocity benchmarks when those controls affect multiple teams.
 - Compare agent-capability claims and architecture-owner programs by accepted delivery, quality, maintainability, review burden, risk reduction, and governed autonomy rather than by raw agent count or tool adoption.
+- Measure AI-assisted development by review time, escaped defects, rework, security findings, customer impact, and accepted outcomes rather than generated lines, raw speed, or perceived productivity.
+- Treat executable specification, context curation, proposal evaluation, architecture, security, and deployment accountability as developer responsibilities that need evidence, not as overhead outside the outcome model.
 
 ## Authoritative Sources
 
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
-- [Process autonomy source](../../../raw/processed/Allen Holub - On process.md)
-- [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
+- [Process autonomy source](../../../raw/processed/link-aliases/allen-holub-on-process.md)
+- [Agentic team structures source](../../../raw/processed/link-aliases/agentic-team-structures-aws-events.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 - [July 5 topic news collector source](../../../raw/processed/2026-07-05/ai-dev-wiki-topic-news-collector-2026-07-05T203304-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
@@ -65,6 +78,7 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - [July 29 topic news collector source](../../../raw/processed/2026-07-29/ai-dev-wiki-topic-news-collector-2026-07-29T203119-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 
 ## Related Code
 
@@ -101,3 +115,4 @@ The August 17 [leaf update watch](../source-workflows/leaf-update-watch.md) adds
 - Maintained on 2026-07-29 with raw AI-activity, token-volume, and generated-line measurement anti-pattern guidance.
 - Maintained on 2026-07-31 with budget wallet, tokenmaxxing, PR-state normalization, and embedded-execution signals for outcome-over-activity comparisons.
 - Maintained on 2026-08-17 with continuous-governance, behavior-baseline, SAFE-style incident, identity, permission, and accountability-trail evidence.
+- Maintained on 2026-10-04 with executable-specification, context-curation, review-time, escaped-defect, rework, security-finding, customer-impact, and accepted-outcome evidence.

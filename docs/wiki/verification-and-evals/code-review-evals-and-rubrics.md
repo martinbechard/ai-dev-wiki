@@ -11,7 +11,7 @@ tags: ["verification-and-evals"]
 
 AI-assisted code review evals measure whether a model or harness can inspect changes against the repository's standards, source evidence, and risk profile. They should test the review task itself, not only whether the model can produce plausible comments.
 
-Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats review as part of the controlled coding loop, and the [Dwarf Star source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md) is evidence that code review prompts can be part of representative model calibration.
+Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats review as part of the controlled coding loop, and the [Dwarf Star source](../../../raw/processed/link-aliases/local-model-operations.md) is evidence that code review prompts can be part of representative model calibration.
 
 This page owns review-specific eval practice. General grader selection lives in [judge grader boundaries](judge-grader-boundaries.md), and delivery acceptance gates live in [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md).
 
@@ -93,6 +93,17 @@ The September 29 raw sources add role-weighted review scoring and fresh-context 
 
 The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds API-triggered review and adversarial-review evidence. Review evals should score requested effort versus default effort, API or automation provenance, and whether role-separated reviewer or critic findings converge on evidence-backed issues without converting unsupported disagreement into repair work.
 
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds layered-review adoption evidence from a practice article. Locally, review evals should score whether each layer produces a distinct evidence type:
+
+- Repository instructions.
+- Tests.
+- Lint.
+- Static analysis.
+- Product-fit review.
+- Human review.
+
+Design-review gaps should remain visible instead of being flattened into one AI-review pass.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -162,6 +173,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Score whether independent reviewers reproduce findings, reject unreproducible claims, request failing tests, and preserve intent notes before findings become agent repair work.
 - Score API-triggered review separately from human-requested review by preserving request actor, effort value, default policy, trigger context, and downstream human acceptance.
 - Score adversarial review by evidence-backed disagreement, retraction quality, convergence criteria, budget observance, and whether only converged findings reach writable repair work.
+- Score layered review workflows by whether repository instructions, deterministic checks, product-fit review, and human review remain distinct evidence gates with visible design-review residual risk.
 
 ## Authoritative Sources
 
@@ -178,12 +190,13 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
-- [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
+- [Local model operations source](../../../raw/processed/link-aliases/local-model-operations.md)
 - [generated code refactoring](../coding-practices/generated-code-refactoring.md)
 - [orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
@@ -245,6 +258,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.
 - Maintained on 2026-09-29 with role-weighted review scoring, artifact-quality, efficiency, static-analysis, pytest, deliverable-manifest, transcript, fresh-context, reproducible-finding, and intent-note evidence.
 - Maintained on 2026-09-26 with review-stage timing, bot-versus-human attribution, finding-to-fix conversion, verification-capacity, and reviewer-triage evidence.
 - Maintained on 2026-09-16 with production review-bar scoring and routing to repository-configured and multi-reviewer AI code review leaves; next check should evaluate those focused practices through source-backed finding quality.

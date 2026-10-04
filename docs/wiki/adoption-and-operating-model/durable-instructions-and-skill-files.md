@@ -13,9 +13,9 @@ The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai
 
 Durable instructions and skill files keep reusable procedure outside the live prompt until an agent needs it. They give the assistant stable role, scope, project rules, references, tool expectations, safety boundaries, and examples without forcing every request to carry every rule.
 
-The [folder-organization source](../../../raw/processed/Folder organization by @AICodethatWorks.md) describes a thin router that points agents toward task-relevant rules, knowledge, decisions, references, active plans, and archives. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) describes agent definition files as the place for role, scope, project rules, important references, tool expectations, safety configuration, and examples. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) shows the same pattern as a packaged workflow system with agents, prompts, instructions, and skills.
+The [folder-organization source](../../../raw/processed/link-aliases/folder-organization-aicodethatworks.md) describes a thin router that points agents toward task-relevant rules, knowledge, decisions, references, active plans, and archives. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) describes agent definition files as the place for role, scope, project rules, important references, tool expectations, safety configuration, and examples. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) shows the same pattern as a packaged workflow system with agents, prompts, instructions, and skills.
 
-The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) adds the portability boundary: reusable procedure should not be trapped in one agent product or copied into drifting tool-specific rule files. This page owns the adoption practice for durable instruction surfaces, while [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md) owns the skill primitive, runbook composition, and procedural-debt lens. [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) owns the context architecture, and [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md) owns how live requests label source material.
+The [Open Skills source](../../../raw/processed/link-aliases/skill-vs-prompt-problem.md) adds the portability boundary: reusable procedure should not be trapped in one agent product or copied into drifting tool-specific rule files. This page owns the adoption practice for durable instruction surfaces, while [portable agent skills and runbooks](portable-agent-skills-and-runbooks.md) owns the skill primitive, runbook composition, and procedural-debt lens. [context router and knowledge layers](../context-architecture/context-router-and-knowledge-layers.md) owns the context architecture, and [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md) owns how live requests label source material.
 
 The [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json) adds a freshness and provenance lens for durable instruction files. Rules should carry enough creation reason, affected files or incidents, related code changes, and human confirmation dates for maintainers to detect stale operational memory before an agent keeps following outdated guidance.
 
@@ -58,6 +58,12 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds shared-skill, MCP-skill, managed-instruction, and memory evidence. Broad MCP Skills Over MCP, GitHub Copilot, and Copilot Memory facts stay upstream-owned; locally, durable skills and learned memories need provenance, scope, loading policy, owner review, and retirement criteria before they become reusable operating context.
 
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds model-availability drift evidence from coding-assistant model deprecations. Durable instructions should avoid hard-coding provider model names as stable workflow requirements unless the owner records:
+
+- Replacement guidance.
+- Stale-instruction checks.
+- A review cadence for model-dependent prompts.
+
 ## Practice Boundaries
 
 - Treat skills as human-readable procedure and MCP-style tools as governed access surfaces; do not let one stand in for the other's controls.
@@ -93,17 +99,19 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Assign each durable skill a specific workflow role, phase, expected inputs, and review point instead of using broad reusable prompts as undifferentiated coding boosts.
 - Keep onboarding guidance current, scoped, and rationale-bearing; do not promote stale documentation bundles into durable instruction files without owner review and verification.
 - Treat MCP-discovered skills, shared organization skills, managed custom instructions, and learned fix-pattern memories as durable guidance only after provenance, owner, loading policy, scope, verification, and retirement review are recorded.
+- Treat named models inside durable instructions as configurable dependencies with owner review, fallback guidance, and stale-reference checks.
 
 ## Authoritative Sources
 
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
-- [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
+- [Folder organization source note](../../../raw/processed/link-aliases/folder-organization-aicodethatworks.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
-- [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
+- [Open Skills source](../../../raw/processed/link-aliases/skill-vs-prompt-problem.md)
 - [July 4 topic news collector source](../../../raw/processed/2026-07-04/ai-dev-wiki-topic-news-collector-2026-07-04T203243-0400.json)
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
@@ -152,6 +160,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 - Maintained on 2026-09-19 with skills-versus-MCP, code-ownership, risk-scaled review, and human-readable procedure boundaries.
 - Maintained on 2026-09-25 with MCP skill discovery, shared organization skills, managed custom instructions, learned memory, provenance, and retirement-review evidence.
+- Maintained on 2026-10-04 with model-name dependency drift and stale-instruction review evidence.
 - Maintained on 2026-09-15 with coding-agent onboarding, current standards, ADR rationale, context-file scope, and stale-documentation rejection evidence.
 - Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.

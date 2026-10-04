@@ -35,7 +35,7 @@ The [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-de
 
 The [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json) and [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json) add runtime-enforcement, shared-agent-runtime, and untrusted-repository signals. Locally, coding-agent governance should treat admin-enabled model access, code-enabled managed runtimes, IDE session forensics, shadow-AI inventory, and untrusted dependency review as control-plane decisions with disposable execution boundaries and auditable policy evidence.
 
-The [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md) adds a source-to-output control lesson for GitHub-style agentic workflows. A workflow that reads attacker-writable issue content, holds private repository access, and can post public comments needs minimum viable permissions, public-output restrictions, and disclosure checks before model behavior is considered. Guardrails that ask the model not to reveal private data are not enough when the tool graph permits retrieval and publication in one run.
+The [GitLost clipping](../../../raw/processed/link-aliases/gitlost-jailbreak-llms.md) adds a source-to-output control lesson for GitHub-style agentic workflows. A workflow that reads attacker-writable issue content, holds private repository access, and can post public comments needs minimum viable permissions, public-output restrictions, and disclosure checks before model behavior is considered. Guardrails that ask the model not to reveal private data are not enough when the tool graph permits retrieval and publication in one run.
 
 The July 12 raw sources add three control refinements. The [topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json) reinforces prompt-injection, slopsquatting, LLM gateway, and leader-governance controls. The [leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json) reinforces task-scoped access, privileged-action visibility, centralized policy, emergency pause, and per-tool audit controls.
 
@@ -116,6 +116,18 @@ The [September 16 leaf update watch source](../../../raw/processed/2026-09-16/ai
 The September 26 raw sources add managed-policy, sandbox, proof-of-presence, and agent-authority evidence. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records local sandbox policy, centralized telemetry settings, Copilot default-policy changes, proof-of-presence checks, and public authority-boundary frameworks. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records an enterprise managed-settings validator. Locally, governance controls should treat AI feature defaults, managed JSON policy, team mappings, sandbox filesystem and network scope, telemetry content capture, and high-impact reauthentication as deployable control-plane state that must be validated before teams rely on it.
 
 The September 29 raw sources add self-managed agentic governance, pre-write boundary, and platform-safety evidence. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) records context and constraint checks before writing, independent verification, remediation controls, centralized LLM governance, dependency-risk checks, compliance reporting, protected path review, and architecture-decision drift checks. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) reinforces boundary-setting for high-autonomy agents and governed production records. Locally, controls should make those boundaries executable and auditable instead of relying on model self-restraint.
+
+The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json) adds action-sequence governance evidence. Locally, agentic governance should control:
+
+- Action sequences.
+- Scoped identities.
+- Least-privilege tool permissions.
+- Approval checkpoints.
+- Per-run limits.
+- Kill switches.
+- Action-level audit logs.
+
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds review-automation policy evidence. Locally, review-effort defaults and API-triggered review requests should be governed inputs rather than trusted convenience state.
 
 ## Practice Boundaries
 
@@ -204,6 +216,8 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 - Review allowed hosts, tools, skills, environment access, data flow, and termination properties before autonomous agents execute third-party or runtime-generated code.
 - Route unexpected agent behavior, unauthorized communication channels, or governance-control failures through [agent incident reporting](agent-incident-reporting.md).
 - Validate managed AI settings, team mappings, default enablement policy, sandbox scope, telemetry export, and proof-of-presence requirements as enforceable control-plane state rather than treating them as product defaults.
+- Govern action sequences with scoped identity, least-privilege tools, approval checkpoints, per-run limits, kill-switch paths, and action-level audit logs before agents cross system boundaries.
+- Treat review-effort defaults and API review triggers as governed inputs that need provenance, policy, and audit evidence.
 
 ## Authoritative Sources
 
@@ -229,8 +243,8 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
-- [OWASP LLM vulnerabilities source](../../../raw/processed/OWASP's Top 10 Ways to Attack LLMs AI Vulnerabilities Exposed.md)
-- [Agentic team structures source](../../../raw/processed/A leader’s guide to advanced team structures in an agentic world  AWS Events.md)
+- [OWASP LLM vulnerabilities source](../../../raw/processed/link-aliases/owasp-top-10-llm-vulnerabilities.md)
+- [Agentic team structures source](../../../raw/processed/link-aliases/agentic-team-structures-aws-events.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [June 25 topic news collector source](../../../raw/processed/2026-06-25/ai-dev-wiki-topic-news-collector-2026-06-25T203154-0400.json)
@@ -246,7 +260,7 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 - [July 8 topic news collector source](../../../raw/processed/2026-07-08/ai-dev-wiki-topic-news-collector-2026-07-08T203125-0400.json)
 - [July 9 topic news collector source](../../../raw/processed/2026-07-09/ai-dev-wiki-topic-news-collector-2026-07-09T203054-0400.json)
 - [July 9 leaf update watch source](../../../raw/processed/2026-07-09/ai-dev-wiki-leaf-update-watch-2026-07-09T210157-0400.json)
-- [GitLost clipping](../../../raw/processed/GitLost is a dream come true for anyone who likes to jailbreak LLMs.md)
+- [GitLost clipping](../../../raw/processed/link-aliases/gitlost-jailbreak-llms.md)
 - [July 12 topic news collector source](../../../raw/processed/2026-07-12/ai-dev-wiki-topic-news-collector-2026-07-12T203207-0400.json)
 - [July 12 leaf update watch source](../../../raw/processed/2026-07-12/ai-dev-wiki-leaf-update-watch-2026-07-12T210403-0400.json)
 - [July 13 topic news collector source](../../../raw/processed/2026-07-13/ai-dev-wiki-topic-news-collector-2026-07-13T203320-0400.json)
@@ -271,7 +285,7 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 - [August 6 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T203203-0400.json)
 - [August 9 topic news collector source](../../../raw/processed/2026-08-09/ai-dev-wiki-topic-news-collector-2026-08-09T203245-0400.json)
 - [August 9 leaf update watch source](../../../raw/processed/2026-08-09/ai-dev-wiki-leaf-update-watch-2026-08-09T210438-0400.json)
-- [Browserbase use-cases clipping](../../../raw/processed/Browserbase Use Cases Web Scraping & AI Agent Examples.md)
+- [Browserbase use-cases clipping](../../../raw/processed/link-aliases/browserbase-use-cases.md)
 - [August 15 topic news collector source](../../../raw/processed/2026-08-15/ai-dev-wiki-topic-news-collector-2026-08-15T203041-0400.json)
 - [August 15 leaf update watch source](../../../raw/processed/2026-08-15/ai-dev-wiki-leaf-update-watch-2026-08-15T210242-0400.json)
 - [August 17 topic news collector source](../../../raw/processed/2026-08-17/ai-dev-wiki-topic-news-collector-2026-08-17T203101-0400.json)
@@ -279,6 +293,8 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 31 topic news collector source](../../../raw/processed/2026-08-31/ai-dev-wiki-topic-news-collector-2026-09-01T003223Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
+- [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
@@ -316,6 +332,7 @@ The September 29 raw sources add self-managed agentic governance, pre-write boun
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.
+- Maintained on 2026-10-04 with action-sequence governance, review-effort, and API-triggered review control evidence.
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, audit-evidence-package, policy-version, and policy-before-execution governance evidence.
 - Maintained on 2026-09-26 with managed-settings validation, default-policy, sandbox-scope, telemetry-export, proof-of-presence, and authority-boundary evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.

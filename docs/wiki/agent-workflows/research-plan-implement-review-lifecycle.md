@@ -11,9 +11,9 @@ tags: ["agent-workflows"]
 
 Research, plan, implement, and review is the recurring lifecycle shape for professional agent work. Research gathers codebase and requirement evidence without changing files, planning makes the implementation path explicit, implementation remains supervised, and review validates the result against repository standards.
 
-The [Hypervelocity Engineering source](../../../raw/processed/Hypervelocity engineer @edandersen.md) describes RPI as a structured agent-based lifecycle, and the [HVE Core source](../../../raw/processed/microsoft-hve-core.md) packages agents, prompts, instructions, and skills around repeatable workflow entry points. This page keeps the local lifecycle lens without turning HVE Core itself into a local ecosystem entity.
+The [Hypervelocity Engineering source](../../../raw/processed/link-aliases/hypervelocity-engineer-edandersen.md) describes RPI as a structured agent-based lifecycle, and the [HVE Core source](../../../raw/processed/microsoft-hve-core.md) packages agents, prompts, instructions, and skills around repeatable workflow entry points. This page keeps the local lifecycle lens without turning HVE Core itself into a local ecosystem entity.
 
-The [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md) extends the same lifecycle into agentic systems: preparation and hypothesis, scope, architecture, proof of value, implementation, testing, deployment, and continuous monitoring. The local interpretation is that non-deterministic agent work needs explicit hypotheses, responsibility boundaries, proof-of-value gates, ongoing evals, and post-deployment monitoring instead of a one-time pass or fail handoff.
+The [ADLC source](../../../raw/processed/link-aliases/adlc-claude-code-lifecycle.md) extends the same lifecycle into agentic systems: preparation and hypothesis, scope, architecture, proof of value, implementation, testing, deployment, and continuous monitoring. The local interpretation is that non-deterministic agent work needs explicit hypotheses, responsibility boundaries, proof-of-value gates, ongoing evals, and post-deployment monitoring instead of a one-time pass or fail handoff.
 
 The lifecycle complements the [orient inspect patch verify loop](orient-inspect-patch-verify-loop.md). RPI describes the larger phase structure; the orient-inspect-patch-verify loop describes how each coding pass stays grounded.
 
@@ -34,6 +34,16 @@ The September 7 raw sources add human-checkpoint and product-validation evidence
 
 The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds a four-phase terminal-agent variant: read-only research, iterative planning, implementation after artifacts solidify, and verification gates. The local lifecycle rule is that durable research notes and planning artifacts are stronger handoff surfaces than raw chat history when work must cross sessions, agents, or review boundaries.
 
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) reinforces the lifecycle as a control boundary for AI coding work:
+
+1. Define outcomes and acceptance criteria.
+2. Supply relevant context.
+3. Plan the work.
+4. Set boundaries.
+5. Build in reviewable increments.
+6. Verify independently.
+7. Preserve human review before consequential changes or deployment.
+
 ## Practice Boundaries
 
 - Keep research evidence-gathering distinct from file modification.
@@ -50,19 +60,21 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - Place human checkpoints at bounded lifecycle transitions, in-loop risk triggers, post-execution review, and sampled audits when task confidence, sensitivity, value, or constraint behavior warrants it.
 - Pair agent-built prototypes with validation questions, evidence review, and product-decision ownership before treating task completion as product progress.
 - Preserve durable research notes and planning artifacts before implementation so a later agent or reviewer can verify why mutation was authorized.
+- Define outcomes, acceptance criteria, relevant context, boundaries, reviewable increments, independent verification, and human review before consequential changes or deployment.
 
 ## Authoritative Sources
 
-- [Hypervelocity engineer source](../../../raw/processed/Hypervelocity engineer @edandersen.md)
+- [Hypervelocity engineer source](../../../raw/processed/link-aliases/hypervelocity-engineer-edandersen.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
-- [ADLC source](../../../raw/processed/ADLC Claude Code's New Lifecycle for AI Coding.md)
+- [ADLC source](../../../raw/processed/link-aliases/adlc-claude-code-lifecycle.md)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 
 ## Related Code
 
@@ -95,3 +107,4 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - Maintained on 2026-08-20 with startup operating principles for automated tedium, trust-but-verify gates, rebuildable drafts, and prototype-to-production promotion.
 - Maintained on 2026-09-07 with checkpoint-placement, prototype-validation, dependency-owner, blocker-triage, and review-ownership evidence.
 - Maintained on 2026-10-01 with read-only research, iterative planning, implementation-after-artifact, verification-gate, and durable handoff artifact evidence.
+- Maintained on 2026-10-04 with outcome, acceptance-criteria, context, boundary, reviewable-increment, independent-verification, and human-review lifecycle evidence.

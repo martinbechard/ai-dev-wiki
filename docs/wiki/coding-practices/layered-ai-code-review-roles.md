@@ -30,6 +30,17 @@ The September 3 [leaf update watch](../source-workflows/leaf-update-watch.md) so
 
 Locally, layered review should keep those roles distinct when generated fixes can reach production.
 
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds a concrete layered-review workflow where separate evidence comes from:
+
+- Repository instructions.
+- Generated tests.
+- Linting.
+- Static analysis.
+- Product-fit review.
+- Human review.
+
+Locally, that reinforces that cheaper code generation can increase review work and that design review needs an explicit owner rather than being assumed from passing tool checks.
+
 ## Practice Boundaries
 
 - Preserve finding lifecycle state, severity, reviewer title, auto-resolution proof, prior-summary continuity, human override, and commit-level traceability for AI review comments.
@@ -43,6 +54,7 @@ Locally, layered review should keep those roles distinct when generated fixes ca
 - Size developer, architect, security, and human learning roles to review load; do not let one fluent agent review stream hide ownership for production risk or team skill health.
 - Keep discovery, triage, critic/review, sandboxed reproduction, architecture/threat-model review, and fleet governance separate when security repair work uses agents.
 - Do not treat repository-fleet policy trends or audit coverage as proof that a specific pull request was reviewed deeply enough.
+- Keep deterministic analysis, product-fit review, design review, and human acceptance separate when agent-authored changes pass ordinary tests or lint.
 
 ## Authoritative Sources
 
@@ -54,6 +66,7 @@ Locally, layered review should keep those roles distinct when generated fixes ca
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 
 ## Related Code
 
@@ -84,3 +97,4 @@ Locally, layered review should keep those roles distinct when generated fixes ca
 - Maintained on 2026-08-27 with AI security-review augmentation boundaries for triage, deterministic rules, and human security judgment.
 - Maintained on 2026-08-29 with production AI-generated-code accountability and review-load evidence for role-scoped review.
 - Maintained on 2026-09-03 with vulnerability discovery, triage, critic-review, sandboxed reproduction, architecture/threat-model evidence, and fleet-governance role separation.
+- Maintained on 2026-10-04 with repository-instruction, deterministic-analysis, product-fit, design-review, and human-review layer evidence.

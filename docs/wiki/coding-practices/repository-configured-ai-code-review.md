@@ -26,6 +26,13 @@ The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai
 
 The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds API-triggered review evidence. When AI code review can be requested through REST or GraphQL and the request can set review effort, the review record should preserve the triggering automation, API actor, requested effort, inherited default effort, repository or organization policy, and whether the request was part of a human pull-request flow, CI gate, or autonomous agent workflow.
 
+The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) reinforces API-triggered review governance with a default-effort change. Locally, API-requested AI reviews should document:
+
+- Who or what requested the review.
+- Why the chosen effort level was appropriate.
+- Whether the default changed inherited behavior.
+- How human reviewers treat the result as advisory evidence rather than as an automatic merge gate.
+
 ## Practice Boundaries
 
 - Keep AI-review rules, path scopes, labels, reviewer assignment, security sections, tool settings, and request-changes behavior in repository-owned or team-owned configuration.
@@ -35,6 +42,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Treat automatic review triggers, inherited default effort, draft-to-ready behavior, and new-push behavior as repository policy because they affect reviewer load, noise, and acceptance gates.
 - Preserve AI-review policy changes as audit evidence, including effort-level changes, automatic-review branch policy changes, custom-instruction changes, MCP or skill context changes, content-exclusion scope, and batch comment-resolution actions.
 - Preserve API-triggered review provenance, including the API actor, request source, effort value, inherited default, and policy that allowed the automated review request.
+- Treat default-effort changes as governed review-policy drift that can affect review cost, latency, finding depth, and reviewer expectations even when no repository file changed.
 - Treat repository text, comments, test output, and diffs as untrusted review input; AI-review prompts and summaries need prompt-injection controls and output validation.
 - Route general AI-review practice through [intelligent code review](intelligent-code-review.md) and review-quality measurement through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
@@ -45,6 +53,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
+- [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [intelligent code review](intelligent-code-review.md)
 - [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md)
 
@@ -76,3 +85,4 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Maintained on 2026-09-25 with review-effort defaults, automatic trigger, inherited policy, prompt-injection, advisory-review, and actionability evidence.
 - Maintained on 2026-10-01 with Azure Repos and GitHub Copilot review-configuration audit events, effort-level policy, AGENTS.md, MCP, skill, content-exclusion, and batch-resolution evidence.
 - Maintained on 2026-10-03 with API-triggered AI review provenance, effort-default, actor, policy, and workflow-origin evidence.
+- Maintained on 2026-10-04 with API-triggered review governance and default-effort drift evidence.
