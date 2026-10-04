@@ -1,0 +1,425 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end_utc": "2026-10-04T01:04:54Z",
+    "mode": "last_7_days",
+    "start_utc": "2026-09-27T01:04:54Z"
+  },
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "reason": "Outside seven-day cutoff for run time 2026-10-04T01:04:54Z; retained as checked but not qualified.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md"
+      ],
+      "source_url": "https://arcjet.com/learn/block-dangerous-commands-coding-agents",
+      "visible_date": "2026-09-25"
+    },
+    {
+      "reason": "Official page visible last updated date predates the cutoff; search crawl freshness is not publication/update evidence.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "source_url": "https://learn.microsoft.com/en-us/agent-framework/agents/structured-outputs",
+      "visible_date": "2026-08-25"
+    },
+    {
+      "reason": "Cited source URL in leaf, but latest visible changelog entry predates the seven-day cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md"
+      ],
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "2026-09-23"
+    },
+    {
+      "reason": "Visible article date predates the seven-day cutoff; useful junior-learning evidence but not qualified this run.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "source_url": "https://www.superdevacademy.com/en/blogs/ai-coding-agent-junior-developer-workflow",
+      "visible_date": "2026-09-25"
+    },
+    {
+      "reason": "Only month-level publication/date evidence was visible during this run, so it is ambiguous for strict seven-day qualification.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+      ],
+      "source_url": "https://www.researchgate.net/publication/408403915_Adoption_and_Impact_of_Command-Line_AI_Coding_Agents_A_Study_of_Microsoft%27s_Early_2026_Rollout_of_Claude_Code_and_GitHub_Copilot_CLI",
+      "visible_date": "2026-09-2026 only"
+    },
+    {
+      "reason": "Outside cutoff and forum thread is anecdotal; retained only as a search candidate.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md"
+      ],
+      "source_url": "https://www.reddit.com/r/LocalLLM/comments/1wqxt08/what_do_you_guys_use_to_access_your_local_models/",
+      "visible_date": "2026-09-26"
+    },
+    {
+      "reason": "Crawl freshness only; no direct visible in-window publication/update date retained.",
+      "related_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "source_url": "https://www.agentpatternscatalog.org/patterns/structured-output/",
+      "visible_date": "not visible as publication/update date in result"
+    }
+  ],
+  "follow_up_notes": [
+    "Review the six qualified items during the next source-to-wiki ingest; keep broad entity background upstream and synthesize only local practice implications.",
+    "No docs/wiki or raw/processed files were changed by this watch."
+  ],
+  "leaf_universe_count": 104,
+  "named_entities": [
+    "Claude",
+    "Claude Code",
+    "Clutch Events",
+    "Content Security Policy",
+    "Cursor",
+    "DataCamp",
+    "Enterprise AI Global",
+    "Financial Conduct Authority",
+    "Gartner",
+    "Gemini",
+    "GitHub Copilot",
+    "Gmail",
+    "JSFuck",
+    "LangChain",
+    "MCP",
+    "MDN iframe sandbox",
+    "Manus",
+    "Meta bug bounty",
+    "OWASP",
+    "Ollama",
+    "OpenAI",
+    "OpenHands",
+    "Pydantic",
+    "Salt Labs",
+    "TechRadar",
+    "TypedDict",
+    "UK Treasury Committee",
+    "UiPath",
+    "agentappbuilder"
+  ],
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "factual_summary": "The article frames prompt injection through files, pages, repository text, API results, and MCP/tool outputs, then recommends labelled-data returns, scoped credentials, user-authored confirmation for risky actions, and sandboxed/no-network rendering for untrusted output.",
+      "id": "agentappbuilder-prompt-injection-agent-tools-2026-09-30",
+      "local_practice_implication": "A future ingest should consider adding explicit tool-result labelling, user-authored confirmation, and no-network rendering checks to prompt-injection practice boundaries.",
+      "named_entities": [
+        "agentappbuilder",
+        "Claude Code",
+        "MCP",
+        "MDN iframe sandbox",
+        "Content Security Policy"
+      ],
+      "source_date_evidence": "Article header shows September 30, 2026.",
+      "source_url": "https://agentappbuilder.com/blog/prompt-injection-in-agent-tools/",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "MCP"
+      ],
+      "visible_date": "2026-09-30",
+      "why_it_matters_for_leaf": "It reinforces the local rule that untrusted content is evidence, not instruction, and that authorization, credentials, and rendering controls must sit outside model prose."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "factual_summary": "TechRadar reports Salt Labs found a Manus email prompt-injection path where obfuscated content was decoded and executed before a warning, and says the issue was disclosed and resolved.",
+      "id": "techradar-manus-email-prompt-injection-2026-10-02",
+      "local_practice_implication": "A future ingest should emphasize pre-action controls and execution prevention, not only post-hoc prompt-injection warnings.",
+      "named_entities": [
+        "TechRadar",
+        "Salt Labs",
+        "Manus",
+        "Gmail",
+        "JSFuck",
+        "Meta bug bounty"
+      ],
+      "source_date_evidence": "TechRadar page shows Published 2 October 2026.",
+      "source_url": "https://www.techradar.com/pro/security/this-popular-ai-agent-could-be-hacked-by-a-single-email-with-potentially-disastrous-consequences",
+      "upstream_owned_entities": [
+        "Manus",
+        "Salt Labs",
+        "Gmail"
+      ],
+      "visible_date": "2026-10-02",
+      "why_it_matters_for_leaf": "The local wiki already treats email, connected-app content, and tool output as untrusted carriers; this adds a current example where detection after execution is too late."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "factual_summary": "The source describes agentic AI governance as controls over actions and action sequences, including scoped identities, least-privilege tool permissions, approval checkpoints, per-run limits, kill switches, and action-level audit logs.",
+      "id": "enterprise-ai-global-agentic-governance-controls-2026-10-02",
+      "local_practice_implication": "A future ingest should map the action-control list into lifecycle and prototype-promotion gate language without duplicating broad governance background.",
+      "named_entities": [
+        "Enterprise AI Global",
+        "Clutch Events",
+        "Gartner",
+        "OWASP"
+      ],
+      "source_date_evidence": "Article metadata and header show October 2, 2026.",
+      "source_url": "https://www.enterpriseaiglobal.com/insights/agentic-ai-governance-enterprise",
+      "upstream_owned_entities": [
+        "Gartner",
+        "OWASP"
+      ],
+      "visible_date": "2026-10-02",
+      "why_it_matters_for_leaf": "It directly supports local promotion and lifecycle gates that require enforceable action controls before agents move from demos to production workflows."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md"
+      ],
+      "factual_summary": "The article argues that agentic AI in financial services needs workflow-level visibility into systems accessed, actions taken, human judgment points, and ownership because agents can move across systems and amplify small errors.",
+      "id": "techradar-agentic-workflow-accountability-2026-10-02",
+      "local_practice_implication": "A future ingest should add workflow-journey reconstruction and ownership tracing as user-visible progress or telemetry requirements where agents cross systems.",
+      "named_entities": [
+        "TechRadar",
+        "UiPath",
+        "Financial Conduct Authority",
+        "UK Treasury Committee"
+      ],
+      "source_date_evidence": "TechRadar page shows Published 2 October 2026.",
+      "source_url": "https://www.techradar.com/pro/financial-services-next-ai-risk-is-the-workflow-nobody-can-explain",
+      "upstream_owned_entities": [
+        "UiPath",
+        "Financial Conduct Authority",
+        "UK Treasury Committee"
+      ],
+      "visible_date": "2026-10-02",
+      "why_it_matters_for_leaf": "It supports the local telemetry and lifecycle-gate rule that agent runs need reconstructable journey evidence, not only model explainability."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md"
+      ],
+      "factual_summary": "The LangChain openwiki reference distinguishes tool-based, provider-native, and automatic structured-output strategies, and calls out parsing, validation, retry behavior, stale-state clearing, and raw JSON-schema validation limitations.",
+      "id": "langchain-openwiki-structured-output-reference-2026-09-28",
+      "local_practice_implication": "A future ingest should consider adding stale structured-response clearing and raw JSON-schema validation limitations to the drafter pattern.",
+      "named_entities": [
+        "LangChain",
+        "OpenAI",
+        "Claude",
+        "Gemini",
+        "Pydantic",
+        "TypedDict"
+      ],
+      "source_date_evidence": "GitHub page metadata shows openwiki verified at 2026-09-28 08:35:20 UTC and generated 2026-09-28T08:35:20.640Z.",
+      "source_url": "https://github.com/langchain-ai/langchain/blob/master/openwiki/structured-output.md",
+      "upstream_owned_entities": [
+        "LangChain",
+        "OpenAI",
+        "Claude",
+        "Gemini",
+        "Pydantic"
+      ],
+      "visible_date": "2026-09-28",
+      "why_it_matters_for_leaf": "It reinforces the local structured-output rule that valid JSON, schema conformance, retry behavior, state lifecycle, and business authorization are separate gates."
+    },
+    {
+      "applies_to_leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md"
+      ],
+      "factual_summary": "DataCamp lists a new OpenHands tutorial covering architecture, a local Ollama setup, a hands-on bug fix, security and limitations, plus an in-window agent-evaluation tutorial focused on tool metrics, refusal calibration, injection testing, and a CI gate.",
+      "id": "datacamp-openhands-local-setup-and-evals-2026-10-02",
+      "local_practice_implication": "A future ingest should look for the individual tutorials and decide whether local runtime harness setup needs a security/eval checklist note.",
+      "named_entities": [
+        "DataCamp",
+        "OpenHands",
+        "Ollama",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "source_date_evidence": "DataCamp AI Agents Tutorials page lists OpenHands tutorial dated October 2, 2026; the same page lists an evaluation tutorial dated September 28, 2026.",
+      "source_url": "https://www.datacamp.com/tutorial/category/ai-agents",
+      "upstream_owned_entities": [
+        "OpenHands",
+        "Ollama",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "visible_date": "2026-10-02",
+      "why_it_matters_for_leaf": "It is practice-level evidence that local runtime harness setup and evaluation gates are being taught together rather than as isolated model setup."
+    }
+  ],
+  "run_timestamp_local": "2026-10-03T21:04:54-0400",
+  "run_timestamp_utc": "2026-10-04T01:04:54Z",
+  "search_queries_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "Hybrid Agent Infrastructure Economics",
+      "agent infrastructure economics AI agents"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "junior learning paths agentic teams AI coding agents 2026"
+    ],
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": [
+      "Harness Sizing workflow complexity AI agents",
+      "AI agent evaluation CI gate workflow complexity"
+    ],
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": [
+      "local model runtime harness AI agents",
+      "OpenHands local setup Ollama September 2026"
+    ],
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": [
+      "structured output AI agents September 2026",
+      "LangChain structured output 2026-09-28"
+    ],
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": [
+      "user-visible progress telemetry AI agents 2026",
+      "agentic workflow accountability visibility October 2026"
+    ],
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md": [
+      "layered AI code review roles 2026"
+    ],
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": [
+      "destructive command controls coding agents 2026"
+    ],
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": [
+      "governance controls AI agents software development 2026"
+    ],
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": [
+      "lifecycle AI review gates agents 2026"
+    ],
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": [
+      "prompt injection untrusted content coding agents 2026"
+    ],
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": [
+      "prototype to cloud promotion gates AI agents 2026"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "public topic news collector AI wiki automation 2026"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "raw project wiki monitor AI"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "source reconciliation routing AI wiki automation 2026",
+      "https://cursor.com/changelog"
+    ]
+  },
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md"
+  ],
+  "selection_policy": "Unchecked leaves first, then oldest last_checked_at, ties by stable relative path sort; index, digest, maintenance, federation, schema, glossary, open-decision, known-defect, topic-index, and dated synthesis pages excluded unless durable local practice leaves.",
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": [
+      "public web search: topic title and aliases; no qualifying direct URL retained"
+    ],
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": [
+      "https://www.superdevacademy.com/en/blogs/ai-coding-agent-junior-developer-workflow",
+      "https://www.researchgate.net/publication/408403915_Adoption_and_Impact_of_Command-Line_AI_Coding_Agents_A_Study_of_Microsoft%27s_Early_2026_Rollout_of_Claude_Code_and_GitHub_Copilot_CLI"
+    ],
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": [
+      "https://www.datacamp.com/tutorial/category/ai-agents"
+    ],
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": [
+      "https://www.datacamp.com/tutorial/category/ai-agents"
+    ],
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": [
+      "https://github.com/langchain-ai/langchain/blob/master/openwiki/structured-output.md",
+      "https://learn.microsoft.com/en-us/agent-framework/agents/structured-outputs"
+    ],
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": [
+      "https://www.techradar.com/pro/financial-services-next-ai-risk-is-the-workflow-nobody-can-explain",
+      "https://cursor.com/changelog"
+    ],
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md": [
+      "public web search: topic title and aliases; no qualifying direct URL retained"
+    ],
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": [
+      "https://arcjet.com/learn/block-dangerous-commands-coding-agents"
+    ],
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": [
+      "https://agentappbuilder.com/blog/prompt-injection-in-agent-tools/",
+      "https://www.techradar.com/pro/security/this-popular-ai-agent-could-be-hacked-by-a-single-email-with-potentially-disastrous-consequences",
+      "https://www.enterpriseaiglobal.com/insights/agentic-ai-governance-enterprise",
+      "https://www.techradar.com/pro/financial-services-next-ai-risk-is-the-workflow-nobody-can-explain"
+    ],
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": [
+      "https://www.enterpriseaiglobal.com/insights/agentic-ai-governance-enterprise",
+      "https://www.techradar.com/pro/financial-services-next-ai-risk-is-the-workflow-nobody-can-explain"
+    ],
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": [
+      "https://agentappbuilder.com/blog/prompt-injection-in-agent-tools/",
+      "https://www.techradar.com/pro/security/this-popular-ai-agent-could-be-hacked-by-a-single-email-with-potentially-disastrous-consequences"
+    ],
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": [
+      "https://www.enterpriseaiglobal.com/insights/agentic-ai-governance-enterprise"
+    ],
+    "docs/wiki/source-workflows/public-topic-news-collector.md": [
+      "public web search: topic title and aliases; no qualifying direct URL retained"
+    ],
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": [
+      "public web search: topic title and aliases; no qualifying direct URL retained"
+    ],
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": [
+      "https://cursor.com/changelog"
+    ]
+  },
+  "upstream_owned_entities": [
+    "Claude",
+    "Claude Code",
+    "Cursor",
+    "Financial Conduct Authority",
+    "Gartner",
+    "Gemini",
+    "GitHub Copilot",
+    "Gmail",
+    "LangChain",
+    "MCP",
+    "Manus",
+    "OWASP",
+    "Ollama",
+    "OpenAI",
+    "OpenHands",
+    "Pydantic",
+    "Salt Labs",
+    "UK Treasury Committee",
+    "UiPath"
+  ]
+}
