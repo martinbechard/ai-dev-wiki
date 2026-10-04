@@ -1,0 +1,290 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-04T00:33:36Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-02T00:00:00Z",
+    "end_utc": "2026-10-04T00:33:36Z",
+    "policy": "Only public web sources with a visible publication or update date inside the last 2 days relative to the run time were included. Missing, ambiguous, future-dated, stale, boundary-only, and upstream-only candidates were excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "downstream_scope": "This wiki records AI-assisted development practice, operating model, verification, governance, workflow, and local adoption implications.",
+    "upstream_scope": "The upstream AI wiki owns broad ecosystem entity coverage for companies, models, products, developer tools, agentic frameworks, MCP servers, and broad techniques.",
+    "application_in_this_run": "Broad GitHub Copilot, GitHub, JetBrains, OpenAI Codex, Claude Code, MCP, model-family, and product availability facts were either marked upstream-owned in qualifying items or excluded when no local practice implication was identified."
+  },
+  "qualifying_updates": [
+    {
+      "title": "Copilot code review adds API requests and Balanced default",
+      "source_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "source_publisher": "GitHub Changelog",
+      "visible_date": "October 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk"
+      ],
+      "short_factual_summary": "GitHub announced that Copilot code review can now be requested through REST and GraphQL APIs, with a per-request review effort level. Balanced became the default review effort for new and existing repositories and organizations unless Lite was explicitly selected.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI code review is becoming a scriptable lifecycle step rather than only a pull-request sidebar action. Teams need review-effort policy, automation-trigger ownership, and auditable routing for when API-triggered reviews run and which effort level they use.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review",
+        "REST API",
+        "GraphQL API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Review workflows should document where API-triggered AI review is allowed, how effort levels are selected, and how human reviewers interpret Balanced as a default rather than a release gate.",
+      "routing_note": "Keep product capability background upstream; local wiki can retain the workflow-control and review-gate implications."
+    },
+    {
+      "title": "Copilot deprecates selected models across coding experiences",
+      "source_url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated/",
+      "source_publisher": "GitHub Changelog",
+      "visible_date": "October 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "short_factual_summary": "GitHub deprecated Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 across Copilot Chat, inline edits, ask and agent modes, and code completions, and named suggested alternatives.",
+      "why_it_matters_for_ai_assisted_development_practice": "Model availability changes can silently affect repeatability of agent prompts, coding workflows, and team instructions. Agent operating guides should avoid hard-coding deprecated model names without a maintenance process.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Gemini 3.5 Flash",
+        "Gemini 3.6 Flash",
+        "Kimi K2.7 Code",
+        "Claude Opus 4.7",
+        "Gemini 3.8 Flash",
+        "Kimi K3",
+        "Claude Opus 5.5"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Gemini model family",
+        "Kimi model family",
+        "Claude model family"
+      ],
+      "local_practice_implication": "Team runbooks should treat model names as configurable dependencies with owner review, replacement guidance, and stale-instruction checks.",
+      "routing_note": "Do not create local model-family leaves; retain only the practice note about dependency drift in agent instructions."
+    },
+    {
+      "title": "Sonar describes layered review for AI-generated code",
+      "source_url": "https://www.sonarsource.com/blog/how-one-squad-at-sonar-review-ai-code/",
+      "source_publisher": "Sonar",
+      "visible_date": "October 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows"
+      ],
+      "short_factual_summary": "Sonar described a billing-squad workflow in which generated code is checked by repository instructions, tests, linting, SonarQube analysis, Gitar product-fit review, and then human review. The article states that review time grew as generation got cheaper and that design review remains a weak spot for agents.",
+      "why_it_matters_for_ai_assisted_development_practice": "The source gives a concrete practice pattern: the agent that writes code should not be the only reviewer, repository instructions should require verification steps, and scope should be calibrated by blast radius.",
+      "named_entities": [
+        "Sonar",
+        "SonarQube",
+        "Sonar CLI",
+        "Gitar",
+        "Claude Code",
+        "CLAUDE.md",
+        "Playwright",
+        "Chrome DevTools",
+        "Figma"
+      ],
+      "upstream_owned_entities": [
+        "Sonar",
+        "SonarQube",
+        "Gitar",
+        "Claude Code",
+        "Playwright",
+        "Chrome DevTools",
+        "Figma"
+      ],
+      "local_practice_implication": "Potential local lens: layered AI code review where deterministic analysis, product-fit review, and human ownership are separate gates, with instructions that prevent agents from self-signing or committing without human inspection.",
+      "routing_note": "Product and tool descriptions belong upstream; local wiki can capture the review-layer pattern and instruction-file implications."
+    },
+    {
+      "title": "AI coding workflow article frames lifecycle controls",
+      "source_url": "https://www.itechguides.com/beyond-the-vibe-why-ai-coding-workflows-need-a-framework/",
+      "source_publisher": "iTechGuides",
+      "visible_date": "October 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "short_factual_summary": "The article argues that useful AI coding work should define outcomes and acceptance criteria, supply relevant context, plan, set boundaries, build in reviewable increments, verify independently, and keep human review before consequential changes or deployment.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a practice-level framing for planning loops, permission boundaries, independent checks, and human approval points. It maps cleanly to local workflow and governance pages without needing broad product coverage.",
+      "named_entities": [
+        "iTechGuides",
+        "AI4SDLC Working Group"
+      ],
+      "upstream_owned_entities": [
+        "AI4SDLC Working Group"
+      ],
+      "local_practice_implication": "Candidate synthesis: autonomy should be selected per task by risk, reversibility, permission level, verification strength, and visibility of actions.",
+      "routing_note": "Do not duplicate broad AI workflow taxonomy upstream; preserve only the lifecycle-control implications for local practice."
+    },
+    {
+      "title": "AI-coding expectations shift toward specification and accountability",
+      "source_url": "https://www.itechguides.com/the-changing-expectations-for-developers-in-an-ai-coding-future/",
+      "source_publisher": "iTechGuides",
+      "visible_date": "October 2, 2026",
+      "owning_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "The article says developer work shifts from line-by-line implementation toward executable specification, trustworthy context, evaluation of proposals, architecture, security, deployment accountability, and measurement of outcomes rather than generated lines of code.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update reinforces local adoption guidance: agentic teams need role expectations for context curation, acceptance evidence, security review, and outcome metrics.",
+      "named_entities": [
+        "iTechGuides",
+        "GitHub",
+        "Stack Overflow"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Stack Overflow"
+      ],
+      "local_practice_implication": "Potential local synthesis: measure review time, escaped defects, rework, security findings, and customer impact when assessing AI-assisted development, not only perceived productivity or code volume.",
+      "routing_note": "Survey and platform background belongs upstream; local wiki can retain the operating-model and measurement implications."
+    },
+    {
+      "title": "Developer briefing highlights agent package-install and memory risks",
+      "source_url": "https://coderlegion.com/29529/developer-weekly-briefing-october-2-2026",
+      "source_publisher": "Coder Legion",
+      "visible_date": "October 2, 2026 in title; page body showed relative age during collection",
+      "owning_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/coding-practices"
+      ],
+      "short_factual_summary": "The briefing summarized agent package-install command-injection risk in Amazon Bedrock AgentCore, Copilot Memory reuse for agentic security autofix, and self-hosted agent deployment. The cited underlying stories include older September sources, so this item is retained as a same-window public practice briefing rather than as primary release evidence.",
+      "why_it_matters_for_ai_assisted_development_practice": "The practice implication is local and current: package names and dependency manifests are untrusted input to agent tools, execution roles need least privilege, agent memory requires citation validation, and teams need explicit policies for when learned security patterns can influence review.",
+      "named_entities": [
+        "Coder Legion",
+        "Amazon Bedrock AgentCore",
+        "AWS",
+        "BeyondTrust Phantom Labs",
+        "Copilot Memory",
+        "agentic autofix",
+        "CodeQL",
+        "IBM Bob"
+      ],
+      "upstream_owned_entities": [
+        "Amazon Bedrock AgentCore",
+        "AWS",
+        "BeyondTrust",
+        "GitHub Copilot",
+        "CodeQL",
+        "IBM Bob"
+      ],
+      "local_practice_implication": "Candidate governance note: allowlisted package installation is still a privileged agent tool and should be governed like shell access when credentials or execution roles are reachable.",
+      "routing_note": "Treat as a routing note for governance and source-workflow ingest; use primary sources before durable page synthesis."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "JetBrains Air in IDEs EAP blog",
+      "source_url": "https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/",
+      "observed_date_evidence": "Search result was recent, but the opened page did not expose a stable visible publication date in the collected text.",
+      "reason": "Excluded for ambiguous visible date. Also broad JetBrains Air product coverage is upstream-owned unless reduced to local agent-orchestration practice."
+    },
+    {
+      "title": "GitHub Copilot can now interact with desktop apps with computer use",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "observed_date_evidence": "October 1, 2026",
+      "reason": "Excluded as outside the strict Oct 2-Oct 4 run window and largely upstream-owned product capability. It may become a local permissions/approval topic if separately sourced inside a qualifying window."
+    },
+    {
+      "title": "GitHub Copilot in VS Code, September 2026 releases",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+      "observed_date_evidence": "October 1, 2026",
+      "reason": "Excluded as outside the strict run window. Local implications about agent sessions, automations, Dev Containers, and session cleanup are useful but need a qualifying source date."
+    },
+    {
+      "title": "Dynamic workflows in Copilot CLI and the Copilot app",
+      "source_url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "observed_date_evidence": "October 1, 2026",
+      "reason": "Excluded as outside the strict run window and product/entity-owned upstream except for possible local workflow-routing implications."
+    },
+    {
+      "title": "OpenAI Codex 0.160.0 release",
+      "source_url": "https://github.com/openai/codex/releases",
+      "observed_date_evidence": "Released October 1, 2026 20:19",
+      "reason": "Excluded as outside the Oct 2-Oct 4 source-date window, despite useful local implications around Guardian review context, permissions on resume, and subagent environment handling."
+    },
+    {
+      "title": "OpenAI Codex 0.162.0 alpha releases",
+      "source_url": "https://github.com/openai/codex/releases",
+      "observed_date_evidence": "October 2-3, 2026 release entries",
+      "reason": "Excluded because the visible release entries exposed dates and asset metadata but not enough practice-level change detail in the collected page to summarize accurately."
+    },
+    {
+      "title": "GitHub Docs pages for Copilot code review configuration and lifecycle",
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review",
+      "observed_date_evidence": "Search results showed recent crawl timing but no stable visible publication or update date in the source text.",
+      "reason": "Excluded for missing visible source date. Docs are useful verification material for a later ingest pass."
+    },
+    {
+      "title": "Techstrong AI article on AgentCore package-name credential exposure",
+      "source_url": "https://techstrong.ai/articles/a-package-name-was-all-it-took-to-reach-an-ai-agents-aws-credentials/",
+      "observed_date_evidence": "September 28, 2026",
+      "reason": "Excluded as stale for this collector window. The Oct 2 Coder Legion briefing retained only the local practice implication with a primary-source-follow-up note."
+    },
+    {
+      "title": "DevOps.com article on GitHub security autofix memory",
+      "source_url": "https://devops.com/githubs-security-autofix-agent-now-remembers-what-it-fixed/",
+      "observed_date_evidence": "September 28, 2026",
+      "reason": "Excluded as stale for this collector window. Retained only as background behind the Oct 2 Coder Legion practice briefing."
+    },
+    {
+      "title": "MindPattern Ramsay Research Agent briefing",
+      "source_url": "https://mindpattern.ai/briefings/2026-10-02",
+      "observed_date_evidence": "Date appears in URL and search result, but opened source text did not provide a stable visible date header during collection.",
+      "reason": "Excluded for ambiguous visible date and because most contained items are upstream-owned framework, SDK, release, or product updates requiring primary-source follow-up."
+    },
+    {
+      "title": "Seismo agents topic feed",
+      "source_url": "https://seismonews.com/topics/agents",
+      "observed_date_evidence": "Feed snippets showed October 3, 2026 items.",
+      "reason": "Excluded because the source is broad ecosystem aggregation for agent harnesses and frameworks, which is upstream-owned unless a specific local practice implication is independently sourced."
+    },
+    {
+      "title": "Agentic Coding Mag visual regression article",
+      "source_url": "https://agenticcodingmag.com/",
+      "observed_date_evidence": "October 2, 2026 in search result",
+      "reason": "Excluded because the search result was not enough to verify factual claims and the source page was not opened with stable article detail during this run."
+    }
+  ],
+  "follow_up_notes": [
+    "Use primary sources before synthesizing durable pages from secondary briefings, especially for AgentCore package-install vulnerabilities and Copilot Memory behavior.",
+    "Potential local synthesis candidates: API-triggered AI review governance, model-name drift in agent instructions, layered AI code review, task-risk-based autonomy selection, and agent-tool package-install risk.",
+    "Do not ingest this collector artifact directly into docs/wiki without a normal raw-source ingest pass and federation check."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
