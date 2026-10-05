@@ -1,0 +1,451 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-10-05T01:18:00Z",
+  "run_timestamp_local": "2026-10-04T211800-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-28T01:18:00Z",
+    "end_utc": "2026-10-05T01:18:00Z",
+    "rule": "Only sources visibly published or updated within the last 7 days qualify."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 103,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+  ],
+  "source_urls_checked": [
+    "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+    "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+    "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+    "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use",
+    "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+    "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+    "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e",
+    "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+    "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+    "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/",
+    "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+    "https://www.digitalapplied.com/blog/openai-agents-api-computer-use-hosted-browser",
+    "https://vercel.com/i/evaluating-ai-coding-agents"
+  ],
+  "qualifying_update_count": 6,
+  "qualifying_updates": [
+    {
+      "source_url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+      "visible_date": "2026-10-01 and 2026-09-29 entries; page updated 2026-10-04/2026-10-05 as displayed by Help Center",
+      "source_type": "official release notes",
+      "factual_summary": "OpenAI Business release notes added Admin Console management for plugins and marketplaces on October 1. September 29 entries added Codex Cloud isolated task workspaces, team-approved tool connections, team tasks, shared Pages and Spaces, and @ChatGPT in Slack and Microsoft Teams with admin-configured instructions, connections, and connected-account permissions.",
+      "why_it_matters": "Shared-channel and team-agent workflows now need evidence for installation authority, approved connections, shared recurring task ownership, isolated cloud workspaces, and channel access rather than treating chat launch as sufficient control.",
+      "named_entities": [
+        "OpenAI",
+        "ChatGPT Business",
+        "Codex Cloud",
+        "@ChatGPT",
+        "Slack",
+        "Microsoft Teams",
+        "Pages",
+        "Spaces",
+        "Plugins",
+        "Admin Console"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "ChatGPT",
+        "Codex",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "follow_up_note": "Local ingest should preserve the distinction between team workflow evidence and broad product coverage, which belongs upstream."
+    },
+    {
+      "source_url": "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+      "visible_date": "2026-09-29",
+      "source_type": "official API changelog",
+      "factual_summary": "OpenAI added computer use to the Agents API, describing tasks in an OpenAI-hosted browser with website access approvals and application-handled sign-in. The same changelog released GPT-6.1 Sol for complex coding and professional work and noted beta multi-agent delegation through Responses API requests.",
+      "why_it_matters": "Hosted browser execution and multi-agent delegation make browser/runtime boundaries, approval handling, model-route selection, and portability layers explicit evaluation points for local practice.",
+      "named_entities": [
+        "OpenAI",
+        "Agents API",
+        "Responses API",
+        "GPT-6.1 Sol",
+        "GPT-6 Astra"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Agents API",
+        "GPT-6.1 Sol",
+        "GPT-6 Astra"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "follow_up_note": "For local synthesis, focus on approval/session/runtime evidence; route model and API product background upstream."
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+      "visible_date": "Updated 2 days ago as displayed during the run",
+      "source_type": "official help center control documentation",
+      "factual_summary": "OpenAI documented workspace and group policies for in-app browser, Browser Use, and Computer Use, including site access, uploads, downloads, CDP/debug access, approval duration, saved approvals, native application allow/block rules, and the rule that user approvals cannot override administrator restrictions.",
+      "why_it_matters": "Enterprise browser and computer-use policies are concrete local evidence for execution-edge authorization, browser-agent runtime boundaries, and sensitive-data/supply-chain controls around apps, origins, uploads, downloads, and debug access.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "Browser Use",
+        "Computer Use",
+        "Chrome DevTools Protocol",
+        "macOS",
+        "Windows"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "Chrome",
+        "macOS",
+        "Windows"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md"
+      ],
+      "follow_up_note": "Ingest should keep admin-policy controls local and avoid turning the page into a product encyclopedia."
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+      "visible_date": "2026-09-30",
+      "source_type": "official cloud provider blog",
+      "factual_summary": "Google Cloud announced a Google Cloud CLI remote MCP server preview that packages gcloud and bq command operations behind a managed remote MCP server and isolated Google Cloud execution sandbox.",
+      "why_it_matters": "A managed remote CLI MCP server changes portability and authorization review: teams should distinguish protocol-level interoperability from managed execution, cloud identity, command breadth, and sandbox evidence.",
+      "named_entities": [
+        "Google Cloud",
+        "Google Cloud CLI",
+        "gcloud",
+        "BigQuery",
+        "bq",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Google Cloud",
+        "MCP",
+        "BigQuery"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "follow_up_note": "Route broad MCP and Google Cloud background upstream; keep local implications about command scope, sandboxing, identity, and evidence."
+    },
+    {
+      "source_url": "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+      "visible_date": "2026-09-30",
+      "source_type": "public engineering news report",
+      "factual_summary": "InfoQ reported a CodeScene case study where coding agents refactored a 300,000-line C codebase over three weeks using a CodeHealth MCP quality signal and replay-trace harness. The work reportedly changed 252,055 lines across 726 files and was merged to a fork through 54 pull requests, while projected defect and token-waste improvements were extrapolated rather than measured in that case.",
+      "why_it_matters": "Large agentic refactoring needs behavior-preserving harnesses, deterministic quality signals, small review units, and careful separation between measured evidence and projected benefits.",
+      "named_entities": [
+        "InfoQ",
+        "CodeScene",
+        "CodeHealth MCP Server",
+        "Street Fighter III: 3rd Strike",
+        "Adam Tornhill",
+        "Konrad Otrebski",
+        "Daniel Webb"
+      ],
+      "upstream_owned_entities": [
+        "CodeScene",
+        "CodeHealth MCP Server"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "follow_up_note": "If ingested, emphasize measured trace/review evidence and explicitly caveat extrapolated claims."
+    },
+    {
+      "source_url": "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e",
+      "visible_date": "2026-09-28T19:01:53Z",
+      "source_type": "public news report",
+      "factual_summary": "AP reported Nvidia announcing an Open Agent Safety Platform with sandbox and monitoring components intended to contain autonomous agent behavior amid safety concerns.",
+      "why_it_matters": "Independent containment and monitoring controls are relevant to execution-edge authorization and solution evaluation, but local synthesis should treat product details as broad ecosystem coverage and retain only the control-plane implication.",
+      "named_entities": [
+        "Nvidia",
+        "Open Agent Safety Platform",
+        "OpenShell",
+        "Sentry",
+        "Hugging Face"
+      ],
+      "upstream_owned_entities": [
+        "Nvidia",
+        "Open Agent Safety Platform",
+        "Hugging Face"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "follow_up_note": "Use as local evidence for independent containment/monitoring requirements, not as a vendor page."
+    }
+  ],
+  "excluded_candidate_count": 7,
+  "excluded_candidates": [
+    {
+      "source_url": "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use",
+      "reason": "Checked as linked implementation guidance, but no standalone visible publication/update date was present in the opened page; official Sep 29 changelog carries the date-qualified update instead."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "reason": "Relevant context-engineering guidance and TDD custom-agent example, but the opened page exposed crawl timing rather than a visible publication or update date."
+    },
+    {
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+      "reason": "Published 2026-09-23, outside the 7-day cutoff for this run."
+    },
+    {
+      "source_url": "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/",
+      "reason": "Published 2026-09-08, outside the 7-day cutoff for this run."
+    },
+    {
+      "source_url": "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+      "reason": "Published 2026-09-21, outside the 7-day cutoff for this run."
+    },
+    {
+      "source_url": "https://www.digitalapplied.com/blog/openai-agents-api-computer-use-hosted-browser",
+      "reason": "In-window secondary analysis, but official OpenAI changelog and docs cover the same hosted-browser update more directly."
+    },
+    {
+      "source_url": "https://vercel.com/i/evaluating-ai-coding-agents",
+      "reason": "Relevant to coding-agent evaluation, but published two months before this run."
+    }
+  ],
+  "leaf_results": [
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/ai-assisted-tdd.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/generated-code-refactoring.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "result": "no_qualified_updates_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e",
+        "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+        "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+        "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/",
+        "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+        "https://www.digitalapplied.com/blog/openai-agents-api-computer-use-hosted-browser",
+        "https://vercel.com/i/evaluating-ai-coding-agents"
+      ],
+      "follow_up_note": "No date-qualified local-practice update found for this leaf in this batch."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+      "result": "no_qualified_updates_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace",
+        "https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e",
+        "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+        "https://www.globenewswire.com/news-release/2026/09/23/3367496/0/en/Qodo-s-2026-State-of-AI-Code-Quality-Report-Reveals-Growing-Verification-Challenge-as-Agentic-Development-Scales.html",
+        "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/",
+        "https://www.cloudbees.com/blog/agentic-coding-enterprise",
+        "https://www.digitalapplied.com/blog/openai-agents-api-computer-use-hosted-browser",
+        "https://vercel.com/i/evaluating-ai-coding-agents"
+      ],
+      "follow_up_note": "No date-qualified local-practice update found for this leaf in this batch."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/",
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://www.infoq.com/news/2026/09/agentic-refactoring-case-study/"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://developers.openai.com/api/docs/changelog?mw_entry=2026-08-20-974ac0734e053853",
+        "https://apnews.com/article/a4cfc84ed00353ff8f2dad4bed7b429e"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    },
+    {
+      "leaf_id": "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+      "result": "qualified_update_found",
+      "source_urls_checked": [
+        "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes",
+        "https://help.openai.com/en/articles/20001510-manage-browser-and-computer-use-in-your-enterprise-workspace"
+      ],
+      "follow_up_note": "Review qualifying raw items for local-practice implication during normal ingest; keep upstream-owned entity background out of this wiki."
+    }
+  ],
+  "federation_boundary": "docs/wiki/federation.md routes broad AI ecosystem entities, products, models, frameworks, MCP servers, and techniques upstream; this artifact preserves only local practice implications.",
+  "upstream_owned_entities": [
+    "Agents API",
+    "BigQuery",
+    "ChatGPT",
+    "Chrome",
+    "CodeHealth MCP Server",
+    "CodeScene",
+    "Codex",
+    "GPT-6 Astra",
+    "GPT-6.1 Sol",
+    "Google Cloud",
+    "Hugging Face",
+    "MCP",
+    "Microsoft Teams",
+    "Nvidia",
+    "Open Agent Safety Platform",
+    "OpenAI",
+    "Slack",
+    "Windows",
+    "macOS"
+  ],
+  "follow_up_notes": [
+    "Raw-only watch artifact. Do not update docs/wiki pages from this artifact until separate ingest.",
+    "During ingest, deduplicate against recent topic-news artifacts before creating digest or leaf changes.",
+    "Keep OpenAI, Google Cloud, Nvidia, CodeScene, MCP, models, and product background upstream-owned unless a downstream practice lens is needed."
+  ]
+}
