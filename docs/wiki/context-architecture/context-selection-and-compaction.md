@@ -57,6 +57,8 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 The [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json) adds repository-memory, language-server indexing, and context-assembly evidence. Locally, context selection should distinguish stable repository rules, temporary handoffs, approved decision records, personal memory, language-server or compile-aware indexes, semantic search, code graphs, and live telemetry; each source has different authority, freshness, and audit requirements before it enters the active request.
 
+The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) adds focused-context and harness-lifecycle evidence. Write, Select, Compress, and Isolate are useful local labels for deciding what should persist in repository instructions or memory, what should be retrieved for the step, what can be summarized with recoverable originals, and what must be isolated by sandbox, MCP scope, hook, or approval policy. A separate focused-context warning reinforces that larger windows do not make noisy or weakly attributed context harmless.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -97,6 +99,8 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - Preserve content-exclusion policy, excluded path evidence, conversation branch, prompt timeline, transcript-search result, and resumed external-session state when those surfaces decide what an agent sees.
 - Use concise standards, ADR rationale, current architecture patterns, and business vocabulary as selected context, while routing enforceable requirements to deterministic checks and rejecting stale documentation dumps.
 - Separate repository instruction files, personal memory, task handoffs, approved decision records, semantic search, language-server indexes, compile-aware code graphs, and telemetry before treating them as active context.
+- Classify context operations as write, select, compress, or isolate so persistence, retrieval, summary, and sandbox decisions can be reviewed separately.
+- Treat noisy long-context additions as an evaluation risk; key decisions should be easy to find and checked against focused verification evidence.
 
 ## Authoritative Sources
 
@@ -138,6 +142,7 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
+- [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
 
 ## Related Code
 
@@ -186,3 +191,4 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 - Maintained on 2026-08-14 with trust-ranked enterprise context, conflict handling, response-runway compaction, keep-recent retention, and tool-schema exposure guidance.
 - Maintained on 2026-08-17 with convention-capture, output-compression, memory, transcript, prompt-cache, and exact-original audit guidance.
 - Maintained on 2026-09-02 with content-exclusion, excluded-path, conversation-branch, prompt-timeline, transcript-search, external-session-continuation, and desktop-agent context evidence.
+- Maintained on 2026-10-05 with write/select/compress/isolate context lifecycle and focused-context anti-noise evidence.

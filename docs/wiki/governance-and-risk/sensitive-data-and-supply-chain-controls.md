@@ -71,6 +71,8 @@ The August 20 raw sources add governed-skill, credential, and evidence-pack cont
 
 The August 23 raw sources add shadow-AI and skill-directory pressure. The [leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json) treats browser extensions, plug-ins, connectors, MCP servers, embedded assistants, and behavior-policed code execution as changing supply-chain surfaces even when the parent app is approved. The [topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds public skill-directory growth as an intake risk. Locally, third-party skills, resource lists, plugins, generated code, and connected-app features remain untrusted until provenance, authority, tool scope, data path, runtime behavior, and owner approval are checked.
 
+The October 5 raw sources add token-format and managed-tool control evidence. The [topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) records GitHub App installation token length drift as a local reminder to test storage, header validation, redaction, logs, transcripts, and fixed-column schema assumptions when agent infrastructure handles external credentials. The [leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json) adds admin-managed plugin, marketplace, browser, computer-use, and remote CLI MCP evidence: local controls should preserve admin policy, approved connection, upload/download, debug access, sandbox, identity, and command-scope evidence before these surfaces enter team workflows.
+
 The September 4 raw sources add retention and publishing-control evidence:
 
 - The [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json) records a coding model in Copilot that requires default data retention for safety classifiers unless an eligible enterprise zero-data-retention exception applies.
@@ -169,6 +171,8 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 - Treat developer workstations as supply-chain enforcement points for coding agents: apply release-age cooldowns, malicious-package blocks, plugin provenance checks, MCP guardrails, prompt/file-read controls, and generated-code security before repository review.
 - Verify plugin SHA pins after checkout by comparing the resolved commit object to the intended pinned SHA; pin metadata alone is not enough evidence.
 - Require project-level sandbox policy for filesystem, network, Git credential, and CLI credential access, and fail closed when the host cannot enforce it.
+- Test token length, shape, redaction, storage, header, and audit-log assumptions when external credential formats change.
+- Treat admin-managed plugins, marketplaces, browser/computer-use settings, remote CLI MCP servers, uploads, downloads, and debug access as sensitive-data or supply-chain controls that require policy evidence before team rollout.
 
 ## Authoritative Sources
 
@@ -234,6 +238,8 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
+- [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json)
 - [request packages and file boundaries](../prompt-and-instructions/request-packages-and-file-boundaries.md)
 - [source-workflows](../source-workflows/index.md)
 
@@ -265,6 +271,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.
+- Maintained on 2026-10-05 with token-format drift, managed-plugin, browser/computer-use, remote-CLI MCP, upload/download, debug-access, and sandbox-policy evidence.
 - Maintained on 2026-09-23 with generated-helper, test-output, local-import-path, module-shadowing, and restricted-execution supply-chain evidence.
 - Maintained on 2026-09-20 with Zero Trust prompt, source-code, internal-API, generated-output, skill-package validation, hosted-MCP, and batch-run governance evidence.
 - Maintained on 2026-09-08 with dependency-bot package access, personal-token reduction, community-agent component intake, provenance, assessment, expert review, and deployment-approval evidence.

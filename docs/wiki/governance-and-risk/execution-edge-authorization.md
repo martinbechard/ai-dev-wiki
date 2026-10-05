@@ -33,6 +33,8 @@ The September 15 [leaf update watch source](../../../raw/processed/2026-09-15/ai
 
 The September 20 raw sources add execution-time enforcement and machine-speed governance evidence. The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) and [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json) reinforce that agent governance should block, approval-gate, rate-limit, scope, terminate, or escalate actions while they run. Prompt policy, passive discovery, and after-the-fact review are insufficient when an agent can trigger APIs, tools, MCP servers, repositories, credentials, or external systems at machine speed.
 
+The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json) adds hosted-browser, multi-agent delegation, remote CLI MCP, and containment evidence. Locally, an execution edge should preserve website approvals, application sign-in boundary, command breadth, cloud identity, sandbox evidence, independent containment, and monitoring controls before agents can operate hosted browsers, managed cloud CLIs, or safety-critical autonomous workflows.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -53,6 +55,7 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 - Put policy checks, rate limits, scoped tool reach, escalation triggers, and decision logs on the runtime path for agent actions instead of relying only on written policy or post-run review.
 - Treat MCP servers and agent-facing APIs as execution edges that need identity verification, authorization scope, audit logging, rate limits, and access reviews before agents can invoke them.
 - Treat coding-agent permission fixes, symlink write behavior, sandbox claims, MCP metadata limits, transport model, publisher identity, authentication method, and audit coverage as edge evidence before enabling or expanding local agent tool access.
+- Preserve website approvals, sign-in boundary, command breadth, cloud identity, sandbox evidence, containment, and monitoring controls before enabling hosted browser, remote CLI MCP, or high-autonomy agent edges.
 
 ## Authoritative Sources
 
@@ -71,6 +74,7 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 - [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
+- [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json)
 - [agent governance infrastructure](agent-governance-infrastructure.md)
 - [tool call and MCP governance](../retrieval-and-tools/tool-call-and-mcp-governance.md)
 
@@ -100,6 +104,7 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 ## Maintenance Notes
 
 - Maintained on 2026-09-27 with coding-agent permission, sandbox, MCP publisher, transport, authentication, and audit-log approval evidence.
+- Maintained on 2026-10-05 with hosted-browser approval, remote-CLI MCP, cloud-identity, sandbox, containment, and monitoring evidence.
 - Maintained on 2026-09-20 with execution-time enforcement, machine-speed governance, MCP-as-API-boundary, policy-check, rate-limit, and escalation evidence.
 - Maintained on 2026-09-15 with app, CLI, and editor-hosted managed-permission precedence evidence.
 - Maintained on 2026-09-13 with managed-permission, sandbox-diagnostic, local-CLI, repository-first-open, short-lived-credential, and monitored-runtime edge evidence.

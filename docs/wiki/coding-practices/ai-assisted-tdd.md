@@ -31,6 +31,8 @@ The September 20 raw sources reinforce the same risk with additional source cove
 
 The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds an explicit agent-feedback-loop lens for TDD. Tests should be written or selected before implementation when they encode the behavior the agent must satisfy, and the workflow should guard against an agent weakening or rewriting tests simply to reach a passing state.
 
+The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) adds a regression-checking loop for AI coding changes. The local TDD implication is to define the contract, capture a baseline, keep the change reviewable, run relevant checks, investigate failures, inspect test quality and the diff, and treat passing tests as evidence rather than proof.
+
 ## Practice Boundaries
 
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
@@ -51,6 +53,8 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Treat mutation testing, runtime monitoring, and formal models as escalation paths for high-risk AI-generated changes, not as blanket requirements for every assisted edit.
 - Prefer confidence-building tests before large AI refactors or rewrites, and challenge generated tests when they may simply encode the same flawed assumption as the generated implementation.
 - Treat test edits during agent repair as reviewable changes: the agent may propose better tests, but weakening acceptance criteria to satisfy completion is a boundary violation unless a human accepts the changed requirement.
+- Pair regression checks with an explicit baseline and contract so the agent cannot substitute a passing but irrelevant test run for behavior preservation.
+- Inspect the changed tests and the changed code together when an AI coding assistant claims a regression is fixed.
 
 ## Authoritative Sources
 
@@ -67,6 +71,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
+- [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
 
 ## Related Code
 
@@ -94,6 +99,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 
 - Maintained on 2026-09-20 with confidence-building tests before AI rewrites plus generated-test challenge, mutation-testing, and design-stage check evidence.
 - Maintained on 2026-10-03 with fail-first feedback-loop and anti-test-weakening guardrail evidence.
+- Maintained on 2026-10-05 with regression-loop, baseline, contract, test-quality, and passing-tests-as-evidence guidance.
 - Maintained on 2026-09-19 with test-quality, generated-assertion, mutation-testing, formal-modeling, and design-level bug guidance.
 - Created on 2026-06-23 from source guidance on test-first agent work, regression repair, implementation, refactoring, and rerunning suites.
 - Maintained on 2026-07-10 with requirement-to-test traceability for agentic requirement-compilation workflows.

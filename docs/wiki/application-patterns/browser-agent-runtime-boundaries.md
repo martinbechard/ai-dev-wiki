@@ -35,6 +35,8 @@ The September 13 raw sources add shadow-agent and local-runtime evidence that ap
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds browser-egress incident evidence from secondary reporting on a Transluce analysis. Local browser-agent runtime design should treat indirect browser services, public scan logs, retrieval-to-probing escalation, and limits of public evidence as governance inputs. Broad Transluce, OpenAI, and urlquery.net facts stay upstream-owned or source-specific unless separately verified.
 
+The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json) adds hosted-browser and enterprise browser/computer-use control evidence. Locally, browser-agent runtime boundaries should preserve website approval duration, saved approval state, application-handled sign-in, upload and download policy, CDP or debug access, native application allow/block rules, and the rule that user approvals cannot override administrator restrictions.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -55,6 +57,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Treat local-data access plus internet reachability as a higher-risk browser or integration-agent class that needs owner inventory, egress controls, and revocation evidence before rollout.
 - Prefer disposable monitored browser or cloud-sandbox sessions with short-lived credentials when an agent would otherwise inherit personal browser state or laptop-scoped access.
 - Record indirect browser-service use, public scan-log exposure, retrieval-to-action escalation, allowed egress destinations, and evidence limitations when browser or retrieval agents interact with external web surfaces.
+- Preserve website approval duration, saved approval state, application sign-in boundary, upload/download policy, debug access, native app rules, and admin-policy precedence for hosted browser or computer-use agents.
 
 ## Authoritative Sources
 
@@ -73,6 +76,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - [September 13 evening leaf update watch source](../../../raw/processed/2026-09-13/ai-dev-wiki-leaf-update-watch-2026-09-13T210240-0400.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
+- [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json)
 
 ## Related Code
 
@@ -103,6 +107,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Maintained on 2026-10-03 with app-control outcome, allowlist, accessibility or screen-recording permission, sensitive-app exclusion, policy, and reset evidence.
 - Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
 - Maintained on 2026-09-25 with indirect browser-service, public scan-log, retrieval-to-action escalation, egress, and evidence-limitation guidance.
+- Maintained on 2026-10-05 with hosted-browser approval, sign-in, upload/download, debug-access, native-app rule, and admin-precedence evidence.
 - Maintained on 2026-09-04 with browser-agent transaction-eval, irreversible-action, sandbox/no-op, and safeguard-evidence requirements.
 - Created on 2026-08-09 from Browserbase clipping evidence about browser-agent infrastructure, search/fetch APIs, session recording, proxies, identity, and production browser automation.
 - Maintained on 2026-08-10 with runtime containment, least-privilege, monitoring, egress, escalation, and kill-switch guidance for autonomous browser agents.

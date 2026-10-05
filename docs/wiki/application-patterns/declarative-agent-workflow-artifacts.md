@@ -27,6 +27,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds approval-risk and rewind-state evidence. Assisted approval rules, higher-risk prompts, redirect behavior, rewind state, conversation rollback, and file-change rollback should be represented as explicit workflow fields when an agent session can undo or redirect work.
 
+The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) adds programmable workflow evidence. Locally, dynamic workflows should move orchestration control from free-form prompts into reviewable code or artifacts with stages, dependencies, parallel steps, structured handoffs, checkpoints, and human decision points.
+
 ## Practice Boundaries
 
 - Review branching, tool-call, approval, checkpoint, and resume semantics before runtime execution.
@@ -40,6 +42,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Review code-defined agent workflows for staged steps, parallel work, structured result schemas, handoff shape, verification gates, optional human input, and pause/resume semantics before teams reuse them.
 - Preserve tool, service, subagent, user-input, checkpoint, resume, structured-result, and permission-boundary fields when code-defined workflows become reusable team artifacts.
 - Record approval risk class, redirect target, rewind point, conversation rollback, and file rollback semantics when agent sessions can revise or undo prior work.
+- Represent stages, dependencies, parallel lanes, structured handoffs, checkpoints, and human decisions as reviewable workflow fields rather than implicit prompt text.
 
 ## Authoritative Sources
 
@@ -51,6 +54,7 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
+- [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
 - [AI process layer and workflow state](ai-process-layer-and-workflow-state.md)
 - [application harness patterns](application-harness-patterns.md)
 - [upstream Microsoft Agent Framework](../../../upstream-ai-wiki/agentic-frameworks/microsoft-agent-framework.md)
@@ -87,3 +91,4 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Maintained on 2026-08-27 with declarative action, checkpoint, human-input, telemetry, and serializer fields as source-reviewable workflow contract evidence.
 - Maintained on 2026-09-08 with scheduled loop, squad/fleet role, orchestration-pattern, validation-checkpoint, and escalation-rule evidence.
 - Maintained on 2026-09-25 with assisted-approval risk classes, redirect, rewind, conversation-rollback, and file-rollback workflow evidence.
+- Maintained on 2026-10-05 with programmable workflow stages, dependencies, parallel lanes, structured handoffs, checkpoints, and human-decision evidence.
