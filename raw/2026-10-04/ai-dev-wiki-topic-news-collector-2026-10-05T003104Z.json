@@ -1,0 +1,344 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-05T00:31:04Z",
+  "collector": {
+    "agent": "Mira Northstar",
+    "mode": "raw-only public web collection",
+    "federation_policy": "One-way downstream federation: broad AI ecosystem entities, companies, products, model families, developer tools, agentic frameworks, MCP servers, and broad techniques are upstream-owned by /Users/martinbechard/dev/ai-wiki/docs/wiki. This collector records only local AI-assisted development practice implications and routing notes."
+  },
+  "cutoff_window": {
+    "start_utc": "2026-10-03T00:31:04Z",
+    "end_utc": "2026-10-05T00:31:04Z",
+    "rule": "Include only public sources visibly published or updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "Cross-agent instruction-file behavior comparison",
+      "source_url": "https://hidekazu-konishi.com/entry/agents_md_and_instruction_files_across_coding_agents.html",
+      "visible_date": "October 3, 2026",
+      "visible_date_evidence": "The article says the materials were reviewed on October 3, 2026 and presents status changes as of October 3, 2026.",
+      "summary": "The article compares where multiple coding agents discover instruction files, when those files take effect, how they combine or stop reading files, and where documentation is silent. It records that many pages lack update dates, identifies status changes for instruction formats, and notes that its findings are documentation-based rather than practical testing.",
+      "why_it_matters": "Durable agent instructions need tool-specific discovery and precedence notes rather than assuming one AGENTS.md-like file behaves the same across agents. The local wiki should treat instruction discovery, import syntax, live-session refresh, and undocumented behavior as separate governance facts.",
+      "candidate_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "GEMINI.md",
+        ".github/copilot-instructions.md",
+        "Codex CLI",
+        "Codex code review",
+        "GitHub Copilot",
+        "Claude Code",
+        "Gemini CLI",
+        "Antigravity",
+        "Cursor",
+        "Kiro",
+        "VS Code Local agent"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "GitHub Copilot",
+        "Claude Code",
+        "Gemini CLI",
+        "Antigravity",
+        "Cursor",
+        "Kiro",
+        "VS Code"
+      ],
+      "local_practice_implication": "Maintain a local downstream lens for instruction-file portability and compliance checks; route broad product/version background upstream.",
+      "follow_up_notes": "During ingest, compare against existing prompt-and-instructions leaves before creating any new local lens."
+    },
+    {
+      "title": "Context engineering mapped to Codex CLI harness practices",
+      "source_url": "https://codex.danielvaughan.com/2026/06/10/context-engineering-codex-cli-write-select-compress-isolate-june-2026/",
+      "visible_date": "Updated October 4, 2026",
+      "visible_date_evidence": "The page shows original date June 10, 2026 and Updated October 4, 2026.",
+      "summary": "The article maps a Write, Select, Compress, Isolate framing to Codex CLI mechanisms such as repository instructions, memory, tool search, MCP scoping, compaction, subagents, profiles, sandboxes, and hooks. It presents harness engineering as the layer that shapes context through approval policy, sandbox boundaries, and event hooks.",
+      "why_it_matters": "The update is practice-level context architecture rather than only model or product news. It gives a vocabulary for local decisions about what should be persisted, retrieved, compressed, or isolated before an agent acts.",
+      "candidate_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "Codex CLI",
+        "AGENTS.md",
+        "MCP",
+        "subagents",
+        "OpenTelemetry",
+        "Starlark",
+        "PostToolUse hooks",
+        "Sourcegraph",
+        "LangChain"
+      ],
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "MCP",
+        "Sourcegraph",
+        "LangChain"
+      ],
+      "local_practice_implication": "Capture the downstream practice pattern as context lifecycle management and harness boundaries, while routing product-specific Codex and MCP background upstream.",
+      "follow_up_notes": "Check existing context architecture pages for Write/Select/Compress/Isolate or equivalent terminology before adding another pattern leaf."
+    },
+    {
+      "title": "Focused context warning for coding agents",
+      "source_url": "https://www.itechguides.com/the-more-context-you-give-your-ai-coding-agent-the-worse-it-can-get/",
+      "visible_date": "October 3, 2026",
+      "visible_date_evidence": "The page byline shows iTechGuides Team, October 3, 2026.",
+      "summary": "The article argues that more context is not automatically better context. It distinguishes focused task context from large, noisy context windows, and advises making key decisions easy to find while testing the output.",
+      "why_it_matters": "This reinforces a local context-architecture rule: retrieval and instructions should be intentionally scoped and verified, not dumped into a session because the window is large.",
+      "candidate_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Anthropic",
+        "context engineering",
+        "context windows",
+        "AI coding agents"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "context engineering"
+      ],
+      "local_practice_implication": "Treat context curation as a testable engineering decision with explicit relevance criteria and post-change verification.",
+      "follow_up_notes": "Potentially ingest as supporting evidence for a focused-context or context-pollution local lens, not as a broad technique explainer."
+    },
+    {
+      "title": "Agent-authored pull request risk checklist",
+      "source_url": "https://www.itechguides.com/the-four-horsemen-of-agent-pull-requests-and-how-to-stop-them/",
+      "visible_date": "October 3, 2026",
+      "visible_date_evidence": "The page byline shows iTechGuides Team, October 3, 2026.",
+      "summary": "The article proposes a practical review routine for agent-authored pull requests: inspect weakened checks, duplicated code, plausible but incorrect behavior, and unsafe or misaligned automation. It cites a 2026 empirical study of failed agentic pull requests and cautions that the grouping is a practical heuristic, not a canonical taxonomy.",
+      "why_it_matters": "The local wiki can use this as raw support for AI code review practice, especially review effort scaling, CI integrity checks, and human merge gates for agent-created diffs.",
+      "candidate_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "AI coding agents",
+        "pull requests",
+        "CI",
+        "prompt injection",
+        "Where Do AI Coding Agents Fail? An Empirical Study of Failed Agentic Pull Requests in GitHub"
+      ],
+      "upstream_owned_entities": [
+        "AI coding agents",
+        "GitHub"
+      ],
+      "local_practice_implication": "Review policies should start by protecting the checks and workflow boundaries, then inspect behavior and tests; do not treat green CI or a polished agent summary as sufficient acceptance evidence.",
+      "follow_up_notes": "Could update an existing AI code review or source workflow leaf with this checklist after normal raw ingest verification."
+    },
+    {
+      "title": "Regression loop for AI coding changes",
+      "source_url": "https://www.itechguides.com/how-to-detect-regressions-after-an-ai-coding-assistant-changes-your-code/",
+      "visible_date": "October 3, 2026",
+      "visible_date_evidence": "The page byline shows iTechGuides Team, October 3, 2026.",
+      "summary": "The article defines a regression-checking loop for AI coding changes: define the contract, establish a baseline, keep the change reviewable, run relevant checks, investigate failures, inspect test quality and the diff, and decide whether evidence is enough to merge. It warns that passing tests are evidence, not proof.",
+      "why_it_matters": "This is directly aligned with local verification and eval practice for AI-assisted development. It emphasizes behavior preservation, test relevance, and reviewable change size over trusting an assistant summary.",
+      "candidate_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "AI coding assistant",
+        "regression testing",
+        "GitHub Copilot coding agent",
+        "CodeQL",
+        "GitHub Advisory Database",
+        "secret scanning",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "CodeQL",
+        "GitHub Advisory Database"
+      ],
+      "local_practice_implication": "Verification pages should distinguish evidence quality from proof and require baseline/contract checks for agent-authored changes.",
+      "follow_up_notes": "Use as support for regression-repair and test-quality leaves; keep GitHub validation feature details upstream-owned."
+    },
+    {
+      "title": "GitHub token length change affects agent glue code",
+      "source_url": "https://fervorai.dev/articles/github-520-character-app-tokens-break-agent-glue-code/",
+      "visible_date": "October 4, 2026",
+      "visible_date_evidence": "The page metadata shows Analysis, October 4, 2026.",
+      "summary": "The article notes that newly minted GitHub App installation tokens completed rollout to a stateless format around October 2 and are about 520 characters. It highlights downstream risks in agent infrastructure: token storage, logging, header validation, and redaction rules that assumed shorter fixed-shape tokens.",
+      "why_it_matters": "Agent workflows often pass repository tokens through logs, sandboxes, transcripts, or MCP/server glue. The local practice implication is to test redaction, schema lengths, and audit-log scrubbing when external token formats change.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/application-patterns"
+      ],
+      "named_entities": [
+        "GitHub App installation tokens",
+        "GITHUB_TOKEN",
+        "gitleaks",
+        "agent identity",
+        "agent infrastructure"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub App installation tokens",
+        "gitleaks"
+      ],
+      "local_practice_implication": "Update agent-infrastructure review checklists to include token format drift, transcript redaction, and fixed-column schema checks.",
+      "follow_up_notes": "Consider whether existing governance/risk pages mention secret redaction drift or token-shape assumptions."
+    },
+    {
+      "title": "Programmable workflows for agent orchestration",
+      "source_url": "https://toolboxkart.tech/tools-guide/github-copilot-dynamic-workflows-guide",
+      "visible_date": "Published October 3, 2026",
+      "visible_date_evidence": "The page byline says Published October 3, 2026.",
+      "summary": "The article describes dynamic workflows as code-defined orchestrations with stages, dependencies, parallel steps, structured handoffs, and checkpoints. It frames the practice difference as moving control from a free-form agent prompt into a reproducible software workflow with AI components.",
+      "why_it_matters": "The local wiki owns agent workflow practice, including planning loops, subagents, structured outputs, streaming progress, approvals, and pause/resume checkpoints. The product names are upstream-owned, but the orchestration pattern belongs locally.",
+      "candidate_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot SDK",
+        "Dynamic Workflows",
+        "structured handoffs",
+        "checkpoints"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot SDK"
+      ],
+      "local_practice_implication": "Represent multi-agent orchestration as repeatable stages with typed handoffs and human checkpoints rather than hidden agent-to-agent free text.",
+      "follow_up_notes": "Verify whether Dynamic Workflows itself has authoritative GitHub documentation before using the product claim; local practice can still use the structured-workflow implication."
+    },
+    {
+      "title": "Copilot code review API and effort defaults",
+      "source_url": "https://pondero.ai/news/2026-10-04-copilot-code-review-api/",
+      "visible_date": "October 4, 2026",
+      "visible_date_evidence": "The page byline shows October 4, 2026.",
+      "summary": "The article reports that GitHub's October 2 changelog added REST and GraphQL API support for requesting Copilot code review and that Balanced became the default effort level for new and existing repositories and organizations unless Lite was explicitly selected.",
+      "why_it_matters": "Although the product update itself is upstream-owned, the local practice implication is governance: teams need explicit defaults, review-effort budgeting, CI/API call policy, and audit points when automated review can be triggered outside the pull request UI.",
+      "candidate_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot code review",
+        "REST API",
+        "GraphQL API",
+        "Balanced",
+        "Lite",
+        "GitHub Actions minutes",
+        "AI credits"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot code review"
+      ],
+      "local_practice_implication": "Automated AI review integrations should pin effort level, cost attribution, trigger source, and override hierarchy instead of inheriting changing defaults.",
+      "follow_up_notes": "During ingest, prefer GitHub's direct changelog/docs for durable product facts and use this article only for the local governance framing."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "context engineering | AI Coding Glossary - Real Python",
+      "source_url": "https://realpython.com/ref/ai-coding-glossary/context-engineering/",
+      "visible_date": "October 2, 2026",
+      "reason": "Visible date is outside the strict two-day window that starts at 2026-10-03T00:31:04Z."
+    },
+    {
+      "title": "9 slash commands to get better answers from ChatGPT",
+      "source_url": "https://www.tomsguide.com/ai/chatgpt/9-slash-commands-to-get-better-answers-from-chatgpt-number-7-is-my-personal-favorite",
+      "visible_date": "October 2, 2026",
+      "reason": "Outside the cutoff and focused on consumer ChatGPT prompting rather than AI-assisted development practice."
+    },
+    {
+      "title": "Context engineering for coding agents - ZeNorm",
+      "source_url": "https://zenorm.com/blog/context-engineering-for-coding-agents",
+      "visible_date": "October 16, 2026",
+      "reason": "Future-dated relative to the run time."
+    },
+    {
+      "title": "Best AI Code Review Tools for 2026 - StigStack",
+      "source_url": "https://stigstack.com/comparisons/ai-code-review-tools/",
+      "visible_date": "Last month / crawled 2 days ago",
+      "reason": "No direct visible in-window publication or update date; broad tool comparison is upstream product/catalog coverage."
+    },
+    {
+      "title": "AI Code Review Tools Directory",
+      "source_url": "https://aicodereview.io/",
+      "visible_date": "Updated 2026-08-11",
+      "reason": "Visible update date is stale and content is a broad product directory owned upstream."
+    },
+    {
+      "title": "Stet - AI coding agent evals on your codebase",
+      "source_url": "https://www.stet.sh/",
+      "visible_date": "No visible in-window publication date found",
+      "reason": "The search crawl was recent, but the page did not expose a qualifying direct publication or update date."
+    },
+    {
+      "title": "AI Code Review Tools Evolve to Manage Cognitive Debt in Engineering Teams",
+      "source_url": "https://www.ainewscycle.com/story/ai-code-review-tools-evolve-to-manage-cognitive-debt-in-engineering-teams-9f17a937",
+      "visible_date": "Page shell October 4, 2026; underlying story date June 22, 2026",
+      "reason": "The direct story date is stale and the page appears to synthesize broad ecosystem/product coverage."
+    },
+    {
+      "title": "List of Github repositories using AI Coding Agent",
+      "source_url": "https://ai-coding.info/en/repositories",
+      "visible_date": "October 4, 2026",
+      "reason": "Qualifying date, but it is a broad repository/tool catalog and does not provide a specific local practice update."
+    },
+    {
+      "title": "The Multiplayer Coding Hackathon",
+      "source_url": "https://www.hackathonradar.com/database/hackathon/the-multiplayer-coding-hackathon-2026",
+      "visible_date": "October 3-4, 2026 event dates",
+      "reason": "Event listing rather than a durable practice update; sponsor/product facts are upstream-owned."
+    },
+    {
+      "title": "Superpowers: Practical Coding Agent Framework and Methodology",
+      "source_url": "https://aitoolly.com/ai-news/article/2026-10-04-superpowers-by-obra-a-practical-agent-skills-framework-and-software-development-methodology-for-codi",
+      "visible_date": "October 3, 2026 at 05:57 AM",
+      "reason": "Secondary GitHub-trending summary of a framework/methodology entity; route broad framework/entity coverage upstream unless a separate local practice lens is requested."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact under raw for a later ingest pass; do not move it to raw/processed until docs/wiki synthesis and verification are complete.",
+    "Prefer direct official documentation for durable product claims during ingest, especially for GitHub Copilot code review APIs, token format changes, and Dynamic Workflows.",
+    "Likely local synthesis themes: instruction-file portability, context curation, agent PR review gates, regression evidence loops, token/redaction drift, structured orchestration, and AI review cost governance."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
