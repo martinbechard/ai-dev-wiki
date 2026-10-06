@@ -1,0 +1,356 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-10-06T01:02:55Z",
+  "run_timestamp_local": "2026-10-05T21:02:55-0400",
+  "cutoff_window": {
+    "start_utc": "2026-09-29T01:02:55Z",
+    "end_utc": "2026-10-06T01:02:55Z",
+    "days": 7
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+  ],
+  "selected_leaf_count": 15,
+  "source_urls_checked": [
+    "https://agenticindex.io/brief/september-19-2026",
+    "https://arxiv.org/abs/2609.34198",
+    "https://community.deeplearning.ai/c/short-course-q-a/spec-driven-development-with-coding-agents/607",
+    "https://memindex.app/blog/2026-10-01-agent-memory-is-the-write-path-nobody-audits",
+    "https://research.adobe.com/publications/?a=data-intelligence",
+    "https://sdd.sh/",
+    "https://sdd.sh/2026/10/claude-code-mods-in-process-plugins-v2-1-287/",
+    "https://sdd.sh/2026/10/claude-frontier-academy-100m-deployed-engineers-spec-skills/",
+    "https://sourcegraph.com/blog/agentic-batch-changes-public-beta",
+    "https://www.atlassian.com/blog/guides-research/forward-deployed-engineering-playbook",
+    "https://www.devoteam.com/news-and-pr/devoteam-accelerates-its-forward-deployed-engineering-practice/",
+    "https://www.itechguides.com/agent-memory-needs-more-than-vector-search/",
+    "https://www.itechguides.com/ai-agent-observability-traces-spans-metrics-and-evaluations/",
+    "https://www.itechguides.com/how-to-build-an-ai-research-agent-with-citations/",
+    "https://www.itechguides.com/how-to-debug-an-ai-agent-code-traces-evals-and-datasets/",
+    "https://www.itechguides.com/spec-driven-development-enforcing-architectural-contracts-for-coding-agents/",
+    "https://www.itechguides.com/what-is-ai-deep-research-how-research-agents-search-synthesize-and-cite-sources/",
+    "https://www.ryzlabs.com/ai-pod-teams",
+    "https://www.yepic.ai/blog/context-engineering-ai-agents-avatar-turn-packet"
+  ],
+  "qualifying_updates": [
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://www.atlassian.com/blog/guides-research/forward-deployed-engineering-playbook",
+      "source_title": "Atlassian\u2019s Forward Deployed Engineering Playbook",
+      "visible_date": "2026-10-04",
+      "summary": "Atlassian describes forward-deployed engineers as senior engineers who start from a business outcome, trace systems, permissions, handoffs, and agent requirements, then build production code, agents, integrations, and workflow redesigns inside the customer environment.",
+      "why_it_matters": "This reinforces the local senior-led pod practice: the accountable unit owns workflow discovery, production build, governance, and handoff evidence rather than treating agent adoption as seat rollout or model selection.",
+      "named_entities": [
+        "Atlassian",
+        "Forward Deployed Engineering",
+        "Rovo"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Rovo"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md"
+      ],
+      "source_url": "https://www.ryzlabs.com/ai-pod-teams",
+      "source_title": "AI pod teams: senior engineers who build AI with you",
+      "visible_date": "Updated October 2026",
+      "summary": "Ryz Labs frames an AI pod as a cross-functional senior engineering team, typically with a tech lead, ML engineer, and backend engineers, that owns one AI system from design to production inside the customer cloud, repositories, and standups.",
+      "why_it_matters": "This adds a current public pod-shape example and supports keeping ownership, evaluation sets, infrastructure, and documentation in the client-controlled environment as adoption criteria.",
+      "named_entities": [
+        "Ryz Labs",
+        "AI pod teams"
+      ],
+      "upstream_owned_entities": [
+        "Ryz Labs"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md"
+      ],
+      "source_url": "https://sdd.sh/2026/10/claude-frontier-academy-100m-deployed-engineers-spec-skills/",
+      "source_title": "Claude Frontier Academy: Anthropic Bets $100M That the Bottleneck Is Engineers, Not Models",
+      "visible_date": "2026-10-05",
+      "summary": "The article summarizes Anthropic\u2019s Claude Frontier Academy announcement as a hands-on deployed-engineer training program centered on selecting a deployment, writing precise intent and acceptance criteria, wiring permissions and review gates, and measuring outcomes.",
+      "why_it_matters": "The local implication is that executable specs, acceptance gates, permissions, and measurement remain workflow prerequisites before expanding model-backed deployment programs.",
+      "named_entities": [
+        "Anthropic",
+        "Claude Frontier Academy",
+        "Accenture",
+        "Deloitte",
+        "McKinsey",
+        "Morgan Stanley",
+        "Novo Nordisk"
+      ],
+      "upstream_owned_entities": [
+        "Anthropic",
+        "Claude",
+        "Accenture",
+        "Deloitte",
+        "McKinsey",
+        "Morgan Stanley",
+        "Novo Nordisk"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "source_url": "https://sdd.sh/2026/10/claude-code-mods-in-process-plugins-v2-1-287/",
+      "source_title": "Claude Code Mods: Plugins That Run Inside the Agent, With Your Permissions",
+      "visible_date": "2026-10-02",
+      "summary": "The article describes Claude Code mods as in-process TypeScript plugins that can observe or alter prompts, tool calls, permissions, and UI, while running unsandboxed with user permissions unless governed through safe mode, managed settings, or allowlists.",
+      "why_it_matters": "For portable skills and runbooks, plugin-like extension points need explicit trust review, owner policy, install provenance, kill switches, and permission boundaries before becoming reusable team procedure.",
+      "named_entities": [
+        "Claude Code",
+        "Anthropic",
+        "mods",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Anthropic",
+        "MCP"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ],
+      "source_url": "https://www.itechguides.com/spec-driven-development-enforcing-architectural-contracts-for-coding-agents/",
+      "source_title": "Spec-Driven Development: Enforcing Architectural Contracts for Coding Agents",
+      "visible_date": "2026-10-05",
+      "summary": "The article recommends explicit behavioral specifications, a navigable repository-knowledge map, reviewable task breakdowns, and automated architecture checks for coding-agent work, with human inspection at meaningful checkpoints.",
+      "why_it_matters": "This maps directly to executable PRD practice: specifications should define behavior, boundaries, repository context, review checkpoints, and checks rather than acting as loose prompts.",
+      "named_entities": [
+        "GitHub Spec Kit",
+        "OpenAI"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Spec Kit",
+        "OpenAI"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.itechguides.com/ai-agent-observability-traces-spans-metrics-and-evaluations/",
+      "source_title": "AI Agent Observability: Traces, Spans, Metrics, and Evaluations",
+      "visible_date": "2026-10-03",
+      "summary": "The article separates traces, spans, metrics, and evaluations, warning that a successful outcome alone does not prove the agent took a safe or correct process.",
+      "why_it_matters": "This supports observability gates that evaluate workflow steps and outcomes separately, especially when tool use, handoffs, and model calls can fail independently.",
+      "named_entities": [
+        "OpenAI Agents SDK",
+        "Amazon OpenSearch Service",
+        "LangSmith"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Agents SDK",
+        "Amazon OpenSearch Service",
+        "LangSmith"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "source_url": "https://www.itechguides.com/how-to-debug-an-ai-agent-code-traces-evals-and-datasets/",
+      "source_title": "How to Debug an AI Agent: Code, Traces, Evals, and Datasets",
+      "visible_date": "2026-10-05",
+      "summary": "The article recommends debugging agent failures by following an end-to-end trace, finding the first divergence from expected behavior, inspecting the code boundary, and converting recurring failures into repeatable datasets.",
+      "why_it_matters": "This is a concrete gate pattern: traces should become regression data and code-boundary evidence rather than remaining dashboard-only debugging artifacts.",
+      "named_entities": [
+        "OpenAI Agents SDK"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Agents SDK"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2609.34198",
+      "source_title": "Frozen Judges, Moving Agents: Version-Dependent LLM-Judge Error and the Limits of Judge-Assisted Agent Evaluation",
+      "visible_date": "2026-09-28",
+      "summary": "The arXiv abstract reports that judge-only intervals can declare improvements not established by execution-based intervals, old-version calibration can transfer poorly, and false acceptance of failed coding patches rises under some agent-capability conditions.",
+      "why_it_matters": "Product and representative workflow gates should not rely on transported or judge-only calibration; current-output paired audits and reference standards are needed when evaluator decisions route approvals or releases.",
+      "named_entities": [
+        "SWE-bench",
+        "tau-bench",
+        "AgentRewardBench"
+      ],
+      "upstream_owned_entities": [
+        "SWE-bench",
+        "tau-bench",
+        "AgentRewardBench"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+      ],
+      "source_url": "https://www.itechguides.com/what-is-ai-deep-research-how-research-agents-search-synthesize-and-cite-sources/",
+      "source_title": "What Is AI Deep Research? How Research Agents Search, Synthesize, and Cite Sources",
+      "visible_date": "2026-10-05",
+      "summary": "The article defines deep research as a multi-step planning, gathering, comparing, adapting, and synthesis workflow and notes that citation traceability and source-permission scope are core checks.",
+      "why_it_matters": "This reinforces the local split between exploratory research loops and constrained writing workflows: research autonomy needs source constraints, plan steering, and citation support checks.",
+      "named_entities": [
+        "Deep Research"
+      ],
+      "upstream_owned_entities": [
+        "Deep Research"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md"
+      ],
+      "source_url": "https://www.itechguides.com/how-to-build-an-ai-research-agent-with-citations/",
+      "source_title": "How to Build an AI Research Agent With Citations",
+      "visible_date": "2026-10-02",
+      "summary": "The article recommends preserving both claim text and source records, validating whether citation links support claims, and defining a research contract with question, outcome, currency, source preferences, and scope limits before retrieval.",
+      "why_it_matters": "This provides a current public pattern for keeping raw findings, claims, and citations connected before a research workflow becomes production writing.",
+      "named_entities": [
+        "OpenAI Deep Research"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Deep Research"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "source_url": "https://www.yepic.ai/blog/context-engineering-ai-agents-avatar-turn-packet",
+      "source_title": "Context Engineering for AI Agents: Build the Turn Packet",
+      "visible_date": "2026-10-01",
+      "summary": "The article describes a governed turn packet as the smallest approved set of instructions, identity attributes, conversation state, evidence, tool definitions, and observations needed for one response, carrying provenance, permission, expiry, classification, access, and freshness metadata.",
+      "why_it_matters": "This supports context routers that treat each context assembly as a governed selection event, not as a larger prompt, and that record why data entered the turn.",
+      "named_entities": [
+        "Microsoft"
+      ],
+      "upstream_owned_entities": [
+        "Microsoft"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "source_url": "https://memindex.app/blog/2026-10-01-agent-memory-is-the-write-path-nobody-audits",
+      "source_title": "Agent memory is the write path nobody audits",
+      "visible_date": "2026-10-01",
+      "summary": "The article argues that agent memory differs from read-only RAG because agents write from untrusted channels, consolidation can strip provenance, and write-time policy, namespaces, TTL, decay, and reviewable consolidation diffs are needed.",
+      "why_it_matters": "This is strong local evidence for treating memory write paths, provenance, consolidation, and retention as governance surfaces before structured memory can rehydrate later agent work.",
+      "named_entities": [
+        "Memindex",
+        "MemTensor",
+        "Vectorize"
+      ],
+      "upstream_owned_entities": [
+        "Memindex",
+        "MemTensor",
+        "Vectorize"
+      ]
+    },
+    {
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "source_url": "https://www.itechguides.com/agent-memory-needs-more-than-vector-search/",
+      "source_title": "Agent Memory Needs More Than Vector Search",
+      "visible_date": "2026-10-05",
+      "summary": "The article presents memory as a lifecycle covering selection, organization, storage, retrieval, update, and evaluation, and warns that embeddings alone do not decide retention, duration, conflict resolution, or workload fit.",
+      "why_it_matters": "This reinforces compiled-memory practice: durable context must preserve scope, provenance, update rules, and workload evaluation rather than treating vector recall as sufficient.",
+      "named_entities": [
+        "Agent memory"
+      ],
+      "upstream_owned_entities": [
+        "Agent memory"
+      ]
+    }
+  ],
+  "qualifying_update_count": 13,
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.devoteam.com/news-and-pr/devoteam-accelerates-its-forward-deployed-engineering-practice/",
+      "candidate_title": "Devoteam accelerates its Forward Deployed Engineering practice",
+      "reason": "Search result showed 2026-09-30 in window, but the direct page returned HTTP 403 during verification, so visible source text could not be confirmed."
+    },
+    {
+      "source_url": "https://research.adobe.com/publications/?a=data-intelligence",
+      "candidate_title": "Adobe Research publications listing deep research agent papers",
+      "reason": "Search result displayed publication date 2026-10-29, which is future-dated relative to the 2026-10-06 run time."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/agentic-batch-changes-public-beta",
+      "candidate_title": "Agentic Batch Changes is now in public beta",
+      "reason": "Published about three months before the run window; recent crawl date is not a visible publication or update date."
+    },
+    {
+      "source_url": "https://agenticindex.io/brief/september-19-2026",
+      "candidate_title": "Agentic AI news: The week MCP got a bouncer",
+      "reason": "Published 2026-09-19, outside the seven-day cutoff."
+    },
+    {
+      "source_url": "https://community.deeplearning.ai/c/short-course-q-a/spec-driven-development-with-coding-agents/607",
+      "candidate_title": "Spec-Driven Development with Coding Agents forum listing",
+      "reason": "Forum activity date was in window, but the listing did not provide a durable source update with enough factual practice content for a leaf update."
+    },
+    {
+      "source_url": "https://sdd.sh/",
+      "candidate_title": "sdd.sh home page",
+      "reason": "Used only as a discovery surface for dated articles; not counted as a standalone qualifying update."
+    }
+  ],
+  "excluded_candidate_count": 6,
+  "federation_boundary": "Broad ecosystem entities named in sources remain upstream-owned; this artifact records only downstream local-practice implications for workflow, governance, context architecture, verification, evaluation, and adoption leaves.",
+  "follow_up_notes": [
+    "Normal ingest should decide which qualifying updates merit synthesis into durable leaves and route broad entity background to the upstream AI wiki.",
+    "The selected codebase-wide agentic batch changes leaf received no qualifying direct update this run; older Sourcegraph evidence was excluded by date.",
+    "Pre-existing untracked raw/2026-10-05 topic-news artifact was left untouched."
+  ]
+}
