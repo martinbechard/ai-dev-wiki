@@ -61,6 +61,8 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 
 The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) reinforces that context compaction is not enough for long-horizon agents. Rehydration should reload task statements, authorization context, irreversible-action ledgers, tool-result clearances, and externalized state before it trusts a compacted narrative or continues a delegated workflow.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds agent-memory write-path evidence. Agent memory differs from read-only RAG because agents can write from untrusted channels and consolidation can strip provenance. Rehydration should therefore inspect memory namespaces, TTL, decay policy, write-time policy, source channel, and consolidation diffs before treating a remembered fact as current operating state.
+
 ## Practice Boundaries
 
 - Separate transcript portability from attachment, file, and artifact portability when moving work between assistant surfaces.
@@ -97,9 +99,11 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 - Treat compaction summaries as untrusted continuity input until durable files, evidence logs, and current repository state confirm them.
 - For cross-agent handoffs, preserve objective, changed files, rejected approaches, verification evidence, unresolved questions, and next safe step instead of treating personal memory or full transcripts as the shared source of truth.
 - Rehydrate governance-critical ledgers, approvals, and authorization context from durable state before relying on compacted summaries.
+- Inspect memory writes, namespaces, TTL, decay rules, and consolidation diffs before relying on recalled agent memory as current state.
 
 ## Authoritative Sources
 
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -155,6 +159,7 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-06 with agent-memory write-path, namespace, TTL, decay, write-policy, and consolidation-diff evidence.
 - Maintained on 2026-09-21 with repository/task/reference/decision context layering and compaction-summary trust-boundary evidence.
 - Maintained on 2026-09-23 with cross-agent handoff fields and personal-memory versus shared-decision boundaries.
 - Maintained on 2026-09-20 with persistent-context ownership, retention, export, sharing, portability, and revocation evidence.

@@ -130,6 +130,8 @@ The September 22-23 raw sources add point-of-action MCP enforcement, sandboxed c
 
 The [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json) reinforces that MCP governance is more than server registration. Local tool policy should keep server registration, inventory visibility, approval prompts, runtime enforcement, and sandboxed generated-code execution as separately reviewable controls before agents chain operational queries or actions.
 
+The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds MCP benchmark, reducer, and enterprise-toolbox signals. MCP tool governance should measure latency, throughput, token cost per call, stateful workflow overhead, and output-size pressure before approving a tool-heavy workflow; deterministic reducers can help only when raw results remain recoverable, reducer policy is reviewed, and post-tool summaries do not erase audit fields. Vendor-specific Foundry, Oracle, and AWS examples stay upstream-owned; locally, they reinforce that MCP is a governed toolbox pattern with identity, resource promotion, audit, and output-minimization controls.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -242,9 +244,12 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 - Review allowed hosts, package or plugin sources, environment access, data flow, and termination behavior before dynamic tools or runtime-generated code can execute.
 - Preserve policy-version, approval, tool-call, blocked-action, and outcome records when MCP or tool calls are part of audit evidence.
 - Treat prompt-injection fixes, sandbox fixes, MCP description limits, and permission-mode changes as tool-surface changes that require revalidation, not as routine release-note noise.
+- Benchmark MCP workflows by latency, throughput, token cost, state handling, and output-size pressure before scaling tool-heavy agents.
+- Use deterministic reducers for tool results only when raw outputs remain recoverable and reducer rules preserve identifiers, permissions, audit fields, and error state.
 
 ## Authoritative Sources
 
+- [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)

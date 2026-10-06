@@ -62,6 +62,8 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 
 The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai-dev-wiki-leaf-update-watch-2026-09-17T210120-0400.json) and [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json) add shared-gateway and usage-telemetry evidence. MCP gateways should record user and agent identity, per-tool scopes, session boundary, consent proof, audit trail, connection attempts, skill or custom-agent starts, and privacy-preserving grouping when customer-defined names are sensitive.
 
+The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds enterprise IAM and resource-promotion examples for MCP authorization. Local approval records should distinguish ordinary read tools from cross-account or cross-resource promotion tools, bind each promotion to source account, target account, resource identifier, execution identity, rollback path, and audit destination, and keep IAM policy evidence outside the model-visible tool result.
+
 ## Practice Boundaries
 
 - Preserve authenticated request, tool-call validation, approval pause, cost/quality gate, and action result evidence for MCP-mediated work.
@@ -101,9 +103,11 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - Treat MCP connection attempts, skill invocations, custom-agent starts, slash-command use, and plugin activity as governed telemetry when teams permit custom tool surfaces.
 - Group or redact customer-defined tool names when telemetry is needed for governance but full names would expose sensitive workflow details.
 - Include publisher identity, transport class, authentication path, approved tool inventory, least-privilege scope, audit-log target, and revocation route in the MCP approval package before recurring agent use.
+- Treat cross-account or cross-resource promotion tools as high-impact MCP calls that need source, target, resource, identity, rollback, and audit evidence before execution.
 
 ## Authoritative Sources
 
+- [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -158,6 +162,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-06 with cross-account resource-promotion, IAM, rollback, and audit-destination approval evidence.
 - Maintained on 2026-09-27 with MCP publisher, transport, authentication, approved-tool inventory, least-privilege, audit-log, and revocation evidence.
 - Maintained on 2026-09-25 with authenticated-request trace, tool validation, approval pause, cost/quality gate, OAuth consent, and token-refresh evidence.
 

@@ -15,6 +15,8 @@ The local practice is to separate exploratory research from constrained producti
 
 The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json) adds managed deep-research evidence. Asynchronous research agents should be treated as evidence-producing handoff workflows with data-sensitivity boundaries, citation review, and source provenance checks, not as low-latency chat substitutes.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds claim-and-citation contract evidence for deep research. Research workflows should preserve the claim text, source record, citation support check, question, expected outcome, currency requirement, source preferences, and scope limits before synthesis becomes finished writing.
+
 ## Practice Boundaries
 
 - Use an agentic loop for research when the system must decide which sources to inspect, when to pivot, and how to gather enough evidence.
@@ -23,6 +25,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - Prefer evaluator-optimizer loops for prose quality only when the reviewer has a clear rubric and examples.
 - Treat broad frameworks and MCP products as upstream-owned unless the local page is documenting the research or writing workflow pattern.
 - Require explicit data-sensitivity, citation, and source-review boundaries when a managed research agent searches, uploads files, uses MCP, or produces a cited report asynchronously.
+- Preserve claim text, source records, citation-support checks, currency requirements, source preferences, and scope limits before research synthesis becomes final prose.
 
 ## Authoritative Sources
 
@@ -30,6 +33,7 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-wiki-leaf-update-watch-2026-07-27T210149-0400.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 
 ## Related Code
 
@@ -58,3 +62,4 @@ The [July 27 leaf update watch source](../../../raw/processed/2026-07-27/ai-dev-
 
 - Created on 2026-06-23 to hold the research-agent versus writing-workflow boundary.
 - Maintained on 2026-07-27 with asynchronous managed research-agent handoff, citation, and data-sensitivity boundaries.
+- Maintained on 2026-10-06 with claim text, source record, citation-support, currency, source-preference, and scope-limit research contracts.

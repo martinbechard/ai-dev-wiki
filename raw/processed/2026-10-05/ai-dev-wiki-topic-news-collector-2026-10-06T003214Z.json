@@ -1,0 +1,444 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-06T00:32:14Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-04T00:32:14Z",
+    "end_utc": "2026-10-06T00:32:14Z",
+    "policy": "Include only public web sources with direct visible publication or update dates inside the strict two-day window. Exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice, including context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "collector_boundary": "Broad ecosystem entity facts are recorded as upstream-owned; this artifact keeps only local practice implications and routing notes."
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-10-06-001",
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "source_title": "ReviewBench: An open benchmark for AI code review",
+      "source_type": "vendor engineering blog",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page byline shows October 5, 2026.",
+      "short_factual_summary": "GitHub announced ReviewBench, a research-preview benchmark for AI code review agents. The benchmark is built from 219 public pull requests across 19 languages, uses a multi-source golden set, labels findings by severity and category, and reports grounded and augmented precision and recall.",
+      "why_it_matters_for_ai_assisted_development_practice": "Code-review eval pages should distinguish known-finding recall from valid novel findings, preserve severity/category slices, and record the benchmark version, judge, matcher, and validation method before using a score as release evidence.",
+      "named_entities": [
+        "GitHub",
+        "ReviewBench",
+        "GitHub Copilot code review",
+        "Claude Sonnet 5"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "Claude Sonnet 5",
+          "scope": "model family/model"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: verification-and-evals. Treat ReviewBench as an evaluation-method example, not a local GitHub or Copilot product leaf.",
+      "follow_up_notes": "During ingest, compare with existing AI code review and eval leaves, and avoid duplicating upstream product coverage."
+    },
+    {
+      "id": "2026-10-06-002",
+      "topic_root": "docs/wiki/retrieval-and-tools",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/",
+      "source_title": "New agent skill: Amazon SageMaker optimized generative AI inference for your coding agent",
+      "source_type": "vendor technical blog",
+      "visible_date": "05 OCT 2026",
+      "date_basis": "Direct page byline shows 05 OCT 2026.",
+      "short_factual_summary": "AWS introduced the aws-ai-ml skill through Agent Toolkit for AWS. The skill lets MCP-compatible coding agents such as Kiro, Claude Code, and Codex benchmark SageMaker endpoints, recommend deployment configurations, compare performance runs, and generate SageMaker Python SDK v3 code under the user's AWS credentials.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-skill coverage should document credential scope, preflight confirmation for load tests, generated-code review, and the distinction between local skill installation and runtime discovery.",
+      "named_entities": [
+        "AWS",
+        "Amazon SageMaker AI",
+        "Agent Toolkit for AWS",
+        "aws-ai-ml",
+        "Kiro",
+        "Claude Code",
+        "Codex",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "AWS",
+          "scope": "company and cloud platform"
+        },
+        {
+          "name": "Amazon SageMaker AI",
+          "scope": "product"
+        },
+        {
+          "name": "Kiro",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Codex",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: retrieval-and-tools or governance-and-risk. Keep only the practice lens: skill installation, discovery, benchmark authorization, generated-code review, and credential boundaries.",
+      "follow_up_notes": "Check existing skill/tool-call practice pages before ingest; route AWS product details upstream."
+    },
+    {
+      "id": "2026-10-06-003",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
+      "source_title": "Making Amazon Quick enterprise-ready: Automated, auditable cross-account resource promotion",
+      "source_type": "vendor technical blog",
+      "visible_date": "05 OCT 2026",
+      "date_basis": "Direct page byline shows 05 OCT 2026.",
+      "short_factual_summary": "AWS described a sample MCP server for promoting Amazon Quick agents, connectors, knowledge bases, flows, and spaces across accounts. The design uses idempotent upserts, read-only preview, permission replay, S3 backups before updates, and no deletes against the target.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent-resource promotion workflows should capture dry-run approval, idempotency, backup/rollback, no-delete posture, secret re-authentication, and permission replay as explicit release gates.",
+      "named_entities": [
+        "AWS",
+        "Amazon Quick",
+        "Amazon Bedrock AgentCore",
+        "Quick Resource Migrator",
+        "Model Context Protocol",
+        "Amazon S3"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "AWS",
+          "scope": "company and cloud platform"
+        },
+        {
+          "name": "Amazon Quick",
+          "scope": "product"
+        },
+        {
+          "name": "Amazon Bedrock AgentCore",
+          "scope": "product/platform"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk and source-workflows. Treat the post as a promotion-control pattern for agent artifacts, not an Amazon Quick entity page.",
+      "follow_up_notes": "During ingest, preserve the distinction between generated agent resources and source-code promotion."
+    },
+    {
+      "id": "2026-10-06-004",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://blogs.oracle.com/cloud-infrastructure/iam-enables-ai-transformation-at-oracle",
+      "source_title": "IAM Enables AI Transformation at Oracle",
+      "source_type": "vendor technical blog",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "Oracle described IAM-centered controls for internal AI assistants and agents, including preserving employee permissions across MCP connections, denying destructive operations with service-specific policies, and preserving user/agent context across delegated MCP-compliant services.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP governance pages should separate connector authentication from downstream authorization, document delegated identity propagation, and require explicit deny controls for destructive operations even when broader permissions exist.",
+      "named_entities": [
+        "Oracle",
+        "OCI IAM",
+        "Enterprise ChatGPT",
+        "MCP Security",
+        "DB Tools",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Oracle",
+          "scope": "company"
+        },
+        {
+          "name": "OCI IAM",
+          "scope": "product/platform"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk. Keep the downstream lens on delegated identity, least privilege, and action denial controls.",
+      "follow_up_notes": "Avoid restating Oracle product background; compare with existing permissions and approvals pages."
+    },
+    {
+      "id": "2026-10-06-005",
+      "topic_root": "docs/wiki/retrieval-and-tools",
+      "source_url": "https://apicoding.com/benchmarking-mcp-servers-and-stateful-api-workflows-latency-throughput-and-tokens-per-call/",
+      "source_title": "Benchmarking MCP Servers and Stateful API Workflows: Latency, Throughput and Tokens per Call",
+      "source_type": "practice essay",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "API Coding argued that generic HTTP load tools do not measure MCP server cost well enough for agents. The post proposes per-tool latency percentiles, tools/list and discovery cost, JSON-RPC and isError error rates, payload sizes, and token-cost accounting for stateful workflows.",
+      "why_it_matters_for_ai_assisted_development_practice": "Tool evaluation pages should record context-cost and per-workflow measures, not only endpoint throughput. MCP benchmarking should treat tool definitions and results as recurring context costs.",
+      "named_entities": [
+        "Model Context Protocol",
+        "wrk",
+        "hey",
+        "oha",
+        "vegeta",
+        "k6",
+        "Artillery",
+        "Hurl"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: retrieval-and-tools or verification-and-evals. Focus on measurement shape for governed tool use.",
+      "follow_up_notes": "Potentially combine with MCP token-reducer item as one tool-cost practice leaf during ingest."
+    },
+    {
+      "id": "2026-10-06-006",
+      "topic_root": "docs/wiki/context-architecture",
+      "source_url": "https://apicoding.com/most-mcp-token-waste-is-in-tool-results-put-a-deterministic-reducer-between-server-and-model/",
+      "source_title": "Most MCP Token Waste Is in Tool Results: Put a Deterministic Reducer Between Server and Model",
+      "source_type": "practice essay",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "API Coding proposed a deterministic reducer between MCP servers and models. The reducer would project, cap, strip, stash, and summarize tool results before the model sees them, while logging bytes, token estimates, and expansion references.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context-architecture guidance should cover result-shaping, not only tool-schema search. Reducers need deterministic rules, visible truncation metadata, expansion paths, per-caller stashes, expirations, and accounting logs.",
+      "named_entities": [
+        "Model Context Protocol",
+        "JMESPath",
+        "GitHub",
+        "PostgreSQL",
+        "Anthropic",
+        "Cloudflare"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        },
+        {
+          "name": "Anthropic",
+          "scope": "company"
+        },
+        {
+          "name": "Cloudflare",
+          "scope": "company"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: context-architecture and retrieval-and-tools. Capture the reducer as a local practice pattern for tool-result budgeting.",
+      "follow_up_notes": "If ingested, note that the proposed syntax is illustrative and not a shipped tool."
+    },
+    {
+      "id": "2026-10-06-007",
+      "topic_root": "docs/wiki/adoption-and-operating-model",
+      "source_url": "https://lawzava.com/blog/2026-10-05-the-review-queue-is-your-real-agent-limit/",
+      "source_title": "The Review Queue Is Your Real Agent Limit",
+      "source_type": "practice essay",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "The post argues that agent rollout capacity should be modeled as risk-weighted review demand against effective reviewer-hours. It recommends measuring review-minutes rather than PR counts, tracking p50/p95 queue age by risk tier, using tiered review, and keeping independent verification separate from the authoring agent.",
+      "why_it_matters_for_ai_assisted_development_practice": "Team adoption guidance should treat human review as a capacity constraint. Agents should attach evidence, split oversized work, rebase stale changes, and repair failed checks rather than count as independent verification of their own output.",
+      "named_entities": [
+        "Law Zava"
+      ],
+      "upstream_owned_entities": [],
+      "local_practice_implication": "Candidate destination: adoption-and-operating-model and agent-workflows. This is local practice coverage rather than ecosystem entity coverage.",
+      "follow_up_notes": "During ingest, compare with existing review-capacity and agent PR pages."
+    },
+    {
+      "id": "2026-10-06-008",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://www.turboai.dev/",
+      "source_title": "Release-by-release analysis of AI coding agents",
+      "source_type": "practice resource index",
+      "visible_date": "Updated October 5, 2026",
+      "date_basis": "Direct page states Updated October 5, 2026.",
+      "short_factual_summary": "TurboAI describes release-by-release analysis for six AI coding agents, tracking environment variables, model IDs, default-model changes, flags, security hardening, billing corrections, official changelog links, and public documentation.",
+      "why_it_matters_for_ai_assisted_development_practice": "Coding-agent upgrade workflows should track environment variables, default model changes, hidden flags, security hardening, and billing corrections as release-risk inputs rather than relying on short changelog summaries.",
+      "named_entities": [
+        "TurboAI",
+        "Claude Code",
+        "Codex CLI",
+        "OpenCode",
+        "Gemini CLI",
+        "Amp"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Codex CLI",
+          "scope": "developer tool"
+        },
+        {
+          "name": "OpenCode",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Gemini CLI",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Amp",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk or coding-practices. Keep the release-diff method locally; route per-tool facts upstream.",
+      "follow_up_notes": "Check whether an existing local page covers agent runtime upgrade checklists."
+    },
+    {
+      "id": "2026-10-06-009",
+      "topic_root": "docs/wiki/agent-workflows",
+      "source_url": "https://www.itechguides.com/5-logging-habits-that-make-an-ai-coding-agent-easier-to-debug/",
+      "source_title": "5 Logging Habits That Make an AI Coding Agent Easier to Debug",
+      "source_type": "practice guide",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page byline shows October 5, 2026.",
+      "short_factual_summary": "The guide recommends structured event fields, trace/span correlation, step sequencing, timing and outcome fields, and sensitive-data handling so failed AI coding-agent runs can be debugged from execution history rather than only final answers.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent workflow guidance should require observable event streams with tool, timing, status, trace context, and redaction fields when agents can call tools or delegate work.",
+      "named_entities": [
+        "OpenTelemetry",
+        "iTechGuides"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "OpenTelemetry",
+          "scope": "developer tool/standard ecosystem"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: agent-workflows or verification-and-evals. Focus on observability fields and debugging evidence.",
+      "follow_up_notes": "Treat as secondary/practice source; verify with local observability pages before ingest."
+    },
+    {
+      "id": "2026-10-06-010",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://www.itechguides.com/mcp-in-microsoft-foundry-the-toolbox-pattern-for-trustworthy-tool-calling/",
+      "source_title": "MCP in Microsoft Foundry: The Toolbox Pattern for Trustworthy Tool Calling",
+      "source_type": "practice guide",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page byline shows October 5, 2026.",
+      "short_factual_summary": "The guide explains Microsoft Foundry toolboxes as a centralized MCP-compatible endpoint and emphasizes that trustworthy tool calls still require separate agent and downstream identities, least-privilege tool exposure, namespaced tool names, and runtime approvals for human-authorized calls.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP governance guidance should not equate central discovery with trust. It should document identity separation, allow-list filtering, approval points, and diagnostic naming for tool calls.",
+      "named_entities": [
+        "Microsoft Foundry",
+        "Model Context Protocol",
+        "iTechGuides"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Microsoft Foundry",
+          "scope": "product/platform"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk and retrieval-and-tools. Keep only the trusted-tool-calling pattern locally.",
+      "follow_up_notes": "If ingested, verify against Microsoft Learn or another primary source before durable claims."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+      "source_title": "GitHub Copilot in VS Code, September 2026 releases",
+      "visible_date": "October 1, 2026",
+      "reason": "Visible date is outside the strict two-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "source_title": "Upcoming changes to GitHub Copilot policies and billing",
+      "visible_date": "August 28, 2026",
+      "reason": "Visible date is outside the strict two-day window; crawl freshness is not publication evidence."
+    },
+    {
+      "source_url": "https://openai.com/index/running-codex-safely/",
+      "source_title": "Running Codex safely at OpenAI",
+      "visible_date": "May 8, 2026",
+      "reason": "Strong local-practice relevance, but visible publication date is stale."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2610.00648",
+      "source_title": "Incident-Arena: Getting agents to the last nine of reliability",
+      "visible_date": "Wed Sep 30 19:50:42 2026",
+      "reason": "Primary arXiv submission date is outside the strict two-day window; secondary October 4 digest was not used to promote older primary evidence."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2609.24972",
+      "source_title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "visible_date": "Mon Sep 21 17:54:49 2026",
+      "reason": "Primary arXiv date is outside the strict two-day window; relevant for harness design but not a qualifying recent source."
+    },
+    {
+      "source_url": "https://www.swe-chat.com/",
+      "source_title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+      "visible_date": "Data through September 4, 2026",
+      "reason": "Public and relevant, but the visible update date is outside the strict two-day window."
+    },
+    {
+      "source_url": "https://codersera.com/blog/ai-coding-agents-complete-guide-2026/",
+      "source_title": "AI Coding Agents in 2026: The Complete Guide",
+      "visible_date": "Updated 05 Oct 2026",
+      "reason": "In-window but broad product/catalog coverage; local practice implication was weaker than selected sources and would duplicate upstream-owned developer-tool scope."
+    },
+    {
+      "source_url": "https://wisevoter.com/world/2026/10/05/earendil-integrates-mcp-pi-coding-agent",
+      "source_title": "Earendil Integrated MCP into Pi Coding Agent",
+      "visible_date": "October 5, 2026",
+      "reason": "In-window but broad product/entity update attributed to another report; route to upstream AI wiki if needed."
+    },
+    {
+      "source_url": "https://www.toolbit.ai/blog/ai-code-review-tools-that-find-bugs-security",
+      "source_title": "Which AI Code Reviewer Actually Catches Bugs? The Seeded-Repo Test (2026)",
+      "visible_date": "Last updated: October 5, 2026",
+      "reason": "In-window but mainly comparison/product buying guidance; lower source quality for durable local evaluation practice than GitHub ReviewBench."
+    },
+    {
+      "source_url": "https://www.seetest.org/index.php?page=shift-in",
+      "source_title": "Shift In: Making Your AI Coding Agent a Quality Engineer",
+      "visible_date": "October 5, 2026",
+      "reason": "Visible date appears to be an event/course date rather than a publication or update date."
+    }
+  ],
+  "follow_up_notes": [
+    "No docs/wiki pages were updated by this collector.",
+    "No files were saved under raw/processed by this collector.",
+    "Likely ingest clusters: ReviewBench and review-capacity under verification/adoption; MCP cost, reducers, and toolboxes under retrieval/tools and governance; AWS/Oracle examples only as downstream practice lenses.",
+    "Before synthesis, recheck upstream AI wiki for GitHub, AWS, Oracle, Microsoft, Copilot, Codex, Claude Code, SageMaker, Amazon Quick, and MCP entity pages."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed for raw/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json"
+  },
+  "blockers": []
+}

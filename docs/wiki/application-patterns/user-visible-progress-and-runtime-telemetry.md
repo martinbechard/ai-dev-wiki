@@ -100,6 +100,8 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 This evidence is needed instead of relying only on model explainability or final summaries.
 
+The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) and [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) add logging-habit, OpenTelemetry, and agent-observability evidence. Debuggable coding agents should preserve structured log events for task, plan, tool call, approval, verification, first divergence, and final outcome; traces, spans, metrics, and eval results should be joined without implying that a successful final answer proves a safe process.
+
 ## Practice Boundaries
 
 - Expose runtime overhead, supervision, crash recovery, nested calls, retries, review pressure, and accepted-outcome cost when agent execution scales beyond one interactive turn.
@@ -148,9 +150,13 @@ This evidence is needed instead of relying only on model explainability or final
 - Show rollout baseline, production-signal comparison, prepared revert state, security-review status, and externally controlled audit evidence when a coding-agent workflow spans pull request, deployment, and post-deploy monitoring.
 - Show selected workflow mode, critic role, critic model boundary, long-task state, and real-time progress updates when multi-model or critique workflows run.
 - Reconstruct workflow journeys across systems with accessed systems, actions taken, human judgment points, owner handoffs, and error-amplification evidence when agents operate in regulated or multi-system workflows.
+- Emit structured events for task, plan, tool call, approval, verification, first divergence, and outcome when coding-agent debugging depends on replay.
+- Join traces, spans, metrics, and evaluations while keeping successful outcome, safe process, and accepted release as separate signals.
 
 ## Authoritative Sources
 
+- [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)

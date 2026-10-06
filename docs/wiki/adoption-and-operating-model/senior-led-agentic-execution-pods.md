@@ -21,6 +21,8 @@ The [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-
 
 The [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json) adds workplace reinforcement-learning and Agentic Pods evidence. The local implication is governance-sensitive: senior pods should observe and redesign real workflows only with consent, privacy boundaries, and evidence ownership, then turn the observed workflow into representative task environments, acceptance gates, and operating changes rather than treating human work traces as generic training data.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds forward-deployed engineering and AI pod evidence. Senior-led pods should start from the business outcome, trace systems, permissions, handoffs, and agent requirements, then own production code, integrations, workflow redesign, and handoff evidence inside the customer or product environment rather than acting as model-rollout consultants.
+
 ## Practice Boundaries
 
 - Use senior-led pods for high-leverage workflows that need end-to-end ownership.
@@ -31,6 +33,8 @@ The [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-de
 - Keep the senior owner responsible for coverage reconciliation and final acceptance after delegated fan-out.
 - Use embedded senior pods when the workflow requires domain-context translation, customer feedback, build-and-launch ownership, and accountable production operation.
 - Treat observed human workflows and realistic work environments as sensitive operating evidence that needs consent, privacy boundaries, and explicit ownership before pods use it to redesign agent workflows.
+- Start embedded pod work from the business outcome and current workflow, then trace systems, permissions, handoffs, and agent requirements before building.
+- Keep production build, integration, workflow redesign, launch, and handoff evidence inside the pod's accountability boundary.
 
 ## Authoritative Sources
 
@@ -41,6 +45,7 @@ The [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-de
 - [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-wiki-leaf-update-watch-2026-07-05T210225-0400.json)
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-dev-wiki-leaf-update-watch-2026-08-12T210257-0400.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 
 ## Related Code
 
@@ -71,3 +76,4 @@ The [August 12 leaf update watch source](../../../raw/processed/2026-08-12/ai-de
 - Maintained on 2026-07-05 with dynamic-subagent coverage, typed intermediate result, and senior-owner reconciliation signals.
 - Maintained on 2026-07-31 with customer-embedded AI engineering evidence for domain translation, launch ownership, and production workflow accountability.
 - Maintained on 2026-08-12 with realistic workflow-environment and Agentic Pods evidence as consent- and governance-sensitive operating inputs.
+- Maintained on 2026-10-06 with forward-deployed engineering, AI pod, outcome-first workflow tracing, and production handoff evidence.

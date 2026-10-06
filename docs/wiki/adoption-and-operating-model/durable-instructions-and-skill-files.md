@@ -64,6 +64,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Stale-instruction checks.
 - A review cadence for model-dependent prompts.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds in-process plugin evidence from Claude Code mods. Plugin-like instruction extensions that can observe or alter prompts, tool calls, permissions, or UI state should be governed as executable instruction surfaces: require owner, allowed hooks, safe mode or allowlist behavior, permission boundary, test evidence, and rollback before team use.
+
 ## Practice Boundaries
 
 - Treat skills as human-readable procedure and MCP-style tools as governed access surfaces; do not let one stand in for the other's controls.
@@ -100,12 +102,14 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Keep onboarding guidance current, scoped, and rationale-bearing; do not promote stale documentation bundles into durable instruction files without owner review and verification.
 - Treat MCP-discovered skills, shared organization skills, managed custom instructions, and learned fix-pattern memories as durable guidance only after provenance, owner, loading policy, scope, verification, and retirement review are recorded.
 - Treat named models inside durable instructions as configurable dependencies with owner review, fallback guidance, and stale-reference checks.
+- Treat in-process instruction plugins or mods as executable instruction surfaces with owner, hook scope, permission boundary, safe-mode or allowlist policy, tests, and rollback evidence.
 
 ## Authoritative Sources
 
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Folder organization source note](../../../raw/processed/link-aliases/folder-organization-aicodethatworks.md)
@@ -161,6 +165,7 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Maintained on 2026-09-19 with skills-versus-MCP, code-ownership, risk-scaled review, and human-readable procedure boundaries.
 - Maintained on 2026-09-25 with MCP skill discovery, shared organization skills, managed custom instructions, learned memory, provenance, and retirement-review evidence.
 - Maintained on 2026-10-04 with model-name dependency drift and stale-instruction review evidence.
+- Maintained on 2026-10-06 with in-process plugin, prompt/tool/permission hook, safe-mode, allowlist, and rollback evidence.
 - Maintained on 2026-09-15 with coding-agent onboarding, current standards, ADR rationale, context-file scope, and stale-documentation rejection evidence.
 - Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.

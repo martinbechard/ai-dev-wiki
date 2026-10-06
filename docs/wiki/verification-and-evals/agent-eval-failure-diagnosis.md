@@ -28,6 +28,8 @@ The evidence package should include the task, initial state, allowed tools, tran
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json) adds self-improvement and cost-failure evidence. When a harness tries to improve itself or a long-running agent loop scales up, diagnosis should separate sparse-update overfitting, eval leakage, stability-threshold failures, excessive context or tool-definition cost, subagent fan-out, and runaway API-call loops before changing model routes or prompts.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) reinforces trace-first debugging for coding agents. Diagnosis should follow the end-to-end trace, locate the first divergence from expected behavior, inspect the code or tool boundary at that point, and convert repeated failures into datasets before changing the agent.
+
 ## Practice Boundaries
 
 - Include knowledge-gap canaries or absence tests when diagnosing retrieval-backed agents so fabrication and failure-to-abstain become visible.
@@ -42,10 +44,12 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 - Separate eval leakage, self-improvement overfitting, unstable sparse updates, excessive context growth, tool-definition cost, subagent fan-out, and runaway call loops before treating a failed long-horizon run as only a reasoning failure.
 - After an eval failure, read traces, compare similar runs, replay the failing case, inspect tool arguments and state, and add targeted logs before changing the agent.
 - Treat comparison runs as diagnostic evidence, not ground truth, when deciding whether a prompt, tool, model route, or performance gate caused the failure.
+- Locate the first consequential divergence in an end-to-end trace before adding broader logging, prompt changes, or model-routing changes.
 
 ## Authoritative Sources
 
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 
@@ -79,6 +83,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Maintenance Notes
 
 - Maintained on 2026-10-02 with trace reading, run comparison, replay, tool-argument inspection, targeted logging, and comparison-run caveats.
+- Maintained on 2026-10-06 with first-divergence tracing, code-boundary inspection, and repeated-failure dataset evidence.
 - Maintained on 2026-09-25 with knowledge-gap canary, abstention, observability, and completed-task evaluation evidence.
 - Maintained on 2026-09-25 with self-improvement overfitting, eval leakage, stability-threshold, context-cost, subagent fan-out, and runaway-loop diagnosis evidence.
 

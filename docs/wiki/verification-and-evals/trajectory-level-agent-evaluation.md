@@ -102,6 +102,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 The September 29 raw sources add named-score and role-weighted SDLC benchmark evidence. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) records evaluation across task outcome, tool use, trajectory, and grounding with separate named scores, execution evidence, production-derived datasets, regression tests, and trace inspection. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds multi-agent SDLC scoring that weights review and implementation roles while preserving artifact quality, efficiency metrics, and versioned-rubric caveats. Locally, trajectory evaluation should keep role-specific score weights and trace-level evidence visible instead of collapsing them into one leaderboard rank.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds calibration evidence from execution-versus-judge interval research. When judge-only intervals declare a coding-agent improvement that execution-based intervals do not establish, trajectory evaluation should preserve the benchmark task, old-versus-current calibration context, failed-patch acceptance rate, and execution evidence before treating the result as an autonomy or model-routing improvement.
+
 ## Practice Boundaries
 
 - Evaluate tool-using agent workflows with trace and transcript evidence, not only final outputs.
@@ -143,9 +145,11 @@ The September 29 raw sources add named-score and role-weighted SDLC benchmark ev
 - Preserve frozen generated artifacts, held-out execution environments, released prompts or code when available, simulator or checker results, and professional-judgment task evidence when evaluating agent trajectories beyond ordinary code patches.
 - Use separate named scores for task outcome, tool use, trajectory, grounding, artifact quality, and efficiency when those dimensions fail independently.
 - Record role weights, rubric version, token and cost metrics, static-analysis/test results, deliverable manifests, and transcript evidence before comparing multi-agent SDLC runs.
+- Compare judge-only intervals with execution-backed intervals before accepting a claimed coding-agent improvement, especially when old-version calibration may transfer poorly.
 
 ## Authoritative Sources
 
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
@@ -218,6 +222,7 @@ The September 29 raw sources add named-score and role-weighted SDLC benchmark ev
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-06 with judge-only interval, execution-backed interval, calibration-transfer, and false-acceptance evidence.
 - Maintained on 2026-09-29 with named-score, role-weighted, artifact-quality, efficiency, production-dataset, regression-test, and trace-inspection evidence.
 - Maintained on 2026-09-15 with independent-assurance, visual-validation, governance-readiness, production-gate, kill-switch, and specialized technical-debt audit evidence.
 - Maintained on 2026-09-25 with frozen generated artifacts, held-out execution, prompt/code release, and professional-judgment workflow-eval evidence.

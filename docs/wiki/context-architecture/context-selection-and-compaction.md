@@ -59,6 +59,8 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 
 The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) adds focused-context and harness-lifecycle evidence. Write, Select, Compress, and Isolate are useful local labels for deciding what should persist in repository instructions or memory, what should be retrieved for the step, what can be summarized with recoverable originals, and what must be isolated by sandbox, MCP scope, hook, or approval policy. A separate focused-context warning reinforces that larger windows do not make noisy or weakly attributed context harmless.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds governed turn-packet evidence. A turn packet should be the smallest approved set of instructions, identity attributes, conversation state, evidence, tool definitions, and observations needed for one response, with provenance, permission, expiry, classification, access, and freshness metadata. This is context selection, not memory by default: anything reused after the turn needs a separate write and retention decision.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -101,9 +103,11 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Separate repository instruction files, personal memory, task handoffs, approved decision records, semantic search, language-server indexes, compile-aware code graphs, and telemetry before treating them as active context.
 - Classify context operations as write, select, compress, or isolate so persistence, retrieval, summary, and sandbox decisions can be reviewed separately.
 - Treat noisy long-context additions as an evaluation risk; key decisions should be easy to find and checked against focused verification evidence.
+- Build turn packets from the smallest approved evidence set for the next response, carrying provenance, permission, expiry, classification, access, and freshness metadata.
 
 ## Authoritative Sources
 
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -169,6 +173,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-06 with governed turn-packet, provenance, permission, expiry, classification, access, and freshness evidence.
 - Maintained on 2026-09-21 with refreshable repository-view, context-attribution, capped-context, workspace-trust, harness-efficiency, and compaction trust-boundary evidence.
 - Maintained on 2026-09-23 with instruction-memory separation, cross-agent handoff, language-server index, code-graph, semantic-search, and telemetry context-selection evidence.
 - Maintained on 2026-09-15 with selective coding-agent onboarding context, ADR rationale, current standards, business vocabulary, and stale-documentation rejection evidence.

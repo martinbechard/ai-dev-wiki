@@ -104,6 +104,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 Design-review gaps should remain visible instead of being flattened into one AI-review pass.
 
+The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds ReviewBench as a code-review-eval method signal, not a local GitHub or Copilot product leaf. Review evals should separate known-finding recall from valid novel findings, preserve severity and category slices, and record benchmark version, judge, matcher, validation method, grounded precision/recall, and augmented precision/recall before using a score as release evidence.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -174,9 +176,11 @@ Design-review gaps should remain visible instead of being flattened into one AI-
 - Score API-triggered review separately from human-requested review by preserving request actor, effort value, default policy, trigger context, and downstream human acceptance.
 - Score adversarial review by evidence-backed disagreement, retraction quality, convergence criteria, budget observance, and whether only converged findings reach writable repair work.
 - Score layered review workflows by whether repository instructions, deterministic checks, product-fit review, and human review remain distinct evidence gates with visible design-review residual risk.
+- Separate known-defect recall from acceptable novel findings when a code-review benchmark permits both, and keep severity/category slices, matching method, and validation method visible.
 
 ## Authoritative Sources
 
+- [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -258,6 +262,7 @@ Design-review gaps should remain visible instead of being flattened into one AI-
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
 - Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.
 - Maintained on 2026-09-29 with role-weighted review scoring, artifact-quality, efficiency, static-analysis, pytest, deliverable-manifest, transcript, fresh-context, reproducible-finding, and intent-note evidence.
 - Maintained on 2026-09-26 with review-stage timing, bot-versus-human attribution, finding-to-fix conversion, verification-capacity, and reviewer-triage evidence.

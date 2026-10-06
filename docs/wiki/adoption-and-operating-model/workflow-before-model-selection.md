@@ -112,6 +112,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 Autonomy should scale with reversibility, permission level, verification strength, and visibility of actions.
 
+The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds deployed-engineer training and spec-driven workflow evidence. Workflow selection should train teams to choose a concrete deployment, write intent and acceptance criteria, wire permissions and review gates, and measure outcomes before choosing a model or agent surface. Spec-driven development belongs here when architectural contracts, repository knowledge maps, task breakdowns, and automated checks define the workflow authority that the agent must follow.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -182,6 +184,8 @@ Autonomy should scale with reversibility, permission level, verification strengt
 - Define budget-request justification and approval evidence when metered assistant use becomes a recurring workflow dependency.
 - Select autonomy level by task risk, reversibility, permission level, verification strength, and action visibility before selecting the model, assistant surface, or agent mode.
 - Require outcome, context, boundary, increment, independent-verification, and approval-point definitions before agentic coding work becomes delegated execution.
+- Train deployed-engineer workflows around a selected deployment, precise intent, acceptance criteria, permissions, review gates, and outcome measurement before selecting the assistant surface.
+- Treat spec-driven development as workflow authority when architectural contracts, repository maps, task breakdowns, and automated checks constrain agent work.
 
 ## Authoritative Sources
 
@@ -197,6 +201,7 @@ Autonomy should scale with reversibility, permission level, verification strengt
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
