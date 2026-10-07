@@ -25,6 +25,8 @@ This page owns the platform-native mutation pattern. [Application harness patter
 
 The [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) adds platform-runtime evidence from enterprise agent surfaces. Local platform-native mutation should pair model reasoning with deterministic execution rails, governed enterprise data access, safety boundaries, and validation paths before agents can mutate platform objects or enterprise workflows.
 
+The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) adds editor-platform mutation evidence. When agent coordination, remote execution, worktree reuse, MCP configuration, or enterprise AI defaults move into the editor/runtime surface, local design should record which platform setting changed mutation authority and which repository or workspace evidence still verifies the resulting change.
+
 ## Practice Boundaries
 
 - Prefer platform-native mutation APIs when post-agent maintenance should happen in the platform's normal UI.
@@ -33,11 +35,13 @@ The [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai
 - Record validation failures and fixes as part of the agent run evidence.
 - Route source-controlled builder artifacts through [file-oriented enterprise builder workflows](file-oriented-enterprise-builder-workflows.md) when the platform exports files.
 - Require deterministic execution rails, governed data access, safety-boundary evidence, and post-action validation before platform agents mutate enterprise objects or workflows.
+- Record editor or platform settings that change mutation authority, including remote-delegation enablement, worktree reuse, MCP configuration destination, model-orchestration route, and enterprise AI default policy.
 
 ## Authoritative Sources
 
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [application harness patterns](application-harness-patterns.md)
 
 ## Related Code
@@ -65,4 +69,5 @@ The [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with deterministic-execution, governed-data, safety-boundary, enterprise-object, and validation-path evidence.
+- Maintained on 2026-10-07 with editor-platform mutation authority, remote-delegation, worktree-reuse, MCP-configuration, model-orchestration, and enterprise-default evidence.
 - Created on 2026-09-14 from platform-native MCP mutation evidence in the September 15 topic news collector.

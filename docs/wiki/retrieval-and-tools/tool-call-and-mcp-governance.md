@@ -132,6 +132,11 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 
 The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds MCP benchmark, reducer, and enterprise-toolbox signals. MCP tool governance should measure latency, throughput, token cost per call, stateful workflow overhead, and output-size pressure before approving a tool-heavy workflow; deterministic reducers can help only when raw results remain recoverable, reducer policy is reviewed, and post-tool summaries do not erase audit fields. Vendor-specific Foundry, Oracle, and AWS examples stay upstream-owned; locally, they reinforce that MCP is a governed toolbox pattern with identity, resource promotion, audit, and output-minimization controls.
 
+The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) adds production MCP client and hosted-MCP governance details:
+
+- MCP clients that front enterprise data should preserve credential-refresh ownership, protocol-version negotiation, sensitive bound-parameter redaction, session tracking, correlation headers, and insecure-transport warnings.
+- Hosted MCP servers that expose platform operations should forward the user's own identity where possible, keep read-mostly defaults, require explicit approval for writes, omit destructive operations unless separately justified, and document logout or disconnect behavior.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -203,6 +208,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 - Treat MCP protocol revisions as deployment lifecycle events that require conformance evidence, state-handle review, migration plans, approval checks, and updated audit joins.
 - Scope MCP authorization by resource, task, user or agent identity, and read/write capability before the tool is callable.
 - Preserve exact proposed and executed payloads for high-impact tool calls so approval evidence can be matched to action evidence.
+- Require production MCP clients to record credential refresh, protocol negotiation, sensitive-parameter redaction, session correlation, and insecure-transport warnings before agents rely on generated tool definitions.
+- Require hosted MCP servers to record identity-forwarding mode, default read/write scope, write-approval checkpoints, destructive-operation exclusions, token-storage expectations, and disconnect or logout behavior.
 - Treat MCP deployment agendas and migration events as prompts to review conformance, source-level server findings, identity, policy, observability, sandbox, and audit evidence before expanding tool access.
 - Record whether an MCP server is built on the official SDK, FastMCP, generated OpenAPI/FastAPI tooling, or another framework when that choice affects spec conformance, compatibility, documentation, generated tools, authentication, or deployment support.
 - Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
@@ -250,6 +257,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 ## Authoritative Sources
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)

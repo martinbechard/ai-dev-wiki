@@ -61,6 +61,12 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds governed turn-packet evidence. A turn packet should be the smallest approved set of instructions, identity attributes, conversation state, evidence, tool definitions, and observations needed for one response, with provenance, permission, expiry, classification, access, and freshness metadata. This is context selection, not memory by default: anything reused after the turn needs a separate write and retention decision.
 
+The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) adds enterprise knowledge-graph and work-system context evidence. Repository context should not collapse into one broad enterprise bundle; context packages should label:
+
+- The channel that supplied a fact, such as work item, documentation, people graph, pull request, repository file, or development-impact metric.
+- The permissions that bounded that channel.
+- The purpose of use, such as planning, implementation, review, or impact measurement.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -104,10 +110,12 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Classify context operations as write, select, compress, or isolate so persistence, retrieval, summary, and sandbox decisions can be reviewed separately.
 - Treat noisy long-context additions as an evaluation risk; key decisions should be easy to find and checked against focused verification evidence.
 - Build turn packets from the smallest approved evidence set for the next response, carrying provenance, permission, expiry, classification, access, and freshness metadata.
+- Keep work items, documentation, people context, pull requests, repository files, and development-impact metrics as separately labeled context channels when enterprise knowledge graphs feed a coding agent.
 
 ## Authoritative Sources
 
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -174,6 +182,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 ## Maintenance Notes
 
 - Maintained on 2026-10-06 with governed turn-packet, provenance, permission, expiry, classification, access, and freshness evidence.
+- Maintained on 2026-10-07 with enterprise work-item, documentation, people-graph, pull-request, repository, permission-channel, and impact-measurement context evidence.
 - Maintained on 2026-09-21 with refreshable repository-view, context-attribution, capped-context, workspace-trust, harness-efficiency, and compaction trust-boundary evidence.
 - Maintained on 2026-09-23 with instruction-memory separation, cross-agent handoff, language-server index, code-graph, semantic-search, and telemetry context-selection evidence.
 - Maintained on 2026-09-15 with selective coding-agent onboarding context, ADR rationale, current standards, business vocabulary, and stale-documentation rejection evidence.

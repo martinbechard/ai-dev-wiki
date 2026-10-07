@@ -15,6 +15,7 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 - [clipping-and-raw-intake.md](clipping-and-raw-intake.md) records where human-saved source notes, unprocessed raw artifacts, and fully processed raw artifacts belong.
 - [source-reconciliation-and-routing.md](source-reconciliation-and-routing.md) records authority order, conflict handling, synonym normalization, and federation routing during source ingest.
 - [coding-agent-runtime-updater-integrity.md](coding-agent-runtime-updater-integrity.md) records signed-manifest, exact-marker, fail-closed, and manual-patch boundaries for coding-agent runtime updaters.
+- [ci-validation-capacity-for-agentic-workflows.md](ci-validation-capacity-for-agentic-workflows.md) records fast-check budgets, deferred validation ownership, scheduled repair evidence, and CI capacity measurement for AI-assisted delivery.
 
 ## Authoritative Sources
 
@@ -54,3 +55,4 @@ This topic owns raw source handling, clipping intake, source reconciliation, syn
 - Created on 2026-06-23 as the owner for raw source, clipping, ingest, and automation workflows.
 - Split on 2026-06-23 into durable leaves for update feeds, collector behavior, leaf watches, raw ingest, clipping intake, and source reconciliation.
 - Maintained on 2026-07-27 with coding-agent runtime updater integrity as a durable leaf.
+- Maintained on 2026-10-07 with CI validation capacity as a durable source-workflow leaf.

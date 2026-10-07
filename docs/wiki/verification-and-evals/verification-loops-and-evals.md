@@ -11,6 +11,12 @@ tags: ["verification-and-evals"]
 
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds CI evidence-lifecycle signals. Checks, workflow runs, statuses, coverage-upload skips, scheduled code-scanning start conditions, and async merge request IDs are verification state, not background platform trivia, because coding-agent repair loops depend on knowing whether evidence is absent, skipped, retained, pending, or failed.
 
+The October 6 sources add proof adequacy and proof-of-execution evidence:
+
+- The [leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) says passing proofs or tests can still leave specification gaps, so verification loops should audit adequacy as well as pass/fail status.
+- The [topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) adds a proof-of-execution example where a weak sentinel file could be touched without running tests, while a checksum-style signal tied the proof to actual execution.
+- Locally, definitions of done should be observable, hard to satisfy by shortcut, and paired with adequacy checks for the evidence itself.
+
 Verification is the evidence layer that lets AI-assisted outputs earn trust. For coding work, verification includes build, test, lint, runtime checks, source-backed claims, and review evidence. For AI application behavior, evals provide structured inputs, outputs, grading logic, and pass or score signals.
 
 Evals can test releases or guide generation, and graders can be deterministic tools, human review, or model judges. Judgment-based grading needs clear boundaries because model explanations are not proof of internal reasoning. Broad benchmark and model-score catalogs belong upstream; this page owns the local practice of using verification and evals.
@@ -169,10 +175,14 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 - Route recurring failure-mode detail through [agent eval failure diagnosis](agent-eval-failure-diagnosis.md).
 - Route material agent anomaly records through [agent incident reporting](../governance-and-risk/agent-incident-reporting.md).
 - Preserve authorization, action trace, review-state transition, test/build/scan output, acceptance decision, signer, and later-review evidence for AI-assisted changes before treating a workflow as verified.
+- Audit verification adequacy, not only pass/fail status, when an agent constructs a specification, proof, sentinel, or completion signal.
+- Prefer done signals tied to actual execution, build artifacts, checksums, logs, or reviewer-inspectable outputs over agent-controlled marker files.
 
 ## Authoritative Sources
 
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -263,6 +273,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 ## Maintenance Notes
 
 - Maintained on 2026-10-02 with CI retention, coverage-skip interpretation, code-scanning schedule, async-merge polling, and verification-state evidence.
+- Maintained on 2026-10-07 with proof adequacy, reusable verification guidance, checksum-style done signals, and shortcut-resistant execution evidence.
 - Maintained on 2026-09-22 with authorization, action-trace, review-state, acceptance decision, signoff, and later-review evidence.
 - Maintained on 2026-09-16 with agent-eval and incident-reporting signals routed to focused leaves; next check should keep recurring failure-mode detail in agent eval failure diagnosis.
 - Maintained on 2026-09-08 with complete-task metrics, controlled experiment, isolated review, component intake, corrective-RAG, groundedness, usefulness, and fail-safe rollback evidence.

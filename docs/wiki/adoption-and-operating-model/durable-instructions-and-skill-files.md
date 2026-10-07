@@ -66,6 +66,12 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds in-process plugin evidence from Claude Code mods. Plugin-like instruction extensions that can observe or alter prompts, tool calls, permissions, or UI state should be governed as executable instruction surfaces: require owner, allowed hooks, safe mode or allowlist behavior, permission boundary, test evidence, and rollback before team use.
 
+The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) adds durable-expectation evidence from canonical instruction and skill-file practice:
+
+- Durable skills remain useful when they express scope, reviewability, completion criteria, and working expectations that survive product changes.
+- Reusable configuration should be judged against resulting diffs, rework, and review burden instead of by token claims or configuration size.
+- Tool-specific bridge files should not become independent policy copies unless they have an owner and drift check.
+
 ## Practice Boundaries
 
 - Treat skills as human-readable procedure and MCP-style tools as governed access surfaces; do not let one stand in for the other's controls.
@@ -103,6 +109,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Treat MCP-discovered skills, shared organization skills, managed custom instructions, and learned fix-pattern memories as durable guidance only after provenance, owner, loading policy, scope, verification, and retirement review are recorded.
 - Treat named models inside durable instructions as configurable dependencies with owner review, fallback guidance, and stale-reference checks.
 - Treat in-process instruction plugins or mods as executable instruction surfaces with owner, hook scope, permission boundary, safe-mode or allowlist policy, tests, and rollback evidence.
+- Evaluate reusable skills and durable expectations by reviewability, resulting diffs, rework, completion criteria, and maintenance burden rather than by configuration size or token claims.
+- Treat tool-specific bridge files for repository instructions as governed compatibility artifacts with an owner, source canon, and drift check.
 
 ## Authoritative Sources
 
@@ -110,6 +118,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [Folder organization source note](../../../raw/processed/link-aliases/folder-organization-aicodethatworks.md)
@@ -166,6 +175,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Maintained on 2026-09-25 with MCP skill discovery, shared organization skills, managed custom instructions, learned memory, provenance, and retirement-review evidence.
 - Maintained on 2026-10-04 with model-name dependency drift and stale-instruction review evidence.
 - Maintained on 2026-10-06 with in-process plugin, prompt/tool/permission hook, safe-mode, allowlist, and rollback evidence.
+- Maintained on 2026-10-07 with canonical instruction, bridge-file drift, durable-expectation, reviewability, rework, and completion-criteria evidence.
 - Maintained on 2026-09-15 with coding-agent onboarding, current standards, ADR rationale, context-file scope, and stale-documentation rejection evidence.
 - Maintained on 2026-08-29 with maintainable-agent, custom-agent catalog, MCP, skill, plugin, provenance, validation, and rollback evidence.
 - Created on 2026-06-23 from source-backed guidance on routers, rules layers, agent definitions, instructions, prompts, and skills.

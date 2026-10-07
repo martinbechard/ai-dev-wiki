@@ -106,6 +106,13 @@ Design-review gaps should remain visible instead of being flattened into one AI-
 
 The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds ReviewBench as a code-review-eval method signal, not a local GitHub or Copilot product leaf. Review evals should separate known-finding recall from valid novel findings, preserve severity and category slices, and record benchmark version, judge, matcher, validation method, grounded precision/recall, and augmented precision/recall before using a score as release evidence.
 
+The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) reinforces that ReviewBench-style eval claims need dataset composition and validation evidence attached to the score. Locally, an AI code-review benchmark note should record:
+
+- Pull-request corpus and language mix.
+- Label source and severity/category vocabulary.
+- Matcher or judge behavior.
+- Independent relabeling or adjudication evidence before treating a benchmark result as a reusable review gate.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -181,6 +188,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 ## Authoritative Sources
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
@@ -263,6 +271,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 ## Maintenance Notes
 
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
+- Maintained on 2026-10-07 with ReviewBench corpus, label-source, matcher, judge, and independent-validation evidence.
 - Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.
 - Maintained on 2026-09-29 with role-weighted review scoring, artifact-quality, efficiency, static-analysis, pytest, deliverable-manifest, transcript, fresh-context, reproducible-finding, and intent-note evidence.
 - Maintained on 2026-09-26 with review-stage timing, bot-versus-human attribution, finding-to-fix conversion, verification-capacity, and reviewer-triage evidence.

@@ -63,6 +63,12 @@ The September 7 raw sources add concurrent-session and delivery-coordination evi
 
 The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds dispatch-time subagent controls. Broad Qwen Code, Claude Code, Codex, and ACP coverage stays upstream; locally, subagent coordination should treat external-agent handoffs, per-subagent tool allowlists, explicit workflow versions, message or goal caps, and run-structure previews as delegation-contract evidence rather than prompt-only convention.
 
+The October 6 sources add decision-rights and receipt evidence for parallel coding-agent work:
+
+- The [topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) frames project coordination, thread sessions, repository permissions, pull requests, conflict resolution, and merge authority as separate owners that should be named before a batch starts.
+- The [leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) reinforces watcher-owned terminal state, run IDs, heartbeat timestamps, handoff files, and unattended-safe classifications as coordination evidence.
+- Coordinator status views do not by themselves prove acceptance.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -98,6 +104,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Isolate parallel agents by worktree or equivalent workspace, and record branch history, run configuration, second-opinion scope, and model-policy rationale for each delegated lane.
 - Record concurrent lane purpose, dependency ownership, blocker state, attention state, and review-package evidence before integrating parallel agent work.
 - Bind external-agent handoffs to explicit executor contracts, tool allowlists, workflow versions, budget caps, permission state, and pre-run previews before dispatch.
+- Name the owner for project scope, thread approvals, repository permissions, pull-request review, conflict resolution, and merge decisions before parallel coding-agent batches start.
+- Preserve run IDs, heartbeat timestamps, terminal state, handoff files, and unattended-safe versus human-required classifications as receipts separate from chat completion claims.
 
 ## Authoritative Sources
 
@@ -130,6 +138,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 
 ## Related Code
 
@@ -178,6 +188,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Maintained on 2026-08-14 with queued subagent prompt, queued shell command, side-channel question, approval-timing, and returned-evidence guidance.
 - Maintained on 2026-08-16 with role-specialized subagent authority, artifact, verification, handoff, and oversight criteria.
 - Maintained on 2026-08-30 with asynchronous multi-agent workspace, shared-memory, scheduled-job, visible-plan, tool-call, approval, sandbox, redaction, and signed-audit evidence.
+- Maintained on 2026-10-07 with project/thread/repository/PR/conflict/merge decision rights plus run-ID, heartbeat, terminal-state, and unattended-safe receipt evidence.
 - Maintained on 2026-09-01 with side-conversation, second-opinion, shared-session, worktree-isolation, branch-history, and model-policy evidence.
 - Maintained on 2026-09-07 with concurrent-session, dependency-owner, blocker-state, attention-state, and review-package evidence.
 - Maintained on 2026-09-23 with external-agent handoff contracts, per-subagent tool allowlists, workflow-version, budget-cap, permission-state, and pre-run preview evidence.

@@ -23,6 +23,13 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 The September 29 raw sources add self-managed governance, security-scan, enterprise-record, and oversized-change evidence. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) records self-managed agentic code governance with context and constraints before writing, independent verification, remediation controls, centralized model governance, dependency-risk checks, and compliance reporting. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) adds scheduled or commit-triggered security scans, governed data inputs, durable records of agent-produced decisions or documents, and anecdotal review failures where oversized generated PRs hide invented APIs, misplaced code, or authorization changes.
 
+The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) adds evidence-channel risk. PixelLeak-style screenshot exposure is a reminder that proof artifacts can become data-loss channels when agents satisfy review needs by placing private evidence in public or weakly governed locations. Evidence packages should record:
+
+- Artifact location, visibility, and retention.
+- Runtime controls and reviewer access.
+- Agent inventory plus package or skill provenance.
+- Whether screenshots, logs, traces, or generated evidence are safe to use as proof.
+
 This page owns the generated-code evidence package. [Intelligent code review](../coding-practices/intelligent-code-review.md) owns review execution, and [governance controls for agents](governance-controls-for-agents.md) owns the broader local control model.
 
 ## Practice Boundaries
@@ -40,6 +47,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - Include decision-log entries for consequential AI-assisted changes when the rationale, alternatives, tradeoffs, operational implications, or revisit triggers affect future trust in the code.
 - Include context/constraint evidence, independent verification, remediation control state, centralized model policy, dependency-risk checks, compliance reports, security-scan receipts, and durable agent-produced records when generated code moves toward acceptance.
 - Flag oversized generated pull requests as evidence-incomplete when they cannot explain touched files, API assumptions, code placement, dependency choices, or authorization-path changes.
+- Treat screenshots, logs, traces, and generated proof artifacts as governed evidence channels whose storage location, visibility, retention, runtime controls, and provenance need review before they can support acceptance.
 
 ## Authoritative Sources
 
@@ -51,6 +59,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [intelligent code review](../coding-practices/intelligent-code-review.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 
@@ -79,6 +88,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with self-managed governance, security-scan, remediation-control, dependency-risk, compliance, durable-record, and oversized-generated-PR evidence.
+- Maintained on 2026-10-07 with proof-artifact location, visibility, retention, runtime-control, agent-inventory, package-provenance, and reviewer-access evidence.
 - Maintained on 2026-09-21 with pipeline-governance evidence package scope from the topic news collector.
 - Maintained on 2026-09-22 with AI-review lifecycle, feature-engagement, customization-telemetry, and acceptance-chain evidence.
 - Maintained on 2026-09-25 with decision-log, rationale, alternatives, tradeoff, operational implication, and revisit-trigger evidence.

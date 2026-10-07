@@ -43,6 +43,8 @@ The September 15-16 raw sources add workspace-governed research, worktree isolat
 
 The September 29 raw sources add delegation-control and handoff-contract evidence. The [leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json) frames prompt injection, excessive agency, and information disclosure as failures to control trust, action, and access delegation. It also records community handoff practice around coordinator-owned task specifications, typed constraints, artifact references, count or hash checks, ingress validation, and fail-closed behavior. The [topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds a fresh-context review signal: a handoff is stronger when independent reviewers can reproduce findings, map intent from a short feature note, and separate diff review from full-regression detection.
 
+The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) adds remote-delegation and final-answer forwarding evidence from editor-native agent workflows. Local handoffs should preserve which trusted workspace or remote environment ran the work, whether final-answer content was forwarded back to the initiating surface, and which reusable worktree or MCP configuration affected the delegated session.
+
 ## Practice Boundaries
 
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
@@ -68,6 +70,7 @@ The September 29 raw sources add delegation-control and handoff-contract evidenc
 - Bind every delegated handoff to explicit trust, action, and access boundaries, and require confirmation before destructive or high-impact delegated actions.
 - Include typed invariants, artifact references, count or hash checks, ingress validation, and fail-closed behavior when a coordinator hands work between agents.
 - Preserve enough intent context for an independent reviewer to reproduce or reject findings without relying on the implementing agent's conversation.
+- Record trusted workspace, remote execution surface, final-answer forwarding, reusable worktree folder, and MCP configuration destination when editor-native delegation changes where the handoff evidence lives.
 
 ## Authoritative Sources
 
@@ -95,6 +98,7 @@ The September 29 raw sources add delegation-control and handoff-contract evidenc
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 
 ## Related Code
 
@@ -125,6 +129,7 @@ The September 29 raw sources add delegation-control and handoff-contract evidenc
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with trust/action/access delegation controls, typed handoff invariants, artifact references, ingress validation, fail-closed behavior, and fresh-context review evidence.
+- Maintained on 2026-10-07 with trusted-workspace, remote-execution, final-answer-forwarding, reusable-worktree, and MCP-configuration handoff evidence.
 - Maintained on 2026-09-15 with workspace-permission, connected-source, Git-worktree, deployment-diagnosis, and telemetry-hypothesis handoff evidence.
 - Created on 2026-06-23 from source-backed delegated coding, visible progress, and evidence-handoff guidance.
 - Maintained on 2026-06-25 with longer-horizon delegated-work handoff requirements.

@@ -30,6 +30,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [source-workflows/clipping-and-raw-intake.md](source-workflows/clipping-and-raw-intake.md) records where human-saved notes, raw artifacts, and processed artifacts belong.
 - [source-workflows/source-reconciliation-and-routing.md](source-workflows/source-reconciliation-and-routing.md) records authority order, conflict handling, synonym normalization, and federation routing.
 - [source-workflows/coding-agent-runtime-updater-integrity.md](source-workflows/coding-agent-runtime-updater-integrity.md) records signed-manifest, exact-marker, fail-closed, and manual-patch boundaries for coding-agent runtime updaters.
+- [source-workflows/ci-validation-capacity-for-agentic-workflows.md](source-workflows/ci-validation-capacity-for-agentic-workflows.md) records fast-check budgets, deferred validation ownership, scheduled repair evidence, and CI capacity measurement for AI-assisted delivery.
 - [prompt-and-instructions/index.md](prompt-and-instructions/index.md) is the hub for request packaging, prompts, durable instructions, and file boundaries.
 - [prompt-and-instructions/request-packages-and-file-boundaries.md](prompt-and-instructions/request-packages-and-file-boundaries.md) records the request package, file boundary, source-label, and done-signal pattern.
 - [prompt-and-instructions/context-engineering-for-request-packages.md](prompt-and-instructions/context-engineering-for-request-packages.md) records how project data, conventions, and evidence are selected for a request.

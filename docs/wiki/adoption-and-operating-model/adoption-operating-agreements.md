@@ -56,6 +56,11 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 The [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds [pre-write change boundaries](pre-write-change-boundaries.md) as a focused operating practice. Operating agreements should define where that leaf's ticket baselining, architecture-decision checks, protected paths, CI merge gates, and generated-document drift checks become team rules.
 
+The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) adds provisional control-attestation and review-load signals. It frames agent-attested controls as a governance concern that still needs stronger primary compliance support before becoming a local compliance rule. Locally, the source is useful for two operating-agreement cautions:
+
+- If agents perform or attest controls, record who attests the agent and which runtime evidence shows the control still works.
+- Treat reviewer comprehension and specialist human judgment as adoption constraints, not afterthoughts.
+
 ## Operating Agreement Leaves
 
 - [workflow-before-model-selection.md](workflow-before-model-selection.md) owns workflow selection before model or harness choice.
@@ -101,6 +106,9 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 - Use explicit language that keeps agents as software systems with human accountability, even when interfaces feel teammate-like.
 - Require barrier discovery, coordination-layer design, cost/risk controls, and foundation checks before scaling agent automation.
 - Route pre-implementation ticket, architecture, protected-path, CI, and drift-gate detail to [pre-write change boundaries](pre-write-change-boundaries.md).
+- Treat agent-attested controls as provisional governance signals until primary compliance support is available.
+- Define who attests an agent-performed control and which runtime evidence proves the control still works.
+- Treat reviewer comprehension and specialist judgment as operating constraints that limit safe rollout.
 
 ## Authoritative Sources
 
@@ -110,6 +118,7 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
+- [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)

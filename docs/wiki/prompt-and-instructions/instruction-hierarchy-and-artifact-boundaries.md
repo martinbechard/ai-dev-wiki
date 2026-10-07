@@ -55,6 +55,13 @@ The October 1 raw sources add instruction-stacking and review-context evidence. 
 
 The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json) adds a cross-agent instruction-file comparison. Broad product behavior stays upstream-owned; locally, durable instruction governance should treat discovery path, import syntax, live-session refresh, documentation gaps, and review-context loading as separate compatibility facts rather than assuming every agent reads an AGENTS.md-like file the same way.
 
+The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json) adds instruction-design and canonical-file evidence:
+
+- Vague standards and invisible assumptions should be converted into observable repository constraints such as service boundaries, domain names, focused change scope, meaningful tests, error paths, security boundaries, deterministic controls, and review duties.
+- When several coding agents are supported, a canonical repository instruction file can reduce drift.
+- Tool-specific bridge files should say whether they import, symlink, or copy that canon.
+- Critical rules may need to stay inline when some clients do not expand imports.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -96,6 +103,8 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Fail visible when a supported instruction layer is skipped because of feature flags, telemetry gates, product settings, or fallback-loader behavior.
 - Test instruction stacks for conflict, skipped layers, and source authority before using them as review context, especially when AGENTS.md, custom instructions, skills, MCP output, and issue history are all present.
 - Record tool-specific instruction discovery, import, refresh, and undocumented-behavior notes before treating one repository instruction file as portable across agent products.
+- Translate durable instruction slogans into observable constraints, test expectations, error-path handling, security boundaries, deterministic controls, and human review duties.
+- Keep one canonical repository instruction owner where possible, and treat bridge files, symlinks, imports, and copies as compatibility surfaces that need drift checks.
 
 ## Authoritative Sources
 
@@ -107,6 +116,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
+- [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
@@ -163,6 +173,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Maintained on 2026-09-25 with instruction-loader conformance, fail-visible missing-guidance, feature-flag, telemetry-gate, and fallback-loader evidence.
 - Maintained on 2026-10-01 with instruction-stacking conflict, programmatic instruction-hierarchy eval, AGENTS.md review context, custom-instruction, skill, MCP, content-exclusion, and issue-history evidence.
 - Maintained on 2026-10-05 with cross-agent instruction-file discovery, import, live-refresh, and undocumented-behavior evidence.
+- Maintained on 2026-10-07 with observable instruction constraints, canonical AGENTS-style ownership, bridge-file compatibility, inline-critical-rule, and drift-check evidence.
 - Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.
