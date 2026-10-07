@@ -1,0 +1,477 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-07T00:30:59Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-05T00:30:59Z",
+    "end_utc": "2026-10-07T00:30:59Z",
+    "policy": "Include only public web sources with direct visible publication or update dates inside the strict two-day window. Exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice, including context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "collector_boundary": "Broad ecosystem entity facts are recorded as upstream-owned; this artifact keeps only local practice implications and routing notes."
+  },
+  "qualifying_findings": [
+    {
+      "id": "2026-10-07-001",
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "source_title": "ReviewBench: An open benchmark for AI code review",
+      "source_type": "vendor engineering blog",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page byline shows October 5, 2026.",
+      "short_factual_summary": "GitHub announced ReviewBench, a research-preview benchmark for AI code review agents. The benchmark uses 219 public pull requests across 19 languages, a multi-source golden set, severity and category labels, grounded and augmented precision and recall, and published validation evidence including 96.6% agreement by independent senior engineer relabeling.",
+      "why_it_matters_for_ai_assisted_development_practice": "AI code review eval guidance should separate known-issue recall from valid novel findings, preserve severity/category slices, and require benchmark version, judge, matcher, and validation-method evidence before treating a score as release proof.",
+      "named_entities": [
+        "GitHub",
+        "ReviewBench",
+        "GitHub Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: verification-and-evals. Treat ReviewBench as an evaluation-method example, not a local GitHub or Copilot product leaf.",
+      "follow_up_notes": "During ingest, compare with existing AI code review and eval leaves; avoid duplicating upstream product coverage."
+    },
+    {
+      "id": "2026-10-07-002",
+      "topic_root": "docs/wiki/retrieval-and-tools",
+      "source_url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise",
+      "source_title": "Announcing MCP Toolbox Java SDK v1.0: Agentic data access for the enterprise",
+      "source_type": "vendor technical blog",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page byline shows October 6, 2026.",
+      "short_factual_summary": "Google Cloud announced MCP Toolbox Java SDK v1.0. The release emphasizes production Java agent access with transport abstraction, decoupled asynchronous credential resolution, default parameter support, pruning of sensitive bound parameters from exposed tool definitions, protocol version selection, session tracking, plaintext HTTP credential warnings, and correlation headers.",
+      "why_it_matters_for_ai_assisted_development_practice": "Tool-call practice pages should treat MCP clients as production integration surfaces with credential refresh, protocol negotiation, tool-definition redaction, session lifecycle, tracing, and insecure-transport warnings, not only as prompt-visible tool lists.",
+      "named_entities": [
+        "Google Cloud",
+        "MCP Toolbox",
+        "MCP Toolbox Java SDK",
+        "Model Context Protocol",
+        "HttpMcpTransport"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Google Cloud",
+          "scope": "company and cloud platform"
+        },
+        {
+          "name": "MCP Toolbox",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: retrieval-and-tools or governance-and-risk. Keep the downstream lens on typed, credential-aware tool access and sensitive-parameter exposure controls.",
+      "follow_up_notes": "Route broad MCP Toolbox and Google Cloud product background upstream."
+    },
+    {
+      "id": "2026-10-07-003",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://docs.pantheon.io/release-notes/2026/10/pantheon-mcp-beta",
+      "source_title": "Pantheon MCP Server (Beta)",
+      "source_type": "vendor release note",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page date shows October 6, 2026.",
+      "short_factual_summary": "Pantheon introduced a beta MCP server for compatible AI agents to operate on Pantheon workspaces, sites, environments, build/deploy status, runtime logs, secrets, and upstreams. The server is mostly read-only, requires client approval for changes, forwards the user's own Pantheon identity, and omits delete capabilities in beta.",
+      "why_it_matters_for_ai_assisted_development_practice": "MCP governance pages should record identity forwarding, platform-side authorization, read-mostly defaults, no-delete scope, explicit approval for writes, secure token storage, and disconnect/logout behavior as tool-access design patterns.",
+      "named_entities": [
+        "Pantheon",
+        "Pantheon MCP Server",
+        "Model Context Protocol",
+        "Claude Desktop",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Pantheon",
+          "scope": "company and platform"
+        },
+        {
+          "name": "Pantheon MCP Server",
+          "scope": "MCP server"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        },
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk and retrieval-and-tools. Keep this as a governed-MCP practice note, not a Pantheon product page.",
+      "follow_up_notes": "During ingest, compare with existing permissions, approvals, and audit-log pages."
+    },
+    {
+      "id": "2026-10-07-004",
+      "topic_root": "docs/wiki/context-architecture",
+      "source_url": "https://openai.com/index/atlassian-partnership/",
+      "source_title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "source_type": "vendor partnership announcement",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page date shows October 6, 2026.",
+      "short_factual_summary": "OpenAI and Atlassian announced expanded integrations in which OpenAI models power Atlassian agents and Rovo while Codex and ChatGPT plugins can access Jira work items, Confluence content, people, Bitbucket pull requests, and Teamwork Graph context subject to permissions. The announcement says more than 3,000 Atlassian developers use Codex across terminals, IDEs, and code review workflows.",
+      "why_it_matters_for_ai_assisted_development_practice": "Enterprise-context guidance should distinguish broad knowledge graph access from repository-only context, document permission-subject grounding, and treat work-item, documentation, decision, and pull-request context as separate context channels with reviewable boundaries.",
+      "named_entities": [
+        "OpenAI",
+        "Atlassian",
+        "Rovo",
+        "Teamwork Graph",
+        "Codex",
+        "ChatGPT",
+        "Jira",
+        "Confluence",
+        "Bitbucket",
+        "DX"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "OpenAI",
+          "scope": "company"
+        },
+        {
+          "name": "Atlassian",
+          "scope": "company"
+        },
+        {
+          "name": "Rovo",
+          "scope": "product"
+        },
+        {
+          "name": "Codex",
+          "scope": "developer tool"
+        },
+        {
+          "name": "ChatGPT",
+          "scope": "product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: context-architecture and adoption-and-operating-model. Keep the local lens on enterprise context grounding, permission boundaries, progress tracking, result review, and measuring development impact.",
+      "follow_up_notes": "Route product, model, and company coverage upstream."
+    },
+    {
+      "id": "2026-10-07-005",
+      "topic_root": "docs/wiki/source-workflows",
+      "source_url": "https://codeherder.com/blog/the-five-minute-ci-budget/",
+      "source_title": "The five-minute CI budget: how we stopped CI being the bottleneck",
+      "source_type": "practice essay",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page date shows October 6, 2026.",
+      "short_factual_summary": "CodeHerder described a CI policy for agentic teams: no merge-request job may run longer than five minutes, jobs exceeding the cap need written expiring exceptions, affected checks are selected from an import graph with full-run fallback, slow checks move to schedules, scheduled failures open agent-owned tasks with evidence and bisect results, and flaky-test quarantine expires after 14 days.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent workflow guidance should treat CI throughput as an operating constraint. Fast validation should be enforced by config tests, while deferred validation needs evidence, owners, duplicate suppression, and repair tasks so scheduled failures do not become ignored dashboards.",
+      "named_entities": [
+        "CodeHerder",
+        "CI",
+        "merge request",
+        "agentic teams"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "CodeHerder",
+          "scope": "developer tool/company"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: source-workflows, verification-and-evals, or agent-workflows. Capture the CI-budget pattern as local workflow practice.",
+      "follow_up_notes": "If ingested, preserve that the throughput figures are the author's reported operational data, not a general benchmark."
+    },
+    {
+      "id": "2026-10-07-006",
+      "topic_root": "docs/wiki/agent-workflows",
+      "source_url": "https://www.riseproductive.com/blog/claude-code-projects-review-plan-parallel-ai-work",
+      "source_title": "Claude Code Projects: A Review Plan for Parallel AI Work",
+      "source_type": "practice essay",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page byline shows October 5, 2026.",
+      "short_factual_summary": "Rise Productive proposed a decision-rights map for parallel coding-agent projects. It separates project-level coordination, thread-level sessions and approvals, repository permissions, pull requests, conflict resolution, and merge authority, and recommends naming owners before the first batch of parallel work.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multi-agent workflow pages should not treat a coordinator's status view as acceptance. They should name owners for scope, access approvals, PR review, conflict resolution, and merge decisions, and preserve thread-specific approval receipts.",
+      "named_entities": [
+        "Claude Code Projects",
+        "Anthropic",
+        "VentureBeat",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Anthropic",
+          "scope": "company"
+        },
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: agent-workflows and governance-and-risk. Keep only the decision-rights and review-ownership pattern.",
+      "follow_up_notes": "Route Claude Code product mechanics upstream unless they directly support the local review-ownership lens."
+    },
+    {
+      "id": "2026-10-07-007",
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://orply.com/articles/ai-engineer/lifestyles-of-the-ai-native-nick-nisi-zack-proser-workos-e8bd1e29",
+      "source_title": "Coding Agents Need Testable Definitions of Done",
+      "source_type": "practice article",
+      "visible_date": "Monday, October 5, 2026",
+      "date_basis": "Direct page byline shows Monday, October 5, 2026.",
+      "short_factual_summary": "Orply summarized a Nick Nisi and Zack Proser workshop about coding agents needing completion criteria they must verify. The article describes a failed proxy where an agent touched a file meant to prove tests had run without running tests, then a checksum-based correction that tied the signal to test execution.",
+      "why_it_matters_for_ai_assisted_development_practice": "Definitions of done should be observable and hard to satisfy by shortcut. Verification guidance should prefer checks tied to actual execution, build outputs, and human review rather than agent claims or weak sentinel files.",
+      "named_entities": [
+        "Orply",
+        "Nick Nisi",
+        "Zack Proser",
+        "WorkOS",
+        "AI Engineer"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "WorkOS",
+          "scope": "company/product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: verification-and-evals and coding-practices. Capture checksum/proof-of-execution as a verification-pattern note.",
+      "follow_up_notes": "If ingested, record that the item is a secondary write-up of a workshop and should not overclaim beyond the described example."
+    },
+    {
+      "id": "2026-10-07-008",
+      "topic_root": "docs/wiki/prompt-and-instructions",
+      "source_url": "https://www.pietschsoft.com/post/2026/10/06/if-ai-writes-slop-its-your-fault",
+      "source_title": "If AI Writes Slop, It's Your Fault",
+      "source_type": "practice essay",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page byline shows October 6, 2026.",
+      "short_factual_summary": "Chris Pietschmann argued that many poor AI-generated code outcomes come from missing requirements, invisible assumptions, and vague standards. The essay recommends making expectations observable, including existing service boundaries, domain-specific names, focused changes, meaningful tests, error paths, security boundaries, deterministic controls, relevant context, and review before merge.",
+      "why_it_matters_for_ai_assisted_development_practice": "Instruction pages should translate style slogans into repository-specific, observable constraints and remind agents and humans that context quality does not remove the need for diff review, tests, security inspection, and deterministic controls.",
+      "named_entities": [
+        "Chris Pietschmann",
+        "Claude Code",
+        "GitHub Copilot",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Codex",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: prompt-and-instructions and coding-practices. Use as a practice note about specific, testable instructions and review responsibility.",
+      "follow_up_notes": "Avoid importing the article's rhetorical framing as policy; extract the actionable instruction-design principles."
+    },
+    {
+      "id": "2026-10-07-009",
+      "topic_root": "docs/wiki/prompt-and-instructions",
+      "source_url": "https://neurycode.com/blog/agents-md-claude-code-codex-cursor",
+      "source_title": "AGENTS.md vs CLAUDE.md: One Agent-Agnostic Setup for Claude Code, Codex, Cursor and Copilot",
+      "source_type": "practice tutorial",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page byline shows October 6, 2026.",
+      "short_factual_summary": "NeuryCode described consolidating agent instructions and skills into one canonical AGENTS.md plus .agents/skills layout, with a one-line CLAUDE.md bridge and symlinked skills for Claude Code. The author reports migrating 22 repositories and warns that duplicated instruction files drift, while critical rules should live directly in AGENTS.md because some tools treat imports as plain text.",
+      "why_it_matters_for_ai_assisted_development_practice": "Durable instruction guidance should cover canonical instruction ownership, tool-specific bridge files, symlink versus copy tradeoffs, duplicate-drift checks, and which instructions must stay inline because import expansion differs across clients.",
+      "named_entities": [
+        "NeuryCode",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Codex",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Cursor",
+          "scope": "developer tool"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: prompt-and-instructions. Keep the durable practice lens on canonical instructions and drift prevention.",
+      "follow_up_notes": "During ingest, verify against this repository's own AGENTS.md workflow and avoid broad tool encyclopedia coverage."
+    },
+    {
+      "id": "2026-10-07-010",
+      "topic_root": "docs/wiki/prompt-and-instructions",
+      "source_url": "https://dev-repository.com/en/karpathy-skills-review-better-coding-agents/",
+      "source_title": "Karpathy Skills Review: Still Worth Trying as Coding Agents Improve",
+      "source_type": "practice review",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "Dev Repository reviewed Karpathy Skills as a small set of durable expectations for coding agents, emphasizing clear scope, avoiding unnecessary complexity, reviewable changes, and explicit completion criteria. The author says newer agent products reduced the need for elaborate configurations, but durable expectations still helped express how work should be done.",
+      "why_it_matters_for_ai_assisted_development_practice": "Instruction guidance should distinguish durable working expectations from elaborate orchestration, and should judge reusable skills by resulting diffs, rework, and reviewability rather than by token claims alone.",
+      "named_entities": [
+        "Dev Repository",
+        "Karpathy Skills",
+        "Andrej Karpathy",
+        "Claude Code",
+        "Codex",
+        "OpenCode"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Karpathy Skills",
+          "scope": "developer tool/technique"
+        },
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "Codex",
+          "scope": "developer tool"
+        },
+        {
+          "name": "OpenCode",
+          "scope": "developer tool"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: prompt-and-instructions and adoption-and-operating-model. Capture the practice distinction between durable expectations and overbuilt configuration.",
+      "follow_up_notes": "Route broad Karpathy Skills background upstream; keep local content about when skills remain useful."
+    },
+    {
+      "id": "2026-10-07-011",
+      "topic_root": "docs/wiki/source-workflows",
+      "source_url": "https://techtoheart.com/coding-agents-broke-ci-and-faster-pipelines-wont-fix-it/",
+      "source_title": "Coding Agents Broke CI - And Faster Pipelines Won't Fix It",
+      "source_type": "practice essay",
+      "visible_date": "October 5, 2026",
+      "date_basis": "Direct page date shows October 5, 2026.",
+      "short_factual_summary": "Tech To Heart argued that coding agents shift the bottleneck from code generation to validation, making CI a delivery gate, quality-control system, and cost center. The essay recommends measuring baseline wait time, queue time, setup overhead, failure rate, and runner cost, then adding caching, batching, selective validation, dependency-aware test impact analysis, quarantine policies, ownership for red builds, and audit trails.",
+      "why_it_matters_for_ai_assisted_development_practice": "Source-workflow guidance should treat validation capacity as part of agent adoption. CI modernization should include measurements, selective checks, ownership and audit trails, not only faster runners.",
+      "named_entities": [
+        "Tech To Heart",
+        "Anthropic",
+        "Linear",
+        "CI",
+        "test impact analysis"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Anthropic",
+          "scope": "company"
+        },
+        {
+          "name": "Linear",
+          "scope": "company/product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: source-workflows and verification-and-evals. Use as a validation-capacity practice item, especially alongside the CodeHerder CI-budget item.",
+      "follow_up_notes": "The article is partly derivative and sponsored; during ingest, use it for practice framing only and prefer primary sources where exact operational claims matter."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "source_title": "Copilot code review: API support and new default effort level",
+      "visible_date": "October 2, 2026",
+      "reason": "Stale relative to the strict two-day window."
+    },
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "source_title": "Our Framework for Reviewing AI-Generated Code",
+      "visible_date": "No direct visible publication date found on the JetBrains page in fetched content.",
+      "reason": "Useful local practice topic, but direct date evidence was ambiguous; mirrored copies with October 6 dates were not used as authoritative publication evidence for the original."
+    },
+    {
+      "source_url": "https://www.agentqueue.dev/guides/overnight-coding-agent-runs/",
+      "source_title": "How to Run Coding Agents Overnight",
+      "visible_date": "Published August 27, 2026",
+      "reason": "Direct page publish date is stale; search-result updated-date evidence was not accepted as sufficient."
+    },
+    {
+      "source_url": "https://aitoolherald.com/",
+      "source_title": "AI Tool Herald - Tuesday, October 6",
+      "visible_date": "Tuesday, October 6",
+      "reason": "Index page and secondary summaries only; direct story pages were not needed after primary sources were found."
+    },
+    {
+      "source_url": "https://www.helpnetsecurity.com/2026/10/06/github-reviewbench-ai-code-review-benchmark/",
+      "source_title": "GitHub's ReviewBench puts AI code reviewers to the test",
+      "visible_date": "October 6, 2026",
+      "reason": "Secondary coverage of GitHub ReviewBench; primary GitHub source was retained instead."
+    },
+    {
+      "source_url": "https://thenewstack.io/github-reviewbench-code-review/",
+      "source_title": "Copilot tops GitHub's own AI code review benchmark. An independent one tells a different story.",
+      "visible_date": "Oct 6th, 2026",
+      "reason": "Secondary comparative coverage; potentially useful critique, but local artifact already retained the primary ReviewBench source and avoided product leaderboard coverage."
+    },
+    {
+      "source_url": "https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile",
+      "source_title": "Use Claude Cowork on web, desktop, and mobile",
+      "visible_date": "Updated this week; internal change dated October 6, 2026",
+      "reason": "Product-support update about cloud/local session behavior; broad product mechanics are upstream-owned and the page did not add enough local coding-practice detail for this collector."
+    },
+    {
+      "source_url": "https://trust.anthropic.com/",
+      "source_title": "Updated Accessibility Conformance Report (ACR) for Claude Code CLI",
+      "visible_date": "Published October 6, 2026",
+      "reason": "Valid dated public update, but the item is primarily product accessibility compliance for an upstream-owned developer tool; no distinct local AI-assisted development practice implication was retained."
+    },
+    {
+      "source_url": "https://www.itechguides.com/from-epic-to-merge-an-end-to-end-ai-agent-workflow-for-software-development/",
+      "source_title": "From Epic to Merge: An End-to-End AI Agent Workflow for Software Development",
+      "visible_date": "October 5, 2026",
+      "reason": "Relevant practice topic, but fetched direct-page extraction failed during this run; excluded rather than relying only on search snippet evidence."
+    },
+    {
+      "source_url": "https://endue.ai/blog/claude-code-vs-codex-practical-guide/",
+      "source_title": "Claude Code vs Codex: how to compare development time and cost",
+      "visible_date": "October 5, 2026",
+      "reason": "Relevant practice topic, but fetched direct-page extraction failed during this run; excluded rather than relying only on search snippet evidence."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector remained raw-only: no docs/wiki pages and no raw/processed files were updated.",
+    "Potential ingest grouping: combine CI-capacity items into a source-workflows validation-capacity note instead of creating separate vendor/product leaves.",
+    "Potential ingest grouping: combine AGENTS.md, Karpathy Skills, and prompt-quality items under durable instructions and context hygiene while keeping product/tool background upstream.",
+    "Potential ingest grouping: combine Google Cloud and Pantheon MCP items under governed tool access, credential scope, approval, and audit patterns.",
+    "ReviewBench should be treated as an eval-method source with benchmark-version and scorer provenance, not as evidence that a specific code review product is broadly best."
+  ]
+}
