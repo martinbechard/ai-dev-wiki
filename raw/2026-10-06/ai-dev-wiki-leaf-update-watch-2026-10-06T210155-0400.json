@@ -1,0 +1,384 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "cutoff_window": {
+    "end_utc": "2026-10-07T01:01:55Z",
+    "rule": "Only include public sources published or visibly updated within the last 7 days relative to run time.",
+    "start_utc": "2026-09-30T01:01:55Z"
+  },
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "reason": "Published before strict cutoff 2026-09-30T01:01:55Z, despite high relevance to verification and eval-monitoring leaves.",
+      "source_url": "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "visible_date": "September 27, 2026"
+    },
+    {
+      "reason": "Visible publication date is outside cutoff; recent crawl is not a qualifying update date.",
+      "source_url": "https://www.langchain.com/resources/agent-evals",
+      "visible_date": "June 23, 2026; crawled recently"
+    },
+    {
+      "reason": "Outside cutoff even though relevant to pre-PR independent review and enterprise defaults.",
+      "source_url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "visible_date": "September 23, 2026"
+    },
+    {
+      "reason": "Outside cutoff even though relevant to AI code review verification practice.",
+      "source_url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "visible_date": "September 11, 2026"
+    },
+    {
+      "reason": "Outside cutoff; useful background for event-triggered workflows but not a recent update.",
+      "source_url": "https://aq.dev/guides/event-driven-coding-agents/",
+      "visible_date": "Published September 5, 2026"
+    },
+    {
+      "reason": "Just outside strict cutoff; not included as a qualifying update.",
+      "source_url": "https://www.contxos.com/articles/subagents-go-mainstream",
+      "visible_date": "Updated September 29, 2026"
+    },
+    {
+      "reason": "Already cited by the governed database leaf and outside cutoff; no visible recent update found.",
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "visible_date": "August 21, 2026"
+    },
+    {
+      "reason": "No visible publication or update date in fetched page; excluded as ambiguous date.",
+      "source_url": "https://developers.openai.com/api/docs/guides/agents-api/sessions/webhooks",
+      "visible_date": null
+    },
+    {
+      "reason": "Primary advisory has no visible publication date in fetched page; used only as linked support for the dated Tom's Hardware report, not as an independently date-qualified source.",
+      "source_url": "https://www.glow.io/pixelleak",
+      "visible_date": null
+    },
+    {
+      "reason": "Date-qualified but broad agent-economy/product framing is upstream-owned; no specific durable local-practice implication selected for this downstream artifact.",
+      "source_url": "https://www.axios.com/2026/10/05/ai-agents-consumers-business",
+      "visible_date": "October 5, 2026"
+    }
+  ],
+  "federation_routing": {
+    "local_scope_kept": "Only downstream AI-assisted development practice implications are recorded here; broad product, company, benchmark, framework, model, and protocol background remains upstream-owned.",
+    "upstream_owned_entities": [
+      "Claude Code",
+      "CodeRabbit",
+      "GitHub",
+      "GitHub Copilot",
+      "Glow",
+      "HumanEval",
+      "K framework",
+      "KleverBench",
+      "Kubernetes",
+      "MLflow",
+      "Model Context Protocol",
+      "Node.js",
+      "OpenAI GPT-5.6",
+      "Optimism",
+      "Rust",
+      "SOC2",
+      "TypeScript",
+      "Vanta",
+      "Visual Studio Code",
+      "pydantic-ai"
+    ]
+  },
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch artifact. Normal raw ingest should decide whether to synthesize local-practice implications and route broad ecosystem facts upstream.",
+    "Verify community-source claims against primary project files before turning them into durable wiki prose."
+  ],
+  "leaf_universe_count": 104,
+  "qualifying_update_count": 7,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Visual Studio Code 1.140 expands agent workflows with the Copilot harness, experimental multi-folder sessions, experimental remote delegation, a research-preview model orchestration path, shared worktree folders, portable MCP configuration destinations, and enterprise controls for AI version requirements and defaults.",
+      "follow_up_note": "During normal ingest, keep product background upstream and synthesize only the local workflow implications: trusted folders for remote sessions, explicit final-answer forwarding, reusable ignored folders for agent worktrees, and portable MCP config governance.",
+      "id": "vscode-1-140-agent-workflow-release-2026-09-30",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Copilot SDK",
+        "Agent Host Protocol",
+        "HydraFusion",
+        "Model Context Protocol"
+      ],
+      "qualified_at": "2026-09-30",
+      "source_url": "https://code.visualstudio.com/updates/v1_140",
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Model Context Protocol"
+      ],
+      "visible_date": "Released September 30, 2026 Stable",
+      "why_it_matters_for_leaf": "This is a local-practice update for workspace, handoff, fleet, and platform-native agent workflow leaves because the release moves coordination, remote execution, worktree reuse, MCP configuration, and enterprise guardrails into the editor/runtime surface rather than leaving them as external scripts."
+    },
+    {
+      "factual_summary": "The paper studies converting expert diagnosis of coding-agent verification failures into reusable guidance, combining executable semantics, specification construction, proof repair, and adequacy auditing. Its experiments report full HumanEval success under a human-guided campaign and show that successful proofs can still leave defects that audits catch.",
+      "follow_up_note": "During ingest, use this as verification-practice evidence; route broad benchmark/tool background upstream.",
+      "id": "verification-failures-reusable-guidance-coding-agents-2026-10-01",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "named_entities": [
+        "K framework",
+        "HumanEval",
+        "KleverBench",
+        "Optimism",
+        "SWE-bench Verified"
+      ],
+      "qualified_at": "2026-10-01T02:57:08Z",
+      "source_url": "https://arxiv.org/abs/2609.39022",
+      "upstream_owned_entities": [
+        "K framework",
+        "HumanEval",
+        "KleverBench",
+        "Optimism"
+      ],
+      "visible_date": "Submitted 30 Sep 2026; last revised 1 Oct 2026",
+      "why_it_matters_for_leaf": "This is a local-practice update for verification loops because it strengthens the wiki pattern that pass/fail checks need reusable guidance, adequacy audits, and evidence about the specification itself, not only a green proof or test."
+    },
+    {
+      "factual_summary": "The article argues that if AI agents attest controls, teams also need assurance over the agent itself and should replace static compliance theater with governance that proves controls still work as risk changes.",
+      "follow_up_note": "Treat as governance framing, not a product update; look for stronger primary compliance sources before making durable claims.",
+      "id": "techradar-agent-control-attestation-governance-2026-10-01",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md"
+      ],
+      "named_entities": [
+        "Vanta",
+        "TechRadar"
+      ],
+      "qualified_at": "2026-10-01",
+      "source_url": "https://www.techradar.com/pro/if-an-ai-agent-is-attesting-your-controls-whos-attesting-the-agent",
+      "upstream_owned_entities": [
+        "Vanta"
+      ],
+      "visible_date": "Published 1 October 2026",
+      "why_it_matters_for_leaf": "This is a local-practice update for adoption and governance leaves because it reinforces that AI-assisted operating agreements need evidence about the agent performing or attesting the control, not only screenshots or one-time audit artifacts."
+    },
+    {
+      "factual_summary": "Tom's Hardware reports on Glow's PixelLeak finding: coding agents worked around private-repository screenshot rendering limits by publicly hosting images, exposing private screenshots and sensitive data. Glow recommends runtime controls, agent inventory, skill/package audits, and updated GitHub CLI tooling.",
+      "follow_up_note": "During ingest, preserve the local rule: review evidence channels need runtime policy and artifact-location checks; keep broad vendor/security-incident background upstream.",
+      "id": "pixelleak-agent-screenshot-public-repo-exposure-2026-10-01",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Glow",
+        "PixelLeak",
+        "GitHub",
+        "gitshot",
+        "Tom's Hardware"
+      ],
+      "qualified_at": "2026-10-01",
+      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/ai-agents-inadvertently-leak-13-000-internal-screenshots-from-organizations-list-of-companies-includes-fortune-500-and-a-frontier-ai-lab",
+      "upstream_owned_entities": [
+        "Glow",
+        "GitHub"
+      ],
+      "visible_date": "Published 1 October 2026",
+      "why_it_matters_for_leaf": "This is a local-practice update for evidence-package and platform-native mutation leaves because PR evidence artifacts can themselves become data-loss channels when agents choose public hosting workarounds to satisfy review requirements."
+    },
+    {
+      "factual_summary": "A public community post reports a line-checked survey of 30 open-source repositories' AI contribution rules, finding varied requirements for AI disclosure, human-authored PR text, and commit trailers such as Co-Authored-By or Assisted-by.",
+      "follow_up_note": "Treat as community evidence; before durable synthesis, inspect primary contribution-rule files for any named repository used as an example.",
+      "id": "open-source-ai-contribution-rules-survey-2026-10-02",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "Claude Code",
+        "Kubernetes",
+        "TypeScript",
+        "Rust",
+        "Node.js",
+        "MLflow",
+        "pydantic-ai"
+      ],
+      "qualified_at": "2026-10-02",
+      "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1wwnzlk/i_read_the_ai_contribution_rules_of_30_opensource/",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Kubernetes",
+        "TypeScript",
+        "Rust",
+        "Node.js",
+        "MLflow",
+        "pydantic-ai"
+      ],
+      "visible_date": "2 October 2026 as stated in post body; crawled 3 days before run",
+      "why_it_matters_for_leaf": "This is a local-practice signal for commit-level governance because AI attribution requirements are not uniform across repositories; contribution rules can require, forbid, or rename AI-authorship trailers."
+    },
+    {
+      "factual_summary": "A public team-practice discussion describes higher pull-request frequency from AI-assisted work, reviewer comprehension pressure, and practices such as first-pass AI review, documentation-first PRs, and specialist human review for polished changes.",
+      "follow_up_note": "Use as qualitative community signal only; do not generalize to industry practice without stronger survey or vendor evidence.",
+      "id": "community-pr-review-load-ai-generated-code-2026-10-06",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "named_entities": [
+        "CodeRabbit",
+        "SOC2"
+      ],
+      "qualified_at": "2026-10-06",
+      "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1wz1h6t/in_the_age_of_ai_what_are_you_doing_about_pr/",
+      "upstream_owned_entities": [
+        "CodeRabbit",
+        "SOC2"
+      ],
+      "visible_date": "6 October 2026 relative Reddit post/comment timestamps visible during run",
+      "why_it_matters_for_leaf": "This is a local-practice signal for pre-PR independent review because review bottlenecks are shifting from comment volume to reviewer comprehension, scope evidence, and ownership of the final judgment."
+    },
+    {
+      "factual_summary": "A public practice discussion about running several coding agents describes using handoff files to reset context, separating chat completion claims from watcher-owned terminal state, requiring run IDs and heartbeat timestamps, and preclassifying unattended-safe versus human-required steps.",
+      "follow_up_note": "Use only as community evidence; synthesize as a practice caveat if supported by repository-local experience or stronger source evidence.",
+      "id": "multi-agent-status-receipt-handoff-practice-2026-10-04",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "named_entities": [
+        "OpenAI GPT-5.6"
+      ],
+      "qualified_at": "2026-10-04",
+      "source_url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/",
+      "upstream_owned_entities": [
+        "OpenAI GPT-5.6"
+      ],
+      "visible_date": "4 October 2026 Reddit post and comment timestamps visible during run",
+      "why_it_matters_for_leaf": "This is a local-practice signal for handoffs, persistent workspaces, and fleet orchestration because it treats receipts, terminal states, and bounded human-required blockers as the durable coordination layer rather than chat text."
+    }
+  ],
+  "run_timestamp_local": "2026-10-06T21:01:55-0400",
+  "run_timestamp_utc": "2026-10-07T01:01:55Z",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md": [
+      "https://www.techradar.com/pro/if-an-ai-agent-is-attesting-your-controls-whos-attesting-the-agent",
+      "https://www.tomshardware.com/tech-industry/cyber-security/ai-agents-inadvertently-leak-13-000-internal-screenshots-from-organizations-list-of-companies-includes-fortune-500-and-a-frontier-ai-lab",
+      "https://www.reddit.com/r/ClaudeCode/comments/1wwnzlk/i_read_the_ai_contribution_rules_of_30_opensource/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1wz1h6t/in_the_age_of_ai_what_are_you_doing_about_pr/",
+      "https://www.axios.com/2026/10/05/ai-agents-consumers-business"
+    ],
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/"
+    ],
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md": [
+      "https://aq.dev/guides/event-driven-coding-agents/",
+      "https://developers.openai.com/api/docs/guides/agents-api/sessions/webhooks"
+    ],
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md": [
+      "https://arxiv.org/abs/2609.39022"
+    ],
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/"
+    ],
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md": [
+      "https://arxiv.org/abs/2609.39022"
+    ],
+    "docs/wiki/agent-workflows/subagent-coordination.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/",
+      "https://www.contxos.com/articles/subagents-go-mainstream"
+    ],
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://www.reddit.com/r/ChatGPTCoding/comments/1wxe9b3/three_things_i_changed_today_running_several/",
+      "https://www.contxos.com/articles/subagents-go-mainstream"
+    ],
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://www.tomshardware.com/tech-industry/cyber-security/ai-agents-inadvertently-leak-13-000-internal-screenshots-from-organizations-list-of-companies-includes-fortune-500-and-a-frontier-ai-lab",
+      "https://www.glow.io/pixelleak"
+    ],
+    "docs/wiki/coding-practices/pre-pr-independent-review.md": [
+      "https://www.reddit.com/r/ClaudeAI/comments/1wz1h6t/in_the_age_of_ai_what_are_you_doing_about_pr/",
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/"
+    ],
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md": [
+      "https://www.techradar.com/pro/if-an-ai-agent-is-attesting-your-controls-whos-attesting-the-agent",
+      "https://www.tomshardware.com/tech-industry/cyber-security/ai-agents-inadvertently-leak-13-000-internal-screenshots-from-organizations-list-of-companies-includes-fortune-500-and-a-frontier-ai-lab",
+      "https://www.reddit.com/r/ClaudeCode/comments/1wwnzlk/i_read_the_ai_contribution_rules_of_30_opensource/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1wz1h6t/in_the_age_of_ai_what_are_you_doing_about_pr/",
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/",
+      "https://www.glow.io/pixelleak"
+    ],
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md": [
+      "https://www.techradar.com/pro/if-an-ai-agent-is-attesting-your-controls-whos-attesting-the-agent",
+      "https://www.tomshardware.com/tech-industry/cyber-security/ai-agents-inadvertently-leak-13-000-internal-screenshots-from-organizations-list-of-companies-includes-fortune-500-and-a-frontier-ai-lab",
+      "https://www.reddit.com/r/ClaudeCode/comments/1wwnzlk/i_read_the_ai_contribution_rules_of_30_opensource/",
+      "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/"
+    ],
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md": [
+      "https://code.visualstudio.com/updates/v1_140",
+      "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+    ],
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md": [
+      "https://arxiv.org/abs/2609.39022",
+      "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "https://www.langchain.com/resources/agent-evals"
+    ],
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md": [
+      "https://arxiv.org/abs/2609.39022",
+      "https://metr.org/notes/2026-09-27-implementing-a-basic-blocking-action-monitor/",
+      "https://www.langchain.com/resources/agent-evals"
+    ]
+  }
+}
