@@ -69,6 +69,15 @@ The October 6 sources add decision-rights and receipt evidence for parallel codi
 - The [leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json) reinforces watcher-owned terminal state, run IDs, heartbeat timestamps, handoff files, and unattended-safe classifications as coordination evidence.
 - Coordinator status views do not by themselves prove acceptance.
 
+The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) adds shared-state collaboration evidence. A multi-agent team should distinguish point-to-point delegation from a shared room or interaction layer. The coordinator should preserve:
+
+- Persistent agent identities.
+- Shared context and readable history.
+- Deterministic message routing.
+- Credential, recovery, and audit responsibilities for the shared state.
+
+Product and protocol background stays upstream; locally this is a coordination contract for shared-state agent teams.
+
 ## Practice Boundaries
 
 - Use subagents for independent investigations with clear scope and evidence expectations.
@@ -106,6 +115,7 @@ The October 6 sources add decision-rights and receipt evidence for parallel codi
 - Bind external-agent handoffs to explicit executor contracts, tool allowlists, workflow versions, budget caps, permission state, and pre-run previews before dispatch.
 - Name the owner for project scope, thread approvals, repository permissions, pull-request review, conflict resolution, and merge decisions before parallel coding-agent batches start.
 - Preserve run IDs, heartbeat timestamps, terminal state, handoff files, and unattended-safe versus human-required classifications as receipts separate from chat completion claims.
+- Distinguish shared-state collaboration rooms from ordinary subagent delegation, and require identity, routing, recovery, credential, and audit evidence before accepting their results.
 
 ## Authoritative Sources
 
@@ -140,6 +150,7 @@ The October 6 sources add decision-rights and receipt evidence for parallel codi
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 ## Related Code
 
@@ -169,6 +180,7 @@ The October 6 sources add decision-rights and receipt evidence for parallel codi
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-08 with shared-state collaboration evidence, delegation-versus-collaboration boundary, persistent identity, readable history, routing, recovery, credential, and audit controls.
 - Maintained on 2026-08-29 with cost-aware orchestrator/subagent model-routing and accepted-change evidence.
 - Created on 2026-06-23 from source-backed subagent, specialist-agent, and integration guidance.
 - Maintained on 2026-06-23 with public loop-design guidance on recurring subagent loops, independent validation, and stop conditions.

@@ -39,6 +39,14 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 
 The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds terminal-agent phase and hook evidence. Read-only research, planning artifacts, shell approvals, sandbox policy, lifecycle hook checks, done-claim verification, and session-history review should be visible terminal-workflow records rather than left inside a final message.
 
+The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) and [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) add terminal and desktop-agent controls. Local terminal workflows should preserve:
+
+- The sandbox policy actually applied, including filesystem and network scope.
+- Credential, local MCP, and language-server exposure.
+- Local-model route, provider connection state, and telemetry caveat.
+- Worktree cleanup, multi-session grid, and continuation state.
+- Whether the receiving IDE session inherited a prompt, a live session, or only repository state.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -56,6 +64,9 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - Preserve worktree, local runtime, containment profile, model route, approval state, and review package evidence for parallel terminal or workstation-agent sessions.
 - Treat repository-owned CLI wrappers and configuration as readiness evidence only when runtime, sandbox, API, model, context, and handoff differences remain visible.
 - Preserve read-only research artifacts, planning artifacts, shell-approval decisions, sandbox posture, lifecycle-hook behavior, session-history checks, and final-code verification before accepting a terminal-agent done claim.
+- Record local sandbox mode, denied resource classes, MCP exposure, language-server scope, and credential boundaries when terminal or IDE agents execute local commands.
+- Record local model selection separately from offline guarantees, telemetry state, provider connection failures, and runtime installation state.
+- Preserve cross-client continuation evidence when a terminal, Codex, ChatGPT, or IDE session hands off into another local coding surface.
 
 ## Authoritative Sources
 
@@ -79,6 +90,8 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 ## Related Code
 
@@ -116,3 +129,4 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - Maintained on 2026-09-02 with content-exclusion, managed-model-route, session-lineage, collaboration-surface, runtime-permission, desktop-agent, and destructive-operation containment evidence.
 - Maintained on 2026-09-23 with repository-ready terminal-agent wrappers, runtime posture, sandbox posture, API stack, model route, and handoff-surface evidence.
 - Maintained on 2026-10-01 with read-only research, planning-artifact, shell-approval, sandbox, lifecycle-hook, session-history, and final-code verification evidence.
+- Maintained on 2026-10-07 with local sandbox, local-model route, VS Code Agent Host, multi-session, worktree-cleanup, and cross-client continuation evidence.

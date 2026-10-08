@@ -102,9 +102,18 @@ This evidence is needed instead of relying only on model explainability or final
 
 The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) and [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) add logging-habit, OpenTelemetry, and agent-observability evidence. Debuggable coding agents should preserve structured log events for task, plan, tool call, approval, verification, first divergence, and final outcome; traces, spans, metrics, and eval results should be joined without implying that a successful final answer proves a safe process.
 
+The October 7 raw sources add IDE metric, sandbox, and local-route telemetry evidence. The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) records VS Code session management, local sandbox boundaries, and local model discovery, while the [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) records IDE version prerequisites for restored agent-activity metrics. Locally, progress and telemetry should show:
+
+- Which sandbox policy is active.
+- Whether local model selection is in use.
+- Whether provider connection failures occurred.
+- Whether telemetry remains enabled.
+- Whether the client version can report agent activity accurately.
+
 ## Practice Boundaries
 
 - Expose runtime overhead, supervision, crash recovery, nested calls, retries, review pressure, and accepted-outcome cost when agent execution scales beyond one interactive turn.
+- Show active sandbox policy, denied resource categories, local model route, provider connection failure, and IDE metric-coverage status when they affect trust or rollout reporting.
 
 - Stream progress when users need visible state during multi-step work.
 - Separate user-visible progress from unsupported claims about hidden reasoning.
@@ -157,6 +166,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
@@ -234,6 +245,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 - Maintained on 2026-09-27 with rollout baseline, production-signal, revert-preparation, security-review status, and tamper-resistant audit evidence.
 - Maintained on 2026-10-04 with workflow-journey accountability, cross-system action, human-judgment, owner-handoff, and error-amplification evidence.
 - Maintained on 2026-10-01 with multi-model workflow mode, read-only critic, long-task status, clearer progress, and real-time update evidence.
+- Maintained on 2026-10-07 with sandbox-policy, local-model route, provider-connection, telemetry-caveat, and IDE metric-coverage evidence.
 - Maintained on 2026-09-26 with OpenTelemetry export, structural traces, long-task status, shared canvas state, conversation-origin links, rewind, and remote-run evidence.
 - Maintained on 2026-09-25 with huge-PR rendering, headless probe, on-disk log, runtime instrumentation, health-signal, and measurement-loop evidence.
 - Maintained on 2026-09-21 with realtime failure-envelope redaction evidence.

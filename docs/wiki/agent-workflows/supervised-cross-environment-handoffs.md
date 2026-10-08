@@ -21,6 +21,14 @@ This page complements [delegated coding handoffs](delegated-coding-handoffs.md) 
 
 The September 1 raw sources add handoff evidence for external agent-session continuation, shared Agent Host sessions, IDE-to-worktree movement, and long-running task control. The [leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json) records continuing external Copilot or Claude sessions and connecting multiple windows to the same session. The [topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json) records moving an active conversation and uncommitted changes into a new worktree plus editable queued prompts that sync to connected hosts. Locally, a cross-environment handoff should name the origin client, destination workspace, uncommitted-change set, queued instructions, and review point.
 
+The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) adds IDE continuation and multi-session evidence for coding agents. When a task moves from Codex, ChatGPT, Copilot CLI, or another desktop surface into VS Code, the handoff should preserve:
+
+- Origin identity.
+- Selected workspace or worktree.
+- Session grid or continuation state.
+- Cleanup decisions.
+- Whether external context is copied, summarized, or attached as a live session.
+
 ## Practice Boundaries
 
 - Name the orchestration owner before multiple environment-specific agents act on one task.
@@ -32,6 +40,7 @@ The September 1 raw sources add handoff evidence for external agent-session cont
 - Preserve repository state, changed files, verification evidence, and unresolved decisions separately from model trajectory when handing work between agents or models.
 - Record whether the receiving agent should inherit detailed reasoning, a compact summary, or only task state when continuation direction creates cost or quality risk.
 - Record source client, destination worktree or host, uncommitted-change transfer, queued prompt state, and continuation identity when a session moves across tools.
+- Record origin identity, session-continuation mode, workspace selection, worktree cleanup policy, and attached-context scope when IDE handoff features move work across local tools.
 
 ## Authoritative Sources
 
@@ -40,6 +49,7 @@ The September 1 raw sources add handoff evidence for external agent-session cont
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [subagent coordination](subagent-coordination.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -72,3 +82,4 @@ The September 1 raw sources add handoff evidence for external agent-session cont
 - Maintained on 2026-08-20 with browser-use, shared-channel context, private-context exclusion, and human redirect evidence for cross-environment handoffs.
 - Maintained on 2026-08-26 with model-to-model continuation evidence, repository-state preservation, trajectory-summary selection, and direction-sensitive handoff cost or quality risk.
 - Maintained on 2026-09-01 with external-session continuation, shared host sessions, worktree transfer, queued-prompt, and connected-host handoff evidence.
+- Maintained on 2026-10-07 with IDE continuation, multi-session layout, worktree cleanup, and local cross-client handoff evidence.

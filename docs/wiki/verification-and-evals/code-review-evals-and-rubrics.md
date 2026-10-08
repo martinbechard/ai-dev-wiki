@@ -113,6 +113,25 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 - Matcher or judge behavior.
 - Independent relabeling or adjudication evidence before treating a benchmark result as a reusable review gate.
 
+The October 7 raw sources add code-review automation, secret-scanning, and multi-agent review signals. The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) records code-review API support and default effort-level drift as review provenance. The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) adds secret-detection model review and source-specific multi-agent collaboration framing. Locally, code-review evals should preserve:
+
+- API versus UI provenance.
+- Requested and effective effort.
+- Secret-finding label quality.
+- Deterministic scanner comparison.
+- Role-specific agent responsibilities.
+- Whether multi-agent disagreement produced source-backed findings or only extra discussion.
+
+The same October 8 source adds FAVUR-style multi-agent SDLC evaluation evidence. Local review and SDLC evals should preserve:
+
+- Run-level permanent provenance.
+- Statement-of-work identity.
+- Rubric version and coverage values.
+- Model and role views without treating rank as durable product guidance.
+- Funding, sponsorship, credit, and grant disclosures as context for interpreting the dashboard.
+
+Broad product and model background stays upstream-owned; locally this is an eval-method and provenance pattern.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -178,6 +197,10 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 - Treat independent verification as a separate eval layer from the generator's self-review, with deterministic checks, reasoning-based review, tests, quality gates, and human judgment scored separately.
 - Include maintainer-capacity and triage-load cases when AI-generated patches or AI-found issues are proposed for open-source projects.
 - Include review-stage timing, bot-versus-human attribution, finding-to-fix conversion, and reviewer triage burden when evaluating AI review adoption.
+- Preserve API trigger, UI trigger, requested effort, effective default effort, and automation actor before comparing review quality.
+- Score secret-detection review against production labels, deterministic pattern checks, false-positive handling, and human security acceptance.
+- Score multi-agent review collaboration by source-backed role findings, disagreement handling, and accepted fixes rather than by number of participating agents.
+- Preserve run identity, statement-of-work identity, rubric version, coverage, role view, and funding disclosure when multi-agent SDLC dashboards are used as evaluation evidence.
 - Preserve review-role weight, composite-score inputs, artifact-quality evidence, efficiency metrics, static-analysis output, pytest output, deliverable manifests, and tool/transcript telemetry when evaluating multi-agent SDLC review quality.
 - Score whether independent reviewers reproduce findings, reject unreproducible claims, request failing tests, and preserve intent notes before findings become agent repair work.
 - Score API-triggered review separately from human-requested review by preserving request actor, effort value, default policy, trigger context, and downstream human acceptance.
@@ -203,6 +226,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -272,6 +297,7 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
 - Maintained on 2026-10-07 with ReviewBench corpus, label-source, matcher, judge, and independent-validation evidence.
+- Maintained on 2026-10-07 with review API provenance, effort-level drift, secret-detection labels, deterministic scanner comparison, and multi-agent review collaboration evidence.
 - Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.
 - Maintained on 2026-09-29 with role-weighted review scoring, artifact-quality, efficiency, static-analysis, pytest, deliverable-manifest, transcript, fresh-context, reproducible-finding, and intent-note evidence.
 - Maintained on 2026-09-26 with review-stage timing, bot-versus-human attribution, finding-to-fix conversion, verification-capacity, and reviewer-triage evidence.

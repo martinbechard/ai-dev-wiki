@@ -129,10 +129,20 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json) adds review-automation policy evidence. Locally, review-effort defaults and API-triggered review requests should be governed inputs rather than trusted convenience state.
 
+The October 7 raw sources add local sandbox, secret-review, and local-model governance evidence. The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) records sandboxing across filesystem, network, credentials, local MCP, and language-server access plus local model discovery that does not imply offline operation or disabled telemetry. The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) adds AI secret-detection review and IDE usage-metric caveats. Locally, governance should preserve:
+
+- Sandbox policy and scope.
+- The distinction between sandboxing, approval, virtual-machine isolation, and user-account boundaries.
+- Telemetry capture and client-version prerequisites for usage metrics.
+- Review model provenance.
+- Explicit authorization before opt-in, credit-consuming secret-classifier checks run.
+- Local-model runtime availability without assuming offline or private operation.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
 - Treat policy defaults, billing behavior, retention settings, sandbox availability, review-depth defaults, and agent action ordering as governance inputs before a managed coding-agent surface becomes team policy.
+- Treat local sandbox GA, local-model routing, secret-review models, and IDE metric behavior as deployable policy inputs that need current client version, telemetry, and scope evidence before adoption claims.
 - Require running-agent discovery, agent registration, owner mapping, telemetry, granular guardrails, and context-aware action checks for recurring or cross-system agents.
 - Treat external source text as untrusted evidence and route prompt-injection controls through [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md).
 - Require approval or policy gates for actions that affect files, network services, dependencies, credentials, external systems, or production-like state.
@@ -295,6 +305,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
@@ -333,6 +345,7 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 - Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.
 - Maintained on 2026-10-04 with action-sequence governance, review-effort, and API-triggered review control evidence.
+- Maintained on 2026-10-07 with local sandbox, local-model route, telemetry, secret-review, and IDE usage-metric governance evidence.
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, audit-evidence-package, policy-version, and policy-before-execution governance evidence.
 - Maintained on 2026-09-26 with managed-settings validation, default-policy, sandbox-scope, telemetry-export, proof-of-presence, and authority-boundary evidence.
 - Maintained on 2026-09-16 with governed-loop, confidence-gap, risk-register, MCP-boundary, provable-trust, and incident-reporting routing evidence; next check should verify primary sources before adding aggregator-discovered claims.

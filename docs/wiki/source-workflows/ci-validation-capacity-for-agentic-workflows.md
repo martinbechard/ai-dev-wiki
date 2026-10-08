@@ -18,6 +18,14 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 Locally, both sources support the same durable practice: speed up foreground checks only when deferred validation still has owners, evidence, and repair paths.
 
+The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) adds self-healing CI/CD evidence. CI repair agents should consume validation capacity as a bounded proposal loop:
+
+- Diagnose the failing signal.
+- Draft a constrained patch.
+- Rerun deterministic validation.
+- Preserve diff inspection evidence.
+- Leave merge and deployment authority outside the agent unless separately approved.
+
 ## Practice Boundaries
 
 - Keep merge-request validation fast enough for review flow, but record the policy, exception owner, expiry, and fallback path when a check exceeds the budget.
@@ -25,11 +33,13 @@ Locally, both sources support the same durable practice: speed up foreground che
 - Move slow validation to scheduled or deferred lanes only when failures create owned repair tasks with logs, bisect or reproduction evidence, duplicate suppression, and escalation rules.
 - Quarantine flaky tests with expiry, owner, and reinstatement criteria; do not let quarantine become permanent evidence loss.
 - Measure queue time, setup overhead, failure rate, runner cost, cache effectiveness, and red-build ownership before expanding agentic coding throughput.
+- Treat self-healing CI/CD as proposal and validation work until a human or governed workflow accepts merge and deployment.
 - Route local acceptance-gate detail to [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md) and workflow queue evidence to [source reconciliation and routing](source-reconciliation-and-routing.md).
 
 ## Authoritative Sources
 
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md)
 - [source reconciliation and routing](source-reconciliation-and-routing.md)
 
@@ -58,3 +68,4 @@ Locally, both sources support the same durable practice: speed up foreground che
 ## Maintenance Notes
 
 - Created on 2026-10-07 from October 7 raw-source evidence about merge-request CI budgets, selective validation, scheduled repair tasks, flaky-test quarantine, validation-cost measurement, and red-build ownership.
+- Maintained on 2026-10-07 with self-healing CI/CD diagnosis, constrained patch, deterministic validation, diff inspection, and merge/deployment authority evidence.

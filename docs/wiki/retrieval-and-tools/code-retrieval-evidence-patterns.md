@@ -47,6 +47,13 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 
 The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) adds done-claim and trace-evidence refinements. Code retrieval evidence should not stop at a final agent summary: reviewers should inspect session history, exact opened paths, final code state, and fresh verification output before accepting a completion claim. When the retrieval or trace artifact is writable by the same agent, the evidence package should identify which records came from outside the agent boundary.
 
+The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) adds AgSpec retrieval practice evidence. Broad speculative-decoding and drafter-model background stays upstream-owned, while local code-retrieval practice should preserve:
+
+- Session, workspace, and global corpus boundaries.
+- Opened-file state and agent-emission-format indexing.
+- Offline-profiled draft caps and online adaptation from verification feedback.
+- The verification signal used to decide whether retrieval-speed gains remained correct.
+
 ## Practice Boundaries
 
 - Keep code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, and task metadata distinguishable in retrieval evidence.
@@ -80,6 +87,7 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 - Score code-context strategies by resolvable file and line evidence, printed inputs, non-empty output checks, and harness-defect reporting rather than by compressed context size alone.
 - Verify coding-agent completion claims against session history, opened-path evidence, current file contents, and fresh final-code checks instead of treating a done message as retrieval evidence.
 - Identify which trace, log, or history records are outside the agent-writable boundary before using them as audit evidence.
+- Treat session trajectory, opened-file state, and verification feedback as retrieval evidence when coding-agent acceleration depends on them.
 
 ## Authoritative Sources
 
@@ -107,6 +115,7 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 
 ## Related Code
 
@@ -134,6 +143,7 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 
 - Maintained on 2026-09-26 with code-context benchmark, line-citation, printed-input, non-empty-output, and harness-defect evidence.
 - Maintained on 2026-10-01 with coding-agent done-claim, session-history, final-code verification, mutable-trace, and external-boundary evidence.
+- Maintained on 2026-10-07 with AgSpec session, workspace, global-corpus, opened-file, draft-cap, and verification-feedback retrieval evidence.
 - Maintained on 2026-09-19 with enterprise code-search, docs/wiki retrieval, runbook, observability, feature-flag, task-metadata, and tribal-knowledge evidence boundaries.
 - Created on 2026-06-23 to hold code retrieval evidence practice apart from document RAG and tool execution.
 - Maintained on 2026-06-25 with explicit retrieval-path evidence for AI review and coding-agent claims.

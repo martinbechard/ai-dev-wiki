@@ -57,10 +57,21 @@ The [September 24 topic news collector source](../../../raw/processed/2026-09-24
 
 The October 1 raw sources add done-claim, mutable-trace, and critic-workflow evidence. The [leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json) treats coding-agent done messages as claims until session history and final-code checks confirm them, and notes that local JSONL traces can be mutable when they live inside the agent-reachable filesystem. The [topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds read-only critic and multi-model workflow evidence. Locally, acceptance gates should require fresh final-state verification, externally controlled or tamper-resistant evidence when traces matter, and reviewer independence when critique is part of the workflow.
 
+The October 7 raw sources add repair-evidence, consumer verification-tax, and regulated-software assurance signals. The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) records evidence that coding-agent reliability depends on useful repairs plus trustworthy verification, including cases where agent-written tests can falsely accept incorrect patches. It also records self-healing CI/CD guidance that separates proposed fixes from merge or deployment authority. The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) adds assurance evidence for AI-written software in regulated settings. Locally, acceptance gates should preserve:
+
+- Reverted-tree or authoritative-baseline checks for candidate patches.
+- Human merge and deployment authority outside agent repair proposals.
+- The source-specific lesson that tests, monitors, reviewing agents, and passing audits were each fallible.
+- The reported silent audit failure and disruptive automated repair as assurance failure modes.
+- Privacy, compliance, source provenance, independent review, and verification evidence before regulated AI-written code is accepted.
+
 ## Practice Boundaries
 
 - Track review cognitive effort, traceability gaps, deterministic verification coverage, and standards-compliance checks when AI-generated code volume increases.
 - Treat vendor survey claims as operating-model signals that need local acceptance evidence before changing gates.
+- Treat agent-written tests as evidence to review, not proof; compare repairs against authoritative baselines, existing failing behavior, or independently curated tests when correctness matters.
+- Keep self-healing CI/CD agents in propose-and-verify mode until a human or governed workflow accepts the patch, merge, and deployment decision.
+- Require regulated-code acceptance packets to include privacy, compliance, source provenance, independent review, and verification evidence rather than model identity alone.
 
 - Decide the acceptance gate before claiming a task is complete.
 - Use build, test, lint, runtime checks, source checks, and human review according to the risk of the change.
@@ -135,6 +146,8 @@ The October 1 raw sources add done-claim, mutable-trace, and critic-workflow evi
 - [September 24 topic news collector source](../../../raw/processed/2026-09-24/ai-dev-wiki-topic-news-collector-2026-09-24T003335Z.json)
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 ## Related Code
 
@@ -164,6 +177,7 @@ The October 1 raw sources add done-claim, mutable-trace, and critic-workflow evi
 
 - Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
 - Maintained on 2026-10-01 with done-claim verification, session-history review, final-code checks, mutable-trace risk, tamper-resistant evidence, and read-only critic workflow evidence.
+- Maintained on 2026-10-07 with repair-evidence, self-healing CI/CD, reverted-baseline checks, verification-tax, and regulated AI-written software assurance evidence.
 
 - Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
 - Maintained on 2026-09-24 with agentic code-quality, explainable review evidence, repository-wide context, historical PR decision, and organization-specific standard gates.

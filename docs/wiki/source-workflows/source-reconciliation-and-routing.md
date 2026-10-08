@@ -11,6 +11,12 @@ tags: ["source-workflows"]
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds planning-system routing evidence. When issue or planning systems become agent control planes, source reconciliation should preserve durable work IDs, ownership metadata, model-routing decisions, secret-exposure notes, token revocation audit entries, and comment-to-session follow-up routing so later agents can connect source updates to the right active or completed session.
 
+The October 7 raw sources keep broad ecosystem entities upstream-owned while adding local practice routes. Local synthesis from the [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) and [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) separates:
+
+- Upstream or hub-routed entities: [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md), GitHub, Visual Studio Code, Atlassian, Jira, Confluence, Bitbucket, Rovo, Qodo, Ollama, FAVUR, model names, MCP, A2A, and named companies or products.
+- Local runtime and governance practice: local sandbox evidence, terminal and desktop-agent session controls, local-model route disclosure, AI-review provenance, usage metric caveats, and context-to-delivery handoffs.
+- Local evaluation and assurance practice: multi-agent collaboration rubrics, FAVUR-style run provenance, verification-tax signals, self-healing CI/CD boundaries, and assurance gates for regulated AI-written software.
+
 The September 26 raw sources add chat-to-work traceability and broad-entity routing evidence. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records Slack and Microsoft Teams context handoffs where generated GitHub work links back to originating conversations. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records the same traceability plus upstream-owned GitHub Copilot, OpenTelemetry, AWS, NVIDIA, Slack, Microsoft Teams, and model-family facts. Locally, source reconciliation should preserve conversation-origin links, attachment provenance, forwarded-context notes, default owner and repository values, duplicate-work checks, and safer repository-switch evidence while routing broad product, company, framework, and model background upstream.
 
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds incident-disclosure routing evidence. Provider misalignment disclosures, safety-evaluator access limits, and product-specific capability reports should be routed as upstream entity facts when broad background matters, while the local wiki keeps downstream implications for escalation, reproducible evidence, review gates, and disclosure paths.
@@ -98,6 +104,7 @@ Local routing:
 ## Practice Boundaries
 
 - Preserve durable project, initiative, issue, and session identifiers when routing source updates into or out of agent work.
+- Route October 7 product, company, model, protocol, and developer-tool updates upstream while retaining local practice for sandboxing, review evidence, metrics, local models, cross-environment context, and assurance gates.
 - Record whether a follow-up comment should reach an active session, a completed session, or a new work item rather than treating all comments as generic context.
 - Preserve source-conversation links, attachment provenance, forwarded context, default owner and repository fields, duplicate-work checks, and repository-switch evidence when chat surfaces initiate agent work.
 
@@ -132,6 +139,8 @@ Local routing:
 ## Authoritative Sources
 
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 - [schema.md](../schema.md)
 - [federation.md](../federation.md)
@@ -214,6 +223,7 @@ Local routing:
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-07 with upstream routing for local sandboxing, review, metrics, Atlassian context, FAVUR evals, Qodo collaboration, and assurance-gate evidence.
 - Maintained on 2026-09-26 with chat-to-work traceability, attachment provenance, repository defaulting, duplicate-work, safer repository-switching, and upstream-entity routing evidence.
 - Maintained on 2026-09-25 with planning-control-plane, durable-ID, ownership, model-routing, token-revocation, and comment-routing evidence.
 

@@ -130,9 +130,19 @@ The September 25 raw sources add review-stage and runaway-loop evidence. The [le
 
 The [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json) adds eval-workflow cost evidence. Generated evaluation workflows can incur costs across orchestration, the application under test, optional model judges, retries, report generation, and iterative hillclimbing. Local cost telemetry should attach those costs to accepted eval improvements, failed attempts, reviewer time, and versioned benchmark results rather than treating the eval runner as free because the instructions are public.
 
+The October 7 raw sources add usage-metric, local-model, and verification-tax cost signals. The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) records local model selection that still needs telemetry caveats plus consumer verification-tax behavior as a reminder that user trust costs can move outside the agent run. The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) records IDE version requirements for restored agent-activity metrics. Locally, cost telemetry should preserve:
+
+- Whether activity metrics are complete for the client version.
+- Whether local-model routing still sends telemetry.
+- Whether local execution consumes setup or maintenance effort.
+- Whether downstream verification burden is being shifted to reviewers, maintainers, or users.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
+- Record client-version coverage and metric gaps before comparing agent activity across teams or time windows.
+- Record local-model routing, telemetry caveats, installation/setup effort, and fallback provider calls before treating local execution as free or private by default.
+- Include shifted verification burden when AI-assisted recommendations or patches force humans to confirm results elsewhere.
 - Treat spend caps, runtime isolation, review capacity, validation queues, retry rates, production incidents, and accepted-outcome measurement as one operating control when agent work scales across teams.
 - Record budget-increase requests, approver decisions, approved caps, denial reasons, workflow dependency, and post-approval outcome evidence when AI credit limits affect delivery.
 - Pair cost records with outcome evidence such as accepted patch, failed verification, useful research, rejected draft, or blocked handoff.
@@ -220,6 +230,8 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
+- [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
@@ -311,6 +323,7 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with eval-workflow orchestration, model-judge, retry, report, hillclimb, benchmark-cost, and efficiency-metric evidence.
+- Maintained on 2026-10-07 with local-model route, client-version metric gap, telemetry caveat, and shifted verification-burden evidence.
 - Maintained on 2026-09-20 with acceptance-cost, reviewer-correction-time, retry, incident, rework, and cost-per-accepted-suggestion evidence.
 - Maintained on 2026-09-19 with spend-cap, runtime-isolation, tokenmaxxing, validation-capacity, and outcome-governed cost evidence from the September 19 raw sources.
 - Maintained on 2026-09-17 with budget-increase request, approver, cap, denial, workflow-dependency, and outcome evidence.
