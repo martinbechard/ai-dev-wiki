@@ -1,0 +1,440 @@
+{
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp_utc": "2026-10-08T01:01:49Z",
+  "run_timestamp_local": "2026-10-07T21:01:49-0400",
+  "cutoff_window": {
+    "start_utc": "2026-10-01T01:01:49Z",
+    "end_utc": "2026-10-08T01:01:49Z",
+    "rule": "Only include public sources published or visibly updated within the last 7 days relative to run time; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 105,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md": [
+      "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "https://www.itechguides.com/self-healing-ci-cd-how-ai-agents-can-propose-automated-code-fixes/"
+    ],
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md": [
+      "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "https://www.itechguides.com/self-healing-ci-cd-how-ai-agents-can-propose-automated-code-fixes/"
+    ],
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md": [
+      "https://agentpatterns.ai/workflows/cloud-local-agent-handoff/",
+      "https://code.visualstudio.com/updates/v1_141",
+      "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "https://www.reddit.com/r/codex/comments/1wyzbib/claude_code_codex_users_what_does_your_actual/"
+    ],
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md": [
+      "https://code.visualstudio.com/updates/v1_141",
+      "https://www.reddit.com/r/ClaudeCode/comments/1wycbbr/i_built_a_terminal_where_you_can_watch_claude/"
+    ],
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md": [
+      "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/"
+    ],
+    "docs/wiki/application-patterns/agent-environment-readiness.md": [
+      "https://code.visualstudio.com/updates/v1_141",
+      "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/",
+      "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/"
+    ],
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md": [
+      "https://code.visualstudio.com/updates/v1_141",
+      "https://codingagentguide.com/posts/coding-agent-lifecycle-hooks-policy-enforcement/",
+      "https://docs.snowflake.com/en/user-guide/cortex-code-agent-sdk/hooks",
+      "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "https://www.geordie.ai/knowledge-center/agent-lifecycle-hooks/"
+    ],
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md": [
+      "https://arxiv.org/abs/2610.03984",
+      "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/"
+    ],
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md": [
+      "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "https://www.thoughtworks.com/insights/articles/context-challenge-ai-agents"
+    ],
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md": [
+      "https://arxiv.org/abs/2610.01108",
+      "https://www.fastcompany.com/91615947/shoppers-who-use-ai-are-paying-a-hidden-verification-tax",
+      "https://www.thoughtworks.com/insights/articles/context-challenge-ai-agents"
+    ],
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md": [],
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md": [
+      "https://arxiv.org/abs/2610.01108",
+      "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/"
+    ],
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md": [
+      "https://arxiv.org/abs/2606.11864",
+      "https://arxiv.org/abs/2610.01108",
+      "https://arxiv.org/abs/2610.03984"
+    ],
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md": [
+      "https://amplitude.com/docs/amplitude-ai/amplitude-mcp?siteLocation=homepage_setup_section",
+      "https://www.heybeagle.com/blog/mcp-tool-discovery-has-a-context-window-tax"
+    ],
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md": [
+      "https://arxiv.org/abs/2610.03984",
+      "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "https://www.fastcompany.com/91615947/shoppers-who-use-ai-are-paying-a-hidden-verification-tax",
+      "https://www.itechguides.com/self-healing-ci-cd-how-ai-agents-can-propose-automated-code-fixes/"
+    ]
+  },
+  "qualifying_update_count": 10,
+  "qualifying_updates": [
+    {
+      "id": "vscode-1-141-agent-session-management-2026-10-07",
+      "source_url": "https://code.visualstudio.com/updates/v1_141",
+      "visible_date": "Released October 7, 2026 Stable",
+      "qualified_at": "2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md"
+      ],
+      "factual_summary": "Visual Studio Code 1.141 adds agent-session management changes including worktree cleanup, cross-platform terminal sandboxing, grid arrangement for multiple sessions, external Copilot session continuation, and Codex chat handoff from ChatGPT or Codex CLI into VS Code on the same machine.",
+      "why_it_matters_for_leaf": "The local practice implication is that agent handoff, terminal workflow, environment readiness, and lifecycle-state pages now need to consider IDE-managed session storage, concurrent session monitoring, and same-machine chat portability as first-class operating surfaces.",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Copilot SDK",
+        "Agent Host Protocol",
+        "Codex",
+        "Codex CLI",
+        "ChatGPT"
+      ],
+      "upstream_owned_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "ChatGPT"
+      ],
+      "follow_up_note": "During normal ingest, keep product release background upstream and synthesize only local operating rules for session cleanup, same-machine handoff, cross-app send locks, and sandbox expectations."
+    },
+    {
+      "id": "github-copilot-local-sandboxing-ga-2026-10-07",
+      "source_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "visible_date": "October 7, 2026",
+      "qualified_at": "2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md"
+      ],
+      "factual_summary": "GitHub announced general availability of local sandboxing for Copilot CLI, the Copilot app, and VS Code sessions using Agent Host. The sandbox constrains agent-run commands across filesystem, network, credentials, local MCP, and language-server access according to developer or organization policies.",
+      "why_it_matters_for_leaf": "This strengthens the local-practice case for treating pre-write boundaries and environment readiness as enforceable runtime policy, not only prompt guidance or review convention.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code Agent Host",
+        "Microsoft eXecution Container",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Visual Studio Code",
+        "Model Context Protocol"
+      ],
+      "follow_up_note": "Normal ingest should route product specifics upstream while adding downstream guidance about sandbox policy as a rules/knowledge layer boundary that developers cannot weaken."
+    },
+    {
+      "id": "github-copilot-dynamic-workflows-2026-10-01",
+      "source_url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+      "visible_date": "October 1, 2026",
+      "qualified_at": "2026-10-01",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "factual_summary": "GitHub made dynamic workflows available in Copilot CLI, the Copilot app, and the Copilot SDK. Workflows are code-defined orchestrations that combine automated steps, tools, commands, parallel agents, structured result passing, peer verification, checkpoints, and resumability.",
+      "why_it_matters_for_leaf": "This is a durable local practice signal for choosing reusable composed workflows when work needs stages, checks, parallel review, release gates, or long-running pause/resume control rather than a single prompt.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "Copilot SDK"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "During ingest, connect this to CI validation capacity and verification gates without duplicating GitHub product documentation."
+    },
+    {
+      "id": "github-copilot-computer-use-preview-2026-10-01",
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/",
+      "visible_date": "October 1, 2026",
+      "qualified_at": "2026-10-01",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "factual_summary": "GitHub Copilot computer use entered public preview for Copilot CLI and the Copilot app on macOS and Windows, with approval required before controlling apps and organization-managed settings able to disable the feature.",
+      "why_it_matters_for_leaf": "GUI control expands write boundaries beyond repository files into desktop applications, so local request packages should specify target applications, constraints, approval expectations, and handoff surfaces.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "macOS",
+        "Windows"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Normal ingest should keep the broad feature upstream and add local practice guidance for GUI-only workflow authorization and request-package constraints."
+    },
+    {
+      "id": "github-copilot-local-model-discovery-2026-10-07",
+      "source_url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/",
+      "visible_date": "October 7, 2026",
+      "qualified_at": "2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "factual_summary": "GitHub Copilot CLI 1.0.94-0 can discover supported local Ollama models through /model, show provider connection failures, and add a local model for a session without installing runtimes or downloading models. GitHub also clarifies that local model selection does not imply offline mode or disable telemetry.",
+      "why_it_matters_for_leaf": "Model-selection practice needs to separate local runtime discovery from environment readiness, tool-calling support, offline-mode claims, telemetry boundaries, and request-package expectations.",
+      "named_entities": [
+        "GitHub Copilot CLI",
+        "Ollama",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Ollama"
+      ],
+      "follow_up_note": "During ingest, preserve the distinction between local provider discovery, offline mode, and remote provider context exposure."
+    },
+    {
+      "id": "github-copilot-code-review-api-effort-2026-10-02",
+      "source_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "visible_date": "October 2, 2026",
+      "qualified_at": "2026-10-02",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "factual_summary": "GitHub added REST and GraphQL API support for requesting Copilot code review, with optional review effort level selection, and made Balanced the default review effort level unless Lite was explicitly selected.",
+      "why_it_matters_for_leaf": "AI code review can now be wired into scripts and internal workflows, so structural diff review and acceptance gates should distinguish API-triggered review from independent human or multi-reviewer verification.",
+      "named_entities": [
+        "GitHub Copilot",
+        "REST API",
+        "GraphQL API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Normal ingest should avoid treating API-triggered review as completion proof; keep it as one review signal inside broader evidence packages."
+    },
+    {
+      "id": "self-healing-cicd-agent-safe-fixes-2026-10-04",
+      "source_url": "https://www.itechguides.com/self-healing-ci-cd-how-ai-agents-can-propose-automated-code-fixes/",
+      "visible_date": "October 4, 2026",
+      "qualified_at": "2026-10-04",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md"
+      ],
+      "factual_summary": "The article frames self-healing CI/CD as safe only when agents diagnose failures and draft bounded patches under constrained access, deterministic validation, diff inspection, and human review, explicitly separating fix proposal from merge or deployment authority.",
+      "why_it_matters_for_leaf": "This supports local guidance that CI-failure agents consume validation capacity and must remain inside pre-write, review, and acceptance boundaries until deterministic checks and human authority complete.",
+      "named_entities": [
+        "GitHub",
+        "GitLab",
+        "CI/CD",
+        "AI agents"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitLab"
+      ],
+      "follow_up_note": "Normal ingest should treat this as secondary guidance and verify any vendor-specific workflow claims against primary docs before synthesis."
+    },
+    {
+      "id": "teaching-agents-code-reliably-2026-10-02",
+      "source_url": "https://arxiv.org/abs/2610.03984",
+      "visible_date": "Submitted on 2 Oct 2026; v1 Fri, 2 Oct 2026 19:47:19 UTC",
+      "qualified_at": "2026-10-02T19:47:19Z",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md"
+      ],
+      "factual_summary": "The arXiv paper argues that coding-agent reliability depends on useful repairs plus reliable evidence. It reports that verification can mislead when an agent-written test accepts incorrect patches, and that scoring patches against their reverted tree improves verifier precision and reduces false acceptance.",
+      "why_it_matters_for_leaf": "This is directly relevant to acceptance-gate design because passing agent-authored tests or self-verification should not be treated as enough evidence for completion.",
+      "named_entities": [
+        "SWE-bench Verified",
+        "ICLR 2027",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "SWE-bench Verified"
+      ],
+      "follow_up_note": "During ingest, cite as preprint evidence and keep claims bounded to the reported experimental setup."
+    },
+    {
+      "id": "agspec-coding-agent-retrieval-pipeline-2026-10-06",
+      "source_url": "https://arxiv.org/abs/2610.01108",
+      "visible_date": "Submitted on 1 Oct 2026; last revised 6 Oct 2026",
+      "qualified_at": "2026-10-06T05:37:48Z",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "factual_summary": "AgSpec proposes retrieval-based speculative decoding for coding-agent pipelines using session, workspace, and global corpora, opened-file indexing in agent emission format, offline-profiled draft caps, and online adaptation from verification feedback. The authors report throughput gains over several drafters and EAGLE-3.",
+      "why_it_matters_for_leaf": "The local implication is that retrieval evidence for coding agents includes session trajectory and opened-file state, not just static repository chunks, and verification feedback can become part of context-performance governance.",
+      "named_entities": [
+        "AgSpec",
+        "EAGLE-3",
+        "arXiv"
+      ],
+      "upstream_owned_entities": [
+        "AgSpec",
+        "EAGLE-3"
+      ],
+      "follow_up_note": "During ingest, route broad model-serving background upstream and keep local guidance focused on repository/session evidence surfaces."
+    },
+    {
+      "id": "fastcompany-ai-verification-tax-commerce-2026-10-02",
+      "source_url": "https://www.fastcompany.com/91615947/shoppers-who-use-ai-are-paying-a-hidden-verification-tax",
+      "visible_date": "10-02-2026",
+      "qualified_at": "2026-10-02",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md"
+      ],
+      "factual_summary": "Fast Company reports survey-backed consumer verification behavior around AI recommendations, including Product.ai findings that 86% of surveyed AI-assisted shoppers confirm recommendations through another source before buying and Harris Poll findings that 75% would trust an AI shopping agent less if recommendations were influenced by brand dollars.",
+      "why_it_matters_for_leaf": "Although commerce is upstream/general, the downstream practice implication is that verification tax is not confined to coding; self-service agent outputs need transparent, non-conflicted evidence layers before users rely on them.",
+      "named_entities": [
+        "Fast Company",
+        "Product.ai",
+        "Reddit",
+        "Harris Poll",
+        "Interactive Advertising Bureau"
+      ],
+      "upstream_owned_entities": [
+        "Product.ai",
+        "Reddit",
+        "Harris Poll",
+        "Interactive Advertising Bureau"
+      ],
+      "follow_up_note": "Normal ingest should use this only as a cross-domain trust signal and avoid importing consumer-commerce background into local coding-agent pages."
+    }
+  ],
+  "excluded_candidate_count": 10,
+  "excluded_candidates": [
+    {
+      "source_url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp?siteLocation=homepage_setup_section",
+      "visible_date": "No visible publication or update date found in checked page",
+      "reason": "Excluded despite relevance to progressive MCP tool discovery because crawl date is not a visible source publication/update date."
+    },
+    {
+      "source_url": "https://docs.snowflake.com/en/user-guide/cortex-code-agent-sdk/hooks",
+      "visible_date": "No visible publication or update date found in checked page",
+      "reason": "Excluded despite relevance to agent lifecycle hooks because the page did not expose a qualifying visible publication/update date."
+    },
+    {
+      "source_url": "https://www.thoughtworks.com/insights/articles/context-challenge-ai-agents",
+      "visible_date": "Published: October 01, 2026",
+      "reason": "Excluded as boundary-only date for this run: the strict cutoff is 2026-10-01T01:01:49Z and the page exposes only a date, not a time."
+    },
+    {
+      "source_url": "https://agentpatterns.ai/workflows/cloud-local-agent-handoff/",
+      "visible_date": "No visible publication or update date found in checked page",
+      "reason": "Excluded despite relevance to cross-environment handoffs because crawl recency is not a visible publication/update date."
+    },
+    {
+      "source_url": "https://codingagentguide.com/posts/coding-agent-lifecycle-hooks-policy-enforcement/",
+      "visible_date": "Published Sep 1, 2026; Last reviewed 2026-09-01",
+      "reason": "Excluded because the visible date is outside the 7-day window."
+    },
+    {
+      "source_url": "https://www.heybeagle.com/blog/mcp-tool-discovery-has-a-context-window-tax",
+      "visible_date": "September 7, 2026",
+      "reason": "Excluded because the visible date is outside the 7-day window."
+    },
+    {
+      "source_url": "https://www.geordie.ai/knowledge-center/agent-lifecycle-hooks/",
+      "visible_date": "Last updated: September 2026",
+      "reason": "Excluded because month-only update date is ambiguous and outside the strict 7-day visible-date window."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2606.11864",
+      "visible_date": "Submitted Jun 10, 2026",
+      "reason": "Excluded because the visible submission date is outside the 7-day window, despite relevance to code retrieval evidence."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1wycbbr/i_built_a_terminal_where_you_can_watch_claude/",
+      "visible_date": "October 5, 2026",
+      "reason": "Excluded from qualifying updates because it is a community workflow anecdote; it may be useful as a weak signal during manual research but should not drive raw ingest without primary-source corroboration."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/codex/comments/1wyzbib/claude_code_codex_users_what_does_your_actual/",
+      "visible_date": "October 6, 2026",
+      "reason": "Excluded from qualifying updates because it is a community workflow discussion without durable primary-source evidence."
+    }
+  ],
+  "federation_routing": {
+    "upstream_owned_scopes": [
+      "broad product release background",
+      "model and framework encyclopedia facts",
+      "general commerce trust background",
+      "MCP ecosystem background"
+    ],
+    "downstream_local_scope": "local AI-assisted development practice implications for workflow, governance, verification, context, retrieval, and adoption leaves"
+  },
+  "follow_up_notes": [
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md: review raw artifact for downstream practice implications: github-copilot-dynamic-workflows-2026-10-01, self-healing-cicd-agent-safe-fixes-2026-10-04",
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md: review raw artifact for downstream practice implications: github-copilot-local-sandboxing-ga-2026-10-07, github-copilot-computer-use-preview-2026-10-01, self-healing-cicd-agent-safe-fixes-2026-10-04",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md: review raw artifact for downstream practice implications: vscode-1-141-agent-session-management-2026-10-07, github-copilot-computer-use-preview-2026-10-01",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md: review raw artifact for downstream practice implications: vscode-1-141-agent-session-management-2026-10-07",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md: review raw artifact for downstream practice implications: github-copilot-dynamic-workflows-2026-10-01, github-copilot-local-model-discovery-2026-10-07",
+    "docs/wiki/application-patterns/agent-environment-readiness.md: review raw artifact for downstream practice implications: vscode-1-141-agent-session-management-2026-10-07, github-copilot-local-sandboxing-ga-2026-10-07, github-copilot-local-model-discovery-2026-10-07",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md: review raw artifact for downstream practice implications: vscode-1-141-agent-session-management-2026-10-07, github-copilot-dynamic-workflows-2026-10-01",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md: review raw artifact for downstream practice implications: github-copilot-code-review-api-effort-2026-10-02, teaching-agents-code-reliably-2026-10-02",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md: review raw artifact for downstream practice implications: github-copilot-local-sandboxing-ga-2026-10-07",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md: review raw artifact for downstream practice implications: agspec-coding-agent-retrieval-pipeline-2026-10-06, fastcompany-ai-verification-tax-commerce-2026-10-02",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md: no qualifying public update found in this run; checked sources either lacked visible dates, were outside the window, or belonged upstream/community-only.",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md: review raw artifact for downstream practice implications: github-copilot-computer-use-preview-2026-10-01, github-copilot-local-model-discovery-2026-10-07, agspec-coding-agent-retrieval-pipeline-2026-10-06",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md: review raw artifact for downstream practice implications: teaching-agents-code-reliably-2026-10-02, agspec-coding-agent-retrieval-pipeline-2026-10-06",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md: no qualifying public update found in this run; checked sources either lacked visible dates, were outside the window, or belonged upstream/community-only.",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md: review raw artifact for downstream practice implications: github-copilot-dynamic-workflows-2026-10-01, github-copilot-code-review-api-effort-2026-10-02, self-healing-cicd-agent-safe-fixes-2026-10-04, teaching-agents-code-reliably-2026-10-02, fastcompany-ai-verification-tax-commerce-2026-10-02"
+  ]
+}
