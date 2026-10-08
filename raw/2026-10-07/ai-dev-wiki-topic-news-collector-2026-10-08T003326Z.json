@@ -1,0 +1,512 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-08T00:33:26Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-06T00:33:26Z",
+    "end_utc": "2026-10-08T00:33:26Z",
+    "policy": "Include only public web sources with direct visible publication or update dates inside the strict two-day window. Exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "local_scope": "AI-assisted development practice, including context architecture, guidance structure, agent operating practices, workflows, verification, governance, and local adoption patterns.",
+    "collector_boundary": "Broad ecosystem entity facts are recorded as upstream-owned; this artifact keeps only local practice implications and routing notes."
+  },
+  "search_queries": [
+    "AI coding agent workflow code review evals published October 7 2026",
+    "AI-assisted development context engineering coding agents October 7 2026",
+    "MCP governance tool approvals coding agents October 7 2026",
+    "AI code review software engineering evals October 6 2026",
+    "October 7 2026 MCP server governance approval agent tools",
+    "October 6 2026 coding agent sandbox permissions approvals",
+    "October 7 2026 AI-assisted TDD coding agents",
+    "October 6 2026 structured outputs agents software development",
+    "\"Oct 7, 2026\" \"AI\" \"code review\" \"agent\"",
+    "\"Oct 6, 2026\" \"AI\" \"coding agent\" \"review\"",
+    "\"October 7, 2026\" \"agentic\" \"software development\" \"governance\"",
+    "\"October 6, 2026\" \"agentic\" \"software development\""
+  ],
+  "qualifying_findings": [
+    {
+      "id": "2026-10-08-001",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "source_title": "Local sandboxing for GitHub Copilot now generally available",
+      "source_type": "vendor changelog",
+      "visible_date": "October 7, 2026",
+      "date_basis": "Direct page header shows October 7, 2026.",
+      "short_factual_summary": "GitHub announced general availability for local sandboxing in Copilot CLI, the Copilot app, and VS Code sessions using Agent Host. The feature restricts agent-initiated tools and commands across filesystem, network, credentials, local MCP servers, and language servers according to developer or organization policies.",
+      "why_it_matters_for_ai_assisted_development_practice": "Agent governance guidance should separate model choice from tool-execution isolation and should treat enterprise-managed sandbox settings, credential access, MCP server execution, and network controls as first-class approval evidence.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code Agent Host",
+        "Microsoft eXecution Container",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "Microsoft eXecution Container",
+          "scope": "developer infrastructure"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk or retrieval-and-tools. Keep the local lens on sandbox policy, approvals, and credential boundaries rather than Copilot product coverage.",
+      "follow_up_notes": "During ingest, compare with destructive-command controls, execution-edge authorization, and MCP approval evidence pages."
+    },
+    {
+      "id": "2026-10-08-002",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/",
+      "source_title": "Purpose-built model for leaked secret detection",
+      "source_type": "vendor changelog",
+      "visible_date": "October 7, 2026",
+      "date_basis": "Direct page header shows October 7, 2026.",
+      "short_factual_summary": "GitHub described a fine-tuned secret-detection model for alert scans, push protection, and planned Copilot /security-review checks. The /security-review path is read-only, returns prioritized findings with remediation suggestions, and its new secret-classifier checks are opt-in, credit-consuming, and should not be enabled by agents without explicit authorization.",
+      "why_it_matters_for_ai_assisted_development_practice": "Security-repair and review gates should require explicit approval for credit-consuming checks, distinguish read-only review from policy changes, and preserve budget and opt-in evidence before agents run or enable additional scanners.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Secret Protection",
+        "GitHub Advanced Security",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "Copilot /security-review"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "GitHub Advanced Security",
+          "scope": "security product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk. Capture the practice rule that agents may run read-only checks under policy but must not enable billable or policy-changing checks without explicit human approval.",
+      "follow_up_notes": "Route broad product and model details upstream; keep local synthesis focused on security-review approval, budget, and evidence handling."
+    },
+    {
+      "id": "2026-10-08-003",
+      "topic_root": "docs/wiki/adoption-and-operating-model",
+      "source_url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics/",
+      "source_title": "Update your IDE to restore agent activity in Copilot usage metrics",
+      "source_type": "vendor changelog",
+      "visible_date": "October 6, 2026",
+      "date_basis": "Direct page header shows October 6, 2026.",
+      "short_factual_summary": "GitHub reported that some IDEs moved Copilot agent sessions to the Copilot SDK without identifying the originating IDE, leaving agent activity out of reports or counting it as CLI activity. VS Code fixes are available now and other IDE fixes are expected by November 2026, but missed client-side activity cannot be recovered later.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adoption dashboards and cost telemetry should treat client-side usage metrics as instrumentation that can drift by IDE version. Operating reports should capture version prerequisites and distinguish unrecoverable metric gaps from real drops in agent usage.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot SDK",
+        "Visual Studio Code",
+        "JetBrains IDEs",
+        "Xcode"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "Visual Studio Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "JetBrains IDEs",
+          "scope": "developer tools"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: adoption-and-operating-model or source-workflows. Keep the local lens on measurement hygiene, version rollout evidence, and dashboard interpretation.",
+      "follow_up_notes": "During ingest, compare with agent-cost-telemetry and usage-metrics pages."
+    },
+    {
+      "id": "2026-10-08-004",
+      "topic_root": "docs/wiki/retrieval-and-tools",
+      "source_url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/",
+      "source_title": "Discover local models in GitHub Copilot CLI",
+      "source_type": "vendor changelog",
+      "visible_date": "October 7, 2026",
+      "date_basis": "Direct page header shows October 7, 2026.",
+      "short_factual_summary": "GitHub Copilot CLI 1.0.94-0 can discover supported models from a running local Ollama instance via /model. The flow requires user confirmation before adding a model, does not install runtimes or download models, requires tool calling and streaming, and warns that local model choice does not imply offline mode or telemetry disablement.",
+      "why_it_matters_for_ai_assisted_development_practice": "Local-model guidance should separate discovery from installation, session use from persistent provider configuration, and local execution from privacy/offline assumptions. Provider endpoints and telemetry paths should be explicit review items before agents switch models.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot CLI",
+        "Ollama",
+        "GitHub Copilot app"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "GitHub",
+          "scope": "company and developer platform"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "Ollama",
+          "scope": "developer tool and model runtime"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: retrieval-and-tools or adoption-and-operating-model. Keep this as a provider-selection and telemetry-boundary practice note.",
+      "follow_up_notes": "Route local model runtime and product background upstream."
+    },
+    {
+      "id": "2026-10-08-005",
+      "topic_root": "docs/wiki/context-architecture",
+      "source_url": "https://www.atlassian.com/blog/company-news/team26-europe-ai-sdlc",
+      "source_title": "Atlassian brings the AI-native SDLC from playbook to production",
+      "source_type": "vendor product and practice announcement",
+      "visible_date": "October 7, 2026",
+      "date_basis": "Direct page date shows October 7, 2026.",
+      "short_factual_summary": "Atlassian described AI-native SDLC capabilities that connect Jira, Confluence, Loom, DX, Jira Service Management, and Code Context through Teamwork Graph. The announcement frames context and measurement as the foundation, reports internal tests with improved answer quality and lower token usage, and describes planning, development, review, and incident workflows grounded in work artifacts.",
+      "why_it_matters_for_ai_assisted_development_practice": "Enterprise context architecture pages should treat planning intent, code graph data, decisions, work items, and evidence as separate context layers with permission-aware retrieval and measurable impact, not just bigger prompt windows.",
+      "named_entities": [
+        "Atlassian",
+        "Teamwork Graph",
+        "Code Context",
+        "Jira",
+        "Confluence",
+        "Loom",
+        "DX",
+        "Jira Service Management",
+        "Bitbucket",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Atlassian",
+          "scope": "company"
+        },
+        {
+          "name": "Teamwork Graph",
+          "scope": "product/platform feature"
+        },
+        {
+          "name": "Jira",
+          "scope": "product"
+        },
+        {
+          "name": "Confluence",
+          "scope": "product"
+        },
+        {
+          "name": "GitHub",
+          "scope": "developer platform"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: context-architecture and source-workflows. Preserve only the practice lens around multi-source context grounding, measurement, and review evidence.",
+      "follow_up_notes": "Route product catalog facts upstream; verify any reported percentages during ingest before using them as claims."
+    },
+    {
+      "id": "2026-10-08-006",
+      "topic_root": "docs/wiki/source-workflows",
+      "source_url": "https://events.atlassian.com/teameurope/session/4395885/closing-the-context-gap-from-local-coding-sessions-to-verified-delivery",
+      "source_title": "Closing the context gap: From local coding sessions to verified delivery",
+      "source_type": "conference session page",
+      "visible_date": "Tuesday, October 6, 2026",
+      "date_basis": "Direct session page shows Tuesday, October 6, 2026, 11:00 AM - 11:45 AM.",
+      "short_factual_summary": "An Atlassian Team 26 Europe session described the gap between terminal, IDE, source-control, and local-agent work and delivery review. The page says Jira and Teamwork Graph connect planning intent, local development decisions, organizational standards, and verification evidence so review can be grounded in intent and risk.",
+      "why_it_matters_for_ai_assisted_development_practice": "Source-workflow pages should treat local agent decisions and progress as source artifacts that must travel back to work items and review surfaces, reducing reconstruction work and making risk assessment reviewable.",
+      "named_entities": [
+        "Atlassian",
+        "Team 26 Europe",
+        "Jira",
+        "Teamwork Graph",
+        "Rovo",
+        "Rovo Dev",
+        "Bitbucket",
+        "Confluence"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Atlassian",
+          "scope": "company"
+        },
+        {
+          "name": "Jira",
+          "scope": "product"
+        },
+        {
+          "name": "Teamwork Graph",
+          "scope": "product/platform feature"
+        },
+        {
+          "name": "Rovo",
+          "scope": "product"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: source-workflows or agent-workflows. Capture the context-travel and verified-delivery workflow pattern, not the conference or product catalog details.",
+      "follow_up_notes": "If ingested with the Atlassian announcement, avoid duplicate digest entries; this is a session-level practice lens."
+    },
+    {
+      "id": "2026-10-08-007",
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_url": "https://code.visualstudio.com/docs/agents/run/agent-sandboxing",
+      "source_title": "Sandbox Copilot Agent Host sessions",
+      "source_type": "official documentation",
+      "visible_date": "10/7/2026",
+      "date_basis": "Direct documentation page footer shows 10/7/2026.",
+      "short_factual_summary": "VS Code documentation explains Agent Host sandboxing for Copilot terminal commands, MCP servers, and language servers. It distinguishes approvals from sandboxing, states that sandboxing is not a VM or user-account boundary, documents platform prerequisites and settings, and provides /sandbox policy for inspecting effective restrictions.",
+      "why_it_matters_for_ai_assisted_development_practice": "Governance controls should require teams to inspect effective sandbox policy, narrow network and filesystem access, treat developer-tool cache access and credentials as explicit weakening factors, and avoid assuming approval prompts alone create containment.",
+      "named_entities": [
+        "Visual Studio Code",
+        "GitHub Copilot",
+        "Agent Host",
+        "Model Context Protocol",
+        "bubblewrap",
+        "socat"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Visual Studio Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "GitHub Copilot",
+          "scope": "developer tool and product"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: governance-and-risk and retrieval-and-tools. Keep the local synthesis on sandbox boundary inspection, MCP/LSP process scope, and credential/network minimization.",
+      "follow_up_notes": "Good companion evidence for the GitHub local-sandboxing changelog item."
+    },
+    {
+      "id": "2026-10-08-008",
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://evals.favur.dev/",
+      "source_title": "FAVUR EVALS - Multi-agent SDLC, evaluated",
+      "source_type": "public evaluation dashboard",
+      "visible_date": "Last updated Oct 7, 2026",
+      "date_basis": "Direct dashboard text shows Last updated Oct 7, 2026.",
+      "short_factual_summary": "FAVUR EVALS publishes a public multi-agent SDLC evaluation dashboard with 210 runs, per-run permanent pages, composite scores, coverage values, rubric versions, model and role views, comparisons, trends, methodology, and dataset navigation. The page says the runs are self-funded with no vendor sponsorship, credits, or grants.",
+      "why_it_matters_for_ai_assisted_development_practice": "Software-engineering eval guidance should preserve run-level provenance, statement-of-work identity, rubric version, coverage, and funding/context disclosures so model or role comparisons do not collapse into a single leaderboard score.",
+      "named_entities": [
+        "FAVUR EVALS",
+        "Favur",
+        "Muse Spark",
+        "Deepseek Flash",
+        "Gemini Flash"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Favur",
+          "scope": "developer tool/company"
+        },
+        {
+          "name": "Muse Spark",
+          "scope": "model or model configuration"
+        },
+        {
+          "name": "Deepseek Flash",
+          "scope": "model"
+        },
+        {
+          "name": "Gemini Flash",
+          "scope": "model"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: verification-and-evals. Keep this as an eval-method and provenance example rather than a product or model ranking page.",
+      "follow_up_notes": "If ingested, avoid treating dashboard rank as durable product guidance; extract methodology fields and evidence retention practices."
+    },
+    {
+      "id": "2026-10-08-009",
+      "topic_root": "docs/wiki/agent-workflows",
+      "source_url": "https://www.qodo.ai/blog/from-delegation-to-collaboration-inside-qodos-dark-factory/",
+      "source_title": "From Delegation to Collaboration: Inside Qodo's Dark Factory",
+      "source_type": "vendor engineering blog",
+      "visible_date": "Oct 6, 2026",
+      "date_basis": "Direct page byline shows Oct 6, 2026.",
+      "short_factual_summary": "Qodo described Dark Factory, an autonomous engineering-agent team in which agents share context, refine plans, exchange evidence, review one another's work, and adapt actions through a shared BAND interaction layer. The post contrasts point-to-point A2A delegation with shared rooms, persistent identities, readable history, and deterministic message routing.",
+      "why_it_matters_for_ai_assisted_development_practice": "Multi-agent workflow pages should distinguish service-to-service delegation from collaborative shared-state rooms, and should preserve agent identity, history, routing, recovery, credentials, and audit trail as integration responsibilities.",
+      "named_entities": [
+        "Qodo",
+        "Dark Factory",
+        "BAND",
+        "Agent-to-Agent",
+        "A2A",
+        "MCP",
+        "PR-Agent",
+        "MOSAICO"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Qodo",
+          "scope": "company and developer tool"
+        },
+        {
+          "name": "BAND",
+          "scope": "agent collaboration product"
+        },
+        {
+          "name": "Agent-to-Agent",
+          "scope": "protocol/technique"
+        },
+        {
+          "name": "Model Context Protocol",
+          "scope": "protocol/technique"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: agent-workflows or application-patterns. Keep only the workflow-architecture lesson about shared context, identity, and auditability in multi-agent teams.",
+      "follow_up_notes": "Route product and protocol background upstream."
+    },
+    {
+      "id": "2026-10-08-010",
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_url": "https://arxiv.org/abs/2610.08651",
+      "source_title": "A Case Study in Assuring AI-Written Software",
+      "source_type": "research preprint",
+      "visible_date": "Tue Oct 6 16:37:08 2026",
+      "date_basis": "Direct arXiv page shows Date: Tue Oct 6 16:37:08 2026.",
+      "short_factual_summary": "The preprint reports a case study of a production healthcare platform built through coding agents and governed by an operator without formal software-engineering training. It argues exhaustive line-by-line review was not a realistic control and describes a human-led meta-agent workflow where tests, monitors, and reviewing agents were useful but fallible, including silent audit failures and an automated repair that disrupted operations.",
+      "why_it_matters_for_ai_assisted_development_practice": "Verification guidance should bind outcome intent, evidence, agent permissions, and the final human decision to the same objective, and should not treat tests, monitors, reviewing agents, or passing audits as individually sufficient proof.",
+      "named_entities": [
+        "arXiv",
+        "Lindsey Ferris",
+        "Sierra Bonilla",
+        "Claude Code",
+        "OpenAI GPT models",
+        "Google Gemini",
+        "HIPAA"
+      ],
+      "upstream_owned_entities": [
+        {
+          "name": "Claude Code",
+          "scope": "developer tool"
+        },
+        {
+          "name": "OpenAI GPT models",
+          "scope": "model family"
+        },
+        {
+          "name": "Google Gemini",
+          "scope": "model family"
+        }
+      ],
+      "local_practice_implication": "Candidate destination: verification-and-evals and governance-and-risk. Capture the assurance pattern and failure modes, not model or tool background.",
+      "follow_up_notes": "During ingest, keep healthcare/HIPAA details narrowly scoped and avoid treating one case study as general production-proof evidence."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "source_title": "Our Framework for Reviewing AI-Generated Code",
+      "visible_date": "URL indicates 2026/10; opened page did not expose a specific publication day in extracted text.",
+      "reason": "Excluded because the direct page extraction did not provide an unambiguous visible publication or update date inside the strict two-day window, despite strong local relevance."
+    },
+    {
+      "source_url": "https://www.nist.gov/publications/agentic-ai-assisted-coding-offers-unique-opportunity-instill-epistemic-grounding-during",
+      "source_title": "Agentic AI-Assisted Coding Offers a Unique Opportunity to Instill Epistemic Grounding during Software Development",
+      "visible_date": "Published July 17, 2026; updated August 31, 2026; citation access date October 7, 2026.",
+      "reason": "Excluded as stale for this collector window; the October date was an access/citation date, not publication or update evidence."
+    },
+    {
+      "source_url": "https://www.qodo.ai/blog/introducing-qodo-3-0/",
+      "source_title": "Introducing Qodo 3.0: Quality and Governance for the Agentic Software Factory",
+      "visible_date": "Oct 1, 2026",
+      "reason": "Excluded as outside the strict two-day window, though the agentic governance and PR-triage practice angle may be relevant to older ingest work."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2610.02952",
+      "source_title": "GTDD: Generative Test-Driven Development for AI Coding Agents with Adversarial Testing",
+      "visible_date": "Fri Oct 2 07:45:33 2026",
+      "reason": "Excluded as outside the strict two-day window."
+    },
+    {
+      "source_url": "https://www.producthunt.com/categories/ai-coding-agents?order=best_rated",
+      "source_title": "The best AI coding agents in 2026",
+      "visible_date": "Last updated Oct 6, 2026",
+      "reason": "Excluded because the page is broad product directory coverage owned by the upstream AI wiki; no distinct downstream practice implication was needed beyond existing adoption and tool-selection lenses."
+    },
+    {
+      "source_url": "https://platformengineering.com/features/rethinking-platform-engineering-for-autonomous-ai-agents/",
+      "source_title": "Rethinking Platform Engineering for Autonomous AI Agents",
+      "visible_date": "Published On: October 6, 2026",
+      "reason": "Excluded because the article is a broad platform-engineering essay with limited AI-assisted-development-specific source evidence; candidate concepts are already represented by more direct sandboxing and approval sources in this run."
+    },
+    {
+      "source_url": "https://letsdatascience.com/blog/how-ai-coding-agents-work",
+      "source_title": "How AI Coding Agents Work: The Loop, the Sandbox and the Permissions",
+      "visible_date": "Oct 6, 2026",
+      "reason": "Excluded as a secondary explainer built from vendor documentation; more authoritative GitHub and VS Code sources in this run cover the same loop, sandbox, permission, and verification practice points."
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agents/run/approvals",
+      "source_title": "Manage approvals and permissions",
+      "visible_date": "Current documentation page, but no direct exact publication or update date was captured from the page extraction.",
+      "reason": "Excluded because the collector requires an unambiguous visible date on the source page; related sandboxing documentation with a direct 10/7/2026 footer was retained instead."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this collector output raw-only. Do not update docs/wiki or raw/processed from this collector run.",
+    "The strongest ingest cluster is sandboxing, approvals, and security-review authorization; consider synthesizing the GitHub changelog and VS Code documentation together to avoid duplicate leaves.",
+    "Atlassian sources should be reduced to context-travel and verified-delivery practice notes because company, product, and graph-platform coverage is upstream-owned.",
+    "The FAVUR and arXiv findings are better evaluation-practice evidence than model ranking or model capability evidence.",
+    "The Qodo Dark Factory finding is useful for the boundary between point-to-point agent delegation and shared multi-agent collaboration rooms, but product background belongs upstream."
+  ],
+  "validation": {
+    "status": "passed",
+    "commands_run": [
+      {
+        "command": "jq empty raw/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json",
+        "result": "passed"
+      },
+      {
+        "command": "python3 -m json.tool raw/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json",
+        "result": "passed"
+      },
+      {
+        "command": "git diff --check -- raw/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json",
+        "result": "passed"
+      }
+    ]
+  }
+}
