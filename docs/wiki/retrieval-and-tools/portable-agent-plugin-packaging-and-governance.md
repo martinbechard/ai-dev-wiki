@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds Plugin4Shell follow-up evidence. Portable package intake should not rely on manifest names, requested refs, or marketplace install state alone; it should compare the resolved repository commit, package source, bundled commands, allowed tools, and any auto-update behavior against primary advisory or repository evidence before a package becomes reusable infrastructure.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds Plugin4Shell-style SHA-pin bypass evidence and workstation governance. Portable plugin packages need provenance, approved source, manifest validation, allowed tools, and post-checkout commit-object verification; a recorded pin is not sufficient if the runtime can resolve or checkout a different commit than the intended SHA.
 
 Portable agent plugin packaging governs how reusable skills, MCP servers, manifests, and client-specific extensions travel across agent clients. The [portable agent plugin classification query source](../../../raw/processed/query/2026-08-12-portable-agent-plugin-classification.md) records the local classification rule: Agent Plugins packaging is broader than MCP. MCP servers are one portable component inside the package, while skills, manifests, installation, distribution, permissions, authentication, and client-specific extensions need their own review.
@@ -56,6 +58,8 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
@@ -102,6 +106,7 @@ Portable packages should not erase artifact boundaries. [Portable agent skills a
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with Plugin4Shell follow-up, resolved-commit, package-source, bundled-command, allowed-tool, auto-update, and advisory-evidence checks.
 - Maintained on 2026-09-25 with post-checkout SHA verification, workstation package controls, and plugin-governance evidence.
 
 - Maintained on 2026-09-20 with deterministic skill validation, metadata inference, tool-registration, hosted-MCP, private-library, and batch-run cap evidence.

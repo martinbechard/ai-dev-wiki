@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds software-audit-trail evidence. Generated-code evidence packages should preserve who or what made the change, source evidence, prompt or spec input, review path, linked work item, security or privacy checks, acceptance decision, and the audit trail that lets a future reviewer reconstruct why the change was trusted.
+
 AI code evidence packages preserve the model, source, review, and security records needed before generated code is trusted. They make AI-generated or AI-modified code visible as unverified input until normal review, testing, and risk-specific approval have run.
 
 The [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json) records DoD-style guidance that developers and teams remain accountable for AI-generated code, that security- or safety-critical AI-generated changes need human review, that normal review and security testing still apply, and that software evidence should record models, versions, and significant datasets. The local practice is to preserve enough evidence for accountability without turning product-specific government procedure into local policy.
@@ -51,6 +53,8 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
@@ -87,6 +91,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with software-audit-trail, source-evidence, prompt/spec input, review-path, work-item, security/privacy check, and acceptance-decision evidence.
 - Maintained on 2026-09-29 with self-managed governance, security-scan, remediation-control, dependency-risk, compliance, durable-record, and oversized-generated-PR evidence.
 - Maintained on 2026-10-07 with proof-artifact location, visibility, retention, runtime-control, agent-inventory, package-provenance, and reviewer-access evidence.
 - Maintained on 2026-09-21 with pipeline-governance evidence package scope from the topic news collector.

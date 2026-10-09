@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds agentic workflow explanation evidence. Declarative workflow artifacts should identify trigger, allowed action, human approval point, state transition, rollback, audit record, and external-system boundary before an agentic workflow can run as a reusable development process.
+
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds code-defined dynamic workflow evidence from upstream-owned GitHub Copilot surfaces. Locally, reusable agent workflows should treat staged steps, parallel lanes, structured handoffs, verification checkpoints, optional user input, and pause/resume points as reviewable workflow contract fields instead of burying those controls in one-off prompts.
 
 The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) adds a second dynamic-workflow signal with commands, tools, services, parallel tasks, subagent verification, structured results, user input, checkpoints, and resume behavior. Locally, workflow-as-code artifacts should be source-reviewed like executable orchestration, including permission boundaries and handoff schemas.
@@ -54,6 +56,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
@@ -92,6 +96,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with trigger, allowed-action, approval, state-transition, rollback, audit-record, and external-boundary evidence.
 - Maintained on 2026-10-02 with code-defined dynamic workflow, structured handoff, verification checkpoint, user-input, and pause/resume evidence.
 - Maintained on 2026-10-03 with commands, tools, services, subagent-verification, structured-result, checkpoint, resume, and permission-boundary evidence.
 - Created on 2026-07-28 from July 28 raw evidence about reviewable workflow artifacts, branching, tool calls, approval points, checkpoints, and resume behavior.

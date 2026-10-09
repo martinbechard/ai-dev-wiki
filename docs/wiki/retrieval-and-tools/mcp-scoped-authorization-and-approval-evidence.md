@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds governed-pipeline and plugin-integrity evidence. MCP approval evidence should show the task, principal, token scope, pipeline step, exact proposed action, approval decision, executed payload, and any plugin or runtime provenance checks that affected whether the tool was callable.
+
 The September 27 topic news collector source adds enterprise MCP approval-package evidence. A server approval should identify the publisher, hosting or transport path, authentication model, allowed tool set, least-privilege scope, audit-log destination, and revocation path before the agent sees the server as an available capability.
 
 The September 25 raw sources add runtime authorization evidence for MCP-mediated and connector-mediated actions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces authenticated request traces, tool-call validation, high-risk pauses, and quality/cost gates. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds OAuth-protected MCP consent handling where user consent can happen before model execution instead of becoming a model-visible tool error.
@@ -107,6 +109,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -162,6 +166,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with governed-pipeline scoped-token, exact-action, approval, payload, and plugin-provenance evidence.
 - Maintained on 2026-10-06 with cross-account resource-promotion, IAM, rollback, and audit-destination approval evidence.
 - Maintained on 2026-09-27 with MCP publisher, transport, authentication, approved-tool inventory, least-privilege, audit-log, and revocation evidence.
 - Maintained on 2026-09-25 with authenticated-request trace, tool validation, approval pause, cost/quality gate, OAuth consent, and token-refresh evidence.

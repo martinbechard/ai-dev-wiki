@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds stacked-pull-request evidence. Fix packaging can use dependent pull requests when a generated or agent-assisted change is too large for one review unit, but the package should preserve stack order, base-branch changes, replacement commits, approval retention, lifecycle events, and reviewer navigation before treating the stack as review-ready.
+
 Fix assistants are easier to trust when reproduction, scope, patch, tests, and verification evidence are explicit. The local practice is to prove the problem before editing, keep the change scoped to one concern, add or repair regression coverage, and package the result with enough evidence for review.
 
 This page records the coding practice. Repository-specific branch naming, hosting workflows, and pull request automation are project-specific source-workflow concerns when they exist.
@@ -51,6 +53,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
@@ -88,6 +92,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with stacked pull-request, base-branch, replacement-commit, approval-retention, lifecycle-event, and reviewer-navigation evidence.
 - Created on 2026-06-23 from source guidance on fix assistants, branch scope, regression coverage, and review-ready evidence.
 - Maintained on 2026-06-29 with review-path packaging for agent-assisted production changes.
 - Maintained on 2026-07-07 with agent-authorship, violation-attribution, and human repair ownership packaging.

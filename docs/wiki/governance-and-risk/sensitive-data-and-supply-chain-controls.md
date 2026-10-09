@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds secret-detection model and review-stack evidence. Agents should not enable credit-consuming secret checks, change administrator policy, apply security fixes, or process sensitive code through external review stacks without explicit authorization, budget ownership, privacy boundary review, and human security acceptance.
+
 Sensitive data and supply-chain controls protect prompts, raw artifacts, tools, dependencies, models, and third-party source material. The local rule is to keep secrets, credentials, PII, company-internal content, proprietary source, and license-sensitive material out of prompts and public raw artifacts unless the human explicitly approves that use.
 
 Package installs and third-party artifacts deserve explicit review because they can introduce vulnerable, malicious, unnecessary, or license-incompatible dependencies. The same supply-chain lens applies to model artifacts, training data, retrieved source collections, MCP servers, browser extensions, workflow plugins, and copied prompt or skill libraries. [HVE Core](../../../raw/processed/microsoft-hve-core.md) is useful as a source example because it exposes license, third-party notice, security, governance, and responsible-AI signals alongside reusable agent artifacts.
@@ -176,6 +178,8 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
@@ -270,6 +274,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with secret-detection authorization, credit-budget, administrator-policy, sensitive-code, privacy-boundary, and human-security-acceptance evidence.
 - Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.
 - Maintained on 2026-10-05 with token-format drift, managed-plugin, browser/computer-use, remote-CLI MCP, upload/download, debug-access, and sandbox-policy evidence.
 - Maintained on 2026-09-23 with generated-helper, test-output, local-import-path, module-shadowing, and restricted-execution supply-chain evidence.

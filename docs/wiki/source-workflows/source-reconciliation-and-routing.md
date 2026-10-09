@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) keeps broad GitHub, Copilot, JetBrains, Seapoint, Anchor Sprint, Optimal AI, Deska, DETENT, Appy Pie, and Start Debugging entity coverage upstream-owned while retaining local downstream practice for sandboxing, security-review authorization, local-model routing, metric gaps, stacked PRs, review evidence, weekly review rituals, software audit trails, spec-driven coding, and declarative workflow boundaries. The JetBrains item remains a routing note because the direct page only exposed month-level date evidence during ingest.
+
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds planning-system routing evidence. When issue or planning systems become agent control planes, source reconciliation should preserve durable work IDs, ownership metadata, model-routing decisions, secret-exposure notes, token revocation audit entries, and comment-to-session follow-up routing so later agents can connect source updates to the right active or completed session.
 
 The October 7 raw sources keep broad ecosystem entities upstream-owned while adding local practice routes. Local synthesis from the [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json) and [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json) separates:
@@ -138,6 +140,8 @@ Local routing:
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
@@ -223,6 +227,7 @@ Local routing:
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with upstream routing for October 9 topic-collector entities and a JetBrains month-level-date caveat.
 - Maintained on 2026-10-07 with upstream routing for local sandboxing, review, metrics, Atlassian context, FAVUR evals, Qodo collaboration, and assurance-gate evidence.
 - Maintained on 2026-09-26 with chat-to-work traceability, attachment provenance, repository defaulting, duplicate-work, safer repository-switching, and upstream-entity routing evidence.
 - Maintained on 2026-09-25 with planning-control-plane, durable-ID, ownership, model-routing, token-revocation, and comment-routing evidence.

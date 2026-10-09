@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) reinforces that context routing is a harness boundary. A thin router should decide what task guidance, source evidence, memory, tool metadata, and approval instructions reach the agent for the current work, while broad product, model, and framework background routes upstream or stays out of context unless it changes the local operating decision.
+
 The thin context router is the short root guidance file that sends an agent to the right task-specific documentation. It should route rather than summarize the whole repository, because loading every rule and reference into the live prompt increases distraction and cost.
 
 The source note frames the router as a single root file with a strict size limit. The local practice is to keep the router task-oriented: it names where to find rules, project facts, plans, decisions, references, and archives, then lets the agent load the smallest relevant document.
@@ -25,6 +27,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 - Route resumed or replacement agents to durable state and handoff summaries instead of embedding full prior trajectory in the root guidance file.
 
 ## Authoritative Sources
+
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
@@ -55,5 +59,6 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with harness-context routing evidence from the October 8 leaf update watch.
 - Created on 2026-06-23 from the folder organization source note covering the root router file and task-specific guidance routing.
 - Maintained on 2026-08-26 with model-handoff routing guidance for durable state, source evidence, verification evidence, and intentionally preserved or excluded context.

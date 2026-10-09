@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds spec-driven coding and audit-trail evidence. Acceptance gates should treat vague intent, agent-generated implementation, explicit specification, review trail, security check, and audit record as different evidence levels; passing generated tests alone is not enough when the source requirement or trust record is weak.
+
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds AI-generated-code verification bottleneck evidence. Acceptance gates should account for review cognitive load, traceability from AI activity to code changes, standards-aware review, and deterministic verification capacity instead of assuming context-rich generation removes the need for scaled validation.
 
 Agentic delivery shifts bottlenecks from generation to validation. Generated code, agent actions, and candidate answers can arrive quickly, but review, source grounding, runtime inspection, and human acceptance decide whether the result is usable.
@@ -112,6 +114,8 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -175,6 +179,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with spec-driven coding, review-trail, security-check, audit-record, and generated-test evidence-level boundaries.
 - Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
 - Maintained on 2026-10-01 with done-claim verification, session-history review, final-code checks, mutable-trace risk, tamper-resistant evidence, and read-only critic workflow evidence.
 - Maintained on 2026-10-07 with repair-evidence, self-healing CI/CD, reverted-baseline checks, verification-tax, and regulated AI-written software assurance evidence.

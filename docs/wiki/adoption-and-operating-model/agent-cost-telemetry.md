@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) and [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) add governed-pipeline and attribution-gap evidence. Cost telemetry should show token and tool totals by execution, agent, pipeline, local model route, IDE or plugin version, telemetry coverage, and accepted outcome; missing or non-backfilled vendor metrics should be recorded as coverage gaps rather than treated as zero usage.
+
 Agent cost telemetry tracks model and tool consumption at the workflow level so teams can decide whether an agent loop is useful, wasteful, or mis-scoped. The local pattern is to measure cost by run, step, model, tool loop, subagent fan-out, context growth, and outcome instead of treating a monthly spend cap as the only control.
 
 The [tokenomics source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) argues that coding-agent spend should be traced by session, step, model, and outcome, and that more token use does not automatically mean better engineering results. Broad vendor, product, and company coverage belongs upstream; this page owns the local operating-model implication.
@@ -226,6 +228,9 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 25 topic news collector source for September 26 collection](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
@@ -322,6 +327,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with governed-pipeline cost totals, local-model route, client-version, telemetry-coverage, and attribution-gap evidence.
 - Maintained on 2026-09-29 with eval-workflow orchestration, model-judge, retry, report, hillclimb, benchmark-cost, and efficiency-metric evidence.
 - Maintained on 2026-10-07 with local-model route, client-version metric gap, telemetry caveat, and shifted verification-burden evidence.
 - Maintained on 2026-09-20 with acceptance-cost, reviewer-correction-time, retry, incident, rework, and cost-per-accepted-suggestion evidence.

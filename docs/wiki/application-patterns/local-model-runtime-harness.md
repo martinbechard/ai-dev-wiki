@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds local-model discovery evidence. Local model availability in a coding-agent CLI is not proof of offline or private operation; the harness should record the local runtime, explicit model-add or use confirmation, provider fallback, telemetry setting, network boundary, and whether remote service traffic remains possible.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds local agent runtime evidence from a Windows RTX-bound local agent. Local harness decisions should include hardware floors, local model downloads, local MCP server access, scheduled-task behavior, cloud-access toggles, subscription prerequisites, and permission boundaries between local and cloud execution.
 
 Local model operation is a harness design question, not only a model-selection question. The harness must decide how local inference affects latency, memory, privacy, tool-call reliability, session continuity, validation, and visible runtime health.
@@ -57,6 +59,8 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [Local model operations source](../../../raw/processed/link-aliases/local-model-operations.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -96,6 +100,7 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with local-model discovery, explicit confirmation, provider fallback, telemetry, network-boundary, and offline-claim evidence.
 - Maintained on 2026-09-19 with local-agent hardware floor, local MCP, scheduled-task, optional-cloud, and runtime-prerequisite evidence.
 - Maintained on 2026-08-29 with model-harness and workspace-layer boundaries for memory, cost, routing, parallel sessions, and reviewable commits.
 - Created on 2026-06-23 from the local model operations source and local verification guidance for representative calibration.

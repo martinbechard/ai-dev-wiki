@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds Plugin4Shell and release-retention signals for runtime updater integrity. Runtime and plugin updaters should treat auto-update channels, retained old releases, requested refs, resolved commits, and installer claims as separate evidence fields, and should stop rather than silently proceeding when primary advisory or repository evidence has not confirmed a security claim.
+
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds managed-provider and network-switch evidence from upstream-owned coding-agent release notes. Runtime updater checks should treat provider allowlists, web-fetch-disable switches, artifact allow rules, login-refresh locking, and secret-redaction fixes as update-risk inputs because they can silently change which services an agent may call and what credentials might appear in logs.
 
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds plugin-checkout integrity evidence. Runtime updaters and plugin installers should not treat a requested ref, tag, or recorded SHA as final proof; after checkout they should compare the resolved HEAD commit object to the intended pinned SHA and fail closed when they differ.
@@ -38,6 +40,8 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 - Separate official release freshness, locally checked version, permission envelope, and benchmark evidence in runtime selection or updater ledgers.
 
 ## Authoritative Sources
+
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -75,6 +79,7 @@ The August 25 raw sources add deprecation and version-freshness evidence. The [e
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with Plugin4Shell routing, auto-update, old-release-retention, primary-advisory, requested-ref, and resolved-commit evidence.
 - Maintained on 2026-10-02 with provider allowlist, web-fetch disablement, artifact allow-rule, login-refresh-lock, and secret-redaction update evidence.
 - Maintained on 2026-09-25 with post-checkout pinned-SHA verification evidence.
 

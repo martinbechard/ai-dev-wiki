@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds office-desktop fleet practice evidence. Terminal-native fleet orchestration should preserve per-task workspace assignment, Docker or VM sandbox boundary, egress policy, mock-service and dummy-data setup, browser verification artifacts, preview URL, human plan review, and code-review owner before treating desktop-hosted agent work as fleet-ready.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds multi-agent cleanup evidence. Fleet orchestration for repository-scale cleanup should record the metadata lookup source, engineer approval point, assigned worktree, worker timeout, validation commands, coverage result, static-analysis result, pull-request handoff, and any deterministic-tool alternative that could reduce LLM autonomy.
 
 Terminal-native agent fleet orchestration coordinates multiple coding-agent sessions through terminals, worktrees, task ledgers, and review handoffs. It differs from a framework CLI that only scaffolds, serves, evaluates, or deploys a multi-agent application whose topology lives in code.
@@ -59,6 +61,8 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [CLI multi-agent orchestration research source](../../../raw/processed/project-wiki-research-2026-08-05-cli-multi-agent-orchestration.md)
 - [GitHub Copilot stacked sessions clipping](../../../raw/processed/github-copilot-stacked-sessions-and-pull-requests.md)
 - [subagent coordination](subagent-coordination.md)
@@ -106,6 +110,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with office-desktop fleet, per-task workspace, sandbox, egress, mock-service, browser-evidence, preview, and human-review evidence.
 - Maintained on 2026-09-19 with feature-flag cleanup fleet evidence for metadata lookup, approval point, worktree assignment, timeout, validation, static analysis, coverage, PR handoff, and deterministic-tool comparison.
 - Maintained on 2026-09-22 with CLI customization telemetry, model eligibility, usage-billing, and surface-specific availability evidence.
 - Maintained on 2026-10-07 with editor-native multi-folder, remote-delegation, shared-worktree, model-orchestration, portable-MCP, and enterprise-default fleet-selection evidence.

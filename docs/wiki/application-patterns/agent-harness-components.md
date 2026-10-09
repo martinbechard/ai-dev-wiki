@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds current harness-architecture evidence from public practice sources. Locally, harness component inventories should include the execution loop, tools, memory or context layer, permissions, identity, approvals, observability, durable state, sandboxing, and audit trails as separately owned runtime surfaces instead of treating model quality as the only implementation variable.
+
 The September 27 topic news collector source adds a concise agent-harness definition and current control-plane vocabulary. Current public practice describes the harness as the loop that runs tool execution, context and memory, permissions or sandboxing, IDE or terminal integration, handoffs, replay, audit logs, and evidence records; locally, those remain harness components only when they are inspectable runtime surfaces rather than hidden product claims.
 
 The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) adds per-action monitor evidence. A harness-level action monitor should inspect proposed actions before execution, block or queue actions above threshold for human review, fail closed on monitor errors, and record coverage limits such as images, unsupported runtime versions, centralized inference logs, and evasion risks.
@@ -165,6 +167,8 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -262,6 +266,7 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with harness component, ownership, approval, observability, durable-memory, and sandboxing evidence from the October 8 leaf update watch.
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, human-review queue, coverage-limit, and evasion-risk harness evidence.
 - Maintained on 2026-09-27 with harness-loop, tool execution, context, memory, permission, sandbox, handoff, replay, audit-log, and evidence-record component signals.
 - Maintained on 2026-09-25 with managed-runtime state, checkpoint, approval-policy, and security-taskflow evidence.

@@ -9,6 +9,8 @@ tags: ["prompt-and-instructions"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds spec-driven coding comparison evidence. Executable PRDs should distinguish vibe, agentic, and spec-driven coding inputs by how much intent, constraints, acceptance criteria, and verification evidence are explicit before the agent starts implementation.
+
 Executable PRD templates are product specifications written so coding agents can use them as controlled implementation inputs. The [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json) records a routing source about PRD templates, and the primary [Product Map PRD guardrails source](https://www.productmap.io/blog/prd-for-ai-agent-guardrails) supports the core boundary that agent-facing PRDs need permissions, approval gates, logging, escalation, and eval-style done criteria. Broad product and coding-agent background stays upstream; locally, the practice is to review PRD templates as prompt and instruction artifacts when agents load them.
 
 An executable PRD should not only describe desired product behavior. It should state:
@@ -52,6 +54,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
@@ -93,6 +97,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with vibe, agentic, and spec-driven coding boundaries for intent, constraints, acceptance criteria, and verification evidence.
 - Maintained on 2026-09-05 with living-spec drift checks, requirement/design/task breakdown, official platform context, CLI/MCP routing, environment separation, audit, permissions, and reversible-version evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about PRD templates as executable agent inputs.
 - Maintained on 2026-07-30 with PRD-to-code-review-to-deployment workflow chaining for AI-native build instruction.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds RAG optimizer and benchmark-catalog evidence. Performance gates should treat retrieval configuration, chunking, embedding, reranking, generation route, benchmark category, token cost, latency, and accepted task quality as one experiment record before accepting an optimization claim.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds agent-optimization and review-toil evidence. Performance or cost improvements from agent workflow changes should start with a baseline, change one variable per round, and accept savings only after quality checks; survey or simulation numbers should be treated as adoption signals, not production benchmarks.
 
 Agent-assisted performance optimization gates keep speedup work tied to correctness, baselines, representative workloads, and approval. Optimization agents can propose patches, compiler flags, cache changes, dependency changes, or build-system edits quickly, but the accepted result is the verified improvement under the workflow a developer or system actually uses.
@@ -53,6 +55,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
 - [July 10 topic news collector source](../../../raw/processed/2026-07-10/ai-dev-wiki-topic-news-collector-2026-07-10T203059-0400.json)
@@ -92,6 +96,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with RAG optimizer, benchmark-category, token-cost, latency, and accepted-quality evidence.
 - Maintained on 2026-09-25 with agent optimization baseline, one-variable iteration, quality gate, and review-toil evidence.
 
 - Created on 2026-07-17 from public raw artifacts about build-performance agents, profiling workflows, baseline selection, incremental-build measurement, rollback rules, and approval gates.

@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds weekly review and review-stack evidence. Multi-reviewer practice should separate automated findings, weekly human review rituals, source review statistics, sensitive-code boundaries, and final acceptance so review volume does not become a proxy for review quality.
+
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds multi-model audit and review-toil evidence. Multi-reviewer AI code review only improves review quality when independent model or role findings are deduplicated, synthesized, and measured for human actionability; otherwise the second reviewer can double noise, reviewer correction time, and compliance review load.
 
 Multi-reviewer AI code review uses distinct reviewer roles or debate phases while preserving synthesis evidence and human merge authority. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) records Open Code Review-style multi-agent pull-request review as a local practice signal. Broad project, license, or product background stays upstream-owned until primary project evidence is separately captured; locally, the durable pattern is role separation plus reviewable synthesis, not a claim about one product.
@@ -37,6 +39,8 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Route reusable role taxonomies through [layered AI code review roles](layered-ai-code-review-roles.md) and evaluation criteria through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
+
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 
@@ -70,6 +74,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with automated-finding, weekly-review, source-statistic, sensitive-code-boundary, and human-acceptance evidence.
 - Maintained on 2026-09-25 with multi-model audit, deduplication, actionability, and review-toil evidence.
 - Maintained on 2026-10-03 with adversarial reviewer, critic, evidence-backed disagreement, retraction, convergence, budget, and writable-scope evidence.
 

@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds office-desktop coding-agent and stacked-PR evidence. Persistent workspaces should record repository-stored guides, prompts and skills, per-task git workspaces, sandboxed execution, egress rules, mock services, dummy data, browser verification evidence, preview URLs, and stack position when humans review work across multiple dependent changes.
+
 Persistent agent workspaces preserve enough state for coding-agent work that spans multiple prompts, sessions, or branches. The local pattern is to keep goals, plan state, active files, verification evidence, unresolved blockers, and handoff notes in durable project surfaces instead of relying on a single chat transcript.
 
 The [Codex-maxxing source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) frames long-running Codex work around preserved context, verifiable steps, continuity across workstreams, and human oversight boundaries. Broad Codex product coverage belongs to the upstream AI wiki; this page owns the local workflow practice for any persistent coding-agent workspace.
@@ -92,6 +94,8 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -148,6 +152,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with repository-guide, prompt, skill, task-workspace, sandbox, egress, mock-service, browser-evidence, preview-URL, and stack-position evidence.
 - Maintained on 2026-09-29 with reusable cloud-environment, shared-setting, permission, secret, worktree, session-resume, review-surface, and security-scan evidence.
 - Maintained on 2026-10-07 with shared worktree folders, ignored-folder reuse, trusted roots, managed AI defaults, and enterprise version requirement evidence.
 - Maintained on 2026-09-05 with customer-controlled worker, sandbox, repository/cache/secret locality, cloud-environment comparison, and rebuildable-workspace evidence.

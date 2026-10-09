@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds harness-governance evidence for ownership rosters. A roster should name who owns agent identity, tool permissions, approval gates, audit trails, durable memory, sandbox policy, incident response, and cost accountability when those responsibilities are split across platform, security, engineering, and workflow owners.
+
 The October 2 raw sources add dashboard and survey signals for operating ownership. The [topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) records agent sessions, issues, and pull requests moving into developer dashboards, while the [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) records a source-attributed survey where audit-trail availability lagged reported policy violations. Locally, rosters should connect active agent queues, issue assignment, owner accountability, audit-trail readiness, and incident response rather than treating dashboard visibility as ownership.
 
 The September 25 raw sources add ownership-roster fields for production agents and planning-system sessions. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces accountable identity, runtime controls, budget limits, escalation paths, containment, and workstation controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds lead-team ownership, durable work IDs, setup-time secrets, model availability controls, OAuth revocation audit entries, and comment-follow-up routing as roster fields.
@@ -83,6 +85,8 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -131,6 +135,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with harness-governance ownership fields from the October 8 leaf update watch.
 - Maintained on 2026-10-02 with dashboard queue, issue-assignment, audit-trail readiness, and incident-ownership roster evidence.
 - Maintained on 2026-09-25 with ownership, durable-ID, budget, escalation, setup-secret, model-availability, revocation-audit, and comment-routing evidence.
 

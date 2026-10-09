@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds retrieval-pipeline and benchmark-catalog evidence. Agent eval failure diagnosis should map failures to the pipeline or benchmark dimension they actually exercise, such as retrieval versus generation, tool use, browser or computer use, code review, ML workflow, cost, latency, safety, or repeated-run reliability.
+
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds practitioner evidence for eval-failure follow-up. Diagnosis should read traces, compare runs, replay failures, inspect tool arguments and state, add targeted logs, and treat comparison runs as evidence rather than ground truth before changing prompts, tools, models, or performance gates.
 
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds RAG absence and production-observability evidence. Agent eval diagnosis should test whether retrieval systems abstain when evidence is absent, not only whether they answer when evidence is present, and should join completed-task evaluation with traceable tool authorization, reliability, cost, latency, and quality signals.
@@ -48,6 +50,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Authoritative Sources
 
+- [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -82,6 +86,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-09 with retrieval-pipeline, benchmark-category, tool-use, code-review, ML-workflow, cost, latency, safety, and reliability diagnosis evidence.
 - Maintained on 2026-10-02 with trace reading, run comparison, replay, tool-argument inspection, targeted logging, and comparison-run caveats.
 - Maintained on 2026-10-06 with first-divergence tracing, code-boundary inspection, and repeated-failure dataset evidence.
 - Maintained on 2026-09-25 with knowledge-gap canary, abstention, observability, and completed-task evaluation evidence.
