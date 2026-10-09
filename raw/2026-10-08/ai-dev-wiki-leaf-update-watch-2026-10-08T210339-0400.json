@@ -1,0 +1,347 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "counts": {
+    "excluded_candidate_count": 12,
+    "qualifying_update_count": 7,
+    "selected_leaf_count": 15,
+    "source_url_count": 16
+  },
+  "cutoff_window": {
+    "end_utc": "2026-10-09T01:03:39Z",
+    "rule": "visible publication or update date within the last 7 days; ambiguous, missing, future, and boundary-only dates excluded",
+    "start_utc": "2026-10-02T01:03:39Z"
+  },
+  "excluded_candidates": [
+    {
+      "reason": "No visible publication or update date in fetched page despite current-looking content; checked for repository-configured AI code review.",
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review"
+    },
+    {
+      "reason": "No visible publication or update date in fetched page; content is relevant but date qualification failed.",
+      "source_url": "https://docs.github.com/en/copilot/concepts/agents/code-review"
+    },
+    {
+      "reason": "Repository page content was relevant to multi-reviewer AI code review, but fetched page did not expose a stable visible publication/update date.",
+      "source_url": "https://github.com/tufantunc/review-pro"
+    },
+    {
+      "reason": "Relevant official plugin packaging docs, but fetched page did not expose a visible publication/update date.",
+      "source_url": "https://developers.openai.com/plugins/build/plugins"
+    },
+    {
+      "reason": "Specification is relevant and public, but fetched page showed version/status rather than a visible in-window publication/update date.",
+      "source_url": "https://agent-plugins.org/specification"
+    },
+    {
+      "reason": "Community discussion was relevant to cost telemetry, but fetched page did not expose a stable absolute date and the evidence is anecdotal.",
+      "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1wwlwys/how_do_you_track_cost_and_outcome_across_parallel/"
+    },
+    {
+      "reason": "Relevant to session recovery, but the visible thread date in search/open evidence was outside or ambiguous for the current seven-day window.",
+      "source_url": "https://www.reddit.com/r/AI_Agents/comments/1v8r9f7/what_should_persist_between-codingagent-sessions/"
+    },
+    {
+      "reason": "Relevant to ownership rosters, but page fetch did not expose the absolute publication date needed for strict inclusion.",
+      "source_url": "https://www.reddit.com/r/CIO/comments/1wuynkh/who_owns_an_ai_agent_six_months_after_the_person/"
+    },
+    {
+      "reason": "Weekly summary had an in-window range and relevant signals, but it is an aggregator; use only as discovery unless primary sources are verified.",
+      "source_url": "https://www.aiagentstore.ai/ai-agent-news/topic/coding"
+    },
+    {
+      "reason": "Submitted 01 Oct 2026; outside the strict cutoff for this run and date-only near-boundary evidence is insufficient.",
+      "source_url": "https://www.alphaxiv.org/abs/2610.01618"
+    },
+    {
+      "reason": "Leaf-cited source but July 2026, outside the current seven-day window.",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/"
+    },
+    {
+      "reason": "Leaf-cited source but outside the current seven-day window.",
+      "source_url": "https://aws.amazon.com/blogs/mt/analyzing-claude-code-usage-with-cloudwatch-and-opentelemetry/"
+    }
+  ],
+  "federation_notes": [
+    "Broad product, model, framework, MCP, benchmark, and vendor background is upstream-owned by the AI wiki. This artifact preserves only downstream local-practice implications for the selected ai-dev-wiki leaves."
+  ],
+  "follow_up_notes": [
+    "During normal ingest, verify Plugin4Shell claims against primary Codex/OpenAI or repository advisory sources before durable synthesis.",
+    "Treat Reddit-only findings as community signals unless a maintainer issue, release note, or primary documentation confirms them.",
+    "No docs/wiki pages were updated by this watch."
+  ],
+  "leaf_universe_count": 105,
+  "qualifying_updates": [
+    {
+      "factual_summary": "Alation published an agent-harness architecture article that frames a production harness as the execution loop, tool definitions, context management, identity/authentication, approval gates, observability, durable memory, and sandboxing around the model. It also stresses that enterprise ownership of identity, safety controls, and audit trails must be mapped explicitly.",
+      "id": "alation-agent-harness-components-governance-2026-10-06",
+      "local_practice_implication": "Ingest should preserve only the downstream practice lens: component ownership, approval/audit placement, and context-layer boundaries.",
+      "named_entities": [
+        "Alation",
+        "AI agent harness",
+        "ReAct",
+        "Claude",
+        "GPT",
+        "Gemini",
+        "Llama",
+        "LangGraph",
+        "CrewAI",
+        "AutoGen",
+        "Semantic Kernel",
+        "Pydantic AI",
+        "Claude Code",
+        "Codex",
+        "Microsoft Agent Framework",
+        "Pydantic AI Harness"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/context-architecture/thin-context-router.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md"
+      ],
+      "source_url": "https://www.alation.com/blog/what-is-ai-agent-harness/",
+      "upstream_owned_entities": [
+        "Claude",
+        "GPT",
+        "Gemini",
+        "Llama",
+        "LangGraph",
+        "CrewAI",
+        "AutoGen",
+        "Semantic Kernel",
+        "Pydantic AI",
+        "Claude Code",
+        "Codex",
+        "Microsoft Agent Framework"
+      ],
+      "visible_date": "Published: October 6, 2026",
+      "why_it_matters_for_leaf": "Supports local leaves that treat harness architecture, context routing, ownership rosters, and governance infrastructure as operating boundaries rather than product encyclopedia entries."
+    },
+    {
+      "factual_summary": "Codearia published a source-study article summarizing harness engineering across 11 coding agents and describing the harness as the loop, tools, memory, permissions, and extension layer that surrounds a coding model.",
+      "id": "codearia-harness-engineering-source-study-2026-10-06",
+      "local_practice_implication": "Use as evidence for pattern extraction only; product/background details belong upstream.",
+      "named_entities": [
+        "Codearia Academy",
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI",
+        "Mistral Vibe",
+        "OpenHands",
+        "Aider",
+        "Mini-SWE-Agent",
+        "Hermes",
+        "Pi",
+        "OpenCode",
+        "OpenClaw"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/application-patterns/agent-harness-components.md",
+        "docs/wiki/context-architecture/thin-context-router.md"
+      ],
+      "source_url": "https://academy.codearia.com/en/articles/harness-engineering-coding-agents-source-study",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "Gemini CLI",
+        "Mistral Vibe",
+        "OpenHands",
+        "Aider",
+        "Mini-SWE-Agent",
+        "Hermes",
+        "Pi",
+        "OpenCode",
+        "OpenClaw"
+      ],
+      "visible_date": "October 6, 2026",
+      "why_it_matters_for_leaf": "Gives the local harness-components and context-router leaves a recent public source about recurring subsystems and the boundary between model capability and surrounding runtime design."
+    },
+    {
+      "factual_summary": "Harness updated its Autonomous Worker Agents article with production controls: agents run as pipeline steps, inherit OPA/RBAC/approval gates, execute on customer-controlled infrastructure, use scoped ephemeral tokens, capture audit trails, strip secrets/PII before persistence, and surface token/cost totals per execution, agent, and pipeline.",
+      "id": "harness-autonomous-worker-agents-governed-pipelines-2026-10-06",
+      "local_practice_implication": "Local ingest should focus on the operating pattern: pipeline-scoped agents, credential intersection, cost display, audit evidence, and gated remediation.",
+      "named_entities": [
+        "Harness",
+        "Autonomous Worker Agents",
+        "Harness MCP",
+        "OPA",
+        "RBAC",
+        "Harness Delegates",
+        "RiskSentinel",
+        "United Airlines"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_url": "https://www.harness.io/blog/introducing-autonomous-worker-agents",
+      "upstream_owned_entities": [
+        "Harness",
+        "Harness MCP",
+        "OPA",
+        "RBAC"
+      ],
+      "visible_date": "Published: June 30, 2026; Last updated: 2026-10-06",
+      "why_it_matters_for_leaf": "This is a direct local-practice signal for governed agent pipelines, cost telemetry, scoped credentials, approval evidence, audit trails, and production validation gates."
+    },
+    {
+      "factual_summary": "A new arXiv paper introduced Agentic AutoRAG, an LLM-agent optimizer for RAG hyperparameters that diagnoses whether failed answers arose during retrieval or generation, then proposes cost-aware pipeline configurations across chunking, embedding, reranking, and generation choices.",
+      "id": "agentic-autorag-retrieval-failure-attribution-2026-10-06",
+      "local_practice_implication": "Local pages can use this as evidence for provenance-aware ranking/chunking and eval failure diagnosis; algorithm background belongs upstream if a broad RAG leaf owns it.",
+      "named_entities": [
+        "Agentic AutoRAG",
+        "RAG",
+        "Lasse B. Strand",
+        "Robert Jakob",
+        "Kevin O'Sullivan",
+        "Markus Kreft"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md"
+      ],
+      "source_url": "https://arxiv.org/abs/2610.08452",
+      "upstream_owned_entities": [
+        "RAG"
+      ],
+      "visible_date": "Date: Tue Oct 6 14:38:15 2026",
+      "why_it_matters_for_leaf": "It gives current public evidence for treating RAG tuning and agent evaluation as failure-attribution problems rather than single aggregate-score comparisons."
+    },
+    {
+      "factual_summary": "BenchLM published an October 2026 agent benchmark catalog that tracks 27 agent/tool-use benchmarks and separates categories such as agent frameworks, computer/browser use, and specialized tasks including code review and ML workflows.",
+      "id": "benchlm-agent-benchmark-catalog-verified-2026-10-08",
+      "local_practice_implication": "Use for benchmark-routing and gate-selection guidance only; model/provider rankings are upstream-owned.",
+      "named_entities": [
+        "BenchLM",
+        "Atria Dawn Preview",
+        "Terminal-Bench 2.0",
+        "OSWorld-Verified",
+        "BrowseComp",
+        "ReviewBench",
+        "MLE-Bench Lite",
+        "SWE-Atlas Refactoring",
+        "OpenHands Index"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+      ],
+      "source_url": "https://benchlm.ai/llm-agent-benchmarks",
+      "upstream_owned_entities": [
+        "Atria Dawn Preview",
+        "Terminal-Bench 2.0",
+        "OSWorld-Verified",
+        "BrowseComp",
+        "ReviewBench",
+        "MLE-Bench Lite",
+        "SWE-Atlas Refactoring",
+        "OpenHands Index"
+      ],
+      "visible_date": "Benchmark data verified October 8, 2026",
+      "why_it_matters_for_leaf": "Supports a local eval practice note that benchmark selection is now multi-category and should be matched to the workflow being gated, not treated as a generic agent score."
+    },
+    {
+      "factual_summary": "A Codex-focused knowledge-base article updated on October 8 describes a claimed Plugin4Shell auto-update risk in which marketplace plugin ref resolution could substitute a branch for a pinned commit. It recommends upgrading, disabling plugin auto-update in CI, auditing non-GitHub plugin origins, allowlisting plugin origins, and using pre-session integrity checks against known-good manifests.",
+      "id": "plugin4shell-codex-plugin-auto-update-integrity-2026-10-08",
+      "local_practice_implication": "Record as a follow-up for primary-source verification; the local lens is update integrity, origin policy, and pre-flight manifest evidence.",
+      "named_entities": [
+        "Codex CLI",
+        "Plugin4Shell",
+        "Git",
+        "Bitbucket",
+        "Gitea",
+        "GitLab Community Edition",
+        "GitHub",
+        "AGENTS.md"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+        "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "source_url": "https://codex.danielvaughan.com/2026/09/21/plugin4shell-zero-click-supply-chain-exploit-codex-cli/",
+      "upstream_owned_entities": [
+        "Codex CLI",
+        "Git",
+        "Bitbucket",
+        "Gitea",
+        "GitLab Community Edition",
+        "GitHub"
+      ],
+      "visible_date": "Updated October 8, 2026",
+      "why_it_matters_for_leaf": "Materially relevant to runtime updater integrity and plugin governance, but should be verified against primary Codex/open-source advisory sources before durable wiki synthesis."
+    },
+    {
+      "factual_summary": "A public Reddit bug report says a Codex CLI standalone update from 0.160.1 to 0.161.0 left the previous release directory on disk and asks for automatic cleanup or a documented retention policy.",
+      "id": "reddit-codex-cli-old-release-retention-2026-10-08",
+      "local_practice_implication": "Treat as a community signal only; require maintainer issue/release-note confirmation before durable guidance.",
+      "named_entities": [
+        "Codex CLI",
+        "Reddit"
+      ],
+      "selected_leaf_ids": [
+        "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+      ],
+      "source_url": "https://www.reddit.com/r/codex/comments/1x0kurc/codex_cli_updates_leave_old_installations_behind/",
+      "upstream_owned_entities": [
+        "Codex CLI"
+      ],
+      "visible_date": "Reddit page showed 13m ago during fetch on 2026-10-09T01:03Z",
+      "why_it_matters_for_leaf": "Anecdotal but relevant to updater lifecycle expectations, storage retention, and cleanup documentation for coding-agent runtimes."
+    }
+  ],
+  "run_timestamp_local": "2026-10-08T21:03:39-0400",
+  "run_timestamp_utc": "2026-10-09T01:03:39Z",
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+  ],
+  "source_urls_checked": [
+    "https://www.alation.com/blog/what-is-ai-agent-harness/",
+    "https://academy.codearia.com/en/articles/harness-engineering-coding-agents-source-study",
+    "https://www.harness.io/blog/introducing-autonomous-worker-agents",
+    "https://arxiv.org/abs/2610.08452",
+    "https://benchlm.ai/llm-agent-benchmarks",
+    "https://codex.danielvaughan.com/2026/09/21/plugin4shell-zero-click-supply-chain-exploit-codex-cli/",
+    "https://www.reddit.com/r/codex/comments/1x0kurc/codex_cli_updates_leave_old_installations_behind/",
+    "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review",
+    "https://docs.github.com/en/copilot/concepts/agents/code-review",
+    "https://github.com/tufantunc/review-pro",
+    "https://developers.openai.com/plugins/build/plugins",
+    "https://agent-plugins.org/specification",
+    "https://www.reddit.com/r/ClaudeAI/comments/1wwlwys/how_do_you_track_cost_and_outcome_across_parallel/",
+    "https://www.reddit.com/r/AI_Agents/comments/1v8r9f7/what_should_persist_between_codingagent_sessions/",
+    "https://www.reddit.com/r/CIO/comments/1wuynkh/who_owns_an_ai_agent_six_months_after_the_person/",
+    "https://www.aiagentstore.ai/ai-agent-news/topic/coding"
+  ]
+}
