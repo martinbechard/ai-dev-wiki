@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds cost-aware eval evidence for vulnerability-discovery agents. Cost telemetry should report success, token spend, auxiliary-model spend, trace evidence, and matched-pair efficiency separately so a cheaper workflow is not mistaken for a more capable workflow, and so hidden helper-model spend does not disappear from adoption decisions.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) and [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) add governed-pipeline and attribution-gap evidence. Cost telemetry should show token and tool totals by execution, agent, pipeline, local model route, IDE or plugin version, telemetry coverage, and accepted outcome; missing or non-backfilled vendor metrics should be recorded as coverage gaps rather than treated as zero usage.
 
 Agent cost telemetry tracks model and tool consumption at the workflow level so teams can decide whether an agent loop is useful, wasteful, or mis-scoped. The local pattern is to measure cost by run, step, model, tool loop, subagent fan-out, context growth, and outcome instead of treating a monthly spend cap as the only control.
@@ -228,6 +230,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
@@ -327,6 +330,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with vulnerability-agent eval, success-versus-efficiency, token-spend, auxiliary-model-spend, trace-evidence, and matched-pair cost attribution.
 - Maintained on 2026-10-09 with governed-pipeline cost totals, local-model route, client-version, telemetry-coverage, and attribution-gap evidence.
 - Maintained on 2026-09-29 with eval-workflow orchestration, model-judge, retry, report, hillclimb, benchmark-cost, and efficiency-metric evidence.
 - Maintained on 2026-10-07 with local-model route, client-version metric gap, telemetry caveat, and shifted verification-burden evidence.

@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds AI-decision checkpoint evidence. Declarative workflow artifacts should record candidate AI subprocesses, expected effects on time, cost, quality, and flexibility, legal or organizational constraints, and an explicit adopt, constrain, or reject decision before an agent becomes part of an operational process.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds agentic workflow explanation evidence. Declarative workflow artifacts should identify trigger, allowed action, human approval point, state transition, rollback, audit record, and external-system boundary before an agentic workflow can run as a reusable development process.
 
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds code-defined dynamic workflow evidence from upstream-owned GitHub Copilot surfaces. Locally, reusable agent workflows should treat staged steps, parallel lanes, structured handoffs, verification checkpoints, optional user input, and pause/resume points as reviewable workflow contract fields instead of burying those controls in one-off prompts.
@@ -56,6 +58,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Authoritative Sources
 
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
@@ -96,6 +99,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with AI-decision checkpoint, candidate-subprocess, time/cost/quality/flexibility, legal-constraint, and adopt/constrain/reject decision evidence.
 - Maintained on 2026-10-09 with trigger, allowed-action, approval, state-transition, rollback, audit-record, and external-boundary evidence.
 - Maintained on 2026-10-02 with code-defined dynamic workflow, structured handoff, verification checkpoint, user-input, and pause/resume evidence.
 - Maintained on 2026-10-03 with commands, tools, services, subagent-verification, structured-result, checkpoint, resume, and permission-boundary evidence.

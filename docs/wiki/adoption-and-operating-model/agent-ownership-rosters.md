@@ -135,7 +135,7 @@ The September 18 [leaf update watch source](../../../raw/processed/2026-09-18/ai
 
 ## Maintenance Notes
 
-- Maintained on 2026-10-09 with harness-governance ownership fields from the October 8 leaf update watch.
+- Maintained on 2026-10-09 with harness-governance ownership fields from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-10-02 with dashboard queue, issue-assignment, audit-trail readiness, and incident-ownership roster evidence.
 - Maintained on 2026-09-25 with ownership, durable-ID, budget, escalation, setup-secret, model-availability, revocation-audit, and comment-routing evidence.
 

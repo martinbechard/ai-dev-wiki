@@ -59,6 +59,6 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 ## Maintenance Notes
 
-- Maintained on 2026-10-09 with harness-context routing evidence from the October 8 leaf update watch.
+- Maintained on 2026-10-09 with harness-context routing evidence from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Created on 2026-06-23 from the folder organization source note covering the root router file and task-specific guidance routing.
 - Maintained on 2026-08-26 with model-handoff routing guidance for durable state, source evidence, verification evidence, and intentionally preserved or excluded context.

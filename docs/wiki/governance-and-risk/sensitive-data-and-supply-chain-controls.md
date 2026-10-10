@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds package-incident and agent-session telemetry evidence. Agent-run dependency updates, `npm`/`npx` commands, package installs, and tool calls should be treated as auditable supply-chain actions; endpoint logs may miss agent-session context, so session telemetry needs to preserve commands, tool calls, package names, and decision records for incident response.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds secret-detection model and review-stack evidence. Agents should not enable credit-consuming secret checks, change administrator policy, apply security fixes, or process sensitive code through external review stacks without explicit authorization, budget ownership, privacy boundary review, and human security acceptance.
 
 Sensitive data and supply-chain controls protect prompts, raw artifacts, tools, dependencies, models, and third-party source material. The local rule is to keep secrets, credentials, PII, company-internal content, proprietary source, and license-sensitive material out of prompts and public raw artifacts unless the human explicitly approves that use.
@@ -178,6 +180,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
@@ -274,6 +277,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with agent-run dependency update, package-install telemetry, npm/npx command, endpoint-logging gap, and agent-session incident-response evidence.
 - Maintained on 2026-10-09 with secret-detection authorization, credit-budget, administrator-policy, sensitive-code, privacy-boundary, and human-security-acceptance evidence.
 - Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.
 - Maintained on 2026-10-05 with token-format drift, managed-plugin, browser/computer-use, remote-CLI MCP, upload/download, debug-access, and sandbox-policy evidence.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds review-bottleneck and reward-hacking evidence. Acceptance gates should measure review process time, change-request rates, comment load, and human accountability alongside generated-code volume, and should treat green tests as incomplete evidence when agent-written code can overfit, weaken, or tamper with the test surface. Protected tests, mutation testing, independent acceptance checks, and intent review are risk-scaled gates rather than optional polish.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds spec-driven coding and audit-trail evidence. Acceptance gates should treat vague intent, agent-generated implementation, explicit specification, review trail, security check, and audit record as different evidence levels; passing generated tests alone is not enough when the source requirement or trust record is weak.
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds AI-generated-code verification bottleneck evidence. Acceptance gates should account for review cognitive load, traceability from AI activity to code changes, standards-aware review, and deterministic verification capacity instead of assuming context-rich generation removes the need for scaled validation.
@@ -114,6 +116,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -179,6 +182,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with review-bottleneck, generated-code throughput, reward-hacking, protected-test, mutation-testing, and intent-review evidence.
 - Maintained on 2026-10-09 with spec-driven coding, review-trail, security-check, audit-record, and generated-test evidence-level boundaries.
 - Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
 - Maintained on 2026-10-01 with done-claim verification, session-history review, final-code checks, mutable-trace risk, tamper-resistant evidence, and read-only critic workflow evidence.

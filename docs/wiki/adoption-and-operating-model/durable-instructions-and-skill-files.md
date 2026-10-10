@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) and [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) add durable-artifact workflow evidence. Research notes, plans, task definitions, reusable skills, and activity logs should be persistent artifacts rather than only live chat state; they should be validated, manually curated where judgment matters, and machine-readable enough for implementation agents to consume without losing acceptance criteria or provenance.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) reinforces the boundary between skill files and tool protocols. Skill files should package readable process knowledge, ownership, review depth, and context-selection guidance; they do not replace MCP or other governed interfaces when the workflow needs standardized access, identity, approval, or audit.
 
 Durable instructions and skill files keep reusable procedure outside the live prompt until an agent needs it. They give the assistant stable role, scope, project rules, references, tool expectations, safety boundaries, and examples without forcing every request to carry every rule.
@@ -114,6 +116,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
@@ -171,6 +175,7 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with durable research, manually curated plan, machine-readable task, task-registry, append-only activity log, and acceptance-criteria evidence.
 - Maintained on 2026-09-19 with skills-versus-MCP, code-ownership, risk-scaled review, and human-readable procedure boundaries.
 - Maintained on 2026-09-25 with MCP skill discovery, shared organization skills, managed custom instructions, learned memory, provenance, and retirement-review evidence.
 - Maintained on 2026-10-04 with model-name dependency drift and stale-instruction review evidence.

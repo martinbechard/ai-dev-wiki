@@ -266,7 +266,7 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 
 ## Maintenance Notes
 
-- Maintained on 2026-10-09 with harness component, ownership, approval, observability, durable-memory, and sandboxing evidence from the October 8 leaf update watch.
+- Maintained on 2026-10-09 with harness component, ownership, approval, observability, durable-memory, and sandboxing evidence from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, human-review queue, coverage-limit, and evasion-risk harness evidence.
 - Maintained on 2026-09-27 with harness-loop, tool execution, context, memory, permission, sandbox, handoff, replay, audit-log, and evidence-record component signals.
 - Maintained on 2026-09-25 with managed-runtime state, checkpoint, approval-policy, and security-taskflow evidence.

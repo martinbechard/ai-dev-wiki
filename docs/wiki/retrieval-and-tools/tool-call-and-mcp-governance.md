@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) and [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) add MCP tool-description, audit, and prompt-injection evidence. Tool descriptions are routing instructions and should include scoped when-to-use language that is evaluated before rollout; tool outputs remain untrusted evidence, especially when read tools can pair with write, exfiltration, or package-install tools. Audit records should join user intent, delegation chain, authorization state, invoked or declined action, exchanged data, outcome, and denial evidence across protocol or administrative boundaries.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds local sandbox and safer-CLI evidence. Tool governance should record whether a tool can reach local MCP servers, credentials, network, language servers, browser state, or filesystem paths before a coding agent uses the tool, and should preserve source-review statistics or safer-mode claims as evidence to verify rather than as automatic approval.
 
 The September 27 topic news collector source adds enterprise MCP checklist and coding-agent configuration evidence. MCP governance should not stop at catalog presence: publisher identity, official support, transport model, authentication path, least-privilege configuration, approval logs, prompt-injection handling, and metadata-size constraints are separate control points before an agent can rely on a server or tool description.
@@ -258,6 +260,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
@@ -378,6 +382,7 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with MCP tool-description routing, prompt-injection, least-privilege, delegation-chain audit, invoked-or-declined action, and cross-boundary traceability evidence.
 - Maintained on 2026-10-09 with local sandbox, MCP reach, credential reach, network reach, language-server, safer-CLI, and source-review claim evidence.
 - Maintained on 2026-10-03 with remote MCP identity-mode, atomic setup, workload admission, grant-evidence, fail-closed denial, and prompt-injection action-freeze evidence.
 - Maintained on 2026-09-29 with managed MCP audit-log, service-filter, permission-category, Data Access, Admin Activity, and read-activity enablement evidence.

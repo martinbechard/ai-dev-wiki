@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds pipeline-governed agent-service and cross-boundary audit evidence. Workflow state should preserve agent-service promotion or rollback state, eval CLI receipts, scriptable review settings, git-backed input sets, delegation-chain context, authorization state, exchanged data, and action outcomes so runtime promotion and incident reconstruction do not depend on one framework log.
+
 The AI process layer is the application tier between user intent and backend systems. It chooses prompts, models, retrieval steps, tools, verifiers, and human gates while preserving workflow state that the model itself does not remember.
 
 Workflow state includes conversation history, selected files, retrieved context, tool results, forks, checkpoints, approvals, failures, and compaction summaries. The process layer controls which state becomes model context, which state remains application state, and which state must be visible to users or auditors.
@@ -79,6 +81,7 @@ The October 3 raw sources add persistent-agent and session-lifecycle evidence. T
 
 ## Authoritative Sources
 
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
@@ -129,6 +132,7 @@ The October 3 raw sources add persistent-agent and session-lifecycle evidence. T
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with agent-service promotion, rollback, eval CLI, scriptable-review, git-backed input-set, delegation-chain, and cross-boundary audit-state evidence.
 - Maintained on 2026-09-04 with budget-policy, model-route, pause-monitor, session-hierarchy, active-root, merge-state, reusable-workflow identity, and checkpoint-state evidence.
 - Maintained on 2026-09-25 with session-flow, model-request, tool-use, telemetry-setting, and content-capture policy evidence.
 - Maintained on 2026-10-03 with background-agent job ownership, session lineage, attention state, PR handoff, environment, cleanup, and cross-app continuation evidence.

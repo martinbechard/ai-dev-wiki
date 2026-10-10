@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds approval, handoff, recovery, and action-checkpoint evidence. Approval should bind to the exact operation, not only to a general goal; recovery should preserve idempotency keys, residual-authority cleanup, handoff packets, out-of-band secret handling, and failure modes such as approval laundering. Pre-action guardrails should be able to return allowed, flagged, or blocked outcomes with auditable decision records.
+
 Human-agent approval boundaries define which work an agent can perform, which work requires review, and which decisions remain human-owned. The local boundary is that humans own goals, tradeoffs, accountability, and final acceptance, while agents can inspect, draft, patch, verify, and report within the approved workflow.
 
 Approval boundaries are both operating practice and governance control. The operating agreement names when a human must decide; [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md) owns the infrastructure controls that enforce permissions, least privilege, audit, and policy.
@@ -137,6 +139,7 @@ The October 2 and 3 raw sources add approval-boundary evidence for harness gates
 
 ## Authoritative Sources
 
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -216,6 +219,7 @@ The October 2 and 3 raw sources add approval-boundary evidence for harness gates
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with exact-operation approval, handoff-packet, idempotency-key, residual-authority, approval-laundering, and allowed/flagged/blocked action-checkpoint evidence.
 - Maintained on 2026-10-03 with unattended-continuation, app-control, acting-identity, delegated-mandate, checkpoint, and return-to-human evidence.
 - Maintained on 2026-09-26 with local sandboxing, assisted approval, proof-of-presence, risk-tiered guardrail, and chat-agent handoff evidence.
 - Maintained on 2026-09-05 with checkpoint-placement, trigger, irreversible-action, and adoption-incentive evidence.

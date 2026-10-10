@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds front-loaded workflow and SDLC-placement evidence. Control-flow selection should decide where agents plug into planning, implementation, verification, review, and deployment before choosing a tool; front-loaded research and human planning reduce compounding implementation errors when later phases run through constrained agents.
+
 Agent control flow selection chooses the outer orchestration pattern before choosing a framework or model. The [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md) distinguishes fixed workflows, iterative tool-using agents, planner-executor designs, and long-horizon harnesses as separate local development choices. Broad [LangGraph](../../../upstream-ai-wiki/agentic-frameworks/langgraph.md), [Deep Agents](../../../upstream-ai-wiki/agentic-frameworks/deep-agents.md), and LangChain stack facts stay upstream-owned.
 
 Fixed workflows fit development tasks whose stages and transitions are known before execution, such as lint, test, approval, release, or checklist-driven validation. Iterative ReAct-style loops fit investigations where the next useful file, tool, or evidence source depends on previous observations. Planner-executor designs fit work where dependencies can be represented up front, while still allowing replanning when execution disproves the plan. Harnessed long-horizon agents fit only when context offloading, file work, delegated subagents, state persistence, and recovery justify the extra control surface.
@@ -42,6 +44,7 @@ The October 3 raw sources add persistent-background and dynamic-workflow signals
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-19T003318Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
@@ -80,6 +83,7 @@ The October 3 raw sources add persistent-background and dynamic-workflow signals
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with front-loaded research, planning constraint, SDLC-placement, and workflow-deployment decision evidence.
 - Maintained on 2026-09-18 with coordinator-worker project orchestration, per-thread branch, shared-memory, and conflict-resolution evidence.
 - Maintained on 2026-09-25 with workspace orchestration, branch-isolated worker, validation, pull-request packaging, and central progress evidence.
 - Maintained on 2026-10-03 with always-on/background-agent, dynamic workflow, checkpoint, subagent-verification, and structured-result control-flow evidence.

@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds harness pipeline evidence for managed agent services. Application harnesses should treat imported agents, eval commands, scriptable review settings, input sets, feature flags, promotion, and rollback as governed pipeline artifacts when they affect deployment or operational readiness.
+
 The harness around the model is where an AI application becomes reliable product software. The harness coordinates user interface, server orchestration, model calls, context assembly, tools, workflow state, validation, progress display, and product output.
 
 The detailed harness patterns live in sibling leaves. The Pattern Leaves section below routes each harness concern to its focused owner.
@@ -86,6 +88,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Authoritative Sources
 
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Local model operations source](../../../raw/processed/This 284B Model Shouldn't Fit On Your Laptop. It Does.md)
@@ -142,6 +145,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with imported-agent-service, eval-command, scriptable-review-setting, input-set, feature-flag, promotion, and rollback pipeline evidence.
 - Created on 2026-06-23 from local source guidance on structured output, drafter patterns, harness software, workflow state, progress, and AI process layers.
 - Updated on 2026-06-23 with local-model harness telemetry, calibration, and workflow-level use-compose-build tradeoffs.
 - Maintained on 2026-06-23 as the overview page for split application harness leaves.

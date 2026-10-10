@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds current delegation-traceability evidence from IETF AUDIT and agent-access practice sources. Delegated-authority records should separate authentication, identity, and authority; preserve who authorized an action, which agent or workload identity acted, how long the authority lasts, which downstream principal or tool was used, and whether the requested action was invoked, declined, or blocked.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds centralized agent-manager evidence. Agent identity should include provider-neutral agent registration, delegated authority, token exchange, role-based access, lifecycle stage, suspension or revocation status, and the human or organization accountable for each active capability.
 
 Agent identity and delegated authority define who or what acted, on whose behalf, with which permission boundary, and under which policy. The local governance rule is to distinguish the human requester, the agent instance, the connector or service account, the tool server, and the external system touched by the action.
@@ -131,6 +133,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Authoritative Sources
 
+- [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -193,6 +196,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with authentication-versus-authority, AUDIT traceability, authority-chain, invoked-or-declined action, and duration-bound delegation evidence.
 - Maintained on 2026-09-21 with credential-inventory export evidence for delegated-authority audits.
 - Maintained on 2026-09-25 with action-time authority, proof-of-presence, IdP challenge, and MCP runtime policy evidence.
 - Maintained on 2026-09-23 with credential inventory, audit-log join, task-record, target-scope, last-use, and revocation evidence.

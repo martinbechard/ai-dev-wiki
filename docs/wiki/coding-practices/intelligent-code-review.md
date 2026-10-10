@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds AI-review governance and human-accountability evidence. Review-agent invocation should record who may request review, whose organization or cost center pays for it, which repository policy permits it, and which human remains accountable for merge decisions. Agent-authored changes should be reviewed from intent and risk outward, with automation used as one evidence layer rather than a replacement for human ownership.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds review-stack and review-UX evidence. AI-generated code review should support overview, zoom or filtering, details-on-demand, risk signals, confidence signals, and source-backed finding evidence; review tools that process entire agent-written branches still need human final authority and explicit privacy boundaries.
 
 The September 27 topic news collector source adds deploy-aware review and agent-handoff evidence. Cursor-style rollout monitors and security-review bots shift part of AI review from pull-request comments toward post-merge or deployment-aware signals, while agent-oriented review comparisons reinforce that findings are more useful when they can hand back into the coding agent under human final judgment instead of becoming dead-end comments.
@@ -239,6 +241,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Authoritative Sources
 
+- [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
@@ -348,6 +351,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-10 with organization-billed AI review, requester authorization, intent-first review, risk routing, and accountable human merge evidence.
 - Maintained on 2026-10-09 with overview, filter, details-on-demand, risk, confidence, source-backed finding, privacy-boundary, and human-authority review evidence.
 - Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, independent-review-loop, architectural-impact, and bounded-rerun evidence.
 - Maintained on 2026-10-05 with agent-PR risk checklist, API-triggered review governance, and large-refactor trace-harness evidence.
