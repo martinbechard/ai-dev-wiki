@@ -1,0 +1,328 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-11T00:34:23Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-09T00:34:23Z",
+    "end_utc": "2026-10-11T00:34:23Z",
+    "policy": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, stale, secondary-only, broad-upstream-only, and lower-boundary date-only candidates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "relationship": "downstream one-way extension of /Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "downstream_owned_scopes": [
+      "AI-assisted development lens",
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ]
+  },
+  "qualifying_updates": [
+    {
+      "title": "GitHub Copilot for JetBrains adds model defaults and MCP startup controls",
+      "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 10, 2026",
+      "local_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows"
+      ],
+      "summary": "GitHub reported that Copilot for JetBrains gained enterprise-managed default model settings, a setting to disable automatic MCP server startup for Copilot and Claude, diagnostic-to-fix actions, clearer account and conversation controls, and reliability fixes across agent sessions, customizations, and worktrees.",
+      "why_it_matters": "Local practice implication: agent instructions should treat default model choice, MCP startup, diagnostic repair actions, and worktree reliability as governed environment configuration rather than ad hoc prompt content.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "MCP",
+        "Claude"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains IDEs",
+        "MCP",
+        "Claude"
+      ],
+      "routing_note": "Do not create local product or MCP encyclopedia coverage; preserve only the downstream governance, instruction, and agent-workflow implications."
+    },
+    {
+      "title": "Octomind compares MCP, CLI, and skills by context cost and capability shape",
+      "url": "https://octomind.run/blog/mcp-vs-cli-vs-skills",
+      "source_type": "engineering blog",
+      "visible_date": "October 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/context-architecture",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "Octomind measured 14 tools across three MCP servers at 7,553 schema tokens before any prompt and argued that CLI commands fit stateless familiar tools, MCP fits stateful tools or credentialed structured results, and skills teach when and how to use those capabilities. The post recommends on-demand capability loading, caps on active capabilities, and measured tool-schema budgets.",
+      "why_it_matters": "Local practice implication: governed tool design should budget context, avoid eager schema loading, keep credentialed/stateful operations behind capability boundaries, and treat skills as activation knowledge rather than a replacement for typed tools.",
+      "named_entities": [
+        "Octomind",
+        "MCP",
+        "CLI",
+        "Skills",
+        "Octofs",
+        "Octocode",
+        "Octobrain",
+        "Scalekit",
+        "Anthropic"
+      ],
+      "upstream_owned_entities": [
+        "Octomind",
+        "MCP",
+        "Octofs",
+        "Octocode",
+        "Octobrain",
+        "Scalekit",
+        "Anthropic"
+      ],
+      "routing_note": "Upstream owns product, company, and protocol background. Local coverage should retain only practice guidance around context budgets, capability loading, credentials, and tool-selection criteria."
+    },
+    {
+      "title": "Octomind frames open-weight coding models as repo-level evaluation and licensing decisions",
+      "url": "https://octomind.run/blog/open-weight-models-for-coding",
+      "source_type": "engineering blog",
+      "visible_date": "October 10, 2026",
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "Octomind reported real-pull-request benchmark results for open-weight coding models, contrasted open weight with open source, and emphasized that license terms, checkpoint availability, serving requirements, and behavior audits affect whether a team can keep operating the evaluated workflow.",
+      "why_it_matters": "Local practice implication: model selection for coding agents should record license terms, benchmark task provenance, cost, operational serving constraints, and retest triggers instead of treating leaderboard rank as a durable workflow decision.",
+      "named_entities": [
+        "Octomind",
+        "GLM-5.3",
+        "GLM-5.3 Flash",
+        "DeepSeek V4 Flash",
+        "Claude Opus 5",
+        "Hugging Face",
+        "Open Source Initiative",
+        "MIT license"
+      ],
+      "upstream_owned_entities": [
+        "Octomind",
+        "GLM-5.3",
+        "GLM-5.3 Flash",
+        "DeepSeek V4 Flash",
+        "Claude Opus 5",
+        "Hugging Face",
+        "Open Source Initiative",
+        "MIT license"
+      ],
+      "routing_note": "Broad model, company, license, and benchmark facts route upstream; the local note is the eval/governance practice for reproducible agent model selection."
+    },
+    {
+      "title": "Chris Pietschmann argues production AI code still needs human-owned review gates",
+      "url": "https://www.pietschsoft.com/post/2026/10/10/ai-generated-code-still-needs-human-review",
+      "source_type": "practitioner blog",
+      "visible_date": "October 10, 2026",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "The post recommends competent human review for production-bound AI-generated changes, bounded repair loops, protected checks and policies, scrutiny of dependencies and lockfile changes, branch protections, and traceability from approved revision to tested deployed artifact.",
+      "why_it_matters": "Local practice implication: AI-assisted development workflows should separate generated implementation speed from assurance ownership, and should place gates, approvals, dependencies, package-install review, and provenance outside the agent's unilateral control.",
+      "named_entities": [
+        "Chris Pietschmann",
+        "AI coding tools",
+        "AI harnesses",
+        "TDD",
+        "branch protections"
+      ],
+      "upstream_owned_entities": [
+        "AI coding tools",
+        "AI harnesses",
+        "TDD"
+      ],
+      "routing_note": "No local entity leaf needed; this is a downstream coding-practice and governance source."
+    },
+    {
+      "title": "Boundev proposes a rubric for grading AI-generated code",
+      "url": "https://www.boundev.ai/blog/rubric-for-grading-ai-generated-code",
+      "source_type": "practice guide",
+      "visible_date": "October 10, 2026",
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "Boundev recommends small, anchored rubrics for AI-generated code, with criteria such as correctness against the brief, security, maintainability, scope discipline, and test quality. It recommends written rationales and inter-rater agreement checks before relying on rubric scores or LLM judges.",
+      "why_it_matters": "Local practice implication: coding-agent evals should preserve human-scored calibration sets, rationale text, scope-discipline checks, and security gates rather than collapsing generated-code quality into pass/fail tests.",
+      "named_entities": [
+        "Boundev",
+        "SWE-bench Verified",
+        "OpenAI",
+        "OWASP Top 10",
+        "Cohen's kappa",
+        "LLM judge"
+      ],
+      "upstream_owned_entities": [
+        "Boundev",
+        "SWE-bench Verified",
+        "OpenAI",
+        "OWASP Top 10",
+        "LLM judge"
+      ],
+      "routing_note": "Benchmark and organization facts are upstream-owned; retain the local rubric/eval design implications."
+    },
+    {
+      "title": "iTechGuides describes risk-focused review of AI-agent pull requests",
+      "url": "https://www.itechguides.com/how-to-review-ai-generated-code-verify-the-change-before-you-trust-it/",
+      "source_type": "practice guide",
+      "visible_date": "October 10, 2026",
+      "local_topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/verification-and-evals"
+      ],
+      "summary": "iTechGuides recommends treating an AI agent's summary as a claim, starting review from the requested outcome, checking repository, PR title, author and branch, inspecting the patch and surrounding code, prioritizing security-sensitive paths, and verifying claims against code and tests before a named human approves the change.",
+      "why_it_matters": "Local practice implication: AI-assisted review workflows should preserve request-to-diff traceability, verify agent claims at source locations, and record human approval against the actual patch under review.",
+      "named_entities": [
+        "iTechGuides",
+        "AI coding agents",
+        "OpenAI Codex"
+      ],
+      "upstream_owned_entities": [
+        "iTechGuides",
+        "AI coding agents",
+        "OpenAI Codex"
+      ],
+      "routing_note": "Keep product-specific Codex background upstream; local use is a source-workflow and code-review practice note."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot weekly releases - October 5",
+      "url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+      "visible_date": "October 9, 2026",
+      "reason": "Date-only lower-boundary candidate relative to the strict cutoff of 2026-10-09T00:34:23Z; useful details overlapped with directly includable October 10 GitHub and October 7/8 stale candidates."
+    },
+    {
+      "title": "Copilot code review: New organization billing options and controls",
+      "url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+      "visible_date": "October 8, 2026",
+      "reason": "Outside strict two-day cutoff. Relevant to review governance and billing controls, but stale for this collector run."
+    },
+    {
+      "title": "Claude Haiku 5.5 in GitHub Copilot",
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot/",
+      "visible_date": "October 7, 2026",
+      "reason": "Outside strict two-day cutoff and primarily upstream-owned model/product coverage."
+    },
+    {
+      "title": "Update your IDE to restore agent activity in Copilot usage metrics",
+      "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics/",
+      "visible_date": "October 6, 2026",
+      "reason": "Outside strict two-day cutoff. Relevant to telemetry completeness, but stale for this collector run."
+    },
+    {
+      "title": "Visual Studio Code 1.141",
+      "url": "https://code.visualstudio.com/updates/v1_141",
+      "visible_date": "Released October 7, 2026",
+      "reason": "Outside strict two-day cutoff, despite relevant agent-session, sandboxing, worktree cleanup, progress, MCP discovery, and enterprise policy notes."
+    },
+    {
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "visible_date": "Published 2 days ago",
+      "reason": "Relative crawler date without a direct visible calendar publication date in the extracted page; excluded as ambiguous for strict window evidence."
+    },
+    {
+      "title": "Our Framework for Reviewing AI-Generated Code",
+      "url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "visible_date": "Crawled today; publication date not visible in extracted page",
+      "reason": "Useful practice source for trust calibration and review granularity, but missing a visible direct publication date in the opened page."
+    },
+    {
+      "title": "Agent Techniques Weekly",
+      "url": "https://www.brianletort.ai/industry/agents",
+      "visible_date": "Search result said published yesterday, opened page showed older weekly entries",
+      "reason": "Date evidence conflicted between search snippet and direct page extraction."
+    },
+    {
+      "title": "How to choose an AI coding agent for real work",
+      "url": "https://octomind.run/blog/ai-coding-agent-evaluation",
+      "visible_date": "October 9, 2026",
+      "reason": "Date-only lower-boundary candidate relative to strict cutoff. Strong local-practice content, but excluded to honor boundary-date rule."
+    },
+    {
+      "title": "AI Coding Workflow: From Meetings to First Commit",
+      "url": "https://withstoa.com/blog/ai-coding-workflow",
+      "visible_date": "October 9, 2026",
+      "reason": "Date-only lower-boundary candidate relative to strict cutoff. Relevant to durable context and meeting-to-code workflows, but not safely inside the window."
+    },
+    {
+      "title": "How to review AI-generated code fast",
+      "url": "https://swarmpane.com/blog/review-ai-generated-code/",
+      "visible_date": "October 9, 2026",
+      "reason": "Date-only lower-boundary candidate relative to strict cutoff; excluded despite local code-review practice relevance."
+    },
+    {
+      "title": "Four Coding Agents, One Repo: An Honest Shootout",
+      "url": "https://weightsandwire.com/en/article/2026-08-28/four-coding-agents-one-repo-an-honest-shootout?nadid_s=6a916b0a3e378024573294b1",
+      "visible_date": "Search result showed October 10, 2026; URL path and opened-page extraction did not provide a clear current visible date",
+      "reason": "Ambiguous/conflicting date evidence and broad product comparison scope."
+    },
+    {
+      "title": "Coding Agents Scoreboard",
+      "url": "https://aidiveforge.com/leaderboards/coding-agents/",
+      "visible_date": "Search result showed October 10, 2026; opened page showed September 27, 2026",
+      "reason": "Conflicting direct-page date evidence and primarily upstream-owned product/ranking coverage."
+    },
+    {
+      "title": "REA Review: Reverse Engineer Any App With AI Agents",
+      "url": "https://andrew.ooo/posts/rea-review-reverse-engineer-anything-ai-agents-mcp/",
+      "visible_date": "October 10, 2026",
+      "reason": "Primarily upstream-owned MCP server/tool review. Local implication around evidence records was not enough to justify duplicating broad tool coverage in this downstream collector."
+    },
+    {
+      "title": "GitHub Copilot Adds Sandboxing and Local Model Support",
+      "url": "https://devcuration.com/articles/github-copilot-sandboxing-local-model-agent-workspaces",
+      "visible_date": "October 10, 2026",
+      "reason": "Secondary coverage of GitHub's Oct. 9 weekly release; primary GitHub source was assessed separately."
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should decide whether the Octomind MCP/CLI/skills article belongs under retrieval-and-tools as a local practice leaf update, but should not duplicate broad MCP background.",
+    "If future runs occur later on October 11, date-only October 9 sources will be outside the strict 48-hour window and should remain excluded unless exact timestamps are found.",
+    "Potential durable local themes: measured tool schema budgets, on-demand tool capability activation, human-owned review gates, rubric-scored AI code evaluation, and reviewed-revision provenance."
+  ],
+  "collector_boundary_notes": [
+    "No docs/wiki pages were updated.",
+    "No raw/processed files were updated.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Broad ecosystem entities were marked upstream-owned and reduced to local practice implications."
+  ]
+}
