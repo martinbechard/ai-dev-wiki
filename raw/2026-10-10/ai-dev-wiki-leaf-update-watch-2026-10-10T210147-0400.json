@@ -1,0 +1,459 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-10-11T01:01:47Z",
+  "run_timestamp_local": "2026-10-10T21:01:47-0400",
+  "cutoff_window": {
+    "lookback_days": 7,
+    "cutoff_utc": "2026-10-04T01:01:47Z",
+    "rule": "Only public sources published or visibly updated after the cutoff are qualifying; ambiguous, missing, future-only, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 105,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+  ],
+  "source_urls_checked": [
+    "https://developers.cloudflare.com/changelog/product/agents/",
+    "https://developers.cloudflare.com/agents/harnesses/",
+    "https://blog.cloudflare.com/agentic-security-operations/",
+    "https://cursor.com/changelog",
+    "https://cursor.com/docs/release-notes/web",
+    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "https://www.atlassian.com/blog/company-news/team26-europe-ai-sdlc",
+    "https://academy.openai.com/public/clubs/builders-etkn1/overview",
+    "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+    "https://www.techradar.com/pro/when-identity-isnt-human-securing-the-agentic-enterprise",
+    "https://stateofsecurity.com/2026/10/",
+    "https://specstory.com/confidence-check",
+    "https://ai.newmanu.edu/bootcamps/agentic-software-engineering-capstone-repository"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+      "source_url": "https://blog.cloudflare.com/agentic-security-operations/",
+      "visible_date": "October 7, 2026",
+      "source_type": "vendor engineering blog",
+      "factual_summary": "Cloudflare described a multi-agent security operations harness that gathers alert evidence, connects detections, accounts for missing sources, and presents related alerts, admitted evidence, visible gaps, and recommended next steps. The post says a one-shot prototype flattened telemetry, detector descriptions, policies, and threat intelligence into one prompt and produced unsupported claims.",
+      "why_it_matters_for_leaf": "This supports local leaves that treat harness sizing, structured evidence, and runtime telemetry as control surfaces rather than model-selection choices.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "Cloudflare",
+        "Cloudflare Managed Defense",
+        "OpenAI Daybreak Defense Network",
+        "Anthropic",
+        "Clef"
+      ],
+      "upstream_owned_entities": [
+        "Cloudflare",
+        "OpenAI",
+        "Anthropic",
+        "GPT-5.6 Cyber",
+        "Mythos"
+      ],
+      "local_practice_implication": "Keep local synthesis focused on evidence admission, visible gaps, role separation, and workflow gates; route vendor/model background upstream."
+    },
+    {
+      "id": "cursor-local-agent-remote-control-2026-10-06",
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "Oct 6, 2026",
+      "source_type": "product changelog",
+      "factual_summary": "Cursor announced remote control for local agents from the Cursor iOS app. The update says local agents remain on the user's computer, the computer must stay online, and Enterprise organizations have remote control off by default unless administrators enable it.",
+      "why_it_matters_for_leaf": "The update is a concrete public example of local-agent runtime boundaries, user-visible progress surfaces, and enterprise enablement controls.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md"
+      ],
+      "named_entities": [
+        "Cursor",
+        "Cursor iOS app",
+        "Enterprise organizations"
+      ],
+      "upstream_owned_entities": [
+        "Cursor"
+      ],
+      "local_practice_implication": "Local pages should preserve the distinction between where tools execute, where control surfaces live, and who can enable remote access."
+    },
+    {
+      "id": "atlassian-ai-native-sdlc-context-and-governance-2026-10-07",
+      "source_url": "https://www.atlassian.com/blog/company-news/team26-europe-ai-sdlc",
+      "visible_date": "October 7, 2026",
+      "source_type": "vendor product and operating-model update",
+      "factual_summary": "Atlassian wrote that AI is appearing across planning, code writing, pull-request review, and incidents. It cited a 2026 AI SDLC study where 94% of engineering leaders said teams already use AI while 6% said they have systems to scale and govern it. The update frames context and measurement as the foundation for AI-native SDLC work, and describes Code Context as multi-repository code understanding connected to Jira, Confluence, Loom, Slack, and Google Drive.",
+      "why_it_matters_for_leaf": "The update reinforces local leaves about context governance, hybrid economics, structured source routing, and promotion gates for agent-assisted SDLC work.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Atlassian",
+        "Teamwork Graph",
+        "Code Context",
+        "Jira",
+        "Confluence",
+        "Loom",
+        "Jira Service Management"
+      ],
+      "upstream_owned_entities": [
+        "Atlassian",
+        "Jira",
+        "Confluence",
+        "Loom"
+      ],
+      "local_practice_implication": "Keep local treatment on the operating model: permissions-aware context, measurement, governance, and human judgment loops."
+    },
+    {
+      "id": "ars-agentic-coding-review-tax-2026-10-09",
+      "source_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "visible_date": "October 9, 2026",
+      "source_type": "technology reporting on research",
+      "factual_summary": "Ars Technica reported on research finding a 14% increase in the share of workers performing code reviews after AI agents were introduced. The article also says that although 80% of measured firms used some AI code review by March 2026, AI agents accounted for 23.3% of review comments and 10.8% of pull requests, leaving most review work with humans.",
+      "why_it_matters_for_leaf": "The report is relevant to review-layer design, junior learning paths, and lifecycle gates because it treats review capacity as a bottleneck rather than assuming generated code equals delivered software.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md"
+      ],
+      "named_entities": [
+        "Ars Technica",
+        "Jellyfish",
+        "LinkedIn"
+      ],
+      "upstream_owned_entities": [
+        "AI coding agents"
+      ],
+      "local_practice_implication": "Local synthesis should preserve human review capacity, mentorship, and layered review as explicit operating constraints."
+    },
+    {
+      "id": "stateofsecurity-trust-responsive-agent-authorization-2026-10-05",
+      "source_url": "https://stateofsecurity.com/2026/10/",
+      "visible_date": "October 5, 2026",
+      "source_type": "security analysis article",
+      "factual_summary": "State of Security argued that prompt injection should affect what an AI agent is allowed to do. The article distinguishes verified identity from trustworthy context, and proposes trust-responsive authorization based on identity, intended task, requested action, data sensitivity, source trust, and observed content risk.",
+      "why_it_matters_for_leaf": "This is directly relevant to prompt injection, destructive command controls, and governance controls because it treats untrusted content as an authorization signal rather than only a filtering problem.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "State of Security",
+        "NIST NCCoE",
+        "Software and Agentic AI Identity and Authorization project"
+      ],
+      "upstream_owned_entities": [
+        "NIST",
+        "NIST NCCoE"
+      ],
+      "local_practice_implication": "During ingest, local pages can add the downstream rule that agent authority should step down when context trust decreases."
+    },
+    {
+      "id": "techradar-agent-identity-after-access-2026-10-06",
+      "source_url": "https://www.techradar.com/pro/when-identity-isnt-human-securing-the-agentic-enterprise",
+      "visible_date": "Published 6 October 2026",
+      "source_type": "security opinion article",
+      "factual_summary": "TechRadar published an opinion piece arguing that autonomous software agents, coding assistants, and automated workflows operate across cloud environments, code repositories, APIs, and internal systems at a speed and autonomy level traditional controls were not designed to govern. The article frames the issue as what happens after access is granted.",
+      "why_it_matters_for_leaf": "This reinforces local governance leaves that separate credential validity from ongoing action control, especially for destructive or cross-boundary agent actions.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Ping Identity",
+        "Russ Kirby"
+      ],
+      "upstream_owned_entities": [
+        "Ping Identity"
+      ],
+      "local_practice_implication": "Keep any local update scoped to post-access controls, delegated authority, and action-level review."
+    },
+    {
+      "id": "techradar-agents-inherit-existing-risk-2026-10-07",
+      "source_url": "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+      "visible_date": "Published 7 October 2026",
+      "source_type": "security opinion article",
+      "factual_summary": "TechRadar published an opinion piece arguing that agents amplify existing risks through inherited access and that some failures come from agents exploiting already-misconfigured evaluation or production environments rather than from a wholly new risk category.",
+      "why_it_matters_for_leaf": "This is relevant to destructive-command controls, lifecycle review gates, and prototype-to-cloud gates because it emphasizes environmental setup and inherited access as governance concerns.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": [
+        "TechRadar",
+        "Mimecast",
+        "OpenAI",
+        "Hugging Face",
+        "Anthropic",
+        "Meta",
+        "UK NCSC"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Hugging Face",
+        "Anthropic",
+        "Meta",
+        "UK NCSC",
+        "Mimecast"
+      ],
+      "local_practice_implication": "Local synthesis should focus on inherited-access controls and environment verification, not duplicate the broader incident narrative."
+    },
+    {
+      "id": "openai-academy-codex-bootcamp-advanced-automation-2026-10-07",
+      "source_url": "https://academy.openai.com/public/clubs/builders-etkn1/overview",
+      "visible_date": "October 7, 2026",
+      "source_type": "public training and enablement listing",
+      "factual_summary": "OpenAI Academy listed a Codex Bootcamp 301 session on advanced automation for October 7, 2026, and describes Codex Bootcamp as covering practical agentic coding fundamentals, repeatable team workflows, and advanced automation for real development workflows.",
+      "why_it_matters_for_leaf": "This is a public signal that agentic coding enablement is being packaged as team workflow training rather than only individual tool usage.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md"
+      ],
+      "named_entities": [
+        "OpenAI Academy",
+        "Codex Bootcamp",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "local_practice_implication": "Local ingest can record the practice implication that training paths should teach repeatable workflows, review, and automation boundaries."
+    },
+    {
+      "id": "cloudflare-mcp-skills-over-mcp-2026-10-10",
+      "source_url": "https://developers.cloudflare.com/changelog/product/agents/",
+      "visible_date": "Oct 10, 2026",
+      "source_type": "vendor changelog",
+      "factual_summary": "Cloudflare announced that its API MCP server serves Cloudflare skills through the Skills over MCP extension. The changelog says clients discover skills with skills/list and read files at skill://<name>/<path>.",
+      "why_it_matters_for_leaf": "The item is relevant to source-routing and raw collector leaves because it is a public example of executable skill content becoming discoverable through an MCP surface.",
+      "leaf_ids": [
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": [
+        "Cloudflare",
+        "Cloudflare API MCP server",
+        "Skills over MCP",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Cloudflare",
+        "Model Context Protocol"
+      ],
+      "local_practice_implication": "During ingest, keep broad MCP ecosystem detail upstream and record only how skill provenance, source identity, and routing should be captured by local workflow automation."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/",
+      "visible_date": "Last updated Oct 2, 2026",
+      "reason": "outside seven-day cutoff for this run",
+      "notes": "Useful background for harness boundaries, but not a qualifying update."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/changelog/product/agents/",
+      "visible_date": "Oct 2, 2026",
+      "reason": "outside seven-day cutoff for this run",
+      "notes": "The Pi Durable harness update is relevant to long-running harnesses but predates the cutoff."
+    },
+    {
+      "source_url": "https://cursor.com/changelog",
+      "visible_date": "Sep 23, 2026",
+      "reason": "outside seven-day cutoff for this run",
+      "notes": "Cursor Rollouts and Security Review are relevant to review gates and runtime telemetry but were excluded by date."
+    },
+    {
+      "source_url": "https://specstory.com/confidence-check",
+      "visible_date": "October 2, 2026",
+      "reason": "outside seven-day cutoff for this run",
+      "notes": "The field notes are relevant to verification bottlenecks but predate the cutoff."
+    },
+    {
+      "source_url": "https://ai.newmanu.edu/bootcamps/agentic-software-engineering-capstone-repository",
+      "visible_date": "future cohort dates in 2027 and class dates around October 2026; no clear publication/update date visible",
+      "reason": "ambiguous publication/update date and future-dated schedule content",
+      "notes": "Training content is relevant to junior learning paths, but the page needs clearer date evidence before ingest."
+    },
+    {
+      "source_url": "https://cursor.com/docs/release-notes/web",
+      "visible_date": "crawled today; release timeline includes multiple undated grouped entries",
+      "reason": "ambiguous visible update date for specific items",
+      "notes": "Useful for follow-up verification of security-review behavior but not included as qualifying evidence."
+    }
+  ],
+  "per_leaf_results": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cursor-local-agent-remote-control-2026-10-06",
+        "atlassian-ai-native-sdlc-context-and-governance-2026-10-07"
+      ],
+      "follow_up_note": "Review local/cloud execution placement, context-layer cost claims, and governance scaling implications."
+    },
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "ars-agentic-coding-review-tax-2026-10-09",
+        "openai-academy-codex-bootcamp-advanced-automation-2026-10-07"
+      ],
+      "follow_up_note": "Review implications for training juniors around review capacity, workflow literacy, and advanced automation boundaries."
+    },
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+        "ars-agentic-coding-review-tax-2026-10-09"
+      ],
+      "follow_up_note": "Consider whether harness complexity should scale with evidence admission, review load, and workflow risk."
+    },
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cursor-local-agent-remote-control-2026-10-06"
+      ],
+      "follow_up_note": "Record local execution, remote control, online host, and enterprise enablement boundaries if ingested."
+    },
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+        "atlassian-ai-native-sdlc-context-and-governance-2026-10-07"
+      ],
+      "follow_up_note": "Review evidence-gap and context-grounding examples for drafter/validator separation."
+    },
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+        "cursor-local-agent-remote-control-2026-10-06"
+      ],
+      "follow_up_note": "Review how visible agent state, evidence gaps, and remote observation should be represented."
+    },
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "ars-agentic-coding-review-tax-2026-10-09",
+        "openai-academy-codex-bootcamp-advanced-automation-2026-10-07"
+      ],
+      "follow_up_note": "Review whether layered review should explicitly cover human review capacity and training workflows."
+    },
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "stateofsecurity-trust-responsive-agent-authorization-2026-10-05",
+        "techradar-agent-identity-after-access-2026-10-06",
+        "techradar-agents-inherit-existing-risk-2026-10-07"
+      ],
+      "follow_up_note": "Review trust-responsive authorization and inherited-access framing for high-impact actions."
+    },
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cursor-local-agent-remote-control-2026-10-06",
+        "atlassian-ai-native-sdlc-context-and-governance-2026-10-07",
+        "stateofsecurity-trust-responsive-agent-authorization-2026-10-05",
+        "techradar-agent-identity-after-access-2026-10-06"
+      ],
+      "follow_up_note": "Review remote-control enablement, scaling governance, and post-access action controls."
+    },
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+        "ars-agentic-coding-review-tax-2026-10-09",
+        "stateofsecurity-trust-responsive-agent-authorization-2026-10-05",
+        "techradar-agents-inherit-existing-risk-2026-10-07",
+        "openai-academy-codex-bootcamp-advanced-automation-2026-10-07"
+      ],
+      "follow_up_note": "Review gate placement before, during, and after agent execution."
+    },
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "stateofsecurity-trust-responsive-agent-authorization-2026-10-05"
+      ],
+      "follow_up_note": "Review context trust as an authorization signal rather than a content-filter-only problem."
+    },
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-agentic-security-harness-evidence-gaps-2026-10-07",
+        "atlassian-ai-native-sdlc-context-and-governance-2026-10-07",
+        "techradar-agent-identity-after-access-2026-10-06",
+        "techradar-agents-inherit-existing-risk-2026-10-07"
+      ],
+      "follow_up_note": "Review whether promotion gates should include evidence-gap handling and inherited-access checks."
+    },
+    "docs/wiki/source-workflows/public-topic-news-collector.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-mcp-skills-over-mcp-2026-10-10"
+      ],
+      "follow_up_note": "Review whether source collectors should record skill-over-MCP source identity and route broad MCP details upstream."
+    },
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "cloudflare-mcp-skills-over-mcp-2026-10-10"
+      ],
+      "follow_up_note": "Review source validation expectations for MCP-served skill files during later ingest."
+    },
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": {
+      "last_result": "qualified_updates_found",
+      "qualifying_update_ids": [
+        "atlassian-ai-native-sdlc-context-and-governance-2026-10-07",
+        "cloudflare-mcp-skills-over-mcp-2026-10-10"
+      ],
+      "follow_up_note": "Review routing rules for upstream-owned entities versus local context/source-governance implications."
+    }
+  },
+  "follow_up_notes": [
+    "Normal ingest should keep broad company, product, model, framework, and protocol background upstream-owned.",
+    "Current-run raw artifact should be reviewed for downstream practice implications only; no docs/wiki pages were updated by this watch.",
+    "Excluded Oct 2 sources may still be useful as background during later ingest, but they do not qualify for this seven-day watch run."
+  ]
+}
