@@ -141,6 +141,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 - MCP clients that front enterprise data should preserve credential-refresh ownership, protocol-version negotiation, sensitive bound-parameter redaction, session tracking, correlation headers, and insecure-transport warnings.
 - Hosted MCP servers that expose platform operations should forward the user's own identity where possible, keep read-mostly defaults, require explicit approval for writes, omit destructive operations unless separately justified, and document logout or disconnect behavior.
 
+The October 11 raw sources add MCP startup, skill-serving, and capability-shape evidence. The [topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) records product controls for default model settings, automatic MCP startup, diagnostic-to-fix actions, and worktree reliability, while the [leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) records a vendor changelog where an API MCP server exposes skills over MCP. Locally, MCP governance should treat automatic startup, model defaults, diagnostic repair actions, skill file discovery, and schema-count cost as governed environment configuration with provenance and audit evidence, not as prompt-level convenience.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -218,6 +220,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 - Record whether an MCP server is built on the official SDK, FastMCP, generated OpenAPI/FastAPI tooling, or another framework when that choice affects spec conformance, compatibility, documentation, generated tools, authentication, or deployment support.
 - Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
 - Treat generated API-to-MCP surfaces as designed adapters that need least-privilege review, schema clarity, permission checks, and verification before agents call them.
+- Treat automatic MCP startup, remotely served skill files, and diagnostic-to-fix actions as tool-surface changes that need administrator policy, provenance, permission scope, and invocation evidence.
+- Measure schema count, latency, output size, and credential/state requirements before selecting MCP instead of CLI or skill-only activation guidance.
 - Preserve citation and privacy-boundary evidence when MCP retrieval supplies sources to an agent workflow.
 - Treat egress allowlists, runtime budgets, rate limits, guardrails, action-level controls, component identity, skill-install provenance, memory writes, and unified traces as MCP/tool control-plane evidence.
 - Name whether MCP is being used as a client call path, an operational query surface, or an exported process capability, because each direction changes audit, receipt, and approval obligations.
@@ -261,6 +265,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 ## Authoritative Sources
 
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
+- [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
+- [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
@@ -383,6 +389,7 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 ## Maintenance Notes
 
 - Maintained on 2026-10-10 with MCP tool-description routing, prompt-injection, least-privilege, delegation-chain audit, invoked-or-declined action, and cross-boundary traceability evidence.
+- Maintained on 2026-10-11 with automatic MCP startup, skill-over-MCP, diagnostic action, and measured schema-budget evidence.
 - Maintained on 2026-10-09 with local sandbox, MCP reach, credential reach, network reach, language-server, safer-CLI, and source-review claim evidence.
 - Maintained on 2026-10-03 with remote MCP identity-mode, atomic setup, workload admission, grant-evidence, fail-closed denial, and prompt-injection action-freeze evidence.
 - Maintained on 2026-09-29 with managed MCP audit-log, service-filter, permission-category, Data Access, Admin Activity, and read-activity enablement evidence.

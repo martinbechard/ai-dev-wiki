@@ -39,6 +39,8 @@ The [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-de
 
 The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json) adds a toolbox-pattern signal from Microsoft Foundry coverage. A toolbox or catalog should remain a discovery surface until the workflow selects a narrow operation, records why that operation is needed, and preserves selected-tool evidence; exposing the whole toolbox to the active prompt increases token cost and action-surface ambiguity.
 
+The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) adds measured MCP, CLI, and skill-selection evidence from an engineering blog. Locally, the durable rule is that large schema catalogs are a context-budget decision before they are a capability decision: CLI commands fit familiar stateless operations, MCP fits credentialed or stateful structured results, and skills should teach when and how to activate capabilities without eagerly loading every schema.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -57,10 +59,13 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 - Separate the ability to discover tool schemas from the authority to invoke those tools, especially for child agents with explicit tool allowlists.
 - Treat registry "recently updated" metadata as a candidate-discovery signal, not trust evidence; verify publisher, repository, command behavior, test reproducibility, and approval route before invocation.
 - Treat enterprise toolboxes as discovery surfaces first; move only the selected operation schema, permission scope, and audit route into active context.
+- Measure active tool-schema budgets and cap eager capability loading before approving a tool-heavy workflow.
+- Keep skills as activation and selection knowledge unless a specific skill package has passed provenance and permission review.
 
 ## Authoritative Sources
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
+- [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
@@ -101,6 +106,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 ## Maintenance Notes
 
 - Maintained on 2026-10-06 with enterprise toolbox discovery, selected-operation, permission-scope, and audit-route evidence.
+- Maintained on 2026-10-11 with measured MCP, CLI, and skills context-budget evidence.
 - Maintained on 2026-09-21 with MCP tool and prompt pagination-limit evidence.
 - Created on 2026-07-27 from July 27 raw-source evidence about dynamic MCP mode, meta-tools, scoped permissions, managed OAuth, and API logs.
 - Maintained on 2026-07-28 with remote skill discovery, package-provenance, archive-bound, approval-default, and central-governance controls.

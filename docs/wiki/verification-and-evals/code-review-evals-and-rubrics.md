@@ -132,6 +132,8 @@ The same October 8 source adds FAVUR-style multi-agent SDLC evaluation evidence.
 
 Broad product and model background stays upstream-owned; locally this is an eval-method and provenance pattern.
 
+The October 11 raw sources add rubric-calibration, open-weight model-selection, and human review-capacity evidence. The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) records practice guidance for small anchored rubrics, written rationales, inter-rater agreement checks, dependency and lockfile scrutiny, traceability from approved revision to tested deployed artifact, and model-selection evidence that includes license, checkpoint, serving, benchmark provenance, and behavior-audit constraints. The [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) also reports code-review load and human-review share as operating constraints. Locally, review evals should score generated-code review as calibrated human judgment plus deterministic checks, not as pass/fail tests or leaderboard rank alone.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -207,10 +209,15 @@ Broad product and model background stays upstream-owned; locally this is an eval
 - Score adversarial review by evidence-backed disagreement, retraction quality, convergence criteria, budget observance, and whether only converged findings reach writable repair work.
 - Score layered review workflows by whether repository instructions, deterministic checks, product-fit review, and human review remain distinct evidence gates with visible design-review residual risk.
 - Separate known-defect recall from acceptable novel findings when a code-review benchmark permits both, and keep severity/category slices, matching method, and validation method visible.
+- Preserve human-scored calibration sets, written rationales, inter-rater agreement checks, and scope-discipline criteria before relying on rubric scores or LLM judges.
+- Include dependency, lockfile, provenance-to-deployed-artifact, license, serving, checkpoint, and behavior-audit evidence when model choice affects code-review or coding-agent acceptance.
+- Measure human review capacity and finding-to-fix throughput separately from generated-code volume.
 
 ## Authoritative Sources
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
+- [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
+- [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -296,6 +303,7 @@ Broad product and model background stays upstream-owned; locally this is an eval
 ## Maintenance Notes
 
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
+- Maintained on 2026-10-11 with anchored rubric, human-calibration, provenance, dependency, license, serving, and review-capacity evidence.
 - Maintained on 2026-10-07 with ReviewBench corpus, label-source, matcher, judge, and independent-validation evidence.
 - Maintained on 2026-10-07 with review API provenance, effort-level drift, secret-detection labels, deterministic scanner comparison, and multi-agent review collaboration evidence.
 - Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.

@@ -41,6 +41,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 Locally, that reinforces that cheaper code generation can increase review work and that design review needs an explicit owner rather than being assumed from passing tool checks.
 
+The October 11 raw sources reinforce human-owned review as a production gate. The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) records practice guidance that agent summaries are claims to verify against requested outcome, repository identity, branch, patch, surrounding code, tests, dependencies, and approval provenance. The [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) records public reporting that AI agent adoption can increase human review load. Locally, layered review should preserve named human approval for the actual patch under review and keep training or workflow-literacy work visible instead of treating agent output as self-certifying.
+
 ## Practice Boundaries
 
 - Preserve finding lifecycle state, severity, reviewer title, auto-resolution proof, prior-summary continuity, human override, and commit-level traceability for AI review comments.
@@ -55,6 +57,8 @@ Locally, that reinforces that cheaper code generation can increase review work a
 - Keep discovery, triage, critic/review, sandboxed reproduction, architecture/threat-model review, and fleet governance separate when security repair work uses agents.
 - Do not treat repository-fleet policy trends or audit coverage as proof that a specific pull request was reviewed deeply enough.
 - Keep deterministic analysis, product-fit review, design review, and human acceptance separate when agent-authored changes pass ordinary tests or lint.
+- Treat agent-authored summaries as claims; reviewers should verify request-to-diff traceability, branch and repository identity, dependency changes, surrounding code, tests, and named human approval.
+- Include review-capacity and training-path evidence when sizing developer, architecture, and security review roles.
 
 ## Authoritative Sources
 
@@ -67,6 +71,8 @@ Locally, that reinforces that cheaper code generation can increase review work a
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [September 3 leaf update watch source](../../../raw/processed/2026-09-03/ai-dev-wiki-leaf-update-watch-2026-09-03T210157-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
+- [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
 
 ## Related Code
 
@@ -98,3 +104,4 @@ Locally, that reinforces that cheaper code generation can increase review work a
 - Maintained on 2026-08-29 with production AI-generated-code accountability and review-load evidence for role-scoped review.
 - Maintained on 2026-09-03 with vulnerability discovery, triage, critic-review, sandboxed reproduction, architecture/threat-model evidence, and fleet-governance role separation.
 - Maintained on 2026-10-04 with repository-instruction, deterministic-analysis, product-fit, design-review, and human-review layer evidence.
+- Maintained on 2026-10-11 with human-owned review, agent-summary verification, dependency scrutiny, approval provenance, and review-capacity evidence.

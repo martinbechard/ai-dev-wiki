@@ -11,6 +11,8 @@ tags: ["application-patterns"]
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds local-model discovery evidence. Local model availability in a coding-agent CLI is not proof of offline or private operation; the harness should record the local runtime, explicit model-add or use confirmation, provider fallback, telemetry setting, network boundary, and whether remote service traffic remains possible.
 
+The [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) adds local-agent remote-control evidence. A local agent can execute on the user's computer while exposing control through a remote or mobile client, so the harness should record host online requirements, origin-control surface, enterprise enablement defaults, and whether remote control changes approval, telemetry, or interruption paths.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds local agent runtime evidence from a Windows RTX-bound local agent. Local harness decisions should include hardware floors, local model downloads, local MCP server access, scheduled-task behavior, cloud-access toggles, subscription prerequisites, and permission boundaries between local and cloud execution.
 
 Local model operation is a harness design question, not only a model-selection question. The harness must decide how local inference affects latency, memory, privacy, tool-call reliability, session continuity, validation, and visible runtime health.
@@ -56,10 +58,12 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 - Keep hosted fallback and governance routing explicit when local capacity or model coverage cannot satisfy a workflow.
 - Include memory ownership, embedding locality, private sharing defaults, offline fallback, outbound-meter visibility, budget envelope behavior, and audit evidence when evaluating local or deskside runtimes.
 - Pair local setup instructions with security limits, tool-permission checks, injection tests, and evaluation metrics before treating a workstation runtime as ready for coding-agent work.
+- Separate execution placement from control placement; local execution with remote control still needs access policy, session visibility, interruption, and audit evidence.
 
 ## Authoritative Sources
 
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+- [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
 
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [Local model operations source](../../../raw/processed/link-aliases/local-model-operations.md)
@@ -101,6 +105,7 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 ## Maintenance Notes
 
 - Maintained on 2026-10-09 with local-model discovery, explicit confirmation, provider fallback, telemetry, network-boundary, and offline-claim evidence.
+- Maintained on 2026-10-11 with local-agent remote-control, host-online, origin-client, enterprise-enablement, telemetry, and interruption-path evidence.
 - Maintained on 2026-09-19 with local-agent hardware floor, local MCP, scheduled-task, optional-cloud, and runtime-prerequisite evidence.
 - Maintained on 2026-08-29 with model-harness and workspace-layer boundaries for memory, cost, routing, parallel sessions, and reviewable commits.
 - Created on 2026-06-23 from the local model operations source and local verification guidance for representative calibration.

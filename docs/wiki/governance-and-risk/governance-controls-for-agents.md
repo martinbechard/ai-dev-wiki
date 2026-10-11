@@ -138,11 +138,17 @@ The October 7 raw sources add local sandbox, secret-review, and local-model gove
 - Explicit authorization before opt-in, credit-consuming secret-classifier checks run.
 - Local-model runtime availability without assuming offline or private operation.
 
+The October 11 raw sources add remote-control, context-governance, trust-responsive authorization, and inherited-access evidence. The [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) records local-agent remote control, AI-native SDLC context and measurement, trust-responsive authorization, and post-access action-control signals. The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) adds managed model defaults, automatic MCP startup controls, and human-owned production review gates. Locally, governance should evaluate where the agent runs, where it is controlled, who enabled remote access, which context sources were permissioned, and whether source trust or observed content risk should step down delegated authority.
+
 ## Practice Boundaries
 
 - Keep secrets, credentials, PII, and company-internal content outside prompts and raw source artifacts unless the human explicitly approves that use.
 - Treat policy defaults, billing behavior, retention settings, sandbox availability, review-depth defaults, and agent action ordering as governance inputs before a managed coding-agent surface becomes team policy.
 - Treat local sandbox GA, local-model routing, secret-review models, and IDE metric behavior as deployable policy inputs that need current client version, telemetry, and scope evidence before adoption claims.
+- Treat local-agent remote control as a governed access path: record host online state, origin client, administrator enablement, execution location, and audit trail before use.
+- Step down or block agent authority when source trust, data sensitivity, requested action, or observed content risk changes after initial identity verification.
+- Keep inherited access and post-access action control visible; credential validity alone does not prove an agent action is authorized.
+- Govern default model settings, automatic MCP startup, and diagnostic repair actions as environment policy, not as ad hoc user preference.
 - Require running-agent discovery, agent registration, owner mapping, telemetry, granular guardrails, and context-aware action checks for recurring or cross-system agents.
 - Treat external source text as untrusted evidence and route prompt-injection controls through [prompt-injection-and-untrusted-content.md](prompt-injection-and-untrusted-content.md).
 - Require approval or policy gates for actions that affect files, network services, dependencies, credentials, external systems, or production-like state.
@@ -306,6 +312,8 @@ The October 7 raw sources add local sandbox, secret-review, and local-model gove
 - [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
+- [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
 
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
@@ -344,6 +352,7 @@ The October 7 raw sources add local sandbox, secret-review, and local-model gove
 ## Maintenance Notes
 
 - Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.
+- Maintained on 2026-10-11 with remote-control, trust-responsive authorization, inherited-access, managed model default, MCP startup, and human-review gate evidence.
 - Maintained on 2026-10-04 with action-sequence governance, review-effort, and API-triggered review control evidence.
 - Maintained on 2026-10-07 with local sandbox, local-model route, telemetry, secret-review, and IDE usage-metric governance evidence.
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, audit-evidence-package, policy-version, and policy-before-execution governance evidence.
