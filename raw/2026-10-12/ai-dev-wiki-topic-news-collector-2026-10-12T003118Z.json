@@ -1,0 +1,326 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-12T00:31:18Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-10T00:31:18Z",
+    "end_utc": "2026-10-12T00:31:18Z",
+    "policy": "Include only public web sources published or visibly updated within the last 2 days relative to the run time. Exclude missing, ambiguous, future-dated, stale, secondary-only, broad-upstream-only, and lower-boundary date-only candidates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "source": "docs/wiki/federation.md",
+    "relationship": "downstream one-way extension of /Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "downstream_owned_scopes": [
+      "AI-assisted development lens",
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ]
+  },
+  "qualifying_updates": [
+    {
+      "title": "AppHandoff updates coding-agent handoff guidance around source-linked context packets",
+      "url": "https://apphandoff.com/blog/context-engineering-ai-coding",
+      "source_type": "practice guide",
+      "visible_date": "Published October 9, 2026; updated October 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/context-architecture",
+        "docs/wiki/source-workflows",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows"
+      ],
+      "summary": "AppHandoff describes AI coding handoffs as compact packets containing objective, constraints, current facts with sources, evidence, unknowns, and a next action. It warns that handoff packets are an entry point, not a substitute for checking current code and work records, and recommends refreshing mutable facts before dependent action.",
+      "why_it_matters": "Local practice implication: context handoffs should preserve source, revision, and uncertainty metadata so agents resume from inspectable current facts rather than long transcripts or stale summaries.",
+      "named_entities": [
+        "AppHandoff",
+        "Anthropic",
+        "coding agents",
+        "context engineering"
+      ],
+      "upstream_owned_entities": [
+        "AppHandoff",
+        "Anthropic",
+        "coding agents",
+        "context engineering"
+      ],
+      "routing_note": "Do not duplicate broad context-engineering background; retain the downstream handoff packet, source-refresh, and uncertainty-recording practice."
+    },
+    {
+      "title": "Agent Harness Fundamentals frames autonomy around evidence, hooks, subagents, and human gates",
+      "url": "https://lucaberton.com/blog/agent-harness-fundamentals-claude-code-webinar-2026/",
+      "source_type": "webinar/practice article",
+      "visible_date": "October 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "summary": "Luca Berton describes an agent-harness workflow where a coding agent implements a small change, a PostToolUse hook runs deterministic tests after edits, a read-only subagent reviews whether requested behavior and tests are preserved, permission rules constrain direct actions, and a human makes the final accept-or-reject decision.",
+      "why_it_matters": "Local practice implication: reliable agent workflows should distinguish guidance from enforcement, collect hook/test/review evidence, keep reviewers independent from implementers, and leave final merge/deploy authority with humans.",
+      "named_entities": [
+        "Luca Berton",
+        "Youssef Hosni",
+        "Packt Publishing",
+        "Claude Code",
+        "Agent Skills",
+        "PostToolUse",
+        "CLAUDE.md"
+      ],
+      "upstream_owned_entities": [
+        "Luca Berton",
+        "Youssef Hosni",
+        "Packt Publishing",
+        "Claude Code",
+        "Agent Skills"
+      ],
+      "routing_note": "Upstream owns product and person background; local coverage should keep the harness, evidence, permission, and review-gate pattern."
+    },
+    {
+      "title": "Lamplit Labs maps coding agents into SDLC handoff points",
+      "url": "https://blogs.lamplitlabs.com/posts/ai-sdlc-coding-agents-in-the-dev-lifecycle-handoff-points/",
+      "source_type": "practice guide",
+      "visible_date": "Posted Oct 11, 2026; updated Oct 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "Lamplit Labs proposes four AI SDLC handoff points: a task contract in the issue tracker, a sandboxed run in a throwaway clone or worktree with scoped tokens and budgets, deterministic gates that the agent cannot edit, and human review over the diff, gate results, and run log.",
+      "why_it_matters": "Local practice implication: assigned agent work should be treated as a pipeline participant with explicit scope, non-goals, stop conditions, immutable gates, logs, and human approval rather than as an editor autocomplete extension.",
+      "named_entities": [
+        "Lamplit Labs",
+        "Manish Tiwari",
+        ".NET",
+        "GitHub issue",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "Lamplit Labs",
+        "Manish Tiwari",
+        ".NET",
+        "GitHub",
+        "Copilot"
+      ],
+      "routing_note": "Do not create product or platform coverage; retain downstream workflow contract, sandbox, gate, and operating-model implications."
+    },
+    {
+      "title": "Arelion case study shows AI-built code can pass functional checks while retaining security failures",
+      "url": "https://arelion.dev/case-studies/ai-attack-surface/",
+      "source_type": "security case study",
+      "visible_date": "October 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "Arelion reports a read-only audit of an AI-built platform before production traffic that found 49 issues, nine high severity, across application code, cloud IAM, CI pipelines, infrastructure, and git history. The case study says passing deploys and functional tests did not catch leaked public-prefixed secrets, weak admin authorization, live credentials in history, or excessive cloud ownership.",
+      "why_it_matters": "Local practice implication: AI-assisted delivery gates need source, IAM, CI, container, history, and attacker-perspective review, because functional acceptance checks alone do not validate security properties that were not in the prompt.",
+      "named_entities": [
+        "Arelion",
+        "AI agents",
+        "Cloud IAM",
+        "CI pipelines",
+        "NEXT_PUBLIC",
+        "VITE",
+        "REACT_APP"
+      ],
+      "upstream_owned_entities": [
+        "Arelion",
+        "AI agents",
+        "Cloud IAM"
+      ],
+      "routing_note": "Security-specific platform facts can route to the security wiki if needed; local ai-dev-wiki coverage should retain the AI-assisted development risk and verification practice."
+    },
+    {
+      "title": "Munder Difflin daily roundup records agent-tool signals with checked sources and dated releases",
+      "url": "https://munderdiffl.in/blog/agent-tools-today-2026-10-11/",
+      "source_type": "dated source roundup",
+      "visible_date": "Oct 11, 2026",
+      "local_topic_roots": [
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "summary": "Munder Difflin's October 11 roundup records checked source links for coding-agent launches, skills, MCP servers, plugin changes, multi-agent tool moves, and public arguments. It reports its inclusion rule: each listed name needs an opened link and a visible signal such as points, stars, or a dated release, while social-only claims are left out.",
+      "why_it_matters": "Local practice implication: collector and watcher workflows can use this as a model for source-visible recency, explicit evidence signals, and exclusion of unverified social claims, while routing broad product and tool facts upstream.",
+      "named_entities": [
+        "Munder Difflin",
+        "Claude Code",
+        "Codex",
+        "Gemini CLI",
+        "MCP",
+        "OpenCode",
+        "OpenClaw"
+      ],
+      "upstream_owned_entities": [
+        "Munder Difflin",
+        "Claude Code",
+        "Codex",
+        "Gemini CLI",
+        "MCP",
+        "OpenCode",
+        "OpenClaw"
+      ],
+      "routing_note": "The individual products and launches are upstream-owned. Local use is limited to source-collection practice and evidence-threshold implications."
+    },
+    {
+      "title": "RuleSkill exposes workflow-based agent-skill discovery with daily update signals",
+      "url": "https://ruleskill.com/",
+      "source_type": "public skill catalog",
+      "visible_date": "Updated daily; page showed October 11, 2026 entries",
+      "local_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk"
+      ],
+      "summary": "RuleSkill presents agent skills by developer workflow, including debugging, code review, testing, documentation, playbooks, and security audit categories, and shows per-skill update dates such as October 11, 2026. The catalog emphasizes GitHub-verified and open-source skills rather than only raw recency.",
+      "why_it_matters": "Local practice implication: durable agent instructions should be selected by job-to-be-done, provenance, verification status, and update recency rather than copied wholesale into an always-loaded prompt.",
+      "named_entities": [
+        "RuleSkill",
+        "Claude Code",
+        "Codex",
+        "ChatGPT",
+        "GitHub",
+        "QwenLM"
+      ],
+      "upstream_owned_entities": [
+        "RuleSkill",
+        "Claude Code",
+        "Codex",
+        "ChatGPT",
+        "GitHub",
+        "QwenLM"
+      ],
+      "routing_note": "Catalog and skill-project background route upstream; local coverage should retain workflow-based skill selection, provenance, and update-recency practice."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "New controls and chat improvements in Copilot for JetBrains",
+      "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+      "visible_date": "October 10, 2026",
+      "reason": "Date-only lower-boundary candidate relative to the strict cutoff of 2026-10-10T00:31:18Z. Relevant to MCP startup controls and model governance, but exact publication time was not visible."
+    },
+    {
+      "title": "Context Engineering for Coding Agents: A Practical Guide to Better Output",
+      "url": "https://geekchamp.com/context-engineering-for-coding-agents-a-practical-guide-to-better-output/",
+      "visible_date": "10 Oct 2026",
+      "reason": "Date-only lower-boundary candidate. Useful local practice guidance, but exact timestamp was not visible inside the strict 48-hour boundary."
+    },
+    {
+      "title": "AI-Native Software Development: How to Redesign Your Engineering Workflow",
+      "url": "https://geekchamp.com/ai-native-software-development-how-to-redesign-your-engineering-workflow/",
+      "visible_date": "10 Oct 2026",
+      "reason": "Date-only lower-boundary candidate. Relevant workflow framing, but not safely inside the strict cutoff without a visible time or later update."
+    },
+    {
+      "title": "Coding Agents in Software Development: What Teams Need to Know",
+      "url": "https://geekchamp.com/coding-agents-in-software-development-what-teams-need-to-know/",
+      "visible_date": "10 Oct 2026",
+      "reason": "Date-only lower-boundary candidate. Relevant software-factory framing, but excluded under the lower-boundary rule."
+    },
+    {
+      "title": "REA Review: Reverse Engineer Any App With AI Agents",
+      "url": "https://andrew.ooo/posts/rea-review-reverse-engineer-anything-ai-agents-mcp/",
+      "visible_date": "October 10, 2026; repository facts checked Oct 11, 2026",
+      "reason": "Primarily upstream-owned MCP server/tool review. Local implication around evidence records was not enough to justify duplicating broad tool coverage in this downstream collector."
+    },
+    {
+      "title": "What are agent skills and harnesses, and how are they different from monolithic agent frameworks?",
+      "url": "https://foviq.com/posts/agent-skills-harnesses/",
+      "visible_date": "October 10, 2026; last updated October 10, 2026",
+      "reason": "The direct page fetch timed out, and the visible date was a lower-boundary date-only candidate. Excluded as inaccessible/uncertain."
+    },
+    {
+      "title": "Our Framework for Reviewing AI-Generated Code",
+      "url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "visible_date": "URL indicates 2026/10; no day visible in opened page",
+      "reason": "Useful trust-calibration source, but missing a direct visible publication or update date inside the strict window."
+    },
+    {
+      "title": "Set up a context engineering flow in VS Code",
+      "url": "https://code.visualstudio.com/docs/agents/guides/context-engineering-guide",
+      "visible_date": "10/7/2026",
+      "reason": "Outside strict two-day cutoff, despite strong relevance to custom instructions, planning agents, TDD agents, context isolation, and cache-aware context design."
+    },
+    {
+      "title": "Does Working with AI Agents Change How Developers Code, Test, and Review?",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.67",
+      "visible_date": "Publication Date: 2026-10-05",
+      "reason": "Outside strict two-day cutoff, though relevant to documentation, testing, review, and adoption measurement."
+    },
+    {
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "visible_date": "Search result showed published 3 days ago",
+      "reason": "Outside strict two-day cutoff and crawler-relative date rather than direct visible calendar date in opened evidence."
+    },
+    {
+      "title": "Microsoft Open-Sources a Postgres MCP Server for AI Coding Agents, and Write Access Is On by Default",
+      "url": "https://www.howtouselinux.com/post/microsoft-open-sources-a-postgres-mcp-server-for-ai-coding-agents-and-write-access-is-on-by-default",
+      "visible_date": "October 11, 2026",
+      "reason": "Secondary coverage of an upstream-owned MCP server and vendor/tool fact. Potential local practice implication is least-privilege database access, but a primary source was not found in this run."
+    },
+    {
+      "title": "AI Code Review Goes Agent-to-Agent as CodeRabbit Hits $1.5B Valuation",
+      "url": "https://www.techreaderdaily.com/article/ai-code-review-goes-agent-to-agent-as-coderabbit-hits-1-5b-valuation",
+      "visible_date": "Published October 11, 2026; updated Oct 11, 2026",
+      "reason": "Primarily secondary broad company/product and funding coverage; local governance claim was not enough to retain without duplicating upstream-owned entity coverage."
+    },
+    {
+      "title": "Four Coding Agents, One Repo: An Honest Shootout",
+      "url": "https://weightsandwire.com/en/article/2026-08-28/four-coding-agents-one-repo-an-honest-shootout?nadid_s=6a916b0a3e378024573294b1",
+      "visible_date": "October 11, 2026",
+      "reason": "Broad product comparison and model/tool coverage owned upstream. Excluded from downstream collector despite potentially useful evaluation caveats."
+    },
+    {
+      "title": "DiffVibe - AI-assisted software development, reported for engineers who ship",
+      "url": "https://diffvibe.com/",
+      "visible_date": "Sunday, October 11, 2026",
+      "reason": "High-volume secondary news feed dominated by broad product, company, model, and tool updates. Useful as a future lead source only after direct primary verification."
+    }
+  ],
+  "follow_up_notes": [
+    "Ingest should consider downstream leaves for context handoff packets, agent SDLC handoff contracts, evidence-producing harnesses, non-writable deterministic gates, and AI-built-code security review scope.",
+    "Do not ingest broad product, model, MCP server, catalog, funding, or company facts into local pages; route them upstream or keep only local practice implications.",
+    "Several October 10 date-only sources were excluded because the runtime cutoff was 2026-10-10T00:31:18Z and exact publication times were not visible."
+  ],
+  "collector_boundary_notes": [
+    "No docs/wiki pages were updated.",
+    "No raw/processed files were updated.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "Broad ecosystem entities were marked upstream-owned and reduced to local practice implications."
+  ]
+}
