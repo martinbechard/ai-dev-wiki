@@ -9,6 +9,8 @@ tags: ["prompt-and-instructions"]
 
 ## Current Understanding
 
+The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds source-linked handoff-packet evidence from AppHandoff. Local request packages should carry objective, constraints, sourced current facts, explicit unknowns, verification evidence, and next action, but they remain entry points for renewed code and work-record inspection rather than substitutes for current repository truth.
+
 Context engineering is the local practice of selecting project data, coding conventions, documentation, source labels, and verification expectations for a specific request. It is broader than prompt wording because it decides which evidence and rules the model can see while doing the work.
 
 The request package should carry enough context for the model to act with less ambiguity without loading unrelated history. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) frames repository understanding as request packaging, context assembly, retrieval, and verification evidence. The [Hypervelocity Engineering source](../../../raw/processed/Hypervelocity engineer @edandersen.md) describes context engineering as supplying project data, conventions, and documentation so AI work becomes more accurate and can use smaller or task-specialized models.
@@ -48,6 +50,8 @@ The [September 14 topic news collector source](../../../raw/processed/2026-09-14
 - Include task, requirement, review, approval, runtime, and delivery-state evidence when evaluating whether project-context tooling actually improves the workflow.
 - Preserve executed-graph evidence for which context, skills, tools, checkpoints, and state the agent used when that evidence affects governance or review.
 - For long-horizon coding tasks, externalize task state, open decisions, verified facts, rejected paths, and next checks so compaction or handoff preserves the work's current direction.
+- Include source identifiers, freshness labels, uncertainty, and next-action boundaries when the request package is also a handoff packet.
+- Reverify mutable facts from code, issues, logs, or work records before a later agent acts on a compact handoff packet.
 
 ## Authoritative Sources
 
@@ -65,6 +69,7 @@ The [September 14 topic news collector source](../../../raw/processed/2026-09-14
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
 - [August 23 leaf update watch source](../../../raw/processed/2026-08-23/ai-dev-wiki-leaf-update-watch-2026-08-23T210505-0400.json)
 - [September 14 topic news collector source](../../../raw/processed/2026-09-14/ai-dev-wiki-topic-news-collector-2026-09-14T003119Z.json)
+- [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 
 ## Related Code
 
@@ -90,6 +95,7 @@ The [September 14 topic news collector source](../../../raw/processed/2026-09-14
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with source-linked handoff packet, current-fact, uncertainty, and mutable-fact refresh guidance.
 - Maintained on 2026-09-13 with long-horizon harness context, durable state, open-decision, rejected-path, and decision-history preservation guidance.
 - Created on 2026-06-23 to hold the request-package side of context engineering.
 - Maintained on 2026-06-25 with issue, RFC, instruction, reference, API, verification, and handoff evidence for default coding-agent use.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds benchmark-catalog and agent-eval evidence from BenchLM, Foundry, and contract-task commentary. Local technical-solution evaluation should record benchmark task provenance, environment setup, scoring criteria, domain fit, and operational relevance before using leaderboard or one-off eval results to justify tool adoption.
+
 AI technical solution evaluation scores the proposed solution separately from the partner or vendor. A strong proposal should prove functional fit, architecture proportionality, grounding quality, evaluation discipline, security controls, reliability, observability, maintainability, portability, and lifecycle cost with reproducible evidence.
 
 The [technical-solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md) turns existing verification, governance, retrieval, telemetry, and workflow pages into a reusable due-diligence rubric. Its core rule is that claims should be reproduced on representative data and workflows with baselines, thresholds, traces, and failure evidence before the solution is accepted.
@@ -66,6 +68,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [Technical-solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-dev-wiki-leaf-update-watch-2026-08-27T210207-0400.json)
@@ -112,6 +115,7 @@ For regulated, sovereign, or sensitive workflows, missing evidence for data resi
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with benchmark provenance, environment setup, scoring, domain-fit, and operational-relevance evidence.
 - Maintained on 2026-09-20 with sandbox-contamination, trajectory-review, evaluator-independence, conflict-disclosure, and safety-variability rubric evidence.
 - Maintained on 2026-09-13 with private-ticket evals, inventory proof, kill switches, vendor-review evidence, community-component provenance, and cost-per-resolved-task criteria.
 - Created on 2026-08-20 from the technical-solution evaluation query fragment as a durable due-diligence rubric.

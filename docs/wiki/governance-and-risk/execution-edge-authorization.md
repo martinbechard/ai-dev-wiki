@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds agentic identity and runtime-security evidence. Local execution-edge authorization should treat non-human identities, MCP server access, browser or computer-use sessions, and autonomous runtime actions as distinct authorization edges with scoped credentials, revocation, monitoring, and human escalation paths.
+
 The September 27 topic news collector source adds tool-sandbox and MCP approval evidence from coding-agent and enterprise MCP sources. Weekly coding-agent configuration updates make permission fixes, symlink write handling, sandbox boundaries, prompt-injection fixes, and MCP metadata limits part of execution-edge review, while enterprise MCP approval guidance reinforces publisher, transport, authentication, least-privilege, and audit-log checks before a server is exposed to agents.
 
 Execution edge authorization treats each model-to-tool, agent-to-agent, user-to-agent, and agent-to-system connection as an enforceable authorization boundary. The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) and [August 22 leaf update watch source](../../../raw/processed/2026-08-22/ai-dev-wiki-leaf-update-watch-2026-08-22T210201-0400.json) add the local rule that reachability is not authorization: an agent seeing a tool, channel, connected app, database surface, sandbox, or payment-like action does not mean it may use that edge.
@@ -59,6 +61,7 @@ The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-de
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
@@ -103,6 +106,7 @@ The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with non-human identity, MCP-server access, browser/computer-use session, revocation, monitoring, and escalation evidence.
 - Maintained on 2026-09-27 with coding-agent permission, sandbox, MCP publisher, transport, authentication, and audit-log approval evidence.
 - Maintained on 2026-10-05 with hosted-browser approval, remote-CLI MCP, cloud-identity, sandbox, containment, and monitoring evidence.
 - Maintained on 2026-09-20 with execution-time enforcement, machine-speed governance, MCP-as-API-boundary, policy-check, rate-limit, and escalation evidence.

@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds current Copilot cloud-agent Slack and GitHub Enterprise tracking evidence. Broad GitHub Copilot and Slack product coverage remains upstream-owned; locally, channel-started or channel-steered cloud-agent sessions should preserve conversation trigger identity, enterprise policy scope, agent status, pull-request linkage, and repository permission evidence before channel-visible progress is treated as review-ready.
+
 Shared channel agent sessions let teams start, steer, and review coding-agent work from collaborative chat while preserving repository controls. The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) records qualifying GitHub changelog signals for Copilot sessions in Slack and Microsoft Teams:
 
 - Team members can start or add context to cloud coding-agent work from the conversation.
@@ -40,10 +42,12 @@ The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai
 - Link shared-channel sessions to [delegated coding handoffs](delegated-coding-handoffs.md) and [runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md) so later reviewers can reconstruct who asked for what, what changed, and which gates passed.
 - Treat channel-visible feedback, previews, and approval widgets as evidence inputs; require repository and admin-control records before accepting them as authorization for code changes.
 - Distinguish chat-shared agent sessions from coordinator-managed branch fleets; preserve shared goals and memory as coordination context while keeping each branch, pull request, review, and conflict decision independently attributable.
+- Preserve channel trigger identity, enterprise policy scope, cloud-agent status, pull-request linkage, and repository permission evidence for cloud agents started or tracked from shared chat.
 
 ## Authoritative Sources
 
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
@@ -79,6 +83,7 @@ The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with cloud-agent Slack, enterprise tracking, trigger-identity, status, pull-request-linkage, and permission evidence.
 - Maintained on 2026-09-20 with coordinator-managed branch-fleet, shared-memory, parallel-thread, branch-isolation, pull-request, and conflict-resolution evidence.
 - Maintained on 2026-08-29 with shared Slack and Teams session, cross-app continuation, interrupted-session restore, review-load, and task-switching evidence.
 - Maintained on 2026-08-29 with shared-agent trigger, custom-agent catalog, usage visibility, effort, context-window, model-capability, and pre-PR review evidence.

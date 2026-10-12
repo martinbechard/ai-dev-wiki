@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds workflow-based skill-catalog evidence from RuleSkill. Local skill selection should start from the job-to-be-done, provenance, verification status, update recency, and reviewability instead of copying catalog instructions wholesale into always-loaded prompts.
+
 Portable agent skills are reusable procedures that can travel across agent tools without becoming one overloaded prompt. The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) frames the core problem as procedural debt: teams accumulate prompt bloat, repeated setup explanations, fragmented tool-specific rules, and weak verification when each agent harness owns a different copy of the same working method.
 
 A local skill should be narrower than a broad operating manual. It should name the triggering situation, the job it owns, the tools or references it expects, the boundaries that stop misuse, the output shape, and the proof standard required before completion. This keeps the live prompt small while giving the agent an inspectable procedure when the work calls for it.
@@ -67,6 +69,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 ## Authoritative Sources
 
+- [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
 - [durable instructions and skill files](durable-instructions-and-skill-files.md)
@@ -116,6 +119,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with workflow-based skill selection, provenance, verification status, update recency, and reviewability guidance.
 - Maintained on 2026-09-21 with skill triggerability, instruction-boundary, and validation-hook evidence.
 - Created on 2026-06-23 from source-backed guidance on portable procedures, runbook composition, scope boundaries, procedural debt, and proof standards for agent work.
 - Maintained on 2026-07-01 with portable procedure ownership, trigger rules, required tools, and verification standards.

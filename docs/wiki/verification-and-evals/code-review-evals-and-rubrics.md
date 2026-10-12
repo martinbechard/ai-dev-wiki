@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds generated-code review and code-review-eval evidence. Review rubrics should separate code-volume throughput from accepted software quality, preserve primary task or study evidence, and report whether the reviewer found design, security, maintainability, and intent-alignment issues rather than only counting comments.
+
 AI-assisted code review evals measure whether a model or harness can inspect changes against the repository's standards, source evidence, and risk profile. They should test the review task itself, not only whether the model can produce plausible comments.
 
 Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats review as part of the controlled coding loop, and the [Dwarf Star source](../../../raw/processed/link-aliases/local-model-operations.md) is evidence that code review prompts can be part of representative model calibration.
@@ -215,6 +217,7 @@ The October 11 raw sources add rubric-calibration, open-weight model-selection, 
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
@@ -302,6 +305,7 @@ The October 11 raw sources add rubric-calibration, open-weight model-selection, 
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with generated-code review, accepted-quality, primary-task evidence, and design/security/maintainability rubric guidance.
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
 - Maintained on 2026-10-11 with anchored rubric, human-calibration, provenance, dependency, license, serving, and review-capacity evidence.
 - Maintained on 2026-10-07 with ReviewBench corpus, label-source, matcher, judge, and independent-validation evidence.

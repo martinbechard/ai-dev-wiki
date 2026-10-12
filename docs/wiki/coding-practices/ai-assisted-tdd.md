@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds VS Code custom-agent and empirical TDD workflow evidence. Local AI-assisted TDD should keep the fail-first behavior target, implementation step, refactor step, and final rerun distinct, and should record whether a custom agent changed the test, implementation, or review role before accepting the loop.
+
 TDD gives the agent a concrete design target. A failing test turns an intended behavior, contract, edge case, or regression into executable acceptance criteria before implementation begins.
 
 The local loop is to add or repair one meaningful failing test, implement the smallest code change that satisfies the test while keeping existing behavior intact, refactor the design, and rerun the relevant suite. The test output then becomes evidence for the next agent step.
@@ -55,6 +57,8 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Treat test edits during agent repair as reviewable changes: the agent may propose better tests, but weakening acceptance criteria to satisfy completion is a boundary violation unless a human accepts the changed requirement.
 - Pair regression checks with an explicit baseline and contract so the agent cannot substitute a passing but irrelevant test run for behavior preservation.
 - Inspect the changed tests and the changed code together when an AI coding assistant claims a regression is fixed.
+- Preserve which agent or role authored, changed, or reviewed tests so a custom TDD agent does not blur acceptance criteria with implementation repair.
+- Keep fail-first, implementation, refactor, and final rerun evidence separate in the handoff.
 
 ## Authoritative Sources
 
@@ -72,6 +76,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 
 ## Related Code
 
@@ -97,6 +102,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with custom-agent TDD role, fail-first, refactor, and final-rerun evidence.
 - Maintained on 2026-09-20 with confidence-building tests before AI rewrites plus generated-test challenge, mutation-testing, and design-stage check evidence.
 - Maintained on 2026-10-03 with fail-first feedback-loop and anti-test-weakening guardrail evidence.
 - Maintained on 2026-10-05 with regression-loop, baseline, contract, test-quality, and passing-tests-as-evidence guidance.

@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds AI-generated-code review evidence from developer research and public commentary. Locally, intelligent review should measure whether generated-code volume creates review bottlenecks, whether reviewers receive enough intent and risk context to find design flaws, and whether secondary reports are supported by primary review artifacts before becoming durable guidance.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds AI-review governance and human-accountability evidence. Review-agent invocation should record who may request review, whose organization or cost center pays for it, which repository policy permits it, and which human remains accountable for merge decisions. Agent-authored changes should be reviewed from intent and risk outward, with automation used as one evidence layer rather than a replacement for human ownership.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds review-stack and review-UX evidence. AI-generated code review should support overview, zoom or filtering, details-on-demand, risk signals, confidence signals, and source-backed finding evidence; review tools that process entire agent-written branches still need human final authority and explicit privacy boundaries.
@@ -218,6 +220,8 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 - Treat AI pull-request approvals as review-system evidence only when repository policy, path scope, content exclusions, scanner results, stale-approval dismissal, and human merge accountability are recorded.
 - Require agent PR-completion loops to preserve review-feedback, failed-check, conflict, rerun, readiness, and human-merge evidence before review automation becomes merge-state input.
 - Treat stronger-model review results as scoped evidence whose cross-file defect coverage, cost, false-positive load, and validated repairs still need repository-specific calibration.
+- Measure generated-code review pressure with accepted-risk, escaped-defect, reviewer-latency, and design-flaw evidence rather than lines generated or comments produced.
+- Prefer primary review artifacts, study records, or reproducible review tasks before turning secondary commentary about AI-generated code into local rules.
 - Preserve auto-resolution reasons, addressed-commit evidence, shell-command validation output, and review-effort setting when AI review changes the PR comment lifecycle.
 - Keep AI-generated production code explainable and repairable by a human owner even when review automation reduces required line-by-line reading.
 - Use selective human review only when risk tier, rollback plan, tests, ownership, and failure-mode evidence justify the lighter gate.
@@ -241,6 +245,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
@@ -351,6 +356,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with generated-code review pressure, primary review evidence, and secondary-commentary caveat guidance.
 - Maintained on 2026-10-10 with organization-billed AI review, requester authorization, intent-first review, risk routing, and accountable human merge evidence.
 - Maintained on 2026-10-09 with overview, filter, details-on-demand, risk, confidence, source-backed finding, privacy-boundary, and human-authority review evidence.
 - Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, independent-review-loop, architectural-impact, and bounded-rerun evidence.

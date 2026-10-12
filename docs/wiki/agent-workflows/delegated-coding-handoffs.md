@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds SDLC handoff and context-packet evidence. Delegated work should start from a task contract, run in a scoped workspace or sandbox with explicit tokens and budgets, pass deterministic gates that the implementing agent cannot weaken, and return a handoff packet with sourced current facts, evidence, unknowns, and next review action.
+
 Delegated coding handoffs define how an agent returns work to the human or coordinator for review. The handoff needs to state what changed, which evidence supports completion, what could not be verified, and which decisions still require human acceptance.
 
 The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats delegated coding as an execution-control workflow: the agent reads, edits, runs code, reports results, and leaves visible planning, tool output, verification evidence, and human-control checkpoints. The [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md) generalizes the same concern into a product process-layer pattern: progress, approvals, traces, costs, tool calls, failures, and validation stay visible while work runs. Together, the sources make delegated coding handoffs both an engineering-control problem and a product-observability problem; the handoff is not complete until the next human or agent can see what changed, why it is acceptable, and which controls remain active.
@@ -71,6 +73,8 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 - Include typed invariants, artifact references, count or hash checks, ingress validation, and fail-closed behavior when a coordinator hands work between agents.
 - Preserve enough intent context for an independent reviewer to reproduce or reject findings without relying on the implementing agent's conversation.
 - Record trusted workspace, remote execution surface, final-answer forwarding, reusable worktree folder, and MCP configuration destination when editor-native delegation changes where the handoff evidence lives.
+- Start delegated work from a task contract that names scope, non-goals, stop conditions, workspace or sandbox, token and budget boundaries, and the gates the agent may not edit.
+- Return handoff packets with sourced facts, evidence, unknowns, and next review action so the receiver can inspect rather than reconstruct the run.
 
 ## Authoritative Sources
 
@@ -99,6 +103,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
+- [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 
 ## Related Code
 
@@ -128,6 +133,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with task-contract, scoped-sandbox, non-writable-gate, and source-linked handoff packet evidence.
 - Maintained on 2026-09-29 with trust/action/access delegation controls, typed handoff invariants, artifact references, ingress validation, fail-closed behavior, and fresh-context review evidence.
 - Maintained on 2026-10-07 with trusted-workspace, remote-execution, final-answer-forwarding, reusable-worktree, and MCP-configuration handoff evidence.
 - Maintained on 2026-09-15 with workspace-permission, connected-source, Git-worktree, deployment-diagnosis, and telemetry-hypothesis handoff evidence.

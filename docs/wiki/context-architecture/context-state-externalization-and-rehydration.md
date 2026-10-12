@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) reinforces handoff packets as rehydration inputs. A compact packet should preserve objective, constraints, sourced facts, evidence, unknowns, and next action, while rehydration still checks mutable facts against current source files, issue records, logs, and work artifacts before acting.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-agent session-transfer evidence. Transcript and instruction portability are different from artifact portability: a handoff can preserve project brief, tone, and formatting while still requiring PDFs, images, source files, and other attachments to be reattached or reverified from durable storage.
 
 Context state externalization is the practice of moving agent working state out of the conversation and onto durable project files before the model needs to rely on it. The [context management source](../../../raw/processed/Why Doesn't Anyone Teach Developers About Context Management?.md), [context loss source](../../../raw/processed/Your AI Agent Already Forgot Half of What You Told It.md), [context collapse source](../../../raw/processed/When Context Collapses Teaching Agents to Detect and Recover from Lost Memory.md), and [lost-in-the-middle source](../../../raw/processed/So Long and Thanks for All the Context.md) frame the same local rule: important state should live in files that a fresh or recovering session can read, verify, and continue from.
@@ -100,10 +102,12 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - For cross-agent handoffs, preserve objective, changed files, rejected approaches, verification evidence, unresolved questions, and next safe step instead of treating personal memory or full transcripts as the shared source of truth.
 - Rehydrate governance-critical ledgers, approvals, and authorization context from durable state before relying on compacted summaries.
 - Inspect memory writes, namespaces, TTL, decay rules, and consolidation diffs before relying on recalled agent memory as current state.
+- Treat compact handoff packets as indexed continuity evidence, not current authority, until mutable facts have been refreshed from durable project records.
 
 ## Authoritative Sources
 
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
+- [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -159,6 +163,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with compact handoff packet and mutable-fact refresh evidence.
 - Maintained on 2026-10-06 with agent-memory write-path, namespace, TTL, decay, write-policy, and consolidation-diff evidence.
 - Maintained on 2026-09-21 with repository/task/reference/decision context layering and compaction-summary trust-boundary evidence.
 - Maintained on 2026-09-23 with cross-agent handoff fields and personal-memory versus shared-decision boundaries.

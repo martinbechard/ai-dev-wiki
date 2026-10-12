@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds evidence-producing harness signals. A coding-agent harness should distinguish guidance from enforcement by exposing post-edit hooks, deterministic tests, read-only reviewer agents, permission rules, and human accept-or-reject gates as separate components with receipts.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds current harness-architecture evidence from public practice sources. Locally, harness component inventories should include the execution loop, tools, memory or context layer, permissions, identity, approvals, observability, durable state, sandboxing, and audit trails as separately owned runtime surfaces instead of treating model quality as the only implementation variable.
 
 The September 27 topic news collector source adds a concise agent-harness definition and current control-plane vocabulary. Current public practice describes the harness as the loop that runs tool execution, context and memory, permissions or sandboxing, IDE or terminal integration, handoffs, replay, audit logs, and evidence records; locally, those remain harness components only when they are inspectable runtime surfaces rather than hidden product claims.
@@ -164,10 +166,12 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 - Keep security-taskflow prompting separate from tool execution evidence: build, fuzz, coverage, crash triage, and report artifacts should be inspectable outside the model transcript.
 - Treat handoff records, replay state, audit logs, evidence records, context and memory management, permission checks, sandboxing, and IDE or terminal bridges as harness components when they affect reviewability or control.
 - Treat pre-execution action monitors, fail-closed behavior, human-review queues, monitor coverage limits, and evasion notes as harness components when agents can take consequential actions.
+- Keep hooks, deterministic tests, read-only reviewer agents, permission rules, and human acceptance gates inspectable as enforcement components rather than advisory prompt text.
 
 ## Authoritative Sources
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
+- [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)

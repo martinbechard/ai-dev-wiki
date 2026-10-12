@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds LLM-as-judge bias evidence from community discussion. Locally, judge outputs should be checked for rubric-position, length, style, and presentation bias before they are used as acceptance evidence, and community-only signals should trigger calibration checks rather than immediate durable conclusions.
+
 Eval graders can be deterministic tools, human review, or model judges. Deterministic checks include compilers, linters, type checkers, schema validators, unit tests, integration tests, static analysis, and security scans. Judgment checks include human review, product review, architecture review, rubric-based LLM-as-judge, and pair comparison.
 
 LLM-as-judge is useful when there is no single ground truth, such as explanation quality, coherence, helpfulness, relevance, tone, safety, or competing design choices. It should be used with explicit rubrics, examples, and source references because a model's explanation is not proof that the judgment is correct.
@@ -52,6 +54,7 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [verification loops and evals](verification-loops-and-evals.md)
@@ -88,6 +91,7 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with LLM-as-judge presentation-bias caveats and calibration-check guidance.
 - Maintained on 2026-09-28 with judge-routing, held-out-label, false-approval, slice-reliability, and abstention evidence.
 - Created on 2026-06-23 to hold deterministic grader, human review, and LLM-as-judge boundaries.
 - Maintained on 2026-06-26 with trace-linked judge results and judge-provider governance.

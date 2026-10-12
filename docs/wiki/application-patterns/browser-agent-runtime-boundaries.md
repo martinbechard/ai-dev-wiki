@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds AI-native browser and browser-agent benchmark signals. Broad browser product coverage stays upstream; locally, browser-agent runtime boundaries should preserve sign-in state, tool permissions, irreversible-action checkpoints, observation limits, and benchmark task provenance before browser automation evidence is used for adoption decisions.
+
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds desktop app control as an adjacent runtime boundary to browser automation. When an agent can operate local applications, the same local pattern applies: approval prompts, always-allowed app review, OS permission setup, organization disablement, and reset procedures are part of the runtime contract, not product-specific background.
 
 The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) reinforces the same app-control boundary with public-preview desktop automation evidence. Local runtime design should preserve the requested app-control outcome, app allowlist decision, accessibility or screen-recording permission state, organization policy, sensitive-app exclusions, and reset path before desktop control becomes a repeatable development workflow.
@@ -69,6 +71,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Authoritative Sources
 
+- [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
@@ -112,6 +115,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-12 with AI-native browser, browser-agent benchmark, sign-in, permission, irreversible-action, observation-limit, and benchmark-provenance evidence.
 - Maintained on 2026-10-02 with desktop app-control approval, OS-permission, organization-policy, and reset-procedure boundaries.
 - Maintained on 2026-10-03 with app-control outcome, allowlist, accessibility or screen-recording permission, sensitive-app exclusion, policy, and reset evidence.
 - Maintained on 2026-09-13 with local-data-plus-internet risk, inherited browser state, disposable sandbox, short-lived credential, and monitored-runtime guidance.
