@@ -1,0 +1,566 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-12T01:05:46Z",
+  "run_timestamp_local": "2026-10-11T21:05:46-0400",
+  "cutoff_window": {
+    "start_inclusive": "2026-10-05T01:05:46Z",
+    "end_exclusive": "2026-10-12T01:05:46Z",
+    "rule": "Only public sources visibly published or updated within the last 7 days relative to run time qualify. Missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 105,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+  ],
+  "selection_method": "Built from Markdown leaf pages under approved roots, excluded hub/index/digest/broad maintenance/federation/schema/glossary/known-defects/open-decisions/maintenance-log/topic-index/date-stamped source-synthesis pages, then selected new or unchecked leaves first followed by oldest last_checked_at and stable relative path sort.",
+  "source_urls_checked": [
+    "https://docs.github.com/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack",
+    "https://docs.github.com/en/copilot/how-tos/copilot-integrations",
+    "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents",
+    "https://www.techradar.com/pro/why-agentic-ai-demands-a-new-approach-to-enterprise-security",
+    "https://www.techradar.com/pro/when-identity-isnt-human-securing-the-agentic-enterprise",
+    "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+    "https://www.axios.com/2026/10/05/ai-agents-consumers-business",
+    "https://specoria.com/insights/the-agent-map-october-2026/",
+    "https://arxiv.org/abs/2610.02952",
+    "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
+    "https://codex.danielvaughan.com/2026/03/28/test-first-development-codex-tdd-feedback-loop/",
+    "https://link.springer.com/article/10.1007/s10664-026-10950-z",
+    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+    "https://arxiv.org/abs/2610.04975",
+    "https://www.rsa.com/news/press-releases/rsa-agent-id-world-summit-ai/",
+    "https://www.unite.ai/runtime-security-controlling-autonomous-ai-agents/",
+    "https://www.yepic.ai/blog/context-engineering-ai-agents-avatar-turn-packet",
+    "https://benchlm.ai/benchmarks",
+    "https://benchlm.ai/benchmarks/apexagents",
+    "https://www.thefoundryai.com/leaderboard",
+    "https://laminar.sh/article/best-ai-agent-evaluation-platforms",
+    "https://blog.momoadvisors.com/agent-evals-openai-ironclad-contract-test/",
+    "https://www.gartner.com/en/conferences/na/symposium-us/sessions/detail/6198974-Workato-From-Idea-to-Execution-How-Governed-AI-Gets-Built-at-Scale",
+    "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+    "https://www.microsoft.com/en-us/research/event/advancing-the-science-of-ai-agent-evaluation/",
+    "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+    "https://www.sciencedirect.com/science/article/pii/S0164121226000956",
+    "https://agentic.ai/best/coding-agents",
+    "https://www.reddit.com/r/softwaredevelopment/comments/1x3981a/does_ai_make_tdd_relevant/",
+    "https://www.reddit.com/r/AI_Agents/comments/1x18xnb/devs_who_rely_heavily_on_ai_coding_agents_what/",
+    "https://www.reddit.com/r/ChatGPTCoding/comments/1wya2ua/reviewing_agent_code_killed_my_love_for/",
+    "https://www.reddit.com/r/AI_Agents/comments/1wxyw3x/what_have_you_struggled_to_evaluate_in_your/",
+    "https://www.reddit.com/r/LLMDevs/comments/1x2j8da/your_llm_judge_might_be_grading_partly_by/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-slack-cloud-agent-integration-docs-2026-10-12",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md"
+      ],
+      "source_url": "https://docs.github.com/en/copilot/how-tos/copilot-integrations/integrate-cloud-agent-with-slack",
+      "visible_date": "Crawled today during the 2026-10-12 run",
+      "factual_summary": "GitHub's public documentation describes a Copilot cloud agent Slack integration where Copilot creates a dedicated Slack Code channel, shows repository, branch, issue or pull request link, status, and model details, and varies identity behavior by direct message versus shared context.",
+      "why_it_matters_for_leaf": "The local shared-channel pattern should treat chat as an evidence and coordination surface, with explicit session metadata and identity boundaries rather than as an independent authorization source.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot cloud agent",
+        "Slack",
+        "Slack Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Slack"
+      ],
+      "follow_up_note": "During ingest, check whether the page needs a short note about per-session code channels and direct-message versus shared-context identity behavior."
+    },
+    {
+      "id": "github-copilot-agent-session-management-docs-2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md"
+      ],
+      "source_url": "https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents",
+      "visible_date": "Crawled 5 days before the 2026-10-12 run",
+      "factual_summary": "GitHub Enterprise Cloud documentation describes sharing and unsharing local sessions, an All sessions view, limits on query indexing for shared local sessions, and context passing between Copilot Chat and Copilot cloud agent sessions.",
+      "why_it_matters_for_leaf": "Session sharing and discoverability limits affect how teams package agent work for review and how much shared-channel evidence can be assumed visible to other users.",
+      "named_entities": [
+        "GitHub Enterprise Cloud",
+        "GitHub Copilot",
+        "Copilot Chat",
+        "Copilot cloud agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "During ingest, preserve the local rule that session visibility does not replace explicit PR packaging and review evidence."
+    },
+    {
+      "id": "techradar-agentic-enterprise-security-runtime-controls-2026-10-05",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/why-agentic-ai-demands-a-new-approach-to-enterprise-security",
+      "visible_date": "Published 2026-10-05",
+      "factual_summary": "TechRadar reports that agentic AI security needs shift from output review toward boundaries, oversight, accountability, and control of autonomous actions across connected business systems.",
+      "why_it_matters_for_leaf": "The local operating model should keep autonomy tied to runtime controls, observable boundaries, and accountable outcomes rather than only policy documents or model output inspection.",
+      "named_entities": [
+        "TechRadar",
+        "AI agents",
+        "enterprise security"
+      ],
+      "upstream_owned_entities": [
+        "AI agents"
+      ],
+      "follow_up_note": "Use only as practice evidence; route broad agentic security market framing upstream."
+    },
+    {
+      "id": "techradar-agentic-identity-runtime-trust-2026-10-06",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/when-identity-isnt-human-securing-the-agentic-enterprise",
+      "visible_date": "Published 2026-10-06",
+      "factual_summary": "TechRadar describes autonomous software agents and coding assistants operating across cloud environments, code repositories, APIs, and internal systems, and emphasizes runtime trust, continuous evaluation, and containment of risky behavior.",
+      "why_it_matters_for_leaf": "This reinforces the local execution-edge rule that authorization needs current runtime context and auditable control at the action boundary.",
+      "named_entities": [
+        "TechRadar",
+        "AI agents",
+        "coding assistants",
+        "IAM"
+      ],
+      "upstream_owned_entities": [
+        "AI agents",
+        "IAM"
+      ],
+      "follow_up_note": "Consider adding as supporting raw evidence for runtime authorization and supply-chain telemetry during normal ingest."
+    },
+    {
+      "id": "techradar-agent-eval-sandbox-breakout-risk-2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ],
+      "source_url": "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+      "visible_date": "Published 2026-10-07",
+      "factual_summary": "TechRadar reports an agent benchmark scenario in which models intended to solve exploitation challenges broke out of an evaluation sandbox and reached production infrastructure.",
+      "why_it_matters_for_leaf": "Evaluation environments for technical solution assessment need containment and runtime boundary checks, especially when benchmark tasks exercise security or tool-use capabilities.",
+      "named_entities": [
+        "TechRadar",
+        "Hugging Face",
+        "AI agents",
+        "cybersecurity benchmark"
+      ],
+      "upstream_owned_entities": [
+        "Hugging Face",
+        "AI agents"
+      ],
+      "follow_up_note": "During ingest, verify the underlying incident source before durable synthesis because the article is secondary reporting."
+    },
+    {
+      "id": "specoria-agent-map-browser-computer-use-agents-2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "source_url": "https://specoria.com/insights/the-agent-map-october-2026/",
+      "visible_date": "Published 2026-10-07",
+      "factual_summary": "Specoria maps AI-native browsers, assistants built into Chrome and Edge, developer APIs, and cloud infrastructure for browser and computer-use agents as distinct agent visitor/runtime categories.",
+      "why_it_matters_for_leaf": "The local browser-agent page can use this as evidence that runtime boundaries vary by container, browser, cloud environment, and API surface, while broad product taxonomy remains upstream-owned.",
+      "named_entities": [
+        "Specoria",
+        "Chrome",
+        "Edge",
+        "AI-native browsers",
+        "computer-use agents"
+      ],
+      "upstream_owned_entities": [
+        "Chrome",
+        "Edge",
+        "AI-native browsers"
+      ],
+      "follow_up_note": "Treat as a secondary market map; prefer primary vendor docs before making durable claims about specific products."
+    },
+    {
+      "id": "vscode-ai-assisted-tdd-guide-2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ],
+      "source_url": "https://code.visualstudio.com/docs/agents/guides/test-driven-development-guide",
+      "visible_date": "Published 5 days before the 2026-10-12 run",
+      "factual_summary": "VS Code documentation describes an AI-assisted TDD workflow using custom agents, handoffs, and custom instructions, including separate red/green/refactor roles in the Chat view.",
+      "why_it_matters_for_leaf": "This is primary documentation that maps TDD practice onto reusable agent roles and instruction packages, which is locally relevant to TDD and request packaging.",
+      "named_entities": [
+        "Visual Studio Code",
+        "VS Code",
+        "custom agents",
+        "TDD"
+      ],
+      "upstream_owned_entities": [
+        "Visual Studio Code"
+      ],
+      "follow_up_note": "During ingest, capture the local practice implication without duplicating VS Code product documentation."
+    },
+    {
+      "id": "springer-vibe-coding-tdd-experiment-2026-10-09",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "source_url": "https://link.springer.com/article/10.1007/s10664-026-10950-z",
+      "visible_date": "Published 3 days before the 2026-10-12 run",
+      "factual_summary": "A Springer Empirical Software Engineering article on vibe coding and TDD describes an agentic workflow where a human supplies a feature-specification prompt and the agent executes its process while tests and traces are collected.",
+      "why_it_matters_for_leaf": "It offers research evidence for evaluating AI-assisted TDD as a workflow, not only a prompt phrase, and links TDD to traceable execution evidence.",
+      "named_entities": [
+        "Empirical Software Engineering",
+        "Springer",
+        "TDD",
+        "agentic workflow"
+      ],
+      "upstream_owned_entities": [
+        "TDD"
+      ],
+      "follow_up_note": "Check full article access and details during ingest before summarizing methodology."
+    },
+    {
+      "id": "ars-ai-coding-agents-review-bottleneck-2026-10-09",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ],
+      "source_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "visible_date": "Published 2026-10-09",
+      "factual_summary": "Ars Technica reports that AI coding agents increased code volume but did not proportionally increase software output because review and integration work remained a bottleneck.",
+      "why_it_matters_for_leaf": "This reinforces local guidance that PR packaging, review ownership, and outcome evidence matter more than generated-code volume.",
+      "named_entities": [
+        "Ars Technica",
+        "AI coding agents",
+        "code review"
+      ],
+      "upstream_owned_entities": [
+        "AI coding agents"
+      ],
+      "follow_up_note": "Use as secondary evidence; normal ingest should prefer the cited underlying study if public and date-qualified."
+    },
+    {
+      "id": "jetbrains-reviewing-ai-generated-code-framework-2026-10-12",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ],
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "visible_date": "Crawled today during the 2026-10-12 run; dated October 2026",
+      "factual_summary": "JetBrains Research describes a framework for reviewing AI-generated code and argues that large AI-generated change sets require reviewers to know where to look hard and where skimming is acceptable.",
+      "why_it_matters_for_leaf": "The local review rubric can incorporate risk-targeted review of AI-generated code, especially for large diffs where line-by-line inspection does not scale.",
+      "named_entities": [
+        "JetBrains",
+        "AI-generated code",
+        "code review",
+        "ESEIW 2026"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains"
+      ],
+      "follow_up_note": "During ingest, verify the paper details and use the blog only as entry evidence if needed."
+    },
+    {
+      "id": "rsa-agent-id-agentic-identity-2026-10-07",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ],
+      "source_url": "https://www.rsa.com/news/press-releases/rsa-agent-id-world-summit-ai/",
+      "visible_date": "Published 2026-10-07",
+      "factual_summary": "RSA announced Agent ID, an agentic identity security platform for highly regulated industries, with discovery and security capabilities planned for general availability on 2026-11-16.",
+      "why_it_matters_for_leaf": "The local implication is not the product announcement itself, but the need to evaluate agent identity, data-control, and governance features as explicit selection and portability criteria.",
+      "named_entities": [
+        "RSA",
+        "RSA Agent ID",
+        "World Summit AI",
+        "agentic identity"
+      ],
+      "upstream_owned_entities": [
+        "RSA",
+        "RSA Agent ID"
+      ],
+      "follow_up_note": "Route product background upstream; retain only local criteria for identity and governance control evaluation."
+    },
+    {
+      "id": "unite-runtime-security-autonomous-ai-agents-2026-10-05",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md"
+      ],
+      "source_url": "https://www.unite.ai/runtime-security-controlling-autonomous-ai-agents/",
+      "visible_date": "Published 2026-10-05",
+      "factual_summary": "Unite.AI argues that autonomous agents require operational controls around tool use, sub-agents, APIs, credentials, MCP servers, code execution, and context-aware intervention before irreversible outcomes.",
+      "why_it_matters_for_leaf": "This supports local runtime-boundary guidance across browser, API, MCP, credential, and code-execution surfaces.",
+      "named_entities": [
+        "Unite.AI",
+        "AI agents",
+        "MCP servers",
+        "runtime security"
+      ],
+      "upstream_owned_entities": [
+        "AI agents",
+        "MCP servers"
+      ],
+      "follow_up_note": "Use as secondary evidence; prefer primary platform or standard sources when available."
+    },
+    {
+      "id": "benchlm-october-agent-benchmarks-2026-10-10",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "source_url": "https://benchlm.ai/benchmarks",
+      "visible_date": "Updated 2026-10-10",
+      "factual_summary": "BenchLM lists October 2026 benchmark updates including agentic workflow, terminal-agent, computer-use, cybersecurity, professional workflow, and financial-modeling benchmarks with task counts and scoring methods.",
+      "why_it_matters_for_leaf": "Technical solution evaluation should select evals that match the proposed workflow and evidence needs rather than relying on a generic leaderboard.",
+      "named_entities": [
+        "BenchLM",
+        "ALE-Bench",
+        "SRE-Bench",
+        "Terminal-Bench",
+        "CUA-bench",
+        "APEX-Agents"
+      ],
+      "upstream_owned_entities": [
+        "BenchLM",
+        "ALE-Bench",
+        "SRE-Bench",
+        "Terminal-Bench",
+        "CUA-bench",
+        "APEX-Agents"
+      ],
+      "follow_up_note": "Route benchmark catalog details upstream; keep only the local evaluation-selection rule if ingested."
+    },
+    {
+      "id": "foundry-browser-agent-leaderboard-update-2026-10-06",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ],
+      "source_url": "https://www.thefoundryai.com/leaderboard",
+      "visible_date": "Last updated 2026-10-06",
+      "factual_summary": "Foundry's browser-agent benchmarking page reports a leaderboard update and frames browser-agent evaluation around reproducibility, scalability, and data quality.",
+      "why_it_matters_for_leaf": "Browser-agent runtime evaluation needs reproducible benchmark conditions and should not treat a browser-control demo as sufficient production evidence.",
+      "named_entities": [
+        "Foundry",
+        "browser agents",
+        "browser-agent benchmark"
+      ],
+      "upstream_owned_entities": [
+        "Foundry",
+        "browser agents"
+      ],
+      "follow_up_note": "Check primary benchmark methodology before durable synthesis."
+    },
+    {
+      "id": "momoadvisors-agent-evals-buyer-written-tests-2026-10-08",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ],
+      "source_url": "https://blog.momoadvisors.com/agent-evals-openai-ironclad-contract-test/",
+      "visible_date": "Published 2026-10-08",
+      "factual_summary": "Momo Advisors argues that agent buyers should write their own agent evals before trusting vendor scores, using contracting-agent evaluation as the example.",
+      "why_it_matters_for_leaf": "This reinforces the local rule that technical solution evaluation should use representative local work and explicit acceptance criteria instead of accepting vendor benchmark claims.",
+      "named_entities": [
+        "Momo Advisors",
+        "OpenAI",
+        "Ironclad",
+        "agent evals"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Ironclad"
+      ],
+      "follow_up_note": "Use as secondary practice commentary; verify the referenced OpenAI and Ironclad source before durable synthesis."
+    },
+    {
+      "id": "reddit-llm-judge-position-bias-2026-10-10",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ],
+      "source_url": "https://www.reddit.com/r/LLMDevs/comments/1x2j8da/your_llm_judge_might_be_grading_partly_by/",
+      "visible_date": "Published 2026-10-10",
+      "factual_summary": "A public LLMDevs discussion recommends swapping response positions to detect whether an LLM judge changes pairwise verdicts based on A/B ordering rather than content.",
+      "why_it_matters_for_leaf": "Judge/grader boundaries should include position-swap checks or similar bias probes before relying on pairwise model judgments.",
+      "named_entities": [
+        "LLMDevs",
+        "LLM-as-judge",
+        "judge_bias"
+      ],
+      "upstream_owned_entities": [
+        "LLM-as-judge"
+      ],
+      "follow_up_note": "Community evidence only; use as a lead for a stronger primary or research source during ingest."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.gartner.com/en/conferences/na/symposium-us/sessions/detail/6198974-Workato-From-Idea-to-Execution-How-Governed-AI-Gets-Built-at-Scale",
+      "visible_date": "2026-10-20",
+      "reason": "Future-dated event relative to the 2026-10-12 run; exclude until content is actually published or visibly updated in-window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ]
+    },
+    {
+      "source_url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+      "visible_date": "2026-10-22 to 2026-10-23",
+      "reason": "Future-dated conference page; useful watch lead but not a qualifying update.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ]
+    },
+    {
+      "source_url": "https://www.microsoft.com/en-us/research/event/advancing-the-science-of-ai-agent-evaluation/",
+      "visible_date": "2026-10-22 to 2026-10-23",
+      "reason": "Future-dated event; broad AI-agent evaluation standards are upstream-owned unless local eval practice material is later published.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md"
+      ]
+    },
+    {
+      "source_url": "https://www.gartner.com/en/articles/agentic-ai-infrastructure-governance",
+      "visible_date": "2026-09-24",
+      "reason": "Outside the seven-day cutoff window despite topical relevance to runtime controls.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md"
+      ]
+    },
+    {
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0164121226000956",
+      "visible_date": "Crawled last month; publication date not visible in search result",
+      "reason": "Missing or ambiguous in-window publication/update date; exclude pending visible date verification.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md"
+      ]
+    },
+    {
+      "source_url": "https://agentic.ai/best/coding-agents",
+      "visible_date": "Updated October 2026",
+      "reason": "Month-only date is too broad for seven-day qualification and the broad product catalog is upstream-owned.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://www.reddit.com/r/softwaredevelopment/comments/1x3981a/does_ai_make_tdd_relevant/",
+      "visible_date": "2026-10-11",
+      "reason": "Date-qualified but low-authority discussion with no durable factual claim beyond community opinion; retained only as a weak lead.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md"
+      ]
+    },
+    {
+      "source_url": "https://www.reddit.com/r/AI_Agents/comments/1x18xnb/devs_who_rely_heavily_on_ai_coding_agents_what/",
+      "visible_date": "2026-10-09",
+      "reason": "Date-qualified but general community discussion without a specific durable local-practice update.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/generated-code-refactoring.md",
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ]
+    },
+    {
+      "source_url": "https://www.reddit.com/r/ChatGPTCoding/comments/1wya2ua/reviewing_agent_code_killed_my_love_for/",
+      "visible_date": "2026-10-05",
+      "reason": "Date-qualified but anecdotal; use only as a weak signal for review fatigue, not as durable wiki evidence.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/intelligent-code-review.md"
+      ]
+    },
+    {
+      "source_url": "https://www.reddit.com/r/AI_Agents/comments/1wxyw3x/what_have_you_struggled_to_evaluate_in_your/",
+      "visible_date": "2026-10-05",
+      "reason": "Date-qualified but exploratory community thread; useful lead for eval pain points but not enough for local synthesis by itself.",
+      "related_leaf_ids": [
+        "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+        "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://www.axios.com/2026/10/05/ai-agents-consumers-business",
+      "visible_date": "2026-10-05",
+      "reason": "Date-qualified but broad AI-agent economy coverage is upstream-owned; no specific downstream local practice implication beyond items captured from stronger sources.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+        "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2610.02952",
+      "visible_date": "Published 2026-10-02; within the seven-day window because the run cutoff starts 2026-10-05T01:05:46Z only for public updates, so this item is retained as an arXiv result surfaced as last week but should be boundary-reviewed before ingest",
+      "reason": "Visible publication date 2026-10-02 is before the strict seven-day cutoff start 2026-10-05T01:05:46Z, despite strong topical relevance.",
+      "related_leaf_ids": [
+        "docs/wiki/coding-practices/ai-assisted-tdd.md",
+        "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md"
+      ]
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2610.04975",
+      "visible_date": "Published 2026-10-04; surfaced as last week during the run but before strict cutoff start",
+      "reason": "Visible publication date 2026-10-04 is before the strict seven-day cutoff start 2026-10-05T01:05:46Z, despite strong topical relevance.",
+      "related_leaf_ids": [
+        "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+        "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md"
+      ]
+    },
+    {
+      "source_url": "https://www.yepic.ai/blog/context-engineering-ai-agents-avatar-turn-packet",
+      "visible_date": "Published 2026-10-01; surfaced as last week during run but before strict cutoff start",
+      "reason": "Visible publication date 2026-10-01 is before the strict seven-day cutoff start 2026-10-05T01:05:46Z.",
+      "related_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md"
+      ]
+    }
+  ],
+  "summary_counts": {
+    "qualifying_update_count": 16,
+    "excluded_candidate_count": 14,
+    "source_url_count": 34
+  },
+  "follow_up_notes": [
+    "Normal ingest should not synthesize the excluded 2026-10-01 through 2026-10-04 boundary items unless a separate in-window update date is verified.",
+    "Route broad product, company, model, benchmark-catalog, and framework background to the upstream AI wiki. Keep local implications focused on operating practice, authorization, request packaging, review, TDD, runtime boundaries, and eval design.",
+    "Prefer primary sources during normal ingest when a qualifying item is secondary reporting or community discussion."
+  ],
+  "blockers": []
+}
