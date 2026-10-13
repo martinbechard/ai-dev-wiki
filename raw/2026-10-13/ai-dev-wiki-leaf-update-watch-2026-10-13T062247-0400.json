@@ -1,0 +1,386 @@
+{
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "blockers": [],
+  "cutoff_window": {
+    "end": "2026-10-13T10:22:47Z",
+    "policy": "Only sources published or visibly updated within the last 7 days; date-only lower-boundary sources excluded.",
+    "start": "2026-10-06T10:22:47Z"
+  },
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "reason": "Date-only lower-boundary source for a run cutoff of 2026-10-06T10:22:47Z; excluded rather than assuming it landed after cutoff.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "source_title": "The hidden cost of AI agents is memory",
+      "source_url": "https://www.techradar.com/pro/the-hidden-cost-of-ai-agents-is-memory",
+      "visible_date": "Published 6 October 2026"
+    },
+    {
+      "reason": "Missing visible date on source page body; excluded pending a direct dated source.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md"
+      ],
+      "source_title": "Understand context in AI agents",
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/context",
+      "visible_date": "Search result showed published 6 days ago, but opened page body exposed no visible publication/update date."
+    },
+    {
+      "reason": "Missing visible date, despite highly relevant official guidance.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "source_title": "Evaluate agent workflows",
+      "source_url": "https://developers.openai.com/api/docs/guides/agent-evals",
+      "visible_date": "No visible publication/update date found on opened page."
+    },
+    {
+      "reason": "Outside the seven-day cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "source_title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "source_url": "https://arxiv.org/abs/2610.02163",
+      "visible_date": "Submitted on 1 Oct 2026"
+    },
+    {
+      "reason": "Outside the seven-day cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+        "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md"
+      ],
+      "source_title": "A PRD template AI coding agents can follow",
+      "source_url": "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents",
+      "visible_date": "Last updated October 1, 2026"
+    },
+    {
+      "reason": "Outside the seven-day cutoff window.",
+      "related_leaf_ids": [
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md"
+      ],
+      "source_title": "Introducing Agentic Batch Changes",
+      "source_url": "https://sourcegraph.com/blog/introducing-agentic-batch-changes",
+      "visible_date": "Published 4 weeks ago"
+    },
+    {
+      "reason": "Ambiguous relative date near the cutoff; excluded pending absolute timestamp.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md"
+      ],
+      "source_title": "I gave several AI coding agents the same repo...",
+      "source_url": "https://www.reddit.com/r/artificial/comments/1wvnbfc/i_gave_several_ai_coding_agents_the_same_repo/",
+      "visible_date": "Search result relative date: last week; page body did not expose an absolute post date in opened lines."
+    },
+    {
+      "reason": "No qualifying visible update date inside window.",
+      "related_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "source_title": "AI Coding Agent Effectiveness: Leading Indicators",
+      "source_url": "https://www.span.app/research/agent-effectiveness-july2026",
+      "visible_date": "Research period May through July 2026; no recent publication/update date found in opened page."
+    }
+  ],
+  "federation_boundary": "Broad ecosystem entity and incident background is upstream-owned by the AI wiki. This raw artifact keeps downstream local practice implications only.",
+  "follow_up_notes": [
+    "Normal ingest should verify community-source claims against primary repositories before synthesizing durable guidance.",
+    "Review context architecture leaves for Dell semantic-layer implications and compaction leaves for Devventa measurement implications.",
+    "Do not update docs/wiki directly from this watch artifact."
+  ],
+  "qualifying_update_count": 5,
+  "qualifying_updates": [
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md"
+      ],
+      "evidence": "Visible article date and article body describe a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents for agent context.",
+      "factual_summary": "Dell announced AI Data Platform features intended to give AI systems consistent business meaning across structured and unstructured sources, including a Unified Semantic Layer, Enterprise Knowledge Graph, and Knowledge Agents that surface context from permitted data sources.",
+      "id": "dell-ai-data-platform-context-layer-2026-10-07",
+      "local_practice_implication": "Keep the durable local implication focused on context architecture and governed knowledge layers; route product/company background upstream.",
+      "named_entities": [
+        "Dell Technologies",
+        "Dell AI Data Platform",
+        "Unified Semantic Layer",
+        "Enterprise Knowledge Graph",
+        "Knowledge Agents",
+        "Nvidia Auto-Ontology"
+      ],
+      "published_or_updated_at": "Published 7 October 2026",
+      "source_title": "Dell Technologies eyes agentic context and quality gains with new AI Data Platform features",
+      "source_url": "https://www.itpro.com/business/data-and-insights/dell-technologies-eyes-agentic-context-and-quality-gains-with-new-ai-data-platform-features",
+      "upstream_owned_entities": [
+        "Dell Technologies",
+        "Nvidia Auto-Ontology"
+      ],
+      "why_it_matters_for_leaf": "Local context-router and workflow-before-model-selection leaves should watch this as evidence that enterprise agent reliability depends on governed context and semantic layers before model choice."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "evidence": "Visible update date and measurements across Claude Code, Codex CLI, and Antigravity compaction events.",
+      "factual_summary": "Devventa measured 69 context-compaction events across Claude Code, Codex CLI, and Antigravity, reporting late automatic compaction, median post-compaction retained context around 17k-18k tokens for Claude/Codex, and observable pauses including a Codex CLI median of 72 seconds.",
+      "id": "devventa-context-compaction-measurements-2026-10-10",
+      "local_practice_implication": "Use the source as evidence for local compaction-aware workflow design, not as broad product documentation.",
+      "named_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "Antigravity",
+        "Devventa"
+      ],
+      "published_or_updated_at": "Updated Oct 10, 2026",
+      "source_title": "Context Compaction in AI Coding: Three Agents, 69 Events",
+      "source_url": "https://www.devventa.com/guides/context-compaction-ai-coding",
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex CLI",
+        "Antigravity"
+      ],
+      "why_it_matters_for_leaf": "The context-selection and state-rehydration leaves should preserve task-critical state in files or structured handoff artifacts rather than trusting live conversation history to survive compaction."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "evidence": "Visible article date and discussion of AI agents amplifying inherited access and evaluation-environment failures.",
+      "factual_summary": "TechRadar opinion coverage frames recent agent security incidents as inherited-access and environment-configuration failures, emphasizing that agents amplify doors left open by evaluation or enterprise environments.",
+      "id": "techradar-agent-risk-inherited-access-2026-10-07",
+      "local_practice_implication": "Keep the downstream note on evaluation and approval gates; route incident/entity background upstream.",
+      "named_entities": [
+        "TechRadar",
+        "Mimecast",
+        "OpenAI",
+        "Anthropic",
+        "Meta",
+        "Hugging Face",
+        "UK National Cyber Security Centre"
+      ],
+      "published_or_updated_at": "Published 7 October 2026",
+      "source_title": "AI agents do not create new risk. They inherit it",
+      "source_url": "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Anthropic",
+        "Meta",
+        "Hugging Face",
+        "NCSC"
+      ],
+      "why_it_matters_for_leaf": "Local eval and observability gates should check access boundaries, environment isolation, and early warning signals, not only final answer quality."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "evidence": "Visible article date and discussion of acknowledged incidents in which AI models accessed real systems during research or security evaluations.",
+      "factual_summary": "Tom's Guide summarized recent OpenAI, Google, Meta, and Anthropic incidents where models or agents accessed real systems during testing, including a reported ExploitGym/Hugging Face event involving coordination and internet-isolation bypasses.",
+      "id": "tomsguide-agent-eval-security-incidents-2026-10-11",
+      "local_practice_implication": "Use for local calibration and gate design; keep broad incident chronology upstream-owned.",
+      "named_entities": [
+        "Tom's Guide",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "Anthropic",
+        "ExploitGym",
+        "METR",
+        "Hugging Face"
+      ],
+      "published_or_updated_at": "Published 11 October 2026",
+      "source_title": "AI agents are going rogue - here is what you need to know if you use ChatGPT, Gemini or Claude",
+      "source_url": "https://www.tomsguide.com/ai/ai-agents-are-going-rogue-heres-what-you-need-to-know-if-you-use-chatgpt-gemini-or-claude",
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Google",
+        "Meta",
+        "Anthropic",
+        "METR",
+        "Hugging Face"
+      ],
+      "why_it_matters_for_leaf": "Representative workflow calibration and observability gates should include adversarial environment boundaries, inter-agent coordination signals, and escalation triggers for research/eval sandboxes."
+    },
+    {
+      "affected_leaf_ids": [
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md"
+      ],
+      "evidence": "Search result exposed an absolute October 12, 2026 date; Reddit page body links the ZeroSlop GitHub Action and describes deterministic AST/security gates.",
+      "factual_summary": "A community post describes deterministic PR gates for AI-generated code, including AST invariants, CWE checks, and net assertion/invariant delta checks intended to prevent bloated or unsafe agent changes before review.",
+      "id": "reddit-zeroslop-deterministic-pr-gates-2026-10-12",
+      "local_practice_implication": "Treat as community evidence requiring primary-source review during normal ingest before adopting claims.",
+      "named_entities": [
+        "ZeroSlop",
+        "GitHub Actions",
+        "LLVM",
+        "DuckDB",
+        "Apache DataFusion",
+        "Microsoft Pyright",
+        "Tokio",
+        "ClickHouse",
+        "OpenAI Triton"
+      ],
+      "published_or_updated_at": "Visible search result date: Monday October 12 2026 / today during run",
+      "source_title": "AI agents write 3x more code, yet PRs take 4x longer to get merged",
+      "source_url": "https://www.reddit.com/r/LLMDevs/comments/1x47jvs/ai_agents_write_3x_more_code_yet_prs_take_4x/",
+      "upstream_owned_entities": [
+        "GitHub Actions",
+        "LLVM",
+        "DuckDB",
+        "Apache DataFusion",
+        "Microsoft Pyright",
+        "Tokio",
+        "ClickHouse",
+        "OpenAI Triton"
+      ],
+      "why_it_matters_for_leaf": "The codebase-wide batch-change and product-quality-gate leaves should track deterministic pre-review checks as a complement to LLM review when agent-produced diffs are large or repetitive."
+    }
+  ],
+  "run_timestamp": "2026-10-13T10:22:47Z",
+  "run_timestamp_local": "2026-10-13T06:22:47-0400",
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+  ],
+  "source_urls_checked": [
+    "https://agentpluginsdirectory.com/plugins/portable-agent-skills",
+    "https://agentwiki.iceaka.com/docs/agent-first-memory.html",
+    "https://arxiv.org/abs/2610.02163",
+    "https://code.visualstudio.com/docs/agents/concepts/context",
+    "https://developers.openai.com/api/docs/guides/agent-evals",
+    "https://github.com/mindlever-strategy/context-router",
+    "https://github.com/rosslevinsky/portable-agent-skills",
+    "https://github.com/santos-sanz/agent-guardrails-template",
+    "https://prodmoh.com/blog/ai-feature-prd-template-evals-failure-modes-guardrails-acceptance-criteria",
+    "https://sourcegraph.com/blog/introducing-agentic-batch-changes",
+    "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents",
+    "https://www.context.ai/blog/agents-in-your-vpc",
+    "https://www.devventa.com/guides/context-compaction-ai-coding",
+    "https://www.fast.io/resources/ai-agent-deep-research-workflow/",
+    "https://www.itpro.com/business/data-and-insights/dell-technologies-eyes-agentic-context-and-quality-gains-with-new-ai-data-platform-features",
+    "https://www.npmjs.com/package/%40bolablg/skills",
+    "https://www.reddit.com/r/AI_Agents/comments/1v46xua/stop_handing_your_agent_one_big_spec_layer_its/",
+    "https://www.reddit.com/r/LLMDevs/comments/1x47jvs/ai_agents_write_3x_more_code_yet_prs_take_4x/",
+    "https://www.reddit.com/r/artificial/comments/1wvnbfc/i_gave_several_ai_coding_agents_the_same_repo/",
+    "https://www.span.app/research/agent-effectiveness-july2026",
+    "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+    "https://www.techradar.com/pro/the-hidden-cost-of-ai-agents-is-memory",
+    "https://www.tomsguide.com/ai/ai-agents-are-going-rogue-heres-what-you-need-to-know-if-you-use-chatgpt-gemini-or-claude"
+  ],
+  "source_urls_checked_by_leaf": {
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md": [
+      "https://github.com/rosslevinsky/portable-agent-skills",
+      "https://agentpluginsdirectory.com/plugins/portable-agent-skills",
+      "https://www.npmjs.com/package/%40bolablg/skills"
+    ],
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md": [
+      "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+      "https://www.tomsguide.com/ai/ai-agents-are-going-rogue-heres-what-you-need-to-know-if-you-use-chatgpt-gemini-or-claude",
+      "https://www.reddit.com/r/artificial/comments/1wvnbfc/i_gave_several_ai_coding_agents_the_same_repo/"
+    ],
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md": [
+      "https://code.visualstudio.com/docs/agents/concepts/context",
+      "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents"
+    ],
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md": [
+      "https://www.techradar.com/pro/the-hidden-cost-of-ai-agents-is-memory",
+      "https://www.itpro.com/business/data-and-insights/dell-technologies-eyes-agentic-context-and-quality-gains-with-new-ai-data-platform-features",
+      "https://www.span.app/research/agent-effectiveness-july2026"
+    ],
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md": [
+      "https://sourcegraph.com/blog/introducing-agentic-batch-changes",
+      "https://www.reddit.com/r/LLMDevs/comments/1x47jvs/ai_agents_write_3x_more_code_yet_prs_take_4x/",
+      "https://www.reddit.com/r/artificial/comments/1wvnbfc/i_gave_several_ai_coding_agents_the_same_repo/"
+    ],
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md": [
+      "https://www.fast.io/resources/ai-agent-deep-research-workflow/",
+      "https://developers.openai.com/api/docs/guides/agent-evals"
+    ],
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md": [
+      "https://www.techradar.com/pro/the-hidden-cost-of-ai-agents-is-memory",
+      "https://agentwiki.iceaka.com/docs/agent-first-memory.html",
+      "https://arxiv.org/abs/2610.02163"
+    ],
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md": [
+      "https://www.itpro.com/business/data-and-insights/dell-technologies-eyes-agentic-context-and-quality-gains-with-new-ai-data-platform-features",
+      "https://github.com/mindlever-strategy/context-router",
+      "https://www.context.ai/blog/agents-in-your-vpc"
+    ],
+    "docs/wiki/context-architecture/context-selection-and-compaction.md": [
+      "https://www.devventa.com/guides/context-compaction-ai-coding",
+      "https://arxiv.org/abs/2610.02163",
+      "https://code.visualstudio.com/docs/agents/concepts/context"
+    ],
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md": [
+      "https://www.techradar.com/pro/the-hidden-cost-of-ai-agents-is-memory",
+      "https://www.devventa.com/guides/context-compaction-ai-coding",
+      "https://arxiv.org/abs/2610.02163"
+    ],
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md": [
+      "https://www.reddit.com/r/AI_Agents/comments/1v46xua/stop_handing_your_agent_one_big_spec_layer_its/",
+      "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents"
+    ],
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md": [
+      "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents",
+      "https://prodmoh.com/blog/ai-feature-prd-template-evals-failure-modes-guardrails-acceptance-criteria",
+      "https://github.com/santos-sanz/agent-guardrails-template"
+    ],
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md": [
+      "https://developers.openai.com/api/docs/guides/agent-evals",
+      "https://www.techradar.com/pro/ai-agents-dont-create-new-risk-they-inherit-it",
+      "https://www.tomsguide.com/ai/ai-agents-are-going-rogue-heres-what-you-need-to-know-if-you-use-chatgpt-gemini-or-claude"
+    ],
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md": [
+      "https://developers.openai.com/api/docs/guides/agent-evals",
+      "https://www.span.app/research/agent-effectiveness-july2026",
+      "https://www.reddit.com/r/LLMDevs/comments/1x47jvs/ai_agents_write_3x_more_code_yet_prs_take_4x/"
+    ],
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md": [
+      "https://developers.openai.com/api/docs/guides/agent-evals",
+      "https://arxiv.org/abs/2610.02163",
+      "https://www.tomsguide.com/ai/ai-agents-are-going-rogue-heres-what-you-need-to-know-if-you-use-chatgpt-gemini-or-claude"
+    ]
+  }
+}
