@@ -76,6 +76,8 @@ The [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai
 
 The local practice implication is that verified delivery needs context to travel back to review surfaces, not only into the coding prompt.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds measured compaction evidence from a Devventa study of Claude Code, Codex CLI, and Antigravity. Broad product behavior stays upstream-owned; locally, late automatic compaction, post-compaction retained-token limits, and observable pauses are evidence that task-critical state, approvals, source paths, and acceptance criteria should live outside compactable conversation history.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -121,6 +123,7 @@ The local practice implication is that verified delivery needs context to travel
 - Build turn packets from the smallest approved evidence set for the next response, carrying provenance, permission, expiry, classification, access, and freshness metadata.
 - Keep work items, documentation, people context, pull requests, repository files, and development-impact metrics as separately labeled context channels when enterprise knowledge graphs feed a coding agent.
 - Preserve the return path from local agent decisions to work items, review surfaces, and incident records when context architecture claims to close the delivery loop.
+- Treat automatic context compaction as a measurable workflow event whose timing, retained context, pause time, and lost-state risk need operating evidence before long-running agent work depends on it.
 
 ## Authoritative Sources
 
@@ -166,6 +169,7 @@ The local practice implication is that verified delivery needs context to travel
 - [September 2 leaf update watch source](../../../raw/processed/2026-09-02/ai-dev-wiki-leaf-update-watch-2026-09-02T210149-0400.json)
 - [September 2 topic news collector source](../../../raw/processed/2026-09-02/ai-dev-wiki-topic-news-collector-2026-09-03T003135Z.json)
 - [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -218,3 +222,4 @@ The local practice implication is that verified delivery needs context to travel
 - Maintained on 2026-08-17 with convention-capture, output-compression, memory, transcript, prompt-cache, and exact-original audit guidance.
 - Maintained on 2026-09-02 with content-exclusion, excluded-path, conversation-branch, prompt-timeline, transcript-search, external-session-continuation, and desktop-agent context evidence.
 - Maintained on 2026-10-05 with write/select/compress/isolate context lifecycle and focused-context anti-noise evidence.
+- Maintained on 2026-10-13 with measured automatic-compaction timing, retained-context, pause, and externalized-state evidence.

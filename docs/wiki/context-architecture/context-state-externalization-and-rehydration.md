@@ -65,6 +65,8 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 
 The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds agent-memory write-path evidence. Agent memory differs from read-only RAG because agents can write from untrusted channels and consolidation can strip provenance. Rehydration should therefore inspect memory namespaces, TTL, decay policy, write-time policy, source channel, and consolidation diffs before treating a remembered fact as current operating state.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds measured compaction evidence for coding agents. Rehydration should not assume post-compaction conversation state retained the current task contract; durable files should carry objective, source paths, approvals, blockers, checked commands, and next safe step so a resumed session can verify state after compaction delays or context loss.
+
 ## Practice Boundaries
 
 - Separate transcript portability from attachment, file, and artifact portability when moving work between assistant surfaces.
@@ -103,6 +105,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Rehydrate governance-critical ledgers, approvals, and authorization context from durable state before relying on compacted summaries.
 - Inspect memory writes, namespaces, TTL, decay rules, and consolidation diffs before relying on recalled agent memory as current state.
 - Treat compact handoff packets as indexed continuity evidence, not current authority, until mutable facts have been refreshed from durable project records.
+- After context compaction, rehydrate from durable task files and evidence logs before trusting the retained conversation summary for objectives, approvals, source paths, blockers, or next actions.
 
 ## Authoritative Sources
 
@@ -136,6 +139,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - [September 6 topic news collector source](../../../raw/processed/2026-09-06/ai-dev-wiki-topic-news-collector-2026-09-07T003131Z.json)
 - [September 14 leaf update watch source](../../../raw/processed/2026-09-14/ai-dev-wiki-leaf-update-watch-2026-09-14T210244-0400.json)
 - [verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -164,6 +168,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 ## Maintenance Notes
 
 - Maintained on 2026-10-12 with compact handoff packet and mutable-fact refresh evidence.
+- Maintained on 2026-10-13 with measured compaction, durable task-contract, source-path, approval, blocker, and next-action rehydration evidence.
 - Maintained on 2026-10-06 with agent-memory write-path, namespace, TTL, decay, write-policy, and consolidation-diff evidence.
 - Maintained on 2026-09-21 with repository/task/reference/decision context layering and compaction-summary trust-boundary evidence.
 - Maintained on 2026-09-23 with cross-agent handoff fields and personal-memory versus shared-decision boundaries.

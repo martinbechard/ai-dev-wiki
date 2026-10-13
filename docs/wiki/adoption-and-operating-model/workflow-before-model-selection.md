@@ -114,6 +114,10 @@ Autonomy should scale with reversibility, permission level, verification strengt
 
 The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json) adds deployed-engineer training and spec-driven workflow evidence. Workflow selection should train teams to choose a concrete deployment, write intent and acceptance criteria, wire permissions and review gates, and measure outcomes before choosing a model or agent surface. Spec-driven development belongs here when architectural contracts, repository knowledge maps, task breakdowns, and automated checks define the workflow authority that the agent must follow.
 
+The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds evaluation-first agent-adoption and personal-software boundary evidence. Teams should define evaluation, permission boundaries, memory expiry, instrumentation, and review-capacity metrics before orchestrating agents, and they should distinguish personal or local automation from productized software that needs team ownership, security, support, and deployment evidence.
+
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds enterprise semantic-layer evidence. Workflow selection should decide whether governed business meaning, knowledge graphs, and permitted data sources are prerequisites before comparing model routes, because agent reliability can depend more on shared context architecture than on the selected assistant surface.
+
 ## Practice Boundaries
 
 - Choose the workflow shape before choosing the model or assistant product.
@@ -186,6 +190,9 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - Require outcome, context, boundary, increment, independent-verification, and approval-point definitions before agentic coding work becomes delegated execution.
 - Train deployed-engineer workflows around a selected deployment, precise intent, acceptance criteria, permissions, review gates, and outcome measurement before selecting the assistant surface.
 - Treat spec-driven development as workflow authority when architectural contracts, repository maps, task breakdowns, and automated checks constrain agent work.
+- Establish evaluation, permission boundaries, memory expiry, instrumentation, and review-capacity measures before agent orchestration becomes the workflow default.
+- Separate personal or local automation from productized software so small useful tools do not skip ownership, support, security, and deployment gates.
+- Decide whether semantic layers, knowledge graphs, and permitted enterprise data sources are workflow prerequisites before model or assistant selection.
 
 ## Authoritative Sources
 
@@ -202,6 +209,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 - [September 18 topic news collector source](../../../raw/processed/2026-09-18/ai-dev-wiki-topic-news-collector-2026-09-18T003153Z.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
+- [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
 - [September 4 topic news collector source](../../../raw/processed/2026-09-04/ai-dev-wiki-topic-news-collector-2026-09-05T003214Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
@@ -285,6 +294,8 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-13 with evaluation-first adoption, permission boundary, memory-expiry, instrumentation, review-capacity, and personal-software productization evidence.
+- Maintained on 2026-10-13 with semantic-layer, knowledge-graph, permitted-data-source, and context-before-model workflow-selection evidence.
 - Maintained on 2026-09-28 with assistant-surface, managed-runtime, recurring-work, sandboxing, and context-ownership selection evidence.
 - Maintained on 2026-09-15 with model-tier routing, cost-quality-latency, billing, and automatic-routing workflow evidence.
 - Maintained on 2026-09-07 with AI-first SDLC, build-versus-buy, model-policy, review-capacity, validation, and fallback routing evidence.

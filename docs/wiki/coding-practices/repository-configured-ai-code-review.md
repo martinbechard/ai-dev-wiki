@@ -33,6 +33,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Whether the default changed inherited behavior.
 - How human reviewers treat the result as advisory evidence rather than as an automatic merge gate.
 
+The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds host-specific review-configuration evidence. GitLab-oriented AI review selection should be tested on the team's actual merge-request workflow for write-back behavior, draft-review persistence, suggestion application, merge controls, large-MR context loss, correction carry-over, self-managed setup, token scope, and admin-token requirements rather than accepted as a generic review-tool ranking.
+
 ## Practice Boundaries
 
 - Keep AI-review rules, path scopes, labels, reviewer assignment, security sections, tool settings, and request-changes behavior in repository-owned or team-owned configuration.
@@ -43,6 +45,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Preserve AI-review policy changes as audit evidence, including effort-level changes, automatic-review branch policy changes, custom-instruction changes, MCP or skill context changes, content-exclusion scope, and batch comment-resolution actions.
 - Preserve API-triggered review provenance, including the API actor, request source, effort value, inherited default, and policy that allowed the automated review request.
 - Treat default-effort changes as governed review-policy drift that can affect review cost, latency, finding depth, and reviewer expectations even when no repository file changed.
+- Test AI review tools against the host workflow they will actually govern, including write-back semantics, draft persistence, merge controls, suggestion application, large-change behavior, and self-managed deployment constraints.
+- Preserve identity and token-scope evidence for review integrations before allowing generated comments, suggestions, or approvals to influence merge readiness.
 - Treat repository text, comments, test output, and diffs as untrusted review input; AI-review prompts and summaries need prompt-injection controls and output validation.
 - Route general AI-review practice through [intelligent code review](intelligent-code-review.md) and review-quality measurement through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
@@ -54,6 +58,7 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
 - [intelligent code review](intelligent-code-review.md)
 - [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md)
 
@@ -86,3 +91,4 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 - Maintained on 2026-10-01 with Azure Repos and GitHub Copilot review-configuration audit events, effort-level policy, AGENTS.md, MCP, skill, content-exclusion, and batch-resolution evidence.
 - Maintained on 2026-10-03 with API-triggered AI review provenance, effort-default, actor, policy, and workflow-origin evidence.
 - Maintained on 2026-10-04 with API-triggered review governance and default-effort drift evidence.
+- Maintained on 2026-10-13 with GitLab-style host integration, write-back, draft persistence, merge-control, context-loss, self-managed setup, and token-scope evidence.

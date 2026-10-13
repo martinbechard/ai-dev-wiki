@@ -45,6 +45,8 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add local-eval-suite and judge-calibration evidence. Representative calibration should evaluate the full scaffold around coding agents: prompts, tools, workflow state, dependency changes, graders, security checks, human review, cost, and time-to-resolution. When LLM judges route approvals or escalations, calibration should use representative labeled slices, false-approval rates, abstention paths, and action-specific error costs instead of one global confidence threshold.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds evaluation-sandbox incident evidence. Representative calibration should include adversarial environment boundaries, internet isolation, inter-agent coordination, inherited access, and escalation triggers when a workflow tests agents with tools or simulated security tasks, not only final answer quality or benchmark pass rate.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -70,6 +72,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - Include professional-judgment tasks, held-out execution checks, frozen generated artifacts, and task-environment separation when calibrating agents meant to solve job-like or simulation-backed workflows.
 - Calibrate LLM judges against representative workflow slices, false-approval costs, abstention paths, and the routing decision they control.
 - Evaluate prompts, models, tools, dependencies, workflow state, graders, review effort, cost, and time-to-resolution as one scaffold when agentic coding practice changes.
+- Include adversarial environment-boundary, inherited-access, internet-isolation, inter-agent coordination, and escalation-trigger cases when calibrating agent workflows that can touch tools or simulated security systems.
 
 ## Authoritative Sources
 
@@ -94,6 +97,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - [July 26 leaf update watch source](../../../raw/processed/2026-07-26/ai-dev-wiki-leaf-update-watch-2026-07-26T210201-0400.json)
 - [August 8 topic news collector source](../../../raw/processed/2026-08-08/ai-dev-wiki-topic-news-collector-2026-08-08T203357-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -120,6 +124,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 ## Maintenance Notes
 
 - Maintained on 2026-09-28 with eval-scaffold, judge-calibration, false-approval, abstention, cost, and time-to-resolution evidence.
+- Maintained on 2026-10-13 with evaluation-sandbox, inherited-access, internet-isolation, inter-agent-coordination, and escalation-trigger calibration evidence.
 - Maintained on 2026-09-21 with harness-efficiency, review-coverage, evaluator-authority, and workload-mix calibration evidence.
 - Maintained on 2026-09-25 with professional-judgment, frozen-artifact, held-out execution, and simulation-backed calibration evidence.
 - Maintained on 2026-08-29 with coding-leaderboard methodology, live-arena, benchmark-cross-check, accepted-change, and verification-cost calibration evidence.

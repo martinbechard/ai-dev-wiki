@@ -46,6 +46,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Retrieved grounding.
 - Human code ownership.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds semantic-layer evidence from Dell AI Data Platform coverage. Product and company background stays upstream-owned; locally, context routers should treat semantic layers, enterprise knowledge graphs, and knowledge agents as governed meaning sources with permission, lineage, and business-definition owners before they feed agent prompts or workflow selection.
+
 ## Pattern Leaves
 
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
@@ -74,6 +76,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Route skills, rules files, retrieval evidence, lineage, metric definitions, and source-truth checks as separate context layers when coding or data agents need both procedure and facts.
 - Route access standards, readable team procedures, retrieval grounding, and human review ownership as separate layers when composing skills, MCP, and RAG in one workflow.
 - Route assistant surfaces, recurring-agent surfaces, managed runtimes, reviewed context repositories, and live collaboration sources as distinct context layers with different authority and verification rules.
+- Route semantic layers, enterprise knowledge graphs, and knowledge-agent outputs as governed meaning sources with permission, lineage, business-definition ownership, and freshness checks.
 
 ## Authoritative Sources
 
@@ -96,6 +99,7 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - [August 25 afternoon topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T143923-0400.json)
 - [August 25 afternoon leaf update watch source](../../../raw/processed/2026-08-25/ai-dev-wiki-leaf-update-watch-2026-08-25T144100-0400.json)
 - [August 25 evening topic news collector source](../../../raw/processed/2026-08-25/ai-dev-wiki-topic-news-collector-2026-08-25T203315-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -137,3 +141,4 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 - Maintained on 2026-08-17 with separate routing for persistent memory, managed agent settings, and behavior-baseline deviations.
 - Maintained on 2026-08-25 with system-state context inputs, production-agent context failure modes, shared-information governance, and agentic engineering vocabulary.
 - Maintained on 2026-09-07 with skills, rules-file, retrieved-context, lineage, metric-definition, and source-truth routing evidence.
+- Maintained on 2026-10-13 with semantic-layer, enterprise-knowledge-graph, knowledge-agent, permission, lineage, and business-definition routing evidence.

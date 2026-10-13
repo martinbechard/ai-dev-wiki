@@ -136,6 +136,8 @@ The September 18 [topic news collector source](../../../raw/processed/2026-09-18
 
 The September 26 raw sources add review-stage telemetry and verification-bottleneck evidence. The [topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json) records pull-request review-stage metrics that separate ready-to-first-review, first-to-final-review, and final-review-to-merge timing while excluding Copilot and bot reviews. The [leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json) records Qodo's public verification-bottleneck framing. Locally, intelligent review should measure where human review latency moves and whether AI findings reduce accepted risk, not only whether automated comments or review events increase.
 
+The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds bounded AI-review task and verification-scope evidence. AI can draft findings or responses, but review output remains a claim until the workflow records which checks ran, what they covered, what passed or failed, and which risks stayed unchecked. Faster review should be piloted as bounded, reversible work with a named human merge owner and usefulness, quality, speed, and safety metrics kept together.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -238,6 +240,9 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 - Treat AI-generated batch commit messages as reviewable metadata that still needs human ownership before merge.
 - Treat deploy-aware monitors, revert-PR preparation, and security-review bots as review evidence that still needs severity, attack-path, baseline, rollback, and human final-judgment records before affecting release decisions.
 - Prefer review loops that can hand actionable findings back to the coding agent or submitter with scoped repair instructions, while keeping acceptance, merge, and residual-risk decisions human-owned.
+- Pilot AI review as bounded, reversible task assistance with a named human owner for merge decisions.
+- Treat AI-review findings as claims until verification evidence records executed checks, covered scope, results, and unchecked areas.
+- Measure AI review by usefulness, quality, accepted risk, speed, and reviewer capacity together rather than by comment volume or faster turnaround alone.
 - Require AI-review records to identify the active repository instructions, custom instructions, custom skills, MCP context, content-exclusion scope, issue or pull-request history, and review depth that supported generated comments.
 - Inspect agent-authored pull requests for weakened checks, duplicated logic, plausible-but-wrong behavior, and unsafe automation before treating polish or green CI as acceptance evidence.
 - Record API-triggered AI review actor, requested effort, default effort, cost policy, and audit path when automated review can start outside the pull request UI.
@@ -328,6 +333,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 - [September 26 topic news collector source](../../../raw/processed/2026-09-26/ai-dev-wiki-topic-news-collector-2026-09-27T003215Z.json)
 - [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai-dev-wiki-leaf-update-watch-2026-09-26T210127-0400.json)
+- [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
 
 ## Related Code
 
@@ -357,6 +363,7 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 ## Maintenance Notes
 
 - Maintained on 2026-10-12 with generated-code review pressure, primary review evidence, and secondary-commentary caveat guidance.
+- Maintained on 2026-10-13 with bounded AI-review task, named human owner, verification-scope, and unchecked-risk evidence.
 - Maintained on 2026-10-10 with organization-billed AI review, requester authorization, intent-first review, risk routing, and accountable human merge evidence.
 - Maintained on 2026-10-09 with overview, filter, details-on-demand, risk, confidence, source-backed finding, privacy-boundary, and human-authority review evidence.
 - Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, independent-review-loop, architectural-impact, and bounded-rerun evidence.

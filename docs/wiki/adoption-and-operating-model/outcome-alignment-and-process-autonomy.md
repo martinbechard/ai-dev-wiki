@@ -42,6 +42,8 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 Generated lines and perceived speed are weaker signals.
 
+The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds review-capacity and issue-throughput measurement evidence. Secondary reporting about a Harvard/Jellyfish working paper is useful only as a practice framing unless the primary study is collected separately, but the local metric lesson is durable: agent-seat business cases should include review load, accepted changes, resolved issues, and shipped outcomes rather than generated lines, commits, or pull-request volume alone.
+
 ## Practice Boundaries
 
 - Align teams on outcomes, accountability, verification, source handling, security, and shared infrastructure.
@@ -63,6 +65,8 @@ Generated lines and perceived speed are weaker signals.
 - Compare agent-capability claims and architecture-owner programs by accepted delivery, quality, maintainability, review burden, risk reduction, and governed autonomy rather than by raw agent count or tool adoption.
 - Measure AI-assisted development by review time, escaped defects, rework, security findings, customer impact, and accepted outcomes rather than generated lines, raw speed, or perceived productivity.
 - Treat executable specification, context curation, proposal evaluation, architecture, security, and deployment accountability as developer responsibilities that need evidence, not as overhead outside the outcome model.
+- Include review load, accepted changes, resolved issues, shipped outcomes, and finding-to-fix throughput when evaluating agent-seat expansion or coding-agent productivity claims.
+- Treat secondary summaries of productivity studies as routing evidence until the primary study is collected and checked.
 
 ## Authoritative Sources
 
@@ -79,6 +83,7 @@ Generated lines and perceived speed are weaker signals.
 - [July 31 leaf update watch source](../../../raw/processed/2026-07-31/ai-dev-wiki-leaf-update-watch-2026-07-31T210319-0400.json)
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-04T003336Z.json)
+- [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
 
 ## Related Code
 
@@ -116,3 +121,4 @@ Generated lines and perceived speed are weaker signals.
 - Maintained on 2026-07-31 with budget wallet, tokenmaxxing, PR-state normalization, and embedded-execution signals for outcome-over-activity comparisons.
 - Maintained on 2026-08-17 with continuous-governance, behavior-baseline, SAFE-style incident, identity, permission, and accountability-trail evidence.
 - Maintained on 2026-10-04 with executable-specification, context-curation, review-time, escaped-defect, rework, security-finding, customer-impact, and accepted-outcome evidence.
+- Maintained on 2026-10-13 with review-capacity, accepted-change, issue-throughput, shipped-outcome, and secondary-study-routing evidence.

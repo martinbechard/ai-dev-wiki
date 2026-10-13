@@ -43,6 +43,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json) adds portable-skill evidence from Microsoft Agent Skills and Goldman Sachs skill packaging. Locally, reusable skills should keep detailed procedure and institutional knowledge in reviewable packages that can be approved, evaluated, and refreshed without bloating every prompt.
 
+The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds measured code-review skill evidence from an ASE JAWs abstract and repository-specific review-skill practice sources. A review skill should be promoted as a portable runbook only when it carries the review job, repository-specific context requirements, output contract, and verification metric; measured pass-rate gains should be read together with cost, runtime, and validated-finding outcomes.
+
 ## Practice Boundaries
 
 - Use a one-off prompt for one-time work and a skill when a procedure recurs across sessions, tools, or agents.
@@ -66,6 +68,8 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - For service-specific skills, record platform constraints, guardrails, generated artifacts, verification steps, allowed tool scope, and owner review before relying on them for prototype generation.
 - Use progressive disclosure for skills so agents load detailed instructions, scripts, resources, and assets only when the task needs them.
 - Pair institutional skill libraries with security review, owner feedback, and eval loops so reusable practices stay current and auditable.
+- Evaluate code-review skills against task-specific outcome metrics, cost, runtime, and validated finding quality before standardizing them as portable runbooks.
+- Preserve repository-specific review context, output contracts, and collision checks when moving a local review skill between agent tools.
 
 ## Authoritative Sources
 
@@ -88,6 +92,7 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - [August 17 leaf update watch source](../../../raw/processed/2026-08-17/ai-dev-wiki-leaf-update-watch-2026-08-17T210257-0400.json)
 - [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai-dev-wiki-topic-news-collector-2026-08-21T203246-0400.json)
 - [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-dev-wiki-leaf-update-watch-2026-08-30T210135-0400.json)
+- [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
 - [upstream AI coding agents hub](../../../upstream-ai-wiki/developer-tools/ai-coding-agents-and-autonomous-engineering-platforms.md)
 - [upstream Claude Code](../../../upstream-ai-wiki/developer-tools/claude-code.md)
 - [upstream OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md)
@@ -132,3 +137,4 @@ The [August 30 leaf update watch source](../../../raw/processed/2026-08-30/ai-de
 - Maintained on 2026-08-17 with plugin version, client compatibility, subagent task, side-channel question, and MCP allowlist runbook guidance.
 - Maintained on 2026-08-21 with service-specific skill constraints, guardrails, generated-artifact, verification-step, allowed-tool-scope, and owner-review guidance.
 - Maintained on 2026-08-30 with progressive-disclosure, script/resource/asset, approval-control, security-review, feedback-loop, and eval-loop skill evidence.
+- Maintained on 2026-10-13 with code-review skill evaluation, cost, runtime, repository-context, and collision-check evidence.

@@ -58,6 +58,8 @@ The September 16 [topic news collector source](../../../raw/processed/2026-09-16
 
 The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add review-capacity, traceability, and scoped-review-loop evidence. Observability gates should connect AI activity to resulting code changes, review-stage load, follow-up fixes, independent review loops, severity triage, and rerun scope so generated-code volume does not hide verification debt.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds inherited-access and evaluation-environment incident evidence from public commentary and reporting. Broad incident chronology and company background stay upstream-owned; locally, observability gates should include access-boundary checks, environment isolation, inter-agent coordination signals, internet-isolation bypass indicators, escalation triggers, and early-warning telemetry for evaluation sandboxes.
+
 ## Practice Boundaries
 
 - Do not use broad vendor comparison tables as local tool recommendations without verifying the current product, pricing, and data-handling state.
@@ -73,6 +75,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - Preserve failed-run spans, tool arguments, retrieved context, prompt versions, routing decisions, live scoring, retention, cost attribution, and fallback records before observability evidence is used as a release or rollback gate.
 - Connect request-level health, latency, endpoint traffic, environment scope, and topology-linked hypotheses to eval or release gates when agent services are deployed.
 - Connect AI activity, code changes, review-stage load, follow-up fixes, severity triage, and rerun scope when agentic coding volume changes.
+- Include access-boundary, environment-isolation, inter-agent coordination, network-bypass, escalation, and early-warning telemetry when observability gates cover agent evaluation or research sandboxes.
 
 ## Authoritative Sources
 
@@ -90,6 +93,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - [August 7 topic news collector source](../../../raw/processed/2026-08-07/ai-dev-wiki-topic-news-collector-2026-08-07T203203-0400.json)
 - [August 8 leaf update watch source](../../../raw/processed/2026-08-08/ai-dev-wiki-leaf-update-watch-2026-08-08T210341-0400.json)
 - [August 14 leaf update watch source](../../../raw/processed/2026-08-14/ai-dev-wiki-leaf-update-watch-2026-08-14T210240-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 - [verification loops and evals](verification-loops-and-evals.md)
 - [trajectory-level agent evaluation](trajectory-level-agent-evaluation.md)
 - [user-visible progress and runtime telemetry](../application-patterns/user-visible-progress-and-runtime-telemetry.md)
@@ -121,6 +125,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 ## Maintenance Notes
 
 - Maintained on 2026-09-28 with AI-activity traceability, review-load, follow-up-fix, scoped-rerun, and severity-triage evidence.
+- Maintained on 2026-10-13 with inherited-access, evaluation-environment, inter-agent coordination, isolation-bypass, escalation, and early-warning telemetry evidence.
 - Maintained on 2026-09-21 with harness-efficiency, review-coverage, compaction-summary, and typed-decision gate evidence.
 - Maintained on 2026-09-15 with request-level service-health, environment, p95 latency, endpoint-hotspot, and ranked-hypothesis gate evidence.
 - Maintained on 2026-08-29 with running-agent discovery, action-order, approval, cost, latency, trace, and remediation observability gates.

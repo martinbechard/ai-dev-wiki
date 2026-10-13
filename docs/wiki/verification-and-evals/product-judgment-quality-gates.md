@@ -31,6 +31,8 @@ The [September 7 topic news collector source](../../../raw/processed/2026-09-07/
 
 The [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add eval-operating-system, verification-bottleneck, and review-wall evidence. Product judgment gates should treat local eval suites, objective graders, review-load telemetry, traceability from AI activity to code changes, and reviewer cognitive load as operating evidence before agent throughput is counted as delivery improvement.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds deterministic PR-gate community evidence for AI-generated code. These claims require primary-source review before adoption, but product gates can use deterministic checks as pre-review evidence when they preserve product intent, avoid bloated agent diffs, and make reviewer load visible rather than treating a large generated pull request as product progress.
+
 ## Practice Boundaries
 
 - Use should-build gates when a feature idea may be misaligned, oversized, or weakly justified.
@@ -48,6 +50,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - Pair demos with repository evidence, codebase-health review, and final deliverable repair records when evaluating AI-agent build exercises or open-ended agent tasks.
 - Judge agent-built prototypes against demand, willingness-to-pay, product-decision evidence, and human interpretation before treating task completion as validation.
 - Track reviewer load, traceability, eval coverage, and follow-up fix evidence when generated-code volume changes product acceptance risk.
+- Use deterministic pre-review checks as product-gate inputs only when they preserve product intent, reduce reviewer load, and expose rather than hide generated-change risk.
 
 ## Authoritative Sources
 
@@ -67,6 +70,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -93,6 +97,7 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 ## Maintenance Notes
 
 - Maintained on 2026-09-28 with eval-suite, review-load, traceability, follow-up-fix, and verification-bottleneck product-gate evidence.
+- Maintained on 2026-10-13 with deterministic PR-gate, product-intent, bloated-diff, reviewer-load, and generated-change-risk evidence.
 - Maintained on 2026-09-21 with final-claim coverage, vendor metric caveat, and typed-decision gate evidence.
 - Maintained on 2026-08-29 with prompt-version, red-team fixture, reusable-skill improvement, reviewer-fatigue, collaboration-health, and source-trust product-judgment evidence.
 - Maintained on 2026-09-07 with prototype-validation, demand-evidence, willingness-to-pay, design-time defect, and developer-as-architect product gates.

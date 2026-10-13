@@ -28,6 +28,8 @@ The [September 15 topic news collector source](../../../raw/processed/2026-09-15
 
 This page owns the rollout workflow. [Use compose build workflow selection](use-compose-build-workflow-selection.md) owns the decision about whether to use a managed platform, compose local controls around it, or build differentiated rollout infrastructure.
 
+The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds community evidence for deterministic pre-review gates on large AI-generated pull requests. The ZeroSlop-style claims need primary-source review before adoption, but the local practice signal is that AST invariants, CWE checks, assertion or invariant deltas, and deterministic quality gates can reduce reviewer load before agent-produced batch changes reach humans.
+
 ## Practice Boundaries
 
 - Require plugin provenance, migration-slice ownership, regulated-domain constraints, real-codebase proof, and review gates before scaling codebase-wide modernization agents.
@@ -43,6 +45,8 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 - Preserve merge status, failed-check evidence, repair attempts, and human approval state for each batch.
 - Use outcome-based pricing or billing claims only alongside accepted-merge evidence and reviewer burden.
 - Track review latency, follow-up fixes, parallel patch interference, and same-agent repair loops before scaling generated batch changes.
+- Use deterministic pre-review gates such as AST invariants, security checks, and assertion or invariant deltas as reviewer-load controls before scaling repetitive agent-generated pull requests.
+- Treat community claims about batch-change gate tools as routing evidence until the primary repository, action behavior, and limitations are reviewed.
 
 ## Authoritative Sources
 
@@ -52,6 +56,7 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [use compose build workflow selection](use-compose-build-workflow-selection.md)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json)
 
 ## Related Code
 
@@ -82,4 +87,5 @@ This page owns the rollout workflow. [Use compose build workflow selection](use-
 - Maintained on 2026-09-25 with modernization workflow, plugin review, migration gate, and regulated-domain evidence.
 
 - Maintained on 2026-09-19 with feature-flag cleanup, runtime metadata, semantic-target confirmation, isolated worktrees, validation gates, coverage, static-analysis, and timeout evidence.
+- Maintained on 2026-10-13 with deterministic pre-review gate, AST invariant, CWE check, assertion-delta, reviewer-load, and primary-source-review evidence.
 - Created on 2026-09-14 from Sourcegraph Agentic Batch Changes evidence in the September 15 topic news collector.
