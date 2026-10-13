@@ -1,0 +1,402 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector",
+    "run_timestamp_utc": "2026-10-13T00:34:47Z",
+    "last_run_timestamp_utc": "2026-10-12T00:30:21Z"
+  },
+  "cutoff_window": {
+    "start_utc": "2026-10-11T00:34:47Z",
+    "end_utc": "2026-10-13T00:34:47Z",
+    "rule": "Include only public web sources published or visibly updated within the last 2 days relative to run time; exclude missing, ambiguous, future-dated, or boundary-only dates."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "local_scope": "AI-assisted development practice, workflow, governance, verification, context architecture, and adoption implications.",
+    "upstream_scope": "/Users/martinbechard/dev/ai-wiki/docs/wiki owns broad companies, models, products, agentic frameworks, MCP servers, general developer tools, and broad techniques.",
+    "collector_action": "Broad entity facts were either reduced to local practice implications or recorded as upstream-owned."
+  },
+  "qualifying_findings": [
+    {
+      "title": "GitHub describes repository instructions, skills, custom agents, and MCP as project-context layers for Copilot",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+      "source_type": "vendor practice article",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article byline date visible on page.",
+      "short_factual_summary": "GitHub published guidance explaining how repository custom instructions, path-specific instruction files, agent skills, custom agents, and MCP servers can provide Copilot with project conventions, repeatable procedures, specialized roles, and external tool access.",
+      "why_it_matters_for_ai_assisted_development_practice": "Supports local guidance that durable instructions, task-specific skills, specialized agents, and governed MCP tools should be separate context layers rather than one overloaded prompt.",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot app",
+        "MCP",
+        "Playwright",
+        "Awesome Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MCP",
+        "Playwright"
+      ],
+      "local_practice_implication": "Refresh durable instruction layering, agent-skill packaging, and MCP-governance leaves with a routing note instead of duplicating Copilot product coverage.",
+      "follow_up_notes": "Candidate destinations: instruction-hierarchy-and-artifact-boundaries.md, durable-instructions-and-skill-files.md, progressive-mcp-tool-discovery.md, portable-agent-skills-and-runbooks.md."
+    },
+    {
+      "title": "ASE JAWs presentation reports measured benefit and cost increase from adding an agent skill to code review",
+      "source_url": "https://conf.researchr.org/details/ase-2026/jaws-2-2026-papers/15/Do-Agent-Skills-Improve-Agentic-Code-Review-",
+      "source_type": "conference program abstract",
+      "visible_date": "Mon 12 Oct 2026",
+      "date_basis": "Conference program lists the session time as Mon 12 Oct 2026 14:09-14:14.",
+      "short_factual_summary": "The abstract says the authors compare an unconfigured agent with an agent equipped with a code-review skill using the c-CRAB evaluation protocol. The skill-equipped configuration improves executable-oracle pass rate from 30.59% to 34.12% while increasing average cost from $1.01 to $2.42 per task.",
+      "why_it_matters_for_ai_assisted_development_practice": "Gives practice-level evidence that skills may improve review usefulness but should be evaluated against cost, runtime, and task-specific outcome metrics.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "ASE 2026",
+        "JAWs 2",
+        "c-CRAB",
+        "Arda Saritas",
+        "Huseyin Ozgur Kamali",
+        "Eray Tuzun"
+      ],
+      "upstream_owned_entities": [
+        "ASE 2026",
+        "c-CRAB"
+      ],
+      "local_practice_implication": "Use skill-based code-review improvements as a measured practice claim only when paired with cost and executable-oracle evidence.",
+      "follow_up_notes": "Candidate destinations: code-review-evals-and-rubrics.md, repository-configured-ai-code-review.md, portable-agent-skills-and-runbooks.md."
+    },
+    {
+      "title": "aicodereview.io publishes GitLab-specific AI code-review evaluation checklist",
+      "source_url": "https://aicodereview.io/blog/best-ai-code-review-tools-for-a-team-on-gitlab-2026/",
+      "source_type": "practice guide",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The guide argues that GitLab support should be evaluated through host-specific write-back behavior, draft-review persistence, suggestion application, merge controls, large-MR context loss, correction carry-over, self-managed setup, and admin-token requirements.",
+      "why_it_matters_for_ai_assisted_development_practice": "Turns AI-review tool selection into a workflow-compatibility and evidence-gathering exercise instead of a generic product ranking.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "aicodereview.io",
+        "GitLab",
+        "CodeRabbit",
+        "GitLab Duo",
+        "Kodus",
+        "PR-Agent",
+        "Tabnine",
+        "Greptile",
+        "Qodo",
+        "Cursor BugBot"
+      ],
+      "upstream_owned_entities": [
+        "GitLab",
+        "CodeRabbit",
+        "GitLab Duo",
+        "Kodus",
+        "PR-Agent",
+        "Tabnine",
+        "Greptile",
+        "Qodo",
+        "Cursor BugBot"
+      ],
+      "local_practice_implication": "Add or refresh AI-review rollout checklists so host integration, self-managed deployment, identity attribution, and write-back limits are tested on the team's actual merge-request platform.",
+      "follow_up_notes": "Candidate destinations: intelligent-code-review.md, repository-configured-ai-code-review.md, ai-code-evidence-packages.md."
+    },
+    {
+      "title": "Atlantic essay frames AI-assisted personal software as expert-directed high-level programming rather than pure vibe coding",
+      "source_url": "https://www.theatlantic.com/ideas/2026/10/ai-programming-big-tech-regulations/688960/?utm_source=openai",
+      "source_type": "public commentary",
+      "visible_date": "October 12, 2026, 9:11 AM ET",
+      "date_basis": "Article header date and time visible on page.",
+      "short_factual_summary": "Ian Bogost describes building personal software with AI assistance and argues that calling the process vibe coding mischaracterizes expert-directed high-level programming. The essay contrasts personally useful software with pressure to turn small programs into platform-style applications.",
+      "why_it_matters_for_ai_assisted_development_practice": "Useful as an adoption lens: AI-assisted coding changes who can create local software, but teams still need product-boundary judgment and should not equate prompting with completed engineering.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "The Atlantic",
+        "Ian Bogost",
+        "Beanslaw"
+      ],
+      "upstream_owned_entities": [
+        "The Atlantic",
+        "Ian Bogost"
+      ],
+      "local_practice_implication": "Potential support for pages that distinguish personal automation, internal tools, productization pressure, and human product judgment in AI-assisted delivery.",
+      "follow_up_notes": "Candidate destinations: outcome-alignment-and-process-autonomy.md, workflow-before-model-selection.md."
+    },
+    {
+      "title": "iTechGuides recommends bounded AI review tasks and explicit human review ownership",
+      "source_url": "https://www.itechguides.com/ai-code-reviews-how-to-scale-throughput-without-losing-human-judgment/",
+      "source_type": "practice guide",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The article says AI can help draft review feedback or propose responses, but faster review does not prove safer code. It recommends bounded, reversible pilots, measuring speed with usefulness and quality, and keeping a named human responsible for merge decisions.",
+      "why_it_matters_for_ai_assisted_development_practice": "Reinforces local review-governance rules: AI review is input to human judgment, not a replacement for context ownership or readiness decisions.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "iTechGuides",
+        "Google Research",
+        "Microsoft"
+      ],
+      "upstream_owned_entities": [
+        "iTechGuides",
+        "Google",
+        "Microsoft"
+      ],
+      "local_practice_implication": "Could update intelligent-code-review.md and layered-ai-code-review-roles.md with bounded-task and human-owner language.",
+      "follow_up_notes": "Source contains advertising blocks; retain only factual practice claims and cited research references during ingest."
+    },
+    {
+      "title": "iTechGuides publishes a small AI code-review smoke-test pattern and warns against ranking claims",
+      "source_url": "https://www.itechguides.com/ai-code-reviewer-smoke-test-check-five-bug-classes-not-a-model-ranking/",
+      "source_type": "practice guide",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The article describes a five-case review smoke test covering off-by-one, resource cleanup, swallowed database exception, race condition, and path traversal cases. It says the suite can probe specific bug classes but cannot rank models or replace manual review, and notes keyword scoring limitations.",
+      "why_it_matters_for_ai_assisted_development_practice": "Supports keeping AI-review checks as scoped regression probes with manual interpretation, not broad claims of reviewer quality.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices"
+      ],
+      "named_entities": [
+        "iTechGuides",
+        "OpenAI-compatible chat completions",
+        "MonkeyCode"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI-compatible APIs",
+        "MonkeyCode"
+      ],
+      "local_practice_implication": "Candidate evidence for lightweight smoke-test examples under code-review evals and rubrics.",
+      "follow_up_notes": "During ingest, avoid adopting the article's product ads or anecdotal run as durable benchmark evidence."
+    },
+    {
+      "title": "Kunal Ganglani argues evaluation, permission boundaries, memory expiry, and measurement must precede agent orchestration",
+      "source_url": "https://www.kunalganglani.com/blog/concepts-coding-ai-agents",
+      "source_type": "practitioner article",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article footer and citation block show written date.",
+      "short_factual_summary": "The article endorses context, tools, memory, orchestration, and evaluation as useful concepts, but argues security, cost, team-workflow impact, evaluation-first practice, MCP approval gates, memory expiry, and instrumentation are necessary for real development workflows.",
+      "why_it_matters_for_ai_assisted_development_practice": "Matches local guidance that coding-agent adoption is a system design problem with permissions, eval harnesses, memory scope, and operational metrics.",
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "Kunal Ganglani",
+        "IBM",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "IBM",
+        "MCP",
+        "Claude Code",
+        "Cursor",
+        "GitHub Copilot"
+      ],
+      "local_practice_implication": "Could strengthen evaluation-first ordering and memory-expiry caveats in agent workflow and context architecture leaves.",
+      "follow_up_notes": "Use as practitioner synthesis; verify any IBM-specific source separately before ingesting the IBM framing."
+    },
+    {
+      "title": "NeuryCode recommends repo-specific code-review skills and warns about built-in skill name collisions",
+      "source_url": "https://neurycode.com/blog/ai-code-review-agent-skill",
+      "source_type": "practitioner article",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The article argues that built-in code-review skills cannot know repository-specific dependencies, ignored concerns, compliance context, release cadence, or risk profile. It describes a case where a custom skill named code-review was replaced by a built-in command behavior and says renaming the skill restored the expected reviewer behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "Adds a concrete operational risk: skill naming and loading precedence can silently change reviewer behavior, so repositories need explicit naming, ownership, and review-skill provenance.",
+      "topic_roots": [
+        "docs/wiki/coding-practices",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "named_entities": [
+        "NeuryCode",
+        "Claude Code",
+        "Codex",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "REVIEW.md"
+      ],
+      "upstream_owned_entities": [
+        "Claude Code",
+        "Codex",
+        "AGENTS.md",
+        "CLAUDE.md"
+      ],
+      "local_practice_implication": "Candidate update for repository-configured AI review and durable-instruction pages: review skills need unique names, scoped loading, and collision checks.",
+      "follow_up_notes": "Treat vendor-specific claims about exactly which files each tool reads as volatile; verify from official docs before durable synthesis."
+    },
+    {
+      "title": "iTechGuides distinguishes AI review findings from verification evidence",
+      "source_url": "https://www.itechguides.com/ai-code-review-finds-risks-agent-verification-shows-what-was-checked/",
+      "source_type": "practice guide",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The article says AI review outputs are claims to evaluate, while verification evidence should say which checks ran, what they covered, their results, and what was not checked. It warns against broad claims such as an agent verified a change unless the scope is explicit.",
+      "why_it_matters_for_ai_assisted_development_practice": "Directly supports local evidence-package language: completion claims should distinguish review findings, test results, linter scope, security reproduction attempts, and unchecked areas.",
+      "topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/coding-practices",
+        "docs/wiki/governance-and-risk"
+      ],
+      "named_entities": [
+        "iTechGuides",
+        "GitHub Copilot",
+        "OpenAI Codex Security",
+        "GitHub Actions"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenAI Codex Security",
+        "GitHub Actions"
+      ],
+      "local_practice_implication": "Candidate for verification-loops-and-evals.md, ai-code-evidence-packages.md, and pre-pr-independent-review.md.",
+      "follow_up_notes": "Verify product-specific examples from official docs before adding them as product facts."
+    },
+    {
+      "title": "Pondero summarizes a Harvard/Jellyfish study as a review-capacity warning for coding-agent adoption",
+      "source_url": "https://pondero.ai/news/2026-10-12-harvard-jellyfish-code-review-bottleneck/",
+      "source_type": "secondary news summary",
+      "visible_date": "October 12, 2026",
+      "date_basis": "Article header date visible on page.",
+      "short_factual_summary": "The summary reports that a Harvard working paper using Jellyfish data found agentic tools increased lines of code, commits, and pull requests but did not measurably increase resolved Jira issues or epics, with pull-request review time rising. The underlying working paper version is dated August 4, 2026, so the fresh item is the secondary practice framing rather than the primary study.",
+      "why_it_matters_for_ai_assisted_development_practice": "Useful as a routing note for adoption metrics: agent-seat business cases should include review capacity and shipped-work outcomes, not only code volume.",
+      "topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "named_entities": [
+        "Pondero",
+        "Harvard University",
+        "Jellyfish",
+        "Fiona Chen",
+        "James Stratton",
+        "Claude Code",
+        "GitHub",
+        "Jira"
+      ],
+      "upstream_owned_entities": [
+        "Harvard University",
+        "Jellyfish",
+        "Claude Code",
+        "GitHub",
+        "Jira"
+      ],
+      "local_practice_implication": "Could inform operating-model pages that measure accepted changes, review load, and issue throughput rather than generated LOC.",
+      "follow_up_notes": "Before ingesting the study itself, collect the primary working paper separately and mark its older date."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Codified Context: The Three-Tier Knowledge Architecture for AI Coding Agents",
+      "source_url": "https://codex.danielvaughan.com/2026/04/07/codified-context-three-tier-knowledge-architecture/",
+      "visible_date": "Updated October 6, 2026",
+      "reason": "Stale; visible update date is outside the two-day window."
+    },
+    {
+      "title": "Best AI Agent and LLM Evaluation Tools in 2026",
+      "source_url": "https://shurco.ai/guides/best-ai-agent-evaluation-tools/",
+      "visible_date": "Updated 25 September 2026",
+      "reason": "Stale; direct page update date is outside the two-day window despite recent crawl."
+    },
+    {
+      "title": "Best AI Code Review Tools for GitHub in 2026",
+      "source_url": "https://macroscope.com/content/best-ai-code-review-tools-github-2026",
+      "visible_date": "April 10, 2026; updated for October 2026 pricing",
+      "reason": "Ambiguous recency; page says updated for October 2026 but does not expose a specific update date within the two-day window."
+    },
+    {
+      "title": "AI Code Review Tools directory",
+      "source_url": "https://aicodereview.io/",
+      "visible_date": "Directory lists October 12, 2026 child article",
+      "reason": "Excluded as a directory landing page; direct child article was captured instead."
+    },
+    {
+      "title": "GitHub Copilot changelog label page",
+      "source_url": "https://github.blog/changelog/label/copilot/?trk=public_post_comment-text",
+      "visible_date": "October 2026 entries through October 10, 2026",
+      "reason": "Most visible entries were stale relative to the strict two-day window or broad product updates owned upstream."
+    },
+    {
+      "title": "AI agents write 3x more code, yet PRs take 4x longer to get merged",
+      "source_url": "https://www.reddit.com/r/LLMDevs/comments/1x47jvs/ai_agents_write_3x_more_code_yet_prs_take_4x/",
+      "visible_date": "Search result reported Monday October 12 2026",
+      "reason": "Direct page extraction did not expose a visible publication date; linked repository and marketing page lacked a direct recent date suitable for this collector."
+    },
+    {
+      "title": "Best AI Coding Agents List 2026",
+      "source_url": "https://coding-agents-matrix.dev/",
+      "visible_date": "Search result reported last updated October 12, 2026",
+      "reason": "Direct page extraction returned no usable text lines; source-resolution gap prevents reliable structured capture."
+    },
+    {
+      "title": "Coding Agents Scoreboard",
+      "source_url": "https://aidiveforge.com/leaderboards/coding-agents/",
+      "visible_date": "October 12, 2026",
+      "reason": "Broad coding-agent product scoreboard primarily duplicates upstream-owned product and tool coverage; no distinct local practice implication captured beyond sources already included."
+    },
+    {
+      "title": "Four Coding Agents, One Repo: An Honest Shootout",
+      "source_url": "https://weightsandwire.com/en/article/2026-08-28/four-coding-agents-one-repo-an-honest-shootout?nadid_s=6a916b0a3e378024573294b1",
+      "visible_date": "October 12, 2026 in search result",
+      "reason": "Search-visible recency conflicted with URL date and broad product comparison framing; excluded pending direct verification."
+    },
+    {
+      "title": "Reddit community threads on AI review capacity and AI-written PRs",
+      "source_url": "https://www.reddit.com/",
+      "visible_date": "October 12, 2026 comments visible in search results",
+      "reason": "Excluded from qualifying findings because exact direct-page publication metadata and attribution were weaker than the captured public articles; may be useful as informal sentiment only."
+    }
+  ],
+  "search_notes": [
+    "Searches used public web sources only.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services.",
+    "The collector did not update docs/wiki pages and did not write under raw/processed.",
+    "Repository wiki status before collection: docs/wiki present, 129 pages, zero lint findings."
+  ],
+  "follow_up_notes": [
+    "During ingest, verify product-specific behavior against official documentation before treating it as durable product fact.",
+    "Keep broad entity coverage routed to the upstream AI wiki; preserve only local practice implications here.",
+    "Potential synthesis themes: instruction layering, code-review skill governance, host-specific AI-review evaluation, evidence-scoped verification, review-capacity metrics, and evaluation-first agent adoption."
+  ]
+}
