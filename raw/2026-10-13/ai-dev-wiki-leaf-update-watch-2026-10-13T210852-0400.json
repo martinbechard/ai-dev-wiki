@@ -1,0 +1,380 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp_utc": "2026-10-14T01:08:52Z",
+  "run_timestamp_local": "2026-10-13T21:08:52-0400",
+  "cutoff_window": {
+    "days": 7,
+    "start_utc": "2026-10-07T01:08:52Z",
+    "start_local": "2026-10-06T21:08:52-0400",
+    "end_utc": "2026-10-14T01:08:52Z",
+    "end_local": "2026-10-13T21:08:52-0400"
+  },
+  "approved_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "leaf_universe_count": 105,
+  "selected_leaf_count": 15,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+  ],
+  "source_urls_checked": [
+    "https://docs.warp.dev/guides/agent-workflows/how-to-run-multiple-ai-coding-agents",
+    "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+    "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+    "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+    "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+    "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/",
+    "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "https://www.arthur.ai/column/govern-ai-coding-agents-claude-code-cursor-copilot-enterprise",
+    "https://amplifying.ai/coding-agents",
+    "https://docs.github.com/en/copilot/responsible-use/agents",
+    "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents",
+    "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-code-review?tool=cli",
+    "https://aiagentsengineered.com/blog/agent-trajectory-evaluation/",
+    "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+    "https://openai.com/index/atlassian-partnership/"
+  ],
+  "qualifying_update_count": 9,
+  "qualifying_updates": [
+    {
+      "id": "warp-multi-agent-worktrees-handoffs-2026-10-12",
+      "source_url": "https://docs.warp.dev/guides/agent-workflows/how-to-run-multiple-ai-coding-agents",
+      "visible_date": "2026-10-12",
+      "date_basis": "Page footer says Last updated Oct 12, 2026.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md"
+      ],
+      "factual_summary": "Warp updated a public guide for running Claude Code, Codex, Warp Agent, and other coding agents across tabs, worktrees, and cloud orchestration. It emphasizes clear task ownership, isolated worktrees, validation ownership, branch/diff/PR handoffs, fan-in review, and rerunning validation before merge.",
+      "why_it_matters_for_leaf": "Reinforces local practice leaves that treat multi-agent work as explicit ownership, isolated workspaces, evidence-bearing handoff, and human/agent review rather than uncontrolled parallel editing.",
+      "named_entities": [
+        "Warp",
+        "Claude Code",
+        "Codex CLI",
+        "OpenCode",
+        "Gemini CLI",
+        "Git worktrees",
+        "Oz",
+        "Warp Factories"
+      ],
+      "upstream_owned_entities": [
+        "Warp",
+        "Claude Code",
+        "Codex CLI",
+        "OpenCode",
+        "Gemini CLI"
+      ],
+      "follow_up_note": "During ingest, keep product facts upstream and extract only local workflow implications for ownership, isolation, validation, and handoff."
+    },
+    {
+      "id": "github-copilot-local-sandboxing-ga-2026-10-07",
+      "source_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "visible_date": "2026-10-07",
+      "date_basis": "GitHub changelog date October 7, 2026.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "factual_summary": "GitHub announced general availability of local sandboxing for Copilot CLI, the Copilot app, and VS Code Agent Host sessions. The feature restricts agent-initiated tools and commands across filesystem, network, credentials, and other capabilities, and supports enterprise-managed policies developers cannot weaken.",
+      "why_it_matters_for_leaf": "Supports the local rule that platform-native mutation should run through managed controls and that agent access to files, tools, credentials, networks, and local services needs explicit boundaries.",
+      "named_entities": [
+        "GitHub Copilot",
+        "GitHub Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code Agent Host",
+        "Microsoft eXecution Container",
+        "MXC"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "MXC"
+      ],
+      "follow_up_note": "Synthesize as a governance/access-control practice, not as a Copilot product page."
+    },
+    {
+      "id": "github-copilot-weekly-worktree-cleanup-session-grid-2026-10-09",
+      "source_url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+      "visible_date": "2026-10-09",
+      "date_basis": "GitHub changelog date October 9, 2026.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md"
+      ],
+      "factual_summary": "GitHub weekly Copilot release notes say VS Code 1.141 can show agent sessions side by side in a grid and includes chat-driven worktree cleanup that reports inactive session worktree disk use before removal. The same note points to local sandboxing for limiting agent access.",
+      "why_it_matters_for_leaf": "Adds current public evidence that persistent workspaces now require lifecycle hygiene: active session visibility, ownership tracking, and cleanup only after reviewing inactive worktrees.",
+      "named_entities": [
+        "GitHub Copilot",
+        "VS Code",
+        "Git worktrees"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "VS Code"
+      ],
+      "follow_up_note": "During ingest, connect to workspace retirement and cleanup evidence rather than duplicating VS Code release details."
+    },
+    {
+      "id": "github-copilot-code-review-billing-controls-2026-10-08",
+      "source_url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+      "visible_date": "2026-10-08",
+      "date_basis": "GitHub changelog date October 8, 2026.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ],
+      "factual_summary": "GitHub added organization-level controls for Copilot code review billing and for whether externally licensed users can request reviews in organization repositories.",
+      "why_it_matters_for_leaf": "Shows that AI review is becoming an administratively governed workflow surface with budget, entitlement, and requester controls that adoption agreements should make explicit.",
+      "named_entities": [
+        "GitHub Copilot code review",
+        "GitHub organizations",
+        "AI Credits"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot"
+      ],
+      "follow_up_note": "Keep local synthesis on review authority, requester eligibility, cost attribution, and adoption operating agreements."
+    },
+    {
+      "id": "github-copilot-telemetry-capture-controls-2026-10-12",
+      "source_url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/",
+      "visible_date": "2026-10-12",
+      "date_basis": "GitHub changelog date October 12, 2026.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "factual_summary": "GitHub added managed telemetry settings that can attribute Copilot activity to users while keeping prompt/response/tool content capture separate and off by default. It also split optional capture into prompts, responses, tool arguments, tool outputs, and policy details, warning that these classes may include source code, paths, commands, and tool results.",
+      "why_it_matters_for_leaf": "Directly informs evidence-package and governance leaves: useful audit traces must be scoped, approved, and privacy-aware, especially when tool arguments or outputs may expose sensitive workspace content.",
+      "named_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code Agent Host"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "VS Code"
+      ],
+      "follow_up_note": "Potential ingest should distinguish identity attribution from content capture and tie capture classes to evidence minimization."
+    },
+    {
+      "id": "github-copilot-jetbrains-mcp-startup-control-2026-10-10",
+      "source_url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+      "visible_date": "2026-10-10",
+      "date_basis": "GitHub changelog date October 10, 2026.",
+      "leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ],
+      "factual_summary": "GitHub Copilot for JetBrains added controls for enterprise-managed default agent models and an MCP setting that can disable automatic server startup for Copilot and Claude. The release also notes reliability improvements around MCP configuration, customizations, file changes, and worktree workflows.",
+      "why_it_matters_for_leaf": "Supports practice guidance that local tool servers should not silently become active and that model/tool defaults need organization-level control where agent sessions can mutate local projects.",
+      "named_entities": [
+        "GitHub Copilot for JetBrains",
+        "MCP",
+        "Claude",
+        "JetBrains IDEs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "MCP",
+        "Claude",
+        "JetBrains"
+      ],
+      "follow_up_note": "Route broad product details upstream; local implication is explicit activation and policy control for tool servers."
+    },
+    {
+      "id": "ars-ai-coding-review-bottleneck-2026-10-09",
+      "source_url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "visible_date": "2026-10-09",
+      "date_basis": "Article timestamp Oct 9, 2026 3:43 pm.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "factual_summary": "Ars Technica reported on a Harvard/Jellyfish study of coding-agent adoption across hundreds of firms. The report says coding-phase gains were absorbed by downstream code-review constraints, with longer review processes, more revisions, and more reviewer comments.",
+      "why_it_matters_for_leaf": "Strengthens the local adoption message that AI-assisted development must budget for review, verification, and merge governance instead of treating generated code volume as completed software output.",
+      "named_entities": [
+        "Ars Technica",
+        "Harvard University",
+        "Jellyfish",
+        "Fiona Chen",
+        "James Stratton"
+      ],
+      "upstream_owned_entities": [
+        "Harvard University",
+        "Jellyfish"
+      ],
+      "follow_up_note": "Use as adoption/evaluation evidence; primary study should be checked during normal ingest before durable synthesis."
+    },
+    {
+      "id": "arthur-coding-agent-governance-incidents-2026-10-09",
+      "source_url": "https://www.arthur.ai/column/govern-ai-coding-agents-claude-code-cursor-copilot-enterprise",
+      "visible_date": "2026-10-09",
+      "date_basis": "Article date October 9, 2026.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md"
+      ],
+      "factual_summary": "Arthur published a governance analysis of 2026 coding-agent incidents, emphasizing that local coding agents often run on developer machines with local MCP servers, file access, APIs, shell commands, and developer credentials. The article maps incidents to controls for inventory, reach, and behavioral monitoring.",
+      "why_it_matters_for_leaf": "Relevant to governance and governed access leaves because it frames local developer-machine agents as an inventory and blast-radius problem, not only a model-quality problem.",
+      "named_entities": [
+        "Arthur",
+        "MCP",
+        "Snyk",
+        "JetBrains",
+        "Verizon DBIR",
+        "Cloud Security Alliance",
+        "StepSecurity",
+        "Railway"
+      ],
+      "upstream_owned_entities": [
+        "Arthur",
+        "Snyk",
+        "JetBrains",
+        "Cloud Security Alliance",
+        "StepSecurity",
+        "Railway"
+      ],
+      "follow_up_note": "Verify linked primary incident sources during ingest; local implication is inventory, scoped credentials, and behavioral evidence."
+    },
+    {
+      "id": "amplifying-coding-agent-public-repo-index-2026-10-13",
+      "source_url": "https://amplifying.ai/coding-agents",
+      "visible_date": "2026-10-13",
+      "date_basis": "Index lists multiple dataset/source dates updated 2026-10-13.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ],
+      "factual_summary": "Amplifying updated a public Coding Agents Index with source dates for PRs, merged PRs, unreviewed PRs, commits, author locations, and related research/product counters. The index tracks public repository coding-agent activity, merge outcomes, and review patterns.",
+      "why_it_matters_for_leaf": "May provide external evidence for commit-level governance and evaluation leaves, especially where local guidance needs metrics about agent-authored commits, PR review, and merge outcomes.",
+      "named_entities": [
+        "Amplifying",
+        "Coding Agents Index",
+        "Claude Code"
+      ],
+      "upstream_owned_entities": [
+        "Amplifying",
+        "Claude Code"
+      ],
+      "follow_up_note": "Treat as a public metrics source to verify during ingest; avoid importing broad product rankings locally."
+    }
+  ],
+  "excluded_candidate_count": 8,
+  "excluded_candidates": [
+    {
+      "source_url": "https://aiagentsengineered.com/blog/agent-trajectory-evaluation/",
+      "visible_date": "2026-10-06",
+      "reason": "Outside this run window because the cutoff is after 2026-10-07T01:08Z; date is boundary-only/older than seven days for this run.",
+      "candidate_leaf_ids": [
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.github.com/en/copilot/responsible-use/agents",
+      "visible_date": null,
+      "reason": "Useful current-looking docs page, but no visible publication or updated date in the page content; crawl date alone is not acceptable.",
+      "candidate_leaf_ids": [
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents",
+      "visible_date": null,
+      "reason": "No visible publication or updated date in page content; crawl date alone is not acceptable.",
+      "candidate_leaf_ids": [
+        "docs/wiki/prompt-and-instructions/custom-agent-guidance.md"
+      ]
+    },
+    {
+      "source_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-code-review?tool=cli",
+      "visible_date": null,
+      "reason": "No visible publication or updated date in page content; crawl date alone is not acceptable even though content is relevant to review instructions.",
+      "candidate_leaf_ids": [
+        "docs/wiki/coding-practices/pre-pr-independent-review.md"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases/",
+      "visible_date": "2026-10-01",
+      "reason": "Outside seven-day window.",
+      "candidate_leaf_ids": [
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ]
+    },
+    {
+      "source_url": "https://openai.com/index/atlassian-partnership/",
+      "visible_date": "2026-10-06",
+      "reason": "Outside seven-day window for this run and mostly broad ecosystem/vendor partnership detail owned upstream.",
+      "candidate_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md"
+      ]
+    },
+    {
+      "source_url": "https://www.reddit.com/r/ClaudeWorkflows/comments/1wzez7h/workflow_structured_ai_agent_handoff_for/",
+      "visible_date": "2026-10-06",
+      "reason": "Outside seven-day window and community workflow source; could be revisited only with stronger primary evidence.",
+      "candidate_leaf_ids": [
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md"
+      ]
+    },
+    {
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "visible_date": null,
+      "reason": "Already cited in the governed database leaf, but no current visible update date found in this run.",
+      "candidate_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ]
+    }
+  ],
+  "federation_note": "Broad product, vendor, model, framework, MCP, and incident background remains upstream-owned by the AI wiki. This raw artifact preserves only local practice implications for workflows, verification, governance, adoption, and controlled tool access.",
+  "follow_up_notes": [
+    "Normal ingest should verify primary sources for secondary reporting before durable synthesis.",
+    "Keep local synthesis to practice implications and route product/entity background upstream.",
+    "No docs/wiki pages were changed by this watch."
+  ]
+}
