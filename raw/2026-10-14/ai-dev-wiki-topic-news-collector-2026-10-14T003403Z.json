@@ -1,0 +1,563 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-14T00:34:03Z",
+  "last_run_timestamp_utc": "2026-10-13T00:33:01.232Z",
+  "cutoff_window": {
+    "start_utc": "2026-10-12T00:34:03Z",
+    "end_utc": "2026-10-14T00:34:03Z",
+    "policy": "Include only public sources published or visibly updated within the last two days relative to the run time. Exclude missing, ambiguous, future-dated, stale, or boundary-only dates."
+  },
+  "federation_boundary": {
+    "downstream_wiki": "/Users/martinbechard/dev/ai-dev-wiki/docs/wiki",
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "rule_source": "docs/wiki/federation.md",
+    "downstream_owned_scope": [
+      "context architecture",
+      "guidance structure",
+      "agent operating practices",
+      "workflows",
+      "verification",
+      "governance",
+      "local adoption patterns"
+    ],
+    "upstream_owned_scope": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "techniques"
+    ],
+    "collector_boundary_note": "Items below retain local practice implications and routing notes only. Broad ecosystem entity facts are marked upstream-owned."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "search_topics": [
+    "context engineering",
+    "durable agent instructions",
+    "source ingest and citation workflows",
+    "coding-agent prompts",
+    "planning loops",
+    "subagents",
+    "AI-assisted TDD",
+    "code review",
+    "regression repair",
+    "code retrieval",
+    "RAG for codebases",
+    "tool-call practice",
+    "MCP as a governed practice",
+    "software engineering evals",
+    "AI code review checks",
+    "harness architecture",
+    "structured outputs",
+    "streaming progress",
+    "permissions",
+    "approvals",
+    "audit logs",
+    "package-install risk",
+    "licensing",
+    "privacy",
+    "team adoption"
+  ],
+  "qualifying_updates": [
+    {
+      "title": "GitHub Copilot app guidance packages repository instructions, skills, agents, and MCP servers as codebase context",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+      "source_type": "vendor blog",
+      "visible_date": "October 12, 2026",
+      "date_basis": "page byline",
+      "summary": "GitHub published practice guidance for tailoring Copilot with repository custom instructions, path-specific instruction files, project-level agent skills, custom agents, and MCP servers such as Playwright for browser verification.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is a direct practice source for durable instructions, repeatable skill packaging, custom agent roles, and governed tool access. It maps naturally to local coverage for prompt-and-instructions, agent-workflows, retrieval-and-tools, verification-and-evals, and adoption operating agreements.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot",
+        "Model Context Protocol",
+        "Playwright",
+        "Awesome Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot app",
+        "Copilot",
+        "Model Context Protocol",
+        "Playwright"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "follow_up_notes": "During ingest, compare against local leaves for durable instructions, portable skills/runbooks, custom agents, progressive MCP discovery, and verification via browser tooling. Keep product-specific Copilot background upstream-owned."
+    },
+    {
+      "title": "GitHub Copilot managed settings add user attribution and configurable telemetry capture classes",
+      "source_url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 12, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added managed-settings telemetry controls that can attribute Copilot activity to a user without collecting prompts, responses, or tool content by default, with separate capture classes for prompts, responses, tool arguments, tool output, and policy details.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is practice-level governance evidence for audit logging, privacy boundaries, tool-call evidence, policy capture, and approved collection endpoints in coding-agent environments.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code",
+        "Agent Host"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "OpenTelemetry",
+        "Copilot CLI",
+        "GitHub Copilot app",
+        "VS Code"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "follow_up_notes": "Potentially update governance leaves for telemetry minimization and audit evidence. Preserve the warning that prompt, tool, command, file, and path capture can expose sensitive local content."
+    },
+    {
+      "title": "GitHub Copilot managed settings can fail closed when policy freshness cannot be confirmed",
+      "source_url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added a forceRemoteSettingsRefresh managed setting so supported Copilot clients retrieve current policy at startup, and added minimum client version enforcement for governance-focused settings such as sandbox.",
+      "why_it_matters_for_ai_assisted_development_practice": "This supports local practice around stale-policy risk, fail-closed agent operation, sandbox enforcement, client-version gates, and enterprise-managed permission baselines.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "VS Code",
+        "GitHub Copilot app",
+        "MDM"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Copilot CLI",
+        "VS Code",
+        "GitHub Copilot app"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "follow_up_notes": "Consider local synthesis under destructive-command controls, execution-edge authorization, agent environment readiness, and governance controls for agents."
+    },
+    {
+      "title": "GitHub Code Quality finding dismissals and reopenings become audit-log events",
+      "source_url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added organization and enterprise audit-log events for manual dismissals and reopenings of Code Quality findings, including actor, time, repository, rule, affected finding identifiers, and count.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is local-practice evidence for auditability of AI-assisted quality decisions, manual override tracking, and review-governance evidence packages.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "GitHub Team",
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Quality",
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Server"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices",
+        "docs/wiki/verification-and-evals"
+      ],
+      "follow_up_notes": "Ingest as an audit-trail pattern, not a product encyclopedia update. Check whether local leaves already cover finding dismissal evidence."
+    },
+    {
+      "title": "GitHub Code scanning AI Scan metrics expose pull-request AI-scan effectiveness and autofix response",
+      "source_url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added security-overview metrics for AI Scan pull-request findings, remediation rate, repositories generating findings, reporting-period trends, and developer use of autofix suggestions.",
+      "why_it_matters_for_ai_assisted_development_practice": "The update is practice evidence for rollout metrics, AI security-review effectiveness, remediation tracking, and investment decisions without reviewing every individual pull request.",
+      "named_entities": [
+        "GitHub",
+        "AI Scan",
+        "CodeQL",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "AI Scan",
+        "CodeQL",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "GitHub Enterprise Cloud",
+        "GitHub Enterprise Server"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/verification-and-evals",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/coding-practices"
+      ],
+      "follow_up_notes": "Potential fit for AI-assisted security repair gates, lifecycle AI review gates, and code-review eval/rubric coverage."
+    },
+    {
+      "title": "GitHub push attribution records authenticated pusher identity independent of author and committer metadata",
+      "source_url": "https://github.blog/changelog/2026-10-12-push-attribution-public-preview/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 12, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added durable per-commit pusher identity and a repository ruleset condition requiring the committer to match the pusher, reducing commit identity spoofing risk.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is local governance evidence for commit-level AI governance, delegated authority, review policy enforcement, and auditability when humans and agents both contribute code.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Enterprise"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Enterprise"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "follow_up_notes": "During ingest, connect to commit-level AI governance and agent identity leaves. Do not restate broad GitHub feature details beyond the practice implication."
+    },
+    {
+      "title": "GitHub secret scanning blocks Anthropic keys by default through push protection",
+      "source_url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub expanded secret scanning to detect Anthropic, Salesforce, and Cloudsmith secret types, with Anthropic service and user API keys included in push protection by default.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is practice evidence for package and agent supply-chain controls, credential leak prevention in agent-authored commits, and default-blocking expectations for AI provider keys.",
+      "named_entities": [
+        "GitHub",
+        "Anthropic",
+        "Salesforce",
+        "Cloudsmith",
+        "secret scanning",
+        "push protection"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Anthropic",
+        "Salesforce",
+        "Cloudsmith"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "follow_up_notes": "Useful for sensitive-data and supply-chain controls. Treat provider/detector specifics as upstream-owned except where local practice needs the push-protection control."
+    },
+    {
+      "title": "GitHub Dependabot alerts now distinguish withdrawn advisories through webhooks and HTTP 410 responses",
+      "source_url": "https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added a withdrawn action to the dependabot_alert webhook and returns 410 Gone for withdrawn alerts so integrations can distinguish withdrawn advisories from never-existing alerts.",
+      "why_it_matters_for_ai_assisted_development_practice": "This affects source-ingest reconciliation and package-risk workflows: downstream security dashboards and agent-maintained tickets should mark withdrawals explicitly rather than silently erasing evidence.",
+      "named_entities": [
+        "GitHub",
+        "Dependabot",
+        "GHSA",
+        "CVE",
+        "REST API",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Dependabot",
+        "GHSA",
+        "CVE",
+        "GitHub Enterprise Server"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/source-workflows",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/verification-and-evals"
+      ],
+      "follow_up_notes": "Consider source-reconciliation coverage for withdrawn or retracted evidence. Keep broad Dependabot product background upstream-owned."
+    },
+    {
+      "title": "GitHub organization-level private registries can now be configured with anonymous authentication for Dependabot",
+      "source_url": "https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 12, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added Anonymous as an authentication method for organization-level private registries that Dependabot can reach without credentials, such as internal mirrors with anonymous reads.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is practice evidence for dependency update agents, egress allowlists, package-install risk, and credential minimization when automation needs registry access.",
+      "named_entities": [
+        "GitHub",
+        "Dependabot",
+        "npm",
+        "NuGet",
+        "GitHub Enterprise Server"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Dependabot",
+        "npm",
+        "NuGet",
+        "GitHub Enterprise Server"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows",
+        "docs/wiki/retrieval-and-tools"
+      ],
+      "follow_up_notes": "Potentially synthesize into sensitive-data/supply-chain controls and governed tool access, emphasizing least-credential registry access."
+    },
+    {
+      "title": "GitHub budgets and alerts page adds searchable and filterable budget lists",
+      "source_url": "https://github.blog/changelog/2026-10-13-search-and-filter-for-budgets-now-available/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub added search and filters for budgets by scope, product, SKU, and, in enterprises and organizations, user.",
+      "why_it_matters_for_ai_assisted_development_practice": "This is local adoption evidence for cost governance as coding-agent usage scales across users, organizations, products, and billable usage items.",
+      "named_entities": [
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/governance-and-risk"
+      ],
+      "follow_up_notes": "If ingested, frame as agent cost telemetry and operating-model ownership rather than as a general billing UI update."
+    },
+    {
+      "title": "Gemini 4 Argon availability in GitHub Copilot includes administrator model-policy controls",
+      "source_url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/",
+      "source_type": "vendor changelog",
+      "visible_date": "October 13, 2026",
+      "date_basis": "changelog date",
+      "summary": "GitHub announced Gemini 4 Argon availability in Copilot surfaces and noted that Copilot Business and Enterprise administrators can manage access through model policy settings, with default model enablement behavior.",
+      "why_it_matters_for_ai_assisted_development_practice": "The broad model and product release is upstream-owned, but the local practice implication is model access governance, automatic enablement review, usage-based billing awareness, and workflow compatibility checks when new coding models appear.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 4 Argon",
+        "Google",
+        "Visual Studio Code",
+        "Visual Studio",
+        "Copilot CLI",
+        "GitHub Copilot coding agent",
+        "GitHub Copilot app",
+        "JetBrains IDEs",
+        "Xcode",
+        "Eclipse"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "Gemini 4 Argon",
+        "Google",
+        "Visual Studio Code",
+        "Visual Studio",
+        "Copilot CLI",
+        "GitHub Copilot coding agent",
+        "GitHub Copilot app",
+        "JetBrains IDEs",
+        "Xcode",
+        "Eclipse"
+      ],
+      "local_topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model",
+        "docs/wiki/verification-and-evals"
+      ],
+      "follow_up_notes": "Route model/product facts upstream. Keep only local model-policy, default-enable, cost, and verification implications if ingested."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "JetBrains Research: Our Framework for Reviewing AI-Generated Code",
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "visible_date": "2026/10 in URL; exact page date not visible in extracted page",
+      "reason": "Exact public publication or update date could not be confirmed within the two-day window from the direct page extraction. The source is practice-relevant but date-ambiguous for this collector.",
+      "named_entities": [
+        "JetBrains",
+        "Lund University",
+        "ESEIW",
+        "CodeRabbit",
+        "Claude Code",
+        "Graphite",
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "JetBrains",
+        "CodeRabbit",
+        "Claude Code",
+        "Graphite",
+        "GitHub"
+      ]
+    },
+    {
+      "title": "GitHub ReviewBench: An open benchmark for AI code review",
+      "source_url": "https://github.blog/ai-and-ml/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "visible_date": "October 5, 2026",
+      "reason": "Stale for this collector window. Practice-relevant but published before 2026-10-12T00:34:03Z.",
+      "named_entities": [
+        "GitHub",
+        "ReviewBench",
+        "Copilot code review"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "ReviewBench",
+        "Copilot code review"
+      ]
+    },
+    {
+      "title": "GitHub: AI is changing developer work. Here are three skills to strengthen.",
+      "source_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
+      "visible_date": "October 2, 2026",
+      "reason": "Stale for this collector window. The article is locally relevant for adoption and review practice but outside the two-day cutoff.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "title": "GitHub: Secret protection must scale with software",
+      "source_url": "https://github.blog/ai-and-ml/secret-protection-must-scale-with-software/",
+      "visible_date": "October 7, 2026",
+      "reason": "Stale for this collector window. It may remain useful for later ingest from prior artifacts, but it does not qualify for this run.",
+      "named_entities": [
+        "GitHub"
+      ],
+      "upstream_owned_entities": [
+        "GitHub"
+      ]
+    },
+    {
+      "title": "GitHub local sandboxing for Copilot generally available",
+      "source_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+      "visible_date": "October 7, 2026",
+      "reason": "Stale for this collector window, despite strong local relevance for sandbox and permission practice.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "title": "GitHub Copilot weekly releases - October 5",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "October 9, 2026",
+      "reason": "Stale for this collector window. Also broad product coverage; would require local practice reduction if considered elsewhere.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "title": "New controls and chat improvements in Copilot for JetBrains",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "October 10, 2026",
+      "reason": "Stale for this collector window and primarily broad product/UI coverage.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "JetBrains"
+      ]
+    },
+    {
+      "title": "The Atlantic: The Tragedy of AI Coding",
+      "source_url": "https://www.theatlantic.com/ideas/2026/10/ai-programming-big-tech-regulations/688960/",
+      "visible_date": "October 12, 2026",
+      "reason": "Within date window but excluded as broad cultural and regulatory commentary rather than a concrete practice-level update for the approved local topic roots.",
+      "named_entities": [
+        "The Atlantic"
+      ],
+      "upstream_owned_entities": []
+    },
+    {
+      "title": "OpenAI Developer Community agent discussion pages",
+      "source_url": "https://community.openai.com/tag/agents/343",
+      "visible_date": "October 12-13, 2026 activity timestamps",
+      "reason": "Public and current, but forum index entries are discussion pointers rather than durable direct-source practice updates. Individual threads would need separate direct inspection and source-quality screening before inclusion.",
+      "named_entities": [
+        "OpenAI Developer Community",
+        "OpenAI Agents API",
+        "Codex"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI Developer Community",
+        "OpenAI Agents API",
+        "Codex"
+      ]
+    },
+    {
+      "title": "Reddit discussions about AI-era code review and software engineering degradation",
+      "source_url": "https://www.reddit.com/",
+      "visible_date": "October 13, 2026 snippets",
+      "reason": "Public and current, but excluded due to low source authority for durable wiki practice and insufficient direct-page inspection in this run.",
+      "named_entities": [
+        "Reddit"
+      ],
+      "upstream_owned_entities": []
+    }
+  ],
+  "follow_up_notes": [
+    "Raw collector only: do not update docs/wiki pages or move this artifact to raw/processed during this run.",
+    "Potential high-signal ingest themes: durable repository context packaging, Copilot telemetry privacy controls, fail-closed managed settings, AI review audit events, AI Scan rollout metrics, commit pusher attribution, credential push protection for AI provider keys, Dependabot withdrawn-alert reconciliation, least-credential registry access, and user/SKU-level cost governance.",
+    "Before ingest, check existing leaves for overlap and preserve federation: GitHub, Copilot, Gemini, Anthropic, Dependabot, CodeQL, Playwright, MCP, and developer-tool/product facts are upstream-owned unless a local practice lens is being synthesized."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "git_diff_check": "passed"
+  },
+  "blockers": []
+}
