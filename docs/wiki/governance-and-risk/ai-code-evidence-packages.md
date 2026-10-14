@@ -34,6 +34,8 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds evidence-scoped verification language for AI review. Generated-review findings belong in the evidence package as claims, while verification records should name executed checks, covered code or workflow areas, results, residual unchecked areas, and the human owner who accepted or rejected the risk.
 
+The October 14 raw ingest adds managed telemetry and rollout-metric evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) and [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) distinguish user attribution from optional content capture, including prompts, responses, tool arguments, tool outputs, and policy details that can expose code, paths, commands, or tool results. The same topic source records AI security-scan metrics and quality-finding audit events as evidence-package inputs when teams need to review remediation rates, repository coverage, manual dismissals, reopenings, and human acceptance.
+
 This page owns the generated-code evidence package. [Intelligent code review](../coding-practices/intelligent-code-review.md) owns review execution, and [governance controls for agents](governance-controls-for-agents.md) owns the broader local control model.
 
 ## Practice Boundaries
@@ -53,6 +55,8 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - Flag oversized generated pull requests as evidence-incomplete when they cannot explain touched files, API assumptions, code placement, dependency choices, or authorization-path changes.
 - Treat screenshots, logs, traces, and generated proof artifacts as governed evidence channels whose storage location, visibility, retention, runtime controls, and provenance need review before they can support acceptance.
 - Store generated review findings separately from verification evidence, and require the package to say what was checked, what was not checked, and who accepted the remaining risk.
+- Separate identity attribution from content capture, and record which telemetry classes are enabled before prompts, responses, tool arguments, tool outputs, commands, paths, or policy details become evidence.
+- Preserve AI security-scan rollout metrics and quality-finding override events as adoption evidence only when they remain linked to repository scope, remediation status, and human acceptance.
 
 ## Authoritative Sources
 
@@ -68,6 +72,8 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [intelligent code review](../coding-practices/intelligent-code-review.md)
 - [governance controls for agents](governance-controls-for-agents.md)
 
@@ -96,6 +102,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 ## Maintenance Notes
 
 - Maintained on 2026-10-09 with software-audit-trail, source-evidence, prompt/spec input, review-path, work-item, security/privacy check, and acceptance-decision evidence.
+- Maintained on 2026-10-14 with telemetry-class, user-attribution, AI-scan metric, quality-finding override, and remediation-status evidence.
 - Maintained on 2026-10-13 with generated-review-claim, verification-scope, unchecked-area, and human-risk-acceptance evidence.
 - Maintained on 2026-09-29 with self-managed governance, security-scan, remediation-control, dependency-risk, compliance, durable-record, and oversized-generated-PR evidence.
 - Maintained on 2026-10-07 with proof-artifact location, visibility, retention, runtime-control, agent-inventory, package-provenance, and reviewer-access evidence.

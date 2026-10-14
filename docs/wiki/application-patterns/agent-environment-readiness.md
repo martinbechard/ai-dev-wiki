@@ -38,6 +38,8 @@ The [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-
 
 The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json) adds terminal-agent substrate comparison evidence. Environment readiness should keep repository setup wrappers, sandbox defaults, local versus hosted execution, model/API stack, context-window assumptions, and runtime permission behavior visible when teams compare CLI or IDE agents.
 
+The October 14 raw ingest adds policy-freshness and managed-sandbox readiness evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) records local sandboxing as a managed boundary for filesystem, network, credentials, and local services. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds managed setting freshness and minimum client-version enforcement, so readiness should fail closed when a client cannot prove current policy, sandbox support, or model/default policy before startup.
+
 ## Practice Boundaries
 
 - Check filesystem, outbound internet, local network, Git credential, and CLI credential policies before launching local coding-agent work.
@@ -61,6 +63,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - Verify execution locality, cache and secret boundary, worktree branch target, port allocation, database or volume separation, dependency scope, and environment-file ownership before parallel or cloud-hosted coding agents run.
 - Verify content-exclusion policy, browser/native app control state, data-source ownership, identity passthrough, and environment-specific access before granting development or enterprise data.
 - Compare CLI and IDE agent readiness by setup wrapper, sandbox default, execution locality, model/API stack, context limit, and runtime permission behavior before routing work.
+- Require startup policy refresh, minimum client-version evidence, and enforceable sandbox support before agent environments can receive file, network, credential, or local-service access.
 
 ## Authoritative Sources
 
@@ -78,6 +81,8 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 - [September 3 topic news collector source](../../../raw/processed/2026-09-03/ai-dev-wiki-topic-news-collector-2026-09-04T003115Z.json)
 - [September 7 leaf update watch source](../../../raw/processed/2026-09-07/ai-dev-wiki-leaf-update-watch-2026-09-07T210258-0400.json)
 - [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai-dev-wiki-leaf-update-watch-2026-09-23T210241-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [agent harness components](agent-harness-components.md)
 - [persistent agent workspaces](../agent-workflows/persistent-agent-workspaces.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -107,6 +112,7 @@ The [September 23 leaf update watch source](../../../raw/processed/2026-09-23/ai
 ## Maintenance Notes
 
 - Maintained on 2026-09-25 with local sandbox policy, credential scope, persistent-drive, and read-only snapshot evidence.
+- Maintained on 2026-10-14 with managed sandbox, policy-refresh, minimum-client-version, and fail-closed startup readiness evidence.
 - Maintained on 2026-10-01 with sandbox lifecycle, security boundary, artifact, MCP connection, tracing, error recovery, and observability readiness evidence.
 
 - Created on 2026-07-30 from public evidence about fast-start coding-agent environments, secret isolation, long-job durability, and managed-versus-custom substrate selection.

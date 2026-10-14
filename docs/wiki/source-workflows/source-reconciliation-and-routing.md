@@ -11,6 +11,8 @@ tags: ["source-workflows"]
 
 The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) and [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) keep broad GitHub, GitHub Copilot, JetBrains IDEs, Cursor, Cloudflare, Atlassian, Octomind, OpenAI, Anthropic, model, benchmark, and MCP protocol coverage upstream-owned while retaining local downstream practice for managed defaults, MCP startup, skill-over-MCP provenance, schema-budget selection, local-agent remote control, human-owned review, eval rubrics, license and serving evidence, trust-responsive authorization, and inherited-access controls.
 
+The October 14 raw ingest keeps GitHub, Copilot, Dependabot, CodeQL, AI Scan, Gemini, Anthropic, Salesforce, Cloudsmith, OpenTelemetry, Playwright, MCP, IDEs, and related product or vendor facts upstream-owned. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) and [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) are retained locally for downstream practice: repository context packaging, user-attributed telemetry, fail-closed managed settings, authenticated pusher identity, quality-finding audit events, AI security-scan rollout metrics, AI-provider secret push protection, withdrawn-alert reconciliation, least-credential dependency automation, and budget/search filters for scaled adoption.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) keeps broad GitHub, Copilot, JetBrains, Seapoint, Anchor Sprint, Optimal AI, Deska, DETENT, Appy Pie, and Start Debugging entity coverage upstream-owned while retaining local downstream practice for sandboxing, security-review authorization, local-model routing, metric gaps, stacked PRs, review evidence, weekly review rituals, software audit trails, spec-driven coding, and declarative workflow boundaries. The JetBrains item remains a routing note because the direct page only exposed month-level date evidence during ingest.
 
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds planning-system routing evidence. When issue or planning systems become agent control planes, source reconciliation should preserve durable work IDs, ownership metadata, model-routing decisions, secret-exposure notes, token revocation audit entries, and comment-to-session follow-up routing so later agents can connect source updates to the right active or completed session.
@@ -113,6 +115,7 @@ Local routing:
 - Preserve source-conversation links, attachment provenance, forwarded context, default owner and repository fields, duplicate-work checks, and repository-switch evidence when chat surfaces initiate agent work.
 
 - Route provider incident frameworks and evaluator-access stories by separating upstream entity history from local review-gate and disclosure workflow implications.
+- Route October 14 product, vendor, model, protocol, and developer-tool updates upstream while retaining local practice for context packaging, telemetry privacy, fail-closed policy, commit attribution, finding audits, security-scan metrics, secret push protection, withdrawn evidence, least-credential automation, and cost-governance filters.
 
 - Read authoritative source files before updating wiki understanding.
 - Use higher-priority sources when wiki prose conflicts with code, tests, specifications, procedures, backlog records, architecture, or plans.
@@ -145,6 +148,8 @@ Local routing:
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
@@ -233,6 +238,7 @@ Local routing:
 
 - Maintained on 2026-10-09 with upstream routing for October 9 topic-collector entities and a JetBrains month-level-date caveat.
 - Maintained on 2026-10-11 with upstream routing for GitHub, Copilot, JetBrains, Cursor, Cloudflare, Atlassian, Octomind, OpenAI, Anthropic, model, benchmark, and MCP protocol entities.
+- Maintained on 2026-10-14 with upstream routing for GitHub, Copilot, Dependabot, CodeQL, AI Scan, Gemini, Anthropic, Salesforce, Cloudsmith, OpenTelemetry, Playwright, MCP, and IDE entities while retaining downstream practice implications.
 - Maintained on 2026-10-07 with upstream routing for local sandboxing, review, metrics, Atlassian context, FAVUR evals, Qodo collaboration, and assurance-gate evidence.
 - Maintained on 2026-09-26 with chat-to-work traceability, attachment provenance, repository defaulting, duplicate-work, safer repository-switching, and upstream-entity routing evidence.
 - Maintained on 2026-09-25 with planning-control-plane, durable-ID, ownership, model-routing, token-revocation, and comment-routing evidence.

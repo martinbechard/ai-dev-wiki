@@ -50,6 +50,7 @@ The [current October digest](2026-10.md) records the active month in item-level,
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-14 with the October 13 leaf-watch and October 14 topic-collector raw ingest digest scope.
 - Maintained on 2026-10-13 with the October 13 topic-collector raw ingest digest scope.
 - Maintained on 2026-10-12 with the October 11 leaf-watch and October 12 topic-collector raw ingest digest scope.
 - Maintained on 2026-10-10 with the October 9 leaf-watch and October 10 topic-collector raw ingest digest scope.

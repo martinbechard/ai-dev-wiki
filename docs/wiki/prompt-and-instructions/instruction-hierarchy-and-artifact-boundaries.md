@@ -64,6 +64,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds Copilot project-context layering evidence without duplicating broad GitHub Copilot product coverage owned upstream. Locally, repository instructions, path-scoped instructions, reusable skills, custom agents, and MCP tools should remain separate context layers: instruction files own durable conventions, skills own repeatable procedures, custom agents own role and task posture, and MCP servers own governed access to external capabilities.
 
+The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) reinforces that same context-packaging boundary with repository custom instructions, path-specific instruction files, project-level agent skills, custom agents, and MCP servers. Locally, that source is not a product leaf; it is evidence that durable codebase context needs source labels, authority labels, review ownership, and tool-access boundaries before it is treated as active guidance.
+
 ## Practice Boundaries
 
 - Put durable coding standards in repository instructions or procedure files when they apply across tasks.
@@ -109,6 +111,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Keep one canonical repository instruction owner where possible, and treat bridge files, symlinks, imports, and copies as compatibility surfaces that need drift checks.
 - Separate repository instructions, path-specific rules, reusable skills, custom agents, and MCP tool access as independently governed context layers rather than collapsing them into one prompt.
 - Treat coding-assistant project-context features as local routing evidence only after broad product behavior has been checked against upstream-owned entity coverage.
+- Preserve source labels, authority labels, owner review, and tool-access boundaries when packaging repository context for coding agents.
 
 ## Authoritative Sources
 
@@ -122,6 +125,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai-dev-wiki-topic-news-collector-2026-10-05T003104Z.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
@@ -180,6 +184,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Maintained on 2026-10-05 with cross-agent instruction-file discovery, import, live-refresh, and undocumented-behavior evidence.
 - Maintained on 2026-10-07 with observable instruction constraints, canonical AGENTS-style ownership, bridge-file compatibility, inline-critical-rule, and drift-check evidence.
 - Maintained on 2026-10-13 with project-context layering evidence for repository instructions, path rules, skills, custom agents, and MCP tools.
+- Maintained on 2026-10-14 with repository-context packaging, source-label, authority-label, owner-review, and tool-access-boundary evidence.
 - Maintained on 2026-08-29 with organization-level custom-agent catalog, source-label, policy-owner, context-window, cost, and review-expectation evidence.
 - Created on 2026-06-23 to hold the durable instruction, prompt, agent, and skill artifact boundary.
 - Maintained on 2026-06-23 to clarify prompt versus skill and runbook composition boundaries.

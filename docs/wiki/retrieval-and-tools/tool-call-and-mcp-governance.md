@@ -143,6 +143,8 @@ The [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai
 
 The October 11 raw sources add MCP startup, skill-serving, and capability-shape evidence. The [topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) records product controls for default model settings, automatic MCP startup, diagnostic-to-fix actions, and worktree reliability, while the [leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json) records a vendor changelog where an API MCP server exposes skills over MCP. Locally, MCP governance should treat automatic startup, model defaults, diagnostic repair actions, skill file discovery, and schema-count cost as governed environment configuration with provenance and audit evidence, not as prompt-level convenience.
 
+The October 14 raw ingest adds telemetry-capture and least-credential automation evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) separates user attribution from prompt, response, tool-argument, tool-output, and policy-detail capture. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds automatic MCP-startup control, anonymous registry access for dependency automation, and Dependabot withdrawn-alert handling as local tool-governance signals. Tool governance should decide which content classes may be retained, which tool servers may start automatically, when credential-free registry access is safer than shared tokens, and how withdrawn or retracted tool evidence stays visible instead of disappearing.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -218,6 +220,9 @@ The October 11 raw sources add MCP startup, skill-serving, and capability-shape 
 - Require hosted MCP servers to record identity-forwarding mode, default read/write scope, write-approval checkpoints, destructive-operation exclusions, token-storage expectations, and disconnect or logout behavior.
 - Treat MCP deployment agendas and migration events as prompts to review conformance, source-level server findings, identity, policy, observability, sandbox, and audit evidence before expanding tool access.
 - Record whether an MCP server is built on the official SDK, FastMCP, generated OpenAPI/FastAPI tooling, or another framework when that choice affects spec conformance, compatibility, documentation, generated tools, authentication, or deployment support.
+- Separate identity attribution from prompt, response, tool-argument, tool-output, and policy-detail capture before centralizing coding-agent telemetry.
+- Disable automatic tool-server startup unless provenance, authority, and startup policy are explicit for the workflow.
+- Prefer least-credential dependency automation when registry access can be scoped without reusable secrets, and preserve withdrawn-alert evidence instead of deleting retracted security facts.
 - Scope browser-agent search, fetch, observe, extract, and act tools separately so retrieval convenience does not silently authorize authenticated browser actions.
 - Treat generated API-to-MCP surfaces as designed adapters that need least-privilege review, schema clarity, permission checks, and verification before agents call them.
 - Treat automatic MCP startup, remotely served skill files, and diagnostic-to-fix actions as tool-surface changes that need administrator policy, provenance, permission scope, and invocation evidence.
@@ -267,6 +272,8 @@ The October 11 raw sources add MCP startup, skill-serving, and capability-shape 
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
@@ -390,6 +397,7 @@ The October 11 raw sources add MCP startup, skill-serving, and capability-shape 
 
 - Maintained on 2026-10-10 with MCP tool-description routing, prompt-injection, least-privilege, delegation-chain audit, invoked-or-declined action, and cross-boundary traceability evidence.
 - Maintained on 2026-10-11 with automatic MCP startup, skill-over-MCP, diagnostic action, and measured schema-budget evidence.
+- Maintained on 2026-10-14 with telemetry-capture class, automatic tool-server startup, least-credential registry, and withdrawn-alert evidence.
 - Maintained on 2026-10-09 with local sandbox, MCP reach, credential reach, network reach, language-server, safer-CLI, and source-review claim evidence.
 - Maintained on 2026-10-03 with remote MCP identity-mode, atomic setup, workload admission, grant-evidence, fail-closed denial, and prompt-injection action-freeze evidence.
 - Maintained on 2026-09-29 with managed MCP audit-log, service-filter, permission-category, Data Access, Admin Activity, and read-activity enablement evidence.

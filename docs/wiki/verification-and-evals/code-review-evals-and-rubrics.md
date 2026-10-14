@@ -138,6 +138,8 @@ The October 11 raw sources add rubric-calibration, open-weight model-selection, 
 
 The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds review-skill and smoke-test evidence. Skill-equipped review claims should preserve the baseline, evaluation protocol, pass-rate change, and average cost per task; small bug-class smoke tests can probe off-by-one, cleanup, swallowed exception, race, and path-traversal coverage, but they should not be treated as model rankings or replacements for manual review and source-grounded interpretation.
 
+The October 14 raw ingest adds review-capacity, audit, and security-rollout measurement evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) records secondary evidence that generated-code volume can be absorbed by downstream review constraints; use that cautiously unless primary study evidence is later processed. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds audit events for Code Quality finding dismissals or reopenings and AI Scan metrics for pull-request findings, remediation rate, repository coverage, reporting-period trends, and autofix uptake. Locally, review evals should join finding lifecycle, manual override evidence, AI security-scan effectiveness, remediation follow-through, and human review load before claiming code-review automation improved quality.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -218,6 +220,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Measure human review capacity and finding-to-fix throughput separately from generated-code volume.
 - Preserve baseline, protocol, pass-rate delta, cost per task, and runtime when claiming that a review skill improves agentic code review.
 - Use small smoke-test suites as bug-class probes only; do not turn keyword-scored or anecdotal runs into broad model rankings.
+- Treat generated-code volume and review throughput as separate measurements, and preserve human review load before treating AI-generated output as accepted software.
+- Score quality-finding dismissals, reopenings, AI security-scan findings, remediation rate, repository coverage, trend period, and autofix uptake as separate review-eval signals.
 - Interpret AI-review findings as claims that need verification evidence naming checks run, coverage, results, and unchecked areas.
 
 ## Authoritative Sources
@@ -227,6 +231,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
 - [October 10 leaf update watch source](../../../raw/processed/2026-10-10/ai-dev-wiki-leaf-update-watch-2026-10-10T210147-0400.json)
 - [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 6 leaf update watch source](../../../raw/processed/2026-09-06/ai-dev-wiki-leaf-update-watch-2026-09-06T210256-0400.json)
@@ -315,6 +321,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
 - Maintained on 2026-10-11 with anchored rubric, human-calibration, provenance, dependency, license, serving, and review-capacity evidence.
 - Maintained on 2026-10-13 with review-skill baseline, protocol, pass-rate, cost, smoke-test, and verification-scope evidence.
+- Maintained on 2026-10-14 with review-capacity, finding-lifecycle audit, AI security-scan metric, remediation-rate, and autofix-uptake evidence.
 - Maintained on 2026-10-07 with ReviewBench corpus, label-source, matcher, judge, and independent-validation evidence.
 - Maintained on 2026-10-07 with review API provenance, effort-level drift, secret-detection labels, deterministic scanner comparison, and multi-agent review collaboration evidence.
 - Maintained on 2026-10-04 with layered-review evidence for repository instructions, deterministic checks, product-fit review, human review, and design-review residual risk.

@@ -11,6 +11,8 @@ tags: ["governance-and-risk"]
 
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) and [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) add AI-built-code audit and agentic-enterprise security evidence. Local controls should treat functional test success as insufficient for secrets, IAM, CI, container, dependency, and repository-history risk, and should preserve attacker-perspective review evidence before production promotion.
 
+The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds secret and dependency-automation controls for AI-assisted development. AI provider keys that are blocked by push protection, withdrawn dependency advisories, and anonymous organization-level registries all map to local practice: agent-authored commits should be stopped before provider credentials land in history, security dashboards should preserve retraction or withdrawal state instead of deleting evidence, and dependency automation should prefer least-credential registry access when internal mirrors can be read without reusable secrets.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds package-incident and agent-session telemetry evidence. Agent-run dependency updates, `npm`/`npx` commands, package installs, and tool calls should be treated as auditable supply-chain actions; endpoint logs may miss agent-session context, so session telemetry needs to preserve commands, tool calls, package names, and decision records for incident response.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds secret-detection model and review-stack evidence. Agents should not enable credit-consuming secret checks, change administrator policy, apply security fixes, or process sensitive code through external review stacks without explicit authorization, budget ownership, privacy boundary review, and human security acceptance.
@@ -179,10 +181,12 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 - Require project-level sandbox policy for filesystem, network, Git credential, and CLI credential access, and fail closed when the host cannot enforce it.
 - Test token length, shape, redaction, storage, header, and audit-log assumptions when external credential formats change.
 - Treat admin-managed plugins, marketplaces, browser/computer-use settings, remote CLI MCP servers, uploads, downloads, and debug access as sensitive-data or supply-chain controls that require policy evidence before team rollout.
+- Block AI-provider credentials before agent-authored commits reach shared history, preserve withdrawn-advisory state in downstream evidence, and prefer least-credential registry access over shared long-lived package tokens when automation only needs read access.
 
 ## Authoritative Sources
 
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
@@ -282,6 +286,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 ## Maintenance Notes
 
 - Maintained on 2026-10-12 with AI-built-code audit, IAM, CI, container, repository-history, and attacker-perspective review evidence.
+- Maintained on 2026-10-14 with AI-provider key push protection, withdrawn-advisory state, least-credential registry access, and dependency-automation evidence.
 - Maintained on 2026-10-10 with agent-run dependency update, package-install telemetry, npm/npx command, endpoint-logging gap, and agent-session incident-response evidence.
 - Maintained on 2026-10-09 with secret-detection authorization, credit-budget, administrator-policy, sensitive-code, privacy-boundary, and human-security-acceptance evidence.
 - Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.

@@ -38,6 +38,8 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 - Specialist review for polished but high-risk changes.
 - First-pass AI review as triage rather than final judgment.
 
+The October 13 [leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) reinforces review-bottleneck risk for agent-generated changes. Pre-PR review should treat review capacity as an acceptance gate: generated code volume, extra revisions, reviewer comments, requester eligibility, billing owner, and specialist routing all need to be visible before the work enters the shared pull-request queue.
+
 ## Practice Boundaries
 
 - Review the exact local diff, commit, or staged change that will become the pull request.
@@ -54,6 +56,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 - Pair review findings with failing tests, concrete evidence, or explicit residual-risk notes before authorizing agent repair.
 - Treat large AI-generated pull requests as review-blocked when touched files, API assumptions, code placement, dependency choices, or authorization changes cannot be explained by the authoring record.
 - Preserve scope explanation, documentation-first intent, specialist reviewer routing, and final human judgment when AI-assisted work increases pull-request frequency or polish.
+- Preserve generated-code volume, revision count, reviewer-comment load, requester eligibility, billing owner, and specialist-review route when pre-PR review is protecting a constrained review queue.
 
 ## Authoritative Sources
 
@@ -65,6 +68,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
+- [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [intelligent code review](intelligent-code-review.md)
@@ -95,6 +99,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 - Maintained on 2026-09-29 with fresh-context review, reproducible-finding, failing-test, short-feature-note, and oversized-AI-PR rejection evidence.
 - Maintained on 2026-10-07 with reviewer-comprehension, scope-explanation, documentation-first intent, specialist-review, and first-pass-AI-triage evidence.
+- Maintained on 2026-10-14 with generated-code volume, revision-count, reviewer-load, requester-eligibility, billing-owner, and specialist-route evidence.
 - Maintained on 2026-09-15 with AI rereview, auto-resolution, shell-validation, ensemble-review, independent-assurance, and PR-triage evidence.
 - Maintained on 2026-09-23 with review-state, resolution-reason, generated-commit-message, stack, status-check, unread-update, and review-filter evidence.
 - Maintained on 2026-09-24 with review-default ownership, automatic-review trigger, enterprise override, huge-diff performance, runtime-probe, and unattended-repro evidence.

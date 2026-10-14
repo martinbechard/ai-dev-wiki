@@ -141,6 +141,8 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 - Whether local execution consumes setup or maintenance effort.
 - Whether downstream verification burden is being shifted to reviewers, maintainers, or users.
 
+The October 14 raw ingest adds budget-discovery evidence for scaled agent adoption. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) records searchable and filterable budget views by scope, product, SKU, and user. Locally, budget search and filtering are useful when they support workflow owners: teams should connect budget rows to agent surface, model route, review feature, user or organization owner, and accepted outcome instead of treating a filtered billing list as adoption proof.
+
 ## Practice Boundaries
 
 - Track model, token, tool, runtime, and subagent costs by workflow run and step when the work is recurring or expensive.
@@ -218,6 +220,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 - Track cost per resolved task, cost per accepted change, and model-specific failure mode alongside benchmark scores when choosing coding-agent routes.
 - Treat energy, infrastructure, and long-running swarm cost as whole-task telemetry tied to duration, prompt count, helper-agent fan-out, and accepted outcome.
 - Record cost-quality routing tiers, tokenizer or credit-policy assumptions, price-change clauses, portability terms, and audit rights when consumption-based AI contracts affect recurring agent workflows.
+- Join budget search and filtering fields such as scope, product, SKU, user, owner, and organization to accepted outcomes before using them as rollout or cost-governance evidence.
 - Separate dedicated agent-window usage metrics from editor-agent and background-agent activity before using adoption telemetry in budget or productivity decisions.
 - Separate feature engagement, passive versus active review, CLI customization use, skills, custom agents, plugins, and MCP connection attempts before interpreting adoption telemetry.
 - Treat rolling adoption-phase populations as enablement signals that still need accepted-outcome, review-quality, and workflow-owner joins.
@@ -233,6 +236,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
+- [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 
 - [September 20 topic news collector source](../../../raw/processed/2026-09-20/ai-dev-wiki-topic-news-collector-2026-09-21T003423Z.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
@@ -331,6 +335,7 @@ The October 7 raw sources add usage-metric, local-model, and verification-tax co
 ## Maintenance Notes
 
 - Maintained on 2026-10-10 with vulnerability-agent eval, success-versus-efficiency, token-spend, auxiliary-model-spend, trace-evidence, and matched-pair cost attribution.
+- Maintained on 2026-10-14 with budget search, scope, product, SKU, user, owner, organization, and accepted-outcome evidence.
 - Maintained on 2026-10-09 with governed-pipeline cost totals, local-model route, client-version, telemetry-coverage, and attribution-gap evidence.
 - Maintained on 2026-09-29 with eval-workflow orchestration, model-judge, retry, report, hillclimb, benchmark-cost, and efficiency-metric evidence.
 - Maintained on 2026-10-07 with local-model route, client-version metric gap, telemetry caveat, and shifted verification-burden evidence.
