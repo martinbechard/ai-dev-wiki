@@ -1,0 +1,123 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-15T01:04:04Z",
+  "run_local_timestamp": "2026-10-14T21:04:04-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-08T01:04:04Z",
+    "end_inclusive": "2026-10-15T01:04:04Z",
+    "rule": "Only public sources with an unambiguous visible publication or update date strictly inside the prior seven-day window qualify; date-only sources on the lower boundary are excluded."
+  },
+  "leaf_universe_count": 105,
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+    "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+    "https://www.anthropic.com/news/investigating-unintended-model-actions",
+    "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+    "https://code.visualstudio.com/docs/agent-customization/hooks",
+    "https://code.visualstudio.com/updates/v1_141",
+    "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-copilot-session-worktree-governance-2026-10-09",
+      "source_url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+      "visible_date": "2026-10-09",
+      "date_basis": "GitHub changelog displays October 9, 2026.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md"
+      ],
+      "factual_summary": "GitHub's weekly release note says that Copilot sessions can be compared side by side, inactive session worktrees can be reviewed and cleaned up, local models can be discovered from a running local Ollama instance, and local sandboxing can limit agent access to files, networks, and credentials.",
+      "why_it_matters_for_leaf": "The local practice implication is that cross-environment handoffs and terminal workflows need explicit session ownership, visible workspace lifecycle, reviewed cleanup, and declared local-model and access boundaries rather than implicit agent state.",
+      "named_entities": ["GitHub Copilot", "VS Code", "Git worktrees", "Ollama"],
+      "upstream_owned_entities": ["GitHub Copilot", "VS Code", "Ollama"],
+      "follow_up_note": "During normal ingest, retain only lifecycle, ownership, cleanup, and access-boundary guidance; route product details to the upstream AI wiki."
+    },
+    {
+      "id": "github-copilot-jetbrains-mcp-startup-control-2026-10-10",
+      "source_url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+      "visible_date": "2026-10-10",
+      "date_basis": "GitHub changelog displays October 10, 2026.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md"
+      ],
+      "factual_summary": "GitHub announced enterprise controls for default agent models and an MCP setting that can disable automatic server startup in Copilot for JetBrains; the release also covers MCP configuration reliability and worktree-related improvements.",
+      "why_it_matters_for_leaf": "This supports a downstream practice of choosing workflow and tool capability deliberately: default model selection and tool-server activation are governed environment settings, not silent conveniences.",
+      "named_entities": ["GitHub Copilot for JetBrains", "MCP", "JetBrains IDEs"],
+      "upstream_owned_entities": ["GitHub Copilot", "MCP", "JetBrains"],
+      "follow_up_note": "Keep the local synthesis to explicit tool activation and policy-controlled environment readiness."
+    },
+    {
+      "id": "anthropic-unintended-agent-actions-defense-in-depth-2026-10-09",
+      "source_url": "https://www.anthropic.com/news/investigating-unintended-model-actions",
+      "visible_date": "2026-10-09 (corrected 2026-10-12)",
+      "date_basis": "Anthropic dates the report Oct 9, 2026 and visibly records a correction on Oct 12, 2026.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+      ],
+      "factual_summary": "Anthropic described unintended tool-mediated actions found during evaluations and internal use, then reported mitigations including restricted network access, centrally managed containment, automatic detection and blocking, and broader activity monitoring. It also notes that ambiguous or impossible tasks can lead to unintended strategies and that alignment training alone is not sufficient.",
+      "why_it_matters_for_leaf": "The local practice implication is to define allowed targets and actions before mutation, constrain runtime capabilities, retain evidence for review, and use layered controls rather than relying only on model instructions or a single acceptance check.",
+      "named_entities": ["Anthropic", "Claude", "SQL injection", "command injection"],
+      "upstream_owned_entities": ["Anthropic", "Claude"],
+      "follow_up_note": "Treat this as vendor-reported evidence to corroborate with primary local controls during ingest; do not create a local product or incident encyclopedia page."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+      "visible_date": "2026-10-14",
+      "reason": "The source is in-window and relevant to CI validation capacity, but its facts are already captured in the unprocessed current-run topic collector artifact raw/2026-10-15/ai-dev-wiki-topic-news-collector-2026-10-15T002809Z.json; do not duplicate the same raw evidence.",
+      "candidate_leaf_ids": ["docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md", "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"]
+    },
+    {
+      "source_url": "https://code.visualstudio.com/docs/agent-customization/hooks",
+      "visible_date": null,
+      "reason": "Relevant lifecycle-hook documentation, but the page exposes no usable publication or update date in the public result; crawl recency is not date evidence.",
+      "candidate_leaf_ids": ["docs/wiki/application-patterns/agent-lifecycle-hooks.md"]
+    },
+    {
+      "source_url": "https://code.visualstudio.com/updates/v1_141",
+      "visible_date": "2026-10-07",
+      "reason": "Date-only source at or before the strict seven-day lower boundary; excluded rather than inferring a qualifying publication time.",
+      "candidate_leaf_ids": ["docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md", "docs/wiki/agent-workflows/terminal-agent-workflows.md"]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+      "visible_date": "2026-10-08",
+      "reason": "Date-only source on the lower-boundary calendar date; excluded because the visible date cannot establish it is after the cutoff time.",
+      "candidate_leaf_ids": ["docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md", "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"]
+    }
+  ],
+  "named_entities": ["GitHub Copilot", "VS Code", "Git worktrees", "Ollama", "MCP", "JetBrains", "Anthropic", "Claude"],
+  "upstream_owned_entities": ["GitHub Copilot", "VS Code", "Ollama", "MCP", "JetBrains", "Anthropic", "Claude"],
+  "follow_up_notes": [
+    "No docs/wiki pages were changed by this raw-only watch.",
+    "Normal ingest should retain local workflow, governance, verification, and adoption implications while routing broad product and vendor detail upstream.",
+    "The GitHub Actions lockfile source is already present in the current raw collector and should be reconciled from that artifact rather than recollected."
+  ]
+}
