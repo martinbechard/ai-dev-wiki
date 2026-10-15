@@ -29,6 +29,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Cleanup decisions.
 - Whether external context is copied, summarized, or attached as a live session.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) adds session and worktree-lifecycle evidence. Cross-environment handoffs should name the session owner, expose inactive-worktree review and cleanup decisions, and distinguish local-model discovery from the access, credential, filesystem, and network boundaries actually granted to that session.
+
 ## Practice Boundaries
 
 - Name the orchestration owner before multiple environment-specific agents act on one task.
@@ -41,6 +43,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Record whether the receiving agent should inherit detailed reasoning, a compact summary, or only task state when continuation direction creates cost or quality risk.
 - Record source client, destination worktree or host, uncommitted-change transfer, queued prompt state, and continuation identity when a session moves across tools.
 - Record origin identity, session-continuation mode, workspace selection, worktree cleanup policy, and attached-context scope when IDE handoff features move work across local tools.
+- Record the session owner, inactive-worktree review or cleanup outcome, local-model route, and actual access boundaries when a handoff crosses IDE, terminal, or local-runtime surfaces.
 
 ## Authoritative Sources
 
@@ -50,6 +53,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - [September 1 leaf update watch source](../../../raw/processed/2026-09-01/ai-dev-wiki-leaf-update-watch-2026-09-01T210240-0400.json)
 - [September 1 topic news collector source](../../../raw/processed/2026-09-01/ai-dev-wiki-topic-news-collector-2026-09-02T003202Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 - [delegated coding handoffs](delegated-coding-handoffs.md)
 - [subagent coordination](subagent-coordination.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -83,3 +87,4 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Maintained on 2026-08-26 with model-to-model continuation evidence, repository-state preservation, trajectory-summary selection, and direction-sensitive handoff cost or quality risk.
 - Maintained on 2026-09-01 with external-session continuation, shared host sessions, worktree transfer, queued-prompt, and connected-host handoff evidence.
 - Maintained on 2026-10-07 with IDE continuation, multi-session layout, worktree cleanup, and local cross-client handoff evidence.
+- Maintained on 2026-10-15 with session ownership, inactive-worktree cleanup, local-model-route, and explicit access-boundary evidence.

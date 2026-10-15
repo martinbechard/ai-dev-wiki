@@ -47,6 +47,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Worktree cleanup, multi-session grid, and continuation state.
 - Whether the receiving IDE session inherited a prompt, a live session, or only repository state.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) reinforces that a model instruction alone is not a terminal safety boundary. Define allowed targets and actions before mutation, constrain network, filesystem, and credential capabilities, retain activity evidence for review, and use layered containment and acceptance controls for ambiguous or high-impact tasks.
+
 ## Practice Boundaries
 
 - Record the terminal session, workspace, repository, branch, environment, and operator context before command-capable work begins.
@@ -67,6 +69,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Record local sandbox mode, denied resource classes, MCP exposure, language-server scope, and credential boundaries when terminal or IDE agents execute local commands.
 - Record local model selection separately from offline guarantees, telemetry state, provider connection failures, and runtime installation state.
 - Preserve cross-client continuation evidence when a terminal, Codex, ChatGPT, or IDE session hands off into another local coding surface.
+- Define allowed targets and mutation actions before a terminal agent runs, then retain containment and activity evidence that proves the effective network, filesystem, and credential boundary.
 
 ## Authoritative Sources
 
@@ -92,6 +95,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - [October 1 leaf update watch source](../../../raw/processed/2026-10-01/ai-dev-wiki-leaf-update-watch-2026-09-30T210406-0400.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 
 ## Related Code
 
@@ -130,3 +134,4 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Maintained on 2026-09-23 with repository-ready terminal-agent wrappers, runtime posture, sandbox posture, API stack, model route, and handoff-surface evidence.
 - Maintained on 2026-10-01 with read-only research, planning-artifact, shell-approval, sandbox, lifecycle-hook, session-history, and final-code verification evidence.
 - Maintained on 2026-10-07 with local sandbox, local-model route, VS Code Agent Host, multi-session, worktree-cleanup, and cross-client continuation evidence.
+- Maintained on 2026-10-15 with pre-mutation target and action boundaries, layered containment, and runtime activity-evidence controls.

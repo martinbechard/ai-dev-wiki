@@ -69,6 +69,8 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 - The reported silent audit failure and disruptive automated repair as assurance failure modes.
 - Privacy, compliance, source provenance, independent review, and verification evidence before regulated AI-written code is accepted.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) adds defense-in-depth evidence for unintended agent actions. Acceptance must verify the planned targets and actions, effective containment, activity evidence, and layered controls; model instruction adherence or one passing gate does not prove a high-impact action was safe.
+
 ## Practice Boundaries
 
 - Track review cognitive effort, traceability gaps, deterministic verification coverage, and standards-compliance checks when AI-generated code volume increases.
@@ -113,6 +115,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 - Treat final messages as claims until checked against session history, current files, verification output, and final-code state.
 - Use externally controlled, append-only, or tamper-resistant evidence when local traces can be mutated by the agent under review.
 - Require critic role independence, read-only boundaries, and final human acceptance when multi-model critique is used as an acceptance signal.
+- Verify declared targets and actions against runtime containment and activity evidence; do not accept a high-impact run from model-instruction adherence or a single passing gate alone.
 
 ## Authoritative Sources
 
@@ -155,6 +158,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 
 ## Related Code
 
@@ -187,6 +191,7 @@ The October 7 raw sources add repair-evidence, consumer verification-tax, and re
 - Maintained on 2026-09-25 with verification-bottleneck, review-load, traceability, standards-aware review, and deterministic-capacity evidence.
 - Maintained on 2026-10-01 with done-claim verification, session-history review, final-code checks, mutable-trace risk, tamper-resistant evidence, and read-only critic workflow evidence.
 - Maintained on 2026-10-07 with repair-evidence, self-healing CI/CD, reverted-baseline checks, verification-tax, and regulated AI-written software assurance evidence.
+- Maintained on 2026-10-15 with declared-action, containment, activity-evidence, and defense-in-depth acceptance requirements.
 
 - Maintained on 2026-09-19 with enterprise rollout bottleneck, AI-generated-code risk, mutation-testing, formal-modeling, and codebase-wide cleanup validation evidence.
 - Maintained on 2026-09-24 with agentic code-quality, explainable review evidence, repository-wide context, historical PR decision, and organization-specific standard gates.

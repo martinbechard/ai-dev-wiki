@@ -33,6 +33,8 @@ The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai
 
 [Codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) owns staged fleet-wide rollout practice. This selection page keeps the use, compose, or build rule: use a managed platform when repository connectors and ordinary review evidence are enough, compose around it when local policy or ledgers are needed, and build only when rollout logic or source-control integration is differentiating.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) adds an environment-policy selection boundary. Default model selection and automatic tool-server startup are governed environment settings; select a workflow only when its model route and tool activation can be made explicit, policy-controlled, and reviewable.
+
 ## Practice Boundaries
 
 - Decide use, compose, or build per workflow rather than per organization slogan.
@@ -50,6 +52,7 @@ The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai
 - Treat single, cascade, critique, and other multi-agent execution patterns as workflow policies that need cancellation, validation, cost, and isolated-review evidence.
 - Treat practitioner demos, panels, and previews as selection signals, not defaults: require a local reason before adding multi-agent, critique, harness, or feedback-loop complexity.
 - Route codebase-wide rollout details to [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md) before choosing whether to use, compose, or build.
+- Treat default-model routing and automatic tool-server startup as governed workflow settings, not silent conveniences.
 
 ## Authoritative Sources
 
@@ -65,6 +68,7 @@ The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai
 - [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json)
 - [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 - [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [codebase-wide agentic batch changes](codebase-wide-agentic-batch-changes.md)
@@ -104,3 +108,4 @@ The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai
 - Maintained on 2026-09-08 with bounded orchestration, pipeline-versus-agent, cancellation, validation, cost, and isolated-review evidence.
 - Maintained on 2026-10-01 with context-boundary, harness-setup, feedback-loop, multi-agent implementation/test/review, and single/cascade/critique workflow-selection evidence.
 - Maintained on 2026-09-17 with routing to agent control flow selection for ReAct, planner-executor, fixed-workflow, and harness distinctions.
+- Maintained on 2026-10-15 with explicit model-route and tool-startup policy as workflow-selection evidence.

@@ -41,6 +41,8 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 The [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json) adds measured MCP, CLI, and skill-selection evidence from an engineering blog. Locally, the durable rule is that large schema catalogs are a context-budget decision before they are a capability decision: CLI commands fit familiar stateless operations, MCP fits credentialed or stateful structured results, and skills should teach when and how to activate capabilities without eagerly loading every schema.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) adds startup-policy evidence. Discovery configuration should not silently start action-capable servers: the workflow should declare whether startup is allowed, which server is intended, and which environment policy authorizes it before discovery or invocation.
+
 ## Practice Boundaries
 
 - Use discovery when the full tool catalog would distract the model or exceed the useful context budget.
@@ -61,11 +63,13 @@ The [October 11 topic news collector source](../../../raw/processed/2026-10-11/a
 - Treat enterprise toolboxes as discovery surfaces first; move only the selected operation schema, permission scope, and audit route into active context.
 - Measure active tool-schema budgets and cap eager capability loading before approving a tool-heavy workflow.
 - Keep skills as activation and selection knowledge unless a specific skill package has passed provenance and permission review.
+- Require explicit policy evidence before discovery configuration automatically starts an action-capable MCP server.
 
 ## Authoritative Sources
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
 - [July 27 topic news collector source](../../../raw/processed/2026-07-27/ai-dev-wiki-topic-news-collector-2026-07-27T203132-0400.json)
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
@@ -116,3 +120,4 @@ The [October 11 topic news collector source](../../../raw/processed/2026-10-11/a
 - Maintained on 2026-09-16 with gateway-boundary, action-chain, rate-limit, and separation-of-duties discovery controls; next check should confirm discovery logs record the selected tool, delegated identity, and approval route before invocation.
 - Maintained on 2026-09-23 with child-agent discovery versus invocation authority and explicit MCP tool allowlist evidence.
 - Maintained on 2026-10-01 with MCP registry recency, discovery-server, repository-trust, reproducible-test, verification-tool, and registry-metadata trust-boundary evidence.
+- Maintained on 2026-10-15 with automatic MCP-server startup as an explicit policy and environment-readiness boundary.

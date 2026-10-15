@@ -15,6 +15,8 @@ The [September 29 topic news collector source](../../../raw/processed/2026-09-29
 
 This page owns the pre-write boundary practice. [Adoption operating agreements](adoption-operating-agreements.md) owns the team-level agreement map, and [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md) owns enforcement evidence when boundaries become runtime or repository policy.
 
+The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json) adds a defense-in-depth boundary: pre-write planning should define allowed targets and actions before mutation, then require runtime containment and review evidence rather than treating instruction-following or a single acceptance check as sufficient control.
+
 ## Practice Boundaries
 
 - Baseline tickets against current architecture decisions before assigning agent implementation.
@@ -23,10 +25,12 @@ This page owns the pre-write boundary practice. [Adoption operating agreements](
 - Require agents to explain which architecture decision, acceptance criterion, or protected-path rule permits the planned change.
 - Periodically check agent-maintained solution documents against code and documentation so drift does not become hidden implementation context.
 - Treat pre-write gates as review-load controls: they do not replace tests, code review, security review, or human acceptance.
+- State the allowed target and action set before execution, and connect that plan to the runtime containment and evidence required for later acceptance.
 
 ## Authoritative Sources
 
 - [September 29 topic news collector source](../../../raw/processed/2026-09-29/ai-dev-wiki-topic-news-collector-2026-09-30T003135Z.json)
+- [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-dev-wiki-leaf-update-watch-2026-10-14T210404-0400.json)
 - [adoption operating agreements](adoption-operating-agreements.md)
 - [governance controls for agents](../governance-and-risk/governance-controls-for-agents.md)
 
@@ -56,3 +60,4 @@ This page owns the pre-write boundary practice. [Adoption operating agreements](
 ## Maintenance Notes
 
 - Created on 2026-09-29 with ticket-baseline, architecture-decision, protected-path, CI-merge-gate, human-review, and document-drift evidence from the September 29 topic news collector.
+- Maintained on 2026-10-15 with allowed-target, action-boundary, containment, and review-evidence requirements before mutation.

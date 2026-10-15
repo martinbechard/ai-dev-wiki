@@ -13,6 +13,8 @@ The [October 12 topic news collector source](../../../raw/processed/2026-10-12/a
 
 The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds secret and dependency-automation controls for AI-assisted development. AI provider keys that are blocked by push protection, withdrawn dependency advisories, and anonymous organization-level registries all map to local practice: agent-authored commits should be stopped before provider credentials land in history, security dashboards should preserve retraction or withdrawal state instead of deleting evidence, and dependency automation should prefer least-credential registry access when internal mirrors can be read without reusable secrets.
 
+The [October 15 topic news collector source](../../../raw/processed/2026-10-15/ai-dev-wiki-topic-news-collector-2026-10-15T002809Z.json) adds CI workflow-dependency evidence. Agent-managed CI changes should retain reviewed immutable action or reusable-workflow references, the matching lockfile entry, stale-lockfile validation, and the policy or approval that permits the update. A locked reference records the selected revision; it does not replace provenance, vulnerability, or change-risk review.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds package-incident and agent-session telemetry evidence. Agent-run dependency updates, `npm`/`npx` commands, package installs, and tool calls should be treated as auditable supply-chain actions; endpoint logs may miss agent-session context, so session telemetry needs to preserve commands, tool calls, package names, and decision records for incident response.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds secret-detection model and review-stack evidence. Agents should not enable credit-consuming secret checks, change administrator policy, apply security fixes, or process sensitive code through external review stacks without explicit authorization, budget ownership, privacy boundary review, and human security acceptance.
@@ -168,6 +170,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 - Treat third-party skill directories and resource lists as discovery sources, not installation authority; review skill contents, owner, version, shell behavior, and allowed tools before import.
 - Require behavior-policy or execution-policy evidence before running AI-generated or AI-carried code when provenance, signature, or SBOM evidence cannot prove runtime intent.
 - Review data-retaining model routes, content exclusions, trusted-publishing OIDC configuration, staged malware-scan approval, reusable workflow identity, and CodeQL coverage before agent-authored changes reach package or release paths.
+- Require agent-managed CI dependency changes to update reviewed references and their workflow lockfile together, validate lockfile freshness, and retain the governing repository, organization, or enterprise policy evidence.
 - Prefer repository-scoped package access for dependency automation over long-lived personal registry tokens when package scope, fallback credentials, and removal hygiene are explicit.
 - Treat community agent components, MCP servers, skills, and playbooks as deployable dependencies that need provenance, scanner or model assessment, expert review, and approval before enterprise use.
 - Inventory unsanctioned or shadow AI tools by data access, internet reachability, actor identity, owner, and revocation path before they are allowed near development assets.
@@ -187,6 +190,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
+- [October 15 topic news collector source](../../../raw/processed/2026-10-15/ai-dev-wiki-topic-news-collector-2026-10-15T002809Z.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
@@ -287,6 +291,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 - Maintained on 2026-10-12 with AI-built-code audit, IAM, CI, container, repository-history, and attacker-perspective review evidence.
 - Maintained on 2026-10-14 with AI-provider key push protection, withdrawn-advisory state, least-credential registry access, and dependency-automation evidence.
+- Maintained on 2026-10-15 with workflow lockfile, stale-lockfile validation, immutable CI dependency reference, and policy-evidence controls.
 - Maintained on 2026-10-10 with agent-run dependency update, package-install telemetry, npm/npx command, endpoint-logging gap, and agent-session incident-response evidence.
 - Maintained on 2026-10-09 with secret-detection authorization, credit-budget, administrator-policy, sensitive-code, privacy-boundary, and human-security-acceptance evidence.
 - Maintained on 2026-09-25 with workstation package controls, plugin SHA verification, MCP/prompt guardrails, local sandbox, and credential-scope evidence.
