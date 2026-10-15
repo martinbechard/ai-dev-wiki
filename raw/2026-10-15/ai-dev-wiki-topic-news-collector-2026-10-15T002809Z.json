@@ -1,0 +1,121 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp": "2026-10-15T00:28:09Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-13T00:28:09Z",
+    "end_inclusive": "2026-10-15T00:28:09Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior 48 hours. Date-only sources at the lower boundary are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "relationship": "downstream one-way extension",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_boundary": "Keep only local AI-assisted-development practice implications; do not create local entity coverage."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "GitHub Actions workflow lockfiles in public preview",
+      "source_url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+      "visible_date": "October 14, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub announced workflow dependency lockfiles that record reviewed action and reusable-workflow commits, require locked entries for onboarded workflows, support a stale-lockfile check, and can be required by enterprise, organization, or repository policy. Dependabot can update a workflow reference and its matching lockfile entry in one pull request.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat automation and agent-executed workflow dependencies as reviewable, immutable inputs: pin the action graph, run a stale-lockfile check in CI, review the dependency before locking it, and keep updates and their lockfile evidence in the same change. Locking limits moved-ref risk but is not a substitute for dependency review.",
+      "named_entities": [
+        "GitHub Actions",
+        "GitHub CLI",
+        "gh actions-lock",
+        "Dependabot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Actions",
+        "GitHub CLI",
+        "Dependabot"
+      ],
+      "local_practice_lens": [
+        "package-install and workflow dependency risk",
+        "approval evidence",
+        "supply-chain governance",
+        "reproducible CI inputs"
+      ],
+      "follow_up": "Route to normal raw ingest if a maintainer wants a durable rule for agent-managed CI dependencies; retain broad GitHub product details upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "source_url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+      "visible_date": "October 13, 2026; updated October 14, 2026",
+      "reason": "The page's displayed update date is date-only and is not an independently timestamped practice change; it is excluded rather than inferring that the lower-boundary October 13 publication occurred after the cutoff."
+    },
+    {
+      "title": "Enterprise managed settings enforcement updates",
+      "source_url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/",
+      "visible_date": "October 13, 2026",
+      "reason": "Date-only lower-boundary source; its managed-policy and fail-closed implications are relevant, but the exact publication time is absent."
+    },
+    {
+      "title": "Code scanning AI Scan metrics in security overview",
+      "source_url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview/",
+      "visible_date": "October 13, 2026",
+      "reason": "Date-only lower-boundary source; do not infer time qualification for AI-assisted-review metrics."
+    },
+    {
+      "title": "Audit GitHub Code Quality finding dismissals and reopenings",
+      "source_url": "https://github.blog/changelog/2026-10-13-audit-github-code-quality-finding-dismissals-and-reopenings/",
+      "visible_date": "October 13, 2026",
+      "reason": "Date-only lower-boundary source; audit-log implications are relevant but are outside this collector's strict time-evidence rule."
+    },
+    {
+      "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
+      "source_url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce/",
+      "visible_date": "October 13, 2026",
+      "reason": "Date-only lower-boundary source; source-level secret blocking is relevant to agent credential controls but cannot be time-qualified precisely."
+    },
+    {
+      "title": "Gemini 4 Argon in GitHub Copilot",
+      "source_url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot/",
+      "visible_date": "October 13, 2026",
+      "reason": "Date-only lower-boundary source and broad upstream-owned model/product coverage; no separately dated local-practice change is established."
+    },
+    {
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "source_url": "https://github.blog/latest/",
+      "visible_date": "October 12, 2026",
+      "reason": "Outside the strict 48-hour window and date-only; custom-instruction, skill, and MCP-server coverage would also need the local-practice lens separated from upstream product coverage."
+    },
+    {
+      "title": "HydraFusion updates and new Max option",
+      "source_url": "https://github.blog/changelog/",
+      "visible_date": "October 14, 2026",
+      "reason": "Qualifying date but broad Copilot product/model release without extracted evidence of a distinct local practice change from the available public source listing."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector remains raw-only: do not update docs/wiki or move this artifact to raw/processed in this run.",
+    "If ingesting the qualifying item, preserve the distinction between immutable dependency references and independent dependency safety review.",
+    "Recheck excluded October 13 items only if an authoritative source exposes a precise time proving they occurred after the cutoff."
+  ],
+  "blockers": []
+}
