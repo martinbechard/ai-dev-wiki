@@ -1,0 +1,114 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-15T20:57:35-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-08T20:57:35-0400",
+    "end_inclusive": "2026-10-15T20:57:35-0400",
+    "policy": "Only public sources with a visible, unambiguous publication or update time strictly inside the seven-day window qualify. Date-only boundary candidates are excluded."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+    "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+    "https://arxiv.org/abs/2610.15409",
+    "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+    "https://github.com/october-dev/october-harness",
+    "https://github.blog/changelog/2026-08-06-mcp-allowlists-in-enterprise-managed-settings/",
+    "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-ai-scan-pr-ga-2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+      "visible_date": "2026-10-15",
+      "factual_summary": "GitHub announced general availability of AI Scan for pull requests. It complements CodeQL for supported languages and frameworks, reports advisory findings with suggested autofixes, does not block merges through ruleset requirements, excludes fork and Dependabot pull requests, and consumes Code Security AI Credits with budget controls.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md": "Treat an AI security scan as an additional advisory input with explicit scope, not a substitute for independent reviewers or merge authority.",
+        "docs/wiki/coding-practices/repository-configured-ai-code-review.md": "Record enablement, effective scope, advisory status, and budget ownership as governed repository review policy.",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": "Keep security-scan quality and credit use observable while preserving a separate human or deterministic merge gate."
+      },
+      "named_entities": ["GitHub", "AI Scan", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "upstream_owned_entities": ["GitHub", "AI Scan", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "follow_up_note": "Ingest only the downstream operating implication: advisory AI scanning needs explicit evidence, coverage, cost, and merge-authority boundaries."
+    },
+    {
+      "id": "coversynth-retrieval-evaluation-sets-2026-10-11",
+      "source_url": "https://arxiv.org/abs/2610.15409",
+      "visible_date": "2026-10-11T07:26:00Z",
+      "factual_summary": "CoverSynth proposes coverage-guided generation of corpus-grounded retrieval evaluation sets. Its reported method uses deterministic checks to locate evidence quotes and model-based checks for semantic validity, and frames coverage, reliability, efficiency, and discriminability as evaluation-set objectives.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md": "Provenance checks should make retrieved evidence inspectable rather than score retrieval only by answer similarity.",
+        "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md": "Optimization gates can require coverage and evidence-quality checks alongside performance or cost metrics.",
+        "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md": "Coverage- and evidence-grounded sets help distinguish retrieval weakness from an evaluation set that is too easy or insufficiently discriminating."
+      },
+      "named_entities": ["CoverSynth", "RepLiQA", "TechQA"],
+      "upstream_owned_entities": ["CoverSynth", "RepLiQA", "TechQA"],
+      "follow_up_note": "Ingest as research evidence, preserving the paper's experimental scope and avoiding claims of production validation."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls/",
+      "reason": "Visible publication date is 2026-10-08 without a time; it is a date-only lower-boundary candidate and is excluded by the strict cutoff policy."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+      "reason": "Last updated 2026-08-20, outside the seven-day window."
+    },
+    {
+      "source_url": "https://github.com/october-dev/october-harness",
+      "reason": "Search result crawl recency is not a visible source publication or update date."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-06-mcp-allowlists-in-enterprise-managed-settings/",
+      "reason": "Published 2026-08-06, outside the seven-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/",
+      "reason": "Published 2026-08-12, outside the seven-day window."
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2610.05399",
+      "reason": "Submitted 2026-10-04, outside the seven-day window."
+    }
+  ],
+  "leaf_results": {
+    "qualified_updates_found": [
+      "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+      "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+      "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+      "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+      "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+    ],
+    "no_qualified_update": [
+      "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+      "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+      "docs/wiki/application-patterns/agent-harness-components.md",
+      "docs/wiki/application-patterns/agent-session-recovery.md",
+      "docs/wiki/context-architecture/thin-context-router.md",
+      "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+      "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+      "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+      "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+      "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md"
+    ]
+  },
+  "federation_note": "Product, vendor, protocol, benchmark, and tool background remains upstream-owned. This artifact retains only local AI-assisted-development practice implications for normal ingest."
+}
