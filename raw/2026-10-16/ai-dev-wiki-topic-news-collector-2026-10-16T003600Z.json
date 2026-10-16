@@ -1,0 +1,153 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp": "2026-10-16T00:36:00Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-14T00:36:00Z",
+    "end_inclusive": "2026-10-16T00:36:00Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior 48 hours. Date-only sources at the lower boundary are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "relationship": "downstream one-way extension",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_boundary": "Keep only local AI-assisted-development practice implications; do not create local entity coverage."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/verification-and-evals",
+      "title": "AI Scan for pull requests generally available",
+      "source_url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+      "visible_date": "October 15, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub made AI Scan for pull requests generally available. When enabled with code scanning, it reports advisory AI findings beside CodeQL findings, including a risk explanation and possible autofix; it does not fail the code-scanning check or block merge through rulesets.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat AI-assisted PR security findings as a separately labeled advisory signal: route them to an accountable reviewer, retain their outcome, and do not represent an AI scan as a merge gate unless an independent policy and deterministic required check provide that authority.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "CodeQL",
+        "AI Scan"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "CodeQL",
+        "AI Scan"
+      ],
+      "local_practice_lens": [
+        "AI code review checks",
+        "verification signal labeling",
+        "merge-gate boundaries",
+        "review evidence"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants an explicit local rule separating advisory AI findings from enforced acceptance gates."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "Agentic autofix for code scanning alerts general availability",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "visible_date": "October 15, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub's agentic autofix explores relevant files, proposes a remediation, reruns CodeQL, and opens a draft pull request with the fix rationale and validation steps. The feature requires enterprise policy enablement, organization or repository enablement, a defined billing method, and consumes AI credits and Actions minutes.",
+      "why_it_matters_for_ai_assisted_development_practice": "A governed remediation loop should preserve the alert scope, code-search evidence, validation output, cost budget, approval state, and draft-review boundary. A successful tool rerun supports review but does not replace human merge authority or broader regression checks.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "CodeQL",
+        "Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "GitHub Advanced Security",
+        "CodeQL",
+        "Copilot"
+      ],
+      "local_practice_lens": [
+        "agentic regression repair",
+        "permissions and approvals",
+        "validation evidence",
+        "draft pull request review",
+        "cost governance"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a durable controlled-remediation pattern; keep GitHub product facts upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Actions workflow lockfiles in public preview",
+      "source_url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+      "visible_date": "October 14, 2026",
+      "reason": "Relevant reproducible-CI and supply-chain practice, but the displayed date is at this run's lower boundary without a precise publication time; excluded rather than inferring 48-hour qualification."
+    },
+    {
+      "title": "The EU's next chapter in AI is agentic",
+      "source_url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+      "visible_date": "October 14, 2026",
+      "reason": "Date-only lower-boundary source. Its aggregate adoption data also needs a separately scoped local operating-model interpretation before it can become local practice guidance."
+    },
+    {
+      "title": "Designing a bounded review loop",
+      "source_url": "https://www.florian.bruniaux.com/guides/bounded-code-review-loop/",
+      "visible_date": "October 14, 2026",
+      "reason": "Useful practice guide, but the date-only lower-boundary publication cannot be qualified precisely for this 48-hour run."
+    },
+    {
+      "title": "HydraFusion updates and new Max option",
+      "source_url": "https://github.blog/changelog/month/10-2026/",
+      "visible_date": "October 14, 2026",
+      "reason": "Date-only lower-boundary listing and broad upstream-owned product/model coverage; no distinct local practice evidence was extracted."
+    },
+    {
+      "title": "GitHub App improvements for least privilege and management",
+      "source_url": "https://github.blog/changelog/month/10-2026/",
+      "visible_date": "October 13, 2026",
+      "reason": "Outside the strict 48-hour window; least-privilege implications are not enough to override the date evidence."
+    },
+    {
+      "title": "AI code review: news and analysis",
+      "source_url": "https://aicodingweekly.news/topics/ai-code-review",
+      "visible_date": "October 14, 2026",
+      "reason": "Secondary aggregation of social discussion rather than a primary source; its date-only lower-boundary date is also insufficient."
+    },
+    {
+      "title": "AI code review extension sent pasted code to a server unasked",
+      "source_url": "https://pulse.adyog.com/insights/codeaudit-ai-vscode-extension-pasted-code",
+      "visible_date": "October 14, 2026",
+      "reason": "Secondary summary of a reported extension finding, with a date-only lower-boundary date; retain no claim without the primary research source and precise timing."
+    },
+    {
+      "title": "Agent Runs from Claude Code: Workflow Runs, Facts and Usage",
+      "source_url": "https://astound.systemprompt.io/documentation/agent-farm",
+      "visible_date": "October 15, 2026",
+      "reason": "Qualifying date, but this is product-specific documentation for an upstream-owned MCP server and does not establish a separate general local-practice update."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector remains raw-only: do not update docs/wiki or move this artifact to raw/processed in this run.",
+    "If ingesting the AI Scan item, preserve its advisory-only status and keep enforcement authority in an independent acceptance gate.",
+    "If ingesting the agentic autofix item, capture the draft-PR review boundary, policy enablement, validation evidence, and cost budget separately from broad GitHub product facts.",
+    "Recheck the excluded October 14 sources only if their authoritative pages expose a precise publication time that proves qualification after the cutoff."
+  ],
+  "blockers": []
+}
