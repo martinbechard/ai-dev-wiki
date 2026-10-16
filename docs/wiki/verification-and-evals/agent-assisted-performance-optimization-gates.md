@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds [AI Scan](../../../upstream-ai-wiki/products/github-ai-security-review.md) and CoverSynth evidence. Optimization gates should track advisory-scan coverage, findings, remediation follow-through, and credit cost separately from merge authority; retrieval optimization experiments should also retain corpus-coverage and source-quote checks before using a quality score to justify a speed or cost change.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds RAG optimizer and benchmark-catalog evidence. Performance gates should treat retrieval configuration, chunking, embedding, reranking, generation route, benchmark category, token cost, latency, and accepted task quality as one experiment record before accepting an optimization claim.
 
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds agent-optimization and review-toil evidence. Performance or cost improvements from agent workflow changes should start with a baseline, change one variable per round, and accept savings only after quality checks; survey or simulation numbers should be treated as adoption signals, not production benchmarks.
@@ -35,6 +37,8 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 - Require a baseline, one-variable change record, quality gate, and rollback path before accepting cost or latency improvements from agent workflow optimization.
 - Track review and correction effort as part of optimization evidence when generated code increases reviewer toil or compliance-review load.
+- Keep advisory AI-scan coverage, findings, remediation follow-through, and credit use observable without promoting the scan to an acceptance gate.
+- For retrieval changes, pair performance measures with corpus-coverage and inspectable-source checks so an easier evaluation set cannot masquerade as optimization.
 
 - Record the baseline metric, workload, environment, cache state, and whether the target is clean build, incremental build, runtime latency, throughput, memory, or another performance dimension.
 - Preserve correctness checks before and after optimization so speed does not hide broken behavior.
@@ -55,6 +59,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Authoritative Sources
 
+- [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -96,6 +101,7 @@ This page owns performance-specific acceptance. [Trajectory-level agent evaluati
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with advisory AI-scan coverage, finding, remediation, credit-use, retrieval-coverage, and source-quote evidence.
 - Maintained on 2026-10-09 with RAG optimizer, benchmark-category, token-cost, latency, and accepted-quality evidence.
 - Maintained on 2026-09-25 with agent optimization baseline, one-variable iteration, quality gate, and review-toil evidence.
 

@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds [AI Scan](../../../upstream-ai-wiki/products/github-ai-security-review.md) configuration evidence. Repository policy should retain whether advisory scanning is enabled, its eligible pull-request scope and exclusions, the associated credit-budget owner, and the independent required checks that still decide merge readiness.
+
 Repository-configured AI code review treats AI review settings as governed project policy rather than hidden reviewer behavior. The [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json) records CodeRabbit-style configuration as a practice signal. Review inputs include:
 
 - Path-specific instructions and progress reporting.
@@ -42,6 +44,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - Distinguish human-facing findings from prompts intended for a follow-on remediation agent.
 - Treat configuration changes as review-system changes that need owner approval and regression checks when they affect merge gates.
 - Treat automatic review triggers, inherited default effort, draft-to-ready behavior, and new-push behavior as repository policy because they affect reviewer load, noise, and acceptance gates.
+- Record advisory AI-scan enablement, pull-request scope, exclusions, and credit-budget owner as review policy; do not imply that those settings create a required merge gate.
 - Preserve AI-review policy changes as audit evidence, including effort-level changes, automatic-review branch policy changes, custom-instruction changes, MCP or skill context changes, content-exclusion scope, and batch comment-resolution actions.
 - Preserve API-triggered review provenance, including the API actor, request source, effort value, inherited default, and policy that allowed the automated review request.
 - Treat default-effort changes as governed review-policy drift that can affect review cost, latency, finding depth, and reviewer expectations even when no repository file changed.
@@ -52,6 +55,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 ## Authoritative Sources
 
+- [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [September 17 topic news collector source](../../../raw/processed/2026-09-17/ai-dev-wiki-topic-news-collector-2026-09-17T003308Z.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
@@ -86,6 +90,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with advisory scan enablement, scope, exclusion, credit-budget, and independent merge-gate evidence.
 - Created on 2026-09-16 from raw-source evidence about repository-local AI review configuration and agent-facing review prompts; next check should verify config examples preserve reviewer authority and repository-specific rule provenance.
 - Maintained on 2026-09-25 with review-effort defaults, automatic trigger, inherited policy, prompt-injection, advisory-review, and actionability evidence.
 - Maintained on 2026-10-01 with Azure Repos and GitHub Copilot review-configuration audit events, effort-level policy, AGENTS.md, MCP, skill, content-exclusion, and batch-resolution evidence.

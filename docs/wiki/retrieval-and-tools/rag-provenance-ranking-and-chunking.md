@@ -9,6 +9,8 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds CoverSynth research evidence. Coverage-guided retrieval eval sets should pair deterministic source-quote checks with bounded semantic-validity review, then retain the evidence mapping so an apparent retrieval score does not hide an uncovered corpus region or unsupported answer.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds Agentic AutoRAG evidence for local retrieval practice. RAG optimization should diagnose whether a failed answer came from retrieval, reranking, chunking, embedding, generation, or cost-aware configuration before changing the pipeline, and provenance should stay attached to the source spans used in each experiment.
 
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds practitioner evidence that RAG failures should be split by retrieval, grounding, and final-answer classes. Local RAG diagnostics should attach exact source spans, check whether those spans appear in top results, and distinguish unsupported answers from wrong answers given sufficient evidence.
@@ -56,6 +58,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 ## Practice Boundaries
 
 - Add absent-answer canaries to RAG evaluation alongside source-span attribution, ranking, chunking, and answer-quality checks.
+- Design retrieval eval sets to expose corpus coverage and inspectable source quotes, then use semantic checks as a bounded complement rather than a replacement for provenance.
 - Diagnose RAG failures by checking source-span availability, top-result presence, groundedness, and final-answer correctness as separate classes.
 - Preserve paper, code, prompt, and log provenance for retrieval-gap tests so future agents can reproduce the absence behavior instead of trusting anecdotal failures.
 
@@ -92,6 +95,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Authoritative Sources
 
+- [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
@@ -143,6 +147,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with coverage-guided retrieval-eval, deterministic source-quote, semantic-validity, and provenance evidence; CoverSynth remains research evidence rather than production validation.
 - Maintained on 2026-10-09 with Agentic AutoRAG retrieval, reranking, chunking, embedding, generation, and cost-aware configuration diagnosis evidence.
 - Maintained on 2026-10-02 with retrieval-versus-generation failure separation, source-span, groundedness, and final-answer diagnostic evidence.
 - Maintained on 2026-09-25 with knowledge-gap canary and abstention-test evidence.

@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 16 topic news collector source](../../../raw/processed/2026-10-16/ai-dev-wiki-topic-news-collector-2026-10-16T003600Z.json) adds general-availability autofix evidence. A controlled remediation loop needs policy enablement, a billing and compute budget, alert and code-search scope, generated-fix rationale, scanner rerun output, and a draft-pull-request handoff; none of these convert the generated proposal into merge authority.
+
 AI-assisted security repair needs stricter gates than ordinary feature work because the output can affect vulnerability disclosure, maintainer trust, CI behavior, and downstream users. The local pattern is to treat the agent as a drafter and investigator while humans or trusted security reviewers own vulnerability validation, scope, disclosure decisions, and final acceptance.
 
 The [Patch the Planet source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json) describes AI-assisted security research paired with expert review, maintainer consultation, patch development, tests, CI improvements, disclosure coordination, and reusable workflows. Broad OpenAI, Daybreak, Trail of Bits, and program coverage belongs upstream; this page keeps the local repair workflow gates.
@@ -90,6 +92,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - Require affected-version, exploitability, maintainer-confirmation, regression, fixed-version, and disclosure evidence when AI-assisted bug hunting reports a vulnerability.
 - Keep dependency auto-remediation non-automerge by default, with vulnerability context, target-version rationale, build-preserving notes, and validation evidence in the review packet.
 - Treat agentic autofix loops as draft-PR workflows that must preserve scanner rerun results and owner review before a repair is accepted.
+- Require policy enablement and cost authorization evidence before an agentic security autofix consumes shared execution capacity.
 - Review agent-generated changes to configuration, hooks, dependency metadata, host-integrated files, generated tests, and deployment paths as sandbox-boundary or supply-chain-sensitive work.
 - Require centralized review evidence, provenance, re-verification, and rollback readiness before merging privileged security repair changes.
 - Keep public maintainer contact, public PR creation, package publication, external file transfer, and social-engineering-like communication out of security-evaluation runs unless the evaluation plan explicitly authorizes and monitors that action.
@@ -110,6 +113,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Authoritative Sources
 
+- [October 16 topic news collector source](../../../raw/processed/2026-10-16/ai-dev-wiki-topic-news-collector-2026-10-16T003600Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
 - [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json)
 - [Topic news collector source](../../../raw/processed/2026-06-23/ai-dev-wiki-topic-news-collector.json)
@@ -165,6 +169,7 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with policy-enablement, shared-cost, alert-scope, scanner-rerun, draft-pull-request, and owner-acceptance evidence for controlled agentic autofix.
 - Maintained on 2026-09-26 with repository-specific autofix memory, alert-scope, stale-pattern, scanner, test, and human-security-acceptance evidence.
 - Maintained on 2026-10-03 with MCP prompt-injection freeze, raw and normalized result preservation, write-validation, rollback, sandbox, and runtime-safeguard evidence.
 - Maintained on 2026-09-18 with misalignment-disclosure, unauthorized-action, model-coordination, oversight-evasion, fabricated-evidence, hidden-data-inconsistency, and mitigation-review gates.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds CoverSynth research evidence. Before diagnosing an agent as weak at retrieval, inspect whether the evaluation set covers the relevant corpus, exposes source quotes deterministically, and can distinguish a retrieval failure from a semantically plausible but unsupported result.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds Agent Experience evidence for technology-readiness evals. Agent eval failure diagnosis should treat documentation, MCP tools, skills, plugins, CLIs, and APIs as fixable source surfaces: define representative scenarios, calibrate criteria, inspect trajectories, classify recurring failure patterns, and change the source material agents consume before attributing the problem only to model recency.
 
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds retrieval-pipeline and benchmark-catalog evidence. Agent eval failure diagnosis should map failures to the pipeline or benchmark dimension they actually exercise, such as retrieval versus generation, tool use, browser or computer use, code review, ML workflow, cost, latency, safety, or repeated-run reliability.
@@ -37,6 +39,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 ## Practice Boundaries
 
 - Include knowledge-gap canaries or absence tests when diagnosing retrieval-backed agents so fabrication and failure-to-abstain become visible.
+- Separate inadequate evaluation-set coverage, missing source evidence, semantic-validity failure, and retrieval failure before changing a retrieval-backed agent.
 - Join traceable tool authorization, completed-task evaluation, reliability, latency, cost, and quality signals before attributing a failure only to model reasoning.
 
 - Separate reasoning, action selection, tool execution, final-state, transcript-review, and repeated-trial failures.
@@ -52,6 +55,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Authoritative Sources
 
+- [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -89,6 +93,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with coverage-guided eval-set, deterministic source-quote, semantic-validity, and retrieval-failure-separation evidence; CoverSynth remains research evidence rather than production validation.
 - Maintained on 2026-10-10 with technology-readiness eval, trajectory-inspection, failure-pattern, and source-fix-loop evidence.
 - Maintained on 2026-10-09 with retrieval-pipeline, benchmark-category, tool-use, code-review, ML-workflow, cost, latency, safety, and reliability diagnosis evidence.
 - Maintained on 2026-10-02 with trace reading, run comparison, replay, tool-argument inspection, targeted logging, and comparison-run caveats.

@@ -9,6 +9,8 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds [AI Scan](../../../upstream-ai-wiki/products/github-ai-security-review.md) pull-request evidence. An AI security scan is an additional advisory reviewer with defined coverage, not a merge authority: retain its finding, suggested-fix, scope-exclusion, credit-use, and human-triage evidence alongside CodeQL and human review rather than treating an unblocked scan as acceptance.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds weekly review and review-stack evidence. Multi-reviewer practice should separate automated findings, weekly human review rituals, source review statistics, sensitive-code boundaries, and final acceptance so review volume does not become a proxy for review quality.
 
 The [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) adds multi-model audit and review-toil evidence. Multi-reviewer AI code review only improves review quality when independent model or role findings are deduplicated, synthesized, and measured for human actionability; otherwise the second reviewer can double noise, reviewer correction time, and compliance review load.
@@ -34,12 +36,14 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 - Preserve role-specific findings, source evidence, disagreement, synthesis rationale, and unresolved residual risk.
 - Avoid counting repeated comments or consensus language as quality unless the workflow improves source-backed finding coverage.
 - Keep human review authoritative for architecture, intent, security acceptance, and merge decisions.
+- Record each advisory AI security scan's effective pull-request coverage and exclusions before comparing it with deterministic checks or human reviewers.
 - Require adversarial reviewer or critic roles to cite code, tests, logs, policy, or source documents for each objection, and preserve retractions when evidence does not support the disagreement.
 - Bound review-convergence loops with a clear budget and route only converged, source-backed issues into writable repair work.
 - Route reusable role taxonomies through [layered AI code review roles](layered-ai-code-review-roles.md) and evaluation criteria through [code review evals and rubrics](../verification-and-evals/code-review-evals-and-rubrics.md).
 
 ## Authoritative Sources
 
+- [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -74,6 +78,7 @@ The [October 3 topic news collector source](../../../raw/processed/2026-10-03/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-15 with advisory AI security-scan, scope-coverage, suggested-fix, credit-use, and human-triage evidence.
 - Maintained on 2026-10-09 with automated-finding, weekly-review, source-statistic, sensitive-code-boundary, and human-acceptance evidence.
 - Maintained on 2026-09-25 with multi-model audit, deduplication, actionability, and review-toil evidence.
 - Maintained on 2026-10-03 with adversarial reviewer, critic, evidence-backed disagreement, retraction, convergence, budget, and writable-scope evidence.
