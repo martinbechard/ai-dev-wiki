@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-10-17T00:29:44Z",
+  "cutoff_window": {
+    "inclusive_start": "2026-10-15T00:29:44Z",
+    "exclusive_end": "2026-10-17T00:29:44Z",
+    "rule": "Only sources with a concrete visible publication or update date inside the preceding 48 hours were eligible."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "boundary": "Broad companies, models, products, developer tools, agentic frameworks, MCP servers, and general techniques are upstream-owned. This collector retains only local AI-assisted-development practice implications."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/application-patterns",
+      "source_url": "https://www.microsoft.com/insidetrack/blog/automating-engineering-operations-at-microsoft-with-a-smart-dri-agent/",
+      "source_type": "first-party engineering case study",
+      "visible_date": "2026-10-15",
+      "named_entities": ["Microsoft", "Microsoft Digital", "Smart DRI Agent", "Microsoft Teams"],
+      "upstream_owned_entities": ["Microsoft", "Smart DRI Agent", "Microsoft Teams"],
+      "factual_summary": "Microsoft reports that its Smart DRI Agent consolidates incident information, telemetry, troubleshooting guidance, and operational updates; it is used by more than 40 teams and has produced more than 7,800 AI-assisted interactions and nearly 6,000 proactive incident notifications.",
+      "local_practice_implication": "For incident-facing development agents, keep operational context, troubleshooting evidence, and escalation outputs in one inspectable workspace, then measure adoption with operational outcomes such as notifications handled and engineering time recovered. Route the vendor implementation itself upstream.",
+      "follow_up": "Candidate ingest lens: application-patterns/agent-harness-components.md and adoption-and-operating-model; verify which reported metrics represent causal savings before durable synthesis."
+    },
+    {
+      "topic_root": "docs/wiki/application-patterns",
+      "source_url": "https://hub.openhands.dev/blog",
+      "source_type": "first-party product update index",
+      "visible_date": "2026-10-15",
+      "named_entities": ["OpenHands", "NVIDIA", "Nemotron 3.5 Super VL"],
+      "upstream_owned_entities": ["OpenHands", "NVIDIA", "Nemotron 3.5 Super VL"],
+      "factual_summary": "OpenHands announced support for a multimodal model in its software-engineering agents, describing always-on agents that can see, reason, and act across specialized engineering workflows.",
+      "local_practice_implication": "Treat a move from text-only to multimodal agent inputs as a harness-boundary change: declare allowed visual sources, capture provenance for screenshots or UI observations, and extend review and privacy checks to the added input modality. Route framework and model coverage upstream.",
+      "follow_up": "Candidate ingest lens: application-patterns/browser-agent-runtime-boundaries.md and governance-and-risk; seek implementation documentation before adding a durable rule."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "reason": "The article was crawled in-window but its accessible page did not expose a concrete publication day, so it fails the exact visible-date rule."
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/",
+      "reason": "The listed custom-instructions, skills, and MCP article is visibly dated 2026-10-12, outside the cutoff window."
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "reason": "Visible publication date is 2026-10-05, outside the cutoff window."
+    },
+    {
+      "source_url": "https://usethinkr.com/news/reviewer-approval-drift-ai-code",
+      "reason": "Visible date is 2026-10-14, outside the cutoff window; its underlying study is also older than the window."
+    },
+    {
+      "source_url": "https://conf.researchr.org/details/ase-2026/ase-2026-research-track/93/Same-Scrutiny-More-Time-Eye-Tracking-Insights-into-Reviewing-LLM-Labelled-Code",
+      "reason": "The conference presentation is visibly dated 2026-10-13, outside the cutoff window."
+    },
+    {
+      "source_url": "https://github.blog/latest/",
+      "reason": "The 2026-10-15 shared-organization access and repository-hygiene article is not specifically an AI-assisted-development practice update."
+    },
+    {
+      "source_url": "https://sourcex.si/insights/ai-agent-governance-access-scopes-approvals-and-audit-logs",
+      "reason": "Search surfaced a date, but direct retrieval timed out; the factual claims and date could not be independently verified."
+    }
+  ],
+  "follow_up_notes": [
+    "This is a raw-only collector artifact. Do not update docs/wiki or move this file to raw/processed until a separate ingest pass completes.",
+    "The upstream federation boundary was checked in docs/wiki/federation.md and the upstream topic index; all named vendor, product, framework, and model entities are retained only as routing markers.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  ]
+}
