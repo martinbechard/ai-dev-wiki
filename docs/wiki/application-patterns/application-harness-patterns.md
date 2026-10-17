@@ -62,6 +62,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - [user-visible-progress-and-runtime-telemetry.md](user-visible-progress-and-runtime-telemetry.md) owns user-facing progress and operational visibility.
 - [local-model-runtime-harness.md](local-model-runtime-harness.md) owns local inference operation as product harness design.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds a repair-harness checklist: explicit policy enablement, alert-scoped evidence, deterministic validation, a bounded cost owner, and reviewable draft output are separate components. Product-specific mechanics remain upstream-owned.
+
 ## Practice Boundaries
 
 - Put harness control between the user interface, model calls, tools, and backend systems.
@@ -87,6 +89,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - Separate pre-action guidance, action execution, post-action sensors, and human escalation gates so prompt instructions, runtime controls, and approval decisions do not blur together.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -144,6 +148,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with repair-harness component evidence; next check should retain policy, budget, and review boundaries.
 
 - Maintained on 2026-10-10 with imported-agent-service, eval-command, scriptable-review-setting, input-set, feature-flag, promotion, and rollback pipeline evidence.
 - Created on 2026-06-23 from local source guidance on structured output, drafter patterns, harness software, workflow state, progress, and AI process layers.

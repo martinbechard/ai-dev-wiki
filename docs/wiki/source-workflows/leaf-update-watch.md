@@ -25,6 +25,8 @@ The [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-de
 
 The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-dev-wiki-leaf-update-watch-2026-09-08T210152-0400.json) reinforces leaf-watch output as a loop handoff. A useful watcher artifact records selected leaves, qualifying updates, excluded candidates, visible dates, upstream-owned entities, follow-up notes, and checked URLs so ingest can decide what is local practice evidence without rerunning broad product or model research.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) requires the watch ledger to record a failed-before-scan run separately from a completed scan with no qualifying update, together with evidence links and any cost or failure location.
+
 ## Practice Boundaries
 
 - Select durable local leaves, not folder hubs or maintenance pages, as the update-check unit.
@@ -40,6 +42,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - Preserve upstream-owned entity arrays and weak-date caveats through ingest so downstream leaves retain only local workflow, governance, evaluation, or adoption implications.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - Target environment automation record for AI Dev Wiki Leaf Update Watch.
 - [automated update feeds](automated-update-feeds.md)
@@ -75,6 +79,8 @@ The [September 8 leaf update watch source](../../../raw/processed/2026-09-08/ai-
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with failed-before-scan evidence; next check should preserve distinct run outcomes.
 
 - Maintained on 2026-10-12 with upstream-owned entity arrays, weak-date caveats, and local-practice implication routing evidence.
 - Maintained on 2026-09-19 with cursor-state, selected-leaf, threshold, diff, and screenshot evidence for repeated public-source watches.

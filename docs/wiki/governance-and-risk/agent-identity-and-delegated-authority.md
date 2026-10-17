@@ -81,6 +81,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds governance evidence for agent ownership, delegated mandates, remote MCP identity modes, workload-fleet admission, and grant-evidence checks. Delegated authority should preserve whether a server or tool acts as the user, the agent, or no identity; which owner granted the mandate; which workload pattern was admitted; and which missing grant evidence caused a fail-closed decision.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds an identity-control completeness check drawn from a vendor announcement: associate every agent with a named owner and purpose, scoped authority, revocation path, and audit record; do not rely on shared long-lived credentials. The announcement is evidence for the checklist, not a universal product claim.
+
 ## Practice Boundaries
 
 - Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
@@ -132,6 +134,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - Record whether a remote MCP server or connected tool acts as the user, the agent, or no identity, and preserve owner mandate, workload admission, grant evidence, and fail-closed denial when authority proof is missing.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
@@ -195,6 +199,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with identity-control checklist evidence; next check should preserve owner, revocation, and audit requirements.
 
 - Maintained on 2026-10-10 with authentication-versus-authority, AUDIT traceability, authority-chain, invoked-or-declined action, and duration-bound delegation evidence.
 - Maintained on 2026-09-21 with credential-inventory export evidence for delegated-authority audits.

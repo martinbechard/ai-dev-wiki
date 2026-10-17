@@ -80,6 +80,8 @@ The [September 26 leaf update watch source](../../../raw/processed/2026-09-26/ai
 
 The October 2 and 3 raw sources add approval-boundary evidence for harness gates, desktop control, and delegated tool identity. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) reinforces selective human gates and scoped delegated mandates, while the [topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) records desktop app control, recurring automations, and cross-surface continuation. Locally, approval records should say which work may continue unattended, which app or tool surface is allowed, which identity acts, and which result or risk requires the human to return.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds an AI-scan and agentic-autofix boundary: advisory findings and draft remediation proposals are review inputs, not merge authority. A separate human decision must record the finding disposition and accept any change after deterministic validation evidence is available.
+
 ## Practice Boundaries
 
 - Define which tasks can be delegated, which require review, and which require human execution.
@@ -138,6 +140,8 @@ The October 2 and 3 raw sources add approval-boundary evidence for harness gates
 - Record unattended-continuation scope, app or tool allowlist, acting identity, delegated mandate, checkpoint trigger, and return-to-human condition when agents can keep working across sessions, desktops, or connected tools.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
@@ -218,6 +222,8 @@ The October 2 and 3 raw sources add approval-boundary evidence for harness gates
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with advisory-findings and draft-remediation evidence; next check should preserve independent acceptance authority.
 
 - Maintained on 2026-10-10 with exact-operation approval, handoff-packet, idempotency-key, residual-authority, approval-laundering, and allowed/flagged/blocked action-checkpoint evidence.
 - Maintained on 2026-10-03 with unattended-continuation, app-control, acting-identity, delegated-mandate, checkpoint, and return-to-human evidence.

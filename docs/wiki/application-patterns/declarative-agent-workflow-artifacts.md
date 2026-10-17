@@ -40,6 +40,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Peer verification, checkpoint, user-input, and resumability points.
 - Release or CI gate ownership when the workflow can continue after the foreground turn.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds automation-run artifacts: declare reviewable output, activation failure before an agent begins, completed scan with no qualifying result, run outcome, cost, and evidence links. This makes a failed collector distinguishable from a completed collector that found nothing.
+
 ## Practice Boundaries
 
 - Review branching, tool-call, approval, checkpoint, and resume semantics before runtime execution.
@@ -57,6 +59,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Treat dynamic-workflow availability as source evidence for workflow design, not as proof that the workflow's CI, release, or peer-verification gate is adequate.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
@@ -98,6 +102,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with run-outcome and activation-failure evidence; next check should preserve distinct terminal states.
 
 - Maintained on 2026-10-10 with AI-decision checkpoint, candidate-subprocess, time/cost/quality/flexibility, legal-constraint, and adopt/constrain/reject decision evidence.
 - Maintained on 2026-10-09 with trigger, allowed-action, approval, state-transition, rollback, audit-record, and external-boundary evidence.

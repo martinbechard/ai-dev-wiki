@@ -28,6 +28,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 The October 3 raw sources add persistent-background and dynamic-workflow signals. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) records always-on agents as a reason to separate single-turn assistance from stateful job ownership, while the [topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) records code-defined dynamic workflows with checkpoints, structured handoffs, subagent verification, and resume behavior. Locally, that means background execution should be selected only when the task has durable state, reviewable workflow artifacts, and human checkpoint rules.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) reinforces a controlled remediation route: explore the alert scope, propose a bounded change, run the designated deterministic validation, create a reviewable draft, then transition to separately owned review rather than merge.
+
 ## Practice Boundaries
 
 - Prefer fixed workflows when required stages, evidence gates, and approvals are known before execution.
@@ -43,6 +45,8 @@ The October 3 raw sources add persistent-background and dynamic-workflow signals
 - Route broad ReAct, LangGraph, Deep Agents, and planning-architecture background to the upstream AI wiki.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
@@ -82,6 +86,8 @@ The October 3 raw sources add persistent-background and dynamic-workflow signals
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with controlled-remediation flow evidence; next check should preserve the separate review transition.
 
 - Maintained on 2026-10-10 with front-loaded research, planning constraint, SDLC-placement, and workflow-deployment decision evidence.
 - Maintained on 2026-09-18 with coordinator-worker project orchestration, per-thread branch, shared-memory, and conflict-resolution evidence.

@@ -68,6 +68,8 @@ The [September 26 topic news collector source](../../../raw/processed/2026-09-26
 
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) adds MCP prompt-injection incident response and agent-safety platform evidence. Security repair gates should freeze action chains when untrusted tool output may have steered the agent, preserve raw and normalized results, record policy decisions and approvals, validate write access, and prefer runtime safeguards or sandbox rule books over prompt-only restrictions for consequential repair work.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds two gate requirements: preserve the original alert, remediation rationale, scanner-rerun output, and independent review before merge; pin and review the CI action or reusable-workflow dependencies that execute agent-driven repair, while treating dependency review as its own safety control.
+
 ## Practice Boundaries
 
 - Validate the finding before patching or reporting it as a vulnerability.
@@ -112,6 +114,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - Prefer enforceable runtime safeguards, sandbox rules, and technical restrictions over prompt-only safety instructions when security repair agents can mutate code or systems.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 16 topic news collector source](../../../raw/processed/2026-10-16/ai-dev-wiki-topic-news-collector-2026-10-16T003600Z.json)
 - [September 18 leaf update watch source](../../../raw/processed/2026-09-18/ai-dev-wiki-leaf-update-watch-2026-09-18T210205-0400.json)
@@ -168,6 +172,8 @@ The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with alert, validation, and CI-dependency evidence; next check should preserve independent review.
 
 - Maintained on 2026-10-15 with policy-enablement, shared-cost, alert-scope, scanner-rerun, draft-pull-request, and owner-acceptance evidence for controlled agentic autofix.
 - Maintained on 2026-09-26 with repository-specific autofix memory, alert-scope, stale-pattern, scanner, test, and human-security-acceptance evidence.

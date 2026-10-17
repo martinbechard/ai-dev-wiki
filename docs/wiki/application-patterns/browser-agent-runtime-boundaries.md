@@ -46,6 +46,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Organization-managed disablement or allowlist policy.
 - The boundary between GUI observation, text entry, file mutation, and external-system action.
 
+The [October 17 topic news collector source](../../../raw/processed/2026-10-17/ai-dev-wiki-topic-news-collector-2026-10-17T002944Z.json) identifies multimodal software-agent support as a harness-boundary change. Before accepting screenshots or other UI observations, declare allowed visual sources, retain their provenance, and extend review and privacy controls to that input modality; product and model background stays upstream-owned.
+
 ## Practice Boundaries
 
 - Treat browser sessions as execution environments, not only retrieval tools.
@@ -70,6 +72,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - Treat computer-use previews as app-control boundaries that need approval and policy evidence even when the same assistant is already authorized for repository work.
 
 ## Authoritative Sources
+
+- [October 17 topic news collector source](../../../raw/processed/2026-10-17/ai-dev-wiki-topic-news-collector-2026-10-17T002944Z.json)
 
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
@@ -114,6 +118,8 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with multimodal-input boundary evidence; next check should retain visual-source provenance and privacy controls.
 
 - Maintained on 2026-10-12 with AI-native browser, browser-agent benchmark, sign-in, permission, irreversible-action, observation-limit, and benchmark-provenance evidence.
 - Maintained on 2026-10-02 with desktop app-control approval, OS-permission, organization-policy, and reset-procedure boundaries.

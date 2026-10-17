@@ -97,6 +97,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 The September 25 raw sources add managed-runtime and security-taskflow evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) frames harness runtime as microVM-backed state, permissions, approvals, checkpoints, credentials, and pause/resume/fork APIs; broad product and framework identities stay upstream. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds a fuzzing taskflow pattern where prompts coordinate entrypoint analysis, build inspection, harness generation, coverage, crash triage, and reports while MCP tools execute high-risk commands in disposable environments.
 
+The [October 17 topic news collector source](../../../raw/processed/2026-10-17/ai-dev-wiki-topic-news-collector-2026-10-17T002944Z.json) offers a first-party incident-agent case study. Locally, an incident-facing harness should keep telemetry, troubleshooting evidence, operational updates, and escalation output in one inspectable workspace; adoption metrics such as notifications handled are usage signals, not causal savings without a stated measurement method.
+
 ## Practice Boundaries
 
 - Treat the outer iteration loop as the runtime boundary that decides when to call tools, observe results, continue, or stop.
@@ -169,6 +171,8 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 - Keep hooks, deterministic tests, read-only reviewer agents, permission rules, and human acceptance gates inspectable as enforcement components rather than advisory prompt text.
 
 ## Authoritative Sources
+
+- [October 17 topic news collector source](../../../raw/processed/2026-10-17/ai-dev-wiki-topic-news-collector-2026-10-17T002944Z.json)
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
@@ -269,6 +273,8 @@ The September 25 raw sources add managed-runtime and security-taskflow evidence.
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with incident-harness context evidence; next check should distinguish usage signals from causal outcome claims.
 
 - Maintained on 2026-10-09 with harness component, ownership, approval, observability, durable-memory, and sandboxing evidence from the October 8 [leaf update watch](../source-workflows/leaf-update-watch.md).
 - Maintained on 2026-09-28 with per-action monitor, fail-closed, human-review queue, coverage-limit, and evasion-risk harness evidence.

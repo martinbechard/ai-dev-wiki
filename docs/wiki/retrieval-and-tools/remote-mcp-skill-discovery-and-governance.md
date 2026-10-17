@@ -27,6 +27,8 @@ The September 8 raw sources add registry, gateway, and community-component revie
 
 The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai-dev-wiki-leaf-update-watch-2026-09-25T210020-0400.json) adds Skills Over MCP working-session evidence. Broad Model Context Protocol and SEP background remains upstream-owned; locally, skill discovery should record whether the procedure arrived through protocol spec work, registry schema, SDK behavior, or client behavior, because each path changes provenance, activation policy, compatibility review, and rollback evidence.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) reinforces separation of remote-skill discovery and onboarding from runtime authorization: a discovered capability still needs owned identity, scoped policy, monitored access, and a revocation path before use.
+
 ## Practice Boundaries
 
 - Treat discovered skills as code-adjacent supply-chain inputs.
@@ -42,6 +44,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - Record the discovery path for MCP-served skills, including protocol/spec source, registry schema, SDK behavior, client activation behavior, provenance, compatibility target, and rollback route.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
 - [July 29 leaf update watch source](../../../raw/processed/2026-07-29/ai-dev-wiki-leaf-update-watch-2026-07-29T210208-0400.json)
@@ -83,6 +87,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with discovery-versus-authorization evidence; next check should preserve runtime revocation and monitoring.
 
 - Created on 2026-07-28 from July 28 raw evidence about remotely discovered MCP skills, package boundaries, approval defaults, diagnostics, and central governance.
 - Maintained on 2026-07-29 with authenticated retrieval, archive-limit, blocked-script, central-publication, approval-default, and diagnostic guidance.

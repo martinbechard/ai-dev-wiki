@@ -19,6 +19,8 @@ The [July 5 leaf update watch source](../../../raw/processed/2026-07-05/ai-dev-w
 
 The [September 8 topic news collector source](../../../raw/processed/2026-09-08/ai-dev-wiki-topic-news-collector-2026-09-09T003214Z.json) adds a private-to-public contribution boundary. Assistant-mediated source workflows may format an explicitly shared solution into documentation or a pull request, but publication still needs human review for truth, sensitivity, and value. Locally, source intake should preserve explicit sharing intent, keep private conversation content out of public raw artifacts, validate structured output, and require human acceptance before private work becomes public knowledge.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds intake observability: retain source-to-artifact traceability and the collector run state before synthesis so an unavailable collector is not misreported as an empty source set.
+
 ## Practice Boundaries
 
 - Keep human-saved source notes in [Clippings](../../../Clippings) until the ingest workflow moves them.
@@ -32,6 +34,8 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - Preserve explicit sharing intent, sensitivity review, structured-output validation, and human acceptance before assistant-mediated private material becomes public documentation.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [Folder organization source note](../../../raw/processed/Folder organization by @AICodethatWorks.md)
 - Target environment automation record for AI Dev Wiki Raw Project-Wiki Monitor.
@@ -66,6 +70,8 @@ The [September 8 topic news collector source](../../../raw/processed/2026-09-08/
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with intake-run-state evidence; next check should preserve source-to-artifact traceability.
 
 - Created on 2026-06-23 to separate clipping intake and raw folder lifecycle from the broader source-workflows hub.
 - Maintained on 2026-07-05 with raw public update artifacts as evidence for compact wiki-memory synthesis.

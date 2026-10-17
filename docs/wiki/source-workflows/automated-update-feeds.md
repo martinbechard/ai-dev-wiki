@@ -53,7 +53,11 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - [AI Dev Wiki Leaf Update Watch](leaf-update-watch.md) runs daily as a raw-only checker for durable local leaves.
 - [AI Dev Wiki Raw Project-Wiki Monitor](raw-project-wiki-monitor.md) runs twice daily as the ingest job that may refresh wiki leaves and digests after processing raw artifacts.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) reinforces that an update feed has a reviewable output boundary and must distinguish an infrastructure failure before collection begins from a completed scan with no qualifying changes.
+
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [source-workflows](index.md)
 - [topic-index.md](../topic-index.md)
@@ -96,6 +100,8 @@ The feed-topic list is configuration for local practice monitoring, not a separa
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with reviewable-output and failure-state evidence; next check should preserve empty-scan distinctions.
 
 - Maintained on 2026-09-19 with cursor-based polling, priority-threshold, diff, screenshot, and next-cursor evidence for scheduled collectors.
 - Created on 2026-06-23 to document the accepted update-feed setup.

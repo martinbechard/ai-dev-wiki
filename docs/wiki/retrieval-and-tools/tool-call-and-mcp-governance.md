@@ -145,6 +145,8 @@ The October 11 raw sources add MCP startup, skill-serving, and capability-shape 
 
 The October 14 raw ingest adds telemetry-capture and least-credential automation evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) separates user attribution from prompt, response, tool-argument, tool-output, and policy-detail capture. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds automatic MCP-startup control, anonymous registry access for dependency automation, and Dependabot withdrawn-alert handling as local tool-governance signals. Tool governance should decide which content classes may be retained, which tool servers may start automatically, when credential-free registry access is safer than shared tokens, and how withdrawn or retracted tool evidence stays visible instead of disappearing.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds request-time, identity-aware policy evaluation for tool calls: record the access decision and scope per invocation, and make audit evidence available without treating a discovered tool or connector as automatically authorized.
+
 ## Practice Boundaries
 
 - Separate retrieval tools, procedural-memory tools, operational runbooks, observability tools, feature-flag tools, task-system tools, and data-platform tools when assigning approval and audit requirements.
@@ -268,6 +270,8 @@ The October 14 raw ingest adds telemetry-capture and least-credential automation
 - Use deterministic reducers for tool results only when raw outputs remain recoverable and reducer rules preserve identifiers, permissions, audit fields, and error state.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)
@@ -394,6 +398,8 @@ The October 14 raw ingest adds telemetry-capture and least-credential automation
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with request-time tool-policy evidence; next check should preserve per-invocation audit records.
 
 - Maintained on 2026-10-10 with MCP tool-description routing, prompt-injection, least-privilege, delegation-chain audit, invoked-or-declined action, and cross-boundary traceability evidence.
 - Maintained on 2026-10-11 with automatic MCP startup, skill-over-MCP, diagnostic action, and measured schema-budget evidence.

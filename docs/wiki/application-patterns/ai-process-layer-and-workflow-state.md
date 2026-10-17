@@ -53,6 +53,8 @@ The [September 25 leaf update watch source](../../../raw/processed/2026-09-25/ai
 
 The October 3 raw sources add persistent-agent and session-lifecycle evidence. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-02T210147-0400.json) treats always-on agents as stateful jobs rather than chat replies, while the [topic news collector source](../../../raw/processed/2026-10-03/ai-dev-wiki-topic-news-collector-2026-10-03T003409Z.json) records recurring automations, related-session navigation, attention badges, cleanup, PR creation, merge handling, Dev Container sessions, and cross-app continuation as process-layer state. Locally, the process layer should preserve job owner, session lineage, environment, attention state, pending checks, cross-surface handoff, and cleanup decision before background or continued work is accepted.
 
+The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json) adds controlled-remediation state: retain alert scope, enablement and policy state, validation output, draft status, budget or credit owner, and reviewer disposition as durable workflow records rather than transient agent context.
+
 ## Practice Boundaries
 
 - Put an AI process layer between the interface and backend when the workflow needs tools, state, validation, or approvals.
@@ -80,6 +82,8 @@ The October 3 raw sources add persistent-agent and session-lifecycle evidence. T
 - Persist background-agent job owner, session lineage, environment selection, related-session links, attention state, failed-check state, pull-request handoff, cleanup decision, and cross-app continuation evidence when work can resume outside the active chat.
 
 ## Authoritative Sources
+
+- [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
@@ -131,6 +135,8 @@ The October 3 raw sources add persistent-agent and session-lifecycle evidence. T
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-16 with controlled-remediation state evidence; next check should retain alert-to-decision traceability.
 
 - Maintained on 2026-10-10 with agent-service promotion, rollback, eval CLI, scriptable-review, git-backed input-set, delegation-chain, and cross-boundary audit-state evidence.
 - Maintained on 2026-09-04 with budget-policy, model-route, pause-monitor, session-hierarchy, active-root, merge-state, reusable-workflow identity, and checkpoint-state evidence.
