@@ -1,0 +1,148 @@
+{
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp": "2026-10-17T00:58:51Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-10T00:58:51Z",
+    "end_inclusive": "2026-10-17T00:58:51Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior seven days; missing, ambiguous, future-dated, and strict-boundary-only dates are excluded."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+    "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+    "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+    "https://github.github.com/gh-aw/blog/2026-10-16-agent-of-the-day/",
+    "https://www.globenewswire.com/news-release/2026/10/15/3381680/0/en/descope-unveils-agentic-identity-hub-3-0-to-enhance-governance-and-control-for-ai-agents.html",
+    "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+    "https://astound.systemprompt.io/documentation/agent-farm",
+    "https://codex.danielvaughan.com/2026/10/15/webmcp-browser-native-model-context-protocol-navigator-modelcontext-agent-web/"
+  ],
+  "federation_note": "GitHub, Copilot, CodeQL, GitHub Agentic Workflows, Descope, WebMCP, and MCP server/product background remain upstream-owned. This raw artifact retains only downstream operating implications for AI-assisted development practice.",
+  "qualifying_updates": [
+    {
+      "id": "github-ai-scan-pr-ga-2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+      "visible_date": "October 15, 2026",
+      "factual_summary": "GitHub made AI Scan for pull requests generally available. It reports AI-labelled advisory findings beside CodeQL findings when enabled, may suggest an autofix, does not fail the code-scanning check or block merges through rulesets, and has stated scope and credit-use boundaries.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": "Treat AI security findings as review inputs with explicit disposition and merge-authority boundaries rather than autonomous acceptance criteria.",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "Keep advisory findings, coverage exclusions, budget ownership, and the independent acceptance gate visible in the repair record."
+      },
+      "named_entities": ["GitHub", "AI Scan", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "upstream_owned_entities": ["GitHub", "AI Scan", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "follow_up_note": "Ingest only the local practice rule: an AI scan is advisory unless separately backed by a deterministic required check and explicit policy."
+    },
+    {
+      "id": "github-agentic-autofix-code-scanning-ga-2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "visible_date": "October 15, 2026",
+      "factual_summary": "GitHub announced general availability of agentic autofix for code-scanning alerts. The flow explores relevant files, proposes and validates a fix by rerunning CodeQL, then opens a draft pull request with rationale and validation steps; enterprise policy enablement, repository or organization enablement, billing, and cost controls apply.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md": "A draft pull request and tool rerun support review; neither replaces explicit human acceptance authority.",
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md": "Controlled remediation can use a bounded explore-propose-validate-draft sequence with a separate review transition.",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md": "Persist alert scope, enablement state, validation output, draft status, and reviewer decision as workflow state rather than transient agent context.",
+        "docs/wiki/application-patterns/application-harness-patterns.md": "A repair harness should make policy enablement, scoped evidence, validation, cost budget, and reviewable output explicit components.",
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "A security repair gate needs evidence from the original alert, remediation rationale, rerun output, and independent review before merge."
+      },
+      "named_entities": ["GitHub", "Copilot", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "upstream_owned_entities": ["GitHub", "Copilot", "CodeQL", "GitHub Code Security", "GitHub Advanced Security"],
+      "follow_up_note": "Keep product mechanics upstream; ingest the downstream controlled-remediation checklist only if it adds a reusable local gate."
+    },
+    {
+      "id": "github-actions-workflow-lockfiles-preview-2026-10-14",
+      "source_url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+      "visible_date": "October 14, 2026; updated October 14, 2026",
+      "factual_summary": "GitHub announced a public preview of workflow dependency lockfiles. Lockfiles pin Actions and reusable-workflow dependencies to reviewed commits, support gradual onboarding and stale-lockfile checks, and can be required by administrators; dependency safety still requires review.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md": "Agent-driven repair and validation workflows should pin and review their execution dependencies, while retaining a separate safety review for the dependencies themselves."
+      },
+      "named_entities": ["GitHub Actions", "Dependabot", "gh actions-lock"],
+      "upstream_owned_entities": ["GitHub Actions", "Dependabot", "gh actions-lock"],
+      "follow_up_note": "Consider a local rule requiring reproducible, reviewable CI dependencies for agent-driven repair workflows."
+    },
+    {
+      "id": "github-agentic-workflows-daily-documentation-updater-2026-10-16",
+      "source_url": "https://github.github.com/gh-aw/blog/2026-10-16-agent-of-the-day/",
+      "visible_date": "October 16, 2026",
+      "factual_summary": "GitHub Agentic Workflows published an example daily documentation updater that reviews merged work and opens a reviewable pull request through a safe output. Its reported runs distinguish one successful execution from two early infrastructure failures before the agent began, with recorded costs and failure location.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md": "Declare reviewable output, run outcome, activation failure, and evidence links as workflow artifacts so an automation can be audited and resumed.",
+        "docs/wiki/source-workflows/automated-update-feeds.md": "An update feed should expose a reviewable change boundary and distinguish collector failure from an absence of source changes.",
+        "docs/wiki/source-workflows/clipping-and-raw-intake.md": "Raw intake should preserve source-to-artifact traceability and run status before any downstream synthesis.",
+        "docs/wiki/source-workflows/leaf-update-watch.md": "The ledger should record failed-before-scan runs separately from completed scans with no qualifying updates."
+      },
+      "named_entities": ["GitHub Agentic Workflows", "Codex", "create-pull-request"],
+      "upstream_owned_entities": ["GitHub Agentic Workflows", "Codex"],
+      "follow_up_note": "Treat this as an implementation example, not a generic reliability claim; retain the local observability and review-boundary implications."
+    },
+    {
+      "id": "descope-agentic-identity-hub-3-0-2026-10-15",
+      "source_url": "https://www.globenewswire.com/news-release/2026/10/15/3381680/0/en/descope-unveils-agentic-identity-hub-3-0-to-enhance-governance-and-control-for-ai-agents.html",
+      "visible_date": "October 15, 2026 09:00 ET",
+      "factual_summary": "Descope announced Agentic Identity Hub 3.0 with an approval-based onboarding workflow, documented purpose and owner, least-privilege access, MCP gateway controls, short-lived or workload identity options, request-time policy evaluation, and audit logging. These are vendor claims in a product announcement.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md": "The local control checklist should connect a named owner, purpose, scoped authority, revocation path, and audit record rather than rely on shared long-lived credentials.",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md": "Discovery and onboarding of remote skills should be separated from runtime authorization and monitored access.",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md": "Tool governance can require identity-aware, request-time policy evaluation and auditable access decisions for each invocation."
+      },
+      "named_entities": ["Descope", "Agentic Identity Hub", "MCP", "agentgateway", "SPIFFE", "ID-JAG"],
+      "upstream_owned_entities": ["Descope", "Agentic Identity Hub", "MCP", "agentgateway", "SPIFFE", "ID-JAG"],
+      "follow_up_note": "Do not promote vendor claims into universal facts; use the announcement only to test whether local ownership, authority, and audit requirements are complete."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://codex.danielvaughan.com/2026/09/06/front-load-human-review-phased-coding-agent-workflow-codex-cli/",
+      "visible_date": "Published September 6, 2026; updated October 14, 2026",
+      "reason": "The page visibly changed in-window, but does not identify a substantive October change; its underlying workflow claims are already represented in earlier sources, so this run does not infer a new durable update."
+    },
+    {
+      "source_url": "https://astound.systemprompt.io/documentation/agent-farm",
+      "visible_date": "Last updated October 17, 2026",
+      "reason": "Future-dated relative to this run (October 16 local time); excluded rather than treating it as an in-window update."
+    },
+    {
+      "source_url": "https://codex.danielvaughan.com/2026/10/15/webmcp-browser-native-model-context-protocol-navigator-modelcontext-agent-web/",
+      "visible_date": "October 15, 2026",
+      "reason": "The candidate is primarily broad WebMCP protocol and browser-product background, which federation assigns upstream; it provides no distinct downstream local-practice change for the selected RAG or MCP leaves."
+    }
+  ],
+  "leaf_results": {
+    "qualified_updates_found": [
+      "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+      "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+      "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+      "docs/wiki/application-patterns/application-harness-patterns.md",
+      "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+      "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+      "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+      "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+      "docs/wiki/source-workflows/automated-update-feeds.md",
+      "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "docs/wiki/source-workflows/leaf-update-watch.md"
+    ],
+    "no_qualified_update": [
+      "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md"
+    ]
+  }
+}
