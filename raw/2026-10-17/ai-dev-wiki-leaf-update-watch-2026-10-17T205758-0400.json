@@ -1,0 +1,127 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-17T20:57:58-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-10T20:57:58-0400",
+    "end_inclusive": "2026-10-17T20:57:58-0400",
+    "policy": "Only visibly published or updated sources strictly inside the preceding seven-day window qualify."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+  ],
+  "source_urls_checked": [
+    "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+    "https://cursor.com/docs/release-notes/cloud-agents",
+    "https://developers.cloudflare.com/changelog/product/agents/",
+    "https://developers.cloudflare.com/changelog/post/2026-10-13-persistent-browser/",
+    "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "cursor-cloud-agent-canvases-and-environments-2026-10-16",
+      "published_or_updated_at": "2026-10-16",
+      "source_url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "factual_summary": "Cursor announced cloud-agent canvases, a beta API for programmatic cloud-environment management, support for up to 300 repositories per environment, and faster loading for large environments.",
+      "why_it_matters": "This is a downstream operating-practice signal: environment provisioning, scale limits, reviewable interactive artifacts, and promotion controls should be treated as separate concerns when cloud agents span many repositories.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": ["Cursor", "Cloud Agents", "Canvases", "Environments API"],
+      "upstream_owned_entities": ["Cursor", "Cloud Agents"]
+    },
+    {
+      "id": "cloudflare-persistent-browser-tool-2026-10-13",
+      "published_or_updated_at": "2026-10-13",
+      "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-13-persistent-browser/",
+      "factual_summary": "Cloudflare Agents SDK added a persistent browser tool. Browser sessions survive agent turns and Durable Object hibernation, while cookies and logins are shared within the browser; expired or crashed sessions restart and lose prior state.",
+      "why_it_matters": "The local implication is to model browser state as a governed capability with explicit lifecycle, recovery, telemetry, and credential-boundary controls rather than as a stateless retrieval tool.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/destructive-command-controls.md",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md"
+      ],
+      "named_entities": ["Cloudflare", "Cloudflare Agents SDK", "Browser Run", "Chrome DevTools Protocol"],
+      "upstream_owned_entities": ["Cloudflare", "Cloudflare Agents SDK", "Browser Run"]
+    },
+    {
+      "id": "cloudflare-web-fetch-tool-2026-10-12",
+      "published_or_updated_at": "2026-10-12",
+      "source_url": "https://developers.cloudflare.com/changelog/product/agents/",
+      "factual_summary": "Cloudflare announced an experimental web_fetch tool that reads webpages, PDFs, and supported Office documents, converts them for model consumption, and notes that the API may change.",
+      "why_it_matters": "Local source workflows should keep source identity, conversion provenance, date qualification, and untrusted-content handling separate from the convenience of fetched model-ready text.",
+      "leaf_ids": [
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": ["Cloudflare", "Cloudflare Agents SDK", "web_fetch", "Workers AI Markdown Conversion"],
+      "upstream_owned_entities": ["Cloudflare", "Cloudflare Agents SDK"]
+    },
+    {
+      "id": "cloudflare-mcp-events-for-workers-issues-2026-10-13",
+      "published_or_updated_at": "2026-10-13",
+      "source_url": "https://developers.cloudflare.com/changelog/product/agents/",
+      "factual_summary": "Cloudflare announced that its API MCP server can expose Workers Issues as signed MCP Events, with scoped subscriptions that can start investigation when a new or recurring issue is detected.",
+      "why_it_matters": "For the local workflow lens, event-triggered collection needs a clear distinction between an alert, the fetched source evidence, and a qualified follow-up; permissions and webhook scope remain review inputs.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+        "docs/wiki/source-workflows/public-topic-news-collector.md",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+      ],
+      "named_entities": ["Cloudflare", "Cloudflare API MCP server", "Workers Issues", "MCP Events"],
+      "upstream_owned_entities": ["Cloudflare", "MCP", "Workers Issues"]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://cursor.com/docs/release-notes/cloud-agents",
+      "reason": "The visible section is labeled Week of Oct 5, 2026, which is outside this run's strict cutoff; no separate in-window update date was shown."
+    },
+    {
+      "source_url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/",
+      "reason": "Published October 8, 2026, outside the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "reason": "Broad Cursor product background is upstream-owned; this raw record retains only downstream operating-practice implications."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/changelog/product/agents/",
+      "reason": "Broad Cloudflare and MCP product background is upstream-owned; this raw record retains only local workflow, lifecycle, and authorization implications."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; route this raw artifact through normal source-first ingest and independent verification.",
+    "Treat the Cloudflare sources as product-specific examples, not universal behavior guarantees.",
+    "Route broad product, vendor, protocol, and framework analysis to the upstream AI wiki."
+  ]
+}
