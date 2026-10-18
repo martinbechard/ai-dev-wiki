@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) adds event-triggered collection evidence. A signed or scoped event can begin investigation, but it is not itself qualified source evidence: retain subscription scope and permissions, fetch the source, apply date and relevance rules, and record the distinct follow-up decision before a collector emits raw material. Cloudflare and MCP event details remain upstream-owned.
+
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds evaluator-access and source-resolution caution. Collectors should preserve when a source only resolves to a homepage, when search-visible material lacks the exact article URL, and when independent evaluator access is limited, because those constraints affect later synthesis and review-gate confidence.
 
 The public topic news collector is a raw-only automation for AI-assisted development practice updates. It searches approved local topic roots, uses only public web sources, applies a two-day visible publication or update window, and saves qualifying findings as structured raw JSON artifacts under [raw](../../../raw).
@@ -30,6 +32,7 @@ The collector should include source URLs, visible dates, short factual summaries
 
 ## Authoritative Sources
 
+- [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
 - Target environment automation record for AI Dev Wiki Topic News Collector.
 - [automated update feeds](automated-update-feeds.md)
 - [schema.md](../schema.md)
@@ -60,6 +63,8 @@ The collector should include source URLs, visible dates, short factual summaries
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-17 with event-subscription scope, source qualification, and follow-up-decision evidence.
 
 - Maintained on 2026-09-19 with source-resolution, homepage-fallback, evaluator-access, and source-uncertainty capture guidance.
 - Created on 2026-06-23 to separate the raw-only public topic collector from the broader automated-update-feeds page.

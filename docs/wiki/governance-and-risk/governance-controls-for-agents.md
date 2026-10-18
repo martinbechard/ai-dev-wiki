@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) adds governance-evidence practice. For each governed action, retain the identity, available tools and permissions, enforcement point, approval, execution record, and independently verified outcome; test the same control across MCP, shell, browser, and other reachable action paths. An MCP audit record or successful response alone is not authorization or completion proof.
+
 AI-assisted development and AI application features need boundaries in the harness. The local control model treats prompts as guidance and treats harness rules as enforcement. Permissions, approval points, secret handling, audit logs, prompt-injection resistance, package-install policy, source privacy, licensing review, cost controls, and human acceptance sit around model output rather than inside model wording alone.
 
 Agents expand the attack surface because they combine generated text, retrieved content, tool calls, dependency installs, and credential-adjacent workflows. The local rule is to preserve source boundaries, least privilege, explicit authorization, visible approval points, and audit evidence.
@@ -237,6 +239,7 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 
 ## Authoritative Sources
 
+- [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
 - [September 4 leaf update watch source](../../../raw/processed/2026-09-04/ai-dev-wiki-leaf-update-watch-2026-09-04T210211-0400.json)
@@ -350,6 +353,8 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-18 with cross-channel authorization, execution, and verified-outcome evidence.
 
 - Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.
 - Maintained on 2026-10-11 with remote-control, trust-responsive authorization, inherited-access, managed model default, MCP startup, and human-review gate evidence.

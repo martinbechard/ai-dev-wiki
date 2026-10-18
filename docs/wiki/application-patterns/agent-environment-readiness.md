@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) and [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) add managed cloud-environment evidence. Treat repository membership, initialization, credentials, network policy, cleanup, and the resulting review artifact as separate declared readiness inputs; shareable agent output still needs content review and access control. Cursor feature specifics remain upstream-owned.
+
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds local sandbox and persistent-drive evidence. Coding-agent readiness should expose project-level filesystem, network, Git credential, and CLI credential policy before work starts, and should distinguish writable session state from read-only snapshots when persistent drives are shared across review or test sandboxes.
 
 The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds explicit sandbox-infrastructure evidence. Agents API sandboxes on AWS Lambda MicroVMs are useful locally as an architecture signal: readiness should name sandbox lifecycle, security boundary, files and artifacts, MCP connections, tracing, error and recovery behavior, and observability before treating an execution environment as ready.
@@ -70,6 +72,8 @@ The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-d
 
 ## Authoritative Sources
 
+- [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
+- [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json)
 
@@ -114,6 +118,8 @@ The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-18 with cloud-environment membership, lifecycle, review-artifact, and access-control readiness evidence.
 
 - Maintained on 2026-09-25 with local sandbox policy, credential scope, persistent-drive, and read-only snapshot evidence.
 - Maintained on 2026-10-14 with managed sandbox, policy-refresh, minimum-client-version, and fail-closed startup readiness evidence.

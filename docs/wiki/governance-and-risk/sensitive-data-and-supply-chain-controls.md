@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) adds license-policy evidence for agent-proposed dependency changes. Before merge, run the applicable dependency and license-policy checks, retain the exception or approval when a package is not compliant, and treat an agent-accessible policy query as a guardrail rather than proof of provenance, security, or project fit. GitHub product details remain upstream-owned.
+
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) and [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) add AI-built-code audit and agentic-enterprise security evidence. Local controls should treat functional test success as insufficient for secrets, IAM, CI, container, dependency, and repository-history risk, and should preserve attacker-perspective review evidence before production promotion.
 
 The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds secret and dependency-automation controls for AI-assisted development. AI provider keys that are blocked by push protection, withdrawn dependency advisories, and anonymous organization-level registries all map to local practice: agent-authored commits should be stopped before provider credentials land in history, security dashboards should preserve retraction or withdrawal state instead of deleting evidence, and dependency automation should prefer least-credential registry access when internal mirrors can be read without reusable secrets.
@@ -188,6 +190,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Authoritative Sources
 
+- [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)
 - [October 15 topic news collector source](../../../raw/processed/2026-10-15/ai-dev-wiki-topic-news-collector-2026-10-15T002809Z.json)
@@ -288,6 +291,8 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-18 with agent dependency license-policy, exception-evidence, and merge-gate guidance.
 
 - Maintained on 2026-10-12 with AI-built-code audit, IAM, CI, container, repository-history, and attacker-perspective review evidence.
 - Maintained on 2026-10-14 with AI-provider key push protection, withdrawn-advisory state, least-credential registry access, and dependency-automation evidence.

@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) adds fetched-document conversion evidence. Preserve source identity, retrieval date, conversion provenance, and the untrusted-content label when webpages, PDFs, or office documents are made model-readable; experimental conversion convenience does not make the resulting text trusted instruction. Cloudflare tool details remain upstream-owned.
+
 The September 27 topic news collector source adds current coding-agent prompt-injection and trace-tampering evidence. Weekly coding-agent configuration notes make prompt-audit checks, prompt-injection fixes, sandbox boundaries, and permission fixes a recurring release-review concern, while the tamperable-trace source reinforces that an agent with host access may be able to rewrite or delete local evidence after reading hostile or incentive-shaping instructions.
 
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) and [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) add compaction-summary, memory, tool-use, and untrusted-agent-control evidence. Prompt-injection review should cover not only raw documents and web pages, but also generated summaries, persistent memory, fine-tuning data, external tool results, network access, and any self-modification path that lets the agent alter the safety or model boundary it is supposed to obey.
@@ -130,6 +132,7 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Authoritative Sources
 
+- [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)
@@ -190,6 +193,8 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-17 with fetched-document identity, conversion-provenance, and untrusted-content labelling evidence.
 
 - Maintained on 2026-09-27 with prompt-audit, prompt-injection-fix, sandbox-boundary, and tamperable local-trace evidence.
 - Maintained on 2026-10-04 with tool-result labelling, user-authored confirmation, pre-action execution prevention, and no-network rendering evidence.
