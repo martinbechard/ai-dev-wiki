@@ -1,0 +1,224 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp": "2026-10-18T00:31:24Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-16T00:31:24Z",
+    "end_inclusive": "2026-10-18T00:31:24Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior 48 hours. Date-only sources at the lower boundary are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "relationship": "downstream one-way extension",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_boundary": "Keep only local AI-assisted-development practice implications; do not create local entity coverage."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "Open source license compliance generally available",
+      "source_url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/",
+      "visible_date": "October 16, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub made enterprise license-policy checks generally available. A ruleset can require license-compliance results before merging dependency changes; noncompliant dependencies require removal or replacement, a policy amendment, or a package exception. Policy changes emit audit events, and an API endpoint can check whether a package complies with policy.",
+      "why_it_matters_for_ai_assisted_development_practice": "When an agent proposes a package change, run dependency and license policy checks before merge, preserve the exception or approval evidence, and keep package selection separate from a model's recommendation. Agent-accessible policy queries can prevent a known-ineligible suggestion, but do not replace review of provenance, security, or fit.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "dependency review action",
+        "software bill of materials",
+        "GitHub API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Code Security",
+        "dependency review action",
+        "software bill of materials",
+        "GitHub API"
+      ],
+      "local_practice_lens": [
+        "package-install risk",
+        "licensing governance",
+        "merge-gate evidence",
+        "audit logs",
+        "agent dependency selection"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a durable AI-assisted dependency-selection and license-exception control; keep GitHub feature coverage upstream."
+    },
+    {
+      "topic_root": "docs/wiki/application-patterns",
+      "title": "Cloud Agent Canvases and Environment Improvements",
+      "source_url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "visible_date": "October 16, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "Cursor reports that cloud agents can create interactive canvases that teams share by link. Its Environments API is in beta for programmatically creating and managing cloud environments, which can now include up to 300 repositories.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat a programmatically created agent environment as a governed runtime: declare repository membership, initialization, credentials, network and cleanup policy, then retain those settings with the resulting review artifact. A shareable canvas is a handoff surface that still needs content review and access control before distribution.",
+      "named_entities": [
+        "Cursor",
+        "Cursor Cloud Agents",
+        "Cursor Environments API",
+        "Cursor Canvases"
+      ],
+      "upstream_owned_entities": [
+        "Cursor",
+        "Cursor Cloud Agents",
+        "Cursor Environments API",
+        "Cursor Canvases"
+      ],
+      "local_practice_lens": [
+        "agent environment readiness",
+        "environment lifecycle governance",
+        "streaming progress and handoff artifacts",
+        "reviewable outputs",
+        "team access control"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a local environment-control-plane and artifact-sharing checklist; keep Cursor product details upstream."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "How do you prove your AI governance works? Lessons from Toronto",
+      "source_url": "https://aaif.io/blog/how-do-you-prove-your-ai-governance-works-lessons-from-toronto",
+      "visible_date": "October 16, 2026",
+      "source_type": "foundation practice article",
+      "factual_summary": "The Agentic AI Foundation describes practitioner examples in which tool availability is filtered by application purpose, access checks occur at the service boundary, and governance evidence connects identity, permissions, authorization, execution, and verified outcomes. It also warns that MCP-only controls do not govern equivalent actions through scripts or browser automation.",
+      "why_it_matters_for_ai_assisted_development_practice": "A governed tool-call workflow should prove which user or agent had which tools and permissions, where enforcement occurred, what was approved, and the resulting outcome. Test controls across every reachable action path, including shell and browser routes, rather than treating an MCP audit entry or successful response as proof of authorization or completion.",
+      "named_entities": [
+        "Agentic AI Foundation",
+        "Model Context Protocol",
+        "NVIDIA",
+        "Accenture",
+        "RBC"
+      ],
+      "upstream_owned_entities": [
+        "Agentic AI Foundation",
+        "Model Context Protocol",
+        "NVIDIA",
+        "Accenture",
+        "RBC"
+      ],
+      "local_practice_lens": [
+        "MCP as a governed practice",
+        "permissions and approvals",
+        "audit logs",
+        "tool-call evidence",
+        "cross-channel enforcement"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a durable governance-evidence checklist spanning MCP, scripts, browsers, and other action paths."
+    },
+    {
+      "topic_root": "docs/wiki/context-architecture",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "source_url": "https://openai.com/index/stack-overflow-chatgpt-plugin/",
+      "visible_date": "October 16, 2026",
+      "source_type": "primary vendor customer story",
+      "factual_summary": "OpenAI reports that Stack Overflow for Agents is organizing information from systems such as Slack and Google Docs into verified knowledge for people and agents. The customer describes giving coding agents a development environment and a plan, then expanding its product from intake toward sharing knowledge gained in individual sessions across the organization.",
+      "why_it_matters_for_ai_assisted_development_practice": "Use an explicit plan and a bounded development environment as the starting context for coding-agent work. Treat a knowledge base as a lifecycle: source intake, verification, controlled agent access, and durable sharing of validated learning are separate responsibilities; a customer story is adoption evidence, not a universal productivity benchmark.",
+      "named_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT",
+        "Stack Overflow for Agents",
+        "Slack",
+        "Google Docs"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "ChatGPT",
+        "Stack Overflow for Agents",
+        "Slack",
+        "Google Docs"
+      ],
+      "local_practice_lens": [
+        "context architecture",
+        "durable source workflows",
+        "planning loops",
+        "bounded development environments",
+        "team adoption"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a source-backed plan-plus-environment and verified-knowledge-lifecycle pattern; do not generalize the reported customer outcomes."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Claude Code Review Reaches General Availability",
+      "source_url": "https://aicatchup.com/news/claude-code-review-general-availability",
+      "visible_date": "Source released October 15, 2026; secondary analysis published October 16, 2026",
+      "reason": "The authoritative release date is outside this run's strict 48-hour window; the later secondary analysis does not make the underlying update current."
+    },
+    {
+      "title": "AI Scan for pull requests generally available",
+      "source_url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available/",
+      "visible_date": "October 15, 2026",
+      "reason": "Outside the strict 48-hour window; this source was already collected and subsequently ingested as October 16 collector evidence."
+    },
+    {
+      "title": "Agentic autofix for code scanning alerts general availability",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "visible_date": "October 15, 2026",
+      "reason": "Outside the strict 48-hour window; this source was already collected and subsequently ingested as October 16 collector evidence."
+    },
+    {
+      "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+      "source_url": "https://github.blog/changelog/month/10-2026/",
+      "visible_date": "October 15, 2026",
+      "reason": "Outside the strict 48-hour window and broad upstream-owned product/model lifecycle coverage without a distinct local practice update."
+    },
+    {
+      "title": "What Is MCP? An Enterprise Guide",
+      "source_url": "https://www.bdemerson.com/article/model-context-protocol",
+      "visible_date": "October 16, 2026",
+      "reason": "In-window but a broad, third-party MCP explainer that mainly restates upstream-owned protocol and ecosystem coverage; the AAIF practice article provides a more focused, primary governance lead."
+    },
+    {
+      "title": "AI Agent News, Updates & Release Notes",
+      "source_url": "https://theagentlog.com/",
+      "visible_date": "October 17, 2026",
+      "reason": "Secondary aggregation. Its product-specific entries are retained only as leads until a direct, dated primary source establishes a distinct local-practice update."
+    },
+    {
+      "title": "MCP Server for Frappe",
+      "source_url": "https://discuss.frappe.io/t/mcp-server-for-frappe/147635",
+      "visible_date": "October 17, 2026",
+      "reason": "Community forum discussion of a product-specific server and pull request; it is not an authoritative release or general practice source and broad MCP-server coverage is upstream-owned."
+    },
+    {
+      "title": "Cursor Community MCP plugin support reports",
+      "source_url": "https://forum.cursor.com/",
+      "visible_date": "October 17, 2026",
+      "reason": "Individual community bug reports are not adequate evidence for general tool-governance guidance; retain no claim without an authoritative issue or remediation source."
+    }
+  ],
+  "search_notes": [
+    "Searched public primary vendor changelogs, foundation practice publications, and direct official links surfaced by secondary leads for context, agent workflows, code review, MCP governance, environment control, licensing, and adoption topics.",
+    "No private, proprietary, sensitive, PII, or company-internal repository content was sent to external services.",
+    "Every qualifying item has a visible October 16, 2026 date and is within the strict 48-hour window."
+  ],
+  "follow_up_notes": [
+    "Collector remains raw-only: do not update docs/wiki or move this artifact to raw/processed in this run.",
+    "If ingesting the license-compliance item, retain policy, exception, audit-event, and independent package-review boundaries.",
+    "If ingesting the environment and canvas item, distinguish environment configuration, access control, and content review from the vendor product facts.",
+    "If ingesting the governance article, retain the distinction between an attempted or successful tool call and proof of authorization and verified outcome across all action paths.",
+    "If ingesting the customer story, qualify it as an attributed adoption example rather than a transferable delivery metric."
+  ],
+  "blockers": []
+}
