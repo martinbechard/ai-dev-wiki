@@ -1,0 +1,112 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp": "2026-10-19T18:00:10Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-17T18:00:10Z",
+    "end_inclusive": "2026-10-19T18:00:10Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior 48 hours. Date-only sources at the lower boundary are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/verification-and-evals",
+      "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+      "source_url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4/",
+      "visible_date": "October 19, 2026",
+      "source_type": "primary vendor changelog",
+      "factual_summary": "GitHub reports that CodeQL cannot support traced extraction when Xcode 27 is installed for C/C++, C#, Go, Java, Kotlin, or Swift; macOS 27 can also prevent traced extraction, and Swift 6.4 is unsupported on every platform. It advises pinning workflows to macOS/Xcode 26 or earlier, or using build mode none for C/C++, C#, and Java where appropriate.",
+      "why_it_matters_for_ai_assisted_development_practice": "An agent-generated toolchain or runner upgrade can silently reduce a security-verification surface. Treat runner image, compiler/toolchain, CodeQL build mode, and supported-language coverage as versioned evaluation inputs; test the intended scan path after changes and require explicit approval for any coverage trade-off.",
+      "named_entities": [
+        "GitHub",
+        "CodeQL",
+        "GitHub Actions",
+        "macOS 27",
+        "Xcode 27",
+        "Swift 6.4"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "CodeQL",
+        "GitHub Actions",
+        "macOS 27",
+        "Xcode 27",
+        "Swift 6.4"
+      ],
+      "local_practice_lens": [
+        "verification coverage",
+        "CI runner pinning",
+        "toolchain compatibility",
+        "security scan evidence",
+        "agent-generated workflow change review"
+      ],
+      "follow_up": "Route to normal raw ingest only if a maintainer wants a durable scan-coverage change-control checklist; keep GitHub, CodeQL, and platform-specific compatibility facts upstream."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Open source license compliance generally available",
+      "source_url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/",
+      "visible_date": "October 16, 2026",
+      "reason": "Outside the strict 48-hour window and already captured by the preceding collector."
+    },
+    {
+      "title": "Redesigning source control at Anthropic",
+      "source_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "visible_date": "Published October 13, 2026; updated October 15, 2026",
+      "reason": "Its visibly updated date is outside the strict 48-hour window. Anthropic, its products, and broad source-control system background are upstream-owned; any later local practice discussion needs a new, dated primary source."
+    },
+    {
+      "title": "State of AI Code Review, Q4 2026: Consolidation Accelerates",
+      "source_url": "https://aicodereview.cc/blog/state-of-ai-code-review-q4-2026/",
+      "visible_date": "October 18, 2026",
+      "reason": "Secondary market analysis that recaps older vendor releases and benchmarks; retain only as a lead until direct, dated primary sources establish a distinct local-practice update."
+    },
+    {
+      "title": "How the Claude Code Team Reviews Code: A Small-Team Version",
+      "source_url": "https://dev.to/akaranjkar08/how-the-claude-code-team-reviews-code-a-small-team-version-2lb",
+      "visible_date": "October 18, 2026",
+      "reason": "Secondary adaptation of an Anthropic process write-up. It does not establish a newly dated primary practice update and mixes author recommendations with attributed material."
+    },
+    {
+      "title": "AGENTS.md",
+      "source_url": "https://agents.md/",
+      "visible_date": "No publication or update date visible in the public result",
+      "reason": "The search result was crawled recently, but crawl time is not a source publication or update date."
+    },
+    {
+      "title": "Understand context in AI agents",
+      "source_url": "https://code.visualstudio.com/docs/agents/concepts/context",
+      "visible_date": "Published five days before the run",
+      "reason": "Outside the strict 48-hour window; Microsoft and VS Code documentation are also upstream-owned entity coverage."
+    },
+    {
+      "title": "Govern MCP Tools by Using an AI Gateway",
+      "source_url": "https://learn.microsoft.com/azure/ai-foundry/agents/how-to/tools/governance",
+      "visible_date": "No unambiguous publication or update date visible in the public result",
+      "reason": "Recent crawl time alone cannot qualify the documentation; Microsoft Foundry and MCP platform details are upstream-owned."
+    },
+    {
+      "title": "AI Coding Daily report on multi-layered verification",
+      "source_url": "https://aicodingweekly.news/stories/addy-osmani-line-by-line-review-multi-layered-verification",
+      "visible_date": "October 18, 2026",
+      "reason": "Secondary report of a social-media post, without a direct, dated source sufficient to support durable workflow guidance."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector remains raw-only: do not update docs/wiki or move this artifact to raw/processed in this run.",
+    "If ingesting the CodeQL item, preserve the difference between a successful workflow execution and evidence that the intended language/build path was analyzed.",
+    "Review agent-authored CI workflow or runner changes for supported-platform and security-coverage effects before merge.",
+    "Broad company, product, protocol, tool, and platform facts remain upstream-owned under docs/wiki/federation.md; this artifact retains only downstream practice implications."
+  ]
+}
