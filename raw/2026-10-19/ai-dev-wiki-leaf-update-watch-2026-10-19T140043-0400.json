@@ -1,0 +1,136 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-19T14:00:43-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-12T14:00:43-0400",
+    "end_inclusive": "2026-10-19T14:00:43-0400",
+    "date_policy": "Only visibly published or updated timestamps strictly inside the window qualify; date-only lower-boundary candidates are excluded."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/ai-development-partner-selection.md",
+    "docs/wiki/adoption-and-operating-model/managed-agent-portability-boundaries.md",
+    "docs/wiki/adoption-and-operating-model/outcome-alignment-and-process-autonomy.md",
+    "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+    "docs/wiki/application-patterns/browser-agent-runtime-boundaries.md",
+    "docs/wiki/coding-practices/ai-assisted-tdd.md",
+    "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+    "docs/wiki/coding-practices/generated-code-refactoring.md",
+    "docs/wiki/coding-practices/intelligent-code-review.md",
+    "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+    "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+    "docs/wiki/prompt-and-instructions/context-engineering-for-request-packages.md",
+    "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+    "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+    "docs/wiki/verification-and-evals/judge-grader-boundaries.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+    "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/",
+    "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/",
+    "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/"
+  ],
+  "qualifying_updates": [
+    {
+      "leaf_id": "docs/wiki/agent-workflows/shared-channel-agent-sessions.md",
+      "source_url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+      "published_at": "2026-10-15",
+      "factual_summary": "GitHub Copilot in Slack and Microsoft Teams added multi-repository conversations, shared Slack-message and thread context, smoother repository switching, and interruption-recovery improvements.",
+      "why_it_matters_for_leaf": "A shared-channel workflow now needs explicit repository-set, channel-context, and recovery boundaries before treating the session as a cross-repository work record.",
+      "named_entities": ["GitHub Copilot", "Slack", "Microsoft Teams"],
+      "upstream_owned_entities": ["GitHub Copilot"],
+      "follow_up_note": "Keep the product release upstream-owned; ingest only the downstream shared-session context and recovery implications."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/execution-edge-authorization.md",
+      "source_url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates/",
+      "published_at": "2026-10-13",
+      "factual_summary": "Enterprise-managed Copilot settings can require a fresh policy retrieval at startup and fail closed when current policy cannot be confirmed; the sandbox setting also gains minimum-client-version enforcement.",
+      "why_it_matters_for_leaf": "Execution authorization should record policy freshness and client-version preconditions, not only the policy value that was intended to apply.",
+      "named_entities": ["GitHub Copilot", "forceRemoteSettingsRefresh", "sandbox"],
+      "upstream_owned_entities": ["GitHub Copilot"],
+      "follow_up_note": "Treat this as a local fail-closed authorization pattern rather than a local GitHub product page."
+    },
+    {
+      "leaf_id": "docs/wiki/governance-and-risk/sensitive-data-and-supply-chain-controls.md",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "published_at": "2026-10-15",
+      "factual_summary": "Agentic autofix explores a codebase, proposes a remediation, reruns CodeQL, and opens a draft pull request; it is policy-gated and consumes AI Credits and Actions minutes.",
+      "why_it_matters_for_leaf": "Automated security repair needs provenance, validation evidence, draft-review gates, enablement approval, and cost-budget evidence before the change is accepted.",
+      "named_entities": ["GitHub Copilot", "CodeQL", "GitHub Advanced Security"],
+      "upstream_owned_entities": ["GitHub Copilot", "CodeQL", "GitHub Advanced Security"],
+      "follow_up_note": "Preserve the local repair-control implication; do not duplicate GitHub feature documentation."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/fix-branch-and-pr-packaging.md",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "published_at": "2026-10-15",
+      "factual_summary": "The remediation flow iterates through validation and opens a draft pull request containing a fix summary, closure rationale, and validation steps.",
+      "why_it_matters_for_leaf": "An agent-created repair branch should package the verification receipt and remain draft until an authorized reviewer accepts the fix.",
+      "named_entities": ["GitHub Copilot", "CodeQL"],
+      "upstream_owned_entities": ["GitHub Copilot", "CodeQL"],
+      "follow_up_note": "Use as downstream branch-and-PR evidence only."
+    },
+    {
+      "leaf_id": "docs/wiki/coding-practices/intelligent-code-review.md",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "published_at": "2026-10-15",
+      "factual_summary": "Agentic remediation returns a draft pull request with why the alert closes and the validation performed after codebase-wide exploration.",
+      "why_it_matters_for_leaf": "Review practice should distinguish the agent's reported closure rationale from independently accepted evidence and retain both with the PR.",
+      "named_entities": ["GitHub Copilot", "CodeQL"],
+      "upstream_owned_entities": ["GitHub Copilot", "CodeQL"],
+      "follow_up_note": "Do not treat vendor-provided validation as sufficient independent review."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/ai-technical-solution-evaluation.md",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-15",
+      "updated_at": "2026-10-16",
+      "factual_summary": "Anthropic announced employee-like evaluator access for METR, with publication of risk-assessment results, alongside work with other evaluators.",
+      "why_it_matters_for_leaf": "A credible technical evaluation should specify evaluator independence, access scope, publication or disclosure commitments, and the decision the evaluation can affect.",
+      "named_entities": ["Anthropic", "METR", "SecureBio", "Accenture"],
+      "upstream_owned_entities": ["Anthropic", "METR", "SecureBio", "Accenture"],
+      "follow_up_note": "Route broad organization and model information upstream; retain the local evaluator-independence checklist implication."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/code-review-evals-and-rubrics.md",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-15",
+      "updated_at": "2026-10-16",
+      "factual_summary": "The announcement describes external evaluator access and publication of risk-assessment results rather than relying only on provider-owned testing.",
+      "why_it_matters_for_leaf": "Consequential review-eval claims need a defined independent-review path and a publication or auditable-disclosure expectation in addition to internal rubric scores.",
+      "named_entities": ["Anthropic", "METR"],
+      "upstream_owned_entities": ["Anthropic", "METR"],
+      "follow_up_note": "Record the rubric-design implication, not vendor background."
+    },
+    {
+      "leaf_id": "docs/wiki/verification-and-evals/judge-grader-boundaries.md",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-15",
+      "updated_at": "2026-10-16",
+      "factual_summary": "Independent evaluators can receive enhanced access and publish risk-assessment findings, providing a distinct assurance role from the developer's own graders.",
+      "why_it_matters_for_leaf": "Keep developer-owned automated judges separate from independent assessment whenever the result informs high-consequence safety or release decisions.",
+      "named_entities": ["Anthropic", "METR"],
+      "upstream_owned_entities": ["Anthropic", "METR"],
+      "follow_up_note": "Use as an assurance-boundary example; upstream owns vendor and evaluator profiles."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/",
+      "reason": "Published date is 2026-10-07, outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/",
+      "reason": "A broad provider-model lifecycle update is upstream-owned; no distinct local-practice change was established for the selected portability leaf."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "reason": "Not recorded for AI-assisted TDD, generated-code refactoring, browser runtime boundaries, context request packages, partner selection, or outcome autonomy because it did not supply a distinct new practice for those leaves."
+    }
+  ],
+  "counts": {"selected_leaves": 15, "qualifying_updates": 8, "excluded_candidates": 3},
+  "blockers": []
+}
