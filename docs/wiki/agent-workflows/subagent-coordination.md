@@ -80,6 +80,7 @@ Product and protocol background stays upstream; locally this is a coordination c
 
 ## Practice Boundaries
 
+- Keep routing, duplicate checks, required fields, and reliability gates deterministic; delegate only bounded specialist context and version workflow templates separately from the router, as illustrated by the [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json).
 - Use subagents for independent investigations with clear scope and evidence expectations.
 - Keep the main agent responsible for synthesis, edit ownership, and final verification.
 - Ask subagents to return evidence, findings, and risks rather than hidden intermediate context.
@@ -119,6 +120,7 @@ Product and protocol background stays upstream; locally this is a coordination c
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-30T003150Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)

@@ -37,6 +37,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Practice Boundaries
 
+- Make a project runnable before relying on agent verification; separate fresh-session issue understanding and local reproduction from implementation, then preserve environment-discovery work as repository-scoped instructions. The [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json) supplies this source-specific workflow example.
 - Start with a failing test when behavior, contracts, regressions, or edge cases are being changed.
 - Keep each test focused enough to narrow the agent task.
 - Preserve existing passing behavior while implementing the smallest change that satisfies the failing test.
@@ -62,6 +63,7 @@ The [October 5 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Verification loops and evals](../verification-and-evals/verification-loops-and-evals.md)
 - [Orient inspect patch verify loop](../agent-workflows/orient-inspect-patch-verify-loop.md)

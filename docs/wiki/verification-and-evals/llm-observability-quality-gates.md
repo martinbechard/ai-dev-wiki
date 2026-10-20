@@ -60,6 +60,8 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 
 The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds inherited-access and evaluation-environment incident evidence from public commentary and reporting. Broad incident chronology and company background stay upstream-owned; locally, observability gates should include access-boundary checks, environment isolation, inter-agent coordination signals, internet-isolation bypass indicators, escalation triggers, and early-warning telemetry for evaluation sandboxes.
 
+The [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json) adds labeled calibration data, held-out alignment thresholds, sampled production outputs, and human-approved drift response as judge quality-gate evidence.
+
 ## Practice Boundaries
 
 - Do not use broad vendor comparison tables as local tool recommendations without verifying the current product, pricing, and data-handling state.
@@ -79,6 +81,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)

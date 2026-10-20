@@ -37,6 +37,8 @@ The September 20 raw sources add execution-time enforcement and machine-speed go
 
 The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-dev-wiki-leaf-update-watch-2026-10-04T211800-0400.json) adds hosted-browser, multi-agent delegation, remote CLI MCP, and containment evidence. Locally, an execution edge should preserve website approvals, application sign-in boundary, command breadth, cloud identity, sandbox evidence, independent containment, and monitoring controls before agents can operate hosted browsers, managed cloud CLIs, or safety-critical autonomous workflows.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) adds a policy-freshness boundary: require fresh managed-policy retrieval and compatible client-version evidence at startup, failing closed when either cannot be confirmed.
+
 ## Practice Boundaries
 
 - Record the acting human, agent identity, integration identity, target system, action class, data class, credential scope, budget scope, and approval state for each high-impact edge.
@@ -61,6 +63,7 @@ The [October 4 leaf update watch source](../../../raw/processed/2026-10-04/ai-de
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)

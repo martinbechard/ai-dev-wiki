@@ -107,6 +107,8 @@ The [September 23 topic news collector source](../../../raw/processed/2026-09-23
 
 The September 25 raw sources add workstation, plugin, and sandbox controls. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) records release-age cooldowns, known-malicious package blocking, plugin SHA post-checkout verification, MCP server guardrails, prompt/file-read guardrails, and generated-code security as developer-workstation controls. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds local sandbox settings for filesystem reach, outbound internet, local network access, Git credentials, and GitHub CLI credentials.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) reinforces that agent-proposed security repairs require enablement approval, budget use, explored scope, scanner rerun, and draft-review evidence; a proposed closure is not accepted remediation.
+
 ## Practice Boundaries
 
 - Treat customer-owned activity storage, customer-managed keys, opt-in monitoring data, watermark checks, private plugin repositories, and reusable review skills as sensitive supply-chain surfaces until retention, provenance, access, and authority are explicit.
@@ -190,6 +192,7 @@ The September 25 raw sources add workstation, plugin, and sandbox controls. The 
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json)

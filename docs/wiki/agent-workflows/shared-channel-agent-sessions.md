@@ -31,6 +31,8 @@ The [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-de
 
 The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json) adds coordinator-managed branch-fleet evidence. Shared agent work can now mean multiple cloud agent threads working under shared memory, goals, files, and coordinator-visible progress while each thread returns through its own branch and ordinary pull-request conflict handling. Locally, this is a workflow boundary: shared context and coordinator visibility help orchestration, but branch isolation, review gates, and merge-conflict resolution remain the acceptance path.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) adds a cross-repository boundary: preserve the repository set, shared message or thread context, and interruption-recovery state when a channel session spans repositories.
+
 ## Practice Boundaries
 
 - Treat chat messages as steering evidence, not standalone authorization for repository writes, sandbox use, paid compute, or merges.
@@ -46,6 +48,7 @@ The [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [August 29 leaf update watch source](../../../raw/processed/2026-08-29/ai-dev-wiki-leaf-update-watch-2026-08-29T210148-0400.json)

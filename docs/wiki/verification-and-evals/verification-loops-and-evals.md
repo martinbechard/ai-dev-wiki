@@ -100,6 +100,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Practice Boundaries
 
+- Do not let the implementation agent be final judge: run deterministic build, test, and style gates, require independent adversarial review, define a severity stop rule, and return every repair to verification. The [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json) is a practitioner example rather than a universal process prescription.
 - Run the checks that match the change surface before claiming completion.
 - Record whether CI, code scanning, coverage upload, and merge evidence is retained, skipped, pending, or absent before treating an agent repair loop as verified.
 - Treat asynchronous merge operations as stateful verification workflows with request IDs, polling, timeout handling, and rule-bypass review.
@@ -180,6 +181,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)

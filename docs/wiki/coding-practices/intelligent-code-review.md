@@ -138,6 +138,8 @@ The September 26 raw sources add review-stage telemetry and verification-bottlen
 
 The [October 13 topic news collector source](../../../raw/processed/2026-10-13/ai-dev-wiki-topic-news-collector-2026-10-13T003447Z.json) adds bounded AI-review task and verification-scope evidence. AI can draft findings or responses, but review output remains a claim until the workflow records which checks ran, what they covered, what passed or failed, and which risks stayed unchecked. Faster review should be piloted as bounded, reversible work with a named human merge owner and usefulness, quality, speed, and safety metrics kept together.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) treats an agent's alert-closure rationale and scanner rerun as review inputs, not independent acceptance evidence.
+
 ## Practice Boundaries
 
 - Attach project rules, source references, and relevant diffs before asking for review.
@@ -250,6 +252,7 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)

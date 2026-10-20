@@ -78,6 +78,8 @@ The local practice implication is that verified delivery needs context to travel
 
 The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds measured compaction evidence from a Devventa study of Claude Code, Codex CLI, and Antigravity. Broad product behavior stays upstream-owned; locally, late automatic compaction, post-compaction retained-token limits, and observable pauses are evidence that task-critical state, approvals, source paths, and acceptance criteria should live outside compactable conversation history.
 
+The [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json) supports transparent compaction that preserves commitments and marks stripped information; test recall against representative coding tasks rather than accepting opaque summaries.
+
 ## Practice Boundaries
 
 - Orient from repository structure, relevant modules, tests, package boundaries, and existing conventions before selecting context.
@@ -127,6 +129,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [October 8 topic news collector source](../../../raw/processed/2026-10-07/ai-dev-wiki-topic-news-collector-2026-10-08T003326Z.json)

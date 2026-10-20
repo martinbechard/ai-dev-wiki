@@ -33,6 +33,8 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 - Independent validation should be linked before merge.
 - Guided change explanation and the human owner should be explicit when the authoring agent cannot supply durable intent by itself.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) supports packaging agent-created security repairs as drafts with the alert-closure rationale and validation receipt, pending authorized review.
+
 ## Practice Boundaries
 
 - Reproduce the bug with a failing test, compile error, browser issue, log line, screenshot mismatch, or user scenario before editing.
@@ -53,6 +55,7 @@ The [August 21 topic news collector source](../../../raw/processed/2026-08-21/ai
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)

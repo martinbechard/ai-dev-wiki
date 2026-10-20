@@ -66,8 +66,11 @@ Mandatory pass/fail gates should stop a proposal when it cannot show acceptable 
 
 For regulated, sovereign, or sensitive workflows, missing evidence for data residency, masking, prompt-injection handling, tool-call governance, audit retention, or customer-controlled key boundaries should be treated as a knockout risk rather than a low-weight scoring gap.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) adds an evaluator-independence checklist: specify access scope, disclosure or publication commitment, and the decision the evaluation may affect.
+
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [Technical-solution evaluation query fragment](../../../raw/processed/query/2026-08-20-ai-technical-solution-evaluation.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)

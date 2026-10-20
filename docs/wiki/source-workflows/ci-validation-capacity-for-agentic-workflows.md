@@ -28,6 +28,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Practice Boundaries
 
+- Treat runner image, compiler or toolchain version, scan build mode, and analyzed-language coverage as versioned evaluation inputs. Agent-authored upgrades need intended scan-path evidence and explicit approval for any coverage trade-off, as recorded by the [October 19 topic news collector source](../../../raw/processed/2026-10-19/ai-dev-wiki-topic-news-collector-2026-10-19T180010Z.json).
 - Keep merge-request validation fast enough for review flow, but record the policy, exception owner, expiry, and fallback path when a check exceeds the budget.
 - Select affected checks from dependency or import evidence when available, and run full fallback suites when selection evidence is incomplete.
 - Move slow validation to scheduled or deferred lanes only when failures create owned repair tasks with logs, bisect or reproduction evidence, duplicate suppression, and escalation rules.
@@ -38,6 +39,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Authoritative Sources
 
+- [October 19 topic news collector source](../../../raw/processed/2026-10-19/ai-dev-wiki-topic-news-collector-2026-10-19T180010Z.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
 - [verification tax and acceptance gates](../verification-and-evals/verification-tax-and-acceptance-gates.md)

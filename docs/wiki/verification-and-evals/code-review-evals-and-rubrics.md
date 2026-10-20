@@ -140,6 +140,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 The October 14 raw ingest adds review-capacity, audit, and security-rollout measurement evidence. The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T210852-0400.json) records secondary evidence that generated-code volume can be absorbed by downstream review constraints; use that cautiously unless primary study evidence is later processed. The [October 14 topic news collector source](../../../raw/processed/2026-10-14/ai-dev-wiki-topic-news-collector-2026-10-14T003403Z.json) adds audit events for Code Quality finding dismissals or reopenings and AI Scan metrics for pull-request findings, remediation rate, repository coverage, reporting-period trends, and autofix uptake. Locally, review evals should join finding lifecycle, manual override evidence, AI security-scan effectiveness, remediation follow-through, and human review load before claiming code-review automation improved quality.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) adds a consequential-claim boundary: pair internal rubric scores with a defined independent-review path and auditable disclosure expectation.
+
 ## Practice Boundaries
 
 - Build review eval cases from real or representative changes, not only abstract review questions.
@@ -226,6 +228,7 @@ The October 14 raw ingest adds review-capacity, audit, and security-rollout meas
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [October 11 topic news collector source](../../../raw/processed/2026-10-11/ai-dev-wiki-topic-news-collector-2026-10-11T003423Z.json)

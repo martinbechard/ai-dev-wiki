@@ -31,6 +31,8 @@ The [August 27 leaf update watch source](../../../raw/processed/2026-08-27/ai-de
 
 The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds judge-routing evidence from practitioner eval discussion. When confidence scores route actions, approvals, escalations, or human review, judge calibration should be tied to held-out labels, slice-level reliability, false approvals, abstention, and the concrete decision being gated.
 
+The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json) keeps developer-owned judges distinct from independent assessment for high-consequence safety or release decisions.
+
 ## Practice Boundaries
 
 - Prefer deterministic graders for syntax, imports, schemas, formats, policies, and executable invariants.
@@ -54,6 +56,7 @@ The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai
 
 ## Authoritative Sources
 
+- [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)

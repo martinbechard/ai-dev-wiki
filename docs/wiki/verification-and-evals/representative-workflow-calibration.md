@@ -47,6 +47,8 @@ The [September 28 topic news collector source](../../../raw/processed/2026-09-28
 
 The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-dev-wiki-leaf-update-watch-2026-10-13T062247-0400.json) adds evaluation-sandbox incident evidence. Representative calibration should include adversarial environment boundaries, internet isolation, inter-agent coordination, inherited access, and escalation triggers when a workflow tests agents with tools or simulated security tasks, not only final answer quality or benchmark pass rate.
 
+The [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json) supports calibrating LLM judges with human-defined criteria, labeled examples, held-out thresholds, sampled production outputs, and explicit drift triggers.
+
 ## Practice Boundaries
 
 - Build calibration sets from representative workflow prompts, not only generic public benchmarks.
@@ -76,6 +78,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
