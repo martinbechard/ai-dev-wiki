@@ -1,0 +1,132 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "run_timestamp": "2026-10-20T00:27:31Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-18T00:27:31Z",
+    "end_inclusive": "2026-10-20T00:27:31Z",
+    "rule": "Public sources must display an unambiguous publication or update date within the prior 48 hours. Date-only sources at the lower boundary, missing dates, ambiguous dates, and future-dated sources are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/agent-workflows",
+      "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+      "source_url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "visible_date": "October 19, 2026",
+      "source_type": "primary engineering report",
+      "factual_summary": "Meta describes separating a deterministic orchestration layer from 14 specialist agents. Its router follows a fixed protocol for instructions, duplicate checks, required fields, discovery, reliability gates, delegation, and outcome handling; specialists load narrowly scoped knowledge files on demand.",
+      "why_it_matters_for_ai_assisted_development_practice": "Keep routing, preconditions, and reliability checks deterministic, and give subagents bounded domain context. Version reusable workflow templates and instruction files separately from the router so a new workflow does not require broadening every agent's context.",
+      "named_entities": ["Meta", "thin orchestrator", "specialized subagents"],
+      "upstream_owned_entities": ["Meta"],
+      "local_practice_lens": ["context isolation", "subagent delegation", "deterministic planning loops", "workflow templates", "reliability gates"],
+      "follow_up": "Normal ingest may extract a local thin-orchestrator checklist; retain Meta-specific system scale and implementation facts upstream."
+    },
+    {
+      "topic_root": "docs/wiki/coding-practices",
+      "title": "A pragmatic guide to AI-assisted development",
+      "source_url": "https://thoughtbot.com/blog/a-pragmatic-guide-to-ai-assisted-development",
+      "visible_date": "October 19, 2026",
+      "source_type": "practitioner workflow report",
+      "factual_summary": "Thoughtbot documents a workflow that first makes a project runnable, captures that setup as a reusable skill, loads an issue into a fresh session without immediately implementing it, reproduces the behavior locally, and traces behavior before changing code.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat a repeatable local-run path as a prerequisite for agent verification. Separate issue understanding and reproduction from implementation, and preserve successful environment-discovery work as durable, repository-scoped instructions.",
+      "named_entities": ["thoughtbot", "Claude Code", "reusable run skill"],
+      "upstream_owned_entities": ["Claude Code"],
+      "local_practice_lens": ["AI-assisted TDD", "reproduction before repair", "durable agent instructions", "environment setup", "fresh-session context"],
+      "follow_up": "Ingest only the general run-reproduce-trace workflow; do not duplicate product-specific behavior."
+    },
+    {
+      "topic_root": "docs/wiki/verification-and-evals",
+      "title": "AI Code Review Agents: Teaching AI to Finish Its Work",
+      "source_url": "https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html",
+      "visible_date": "October 20, 2026",
+      "source_type": "practitioner engineering report",
+      "factual_summary": "Icalia Labs describes a seven-step agent workflow: write a plan, independently challenge it, obtain human approval, implement in parallel, run basic build/test/style gates, use an outside model for adversarial review, then repair and repeat until no serious issue remains.",
+      "why_it_matters_for_ai_assisted_development_practice": "Do not let the implementation agent be the final judge. Define a severity stop rule, run deterministic gates before review, and return findings to the verification gate after each repair rather than treating a single review pass as completion.",
+      "named_entities": ["Icalia Labs", "dev-loop", "independent reviewer", "outside auditor"],
+      "upstream_owned_entities": [],
+      "local_practice_lens": ["independent code review", "severity gates", "adversarial evaluation", "human approval", "regression repair loop"],
+      "follow_up": "Assess the public dev-loop repository before adopting any specific benchmark figures; the durable local candidate is the independent-review and stop-rule pattern."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "Developer's guide to implementing MCP apps in Gemini",
+      "source_url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini",
+      "visible_date": "October 19, 2026",
+      "source_type": "primary vendor implementation guide",
+      "factual_summary": "Google Cloud describes an MCP App deployment with a sandboxed UI, private service ingress, workforce OAuth, a separate in-application OAuth layer, least-privilege outbound service identity, and expert approval before high-stakes actions. Imported actions are disabled until explicitly enabled.",
+      "why_it_matters_for_ai_assisted_development_practice": "For governed tool integrations, treat service authentication, end-user authorization, tool enablement, and high-impact approval as distinct controls. Default newly discovered actions to disabled and verify identity boundaries independently of UI sandboxing.",
+      "named_entities": ["Google Cloud", "Gemini Enterprise", "MCP Apps", "Cloud Run", "OAuth"],
+      "upstream_owned_entities": ["Google Cloud", "Gemini Enterprise", "MCP Apps", "Cloud Run"],
+      "local_practice_lens": ["MCP governance", "least privilege", "approval controls", "action allowlists", "identity boundaries"],
+      "follow_up": "Keep platform configuration and MCP App specification coverage upstream; ingest only the control-separation checklist if needed."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "title": "What scopes should a security MCP connector ask for?",
+      "source_url": "https://safeguard.sh/resources/blog/what-scopes-should-a-security-mcp-connector-ask-for",
+      "visible_date": "October 19, 2026; last reviewed October 19, 2026",
+      "source_type": "security practitioner guidance",
+      "factual_summary": "Safeguard recommends beginning MCP security connectors with project-limited read scopes, using incremental elevation for deeper reads or writes, recording which scope authorized each action, reviewing elevation events, and treating scope changes after vendor updates as a new review event.",
+      "why_it_matters_for_ai_assisted_development_practice": "Represent agent-access permissions as a task and project-scoped ladder, not a one-time broad grant. Require named approvers and sandboxed trials for write elevation, retain grant and elevation evidence, and review scope drift during connector updates.",
+      "named_entities": ["Safeguard", "MCP", "authorization specification"],
+      "upstream_owned_entities": ["MCP", "authorization specification"],
+      "local_practice_lens": ["permissions", "approvals", "audit logs", "connector pilots", "scope drift"],
+      "follow_up": "Treat the article's ladder as an example rather than a standard; compare any local policy to the authoritative MCP authorization and security guidance during ingest."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+      "source_url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4/",
+      "visible_date": "October 19, 2026",
+      "reason": "Already captured by the immediately preceding topic collector artifact at raw/2026-10-19/ai-dev-wiki-topic-news-collector-2026-10-19T180010Z.json; avoid duplicating the same dated source."
+    },
+    {
+      "title": "Redesigning source control at Anthropic",
+      "source_url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "visible_date": "Published October 13, 2026; updated October 15, 2026",
+      "reason": "Outside the strict 48-hour window. Anthropic and broad source-control system coverage are upstream-owned."
+    },
+    {
+      "title": "AI coding agents made code generation cheap. Make review the scarce resource.",
+      "source_url": "https://dev.turmansolutions.ai/2026/10/19/ai-coding-agents-made-code-generation-cheap-make-review-the-scarce-resource/",
+      "visible_date": "October 19, 2026",
+      "reason": "The page labels itself an automatically published preview that has not been editor-reviewed and cites secondary comparisons; retain only as an unverified lead."
+    },
+    {
+      "title": "MCP Search and Execute: How Code Mode Gives Agents Better Tools",
+      "source_url": "https://opennash.com/blog/mcp-search-and-execute-how-code-mode-gives-agents-better/",
+      "visible_date": "October 19, 2026",
+      "reason": "Secondary synthesis of older Cloudflare, Datadog, and Anthropic material. It does not establish a distinct primary update, and its broad tool and protocol coverage is upstream-owned."
+    },
+    {
+      "title": "Anthropic commits 5% of shares to public benefit fund, opens Claude values to public consultation, Code Review goes GA",
+      "source_url": "https://www.claudemarketplace.net/digest/oct-19-2026",
+      "visible_date": "October 19, 2026",
+      "reason": "Third-party digest combining multiple vendor claims. Use only to locate direct, dated primary sources; it is not sufficient evidence for durable local guidance."
+    },
+    {
+      "title": "AGENTS.md",
+      "source_url": "https://agents.md/",
+      "visible_date": "No publication or update date visible",
+      "reason": "Search crawl time is not a source publication or update date."
+    }
+  ],
+  "follow_up_notes": [
+    "Collector remains raw-only: do not update docs/wiki or move this artifact to raw/processed in this run.",
+    "The Meta, Google Cloud, MCP, and product/framework facts remain upstream-owned under docs/wiki/federation.md; retained material states only downstream workflow or governance implications.",
+    "For later ingest, prioritize local checklists: bounded-context delegation, runnable-project prerequisites, independent verification with a severity stop rule, action enablement, and scope-elevation evidence.",
+    "No private, proprietary, sensitive, PII, or company-internal local content was sent to external services."
+  ]
+}
