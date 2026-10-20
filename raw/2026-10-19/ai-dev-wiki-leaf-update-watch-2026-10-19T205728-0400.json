@@ -1,0 +1,84 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp": "2026-10-19T20:57:28-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-12T20:57:28-0400",
+    "end_inclusive": "2026-10-19T20:57:28-0400"
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+  ],
+  "source_urls_checked": [
+    "https://arxiv.org/abs/2610.20116",
+    "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508",
+    "https://sourcegraph.com/docs/agentic-batch-changes",
+    "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents",
+    "https://www.agenticarchitectureskills.com/skills"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "transparent-compaction-2026-10-14",
+      "source_url": "https://arxiv.org/abs/2610.20116",
+      "visible_publication_date": "2026-10-14T12:43:44Z",
+      "leaf_ids": ["docs/wiki/context-architecture/context-selection-and-compaction.md"],
+      "factual_summary": "The paper reports that a deterministic transparent-compaction method preserved user and assistant prose, explicitly marked stripped information, and matched or outperformed tested alternatives on commitment and fact recall for lightweight coding agents.",
+      "why_it_matters": "It is evidence to assess a local rule that compaction must preserve explicit commitments and expose omissions instead of silently replacing them with opaque summaries.",
+      "named_entities": ["Pi coding agent", "transparent-compact", "Qwen3.8-27B"],
+      "upstream_owned_entities": ["Pi coding agent", "Qwen3.8-27B"]
+    },
+    {
+      "id": "llm-judge-lifecycle-2026-10-14",
+      "source_url": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508",
+      "visible_publication_date": "2026-10-14",
+      "leaf_ids": [
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "factual_summary": "Netflix describes an LLM-as-a-judge lifecycle with human-defined criteria, labeled benchmark data, held-out alignment thresholds, human-approved updates, weekly sampled production outputs, and retraining when drift exceeds a threshold.",
+      "why_it_matters": "It supplies a downstream practice example for task-specific judge calibration, production sampling, reasoning alignment, and explicit human ownership of promotion and drift response.",
+      "named_entities": ["Netflix Technology Blog", "LLM-as-a-Judge", "RART"],
+      "upstream_owned_entities": ["Netflix Technology Blog", "LLM-as-a-Judge", "RART"]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.agenticarchitectureskills.com/skills",
+      "reason": "Visible page publication and last-update date is 2026-09-17, outside the strict seven-day window despite a newer search snippet."
+    },
+    {
+      "source_url": "https://sourcegraph.com/blog/introducing-agentic-batch-changes",
+      "reason": "Visible publication date is 2026-09-14, outside the window; the documentation page showed crawl freshness but no visible substantive update date."
+    },
+    {
+      "source_url": "https://tryhamster.com/concepts/prd-template-for-ai-coding-agents",
+      "reason": "Visible last-updated date is 2026-10-01, outside the window."
+    },
+    {
+      "source_url": "https://contextosai.com/docs/foundations/agentic-context-engineering",
+      "reason": "Search freshness conflicted with the page's visible foundational-spec review date of 2026-09-03; the visible source date is outside the window."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/agentic-ai-is-breaking-the-traditional-software-development-rules",
+      "reason": "In-window commentary but no distinct, source-backed local-practice change beyond broad ecosystem framing; no qualifying durable leaf update."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only watch: no docs/wiki pages were changed.",
+    "Keep vendor, model, product, protocol, and method background upstream; use the recorded local-practice implications during normal ingest."
+  ]
+}
