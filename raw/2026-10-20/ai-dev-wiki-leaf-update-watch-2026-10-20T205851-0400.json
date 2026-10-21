@@ -1,0 +1,104 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-20T20:58:51-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-13T20:58:51-0400",
+    "end_inclusive": "2026-10-20T20:58:51-0400",
+    "policy": "Only visibly published or substantively updated public sources strictly inside the seven-day window qualify."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+    "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+    "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "https://openai.com/index/low-resource-programming-languages/",
+    "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+    "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/",
+    "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+    "https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning",
+    "https://openai.com/index/introducing-the-agents-api/"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "github-agentic-autofix-ga-2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "published_at": "2026-10-15",
+      "factual_summary": "GitHub made Agentic Autofix generally available. It explores relevant files, proposes a fix, reruns CodeQL to validate it, and opens a draft pull request with the rationale and validation steps; a run may cover up to 25 default-branch alerts.",
+      "why_it_matters": "The product detail is upstream-owned, but the local practice signal is durable: agent-generated remediation still needs an explicit reviewer gate, retained validation evidence, scoped batch limits, and cost/permission checks.",
+      "leaf_ids": ["docs/wiki/agent-workflows/event-triggered-agent-workflows.md", "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md", "docs/wiki/application-patterns/platform-native-agent-mutation.md", "docs/wiki/coding-practices/pre-pr-independent-review.md", "docs/wiki/governance-and-risk/ai-code-evidence-packages.md"],
+      "named_entities": ["GitHub", "GitHub Copilot", "Agentic Autofix", "CodeQL"],
+      "upstream_owned_entities": ["GitHub", "GitHub Copilot", "Agentic Autofix", "CodeQL"]
+    },
+    {
+      "id": "github-copilot-slack-teams-multirepo-2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+      "published_at": "2026-10-15",
+      "factual_summary": "GitHub in Slack and Teams now supports work across multiple repositories in one conversation, including issue creation, pull-request tracking, and cross-repository investigation; shared messages and threads may be used as context.",
+      "why_it_matters": "The local handoff and workspace implication is to state repository scope, provenance, and authorization boundaries explicitly when a shared conversation can span repositories.",
+      "leaf_ids": ["docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md", "docs/wiki/agent-workflows/delegated-coding-handoffs.md", "docs/wiki/agent-workflows/persistent-agent-workspaces.md"],
+      "named_entities": ["GitHub", "GitHub Copilot", "Slack", "Microsoft Teams"],
+      "upstream_owned_entities": ["GitHub", "GitHub Copilot", "Slack", "Microsoft Teams"]
+    },
+    {
+      "id": "anthropic-independent-evaluators-2026-10-15",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-15",
+      "updated_at": "2026-10-16",
+      "factual_summary": "Anthropic reports embedded, employee-like evaluation access for a METR team and describes access, independence, publication-right, and confidentiality constraints across three evaluator tiers.",
+      "why_it_matters": "The local takeaway is to define evaluator independence, bounded access, publication rights, redaction rules, and evidence retention rather than treating an evaluation as independent by label alone.",
+      "leaf_ids": ["docs/wiki/governance-and-risk/ai-code-evidence-packages.md", "docs/wiki/governance-and-risk/commit-level-ai-governance.md", "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md", "docs/wiki/verification-and-evals/verification-loops-and-evals.md"],
+      "named_entities": ["Anthropic", "METR", "SecureBio", "Accenture", "Hugging Face"],
+      "upstream_owned_entities": ["Anthropic", "METR", "SecureBio", "Accenture", "Hugging Face"]
+    },
+    {
+      "id": "openai-low-resource-programming-evals-2026-10-19",
+      "source_url": "https://openai.com/index/low-resource-programming-languages/",
+      "published_at": "2026-10-19",
+      "factual_summary": "OpenAI released MultiLangBench and a COBOL migration evaluation. The former measures extended coding-session behavior with a shared SQLite-file interface; the latter requires byte-for-byte output parity to count a migration as successful.",
+      "why_it_matters": "The downstream evaluation lesson is to test observable behavior and preservation constraints over an end-to-end task, then retain expert review for production changes instead of relying on model-level headline scores.",
+      "leaf_ids": ["docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md", "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md", "docs/wiki/verification-and-evals/verification-loops-and-evals.md"],
+      "named_entities": ["OpenAI", "MultiLangBench", "COBOL"],
+      "upstream_owned_entities": ["OpenAI", "MultiLangBench"]
+    },
+    {
+      "id": "github-copilot-model-policy-api-2026-10-19",
+      "source_url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+      "published_at": "2026-10-19",
+      "factual_summary": "GitHub made REST GET and PATCH endpoints generally available for Copilot model policies at enterprise, enterprise-team, agent-app, and organization levels, including delegation from enterprise to lower scopes.",
+      "why_it_matters": "The local governance implication is to record policy ownership and inheritance for approved models, and to include policy snapshots or API evidence in governance evidence packages when a model choice affects a delivery decision.",
+      "leaf_ids": ["docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md", "docs/wiki/governance-and-risk/ai-code-evidence-packages.md", "docs/wiki/governance-and-risk/commit-level-ai-governance.md"],
+      "named_entities": ["GitHub", "GitHub Copilot"],
+      "upstream_owned_entities": ["GitHub", "GitHub Copilot"]
+    }
+  ],
+  "excluded_candidates": [
+    {"source_url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/", "visible_date": "2026-10-01", "reason": "Outside the strict seven-day cutoff."},
+    {"source_url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5/", "visible_date": "2026-10-09", "reason": "Outside the strict seven-day cutoff."},
+    {"source_url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/", "visible_date": "2026-10-07", "reason": "Outside the strict seven-day cutoff."},
+    {"source_url": "https://docs.github.com/en/code-security/how-tos/manage-security-alerts/manage-code-scanning-alerts/managing-access-to-agentic-autofix-for-code-scanning", "reason": "No visible publication or substantive update date; the dated changelog was used instead."},
+    {"source_url": "https://openai.com/index/introducing-the-agents-api/", "visible_date": "2026-09-10", "reason": "Outside the strict seven-day cutoff."}
+  ],
+  "follow_up_notes": [
+    "Do not synthesize broad vendor, product, model, benchmark, or tool background into this downstream wiki; route that context to the upstream AI wiki.",
+    "During a later ingest, assess only the identified local-practice implications and retain source-specific claims as attributed evidence."
+  ],
+  "blockers": []
+}
