@@ -29,6 +29,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Practice Boundaries
 
+- For security-alert remediation, bind the agent to a bounded default-branch alert set, preserve the proposed patch and scanner rerun as evidence, and expose the outcome as a draft pull request rather than an unattended merge.
 - Prefer platform-native mutation APIs when post-agent maintenance should happen in the platform's normal UI.
 - Validate each phase before mutation and verify the result after mutation.
 - Preserve the platform's ordinary objects, events, queries, and data shape instead of bypassing them with a generated parallel codebase.
@@ -39,6 +40,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [September 15 topic news collector source](../../../raw/processed/2026-09-15/ai-dev-wiki-topic-news-collector-2026-09-15T003123Z.json)
 - [September 29 leaf update watch source](../../../raw/processed/2026-09-29/ai-dev-wiki-leaf-update-watch-2026-09-29T210353-0400.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
@@ -68,6 +70,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with bounded alert remediation, scanner validation, and draft-change boundaries.
 - Maintained on 2026-09-29 with deterministic-execution, governed-data, safety-boundary, enterprise-object, and validation-path evidence.
 - Maintained on 2026-10-07 with editor-platform mutation authority, remote-delegation, worktree-reuse, MCP-configuration, model-orchestration, and enterprise-default evidence.
 - Created on 2026-09-14 from platform-native MCP mutation evidence in the September 15 topic news collector.

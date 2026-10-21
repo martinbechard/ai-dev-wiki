@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds two evidence boundaries. Agentic remediation packages should retain the affected scope, rationale, draft change, and fresh scanner result; evaluator packages should separately record access bounds, independence conditions, publication rights, redaction rules, and retained evidence rather than using an “independent” label as a substitute for the underlying controls.
+
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds software-audit-trail evidence. Generated-code evidence packages should preserve who or what made the change, source evidence, prompt or spec input, review path, linked work item, security or privacy checks, acceptance decision, and the audit trail that lets a future reviewer reconstruct why the change was trusted.
 
 AI code evidence packages preserve the model, source, review, and security records needed before generated code is trusted. They make AI-generated or AI-modified code visible as unverified input until normal review, testing, and risk-specific approval have run.
@@ -60,6 +62,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 21 topic news collector source](../../../raw/processed/2026-09-21/ai-dev-wiki-topic-news-collector-2026-09-22T003230Z.json)
@@ -101,6 +104,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with remediation and independent-evaluator evidence-package boundaries.
 - Maintained on 2026-10-09 with software-audit-trail, source-evidence, prompt/spec input, review-path, work-item, security/privacy check, and acceptance-decision evidence.
 - Maintained on 2026-10-14 with telemetry-class, user-attribution, AI-scan metric, quality-finding override, and remediation-status evidence.
 - Maintained on 2026-10-13 with generated-review-claim, verification-scope, unchecked-area, and human-risk-acceptance evidence.

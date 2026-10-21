@@ -49,6 +49,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Practice Boundaries
 
+- When a collaboration thread spans repositories, hand off explicit repository scope, source-message provenance, authorization, and the permitted issue or pull-request actions; do not infer that a visible shared thread grants cross-repository mutation authority.
 - Report changed files, verification commands, relevant outputs, and unresolved evidence gaps.
 - Distinguish verified completion from blocked or unverified claims.
 - Carry human-owned decisions into the handoff instead of silently resolving them.
@@ -78,6 +79,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [human agent approval boundaries](../adoption-and-operating-model/human-agent-approval-boundaries.md)
@@ -133,6 +135,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with cross-repository conversation scope, provenance, and authorization evidence.
 - Maintained on 2026-10-12 with task-contract, scoped-sandbox, non-writable-gate, and source-linked handoff packet evidence.
 - Maintained on 2026-09-29 with trust/action/access delegation controls, typed handoff invariants, artifact references, ingress validation, fail-closed behavior, and fresh-context review evidence.
 - Maintained on 2026-10-07 with trusted-workspace, remote-execution, final-answer-forwarding, reusable-worktree, and MCP-configuration handoff evidence.

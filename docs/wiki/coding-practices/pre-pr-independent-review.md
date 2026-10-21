@@ -42,6 +42,7 @@ The October 13 [leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Practice Boundaries
 
+- Treat an agent-created remediation pull request as a proposal: reviewers need the scoped alert set, stated rationale, and fresh deterministic scan result before they can accept the change.
 - Review the exact local diff, commit, or staged change that will become the pull request.
 - Use an independent reviewer rather than asking the authoring agent to approve its own work.
 - Split findings into safe agent-fix items and human-decision items.
@@ -60,6 +61,7 @@ The October 13 [leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -97,6 +99,7 @@ The October 13 [leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with reviewer-gate evidence for agent-created remediation proposals.
 - Maintained on 2026-09-29 with fresh-context review, reproducible-finding, failing-test, short-feature-note, and oversized-AI-PR rejection evidence.
 - Maintained on 2026-10-07 with reviewer-comprehension, scope-explanation, documentation-first intent, specialist-review, and first-pass-AI-triage evidence.
 - Maintained on 2026-10-14 with generated-code volume, revision-count, reviewer-load, requester-eligibility, billing-owner, and specialist-route evidence.

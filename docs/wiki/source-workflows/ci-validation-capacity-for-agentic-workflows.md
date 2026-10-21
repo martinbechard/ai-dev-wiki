@@ -28,6 +28,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Practice Boundaries
 
+- Do not increase agent concurrency merely because code generation is faster. Expand autonomy only when standards, environment setup, context sources, reviewer capacity, security checks, release approvals, and release evidence can absorb the resulting change volume.
 - Treat runner image, compiler or toolchain version, scan build mode, and analyzed-language coverage as versioned evaluation inputs. Agent-authored upgrades need intended scan-path evidence and explicit approval for any coverage trade-off, as recorded by the [October 19 topic news collector source](../../../raw/processed/2026-10-19/ai-dev-wiki-topic-news-collector-2026-10-19T180010Z.json).
 - Keep merge-request validation fast enough for review flow, but record the policy, exception owner, expiry, and fallback path when a check exceeds the budget.
 - Select affected checks from dependency or import evidence when available, and run full fallback suites when selection evidence is incomplete.
@@ -39,6 +40,7 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json)
 - [October 19 topic news collector source](../../../raw/processed/2026-10-19/ai-dev-wiki-topic-news-collector-2026-10-19T180010Z.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
@@ -69,5 +71,6 @@ The [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with delivery-flow, review-capacity, and documented-control-point evidence.
 - Created on 2026-10-07 from October 7 raw-source evidence about merge-request CI budgets, selective validation, scheduled repair tasks, flaky-test quarantine, validation-cost measurement, and red-build ownership.
 - Maintained on 2026-10-07 with self-healing CI/CD diagnosis, constrained patch, deterministic validation, diff inspection, and merge/deployment authority evidence.

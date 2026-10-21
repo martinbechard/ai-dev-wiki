@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds low-resource programming and migration-evaluation evidence. A trajectory eval should use an observable task interface over a sustained session and state its preservation oracle explicitly; byte-level output parity is a useful strict oracle for a migration, not a general proxy for production acceptability.
+
 Agent evaluation should inspect the path an agent took, not only the final answer or merged diff. The local evaluation object includes task framing, retrieved context, reasoning-visible summaries, tool calls, execution order, state transitions, approval waits, errors, retries, generated artifacts, and final verification.
 
 The [topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) records multiple public signals that agent monitoring, observability, and evals are converging around trajectory evidence. Vendor, benchmark, and product pages stay upstream-owned; this page owns the local practice of using trajectory evidence to decide whether an agent workflow is reliable.
@@ -149,6 +151,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
@@ -222,6 +225,7 @@ The [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with sustained-task-interface and explicit preservation-oracle evaluation evidence.
 - Maintained on 2026-10-06 with judge-only interval, execution-backed interval, calibration-transfer, and false-acceptance evidence.
 - Maintained on 2026-09-29 with named-score, role-weighted, artifact-quality, efficiency, production-dataset, regression-test, and trace-inspection evidence.
 - Maintained on 2026-09-15 with independent-assurance, visual-validation, governance-readiness, production-gate, kill-switch, and specialized technical-debt audit evidence.

@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds a strict migration-evaluation boundary: measure observable end-to-end behavior and explicitly preserve the properties that matter, then retain expert review for production acceptance rather than substituting a headline score or parity check for a full release decision.
+
 The [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) adds CI evidence-lifecycle signals. Checks, workflow runs, statuses, coverage-upload skips, scheduled code-scanning start conditions, and async merge request IDs are verification state, not background platform trivia, because coding-agent repair loops depend on knowing whether evidence is absent, skipped, retained, pending, or failed.
 
 The October 6 sources add proof adequacy and proof-of-execution evidence:
@@ -181,6 +183,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
 - [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-dev-wiki-leaf-update-watch-2026-10-06T210155-0400.json)
@@ -274,6 +277,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with end-to-end behavior, explicit preservation, and expert-production-review evidence.
 - Maintained on 2026-10-02 with CI retention, coverage-skip interpretation, code-scanning schedule, async-merge polling, and verification-state evidence.
 - Maintained on 2026-10-07 with proof adequacy, reusable verification guidance, checksum-style done signals, and shortcut-resistant execution evidence.
 - Maintained on 2026-09-22 with authorization, action-trace, review-state, acceptance decision, signoff, and later-review evidence.

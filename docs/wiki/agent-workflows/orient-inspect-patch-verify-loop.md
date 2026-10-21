@@ -25,6 +25,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Practice Boundaries
 
+- For automated remediation, keep the inspect-patch-verify loop bounded to the affected alert set, rerun the relevant deterministic scanner after the patch, and return a draft review artifact with the rationale and validation receipt.
 - Orient from repository state, procedures, and existing wiki pages before proposing changes.
 - Inspect the files or runtime surfaces that control the behavior.
 - Plan visibly when scope or sequencing matters.
@@ -39,6 +40,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
 - [federation.md](../federation.md)
@@ -71,6 +73,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with bounded automated-remediation, scanner-rerun, and draft-review evidence.
 - Created on 2026-06-23 from the local source decks covering agent loops, tool calls, visible planning, and subagent use.
 - Split on 2026-06-23 so RPI lifecycle, use-compose-build selection, subagent coordination, and handoffs live in durable leaf pages.
 - Maintained on 2026-06-28 with cost-sensitive evidence gathering, refinement, verification, and stop decisions.

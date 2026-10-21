@@ -29,6 +29,7 @@ This page owns commit-level governance. [Governance controls for agents](governa
 
 ## Practice Boundaries
 
+- Where model policy affects a delivery decision, retain the approved-model policy owner, inheritance scope, and a decision-time policy snapshot alongside the normal repository and pull-request governance evidence.
 - Preserve approved-model policy evidence when the model route affects code acceptance.
 - Attach AI-use traces to the commit, pull request, or changeset under review.
 - Record who or what generated, modified, reviewed, and accepted the code when that attribution affects accountability.
@@ -42,6 +43,7 @@ This page owns commit-level governance. [Governance controls for agents](governa
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
@@ -74,6 +76,7 @@ This page owns commit-level governance. [Governance controls for agents](governa
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with inherited approved-model policy evidence for delivery decisions.
 - Maintained on 2026-09-15 with central agent-operation policy, repository taxonomy, and enforced security-baseline governance evidence.
 - Maintained on 2026-10-14 with authenticated-pusher, commit-metadata mismatch, quality-finding audit, and manual-override evidence.
 - Maintained on 2026-09-22 with change-level agent-session, authorization, execution, review, and acceptance-chain evidence.

@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds cross-repository collaboration and model-policy evidence. When a shared conversation can reach multiple repositories, the agreement should name repository scope, context provenance, and authorization boundaries; when model choice is policy-controlled, it should also record the policy owner, inheritance path, and decision-time policy snapshot.
+
 The September 25 raw sources add governance and review-load operating evidence. The [leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json) reinforces that agent adoption agreements need autonomy tiers, escalation paths, runtime records, budget limits, workstation package controls, and explicit review-toil ownership. The [topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds review-effort defaults, sandbox policy, proof-of-presence boundaries, and verification bottlenecks as team-level agreements rather than individual preference.
 
 Adoption operating agreements define how humans and agents work together as AI-assisted development scales. The agreement is a map of local practice boundaries rather than a substitute for the detailed leaves.
@@ -112,6 +114,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 
@@ -170,6 +173,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with cross-repository conversation and inherited model-policy agreement evidence.
 - Maintained on 2026-09-29 with pre-write ticket, architecture-decision, protected-path, CI-merge-gate, and generated-document drift-check evidence.
 - Maintained on 2026-09-25 with autonomy-tier, escalation, runtime evidence, budget, sandbox, proof-of-presence, review-load, and verification-bottleneck evidence.
 

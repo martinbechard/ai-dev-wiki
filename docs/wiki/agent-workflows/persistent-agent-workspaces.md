@@ -60,6 +60,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Practice Boundaries
 
+- Do not let a shared conversation obscure workspace boundaries: retain the repository set, originating message or thread, allowed actions, and review handoff with any workspace that investigates or changes more than one repository.
 - Store goal state, active plan, source links, changed files, verification commands, and unresolved questions where the next human or agent can inspect them.
 - Split long-running work into verifiable steps with explicit acceptance evidence before moving to the next step.
 - Re-orient from the live repository and current instructions at each resume point.
@@ -94,6 +95,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
@@ -152,6 +154,7 @@ The [October 6 leaf update watch source](../../../raw/processed/2026-10-06/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with multi-repository conversation-to-workspace boundary evidence.
 - Maintained on 2026-10-09 with repository-guide, prompt, skill, task-workspace, sandbox, egress, mock-service, browser-evidence, preview-URL, and stack-position evidence.
 - Maintained on 2026-09-29 with reusable cloud-environment, shared-setting, permission, secret, worktree, session-resume, review-surface, and security-scan evidence.
 - Maintained on 2026-10-07 with shared worktree folders, ignored-folder reuse, trusted roots, managed AI defaults, and enterprise version requirement evidence.

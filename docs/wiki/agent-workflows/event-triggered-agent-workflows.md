@@ -35,6 +35,10 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 ## Practice Boundaries
 
+The [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json) adds autonomous-dispatch admission evidence. Before a scheduled issue-to-agent workflow starts, require a short eligible candidate set, available draft-review capacity, healthy prerequisite checks, rate-limit headroom, explicitly safe write actions, and a run receipt that makes anomalous turns reviewable.
+
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds draft-remediation capacity evidence. An alert-driven repair flow should cap the candidate batch, leave its proposed change in a draft review surface, rerun the relevant deterministic scanner, and retain the rationale and validation receipt before a reviewer decides whether to merge.
+
 - Name the event, issue, alert, CI signal, schedule, or webhook that started the agent run.
 - Bind the trigger to repository, branch, workspace, environment, service, and data-scope limits before tools execute.
 - Define allowed actions separately for inspection, drafting, patching, dependency changes, external-system calls, and public output.
@@ -54,6 +58,8 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json)
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [July 23 topic news collector source](../../../raw/processed/2026-07-23/ai-dev-wiki-topic-news-collector-2026-07-23T203146-0400.json)
 - [July 24 topic news collector source](../../../raw/processed/2026-07-24/ai-dev-wiki-topic-news-collector-2026-07-24T203056-0400.json)
@@ -99,6 +105,8 @@ The [September 1 topic news collector source](../../../raw/processed/2026-09-01/
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with autonomous-dispatch admission, safe-write, and run-receipt evidence.
+- Maintained on 2026-10-20 with capped draft-remediation, scanner-rerun, and reviewer-gate evidence.
 - Maintained on 2026-08-29 with AI-native event-source, business-rule, approval-point, automation-dependency, boundary, and completion-evidence signals.
 - Maintained on 2026-07-23 with issue-to-agent handoff evidence, rationale, confidence, progress streams, isolated execution, and review gates.
 - Maintained on 2026-07-24 with CI repair PR-on-PR, branch-control, progress-stream, steering-comment, and review-request guidance.

@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) reinforces that research and implementation plans need observable preservation constraints. Migration or maintenance work should specify its end-to-end task interface, exact output or behavior parity where relevant, and the expert review that decides whether production evidence is sufficient.
+
 Research, plan, implement, and review is the recurring lifecycle shape for professional agent work. Research gathers codebase and requirement evidence without changing files, planning makes the implementation path explicit, implementation remains supervised, and review validates the result against repository standards.
 
 The [Hypervelocity Engineering source](../../../raw/processed/link-aliases/hypervelocity-engineer-edandersen.md) describes RPI as a structured agent-based lifecycle, and the [HVE Core source](../../../raw/processed/microsoft-hve-core.md) packages agents, prompts, instructions, and skills around repeatable workflow entry points. This page keeps the local lifecycle lens without turning HVE Core itself into a local ecosystem entity.
@@ -64,6 +66,7 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Authoritative Sources
 
+- [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [Hypervelocity engineer source](../../../raw/processed/link-aliases/hypervelocity-engineer-edandersen.md)
 - [HVE Core source](../../../raw/processed/microsoft-hve-core.md)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
@@ -101,6 +104,7 @@ The [October 4 topic news collector source](../../../raw/processed/2026-10-04/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with end-to-end interface, preservation-constraint, and expert-review evidence.
 - Created on 2026-06-23 from source-backed RPI and HVE workflow-packaging guidance.
 - Maintained on 2026-07-27 with asynchronous research report review and execution-boundary selection guidance.
 - Maintained on 2026-07-30 with explicit control-plane phases, memory boundaries, and human gate evidence.

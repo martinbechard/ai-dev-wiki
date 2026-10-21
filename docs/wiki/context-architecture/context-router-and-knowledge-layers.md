@@ -52,6 +52,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Pattern Leaves
 
+The [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json) adds a product-positioning signal for shared knowledge layers. Treat a shared semantic layer as a governed, multi-surface context source with accountable inputs, access boundaries, refresh rules, retrieval provenance, and independent authorization checks; the vendor product and protocol background remain upstream-owned.
+
 - [thin-context-router.md](thin-context-router.md) keeps the root guidance file short and task-oriented.
 - [rules-and-knowledge-layers.md](rules-and-knowledge-layers.md) separates durable conventions from stable project facts.
 - [lifespan-organized-documentation.md](lifespan-organized-documentation.md) separates active plans, decisions, references, and archive history.
@@ -82,6 +84,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
@@ -128,6 +131,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-20 with shared semantic-layer accountability, refresh, provenance, and authorization evidence.
 - Maintained on 2026-10-18 with explicit-plan, bounded-environment, and verified-knowledge-lifecycle evidence.
 
 - Maintained on 2026-09-21 with refreshable repository-view, delegated-reading, and observation-compaction routing evidence.
