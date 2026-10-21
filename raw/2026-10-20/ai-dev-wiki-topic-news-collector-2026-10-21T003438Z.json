@@ -1,0 +1,140 @@
+{
+  "artifact_type": "ai-dev-wiki-topic-news-collector",
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-10-21T00:34:38Z",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-19T00:34:38Z",
+    "end_inclusive": "2026-10-21T00:34:38Z",
+    "policy": "Include only public sources with a visible publication or update date strictly inside the two-day window. Date-only candidates at the lower boundary are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "wiki_coverage_checked": {
+    "local": [
+      "docs/wiki/federation.md",
+      "docs/wiki/topic-index.md"
+    ],
+    "upstream": [
+      "../ai-wiki/docs/wiki/topic-index.md"
+    ],
+    "federation_decision": "The upstream AI wiki owns broad companies, products, models, developer tools, agentic frameworks, MCP servers, and technique background. This artifact retains only local practice implications."
+  },
+  "qualifying_updates": [
+    {
+      "id": "github-agentic-workflow-queue-gates-2026-10-20",
+      "topic_root": "docs/wiki/agent-workflows",
+      "source_url": "https://github.github.com/gh-aw/blog/2026-10-20-agent-of-the-day/",
+      "source_title": "Agent of the Day – October 20, 2026",
+      "visible_date": "2026-10-20",
+      "source_type": "official project blog",
+      "factual_summary": "GitHub Agentic Workflows documents a scheduled issue-to-coding-agent workflow that pauses when draft-PR capacity is reached, no candidate issue exists, required checks are failing, or rate-limit signals appear. Its audited run used narrowly scoped comment and assignment outputs through a single safe-output surface.",
+      "practice_implication": "Treat autonomous backlog dispatch as a bounded queue: prepare a short candidate set, cap concurrent agent work, require healthy prerequisite checks, and restrict agent writes to explicitly allowed output actions. Preserve run evidence so anomalous turns, prompts, or tool breadth can be reviewed.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "Copilot",
+        "Issue Monster",
+        "safeoutputs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot",
+        "Model Context Protocol"
+      ],
+      "upstream_routing_note": "Do not create a local product or MCP-server page. The downstream candidate is a workflow-pattern synthesis about admission gates, bounded write actions, and run evidence."
+    },
+    {
+      "id": "gitlab-ai-native-engineering-review-capacity-2026-10-20",
+      "topic_root": "docs/wiki/adoption-and-operating-model",
+      "source_url": "https://about.gitlab.com/blog/redesign-how-your-team-ships-software-with-ai-agents/",
+      "source_title": "Redesign how your team ships software with AI agents",
+      "visible_date": "2026-10-20",
+      "source_type": "official vendor engineering blog",
+      "factual_summary": "GitLab frames AI-native engineering as redesigning delivery flow, not merely accelerating code generation. It identifies undocumented standards, difficult-to-start environments, and person-held context as delivery stalls, and calls for explicit human-control, review, security-check, and release-approval decisions.",
+      "practice_implication": "Measure whether review and verification capacity can absorb agent-generated change volume before increasing autonomy. Make standards, environment setup, context sources, approval ownership, and release evidence explicit; otherwise faster code generation merely moves the bottleneck downstream.",
+      "named_entities": [
+        "GitLab",
+        "AI-Native Engineering Playbook",
+        "IT Revolution"
+      ],
+      "upstream_owned_entities": [
+        "GitLab"
+      ],
+      "upstream_routing_note": "GitLab product and company facts belong upstream. The local candidate is an adoption-and-operating-model lens for verification capacity and documented control points."
+    },
+    {
+      "id": "neo4j-shared-knowledge-layer-practice-2026-10-20",
+      "topic_root": "docs/wiki/context-architecture",
+      "source_url": "https://neo4j.com/press-releases/neo4j-context-engine/",
+      "source_title": "Neo4j Context Engine Launches to Create AI Knowledge Layer and Enhance Agent Performance",
+      "visible_date": "2026-10-20",
+      "source_type": "official vendor press release",
+      "factual_summary": "Neo4j announced a context-engine product positioned as a reusable shared knowledge layer for agents and as a configuration point for agents, MCP servers, and developer tools. The source is a product announcement, not an independent efficacy evaluation.",
+      "practice_implication": "When several agent surfaces use organizational knowledge, define a governed shared semantic layer with accountable sources, access boundaries, and refresh rules instead of copying opaque context into each prompt or tool configuration. Validate retrieval provenance and authorization independently of the vendor claim.",
+      "named_entities": [
+        "Neo4j",
+        "Neo4j Context Engine",
+        "Model Context Protocol"
+      ],
+      "upstream_owned_entities": [
+        "Neo4j",
+        "Neo4j Context Engine",
+        "Model Context Protocol"
+      ],
+      "upstream_routing_note": "The product, company, and MCP background are upstream-owned. Retain only the downstream context-governance implication, clearly attributed as a product-positioning signal."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news?cam=claude",
+      "visible_date": "2026-10-18",
+      "reason": "Outside the strict two-day window."
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "visible_date": "2026-09-10",
+      "reason": "Outside the strict two-day window; broad product and harness coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://openai.com/index/unlocking-the-codex-harness/",
+      "visible_date": "2026-02-04",
+      "reason": "Outside the strict two-day window; broad product and harness coverage is upstream-owned."
+    },
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "visible_date": "2026-10 (month only)",
+      "reason": "Ambiguous publication date; cannot prove it falls inside the window."
+    },
+    {
+      "source_url": "https://www.linuxfoundation.org/webinars/how-context-works-for-long-running-agents-from-cold-start-to-resume?hsLang=en",
+      "visible_date": "2026-10-20",
+      "reason": "Event announcement rather than a published practice result; do not treat planned demonstrations as evidence of operational outcomes."
+    },
+    {
+      "source_url": "https://www.stork.ai/blog/anthropic-barely-reads-its-ais-code-heres-why",
+      "visible_date": "2026-10-19",
+      "reason": "Secondary commentary where the cited underlying operating claims were not independently verified in this run."
+    },
+    {
+      "source_url": "https://www.tomshardware.com/tech-industry/cryptomining/claude-code-ai-agent-caught-a-crypto-miner-hiding-on-a-developers-overheating-mac-xmrig-task-was-hogging-about-1175-percent-cpu-roughly-12-cores-pushing-temps-to-112-degrees",
+      "visible_date": "2026-10-19T11:36:20Z",
+      "reason": "Single-user anecdote and secondary report; insufficient for a durable workflow recommendation."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact in raw until a separate ingest decides whether the three distinct local implications merit updates to durable leaves.",
+    "If ingested, link the GitHub queue-gating signal to agent-workflow admission and audit practices; link the GitLab signal to verification capacity and adoption controls; link the Neo4j signal only as attributed evidence for governed shared context and retrieval provenance.",
+    "Do not duplicate vendor, product, framework, MCP-server, or broad technique background in this downstream wiki."
+  ],
+  "privacy_and_scope": "All material came from public web pages. No local private, proprietary, sensitive, or personal data was sent to external services. The collector did not modify docs/wiki or raw/processed."
+}
