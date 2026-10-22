@@ -9,6 +9,14 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) reinforces that these are auditable supply-chain inputs because they can expand executable instruction and endpoint privilege:
+
+- Installed skills.
+- Repository instruction bundles.
+- [MCP configuration](../../../upstream-ai-wiki/techniques/mcp-protocol-versioning.md).
+
+Review provenance and permissions independently from ordinary user access, and do not generalize vendor telemetry into a population estimate.
+
 The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) adds license-policy evidence for agent-proposed dependency changes. Before merge, run the applicable dependency and license-policy checks, retain the exception or approval when a package is not compliant, and treat an agent-accessible policy query as a guardrail rather than proof of provenance, security, or project fit. GitHub product details remain upstream-owned.
 
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) and [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) add AI-built-code audit and agentic-enterprise security evidence. Local controls should treat functional test success as insufficient for secrets, IAM, CI, container, dependency, and repository-history risk, and should preserve attacker-perspective review evidence before production promotion.
@@ -192,6 +200,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
@@ -295,6 +304,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-21 with skill, instruction-bundle, and MCP-configuration supply-chain controls; next check should verify their inventory and permission evidence remain current.
 - Maintained on 2026-10-18 with agent dependency license-policy, exception-evidence, and merge-gate guidance.
 
 - Maintained on 2026-10-12 with AI-built-code audit, IAM, CI, container, repository-history, and attacker-perspective review evidence.

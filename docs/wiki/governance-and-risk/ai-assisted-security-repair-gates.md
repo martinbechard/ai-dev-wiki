@@ -9,6 +9,15 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) adds coordinated-disclosure lifecycle evidence. An AI-assisted vulnerability finding remains advisory until:
+
+- Maintainers own the release decision.
+- Fixes and mitigations are independently prepared and tested.
+- Affected-version guidance is available to operators.
+- Disclosure coordination is complete.
+
+[OpenAI](../../../upstream-ai-wiki/companies/openai.md) and [OpenAI Codex](../../../upstream-ai-wiki/developer-tools/openai-codex.md) background remain upstream-owned; PHP is a source-specific affected-technology reference rather than local entity coverage.
+
 The [October 16 topic news collector source](../../../raw/processed/2026-10-16/ai-dev-wiki-topic-news-collector-2026-10-16T003600Z.json) adds general-availability autofix evidence. A controlled remediation loop needs policy enablement, a billing and compute budget, alert and code-search scope, generated-fix rationale, scanner rerun output, and a draft-pull-request handoff; none of these convert the generated proposal into merge authority.
 
 AI-assisted security repair needs stricter gates than ordinary feature work because the output can affect vulnerability disclosure, maintainer trust, CI behavior, and downstream users. The local pattern is to treat the agent as a drafter and investigator while humans or trusted security reviewers own vulnerability validation, scope, disclosure decisions, and final acceptance.
@@ -115,6 +124,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 16 topic news collector source](../../../raw/processed/2026-10-16/ai-dev-wiki-topic-news-collector-2026-10-16T003600Z.json)
@@ -173,6 +183,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-21 with maintainer-led coordinated-disclosure, mitigation-preparation, and affected-version guidance evidence.
 - Maintained on 2026-10-16 with alert, validation, and CI-dependency evidence; next check should preserve independent review.
 
 - Maintained on 2026-10-15 with policy-enablement, shared-cost, alert-scope, scanner-rerun, draft-pull-request, and owner-acceptance evidence for controlled agentic autofix.

@@ -9,6 +9,16 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) adds a vendor-authored regulated-workflow framing. Keep these controls separate:
+
+- Session permission.
+- Change approval.
+- Release authority.
+- Tool-call evidence.
+- Data-boundary decisions.
+
+Git history alone cannot evidence tools called, data targeted, or denied actions. This is a source-specific practice signal, not a verified claim about named providers.
+
 The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) adds governance-evidence practice. For each governed action, retain the identity, available tools and permissions, enforcement point, approval, execution record, and independently verified outcome; test the same control across MCP, shell, browser, and other reachable action paths. An MCP audit record or successful response alone is not authorization or completion proof.
 
 AI-assisted development and AI application features need boundaries in the harness. The local control model treats prompts as guidance and treats harness rules as enforcement. Permissions, approval points, secret handling, audit logs, prompt-injection resistance, package-install policy, source privacy, licensing review, cost controls, and human acceptance sit around model output rather than inside model wording alone.
@@ -239,6 +249,7 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 
 ## Authoritative Sources
 
+- [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
@@ -354,6 +365,7 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-21 with separate regulated-workflow controls; next check should verify that session and tool-call records remain independently retrievable from Git history.
 - Maintained on 2026-10-18 with cross-channel authorization, execution, and verified-outcome evidence.
 
 - Maintained on 2026-09-29 with context/constraint, protected-path, independent-verification, remediation-control, centralized-model-policy, dependency-risk, compliance, and architecture-drift governance evidence.

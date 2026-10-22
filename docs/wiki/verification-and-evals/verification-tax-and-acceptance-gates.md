@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 21 leaf update watch source](../../../raw/processed/2026-10-21/ai-dev-wiki-leaf-update-watch-2026-10-21T210930-0400.json) records an explicitly opinion-labeled warning that functional success can coexist with security defects. Acceptance therefore needs context-aware security evidence in addition to compilation and functional tests; the source is not independent benchmark proof.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds review-bottleneck and reward-hacking evidence. Acceptance gates should measure review process time, change-request rates, comment load, and human accountability alongside generated-code volume, and should treat green tests as incomplete evidence when agent-written code can overfit, weaken, or tamper with the test surface. Protected tests, mutation testing, independent acceptance checks, and intent review are risk-scaled gates rather than optional polish.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds spec-driven coding and audit-trail evidence. Acceptance gates should treat vague intent, agent-generated implementation, explicit specification, review trail, security check, and audit record as different evidence levels; passing generated tests alone is not enough when the source requirement or trust record is weak.
@@ -119,6 +121,7 @@ The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-d
 
 ## Authoritative Sources
 
+- [October 21 leaf update watch source](../../../raw/processed/2026-10-21/ai-dev-wiki-leaf-update-watch-2026-10-21T210930-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
