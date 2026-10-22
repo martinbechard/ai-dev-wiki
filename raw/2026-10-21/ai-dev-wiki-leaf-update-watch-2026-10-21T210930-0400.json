@@ -1,0 +1,184 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-21T21:09:30-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-14T21:09:30-0400",
+    "end_inclusive": "2026-10-21T21:09:30-0400",
+    "rule": "Only visibly published or updated public sources strictly after the start and no later than run time qualify."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+    "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+    "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+    "https://www.techradar.com/pro/why-ai-coding-is-widening-the-software-security-gap",
+    "https://openai.com/index/running-codex-safely/",
+    "https://openai.com/index/introducing-the-agents-api/",
+    "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/",
+    "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+    "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.93",
+    "https://www.techradar.com/pro/the-ai-escape-is-a-red-herring-the-problem-is-we-cant-tell-a-good-sandbox-from-a-bad-one"
+  ],
+  "qualifying_updates": [
+    {
+      "published_at": "2026-10-19",
+      "source_url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+      "source_title": "Copilot model policy API for enterprise, orgs, and teams",
+      "named_entities": [
+        "GitHub Copilot"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "GitHub"
+      ],
+      "factual_summary": "GitHub announced generally available REST GET and PATCH endpoints for Copilot model policies at enterprise, enterprise-team, agent-app, and organization scopes.",
+      "local_practice_implications": [
+        {
+          "leaf_id": "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+          "why_it_matters": "A governed agent-start boundary can require the effective model-route policy and delegation scope to be identified before mutable work starts."
+        },
+        {
+          "leaf_id": "docs/wiki/application-patterns/agent-environment-readiness.md",
+          "why_it_matters": "Readiness checks should verify the model-policy scope that applies to the agent environment, rather than assuming a locally selected model is authorized."
+        }
+      ]
+    },
+    {
+      "published_at": "2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates/",
+      "source_title": "Multi-repository support and other improvements for GitHub Copilot in Slack and Microsoft Teams",
+      "named_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "Slack",
+        "Microsoft Teams",
+        "GitHub"
+      ],
+      "factual_summary": "GitHub announced that @GitHub can work across multiple repositories in one Slack or Teams conversation and can use shared messages and threads as context.",
+      "local_practice_implications": [
+        {
+          "leaf_id": "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+          "why_it_matters": "A conversation-to-repository handoff needs the authorized repositories, shared-context provenance, and human review point recorded."
+        },
+        {
+          "leaf_id": "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+          "why_it_matters": "Task packages should declare the repositories and conversation context in scope, avoiding an implicit expansion from a chat thread into multiple codebases."
+        }
+      ]
+    },
+    {
+      "published_at": "2026-10-15",
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "source_title": "Agentic autofix for code scanning alerts general availability",
+      "named_entities": [
+        "GitHub Copilot",
+        "CodeQL"
+      ],
+      "upstream_owned_entities": [
+        "GitHub Copilot",
+        "CodeQL",
+        "GitHub"
+      ],
+      "factual_summary": "GitHub announced general availability of agentic autofix for code-scanning alerts: it explores files, proposes a fix, reruns CodeQL, iterates if needed, then opens a draft pull request with a validation summary for review.",
+      "local_practice_implications": [
+        {
+          "leaf_id": "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+          "why_it_matters": "Command-capable repair workflows should retain scope, validator output, iteration evidence, and a human review boundary."
+        },
+        {
+          "leaf_id": "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+          "why_it_matters": "A review package should connect explored files to the proposed repair, the validator rerun, and the resulting evidence summary."
+        },
+        {
+          "leaf_id": "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+          "why_it_matters": "Rerunning authoritative scanners and reviewing draft pull requests consume verification capacity and should be planned as gates, not assumed agent completion."
+        },
+        {
+          "leaf_id": "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+          "why_it_matters": "An agent-generated fix remains a candidate until independent scanner evidence and review have been evaluated."
+        }
+      ]
+    },
+    {
+      "published_at": "2026-10-19",
+      "source_url": "https://www.techradar.com/pro/why-ai-coding-is-widening-the-software-security-gap",
+      "source_title": "Why AI coding is widening the software security gap",
+      "source_type": "opinion",
+      "named_entities": [
+        "Veracode"
+      ],
+      "upstream_owned_entities": [
+        "Veracode"
+      ],
+      "factual_summary": "A Veracode executive opinion argues that code may compile and pass functional tests while retaining security vulnerabilities, and recommends context-aware verification and enforceable security policy throughout delivery.",
+      "local_practice_implications": [
+        {
+          "leaf_id": "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+          "why_it_matters": "Treat this as a practice signal, not independent benchmark proof: structural and context-aware review remains necessary even when generated code appears correct."
+        },
+        {
+          "leaf_id": "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+          "why_it_matters": "Security-focused evidence must complement functional success before acceptance; the raw record labels the source as opinion."
+        }
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://openai.com/index/running-codex-safely/",
+      "reason": "Visible publication date is 2026-05-08, outside the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://openai.com/index/introducing-the-agents-api/",
+      "reason": "Visible publication date is 2026-09-10, outside the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture/",
+      "reason": "Visible publication date is 2026-10-12, before the strict lower boundary of 2026-10-14T21:09:30-0400."
+    },
+    {
+      "source_url": "https://blog.jetbrains.com/research/2026/10/review-ai-generated/",
+      "reason": "The page did not expose a visible publication or update date; its URL month is not sufficient evidence."
+    },
+    {
+      "source_url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.93",
+      "reason": "Visible publication date is 2026-10-05, outside the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://www.techradar.com/pro/the-ai-escape-is-a-red-herring-the-problem-is-we-cant-tell-a-good-sandbox-from-a-bad-one",
+      "reason": "Visible publication date is 2026-10-07, outside the strict seven-day cutoff."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki from this watch; normal raw-source ingest owns any synthesis.",
+    "Keep GitHub, GitHub Copilot, CodeQL, Slack, Teams, and Veracode background upstream-owned; only the downstream operating-practice implications are recorded here.",
+    "The TechRadar source is explicitly marked opinion and should not be treated as independent empirical evidence during any later ingest."
+  ],
+  "counts": {
+    "selected_leaves": 15,
+    "qualifying_updates": 4,
+    "leaves_with_qualifying_updates": 9,
+    "excluded_candidates": 6
+  }
+}
