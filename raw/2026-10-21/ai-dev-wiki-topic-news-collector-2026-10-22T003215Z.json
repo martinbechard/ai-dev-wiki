@@ -1,0 +1,181 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector"
+  },
+  "run_timestamp_utc": "2026-10-22T00:32:15Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-20T00:32:15Z",
+    "end_inclusive_utc": "2026-10-22T00:32:15Z",
+    "policy": "Only public sources with a visible date strictly inside this two-day window qualify. Sources with a date only at the lower-boundary calendar day are excluded because their publication time cannot be shown to be inside the window."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted-development practice: workflow controls, verification, governance, context, and adoption. Product and provider facts are retained only as routing notes or as evidence for a local practice implication."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_title": "Agent of the Day - October 21, 2026: Test Quality Sentinel",
+      "source_url": "https://github.github.com/gh-aw/blog/",
+      "source_type": "official GitHub Agentic Workflows project blog",
+      "visible_date": "2026-10-21",
+      "factual_summary": "The project documents a pull-request-triggered Test Quality Sentinel that pre-fetches changed tests and functions, uses a tight read-only toolset, evaluates test-design weaknesses rather than coverage alone, and records failed runs as incomplete rather than publishing a verdict.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat agent review as a separately scoped, read-only quality gate. Supply a narrow evidence packet, evaluate behavioral test quality rather than line coverage, and preserve a clear failure state for human follow-up.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "Test Quality Sentinel",
+        "Copilot",
+        "safeoutputs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot"
+      ],
+      "upstream_routing_note": "Do not create local product coverage for GitHub or Copilot. Candidate ingest belongs under the local verification-and-evals lens."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "source_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "source_type": "official OpenAI security announcement",
+      "visible_date": "2026-10-21",
+      "factual_summary": "OpenAI describes a maintainer-led coordinated disclosure response in which AI-assisted vulnerability discovery was followed by fix testing, provider protection preparation, version identification guidance, and broader defender coordination before disclosure.",
+      "why_it_matters_for_ai_assisted_development_practice": "An AI-found security issue needs a governed response lifecycle, not only a model finding: maintainers retain release authority, fixes and mitigations need independent preparation, and operator guidance should identify affected versions before remediation is applied.",
+      "named_entities": [
+        "OpenAI",
+        "Patch the Planet",
+        "PHP",
+        "Codex skill"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Codex",
+        "PHP"
+      ],
+      "upstream_routing_note": "Route OpenAI, Codex, and PHP entity coverage upstream; retain only the local coordinated-remediation and maintainer-authority practice implication."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "AI coding agents in regulated industries: residency, audit and approvals",
+      "source_url": "https://www.safeguard.sh/resources/blog/ai-coding-agents-for-regulated-industries",
+      "source_type": "vendor-authored practice guide; vendor and cited-provider claims require source-specific verification during ingest",
+      "visible_date": "2026-10-21",
+      "factual_summary": "The guide frames governed coding-agent use around four operational questions: where prompts and code travel, what record remains after a session, who approves each action, and which models are allowed. It distinguishes in-session action approval from pull-request and release approval.",
+      "why_it_matters_for_ai_assisted_development_practice": "Keep session permissions, change approval, release authority, tool-call evidence, and data-boundary decisions as separate controls. Git history alone does not show the tools called, data targeted, or denied actions.",
+      "named_entities": [
+        "Safeguard",
+        "Claude Code",
+        "Codex",
+        "MCP",
+        "OpenTelemetry"
+      ],
+      "upstream_owned_entities": [
+        "Safeguard",
+        "Claude Code",
+        "Codex",
+        "MCP",
+        "OpenTelemetry"
+      ],
+      "upstream_routing_note": "All named products and protocols remain upstream-owned. Use only the local governance pattern after independently checking any provider-specific behavior."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "BeyondTrust AI Agent Security Now Generally Available",
+      "source_url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
+      "source_type": "vendor press release reporting vendor telemetry",
+      "visible_date": "2026-10-21",
+      "factual_summary": "BeyondTrust reports that agent skills and MCP connections expand the set of executable instructions and privileges on developer endpoints, and presents runtime agent-specific enforcement and policy audit as its control model.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat installed skills, bundled repository instructions, and MCP configuration as an auditable software supply-chain surface. Review their provenance and permissions independently from ordinary user permissions, and do not treat vendor telemetry as a general population estimate.",
+      "named_entities": [
+        "BeyondTrust",
+        "AI Agent Security",
+        "MCP",
+        "agent skills"
+      ],
+      "upstream_owned_entities": [
+        "BeyondTrust",
+        "MCP"
+      ],
+      "upstream_routing_note": "BeyondTrust and MCP entity information is upstream-owned. Retain only the downstream skill-and-tool supply-chain governance implication, with the vendor-source limitation preserved."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Agent of the Day - October 20, 2026: Issue Monster",
+      "source_url": "https://github.github.com/gh-aw/blog/",
+      "visible_date": "2026-10-20",
+      "reason": "Useful admission-gate practice, but the date has no time and is on the lower-boundary calendar day; it cannot be proven to fall after 2026-10-20T00:32:15Z."
+    },
+    {
+      "source_title": "How to Make Your Coding Agent Check Its Work in the Browser",
+      "source_url": "https://www.freecodecamp.org/news/how-to-make-your-coding-agent-check-its-work-in-the-browser/",
+      "visible_date": "2026-10-20",
+      "reason": "Relevant browser-verification guidance, but a lower-boundary date without a visible time is excluded by the strict collector window."
+    },
+    {
+      "source_title": "Skills Over MCP Working Session",
+      "source_url": "https://meet.modelcontextprotocol.io/2026/10/skills-over-mcp-working-session-bi-weekly--LJiq9PdtXjgj",
+      "visible_date": "2026-10-20",
+      "reason": "Event listing rather than a published implementation or practice update; it is also boundary-only dated."
+    },
+    {
+      "source_title": "The Best MCP Servers to Control a Browser From Your Coding Agent",
+      "source_url": "https://browser-use.com/posts/best-mcp-servers-to-control-a-browser",
+      "visible_date": "2026-10-20",
+      "reason": "Boundary-only date and primarily an upstream-owned product/server comparison rather than a new local practice source."
+    },
+    {
+      "source_title": "How we built ChatGPT's novel ad stack for user trust and relevance",
+      "source_url": "https://openai.com/index/building-chatgpt-ad-stack/",
+      "visible_date": "2026-10-21",
+      "reason": "Official and in-window, but it concerns an advertising-serving system; the passing mention of coding-tool guardrails lacks enough AI-assisted development practice detail for this collector."
+    },
+    {
+      "source_title": "GitHub Copilot cloud agent workflow guide",
+      "source_url": "https://aftergradient.com/guides/github-copilot-cloud-agent",
+      "visible_date": "2026-10-21",
+      "reason": "Secondary guide repeating product workflow information; the official GitHub Agentic Workflows source was preferred."
+    },
+    {
+      "source_title": "OpenAI Developer Community Codex bug and forum topics",
+      "source_url": "https://community.openai.com/c/codex/37",
+      "visible_date": "2026-10-20 to 2026-10-21",
+      "reason": "User-authored forum reports are not sufficient authoritative evidence for durable practice guidance."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector run: do not update docs/wiki or move this artifact to raw/processed until a separate ingest workflow selects, corroborates, and synthesizes the practice findings.",
+    "During ingest, consider verification-and-evals for the read-only test-quality gate and governance-and-risk for coordinated security response, separate approval layers, audit evidence, and skill/tool provenance controls.",
+    "Check all vendor-specific provider claims against primary documentation at ingest time; this collector deliberately preserves source type and limitations."
+  ],
+  "validation": {
+    "commands": [
+      "jq empty raw/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json",
+      "python3 -m json.tool raw/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json",
+      "git diff --no-index --check /dev/null raw/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json"
+    ],
+    "result": "jq empty passed; python3 -m json.tool passed; scoped git diff --no-index --check produced no diagnostics (exit status 1 is expected for a new-file comparison)."
+  }
+}
