@@ -9,6 +9,12 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json) adds two configuration-governance signals. An inherited global default for generally available agent features or MCP settings is not evidence of an intentional local approval, so teams should record explicit choices and exception scope. Model-policy APIs likewise need:
+
+- A policy owner and target scope.
+- An inherited-versus-delegated-control review.
+- A change receipt and periodic reconciliation of effective policy.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds governed-agent-pipeline and harness-ownership evidence. Local governance infrastructure should map identity, policy, approval gates, customer-controlled execution, scoped ephemeral tokens, audit trails, secret and PII handling, and cost reporting to the runtime component that enforces them, not only to a vendor setting.
 
 The October 2 raw sources add runtime safety, app-control, and audit-trail evidence. The [topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json) records desktop app control, workflow dashboards, CI evidence retention, code scanning schedule semantics, and async merge polling as local governance inputs. The [leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) records source-attributed incidents, survey audit-trail gaps, runtime safety platform signals, and provider/network allowlist controls. Locally, governance infrastructure should join app-control policy, runtime containment, evidence retention, audit trail availability, and asynchronous operation state before expanding coding-agent autonomy.
@@ -203,6 +209,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Authoritative Sources
 
+- [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [October 2 topic news collector source](../../../raw/processed/2026-10-02/ai-dev-wiki-topic-news-collector-2026-10-02T003210Z.json)
@@ -310,6 +317,7 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-22 with inherited-default, explicit-choice, scoped model-policy API, delegated-control, and policy-change-evidence guidance.
 - Maintained on 2026-10-09 with governed pipeline, scoped-token, audit, secret-handling, and runtime-enforcement ownership evidence.
 - Maintained on 2026-10-02 with app-control policy, runtime-containment, audit-trail, evidence-retention, provider/network policy, and async-operation governance evidence.
 - Maintained on 2026-09-27 with tamper-resistant audit, host-local trace limitation, and qualified agent-capability inventory evidence.

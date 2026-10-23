@@ -9,6 +9,15 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 22 topic news collector source](../../../raw/processed/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json) adds a scheduled-agent contract. A recurring structural scan should declare:
+
+- Its bounded change window and allowed tools.
+- Daily cost and denial limits.
+- A deduplication rule for an open finding and an expiry policy for stale findings.
+- Terminal audit states for a completed no-op, denial, failure, and queued execution.
+
+It should create a durable issue only when a qualifying finding exists.
+
 The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds AI-decision checkpoint evidence. Declarative workflow artifacts should record candidate AI subprocesses, expected effects on time, cost, quality, and flexibility, legal or organizational constraints, and an explicit adopt, constrain, or reject decision before an agent becomes part of an operational process.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds agentic workflow explanation evidence. Declarative workflow artifacts should identify trigger, allowed action, human approval point, state transition, rollback, audit record, and external-system boundary before an agentic workflow can run as a reusable development process.
@@ -60,6 +69,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 22 topic news collector source](../../../raw/processed/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
@@ -103,6 +113,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-22 with scheduled structural-scan window, tool, budget, denial, deduplication, expiry, and terminal-audit contract evidence.
 - Maintained on 2026-10-16 with run-outcome and activation-failure evidence; next check should preserve distinct terminal states.
 
 - Maintained on 2026-10-10 with AI-decision checkpoint, candidate-subprocess, time/cost/quality/flexibility, legal-constraint, and adopt/constrain/reject decision evidence.

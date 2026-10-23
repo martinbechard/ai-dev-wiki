@@ -9,6 +9,14 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json) adds an opt-in peer-comparison boundary for adoption telemetry. Benchmark comparisons should identify:
+
+- Comparison population and aggregation method.
+- Residency scope and retention period.
+- Metric definitions.
+
+Agentic adoption, leverage, or merge-rate comparisons are context for a local outcome decision, not a substitute for workflow-level evidence.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds cost-aware eval evidence for vulnerability-discovery agents. Cost telemetry should report success, token spend, auxiliary-model spend, trace evidence, and matched-pair efficiency separately so a cheaper workflow is not mistaken for a more capable workflow, and so hidden helper-model spend does not disappear from adoption decisions.
 
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) and [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) add governed-pipeline and attribution-gap evidence. Cost telemetry should show token and tool totals by execution, agent, pipeline, local model route, IDE or plugin version, telemetry coverage, and accepted outcome; missing or non-backfilled vendor metrics should be recorded as coverage gaps rather than treated as zero usage.
@@ -233,6 +241,7 @@ The October 14 raw ingest adds budget-discovery evidence for scaled agent adopti
 
 ## Authoritative Sources
 
+- [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
@@ -334,6 +343,7 @@ The October 14 raw ingest adds budget-discovery evidence for scaled agent adopti
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-22 with opt-in peer-comparison, aggregation, residency, retention, and metric-definition evidence for adoption telemetry.
 - Maintained on 2026-10-10 with vulnerability-agent eval, success-versus-efficiency, token-spend, auxiliary-model-spend, trace-evidence, and matched-pair cost attribution.
 - Maintained on 2026-10-14 with budget search, scope, product, SKU, user, owner, organization, and accepted-outcome evidence.
 - Maintained on 2026-10-09 with governed-pipeline cost totals, local-model route, client-version, telemetry-coverage, and attribution-gap evidence.

@@ -9,6 +9,12 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json) adds a default-inheritance boundary for MCP governance. A provider or organization default that enables a generally available MCP setting is configuration context, not an approval receipt. Maintain these separately:
+
+- Effective setting and responsible policy owner.
+- Explicit allow or deny decision and exception scope.
+- Review timestamp.
+
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds governed-pipeline and plugin-integrity evidence. MCP approval evidence should show the task, principal, token scope, pipeline step, exact proposed action, approval decision, executed payload, and any plugin or runtime provenance checks that affected whether the tool was callable.
 
 The September 27 topic news collector source adds enterprise MCP approval-package evidence. A server approval should identify the publisher, hosting or transport path, authentication model, allowed tool set, least-privilege scope, audit-log destination, and revocation path before the agent sees the server as an available capability.
@@ -109,6 +115,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 ## Authoritative Sources
 
+- [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
@@ -166,6 +173,7 @@ The [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-22 with globally inherited MCP-setting and explicit-approval-evidence guidance.
 - Maintained on 2026-10-09 with governed-pipeline scoped-token, exact-action, approval, payload, and plugin-provenance evidence.
 - Maintained on 2026-10-06 with cross-account resource-promotion, IAM, rollback, and audit-destination approval evidence.
 - Maintained on 2026-09-27 with MCP publisher, transport, authentication, approved-tool inventory, least-privilege, audit-log, and revocation evidence.

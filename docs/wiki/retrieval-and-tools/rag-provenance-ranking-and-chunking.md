@@ -9,6 +9,14 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json) adds a restricted-deployment boundary. In air-gapped or sovereign retrieval deployments, provenance and ranking records should identify:
+
+- Corpus authority.
+- Physical and network locality.
+- Execution boundary and any unavailable external dependency.
+
+A managed product's deployment claim does not itself establish local trust or retrieval quality.
+
 The [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json) adds CoverSynth research evidence. Coverage-guided retrieval eval sets should pair deterministic source-quote checks with bounded semantic-validity review, then retain the evidence mapping so an apparent retrieval score does not hide an uncovered corpus region or unsupported answer.
 
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds Agentic AutoRAG evidence for local retrieval practice. RAG optimization should diagnose whether a failed answer came from retrieval, reranking, chunking, embedding, generation, or cost-aware configuration before changing the pipeline, and provenance should stay attached to the source spans used in each experiment.
@@ -95,6 +103,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Authoritative Sources
 
+- [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 15 leaf update watch source](../../../raw/processed/2026-10-15/ai-dev-wiki-leaf-update-watch-2026-10-15T205735-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -147,6 +156,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-22 with restricted-deployment locality, execution-boundary, and external-dependency provenance guidance.
 - Maintained on 2026-10-15 with coverage-guided retrieval-eval, deterministic source-quote, semantic-validity, and provenance evidence; CoverSynth remains research evidence rather than production validation.
 - Maintained on 2026-10-09 with Agentic AutoRAG retrieval, reranking, chunking, embedding, generation, and cost-aware configuration diagnosis evidence.
 - Maintained on 2026-10-02 with retrieval-versus-generation failure separation, source-span, groundedness, and final-answer diagnostic evidence.
