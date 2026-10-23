@@ -1,0 +1,117 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector"
+  },
+  "run_timestamp_utc": "2026-10-23T00:30:05Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-21T00:30:05Z",
+    "end_inclusive_utc": "2026-10-23T00:30:05Z",
+    "policy": "Only public sources with a visible date strictly inside this two-day window qualify. A source with only a date on the lower-boundary calendar day is excluded because its time cannot be proven to be inside the window."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted-development practice: workflow controls, verification, governance, context, and adoption. Product and provider facts are retained only as routing notes or as evidence for a local practice implication."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/agent-workflows",
+      "source_title": "Agent of the Day - October 22, 2026: Architecture Guardian",
+      "source_url": "https://github.github.com/gh-aw/blog/",
+      "source_type": "official GitHub Agentic Workflows project blog",
+      "visible_date": "2026-10-22",
+      "factual_summary": "The documented scheduled Architecture Guardian scans the preceding 24 hours of Go and JavaScript changes for structural thresholds and import cycles. It creates an expiring issue only when a finding exists, skips when a prior report remains open, restricts Bash to cat, and uses daily AI-credit and denial limits. Its audit log records both no-op runs and queued or successful outcomes.",
+      "why_it_matters_for_ai_assisted_development_practice": "Scheduled coding agents need bounded authority and observable quiet paths: precondition work on a narrow change window, limit their tools and budget, deduplicate durable outputs, expire stale findings, and distinguish an audited no-op from a failed or silent run.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "Architecture Guardian",
+        "Copilot",
+        "safeoutputs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "Copilot",
+        "GitHub Agentic Workflows"
+      ],
+      "upstream_routing_note": "Do not create local product or framework coverage for GitHub, Copilot, or GitHub Agentic Workflows. If ingested, retain only the local scheduled-agent guardrail, auditability, and stale-finding lifecycle pattern."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Agent of the Day - October 21, 2026: Test Quality Sentinel",
+      "source_url": "https://github.github.com/gh-aw/blog/",
+      "visible_date": "2026-10-21",
+      "reason": "Relevant official practice source, but its date lacks a time and falls on the lower-boundary calendar day; it also was captured in the prior collector artifact."
+    },
+    {
+      "source_title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "source_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "visible_date": "2026-10-21",
+      "reason": "Relevant official practice source, but the lower-boundary date has no time and the same source was captured in the prior collector artifact."
+    },
+    {
+      "source_title": "BeyondTrust AI Agent Security Now Generally Available",
+      "source_url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
+      "visible_date": "2026-10-21",
+      "reason": "Vendor telemetry and runtime-control guidance were captured in the prior collector artifact; its lower-boundary date also lacks a publication time."
+    },
+    {
+      "source_title": "Secure MCP and Agentic AI Adoption",
+      "source_url": "https://www.ians.com/events/insight-exchanges/toronto-insight-exchange-2026",
+      "visible_date": "2026-10-22",
+      "reason": "An event listing, not a published implementation, practice result, or source-backed operational update."
+    },
+    {
+      "source_title": "AGNTCon + MCPCon North America",
+      "source_url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+      "visible_date": "2026-10-22 to 2026-10-23",
+      "reason": "Conference schedule rather than a completed public practice update; it also extends to the run-date boundary."
+    },
+    {
+      "source_title": "OpenCodeReview and the Determinism Dividend",
+      "source_url": "https://codex.danielvaughan.com/2026/08/11/opencodereview-deterministic-code-review-agent-codex-cli-rule-dispatch-grounded-review-independent-reflection/",
+      "visible_date": "updated 2026-10-22; originally published 2026-08-11",
+      "reason": "Third-party commentary whose dated update does not expose a discrete, verifiable source-content change; retain as a research lead only."
+    },
+    {
+      "source_title": "Who Is Allowed Across",
+      "source_url": "https://javatask.dev/blog/the-mcp-boundary-part-4-who-is-allowed-across/",
+      "visible_date": "2026-10-22",
+      "reason": "Third-party interpretation of MCP authorization rather than a primary specification update; broad MCP protocol coverage remains upstream-owned."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector run: do not update docs/wiki or move this artifact to raw/processed until a separate ingest workflow selects, corroborates, and synthesizes the practice finding.",
+    "If ingested, consider agent-workflows for the scheduled-agent no-op, bounded-tool, budget, deduplication, expiry, and audit-evidence pattern.",
+    "The qualifying source names upstream-owned GitHub and Copilot entities; preserve only the local operating-practice lens."
+  ],
+  "validation": {
+    "commands": [
+      "jq empty raw/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json",
+      "python3 -m json.tool raw/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json",
+      "git diff --no-index --check /dev/null raw/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json"
+    ],
+    "result": "jq empty passed; python3 -m json.tool passed; scoped git diff --no-index --check produced no diagnostics (exit status 1 is expected for a new-file comparison)."
+  }
+}
