@@ -1,0 +1,159 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-22T21:04:47-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-15T21:04:47-0400",
+    "end_inclusive": "2026-10-22T21:04:47-0400",
+    "rule": "Only visibly published or updated public sources strictly inside this seven-day window qualify; missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md",
+    "docs/wiki/adoption-and-operating-model/agent-ownership-rosters.md",
+    "docs/wiki/application-patterns/agent-harness-components.md",
+    "docs/wiki/application-patterns/agent-session-recovery.md",
+    "docs/wiki/coding-practices/multi-reviewer-ai-code-review.md",
+    "docs/wiki/coding-practices/repository-configured-ai-code-review.md",
+    "docs/wiki/context-architecture/thin-context-router.md",
+    "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+    "docs/wiki/governance-and-risk/agent-incident-reporting.md",
+    "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md",
+    "docs/wiki/retrieval-and-tools/portable-agent-plugin-packaging-and-governance.md",
+    "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md",
+    "docs/wiki/source-workflows/coding-agent-runtime-updater-integrity.md",
+    "docs/wiki/verification-and-evals/agent-assisted-performance-optimization-gates.md",
+    "docs/wiki/verification-and-evals/agent-eval-failure-diagnosis.md"
+  ],
+  "source_urls_checked": [
+    "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html",
+    "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard/",
+    "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/",
+    "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+    "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+    "https://github.com/october-dev/october-harness",
+    "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/package-plugin",
+    "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/govern-plugins",
+    "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
+    "https://agentengineering.org/articles/evaluating-agent-trajectories-not-just-outputs/"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard/",
+      "visible_date": "2026-10-22",
+      "mapped_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/agent-cost-telemetry.md"
+      ],
+      "factual_summary": "GitHub added opt-in industry comparison benchmarks to the Copilot impact dashboard, including agentic adoption, leverage, and agentic versus nonagentic pull-request merge-rate comparisons; peer data is aggregated, region-scoped for data-residency tenants, and deleted after 30 days.",
+      "why_it_matters": "Cost and adoption telemetry should be interpreted against an explicit peer and privacy boundary rather than treated as a standalone utilization score.",
+      "named_entities": [
+        "GitHub Copilot",
+        "Copilot impact dashboard"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/",
+      "visible_date": "2026-10-22",
+      "mapped_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md",
+        "docs/wiki/retrieval-and-tools/mcp-scoped-authorization-and-approval-evidence.md"
+      ],
+      "factual_summary": "GitHub began rolling out enforcement of a one-time global default for eligible unconfigured generally available Copilot features and MCP-server settings, while preserving explicit feature choices and keeping previews opt-in.",
+      "why_it_matters": "Local governance practice should retain evidence of intentional feature and MCP authorization choices so an inherited default cannot be mistaken for an explicit approval.",
+      "named_entities": [
+        "GitHub Copilot",
+        "MCP"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "MCP"
+      ]
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+      "visible_date": "2026-10-19",
+      "mapped_leaf_ids": [
+        "docs/wiki/governance-and-risk/agent-governance-infrastructure.md"
+      ],
+      "factual_summary": "GitHub made REST GET and PATCH endpoints generally available for Copilot model policies at enterprise, enterprise-team, agent-app, and organization levels, with delegated control modes.",
+      "why_it_matters": "Policy automation requires scoped ownership, change evidence, and review of inherited versus delegated controls.",
+      "named_entities": [
+        "GitHub Copilot",
+        "REST API"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
+      "visible_date": "2026-10-20",
+      "mapped_leaf_ids": [
+        "docs/wiki/retrieval-and-tools/rag-provenance-ranking-and-chunking.md"
+      ],
+      "factual_summary": "Google announced a preview managed RAG enterprise-search capability for Gemini on Google Distributed Cloud air-gapped, describing operation inside a physical security perimeter without connection to the public internet or Google Cloud global infrastructure.",
+      "why_it_matters": "For restricted retrieval deployments, provenance and ranking guidance should keep trust, locality, and execution-boundary evidence explicit; the product background belongs upstream.",
+      "named_entities": [
+        "Gemini",
+        "Google Distributed Cloud",
+        "RAG"
+      ],
+      "upstream_owned_entities": [
+        "Google",
+        "Gemini",
+        "Google Distributed Cloud",
+        "RAG"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "visible_date": "2026-10-15",
+      "reason": "Boundary-only date: no publication time is shown and the date falls on the strict lower-boundary day."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "visible_date": "2026-10-15",
+      "reason": "Boundary-only date: no publication time is shown and the date falls on the strict lower-boundary day."
+    },
+    {
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/package-plugin",
+      "visible_date": "2026-10-12",
+      "reason": "Outside the seven-day window."
+    },
+    {
+      "source_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/govern-plugins",
+      "visible_date": "2026-10-12",
+      "reason": "Outside the seven-day window."
+    },
+    {
+      "source_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html",
+      "visible_date": null,
+      "reason": "No visible publication or update date."
+    },
+    {
+      "source_url": "https://developers.cloudflare.com/agents/harnesses/think/recovery/",
+      "visible_date": null,
+      "reason": "No visible publication or update date."
+    },
+    {
+      "source_url": "https://github.com/october-dev/october-harness",
+      "visible_date": null,
+      "reason": "No visible release or update date tied to the checked content."
+    },
+    {
+      "source_url": "https://agentengineering.org/articles/evaluating-agent-trajectories-not-just-outputs/",
+      "visible_date": "2026-10-12",
+      "reason": "Outside the seven-day window."
+    }
+  ],
+  "follow_up_notes": "Raw-only watch completed. Ingest should assess only the listed downstream-practice implications; broad company, product, model, protocol, and RAG background is upstream-owned under docs/wiki/federation.md.",
+  "blockers": []
+}
