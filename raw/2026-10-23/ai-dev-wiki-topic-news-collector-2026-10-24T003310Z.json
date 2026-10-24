@@ -1,0 +1,129 @@
+{
+  "automation": {
+    "name": "AI Dev Wiki Topic News Collector",
+    "id": "ai-dev-wiki-topic-news-collector"
+  },
+  "run_timestamp_utc": "2026-10-24T00:33:10Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-22T00:33:10Z",
+    "end_inclusive_utc": "2026-10-24T00:33:10Z",
+    "policy": "Only public sources with a visible date strictly inside this two-day window qualify. A source with only a date on the lower-boundary calendar day is excluded because its publication time cannot be shown to be inside the window."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": {
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "local_scope": "AI-assisted-development practice: workflow controls, verification, governance, context, and adoption. Product and provider facts are retained only as routing notes or as evidence for a local practice implication."
+  },
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/verification-and-evals",
+      "source_title": "Introducing Agentic Evaluation in FAITH",
+      "source_url": "https://blogs.cisco.com/ai/introducing-agentic-evaluation-in-faith",
+      "source_type": "official Cisco technical blog",
+      "visible_date": "2026-10-23",
+      "factual_summary": "Cisco introduced Agentic FAITH, an extension of its evaluation framework for multi-step, tool-using agent tasks. Its VulnLoc benchmark supplies a repository snapshot and vulnerability class, scores both vulnerable-file identification and correct no-vulnerability conclusions on patched code, uses a read-only repository environment, and records task completion distinctly from a missing submission or execution failure. The framework saves conversation history, tool calls and responses, submitted answers, execution errors, and termination reasons; benchmark definitions can make prompts, turn limits, tool budgets, and timeouts explicit.",
+      "why_it_matters_for_ai_assisted_development_practice": "Evaluation harnesses should assess both detection and correct abstention after a fix, use least-privilege test environments, and preserve run traces, budgets, and terminal states. Scores without these execution conditions cannot distinguish a sound negative result from an incomplete or failed run.",
+      "named_entities": [
+        "Cisco",
+        "FAITH",
+        "Agentic FAITH",
+        "VulnLoc",
+        "Agent Sandbox"
+      ],
+      "upstream_owned_entities": [
+        "Cisco",
+        "FAITH",
+        "Agentic FAITH",
+        "VulnLoc",
+        "Agent Sandbox"
+      ],
+      "upstream_routing_note": "Route Cisco and named framework or benchmark background to the upstream AI wiki. If ingested locally, retain only the downstream evaluation-harness pattern: read-only execution, positive and negative cases, explicit budgets, checkpointing, and trace-backed outcomes."
+    },
+    {
+      "topic_root": "docs/wiki/context-architecture",
+      "source_title": "What specification is your AI coding agent actually implementing?",
+      "source_url": "https://labs.sogeti.com/what-specification-is-your-ai-coding-agent-actually-implementing/",
+      "source_type": "practitioner-authored Sogeti research blog; experience and cited benchmark figures require source-specific corroboration during ingest",
+      "visible_date": "2026-10-23",
+      "factual_summary": "The author describes a coding-agent modernization attempt in which generated transformations compiled but implemented unsupported interpretations when legacy behavior, business rules, mappings, and source data conflicted. The proposed practice is to expose a reviewable chain from distributed evidence through interpretation and specification before implementation, restrict work to one decision at a time, inspect controlling and conflicting evidence, and leave missing evidence explicitly unresolved rather than selecting a plausible substitute.",
+      "why_it_matters_for_ai_assisted_development_practice": "Context architecture is not merely providing more files to an agent. For high-consequence or ambiguous work, teams need an evidence-to-decision artifact that identifies sources, conflicts, assumptions, and unresolved questions before generated code enters review or becomes future agent context.",
+      "named_entities": [
+        "Sogeti",
+        "SWE-RPG",
+        "ClarifyCodeBench"
+      ],
+      "upstream_owned_entities": [
+        "Sogeti",
+        "SWE-RPG",
+        "ClarifyCodeBench"
+      ],
+      "upstream_routing_note": "Route company and benchmark background upstream. A local ingest should preserve the downstream evidence-to-specification review pattern and explicitly label this source as practitioner experience, not a general empirical finding."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/",
+      "visible_date": "2026-10-22",
+      "reason": "Official and practice-relevant, but the date-only stamp falls on the lower-boundary calendar day, so publication inside the strict time window cannot be proven. Retain as a lead for the next eligible ingest or research pass."
+    },
+    {
+      "source_title": "Advancing the science of AI agent evaluation and governance",
+      "source_url": "https://www.microsoft.com/en-us/research/event/advancing-the-science-of-ai-agent-evaluation/",
+      "visible_date": "2026-10-22 to 2026-10-23",
+      "reason": "Event announcement rather than a completed, source-backed practice update; any later public synthesis can be evaluated separately."
+    },
+    {
+      "source_title": "Platforms for Reviewable Multi-Agent Work: A Tool Comparison",
+      "source_url": "https://ones.com/blog/tool-guide/platforms-for-reviewable-multi-agent-work-a-tool-comparison/",
+      "visible_date": "2026-10-23",
+      "reason": "Vendor tool comparison emphasizing product selection; broad product and framework coverage is upstream-owned and the article does not provide a distinct primary operational result for local practice ingestion."
+    },
+    {
+      "source_title": "AI Agents Created AI Code Slop, But Can They Fix It?",
+      "source_url": "https://tech.yahoo.com/ai/articles/ai-agents-created-ai-code-163023133.html",
+      "visible_date": "2026-10-23T16:30:00Z",
+      "reason": "Secondary commentary reporting a prior survey rather than a primary, discrete practice update; excluded in favor of primary sources."
+    },
+    {
+      "source_title": "OpenAI Agents Weakened Monitoring in Two Tasks",
+      "source_url": "https://www.vastkind.com/openai-agents-weakened-monitoring/",
+      "visible_date": "updated 2026-10-23; original incident dates are earlier in October",
+      "reason": "Third-party retrospective with an update marker but no independently verified discrete source-content change in this window; preserve only as a research lead."
+    }
+  ],
+  "follow_up_notes": [
+    "Raw-only collector run: do not update docs/wiki or move this artifact to raw/processed until a separate ingest workflow selects, corroborates, and synthesizes the practice findings.",
+    "If the Cisco item is ingested, route the downstream guidance to verification-and-evals and keep named framework and benchmark descriptions upstream-owned.",
+    "If the Sogeti item is ingested, route the evidence-to-interpretation-to-specification practice to context-architecture and corroborate any benchmark statistics before treating them as durable claims.",
+    "The excluded AWS case study has a useful test-triage, human-approval, structured-output, retrieval, and evaluation-harness lead, but its visible date is not eligible under the strict lower-boundary rule."
+  ],
+  "validation": {
+    "commands": [
+      "jq empty raw/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json",
+      "python3 -m json.tool raw/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json",
+      "git diff --no-index --check /dev/null raw/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json"
+    ],
+    "result": "jq empty passed; python3 -m json.tool passed; scoped git diff --no-index --check produced no diagnostics (exit status 1 is expected for a new-file comparison)."
+  }
+}
