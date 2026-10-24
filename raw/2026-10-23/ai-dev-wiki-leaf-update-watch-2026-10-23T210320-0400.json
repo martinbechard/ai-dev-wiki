@@ -1,0 +1,111 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-23T21:03:20-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-16T21:03:20-0400",
+    "end_inclusive": "2026-10-23T21:03:20-0400"
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+    "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+    "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+    "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+    "docs/wiki/application-patterns/application-harness-patterns.md",
+    "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md",
+    "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+    "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+    "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+    "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+    "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+    "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md",
+    "docs/wiki/source-workflows/automated-update-feeds.md",
+    "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+    "docs/wiki/source-workflows/leaf-update-watch.md"
+  ],
+  "source_urls_checked": [
+    "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+    "https://community.ibm.com/community/user/blogs/shadan-ghadimi/2026/10/22/whats-new-in-watsonx-orchestrate-october-2026-update-for-builders",
+    "https://octopus.com/blog/introducing-remote-mcp",
+    "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+    "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+    "https://devblogs.microsoft.com/devops/azure-devops-remote-mcp-server-ga/",
+    "https://blog.n8n.io/introducing-n8n-agents/",
+    "https://openai.com/index/running-codex-safely/"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "visible_publication_date": "2026-10-19",
+      "mapped_leaf_ids": [
+        "docs/wiki/agent-workflows/agent-control-flow-selection.md",
+        "docs/wiki/application-patterns/ai-process-layer-and-workflow-state.md",
+        "docs/wiki/application-patterns/application-harness-patterns.md",
+        "docs/wiki/application-patterns/declarative-agent-workflow-artifacts.md"
+      ],
+      "factual_summary": "Meta describes a thin orchestrator that uses workflow templates and deterministic state machines to constrain agent phase ordering, rather than asking a single agent to own all routing and execution decisions.",
+      "why_it_matters": "The local practice implication is to make workflow phases and state transitions explicit, keep routing narrowly scoped, and preserve reusable workflow artifacts that can be validated independently.",
+      "named_entities": ["Meta", "thin orchestrator", "workflow templates", "deterministic state machines"],
+      "upstream_owned_entities": ["Meta"]
+    },
+    {
+      "source_url": "https://community.ibm.com/community/user/blogs/shadan-ghadimi/2026/10/22/whats-new-in-watsonx-orchestrate-october-2026-update-for-builders",
+      "visible_publication_date": "2026-10-22",
+      "mapped_leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/human-agent-approval-boundaries.md",
+        "docs/wiki/governance-and-risk/agent-identity-and-delegated-authority.md",
+        "docs/wiki/retrieval-and-tools/remote-mcp-skill-discovery-and-governance.md",
+        "docs/wiki/retrieval-and-tools/tool-call-and-mcp-governance.md"
+      ],
+      "factual_summary": "IBM's October builders update announces multi-cloud agent discovery, an agent identity model in an identity provider, remote MCP and guardrail work, and production evaluation capabilities.",
+      "why_it_matters": "The local practice implication is to bind each remotely discovered agent and tool invocation to attributable identity, authorization, guardrails, and evaluation evidence; broad IBM product coverage remains upstream-owned.",
+      "named_entities": ["IBM", "watsonx Orchestrate", "AI Gateway", "Agent Identity", "remote MCP", "LLM-as-a-Judge"],
+      "upstream_owned_entities": ["IBM", "watsonx Orchestrate", "remote MCP", "LLM-as-a-Judge"]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://octopus.com/blog/introducing-remote-mcp",
+      "visible_publication_date": "2026-10-13",
+      "reason": "Published before the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/agent-framework/discover-agent-skills-from-mcp-servers-in-net/",
+      "visible_publication_date": "2026-07-28",
+      "reason": "Published outside the window."
+    },
+    {
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "visible_publication_date": "2026-05-06",
+      "reason": "Published outside the window."
+    },
+    {
+      "source_url": "https://devblogs.microsoft.com/devops/azure-devops-remote-mcp-server-ga/",
+      "visible_publication_date": "2026-10-11",
+      "reason": "Published before the cutoff."
+    },
+    {
+      "source_url": "https://blog.n8n.io/introducing-n8n-agents/",
+      "visible_publication_date": "2026-09-25",
+      "reason": "Published outside the window."
+    },
+    {
+      "source_url": "https://openai.com/index/running-codex-safely/",
+      "visible_publication_date": "2026-05-08",
+      "reason": "Published outside the window; retained only as a search lead, not current evidence."
+    }
+  ],
+  "follow_up_notes": {
+    "local_scope": "Ingest only downstream operating implications. Route broad vendor, product, model, protocol, and framework background to the upstream AI wiki.",
+    "no_qualifying_update_leaves": [
+      "docs/wiki/adoption-and-operating-model/durable-instructions-and-skill-files.md",
+      "docs/wiki/application-patterns/file-oriented-enterprise-builder-workflows.md",
+      "docs/wiki/governance-and-risk/ai-assisted-security-repair-gates.md",
+      "docs/wiki/retrieval-and-tools/rag-tools-and-mcp-practice.md",
+      "docs/wiki/source-workflows/automated-update-feeds.md",
+      "docs/wiki/source-workflows/clipping-and-raw-intake.md",
+      "docs/wiki/source-workflows/leaf-update-watch.md"
+    ],
+    "blockers": []
+  }
+}
