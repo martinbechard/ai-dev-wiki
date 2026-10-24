@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds thin-orchestrator state evidence. The process layer should own the deterministic state machine and template version that constrain phase ordering, so routing and execution decisions remain reconstructable rather than becoming an opaque agent transcript.
+
 The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds pipeline-governed agent-service and cross-boundary audit evidence. Workflow state should preserve agent-service promotion or rollback state, eval CLI receipts, scriptable review settings, git-backed input sets, delegation-chain context, authorization state, exchanged data, and action outcomes so runtime promotion and incident reconstruction do not depend on one framework log.
 
 The AI process layer is the application tier between user intent and backend systems. It chooses prompts, models, retrieval steps, tools, verifiers, and human gates while preserving workflow state that the model itself does not remember.
@@ -83,6 +85,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
@@ -136,6 +139,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with deterministic workflow-template and state-machine ownership evidence.
 - Maintained on 2026-10-16 with controlled-remediation state evidence; next check should retain alert-to-decision traceability.
 
 - Maintained on 2026-10-10 with agent-service promotion, rollback, eval CLI, scriptable-review, git-backed input-set, delegation-chain, and cross-boundary audit-state evidence.

@@ -9,6 +9,13 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds remote-agent invocation evidence. Discovery across clouds does not establish permission to act. Each remote MCP invocation record should preserve:
+
+- The attributable agent identity.
+- The scoped grant.
+- Guardrail outcome.
+- Evaluation outcome.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) and [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) add MCP tool-description, audit, and prompt-injection evidence. Tool descriptions are routing instructions and should include scoped when-to-use language that is evaluated before rollout; tool outputs remain untrusted evidence, especially when read tools can pair with write, exfiltration, or package-install tools. Audit records should join user intent, delegation chain, authorization state, invoked or declined action, exchanged data, outcome, and denial evidence across protocol or administrative boundaries.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds local sandbox and safer-CLI evidence. Tool governance should record whether a tool can reach local MCP servers, credentials, network, language servers, browser state, or filesystem paths before a coding agent uses the tool, and should preserve source-review statistics or safer-mode claims as evidence to verify rather than as automatic approval.
@@ -272,6 +279,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -401,6 +409,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with remote-agent identity, scoped grant, guardrail, and evaluation invocation evidence.
 - Maintained on 2026-10-16 with request-time tool-policy evidence; next check should preserve per-invocation audit records.
 
 - Maintained on 2026-10-10 with MCP tool-description routing, prompt-injection, least-privilege, delegation-chain audit, invoked-or-declined action, and cross-boundary traceability evidence.

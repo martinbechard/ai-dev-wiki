@@ -9,6 +9,15 @@ tags: ["retrieval-and-tools"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds remote-agent discovery evidence. Treat remote MCP discovery as candidate-capability intake. Before activation, attach to the discovered package:
+
+- Attributable agent identity.
+- Scoped authorization.
+- Guardrail policy.
+- Evaluation evidence.
+- Monitoring.
+- Revocation.
+
 Remote MCP skill discovery treats discovered skills as governed tool packages, not just extra context. The [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json) records progressive skill loading from MCP servers, with package provenance, archive bounds, approval defaults, central governance, and remote-content trust boundaries.
 
 Broad Model Context Protocol and framework background belongs upstream. This page owns the local downstream rule: a discovered skill can change what an agent knows how to do, so its publisher, package boundary, allowed tools, approval defaults, diagnostics, and policy owner need review before use.
@@ -45,6 +54,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [July 28 leaf update watch source](../../../raw/processed/2026-07-28/ai-dev-wiki-leaf-update-watch-2026-07-28T210118-0400.json)
@@ -88,6 +98,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with remote discovery, attributable identity, guardrail, evaluation, and revocation evidence.
 - Maintained on 2026-10-16 with discovery-versus-authorization evidence; next check should preserve runtime revocation and monitoring.
 
 - Created on 2026-07-28 from July 28 raw evidence about remotely discovered MCP skills, package boundaries, approval defaults, diagnostics, and central governance.

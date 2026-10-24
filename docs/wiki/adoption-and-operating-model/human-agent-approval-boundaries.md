@@ -9,6 +9,13 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds remote-agent governance evidence. Discovery or multi-cloud availability does not grant action authority. Before consequential use, a human approval boundary should bind the discovered agent or tool to:
+
+- Attributable identity.
+- Scoped authorization.
+- Guardrail outcome.
+- Evaluation evidence.
+
 The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds approval, handoff, recovery, and action-checkpoint evidence. Approval should bind to the exact operation, not only to a general goal; recovery should preserve idempotency keys, residual-authority cleanup, handoff packets, out-of-band secret handling, and failure modes such as approval laundering. Pre-action guardrails should be able to return allowed, flagged, or blocked outcomes with auditable decision records.
 
 Human-agent approval boundaries define which work an agent can perform, which work requires review, and which decisions remain human-owned. The local boundary is that humans own goals, tradeoffs, accountability, and final acceptance, while agents can inspect, draft, patch, verify, and report within the approved workflow.
@@ -141,6 +148,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
@@ -223,6 +231,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with remote-agent identity, scoped authorization, guardrail, and evaluation-evidence boundaries.
 - Maintained on 2026-10-16 with advisory-findings and draft-remediation evidence; next check should preserve independent acceptance authority.
 
 - Maintained on 2026-10-10 with exact-operation approval, handoff-packet, idempotency-key, residual-authority, approval-laundering, and allowed/flagged/blocked action-checkpoint evidence.

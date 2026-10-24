@@ -50,6 +50,7 @@ The [current October digest](2026-10.md) records the active month in item-level,
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with item-level deterministic-workflow, remote-capability-governance, trajectory-evaluation, and evidence-to-specification entries; granularity and reverse chronological ordering were checked against the project-wiki topic-page verification checklist.
 - Maintained on 2026-10-22 with item-level October 22 entries for scheduled-agent controls, peer telemetry, configuration approval evidence, and restricted retrieval provenance.
 - Maintained on 2026-10-21 with item-level October 21 entries for test-quality review, coordinated disclosure, regulated workflow controls, and agent-configuration supply-chain controls.
 - Maintained on 2026-10-20 with October 19 leaf-watch and October 19-20 topic-collector ingestion scope.

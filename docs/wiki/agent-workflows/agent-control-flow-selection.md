@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds thin-orchestrator evidence: use deterministic workflow templates and state machines to constrain phase ordering, while keeping agent routing narrowly scoped. The vendor architecture remains upstream-owned; locally, workflow phases and transitions should be independently reviewable and testable.
+
 The [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json) adds front-loaded workflow and SDLC-placement evidence. Control-flow selection should decide where agents plug into planning, implementation, verification, review, and deployment before choosing a tool; front-loaded research and human planning reduce compounding implementation errors when later phases run through constrained agents.
 
 Agent control flow selection chooses the outer orchestration pattern before choosing a framework or model. The [ReAct, Deep Agents, and workflow-selection research source](../../../raw/processed/project-wiki-research-2026-09-17-react-deep-agents-workflow-selection.md) distinguishes fixed workflows, iterative tool-using agents, planner-executor designs, and long-horizon harnesses as separate local development choices. Broad [LangGraph](../../../upstream-ai-wiki/agentic-frameworks/langgraph.md), [Deep Agents](../../../upstream-ai-wiki/agentic-frameworks/deep-agents.md), and LangChain stack facts stay upstream-owned.
@@ -46,6 +48,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 10 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-10T002828Z.json)
@@ -87,6 +90,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with thin-orchestrator, workflow-template, deterministic-state-machine, and constrained-routing evidence.
 - Maintained on 2026-10-16 with controlled-remediation flow evidence; next check should preserve the separate review transition.
 
 - Maintained on 2026-10-10 with front-loaded research, planning constraint, SDLC-placement, and workflow-deployment decision evidence.

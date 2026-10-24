@@ -9,6 +9,17 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 23 topic news collector source](../../../raw/processed/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json) adds an evidence-to-specification review pattern. For ambiguous modernization or coding work, externalize the following before implementation:
+
+- Source inventory.
+- Controlling and conflicting evidence.
+- Interpretation.
+- Decision.
+- Assumptions.
+- Unresolved questions.
+
+Preserve the chain for reviewer inspection and future context rather than selecting a plausible unsupported behavior. The Sogeti account is practitioner experience, not a general empirical claim.
+
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) reinforces handoff packets as rehydration inputs. A compact packet should preserve objective, constraints, sourced facts, evidence, unknowns, and next action, while rehydration still checks mutable facts against current source files, issue records, logs, and work artifacts before acting.
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds cross-agent session-transfer evidence. Transcript and instruction portability are different from artifact portability: a handoff can preserve project brief, tone, and formatting while still requiring PDFs, images, source files, and other attachments to be reattached or reverified from durable storage.
@@ -109,6 +120,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 23 topic news collector source](../../../raw/processed/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
@@ -167,6 +179,7 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with practitioner-sourced evidence-to-specification, conflict, assumption, and unresolved-question review guidance.
 - Maintained on 2026-10-12 with compact handoff packet and mutable-fact refresh evidence.
 - Maintained on 2026-10-13 with measured compaction, durable task-contract, source-path, approval, blocker, and next-action rehydration evidence.
 - Maintained on 2026-10-06 with agent-memory write-path, namespace, TTL, decay, write-policy, and consolidation-diff evidence.

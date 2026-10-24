@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds thin-orchestrator evidence: workflow templates should declare deterministic phase transitions and constrain routing before an agent runs, leaving only bounded runtime decisions to the agent.
+
 The [October 22 topic news collector source](../../../raw/processed/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json) adds a scheduled-agent contract. A recurring structural scan should declare:
 
 - Its bounded change window and allowed tools.
@@ -69,6 +71,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 22 topic news collector source](../../../raw/processed/2026-10-22/ai-dev-wiki-topic-news-collector-2026-10-23T003005Z.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -113,6 +116,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with thin-orchestrator template and deterministic-transition evidence.
 - Maintained on 2026-10-22 with scheduled structural-scan window, tool, budget, denial, deduplication, expiry, and terminal-audit contract evidence.
 - Maintained on 2026-10-16 with run-outcome and activation-failure evidence; next check should preserve distinct terminal states.
 

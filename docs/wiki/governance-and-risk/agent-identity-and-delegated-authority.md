@@ -9,6 +9,14 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) reinforces that remotely discovered agents and MCP capabilities need an identity-provider-backed agent identity. An authority record should not treat discovery as authorization; it should preserve:
+
+- The agent owner.
+- Delegated scope.
+- Guardrail result.
+- Evaluation evidence.
+- Revocation path.
+
 The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds current delegation-traceability evidence from IETF AUDIT and agent-access practice sources. Delegated-authority records should separate authentication, identity, and authority; preserve who authorized an action, which agent or workload identity acted, how long the authority lasts, which downstream principal or tool was used, and whether the requested action was invoked, declined, or blocked.
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds centralized agent-manager evidence. Agent identity should include provider-neutral agent registration, delegated authority, token exchange, role-based access, lifecycle stage, suspension or revocation status, and the human or organization accountable for each active capability.
@@ -135,6 +143,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
@@ -200,6 +209,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with identity-provider-backed remote-agent identity and guardrail-evidence requirements.
 - Maintained on 2026-10-16 with identity-control checklist evidence; next check should preserve owner, revocation, and audit requirements.
 
 - Maintained on 2026-10-10 with authentication-versus-authority, AUDIT traceability, authority-chain, invoked-or-declined action, and duration-bound delegation evidence.

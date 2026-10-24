@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds a thin-orchestrator harness boundary: keep deterministic phase transitions and workflow templates in the harness, and limit model-driven routing to the decisions that truly need runtime judgment.
+
 The [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json) adds harness pipeline evidence for managed agent services. Application harnesses should treat imported agents, eval commands, scriptable review settings, input sets, feature flags, promotion, and rollback as governed pipeline artifacts when they affect deployment or operational readiness.
 
 The harness around the model is where an AI application becomes reliable product software. The harness coordinates user interface, server orchestration, model calls, context assembly, tools, workflow state, validation, progress display, and product output.
@@ -90,6 +92,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
 - [October 9 leaf update watch source](../../../raw/processed/2026-10-09/ai-dev-wiki-leaf-update-watch-2026-10-09T210918-0400.json)
@@ -149,6 +152,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-23 with deterministic phase-transition and constrained-routing harness evidence.
 - Maintained on 2026-10-16 with repair-harness component evidence; next check should retain policy, budget, and review boundaries.
 
 - Maintained on 2026-10-10 with imported-agent-service, eval-command, scriptable-review-setting, input-set, feature-flag, promotion, and rollback pipeline evidence.
