@@ -1,0 +1,120 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-24T21:01:06-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-17T21:01:06-0400",
+    "end_inclusive": "2026-10-24T21:01:06-0400"
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md",
+    "docs/wiki/source-workflows/public-topic-news-collector.md",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md"
+  ],
+  "source_urls_checked": [
+    "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+    "https://community.ibm.com/community/user/blogs/shadan-ghadimi/2026/10/22/whats-new-in-watsonx-orchestrate-october-2026-update-for-builders",
+    "https://openai.com/news/company-announcements/?display=list",
+    "https://www.anthropic.com/news/distillation-defenses",
+    "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+  ],
+  "qualifying_updates": [
+    {
+      "source_url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "visible_published_or_updated_at": "2026-10-19",
+      "named_entities": ["Meta", "thin orchestrator"],
+      "upstream_owned_entities": ["Meta"],
+      "factual_summary": "Meta describes a thin agent orchestrator that separates deterministic workflow phases from model-driven decisions and makes phase transitions explicit.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": "Size a harness for explicit phase control and recovery only when the workflow needs it.",
+        "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": "Make phase outputs reviewable contracts rather than implicit free-form handoffs.",
+        "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "Emit phase and transition evidence so operators can distinguish deterministic execution from model judgment.",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "Place review gates at consequential phase transitions.",
+        "docs/wiki/source-workflows/raw-project-wiki-monitor.md": "Keep acquisition, qualification, and later synthesis as separately observable phases."
+      },
+      "follow_up_note": "Preserve only the downstream phase-control pattern; route Meta product and platform background upstream."
+    },
+    {
+      "source_url": "https://community.ibm.com/community/user/blogs/shadan-ghadimi/2026/10/22/whats-new-in-watsonx-orchestrate-october-2026-update-for-builders",
+      "visible_published_or_updated_at": "2026-10-22",
+      "named_entities": ["IBM", "watsonx Orchestrate", "remote MCP", "agent identity"],
+      "upstream_owned_entities": ["IBM", "watsonx Orchestrate", "Model Context Protocol"],
+      "factual_summary": "IBM's builder update describes agent identity, remote-MCP integration, guardrails, and evaluation-oriented controls in an orchestration product.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/governance-and-risk/destructive-command-controls.md": "Bind consequential tool authority to a distinct agent identity and reviewable policy.",
+        "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "Treat identity, scoped remote-tool access, guardrails, and evaluations as a connected control surface.",
+        "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": "Do not allow untrusted tool or content inputs to silently broaden remote-tool authority.",
+        "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "Require identity, authorization, guardrail, and evaluation evidence before promoting remote-tool workflows.",
+        "docs/wiki/source-workflows/source-reconciliation-and-routing.md": "Record product facts as upstream-owned and retain the downstream authorization and evidence implication.",
+        "docs/wiki/coding-practices/layered-ai-code-review-roles.md": "Use independent reviewers to assess authority boundaries and evidence, not merely generated diffs."
+      },
+      "follow_up_note": "Retain the local control implication only; route IBM, product, and protocol background upstream."
+    },
+    {
+      "source_url": "https://openai.com/news/company-announcements/?display=list",
+      "visible_published_or_updated_at": "2026-10-21",
+      "named_entities": ["OpenAI", "usage policies", "distribution partners"],
+      "upstream_owned_entities": ["OpenAI"],
+      "factual_summary": "OpenAI's October 21 newsroom update describes consistent safeguard expectations across distribution partners and usage-policy enforcement.",
+      "why_it_matters_for_leaves": {
+        "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "Include policy enforcement and evidence collection in total operating cost when selecting execution locations.",
+        "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": "Teach operators to recognize policy, authorization, and escalation boundaries before granting autonomy.",
+        "docs/wiki/application-patterns/local-model-runtime-harness.md": "A local runtime does not remove the need to record provider fallback and policy boundaries.",
+        "docs/wiki/source-workflows/public-topic-news-collector.md": "Separate public-source collection from policy conclusions and record source/date evidence.",
+        "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "Review policy inheritance and enforcement evidence across partner or provider boundaries."
+      },
+      "follow_up_note": "Do not duplicate OpenAI policy background locally; retain only the cross-boundary operating-control implication."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://www.anthropic.com/news/distillation-defenses",
+      "visible_published_or_updated_at": "2026-10-12",
+      "reason": "Outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "visible_published_or_updated_at": "2026-10-09",
+      "reason": "Outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news",
+      "visible_published_or_updated_at": "2026-10-06",
+      "reason": "Outside the strict seven-day window and broad vendor-program background is upstream-owned."
+    }
+  ],
+  "leaf_results": {
+    "docs/wiki/adoption-and-operating-model/hybrid-agent-infrastructure-economics.md": "qualified_update_mapped",
+    "docs/wiki/adoption-and-operating-model/junior-learning-paths-in-agentic-teams.md": "qualified_update_mapped",
+    "docs/wiki/application-patterns/harness-sizing-by-workflow-complexity.md": "qualified_update_mapped",
+    "docs/wiki/application-patterns/local-model-runtime-harness.md": "qualified_update_mapped",
+    "docs/wiki/application-patterns/structured-output-and-drafter-patterns.md": "qualified_update_mapped",
+    "docs/wiki/application-patterns/user-visible-progress-and-runtime-telemetry.md": "qualified_update_mapped",
+    "docs/wiki/coding-practices/layered-ai-code-review-roles.md": "qualified_update_mapped",
+    "docs/wiki/governance-and-risk/destructive-command-controls.md": "qualified_update_mapped",
+    "docs/wiki/governance-and-risk/governance-controls-for-agents.md": "qualified_update_mapped",
+    "docs/wiki/governance-and-risk/lifecycle-ai-review-gates.md": "qualified_update_mapped",
+    "docs/wiki/governance-and-risk/prompt-injection-and-untrusted-content.md": "qualified_update_mapped",
+    "docs/wiki/governance-and-risk/prototype-to-cloud-promotion-gates.md": "qualified_update_mapped",
+    "docs/wiki/source-workflows/public-topic-news-collector.md": "qualified_update_mapped",
+    "docs/wiki/source-workflows/raw-project-wiki-monitor.md": "qualified_update_mapped",
+    "docs/wiki/source-workflows/source-reconciliation-and-routing.md": "qualified_update_mapped"
+  },
+  "follow_up_notes": [
+    "Raw-only watch: do not edit docs/wiki in this run.",
+    "Route broad company, product, model, and protocol background to the upstream AI wiki.",
+    "Use normal raw-source ingest and verifier gates before promoting any implication."
+  ]
+}
