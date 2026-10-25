@@ -1,0 +1,118 @@
+{
+  "automation": "AI Dev Wiki Topic News Collector",
+  "run_timestamp_utc": "2026-10-25T00:29:03Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-23T00:29:03Z",
+    "end_inclusive_utc": "2026-10-25T00:29:03Z",
+    "policy": "Only sources with a visible, unambiguous timestamp inside this two-day window qualify. Date-only sources on the lower-boundary calendar date are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": "The upstream AI wiki owns GitHub, GitHub Agentic Workflows, Copilot, Codex, MCP, and broad workflow-tool coverage. This artifact retains only downstream operating, verification, and governance implications; it creates no local entity coverage.",
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "GitHub Agentic Workflows: allow constrained status-only jobs after detection",
+      "source_url": "https://github.com/github/gh-aw/commit/61a6d3721333f79873f73615653c173fee49fcbd",
+      "source_type": "public upstream repository commit",
+      "visible_date": "2026-10-24T18:34:15Z",
+      "factual_summary": "The workflow compiler added a `detection-gate: status-only` exception for downstream leaf jobs that need to report status after failed, skipped, cancelled, or warn-mode detection. The exception preserves detection ordering but rejects artifact downloads, opaque reusable workflows, reads of agent-derived outputs, and agent or safe-output file references; only constrained status/result reporting is permitted.",
+      "why_it_matters_for_ai_assisted_development_practice": "An operational notification or cleanup exception should be modeled as a narrow, machine-checkable non-data path, not as an `always()` bypass for a failed agent-data gate. Keep the exception leaf-only, preserve ordering, and lint every route that could consume untrusted agent output.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "GitHub Actions",
+        "detection-gate: status-only"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Agentic Workflows",
+        "GitHub Actions"
+      ],
+      "upstream_routing_note": "Route platform and product details to the upstream AI wiki. A later local synthesis may retain only the constrained post-verification status-path pattern."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "GitHub Agentic Workflows: preflight agent-assignment credentials without exposing secrets",
+      "source_url": "https://github.com/github/gh-aw/commit/ebaafa7a111edabc56494aee480ade130f7566fe",
+      "source_type": "public upstream repository commit",
+      "visible_date": "2026-10-24T17:57:45Z",
+      "factual_summary": "The change preflights a selected assignment credential once before processing agent assignments. Authentication failure skips assignments and emits a single diagnostic and summary without exposing the token; non-authentication preflight failures do not block later target-specific assignment attempts. The associated documentation says a green workflow alone does not prove assignment occurred.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat agent handoff authorization as a distinct, traceable control: validate credentials once, avoid repeated noisy failures, preserve non-secret diagnostics, and report assignment evidence separately from overall workflow success.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "GitHub Copilot cloud agent",
+        "assign-to-agent"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Agentic Workflows",
+        "GitHub Copilot"
+      ],
+      "upstream_routing_note": "Route GitHub and Copilot implementation coverage upstream. A downstream page may use only the portable credential-preflight and independent assignment-evidence practice."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Agent of the Day – October 23, 2026: Ponytail Reviewer",
+      "source_url": "https://github.github.com/gh-aw/blog/authors/copilot/",
+      "visible_date": "2026-10-23",
+      "reason": "The official practice example is relevant, but its date-only stamp is on the lower-boundary calendar date; inclusion inside the strict UTC window cannot be established."
+    },
+    {
+      "source_title": "Zed pull request: agent: Fix context compaction during long tool-driven turns",
+      "source_url": "https://github.com/zed-industries/zed/pull/66041",
+      "visible_date": "2026-10-23",
+      "reason": "An open pull request is not release or merge evidence; it does not establish shipped behavior."
+    },
+    {
+      "source_title": "Zed pull request: Fix terminal permission approval dropdown missing quoted and complex commands",
+      "source_url": "https://github.com/zed-industries/zed/pull/66088",
+      "visible_date": "2026-10-24",
+      "reason": "Open pull-request metadata is insufficient to establish delivered permission-handling behavior."
+    },
+    {
+      "source_title": "Agent Orchestrator pull request: preserve failed reviewer errors in review runs and CLI",
+      "source_url": "https://github.com/OrchestratorInc/agent-orchestrator/pull/7174",
+      "visible_date": "2026-10-24",
+      "reason": "Open pull-request metadata is not a released or merged practice update."
+    },
+    {
+      "source_title": "Codex issue #56705: auto-review loses human authorization across established chat delegation",
+      "source_url": "https://github.com/openai/codex/issues/56705",
+      "visible_date": "2026-10-24",
+      "reason": "This is a user-submitted incident report with no minimal independent reproduction or established root cause; retain no product-behavior claim from it."
+    },
+    {
+      "source_title": "Codex issue #56684: approval selection leaves an existing chat on auto_review",
+      "source_url": "https://github.com/openai/codex/issues/56684",
+      "visible_date": "2026-10-24",
+      "reason": "A user-submitted report is not release evidence; its described local diagnostics do not establish general behavior."
+    },
+    {
+      "source_title": "GitHub ai-coding topic results",
+      "source_url": "https://github.com/topics/ai-coding",
+      "visible_date": "2026-10-24",
+      "reason": "Repository-topic update labels are catalog activity, not attributable practice-level source updates."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact in raw until a separate ingest evaluates whether the constrained status-path and assignment-evidence practices warrant durable local guidance.",
+    "Do not treat any excluded issue or open pull request as proof of a released platform behavior.",
+    "No docs/wiki page or raw/processed file was changed by this collector."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "scoped_whitespace_check": "passed (git diff --no-index --check against /dev/null)"
+  }
+}
