@@ -9,6 +9,16 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json) and [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json) refine authority receipts. IBM, GitHub, Copilot, and MCP product details remain upstream-owned. For a remote capability or agent assignment, record:
+
+- The selected workload identity.
+- The credential-preflight result without the secret.
+- The delegated scope.
+- The guardrail and evaluation result.
+- A distinct assignment or invocation outcome.
+
+A green parent workflow is not proof that the delegated action occurred.
+
 The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) reinforces that remotely discovered agents and MCP capabilities need an identity-provider-backed agent identity. An authority record should not treat discovery as authorization; it should preserve:
 
 - The agent owner.
@@ -143,6 +153,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json)
+- [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json)
 - [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -209,6 +221,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with remote-capability identity, non-secret credential preflight, and independent delegated-action receipt evidence.
 - Maintained on 2026-10-23 with identity-provider-backed remote-agent identity and guardrail-evidence requirements.
 - Maintained on 2026-10-16 with identity-control checklist evidence; next check should preserve owner, revocation, and audit requirements.
 

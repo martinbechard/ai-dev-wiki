@@ -9,6 +9,15 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json) adds a constrained post-gate reporting pattern. After a failed, skipped, cancelled, or warning detection gate, a leaf job may emit status only when the route cannot:
+
+- Download artifacts.
+- Invoke opaque reusable workflows.
+- Read agent-derived outputs.
+- Reference agent or safe-output files.
+
+This is a machine-checkable non-data path, not a general `always()` bypass; GitHub workflow implementation details remain upstream-owned.
+
 The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds agentic identity and runtime-security evidence. Local execution-edge authorization should treat non-human identities, MCP server access, browser or computer-use sessions, and autonomous runtime actions as distinct authorization edges with scoped credentials, revocation, monitoring, and human escalation paths.
 
 The September 27 topic news collector source adds tool-sandbox and MCP approval evidence from coding-agent and enterprise MCP sources. Weekly coding-agent configuration updates make permission fixes, symlink write handling, sandbox boundaries, prompt-injection fixes, and MCP metadata limits part of execution-edge review, while enterprise MCP approval guidance reinforces publisher, transport, authentication, least-privilege, and audit-log checks before a server is exposed to agents.
@@ -63,6 +72,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
@@ -109,6 +119,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with a constrained status-only post-gate route that forbids agent-data consumption.
 - Maintained on 2026-10-12 with non-human identity, MCP-server access, browser/computer-use session, revocation, monitoring, and escalation evidence.
 - Maintained on 2026-09-27 with coding-agent permission, sandbox, MCP publisher, transport, authentication, and audit-log approval evidence.
 - Maintained on 2026-10-05 with hosted-browser approval, remote-CLI MCP, cloud-identity, sandbox, containment, and monitoring evidence.

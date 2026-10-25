@@ -9,6 +9,14 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json) adds cross-boundary policy evidence. Broad OpenAI policy context remains upstream-owned. Promotion and review gates should verify:
+
+- The inherited policy.
+- The effective enforcement point.
+- The receipt from each provider or distribution boundary.
+
+Do not assume that a local policy statement survived the handoff.
+
 AI review gates apply before implementation, not only after code exists. Requirements, PRDs, design inputs, threat assumptions, acceptance criteria, and code changes can each be reviewed by an assistant when the source package and acceptance bar are explicit.
 
 The local practice is to place AI review at lifecycle boundaries where ambiguity is cheapest to fix. A review gate should state the artifact under review, the source authorities, the questions the assistant may judge, and the human decision that remains outside the model. Broad company examples from the [topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json) remain upstream-owned; this page owns the local lifecycle gate pattern.
@@ -68,6 +76,7 @@ The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai
 
 ## Authoritative Sources
 
+- [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
 - [August 29 topic news collector source](../../../raw/processed/2026-08-29/ai-dev-wiki-topic-news-collector-2026-08-29T003241Z.json)
 - [Topic news collector source](../../../raw/processed/2026-06-24/ai-dev-wiki-topic-news-collector-2026-06-24T203219-0400.json)
@@ -115,6 +124,7 @@ The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-24 with provider-boundary policy inheritance, enforcement, and receipt evidence for lifecycle promotion gates.
 - Maintained on 2026-09-19 with misalignment incident, agentic self-modification, evaluator-access, autonomy-metric, and fleet-monitoring gate evidence.
 - Maintained on 2026-08-29 with prompt-version, managed-policy, long-running runtime, scoped-permission, observability, and prototype-promotion gate evidence.
 - Created on 2026-06-24 from public source signals about AI review moving from code review into PRD and design governance.
