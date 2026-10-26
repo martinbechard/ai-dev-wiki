@@ -1,0 +1,137 @@
+{
+  "automation": "AI Dev Wiki Topic News Collector",
+  "run_timestamp_utc": "2026-10-26T00:27:34Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-24T00:27:34Z",
+    "end_inclusive_utc": "2026-10-26T00:27:34Z",
+    "policy": "Only public sources with a visible, unambiguous timestamp inside this two-day window qualify. Missing, ambiguous, future-dated, and boundary-only dates are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation_boundary": "The upstream AI wiki owns GitHub, GitHub Agentic Workflows, GitHub Actions, MCP, and broad workflow-tool coverage. This artifact retains only downstream application-harness, verification, and governance implications; it creates no local entity coverage.",
+  "qualifying_updates": [
+    {
+      "topic_root": "docs/wiki/application-patterns",
+      "source_title": "GitHub Agentic Workflows: stage-aware partial results for MCP compile and audit timeouts",
+      "source_url": "https://github.com/github/gh-aw/commit/206d3a9b595f48107335696f704c87e94afc68c1",
+      "source_type": "public upstream repository commit and accompanying ADR",
+      "visible_date": "2026-10-25T18:41:53Z",
+      "factual_summary": "The merged change documents a common timeout envelope for MCP compile and audit operations: `partial: true`, `complete: false`, a named timeout stage, and available structured partial results. It reserves response time before a caller deadline, writes atomic compile-progress snapshots, bounds child-process pipe draining, and withholds raw subprocess diagnostics from timeout envelopes because they can be sensitive or untrusted.",
+      "why_it_matters_for_ai_assisted_development_practice": "Long-running tool calls should surface a typed, stage-specific incomplete result rather than a generic failure. Preserve safely bounded progress and recovery guidance, but keep raw diagnostics out of the response path until their sensitivity and trust status are assessed.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "GitHub Actions",
+        "Model Context Protocol",
+        "compile",
+        "audit"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Agentic Workflows",
+        "GitHub Actions",
+        "Model Context Protocol"
+      ],
+      "upstream_routing_note": "Route product, protocol, and implementation details to the upstream AI wiki. A later local synthesis may retain only the typed-partial-result, diagnostic-redaction, and recovery-evidence pattern."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "GitHub Agentic Workflows: credential handoffs through step outputs in secret-leak analysis",
+      "source_url": "https://github.com/github/gh-aw/commit/cb5c114f692c3dc29eb87cc0a6ef00b50a15cb5b",
+      "source_type": "public upstream repository commit",
+      "visible_date": "2026-10-25T13:53:37Z",
+      "factual_summary": "The merged commit explicitly extends secret-leak analysis to track credential handoffs through workflow step outputs.",
+      "why_it_matters_for_ai_assisted_development_practice": "Security review of agent or CI workflows should follow credentials across explicit output-passing boundaries, not only inspect the step that first reads a secret. Retain the handoff path as auditable evidence without collecting credential values.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "GitHub Actions",
+        "secret-leak analysis",
+        "workflow step outputs"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Agentic Workflows",
+        "GitHub Actions"
+      ],
+      "upstream_routing_note": "Route product and workflow-engine details to the upstream AI wiki. A later local synthesis may retain only the credential-provenance and output-handoff audit pattern."
+    },
+    {
+      "topic_root": "docs/wiki/governance-and-risk",
+      "source_title": "GitHub Agentic Workflows: prevent skipped threat detection from reporting inherited agent tokens",
+      "source_url": "https://github.com/github/gh-aw/commit/a81e49737f6b6babe04b5952e438e0e2f243c2b7",
+      "source_type": "public upstream repository commit",
+      "visible_date": "2026-10-25T20:52:00Z",
+      "factual_summary": "The merged commit prevents a skipped threat-detection path from reporting inherited agent tokens.",
+      "why_it_matters_for_ai_assisted_development_practice": "A skipped security control must not become an accidental authorization path for inherited credentials. Treat skipped, failed, cancelled, and warning states as distinct policy states, and test that post-control reports cannot expose or reuse agent tokens.",
+      "named_entities": [
+        "GitHub Agentic Workflows",
+        "GitHub Actions",
+        "threat detection",
+        "agent tokens"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Agentic Workflows",
+        "GitHub Actions"
+      ],
+      "upstream_routing_note": "Route product and workflow-engine details to the upstream AI wiki. A later local synthesis may retain only the skipped-control and inherited-credential safety rule."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "Agensh open-source announcement",
+      "source_url": "https://github.com/microsoft/Agensh",
+      "visible_date": "2026-10-24",
+      "reason": "The repository README gives only a date on the lower-boundary calendar day; inclusion after the strict UTC cutoff cannot be established. The named multi-agent harness is also upstream-owned."
+    },
+    {
+      "source_title": "OpenAI Working with evals guide",
+      "source_url": "https://developers.openai.com/api/docs/guides/evals",
+      "visible_date": "not visible as a qualifying publication or update timestamp",
+      "reason": "Current-page content discusses future deprecation dates but does not supply a visible publication or update timestamp inside the window."
+    },
+    {
+      "source_title": "Zed pull request: context compaction during long tool-driven turns",
+      "source_url": "https://github.com/zed-industries/zed/pull/66041",
+      "visible_date": "2026-10-23",
+      "reason": "It is outside the strict two-day window and remains open pull-request metadata rather than delivered behavior."
+    },
+    {
+      "source_title": "Zed pull request: terminal permission approval dropdown",
+      "source_url": "https://github.com/zed-industries/zed/pull/66088",
+      "visible_date": "2026-10-24",
+      "reason": "Open pull-request metadata is not release or merge evidence for permission-handling behavior."
+    },
+    {
+      "source_title": "GitHub ai-coding topic results",
+      "source_url": "https://github.com/topics/ai-coding",
+      "visible_date": "2026-10-25",
+      "reason": "Topic-page activity is a repository catalog signal, not an attributable practice-level update."
+    },
+    {
+      "source_title": "Anthropic Newsroom",
+      "source_url": "https://www.anthropic.com/news?subjects=announcements",
+      "visible_date": "2026-10-21",
+      "reason": "The nearest relevant dated announcement is outside the strict window and concerns upstream-owned product coverage."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact in raw until a separate ingest decides whether the partial-result contract, credential-handoff analysis, and skipped-control credential boundary merit durable local guidance.",
+    "Do not treat excluded date-only pages, catalog activity, open pull requests, or stale documentation as proof of released practice behavior.",
+    "No docs/wiki page or raw/processed file was changed by this collector."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "scoped_whitespace_check": "passed (git diff --no-index --check against /dev/null)"
+  }
+}
