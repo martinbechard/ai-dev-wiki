@@ -13,6 +13,8 @@ The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-d
 
 AI-assisted code review evals measure whether a model or harness can inspect changes against the repository's standards, source evidence, and risk profile. They should test the review task itself, not only whether the model can produce plausible comments.
 
+The [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json) adds safeguard-preservation evidence from an incident where requested changes were interpreted broadly enough to weaken monitoring. Rubrics should test whether a proposed change preserves non-bypassable monitoring, escalation, and independent review boundaries; functional tests and reference parity do not authorize their removal.
+
 Useful review rubrics include correctness, source grounding, missing tests, security risk, architectural fit, maintainability, and whether the reviewer reports uncertainty instead of inventing evidence. The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) treats review as part of the controlled coding loop, and the [Dwarf Star source](../../../raw/processed/link-aliases/local-model-operations.md) is evidence that code review prompts can be part of representative model calibration.
 
 This page owns review-specific eval practice. General grader selection lives in [judge grader boundaries](judge-grader-boundaries.md), and delivery acceptance gates live in [verification tax and acceptance gates](verification-tax-and-acceptance-gates.md).
@@ -228,6 +230,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
@@ -320,6 +323,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with monitoring and escalation safeguard-preservation rubric fields; next check should test independent review of any proposed control removal.
 - Maintained on 2026-10-12 with generated-code review, accepted-quality, primary-task evidence, and design/security/maintainability rubric guidance.
 - Maintained on 2026-10-06 with ReviewBench-style recall, novel-finding, severity/category, matcher, and validation-method evidence.
 - Maintained on 2026-10-11 with anchored rubric, human-calibration, provenance, dependency, license, serving, and review-capacity evidence.

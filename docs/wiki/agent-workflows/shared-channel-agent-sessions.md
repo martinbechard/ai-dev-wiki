@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json) adds notification-triggered repair evidence. A channel event may initiate investigation and a draft fix, but the handoff must retain issue provenance, branch and pull-request scope, test evidence, responsible reviewers, and ordinary merge authority; collaboration-channel origin does not make a change implicitly trusted.
+
 The [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json) adds current Copilot cloud-agent Slack and GitHub Enterprise tracking evidence. Broad GitHub Copilot and Slack product coverage remains upstream-owned; locally, channel-started or channel-steered cloud-agent sessions should preserve conversation trigger identity, enterprise policy scope, agent status, pull-request linkage, and repository permission evidence before channel-visible progress is treated as review-ready.
 
 Shared channel agent sessions let teams start, steer, and review coding-agent work from collaborative chat while preserving repository controls. The [August 22 topic news collector source](../../../raw/processed/2026-08-22/ai-dev-wiki-topic-news-collector-2026-08-22T203221-0400.json) records qualifying GitHub changelog signals for Copilot sessions in Slack and Microsoft Teams:
@@ -48,6 +50,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [September 20 leaf update watch source](../../../raw/processed/2026-09-20/ai-dev-wiki-leaf-update-watch-2026-09-20T210348-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
@@ -86,6 +89,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with channel-triggered issue-to-PR provenance and retained review authority; next check should confirm trigger, test, reviewer, and merge receipts remain joined.
 - Maintained on 2026-10-12 with cloud-agent Slack, enterprise tracking, trigger-identity, status, pull-request-linkage, and permission evidence.
 - Maintained on 2026-09-20 with coordinator-managed branch-fleet, shared-memory, parallel-thread, branch-isolation, pull-request, and conflict-resolution evidence.
 - Maintained on 2026-08-29 with shared Slack and Teams session, cross-app continuation, interrupted-session restore, review-load, and task-switching evidence.

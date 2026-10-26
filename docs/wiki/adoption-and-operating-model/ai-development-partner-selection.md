@@ -15,6 +15,8 @@ The [partner-selection query fragment](../../../raw/processed/query/2026-08-20-a
 
 Broad company, product, model, and framework comparisons remain upstream-owned. Locally, the durable question is whether the partner can operate inside this wiki's workflow, governance, verification, context, and cost disciplines.
 
+The [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json) adds customization-telemetry evidence. Adoption claims should distinguish named skill, agent, MCP-server, command, and plugin activity from successful workflow outcomes, and should state client-telemetry coverage limits rather than presenting the resulting counts as exact accounting.
+
 The [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json) adds market evidence for sovereignty and signed governance receipts. Product and company background stays upstream-owned; locally, partner selection should ask whether a partner can prove customer-controlled execution, data masking, prompt-injection screening, model/tool/agent communication governance, customer-held encryption keys when required, and signed evidence packs rather than only claim regulated-sector readiness.
 
 The [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json) adds enterprise coding-agent trial criteria. A partner or platform proposal should be tested against the actual codebase and workflow for traceability, audit logs, access controls, reviewer attribution, code ownership, CI/CD integration, representative tasks, and delivery evidence rather than demo output volume.
@@ -62,6 +64,7 @@ A selection pilot should use representative tasks and data, include expected fai
 
 ## Authoritative Sources
 
+- [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json)
 - [Partner-selection query fragment](../../../raw/processed/query/2026-08-20-ai-software-development-partner-selection.md)
 - [August 20 leaf update watch source](../../../raw/processed/2026-08-20/ai-dev-wiki-leaf-update-watch-2026-08-20T210330-0400.json)
 - [August 23 topic news collector source](../../../raw/processed/2026-08-23/ai-dev-wiki-topic-news-collector-2026-08-24T003154Z.json)
@@ -109,6 +112,7 @@ A selection pilot should use representative tasks and data, include expected fai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with named-customization and client-coverage telemetry boundaries; next check should keep activity measures separate from outcome evidence.
 - Created on 2026-08-20 from the partner-selection query fragment as a durable procurement and operating-model rubric.
 - Maintained on 2026-08-20 with sovereignty, customer-controlled execution, prompt-injection verdict, governance-receipt, and evidence-pack criteria.
 - Maintained on 2026-08-23 with real-codebase trial, traceability, audit, attribution, code-ownership, and CI/CD integration criteria.

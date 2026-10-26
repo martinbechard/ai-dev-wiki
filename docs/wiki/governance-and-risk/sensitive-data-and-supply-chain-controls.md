@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 26 topic news collector source](../../../raw/processed/2026-10-26/ai-dev-wiki-topic-news-collector-2026-10-26T002734Z.json) adds workflow-output credential-provenance and skipped-control safety evidence. Security review must follow credentials across explicit step-output handoffs without recording secret values, and skipped, failed, cancelled, and warning control states must remain distinct so post-control reporting cannot expose or reuse inherited agent tokens.
+
 The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) reinforces that these are auditable supply-chain inputs because they can expand executable instruction and endpoint privilege:
 
 - Installed skills.
@@ -200,6 +202,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 26 topic news collector source](../../../raw/processed/2026-10-26/ai-dev-wiki-topic-news-collector-2026-10-26T002734Z.json)
 - [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
@@ -304,6 +307,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-26 with credential-output provenance and skipped-control inherited-token safety; next check should test all non-success control states without retaining secret values.
 - Maintained on 2026-10-21 with skill, instruction-bundle, and MCP-configuration supply-chain controls; next check should verify their inventory and permission evidence remain current.
 - Maintained on 2026-10-18 with agent dependency license-policy, exception-evidence, and merge-gate guidance.
 

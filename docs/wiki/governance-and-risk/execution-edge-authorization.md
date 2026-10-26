@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json) adds default-inheritance evidence. An unconfigured remote-tool or browser capability requires an explicit policy decision and receipt before it becomes executable; a provider-wide default is configuration context, not evidence that the local task is authorized.
+
 The [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json) adds a constrained post-gate reporting pattern. After a failed, skipped, cancelled, or warning detection gate, a leaf job may emit status only when the route cannot:
 
 - Download artifacts.
@@ -72,6 +74,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json)
 - [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
 - [October 11 leaf update watch source](../../../raw/processed/2026-10-11/ai-dev-wiki-leaf-update-watch-2026-10-11T210546-0400.json)
@@ -119,6 +122,7 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-25 with explicit local authorization for inherited capability defaults; next check should confirm policy receipts name the effective setting and action scope.
 - Maintained on 2026-10-25 with a constrained status-only post-gate route that forbids agent-data consumption.
 - Maintained on 2026-10-12 with non-human identity, MCP-server access, browser/computer-use session, revocation, monitoring, and escalation evidence.
 - Maintained on 2026-09-27 with coding-agent permission, sandbox, MCP publisher, transport, authentication, and audit-log approval evidence.

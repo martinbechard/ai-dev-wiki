@@ -11,6 +11,8 @@ tags: ["application-patterns"]
 
 The September 27 topic news collector source adds deploy-monitoring and audit-trace evidence. Runtime telemetry should distinguish ordinary PR review comments from rollout baselines, production signal comparison, revert-preparation state, and external or tamper-resistant audit records when the agent can modify local session traces.
 
+The [October 26 topic news collector source](../../../raw/processed/2026-10-26/ai-dev-wiki-topic-news-collector-2026-10-26T002734Z.json) adds typed incomplete-result evidence. A timeout response should identify the stage, declare `partial` and `complete` state, preserve only safe structured progress and recovery guidance, and keep raw subprocess diagnostics outside the response until their sensitivity and trust status are assessed.
+
 The [October 1 topic news collector source](../../../raw/processed/2026-10-01/ai-dev-wiki-topic-news-collector-2026-10-01T003327Z.json) adds progress and critic-workflow evidence. Long-running coding-agent workflows should expose clearer real-time status, task progress, selected workflow mode, and critic or review role state, especially when a different model family provides a read-only critique. Progress signals should help users decide whether work is alive, blocked, under critique, or ready for review without treating the status stream as proof of correctness.
 
 The [September 19 leaf update watch source](../../../raw/processed/2026-09-19/ai-dev-wiki-leaf-update-watch-2026-09-19T210158-0400.json) adds agent-runtime migration and enterprise-cost evidence. Runtime telemetry should expose startup overhead, memory use, process supervision, crash recovery, monitoring state, nested model-call volume, background retries, review queue pressure, and accepted-outcome cost when those signals decide whether the workflow is healthy.
@@ -164,6 +166,7 @@ The October 7 raw sources add IDE metric, sandbox, and local-route telemetry evi
 
 ## Authoritative Sources
 
+- [October 26 topic news collector source](../../../raw/processed/2026-10-26/ai-dev-wiki-topic-news-collector-2026-10-26T002734Z.json)
 - [October 6 topic news collector source](../../../raw/processed/2026-10-05/ai-dev-wiki-topic-news-collector-2026-10-06T003214Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [October 7 leaf update watch source](../../../raw/processed/2026-10-07/ai-dev-wiki-leaf-update-watch-2026-10-07T210149-0400.json)
@@ -242,6 +245,7 @@ The October 7 raw sources add IDE metric, sandbox, and local-route telemetry evi
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-26 with typed timeout-stage, partial-result, recovery, and diagnostic-redaction telemetry guidance; next check should confirm incomplete envelopes expose no unreviewed diagnostic content.
 - Maintained on 2026-09-27 with rollout baseline, production-signal, revert-preparation, security-review status, and tamper-resistant audit evidence.
 - Maintained on 2026-10-04 with workflow-journey accountability, cross-system action, human-judgment, owner-handoff, and error-amplification evidence.
 - Maintained on 2026-10-01 with multi-model workflow mode, read-only critic, long-task status, clearer progress, and real-time update evidence.
