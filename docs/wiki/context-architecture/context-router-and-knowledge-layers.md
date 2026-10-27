@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) sharpens a layer boundary: active context controls, readable execution state, replay data, and durable records must remain distinguishable. Compaction and cache-management claims are implementation-specific evidence, not a reason to erase provenance.
+
 The [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json) adds a customer-story adoption signal: begin coding-agent work with an explicit plan and bounded development environment, then govern knowledge as a lifecycle of source intake, verification, controlled agent access, and durable sharing of validated learning. The reported outcomes are not a general productivity benchmark; OpenAI and Stack Overflow product coverage remain upstream-owned.
 
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise context-engineering evidence. Context routers for large codebases should separate procedural playbooks, raw code search, docs/wiki retrieval, runbooks, observability context, feature-flag state, task-system state, and data-platform tools so context overload, repeated tool calls, compaction loss, and missing tribal knowledge have visible owners.
@@ -84,6 +86,8 @@ The [October 20 topic news collector source](../../../raw/processed/2026-10-20/a
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-21T003438Z.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
@@ -130,6 +134,8 @@ The [October 20 topic news collector source](../../../raw/processed/2026-10-20/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with active-context, replay, and durable-record separation guidance from the October 26 leaf watch.
 
 - Maintained on 2026-10-20 with shared semantic-layer accountability, refresh, provenance, and authorization evidence.
 - Maintained on 2026-10-18 with explicit-plan, bounded-environment, and verified-knowledge-lifecycle evidence.

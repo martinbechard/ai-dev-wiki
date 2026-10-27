@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) adds a calibration design: preserve the inspected workspace and executor evidence, vary the independent pre-edit plan or planner, and compare outcomes across representative harnesses. Treat research results as scoped evidence rather than a universal orchestration rule.
+
 Model and harness changes need calibration against representative work, not only generic benchmark scores. A workflow can depend on code review, tool calls, long-context behavior, retrieval, latency, or local runtime choices, so the calibration set should include those task shapes.
 
 The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds harness-efficiency, review-coverage, and vendor-metric caveat evidence. Calibration should test whether compaction, delegated reading, and observation handling reduce cost without losing task evidence, and it should record evaluator authority and workload mix when external session-success curves are used as directional evidence.
@@ -78,6 +80,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-26T003140Z.json)
@@ -125,6 +129,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with pre-edit planning calibration guidance from the October 26 leaf watch.
 
 - Maintained on 2026-09-28 with eval-scaffold, judge-calibration, false-approval, abstention, cost, and time-to-resolution evidence.
 - Maintained on 2026-10-13 with evaluation-sandbox, inherited-access, internet-isolation, inter-agent-coordination, and escalation-trigger calibration evidence.

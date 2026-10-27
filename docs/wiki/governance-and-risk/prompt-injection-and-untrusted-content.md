@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) treats silently obtained instruction files as untrusted content. Before an agent works from a Downloads or copied-worktree location, inventory guidance files and separately approve any package installation or configuration change they request; the reported product-specific behavior remains attributed rather than generalized.
+
 The [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) adds fetched-document conversion evidence. Preserve source identity, retrieval date, conversion provenance, and the untrusted-content label when webpages, PDFs, or office documents are made model-readable; experimental conversion convenience does not make the resulting text trusted instruction. Cloudflare tool details remain upstream-owned.
 
 The September 27 topic news collector source adds current coding-agent prompt-injection and trace-tampering evidence. Weekly coding-agent configuration notes make prompt-audit checks, prompt-injection fixes, sandbox boundaries, and permission fixes a recurring release-review concern, while the tamperable-trace source reinforces that an agent with host access may be able to rewrite or delete local evidence after reading hostile or incentive-shaping instructions.
@@ -132,6 +134,8 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
 - [September 27 topic news collector source](../../../raw/processed/2026-09-27/ai-dev-wiki-topic-news-collector-2026-09-28T003233Z.json)
 - [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-dev-wiki-leaf-update-watch-2026-10-03T210454-0400.json)
@@ -193,6 +197,8 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with untrusted instruction-file provenance and approval guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-17 with fetched-document identity, conversion-provenance, and untrusted-content labelling evidence.
 

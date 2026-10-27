@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) adds a reserve-execute-commit control: reserve model, tool, retry, token, and spend capacity before each action, checkpoint the state, and commit the resulting decision record. Post-hoc dashboards cannot substitute for pre-action enforcement.
+
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds evidence-producing harness signals. A coding-agent harness should distinguish guidance from enforcement by exposing post-edit hooks, deterministic tests, read-only reviewer agents, permission rules, and human accept-or-reject gates as separate components with receipts.
 
 The [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json) adds current harness-architecture evidence from public practice sources. Locally, harness component inventories should include the execution loop, tools, memory or context layer, permissions, identity, approvals, observability, durable state, sandboxing, and audit trails as separately owned runtime surfaces instead of treating model quality as the only implementation variable.
@@ -172,6 +174,8 @@ The [October 17 topic news collector source](../../../raw/processed/2026-10-17/a
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 17 topic news collector source](../../../raw/processed/2026-10-17/ai-dev-wiki-topic-news-collector-2026-10-17T002944Z.json)
 
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
@@ -273,6 +277,8 @@ The [October 17 topic news collector source](../../../raw/processed/2026-10-17/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with reserve-execute-commit pre-action control guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-16 with incident-harness context evidence; next check should distinguish usage signals from causal outcome claims.
 

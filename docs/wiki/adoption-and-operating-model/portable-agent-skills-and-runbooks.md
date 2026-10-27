@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) adds runbook-hardening evidence. A portable runbook should declare its credential and diagnostic posture, and a distinct follow-up agent should retain outcome evidence rather than treating the generating agent's completion as proof. Broad GitHub Agentic Workflows coverage remains upstream-owned.
+
 The [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json) adds workflow-based skill-catalog evidence from RuleSkill. Local skill selection should start from the job-to-be-done, provenance, verification status, update recency, and reviewability instead of copying catalog instructions wholesale into always-loaded prompts.
 
 Portable agent skills are reusable procedures that can travel across agent tools without becoming one overloaded prompt. The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) frames the core problem as procedural debt: teams accumulate prompt bloat, repeated setup explanations, fragmented tool-specific rules, and weak verification when each agent harness owns a different copy of the same working method.
@@ -73,6 +75,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md)
@@ -123,6 +127,8 @@ The [October 13 topic news collector source](../../../raw/processed/2026-10-13/a
 - The upstream AI wiki does not yet have JetBrains, WebStorm, or GoLand entity leaves to link for IDE-managed skill product signals.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with constrained credential posture and independent follow-up evidence from the October 26 leaf watch.
 
 - Maintained on 2026-10-12 with workflow-based skill selection, provenance, verification status, update recency, and reviewability guidance.
 - Maintained on 2026-09-21 with skill triggerability, instruction-boundary, and validation-hook evidence.

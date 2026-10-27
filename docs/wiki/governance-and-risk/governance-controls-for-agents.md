@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) requires an external enforcement boundary for reviewed agent configuration. Schema and prohibited-pattern checks can govern versioned definitions, while runtime authorization must check the approved configuration, budget, and requested action before execution.
+
 The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) adds a vendor-authored regulated-workflow framing. Keep these controls separate:
 
 - Session permission.
@@ -249,6 +251,8 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 18 topic news collector source](../../../raw/processed/2026-10-18/ai-dev-wiki-topic-news-collector-2026-10-18T003124Z.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
@@ -364,6 +368,8 @@ The October 11 raw sources add remote-control, context-governance, trust-respons
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with reviewed-configuration and pre-action enforcement guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-21 with separate regulated-workflow controls; next check should verify that session and tool-call records remain independently retrievable from Git history.
 - Maintained on 2026-10-18 with cross-channel authorization, execution, and verified-outcome evidence.

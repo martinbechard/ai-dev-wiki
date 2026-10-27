@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) adds a control-plane/data-plane distinction. Version and review agent definitions, tool lists, permission scopes, and budgets in Git, then have runtime records identify the exact approved configuration commit; instructions alone do not enforce behavior.
+
 The [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json) adds two configuration-governance signals. An inherited global default for generally available agent features or MCP settings is not evidence of an intentional local approval, so teams should record explicit choices and exception scope. Model-policy APIs likewise need:
 
 - A policy owner and target scope.
@@ -209,6 +211,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 22 leaf update watch source](../../../raw/processed/2026-10-22/ai-dev-wiki-leaf-update-watch-2026-10-22T210447-0400.json)
 - [October 8 leaf update watch source](../../../raw/processed/2026-10-08/ai-dev-wiki-leaf-update-watch-2026-10-08T210339-0400.json)
 
@@ -316,6 +320,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with reviewed configuration-to-run provenance guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-22 with inherited-default, explicit-choice, scoped model-policy API, delegated-control, and policy-change-evidence guidance.
 - Maintained on 2026-10-09 with governed pipeline, scoped-token, audit, secret-handling, and runtime-enforcement ownership evidence.

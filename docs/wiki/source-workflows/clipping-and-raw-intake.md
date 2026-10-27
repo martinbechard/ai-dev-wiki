@@ -9,6 +9,8 @@ tags: ["source-workflows"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) reinforces an intake rule for agent workspaces: copied or downloaded instruction artifacts require provenance review before they become active repository guidance. Their requests for dependency installation or configuration mutation need a distinct approval record.
+
 Clipping and raw intake keeps source material in explicit lifecycle folders. [Clippings](../../../Clippings) holds human-saved source notes before review or ingest. [raw](../../../raw) holds unprocessed source artifacts from public collectors, leaf watches, and clipping intake. [raw/processed](../../../raw/processed) holds source artifacts only after they have been synthesized into durable wiki leaves and digests.
 
 The intake boundary keeps source text available as evidence without making it live instruction. Human clippings, public collector output, transcripts, source notes, and JSON artifacts should remain raw until the ingest workflow has read them, mapped recurring concepts into durable leaves, updated digest entries when needed, run project-wiki lint, and resolved any source-link moves.
@@ -34,6 +36,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 - Preserve explicit sharing intent, sensitivity review, structured-output validation, and human acceptance before assistant-mediated private material becomes public documentation.
 
 ## Authoritative Sources
+
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -70,6 +74,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with downloaded-instruction provenance review guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-16 with intake-run-state evidence; next check should preserve source-to-artifact traceability.
 

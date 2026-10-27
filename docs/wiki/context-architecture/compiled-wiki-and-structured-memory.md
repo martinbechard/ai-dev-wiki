@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) reinforces that compaction must preserve retrievable provenance: shorten expendable tool output before durable records, while retaining references that permit later reconstruction. OpenCode product behavior remains upstream-owned.
+
 The [September 19 topic news collector source](../../../raw/processed/2026-09-19/ai-dev-wiki-topic-news-collector-2026-09-20T003157Z.json) adds enterprise procedural-memory evidence. MCP-served playbooks, wiki access, runbooks, observability context, and task-system context can reduce repeated tool calls and missing tribal knowledge only when each memory source has provenance, owner, freshness, access scope, and compaction behavior recorded.
 
 The [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) adds governed-enterprise-memory and reviewed-context-repository evidence. Compiled wiki and structured memory layers should prioritize authority, provenance, access controls, lifecycle metadata, and human-reviewed Markdown acceptance before they rely on bigger context windows, generic memory, or repeated live-tool fetches.
@@ -64,6 +66,8 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [Karpathy wiki versus OpenBrain source](../../../raw/processed/Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most..md)
 - [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
 - [context router and knowledge layers](context-router-and-knowledge-layers.md)
@@ -101,6 +105,8 @@ The [August 5 leaf update watch source](../../../raw/processed/2026-08-05/ai-dev
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with provenance-preserving compaction guidance from the October 26 leaf watch.
 
 - Maintained on 2026-09-19 with enterprise procedural-memory, MCP-served playbook, wiki, runbook, observability, task-system, and compaction-boundary evidence.
 - Maintained on 2026-09-28 with governed-memory, source-authority, lifecycle-metadata, and reviewed-context-repository evidence.

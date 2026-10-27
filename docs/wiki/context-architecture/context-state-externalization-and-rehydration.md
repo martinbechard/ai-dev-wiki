@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) supports separating readable execution state from replay data and retaining references through compaction. Rehydration should recover the decision record and provenance without assuming that active cache state is itself a durable source of truth.
+
 The [October 23 topic news collector source](../../../raw/processed/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json) adds an evidence-to-specification review pattern. For ambiguous modernization or coding work, externalize the following before implementation:
 
 - Source inventory.
@@ -120,6 +122,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 23 topic news collector source](../../../raw/processed/2026-10-23/ai-dev-wiki-topic-news-collector-2026-10-24T003310Z.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [October 12 topic news collector source](../../../raw/processed/2026-10-12/ai-dev-wiki-topic-news-collector-2026-10-12T003118Z.json)
@@ -178,6 +182,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with replay-state and provenance-preserving rehydration guidance from the October 26 leaf watch.
 
 - Maintained on 2026-10-23 with practitioner-sourced evidence-to-specification, conflict, assumption, and unresolved-question review guidance.
 - Maintained on 2026-10-12 with compact handoff packet and mutable-fact refresh evidence.

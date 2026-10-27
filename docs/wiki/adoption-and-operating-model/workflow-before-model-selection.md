@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) treats an independently generated pre-edit plan as a testable workflow intervention. Compare the same inspected workspace and task evidence across planner and harness choices before attributing outcomes to a model brand; PAUSE and benchmark background remain upstream-owned.
+
 Workflow before model selection means the team chooses the work shape before standardizing on a model, coding assistant, or harness. The useful first questions are autonomy level, context sources, allowed tools, approval points, verification expectations, and evidence required for completion.
 
 The [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md) and [gen AI application deck](../../../raw/processed/gen-ai-app-complete.md) separate models, harnesses, and workflows. A model supplies capability, a harness decides how that capability reaches files and tools, and a workflow decides how the work is oriented, planned, edited, tested, reviewed, and handed back.
@@ -196,6 +198,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [September 15 leaf update watch source](../../../raw/processed/2026-09-15/ai-dev-wiki-leaf-update-watch-2026-09-15T210309-0400.json)
 - [September 5 leaf update watch source](../../../raw/processed/2026-09-05/ai-dev-wiki-leaf-update-watch-2026-09-05T210231-0400.json)
 - [September 5 topic news collector source](../../../raw/processed/2026-09-05/ai-dev-wiki-topic-news-collector-2026-09-06T003226Z.json)
@@ -293,6 +297,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with pre-edit planning as a bounded workflow-selection intervention from the October 26 leaf watch.
 
 - Maintained on 2026-10-13 with evaluation-first adoption, permission boundary, memory-expiry, instrumentation, review-capacity, and personal-software productization evidence.
 - Maintained on 2026-10-13 with semantic-layer, knowledge-graph, permitted-data-source, and context-before-model workflow-selection evidence.

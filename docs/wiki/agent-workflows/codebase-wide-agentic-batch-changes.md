@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) adds a pre-edit boundary for broad changes: inspect and reproduce first, then obtain an independent repair plan before consequential source edits. Retain the workspace and trajectory evidence so the intervention can be compared across harnesses.
+
 The [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json) adds modernization-workflow evidence. Codebase-wide modernization should be treated as a repeatable agent workflow with plugin installation review, real-codebase demonstrations, regulated-domain constraints, migration-slice gates, and evidence that large upgrades remain inspectable rather than one-off prompting.
 
 The [September 28 raw sources](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json) and [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json) add review-wall and follow-up-fix evidence. Batch-change workflows should split generated work into reviewable units, track review latency and same-agent follow-up repairs, cap parallel patch interference, and treat merge as an intermediate state until follow-up defect signals are known.
@@ -50,6 +52,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [September 25 topic news collector source](../../../raw/processed/2026-09-25/ai-dev-wiki-topic-news-collector-2026-09-25T003217Z.json)
 - [September 28 topic news collector source](../../../raw/processed/2026-09-28/ai-dev-wiki-topic-news-collector-2026-09-29T003227Z.json)
 - [September 28 leaf update watch source](../../../raw/processed/2026-09-28/ai-dev-wiki-leaf-update-watch-2026-09-28T210333-0400.json)
@@ -82,6 +86,8 @@ The [October 13 leaf update watch source](../../../raw/processed/2026-10-13/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with inspect-reproduce-plan-before-edit guidance from the October 26 leaf watch.
 
 - Maintained on 2026-09-28 with review-wall, follow-up-fix, same-agent-repair, parallel-patch-interference, and review-latency evidence.
 - Maintained on 2026-09-25 with modernization workflow, plugin review, migration gate, and regulated-domain evidence.

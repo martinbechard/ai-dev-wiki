@@ -9,6 +9,8 @@ tags: ["prompt-and-instructions"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) adds an instruction-provenance boundary: instructions discovered in Downloads or copied worktrees are untrusted input until inventoried and reviewed. It also supports versioning approved definitions, permission scopes, tool lists, and budgets in Git while keeping external enforcement separate from instruction text.
+
 Instruction hierarchy is the local practice of deciding which guidance should live in system instructions, developer instructions, repository procedures, task prompts, reusable prompts, agent definitions, or skills. The request package should preserve that hierarchy so durable rules are not rewritten as one-off task text and untrusted sources cannot act like instructions.
 
 Reusable AI workflow assets need distinct responsibilities. The [HVE Core source](../../../raw/processed/microsoft-hve-core.md) is useful evidence because it separates specialized agents, repeatable prompts, coding instructions, and reusable skills into an explicit workflow system. The downstream practice is to keep those artifact types separate: agents describe bounded roles and task behavior, prompts provide repeatable entry points, instructions carry durable standards, and skills package reusable tool or procedure capability. The [Open Skills source](../../../raw/processed/The Skill vs Prompt Problem Everyone Gets Wrong.md) reinforces the boundary by treating a prompt as a one-time request and a skill as a reusable procedure with trigger, scope, tools, output, and verification.
@@ -115,6 +117,8 @@ The [October 14 topic news collector source](../../../raw/processed/2026-10-14/a
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [September 7 topic news collector source](../../../raw/processed/2026-09-07/ai-dev-wiki-topic-news-collector-2026-09-08T003058Z.json)
 - [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai-dev-wiki-leaf-update-watch-2026-09-22T210151-0400.json)
 - [September 23 topic news collector source](../../../raw/processed/2026-09-23/ai-dev-wiki-topic-news-collector-2026-09-23T003135Z.json)
@@ -174,6 +178,8 @@ The [October 14 topic news collector source](../../../raw/processed/2026-10-14/a
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with untrusted-location intake and Git-governed configuration guidance from the October 27 topic collector.
 
 - Maintained on 2026-09-05 with AGENTS.md versus SKILL.md and project-rules versus reusable-skills instruction-layer evidence.
 - Maintained on 2026-09-07 with skill, rules-file, and retrieved-context placement boundaries.

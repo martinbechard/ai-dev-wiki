@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) frames pre-edit planning as a product-judgment gate: hold the execution environment constant, introduce the plan at a known intervention point, and judge the resulting repair with retained evidence rather than a provider label.
+
 Product judgment gates check whether the right thing is being built and whether the delivered experience works for the intended user. The [Studious source](../../../raw/processed/jacquardlabsstudious Studious — a product-judgment workflow for Claude Code quality gates, periodic health reviews, and pre-merge audits that examine each piece of work..md) frames these gates as lightweight review rhythms around AI-assisted building: should-build review, design review, implementation audit, acceptance review, periodic project health review, and context-document maintenance.
 
 The local practice is to pair implementation workflow with judgment workflow. Coding agents can make building cheaper, but product review, design review, audit, and acceptance checks keep the team from shipping the wrong work or a weak experience. These gates complement [code review evals and rubrics](code-review-evals-and-rubrics.md) by reviewing product fit and user-facing delivery, not only code risk.
@@ -56,6 +58,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [August 28 leaf update watch source](../../../raw/processed/2026-08-28/ai-dev-wiki-leaf-update-watch-2026-08-28T210306-0400.json)
@@ -98,6 +102,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with pre-edit planning intervention evidence from the October 26 leaf watch.
 
 - Maintained on 2026-09-28 with eval-suite, review-load, traceability, follow-up-fix, and verification-bottleneck product-gate evidence.
 - Maintained on 2026-10-13 with deterministic PR-gate, product-intent, bloated-diff, reviewer-load, and generated-change-risk evidence.

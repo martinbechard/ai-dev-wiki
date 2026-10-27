@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) supports a distinct second-pass quality gate: retain the outcome of successive follow-up runs and do not treat a generating agent's success signal as sufficient evidence. The GitHub Agentic Workflows release context remains upstream-owned.
+
 LLM observability becomes a quality gate when traces, evals, prompt versions, datasets, and release decisions are connected. A trace dashboard by itself is reactive debugging; a governed quality gate turns production failures, prompt experiments, model routes, and tool-call traces into regression evidence before a change reaches users.
 
 The [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json) adds compaction-efficiency, review-coverage, compaction-summary, and typed-decision evidence. Observability gates should join token traffic, delegated reading, observation handling, final-claim coverage, compaction events, and typed probability-bearing gate outputs so harness improvements and agent claims can be checked against traces rather than accepted from summaries.
@@ -81,6 +83,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [September 21 leaf update watch source](../../../raw/processed/2026-09-21/ai-dev-wiki-leaf-update-watch-2026-09-21T210258-0400.json)
 - [September 16 topic news collector source](../../../raw/processed/2026-09-16/ai-dev-wiki-topic-news-collector-2026-09-16T003033Z.json)
@@ -126,6 +130,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with independent follow-up and retained-run-evidence guidance from the October 26 leaf watch.
 
 - Maintained on 2026-09-28 with AI-activity traceability, review-load, follow-up-fix, scoped-rerun, and severity-triage evidence.
 - Maintained on 2026-10-13 with inherited-access, evaluation-environment, inter-agent coordination, isolation-bypass, escalation, and early-warning telemetry evidence.

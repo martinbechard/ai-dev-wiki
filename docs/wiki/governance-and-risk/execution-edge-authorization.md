@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) adds a pre-execution budget and resume boundary. The execution edge should reserve applicable limits, recheck authority on resume, and emit a permit-or-deny record that identifies the exact approved configuration and attempted side effect.
+
 The [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json) adds default-inheritance evidence. An unconfigured remote-tool or browser capability requires an explicit policy decision and receipt before it becomes executable; a provider-wide default is configuration context, not evidence that the local task is authorized.
 
 The [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json) adds a constrained post-gate reporting pattern. After a failed, skipped, cancelled, or warning detection gate, a leaf job may emit status only when the route cannot:
@@ -74,6 +76,8 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 25 leaf update watch source](../../../raw/processed/2026-10-25/ai-dev-wiki-leaf-update-watch-2026-10-25T210004-0400.json)
 - [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json)
 - [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T140043-0400.json)
@@ -121,6 +125,8 @@ The [October 19 leaf update watch source](../../../raw/processed/2026-10-19/ai-d
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with pre-execution reserve and resume authorization guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-25 with explicit local authorization for inherited capability defaults; next check should confirm policy receipts name the effective setting and action scope.
 - Maintained on 2026-10-25 with a constrained status-only post-gate route that forbids agent-data consumption.

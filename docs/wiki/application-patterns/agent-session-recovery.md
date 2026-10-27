@@ -9,6 +9,8 @@ tags: ["application-patterns"]
 
 ## Current Understanding
 
+The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) adds a resume fence: a paused session must recheck authority, budget, credentials, rate limits, and blockers in a read-only phase before it can emit another side effect. Retain the permit-or-deny decision with the attempted action.
+
 The [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) adds persistent-browser evidence. A stateful browser session is a credential-bearing capability, not a stateless retrieval tool: record its owner, lifecycle, recovery behavior, telemetry, and the point at which a restart loses session state. Cloudflare product behavior remains upstream-owned.
 
 The [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json) adds crash and kill recovery evidence from an upstream-owned coding-agent release index. Recovery checks should confirm whether parallel-tool-session turns survived the interruption, whether resume or continue restored the intended state, and whether diagnostic logs or MCP error surfaces were redacted enough to avoid credential leakage during recovery.
@@ -68,6 +70,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 
 ## Authoritative Sources
 
+- [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
+
 - [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
 - [October 2 leaf update watch source](../../../raw/processed/2026-10-02/ai-dev-wiki-leaf-update-watch-2026-10-01T210310-0400.json)
 - [September 24 leaf update watch source](../../../raw/processed/2026-09-24/ai-dev-wiki-leaf-update-watch-2026-09-24T210226-0400.json)
@@ -110,6 +114,8 @@ The [September 17 leaf update watch source](../../../raw/processed/2026-09-17/ai
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with read-only resume-fence and decision-record guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-17 with persistent-browser ownership, credential boundary, telemetry, and restart-loss evidence.
 

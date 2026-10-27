@@ -9,6 +9,8 @@ tags: ["context-architecture"]
 
 ## Current Understanding
 
+The [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json) adds two selection rules: preferentially compact older tool output while preserving references needed to rehydrate the record, and identify whether an optimization changes active attention state or the textual trajectory. Reported cache results remain bounded by the evaluated serving setup.
+
 Context selection decides what evidence the model sees for a request. The model does not remember the repository; every step only knows the instructions, selected history, file excerpts, command output, tool results, and task details that the harness provides.
 
 More context can reduce guessing, but it can also increase cost, latency, and distraction. Compaction summarizes, drops, or selects context so the useful evidence stays in view while unrelated history, stale files, and oversized tool output stay out of the request.
@@ -129,6 +131,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 
 ## Authoritative Sources
 
+- [October 26 leaf update watch source](../../../raw/processed/2026-10-26/ai-dev-wiki-leaf-update-watch-2026-10-26T210440-0400.json)
+
 - [October 19 evening leaf update watch source](../../../raw/processed/2026-10-19/ai-dev-wiki-leaf-update-watch-2026-10-19T205728-0400.json)
 - [October 5 leaf update watch source](../../../raw/processed/2026-10-05/ai-dev-wiki-leaf-update-watch-2026-10-05T210255-0400.json)
 - [October 7 topic news collector source](../../../raw/processed/2026-10-06/ai-dev-wiki-topic-news-collector-2026-10-07T003059Z.json)
@@ -198,6 +202,8 @@ The [October 19 evening leaf update watch source](../../../raw/processed/2026-10
 - No open wiki questions are recorded for this topic.
 
 ## Maintenance Notes
+
+- Maintained on 2026-10-27 with background-compaction and active-cache boundary guidance from the October 26 leaf watch.
 
 - Maintained on 2026-10-08 with Atlassian context-to-delivery evidence for planning, code graph, documentation, decisions, review, incident, measurement, and return-path context.
 - Maintained on 2026-10-06 with governed turn-packet, provenance, permission, expiry, classification, access, and freshness evidence.
