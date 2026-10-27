@@ -1,0 +1,120 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp": "2026-10-26T21:04:40-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-19T21:04:40-0400",
+    "end_inclusive": "2026-10-26T21:04:40-0400"
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+    "docs/wiki/adoption-and-operating-model/senior-led-agentic-execution-pods.md",
+    "docs/wiki/adoption-and-operating-model/tier-specific-assistant-conventions.md",
+    "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+    "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+    "docs/wiki/agent-workflows/deep-research-and-writing-workflows.md",
+    "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+    "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/context-selection-and-compaction.md",
+    "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md",
+    "docs/wiki/context-architecture/lifespan-organized-documentation.md",
+    "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+    "docs/wiki/verification-and-evals/llm-observability-quality-gates.md",
+    "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+    "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+  ],
+  "source_urls_checked": [
+    "https://github.github.com/gh-aw/blog/2026-10-26-weekly-update/",
+    "https://github.github.com/gh-aw/blog/2026-10-23-agent-of-the-day/",
+    "https://opencode.ai/changelog",
+    "https://arxiv.org/abs/2610.29870",
+    "https://arxiv.org/abs/2610.28577",
+    "https://alignment.openai.com/",
+    "https://www.anthropic.com/news"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "gh-aw-hardening-and-second-pass-2026-10-26",
+      "source_url": "https://github.github.com/gh-aw/blog/2026-10-26-weekly-update/",
+      "visible_published_or_updated_at": "2026-10-26",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/portable-agent-skills-and-runbooks.md",
+        "docs/wiki/verification-and-evals/llm-observability-quality-gates.md"
+      ],
+      "factual_summary": "GitHub Agentic Workflows reported releases through v0.93.5 with stronger static analysis, safer credential handling, and secret-safe failure diagnostics. It also describes a separate daily documentation-healer pass that proposes fixes after an updater, and records the outcome of successive runs.",
+      "why_it_matters": "A portable runbook should declare its constrained credential and diagnostic posture. Quality gates can use a distinct follow-up agent and retained run evidence instead of treating a generating agent's completion as sufficient proof.",
+      "named_entities": ["GitHub Agentic Workflows", "gh-aw", "Daily Documentation Healer"],
+      "upstream_owned_entities": ["GitHub Agentic Workflows", "gh-aw"],
+      "follow_up_note": "Keep gh-aw product and release coverage upstream; consider only the local runbook-hardening and independent-follow-up implications during ingest."
+    },
+    {
+      "id": "opencode-background-compaction-and-mcp-elicitation-2026-10-23",
+      "source_url": "https://opencode.ai/changelog",
+      "visible_published_or_updated_at": "2026-10-23",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/compiled-wiki-and-structured-memory.md",
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "factual_summary": "OpenCode v2.1.4 added experimental background compaction near a session threshold, shortens older tool output first when a compaction request exceeds provider limits, and surfaces MCP input forms rather than timing out. Its v2.1 release records retained-message references for compaction and separates replay data from readable execution state.",
+      "why_it_matters": "Local compaction design should preserve retrievable provenance and prioritize expendable tool output; an interactive tool request is a controlled state transition that needs explicit handling rather than an implicit timeout.",
+      "named_entities": ["OpenCode", "Model Context Protocol", "background compaction"],
+      "upstream_owned_entities": ["OpenCode", "Model Context Protocol"],
+      "follow_up_note": "Keep client and protocol background upstream; retain only the downstream context-retention, state-separation, and interactive-tool-control implications."
+    },
+    {
+      "id": "pause-pre-edit-planning-2026-10-21",
+      "source_url": "https://arxiv.org/abs/2610.29870",
+      "visible_published_or_updated_at": "2026-10-21T15:24:44Z",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/workflow-before-model-selection.md",
+        "docs/wiki/agent-workflows/codebase-wide-agentic-batch-changes.md",
+        "docs/wiki/prompt-and-instructions/executable-prd-templates.md",
+        "docs/wiki/verification-and-evals/product-judgment-quality-gates.md",
+        "docs/wiki/verification-and-evals/representative-workflow-calibration.md"
+      ],
+      "factual_summary": "PAUSE evaluates a single independent planning intervention immediately before an agent's first source-code edit, after repository inspection and testing. Across the reported SWE-bench configurations, it retains the executor's workspace and evidence while adding a repair plan, with outcomes compared across harnesses and planner choices.",
+      "why_it_matters": "A workflow decision can be evaluated as an intervention point with bounded authority: inspect and reproduce first, obtain an independently generated plan before consequential edits, then retain comparable trajectory evidence for calibration rather than selecting a model by brand alone.",
+      "named_entities": ["PAUSE", "SWE-bench Verified", "SWE-agent", "OpenHands"],
+      "upstream_owned_entities": ["PAUSE", "SWE-bench Verified", "SWE-agent", "OpenHands"],
+      "follow_up_note": "Treat this as research evidence, not a universal orchestration prescription; broad benchmark and tool coverage remains upstream-owned."
+    },
+    {
+      "id": "cache-engineering-active-kv-control-2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.28577",
+      "visible_published_or_updated_at": "2026-10-20T17:32:24Z",
+      "leaf_ids": [
+        "docs/wiki/context-architecture/context-router-and-knowledge-layers.md",
+        "docs/wiki/context-architecture/context-selection-and-compaction.md",
+        "docs/wiki/context-architecture/context-state-externalization-and-rehydration.md"
+      ],
+      "factual_summary": "The Cache Engineering paper distinguishes active key-value cache state from the textual trajectory and reports a rolling-drop policy that chooses cache entries to exclude from future attention without rewriting retained history; its stated results are under the paper's evaluated serving setup.",
+      "why_it_matters": "Context-control implementations should expose which layer is being changed and retain reproducible state/provenance boundaries. Reported performance results are implementation-specific, so ingest should preserve that evaluation boundary.",
+      "named_entities": ["Cache Engineering", "AKV", "key-value cache"],
+      "upstream_owned_entities": ["Cache Engineering", "AKV"],
+      "follow_up_note": "Keep method background upstream; retain the local distinction between active-context control, durable records, and reproducible evaluation claims."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://alignment.openai.com/",
+      "visible_published_or_updated_at": "2026-10-20",
+      "reason": "The index exposes an in-window monitorability item but no selected leaf received a distinct local-practice update beyond the already-recorded monitoring and independent-review implications."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news",
+      "visible_published_or_updated_at": "2026-10-06",
+      "reason": "Latest visible agent-relevant newsroom update is outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/?label=copilot&opened-months=10",
+      "visible_published_or_updated_at": "2026-10-23",
+      "reason": "The in-window Copilot changelog items were already captured by the prior leaf-watch run; they did not add a distinct update for this selected batch."
+    }
+  ],
+  "follow_up_notes": [
+    "This raw-only watch does not update docs/wiki.",
+    "Broad product, vendor, protocol, benchmark, and method background remains upstream-owned; the artifact keeps only downstream operating-practice implications.",
+    "The two date-only visible dates were not used at the strict lower boundary; every qualifying dated item is after the October 19 cutoff."
+  ]
+}
