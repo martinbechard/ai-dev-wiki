@@ -1,0 +1,183 @@
+{
+  "automation": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-27T00:34:31Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-25T00:34:31Z",
+    "end_inclusive_utc": "2026-10-27T00:34:31Z",
+    "policy": "Only public sources with a visible, unambiguous publication or update date inside this two-day window qualify. Date-only sources on the lower-boundary calendar date are excluded."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "wiki_and_federation_check": {
+    "local_pages_checked": [
+      "docs/wiki/topic-index.md",
+      "docs/wiki/federation.md",
+      "the ten approved topic-root index pages"
+    ],
+    "upstream_pages_checked": [
+      "/Users/martinbechard/dev/ai-wiki/docs/wiki/topic-index.md"
+    ],
+    "federation_boundary": "The upstream AI wiki owns broad companies, models, products, developer tools, agentic frameworks, MCP servers, and techniques. This collector records those entities only as upstream-owned metadata and retains downstream operational, verification, and governance implications."
+  },
+  "queries_run": [
+    "October 25 2026 AI developer workflow",
+    "October 26 2026 coding agent",
+    "October 24 2026 agent code review",
+    "October 25 2026 MCP permissions",
+    "official developer workflow permissions approvals audit logs October 2026"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "2026-10-26-untrusted-instruction-files-in-downloads",
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/source-workflows"
+      ],
+      "source_title": "AI coding agents fall for malicious instructions planted in the Downloads folder",
+      "source_url": "https://www.helpnetsecurity.com/2026/10/26/ai-coding-agents-malware-openai-codex/",
+      "source_type": "public security-news report of researcher findings",
+      "publisher": "Help Net Security",
+      "visible_date": "2026-10-26",
+      "visible_date_basis": "Article header displays October 26, 2026.",
+      "short_factual_summary": "The report says a silently downloaded AGENTS.md can be treated as trusted instructions if a coding agent is opened in the Downloads directory. It describes a test in which the file attempted a package installation and, in a related configuration-path example, credential exposure.",
+      "why_it_matters_for_ai_assisted_development_practice": "Instruction files must have a provenance boundary: an agent should not execute from download or copied-worktree locations until instruction files are inventoried, reviewed, and treated as untrusted input. Package installation and configuration changes requested by repository guidance need a separately visible approval and evidence trail.",
+      "named_entities": [
+        "AGENTS.md",
+        "Codex",
+        "Claude Code",
+        "function-color"
+      ],
+      "upstream_owned_entities": [
+        "Codex",
+        "Claude Code"
+      ],
+      "upstream_routing_note": "Route product-specific behavior and vulnerability tracking to the upstream AI or security wiki; retain only the local instruction-provenance, working-directory, package-install, and approval practice.",
+      "source_reliability_note": "Contemporary secondary report that attributes findings to Forever Security researchers; ingest should seek the primary research or vendor advisory before making product-specific claims durable.",
+      "follow_up_notes": "Compare with prompt-injection-and-untrusted-content and instruction-hierarchy-and-artifact-boundaries. Preserve the report's attribution and do not generalize one product test into universal behavior."
+    },
+    {
+      "id": "2026-10-25-git-governed-agent-configuration",
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/application-patterns",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_title": "Git as the Control Plane for AI Agent Definitions",
+      "source_url": "https://agentinproduction.com/posts/git-as-the-control-plane-for-ai-agent-definitions",
+      "source_type": "public practitioner analysis",
+      "publisher": "Agent in Production",
+      "visible_date": "2026-10-25",
+      "visible_date_basis": "Article header displays October 25, 2026.",
+      "short_factual_summary": "The article proposes treating agent definitions, permission scopes, tool lists, and budgets as versioned configuration subject to pull-request review and CI validation. It distinguishes a reviewed configuration record from runtime evidence, recommending that every run identify the exact approved configuration commit.",
+      "why_it_matters_for_ai_assisted_development_practice": "Teams need a control-plane/data-plane split: instructions can guide work, but external enforcement must bound permissions, tools, and budgets. Reviewable configuration, schema and prohibited-pattern checks, and configuration-to-run linkage make delegated actions attributable without claiming that model behavior itself is deterministic.",
+      "named_entities": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "Git",
+        "Open Agent Specification",
+        "OpenShell"
+      ],
+      "upstream_owned_entities": [
+        "Open Agent Specification",
+        "OpenShell"
+      ],
+      "upstream_routing_note": "Route broad specification, runtime, and vendor coverage upstream. A local synthesis may retain only the configuration-review, enforcement, and provenance pattern.",
+      "source_reliability_note": "Current practitioner analysis with linked papers; the operating pattern is a proposal, not a standard or an independently verified product release.",
+      "follow_up_notes": "Compare with commit-level-ai-governance, agent-governance-infrastructure, and instruction-hierarchy-and-artifact-boundaries. Validate linked research before citing its quantitative claims."
+    },
+    {
+      "id": "2026-10-26-pre-execution-budget-and-resume-fences",
+      "topic_roots": [
+        "docs/wiki/application-patterns",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_title": "Enforcing Hard Spend Limits Before a Coding Agent Session Resumes Not After It Ends",
+      "source_url": "https://agentinproduction.com/posts/enforcing-hard-spend-limits-before-a-coding-agent-session-resumes-not-after-it-e",
+      "source_type": "public practitioner analysis",
+      "publisher": "Agent in Production",
+      "visible_date": "2026-10-26",
+      "visible_date_basis": "Article header displays October 26, 2026.",
+      "short_factual_summary": "The article describes a reserve-execute-commit pattern that checks and reserves budget before a model or tool action, and proposes a read-only resume phase that rechecks authority, budget, credentials, rate limits, and blockers before a paused agent can produce another side effect.",
+      "why_it_matters_for_ai_assisted_development_practice": "Post-hoc usage dashboards are insufficient for autonomous or resumed work. A durable harness should use pre-action controls for model, tool, retry, token, and spend limits; checkpoint state; and emit a decision record that links the permit-or-deny result to the attempted action.",
+      "named_entities": [
+        "reserve-execute-commit",
+        "Redis",
+        "Postgres"
+      ],
+      "upstream_owned_entities": [],
+      "upstream_routing_note": "No ecosystem entity coverage is retained; this is a local harness and operating-control implication.",
+      "source_reliability_note": "Current practitioner analysis. Its named company anecdotes and regulatory discussion require primary-source verification before durable citation.",
+      "follow_up_notes": "Compare with agent-session-recovery, agent-harness-components, governance-controls-for-agents, and persistent-agent-workspaces. Separate a generic pre-action control pattern from any unverified implementation or regulatory claim."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_title": "ReviewBench: An open benchmark for AI code review",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "visible_date": "2026-10-05",
+      "reason": "Outside the two-day cutoff window."
+    },
+    {
+      "source_title": "Copilot code review: API support and new default effort level",
+      "source_url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level/",
+      "visible_date": "2026-10-02",
+      "reason": "Outside the two-day cutoff window and broad product coverage is upstream-owned."
+    },
+    {
+      "source_title": "Give agent-written code a second review",
+      "source_url": "https://taskmachine.io/updates",
+      "visible_date": "2026-10-24",
+      "reason": "Date-only publication stamp lies on the lower-boundary calendar date, so strict UTC-window eligibility cannot be established."
+    },
+    {
+      "source_title": "How to Work With AI Coding Agents: Thorsten Ball's 15 Rules",
+      "source_url": "https://explainx.ai/blog/how-i-work-with-agents-thorsten-ball-15-rules-october-2026-guide",
+      "visible_date": "2026-10-26",
+      "reason": "Secondary commentary on a social-media post; the underlying post was not directly verified, so it is insufficient as source evidence."
+    },
+    {
+      "source_title": "OpenAI Codex plan and enterprise controls help article",
+      "source_url": "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+      "visible_date": null,
+      "reason": "Current content was accessible, but the page did not expose a visible publication or update date within the window."
+    },
+    {
+      "source_title": "Agent in Production feed entry: Bootstrapping a Version-Controlled Agent Definition From a Blank Repository",
+      "source_url": "https://agentinproduction.com/",
+      "visible_date": "2026-10-24",
+      "reason": "Date-only lower-boundary candidate; excluded under the strict-boundary rule."
+    },
+    {
+      "source_title": "Oracle AI Data Platform Hackathon at Oracle AI World 2026",
+      "source_url": "https://community.oracle.com/products/oracleanalytics/events/807-oracle-ai-data-platform-hackathon-at-oracle-ai-world-2026",
+      "visible_date": "2026-10-25",
+      "reason": "Event listing is not an attributable practice-level update or evidence of implemented workflow behavior."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact in raw until a separate ingest evaluates the three downstream practice implications.",
+    "Do not turn product-specific security or configuration claims into durable local coverage without primary-source verification and federation routing.",
+    "No docs/wiki page or raw/processed file was changed by this collector."
+  ],
+  "validation": {
+    "jq_empty": "passed",
+    "python_json_tool": "passed",
+    "scoped_whitespace_check": "passed (git diff --no-index --check against /dev/null; exit status 1 is expected for a new-file comparison)"
+  },
+  "blockers": []
+}
