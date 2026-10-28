@@ -99,3 +99,17 @@ Official AWS sources checked 2026-10-28:
 - https://aws.amazon.com/fargate/faqs/ directs GPU workloads to EC2 rather than Fargate.
 
 Recommendation, not market-share measurement: for the user's control requirements, evaluate vLLM on Linux GPU EC2 capacity managed by ECS; reuse EKS if Kubernetes is already operated. Consider SageMaker when managed hosting is preferred. Keep inference private and separate from SaaS application compute, mirror model artifacts in S3 and images in ECR, and size warm replicas across availability zones to survive the required failures. Tenant authorization and data separation belong in the application and supporting data systems; batching is not tenant authorization. Hosting entirely on AWS retains AWS-wide dependency, regardless of inference engine.
+
+## AWS Production Monitoring
+
+Recommended initial ECS/EC2 monitoring stack: CloudWatch metrics, logs, alarms and dashboards, an explicitly configured collector for vLLM Prometheus metrics, NVIDIA GPU metrics collection, and OpenTelemetry application tracing through CloudWatch Application Signals. Prometheus and Grafana are an established alternative for detailed inference dashboards, especially where EKS or Prometheus already exists; avoid requiring both full stacks at launch.
+
+Sources checked 2026-10-28:
+
+- https://docs.vllm.ai/en/stable/usage/metrics/ — Prometheus-compatible production metrics from the inference server.
+- https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights-Prometheus-Setup-ECS.html — CloudWatch agent or ADOT collection on ECS; additional scrape targets require configuration.
+- https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-NVIDIA-GPU.html — GPU metrics require collection beyond ordinary EC2 metrics.
+- https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Intro.html — application metrics and correlated traces.
+- https://docs.aws.amazon.com/eks/latest/best-practices/aiml-observability.html — GPU observability with DCGM Exporter and Prometheus/Grafana.
+
+Operational recommendations: measure user-visible success and latency, time to first token, token delivery speed, queue delay, active/waiting inference requests, cache pressure/preemption, GPU health, replica readiness and restart frequency. Trace retrieval and inference separately. Alert on sustained service-objective violations, missing telemetry, and lost redundancy rather than GPU utilization alone. Periodically send non-sensitive synthetic requests through the full application path and check task-specific quality separately from uptime. Measure cost per useful completed operation. Keep prompts, retrieved documents, outputs and credentials out of routine logs/traces; use restricted metadata and bounded metric labels. A separately hosted external probe with synthetic data can detect outages that disable AWS-hosted monitoring. Numeric thresholds depend on the application's service objectives and load tests; none were measured here.
