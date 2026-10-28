@@ -9,6 +9,8 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json) adds repair-pipeline evidence. A source-attributed find-fix-deploy workflow should retain distinct discovery, validation, sandboxed-draft, human-review, canary, and SRE-monitoring records so completion by any one agent does not collapse the acceptance chain. The vendor workflow is an operating example, not a universal automation claim.
+
 The [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json) adds two evidence boundaries. Agentic remediation packages should retain the affected scope, rationale, draft change, and fresh scanner result; evaluator packages should separately record access bounds, independence conditions, publication rights, redaction rules, and retained evidence rather than using an “independent” label as a substitute for the underlying controls.
 
 The [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json) adds software-audit-trail evidence. Generated-code evidence packages should preserve who or what made the change, source evidence, prompt or spec input, review path, linked work item, security or privacy checks, acceptance decision, and the audit trail that lets a future reviewer reconstruct why the change was trusted.
@@ -42,6 +44,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Practice Boundaries
 
+- Preserve separate discovery, validation, sandboxed-draft, human-review, canary, and monitored-release records for agentic remediation; no single agent-completion signal proves acceptance.
 - Treat AI-generated or AI-modified code as unverified input until review and tests pass.
 - Record the model or assistant route, version, and significant source data when those facts affect risk or reproducibility.
 - Apply ordinary review and security testing to generated code instead of accepting generation as evidence.
@@ -62,6 +65,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Authoritative Sources
 
+- [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json)
 - [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 9 topic news collector source](../../../raw/processed/2026-10-09/ai-dev-wiki-topic-news-collector-2026-10-09T003223Z.json)
 
@@ -104,6 +108,7 @@ This page owns the generated-code evidence package. [Intelligent code review](..
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-27 with source-attributed discovery-to-monitored-release evidence-chain fields for agentic remediation.
 - Maintained on 2026-10-20 with remediation and independent-evaluator evidence-package boundaries.
 - Maintained on 2026-10-09 with software-audit-trail, source-evidence, prompt/spec input, review-path, work-item, security/privacy check, and acceptance-decision evidence.
 - Maintained on 2026-10-14 with telemetry-class, user-attribution, AI-scan metric, quality-finding override, and remediation-status evidence.

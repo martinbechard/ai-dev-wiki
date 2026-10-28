@@ -9,6 +9,8 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json) adds a reported find-fix-deploy example. [Google](../../../upstream-ai-wiki/companies/google-ai.md), Project Fortify, PageBreak, Mantis, [CodeMender](../../../upstream-ai-wiki/products/google-codemender.md), and OSS-Fuzz remain upstream-owned. Locally, a repair loop keeps discovery and triage separate from sandboxed remediation, makes the proposed change reviewable, and requires human review before a canary deployment and monitored release.
+
 AI-assisted coding is a controlled loop, not a single answer. The local loop is orient, inspect, plan, patch, verify, and carry evidence forward. Each pass should produce new evidence from files, tests, tool output, or runtime behavior before the next action.
 
 Tool calls are the bridge between model text and repository reality. The agent should inspect source state before editing, explain scope while working, make targeted changes, run the relevant checks, and report the evidence that supports completion. Subagents fit this loop when independent investigations can stay separate until the main agent integrates the result.
@@ -25,6 +27,8 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Practice Boundaries
 
+- Preserve the repair sequence as distinct evidence-bearing stages: discovery, validation and triage, sandboxed draft remediation, independent human review, canary release, and monitored deployment.
+- Treat a generated patch as a reviewable proposal; it is not acceptance evidence until the required validation, human decision, and release monitoring records exist.
 - For automated remediation, keep the inspect-patch-verify loop bounded to the affected alert set, rerun the relevant deterministic scanner after the patch, and return a draft review artifact with the rationale and validation receipt.
 - Orient from repository state, procedures, and existing wiki pages before proposing changes.
 - Inspect the files or runtime surfaces that control the behavior.
@@ -40,6 +44,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Authoritative Sources
 
+- [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json)
 - [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [AI-assisted coding deck](../../../raw/processed/gen-ai-developer-coding.md)
 - [Gen AI application deck](../../../raw/processed/gen-ai-app-complete.md)
@@ -73,6 +78,7 @@ The [September 2 topic news collector source](../../../raw/processed/2026-09-02/
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-27 with a source-attributed find-fix-deploy sequence that retains draft, review, canary, and monitoring evidence.
 - Maintained on 2026-10-20 with bounded automated-remediation, scanner-rerun, and draft-review evidence.
 - Created on 2026-06-23 from the local source decks covering agent loops, tool calls, visible planning, and subagent use.
 - Split on 2026-06-23 so RPI lifecycle, use-compose-build selection, subagent coordination, and handoffs live in durable leaf pages.

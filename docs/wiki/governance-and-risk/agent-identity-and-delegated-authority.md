@@ -9,6 +9,14 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json) adds workload-owned identity evidence from a [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) SDK preview. GitHub and Copilot product details remain upstream-owned. Locally, unattended or long-running coding work should use an organization-owned workload identity rather than a developer's durable interactive session. Record:
+
+- Read-only minimum scope and short-lived credentials.
+- A named budget owner and app-attributed usage evidence.
+- A suspension or uninstall revocation path.
+
+The [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json) independently reinforces the same local control boundary through a [Google](../../../upstream-ai-wiki/companies/google-ai.md) Cloud runtime announcement. Platform, protocol, and product coverage remain upstream-owned; bind isolated runtime identity, bounded credentials, workspace or context ownership, egress controls, and auditable policy decisions to the workload. Preview or forthcoming platform capabilities are not a substitute for those operating agreements.
+
 The [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json) and [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json) refine authority receipts. IBM, GitHub, Copilot, and MCP product details remain upstream-owned. For a remote capability or agent assignment, record:
 
 - The selected workload identity.
@@ -103,6 +111,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Practice Boundaries
 
+- Treat unattended agent work as a separately owned workload identity; record its minimum scope, short credential lifetime, budget owner, usage attribution, and tested revocation path.
+- Bind runtime workspace, durable context, credential injection, egress policy, tool policy, and audit signals to that workload identity rather than to a developer's interactive session.
 - Preserve delegated authority, token exchange, lifecycle stage, suspension, and revocation state with the agent identity record.
 
 - Record the human requester, agent instance, connector identity, delegated scope, approval path, and target system for consequential actions.
@@ -153,6 +163,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json)
+- [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json)
 - [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json)
 - [October 25 topic news collector source](../../../raw/processed/2026-10-25/ai-dev-wiki-topic-news-collector-2026-10-25T002903Z.json)
 - [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
@@ -221,6 +233,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-27 with workload-owned identity, bounded credential, budget-attribution, runtime-control, and revocation evidence from the October 27 and 28 raw sources.
 - Maintained on 2026-10-25 with remote-capability identity, non-secret credential preflight, and independent delegated-action receipt evidence.
 - Maintained on 2026-10-23 with identity-provider-backed remote-agent identity and guardrail-evidence requirements.
 - Maintained on 2026-10-16 with identity-control checklist evidence; next check should preserve owner, revocation, and audit requirements.

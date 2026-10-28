@@ -9,6 +9,8 @@ tags: ["adoption-and-operating-model"]
 
 ## Current Understanding
 
+The [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json) adds policy-defined permission-assistance evidence from a [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) release. Product behavior remains upstream-owned. Locally, a team action policy must separately define command, filesystem-path, and URL boundaries, which defaults enterprise controls may set, and when manual approval remains mandatory. A classifier that auto-approves apparently safe requests cannot replace a human-approved policy for prohibited, ambiguous, or unavailable defaults.
+
 The [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json) adds remote-agent governance evidence. Discovery or multi-cloud availability does not grant action authority. Before consequential use, a human approval boundary should bind the discovered agent or tool to:
 
 - Attributable identity.
@@ -91,6 +93,8 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Practice Boundaries
 
+- Define approval policy separately for commands, file paths, URLs, and session defaults; record the enterprise control that permits, blocks, or requires human confirmation for each boundary.
+- Preserve manual approval as the fallback whenever a requested action is prohibited, ambiguous, or outside an available policy-constrained default.
 - Define which tasks can be delegated, which require review, and which require human execution.
 - Require an explicit done signal with evidence, not only a fluent summary.
 - Keep approval points visible inside the workflow so the human can stop, redirect, or accept the work.
@@ -148,6 +152,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json)
 - [October 23 leaf update watch source](../../../raw/processed/2026-10-23/ai-dev-wiki-leaf-update-watch-2026-10-23T210320-0400.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -231,6 +236,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-27 with policy-defined command, path, URL, session-default, and manual-approval boundaries from the October 28 raw source.
 - Maintained on 2026-10-23 with remote-agent identity, scoped authorization, guardrail, and evaluation-evidence boundaries.
 - Maintained on 2026-10-16 with advisory-findings and draft-remediation evidence; next check should preserve independent acceptance authority.
 

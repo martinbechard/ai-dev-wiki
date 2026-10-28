@@ -9,6 +9,8 @@ tags: ["verification-and-evals"]
 
 ## Current Understanding
 
+The [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json) adds risk-calibrated repair-evaluation evidence. A reported Google Cloud example keeps a precision-first threshold for ordinary application code while allowing a locally adjustable higher-recall posture for critical assets. Locally, teams should document the asset-risk rationale, the selected precision or recall target, validation coverage, human acceptance, and release-monitoring outcome; the reported threshold is not a universal performance claim.
+
 The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) documents a pull-request-triggered, read-only test-quality review pattern. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) product coverage remains upstream-owned. Locally:
 
 - Give the reviewer a narrow evidence packet.
@@ -108,6 +110,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Practice Boundaries
 
+- Calibrate repair evaluation thresholds to asset risk: explain the precision or recall target, validate the proposed change, retain the human acceptance decision, and monitor the released outcome.
 - Do not let the implementation agent be final judge: run deterministic build, test, and style gates, require independent adversarial review, define a severity stop rule, and return every repair to verification. The [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json) is a practitioner example rather than a universal process prescription.
 - Run the checks that match the change surface before claiming completion.
 - Record whether CI, code scanning, coverage upload, and merge evidence is retained, skipped, pending, or absent before treating an agent repair loop as verified.
@@ -189,6 +192,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Authoritative Sources
 
+- [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json)
 - [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 20 leaf update watch source](../../../raw/processed/2026-10-20/ai-dev-wiki-leaf-update-watch-2026-10-20T205851-0400.json)
 - [October 20 topic news collector source](../../../raw/processed/2026-10-20/ai-dev-wiki-topic-news-collector-2026-10-20T002731Z.json)
@@ -284,6 +288,7 @@ The [September 22 leaf update watch source](../../../raw/processed/2026-09-22/ai
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-27 with risk-calibrated repair threshold, validation, human-acceptance, and release-monitoring evidence.
 - Maintained on 2026-10-21 with narrow-evidence, read-only test-quality review, and incomplete-run evidence guidance.
 - Maintained on 2026-10-20 with end-to-end behavior, explicit preservation, and expert-production-review evidence.
 - Maintained on 2026-10-02 with CI retention, coverage-skip interpretation, code-scanning schedule, async-merge polling, and verification-state evidence.
