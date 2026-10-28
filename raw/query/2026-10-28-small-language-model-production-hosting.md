@@ -71,3 +71,17 @@ Official Hugging Face documentation checked 2026-10-28:
 Engineering recommendation: use reviewed open-weight models and an inference runtime such as vLLM on infrastructure under the required administrative and jurisdictional control. Mirror pinned model artifacts, tokenizers, container images, and dependencies internally so serving, restart, and recovery do not require the public Hub. Keep prompts, retrieved data, outputs, logs, embeddings, and backups inside the approved boundary. Limit outbound connections and privileged access. Maintain sufficient serving capacity in independent failure domains and test failover with external services unavailable. Provider-wide outage tolerance requires a second independent provider or customer-operated site; multiple replicas alone do not establish this.
 
 Self-hosting transfers operational responsibility and is not automatically more reliable or confidential. Sovereignty requirements must specify jurisdiction, acceptable cloud/operator access, and whether a customer-controlled hyperscaler account qualifies. Availability targets must specify tolerated downtime, recovery time, and surviving capacity. No vendor contract or architecture was audited in this conversation.
+
+## Mixed Windows And Mac Runtime Selection
+
+The user clarified that target machines include Windows and Macs. vLLM is not universally preferable for this fleet. Engineering recommendation: evaluate Ollama for convenient local deployment, llama.cpp's server for explicit runtime configuration and heterogeneous hardware, and vLLM for a centralized GPU serving tier. This is a workload-dependent recommendation, not a benchmark result. Client operating systems do not constrain a separately hosted inference server's operating system.
+
+Sources checked 2026-10-28:
+
+- https://docs.ollama.com/faq documents per-model parallel requests via OLLAMA_NUM_PARALLEL, memory-dependent concurrency, and local-only mode via OLLAMA_NO_CLOUD=1. Local-only application settings do not replace network egress controls.
+- https://github.com/ggml-org/llama.cpp documents Apple Metal, CUDA, CPU inference, quantization, and hybrid CPU/GPU execution.
+- https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md documents parallel serving slots and continuous batching.
+- https://docs.vllm.ai/en/stable/getting_started/installation/gpu/ documents Windows through WSL and Apple acceleration through vLLM-Metal.
+- https://github.com/vllm-project/vllm-metal describes the community-maintained Apple Silicon plugin; feature/model parity must be checked rather than assumed.
+
+All three can support concurrent inference with appropriate model/backend configuration. Sovereignty depends on local artifacts, network boundaries, operations, and recovery design rather than the runtime name. Compare identical tasks, context lengths, quality targets, and concurrent load on the actual hardware before selecting.
