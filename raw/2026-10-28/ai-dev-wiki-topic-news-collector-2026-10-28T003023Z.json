@@ -1,0 +1,118 @@
+{
+  "automation_name": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp_utc": "2026-10-28T00:30:23Z",
+  "cutoff_window": {
+    "start_exclusive_utc": "2026-10-26T00:30:23Z",
+    "end_inclusive_utc": "2026-10-28T00:30:23Z",
+    "rule": "Only public sources with a direct visible publication or update date strictly after the start and no later than the run timestamp qualify."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "relationship": "downstream one-way extension",
+    "upstream_root": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_boundary": "Record upstream-owned entity releases only as routing context; retain downstream AI-assisted-development practice implications without duplicating entity coverage."
+  },
+  "qualifying_updates": [
+    {
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+      "source_type": "first-party changelog",
+      "visible_date": "October 27, 2026",
+      "factual_summary": "GitHub announced a public-preview server-to-server authentication path for organization-installed GitHub Apps using the Copilot SDK. The app receives read-only Copilot Requests permission and a short-lived installation token; organization model policies, budgets, spending controls, app-attributed usage reporting, and revocation through suspend or uninstall apply.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat long-running or automated coding-agent workloads as workload-owned identities rather than as a developer's durable session. Define least-privilege scopes, short-lived credentials, owner-controlled revocation, organization budget boundaries, and app-attributed audit evidence before enabling unattended execution.",
+      "named_entities": [
+        "GitHub", "GitHub Copilot", "GitHub Copilot SDK", "GitHub Apps"
+      ],
+      "upstream_owned_entities": [
+        "GitHub", "GitHub Copilot", "GitHub Copilot SDK", "GitHub Apps"
+      ],
+      "upstream_routing_note": "The product and SDK release belongs to the upstream AI wiki. This downstream artifact preserves only the workload-identity, revocation, budget, and auditability implications."
+    },
+    {
+      "topic_roots": [
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/agent-workflows",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source_url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
+      "source_type": "first-party changelog",
+      "visible_date": "October 26, 2026",
+      "factual_summary": "GitHub made Copilot assisted permissions generally available in the CLI, Copilot app, and VS Code. A model classifies requests to run commands, access file paths, or open URLs; clearly safe requests proceed automatically while other requests need approval. Enterprise controls can block Allow All, disable assisted permissions, and choose a policy-constrained default for new sessions.",
+      "why_it_matters_for_ai_assisted_development_practice": "Permission assistance is not a substitute for a team action policy. Specify the approval boundary for commands, filesystem paths, URLs, and session defaults; centrally prevent unrestricted modes where required; and retain manual approval as the fallback for prohibited or unavailable defaults.",
+      "named_entities": [
+        "GitHub", "GitHub Copilot", "GitHub Copilot CLI", "Visual Studio Code"
+      ],
+      "upstream_owned_entities": [
+        "GitHub", "GitHub Copilot", "GitHub Copilot CLI", "Visual Studio Code"
+      ],
+      "upstream_routing_note": "The feature release belongs to the upstream AI wiki. The retained downstream lens is policy-defined permission escalation and manual-approval fallback."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+      "visible_date": "October 26, 2026",
+      "reason": "Within the time window, but a model availability and pricing release. It is upstream-owned and did not supply a distinct downstream practice implication beyond existing model-policy governance."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/",
+      "visible_date": "October 23, 2026",
+      "reason": "Outside the strict two-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api/",
+      "visible_date": "October 22, 2026",
+      "reason": "Outside the strict two-day window."
+    },
+    {
+      "source_url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/",
+      "visible_date": "October 15, 2026",
+      "reason": "Outside the strict two-day window."
+    },
+    {
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+      "visible_date": "October 5, 2026",
+      "reason": "Outside the strict two-day window."
+    },
+    {
+      "source_url": "https://www.anthropic.com/news",
+      "visible_date": "October 27, 2026",
+      "reason": "The visible in-window items concern drug-development research and corporate finance, not AI-assisted development practice."
+    },
+    {
+      "source_url": "https://community.openai.com/c/codex/feature-requests/45",
+      "visible_date": "October 27, 2026",
+      "reason": "Community feature requests are not authoritative product or practice updates and do not establish a qualifying change."
+    }
+  ],
+  "follow_up_notes": [
+    "Keep this artifact in raw for a separate ingest decision; this collector did not modify docs/wiki or raw/processed.",
+    "If ingested, evaluate a downstream guidance leaf for workload-owned agent identities and another for policy-defined approval boundaries; do not create local product pages for GitHub Copilot or GitHub Apps.",
+    "Deduplication check: the prior collector run recorded different practice lenses; these two dated first-party sources were not listed in the available prior-run note."
+  ],
+  "blockers": []
+}
