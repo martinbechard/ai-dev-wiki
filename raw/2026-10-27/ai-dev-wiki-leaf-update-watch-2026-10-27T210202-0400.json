@@ -1,0 +1,88 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "run_timestamp": "2026-10-27T21:02:02-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-20T21:02:02-0400",
+    "end_inclusive": "2026-10-27T21:02:02-0400"
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+    "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+    "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+    "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+    "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+    "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+    "docs/wiki/agent-workflows/subagent-coordination.md",
+    "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+    "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+    "docs/wiki/coding-practices/pre-pr-independent-review.md",
+    "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+    "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+    "docs/wiki/retrieval-and-tools/governed-database-agent-access.md",
+    "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+    "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+  ],
+  "source_urls_checked": [
+    "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+    "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+    "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database"
+  ],
+  "qualifying_updates": [
+    {
+      "id": "google-agent-runtime-governance-2026-10-22",
+      "source_url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+      "visible_published_or_updated_at": "2026-10-22",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/adoption-operating-agreements.md",
+        "docs/wiki/agent-workflows/delegated-coding-handoffs.md",
+        "docs/wiki/agent-workflows/event-triggered-agent-workflows.md",
+        "docs/wiki/agent-workflows/persistent-agent-workspaces.md",
+        "docs/wiki/agent-workflows/terminal-native-agent-fleet-orchestration.md",
+        "docs/wiki/application-patterns/platform-native-agent-mutation.md",
+        "docs/wiki/retrieval-and-tools/governed-database-agent-access.md"
+      ],
+      "factual_summary": "Google Cloud announced Agent Compute Engine and expanded agent governance. The post describes isolated agent runtimes with per-agent identity, short-lived credentials, persistence for workspaces and context, egress credential injection, policy enforcement, registry coverage for agents and tools, and OpenTelemetry-compatible audit signals. It states that some capabilities remain preview or forthcoming.",
+      "why_it_matters": "The local practice implication is to make runtime identity, bounded credentials, persistent-state ownership, tool registry controls, and observable asynchronous handoffs explicit operating agreements. These are control points for any platform-native mutation or governed data access, independent of the announced platform.",
+      "named_entities": ["Google Cloud", "Agent Compute Engine", "Agent Gateway", "Agent Registry", "Agent Identity", "OpenTelemetry", "SPIFFE"],
+      "upstream_owned_entities": ["Google Cloud", "Agent Compute Engine", "Agent Gateway", "Agent Registry", "Agent Identity", "OpenTelemetry", "SPIFFE"],
+      "follow_up_note": "Keep platform, product, and protocol background upstream. During ingest, retain only the downstream operating-agreement, workspace-boundary, policy, and auditable-handoff implications, and preserve the preview status where it matters."
+    },
+    {
+      "id": "google-find-fix-deploy-security-loop-2026-10-26",
+      "source_url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+      "visible_published_or_updated_at": "2026-10-26",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/orient-inspect-patch-verify-loop.md",
+        "docs/wiki/agent-workflows/research-plan-implement-review-lifecycle.md",
+        "docs/wiki/agent-workflows/subagent-coordination.md",
+        "docs/wiki/coding-practices/pre-pr-independent-review.md",
+        "docs/wiki/governance-and-risk/ai-code-evidence-packages.md",
+        "docs/wiki/governance-and-risk/commit-level-ai-governance.md",
+        "docs/wiki/verification-and-evals/trajectory-level-agent-evaluation.md",
+        "docs/wiki/verification-and-evals/verification-loops-and-evals.md"
+      ],
+      "factual_summary": "Google Cloud describes a find-fix-deploy pipeline: agentic discovery, runtime-aware validation and triage, sandboxed remediation that proposes a reviewable change, then human review, merge, canary deployment, and SRE monitoring. It also describes a precision-first threshold for ordinary application code and a locally adjustable higher-recall posture for critical assets.",
+      "why_it_matters": "A local repair workflow should preserve separate discovery, validation, remediation, human-approval, and monitored-deployment evidence rather than collapse them into one agent completion. Evaluation and review criteria should calibrate precision and recall to asset risk, while retaining the evidence needed to audit each transition.",
+      "named_entities": ["Google Cloud", "Project Fortify", "PageBreak", "Mantis", "CodeMender", "OSS-Fuzz"],
+      "upstream_owned_entities": ["Google Cloud", "Project Fortify", "PageBreak", "Mantis", "CodeMender", "OSS-Fuzz"],
+      "follow_up_note": "Treat this as a reported operating example, not a universal performance claim. Keep vendor/tool background upstream and extract only the independent validation, reviewable-change, risk-calibration, and monitored-release pattern."
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://blogs.oracle.com/developers/what-we-learned-about-letting-agents-into-a-production-database",
+      "visible_published_or_updated_at": "2025-08-21",
+      "reason": "This public source is already cited by the governed database access leaf but is outside the strict seven-day window."
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "visible_published_or_updated_at": "2026-10-08",
+      "reason": "Visible publication date is outside the strict seven-day window."
+    }
+  ],
+  "follow_up_notes": [
+    "This raw-only watch does not update docs/wiki.",
+    "Broad platform, vendor, protocol, and tool background remains upstream-owned; this artifact retains only downstream practice implications.",
+    "Both qualifying items are after the strict October 20 cutoff. Date-only timestamps are acceptable here because neither is at the lower boundary."
+  ]
+}
