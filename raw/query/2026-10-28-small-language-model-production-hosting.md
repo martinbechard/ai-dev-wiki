@@ -56,3 +56,18 @@ Public information only; no private workload or data assumed.
 ## Ingest Rationale
 
 Existing coverage discusses local runtime operations but does not cleanly explain the practical responsibility split between hosted APIs, managed model endpoints, and self-operated GPU inference. Preserve this decision guidance for later synthesis; leave vendor encyclopedia coverage upstream.
+
+## Clarification: Sovereignty And Provider Outage Independence
+
+The user clarified that this is live production and the objective is sovereign AI to address confidentiality and vendor outages. This changes the recommendation: generic managed hosting is not sufficient evidence of operational sovereignty.
+
+Official Hugging Face documentation checked 2026-10-28:
+
+- https://huggingface.co/docs/inference-endpoints/security states payloads/tokens are not stored, logs are retained for 30 days, TLS is used, and private network access is supported. Log content and privileged operator access need explicit review; absence of payload retention does not establish absence of operator access.
+- https://huggingface.co/docs/inference-endpoints/faq states customers cannot access the hosting instance; PrivateLink exposes an interface in the customer VPC rather than placing the hosting instance in the customer's account. It recommends at least two replicas to mitigate interruptions.
+- https://huggingface.co/docs/inference-endpoints/main/guides/access describes an Enterprise endpoint plan with dedicated support, SLAs, and uptime guarantees. The reviewed page does not specify a numerical availability commitment or failure-domain placement guarantee.
+- https://huggingface.co/docs/inference-endpoints/about explains that Hugging Face manages container lifecycle and obtains model artifacts from the Hub.
+
+Engineering recommendation: use reviewed open-weight models and an inference runtime such as vLLM on infrastructure under the required administrative and jurisdictional control. Mirror pinned model artifacts, tokenizers, container images, and dependencies internally so serving, restart, and recovery do not require the public Hub. Keep prompts, retrieved data, outputs, logs, embeddings, and backups inside the approved boundary. Limit outbound connections and privileged access. Maintain sufficient serving capacity in independent failure domains and test failover with external services unavailable. Provider-wide outage tolerance requires a second independent provider or customer-operated site; multiple replicas alone do not establish this.
+
+Self-hosting transfers operational responsibility and is not automatically more reliable or confidential. Sovereignty requirements must specify jurisdiction, acceptable cloud/operator access, and whether a customer-controlled hyperscaler account qualifies. Availability targets must specify tolerated downtime, recovery time, and surviving capacity. No vendor contract or architecture was audited in this conversation.
