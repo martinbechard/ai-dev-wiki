@@ -85,3 +85,17 @@ Sources checked 2026-10-28:
 - https://github.com/vllm-project/vllm-metal describes the community-maintained Apple Silicon plugin; feature/model parity must be checked rather than assumed.
 
 All three can support concurrent inference with appropriate model/backend configuration. Sovereignty depends on local artifacts, network boundaries, operations, and recovery design rather than the runtime name. Compare identical tasks, context lengths, quality targets, and concurrent load on the actual hardware before selecting.
+
+## AWS SaaS Deployment Practice
+
+For a SaaS hosting its own supported open-weight language model on AWS GPUs, vLLM is an established production option. This does not mean every AWS SaaS needs vLLM: Bedrock is a managed API route; SageMaker AI provides managed model hosting; EC2/ECS/EKS permit operating the serving stack. vLLM is an inference engine, while those services determine hosting and management responsibilities.
+
+Official AWS sources checked 2026-10-28:
+
+- https://aws.amazon.com/blogs/architecture/deploy-llms-on-amazon-eks-using-vllm-deep-learning-containers/ documents AWS vLLM containers for EC2, ECS, and EKS.
+- https://docs.aws.amazon.com/eks/latest/userguide/ml-inference.html includes vLLM among inference engines and recommends regional ECR images via VPC endpoints.
+- https://docs.aws.amazon.com/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html distinguishes managed Bedrock usage from SageMaker AI workflows.
+- https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inference.html documents managed large-model inference tooling and containers.
+- https://aws.amazon.com/fargate/faqs/ directs GPU workloads to EC2 rather than Fargate.
+
+Recommendation, not market-share measurement: for the user's control requirements, evaluate vLLM on Linux GPU EC2 capacity managed by ECS; reuse EKS if Kubernetes is already operated. Consider SageMaker when managed hosting is preferred. Keep inference private and separate from SaaS application compute, mirror model artifacts in S3 and images in ECR, and size warm replicas across availability zones to survive the required failures. Tenant authorization and data separation belong in the application and supporting data systems; batching is not tenant authorization. Hosting entirely on AWS retains AWS-wide dependency, regardless of inference engine.
