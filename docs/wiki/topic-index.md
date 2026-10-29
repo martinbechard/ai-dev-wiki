@@ -97,6 +97,7 @@ description: "Index of AI-assisted development wiki topics, local practice leave
 - [application-patterns/declarative-agent-workflow-artifacts.md](application-patterns/declarative-agent-workflow-artifacts.md) records reviewable orchestration artifacts for branching, approvals, checkpoints, and resume behavior.
 - [application-patterns/user-visible-progress-and-runtime-telemetry.md](application-patterns/user-visible-progress-and-runtime-telemetry.md) records progress events, streaming signals, operational metrics, and visible runtime health.
 - [application-patterns/local-model-runtime-harness.md](application-patterns/local-model-runtime-harness.md) records local model operation as a harness concern.
+- [application-patterns/production-inference-deployment-boundaries.md](application-patterns/production-inference-deployment-boundaries.md) records production inference responsibility, sovereignty, capacity, availability, and telemetry boundaries.
 - [application-patterns/browser-agent-runtime-boundaries.md](application-patterns/browser-agent-runtime-boundaries.md) records browser-agent search/fetch, authenticated sessions, proxies, identity, page observations, and session recordings as governed runtime surfaces.
 - [governance-and-risk/index.md](governance-and-risk/index.md) is the hub for permissions, approvals, secrets, audit logs, privacy, licensing, and prompt injection.
 - [governance-and-risk/governance-controls-for-agents.md](governance-and-risk/governance-controls-for-agents.md) records the overall local agent-control model.

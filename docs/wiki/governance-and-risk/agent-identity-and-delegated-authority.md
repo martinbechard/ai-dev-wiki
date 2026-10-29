@@ -9,7 +9,7 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
-The [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json) adds workload-owned identity evidence from a [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) SDK preview. GitHub and Copilot product details remain upstream-owned. Locally, unattended or long-running coding work should use an organization-owned workload identity rather than a developer's durable interactive session. Record:
+The [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json), corroborated by the [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json), adds workload-owned identity evidence from a [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) SDK preview. GitHub and Copilot product details remain upstream-owned. Locally, unattended or long-running coding work should use an organization-owned workload identity rather than a developer's durable interactive session. Record:
 
 - Read-only minimum scope and short-lived credentials.
 - A named budget owner and app-attributed usage evidence.
@@ -163,6 +163,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json)
 - [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T003023Z.json)
 - [October 27 leaf update watch source](../../../raw/processed/2026-10-27/ai-dev-wiki-leaf-update-watch-2026-10-27T210202-0400.json)
 - [October 24 leaf update watch source](../../../raw/processed/2026-10-24/ai-dev-wiki-leaf-update-watch-2026-10-24T210106-0400.json)
@@ -233,6 +234,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-28 with short-lived server-to-server credential, budget, attribution, and revocation evidence.
 - Maintained on 2026-10-27 with workload-owned identity, bounded credential, budget-attribution, runtime-control, and revocation evidence from the October 27 and 28 raw sources.
 - Maintained on 2026-10-25 with remote-capability identity, non-secret credential preflight, and independent delegated-action receipt evidence.
 - Maintained on 2026-10-23 with identity-provider-backed remote-agent identity and guardrail-evidence requirements.

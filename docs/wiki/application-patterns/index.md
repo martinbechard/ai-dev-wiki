@@ -21,6 +21,7 @@ This topic does not duplicate framework catalogs. It records reusable architectu
 - [declarative-agent-workflow-artifacts.md](declarative-agent-workflow-artifacts.md) records reviewable orchestration artifacts for branching, approvals, checkpoints, and resume behavior.
 - [user-visible-progress-and-runtime-telemetry.md](user-visible-progress-and-runtime-telemetry.md) records progress events, streaming signals, operational metrics, and visible runtime health.
 - [local-model-runtime-harness.md](local-model-runtime-harness.md) records local model operation as a harness concern, including calibration, memory hierarchy, session state, and workflow-specific telemetry.
+- [production-inference-deployment-boundaries.md](production-inference-deployment-boundaries.md) records production hosting responsibility, sovereignty, capacity, availability, and telemetry boundaries.
 - [browser-agent-runtime-boundaries.md](browser-agent-runtime-boundaries.md) records browser sessions, search/fetch APIs, identity, proxies, and browser observations as governed agent runtime surfaces.
 
 ## Authoritative Sources

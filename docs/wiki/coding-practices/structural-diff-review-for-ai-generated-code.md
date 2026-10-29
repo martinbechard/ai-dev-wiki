@@ -9,6 +9,14 @@ tags: ["coding-practices"]
 
 ## Current Understanding
 
+The [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json) adds review-scope and freshness evidence. [GitHub Copilot](../../../upstream-ai-wiki/developer-tools/github-copilot.md) review-product behavior remains upstream-owned. Locally:
+
+- Calibrate review depth to risk.
+- Bind an approval to an explicit file-path scope.
+- Invalidate the approval when the reviewed commit changes.
+
+Multiple review agents can widen evidence collection, but their aggregation does not replace acceptance criteria or a human decision where policy requires one.
+
 The [October 21 leaf update watch source](../../../raw/processed/2026-10-21/ai-dev-wiki-leaf-update-watch-2026-10-21T210930-0400.json) records a vendor executive opinion that compiling code and functional tests can still miss security weaknesses. Treat it as a practice signal rather than benchmark proof: structural review should retain context-aware and security-focused inspection alongside functional evidence.
 
 Structural diff review compares AI-generated changes by syntax and behavior signal before reviewers spend attention on formatting churn. The local practice is to use parser-aware diffs as a review aid for agent-authored commits, not as proof that a change is correct.
@@ -42,6 +50,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Authoritative Sources
 
+- [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json)
 - [October 21 leaf update watch source](../../../raw/processed/2026-10-21/ai-dev-wiki-leaf-update-watch-2026-10-21T210930-0400.json)
 - [August 5 topic news collector source](../../../raw/processed/2026-08-06/ai-dev-wiki-topic-news-collector-2026-08-06T003056Z.json)
 - [August 6 leaf update watch source](../../../raw/processed/2026-08-06/ai-dev-wiki-leaf-update-watch-2026-08-06T210335-0400.json)
@@ -78,6 +87,7 @@ The [September 25 topic news collector source](../../../raw/processed/2026-09-25
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-28 with risk-calibrated multi-review, path-scoped approval, and commit-invalidation evidence.
 - Maintained on 2026-10-21 with explicitly opinion-labeled security-review evidence; it remains a signal rather than empirical proof.
 - Created on 2026-08-05 from August 5 raw evidence about Difftastic-style structural diff review for AI-generated commits.
 - Maintained on 2026-08-06 with leaf-watch corroboration for structural diff review as triage evidence rather than acceptance proof.

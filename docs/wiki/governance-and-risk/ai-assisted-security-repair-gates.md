@@ -9,6 +9,13 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json) adds a staged vulnerability-remediation pipeline. [Google CodeMender](../../../upstream-ai-wiki/products/google-codemender.md) coverage remains upstream-owned, and unavailable named systems remain routed through the [federation boundary](../federation.md); this page retains the evidence pipeline and human merge boundary:
+
+1. Discover with runtime-aware evidence.
+2. Generate and validate the repair in a sandbox.
+3. Require human review of the ready-to-merge change.
+4. Roll out with canary monitoring.
+
 The [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json) adds coordinated-disclosure lifecycle evidence. An AI-assisted vulnerability finding remains advisory until:
 
 - Maintainers own the release decision.
@@ -124,6 +131,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Authoritative Sources
 
+- [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json)
 - [October 21 topic news collector source](../../../raw/processed/2026-10-21/ai-dev-wiki-topic-news-collector-2026-10-22T003215Z.json)
 - [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-dev-wiki-leaf-update-watch-2026-10-16T205851-0400.json)
 
@@ -183,6 +191,7 @@ The [October 16 leaf update watch source](../../../raw/processed/2026-10-16/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-28 with runtime-aware triage, sandbox validation, human merge, and canary-monitoring repair evidence.
 - Maintained on 2026-10-21 with maintainer-led coordinated-disclosure, mitigation-preparation, and affected-version guidance evidence.
 - Maintained on 2026-10-16 with alert, validation, and CI-dependency evidence; next check should preserve independent review.
 

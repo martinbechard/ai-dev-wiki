@@ -9,6 +9,20 @@ tags: ["agent-workflows"]
 
 ## Current Understanding
 
+The [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json) adds repository-owned automation evidence. Its handoff record should retain:
+
+- A named owner and organization-policy enablement.
+- An allowed-tool inventory.
+- Durable history and a path that does not depend on the original author.
+
+The [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T202607-0400.json) adds portable cross-surface session evidence. When a session moves among cloud, desktop, CLI, IDE, or chat surfaces, retain:
+
+- Task context and execution environment.
+- The sandbox or repository snapshot and permission mode.
+- Approval receipts and a budget owner.
+
+A destination surface must recheck repository authority before it can write.
+
 Supervised cross-environment handoffs coordinate agents that work across browser, desktop, terminal, repository, or cloud surfaces. The local rule is that each surface can change what evidence is available, what credentials are exposed, and how a human can intervene.
 
 The [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json) adds a supervised UI automation signal: browser, desktop, planning, automation, and summarization roles need an orchestration owner and shared summary artifact when work crosses UI environments. Broad platform and product identity stays upstream-owned; locally, the durable practice is the handoff contract.
@@ -44,9 +58,13 @@ The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-d
 - Record source client, destination worktree or host, uncommitted-change transfer, queued prompt state, and continuation identity when a session moves across tools.
 - Record origin identity, session-continuation mode, workspace selection, worktree cleanup policy, and attached-context scope when IDE handoff features move work across local tools.
 - Record the session owner, inactive-worktree review or cleanup outcome, local-model route, and actual access boundaries when a handoff crosses IDE, terminal, or local-runtime surfaces.
+- Treat a shared automation as a durable workflow artifact with an owner, policy enablement, allowed tools, change history, and independent handoff record.
+- Before a portable session writes from a new surface, recheck repository authority, sandbox or snapshot boundary, permission mode, approval state, and budget responsibility.
 
 ## Authoritative Sources
 
+- [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json)
+- [October 28 topic news collector source](../../../raw/processed/2026-10-28/ai-dev-wiki-topic-news-collector-2026-10-28T202607-0400.json)
 - [July 30 topic news collector source](../../../raw/processed/2026-07-30/ai-dev-wiki-topic-news-collector-2026-07-30T203228-0400.json)
 - [August 20 topic news collector source](../../../raw/processed/2026-08-20/ai-dev-wiki-topic-news-collector-2026-08-20T203145-0400.json)
 - [August 26 leaf update watch source](../../../raw/processed/2026-08-26/ai-dev-wiki-leaf-update-watch-2026-08-26T210330-0400.json)
@@ -82,6 +100,7 @@ The [October 14 leaf update watch source](../../../raw/processed/2026-10-14/ai-d
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-28 with repository-owned automation and portable cloud-session handoff evidence.
 - Created on 2026-07-30 from public evidence about supervised browser, desktop, planning, automation, and summary handoffs.
 - Maintained on 2026-08-20 with browser-use, shared-channel context, private-context exclusion, and human redirect evidence for cross-environment handoffs.
 - Maintained on 2026-08-26 with model-to-model continuation evidence, repository-state preservation, trajectory-summary selection, and direction-sensitive handoff cost or quality risk.

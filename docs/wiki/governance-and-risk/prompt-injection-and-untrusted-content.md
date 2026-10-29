@@ -9,6 +9,12 @@ tags: ["governance-and-risk"]
 
 ## Current Understanding
 
+The [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json) reinforces pull-request-time review for indirect prompt injection, sensitive-information disclosure, and excessive agency. [GitHub AI security review](../../../upstream-ai-wiki/products/github-ai-security-review.md) coverage and the OWASP catalog remain upstream-owned. A scanner finding is evidence for remediation, not an authorization decision:
+
+- Preserve source provenance.
+- Inspect the proposed mitigation.
+- Keep data access and tool authority behind independent policy checks before merge.
+
 The [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json) treats silently obtained instruction files as untrusted content. Before an agent works from a Downloads or copied-worktree location, inventory guidance files and separately approve any package installation or configuration change they request; the reported product-specific behavior remains attributed rather than generalized.
 
 The [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json) adds fetched-document conversion evidence. Preserve source identity, retrieval date, conversion provenance, and the untrusted-content label when webpages, PDFs, or office documents are made model-readable; experimental conversion convenience does not make the resulting text trusted instruction. Cloudflare tool details remain upstream-owned.
@@ -134,6 +140,7 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Authoritative Sources
 
+- [October 28 leaf update watch source](../../../raw/processed/2026-10-28/ai-dev-wiki-leaf-update-watch-2026-10-28T205925-0400.json)
 - [October 27 topic news collector source](../../../raw/processed/2026-10-27/ai-dev-wiki-topic-news-collector-2026-10-27T003431Z.json)
 
 - [October 17 leaf update watch source](../../../raw/processed/2026-10-17/ai-dev-wiki-leaf-update-watch-2026-10-17T205758-0400.json)
@@ -198,6 +205,7 @@ The [October 3 leaf update watch source](../../../raw/processed/2026-10-03/ai-de
 
 ## Maintenance Notes
 
+- Maintained on 2026-10-28 with AI-risk pull-request scanning, mitigation-review, and independent-authority guidance.
 - Maintained on 2026-10-27 with untrusted instruction-file provenance and approval guidance from the October 27 topic collector.
 
 - Maintained on 2026-10-17 with fetched-document identity, conversion-provenance, and untrusted-content labelling evidence.
