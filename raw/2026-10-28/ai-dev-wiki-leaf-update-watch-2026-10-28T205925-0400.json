@@ -1,0 +1,129 @@
+{
+  "automation_name": "AI Dev Wiki Leaf Update Watch",
+  "automation_id": "ai-dev-wiki-leaf-update-watch",
+  "run_timestamp": "2026-10-28T20:59:25-0400",
+  "cutoff_window": {
+    "start_exclusive": "2026-10-21T20:59:25-0400",
+    "end_inclusive": "2026-10-28T20:59:25-0400",
+    "policy": "Only sources with a visible publication or substantive update timestamp strictly inside the seven-day window qualify."
+  },
+  "selected_leaf_ids": [
+    "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+    "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+    "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+    "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+    "docs/wiki/application-patterns/agent-environment-readiness.md",
+    "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+    "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+    "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+    "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+    "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md",
+    "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md",
+    "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+    "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+    "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+    "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md"
+  ],
+  "source_urls_checked": [
+    "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/",
+    "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/",
+    "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview/",
+    "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+    "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+    "https://openai.com/index/running-codex-safely/",
+    "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+  ],
+  "qualifying_updates": [
+    {
+      "published_at": "2026-10-28",
+      "source_url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/",
+      "factual_summary": "GitHub announced shared automations that are repository-owned, use allowed tools, retain change history, and require an organization policy before running in organization-owned repositories.",
+      "why_it_matters_for_leaves": "Shared automation should have explicit ownership, policy enablement, tool scope, durable history, and a handoff path independent of the original author.",
+      "leaf_ids": [
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md",
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/agent-workflows/use-compose-build-workflow-selection.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": ["GitHub", "GitHub Copilot Automations"],
+      "upstream_owned_entities": ["GitHub", "GitHub Copilot Automations"]
+    },
+    {
+      "published_at": "2026-10-28",
+      "source_url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/",
+      "factual_summary": "GitHub made Copilot approvals generally available and introduced a Max review level that runs several independent review agents before aggregation; approvals are disabled by default, can be scoped by file path, and are dismissed by new commits.",
+      "why_it_matters_for_leaves": "Review effort and approval authority must be risk-calibrated, scope-limited, and invalidated when the reviewed artifact changes; automated approval does not remove acceptance gates.",
+      "leaf_ids": [
+        "docs/wiki/coding-practices/structural-diff-review-for-ai-generated-code.md",
+        "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md"
+      ],
+      "named_entities": ["GitHub", "GitHub Copilot code review"],
+      "upstream_owned_entities": ["GitHub", "GitHub Copilot"]
+    },
+    {
+      "published_at": "2026-10-28",
+      "source_url": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview/",
+      "factual_summary": "GitHub introduced pull-request scanning for AI-specific risks including indirect prompt injection, sensitive-information disclosure, and excessive agency, with mitigations surfaced before merge.",
+      "why_it_matters_for_leaves": "Untrusted retrieved content, tool authority, and data access need explicit pre-write boundaries and PR-time evidence, especially where progressive tool discovery reaches external inputs.",
+      "leaf_ids": [
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/retrieval-and-tools/progressive-mcp-tool-discovery.md",
+        "docs/wiki/context-architecture/rules-and-knowledge-layers.md",
+        "docs/wiki/prompt-and-instructions/request-packages-and-file-boundaries.md"
+      ],
+      "named_entities": ["GitHub", "GitHub Advanced Security", "OWASP Top 10 for LLM Applications"],
+      "upstream_owned_entities": ["GitHub", "GitHub Advanced Security", "OWASP Top 10 for LLM Applications"]
+    },
+    {
+      "published_at": "2026-10-27",
+      "source_url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+      "factual_summary": "GitHub added public-preview server-to-server authentication for organization-installed GitHub Apps, using short-lived installation tokens, organization policy and budget controls, app-attributed usage, and revocable access.",
+      "why_it_matters_for_leaves": "Cross-environment automation should use attributable workload identities with narrow permission, short-lived credentials, budget policy, reviewable usage, and revocation rather than an operator's enduring identity.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/supervised-cross-environment-handoffs.md",
+        "docs/wiki/application-patterns/agent-environment-readiness.md",
+        "docs/wiki/application-patterns/agent-lifecycle-hooks.md",
+        "docs/wiki/context-architecture/self-service-analytics-context-governance.md",
+        "docs/wiki/prompt-and-instructions/instruction-hierarchy-and-artifact-boundaries.md"
+      ],
+      "named_entities": ["GitHub", "GitHub Apps", "GitHub Copilot SDK"],
+      "upstream_owned_entities": ["GitHub", "GitHub Apps", "GitHub Copilot SDK"]
+    },
+    {
+      "published_at": "2026-10-26",
+      "source_url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+      "factual_summary": "Google described a find-fix-deploy process: agentic discovery, runtime-aware validation, sandboxed repair generation and validation, then human-reviewed, canary-monitored deployment.",
+      "why_it_matters_for_leaves": "Treat remediation as a staged evidence pipeline: runtime-aware triage, sandbox validation, ready-to-review change, explicit human merge, and monitored rollout capacity.",
+      "leaf_ids": [
+        "docs/wiki/agent-workflows/terminal-agent-workflows.md",
+        "docs/wiki/source-workflows/ci-validation-capacity-for-agentic-workflows.md",
+        "docs/wiki/verification-and-evals/verification-tax-and-acceptance-gates.md",
+        "docs/wiki/retrieval-and-tools/code-retrieval-evidence-patterns.md",
+        "docs/wiki/adoption-and-operating-model/pre-write-change-boundaries.md"
+      ],
+      "named_entities": ["Google", "Project Fortify", "PageBreak", "Mantis", "CodeMender"],
+      "upstream_owned_entities": ["Google", "Project Fortify", "PageBreak", "Mantis", "CodeMender"]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source_url": "https://openai.com/index/running-codex-safely/",
+      "visible_date": "2026-05-08",
+      "reason": "Outside the strict seven-day cutoff."
+    },
+    {
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "visible_date": "2026-10-08",
+      "reason": "Outside the strict seven-day cutoff; broad platform background is upstream-owned."
+    }
+  ],
+  "follow_up_notes": [
+    "Do not update docs/wiki in this watch; normal raw-source ingest should decide whether each local-practice implication changes a durable leaf.",
+    "Route broad product, company, protocol, framework, and tool background to the upstream AI wiki; retain only the local operating-practice implications here.",
+    "Confirm source availability and current product behavior during ingest because these are dated public announcements."
+  ]
+}
