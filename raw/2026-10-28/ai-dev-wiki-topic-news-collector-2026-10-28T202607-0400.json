@@ -1,0 +1,128 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-10-28T20:26:07-04:00",
+  "run_timestamp_utc": "2026-10-29T00:26:07Z",
+  "cutoff_window": {
+    "duration": "2 days",
+    "start_utc": "2026-10-27T00:26:07Z",
+    "end_utc": "2026-10-29T00:26:07Z",
+    "date_policy": "A source needs a visible publication or update date that unambiguously falls inside this interval. A date-only value on the lower-boundary calendar date is excluded because its time is unknown."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "relationship": "downstream one-way extension",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_rule": "Retain only an AI-assisted-development practice implication when a source concerns an upstream-owned entity."
+  },
+  "qualifying_updates": [
+    {
+      "topic_roots": [
+        "docs/wiki/agent-workflows",
+        "docs/wiki/context-architecture",
+        "docs/wiki/retrieval-and-tools",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source": {
+        "publisher": "GitHub",
+        "title": "Work from anywhere with a new, connected Copilot cloud experience",
+        "url": "https://github.blog/changelog/2026-10-28-work-from-anywhere-with-a-new-connected-copilot-cloud-experience/",
+        "visible_publication_date": "October 28, 2026",
+        "date_basis": "The first-party changelog page visibly states October 28, 2026; this is unambiguously inside the two-day interval."
+      },
+      "short_factual_summary": "GitHub announced a connected cloud agent experience in which a session can move among web, mobile, CLI, app, IDE, Slack, and Teams surfaces. Sessions run in resumable cloud sandboxes by default; the announcement also describes cross-surface context, local or remote custom MCP configuration, approval-gated tool calls, organization MCP allowlists, SSO-scoped session data, and automatic read-only access when a user lacks repository write access.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat a coding-agent session as a portable, governed work item: preserve task context and session provenance across handoffs; record the execution environment and snapshot boundary; use explicit MCP allowlists and per-tool approval rules; and verify repository authority before permitting mutations. A team adopting cross-surface agents also needs a compute-budget and audit model because sandboxes consume shared build capacity.",
+      "named_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Actions",
+        "Model Context Protocol",
+        "Slack",
+        "Microsoft Teams",
+        "Sentry",
+        "Linear",
+        "Cloudflare"
+      ],
+      "upstream_owned_entities": [
+        "GitHub",
+        "GitHub Copilot",
+        "GitHub Actions",
+        "Model Context Protocol",
+        "Slack",
+        "Microsoft Teams",
+        "Sentry",
+        "Linear",
+        "Cloudflare"
+      ],
+      "local_practice_lens_only": true,
+      "follow_up_notes": [
+        "If ingested, route only the portable-session, sandbox-boundary, permission, allowlist, read-only fallback, and compute-governance guidance into downstream practice pages.",
+        "Do not create local product, vendor, protocol, or MCP-server encyclopedia pages; use the upstream AI wiki for those entities."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "GitHub Copilot supports server-to-server authentication",
+      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/",
+      "visible_date": "October 27, 2026",
+      "reason": "Date-only evidence falls on the exact lower-boundary calendar date, so its publication time cannot prove it is inside the strict two-day interval. It was also captured by the preceding collector run."
+    },
+    {
+      "title": "GitHub Copilot assisted permissions generally available",
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/",
+      "visible_date": "October 26, 2026",
+      "reason": "Outside the cutoff interval and already captured by the preceding collector run."
+    },
+    {
+      "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management/",
+      "visible_date": "October 20, 2026",
+      "reason": "Outside the cutoff interval."
+    },
+    {
+      "title": "Gemini at Work 2026: Introducing Gemini agent",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "visible_date": "October 8, 2026",
+      "reason": "Outside the cutoff interval; broad vendor and product coverage is upstream-owned."
+    },
+    {
+      "title": "More ways to request and configure Copilot code reviews",
+      "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "visible_date": "September 23, 2026",
+      "reason": "Outside the cutoff interval; broad product configuration is upstream-owned."
+    },
+    {
+      "title": "Amazon Bedrock Managed Agents, powered by OpenAI, is now available in preview",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
+      "visible_date": "September 29, 2026",
+      "reason": "Outside the cutoff interval and principally upstream-owned managed-agent product coverage."
+    }
+  ],
+  "follow_up_notes": [
+    "This collector is raw-only: it did not modify docs/wiki or raw/processed.",
+    "A later ingest may synthesize the downstream practice lens only after the normal source-first verification workflow."
+  ],
+  "blockers": []
+}
