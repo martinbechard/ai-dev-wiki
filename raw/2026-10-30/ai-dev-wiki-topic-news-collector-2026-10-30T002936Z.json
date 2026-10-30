@@ -1,0 +1,116 @@
+{
+  "automation_name": "AI Dev Wiki Topic News Collector",
+  "automation_id": "ai-dev-wiki-topic-news-collector",
+  "run_timestamp": "2026-10-30T00:29:36Z",
+  "run_timestamp_utc": "2026-10-30T00:29:36Z",
+  "cutoff_window": {
+    "duration": "2 days",
+    "start_utc": "2026-10-28T00:29:36Z",
+    "end_utc": "2026-10-30T00:29:36Z",
+    "date_policy": "A source needs a visible publication or update date that unambiguously falls inside this interval. A date-only value on the lower-boundary calendar date is excluded because its publication time is unknown."
+  },
+  "searched_topic_roots": [
+    "docs/wiki/context-architecture",
+    "docs/wiki/source-workflows",
+    "docs/wiki/prompt-and-instructions",
+    "docs/wiki/agent-workflows",
+    "docs/wiki/coding-practices",
+    "docs/wiki/retrieval-and-tools",
+    "docs/wiki/verification-and-evals",
+    "docs/wiki/application-patterns",
+    "docs/wiki/governance-and-risk",
+    "docs/wiki/adoption-and-operating-model"
+  ],
+  "federation": {
+    "upstream_wiki": "/Users/martinbechard/dev/ai-wiki/docs/wiki",
+    "relationship": "downstream one-way extension",
+    "upstream_owned_scopes": [
+      "companies",
+      "models",
+      "products",
+      "developer tools",
+      "agentic frameworks",
+      "MCP servers",
+      "broad techniques"
+    ],
+    "collector_rule": "Retain only an AI-assisted-development practice implication when a source concerns an upstream-owned entity."
+  },
+  "qualifying_updates": [
+    {
+      "topic_roots": [
+        "docs/wiki/prompt-and-instructions",
+        "docs/wiki/context-architecture",
+        "docs/wiki/governance-and-risk",
+        "docs/wiki/adoption-and-operating-model"
+      ],
+      "source": {
+        "publisher": "OpenAI",
+        "title": "An updated Model Spec for more capable and beneficial AI",
+        "url": "https://openai.com/index/updated-model-spec/",
+        "visible_publication_date": "October 29, 2026",
+        "date_basis": "The first-party source visibly states October 29, 2026, which is unambiguously inside the interval from 2026-10-28T00:29:36Z through 2026-10-30T00:29:36Z."
+      },
+      "short_factual_summary": "OpenAI published an updated Model Spec organized around faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care. The update adds guidance on context, oversight, agency, instruction-conflict resolution, and communicating side effects; it also says the Spec describes intended behavior that models do not yet fully reflect.",
+      "why_it_matters_for_ai_assisted_development_practice": "Treat durable agent instructions as an explicit, reviewable authority hierarchy rather than prose that an agent can interpret freely. Supply contextual evidence deliberately, expose assumptions that affect intent, preserve human authorization for consequential actions, state uncertainty and side effects in agent outputs, and verify behavior with controls rather than assuming a specification guarantees runtime compliance.",
+      "named_entities": [
+        "OpenAI",
+        "Model Spec",
+        "GPT"
+      ],
+      "upstream_owned_entities": [
+        "OpenAI",
+        "Model Spec",
+        "GPT"
+      ],
+      "local_practice_lens_only": true,
+      "follow_up_notes": [
+        "If ingested, retain only the downstream instruction-authority, context-evidence, oversight, side-effect, and verification guidance.",
+        "Do not create a local OpenAI, GPT, or Model Spec encyclopedia page; those entity facts belong in the upstream AI wiki."
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "title": "Repository plugin defaults and enterprise plugin controls generally available",
+      "url": "https://github.blog/changelog/2026-10-28-repository-plugin-defaults-and-enterprise-plugin-controls-generally-available/",
+      "visible_date": "October 28, 2026",
+      "reason": "The first-party source has a date but no time. October 28 is the exact lower-boundary calendar date, so it cannot prove publication after 2026-10-28T00:29:36Z. The GitHub Copilot product and plugin details are upstream-owned; the local practice lens would otherwise concern approved marketplaces, required-versus-optional plugins, and configuration precedence."
+    },
+    {
+      "title": "GitHub Agentic Workflows generally available",
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/",
+      "visible_date": "October 28, 2026",
+      "reason": "The source is date-only on the exact lower-boundary calendar date, so it is not unambiguously in-window. Its GitHub product and framework coverage are upstream-owned; a later eligible record could retain only the local practice implications for read-only defaults, sandbox boundaries, output validation, threat scanning, and budget forecasting."
+    },
+    {
+      "title": "New tools, triggers, and cost controls for Copilot Automations",
+      "url": "https://github.blog/changelog/2026-10-28-new-tools-triggers-and-cost-controls-for-copilot-automations/",
+      "visible_date": "October 28, 2026",
+      "reason": "The source is date-only on the exact lower-boundary calendar date, so it is excluded under the strict timestamp policy. Copilot and MCP-server details are upstream-owned; the local practice lens would be explicit trigger admission, narrowly selected tool scopes, chained-workflow completion states, and per-run or period budgets."
+    },
+    {
+      "title": "Copilot code review: Merge with confidence with Max and approvals",
+      "url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/",
+      "visible_date": "October 28, 2026",
+      "reason": "The source is date-only on the exact lower-boundary calendar date, so it is excluded. GitHub Copilot is upstream-owned; an eligible local lens would preserve independent-review reconciliation, fresh-review invalidation after commits, opt-in approval authority, allowed-file scopes, and risk-tiered review budgets."
+    },
+    {
+      "title": "Code scanning for AI applications in public preview",
+      "url": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview/",
+      "visible_date": "October 28, 2026",
+      "reason": "The source is date-only on the exact lower-boundary calendar date, so it cannot qualify. Broad GitHub product coverage is upstream-owned; the downstream practice implication would be to review untrusted-content-to-model paths, authorization boundaries, and agent capability scope before merge."
+    },
+    {
+      "title": "How we detect frontier model misalignment",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "visible_date": "October 29, 2026",
+      "reason": "The visible date is in-window, but this is broad upstream-owned model-security research rather than a public update about AI-assisted development practice. It was not retained without a specific source-backed downstream engineering implication."
+    }
+  ],
+  "follow_up_notes": [
+    "This collector is raw-only: it did not modify docs/wiki or raw/processed.",
+    "No qualifying finding was recorded because the relevant first-party practice updates had only October 28 date evidence on the exact lower-boundary calendar date.",
+    "If a later eligible source covers the same subjects, retain only the downstream operating-practice lens and route broad entity facts to the upstream AI wiki."
+  ],
+  "blockers": []
+}
